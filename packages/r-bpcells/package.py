@@ -7,14 +7,14 @@ from spack.package import *
 
 
 class RBpcells(RPackage):
-    """Scaling Single Cell Analysis to Milllions of Cells.
+    """Scaling Single Cell Analysis to Millions of Cells.
 
-    Efficient operations for single cell ATAC-seq fragments and RNA counts
-    matrices. Interoperable with standard file formats, and introduces
+    Efficient operations for single cell ATAC-seq fragments and
+    RNA counts matrices. Interoperable with standard file formats, and introduces
     efficient bit-packed formats that allow large storage savings and increased
     read speeds."""
 
-    git = "https://github.com/bnprks/BPCells.git"
+    git = "https://github.com/bnprks/BPCells"
 
     version("0.1.0", tag="v0.1.0")
 

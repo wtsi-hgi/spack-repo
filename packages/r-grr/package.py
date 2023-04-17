@@ -6,7 +6,7 @@
 from spack.package import *
 
 
-class RGgrastr(RPackage):
+class RGrr(RPackage):
     """Rasterize Layers for 'ggplot2'.
 
     Rasterize only specific layers of a 'ggplot2' plot while simultaneously
@@ -14,14 +14,8 @@ class RGgrastr(RPackage):
     plots within the reasonable size limit without loosing vector properties of
     the scale-sensitive information."""
 
-    cran = "ggrastr"
+    cran = "grr"
 
-    version("1.0.1", sha256="82d6e90fa38dec85e829f71018532ed5b709a50a585455fc07cb3bae282f5d1f")
+    version("0.9.5", sha256="292606de2983ac5840c90d3e0977441b482c9e73c1674b662f8b4fb8f3632b2b")
 
-    depends_on("r@3.2.2:", type=("build", "run"))
-    depends_on("r-ggplot2@2.1.0:", type=("build", "run"))
-    depends_on("r-cairo@1.5.9:", type=("build", "run"))
-    depends_on("r-ggbeeswarm", type=("build", "run"))
-    depends_on("r-png", type=("build", "run"))
-    depends_on("r-ragg", type=("build", "run"))
-
+    depends_on("r@3.0.0:", type=("build", "run"))

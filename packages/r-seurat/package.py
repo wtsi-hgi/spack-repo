@@ -55,7 +55,7 @@ class RSeurat(RPackage):
     depends_on("r-lmtest", type=("build", "run"), when="@2.3.0:")
     depends_on("r-mass", type=("build", "run"))
     depends_on("r-matrix@1.2-14:", type=("build", "run"))
-    depends_on("r-matrix@1.5-1", type=("build", "run"), when="@4.2.0:")
+    depends_on("r-matrix@1.5-0", type=("build", "run"), when="@4.2.0:")
     depends_on("r-matrixstats", type=("build", "run"), when="@3.2.3:")
     depends_on("r-miniui", type=("build", "run"), when="@3.2.3:")
     depends_on("r-patchwork", type=("build", "run"), when="@3.2.3:")
