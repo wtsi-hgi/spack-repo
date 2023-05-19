@@ -10,5 +10,6 @@ class AegScrambler(PythonPackage):
 
     homepage = "https://github.com/wtsi-hgi/aeg-scrambler"
     
-    depends_on("pridict", type=("build", "run"))
+    depends_on("py-pridict", type=("build", "run"))
+    depends_on("py-pyranges", type=("build", "run"))
     
