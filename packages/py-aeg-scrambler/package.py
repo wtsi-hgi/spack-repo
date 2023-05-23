@@ -5,7 +5,7 @@
 
 from spack.package import *
 
-class AegScrambler(PythonPackage):
+class PyAegScrambler(PythonPackage):
     """Analyse and rank genomic data."""
 
     homepage = "https://github.com/wtsi-hgi/aeg-scrambler"
