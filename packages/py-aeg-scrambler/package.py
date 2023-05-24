@@ -8,14 +8,14 @@ from spack.package import *
 class PyAegScrambler(PythonPackage):
     """Analyse and rank genomic data."""
 
-    homepage = "https://github.com/wtsi-hgi/aeg-scrambler"
+    git = "https://github.com/wtsi-hgi/aeg-scrambler"
 
-    version("0.0.1", commit="aec9152b76a561781456c5bfe03411c761fab598")
+    version("0.0.1", sha256="47ce194b03b90e6f7cf6567193773a06d41f3b02")
     
     #depends_on("py-pridict", type=("build", "run"))
-    depends_on("py-pyranges", type=("build", "run"))
-    depends_on("typer", type=("build", "run"))
-    depends_on("scipy", type=("build", "run"))
-    depends_on("scikit-learn", type=("build", "run"))
-    depends_on("pandas", type=("build", "run"))
-    depends_on("pyyaml", type=("build", "run"))
+    #depends_on("py-pyranges", type=("build", "run"))
+    depends_on("py-typer", type=("build", "run"))
+    depends_on("py-scipy", type=("build", "run"))
+    depends_on("py-scikit-learn", type=("build", "run"))
+    depends_on("py-pandas", type=("build", "run"))
+    depends_on("py-pyyaml", type=("build", "run"))
