@@ -13,7 +13,7 @@ class PyAegScrambler(PythonPackage):
     version("0.0.1", sha256="47ce194b03b90e6f7cf6567193773a06d41f3b02")
     
     #depends_on("py-pridict", type=("build", "run"))
-    #depends_on("py-pyranges", type=("build", "run"))
+    depends_on("py-pyranges", type=("build", "run"))
     depends_on("py-typer", type=("build", "run"))
     depends_on("py-scipy", type=("build", "run"))
     depends_on("py-scikit-learn", type=("build", "run"))
