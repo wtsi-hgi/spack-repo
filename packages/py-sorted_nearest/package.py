@@ -10,6 +10,6 @@ class PySortedNearest(PythonPackage):
 
     git = "https://github.com/pyranges/sorted_nearest"
 
-    version("0.0.31", sha256="e1b2a9e93abce34a868ee11e82931017b76b524d")
+    version("0.0.39", sha256="e1b2a9e93abce34a868ee11e82931017b76b524d")
     
     depends_on("py-numpy", type=("build", "run"))

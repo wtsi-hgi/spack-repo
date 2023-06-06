@@ -11,6 +11,6 @@ class PyNcls(PythonPackage):
 
     git = "https://github.com/pyranges/ncls"
 
-    version("0.0.63 hotfix", sha256="1b25c1f8f208f8b0a631165d6ae0468287054507")
+    version("0.0.68", sha256="1b25c1f8f208f8b0a631165d6ae0468287054507")
     
     depends_on("py-numpy", type=("build", "run"))
