@@ -19,3 +19,4 @@ class PyAegScrambler(PythonPackage):
     depends_on("py-scikit-learn", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-pyyaml", type=("build", "run"))
+    depends_on("py-poetry-core", type=("build"))

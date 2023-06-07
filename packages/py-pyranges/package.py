@@ -5,15 +5,20 @@
 
 from spack.package import *
 
-class PyRanges(PythonPackage):
+class PyPyranges(PythonPackage):
     """GenomicRanges for Python."""
 
-    git = "https://github.com/pyranges/pyranges"
+    homepage = "https://pyranges.github.io/pyranges"
+    pypi = "pyranges/pyranges-0.0.127.tar.gz"
 
-    version("0.0.127", sha256="458397177c39823999fc175eed89852369ae8463")
-    
+    version("0.0.127", sha256="92a59bf16b86e0aa35da9fdc30226038af9525417065bd07ba111f1efbd78aea")
+
     depends_on("py-pandas", type=("build", "run"))
-    depends_on("py-ncls", type=("build", "run"))
+    depends_on("py-ncls@0.0.63:", type=("build", "run"))
     depends_on("py-tabulate", type=("build", "run"))
-    depends_on("py-sorted_nearest", type=("build", "run"))
+    depends_on("py-sorted-nearest@0.0.33:", type=("build", "run"))
     depends_on("py-natsort", type=("build", "run"))
+    depends_on("py-setuptools", type="build")
+    depends_on("py-cython")
+
+
