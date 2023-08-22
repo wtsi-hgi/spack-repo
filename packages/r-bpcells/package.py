@@ -36,3 +36,5 @@ class RBpcells(RPackage):
     depends_on("r-ggrepel", type=("build", "run"))
     depends_on("r-rcolorbrewer", type=("build", "run"))
     depends_on("r-hexbin", type=("build", "run"))
+    depends_on("hdf5", type=("build", "run"))
+    depends_on("openmpi", type=("build", "run"))
