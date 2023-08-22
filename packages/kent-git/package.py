@@ -11,9 +11,9 @@ class KentGit(MakefilePackage):
 
     # FIXME: Add a proper url for your package's homepage here.
     homepage = "https://github.com/ucscGenomeBrowser/kent"
-    url = "https://hgdownload.cse.ucsc.edu/admin/jksrc.zip"
+    git = "https://github.com/ucscGenomeBrowser/kent/"
     
-    version("0.0.1", sha256="5a137f3127ee8edc56ae75febc5b05be50698616e1fa229766ce44ce2cb5fb11")
+    version("452", tag="v452_base")
 
     depends_on("openssl")
     depends_on("libpng")
