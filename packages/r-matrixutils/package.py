@@ -23,7 +23,7 @@
 from spack.package import *
 
 
-class RMatrixUtils(RPackage):
+class RMatrixutils(RPackage):
     """Implements data manipulation methods such as cast, aggregate, and merge/join for Matrix and matrix-like objects."""
 
     cran = "Matrix.utils"
@@ -38,4 +38,6 @@ class RMatrixUtils(RPackage):
     version("0.9.1", sha256="7fa2f680922796df13fe08c6d2acae6eaf8b9351e94c8f974d34ae8a054aad17")
     version("0.9.0", sha256="2be687e627f7fd6205b183f4e4877476f33ea8e8fe9090571320ae6cf56cc904")
     version("0.5", sha256="f46778c26d2ee866c186994cf89e4b0629579cbfd7fe394b53a7b2bb784a5a13")
-
+    
+    depends_on("r-matrix", type=("build", "run"))
+    depends_on("r-grr", type=("build", "run"))
