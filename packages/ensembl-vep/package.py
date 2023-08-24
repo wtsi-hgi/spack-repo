@@ -40,4 +40,4 @@ class EnsemblVep(Package):
     def install(self, spec, prefix):
         perl = which("perl")
         perl("INSTALL.pl", "--NO_TEST", "--AUTO", "al")
-        install_tree(".", join_path(self.prefix, "usr", "local", "share"))
+        install_tree(".", join_path(self.prefix, "usr", "local", "share", "vep"))
