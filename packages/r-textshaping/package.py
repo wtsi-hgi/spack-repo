@@ -25,3 +25,4 @@ class RTextshaping(RPackage):
     depends_on("harfbuzz")
     depends_on("fribidi")
     depends_on("fontconfig")
+    depends_on("pkg-config")
