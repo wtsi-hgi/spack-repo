@@ -15,9 +15,9 @@ class RSeuratdisk(RPackage):
     datasets, provided Seurat objects and distributed as independent packages.
     """
 
-    homepage = "https://github.com/satijalab/seurat-data"
+    homepage = "https://github.com/mojaveazure/seurat-disk"
     
-    git = "https://github.com/satijalab/seurat-data"
+    git = "https://github.com/mojaveazure/seurat-disk"
 
     # versions
     version("0.2.2", branch="master")
@@ -25,8 +25,10 @@ class RSeuratdisk(RPackage):
 
     # dependencies
     depends_on("r@3.5.0:", type=('build', 'run'))
-    depends_on("r-cli", type=('build', 'run'))
-    depends_on("r-crayon", type=('build', 'run'))
-    depends_on("r-matrix", type=('build', 'run'))
-    depends_on("r-rappdirs", type=('build', 'run'))
-    
+    depends_on("r-hdf5r", type=('build', 'run'))
+    depends_on("r-r6", type=('build', 'run'))
+    depends_on("r-rlang", type=('build', 'run'))
+    depends_on("r-seurat", type=('build', 'run'))
+    depends_on("r-seuratobject", type=('build', 'run'))
+    depends_on("r-stringi", type=('build', 'run'))
+    depends_on("r-withr", type=('build', 'run'))
