@@ -30,5 +30,4 @@ Distributions
     depends_on("r@3.6:", type=('build', 'run'))
     depends_on("r-insight@0.19.1:", type=('build', 'run'))
     depends_on("r-datawizard@0.7.0:", type=('build', 'run'))
-    depends_on("r-graphics", type=('build', 'run'))
     
