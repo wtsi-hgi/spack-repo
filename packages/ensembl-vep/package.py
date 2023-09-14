@@ -41,3 +41,6 @@ class EnsemblVep(Package):
         perl = which("perl")
         perl("INSTALL.pl", "--NO_TEST", "--AUTO", "al")
         install_tree(".", join_path(self.prefix, "usr", "local", "share", "vep"))
+
+    def setup_dependent_run_environment(self, env, dependent_spec):
+        env.append_path("PATH", join_path(self.prefix, "usr", "local", "share", "vep"))
