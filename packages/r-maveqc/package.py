@@ -34,3 +34,4 @@ class RMaveqc(RPackage):
     depends_on("r-reshape2", type=("build", "run"))
     depends_on("r-gtools", type=("build", "run"))
     depends_on("r-sparkline", type=("build", "run"))
+    depends_on("r-dendextend", type=("build", "run"))
