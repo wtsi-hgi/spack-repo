@@ -15,6 +15,7 @@ class Shapeit5(MakefilePackage):
     git = "https://github.com/odelaneau/shapeit5/"
 
     version("5.1.1", tag="v5.1.1", submodules=True)
+    version("5.1.0", tag="v5.1.0", submodules=True)
 
     depends_on("boost+iostreams+program_options")
     depends_on("htslib")
