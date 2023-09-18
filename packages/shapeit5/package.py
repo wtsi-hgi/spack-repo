@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 import glob
+import os
 
 from spack.package import *
 
@@ -43,6 +44,10 @@ class Shapeit5(MakefilePackage):
 
     def install(self, spec, prefix):
         make("all")
+        os.mkdir(prefix.usr)
+        os.mkdir(prefix.usr.bin)
         for exe in glob.glob("*/bin/*"):
-            install(exe, prefix.bin)
+            install(exe, prefix.usr.bin)
 
+    def setup_run_environment(self, env):
+        env.append_path("PATH", join_path(self.prefix, "usr", "bin"))
