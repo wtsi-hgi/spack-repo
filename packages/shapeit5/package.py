@@ -17,11 +17,11 @@ class Shapeit5(MakefilePackage):
 
     depends_on("boost+iostreams+program_options")
     depends_on("htslib")
-    depends_on("bzip2")
+    depends_on("bzip2", type=("build"))
     depends_on("lzma")
-    depends_on("zlib")
-    depends_on("xz")
-    depends_on("curl")
+    depends_on("zlib", type=("build"))
+    depends_on("xz", type=("build"))
+    depends_on("curl", type=("build"))
     depends_on("libdeflate")
     depends_on("libpthread-stubs")
 
