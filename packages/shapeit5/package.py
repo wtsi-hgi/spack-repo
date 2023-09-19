@@ -15,7 +15,7 @@ class Shapeit5(MakefilePackage):
     git = "https://github.com/odelaneau/shapeit5/"
 
     version("5.1.1", tag="v5.1.1", submodules=True)
-    version("5.1.0", tag="v5.1.0", submodules=True)
+    version("5.1.0", tag="v5.1.0")
 
     depends_on("boost+iostreams+program_options")
     depends_on("htslib")
@@ -33,18 +33,25 @@ class Shapeit5(MakefilePackage):
     patch("math.patch")
 
     def edit(self, spec, prefix):
+        gitModules = FileFilter(".gitmodules")
+        gitModules.filter("	url = git@github.com:odelaneau/xcftools.git", "	url = https://github.com/odelaneau/xcftools.git")
+
+        which("git")("submodule", "update", "--init", "--recursive")
+
         makefile = FileFilter(*(glob.glob("*/makefile")))
         makefile.filter("CXXFLAG=.*", "CXXFLAG=-O3 -mavx2 -mfma -lm")
         makefile.filter("system: HTSSRC=.*", "system: HTSSRC=" + self.spec["htslib"].prefix)
-
         makefile.filter("system: DYN_LIBS=.*", "system: DYN_LIBS=-lz -lpthread -lbz2 -llzma -lcurl -lcrypto -lm -ldeflate")
         makefile.filter("system: BOOST_INC=.*", "system: BOOST_INC=" + self.spec["boost"].prefix.include)
         makefile.filter("system: BOOST_LIB_IO=.*", "system: BOOST_LIB_IO=" + self.spec["boost"].prefix.lib + "/libboost_iostreams.a")
         makefile.filter("system: BOOST_LIB_PO=.*", "system: BOOST_LIB_PO=" + self.spec["boost"].prefix.lib + "/libboost_program_options.a")
         makefile.filter("system: BOOST_LIB_SE=.*", "system: BOOST_LIB_SE=" + self.spec["boost"].prefix.lib + "/libboost_serialization.a")
 
-    def install(self, spec, prefix):
+
+    def build(self, spec, prefix):
         make("all")
+
+    def install(self, spec, prefix):
         os.mkdir(prefix.usr)
         os.mkdir(prefix.usr.bin)
         for exe in glob.glob("*/bin/*"):
