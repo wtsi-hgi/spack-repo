@@ -16,6 +16,7 @@ class Shapeit5(MakefilePackage):
 
     version("5.1.1", tag="v5.1.1", submodules=True)
     version("5.1.0", tag="v5.1.0")
+    version("contig", commit="2c9e551c3dc3779fdfaf65943ef2e309f624bd52")
 
     depends_on("boost+iostreams+program_options")
     depends_on("htslib")
@@ -29,8 +30,9 @@ class Shapeit5(MakefilePackage):
 
     variant("rarephasing", default=False, description="Re-enable Singelton phasing score.")
 
-    patch("rare_phasing.patch", when="@5.1.1+rarephasing")
-    patch("math.patch")
+    patch("rare_phasing.patch", when="+rarephasing")
+    patch("math.patch", when="@5.1.1")
+    patch("math.patch", when="@5.1.0")
 
     def edit(self, spec, prefix):
         gitModules = FileFilter(".gitmodules")
