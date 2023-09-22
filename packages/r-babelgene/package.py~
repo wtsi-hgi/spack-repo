@@ -37,4 +37,5 @@ class RBabelgene(RPackage):
     version("22.9", sha256="ce6601dcb78352516d3b0355042c52a20e154b39d3b27b93ff52150a59c885e2")
 
     depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-methods", type=("build", "run"))
     depends_on("r-rlang", type=("build", "run"))
