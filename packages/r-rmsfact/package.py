@@ -11,11 +11,11 @@
 # next to all the things you'll want to change. Once you've handled
 # them, you can save this file and test your package like this:
 #
-#     spack install r-babelgene
+#     spack install r-rmsfact
 #
 # You can edit this file again by typing:
 #
-#     spack edit r-babelgene
+#     spack edit r-rmsfact
 #
 # See the Spack documentation for more information on packaging.
 # ----------------------------------------------------------------------------
@@ -23,18 +23,15 @@
 from spack.package import *
 
 
-class RBabelgene(RPackage):
+class RRmsfact(RPackage):
     """FIXME: Put a proper description of your package here."""
 
     # FIXME: Add a proper url for your package's homepage here.
-    homepage = "https://igordot.github.io/babelgene/"
-    cran = "babelgene"
+    cran = "rmsfact"
 
     # FIXME: Add a list of GitHub accounts to
     # notify when the package is updated.
     # maintainers("github_user1", "github_user2")
 
-    version("22.9", sha256="ce6601dcb78352516d3b0355042c52a20e154b39d3b27b93ff52150a59c885e2")
+    version("0.0.3", sha256="a54d20c4e7b36b9d731deeddfb160d69c34e82f1091238541439dfa45d1e4217")
 
-    depends_on("r-dplyr", type=("build", "run"))
-    depends_on("r-rlang", type=("build", "run"))

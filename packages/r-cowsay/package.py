@@ -11,11 +11,11 @@
 # next to all the things you'll want to change. Once you've handled
 # them, you can save this file and test your package like this:
 #
-#     spack install r-babelgene
+#     spack install r-cowsay
 #
 # You can edit this file again by typing:
 #
-#     spack edit r-babelgene
+#     spack edit r-cowsay
 #
 # See the Spack documentation for more information on packaging.
 # ----------------------------------------------------------------------------
@@ -23,18 +23,21 @@
 from spack.package import *
 
 
-class RBabelgene(RPackage):
+class RCowsay(RPackage):
     """FIXME: Put a proper description of your package here."""
 
     # FIXME: Add a proper url for your package's homepage here.
-    homepage = "https://igordot.github.io/babelgene/"
-    cran = "babelgene"
+    homepage = "https://github.com/sckott/cowsay"
+    cran = "cowsay"
 
     # FIXME: Add a list of GitHub accounts to
     # notify when the package is updated.
     # maintainers("github_user1", "github_user2")
 
-    version("22.9", sha256="ce6601dcb78352516d3b0355042c52a20e154b39d3b27b93ff52150a59c885e2")
+    version("0.8.2", sha256="fd9766a336250e5eac05616c9d083b52abdd380244384ad7ba91273e26572db0")
 
-    depends_on("r-dplyr", type=("build", "run"))
-    depends_on("r-rlang", type=("build", "run"))
+    # FIXME: Add dependencies if required.
+    depends_on("r-crayon", type=("build", "run"))
+    depends_on("r-fortunes", type=("build", "run"))
+    depends_on("r-rmsfact", type=("build", "run"))
+
