@@ -12,6 +12,7 @@ class RMaveqc(RPackage):
     homepage = "https://github.com/wtsi-hgi/MAVEQC"
     git = "https://github.com/wtsi-hgi/MAVEQC"
 
+    version("0.2.3", tag="0.2.3")
     version("0.2.2", tag="0.2.2")
 
     depends_on("r+X@4.2.3:", type=("build", "run"))
