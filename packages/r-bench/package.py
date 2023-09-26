@@ -3,40 +3,20 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-# ----------------------------------------------------------------------------
-# If you submit this package back to Spack as a pull request,
-# please first remove this boilerplate and all FIXME comments.
-#
-# This is a template package file for Spack.  We've put "FIXME"
-# next to all the things you'll want to change. Once you've handled
-# them, you can save this file and test your package like this:
-#
-#     spack install r-bench
-#
-# You can edit this file again by typing:
-#
-#     spack edit r-bench
-#
-# See the Spack documentation for more information on packaging.
-# ----------------------------------------------------------------------------
-
 from spack.package import *
 
 
 class RBench(RPackage):
-    """FIXME: Put a proper description of your package here."""
+    """High Precision Timing of R Expressions
+    
+    Tools to accurately benchmark and analyze execution times for R expressions.
+    """
 
-    # FIXME: Add a proper url for your package's homepage here.
     homepage = "https://bench.r-lib.org/"
     cran = "bench"
 
-    # FIXME: Add a list of GitHub accounts to
-    # notify when the package is updated.
-    # maintainers("github_user1", "github_user2")
-
     version("1.1.3", sha256="bfae6320ad8c0c84fa6832519fac0e783e8d3ac5e3019ff6526f8060e8f1f317")
 
-    # FIXME: Add dependencies if required.
     depends_on("r-glue", type=("build", "run"))
     depends_on("r-pillar", type=("build", "run"))
     depends_on("r-profmem", type=("build", "run"))

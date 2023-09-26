@@ -3,36 +3,17 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-# ----------------------------------------------------------------------------
-# If you submit this package back to Spack as a pull request,
-# please first remove this boilerplate and all FIXME comments.
-#
-# This is a template package file for Spack.  We've put "FIXME"
-# next to all the things you'll want to change. Once you've handled
-# them, you can save this file and test your package like this:
-#
-#     spack install r-profmem
-#
-# You can edit this file again by typing:
-#
-#     spack edit r-profmem
-#
-# See the Spack documentation for more information on packaging.
-# ----------------------------------------------------------------------------
-
 from spack.package import *
 
 
 class RProfmem(RPackage):
-    """FIXME: Put a proper description of your package here."""
+    """Simple Memory Profiling for R
+    
+    A simple and light-weight API for memory profiling of R expressions. The profiling is built on top of R's built-in memory profiler ('utils::Rprofmem()'), which records every memory allocation done by R (also native code).
+    """
 
-    # FIXME: Add a proper url for your package's homepage here.
     homepage = "https://github.com/HenrikBengtsson/profmem"
     cran = "profmem"
-
-    # FIXME: Add a list of GitHub accounts to
-    # notify when the package is updated.
-    # maintainers("github_user1", "github_user2")
 
     version("0.6.0", sha256="745ca9b22a8de3cda4374be6e2454e549742a3b72ff02c8894c972178192e63d")
 
