@@ -21,9 +21,7 @@ class R(AutotoolsPackage):
 
     extendable = True
 
-    maintainers("glennpj")
-
-    version("4.2.3", sha256="55e4a9a6d43be314e2c03d0266a6fa5444afdce50b303bfc3b82b3979516e074")
+    version("4.3.0", sha256="45dcc48b6cf27d361020f77fde1a39209e997b81402b3663ca1c010056a6a609")
     version("4.2.2", sha256="0ff62b42ec51afa5713caee7c4fde7a0c45940ba39bef8c5c9487fef0c953df5")
     version("4.2.1", sha256="4d52db486d27848e54613d4ee977ad952ec08ce17807e1b525b10cd4436c643f")
     version("4.2.0", sha256="38eab7719b7ad095388f06aa090c5a2b202791945de60d3e2bb0eab1f5097488")
@@ -75,15 +73,18 @@ class R(AutotoolsPackage):
     # R didn't anticipate the celebratory
     # non-breaking major version bump of curl 8.
     depends_on("curl+libidn2@:7")
+    depends_on("gcc", type=("link"))
     depends_on("icu4c")
     depends_on("java")
+    depends_on("libtirpc", type=("link"))
     depends_on("ncurses")
     depends_on("pcre", when="@:3.6.3")
     depends_on("pcre2", when="@4:")
     depends_on("readline")
     depends_on("xz")
     depends_on("which", type=("build", "run"))
-    depends_on("zlib@1.2.5:")
+    depends_on("zlib-api")
+    depends_on("zlib@1.2.5:", when="^zlib")
     depends_on("texinfo", type="build")
     depends_on("cairo+X+gobject+pdf", when="+X")
     depends_on("pango+X", when="+X")
@@ -95,7 +96,6 @@ class R(AutotoolsPackage):
     depends_on("libxmu", when="+X")
     depends_on("libxt", when="+X")
     depends_on("tk", when="+X")
-    depends_on("pkgconfig", type="build")
 
     patch("zlib.patch", when="@:3.3.2")
 
@@ -104,6 +104,8 @@ class R(AutotoolsPackage):
     # Until the Fujitsu compiler resolves this problem,
     # temporary fix to lower the optimization level.
     patch("change_optflags_tmp.patch", when="%fj@4.1.0")
+
+    build_directory = "spack-build"
 
     # R custom URL version
     def url_for_version(self, version):
@@ -127,6 +129,7 @@ class R(AutotoolsPackage):
         prefix = self.prefix
 
         config_args = [
+            "--with-internal-tzcode",
             "--libdir={0}".format(join_path(prefix, "rlib")),
             "--enable-R-shlib",
             "--enable-BLAS-shlib",
