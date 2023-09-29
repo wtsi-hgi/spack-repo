@@ -85,6 +85,7 @@ class RSeurat(RPackage):
     depends_on("r-seuratobject@4.1.2:", type=("build", "run"), when="@4.2.0:")
     depends_on("r-seuratobject@4.1.3:", type=("build", "run"), when="@4.2.1:")
     depends_on("r-seuratobject@4.9.9", type=("build", "run"), when="@4.9.9:")
+    depends_on("r-bpcells", type=("build", "run"), when="@4.9.9:")
     depends_on("r-shiny", type=("build", "run"), when="@3.2.3:")
     depends_on("r-spatstat-explore", type=("build", "run"), when="@4.2.1:")
     depends_on("r-spatstat-geom", type=("build", "run"), when="@4.1.0:")
