@@ -42,5 +42,8 @@ class RBpcells(RPackage):
     def setup_build_environment(self, env):
         env.set("LD_LIBRARY_PATH", join_path(self.spec["hdf5"].prefix, "lib"))
 
-    def setup_run_environment(self, env):
-    	env.prepend_path("LD_LIBRARY_PATH", join_path(self.spec["hdf5"].prefix, "lib"))
+    def setup_dependent_build_environment(self, env, spec):
+        env.prepend_path("LD_LIBRARY_PATH", join_path(spec["hdf5"].prefix, "lib"))
+
+    def setup_dependent_run_environment(self, env, spec):
+        env.prepend_path("LD_LIBRARY_PATH", join_path(spec["hdf5"].prefix, "lib"))

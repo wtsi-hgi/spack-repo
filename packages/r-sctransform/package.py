@@ -18,6 +18,7 @@ class RSctransform(RPackage):
 
     cran = "sctransform"
 
+    version("0.4.0", sha256="9aef10c196a9578e0d7a8e244c55cf28eb0685947d9df9e2d7790c2b99c6b4b3")
     version("0.3.5", sha256="c08e56df05d64ed04ee53eb9e1d4d321da8aff945e36d56db1d5ceb1cd7e6e0b")
     version("0.3.3", sha256="83af125c40f211e1ddae5098f88766aea1453c02ae98486081f3efadb3620b2b")
     version("0.3.2", sha256="5dbb0a045e514c19f51bbe11c2dba0b72dca1942d6eb044c36b0538b443475dc")
