@@ -36,4 +36,5 @@ class RGgalluvial(RPackage):
     depends_on("r-lazyeval", type=('build', 'run'))
     depends_on("r-rlang", type=('build', 'run'))
     depends_on("r-tidyselect", type=('build', 'run'))
+    depends_on("r-ggplot2", type=('build', 'run'))
     
