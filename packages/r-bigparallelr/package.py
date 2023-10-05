@@ -27,7 +27,6 @@ class RBigparallelr(RPackage):
     depends_on("r-bigassertr@0.1.1:", type=('build', 'run'))
     depends_on("r-do-parallel", type=('build', 'run'))
     depends_on("r-flock", type=('build', 'run'))
-    depends_on("r-parallel", type=('build', 'run'))
     depends_on("r-parallelly", type=('build', 'run'))
     depends_on("r-rhpc-b-l-a-sctl", type=('build', 'run'))
     

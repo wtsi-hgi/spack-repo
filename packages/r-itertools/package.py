@@ -20,8 +20,3 @@ class RItertools(RPackage):
 
     # versions
     version("0.1-3", md5="c9bafb575b42a663da47739e04e79105")
-    
-
-    # dependencies
-    depends_on("r-parallel", type=('build', 'run'))
-    

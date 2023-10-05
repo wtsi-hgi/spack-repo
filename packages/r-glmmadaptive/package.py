@@ -27,6 +27,5 @@ Quadrature
     # dependencies
     depends_on("r-m-a-s-s", type=('build', 'run'))
     depends_on("r-nlme", type=('build', 'run'))
-    depends_on("r-parallel", type=('build', 'run'))
     depends_on("r-matrix-stats", type=('build', 'run'))
     

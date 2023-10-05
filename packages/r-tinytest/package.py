@@ -30,5 +30,4 @@ class RTinytest(RPackage):
 
     # dependencies
     depends_on("r@3.0.0:", type=('build', 'run'))
-    depends_on("r-parallel", type=('build', 'run'))
     

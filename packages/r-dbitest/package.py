@@ -25,7 +25,7 @@ class RDbitest(RPackage):
     depends_on("r@3.2.0:", type=('build', 'run'))
     depends_on("r-blob@1.2.0:", type=('build', 'run'))
     depends_on("r-callr", type=('build', 'run'))
-    depends_on("r-d-b-i@1.1.3:", type=('build', 'run'))
+    depends_on("r-dbi@1.1.3:", type=('build', 'run'))
     depends_on("r-desc", type=('build', 'run'))
     depends_on("r-hms@0.5.0:", type=('build', 'run'))
     depends_on("r-lubridate", type=('build', 'run'))
