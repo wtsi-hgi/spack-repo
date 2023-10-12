@@ -1,0 +1,12 @@
+diff --git a/src/cpp/core/include/core/Thread.hpp b/src/cpp/core/include/core/Thread.hpp
+index f53ae08..d74335c 100644
+--- a/src/cpp/core/include/core/Thread.hpp
++++ b/src/cpp/core/include/core/Thread.hpp
+@@ -17,6 +17,7 @@
+ #define CORE_THREAD_HPP
+ 
+ #include <queue>
++#include <set>
+ 
+ #include <boost/utility.hpp>
+ #include <boost/function.hpp>

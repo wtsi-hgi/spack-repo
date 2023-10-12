@@ -1,0 +1,31 @@
+diff --git a/src/gwt/build.xml b/src/gwt/build.xml
+index 4e8ff2f..23f2b51 100644
+--- a/src/gwt/build.xml
++++ b/src/gwt/build.xml
+@@ -84,24 +84,9 @@
+    </target>
+ 
+    <!-- panmirror typescript library -->
+-   <!-- ensure version matches RSTUDIO_NODE_VERSION -->
+-   <property name="node.version" value="16.14.0"/>
+-   <property name="node.dir" value="../../dependencies/common/node/${node.version}"/>
+-   <condition property="node.bin" value="../../../${node.dir}/bin/node">
+-     <not>
+-        <os family="windows" />
+-     </not>
+-   </condition>
+-   <condition property="node.bin" value="${node.dir}/node.exe">
+-     <os family="windows" />
+-   </condition>
+-
+-   <!-- use node from /opt/rstudio-tools if installed (typical for Docker) -->
+-   <available
+-      property="node.bin"
+-      value="/opt/rstudio-tools/dependencies/common/node/${node.version}/bin/node"
+-      file="/opt/rstudio-tools/dependencies/common/node/${node.version}/bin/node"/>
+ 
++   <property name="node.bin" value="/usr/bin/node"/>
++   <property name="yarn.bin" value="/usr/bin/yarn"/>
+    <property name="panmirror.dir" value="./panmirror/src/editor"/>
+    <property name="panmirror.build.dir" value="./www/js/panmirror"/>
+ 
