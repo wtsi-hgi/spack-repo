@@ -64,7 +64,7 @@ class R(AutotoolsPackage):
     variant(
         "external-lapack", default=False, description="Links to externally installed BLAS/LAPACK"
     )
-    variant("X", default=False, description="Enable X11 support (TCLTK, PNG, JPEG, TIFF, CAIRO)")
+    variant("X", default=True, description="Enable X11 support (TCLTK, PNG, JPEG, TIFF, CAIRO)")
     variant("memory_profiling", default=False, description="Enable memory profiling")
     variant("rmath", default=False, description="Build standalone Rmath library")
 

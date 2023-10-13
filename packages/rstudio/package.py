@@ -22,7 +22,7 @@ class Rstudio(CMakePackage):
     variant("server", default=False, description="Build the server.")
 
     depends_on("r@3.0.1:", type=("build", "run"))
-    depends_on("r@4.2.3:", type=("build", "run"), when="+server")
+    depends_on("r+X@4.2.3", type=("build", "run"), when="+server")
     depends_on("cmake@3.4.3:", type="build")
     depends_on("pkgconfig", type=("build", "link"))
     depends_on("ant", type="build")
@@ -43,6 +43,7 @@ class Rstudio(CMakePackage):
         depends_on("libuuid")
         depends_on("tclap")
         depends_on("npm", type="build")
+        depends_on("quarto-cli@1.1.251")
 
     with when("+notebook"):
         depends_on("r-base64enc")
@@ -81,6 +82,7 @@ class Rstudio(CMakePackage):
     def cmake_args(self):
         args = [
             "-DRSTUDIO_TARGET=Server" if "+server" in self.spec else "-DRSTUDIO_TARGET=Desktop",
+            "DCMAKE_BUILD_TYPE=Release",
             "-DRSTUDIO_PACKAGE_BUILD=Yes",
             "-DRSTUDIO_USE_SYSTEM_YAML_CPP=Yes",
             "-DRSTUDIO_USE_SYSTEM_BOOST=Yes",
@@ -92,6 +94,14 @@ class Rstudio(CMakePackage):
 
     def setup_build_environment(self, env):
         env.set("RSTUDIO_TOOLS_ROOT", self.prefix.tools)
+
+        with when("+server"):
+            env.set("RSTUDIO_VERSION_MAJOR", "2022")
+            env.set("RSTUDIO_VERSION_MINOR", "12")
+            env.set("RSTUDIO_VERSION_PATCH", "0")
+            env.set("RSTUDIO_VERSION_SUFFIX", "+353")
+            env.set("RSTUDIO_RELEASE_NAME", "hgi")
+
         env.prepend_path("PATH", self.spec["node-js"].prefix.bin)
         env.prepend_path("PATH", self.stage.path + "/spack-src/node_modules/.bin")
 
@@ -107,6 +117,19 @@ class Rstudio(CMakePackage):
             '<property name="yarn.bin" value="/usr/bin/yarn"/>',
             '<property name="yarn.bin" value="{0}"/>'.format(self.spec["yarn"].prefix.bin.yarn),
             "src/gwt/build.xml",
+            string=True,
+        )
+
+        filter_file(
+            '"bin/quarto/bin/tools"',
+            '"' + self.spec["quarto-cli"].prefix + '/package/dist/bin/tools"',
+            "src/cpp/session/include/session/SessionConstants.hpp",
+            string=True,
+        )
+        filter_file(
+            '"bin/quarto"',
+            '"' + self.spec["quarto-cli"].prefix + '/package/dist/"',
+            "src/cpp/session/include/session/SessionConstants.hpp",
             string=True,
         )
 
