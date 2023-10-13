@@ -28,4 +28,5 @@ class RSeuratdisk(RPackage):
     depends_on("r-cli", type=('build', 'run'))
     depends_on("r-crayon", type=('build', 'run'))
     depends_on("r-rappdirs", type=('build', 'run'))
-    
+    depends_on("r-matrix", type=('build', 'run'))
+    depends_on("r-seuratdata", type=('build', 'run'))
