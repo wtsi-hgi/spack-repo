@@ -31,3 +31,4 @@ class RSeuratdisk(RPackage):
     depends_on("r-matrix", type=('build', 'run'))
     depends_on("r-seuratdata", type=('build', 'run'))
     depends_on("r-seurat", type=('build', 'run'))
+    depends_on("r-hdf5r", type=('build', 'run'))
