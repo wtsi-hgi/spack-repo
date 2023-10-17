@@ -15,12 +15,12 @@ class RSeuratdisk(RPackage):
     datasets, provided Seurat objects and distributed as independent packages.
     """
 
-    homepage = "https://github.com/satijalab/seurat-data"
+    homepage = "https://github.com/mojaveazure/seurat-disk"
     
-    git = "https://github.com/satijalab/seurat-data"
+    git = "https://github.com/mojaveazure/seurat-disk"
 
     # versions
-    version("0.2.2", branch="master")
+    version("0.2.2", commit="9b89970eac2a3bd770e744f63c7763419486b14c")
     
 
     # dependencies
