@@ -33,4 +33,4 @@ class RGaston(RPackage):
     depends_on("r-rcpp", type=("build", "run"))
     depends_on("r-rcppparallel", type=("build", "run"))
     depends_on("r-rcppeigen", type=("build", "run"))
-    depends_on("zlib", type=("build", "run"))
+    depends_on("zlib", type=("build", "link"))
