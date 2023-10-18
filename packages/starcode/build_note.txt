@@ -1,0 +1,3 @@
+spack install starcode cppflags="-fcommon"
+
+
