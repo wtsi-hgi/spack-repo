@@ -16,7 +16,7 @@ class RDimsum(RPackage):
 
     depends_on("fastqc@0.11.9")
     depends_on("vsearch@2.22.1")
-    depends_on("starcode@1.4")
+    depends_on("starcode@1.4 cppflags='-fcommon'")
     depends_on("zlib")
 
     depends_on("py-cutadapt@2.5")

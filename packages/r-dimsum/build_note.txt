@@ -12,7 +12,7 @@ spack install starcode cppflags="-fcommon"
 copy spack package.py and add zlib dependency , then build locally
 https://github.com/spack/spack/blob/v0.20.1/var/spack/repos/builtin/packages/r-shortread/package.py
 
-spack install r-shortrea
+spack install r-shortread
 
 4. py-typing-extensions
 copy latest package.py, then build locally

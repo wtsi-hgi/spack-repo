@@ -14,8 +14,6 @@ class Starcode(Package):
 
     version("1.4", tag="1.4")
 
-    # depends_on("gcc")
-
     def install(self, spec, prefix):
         make()
         mkdir(prefix + "/bin")
