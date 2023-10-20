@@ -3,16 +3,18 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+import os
 from spack.package import *
 
 class PyGnomix(PythonPackage):
     """High Resolution Ancestry Deconvolution for Next Generation Genomic Data."""
 
     homepage = "https://github.com/AI-sandbox/gnomix"
-    pypi = "gnomix/gnomix-0.0.7.tar.gz"
+    git = "https://github.com/AI-sandbox/gnomix"
 
-    version("0.0.7", sha256="11ff33182481cf74fd875e4be4ffc5b0709fd5803b434a92cfe3c20463e28bb3")
+    version("0.0.7", commit="de952a296c4e9bcf7a5b204667147122e33c1a03")
 
+    depends_on("python@3.7.4:", type=("build", "run"))
     depends_on("py-matplotlib@3.3.4:")
     depends_on("py-numpy@1.20.3:")
     depends_on("py-pandas@1.3.5:")
@@ -25,3 +27,13 @@ class PyGnomix(PythonPackage):
     depends_on("py-tqdm@4.62.3:")
     depends_on("py-uncertainty-calibration@0.0.7:")
     depends_on("py-xgboost@1.1.1:")
+
+    def install(self, spec, prefix):
+        with open('./gnomix.py', 'r') as fh:
+            data = fh.read()
+
+        with open('./gnomix.py', 'w') as fh:
+            fh.write("#!/usr/bin/env python3\n" + data)
+
+        os.chmod("./gnomix.py", 0o755)
+        install_tree(".", prefix)
