@@ -37,3 +37,9 @@ class PyGnomix(PythonPackage):
 
         os.chmod("./gnomix.py", 0o755)
         install_tree(".", prefix)
+
+    def setup_run_environment(self, env):
+        env.append_path("PATH", self.prefix)
+
+    def setup_dependent_environment(self):
+        env.prepend_path("PATH", self.prefix)
