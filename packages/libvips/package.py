@@ -40,4 +40,4 @@ class Libvips(AutotoolsPackage):
     depends_on("libtiff", when="+tiff")
     depends_on("libpng", when="+png")
     depends_on("poppler", when="+poppler")
-    depends_on("pkgconfig", type="build")
+    depends_on("pkg-config", type="build")

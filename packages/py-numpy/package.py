@@ -118,6 +118,7 @@ class PyNumpy(PythonPackage):
     depends_on("py-typing-extensions@4.2:", when="@1.23:", type="test")
 
     depends_on("gcc", type=("build", "run"))
+    depends_on("pkg-config")
 
     # Allows you to specify order of BLAS/LAPACK preference
     # https://github.com/numpy/numpy/pull/13132
