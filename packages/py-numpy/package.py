@@ -391,3 +391,6 @@ class PyNumpy(PythonPackage):
     def install_test(self):
         with working_dir("spack-test", create=True):
             python("-c", 'import numpy; numpy.test("full", verbose=2)')
+
+    def setup_dependent_run_environment(self, env, dependent_spec):
+        env.prepend_path("LD_LIBRARY_PATH", self.spec["gcc"].prefix + "/lib64")
