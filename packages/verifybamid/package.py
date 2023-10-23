@@ -27,4 +27,4 @@ class Verifybamid(CMakePackage):
     depends_on("pkg-config")
 
     def install(self, spec, prefix):
-        install("bin/VerifyBamID", prefix)
+        install("bin/VerifyBamID", prefix + "/bin/")

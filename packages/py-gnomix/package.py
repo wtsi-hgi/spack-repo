@@ -28,6 +28,8 @@ class PyGnomix(PythonPackage):
     depends_on("py-uncertainty-calibration@0.0.7:")
     depends_on("py-xgboost@1.1.1:")
 
+    installDir = "/usr/local/gnomix/"
+
     def install(self, spec, prefix):
         with open('./gnomix.py', 'r') as fh:
             data = fh.read()
@@ -36,10 +38,10 @@ class PyGnomix(PythonPackage):
             fh.write("#!/usr/bin/env python3\n" + data)
 
         os.chmod("./gnomix.py", 0o755)
-        install_tree(".", prefix)
+        install_tree(".", prefix + installDir)
 
     def setup_run_environment(self, env):
-        env.append_path("PATH", self.prefix)
+        env.append_path("PATH", self.prefix + installDir)
 
     def setup_dependent_environment(self):
-        env.prepend_path("PATH", self.prefix)
+        env.prepend_path("PATH", self.prefix + installDir)
