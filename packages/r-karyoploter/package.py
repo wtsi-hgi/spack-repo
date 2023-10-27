@@ -9,10 +9,10 @@ class RKaryoploter(RPackage):
     """karyoploteR creates karyotype plots of arbitrary genomes and offers a complete set of functions to plot arbitrary data on them."""
 
     homepage = "https://github.com/bernatgel/karyoploteR"
-    url = "https://bioconductor.org/packages/release/bioc/src/contrib/karyoploteR_1.26.0.tar.gz"
+    url = "https://bioconductor.org/packages/release/bioc/src/contrib/karyoploteR_1.28.0.tar.gz"
     bioc = "karyoploteR"
 
-    version("1.26.0", sha256="1d192cf0b0564d8b1b89710e0e1e6f387824434d45994b94e6a87e45a5a80cdb")
+    version("1.28.0", sha256="4118fadaba72b8493da7f38369b347ad416f98597d0302a131206950c4a5294b")
 
     depends_on("r-regioner", type=("build", "run"))
     depends_on("r-genomicranges", type=("build", "run"))

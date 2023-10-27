@@ -9,10 +9,10 @@ class RRegioner(RPackage):
     """regioneR offers a statistical framework based on customizable permutation tests to assess the association between genomic region sets and other genomic features."""
 
     homepage = "https://bioconductor.org/packages/release/bioc/html/regioneR.html"
-    url = "https://bioconductor.org/packages/release/bioc/src/contrib/regioneR_1.32.0.tar.gz"
+    url ="https://bioconductor.org/packages/release/bioc/src/contrib/regioneR_1.34.0.tar.gz"
     bioc = "regioneR"
 
-    version("1.32.0", sha256="e16bbe258a05850edd8b270181ef1415445e0ca5cd1d446882ac9a96d4c3343f")
+    version("1.34.0", sha256="32fa22d1ef19db168a017578178a61b38c4e82b4572595eed0cf3ad18e5c8fe1")
 
     depends_on("r-genomicranges", type=("build", "run"))
     depends_on("r-iranges", type=("build", "run"))
