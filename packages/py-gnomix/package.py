@@ -38,11 +38,11 @@ class PyGnomix(PythonPackage):
             fh.write("#!/usr/bin/env python3\n" + data)
 
         os.chmod("./gnomix.py", 0o755)
-        mkdir(prefix + installDir)
-        install_tree(".", prefix + installDir)
+        mkdir(prefix + self.installDir)
+        install_tree(".", prefix + self.installDir)
 
     def setup_run_environment(self, env):
-        env.append_path("PATH", self.prefix + installDir)
+        env.append_path("PATH", self.prefix + self.installDir)
 
     def setup_dependent_environment(self):
-        env.prepend_path("PATH", self.prefix + installDir)
+        env.prepend_path("PATH", self.prefix + self.installDir)
