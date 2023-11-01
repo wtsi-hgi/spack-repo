@@ -24,3 +24,6 @@ class RTecan(RPackage):
     depends_on("r-scales", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-reshape2", type=("build", "run"))
+
+    depends_on("r-growthrates", type=("build", "run"))
+
