@@ -117,8 +117,7 @@ class PyNumpy(PythonPackage):
     depends_on("py-hypothesis", when="@1.19:", type="test")
     depends_on("py-typing-extensions@4.2:", when="@1.23:", type="test")
 
-    depends_on("gcc", type=("build", "run"))
-    depends_on("pkg-config")
+    depends_on("openblas~fortran", type=("build", "link", "run"))
 
     # Allows you to specify order of BLAS/LAPACK preference
     # https://github.com/numpy/numpy/pull/13132
@@ -391,6 +390,3 @@ class PyNumpy(PythonPackage):
     def install_test(self):
         with working_dir("spack-test", create=True):
             python("-c", 'import numpy; numpy.test("full", verbose=2)')
-
-    def setup_dependent_run_environment(self, env, dependent_spec):
-        env.prepend_path("LD_LIBRARY_PATH", self.spec["gcc"].prefix + "/lib64")
