@@ -26,6 +26,8 @@ class Rstudio(CMakePackage):
     variant("R410", default=False, description="Build With R v4.1.0")
     variant("R413", default=False, description="Build With R v4.1.3")
     variant("R423", default=True, description="Build With R v4.2.3")
+    variant("R430", default=False, description="Build With R v4.3.0")
+    variant("R431", default=False, description="Build With R v4.3.1")
 
     depends_on("r@3.0.1:", type=("build", "run"))
     depends_on("r+X@3.6.1", type=("build", "run"), when="+server +R361")
@@ -33,6 +35,8 @@ class Rstudio(CMakePackage):
     depends_on("r+X@4.1.0", type=("build", "run"), when="+server +R410")
     depends_on("r+X@4.1.3", type=("build", "run"), when="+server +R413")
     depends_on("r+X@4.2.3", type=("build", "run"), when="+server +R423")
+    depends_on("r+X@4.3.0", type=("build", "run"), when="+server +R430")
+    depends_on("r+X@4.3.1", type=("build", "run"), when="+server +R431")
     depends_on("cmake@3.4.3:", type="build")
     depends_on("pkgconfig", type=("build", "link"))
     depends_on("ant", type="build")
