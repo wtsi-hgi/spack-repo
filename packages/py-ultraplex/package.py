@@ -33,6 +33,7 @@ class PyUltraplex(PythonPackage):
 
     depends_on("python@3.8", type=("build", "run"))
     depends_on("py-setuptools", type=("build", "run")) 
+    depends_on("py-setuptools-scm", type=("build", "run"))
 
     depends_on("py-dnaio", type=("build", "run"))
     depends_on("py-multiprocess", type=("build", "run"))
