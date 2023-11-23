@@ -27,15 +27,16 @@ class Fastqc(Package):
 
     def patch(self):
         filter_file("/usr/bin/perl", self.spec["perl"].command.path, "fastqc", backup=False)
+        filter_file(
+                "# Check the simple stuff first",
+                "$ENV{'LD_LIBRARY_PATH'} = '"+self.spec["freetype"].prefix.lib + ":"+self.spec["fontconfig"].prefix.lib+"';",
+                "./fastqc",
+                string=True,
+        )
 
     def install(self, spec, prefix):
         mkdir(prefix.bin)
         mkdir(prefix.lib)
-        filter_file(
-                "# Check the simple stuff first",
-                "$ENV{'LD_LIBRARY_PATH'} = '"+self.spec["freetype"].prefix.lib + ":"+self.spec["fontconfig"].prefix.lib+"';",
-                "./fastqc"
-        )
         install("fastqc", prefix.bin)
         for j in ["cisd-jhdf5.jar", "jbzip2-0.9.jar", "sam-1.103.jar"]:
             install(j, prefix.lib)
