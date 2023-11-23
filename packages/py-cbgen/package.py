@@ -26,7 +26,7 @@ class PyCbgen(PythonPackage):
     depends_on("py-pytest", type=("build", "run"))
     depends_on("py-poetry@1.0.8:", type=("build", "run"))
     depends_on("py-cmake", type="build")
-    depends_on("bgen@4.1.9:", type=("build", "link"))
+    depends_on("limix-bgen@4.1.9:", type=("build", "link"))
 
     def setup_build_environment(self, env):
         env.set("BGEN_SKIP_BUILD_DEPS", 1)
