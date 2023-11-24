@@ -19,7 +19,7 @@ class RDimsum(RPackage):
     depends_on("starcode@1.4 cppflags='-fcommon'")
     depends_on("zlib")
 
-    depends_on("py-cutadapt@2.5")
+    depends_on("py-cutadapt@2.4")
 
     depends_on("r+X", type=("build", "run"))
     depends_on("r-biostrings", type=("build", "run"))
