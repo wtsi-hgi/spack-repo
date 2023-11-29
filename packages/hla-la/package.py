@@ -47,4 +47,8 @@ class HlaLa(MakefilePackage):
         install_tree("obj", prefix.obj)
         install_tree("spack-src", prefix.src)
         install_tree("graphs", prefix.graphs)
+
+    def setup_run_environment(self, env):
+        env.prepend_path("PATH", self.prefix.bin)
+        env.prepend_path("PATH", self.prefix.src)
         
