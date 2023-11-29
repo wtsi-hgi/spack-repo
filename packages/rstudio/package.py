@@ -38,7 +38,7 @@ class Rstudio(CMakePackage):
     depends_on("r+X@4.3.0", type=("build", "run"), when="+server +R430")
     depends_on("r+X@4.3.1", type=("build", "run"), when="+server +R431")
     depends_on("cmake@3.4.3:", type="build")
-    depends_on("pkgconfig", type=("build", "link"))
+    depends_on("pkg-config", type=("build", "link"))
     depends_on("ant", type="build")
     depends_on("boost+pic@1.69:", when="~server")
     depends_on("boost+pic+atomic+chrono+date_time+filesystem+iostreams+program_options+random+regex+system+thread@1.69:", when="+server")

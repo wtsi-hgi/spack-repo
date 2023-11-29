@@ -20,7 +20,7 @@ class BoltLmm(MakefilePackage):
     depends_on("zstd")
     depends_on("glibc")
     depends_on("gcc")
-    depends_on("pkgconfig")
+    depends_on("pkg-config")
 
     def patch(self):
         filter_file("BOOST_INSTALL_DIR = /home/pl88/boost_1_58_0/install", "BOOST_INSTALL_DIR = " + self.spec["boost"].prefix, "src/Makefile", string=True)
