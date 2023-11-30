@@ -23,9 +23,8 @@ class HlaLa(MakefilePackage):
     depends_on("bwa@0.7.12:")
     depends_on("samtools@1.3:")
     depends_on("picard")
-    depends_on("wget", type="build")
-    depends_on("tar", type="build")
-    depends_on("gzip", type="build")
+
+    resource(name="data", url="http://www.well.ox.ac.uk/downloads/PRG_MHC_GRCh38_withIMGT.tar.gz", destination="graphs", sha256="8e9c440fff78ac0c43172ecdb39a9b6f2e49bc0986ad5b7719435f9a533a3d38")
 
     def build(self, spec, prefix):
         make("all", "BAMTOOLS_PATH="+spec["bamtools"].prefix, "BOOSTPATH="+spec["boost"].prefix)
@@ -36,17 +35,11 @@ class HlaLa(MakefilePackage):
         mkdir(prefix.src)
         mkdir(prefix.graphs)
 
+        install_tree("graphs", prefix.graphs)
         cd("..")
-        which("wget")("http://www.well.ox.ac.uk/downloads/PRG_MHC_GRCh38_withIMGT.tar.gz", "-O", "data.tar.gz")
-        mkdir("graphs")
-        cd("graphs")
-        which("tar")("xvf", "../data.tar.gz")
-        cd("..")
-
         install_tree("bin", prefix.bin)
         install_tree("obj", prefix.obj)
         install_tree("spack-src", prefix.src)
-        install_tree("graphs", prefix.graphs)
 
     def setup_run_environment(self, env):
         env.prepend_path("PATH", self.prefix.bin)
