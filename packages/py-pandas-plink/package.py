@@ -13,7 +13,7 @@ class PyPandasPlink(PythonPackage):
 
     version("2.2.9", sha256="f5ecacc46c7b92d67968310d14000327333ec1720f35142b091e56da6ef80711")
 
-    depends_on("py-cffi@1.14.3", type=("build", "run"))
+    depends_on("py-cffi@1.14.3:", type=("build", "run"))
     depends_on("py-dask@2.6.0:+array+dataframe", type=("build", "run"))
     depends_on("py-numpy@1.17.2:", type=("build", "run"))
     depends_on("py-pandas@1.1.3:", type=("build", "run"))
