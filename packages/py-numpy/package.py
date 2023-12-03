@@ -100,7 +100,7 @@ class PyNumpy(PythonPackage):
     depends_on("python@:3.7", when="@1.14.5:1.17.2", type=("build", "link", "run"))
 
     # https://github.com/spack/spack/pull/32078
-    depends_on("py-setuptools@:63", type=("build", "run"))
+    depends_on("py-setuptools", type=("build", "run"))
     depends_on("py-setuptools@:59", when="@:1.22.1", type=("build", "run"))
     # Check pyproject.toml for updates to the required cython version
     depends_on("py-cython@0.29.34:2", when="@1.25:", type="build")
