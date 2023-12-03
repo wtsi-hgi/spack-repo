@@ -41,7 +41,7 @@ class Plink(Package):
     with when("@1.9-beta6.27:"):
         depends_on("zlib", when="@1.9-beta6.27:")
         depends_on("blas", when="@1.9-beta6.27:")
-        depends_on("lapackpp", when="@1.9-beta6.27:")
+        depends_on("lapack", when="@1.9-beta6.27:")
 
     patch("dynamic_zlib.patch", when="@1.9-beta6.27:")
 
