@@ -90,12 +90,12 @@ class PyPillowBase(PythonPackage):
             return "{0}_{1}=1\n".format(able, variant)
 
         with open("setup.cfg", "a") as setup:
-            if "@7.0.0:" in self.spec:
-                VARIANTS_IN_SETUP_CFG.append("xcb")
-
             setup.write("[build_ext]\n")
             for variant in self.VARIANTS_IN_SETUP_CFG:
                 setup.write(variant_to_cfg(variant))
+
+            if "@7.0.0:" in self.spec:
+                setup.write(variant_to_cfg("xcb"))
 
             setup.write("rpath={0}\n".format(":".join(self.rpath)))
             setup.write("[install]\n")
