@@ -34,6 +34,7 @@ class Bgen(Package):
         filter_file('"zstd.h"', "<zstd.h>", "genfile/include/genfile/zlib.hpp", string=True)
 
     def setup_build_environment(self, env):
+    	env.set("USER", "user")
         env.set("LDFLAGS", "-lzstd -lsqlite3 -lboost_system -lboost_thread -lboost_filesystem -lboost_date_time -lboost_chrono -lboost_timer")
 
     def install(self, spec, prefix):
