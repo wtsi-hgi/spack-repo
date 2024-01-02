@@ -6,7 +6,6 @@
 
 from spack.package import *
 
-
 class RVdiffr(RPackage):
     """Visual Regression Testing and Graphical Diffing
     

@@ -5,7 +5,6 @@
 
 from spack.package import *
 
-
 class RRvenn(RPackage):
     """Set Operations for Many Sets
     

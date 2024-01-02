@@ -5,7 +5,6 @@
 
 from spack.package import *
 
-
 class RRmsfact(RPackage):
     """Amazing Random Facts About the World's Greatest Hacker
     

@@ -5,7 +5,6 @@
 
 from spack.package import *
 
-
 class RCowsay(RPackage):
     """Messages, Warnings, Strings with Ascii Animals
     

@@ -29,6 +29,7 @@ class RDimsum(RPackage):
     depends_on("r-cowplot", type=("build", "run"))
     depends_on("r-data-table", type=("build", "run"))
     depends_on("r-ggally", type=("build", "run"))
+
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-gridextra", type=("build", "run"))
     depends_on("r-hexbin", type=("build", "run"))

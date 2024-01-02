@@ -5,7 +5,6 @@
 
 from spack.package import *
 
-
 class RMsigdbr(RPackage):
     """MSigDB Gene Sets for Multiple Organisms in a Tidy Data Format
     

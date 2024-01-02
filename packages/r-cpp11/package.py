@@ -5,7 +5,6 @@
 
 from spack.package import *
 
-
 class RCpp11(RPackage):
     """A C++11 Interface for R's C Interface
     
