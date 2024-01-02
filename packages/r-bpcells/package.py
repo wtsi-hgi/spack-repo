@@ -36,3 +36,14 @@ class RBpcells(RPackage):
     depends_on("r-ggrepel", type=("build", "run"))
     depends_on("r-rcolorbrewer", type=("build", "run"))
     depends_on("r-hexbin", type=("build", "run"))
+    depends_on("hdf5", type=("build", "run"))
+    depends_on("openmpi", type=("build", "run", "link"))
+
+    def setup_build_environment(self, env):
+        env.set("LD_LIBRARY_PATH", join_path(self.spec["hdf5"].prefix, "lib"))
+
+    def setup_dependent_build_environment(self, env, spec):
+        env.prepend_path("LD_LIBRARY_PATH", join_path(spec["hdf5"].prefix, "lib"))
+
+    def setup_dependent_run_environment(self, env, spec):
+        env.prepend_path("LD_LIBRARY_PATH", join_path(spec["hdf5"].prefix, "lib"))

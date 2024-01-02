@@ -1,0 +1,73 @@
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Spack Project Developers. See the top-level COPYRIGHT file for details.
+#
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)
+
+from spack.package import *
+
+class RPgirmess(RPackage):
+    """Set of tools for reading, writing and transforming spatial and seasonal data, model selection and specific statistical tests for ecologists. It includes functions to interpolate regular positions of points between landmarks, to discretize polylines into regular point positions, link distant observations to points and convert a bounding box in a spatial object. It also provides miscellaneous functions for field ecologists such as spatial statistics and inference on diversity indexes, writing data.frame with Chinese characters."""
+
+    homepage = "https://giraudoux.pagesperso-orange.fr/"
+    cran = "pgirmess"
+
+    version("2.0.2", sha256="75d11eb10d7492892da1cc7f10576d7cf594a29507078b14d6e6246de2f2aef1")
+    version("2.0.1", sha256="fa13a4b59501fe3606a01d4102580a3bdf26a638dede836d485f8e1a6bf347a1")
+    version("2.0.0", sha256="9e4432305a3c37569633c2a01309ff7ca87d6d647911b60d9f62865ef5d525c8")
+    version("1.7.1", sha256="df2ab4d71ad67a7dbcddddfbc83739ad6485ca056a93756d962fc3c3edccb1c9")
+    version("1.7.0", sha256="3ec286b7e1c9763a66ff26b360d6d9a19f04b88715aeafbe2f4ad92514db05ce")
+    version("1.6.9", sha256="211877a8a72a281eaab11217f5ed5409c43c937cb2798fefa2e22b1d91b138c4")
+    version("1.6.8", sha256="ef5c1f8f4a3e678d9bc43adb4536304eebb0d9f46d57b940d6d457538693c5eb")
+    version("1.6.7", sha256="d7444f5ebc133b562172ad0d80a03b6107135db75a5ba74524009225958ec7aa")
+    version("1.6.6", sha256="c27d8f9f32e80e376bb1e3546aaa67ed001d7c067f25752c9ad96f82e0763afe")
+    version("1.6.5", sha256="23e60b608f16823794e94f2bf2be6b6e8b54017ce6a8477df25e3ffb58eb7e7c")
+    version("1.6.4", sha256="e2f39d84ab745544b9bae3081b3870306794176d200b9ba4014fa4e1fb6a0085")
+    version("1.6.3", sha256="bdd7233cd51c2d4a508fbe61b0e6e25c6069c9f88f35082ea18232511decc666")
+    version("1.6.2", sha256="7c16a44d4db4c87008571f64900d57817ad06f1eb6bb3c34f8dfc342c695220a")
+    version("1.6.1", sha256="5cef18ef989486236ee0b43f020c246b07ca44fceda35e3fde717d0b42c69a32")
+    version("1.6.0", sha256="c5c51782814602fb137d2bec7538d7e2bad8f20b7825c8cad2d43382c5ec5a2c")
+    version("1.5.9", sha256="2c72302fd9ff62f6d41ed99fe980bb4338146c68efa0635ab4f78a065fc9a8d8")
+    version("1.5.8", sha256="324c0461c767456cdc2bacd7ed0dfc9ab0be85264c024f38aa4454e54ba4ae51")
+    version("1.5.7", sha256="78d3d4f69f3679dbd4b4a030e9524369c58dc843850282532c564b10ad9a070a")
+    version("1.5.6", sha256="2a5c299db38d9d69aeb48d24fb971ee6a82f8dbd45dd7beeea1e93022cd9ccc6")
+    version("1.5.5", sha256="eb08d9745bdbc744c1db81f8881eaafee4e36885969d21a162fb9f73a0bcac3f")
+    version("1.5.4", sha256="cafc720a5ea456ff134a031f98de22b1e6a630a5959c942ac5032ae9c7872f9c")
+    version("1.5.3", sha256="4dfdf89dc3814a859ca7e0ea739008c96d234444150d5577617b9baa7a382412")
+    version("1.5.2", sha256="a34048bce2fb998ad236f30b545a528b1c0b4af4bf47f84171a7a251d7f1fb11")
+    version("1.5.1", sha256="eff7ad7c4174155ac1aded957d75764e11ed1b79cff992f748a4ecc05bbcf7a1")
+    version("1.5.0", sha256="80a0b2468a3a289470e90f5d1f1b928424d2938336d63a0c0f815ec421e444f2")
+    version("1.4.9", sha256="7ec353d4d91d40fabab5397764462d09681cc723febb914b7191d6aca46e968d")
+    version("1.4.8", sha256="508f161a654932ab4f73e4b8f0194b365631c110d488fab1ee1aced7da6e486e")
+    version("1.4.7", sha256="d2b05be8b1eeb5dbb61ddb358e0d92a8f8807bfb3a0c5bf8a83925717935d9b7")
+    version("1.4.6", sha256="0b9556656d7d00891ae3267c2d7d3459064c5415f7bedd8df244a180549dc46c")
+    version("1.4.5", sha256="8abf336b1f43c7d8dcf1d0adec3468aecdda164cddcdfc17aed0099fed57dfea")
+    version("1.4.4", sha256="aa572d7383aa9fcacae95dd9f4a5707ee6e30345c47997498853ec8aa45dd990")
+    version("1.4.3", sha256="e460e852ac16fee45744d3124de5dbd88b004f704b687a002230430d3bf12042")
+    version("1.4.2", sha256="1496af204ff66047f235d56f02ae6992f1e84523cd5c0d9cfaa21ad6979cceea")
+    version("1.4.1", sha256="82271ee1620bf7242e36901bfacd78a565adaa5eb016e0483bdeade3d36834be")
+    version("1.4.0", sha256="6c14f3bf2d9bd77454bdd58b0741221af1913bf9783faad9ce0d5b9ecc8ba2b7")
+    version("1.3.9", sha256="bcffd4a65824c039f2bcd491e6ee41214a632c492cacc76d2916fb56aa9097ff")
+    version("1.3.8", sha256="4a3cd5db25efb3deef6d278047c753f28681a273a623f19ddd1430719aa531ec")
+    version("1.3.7", sha256="fdc95c18a1505204f8496efcfcebde1135493927167c8a9acb16b4c80a9d233e")
+    version("1.3.6", sha256="a1b3d14b1b4f6f0dec8851ba27d69a968526e7a956a39450ba485f0b9c5ff7a6")
+    version("1.3.5", sha256="c85b426925d55ff515d21e02e29ea8f1756929c7f14c97f4aacc6efbcaea3607")
+    version("1.3.4", sha256="bb32dd0c213f5edc0686df441e09b5325be950033b3080ea7fec6853a2e0dbd1")
+    version("1.3.3", sha256="053fe3007233ab5d514bafe6850b971c9d4d2a9377725a4f84f0fc1542404edc")
+    version("1.3.2", sha256="73a58cbfbe3af105d191a6063defde373b4bb9a646bba530bbc311a40aef569c")
+    version("1.3.1", sha256="6433aec45acf95d02414f1150f050831f62a73abaaf47271def4966b8fb404da")
+    version("1.3.0", sha256="e30245e77b5746b84c04a429f93564f7073857eb0a7f74023f90f16a46344c4d")
+    version("1.2.9", sha256="e1e549fa844554bd92ad572063858e211b97dd2292872b4de274d20df17b6455")
+    version("1.2.8", sha256="d69cb81769e05dacd7bb98df5f2aca4e35b18b7f499c7822a4489788459a155e")
+    version("1.2.7", sha256="b9fab24da14b46c670e843f4601eb8f2c30f1a10e67a3b235a6c3454fff02865")
+    version("1.2.6", sha256="272f00ed575aeaec4a8d824afc79c54dc40f0890805766ccce91f60ba388f764")
+    version("1.2.5", sha256="0542f044ebf7e1c391d2708dedf25223a20d95a8dca991276c7839aa2ba28700")
+    version("1.2.4", sha256="819e8658cea59e18eb47a6452eb56e8c56868ac3f1fa81e5c8fc103dccabca8c")
+    version("1.2.3", sha256="00cce05be3d9eb25a28559f5647ff7b5c0b548e439d2865631c5332bc1abdcbc")
+    version("1.2.2", sha256="b032d2b8135ec665e331c41a524c8a2c1df54441126f3d788a34611005e1a485")
+
+    depends_on("r-boot@1.3-4:", type=("build", "run"))
+    depends_on("r-sf@1.0-4:", type=("build", "run"))
+    depends_on("r-sp@0.9-97:", type=("build", "run"))
+    depends_on("r-spdep@1.1-7:", type=("build", "run"))
+    depends_on("r-mass@7.3-1:", type=("run"))
+    depends_on("r-nlme@3.1-120:", type=("run"))

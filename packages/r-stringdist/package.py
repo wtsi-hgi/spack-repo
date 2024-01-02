@@ -32,5 +32,4 @@ Distance Functions
 
     # dependencies
     depends_on("r@2.15.3:", type=('build', 'run'))
-    depends_on("r-parallel", type=('build', 'run'))
     

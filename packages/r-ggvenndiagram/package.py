@@ -3,36 +3,17 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-# ----------------------------------------------------------------------------
-# If you submit this package back to Spack as a pull request,
-# please first remove this boilerplate and all FIXME comments.
-#
-# This is a template package file for Spack.  We've put "FIXME"
-# next to all the things you'll want to change. Once you've handled
-# them, you can save this file and test your package like this:
-#
-#     spack install r-ggvenndiagram
-#
-# You can edit this file again by typing:
-#
-#     spack edit r-ggvenndiagram
-#
-# See the Spack documentation for more information on packaging.
-# ----------------------------------------------------------------------------
-
 from spack.package import *
 
 
 class RGgvenndiagram(RPackage):
-    """FIXME: Put a proper description of your package here."""
+    """A 'ggplot2' Implement of Venn Diagram
+    
+    Easy-to-use functions to generate 2-7 sets Venn plot in publication quality. 'ggVennDiagram' plot Venn using well-defined geometry dataset and 'ggplot2'. The shapes of 2-4 sets Venn use circles and ellipses, while the shapes of 4-7 sets Venn use irregular polygons (4 has both forms), which are developed and imported from another package 'venn', authored by Adrian Dusa. We provided internal functions to integrate shape data with user provided sets data, and calculated the geometry of every regions/intersections of them, then separately plot Venn in three components: set edges, set labels, and regions. From version 1.0, it is possible to customize these components as you demand in ordinary 'ggplot2' grammar.
+    """
 
-    # FIXME: Add a proper url for your package's homepage here.
     homepage = "https://github.com/gaospecial/ggVennDiagram"
     cran = "ggVennDiagram"
-
-    # FIXME: Add a list of GitHub accounts to
-    # notify when the package is updated.
-    # maintainers("github_user1", "github_user2")
 
     version("1.2.3", sha256="f26c4977d868cef80a3ce80ea418130415ac4106336d4172c5638cd130c87820")
 

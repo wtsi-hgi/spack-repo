@@ -17,10 +17,10 @@ class RSeurat(RPackage):
     R, et al (2015) <doi:10.1016/j.cell.2015.05.002>, and Stuart T, Butler A,
     et al (2019) <doi:10.1016/j.cell.2019.05.031> for more details."""
 
-    cran = "Seurat"
+    # cran = "Seurat"
     git = "https://github.com/satijalab/seurat"
 
-    version("4.9.9", commit="8da9ee677a9613988c4d585ec825524c0586ea92")
+    version("4.9.9", commit="99b9ded61e0c5a0992c364316d22b339d2bc4a98")
     version("4.2.1", sha256="410238b6ca147451b43800a6e49c132fa5f6aacfe6b93b39a1e4d61257a9e35e")
     version("4.2.0", sha256="22a3d22a9ba255c4db5b37339b183fdfb91e2d37a8b8d58a9ff45b1bc414ebef")
     version("4.1.1", sha256="201aa96919b32378fc4cb67557188214c1242dcbae50cadd7d12c86666af8ace")
@@ -74,17 +74,20 @@ class RSeurat(RPackage):
     depends_on("r-rocr", type=("build", "run"))
     depends_on("r-rtsne", type=("build", "run"))
     depends_on("r-scales", type=("build", "run"), when="@3.0.0:")
-    depends_on("r-scattermore@0.7:", type=("build", "run"), when="@3.2.3:")
+    depends_on("r-scattermore@00.7:", type=("build", "run"), when="@3.2.3:")
+    depends_on("r-scattermore@01.2:", type=("build", "run"), when="@4.9.9:")
     depends_on("r-sctransform@0.2.0:", type=("build", "run"), when="@3.0.0:")
     depends_on("r-sctransform@0.3.1:", type=("build", "run"), when="@3.2.3:")
     depends_on("r-sctransform@0.3.3:", type=("build", "run"), when="@4.1.0:")
     depends_on("r-sctransform@0.3.4:", type=("build", "run"), when="@4.2.0:")
     depends_on("r-sctransform@0.3.5:", type=("build", "run"), when="@4.2.1:")
+    depends_on("r-sctransform@0.4.0:", type=("build", "run"), when="@4.9.9:")
     depends_on("r-seuratobject@4.0.4:", type=("build", "run"), when="@4.1.0:")
     depends_on("r-seuratobject@4.1.0:", type=("build", "run"), when="@4.1.1:")
     depends_on("r-seuratobject@4.1.2:", type=("build", "run"), when="@4.2.0:")
     depends_on("r-seuratobject@4.1.3:", type=("build", "run"), when="@4.2.1:")
     depends_on("r-seuratobject@4.9.9", type=("build", "run"), when="@4.9.9:")
+    depends_on("r-bpcells", type=("build", "run"), when="@4.9.9:")
     depends_on("r-shiny", type=("build", "run"), when="@3.2.3:")
     depends_on("r-spatstat-explore", type=("build", "run"), when="@4.2.1:")
     depends_on("r-spatstat-geom", type=("build", "run"), when="@4.1.0:")

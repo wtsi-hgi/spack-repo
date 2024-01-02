@@ -26,8 +26,9 @@ class REffectsize(RPackage):
 
     # dependencies
     depends_on("r@3.6:", type=('build', 'run'))
-    depends_on("r-bayestest-r@0.13.0:", type=('build', 'run'))
+    depends_on("r-bayestestr@0.13.0:", type=('build', 'run'))
     depends_on("r-insight@0.18.8:", type=('build', 'run'))
     depends_on("r-performance@0.10.2:", type=('build', 'run'))
     depends_on("r-datawizard@0.6.5:", type=('build', 'run'))
+    depends_on("r-parameters", type=('build', 'run'))
     

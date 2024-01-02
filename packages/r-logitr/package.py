@@ -25,7 +25,6 @@ class RLogitr(RPackage):
     depends_on("r-generics", type=('build', 'run'))
     depends_on("r-m-a-s-s", type=('build', 'run'))
     depends_on("r-nloptr", type=('build', 'run'))
-    depends_on("r-parallel", type=('build', 'run'))
     depends_on("r-randtoolbox", type=('build', 'run'))
     depends_on("r-tibble", type=('build', 'run'))
     

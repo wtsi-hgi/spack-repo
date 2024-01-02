@@ -1,0 +1,25 @@
+1. py-dnaio
+py-cutadapt@2.5 needs py-dnaio@0.3, but spack failed to build it due to python3.9
+download package.py from https://github.com/spack/spack/blob/v0.20.1/var/spack/repos/builtin/packages/py-dnaio/package.py
+add python3.7 dependency
+
+spack install py-dnaio@0.3
+
+2. starcode
+spack install starcode cppflags="-fcommon"
+
+3. r-shortread
+copy spack package.py and add zlib dependency , then build locally
+https://github.com/spack/spack/blob/v0.20.1/var/spack/repos/builtin/packages/r-shortread/package.py
+
+spack install r-shortread
+
+4. py-typing-extensions
+copy latest package.py, then build locally
+https://github.com/spack/spack/blob/develop/var/spack/repos/builtin/packages/py-typing-extensions/package.py
+
+5. py-pyyaml
+py-pyyaml@6.0 conflicts with py-cython@3, so spack 0.20.1 failed, but succeeded with develop package.py
+copy latest package.py, then build locally
+https://github.com/spack/spack/blob/develop/var/spack/repos/builtin/packages/py-pyyaml/package.py
+

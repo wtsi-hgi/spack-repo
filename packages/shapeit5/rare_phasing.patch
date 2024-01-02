@@ -1,0 +1,15 @@
+diff --git a/phase_rare/src/containers/genotype_set/genotype_set_phasing.cpp b/phase_rare/src/containers/genotype_set/genotype_set_phasing.cpp
+index e30209b..56a4e29 100644
+--- a/phase_rare/src/containers/genotype_set/genotype_set_phasing.cpp
++++ b/phase_rare/src/containers/genotype_set/genotype_set_phasing.cpp
+@@ -129,8 +129,8 @@ void genotype_set::phaseCoalescentViterbi(unsigned int ind, vector < int > & pat
+ 				GRind_genotypes[ind][vr].al1 = 0;
+ 			}
+ 
+-			//GRind_genotypes[ind][vr].prob = max(w0, w1) / (w0+w1);
+-			GRind_genotypes[ind][vr].prob = 0.5f;
++			GRind_genotypes[ind][vr].prob = max(w0, w1) / (w0+w1);
++			//GRind_genotypes[ind][vr].prob = 0.5f;
+ 		}
+ 	}
+ }

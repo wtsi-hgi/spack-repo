@@ -28,7 +28,7 @@ class Gmake(AutotoolsPackage, GNUMirrorPackage):
     with when("+guile"):
         depends_on("guile@:2.0", when="@:4.2")
         depends_on("guile@:3.0")
-        depends_on("pkgconfig", type="build")
+        depends_on("pkg-config", type="build")
 
     # build.sh requires it in 4.0 (SV 40254)
     conflicts("~guile", when="@4.0")

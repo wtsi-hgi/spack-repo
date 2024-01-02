@@ -1,0 +1,198 @@
+diff --git a/libpam_misc/Makefile.in b/libpam_misc/Makefile.in
+index 1629e49..7d65870 100644
+--- a/libpam_misc/Makefile.in
++++ b/libpam_misc/Makefile.in
+@@ -160,7 +160,7 @@ am__v_lt_1 =
+ libpam_misc_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
+ 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
+ 	$(AM_CFLAGS) $(CFLAGS) $(libpam_misc_la_LDFLAGS) $(LDFLAGS) -o \
+-	$@
++	$@ $(LIBINTL)
+ AM_V_P = $(am__v_P_@AM_V@)
+ am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
+ am__v_P_0 = false
+diff --git a/modules/pam_exec/Makefile.in b/modules/pam_exec/Makefile.in
+index f738998..b02bcea 100644
+--- a/modules/pam_exec/Makefile.in
++++ b/modules/pam_exec/Makefile.in
+@@ -185,7 +185,7 @@ am__v_CC_1 =
+ CCLD = $(CC)
+ LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+ 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+-	$(AM_LDFLAGS) $(LDFLAGS) -o $@
++	$(AM_LDFLAGS) $(LDFLAGS) -o $@ $(LIBINTL)
+ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
+ am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
+ am__v_CCLD_0 = @echo "  CCLD    " $@;
+diff --git a/modules/pam_faillock/Makefile.in b/modules/pam_faillock/Makefile.in
+index e9b62c3..ba0309c 100644
+--- a/modules/pam_faillock/Makefile.in
++++ b/modules/pam_faillock/Makefile.in
+@@ -171,7 +171,7 @@ am__v_lt_1 =
+ pam_faillock_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
+ 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
+ 	$(AM_CFLAGS) $(CFLAGS) $(pam_faillock_la_LDFLAGS) $(LDFLAGS) \
+-	-o $@
++	-o $@ $(LIBINTL)
+ am_faillock_OBJECTS = faillock-main.$(OBJEXT) \
+ 	faillock-faillock.$(OBJEXT) faillock-faillock_config.$(OBJEXT)
+ faillock_OBJECTS = $(am_faillock_OBJECTS)
+@@ -179,7 +179,7 @@ faillock_DEPENDENCIES = $(top_builddir)/libpam/libpam.la \
+ 	$(am__DEPENDENCIES_1)
+ faillock_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+ 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(faillock_CFLAGS) \
+-	$(CFLAGS) $(faillock_LDFLAGS) $(LDFLAGS) -o $@
++	$(CFLAGS) $(faillock_LDFLAGS) $(LDFLAGS) -o $@ $(LIBINTL)
+ tst_pam_faillock_retval_SOURCES = tst-pam_faillock-retval.c
+ tst_pam_faillock_retval_OBJECTS = tst-pam_faillock-retval.$(OBJEXT)
+ tst_pam_faillock_retval_DEPENDENCIES =  \
+@@ -218,7 +218,7 @@ am__v_CC_1 =
+ CCLD = $(CC)
+ LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+ 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+-	$(AM_LDFLAGS) $(LDFLAGS) -o $@
++	$(AM_LDFLAGS) $(LDFLAGS) -o $@ $(LIBINTL)
+ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
+ am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
+ am__v_CCLD_0 = @echo "  CCLD    " $@;
+diff --git a/modules/pam_limits/Makefile.in b/modules/pam_limits/Makefile.in
+index 7b515b8..d22a12c 100644
+--- a/modules/pam_limits/Makefile.in
++++ b/modules/pam_limits/Makefile.in
+@@ -187,7 +187,7 @@ am__v_CC_1 =
+ CCLD = $(CC)
+ LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+ 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+-	$(AM_LDFLAGS) $(LDFLAGS) -o $@
++	$(AM_LDFLAGS) $(LDFLAGS) -o $@ $(LIBINTL)
+ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
+ am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
+ am__v_CCLD_0 = @echo "  CCLD    " $@;
+diff --git a/modules/pam_mail/Makefile.in b/modules/pam_mail/Makefile.in
+index 36df81c..5e1ded6 100644
+--- a/modules/pam_mail/Makefile.in
++++ b/modules/pam_mail/Makefile.in
+@@ -185,7 +185,7 @@ am__v_CC_1 =
+ CCLD = $(CC)
+ LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+ 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+-	$(AM_LDFLAGS) $(LDFLAGS) -o $@
++	$(AM_LDFLAGS) $(LDFLAGS) -o $@ $(LIBINTL)
+ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
+ am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
+ am__v_CCLD_0 = @echo "  CCLD    " $@;
+diff --git a/modules/pam_mkhomedir/Makefile.in b/modules/pam_mkhomedir/Makefile.in
+index 3e5cb17..83a8396 100644
+--- a/modules/pam_mkhomedir/Makefile.in
++++ b/modules/pam_mkhomedir/Makefile.in
+@@ -164,7 +164,7 @@ am__v_lt_1 =
+ pam_mkhomedir_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
+ 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
+ 	$(AM_CFLAGS) $(CFLAGS) $(pam_mkhomedir_la_LDFLAGS) $(LDFLAGS) \
+-	-o $@
++	-o $@ $(LIBINTL)
+ am_mkhomedir_helper_OBJECTS =  \
+ 	mkhomedir_helper-mkhomedir_helper.$(OBJEXT)
+ mkhomedir_helper_OBJECTS = $(am_mkhomedir_helper_OBJECTS)
+@@ -172,7 +172,7 @@ mkhomedir_helper_DEPENDENCIES = $(top_builddir)/libpam/libpam.la
+ mkhomedir_helper_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
+ 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
+ 	$(mkhomedir_helper_CFLAGS) $(CFLAGS) \
+-	$(mkhomedir_helper_LDFLAGS) $(LDFLAGS) -o $@
++	$(mkhomedir_helper_LDFLAGS) $(LDFLAGS) -o $@ $(LIBINTL)
+ tst_pam_mkhomedir_retval_SOURCES = tst-pam_mkhomedir-retval.c
+ tst_pam_mkhomedir_retval_OBJECTS = tst-pam_mkhomedir-retval.$(OBJEXT)
+ tst_pam_mkhomedir_retval_DEPENDENCIES =  \
+@@ -210,7 +210,7 @@ am__v_CC_1 =
+ CCLD = $(CC)
+ LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+ 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+-	$(AM_LDFLAGS) $(LDFLAGS) -o $@
++	$(AM_LDFLAGS) $(LDFLAGS) -o $@ $(LIBINTL)
+ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
+ am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
+ am__v_CCLD_0 = @echo "  CCLD    " $@;
+diff --git a/modules/pam_pwhistory/Makefile.in b/modules/pam_pwhistory/Makefile.in
+index dcb969a..d6fece9 100644
+--- a/modules/pam_pwhistory/Makefile.in
++++ b/modules/pam_pwhistory/Makefile.in
+@@ -169,7 +169,7 @@ am__v_lt_1 =
+ pam_pwhistory_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
+ 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
+ 	$(pam_pwhistory_la_CFLAGS) $(CFLAGS) \
+-	$(pam_pwhistory_la_LDFLAGS) $(LDFLAGS) -o $@
++	$(pam_pwhistory_la_LDFLAGS) $(LDFLAGS) -o $@ $(LIBINTL)
+ am_pwhistory_helper_OBJECTS =  \
+ 	pwhistory_helper-pwhistory_helper.$(OBJEXT) \
+ 	pwhistory_helper-opasswd.$(OBJEXT)
+@@ -178,7 +178,7 @@ pwhistory_helper_DEPENDENCIES = $(top_builddir)/libpam/libpam.la
+ pwhistory_helper_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
+ 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
+ 	$(pwhistory_helper_CFLAGS) $(CFLAGS) \
+-	$(pwhistory_helper_LDFLAGS) $(LDFLAGS) -o $@
++	$(pwhistory_helper_LDFLAGS) $(LDFLAGS) -o $@ $(LIBINTL)
+ tst_pam_pwhistory_retval_SOURCES = tst-pam_pwhistory-retval.c
+ tst_pam_pwhistory_retval_OBJECTS = tst-pam_pwhistory-retval.$(OBJEXT)
+ tst_pam_pwhistory_retval_DEPENDENCIES =  \
+@@ -218,7 +218,7 @@ am__v_CC_1 =
+ CCLD = $(CC)
+ LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+ 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+-	$(AM_LDFLAGS) $(LDFLAGS) -o $@
++	$(AM_LDFLAGS) $(LDFLAGS) -o $@ $(LIBINTL)
+ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
+ am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
+ am__v_CCLD_0 = @echo "  CCLD    " $@;
+diff --git a/modules/pam_timestamp/Makefile.in b/modules/pam_timestamp/Makefile.in
+index feffca8..2237123 100644
+--- a/modules/pam_timestamp/Makefile.in
++++ b/modules/pam_timestamp/Makefile.in
+@@ -176,7 +176,7 @@ am__v_lt_1 =
+ pam_timestamp_la_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
+ 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
+ 	$(pam_timestamp_la_CFLAGS) $(CFLAGS) \
+-	$(pam_timestamp_la_LDFLAGS) $(LDFLAGS) -o $@
++	$(pam_timestamp_la_LDFLAGS) $(LDFLAGS) -o $@ $(LIBINTL)
+ am__hmacfile_SOURCES_DIST = hmacfile.c hmacsha1.c sha1.c
+ @COND_USE_OPENSSL_FALSE@am_hmacfile_OBJECTS = hmacfile.$(OBJEXT) \
+ @COND_USE_OPENSSL_FALSE@	hmacsha1.$(OBJEXT) sha1.$(OBJEXT)
+@@ -191,7 +191,7 @@ pam_timestamp_check_DEPENDENCIES = $(top_builddir)/libpam/libpam.la \
+ pam_timestamp_check_LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC \
+ 	$(AM_LIBTOOLFLAGS) $(LIBTOOLFLAGS) --mode=link $(CCLD) \
+ 	$(pam_timestamp_check_CFLAGS) $(CFLAGS) \
+-	$(pam_timestamp_check_LDFLAGS) $(LDFLAGS) -o $@
++	$(pam_timestamp_check_LDFLAGS) $(LDFLAGS) -o $@ $(LIBINTL)
+ AM_V_P = $(am__v_P_@AM_V@)
+ am__v_P_ = $(am__v_P_@AM_DEFAULT_V@)
+ am__v_P_0 = false
+@@ -227,7 +227,7 @@ am__v_CC_1 =
+ CCLD = $(CC)
+ LINK = $(LIBTOOL) $(AM_V_lt) --tag=CC $(AM_LIBTOOLFLAGS) \
+ 	$(LIBTOOLFLAGS) --mode=link $(CCLD) $(AM_CFLAGS) $(CFLAGS) \
+-	$(AM_LDFLAGS) $(LDFLAGS) -o $@
++	$(AM_LDFLAGS) $(LDFLAGS) -o $@ $(LIBINTL)
+ AM_V_CCLD = $(am__v_CCLD_@AM_V@)
+ am__v_CCLD_ = $(am__v_CCLD_@AM_DEFAULT_V@)
+ am__v_CCLD_0 = @echo "  CCLD    " $@;
+diff --git a/modules/pam_unix/support.c b/modules/pam_unix/support.c
+index 043273d..1dfb3e9 100644
+--- a/modules/pam_unix/support.c
++++ b/modules/pam_unix/support.c
+@@ -339,14 +339,14 @@ int _unix_getpwnam(pam_handle_t *pamh, const char *name,
+ 		char *userinfo = NULL, *domain = NULL;
+ 		int len = 0, i;
+ 		len = yp_get_default_domain(&domain);
+-		if (len == YPERR_SUCCESS) {
++		if (len == 1) {
+ 			len = yp_bind(domain);
+ 		}
+-		if (len == YPERR_SUCCESS) {
++		if (len == 1) {
+ 			i = yp_match(domain, "passwd.byname", name,
+ 				     strlen(name), &userinfo, &len);
+ 			yp_unbind(domain);
+-			if ((i == YPERR_SUCCESS) && ((size_t)len < sizeof(buf))) {
++			if ((i == 1) && ((size_t)len < sizeof(buf))) {
+ 				strncpy(buf, userinfo, sizeof(buf) - 1);
+ 				buf[sizeof(buf) - 1] = '\0';
+ 				matched = 1;

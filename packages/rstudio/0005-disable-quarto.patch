@@ -1,0 +1,25 @@
+From 218230a2d6bc407b3b898e298815d2d457c18a93 Mon Sep 17 00:00:00 2001
+From: =?UTF-8?q?I=C3=B1aki=20=C3=9Acar?= <iucar@fedoraproject.org>
+Date: Sun, 18 Dec 2022 23:48:04 +0100
+Subject: [PATCH] disable quarto
+
+---
+ src/cpp/session/session-options.json | 2 +-
+ 1 file changed, 1 insertion(+), 1 deletion(-)
+
+diff --git a/src/cpp/session/session-options.json b/src/cpp/session/session-options.json
+index c7ace4c..b2c592c 100644
+--- a/src/cpp/session/session-options.json
++++ b/src/cpp/session/session-options.json
+@@ -702,7 +702,7 @@
+             "name": "external-pandoc-path",
+             "type": "core::FilePath",
+             "memberName": "pandocPath_",
+-            "defaultValue": {"code": "kDefaultPandocPath", "description": "bin/quarto/bin/tools"},
++            "defaultValue": {"code": "kDefaultPandocPath", "description": "bin/pandoc"},
+             "description": "Specifies the path to pandoc binaries."
+          },
+          {
+-- 
+2.38.1
+

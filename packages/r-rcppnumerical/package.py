@@ -24,4 +24,5 @@ class RRcppnumerical(RPackage):
 
     # dependencies
     depends_on("r-rcpp", type=('build', 'run'))
+    depends_on("r-rcppeigen", type=('build', 'run'))
     

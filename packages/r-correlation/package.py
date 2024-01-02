@@ -26,8 +26,7 @@ class RCorrelation(RPackage):
 
     # dependencies
     depends_on("r@3.6:", type=('build', 'run'))
-    depends_on("r-bayestest-r@0.13.0:", type=('build', 'run'))
-    depends_on("r-datasets", type=('build', 'run'))
+    depends_on("r-bayestestr@0.13.0:", type=('build', 'run'))
     depends_on("r-datawizard@0.7.0:", type=('build', 'run'))
     depends_on("r-insight@0.19.1:", type=('build', 'run'))
     depends_on("r-parameters@0.20.2:", type=('build', 'run'))

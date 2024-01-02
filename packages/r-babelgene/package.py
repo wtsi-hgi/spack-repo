@@ -24,15 +24,14 @@ from spack.package import *
 
 
 class RBabelgene(RPackage):
-    """FIXME: Put a proper description of your package here."""
+    """Gene Orthologs for Model Organisms in a Tidy Data Format
 
-    # FIXME: Add a proper url for your package's homepage here.
+    Genomic analysis of model organisms frequently requires the use of databases based on human data or making comparisons to patient-derived resources. This requires harmonization of gene names into the same gene space. The 'babelgene' R package converts between human and non-human gene orthologs/homologs. The package integrates orthology assertion predictions sourced from multiple databases as compiled by the HGNC Comparison of Orthology Predictions (HCOP) (Wright et al. 2005 <doi:10.1007/s00335-005-0103-2>, Eyre et al. 2007 <doi:10.1093/bib/bbl030>, Seal et al. 2011 <doi:10.1093/nar/gkq892>).
+    """
+
+
     homepage = "https://igordot.github.io/babelgene/"
     cran = "babelgene"
-
-    # FIXME: Add a list of GitHub accounts to
-    # notify when the package is updated.
-    # maintainers("github_user1", "github_user2")
 
     version("22.9", sha256="ce6601dcb78352516d3b0355042c52a20e154b39d3b27b93ff52150a59c885e2")
 

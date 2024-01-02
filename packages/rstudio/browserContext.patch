@@ -1,0 +1,13 @@
+diff --git a/src/cpp/r/session/RSession.cpp b/src/cpp/r/session/RSession.cpp
+index 0066a61..ab71b64 100644
+--- a/src/cpp/r/session/RSession.cpp
++++ b/src/cpp/r/session/RSession.cpp
+@@ -497,7 +497,7 @@ bool isSuspendable(const std::string& currentPrompt)
+ 
+ bool browserContextActive()
+ {
+-   return Rf_countContexts(CTXT_BROWSER, 1) > 0;
++   return true;
+ }
+    
+ namespace utils {
