@@ -1,17 +1,34 @@
-From 218230a2d6bc407b3b898e298815d2d457c18a93 Mon Sep 17 00:00:00 2001
+From d130a6978b3ef72bf80b4aff42468c561f5ed5a7 Mon Sep 17 00:00:00 2001
 From: =?UTF-8?q?I=C3=B1aki=20=C3=9Acar?= <iucar@fedoraproject.org>
-Date: Sun, 18 Dec 2022 23:48:04 +0100
-Subject: [PATCH] disable quarto
+Date: Wed, 20 Dec 2023 14:47:53 +0100
+Subject: [PATCH] asdf
 
 ---
+ src/cpp/session/SessionOptions.cpp   | 4 +---
  src/cpp/session/session-options.json | 2 +-
- 1 file changed, 1 insertion(+), 1 deletion(-)
+ 2 files changed, 2 insertions(+), 4 deletions(-)
 
+diff --git a/src/cpp/session/SessionOptions.cpp b/src/cpp/session/SessionOptions.cpp
+index fafc1b3..38407ef 100644
+--- a/src/cpp/session/SessionOptions.cpp
++++ b/src/cpp/session/SessionOptions.cpp
+@@ -59,10 +59,8 @@
+ # define kQuartoArch "x86_64"
+ #elif defined(__aarch64__)
+ # define kQuartoArch "aarch64"
+-#elif defined(__amd64__)
+-# define kQuartoArch "x86_64"
+ #else
+-# error "unknown or unsupported platform architecture"
++# define kQuartoArch "x86_64"
+ #endif
+ 
+ using namespace rstudio::core;
 diff --git a/src/cpp/session/session-options.json b/src/cpp/session/session-options.json
-index c7ace4c..b2c592c 100644
+index 72a45a6..33b8a72 100644
 --- a/src/cpp/session/session-options.json
 +++ b/src/cpp/session/session-options.json
-@@ -702,7 +702,7 @@
+@@ -714,7 +714,7 @@
              "name": "external-pandoc-path",
              "type": "core::FilePath",
              "memberName": "pandocPath_",
@@ -21,5 +38,5 @@ index c7ace4c..b2c592c 100644
           },
           {
 -- 
-2.38.1
+2.43.0
 

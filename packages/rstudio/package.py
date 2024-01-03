@@ -14,7 +14,8 @@ class Rstudio(CMakePackage):
     homepage = "www.rstudio.com/products/rstudio/"
     url = "https://github.com/rstudio/rstudio/archive/refs/tags/v1.4.1717.tar.gz"
 
-    version("2022.12.0", url="https://github.com/rstudio/rstudio/archive/refs/tags/v2022.12.0+353.tar.gz", sha256="e4f3503e2ad4229301360f56fd5288e5c8e769c490073dae7fe40366237ecce0")
+    version("2023.12.0", url="https://github.com/rstudio/rstudio/archive/refs/tags/v2023.12.0+369.tar.gz", sha256="6ee6acdd361b526fdc5fc922600cec0f04a7fe8304ae62e5a65d5fd4c55e824c")
+    version("2022.12.0", url="https://github.com/rstudio/rstudio/archive/refs/tags/v2022.12.0+353.tar.gz", sha256="e4f3503e2ad4229301360f56fd5288e5c8e769c490073dae7fe40366237ecce0", preferred=True)
     version("1.4.1743", sha256="f046b2e91d4b27794d989e9bb2d7ad951b913ae86ed485364fc5b7fccba9c927")
     version("1.4.1717", sha256="3af234180fd7cef451aef40faac2c7b52860f14a322244c1c7aede029814d261")
 
@@ -42,6 +43,7 @@ class Rstudio(CMakePackage):
     depends_on("ant", type="build")
     depends_on("boost+pic@1.69:", when="~server")
     depends_on("boost+pic+atomic+chrono+date_time+filesystem+iostreams+program_options+random+regex+system+thread@1.69:", when="+server")
+    depends_on("boost@1.83:", when="@2023.12.0:")
     depends_on("qt+webkit@5.12:", when="~server")
     depends_on("patchelf@0.9:")
     depends_on("yaml-cpp@:0.6.3")  # find_package fails with newest version
@@ -86,10 +88,12 @@ class Rstudio(CMakePackage):
     )
 
     patch("0000-unbundle-dependencies-common.patch", sha256="5bfc248530f466fe590c4c57df5677bea81fa221e19f2808452c80bf0c1c6cb4", when="@2022.12.0")
+    patch("0000-unbundle-dependencies-common-23.patch", sha256="5bfc248530f466fe590c4c57df5677bea81fa221e19f2808452c80bf0c1c6cb4", when="@2023.12.0")
     patch("0004-use-system-node.patch", sha256="464f8f99988a2fdb3c61917e60fcee8a07cbb73582e06650e3d7d17e9a2dd67f", when="@2022.12.0")
-    #patch("0005-disable-quarto.patch", sha256="248b9ac70919f795a5ae4b639dd28b8936b597f19b0df3a356af8be860917f9b", when="@2022.12.0")
+    patch("0004-use-system-node-23.patch", sha256="eaf7dedf6e4fb351e894aecde19375af243e7aa347f4b9747b610ed3634c8d8d", when="@2023.12.0")
+    patch("0005-disable-quarto.patch", sha256="248b9ac70919f795a5ae4b639dd28b8936b597f19b0df3a356af8be860917f9b", when="@2023.12.0")
 
-    patch("set.patch")
+    patch("set.patch", when="@:2022.12.0")
     patch("const.patch", when="@:1.4.1743")
     patch("browserContext.patch", when="+server")
 
@@ -109,11 +113,19 @@ class Rstudio(CMakePackage):
     def setup_build_environment(self, env):
         env.set("RSTUDIO_TOOLS_ROOT", self.prefix.tools)
 
-        with when("+server"):
-            env.set("RSTUDIO_VERSION_MAJOR", "2022")
-            env.set("RSTUDIO_VERSION_MINOR", "12")
-            env.set("RSTUDIO_VERSION_PATCH", "0")
-            env.set("RSTUDIO_VERSION_SUFFIX", "+353")
+        if self.spec.satisfies("+server"):
+            if self.spec.satisfies("@2022.12.0"):
+                env.set("RSTUDIO_VERSION_MAJOR", "2022")
+                env.set("RSTUDIO_VERSION_MINOR", "12")
+                env.set("RSTUDIO_VERSION_PATCH", "0")
+                env.set("RSTUDIO_VERSION_SUFFIX", "+369")
+
+            if self.spec.satisfies("@2022.12.0"):
+                env.set("RSTUDIO_VERSION_MAJOR", "2023")
+                env.set("RSTUDIO_VERSION_MINOR", "12")
+                env.set("RSTUDIO_VERSION_PATCH", "0")
+                env.set("RSTUDIO_VERSION_SUFFIX", "+353")
+
             env.set("RSTUDIO_RELEASE_NAME", "hgi")
 
         env.prepend_path("PATH", self.spec["node-js"].prefix.bin)
@@ -174,16 +186,20 @@ class Rstudio(CMakePackage):
         deps = Executable("./dependencies/common/install-mathjax")
         deps()
 
-        npm = Executable(self.spec["npm"].prefix.bin.npm)
-        npm("i", "typescript")
-        npm("i", "yarn")
-
-        with when("@2023.09.0"):
-            #deps = Executable("./dependencies/common/install-panmirror")
-            #deps()
+        if self.spec.satisfies("+server"):
             deps = Executable("./dependencies/common/install-quarto")
             deps()
-            #npm("i", "--prefix","src/gwt/lib/quarto/", "--force")
+
+            npm = Executable(self.spec["npm"].prefix.bin.npm)
+            npm("i", "typescript")
+            npm("i", "yarn")
+
+            if self.spec.satisfies("@2023.12.0"):
+                deps = Executable("./dependencies/common/install-panmirror")
+                deps()
+                npm("i", "--prefix","src/gwt/lib/quarto/", "--force")
+
+
 
         # two methods for pandoc
         # 1) replace install-pandoc:
