@@ -10,7 +10,7 @@ class PyAegScrambler(PythonPackage):
 
     git = "https://github.com/wtsi-hgi/aeg-scrambler"
 
-    version("0.0.1", sha256="47ce194b03b90e6f7cf6567193773a06d41f3b02")
+    version("2023-07-04", commit="361f033a142b22ebc6612b4b9acfba2abb8fb251")
     
     #depends_on("py-pridict", type=("build", "run"))
     depends_on("py-pyranges", type=("build", "run"))
