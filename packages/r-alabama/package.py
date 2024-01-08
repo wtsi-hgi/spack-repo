@@ -2,26 +2,23 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-
+	
 from spack.package import *
-
-
+	
+			
 class RAlabama(RPackage):
-    """Constrained Nonlinear Optimization
-    
-    Augmented Lagrangian Adaptive Barrier Minimization
+	"""Constrained Nonlinear Optimization
+
+	Augmented Lagrangian Adaptive Barrier Minimization
         Algorithm for optimizing smooth nonlinear objective functions
         with constraints. Linear or nonlinear equality and inequality
         constraints are allowed.
-    """
+	"""
+	
+	cran = "alabama" 
 
-    homepage = "https://cran.r-project.org/web/packages/alabama"
-    
-    cran = "alabama"
+	version("2023.1.0", md5="c5c8ed8a90efc7e142140f30237f4de6")
 
-    # versions
-    version("2022.4-1", md5="92bde73c545c27b2fa781d8b5e4378dd")
-    
+	depends_on("r@2.10.1:", type=("build", "run"))
+	depends_on("r-numderiv", type=("build", "run"))
 
-    # dependencies
-    

@@ -5,7 +5,6 @@
 
 from spack.package import *
 
-
 class RAlpaca(RPackage):
     """Fit GLM's with High-Dimensional k-Way Fixed Effects
     
@@ -16,13 +15,12 @@ class RAlpaca(RPackage):
     
     cran = "alpaca"
 
-    # versions
     version("0.3.4", md5="51c226ddd448efddee4d14a75b4c96c6")
-    
 
-    # dependencies
     depends_on("r@3.1.0:", type=('build', 'run'))
     depends_on("r-formula", type=('build', 'run'))
-    depends_on("r-m-a-s-s", type=('build', 'run'))
+    depends_on("r-mass", type=('build', 'run'))
     depends_on("r-rcpp", type=('build', 'run'))
+    depends_on("r-data-table", type=("build", "run"))
+    depends_on("r-rcpparmadillo", type=("build", "run"))
     

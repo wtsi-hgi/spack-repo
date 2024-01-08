@@ -17,7 +17,7 @@ class PyDemultiplex(PythonPackage):
     depends_on("python@3.7:", type=("build", "run"))
     depends_on("py-setuptools", type="build")
 
-    depends_on("py-biopython@1.73", type=("build", "run"))
+    depends_on("py-biopython@1.73:", type=("build", "run"))
     depends_on("py-python-levenshtein", type=("build", "run"))
     depends_on("py-regex", type=("build", "run"))
 

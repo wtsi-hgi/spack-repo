@@ -8,7 +8,6 @@ from spack.package import *
 class RTesseract(RPackage):
     """Bindings to 'Tesseract': a powerful optical character recognition (OCR) engine that supports over 100 languages."""
 
-    # FIXME: Add a proper url for your package's homepage here.
     homepage = "https://docs.ropensci.org/tesseract/"
     cran = "tesseract"
 
@@ -43,4 +42,6 @@ class RTesseract(RPackage):
     depends_on("r-knitr", type=("build", "run"))
     depends_on("r-tibble", type=("build", "run"))
     depends_on("r-rmarkdown", type=("build", "run"))
-    depends_on("tesseract", type=("build", "run"))
+    depends_on("pkg-config")
+    depends_on("tessdata", type=("build", "run"))
+    depends_on("tesseract", type=("build", "link", "run"))

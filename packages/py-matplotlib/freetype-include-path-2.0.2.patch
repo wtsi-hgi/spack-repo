@@ -1,0 +1,13 @@
+diff --git a/setupext.py b/setupext.py
+index 3819636..d103be0 100644
+--- a/setupext.py
++++ b/setupext.py
+@@ -190,6 +190,8 @@ def get_include_dirs():
+     Returns a list of standard include directories on this platform.
+     """
+     include_dirs = [os.path.join(d, 'include') for d in get_base_dirs()]
++    include_dirs.extend(
++            os.environ.get('CPATH', '').split(os.pathsep))
+     include_dirs.extend(
+         os.environ.get('CPLUS_INCLUDE_PATH', '').split(os.pathsep))
+     return include_dirs

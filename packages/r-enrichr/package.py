@@ -5,7 +5,6 @@
 
 from spack.package import *
 
-
 class REnrichr(RPackage):
     """Provides an R Interface to 'Enrichr'
     
@@ -16,15 +15,11 @@ class REnrichr(RPackage):
     
     cran = "enrichR"
 
-    # versions
     version("3.2", md5="998939d80840cc81b1e45b1f78fcdb69")
     
-
-    # dependencies
     depends_on("r@3.0.0:", type=('build', 'run'))
     depends_on("r-httr", type=('build', 'run'))
     depends_on("r-curl", type=('build', 'run'))
     depends_on("r-rjson", type=('build', 'run'))
     depends_on("r-ggplot2", type=('build', 'run'))
-    depends_on("r-write-x-l-s", type=('build', 'run'))
-    
+    depends_on("r-writexls", type=('build', 'run'))

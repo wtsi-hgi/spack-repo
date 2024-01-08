@@ -16,9 +16,6 @@ class RBiglm(RPackage):
     
     cran = "biglm"
 
-    # versions
     version("0.9-2.1", md5="6f358d6fc78c251b7737e4c0206175fb")
     
-
-    # dependencies
-    
+    depends_on("r-dbi", type=("build", "run"))

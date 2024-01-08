@@ -72,19 +72,18 @@ class R(AutotoolsPackage):
     depends_on("blas", when="+external-lapack")
     depends_on("lapack", when="+external-lapack")
     depends_on("bzip2")
-    # R didn't anticipate the celebratory
-    # non-breaking major version bump of curl 8.
-    depends_on("curl+libidn2@:7")
-    depends_on("gcc", type=("link"))
+    depends_on("curl+libidn2")
+    # R didn't anticipate the celebratory non-breaking major version bump of curl 8.
+    depends_on("curl@:7", when="@:4.2")
     depends_on("icu4c")
     depends_on("java")
-    depends_on("libtirpc", when="@4.3.0:")
     depends_on("ncurses")
     depends_on("pcre", when="@:3.6.3")
     depends_on("pcre2", when="@4:")
     depends_on("readline")
     depends_on("xz")
     depends_on("which", type=("build", "run"))
+    depends_on("zlib-api")
     depends_on("zlib@1.2.5:", when="^zlib")
     depends_on("texinfo", type="build")
     depends_on("cairo+X+gobject+pdf", when="+X")
@@ -97,7 +96,6 @@ class R(AutotoolsPackage):
     depends_on("libxmu", when="+X")
     depends_on("libxt", when="+X")
     depends_on("tk", when="+X")
-    depends_on("pkg-config", type="build")
 
     patch("zlib.patch", when="@:3.3.2")
 
@@ -141,7 +139,7 @@ class R(AutotoolsPackage):
         ]
 
         if "+external-lapack" in spec:
-            if "^mkl" in spec and "gfortran" in self.compiler.fc:
+            if spec["lapack"].name in INTEL_MATH_LIBRARIES and "gfortran" in self.compiler.fc:
                 mkl_re = re.compile(r"(mkl_)intel(_i?lp64\b)")
                 config_args.extend(
                     [

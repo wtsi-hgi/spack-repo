@@ -18,7 +18,7 @@ class KentGit(MakefilePackage):
     depends_on("openssl")
     depends_on("libpng")
     depends_on("libuuid")
-    depends_on("mysql@5.7.27") # build only?
+    depends_on("mysql") # build only?
 
     patch("fpic.patch")
 

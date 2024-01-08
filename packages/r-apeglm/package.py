@@ -12,7 +12,7 @@ class RApeglm(RPackage):
     url = "https://bioconductor.org/packages/release/bioc/src/contrib/apeglm_1.22.1.tar.gz"
     bioc = "apeglm"
 
-    version("1.22.1", sha256="477372ab998a0ef36da5992f140ec3bd08fb7a9a2430840235be0f3b2fac21a7")
+    version("1.24.0", sha256="a4ff49d510b9021328c9f56bfbd3af55905c8a2c53ccdaf3986ef004ebf74932")
 
     depends_on("r-biocinstaller", type=("build", "run"))
     depends_on("r-emdbook", type=('build', 'run'))

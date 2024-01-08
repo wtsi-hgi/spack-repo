@@ -22,3 +22,5 @@ class RQpdf(RPackage):
     depends_on("r-askpass", type=("build", "run"))
     depends_on("r-curl", type=("build", "run"))
     depends_on("r-testthat", type=("build", "run"))
+    depends_on("libjpeg", type=("build", "link"))
+    depends_on("zlib", type=("build", "link"))

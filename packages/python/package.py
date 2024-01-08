@@ -1213,6 +1213,8 @@ print(json.dumps(config))
                 for directory in {self.platlib, self.purelib}:
                     env.prepend_path("PYTHONPATH", os.path.join(d.prefix, directory))
 
+        env.prune_duplicate_paths("PYTHONPATH")
+
     def setup_dependent_package(self, module, dependent_spec):
         """Called before python modules' install() methods."""
 
