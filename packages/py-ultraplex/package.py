@@ -32,8 +32,8 @@ class PyUltraplex(PythonPackage):
     version("1.2.8", sha256="2d98a070529172225be6ee1e206a2a823d59c579203029dd5438d78254a7e51e")
 
     depends_on("python@3.8", type=("build", "run"))
-    depends_on("py-setuptools", type=("build", "run")) 
-    depends_on("py-setuptools-scm", type=("build", "run"))
+    depends_on("py-setuptools", type="build")
+    depends_on("py-setuptools-scm", type="build")
 
     depends_on("py-dnaio", type=("build", "run"))
     depends_on("py-multiprocess", type=("build", "run"))

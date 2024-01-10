@@ -44,7 +44,7 @@ class PyLimix(PythonPackage):
     depends_on("py-scikit-learn@0.20.3:", type=("build", "run"))
     depends_on("py-scipy@1.2.1:", type=("build", "run"))
     depends_on("py-seaborn@0.9.0:", type=("build", "run"))
-    depends_on("py-setuptools@41.0.0:", type=("build", "run"))
+    depends_on("py-setuptools@41.0.0:", type="build")
     depends_on("py-statsmodels@0.9.0:", type=("build", "run"))
     depends_on("py-tqdm@4.31.1:", type=("build", "run"))
     depends_on("py-xarray@0.13.0:", type=("build", "run"))

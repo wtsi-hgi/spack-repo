@@ -15,7 +15,7 @@ class PyTiledb(PythonPackage):
     version("0.24.0", sha256="6e1f2f0391d5f5d76ae832da6add17d38d9c506b7105fe19823628b5ddb39af6")
     version("0.23.1", sha256="988be85a558510aea5487a1cf981b180974ded93517f6859e262b9ea26257c81")
 
-    depends_on("py-setuptools@42:")
+    depends_on("py-setuptools@42:", type="build")
     depends_on("py-pybind11@:2.10.4")
     depends_on("py-cython@:0.29.36")
     depends_on("py-wheel")

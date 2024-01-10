@@ -56,7 +56,7 @@ class PyCython(PythonPackage):
     # https://github.com/cython/cython/commit/430e2ca220c8fed49604daf578df98aadb33a87d
     depends_on("python@:3.8", when="@:0.29.13", type=("build", "link", "run"))
 
-    depends_on("py-setuptools", type=("build", "run"))
+    depends_on("py-setuptools", type="build")
     depends_on("gdb@7.2:", type="test")
 
     # Backports CYTHON_FORCE_REGEN environment variable

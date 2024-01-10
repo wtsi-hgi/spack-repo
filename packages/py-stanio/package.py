@@ -13,4 +13,4 @@ class PyStanio(PythonPackage):
 
     version("0.4.0", sha256="8b586ac14b35cde1aad188dbf85824515c6842dc951a2b411dd138fb5c35fc9f")
 
-    depends_on("py-setuptools")
+    depends_on("py-setuptools", type="build")

@@ -13,4 +13,4 @@ class PyDbDtypes(PythonPackage):
 
     version("1.1.1", sha256="ab485c85fef2454f3182427def0b0a3ab179b2871542787d33ba519d62078883")
 
-    depends_on("py-setuptools")
+    depends_on("py-setuptools", type="build")

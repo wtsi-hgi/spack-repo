@@ -14,7 +14,7 @@ class PyFunctools32(PythonPackage):
     version("3.2.3-2", sha256="f6253dfbe0538ad2e387bd8fdfd9293c925d63553f5813c4e587745416501e6d")
 
     depends_on("python@2", type=("build", "run"))
-    depends_on("py-setuptools", type=("build", "run"))
+    depends_on("py-setuptools", type="build")
 
     def patch(self):
         filter_file("from distutils.core import setup", "from setuptools import setup", "setup.py", string=True)

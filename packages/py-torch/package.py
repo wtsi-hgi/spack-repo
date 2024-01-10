@@ -149,7 +149,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     depends_on("cmake@3.5:", type="build")
 
     # pyproject.toml
-    depends_on("py-setuptools", type=("build", "run"))
+    depends_on("py-setuptools", type="build")
     depends_on("py-astunparse", when="@1.13:", type=("build", "run"))
     depends_on("py-numpy@1.16.6:", type=("build", "run"))
     depends_on("ninja@1.5:", when="@1.1:", type="build")
