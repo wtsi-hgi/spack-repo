@@ -18,8 +18,10 @@ class RSeurat(RPackage):
 	et al (2019) <doi:10.1016/j.cell.2019.05.031> for more details."""
 
 	cran = "Seurat"
+	git = "https://github.com/satijalab/seurat"
 
-	version("4.4.0", md5="2cb0ba47a9d73bc8c985429fb316283e")
+	version("4.9.9", commit="41d19a8a55350bff444340d6ae7d7e03417d4173")
+	version("4.4.0", md5="2cb0ba47a9d73bc8c985429fb316283e", preferred=True)
 
 	depends_on("r@4.0.0:", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))
@@ -68,3 +70,7 @@ class RSeurat(RPackage):
 	depends_on("r-rcpp@0.11.0:", type=("build", "run"))
 	depends_on("r-rcppeigen", type=("build", "run"))
 	depends_on("r-rcppprogress", type=("build", "run"))
+	depends_on("r-fast-dummies", type=("build", "run"), when="@4.9.9:")
+	depends_on("r-rcpp-hnsw", type=("build", "run"), when="@4.9.9:")
+	depends_on("r-bpcells", type=("build", "run"), when="@4.9.9:")
+	depends_on("r-rspectra", type=("build", "run"), when="@4.9.9:")
