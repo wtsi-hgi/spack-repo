@@ -35,7 +35,7 @@ Single Cell Sequencing
 	depends_on("r-janitor", type=("build", "run"))
 	depends_on("r-lifecycle", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-matrix@1.5.0:", type=("build", "run"))
+	depends_on("r-matrix@1.5-0:", type=("build", "run"))
 	depends_on("r-paletteer", type=("build", "run"))
 	depends_on("r-patchwork", type=("build", "run"))
 	depends_on("r-pbapply", type=("build", "run"))

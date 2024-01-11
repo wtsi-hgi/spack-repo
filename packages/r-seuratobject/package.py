@@ -26,7 +26,7 @@ class RSeuratobject(RPackage):
 	depends_on("r-sp@1.5.0:", type=("build", "run"))
 	depends_on("r-future", type=("build", "run"))
 	depends_on("r-future-apply", type=("build", "run"))
-	depends_on("r-matrix@1.6.1:", type=("build", "run"))
+	depends_on("r-matrix@1.6-1:", type=("build", "run"))
 	depends_on("r-progressr", type=("build", "run"))
 	depends_on("r-rcpp@1.0.5:", type=("build", "run"))
 	depends_on("r-rlang@0.4.7:", type=("build", "run"))
