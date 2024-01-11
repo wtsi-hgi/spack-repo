@@ -17,6 +17,7 @@ class PyProtobuf(PythonPackage):
     homepage = "https://developers.google.com/protocol-buffers/"
     pypi = "protobuf/protobuf-3.11.0.tar.gz"
 
+    version("4.25.2", sha256="fe599e175cb347efc8ee524bcd4b902d11f7262c0e569ececcb89995c15f0a5e")
     version("4.24.3", sha256="12e9ad2ec079b833176d2921be2cb24281fa591f0b119b208b788adc48c2561d")
     version("4.23.3", sha256="7a92beb30600332a52cdadbedb40d33fd7c8a0d7f549c440347bc606fb3fe34b")
     version("4.21.9", sha256="61f21493d96d2a77f9ca84fefa105872550ab5ef71d21c458eb80edcf4885a99")
@@ -74,7 +75,7 @@ class PyProtobuf(PythonPackage):
     for ver in list(range(0, 21)):
         depends_on(f"protobuf@3.{ver}", when=f"@3.{ver}+cpp")
 
-    conflicts("+cpp", when="^python@3.11:")
+    #conflicts("+cpp", when="^python@3.11:")
 
     @property
     def build_directory(self):
