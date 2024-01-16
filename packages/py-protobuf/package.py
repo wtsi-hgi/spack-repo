@@ -75,7 +75,7 @@ class PyProtobuf(PythonPackage):
     for ver in list(range(0, 21)):
         depends_on(f"protobuf@3.{ver}", when=f"@3.{ver}+cpp")
 
-    #conflicts("+cpp", when="^python@3.11:")
+    conflicts("+cpp", when="^python@3.11:")
 
     @property
     def build_directory(self):
