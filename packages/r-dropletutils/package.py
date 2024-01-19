@@ -37,3 +37,4 @@ class RDropletutils(RPackage):
 	depends_on("r-scuttle", type=("build", "run"))
 	depends_on("r-rhdf5lib", type=("build", "run"))
 	depends_on("r-bh", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
