@@ -4,7 +4,7 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 from spack.package import *
-
+import glob
 
 class Fastqc(Package):
     """A quality control tool for high throughput sequence data."""
@@ -23,13 +23,30 @@ class Fastqc(Package):
     depends_on("freetype")
     #depends_on("dejavu-fonts-ttf")
 
+    depends_on("libxext")
+
     patch("fastqc.patch", level=0)
 
     def patch(self):
         filter_file("/usr/bin/perl", self.spec["perl"].command.path, "fastqc", backup=False)
+
+        ldpath = self.spec["libxext"].prefix.lib
+        #print("===================\n")
+        #print(ldpath)
+        #print("===================\n")
+
+        ldpath_parent = ldpath.rsplit('/', 2)[0]
+        ldpath_full = ':'.join(glob.glob(ldpath_parent + "/lib*/lib/"))
+
+        #print("===================\n")
+        #print(ldpath_full)
+        #print("===================\n")
+
         filter_file(
                 "# Check the simple stuff first",
-                "$ENV{'LD_LIBRARY_PATH'} = '"+self.spec["freetype"].prefix.lib + ":"+self.spec["fontconfig"].prefix.lib+"';",
+                "$ENV{'LD_LIBRARY_PATH'} = '"+ self.spec["freetype"].prefix.lib + ":" \
+                                             + self.spec["fontconfig"].prefix.lib + ":" \
+                                             + ldpath_full + "';",
                 "./fastqc",
                 string=True,
         )
