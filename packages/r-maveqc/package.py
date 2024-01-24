@@ -18,7 +18,7 @@ class RMaveqc(RPackage):
 
     depends_on("pandoc", type=("build", "run"))
 
-    depends_on("r+X@4.2.3:", type=("build", "run"))
+    depends_on("r+X@4.2.3", type=("build", "run"))
     depends_on("r-configr", type=("build", "run"))
     depends_on("r-vroom@1.6.3:", type=("build", "run"))
     depends_on("r-data-table", type=("build", "run"))
