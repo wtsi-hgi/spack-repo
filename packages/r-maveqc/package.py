@@ -16,6 +16,8 @@ class RMaveqc(RPackage):
     version("0.2.3", tag="0.2.3")
     version("0.2.2", tag="0.2.2")
 
+    depends_on("pandoc", type=("build", "run"))
+
     depends_on("r+X@4.2.3:", type=("build", "run"))
     depends_on("r-configr", type=("build", "run"))
     depends_on("r-vroom@1.6.3:", type=("build", "run"))
