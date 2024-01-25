@@ -21,6 +21,7 @@ class R(AutotoolsPackage):
 
     extendable = True
 
+    version("4.3.2", sha256="b3f5760ac2eee8026a3f0eefcb25b47723d978038eee8e844762094c860c452a")
     version("4.3.1", sha256="8dd0bf24f1023c6f618c3b317383d291b4a494f40d73b983ac22ffea99e4ba99")
     version("4.3.0", sha256="45dcc48b6cf27d361020f77fde1a39209e997b81402b3663ca1c010056a6a609")
     version("4.2.3", sha256="55e4a9a6d43be314e2c03d0266a6fa5444afdce50b303bfc3b82b3979516e074", preferred=True)
