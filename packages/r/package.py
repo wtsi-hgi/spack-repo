@@ -96,7 +96,6 @@ class R(AutotoolsPackage):
     depends_on("libxmu", when="+X")
     depends_on("libxt", when="+X")
     depends_on("tk", when="+X")
-    depends_on("gcc", type=("build", "run"))
 
     patch("zlib.patch", when="@:3.3.2")
 
