@@ -39,4 +39,7 @@ class RAzimuth(RPackage):
     depends_on("r-stringr", type=('build', 'run'))
     depends_on("r-plotly", type=('build', 'run'))
     depends_on("r-withr", type=('build', 'run'))
-
+    depends_on("r-bsgenome-hsapiens-ucsc-hg38", type=('build', 'run'))
+    depends_on("r-ensdb-hsapiens-v86", type=('build', 'run'))
+    depends_on("r-jaspar2020", type=('build', 'run'))
+    depends_on("r-tfbstools", type=('build', 'run'))
