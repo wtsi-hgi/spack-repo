@@ -20,6 +20,7 @@ class RSeurat(RPackage):
 	cran = "Seurat"
 	git = "https://github.com/satijalab/seurat"
 
+	version("5.0.1", tag="v5.0.1")
 	version("4.9.9", commit="41d19a8a55350bff444340d6ae7d7e03417d4173")
 	version("4.4.0", md5="2cb0ba47a9d73bc8c985429fb316283e", preferred=True)
 

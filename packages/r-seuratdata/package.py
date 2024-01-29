@@ -5,7 +5,6 @@
 
 from spack.package import *
 
-
 class RSeuratdata(RPackage):
     """Install and Manage Seurat Datasets
     
@@ -19,11 +18,9 @@ class RSeuratdata(RPackage):
     
     git = "https://github.com/satijalab/seurat-data"
 
-    # versions
+    version("2023-11-04", commit="4dc08e022f51c324bc7bf785b1b5771d2742701d")
     version("0.2.1", tag="v0.2.1")
     
-
-    # dependencies
     depends_on("r@3.5.0:", type=('build', 'run'))
     depends_on("r-cli", type=('build', 'run'))
     depends_on("r-crayon", type=('build', 'run'))

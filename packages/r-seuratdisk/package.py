@@ -5,7 +5,6 @@
 
 from spack.package import *
 
-
 class RSeuratdisk(RPackage):
     """Install and Manage Seurat Datasets
     
@@ -19,11 +18,8 @@ class RSeuratdisk(RPackage):
     
     git = "https://github.com/mojaveazure/seurat-disk"
 
-    # versions
-    version("0.2.2", commit="9b89970eac2a3bd770e744f63c7763419486b14c")
+    version("0.0.0.9015", commit="877d4e18ab38c686f5db54f8cd290274ccdbe295")
     
-
-    # dependencies
     depends_on("r@3.5.0:", type=('build', 'run'))
     depends_on("r-cli", type=('build', 'run'))
     depends_on("r-crayon", type=('build', 'run'))

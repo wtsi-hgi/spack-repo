@@ -20,6 +20,7 @@ class RSeuratobject(RPackage):
 
 	cran = "SeuratObject"
 
+	version("5.0.1", md5="a1b6b337accbe962c59bd0f9cdf957e4")
 	version("5.0.0", md5="2fb91d97b91d012a7a234954a8b9b995")
 
 	depends_on("r@4.0.0:", type=("build", "run"))
