@@ -16,6 +16,7 @@ class RMatrix(RPackage):
 
 	cran = "Matrix"
 
+	version("1.6-5", md5="85ad20ca9927bca63a0c030d81d9967b")
 	version("1.6-1.1", md5="ef1eb06ffc3ad6c8c955d1b14dd3364f")
 
 	depends_on("r@3.5.0:", type=("build", "run"))
