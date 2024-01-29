@@ -26,3 +26,4 @@ class RSeuratdata(RPackage):
     depends_on("r-crayon", type=('build', 'run'))
     depends_on("r-rappdirs", type=('build', 'run'))
     depends_on("r-seuratobject", type=('build', 'run'))
+    depends_on("r-seurat", type=('build', 'run'))
