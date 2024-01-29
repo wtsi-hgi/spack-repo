@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RBsgenomeHsapiensUcscHg38(RPackage):
 	"""Full genomic sequences for Homo sapiens (UCSC genome hg38)
 
@@ -13,11 +13,11 @@ class RBsgenomeHsapiensUcscHg38(RPackage):
 	"""
 	
 	bioc = "BSgenome.Hsapiens.UCSC.hg38" 
-	url = "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38_1.4.5.tar.gz"
+	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38_1.4.5.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Hsapiens.UCSC.hg38/BSgenome.Hsapiens.UCSC.hg38_1.4.5.tar.gz"]
 
-	version("1.4.5", md5="b2e670c27944eed77fbe9a9b55be40d2")
+	version("1.4.5", md5="b2e670c27944eed77fbe9a9b55be40d2", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38_1.4.5.tar.gz")
 
-	depends_on("r@4.2.0:", type=("build", "run"))
+	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-genomeinfodb@1.34.9:", type=("build", "run"))
 	depends_on("r-bsgenome@1.66.2:", type=("build", "run"))
 

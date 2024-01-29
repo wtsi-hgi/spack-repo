@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class REnsdbHsapiensV86(RPackage):
 	"""Ensembl based annotation package
 
@@ -13,9 +13,9 @@ class REnsdbHsapiensV86(RPackage):
 	"""
 	
 	bioc = "EnsDb.Hsapiens.v86" 
-	url = "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/EnsDb.Hsapiens.v86_2.99.0.tar.gz"
+	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/EnsDb.Hsapiens.v86_2.99.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/EnsDb.Hsapiens.v86/EnsDb.Hsapiens.v86_2.99.0.tar.gz"]
 
-	version("2.99.0", md5="0c9e52512ff6dbbbdb754c4d41149939")
+	version("2.99.0", md5="0c9e52512ff6dbbbdb754c4d41149939", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/EnsDb.Hsapiens.v86_2.99.0.tar.gz")
 
 	depends_on("r-ensembldb", type=("build", "run"))
 
