@@ -47,4 +47,4 @@ class RSignac(RPackage):
 	depends_on("r-tidyselect", type=("build", "run"))
 	depends_on("r-vctrs", type=("build", "run"))
 	depends_on("r-lifecycle", type=("build", "run"))
-	depends_on("zlib", type=("build", "zlib", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
