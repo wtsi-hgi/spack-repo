@@ -11,6 +11,7 @@ class Mixcr(Package):
     homepage = "https://github.com/milaboratory/mixcr"
     url = "https://github.com/milaboratory/mixcr/releases/download/v4.5.0/mixcr-4.5.0.zip"
 
+    version("4.6.0", sha256="05db1276951a2e656d0a7bf4e2b1fff326733a5f961a9d4829be139852fabe13")
     version("4.5.0", sha256="4a92a61b9a87a569636c898b8c3fb56f173884d06dad5906be5a0cc6c71dfe2d")
     version("4.4.2", sha256="0dcda83b6aacb715bfd9cebb95aee4e018fb125147a8ec806acf3167f07cdcba")
     version("4.4.1", sha256="6b58b83ecf6cb7a7b100792f93d4d318429e32e5404303814446c9ed4dbe16ed")
