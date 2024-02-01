@@ -8,7 +8,6 @@ from spack.package import *
 class PyAnndata(PythonPackage):
     """anndata is a Python package for handling annotated data matrices in memory and on disk, positioned between pandas and xarray. anndata offers a broad range of computationally efficient features including, among others, sparse data support, lazy operations, and a PyTorch interface."""
 
-    # FIXME: Add a proper url for your package's homepage here.
     homepage = "https://github.com/scverse/anndata"
     pypi = "anndata/anndata-0.10.3.tar.gz"
 
