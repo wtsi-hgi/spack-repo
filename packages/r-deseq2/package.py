@@ -7,40 +7,29 @@ from spack.package import *
 
 
 class RDeseq2(RPackage):
-    """Differential gene expression analysis based on the negative binomial
-    distribution.
+	"""Differential gene expression analysis based on the negative binomial
+	distribution.
 
-    Estimate variance-mean dependence in count data from high-throughput
-    sequencing assays and test for differential expression based on a model
-    using the negative binomial distribution."""
+	Estimate variance-mean dependence in count data from high-throughput
+	sequencing assays and test for differential expression based on a model
+	using the negative binomial distribution."""
 
-    homepage = "https://bioconductor.org/packages/DESeq2"
-    git = "https://git.bioconductor.org/packages/DESeq2.git"
+	homepage = "https://bioconductor.org/packages/DESeq2"
+	git = "https://git.bioconductor.org/packages/DESeq2.git"
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DESeq2_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DESeq2/DESeq2_1.42.0.tar.gz"]
 
-    version("1.41.4", commit="506677266b13948f625b672496fab554bc2438bd")
-    version("1.38.0", commit="0e059f425d4ce6a5203685a4ad434f15bbd6e211")
-    version("1.36.0", commit="2800b78ae52c0600f7e603c54af59beed3a2ed17")
-    version("1.34.0", commit="25d4f74be59548122ccfbe8687d30c0bae5cf49a")
-    version("1.30.0", commit="f4b47b208ee26ab23fe65c345f907fcfe70b3f77")
-    version("1.24.0", commit="3ce7fbbebac526b726a6f85178063d02eb0314bf")
-    version("1.22.2", commit="3c6a89b61add635d6d468c7fa00192314f8ca4ce")
-    version("1.20.0", commit="7e88ea5c5e68473824ce0af6e10f19e22374cb7c")
-    version("1.18.1", commit="ef65091d46436af68915124b752f5e1cc55e93a7")
-    version("1.16.1", commit="f41d9df2de25fb57054480e50bc208447a6d82fb")
+	version("1.42.0", md5="5eb89526ce9fd4da98b1a5e0b5ba0bf3", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/DESeq2_1.42.0.tar.gz")
 
-    depends_on("r-s4vectors@0.9.25:", type=("build", "run"))
-    depends_on("r-s4vectors@0.23.18:", type=("build", "run"), when="@1.30.0:")
-    depends_on("r-iranges", type=("build", "run"))
-    depends_on("r-genomicranges", type=("build", "run"))
-    depends_on("r-summarizedexperiment@1.1.6:", type=("build", "run"))
-    depends_on("r-biocgenerics@0.7.5:", type=("build", "run"))
-    depends_on("r-biobase", type=("build", "run"))
-    depends_on("r-biocparallel", type=("build", "run"))
-    depends_on("r-genefilter", type=("build", "run"))
-    depends_on("r-locfit", type=("build", "run"))
-    depends_on("r-geneplotter", type=("build", "run"))
-    depends_on("r-ggplot2", type=("build", "run"))
-    depends_on("r-rcpp@0.11.0:", type=("build", "run"))
-    depends_on("r-rcpparmadillo", type=("build", "run"))
-
-    depends_on("r-hmisc", type=("build", "run"), when="@:1.30.0")
+	depends_on("r-s4vectors@0.23.18:", type=("build", "run"))
+	depends_on("r-iranges", type=("build", "run"))
+	depends_on("r-genomicranges", type=("build", "run"))
+	depends_on("r-summarizedexperiment@1.1.6:", type=("build", "run"))
+	depends_on("r-biocgenerics@0.7.5:", type=("build", "run"))
+	depends_on("r-biobase", type=("build", "run"))
+	depends_on("r-biocparallel", type=("build", "run"))
+	depends_on("r-matrixstats", type=("build", "run"))
+	depends_on("r-locfit", type=("build", "run"))
+	depends_on("r-ggplot2@3.4:", type=("build", "run"))
+	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("r-matrixgenerics", type=("build", "run"))
+	depends_on("r-rcpparmadillo", type=("build", "run"))

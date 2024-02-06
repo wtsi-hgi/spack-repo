@@ -14,15 +14,17 @@ class RClusterprofiler(RPackage):
 	profiles (GO and KEGG) of gene and gene clusters."""
 
 	bioc = "clusterProfiler"
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/clusterProfiler_4.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/clusterProfiler/clusterProfiler_4.10.0.tar.gz"]
 
-	version("4.10.0", commit="fa63cb0a174b3280baacba784bd20483daf24c03")
+	version("4.10.0", md5="6eb1c0888849211e04896b3431460048")
 
-	depends_on("r@3.5.0:", type=("build", "run"))
+	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-downloader", type=("build", "run"))
 	depends_on("r-dose@3.23.2:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-enrichplot@1.9.3:", type=("build", "run"))
+	depends_on("r-go-db", type=("build", "run"))
 	depends_on("r-gosemsim@2.27.2:", type=("build", "run"))
 	depends_on("r-gson@0.0.7:", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

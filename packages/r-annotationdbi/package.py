@@ -13,12 +13,13 @@ class RAnnotationdbi(RPackage):
 	annotation data packages."""
 
 	bioc = "AnnotationDbi"
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AnnotationDbi_1.64.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AnnotationDbi/AnnotationDbi_1.64.1.tar.gz"]
 
-	version("1.64.0", commit="b613fce8a69ff4a9cd9b1b9bfff4758fe86cd9be")
+	version("1.64.1", md5="965300db0b7a8b527ed3eb00fdd6d10f")
 
-	depends_on("r@2.7.0:", type=("build", "run"))
+	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.29.2:", type=("build", "run"))
-	depends_on("r-biobase@1.17.0:", type=("build", "run"))
+	depends_on("r-biobase@1.17:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))
 	depends_on("r-dbi", type=("build", "run"))
 	depends_on("r-rsqlite", type=("build", "run"))

@@ -21,7 +21,7 @@ class RReticulate(RPackage):
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
-	depends_on("r-rcpp@1.0.7:", type=("build", "run"))
+	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rcpptoml", type=("build", "run"))
 	depends_on("r-here", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))
@@ -29,4 +29,4 @@ class RReticulate(RPackage):
 	depends_on("r-rappdirs", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-withr", type=("build", "run"))
-	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("python@2.7:", type=("build", "link", "run"))

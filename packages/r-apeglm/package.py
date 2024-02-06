@@ -7,18 +7,19 @@ from spack.package import *
 
 
 class RApeglm(RPackage):
-    """apeglm provides Bayesian shrinkage estimators for effect sizes for a variety of GLM models, using approximation of the posterior for individual coefficients."""
+	"""Approximate posterior estimation for GLM coefficients
 
-    url = "https://bioconductor.org/packages/release/bioc/src/contrib/apeglm_1.22.1.tar.gz"
-    bioc = "apeglm"
+	apeglm provides Bayesian shrinkage estimators for effect sizes for a variety of GLM models, using approximation of the posterior for individual coefficients.
+	"""
+	
+	bioc = "apeglm" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/apeglm_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/apeglm/apeglm_1.24.0.tar.gz"]
 
-    version("1.24.0", sha256="a4ff49d510b9021328c9f56bfbd3af55905c8a2c53ccdaf3986ef004ebf74932")
+	version("1.24.0", md5="0f8e64bdd8eec2566238fdc487afabb8")
 
-    depends_on("r-biocinstaller", type=("build", "run"))
-    depends_on("r-emdbook", type=('build', 'run'))
-    depends_on("r-summarizedexperiment", type=('build', 'run'))
-    depends_on("r-genomicranges", type=('build', 'run'))
-    depends_on("r-rcpp", type=('build', 'run'))
-    depends_on("r-rcppeigen", type=('build', 'run'))
-    depends_on("r-rcppnumerical", type=('build', 'run'))
-
+	depends_on("r-emdbook", type=("build", "run"))
+	depends_on("r-summarizedexperiment", type=("build", "run"))
+	depends_on("r-genomicranges", type=("build", "run"))
+	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("r-rcppeigen", type=("build", "run"))
+	depends_on("r-rcppnumerical", type=("build", "run"))

@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RDegreport(RPackage):
 	"""Report of DEG analysis
 
@@ -14,10 +14,11 @@ class RDegreport(RPackage):
 	
 	homepage = "http://lpantano.github.io/DEGreport/"
 	bioc = "DEGreport" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DEGreport_1.38.5.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DEGreport/DEGreport_1.38.5.tar.gz"]
 
-	version("1.38.0", commit="e071c9b2fb36e2b5666992a2814fd1bd70c1b472")
+	version("1.38.5", md5="c244b736c180d78d142dd00938f7d40f")
 
-	depends_on("r@4.0.0:", type=("build", "run"))
+	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))
@@ -26,6 +27,7 @@ class RDegreport(RPackage):
 	depends_on("r-cowplot", type=("build", "run"))
 	depends_on("r-consensusclusterplus", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))
+	depends_on("r-dendextend", type=("build", "run"))
 	depends_on("r-deseq2", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-edger", type=("build", "run"))
@@ -41,8 +43,8 @@ class RDegreport(RPackage):
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))
+	depends_on("r-stringi", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
-	depends_on("r-dendextend", type=("build", "run"))
