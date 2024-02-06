@@ -14,7 +14,7 @@ class RBroomHelpers(RPackage):
 
     version("1.14.0", tag="v1.14.0")
 
-    depends_on("R@4:", type=("build", "run"))
+    depends_on("r@4:", type=("build", "run"))
     depends_on("r-broom@0.8:", type=("build", "run"))
     depends_on("r-cli", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))

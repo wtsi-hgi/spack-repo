@@ -14,7 +14,7 @@ class RGage(RPackage):
 
     version("2.47.1", commit="d99df9a")
 
-    depends_on("R@4:", type=("build", "run"))
+    depends_on("r@4:", type=("build", "run"))
     depends_on("r-keggrest", type=("build", "run"))
     depends_on("r-annotationdbi", type=("build", "run"))
     depends_on("r-go-db", type=("build", "run"))

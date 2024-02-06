@@ -14,7 +14,7 @@ class RGgstats(RPackage):
 
     version("0.5.1", tag="v0.5.1")
 
-    depends_on("R@4:", type=("build", "run"))
+    depends_on("r@4:", type=("build", "run"))
     depends_on("r-broom-helpers", type=("build", "run"))
     depends_on("r-cli", type=("build", "run"))
     depends_on("r-forcats", type=("build", "run"))
