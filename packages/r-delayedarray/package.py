@@ -55,3 +55,6 @@ class RDelayedarray(RPackage):
 
     depends_on("r-matrixstats", type=("build", "run"), when="@:0.10.0")
     depends_on("r-biocparallel", type=("build", "run"), when="@0.6.6:0.10.0")
+
+    depends_on("r-s4arrays@1.1.1:", type=("build", "run"), when="@0.28.0:")
+    depends_on("r-sparsearray@1.1.10:", type=("build", "run"), when="@0.28.0:")
