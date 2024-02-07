@@ -14,5 +14,6 @@ class RCpp11(RPackage):
     homepage = "https://cpp11.r-lib.org"
     cran = "cpp11"
 
+    version("0.4.7", sha256="801d1266824c3972642bce2db2a5fd0528a65ec845c58eb5a886edf082264344")
     version("0.4.6", sha256="d1c56954671d3398078ad52aaa4efce0864e8166465c8c5e5e9a1e40599055b3")
 

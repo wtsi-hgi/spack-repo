@@ -16,6 +16,7 @@ class RGgplot2(RPackage):
 
     cran = "ggplot2"
 
+    version("3.4.4", sha256="2d76ec065d3e604d019506f45b3b713ae20f38e47dbebfb5ba1648b47fe63e46")
     version("3.4.3", sha256="5ce29ace6be7727be434506a1c759dfc322f65b17eabeec863b93be10f91a543")
     version("3.4.2", sha256="70230aa70a2c6f844fc41dd93e5f62af6859dfed390026ae58f223637e5283ca")
     version("3.4.1", sha256="041bc333f90d6026702c8bd5140a1c8ddd270b15742badf8ca5c53f0e02c6d84")
