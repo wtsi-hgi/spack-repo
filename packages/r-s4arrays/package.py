@@ -15,7 +15,7 @@ class RS4arrays(RPackage):
     #version("1.3.3", commit="34fadf9")
 
     bioc = "S4Arrays"
-    urls = "https://bioconductor.org/packages/release/bioc/src/contrib/S4Arrays_1.2.0.tar.gz"
+    url = "https://bioconductor.org/packages/release/bioc/src/contrib/S4Arrays_1.2.0.tar.gz"
 
     version("1.2.0", md5="c77474b839251d19d31708831de3c1bf")
 

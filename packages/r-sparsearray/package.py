@@ -12,7 +12,7 @@ class RSparsearray(RPackage):
     homepage = "https://bioconductor.org/packages/release/bioc/html/SparseArray.html"
 
     bioc = "SparseArray"
-    urls = "https://bioconductor.org/packages/release/bioc/src/contrib/SparseArray_1.2.3.tar.gz"
+    url = "https://bioconductor.org/packages/release/bioc/src/contrib/SparseArray_1.2.3.tar.gz"
 
     version("1.2.3", md5="86224ea83ca5df5984cfc6907c8f0bc1")
 
