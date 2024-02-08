@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RTximeta(RPackage):
 	"""Transcript Quantification Import with Automatic Metadata
 
@@ -14,8 +14,9 @@ class RTximeta(RPackage):
 	
 	homepage = "https://github.com/thelovelab/tximeta"
 	bioc = "tximeta" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tximeta_1.20.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tximeta/tximeta_1.20.2.tar.gz"]
 
-	version("1.20.0", commit="c9cf6d6a80ca5129b91d723867aca0aec12e8299")
+	version("1.20.2", md5="00bc46199fddc42ba8b4dd28aea321c0")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-tximport", type=("build", "run"))
