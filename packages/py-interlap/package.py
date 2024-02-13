@@ -12,3 +12,5 @@ class PyInterlap(PythonPackage):
     pypi = "interlap/interlap-0.2.7.tar.gz"
 
     version("0.2.7", sha256="31e4f30c54b067c4939049f5d8131ae5e2fa682ec71aa56f89c0e5b900806ec9")
+
+    depends_on("py-setuptools", type="build")
