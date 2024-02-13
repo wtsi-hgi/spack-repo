@@ -15,3 +15,5 @@ class PyHvplot(PythonPackage):
 
     depends_on("py-param@1.7.0:", type=("build", "run"))
     depends_on("py-pyct@0.4.4:", type=("build", "run"))
+
+    depends_on("py-setuptools", type="build")
