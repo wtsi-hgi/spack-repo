@@ -12,3 +12,5 @@ class PyXlsx2csv(PythonPackage):
     pypi = "xlsx2csv/xlsx2csv-0.8.2.tar.gz"
 
     version("0.8.2", sha256="cdd272c82f8b32f1cee76aeaef87b2ee3549661fddf90f7ecf2310967a16fc84")
+
+    depends_on("py-setuptools", type="build")
