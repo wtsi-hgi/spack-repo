@@ -12,3 +12,5 @@ class PyMmhash3(PythonPackage):
     pypi = "mmhash3/mmhash3-3.0.1.tar.gz"
 
     version("3.0.1", sha256="a00d68f4a1cc434b9501513c8a29e18ed1ddad383677d72b41d71d0d862348af")
+
+    depends_on("py-setuptools", type="build")
