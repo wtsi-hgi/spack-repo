@@ -12,3 +12,5 @@ class PyTmtoolkit(PythonPackage):
     pypi = "tmtoolkit/tmtoolkit-0.12.0.tar.gz"
 
     version("0.12.0", sha256="6df5429cd675989f21d9f075ddb11fe5ae273d6544fc337a2589bab2bc331909")
+
+    depends_on("py-setuptools", type="build")
