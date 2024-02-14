@@ -33,7 +33,7 @@ class PyScenicplus(PythonPackage):
     depends_on("py-pybigwig", type=("build", "run"))
     depends_on("py-plotly", type=("build", "run"))
     depends_on("py-adjusttext", type=("build", "run"))
-    depends_on("py-macs2", type=("build", "run"))
+    depends_on("py-macs3", type=("build", "run"))
     depends_on("py-lxml", type=("build", "run"))
     depends_on("py-tspex", type=("build", "run"))
     depends_on("py-plotly", type=("build", "run"))
