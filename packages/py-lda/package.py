@@ -16,5 +16,9 @@ class PyLda(PythonPackage):
     depends_on("py-poetry-core", type="build")
     depends_on("meson", type="build")
     depends_on("py-cython", type="build")
+    depends_on("py-setuptools", type="build")
 
     depends_on("py-numpy@1.13.0:2.0", type=("build", "run"))
+
+    def patch(self):
+        filter_file("def build():", "def build(*a):", "build.py", string=True)
