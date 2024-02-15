@@ -8,11 +8,11 @@ from spack.package import *
 class PyPycistarget(PythonPackage):
     """pycistarget is a python module to perform motif enrichment analysis in sets of regions with different tools and identify high confidence TF cistromes."""
 
-    url = "https://github.com/aertslab/pycistarget/archive/refs/tags/v1.0.2.tar.gz"
+    git = "https://github.com/aertslab/pycistarget.git"
 
-    version("1.0.2", sha256="71f7d79b17dc8e292e886dc651194dacf68f29ff9726c11cebeb4ca1b417c845")
-    version("1.0.1", sha256="43ad36a8b148fca05d4f0130f642910d25f689bf85dcbc14735627616a48d5c8")
-    version("1.0.0", sha256="9237d2dc585b88f2aedbe4549fc6a57ede33d36dd4dec3ad5e38ed0075c652ee")
+    version("1.0.2", tag="v1.0.2")
+    version("1.0.1", tag="v1.0.1")
+    version("1.0.0", tag="v1.0.0")
 
     depends_on("py-setuptools", type="build")
 
