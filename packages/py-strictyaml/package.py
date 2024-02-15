@@ -14,3 +14,4 @@ class PyStrictyaml(PythonPackage):
     version("1.7.3", sha256="22f854a5fcab42b5ddba8030a0e4be51ca89af0267961c8d6cfa86395586c407")
 
     depends_on("py-python-dateutil@2.6.0:", type=("build", "run"))
+    depends_on("py-setuptools", type="build")
