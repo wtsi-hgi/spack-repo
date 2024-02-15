@@ -13,9 +13,6 @@ class PyDeltalake(PythonPackage):
 
     version("0.15.3", sha256="c24ad4644b92d65dccf132b48c73e61bc07416b7a8b69e345c7f437217c44b2b")
 
+    depends_on("rust@1.73.0:", type="build")
     depends_on("py-pyarrow", type=("build", "run"))
     depends_on("py-maturin", type=("build"))
-
-    def patch(self):
-        filter_file("[profile.test]", "", "Cargo.toml", string=True)
-        filter_file("debug = \"line-tables-only\"", "", "Cargo.toml", string=True)
