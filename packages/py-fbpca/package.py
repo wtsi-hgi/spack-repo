@@ -15,3 +15,4 @@ class PyFbpca(PythonPackage):
 
     depends_on("py-numpy@1.9:", type=("build", "run"))
     depends_on("py-scipy@0.14:", type=("build", "run"))
+    depends_on("py-setuptools", type="build")
