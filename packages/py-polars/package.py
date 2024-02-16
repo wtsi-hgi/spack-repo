@@ -13,6 +13,7 @@ class PyPolars(PythonPackage):
 
     version("0.20.7", sha256="ec742fdf41e16ff699c043259ba94a11bbc2f7dcb978d768495db1ff2b3c5c20")
 
+    depends_on("py-maturin", type=("build"))
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-pyarrow", type=("build", "run"))
