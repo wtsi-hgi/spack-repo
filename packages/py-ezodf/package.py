@@ -15,3 +15,4 @@ class PyEzodf(PythonPackage):
 
     #depends_on("py-weakrefset", type=("build", "run"))
     depends_on("py-lxml", type=("build", "run"))
+    depends_on("py-setuptools", type="build")
