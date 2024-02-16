@@ -15,3 +15,4 @@ class PyPandoc(PythonPackage):
 
     depends_on("py-plumbum", type=("build", "run"))
     depends_on("py-ply", type=("build", "run"))
+    depends_on("py-setuptools", type="build")
