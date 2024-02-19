@@ -8,24 +8,26 @@ from spack.package import *
 class PyScallele(PythonPackage):
     """scAllele is a versatile tool to detect and analyze nucleotide variants in scRNA-seq."""
 
-    homepage = "https://www.example.com"
+    homepage = "https://github.com/gxiaolab/scAllele"
     pypi = "scAllele/scAllele-0.0.9.3.tar.gz"
 
     version("0.0.9.3", sha256="fe0c3d8c1a4dadea52d04d64d319224edd87189195b2767b2ed9c441b16e3b3c")
 
-    # FIXME: Only add the python/pip/wheel dependencies if you need specific versions
-    # or need to change the dependency type. Generic python/pip/wheel dependencies are
-    # added implicity by the PythonPackage base class.
-    # depends_on("python@2.X:2.Y,3.Z:", type=("build", "run"))
-    # depends_on("py-pip@X.Y:", type="build")
-    # depends_on("py-wheel@X.Y:", type="build")
-
-    # FIXME: Add a build backend, usually defined in pyproject.toml. If no such file
-    # exists, use setuptools.
+    depends_on("python@3:", type=("build", "run"))
     depends_on("py-setuptools", type="build")
-    # depends_on("py-hatchling", type="build")
-    # depends_on("py-flit-core", type="build")
-    # depends_on("py-poetry-core", type="build")
 
-    # FIXME: Add additional dependencies if required.
-    # depends_on("py-foo", type=("build", "run"))
+    depends_on("py-biopython", type=("build", "run"))
+    depends_on("py-glob2", type=("build", "run"))
+    depends_on("py-htseq", type=("build", "run"))
+    depends_on("py-multiprocess", type=("build", "run"))
+    depends_on("py-networkx@2.4:", type=("build", "run"))
+    depends_on("py-numpy@1.18.5:", type=("build", "run"))
+    depends_on("py-pandas@1.3", type=("build", "run"))
+    depends_on("py-pickleshare", type=("build", "run"))
+    depends_on("py-psutil", type=("build", "run"))
+    depends_on("py-pyfaidx@0.5.9.5:", type=("build", "run"))
+    depends_on("py-pysam@0.9.1:", type=("build", "run"))
+    depends_on("py-vcfpy", type=("build", "run"))
+    depends_on("py-scikit-learn@0.23.1:", type=("build", "run"))
+    depends_on("py-scipy", type=("build", "run"))
+    depends_on("py-statsmodels@0.11.1:", type=("build", "run"))
