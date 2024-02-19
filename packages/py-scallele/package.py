@@ -13,7 +13,7 @@ class PyScallele(PythonPackage):
 
     version("0.0.9.3", sha256="fe0c3d8c1a4dadea52d04d64d319224edd87189195b2767b2ed9c441b16e3b3c")
 
-    depends_on("python@3:", type=("build", "run"))
+    depends_on("python@3:3.8", type=("build", "run"))
     depends_on("py-setuptools", type="build")
 
     depends_on("py-biopython", type=("build", "run"))
