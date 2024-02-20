@@ -13,7 +13,6 @@ class PyScallele(PythonPackage):
 
     version("0.0.9.3", sha256="fe0c3d8c1a4dadea52d04d64d319224edd87189195b2767b2ed9c441b16e3b3c")
 
-    depends_on("python@3:3.8", type=("build", "run"))
     depends_on("py-setuptools", type="build")
 
     depends_on("py-biopython", type=("build", "run"))
@@ -31,3 +30,6 @@ class PyScallele(PythonPackage):
     depends_on("py-scikit-learn@0.23.1:", type=("build", "run"))
     depends_on("py-scipy", type=("build", "run"))
     depends_on("py-statsmodels@0.11.1:", type=("build", "run"))
+
+    def patch(self):
+        filter_file("from collections import defaultdict, Hashable", "from collections import defaultdict\nfrom collections.abc import Hashable", "src/scAllele/gqv_vartool.py", string=True)
