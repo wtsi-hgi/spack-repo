@@ -10,11 +10,11 @@ class PyPycistopic(PythonPackage):
 
     homepage = "https://pycistopic.readthedocs.io/"
 
-    url = "https://github.com/aertslab/pycisTopic/archive/refs/tags/v1.0.2.tar.gz"
+    git = "https://github.com/aertslab/pycisTopic.git"
 
-    version("1.0.2", sha256="f0773f4a90e680f6eeff7f16430405126d3af9a8b3ab30808d601fa32f0b0359")
-    version("1.0.1", sha256="ec148789bc9b68e5080c2c9623f742daff043c16332ada8561038a4b4eb0e5e1")
-    version("1.0.0", sha256="1519e84b8b379d848bd95baa54fb7b548c96042a117b05b15a2aafb8bd030595")
+    version("1.0.2", tag="v1.0.2")
+    version("1.0.1", tag="v1.0.1")
+    version("1.0.0", tag="v1.0.0")
 
     depends_on("py-adjusttext", type=("build", "run"))
     depends_on("py-annoy", type=("build", "run"))
