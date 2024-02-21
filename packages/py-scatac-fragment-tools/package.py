@@ -13,6 +13,7 @@ class PyScatacFragmentTools(PythonPackage):
 
     version("0.1.0", sha256="e77a03ad1b7170c212f1ac672dad2c5d7e7f091b94e47b36a2ec2adc42051857")
 
+    depends_on("py-maturin", type=("build"))
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-pybigwig", type=("build", "run"))
     depends_on("py-pybigtools", type=("build", "run"))
@@ -21,3 +22,4 @@ class PyScatacFragmentTools(PythonPackage):
     depends_on("py-numba", type=("build", "run"))
     depends_on("py-rich-argparse", type=("build", "run"))
     depends_on("py-joblib", type=("build", "run"))
+    depends_on("cmake", type=("build", "link"))
