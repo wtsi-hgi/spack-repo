@@ -11,7 +11,9 @@ class PyPolars(PythonPackage):
     homepage = "https://www.pola.rs/"
     pypi = "polars/polars-0.20.7.tar.gz"
 
-    version("0.20.7", sha256="ec742fdf41e16ff699c043259ba94a11bbc2f7dcb978d768495db1ff2b3c5c20")
+    #version("0.20.10", sha256="ab32a232916df61c9377edcb5893d0b1624d810444d8fa627f9885d33819a8b7") # All of v0.20 is BROKEN
+    version("0.19.19", sha256="3e904d197aabf36e37fda263470eaf51ec92fb865cdea4f93947713480199303")
+
 
     depends_on("py-maturin", type=("build"))
     depends_on("py-numpy", type=("build", "run"))
@@ -37,3 +39,7 @@ class PyPolars(PythonPackage):
     depends_on("py-zstandard", type=("build", "run"))
     depends_on("py-hvplot@0.9.1:", type=("build", "run"))
     depends_on("py-gevent", type=("build", "run"))
+    depends_on("cmake", type=("build", "link"))
+
+    def setup_build_environment(self, env):
+        env.set("CARGO_NET_GIT_FETCH_WITH_CLI", "true")
