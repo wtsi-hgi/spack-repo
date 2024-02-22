@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RFishpond(RPackage):
 	"""Fishpond: downstream methods and tools for expression data
 
@@ -14,8 +14,9 @@ class RFishpond(RPackage):
 	
 	homepage = "https://thelovelab.github.io/fishpond"
 	bioc = "fishpond" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/fishpond_2.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/fishpond/fishpond_2.8.0.tar.gz"]
 
-	version("2.8.0", commit="518499a6d3643514dd9a5066e74cb97df7f0768f")
+	version("2.8.0", md5="407bd027d801c207371750eba2c9d735")
 
 	depends_on("r-abind", type=("build", "run"))
 	depends_on("r-gtools", type=("build", "run"))

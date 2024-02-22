@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RBlme(RPackage):
 	"""Bayesian Linear Mixed-Effects Models
 
@@ -17,5 +17,5 @@ class RBlme(RPackage):
 
 	version("1.0-5", md5="7a3b04b9cf6a638139827031647710ff")
 
-	depends_on("r@3.0-0:", type=("build", "run"))
-	depends_on("r-lme4@1.0-6:", type=("build", "run"))
+	depends_on("r@3.0.0:", type=("build", "run"))
+	depends_on("r-lme4@1.0.6:", type=("build", "run"))

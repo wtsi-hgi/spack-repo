@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RFauxpas(RPackage):
 	"""HTTP Error Helpers
 
@@ -24,5 +24,5 @@ class RFauxpas(RPackage):
 	version("0.5.2", md5="6ee52b2a7c648240502bbb8b57a2222e")
 
 	depends_on("r-r6@2.1.2:", type=("build", "run"))
-	depends_on("r-httpcode@0.3.0:", type=("build", "run"))
+	depends_on("r-httpcode@0.3:", type=("build", "run"))
 	depends_on("r-whisker", type=("build", "run"))

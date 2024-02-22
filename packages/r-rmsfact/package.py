@@ -5,13 +5,17 @@
 
 from spack.package import *
 
+
 class RRmsfact(RPackage):
-    """Amazing Random Facts About the World's Greatest Hacker
-    
-    Display a randomly selected quote about Richard M. Stallman based on the collection in the 'GNU Octave' function 'fact()' which was aggregated by Jordi Gutiérrez Hermoso based on the (now defunct) site stallmanfacts.com (which is accessible only via <http://archive.org>).
-    """
+	"""Amazing Random Facts About the World's Greatest Hacker
 
-    cran = "rmsfact"
+	Display a randomly selected quote about Richard M. Stallman
+ based on the collection in the 'GNU Octave' function 'fact()' which was
+ aggregated by Jordi Gutiérrez Hermoso based on the (now defunct) site
+ stallmanfacts.com (which is accessible only via <http://archive.org>).
+	"""
+	
+	cran = "rmsfact" 
 
-    version("0.0.3", sha256="a54d20c4e7b36b9d731deeddfb160d69c34e82f1091238541439dfa45d1e4217")
+	version("0.0.3", md5="4d865b2788e4d8af8e7023a09a676087")
 

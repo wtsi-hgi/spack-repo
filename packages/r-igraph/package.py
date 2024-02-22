@@ -15,7 +15,7 @@ class RIgraph(RPackage):
 
 	cran = "igraph"
 
-	version("2.0.1", md5="ee16cb9dcb14e6f65e730ad12bc22846")
+	version("2.0.2", md5="5ec60d660bedd8242751ed0b8720280f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
@@ -24,7 +24,7 @@ class RIgraph(RPackage):
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-pkgconfig@2:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
+	depends_on("r-vctrs", type=("build", "run"))
 	depends_on("r-cpp11@0.4.7:", type=("build", "run"))
-	depends_on("gmp", type=("build", "link", "run"))
 	depends_on("libxml2", type=("build", "link", "run"))
 	depends_on("glpk@4.57:", type=("build", "link", "run"))

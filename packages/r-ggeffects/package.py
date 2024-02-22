@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RGgeffects(RPackage):
 	"""Create Tidy Data Frames of Marginal Effects for 'ggplot' from
 Model Outputs
@@ -22,7 +22,7 @@ Model Outputs
 	homepage = "https://strengejacke.github.io/ggeffects/"
 	cran = "ggeffects" 
 
-	version("1.3.2", md5="c55ca101a454dcc6011e4b501ce02503")
+	version("1.4.0", md5="c5fd4b4cfdb444816f2cd7248ff03aa3")
 
 	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-insight@0.19.5:", type=("build", "run"))
+	depends_on("r-insight@0.19.8:", type=("build", "run"))

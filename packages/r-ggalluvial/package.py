@@ -7,9 +7,9 @@ from spack.package import *
 
 
 class RGgalluvial(RPackage):
-    """Alluvial Plots in 'ggplot2'
-    
-    Alluvial plots use variable-width ribbons and stacked bar plots to
+	"""Alluvial Plots in 'ggplot2'
+
+	Alluvial plots use variable-width ribbons and stacked bar plots to
     represent multi-dimensional or repeated-measures data with categorical or
     ordinal variables; see Riehmann, Hanfler, and Froehlich (2005)
     <doi:10.1109/INFVIS.2005.1532152> and Rosvall and Bergstrom (2010)
@@ -20,21 +20,17 @@ class RGgalluvial(RPackage):
     set of parameters. This package extends Wickham's (2010)
     <doi:10.1198/jcgs.2009.07098> layered grammar of graphics to generate
     alluvial plots from tidy data.
-    """
+	"""
+	
+	homepage = "http://corybrunson.github.io/ggalluvial/"
+	cran = "ggalluvial" 
 
-    homepage = "https://cran.r-project.org/web/packages/ggalluvial"
-    
-    cran = "ggalluvial"
+	version("0.12.5", md5="fa28d48c3a3b6f8c8a61ee6436204e27")
 
-    # versions
-    version("0.12.5", md5="fa28d48c3a3b6f8c8a61ee6436204e27")
-    
-
-    # dependencies
-    depends_on("r-dplyr@0.7:", type=('build', 'run'))
-    depends_on("r-tidyr@0.7:", type=('build', 'run'))
-    depends_on("r-lazyeval", type=('build', 'run'))
-    depends_on("r-rlang", type=('build', 'run'))
-    depends_on("r-tidyselect", type=('build', 'run'))
-    depends_on("r-ggplot2", type=('build', 'run'))
-    
+	depends_on("r@3.6:", type=("build", "run"))
+	depends_on("r-ggplot2@2.2:", type=("build", "run"))
+	depends_on("r-dplyr@0.7:", type=("build", "run"))
+	depends_on("r-tidyr@0.7:", type=("build", "run"))
+	depends_on("r-lazyeval", type=("build", "run"))
+	depends_on("r-rlang", type=("build", "run"))
+	depends_on("r-tidyselect", type=("build", "run"))

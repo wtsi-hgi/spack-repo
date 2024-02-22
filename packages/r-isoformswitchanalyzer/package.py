@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RIsoformswitchanalyzer(RPackage):
 	"""Identify, Annotate and Visualize Isoform Switches with Functional Consequences from both short- and long-read RNA-seq data
 
@@ -14,13 +14,14 @@ class RIsoformswitchanalyzer(RPackage):
 	
 	homepage = "http://bioconductor.org/packages/IsoformSwitchAnalyzeR/"
 	bioc = "IsoformSwitchAnalyzeR" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IsoformSwitchAnalyzeR_2.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IsoformSwitchAnalyzeR/IsoformSwitchAnalyzeR_2.2.0.tar.gz"]
 
-	version("2.2.0", commit="172bcd11235943c418a894b1107fb650818f5a10")
+	version("2.2.0", md5="6aad6b0133da9e103b4385ff31b7028c")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))
 	depends_on("r-dexseq", type=("build", "run"))
-	depends_on("r-saturn@1.7.0:", type=("build", "run"))
+	depends_on("r-saturn@1.7:", type=("build", "run"))
 	depends_on("r-sva", type=("build", "run"))
 	depends_on("r-ggplot2@3.3.5:", type=("build", "run"))
 	depends_on("r-pfamanalyzer", type=("build", "run"))
@@ -28,7 +29,7 @@ class RIsoformswitchanalyzer(RPackage):
 	depends_on("r-plyr", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))
 	depends_on("r-gridextra", type=("build", "run"))
-	depends_on("r-biostrings@2.50.0:", type=("build", "run"))
+	depends_on("r-biostrings@2.50:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RWritexls(RPackage):
 	"""Cross-Platform Perl Based R Function to Create Excel 2003 (XLS)
 and Excel 2007 (XLSX) Files
@@ -20,6 +20,6 @@ and Excel 2007 (XLSX) Files
 	homepage = "https://github.com/marcschwartz/WriteXLS"
 	cran = "WriteXLS" 
 
-	version("6.4.0", md5="b62412fab12ed7ffa5f47ed4238cdb15")
+	version("6.5.0", md5="b79c9e45770f56e2b87530764c12334c")
 
-
+	depends_on("perl", type=("build", "link", "run"))

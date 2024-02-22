@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RFdrtool(RPackage):
 	"""Estimation of (Local) False Discovery Rates and Higher Criticism
 
@@ -27,4 +27,3 @@ class RFdrtool(RPackage):
 	version("1.2.17", md5="7e4ee6e67266b8828cc9d893a171545e")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
-

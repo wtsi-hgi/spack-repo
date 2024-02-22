@@ -23,7 +23,7 @@ class RRtracklayer(RPackage):
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges@1.37.2:", type=("build", "run"))
-	depends_on("r-xml@1.98-0:", type=("build", "run"))
+	depends_on("r-xml@1.98.0:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.35.3:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))
@@ -31,7 +31,7 @@ class RRtracklayer(RPackage):
 	depends_on("r-genomeinfodb@1.15.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.47.6:", type=("build", "run"))
 	depends_on("r-zlibbioc", type=("build", "run"))
-	depends_on("r-rcurl@1.4-2:", type=("build", "run"))
+	depends_on("r-rcurl@1.4.2:", type=("build", "run"))
 	depends_on("r-rsamtools@1.31.2:", type=("build", "run"))
 	depends_on("r-genomicalignments@1.15.6:", type=("build", "run"))
 	depends_on("r-biocio", type=("build", "run"))

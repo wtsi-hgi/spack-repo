@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RFontbitstreamvera(RPackage):
 	"""Fonts with 'Bitstream Vera Fonts' License
 
@@ -17,5 +17,4 @@ class RFontbitstreamvera(RPackage):
 
 	version("0.1.1", md5="c32821c06d909336ace68f2df3d8710e")
 
-	depends_on("r@3.0.0:", type=("build", "run"))
-
+	depends_on("r@3:", type=("build", "run"))

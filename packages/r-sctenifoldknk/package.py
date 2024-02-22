@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RSctenifoldknk(RPackage):
 	"""In-Silico Knockout Experiments from Single-Cell Gene Regulatory
 Networks
@@ -23,6 +23,3 @@ Networks
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-sctenifoldnet", type=("build", "run"))
-	depends_on("r-testthat@2.1.0:", when="+r-testthat", type=("build", "run"))
-
-	variant("r-testthat", default=False, description="Enable r-testthat support")

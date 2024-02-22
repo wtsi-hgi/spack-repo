@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RAlabama(RPackage):
 	"""Constrained Nonlinear Optimization
 
@@ -21,4 +21,3 @@ class RAlabama(RPackage):
 
 	depends_on("r@2.10.1:", type=("build", "run"))
 	depends_on("r-numderiv", type=("build", "run"))
-

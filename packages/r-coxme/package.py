@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RCoxme(RPackage):
 	"""Mixed Effects Cox Models
 
@@ -22,8 +22,7 @@ class RCoxme(RPackage):
 	version("2.2-18.1", md5="6f86a36d721b09094a926ceea3dba301")
 
 	depends_on("r-survival@2.36.14:", type=("build", "run"))
-	depends_on("r-bdsmatrix@1.3:", type=("build", "run"))
+	depends_on("r-bdsmatrix", type=("build", "run"))
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-nlme", type=("build", "run"))
-	depends_on("r-matrix@1.0:", type=("build", "run"))
-	depends_on("r-bdsmatrix", type=("build", "run"))
+	depends_on("r-matrix@1:", type=("build", "run"))

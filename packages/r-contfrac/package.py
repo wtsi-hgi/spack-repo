@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RContfrac(RPackage):
 	"""Continued Fractions
 
@@ -16,5 +16,4 @@ class RContfrac(RPackage):
 	cran = "contfrac" 
 
 	version("1.1-12", md5="8859a0eda910d18eb97683b535d2dc1d")
-
 

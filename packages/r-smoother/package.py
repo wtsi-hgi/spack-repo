@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RSmoother(RPackage):
 	"""Functions Relating to the Smoothing of Numerical Data
 
@@ -17,4 +17,3 @@ class RSmoother(RPackage):
 	version("1.1", md5="876f63e324865694589c3ffd1d134d52")
 
 	depends_on("r-ttr@0.22:", type=("build", "run"))
-

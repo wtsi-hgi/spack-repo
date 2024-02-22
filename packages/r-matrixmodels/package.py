@@ -14,8 +14,7 @@ class RMatrixmodels(RPackage):
 
 	cran = "MatrixModels"
 
-	version("0.5-2", md5="4f91dd97fdb1ca38d6635c0e95af61e9")
+	version("0.5-3", md5="5ad7c5222f8f8322a307de4445ab9985")
 
-	depends_on("r@3.6.0:", type=("build", "run"))
-	depends_on("r-matrix@1.6-0:", type=("build", "run"))
-
+	depends_on("r@3.6:", type=("build", "run"))
+	depends_on("r-matrix@1.6.0:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RYulabUtils(RPackage):
 
 	cran = "yulab.utils"
 
-	version("0.1.0", md5="0dc7aa17f969d84a3f930bbfe2d783cb")
+	version("0.1.4", md5="67a4fe9a184067fb6d2dff56577e79c7")
 
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))
 	depends_on("r-fs", type=("build", "run"))
 	depends_on("r-memoise", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
-

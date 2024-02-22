@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RDdrtree(RPackage):
 	"""Learning Principal Graphs with DDRTree
 
@@ -18,7 +18,5 @@ class RDdrtree(RPackage):
 
 	depends_on("r-irlba", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
-	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rcppeigen", type=("build", "run"))
 	depends_on("r-bh", type=("build", "run"))
-

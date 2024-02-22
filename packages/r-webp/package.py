@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RWebp(RPackage):
 	"""A New Format for Lossless and Lossy Image Compression
 
@@ -20,4 +20,4 @@ class RWebp(RPackage):
 
 	version("1.2.0", md5="27bab6a71a65ba34e5f3eacbbe03a635")
 
-	depends_on("libwebp", type=("build", "link"))
+	depends_on("libwebp", type=("build", "link", "run"))

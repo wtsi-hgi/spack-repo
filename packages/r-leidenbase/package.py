@@ -7,9 +7,9 @@ from spack.package import *
 
 
 class RLeidenbase(RPackage):
-    """R and C/C++ Wrappers to Run the Leiden find_partition() Function.
+	"""R and C/C++ Wrappers to Run the Leiden find_partition() Function
 
-    An R to C/C++ interface that runs the Leiden community
+	An R to C/C++ interface that runs the Leiden community
     detection algorithm to find a basic partition (). It runs the
     equivalent of the 'leidenalg' find_partition() function, which is
     given in the 'leidenalg' distribution file
@@ -21,11 +21,16 @@ class RLeidenbase(RPackage):
     and the R 'igraph' package is available from
     <https://igraph.org/r/>.
     The Leiden algorithm is described in the article by
-    Traag et al. (2019) <doi:10.1038/s41598-019-41695-z>."""
+    Traag et al. (2019) <doi:10.1038/s41598-019-41695-z>.
+    Leidenbase includes code from the packages:
+       igraph version 0.9.8 with license GPL (>= 2),
+       leidenalg version 0.8.10 with license GPL 3.
+	"""
+	
+	homepage = "https://github.com/cole-trapnell-lab/leidenbase"
+	cran = "leidenbase" 
 
-    cran = "leidenbase"
+	version("0.1.27", md5="410d97dc1222fbfc207d4f7588afaaaf")
 
-    version("0.1.17", sha256="9adda0c6d7210f8c9ca8348e5c27ed18e6daef24305b57b032be78de65af4cb1")
-
-    depends_on("r@3.5.0:", type=("build", "run"))
-    depends_on("r-igraph", type=("build", "run"))
+	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r-igraph@0.9:", type=("build", "run"))

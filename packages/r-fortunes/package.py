@@ -7,12 +7,12 @@ from spack.package import *
 
 
 class RFortunes(RPackage):
-    """R Fortunes
-    
-    A collection of fortunes from the R community.
-    """
+	"""R Fortunes
 
-    cran = "fortunes"
+	A collection of fortunes from the R community.
+	"""
+	
+	cran = "fortunes" 
 
-    version("1.5-4", sha256="af55c5885336d989368410256a57a0e917cf4b3a486d4592f0d0587767f23481")
+	version("1.5-4", md5="6084d3ba4c97ec8ed015231caa369c75")
 

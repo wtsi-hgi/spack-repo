@@ -18,7 +18,7 @@ class RGgally(RPackage):
 
 	cran = "GGally"
 
-	version("2.2.0", md5="ba770293c7c59d282359e9425e0c3f7b")
+	version("2.2.1", md5="9acff4b4e2fd3197ac98fada1266434a")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-ggplot2@3.4.4:", type=("build", "run"))

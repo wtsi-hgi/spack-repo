@@ -27,9 +27,10 @@ class RStanheaders(RPackage):
 
 	cran = "StanHeaders"
 
-	version("2.26.28", md5="876fa1d91aab7593c807291dc6e82aa3")
+	version("2.32.5", md5="b6451f9244ccd0682327dcbaf63685c4")
 
-	depends_on("r@3.4.0:", type=("build", "run"))
+	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-rcppparallel@5.1.4:", type=("build", "run"))
-	depends_on("r-rcppeigen", type=("build", "run"))
-	depends_on("r-rcppparallel@5.1.4:", type=("build", "run"))
+	depends_on("r-rcppeigen@0.3.3.9.3:", type=("build", "run"))
+	depends_on("pandoc", type=("build", "link", "run"))
+	depends_on("pandoc", type=("build", "link", "run"))

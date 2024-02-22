@@ -7,21 +7,15 @@ from spack.package import *
 
 
 class RLmodel2(RPackage):
-    """Model II Regression
-    
-    Computes model II simple linear regression using ordinary
+	"""Model II Regression
+
+	Computes model II simple linear regression using ordinary
  least squares (OLS), major axis (MA), standard major axis (SMA), and
  ranged major axis (RMA).
-    """
+	"""
+	
+	cran = "lmodel2" 
 
-    homepage = "https://cran.r-project.org/web/packages/lmodel2"
-    
-    cran = "lmodel2"
+	version("1.7-3", md5="95346e8507abb2380049cc4c2ec18b65", url="https://cran.r-project.org/src/contrib/lmodel2_1.7-3.tar.gz")
 
-    # versions
-    version("1.7-3", md5="95346e8507abb2380049cc4c2ec18b65")
-    
-
-    # dependencies
-    depends_on("r@2.14.0:", type=('build', 'run'))
-    
+	depends_on("r@2.14:", type=("build", "run"))

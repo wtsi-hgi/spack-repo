@@ -14,9 +14,9 @@ class RTximeta(RPackage):
 	
 	homepage = "https://github.com/thelovelab/tximeta"
 	bioc = "tximeta" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tximeta_1.20.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tximeta/tximeta_1.20.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tximeta_1.20.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tximeta/tximeta_1.20.3.tar.gz"]
 
-	version("1.20.2", md5="00bc46199fddc42ba8b4dd28aea321c0")
+	version("1.20.3", md5="2d53855f3d4afe1e6785ac21f97a8c50")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-tximport", type=("build", "run"))

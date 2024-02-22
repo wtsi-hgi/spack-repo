@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RMaxlik(RPackage):
 	"""Maximum Likelihood Estimation and Related Tools
 
@@ -20,7 +20,7 @@ class RMaxlik(RPackage):
 
 	version("1.5-2", md5="bee4da08f6364d53279bf69027b7c4fc")
 
-	depends_on("r@2.4.0:", type=("build", "run"))
-	depends_on("r-misctools@0.6-8:", type=("build", "run"))
+	depends_on("r@2.4:", type=("build", "run"))
+	depends_on("r-misctools@0.6.8:", type=("build", "run"))
 	depends_on("r-sandwich", type=("build", "run"))
 	depends_on("r-generics", type=("build", "run"))

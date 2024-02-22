@@ -19,9 +19,9 @@ class RGenomicfeatures(RPackage):
 	desired features in a convenient format."""
 
 	bioc = "GenomicFeatures"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GenomicFeatures_1.54.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GenomicFeatures/GenomicFeatures_1.54.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GenomicFeatures_1.54.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GenomicFeatures/GenomicFeatures_1.54.3.tar.gz"]
 
-	version("1.54.1", md5="863085394fd911039eca1603e6393c1d")
+	version("1.54.3", md5="ff1db6c7968d616ad62d011206144975")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.1:", type=("build", "run"))
@@ -37,5 +37,5 @@ class RGenomicfeatures(RPackage):
 	depends_on("r-biostrings@2.47.6:", type=("build", "run"))
 	depends_on("r-biocio", type=("build", "run"))
 	depends_on("r-rtracklayer@1.51.5:", type=("build", "run"))
-	depends_on("r-biomart@2.17.1:", type=("build", "run"))
+	depends_on("r-biomart@2.58.2:", type=("build", "run"))
 	depends_on("r-biobase@2.15.1:", type=("build", "run"))

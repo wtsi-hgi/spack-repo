@@ -5,19 +5,16 @@
 
 from spack.package import *
 
+
 class RPalmerpenguins(RPackage):
-    """Size measurements, clutch observations, and blood isotope ratios for adult foraging Adélie, Chinstrap, and Gentoo penguins observed on islands in the Palmer Archipelago near Palmer Station, Antarctica."""
+	"""Palmer Archipelago (Antarctica) Penguin Data
 
-    homepage = "https://allisonhorst.github.io/palmerpenguins/"
-    cran = "palmerpenguins"
+	Size measurements, clutch observations, and blood isotope ratios for adult foraging Adélie, Chinstrap, and Gentoo penguins observed on islands in the Palmer Archipelago near Palmer Station, Antarctica. Data were collected and made available by Dr. Kristen Gorman and the Palmer Station Long Term Ecological Research (LTER) Program. 
+	"""
+	
+	homepage = "https://allisonhorst.github.io/palmerpenguins/"
+	cran = "palmerpenguins" 
 
-    version("0.1.1", sha256="2a40d48ba6c7978fdf2a6daf647ccb39cd17590680138931d11194d3dd1a30b4")
-    version("0.1.0", sha256="fdcc58bcf1311b962e94b13d0ab3729e4b6656d21bd8f0329f07473a1b1b3360")
+	version("0.1.1", md5="dff628ed0c5f7b8e265127221491934e")
 
-    depends_on("r-knitr", type=("build", "run"))
-    depends_on("r-rmarkdown", type=("build", "run"))
-    depends_on("r-tibble", type=("build", "run"))
-    depends_on("r-ggplot2", type=("build", "run"))
-    depends_on("r-dplyr", type=("build", "run"))
-    depends_on("r-tidyr", type=("build", "run"))
-    depends_on("r-recipes", type=("build", "run"))
+	depends_on("r@2.10:", type=("build", "run"))

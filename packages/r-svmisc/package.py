@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RSvmisc(RPackage):
 	"""'SciViews' - Miscellaneous Functions
 
@@ -20,4 +20,4 @@ class RSvmisc(RPackage):
 
 	version("1.2.3", md5="b94227b8913984ed493eefca71c45975")
 
-	depends_on("r@2.13.0:", type=("build", "run"))
+	depends_on("r@2.13:", type=("build", "run"))

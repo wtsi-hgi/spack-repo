@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RScmerge(RPackage):
 	"""scMerge: Merging multiple batches of scRNA-seq data
 
@@ -14,10 +14,11 @@ class RScmerge(RPackage):
 	
 	homepage = "https://github.com/SydneyBioX/scMerge"
 	bioc = "scMerge" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scMerge_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scMerge/scMerge_1.18.0.tar.gz"]
 
-	version("1.18.0", commit="8b9a2dcac6431634d7ac183fa6cf98209d99c746")
+	version("1.18.0", md5="d5b285890500ad5c781d33ab45282aca")
 
-	depends_on("r@3.6.0:", type=("build", "run"))
+	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))
 	depends_on("r-biocsingular", type=("build", "run"))
 	depends_on("r-biocneighbors", type=("build", "run"))
@@ -33,3 +34,6 @@ class RScmerge(RPackage):
 	depends_on("r-scater", type=("build", "run"))
 	depends_on("r-batchelor", type=("build", "run"))
 	depends_on("r-scran", type=("build", "run"))
+	depends_on("r-s4vectors@0.23.19:", type=("build", "run"))
+	depends_on("r-singlecellexperiment@1.7.3:", type=("build", "run"))
+	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -17,5 +17,5 @@ class RRenv(RPackage):
 
 	cran = "renv"
 
-	version("1.0.3", md5="0a136b5a728fb43098d212a92a0e2b26")
+	version("1.0.4", md5="aaaea8f2d1744448bd717c1eac47b806")
 

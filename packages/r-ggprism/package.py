@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RGgprism(RPackage):
 	"""A 'ggplot2' Extension Inspired by 'GraphPad Prism'
 
@@ -23,9 +23,9 @@ class RGgprism(RPackage):
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))
-	depends_on("r-ggplot2@3.2.0:", type=("build", "run"))
+	depends_on("r-ggplot2@3.2:", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
 	depends_on("r-gtable@0.1.1:", type=("build", "run"))
-	depends_on("r-rlang@0.3.0:", type=("build", "run"))
-	depends_on("r-scales@0.5.0:", type=("build", "run"))
+	depends_on("r-rlang@0.3:", type=("build", "run"))
+	depends_on("r-scales@0.5:", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))

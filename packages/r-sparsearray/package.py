@@ -14,9 +14,9 @@ class RSparsearray(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/SparseArray"
 	bioc = "SparseArray" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SparseArray_1.2.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SparseArray/SparseArray_1.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SparseArray_1.2.4.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SparseArray/SparseArray_1.2.4.tar.gz"]
 
-	version("1.2.3", md5="86224ea83ca5df5984cfc6907c8f0bc1")
+	version("1.2.4", md5="42ba66c3146b623250558daa44adf389")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

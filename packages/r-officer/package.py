@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class ROfficer(RPackage):
 	"""Manipulation of Microsoft Word and PowerPoint Documents
 
@@ -20,10 +20,10 @@ class ROfficer(RPackage):
 	homepage = "https://ardata-fr.github.io/officeverse/"
 	cran = "officer" 
 
-	version("0.6.3", md5="3954c8ffc243a6d7bcd2613b96807fc5")
+	version("0.6.4", md5="8fa99e32c020039b0c9fa6dc32aac998")
 
-	depends_on("r-zip@2.1.0:", type=("build", "run"))
-	depends_on("r-xml2@1.1.0:", type=("build", "run"))
+	depends_on("r-zip@2.1:", type=("build", "run"))
+	depends_on("r-xml2@1.1:", type=("build", "run"))
 	depends_on("r-openssl", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))
 	depends_on("r-uuid", type=("build", "run"))

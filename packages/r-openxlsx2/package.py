@@ -17,7 +17,7 @@ class ROpenxlsx2(RPackage):
 	homepage = "https://janmarvin.github.io/openxlsx2/"
 	cran = "openxlsx2" 
 
-	version("1.3", md5="10133a01cd595176dab8bd6247d499b1", url="https://cran.r-project.org/src/contrib/openxlsx2_1.3.tar.gz")
+	version("1.4", md5="c0a2f44019f56bb1a6e1b14973917d49", url="https://cran.r-project.org/src/contrib/openxlsx2_1.4.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

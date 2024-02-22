@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RPfamanalyzer(RPackage):
 	"""Identification of domain isotypes in pfam data
 
@@ -13,10 +13,11 @@ class RPfamanalyzer(RPackage):
 	"""
 	
 	bioc = "pfamAnalyzeR" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pfamAnalyzeR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pfamAnalyzeR/pfamAnalyzeR_1.2.0.tar.gz"]
 
-	version("1.2.0", commit="de46306a062eb7112bc55eae24bccec356b44760")
+	version("1.2.0", md5="20159a7f365760efda4827ae6fff80d3")
 
-	depends_on("r@4.3.0:", type=("build", "run"))
+	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-readr", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

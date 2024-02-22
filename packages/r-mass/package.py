@@ -14,6 +14,6 @@ class RMass(RPackage):
 
 	cran = "MASS"
 
-	version("7.3-60", md5="24ac97ba3e4446708f9bb9b8911eb920")
+	version("7.3-60.0.1", md5="a6cf0337e79798901d57410c704abc82")
 
-	depends_on("r@4.0:", type=("build", "run"))
+	depends_on("r@4:", type=("build", "run"))

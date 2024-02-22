@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RLogistf(RPackage):
 	"""Firth's Bias-Reduced Logistic Regression
 
@@ -21,7 +21,7 @@ class RLogistf(RPackage):
 
 	version("1.26.0", md5="084dbd52a2c19a3d90819daad164d508")
 
-	depends_on("r@3.0.0:", type=("build", "run"))
+	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-mice", type=("build", "run"))
 	depends_on("r-mgcv", type=("build", "run"))
 	depends_on("r-formula-tools", type=("build", "run"))

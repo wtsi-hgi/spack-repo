@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RTfautograph(RPackage):
 	"""Autograph R for 'Tensorflow'
 
@@ -20,3 +20,4 @@ class RTfautograph(RPackage):
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-reticulate", type=("build", "run"))
 	depends_on("r-backports", type=("build", "run"))
+	depends_on("py-tensorflow", type=("build", "link", "run"))

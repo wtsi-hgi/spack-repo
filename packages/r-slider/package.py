@@ -7,19 +7,21 @@ from spack.package import *
 
 
 class RSlider(RPackage):
-    """Sliding Window Functions.
+	"""Sliding Window Functions
 
-    Provides type-stable rolling window functions over any R data
+	Provides type-stable rolling window functions over any R data
     type. Cumulative and expanding windows are also supported. For more
     advanced usage, an index can be used as a secondary vector that
-    defines how sliding windows are to be created."""
+    defines how sliding windows are to be created.
+	"""
+	
+	homepage = "https://github.com/r-lib/slider"
+	cran = "slider" 
 
-    cran = "slider"
+	version("0.3.1", md5="b40d64c6dbb50a550bf8c66ceece8cc3")
 
-    version("0.3.0", sha256="bc6a17ba5f0b27c8504a1d04992108470f24fd5662fbea14c300ac75fb02fca1")
-
-    depends_on("r@3.4.0:", type=("build", "run"))
-    depends_on("r-cli@3.4.1:", type=("build", "run"))
-    depends_on("r-rlang@1.0.6:", type=("build", "run"))
-    depends_on("r-vctrs@0.5.0:", type=("build", "run"))
-    depends_on("r-warp", type=("build", "run"))
+	depends_on("r@3.6:", type=("build", "run"))
+	depends_on("r-cli@3.6.1:", type=("build", "run"))
+	depends_on("r-rlang@1.1.1:", type=("build", "run"))
+	depends_on("r-vctrs@0.6.3:", type=("build", "run"))
+	depends_on("r-warp", type=("build", "run"))

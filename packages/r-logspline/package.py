@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RLogspline(RPackage):
 	"""Routines for Logspline Density Estimation
 
@@ -19,5 +19,4 @@ class RLogspline(RPackage):
 	cran = "logspline" 
 
 	version("2.1.21", md5="58281b79aef9dfb57e8e6a36effeb71a")
-
 

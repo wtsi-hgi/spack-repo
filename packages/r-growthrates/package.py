@@ -7,16 +7,19 @@ from spack.package import *
 
 
 class RGrowthrates(RPackage):
-    """A collection of methods to determine growth rates from experimental data, in particular from batch experiments and plate reader trials."""
+	"""Estimate Growth Rates from Experimental Data
 
-    homepage = "https://cran.r-project.org/web/packages/growthrates/index.html"
+	A collection of methods to determine growth rates from
+    experimental data, in particular from batch experiments and
+    plate reader trials.
+	"""
+	
+	homepage = "https://github.com/tpetzoldt/growthrates"
+	cran = "growthrates" 
 
-    cran = "growthrates"
-    version("0.8.4", sha256="3820afa6c1faffdef0439cf7f87f54c1e281f0e4c71a7a81942b4647bebe0813")
+	version("0.8.4", md5="b92362f8d9953a82556597e136cfc23b")
 
-    depends_on("r+X", type=("build", "run"))
-    depends_on("r-lattice", type=("build", "run"))
-    depends_on("r-desolve", type=("build", "run"))
-    
-    depends_on("r-fme", type=("build", "run"))
-
+	depends_on("r@3.2:", type=("build", "run"))
+	depends_on("r-lattice", type=("build", "run"))
+	depends_on("r-desolve", type=("build", "run"))
+	depends_on("r-fme", type=("build", "run"))

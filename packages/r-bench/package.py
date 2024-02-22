@@ -7,18 +7,20 @@ from spack.package import *
 
 
 class RBench(RPackage):
-    """High Precision Timing of R Expressions
-    
-    Tools to accurately benchmark and analyze execution times for R expressions.
-    """
+	"""High Precision Timing of R Expressions
 
-    homepage = "https://bench.r-lib.org/"
-    cran = "bench"
+	Tools to accurately benchmark and analyze execution times for
+    R expressions.
+	"""
+	
+	homepage = "https://bench.r-lib.org/"
+	cran = "bench" 
 
-    version("1.1.3", sha256="bfae6320ad8c0c84fa6832519fac0e783e8d3ac5e3019ff6526f8060e8f1f317")
+	version("1.1.3", md5="43e8d84281622523ae407aa0c4f31556")
 
-    depends_on("r-glue", type=("build", "run"))
-    depends_on("r-pillar", type=("build", "run"))
-    depends_on("r-profmem", type=("build", "run"))
-    depends_on("r-rlang", type=("build", "run"))
-    depends_on("r-tibble", type=("build", "run"))
+	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r-glue@1.6.2:", type=("build", "run"))
+	depends_on("r-pillar@1.9:", type=("build", "run"))
+	depends_on("r-profmem@0.6:", type=("build", "run"))
+	depends_on("r-rlang@0.2:", type=("build", "run"))
+	depends_on("r-tibble@3.2.1:", type=("build", "run"))

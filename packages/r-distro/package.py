@@ -5,10 +5,17 @@
 
 from spack.package import *
 
+
 class RDistro(RPackage):
-    """In order to provide unified access to Linux distribution details in R, this package wraps the various files and commands that may exist on a system."""
+	"""Linux Distribution Properties
 
-    cran = "distro"
+	In order to provide unified access to Linux distribution details
+    in R, this package wraps the various files and commands that may exist
+    on a system. It is similar in spirit to the 'lsb_release' command and the
+    'Python' package of the same name.
+	"""
+	
+	cran = "distro" 
 
-    version("0.1.0", sha256="4fd8a62c56c63d35dc72ed64d526e4eed581d42044d65a8e1909f60ee5ac680d")
-    depends_on("r-testthat", type=("build", "run"))
+	version("0.1.0", md5="93f9a58fa0151253b71e447cffd19afa")
+

@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RSparsesvd(RPackage):
 	"""Sparse Truncated Singular Value Decomposition (from 'SVDLIBC')
 
@@ -18,6 +18,5 @@ class RSparsesvd(RPackage):
 
 	version("0.2-2", md5="d4e8f508c05c4ddf26031e6da48b8591")
 
-	depends_on("r@3.0:", type=("build", "run"))
+	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-matrix@1.3:", type=("build", "run"))
-

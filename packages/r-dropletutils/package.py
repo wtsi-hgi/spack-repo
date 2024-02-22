@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RDropletutils(RPackage):
 	"""Utilities for Handling Single-Cell Droplet Data
 
@@ -13,7 +13,7 @@ class RDropletutils(RPackage):
 	"""
 	
 	bioc = "DropletUtils" 
-	url = "https://www.bioconductor.org/packages/release/bioc/src/contrib/DropletUtils_1.22.0.tar.gz"
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DropletUtils_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DropletUtils/DropletUtils_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="f1fe907e6269e652adc4607fdb335c41")
 

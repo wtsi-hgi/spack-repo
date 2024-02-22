@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RTtservice(RPackage):
 	"""A Service for Tidy Transcriptomics Software Suite
 
@@ -14,9 +14,9 @@ class RTtservice(RPackage):
 	
 	cran = "ttservice" 
 
-	version("0.3.8", md5="80e5ea9851569e9905adbbff1ce7a6a2")
+	version("0.4.0", md5="89800fb63ee455786036bb5652070ea6")
 
-	depends_on("r@4.0.0:", type=("build", "run"))
+	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
-
+	depends_on("r-plotly", type=("build", "run"))

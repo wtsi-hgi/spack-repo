@@ -32,4 +32,3 @@ class RSeriation(RPackage):
 	depends_on("r-registry", type=("build", "run"))
 	depends_on("r-tsp", type=("build", "run"))
 	depends_on("r-vegan", type=("build", "run"))
-

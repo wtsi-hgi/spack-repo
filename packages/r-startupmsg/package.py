@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RStartupmsg(RPackage):
 	"""Utilities for Start-Up Messages
 
@@ -14,7 +14,6 @@ class RStartupmsg(RPackage):
 	
 	cran = "startupmsg" 
 
-	version("0.9.6", md5="d9bb261e2964199f537f447af8672c91")
+	version("0.9.6.1", md5="a3323b47b5dd36fd9db3197c400a1d84")
 
-	depends_on("r@1.8.0:", type=("build", "run"))
-
+	depends_on("r@1.8:", type=("build", "run"))

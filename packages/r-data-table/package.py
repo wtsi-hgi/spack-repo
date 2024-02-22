@@ -16,7 +16,6 @@ class RDataTable(RPackage):
 
 	cran = "data.table"
 
-	version("1.14.10", md5="21b7b8bc86c1748ee57f63fa568d4fd7")
+	version("1.15.0", md5="45e341f35317c78b122317d1315a0240")
 
 	depends_on("r@3.1:", type=("build", "run"))
-	depends_on("zlib", type=("build", "link", "run"))

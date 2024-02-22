@@ -14,16 +14,16 @@ class RVariancepartition(RPackage):
 	
 	homepage = "http://bioconductor.org/packages/variancePartition"
 	bioc = "variancePartition" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/variancePartition_1.32.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/variancePartition/variancePartition_1.32.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/variancePartition_1.32.5.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/variancePartition/variancePartition_1.32.5.tar.gz"]
 
-	version("1.32.2", md5="75a8e840769ba62b9f175c73aba9c99a")
+	version("1.32.5", md5="cd02e6e3024f4f5bbb5d8c1dcb471d15")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
-	depends_on("r-pbkrtest@0.4-4:", type=("build", "run"))
+	depends_on("r-pbkrtest@0.4.4:", type=("build", "run"))
 	depends_on("r-lmertest", type=("build", "run"))
 	depends_on("r-matrix@1.4:", type=("build", "run"))
 	depends_on("r-iterators", type=("build", "run"))

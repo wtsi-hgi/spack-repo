@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RBigstatsr(RPackage):
 	"""Statistical Tools for Filebacked Big Matrices
 
@@ -26,12 +26,10 @@ class RBigstatsr(RPackage):
 	depends_on("r-bigparallelr@0.2.3:", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))
 	depends_on("r-foreach", type=("build", "run"))
-	depends_on("r-ggplot2@3.0:", type=("build", "run"))
+	depends_on("r-ggplot2@3:", type=("build", "run"))
 	depends_on("r-ps@1.4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
-	depends_on("r-rmio@0.4:", type=("build", "run"))
+	depends_on("r-rmio", type=("build", "run"))
 	depends_on("r-rspectra", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
-	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
-	depends_on("r-rmio", type=("build", "run"))

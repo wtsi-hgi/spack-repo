@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RPaletteer(RPackage):
 	"""Comprehensive Collection of Color Palettes
 
@@ -18,7 +18,7 @@ class RPaletteer(RPackage):
 	homepage = "https://github.com/EmilHvitfeldt/paletteer"
 	cran = "paletteer" 
 
-	version("1.5.0", md5="b4814df17b6c67809d2f3cfd9333ee08")
+	version("1.6.0", md5="2149379a13391b97581b43dd87aa6fd0")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-prismatic", type=("build", "run"))

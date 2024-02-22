@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RLocfdr(RPackage):
 	"""Computes Local False Discovery Rates
 
@@ -15,5 +15,4 @@ class RLocfdr(RPackage):
 	cran = "locfdr" 
 
 	version("1.1-8", md5="d4ee3349e9cb39b70bfff94ff665d2aa")
-
 

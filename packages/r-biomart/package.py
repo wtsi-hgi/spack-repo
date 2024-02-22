@@ -23,11 +23,11 @@ class RBiomart(RPackage):
 	mining."""
 
 	bioc = "biomaRt"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biomaRt_2.58.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biomaRt/biomaRt_2.58.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biomaRt_2.58.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biomaRt/biomaRt_2.58.2.tar.gz"]
 
-	version("2.58.1", md5="e67110485af98c724bccbca648092a1a")
+	version("2.58.2", md5="9cd8b1d118761e837a3c037dcfafbfc2")
 
-	depends_on("r-xml@3.99-0.7:", type=("build", "run"))
+	depends_on("r-xml@3.99.0.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-progress", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))

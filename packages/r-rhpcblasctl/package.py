@@ -7,13 +7,15 @@ from spack.package import *
 
 
 class RRhpcblasctl(RPackage):
-    """Control the Number of Threads on 'BLAS'
+	"""Control the Number of Threads on 'BLAS'
 
-    Control the number of threads on 'BLAS' (Aka 'GotoBLAS', 'OpenBLAS', 'ACML',
-    'BLIS' and 'MKL'). And possible to control the number of threads in
-    'OpenMP'. Get a number of logical cores and physical cores if feasible."""
+	Control the number of threads on 'BLAS' (Aka 'GotoBLAS', 'OpenBLAS', 'ACML', 'BLIS' and 'MKL').
+  And possible to control the number of threads in 'OpenMP'.
+  Get a number of logical cores and physical cores if feasible.
+	"""
+	
+	homepage = "https://prs.ism.ac.jp/~nakama/Rhpc/"
+	cran = "RhpcBLASctl" 
 
-    cran = "RhpcBLASctl"
-
-    version("0.23-42", sha256="5c889d5b69e264060b9f1f0383c447f594855b8afc15b7d76d39e4d62b946615")
+	version("0.23-42", md5="825ec304404cad180a6bfb5aef5204b7")
 

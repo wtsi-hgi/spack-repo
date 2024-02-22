@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RWebmockr(RPackage):
 	"""Stubbing and Setting Expectations on 'HTTP' Requests
 
@@ -26,7 +26,7 @@ class RWebmockr(RPackage):
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-magrittr@1.5:", type=("build", "run"))
 	depends_on("r-r6@2.1.3:", type=("build", "run"))
-	depends_on("r-urltools@1.6.0:", type=("build", "run"))
+	depends_on("r-urltools@1.6:", type=("build", "run"))
 	depends_on("r-fauxpas", type=("build", "run"))
-	depends_on("r-crul@0.7.0:", type=("build", "run"))
+	depends_on("r-crul@0.7:", type=("build", "run"))
 	depends_on("r-base64enc", type=("build", "run"))

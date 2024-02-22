@@ -7,19 +7,27 @@ from spack.package import *
 
 
 class RFme(RPackage):
-    """Provides functions to help in fitting models to data, to perform Monte Carlo, sensitivity and identifiability analysis."""
+	"""A Flexible Modelling Environment for Inverse Modelling,
+Sensitivity, Identifiability and Monte Carlo Analysis
 
-    homepage = "https://cran.r-project.org/web/packages/FME/index.html"
+	Provides functions to help in fitting models to data, to
+  perform Monte Carlo, sensitivity and identifiability analysis. It is
+  intended to work with models be written as a set of differential
+  equations that are solved either by an integration routine from
+  package 'deSolve', or a steady-state solver from package
+  'rootSolve'. However, the methods can also be used with other types of
+  functions.
+	"""
+	
+	homepage = "http://fme.r-forge.r-project.org/"
+	cran = "FME" 
 
-    cran = "FME"
-    version("1.3.6.3", sha256="83c4c28ad4f9197610be40fb66f1025f438a46e4085d64b736e83a0ab71e36a1")
+	version("1.3.6.3", md5="a69a6c42eca0e6d172b6a60a097afea5")
 
-    depends_on("r+X", type=("build", "run"))
-    depends_on("r-desolve", type=("build", "run"))
-    depends_on("r-coda", type=("build", "run"))
-    depends_on("r-mass", type=("build", "run"))
-    depends_on("r-minqa", type=("build", "run"))
-
-    depends_on("r-rootsolve", type=("build", "run"))
-    depends_on("r-minpack-lm", type=("build", "run"))
-
+	depends_on("r@2.6:", type=("build", "run"))
+	depends_on("r-desolve", type=("build", "run"))
+	depends_on("r-rootsolve", type=("build", "run"))
+	depends_on("r-coda", type=("build", "run"))
+	depends_on("r-minpack-lm", type=("build", "run"))
+	depends_on("r-mass", type=("build", "run"))
+	depends_on("r-minqa", type=("build", "run"))

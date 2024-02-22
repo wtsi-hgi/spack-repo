@@ -7,9 +7,9 @@ from spack.package import *
 
 
 class RTinytest(RPackage):
-    """Lightweight and Feature Complete Unit Testing Framework
-    
-    Provides a lightweight (zero-dependency) and easy to use 
+	"""Lightweight and Feature Complete Unit Testing Framework
+
+	Provides a lightweight (zero-dependency) and easy to use 
     unit testing framework. Main features: install tests with 
     the package. Test results are treated as data that can be stored and 
     manipulated. Test files are R scripts interspersed with test commands, that
@@ -18,16 +18,11 @@ class RTinytest(RPackage):
     configurable output printing. Compare computed output with output stored 
     with the package. Run tests in parallel. Extensible by other packages.
     Report side effects.
-    """
+	"""
+	
+	homepage = "https://github.com/markvanderloo/tinytest"
+	cran = "tinytest" 
 
-    homepage = "https://cran.r-project.org/web/packages/tinytest"
-    
-    cran = "tinytest"
+	version("1.4.1", md5="e8d57668032bedd980cc9f1ad9c957d3")
 
-    # versions
-    version("1.4.1", md5="e8d57668032bedd980cc9f1ad9c957d3")
-    
-
-    # dependencies
-    depends_on("r@3.0.0:", type=('build', 'run'))
-    
+	depends_on("r@3:", type=("build", "run"))

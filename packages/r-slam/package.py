@@ -7,11 +7,14 @@ from spack.package import *
 
 
 class RSlam(RPackage):
-    """Sparse Lightweight Arrays and Matrices.
+	"""Sparse Lightweight Arrays and Matrices
 
-    Data structures and algorithms for sparse arrays and matrices, based on
-    index arrays and simple triplet representations, respectively."""
+	Data structures and algorithms for sparse arrays and matrices,
+  based on index arrays and simple triplet representations, respectively.
+	"""
+	
+	cran = "slam" 
 
-    cran = "slam"
+	version("0.1-50", md5="75f6386e03e38dd6d6bcd63bfe257ddc")
 
-    version("0.1-50", sha256="7899bf3266c204ecccefc1878f96940b117d4503af128f4fbc50fc409163f8bd")
+	depends_on("r@3.4:", type=("build", "run"))

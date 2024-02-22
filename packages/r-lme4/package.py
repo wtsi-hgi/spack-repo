@@ -23,7 +23,7 @@ class RLme4(RPackage):
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))
 	depends_on("r-boot", type=("build", "run"))
-	depends_on("r-nlme@3.1-123:", type=("build", "run"))
+	depends_on("r-nlme@3.1.123:", type=("build", "run"))
 	depends_on("r-minqa@1.1.15:", type=("build", "run"))
 	depends_on("r-nloptr@1.0.4:", type=("build", "run"))
 	depends_on("r-rcpp@0.10.5:", type=("build", "run"))

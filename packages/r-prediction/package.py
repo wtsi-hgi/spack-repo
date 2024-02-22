@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RPrediction(RPackage):
 	"""Tidy, Type-Safe 'prediction()' Methods
 
@@ -17,5 +17,5 @@ class RPrediction(RPackage):
 
 	version("0.3.14", md5="f27a713e1265ac86ab47b06a32154e44")
 
-	depends_on("r@3.5.0:", type=("build", "run"))
+	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RHibag(RPackage):
 	"""HLA Genotype Imputation with Attribute Bagging
 
@@ -14,9 +14,9 @@ class RHibag(RPackage):
 	
 	homepage = "https://github.com/zhengxwen/HIBAG"
 	bioc = "HIBAG" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HIBAG_1.38.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HIBAG/HIBAG_1.38.2.tar.gz"]
 
-	version("1.38.0", commit="214827d1e869b354bf5c6aaf5efa7832f89fc36a")
+	version("1.38.2", md5="a45e528fc76fb752e54021bb438ff3fd")
 
-	depends_on("r@3.2.0:", type=("build", "run"))
-	depends_on("r-rcppparallel", type=("build", "run"))
-	depends_on("r-rcppparallel@5.0.0:", type=("build", "run"))
+	depends_on("r@3.2:", type=("build", "run"))
+	depends_on("r-rcppparallel@5:", type=("build", "run"))

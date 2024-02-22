@@ -7,21 +7,16 @@ from spack.package import *
 
 
 class RParsedate(RPackage):
-    """Recognize and Parse Dates in Various Formats, Including All ISO
+	"""Recognize and Parse Dates in Various Formats, Including All ISO
 8601 Formats
-    
-    Parse dates automatically, without the need of
+
+	Parse dates automatically, without the need of
     specifying a format. Currently it includes the git date parser.
     It can also recognize and parse all ISO 8601 formats.
-    """
+	"""
+	
+	homepage = "https://github.com/gaborcsardi/parsedate"
+	cran = "parsedate" 
 
-    homepage = "https://cran.r-project.org/web/packages/parsedate"
-    
-    cran = "parsedate"
+	version("1.3.1", md5="94e2cf16a36da1786ee0cba3cd4889e3")
 
-    # versions
-    version("1.3.1", md5="94e2cf16a36da1786ee0cba3cd4889e3")
-    
-
-    # dependencies
-    

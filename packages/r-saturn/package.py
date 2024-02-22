@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RSaturn(RPackage):
 	"""Scalable Analysis of Differential Transcript Usage for Bulk and Single-Cell RNA-sequencing Applications
 
@@ -14,8 +14,9 @@ class RSaturn(RPackage):
 	
 	homepage = "https://github.com/statOmics/satuRn"
 	bioc = "satuRn" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/satuRn_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/satuRn/satuRn_1.10.0.tar.gz"]
 
-	version("1.10.0", commit="97878c3865b6fd6801fc7b77eab7366143e21c4a")
+	version("1.10.0", md5="a0826944ab0aee6ff42127fa7eebf43c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-locfdr", type=("build", "run"))

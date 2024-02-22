@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RDestiny(RPackage):
 	"""Creates diffusion maps
 
@@ -14,14 +14,15 @@ class RDestiny(RPackage):
 	
 	homepage = "https://theislab.github.io/destiny/"
 	bioc = "destiny" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/destiny_3.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/destiny/destiny_3.16.0.tar.gz"]
 
-	version("3.16.0", commit="88094ed742d32574a2e1449905079c3e1f244fcf")
+	version("3.16.0", md5="b86a5cbd268832cb7a6da5999e50393b")
 
-	depends_on("r@3.4.0:", type=("build", "run"))
+	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
-	depends_on("r-rcpp@0.10.3:", type=("build", "run"))
+	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rcppeigen", type=("build", "run"))
-	depends_on("r-rspectra@0.14-0:", type=("build", "run"))
+	depends_on("r-rspectra@0.14.0:", type=("build", "run"))
 	depends_on("r-irlba", type=("build", "run"))
 	depends_on("r-pcamethods", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))
@@ -40,5 +41,3 @@ class RDestiny(RPackage):
 	depends_on("r-smoother", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))
 	depends_on("r-scatterplot3d", type=("build", "run"))
-	depends_on("r-rcpp", type=("build", "run"))
-	depends_on("r-rcppeigen", type=("build", "run"))

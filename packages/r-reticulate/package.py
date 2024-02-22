@@ -17,7 +17,7 @@ class RReticulate(RPackage):
 
 	cran = "reticulate"
 
-	version("1.34.0", md5="109bbcb55d3a8e779babe90e432c172a")
+	version("1.35.0", md5="16e16602150f6cdf6841b63b6bff1acf")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

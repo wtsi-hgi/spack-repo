@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RRandtoolbox(RPackage):
 	"""Toolbox for Pseudo and Quasi Random Number Generation and Random
 Generator Tests
@@ -27,5 +27,4 @@ Generator Tests
 
 	version("2.0.4", md5="a17ceb0e2e5062191249235e50e832f6")
 
-	depends_on("r-rngwell@0.10-1:", type=("build", "run"))
-
+	depends_on("r-rngwell@0.10.1:", type=("build", "run"))

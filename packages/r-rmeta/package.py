@@ -7,9 +7,15 @@ from spack.package import *
 
 
 class RRmeta(RPackage):
-    """Functions for simple fixed and random effects meta-analysis for two-sample comparisons and cumulative meta-analyses. Draws standard summary plots, funnel plots, and computes summaries and tests for association and heterogeneity."""
+	"""Meta-Analysis
 
-    cran = "rmeta"
+	Functions for simple fixed and random effects
+        meta-analysis for two-sample comparisons and cumulative
+        meta-analyses. Draws standard summary plots, funnel plots, and
+        computes summaries and tests for association and heterogeneity.
+	"""
+	
+	cran = "rmeta" 
 
-    version("3.0", md5="b14aa174ad5bb7b8abb413a5aa4eacc0")
+	version("3.0", md5="b14aa174ad5bb7b8abb413a5aa4eacc0")
 

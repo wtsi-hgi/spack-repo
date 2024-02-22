@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RMcmcprecision(RPackage):
 	"""Precision of Discrete Parameters in Transdimensional MCMC
 
@@ -28,11 +28,10 @@ class RMcmcprecision(RPackage):
 
 	version("0.4.0", md5="856f4937cab0ed37f7b5c6108c43a077")
 
-	depends_on("r@3.0.0:", type=("build", "run"))
+	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-combinat", type=("build", "run"))
-	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
 	depends_on("r-rcppprogress", type=("build", "run"))
 	depends_on("r-rcppeigen", type=("build", "run"))

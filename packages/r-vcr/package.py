@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RVcr(RPackage):
 	"""Record 'HTTP' Calls to Disk
 
@@ -26,7 +26,7 @@ class RVcr(RPackage):
 
 	depends_on("r-crul@0.8.4:", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))
-	depends_on("r-webmockr@0.8.0:", type=("build", "run"))
+	depends_on("r-webmockr@0.8:", type=("build", "run"))
 	depends_on("r-urltools", type=("build", "run"))
 	depends_on("r-yaml", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

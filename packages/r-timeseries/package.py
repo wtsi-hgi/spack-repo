@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RTimeseries(RPackage):
 	"""Financial Time Series Objects (Rmetrics)
 
@@ -14,10 +14,10 @@ class RTimeseries(RPackage):
   mathematical operations and statistical functions.
 	"""
 	
-	homepage = "https://r-forge.r-project.org/scm/viewvc.php/pkg/timeSeries/?root=rmetrics"
+	homepage = "https://geobosh.github.io/timeSeriesDoc/"
 	cran = "timeSeries" 
 
-	version("4031.107", md5="2228b87dd8677eacb2768d3bfa0b65e9")
+	version("4032.109", md5="645a2cd9432cacae6a7656b2a7c89662")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-timedate@2150.95:", type=("build", "run"))

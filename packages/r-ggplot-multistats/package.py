@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RGgplotMultistats(RPackage):
 	"""Multiple Summary Statistics for Binned Stats/Geometries
 
@@ -25,4 +25,3 @@ class RGgplotMultistats(RPackage):
 	depends_on("r-scales", type=("build", "run"))
 	depends_on("r-hexbin", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
-

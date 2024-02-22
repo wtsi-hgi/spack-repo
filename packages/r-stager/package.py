@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RStager(RPackage):
 	"""stageR: stage-wise analysis of high throughput gene expression data in R
 
@@ -13,8 +13,9 @@ class RStager(RPackage):
 	"""
 	
 	bioc = "stageR" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/stageR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/stageR/stageR_1.24.0.tar.gz"]
 
-	version("1.24.0", commit="c4ff87efeaa83f4aa941bc88e8e4f5bceaee0cb7")
+	version("1.24.0", md5="cdbf6ab3c35c3e019b0ce786ad85eb38")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

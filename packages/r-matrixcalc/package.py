@@ -7,9 +7,9 @@ from spack.package import *
 
 
 class RMatrixcalc(RPackage):
-    """Collection of Functions for Matrix Calculations
-    
-    A collection of functions to support matrix calculations
+	"""Collection of Functions for Matrix Calculations
+
+	A collection of functions to support matrix calculations
         for probability, econometric and numerical analysis. There are
         additional functions that are comparable to APL functions which
         are useful for actuarial models such as pension mathematics.
@@ -19,16 +19,10 @@ class RMatrixcalc(RPackage):
         Horn, R.A. (1990) Matrix Analysis. ISBN 978-0521386326.
         Lancaster, P. (1969) Theory of Matrices. ISBN 978-0124355507.
         Lay, D.C. (1995) Linear Algebra: And Its Applications. ISBN 978-0201845563.
-    """
+	"""
+	
+	cran = "matrixcalc" 
 
-    homepage = "https://cran.r-project.org/web/packages/matrixcalc"
-    
-    cran = "matrixcalc"
+	version("1.0-6", md5="3b7acd84cfbe8085fab05d2f40ff0c79")
 
-    # versions
-    version("1.0-6", md5="3b7acd84cfbe8085fab05d2f40ff0c79")
-    
-
-    # dependencies
-    depends_on("r@2.0.1:", type=('build', 'run'))
-    
+	depends_on("r@2.0.1:", type=("build", "run"))

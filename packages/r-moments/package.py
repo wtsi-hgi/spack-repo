@@ -18,3 +18,4 @@ class RMoments(RPackage):
 	cran = "moments" 
 
 	version("0.14.1", md5="622afd35702c45ad010c106af2457458")
+

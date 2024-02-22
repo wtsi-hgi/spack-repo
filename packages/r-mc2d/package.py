@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RMc2d(RPackage):
 	"""Tools for Two-Dimensional Monte-Carlo Simulations
 
@@ -16,7 +16,7 @@ class RMc2d(RPackage):
 
 	version("0.2.0", md5="d8127ac363842b9e7ac785f499700390")
 
-	depends_on("r@2.10.0:", type=("build", "run"))
+	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-ggpubr", type=("build", "run"))

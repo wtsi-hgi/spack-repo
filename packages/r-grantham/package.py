@@ -5,19 +5,29 @@
 
 from spack.package import *
 
+
 class RGrantham(RPackage):
-    """A minimal set of routines to calculate the 'Grantham' distance."""
+	"""Calculate the 'Grantham' Distance
 
-    homepage = "https://maialab.org/grantham/"
-    cran = "grantham"
+	A minimal set of routines to calculate the 'Grantham' distance
+    <doi:10.1126/science.185.4154.862>. The 'Grantham' distance attempts to
+    provide a proxy for the evolutionary distance between two amino acids
+    based on three key chemical properties: composition, polarity and
+    molecular volume. In turn, evolutionary distance is used as a proxy for
+    the impact of missense mutations. The higher the distance, the more
+    deleterious the substitution is expected to be.
+	"""
+	
+	homepage = "https://maialab.org/grantham/"
+	cran = "grantham" 
 
-    version("0.1.1", sha256="e66436d888e64bcac02263e8b383184be4c178dcac2d4bef7ad5d802fde1f330")
-    version("0.1.0", sha256="ef3760d8b51c77556e0ab6e780fde5977650b9d12b9a278bc1e841edd61a8831")
+	version("0.1.1", md5="daf4e573ef2e79f28e914db57028a6ad")
 
-    depends_on("r-tibble", type=("build", "run"))
-    depends_on("r-magrittr", type=("build", "run"))
-    depends_on("r-vctrs", type=("build", "run"))
-    depends_on("r-dplyr", type=("build", "run"))
-    depends_on("r-tidyr", type=("build", "run"))
-    depends_on("r-rlang", type=("build", "run"))
-    depends_on("r-stringr", type=("build", "run"))
+	depends_on("r@2.10:", type=("build", "run"))
+	depends_on("r-tibble", type=("build", "run"))
+	depends_on("r-magrittr", type=("build", "run"))
+	depends_on("r-vctrs", type=("build", "run"))
+	depends_on("r-dplyr", type=("build", "run"))
+	depends_on("r-tidyr", type=("build", "run"))
+	depends_on("r-rlang", type=("build", "run"))
+	depends_on("r-stringr", type=("build", "run"))

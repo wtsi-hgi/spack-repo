@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RTruncreg(RPackage):
 	"""Truncated Gaussian Regression Models
 
@@ -17,5 +17,5 @@ class RTruncreg(RPackage):
 
 	version("0.2-5", md5="6ddc73494a349da69b23f859ffe89a54")
 
-	depends_on("r@1.8.0:", type=("build", "run"))
+	depends_on("r@1.8:", type=("build", "run"))
 	depends_on("r-maxlik", type=("build", "run"))

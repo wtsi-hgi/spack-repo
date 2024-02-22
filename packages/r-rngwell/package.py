@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RRngwell(RPackage):
 	"""Toolbox for WELL Random Number Generators
 
@@ -20,5 +20,4 @@ class RRngwell(RPackage):
 
 	version("0.10-9", md5="30a683f8002c1aa17ca20be5ab1dcdb6")
 
-	depends_on("r@3.0.0:", type=("build", "run"))
-
+	depends_on("r@3:", type=("build", "run"))

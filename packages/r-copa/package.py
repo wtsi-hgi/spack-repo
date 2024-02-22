@@ -1,0 +1,20 @@
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Spack Project Developers. See the top-level COPYRIGHT file for details.
+#
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)
+
+from spack.package import *
+
+
+class RCopa(RPackage):
+	"""Functions to perform cancer outlier profile analysis.
+
+	COPA is a method to find genes that undergo recurrent fusion in a given cancer type by finding pairs of genes that have mutually exclusive outlier profiles.
+	"""
+	
+	bioc = "copa" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/copa_1.70.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/copa/copa_1.70.0.tar.gz"]
+
+	version("1.70.0", md5="bd372714a4dd7e70b90d9232fcba322d")
+
+	depends_on("r-biobase", type=("build", "run"))

@@ -7,20 +7,19 @@ from spack.package import *
 
 
 class RScpubr(RPackage):
-    """Generate Publication Ready Visualizations of Single Cell
+	"""Generate Publication Ready Visualizations of Single Cell
 Transcriptomics Data
-    
-    A system that provides a streamlined way of generating publication ready plots for known Single-Cell transcriptomics data in a “publication ready” format. This is, the goal is to automatically generate plots with the highest quality possible, that can be used right away or with minimal modifications for a research article.
-    """
 
-    homepage = "https://cran.r-project.org/web/packages/SCpubr"
-    
-    cran = "SCpubr"
+	A system that provides a streamlined way of generating
+    publication ready plots for known Single-Cell transcriptomics data in
+    a “publication ready” format. This is, the goal is to automatically
+    generate plots with the highest quality possible, that can be used
+    right away or with minimal modifications for a research article.
+	"""
+	
+	homepage = "https://github.com/enblacar/SCpubr/"
+	cran = "SCpubr" 
 
-    # versions
-    version("1.1.2", md5="21738379760ec2b1811187131f02adbd")
-    
+	version("2.0.2", md5="27650bdbbc233e43ad52970c7314d897")
 
-    # dependencies
-    depends_on("r@4.0.0:", type=('build', 'run'))
-    
+	depends_on("r@4:", type=("build", "run"))

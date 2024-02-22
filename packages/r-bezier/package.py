@@ -7,18 +7,12 @@ from spack.package import *
 
 
 class RBezier(RPackage):
-    """Toolkit for Bezier Curves and Splines
-    
-    The bezier package is a toolkit for working with Bezier curves and splines. The package provides functions for point generation, arc length estimation, degree elevation and curve fitting.
-    """
+	"""Toolkit for Bezier Curves and Splines
 
-    homepage = "https://cran.r-project.org/web/packages/bezier"
-    
-    cran = "bezier"
+	The bezier package is a toolkit for working with Bezier curves and splines. The package provides functions for point generation, arc length estimation, degree elevation and curve fitting.
+	"""
+	
+	cran = "bezier" 
 
-    # versions
-    version("1.1.2", md5="ff007027f4c27591f9b47bf43be8aaa1")
-    
+	version("1.1.2", md5="ff007027f4c27591f9b47bf43be8aaa1")
 
-    # dependencies
-    

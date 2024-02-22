@@ -7,20 +7,15 @@ from spack.package import *
 
 
 class RShinybs(RPackage):
-    """Twitter Bootstrap Components for Shiny
-    
-    Adds additional Twitter Bootstrap components to Shiny. 
-    """
+	"""Twitter Bootstrap Components for Shiny
 
-    homepage = "https://cran.r-project.org/web/packages/shinyBS"
-    
-    cran = "shinyBS"
+	Adds additional Twitter Bootstrap components to Shiny. 
+	"""
+	
+	homepage = "https://ebailey78.github.io/shinyBS"
+	cran = "shinyBS" 
 
-    # versions
-    version("0.61.1", md5="906917fce92a851081f5755340d2bea0")
-    
+	version("0.61.1", md5="906917fce92a851081f5755340d2bea0")
 
-    # dependencies
-    depends_on("r-shiny@0.11:", type=('build', 'run'))
-    depends_on("r-htmltools", type=('build', 'run'))
-    
+	depends_on("r-shiny@0.11:", type=("build", "run"))
+	depends_on("r-htmltools", type=("build", "run"))

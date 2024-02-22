@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RVim(RPackage):
 	"""Visualization and Imputation of Missing Values
 
@@ -25,7 +25,7 @@ class RVim(RPackage):
 
 	version("6.2.2", md5="4dc9bb7baa02b064e9cd2d994092fbb8")
 
-	depends_on("r@3.5.0:", type=("build", "run"))
+	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-colorspace", type=("build", "run"))
 	depends_on("r-car", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
@@ -39,4 +39,3 @@ class RVim(RPackage):
 	depends_on("r-laeken", type=("build", "run"))
 	depends_on("r-ranger", type=("build", "run"))
 	depends_on("r-data-table@1.9.4:", type=("build", "run"))
-	depends_on("r-rcpp", type=("build", "run"))

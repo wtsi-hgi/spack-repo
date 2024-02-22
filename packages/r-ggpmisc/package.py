@@ -5,73 +5,41 @@
 
 from spack.package import *
 
+
 class RGgpmisc(RPackage):
-    """Extensions to 'ggplot2' respecting the grammar of graphics paradigm. Statistics: locate and tag peaks and valleys; label plot with the equation of a fitted polynomial or other types of models; labels with P-value, R^2 or adjusted R^2 or information criteria for fitted models; label with ANOVA table for fitted models; label with summary for fitted models."""
+	"""Miscellaneous Extensions to 'ggplot2'
 
-    homepage = "https://github.com/aphalo/ggpmisc"
-    cran = "ggpmisc"
+	Extensions to 'ggplot2' respecting the grammar of graphics
+    paradigm. Statistics: locate and tag peaks and valleys; label plot with the
+    equation of a fitted polynomial or other types of models; labels
+    with P-value, R^2 or adjusted R^2 or information criteria for fitted models;
+    label with ANOVA table for fitted models; label with summary for fitted
+    models. Model fit classes for which suitable methods are provided by package
+    'broom' and 'broom.mixed' are supported. Scales and stats to build volcano
+    and quadrant plots based on outcomes, fold changes, p-values and false 
+    discovery rates.
+	"""
+	
+	homepage = "https://docs.r4photobiology.info/ggpmisc/"
+	cran = "ggpmisc" 
 
-    version("0.5.4-1", sha256="9d982c62ed393ff5177b515a6f59049f27483c67ad9205fb69185b6c3722d638")
-    version("0.5.3", sha256="aa986aaf23a0df0fcf8218b900b52f9824b6f2e19a49fd946389ee0ef725a0c8")
-    version("0.5.2", sha256="060b04ebad5d52b837864a450e59ab1b5eeda05c0aabfe9a530286b8012a78ff")
-    version("0.5.1", sha256="11679dd3dcf84ccc3bab4cacc8498c9ec4826a0401841ff8786397168d2d08a0")
-    version("0.5.0", sha256="bcd3793f9f4c9ebdce10764224891acad91fff18d697fc818503c6576175ecc4")
-    version("0.4.7", sha256="fd93e10f23c477cc39e3e776b380afeefc31f89283e09605ad6878b8a86536fc")
-    version("0.4.6", sha256="da0ffdbaea17ab931bb4ec57d0c81969ae7718708d480bcf7034484b7a4e03c7")
-    version("0.4.5", sha256="2831f01d68ea57955fd4cd0ee3f675f29eb84bbad30a8f292fb2d944e11fde0c")
-    version("0.4.4", sha256="b1278753a9b128ca1e9c347c14754761217321f98c762d1f88affe3194c8b605")
-    version("0.4.3", sha256="33fecbecefedb7e5260662d4cde58ba2d8f484a1e3d90276608818229727c839")
-    version("0.4.2-1", sha256="9ea182616353345038d60ad390bbac31f1a28b80b72973c4b3650ddc6f657dca")
-    version("0.4.2", sha256="4cad86afd7f30687e81feb39dc256e22a54dbd305ee88148ba1ac82739eb4055")
-    version("0.4.1", sha256="98bd8839ef557b9db317cb89d4a5a46fb84e4ad6cea9cdcde4ed9a1a6803afef")
-    version("0.4.0", sha256="43f5f7f0ac70aa85b1ab2826091b78a15401969a0d18d875c053e345da85dfed")
-    version("0.3.9", sha256="5b3096cbddd638c815f9dcc3d49267518866c7ace7609d341923c18bf9a56059")
-    version("0.3.8-1", sha256="ee1be2cb0c9b8193a3881b5b72056c9a168dab53bc8c6fe81645416ec781994d")
-    version("0.3.8", sha256="ff7983deadb8c1bd872c9869fe1dc1addaa880070c00bf9e86d5c1a268ae206d")
-    version("0.3.7", sha256="d6eb76148b1461546254947ec48c400253fa599f81f92a3ecbc33a3213333a88")
-    version("0.3.6", sha256="0808371dec19e83f70c0ccf6cb2fdbb42536a11f1676f67619eea397130e2816")
-    version("0.3.5", sha256="363e9e4ad52f209b12a7b48528507c48afb70db52ae50e9f2ec8a23dd4684255")
-    version("0.3.4", sha256="b22e77be4ff782508d861444e2b2153df4acde4832929887c037c23bc1f58175")
-    version("0.3.3", sha256="5ab10b6309ea68f54a6ec5d9e434bbd819fb5a92510c780514eb216a3c93aad4")
-    version("0.3.2", sha256="58f3488247f4513768927840026fbe5a2c9eac673316ba92ea0fa64f30ad9b55")
-    version("0.3.1", sha256="e23bfd19bd0521b88459f0df3073c2ecf183e48cc3b1956f0266fc7ef06d92cd")
-    version("0.3.0", sha256="9f2d4cc58e4d7509880201cd05021419130d68107166463bcde7c8b4f0f8b8d6")
-    version("0.2.17", sha256="01738fe9202de406b26e0c509ea8e91749dd7b61e43f69c2bd2425002c50a5d3")
-    version("0.2.16", sha256="380aef13f4bc54bbff66ff4e83b57c065626927cf9e7e913c190b83fd8fd05c3")
-    version("0.2.15", sha256="50c94fc6ee20c9d6fac5b97811bcbd9a6d151aee9dd229cf4202cedf56024901")
-    version("0.2.14", sha256="da63462b849fbcd9de52edc1c4de2f2079f6e316f92efafe370cef8f5c95871c")
-    version("0.2.13", sha256="3bfe41be5ce0e4d89c16d3cdef4bde3fe2afc8fc5c59d2060fee1691a0f020ba")
-    version("0.2.12", sha256="b124d1b25d561b503d626f9c7a62787d98379dab1f52422fd903f35e2ceae605")
-    version("0.2.10", sha256="2e40bd1e056fc18c0575f582a5eaf2c183ba9b0f9392646901bf968a62ad3a98")
-    version("0.2.9", sha256="54a681a3bf0f708432c80eb1fef68ee2afa1ac4a704ef22d152822caee659cda")
-    version("0.2.8", sha256="143474980b224ffef6f8e20a0faad4c7f14dd923a391e3f52e5d776602179601")
-    version("0.2.7", sha256="e953e3683acf967ef70ed3ef5f5ac2d1a7cfbc6bf49c466305d7d61f595f2e54")
-    version("0.2.6", sha256="9ed28e905fca9dfe5a6e268e1d67a37bb6ed9bf64744696be6847fa8f9a97a32")
-    version("0.2.5", sha256="76af6b393cd065ba5af6230f9759dffe061d9b9109792bbdd279c44bed5161f9")
+	version("0.5.5", md5="a6b7e07140e0899730b072b37dccc180")
 
-    depends_on("r-ggpp@0.5.4:", type=("build", "run"))
-    depends_on("r-ggplot2@3.4.0:", type=("build", "run"))
-    depends_on("r-scales@1.2.0:", type=("build", "run"))
-    depends_on("r-rlang@1.0.0:", type=("build", "run"))
-    depends_on("r-generics@0.1.2:", type=("build", "run"))
-    depends_on("r-mass@7.3-51.6:", type=("build", "run"))
-    depends_on("r-confintr@0.1.2:", type=("build", "run"))
-    depends_on("r-polynom@1.4-0:", type=("build", "run"))
-    depends_on("r-quantreg@5.93:", type=("build", "run"))
-    depends_on("r-lmodel2@1.7-3:", type=("build", "run"))
-    depends_on("r-splus2r@1.3-3:", type=("build", "run"))
-    depends_on("r-multcomp@1.4-25:", type=("build", "run"))
-    depends_on("r-multcompview@0.1-9:", type=("build", "run"))
-    depends_on("r-tibble@3.1.5:", type=("build", "run"))
-    depends_on("r-plyr@1.8.6:", type=("build", "run"))
-    depends_on("r-dplyr@1.0.6:", type=("build", "run"))
-    depends_on("r-lubridate@1.7.10:", type=("build", "run"))
-    depends_on("r-knitr@1.39:", type=("build", "run"))
-    depends_on("r-rmarkdown@2.14:", type=("build", "run"))
-    depends_on("r-ggrepel@0.9.2:", type=("build", "run"))
-    depends_on("r-broom@0.8.0:", type=("build", "run"))
-    depends_on("r-broom-mixed@0.2.9.4:", type=("build", "run"))
-    depends_on("r-nlme@3.1-152:", type=("build", "run"))
-    depends_on("r-gginnards@0.1.0-1:", type=("build", "run"))
-    depends_on("r-testthat", type=("build", "run"))
-    depends_on("r-vdiffr", type=("build", "run"))
+	depends_on("r@4:", type=("build", "run"))
+	depends_on("r-ggpp@0.5.5:", type=("build", "run"))
+	depends_on("r-ggplot2@3.4:", type=("build", "run"))
+	depends_on("r-scales@1.2:", type=("build", "run"))
+	depends_on("r-rlang@1:", type=("build", "run"))
+	depends_on("r-generics@0.1.2:", type=("build", "run"))
+	depends_on("r-mass@7.3.51.6:", type=("build", "run"))
+	depends_on("r-confintr@0.1.2:", type=("build", "run"))
+	depends_on("r-polynom@1.4.0:", type=("build", "run"))
+	depends_on("r-quantreg@5.93:", type=("build", "run"))
+	depends_on("r-lmodel2@1.7.3:", type=("build", "run"))
+	depends_on("r-splus2r@1.3.3:", type=("build", "run"))
+	depends_on("r-multcomp@1.4.25:", type=("build", "run"))
+	depends_on("r-multcompview@0.1.9:", type=("build", "run"))
+	depends_on("r-tibble@3.1.5:", type=("build", "run"))
+	depends_on("r-plyr@1.8.6:", type=("build", "run"))
+	depends_on("r-dplyr@1.0.6:", type=("build", "run"))
+	depends_on("r-lubridate@1.7.10:", type=("build", "run"))

@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RBigassertr(RPackage):
 	"""Assertion and Message Functions
 
@@ -19,3 +19,4 @@ class RBigassertr(RPackage):
 	cran = "bigassertr" 
 
 	version("0.1.6", md5="117e5596df34dc306881809960c2233d")
+

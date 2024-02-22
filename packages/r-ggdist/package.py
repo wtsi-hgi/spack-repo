@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RGgdist(RPackage):
 	"""Visualizations of Distributions and Uncertainty
 
@@ -25,13 +25,13 @@ class RGgdist(RPackage):
 	homepage = "https://mjskay.github.io/ggdist/"
 	cran = "ggdist" 
 
-	version("3.3.0", md5="c3931d71b1c90056d640f49a24f84ddc")
+	version("3.3.1", md5="1dd3ff51bdfffa5fc48032ace31a2470")
 
-	depends_on("r@3.5.0:", type=("build", "run"))
+	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-tidyselect", type=("build", "run"))
-	depends_on("r-dplyr@1.0.0:", type=("build", "run"))
-	depends_on("r-ggplot2@3.4.0:", type=("build", "run"))
-	depends_on("r-rlang@0.3.0:", type=("build", "run"))
+	depends_on("r-dplyr@1:", type=("build", "run"))
+	depends_on("r-ggplot2@3.4:", type=("build", "run"))
+	depends_on("r-rlang@0.3:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
@@ -41,3 +41,4 @@ class RGgdist(RPackage):
 	depends_on("r-numderiv", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
 	depends_on("r-quadprog", type=("build", "run"))
+	depends_on("r-rcpp", type=("build", "run"))

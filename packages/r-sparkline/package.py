@@ -7,13 +7,16 @@ from spack.package import *
 
 
 class RSparkline(RPackage):
-    """Include interactive sparkline charts in all R contexts with the convenience of 'htmlwidgets'."""
+	"""'jQuery' Sparkline 'htmlwidget'
 
-    cran = "sparkline"
+	Include interactive sparkline charts
+    <http://omnipotent.net/jquery.sparkline> in 
+    all R contexts with the convenience of 'htmlwidgets'.  
+	"""
+	
+	cran = "sparkline" 
 
-    version("2.0", sha256="a2ca2674bc0afbf48de283acfa12945aa736c265a3b83afa896d00732a0d3953")
+	version("2.0", md5="46e07b1c3972f18233e0325c95368a7f")
 
-    depends_on("r-formattable", type=("build", "run"))
-    depends_on("r-knitr", type=("build", "run"))
-    depends_on("r-markdown", type=("build", "run"))
-    depends_on("r-shiny", type=("build", "run"))
+	depends_on("r-htmltools", type=("build", "run"))
+	depends_on("r-htmlwidgets@0.8:", type=("build", "run"))

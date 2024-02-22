@@ -2,9 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
+
+
 class RPoilog(RPackage):
 	"""Poisson Lognormal and Bivariate Poisson Lognormal Distribution
 
@@ -16,3 +17,4 @@ class RPoilog(RPackage):
 	cran = "poilog" 
 
 	version("0.4.2", md5="e3eaf4f8caf52dc896096364e3de4dee")
+

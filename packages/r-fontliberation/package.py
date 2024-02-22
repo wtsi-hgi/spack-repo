@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RFontliberation(RPackage):
 	"""Liberation Fonts
 
@@ -19,5 +19,4 @@ class RFontliberation(RPackage):
 
 	version("0.1.0", md5="7a317aca78d58fc0b2417380cc702864")
 
-	depends_on("r@3.0:", type=("build", "run"))
-
+	depends_on("r@3:", type=("build", "run"))

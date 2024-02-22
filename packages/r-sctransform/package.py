@@ -20,11 +20,11 @@ class RSctransform(RPackage):
 
 	version("0.4.1", md5="5db97bf1a8405b03140183ba9a609a65")
 
-	depends_on("r@3.6.0:", type=("build", "run"))
+	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
-	depends_on("r-matrix@1.5-0:", type=("build", "run"))
+	depends_on("r-matrix@1.5.0:", type=("build", "run"))
 	depends_on("r-future-apply", type=("build", "run"))
 	depends_on("r-future", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
@@ -33,4 +33,4 @@ class RSctransform(RPackage):
 	depends_on("r-gridextra", type=("build", "run"))
 	depends_on("r-matrixstats", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
-	depends_on("r-rcpp@0.11.0:", type=("build", "run"))
+	depends_on("r-rcpp@0.11:", type=("build", "run"))

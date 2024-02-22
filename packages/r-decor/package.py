@@ -7,17 +7,18 @@ from spack.package import *
 
 
 class RDecor(RPackage):
-    """Retrieve Code Decorations
-    
-    Retrieves code comment decorations for C++ languages of the form '\\ [[xyz]]', which are used for automated wrapping of C++ functions.
-    """
+	"""Retrieve Code Decorations
 
-    homepage = "https://github.com/r-lib/decor"
-    cran = "decor"
+	Retrieves code comment decorations for C++
+    languages of the form ' [[xyz]]', which are used for automated
+    wrapping of C++ functions.
+	"""
+	
+	homepage = "https://github.com/r-lib/decor"
+	cran = "decor" 
 
+	version("1.0.2", md5="b804d7c8cd20cfffc84e4c0bcb194e58")
 
-    version("1.0.2", sha256="2e6c0cf3804253298c43c7cc64e389cf0ef2bebdca18753a487b9861e54671f6")
-
-    depends_on("r-tibble", type=("build", "run"))
-    depends_on("r-vctrs", type=("build", "run"))
-
+	depends_on("r@3.3:", type=("build", "run"))
+	depends_on("r-tibble", type=("build", "run"))
+	depends_on("r-vctrs@0.5:", type=("build", "run"))

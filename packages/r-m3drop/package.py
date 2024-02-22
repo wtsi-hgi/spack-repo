@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RM3drop(RPackage):
 	"""Michaelis-Menten Modelling of Dropouts in single-cell RNASeq
 
@@ -14,8 +14,9 @@ class RM3drop(RPackage):
 	
 	homepage = "https://github.com/tallulandrews/M3Drop"
 	bioc = "M3Drop" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/M3Drop_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/M3Drop/M3Drop_1.28.0.tar.gz"]
 
-	version("1.28.0", commit="6201a7cd2a49db4e9c14fc98e0f39a15a6c3acc1")
+	version("1.28.0", md5="ad347f93f1a297543e7ab0e74437dd4d")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-numderiv", type=("build", "run"))

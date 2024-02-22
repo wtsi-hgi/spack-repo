@@ -5,6 +5,7 @@
 
 from spack.package import *
 
+
 class RRcpparmadillo(RPackage):
 	"""'Rcpp' Integration for the 'Armadillo' Templated Linear Algebra Library.
 
@@ -22,8 +23,7 @@ class RRcpparmadillo(RPackage):
 
 	cran = "RcppArmadillo"
 
-	version("0.12.6.4.0", md5="8c3706b4f41459eff25a0c4c0139bddc")
+	version("0.12.8.0.0", md5="e53d861655e764df0f7d6ea8f965a9c7")
 
-	depends_on("r@3.3.0:", type=("build", "run"))
-	depends_on("r-rcpp@0.11.0:", type=("build", "run"))
+	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

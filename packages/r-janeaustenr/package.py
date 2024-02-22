@@ -5,19 +5,19 @@
 
 from spack.package import *
 
+
 class RJaneaustenr(RPackage):
-    """Full texts for Jane Austen's 6 completed novels, ready for text analysis. """
+	"""Jane Austen's Complete Novels
 
-    homepage = "https://github.com/juliasilge/janeaustenr"
-    cran = "janeaustenr"
+	Full texts for Jane Austen's 6 completed novels, ready for
+    text analysis. These novels are "Sense and Sensibility", "Pride and
+    Prejudice", "Mansfield Park", "Emma", "Northanger Abbey", and
+    "Persuasion".
+	"""
+	
+	homepage = "https://github.com/juliasilge/janeaustenr"
+	cran = "janeaustenr" 
 
-    version("1.0.0", sha256="b4c32ee1395ee4a8efe714c535c0fe578b0dbf5f3bb85b41fa5cc87569b8e8aa")
-    version("0.1.5", sha256="992f6673653daf7010fe176993a01cd4127d9a88be428da8da7a28241826d6f3")
-    version("0.1.4", sha256="318125445be20af3f2d17c384eec0c27b702d0e8c0823af41b0433cd1449b3fb")
-    version("0.1.3", sha256="eaf5a1bd2ca1f8976bd4ca4359ee1d2cbc86453a1291bb7cca849e6fd3ba5fde")
-    version("0.1.2", sha256="7078343e1e41ae56e7f18346aef0ff0e6c2826794f183111f48fb979fb9bb368")
-    version("0.1.1", sha256="6e2091d8f595ade2593aea5ccb721e01ff35d399496ba7318b9d0e73674162b4")
-    version("0.1.0", sha256="1edb97c1dc8f9f5a111883125bf214daf7866ea2ea64fca5c4d6fa63a984ea77")
+	version("1.0.0", md5="1e7274a698306174dd9c405b4043ec71")
 
-    depends_on("r-dplyr", type=("build", "run"))
-    depends_on("r-testthat", type=("build", "run"))
+	depends_on("r@3.5:", type=("build", "run"))

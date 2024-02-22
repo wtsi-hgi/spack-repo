@@ -15,8 +15,9 @@ class RSinglecellexperiment(RPackage):
 	along with the usual metadata for genes and libraries."""
 
 	bioc = "SingleCellExperiment"
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SingleCellExperiment_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SingleCellExperiment/SingleCellExperiment_1.24.0.tar.gz"]
 
-	version("1.24.0", commit="2fd8e495dabb35e8870d661e7fe6da032f47bc71")
+	version("1.24.0", md5="ef057b77f40efba992f311486e83448b")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

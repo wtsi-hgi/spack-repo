@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RMonocle(RPackage):
 	"""Clustering, differential expression, and trajectory analysis for single- cell RNA-Seq
 
@@ -13,22 +13,24 @@ class RMonocle(RPackage):
 	"""
 	
 	bioc = "monocle" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/monocle_2.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/monocle/monocle_2.30.0.tar.gz"]
 
-	version("2.30.0", commit="92ad7db743ea6f742bf5527582029505b3f6fe6c")
+	version("2.30.0", md5="8b3a3d5cd2698b4cef4396c388250658")
 
-	depends_on("r@2.10.0:", type=("build", "run"))
-	depends_on("r-matrix@1.2-6:", type=("build", "run"))
+	depends_on("r@2.10:", type=("build", "run"))
+	depends_on("r-matrix@1.2.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-ggplot2@1.0.0:", type=("build", "run"))
-	depends_on("r-vgam@1.0-6:", type=("build", "run"))
+	depends_on("r-ggplot2@1:", type=("build", "run"))
+	depends_on("r-vgam@1.0.6:", type=("build", "run"))
 	depends_on("r-ddrtree@0.1.4:", type=("build", "run"))
 	depends_on("r-igraph@1.0.1:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))
+	depends_on("r-hsmmsinglecell@0.101.5:", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))
 	depends_on("r-combinat", type=("build", "run"))
 	depends_on("r-fastica", type=("build", "run"))
-	depends_on("r-irlba@2.0.0:", type=("build", "run"))
+	depends_on("r-irlba@2:", type=("build", "run"))
 	depends_on("r-matrixstats", type=("build", "run"))
 	depends_on("r-rtsne", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
@@ -37,7 +39,6 @@ class RMonocle(RPackage):
 	depends_on("r-limma", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-qlcmatrix", type=("build", "run"))
 	depends_on("r-pheatmap", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-proxy", type=("build", "run"))
@@ -45,5 +46,5 @@ class RMonocle(RPackage):
 	depends_on("r-viridis", type=("build", "run"))
 	depends_on("r-biocviews", type=("build", "run"))
 	depends_on("r-rann@2.5:", type=("build", "run"))
-	depends_on("r-rcpp@0.12.0:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("r-qlcmatrix", type=("build", "link", "run"))

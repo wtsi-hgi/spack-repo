@@ -18,3 +18,4 @@ class RInvgamma(RPackage):
 	cran = "invgamma" 
 
 	version("1.1", md5="d47d0e0a48879a43e135e8e98f10ecee")
+

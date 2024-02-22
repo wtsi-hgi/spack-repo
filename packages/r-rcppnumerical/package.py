@@ -7,22 +7,17 @@ from spack.package import *
 
 
 class RRcppnumerical(RPackage):
-    """'Rcpp' Integration for Numerical Computing Libraries
-    
-    A collection of open source libraries for numerical computing
+	"""'Rcpp' Integration for Numerical Computing Libraries
+
+	A collection of open source libraries for numerical computing
     (numerical integration, optimization, etc.) and their integration with
     'Rcpp'.
-    """
+	"""
+	
+	homepage = "https://github.com/yixuan/RcppNumerical"
+	cran = "RcppNumerical" 
 
-    homepage = "https://cran.r-project.org/web/packages/RcppNumerical"
-    
-    cran = "RcppNumerical"
+	version("0.6-0", md5="df7acef7a75638390c3024851ba2e4d5")
 
-    # versions
-    version("0.5-0", md5="4eeb679b306e9a464f2082e7ec7f2334")
-    
-
-    # dependencies
-    depends_on("r-rcpp", type=('build', 'run'))
-    depends_on("r-rcppeigen", type=('build', 'run'))
-    
+	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("r-rcppeigen", type=("build", "run"))

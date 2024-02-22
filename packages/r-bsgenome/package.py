@@ -13,9 +13,9 @@ class RBsgenome(RPackage):
 	Infrastructure shared by all the Biostrings-based genome data packages."""
 
 	bioc = "BSgenome"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BSgenome_1.70.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BSgenome/BSgenome_1.70.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BSgenome_1.70.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BSgenome/BSgenome_1.70.2.tar.gz"]
 
-	version("1.70.1", md5="a94697b953c4fc9bb0ba15daf35a884d")
+	version("1.70.2", md5="6a77e5c7815ff39c5942a4d34c05a105")
 
 	depends_on("r@2.8:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.13.8:", type=("build", "run"))

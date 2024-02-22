@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RWebdriver(RPackage):
 	"""'WebDriver' Client for 'PhantomJS'
 
@@ -20,9 +20,9 @@ class RWebdriver(RPackage):
 
 	version("1.0.6", md5="1e6bad48d7066af49789e08843ea875b")
 
-	depends_on("r-callr@3.4.0:", type=("build", "run"))
+	depends_on("r-callr@3.4:", type=("build", "run"))
 	depends_on("r-base64enc", type=("build", "run"))
-	depends_on("r-curl@2.0:", type=("build", "run"))
+	depends_on("r-curl@2:", type=("build", "run"))
 	depends_on("r-debugme", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

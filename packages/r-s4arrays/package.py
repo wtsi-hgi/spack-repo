@@ -7,23 +7,21 @@ from spack.package import *
 
 
 class RS4arrays(RPackage):
-    """The S4Arrays package defines the Array virtual class to be extended by other S4 classes that wish to implement a container with an array-like semantic."""
+	"""Foundation of array-like containers in Bioconductor
 
-    homepage = "https://github.com/Bioconductor/S4Arrays"
+	The S4Arrays package defines the Array virtual class to be extended by other S4 classes that wish to implement a container with an array-like semantic. It also provides: (1) low-level functionality meant to help the developer of such container to implement basic operations like display, subsetting, or coercion of their array-like objects to an ordinary matrix or array, and (2) a framework that facilitates block processing of array-like objects (typically on-disk objects).
+	"""
+	
+	homepage = "https://bioconductor.org/packages/S4Arrays"
+	bioc = "S4Arrays" 
+	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/S4Arrays_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/S4Arrays/S4Arrays_1.2.0.tar.gz"]
 
-    #git = "https://github.com/Bioconductor/S4Arrays"
-    #version("1.3.3", commit="34fadf9")
+	version("1.2.0", md5="c77474b839251d19d31708831de3c1bf")
 
-    bioc = "S4Arrays"
-    url = "https://bioconductor.org/packages/release/bioc/src/contrib/S4Arrays_1.2.0.tar.gz"
-
-    version("1.2.0", md5="c77474b839251d19d31708831de3c1bf")
-
-    depends_on("r@4.3.0:", type=("build", "run"))
-    depends_on("r-matrix", type=("build", "run"))
-    depends_on("r-abind", type=("build", "run"))
-    depends_on("r-biocgenerics", type=("build", "run"))
-    depends_on("r-s4vectors", type=("build", "run"))
-    depends_on("r-iranges", type=("build", "run"))
-    depends_on("r-crayon", type=("build", "run"))
- 
+	depends_on("r@4.3:", type=("build", "run"))
+	depends_on("r-matrix", type=("build", "run"))
+	depends_on("r-abind", type=("build", "run"))
+	depends_on("r-biocgenerics@0.45.2:", type=("build", "run"))
+	depends_on("r-s4vectors", type=("build", "run"))
+	depends_on("r-iranges", type=("build", "run"))
+	depends_on("r-crayon", type=("build", "run"))

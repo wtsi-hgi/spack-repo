@@ -5,13 +5,15 @@
 
 from spack.package import *
 
+
 class RProfmem(RPackage):
-    """Simple Memory Profiling for R
-    
-    A simple and light-weight API for memory profiling of R expressions. The profiling is built on top of R's built-in memory profiler ('utils::Rprofmem()'), which records every memory allocation done by R (also native code).
-    """
+	"""Simple Memory Profiling for R
 
-    homepage = "https://github.com/HenrikBengtsson/profmem"
-    cran = "profmem"
+	A simple and light-weight API for memory profiling of R expressions.  The profiling is built on top of R's built-in memory profiler ('utils::Rprofmem()'), which records every memory allocation done by R (also native code).
+	"""
+	
+	homepage = "https://github.com/HenrikBengtsson/profmem"
+	cran = "profmem" 
 
-    version("0.6.0", sha256="745ca9b22a8de3cda4374be6e2454e549742a3b72ff02c8894c972178192e63d")
+	version("0.6.0", md5="f67828b0287e8ca8d244982cc6c171e4")
+

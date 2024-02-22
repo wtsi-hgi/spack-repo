@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RDbscan(RPackage):
 	"""Density-Based Spatial Clustering of Applications with Noise
 (DBSCAN) and Related Algorithms
@@ -25,7 +25,6 @@ class RDbscan(RPackage):
 	homepage = "https://github.com/mhahsler/dbscan"
 	cran = "dbscan" 
 
-	version("1.1-11", md5="5ea8954540e20586e72890099e4ce214")
+	version("1.1-12", md5="ab7a1582e71e371246c974519361e959")
 
-	depends_on("r-rcpp@1.0.0:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

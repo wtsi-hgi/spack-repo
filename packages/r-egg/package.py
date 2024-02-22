@@ -5,18 +5,19 @@
 
 from spack.package import *
 
+
 class REgg(RPackage):
-    """Miscellaneous functions to help customise 'ggplot2' objects."""
+	"""Extensions for 'ggplot2': Custom Geom, Custom Themes, Plot
+Alignment, Labelled Panels, Symmetric Scales, and Fixed Panel
+Size
 
-    cran = "egg"
+	Miscellaneous functions to help customise 'ggplot2' objects. High-level functions are provided to post-process 'ggplot2' layouts and allow alignment between plot panels, as well as setting panel sizes to fixed values. Other functions include a custom 'geom', and helper functions to enforce symmetric scales or add tags to facetted plots.
+	"""
+	
+	cran = "egg" 
 
-    version("0.4.5", sha256="15c8ba7cf2676eb0460de7e5dfbc89fc3175ac22a8869cfd44d66d156fd6c7bb")
-    version("0.4.2", sha256="deda008e8aabce9bfbb50b725f390f28a50fb54962f5cc754d45760745461846")
-    version("0.4.0", sha256="b6dab7fdab4154f3877f55807a138f63d5941bff1ceb9e3b32bd34b9b920f187")
-    version("0.2.0", sha256="b29c954739ce42ab498619ed9ae4c637400cc2ca70b39e23e5ef4f7597ed660e")
+	version("0.4.5", md5="5092b6f00723cee6c47d923780cc781b")
 
-    depends_on("r-gridextra@2.3:", type=("build", "run"))
-    depends_on("r-ggplot2", type=("build", "run"))
-    depends_on("r-gtable", type=("build", "run"))
-    depends_on("r-knitr", type=("build", "run"))
-    depends_on("r-png", type=("build", "run"))
+	depends_on("r-gridextra@2.3:", type=("build", "run"))
+	depends_on("r-ggplot2", type=("build", "run"))
+	depends_on("r-gtable", type=("build", "run"))

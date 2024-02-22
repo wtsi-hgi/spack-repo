@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RClustree(RPackage):
 	"""Visualise Clusterings at Different Resolutions
 
@@ -26,7 +26,7 @@ class RClustree(RPackage):
 	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-ggplot2@3.4.0:", type=("build", "run"))
+	depends_on("r-ggplot2@3.4:", type=("build", "run"))
 	depends_on("r-viridis", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-tidygraph", type=("build", "run"))

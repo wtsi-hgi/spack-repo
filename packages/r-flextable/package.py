@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RFlextable(RPackage):
 	"""Functions for Tabular Reporting
 
@@ -35,5 +35,5 @@ class RFlextable(RPackage):
 	depends_on("r-officer@0.6.2:", type=("build", "run"))
 	depends_on("r-gdtools@0.3.3:", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))
-	depends_on("r-data-table@1.13.0:", type=("build", "run"))
-	depends_on("r-uuid@0.1-4:", type=("build", "run"))
+	depends_on("r-data-table@1.13:", type=("build", "run"))
+	depends_on("r-uuid@0.1.4:", type=("build", "run"))

@@ -2,10 +2,10 @@
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-	
+
 from spack.package import *
-	
-			
+
+
 class RFormulaTools(RPackage):
 	"""Programmatic Utilities for Manipulating Formulas, Expressions,
 Calls, Assignments and Other R Objects
@@ -23,5 +23,5 @@ Calls, Assignments and Other R Objects
 
 	version("1.7.1", md5="ab6ac9a593b99ef94148b2c908abc07d")
 
-	depends_on("r@3.0.0:", type=("build", "run"))
-	depends_on("r-operator-tools@1.4.0:", type=("build", "run"))
+	depends_on("r@3:", type=("build", "run"))
+	depends_on("r-operator-tools@1.4:", type=("build", "run"))
