@@ -9,9 +9,9 @@ class PyScenicplus(PythonPackage):
     """SCENIC+ is a python package to build gene regulatory networks (GRNs) using combined or separate single-cell gene expression (scRNA-seq) and single-cell chromatin accessibility (scATAC-seq) data."""
 
     homepage = "https://scenicplus.readthedocs.io/"
-    url = "https://github.com/aertslab/scenicplus/archive/refs/tags/v1.0.0.tar.gz"
+    git = "https://github.com/aertslab/scenicplus.git"
 
-    version("1.0.0", sha256="99a1ea2be3708a10e49413fb8518e7a9bcb7363c761ee82384398742e084b7ac")
+    version("1.0.0", tag="v1.0.0")
 
     depends_on("py-pandas@1.5:", type=("build", "run"))
     depends_on("py-numpy", type=("build", "run"))
