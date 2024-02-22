@@ -5,7 +5,6 @@
 
 from spack.package import *
 
-
 class Xmlto(AutotoolsPackage):
     """Utility xmlto is a simple shell script for converting XML files to various
     formats. It serves as easy to use command line frontend to make fine output
@@ -17,7 +16,6 @@ class Xmlto(AutotoolsPackage):
 
     version("0.0.28", sha256="2f986b7c9a0e9ac6728147668e776d405465284e13c74d4146c9cbc51fd8aad3")
 
-    # FIXME: missing a lot of dependencies
     depends_on("docbook-xsl", type=("build", "run"))
     depends_on("libxml2", type=("build", "run"))  # xmllint
     depends_on("libxslt", type=("build", "run"))  # xsltconf

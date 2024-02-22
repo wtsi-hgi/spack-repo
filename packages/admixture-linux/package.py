@@ -8,7 +8,6 @@ from spack.package import *
 class AdmixtureLinux(Package):
     """ADMIXTURE is a software tool for maximum likelihood estimation of individual ancestries from multilocus SNP genotype datasets. It uses the same statistical model as STRUCTURE but calculates estimates much more rapidly using a fast numerical optimization algorithm. """
 
-    # FIXME: Add a proper url for your package's homepage here.
     homepage = "https://dalexander.github.io/admixture/"
     url = "https://dalexander.github.io/admixture/binaries/admixture_linux-1.3.0.tar.gz"
 

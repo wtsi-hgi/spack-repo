@@ -8,7 +8,6 @@ from spack.package import *
 class PySklearnCrfsuite(PythonPackage):
     """sklearn-crfsuite is a thin CRFsuite (python-crfsuite) wrapper which provides interface simlar to scikit-learn. """
 
-    # FIXME: Add a proper url for your package's homepage here.
     homepage = "https://github.com/TeamHG-Memex/sklearn-crfsuite"
     pypi = "sklearn-crfsuite/sklearn-crfsuite-0.3.6.tar.gz"
 

@@ -8,7 +8,6 @@ from spack.package import *
 class PyLimixPlot(PythonPackage):
     """Plotting library for genetics."""
 
-    # FIXME: Add a proper url for your package's homepage here.
     homepage = "https://github.com/limix/limix-plot"
     pypi = "limix-plot/limix-plot-0.1.2.tar.gz"
 

@@ -8,7 +8,6 @@ from spack.package import *
 class PerlBioBigfile(PerlPackage):
     """Bio::DB::BigFile -- Low-level interface to BigWig & BigBed files."""
 
-    # FIXME: Add a proper url for your package's homepage here.
     homepage = "https://metacpan.org/pod/Bio::DB::BigFile"
     url = "https://cpan.metacpan.org/authors/id/L/LD/LDS/Bio-BigFile-1.07.tar.gz"
 

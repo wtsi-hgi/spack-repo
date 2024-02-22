@@ -9,7 +9,6 @@ from spack.package import *
 class KentGit(MakefilePackage):
     """Entire source tree for the UCSC Genome Browser Group's suite of biological analysis and web display programs as well as some of Jim Kent's own tools."""
 
-    # FIXME: Add a proper url for your package's homepage here.
     homepage = "https://github.com/ucscGenomeBrowser/kent"
     git = "https://github.com/ucscGenomeBrowser/kent/"
     
