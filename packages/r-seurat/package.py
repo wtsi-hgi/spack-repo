@@ -20,6 +20,7 @@ class RSeurat(RPackage):
 	cran = "Seurat"
 
 	version("5.0.1", md5="3965b1ee0bdc7f005d250a3dd429bcc3")
+	version("4.4.0", sha256="0f17df9597642cfc1db4d8718f0b59ebab9fbed328b1f885f42ee85ea0dcb4dd")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-seuratobject@5:", type=("build", "run"))
