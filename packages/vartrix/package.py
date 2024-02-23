@@ -29,4 +29,5 @@ class Vartrix(Package):
 
         cargo("build", "--release")
 
+        mkdirp(prefix.bin)
         install("target/release/vartrix", prefix.bin)
