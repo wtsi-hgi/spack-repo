@@ -30,6 +30,3 @@ class Vartrix(Package):
         cargo("build", "--release")
 
         install("target/release/vartrix", prefix.bin)
-
-    def setup_run_environment(self, env):
-        env.prepend_path("PATH", self.prefix.bin)
