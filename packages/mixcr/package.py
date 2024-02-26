@@ -31,3 +31,6 @@ class Mixcr(Package):
 
         install("mixcr", prefix.opt.mixcr)
         install("mixcr.jar", prefix.opt.mixcr)
+
+    def setup_run_environment(self, env):
+        env.prepend_path("PATH", self.prefix.opt/mixcr)
