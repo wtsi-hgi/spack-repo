@@ -13,14 +13,13 @@ class BoltLmm(MakefilePackage):
 
     version("2.4.1", sha256="65f13a51277a0834e03911a9e98c9325be95d1d896a3e7b8d2aa759776a78aa6")
 
-    depends_on("boost+program_options+iostreams")
+    depends_on("boost+program_options+iostreams", type=("build", "link"))
     depends_on("nlopt+cxx")
     depends_on("intel-oneapi-mkl")
-    depends_on("zlib")
-    depends_on("zstd")
-    depends_on("glibc")
-    depends_on("gcc")
-    depends_on("pkg-config")
+    depends_on("zlib", type=("build", "link"))
+    depends_on("zstd", type=("build", "link"))
+    depends_on("glibc", type=("build", "link"))
+    depends_on("gcc", type=("build", "link"))
 
     def patch(self):
         filter_file("BOOST_INSTALL_DIR = /home/pl88/boost_1_58_0/install", "BOOST_INSTALL_DIR = " + self.spec["boost"].prefix, "src/Makefile", string=True)
