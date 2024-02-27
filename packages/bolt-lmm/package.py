@@ -18,7 +18,7 @@ class BoltLmm(MakefilePackage):
     depends_on("intel-oneapi-mkl")
     depends_on("zlib", type=("build", "link"))
     depends_on("zstd", type=("build", "link"))
-    depends_on("glibc", type=("build", "link"))
+    depends_on("glibc", type=("build", "link", "run"))
     depends_on("gcc", type=("build", "link"))
 
     def patch(self):
