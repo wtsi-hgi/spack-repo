@@ -52,5 +52,6 @@ class PyOpenfold(PythonPackage):
    
     #depends_on("awscli", type=("build", "run"))
     #depends_on("py-modelcif@0.7", type=("build", "run"))
+    depends_on("py-modelcif", type=("build", "run"))
 
     depends_on("py-dllogger", type=("build", "run"))
