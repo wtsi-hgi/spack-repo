@@ -14,16 +14,16 @@ class BoltLmm(MakefilePackage):
     version("2.4.1", sha256="65f13a51277a0834e03911a9e98c9325be95d1d896a3e7b8d2aa759776a78aa6")
 
     depends_on("boost+program_options+iostreams", type=("build", "link"))
-    depends_on("nlopt+cxx")
+    depends_on("nlopt+cxx", type=("build", "link"))
     depends_on("intel-oneapi-mkl")
     depends_on("zlib", type=("build", "link"))
     depends_on("zstd", type=("build", "link"))
     depends_on("glibc", type=("build", "link", "run"))
-    depends_on("gcc", type=("build", "link"))
+    depends_on("gcc@12.3.0", type=("build", "link", "run"))
 
     def patch(self):
         filter_file("BOOST_INSTALL_DIR = /home/pl88/boost_1_58_0/install", "BOOST_INSTALL_DIR = " + self.spec["boost"].prefix, "src/Makefile", string=True)
-        filter_file("NLOPT_INSTALL_DIR = /n/groups/price/poru/HSPH_SVN/src/BOLT-LMM/nlopt-2.4.2", "", "src/Makefile", string=True)
+        filter_file("NLOPT_INSTALL_DIR = /n/groups/price/poru/HSPH_SVN/src/BOLT-LMM/nlopt-2.4.2", "NLOPT_INSTALL_DIR = ", "src/Makefile", string=True)
         filter_file("INTELROOT = /n/groups/price/poru/external_software/intel_mkl_2019u4", "INTELROOT = " + self.spec["intel-oneapi-mkl"].prefix, "src/Makefile", string=True)
         filter_file("ZLIB_STATIC_DIR = /n/groups/price/poru/external_software/zlib/zlib-1.2.11", "ZLIB_STATIC_DIR = " + self.spec["zlib"].prefix.include, "src/Makefile", string=True)
         filter_file("LIBSTDCXX_STATIC_DIR = /n/groups/price/poru/external_software/libstdc++/usr/lib/gcc/x86_64-redhat-linux/4.8.5/", "LIBSTDCXX_STATIC_DIR = " + self.spec["gcc"].prefix.lib64, "src/Makefile", string=True)
@@ -32,6 +32,8 @@ class BoltLmm(MakefilePackage):
         filter_file("CC = icpc", "CC = g++", "src/Makefile", string=True)
 
         filter_file("-llapack", "-lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lm", "src/Makefile", string=True)
+
+        filter_file("LPATHS += -L${ZSTD_DIR}", "LPATHS += -L${ZSTD_DIR} -L" + self.spec["glibc"].prefix.lib + " -L" + self.spec["gcc"].prefix.lib64, "src/Makefile", string=True)
 
     def setup_build_environment(self, env):
         env.set("CPLUS_INCLUDE_PATH", self.spec["zlib"].prefix.include + ":" + self.spec["zstd"].prefix.include + ":" + self.spec["nlopt"].prefix.include)
