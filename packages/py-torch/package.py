@@ -145,7 +145,6 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
 
     # pyproject.toml
     depends_on("py-setuptools", type=("build"))
-    depends_on("py-setuptools@58.2.0", type=("build"), when="@1.10:1.11")
     depends_on("py-astunparse", when="@1.13:", type=("build", "run"))
     depends_on("py-numpy@1.16.6:", type=("build", "run"))
     depends_on("ninja@1.5:", when="@1.1:", type="build")
@@ -453,6 +452,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         if "@1.10.0" in self.spec:
             filter_file("from setuptools import distutils", "from distutils.version import LooseVersion", "tools/setup_helpers/cmake.py", string=True)
             filter_file("distutils.version.LooseVersion", "LooseVersion", "tools/setup_helpers/cmake.py", string=True)
+            filter_file("#include <list>", "#include <list>\n#include <thread>", "third_party/ideep/mkl-dnn/src/common/primitive_cache.cpp", string=True)
 
     def setup_build_environment(self, env):
         """Set environment variables used to control the build.
