@@ -12,7 +12,7 @@ class PyMochi(PythonPackage):
     homepage = "https://github.com/lehner-lab/MoCHI"
     git = "https://github.com/lehner-lab/MoCHI"
 
-    version("0.9", tag="v0.9")
+    version("1.0", tag="v1.0")
 
     depends_on("python@3.9.9", type=("build", "run"))
 
@@ -24,7 +24,8 @@ class PyMochi(PythonPackage):
     depends_on("py-matplotlib@3.5.1", type=("build", "run"))
     depends_on("py-numpy@1.21.2", type=("build", "run"))
     depends_on("py-pyreadr@0.4.4", type=("build", "run"))
-    depends_on("py-torch@1.10.1", type=("build", "run"))
+    depends_on("py-torch@1.10.0", type=("build", "run"))
+    #depends_on("py-torch@1.10.1", type=("build", "run"))
     depends_on("py-scikit-learn@1.0.2", type=("build", "run"))
     depends_on("py-scipy@1.8.0", type=("build", "run"))
     depends_on("py-seaborn@0.11.2", type=("build", "run"))
