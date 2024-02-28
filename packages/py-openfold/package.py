@@ -50,7 +50,8 @@ class PyOpenfold(PythonPackage):
     depends_on("py-pytorch-lightning@1.5.3", type=("build", "run"))
     depends_on("py-wandb@0.13.9", type=("build", "run"))
    
-    #depends_on("awscli", type=("build", "run"))
+    depends_on("awscli", type=("build", "run"))
+    
     #depends_on("py-modelcif@0.7", type=("build", "run"))
     depends_on("py-modelcif", type=("build", "run"))
 

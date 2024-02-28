@@ -53,4 +53,4 @@ class PyEsmfold(PythonPackage):
         
     depends_on("py-dllogger", type=("build", "run"))
     depends_on("py-openfold", type=("build", "run"))
-
+    depends_on("py-modelcif", type=("build", "run"))
