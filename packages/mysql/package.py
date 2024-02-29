@@ -87,7 +87,7 @@ class Mysql(CMakePackage):
     # Each version of MySQL requires a specific version of boost
     # See BOOST_PACKAGE_NAME in cmake/boost.cmake
     # 8.0.35
-    depends_on("boost@1.77.0 cxxstd=17", type="build", when="@8.0.35 cxxstd=17")
+    depends_on("boost@1.77.0 cxxstd=17", type="build", when="@8.0.32:8.0.35 cxxstd=17")
     # 8.0.29
     depends_on("boost@1.77.0 cxxstd=98", type="build", when="@8.0.29 cxxstd=98")
     depends_on("boost@1.77.0 cxxstd=11", type="build", when="@8.0.29 cxxstd=11")
