@@ -16,8 +16,7 @@ class Mysql(CMakePackage):
     homepage = "https://www.mysql.com/"
     url = "https://dev.mysql.com/get/Downloads/MySQL-8.0/mysql-8.0.15.tar.gz"
 
-    #version("8.0.35", sha256="917c5ed38704e99211185ce4be24e33a8c19c91241ed73af4181a6f38d1574c2")
-    version("8.0.32", sha256="1f0d92a237898244716dd581f799356e073c2da63c3b2e4a01e1032cbed50e28")
+    version("8.0.35", sha256="917c5ed38704e99211185ce4be24e33a8c19c91241ed73af4181a6f38d1574c2")
     version("8.0.29", sha256="512170fa6f78a694d6f18d197e999d2716ee68dc541d7644dd922a3663407266")
     version("8.0.19", sha256="a62786d67b5e267eef928003967b4ccfe362d604b80f4523578e0688f5b9f834")
     version("8.0.18", sha256="4cb39a315298eb243c25c53c184b3682b49c2a907a1d8432ba0620534806ade8")
@@ -87,7 +86,7 @@ class Mysql(CMakePackage):
     # Each version of MySQL requires a specific version of boost
     # See BOOST_PACKAGE_NAME in cmake/boost.cmake
     # 8.0.35
-    depends_on("boost@1.77.0 cxxstd=17", type="build", when="@8.0.32:8.0.35 cxxstd=17")
+    depends_on("boost@1.77.0 cxxstd=17", type="build", when="@8.0.35 cxxstd=17")
     # 8.0.29
     depends_on("boost@1.77.0 cxxstd=98", type="build", when="@8.0.29 cxxstd=98")
     depends_on("boost@1.77.0 cxxstd=11", type="build", when="@8.0.29 cxxstd=11")
@@ -204,7 +203,7 @@ class Mysql(CMakePackage):
         copy(dtrace, dtrace_copy)
         filter_file(
             "^#!/usr/bin/python",
-            "#!/usr/bin/env {0}".format(os.path.basename(self.spec["python"].command)),
+            "#!/usr/bin/env {0}".format(os.path.basename(str(self.spec["python"].command))),
             dtrace_copy,
         )
         # To have our own copy of dtrace in PATH, we need to
