@@ -26,5 +26,3 @@ class PyPandasSchema(PythonPackage):
 	depends_on("py-packaging", type=("build", "run"))
 	depends_on("py-pandas", type=("build", "run"))
 	depends_on("py-numpy", type=("build", "run"))
-
-# {'numpy': ['0.1.0', '0.2.0', '0.2.1', '0.3.0', '0.3.1', '0.3.2', '0.3.3', '0.3.4', '0.3.5', '0.3.6'], 'pandas': ['0.1.0', '0.2.0', '0.2.1', '0.3.0', '0.3.1', '0.3.2', '0.3.3'], 'pandas(>=0.19)': ['0.3.4', '0.3.5', '0.3.6'], 'packaging': ['0.3.6']}

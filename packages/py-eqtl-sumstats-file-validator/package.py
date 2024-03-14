@@ -13,21 +13,6 @@ class PyEqtlSumstatsFileValidator(PythonPackage):
 
     version("2020-04-14", commit="66d66db27ddd8b002e39b2a28d4dc271dbd01498")
 
-    # FIXME: Only add the python/pip/wheel dependencies if you need specific versions
-    # or need to change the dependency type. Generic python/pip/wheel dependencies are
-    # added implicity by the PythonPackage base class.
-    # depends_on("python@2.X:2.Y,3.Z:", type=("build", "run"))
-    # depends_on("py-pip@X.Y:", type="build")
-    # depends_on("py-wheel@X.Y:", type="build")
-
-    # FIXME: Add a build backend, usually defined in pyproject.toml. If no such file
-    # exists, use setuptools.
-    # depends_on("py-setuptools", type="build")
-    # depends_on("py-hatchling", type="build")
-    # depends_on("py-flit-core", type="build")
-    # depends_on("py-poetry-core", type="build")
-
-    # FIXME: Add additional dependencies if required.
     depends_on("py-atomicwrites@1.3.0:", type=("build", "run"))
     depends_on("py-attrs@19.1.0:", type=("build", "run"))
     depends_on("py-importlib-metadata@0.19:", type=("build", "run"))
