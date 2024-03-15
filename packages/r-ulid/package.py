@@ -35,3 +35,4 @@ Identifiers
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
