@@ -30,3 +30,4 @@ Estimation
 	depends_on("r-rcppeigen@0.3.3.3:", type=("build", "run"))
 	depends_on("r-rcppparallel@5.0.1:", type=("build", "run"))
 	depends_on("r-stanheaders@2.26:", type=("build", "run"))
+	depends_on("r-rstantools", type=("build", "link", "run"))
