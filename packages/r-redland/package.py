@@ -23,3 +23,6 @@ class RRedland(RPackage):
 
 	depends_on("r@3.1.1:", type=("build", "run"))
 	depends_on("r-roxygen2", type=("build", "run"))
+	depends_on("redland", type=("build", "run"))
+	depends_on("raptor2", type=("build", "run"))
+	depends_on("rasqal", type=("build", "run"))
