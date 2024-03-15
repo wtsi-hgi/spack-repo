@@ -29,3 +29,4 @@ class RRunjags(RPackage):
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-lattice@0.20.10:", type=("build", "run"))
 	depends_on("r-coda@0.17.1:", type=("build", "run"))
+	depends_on("jags", type=("build", "link", "run"))
