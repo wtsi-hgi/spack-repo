@@ -41,3 +41,4 @@ class REpigrahmm(RPackage):
 	depends_on("r-greylistchip", type=("build", "run"))
 	depends_on("r-pheatmap", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
