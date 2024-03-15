@@ -35,3 +35,4 @@ class RHicdoc(RPackage):
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-multihiccompare", type=("build", "run"))
 	depends_on("r-genomeinfodb", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
