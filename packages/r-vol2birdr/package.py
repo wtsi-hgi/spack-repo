@@ -28,3 +28,4 @@ class RVol2birdr(RPackage):
 	depends_on("gsl", type=("build", "link", "run"))
 	depends_on("hdf5", type=("build", "link", "run"))
 	depends_on("proj", type=("build", "link", "run"))
+	depends_on("bzip2", type=("build", "link", "run"))
