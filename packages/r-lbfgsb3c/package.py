@@ -23,7 +23,7 @@ optim() 'C' Interface
 	homepage = "https://nlmixr2.github.io/lbfgsb3c/"
 	cran = "lbfgsb3c" 
 
-	version("2020-3.3", md5="e9798cb8c98aaa74df84927915fe50d0")
+	version("2020-3.3", md5="e9798cb8c98aaa74df84927915fe50d0", url="https://cran.r-project.org/src/contrib/lbfgsb3c_2020-3.3.tar.gz")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp@0.12.3:", type=("build", "run"))
