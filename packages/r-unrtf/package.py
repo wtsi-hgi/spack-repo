@@ -21,3 +21,8 @@ class RUnrtf(RPackage):
 	version("1.4.5", md5="b9440c7ebde3e4cd10e30ba52589d179")
 
 	depends_on("r-sys@2:", type=("build", "run"))
+	depends_on("bzip2", type=("build", "link", "run"))
+	depends_on("iconv", type=("build", "link", "run"))
+	depends_on("icu4c", type=("build", "link", "run"))
+	depends_on("xz", type=("build", "link", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
