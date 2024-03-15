@@ -17,4 +17,4 @@ class RGlpkapi(RPackage):
 	version("1.3.4", md5="0a926d3332c28d9c0af760cb753a9c19")
 
 	depends_on("r@2.6:", type=("build", "run"))
-	depends_on("glpk@4.42:", type=("build", "link", "run"))
+	depends_on("glpk+gmp@4.42:", type=("build", "link", "run"))
