@@ -19,3 +19,4 @@ class RSpfw(RPackage):
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
+	depends_on("fftw", type=("build", "link", "run"))
