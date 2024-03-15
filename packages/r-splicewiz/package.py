@@ -63,3 +63,4 @@ class RSplicewiz(RPackage):
 	depends_on("r-rvest", type=("build", "run"))
 	depends_on("r-zlibbioc", type=("build", "run"))
 	depends_on("r-rcppprogress", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
