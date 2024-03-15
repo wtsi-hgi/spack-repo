@@ -13,7 +13,7 @@ class RLumibarnes(RPackage):
 	"""
 	
 	bioc = "lumiBarnes" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/lumiBarnes_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/lumiBarnes/lumiBarnes_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/lumiBarnes_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/lumiBarnes/lumiBarnes_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="2be75f5470fd60f9919045fc8147b613")
 

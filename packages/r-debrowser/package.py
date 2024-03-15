@@ -14,7 +14,7 @@ class RDebrowser(RPackage):
 	
 	homepage = "https://github.com/UMMS-Biocore/debrowser"
 	bioc = "debrowser" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/debrowser_1.30.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/debrowser/debrowser_1.30.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/debrowser_1.30.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/debrowser/debrowser_1.30.2.tar.gz"]
 
 	version("1.30.2", md5="002358e4e24146d0afaf63397b974ec8")
 

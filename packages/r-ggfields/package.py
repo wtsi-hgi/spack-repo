@@ -11,7 +11,7 @@ class RGgfields(RPackage):
 
 	Add vector field layers to ggplots. Ideal for visualising
     wind speeds, water currents, electric/magnetic fields, etc.
-    Accepts data.frames simple features (sf) and spatiotemporal arrays (stars)
+    Accepts data.frames, simple features (sf), and spatiotemporal arrays (stars)
     objects as input. Vector fields are depicted as arrows starting at specified
     locations, and with specified angles and radii.
 	"""
@@ -19,7 +19,7 @@ class RGgfields(RPackage):
 	homepage = "https://pepijn-devries.github.io/ggfields/"
 	cran = "ggfields" 
 
-	version("0.0.3", md5="48a7ab407a2886a99fa9aec204489624")
+	version("0.0.6", md5="e95ca8e0dc60b1144f9d7c44da03801c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr@1.1.4:", type=("build", "run"))

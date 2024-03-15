@@ -13,7 +13,7 @@ class RExpressionnormalizationworkflow(RPackage):
 	"""
 	
 	bioc = "ExpressionNormalizationWorkflow" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/ExpressionNormalizationWorkflow_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/ExpressionNormalizationWorkflow/ExpressionNormalizationWorkflow_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/ExpressionNormalizationWorkflow_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/ExpressionNormalizationWorkflow/ExpressionNormalizationWorkflow_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="183727233d55ec686fb9023a517df6a7")
 

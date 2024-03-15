@@ -13,7 +13,7 @@ class RRtnduals(RPackage):
 	"""
 	
 	bioc = "RTNduals" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RTNduals_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RTNduals/RTNduals_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RTNduals_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RTNduals/RTNduals_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="5a4f986eb1a34493a1a577ea3546fe92")
 

@@ -13,7 +13,7 @@ class RViper(RPackage):
 	"""
 	
 	bioc = "viper" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/viper_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/viper/viper_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/viper_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/viper/viper_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="0d7f13a212bc6fc5d7cf2213a1bfbdb0")
 

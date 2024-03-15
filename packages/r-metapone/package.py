@@ -13,7 +13,7 @@ class RMetapone(RPackage):
 	"""
 	
 	bioc = "metapone" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/metapone_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/metapone/metapone_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metapone_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metapone/metapone_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="d53938772148968f88fab10130dbc905")
 

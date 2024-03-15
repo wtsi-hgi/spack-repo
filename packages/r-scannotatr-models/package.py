@@ -13,7 +13,7 @@ class RScannotatrModels(RPackage):
 	"""
 	
 	bioc = "scAnnotatR.models" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/scAnnotatR.models_0.99.10.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/scAnnotatR.models/scAnnotatR.models_0.99.10.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/scAnnotatR.models_0.99.10.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/scAnnotatR.models/scAnnotatR.models_0.99.10.tar.gz"]
 
 	version("0.99.10", md5="77c6e16382645164d6413356c5ab52c5")
 

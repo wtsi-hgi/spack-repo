@@ -13,7 +13,7 @@ class RTxdbMmulattaUcscRhemac8Refgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Mmulatta.UCSC.rheMac8.refGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Mmulatta.UCSC.rheMac8.refGene_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Mmulatta.UCSC.rheMac8.refGene/TxDb.Mmulatta.UCSC.rheMac8.refGene_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Mmulatta.UCSC.rheMac8.refGene_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Mmulatta.UCSC.rheMac8.refGene/TxDb.Mmulatta.UCSC.rheMac8.refGene_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="8437e0a05ffd28b667c7b740e0db68a7")
 

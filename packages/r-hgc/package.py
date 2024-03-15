@@ -13,7 +13,7 @@ class RHgc(RPackage):
 	"""
 	
 	bioc = "HGC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HGC_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HGC/HGC_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HGC_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HGC/HGC_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="7a8ac62af3106b62952c79c162937a3c")
 

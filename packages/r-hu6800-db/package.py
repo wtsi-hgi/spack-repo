@@ -13,7 +13,7 @@ class RHu6800Db(RPackage):
 	"""
 	
 	bioc = "hu6800.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hu6800.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hu6800.db/hu6800.db_3.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hu6800.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hu6800.db/hu6800.db_3.13.0.tar.gz"]
 
 	version("3.13.0", md5="aa1cb6c107dee6d2ed1929b48aa831e9")
 

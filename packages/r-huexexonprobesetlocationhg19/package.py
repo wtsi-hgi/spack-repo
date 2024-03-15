@@ -13,9 +13,9 @@ class RHuexexonprobesetlocationhg19(RPackage):
 	"""
 	
 	bioc = "HuExExonProbesetLocationHg19" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/HuExExonProbesetLocationHg19_0.0.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/HuExExonProbesetLocationHg19/HuExExonProbesetLocationHg19_0.0.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/HuExExonProbesetLocationHg19_0.0.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/HuExExonProbesetLocationHg19/HuExExonProbesetLocationHg19_0.0.3.tar.gz"]
 
-	version("0.0.3", md5="1a3843c95c82dc71a043d902961ba33a", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/HuExExonProbesetLocationHg19_0.0.3.tar.gz")
+	version("0.0.3", md5="1a3843c95c82dc71a043d902961ba33a", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/HuExExonProbesetLocationHg19_0.0.3.tar.gz")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.8:", type=("build", "run"))

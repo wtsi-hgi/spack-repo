@@ -13,7 +13,7 @@ class RMetcirc(RPackage):
 	"""
 	
 	bioc = "MetCirc" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MetCirc_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MetCirc/MetCirc_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetCirc_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetCirc/MetCirc_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="c21a385245acf6911f5c762093ea6e0b")
 

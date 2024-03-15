@@ -14,7 +14,7 @@ class RFlowsortedCordbloodnorway450k(RPackage):
 	
 	homepage = "https://bitbucket.com/kasperdanielhansen/Illumina_CordBlood"
 	bioc = "FlowSorted.CordBloodNorway.450k" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/FlowSorted.CordBloodNorway.450k_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/FlowSorted.CordBloodNorway.450k/FlowSorted.CordBloodNorway.450k_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FlowSorted.CordBloodNorway.450k_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FlowSorted.CordBloodNorway.450k/FlowSorted.CordBloodNorway.450k_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="40016224becf643102bc3054f4e2508d")
 

@@ -13,7 +13,7 @@ class RMineica(RPackage):
 	"""
 	
 	bioc = "MineICA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MineICA_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MineICA/MineICA_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MineICA_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MineICA/MineICA_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="d08aa74cfe4d20f4ad26235e0695d555")
 

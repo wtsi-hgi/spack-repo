@@ -13,13 +13,13 @@ class RMpath(RPackage):
       Wang et al. (2015) <doi:10.1002/bimj.201400143>,
       Wang et al. (2016) <doi:10.1177/0962280214530608>,
       Wang (2021) <doi:10.1007/s11749-021-00770-2>,
-      Wang (2020) <arXiv:2010.02848>.
+      Wang (2024) <doi:10.1111/anzs.12409>.
 	"""
 	
 	homepage = "https://github.com/zhuwang46/mpath"
 	cran = "mpath" 
 
-	version("0.4-2.23", md5="cbd4020eba60f8fbd0fa67aff2c0aabc")
+	version("0.4-2.25", md5="c61fd27a157d0b2923cd48d738a02372")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))

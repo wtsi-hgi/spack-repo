@@ -14,19 +14,18 @@ class RDrugdemand(RPackage):
 	
 	cran = "drugDemand" 
 
-	version("0.1.2", md5="2a4261e0c42961c7ba42a11a2d45de93")
+	version("0.1.3", md5="b6e434e2015b88e4766849d5dbd1fda3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-dplyr@1.1:", type=("build", "run"))
 	depends_on("r-rlang@1.1:", type=("build", "run"))
 	depends_on("r-purrr@1.0.2:", type=("build", "run"))
+	depends_on("r-stringr@1.4:", type=("build", "run"))
 	depends_on("r-plotly@4.10.1:", type=("build", "run"))
 	depends_on("r-survival@2.41.3:", type=("build", "run"))
 	depends_on("r-mvtnorm@1.1.3:", type=("build", "run"))
 	depends_on("r-erify@0.4:", type=("build", "run"))
-	depends_on("r-icenreg@2.0.15:", type=("build", "run"))
-	depends_on("r-pscl@1.5.5:", type=("build", "run"))
 	depends_on("r-mass@7.3.54:", type=("build", "run"))
 	depends_on("r-nlme@3.1.153:", type=("build", "run"))
 	depends_on("r-l1pack@0.41.24:", type=("build", "run"))
@@ -34,4 +33,3 @@ class RDrugdemand(RPackage):
 	depends_on("r-foreach@1.5.2:", type=("build", "run"))
 	depends_on("r-doparallel@1.0.17:", type=("build", "run"))
 	depends_on("r-dorng@1.8.6:", type=("build", "run"))
-	depends_on("r-tictoc@1.1:", type=("build", "run"))

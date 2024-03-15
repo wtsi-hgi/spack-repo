@@ -14,7 +14,7 @@ class RWpm(RPackage):
 	
 	homepage = "https://github.com/HelBor/wpm"
 	bioc = "wpm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/wpm_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/wpm/wpm_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/wpm_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/wpm/wpm_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="44df6efb278049a19cefea84cb8a8b64")
 

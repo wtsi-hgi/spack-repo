@@ -14,7 +14,7 @@ class RAnimalcules(RPackage):
 	
 	homepage = "https://github.com/compbiomed/animalcules"
 	bioc = "animalcules" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/animalcules_1.18.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/animalcules/animalcules_1.18.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/animalcules_1.18.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/animalcules/animalcules_1.18.3.tar.gz"]
 
 	version("1.18.3", md5="eb0d7e45ea49758bec2b9f248328b1eb")
 

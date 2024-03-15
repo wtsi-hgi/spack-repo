@@ -13,7 +13,7 @@ class RIlluminahumanwgdaslv3Db(RPackage):
 	"""
 	
 	bioc = "illuminaHumanWGDASLv3.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/illuminaHumanWGDASLv3.db_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/illuminaHumanWGDASLv3.db/illuminaHumanWGDASLv3.db_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/illuminaHumanWGDASLv3.db_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/illuminaHumanWGDASLv3.db/illuminaHumanWGDASLv3.db_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="32e8e24555c16f6d0148438d4a841ab8")
 

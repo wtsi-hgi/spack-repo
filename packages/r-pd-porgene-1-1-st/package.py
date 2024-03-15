@@ -13,7 +13,7 @@ class RPdPorgene11St(RPackage):
 	"""
 	
 	bioc = "pd.porgene.1.1.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.porgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.porgene.1.1.st/pd.porgene.1.1.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.porgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.porgene.1.1.st/pd.porgene.1.1.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="3a31d325861925a7428241207c461a1d")
 

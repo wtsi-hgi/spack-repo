@@ -14,7 +14,7 @@ class RScarray(RPackage):
 	
 	homepage = "https://github.com/AbbVie-ComputationalGenomics/SCArray"
 	bioc = "SCArray" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SCArray_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SCArray/SCArray_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCArray_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCArray/SCArray_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="c777bd1f1f52dd055b83830ed6da1f77")
 

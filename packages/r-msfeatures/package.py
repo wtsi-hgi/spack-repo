@@ -14,7 +14,7 @@ class RMsfeatures(RPackage):
 	
 	homepage = "https://github.com/RforMassSpectrometry/MsFeatures"
 	bioc = "MsFeatures" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MsFeatures_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MsFeatures/MsFeatures_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsFeatures_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsFeatures/MsFeatures_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="326a08270ef7c22e636f1fed4cf569b6")
 

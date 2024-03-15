@@ -13,7 +13,7 @@ class RR3cpet(RPackage):
 	"""
 	
 	bioc = "R3CPET" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/R3CPET_1.34.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/R3CPET/R3CPET_1.34.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/R3CPET_1.34.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/R3CPET/R3CPET_1.34.1.tar.gz"]
 
 	version("1.34.1", md5="e29f7e90a8cb465d90d595a7a654856f")
 

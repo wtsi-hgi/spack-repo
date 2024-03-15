@@ -13,7 +13,7 @@ class RNugomm1a520177Db(RPackage):
 	"""
 	
 	bioc = "nugomm1a520177.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/nugomm1a520177.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/nugomm1a520177.db/nugomm1a520177.db_3.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/nugomm1a520177.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/nugomm1a520177.db/nugomm1a520177.db_3.4.0.tar.gz"]
 
 	version("3.4.0", md5="99f69ea2cbb80a79bedee99e3d726e50")
 

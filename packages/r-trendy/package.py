@@ -14,7 +14,7 @@ class RTrendy(RPackage):
 	
 	homepage = "https://github.com/rhondabacher/Trendy"
 	bioc = "Trendy" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Trendy_1.24.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Trendy/Trendy_1.24.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Trendy_1.24.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Trendy/Trendy_1.24.1.tar.gz"]
 
 	version("1.24.1", md5="00e5de9c46c116f4adc3caf3708608df")
 

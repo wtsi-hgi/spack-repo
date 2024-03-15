@@ -14,7 +14,7 @@ class RGbscleanr(RPackage):
 	
 	homepage = "https://github.com/tomoyukif/GBScleanR"
 	bioc = "GBScleanR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GBScleanR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GBScleanR/GBScleanR_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GBScleanR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GBScleanR/GBScleanR_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="f54a8356b8931c5c6dd6150a021c56cf")
 

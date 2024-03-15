@@ -13,7 +13,7 @@ class RHgu219Db(RPackage):
 	"""
 	
 	bioc = "hgu219.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hgu219.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hgu219.db/hgu219.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu219.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu219.db/hgu219.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="a4a0fd2ac170a75d8b17618615fcd7a0")
 

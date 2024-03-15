@@ -14,7 +14,7 @@ class RAssign(RPackage):
 	
 	homepage = "https://compbiomed.github.io/ASSIGN/"
 	bioc = "ASSIGN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ASSIGN_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ASSIGN/ASSIGN_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASSIGN_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASSIGN/ASSIGN_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="c03c8eedec6379aa0fac65d11377fdf8")
 

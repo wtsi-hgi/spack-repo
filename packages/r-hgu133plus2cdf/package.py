@@ -13,7 +13,7 @@ class RHgu133plus2cdf(RPackage):
 	"""
 	
 	bioc = "hgu133plus2cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hgu133plus2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hgu133plus2cdf/hgu133plus2cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu133plus2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu133plus2cdf/hgu133plus2cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="284fef2f0b777d7b53451538ddd53de3")
 

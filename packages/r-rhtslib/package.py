@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -27,7 +27,7 @@ class RRhtslib(RPackage):
 	#			 branches.
 	#			 Aborting
 	# version("1.28.0", commit='214fde2218bdbca89f1e12a30d2e081e76915aef')
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Rhtslib_2.4.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Rhtslib/Rhtslib_2.4.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rhtslib_2.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rhtslib/Rhtslib_2.4.1.tar.gz"]
 
 	version("2.4.1", md5="b7d295a694e865f4f4060c94c4bca446")
 

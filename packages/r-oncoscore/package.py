@@ -14,7 +14,7 @@ class ROncoscore(RPackage):
 	
 	homepage = "https://github.com/danro9685/OncoScore"
 	bioc = "OncoScore" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/OncoScore_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/OncoScore/OncoScore_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OncoScore_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OncoScore/OncoScore_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="5b61a8738f91d4c8ff214b38878a8564")
 

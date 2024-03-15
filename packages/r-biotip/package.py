@@ -14,7 +14,7 @@ class RBiotip(RPackage):
 	
 	homepage = "https://github.com/xyang2uchicago/BioTIP"
 	bioc = "BioTIP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BioTIP_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BioTIP/BioTIP_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioTIP_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioTIP/BioTIP_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="9a7765bd55ed7e2d7d09d4eff3b2127c")
 

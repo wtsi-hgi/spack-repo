@@ -14,7 +14,7 @@ class RVectrapolarisdata(RPackage):
 	
 	homepage = "https://github.com/julia-wrobel/VectraPolarisData"
 	bioc = "VectraPolarisData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/VectraPolarisData_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/VectraPolarisData/VectraPolarisData_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/VectraPolarisData_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/VectraPolarisData/VectraPolarisData_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="ea2006b85e374e76fbd70ca8b0819072")
 

@@ -14,7 +14,7 @@ class RMetaboannotation(RPackage):
 	
 	homepage = "https://github.com/RforMassSpectrometry/MetaboAnnotation"
 	bioc = "MetaboAnnotation" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MetaboAnnotation_1.6.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MetaboAnnotation/MetaboAnnotation_1.6.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetaboAnnotation_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetaboAnnotation/MetaboAnnotation_1.6.1.tar.gz"]
 
 	version("1.6.1", md5="fee181fc1795a1e2bde1d1e551f1a45e")
 

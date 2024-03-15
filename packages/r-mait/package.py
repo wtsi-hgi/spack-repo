@@ -13,7 +13,7 @@ class RMait(RPackage):
 	"""
 	
 	bioc = "MAIT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MAIT_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MAIT/MAIT_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MAIT_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MAIT/MAIT_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="f32e9e8e908202848634b26a5ece4d8f")
 

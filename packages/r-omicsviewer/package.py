@@ -14,7 +14,7 @@ class ROmicsviewer(RPackage):
 	
 	homepage = "https://github.com/mengchen18/omicsViewer"
 	bioc = "omicsViewer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/omicsViewer_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/omicsViewer/omicsViewer_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/omicsViewer_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/omicsViewer/omicsViewer_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="7d650ff242a133610199a574a29abfde")
 

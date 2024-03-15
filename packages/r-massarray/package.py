@@ -13,7 +13,7 @@ class RMassarray(RPackage):
 	"""
 	
 	bioc = "MassArray" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MassArray_1.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MassArray/MassArray_1.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MassArray_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MassArray/MassArray_1.54.0.tar.gz"]
 
 	version("1.54.0", md5="028fea456ce2e5b3820ad6dc0d1989c1")
 

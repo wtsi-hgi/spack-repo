@@ -10,13 +10,13 @@ class RPrrd(RPackage):
 	"""Parallel Runs of Reverse Depends
 
 	Reverse depends for a given package are queued such that multiple
- workers can run the tests in parallel.
+ workers can run the reverse-dependency tests in parallel.
 	"""
 	
 	homepage = "https://github.com/eddelbuettel/prrd"
 	cran = "prrd" 
 
-	version("0.0.5", md5="5b1a05406bf02260b5a9cc577b2f9654")
+	version("0.0.6", md5="1dccf8446ddccf7f4979855bf1a1947f")
 
 	depends_on("r-config", type=("build", "run"))
 	depends_on("r-liteq", type=("build", "run"))

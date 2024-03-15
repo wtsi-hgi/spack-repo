@@ -16,9 +16,8 @@ class RHidimda(RPackage):
         variable selection.
 	"""
 	
-	homepage = "http://www.r-project.org"
 	cran = "HiDimDA" 
 
-	version("0.2-4", md5="3b43794dbc0f3b79de77488553ab4999")
+	version("0.2-6", md5="e7afadeebd1c5025083ce027827b2844")
 
 	depends_on("r@2.10:", type=("build", "run"))

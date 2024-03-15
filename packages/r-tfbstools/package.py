@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,7 +17,7 @@ class RTfbstools(RPackage):
 	de novo motif discovery software."""
 
 	bioc = "TFBSTools"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TFBSTools_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TFBSTools/TFBSTools_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFBSTools_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFBSTools/TFBSTools_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="f2395c8153c4820e3cebb53a9eda94d6")
 

@@ -14,7 +14,7 @@ class RMmappr2data(RPackage):
 	
 	homepage = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3613585/"
 	bioc = "MMAPPR2data" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/MMAPPR2data_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/MMAPPR2data/MMAPPR2data_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MMAPPR2data_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MMAPPR2data/MMAPPR2data_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="5b4772746766de5c40448c865fa2d60d")
 

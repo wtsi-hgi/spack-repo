@@ -14,7 +14,7 @@ class RRseis(RPackage):
 	
 	cran = "RSEIS" 
 
-	version("4.1-6", md5="42648affef3f08dabfbd8a9d908fc81e")
+	version("4.2-0", md5="1e48488c5c3420d62970461cead4195f")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-rpmg", type=("build", "run"))

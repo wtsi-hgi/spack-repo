@@ -14,7 +14,7 @@ class RMetascope(RPackage):
 	
 	homepage = "https://github.com/compbiomed/metascope"
 	bioc = "MetaScope" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/MetaScope_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/MetaScope/MetaScope_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MetaScope_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MetaScope/MetaScope_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="3e9dbacc12fa3bd332773ffa95325f0b")
 

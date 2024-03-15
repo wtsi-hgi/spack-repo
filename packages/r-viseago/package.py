@@ -14,7 +14,7 @@ class RViseago(RPackage):
 	
 	homepage = "https://www.bioconductor.org/packages/release/bioc/html/ViSEAGO.html"
 	bioc = "ViSEAGO" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ViSEAGO_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ViSEAGO/ViSEAGO_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ViSEAGO_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ViSEAGO/ViSEAGO_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="90f43624392275cbfbcd026e323769b9")
 

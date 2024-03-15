@@ -19,7 +19,7 @@ class RSymengine(RPackage):
 	homepage = "https://github.com/symengine/symengine.R"
 	cran = "symengine" 
 
-	version("0.2.4", md5="248b8a9ece0f55a0e1951c11901b43bf")
+	version("0.2.6", md5="c6f52b37cdddb4ef95dbcd8b7636bc3e")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

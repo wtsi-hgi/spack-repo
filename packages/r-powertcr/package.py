@@ -13,7 +13,7 @@ class RPowertcr(RPackage):
 	"""
 	
 	bioc = "powerTCR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/powerTCR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/powerTCR/powerTCR_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/powerTCR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/powerTCR/powerTCR_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="6033da999bfcba4c2e80a45e358c3855")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RJsonify(RPackage):
 	<https://CRAN.R-project.org/package=rapidjsonr>."""
 
 	cran = "jsonify"
+
+	license("MIT")
 
 	version("1.2.2", md5="f1886cbb9d6978fea91124f4d58526a4")
 

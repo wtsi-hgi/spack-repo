@@ -14,7 +14,7 @@ class RCosmosr(RPackage):
 	
 	homepage = "https://github.com/saezlab/COSMOSR"
 	bioc = "cosmosR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cosmosR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cosmosR/cosmosR_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cosmosR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cosmosR/cosmosR_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="f1e0ed65fc63cbdf3a7936bf45e73f3e")
 

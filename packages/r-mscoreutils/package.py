@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,7 +18,7 @@ class RMscoreutils(RPackage):
 	structure within the R for Mass Spectrometry packages."""
 
 	bioc = "MsCoreUtils"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MsCoreUtils_1.14.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MsCoreUtils/MsCoreUtils_1.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsCoreUtils_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsCoreUtils/MsCoreUtils_1.14.1.tar.gz"]
 
 	version("1.14.1", md5="163cc129bc77ed033c124fed5bf7d9ca")
 

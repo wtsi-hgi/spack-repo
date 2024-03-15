@@ -9,12 +9,15 @@ from spack.package import *
 class RRd2md(RPackage):
 	"""Markdown Reference Manuals
 
-	The native R functionalities only allow PDF exports of reference manuals. This shall be extended by converting the package documentation files into markdown files and combining them into a markdown version of the package reference manual.
+	Native R only allows PDF exports of reference manuals.
+    The 'Rd2md' package converts the package documentation files into
+    markdown files and combines them into a markdown version of the package
+    reference manual.
 	"""
 	
+	homepage = "https://github.com/quantsch/rd2md"
 	cran = "Rd2md" 
 
-	version("0.0.5", md5="21b07b26cf460352767e17759a0690d8")
+	version("1.0.0", md5="41c6e2449feeed27dd05515b799f69c1")
 
 	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-knitr", type=("build", "run"))

@@ -27,7 +27,7 @@ class RTexmex(RPackage):
 	homepage = "https://github.com/harrysouthworth/texmex"
 	cran = "texmex" 
 
-	version("2.4.8", md5="fd45bdc6c105073249c59999c70c4f58")
+	version("2.4.9", md5="9027104ac602a673445b6842ad01d0ee")
 
 	depends_on("r-mvtnorm", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

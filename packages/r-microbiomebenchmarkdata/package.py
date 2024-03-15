@@ -14,7 +14,7 @@ class RMicrobiomebenchmarkdata(RPackage):
 	
 	homepage = "https://github.com/waldronlab/MicrobiomeBenchmarkData"
 	bioc = "MicrobiomeBenchmarkData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/MicrobiomeBenchmarkData_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/MicrobiomeBenchmarkData/MicrobiomeBenchmarkData_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MicrobiomeBenchmarkData_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MicrobiomeBenchmarkData/MicrobiomeBenchmarkData_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="c6c791669de95bf2dc108798770ea5be")
 

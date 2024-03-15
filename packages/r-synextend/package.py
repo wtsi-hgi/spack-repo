@@ -13,7 +13,7 @@ class RSynextend(RPackage):
 	"""
 	
 	bioc = "SynExtend" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SynExtend_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SynExtend/SynExtend_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SynExtend_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SynExtend/SynExtend_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="f7ee0b985a06dbd6040329dd264648f5")
 

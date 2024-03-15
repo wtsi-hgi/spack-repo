@@ -13,7 +13,7 @@ class RRtcgaCnv(RPackage):
 	"""
 	
 	bioc = "RTCGA.CNV" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RTCGA.CNV_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/RTCGA.CNV/RTCGA.CNV_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.CNV_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.CNV/RTCGA.CNV_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="15267c2322da59ccd344657a28d2ba6a")
 

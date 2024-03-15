@@ -18,13 +18,16 @@ class RMoodef(RPackage):
 	homepage = "https://josesamos.github.io/moodef/"
 	cran = "moodef" 
 
-	version("1.0.0", md5="79d1e8ed265d84dc8fe60145e73aa653")
+	version("1.1.0", md5="1115f51934ed0d59b1543f855bc73400")
 
 	depends_on("r-blastula", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
 	depends_on("r-magick", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-readr", type=("build", "run"))
+	depends_on("r-readxl", type=("build", "run"))
 	depends_on("r-snakecase", type=("build", "run"))
+	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
+	depends_on("r-xlsx", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))

@@ -14,7 +14,7 @@ class RBionero(RPackage):
 	
 	homepage = "https://github.com/almeidasilvaf/BioNERO"
 	bioc = "BioNERO" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BioNERO_1.10.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BioNERO/BioNERO_1.10.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioNERO_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioNERO/BioNERO_1.10.1.tar.gz"]
 
 	version("1.10.1", md5="cf8a0a4d5229ba0ff8060188e110f8f9")
 

@@ -13,7 +13,7 @@ class RMbttest(RPackage):
 	"""
 	
 	bioc = "MBttest" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MBttest_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MBttest/MBttest_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MBttest_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MBttest/MBttest_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="35c603063456aab63ffa0ebfc67a3c16")
 

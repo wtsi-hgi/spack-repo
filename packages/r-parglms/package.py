@@ -13,7 +13,7 @@ class RParglms(RPackage):
 	"""
 	
 	bioc = "parglms" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/parglms_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/parglms/parglms_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/parglms_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/parglms/parglms_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="0d6a2dc756389064b9be38e755e1a24b")
 

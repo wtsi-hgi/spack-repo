@@ -13,7 +13,7 @@ class RSoggi(RPackage):
 	"""
 	
 	bioc = "soGGi" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/soGGi_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/soGGi/soGGi_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/soGGi_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/soGGi/soGGi_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="6b8a823ad7812fdda198d38b28c00f6f")
 

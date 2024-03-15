@@ -14,7 +14,7 @@ class RBreakpointr(RPackage):
 	
 	homepage = "https://github.com/daewoooo/BreakPointR"
 	bioc = "breakpointR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/breakpointR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/breakpointR/breakpointR_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/breakpointR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/breakpointR/breakpointR_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="96dddc1e7bbd8b880a89f8f1be145e66")
 

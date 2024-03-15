@@ -14,7 +14,7 @@ class RMpoDb(RPackage):
 	
 	homepage = "https://github.com/YuLab-SMU/MPO.db"
 	bioc = "MPO.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/MPO.db_0.99.7.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/MPO.db/MPO.db_0.99.7.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MPO.db_0.99.7.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/MPO.db/MPO.db_0.99.7.tar.gz"]
 
 	version("0.99.7", md5="1f1b83d5d03d69a82ca2b9e7179b537f")
 

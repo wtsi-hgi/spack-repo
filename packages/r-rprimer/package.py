@@ -14,7 +14,7 @@ class RRprimer(RPackage):
 	
 	homepage = "https://github.com/sofpn/rprimer"
 	bioc = "rprimer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rprimer_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rprimer/rprimer_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rprimer_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rprimer/rprimer_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="f866266895669cd0e898d1ffb0df86fa")
 

@@ -13,7 +13,7 @@ class RMetahdep(RPackage):
 	"""
 	
 	bioc = "metahdep" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/metahdep_1.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/metahdep/metahdep_1.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metahdep_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metahdep/metahdep_1.60.0.tar.gz"]
 
 	version("1.60.0", md5="578b66621982372185989aa8559f8293")
 

@@ -13,7 +13,7 @@ class RCnordt(RPackage):
 	"""
 	
 	bioc = "CNORdt" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CNORdt_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CNORdt/CNORdt_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNORdt_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNORdt/CNORdt_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="74b0c2783638f7d5ce872577eb305ad3")
 

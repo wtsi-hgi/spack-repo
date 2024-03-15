@@ -14,7 +14,7 @@ class RM6aboost(RPackage):
 	
 	homepage = "https://github.com/ZarnackGroup/m6Aboost"
 	bioc = "m6Aboost" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/m6Aboost_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/m6Aboost/m6Aboost_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/m6Aboost_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/m6Aboost/m6Aboost_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="17bd39bcc17e45a0bb22be3e2e15c533")
 

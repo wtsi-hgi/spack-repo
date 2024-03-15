@@ -14,7 +14,7 @@ class REpinem(RPackage):
 	
 	homepage = "https://github.com/cbg-ethz/epiNEM/"
 	bioc = "epiNEM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/epiNEM_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/epiNEM/epiNEM_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epiNEM_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epiNEM/epiNEM_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="03702ef94f047496994ebaf19f750787")
 

@@ -13,7 +13,7 @@ class RDep(RPackage):
 	"""
 	
 	bioc = "DEP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DEP_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DEP/DEP_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEP_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEP/DEP_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="2bfaf5d5bfd3f05c7a7a80742bd43f7c")
 

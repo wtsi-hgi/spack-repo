@@ -13,7 +13,7 @@ class RGagedata(RPackage):
 	"""
 	
 	bioc = "gageData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/gageData_2.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/gageData/gageData_2.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/gageData_2.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/gageData/gageData_2.40.0.tar.gz"]
 
 	version("2.40.0", md5="889e4b6ceda6c2a80f61ad4e867c3b59")
 

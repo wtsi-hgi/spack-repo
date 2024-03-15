@@ -13,7 +13,7 @@ class RMoma(RPackage):
 	"""
 	
 	bioc = "MOMA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MOMA_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MOMA/MOMA_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MOMA_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MOMA/MOMA_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="ce4cf6dab5fea53127b5b980756ef5db")
 

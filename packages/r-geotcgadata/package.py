@@ -14,7 +14,7 @@ class RGeotcgadata(RPackage):
 	
 	homepage = "https://github.com/YuLab-SMU/GeoTcgaData"
 	bioc = "GeoTcgaData" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GeoTcgaData_2.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GeoTcgaData/GeoTcgaData_2.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeoTcgaData_2.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeoTcgaData/GeoTcgaData_2.2.0.tar.gz"]
 
 	version("2.2.0", md5="653a353d37b0bcfbd892dfe12d420100")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,7 +17,9 @@ class RYapsa(RPackage):
 	catalogue) are provided."""
 
 	bioc = "YAPSA"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/YAPSA_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/YAPSA/YAPSA_1.28.0.tar.gz"]
+
+	license("GPL-3.0-or-later")
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/YAPSA_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/YAPSA/YAPSA_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="7da75a0c0eabc79012aeb87c9a6e9582")
 

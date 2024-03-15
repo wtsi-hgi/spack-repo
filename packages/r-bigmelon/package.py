@@ -13,7 +13,7 @@ class RBigmelon(RPackage):
 	"""
 	
 	bioc = "bigmelon" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/bigmelon_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/bigmelon/bigmelon_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bigmelon_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bigmelon/bigmelon_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="1c6944989ec4f16b1903143a34296bf0")
 

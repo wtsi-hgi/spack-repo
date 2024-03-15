@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,7 @@ class RInteractivedisplaybase(RPackage):
 	objects."""
 
 	bioc = "interactiveDisplayBase"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/interactiveDisplayBase_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/interactiveDisplayBase/interactiveDisplayBase_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/interactiveDisplayBase_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/interactiveDisplayBase/interactiveDisplayBase_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="9ae8be7104ab2debe258b504bcd24e38")
 

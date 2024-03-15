@@ -17,7 +17,7 @@ class RNca(RPackage):
 	homepage = "https://www.erim.eur.nl/necessary-condition-analysis/"
 	cran = "NCA" 
 
-	version("4.0.0", md5="5d07ee38c1046042d124859b0a02f0c4")
+	version("4.0.1", md5="74586c397cedaff1a4180135507c15cc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

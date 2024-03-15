@@ -15,10 +15,10 @@ class RTractorBase(RPackage):
     metadata and sparse image handling.
 	"""
 	
-	homepage = "http://www.tractor-mri.org.uk"
+	homepage = "https://www.tractor-mri.org.uk"
 	cran = "tractor.base" 
 
-	version("3.3.5.1", md5="b19f48e7b25b568ca6c8b0bff9753482")
+	version("3.4.2", md5="f5e71dc3a7db433078d2de5a49a2997c")
 
 	depends_on("r-ore@1.3:", type=("build", "run"))
 	depends_on("r-reportr", type=("build", "run"))

@@ -13,7 +13,7 @@ class RFlowsortedCordblood450k(RPackage):
 	"""
 	
 	bioc = "FlowSorted.CordBlood.450k" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/FlowSorted.CordBlood.450k_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/FlowSorted.CordBlood.450k/FlowSorted.CordBlood.450k_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FlowSorted.CordBlood.450k_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FlowSorted.CordBlood.450k/FlowSorted.CordBlood.450k_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="fca81b7412af68100d7aed4d57d5fc59")
 

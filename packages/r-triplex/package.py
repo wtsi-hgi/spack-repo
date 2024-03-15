@@ -14,7 +14,7 @@ class RTriplex(RPackage):
 	
 	homepage = "http://www.fi.muni.cz/~lexa/triplex/"
 	bioc = "triplex" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/triplex_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/triplex/triplex_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/triplex_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/triplex/triplex_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="c66a6990486e7a4873b256d08eff9933")
 

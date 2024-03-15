@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,6 +18,8 @@ class RGooglesheets4(RPackage):
 	Sheet."""
 
 	cran = "googlesheets4"
+
+	license("MIT")
 
 	version("1.1.1", md5="8b017d8e142ceb41bd0baaee823a6508", url="https://cran.r-project.org/src/contrib/googlesheets4_1.1.1.tar.gz")
 

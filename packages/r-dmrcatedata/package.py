@@ -13,9 +13,9 @@ class RDmrcatedata(RPackage):
 	"""
 	
 	bioc = "DMRcatedata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/DMRcatedata_2.20.2.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/DMRcatedata/DMRcatedata_2.20.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DMRcatedata_2.20.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DMRcatedata/DMRcatedata_2.20.3.tar.gz"]
 
-	version("2.20.2", md5="0cd6e9693ca761425b661cd4a512d797")
+	version("2.20.3", md5="46f23fffafbc0e7112852dc7e7a959a3")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

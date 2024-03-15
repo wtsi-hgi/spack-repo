@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,7 +16,7 @@ class RScran(RPackage):
 	single-cell analysis workflows."""
 
 	bioc = "scran"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scran_1.30.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scran/scran_1.30.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scran_1.30.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scran/scran_1.30.2.tar.gz"]
 
 	version("1.30.2", md5="36f9f69d4699d050a95d6f6f971d2387")
 

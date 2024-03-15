@@ -13,7 +13,7 @@ class RLrcelltypemarkers(RPackage):
 	"""
 	
 	bioc = "LRcellTypeMarkers" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/LRcellTypeMarkers_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/LRcellTypeMarkers/LRcellTypeMarkers_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/LRcellTypeMarkers_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/LRcellTypeMarkers/LRcellTypeMarkers_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="f5731667b56b631291d22a830d212f04")
 

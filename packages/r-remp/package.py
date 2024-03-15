@@ -14,7 +14,7 @@ class RRemp(RPackage):
 	
 	homepage = "https://github.com/YinanZheng/REMP"
 	bioc = "REMP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/REMP_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/REMP/REMP_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/REMP_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/REMP/REMP_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="ee8e5abfbef5fc5798de790cacbe2cfe")
 

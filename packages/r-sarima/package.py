@@ -23,10 +23,10 @@ class RSarima(RPackage):
     needed in normal use.
 	"""
 	
-	homepage = "https://github.com/GeoBosh/sarima"
+	homepage = "https://geobosh.github.io/sarima/"
 	cran = "sarima" 
 
-	version("0.9.1", md5="af693e977bec93fabbc8686b54e3475b")
+	version("0.9.2", md5="c6f601e5403a4469b35b8dff95476f44")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-polynomf@1.0.0:", type=("build", "run"))

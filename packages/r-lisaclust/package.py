@@ -14,7 +14,7 @@ class RLisaclust(RPackage):
 	
 	homepage = "https://ellispatrick.github.io/lisaClust/"
 	bioc = "lisaClust" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/lisaClust_1.10.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/lisaClust/lisaClust_1.10.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lisaClust_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lisaClust/lisaClust_1.10.1.tar.gz"]
 
 	version("1.10.1", md5="fa6fe90f1866b21dce3d34bb8471c9e1")
 

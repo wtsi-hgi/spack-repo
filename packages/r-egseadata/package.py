@@ -13,7 +13,7 @@ class REgseadata(RPackage):
 	"""
 	
 	bioc = "EGSEAdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/EGSEAdata_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/EGSEAdata/EGSEAdata_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/EGSEAdata_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/EGSEAdata/EGSEAdata_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="838b30ae6caf7c3cbb854e0404b52cda")
 

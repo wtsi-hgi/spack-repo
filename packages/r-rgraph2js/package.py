@@ -13,7 +13,7 @@ class RRgraph2js(RPackage):
 	"""
 	
 	bioc = "RGraph2js" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RGraph2js_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RGraph2js/RGraph2js_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RGraph2js_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RGraph2js/RGraph2js_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="ccb2f26623270911ba855aa97e1269e1")
 

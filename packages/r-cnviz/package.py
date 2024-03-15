@@ -13,7 +13,7 @@ class RCnviz(RPackage):
 	"""
 	
 	bioc = "CNViz" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CNViz_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CNViz/CNViz_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNViz_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNViz/CNViz_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="e0499b53c29869a1f661e40f4e1f76ca")
 

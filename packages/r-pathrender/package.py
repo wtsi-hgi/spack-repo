@@ -14,7 +14,7 @@ class RPathrender(RPackage):
 	
 	homepage = "http://www.bioconductor.org"
 	bioc = "pathRender" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pathRender_1.70.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pathRender/pathRender_1.70.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pathRender_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pathRender/pathRender_1.70.0.tar.gz"]
 
 	version("1.70.0", md5="0796d30e763067880a67ed2435d2ac26")
 

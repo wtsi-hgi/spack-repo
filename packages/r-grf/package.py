@@ -19,7 +19,7 @@ class RGrf(RPackage):
 	homepage = "https://github.com/grf-labs/grf"
 	cran = "grf" 
 
-	version("2.3.1", md5="e4ac89ddb34c3c5795415eebc8057ad8")
+	version("2.3.2", md5="68c8c5700737c57df558c2f4e960fbc1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dicekriging", type=("build", "run"))

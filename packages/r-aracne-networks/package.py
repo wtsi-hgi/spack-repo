@@ -13,7 +13,7 @@ class RAracneNetworks(RPackage):
 	"""
 	
 	bioc = "aracne.networks" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/aracne.networks_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/aracne.networks/aracne.networks_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/aracne.networks_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/aracne.networks/aracne.networks_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="42657d0acf4c1ba54aa2057fa4525d51")
 

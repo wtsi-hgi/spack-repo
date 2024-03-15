@@ -14,7 +14,7 @@ class RZenith(RPackage):
 	
 	homepage = "https://DiseaseNeuroGenomics.github.io/zenith"
 	bioc = "zenith" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/zenith_1.4.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/zenith/zenith_1.4.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/zenith_1.4.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/zenith/zenith_1.4.2.tar.gz"]
 
 	version("1.4.2", md5="60c9729fb2407d62a1ea15b1aa5ee0eb")
 

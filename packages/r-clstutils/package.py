@@ -13,7 +13,7 @@ class RClstutils(RPackage):
 	"""
 	
 	bioc = "clstutils" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/clstutils_1.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/clstutils/clstutils_1.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clstutils_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clstutils/clstutils_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="4343490b2b05bf2e4429f2081b3a82c5")
 

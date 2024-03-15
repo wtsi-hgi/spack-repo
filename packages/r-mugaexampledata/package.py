@@ -13,7 +13,7 @@ class RMugaexampledata(RPackage):
 	"""
 	
 	bioc = "MUGAExampleData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/MUGAExampleData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/MUGAExampleData/MUGAExampleData_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MUGAExampleData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MUGAExampleData/MUGAExampleData_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="b7fe2c7ad41486695fb78263a8c9a854")
 

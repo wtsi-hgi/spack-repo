@@ -13,7 +13,7 @@ class RDnabarcodecompatibility(RPackage):
 	"""
 	
 	bioc = "DNABarcodeCompatibility" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DNABarcodeCompatibility_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DNABarcodeCompatibility/DNABarcodeCompatibility_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DNABarcodeCompatibility_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DNABarcodeCompatibility/DNABarcodeCompatibility_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="b1e2988c254cf089a2f887abf139b7bf")
 

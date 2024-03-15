@@ -14,7 +14,7 @@ class RCytoml(RPackage):
 	
 	homepage = "https://github.com/RGLab/CytoML"
 	bioc = "CytoML" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CytoML_2.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CytoML/CytoML_2.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CytoML_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CytoML/CytoML_2.14.0.tar.gz"]
 
 	version("2.14.0", md5="4b0060416cdeef7876cb9aaeb81dbaf7")
 

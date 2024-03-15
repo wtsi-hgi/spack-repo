@@ -13,7 +13,7 @@ class RU133x3pprobe(RPackage):
 	"""
 	
 	bioc = "u133x3pprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/u133x3pprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/u133x3pprobe/u133x3pprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/u133x3pprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/u133x3pprobe/u133x3pprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="81e2b00985688160805147bef0c638be")
 

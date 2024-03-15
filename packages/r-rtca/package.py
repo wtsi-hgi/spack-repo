@@ -14,7 +14,7 @@ class RRtca(RPackage):
 	
 	homepage = "http://code.google.com/p/xcelligence/"
 	bioc = "RTCA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RTCA_1.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RTCA/RTCA_1.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RTCA_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RTCA/RTCA_1.54.0.tar.gz"]
 
 	version("1.54.0", md5="8e1039d013ef1d5e08b48003ecffc25a")
 

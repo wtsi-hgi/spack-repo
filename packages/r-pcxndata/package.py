@@ -13,7 +13,7 @@ class RPcxndata(RPackage):
 	"""
 	
 	bioc = "pcxnData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/pcxnData_2.24.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/pcxnData/pcxnData_2.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/pcxnData_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/pcxnData/pcxnData_2.24.0.tar.gz"]
 
 	version("2.24.0", md5="7814b1a6f5dbd08e71df1e92ea4328f6")
 

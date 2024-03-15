@@ -14,7 +14,7 @@ class RRegionereloaded(RPackage):
 	
 	homepage = "https://github.com/RMalinverni/regioneReload"
 	bioc = "regioneReloaded" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/regioneReloaded_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/regioneReloaded/regioneReloaded_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/regioneReloaded_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/regioneReloaded/regioneReloaded_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="38175e4bcc9ccb951f79fca8238897b2")
 

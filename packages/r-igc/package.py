@@ -14,7 +14,7 @@ class RIgc(RPackage):
 	
 	homepage = "http://github.com/ccwang002/iGC"
 	bioc = "iGC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iGC_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iGC/iGC_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iGC_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iGC/iGC_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="14007fadd58eaea3e345ba53a279f783")
 

@@ -14,6 +14,6 @@ class RCfa(RPackage):
 	
 	cran = "cfa" 
 
-	version("0.10-0", md5="11d3610a531932f2ff9b296e4d98f796")
+	version("0.10-1", md5="6fdcb12063b87319d75dbbfc4cedf108")
 
 	depends_on("r@3.0.1:", type=("build", "run"))

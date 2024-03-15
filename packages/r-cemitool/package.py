@@ -13,7 +13,7 @@ class RCemitool(RPackage):
 	"""
 	
 	bioc = "CEMiTool" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CEMiTool_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CEMiTool/CEMiTool_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CEMiTool_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CEMiTool/CEMiTool_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="df823e2602a3b994f889644e39e0eb8f")
 

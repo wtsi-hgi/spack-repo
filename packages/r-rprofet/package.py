@@ -14,7 +14,7 @@ class RRprofet(RPackage):
 	
 	cran = "Rprofet" 
 
-	version("2.2.1", md5="1009d833038e577f7349fa1319f63ce7")
+	version("3.1.1", md5="1fd3ebaedce1c902da2f728162c5eead")
 
 	depends_on("r-binr", type=("build", "run"))
 	depends_on("r-clustofvar", type=("build", "run"))
@@ -23,3 +23,9 @@ class RRprofet(RPackage):
 	depends_on("r-plyr", type=("build", "run"))
 	depends_on("r-sqldf", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))
+	depends_on("r-dplyr", type=("build", "run"))
+	depends_on("r-corrplot", type=("build", "run"))
+	depends_on("r-kableextra", type=("build", "run"))
+	depends_on("r-purrr", type=("build", "run"))
+	depends_on("r-reshape2", type=("build", "run"))
+	depends_on("r-rocit", type=("build", "run"))

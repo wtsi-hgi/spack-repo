@@ -14,7 +14,7 @@ class RIdr2d(RPackage):
 	
 	homepage = "https://idr2d.mit.edu"
 	bioc = "idr2d" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/idr2d_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/idr2d/idr2d_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/idr2d_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/idr2d/idr2d_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="6662b2b18dc8c6029ad40099c5fcd6a7")
 

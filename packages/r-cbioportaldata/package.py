@@ -13,7 +13,7 @@ class RCbioportaldata(RPackage):
 	"""
 	
 	bioc = "cBioPortalData" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cBioPortalData_2.14.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cBioPortalData/cBioPortalData_2.14.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cBioPortalData_2.14.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cBioPortalData/cBioPortalData_2.14.2.tar.gz"]
 
 	version("2.14.2", md5="48ae0210e5cf85b277ef25c731510887")
 

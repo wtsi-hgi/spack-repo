@@ -14,7 +14,7 @@ class RGenesis(RPackage):
 	
 	homepage = "https://github.com/UW-GAC/GENESIS"
 	bioc = "GENESIS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GENESIS_2.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GENESIS/GENESIS_2.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GENESIS_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GENESIS/GENESIS_2.32.0.tar.gz"]
 
 	version("2.32.0", md5="909c6b6ea17b2de1716f3a5102caa0df")
 

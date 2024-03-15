@@ -13,7 +13,7 @@ class RTcgamethylation450k(RPackage):
 	"""
 	
 	bioc = "TCGAMethylation450k" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/TCGAMethylation450k_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/TCGAMethylation450k/TCGAMethylation450k_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TCGAMethylation450k_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TCGAMethylation450k/TCGAMethylation450k_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="e913aa3b85d5cd1d0b27a346daf8c9ee")
 

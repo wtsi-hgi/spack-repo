@@ -13,7 +13,7 @@ class RIchip(RPackage):
 	"""
 	
 	bioc = "iChip" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iChip_1.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iChip/iChip_1.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iChip_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iChip/iChip_1.56.0.tar.gz"]
 
 	version("1.56.0", md5="d50d8db2c1de02e8a1df4de992aa64f4")
 

@@ -13,7 +13,7 @@ class RMultidataset(RPackage):
 	"""
 	
 	bioc = "MultiDataSet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MultiDataSet_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MultiDataSet/MultiDataSet_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MultiDataSet_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MultiDataSet/MultiDataSet_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="304e6d8ccbb54c446f43f2df5e13f530")
 

@@ -14,7 +14,7 @@ class RMicrobiomedasim(RPackage):
 	
 	homepage = "https://github.com/williazo/microbiomeDASim"
 	bioc = "microbiomeDASim" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/microbiomeDASim_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/microbiomeDASim/microbiomeDASim_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/microbiomeDASim_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/microbiomeDASim/microbiomeDASim_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="9ddf99ab393766f7bcb9dee13b3707f9")
 

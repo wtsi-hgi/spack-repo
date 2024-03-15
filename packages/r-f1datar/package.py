@@ -15,7 +15,7 @@ class RF1datar(RPackage):
 	homepage = "https://scasanova.github.io/f1dataR/"
 	cran = "f1dataR" 
 
-	version("1.5.0", md5="78e566071dc11a76d998d43d9860135b")
+	version("1.5.1", md5="edf9516a0aa5d8cc94e85d2d2c691a2e")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-reticulate@1.14:", type=("build", "run"))

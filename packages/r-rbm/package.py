@@ -13,7 +13,7 @@ class RRbm(RPackage):
 	"""
 	
 	bioc = "RBM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RBM_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RBM/RBM_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RBM_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RBM/RBM_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="4ae63966d6e9cfd1d3ce001f65a02abe")
 

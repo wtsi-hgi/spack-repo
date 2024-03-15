@@ -13,7 +13,7 @@ class RMsmb(RPackage):
 	"""
 	
 	bioc = "MSMB" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/MSMB_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/MSMB/MSMB_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MSMB_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MSMB/MSMB_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="bc2942708f54a40d59ce7e41daff7df0")
 

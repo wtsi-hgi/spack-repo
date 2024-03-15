@@ -14,7 +14,7 @@ class RSurvcomp(RPackage):
 	
 	homepage = "http://www.pmgenomics.ca/bhklab/"
 	bioc = "survcomp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/survcomp_1.52.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/survcomp/survcomp_1.52.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/survcomp_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/survcomp/survcomp_1.52.0.tar.gz"]
 
 	version("1.52.0", md5="5026589c50042751474d3474dc24847d")
 

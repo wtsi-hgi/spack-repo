@@ -14,7 +14,7 @@ class RMicrostasis(RPackage):
 	
 	homepage = "https://doi.org/10.1093/bib/bbac055"
 	bioc = "microSTASIS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/microSTASIS_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/microSTASIS/microSTASIS_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/microSTASIS_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/microSTASIS/microSTASIS_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="7b9b67613eb5e6b69918dffc9d4060d8")
 

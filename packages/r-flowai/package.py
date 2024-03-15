@@ -13,7 +13,7 @@ class RFlowai(RPackage):
 	"""
 	
 	bioc = "flowAI" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowAI_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowAI/flowAI_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowAI_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowAI/flowAI_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="714cb015ac01ee026e02fc24536770e5")
 

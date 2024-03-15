@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,6 +13,8 @@ class RBindrcpp(RPackage):
 	a C++ function."""
 
 	cran = "bindrcpp"
+
+	license("MIT")
 
 	version("0.2.3", md5="14d52a9f59269bc1a674bb1e93abdfda")
 

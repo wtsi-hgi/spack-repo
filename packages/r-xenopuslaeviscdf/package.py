@@ -13,7 +13,7 @@ class RXenopuslaeviscdf(RPackage):
 	"""
 	
 	bioc = "xenopuslaeviscdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/xenopuslaeviscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/xenopuslaeviscdf/xenopuslaeviscdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/xenopuslaeviscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/xenopuslaeviscdf/xenopuslaeviscdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="9d09ff76471ae60faf71090e0638f240")
 

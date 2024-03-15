@@ -13,7 +13,7 @@ class RMu6500subdcdf(RPackage):
 	"""
 	
 	bioc = "mu6500subdcdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mu6500subdcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mu6500subdcdf/mu6500subdcdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mu6500subdcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mu6500subdcdf/mu6500subdcdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="a614674e8bc60fefd8520dd25d45f8d0")
 

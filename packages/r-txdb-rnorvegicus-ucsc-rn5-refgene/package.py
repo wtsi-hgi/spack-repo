@@ -13,7 +13,7 @@ class RTxdbRnorvegicusUcscRn5Refgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Rnorvegicus.UCSC.rn5.refGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Rnorvegicus.UCSC.rn5.refGene_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Rnorvegicus.UCSC.rn5.refGene/TxDb.Rnorvegicus.UCSC.rn5.refGene_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Rnorvegicus.UCSC.rn5.refGene_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Rnorvegicus.UCSC.rn5.refGene/TxDb.Rnorvegicus.UCSC.rn5.refGene_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="8a93a15b37bf73e5c529c976c4561537")
 

@@ -16,7 +16,7 @@ class RKimfilter(RPackage):
 	
 	cran = "kimfilter" 
 
-	version("1.0.2", md5="b7b331cd46144bbc69f452480c09872e")
+	version("1.0.3", md5="35edcc925344249a1aec67314b547b35")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

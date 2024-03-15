@@ -14,7 +14,7 @@ class RGpaexample(RPackage):
 	
 	homepage = "http://dongjunchung.github.io/GPA/"
 	bioc = "gpaExample" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/gpaExample_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/gpaExample/gpaExample_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/gpaExample_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/gpaExample/gpaExample_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="e989af58ed5bbc10573f7438b3ee7836")
 

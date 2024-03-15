@@ -14,7 +14,7 @@ class RFactr(RPackage):
 	
 	homepage = "https://fursham-h.github.io/factR/"
 	bioc = "factR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/factR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/factR/factR_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/factR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/factR/factR_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="55b088d84e382a7068b40062151e4bec")
 

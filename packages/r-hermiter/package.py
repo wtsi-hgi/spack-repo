@@ -25,7 +25,7 @@ Nonparametric Correlation (Bivariate)
 	homepage = "https://github.com/MikeJaredS/hermiter"
 	cran = "hermiter" 
 
-	version("2.3.0", md5="c7dcb11610e765f2653bf9f581d86662")
+	version("2.3.1", md5="4524e134cd25e6e11e83dfa2b1fd74cc")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -14,7 +14,7 @@ class RRforproteomics(RPackage):
 	
 	homepage = "http://lgatto.github.com/RforProteomics/"
 	bioc = "RforProteomics" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RforProteomics_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/RforProteomics/RforProteomics_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RforProteomics_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RforProteomics/RforProteomics_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="6d75aedb5902ea26a18e39da6848db4c")
 

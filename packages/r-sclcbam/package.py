@@ -13,7 +13,7 @@ class RSclcbam(RPackage):
 	"""
 	
 	bioc = "SCLCBam" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/SCLCBam_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/SCLCBam/SCLCBam_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SCLCBam_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SCLCBam/SCLCBam_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="660f11c1751b54cc942e91045884bfe6")
 

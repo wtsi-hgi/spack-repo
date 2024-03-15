@@ -14,7 +14,7 @@ class RGenomicstate(RPackage):
 	
 	homepage = "https://github.com/LieberInstitute/GenomicState"
 	bioc = "GenomicState" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/GenomicState_0.99.15.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/GenomicState/GenomicState_0.99.15.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/GenomicState_0.99.15.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/GenomicState/GenomicState_0.99.15.tar.gz"]
 
 	version("0.99.15", md5="59c2d85a72f62cb12bad697fcbce5edc")
 

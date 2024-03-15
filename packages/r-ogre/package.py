@@ -14,7 +14,7 @@ class ROgre(RPackage):
 	
 	homepage = "https://github.com/svenbioinf/OGRE/"
 	bioc = "OGRE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/OGRE_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/OGRE/OGRE_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OGRE_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OGRE/OGRE_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="cff18fd2eda3eb1e67e9f7739fb9e773")
 

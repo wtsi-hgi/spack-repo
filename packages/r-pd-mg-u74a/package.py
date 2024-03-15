@@ -13,7 +13,7 @@ class RPdMgU74a(RPackage):
 	"""
 	
 	bioc = "pd.mg.u74a" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.mg.u74a_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.mg.u74a/pd.mg.u74a_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mg.u74a_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.mg.u74a/pd.mg.u74a_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="a855c7d2b80e9b8f9bbc1a3f83aca799")
 

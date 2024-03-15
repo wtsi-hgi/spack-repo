@@ -13,7 +13,7 @@ class RProper(RPackage):
 	"""
 	
 	bioc = "PROPER" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PROPER_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PROPER/PROPER_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PROPER_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PROPER/PROPER_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="6f91ce4b3f5feee476a991fc1072c521")
 

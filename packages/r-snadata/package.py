@@ -13,7 +13,7 @@ class RSnadata(RPackage):
 	"""
 	
 	bioc = "SNAData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/SNAData_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/SNAData/SNAData_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SNAData_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SNAData/SNAData_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="bfbd447afa550db44aa1db55e227cc10")
 

@@ -14,7 +14,7 @@ class RGenomation(RPackage):
 	
 	homepage = "http://bioinformatics.mdc-berlin.de/genomation/"
 	bioc = "genomation" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/genomation_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/genomation/genomation_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genomation_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genomation/genomation_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="5453f50009f3f7227025431d4d10f4bb")
 

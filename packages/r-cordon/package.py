@@ -14,7 +14,7 @@ class RCordon(RPackage):
 	
 	homepage = "https://github.com/BioinfoHR/coRdon"
 	bioc = "coRdon" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/coRdon_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/coRdon/coRdon_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/coRdon_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/coRdon/coRdon_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="19e0e0e91d3cccd4c277710c9273275e")
 

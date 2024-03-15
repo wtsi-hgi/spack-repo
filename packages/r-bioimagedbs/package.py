@@ -14,7 +14,7 @@ class RBioimagedbs(RPackage):
 	
 	homepage = "https://kumes.github.io/BioImageDbs/"
 	bioc = "BioImageDbs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/BioImageDbs_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/BioImageDbs/BioImageDbs_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BioImageDbs_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/BioImageDbs/BioImageDbs_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="785e9ea81ef5699d70af969fd8d4703d")
 

@@ -19,7 +19,7 @@ class RFrictionless(RPackage):
 	homepage = "https://github.com/frictionlessdata/frictionless-r"
 	cran = "frictionless" 
 
-	version("1.0.2", md5="af36ae6b52831e64658eaed5508e246d")
+	version("1.0.3", md5="dfad94efed132f5aec80c1967d22bb6b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

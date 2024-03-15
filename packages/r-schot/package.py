@@ -13,7 +13,7 @@ class RSchot(RPackage):
 	"""
 	
 	bioc = "scHOT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scHOT_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scHOT/scHOT_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scHOT_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scHOT/scHOT_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="75f460d2a6c2d8bee223b64a05eb6224")
 

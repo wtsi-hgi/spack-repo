@@ -13,7 +13,7 @@ class RSeqcnaAnnot(RPackage):
 	"""
 	
 	bioc = "seqCNA.annot" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/seqCNA.annot_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/seqCNA.annot/seqCNA.annot_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/seqCNA.annot_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/seqCNA.annot/seqCNA.annot_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="a61df6e0824d7c3c3f4c697b5bd73e30")
 

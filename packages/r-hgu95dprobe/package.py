@@ -13,7 +13,7 @@ class RHgu95dprobe(RPackage):
 	"""
 	
 	bioc = "hgu95dprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hgu95dprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hgu95dprobe/hgu95dprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu95dprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu95dprobe/hgu95dprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="165ce5029f49fc515b9ee0e6a6a29cb5")
 

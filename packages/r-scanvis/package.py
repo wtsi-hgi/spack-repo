@@ -13,7 +13,7 @@ class RScanvis(RPackage):
 	"""
 	
 	bioc = "SCANVIS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SCANVIS_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SCANVIS/SCANVIS_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCANVIS_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCANVIS/SCANVIS_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="36977f903eb019d8171d60519360cd9e")
 

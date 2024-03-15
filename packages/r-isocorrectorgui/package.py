@@ -14,7 +14,7 @@ class RIsocorrectorgui(RPackage):
 	
 	homepage = "https://genomics.ur.de/files/IsoCorrectoRGUI"
 	bioc = "IsoCorrectoRGUI" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IsoCorrectoRGUI_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IsoCorrectoRGUI/IsoCorrectoRGUI_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IsoCorrectoRGUI_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IsoCorrectoRGUI/IsoCorrectoRGUI_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="2f46ff7c7647616cced839067b9e1b39")
 

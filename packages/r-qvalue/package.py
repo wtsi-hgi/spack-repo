@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -22,7 +22,7 @@ class RQvalue(RPackage):
 	astrophysics, and data mining."""
 
 	bioc = "qvalue"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/qvalue_2.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/qvalue/qvalue_2.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qvalue_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qvalue/qvalue_2.34.0.tar.gz"]
 
 	version("2.34.0", md5="d6d57a60a814587681cf438b4e6ee9bc")
 

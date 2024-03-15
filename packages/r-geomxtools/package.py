@@ -13,7 +13,7 @@ class RGeomxtools(RPackage):
 	"""
 	
 	bioc = "GeomxTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GeomxTools_3.6.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GeomxTools/GeomxTools_3.6.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeomxTools_3.6.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeomxTools/GeomxTools_3.6.2.tar.gz"]
 
 	version("3.6.2", md5="233ce698fafedbd76c8eebdacc4f9c51")
 

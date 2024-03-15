@@ -22,7 +22,7 @@ class RLefko3(RPackage):
 	homepage = "http://www.sheffersonlab.com/projects.html"
 	cran = "lefko3" 
 
-	version("6.2.0", md5="9180d1435918caa469e97be53bb74e6f", url="https://cran.r-project.org/src/contrib/lefko3_6.2.0.tar.gz")
+	version("6.2.1", md5="c1fc607b96f841c3bcf0f0de6f00b9a8", url="https://cran.r-project.org/src/contrib/lefko3_6.2.1.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
@@ -31,6 +31,7 @@ class RLefko3(RPackage):
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-mumin", type=("build", "run"))
+	depends_on("r-pscl", type=("build", "run"))
 	depends_on("r-vgam", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
 	depends_on("r-bh", type=("build", "run"))

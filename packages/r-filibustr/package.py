@@ -18,9 +18,10 @@ class RFilibustr(RPackage):
 	homepage = "https://github.com/feinleib/filibustr"
 	cran = "filibustr" 
 
-	version("0.1.1", md5="4e2820f5a9dab791b2a71cbc2242d0c1")
+	version("0.2.0", md5="050c4f5eac4e6572d7f4c20c2065907c")
 
 	depends_on("r-dplyr", type=("build", "run"))
+	depends_on("r-haven", type=("build", "run"))
 	depends_on("r-lifecycle", type=("build", "run"))
 	depends_on("r-readr", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

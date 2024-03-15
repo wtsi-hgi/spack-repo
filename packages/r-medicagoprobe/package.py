@@ -13,7 +13,7 @@ class RMedicagoprobe(RPackage):
 	"""
 	
 	bioc = "medicagoprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/medicagoprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/medicagoprobe/medicagoprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/medicagoprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/medicagoprobe/medicagoprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="83b9887ad2ed26c704b0ca7115e5838d")
 

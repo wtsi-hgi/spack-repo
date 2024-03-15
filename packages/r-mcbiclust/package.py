@@ -13,7 +13,7 @@ class RMcbiclust(RPackage):
 	"""
 	
 	bioc = "MCbiclust" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MCbiclust_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MCbiclust/MCbiclust_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MCbiclust_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MCbiclust/MCbiclust_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="dd042cb41360eec094ff9596439d3aa6")
 

@@ -13,7 +13,7 @@ class RScds(RPackage):
 	"""
 	
 	bioc = "scds" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scds_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scds/scds_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scds_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scds/scds_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="df6bd91f4acdd6ea2e54d2f20f632cbf")
 

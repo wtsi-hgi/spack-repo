@@ -14,7 +14,7 @@ class RCytomem(RPackage):
 	
 	homepage = "https://github.com/cytolab/cytoMEM"
 	bioc = "cytoMEM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cytoMEM_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cytoMEM/cytoMEM_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cytoMEM_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cytoMEM/cytoMEM_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="4a407b89f327c4c88301e81f982598f9")
 

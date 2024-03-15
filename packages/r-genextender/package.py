@@ -14,7 +14,7 @@ class RGenextender(RPackage):
 	
 	homepage = "https://github.com/Bohdan-Khomtchouk/geneXtendeR"
 	bioc = "geneXtendeR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/geneXtendeR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/geneXtendeR/geneXtendeR_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geneXtendeR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geneXtendeR/geneXtendeR_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="63ab36f83aa3d05bf932dc3c0e0c173a")
 

@@ -13,7 +13,7 @@ class RVtpnet(RPackage):
 	"""
 	
 	bioc = "vtpnet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/vtpnet_0.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/vtpnet/vtpnet_0.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vtpnet_0.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vtpnet/vtpnet_0.42.0.tar.gz"]
 
 	version("0.42.0", md5="a3a08b447e9ce26fafeed6fe2c515e10")
 

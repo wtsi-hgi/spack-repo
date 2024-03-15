@@ -13,7 +13,7 @@ class ROppar(RPackage):
 	"""
 	
 	bioc = "oppar" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/oppar_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/oppar/oppar_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oppar_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oppar/oppar_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="21adf37b9236cf860009e709f63d5e30")
 

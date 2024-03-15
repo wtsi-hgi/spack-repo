@@ -13,7 +13,7 @@ class RGoprofiles(RPackage):
 	"""
 	
 	bioc = "goProfiles" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/goProfiles_1.64.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/goProfiles/goProfiles_1.64.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/goProfiles_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/goProfiles/goProfiles_1.64.0.tar.gz"]
 
 	version("1.64.0", md5="ff2a664ff7284cf03e9caf932ad86d63")
 

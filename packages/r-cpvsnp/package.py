@@ -13,7 +13,7 @@ class RCpvsnp(RPackage):
 	"""
 	
 	bioc = "cpvSNP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cpvSNP_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cpvSNP/cpvSNP_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cpvSNP_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cpvSNP/cpvSNP_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="2edb50570eb609c9962e57d36d70ceba")
 

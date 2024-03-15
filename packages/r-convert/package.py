@@ -14,7 +14,7 @@ class RConvert(RPackage):
 	
 	homepage = "http://bioinf.wehi.edu.au/limma/convert.html"
 	bioc = "convert" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/convert_1.78.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/convert/convert_1.78.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/convert_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/convert/convert_1.78.0.tar.gz"]
 
 	version("1.78.0", md5="828a21b5a554d63faeb6cc2af0784394")
 

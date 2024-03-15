@@ -13,7 +13,7 @@ class RPdRabgene10St(RPackage):
 	"""
 	
 	bioc = "pd.rabgene.1.0.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.rabgene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.rabgene.1.0.st/pd.rabgene.1.0.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rabgene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rabgene.1.0.st/pd.rabgene.1.0.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="7f1e33f4767a4c4653bdaff2b79989a0")
 

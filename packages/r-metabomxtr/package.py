@@ -13,7 +13,7 @@ class RMetabomxtr(RPackage):
 	"""
 	
 	bioc = "metabomxtr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/metabomxtr_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/metabomxtr/metabomxtr_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metabomxtr_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metabomxtr/metabomxtr_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="ec247e3fe8099096d1bfcc8fff93f08d")
 

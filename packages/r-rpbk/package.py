@@ -23,10 +23,10 @@ Kinetic Models
     Charles et al. (2022) <doi:10.1101/2022.04.29.490045>.
 	"""
 	
-	homepage = "https://gitlab.com/qonfluens/model/rPBK"
+	homepage = "https://gitlab.in2p3.fr/mosaic-software/rPBK/"
 	cran = "rPBK" 
 
-	version("0.2.3", md5="b48ac041ec59da139ad5bd94e2251f03")
+	version("0.2.4", md5="e107e44c74725d85381bc43e3752e472")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

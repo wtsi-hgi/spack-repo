@@ -24,17 +24,17 @@ class RSantar(RPackage):
 	homepage = "https://github.com/adwolfer/santaR"
 	cran = "santaR" 
 
-	version("1.2.3", md5="de37ac6c1e50b1003084245a8a269928")
+	version("1.2.4", md5="315b7cdbf23261882aa8a993e8de6be1")
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-plyr@1.8.4:", type=("build", "run"))
-	depends_on("r-foreach@1.4.4:", type=("build", "run"))
-	depends_on("r-doparallel@1.0.11:", type=("build", "run"))
-	depends_on("r-pcamethods@1.70:", type=("build", "run"))
-	depends_on("r-ggplot2@2.2.1:", type=("build", "run"))
+	depends_on("r@4.2:", type=("build", "run"))
+	depends_on("r-plyr@1.8.9:", type=("build", "run"))
+	depends_on("r-foreach@1.5.2:", type=("build", "run"))
+	depends_on("r-doparallel@1.0.17:", type=("build", "run"))
+	depends_on("r-pcamethods@1.92:", type=("build", "run"))
+	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r-gridextra@2.3:", type=("build", "run"))
 	depends_on("r-reshape2@1.4.3:", type=("build", "run"))
 	depends_on("r-iterators@1.0.9:", type=("build", "run"))
-	depends_on("r-shiny@1.3.2:", type=("build", "run"))
+	depends_on("r-shiny@1.8:", type=("build", "run"))
 	depends_on("r-bslib", type=("build", "run"))
 	depends_on("r-dt@0.9:", type=("build", "run"))

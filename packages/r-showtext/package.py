@@ -20,7 +20,7 @@ class RShowtext(RPackage):
 	homepage = "https://github.com/yixuan/showtext"
 	cran = "showtext" 
 
-	version("0.9-6", md5="efe23338db65e778dc579533bf51d588")
+	version("0.9-7", md5="b0ace7cd37d2fda8abeba7055be73c39")
 
 	depends_on("r-sysfonts@0.7.1:", type=("build", "run"))
 	depends_on("r-showtextdb@2:", type=("build", "run"))

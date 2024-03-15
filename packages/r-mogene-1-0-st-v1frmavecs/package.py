@@ -13,7 +13,7 @@ class RMogene10StV1frmavecs(RPackage):
 	"""
 	
 	bioc = "mogene.1.0.st.v1frmavecs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mogene.1.0.st.v1frmavecs_1.1.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mogene.1.0.st.v1frmavecs/mogene.1.0.st.v1frmavecs_1.1.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mogene.1.0.st.v1frmavecs_1.1.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mogene.1.0.st.v1frmavecs/mogene.1.0.st.v1frmavecs_1.1.0.tar.gz"]
 
 	version("1.1.0", md5="b46f76903d0f19b85e8fa30347813ff5")
 

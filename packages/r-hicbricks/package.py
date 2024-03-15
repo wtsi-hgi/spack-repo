@@ -13,7 +13,7 @@ class RHicbricks(RPackage):
 	"""
 	
 	bioc = "HiCBricks" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HiCBricks_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HiCBricks/HiCBricks_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiCBricks_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiCBricks/HiCBricks_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="1c92df374e0660e328cbf53f181afd61")
 

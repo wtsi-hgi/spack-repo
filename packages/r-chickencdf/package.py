@@ -13,7 +13,7 @@ class RChickencdf(RPackage):
 	"""
 	
 	bioc = "chickencdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/chickencdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/chickencdf/chickencdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/chickencdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/chickencdf/chickencdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="ab0097b4b7b6c4d94360feb84ab69972")
 

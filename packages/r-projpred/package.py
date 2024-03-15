@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,6 +18,8 @@ class RProjpred(RPackage):
 	used. See the package vignette for more information and examples."""
 
 	cran = "projpred"
+
+	license("GPL-3.0-only OR custom")
 
 	version("2.8.0", md5="fafea1726d0556e63e515dfc0270acfe")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,6 +13,8 @@ class RExactextractr(RPackage):
 	that is suitable for extracting raster values using 'sf' polygons."""
 
 	cran = "exactextractr"
+
+	license("Apache-2.0")
 
 	version("0.10.0", md5="cc86e567b376f84de4a4d91d0cc1cd05")
 

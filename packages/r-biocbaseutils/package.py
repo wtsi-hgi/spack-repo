@@ -13,7 +13,7 @@ class RBiocbaseutils(RPackage):
 	"""
 	
 	bioc = "BiocBaseUtils" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiocBaseUtils_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiocBaseUtils/BiocBaseUtils_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocBaseUtils_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocBaseUtils/BiocBaseUtils_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="23ed1406ff70165a763ca2040c46353e")
 

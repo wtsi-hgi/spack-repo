@@ -13,7 +13,7 @@ class RCnorfeeder(RPackage):
 	"""
 	
 	bioc = "CNORfeeder" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CNORfeeder_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CNORfeeder/CNORfeeder_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNORfeeder_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNORfeeder/CNORfeeder_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="4dd8271e71505e41edc9509155cb4f9f")
 

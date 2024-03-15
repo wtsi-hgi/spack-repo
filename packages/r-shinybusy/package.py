@@ -17,7 +17,7 @@ class RShinybusy(RPackage):
 	homepage = "https://github.com/dreamRs/shinybusy"
 	cran = "shinybusy" 
 
-	version("0.3.2", md5="cf385f473c93ea5b64b36b9d6d59afe5")
+	version("0.3.3", md5="2ffd3f845e336a2049a579e1674f81b3")
 
 	depends_on("r-htmltools", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

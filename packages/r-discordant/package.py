@@ -14,7 +14,7 @@ class RDiscordant(RPackage):
 	
 	homepage = "https://github.com/siskac/discordant"
 	bioc = "discordant" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/discordant_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/discordant/discordant_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/discordant_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/discordant/discordant_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="78ce10a5d9777c9db9b72fec29688bee")
 

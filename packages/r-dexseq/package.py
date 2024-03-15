@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -20,7 +20,7 @@ class RDexseq(RPackage):
 	bioc = "DEXSeq"
 
 	maintainers("dorton21")
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DEXSeq_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DEXSeq/DEXSeq_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEXSeq_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEXSeq/DEXSeq_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="8e5876f927b0b0cdfc4a402bfb4fb3d6")
 

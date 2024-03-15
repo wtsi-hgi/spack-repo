@@ -14,7 +14,7 @@ class RHdtd(RPackage):
 	
 	homepage = "http://github.com/AnestisTouloumis/HDTD"
 	bioc = "HDTD" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HDTD_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HDTD/HDTD_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HDTD_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HDTD/HDTD_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="c990bac6152195272ae3aa3557f8b82b")
 

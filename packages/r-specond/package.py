@@ -13,7 +13,7 @@ class RSpecond(RPackage):
 	"""
 	
 	bioc = "SpeCond" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SpeCond_1.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SpeCond/SpeCond_1.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpeCond_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpeCond/SpeCond_1.56.0.tar.gz"]
 
 	version("1.56.0", md5="f189b2d0a72f0fb1b7a99bd0b2bb73ab")
 

@@ -14,7 +14,7 @@ class RSplinter(RPackage):
 	
 	homepage = "https://github.com/dianalow/SPLINTER/"
 	bioc = "SPLINTER" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SPLINTER_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SPLINTER/SPLINTER_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SPLINTER_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SPLINTER/SPLINTER_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="f328ebcc0e4d27dee8a98c2e230bd8dc")
 

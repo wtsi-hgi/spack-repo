@@ -13,7 +13,7 @@ class RYgs98cdf(RPackage):
 	"""
 	
 	bioc = "ygs98cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ygs98cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/ygs98cdf/ygs98cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ygs98cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ygs98cdf/ygs98cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="ec7df7564cf28e093646325ec55baf1e")
 

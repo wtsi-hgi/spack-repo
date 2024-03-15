@@ -19,7 +19,7 @@ class REvprof(RPackage):
 	homepage = "https://github.com/mcanigueral/evprof/"
 	cran = "evprof" 
 
-	version("1.1.1", md5="bf59693da4887a3e5796d4689ad03928")
+	version("1.1.2", md5="5e63095aa156550af9929f14d7dd8d83")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))

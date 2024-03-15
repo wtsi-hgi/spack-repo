@@ -13,7 +13,7 @@ class REgsea(RPackage):
 	"""
 	
 	bioc = "EGSEA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EGSEA_1.30.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EGSEA/EGSEA_1.30.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EGSEA_1.30.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EGSEA/EGSEA_1.30.1.tar.gz"]
 
 	version("1.30.1", md5="6df5ddde1ce67014d637e6196177c11b")
 

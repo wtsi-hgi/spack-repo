@@ -14,7 +14,7 @@ class RSfedata(RPackage):
 	
 	homepage = "https://github.com/pachterlab/SFEData"
 	bioc = "SFEData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/SFEData_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/SFEData/SFEData_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SFEData_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SFEData/SFEData_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="7f3376870c972cba309b26d52d24fcbb")
 

@@ -14,7 +14,7 @@ class RSelectksigs(RPackage):
 	
 	homepage = "https://github.com/USCbiostats/selectKSigs"
 	bioc = "selectKSigs" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/selectKSigs_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/selectKSigs/selectKSigs_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/selectKSigs_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/selectKSigs/selectKSigs_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="95d84e53b480a52695c40071dfa9be68")
 

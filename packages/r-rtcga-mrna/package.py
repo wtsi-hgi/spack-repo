@@ -13,7 +13,7 @@ class RRtcgaMrna(RPackage):
 	"""
 	
 	bioc = "RTCGA.mRNA" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RTCGA.mRNA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/RTCGA.mRNA/RTCGA.mRNA_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.mRNA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.mRNA/RTCGA.mRNA_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="c9774207df355ef5945677d36e915103")
 

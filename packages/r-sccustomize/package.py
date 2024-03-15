@@ -16,7 +16,7 @@ Single Cell Sequencing
 	homepage = "https://github.com/samuel-marsh/scCustomize"
 	cran = "scCustomize" 
 
-	version("2.0.1", md5="cce9cd7882ac5db7e4ac3070d8616816")
+	version("2.1.2", md5="5409a8b8f7f5c6a3d215d1100ca6d406")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-seurat@4.3.0.1:", type=("build", "run"))
@@ -40,7 +40,7 @@ Single Cell Sequencing
 	depends_on("r-patchwork", type=("build", "run"))
 	depends_on("r-pbapply", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
-	depends_on("r-rlang@1.0.1:", type=("build", "run"))
+	depends_on("r-rlang@1.1.3:", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))
 	depends_on("r-scattermore@1.2:", type=("build", "run"))
 	depends_on("r-seuratobject@5:", type=("build", "run"))

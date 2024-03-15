@@ -14,7 +14,7 @@ class RBasicstan(RPackage):
 	
 	homepage = "https://github.com/Alanocallaghan/BASiCStan"
 	bioc = "BASiCStan" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BASiCStan_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BASiCStan/BASiCStan_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BASiCStan_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BASiCStan/BASiCStan_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="b7179ffcf510240c0c3cc6e8e31b60d7")
 

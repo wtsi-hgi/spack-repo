@@ -13,7 +13,7 @@ class RAdductomicsr(RPackage):
 	"""
 	
 	bioc = "adductomicsR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/adductomicsR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/adductomicsR/adductomicsR_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/adductomicsR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/adductomicsR/adductomicsR_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="82e24a09ba891b76e9497a6725b96fe0")
 

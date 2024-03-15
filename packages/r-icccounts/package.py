@@ -14,7 +14,7 @@ class RIcccounts(RPackage):
 	
 	cran = "iccCounts" 
 
-	version("1.1.1", md5="4461d1044237d003503e712450770f55")
+	version("1.1.2", md5="969fbcc2f5ae3e71a56c8b6c7716ab63")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-glmmtmb", type=("build", "run"))

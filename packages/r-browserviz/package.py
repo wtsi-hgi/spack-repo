@@ -14,7 +14,7 @@ class RBrowserviz(RPackage):
 	
 	homepage = "https://gladkia.github.io/BrowserViz/"
 	bioc = "BrowserViz" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BrowserViz_2.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BrowserViz/BrowserViz_2.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BrowserViz_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BrowserViz/BrowserViz_2.24.0.tar.gz"]
 
 	version("2.24.0", md5="ae6366903bd754cbe0ca0d21168c6883")
 

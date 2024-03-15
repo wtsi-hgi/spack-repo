@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,6 +13,8 @@ class RLavaan(RPackage):
 	analysis, structural equation modeling and latent growth curve models."""
 
 	cran = "lavaan"
+
+	license("GPL-2.0-or-later")
 
 	version("0.6-17", md5="515a33ff0e80effa763913c5e9d641c8")
 

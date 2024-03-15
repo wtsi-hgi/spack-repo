@@ -15,7 +15,7 @@ class RFlorabr(RPackage):
 	homepage = "https://wevertonbio.github.io/florabr/"
 	cran = "florabr" 
 
-	version("1.0.1", md5="7e1b4d3011ae2bc120fb79129c4bb05e")
+	version("1.1.0", md5="abf90a5ad8222dbdf87d38cc94cdd916")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-xml@3.99.0.14:", type=("build", "run"))

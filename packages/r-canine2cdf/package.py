@@ -13,7 +13,7 @@ class RCanine2cdf(RPackage):
 	"""
 	
 	bioc = "canine2cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/canine2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/canine2cdf/canine2cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/canine2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/canine2cdf/canine2cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="78740cde98c75e6680470564a4df74c3")
 

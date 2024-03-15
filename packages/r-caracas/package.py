@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,6 +14,8 @@ class RCaracas(RPackage):
 	symbolic sums and other important quantities."""
 
 	cran = "caracas"
+
+	license("GPL-2.0-or-later")
 
 	version("2.1.1", md5="772690703f3c912462ed6c78804e485e")
 

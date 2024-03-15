@@ -14,7 +14,7 @@ class ROpweight(RPackage):
 	
 	homepage = "https://github.com/mshasan/OPWeight"
 	bioc = "OPWeight" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/OPWeight_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/OPWeight/OPWeight_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OPWeight_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OPWeight/OPWeight_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="83d9a0007e617f317f9424a4c228c50a")
 

@@ -14,7 +14,7 @@ class RCghbase(RPackage):
 	
 	homepage = "https://github.com/tgac-vumc/CGHbase"
 	bioc = "CGHbase" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CGHbase_1.62.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CGHbase/CGHbase_1.62.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CGHbase_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CGHbase/CGHbase_1.62.0.tar.gz"]
 
 	version("1.62.0", md5="806f73dc042c0bf46989606a4aa4dbe8")
 

@@ -14,7 +14,7 @@ class RGgsc(RPackage):
 	
 	homepage = "https://github.com/YuLab-SMU/ggsc"
 	bioc = "ggsc" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ggsc_1.0.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ggsc/ggsc_1.0.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggsc_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggsc/ggsc_1.0.2.tar.gz"]
 
 	version("1.0.2", md5="4c0a1656e9943cadf436244c65b18242")
 

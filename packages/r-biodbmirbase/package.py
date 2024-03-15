@@ -13,7 +13,7 @@ class RBiodbmirbase(RPackage):
 	"""
 	
 	bioc = "biodbMirbase" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biodbMirbase_1.5.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biodbMirbase/biodbMirbase_1.5.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbMirbase_1.5.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbMirbase/biodbMirbase_1.5.0.tar.gz"]
 
 	version("1.5.0", md5="af331cadc2f7575e4dbf5345f19c61e6")
 

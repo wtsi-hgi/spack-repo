@@ -13,7 +13,7 @@ class RCaen(RPackage):
 	"""
 	
 	bioc = "CAEN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CAEN_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CAEN/CAEN_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CAEN_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CAEN/CAEN_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="66decd595d2315a90c09b7d52df606c5")
 

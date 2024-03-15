@@ -13,7 +13,7 @@ class RMu11ksubacdf(RPackage):
 	"""
 	
 	bioc = "mu11ksubacdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mu11ksubacdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mu11ksubacdf/mu11ksubacdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mu11ksubacdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mu11ksubacdf/mu11ksubacdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="52fb8ac56435775022fb62f40efafd22")
 

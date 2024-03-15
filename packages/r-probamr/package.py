@@ -13,7 +13,7 @@ class RProbamr(RPackage):
 	"""
 	
 	bioc = "proBAMr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/proBAMr_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/proBAMr/proBAMr_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/proBAMr_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/proBAMr/proBAMr_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="0b5a894a54fb0d56f940b75e025c0d47")
 

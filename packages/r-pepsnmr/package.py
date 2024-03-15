@@ -14,7 +14,7 @@ class RPepsnmr(RPackage):
 	
 	homepage = "https://github.com/ManonMartin/PepsNMR"
 	bioc = "PepsNMR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PepsNMR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PepsNMR/PepsNMR_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PepsNMR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PepsNMR/PepsNMR_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="afd34a264a3af86ad7aec1d6163b0aab")
 

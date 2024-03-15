@@ -14,7 +14,7 @@ class RCustomcmpdb(RPackage):
 	
 	homepage = "https://github.com/yduan004/customCMPdb/"
 	bioc = "customCMPdb" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/customCMPdb_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/customCMPdb/customCMPdb_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/customCMPdb_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/customCMPdb/customCMPdb_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="1aa1425d87c45ac42f2c7ed808a7a583")
 

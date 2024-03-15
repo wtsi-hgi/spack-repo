@@ -13,7 +13,7 @@ class RGsbenchmark(RPackage):
 	"""
 	
 	bioc = "GSBenchMark" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/GSBenchMark_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/GSBenchMark/GSBenchMark_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GSBenchMark_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GSBenchMark/GSBenchMark_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="bedfa52de1b414ae5fe9d5fc376380ba")
 

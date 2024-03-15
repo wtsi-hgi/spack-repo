@@ -13,7 +13,7 @@ class RGloscope(RPackage):
 	"""
 	
 	bioc = "GloScope" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GloScope_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GloScope/GloScope_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GloScope_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GloScope/GloScope_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="00ab18ecdd0a5768690b841f2f2448e5")
 

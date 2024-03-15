@@ -13,7 +13,7 @@ class RGenproseq(RPackage):
 	"""
 	
 	bioc = "GenProSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GenProSeq_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GenProSeq/GenProSeq_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenProSeq_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenProSeq/GenProSeq_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="15e772912f2019256df52d192edd5402")
 

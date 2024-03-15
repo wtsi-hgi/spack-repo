@@ -13,7 +13,7 @@ class RPdCyngene10St(RPackage):
 	"""
 	
 	bioc = "pd.cyngene.1.0.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.cyngene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.cyngene.1.0.st/pd.cyngene.1.0.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.cyngene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.cyngene.1.0.st/pd.cyngene.1.0.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="784fac6cc92a0fe46dae32c9b737812a")
 

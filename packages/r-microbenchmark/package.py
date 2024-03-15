@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,6 +13,8 @@ class RMicrobenchmark(RPackage):
 	time of R expressions."""
 
 	cran = "microbenchmark"
+
+	license("BSD-2-Clause")
 
 	version("1.4.10", md5="c64e467a01e792461a5cc544eac12f15")
 

@@ -14,7 +14,7 @@ class RMicrobiomeprofiler(RPackage):
 	
 	homepage = "https://github.com/YuLab-SMU/MicrobiomeProfiler/"
 	bioc = "MicrobiomeProfiler" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MicrobiomeProfiler_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MicrobiomeProfiler/MicrobiomeProfiler_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MicrobiomeProfiler_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MicrobiomeProfiler/MicrobiomeProfiler_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="47851ff17ed03e5b448a09513c7bf122")
 

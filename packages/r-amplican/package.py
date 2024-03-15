@@ -14,7 +14,7 @@ class RAmplican(RPackage):
 	
 	homepage = "https://github.com/valenlab/amplican"
 	bioc = "amplican" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/amplican_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/amplican/amplican_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/amplican_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/amplican/amplican_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="73fd9acdf5066ee76b1157068151f1f4")
 

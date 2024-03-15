@@ -14,7 +14,7 @@ class RBiom2(RPackage):
 	
 	cran = "BioM2" 
 
-	version("1.0.3", md5="a50204f41d7abb83c7ec67f9a2fe4062", url="https://cran.r-project.org/src/contrib/BioM2_1.0.3.tar.gz")
+	version("1.0.5", md5="a0e57da5a8d9b8fa573f70aadbd75d83", url="https://cran.r-project.org/src/contrib/BioM2_1.0.5.tar.gz")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-wgcna", type=("build", "run"))
@@ -34,6 +34,6 @@ class RBiom2(RPackage):
 	depends_on("r-uwot", type=("build", "run"))
 	depends_on("r-webshot", type=("build", "run"))
 	depends_on("r-wordcloud2", type=("build", "run"))
-	depends_on("r-intergraph", type=("build", "run"))
+	depends_on("r-ggforce", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))
 	depends_on("r-ggnetwork", type=("build", "run"))

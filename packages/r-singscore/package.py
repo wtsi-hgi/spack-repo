@@ -14,7 +14,7 @@ class RSingscore(RPackage):
 	
 	homepage = "https://davislaboratory.github.io/singscore"
 	bioc = "singscore" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/singscore_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/singscore/singscore_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/singscore_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/singscore/singscore_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="c3ab598fd61c5bb54a842f9738133d24")
 

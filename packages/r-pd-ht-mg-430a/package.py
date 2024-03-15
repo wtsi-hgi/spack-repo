@@ -13,7 +13,7 @@ class RPdHtMg430a(RPackage):
 	"""
 	
 	bioc = "pd.ht.mg.430a" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.ht.mg.430a_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.ht.mg.430a/pd.ht.mg.430a_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.ht.mg.430a_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.ht.mg.430a/pd.ht.mg.430a_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="65ea4fae22d21ad70998ba3ea034dcc0")
 

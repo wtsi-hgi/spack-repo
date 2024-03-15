@@ -14,7 +14,7 @@ class RMsbackendsql(RPackage):
 	
 	homepage = "https://github.com/RforMassSpectrometry/MsBackendSql"
 	bioc = "MsBackendSql" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MsBackendSql_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MsBackendSql/MsBackendSql_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsBackendSql_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsBackendSql/MsBackendSql_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="c5d7c6ce9c877e7c0bbbc1b63a71eb70")
 

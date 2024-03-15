@@ -13,7 +13,7 @@ class RDiggit(RPackage):
 	"""
 	
 	bioc = "diggit" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/diggit_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/diggit/diggit_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/diggit_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/diggit/diggit_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="8685d9b55ebfad0b44d6ca96d6fb4ab0")
 

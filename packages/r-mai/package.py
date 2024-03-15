@@ -14,7 +14,7 @@ class RMai(RPackage):
 	
 	homepage = "https://github.com/KechrisLab/MAI"
 	bioc = "MAI" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MAI_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MAI/MAI_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MAI_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MAI/MAI_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="ac8dbd997d58657f8ed6b64f5cdee7a9")
 

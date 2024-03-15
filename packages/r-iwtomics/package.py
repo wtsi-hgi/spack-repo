@@ -13,7 +13,7 @@ class RIwtomics(RPackage):
 	"""
 	
 	bioc = "IWTomics" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IWTomics_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IWTomics/IWTomics_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IWTomics_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IWTomics/IWTomics_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="f571644700ff672c2ac90aa49b611158")
 

@@ -13,7 +13,7 @@ class RDks(RPackage):
 	"""
 	
 	bioc = "dks" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/dks_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/dks/dks_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dks_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dks/dks_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="f15cb2d88222e2936dc9460d69a924ad")
 

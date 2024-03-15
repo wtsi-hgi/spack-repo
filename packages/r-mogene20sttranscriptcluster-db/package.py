@@ -13,7 +13,7 @@ class RMogene20sttranscriptclusterDb(RPackage):
 	"""
 	
 	bioc = "mogene20sttranscriptcluster.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mogene20sttranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mogene20sttranscriptcluster.db/mogene20sttranscriptcluster.db_8.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mogene20sttranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mogene20sttranscriptcluster.db/mogene20sttranscriptcluster.db_8.8.0.tar.gz"]
 
 	version("8.8.0", md5="e00e56d47bd19169875690e8e2129156")
 

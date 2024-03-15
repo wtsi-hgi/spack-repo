@@ -14,7 +14,7 @@ class RGaschyhs(RPackage):
 	
 	homepage = "http://genome-www.stanford.edu/yeast_stress/data/rawdata/complete_dataset.txt"
 	bioc = "gaschYHS" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/gaschYHS_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/gaschYHS/gaschYHS_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/gaschYHS_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/gaschYHS/gaschYHS_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="29983eadb2a2a20f7c5475206367d641")
 

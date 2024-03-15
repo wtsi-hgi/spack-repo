@@ -13,7 +13,7 @@ class RImman(RPackage):
 	"""
 	
 	bioc = "IMMAN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IMMAN_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IMMAN/IMMAN_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IMMAN_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IMMAN/IMMAN_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="6e3ac40584a93ea233ba0b082a4d79aa")
 

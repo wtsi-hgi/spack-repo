@@ -14,7 +14,7 @@ class RFrma(RPackage):
 	
 	homepage = "http://bioconductor.org"
 	bioc = "frma" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/frma_1.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/frma/frma_1.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/frma_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/frma/frma_1.54.0.tar.gz"]
 
 	version("1.54.0", md5="4892707c54a5698c48151bd630feb0e0")
 

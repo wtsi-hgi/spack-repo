@@ -13,7 +13,7 @@ class RPhenogeneranker(RPackage):
 	"""
 	
 	bioc = "PhenoGeneRanker" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PhenoGeneRanker_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PhenoGeneRanker/PhenoGeneRanker_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PhenoGeneRanker_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PhenoGeneRanker/PhenoGeneRanker_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="a6530ed180fae6b4250bc56d3de24e19")
 

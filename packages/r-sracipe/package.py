@@ -14,7 +14,7 @@ class RSracipe(RPackage):
 	
 	homepage = "https://vivekkohar.github.io/sRACIPE/"
 	bioc = "sRACIPE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sRACIPE_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sRACIPE/sRACIPE_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sRACIPE_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sRACIPE/sRACIPE_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="84a1b79b944741fc6ecab26168020841")
 

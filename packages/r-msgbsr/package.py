@@ -13,7 +13,7 @@ class RMsgbsr(RPackage):
 	"""
 	
 	bioc = "msgbsR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/msgbsR_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/msgbsR/msgbsR_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msgbsR_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msgbsR/msgbsR_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="41ae41a9216ffbe0ee9c51a91f89112c")
 

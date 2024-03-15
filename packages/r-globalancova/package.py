@@ -13,7 +13,7 @@ class RGlobalancova(RPackage):
 	"""
 	
 	bioc = "GlobalAncova" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GlobalAncova_4.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GlobalAncova/GlobalAncova_4.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GlobalAncova_4.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GlobalAncova/GlobalAncova_4.20.0.tar.gz"]
 
 	version("4.20.0", md5="4fcc19ebc2bba1f610912cde1745b549")
 

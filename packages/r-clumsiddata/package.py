@@ -13,7 +13,7 @@ class RClumsiddata(RPackage):
 	"""
 	
 	bioc = "CluMSIDdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/CluMSIDdata_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/CluMSIDdata/CluMSIDdata_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CluMSIDdata_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CluMSIDdata/CluMSIDdata_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="315da29d9f052e0abfbad59be9606f34")
 

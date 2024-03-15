@@ -15,7 +15,7 @@ class RLingtypology(RPackage):
 	homepage = "https://CRAN.R-project.org/package=lingtypology"
 	cran = "lingtypology" 
 
-	version("1.1.16", md5="6feeb880a2c2cca3d71b44ad8b407bcf")
+	version("1.1.17", md5="c2c11e3c1199d490c1c7707858f3e337")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-leaflet", type=("build", "run"))

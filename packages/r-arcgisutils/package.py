@@ -14,18 +14,19 @@ class RArcgisutils(RPackage):
     Services. It provides functionality for authorization, Esri JSON
     construction and parsing, as well as other utilities pertaining to
     geometry and Esri type conversions. To support 'ArcGIS Pro' users,
-    authorization can be done via 'arcgisbinding'. Installation instructions
-    for 'arcgisbinding' can be found at
+    authorization can be done via 'arcgisbinding'. Installation
+    instructions for 'arcgisbinding' can be found at
     <https://r.esri.com/r-bridge-site/arcgisbinding/installing-arcgisbinding.html>.
 	"""
 	
 	homepage = "https://github.com/R-ArcGIS/arcgisutils"
 	cran = "arcgisutils" 
 
-	version("0.1.1", md5="e54c6cf270eb7c82170028534aad3b13")
+	version("0.2.0", md5="04ec44f6b1462fa2f988266e066b34b5")
 
+	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-dbplyr", type=("build", "run"))
-	depends_on("r-httr2", type=("build", "run"))
+	depends_on("r-httr2@1:", type=("build", "run"))
 	depends_on("r-jsonify", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rcppsimdjson", type=("build", "run"))

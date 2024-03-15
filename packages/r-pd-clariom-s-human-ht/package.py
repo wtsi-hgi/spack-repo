@@ -13,7 +13,7 @@ class RPdClariomSHumanHt(RPackage):
 	"""
 	
 	bioc = "pd.clariom.s.human.ht" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.clariom.s.human.ht_3.14.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.clariom.s.human.ht/pd.clariom.s.human.ht_3.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.clariom.s.human.ht_3.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.clariom.s.human.ht/pd.clariom.s.human.ht_3.14.1.tar.gz"]
 
 	version("3.14.1", md5="90f910bea1b1aeb550a3f1bdd91d1a06")
 

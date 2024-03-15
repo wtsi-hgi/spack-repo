@@ -14,7 +14,7 @@ class RPsichomics(RPackage):
 	
 	homepage = "https://nuno-agostinho.github.io/psichomics/"
 	bioc = "psichomics" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/psichomics_1.28.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/psichomics/psichomics_1.28.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/psichomics_1.28.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/psichomics/psichomics_1.28.1.tar.gz"]
 
 	version("1.28.1", md5="78be9625aca55b2c978cd56a873f7e71")
 

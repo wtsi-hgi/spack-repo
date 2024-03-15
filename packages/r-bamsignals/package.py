@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,7 @@ class RBamsignals(RPackage):
 	end data."""
 
 	bioc = "bamsignals"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/bamsignals_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/bamsignals/bamsignals_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bamsignals_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bamsignals/bamsignals_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="e7b42351aa9651bdf7d429a6377143f5")
 

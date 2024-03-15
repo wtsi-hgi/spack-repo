@@ -13,7 +13,7 @@ class RBuscorrect(RPackage):
 	"""
 	
 	bioc = "BUScorrect" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BUScorrect_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BUScorrect/BUScorrect_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BUScorrect_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BUScorrect/BUScorrect_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="6d24bece1ac7982a2a157e5cccc01b99")
 

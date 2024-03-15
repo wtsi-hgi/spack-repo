@@ -13,7 +13,7 @@ class RSynlet(RPackage):
 	"""
 	
 	bioc = "synlet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/synlet_2.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/synlet/synlet_2.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/synlet_2.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/synlet/synlet_2.2.0.tar.gz"]
 
 	version("2.2.0", md5="f56c634faaae3a0de5e46d18e6617d11")
 

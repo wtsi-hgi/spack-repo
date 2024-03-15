@@ -14,7 +14,7 @@ class RScmerge(RPackage):
 	
 	homepage = "https://github.com/SydneyBioX/scMerge"
 	bioc = "scMerge" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scMerge_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scMerge/scMerge_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scMerge_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scMerge/scMerge_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="d5b285890500ad5c781d33ab45282aca")
 

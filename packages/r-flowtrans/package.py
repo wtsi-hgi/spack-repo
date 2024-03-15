@@ -13,7 +13,7 @@ class RFlowtrans(RPackage):
 	"""
 	
 	bioc = "flowTrans" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowTrans_1.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowTrans/flowTrans_1.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowTrans_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowTrans/flowTrans_1.54.0.tar.gz"]
 
 	version("1.54.0", md5="d98daa4177e5f6b8cda8d8475e34c09a")
 

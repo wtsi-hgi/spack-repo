@@ -13,7 +13,7 @@ class RQuartpac(RPackage):
 	"""
 	
 	bioc = "QuartPAC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/QuartPAC_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/QuartPAC/QuartPAC_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QuartPAC_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QuartPAC/QuartPAC_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="91af5166d133016b9beaa8539f0fcef7")
 

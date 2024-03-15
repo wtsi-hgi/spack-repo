@@ -13,7 +13,7 @@ class RFlowspecs(RPackage):
 	"""
 	
 	bioc = "flowSpecs" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowSpecs_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowSpecs/flowSpecs_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowSpecs_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowSpecs/flowSpecs_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="502f1e04027fab8076745a5386401f2e")
 

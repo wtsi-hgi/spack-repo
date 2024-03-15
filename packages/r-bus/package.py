@@ -13,7 +13,7 @@ class RBus(RPackage):
 	"""
 	
 	bioc = "BUS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BUS_1.58.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BUS/BUS_1.58.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BUS_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BUS/BUS_1.58.0.tar.gz"]
 
 	version("1.58.0", md5="788ab26ecf05f0df93667a7c37f564ff")
 

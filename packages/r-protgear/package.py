@@ -14,7 +14,7 @@ class RProtgear(RPackage):
 	
 	homepage = "https://github.com/Keniajin/protGear"
 	bioc = "protGear" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/protGear_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/protGear/protGear_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/protGear_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/protGear/protGear_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="db63dca71894a3ebbf3b8b78512bccb4")
 

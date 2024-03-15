@@ -14,7 +14,7 @@ class RNipalsmcia(RPackage):
 	
 	homepage = "https://github.com/Muunraker/nipalsMCIA"
 	bioc = "nipalsMCIA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/nipalsMCIA_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/nipalsMCIA/nipalsMCIA_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nipalsMCIA_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nipalsMCIA/nipalsMCIA_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="0558d05ea61523c6fcaed9d8ed9b0ded")
 

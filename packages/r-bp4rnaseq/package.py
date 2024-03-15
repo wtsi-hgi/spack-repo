@@ -13,7 +13,7 @@ class RBp4rnaseq(RPackage):
 	"""
 	
 	bioc = "BP4RNAseq" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/BP4RNAseq_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/BP4RNAseq/BP4RNAseq_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/BP4RNAseq_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/BP4RNAseq/BP4RNAseq_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="99c393a9255b3a2d61647320345290bf")
 

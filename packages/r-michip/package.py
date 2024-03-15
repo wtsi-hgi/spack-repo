@@ -13,7 +13,7 @@ class RMichip(RPackage):
 	"""
 	
 	bioc = "MiChip" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MiChip_1.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MiChip/MiChip_1.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MiChip_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MiChip/MiChip_1.56.0.tar.gz"]
 
 	version("1.56.0", md5="28daafdf6588314a9fad7a75b1671c10")
 

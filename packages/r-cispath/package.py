@@ -13,7 +13,7 @@ class RCispath(RPackage):
 	"""
 	
 	bioc = "cisPath" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cisPath_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cisPath/cisPath_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cisPath_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cisPath/cisPath_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="958a35281b9aa98b2d5c3a5c4e9c8824")
 

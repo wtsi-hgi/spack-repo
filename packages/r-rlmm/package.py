@@ -14,7 +14,7 @@ class RRlmm(RPackage):
 	
 	homepage = "http://www.stat.berkeley.edu/users/nrabbee/RLMM"
 	bioc = "RLMM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RLMM_1.64.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RLMM/RLMM_1.64.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RLMM_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RLMM/RLMM_1.64.0.tar.gz"]
 
 	version("1.64.0", md5="7c43c967fab2a5e90059b26e46de345b")
 

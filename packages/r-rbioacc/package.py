@@ -16,10 +16,10 @@ class RRbioacc(RPackage):
     substances. See Ratier et al. (2021) <doi:10.1101/2021.09.08.459421>.
 	"""
 	
-	homepage = "https://gitlab.com/qonfluens/model/rbioacc"
+	homepage = "https://gitlab.in2p3.fr/mosaic-software/rbioacc"
 	cran = "rbioacc" 
 
-	version("1.2-0", md5="b8590cb1258b7cf1ca57f7260a8138bf")
+	version("1.2.1", md5="e2fe108d79eac0ea490832c5251f21a3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

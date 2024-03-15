@@ -14,7 +14,7 @@ class RSevenbridges(RPackage):
 	
 	homepage = "https://www.sevenbridges.com"
 	bioc = "sevenbridges" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sevenbridges_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sevenbridges/sevenbridges_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sevenbridges_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sevenbridges/sevenbridges_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="1c204add9c56d7518a5362b99111ec18")
 

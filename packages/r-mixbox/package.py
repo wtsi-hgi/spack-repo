@@ -19,7 +19,7 @@ class RMixbox(RPackage):
 	
 	cran = "mixbox" 
 
-	version("1.2.2", md5="528ee97476f1d32c76d2e2d2fc2b4b77")
+	version("1.2.3", md5="a8fba7436ed7ae59a8a043e13e5c3eb2")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-gigrvg", type=("build", "run"))

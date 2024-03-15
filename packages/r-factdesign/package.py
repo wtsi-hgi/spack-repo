@@ -13,7 +13,7 @@ class RFactdesign(RPackage):
 	"""
 	
 	bioc = "factDesign" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/factDesign_1.78.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/factDesign/factDesign_1.78.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/factDesign_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/factDesign/factDesign_1.78.0.tar.gz"]
 
 	version("1.78.0", md5="774d444f3227bbac6bc13e48d3974b20")
 

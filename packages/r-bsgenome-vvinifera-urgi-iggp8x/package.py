@@ -13,7 +13,7 @@ class RBsgenomeVviniferaUrgiIggp8x(RPackage):
 	"""
 	
 	bioc = "BSgenome.Vvinifera.URGI.IGGP8X" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Vvinifera.URGI.IGGP8X_0.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Vvinifera.URGI.IGGP8X/BSgenome.Vvinifera.URGI.IGGP8X_0.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Vvinifera.URGI.IGGP8X_0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Vvinifera.URGI.IGGP8X/BSgenome.Vvinifera.URGI.IGGP8X_0.1.tar.gz"]
 
 	version("0.1", md5="fccaf60e5c9352b9c454f7a8ecac2a20")
 

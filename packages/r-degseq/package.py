@@ -13,7 +13,7 @@ class RDegseq(RPackage):
 	"""
 	
 	bioc = "DEGseq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DEGseq_1.56.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DEGseq/DEGseq_1.56.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEGseq_1.56.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEGseq/DEGseq_1.56.1.tar.gz"]
 
 	version("1.56.1", md5="cc89e25cb7e9afc38b5fb2bba34722b5")
 

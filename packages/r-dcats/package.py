@@ -13,7 +13,7 @@ class RDcats(RPackage):
 	"""
 	
 	bioc = "DCATS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DCATS_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DCATS/DCATS_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DCATS_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DCATS/DCATS_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="8a6002426027bd88d05a2b8759d5a12e")
 

@@ -14,7 +14,7 @@ class RPast(RPackage):
 	
 	homepage = "https://github.com/IGBB/past"
 	bioc = "PAST" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PAST_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PAST/PAST_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PAST_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PAST/PAST_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="9af26fa0c8f74a586f23905b9b2408c3")
 

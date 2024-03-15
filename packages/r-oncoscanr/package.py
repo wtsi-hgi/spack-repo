@@ -14,7 +14,7 @@ class ROncoscanr(RPackage):
 	
 	homepage = "https://github.com/yannchristinat/oncoscanR"
 	bioc = "oncoscanR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/oncoscanR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/oncoscanR/oncoscanR_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oncoscanR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oncoscanR/oncoscanR_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="48aee6850c94c299417e75cf74418b01")
 

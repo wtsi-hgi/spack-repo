@@ -13,7 +13,7 @@ class RRarevariantvis(RPackage):
 	"""
 	
 	bioc = "RareVariantVis" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RareVariantVis_2.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RareVariantVis/RareVariantVis_2.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RareVariantVis_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RareVariantVis/RareVariantVis_2.30.0.tar.gz"]
 
 	version("2.30.0", md5="2157172a825bbc826d5c2f3d17a41987")
 

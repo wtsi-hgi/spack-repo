@@ -13,7 +13,7 @@ class RNparc(RPackage):
 	"""
 	
 	bioc = "NPARC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/NPARC_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/NPARC/NPARC_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NPARC_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NPARC/NPARC_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="b49f408fb60e58d3c62cfd2d5d4809cb")
 

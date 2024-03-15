@@ -13,7 +13,7 @@ class ROligodata(RPackage):
 	"""
 	
 	bioc = "oligoData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/oligoData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/oligoData/oligoData_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/oligoData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/oligoData/oligoData_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="9625cfd4b31bb575c4029a0632a7ee12")
 

@@ -13,7 +13,7 @@ class RSsviz(RPackage):
 	"""
 	
 	bioc = "ssviz" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ssviz_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ssviz/ssviz_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ssviz_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ssviz/ssviz_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="00bd4a7d6a57af51b74187993bdf84c4")
 

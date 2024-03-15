@@ -13,7 +13,7 @@ class RCelltrails(RPackage):
 	"""
 	
 	bioc = "CellTrails" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CellTrails_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CellTrails/CellTrails_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellTrails_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellTrails/CellTrails_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="87b23b653d772f9b436b655e5e8af5ae")
 

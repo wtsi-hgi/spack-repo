@@ -14,7 +14,7 @@ class RSparsesignatures(RPackage):
 	
 	homepage = "https://github.com/danro9685/SparseSignatures"
 	bioc = "SparseSignatures" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SparseSignatures_2.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SparseSignatures/SparseSignatures_2.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SparseSignatures_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SparseSignatures/SparseSignatures_2.12.0.tar.gz"]
 
 	version("2.12.0", md5="832b206679a06252fa3b76f2700a70e9")
 

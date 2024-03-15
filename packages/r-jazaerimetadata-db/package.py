@@ -13,7 +13,7 @@ class RJazaerimetadataDb(RPackage):
 	"""
 	
 	bioc = "JazaeriMetaData.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/JazaeriMetaData.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/JazaeriMetaData.db/JazaeriMetaData.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/JazaeriMetaData.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/JazaeriMetaData.db/JazaeriMetaData.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="3a154a74ac2acebe3471b039c9d9a4dc")
 

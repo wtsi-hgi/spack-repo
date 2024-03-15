@@ -12,10 +12,10 @@ class RFmeffects(RPackage):
 	Create local, regional, and global explanations for any machine learning model with forward marginal effects. You provide a model and data, and 'fmeffects' computes feature effects. The package is based on the theory in: C. A. Scholbeck, G. Casalicchio, C. Molnar, B. Bischl, and C. Heumann (2022) <arXiv:2201.08837>.
 	"""
 	
-	homepage = "https://github.com/holgstr/fmeffects"
+	homepage = "https://holgstr.github.io/fmeffects/"
 	cran = "fmeffects" 
 
-	version("0.1.1", md5="9b8ae95bd5ff034dd35b6b6199d1ecb7")
+	version("0.1.2", md5="c62bb9f9b2a7000c6119411425b8411d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

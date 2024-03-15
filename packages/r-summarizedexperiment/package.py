@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,7 @@ class RSummarizedexperiment(RPackage):
 	samples."""
 
 	bioc = "SummarizedExperiment"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SummarizedExperiment_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SummarizedExperiment/SummarizedExperiment_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SummarizedExperiment_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SummarizedExperiment/SummarizedExperiment_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="cf4b430247b40acb2be8e6c9ecf3aac7")
 

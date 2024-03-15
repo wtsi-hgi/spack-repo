@@ -14,7 +14,7 @@ class RCelldex(RPackage):
 	
 	homepage = "https://github.com/LTLA/celldex"
 	bioc = "celldex" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/celldex_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/celldex/celldex_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/celldex_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/celldex/celldex_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="62419c915beb91f7c228e1a125df68f8")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RTclust(RPackage):
 	<doi:10.1007/s11222-010-9194-z> and others."""
 
 	cran = "tclust"
+
+	license("GPL-3.0-only")
 
 	version("1.5-6", md5="d4078d45e8cd522cf3bfff08d9ec04ee")
 

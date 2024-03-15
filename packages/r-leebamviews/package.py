@@ -13,7 +13,7 @@ class RLeebamviews(RPackage):
 	"""
 	
 	bioc = "leeBamViews" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/leeBamViews_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/leeBamViews/leeBamViews_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/leeBamViews_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/leeBamViews/leeBamViews_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="58f7c7fdbb1f949f48924ac79d31b580")
 

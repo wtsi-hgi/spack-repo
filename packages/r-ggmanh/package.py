@@ -13,7 +13,7 @@ class RGgmanh(RPackage):
 	"""
 	
 	bioc = "ggmanh" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ggmanh_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ggmanh/ggmanh_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggmanh_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggmanh/ggmanh_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="dbbd8130e9ef70cb69c7e305af0c37d7")
 

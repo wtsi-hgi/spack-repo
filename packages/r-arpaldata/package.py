@@ -19,7 +19,7 @@ Lombardia
 	
 	cran = "ARPALData" 
 
-	version("1.5.0", md5="69f58c643c3355d0cdeb08eab1392de0")
+	version("1.5.1", md5="bad7deb37b648b7b655a0e753fd5138a")
 
 	depends_on("r-tidyselect", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

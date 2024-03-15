@@ -13,7 +13,7 @@ class RBayesknockdown(RPackage):
 	"""
 	
 	bioc = "BayesKnockdown" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BayesKnockdown_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BayesKnockdown/BayesKnockdown_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BayesKnockdown_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BayesKnockdown/BayesKnockdown_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="6efc97e1bf0448a97ca0b3d595096a3d")
 

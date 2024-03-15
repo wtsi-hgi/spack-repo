@@ -13,7 +13,7 @@ class REudysbiome(RPackage):
 	"""
 	
 	bioc = "eudysbiome" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/eudysbiome_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/eudysbiome/eudysbiome_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/eudysbiome_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/eudysbiome/eudysbiome_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="76023a8328d58f7d5b783679a08c7ea8")
 

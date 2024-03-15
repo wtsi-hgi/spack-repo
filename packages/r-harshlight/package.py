@@ -14,7 +14,7 @@ class RHarshlight(RPackage):
 	
 	homepage = "http://asterion.rockefeller.edu/Harshlight/"
 	bioc = "Harshlight" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Harshlight_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Harshlight/Harshlight_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Harshlight_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Harshlight/Harshlight_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="36adabb3111ae035069431431dd9434a")
 

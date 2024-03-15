@@ -14,7 +14,7 @@ class RAucell(RPackage):
 	
 	homepage = "http://scenic.aertslab.org"
 	bioc = "AUCell" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AUCell_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AUCell/AUCell_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AUCell_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AUCell/AUCell_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="4d095823da2fd13bf83c831c037564ff")
 

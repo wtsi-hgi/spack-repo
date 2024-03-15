@@ -13,7 +13,7 @@ class RRnaseqpower(RPackage):
 	"""
 	
 	bioc = "RNASeqPower" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RNASeqPower_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RNASeqPower/RNASeqPower_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNASeqPower_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNASeqPower/RNASeqPower_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="38da142eb3ee64f2e7684ead27e4520f")
 

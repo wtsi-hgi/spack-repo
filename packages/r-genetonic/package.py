@@ -14,7 +14,7 @@ class RGenetonic(RPackage):
 	
 	homepage = "https://github.com/federicomarini/GeneTonic"
 	bioc = "GeneTonic" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GeneTonic_2.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GeneTonic/GeneTonic_2.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneTonic_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneTonic/GeneTonic_2.6.0.tar.gz"]
 
 	version("2.6.0", md5="efbbb39095cb7ff8af87ed47d058d8d8")
 

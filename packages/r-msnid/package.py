@@ -13,7 +13,7 @@ class RMsnid(RPackage):
 	"""
 	
 	bioc = "MSnID" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MSnID_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MSnID/MSnID_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSnID_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSnID/MSnID_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="e0491fe4f99deb1c0128ab4dcde8f3f3")
 

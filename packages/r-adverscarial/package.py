@@ -13,7 +13,7 @@ class RAdverscarial(RPackage):
 	"""
 	
 	bioc = "adverSCarial" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/adverSCarial_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/adverSCarial/adverSCarial_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/adverSCarial_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/adverSCarial/adverSCarial_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="196840790cf7fd0a0cbfe6d1aeb60e07")
 

@@ -13,7 +13,7 @@ class RBsgenomeDmelanogasterUcscDm2Masked(RPackage):
 	"""
 	
 	bioc = "BSgenome.Dmelanogaster.UCSC.dm2.masked" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Dmelanogaster.UCSC.dm2.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Dmelanogaster.UCSC.dm2.masked/BSgenome.Dmelanogaster.UCSC.dm2.masked_1.3.99.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Dmelanogaster.UCSC.dm2.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Dmelanogaster.UCSC.dm2.masked/BSgenome.Dmelanogaster.UCSC.dm2.masked_1.3.99.tar.gz"]
 
 	version("1.3.99", md5="ae7ca3053e97a0d6bd20bc2b9635ecce")
 

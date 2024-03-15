@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,6 +16,8 @@ class RSnowfall(RPackage):
 	management tool sfCluster, but can also used without it."""
 
 	cran = "snowfall"
+
+	license("GPL-2.0-or-later")
 
 	version("1.84-6.3", md5="4ca758a26dd4e862cc9ffd43ae16b2d3")
 

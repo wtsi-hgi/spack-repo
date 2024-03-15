@@ -14,7 +14,7 @@ class RGdnax(RPackage):
 	
 	homepage = "https://github.com/functionalgenomics/gDNAx"
 	bioc = "gDNAx" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gDNAx_1.0.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gDNAx/gDNAx_1.0.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gDNAx_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gDNAx/gDNAx_1.0.1.tar.gz"]
 
 	version("1.0.1", md5="4f51a23263fff85c936d0319a2c0e1de")
 

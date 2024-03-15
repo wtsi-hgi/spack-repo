@@ -14,7 +14,7 @@ class RDiffcoexp(RPackage):
 	
 	homepage = "https://github.com/hidelab/diffcoexp"
 	bioc = "diffcoexp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/diffcoexp_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/diffcoexp/diffcoexp_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/diffcoexp_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/diffcoexp/diffcoexp_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="0985f656837da53f557041125f7583a0")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -19,7 +19,9 @@ class RSystemfonts(RPackage):
 
 	cran = "systemfonts"
 
-	version("1.0.5", md5="92edbeac47df03bf8015ac2d97c2a739")
+	license("MIT")
+
+	version("1.0.6", md5="a64862faca6ec5e67a0381bc0eb300be")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-cpp11@0.2.1:", type=("build", "run"))

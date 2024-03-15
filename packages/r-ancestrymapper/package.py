@@ -10,10 +10,10 @@ class RAncestrymapper(RPackage):
 	"""Assigning Ancestry Based on Population References
 
 	Assigns genetic ancestry to an individual and
-    studies relationships between local and global populations.
+	studies relationships between local and global populations.
 	"""
 	
-	cran = "AncestryMapper" 
+	cran = "AncestryMapper"
 
 	version("2.0", md5="bef31a5015a0af1a6702cbb35df1fc29")
 

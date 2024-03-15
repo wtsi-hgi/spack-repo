@@ -13,7 +13,7 @@ class RXcore(RPackage):
 	"""
 	
 	bioc = "xcore" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/xcore_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/xcore/xcore_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/xcore_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/xcore/xcore_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="4dd79b63bd7ff46aaa1b84dade889db2")
 

@@ -20,11 +20,14 @@ class RScrutiny(RPackage):
 	homepage = "https://lhdjung.github.io/scrutiny/"
 	cran = "scrutiny" 
 
-	version("0.3.0", md5="f3f390603f13e976c0a0b1fb02d12630")
+	version("0.4.0", md5="22fe7e6d3b30922fe412c514d37002af")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
+	depends_on("r-corrr", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
+	depends_on("r-ggplot2", type=("build", "run"))
+	depends_on("r-ggrepel", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
 	depends_on("r-lifecycle", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
@@ -32,3 +35,5 @@ class RScrutiny(RPackage):
 	depends_on("r-rlang@1.0.2:", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
+	depends_on("r-tidyr", type=("build", "run"))
+	depends_on("r-tidyselect", type=("build", "run"))

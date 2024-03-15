@@ -13,7 +13,7 @@ class RRlassocox(RPackage):
 	"""
 	
 	bioc = "RLassoCox" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RLassoCox_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RLassoCox/RLassoCox_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RLassoCox_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RLassoCox/RLassoCox_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="3f92bc442df2edc28546415bc716123b")
 

@@ -21,7 +21,7 @@ class RPak(RPackage):
 	homepage = "https://pak.r-lib.org/"
 	cran = "pak" 
 
-	version("0.7.1", md5="9eddae8f9345c4e5ad3a9692be09e6f8")
+	version("0.7.1", md5="bc95a3a8966b8042d0201729e7ab186f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("curl", type=("build", "link", "run"))

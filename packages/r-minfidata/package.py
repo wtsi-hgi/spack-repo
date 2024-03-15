@@ -13,7 +13,7 @@ class RMinfidata(RPackage):
 	"""
 	
 	bioc = "minfiData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/minfiData_0.48.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/minfiData/minfiData_0.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/minfiData_0.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/minfiData/minfiData_0.48.0.tar.gz"]
 
 	version("0.48.0", md5="1ca7578aeab1a54db146c443870be6e7")
 

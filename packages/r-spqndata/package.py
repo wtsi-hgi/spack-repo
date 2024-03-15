@@ -13,7 +13,7 @@ class RSpqndata(RPackage):
 	"""
 	
 	bioc = "spqnData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/spqnData_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/spqnData/spqnData_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/spqnData_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/spqnData/spqnData_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="453bf944ea40956afef2bd868f92d747")
 

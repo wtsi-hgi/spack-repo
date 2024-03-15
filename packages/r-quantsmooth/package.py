@@ -13,7 +13,7 @@ class RQuantsmooth(RPackage):
 	"""
 	
 	bioc = "quantsmooth" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/quantsmooth_1.68.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/quantsmooth/quantsmooth_1.68.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/quantsmooth_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/quantsmooth/quantsmooth_1.68.0.tar.gz"]
 
 	version("1.68.0", md5="cb47e0040fd219ad15aebf094dd379cd")
 

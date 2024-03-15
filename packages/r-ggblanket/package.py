@@ -9,25 +9,27 @@ from spack.package import *
 class RGgblanket(RPackage):
 	"""Simplify 'ggplot2' Visualisation
 
-	Simplify 'ggplot2' visualisation with 'ggblanket' wrapper functions. 
+	Simplify 'ggplot2' visualisation with 'ggblanket' wrapper
+    functions.
 	"""
 	
 	homepage = "https://davidhodge931.github.io/ggblanket/"
 	cran = "ggblanket" 
 
-	version("5.2.0", md5="4f47c1f462d7b8a27dcd1a969c3ee7e2")
+	version("6.0.0", md5="bb442ed7b90d395e52dd6e8f39629114")
 
-	depends_on("r-viridislite", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
+	depends_on("r-dplyr@1.0.4:", type=("build", "run"))
+	depends_on("r-farver", type=("build", "run"))
 	depends_on("r-forcats", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-hms", type=("build", "run"))
-	depends_on("r-lubridate", type=("build", "run"))
+	depends_on("r-ggplot2@3.5:", type=("build", "run"))
+	depends_on("r-hms@0.5:", type=("build", "run"))
+	depends_on("r-lubridate@1.7.8:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
-	depends_on("r-scales", type=("build", "run"))
+	depends_on("r-rlang@1.1:", type=("build", "run"))
+	depends_on("r-scales@1.3:", type=("build", "run"))
 	depends_on("r-snakecase", type=("build", "run"))
-	depends_on("r-stringr", type=("build", "run"))
-	depends_on("r-tidyr", type=("build", "run"))
-	depends_on("r-tidyselect", type=("build", "run"))
+	depends_on("r-stringr@1.3:", type=("build", "run"))
+	depends_on("r-tidyr@1:", type=("build", "run"))
+	depends_on("r-tidyselect@1.2:", type=("build", "run"))
+	depends_on("r-viridislite@0.4:", type=("build", "run"))

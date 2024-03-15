@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,7 +17,7 @@ class RRtracklayer(RPackage):
 	current viewport."""
 
 	bioc = "rtracklayer"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rtracklayer_1.62.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rtracklayer/rtracklayer_1.62.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rtracklayer_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rtracklayer/rtracklayer_1.62.0.tar.gz"]
 
 	version("1.62.0", md5="a16a9ca02e49808b38823899860abdb6")
 

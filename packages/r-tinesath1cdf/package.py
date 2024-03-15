@@ -13,7 +13,7 @@ class RTinesath1cdf(RPackage):
 	"""
 	
 	bioc = "tinesath1cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/tinesath1cdf_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/tinesath1cdf/tinesath1cdf_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tinesath1cdf_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tinesath1cdf/tinesath1cdf_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="a58177f0ed4976f52370b35e13818ce3")
 

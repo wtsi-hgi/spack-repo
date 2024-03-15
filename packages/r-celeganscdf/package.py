@@ -13,7 +13,7 @@ class RCeleganscdf(RPackage):
 	"""
 	
 	bioc = "celeganscdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/celeganscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/celeganscdf/celeganscdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/celeganscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/celeganscdf/celeganscdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="1098cd99bfc5000bf9858e4a3acaf452")
 

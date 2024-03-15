@@ -16,7 +16,7 @@ class RLangevitour(RPackage):
 	homepage = "https://logarithmic.net/langevitour/"
 	cran = "langevitour" 
 
-	version("0.6", md5="d00457dcf9966faad91a8d063bdbb4de")
+	version("0.7", md5="3059fe96ed04e8dcc5b8f67b9e7cb182")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-htmlwidgets", type=("build", "run"))

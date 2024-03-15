@@ -13,7 +13,7 @@ class RCardinalworkflows(RPackage):
 	"""
 	
 	bioc = "CardinalWorkflows" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/CardinalWorkflows_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/CardinalWorkflows/CardinalWorkflows_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CardinalWorkflows_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CardinalWorkflows/CardinalWorkflows_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="54c51a2ec2f20f96ad9e60c16eeb2ccb")
 

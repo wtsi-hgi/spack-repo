@@ -14,7 +14,7 @@ class RMsprep(RPackage):
 	
 	homepage = "https://github.com/KechrisLab/MSPrep"
 	bioc = "MSPrep" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MSPrep_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MSPrep/MSPrep_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSPrep_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSPrep/MSPrep_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="65036a0ebe0b1280a2c4666c263a6e5f")
 

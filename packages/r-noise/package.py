@@ -15,7 +15,7 @@ Data
 	
 	cran = "noise" 
 
-	version("1.0.1", md5="bb8829fc91c21c0ce89cb904bbbd7744")
+	version("1.0.2", md5="676c0af221050757140bbf4b5263d653")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-preprocesscore", type=("build", "run"))

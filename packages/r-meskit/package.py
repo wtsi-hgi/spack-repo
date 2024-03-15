@@ -13,7 +13,7 @@ class RMeskit(RPackage):
 	"""
 	
 	bioc = "MesKit" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MesKit_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MesKit/MesKit_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MesKit_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MesKit/MesKit_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="909ad92f34384c66c0e86f0f13ff7e71")
 

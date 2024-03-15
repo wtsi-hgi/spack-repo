@@ -13,7 +13,7 @@ class RPairkat(RPackage):
 	"""
 	
 	bioc = "pairkat" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pairkat_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pairkat/pairkat_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pairkat_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pairkat/pairkat_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="030b0f4ea6e9f71adf6769ca9b16cae0")
 

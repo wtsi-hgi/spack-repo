@@ -13,7 +13,7 @@ class RFfpeexampledata(RPackage):
 	"""
 	
 	bioc = "ffpeExampleData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/ffpeExampleData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/ffpeExampleData/ffpeExampleData_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ffpeExampleData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ffpeExampleData/ffpeExampleData_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="6ea474bdf448ff6026ec4f1f376b7d69")
 

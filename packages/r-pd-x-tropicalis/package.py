@@ -13,7 +13,7 @@ class RPdXTropicalis(RPackage):
 	"""
 	
 	bioc = "pd.x.tropicalis" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.x.tropicalis_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.x.tropicalis/pd.x.tropicalis_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.x.tropicalis_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.x.tropicalis/pd.x.tropicalis_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="79a4de91831e4b0153495e12b9c6e8d3")
 

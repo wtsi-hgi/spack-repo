@@ -14,7 +14,7 @@ class REupathdb(RPackage):
 	
 	homepage = "https://github.com/khughitt/EuPathDB"
 	bioc = "EuPathDB" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/EuPathDB_1.0.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/EuPathDB/EuPathDB_1.0.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EuPathDB_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/EuPathDB/EuPathDB_1.0.1.tar.gz"]
 
 	version("1.0.1", md5="1451c3ab6c224d9a4cfbdf27dc5c2680")
 

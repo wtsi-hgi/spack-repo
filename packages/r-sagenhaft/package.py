@@ -14,7 +14,7 @@ class RSagenhaft(RPackage):
 	
 	homepage = "http://www.bioinf.med.uni-goettingen.de"
 	bioc = "sagenhaft" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sagenhaft_1.72.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sagenhaft/sagenhaft_1.72.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sagenhaft_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sagenhaft/sagenhaft_1.72.0.tar.gz"]
 
 	version("1.72.0", md5="4f27450a0e98b4f0f7396a784eb0e4e3")
 

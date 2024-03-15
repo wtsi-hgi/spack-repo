@@ -13,7 +13,7 @@ class RYgs98frmavecs(RPackage):
 	"""
 	
 	bioc = "ygs98frmavecs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ygs98frmavecs_1.3.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/ygs98frmavecs/ygs98frmavecs_1.3.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ygs98frmavecs_1.3.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ygs98frmavecs/ygs98frmavecs_1.3.0.tar.gz"]
 
 	version("1.3.0", md5="e78c8447eb381b91dafb2f9688da39dc")
 

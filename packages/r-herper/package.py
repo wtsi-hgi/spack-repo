@@ -14,7 +14,7 @@ class RHerper(RPackage):
 	
 	homepage = "https://github.com/RockefellerUniversity/Herper"
 	bioc = "Herper" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Herper_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Herper/Herper_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Herper_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Herper/Herper_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="dad437a472cae186246d3cf0f6b44964")
 

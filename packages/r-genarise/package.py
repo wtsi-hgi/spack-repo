@@ -14,7 +14,7 @@ class RGenarise(RPackage):
 	
 	homepage = "http://www.ifc.unam.mx/genarise"
 	bioc = "genArise" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/genArise_1.78.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/genArise/genArise_1.78.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genArise_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genArise/genArise_1.78.0.tar.gz"]
 
 	version("1.78.0", md5="d81489147ccfe688c07c228b7fcfcf7d")
 

@@ -13,7 +13,7 @@ class RPaeg1aprobe(RPackage):
 	"""
 	
 	bioc = "paeg1aprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/paeg1aprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/paeg1aprobe/paeg1aprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/paeg1aprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/paeg1aprobe/paeg1aprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="493fa1fc7b92a78c8114b65038113c42")
 

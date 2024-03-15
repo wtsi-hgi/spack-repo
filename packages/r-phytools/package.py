@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -29,6 +29,8 @@ class RPhytools(RPackage):
 	that phylogenetic biologists might find useful in their research."""
 
 	cran = "phytools"
+
+	license("GPL-2.0-or-later")
 
 	version("2.1-1", md5="b03442df6f468772b8da8784eef396e2")
 

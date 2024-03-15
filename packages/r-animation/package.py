@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,8 @@ class RAnimation(RPackage):
 	functions maybe helpful in teaching statistics and data analysis."""
 
 	cran = "animation"
+
+	license("GPL-2.0-or-later")
 
 	version("2.7", md5="57e4bbd7c116ac0e6077eb613aa5ecf4")
 

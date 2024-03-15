@@ -13,7 +13,7 @@ class RMfa(RPackage):
 	"""
 	
 	bioc = "mfa" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mfa_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mfa/mfa_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mfa_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mfa/mfa_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="37fa2e82d83636458e9a20cc72069dcd")
 

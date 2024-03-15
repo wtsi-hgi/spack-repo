@@ -13,7 +13,7 @@ class RChronos(RPackage):
 	"""
 	
 	bioc = "CHRONOS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CHRONOS_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CHRONOS/CHRONOS_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CHRONOS_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CHRONOS/CHRONOS_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="7d2e5d9c89ea0163868d7b51bfd1c952")
 

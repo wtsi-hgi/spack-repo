@@ -13,7 +13,7 @@ class RMacsr(RPackage):
 	"""
 	
 	bioc = "MACSr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MACSr_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MACSr/MACSr_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MACSr_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MACSr/MACSr_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="bab4dacc8d41a2a47798bc740181f014")
 

@@ -13,7 +13,7 @@ class RHuo22Db(RPackage):
 	"""
 	
 	bioc = "HuO22.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/HuO22.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/HuO22.db/HuO22.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/HuO22.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/HuO22.db/HuO22.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="ddabf6c01f94c1dfd6ab35b40852828a")
 

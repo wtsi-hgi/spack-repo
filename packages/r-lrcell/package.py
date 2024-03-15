@@ -13,7 +13,7 @@ class RLrcell(RPackage):
 	"""
 	
 	bioc = "LRcell" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/LRcell_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/LRcell/LRcell_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LRcell_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LRcell/LRcell_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="845d68fab279d4a81933621a81085179")
 

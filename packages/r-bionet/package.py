@@ -14,7 +14,7 @@ class RBionet(RPackage):
 	
 	homepage = "http://bionet.bioapps.biozentrum.uni-wuerzburg.de/"
 	bioc = "BioNet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BioNet_1.62.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BioNet/BioNet_1.62.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioNet_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioNet/BioNet_1.62.0.tar.gz"]
 
 	version("1.62.0", md5="7f2fb01406a2c73946981af9fa9c86c8")
 

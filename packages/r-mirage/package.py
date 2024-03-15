@@ -13,7 +13,7 @@ class RMirage(RPackage):
 	"""
 	
 	bioc = "MiRaGE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MiRaGE_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MiRaGE/MiRaGE_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MiRaGE_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MiRaGE/MiRaGE_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="c86c12c042052eb4d558bdff55e8c47a")
 

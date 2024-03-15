@@ -13,7 +13,7 @@ class RCorral(RPackage):
 	"""
 	
 	bioc = "corral" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/corral_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/corral/corral_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/corral_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/corral/corral_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="7f1ebb217a695452605bd8aa94f8a5a1")
 

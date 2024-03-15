@@ -13,7 +13,7 @@ class RScthiData(RPackage):
 	"""
 	
 	bioc = "scTHI.data" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/scTHI.data_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/scTHI.data/scTHI.data_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scTHI.data_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scTHI.data/scTHI.data_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="1fd101f8dc30262c323bdfa79810f6f5")
 

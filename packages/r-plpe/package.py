@@ -14,7 +14,7 @@ class RPlpe(RPackage):
 	
 	homepage = "http://www.korea.ac.kr/~stat2242/"
 	bioc = "PLPE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PLPE_1.62.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PLPE/PLPE_1.62.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PLPE_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PLPE/PLPE_1.62.0.tar.gz"]
 
 	version("1.62.0", md5="1a4887a4c08676e0ce69331caacc297e")
 

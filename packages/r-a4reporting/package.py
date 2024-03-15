@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class RA4reporting(RPackage):
 	Array Analysis Reporting set of packages."""
 
 	bioc = "a4Reporting"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/a4Reporting_1.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/a4Reporting/a4Reporting_1.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/a4Reporting_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/a4Reporting/a4Reporting_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="3ba7f3c5606c2f898d84314ba63208fa")
 

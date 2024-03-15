@@ -14,7 +14,7 @@ class RLemur(RPackage):
 	
 	homepage = "https://github.com/const-ae/lemur"
 	bioc = "lemur" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/lemur_1.0.5.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/lemur/lemur_1.0.5.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lemur_1.0.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lemur/lemur_1.0.5.tar.gz"]
 
 	version("1.0.5", md5="d6ad01367e439d6e55960148c94f3a37")
 

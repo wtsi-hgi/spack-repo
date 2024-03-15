@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -20,6 +20,8 @@ class RXgboost(RPackage):
 	allowed to define their own objectives easily."""
 
 	cran = "xgboost"
+
+	license("Apache-2.0 OR custom")
 
 	version("1.7.7.1", md5="476b159d54e363c37e7f14aa34bfc01d")
 

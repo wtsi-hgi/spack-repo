@@ -13,7 +13,7 @@ class RMlseq(RPackage):
 	"""
 	
 	bioc = "MLSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MLSeq_2.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MLSeq/MLSeq_2.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MLSeq_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MLSeq/MLSeq_2.20.0.tar.gz"]
 
 	version("2.20.0", md5="07ebcff7e7a474bc21b783a6ebc2605b")
 

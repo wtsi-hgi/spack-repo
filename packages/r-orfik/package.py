@@ -14,7 +14,7 @@ class ROrfik(RPackage):
 	
 	homepage = "https://github.com/Roleren/ORFik"
 	bioc = "ORFik" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ORFik_1.22.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ORFik/ORFik_1.22.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ORFik_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ORFik/ORFik_1.22.2.tar.gz"]
 
 	version("1.22.2", md5="5f26d074e87bbcc0d9e1a7c4db2bd82e")
 

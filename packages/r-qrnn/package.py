@@ -18,5 +18,5 @@ class RQrnn(RPackage):
 	
 	cran = "qrnn" 
 
-	version("2.1", md5="59288a728b1d9e952144593dad2c6fea")
+	version("2.1.1", md5="dc2a527654c8b325dcc0fb3245682b39")
 

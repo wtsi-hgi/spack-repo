@@ -13,7 +13,7 @@ class RConsensus(RPackage):
 	"""
 	
 	bioc = "consensus" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/consensus_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/consensus/consensus_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/consensus_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/consensus/consensus_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="f930fc9b058bce80ccbb112082cf3dc7")
 

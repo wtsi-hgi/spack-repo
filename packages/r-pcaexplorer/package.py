@@ -14,7 +14,7 @@ class RPcaexplorer(RPackage):
 	
 	homepage = "https://github.com/federicomarini/pcaExplorer"
 	bioc = "pcaExplorer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pcaExplorer_2.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pcaExplorer/pcaExplorer_2.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pcaExplorer_2.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pcaExplorer/pcaExplorer_2.28.0.tar.gz"]
 
 	version("2.28.0", md5="622f43cef60e783c51d59ed8624019d8")
 

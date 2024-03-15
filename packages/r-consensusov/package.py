@@ -14,7 +14,7 @@ class RConsensusov(RPackage):
 	
 	homepage = "http://www.pmgenomics.ca/bhklab/software/consensusOV"
 	bioc = "consensusOV" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/consensusOV_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/consensusOV/consensusOV_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/consensusOV_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/consensusOV/consensusOV_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="54a03e3c6775a27643ffbf5192967ac2")
 

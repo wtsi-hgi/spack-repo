@@ -14,7 +14,7 @@ class RScfa(RPackage):
 	
 	homepage = "https://github.com/duct317/SCFA"
 	bioc = "SCFA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SCFA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SCFA/SCFA_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCFA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCFA/SCFA_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="c4e7d00ff20faff6a8a14eddde8e7a84")
 

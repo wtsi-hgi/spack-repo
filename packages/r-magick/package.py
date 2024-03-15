@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -21,6 +21,8 @@ class RMagick(RPackage):
 	coordinates."""
 
 	cran = "magick"
+
+	license("MIT")
 
 	version("2.8.3", md5="029e625b79ee2aeed6ba5b60d0626907")
 

@@ -14,7 +14,7 @@ class RTbsignatureprofiler(RPackage):
 	
 	homepage = "https://github.com/compbiomed/TBSignatureProfiler"
 	bioc = "TBSignatureProfiler" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TBSignatureProfiler_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TBSignatureProfiler/TBSignatureProfiler_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TBSignatureProfiler_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TBSignatureProfiler/TBSignatureProfiler_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="1cd38948c20b0f43904a8ff204f2940d")
 

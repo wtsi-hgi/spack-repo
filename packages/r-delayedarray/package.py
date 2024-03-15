@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -19,7 +19,7 @@ class RDelayedarray(RPackage):
 	Rle columns), Matrix objects, and ordinary arrays and data frames."""
 
 	bioc = "DelayedArray"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DelayedArray_0.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DelayedArray/DelayedArray_0.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DelayedArray_0.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DelayedArray/DelayedArray_0.28.0.tar.gz"]
 
 	version("0.28.0", md5="812e7575d6eaa61f5b68364cdf1da3d9")
 

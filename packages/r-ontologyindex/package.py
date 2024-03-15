@@ -14,6 +14,6 @@ class ROntologyindex(RPackage):
 	
 	cran = "ontologyIndex" 
 
-	version("2.11", md5="c252ea80927b096d3a0b8be63263aa11")
+	version("2.12", md5="ebbcda13ca7f5cf8663769d740b09f0a")
 
-	depends_on("r@3.1:", type=("build", "run"))
+	depends_on("r@3.5:", type=("build", "run"))

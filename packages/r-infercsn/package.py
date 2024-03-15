@@ -15,7 +15,7 @@ class RInfercsn(RPackage):
 	homepage = "https://mengxu98.github.io/inferCSN/"
 	cran = "inferCSN" 
 
-	version("1.0.0", md5="ca97beeae391b37f68f4a3ac5d6e4b64")
+	version("1.0.1", md5="68abfddc1d3eedb02a071e49c4a48054")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-complexheatmap", type=("build", "run"))

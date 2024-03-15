@@ -18,6 +18,6 @@ class RSheetreader(RPackage):
 	homepage = "https://github.com/fhenz/SheetReader-r"
 	cran = "SheetReader" 
 
-	version("1.1.0", md5="cb828364062186d5b139e99bd432d86e")
+	version("1.2.0", md5="69b023a43a12162679ab6440fcb93113")
 
 	depends_on("r-rcpp", type=("build", "run"))

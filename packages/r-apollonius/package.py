@@ -10,14 +10,14 @@ class RApollonius(RPackage):
 	"""2D Apollonius Graphs
 
 	Computation of the Apollonius diagram of given 2D points and
-    its dual the Apollonius graph, also known as the additively weighted
-    Voronoï diagram, and which is a generalization of the classical Voronoï 
-    diagram. For references, see the bibliography in the CGAL documentation 
-    at <https://doc.cgal.org/latest/Apollonius_graph_2/citelist.html>.
+	its dual the Apollonius graph, also known as the additively weighted
+	Voronoï diagram, and which is a generalization of the classical Voronoï 
+	diagram. For references, see the bibliography in the CGAL documentation 
+	at <https://doc.cgal.org/latest/Apollonius_graph_2/citelist.html>.
 	"""
 	
 	homepage = "https://github.com/stla/Apollonius"
-	cran = "Apollonius" 
+	cran = "Apollonius"
 
 	version("1.0.1", md5="3b0a331134639251500963c99b67d653")
 

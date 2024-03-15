@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,7 @@ class RAffyio(RPackage):
 	formats."""
 
 	bioc = "affyio"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/affyio_1.72.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/affyio/affyio_1.72.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affyio_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affyio/affyio_1.72.0.tar.gz"]
 
 	version("1.72.0", md5="9bd1e4acedbf756386f96d4c1ebb21f3")
 

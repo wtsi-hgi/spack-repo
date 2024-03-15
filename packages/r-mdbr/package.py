@@ -15,9 +15,9 @@ class RMdbr(RPackage):
     reading those as data frames.
 	"""
 	
-	homepage = "https://github.com/kiernann/mdbr"
+	homepage = "https://k5cents.github.io/mdbr/"
 	cran = "mdbr" 
 
-	version("0.1.2", md5="33c5369741dcb004ca3dd1aa550d7d04")
+	version("0.2.1", md5="d89f0723f713af324b7feb0aa2229771")
 
 	depends_on("r-readr", type=("build", "run"))

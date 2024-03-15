@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class RAllelicimbalance(RPackage):
 	RNA-seq data."""
 
 	bioc = "AllelicImbalance"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AllelicImbalance_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AllelicImbalance/AllelicImbalance_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AllelicImbalance_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AllelicImbalance/AllelicImbalance_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="9eb6991f47f1337aef63f9ce750db08a")
 

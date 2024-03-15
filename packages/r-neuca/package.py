@@ -13,11 +13,13 @@ class RNeuca(RPackage):
 	"""
 	
 	bioc = "NeuCA" 
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NeuCA_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NeuCA/NeuCA_1.8.1.tar.gz"]
 
-	version("1.8.0", commit="053e2f93a026cc1048ba2dce418f9890d2572815")
+	version("1.8.1", md5="5761042e8cc461392b07e8eee6fc32c3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-keras", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))
 	depends_on("r-e1071", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))
+	depends_on("r-kableextra", type=("build", "run"))

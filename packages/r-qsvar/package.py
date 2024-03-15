@@ -14,7 +14,7 @@ class RQsvar(RPackage):
 	
 	homepage = "https://github.com/LieberInstitute/qsvaR"
 	bioc = "qsvaR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/qsvaR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/qsvaR/qsvaR_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qsvaR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qsvaR/qsvaR_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="e9531cc164f93967a5d5d0469d47f7c7")
 

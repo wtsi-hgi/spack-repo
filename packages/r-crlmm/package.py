@@ -13,7 +13,7 @@ class RCrlmm(RPackage):
 	"""
 	
 	bioc = "crlmm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/crlmm_1.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/crlmm/crlmm_1.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crlmm_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crlmm/crlmm_1.60.0.tar.gz"]
 
 	version("1.60.0", md5="d047359287ee832d97e95c0945dff8cc")
 

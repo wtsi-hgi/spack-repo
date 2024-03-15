@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,7 @@ class ROrganismdbi(RPackage):
 	fact that each of these packages implements a select methods."""
 
 	bioc = "OrganismDbi"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/OrganismDbi_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/OrganismDbi/OrganismDbi_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OrganismDbi_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OrganismDbi/OrganismDbi_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="3d6c3ba042e4e0b6ecf5fa27fc344a82")
 

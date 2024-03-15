@@ -13,7 +13,7 @@ class RPdCytogeneticsArray(RPackage):
 	"""
 	
 	bioc = "pd.cytogenetics.array" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.cytogenetics.array_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.cytogenetics.array/pd.cytogenetics.array_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.cytogenetics.array_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.cytogenetics.array/pd.cytogenetics.array_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="8c359ff56a9a558d370dc9a6a54218e0")
 

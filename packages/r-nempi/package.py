@@ -14,7 +14,7 @@ class RNempi(RPackage):
 	
 	homepage = "https://github.com/cbg-ethz/nempi/"
 	bioc = "nempi" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/nempi_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/nempi/nempi_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nempi_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nempi/nempi_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="1180e323b8f109079a74702ef7159cda")
 

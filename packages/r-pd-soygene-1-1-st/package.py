@@ -13,7 +13,7 @@ class RPdSoygene11St(RPackage):
 	"""
 	
 	bioc = "pd.soygene.1.1.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.soygene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.soygene.1.1.st/pd.soygene.1.1.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.soygene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.soygene.1.1.st/pd.soygene.1.1.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="4a911a4a4b5de927fe6239e500a2993f")
 

@@ -14,7 +14,7 @@ class RHopach(RPackage):
 	
 	homepage = "http://www.stat.berkeley.edu/~laan/"
 	bioc = "hopach" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/hopach_2.62.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/hopach/hopach_2.62.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hopach_2.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hopach/hopach_2.62.0.tar.gz"]
 
 	version("2.62.0", md5="0310e9a4e3a34dfe2bb4edf0dbb38b16")
 

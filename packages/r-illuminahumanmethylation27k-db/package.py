@@ -13,7 +13,7 @@ class RIlluminahumanmethylation27kDb(RPackage):
 	"""
 	
 	bioc = "IlluminaHumanMethylation27k.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/IlluminaHumanMethylation27k.db_1.4.8.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/IlluminaHumanMethylation27k.db/IlluminaHumanMethylation27k.db_1.4.8.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/IlluminaHumanMethylation27k.db_1.4.8.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/IlluminaHumanMethylation27k.db/IlluminaHumanMethylation27k.db_1.4.8.tar.gz"]
 
 	version("1.4.8", md5="70586bda9db01d598723bb439c315367")
 

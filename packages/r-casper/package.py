@@ -13,7 +13,7 @@ class RCasper(RPackage):
 	"""
 	
 	bioc = "casper" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/casper_2.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/casper/casper_2.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/casper_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/casper/casper_2.36.0.tar.gz"]
 
 	version("2.36.0", md5="4c9fc29e3b92d5b493953ea97436556a")
 

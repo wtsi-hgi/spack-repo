@@ -14,7 +14,7 @@ class RStjoincount(RPackage):
 	
 	homepage = "https://github.com/Nina-Song/stJoincount"
 	bioc = "stJoincount" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/stJoincount_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/stJoincount/stJoincount_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/stJoincount_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/stJoincount/stJoincount_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="85dd3f81a773ede72a70185cb4132d2b")
 

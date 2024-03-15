@@ -13,7 +13,7 @@ class RTest1cdf(RPackage):
 	"""
 	
 	bioc = "test1cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/test1cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/test1cdf/test1cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/test1cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/test1cdf/test1cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="8c94708b49ccc7bbf127485155970b9b")
 

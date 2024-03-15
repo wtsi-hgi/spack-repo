@@ -13,7 +13,7 @@ class RSomaticcanceralterations(RPackage):
 	"""
 	
 	bioc = "SomaticCancerAlterations" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/SomaticCancerAlterations_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/SomaticCancerAlterations/SomaticCancerAlterations_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SomaticCancerAlterations_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SomaticCancerAlterations/SomaticCancerAlterations_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="77b2b0312705c2a9581cdf7aab591db8")
 

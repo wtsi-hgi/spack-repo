@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -12,7 +12,7 @@ class RGenefilter(RPackage):
 	Some basic functions for filtering genes."""
 
 	bioc = "genefilter"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/genefilter_1.84.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/genefilter/genefilter_1.84.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genefilter_1.84.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genefilter/genefilter_1.84.0.tar.gz"]
 
 	version("1.84.0", md5="15011d1662a58967aeb3e89f1f660e40")
 

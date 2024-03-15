@@ -13,7 +13,7 @@ class RLungexpression(RPackage):
 	"""
 	
 	bioc = "lungExpression" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/lungExpression_0.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/lungExpression/lungExpression_0.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/lungExpression_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/lungExpression/lungExpression_0.40.0.tar.gz"]
 
 	version("0.40.0", md5="35eab717cb2e24c92faf417ad7fb9cb8")
 

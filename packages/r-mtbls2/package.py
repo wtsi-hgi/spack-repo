@@ -14,9 +14,9 @@ class RMtbls2(RPackage):
 	
 	homepage = "http://www.ebi.ac.uk/metabolights/MTBLS2"
 	bioc = "mtbls2" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/mtbls2_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/mtbls2/mtbls2_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mtbls2_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mtbls2/mtbls2_1.32.0.tar.gz"]
 
-	version("1.32.0", md5="820109836c79f398ea5b82f5887b7fea", url="https://www.bioconductor.org/packages/release/data/experiment/src/contrib/mtbls2_1.32.0.tar.gz")
+	version("1.32.0", md5="820109836c79f398ea5b82f5887b7fea", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mtbls2_1.32.0.tar.gz")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

@@ -14,7 +14,7 @@ class RPanomir(RPackage):
 	
 	homepage = "https://github.com/pouryany/PanomiR"
 	bioc = "PanomiR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PanomiR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PanomiR/PanomiR_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PanomiR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PanomiR/PanomiR_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="a8f96cdc267551107e69e8cb260a05c0")
 

@@ -13,7 +13,7 @@ class RBsgenomeSscrofaUcscSusscr3Masked(RPackage):
 	"""
 	
 	bioc = "BSgenome.Sscrofa.UCSC.susScr3.masked" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Sscrofa.UCSC.susScr3.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Sscrofa.UCSC.susScr3.masked/BSgenome.Sscrofa.UCSC.susScr3.masked_1.3.99.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Sscrofa.UCSC.susScr3.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Sscrofa.UCSC.susScr3.masked/BSgenome.Sscrofa.UCSC.susScr3.masked_1.3.99.tar.gz"]
 
 	version("1.3.99", md5="fd240651d22d169fd1e27a2b66e40dd7")
 

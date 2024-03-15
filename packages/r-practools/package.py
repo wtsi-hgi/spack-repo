@@ -14,7 +14,7 @@ class RPractools(RPackage):
 	
 	cran = "PracTools" 
 
-	version("1.4.2", md5="532a390359ba9519fec5220aeb13caa9")
+	version("1.4.3", md5="b061a884b46aaaa9a92637c31a1018c3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

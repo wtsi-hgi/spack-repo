@@ -20,7 +20,7 @@ class RZdeskr(RPackage):
 	homepage = "https://github.com/chrisumphlett/zdeskR"
 	cran = "zdeskR" 
 
-	version("0.3.0", md5="a6a7de558776889eeb1a737f43960066")
+	version("0.4.0", md5="ffd866f97d4b62a27fe3d9b3c112cb86")
 
 	depends_on("r-dplyr@1:", type=("build", "run"))
 	depends_on("r-magrittr@1.5:", type=("build", "run"))
@@ -29,3 +29,4 @@ class RZdeskr(RPackage):
 	depends_on("r-httr@1.4.1:", type=("build", "run"))
 	depends_on("r-tidyr@1:", type=("build", "run"))
 	depends_on("r-plyr@1.8.6:", type=("build", "run"))
+	depends_on("r-tidyselect@1.2:", type=("build", "run"))

@@ -13,7 +13,7 @@ class RMaqcsubset(RPackage):
 	"""
 	
 	bioc = "MAQCsubset" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/MAQCsubset_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/MAQCsubset/MAQCsubset_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MAQCsubset_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MAQCsubset/MAQCsubset_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="5757c11a1af2150b8fd17c3a8b8b0c0c")
 

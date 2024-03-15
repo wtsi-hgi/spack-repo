@@ -14,7 +14,7 @@ class RAutonomics(RPackage):
 	
 	homepage = "https://github.com/bhagwataditya/autonomics"
 	bioc = "autonomics" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/autonomics_1.10.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/autonomics/autonomics_1.10.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/autonomics_1.10.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/autonomics/autonomics_1.10.2.tar.gz"]
 
 	version("1.10.2", md5="9034c755764d54d8bf0eb0e330f4e54f")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,6 +13,8 @@ class RNnet(RPackage):
 	for multinomial log-linear models."""
 
 	cran = "nnet"
+
+	license("GPL-2.0-only OR GPL-3.0-only")
 
 	version("7.3-19", md5="70c6d1ad4a564b28373ffc7b7edd28d1")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -29,7 +29,7 @@ class RSva(RPackage):
 	Genetics)."""
 
 	bioc = "sva"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sva_3.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sva/sva_3.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sva_3.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sva/sva_3.50.0.tar.gz"]
 
 	version("3.50.0", md5="8c42cd3e23be4d24f072d98394931552")
 

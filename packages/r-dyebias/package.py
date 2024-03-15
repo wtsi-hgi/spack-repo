@@ -14,7 +14,7 @@ class RDyebias(RPackage):
 	
 	homepage = "http://www.holstegelab.nl/publications/margaritis_lijnzaad"
 	bioc = "dyebias" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/dyebias_1.62.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/dyebias/dyebias_1.62.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dyebias_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dyebias/dyebias_1.62.0.tar.gz"]
 
 	version("1.62.0", md5="2b3e10379a29b0cb931514e06fe7259f")
 

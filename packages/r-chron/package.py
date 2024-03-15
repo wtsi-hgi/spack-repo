@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -12,6 +12,8 @@ class RChron(RPackage):
 	Provides chronological objects which can handle dates and times."""
 
 	cran = "chron"
+
+	license("GPL-2.0-only")
 
 	version("2.3-61", md5="5eaa5b818bc0f0dd7eeba9478bd9da88")
 

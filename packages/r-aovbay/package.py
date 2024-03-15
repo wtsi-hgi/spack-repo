@@ -13,7 +13,7 @@ Panel
 	It covers various approaches to analysis of variance, provides an assumption testing section in order to provide a decision diagram that allows selecting the most appropriate technique. It provides the classical analysis of variance, the nonparametric equivalent of Kruskal Wallis, and the Bayesian approach. These results are shown in an interactive shiny panel, which allows modifying the arguments of the tests, contains interactive graphics and presents automatic conclusions depending on the tests in order to contribute to the interpretation of these analyzes. 'AovBay' uses 'Stan' and 'FactorBayes' for Bayesian analysis and 'Highcharts' for interactive charts.
 	"""
 	
-	cran = "AovBay" 
+	cran = "AovBay"
 
 	version("0.1.0", md5="192a385e7329456334932d001556fce0")
 

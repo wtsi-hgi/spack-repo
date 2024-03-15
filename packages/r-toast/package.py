@@ -13,7 +13,7 @@ class RToast(RPackage):
 	"""
 	
 	bioc = "TOAST" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TOAST_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TOAST/TOAST_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TOAST_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TOAST/TOAST_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="7161d25bca2e95e8f83aea1f7d0bba6d")
 

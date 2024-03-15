@@ -14,7 +14,7 @@ class RPeco(RPackage):
 	
 	homepage = "https://github.com/jhsiao999/peco"
 	bioc = "peco" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/peco_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/peco/peco_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/peco_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/peco/peco_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="9a15c75c989ee10da1fb0ead1bbac99f")
 

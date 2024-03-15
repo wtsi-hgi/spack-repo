@@ -13,7 +13,7 @@ class RMotifstack(RPackage):
 	"""
 	
 	bioc = "motifStack" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/motifStack_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/motifStack/motifStack_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/motifStack_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/motifStack/motifStack_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="b3306b32c8722e6d63ee1a37165a572e")
 

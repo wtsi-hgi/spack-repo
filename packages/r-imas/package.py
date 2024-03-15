@@ -13,7 +13,7 @@ class RImas(RPackage):
 	"""
 	
 	bioc = "IMAS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IMAS_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IMAS/IMAS_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IMAS_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IMAS/IMAS_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="c86deaedf1d19981dbfcea7a3b53d331")
 

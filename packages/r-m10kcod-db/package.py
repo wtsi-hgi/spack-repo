@@ -13,7 +13,7 @@ class RM10kcodDb(RPackage):
 	"""
 	
 	bioc = "m10kcod.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/m10kcod.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/m10kcod.db/m10kcod.db_3.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/m10kcod.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/m10kcod.db/m10kcod.db_3.4.0.tar.gz"]
 
 	version("3.4.0", md5="04811628e4b37cd6d24e0b2a17d79ab8")
 

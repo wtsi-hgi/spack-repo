@@ -13,7 +13,7 @@ class RMethtargetedngs(RPackage):
 	"""
 	
 	bioc = "MethTargetedNGS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MethTargetedNGS_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MethTargetedNGS/MethTargetedNGS_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MethTargetedNGS_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MethTargetedNGS/MethTargetedNGS_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="0bce9edc9682a9ca23653409301d7225")
 

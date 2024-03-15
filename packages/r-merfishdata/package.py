@@ -14,7 +14,7 @@ class RMerfishdata(RPackage):
 	
 	homepage = "https://github.com/ccb-hms/MerfishData"
 	bioc = "MerfishData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/MerfishData_1.4.1.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/MerfishData/MerfishData_1.4.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MerfishData_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MerfishData/MerfishData_1.4.1.tar.gz"]
 
 	version("1.4.1", md5="05369f89c4e1a15bdab1ce5174facbe4")
 

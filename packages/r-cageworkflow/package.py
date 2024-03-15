@@ -13,7 +13,7 @@ class RCageworkflow(RPackage):
 	"""
 	
 	bioc = "CAGEWorkflow" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/CAGEWorkflow_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/CAGEWorkflow/CAGEWorkflow_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/CAGEWorkflow_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/CAGEWorkflow/CAGEWorkflow_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="0e15ef3a7d9b37b7945c17aaf45d07e0")
 

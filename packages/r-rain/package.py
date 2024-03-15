@@ -13,7 +13,7 @@ class RRain(RPackage):
 	"""
 	
 	bioc = "rain" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rain_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rain/rain_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rain_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rain/rain_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="e523c08337422230710fd1f2a5a392cd")
 

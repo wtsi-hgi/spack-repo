@@ -13,7 +13,7 @@ class RSpatialomicsoverlay(RPackage):
 	"""
 	
 	bioc = "SpatialOmicsOverlay" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SpatialOmicsOverlay_1.2.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SpatialOmicsOverlay/SpatialOmicsOverlay_1.2.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpatialOmicsOverlay_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpatialOmicsOverlay/SpatialOmicsOverlay_1.2.1.tar.gz"]
 
 	version("1.2.1", md5="149a968f19aa22b57caca243b3480378")
 

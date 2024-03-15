@@ -13,7 +13,7 @@ class RFlowpeaks(RPackage):
 	"""
 	
 	bioc = "flowPeaks" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowPeaks_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowPeaks/flowPeaks_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowPeaks_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowPeaks/flowPeaks_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="f68db373a0d053a7eabd112df80a25f1")
 

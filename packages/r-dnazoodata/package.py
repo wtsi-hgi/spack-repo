@@ -14,7 +14,7 @@ class RDnazoodata(RPackage):
 	
 	homepage = "https://github.com/js2264/DNAZooData"
 	bioc = "DNAZooData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/DNAZooData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/DNAZooData/DNAZooData_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DNAZooData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DNAZooData/DNAZooData_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="06c4b9dbbaddc3dd4dcdc51e34150aa7")
 

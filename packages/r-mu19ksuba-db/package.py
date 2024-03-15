@@ -13,7 +13,7 @@ class RMu19ksubaDb(RPackage):
 	"""
 	
 	bioc = "mu19ksuba.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mu19ksuba.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mu19ksuba.db/mu19ksuba.db_3.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mu19ksuba.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mu19ksuba.db/mu19ksuba.db_3.13.0.tar.gz"]
 
 	version("3.13.0", md5="c057d8793f2db914a93d2e1f5a3af178")
 

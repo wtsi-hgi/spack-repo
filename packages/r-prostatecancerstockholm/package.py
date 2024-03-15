@@ -13,7 +13,7 @@ class RProstatecancerstockholm(RPackage):
 	"""
 	
 	bioc = "prostateCancerStockholm" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/prostateCancerStockholm_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/prostateCancerStockholm/prostateCancerStockholm_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/prostateCancerStockholm_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/prostateCancerStockholm/prostateCancerStockholm_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="49326bf3b6f66be78fa1e6d6768b5538")
 

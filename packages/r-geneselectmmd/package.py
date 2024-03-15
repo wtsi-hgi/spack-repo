@@ -13,7 +13,7 @@ class RGeneselectmmd(RPackage):
 	"""
 	
 	bioc = "GeneSelectMMD" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GeneSelectMMD_2.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GeneSelectMMD/GeneSelectMMD_2.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneSelectMMD_2.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneSelectMMD/GeneSelectMMD_2.46.0.tar.gz"]
 
 	version("2.46.0", md5="dd6cd07bbe095fca03ce4b134c1507b8")
 

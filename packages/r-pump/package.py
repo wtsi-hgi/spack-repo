@@ -9,13 +9,13 @@ from spack.package import *
 class RPump(RPackage):
 	"""Power Under Multiplicity Project
 
-	Estimates power, minimum detectable effect size (MDES) and sample size requirements. The context is multilevel randomized experiments with multiple outcomes. The estimation takes into account the use of multiple testing procedures. Development of this package was supported by a grant from the Institute of Education Sciences (R305D170030). For a full package description, including a detailed technical appendix, see <arXiv:2112.15273>.
+	Estimates power, minimum detectable effect size (MDES) and sample size requirements. The context is multilevel randomized experiments with multiple outcomes. The estimation takes into account the use of multiple testing procedures. Development of this package was supported by a grant from the Institute of Education Sciences (R305D170030). For a full package description, including a detailed technical appendix, see <doi:10.18637/jss.v108.i06>.
 	"""
 	
 	homepage = "https://github.com/MDRCNY/PUMP"
 	cran = "PUMP" 
 
-	version("1.0.2", md5="dbcef63a76d61b1622a8573776b5bd8f")
+	version("1.0.3", md5="65a58b1aed60db8cb86514755a6bcb17")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

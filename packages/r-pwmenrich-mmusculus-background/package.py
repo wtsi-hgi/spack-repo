@@ -13,7 +13,7 @@ class RPwmenrichMmusculusBackground(RPackage):
 	"""
 	
 	bioc = "PWMEnrich.Mmusculus.background" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/PWMEnrich.Mmusculus.background_4.36.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/PWMEnrich.Mmusculus.background/PWMEnrich.Mmusculus.background_4.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PWMEnrich.Mmusculus.background_4.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PWMEnrich.Mmusculus.background/PWMEnrich.Mmusculus.background_4.36.0.tar.gz"]
 
 	version("4.36.0", md5="5d54401a941d1efe7148da2ddc714d65")
 

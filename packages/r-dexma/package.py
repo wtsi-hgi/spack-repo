@@ -13,7 +13,7 @@ class RDexma(RPackage):
 	"""
 	
 	bioc = "DExMA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DExMA_1.10.7.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DExMA/DExMA_1.10.7.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DExMA_1.10.7.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DExMA/DExMA_1.10.7.tar.gz"]
 
 	version("1.10.7", md5="7c1dca0cb8f090b50eb23cd619c0fd3d")
 

@@ -13,7 +13,7 @@ class RWavcluster(RPackage):
 	"""
 	
 	bioc = "wavClusteR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/wavClusteR_2.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/wavClusteR/wavClusteR_2.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/wavClusteR_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/wavClusteR/wavClusteR_2.36.0.tar.gz"]
 
 	version("2.36.0", md5="9177c657b31b1abaac94079e658a9c18")
 

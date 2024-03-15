@@ -14,7 +14,7 @@ class RCycle(RPackage):
 	
 	homepage = "http://cycle.sysbiolab.eu"
 	bioc = "cycle" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cycle_1.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cycle/cycle_1.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cycle_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cycle/cycle_1.56.0.tar.gz"]
 
 	version("1.56.0", md5="8c659d2ae2fb2b31f4b6dd07d68873be")
 

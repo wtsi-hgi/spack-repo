@@ -13,7 +13,7 @@ class RChipcomp(RPackage):
 	"""
 	
 	bioc = "ChIPComp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ChIPComp_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ChIPComp/ChIPComp_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPComp_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPComp/ChIPComp_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="5294eab6ada6b66e52935843dd9acc6b")
 

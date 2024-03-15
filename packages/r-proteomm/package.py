@@ -13,7 +13,7 @@ class RProteomm(RPackage):
 	"""
 	
 	bioc = "ProteoMM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ProteoMM_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ProteoMM/ProteoMM_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ProteoMM_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ProteoMM/ProteoMM_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="6497729c8cc0221c898927dcddeb00e0")
 

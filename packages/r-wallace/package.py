@@ -23,7 +23,7 @@ and Distributions
 	homepage = "http://wallaceecomod.github.io/wallace/"
 	cran = "wallace" 
 
-	version("2.1.1", md5="2a8a569fa7639204ed8901ba6c71c819")
+	version("2.1.2", md5="16a560c7ad33c179fbf162fc45aa1790")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-shiny@1.6:", type=("build", "run"))
@@ -36,6 +36,7 @@ and Distributions
 	depends_on("r-leafem", type=("build", "run"))
 	depends_on("r-leaflet-extras@1:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
+	depends_on("r-markdown", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))
 	depends_on("r-rjava", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

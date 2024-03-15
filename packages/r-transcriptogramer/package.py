@@ -14,7 +14,7 @@ class RTranscriptogramer(RPackage):
 	
 	homepage = "https://github.com/arthurvinx/transcriptogramer"
 	bioc = "transcriptogramer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/transcriptogramer_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/transcriptogramer/transcriptogramer_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/transcriptogramer_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/transcriptogramer/transcriptogramer_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="6c6b8c13ec29ef0e6e5552cbbd49f14d")
 

@@ -14,7 +14,7 @@ class RChemminer(RPackage):
 	
 	homepage = "https://github.com/girke-lab/ChemmineR"
 	bioc = "ChemmineR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ChemmineR_3.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ChemmineR/ChemmineR_3.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChemmineR_3.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChemmineR/ChemmineR_3.54.0.tar.gz"]
 
 	version("3.54.0", md5="8dd1886811bdc4ac23c24fad60a9b238")
 

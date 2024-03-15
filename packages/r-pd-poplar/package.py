@@ -13,7 +13,7 @@ class RPdPoplar(RPackage):
 	"""
 	
 	bioc = "pd.poplar" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.poplar_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.poplar/pd.poplar_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.poplar_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.poplar/pd.poplar_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="9c33b7528e5a47654aeacf61b71058a8")
 

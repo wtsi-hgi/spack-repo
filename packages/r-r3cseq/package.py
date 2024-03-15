@@ -14,7 +14,7 @@ class RR3cseq(RPackage):
 	
 	homepage = "http://r3cseq.genereg.net"
 	bioc = "r3Cseq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/r3Cseq_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/r3Cseq/r3Cseq_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/r3Cseq_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/r3Cseq/r3Cseq_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="548b2dc3319fc848c932bcb142edbd61")
 

@@ -18,7 +18,7 @@ Parameters
 	homepage = "<https://epilps.com/>"
 	cran = "EpiLPS" 
 
-	version("1.2.0", md5="21602c179c513b931f858dc77dbc54b2")
+	version("1.3.0", md5="66a55e5c80c6275ba93c3c966f6487d4")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -16,6 +16,6 @@ class RAcademicthemes(RPackage):
 	homepage = "https://github.com/hwarden162/AcademicThemes"
 	cran = "AcademicThemes" 
 
-	version("0.0.1", md5="53451f81e9d3a6fd18ce6c5f32d3ee22")
+	version("0.0.2", md5="df6165413d5420681e2aa3c6a9752b04")
 
 	depends_on("r-ggplot2", type=("build", "run"))

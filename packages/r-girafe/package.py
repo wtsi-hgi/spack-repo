@@ -13,7 +13,7 @@ class RGirafe(RPackage):
 	"""
 	
 	bioc = "girafe" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/girafe_1.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/girafe/girafe_1.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/girafe_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/girafe/girafe_1.54.0.tar.gz"]
 
 	version("1.54.0", md5="4cf228e6d7f73cf97c923f1c349fb6c3")
 

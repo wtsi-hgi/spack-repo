@@ -13,7 +13,7 @@ class RMogsa(RPackage):
 	"""
 	
 	bioc = "mogsa" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mogsa_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mogsa/mogsa_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mogsa_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mogsa/mogsa_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="177b003a38a7dc7ce3fb238369d1b6e7")
 

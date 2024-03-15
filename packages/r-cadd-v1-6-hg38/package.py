@@ -13,9 +13,9 @@ class RCaddV16Hg38(RPackage):
 	"""
 	
 	bioc = "cadd.v1.6.hg38" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/cadd.v1.6.hg38_3.18.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/cadd.v1.6.hg38/cadd.v1.6.hg38_3.18.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cadd.v1.6.hg38_3.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/cadd.v1.6.hg38/cadd.v1.6.hg38_3.18.1.tar.gz"]
 
-	version("3.18.1", md5="620a889ea8bc55f98811a80a3aec814d", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/cadd.v1.6.hg38_3.18.1.tar.gz")
+	version("3.18.1", md5="620a889ea8bc55f98811a80a3aec814d", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cadd.v1.6.hg38_3.18.1.tar.gz")
 
 	depends_on("r-genomicscores", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

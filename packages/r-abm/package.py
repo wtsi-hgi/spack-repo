@@ -38,7 +38,7 @@ class RAbm(RPackage):
 	homepage = "https://github.com/junlingm/ABM"
 	cran = "ABM" 
 
-	version("0.3", md5="3a4aa189210b83d44e04f3a96f3112a0")
+	version("0.4.1", md5="fefc079e9260c23575ab4576569849c8")
 
 	depends_on("r-r6", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

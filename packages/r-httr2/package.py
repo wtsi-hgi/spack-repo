@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RHttr2(RPackage):
 	wrapping packages face."""
 
 	cran = "httr2"
+
+	license("MIT")
 
 	version("1.0.0", md5="f9dede77d366a4e7b1bbec53a4e101de", url="https://cran.r-project.org/src/contrib/httr2_1.0.0.tar.gz")
 

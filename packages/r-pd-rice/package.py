@@ -13,7 +13,7 @@ class RPdRice(RPackage):
 	"""
 	
 	bioc = "pd.rice" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.rice_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.rice/pd.rice_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rice_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rice/pd.rice_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="9c456981b3d0b99a96ac6c71e3eb7c8a")
 

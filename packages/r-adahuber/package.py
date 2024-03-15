@@ -13,7 +13,7 @@ class RAdahuber(RPackage):
 	"""
 	
 	homepage = "https://github.com/XiaoouPan/adaHuber"
-	cran = "adaHuber" 
+	cran = "adaHuber"
 
 	version("1.1", md5="a3f471539364b4b28634b189f72d8b4d")
 

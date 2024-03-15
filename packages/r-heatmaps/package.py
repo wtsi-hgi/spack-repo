@@ -13,7 +13,7 @@ class RHeatmaps(RPackage):
 	"""
 	
 	bioc = "heatmaps" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/heatmaps_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/heatmaps/heatmaps_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/heatmaps_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/heatmaps/heatmaps_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="68b0a507dd5b2bcdfef2106195429dc2")
 

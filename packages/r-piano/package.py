@@ -14,7 +14,7 @@ class RPiano(RPackage):
 	
 	homepage = "http://www.sysbio.se/piano"
 	bioc = "piano" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/piano_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/piano/piano_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/piano_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/piano/piano_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="84b0ce2cca9fb11110bd82113e066e82")
 

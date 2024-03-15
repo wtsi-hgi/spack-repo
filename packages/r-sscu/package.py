@@ -13,7 +13,7 @@ class RSscu(RPackage):
 	"""
 	
 	bioc = "sscu" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sscu_2.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sscu/sscu_2.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sscu_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sscu/sscu_2.32.0.tar.gz"]
 
 	version("2.32.0", md5="3856e06321ac866e2664573b452c6a85")
 

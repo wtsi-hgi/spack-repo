@@ -14,7 +14,7 @@ class RAffycompdata(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/affycompData"
 	bioc = "affycompData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/affycompData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/affycompData/affycompData_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/affycompData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/affycompData/affycompData_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="205391e19fb160dcff1531892f28b006")
 

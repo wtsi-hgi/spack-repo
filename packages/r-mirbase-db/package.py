@@ -13,7 +13,7 @@ class RMirbaseDb(RPackage):
 	"""
 	
 	bioc = "mirbase.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mirbase.db_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mirbase.db/mirbase.db_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mirbase.db_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mirbase.db/mirbase.db_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="316bc12cee8c2dd9240b7fc30cd1619e")
 

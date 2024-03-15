@@ -13,7 +13,7 @@ class RCanineDb(RPackage):
 	"""
 	
 	bioc = "canine.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/canine.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/canine.db/canine.db_3.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/canine.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/canine.db/canine.db_3.13.0.tar.gz"]
 
 	version("3.13.0", md5="a876bb01eda62604a32a96b46e34162b")
 

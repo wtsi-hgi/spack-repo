@@ -21,7 +21,7 @@ class RRd2roxygen(RPackage):
 	homepage = "https://github.com/yihui/Rd2roxygen"
 	cran = "Rd2roxygen" 
 
-	version("1.14", md5="4ce49c0e8031ff15a0a320a04724d94f")
+	version("1.15", md5="e909ffd31191146310d708f6b9f982ea")
 
 	depends_on("r-roxygen2@4:", type=("build", "run"))
 	depends_on("r-xfun@0.13:", type=("build", "run"))

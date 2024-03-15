@@ -13,7 +13,7 @@ class RCcpromise(RPackage):
 	"""
 	
 	bioc = "CCPROMISE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CCPROMISE_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CCPROMISE/CCPROMISE_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CCPROMISE_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CCPROMISE/CCPROMISE_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="1b85c7bbed3be474abf4e4591882abdf")
 

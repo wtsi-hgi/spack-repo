@@ -13,7 +13,7 @@ class RTenxbraindata(RPackage):
 	"""
 	
 	bioc = "TENxBrainData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/TENxBrainData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/TENxBrainData/TENxBrainData_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TENxBrainData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TENxBrainData/TENxBrainData_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="1fa1b93ab8d144b860c83dc5741490a0")
 

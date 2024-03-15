@@ -14,7 +14,7 @@ class RRpx(RPackage):
 	
 	homepage = "https://github.com/lgatto/rpx"
 	bioc = "rpx" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rpx_2.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rpx/rpx_2.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rpx_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rpx/rpx_2.10.0.tar.gz"]
 
 	version("2.10.0", md5="7e3f2004892b6fb40746c0dcdd990a43")
 

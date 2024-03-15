@@ -13,7 +13,7 @@ class RGeuvadistranscriptexpr(RPackage):
 	"""
 	
 	bioc = "GeuvadisTranscriptExpr" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/GeuvadisTranscriptExpr_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/GeuvadisTranscriptExpr/GeuvadisTranscriptExpr_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GeuvadisTranscriptExpr_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GeuvadisTranscriptExpr/GeuvadisTranscriptExpr_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="806de22bef0659a3b6f9db122d87a1d6")
 

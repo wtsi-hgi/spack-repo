@@ -14,7 +14,7 @@ class RBiocviews(RPackage):
 	
 	homepage = "http://bioconductor.org/packages/biocViews"
 	bioc = "biocViews" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biocViews_1.70.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biocViews/biocViews_1.70.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biocViews_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biocViews/biocViews_1.70.0.tar.gz"]
 
 	version("1.70.0", md5="e258342a57f06fa23f3732c75539c58d")
 

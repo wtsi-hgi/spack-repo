@@ -14,7 +14,7 @@ class RCardinal(RPackage):
 	
 	homepage = "http://www.cardinalmsi.org"
 	bioc = "Cardinal" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Cardinal_3.4.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Cardinal/Cardinal_3.4.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Cardinal_3.4.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Cardinal/Cardinal_3.4.3.tar.gz"]
 
 	version("3.4.3", md5="ee7f799a94a4c3cd1946feb2b1db9dd4")
 

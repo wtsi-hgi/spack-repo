@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,7 +16,9 @@ class RRsamtools(RPackage):
 	(tabix) files."""
 
 	bioc = "Rsamtools"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Rsamtools_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Rsamtools/Rsamtools_2.18.0.tar.gz"]
+
+	license("MIT")
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rsamtools_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rsamtools/Rsamtools_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="63af2a7dd2513e992fd78b26ca2b3775")
 

@@ -13,7 +13,7 @@ class RPdCangene11St(RPackage):
 	"""
 	
 	bioc = "pd.cangene.1.1.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.cangene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.cangene.1.1.st/pd.cangene.1.1.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.cangene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.cangene.1.1.st/pd.cangene.1.1.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="946074601e7bee72f3b3dd6ae6b3bc33")
 

@@ -13,7 +13,7 @@ class RMslp(RPackage):
 	"""
 	
 	bioc = "mslp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mslp_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mslp/mslp_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mslp_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mslp/mslp_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="8d78607401143e315c9ad75923a0c9c5")
 

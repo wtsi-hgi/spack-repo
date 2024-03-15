@@ -14,14 +14,14 @@ class RPeakpanther(RPackage):
 	
 	homepage = "https://github.com/phenomecentre/peakPantheR"
 	bioc = "peakPantheR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/peakPantheR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/peakPantheR/peakPantheR_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/peakPantheR_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/peakPantheR/peakPantheR_1.16.1.tar.gz"]
 
-	version("1.16.0", md5="9753434861181af826b86fbc734b5850")
+	version("1.16.1", md5="d1cf413311d8a862f7616bfb76174ee7")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-foreach@1.4.4:", type=("build", "run"))
 	depends_on("r-doparallel@1.0.11:", type=("build", "run"))
-	depends_on("r-ggplot2@3.3:", type=("build", "run"))
+	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r-gridextra@2.3:", type=("build", "run"))
 	depends_on("r-msnbase@2.4:", type=("build", "run"))
 	depends_on("r-mzr@2.12:", type=("build", "run"))

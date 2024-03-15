@@ -14,7 +14,7 @@ class RArrayquality(RPackage):
 	
 	homepage = "http://arrays.ucsf.edu/"
 	bioc = "arrayQuality" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/arrayQuality_1.80.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/arrayQuality/arrayQuality_1.80.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/arrayQuality_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/arrayQuality/arrayQuality_1.80.0.tar.gz"]
 
 	version("1.80.0", md5="9d875e31dc2f51e4c476d1a13330ad18")
 

@@ -14,7 +14,7 @@ class RMetagenomeseq(RPackage):
 	
 	homepage = "https://github.com/nosson/metagenomeSeq/"
 	bioc = "metagenomeSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/metagenomeSeq_1.43.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/metagenomeSeq/metagenomeSeq_1.43.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metagenomeSeq_1.43.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metagenomeSeq/metagenomeSeq_1.43.0.tar.gz"]
 
 	version("1.43.0", md5="ea0139abb9cbcda1f445b3527e621345")
 

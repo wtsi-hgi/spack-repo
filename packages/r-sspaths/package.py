@@ -13,7 +13,7 @@ class RSspaths(RPackage):
 	"""
 	
 	bioc = "ssPATHS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ssPATHS_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ssPATHS/ssPATHS_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ssPATHS_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ssPATHS/ssPATHS_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="121909c57596e3cd0d817cac2deb22c9")
 

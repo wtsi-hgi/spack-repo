@@ -14,7 +14,7 @@ class RRtrmui(RPackage):
 	
 	homepage = "https://github.com/ddiez/rTRMui"
 	bioc = "rTRMui" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rTRMui_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rTRMui/rTRMui_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rTRMui_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rTRMui/rTRMui_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="6e1589a0f3e51870f4eb71a0eb56d915")
 

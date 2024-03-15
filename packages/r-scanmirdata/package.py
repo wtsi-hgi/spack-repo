@@ -13,7 +13,7 @@ class RScanmirdata(RPackage):
 	"""
 	
 	bioc = "scanMiRData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/scanMiRData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/scanMiRData/scanMiRData_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scanMiRData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scanMiRData/scanMiRData_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="4c717492a3c85bbcf199873e35190219")
 

@@ -14,7 +14,7 @@ class RGenega(RPackage):
 	
 	homepage = "http://www.tbi.univie.ac.at/~ivo/RNA/"
 	bioc = "GeneGA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GeneGA_1.52.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GeneGA/GeneGA_1.52.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneGA_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneGA/GeneGA_1.52.0.tar.gz"]
 
 	version("1.52.0", md5="3047f864af1845ce91869fc2560733c4")
 

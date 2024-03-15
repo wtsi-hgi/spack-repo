@@ -13,7 +13,7 @@ class ROtubase(RPackage):
 	"""
 	
 	bioc = "OTUbase" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/OTUbase_1.52.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/OTUbase/OTUbase_1.52.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OTUbase_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OTUbase/OTUbase_1.52.0.tar.gz"]
 
 	version("1.52.0", md5="612c0f07995eb5cc0f753eb6750e5216")
 

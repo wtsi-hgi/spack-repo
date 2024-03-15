@@ -14,7 +14,7 @@ class REnrichviewnet(RPackage):
 	
 	homepage = "https://github.com/adeschen/enrichViewNet"
 	bioc = "enrichViewNet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/enrichViewNet_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/enrichViewNet/enrichViewNet_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/enrichViewNet_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/enrichViewNet/enrichViewNet_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="5b2eb51ee4f57abd3b77da182e7e5d1a")
 

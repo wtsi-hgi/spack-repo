@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RFastmatch(RPackage):
 	as it keeps the hash table in memory."""
 
 	cran = "fastmatch"
+
+	license("GPL-2.0-only")
 
 	version("1.1-4", md5="9ed826f639a8b6d4c8519c1062a3c109")
 

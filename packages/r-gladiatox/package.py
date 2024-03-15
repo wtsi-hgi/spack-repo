@@ -13,7 +13,7 @@ class RGladiatox(RPackage):
 	"""
 	
 	bioc = "GladiaTOX" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GladiaTOX_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GladiaTOX/GladiaTOX_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GladiaTOX_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GladiaTOX/GladiaTOX_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="a8affcce15bf1f5e9d03220e0de3fbe9")
 

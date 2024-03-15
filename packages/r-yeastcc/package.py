@@ -13,7 +13,7 @@ class RYeastcc(RPackage):
 	"""
 	
 	bioc = "yeastCC" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/yeastCC_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/yeastCC/yeastCC_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/yeastCC_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/yeastCC/yeastCC_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="847d9bba73cb25f458f608c2cd6bf0e8")
 

@@ -14,7 +14,7 @@ class RMegadepth(RPackage):
 	
 	homepage = "https://github.com/LieberInstitute/megadepth"
 	bioc = "megadepth" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/megadepth_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/megadepth/megadepth_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/megadepth_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/megadepth/megadepth_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="5fa04f9d4075030126388db419378304")
 

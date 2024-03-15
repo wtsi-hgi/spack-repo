@@ -14,7 +14,7 @@ class RRnaseqcomp(RPackage):
 	
 	homepage = "https://github.com/tengmx/rnaseqcomp"
 	bioc = "rnaseqcomp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rnaseqcomp_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rnaseqcomp/rnaseqcomp_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rnaseqcomp_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rnaseqcomp/rnaseqcomp_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="2d0e9f4dd34f6746ff48994f8067f6f6")
 

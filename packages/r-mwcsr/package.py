@@ -22,7 +22,7 @@ Variants
 	homepage = "https://github.com/ctlab/mwcsr"
 	cran = "mwcsr" 
 
-	version("0.1.7", md5="50ba0df27a53ffa36b552996ef9b02ca")
+	version("0.1.8", md5="1081f613fa98efb7e48eeee25c55240e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

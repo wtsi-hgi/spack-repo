@@ -14,7 +14,7 @@ class RHeatplus(RPackage):
 	
 	homepage = "https://github.com/alexploner/Heatplus"
 	bioc = "Heatplus" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Heatplus_3.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Heatplus/Heatplus_3.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Heatplus_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Heatplus/Heatplus_3.10.0.tar.gz"]
 
 	version("3.10.0", md5="459fb0dbd1242699e9f394f156a7e0c1")
 

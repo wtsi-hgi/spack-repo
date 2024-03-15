@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,9 @@ class RBookdown(RPackage):
 
 	cran = "bookdown"
 
-	version("0.37", md5="f4bb797613b2e89435e211f2d55b0912")
+	license("GPL-3.0-only")
+
+	version("0.38", md5="41358aa78abe01e70e121fe317cb7c5f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-htmltools@0.3.6:", type=("build", "run"))

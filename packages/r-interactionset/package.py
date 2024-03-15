@@ -13,7 +13,7 @@ class RInteractionset(RPackage):
 	"""
 	
 	bioc = "InteractionSet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/InteractionSet_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/InteractionSet/InteractionSet_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/InteractionSet_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/InteractionSet/InteractionSet_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="273175864f47083ba4b983c72ba0c1dc")
 

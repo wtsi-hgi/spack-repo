@@ -14,7 +14,7 @@ class RGatom(RPackage):
 	
 	homepage = "https://github.com/ctlab/gatom/"
 	bioc = "gatom" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gatom_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gatom/gatom_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gatom_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gatom/gatom_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="0e86773c5bafed3a4c13b7db82015463")
 

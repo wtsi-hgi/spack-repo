@@ -14,7 +14,7 @@ class RMiasim(RPackage):
 	
 	homepage = "https://github.com/microbiome/miaSim"
 	bioc = "miaSim" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/miaSim_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/miaSim/miaSim_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miaSim_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miaSim/miaSim_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="0867c6e7b7cae5acbfd6154b8af06d41")
 

@@ -13,7 +13,7 @@ class RElmerData(RPackage):
 	"""
 	
 	bioc = "ELMER.data" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/ELMER.data_2.26.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/ELMER.data/ELMER.data_2.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ELMER.data_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ELMER.data/ELMER.data_2.26.0.tar.gz"]
 
 	version("2.26.0", md5="565ea1aa52f3f61d16b7560859ed7a3a")
 

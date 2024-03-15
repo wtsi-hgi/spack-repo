@@ -13,7 +13,7 @@ class RFrgepistasis(RPackage):
 	"""
 	
 	bioc = "FRGEpistasis" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/FRGEpistasis_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/FRGEpistasis/FRGEpistasis_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FRGEpistasis_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FRGEpistasis/FRGEpistasis_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="a5804d62a4e375df7706ebc0573929f5")
 

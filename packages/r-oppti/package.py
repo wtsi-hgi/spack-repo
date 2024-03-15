@@ -14,7 +14,7 @@ class ROppti(RPackage):
 	
 	homepage = "https://github.com/Huang-lab/oppti"
 	bioc = "oppti" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/oppti_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/oppti/oppti_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oppti_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oppti/oppti_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="8f995db99b66e966a96b8ce150c956a7")
 

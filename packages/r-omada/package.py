@@ -13,7 +13,7 @@ class ROmada(RPackage):
 	"""
 	
 	bioc = "omada" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/omada_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/omada/omada_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/omada_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/omada/omada_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="d214fdb20c51cbce86bf1d34c59cb84b")
 

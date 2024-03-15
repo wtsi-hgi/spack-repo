@@ -13,7 +13,7 @@ class RInspect(RPackage):
 	"""
 	
 	bioc = "INSPEcT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/INSPEcT_1.32.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/INSPEcT/INSPEcT_1.32.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/INSPEcT_1.32.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/INSPEcT/INSPEcT_1.32.1.tar.gz"]
 
 	version("1.32.1", md5="d6ed794228c1ef9d64e7ae97278d7ccf")
 

@@ -13,7 +13,7 @@ class RRdgidb(RPackage):
 	"""
 	
 	bioc = "rDGIdb" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rDGIdb_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rDGIdb/rDGIdb_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rDGIdb_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rDGIdb/rDGIdb_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="5f3f78a4035bbb5597811f38c68b8e4f")
 

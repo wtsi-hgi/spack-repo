@@ -14,7 +14,7 @@ class RTwoddpcr(RPackage):
 	
 	homepage = "http://github.com/CRUKMI-ComputationalBiology/twoddpcr/"
 	bioc = "twoddpcr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/twoddpcr_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/twoddpcr/twoddpcr_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/twoddpcr_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/twoddpcr/twoddpcr_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="bbdb2cd12a3bd6f756b700d1216043ee")
 

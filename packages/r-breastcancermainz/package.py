@@ -14,7 +14,7 @@ class RBreastcancermainz(RPackage):
 	
 	homepage = "http://compbio.dfci.harvard.edu/"
 	bioc = "breastCancerMAINZ" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/breastCancerMAINZ_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/breastCancerMAINZ/breastCancerMAINZ_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/breastCancerMAINZ_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/breastCancerMAINZ/breastCancerMAINZ_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="2b8df5af87b71c6706f909129212b504")
 

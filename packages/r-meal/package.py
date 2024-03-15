@@ -13,7 +13,7 @@ class RMeal(RPackage):
 	"""
 	
 	bioc = "MEAL" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MEAL_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MEAL/MEAL_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MEAL_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MEAL/MEAL_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="f157edf85ba036b17edb728a44e2e519")
 

@@ -14,7 +14,7 @@ class RSpicyworkflow(RPackage):
 	
 	homepage = "https://github.com/SydneyBioX/spicyWorkflow"
 	bioc = "spicyWorkflow" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/spicyWorkflow_1.2.1.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/spicyWorkflow/spicyWorkflow_1.2.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/spicyWorkflow_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/spicyWorkflow/spicyWorkflow_1.2.1.tar.gz"]
 
 	version("1.2.1", md5="dc3f961321f6bc9a2382311929955574")
 

@@ -13,7 +13,7 @@ class RWeitrix(RPackage):
 	"""
 	
 	bioc = "weitrix" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/weitrix_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/weitrix/weitrix_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/weitrix_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/weitrix/weitrix_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="101d61858d3d388a1396212f7ef5332e")
 

@@ -13,7 +13,7 @@ class RSwitchbox(RPackage):
 	"""
 	
 	bioc = "switchBox" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/switchBox_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/switchBox/switchBox_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/switchBox_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/switchBox/switchBox_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="29de2be8446a4f686acf75635f1539b9")
 

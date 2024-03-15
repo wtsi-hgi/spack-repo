@@ -13,7 +13,7 @@ class RGenomeintervals(RPackage):
 	"""
 	
 	bioc = "genomeIntervals" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/genomeIntervals_1.58.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/genomeIntervals/genomeIntervals_1.58.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genomeIntervals_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genomeIntervals/genomeIntervals_1.58.0.tar.gz"]
 
 	version("1.58.0", md5="c47b9bb1293b799a7ac75fef82f45589")
 

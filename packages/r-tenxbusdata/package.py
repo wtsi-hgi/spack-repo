@@ -14,7 +14,7 @@ class RTenxbusdata(RPackage):
 	
 	homepage = "https://github.com/BUStools/TENxBUSData"
 	bioc = "TENxBUSData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/TENxBUSData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/TENxBUSData/TENxBUSData_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TENxBUSData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TENxBUSData/TENxBUSData_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="35be2bd3c806b055fc9463e8f135dd32")
 

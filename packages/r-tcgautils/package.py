@@ -13,7 +13,7 @@ class RTcgautils(RPackage):
 	"""
 	
 	bioc = "TCGAutils" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TCGAutils_1.22.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TCGAutils/TCGAutils_1.22.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TCGAutils_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TCGAutils/TCGAutils_1.22.2.tar.gz"]
 
 	version("1.22.2", md5="0a086006b357c8ed65ee0bfef09cef83")
 

@@ -13,7 +13,7 @@ class RProstatecancercamcap(RPackage):
 	"""
 	
 	bioc = "prostateCancerCamcap" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/prostateCancerCamcap_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/prostateCancerCamcap/prostateCancerCamcap_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/prostateCancerCamcap_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/prostateCancerCamcap/prostateCancerCamcap_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="5a27ee47f07162569e5e1e06ffd69886")
 

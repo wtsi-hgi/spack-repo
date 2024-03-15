@@ -14,7 +14,7 @@ class RMethrix(RPackage):
 	
 	homepage = "https://github.com/CompEpigen/methrix"
 	bioc = "methrix" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/methrix_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/methrix/methrix_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methrix_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methrix/methrix_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="7bdda59fc802fc09d10ca9a4916cfe94")
 

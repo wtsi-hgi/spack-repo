@@ -13,7 +13,7 @@ class RCnorfuzzy(RPackage):
 	"""
 	
 	bioc = "CNORfuzzy" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CNORfuzzy_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CNORfuzzy/CNORfuzzy_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNORfuzzy_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNORfuzzy/CNORfuzzy_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="c7d388f25498f45c39d8af83c5e14a89")
 

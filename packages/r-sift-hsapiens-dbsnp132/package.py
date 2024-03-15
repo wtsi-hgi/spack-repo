@@ -13,9 +13,9 @@ class RSiftHsapiensDbsnp132(RPackage):
 	"""
 	
 	bioc = "SIFT.Hsapiens.dbSNP132" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/SIFT.Hsapiens.dbSNP132_1.0.2.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/SIFT.Hsapiens.dbSNP132/SIFT.Hsapiens.dbSNP132_1.0.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/SIFT.Hsapiens.dbSNP132_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/SIFT.Hsapiens.dbSNP132/SIFT.Hsapiens.dbSNP132_1.0.2.tar.gz"]
 
-	version("1.0.2", md5="c374f0bf4c99357cfe99e0b192c00d75", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/SIFT.Hsapiens.dbSNP132_1.0.2.tar.gz")
+	version("1.0.2", md5="c374f0bf4c99357cfe99e0b192c00d75", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/SIFT.Hsapiens.dbSNP132_1.0.2.tar.gz")
 
 	depends_on("r-variantannotation", type=("build", "run"))
 	depends_on("r-rsqlite@0.11:", type=("build", "run"))

@@ -14,7 +14,7 @@ class RSnapcount(RPackage):
 	
 	homepage = "https://github.com/langmead-lab/snapcount"
 	bioc = "snapcount" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/snapcount_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/snapcount/snapcount_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/snapcount_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/snapcount/snapcount_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="8efa036bfe73acf9c31a279b3c365ae7")
 

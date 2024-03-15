@@ -13,7 +13,7 @@ class RClusterjudge(RPackage):
 	"""
 	
 	bioc = "ClusterJudge" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ClusterJudge_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ClusterJudge/ClusterJudge_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ClusterJudge_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ClusterJudge/ClusterJudge_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="1f1db5b57d83f67f60de690e6f224bde")
 

@@ -13,7 +13,7 @@ class RMoanin(RPackage):
 	"""
 	
 	bioc = "moanin" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/moanin_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/moanin/moanin_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/moanin_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/moanin/moanin_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="74f0ff5d927d538a2b41cdc9c1ee9fd9")
 

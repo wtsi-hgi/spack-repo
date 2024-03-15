@@ -13,7 +13,7 @@ class RGsean(RPackage):
 	"""
 	
 	bioc = "gsean" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gsean_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gsean/gsean_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gsean_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gsean/gsean_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="501dfe30896b53197345abe9d1600247")
 

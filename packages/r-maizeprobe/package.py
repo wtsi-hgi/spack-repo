@@ -13,7 +13,7 @@ class RMaizeprobe(RPackage):
 	"""
 	
 	bioc = "maizeprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/maizeprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/maizeprobe/maizeprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/maizeprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/maizeprobe/maizeprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="ef7ba47de2346b3552621263399c05d1")
 

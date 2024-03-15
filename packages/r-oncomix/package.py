@@ -13,7 +13,7 @@ class ROncomix(RPackage):
 	"""
 	
 	bioc = "oncomix" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/oncomix_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/oncomix/oncomix_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oncomix_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oncomix/oncomix_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="dd6381604152d7cb96f7c592e8f82ab7")
 

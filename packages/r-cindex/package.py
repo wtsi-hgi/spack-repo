@@ -13,7 +13,7 @@ class RCindex(RPackage):
 	"""
 	
 	bioc = "CINdex" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CINdex_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CINdex/CINdex_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CINdex_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CINdex/CINdex_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="2616a2a02791d966dbf54a54f2ad5f42")
 

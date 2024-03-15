@@ -14,7 +14,7 @@ class RNetdx(RPackage):
 	
 	homepage = "http://netdx.org"
 	bioc = "netDx" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/netDx_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/netDx/netDx_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/netDx_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/netDx/netDx_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="6fdc48ce518c74e0261acee84948ce26")
 

@@ -14,7 +14,7 @@ class RLefser(RPackage):
 	
 	homepage = "https://github.com/waldronlab/lefser"
 	bioc = "lefser" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/lefser_1.12.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/lefser/lefser_1.12.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lefser_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lefser/lefser_1.12.1.tar.gz"]
 
 	version("1.12.1", md5="c3b2deaf4b58de1bb930164df11a388f")
 

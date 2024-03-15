@@ -14,7 +14,7 @@ class RGgkegg(RPackage):
 	
 	homepage = "https://github.com/noriakis/ggkegg"
 	bioc = "ggkegg" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ggkegg_1.0.13.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ggkegg/ggkegg_1.0.13.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggkegg_1.0.13.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggkegg/ggkegg_1.0.13.tar.gz"]
 
 	version("1.0.13", md5="02848c5ed45b1480b71e69cc13607a69")
 

@@ -14,7 +14,7 @@ class RSipsic(RPackage):
 	
 	homepage = "https://doi.org/10.1101/2023.03.27.534310"
 	bioc = "SiPSiC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SiPSiC_1.2.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SiPSiC/SiPSiC_1.2.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SiPSiC_1.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SiPSiC/SiPSiC_1.2.2.tar.gz"]
 
 	version("1.2.2", md5="b8de9b61ecec686d20b8b3a4383cb6f9")
 

@@ -13,7 +13,7 @@ class RHu6800subdcdf(RPackage):
 	"""
 	
 	bioc = "hu6800subdcdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hu6800subdcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hu6800subdcdf/hu6800subdcdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hu6800subdcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hu6800subdcdf/hu6800subdcdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="7966c21babb23e18cca4faafc8720f0a")
 

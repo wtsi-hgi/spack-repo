@@ -13,7 +13,7 @@ class RStringdb(RPackage):
 	"""
 	
 	bioc = "STRINGdb" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/STRINGdb_2.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/STRINGdb/STRINGdb_2.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/STRINGdb_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/STRINGdb/STRINGdb_2.14.0.tar.gz"]
 
 	version("2.14.0", md5="6dc5819519574f0656e4b811e4618db7")
 

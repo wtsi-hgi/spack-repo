@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -21,10 +21,12 @@ class RRstan(RPackage):
 
 	cran = "rstan"
 
-	version("2.32.5", md5="0d7ea5114187f589f6a2255cf1eeb397")
+	license("GPL-3.0-or-later")
+
+	version("2.32.6", md5="93aecb7454d73942e9b0c719b2723505")
 
 	depends_on("r@3.4:", type=("build", "run"))
-	depends_on("r-stanheaders@2.26.28:", type=("build", "run"))
+	depends_on("r-stanheaders@2.32:", type=("build", "run"))
 	depends_on("r-inline@0.3.19:", type=("build", "run"))
 	depends_on("r-gridextra@2.3:", type=("build", "run"))
 	depends_on("r-rcpp@1.0.7:", type=("build", "run"))
@@ -33,7 +35,7 @@ class RRstan(RPackage):
 	depends_on("r-pkgbuild@1.2:", type=("build", "run"))
 	depends_on("r-quickjsr", type=("build", "run"))
 	depends_on("r-ggplot2@3.3.5:", type=("build", "run"))
-	depends_on("r-rcppeigen@0.3.3.9.3:", type=("build", "run"))
+	depends_on("r-rcppeigen@0.3.4:", type=("build", "run"))
 	depends_on("r-bh@1.75.0.0:", type=("build", "run"))
 	depends_on("pandoc", type=("build", "link", "run"))
 	depends_on("pandoc", type=("build", "link", "run"))

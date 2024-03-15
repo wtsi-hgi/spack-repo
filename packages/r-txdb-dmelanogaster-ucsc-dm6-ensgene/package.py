@@ -13,7 +13,7 @@ class RTxdbDmelanogasterUcscDm6Ensgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Dmelanogaster.UCSC.dm6.ensGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Dmelanogaster.UCSC.dm6.ensGene_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Dmelanogaster.UCSC.dm6.ensGene/TxDb.Dmelanogaster.UCSC.dm6.ensGene_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Dmelanogaster.UCSC.dm6.ensGene_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Dmelanogaster.UCSC.dm6.ensGene/TxDb.Dmelanogaster.UCSC.dm6.ensGene_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="bec18a1fb2768347e907e3171d5332ca")
 

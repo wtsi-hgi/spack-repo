@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RSass(RPackage):
 	which is stable, powerful, and CSS compatible."""
 
 	cran = "sass"
+
+	license("MIT")
 
 	version("0.4.8", md5="1b541e8a0ce9ec67ade93869740db4b8")
 

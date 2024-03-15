@@ -13,7 +13,7 @@ class RSaureusprobe(RPackage):
 	"""
 	
 	bioc = "saureusprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/saureusprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/saureusprobe/saureusprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/saureusprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/saureusprobe/saureusprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="eb4e91b10a536cbde4ecc08951ddf4d3")
 

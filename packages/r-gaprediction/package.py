@@ -13,7 +13,7 @@ class RGaprediction(RPackage):
 	"""
 	
 	bioc = "GAprediction" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GAprediction_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GAprediction/GAprediction_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GAprediction_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GAprediction/GAprediction_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="5aceb1005e134eeeb2fc6a77941d8348")
 

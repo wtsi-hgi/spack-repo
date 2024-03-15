@@ -13,7 +13,7 @@ class RMarinerdata(RPackage):
 	"""
 	
 	bioc = "marinerData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/marinerData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/marinerData/marinerData_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/marinerData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/marinerData/marinerData_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="7875113ebb6baaaed6eb6fc762ba92ca")
 

@@ -13,7 +13,7 @@ class RMicrornaome(RPackage):
 	"""
 	
 	bioc = "microRNAome" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/microRNAome_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/microRNAome/microRNAome_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/microRNAome_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/microRNAome/microRNAome_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="12d3baf395e82975bbcacfb9ff61a715")
 

@@ -14,7 +14,7 @@ class RPackfinder(RPackage):
 	
 	homepage = "https://github.com/jackgisby/packFinder"
 	bioc = "packFinder" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/packFinder_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/packFinder/packFinder_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/packFinder_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/packFinder/packFinder_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="8c2f41158644b4d04136910e0ce39af8")
 

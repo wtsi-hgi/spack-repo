@@ -22,10 +22,10 @@ class RMclustaddons(RPackage):
 	homepage = "https://mclust-org.github.io/mclustAddons/"
 	cran = "mclustAddons" 
 
-	version("0.7.2", md5="5f1ab6d66258a80e462b2ac4eab8891a")
+	version("0.8", md5="82ddb64a3873cb3c7728ceb46afbe55a")
 
 	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-mclust@5.4:", type=("build", "run"))
+	depends_on("r-mclust@6.1:", type=("build", "run"))
 	depends_on("r-foreach", type=("build", "run"))
 	depends_on("r-iterators", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

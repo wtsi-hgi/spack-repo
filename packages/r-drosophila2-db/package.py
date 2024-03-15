@@ -13,7 +13,7 @@ class RDrosophila2Db(RPackage):
 	"""
 	
 	bioc = "drosophila2.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/drosophila2.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/drosophila2.db/drosophila2.db_3.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/drosophila2.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/drosophila2.db/drosophila2.db_3.13.0.tar.gz"]
 
 	version("3.13.0", md5="c01d0d1b5e17c3b36ad801b44da72b96")
 

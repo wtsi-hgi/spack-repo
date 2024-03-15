@@ -14,7 +14,7 @@ class RTvtb(RPackage):
 	
 	homepage = "https://github.com/kevinrue/TVTB"
 	bioc = "TVTB" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TVTB_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TVTB/TVTB_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TVTB_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TVTB/TVTB_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="64da00f3c21bf3f9a82dc32e451395a1")
 

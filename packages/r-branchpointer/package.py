@@ -13,7 +13,7 @@ class RBranchpointer(RPackage):
 	"""
 	
 	bioc = "branchpointer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/branchpointer_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/branchpointer/branchpointer_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/branchpointer_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/branchpointer/branchpointer_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="7a62abd020843736b7ea125ffc4a56e0")
 

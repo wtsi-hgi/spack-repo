@@ -13,7 +13,7 @@ class RSingleMtecTranscriptomes(RPackage):
 	"""
 	
 	bioc = "Single.mTEC.Transcriptomes" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Single.mTEC.Transcriptomes_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/Single.mTEC.Transcriptomes/Single.mTEC.Transcriptomes_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Single.mTEC.Transcriptomes_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Single.mTEC.Transcriptomes/Single.mTEC.Transcriptomes_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="574ee45ff1177688d68e6ae8295e67a2")
 

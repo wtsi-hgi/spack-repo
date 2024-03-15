@@ -22,7 +22,7 @@ class RChoroplethr(RPackage):
 	homepage = "www.choroplethr.com"
 	cran = "choroplethr" 
 
-	version("3.7.2", md5="d3a0a84063869af8c385cef11ff05a09")
+	version("3.7.3", md5="2012a42f97fc8b3a407b84056a8b62a5")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-acs", type=("build", "run"))

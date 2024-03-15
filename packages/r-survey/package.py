@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -19,12 +19,16 @@ class RSurvey(RPackage):
 
 	cran = "survey"
 
-	version("4.2-1", md5="5ddc886c509861b8cfd82c23976e25f6")
+	license("GPL-2.0-only OR GPL-3.0-only")
 
-	depends_on("r@3.5:", type=("build", "run"))
+	version("4.4-1", md5="06574ba74a051c98255e363584da7a36")
+
+	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))
 	depends_on("r-minqa", type=("build", "run"))
 	depends_on("r-numderiv", type=("build", "run"))
 	depends_on("r-mitools@2.4:", type=("build", "run"))
+	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("r-rcpparmadillo", type=("build", "run"))

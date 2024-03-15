@@ -13,7 +13,7 @@ class RRitan(RPackage):
 	"""
 	
 	bioc = "RITAN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RITAN_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RITAN/RITAN_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RITAN_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RITAN/RITAN_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="d9b8cf771e70cd374ba72e63aa439865")
 

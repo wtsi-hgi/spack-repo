@@ -13,7 +13,7 @@ class RDyndoc(RPackage):
 	"""
 	
 	bioc = "DynDoc" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DynDoc_1.80.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DynDoc/DynDoc_1.80.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DynDoc_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DynDoc/DynDoc_1.80.0.tar.gz"]
 
 	version("1.80.0", md5="1d5ea2c0b36289466bdb8095b39634fd")
 

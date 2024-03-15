@@ -13,7 +13,7 @@ class RPdPlasmodiumAnopheles(RPackage):
 	"""
 	
 	bioc = "pd.plasmodium.anopheles" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.plasmodium.anopheles_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.plasmodium.anopheles/pd.plasmodium.anopheles_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.plasmodium.anopheles_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.plasmodium.anopheles/pd.plasmodium.anopheles_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="ae55b1451ceaed951f68213c0433f3d0")
 

@@ -14,7 +14,7 @@ class RTweedeseqcountdata(RPackage):
 	
 	homepage = "https://github.com/isglobal-brge/tweeDEseqCountData/"
 	bioc = "tweeDEseqCountData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/tweeDEseqCountData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/tweeDEseqCountData/tweeDEseqCountData_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tweeDEseqCountData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tweeDEseqCountData/tweeDEseqCountData_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="d63e819cedf93ffbe115ed518bc9feaf")
 

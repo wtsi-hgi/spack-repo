@@ -13,7 +13,7 @@ class RArrmdata(RPackage):
 	"""
 	
 	bioc = "ARRmData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/ARRmData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/ARRmData/ARRmData_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ARRmData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ARRmData/ARRmData_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="95475f869b8ff3d6344c0f45f2e616c9")
 

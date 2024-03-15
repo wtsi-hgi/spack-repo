@@ -13,7 +13,7 @@ class RAhensdbs(RPackage):
 	"""
 	
 	bioc = "AHEnsDbs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/AHEnsDbs_1.1.11.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/AHEnsDbs/AHEnsDbs_1.1.11.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AHEnsDbs_1.1.11.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/AHEnsDbs/AHEnsDbs_1.1.11.tar.gz"]
 
 	version("1.1.11", md5="b062155b0b493e9cc311656222c7c39a")
 

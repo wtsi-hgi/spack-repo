@@ -14,7 +14,7 @@ class RDmrscan(RPackage):
 	
 	homepage = "https://github.com/christpa/DMRScan"
 	bioc = "DMRScan" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DMRScan_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DMRScan/DMRScan_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DMRScan_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DMRScan/DMRScan_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="698b81baf921ef394adedb8d8ff7ba7f")
 

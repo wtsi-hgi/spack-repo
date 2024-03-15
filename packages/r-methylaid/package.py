@@ -13,7 +13,7 @@ class RMethylaid(RPackage):
 	"""
 	
 	bioc = "MethylAid" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MethylAid_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MethylAid/MethylAid_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MethylAid_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MethylAid/MethylAid_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="8e5139726d6384208be410a794ba6388")
 

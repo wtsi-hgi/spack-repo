@@ -14,7 +14,7 @@ class RPhenomis(RPackage):
 	
 	homepage = "https://doi.org/10.1038/s41597-021-01095-3"
 	bioc = "phenomis" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/phenomis_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/phenomis/phenomis_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phenomis_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phenomis/phenomis_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="6fc3be4aed9fead1f2038fb3d2837854")
 

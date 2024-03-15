@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class RVariantannotation(RPackage):
 	outcomes."""
 
 	bioc = "VariantAnnotation"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/VariantAnnotation_1.48.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/VariantAnnotation/VariantAnnotation_1.48.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VariantAnnotation_1.48.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VariantAnnotation/VariantAnnotation_1.48.1.tar.gz"]
 
 	version("1.48.1", md5="39b6f4907fe37495a903c338e6d4cc73")
 

@@ -13,7 +13,7 @@ class RRta10probesetDb(RPackage):
 	"""
 	
 	bioc = "rta10probeset.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/rta10probeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/rta10probeset.db/rta10probeset.db_8.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rta10probeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rta10probeset.db/rta10probeset.db_8.8.0.tar.gz"]
 
 	version("8.8.0", md5="ce002623471eef89fb841f0bf3e7c9f8")
 

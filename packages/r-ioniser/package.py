@@ -13,7 +13,7 @@ class RIoniser(RPackage):
 	"""
 	
 	bioc = "IONiseR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IONiseR_2.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IONiseR/IONiseR_2.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IONiseR_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IONiseR/IONiseR_2.26.0.tar.gz"]
 
 	version("2.26.0", md5="10a3ed3f75ba8be8989b90d197096b40")
 

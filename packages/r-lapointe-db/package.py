@@ -13,7 +13,7 @@ class RLapointeDb(RPackage):
 	"""
 	
 	bioc = "LAPOINTE.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/LAPOINTE.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/LAPOINTE.db/LAPOINTE.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/LAPOINTE.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/LAPOINTE.db/LAPOINTE.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="434b25ad7411201d8be6bb1a0463b387")
 

@@ -14,7 +14,7 @@ class RMeshes(RPackage):
 	
 	homepage = "https://yulab-smu.top/biomedical-knowledge-mining-book/"
 	bioc = "meshes" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/meshes_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/meshes/meshes_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/meshes_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/meshes/meshes_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="90be6eeeb3ced1146ddcba48e2ec6c6e")
 

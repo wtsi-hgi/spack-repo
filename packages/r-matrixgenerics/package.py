@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,7 +18,7 @@ class RMatrixgenerics(RPackage):
 	implementations without worrying about incompatibilities."""
 
 	bioc = "MatrixGenerics"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MatrixGenerics_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MatrixGenerics/MatrixGenerics_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MatrixGenerics_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MatrixGenerics/MatrixGenerics_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="18c3a5cc993ca5c2ad48dde1813105e6")
 

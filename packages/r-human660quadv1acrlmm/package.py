@@ -13,7 +13,7 @@ class RHuman660quadv1acrlmm(RPackage):
 	"""
 	
 	bioc = "human660quadv1aCrlmm" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/human660quadv1aCrlmm_1.0.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/human660quadv1aCrlmm/human660quadv1aCrlmm_1.0.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/human660quadv1aCrlmm_1.0.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/human660quadv1aCrlmm/human660quadv1aCrlmm_1.0.3.tar.gz"]
 
 	version("1.0.3", md5="5fd2d94a462e150c888f13c5c0975c36")
 

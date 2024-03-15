@@ -13,7 +13,7 @@ class RRagene10stprobesetDb(RPackage):
 	"""
 	
 	bioc = "ragene10stprobeset.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ragene10stprobeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/ragene10stprobeset.db/ragene10stprobeset.db_8.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ragene10stprobeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ragene10stprobeset.db/ragene10stprobeset.db_8.8.0.tar.gz"]
 
 	version("8.8.0", md5="358685c380b37027a064924069b9ee40")
 

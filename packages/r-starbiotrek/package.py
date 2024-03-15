@@ -14,7 +14,7 @@ class RStarbiotrek(RPackage):
 	
 	homepage = "https://github.com/claudiacava/StarBioTrek"
 	bioc = "StarBioTrek" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/StarBioTrek_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/StarBioTrek/StarBioTrek_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/StarBioTrek_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/StarBioTrek/StarBioTrek_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="a1a892a63f09a57e18eb825ab8a0ec7e")
 

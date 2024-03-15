@@ -13,7 +13,7 @@ class RSimd(RPackage):
 	"""
 	
 	bioc = "SIMD" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SIMD_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SIMD/SIMD_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SIMD_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SIMD/SIMD_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="3fa4a3f26b9c42aa5026f0a22956195b")
 

@@ -13,7 +13,7 @@ class RCma(RPackage):
 	"""
 	
 	bioc = "CMA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CMA_1.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CMA/CMA_1.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CMA_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CMA/CMA_1.60.0.tar.gz"]
 
 	version("1.60.0", md5="6654a3ef8f06edc618b81b8a059b2139")
 

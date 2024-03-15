@@ -13,7 +13,7 @@ class RExphuntersuite(RPackage):
 	"""
 	
 	bioc = "ExpHunterSuite" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/ExpHunterSuite_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/ExpHunterSuite/ExpHunterSuite_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/ExpHunterSuite_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/ExpHunterSuite/ExpHunterSuite_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="84adeeade381f26a12e2bdd69208e352")
 

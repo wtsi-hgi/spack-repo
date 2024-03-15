@@ -13,7 +13,7 @@ class RCydar(RPackage):
 	"""
 	
 	bioc = "cydar" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cydar_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cydar/cydar_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cydar_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cydar/cydar_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="b804632cc0742b1e2f9910353a6ed75d")
 

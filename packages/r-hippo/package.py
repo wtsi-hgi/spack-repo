@@ -14,7 +14,7 @@ class RHippo(RPackage):
 	
 	homepage = "https://github.com/tk382/HIPPO"
 	bioc = "HIPPO" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HIPPO_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HIPPO/HIPPO_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HIPPO_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HIPPO/HIPPO_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="6c249e5f8b3f2a0622642c945e8d0566")
 

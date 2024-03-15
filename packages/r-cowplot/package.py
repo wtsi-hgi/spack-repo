@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,6 +18,8 @@ class RCowplot(RPackage):
 	Fundamentals of Data Visualization."""
 
 	cran = "cowplot"
+
+	license("GPL-2.0-only")
 
 	version("1.1.3", md5="fbfdde59c0b5521ace81bdf96e79f2f6")
 

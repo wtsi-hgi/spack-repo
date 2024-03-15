@@ -14,7 +14,7 @@ class RPipecomp(RPackage):
 	
 	homepage = "https://doi.org/10.1186/s13059-020-02136-7"
 	bioc = "pipeComp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pipeComp_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pipeComp/pipeComp_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pipeComp_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pipeComp/pipeComp_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="ccc688331233bccee84104cbbb9b5d81")
 

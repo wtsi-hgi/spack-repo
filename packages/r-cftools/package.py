@@ -14,7 +14,7 @@ class RCftools(RPackage):
 	
 	homepage = "https://github.com/jasminezhoulab/cfTools"
 	bioc = "cfTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cfTools_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cfTools/cfTools_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cfTools_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cfTools/cfTools_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="cf0f03a9654984b3214bcadac889fc28")
 

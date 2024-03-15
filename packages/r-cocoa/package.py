@@ -14,7 +14,7 @@ class RCocoa(RPackage):
 	
 	homepage = "http://code.databio.org/COCOA/"
 	bioc = "COCOA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/COCOA_2.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/COCOA/COCOA_2.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/COCOA_2.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/COCOA/COCOA_2.16.0.tar.gz"]
 
 	version("2.16.0", md5="6525a033b4b6ab78aa4ecb8e3f35b6e3")
 

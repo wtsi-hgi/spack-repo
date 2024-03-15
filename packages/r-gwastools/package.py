@@ -14,7 +14,7 @@ class RGwastools(RPackage):
 	
 	homepage = "https://github.com/smgogarten/GWASTools"
 	bioc = "GWASTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GWASTools_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GWASTools/GWASTools_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GWASTools_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GWASTools/GWASTools_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="af968b8e8a3e4a1981cae02cb2a781ec")
 

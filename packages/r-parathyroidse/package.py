@@ -13,7 +13,7 @@ class RParathyroidse(RPackage):
 	"""
 	
 	bioc = "parathyroidSE" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/parathyroidSE_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/parathyroidSE/parathyroidSE_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/parathyroidSE_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/parathyroidSE/parathyroidSE_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="e4d06f888feb4015273e20b14f8ee37a")
 

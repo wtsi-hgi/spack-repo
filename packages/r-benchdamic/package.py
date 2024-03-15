@@ -13,9 +13,9 @@ class RBenchdamic(RPackage):
 	"""
 	
 	bioc = "benchdamic" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/benchdamic_1.8.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/benchdamic/benchdamic_1.8.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/benchdamic_1.8.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/benchdamic/benchdamic_1.8.2.tar.gz"]
 
-	version("1.8.1", md5="ca158383ebf87138c91438c7946fe567")
+	version("1.8.2", md5="3e181e9df4a701c33b61a184a26f0a59")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-phyloseq", type=("build", "run"))

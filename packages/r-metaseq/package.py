@@ -13,7 +13,7 @@ class RMetaseq(RPackage):
 	"""
 	
 	bioc = "metaSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/metaSeq_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/metaSeq/metaSeq_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metaSeq_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metaSeq/metaSeq_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="8c3ee60501395cc86ecda6817d0d5439")
 

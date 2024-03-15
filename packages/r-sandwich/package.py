@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -24,6 +24,8 @@ class RSandwich(RPackage):
 	Zeileis (2006) <doi:10.18637/jss.v016.i09>."""
 
 	cran = "sandwich"
+
+	license("GPL-2.0-only OR GPL-3.0-only")
 
 	version("3.1-0", md5="a5abc91469c1f1ae604dba272268b10b")
 

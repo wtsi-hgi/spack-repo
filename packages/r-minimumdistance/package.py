@@ -13,7 +13,7 @@ class RMinimumdistance(RPackage):
 	"""
 	
 	bioc = "MinimumDistance" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MinimumDistance_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MinimumDistance/MinimumDistance_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MinimumDistance_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MinimumDistance/MinimumDistance_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="ab96e788a4152b80b7a685f3fc8fcd9c")
 

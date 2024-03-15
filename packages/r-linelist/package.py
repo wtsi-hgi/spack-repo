@@ -15,10 +15,11 @@ class RLinelist(RPackage):
 	homepage = "https://epiverse-trace.github.io/linelist/"
 	cran = "linelist" 
 
-	version("1.0.0", md5="1c31a21dee9b9c4a0ba0bb89ddd4844b")
+	version("1.1.0", md5="e7e2a27eeec57bf88c10f7e9dbb7f0f3")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-lifecycle", type=("build", "run"))
+	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-tidyselect", type=("build", "run"))

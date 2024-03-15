@@ -13,7 +13,7 @@ class RRrho(RPackage):
 	"""
 	
 	bioc = "RRHO" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RRHO_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RRHO/RRHO_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RRHO_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RRHO/RRHO_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="979e74a493ef06b25a98574facdd4c3f")
 

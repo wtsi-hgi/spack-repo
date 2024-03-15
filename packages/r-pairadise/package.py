@@ -13,7 +13,7 @@ class RPairadise(RPackage):
 	"""
 	
 	bioc = "PAIRADISE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PAIRADISE_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PAIRADISE/PAIRADISE_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PAIRADISE_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PAIRADISE/PAIRADISE_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="2a3889d2380363b7a9b0ee3c75ef0891")
 

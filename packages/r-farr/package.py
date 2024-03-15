@@ -16,7 +16,7 @@ class RFarr(RPackage):
 	homepage = "https://github.com/iangow/farr"
 	cran = "farr" 
 
-	version("0.2.39", md5="7f49896d030777b171715241230de4ce")
+	version("0.3.0", md5="377824e3242100723f79a3b0204db6eb")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dbplyr@2.2:", type=("build", "run"))

@@ -14,7 +14,7 @@ class RAncombc(RPackage):
 	
 	homepage = "https://github.com/FrederickHuangLin/ANCOMBC"
 	bioc = "ANCOMBC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ANCOMBC_2.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ANCOMBC/ANCOMBC_2.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ANCOMBC_2.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ANCOMBC/ANCOMBC_2.4.0.tar.gz"]
 
 	version("2.4.0", md5="42059f62faa03e818d0cd15b7bcf0094")
 

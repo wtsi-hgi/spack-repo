@@ -13,7 +13,7 @@ class RRuvnormalizedata(RPackage):
 	"""
 	
 	bioc = "RUVnormalizeData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RUVnormalizeData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/RUVnormalizeData/RUVnormalizeData_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RUVnormalizeData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RUVnormalizeData/RUVnormalizeData_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="5d7104746a5cac16500870312dd769a6")
 

@@ -14,7 +14,7 @@ class RRmspc(RPackage):
 	
 	homepage = "https://genometric.github.io/MSPC/"
 	bioc = "rmspc" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rmspc_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rmspc/rmspc_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rmspc_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rmspc/rmspc_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="fd5ce900bcff0c0a4b4423a7cc261aec")
 

@@ -13,7 +13,7 @@ class RMgu74bv2probe(RPackage):
 	"""
 	
 	bioc = "mgu74bv2probe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mgu74bv2probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mgu74bv2probe/mgu74bv2probe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mgu74bv2probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mgu74bv2probe/mgu74bv2probe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="f6a12f88ea3c43a3e885c7e9b3fd03d2")
 

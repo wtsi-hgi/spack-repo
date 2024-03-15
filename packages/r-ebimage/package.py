@@ -14,7 +14,7 @@ class REbimage(RPackage):
 	
 	homepage = "https://github.com/aoles/EBImage"
 	bioc = "EBImage" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EBImage_4.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EBImage/EBImage_4.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EBImage_4.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EBImage/EBImage_4.44.0.tar.gz"]
 
 	version("4.44.0", md5="22e920a81ab633cdbf753daf3e128d64")
 

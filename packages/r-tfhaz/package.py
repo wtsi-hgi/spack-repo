@@ -13,7 +13,7 @@ class RTfhaz(RPackage):
 	"""
 	
 	bioc = "TFHAZ" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TFHAZ_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TFHAZ/TFHAZ_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFHAZ_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFHAZ/TFHAZ_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="4befbb77bb7eb52b220a2472010cab25")
 

@@ -14,7 +14,7 @@ class RMatter(RPackage):
 	
 	homepage = "https://github.com/kuwisdelu/matter"
 	bioc = "matter" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/matter_2.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/matter/matter_2.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/matter_2.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/matter/matter_2.4.0.tar.gz"]
 
 	version("2.4.0", md5="08919bc0df5442e0916ee7cffbc23003")
 

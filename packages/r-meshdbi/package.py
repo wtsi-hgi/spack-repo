@@ -13,7 +13,7 @@ class RMeshdbi(RPackage):
 	"""
 	
 	bioc = "MeSHDbi" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MeSHDbi_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MeSHDbi/MeSHDbi_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MeSHDbi_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MeSHDbi/MeSHDbi_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="edb738bd5c18f7017ebd13bd0cce9d2f")
 

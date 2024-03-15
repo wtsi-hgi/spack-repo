@@ -13,7 +13,7 @@ class RPdElegene11St(RPackage):
 	"""
 	
 	bioc = "pd.elegene.1.1.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.elegene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.elegene.1.1.st/pd.elegene.1.1.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.elegene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.elegene.1.1.st/pd.elegene.1.1.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="1dbe166ea347a5a7e240db925d2081c7")
 

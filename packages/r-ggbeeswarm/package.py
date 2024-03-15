@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,6 +14,8 @@ class RGgbeeswarm(RPackage):
 	that region, and avoids over-plotting."""
 
 	cran = "ggbeeswarm"
+
+	license("GPL-3.0-or-later")
 
 	version("0.7.2", md5="b062f40a143df3d06b1865e89544438c")
 

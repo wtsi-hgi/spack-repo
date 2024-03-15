@@ -14,7 +14,7 @@ class RDcanr(RPackage):
 	
 	homepage = "https://davislaboratory.github.io/dcanr/"
 	bioc = "dcanr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/dcanr_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/dcanr/dcanr_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dcanr_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dcanr/dcanr_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="1a30832879c85ae9430a463d581ba978")
 

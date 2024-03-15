@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -21,9 +21,12 @@ class RLava(RPackage):
 
 	cran = "lava"
 
-	version("1.7.3", md5="de13698031fad1ecaa5d5d451d45a5f1")
+	license("GPL-3.0-only")
 
-	depends_on("r@3.5:", type=("build", "run"))
+	version("1.8.0", md5="3e67327f96b08caeac828871968a4f8b")
+
+	depends_on("r@3:", type=("build", "run"))
+	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-future-apply", type=("build", "run"))
 	depends_on("r-numderiv", type=("build", "run"))
 	depends_on("r-progressr", type=("build", "run"))

@@ -15,7 +15,7 @@ class RCrandep(RPackage):
 	homepage = "https://github.com/clement-lee/crandep"
 	cran = "crandep" 
 
-	version("0.3.5", md5="11d814ced7eee45b7523c65a919dae0b")
+	version("0.3.6", md5="38999dff4fc872b9f7a0c7a10f755b1c")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))
@@ -24,5 +24,7 @@ class RCrandep(RPackage):
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("r-pracma", type=("build", "run"))
+	depends_on("r-gsl", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
 	depends_on("pandoc@1.12.3:", type=("build", "link", "run"))

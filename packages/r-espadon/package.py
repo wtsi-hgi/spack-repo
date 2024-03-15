@@ -15,7 +15,7 @@ class REspadon(RPackage):
 	homepage = "https://espadon.cnrs.fr"
 	cran = "espadon" 
 
-	version("1.5.1", md5="6c16c08af57e2d4c87e4b4cc4f20ede4")
+	version("1.6.0", md5="e76698cc4ea9bbc4080d875d8e70f8d2")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-colorspace", type=("build", "run"))
@@ -25,6 +25,7 @@ class REspadon(RPackage):
 	depends_on("r-mathjaxr", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-misc3d", type=("build", "run"))
+	depends_on("r-morpho", type=("build", "run"))
 	depends_on("r-openxlsx", type=("build", "run"))
 	depends_on("r-progress", type=("build", "run"))
 	depends_on("r-qs", type=("build", "run"))

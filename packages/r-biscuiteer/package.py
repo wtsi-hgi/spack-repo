@@ -14,7 +14,7 @@ class RBiscuiteer(RPackage):
 	
 	homepage = "https://github.com/trichelab/biscuiteer"
 	bioc = "biscuiteer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biscuiteer_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biscuiteer/biscuiteer_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biscuiteer_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biscuiteer/biscuiteer_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="a38a486daf7d4c4dd682f20658039234")
 

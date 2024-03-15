@@ -17,7 +17,7 @@ class RReadtext(RPackage):
 	homepage = "https://github.com/quanteda/readtext"
 	cran = "readtext" 
 
-	version("0.90", md5="7106035be06c804ec975e76bb2b6725c")
+	version("0.91", md5="4bc20ead09054bfaacc09acf9a3022ec")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-antiword", type=("build", "run"))

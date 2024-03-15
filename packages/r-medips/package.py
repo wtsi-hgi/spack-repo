@@ -13,7 +13,7 @@ class RMedips(RPackage):
 	"""
 	
 	bioc = "MEDIPS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MEDIPS_1.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MEDIPS/MEDIPS_1.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MEDIPS_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MEDIPS/MEDIPS_1.54.0.tar.gz"]
 
 	version("1.54.0", md5="088394b1864d37eba7ed1064a9d671e9")
 

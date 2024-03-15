@@ -13,7 +13,7 @@ class ROmiccircos(RPackage):
 	"""
 	
 	bioc = "OmicCircos" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/OmicCircos_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/OmicCircos/OmicCircos_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OmicCircos_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OmicCircos/OmicCircos_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="7d77b9a00853d3e6fec869012ce33daf")
 

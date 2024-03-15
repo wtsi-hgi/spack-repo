@@ -13,7 +13,7 @@ class RIdiogram(RPackage):
 	"""
 	
 	bioc = "idiogram" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/idiogram_1.78.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/idiogram/idiogram_1.78.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/idiogram_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/idiogram/idiogram_1.78.0.tar.gz"]
 
 	version("1.78.0", md5="2ee94ac9719c77f8a2f6b691662a7909")
 

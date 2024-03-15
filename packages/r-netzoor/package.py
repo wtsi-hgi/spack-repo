@@ -14,7 +14,7 @@ class RNetzoor(RPackage):
 	
 	homepage = "https://github.com/netZoo/netZooR"
 	bioc = "netZooR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/netZooR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/netZooR/netZooR_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/netZooR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/netZooR/netZooR_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="2f4adb3763df2df201212073e34bab10")
 

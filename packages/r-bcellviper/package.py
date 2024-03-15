@@ -13,7 +13,7 @@ class RBcellviper(RPackage):
 	"""
 	
 	bioc = "bcellViper" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/bcellViper_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/bcellViper/bcellViper_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/bcellViper_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/bcellViper/bcellViper_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="7e93bbaa204826358c77282e2a370074")
 

@@ -13,7 +13,7 @@ class RAlabasterSce(RPackage):
 	"""
 	
 	bioc = "alabaster.sce" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/alabaster.sce_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/alabaster.sce/alabaster.sce_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.sce_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.sce/alabaster.sce_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="e508f30fb84947c7246b093b63a5aea3")
 

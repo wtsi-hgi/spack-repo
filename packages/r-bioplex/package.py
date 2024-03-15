@@ -14,7 +14,7 @@ class RBioplex(RPackage):
 	
 	homepage = "https://github.com/ccb-hms/BioPlex"
 	bioc = "BioPlex" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/BioPlex_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/BioPlex/BioPlex_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BioPlex_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/BioPlex/BioPlex_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="77e38da3b194e7776fa7007a2cef42bf")
 

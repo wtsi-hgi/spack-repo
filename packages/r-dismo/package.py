@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,6 +14,8 @@ class RDismo(RPackage):
 	occurrences of a species."""
 
 	cran = "dismo"
+
+	license("GPL-3.0-or-later")
 
 	version("1.3-14", md5="df359ee83b53c4a8953574f1a28b62ef")
 

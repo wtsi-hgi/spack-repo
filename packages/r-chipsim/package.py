@@ -13,7 +13,7 @@ class RChipsim(RPackage):
 	"""
 	
 	bioc = "ChIPsim" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ChIPsim_1.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ChIPsim/ChIPsim_1.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPsim_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPsim/ChIPsim_1.56.0.tar.gz"]
 
 	version("1.56.0", md5="e6f1bd9d18f542abace1039c37ada326")
 

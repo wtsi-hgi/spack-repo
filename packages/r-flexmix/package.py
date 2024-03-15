@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,6 +16,8 @@ class RFlexmix(RPackage):
 	linear models and model-based clustering."""
 
 	cran = "flexmix"
+
+	license("GPL-2.0-or-later")
 
 	version("2.3-19", md5="f527d75cdb77e567d6e3b29c386f7a34")
 

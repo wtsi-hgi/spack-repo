@@ -10,11 +10,11 @@ class RAdmmsigma(RPackage):
 	"""Penalized Precision Matrix Estimation via ADMM
 
 	Estimates a penalized precision matrix via the alternating direction method of multipliers (ADMM) algorithm. It currently supports a general elastic-net penalty that allows for both ridge and lasso-type penalties as special cases. This package is an alternative to the 'glasso' package.
-    See Boyd et al (2010) <doi:10.1561/2200000016> for details regarding the estimation method.
+	See Boyd et al (2010) <doi:10.1561/2200000016> for details regarding the estimation method.
 	"""
 	
 	homepage = "https://github.com/MGallow/ADMMsigma"
-	cran = "ADMMsigma" 
+	cran = "ADMMsigma"
 
 	version("2.1", md5="53ea3de8add49b92daeb6e6a9001fcdc")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,7 +16,9 @@ class RGlimma(RPackage):
 	information."""
 
 	bioc = "Glimma"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Glimma_2.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Glimma/Glimma_2.12.0.tar.gz"]
+
+	license("LGPL-3.0-only")
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Glimma_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Glimma/Glimma_2.12.0.tar.gz"]
 
 	version("2.12.0", md5="bea9aeee00dca519586661d33ba8dc74")
 

@@ -13,7 +13,7 @@ class RSimbenchdata(RPackage):
 	"""
 	
 	bioc = "SimBenchData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/SimBenchData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/SimBenchData/SimBenchData_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SimBenchData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SimBenchData/SimBenchData_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="c801056ea68c668cd98230e8956d551b")
 

@@ -13,7 +13,7 @@ class RSctensor(RPackage):
 	"""
 	
 	bioc = "scTensor" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scTensor_2.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scTensor/scTensor_2.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scTensor_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scTensor/scTensor_2.12.0.tar.gz"]
 
 	version("2.12.0", md5="cfbb59a88b526fe373aacf4b1b1a5a97")
 

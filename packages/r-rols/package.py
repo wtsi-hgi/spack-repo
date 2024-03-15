@@ -14,7 +14,7 @@ class RRols(RPackage):
 	
 	homepage = "http://lgatto.github.io/rols/"
 	bioc = "rols" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rols_2.30.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rols/rols_2.30.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rols_2.30.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rols/rols_2.30.2.tar.gz"]
 
 	version("2.30.2", md5="110adcc1a5828a39f693a67d92f08b9e")
 

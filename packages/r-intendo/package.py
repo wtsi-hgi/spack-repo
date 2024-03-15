@@ -22,6 +22,6 @@ Quality
 	
 	cran = "intendo" 
 
-	version("0.1", md5="b1f2df65f4e6c35abdd66a2bc9dbbd56")
+	version("0.1.1", md5="db98be815b2c62cb2da519106eda9548")
 
 	depends_on("r@3.5:", type=("build", "run"))

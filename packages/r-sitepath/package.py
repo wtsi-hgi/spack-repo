@@ -14,7 +14,7 @@ class RSitepath(RPackage):
 	
 	homepage = "https://wuaipinglab.github.io/sitePath/"
 	bioc = "sitePath" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sitePath_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sitePath/sitePath_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sitePath_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sitePath/sitePath_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="f5742fbe513f4d3cec29d3d3ee714d13")
 

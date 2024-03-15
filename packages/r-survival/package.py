@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,6 +14,8 @@ class RSurvival(RPackage):
 	and parametric accelerated failure time models."""
 
 	cran = "survival"
+
+	license("LGPL-2.0-or-later")
 
 	version("3.5-8", md5="1c09fd690cd4392bb0adb7f0e2c7fe58")
 

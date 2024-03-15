@@ -13,7 +13,7 @@ class RRontotools(RPackage):
 	"""
 	
 	bioc = "ROntoTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ROntoTools_2.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ROntoTools/ROntoTools_2.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ROntoTools_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ROntoTools/ROntoTools_2.30.0.tar.gz"]
 
 	version("2.30.0", md5="11764a125b9411a5b2d2ba20f4c64024")
 

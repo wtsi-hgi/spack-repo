@@ -14,7 +14,7 @@ class RCadra(RPackage):
 	
 	homepage = "https://github.com/montilab/CaDrA/"
 	bioc = "CaDrA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CaDrA_1.0.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CaDrA/CaDrA_1.0.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CaDrA_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CaDrA/CaDrA_1.0.1.tar.gz"]
 
 	version("1.0.1", md5="9ac2bc6afe6632e5fbd00c687ca19bba")
 

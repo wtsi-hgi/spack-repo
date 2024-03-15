@@ -14,7 +14,7 @@ class RBiodbncbi(RPackage):
 	
 	homepage = "https://github.com/pkrog/biodbNcbi"
 	bioc = "biodbNcbi" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biodbNcbi_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biodbNcbi/biodbNcbi_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbNcbi_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbNcbi/biodbNcbi_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="5d2c3e8eade431a86e13d54be468832e")
 

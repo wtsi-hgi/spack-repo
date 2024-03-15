@@ -13,7 +13,7 @@ class RCtdquerier(RPackage):
 	"""
 	
 	bioc = "CTDquerier" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CTDquerier_2.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CTDquerier/CTDquerier_2.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CTDquerier_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CTDquerier/CTDquerier_2.10.0.tar.gz"]
 
 	version("2.10.0", md5="42c5654d014714b22e5c1c2c2e7a2118")
 

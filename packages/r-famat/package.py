@@ -14,7 +14,7 @@ class RFamat(RPackage):
 	
 	homepage = "https://github.com/emiliesecherre/famat"
 	bioc = "famat" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/famat_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/famat/famat_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/famat_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/famat/famat_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="12883ce4989ed35758a8902493e2bb07")
 

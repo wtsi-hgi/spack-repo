@@ -13,7 +13,7 @@ class RRmirHsa(RPackage):
 	"""
 	
 	bioc = "RmiR.hsa" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/RmiR.hsa_1.0.5.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/RmiR.hsa/RmiR.hsa_1.0.5.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/RmiR.hsa_1.0.5.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/RmiR.hsa/RmiR.hsa_1.0.5.tar.gz"]
 
 	version("1.0.5", md5="f22a18d1a34d12f8fc4ba3daaf1379fd")
 

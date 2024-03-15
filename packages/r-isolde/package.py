@@ -14,7 +14,7 @@ class RIsolde(RPackage):
 	
 	homepage = "www.r-project.org"
 	bioc = "ISoLDE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ISoLDE_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ISoLDE/ISoLDE_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ISoLDE_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ISoLDE/ISoLDE_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="448414b250ff7c903395638de3688411")
 

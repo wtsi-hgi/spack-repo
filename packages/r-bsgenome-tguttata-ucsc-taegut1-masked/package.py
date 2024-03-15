@@ -13,7 +13,7 @@ class RBsgenomeTguttataUcscTaegut1Masked(RPackage):
 	"""
 	
 	bioc = "BSgenome.Tguttata.UCSC.taeGut1.masked" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Tguttata.UCSC.taeGut1.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Tguttata.UCSC.taeGut1.masked/BSgenome.Tguttata.UCSC.taeGut1.masked_1.3.99.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Tguttata.UCSC.taeGut1.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Tguttata.UCSC.taeGut1.masked/BSgenome.Tguttata.UCSC.taeGut1.masked_1.3.99.tar.gz"]
 
 	version("1.3.99", md5="63684abb5b330bb54ff89fe78f2e6444")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -23,7 +23,7 @@ class RBiomart(RPackage):
 	mining."""
 
 	bioc = "biomaRt"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biomaRt_2.58.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biomaRt/biomaRt_2.58.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biomaRt_2.58.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biomaRt/biomaRt_2.58.2.tar.gz"]
 
 	version("2.58.2", md5="9cd8b1d118761e837a3c037dcfafbfc2")
 

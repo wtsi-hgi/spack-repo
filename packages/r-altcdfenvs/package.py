@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -12,7 +12,7 @@ class RAltcdfenvs(RPackage):
 	Convenience data structures and functions to handle cdfenvs."""
 
 	bioc = "altcdfenvs"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/altcdfenvs_2.64.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/altcdfenvs/altcdfenvs_2.64.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/altcdfenvs_2.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/altcdfenvs/altcdfenvs_2.64.0.tar.gz"]
 
 	version("2.64.0", md5="8bd83d29c11857ae73a4046289748f90")
 

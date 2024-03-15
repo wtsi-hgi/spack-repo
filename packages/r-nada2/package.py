@@ -19,7 +19,7 @@ class RNada2(RPackage):
 	homepage = "https://github.com/SwampThingPaul/NADA2"
 	cran = "NADA2" 
 
-	version("1.1.5", md5="dd554f2b9a5237d7aec370a42cd12494", url="https://cran.r-project.org/src/contrib/NADA2_1.1.5.tar.gz")
+	version("1.1.6", md5="b2478397e9c47b045e3ae00bd85e78a7", url="https://cran.r-project.org/src/contrib/NADA2_1.1.6.tar.gz")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-envstats@2.4:", type=("build", "run"))

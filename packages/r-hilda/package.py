@@ -14,7 +14,7 @@ class RHilda(RPackage):
 	
 	homepage = "https://github.com/USCbiostats/HiLDA"
 	bioc = "HiLDA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HiLDA_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HiLDA/HiLDA_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiLDA_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiLDA/HiLDA_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="e1961cfe72082b160cafb7bed5376673")
 

@@ -13,7 +13,7 @@ class RFlowcut(RPackage):
 	"""
 	
 	bioc = "flowCut" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowCut_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowCut/flowCut_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowCut_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowCut/flowCut_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="b79bc38dd887cef19040c2d7178311d0")
 

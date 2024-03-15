@@ -14,7 +14,7 @@ class RScatterhatch(RPackage):
 	
 	homepage = "https://github.com/FertigLab/scatterHatch"
 	bioc = "scatterHatch" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scatterHatch_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scatterHatch/scatterHatch_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scatterHatch_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scatterHatch/scatterHatch_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="d86cfd4fa0820f65efd6085edc997eed")
 

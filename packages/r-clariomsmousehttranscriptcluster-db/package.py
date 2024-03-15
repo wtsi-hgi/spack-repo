@@ -13,7 +13,7 @@ class RClariomsmousehttranscriptclusterDb(RPackage):
 	"""
 	
 	bioc = "clariomsmousehttranscriptcluster.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/clariomsmousehttranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/clariomsmousehttranscriptcluster.db/clariomsmousehttranscriptcluster.db_8.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/clariomsmousehttranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/clariomsmousehttranscriptcluster.db/clariomsmousehttranscriptcluster.db_8.8.0.tar.gz"]
 
 	version("8.8.0", md5="c0aa96cbd5ee7e19296dde5a72232d17")
 

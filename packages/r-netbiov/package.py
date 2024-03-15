@@ -14,7 +14,7 @@ class RNetbiov(RPackage):
 	
 	homepage = "http://www.bio-complexity.com"
 	bioc = "netbiov" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/netbiov_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/netbiov/netbiov_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/netbiov_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/netbiov/netbiov_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="4a0603ee2b7fec512349b69732218be3")
 

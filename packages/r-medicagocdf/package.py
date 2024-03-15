@@ -13,7 +13,7 @@ class RMedicagocdf(RPackage):
 	"""
 	
 	bioc = "medicagocdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/medicagocdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/medicagocdf/medicagocdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/medicagocdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/medicagocdf/medicagocdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="1fbb2e4c070344d18e65f1b3993867db")
 

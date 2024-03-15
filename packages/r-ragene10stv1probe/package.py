@@ -13,7 +13,7 @@ class RRagene10stv1probe(RPackage):
 	"""
 	
 	bioc = "ragene10stv1probe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ragene10stv1probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/ragene10stv1probe/ragene10stv1probe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ragene10stv1probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ragene10stv1probe/ragene10stv1probe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="94978b6efb075aacf31ccdc8000e40fa")
 

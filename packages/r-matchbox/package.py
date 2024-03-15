@@ -13,7 +13,7 @@ class RMatchbox(RPackage):
 	"""
 	
 	bioc = "matchBox" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/matchBox_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/matchBox/matchBox_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/matchBox_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/matchBox/matchBox_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="b6e4b10ee38f433d1bce146a089a44ec")
 

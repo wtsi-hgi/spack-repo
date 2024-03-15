@@ -15,7 +15,7 @@ class RGrafify(RPackage):
 	homepage = "https://github.com/ashenoy-cmbi/grafify"
 	cran = "grafify" 
 
-	version("4.0", md5="c221591efbe84a3a4b48a3a623a93718")
+	version("4.0.1", md5="275ca922a5f0141c54974feae5fc1f42")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2@3.4:", type=("build", "run"))

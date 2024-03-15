@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,8 @@ class RSpacetime(RPackage):
 	aggregation, retrieving coordinates, print, summary, etc."""
 
 	cran = "spacetime"
+
+	license("GPL-2.0-or-later")
 
 	version("1.3-1", md5="cabe0b0e186f56a2cd3b7033b4c874ab")
 

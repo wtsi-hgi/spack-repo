@@ -13,7 +13,7 @@ class RAdam(RPackage):
 	"""
 	
 	bioc = "ADAM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ADAM_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ADAM/ADAM_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ADAM_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ADAM/ADAM_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="7f051085afca603520dbb5cb010e58fe")
 

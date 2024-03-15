@@ -13,7 +13,7 @@ class RMoexexonprobesetlocation(RPackage):
 	"""
 	
 	bioc = "MoExExonProbesetLocation" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/MoExExonProbesetLocation_1.15.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/MoExExonProbesetLocation/MoExExonProbesetLocation_1.15.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MoExExonProbesetLocation_1.15.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/MoExExonProbesetLocation/MoExExonProbesetLocation_1.15.0.tar.gz"]
 
 	version("1.15.0", md5="07eea205fce2a8cf4585fa7e71fb0057")
 

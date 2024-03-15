@@ -13,7 +13,7 @@ class RCytodx(RPackage):
 	"""
 	
 	bioc = "CytoDx" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CytoDx_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CytoDx/CytoDx_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CytoDx_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CytoDx/CytoDx_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="86d2f225be6ebdaecd3aa4960e443796")
 

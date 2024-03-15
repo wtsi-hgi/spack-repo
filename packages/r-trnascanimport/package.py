@@ -14,7 +14,7 @@ class RTrnascanimport(RPackage):
 	
 	homepage = "https://github.com/FelixErnst/tRNAscanImport"
 	bioc = "tRNAscanImport" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tRNAscanImport_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tRNAscanImport/tRNAscanImport_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tRNAscanImport_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tRNAscanImport/tRNAscanImport_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="49f872c7de9b6cba139c7758330efa8c")
 

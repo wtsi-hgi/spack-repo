@@ -14,7 +14,7 @@ class RRbiopaxparser(RPackage):
 	
 	homepage = "https://github.com/frankkramer-lab/rBiopaxParser"
 	bioc = "rBiopaxParser" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rBiopaxParser_2.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rBiopaxParser/rBiopaxParser_2.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rBiopaxParser_2.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rBiopaxParser/rBiopaxParser_2.42.0.tar.gz"]
 
 	version("2.42.0", md5="53e24a8896bf17bd56fe48d62427eb33")
 

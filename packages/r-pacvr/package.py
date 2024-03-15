@@ -15,7 +15,7 @@ class RPacvr(RPackage):
 	homepage = "https://github.com/michaelgruenstaeudl/PACVr"
 	cran = "PACVr" 
 
-	version("1.0.7", md5="10345787023970e9aff81113a1efc456")
+	version("1.0.8", md5="e9a6c160c32098a4a6c6943502bf9306")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-biostrings@2.48:", type=("build", "run"))
@@ -26,3 +26,4 @@ class RPacvr(RPackage):
 	depends_on("r-logger", type=("build", "run"))
 	depends_on("r-read-gb@2.2:", type=("build", "run"))
 	depends_on("r-rcircos@1.2:", type=("build", "run"))
+	depends_on("r-tidyr", type=("build", "run"))

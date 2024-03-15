@@ -13,7 +13,7 @@ class RTxdbPtroglodytesUcscPantro4Refgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Ptroglodytes.UCSC.panTro4.refGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Ptroglodytes.UCSC.panTro4.refGene_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Ptroglodytes.UCSC.panTro4.refGene/TxDb.Ptroglodytes.UCSC.panTro4.refGene_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Ptroglodytes.UCSC.panTro4.refGene_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Ptroglodytes.UCSC.panTro4.refGene/TxDb.Ptroglodytes.UCSC.panTro4.refGene_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="9bdd3ba81561550f50250368d7d52eaa")
 

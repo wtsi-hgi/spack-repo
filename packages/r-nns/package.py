@@ -14,7 +14,7 @@ class RNns(RPackage):
 	
 	cran = "NNS" 
 
-	version("10.6", md5="3d7428856a673bcc27498f8cc541c779")
+	version("10.7", md5="5428bf51ee3ec2f05a49accd65a6f628")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

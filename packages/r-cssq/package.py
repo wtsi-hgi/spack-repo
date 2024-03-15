@@ -13,7 +13,7 @@ class RCssq(RPackage):
 	"""
 	
 	bioc = "CSSQ" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CSSQ_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CSSQ/CSSQ_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CSSQ_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CSSQ/CSSQ_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="d9a6f6200f67cc06173c30dcd6775e5a")
 

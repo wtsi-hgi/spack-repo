@@ -13,7 +13,7 @@ class RModstrings(RPackage):
 	"""
 	
 	bioc = "Modstrings" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Modstrings_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Modstrings/Modstrings_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Modstrings_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Modstrings/Modstrings_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="04e7bccc20c165b4d1317e995a0b1de2")
 

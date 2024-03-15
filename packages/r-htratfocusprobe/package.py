@@ -13,7 +13,7 @@ class RHtratfocusprobe(RPackage):
 	"""
 	
 	bioc = "htratfocusprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/htratfocusprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/htratfocusprobe/htratfocusprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/htratfocusprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/htratfocusprobe/htratfocusprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="26a0963d8aff314a4a1f2c47e9147a8a")
 

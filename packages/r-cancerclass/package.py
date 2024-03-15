@@ -13,7 +13,7 @@ class RCancerclass(RPackage):
 	"""
 	
 	bioc = "cancerclass" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cancerclass_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cancerclass/cancerclass_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cancerclass_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cancerclass/cancerclass_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="b2e5d6ec200ee08476480fa1f0a1577d")
 

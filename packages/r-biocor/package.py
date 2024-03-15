@@ -14,7 +14,7 @@ class RBiocor(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/BioCor"
 	bioc = "BioCor" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BioCor_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BioCor/BioCor_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioCor_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioCor/BioCor_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="5d061581890948dc4341346b82f8d170")
 

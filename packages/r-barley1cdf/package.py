@@ -13,7 +13,7 @@ class RBarley1cdf(RPackage):
 	"""
 	
 	bioc = "barley1cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/barley1cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/barley1cdf/barley1cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/barley1cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/barley1cdf/barley1cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="16a2ca83f550518756d9fa3273672157")
 

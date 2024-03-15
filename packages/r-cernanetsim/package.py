@@ -14,7 +14,7 @@ class RCernanetsim(RPackage):
 	
 	homepage = "https://github.com/selcenari/ceRNAnetsim"
 	bioc = "ceRNAnetsim" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ceRNAnetsim_1.14.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ceRNAnetsim/ceRNAnetsim_1.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ceRNAnetsim_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ceRNAnetsim/ceRNAnetsim_1.14.1.tar.gz"]
 
 	version("1.14.1", md5="38362ee61086011866cbde80da6ef5e9")
 

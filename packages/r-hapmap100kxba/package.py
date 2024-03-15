@@ -13,7 +13,7 @@ class RHapmap100kxba(RPackage):
 	"""
 	
 	bioc = "hapmap100kxba" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/hapmap100kxba_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/hapmap100kxba/hapmap100kxba_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hapmap100kxba_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/hapmap100kxba/hapmap100kxba_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="b4a619fb108a36920109307fbf63985b")
 

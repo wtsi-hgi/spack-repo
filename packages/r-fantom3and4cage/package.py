@@ -13,7 +13,7 @@ class RFantom3and4cage(RPackage):
 	"""
 	
 	bioc = "FANTOM3and4CAGE" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/FANTOM3and4CAGE_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/FANTOM3and4CAGE/FANTOM3and4CAGE_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FANTOM3and4CAGE_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FANTOM3and4CAGE/FANTOM3and4CAGE_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="5d964e7a085d6a7b00e2b2215b765861")
 

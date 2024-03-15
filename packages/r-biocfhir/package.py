@@ -14,7 +14,7 @@ class RBiocfhir(RPackage):
 	
 	homepage = "https://github.com/vjcitn/BiocFHIR"
 	bioc = "BiocFHIR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiocFHIR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiocFHIR/BiocFHIR_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocFHIR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocFHIR/BiocFHIR_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="788951417cde10ad9434dd443db47f80")
 

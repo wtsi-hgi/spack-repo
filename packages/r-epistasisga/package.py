@@ -14,7 +14,7 @@ class REpistasisga(RPackage):
 	
 	homepage = "https://github.com/mnodzenski/epistasisGA"
 	bioc = "epistasisGA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/epistasisGA_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/epistasisGA/epistasisGA_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epistasisGA_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epistasisGA/epistasisGA_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="79635d9683f002813e51fa3c17e49b39")
 

@@ -14,7 +14,7 @@ class ROlingui(RPackage):
 	
 	homepage = "http://olin.sysbiolab.eu"
 	bioc = "OLINgui" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/OLINgui_1.76.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/OLINgui/OLINgui_1.76.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OLINgui_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OLINgui/OLINgui_1.76.0.tar.gz"]
 
 	version("1.76.0", md5="5f960cc922153099a7b7a6e7ee939d9f")
 

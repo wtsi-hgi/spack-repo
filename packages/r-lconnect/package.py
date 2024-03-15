@@ -25,8 +25,10 @@ class RLconnect(RPackage):
 	
 	cran = "lconnect" 
 
-	version("0.1.1", md5="7a29676821f71a5c0a2f839388332e48")
+	version("0.1.2", md5="9ea278a2bf192a3fd2ff14f782a9d172")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-sf", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))
+	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("r-scales", type=("build", "run"))

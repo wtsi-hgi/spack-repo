@@ -14,7 +14,7 @@ class RMsa2dist(RPackage):
 	
 	homepage = "https://gitlab.gwdg.de/mpievolbio-it/MSA2dist"
 	bioc = "MSA2dist" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MSA2dist_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MSA2dist/MSA2dist_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSA2dist_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSA2dist/MSA2dist_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="8a0d1c303af72c93a1810488010c2e6f")
 

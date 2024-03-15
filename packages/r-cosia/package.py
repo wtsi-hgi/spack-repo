@@ -14,7 +14,7 @@ class RCosia(RPackage):
 	
 	homepage = "https://www.lasseigne.org/"
 	bioc = "CoSIA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CoSIA_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CoSIA/CoSIA_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CoSIA_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CoSIA/CoSIA_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="217ff53ed0aac2ca3c2d91ce5237c111")
 

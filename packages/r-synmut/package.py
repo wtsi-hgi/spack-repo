@@ -14,7 +14,7 @@ class RSynmut(RPackage):
 	
 	homepage = "https://github.com/Koohoko/SynMut"
 	bioc = "SynMut" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SynMut_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SynMut/SynMut_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SynMut_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SynMut/SynMut_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="485dd0770e2c64ad7ace9a3edf957fe8")
 

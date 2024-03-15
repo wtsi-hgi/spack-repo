@@ -13,7 +13,7 @@ class RTscan(RPackage):
 	"""
 	
 	bioc = "TSCAN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TSCAN_1.40.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TSCAN/TSCAN_1.40.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TSCAN_1.40.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TSCAN/TSCAN_1.40.1.tar.gz"]
 
 	version("1.40.1", md5="8ab1f3f5a68c4aa03e7e7ed10c61a20f")
 

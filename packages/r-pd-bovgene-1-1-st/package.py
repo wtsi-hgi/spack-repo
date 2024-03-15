@@ -13,7 +13,7 @@ class RPdBovgene11St(RPackage):
 	"""
 	
 	bioc = "pd.bovgene.1.1.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.bovgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.bovgene.1.1.st/pd.bovgene.1.1.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.bovgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.bovgene.1.1.st/pd.bovgene.1.1.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="342246c0a76755fcca458cd723b3e98e")
 

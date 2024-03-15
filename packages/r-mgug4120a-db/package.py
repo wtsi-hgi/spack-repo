@@ -13,7 +13,7 @@ class RMgug4120aDb(RPackage):
 	"""
 	
 	bioc = "mgug4120a.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mgug4120a.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mgug4120a.db/mgug4120a.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mgug4120a.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mgug4120a.db/mgug4120a.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="bb57e8b2efe3d038ec2a0ace0313a4e7")
 

@@ -13,7 +13,7 @@ class RVeloviz(RPackage):
 	"""
 	
 	bioc = "veloviz" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/veloviz_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/veloviz/veloviz_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/veloviz_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/veloviz/veloviz_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="54c6f9e5fd6275be8b999a2c949cf6bb")
 

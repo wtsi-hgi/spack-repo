@@ -14,7 +14,7 @@ class RSesame(RPackage):
 	
 	homepage = "https://github.com/zwdzwd/sesame"
 	bioc = "sesame" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sesame_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sesame/sesame_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sesame_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sesame/sesame_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="9bb9cc07a6c773f324fdee69d75a8427")
 

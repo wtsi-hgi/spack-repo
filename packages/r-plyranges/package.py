@@ -13,7 +13,7 @@ class RPlyranges(RPackage):
 	"""
 	
 	bioc = "plyranges" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/plyranges_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/plyranges/plyranges_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/plyranges_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/plyranges/plyranges_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="23b74165be3c4a855e6a49d8c0f1bab1")
 

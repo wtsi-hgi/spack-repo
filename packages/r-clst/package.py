@@ -13,7 +13,7 @@ class RClst(RPackage):
 	"""
 	
 	bioc = "clst" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/clst_1.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/clst/clst_1.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clst_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clst/clst_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="5988cf1c0b5207d2f78f75dbe6f2b467")
 

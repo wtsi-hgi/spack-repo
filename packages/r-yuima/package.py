@@ -15,7 +15,7 @@ class RYuima(RPackage):
 	homepage = "https://yuimaproject.com"
 	cran = "yuima" 
 
-	version("1.15.22", md5="7110e3334fcc092055c48bbdb782e2bf")
+	version("1.15.27", md5="c78b2b1ffe13ac9312b225f5dbf74730")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-zoo", type=("build", "run"))
@@ -27,4 +27,5 @@ class RYuima(RPackage):
 	depends_on("r-glassofast", type=("build", "run"))
 	depends_on("r-coda", type=("build", "run"))
 	depends_on("r-calculus@0.2:", type=("build", "run"))
+	depends_on("r-statmod", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))

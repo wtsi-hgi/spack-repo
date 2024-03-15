@@ -15,7 +15,7 @@ class RTm(RPackage):
 	homepage = "https://tm.r-forge.r-project.org/"
 	cran = "tm" 
 
-	version("0.7-11", md5="2634a0ba7621014348a89f156837ad31")
+	version("0.7-12", md5="60d60d1df2964cedeccddf60eccd66e4")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-nlp@0.2.0:", type=("build", "run"))

@@ -14,7 +14,7 @@ class RSystempiperdata(RPackage):
 	
 	homepage = "https://github.com/tgirke/systemPipeRdata"
 	bioc = "systemPipeRdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/systemPipeRdata_2.6.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/systemPipeRdata/systemPipeRdata_2.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/systemPipeRdata_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/systemPipeRdata/systemPipeRdata_2.6.0.tar.gz"]
 
 	version("2.6.0", md5="1af59929fb95c3a017b88fce32a4c833")
 

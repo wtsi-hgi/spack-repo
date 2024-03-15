@@ -14,7 +14,7 @@ class RMdp(RPackage):
 	
 	homepage = "https://mdp.sysbio.tools/"
 	bioc = "mdp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mdp_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mdp/mdp_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mdp_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mdp/mdp_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="a947b52acd7f930a3babcdb4e429bb0c")
 

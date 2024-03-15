@@ -14,7 +14,7 @@ class RItalicsdata(RPackage):
 	
 	homepage = "http://bioinfo.curie.fr"
 	bioc = "ITALICSData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/ITALICSData_2.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/ITALICSData/ITALICSData_2.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ITALICSData_2.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ITALICSData/ITALICSData_2.40.0.tar.gz"]
 
 	version("2.40.0", md5="e154526c43e11840acfd4c92ff1cee8f")
 

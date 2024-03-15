@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,9 @@ class RPhyloseq(RPackage):
 	storage, analysis, and graphical display of microbiome census data."""
 
 	bioc = "phyloseq"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/phyloseq_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/phyloseq/phyloseq_1.46.0.tar.gz"]
+
+	license("LiLiQ-R-1.1")
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phyloseq_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phyloseq/phyloseq_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="335dc9dedba529ce34669dd881127e7c")
 

@@ -13,7 +13,7 @@ class RSim(RPackage):
 	"""
 	
 	bioc = "SIM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SIM_1.72.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SIM/SIM_1.72.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SIM_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SIM/SIM_1.72.0.tar.gz"]
 
 	version("1.72.0", md5="72c2ca38244f4d53842bece2abdfadee")
 

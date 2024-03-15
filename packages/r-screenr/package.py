@@ -14,7 +14,7 @@ class RScreenr(RPackage):
 	
 	homepage = "https://emanuelsoda.github.io/ScreenR/"
 	bioc = "ScreenR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ScreenR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ScreenR/ScreenR_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ScreenR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ScreenR/ScreenR_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="bb8bd3276b17f7e0d63de9c19e64473d")
 

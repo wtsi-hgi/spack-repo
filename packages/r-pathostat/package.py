@@ -14,7 +14,7 @@ class RPathostat(RPackage):
 	
 	homepage = "https://github.com/mani2012/PathoStat"
 	bioc = "PathoStat" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PathoStat_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PathoStat/PathoStat_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PathoStat_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PathoStat/PathoStat_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="fd391aaf46df86a1608019bd2454d67f")
 

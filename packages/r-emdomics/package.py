@@ -13,7 +13,7 @@ class REmdomics(RPackage):
 	"""
 	
 	bioc = "EMDomics" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EMDomics_2.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EMDomics/EMDomics_2.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EMDomics_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EMDomics/EMDomics_2.32.0.tar.gz"]
 
 	version("2.32.0", md5="3ac097828648747f0be1ed4d956ecfa7")
 

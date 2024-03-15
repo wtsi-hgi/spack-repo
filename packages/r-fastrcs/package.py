@@ -14,7 +14,7 @@ class RFastrcs(RPackage):
 	
 	cran = "FastRCS" 
 
-	version("0.0.8", md5="4856d791101c97d0d023341656def33e")
+	version("0.0.9", md5="9e31690cad83df1a153a59e7c26ff18f")
 
 	depends_on("r@3.1.1:", type=("build", "run"))
 	depends_on("r-matrixstats", type=("build", "run"))

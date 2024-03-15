@@ -26,10 +26,9 @@ class RSdetorus(RPackage):
 	homepage = "https://github.com/egarpor/sdetorus"
 	cran = "sdetorus" 
 
-	version("0.1.9", md5="7cd904332fe8d90aa80cf6c2d11facf5")
+	version("0.1.10", md5="fcdc8e53da04d8d951b05b95a9001fe2")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))
-	depends_on("r-colorramps", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))

@@ -26,7 +26,7 @@ class RUfs(RPackage):
 	homepage = "https://ufs.opens.science"
 	cran = "ufs" 
 
-	version("0.5.10", md5="2420985614b5b63e7121d1f68cc90305")
+	version("0.5.12", md5="b02089776927dab7cfa0d0b55b03736c")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-digest@0.6.19:", type=("build", "run"))

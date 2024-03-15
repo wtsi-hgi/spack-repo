@@ -13,7 +13,7 @@ class RFurrowseg(RPackage):
 	"""
 	
 	bioc = "furrowSeg" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/furrowSeg_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/furrowSeg/furrowSeg_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/furrowSeg_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/furrowSeg/furrowSeg_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="f41e88a4d47949b3b8b126b0fc7852eb")
 

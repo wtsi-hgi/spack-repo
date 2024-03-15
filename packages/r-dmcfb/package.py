@@ -13,7 +13,7 @@ class RDmcfb(RPackage):
 	"""
 	
 	bioc = "DMCFB" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DMCFB_1.16.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DMCFB/DMCFB_1.16.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DMCFB_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DMCFB/DMCFB_1.16.1.tar.gz"]
 
 	version("1.16.1", md5="35caed88b548f9a3021d686498cd9d55")
 

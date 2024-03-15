@@ -14,7 +14,7 @@ class RLineagespot(RPackage):
 	
 	homepage = "https://github.com/BiodataAnalysisGroup/lineagespot"
 	bioc = "lineagespot" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/lineagespot_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/lineagespot/lineagespot_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lineagespot_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lineagespot/lineagespot_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="7a06bfea8fdf81ea88ebe7f4478607f6")
 

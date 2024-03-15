@@ -14,7 +14,7 @@ class RRcmdrpluginDce(RPackage):
 	
 	cran = "RcmdrPlugin.DCE" 
 
-	version("0.2-1", md5="a96a0b46c8d2eda1567f7d0c89222f72")
+	version("0.2-2", md5="5539ead71c32d08e36dc0b7a92ab09e9")
 
 	depends_on("r-support-ces@0.7.0:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

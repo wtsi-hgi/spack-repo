@@ -14,7 +14,7 @@ class RRcx(RPackage):
 	
 	homepage = "https://github.com/frankkramer-lab/RCX"
 	bioc = "RCX" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RCX_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RCX/RCX_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCX_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RCX/RCX_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="4fdd9c350200e6854c3ed1db44572826")
 

@@ -14,7 +14,7 @@ class RTiledbarray(RPackage):
 	
 	homepage = "https://github.com/LTLA/TileDBArray"
 	bioc = "TileDBArray" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TileDBArray_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TileDBArray/TileDBArray_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TileDBArray_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TileDBArray/TileDBArray_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="7bb6ef67d882031ac2ebfcb3c1873dd2")
 

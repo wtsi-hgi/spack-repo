@@ -13,7 +13,7 @@ class RQtlizer(RPackage):
 	"""
 	
 	bioc = "Qtlizer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Qtlizer_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Qtlizer/Qtlizer_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Qtlizer_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Qtlizer/Qtlizer_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="ea7e6227ebf6708e465681021fb77b19")
 

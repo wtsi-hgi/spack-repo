@@ -13,7 +13,7 @@ class RRtreemix(RPackage):
 	"""
 	
 	bioc = "Rtreemix" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Rtreemix_1.64.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Rtreemix/Rtreemix_1.64.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rtreemix_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rtreemix/Rtreemix_1.64.0.tar.gz"]
 
 	version("1.64.0", md5="3a9bda84ad8cd784165f1b8ce1a43af7")
 

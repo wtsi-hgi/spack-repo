@@ -14,7 +14,7 @@ class RHiccompare(RPackage):
 	
 	homepage = "https://github.com/dozmorovlab/HiCcompare"
 	bioc = "HiCcompare" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HiCcompare_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HiCcompare/HiCcompare_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiCcompare_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiCcompare/HiCcompare_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="081a94597115ed9f99e23930935648dd")
 

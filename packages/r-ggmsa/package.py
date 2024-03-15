@@ -14,7 +14,7 @@ class RGgmsa(RPackage):
 	
 	homepage = "https://doi.org/10.1093/bib/bbac222(paper)"
 	bioc = "ggmsa" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ggmsa_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ggmsa/ggmsa_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggmsa_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggmsa/ggmsa_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="1faea3aedc093bb7e151208c9a11b60c")
 

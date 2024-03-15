@@ -14,7 +14,7 @@ class RDimodels(RPackage):
 	
 	cran = "DImodels" 
 
-	version("1.3.1", md5="2b7574523b52455429fddd2af62cf80c")
+	version("1.3.2", md5="82accf9b0433fda6dc844e92817a22a0")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

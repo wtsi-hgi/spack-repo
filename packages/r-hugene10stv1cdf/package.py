@@ -13,7 +13,7 @@ class RHugene10stv1cdf(RPackage):
 	"""
 	
 	bioc = "hugene10stv1cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hugene10stv1cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hugene10stv1cdf/hugene10stv1cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hugene10stv1cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hugene10stv1cdf/hugene10stv1cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="f1fb1c7076ac40b9e709f18e645d6181")
 

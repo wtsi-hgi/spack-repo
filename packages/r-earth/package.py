@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,9 +15,10 @@ class REarth(RPackage):
 
 	cran = "earth"
 
-	version("5.3.2", md5="8d473edbeec4d96cc183ab1baae488cc")
+	license("GPL-3.0-only")
+
+	version("5.3.3", md5="1b55085d1823511946e6e1c2b8ebfa9e")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-formula@1.2.3:", type=("build", "run"))
 	depends_on("r-plotmo@3.6:", type=("build", "run"))
-	depends_on("r-teachingdemos@2.10:", type=("build", "run"))

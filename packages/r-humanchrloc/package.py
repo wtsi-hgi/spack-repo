@@ -13,7 +13,7 @@ class RHumanchrloc(RPackage):
 	"""
 	
 	bioc = "humanCHRLOC" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/humanCHRLOC_2.1.6.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/humanCHRLOC/humanCHRLOC_2.1.6.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/humanCHRLOC_2.1.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/humanCHRLOC/humanCHRLOC_2.1.6.tar.gz"]
 
 	version("2.1.6", md5="113450c0822000c9b4e8a0141cf4b819")
 

@@ -14,7 +14,7 @@ class RMethylgsa(RPackage):
 	
 	homepage = "https://github.com/reese3928/methylGSA"
 	bioc = "methylGSA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/methylGSA_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/methylGSA/methylGSA_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylGSA_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylGSA/methylGSA_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="e802fab6abc1a9bac64bc36dd588c19d")
 

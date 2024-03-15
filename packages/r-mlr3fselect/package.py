@@ -20,7 +20,7 @@ class RMlr3fselect(RPackage):
 	homepage = "https://mlr3fselect.mlr-org.com"
 	cran = "mlr3fselect" 
 
-	version("0.11.0", md5="458faa333a60eaa4f879414944b1122c")
+	version("0.12.0", md5="8aeba638268cbe1f62bb9114ec78929e")
 
 	depends_on("r-mlr3@0.12:", type=("build", "run"))
 	depends_on("r@3.1:", type=("build", "run"))

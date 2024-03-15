@@ -14,7 +14,7 @@ class RTapseq(RPackage):
 	
 	homepage = "https://github.com/argschwind/TAPseq"
 	bioc = "TAPseq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TAPseq_1.14.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TAPseq/TAPseq_1.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TAPseq_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TAPseq/TAPseq_1.14.1.tar.gz"]
 
 	version("1.14.1", md5="423853e9c2015594d616f9315d5c217d")
 

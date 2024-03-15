@@ -13,7 +13,7 @@ class RGeofastq(RPackage):
 	"""
 	
 	bioc = "GEOfastq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GEOfastq_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GEOfastq/GEOfastq_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEOfastq_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEOfastq/GEOfastq_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="339bd0c2f6a3f505457fc436997965a6")
 

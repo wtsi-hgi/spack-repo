@@ -14,7 +14,7 @@ class RMicrobiomemarker(RPackage):
 	
 	homepage = "https://github.com/yiluheihei/microbiomeMarker"
 	bioc = "microbiomeMarker" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/microbiomeMarker_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/microbiomeMarker/microbiomeMarker_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/microbiomeMarker_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/microbiomeMarker/microbiomeMarker_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="facf2f8071da6049b688fe3d16efb0e2")
 

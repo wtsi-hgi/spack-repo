@@ -13,7 +13,7 @@ class RMethylpipe(RPackage):
 	"""
 	
 	bioc = "methylPipe" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/methylPipe_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/methylPipe/methylPipe_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylPipe_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylPipe/methylPipe_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="bd41f308a3d5e58c4e05ce38c28f17f9")
 

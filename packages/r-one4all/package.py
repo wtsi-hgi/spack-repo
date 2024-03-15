@@ -15,7 +15,7 @@ class ROne4all(RPackage):
 	homepage = "https://github.com/Moore-Institute-4-Plastic-Pollution-Res/One4All"
 	cran = "One4All" 
 
-	version("0.3", md5="121d58132ef7005794e308c3ce5510d9")
+	version("0.4", md5="bff4f9b4662858708867b45cd7962027")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

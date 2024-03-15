@@ -18,7 +18,7 @@ class RSpant(RPackage):
 	homepage = "https://martin3141.github.io/spant/"
 	cran = "spant" 
 
-	version("2.17.0", md5="4ab737260511b3bcb7e8df6d7e526a7c")
+	version("2.18.0", md5="94d049ed960ba7c94e38fc46fc9f65d0")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))

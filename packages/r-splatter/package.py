@@ -14,7 +14,7 @@ class RSplatter(RPackage):
 	
 	homepage = "https://github.com/Oshlack/splatter"
 	bioc = "splatter" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/splatter_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/splatter/splatter_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/splatter_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/splatter/splatter_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="1afec799cae913802068b5b20b32a598")
 

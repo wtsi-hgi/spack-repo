@@ -13,7 +13,7 @@ class RStructuralvariantannotation(RPackage):
 	"""
 	
 	bioc = "StructuralVariantAnnotation" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/StructuralVariantAnnotation_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/StructuralVariantAnnotation/StructuralVariantAnnotation_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/StructuralVariantAnnotation_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/StructuralVariantAnnotation/StructuralVariantAnnotation_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="d72d8c88083ed0fc9319afa075360841")
 

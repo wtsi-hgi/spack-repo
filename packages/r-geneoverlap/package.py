@@ -14,7 +14,7 @@ class RGeneoverlap(RPackage):
 	
 	homepage = "http://shenlab-sinai.github.io/shenlab-sinai/"
 	bioc = "GeneOverlap" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GeneOverlap_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GeneOverlap/GeneOverlap_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneOverlap_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneOverlap/GeneOverlap_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="0b5179a1183a82869935ca6c2c55aab3")
 

@@ -14,7 +14,7 @@ class RDegreport(RPackage):
 	
 	homepage = "http://lpantano.github.io/DEGreport/"
 	bioc = "DEGreport" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DEGreport_1.38.5.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DEGreport/DEGreport_1.38.5.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEGreport_1.38.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEGreport/DEGreport_1.38.5.tar.gz"]
 
 	version("1.38.5", md5="c244b736c180d78d142dd00938f7d40f")
 

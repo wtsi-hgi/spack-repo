@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,6 +14,8 @@ class RCompositions(RPackage):
 	way proposed by J. Aitchison and V. Pawlowsky-Glahn."""
 
 	cran = "compositions"
+
+	license("GPL-2.0-or-later")
 
 	version("2.0-8", md5="114a1d48facb636b935ed812038584db")
 

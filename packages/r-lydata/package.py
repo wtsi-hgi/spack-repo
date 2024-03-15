@@ -13,7 +13,7 @@ class RLydata(RPackage):
 	"""
 	
 	bioc = "lydata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/lydata_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/lydata/lydata_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/lydata_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/lydata/lydata_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="4541ec0aad2bbee135b19b0bed4ea0af")
 

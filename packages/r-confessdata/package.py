@@ -13,7 +13,7 @@ class RConfessdata(RPackage):
 	"""
 	
 	bioc = "CONFESSdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/CONFESSdata_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/CONFESSdata/CONFESSdata_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CONFESSdata_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CONFESSdata/CONFESSdata_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="07df3f8f783b3e734c4032b3f6ed61bd")
 

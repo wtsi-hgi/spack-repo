@@ -14,7 +14,7 @@ class RHdcytodata(RPackage):
 	
 	homepage = "https://github.com/lmweber/HDCytoData"
 	bioc = "HDCytoData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/HDCytoData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/HDCytoData/HDCytoData_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HDCytoData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HDCytoData/HDCytoData_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="8f962c6124539fea7a4a02a30e776de8")
 

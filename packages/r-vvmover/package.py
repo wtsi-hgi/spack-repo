@@ -17,10 +17,12 @@ class RVvmover(RPackage):
     and provide users with a comprehensive set of tools to work with different types of data files.
 	"""
 	
+	homepage = "https://vusaverse.github.io/vvmover/"
 	cran = "vvmover" 
 
-	version("1.5.10", md5="ce7668c5136f809cb9b583879fc3529c")
+	version("1.6.0", md5="399db5903440f8e41318f7d5793c5ee2")
 
 	depends_on("r-dplyr", type=("build", "run"))
+	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-readr", type=("build", "run"))
 	depends_on("r-readxl", type=("build", "run"))

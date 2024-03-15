@@ -13,7 +13,7 @@ class RSinglemoleculefootprintingdata(RPackage):
 	"""
 	
 	bioc = "SingleMoleculeFootprintingData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/SingleMoleculeFootprintingData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/SingleMoleculeFootprintingData/SingleMoleculeFootprintingData_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SingleMoleculeFootprintingData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SingleMoleculeFootprintingData/SingleMoleculeFootprintingData_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="451ecbdbb964607afbbe3b778b290246")
 

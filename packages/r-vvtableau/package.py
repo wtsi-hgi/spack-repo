@@ -18,7 +18,7 @@ class RVvtableau(RPackage):
 	homepage = "https://github.com/vusaverse/vvtableau"
 	cran = "vvtableau" 
 
-	version("0.5.0", md5="f97cea7ab20d71f94360c82f0bf23723")
+	version("0.6.0", md5="a48c4ce96ea03f48cb94d23e41723f3c")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

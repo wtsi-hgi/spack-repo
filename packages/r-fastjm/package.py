@@ -17,7 +17,7 @@ class RFastjm(RPackage):
 	
 	cran = "FastJM" 
 
-	version("1.4.1", md5="8451a78397cee9efa16457d79acca0d1")
+	version("1.4.2", md5="3f5b17d931e9ab5dc9d6e5822fbee0fd")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-statmod", type=("build", "run"))

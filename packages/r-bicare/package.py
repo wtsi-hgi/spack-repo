@@ -14,7 +14,7 @@ class RBicare(RPackage):
 	
 	homepage = "http://bioinfo.curie.fr"
 	bioc = "BicARE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BicARE_1.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BicARE/BicARE_1.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BicARE_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BicARE/BicARE_1.60.0.tar.gz"]
 
 	version("1.60.0", md5="d2498da49d01723934f42b4bf235fa05")
 

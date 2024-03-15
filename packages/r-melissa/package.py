@@ -13,7 +13,7 @@ class RMelissa(RPackage):
 	"""
 	
 	bioc = "Melissa" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Melissa_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Melissa/Melissa_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Melissa_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Melissa/Melissa_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="25f975650bec04b62c6e022b11cc33c6")
 

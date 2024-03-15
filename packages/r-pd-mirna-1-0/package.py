@@ -13,9 +13,9 @@ class RPdMirna10(RPackage):
 	"""
 	
 	bioc = "pd.mirna.1.0" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.mirna.1.0_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.mirna.1.0/pd.mirna.1.0_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mirna.1.0_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.mirna.1.0/pd.mirna.1.0_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="8dfeb82a9da6d6f73e5fb716a2867a34", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.mirna.1.0_3.12.0.tar.gz")
+	version("3.12.0", md5="8dfeb82a9da6d6f73e5fb716a2867a34", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mirna.1.0_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

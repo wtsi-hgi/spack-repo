@@ -13,7 +13,7 @@ class RScfeaturefilter(RPackage):
 	"""
 	
 	bioc = "scFeatureFilter" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scFeatureFilter_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scFeatureFilter/scFeatureFilter_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scFeatureFilter_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scFeatureFilter/scFeatureFilter_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="f642025d766eb2cd17f406126e6fe0ba")
 

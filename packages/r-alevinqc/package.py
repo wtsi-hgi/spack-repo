@@ -14,7 +14,7 @@ class RAlevinqc(RPackage):
 	
 	homepage = "https://github.com/csoneson/alevinQC"
 	bioc = "alevinQC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/alevinQC_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/alevinQC/alevinQC_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alevinQC_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alevinQC/alevinQC_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="fa79ac8ac72e4d6d16c096886e9f759d")
 

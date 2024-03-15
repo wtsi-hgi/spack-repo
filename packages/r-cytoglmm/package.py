@@ -14,7 +14,7 @@ class RCytoglmm(RPackage):
 	
 	homepage = "https://christofseiler.github.io/CytoGLMM"
 	bioc = "CytoGLMM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CytoGLMM_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CytoGLMM/CytoGLMM_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CytoGLMM_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CytoGLMM/CytoGLMM_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="3a4b95062a82da6afe217f20ef905460")
 

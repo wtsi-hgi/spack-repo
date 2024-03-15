@@ -14,7 +14,7 @@ class RIfaa(RPackage):
 	
 	homepage = "https://pubmed.ncbi.nlm.nih.gov/35241863/"
 	bioc = "IFAA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IFAA_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IFAA/IFAA_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IFAA_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IFAA/IFAA_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="393ac86513ddc9adf474c654b5127394")
 

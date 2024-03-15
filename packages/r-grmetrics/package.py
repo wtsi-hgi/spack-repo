@@ -14,7 +14,7 @@ class RGrmetrics(RPackage):
 	
 	homepage = "https://github.com/uc-bd2k/GRmetrics"
 	bioc = "GRmetrics" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GRmetrics_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GRmetrics/GRmetrics_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GRmetrics_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GRmetrics/GRmetrics_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="16b27cb79eafe9dbdbb84f0626c5f8da")
 

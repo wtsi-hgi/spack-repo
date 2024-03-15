@@ -13,7 +13,7 @@ class RIseq(RPackage):
 	"""
 	
 	bioc = "iSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iSeq_1.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iSeq/iSeq_1.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSeq_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSeq/iSeq_1.54.0.tar.gz"]
 
 	version("1.54.0", md5="1798c4c248175516afc66ee7f45d5051")
 

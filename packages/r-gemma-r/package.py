@@ -14,7 +14,7 @@ class RGemmaR(RPackage):
 	
 	homepage = "https://pavlidislab.github.io/gemma.R/"
 	bioc = "gemma.R" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gemma.R_2.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gemma.R/gemma.R_2.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gemma.R_2.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gemma.R/gemma.R_2.0.0.tar.gz"]
 
 	version("2.0.0", md5="404ce4fa50032ebf727cfdccece32ba2")
 

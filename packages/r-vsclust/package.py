@@ -13,7 +13,7 @@ class RVsclust(RPackage):
 	"""
 	
 	bioc = "vsclust" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/vsclust_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/vsclust/vsclust_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vsclust_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vsclust/vsclust_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="0c492a6d65d0b230211a0f95706b51a4")
 

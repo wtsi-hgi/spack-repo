@@ -15,7 +15,7 @@ Data
 	
 	cran = "spBayesSurv" 
 
-	version("1.1.7", md5="fe850bfe8f90e5454990a3e3bc76d9bf")
+	version("1.1.8", md5="f1b66d12449bb9bcff5cd4e33555d2f0")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

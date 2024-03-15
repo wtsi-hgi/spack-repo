@@ -13,7 +13,7 @@ class RCager(RPackage):
 	"""
 	
 	bioc = "CAGEr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CAGEr_2.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CAGEr/CAGEr_2.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CAGEr_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CAGEr/CAGEr_2.8.0.tar.gz"]
 
 	version("2.8.0", md5="845c3a47631734b6fe7209f173e24100")
 

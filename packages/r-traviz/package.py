@@ -13,7 +13,7 @@ class RTraviz(RPackage):
 	"""
 	
 	bioc = "traviz" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/traviz_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/traviz/traviz_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/traviz_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/traviz/traviz_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="65f0bdfccd1faa4d9b61bef77e686155")
 

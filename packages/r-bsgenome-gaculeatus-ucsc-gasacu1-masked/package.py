@@ -13,7 +13,7 @@ class RBsgenomeGaculeatusUcscGasacu1Masked(RPackage):
 	"""
 	
 	bioc = "BSgenome.Gaculeatus.UCSC.gasAcu1.masked" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Gaculeatus.UCSC.gasAcu1.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Gaculeatus.UCSC.gasAcu1.masked/BSgenome.Gaculeatus.UCSC.gasAcu1.masked_1.3.99.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Gaculeatus.UCSC.gasAcu1.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Gaculeatus.UCSC.gasAcu1.masked/BSgenome.Gaculeatus.UCSC.gasAcu1.masked_1.3.99.tar.gz"]
 
 	version("1.3.99", md5="9d9b9e70f4f4624ee4a2b09a59d44510")
 

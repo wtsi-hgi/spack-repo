@@ -13,7 +13,7 @@ class ROrgScSgdDb(RPackage):
 	"""
 	
 	bioc = "org.Sc.sgd.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/org.Sc.sgd.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/org.Sc.sgd.db/org.Sc.sgd.db_3.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Sc.sgd.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.Sc.sgd.db/org.Sc.sgd.db_3.18.0.tar.gz"]
 
 	version("3.18.0", md5="cd83de7109be623e7a294a47ca65f160")
 

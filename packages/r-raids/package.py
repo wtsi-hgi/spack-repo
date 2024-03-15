@@ -14,7 +14,7 @@ class RRaids(RPackage):
 	
 	homepage = "https://krasnitzlab.github.io/RAIDS/"
 	bioc = "RAIDS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RAIDS_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RAIDS/RAIDS_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RAIDS_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RAIDS/RAIDS_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="768d047b002bb44e1178d69233878818")
 

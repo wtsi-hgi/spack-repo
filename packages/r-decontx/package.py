@@ -13,7 +13,7 @@ class RDecontx(RPackage):
 	"""
 	
 	bioc = "decontX" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/decontX_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/decontX/decontX_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/decontX_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/decontX/decontX_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="1e2f4af9204397b8104543dd954bb390")
 

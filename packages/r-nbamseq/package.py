@@ -14,7 +14,7 @@ class RNbamseq(RPackage):
 	
 	homepage = "https://github.com/reese3928/NBAMSeq"
 	bioc = "NBAMSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/NBAMSeq_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/NBAMSeq/NBAMSeq_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NBAMSeq_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NBAMSeq/NBAMSeq_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="45181f95a38937784da7cbad4d416811")
 

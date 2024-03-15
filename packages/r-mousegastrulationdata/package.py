@@ -14,7 +14,7 @@ class RMousegastrulationdata(RPackage):
 	
 	homepage = "https://github.com/MarioniLab/MouseGastrulationData"
 	bioc = "MouseGastrulationData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/MouseGastrulationData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/MouseGastrulationData/MouseGastrulationData_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MouseGastrulationData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MouseGastrulationData/MouseGastrulationData_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="4af06fb157942c6cfd9f24494bd7ae1f")
 

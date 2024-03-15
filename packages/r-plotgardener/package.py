@@ -14,7 +14,7 @@ class RPlotgardener(RPackage):
 	
 	homepage = "https://phanstiellab.github.io/plotgardener"
 	bioc = "plotgardener" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/plotgardener_1.8.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/plotgardener/plotgardener_1.8.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/plotgardener_1.8.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/plotgardener/plotgardener_1.8.2.tar.gz"]
 
 	version("1.8.2", md5="ddd679b0595dcf2798a5bcc6e3a8c692")
 

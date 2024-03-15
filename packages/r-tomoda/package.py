@@ -14,7 +14,7 @@ class RTomoda(RPackage):
 	
 	homepage = "https://github.com/liuwd15/tomoda"
 	bioc = "tomoda" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tomoda_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tomoda/tomoda_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tomoda_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tomoda/tomoda_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="49b8009bc1e0c7c7567b75be6fbde6c4")
 

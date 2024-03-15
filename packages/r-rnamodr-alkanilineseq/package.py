@@ -14,7 +14,7 @@ class RRnamodrAlkanilineseq(RPackage):
 	
 	homepage = "https://github.com/FelixErnst/RNAmodR.AlkAnilineSeq"
 	bioc = "RNAmodR.AlkAnilineSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RNAmodR.AlkAnilineSeq_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RNAmodR.AlkAnilineSeq/RNAmodR.AlkAnilineSeq_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNAmodR.AlkAnilineSeq_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNAmodR.AlkAnilineSeq/RNAmodR.AlkAnilineSeq_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="a8d93c4a0a55346a6d47edb5f4c4438e")
 

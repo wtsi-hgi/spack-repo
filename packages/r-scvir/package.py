@@ -14,7 +14,7 @@ class RScvir(RPackage):
 	
 	homepage = "https://github.com/vjcitn/scviR"
 	bioc = "scviR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scviR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scviR/scviR_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scviR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scviR/scviR_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="71d6c427fcc042ac8b011a31935641df")
 

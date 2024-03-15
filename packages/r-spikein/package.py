@@ -14,7 +14,7 @@ class RSpikein(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/SpikeIn"
 	bioc = "SpikeIn" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/SpikeIn_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/SpikeIn/SpikeIn_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SpikeIn_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SpikeIn/SpikeIn_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="439f9d2eda54024edb7c1c81862d74c8")
 

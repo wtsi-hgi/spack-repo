@@ -14,7 +14,7 @@ class RCliquems(RPackage):
 	
 	homepage = "http://cliquems.seeslab.net"
 	bioc = "cliqueMS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cliqueMS_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cliqueMS/cliqueMS_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cliqueMS_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cliqueMS/cliqueMS_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="f423e41dd4ca04cefe4bd5be77ceec3a")
 

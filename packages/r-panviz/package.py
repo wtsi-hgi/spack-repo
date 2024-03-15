@@ -14,7 +14,7 @@ class RPanviz(RPackage):
 	
 	homepage = "https://github.com/LucaAnholt/PanViz"
 	bioc = "PanViz" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PanViz_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PanViz/PanViz_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PanViz_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PanViz/PanViz_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="5d5ced4ee7d68f57367aed30633f29e0")
 

@@ -13,12 +13,13 @@ Function
 	Allows Bayesian borrowing from a historical dataset for time-to-
     event data. A flexible baseline hazard function is achieved via a piecewise
     exponential likelihood with time varying split points and smoothing prior on the
-    historic baseline hazards.
+    historic baseline hazards. The method is described in Scott and Lewin (2024) 
+    <arXiv:2401.06082>.
 	"""
 	
 	cran = "BayesFBHborrow" 
 
-	version("0.0.2", md5="f67d8cba3dd83ec56cbc8d48130edc07")
+	version("1.0.1", md5="31abdc8596cce66c6ed2f8a99e9d0d7b")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -13,7 +13,7 @@ class RSeqcat(RPackage):
 	"""
 	
 	bioc = "seqCAT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/seqCAT_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/seqCAT/seqCAT_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqCAT_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqCAT/seqCAT_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="a7694d3599501816a63d4b6e831af35d")
 

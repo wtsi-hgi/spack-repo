@@ -14,6 +14,6 @@ class RCata(RPackage):
 	
 	cran = "cata" 
 
-	version("0.1.0.2", md5="7688097cd4cef4b12022d7b8cb9f6b6e")
+	version("0.1.0.5", md5="27d2849d9089c5e14d66d0b096f84e93")
 
 	depends_on("r@4.2:", type=("build", "run"))

@@ -13,7 +13,7 @@ class RPdMu11ksuba(RPackage):
 	"""
 	
 	bioc = "pd.mu11ksuba" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.mu11ksuba_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.mu11ksuba/pd.mu11ksuba_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mu11ksuba_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.mu11ksuba/pd.mu11ksuba_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="56be58b3f444ccb9572dc4c3882964b2")
 

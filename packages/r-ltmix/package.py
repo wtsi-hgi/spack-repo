@@ -15,7 +15,7 @@ Distributions
 	
 	cran = "ltmix" 
 
-	version("0.2.1", md5="079c8f5071c5fdee64b860610856278d")
+	version("0.2.2", md5="06d786986b1f581171c55b4acfea6142")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-gtools", type=("build", "run"))

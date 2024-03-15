@@ -13,7 +13,7 @@ class RSlingshot(RPackage):
 	"""
 	
 	bioc = "slingshot" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/slingshot_2.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/slingshot/slingshot_2.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/slingshot_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/slingshot/slingshot_2.10.0.tar.gz"]
 
 	version("2.10.0", md5="556fe5835a602547c3475065eb5c11d0")
 

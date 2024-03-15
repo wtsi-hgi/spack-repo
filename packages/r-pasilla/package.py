@@ -13,7 +13,7 @@ class RPasilla(RPackage):
 	"""
 	
 	bioc = "pasilla" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/pasilla_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/pasilla/pasilla_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/pasilla_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/pasilla/pasilla_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="e1fbdd57136d8a29edd1e0164dc2412e")
 

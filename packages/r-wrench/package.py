@@ -14,7 +14,7 @@ class RWrench(RPackage):
 	
 	homepage = "https://github.com/HCBravoLab/Wrench"
 	bioc = "Wrench" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Wrench_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Wrench/Wrench_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Wrench_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Wrench/Wrench_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="18e9fb2840f0002f41be3799688e2b1f")
 

@@ -14,7 +14,7 @@ class RCbnplot(RPackage):
 	
 	homepage = "https://github.com/noriakis/CBNplot"
 	bioc = "CBNplot" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CBNplot_1.2.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CBNplot/CBNplot_1.2.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CBNplot_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CBNplot/CBNplot_1.2.1.tar.gz"]
 
 	version("1.2.1", md5="e87c0c410d247fa34a6ab9e9d3863976")
 

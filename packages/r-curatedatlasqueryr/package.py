@@ -14,7 +14,7 @@ class RCuratedatlasqueryr(RPackage):
 	
 	homepage = "https://github.com/stemangiola/CuratedAtlasQueryR"
 	bioc = "CuratedAtlasQueryR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CuratedAtlasQueryR_1.0.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CuratedAtlasQueryR/CuratedAtlasQueryR_1.0.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CuratedAtlasQueryR_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CuratedAtlasQueryR/CuratedAtlasQueryR_1.0.1.tar.gz"]
 
 	version("1.0.1", md5="d6b5177c2cfd72bb910ce0ce86db3237")
 

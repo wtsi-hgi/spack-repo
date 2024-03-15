@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -27,7 +27,7 @@ class RGofuncr(RPackage):
 	coordinates, annotations and ontologies."""
 
 	bioc = "GOfuncR"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GOfuncR_1.22.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GOfuncR/GOfuncR_1.22.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOfuncR_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOfuncR/GOfuncR_1.22.2.tar.gz"]
 
 	version("1.22.2", md5="d1b00ef5711c3012a11f52cc7312d60b")
 

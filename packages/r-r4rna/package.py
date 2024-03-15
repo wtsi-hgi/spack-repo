@@ -14,7 +14,7 @@ class RR4rna(RPackage):
 	
 	homepage = "http://www.e-rna.org/r-chie/"
 	bioc = "R4RNA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/R4RNA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/R4RNA/R4RNA_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/R4RNA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/R4RNA/R4RNA_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="a77903559307ab481671650646dd85e5")
 

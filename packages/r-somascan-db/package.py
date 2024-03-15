@@ -14,7 +14,7 @@ class RSomascanDb(RPackage):
 	
 	homepage = "https://somalogic.com"
 	bioc = "SomaScan.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/SomaScan.db_0.99.7.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/SomaScan.db/SomaScan.db_0.99.7.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/SomaScan.db_0.99.7.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/SomaScan.db/SomaScan.db_0.99.7.tar.gz"]
 
 	version("0.99.7", md5="aa52f4f12dfb2f0aa4c7fe3633de4646")
 

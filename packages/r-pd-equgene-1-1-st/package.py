@@ -13,7 +13,7 @@ class RPdEqugene11St(RPackage):
 	"""
 	
 	bioc = "pd.equgene.1.1.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.equgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.equgene.1.1.st/pd.equgene.1.1.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.equgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.equgene.1.1.st/pd.equgene.1.1.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="bed32525513ce25f14d433ce805e7d6c")
 

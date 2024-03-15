@@ -13,7 +13,7 @@ class RBeat(RPackage):
 	"""
 	
 	bioc = "BEAT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BEAT_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BEAT/BEAT_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BEAT_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BEAT/BEAT_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="46e0caf216c816dbe7323a1b0117fbf6")
 

@@ -13,7 +13,7 @@ class RIsomirs(RPackage):
 	"""
 	
 	bioc = "isomiRs" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/isomiRs_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/isomiRs/isomiRs_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/isomiRs_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/isomiRs/isomiRs_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="95b301f966153c00b98359bb6a0986cd")
 

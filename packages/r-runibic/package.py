@@ -14,7 +14,7 @@ class RRunibic(RPackage):
 	
 	homepage = "http://github.com/athril/runibic"
 	bioc = "runibic" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/runibic_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/runibic/runibic_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/runibic_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/runibic/runibic_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="e67e1067d80c06f72208fca94d7a2e52")
 

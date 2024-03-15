@@ -17,14 +17,15 @@ class RMppr(RPackage):
              association mapping). The functions cover data processing,
              QTL detection, and results visualization. The implemented methodology
              is described in Garin, Wimmer, Mezmouk, Malosetti and van Eeuwijk (2017)
-             <doi:10.1007/s00122-017-2923-3> as well as in Garin, Malosetti
-             and van Eeuwijk (2020) <doi: 10.1007/s00122-020-03621-0>.
+             <doi:10.1007/s00122-017-2923-3>, in Garin, Malosetti
+             and van Eeuwijk (2020) <doi: 10.1007/s00122-020-03621-0>,
+             and in Garin, Diallo, Tekete, Thera, ..., and Rami (2024) <doi: 10.1093/genetics/iyae003>.
 	"""
 	
 	homepage = "https://github.com/vincentgarin/mppR"
 	cran = "mppR" 
 
-	version("1.4.0", md5="6df5533429c0d8099290b9eecc5a7e77")
+	version("1.5.0", md5="ed52063c3eba09ae0a7304413475d196")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

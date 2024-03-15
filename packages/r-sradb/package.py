@@ -13,7 +13,7 @@ class RSradb(RPackage):
 	"""
 	
 	bioc = "SRAdb" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SRAdb_1.64.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SRAdb/SRAdb_1.64.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SRAdb_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SRAdb/SRAdb_1.64.0.tar.gz"]
 
 	version("1.64.0", md5="6bc0aa8bd176c1b388f4da270b4f668b")
 

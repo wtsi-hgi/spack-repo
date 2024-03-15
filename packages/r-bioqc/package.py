@@ -14,7 +14,7 @@ class RBioqc(RPackage):
 	
 	homepage = "https://accio.github.io/BioQC"
 	bioc = "BioQC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BioQC_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BioQC/BioQC_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioQC_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioQC/BioQC_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="9e9b338e001fdeb614091e4fa0cf50cd")
 

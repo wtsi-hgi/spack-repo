@@ -13,7 +13,7 @@ class RHireadsprocessor(RPackage):
 	"""
 	
 	bioc = "hiReadsProcessor" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/hiReadsProcessor_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/hiReadsProcessor/hiReadsProcessor_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hiReadsProcessor_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hiReadsProcessor/hiReadsProcessor_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="8a194956515b40e5dc75f90cafdea5c6")
 

@@ -13,7 +13,7 @@ class RSpatialdecon(RPackage):
 	"""
 	
 	bioc = "SpatialDecon" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SpatialDecon_1.12.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SpatialDecon/SpatialDecon_1.12.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpatialDecon_1.12.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpatialDecon/SpatialDecon_1.12.3.tar.gz"]
 
 	version("1.12.3", md5="41ce36a3eeb7683676bb45809eb85730")
 

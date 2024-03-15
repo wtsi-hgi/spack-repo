@@ -13,7 +13,7 @@ class RScmultiome(RPackage):
 	"""
 	
 	bioc = "scMultiome" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/scMultiome_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/scMultiome/scMultiome_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scMultiome_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scMultiome/scMultiome_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="db13145ffc5eb5430eee8ac7212e1b7d")
 

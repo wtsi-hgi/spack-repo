@@ -22,7 +22,7 @@ class RHydraulics(RPackage):
     flow, the Manning equation is used, again solving for missing parameters. 
     The derivation of and solutions using the Darcy-Weisbach equation and the
     Manning equation are outlined in many fluid mechanics texts such as 
-    Finnemore and Franzini (2002, ISBN:978-0072432022). Some gradually- and 
+    Finnemore and Maurer (2024, ISBN:978-1-264-78729-6). Some gradually- and 
     rapidly-varied flow functions are included. For the Manning equation
     solutions, this package uses modifications of original code from the 'iemisc' 
     package by Irucka Embry.
@@ -31,11 +31,12 @@ class RHydraulics(RPackage):
 	homepage = "https://github.com/EdM44/hydraulics"
 	cran = "hydraulics" 
 
-	version("0.6.1", md5="d27b3f24744746e85cef3351e8855cd4")
+	version("0.7.0", md5="7aed1029c36d65ea52b8b076fb04b6ed")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-gtools", type=("build", "run"))
+	depends_on("r-pracma", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))

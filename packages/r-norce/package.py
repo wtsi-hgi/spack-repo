@@ -13,7 +13,7 @@ class RNorce(RPackage):
 	"""
 	
 	bioc = "NoRCE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/NoRCE_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/NoRCE/NoRCE_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NoRCE_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NoRCE/NoRCE_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="8e3a1a53f9c68bc68ab881bd49e28ecb")
 

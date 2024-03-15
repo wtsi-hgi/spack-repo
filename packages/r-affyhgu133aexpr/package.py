@@ -13,7 +13,7 @@ class RAffyhgu133aexpr(RPackage):
 	"""
 	
 	bioc = "Affyhgu133aExpr" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Affyhgu133aExpr_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/Affyhgu133aExpr/Affyhgu133aExpr_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Affyhgu133aExpr_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Affyhgu133aExpr/Affyhgu133aExpr_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="2cf458278c574450a3a5ffe64a2aa72b")
 

@@ -13,7 +13,7 @@ class RRmassbankdata(RPackage):
 	"""
 	
 	bioc = "RMassBankData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RMassBankData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/RMassBankData/RMassBankData_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RMassBankData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RMassBankData/RMassBankData_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="ac6f883e962890eebb03c2368be8bcdc")
 

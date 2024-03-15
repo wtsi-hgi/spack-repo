@@ -13,7 +13,7 @@ class RStategra(RPackage):
 	"""
 	
 	bioc = "STATegRa" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/STATegRa_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/STATegRa/STATegRa_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/STATegRa_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/STATegRa/STATegRa_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="be42ca7786d4b038ad3f706492c74022")
 

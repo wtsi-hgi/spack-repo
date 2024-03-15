@@ -14,7 +14,7 @@ class RMetid(RPackage):
 	
 	homepage = "https://github.com/ressomlab/MetID"
 	bioc = "MetID" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MetID_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MetID/MetID_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetID_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetID/MetID_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="873920da0ab3c4e6a3bcd9e580097b86")
 

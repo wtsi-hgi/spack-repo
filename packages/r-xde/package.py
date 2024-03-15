@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,7 @@ class RXde(RPackage):
 	expression."""
 
 	bioc = "XDE"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/XDE_2.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/XDE/XDE_2.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/XDE_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/XDE/XDE_2.48.0.tar.gz"]
 
 	version("2.48.0", md5="aaf179de92edd3a7105c0fe20254f3d6")
 

@@ -13,7 +13,7 @@ class REximir(RPackage):
 	"""
 	
 	bioc = "ExiMiR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ExiMiR_2.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ExiMiR/ExiMiR_2.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExiMiR_2.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExiMiR/ExiMiR_2.44.0.tar.gz"]
 
 	version("2.44.0", md5="a68c067ab91567287317a760f9e4c738")
 

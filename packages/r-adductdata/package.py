@@ -13,7 +13,7 @@ class RAdductdata(RPackage):
 	"""
 	
 	bioc = "adductData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/adductData_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/adductData/adductData_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/adductData_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/adductData/adductData_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="bf0e3549ee672a31f32759f0535f360a")
 

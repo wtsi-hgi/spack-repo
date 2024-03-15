@@ -13,7 +13,7 @@ class RNcgtw(RPackage):
 	"""
 	
 	bioc = "ncGTW" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ncGTW_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ncGTW/ncGTW_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ncGTW_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ncGTW/ncGTW_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="ea33321b03c3751afd04234fd7fbcda3")
 

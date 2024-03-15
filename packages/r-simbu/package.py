@@ -14,7 +14,7 @@ class RSimbu(RPackage):
 	
 	homepage = "https://github.com/omnideconv/SimBu"
 	bioc = "SimBu" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SimBu_1.4.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SimBu/SimBu_1.4.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SimBu_1.4.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SimBu/SimBu_1.4.3.tar.gz"]
 
 	version("1.4.3", md5="f58aadeded253be20ac1d30d861501d3")
 

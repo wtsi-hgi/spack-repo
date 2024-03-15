@@ -14,7 +14,7 @@ class RRtcgatoolbox(RPackage):
 	
 	homepage = "http://mksamur.github.io/RTCGAToolbox/"
 	bioc = "RTCGAToolbox" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RTCGAToolbox_2.32.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RTCGAToolbox/RTCGAToolbox_2.32.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RTCGAToolbox_2.32.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RTCGAToolbox/RTCGAToolbox_2.32.1.tar.gz"]
 
 	version("2.32.1", md5="002662ddf44b6ca3e771db3adcbda6d8")
 

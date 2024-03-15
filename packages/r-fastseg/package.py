@@ -14,7 +14,7 @@ class RFastseg(RPackage):
 	
 	homepage = "http://www.bioinf.jku.at/software/fastseg/index.html"
 	bioc = "fastseg" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/fastseg_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/fastseg/fastseg_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fastseg_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fastseg/fastseg_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="ca8ead071a9b881b19dea7b71e0e73b4")
 

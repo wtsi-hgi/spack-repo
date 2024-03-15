@@ -14,7 +14,7 @@ class RChromstar(RPackage):
 	
 	homepage = "https://github.com/ataudt/chromstaR"
 	bioc = "chromstaR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/chromstaR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/chromstaR/chromstaR_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chromstaR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chromstaR/chromstaR_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="4288983863e4523b5c7e7750691e8987")
 

@@ -13,7 +13,7 @@ class RIlluminahumanmethylation27kmanifest(RPackage):
 	"""
 	
 	bioc = "IlluminaHumanMethylation27kmanifest" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/IlluminaHumanMethylation27kmanifest_0.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/IlluminaHumanMethylation27kmanifest/IlluminaHumanMethylation27kmanifest_0.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/IlluminaHumanMethylation27kmanifest_0.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/IlluminaHumanMethylation27kmanifest/IlluminaHumanMethylation27kmanifest_0.4.0.tar.gz"]
 
 	version("0.4.0", md5="c4cdda637dccf85f193342c7262b02a6")
 

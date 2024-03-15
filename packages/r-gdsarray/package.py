@@ -14,7 +14,7 @@ class RGdsarray(RPackage):
 	
 	homepage = "https://github.com/Bioconductor/GDSArray"
 	bioc = "GDSArray" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GDSArray_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GDSArray/GDSArray_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GDSArray_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GDSArray/GDSArray_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="3ae99d95017d67dd67e17f47436f0301")
 

@@ -13,7 +13,7 @@ class RHgu95acdf(RPackage):
 	"""
 	
 	bioc = "hgu95acdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hgu95acdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hgu95acdf/hgu95acdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu95acdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu95acdf/hgu95acdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="afc999d77b1532154d45911ad15a5897")
 

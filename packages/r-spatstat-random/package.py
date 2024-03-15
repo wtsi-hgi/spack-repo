@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -25,9 +25,9 @@ class RSpatstatRandom(RPackage):
 
 	cran = "spatstat.random"
 
-	version("3.2-2", md5="951293b3cd32fdaed6011187826f1472")
+	version("3.2-3", md5="54605f110f496fa011c01130ded078ba")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-spatstat-data@3:", type=("build", "run"))
-	depends_on("r-spatstat-geom@3.2.1:", type=("build", "run"))
+	depends_on("r-spatstat-geom@3.2.9:", type=("build", "run"))
 	depends_on("r-spatstat-utils@3.0.2:", type=("build", "run"))

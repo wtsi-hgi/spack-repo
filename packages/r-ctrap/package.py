@@ -14,7 +14,7 @@ class RCtrap(RPackage):
 	
 	homepage = "https://nuno-agostinho.github.io/cTRAP"
 	bioc = "cTRAP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cTRAP_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cTRAP/cTRAP_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cTRAP_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cTRAP/cTRAP_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="049de878508ce8d8031d7d93f6a1fd01")
 

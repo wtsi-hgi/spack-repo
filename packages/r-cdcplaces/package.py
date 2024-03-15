@@ -17,7 +17,7 @@ class RCdcplaces(RPackage):
 	homepage = "https://github.com/brendensm/CDCPLACES"
 	cran = "CDCPLACES" 
 
-	version("1.1.4", md5="24d6a7b2bc89ffaa077a2794508bc148")
+	version("1.1.5", md5="bcce052ec1a13c0ee6b18ae7821df5eb")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))
@@ -26,3 +26,6 @@ class RCdcplaces(RPackage):
 	depends_on("r-httr2", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
+	depends_on("r-tigris", type=("build", "run"))
+	depends_on("r-sf", type=("build", "run"))
+	depends_on("r-usa", type=("build", "run"))

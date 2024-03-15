@@ -13,7 +13,7 @@ class RMwastools(RPackage):
 	"""
 	
 	bioc = "MWASTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MWASTools_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MWASTools/MWASTools_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MWASTools_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MWASTools/MWASTools_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="4af3f3512a794c7944a27bfad640aa81")
 

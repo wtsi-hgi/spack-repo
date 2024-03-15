@@ -14,7 +14,7 @@ class RIntramirexplorer(RPackage):
 	
 	homepage = "https://github.com/VilainLab/IntramiRExploreR"
 	bioc = "IntramiRExploreR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IntramiRExploreR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IntramiRExploreR/IntramiRExploreR_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IntramiRExploreR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IntramiRExploreR/IntramiRExploreR_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="e319d73695e5e1f12d9fc79896c49674")
 

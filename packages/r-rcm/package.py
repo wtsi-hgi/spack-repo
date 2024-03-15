@@ -14,7 +14,7 @@ class RRcm(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/release/bioc/vignettes/RCM/inst/doc/RCMvignette.html/"
 	bioc = "RCM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RCM_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RCM/RCM_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCM_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RCM/RCM_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="2512426fe72a0dfede77816e98935ca1")
 

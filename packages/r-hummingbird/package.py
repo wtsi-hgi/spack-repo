@@ -13,7 +13,7 @@ class RHummingbird(RPackage):
 	"""
 	
 	bioc = "hummingbird" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/hummingbird_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/hummingbird/hummingbird_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hummingbird_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hummingbird/hummingbird_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="3f2788dadae0f811072b04866fc9e5ed")
 

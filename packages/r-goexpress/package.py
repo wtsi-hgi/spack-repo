@@ -14,7 +14,7 @@ class RGoexpress(RPackage):
 	
 	homepage = "https://github.com/kevinrue/GOexpress"
 	bioc = "GOexpress" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GOexpress_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GOexpress/GOexpress_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOexpress_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOexpress/GOexpress_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="b313b2555495c3d3fc5674120b7bb01b")
 

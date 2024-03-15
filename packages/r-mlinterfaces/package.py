@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,7 @@ class RMlinterfaces(RPackage):
 	data in R and Bioconductor containers."""
 
 	bioc = "MLInterfaces"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MLInterfaces_1.82.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MLInterfaces/MLInterfaces_1.82.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MLInterfaces_1.82.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MLInterfaces/MLInterfaces_1.82.0.tar.gz"]
 
 	version("1.82.0", md5="acb5f91abaa05ef8c6b156b2cc7df846")
 

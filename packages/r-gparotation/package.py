@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,6 +14,6 @@ class RGparotation(RPackage):
 
 	cran = "GPArotation"
 
-	version("2024.2-1", md5="2b2d20d78042c6679be1f86fcd72de59")
+	version("2024.3-1", md5="bcb6ace2512c0c9a3019e2160a76cf64")
 
 	depends_on("r@2:", type=("build", "run"))

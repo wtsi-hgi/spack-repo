@@ -26,7 +26,7 @@ Biodiversity
 	homepage = "https://sites.google.com/view/chao-lab-website/software/inext-3d"
 	cran = "iNEXT.3D" 
 
-	version("1.0.1", md5="1e3a74a2f9194491c7d3d5c5e5b2b25a")
+	version("1.0.2", md5="cca3d726d4c9cf1add7fc01b67204390")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))

@@ -17,11 +17,9 @@ class RConstructive(RPackage):
 	homepage = "https://github.com/cynkra/constructive"
 	cran = "constructive" 
 
-	version("0.2.0", md5="b51a6a8f12bfeac07ac2089507248aa9")
+	version("0.3.0", md5="2b140ea9eeb5e5964c73865d80b2e350")
 
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-diffobj", type=("build", "run"))
-	depends_on("r-ellipsis", type=("build", "run"))
 	depends_on("r-rlang@1:", type=("build", "run"))
-	depends_on("r-roxygen2", type=("build", "run"))
 	depends_on("r-waldo", type=("build", "run"))

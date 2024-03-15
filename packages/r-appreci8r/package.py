@@ -13,7 +13,7 @@ class RAppreci8r(RPackage):
 	"""
 	
 	bioc = "appreci8R" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/appreci8R_1.20.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/appreci8R/appreci8R_1.20.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/appreci8R_1.20.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/appreci8R/appreci8R_1.20.2.tar.gz"]
 
 	version("1.20.2", md5="ae81c7ce017b71af93ed64ecbf062555")
 

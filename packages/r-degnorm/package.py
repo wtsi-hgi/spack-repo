@@ -13,7 +13,7 @@ class RDegnorm(RPackage):
 	"""
 	
 	bioc = "DegNorm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DegNorm_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DegNorm/DegNorm_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DegNorm_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DegNorm/DegNorm_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="45dbc8183e1e18f3027b7880d3b5ef5a")
 

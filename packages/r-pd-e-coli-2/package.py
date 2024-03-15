@@ -13,9 +13,9 @@ class RPdEColi2(RPackage):
 	"""
 	
 	bioc = "pd.e.coli.2" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.e.coli.2_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.e.coli.2/pd.e.coli.2_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.e.coli.2_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.e.coli.2/pd.e.coli.2_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="9176faa60a0c252a815b2a74d2f63dd4", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.e.coli.2_3.12.0.tar.gz")
+	version("3.12.0", md5="9176faa60a0c252a815b2a74d2f63dd4", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.e.coli.2_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

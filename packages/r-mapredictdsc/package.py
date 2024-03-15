@@ -14,7 +14,7 @@ class RMapredictdsc(RPackage):
 	
 	homepage = "http://bioinformaticsprb.med.wayne.edu/maPredictDSC"
 	bioc = "maPredictDSC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/maPredictDSC_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/maPredictDSC/maPredictDSC_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maPredictDSC_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maPredictDSC/maPredictDSC_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="b2a491a7c799fcc0efcaed0b3067aa66")
 

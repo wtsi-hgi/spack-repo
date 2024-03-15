@@ -14,7 +14,7 @@ class RTidysummarizedexperiment(RPackage):
 	
 	homepage = "https://github.com/stemangiola/tidySummarizedExperiment"
 	bioc = "tidySummarizedExperiment" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tidySummarizedExperiment_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tidySummarizedExperiment/tidySummarizedExperiment_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tidySummarizedExperiment_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tidySummarizedExperiment/tidySummarizedExperiment_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="a7962f90a1d5e582e22a5c6e1f5e46da")
 

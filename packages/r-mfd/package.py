@@ -26,7 +26,7 @@ Diversity
 	homepage = "https://cmlmagneville.github.io/mFD/"
 	cran = "mFD" 
 
-	version("1.0.6", md5="3671b2311dea3586dda152426e8ff26e")
+	version("1.0.7", md5="1b32208ecb2bef045004a89b5cc89beb")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ade4", type=("build", "run"))

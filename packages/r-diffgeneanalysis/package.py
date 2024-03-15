@@ -13,7 +13,7 @@ class RDiffgeneanalysis(RPackage):
 	"""
 	
 	bioc = "diffGeneAnalysis" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/diffGeneAnalysis_1.84.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/diffGeneAnalysis/diffGeneAnalysis_1.84.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/diffGeneAnalysis_1.84.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/diffGeneAnalysis/diffGeneAnalysis_1.84.0.tar.gz"]
 
 	version("1.84.0", md5="aa3d8c4ce3b83b8a6f02e87384dd649f")
 

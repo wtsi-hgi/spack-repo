@@ -14,7 +14,7 @@ class RMsstatstmt(RPackage):
 	
 	homepage = "http://msstats.org/msstatstmt/"
 	bioc = "MSstatsTMT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MSstatsTMT_2.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MSstatsTMT/MSstatsTMT_2.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsTMT_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsTMT/MSstatsTMT_2.10.0.tar.gz"]
 
 	version("2.10.0", md5="73166086fd3882b4771350fde01f37fb")
 

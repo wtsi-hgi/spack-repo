@@ -13,7 +13,7 @@ class RBcrank(RPackage):
 	"""
 	
 	bioc = "BCRANK" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BCRANK_1.64.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BCRANK/BCRANK_1.64.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BCRANK_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BCRANK/BCRANK_1.64.0.tar.gz"]
 
 	version("1.64.0", md5="6c551ab389af456ab76449642c01881a")
 

@@ -13,7 +13,7 @@ class RGenenetworkbuilder(RPackage):
 	"""
 	
 	bioc = "GeneNetworkBuilder" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GeneNetworkBuilder_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GeneNetworkBuilder/GeneNetworkBuilder_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneNetworkBuilder_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneNetworkBuilder/GeneNetworkBuilder_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="aedb0b143d59865acfad5ce4d635ff77")
 

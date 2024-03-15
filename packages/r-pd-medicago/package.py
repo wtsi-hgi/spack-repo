@@ -13,7 +13,7 @@ class RPdMedicago(RPackage):
 	"""
 	
 	bioc = "pd.medicago" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.medicago_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.medicago/pd.medicago_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.medicago_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.medicago/pd.medicago_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="0e3f00777919374619a9dc8244167068")
 

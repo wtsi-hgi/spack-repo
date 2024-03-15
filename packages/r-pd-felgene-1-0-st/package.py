@@ -13,7 +13,7 @@ class RPdFelgene10St(RPackage):
 	"""
 	
 	bioc = "pd.felgene.1.0.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.felgene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.felgene.1.0.st/pd.felgene.1.0.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.felgene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.felgene.1.0.st/pd.felgene.1.0.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="b7ac0a5cbde5f248aac5d0a7422bd88d")
 

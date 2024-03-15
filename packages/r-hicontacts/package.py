@@ -14,7 +14,7 @@ class RHicontacts(RPackage):
 	
 	homepage = "https://github.com/js2264/HiContacts"
 	bioc = "HiContacts" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HiContacts_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HiContacts/HiContacts_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiContacts_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiContacts/HiContacts_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="f7f7341e5b4cbfcd13b04fadd9c472c7")
 

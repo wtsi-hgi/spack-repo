@@ -13,7 +13,7 @@ class RChromplot(RPackage):
 	"""
 	
 	bioc = "chromPlot" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/chromPlot_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/chromPlot/chromPlot_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chromPlot_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chromPlot/chromPlot_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="a9a3e6d499f082698be0bf88f6432103")
 

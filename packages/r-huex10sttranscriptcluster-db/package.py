@@ -13,7 +13,7 @@ class RHuex10sttranscriptclusterDb(RPackage):
 	"""
 	
 	bioc = "huex10sttranscriptcluster.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/huex10sttranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/huex10sttranscriptcluster.db/huex10sttranscriptcluster.db_8.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/huex10sttranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/huex10sttranscriptcluster.db/huex10sttranscriptcluster.db_8.8.0.tar.gz"]
 
 	version("8.8.0", md5="0789a1e8ee4474bd64c2772eab0db247")
 

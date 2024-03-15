@@ -13,7 +13,7 @@ class RCghregions(RPackage):
 	"""
 	
 	bioc = "CGHregions" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CGHregions_1.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CGHregions/CGHregions_1.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CGHregions_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CGHregions/CGHregions_1.60.0.tar.gz"]
 
 	version("1.60.0", md5="3ec8f1bb5db1987f92932d29a31d74fe")
 

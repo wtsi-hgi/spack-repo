@@ -13,7 +13,7 @@ class RSeqgate(RPackage):
 	"""
 	
 	bioc = "SeqGate" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SeqGate_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SeqGate/SeqGate_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SeqGate_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SeqGate/SeqGate_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="786d9cf0f14de2b0056b9207daedbf45")
 

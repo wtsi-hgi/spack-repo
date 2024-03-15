@@ -13,7 +13,7 @@ class RMetabosignal(RPackage):
 	"""
 	
 	bioc = "MetaboSignal" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MetaboSignal_1.32.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MetaboSignal/MetaboSignal_1.32.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetaboSignal_1.32.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetaboSignal/MetaboSignal_1.32.1.tar.gz"]
 
 	version("1.32.1", md5="744fd78883ccbcc18a0e65cd0960f8c6")
 

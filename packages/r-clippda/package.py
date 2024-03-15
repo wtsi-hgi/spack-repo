@@ -14,7 +14,7 @@ class RClippda(RPackage):
 	
 	homepage = "http://www.cancerstudies.bham.ac.uk/crctu/CLIPPDA.shtml"
 	bioc = "clippda" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/clippda_1.52.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/clippda/clippda_1.52.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clippda_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clippda/clippda_1.52.0.tar.gz"]
 
 	version("1.52.0", md5="d416c567cfb3615472045bc57c2bce72")
 

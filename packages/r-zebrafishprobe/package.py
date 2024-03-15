@@ -13,7 +13,7 @@ class RZebrafishprobe(RPackage):
 	"""
 	
 	bioc = "zebrafishprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/zebrafishprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/zebrafishprobe/zebrafishprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/zebrafishprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/zebrafishprobe/zebrafishprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="eea2747859afa763addc7313ab0a2452")
 

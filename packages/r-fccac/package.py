@@ -13,7 +13,7 @@ class RFccac(RPackage):
 	"""
 	
 	bioc = "fCCAC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/fCCAC_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/fCCAC/fCCAC_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fCCAC_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fCCAC/fCCAC_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="f4152105666120b6529f55983c4e2aa3")
 

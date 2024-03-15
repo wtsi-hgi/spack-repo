@@ -7,13 +7,14 @@ from spack.package import *
 
 
 class RHdsinrdata(RPackage):
-	"""Data for the 'Health Data Science in R' Online Textbook
+	"""Data for the 'Mastering Health Data Science Using R' Online
+Textbook
 
-	Contains seven datasets used in the chapters and exercises of Paul, Alice (2023) "Health Data Science in R" <https://alicepaul.github.io/health-data-science-in-r/>.
+	Contains nine datasets used in the chapters and exercises of Paul, Alice (2023) "Health Data Science in R" <https://alicepaul.github.io/health-data-science-using-r/>.
 	"""
 	
 	cran = "HDSinRdata" 
 
-	version("0.1.0", md5="47e7a4c693d7083faa71ee597d7e471a")
+	version("0.1.1", md5="32adff9bb3ef2a92eb85ab7bc2bd437b")
 
 	depends_on("r@2.10:", type=("build", "run"))

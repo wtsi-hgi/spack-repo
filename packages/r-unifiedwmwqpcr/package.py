@@ -13,7 +13,7 @@ class RUnifiedwmwqpcr(RPackage):
 	"""
 	
 	bioc = "unifiedWMWqPCR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/unifiedWMWqPCR_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/unifiedWMWqPCR/unifiedWMWqPCR_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/unifiedWMWqPCR_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/unifiedWMWqPCR/unifiedWMWqPCR_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="d9a09d196f72dc2246328247851dd24a")
 

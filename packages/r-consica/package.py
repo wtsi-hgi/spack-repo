@@ -13,7 +13,7 @@ class RConsica(RPackage):
 	"""
 	
 	bioc = "consICA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/consICA_2.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/consICA/consICA_2.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/consICA_2.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/consICA/consICA_2.0.0.tar.gz"]
 
 	version("2.0.0", md5="b64f871ca062dc65d6a883b000c761d8")
 

@@ -13,7 +13,7 @@ class RChipanalyser(RPackage):
 	"""
 	
 	bioc = "ChIPanalyser" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ChIPanalyser_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ChIPanalyser/ChIPanalyser_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPanalyser_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPanalyser/ChIPanalyser_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="21d3f8fe9fc90548452dab5a3a8e5c0d")
 

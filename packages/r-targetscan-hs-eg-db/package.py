@@ -13,7 +13,7 @@ class RTargetscanHsEgDb(RPackage):
 	"""
 	
 	bioc = "targetscan.Hs.eg.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/targetscan.Hs.eg.db_0.6.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/targetscan.Hs.eg.db/targetscan.Hs.eg.db_0.6.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/targetscan.Hs.eg.db_0.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/targetscan.Hs.eg.db/targetscan.Hs.eg.db_0.6.1.tar.gz"]
 
 	version("0.6.1", md5="d10569315400f6c1b95ad2688632b6de")
 

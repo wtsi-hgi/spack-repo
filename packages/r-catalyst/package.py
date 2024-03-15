@@ -14,7 +14,7 @@ class RCatalyst(RPackage):
 	
 	homepage = "https://github.com/HelenaLC/CATALYST"
 	bioc = "CATALYST" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CATALYST_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CATALYST/CATALYST_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CATALYST_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CATALYST/CATALYST_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="6ce647576b86ebdf9fe0933fd87b79ce")
 

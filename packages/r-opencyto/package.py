@@ -13,7 +13,7 @@ class ROpencyto(RPackage):
 	"""
 	
 	bioc = "openCyto" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/openCyto_2.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/openCyto/openCyto_2.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/openCyto_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/openCyto/openCyto_2.14.0.tar.gz"]
 
 	version("2.14.0", md5="04a62bb1960f008fc218686296a3118d")
 

@@ -13,7 +13,7 @@ class RPdatk(RPackage):
 	"""
 	
 	bioc = "PDATK" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PDATK_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PDATK/PDATK_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PDATK_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PDATK/PDATK_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="7593f074493a9b3123e757f9f265d05c")
 

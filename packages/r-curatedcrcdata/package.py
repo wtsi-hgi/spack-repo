@@ -14,7 +14,7 @@ class RCuratedcrcdata(RPackage):
 	
 	homepage = "https://bitbucket.org/biobakery/curatedcrcdata"
 	bioc = "curatedCRCData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/curatedCRCData_2.34.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/curatedCRCData/curatedCRCData_2.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedCRCData_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedCRCData/curatedCRCData_2.34.0.tar.gz"]
 
 	version("2.34.0", md5="c36bf5dbc0970503f4137b55e8c65534")
 

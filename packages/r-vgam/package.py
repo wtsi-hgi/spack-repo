@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -28,6 +28,6 @@ class RVgam(RPackage):
 
 	cran = "VGAM"
 
-	version("1.1-9", md5="f51f80d9943e8773bfb12a5139151b2e")
+	version("1.1-10", md5="4775c04874f72d7920d38462f321cdf9")
 
 	depends_on("r@4:", type=("build", "run"))

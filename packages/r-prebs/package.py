@@ -13,7 +13,7 @@ class RPrebs(RPackage):
 	"""
 	
 	bioc = "prebs" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/prebs_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/prebs/prebs_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/prebs_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/prebs/prebs_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="847264218e6725926f1b56aacd09b541")
 

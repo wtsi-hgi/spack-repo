@@ -13,7 +13,7 @@ class REbarrays(RPackage):
 	"""
 	
 	bioc = "EBarrays" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EBarrays_2.66.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EBarrays/EBarrays_2.66.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EBarrays_2.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EBarrays/EBarrays_2.66.0.tar.gz"]
 
 	version("2.66.0", md5="d273e2e9411207653d4e079e14484026")
 

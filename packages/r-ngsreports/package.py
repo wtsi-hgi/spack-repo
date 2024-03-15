@@ -14,7 +14,7 @@ class RNgsreports(RPackage):
 	
 	homepage = "https://github.com/smped/ngsReports"
 	bioc = "ngsReports" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ngsReports_2.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ngsReports/ngsReports_2.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ngsReports_2.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ngsReports/ngsReports_2.4.0.tar.gz"]
 
 	version("2.4.0", md5="c2d8c1f7a1869275420e05125fb1b420")
 

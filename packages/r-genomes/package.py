@@ -13,7 +13,7 @@ class RGenomes(RPackage):
 	"""
 	
 	bioc = "genomes" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/genomes_3.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/genomes/genomes_3.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genomes_3.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genomes/genomes_3.32.0.tar.gz"]
 
 	version("3.32.0", md5="4c11ca2b7b1d4dfd1ffc178b1d9e87e2")
 

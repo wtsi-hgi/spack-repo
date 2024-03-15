@@ -13,7 +13,7 @@ class RAnvilpublish(RPackage):
 	"""
 	
 	bioc = "AnVILPublish" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AnVILPublish_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AnVILPublish/AnVILPublish_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnVILPublish_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnVILPublish/AnVILPublish_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="bbd5bd8ab36e2563e7b4b01e2b11295d")
 

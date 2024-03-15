@@ -13,7 +13,7 @@ class RSplinetimer(RPackage):
 	"""
 	
 	bioc = "splineTimeR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/splineTimeR_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/splineTimeR/splineTimeR_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/splineTimeR_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/splineTimeR/splineTimeR_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="09454e29df75ff3f9d9e3f2780fb5db6")
 

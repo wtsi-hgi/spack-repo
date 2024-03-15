@@ -13,7 +13,7 @@ class RClusterstab(RPackage):
 	"""
 	
 	bioc = "clusterStab" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/clusterStab_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/clusterStab/clusterStab_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clusterStab_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clusterStab/clusterStab_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="87f3941fd121e6a60acdefd9a682ba9a")
 

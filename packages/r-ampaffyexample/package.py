@@ -14,7 +14,7 @@ class RAmpaffyexample(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/AmpAffyExample"
 	bioc = "AmpAffyExample" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/AmpAffyExample_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/AmpAffyExample/AmpAffyExample_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/AmpAffyExample_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/AmpAffyExample/AmpAffyExample_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="3277d6d26f145ddbb45c3808273cd150")
 

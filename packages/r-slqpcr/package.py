@@ -13,7 +13,7 @@ class RSlqpcr(RPackage):
 	"""
 	
 	bioc = "SLqPCR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SLqPCR_1.68.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SLqPCR/SLqPCR_1.68.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SLqPCR_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SLqPCR/SLqPCR_1.68.0.tar.gz"]
 
 	version("1.68.0", md5="72759fb6b62f3852f458e695318c0f6f")
 

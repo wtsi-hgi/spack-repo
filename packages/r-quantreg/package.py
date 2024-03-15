@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,6 +18,8 @@ class RQuantreg(RPackage):
 	<doi:10.1201/9781315120256>."""
 
 	cran = "quantreg"
+
+	license("GPL-2.0-or-later")
 
 	version("5.97", md5="e36187123dc53900e967b3c466a902fc")
 

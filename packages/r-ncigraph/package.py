@@ -13,7 +13,7 @@ class RNcigraph(RPackage):
 	"""
 	
 	bioc = "NCIgraph" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/NCIgraph_1.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/NCIgraph/NCIgraph_1.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NCIgraph_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NCIgraph/NCIgraph_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="ed568ded26dce9e64d5f38606e65c13d")
 

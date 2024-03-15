@@ -19,7 +19,7 @@ class RArrow(RPackage):
 	homepage = "https://github.com/apache/arrow/"
 	cran = "arrow" 
 
-	version("14.0.0.2", md5="84cefe34da6af43984b308ca2a57d7bd")
+	version("15.0.1", md5="f5e2d244a409b3272d5539f77c40f2c3")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))
@@ -32,3 +32,4 @@ class RArrow(RPackage):
 	depends_on("r-vctrs", type=("build", "run"))
 	depends_on("r-cpp11@0.4.2:", type=("build", "run"))
 	depends_on("curl", type=("build", "link", "run"))
+	depends_on("cmake", type=("build", "link", "run"))

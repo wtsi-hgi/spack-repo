@@ -15,7 +15,7 @@ class REventpred(RPackage):
 	homepage = "https://github.com/kaifenglu/eventPred"
 	cran = "eventPred" 
 
-	version("0.2.4", md5="f41c8772299fae0e3a524f0b1f4c5c64")
+	version("0.2.5", md5="db45dd8c81f29328358c55e7d0df38d0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr@1.1:", type=("build", "run"))

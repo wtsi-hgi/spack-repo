@@ -14,7 +14,7 @@ class RPagerank(RPackage):
 	
 	homepage = "https://github.com/hd2326/pageRank"
 	bioc = "pageRank" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pageRank_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pageRank/pageRank_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pageRank_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pageRank/pageRank_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="05578860ad3f7021d25c6c07953218ea")
 

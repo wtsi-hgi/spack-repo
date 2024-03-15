@@ -13,7 +13,7 @@ class RTxcutr(RPackage):
 	"""
 	
 	bioc = "txcutr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/txcutr_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/txcutr/txcutr_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/txcutr_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/txcutr/txcutr_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="10d81d02156a45cebc08845455180010")
 

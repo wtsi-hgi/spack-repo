@@ -9,13 +9,16 @@ from spack.package import *
 class RPredictmeans(RPackage):
 	"""Predicted Means for Linear and Semiparametric Models
 
-	Providing functions to diagnose and make inferences from various linear models, such as those obtained from 'aov', 'lm', 'glm', 'gls', 'lme', 'lmer', 'glmmTMB' and 'semireg'. Inferences include predicted means and standard errors, contrasts, multiple comparisons, permutation tests and graphs.
+	Providing functions to diagnose and make inferences from various linear models, 
+    such as those obtained from 'aov', 'lm', 'glm', 'gls', 'lme', 'lmer', 'glmmTMB' and 'semireg'. 
+	Inferences include predicted means and standard errors, contrasts, multiple comparisons, 
+	permutation tests, adjusted R-square and graphs.
 	"""
 	
 	homepage = "https://CRAN.R-project.org/package=predictmeans"
 	cran = "predictmeans" 
 
-	version("1.0.9", md5="6bac8ac976e9869ddd5b184ae3e5ac0c")
+	version("1.1.0", md5="2629a2d736d22fd10921ed6b82559b36")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-glmmtmb", type=("build", "run"))

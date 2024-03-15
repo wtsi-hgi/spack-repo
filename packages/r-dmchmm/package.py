@@ -13,7 +13,7 @@ class RDmchmm(RPackage):
 	"""
 	
 	bioc = "DMCHMM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DMCHMM_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DMCHMM/DMCHMM_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DMCHMM_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DMCHMM/DMCHMM_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="4a4e52e12df4e699e0e20d13828f25f0")
 

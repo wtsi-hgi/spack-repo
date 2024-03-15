@@ -13,7 +13,7 @@ class RDamefinder(RPackage):
 	"""
 	
 	bioc = "DAMEfinder" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DAMEfinder_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DAMEfinder/DAMEfinder_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DAMEfinder_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DAMEfinder/DAMEfinder_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="0f99003a20995ebd0c15fce1a407765f")
 

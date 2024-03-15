@@ -13,9 +13,9 @@ class RRnbeadsHg19(RPackage):
 	"""
 	
 	bioc = "RnBeads.hg19" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RnBeads.hg19_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/RnBeads.hg19/RnBeads.hg19_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RnBeads.hg19_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RnBeads.hg19/RnBeads.hg19_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="92612251679ba9c6d2b88b90838edf1c", url="https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RnBeads.hg19_1.34.0.tar.gz")
+	version("1.34.0", md5="92612251679ba9c6d2b88b90838edf1c", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RnBeads.hg19_1.34.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

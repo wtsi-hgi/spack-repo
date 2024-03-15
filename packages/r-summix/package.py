@@ -13,7 +13,7 @@ class RSummix(RPackage):
 	"""
 	
 	bioc = "Summix" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Summix_2.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Summix/Summix_2.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Summix_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Summix/Summix_2.8.0.tar.gz"]
 
 	version("2.8.0", md5="74d3140f7f5db9a648955b81abdfb769")
 

@@ -13,7 +13,7 @@ class RDrivernet(RPackage):
 	"""
 	
 	bioc = "DriverNet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DriverNet_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DriverNet/DriverNet_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DriverNet_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DriverNet/DriverNet_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="78b923b016f6bd8097c1edc43ca0cca4")
 

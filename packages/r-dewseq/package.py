@@ -14,7 +14,7 @@ class RDewseq(RPackage):
 	
 	homepage = "https://github.com/EMBL-Hentze-group/DEWSeq/"
 	bioc = "DEWSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DEWSeq_1.16.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DEWSeq/DEWSeq_1.16.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEWSeq_1.16.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEWSeq/DEWSeq_1.16.2.tar.gz"]
 
 	version("1.16.2", md5="4164c3c7d4967586861e0c2d40815ec5")
 

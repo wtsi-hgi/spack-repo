@@ -13,7 +13,7 @@ class RSegmenter(RPackage):
 	"""
 	
 	bioc = "segmenter" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/segmenter_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/segmenter/segmenter_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/segmenter_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/segmenter/segmenter_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="8877dce2f35cc59e9c3d8b3fb38bf29e")
 

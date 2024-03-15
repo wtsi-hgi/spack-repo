@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -25,9 +25,11 @@ class RRms(RPackage):
 
 	cran = "rms"
 
-	version("6.7-1", md5="93a6eb3c6991b9c579a914d8b59a9a41")
+	license("GPL-2.0-or-later")
 
-	depends_on("r@3.5:", type=("build", "run"))
+	version("6.8-0", md5="c3aed3fd117298c74eabe176a943ec70")
+
+	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-hmisc@5.1.0:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))
 	depends_on("r-quantreg", type=("build", "run"))

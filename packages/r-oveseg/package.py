@@ -13,7 +13,7 @@ class ROveseg(RPackage):
 	"""
 	
 	bioc = "OVESEG" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/OVESEG_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/OVESEG/OVESEG_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OVESEG_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OVESEG/OVESEG_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="2a1ac203dcd19e6c511d4bcefa0cee45")
 

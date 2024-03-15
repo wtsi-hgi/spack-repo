@@ -13,7 +13,7 @@ class RCombi(RPackage):
 	"""
 	
 	bioc = "combi" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/combi_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/combi/combi_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/combi_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/combi/combi_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="6fe16559db40b31126eb543abf6819fa")
 

@@ -13,7 +13,7 @@ class RHealthyflowdata(RPackage):
 	"""
 	
 	bioc = "healthyFlowData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/healthyFlowData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/healthyFlowData/healthyFlowData_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/healthyFlowData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/healthyFlowData/healthyFlowData_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="ed0a9c99295e278a8445368a2cb226df")
 

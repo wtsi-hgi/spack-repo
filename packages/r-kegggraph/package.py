@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,7 +17,7 @@ class RKegggraph(RPackage):
 	etc."""
 
 	bioc = "KEGGgraph"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/KEGGgraph_1.62.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/KEGGgraph/KEGGgraph_1.62.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/KEGGgraph_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/KEGGgraph/KEGGgraph_1.62.0.tar.gz"]
 
 	version("1.62.0", md5="9a4fb63b5bab3eeb0af51af22fa2dc16")
 

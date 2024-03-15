@@ -14,7 +14,7 @@ class RDemuxmix(RPackage):
 	
 	homepage = "https://github.com/huklein/demuxmix"
 	bioc = "demuxmix" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/demuxmix_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/demuxmix/demuxmix_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/demuxmix_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/demuxmix/demuxmix_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="9bbdcc634e542fe151a50a2511206140")
 

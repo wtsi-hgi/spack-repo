@@ -13,7 +13,7 @@ class RHiergwas(RPackage):
 	"""
 	
 	bioc = "hierGWAS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/hierGWAS_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/hierGWAS/hierGWAS_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hierGWAS_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hierGWAS/hierGWAS_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="9f15cfa27c8d57b818fc7913d8a9093b")
 

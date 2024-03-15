@@ -14,7 +14,7 @@ class RSpqn(RPackage):
 	
 	homepage = "https://github.com/hansenlab/spqn"
 	bioc = "spqn" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/spqn_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/spqn/spqn_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spqn_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spqn/spqn_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="63599cd8ebe97287b176d98cb3d9de43")
 

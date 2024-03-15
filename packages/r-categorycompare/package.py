@@ -14,7 +14,7 @@ class RCategorycompare(RPackage):
 	
 	homepage = "https://github.com/rmflight/categoryCompare"
 	bioc = "categoryCompare" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/categoryCompare_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/categoryCompare/categoryCompare_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/categoryCompare_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/categoryCompare/categoryCompare_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="9809c7142b4af81d181bf8d8f7e0f815")
 

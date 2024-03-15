@@ -13,7 +13,7 @@ class RPdChogene20St(RPackage):
 	"""
 	
 	bioc = "pd.chogene.2.0.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.chogene.2.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.chogene.2.0.st/pd.chogene.2.0.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.chogene.2.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.chogene.2.0.st/pd.chogene.2.0.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="641718e3d172838185a200bac3d32433")
 

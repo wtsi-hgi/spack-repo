@@ -14,7 +14,7 @@ class RWebbioc(RPackage):
 	
 	homepage = "http://www.bioconductor.org/"
 	bioc = "webbioc" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/webbioc_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/webbioc/webbioc_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/webbioc_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/webbioc/webbioc_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="59774accefb60098cdf15cfcd1cda508")
 

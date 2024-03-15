@@ -13,7 +13,7 @@ class RTxdbScerevisiaeUcscSaccer3Sgdgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Scerevisiae.UCSC.sacCer3.sgdGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Scerevisiae.UCSC.sacCer3.sgdGene_3.2.2.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Scerevisiae.UCSC.sacCer3.sgdGene/TxDb.Scerevisiae.UCSC.sacCer3.sgdGene_3.2.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Scerevisiae.UCSC.sacCer3.sgdGene_3.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Scerevisiae.UCSC.sacCer3.sgdGene/TxDb.Scerevisiae.UCSC.sacCer3.sgdGene_3.2.2.tar.gz"]
 
 	version("3.2.2", md5="afb23b3265730b9e59c2f07ab37cc3a0")
 

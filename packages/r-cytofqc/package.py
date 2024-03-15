@@ -14,7 +14,7 @@ class RCytofqc(RPackage):
 	
 	homepage = "https://github.com/jillbo1000/cytofQC"
 	bioc = "cytofQC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cytofQC_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cytofQC/cytofQC_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cytofQC_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cytofQC/cytofQC_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="7a4e866c0e57f639b41828c211aff31f")
 

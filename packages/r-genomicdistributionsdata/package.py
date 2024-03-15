@@ -13,7 +13,7 @@ class RGenomicdistributionsdata(RPackage):
 	"""
 	
 	bioc = "GenomicDistributionsData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/GenomicDistributionsData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/GenomicDistributionsData/GenomicDistributionsData_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GenomicDistributionsData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GenomicDistributionsData/GenomicDistributionsData_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="84067e85ccbf3605bc1f5a1b7d8508ad")
 

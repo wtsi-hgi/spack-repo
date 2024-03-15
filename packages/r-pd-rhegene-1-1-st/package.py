@@ -13,7 +13,7 @@ class RPdRhegene11St(RPackage):
 	"""
 	
 	bioc = "pd.rhegene.1.1.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.rhegene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.rhegene.1.1.st/pd.rhegene.1.1.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rhegene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rhegene.1.1.st/pd.rhegene.1.1.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="4f63424ab52283a95731767dce6623cd")
 

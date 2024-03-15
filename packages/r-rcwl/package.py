@@ -13,7 +13,7 @@ class RRcwl(RPackage):
 	"""
 	
 	bioc = "Rcwl" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Rcwl_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Rcwl/Rcwl_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rcwl_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rcwl/Rcwl_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="f427ee3f7f5ba2458f8f97b694b48a85")
 

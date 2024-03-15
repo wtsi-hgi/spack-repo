@@ -22,7 +22,7 @@ Survival Analysis
 	homepage = "https://adibender.github.io/pammtools/"
 	cran = "pammtools" 
 
-	version("0.5.92", md5="98f2da0e6fe02594f5bf0b63d7fccdc9")
+	version("0.5.93", md5="0d6a074e2b94b4681cd49cfed8587458")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mgcv", type=("build", "run"))

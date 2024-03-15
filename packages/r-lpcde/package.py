@@ -9,12 +9,12 @@ from spack.package import *
 class RLpcde(RPackage):
 	"""Boundary Adaptive Local Polynomial Conditional Density Estimator
 
-	Tools for estimation and inference of conditional densities, derivatives and functions. This is the companion software for Cattaneo, Chandak, Jansson and Ma (2022).
+	Tools for estimation and inference of conditional densities, derivatives and functions. This is the companion software for Cattaneo, Chandak, Jansson and Ma (2024).
 	"""
 	
 	cran = "lpcde" 
 
-	version("0.1.1", md5="ccce545aace19b82fd1a2aa81163564a")
+	version("0.1.2", md5="78a3868a0f0f9597da298abcc5382f48")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

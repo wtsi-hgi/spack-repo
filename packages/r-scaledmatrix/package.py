@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,7 @@ class RScaledmatrix(RPackage):
 	efficiency in common operations, most notably matrix multiplication."""
 
 	bioc = "ScaledMatrix"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ScaledMatrix_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ScaledMatrix/ScaledMatrix_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ScaledMatrix_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ScaledMatrix/ScaledMatrix_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="337f2af494241ac5def9fcae4dc12313")
 

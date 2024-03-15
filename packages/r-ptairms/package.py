@@ -13,7 +13,7 @@ class RPtairms(RPackage):
 	"""
 	
 	bioc = "ptairMS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ptairMS_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ptairMS/ptairMS_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ptairMS_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ptairMS/ptairMS_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="771ce745db55fad5684a47026df33abe")
 

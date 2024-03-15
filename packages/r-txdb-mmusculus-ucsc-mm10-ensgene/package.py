@@ -13,7 +13,7 @@ class RTxdbMmusculusUcscMm10Ensgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Mmusculus.UCSC.mm10.ensGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Mmusculus.UCSC.mm10.ensGene_3.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Mmusculus.UCSC.mm10.ensGene/TxDb.Mmusculus.UCSC.mm10.ensGene_3.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Mmusculus.UCSC.mm10.ensGene_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Mmusculus.UCSC.mm10.ensGene/TxDb.Mmusculus.UCSC.mm10.ensGene_3.4.0.tar.gz"]
 
 	version("3.4.0", md5="88d65b714d1f86b456aee2b8524e9d84")
 

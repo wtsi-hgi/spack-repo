@@ -28,7 +28,7 @@ class RCmstatr(RPackage):
 	homepage = "https://www.cmstatr.net/"
 	cran = "cmstatr" 
 
-	version("0.9.2", md5="b456929492b50371a233cedcf27912de")
+	version("0.9.3", md5="51f00b72f5b9d4f1acc5df11425f90fa")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

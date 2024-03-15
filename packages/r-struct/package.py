@@ -13,7 +13,7 @@ class RStruct(RPackage):
 	"""
 	
 	bioc = "struct" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/struct_1.14.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/struct/struct_1.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/struct_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/struct/struct_1.14.1.tar.gz"]
 
 	version("1.14.1", md5="b69b16ed368dda6045628ed8cd614ccd")
 

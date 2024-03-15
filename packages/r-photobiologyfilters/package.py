@@ -20,7 +20,7 @@ class RPhotobiologyfilters(RPackage):
 	homepage = "https://docs.r4photobiology.info/photobiologyFilters/"
 	cran = "photobiologyFilters" 
 
-	version("0.5.2", md5="7f71d5a509539c8c82ac746d006e314e")
+	version("0.6.0", md5="e9319a46c060ca04fe41033d1c927583")
 
-	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-photobiology@0.10.4:", type=("build", "run"))
+	depends_on("r@4:", type=("build", "run"))
+	depends_on("r-photobiology@0.11:", type=("build", "run"))

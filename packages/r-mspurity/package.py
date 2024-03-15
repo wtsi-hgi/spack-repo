@@ -14,7 +14,7 @@ class RMspurity(RPackage):
 	
 	homepage = "https://github.com/computational-metabolomics/msPurity/"
 	bioc = "msPurity" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/msPurity_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/msPurity/msPurity_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msPurity_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msPurity/msPurity_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="0a29b8f3eacf707bf9791d50df53083a")
 

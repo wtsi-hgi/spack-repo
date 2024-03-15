@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,9 @@ class RComplexheatmap(RPackage):
 	multiple heatmaps and supports various annotation graphics."""
 
 	bioc = "ComplexHeatmap"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ComplexHeatmap_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ComplexHeatmap/ComplexHeatmap_2.18.0.tar.gz"]
+
+	license("MIT")
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ComplexHeatmap_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ComplexHeatmap/ComplexHeatmap_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="f4f19a1339c99471cb23ffc4a7272881")
 

@@ -13,7 +13,7 @@ class RPdVitisVinifera(RPackage):
 	"""
 	
 	bioc = "pd.vitis.vinifera" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.vitis.vinifera_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.vitis.vinifera/pd.vitis.vinifera_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.vitis.vinifera_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.vitis.vinifera/pd.vitis.vinifera_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="104a8ac33a9baa25a61f953679795696")
 

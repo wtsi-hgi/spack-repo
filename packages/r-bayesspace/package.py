@@ -14,7 +14,7 @@ class RBayesspace(RPackage):
 	
 	homepage = "edward130603.github.io/BayesSpace"
 	bioc = "BayesSpace" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BayesSpace_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BayesSpace/BayesSpace_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BayesSpace_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BayesSpace/BayesSpace_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="5505178450768dc45884632e3e0a3baf")
 

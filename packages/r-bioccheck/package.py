@@ -14,7 +14,7 @@ class RBioccheck(RPackage):
 	
 	homepage = "https://github.com/Bioconductor/BiocCheck"
 	bioc = "BiocCheck" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiocCheck_1.38.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiocCheck/BiocCheck_1.38.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocCheck_1.38.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocCheck/BiocCheck_1.38.2.tar.gz"]
 
 	version("1.38.2", md5="3dde74b91734d48623ab6555362e4306")
 

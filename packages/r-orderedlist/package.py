@@ -14,7 +14,7 @@ class ROrderedlist(RPackage):
 	
 	homepage = "http://compdiag.molgen.mpg.de/software/OrderedList.shtml"
 	bioc = "OrderedList" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/OrderedList_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/OrderedList/OrderedList_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OrderedList_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OrderedList/OrderedList_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="d8239906b10a2630dc25ab749903a511")
 

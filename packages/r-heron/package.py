@@ -14,7 +14,7 @@ class RHeron(RPackage):
 	
 	homepage = "https://github.com/Ong-Research/HERON"
 	bioc = "HERON" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HERON_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HERON/HERON_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HERON_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HERON/HERON_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="9c146a8d99bada338098732e1de5a5e2")
 

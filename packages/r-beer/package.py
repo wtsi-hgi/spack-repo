@@ -14,7 +14,7 @@ class RBeer(RPackage):
 	
 	homepage = "https://github.com/athchen/beer/"
 	bioc = "beer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/beer_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/beer/beer_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/beer_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/beer/beer_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="c8e6192a3f9bd04b62ed564c8164ba00")
 

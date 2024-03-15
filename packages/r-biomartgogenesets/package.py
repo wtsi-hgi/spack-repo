@@ -14,7 +14,7 @@ class RBiomartgogenesets(RPackage):
 	
 	homepage = "https://github.com/jokergoo/BioMartGOGeneSets"
 	bioc = "BioMartGOGeneSets" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BioMartGOGeneSets_0.99.11.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BioMartGOGeneSets/BioMartGOGeneSets_0.99.11.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BioMartGOGeneSets_0.99.11.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BioMartGOGeneSets/BioMartGOGeneSets_0.99.11.tar.gz"]
 
 	version("0.99.11", md5="f96a12703fd2f9c357442a60e5f2c764")
 

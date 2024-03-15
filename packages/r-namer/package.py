@@ -16,7 +16,7 @@ class RNamer(RPackage):
 	homepage = "https://github.com/jumpingrivers/namer"
 	cran = "namer" 
 
-	version("0.1.6", md5="e83835f7c3db8e4398b0943038b3e08d")
+	version("0.1.8", md5="bbd0505cc466160840227ddaa5799829")
 
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

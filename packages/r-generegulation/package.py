@@ -14,7 +14,7 @@ class RGeneregulation(RPackage):
 	
 	homepage = "https://www.bioconductor.org/help/workflows/generegulation/"
 	bioc = "generegulation" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/generegulation_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/generegulation/generegulation_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/generegulation_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/generegulation/generegulation_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="7e2383f24874237d8e5734515d61adcf")
 

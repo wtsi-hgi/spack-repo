@@ -14,7 +14,7 @@ class RMetams(RPackage):
 	
 	homepage = "https://github.com/yguitton/metaMS"
 	bioc = "metaMS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/metaMS_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/metaMS/metaMS_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metaMS_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metaMS/metaMS_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="c26507515ab859aa42dbea4acc8cacc3")
 

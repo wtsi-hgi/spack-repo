@@ -14,7 +14,7 @@ class RFlowsortedBloodEpic(RPackage):
 	
 	homepage = "https://github.com/immunomethylomics/FlowSorted.Blood.EPIC"
 	bioc = "FlowSorted.Blood.EPIC" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/FlowSorted.Blood.EPIC_2.6.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/FlowSorted.Blood.EPIC/FlowSorted.Blood.EPIC_2.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FlowSorted.Blood.EPIC_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FlowSorted.Blood.EPIC/FlowSorted.Blood.EPIC_2.6.0.tar.gz"]
 
 	version("2.6.0", md5="e94cbb0480a032595cdb5d9714065bed")
 

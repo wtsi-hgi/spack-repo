@@ -13,7 +13,7 @@ class RMosbi(RPackage):
 	"""
 	
 	bioc = "mosbi" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mosbi_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mosbi/mosbi_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mosbi_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mosbi/mosbi_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="f34159f8140d9fe59ea7fe2546e9cdce")
 

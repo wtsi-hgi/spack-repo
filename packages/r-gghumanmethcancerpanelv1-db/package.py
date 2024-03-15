@@ -13,7 +13,7 @@ class RGghumanmethcancerpanelv1Db(RPackage):
 	"""
 	
 	bioc = "GGHumanMethCancerPanelv1.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/GGHumanMethCancerPanelv1.db_1.4.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/GGHumanMethCancerPanelv1.db/GGHumanMethCancerPanelv1.db_1.4.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/GGHumanMethCancerPanelv1.db_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/GGHumanMethCancerPanelv1.db/GGHumanMethCancerPanelv1.db_1.4.1.tar.gz"]
 
 	version("1.4.1", md5="e8f4a37182b175fb33dd54f8093e6f52")
 

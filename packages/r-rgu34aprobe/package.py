@@ -13,7 +13,7 @@ class RRgu34aprobe(RPackage):
 	"""
 	
 	bioc = "rgu34aprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/rgu34aprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/rgu34aprobe/rgu34aprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rgu34aprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rgu34aprobe/rgu34aprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="902aee259a2894fa8713c4bf9266c0e2")
 

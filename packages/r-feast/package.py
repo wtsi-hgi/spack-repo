@@ -13,7 +13,7 @@ class RFeast(RPackage):
 	"""
 	
 	bioc = "FEAST" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/FEAST_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/FEAST/FEAST_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FEAST_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FEAST/FEAST_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="5b32fdf869bc97368c62f50ccd8fe9f5")
 

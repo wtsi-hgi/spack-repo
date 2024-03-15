@@ -14,7 +14,7 @@ class RRbsurv(RPackage):
 	
 	homepage = "http://www.korea.ac.kr/~stat2242/"
 	bioc = "rbsurv" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rbsurv_2.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rbsurv/rbsurv_2.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rbsurv_2.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rbsurv/rbsurv_2.60.0.tar.gz"]
 
 	version("2.60.0", md5="e2791c7a40004e031fd88e0995f4dc13")
 

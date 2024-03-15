@@ -13,7 +13,7 @@ class RRaexexonprobesetlocation(RPackage):
 	"""
 	
 	bioc = "RaExExonProbesetLocation" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/RaExExonProbesetLocation_1.15.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/RaExExonProbesetLocation/RaExExonProbesetLocation_1.15.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/RaExExonProbesetLocation_1.15.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/RaExExonProbesetLocation/RaExExonProbesetLocation_1.15.0.tar.gz"]
 
 	version("1.15.0", md5="d547bcd30685495283b32f0f86ecc79b")
 

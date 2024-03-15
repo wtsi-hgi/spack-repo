@@ -7,7 +7,7 @@ from spack.package import *
 
 
 class RArdeco(RPackage):
-	"""'ARDECO' Dataset
+	"""Annual Regional Database of the European Commission (ARDECO)
 
 	A set of functions to access the 'ARDECO' (Annual Regional Database
     of the European Commission) data directly from the official ARDECO public
@@ -24,7 +24,7 @@ class RArdeco(RPackage):
 	
 	cran = "ARDECO" 
 
-	version("0.1.1", md5="6ef365956fdeadc46b77e41d33bb79c8")
+	version("1.0.0", md5="3c88db24bfd35fbe16fc9aff44cfc338")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))
@@ -32,3 +32,4 @@ class RArdeco(RPackage):
 	depends_on("r-rjstat", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
+	depends_on("r-tidyr", type=("build", "run"))

@@ -14,7 +14,7 @@ class RMcsurvdata(RPackage):
 	
 	homepage = "https://github.com/adricaba/mcsurvdata"
 	bioc = "mcsurvdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/mcsurvdata_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/mcsurvdata/mcsurvdata_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mcsurvdata_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mcsurvdata/mcsurvdata_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="0299258c7610f3675dc0b9f8e333eefa")
 

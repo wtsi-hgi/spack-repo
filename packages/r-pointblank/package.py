@@ -20,10 +20,10 @@ Remote Tables
     generate useful information on data tables.
 	"""
 	
-	homepage = "https://rich-iannone.github.io/pointblank/"
+	homepage = "https://rstudio.github.io/pointblank/"
 	cran = "pointblank" 
 
-	version("0.11.4", md5="fc3341e05a396524c75eb03be120f25e")
+	version("0.12.0", md5="8933f54604e239cbc33e16a64d95b6a8")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-base64enc@0.1.3:", type=("build", "run"))

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,6 +16,8 @@ class RAod(RPackage):
 	equations (GEE) or generalized linear mixed effect models (GLMM)."""
 
 	cran = "aod"
+
+	license("GPL-2.0-or-later")
 
 	version("1.3.3", md5="1be0359bcffcbec8fa4bbbd78e4df84a")
 

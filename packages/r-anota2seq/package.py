@@ -13,7 +13,7 @@ class RAnota2seq(RPackage):
 	"""
 	
 	bioc = "anota2seq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/anota2seq_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/anota2seq/anota2seq_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/anota2seq_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/anota2seq/anota2seq_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="c14a5f4c2cd7c51fbc9c7ecd844ad0be")
 

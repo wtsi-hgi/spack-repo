@@ -14,7 +14,7 @@ class RCogena(RPackage):
 	
 	homepage = "https://github.com/zhilongjia/cogena"
 	bioc = "cogena" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cogena_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cogena/cogena_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cogena_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cogena/cogena_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="47a50e5f5d62a9b2f6fcd7bf3f5b9cc6")
 

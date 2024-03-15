@@ -13,7 +13,7 @@ class RHthgu133bDb(RPackage):
 	"""
 	
 	bioc = "hthgu133b.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hthgu133b.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hthgu133b.db/hthgu133b.db_3.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hthgu133b.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hthgu133b.db/hthgu133b.db_3.13.0.tar.gz"]
 
 	version("3.13.0", md5="8501401a7385e28173ea7b60aa3bf3d2")
 

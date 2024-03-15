@@ -14,7 +14,7 @@ class RFabia(RPackage):
 	
 	homepage = "http://www.bioinf.jku.at/software/fabia/fabia.html"
 	bioc = "fabia" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/fabia_2.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/fabia/fabia_2.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fabia_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fabia/fabia_2.48.0.tar.gz"]
 
 	version("2.48.0", md5="9d336b3c9a97aca0a6b062ec137f5566")
 

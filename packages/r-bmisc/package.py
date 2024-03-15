@@ -16,9 +16,10 @@ Results
 	homepage = "https://bcallaway11.github.io/BMisc/"
 	cran = "BMisc" 
 
-	version("1.4.5", md5="7c6ff046d189dc7cd0b662badefd3b15")
+	version("1.4.6", md5="f8b17680223ffd53d455d3bd8e6b630c")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
+	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))

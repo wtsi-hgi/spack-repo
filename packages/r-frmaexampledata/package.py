@@ -13,7 +13,7 @@ class RFrmaexampledata(RPackage):
 	"""
 	
 	bioc = "frmaExampleData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/frmaExampleData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/frmaExampleData/frmaExampleData_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/frmaExampleData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/frmaExampleData/frmaExampleData_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="9713801ffd08145323ca4d31a3631995")
 

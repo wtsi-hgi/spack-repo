@@ -13,7 +13,7 @@ class RSubcellbarcode(RPackage):
 	"""
 	
 	bioc = "SubCellBarCode" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SubCellBarCode_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SubCellBarCode/SubCellBarCode_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SubCellBarCode_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SubCellBarCode/SubCellBarCode_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="9b3f34495b8132c4cbdc426e27ffc740")
 

@@ -14,7 +14,7 @@ class RGgtreeextra(RPackage):
 	
 	homepage = "https://github.com/YuLab-SMU/ggtreeExtra/"
 	bioc = "ggtreeExtra" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ggtreeExtra_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ggtreeExtra/ggtreeExtra_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggtreeExtra_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggtreeExtra/ggtreeExtra_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="0bfd8a30c6fbd323763722927d30296a")
 

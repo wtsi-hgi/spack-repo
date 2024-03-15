@@ -14,7 +14,7 @@ class RCodelink(RPackage):
 	
 	homepage = "https://github.com/ddiez/codelink"
 	bioc = "codelink" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/codelink_1.70.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/codelink/codelink_1.70.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/codelink_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/codelink/codelink_1.70.0.tar.gz"]
 
 	version("1.70.0", md5="7988c997146174710b5faacc70c10328")
 

@@ -15,11 +15,10 @@ class RSnvecr(RPackage):
 	homepage = "https://japhir.github.io/snvecR/"
 	cran = "snvecR" 
 
-	version("3.8.0", md5="79b994f1099743a62cf77e12d25ad390")
+	version("3.9.1", md5="8f32641d5740436d368b1250ca486528")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-desolve", type=("build", "run"))
-	depends_on("r-pracma", type=("build", "run"))
 	depends_on("r-cli@3.4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
@@ -28,8 +27,5 @@ class RSnvecr(RPackage):
 	depends_on("r-tidyselect", type=("build", "run"))
 	depends_on("r-lubridate", type=("build", "run"))
 	depends_on("r-rlang@0.4.11:", type=("build", "run"))
-	depends_on("r-withr", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
-	depends_on("r-curl", type=("build", "run"))
-	depends_on("r-astrochron", type=("build", "run"))

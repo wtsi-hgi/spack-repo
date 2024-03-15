@@ -19,7 +19,7 @@ class RZoomr(RPackage):
 	homepage = "https://github.com/chrisumphlett/zoomr"
 	cran = "zoomr" 
 
-	version("0.2.0", md5="6faf4816c3488c76213bea38ef0b0c5f")
+	version("0.3.0", md5="be32e694c7ad73fc3ffe4f52bbc61cdf")
 
 	depends_on("r-dplyr@1:", type=("build", "run"))
 	depends_on("r-magrittr@1.5:", type=("build", "run"))

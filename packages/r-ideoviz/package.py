@@ -13,7 +13,7 @@ class RIdeoviz(RPackage):
 	"""
 	
 	bioc = "IdeoViz" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IdeoViz_1.37.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IdeoViz/IdeoViz_1.37.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IdeoViz_1.37.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IdeoViz/IdeoViz_1.37.0.tar.gz"]
 
 	version("1.37.0", md5="187ebcc3f7a11124ebbe137722672ffc")
 

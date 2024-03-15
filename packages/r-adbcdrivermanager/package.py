@@ -19,6 +19,6 @@ class RAdbcdrivermanager(RPackage):
 	homepage = "https://github.com/apache/arrow-adbc"
 	cran = "adbcdrivermanager" 
 
-	version("0.9.0.1", md5="fdafe6ce85e727e21c175e87dd8d80e1")
+	version("0.10.0", md5="99cb5cdc57201b905c08d8c30590df70")
 
 	depends_on("r-nanoarrow@0.3:", type=("build", "run"))

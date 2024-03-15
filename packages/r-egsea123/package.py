@@ -14,9 +14,9 @@ class REgsea123(RPackage):
 	
 	homepage = "https://f1000research.com/articles/6-2010"
 	bioc = "EGSEA123" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/EGSEA123_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/EGSEA123/EGSEA123_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/EGSEA123_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/EGSEA123/EGSEA123_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="15f05075a0399fd0de56e0d205ce02cf", url="https://www.bioconductor.org/packages/release/workflows/src/contrib/EGSEA123_1.26.0.tar.gz")
+	version("1.26.0", md5="15f05075a0399fd0de56e0d205ce02cf", url="https://www.bioconductor.org/packages/3.18/workflows/src/contrib/EGSEA123_1.26.0.tar.gz")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-egsea@1.5.2:", type=("build", "run"))

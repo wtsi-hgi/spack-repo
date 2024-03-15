@@ -13,7 +13,7 @@ class RTress(RPackage):
 	"""
 	
 	bioc = "TRESS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TRESS_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TRESS/TRESS_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TRESS_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TRESS/TRESS_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="f0a0a2bbb1b989970231d8ac23ecfaaa")
 

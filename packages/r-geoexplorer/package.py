@@ -14,7 +14,7 @@ class RGeoexplorer(RPackage):
 	
 	homepage = "https://github.com/guypwhunt/GEOexplorer/"
 	bioc = "GEOexplorer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GEOexplorer_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GEOexplorer/GEOexplorer_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEOexplorer_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEOexplorer/GEOexplorer_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="213a1b499ce1d0640b267c8fb41e3204")
 

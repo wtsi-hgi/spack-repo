@@ -13,7 +13,7 @@ class RMethreg(RPackage):
 	"""
 	
 	bioc = "MethReg" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MethReg_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MethReg/MethReg_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MethReg_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MethReg/MethReg_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="0c092ea7b8883b6c125e64e16030bca6")
 

@@ -15,7 +15,7 @@ class RSvsocket(RPackage):
 	homepage = "https://github.com/SciViews/svSocket"
 	cran = "svSocket" 
 
-	version("1.1.0", md5="66db5183bef1510cc06d8c2ab2c401e7")
+	version("1.1.5", md5="1a04d4817d904c3d3341d8000d7770e8")
 
 	depends_on("r@2.6:", type=("build", "run"))
 	depends_on("r-svmisc@0.9.68:", type=("build", "run"))

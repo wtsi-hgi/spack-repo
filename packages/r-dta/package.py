@@ -13,7 +13,7 @@ class RDta(RPackage):
 	"""
 	
 	bioc = "DTA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DTA_2.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DTA/DTA_2.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DTA_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DTA/DTA_2.48.0.tar.gz"]
 
 	version("2.48.0", md5="58705aacdbf08c61d4713273dbd9bc6f")
 

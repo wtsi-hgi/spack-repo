@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class RCner(RPackage):
 	conserved noncoding elements."""
 
 	bioc = "CNEr"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CNEr_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CNEr/CNEr_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNEr_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNEr/CNEr_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="56fdc5f3323b1f3efbb8d85584ff75d2")
 

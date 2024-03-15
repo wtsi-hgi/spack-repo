@@ -13,7 +13,7 @@ class RPdRjpgene11St(RPackage):
 	"""
 	
 	bioc = "pd.rjpgene.1.1.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.rjpgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.rjpgene.1.1.st/pd.rjpgene.1.1.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rjpgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rjpgene.1.1.st/pd.rjpgene.1.1.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="265503774b15e0f4e71ac53a276a80f2")
 

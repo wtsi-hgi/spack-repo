@@ -13,7 +13,7 @@ class RHguqiagenv3Db(RPackage):
 	"""
 	
 	bioc = "hguqiagenv3.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hguqiagenv3.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hguqiagenv3.db/hguqiagenv3.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hguqiagenv3.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hguqiagenv3.db/hguqiagenv3.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="91ebb82e773ff799befdb8921b38e90e")
 

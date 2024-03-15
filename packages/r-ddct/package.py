@@ -13,7 +13,7 @@ class RDdct(RPackage):
 	"""
 	
 	bioc = "ddCt" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ddCt_1.58.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ddCt/ddCt_1.58.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ddCt_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ddCt/ddCt_1.58.0.tar.gz"]
 
 	version("1.58.0", md5="560588380b356d55a4e11811ae9100e6")
 

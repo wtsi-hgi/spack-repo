@@ -13,7 +13,7 @@ class RAth1121501probe(RPackage):
 	"""
 	
 	bioc = "ath1121501probe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ath1121501probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/ath1121501probe/ath1121501probe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ath1121501probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ath1121501probe/ath1121501probe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="eeeae5e6550bb472ba3419d71bbd7dfb")
 

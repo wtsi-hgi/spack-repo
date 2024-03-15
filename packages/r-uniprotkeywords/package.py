@@ -14,7 +14,7 @@ class RUniprotkeywords(RPackage):
 	
 	homepage = "https://github.com/jokergoo/UniProtKeywords"
 	bioc = "UniProtKeywords" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/UniProtKeywords_0.99.7.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/UniProtKeywords/UniProtKeywords_0.99.7.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/UniProtKeywords_0.99.7.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/UniProtKeywords/UniProtKeywords_0.99.7.tar.gz"]
 
 	version("0.99.7", md5="b2cda32dda256fb0d110192e194af838")
 

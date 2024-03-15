@@ -15,7 +15,7 @@ class RGoeveg(RPackage):
 	homepage = "https://github.com/fvlampe/goeveg/"
 	cran = "goeveg" 
 
-	version("0.7.2", md5="b848c780aa07166e9d8b7990725493c6")
+	version("0.7.4", md5="1046f415585cc857d03788ccb89719b2")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-vegan", type=("build", "run"))

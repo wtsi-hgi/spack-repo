@@ -14,7 +14,7 @@ class RIsobayes(RPackage):
 	
 	homepage = "https://github.com/SimoneTiberi/IsoBayes"
 	bioc = "IsoBayes" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IsoBayes_1.0.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IsoBayes/IsoBayes_1.0.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IsoBayes_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IsoBayes/IsoBayes_1.0.1.tar.gz"]
 
 	version("1.0.1", md5="d9e1de9f5a1f8279117fde4cc997725d")
 

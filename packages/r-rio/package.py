@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -19,6 +19,8 @@ class RRio(RPackage):
 	provides a simple method for converting between file types."""
 
 	cran = "rio"
+
+	license("GPL-2.0-only")
 
 	version("1.0.1", md5="10999152910a11bcccc2b85e78cfda4f")
 

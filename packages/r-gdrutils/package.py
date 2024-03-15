@@ -13,7 +13,7 @@ class RGdrutils(RPackage):
 	"""
 	
 	bioc = "gDRutils" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gDRutils_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gDRutils/gDRutils_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gDRutils_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gDRutils/gDRutils_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="fdf71802bbd5967b163447eda2fe37ef")
 

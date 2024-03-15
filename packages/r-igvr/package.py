@@ -14,7 +14,7 @@ class RIgvr(RPackage):
 	
 	homepage = "https://gladkia.github.io/igvR/"
 	bioc = "igvR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/igvR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/igvR/igvR_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/igvR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/igvR/igvR_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="318b9d244079439576763028e1731a18")
 

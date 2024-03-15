@@ -13,7 +13,7 @@ class RCnvgsa(RPackage):
 	"""
 	
 	bioc = "cnvGSA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cnvGSA_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cnvGSA/cnvGSA_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cnvGSA_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cnvGSA/cnvGSA_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="b3216442e27ff2c602e908aeb6a6f6e7")
 

@@ -16,6 +16,6 @@ class RTinytable(RPackage):
 	homepage = "https://vincentarelbundock.github.io/tinytable/"
 	cran = "tinytable" 
 
-	version("0.0.5", md5="b21869490f83976e2461d96532efb74f")
+	version("0.1.0", md5="c3175418be9b86ca29443ce80d12d0de")
 
 	depends_on("r@4.1:", type=("build", "run"))

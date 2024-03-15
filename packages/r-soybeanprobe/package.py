@@ -13,7 +13,7 @@ class RSoybeanprobe(RPackage):
 	"""
 	
 	bioc = "soybeanprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/soybeanprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/soybeanprobe/soybeanprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/soybeanprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/soybeanprobe/soybeanprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="3057a5c387ff35b6c647c4db27041a13")
 

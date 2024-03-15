@@ -14,7 +14,7 @@ class RRegparallel(RPackage):
 	
 	homepage = "https://github.com/kevinblighe/RegParallel"
 	bioc = "RegParallel" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RegParallel_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/RegParallel/RegParallel_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RegParallel_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RegParallel/RegParallel_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="68533561edc82ac22088ffdd6e988aad")
 

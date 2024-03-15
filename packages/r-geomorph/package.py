@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,9 +16,11 @@ class RGeomorph(RPackage):
 
 	cran = "geomorph"
 
-	version("4.0.6", md5="14c7cba5101d5593ba0653ba8debff14")
+	license("GPL-3.0-or-later")
 
-	depends_on("r-rrpp@1:", type=("build", "run"))
+	version("4.0.7", md5="5fbf4145d6cf675fb7e41728edc6e9bd")
+
+	depends_on("r-rrpp@2:", type=("build", "run"))
 	depends_on("r-rgl", type=("build", "run"))
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

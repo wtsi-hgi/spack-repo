@@ -14,7 +14,7 @@ class RQubic(RPackage):
 	
 	homepage = "http://github.com/zy26/QUBIC"
 	bioc = "QUBIC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/QUBIC_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/QUBIC/QUBIC_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QUBIC_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QUBIC/QUBIC_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="728f7aca6c2d2913d424694e9b31c41c")
 

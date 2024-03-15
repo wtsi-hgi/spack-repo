@@ -13,7 +13,7 @@ class RTxdbCelegansUcscCe11Ensgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Celegans.UCSC.ce11.ensGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Celegans.UCSC.ce11.ensGene_3.15.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Celegans.UCSC.ce11.ensGene/TxDb.Celegans.UCSC.ce11.ensGene_3.15.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Celegans.UCSC.ce11.ensGene_3.15.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Celegans.UCSC.ce11.ensGene/TxDb.Celegans.UCSC.ce11.ensGene_3.15.0.tar.gz"]
 
 	version("3.15.0", md5="1b4d61d06ac8acb27e57d1fafc5b79ce")
 

@@ -15,7 +15,7 @@ class RCodelistgenerator(RPackage):
 	homepage = "https://darwin-eu.github.io/CodelistGenerator/"
 	cran = "CodelistGenerator" 
 
-	version("2.2.2", md5="0049ce3ac5d36468254a187ce51a8216")
+	version("2.2.3", md5="2ff453034798bedb151dacda3233963a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cdmconnector@1.3:", type=("build", "run"))

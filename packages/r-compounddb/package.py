@@ -14,7 +14,7 @@ class RCompounddb(RPackage):
 	
 	homepage = "https://github.com/RforMassSpectrometry/CompoundDb"
 	bioc = "CompoundDb" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CompoundDb_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CompoundDb/CompoundDb_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CompoundDb_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CompoundDb/CompoundDb_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="7863bdbb64d2068c22225ece8ed5844c")
 

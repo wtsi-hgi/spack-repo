@@ -13,7 +13,7 @@ class RPadog(RPackage):
 	"""
 	
 	bioc = "PADOG" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PADOG_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PADOG/PADOG_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PADOG_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PADOG/PADOG_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="ca2c1e477f0ef2d2be1eaf52570dd8c4")
 

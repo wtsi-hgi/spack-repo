@@ -24,7 +24,7 @@ class RStarvz(RPackage):
 	homepage = "https://github.com/schnorr/starvz"
 	cran = "starvz" 
 
-	version("0.7.1", md5="d9dfb23a40c58e2bb379ead91f58f02a")
+	version("0.8.0", md5="268ec913c42ff48ea3d7f3df11825830")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
@@ -44,6 +44,5 @@ class RStarvz(RPackage):
 	depends_on("r-rcolorbrewer", type=("build", "run"))
 	depends_on("r-zoo", type=("build", "run"))
 	depends_on("r-rcpp@1.0.6:", type=("build", "run"))
-	depends_on("r-arrow@3:", type=("build", "run"))
 	depends_on("r-bh", type=("build", "run"))
 	depends_on("arrow+zlib", type=("build", "link", "run"))

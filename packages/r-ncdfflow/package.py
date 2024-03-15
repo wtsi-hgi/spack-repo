@@ -13,7 +13,7 @@ class RNcdfflow(RPackage):
 	"""
 	
 	bioc = "ncdfFlow" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ncdfFlow_2.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ncdfFlow/ncdfFlow_2.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ncdfFlow_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ncdfFlow/ncdfFlow_2.48.0.tar.gz"]
 
 	version("2.48.0", md5="974c454443e3ed6c243aed7395f28911")
 

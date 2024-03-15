@@ -14,7 +14,7 @@ class RSynergyfinder(RPackage):
 	
 	homepage = "http://www.synergyfinder.org"
 	bioc = "synergyfinder" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/synergyfinder_3.10.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/synergyfinder/synergyfinder_3.10.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/synergyfinder_3.10.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/synergyfinder/synergyfinder_3.10.3.tar.gz"]
 
 	version("3.10.3", md5="94b48126902f27ef9dd76c40b11438a3")
 

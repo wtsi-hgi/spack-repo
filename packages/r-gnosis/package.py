@@ -14,7 +14,7 @@ class RGnosis(RPackage):
 	
 	homepage = "https://github.com/Lydia-King/GNOSIS/"
 	bioc = "GNOSIS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GNOSIS_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GNOSIS/GNOSIS_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GNOSIS_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GNOSIS/GNOSIS_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="e3cbf07a76da1ae0aa6e669bad2cb778")
 

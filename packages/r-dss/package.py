@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,7 +17,7 @@ class RDss(RPackage):
 	or Beta-Binomial distributions."""
 
 	bioc = "DSS"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DSS_2.50.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DSS/DSS_2.50.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DSS_2.50.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DSS/DSS_2.50.1.tar.gz"]
 
 	version("2.50.1", md5="96713d3519e0dcf2f1331b7e9a8dbb95")
 

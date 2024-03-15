@@ -13,7 +13,7 @@ class RFlowworkspace(RPackage):
 	"""
 	
 	bioc = "flowWorkspace" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowWorkspace_4.14.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowWorkspace/flowWorkspace_4.14.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowWorkspace_4.14.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowWorkspace/flowWorkspace_4.14.2.tar.gz"]
 
 	version("4.14.2", md5="8c13b6aa80732d54f36bb544adba5a6c")
 

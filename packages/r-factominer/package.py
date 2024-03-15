@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -20,7 +20,7 @@ class RFactominer(RPackage):
 
 	cran = "FactoMineR"
 
-	version("2.9", md5="63a4219b928ac66ecfd5cf5c302ff21c")
+	version("2.10", md5="8866d77d476e2a8d97d5de8e4dfc8690")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-car", type=("build", "run"))

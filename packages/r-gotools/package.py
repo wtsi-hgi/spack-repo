@@ -13,7 +13,7 @@ class RGotools(RPackage):
 	"""
 	
 	bioc = "goTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/goTools_1.76.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/goTools/goTools_1.76.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/goTools_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/goTools/goTools_1.76.0.tar.gz"]
 
 	version("1.76.0", md5="a91344726dcce37779380a18f6e9bc1d")
 

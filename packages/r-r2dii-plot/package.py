@@ -22,11 +22,10 @@ Portfolio
 	homepage = "https://github.com/RMI-PACTA/r2dii.plot"
 	cran = "r2dii.plot" 
 
-	version("0.3.1", md5="56910c62330a2fb04c8b35c8dfae006a")
+	version("0.4.0", md5="b24fa7d09fede1af09d3da600cc2ae8f")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-forcats", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-ggrepel", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
@@ -35,4 +34,3 @@ Portfolio
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))
-	depends_on("r-lifecycle", type=("build", "run"))

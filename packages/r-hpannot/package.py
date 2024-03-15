@@ -13,7 +13,7 @@ class RHpannot(RPackage):
 	"""
 	
 	bioc = "hpAnnot" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hpAnnot_1.1.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hpAnnot/hpAnnot_1.1.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hpAnnot_1.1.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hpAnnot/hpAnnot_1.1.0.tar.gz"]
 
 	version("1.1.0", md5="fbc94a00b0f33b41bc5ff53fbe060663")
 

@@ -14,7 +14,7 @@ class RMoleculeexperiment(RPackage):
 	
 	homepage = "https://github.com/SydneyBioX/MoleculeExperiment"
 	bioc = "MoleculeExperiment" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MoleculeExperiment_1.2.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MoleculeExperiment/MoleculeExperiment_1.2.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MoleculeExperiment_1.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MoleculeExperiment/MoleculeExperiment_1.2.2.tar.gz"]
 
 	version("1.2.2", md5="d8fef705349bc9464ae152cd47bb9a58")
 

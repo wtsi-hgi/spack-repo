@@ -15,7 +15,7 @@ class RGlmtree(RPackage):
 	homepage = "https://adimajo.github.io"
 	cran = "glmtree" 
 
-	version("0.2", md5="15ecb1157b85a8d0894ecfc1bbd1ccc7")
+	version("0.3.1", md5="c18b09e9767cab617e5dd446eb8a92c3")
 
 	depends_on("r-partykit", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

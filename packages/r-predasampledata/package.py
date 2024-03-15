@@ -13,7 +13,7 @@ class RPredasampledata(RPackage):
 	"""
 	
 	bioc = "PREDAsampledata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/PREDAsampledata_0.42.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/PREDAsampledata/PREDAsampledata_0.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PREDAsampledata_0.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PREDAsampledata/PREDAsampledata_0.42.0.tar.gz"]
 
 	version("0.42.0", md5="5acce57384c00a56d658281ba4fa57e5")
 

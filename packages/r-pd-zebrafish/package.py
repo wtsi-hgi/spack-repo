@@ -13,7 +13,7 @@ class RPdZebrafish(RPackage):
 	"""
 	
 	bioc = "pd.zebrafish" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.zebrafish_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.zebrafish/pd.zebrafish_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.zebrafish_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.zebrafish/pd.zebrafish_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="101f09a9d9304d1d8fbcc7f4812897b1")
 

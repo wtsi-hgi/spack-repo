@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -20,6 +20,8 @@ class RRpostgresql(RPackage):
 	https://code.google.com/p/rpostgresql/."""
 
 	cran = "RPostgreSQL"
+
+	license("PostgreSQL")
 
 	version("0.7-6", md5="81dcb7ee798d531be609996435422b75")
 

@@ -13,7 +13,7 @@ class RPdClariomSMouse(RPackage):
 	"""
 	
 	bioc = "pd.clariom.s.mouse" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.clariom.s.mouse_3.14.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.clariom.s.mouse/pd.clariom.s.mouse_3.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.clariom.s.mouse_3.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.clariom.s.mouse/pd.clariom.s.mouse_3.14.1.tar.gz"]
 
 	version("3.14.1", md5="e3e4ce2b22a78faf525dd6c0c0b2a42d")
 

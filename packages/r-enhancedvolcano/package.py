@@ -14,7 +14,7 @@ class REnhancedvolcano(RPackage):
 	
 	homepage = "https://github.com/kevinblighe/EnhancedVolcano"
 	bioc = "EnhancedVolcano" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EnhancedVolcano_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EnhancedVolcano/EnhancedVolcano_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EnhancedVolcano_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EnhancedVolcano/EnhancedVolcano_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="b8224be72afe86d3d951a6a8fdc6788e")
 

@@ -14,7 +14,7 @@ class RRcistargetHg19MotifdbsCisbponly500bp(RPackage):
 	
 	homepage = "http://scenic.aertslab.org"
 	bioc = "RcisTarget.hg19.motifDBs.cisbpOnly.500bp" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RcisTarget.hg19.motifDBs.cisbpOnly.500bp_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/RcisTarget.hg19.motifDBs.cisbpOnly.500bp/RcisTarget.hg19.motifDBs.cisbpOnly.500bp_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RcisTarget.hg19.motifDBs.cisbpOnly.500bp_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RcisTarget.hg19.motifDBs.cisbpOnly.500bp/RcisTarget.hg19.motifDBs.cisbpOnly.500bp_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="b8cdbfafeb9966332876fdf9be8dbb5a")
 

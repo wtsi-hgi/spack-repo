@@ -13,7 +13,7 @@ class RBayseq(RPackage):
 	"""
 	
 	bioc = "baySeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/baySeq_2.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/baySeq/baySeq_2.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/baySeq_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/baySeq/baySeq_2.36.0.tar.gz"]
 
 	version("2.36.0", md5="f46b63ebca2bda7c124133149aa7e552")
 

@@ -14,7 +14,7 @@ class RNhstplot(RPackage):
 	
 	cran = "nhstplot" 
 
-	version("1.2.0", md5="22dc433485451943f4ad947539df4024")
+	version("1.3.0", md5="1059bb8a64f0faf40741de42deca98e8")
 
 	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-ggplot2@3.3:", type=("build", "run"))
+	depends_on("r-ggplot2@3.5:", type=("build", "run"))

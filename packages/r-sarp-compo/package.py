@@ -18,7 +18,7 @@ class RSarpCompo(RPackage):
 	
 	cran = "SARP.compo" 
 
-	version("0.1.5", md5="1a1782aad86fe0b73b7e64a3456a20e2")
+	version("0.1.8", md5="7187befa055ba9c95050dced85f5dd56")
 
 	depends_on("r-igraph", type=("build", "run"))
 	depends_on("r-car", type=("build", "run"))

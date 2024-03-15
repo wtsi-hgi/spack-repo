@@ -13,7 +13,7 @@ class RIdpr(RPackage):
 	"""
 	
 	bioc = "idpr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/idpr_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/idpr/idpr_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/idpr_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/idpr/idpr_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="16fb786981b0e04b0d094c4867303555")
 

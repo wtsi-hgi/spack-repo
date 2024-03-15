@@ -13,7 +13,7 @@ class RGmrp(RPackage):
 	"""
 	
 	bioc = "GMRP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GMRP_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GMRP/GMRP_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GMRP_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GMRP/GMRP_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="d33e226ce1134e0f16d4d531fadc7339")
 

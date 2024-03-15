@@ -23,7 +23,7 @@ class RMlsurvlrnrs(RPackage):
 	homepage = "https://github.com/kapsner/mlsurvlrnrs"
 	cran = "mlsurvlrnrs" 
 
-	version("0.0.2", md5="53b451758a1ac92695aae9de326a82b3")
+	version("0.0.3", md5="6f01cd24548c4af606397fc880929e24")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

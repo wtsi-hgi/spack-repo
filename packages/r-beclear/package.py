@@ -14,7 +14,7 @@ class RBeclear(RPackage):
 	
 	homepage = "https://github.com/uds-helms/BEclear"
 	bioc = "BEclear" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BEclear_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BEclear/BEclear_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BEclear_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BEclear/BEclear_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="bd34703e5a35dfc888f0029395df2c80")
 

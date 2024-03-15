@@ -15,7 +15,7 @@ class RRqpen(RPackage):
 	homepage = "https://github.com/bssherwood/rqpen/blob/master/ignore/rqPenArticle.pdf"
 	cran = "rqPen" 
 
-	version("3.2.1", md5="9edc48e010cf6375d738df418af340cd")
+	version("3.2.2", md5="b4bcd4813968c38d4d77b113f1ce180d")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-quantreg", type=("build", "run"))

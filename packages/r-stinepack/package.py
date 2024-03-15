@@ -14,5 +14,5 @@ class RStinepack(RPackage):
 	
 	cran = "stinepack" 
 
-	version("1.4", md5="535abfd0248ae3c4a383d91ba3884c02")
+	version("1.5", md5="57208bd2bc0f0784efa3a296c116b1d7")
 

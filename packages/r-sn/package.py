@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RSn(RPackage):
 	the multivariate case."""
 
 	cran = "sn"
+
+	license("GPL-2.0-only OR GPL-3.0-only")
 
 	version("2.1.1", md5="f77c36f37cd65ecfedde2e34f7caa44a")
 

@@ -13,7 +13,7 @@ class RPasillatranscriptexpr(RPackage):
 	"""
 	
 	bioc = "PasillaTranscriptExpr" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/PasillaTranscriptExpr_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/PasillaTranscriptExpr/PasillaTranscriptExpr_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PasillaTranscriptExpr_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PasillaTranscriptExpr/PasillaTranscriptExpr_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="7d1d8c852fff7d80c11e8ab79dae7487")
 

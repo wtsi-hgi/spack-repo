@@ -21,7 +21,7 @@ class RCobalt(RPackage):
 	homepage = "https://ngreifer.github.io/cobalt/"
 	cran = "cobalt" 
 
-	version("4.5.3", md5="178320004194ee44c1b8f0470bf7bbd8")
+	version("4.5.4", md5="b94f1e26474d5fe064590d77178c104a")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-ggplot2@3.4.1:", type=("build", "run"))

@@ -14,10 +14,10 @@ class RMemoir(RPackage):
   It provides templates to knit memoirs, articles and slideshows with helpers to publish the documents on GitHub Pages and activate continuous integration.
 	"""
 	
-	homepage = "https://github.com/EricMarcon/memoiR"
+	homepage = "https://ericmarcon.github.io/memoiR/"
 	cran = "memoiR" 
 
-	version("1.2-4", md5="b65a3524626774398d0d24de5e1882cc")
+	version("1.2-7", md5="c3c9d2201ad4a41dba6397d0234992a0")
 
 	depends_on("r-bookdown", type=("build", "run"))
 	depends_on("r-distill", type=("build", "run"))

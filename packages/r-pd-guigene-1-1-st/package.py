@@ -13,7 +13,7 @@ class RPdGuigene11St(RPackage):
 	"""
 	
 	bioc = "pd.guigene.1.1.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.guigene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.guigene.1.1.st/pd.guigene.1.1.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.guigene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.guigene.1.1.st/pd.guigene.1.1.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="aa3e0389c596a3676322104de5ad2358")
 

@@ -23,7 +23,7 @@ class REtas(RPackage):
 	homepage = "https://github.com/jalilian/ETAS"
 	cran = "ETAS" 
 
-	version("0.5.1", md5="cf30d9873b3064b7a8d8ef72699ec90d")
+	version("0.6.1", md5="5e81cd247762f6d6e599d9825edbd51f")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-maps", type=("build", "run"))

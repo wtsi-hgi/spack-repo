@@ -14,7 +14,7 @@ class RMetacca(RPackage):
 	
 	homepage = "https://doi.org/10.1093/bioinformatics/btw052"
 	bioc = "metaCCA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/metaCCA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/metaCCA/metaCCA_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metaCCA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metaCCA/metaCCA_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="d5be58f253912b275964a681a508234d")
 

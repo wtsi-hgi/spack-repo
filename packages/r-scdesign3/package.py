@@ -14,9 +14,9 @@ class RScdesign3(RPackage):
 	
 	homepage = "https://github.com/SONGDONGYUAN1994/scDesign3"
 	bioc = "scDesign3" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scDesign3_1.0.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scDesign3/scDesign3_1.0.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDesign3_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scDesign3/scDesign3_1.0.1.tar.gz"]
 
-	version("1.0.1", md5="f4f74c0f98ede2f2560f556dfb14074a", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/scDesign3_1.0.1.tar.gz")
+	version("1.0.1", md5="f4f74c0f98ede2f2560f556dfb14074a", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDesign3_1.0.1.tar.gz")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

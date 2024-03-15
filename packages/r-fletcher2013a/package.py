@@ -14,7 +14,7 @@ class RFletcher2013a(RPackage):
 	
 	homepage = "http://dx.doi.org/10.1038/ncomms3464"
 	bioc = "Fletcher2013a" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Fletcher2013a_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/Fletcher2013a/Fletcher2013a_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Fletcher2013a_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Fletcher2013a/Fletcher2013a_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="e4c4f9a4e8b24a7a72f9c63337a0eef9")
 

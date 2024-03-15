@@ -13,7 +13,7 @@ class RUniquorn(RPackage):
 	"""
 	
 	bioc = "Uniquorn" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Uniquorn_2.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Uniquorn/Uniquorn_2.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Uniquorn_2.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Uniquorn/Uniquorn_2.22.0.tar.gz"]
 
 	version("2.22.0", md5="63658e23af6991784cdd4b038f2d1268")
 

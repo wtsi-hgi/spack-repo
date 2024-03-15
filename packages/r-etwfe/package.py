@@ -17,7 +17,7 @@ class REtwfe(RPackage):
 	homepage = "https://grantmcdermott.com/etwfe/"
 	cran = "etwfe" 
 
-	version("0.3.5", md5="fc09d20fb4ca9e2cd09b075e634fcf47")
+	version("0.4.0", md5="d14daf85f007a6ad59fd285991568f07")
 
 	depends_on("r-fixest@0.11.2:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

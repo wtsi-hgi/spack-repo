@@ -13,7 +13,7 @@ class RFdrame(RPackage):
 	"""
 	
 	bioc = "fdrame" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/fdrame_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/fdrame/fdrame_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fdrame_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fdrame/fdrame_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="d7fafba89f784f421a43b4b4d9a10000")
 

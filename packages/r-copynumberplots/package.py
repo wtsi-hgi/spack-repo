@@ -14,7 +14,7 @@ class RCopynumberplots(RPackage):
 	
 	homepage = "https://github.com/bernatgel/CopyNumberPlots"
 	bioc = "CopyNumberPlots" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CopyNumberPlots_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CopyNumberPlots/CopyNumberPlots_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CopyNumberPlots_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CopyNumberPlots/CopyNumberPlots_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="d35c96c521087a1183dd2ae465b3d2a7")
 

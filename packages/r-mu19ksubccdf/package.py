@@ -13,7 +13,7 @@ class RMu19ksubccdf(RPackage):
 	"""
 	
 	bioc = "mu19ksubccdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mu19ksubccdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mu19ksubccdf/mu19ksubccdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mu19ksubccdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mu19ksubccdf/mu19ksubccdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="e53ef2716f88022e5e41e2cd857fc2a3")
 

@@ -14,7 +14,7 @@ class RTreg(RPackage):
 	
 	homepage = "https://github.com/LieberInstitute/TREG"
 	bioc = "TREG" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TREG_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TREG/TREG_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TREG_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TREG/TREG_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="d76ba3f3707e1810e6491d04013d6e7b")
 

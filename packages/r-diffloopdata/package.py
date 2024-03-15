@@ -13,7 +13,7 @@ class RDiffloopdata(RPackage):
 	"""
 	
 	bioc = "diffloopdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/diffloopdata_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/diffloopdata/diffloopdata_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/diffloopdata_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/diffloopdata/diffloopdata_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="748ee71ae44999ca2c568619ad5a47eb")
 

@@ -13,7 +13,7 @@ class RPmm(RPackage):
 	"""
 	
 	bioc = "pmm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pmm_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pmm/pmm_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pmm_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pmm/pmm_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="43957004fa9664b15f4bca34f7ea975e")
 

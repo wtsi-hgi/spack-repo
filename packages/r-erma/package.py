@@ -13,7 +13,7 @@ class RErma(RPackage):
 	"""
 	
 	bioc = "erma" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/erma_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/erma/erma_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/erma_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/erma/erma_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="38679c439fbeb31db81c90c90ba4f79d")
 

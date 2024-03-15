@@ -14,7 +14,7 @@ class RBandle(RPackage):
 	
 	homepage = "http://github.com/ococrook/bandle"
 	bioc = "bandle" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/bandle_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/bandle/bandle_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bandle_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bandle/bandle_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="9c8dd928dd2b7900ff453ddc590ad6e4")
 

@@ -13,7 +13,7 @@ class RPdHgU95c(RPackage):
 	"""
 	
 	bioc = "pd.hg.u95c" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.hg.u95c_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.hg.u95c/pd.hg.u95c_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hg.u95c_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.hg.u95c/pd.hg.u95c_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="85655bf7a9ecd7aaa867e05899c5e3e4")
 

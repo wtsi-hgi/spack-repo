@@ -14,7 +14,7 @@ class RSemdist(RPackage):
 	
 	homepage = "http://github.com/iangonzalez/SemDist"
 	bioc = "SemDist" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SemDist_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SemDist/SemDist_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SemDist_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SemDist/SemDist_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="b95a04e7daaae24fb22f3b2a40b17f5f")
 

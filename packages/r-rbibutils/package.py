@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RRbibutils(RPackage):
 	bibliography formats and character encodings implemented in 'bibutils'."""
 
 	cran = "rbibutils"
+
+	license("GPL-2.0-only")
 
 	version("2.2.16", md5="950c341d2b81351a3e194e460bd6870f")
 

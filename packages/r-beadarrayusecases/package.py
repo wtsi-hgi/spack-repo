@@ -13,7 +13,7 @@ class RBeadarrayusecases(RPackage):
 	"""
 	
 	bioc = "BeadArrayUseCases" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/BeadArrayUseCases_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/BeadArrayUseCases/BeadArrayUseCases_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BeadArrayUseCases_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/BeadArrayUseCases/BeadArrayUseCases_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="a939c03744773755b9a80de63a925c3e")
 

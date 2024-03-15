@@ -14,7 +14,7 @@ class RRnaseqgeneedgerql(RPackage):
 	
 	homepage = "http://f1000research.com/articles/5-1438"
 	bioc = "RnaSeqGeneEdgeRQL" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/RnaSeqGeneEdgeRQL_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/RnaSeqGeneEdgeRQL/RnaSeqGeneEdgeRQL_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/RnaSeqGeneEdgeRQL_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/RnaSeqGeneEdgeRQL/RnaSeqGeneEdgeRQL_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="5b981afc581222d34c688246dc09790f")
 

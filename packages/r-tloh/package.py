@@ -14,7 +14,7 @@ class RTloh(RPackage):
 	
 	homepage = "https://github.com/USCDTG/tLOH"
 	bioc = "tLOH" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tLOH_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tLOH/tLOH_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tLOH_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tLOH/tLOH_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="1693fc28c2855f1af11159ec1051e2df")
 

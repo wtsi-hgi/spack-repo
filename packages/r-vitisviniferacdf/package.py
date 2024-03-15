@@ -13,7 +13,7 @@ class RVitisviniferacdf(RPackage):
 	"""
 	
 	bioc = "vitisviniferacdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/vitisviniferacdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/vitisviniferacdf/vitisviniferacdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/vitisviniferacdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/vitisviniferacdf/vitisviniferacdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="8eb491f3ffa3ff0814f5c155787ae160")
 

@@ -14,7 +14,7 @@ class RPickgene(RPackage):
 	
 	homepage = "http://www.stat.wisc.edu/~yandell/statgen"
 	bioc = "pickgene" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pickgene_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pickgene/pickgene_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pickgene_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pickgene/pickgene_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="250b3649eff783447f1d2c34f67bf3ca")
 

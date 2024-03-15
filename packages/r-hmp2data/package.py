@@ -14,7 +14,7 @@ class RHmp2data(RPackage):
 	
 	homepage = "https://github.com/jstansfield0/HMP2Data"
 	bioc = "HMP2Data" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/HMP2Data_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/HMP2Data/HMP2Data_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HMP2Data_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HMP2Data/HMP2Data_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="f334416386d2c1af677494e1fd5743d6")
 

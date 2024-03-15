@@ -25,7 +25,7 @@ class RErgmargins(RPackage):
 	
 	cran = "ergMargins" 
 
-	version("1.1", md5="54b0885ad2ee51677ad282db1604c633")
+	version("1.2", md5="cf3b06ebd83d6a524f213f4628994a07")
 
 	depends_on("r-numderiv", type=("build", "run"))
 	depends_on("r-ergm", type=("build", "run"))

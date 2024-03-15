@@ -13,7 +13,7 @@ class RPdHtHgU133a(RPackage):
 	"""
 	
 	bioc = "pd.ht.hg.u133a" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.ht.hg.u133a_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.ht.hg.u133a/pd.ht.hg.u133a_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.ht.hg.u133a_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.ht.hg.u133a/pd.ht.hg.u133a_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="80a82f43083f95e1e9f5e2e2da2e288e")
 

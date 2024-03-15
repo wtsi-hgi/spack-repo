@@ -14,7 +14,7 @@ class RMsstatsqcgui(RPackage):
 	
 	homepage = "http://msstats.org/msstatsqc"
 	bioc = "MSstatsQCgui" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MSstatsQCgui_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MSstatsQCgui/MSstatsQCgui_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsQCgui_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsQCgui/MSstatsQCgui_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="1e648f2226907f737e1d7e71a375f01c")
 

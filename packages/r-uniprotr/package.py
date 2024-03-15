@@ -15,7 +15,7 @@ class RUniprotr(RPackage):
 	homepage = "https://github.com/Proteomicslab57357/UniprotR"
 	cran = "UniprotR" 
 
-	version("2.3.0", md5="0d4cb53e95c331a017f6490522673188")
+	version("2.4.0", md5="e9e6fbec3b149eac04fcd43e845f7c41")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))

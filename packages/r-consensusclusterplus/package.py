@@ -13,7 +13,7 @@ class RConsensusclusterplus(RPackage):
 	"""
 	
 	bioc = "ConsensusClusterPlus" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ConsensusClusterPlus_1.66.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ConsensusClusterPlus/ConsensusClusterPlus_1.66.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ConsensusClusterPlus_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ConsensusClusterPlus/ConsensusClusterPlus_1.66.0.tar.gz"]
 
 	version("1.66.0", md5="0943cc2a0d1dff314f384e65b8d71897")
 

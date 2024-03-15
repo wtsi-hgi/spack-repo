@@ -14,7 +14,7 @@ class REnmix(RPackage):
 	
 	homepage = "https://github.com/Bioconductor/ENmix"
 	bioc = "ENmix" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ENmix_1.38.01.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ENmix/ENmix_1.38.01.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ENmix_1.38.01.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ENmix/ENmix_1.38.01.tar.gz"]
 
 	version("1.38.01", md5="3ac8861e8c3ad067b1baa266958227cd")
 

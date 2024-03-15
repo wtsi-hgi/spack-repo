@@ -14,7 +14,7 @@ class RPi(RPackage):
 	
 	homepage = "http://pi314.r-forge.r-project.org"
 	bioc = "Pi" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Pi_2.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Pi/Pi_2.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Pi_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Pi/Pi_2.14.0.tar.gz"]
 
 	version("2.14.0", md5="cb989f0e8a3a1ab90a4a319c860ef602")
 

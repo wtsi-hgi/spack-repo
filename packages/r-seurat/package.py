@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -19,6 +19,7 @@ class RSeurat(RPackage):
 
 	cran = "Seurat"
 
+	version("5.0.2", md5="cb58cbc4b85dae89262c43f1d86c49ff")
 	version("5.0.1", md5="3965b1ee0bdc7f005d250a3dd429bcc3")
 	version("4.4.0", sha256="0f17df9597642cfc1db4d8718f0b59ebab9fbed328b1f885f42ee85ea0dcb4dd")
 

@@ -13,9 +13,9 @@ class RDescan2(RPackage):
 	"""
 	
 	bioc = "DEScan2" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DEScan2_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DEScan2/DEScan2_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEScan2_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEScan2/DEScan2_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="476f052d4a86e27d332812852fd7e0c1", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/DEScan2_1.22.0.tar.gz")
+	version("1.22.0", md5="476f052d4a86e27d332812852fd7e0c1", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEScan2_1.22.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

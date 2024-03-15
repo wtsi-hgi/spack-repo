@@ -13,7 +13,7 @@ class RSeq2pathway(RPackage):
 	"""
 	
 	bioc = "seq2pathway" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/seq2pathway_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/seq2pathway/seq2pathway_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seq2pathway_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seq2pathway/seq2pathway_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="4aaa34232c40fdc31f493d67c72742c4")
 

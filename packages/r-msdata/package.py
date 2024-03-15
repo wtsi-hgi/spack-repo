@@ -13,7 +13,7 @@ class RMsdata(RPackage):
 	"""
 	
 	bioc = "msdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/msdata_0.42.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/msdata/msdata_0.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/msdata_0.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/msdata/msdata_0.42.0.tar.gz"]
 
 	version("0.42.0", md5="3ef7fea0866799a767fb8ac2d1da0a16")
 

@@ -13,7 +13,7 @@ class RGrenits(RPackage):
 	"""
 	
 	bioc = "GRENITS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GRENITS_1.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GRENITS/GRENITS_1.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GRENITS_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GRENITS/GRENITS_1.54.0.tar.gz"]
 
 	version("1.54.0", md5="fd00e191f8c57c6ef54146263d21a089")
 

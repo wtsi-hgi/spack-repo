@@ -21,14 +21,14 @@ class RMazamatimeseries(RPackage):
 	homepage = "https://github.com/MazamaScience/MazamaTimeSeries"
 	cran = "MazamaTimeSeries" 
 
-	version("0.2.16", md5="f9693f05ebcebe25fdd06c16aa516438")
+	version("0.3.0", md5="a1861d6c8c11885c66eefe54cf5f4a18")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-geodist", type=("build", "run"))
 	depends_on("r-lubridate", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-mazamacoreutils@0.4.15:", type=("build", "run"))
+	depends_on("r-mazamacoreutils@0.5.2:", type=("build", "run"))
 	depends_on("r-mazamarollutils@0.1.3:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))

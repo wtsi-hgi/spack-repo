@@ -14,7 +14,7 @@ class RRmpw(RPackage):
 	
 	cran = "rmpw" 
 
-	version("0.0.4", md5="55e45868d39c91130675f673b1cba60e")
+	version("0.0.5", md5="cb46abc8e1bd93b9331944367e55af8e")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-gtools", type=("build", "run"))

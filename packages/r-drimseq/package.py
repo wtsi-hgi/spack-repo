@@ -13,7 +13,7 @@ class RDrimseq(RPackage):
 	"""
 	
 	bioc = "DRIMSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DRIMSeq_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DRIMSeq/DRIMSeq_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DRIMSeq_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DRIMSeq/DRIMSeq_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="fae7a1b0945b2942ef3f633d68a74fd2")
 

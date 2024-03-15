@@ -13,7 +13,7 @@ class RTfutils(RPackage):
 	"""
 	
 	bioc = "TFutils" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TFutils_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TFutils/TFutils_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFutils_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFutils/TFutils_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="a2e83bbaafa0e47d7dbbd17385bd15fb")
 

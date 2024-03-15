@@ -14,7 +14,7 @@ class RYamss(RPackage):
 	
 	homepage = "https://github.com/hansenlab/yamss"
 	bioc = "yamss" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/yamss_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/yamss/yamss_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/yamss_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/yamss/yamss_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="a60cfddcf6749fc165badbe9a0f8a311")
 

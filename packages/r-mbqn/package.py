@@ -14,7 +14,7 @@ class RMbqn(RPackage):
 	
 	homepage = "https://github.com/arianeschad/mbqn"
 	bioc = "MBQN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MBQN_2.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MBQN/MBQN_2.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MBQN_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MBQN/MBQN_2.14.0.tar.gz"]
 
 	version("2.14.0", md5="e48e4ebcd3b69b82559496b66ca4cf44")
 

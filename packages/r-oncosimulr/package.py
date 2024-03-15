@@ -14,7 +14,7 @@ class ROncosimulr(RPackage):
 	
 	homepage = "https://github.com/rdiaz02/OncoSimul"
 	bioc = "OncoSimulR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/OncoSimulR_4.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/OncoSimulR/OncoSimulR_4.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OncoSimulR_4.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OncoSimulR/OncoSimulR_4.4.0.tar.gz"]
 
 	version("4.4.0", md5="9b908040a100f075d4f2493ec3c1fa85")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -22,6 +22,8 @@ class RSatellite(RPackage):
 	Landsat Global Land Survey data set."""
 
 	cran = "satellite"
+
+	license("MIT")
 
 	version("1.0.5", md5="683efe04314308728164263be4194a16")
 

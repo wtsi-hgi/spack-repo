@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,8 @@ class RCaretensemble(RPackage):
 	models using a GLM."""
 
 	cran = "caretEnsemble"
+
+	license("MIT")
 
 	version("2.0.3", md5="85932479e273cf59b579a037442b7619")
 

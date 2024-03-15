@@ -14,7 +14,7 @@ class RPlgem(RPackage):
 	
 	homepage = "http://www.genopolis.it"
 	bioc = "plgem" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/plgem_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/plgem/plgem_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/plgem_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/plgem/plgem_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="caa3e3fe048da49643b34bde9fcb834a")
 

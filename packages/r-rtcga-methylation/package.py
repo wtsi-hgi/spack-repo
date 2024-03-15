@@ -13,7 +13,7 @@ class RRtcgaMethylation(RPackage):
 	"""
 	
 	bioc = "RTCGA.methylation" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RTCGA.methylation_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/RTCGA.methylation/RTCGA.methylation_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.methylation_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.methylation/RTCGA.methylation_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="9d90704cb34a57878ef719348489c702")
 

@@ -13,7 +13,7 @@ class RInpower(RPackage):
 	"""
 	
 	bioc = "INPower" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/INPower_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/INPower/INPower_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/INPower_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/INPower/INPower_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="3b769c08ded506c713da036c30fe4da9")
 

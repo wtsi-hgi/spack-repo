@@ -13,7 +13,7 @@ class RFunchip(RPackage):
 	"""
 	
 	bioc = "FunChIP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/FunChIP_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/FunChIP/FunChIP_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FunChIP_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FunChIP/FunChIP_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="93a91487d2e6b0841094c9eb7c997be2")
 

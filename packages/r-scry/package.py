@@ -14,7 +14,7 @@ class RScry(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/scry.html"
 	bioc = "scry" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scry_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scry/scry_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scry_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scry/scry_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="dbdcf37d35f52ba787d1d8d5f21e886e")
 

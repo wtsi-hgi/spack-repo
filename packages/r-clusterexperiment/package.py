@@ -13,7 +13,7 @@ class RClusterexperiment(RPackage):
 	"""
 	
 	bioc = "clusterExperiment" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/clusterExperiment_2.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/clusterExperiment/clusterExperiment_2.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clusterExperiment_2.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clusterExperiment/clusterExperiment_2.22.0.tar.gz"]
 
 	version("2.22.0", md5="0a4bac02f2b310d941afe62b329e7eee")
 

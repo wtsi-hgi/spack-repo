@@ -13,7 +13,7 @@ class REasierdata(RPackage):
 	"""
 	
 	bioc = "easierData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/easierData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/easierData/easierData_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/easierData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/easierData/easierData_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="5092649863b833021ff8593731571183")
 

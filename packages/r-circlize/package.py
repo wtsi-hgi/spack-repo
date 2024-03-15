@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -22,6 +22,8 @@ class RCirclize(RPackage):
 	<doi:10.1093/bioinformatics/btu393>."""
 
 	cran = "circlize"
+
+	license("MIT")
 
 	version("0.4.16", md5="b71bcb6a045be622a67359ce537e1ee4")
 

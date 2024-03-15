@@ -25,15 +25,15 @@ class RFlextable(RPackage):
 	homepage = "https://ardata-fr.github.io/flextable-book/"
 	cran = "flextable" 
 
-	version("0.9.4", md5="6136f0e007856ed030bc6f537e15aa4b")
+	version("0.9.5", md5="6c2d389406b40e88f4f01e32f9af2ca9")
 
 	depends_on("r-rmarkdown", type=("build", "run"))
 	depends_on("r-knitr", type=("build", "run"))
 	depends_on("r-htmltools", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-ragg", type=("build", "run"))
-	depends_on("r-officer@0.6.2:", type=("build", "run"))
-	depends_on("r-gdtools@0.3.3:", type=("build", "run"))
+	depends_on("r-officer@0.6.5:", type=("build", "run"))
+	depends_on("r-gdtools@0.3.6:", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))
 	depends_on("r-data-table@1.13:", type=("build", "run"))
 	depends_on("r-uuid@0.1.4:", type=("build", "run"))

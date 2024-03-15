@@ -13,9 +13,9 @@ class RAnophelesDb0(RPackage):
 	"""
 	
 	bioc = "anopheles.db0" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/anopheles.db0_3.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/anopheles.db0/anopheles.db0_3.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/anopheles.db0_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/anopheles.db0/anopheles.db0_3.18.0.tar.gz"]
 
-	version("3.18.0", md5="cd7b03fffb4ffd0cf0877a55a3636d93", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/anopheles.db0_3.18.0.tar.gz")
+	version("3.18.0", md5="cd7b03fffb4ffd0cf0877a55a3636d93", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/anopheles.db0_3.18.0.tar.gz")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))

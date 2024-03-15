@@ -13,7 +13,7 @@ class RCellmapper(RPackage):
 	"""
 	
 	bioc = "CellMapper" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CellMapper_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CellMapper/CellMapper_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellMapper_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellMapper/CellMapper_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="ca94af55dbc55bb2bf40c69f4965b553")
 

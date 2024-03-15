@@ -13,7 +13,7 @@ class RGeneplastData(RPackage):
 	"""
 	
 	bioc = "geneplast.data" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/geneplast.data_0.99.9.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/geneplast.data/geneplast.data_0.99.9.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/geneplast.data_0.99.9.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/geneplast.data/geneplast.data_0.99.9.tar.gz"]
 
 	version("0.99.9", md5="762508b9b49ce5a16474adcfcacbf395")
 

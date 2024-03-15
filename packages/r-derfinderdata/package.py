@@ -14,7 +14,7 @@ class RDerfinderdata(RPackage):
 	
 	homepage = "https://github.com/leekgroup/derfinderData"
 	bioc = "derfinderData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/derfinderData_2.20.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/derfinderData/derfinderData_2.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/derfinderData_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/derfinderData/derfinderData_2.20.0.tar.gz"]
 
 	version("2.20.0", md5="032efff51d29eae3fc1a5e032c0f3c40")
 

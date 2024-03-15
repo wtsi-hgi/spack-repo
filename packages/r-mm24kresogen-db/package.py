@@ -13,7 +13,7 @@ class RMm24kresogenDb(RPackage):
 	"""
 	
 	bioc = "mm24kresogen.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mm24kresogen.db_2.5.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mm24kresogen.db/mm24kresogen.db_2.5.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mm24kresogen.db_2.5.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mm24kresogen.db/mm24kresogen.db_2.5.0.tar.gz"]
 
 	version("2.5.0", md5="437f5d4bc225ee500af1ecc2d4da472b")
 

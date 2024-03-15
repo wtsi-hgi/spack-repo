@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,6 +16,8 @@ class RPromises(RPackage):
 	promises, but with a syntax that is idiomatic R."""
 
 	cran = "promises"
+
+	license("MIT")
 
 	version("1.2.1", md5="0332949e499adeb8ede2d583d813b6c5")
 

@@ -14,7 +14,7 @@ class RPhantasuslite(RPackage):
 	
 	homepage = "https://github.com/ctlab/phantasusLite/"
 	bioc = "phantasusLite" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/phantasusLite_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/phantasusLite/phantasusLite_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phantasusLite_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phantasusLite/phantasusLite_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="5fe0e101ac53a89dd49e077d5fb4c07d")
 

@@ -14,7 +14,7 @@ class RRnaseqgene(RPackage):
 	
 	homepage = "https://github.com/thelovelove/rnaseqGene/"
 	bioc = "rnaseqGene" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/rnaseqGene_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/rnaseqGene/rnaseqGene_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/rnaseqGene_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/rnaseqGene/rnaseqGene_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="f9c7d11b3e3b09715126d136b50a37a7")
 

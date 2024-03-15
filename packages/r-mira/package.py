@@ -14,7 +14,7 @@ class RMira(RPackage):
 	
 	homepage = "http://databio.org/mira"
 	bioc = "MIRA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MIRA_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MIRA/MIRA_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MIRA_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MIRA/MIRA_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="670cb42f275d260b28e0e2d140cacda2")
 

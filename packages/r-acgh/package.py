@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,7 @@ class RAcgh(RPackage):
 	plotting aCGH objects."""
 
 	bioc = "aCGH"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/aCGH_1.80.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/aCGH/aCGH_1.80.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/aCGH_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/aCGH/aCGH_1.80.0.tar.gz"]
 
 	version("1.80.0", md5="137af76dc5756a83094da18eb0bededa")
 

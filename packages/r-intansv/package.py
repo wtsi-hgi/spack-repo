@@ -13,7 +13,7 @@ class RIntansv(RPackage):
 	"""
 	
 	bioc = "intansv" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/intansv_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/intansv/intansv_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/intansv_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/intansv/intansv_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="d23f9f69f23ab113ea9ac7100cafb3f1")
 

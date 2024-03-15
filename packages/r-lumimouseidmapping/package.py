@@ -13,7 +13,7 @@ class RLumimouseidmapping(RPackage):
 	"""
 	
 	bioc = "lumiMouseIDMapping" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/lumiMouseIDMapping_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/lumiMouseIDMapping/lumiMouseIDMapping_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/lumiMouseIDMapping_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/lumiMouseIDMapping/lumiMouseIDMapping_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="305aba80ebf6ef4c26899302ea9e50e8")
 

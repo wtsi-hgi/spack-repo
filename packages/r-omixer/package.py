@@ -13,7 +13,7 @@ class ROmixer(RPackage):
 	"""
 	
 	bioc = "Omixer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Omixer_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Omixer/Omixer_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Omixer_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Omixer/Omixer_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="6360569495c662f2c34c86dbd7387f4a")
 

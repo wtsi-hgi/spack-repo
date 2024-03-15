@@ -13,7 +13,7 @@ class RCanine2probe(RPackage):
 	"""
 	
 	bioc = "canine2probe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/canine2probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/canine2probe/canine2probe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/canine2probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/canine2probe/canine2probe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="7de0f4ea616e8662dc2eaa9ab78d1f13")
 

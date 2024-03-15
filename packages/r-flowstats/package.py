@@ -14,7 +14,7 @@ class RFlowstats(RPackage):
 	
 	homepage = "http://www.github.com/RGLab/flowStats"
 	bioc = "flowStats" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowStats_4.14.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowStats/flowStats_4.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowStats_4.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowStats/flowStats_4.14.1.tar.gz"]
 
 	version("4.14.1", md5="33cc73524307a1e9441810c8b1daad31")
 

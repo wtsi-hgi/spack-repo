@@ -10,11 +10,11 @@ class RAhmle(RPackage):
 	"""Methods for the Additive Hazard Model
 
 	Methods for fitting additive hazards model.
-             Perform the maximum likelihood method as well as the traditional Aalen's method for estimating the additive hazards model. 
-             For details see Chengyuan Lu(2021) <arXiv:2004.06156>. 
+			 Perform the maximum likelihood method as well as the traditional Aalen's method for estimating the additive hazards model. 
+			 For details see Chengyuan Lu(2021) <arXiv:2004.06156>. 
 	"""
 	
-	cran = "ahMLE" 
+	cran = "ahMLE"
 
 	version("1.20.1", md5="6243dddac564f76112922b253f1088ed")
 

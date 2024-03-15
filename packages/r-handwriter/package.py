@@ -10,19 +10,18 @@ class RHandwriter(RPackage):
 	"""Handwriting Analysis in R
 
 	Perform statistical writership analysis of scanned handwritten documents.
-             Webpage provided at: <https://csafe-isu.github.io/handwriter/index.html>.
+             Webpage provided at: <https://github.com/CSAFE-ISU/handwriter>.
 	"""
 	
 	homepage = "https://github.com/CSAFE-ISU/handwriter"
 	cran = "handwriter" 
 
-	version("2.0.3", md5="7a411d25ebe65d01812420acd451655e")
+	version("3.0.0", md5="ac2ad84267ff8b6a29f1cb52a2999a4c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-foreach", type=("build", "run"))
-	depends_on("r-futile-logger", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))
 	depends_on("r-lpsolve", type=("build", "run"))

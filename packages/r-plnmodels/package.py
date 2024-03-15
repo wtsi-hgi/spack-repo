@@ -20,7 +20,7 @@ class RPlnmodels(RPackage):
 	homepage = "https://pln-team.github.io/PLNmodels/"
 	cran = "PLNmodels" 
 
-	version("1.1.0", md5="2a2232c3c46e9614e1e5a9546517f190")
+	version("1.2.0", md5="aafbc099db10212c0b79703856568d33")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
@@ -28,6 +28,7 @@ class RPlnmodels(RPackage):
 	depends_on("r-future-apply", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))
 	depends_on("r-glassofast", type=("build", "run"))
+	depends_on("r-pscl", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-nloptr", type=("build", "run"))

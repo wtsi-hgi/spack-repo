@@ -13,7 +13,7 @@ class RDaglogo(RPackage):
 	"""
 	
 	bioc = "dagLogo" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/dagLogo_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/dagLogo/dagLogo_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dagLogo_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dagLogo/dagLogo_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="cb8662ee04599fa0076e344d2bf933d1")
 

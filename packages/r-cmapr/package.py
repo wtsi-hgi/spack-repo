@@ -14,7 +14,7 @@ class RCmapr(RPackage):
 	
 	homepage = "https://github.com/cmap/cmapR"
 	bioc = "cmapR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cmapR_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cmapR/cmapR_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cmapR_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cmapR/cmapR_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="257c275c11341cac65aae8f0d8cd4e2f")
 

@@ -14,7 +14,7 @@ class RDdpcrclust(RPackage):
 	
 	homepage = "https://github.com/bgbrink/ddPCRclust"
 	bioc = "ddPCRclust" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ddPCRclust_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ddPCRclust/ddPCRclust_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ddPCRclust_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ddPCRclust/ddPCRclust_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="63c29b24786957fcb604e73a61066e47")
 

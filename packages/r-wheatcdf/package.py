@@ -13,7 +13,7 @@ class RWheatcdf(RPackage):
 	"""
 	
 	bioc = "wheatcdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/wheatcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/wheatcdf/wheatcdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/wheatcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/wheatcdf/wheatcdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="0abeeeb9700b8d93a1a83769bdd8480f")
 

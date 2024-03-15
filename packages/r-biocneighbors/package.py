@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -20,7 +20,7 @@ class RBiocneighbors(RPackage):
 	within a given distance."""
 
 	bioc = "BiocNeighbors"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiocNeighbors_1.20.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiocNeighbors/BiocNeighbors_1.20.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocNeighbors_1.20.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocNeighbors/BiocNeighbors_1.20.2.tar.gz"]
 
 	version("1.20.2", md5="60f1ea60fb00cfd92dfa247765da9204")
 

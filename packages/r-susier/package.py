@@ -28,7 +28,6 @@ class RSusier(RPackage):
 	cran = "susieR" 
 
 	version("0.12.35", md5="fc23e4b323b0bf1df46818aae69ade3a")
-	version("0.12.27", sha256="af2577a6615ad529486e1b32cc843f978da9c4ed0e477722c6a7d08420c212f3")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

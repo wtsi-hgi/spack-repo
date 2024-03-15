@@ -13,7 +13,7 @@ class RPlier(RPackage):
 	"""
 	
 	bioc = "plier" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/plier_1.72.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/plier/plier_1.72.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/plier_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/plier/plier_1.72.0.tar.gz"]
 
 	version("1.72.0", md5="f16a09bf8bccc7f5596d55ed0577a593")
 

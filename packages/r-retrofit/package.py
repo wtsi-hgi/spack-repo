@@ -14,7 +14,7 @@ class RRetrofit(RPackage):
 	
 	homepage = "https://github.com/qunhualilab/retrofit"
 	bioc = "retrofit" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/retrofit_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/retrofit/retrofit_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/retrofit_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/retrofit/retrofit_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="2b804a752a293f14495e94adb39df466")
 

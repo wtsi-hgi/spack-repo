@@ -13,7 +13,7 @@ class RPorcineprobe(RPackage):
 	"""
 	
 	bioc = "porcineprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/porcineprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/porcineprobe/porcineprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/porcineprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/porcineprobe/porcineprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="5ac483b6329a012d4c9954e3dee8869e")
 

@@ -15,6 +15,6 @@ Monte Carlo in Gaussian Mixture Models
 	
 	cran = "bayesanova" 
 
-	version("1.5", md5="43a6c2dca8339f59d761f97435d18e54")
+	version("1.6", md5="f7fcd9ef9889fb52a8252a6214294db4")
 
 	depends_on("r-mcmcpack", type=("build", "run"))

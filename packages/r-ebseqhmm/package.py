@@ -13,7 +13,7 @@ class REbseqhmm(RPackage):
 	"""
 	
 	bioc = "EBSeqHMM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EBSeqHMM_1.35.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EBSeqHMM/EBSeqHMM_1.35.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EBSeqHMM_1.35.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EBSeqHMM/EBSeqHMM_1.35.0.tar.gz"]
 
 	version("1.35.0", md5="d63f173eea402bf0e63ed7018c66d4d2")
 

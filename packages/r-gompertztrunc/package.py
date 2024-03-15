@@ -10,15 +10,15 @@ class RGompertztrunc(RPackage):
 	"""Conducting Maximum Likelihood Estimation with Truncated
 Mortality Data
 
-	Estimates hazard ratios and mortality
-    differentials for doubly-truncated data without population
-    denominators.
+	Estimates hazard ratios and mortality differentials for
+    doubly-truncated data without population denominators. This method is
+    described in Goldstein et al. (2023) <doi:10.1007/s11113-023-09785-z>.
 	"""
 	
 	homepage = "https://caseybreen.github.io/gompertztrunc/"
 	cran = "gompertztrunc" 
 
-	version("0.1.1", md5="10f8c465fc75bd491d4cf8bcd74a345d")
+	version("0.1.2", md5="5700c924187dd0733b23482200e1b817")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))

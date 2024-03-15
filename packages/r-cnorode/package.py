@@ -13,7 +13,7 @@ class RCnorode(RPackage):
 	"""
 	
 	bioc = "CNORode" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CNORode_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CNORode/CNORode_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNORode_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNORode/CNORode_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="e93b3e3437c26f6cfab6690f78c6a6cc")
 

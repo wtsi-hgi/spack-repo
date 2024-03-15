@@ -13,7 +13,7 @@ class REcoliasv2probe(RPackage):
 	"""
 	
 	bioc = "ecoliasv2probe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ecoliasv2probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/ecoliasv2probe/ecoliasv2probe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ecoliasv2probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ecoliasv2probe/ecoliasv2probe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="b3e4332266184576279c3a478f286dc9")
 

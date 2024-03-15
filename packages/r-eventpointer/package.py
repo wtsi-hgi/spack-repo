@@ -13,7 +13,7 @@ class REventpointer(RPackage):
 	"""
 	
 	bioc = "EventPointer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EventPointer_3.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EventPointer/EventPointer_3.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EventPointer_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EventPointer/EventPointer_3.10.0.tar.gz"]
 
 	version("3.10.0", md5="d25561e0288a54ed43c823b371941972")
 

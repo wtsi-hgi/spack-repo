@@ -15,20 +15,20 @@ class RGgedit(RPackage):
 	homepage = "https://github.com/yonicd/ggedit"
 	cran = "ggedit" 
 
-	version("0.3.1", md5="75ccee113781e4f9cb538db308806b6c")
+	version("0.4.1", md5="793819ddbcb705ab9e5792340085a213")
 
-	depends_on("r@3.2:", type=("build", "run"))
-	depends_on("r-ggplot2@3:", type=("build", "run"))
-	depends_on("r-dplyr@1:", type=("build", "run"))
+	depends_on("r@4.3:", type=("build", "run"))
+	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))
+	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
+	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))
 	depends_on("r-rstudioapi", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))
 	depends_on("r-miniui", type=("build", "run"))
 	depends_on("r-shinybs", type=("build", "run"))
-	depends_on("r-colourpicker@0.2:", type=("build", "run"))
+	depends_on("r-colourpicker", type=("build", "run"))
 	depends_on("r-shinyace", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))

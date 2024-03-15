@@ -14,7 +14,7 @@ class RKidpack(RPackage):
 	
 	homepage = "http://www.dkfz.de/mga"
 	bioc = "kidpack" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/kidpack_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/kidpack/kidpack_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/kidpack_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/kidpack/kidpack_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="26f5ad5fba1c63156e282d8eac7ac385")
 

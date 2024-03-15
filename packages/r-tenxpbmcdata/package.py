@@ -13,7 +13,7 @@ class RTenxpbmcdata(RPackage):
 	"""
 	
 	bioc = "TENxPBMCData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/TENxPBMCData_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/TENxPBMCData/TENxPBMCData_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TENxPBMCData_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TENxPBMCData/TENxPBMCData_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="3e6c961a01998667f37de542858dbc09")
 

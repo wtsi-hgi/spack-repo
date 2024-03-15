@@ -13,7 +13,7 @@ class RSynapterdata(RPackage):
 	"""
 	
 	bioc = "synapterdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/synapterdata_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/synapterdata/synapterdata_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/synapterdata_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/synapterdata/synapterdata_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="255aa756f0b6c0c1d95cdfbc889a67a2")
 

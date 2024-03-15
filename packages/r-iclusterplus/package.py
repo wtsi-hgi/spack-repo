@@ -13,7 +13,7 @@ class RIclusterplus(RPackage):
 	"""
 	
 	bioc = "iClusterPlus" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iClusterPlus_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iClusterPlus/iClusterPlus_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iClusterPlus_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iClusterPlus/iClusterPlus_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="133b682823ec6ab41f6f6579413d461d")
 

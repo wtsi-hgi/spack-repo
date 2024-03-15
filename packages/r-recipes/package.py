@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,6 +16,8 @@ class RRecipes(RPackage):
 	as inputs into statistical or machine learning models."""
 
 	cran = "recipes"
+
+	license("MIT")
 
 	version("1.0.10", md5="678b530e6c97ca93445dc99cf69fe7b5")
 

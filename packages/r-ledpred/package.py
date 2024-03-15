@@ -13,7 +13,7 @@ class RLedpred(RPackage):
 	"""
 	
 	bioc = "LedPred" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/LedPred_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/LedPred/LedPred_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LedPred_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LedPred/LedPred_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="4a083c0408938618b62557ece5682e61")
 

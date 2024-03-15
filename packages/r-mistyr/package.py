@@ -14,7 +14,7 @@ class RMistyr(RPackage):
 	
 	homepage = "https://saezlab.github.io/mistyR/"
 	bioc = "mistyR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mistyR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mistyR/mistyR_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mistyR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mistyR/mistyR_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="f21483e1d8c9575d0c27a9fa544cfb3c")
 

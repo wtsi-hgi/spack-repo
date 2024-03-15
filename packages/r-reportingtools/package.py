@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -22,7 +22,7 @@ class RReportingtools(RPackage):
 	http:// research-pub.gene.com/ReportingTools."""
 
 	bioc = "ReportingTools"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ReportingTools_2.42.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ReportingTools/ReportingTools_2.42.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ReportingTools_2.42.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ReportingTools/ReportingTools_2.42.3.tar.gz"]
 
 	version("2.42.3", md5="71afa63c0311b91a64a17d476a16eb44")
 

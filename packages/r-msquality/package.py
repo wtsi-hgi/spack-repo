@@ -14,9 +14,9 @@ class RMsquality(RPackage):
 	
 	homepage = "https://www.github.com/tnaake/MsQuality/"
 	bioc = "MsQuality" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MsQuality_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MsQuality/MsQuality_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsQuality_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsQuality/MsQuality_1.2.1.tar.gz"]
 
-	version("1.2.0", md5="1d8e2101f472e8fc93bfa275db511982")
+	version("1.2.1", md5="8eeb5c16239c807ddddd36ae1b5026fa")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocparallel@1.32:", type=("build", "run"))

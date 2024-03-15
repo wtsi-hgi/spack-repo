@@ -14,7 +14,7 @@ class RFeatseekr(RPackage):
 	
 	homepage = "https://github.com/tcapraz/FeatSeekR"
 	bioc = "FeatSeekR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/FeatSeekR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/FeatSeekR/FeatSeekR_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FeatSeekR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FeatSeekR/FeatSeekR_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="9792a703c1ec0b4a58c759274c2cb571")
 

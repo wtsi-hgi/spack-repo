@@ -14,7 +14,7 @@ class RDapardata(RPackage):
 	
 	homepage = "http://www.prostar-proteomics.org/"
 	bioc = "DAPARdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/DAPARdata_1.32.1.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/DAPARdata/DAPARdata_1.32.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DAPARdata_1.32.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DAPARdata/DAPARdata_1.32.1.tar.gz"]
 
 	version("1.32.1", md5="e8639f86e3531691502e4221bfb02d84")
 

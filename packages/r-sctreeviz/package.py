@@ -13,7 +13,7 @@ class RSctreeviz(RPackage):
 	"""
 	
 	bioc = "scTreeViz" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scTreeViz_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scTreeViz/scTreeViz_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scTreeViz_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scTreeViz/scTreeViz_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="9e1a317862ad079f52876f54d7160bde")
 

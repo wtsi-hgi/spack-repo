@@ -13,7 +13,7 @@ class RHicdcplus(RPackage):
 	"""
 	
 	bioc = "HiCDCPlus" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HiCDCPlus_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HiCDCPlus/HiCDCPlus_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiCDCPlus_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiCDCPlus/HiCDCPlus_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="d129ae6d6c11f6f92e52399c46754b1f")
 

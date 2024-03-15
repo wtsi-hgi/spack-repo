@@ -14,7 +14,7 @@ class RSmacof(RPackage):
 	
 	cran = "smacof" 
 
-	version("2.1-5", md5="4f40e897c4dfe3c3336bc4e8c3e6aec0")
+	version("2.1-6", md5="2fa58efcef18c1e5b7442823f1ec01f6")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-plotrix", type=("build", "run"))

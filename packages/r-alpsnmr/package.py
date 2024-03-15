@@ -14,7 +14,7 @@ class RAlpsnmr(RPackage):
 	
 	homepage = "https://sipss.github.io/AlpsNMR/"
 	bioc = "AlpsNMR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AlpsNMR_4.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AlpsNMR/AlpsNMR_4.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AlpsNMR_4.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AlpsNMR/AlpsNMR_4.4.0.tar.gz"]
 
 	version("4.4.0", md5="938d77895e6337a35d98b6a57fa90303")
 

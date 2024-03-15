@@ -14,7 +14,7 @@ class RMagar(RPackage):
 	
 	homepage = "https://github.com/MPIIComputationalEpigenetics/MAGAR"
 	bioc = "MAGAR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MAGAR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MAGAR/MAGAR_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MAGAR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MAGAR/MAGAR_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="27ccb3bf6acaabe9b9d29b52f9d98213")
 

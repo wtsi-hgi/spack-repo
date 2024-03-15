@@ -14,7 +14,7 @@ class REpimutacionsdata(RPackage):
 	
 	homepage = "https://github.com/LeireAbarrategui/epimutacionsData"
 	bioc = "epimutacionsData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/epimutacionsData_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/epimutacionsData/epimutacionsData_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/epimutacionsData_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/epimutacionsData/epimutacionsData_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="e2681ab8096fd0f2b7e5d8ed68928280")
 

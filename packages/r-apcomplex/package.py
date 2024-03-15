@@ -13,7 +13,7 @@ class RApcomplex(RPackage):
 	"""
 	
 	bioc = "apComplex" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/apComplex_2.68.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/apComplex/apComplex_2.68.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/apComplex_2.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/apComplex/apComplex_2.68.0.tar.gz"]
 
 	version("2.68.0", md5="03418539dfa5904bf05f430718789fde")
 

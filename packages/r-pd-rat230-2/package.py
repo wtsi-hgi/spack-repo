@@ -13,9 +13,9 @@ class RPdRat2302(RPackage):
 	"""
 	
 	bioc = "pd.rat230.2" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.rat230.2_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.rat230.2/pd.rat230.2_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rat230.2_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rat230.2/pd.rat230.2_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="286b1a7868ef6c795ebeb6dd8a5d5920", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.rat230.2_3.12.0.tar.gz")
+	version("3.12.0", md5="286b1a7868ef6c795ebeb6dd8a5d5920", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rat230.2_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

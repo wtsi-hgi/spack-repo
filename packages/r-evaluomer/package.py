@@ -14,7 +14,7 @@ class REvaluomer(RPackage):
 	
 	homepage = "https://github.com/neobernad/evaluomeR"
 	bioc = "evaluomeR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/evaluomeR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/evaluomeR/evaluomeR_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/evaluomeR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/evaluomeR/evaluomeR_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="2cee372b9bb28916d6ab543be8eca9b2")
 

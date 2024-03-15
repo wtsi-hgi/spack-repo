@@ -14,7 +14,7 @@ class RSimpleseg(RPackage):
 	
 	homepage = "https://sydneybiox.github.io/simpleSeg/"
 	bioc = "simpleSeg" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/simpleSeg_1.4.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/simpleSeg/simpleSeg_1.4.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/simpleSeg_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/simpleSeg/simpleSeg_1.4.1.tar.gz"]
 
 	version("1.4.1", md5="bd0a780ed7dfde71db7ecdf2cee30b0c")
 

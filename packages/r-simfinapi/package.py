@@ -18,14 +18,12 @@ class RSimfinapi(RPackage):
 	homepage = "https://github.com/matthiasgomolka/simfinapi"
 	cran = "simfinapi" 
 
-	version("0.2.4", md5="c8dce2b941b3f3ed4ea81c8d264f7038")
+	version("1.0.0", md5="45b1c4ce02eea7bc3bf9e5a18bc0fe99")
 
 	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-bit64", type=("build", "run"))
 	depends_on("r-checkmate@2:", type=("build", "run"))
 	depends_on("r-data-table@1.12.8:", type=("build", "run"))
-	depends_on("r-future-apply@1.4:", type=("build", "run"))
-	depends_on("r-httr", type=("build", "run"))
+	depends_on("r-httr2", type=("build", "run"))
+	depends_on("r-lifecycle", type=("build", "run"))
 	depends_on("r-memoise@1.1:", type=("build", "run"))
-	depends_on("r-progressr", type=("build", "run"))
 	depends_on("r-rcppsimdjson@0.1.1:", type=("build", "run"))

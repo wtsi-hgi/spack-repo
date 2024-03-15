@@ -14,7 +14,7 @@ class RGenetclassifier(RPackage):
 	
 	homepage = "http://www.cicancer.org"
 	bioc = "geNetClassifier" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/geNetClassifier_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/geNetClassifier/geNetClassifier_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geNetClassifier_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geNetClassifier/geNetClassifier_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="7fed3e42e9ec93956b71960e271aa090")
 

@@ -13,7 +13,7 @@ class RAffixcan(RPackage):
 	"""
 	
 	bioc = "AffiXcan" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AffiXcan_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AffiXcan/AffiXcan_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AffiXcan_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AffiXcan/AffiXcan_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="0fdb85714a4ee94e3c04117e56d35724")
 

@@ -13,7 +13,7 @@ class RHd2013sgi(RPackage):
 	"""
 	
 	bioc = "HD2013SGI" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/HD2013SGI_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/HD2013SGI/HD2013SGI_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HD2013SGI_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HD2013SGI/HD2013SGI_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="f8c7020a4fbfcb5c4026cea93e5a5bc6")
 

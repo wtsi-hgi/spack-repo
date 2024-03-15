@@ -23,7 +23,7 @@ class RScdhlm(RPackage):
 	homepage = "https://jepusto.github.io/scdhlm/"
 	cran = "scdhlm" 
 
-	version("0.7.2", md5="4bd18795eab6499a93e533823fc65d2b")
+	version("0.7.3", md5="d21c76194ab9a6b60dd09664cc274a5e")
 
 	depends_on("r-nlme", type=("build", "run"))
 	depends_on("r@3.0.1:", type=("build", "run"))

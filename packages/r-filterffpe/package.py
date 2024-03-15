@@ -13,7 +13,7 @@ class RFilterffpe(RPackage):
 	"""
 	
 	bioc = "FilterFFPE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/FilterFFPE_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/FilterFFPE/FilterFFPE_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FilterFFPE_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FilterFFPE/FilterFFPE_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="e2aabe533af9d2779d1ffc2f76017ecd")
 

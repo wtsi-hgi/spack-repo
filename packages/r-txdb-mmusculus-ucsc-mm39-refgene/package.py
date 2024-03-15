@@ -13,7 +13,7 @@ class RTxdbMmusculusUcscMm39Refgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Mmusculus.UCSC.mm39.refGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Mmusculus.UCSC.mm39.refGene_3.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Mmusculus.UCSC.mm39.refGene/TxDb.Mmusculus.UCSC.mm39.refGene_3.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Mmusculus.UCSC.mm39.refGene_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Mmusculus.UCSC.mm39.refGene/TxDb.Mmusculus.UCSC.mm39.refGene_3.18.0.tar.gz"]
 
 	version("3.18.0", md5="2fd64557d5f1bade11432b666c63f33a")
 

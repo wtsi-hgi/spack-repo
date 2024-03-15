@@ -13,7 +13,7 @@ class RGigseadata(RPackage):
 	"""
 	
 	bioc = "GIGSEAdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/GIGSEAdata_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/GIGSEAdata/GIGSEAdata_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GIGSEAdata_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GIGSEAdata/GIGSEAdata_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="470cdb6073d9af3d23056b55e6b8c98d")
 

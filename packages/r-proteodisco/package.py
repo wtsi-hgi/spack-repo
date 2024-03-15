@@ -14,7 +14,7 @@ class RProteodisco(RPackage):
 	
 	homepage = "https://github.com/ErasmusMC-CCBC/ProteoDisco"
 	bioc = "ProteoDisco" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ProteoDisco_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ProteoDisco/ProteoDisco_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ProteoDisco_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ProteoDisco/ProteoDisco_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="f69597248b6cbbdb2c1029a1dd3b39cd")
 

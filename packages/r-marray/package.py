@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,9 @@ class RMarray(RPackage):
 	input, diagnostic plots, normalization and quality checking."""
 
 	bioc = "marray"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/marray_1.80.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/marray/marray_1.80.0.tar.gz"]
+
+	license("GPL-2.0-or-later")
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/marray_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/marray/marray_1.80.0.tar.gz"]
 
 	version("1.80.0", md5="569b373e346d36964430d249d075cf07")
 

@@ -15,7 +15,7 @@ Download
 	
 	cran = "RWsearch" 
 
-	version("5.0.5", md5="ea8ee3157119a855f997d0e0eb8e3eef")
+	version("5.1.4", md5="8d16a7fb6649c55e6ff43eb603ad45b5")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-brew", type=("build", "run"))

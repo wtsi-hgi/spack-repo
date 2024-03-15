@@ -13,7 +13,7 @@ class RTofsimsdata(RPackage):
 	"""
 	
 	bioc = "tofsimsData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/tofsimsData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/tofsimsData/tofsimsData_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tofsimsData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tofsimsData/tofsimsData_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="57fe35de7b03ee4f3ca07540949a6b5e")
 

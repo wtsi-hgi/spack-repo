@@ -14,7 +14,7 @@ class RMipp(RPackage):
 	
 	homepage = "http://www.healthsystem.virginia.edu/internet/hes/biostat/bioinformatics/"
 	bioc = "MiPP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MiPP_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MiPP/MiPP_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MiPP_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MiPP/MiPP_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="ce412e2a72891fcc7969faee078b2be3")
 

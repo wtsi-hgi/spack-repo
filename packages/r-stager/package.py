@@ -13,7 +13,7 @@ class RStager(RPackage):
 	"""
 	
 	bioc = "stageR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/stageR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/stageR/stageR_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/stageR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/stageR/stageR_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="cdbf6ab3c35c3e019b0ce786ad85eb38")
 

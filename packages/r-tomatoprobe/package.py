@@ -13,7 +13,7 @@ class RTomatoprobe(RPackage):
 	"""
 	
 	bioc = "tomatoprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/tomatoprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/tomatoprobe/tomatoprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/tomatoprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/tomatoprobe/tomatoprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="72020469f35c19399fd0be9eaffd8e77")
 

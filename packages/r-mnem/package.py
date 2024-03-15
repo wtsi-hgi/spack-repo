@@ -14,7 +14,7 @@ class RMnem(RPackage):
 	
 	homepage = "https://github.com/cbg-ethz/mnem/"
 	bioc = "mnem" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mnem_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mnem/mnem_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mnem_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mnem/mnem_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="630cb52a48148dc82038613aacb4e834")
 

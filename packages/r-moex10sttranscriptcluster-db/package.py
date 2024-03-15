@@ -13,7 +13,7 @@ class RMoex10sttranscriptclusterDb(RPackage):
 	"""
 	
 	bioc = "moex10sttranscriptcluster.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/moex10sttranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/moex10sttranscriptcluster.db/moex10sttranscriptcluster.db_8.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/moex10sttranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/moex10sttranscriptcluster.db/moex10sttranscriptcluster.db_8.8.0.tar.gz"]
 
 	version("8.8.0", md5="bc3357b3c77ab7bf1dfb66f5f7da36ec")
 

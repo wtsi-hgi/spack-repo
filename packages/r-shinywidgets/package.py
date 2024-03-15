@@ -16,7 +16,7 @@ class RShinywidgets(RPackage):
 	homepage = "https://github.com/dreamRs/shinyWidgets"
 	cran = "shinyWidgets" 
 
-	version("0.8.1", md5="04c0c3772e7bc1c096bd5478ee9e5bae")
+	version("0.8.2", md5="846d86c476ff776502fb86785a77282b")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-anytime", type=("build", "run"))

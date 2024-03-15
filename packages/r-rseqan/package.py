@@ -13,7 +13,7 @@ class RRseqan(RPackage):
 	"""
 	
 	bioc = "RSeqAn" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RSeqAn_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RSeqAn/RSeqAn_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RSeqAn_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RSeqAn/RSeqAn_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="278ce2c8087516d02a4203bdcf9a6b9f")
 

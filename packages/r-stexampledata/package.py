@@ -14,7 +14,7 @@ class RStexampledata(RPackage):
 	
 	homepage = "https://github.com/lmweber/STexampleData"
 	bioc = "STexampleData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/STexampleData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/STexampleData/STexampleData_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/STexampleData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/STexampleData/STexampleData_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="5fa4bfb2e58e7f6bbcd957aa1aa7e938")
 

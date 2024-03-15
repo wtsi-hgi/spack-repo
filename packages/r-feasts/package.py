@@ -18,7 +18,7 @@ class RFeasts(RPackage):
 	homepage = "http://feasts.tidyverts.org/"
 	cran = "feasts" 
 
-	version("0.3.1", md5="9b3e7251d98ba926fcf9fa334b79369e")
+	version("0.3.2", md5="6b661b84b960def4c3eccb3269e7b995")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-fabletools@0.3.1:", type=("build", "run"))

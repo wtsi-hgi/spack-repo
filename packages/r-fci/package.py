@@ -13,7 +13,7 @@ class RFci(RPackage):
 	"""
 	
 	bioc = "fCI" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/fCI_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/fCI/fCI_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fCI_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fCI/fCI_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="5a6ec7dcf6303ef44018924283b87586")
 

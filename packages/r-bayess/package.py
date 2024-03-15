@@ -19,7 +19,7 @@ class RBayess(RPackage):
 	homepage = "https://www.r-project.org"
 	cran = "bayess" 
 
-	version("1.5", md5="d3b8145ae7baf2d79e365683cc11fbc1")
+	version("1.6", md5="2bcc05ad6e3211cf1f689bf621b91986")
 
 	depends_on("r-mnormt", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

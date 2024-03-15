@@ -13,7 +13,7 @@ class RWgsmapp(RPackage):
 	"""
 	
 	bioc = "WGSmapp" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/WGSmapp_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/WGSmapp/WGSmapp_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/WGSmapp_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/WGSmapp/WGSmapp_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="dfc3f5a82d532551e2d6c21b11c99566")
 

@@ -14,7 +14,7 @@ class RErccdashboard(RPackage):
 	
 	homepage = "https://github.com/munrosa/erccdashboard"
 	bioc = "erccdashboard" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/erccdashboard_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/erccdashboard/erccdashboard_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/erccdashboard_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/erccdashboard/erccdashboard_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="fa211269012a775dcdc114f3eb0282bb")
 

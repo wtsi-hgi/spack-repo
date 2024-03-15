@@ -14,7 +14,7 @@ class RConcordexr(RPackage):
 	
 	homepage = "https://github.com/pachterlab/concordexR"
 	bioc = "concordexR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/concordexR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/concordexR/concordexR_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/concordexR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/concordexR/concordexR_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="5ffab81582264ccb300c9f937c698adf")
 

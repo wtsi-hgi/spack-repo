@@ -13,7 +13,7 @@ class RAlabasterSchemas(RPackage):
 	"""
 	
 	bioc = "alabaster.schemas" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/alabaster.schemas_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/alabaster.schemas/alabaster.schemas_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.schemas_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.schemas/alabaster.schemas_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="308883d85ab416d45eaa55428463d308")
 

@@ -14,7 +14,7 @@ class RDoubletrouble(RPackage):
 	
 	homepage = "https://github.com/almeidasilvaf/doubletrouble"
 	bioc = "doubletrouble" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/doubletrouble_1.2.5.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/doubletrouble/doubletrouble_1.2.5.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/doubletrouble_1.2.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/doubletrouble/doubletrouble_1.2.5.tar.gz"]
 
 	version("1.2.5", md5="58b33ed625e84743150590ce3a524cc7")
 

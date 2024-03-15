@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,6 +16,8 @@ class RLeiden(RPackage):
 	Leiden: guaranteeing well-connected communities. <arXiv:1810.08473>."""
 
 	cran = "leiden"
+
+	license("GPL-3.0-only OR custom")
 
 	version("0.4.3.1", md5="8afbadc336cd24e8d6f52fad7ca5b6ae")
 

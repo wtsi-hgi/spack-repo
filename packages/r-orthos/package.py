@@ -13,7 +13,7 @@ class ROrthos(RPackage):
 	"""
 	
 	bioc = "orthos" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/orthos_1.0.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/orthos/orthos_1.0.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/orthos_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/orthos/orthos_1.0.1.tar.gz"]
 
 	version("1.0.1", md5="c35d515c0e956e4207b00db662192707")
 

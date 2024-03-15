@@ -13,7 +13,7 @@ class RDeepsnv(RPackage):
 	"""
 	
 	bioc = "deepSNV" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/deepSNV_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/deepSNV/deepSNV_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/deepSNV_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/deepSNV/deepSNV_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="4df42adbe4997ad401a7d2505ee2b227")
 

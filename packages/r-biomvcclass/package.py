@@ -13,7 +13,7 @@ class RBiomvcclass(RPackage):
 	"""
 	
 	bioc = "BioMVCClass" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BioMVCClass_1.70.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BioMVCClass/BioMVCClass_1.70.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioMVCClass_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioMVCClass/BioMVCClass_1.70.0.tar.gz"]
 
 	version("1.70.0", md5="72d762b9a59c4b75d79c378792250b48")
 

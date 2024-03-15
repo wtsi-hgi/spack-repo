@@ -13,7 +13,7 @@ class RPhosphonormalizer(RPackage):
 	"""
 	
 	bioc = "phosphonormalizer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/phosphonormalizer_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/phosphonormalizer/phosphonormalizer_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phosphonormalizer_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phosphonormalizer/phosphonormalizer_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="b0146ac595b90e20d854404e6fa427bb")
 

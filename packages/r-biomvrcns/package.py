@@ -13,7 +13,7 @@ class RBiomvrcns(RPackage):
 	"""
 	
 	bioc = "biomvRCNS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biomvRCNS_1.42.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biomvRCNS/biomvRCNS_1.42.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biomvRCNS_1.42.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biomvRCNS/biomvRCNS_1.42.2.tar.gz"]
 
 	version("1.42.2", md5="48d65764f6fb51d742e578d18417a1b6")
 

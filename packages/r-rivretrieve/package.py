@@ -15,7 +15,7 @@ class RRivretrieve(RPackage):
 	homepage = "https://github.com/Ryan-Riggs/RivRetrieve"
 	cran = "RivRetrieve" 
 
-	version("0.1.3", md5="b83077047ee2efb3d1972eef1ef6c23c")
+	version("0.1.4", md5="694ed6e12b2397b5fd47a26054195b34")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-bbmisc", type=("build", "run"))

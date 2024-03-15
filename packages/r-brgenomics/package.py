@@ -14,9 +14,9 @@ class RBrgenomics(RPackage):
 	
 	homepage = "https://mdeber.github.io"
 	bioc = "BRGenomics" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BRGenomics_1.13.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BRGenomics/BRGenomics_1.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BRGenomics_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BRGenomics/BRGenomics_1.14.1.tar.gz"]
 
-	version("1.13.0", md5="33a9bc55e58468faa4cc337617be743a")
+	version("1.14.1", md5="3255e0b6b7f0786432c6ba53bfedfd58")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rtracklayer", type=("build", "run"))

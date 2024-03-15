@@ -14,7 +14,7 @@ class RBiosigner(RPackage):
 	
 	homepage = "http://dx.doi.org/10.3389/fmolb.2016.00026"
 	bioc = "biosigner" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biosigner_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biosigner/biosigner_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biosigner_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biosigner/biosigner_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="33d853127b5e108b0fa1c5dfea22517d")
 

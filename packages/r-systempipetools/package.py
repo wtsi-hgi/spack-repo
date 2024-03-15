@@ -13,7 +13,7 @@ class RSystempipetools(RPackage):
 	"""
 	
 	bioc = "systemPipeTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/systemPipeTools_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/systemPipeTools/systemPipeTools_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/systemPipeTools_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/systemPipeTools/systemPipeTools_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="e0f74af8b351b49c68cbfed4e9e00adc")
 

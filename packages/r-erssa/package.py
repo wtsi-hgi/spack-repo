@@ -14,7 +14,7 @@ class RErssa(RPackage):
 	
 	homepage = "https://github.com/zshao1/ERSSA"
 	bioc = "ERSSA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ERSSA_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ERSSA/ERSSA_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ERSSA_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ERSSA/ERSSA_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="160e82bdb1b7af9f6452d4767a7e8a1a")
 

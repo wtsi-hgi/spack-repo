@@ -14,7 +14,7 @@ class RNetresponse(RPackage):
 	
 	homepage = "https://github.com/antagomir/netresponse"
 	bioc = "netresponse" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/netresponse_1.62.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/netresponse/netresponse_1.62.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/netresponse_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/netresponse/netresponse_1.62.0.tar.gz"]
 
 	version("1.62.0", md5="990c864cea311427d5af5f854edf4041")
 

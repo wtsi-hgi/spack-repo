@@ -13,7 +13,7 @@ class RHugene10sttranscriptclusterDb(RPackage):
 	"""
 	
 	bioc = "hugene10sttranscriptcluster.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hugene10sttranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hugene10sttranscriptcluster.db/hugene10sttranscriptcluster.db_8.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hugene10sttranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hugene10sttranscriptcluster.db/hugene10sttranscriptcluster.db_8.8.0.tar.gz"]
 
 	version("8.8.0", md5="a32fb5729d37e96f157b0a1085dff43e")
 

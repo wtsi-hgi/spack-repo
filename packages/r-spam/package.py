@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,6 +18,8 @@ class RSpam(RPackage):
 	<doi:10.18637/jss.v036.i10>; see 'citation("spam")' for details."""
 
 	cran = "spam"
+
+	license("LGPL-2.0-only OR BSD-3-Clause")
 
 	version("2.10-0", md5="544bbc0a7ae76ef34ed01bf61c666f82")
 

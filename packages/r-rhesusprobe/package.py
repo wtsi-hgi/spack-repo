@@ -13,7 +13,7 @@ class RRhesusprobe(RPackage):
 	"""
 	
 	bioc = "rhesusprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/rhesusprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/rhesusprobe/rhesusprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rhesusprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rhesusprobe/rhesusprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="4169c1c997c4c08b027bc7489533e11e")
 

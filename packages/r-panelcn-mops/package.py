@@ -13,7 +13,7 @@ class RPanelcnMops(RPackage):
 	"""
 	
 	bioc = "panelcn.mops" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/panelcn.mops_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/panelcn.mops/panelcn.mops_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/panelcn.mops_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/panelcn.mops/panelcn.mops_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="c40de00a870c4b693e6312b7d2110b96")
 

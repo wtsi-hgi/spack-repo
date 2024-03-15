@@ -13,7 +13,7 @@ class RRhdf5client(RPackage):
 	"""
 	
 	bioc = "rhdf5client" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rhdf5client_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rhdf5client/rhdf5client_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rhdf5client_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rhdf5client/rhdf5client_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="9205b30177d59d75b7e544f795a90de5")
 

@@ -9,12 +9,13 @@ from spack.package import *
 class RHfr(RPackage):
 	"""Estimate Hierarchical Feature Regression Models
 
-	Provides functions for the estimation, plotting, predicting and cross-validation of hierarchical feature regression models as described in Pfitzinger (2021) <arXiv:2107.04831>.
+	Provides functions for the estimation, plotting, predicting and cross-validation of hierarchical feature regression models as described in Pfitzinger (2024). Cluster Regularization via a Hierarchical Feature Regression. Econometrics and Statistics (in press). <doi:10.1016/j.ecosta.2024.01.003>.
 	"""
 	
+	homepage = "https://hfr.residualmetrics.com"
 	cran = "hfr" 
 
-	version("0.6.2", md5="4404e49aa44380f9349489c352275543")
+	version("0.7.1", md5="4819e54a6275ff43676f69c58ef715ff")
 
 	depends_on("r-quadprog", type=("build", "run"))
 	depends_on("r-dendextend", type=("build", "run"))

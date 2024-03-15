@@ -13,7 +13,7 @@ class RMousefm(RPackage):
 	"""
 	
 	bioc = "MouseFM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MouseFM_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MouseFM/MouseFM_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MouseFM_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MouseFM/MouseFM_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="02947a619a95abf1ad58bb781953a22d")
 

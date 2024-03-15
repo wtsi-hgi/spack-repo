@@ -9,11 +9,11 @@ from spack.package import *
 class RLpcm(RPackage):
 	"""Local Principal Curve Methods
 
-	Fitting multivariate data patterns with local principal curves, including tools for data compression (projection) and measuring goodness-of-fit; with some additional functions for mean shift clustering.  See Einbeck, Tutz and Evers (2005) <doi:10.1007/s11222-005-4073-8> and Einbeck (2011) <doi:10.13176/11.288>.
+	Fitting multivariate data patterns with local principal curves, including tools for data compression (projection) and measuring goodness-of-fit; with some additional functions for mean shift clustering.  See Einbeck, Tutz and Evers (2005) <doi:10.1007/s11222-005-4073-8> and Ameijeiras-Alonso and Einbeck (2023) <doi:10.1007/s11634-023-00575-1>.
 	"""
 	
 	cran = "LPCM" 
 
-	version("0.47-3", md5="ab5dc2cdf40aee4960cdf515de2d706d")
+	version("0.47-4", md5="c729700d5d113f834d5205194eb6d160")
 
 	depends_on("r@3.5:", type=("build", "run"))

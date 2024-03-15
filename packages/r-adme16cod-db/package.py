@@ -13,7 +13,7 @@ class RAdme16codDb(RPackage):
 	"""
 	
 	bioc = "adme16cod.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/adme16cod.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/adme16cod.db/adme16cod.db_3.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/adme16cod.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/adme16cod.db/adme16cod.db_3.4.0.tar.gz"]
 
 	version("3.4.0", md5="3902516a40a503302ef732143b2394b9")
 

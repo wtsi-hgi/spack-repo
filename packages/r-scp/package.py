@@ -14,7 +14,7 @@ class RScp(RPackage):
 	
 	homepage = "https://UCLouvain-CBIO.github.io/scp"
 	bioc = "scp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scp_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scp/scp_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scp_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scp/scp_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="c4f759cfb996e6150ecec65b7de3e343")
 

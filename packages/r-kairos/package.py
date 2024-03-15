@@ -21,10 +21,10 @@ Data
 	homepage = "https://packages.tesselle.org/kairos/"
 	cran = "kairos" 
 
-	version("2.0.2", md5="c93386b7c01b4007f3856a33e8ca8d8f")
+	version("2.1.0", md5="3faea02251dd928ef4755dd5b01cd01e")
 
 	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r-dimensio@0.6:", type=("build", "run"))
 	depends_on("r-aion@1.0.2:", type=("build", "run"))
-	depends_on("r-arkhe@1.4:", type=("build", "run"))
-	depends_on("r-dimensio@0.5:", type=("build", "run"))
+	depends_on("r-arkhe@1.6:", type=("build", "run"))
 	depends_on("r-extradistr", type=("build", "run"))

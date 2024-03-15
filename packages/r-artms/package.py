@@ -14,7 +14,7 @@ class RArtms(RPackage):
 	
 	homepage = "http://artms.org"
 	bioc = "artMS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/artMS_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/artMS/artMS_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/artMS_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/artMS/artMS_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="d52a9405bcf6f4a3920ecb70be49c1d9")
 

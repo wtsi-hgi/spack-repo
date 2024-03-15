@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,9 +15,10 @@ class RPlotmo(RPackage):
 
 	cran = "plotmo"
 
-	version("3.6.2", md5="b2b767006634d5daff7247f4c99e72ca")
+	license("GPL-3.0-only")
+
+	version("3.6.3", md5="92a109886fbf544f525c22390171e30c")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-formula@1.2.3:", type=("build", "run"))
 	depends_on("r-plotrix", type=("build", "run"))
-	depends_on("r-teachingdemos", type=("build", "run"))

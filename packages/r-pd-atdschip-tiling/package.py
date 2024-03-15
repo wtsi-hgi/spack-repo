@@ -13,7 +13,7 @@ class RPdAtdschipTiling(RPackage):
 	"""
 	
 	bioc = "pd.atdschip.tiling" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/pd.atdschip.tiling_0.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/pd.atdschip.tiling/pd.atdschip.tiling_0.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/pd.atdschip.tiling_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/pd.atdschip.tiling/pd.atdschip.tiling_0.40.0.tar.gz"]
 
 	version("0.40.0", md5="a81ffdc7dfb8eb04e09ec133db77d0d4")
 

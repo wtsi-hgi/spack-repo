@@ -13,7 +13,7 @@ class RSmad(RPackage):
 	"""
 	
 	bioc = "SMAD" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SMAD_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SMAD/SMAD_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SMAD_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SMAD/SMAD_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="65f0eba6ed0bf086797b95b2c9da6dd6")
 

@@ -13,7 +13,7 @@ class RPantherDb(RPackage):
 	"""
 	
 	bioc = "PANTHER.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/PANTHER.db_1.0.12.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/PANTHER.db/PANTHER.db_1.0.12.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/PANTHER.db_1.0.12.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/PANTHER.db/PANTHER.db_1.0.12.tar.gz"]
 
 	version("1.0.12", md5="edafd1c94f2f1cf3975f525fae7a9b83")
 

@@ -13,7 +13,7 @@ class ROcplus(RPackage):
 	"""
 	
 	bioc = "OCplus" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/OCplus_1.76.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/OCplus/OCplus_1.76.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OCplus_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OCplus/OCplus_1.76.0.tar.gz"]
 
 	version("1.76.0", md5="8093ec3c635bc4ba57d27f42c6c85c48")
 

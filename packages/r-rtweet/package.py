@@ -18,13 +18,13 @@ class RRtweet(RPackage):
 	homepage = "https://docs.ropensci.org/rtweet/"
 	cran = "rtweet" 
 
-	version("1.2.1", md5="565bf6ad5213675e63ec4a68e64f2dc2")
+	version("2.0.0", md5="8b736e3ba27f2b514063366195e7c2c6")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-bit64@4.0.5:", type=("build", "run"))
 	depends_on("r-curl@4.3.2:", type=("build", "run"))
 	depends_on("r-httr@1.3:", type=("build", "run"))
-	depends_on("r-httr2@0.2.2:", type=("build", "run"))
+	depends_on("r-httr2@1:", type=("build", "run"))
 	depends_on("r-jsonlite@0.9.22:", type=("build", "run"))
 	depends_on("r-lifecycle@1:", type=("build", "run"))
 	depends_on("r-progress@1.2.2:", type=("build", "run"))

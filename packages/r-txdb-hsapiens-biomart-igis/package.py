@@ -13,7 +13,7 @@ class RTxdbHsapiensBiomartIgis(RPackage):
 	"""
 	
 	bioc = "TxDb.Hsapiens.BioMart.igis" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Hsapiens.BioMart.igis_2.3.2.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Hsapiens.BioMart.igis/TxDb.Hsapiens.BioMart.igis_2.3.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Hsapiens.BioMart.igis_2.3.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Hsapiens.BioMart.igis/TxDb.Hsapiens.BioMart.igis_2.3.2.tar.gz"]
 
 	version("2.3.2", md5="75b793928d29bcd3f069b5986bc2cfae")
 

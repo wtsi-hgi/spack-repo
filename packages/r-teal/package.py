@@ -18,7 +18,7 @@ class RTeal(RPackage):
 	homepage = "https://insightsengineering.github.io/teal/"
 	cran = "teal" 
 
-	version("0.15.0", md5="c4ec6ded525f74e2b7dad507c8689dce")
+	version("0.15.2", md5="2937842bbfac5fdabd0be67851990cfa")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-shiny@1.7:", type=("build", "run"))

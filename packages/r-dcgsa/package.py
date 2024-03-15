@@ -13,7 +13,7 @@ class RDcgsa(RPackage):
 	"""
 	
 	bioc = "dcGSA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/dcGSA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/dcGSA/dcGSA_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dcGSA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dcGSA/dcGSA_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="f824cffdf3d7c4f41b44d2cc46b69998")
 

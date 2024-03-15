@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -12,6 +12,8 @@ class RSpatial(RPackage):
 	Functions for kriging and point pattern analysis."""
 
 	cran = "spatial"
+
+	license("GPL-2.0-only OR GPL-3.0-only")
 
 	version("7.3-17", md5="75ae4757dcf945ca276634c716393c1b")
 

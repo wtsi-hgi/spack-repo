@@ -13,7 +13,7 @@ class RPhenotest(RPackage):
 	"""
 	
 	bioc = "phenoTest" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/phenoTest_1.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/phenoTest/phenoTest_1.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phenoTest_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phenoTest/phenoTest_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="20bd295654c25854160e8a1aad42d8e8")
 

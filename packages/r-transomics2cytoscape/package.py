@@ -13,7 +13,7 @@ class RTransomics2cytoscape(RPackage):
 	"""
 	
 	bioc = "transomics2cytoscape" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/transomics2cytoscape_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/transomics2cytoscape/transomics2cytoscape_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/transomics2cytoscape_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/transomics2cytoscape/transomics2cytoscape_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="17325dd51ab6dfcc10dff97e98be6e91")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,6 +13,8 @@ class RInum(RPackage):
 	including a method of coercing variables in data frames."""
 
 	cran = "inum"
+
+	license("GPL-2.0-only")
 
 	version("1.0-5", md5="d639f582b8f3925f8c2ddc38febb2915")
 

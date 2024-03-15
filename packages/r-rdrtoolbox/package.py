@@ -13,7 +13,7 @@ class RRdrtoolbox(RPackage):
 	"""
 	
 	bioc = "RDRToolbox" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RDRToolbox_1.52.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RDRToolbox/RDRToolbox_1.52.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RDRToolbox_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RDRToolbox/RDRToolbox_1.52.0.tar.gz"]
 
 	version("1.52.0", md5="4b0e59a1ea48dd51e11d8d18666cf2d4")
 

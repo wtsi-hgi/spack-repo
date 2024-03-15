@@ -13,7 +13,7 @@ class RTilingarray(RPackage):
 	"""
 	
 	bioc = "tilingArray" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tilingArray_1.80.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tilingArray/tilingArray_1.80.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tilingArray_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tilingArray/tilingArray_1.80.0.tar.gz"]
 
 	version("1.80.0", md5="ef9c26009f7990175b320386fcfeeb5c")
 

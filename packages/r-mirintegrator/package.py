@@ -14,7 +14,7 @@ class RMirintegrator(RPackage):
 	
 	homepage = "http://datad.github.io/mirIntegrator/"
 	bioc = "mirIntegrator" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mirIntegrator_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mirIntegrator/mirIntegrator_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mirIntegrator_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mirIntegrator/mirIntegrator_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="9ec5789f159dfc3880ce8369af20c27a")
 

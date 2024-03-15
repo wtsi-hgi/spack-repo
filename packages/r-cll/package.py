@@ -13,7 +13,7 @@ class RCll(RPackage):
 	"""
 	
 	bioc = "CLL" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/CLL_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/CLL/CLL_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CLL_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CLL/CLL_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="4f71fa48ba2205b80c098275c866ac1f")
 

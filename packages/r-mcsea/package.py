@@ -13,7 +13,7 @@ class RMcsea(RPackage):
 	"""
 	
 	bioc = "mCSEA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mCSEA_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mCSEA/mCSEA_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mCSEA_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mCSEA/mCSEA_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="8bac97f11934f91da5250521a7b26f75")
 

@@ -13,7 +13,7 @@ class RPfamanalyzer(RPackage):
 	"""
 	
 	bioc = "pfamAnalyzeR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pfamAnalyzeR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pfamAnalyzeR/pfamAnalyzeR_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pfamAnalyzeR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pfamAnalyzeR/pfamAnalyzeR_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="20159a7f365760efda4827ae6fff80d3")
 

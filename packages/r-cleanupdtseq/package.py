@@ -13,7 +13,7 @@ class RCleanupdtseq(RPackage):
 	"""
 	
 	bioc = "cleanUpdTSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cleanUpdTSeq_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cleanUpdTSeq/cleanUpdTSeq_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cleanUpdTSeq_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cleanUpdTSeq/cleanUpdTSeq_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="52f27e948758be1db9d6b003d69a84b9")
 

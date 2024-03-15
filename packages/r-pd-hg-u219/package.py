@@ -13,9 +13,9 @@ class RPdHgU219(RPackage):
 	"""
 	
 	bioc = "pd.hg.u219" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.hg.u219_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.hg.u219/pd.hg.u219_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hg.u219_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.hg.u219/pd.hg.u219_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="dab073d315af47ff3001c72a6d1e7972", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.hg.u219_3.12.0.tar.gz")
+	version("3.12.0", md5="dab073d315af47ff3001c72a6d1e7972", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hg.u219_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

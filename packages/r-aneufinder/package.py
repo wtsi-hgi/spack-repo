@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,7 @@ class RAneufinder(RPackage):
 	genome sequencing and strand-seq data."""
 
 	bioc = "AneuFinder"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AneuFinder_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AneuFinder/AneuFinder_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AneuFinder_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AneuFinder/AneuFinder_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="421efa90a617606c8db2c947d302c6b1")
 

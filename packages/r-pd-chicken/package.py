@@ -13,7 +13,7 @@ class RPdChicken(RPackage):
 	"""
 	
 	bioc = "pd.chicken" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.chicken_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.chicken/pd.chicken_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.chicken_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.chicken/pd.chicken_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="af79b6d0910621910e72ea374499e5eb")
 

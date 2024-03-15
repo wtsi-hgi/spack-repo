@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class RChampdata(RPackage):
 	controls for CNA analysis."""
 
 	bioc = "ChAMPdata"
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/ChAMPdata_2.34.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/ChAMPdata/ChAMPdata_2.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ChAMPdata_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ChAMPdata/ChAMPdata_2.34.0.tar.gz"]
 
 	version("2.34.0", md5="b12bfec01a1cfdd103bc0cb9bd44d4aa")
 

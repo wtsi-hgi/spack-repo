@@ -18,5 +18,5 @@ class RCopulaSurv(RPackage):
 	
 	cran = "Copula.surv" 
 
-	version("1.2", md5="2d2dfea1c4ea82e2ed72f361c696185d")
+	version("1.4", md5="477604fe702e31f02ee303ae98841319")
 

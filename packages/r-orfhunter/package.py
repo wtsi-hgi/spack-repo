@@ -13,7 +13,7 @@ class ROrfhunter(RPackage):
 	"""
 	
 	bioc = "ORFhunteR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ORFhunteR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ORFhunteR/ORFhunteR_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ORFhunteR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ORFhunteR/ORFhunteR_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="c9e57a998b0746df96e6d173d75fd032")
 

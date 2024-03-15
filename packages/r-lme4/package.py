@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RLme4(RPackage):
 	numerical linear algebra and 'RcppEigen' "glue"."""
 
 	cran = "lme4"
+
+	license("GPL-2.0-or-later")
 
 	version("1.1-35.1", md5="b452706beaa895b70d874a8a0154f87d", url="https://cran.r-project.org/src/contrib/lme4_1.1-35.1.tar.gz")
 

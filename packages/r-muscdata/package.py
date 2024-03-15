@@ -14,7 +14,7 @@ class RMuscdata(RPackage):
 	
 	homepage = "https://github.com/HelenaLC/muscData"
 	bioc = "muscData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/muscData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/muscData/muscData_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/muscData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/muscData/muscData_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="f34c376f88f97c98d4aac5490b45bc24")
 

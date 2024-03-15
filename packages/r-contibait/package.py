@@ -13,7 +13,7 @@ class RContibait(RPackage):
 	"""
 	
 	bioc = "contiBAIT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/contiBAIT_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/contiBAIT/contiBAIT_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/contiBAIT_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/contiBAIT/contiBAIT_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="8297fd66bbfcd997be0f23cf31fcd644")
 

@@ -13,7 +13,7 @@ class RArraymvout(RPackage):
 	"""
 	
 	bioc = "arrayMvout" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/arrayMvout_1.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/arrayMvout/arrayMvout_1.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/arrayMvout_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/arrayMvout/arrayMvout_1.60.0.tar.gz"]
 
 	version("1.60.0", md5="7aa46c496dbe47218ea774cb02108800")
 

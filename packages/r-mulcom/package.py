@@ -13,7 +13,7 @@ class RMulcom(RPackage):
 	"""
 	
 	bioc = "Mulcom" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Mulcom_1.52.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Mulcom/Mulcom_1.52.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Mulcom_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Mulcom/Mulcom_1.52.0.tar.gz"]
 
 	version("1.52.0", md5="87375077f62104b18567db2e68a07488")
 

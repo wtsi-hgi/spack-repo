@@ -13,7 +13,7 @@ class RMqmetrics(RPackage):
 	"""
 	
 	bioc = "MQmetrics" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MQmetrics_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MQmetrics/MQmetrics_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MQmetrics_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MQmetrics/MQmetrics_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="6c0c8bd3d356ed2db8d6329fd21958d0")
 

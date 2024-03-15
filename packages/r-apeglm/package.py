@@ -13,7 +13,7 @@ class RApeglm(RPackage):
 	"""
 	
 	bioc = "apeglm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/apeglm_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/apeglm/apeglm_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/apeglm_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/apeglm/apeglm_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="0f8e64bdd8eec2566238fdc487afabb8")
 

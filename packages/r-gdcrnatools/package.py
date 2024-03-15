@@ -13,7 +13,7 @@ class RGdcrnatools(RPackage):
 	"""
 	
 	bioc = "GDCRNATools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GDCRNATools_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GDCRNATools/GDCRNATools_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GDCRNATools_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GDCRNATools/GDCRNATools_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="bf97cefce864ca1443cb0b0d53601799")
 

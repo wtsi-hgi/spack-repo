@@ -14,7 +14,7 @@ class RStructstrings(RPackage):
 	
 	homepage = "https://github.com/FelixErnst/Structstrings"
 	bioc = "Structstrings" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Structstrings_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Structstrings/Structstrings_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Structstrings_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Structstrings/Structstrings_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="8d4afbd61a5546b52947869b7912eecb")
 

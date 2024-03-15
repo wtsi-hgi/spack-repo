@@ -13,7 +13,7 @@ class RDrosgenome1probe(RPackage):
 	"""
 	
 	bioc = "drosgenome1probe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/drosgenome1probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/drosgenome1probe/drosgenome1probe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/drosgenome1probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/drosgenome1probe/drosgenome1probe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="1f12abdfeee65e8a6554f57507d86fb3")
 

@@ -13,7 +13,7 @@ class RHgu219probe(RPackage):
 	"""
 	
 	bioc = "hgu219probe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hgu219probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hgu219probe/hgu219probe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu219probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu219probe/hgu219probe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="c5bb2f7b2e0f8fa89e6a30befaee6497")
 

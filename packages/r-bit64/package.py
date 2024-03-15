@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -22,6 +22,8 @@ class RBit64(RPackage):
 	caching."""
 
 	cran = "bit64"
+
+	license("GPL-2.0-only OR GPL-3.0-only")
 
 	version("4.0.5", md5="bdccc76b8505827a6f295181de2b308a", url="https://cran.r-project.org/src/contrib/bit64_4.0.5.tar.gz")
 

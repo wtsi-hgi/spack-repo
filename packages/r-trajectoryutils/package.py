@@ -14,7 +14,7 @@ class RTrajectoryutils(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/TrajectoryUtils"
 	bioc = "TrajectoryUtils" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TrajectoryUtils_1.10.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TrajectoryUtils/TrajectoryUtils_1.10.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TrajectoryUtils_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TrajectoryUtils/TrajectoryUtils_1.10.1.tar.gz"]
 
 	version("1.10.1", md5="c232921e26307842e566c258acd680fa")
 

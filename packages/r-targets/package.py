@@ -26,7 +26,7 @@ class RTargets(RPackage):
 	homepage = "https://docs.ropensci.org/targets/"
 	cran = "targets" 
 
-	version("1.5.1", md5="2702be9b7dc1319a257169e291eeb0c7")
+	version("1.6.0", md5="4c49e58ed1365e6c9b6b7449b40ea6ba")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-base64url@1.4:", type=("build", "run"))

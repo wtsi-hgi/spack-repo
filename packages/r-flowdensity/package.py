@@ -13,7 +13,7 @@ class RFlowdensity(RPackage):
 	"""
 	
 	bioc = "flowDensity" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowDensity_1.36.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowDensity/flowDensity_1.36.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowDensity_1.36.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowDensity/flowDensity_1.36.1.tar.gz"]
 
 	version("1.36.1", md5="30c661d010484bff6c2eb427a7056aa1")
 

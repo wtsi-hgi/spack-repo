@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,6 +14,8 @@ class RProj4(RPackage):
 	geographic coordinates from one projection and/or datum to another."""
 
 	cran = "proj4"
+
+	license("GPL-2.0-only")
 
 	version("1.0-14", md5="aa4414ed36bacf9c15e3e990b658cd90", url="https://cran.r-project.org/src/contrib/proj4_1.0-14.tar.gz")
 

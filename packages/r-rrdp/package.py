@@ -13,7 +13,7 @@ class RRrdp(RPackage):
 	"""
 	
 	bioc = "rRDP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rRDP_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rRDP/rRDP_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rRDP_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rRDP/rRDP_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="1a6dbbc2c3e31aa382c312202e85ce62")
 

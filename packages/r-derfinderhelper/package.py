@@ -14,7 +14,7 @@ class RDerfinderhelper(RPackage):
 	
 	homepage = "https://github.com/leekgroup/derfinderHelper"
 	bioc = "derfinderHelper" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/derfinderHelper_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/derfinderHelper/derfinderHelper_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/derfinderHelper_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/derfinderHelper/derfinderHelper_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="2544077112525d7f25f34270ed365423")
 

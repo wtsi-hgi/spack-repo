@@ -13,7 +13,7 @@ class RReconsi(RPackage):
 	"""
 	
 	bioc = "reconsi" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/reconsi_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/reconsi/reconsi_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/reconsi_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/reconsi/reconsi_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="884019da85885289094a2aed95d18314")
 

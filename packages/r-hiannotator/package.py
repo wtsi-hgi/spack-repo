@@ -13,7 +13,7 @@ class RHiannotator(RPackage):
 	"""
 	
 	bioc = "hiAnnotator" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/hiAnnotator_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/hiAnnotator/hiAnnotator_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hiAnnotator_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hiAnnotator/hiAnnotator_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="67e0fbd27bb6f634ccb9912642a2aeb6")
 

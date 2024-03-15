@@ -14,7 +14,7 @@ class RSpicyr(RPackage):
 	
 	homepage = "https://ellispatrick.github.io/spicyR/"
 	bioc = "spicyR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/spicyR_1.14.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/spicyR/spicyR_1.14.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spicyR_1.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spicyR/spicyR_1.14.3.tar.gz"]
 
 	version("1.14.3", md5="d8ee58d35247088d0d964f694f6c027e")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -19,7 +19,7 @@ class RAnnotationhub(RPackage):
 	reproducible access."""
 
 	bioc = "AnnotationHub"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AnnotationHub_3.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AnnotationHub/AnnotationHub_3.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnnotationHub_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnnotationHub/AnnotationHub_3.10.0.tar.gz"]
 
 	version("3.10.0", md5="9dcc8ea705c0e7f8ac8e9af262de876f")
 

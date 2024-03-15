@@ -14,7 +14,7 @@ class RDistinct(RPackage):
 	
 	homepage = "https://github.com/SimoneTiberi/distinct"
 	bioc = "distinct" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/distinct_1.14.5.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/distinct/distinct_1.14.5.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/distinct_1.14.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/distinct/distinct_1.14.5.tar.gz"]
 
 	version("1.14.5", md5="d0008a29d5ce916f33ae6996861edcb5")
 

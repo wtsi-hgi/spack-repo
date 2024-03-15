@@ -13,7 +13,7 @@ class RExperimenthubdata(RPackage):
 	"""
 	
 	bioc = "ExperimentHubData" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ExperimentHubData_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ExperimentHubData/ExperimentHubData_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExperimentHubData_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExperimentHubData/ExperimentHubData_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="9e36d1a7958213cce85feccfd46fd7d5")
 

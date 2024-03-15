@@ -13,7 +13,7 @@ class RVitisviniferaprobe(RPackage):
 	"""
 	
 	bioc = "vitisviniferaprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/vitisviniferaprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/vitisviniferaprobe/vitisviniferaprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/vitisviniferaprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/vitisviniferaprobe/vitisviniferaprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="386c0d5e37896d073ac20970e88b3160")
 

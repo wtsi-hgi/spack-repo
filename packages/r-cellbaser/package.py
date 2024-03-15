@@ -14,7 +14,7 @@ class RCellbaser(RPackage):
 	
 	homepage = "https://github.com/melsiddieg/cellbaseR"
 	bioc = "cellbaseR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cellbaseR_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cellbaseR/cellbaseR_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cellbaseR_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cellbaseR/cellbaseR_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="1540f788e9e1fba133da3a369fe2c8b4")
 

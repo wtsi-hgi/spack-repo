@@ -14,7 +14,7 @@ class RSuprahex(RPackage):
 	
 	homepage = "http://suprahex.r-forge.r-project.org"
 	bioc = "supraHex" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/supraHex_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/supraHex/supraHex_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/supraHex_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/supraHex/supraHex_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="19685808f18718a58889c70e476888d6")
 

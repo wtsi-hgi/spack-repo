@@ -13,7 +13,7 @@ class RPanp(RPackage):
 	"""
 	
 	bioc = "panp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/panp_1.72.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/panp/panp_1.72.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/panp_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/panp/panp_1.72.0.tar.gz"]
 
 	version("1.72.0", md5="1cc532873dbc4e2cde6c04ca995545db")
 

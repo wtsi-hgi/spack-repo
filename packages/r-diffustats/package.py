@@ -13,7 +13,7 @@ class RDiffustats(RPackage):
 	"""
 	
 	bioc = "diffuStats" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/diffuStats_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/diffuStats/diffuStats_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/diffuStats_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/diffuStats/diffuStats_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="7c47ae0431034f3de807ad1fa3684530")
 

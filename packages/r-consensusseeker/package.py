@@ -14,7 +14,7 @@ class RConsensusseeker(RPackage):
 	
 	homepage = "https://github.com/ArnaudDroitLab/consensusSeekeR"
 	bioc = "consensusSeekeR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/consensusSeekeR_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/consensusSeekeR/consensusSeekeR_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/consensusSeekeR_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/consensusSeekeR/consensusSeekeR_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="e752cec43fa487cd071a27a1f955b17e")
 

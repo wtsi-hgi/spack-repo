@@ -13,7 +13,7 @@ class RU133x3pDb(RPackage):
 	"""
 	
 	bioc = "u133x3p.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/u133x3p.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/u133x3p.db/u133x3p.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/u133x3p.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/u133x3p.db/u133x3p.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="1a36a09dc64b94728bf6ac75600b40c6")
 

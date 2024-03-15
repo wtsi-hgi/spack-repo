@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,6 +14,8 @@ class RCachem(RPackage):
 	objects to maintain the constraints."""
 
 	cran = "cachem"
+
+	license("MIT")
 
 	version("1.0.8", md5="f7b8c1dae009101e6785febca66bb659")
 

@@ -14,7 +14,7 @@ class RRegionreport(RPackage):
 	
 	homepage = "https://github.com/leekgroup/regionReport"
 	bioc = "regionReport" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/regionReport_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/regionReport/regionReport_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/regionReport_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/regionReport/regionReport_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="8ec5fb1e7db2235d543b2a9a6660a3b3")
 

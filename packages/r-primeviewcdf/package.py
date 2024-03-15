@@ -13,7 +13,7 @@ class RPrimeviewcdf(RPackage):
 	"""
 	
 	bioc = "primeviewcdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/primeviewcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/primeviewcdf/primeviewcdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/primeviewcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/primeviewcdf/primeviewcdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="71e39a59a5907e9b8a8dba58d36eee50")
 

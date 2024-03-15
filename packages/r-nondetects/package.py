@@ -13,7 +13,7 @@ class RNondetects(RPackage):
 	"""
 	
 	bioc = "nondetects" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/nondetects_2.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/nondetects/nondetects_2.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nondetects_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nondetects/nondetects_2.32.0.tar.gz"]
 
 	version("2.32.0", md5="6507efbde0bbb76f863c731bcc8464bb")
 

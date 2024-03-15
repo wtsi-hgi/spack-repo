@@ -13,7 +13,7 @@ class RTcseq(RPackage):
 	"""
 	
 	bioc = "TCseq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TCseq_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TCseq/TCseq_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TCseq_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TCseq/TCseq_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="f5b63a6d1b40c82f8ddc86cc2abdb89b")
 

@@ -18,5 +18,5 @@ Function Approximation
 	homepage = "https://github.com/aadler/MiniMaxApprox"
 	cran = "minimaxApprox" 
 
-	version("0.3.0", md5="6ce7cd3c0041dc1757dfbb98ad8bc5da")
+	version("0.4.1", md5="936ba3e989c9966191d5179a979f433a")
 

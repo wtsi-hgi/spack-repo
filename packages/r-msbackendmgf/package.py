@@ -14,7 +14,7 @@ class RMsbackendmgf(RPackage):
 	
 	homepage = "https://github.com/RforMassSpectrometry/MsBackendMgf"
 	bioc = "MsBackendMgf" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MsBackendMgf_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MsBackendMgf/MsBackendMgf_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsBackendMgf_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsBackendMgf/MsBackendMgf_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="a8b5cc0b0f9c2da6222c217ae8a4c44f")
 

@@ -14,7 +14,7 @@ class RRaerdata(RPackage):
 	
 	homepage = "https://github.com/rnabioco/raerdata"
 	bioc = "raerdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/raerdata_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/raerdata/raerdata_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/raerdata_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/raerdata/raerdata_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="8f250d12f89396f8d4351da5045cf22c")
 

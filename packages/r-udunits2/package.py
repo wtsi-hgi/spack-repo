@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -12,6 +12,8 @@ class RUdunits2(RPackage):
 	Provides simple bindings to Unidata's udunits library."""
 
 	cran = "udunits2"
+
+	license("GPL-2.0-only")
 
 	version("0.13.2.1", md5="33253bd0b48ade3601fa220cf193de93", url="https://cran.r-project.org/src/contrib/udunits2_0.13.2.1.tar.gz")
 

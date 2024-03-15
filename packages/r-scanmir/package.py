@@ -13,7 +13,7 @@ class RScanmir(RPackage):
 	"""
 	
 	bioc = "scanMiR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scanMiR_1.8.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scanMiR/scanMiR_1.8.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scanMiR_1.8.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scanMiR/scanMiR_1.8.2.tar.gz"]
 
 	version("1.8.2", md5="7d358cc7346de7793cded5df405fa6a8")
 

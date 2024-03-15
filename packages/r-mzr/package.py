@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,7 +18,7 @@ class RMzr(RPackage):
 	reading code has previously been used in XCMS."""
 
 	bioc = "mzR"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mzR_2.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mzR/mzR_2.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mzR_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mzR/mzR_2.36.0.tar.gz"]
 
 	version("2.36.0", md5="aae8b88db5fd49675b653b861702800e")
 

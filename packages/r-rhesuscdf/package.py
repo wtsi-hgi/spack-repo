@@ -13,7 +13,7 @@ class RRhesuscdf(RPackage):
 	"""
 	
 	bioc = "rhesuscdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/rhesuscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/rhesuscdf/rhesuscdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rhesuscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rhesuscdf/rhesuscdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="994e16da5dd31bc2796d0da40aa2634f")
 

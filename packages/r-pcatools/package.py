@@ -14,7 +14,7 @@ class RPcatools(RPackage):
 	
 	homepage = "https://github.com/kevinblighe/PCAtools"
 	bioc = "PCAtools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PCAtools_2.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PCAtools/PCAtools_2.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PCAtools_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PCAtools/PCAtools_2.14.0.tar.gz"]
 
 	version("2.14.0", md5="316c693617402890169745a37dfaead6")
 

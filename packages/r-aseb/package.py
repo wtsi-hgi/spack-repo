@@ -13,7 +13,7 @@ class RAseb(RPackage):
 	"""
 	
 	bioc = "ASEB" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ASEB_1.46.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ASEB/ASEB_1.46.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASEB_1.46.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASEB/ASEB_1.46.3.tar.gz"]
 
 	version("1.46.3", md5="7e9312371523d44d7f1cb759af2d150e")
 

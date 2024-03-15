@@ -13,7 +13,7 @@ class RGwena(RPackage):
 	"""
 	
 	bioc = "GWENA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GWENA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GWENA/GWENA_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GWENA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GWENA/GWENA_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="8f1bd435deae9546d0ec3f8605a0b682")
 

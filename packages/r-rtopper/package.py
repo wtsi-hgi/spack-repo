@@ -13,7 +13,7 @@ class RRtopper(RPackage):
 	"""
 	
 	bioc = "RTopper" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RTopper_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RTopper/RTopper_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RTopper_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RTopper/RTopper_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="e551ec836b4c0743feabbd2deff66cb8")
 

@@ -13,7 +13,7 @@ class RRifi(RPackage):
 	"""
 	
 	bioc = "rifi" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rifi_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rifi/rifi_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rifi_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rifi/rifi_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="5d070b26ca40e04e4e3f9851853caa48")
 

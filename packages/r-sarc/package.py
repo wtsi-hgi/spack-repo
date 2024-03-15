@@ -14,7 +14,7 @@ class RSarc(RPackage):
 	
 	homepage = "https://github.com/Krutik6/SARC/"
 	bioc = "SARC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SARC_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SARC/SARC_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SARC_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SARC/SARC_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="b3ccd1bbc820bc93c4b13ec4e3ec9705")
 

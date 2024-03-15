@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -19,7 +19,7 @@ class RAffxparser(RPackage):
 	convenient list structure."""
 
 	bioc = "affxparser"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/affxparser_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/affxparser/affxparser_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affxparser_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affxparser/affxparser_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="2b6b9373d749a0ccbf930f834df90b92")
 

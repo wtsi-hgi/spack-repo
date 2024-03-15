@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -23,6 +23,8 @@ class RDqrng(RPackage):
 	<doi:10.1145/2063384.2063405>) as provided by the package 'sitmo'."""
 
 	cran = "dqrng"
+
+	license("AGPL-3.0-only OR custom")
 
 	version("0.3.2", md5="6f3ee0d3b89f90deb993032e8185e487")
 

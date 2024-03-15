@@ -14,7 +14,7 @@ class RCyanofilter(RPackage):
 	
 	homepage = "https://github.com/fomotis/cyanoFilter"
 	bioc = "cyanoFilter" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cyanoFilter_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cyanoFilter/cyanoFilter_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cyanoFilter_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cyanoFilter/cyanoFilter_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="a562257b012ddcf28b78c5cee7e85fa3")
 

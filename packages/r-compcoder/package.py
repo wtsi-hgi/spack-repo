@@ -14,7 +14,7 @@ class RCompcoder(RPackage):
 	
 	homepage = "https://github.com/csoneson/compcodeR"
 	bioc = "compcodeR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/compcodeR_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/compcodeR/compcodeR_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/compcodeR_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/compcodeR/compcodeR_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="b1ec77496e614cf3399843b8c34e6ab2")
 

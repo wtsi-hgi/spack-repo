@@ -15,7 +15,7 @@ Data
   The purpose of the package is to optimize statistical functions for easier interpretation for bank analysts and non-statisticians.
 	"""
 	
-	cran = "AFR" 
+	cran = "AFR"
 
 	version("0.3.5", md5="e1e191de086f4b4a73e23ec793ba8301")
 

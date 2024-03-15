@@ -14,9 +14,10 @@ class RLsx(RPackage):
     It can generate word vectors on a users-provided corpus or incorporate a pre-trained word vectors.
 	"""
 	
+	homepage = "https://koheiw.github.io/LSX/"
 	cran = "LSX" 
 
-	version("1.3.2", md5="6a518e7bec7835ce4f54cd098db9af2f")
+	version("1.4.0", md5="bb14ff09e4c941c62a310a10a524aace")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-quanteda@2:", type=("build", "run"))

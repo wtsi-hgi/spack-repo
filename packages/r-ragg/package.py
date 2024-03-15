@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,7 +16,9 @@ class RRagg(RPackage):
 
 	cran = "ragg"
 
-	version("1.2.7", md5="b3552306bc07a827415f7c6fd1f9fc23")
+	license("MIT")
+
+	version("1.3.0", md5="dc546005cff17506bf712be3e7dbf610")
 
 	depends_on("r-systemfonts", type=("build", "run"))
 	depends_on("r-textshaping", type=("build", "run"))

@@ -14,7 +14,7 @@ class RStepnorm(RPackage):
 	
 	homepage = "http://www.biostat.ucsf.edu/jean/"
 	bioc = "stepNorm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/stepNorm_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/stepNorm/stepNorm_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/stepNorm_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/stepNorm/stepNorm_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="a8f357efcff85a6d723734d6e0a91ba0")
 

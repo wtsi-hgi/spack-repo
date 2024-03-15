@@ -13,7 +13,7 @@ class RMouse4302frmavecs(RPackage):
 	"""
 	
 	bioc = "mouse4302frmavecs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mouse4302frmavecs_1.5.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mouse4302frmavecs/mouse4302frmavecs_1.5.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mouse4302frmavecs_1.5.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mouse4302frmavecs/mouse4302frmavecs_1.5.0.tar.gz"]
 
 	version("1.5.0", md5="ec144b381abbe54d696356c1c124e372")
 

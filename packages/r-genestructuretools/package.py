@@ -13,7 +13,7 @@ class RGenestructuretools(RPackage):
 	"""
 	
 	bioc = "GeneStructureTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GeneStructureTools_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GeneStructureTools/GeneStructureTools_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneStructureTools_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneStructureTools/GeneStructureTools_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="513385498b639ea6acc724bb3795de38")
 

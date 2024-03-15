@@ -14,7 +14,7 @@ class RBridgedbr(RPackage):
 	
 	homepage = "https://github.com/bridgedb/BridgeDbR"
 	bioc = "BridgeDbR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BridgeDbR_2.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BridgeDbR/BridgeDbR_2.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BridgeDbR_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BridgeDbR/BridgeDbR_2.12.0.tar.gz"]
 
 	version("2.12.0", md5="2c155c28cb8d117e2dc1b69873b91d84")
 

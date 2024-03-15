@@ -14,7 +14,7 @@ class RTerratcgadata(RPackage):
 	
 	homepage = "https://github.com/waldronlab/terraTCGAdata"
 	bioc = "terraTCGAdata" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/terraTCGAdata_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/terraTCGAdata/terraTCGAdata_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/terraTCGAdata_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/terraTCGAdata/terraTCGAdata_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="b5803a78627bbe874b8cd8ae0a147979")
 

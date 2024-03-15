@@ -14,7 +14,7 @@ class RSpectra(RPackage):
 	
 	homepage = "https://github.com/RforMassSpectrometry/Spectra"
 	bioc = "Spectra" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Spectra_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Spectra/Spectra_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Spectra_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Spectra/Spectra_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="32589596593389b703c87d7a05479fe3")
 

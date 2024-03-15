@@ -14,7 +14,7 @@ class RBrainflowprobes(RPackage):
 	
 	homepage = "https://github.com/LieberInstitute/brainflowprobes"
 	bioc = "brainflowprobes" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/brainflowprobes_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/brainflowprobes/brainflowprobes_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/brainflowprobes_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/brainflowprobes/brainflowprobes_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="eb9efebe165aeeae35ccc6b115836937")
 

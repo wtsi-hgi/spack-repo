@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class RCategory(RPackage):
 	analysis."""
 
 	bioc = "Category"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Category_2.68.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Category/Category_2.68.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Category_2.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Category/Category_2.68.0.tar.gz"]
 
 	version("2.68.0", md5="d84fb36419834bb84721436d7f956932")
 

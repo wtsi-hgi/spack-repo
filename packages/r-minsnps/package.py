@@ -15,7 +15,7 @@ class RMinsnps(RPackage):
 	homepage = "https://github.com/ludwigHoon/minSNPs"
 	cran = "minSNPs" 
 
-	version("0.1.0", md5="4d3f6cd934761e397d2006700de757be")
+	version("0.2.0", md5="6236eed5178bb53b695144b82a5a0cb9")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

@@ -13,7 +13,7 @@ class RDelayedtensor(RPackage):
 	"""
 	
 	bioc = "DelayedTensor" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DelayedTensor_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DelayedTensor/DelayedTensor_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DelayedTensor_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DelayedTensor/DelayedTensor_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="ee3e89ac7a0b9f3ca79f744edfdc69b8")
 

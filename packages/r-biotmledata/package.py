@@ -13,7 +13,7 @@ class RBiotmledata(RPackage):
 	"""
 	
 	bioc = "biotmleData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/biotmleData_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/biotmleData/biotmleData_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/biotmleData_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/biotmleData/biotmleData_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="8c725d5c496f9bfe7ed4b5d5c538244a")
 

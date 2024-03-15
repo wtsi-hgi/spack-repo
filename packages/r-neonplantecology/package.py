@@ -15,7 +15,7 @@ class RNeonplantecology(RPackage):
 	homepage = "https://github.com/admahood/neonPlantEcology"
 	cran = "neonPlantEcology" 
 
-	version("1.4.0", md5="e5e12948a0aa4cbd53c0dcb6eb777475")
+	version("1.5.0", md5="f9a1728f59902b96be2220e198fdc681")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-neonutilities", type=("build", "run"))
@@ -24,6 +24,7 @@ class RNeonplantecology(RPackage):
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-dtplyr", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
+	depends_on("r-lubridate", type=("build", "run"))
 	depends_on("r-sf", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))

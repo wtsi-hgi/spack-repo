@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,8 @@ class RNonnest2(RPackage):
 	Science Foundation under Grant Number SES-1061334."""
 
 	cran = "nonnest2"
+
+	license("GPL-2.0-only OR GPL-3.0-only")
 
 	version("0.5-6", md5="404b9edab7bb21841bd359fdfc2c5c82", url="https://cran.r-project.org/src/contrib/nonnest2_0.5-6.tar.gz")
 

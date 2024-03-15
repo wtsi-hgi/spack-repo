@@ -14,7 +14,7 @@ class RGranie(RPackage):
 	
 	homepage = "https://grp-zaugg.embl-community.io/GRaNIE"
 	bioc = "GRaNIE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GRaNIE_1.6.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GRaNIE/GRaNIE_1.6.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GRaNIE_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GRaNIE/GRaNIE_1.6.1.tar.gz"]
 
 	version("1.6.1", md5="d9db703063398ccd263ce6b54def9266")
 

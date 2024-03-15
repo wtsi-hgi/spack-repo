@@ -14,7 +14,7 @@ class RScrnaseqapp(RPackage):
 	
 	homepage = "https://github.com/jianhong/scRNAseqApp"
 	bioc = "scRNAseqApp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scRNAseqApp_1.2.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scRNAseqApp/scRNAseqApp_1.2.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scRNAseqApp_1.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scRNAseqApp/scRNAseqApp_1.2.2.tar.gz"]
 
 	version("1.2.2", md5="a9b64e980a9e0acef5ab93a44a35e124")
 

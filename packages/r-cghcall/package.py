@@ -13,7 +13,7 @@ class RCghcall(RPackage):
 	"""
 	
 	bioc = "CGHcall" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CGHcall_2.64.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CGHcall/CGHcall_2.64.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CGHcall_2.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CGHcall/CGHcall_2.64.0.tar.gz"]
 
 	version("2.64.0", md5="7a43fd6ae1e6c288b98abd2b8824fed4")
 

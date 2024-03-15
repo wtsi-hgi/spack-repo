@@ -13,7 +13,7 @@ class RScrepertoire(RPackage):
 	"""
 	
 	bioc = "scRepertoire" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scRepertoire_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scRepertoire/scRepertoire_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scRepertoire_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scRepertoire/scRepertoire_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="3debd173702ebe6c551ba6c572a76c25")
 

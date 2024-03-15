@@ -13,7 +13,7 @@ class RSoybeancdf(RPackage):
 	"""
 	
 	bioc = "soybeancdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/soybeancdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/soybeancdf/soybeancdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/soybeancdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/soybeancdf/soybeancdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="a18e0ba5dbcf2291bdec91091dc528e6")
 

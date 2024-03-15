@@ -13,7 +13,7 @@ class RTnbcCms(RPackage):
 	"""
 	
 	bioc = "TNBC.CMS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TNBC.CMS_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TNBC.CMS/TNBC.CMS_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TNBC.CMS_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TNBC.CMS/TNBC.CMS_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="a0cf09eed274d5cd812076d4f000e1bb")
 

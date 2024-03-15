@@ -14,7 +14,7 @@ class RIsobar(RPackage):
 	
 	homepage = "https://github.com/fbreitwieser/isobar"
 	bioc = "isobar" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/isobar_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/isobar/isobar_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/isobar_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/isobar/isobar_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="bf7b66ee10cfc2f8b24f22642bbc395a")
 

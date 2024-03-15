@@ -14,7 +14,7 @@ class RDifflogo(RPackage):
 	
 	homepage = "https://github.com/mgledi/DiffLogo/"
 	bioc = "DiffLogo" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DiffLogo_2.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DiffLogo/DiffLogo_2.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DiffLogo_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DiffLogo/DiffLogo_2.26.0.tar.gz"]
 
 	version("2.26.0", md5="f122cc5f6153c8dc4fabe92b33d1e608")
 

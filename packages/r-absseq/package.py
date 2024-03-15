@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,7 +16,7 @@ class RAbsseq(RPackage):
 	expression level."""
 
 	bioc = "ABSSeq"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ABSSeq_1.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ABSSeq/ABSSeq_1.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ABSSeq_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ABSSeq/ABSSeq_1.56.0.tar.gz"]
 
 	version("1.56.0", md5="d170bf2f9a37dcdffd2d91e233ce5132")
 

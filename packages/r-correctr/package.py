@@ -19,6 +19,6 @@ on Correlated Samples
 	homepage = "https://hendersontrent.github.io/correctR/"
 	cran = "correctR" 
 
-	version("0.1.3", md5="58e50e4232edb65e7149c8cdf8c9a5db")
+	version("0.2.1", md5="9da8f14ebd076f7380f04af2eacb50f5")
 
 	depends_on("r@3.5:", type=("build", "run"))

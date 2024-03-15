@@ -14,7 +14,7 @@ class RAnnmap(RPackage):
 	
 	homepage = "https://github.com/cruk-mi/annmap"
 	bioc = "annmap" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/annmap_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/annmap/annmap_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/annmap_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/annmap/annmap_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="4e793a7c30de8248f566e7c14bf3fa90")
 

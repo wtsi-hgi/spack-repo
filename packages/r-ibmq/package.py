@@ -14,7 +14,7 @@ class RIbmq(RPackage):
 	
 	homepage = "http://www.rglab.org"
 	bioc = "iBMQ" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iBMQ_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iBMQ/iBMQ_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iBMQ_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iBMQ/iBMQ_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="9737c0aee38670491b2f29f73dcb743c")
 

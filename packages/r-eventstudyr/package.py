@@ -15,7 +15,7 @@ class REventstudyr(RPackage):
 	homepage = "https://github.com/JMSLab/eventstudyr"
 	cran = "eventstudyr" 
 
-	version("1.1.2", md5="5f8ea32c66e3d29f602de2f35710af6a")
+	version("1.1.3", md5="041dfbf373c1ced26f9449480a12f3ad")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-car", type=("build", "run"))

@@ -13,7 +13,7 @@ class RChromhmmdata(RPackage):
 	"""
 	
 	bioc = "chromhmmData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/chromhmmData_0.99.2.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/chromhmmData/chromhmmData_0.99.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/chromhmmData_0.99.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/chromhmmData/chromhmmData_0.99.2.tar.gz"]
 
 	version("0.99.2", md5="eec85c20139b3d826f00264c7b28207c")
 

@@ -14,7 +14,7 @@ class RMutationalpatterns(RPackage):
 	
 	homepage = "https://doi.org/doi:10.1186/s12864-022-08357-3"
 	bioc = "MutationalPatterns" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MutationalPatterns_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MutationalPatterns/MutationalPatterns_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MutationalPatterns_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MutationalPatterns/MutationalPatterns_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="6c800e4f89957108a1b4ab1d3a2b4cb6")
 

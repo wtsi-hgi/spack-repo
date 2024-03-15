@@ -22,7 +22,7 @@ class RAdmiral(RPackage):
 	homepage = "https://pharmaverse.github.io/admiral/"
 	cran = "admiral" 
 
-	version("1.0.1", md5="a0c89b5666983480dbfbcd05269ad90c")
+	version("1.0.2", md5="641ae405564dcaac07387f00d1dea366")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-admiraldev@1:", type=("build", "run"))

@@ -14,7 +14,7 @@ class RScfeatures(RPackage):
 	
 	homepage = "https://sydneybiox.github.io/scFeatures/"
 	bioc = "scFeatures" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scFeatures_1.3.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scFeatures/scFeatures_1.3.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scFeatures_1.3.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scFeatures/scFeatures_1.3.2.tar.gz"]
 
 	version("1.3.2", md5="58b6496d5f812ef271a1cd47932b903c")
 

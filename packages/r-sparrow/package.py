@@ -14,7 +14,7 @@ class RSparrow(RPackage):
 	
 	homepage = "https://github.com/lianos/sparrow"
 	bioc = "sparrow" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sparrow_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sparrow/sparrow_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sparrow_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sparrow/sparrow_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="072ccf02fa2cc42410000f238dce492b")
 

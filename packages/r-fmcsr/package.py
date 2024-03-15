@@ -14,7 +14,7 @@ class RFmcsr(RPackage):
 	
 	homepage = "https://github.com/girke-lab/fmcsR"
 	bioc = "fmcsR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/fmcsR_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/fmcsR/fmcsR_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fmcsR_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fmcsR/fmcsR_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="21a6242a61cba8dd537bf846af3260c3")
 

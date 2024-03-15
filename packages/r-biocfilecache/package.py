@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,7 @@ class RBiocfilecache(RPackage):
 	resources, and data files used across sessions."""
 
 	bioc = "BiocFileCache"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiocFileCache_2.10.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiocFileCache/BiocFileCache_2.10.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocFileCache_2.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocFileCache/BiocFileCache_2.10.1.tar.gz"]
 
 	version("2.10.1", md5="80f9b9c7ef6f3fcb9aaff7125b409137")
 

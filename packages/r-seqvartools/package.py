@@ -14,7 +14,7 @@ class RSeqvartools(RPackage):
 	
 	homepage = "https://github.com/smgogarten/SeqVarTools"
 	bioc = "SeqVarTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SeqVarTools_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SeqVarTools/SeqVarTools_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SeqVarTools_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SeqVarTools/SeqVarTools_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="160f56cd78339c2e4d4b5c0766a47846")
 

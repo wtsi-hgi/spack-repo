@@ -13,7 +13,7 @@ class RIpac(RPackage):
 	"""
 	
 	bioc = "iPAC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iPAC_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iPAC/iPAC_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iPAC_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iPAC/iPAC_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="2ea1fca8a80c62d82be0ef8d6313e52b")
 

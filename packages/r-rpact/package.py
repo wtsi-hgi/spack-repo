@@ -15,7 +15,7 @@ class RRpact(RPackage):
 	homepage = "https://www.rpact.org"
 	cran = "rpact" 
 
-	version("3.5.0", md5="76bfc34b89c30a5ef826f2d6e8469f10")
+	version("3.5.1", md5="fa373636fe43b504eb8db2e21b8740f0")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

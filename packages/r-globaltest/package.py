@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,7 +17,7 @@ class RGlobaltest(RPackage):
 	terms."""
 
 	bioc = "globaltest"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/globaltest_5.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/globaltest/globaltest_5.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/globaltest_5.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/globaltest/globaltest_5.56.0.tar.gz"]
 
 	version("5.56.0", md5="ca389a7105fc08bc6172ce755d842a31")
 

@@ -13,7 +13,7 @@ class RMeb(RPackage):
 	"""
 	
 	bioc = "MEB" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MEB_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MEB/MEB_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MEB_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MEB/MEB_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="b1785984524fee5b32976a5e768037d6")
 

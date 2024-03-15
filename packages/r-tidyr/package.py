@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,6 +18,8 @@ class RTidyr(RPackage):
 	explicit)."""
 
 	cran = "tidyr"
+
+	license("MIT")
 
 	version("1.3.1", md5="0491d9d3359af7baf8ad9003ce44aa1d")
 

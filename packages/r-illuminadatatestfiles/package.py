@@ -13,7 +13,7 @@ class RIlluminadatatestfiles(RPackage):
 	"""
 	
 	bioc = "IlluminaDataTestFiles" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/IlluminaDataTestFiles_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/IlluminaDataTestFiles/IlluminaDataTestFiles_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/IlluminaDataTestFiles_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/IlluminaDataTestFiles/IlluminaDataTestFiles_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="3afa4b143fbb1dd18b3a7acd8f2984b1")
 

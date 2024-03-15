@@ -13,7 +13,7 @@ class RNestlink(RPackage):
 	"""
 	
 	bioc = "NestLink" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/NestLink_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/NestLink/NestLink_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/NestLink_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/NestLink/NestLink_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="11cd94f5bd8b38cf261ae3346a283e81")
 

@@ -13,7 +13,7 @@ class RRiboseqr(RPackage):
 	"""
 	
 	bioc = "riboSeqR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/riboSeqR_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/riboSeqR/riboSeqR_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/riboSeqR_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/riboSeqR/riboSeqR_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="eb9c84e564128ad11960fac5955c4d2f")
 

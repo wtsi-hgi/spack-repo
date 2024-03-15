@@ -14,7 +14,7 @@ class RBgeedb(RPackage):
 	
 	homepage = "https://github.com/BgeeDB/BgeeDB_R"
 	bioc = "BgeeDB" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BgeeDB_2.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BgeeDB/BgeeDB_2.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BgeeDB_2.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BgeeDB/BgeeDB_2.28.0.tar.gz"]
 
 	version("2.28.0", md5="9b8f5e9e829bd05d9a8322b3ff3408dd")
 

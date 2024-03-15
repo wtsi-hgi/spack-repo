@@ -7,9 +7,9 @@ from spack.package import *
 
 
 class RGcplyr(RPackage):
-	"""Manipulate and Analyze Growth Curve Data
+	"""Wrangle and Analyze Growth Curve Data
 
-	Easy import, reshaping, and model-free analysis of
+	Easy wrangling and model-free analysis of
     microbial growth curve data, as commonly output by plate readers.
     Tools for reshaping common plate reader outputs into 'tidy' formats and
     merging them with design information, making data easy to work with using 
@@ -22,8 +22,9 @@ class RGcplyr(RPackage):
 	homepage = "https://mikeblazanin.github.io/gcplyr/"
 	cran = "gcplyr" 
 
-	version("1.8.0", md5="ce30c32c9a7066e211948fbdc79337e9")
+	version("1.9.0", md5="f55e60ce6fc64f95374589c29bca00c0")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
+	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))

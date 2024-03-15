@@ -13,7 +13,7 @@ class RMi16codDb(RPackage):
 	"""
 	
 	bioc = "mi16cod.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mi16cod.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mi16cod.db/mi16cod.db_3.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mi16cod.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mi16cod.db/mi16cod.db_3.4.0.tar.gz"]
 
 	version("3.4.0", md5="f3a8e6f45ce5c298c1b1c5b32bf2630c")
 

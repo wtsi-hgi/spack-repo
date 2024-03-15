@@ -14,7 +14,7 @@ class RSingscoreamlmutations(RPackage):
 	
 	homepage = "https://github.com/DavisLaboratory/SingscoreAMLMutations"
 	bioc = "SingscoreAMLMutations" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/SingscoreAMLMutations_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/SingscoreAMLMutations/SingscoreAMLMutations_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/SingscoreAMLMutations_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/SingscoreAMLMutations/SingscoreAMLMutations_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="f427ac59e2fa6470b47eb92506f45c9b")
 

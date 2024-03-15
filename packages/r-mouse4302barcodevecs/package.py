@@ -13,7 +13,7 @@ class RMouse4302barcodevecs(RPackage):
 	"""
 	
 	bioc = "mouse4302barcodevecs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/mouse4302barcodevecs_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/mouse4302barcodevecs/mouse4302barcodevecs_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mouse4302barcodevecs_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mouse4302barcodevecs/mouse4302barcodevecs_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="365757fba17dae1ed483e184d2c9fcdb")
 

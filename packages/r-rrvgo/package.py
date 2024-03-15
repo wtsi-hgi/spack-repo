@@ -14,9 +14,9 @@ class RRrvgo(RPackage):
 	
 	homepage = "https://www.bioconductor.org/packages/rrvgo"
 	bioc = "rrvgo" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rrvgo_1.14.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rrvgo/rrvgo_1.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rrvgo_1.14.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rrvgo/rrvgo_1.14.2.tar.gz"]
 
-	version("1.14.1", md5="b1813722d66dba8b701c0cc0f614c5ca")
+	version("1.14.2", md5="78513384594843fec3505cf9667eae02")
 
 	depends_on("r-gosemsim", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

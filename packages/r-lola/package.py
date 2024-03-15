@@ -14,7 +14,7 @@ class RLola(RPackage):
 	
 	homepage = "http://code.databio.org/LOLA"
 	bioc = "LOLA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/LOLA_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/LOLA/LOLA_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LOLA_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LOLA/LOLA_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="e3ff8271b0433c6098fd7380af165742")
 

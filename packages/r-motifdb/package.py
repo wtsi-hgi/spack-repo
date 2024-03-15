@@ -13,7 +13,7 @@ class RMotifdb(RPackage):
 	"""
 	
 	bioc = "MotifDb" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MotifDb_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MotifDb/MotifDb_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MotifDb_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MotifDb/MotifDb_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="0aa63f3bc133dc0fa6c8cf88ebae383b")
 

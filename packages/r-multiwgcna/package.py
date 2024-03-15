@@ -13,7 +13,7 @@ class RMultiwgcna(RPackage):
 	"""
 	
 	bioc = "multiWGCNA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/multiWGCNA_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/multiWGCNA/multiWGCNA_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/multiWGCNA_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/multiWGCNA/multiWGCNA_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="b8f70e9496cf73238aa3ba3c08cb81fa")
 

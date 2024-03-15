@@ -21,10 +21,10 @@ class RHirestec(RPackage):
     <doi:10.1021/acs.analchem.8b00356>.
 	"""
 	
-	homepage = "https://CRAN.R-project.org/package=HiResTEC"
+	homepage = "https://github.com/janlisec/HiResTEC"
 	cran = "HiResTEC" 
 
-	version("0.62", md5="d03a8de575f1e7bf186363974959f8de")
+	version("0.62.3", md5="7e28033a653983193241064c1b4c121a")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-beeswarm", type=("build", "run"))

@@ -13,7 +13,7 @@ class RSizepower(RPackage):
 	"""
 	
 	bioc = "sizepower" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sizepower_1.72.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sizepower/sizepower_1.72.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sizepower_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sizepower/sizepower_1.72.0.tar.gz"]
 
 	version("1.72.0", md5="4edf7f08a26ccaa8ae0d08e17b6ef0cd")
 

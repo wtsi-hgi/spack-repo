@@ -14,7 +14,7 @@ class RKboost(RPackage):
 	
 	homepage = "https://github.com/Luisiglm/KBoost"
 	bioc = "KBoost" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/KBoost_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/KBoost/KBoost_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/KBoost_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/KBoost/KBoost_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="853c93af3367a8af56b60aea8495f44b")
 

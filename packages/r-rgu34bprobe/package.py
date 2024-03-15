@@ -13,7 +13,7 @@ class RRgu34bprobe(RPackage):
 	"""
 	
 	bioc = "rgu34bprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/rgu34bprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/rgu34bprobe/rgu34bprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rgu34bprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rgu34bprobe/rgu34bprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="2d6488309c5e54231a18e2ecf5608bb1")
 

@@ -17,7 +17,7 @@ class RSugrrants(RPackage):
 	homepage = "https://pkg.earo.me/sugrrants/"
 	cran = "sugrrants" 
 
-	version("0.2.8", md5="44371cf4239b152045877d572cea84c2")
+	version("0.2.9", md5="709076892cee8db8b196ddc65eb5f852")
 
 	depends_on("r-ggplot2@2.2:", type=("build", "run"))
 	depends_on("r@3.1.3:", type=("build", "run"))

@@ -13,7 +13,7 @@ class RNetactivity(RPackage):
 	"""
 	
 	bioc = "NetActivity" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/NetActivity_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/NetActivity/NetActivity_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NetActivity_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NetActivity/NetActivity_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="3493b441d888adf6d3a089936bbeafd6")
 

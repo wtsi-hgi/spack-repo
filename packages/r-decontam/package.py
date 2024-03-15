@@ -14,7 +14,7 @@ class RDecontam(RPackage):
 	
 	homepage = "https://github.com/benjjneb/decontam"
 	bioc = "decontam" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/decontam_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/decontam/decontam_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/decontam_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/decontam/decontam_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="0e6be1cbff9c4396692e39aadc0a5b9e")
 

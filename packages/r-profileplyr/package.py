@@ -13,7 +13,7 @@ class RProfileplyr(RPackage):
 	"""
 	
 	bioc = "profileplyr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/profileplyr_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/profileplyr/profileplyr_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/profileplyr_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/profileplyr/profileplyr_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="bc6ac2ac1050660a2cb45a11ebbd1a67")
 

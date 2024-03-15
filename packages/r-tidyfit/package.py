@@ -15,7 +15,7 @@ class RTidyfit(RPackage):
 	homepage = "https://tidyfit.residualmetrics.com"
 	cran = "tidyfit" 
 
-	version("0.6.5", md5="50baaa278aee9338e0a7a604441e8ba9")
+	version("0.7.0", md5="3d46c94c82141fc6b2507ad0b4bf5d87")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))
@@ -23,6 +23,7 @@ class RTidyfit(RPackage):
 	depends_on("r-dials", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-furrr", type=("build", "run"))
+	depends_on("r-generics", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-progressr", type=("build", "run"))
@@ -31,4 +32,5 @@ class RTidyfit(RPackage):
 	depends_on("r-rsample", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
+	depends_on("r-vctrs", type=("build", "run"))
 	depends_on("r-yardstick", type=("build", "run"))

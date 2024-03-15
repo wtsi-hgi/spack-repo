@@ -13,7 +13,7 @@ class ROligo(RPackage):
 	"""
 	
 	bioc = "oligo" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/oligo_1.66.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/oligo/oligo_1.66.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oligo_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oligo/oligo_1.66.0.tar.gz"]
 
 	version("1.66.0", md5="3ba99dedbe0ebca2fcaa81a400777469")
 

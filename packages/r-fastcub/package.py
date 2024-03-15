@@ -7,14 +7,16 @@ from spack.package import *
 
 
 class RFastcub(RPackage):
-	"""Fast EM and Best-Subset Selection for CUB Models for Rating Data
+	"""Fast Estimation of CUB Models via Louis' Identity
 
-	For ordinal rating data, consider the accelerated Expectation-Maximization algorithm to estimate and test models within the family of CUB models (where CUB stands for Combination of a discrete Uniform and a shifted Binomial distributions). The procedure is built upon Louis' identity for the observed information matrix.  Best-subset variable selection for CUB regression models is then implemented on such basis. The methods here implemented are illustrated and discussed in the preprint available from Researchgate by Simone R. (2020) <https://tinyurl.com/vvk563e>.
+	For ordinal rating data, consider the accelerated EM algorithm to estimate and test models within the family of
+    CUB models (where CUB stands for Combination of a 
+	discrete Uniform and a shifted Binomial distributions). The procedure is built upon Louis' identity for the observed information matrix. Best-subset variable selection is then implemented since it becomes more feasible from the computational point of view.
 	"""
 	
 	cran = "FastCUB" 
 
-	version("0.0.2", md5="481c248e1f6882af1e478abd928ca59a")
+	version("0.0.3", md5="7646bfec4b4dae546045c877f166f98b")
 
 	depends_on("r@2.15.2:", type=("build", "run"))
 	depends_on("r-formula", type=("build", "run"))

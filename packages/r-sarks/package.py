@@ -14,7 +14,7 @@ class RSarks(RPackage):
 	
 	homepage = "https://academic.oup.com/bioinformatics/article-abstract/35/20/3944/5418797"
 	bioc = "sarks" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sarks_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sarks/sarks_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sarks_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sarks/sarks_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="b6fc7553269237bea782582b858aaee5")
 

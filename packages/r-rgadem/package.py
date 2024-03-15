@@ -13,7 +13,7 @@ class RRgadem(RPackage):
 	"""
 	
 	bioc = "rGADEM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rGADEM_2.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rGADEM/rGADEM_2.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rGADEM_2.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rGADEM/rGADEM_2.50.0.tar.gz"]
 
 	version("2.50.0", md5="17a121fa91f30cba09ed9dbb6b318555")
 

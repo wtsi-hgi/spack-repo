@@ -13,7 +13,7 @@ class RRnu34cdf(RPackage):
 	"""
 	
 	bioc = "rnu34cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/rnu34cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/rnu34cdf/rnu34cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rnu34cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rnu34cdf/rnu34cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="0f2564fc6ac89de4d779faf253f23ce3")
 

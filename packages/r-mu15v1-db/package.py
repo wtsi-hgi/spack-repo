@@ -13,7 +13,7 @@ class RMu15v1Db(RPackage):
 	"""
 	
 	bioc = "Mu15v1.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Mu15v1.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/Mu15v1.db/Mu15v1.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Mu15v1.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Mu15v1.db/Mu15v1.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="e9297b5fe223b046bc65dc6ea0b4376d")
 

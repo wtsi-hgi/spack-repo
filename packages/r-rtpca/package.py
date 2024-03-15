@@ -13,7 +13,7 @@ class RRtpca(RPackage):
 	"""
 	
 	bioc = "Rtpca" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Rtpca_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Rtpca/Rtpca_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rtpca_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rtpca/Rtpca_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="671f34f1c510812fc37d66ed50378d75")
 

@@ -14,7 +14,7 @@ class RMilor(RPackage):
 	
 	homepage = "https://marionilab.github.io/miloR"
 	bioc = "miloR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/miloR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/miloR/miloR_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miloR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miloR/miloR_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="9ab9a4a2fe26786cd8fef69354bfa08f")
 

@@ -14,7 +14,7 @@ class RDerfinderplot(RPackage):
 	
 	homepage = "https://github.com/leekgroup/derfinderPlot"
 	bioc = "derfinderPlot" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/derfinderPlot_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/derfinderPlot/derfinderPlot_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/derfinderPlot_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/derfinderPlot/derfinderPlot_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="c3dbd553554f3b043b8f03e4b05a964a")
 

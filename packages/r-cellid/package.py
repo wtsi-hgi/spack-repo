@@ -13,7 +13,7 @@ class RCellid(RPackage):
 	"""
 	
 	bioc = "CelliD" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CelliD_1.10.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CelliD/CelliD_1.10.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CelliD_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CelliD/CelliD_1.10.1.tar.gz"]
 
 	version("1.10.1", md5="91ef83db3f348575f3b90cf4c3753806")
 

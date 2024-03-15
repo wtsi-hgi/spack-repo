@@ -14,7 +14,7 @@ class RCola(RPackage):
 	
 	homepage = "https://github.com/jokergoo/cola"
 	bioc = "cola" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cola_2.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cola/cola_2.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cola_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cola/cola_2.8.0.tar.gz"]
 
 	version("2.8.0", md5="57e054e12610fb8d62de83c22f6ed1de")
 

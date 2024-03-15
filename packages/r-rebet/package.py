@@ -13,7 +13,7 @@ class RRebet(RPackage):
 	"""
 	
 	bioc = "REBET" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/REBET_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/REBET/REBET_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/REBET_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/REBET/REBET_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="fc1e4bc02e112473630da74fce831189")
 

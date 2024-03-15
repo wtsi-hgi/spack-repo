@@ -14,7 +14,7 @@ class RComet(RPackage):
 	
 	homepage = "http://epigen.kcl.ac.uk/comet"
 	bioc = "coMET" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/coMET_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/coMET/coMET_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/coMET_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/coMET/coMET_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="34ef806a15489ccd38abd9002fe075ed")
 

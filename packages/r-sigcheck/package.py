@@ -13,7 +13,7 @@ class RSigcheck(RPackage):
 	"""
 	
 	bioc = "SigCheck" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SigCheck_2.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SigCheck/SigCheck_2.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SigCheck_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SigCheck/SigCheck_2.34.0.tar.gz"]
 
 	version("2.34.0", md5="0c956bbf06058a0a494f887fbdf6549f")
 

@@ -13,7 +13,7 @@ class ROrganismDplyr(RPackage):
 	"""
 	
 	bioc = "Organism.dplyr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Organism.dplyr_1.30.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Organism.dplyr/Organism.dplyr_1.30.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Organism.dplyr_1.30.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Organism.dplyr/Organism.dplyr_1.30.1.tar.gz"]
 
 	version("1.30.1", md5="b16c25c3ee5abafa1007a9c7bd731801")
 

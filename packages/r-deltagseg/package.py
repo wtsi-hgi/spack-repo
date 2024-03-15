@@ -13,7 +13,7 @@ class RDeltagseg(RPackage):
 	"""
 	
 	bioc = "deltaGseg" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/deltaGseg_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/deltaGseg/deltaGseg_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/deltaGseg_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/deltaGseg/deltaGseg_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="e92ca25a67a9250f26c6263043c60ee2")
 

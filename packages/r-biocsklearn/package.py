@@ -13,7 +13,7 @@ class RBiocsklearn(RPackage):
 	"""
 	
 	bioc = "BiocSklearn" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiocSklearn_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiocSklearn/BiocSklearn_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocSklearn_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocSklearn/BiocSklearn_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="a3df49031172bfd2b2a3b1c242b7dd40")
 

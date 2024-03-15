@@ -14,7 +14,7 @@ class RIdeal(RPackage):
 	
 	homepage = "https://github.com/federicomarini/ideal"
 	bioc = "ideal" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ideal_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ideal/ideal_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ideal_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ideal/ideal_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="d4714305a9be71a4b4c71da0fb624148")
 

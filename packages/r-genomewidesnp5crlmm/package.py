@@ -13,7 +13,7 @@ class RGenomewidesnp5crlmm(RPackage):
 	"""
 	
 	bioc = "genomewidesnp5Crlmm" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/genomewidesnp5Crlmm_1.0.6.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/genomewidesnp5Crlmm/genomewidesnp5Crlmm_1.0.6.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/genomewidesnp5Crlmm_1.0.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/genomewidesnp5Crlmm/genomewidesnp5Crlmm_1.0.6.tar.gz"]
 
 	version("1.0.6", md5="cc24140cd17758b8e09f4fe6c931526a")
 

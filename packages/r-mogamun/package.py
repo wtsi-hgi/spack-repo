@@ -14,7 +14,7 @@ class RMogamun(RPackage):
 	
 	homepage = "https://github.com/elvanov/MOGAMUN"
 	bioc = "MOGAMUN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MOGAMUN_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MOGAMUN/MOGAMUN_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MOGAMUN_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MOGAMUN/MOGAMUN_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="8e2d5c06b9fc3d7e294b154f7efb83b3")
 

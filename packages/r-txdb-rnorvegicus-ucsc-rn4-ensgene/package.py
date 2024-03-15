@@ -13,7 +13,7 @@ class RTxdbRnorvegicusUcscRn4Ensgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Rnorvegicus.UCSC.rn4.ensGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Rnorvegicus.UCSC.rn4.ensGene_3.2.2.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Rnorvegicus.UCSC.rn4.ensGene/TxDb.Rnorvegicus.UCSC.rn4.ensGene_3.2.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Rnorvegicus.UCSC.rn4.ensGene_3.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Rnorvegicus.UCSC.rn4.ensGene/TxDb.Rnorvegicus.UCSC.rn4.ensGene_3.2.2.tar.gz"]
 
 	version("3.2.2", md5="6bf2ebc522c2828c036e52b2028792c1")
 

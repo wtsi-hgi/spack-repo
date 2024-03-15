@@ -13,7 +13,7 @@ class RRat2302frmavecs(RPackage):
 	"""
 	
 	bioc = "rat2302frmavecs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/rat2302frmavecs_0.99.11.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/rat2302frmavecs/rat2302frmavecs_0.99.11.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rat2302frmavecs_0.99.11.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rat2302frmavecs/rat2302frmavecs_0.99.11.tar.gz"]
 
 	version("0.99.11", md5="44d9f00c2f3806899c6605d1ba274066")
 

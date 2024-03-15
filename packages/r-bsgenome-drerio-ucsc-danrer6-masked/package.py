@@ -13,7 +13,7 @@ class RBsgenomeDrerioUcscDanrer6Masked(RPackage):
 	"""
 	
 	bioc = "BSgenome.Drerio.UCSC.danRer6.masked" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Drerio.UCSC.danRer6.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Drerio.UCSC.danRer6.masked/BSgenome.Drerio.UCSC.danRer6.masked_1.3.99.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Drerio.UCSC.danRer6.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Drerio.UCSC.danRer6.masked/BSgenome.Drerio.UCSC.danRer6.masked_1.3.99.tar.gz"]
 
 	version("1.3.99", md5="71c9b05c27b8d2e05735e6494a8f17ba")
 

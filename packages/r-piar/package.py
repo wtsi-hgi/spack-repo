@@ -25,7 +25,7 @@ class RPiar(RPackage):
 	homepage = "https://marberts.github.io/piar/"
 	cran = "piar" 
 
-	version("0.6.0", md5="0df88bb105a01aa00b6387942dbd4d55")
+	version("0.7.0", md5="3e8dbc9ece5a540c027324e8b349a7b5")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-gpindex@0.5:", type=("build", "run"))

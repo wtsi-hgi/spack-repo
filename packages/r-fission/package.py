@@ -13,7 +13,7 @@ class RFission(RPackage):
 	"""
 	
 	bioc = "fission" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/fission_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/fission/fission_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/fission_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/fission/fission_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="7d404509808bfc439270093b647ccd80")
 

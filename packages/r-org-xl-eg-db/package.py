@@ -13,7 +13,7 @@ class ROrgXlEgDb(RPackage):
 	"""
 	
 	bioc = "org.Xl.eg.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/org.Xl.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/org.Xl.eg.db/org.Xl.eg.db_3.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Xl.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.Xl.eg.db/org.Xl.eg.db_3.18.0.tar.gz"]
 
 	version("3.18.0", md5="bbea76a4373d8b51048029b83c591aca")
 

@@ -14,7 +14,7 @@ class RCagefightr(RPackage):
 	
 	homepage = "https://github.com/MalteThodberg/CAGEfightR"
 	bioc = "CAGEfightR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CAGEfightR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CAGEfightR/CAGEfightR_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CAGEfightR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CAGEfightR/CAGEfightR_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="86c87a4bec49d7c37ef74a6a6081a685")
 

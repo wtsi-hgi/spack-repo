@@ -13,7 +13,7 @@ class RHipathia(RPackage):
 	"""
 	
 	bioc = "hipathia" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/hipathia_3.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/hipathia/hipathia_3.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hipathia_3.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hipathia/hipathia_3.2.0.tar.gz"]
 
 	version("3.2.0", md5="819d2eecca55d3d4708934bbe69e82a7")
 

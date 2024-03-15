@@ -14,7 +14,7 @@ class RDiffbind(RPackage):
 	
 	homepage = "https://www.cruk.cam.ac.uk/core-facilities/bioinformatics-core/software/DiffBind"
 	bioc = "DiffBind" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DiffBind_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DiffBind/DiffBind_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DiffBind_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DiffBind/DiffBind_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="aa7c15e33713ad0ced01a5b6442e2d3d")
 

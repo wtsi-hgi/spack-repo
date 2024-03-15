@@ -13,7 +13,7 @@ class RShinymethyldata(RPackage):
 	"""
 	
 	bioc = "shinyMethylData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/shinyMethylData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/shinyMethylData/shinyMethylData_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/shinyMethylData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/shinyMethylData/shinyMethylData_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="46f32db849aaa1467d09b0a371769374")
 

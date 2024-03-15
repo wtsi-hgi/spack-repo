@@ -14,7 +14,7 @@ class RCardelino(RPackage):
 	
 	homepage = "https://github.com/single-cell-genetics/cardelino"
 	bioc = "cardelino" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cardelino_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cardelino/cardelino_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cardelino_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cardelino/cardelino_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="363c06547419f29e1cdfe473651e1861")
 

@@ -13,7 +13,7 @@ class RKeggandmetacoredzpathwaysgeo(RPackage):
 	"""
 	
 	bioc = "KEGGandMetacoreDzPathwaysGEO" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/KEGGandMetacoreDzPathwaysGEO_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/KEGGandMetacoreDzPathwaysGEO/KEGGandMetacoreDzPathwaysGEO_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/KEGGandMetacoreDzPathwaysGEO_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/KEGGandMetacoreDzPathwaysGEO/KEGGandMetacoreDzPathwaysGEO_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="3a5180de47f1c28949b77db9f79b44ed")
 

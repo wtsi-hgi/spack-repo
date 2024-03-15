@@ -11,13 +11,12 @@ class RComstab(RPackage):
 
 	Contains the basic functions to apply the unified framework
     for partitioning the drivers of stability of ecological communities. 
-    J. Segrestin, L. Götzenberger, E. Valencia, F. de Bello & J. Lepš (2024) 
-    "A unified framework for partitioning the drivers of stability of ecological communities" <minor revisions>.
+    Segrestin et al. (2024) <doi:10.1111/geb.13828>.
 	"""
 	
 	homepage = "https://github.com/jsegrestin/comstab"
 	cran = "comstab" 
 
-	version("0.0.1", md5="769558036262b09b784d1bdf89632e45")
+	version("0.0.2", md5="8c94d5f900d5f82e5849880e19b6b1bb")
 
 	depends_on("r-ternary", type=("build", "run"))

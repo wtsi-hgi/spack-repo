@@ -14,7 +14,7 @@ class RFlsss(RPackage):
 	
 	cran = "FLSSS" 
 
-	version("9.1.1", md5="6774232dee3c5fe09cdd9cd54968b556")
+	version("9.1.3", md5="586fbc366f159be23c310cf70e06f88a")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rcppparallel", type=("build", "run"))

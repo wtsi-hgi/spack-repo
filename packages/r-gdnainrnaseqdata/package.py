@@ -14,7 +14,7 @@ class RGdnainrnaseqdata(RPackage):
 	
 	homepage = "https://github.com/functionalgenomics/gDNAinRNAseqData"
 	bioc = "gDNAinRNAseqData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/gDNAinRNAseqData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/gDNAinRNAseqData/gDNAinRNAseqData_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/gDNAinRNAseqData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/gDNAinRNAseqData/gDNAinRNAseqData_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="52e275ca255493684657a091667f987f")
 

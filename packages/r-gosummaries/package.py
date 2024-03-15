@@ -14,7 +14,7 @@ class RGosummaries(RPackage):
 	
 	homepage = "https://github.com/raivokolde/GOsummaries"
 	bioc = "GOsummaries" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GOsummaries_2.37.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GOsummaries/GOsummaries_2.37.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOsummaries_2.37.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOsummaries/GOsummaries_2.37.0.tar.gz"]
 
 	version("2.37.0", md5="e31e67ed4c66122dcf79a694096ef539")
 

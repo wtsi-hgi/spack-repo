@@ -14,7 +14,7 @@ class REisar(RPackage):
 	
 	homepage = "https://github.com/fmicompbio/eisaR"
 	bioc = "eisaR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/eisaR_1.14.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/eisaR/eisaR_1.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/eisaR_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/eisaR/eisaR_1.14.1.tar.gz"]
 
 	version("1.14.1", md5="aacb421b1779d259cd148ace92555909")
 

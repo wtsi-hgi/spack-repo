@@ -13,7 +13,7 @@ class RMicrobiomeexplorer(RPackage):
 	"""
 	
 	bioc = "microbiomeExplorer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/microbiomeExplorer_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/microbiomeExplorer/microbiomeExplorer_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/microbiomeExplorer_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/microbiomeExplorer/microbiomeExplorer_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="c1e966728a968697ad53fd6405c156c5")
 

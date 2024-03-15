@@ -14,9 +14,9 @@ class RDorothea(RPackage):
 	
 	homepage = "https://saezlab.github.io/dorothea/"
 	bioc = "dorothea" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/dorothea_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/dorothea/dorothea_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/dorothea_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/dorothea/dorothea_1.14.1.tar.gz"]
 
-	version("1.14.0", md5="d1ad1213db5d54f1fc6ef8d195b9bbc0")
+	version("1.14.1", md5="962242cff51a595005ff65d6dad90121")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

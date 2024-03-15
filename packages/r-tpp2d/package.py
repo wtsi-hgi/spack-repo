@@ -14,7 +14,7 @@ class RTpp2d(RPackage):
 	
 	homepage = "http://bioconductor.org/packages/TPP2D"
 	bioc = "TPP2D" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TPP2D_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TPP2D/TPP2D_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TPP2D_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TPP2D/TPP2D_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="b10330822e1c629c04c568ab155b4ee1")
 

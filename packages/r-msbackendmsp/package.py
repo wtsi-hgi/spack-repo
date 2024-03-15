@@ -14,7 +14,7 @@ class RMsbackendmsp(RPackage):
 	
 	homepage = "https://github.com/RforMassSpectrometry/MsBackendMsp"
 	bioc = "MsBackendMsp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MsBackendMsp_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MsBackendMsp/MsBackendMsp_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsBackendMsp_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsBackendMsp/MsBackendMsp_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="805d831547106b2f232bb9eda75172bc")
 

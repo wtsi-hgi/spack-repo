@@ -22,7 +22,7 @@ class RTabxplor(RPackage):
 	homepage = "https://github.com/BriceNocenti/tabxplor"
 	cran = "tabxplor" 
 
-	version("1.1.2", md5="48464d6eab6e57898e55c47067dc1648")
+	version("1.1.3", md5="0f5cf192376ffbc5542961c12abe6965")
 
 	depends_on("r-dplyr@1.0.3:", type=("build", "run"))
 	depends_on("r-stringr@1.4:", type=("build", "run"))

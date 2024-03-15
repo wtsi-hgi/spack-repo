@@ -13,7 +13,7 @@ class RQuantiseqr(RPackage):
 	"""
 	
 	bioc = "quantiseqr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/quantiseqr_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/quantiseqr/quantiseqr_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/quantiseqr_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/quantiseqr/quantiseqr_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="34cd21d2e59e1f8f58001fdcc49eaf44")
 

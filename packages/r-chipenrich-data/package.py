@@ -13,7 +13,7 @@ class RChipenrichData(RPackage):
 	"""
 	
 	bioc = "chipenrich.data" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/chipenrich.data_2.26.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/chipenrich.data/chipenrich.data_2.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/chipenrich.data_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/chipenrich.data/chipenrich.data_2.26.0.tar.gz"]
 
 	version("2.26.0", md5="4918da98125fee82afaeee84930051a8")
 

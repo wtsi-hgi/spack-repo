@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,7 +17,7 @@ class RShortread(RPackage):
 	ungapped alignment formats."""
 
 	bioc = "ShortRead"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ShortRead_1.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ShortRead/ShortRead_1.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ShortRead_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ShortRead/ShortRead_1.60.0.tar.gz"]
 
 	version("1.60.0", md5="480786b1db8f8138a7a4e8c36f9bdfc4")
 

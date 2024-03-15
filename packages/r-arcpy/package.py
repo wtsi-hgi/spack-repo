@@ -10,14 +10,14 @@ class RArcpy(RPackage):
 	"""Interface to 'ArcGIS' 'Python' Modules
 
 	An interface to the 'ArcGIS' 'arcpy' and 'arcgis' 'python' API
-    <https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/arcgis-api-for-python.htm>.
-    Provides various tools for installing and configuring a 'Conda' environment
-    for accessing 'ArcGIS' geoprocessing functions. Helper functions for
-    manipulating and converting 'ArcGIS' objects from R are also provided.
+	<https://pro.arcgis.com/en/pro-app/latest/arcpy/get-started/arcgis-api-for-python.htm>.
+	Provides various tools for installing and configuring a 'Conda' environment
+	for accessing 'ArcGIS' geoprocessing functions. Helper functions for
+	manipulating and converting 'ArcGIS' objects from R are also provided.
 	"""
 	
 	homepage = "https://github.com/mkoohafkan/arcpy"
-	cran = "arcpy" 
+	cran = "arcpy"
 
 	version("0.4-0", md5="67b3e329126a868abeda7cbed0bf191c")
 

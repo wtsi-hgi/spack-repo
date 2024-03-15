@@ -9,16 +9,15 @@ from spack.package import *
 class RKdry(RPackage):
 	"""K's "Don't Repeat Yourself"-Collection
 
-	A personal collection of helper functions and code snippets
-    to avoid redundancy in the spirit of the "Don't repeat yourself"
-    principle of software development
-    (<https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>).
+	A collection of personal helper functions to avoid redundancy
+    in the spirit of the "Don't repeat yourself" principle of software
+    development (<https://en.wikipedia.org/wiki/Don%27t_repeat_yourself>).
 	"""
 	
 	homepage = "https://github.com/kapsner/kdry"
 	cran = "kdry" 
 
-	version("0.0.1", md5="72bda531e9f9e1bc9371b81b3045eeee")
+	version("0.0.2", md5="2573312a73816e477a28a8ebcf0097dc")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

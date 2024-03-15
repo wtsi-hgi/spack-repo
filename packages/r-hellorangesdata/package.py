@@ -13,7 +13,7 @@ class RHellorangesdata(RPackage):
 	"""
 	
 	bioc = "HelloRangesData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/HelloRangesData_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/HelloRangesData/HelloRangesData_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HelloRangesData_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HelloRangesData/HelloRangesData_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="6ae6ac65f3af7f41136eb6fb3558eb2a")
 

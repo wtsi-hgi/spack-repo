@@ -15,7 +15,7 @@ Algorithm
 	
 	cran = "saemix" 
 
-	version("3.2", md5="293f5ac6931d592d147424766da2fe23")
+	version("3.3", md5="9c3e07f66495370320cdd65e2e503740")
 
 	depends_on("r-npde@3.2:", type=("build", "run"))
 	depends_on("r-gridextra", type=("build", "run"))

@@ -9,21 +9,22 @@ from spack.package import *
 class RScam(RPackage):
 	"""Shape Constrained Additive Models
 
-	Routines for generalized additive modelling under shape
-        constraints on the component functions of the linear predictor
-        (Pya and Wood, 2015) <doi:10.1007/s11222-013-9448-7>.
-        Models can contain multiple shape constrained (univariate
-        and/or bivariate) and unconstrained terms. The routines of gam() 
-        in package 'mgcv' are used for setting up the model matrix,  
-        printing and plotting the results.  Penalized likelihood
-        maximization based on Newton-Raphson method is used to fit a
-        model with multiple smoothing parameter selection by GCV or
-        UBRE/AIC.
+	Generalized additive models under shape
+        constraints on the component functions of the linear predictor.       
+        Models can include multiple shape-constrained (univariate
+        and bivariate) and unconstrained terms. Routines of the 
+        package 'mgcv' are used to set up the model matrix, print, 
+        and plot the results. Multiple smoothing parameter 
+        estimation by the Generalized Cross Validation or similar.
+        See Pya and Wood (2015) <doi:10.1007/s11222-013-9448-7> 
+        for an overview. A broad selection of shape-constrained 
+        smoothers, linear functionals of smooths with shape constraints,
+        and Gaussian models with AR1 residuals. 
 	"""
 	
 	cran = "scam" 
 
-	version("1.2-15", md5="18f6e32325a8325a62f18998808617a7")
+	version("1.2-16", md5="da181086ac6232b7c63f96663e95ad44")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-mgcv@1.8.2:", type=("build", "run"))

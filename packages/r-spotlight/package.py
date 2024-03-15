@@ -14,7 +14,7 @@ class RSpotlight(RPackage):
 	
 	homepage = "https://github.com/MarcElosua/SPOTlight"
 	bioc = "SPOTlight" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SPOTlight_1.6.7.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SPOTlight/SPOTlight_1.6.7.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SPOTlight_1.6.7.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SPOTlight/SPOTlight_1.6.7.tar.gz"]
 
 	version("1.6.7", md5="0362e0be411e3ed3ce5bf9b928439e10")
 

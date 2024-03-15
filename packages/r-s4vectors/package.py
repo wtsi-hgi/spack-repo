@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -19,7 +19,7 @@ class RS4vectors(RPackage):
 	infrastructure packages)."""
 
 	bioc = "S4Vectors"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/S4Vectors_0.40.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/S4Vectors/S4Vectors_0.40.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/S4Vectors_0.40.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/S4Vectors/S4Vectors_0.40.2.tar.gz"]
 
 	version("0.40.2", md5="ee94f4f6c25dcaf7a50f5814495310e3")
 

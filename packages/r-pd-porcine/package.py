@@ -13,7 +13,7 @@ class RPdPorcine(RPackage):
 	"""
 	
 	bioc = "pd.porcine" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.porcine_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.porcine/pd.porcine_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.porcine_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.porcine/pd.porcine_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="5df404babadb1d6faef73e249c819a72")
 

@@ -13,7 +13,7 @@ class RDropletutils(RPackage):
 	"""
 	
 	bioc = "DropletUtils" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DropletUtils_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DropletUtils/DropletUtils_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DropletUtils_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DropletUtils/DropletUtils_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="f1fe907e6269e652adc4607fdb335c41")
 

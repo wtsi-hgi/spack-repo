@@ -13,7 +13,7 @@ class RDamirseq(RPackage):
 	"""
 	
 	bioc = "DaMiRseq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DaMiRseq_2.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DaMiRseq/DaMiRseq_2.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DaMiRseq_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DaMiRseq/DaMiRseq_2.14.0.tar.gz"]
 
 	version("2.14.0", md5="64986e7db314ddba69d156b35f974680")
 

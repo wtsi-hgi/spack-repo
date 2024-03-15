@@ -13,7 +13,7 @@ class RRsweep(RPackage):
 	"""
 	
 	bioc = "rSWeeP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rSWeeP_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rSWeeP/rSWeeP_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rSWeeP_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rSWeeP/rSWeeP_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="42d80dcf3d267562e175115cdfd4c731")
 

@@ -15,7 +15,7 @@ class RSccore(RPackage):
 	homepage = "https://github.com/kharchenkolab/sccore"
 	cran = "sccore" 
 
-	version("1.0.4", md5="aa884c0329258c90c6df532138163dbf")
+	version("1.0.5", md5="9aed0f3a67614c35ee12a50c0b5acbaf")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

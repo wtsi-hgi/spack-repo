@@ -13,7 +13,7 @@ class RNucpos(RPackage):
 	"""
 	
 	bioc = "nuCpos" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/nuCpos_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/nuCpos/nuCpos_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nuCpos_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nuCpos/nuCpos_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="b029b2678c784645c2198f00093bd923")
 

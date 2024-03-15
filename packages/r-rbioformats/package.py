@@ -14,7 +14,7 @@ class RRbioformats(RPackage):
 	
 	homepage = "https://github.com/aoles/RBioFormats"
 	bioc = "RBioFormats" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RBioFormats_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RBioFormats/RBioFormats_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RBioFormats_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RBioFormats/RBioFormats_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="cd83827dd164a9b44ba3d0d08fd77b38")
 

@@ -13,7 +13,7 @@ class RRnu34Db(RPackage):
 	"""
 	
 	bioc = "rnu34.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/rnu34.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/rnu34.db/rnu34.db_3.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rnu34.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rnu34.db/rnu34.db_3.13.0.tar.gz"]
 
 	version("3.13.0", md5="7345817f2f26270779d2409b8a17a5bd")
 

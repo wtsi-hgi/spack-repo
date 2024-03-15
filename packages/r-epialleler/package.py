@@ -14,7 +14,7 @@ class REpialleler(RPackage):
 	
 	homepage = "https://github.com/BBCG/epialleleR"
 	bioc = "epialleleR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/epialleleR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/epialleleR/epialleleR_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epialleleR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epialleleR/epialleleR_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="cbe73c32dc61dac41266279db72e4bee")
 

@@ -13,7 +13,7 @@ class RFlowbeads(RPackage):
 	"""
 	
 	bioc = "flowBeads" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowBeads_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowBeads/flowBeads_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowBeads_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowBeads/flowBeads_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="3c9aa4f78c8b1b2397d6004773311174")
 

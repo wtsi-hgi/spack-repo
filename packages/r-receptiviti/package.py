@@ -16,13 +16,10 @@ class RReceptiviti(RPackage):
 	homepage = "https://receptiviti.github.io/receptiviti-r/"
 	cran = "receptiviti" 
 
-	version("0.1.6", md5="7dce4c8275a4ad285eb0a78f82187465")
+	version("0.1.7", md5="5fcf6cb6028c29d0e7a7e230cf8e3148")
 
 	depends_on("r-curl", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))
-	depends_on("r-arrow@9:", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-future-apply", type=("build", "run"))
 	depends_on("r-progressr", type=("build", "run"))
 	depends_on("r-stringi", type=("build", "run"))

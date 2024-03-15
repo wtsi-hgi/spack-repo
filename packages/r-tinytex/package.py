@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,8 @@ class RTinytex(RPackage):
 	'LaTeX' packages automatically."""
 
 	cran = "tinytex"
+
+	license("MIT")
 
 	version("0.49", md5="0e44e8589e71a5257ddac72c5113e440")
 

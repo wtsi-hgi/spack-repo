@@ -14,7 +14,7 @@ class RGenomicdatacommons(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/GenomicDataCommons"
 	bioc = "GenomicDataCommons" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GenomicDataCommons_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GenomicDataCommons/GenomicDataCommons_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicDataCommons_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicDataCommons/GenomicDataCommons_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="6c945795f62ce3e0b470b07b892d3357")
 

@@ -25,7 +25,7 @@ Integration and Analysis
 	homepage = "https://github.com/MolinLab/Holomics"
 	cran = "Holomics" 
 
-	version("1.0.0", md5="83a7627e26a074560fbbf1ceb89a77b2")
+	version("1.1.0", md5="dba4e884d9c214a9b9b4dc661e088003")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-bs4dash@2.0.2:", type=("build", "run"))
@@ -48,3 +48,4 @@ Integration and Analysis
 	depends_on("r-visnetwork", type=("build", "run"))
 	depends_on("r-mixomics", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))
+	depends_on("r-markdown", type=("build", "run"))

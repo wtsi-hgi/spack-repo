@@ -13,7 +13,7 @@ class RPd20060718Hg18RefseqPromoter(RPackage):
 	"""
 	
 	bioc = "pd.2006.07.18.hg18.refseq.promoter" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.2006.07.18.hg18.refseq.promoter_1.8.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.2006.07.18.hg18.refseq.promoter/pd.2006.07.18.hg18.refseq.promoter_1.8.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.2006.07.18.hg18.refseq.promoter_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.2006.07.18.hg18.refseq.promoter/pd.2006.07.18.hg18.refseq.promoter_1.8.1.tar.gz"]
 
 	version("1.8.1", md5="00838332d75b82d212078a9957f495df")
 

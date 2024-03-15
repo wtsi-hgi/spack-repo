@@ -14,7 +14,7 @@ class RSnphood(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/SNPhood"
 	bioc = "SNPhood" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SNPhood_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SNPhood/SNPhood_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SNPhood_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SNPhood/SNPhood_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="f5a30ae405bebdb97e51cb2782debcbf")
 

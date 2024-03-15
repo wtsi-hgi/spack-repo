@@ -14,7 +14,7 @@ class RMbcb(RPackage):
 	
 	homepage = "http://www.utsouthwestern.edu"
 	bioc = "MBCB" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MBCB_1.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MBCB/MBCB_1.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MBCB_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MBCB/MBCB_1.56.0.tar.gz"]
 
 	version("1.56.0", md5="51a88491b8d5872a1088def3f6113466")
 

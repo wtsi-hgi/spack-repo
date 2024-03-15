@@ -14,7 +14,7 @@ class RUniprotWs(RPackage):
 	
 	homepage = "https://github.com/Bioconductor/UniProt.ws"
 	bioc = "UniProt.ws" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/UniProt.ws_2.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/UniProt.ws/UniProt.ws_2.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/UniProt.ws_2.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/UniProt.ws/UniProt.ws_2.42.0.tar.gz"]
 
 	version("2.42.0", md5="47d9ee4038c5dcaf66229e4e1e07c052")
 

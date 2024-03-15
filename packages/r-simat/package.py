@@ -14,7 +14,7 @@ class RSimat(RPackage):
 	
 	homepage = "http://omics.georgetown.edu/SIMAT.html"
 	bioc = "SIMAT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SIMAT_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SIMAT/SIMAT_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SIMAT_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SIMAT/SIMAT_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="4482fbb67b81a5c0c2ed553f6b44faa2")
 

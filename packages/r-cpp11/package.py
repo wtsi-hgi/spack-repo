@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RCpp11(RPackage):
 	supports interaction with 'ALTREP' vectors."""
 
 	cran = "cpp11"
+
+	license("MIT")
 
 	version("0.4.7", md5="3e1399c740f88a8a76cc6c688dcc9337", url="https://cran.r-project.org/src/contrib/cpp11_0.4.7.tar.gz")
 

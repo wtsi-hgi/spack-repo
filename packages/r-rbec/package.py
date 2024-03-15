@@ -13,7 +13,7 @@ class RRbec(RPackage):
 	"""
 	
 	bioc = "Rbec" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Rbec_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Rbec/Rbec_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rbec_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rbec/Rbec_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="f295d8ade5faf2c0b770f2b075262116")
 

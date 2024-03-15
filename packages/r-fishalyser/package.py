@@ -13,7 +13,7 @@ class RFishalyser(RPackage):
 	"""
 	
 	bioc = "FISHalyseR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/FISHalyseR_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/FISHalyseR/FISHalyseR_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FISHalyseR_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FISHalyseR/FISHalyseR_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="fea17ba4629a7d53c62eef47a3cdfab2")
 

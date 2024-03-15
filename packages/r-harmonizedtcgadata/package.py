@@ -13,7 +13,7 @@ class RHarmonizedtcgadata(RPackage):
 	"""
 	
 	bioc = "HarmonizedTCGAData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/HarmonizedTCGAData_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/HarmonizedTCGAData/HarmonizedTCGAData_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HarmonizedTCGAData_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HarmonizedTCGAData/HarmonizedTCGAData_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="f6e8f685a67152c6f382089c0e6aae01")
 

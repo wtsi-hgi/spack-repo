@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,9 +18,11 @@ class RRgl(RPackage):
 
 	cran = "rgl"
 
-	version("1.2.8", md5="781667cf17fdf52609d5b499d7c4af14")
+	license("GPL-2.0-or-later")
 
-	depends_on("r@3.3:", type=("build", "run"))
+	version("1.3.1", md5="f128b97dddba6dc0ce51b9fc881e8b0b")
+
+	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-htmlwidgets@1.6:", type=("build", "run"))
 	depends_on("r-htmltools", type=("build", "run"))
 	depends_on("r-knitr@1.33:", type=("build", "run"))

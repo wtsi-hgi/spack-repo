@@ -13,7 +13,7 @@ class RCntools(RPackage):
 	"""
 	
 	bioc = "CNTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CNTools_1.58.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CNTools/CNTools_1.58.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNTools_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNTools/CNTools_1.58.0.tar.gz"]
 
 	version("1.58.0", md5="e3ce148937711a84dadf67b5f09c5373")
 

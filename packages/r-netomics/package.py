@@ -14,7 +14,7 @@ class RNetomics(RPackage):
 	
 	homepage = "https://github.com/abodein/netOmics"
 	bioc = "netOmics" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/netOmics_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/netOmics/netOmics_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/netOmics_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/netOmics/netOmics_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="8ab3cf60546da2beea2e9c3630340c12")
 

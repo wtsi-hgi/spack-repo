@@ -13,7 +13,7 @@ class RMgu74ccdf(RPackage):
 	"""
 	
 	bioc = "mgu74ccdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mgu74ccdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mgu74ccdf/mgu74ccdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mgu74ccdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mgu74ccdf/mgu74ccdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="172e626b0e3072edc65c4efff35fe998")
 

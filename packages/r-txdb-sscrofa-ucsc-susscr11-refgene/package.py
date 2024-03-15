@@ -13,7 +13,7 @@ class RTxdbSscrofaUcscSusscr11Refgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Sscrofa.UCSC.susScr11.refGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Sscrofa.UCSC.susScr11.refGene_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Sscrofa.UCSC.susScr11.refGene/TxDb.Sscrofa.UCSC.susScr11.refGene_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Sscrofa.UCSC.susScr11.refGene_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Sscrofa.UCSC.susScr11.refGene/TxDb.Sscrofa.UCSC.susScr11.refGene_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="a6c5a2c402ad904a2f55099e391d18de")
 

@@ -14,7 +14,7 @@ class RBioassayr(RPackage):
 	
 	homepage = "https://github.com/girke-lab/bioassayR"
 	bioc = "bioassayR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/bioassayR_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/bioassayR/bioassayR_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bioassayR_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bioassayR/bioassayR_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="94ac7a2ff2a9de7b65d8ebd864513a31")
 

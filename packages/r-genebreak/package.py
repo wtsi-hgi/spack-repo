@@ -14,7 +14,7 @@ class RGenebreak(RPackage):
 	
 	homepage = "https://github.com/stefvanlieshout/GeneBreak"
 	bioc = "GeneBreak" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GeneBreak_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GeneBreak/GeneBreak_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneBreak_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneBreak/GeneBreak_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="32b69bf4150c25c908235217dc805ed3")
 

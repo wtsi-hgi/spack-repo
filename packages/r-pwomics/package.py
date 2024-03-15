@@ -13,7 +13,7 @@ class RPwomics(RPackage):
 	"""
 	
 	bioc = "pwOmics" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pwOmics_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pwOmics/pwOmics_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pwOmics_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pwOmics/pwOmics_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="fcb2cc2e104a970552cc4f45ce4a1197")
 

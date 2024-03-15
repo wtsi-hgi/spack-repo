@@ -13,9 +13,9 @@ class RMsstatsconvert(RPackage):
 	"""
 	
 	bioc = "MSstatsConvert" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MSstatsConvert_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MSstatsConvert/MSstatsConvert_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsConvert_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsConvert/MSstatsConvert_1.12.1.tar.gz"]
 
-	version("1.12.0", md5="1a8b79ba830db5296c2d3f589b398b7f")
+	version("1.12.1", md5="d522e5ee79c371a83f959808b7c9d214")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

@@ -23,7 +23,7 @@ class RPedprobr(RPackage):
 	homepage = "https://github.com/magnusdv/pedprobr"
 	cran = "pedprobr" 
 
-	version("0.8.0", md5="8c36e2690ada98cf11902c04df6dd177")
+	version("0.9.2", md5="a316b3201d42353a912498638b8d853b")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-pedtools@1.1:", type=("build", "run"))

@@ -13,7 +13,7 @@ class RQsmooth(RPackage):
 	"""
 	
 	bioc = "qsmooth" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/qsmooth_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/qsmooth/qsmooth_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qsmooth_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qsmooth/qsmooth_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="471983d71a4b056b71b10fe15c3f7b1c")
 

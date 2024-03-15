@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,6 +14,8 @@ class RIsoband(RPackage):
 	data."""
 
 	cran = "isoband"
+
+	license("MIT")
 
 	version("0.2.7", md5="7241f95bafb46b44aa380b9a71b10467")
 

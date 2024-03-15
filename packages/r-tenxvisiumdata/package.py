@@ -14,7 +14,7 @@ class RTenxvisiumdata(RPackage):
 	
 	homepage = "https://github.com/helenalc/TENxVisiumData"
 	bioc = "TENxVisiumData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/TENxVisiumData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/TENxVisiumData/TENxVisiumData_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TENxVisiumData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TENxVisiumData/TENxVisiumData_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="f578add429847efff027a61b1749b9b4")
 

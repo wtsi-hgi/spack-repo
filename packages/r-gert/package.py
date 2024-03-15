@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,6 +16,8 @@ class RGert(RPackage):
 	keys stored on disk or ssh-agent."""
 
 	cran = "gert"
+
+	license("MIT")
 
 	version("2.0.1", md5="2efae501b706f98b74f97f9a8a5b7d38")
 

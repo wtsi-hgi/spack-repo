@@ -14,7 +14,7 @@ class RStemhypoxia(RPackage):
 	
 	homepage = "http://www.ncbi.nlm.nih.gov/geo/query/acc.cgi?acc=GSE37761"
 	bioc = "stemHypoxia" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/stemHypoxia_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/stemHypoxia/stemHypoxia_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/stemHypoxia_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/stemHypoxia/stemHypoxia_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="22ec9d76cac05ac7118873f7815225ba")
 

@@ -14,7 +14,7 @@ class RCuratedbladderdata(RPackage):
 	
 	homepage = "https://github.com/lima1/curatedBladderData"
 	bioc = "curatedBladderData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/curatedBladderData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/curatedBladderData/curatedBladderData_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedBladderData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedBladderData/curatedBladderData_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="bd8965c4ad49840b4985f90f3dc5a441")
 

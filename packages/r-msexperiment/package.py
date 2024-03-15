@@ -14,7 +14,7 @@ class RMsexperiment(RPackage):
 	
 	homepage = "https://github.com/RforMassSpectrometry/MsExperiment"
 	bioc = "MsExperiment" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MsExperiment_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MsExperiment/MsExperiment_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsExperiment_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsExperiment/MsExperiment_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="b248141f2ad9d5421d067b7f90a4c87e")
 

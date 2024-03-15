@@ -13,7 +13,7 @@ class RMsimpute(RPackage):
 	"""
 	
 	bioc = "msImpute" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/msImpute_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/msImpute/msImpute_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msImpute_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msImpute/msImpute_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="493d744acd5f63e07590f22b2ce0eea2")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,7 @@ class RAdsplit(RPackage):
 	of the supporting gene set is determined."""
 
 	bioc = "adSplit"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/adSplit_1.72.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/adSplit/adSplit_1.72.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/adSplit_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/adSplit/adSplit_1.72.0.tar.gz"]
 
 	version("1.72.0", md5="4d50affb50e6f6a11d8c4e379b6116d8")
 

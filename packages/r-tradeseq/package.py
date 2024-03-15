@@ -14,7 +14,7 @@ class RTradeseq(RPackage):
 	
 	homepage = "https://statomics.github.io/tradeSeq/index.html"
 	bioc = "tradeSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tradeSeq_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tradeSeq/tradeSeq_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tradeSeq_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tradeSeq/tradeSeq_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="5de25ecb5472b592837cd3937ff467c7")
 

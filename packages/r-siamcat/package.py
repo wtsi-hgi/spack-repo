@@ -13,7 +13,7 @@ class RSiamcat(RPackage):
 	"""
 	
 	bioc = "SIAMCAT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SIAMCAT_2.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SIAMCAT/SIAMCAT_2.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SIAMCAT_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SIAMCAT/SIAMCAT_2.6.0.tar.gz"]
 
 	version("2.6.0", md5="36938473e8b2bd9b269fae69ec312e8d")
 

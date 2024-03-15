@@ -17,10 +17,10 @@ class RStacomir(RPackage):
     'STACOMI'.     
 	"""
 	
-	homepage = "http://stacomir.r-forge.r-project.org/"
+	homepage = "https://forgemia.inra.fr/stacomi/stacomir"
 	cran = "stacomiR" 
 
-	version("0.6.0.7", md5="435f0529fc419a9ea3519c23da35aaeb")
+	version("0.6.1", md5="9e8cab7c7c8518ee59c8f1292a5e5d62")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-stacomirtools@0.6.0.1:", type=("build", "run"))
@@ -39,5 +39,6 @@ class RStacomir(RPackage):
 	depends_on("r-mgcv", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-pool", type=("build", "run"))
+	depends_on("r-dbi", type=("build", "run"))
 	depends_on("r-withr", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))

@@ -13,7 +13,7 @@ class RGem(RPackage):
 	"""
 	
 	bioc = "GEM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GEM_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GEM/GEM_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEM_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEM/GEM_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="2c2c8e79fda151dee0060411c9610ff4")
 

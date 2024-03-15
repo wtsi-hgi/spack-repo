@@ -14,5 +14,5 @@ class RColorramps(RPackage):
 	
 	cran = "colorRamps" 
 
-	version("2.3.1", md5="854cb46c9d7f15cc41890ef817b23f6b")
+	version("2.3.4", md5="5d338c19f816ffd8f1413aebc579236f")
 

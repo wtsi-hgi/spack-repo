@@ -14,7 +14,7 @@ class RHarmandata(RPackage):
 	
 	homepage = "http://www.bioinformatics.csiro.au/harman/"
 	bioc = "HarmanData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/HarmanData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/HarmanData/HarmanData_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HarmanData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HarmanData/HarmanData_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="7df1447aff75abdf025678b51a0ee8fb")
 

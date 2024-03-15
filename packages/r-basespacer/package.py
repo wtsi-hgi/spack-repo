@@ -13,7 +13,7 @@ class RBasespacer(RPackage):
 	"""
 	
 	bioc = "BaseSpaceR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BaseSpaceR_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BaseSpaceR/BaseSpaceR_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BaseSpaceR_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BaseSpaceR/BaseSpaceR_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="b141511c6e978d4f26c8ec4c42c078c2")
 

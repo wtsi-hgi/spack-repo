@@ -13,7 +13,7 @@ class RIvas(RPackage):
 	"""
 	
 	bioc = "IVAS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IVAS_2.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IVAS/IVAS_2.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IVAS_2.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IVAS/IVAS_2.22.0.tar.gz"]
 
 	version("2.22.0", md5="bf3c824233bc6ad5feffc4463554f57f")
 

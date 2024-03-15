@@ -14,7 +14,7 @@ class RRegsplice(RPackage):
 	
 	homepage = "https://github.com/lmweber/regsplice"
 	bioc = "regsplice" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/regsplice_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/regsplice/regsplice_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/regsplice_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/regsplice/regsplice_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="3f63d2e93b02aec3ed044e2c56938d12")
 

@@ -14,7 +14,7 @@ class RSystempipeshiny(RPackage):
 	
 	homepage = "https://systempipe.org/sps"
 	bioc = "systemPipeShiny" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/systemPipeShiny_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/systemPipeShiny/systemPipeShiny_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/systemPipeShiny_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/systemPipeShiny/systemPipeShiny_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="8880796c4c2bf213ffa98df7f3f8d164")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class RWatermelon(RPackage):
 	objects produced by methylumi and minfi packages."""
 
 	bioc = "wateRmelon"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/wateRmelon_2.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/wateRmelon/wateRmelon_2.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/wateRmelon_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/wateRmelon/wateRmelon_2.8.0.tar.gz"]
 
 	version("2.8.0", md5="dd08402958a5cc50170669a5f17e44f6")
 

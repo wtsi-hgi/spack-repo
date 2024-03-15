@@ -13,7 +13,7 @@ class RTrigger(RPackage):
 	"""
 	
 	bioc = "trigger" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/trigger_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/trigger/trigger_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/trigger_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/trigger/trigger_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="d8cb2a76223f510ff08d9dcbf1d6210c")
 

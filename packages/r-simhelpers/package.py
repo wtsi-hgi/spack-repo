@@ -15,14 +15,11 @@ class RSimhelpers(RPackage):
 	homepage = "https://meghapsimatrix.github.io/simhelpers/index.html"
 	cran = "simhelpers" 
 
-	version("0.1.2", md5="a33c0f8cde1e511e8f5ffda36f166c3f")
+	version("0.2.1", md5="841a08e179f4fd582306e19805de7300")
 
 	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-furrr", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
+	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-rstudioapi", type=("build", "run"))
-	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-rdpack", type=("build", "run"))

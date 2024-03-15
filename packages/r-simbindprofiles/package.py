@@ -13,7 +13,7 @@ class RSimbindprofiles(RPackage):
 	"""
 	
 	bioc = "SimBindProfiles" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SimBindProfiles_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SimBindProfiles/SimBindProfiles_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SimBindProfiles_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SimBindProfiles/SimBindProfiles_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="9785a8acda5c3423edaefd09f14e6ca2")
 

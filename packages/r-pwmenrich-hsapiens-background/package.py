@@ -13,7 +13,7 @@ class RPwmenrichHsapiensBackground(RPackage):
 	"""
 	
 	bioc = "PWMEnrich.Hsapiens.background" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/PWMEnrich.Hsapiens.background_4.36.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/PWMEnrich.Hsapiens.background/PWMEnrich.Hsapiens.background_4.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PWMEnrich.Hsapiens.background_4.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PWMEnrich.Hsapiens.background/PWMEnrich.Hsapiens.background_4.36.0.tar.gz"]
 
 	version("4.36.0", md5="7c7b177c29fc31c7546d4e7160a9b977")
 

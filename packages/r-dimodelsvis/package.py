@@ -16,7 +16,7 @@ Compositional Data
 	homepage = "https://rishvish.github.io/DImodelsVis/"
 	cran = "DImodelsVis" 
 
-	version("1.0.0", md5="42d86cfb6b1c09adbc49e7b52e1ffa6b")
+	version("1.0.1", md5="8fda9ae70017f60eed5fe67d37b4a263")
 
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-dimodels@1.3.1:", type=("build", "run"))

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -12,6 +12,8 @@ class RRgenoud(RPackage):
 	A genetic algorithm plus derivative optimizer."""
 
 	cran = "rgenoud"
+
+	license("GPL-3.0-only")
 
 	version("5.9-0.10", md5="0c4471232f41b2cd48f75cb1ed48c01a")
 

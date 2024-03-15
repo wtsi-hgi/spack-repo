@@ -23,14 +23,15 @@ Visualization
 	
 	cran = "PublicWorksFinanceIT" 
 
-	version("0.1.0", md5="dfe211d33d98c5c689755c2d72910f62")
+	version("0.2.0", md5="10be1e61405164b8712d68372487cda0")
 
-	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-leaflet", type=("build", "run"))
+	depends_on("r-lubridate", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-rvest", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))

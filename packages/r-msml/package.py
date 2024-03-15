@@ -9,13 +9,13 @@ from spack.package import *
 class RMsml(RPackage):
 	"""Model Selection Based on Machine Learning (ML)
 
-	Models evaluation based on a modified version of the recursive feature elimination algorithm. This package is designed to determine the optimal model(s) by leveraging all available features. 
+	Model evaluation based on a modified version of the recursive feature elimination algorithm. This package is designed to determine the optimal model(s) by leveraging all available features. 
 	"""
 	
 	homepage = "https://github.com/mommy003/MSML"
 	cran = "MSML" 
 
-	version("1.0.0.0", md5="d875467d63d228fad3073bb8cac26d49")
+	version("1.0.0.1", md5="5d1e26b9c19e73b365f9e5f50ae681aa")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-r2redux", type=("build", "run"))

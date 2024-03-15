@@ -19,7 +19,7 @@ class RPrettymapr(RPackage):
 	homepage = "https://github.com/paleolimbot/prettymapr"
 	cran = "prettymapr" 
 
-	version("0.2.4", md5="51852996fccfc384e6ee2866deb75890")
+	version("0.2.5", md5="402b554d893bf3414b1b74fad812fad8")
 
 	depends_on("r-digest", type=("build", "run"))
 	depends_on("r-rjson", type=("build", "run"))

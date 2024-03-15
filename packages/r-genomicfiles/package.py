@@ -13,7 +13,7 @@ class RGenomicfiles(RPackage):
 	"""
 	
 	bioc = "GenomicFiles" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GenomicFiles_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GenomicFiles/GenomicFiles_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicFiles_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicFiles/GenomicFiles_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="7a58dc35c19ed34afe95d505d15db3f4")
 

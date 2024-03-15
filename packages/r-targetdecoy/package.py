@@ -14,7 +14,7 @@ class RTargetdecoy(RPackage):
 	
 	homepage = "https://www.bioconductor.org/packages/TargetDecoy"
 	bioc = "TargetDecoy" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TargetDecoy_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TargetDecoy/TargetDecoy_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TargetDecoy_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TargetDecoy/TargetDecoy_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="ff49065b40e049f06bbe1ad9c74200fc")
 

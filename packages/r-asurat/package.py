@@ -13,7 +13,7 @@ class RAsurat(RPackage):
 	"""
 	
 	bioc = "ASURAT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ASURAT_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ASURAT/ASURAT_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASURAT_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASURAT/ASURAT_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="a1cb615f6ddab8cb8b9ccb1a73ba39de")
 

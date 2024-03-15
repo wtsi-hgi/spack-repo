@@ -14,7 +14,7 @@ class RProcoil(RPackage):
 	
 	homepage = "http://www.bioinf.jku.at/software/procoil/"
 	bioc = "procoil" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/procoil_2.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/procoil/procoil_2.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/procoil_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/procoil/procoil_2.30.0.tar.gz"]
 
 	version("2.30.0", md5="5536c056587bff646a606dec3437fa5d")
 

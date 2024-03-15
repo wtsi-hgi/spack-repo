@@ -14,7 +14,7 @@ class RLmdme(RPackage):
 	
 	homepage = "http://www.bdmg.com.ar/?page_id=38"
 	bioc = "lmdme" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/lmdme_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/lmdme/lmdme_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lmdme_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lmdme/lmdme_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="9a1b98d738df482adb30496ac028b924")
 

@@ -13,7 +13,7 @@ class RLintind(RPackage):
 	"""
 	
 	bioc = "LinTInd" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/LinTInd_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/LinTInd/LinTInd_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LinTInd_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LinTInd/LinTInd_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="3dd8f8601ee8df3a0a53a02dc0c4d272")
 

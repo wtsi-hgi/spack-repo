@@ -13,7 +13,7 @@ class RTimescape(RPackage):
 	"""
 	
 	bioc = "timescape" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/timescape_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/timescape/timescape_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/timescape_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/timescape/timescape_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="1a409bde946cb8ed4c7e8e6a334158de")
 

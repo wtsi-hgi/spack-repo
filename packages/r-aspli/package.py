@@ -13,7 +13,7 @@ class RAspli(RPackage):
 	"""
 	
 	bioc = "ASpli" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ASpli_2.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ASpli/ASpli_2.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASpli_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASpli/ASpli_2.12.0.tar.gz"]
 
 	version("2.12.0", md5="abf86e5478e3191f21892ba2eb35e442")
 

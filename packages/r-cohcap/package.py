@@ -13,7 +13,7 @@ class RCohcap(RPackage):
 	"""
 	
 	bioc = "COHCAP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/COHCAP_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/COHCAP/COHCAP_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/COHCAP_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/COHCAP/COHCAP_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="6c7c601f8c8aee626d2fa1a6dd306dca")
 

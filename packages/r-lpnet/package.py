@@ -13,7 +13,7 @@ class RLpnet(RPackage):
 	"""
 	
 	bioc = "lpNet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/lpNet_2.34.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/lpNet/lpNet_2.34.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lpNet_2.34.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lpNet/lpNet_2.34.2.tar.gz"]
 
 	version("2.34.2", md5="98de40db5eda03f2ae3b35cf04c6882c")
 

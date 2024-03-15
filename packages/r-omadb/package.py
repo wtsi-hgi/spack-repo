@@ -14,7 +14,7 @@ class ROmadb(RPackage):
 	
 	homepage = "https://github.com/DessimozLab/OmaDB"
 	bioc = "OmaDB" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/OmaDB_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/OmaDB/OmaDB_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OmaDB_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OmaDB/OmaDB_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="4bfced261f7429c6e881e05dc45ec0d3")
 

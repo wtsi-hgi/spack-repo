@@ -13,7 +13,7 @@ class RAbarray(RPackage):
 	"""
 	
 	bioc = "ABarray" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ABarray_1.70.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ABarray/ABarray_1.70.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ABarray_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ABarray/ABarray_1.70.0.tar.gz"]
 
 	version("1.70.0", md5="59e686f9daf6990fbe6e1594b8676197")
 

@@ -14,7 +14,7 @@ class RMirlab(RPackage):
 	
 	homepage = "https://github.com/pvvhoang/miRLAB"
 	bioc = "miRLAB" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/miRLAB_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/miRLAB/miRLAB_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miRLAB_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miRLAB/miRLAB_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="3347a99a17fc2caade03a35471a79ad0")
 

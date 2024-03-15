@@ -13,7 +13,7 @@ class RDivergence(RPackage):
 	"""
 	
 	bioc = "divergence" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/divergence_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/divergence/divergence_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/divergence_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/divergence/divergence_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="0ead0047c69549361f0f86d7207aee2b")
 

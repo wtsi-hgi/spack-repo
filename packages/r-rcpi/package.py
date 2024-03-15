@@ -14,7 +14,7 @@ class RRcpi(RPackage):
 	
 	homepage = "https://nanx.me/Rcpi/"
 	bioc = "Rcpi" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Rcpi_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Rcpi/Rcpi_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rcpi_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rcpi/Rcpi_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="2f3697ca19200881f65d7d37f3d34e33")
 

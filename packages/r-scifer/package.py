@@ -14,7 +14,7 @@ class RScifer(RPackage):
 	
 	homepage = "https://github.com/rodrigarc/scifer"
 	bioc = "scifer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scifer_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scifer/scifer_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scifer_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scifer/scifer_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="82fb184bec0c09d5f7067baf81f8fee1")
 

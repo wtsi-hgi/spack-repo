@@ -13,7 +13,7 @@ class RInterest(RPackage):
 	"""
 	
 	bioc = "IntEREst" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IntEREst_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IntEREst/IntEREst_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IntEREst_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IntEREst/IntEREst_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="b9b473ea53b89a32487163ef6a664905")
 

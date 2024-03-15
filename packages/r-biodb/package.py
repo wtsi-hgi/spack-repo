@@ -14,7 +14,7 @@ class RBiodb(RPackage):
 	
 	homepage = "https://github.com/pkrog/biodb"
 	bioc = "biodb" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biodb_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biodb/biodb_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodb_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodb/biodb_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="0716a73291fb80cc3d1f0909549cbaa8")
 

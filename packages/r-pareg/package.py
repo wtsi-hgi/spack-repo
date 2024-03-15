@@ -14,7 +14,7 @@ class RPareg(RPackage):
 	
 	homepage = "https://github.com/cbg-ethz/pareg"
 	bioc = "pareg" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pareg_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pareg/pareg_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pareg_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pareg/pareg_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="fef96a7ed5d753b6729186f4870f4283")
 

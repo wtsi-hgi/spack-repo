@@ -13,7 +13,7 @@ class RArrmnormalization(RPackage):
 	"""
 	
 	bioc = "ARRmNormalization" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ARRmNormalization_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ARRmNormalization/ARRmNormalization_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ARRmNormalization_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ARRmNormalization/ARRmNormalization_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="a6223cb64b7077670d38fb437638e0fe")
 

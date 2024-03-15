@@ -14,7 +14,7 @@ class REpitxdb(RPackage):
 	
 	homepage = "https://github.com/FelixErnst/EpiTxDb"
 	bioc = "EpiTxDb" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EpiTxDb_1.14.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EpiTxDb/EpiTxDb_1.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EpiTxDb_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EpiTxDb/EpiTxDb_1.14.1.tar.gz"]
 
 	version("1.14.1", md5="35a071eb0f86172426b7b5faabca3897")
 

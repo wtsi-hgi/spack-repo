@@ -14,7 +14,7 @@ class RGwasurvivr(RPackage):
 	
 	homepage = "https://github.com/suchestoncampbelllab/gwasurvivr"
 	bioc = "gwasurvivr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gwasurvivr_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gwasurvivr/gwasurvivr_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gwasurvivr_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gwasurvivr/gwasurvivr_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="699843eb7ff1528732a6a2e093600aef")
 

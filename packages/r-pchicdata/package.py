@@ -13,7 +13,7 @@ class RPchicdata(RPackage):
 	"""
 	
 	bioc = "PCHiCdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/PCHiCdata_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/PCHiCdata/PCHiCdata_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PCHiCdata_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PCHiCdata/PCHiCdata_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="8791902075a44ae03c0366150aa3f61e")
 

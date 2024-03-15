@@ -14,7 +14,7 @@ class RSpatiallibd(RPackage):
 	
 	homepage = "https://github.com/LieberInstitute/spatialLIBD"
 	bioc = "spatialLIBD" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/spatialLIBD_1.14.1.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/spatialLIBD/spatialLIBD_1.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/spatialLIBD_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/spatialLIBD/spatialLIBD_1.14.1.tar.gz"]
 
 	version("1.14.1", md5="cd8c85a03e555f2dfdeb1627f7087002")
 

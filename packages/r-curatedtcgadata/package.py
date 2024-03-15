@@ -13,7 +13,7 @@ class RCuratedtcgadata(RPackage):
 	"""
 	
 	bioc = "curatedTCGAData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/curatedTCGAData_1.24.1.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/curatedTCGAData/curatedTCGAData_1.24.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedTCGAData_1.24.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedTCGAData/curatedTCGAData_1.24.1.tar.gz"]
 
 	version("1.24.1", md5="69e06f23ff43332c06bad9bea52b30c9")
 

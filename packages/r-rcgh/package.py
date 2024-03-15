@@ -14,7 +14,7 @@ class RRcgh(RPackage):
 	
 	homepage = "https://github.com/fredcommo/rCGH"
 	bioc = "rCGH" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rCGH_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rCGH/rCGH_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rCGH_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rCGH/rCGH_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="80510d5207fb0ad5d517a99b35734621")
 

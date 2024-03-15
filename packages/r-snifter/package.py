@@ -14,7 +14,7 @@ class RSnifter(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/snifter"
 	bioc = "snifter" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/snifter_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/snifter/snifter_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/snifter_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/snifter/snifter_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="a6cfc8a05013cd2d050a1adba2b3fe4d")
 

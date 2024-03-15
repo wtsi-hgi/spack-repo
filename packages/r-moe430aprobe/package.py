@@ -13,7 +13,7 @@ class RMoe430aprobe(RPackage):
 	"""
 	
 	bioc = "moe430aprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/moe430aprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/moe430aprobe/moe430aprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/moe430aprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/moe430aprobe/moe430aprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="0aa83189d04599a65211d1a2f0a51c8f")
 

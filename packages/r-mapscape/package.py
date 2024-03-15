@@ -13,7 +13,7 @@ class RMapscape(RPackage):
 	"""
 	
 	bioc = "mapscape" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mapscape_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mapscape/mapscape_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mapscape_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mapscape/mapscape_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="dc197aa43e86dc49fef0d85d2ead252c")
 

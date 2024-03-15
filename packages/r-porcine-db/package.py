@@ -13,7 +13,7 @@ class RPorcineDb(RPackage):
 	"""
 	
 	bioc = "porcine.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/porcine.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/porcine.db/porcine.db_3.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/porcine.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/porcine.db/porcine.db_3.13.0.tar.gz"]
 
 	version("3.13.0", md5="4a86b3e696d267dca673b4e9276d6368")
 

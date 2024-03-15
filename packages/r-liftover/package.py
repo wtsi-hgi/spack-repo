@@ -14,7 +14,7 @@ class RLiftover(RPackage):
 	
 	homepage = "https://www.bioconductor.org/help/workflows/liftOver/"
 	bioc = "liftOver" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/liftOver_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/liftOver/liftOver_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/liftOver_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/liftOver/liftOver_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="65b97e4b79a79c7a4bbdebcb647f1faf")
 

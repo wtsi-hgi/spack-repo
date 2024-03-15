@@ -14,7 +14,7 @@ class RGenomicinstability(RPackage):
 	
 	homepage = "https://github.com/DarwinHealth/genomicInstability"
 	bioc = "genomicInstability" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/genomicInstability_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/genomicInstability/genomicInstability_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genomicInstability_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genomicInstability/genomicInstability_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="0d7c244a904ea9286d4e965cddeaf2d7")
 

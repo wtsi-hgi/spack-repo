@@ -14,7 +14,7 @@ class RProjectr(RPackage):
 	
 	homepage = "https://github.com/genesofeve/projectR/"
 	bioc = "projectR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/projectR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/projectR/projectR_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/projectR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/projectR/projectR_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="7351d9a1c593186a6adb189ebd3ff9d2")
 

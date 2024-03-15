@@ -20,7 +20,7 @@ class RBbotk(RPackage):
 	homepage = "https://bbotk.mlr-org.com"
 	cran = "bbotk" 
 
-	version("0.7.3", md5="23d55cf1ea86bfcccd95af11143246ce")
+	version("0.8.0", md5="5aa8ad5181b56a2048598f2311662077")
 
 	depends_on("r-paradox@0.7:", type=("build", "run"))
 	depends_on("r@3.1:", type=("build", "run"))

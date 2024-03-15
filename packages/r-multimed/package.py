@@ -13,7 +13,7 @@ class RMultimed(RPackage):
 	"""
 	
 	bioc = "MultiMed" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MultiMed_2.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MultiMed/MultiMed_2.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MultiMed_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MultiMed/MultiMed_2.24.0.tar.gz"]
 
 	version("2.24.0", md5="019bc5d7be15d1688b3b5df7b87246f7")
 

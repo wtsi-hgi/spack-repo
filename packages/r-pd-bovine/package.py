@@ -13,7 +13,7 @@ class RPdBovine(RPackage):
 	"""
 	
 	bioc = "pd.bovine" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.bovine_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.bovine/pd.bovine_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.bovine_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.bovine/pd.bovine_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="6c7026dba53b54b547b1f1e135d043b3")
 

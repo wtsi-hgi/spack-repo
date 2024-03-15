@@ -13,7 +13,7 @@ class RRegionalst(RPackage):
 	"""
 	
 	bioc = "RegionalST" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RegionalST_1.0.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RegionalST/RegionalST_1.0.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RegionalST_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RegionalST/RegionalST_1.0.1.tar.gz"]
 
 	version("1.0.1", md5="d9589bef7f1408c77dee510baa14b4ad")
 

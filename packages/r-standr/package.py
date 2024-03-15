@@ -14,7 +14,7 @@ class RStandr(RPackage):
 	
 	homepage = "https://github.com/DavisLaboratory/standR"
 	bioc = "standR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/standR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/standR/standR_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/standR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/standR/standR_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="94e29a2001fbb9d0bfa1488ae7039aa7")
 

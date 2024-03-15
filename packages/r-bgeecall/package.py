@@ -14,7 +14,7 @@ class RBgeecall(RPackage):
 	
 	homepage = "https://github.com/BgeeDB/BgeeCall"
 	bioc = "BgeeCall" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BgeeCall_1.18.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BgeeCall/BgeeCall_1.18.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BgeeCall_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BgeeCall/BgeeCall_1.18.1.tar.gz"]
 
 	version("1.18.1", md5="d6ffd11b71faf135832b99515c7ba4cd")
 

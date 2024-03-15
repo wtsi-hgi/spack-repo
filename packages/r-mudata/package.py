@@ -14,7 +14,7 @@ class RMudata(RPackage):
 	
 	homepage = "https://github.com/ilia-kats/MuData"
 	bioc = "MuData" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MuData_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MuData/MuData_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MuData_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MuData/MuData_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="10ef702e87a5f0517e59c1ccb96b08dc")
 

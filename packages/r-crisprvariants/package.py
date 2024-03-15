@@ -13,7 +13,7 @@ class RCrisprvariants(RPackage):
 	"""
 	
 	bioc = "CrispRVariants" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CrispRVariants_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CrispRVariants/CrispRVariants_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CrispRVariants_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CrispRVariants/CrispRVariants_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="ede7cabcf986e2494f2e7b489621dd09")
 

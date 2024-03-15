@@ -14,7 +14,7 @@ class RLapmix(RPackage):
 	
 	homepage = "http://www.r-project.org"
 	bioc = "lapmix" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/lapmix_1.68.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/lapmix/lapmix_1.68.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lapmix_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lapmix/lapmix_1.68.0.tar.gz"]
 
 	version("1.68.0", md5="5d2611d1b39b06b05ed64ffab459a5a9")
 

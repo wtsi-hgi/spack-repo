@@ -13,7 +13,7 @@ class RHspeccdf(RPackage):
 	"""
 	
 	bioc = "hspeccdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hspeccdf_0.99.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hspeccdf/hspeccdf_0.99.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hspeccdf_0.99.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hspeccdf/hspeccdf_0.99.1.tar.gz"]
 
 	version("0.99.1", md5="89f81adf91094710558ce6aec79fc7fd")
 

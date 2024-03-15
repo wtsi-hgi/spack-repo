@@ -17,9 +17,9 @@ class RAdbcsqlite(RPackage):
 	"""
 	
 	homepage = "https://github.com/apache/arrow-adbc"
-	cran = "adbcsqlite" 
+	cran = "adbcsqlite"
 
-	version("0.9.0", md5="f451684e4e0c269bcdd27b70038f82d1")
+	version("0.10.0", md5="fb28cadb38c04050e8a95a7113e3cf30")
 
 	depends_on("r-adbcdrivermanager", type=("build", "run"))
 	depends_on("sqlite@3:", type=("build", "link", "run"))

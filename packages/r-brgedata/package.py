@@ -13,7 +13,7 @@ class RBrgedata(RPackage):
 	"""
 	
 	bioc = "brgedata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/brgedata_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/brgedata/brgedata_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/brgedata_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/brgedata/brgedata_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="b8d26c8dfa756e9eb556e4662e3b3302")
 

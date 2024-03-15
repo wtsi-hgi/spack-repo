@@ -13,7 +13,7 @@ class RMgfm(RPackage):
 	"""
 	
 	bioc = "MGFM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MGFM_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MGFM/MGFM_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MGFM_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MGFM/MGFM_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="893a9f574fe4e023d3c4d3b99d58ae78")
 

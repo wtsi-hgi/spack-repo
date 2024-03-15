@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RMapview(RPackage):
 	visualise true- and false-color raster images and bounding boxes."""
 
 	cran = "mapview"
+
+	license("GPL-3.0-or-later OR custom")
 
 	version("2.11.2", md5="d966e1ade3e7cb9d57ce0053d92a5356")
 

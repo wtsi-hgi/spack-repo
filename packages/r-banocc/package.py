@@ -13,7 +13,7 @@ class RBanocc(RPackage):
 	"""
 	
 	bioc = "banocc" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/banocc_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/banocc/banocc_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/banocc_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/banocc/banocc_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="5a73975945814e725991bd67552349e6")
 

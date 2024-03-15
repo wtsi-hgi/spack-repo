@@ -13,7 +13,7 @@ class RTxdbCelegansUcscCe11Refgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Celegans.UCSC.ce11.refGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Celegans.UCSC.ce11.refGene_3.4.6.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Celegans.UCSC.ce11.refGene/TxDb.Celegans.UCSC.ce11.refGene_3.4.6.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Celegans.UCSC.ce11.refGene_3.4.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Celegans.UCSC.ce11.refGene/TxDb.Celegans.UCSC.ce11.refGene_3.4.6.tar.gz"]
 
 	version("3.4.6", md5="3765169432e745aff5e85afd239066ca")
 

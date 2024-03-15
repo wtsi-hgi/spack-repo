@@ -14,7 +14,7 @@ class RIseehex(RPackage):
 	
 	homepage = "https://github.com/iSEE/iSEEhex"
 	bioc = "iSEEhex" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iSEEhex_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iSEEhex/iSEEhex_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEEhex_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEEhex/iSEEhex_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="9bc98dc14114c756f97c130adf061a4b")
 

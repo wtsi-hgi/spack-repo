@@ -13,7 +13,7 @@ class RDoscheda(RPackage):
 	"""
 	
 	bioc = "Doscheda" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Doscheda_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Doscheda/Doscheda_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Doscheda_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Doscheda/Doscheda_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="3eee0480f798b00860daaf2cb88325ca")
 

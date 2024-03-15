@@ -14,7 +14,7 @@ class RMaser(RPackage):
 	
 	homepage = "https://github.com/DiogoVeiga/maser"
 	bioc = "maser" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/maser_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/maser/maser_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maser_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maser/maser_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="43be20847a05369476ccdb91cdd6ad4e")
 

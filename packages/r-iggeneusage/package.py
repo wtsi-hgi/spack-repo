@@ -14,7 +14,7 @@ class RIggeneusage(RPackage):
 	
 	homepage = "https://github.com/snaketron/IgGeneUsage"
 	bioc = "IgGeneUsage" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IgGeneUsage_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IgGeneUsage/IgGeneUsage_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IgGeneUsage_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IgGeneUsage/IgGeneUsage_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="231f1af3465f435ca3bb099a93e51e5b")
 

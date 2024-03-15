@@ -13,7 +13,7 @@ class RGreylistchip(RPackage):
 	"""
 	
 	bioc = "GreyListChIP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GreyListChIP_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GreyListChIP/GreyListChIP_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GreyListChIP_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GreyListChIP/GreyListChIP_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="42fa9dbbc56cc2c4fdf511ce67ee234e")
 

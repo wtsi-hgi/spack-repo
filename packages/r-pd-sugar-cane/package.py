@@ -13,7 +13,7 @@ class RPdSugarCane(RPackage):
 	"""
 	
 	bioc = "pd.sugar.cane" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.sugar.cane_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.sugar.cane/pd.sugar.cane_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.sugar.cane_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.sugar.cane/pd.sugar.cane_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="bd7eb8b1a1c9ac77359358a5347330fb")
 

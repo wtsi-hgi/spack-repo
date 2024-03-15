@@ -14,7 +14,7 @@ class RIsee(RPackage):
 	
 	homepage = "https://github.com/iSEE/iSEE"
 	bioc = "iSEE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iSEE_2.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iSEE/iSEE_2.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEE_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEE/iSEE_2.14.0.tar.gz"]
 
 	version("2.14.0", md5="e6d2be3afb9bc484d594cbd21887ec53")
 

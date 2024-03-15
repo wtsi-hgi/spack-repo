@@ -13,7 +13,7 @@ class RFlowfp(RPackage):
 	"""
 	
 	bioc = "flowFP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowFP_1.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowFP/flowFP_1.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowFP_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowFP/flowFP_1.60.0.tar.gz"]
 
 	version("1.60.0", md5="5f0424d8a662d2d65bacbcff080d9c7a")
 

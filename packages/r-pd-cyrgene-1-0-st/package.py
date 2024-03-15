@@ -13,7 +13,7 @@ class RPdCyrgene10St(RPackage):
 	"""
 	
 	bioc = "pd.cyrgene.1.0.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.cyrgene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.cyrgene.1.0.st/pd.cyrgene.1.0.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.cyrgene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.cyrgene.1.0.st/pd.cyrgene.1.0.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="63228c07d3d16d6c62e9c0e83f10a855")
 

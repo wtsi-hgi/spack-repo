@@ -18,14 +18,16 @@ class RUcscxenashiny(RPackage):
 	homepage = "https://github.com/openbiox/UCSCXenaShiny"
 	cran = "UCSCXenaShiny" 
 
-	version("1.1.10", md5="8cdbb835e84233d0dca9109a2d353f04")
+	version("2.0.0", md5="b2a36e1ff9e4f22b6693fd4f618e0c62")
 
 	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r-digest", type=("build", "run"))
 	depends_on("r-dplyr@0.8.3:", type=("build", "run"))
 	depends_on("r-ezcox", type=("build", "run"))
 	depends_on("r-forcats", type=("build", "run"))
 	depends_on("r-ggplot2@3.2:", type=("build", "run"))
 	depends_on("r-ggpubr@0.2:", type=("build", "run"))
+	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-magrittr@1.5:", type=("build", "run"))
 	depends_on("r-ppcor", type=("build", "run"))
 	depends_on("r-psych", type=("build", "run"))

@@ -18,9 +18,9 @@ class RCffr(RPackage):
 	homepage = "https://docs.ropensci.org/cffr/"
 	cran = "cffr" 
 
-	version("0.5.0", md5="bed3c04c36ec34e0f9db377c4cbebcee")
+	version("1.0.0", md5="607ad372d8a132f9000bda68a675e4f2")
 
-	depends_on("r@3.6:", type=("build", "run"))
+	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-cli@2:", type=("build", "run"))
 	depends_on("r-desc@1.3:", type=("build", "run"))
 	depends_on("r-jsonlite@1.7.2:", type=("build", "run"))

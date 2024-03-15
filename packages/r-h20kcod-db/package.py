@@ -13,7 +13,7 @@ class RH20kcodDb(RPackage):
 	"""
 	
 	bioc = "h20kcod.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/h20kcod.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/h20kcod.db/h20kcod.db_3.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/h20kcod.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/h20kcod.db/h20kcod.db_3.4.0.tar.gz"]
 
 	version("3.4.0", md5="3647facb272f58424f4c94ef92e8ee45")
 

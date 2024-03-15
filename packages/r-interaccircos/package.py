@@ -13,7 +13,7 @@ class RInteraccircos(RPackage):
 	"""
 	
 	bioc = "interacCircos" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/interacCircos_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/interacCircos/interacCircos_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/interacCircos_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/interacCircos/interacCircos_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="d97429da8da823bf80547b4ac8ca2505")
 

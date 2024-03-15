@@ -13,7 +13,7 @@ class RRagene21sttranscriptclusterDb(RPackage):
 	"""
 	
 	bioc = "ragene21sttranscriptcluster.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ragene21sttranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/ragene21sttranscriptcluster.db/ragene21sttranscriptcluster.db_8.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ragene21sttranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ragene21sttranscriptcluster.db/ragene21sttranscriptcluster.db_8.8.0.tar.gz"]
 
 	version("8.8.0", md5="6ffe13e1594add0a5169b2083b608336")
 

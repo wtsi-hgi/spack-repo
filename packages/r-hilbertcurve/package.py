@@ -14,7 +14,7 @@ class RHilbertcurve(RPackage):
 	
 	homepage = "https://github.com/jokergoo/HilbertCurve"
 	bioc = "HilbertCurve" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HilbertCurve_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HilbertCurve/HilbertCurve_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HilbertCurve_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HilbertCurve/HilbertCurve_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="97eed8a87d8bb062c5d0b900823f6bcc")
 

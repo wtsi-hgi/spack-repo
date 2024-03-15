@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,7 +16,7 @@ class RDmrcate(RPackage):
 	Includes GRanges generation and plotting functions."""
 
 	bioc = "DMRcate"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DMRcate_2.16.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DMRcate/DMRcate_2.16.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DMRcate_2.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DMRcate/DMRcate_2.16.1.tar.gz"]
 
 	version("2.16.1", md5="6c37b23c3dc4f68915ab665f3572ad95")
 

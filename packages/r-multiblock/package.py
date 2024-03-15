@@ -18,7 +18,7 @@ class RMultiblock(RPackage):
 	homepage = "https://khliland.github.io/multiblock/"
 	cran = "multiblock" 
 
-	version("0.8.8", md5="7ee81f7d23eb8eed768bfcdbb6d59b19")
+	version("0.8.8.1", md5="0d63516a56801bb5312d0551994615c4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ade4", type=("build", "run"))

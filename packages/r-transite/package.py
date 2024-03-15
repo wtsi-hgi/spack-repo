@@ -14,7 +14,7 @@ class RTransite(RPackage):
 	
 	homepage = "https://transite.mit.edu"
 	bioc = "transite" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/transite_1.20.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/transite/transite_1.20.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/transite_1.20.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/transite/transite_1.20.1.tar.gz"]
 
 	version("1.20.1", md5="5ca0d6b697345dd970f793f40bc48dfa")
 

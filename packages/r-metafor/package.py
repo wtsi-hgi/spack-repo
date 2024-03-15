@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -28,6 +28,8 @@ class RMetafor(RPackage):
 	package can be found in Viechtbauer (2010) <doi:10.18637/jss.v036.i03>."""
 
 	cran = "metafor"
+
+	license("GPL-2.0-or-later")
 
 	version("4.4-0", md5="510f4baa9ef50aab05b887e71e3c3a27")
 

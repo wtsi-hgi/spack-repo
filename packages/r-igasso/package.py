@@ -14,7 +14,7 @@ class RIgasso(RPackage):
 	
 	cran = "iGasso" 
 
-	version("1.6", md5="f0287051c987aad2c89454101d99210b")
+	version("1.6.1", md5="2e89ef1299a4c30dc684bf65cf870e77")
 
 	depends_on("r-lattice", type=("build", "run"))
 	depends_on("r-compquadform", type=("build", "run"))

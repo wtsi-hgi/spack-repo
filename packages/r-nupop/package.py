@@ -13,7 +13,7 @@ class RNupop(RPackage):
 	"""
 	
 	bioc = "NuPoP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/NuPoP_2.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/NuPoP/NuPoP_2.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NuPoP_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NuPoP/NuPoP_2.10.0.tar.gz"]
 
 	version("2.10.0", md5="65372d828848fa588584e42324762643")
 

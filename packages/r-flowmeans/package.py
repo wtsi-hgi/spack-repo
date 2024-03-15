@@ -13,7 +13,7 @@ class RFlowmeans(RPackage):
 	"""
 	
 	bioc = "flowMeans" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowMeans_1.62.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowMeans/flowMeans_1.62.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowMeans_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowMeans/flowMeans_1.62.0.tar.gz"]
 
 	version("1.62.0", md5="5cbb796502f09bf65cae60e4f0f53c1f")
 

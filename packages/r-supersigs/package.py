@@ -14,7 +14,7 @@ class RSupersigs(RPackage):
 	
 	homepage = "https://tomasettilab.github.io/supersigs/"
 	bioc = "supersigs" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/supersigs_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/supersigs/supersigs_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/supersigs_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/supersigs/supersigs_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="35df3e9fd0272854b23baf15d93d300f")
 

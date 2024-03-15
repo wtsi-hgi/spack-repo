@@ -13,7 +13,7 @@ class RBovineprobe(RPackage):
 	"""
 	
 	bioc = "bovineprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/bovineprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/bovineprobe/bovineprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/bovineprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/bovineprobe/bovineprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="9f9e25fc8c7a76acf541745b7c09748b")
 

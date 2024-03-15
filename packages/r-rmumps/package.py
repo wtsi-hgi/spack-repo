@@ -23,7 +23,7 @@ class RRmumps(RPackage):
 	homepage = "http://www.mumps-solver.org/"
 	cran = "rmumps" 
 
-	version("5.2.1-27", md5="8f8e528cef5f47e33f2be5eaac97d069")
+	version("5.2.1-28", md5="36d56b923efde52173ac39276f8162a1")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("zlib", type=("build", "link", "run"))

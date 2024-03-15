@@ -13,7 +13,7 @@ class RPhenopath(RPackage):
 	"""
 	
 	bioc = "phenopath" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/phenopath_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/phenopath/phenopath_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phenopath_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phenopath/phenopath_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="1bbbcb87efbf78aa39ee07851d27f498")
 

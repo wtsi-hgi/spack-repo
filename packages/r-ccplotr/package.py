@@ -14,7 +14,7 @@ class RCcplotr(RPackage):
 	
 	homepage = "https://github.com/Sarah145/CCPlotR"
 	bioc = "CCPlotR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CCPlotR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CCPlotR/CCPlotR_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CCPlotR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CCPlotR/CCPlotR_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="913896518f29cd88d7ac9d57298f44de")
 

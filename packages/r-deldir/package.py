@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,8 @@ class RDeldir(RPackage):
 
 	cran = "deldir"
 
-	version("2.0-2", md5="a02501c2d7e7931eddcb2d95dec74996")
+	license("GPL-2.0-or-later")
+
+	version("2.0-4", md5="dba584ac3a3f26871618d7b2c0d2338a")
 
 	depends_on("r@3.5:", type=("build", "run"))

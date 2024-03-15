@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -24,7 +24,9 @@ class RAfex(RPackage):
 
 	cran = "afex"
 
-	version("1.3-0", md5="928302f51d421605f77527a897a605d4")
+	license("GPL-2.0-or-later")
+
+	version("1.3-1", md5="c10f82664199c52f1feafaabedd4226f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-lme4@1.1.8:", type=("build", "run"))

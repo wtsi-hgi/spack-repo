@@ -16,7 +16,7 @@ class RCryptotrackr(RPackage):
 	
 	cran = "cryptotrackr" 
 
-	version("1.1.0", md5="119c4ea8d310a025e2ed16de449d5b2a")
+	version("1.2.0", md5="f95ec30318232d49ed3ad20c8d062e56")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

@@ -13,7 +13,7 @@ class RCqn(RPackage):
 	"""
 	
 	bioc = "cqn" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cqn_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cqn/cqn_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cqn_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cqn/cqn_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="a72eb9ae5c393dec7ecc4f992d11328f")
 

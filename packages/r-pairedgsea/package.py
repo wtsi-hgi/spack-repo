@@ -14,7 +14,7 @@ class RPairedgsea(RPackage):
 	
 	homepage = "https://github.com/shdam/pairedGSEA"
 	bioc = "pairedGSEA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pairedGSEA_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pairedGSEA/pairedGSEA_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pairedGSEA_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pairedGSEA/pairedGSEA_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="591cbbc31b4eab5064ef39c4b8133fa5")
 

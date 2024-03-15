@@ -13,7 +13,7 @@ class RScone(RPackage):
 	"""
 	
 	bioc = "scone" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scone_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scone/scone_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scone_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scone/scone_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="0e7dd77999fc8cbf842fee6452c82a1b")
 

@@ -13,7 +13,7 @@ class RSpatialcpie(RPackage):
 	"""
 	
 	bioc = "SpatialCPie" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SpatialCPie_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SpatialCPie/SpatialCPie_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpatialCPie_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpatialCPie/SpatialCPie_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="f7f622f0a9e08b387870bddc9a52cfc2")
 

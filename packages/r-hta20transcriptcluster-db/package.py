@@ -13,7 +13,7 @@ class RHta20transcriptclusterDb(RPackage):
 	"""
 	
 	bioc = "hta20transcriptcluster.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hta20transcriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hta20transcriptcluster.db/hta20transcriptcluster.db_8.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hta20transcriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hta20transcriptcluster.db/hta20transcriptcluster.db_8.8.0.tar.gz"]
 
 	version("8.8.0", md5="9debbc190cc5f9f0ad97fbc452fe7025")
 

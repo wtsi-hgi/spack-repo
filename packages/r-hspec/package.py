@@ -13,7 +13,7 @@ class RHspec(RPackage):
 	"""
 	
 	bioc = "Hspec" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Hspec_0.99.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/Hspec/Hspec_0.99.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Hspec_0.99.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Hspec/Hspec_0.99.1.tar.gz"]
 
 	version("0.99.1", md5="0ade3e3147c8f0086e9be2312cccdfeb")
 

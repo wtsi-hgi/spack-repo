@@ -14,7 +14,7 @@ class RCosnet(RPackage):
 	
 	homepage = "https://github.com/m1frasca/COSNet_GitHub"
 	bioc = "COSNet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/COSNet_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/COSNet/COSNet_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/COSNet_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/COSNet/COSNet_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="6648998ac68e41642f1a7bad77e0bb7f")
 

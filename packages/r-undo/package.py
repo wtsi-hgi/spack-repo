@@ -13,7 +13,7 @@ class RUndo(RPackage):
 	"""
 	
 	bioc = "UNDO" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/UNDO_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/UNDO/UNDO_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/UNDO_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/UNDO/UNDO_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="a94665c036a09fbf3728f0a1ad220dfa")
 

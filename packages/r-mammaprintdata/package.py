@@ -14,7 +14,7 @@ class RMammaprintdata(RPackage):
 	
 	homepage = "http://luigimarchionni.org/breastTSP.html"
 	bioc = "mammaPrintData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/mammaPrintData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/mammaPrintData/mammaPrintData_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mammaPrintData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mammaPrintData/mammaPrintData_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="08b3249a36d5f165a933bfab5eb05a2a")
 

@@ -18,7 +18,7 @@ class RCongrevelamsdell2016(RPackage):
 	homepage = "https://github.com/ms609/CongreveLamsdell2016"
 	cran = "CongreveLamsdell2016" 
 
-	version("1.0.2", md5="b35997e74d981ae679c37082757cc065", url="https://cran.r-project.org/src/contrib/CongreveLamsdell2016_1.0.2.tar.gz")
+	version("1.0.3", md5="255c29945816473afa22fed95424d20c", url="https://cran.r-project.org/src/contrib/CongreveLamsdell2016_1.0.3.tar.gz")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-ternary", type=("build", "run"))

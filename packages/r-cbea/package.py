@@ -14,7 +14,7 @@ class RCbea(RPackage):
 	
 	homepage = "https://github.com/qpmnguyen/CBEA"
 	bioc = "CBEA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CBEA_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CBEA/CBEA_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CBEA_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CBEA/CBEA_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="20761b06df9cf37c59172508ff8cd01d")
 

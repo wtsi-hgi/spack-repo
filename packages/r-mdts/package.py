@@ -13,7 +13,7 @@ class RMdts(RPackage):
 	"""
 	
 	bioc = "MDTS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MDTS_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MDTS/MDTS_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MDTS_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MDTS/MDTS_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="a9ab8fa7a5e9ef7dcdb28fb553b895f6")
 

@@ -14,7 +14,7 @@ class RAtena(RPackage):
 	
 	homepage = "https://github.com/functionalgenomics/atena"
 	bioc = "atena" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/atena_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/atena/atena_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/atena_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/atena/atena_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="c7ae11b12240ed1d848301b4c40b019e")
 

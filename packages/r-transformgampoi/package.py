@@ -14,7 +14,7 @@ class RTransformgampoi(RPackage):
 	
 	homepage = "https://github.com/const-ae/transformGamPoi"
 	bioc = "transformGamPoi" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/transformGamPoi_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/transformGamPoi/transformGamPoi_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/transformGamPoi_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/transformGamPoi/transformGamPoi_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="ec9683fa0efb74c2fae2e8721f265f0b")
 

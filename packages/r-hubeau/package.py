@@ -17,7 +17,7 @@ class RHubeau(RPackage):
 	homepage = "https://inrae.github.io/hubeau/"
 	cran = "hubeau" 
 
-	version("0.4.1", md5="84fab7a5d34e356fd062037808f50ae1")
+	version("0.5.0", md5="67dc4fb306163afbe7aa5bb93fc6f5f2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

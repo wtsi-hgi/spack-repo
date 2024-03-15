@@ -14,7 +14,7 @@ class RAntiprofiles(RPackage):
 	
 	homepage = "https://github.com/HCBravoLab/antiProfiles"
 	bioc = "antiProfiles" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/antiProfiles_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/antiProfiles/antiProfiles_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/antiProfiles_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/antiProfiles/antiProfiles_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="80b3c1174d02d3b00b3ebf5d14a75b90")
 

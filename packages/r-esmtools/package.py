@@ -27,7 +27,7 @@ class REsmtools(RPackage):
 	homepage = "https://gitlab.kuleuven.be/ppw-okpiv/researchers/u0148925/esmtools/"
 	cran = "esmtools" 
 
-	version("1.0.0", md5="7be417c72c0f76d4d8fc7812665cc296")
+	version("1.0.1", md5="effec2416626a8a7bb73fd1438dc8427")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-base64enc@0.1.3:", type=("build", "run"))

@@ -13,7 +13,7 @@ class RSparsenetgls(RPackage):
 	"""
 	
 	bioc = "sparsenetgls" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sparsenetgls_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sparsenetgls/sparsenetgls_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sparsenetgls_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sparsenetgls/sparsenetgls_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="32b8f3b9fe86b40386aee23ac4ea55fd")
 

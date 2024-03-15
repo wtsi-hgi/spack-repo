@@ -14,7 +14,7 @@ class RQdnaseq(RPackage):
 	
 	homepage = "https://github.com/ccagc/QDNAseq"
 	bioc = "QDNAseq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/QDNAseq_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/QDNAseq/QDNAseq_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QDNAseq_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QDNAseq/QDNAseq_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="589b066b44091955991b4f66ac86b9ee")
 

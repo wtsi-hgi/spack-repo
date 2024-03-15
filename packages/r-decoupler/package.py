@@ -14,7 +14,7 @@ class RDecoupler(RPackage):
 	
 	homepage = "https://saezlab.github.io/decoupleR/"
 	bioc = "decoupleR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/decoupleR_2.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/decoupleR/decoupleR_2.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/decoupleR_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/decoupleR/decoupleR_2.8.0.tar.gz"]
 
 	version("2.8.0", md5="de2a391693476223ec54521aa77ba121")
 

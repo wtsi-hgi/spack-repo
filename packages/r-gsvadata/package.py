@@ -13,7 +13,7 @@ class RGsvadata(RPackage):
 	"""
 	
 	bioc = "GSVAdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/GSVAdata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/GSVAdata/GSVAdata_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GSVAdata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GSVAdata/GSVAdata_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="3c2d6a66967ab8c3c2545fc3323282b3")
 

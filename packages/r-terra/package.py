@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -20,6 +20,8 @@ class RTerra(RPackage):
 	and it is faster."""
 
 	cran = "terra"
+
+	license("GPL-3.0-or-later")
 
 	version("1.7-71", md5="1f77a38039a013b8301b0884b2a380e7")
 

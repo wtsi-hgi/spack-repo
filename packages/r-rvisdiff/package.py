@@ -14,7 +14,7 @@ class RRvisdiff(RPackage):
 	
 	homepage = "https://github.com/BioinfoUSAL/Rvisdiff/"
 	bioc = "Rvisdiff" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Rvisdiff_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Rvisdiff/Rvisdiff_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rvisdiff_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rvisdiff/Rvisdiff_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="3e3b8ccc9cb71388e2e7c17d60995cbe")
 

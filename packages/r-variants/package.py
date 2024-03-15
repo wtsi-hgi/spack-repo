@@ -14,7 +14,7 @@ class RVariants(RPackage):
 	
 	homepage = "https://bioconductor.org/help/workflows/variants/"
 	bioc = "variants" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/variants_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/variants/variants_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/variants_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/variants/variants_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="584a4dd6baad21cfef19e750245ea09f")
 

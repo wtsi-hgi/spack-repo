@@ -14,7 +14,7 @@ class RPadma(RPackage):
 	
 	homepage = "https://github.com/andreamrau/padma"
 	bioc = "padma" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/padma_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/padma/padma_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/padma_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/padma/padma_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="126a8aec3057f8ccc5a435c5435adfc0")
 

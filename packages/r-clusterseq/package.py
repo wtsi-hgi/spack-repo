@@ -13,7 +13,7 @@ class RClusterseq(RPackage):
 	"""
 	
 	bioc = "clusterSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/clusterSeq_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/clusterSeq/clusterSeq_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clusterSeq_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clusterSeq/clusterSeq_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="c0f51fc6b851b707de4f53107c6179f5")
 

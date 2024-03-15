@@ -13,7 +13,7 @@ class RMessina(RPackage):
 	"""
 	
 	bioc = "messina" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/messina_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/messina/messina_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/messina_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/messina/messina_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="ad9cfdec37597c8a312b49085f1ff124")
 

@@ -14,7 +14,7 @@ class RTekrabber(RPackage):
 	
 	homepage = "https://github.com/ferygood/TEKRABber"
 	bioc = "TEKRABber" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TEKRABber_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TEKRABber/TEKRABber_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TEKRABber_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TEKRABber/TEKRABber_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="145026d8a5e02ec94f8a2a1f5405851e")
 

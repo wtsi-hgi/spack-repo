@@ -13,7 +13,7 @@ class RSimffpe(RPackage):
 	"""
 	
 	bioc = "SimFFPE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SimFFPE_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SimFFPE/SimFFPE_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SimFFPE_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SimFFPE/SimFFPE_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="95d6710ea184127f659f0c6f7786234c")
 

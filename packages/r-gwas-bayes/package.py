@@ -13,7 +13,7 @@ class RGwasBayes(RPackage):
 	"""
 	
 	bioc = "GWAS.BAYES" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GWAS.BAYES_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GWAS.BAYES/GWAS.BAYES_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GWAS.BAYES_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GWAS.BAYES/GWAS.BAYES_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="cf62f1d1c5f69ef4051bf659da548b1f")
 

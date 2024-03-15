@@ -19,7 +19,7 @@ class RArcpullr(RPackage):
 	
 	cran = "arcpullr" 
 
-	version("0.2.8", md5="2fa9f82ead4304da815ead3013780a8b")
+	version("0.2.9", md5="dc54b511fe3de7c5b1c7a962f60928da")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-sf@0.9.7:", type=("build", "run"))

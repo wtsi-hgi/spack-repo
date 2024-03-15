@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,7 @@ class RSiggenes(RPackage):
 	(EBAM)."""
 
 	bioc = "siggenes"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/siggenes_1.76.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/siggenes/siggenes_1.76.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/siggenes_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/siggenes/siggenes_1.76.0.tar.gz"]
 
 	version("1.76.0", md5="ae9899f2a3587a423169a27502868709")
 

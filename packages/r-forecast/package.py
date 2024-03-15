@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,9 @@ class RForecast(RPackage):
 
 	cran = "forecast"
 
-	version("8.21.1", md5="81a349a73c4d61e49a12bd30eb5e3ce5")
+	license("GPL-3.0-only")
+
+	version("8.22.0", md5="1706f64e99f49ee63b3a2821c3621579")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-colorspace", type=("build", "run"))

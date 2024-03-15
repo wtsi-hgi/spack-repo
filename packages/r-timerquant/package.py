@@ -13,7 +13,7 @@ class RTimerquant(RPackage):
 	"""
 	
 	bioc = "TimerQuant" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/TimerQuant_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/TimerQuant/TimerQuant_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TimerQuant_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TimerQuant/TimerQuant_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="7033d0ae9a0731af8bafecbbfa5398c8")
 

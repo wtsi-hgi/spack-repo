@@ -13,7 +13,7 @@ class ROrgCfEgDb(RPackage):
 	"""
 	
 	bioc = "org.Cf.eg.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/org.Cf.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/org.Cf.eg.db/org.Cf.eg.db_3.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Cf.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.Cf.eg.db/org.Cf.eg.db_3.18.0.tar.gz"]
 
 	version("3.18.0", md5="038d08c046a81218a31ff8db0877dd15")
 

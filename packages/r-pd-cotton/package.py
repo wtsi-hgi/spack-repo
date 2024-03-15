@@ -13,7 +13,7 @@ class RPdCotton(RPackage):
 	"""
 	
 	bioc = "pd.cotton" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.cotton_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.cotton/pd.cotton_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.cotton_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.cotton/pd.cotton_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="78c408902bcefb8c695119767534b393")
 

@@ -20,12 +20,14 @@ class RGeosapi(RPackage):
 	homepage = "https://github.com/eblondel/geosapi"
 	cran = "geosapi" 
 
-	version("0.6-7", md5="2f94a787f23f63b8c193b5307315bf13")
+	version("0.7-1", md5="179ca222c6218299462cdb3b7a8b8b8e")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))
+	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-openssl", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))
-	depends_on("r-xml", type=("build", "run"))
+	depends_on("r-xml2", type=("build", "run"))
+	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-keyring", type=("build", "run"))
 	depends_on("r-readr", type=("build", "run"))

@@ -13,7 +13,7 @@ class RCctutorial(RPackage):
 	"""
 	
 	bioc = "ccTutorial" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/ccTutorial_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/ccTutorial/ccTutorial_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ccTutorial_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ccTutorial/ccTutorial_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="20af731ec83a03f12ec5d87060f5d168")
 

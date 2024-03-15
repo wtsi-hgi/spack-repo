@@ -13,7 +13,7 @@ class RMissrows(RPackage):
 	"""
 	
 	bioc = "missRows" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/missRows_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/missRows/missRows_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/missRows_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/missRows/missRows_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="d076124257e06505c39064a9dcddd695")
 

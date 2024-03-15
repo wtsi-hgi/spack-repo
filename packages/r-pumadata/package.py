@@ -14,7 +14,7 @@ class RPumadata(RPackage):
 	
 	homepage = "http://umber.sbs.man.ac.uk/resources/puma"
 	bioc = "pumadata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/pumadata_2.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/pumadata/pumadata_2.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/pumadata_2.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/pumadata/pumadata_2.38.0.tar.gz"]
 
 	version("2.38.0", md5="811d6234d1d4e310beb7111601b157b7")
 

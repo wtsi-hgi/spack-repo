@@ -13,7 +13,7 @@ class RHuman370quadv3ccrlmm(RPackage):
 	"""
 	
 	bioc = "human370quadv3cCrlmm" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/human370quadv3cCrlmm_1.0.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/human370quadv3cCrlmm/human370quadv3cCrlmm_1.0.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/human370quadv3cCrlmm_1.0.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/human370quadv3cCrlmm/human370quadv3cCrlmm_1.0.3.tar.gz"]
 
 	version("1.0.3", md5="33c3ccc3793ed95647418b746a5177f9")
 

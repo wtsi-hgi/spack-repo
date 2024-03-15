@@ -13,7 +13,7 @@ class RMeshr(RPackage):
 	"""
 	
 	bioc = "meshr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/meshr_2.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/meshr/meshr_2.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/meshr_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/meshr/meshr_2.8.0.tar.gz"]
 
 	version("2.8.0", md5="7809b970dabdb3c42112e6b3aad5b75b")
 

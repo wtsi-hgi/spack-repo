@@ -10,11 +10,11 @@ class RApacheSedona(RPackage):
 	"""R Interface for Apache Sedona
 
 	R interface for 'Apache Sedona' based on 'sparklyr'
-    (<https://sedona.apache.org>).
+	(<https://sedona.apache.org>).
 	"""
 	
 	homepage = "https://github.com/apache/sedona/"
-	cran = "apache.sedona" 
+	cran = "apache.sedona"
 
 	version("1.5.1", md5="45318ee0c148ba1963fdc4d1f8b4979e")
 

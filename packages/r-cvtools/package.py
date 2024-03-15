@@ -7,16 +7,16 @@ from spack.package import *
 
 
 class RCvtools(RPackage):
-	"""Cross-validation tools for regression models
+	"""Cross-Validation Tools for Regression Models
 
 	Tools that allow developers to write functions for
-        cross-validation with minimal programming effort and assist
-        users with model selection.
+    cross-validation with minimal programming effort and assist
+    users with model selection.
 	"""
 	
 	cran = "cvTools" 
 
-	version("0.3.2", md5="df3f75920f5c2059ba9caee2c9a34067")
+	version("0.3.3", md5="dea2e69a808ac8abbe6f902e17fc86ed")
 
 	depends_on("r@2.11:", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))

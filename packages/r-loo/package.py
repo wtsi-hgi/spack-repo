@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -22,9 +22,12 @@ class RLoo(RPackage):
 
 	cran = "loo"
 
-	version("2.6.0", md5="fd2d6e17d9ca5069884c15467f89fad1")
+	license("GPL-3.0-or-later")
+
+	version("2.7.0", md5="f603c34f25a3c083c2a2b4760afa932f")
 
 	depends_on("r@3.1.2:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-matrixstats@0.52:", type=("build", "run"))
+	depends_on("r-posterior@1.5:", type=("build", "run"))
 	depends_on("pandoc@1.12.3:", type=("build", "link", "run"))

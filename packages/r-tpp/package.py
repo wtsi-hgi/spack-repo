@@ -13,7 +13,7 @@ class RTpp(RPackage):
 	"""
 	
 	bioc = "TPP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TPP_3.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TPP/TPP_3.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TPP_3.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TPP/TPP_3.30.0.tar.gz"]
 
 	version("3.30.0", md5="4a0ea50f7969045d710d3bfef371af62")
 

@@ -14,7 +14,7 @@ class RMetaboliteidmapping(RPackage):
 	
 	homepage = "https://github.com/yigbt/metaboliteIDmapping"
 	bioc = "metaboliteIDmapping" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/metaboliteIDmapping_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/metaboliteIDmapping/metaboliteIDmapping_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/metaboliteIDmapping_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/metaboliteIDmapping/metaboliteIDmapping_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="bd78ec373ce90fac1a10d2c64c462e77")
 

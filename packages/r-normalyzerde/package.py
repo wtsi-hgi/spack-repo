@@ -14,7 +14,7 @@ class RNormalyzerde(RPackage):
 	
 	homepage = "https://github.com/ComputationalProteomics/NormalyzerDE"
 	bioc = "NormalyzerDE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/NormalyzerDE_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/NormalyzerDE/NormalyzerDE_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NormalyzerDE_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NormalyzerDE/NormalyzerDE_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="e55d57346b59dbd8b317a263e4b413b0")
 

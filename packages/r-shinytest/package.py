@@ -16,7 +16,7 @@ class RShinytest(RPackage):
 	homepage = "https://github.com/rstudio/shinytest"
 	cran = "shinytest" 
 
-	version("1.5.3", md5="9a26cfa32fa6f5e8ff3281ec2b9b871b")
+	version("1.5.4", md5="e2423f18cca7b67eca8057709d2f1118")
 
 	depends_on("r-assertthat", type=("build", "run"))
 	depends_on("r-callr@2.0.3:", type=("build", "run"))

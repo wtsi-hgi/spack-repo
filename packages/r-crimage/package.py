@@ -13,7 +13,7 @@ class RCrimage(RPackage):
 	"""
 	
 	bioc = "CRImage" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CRImage_1.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CRImage/CRImage_1.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CRImage_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CRImage/CRImage_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="84d9bedefc25b08b7e6d86c47bf233f9")
 

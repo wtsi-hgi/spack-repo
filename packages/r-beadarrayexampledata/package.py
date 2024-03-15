@@ -13,7 +13,7 @@ class RBeadarrayexampledata(RPackage):
 	"""
 	
 	bioc = "beadarrayExampleData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/beadarrayExampleData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/beadarrayExampleData/beadarrayExampleData_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/beadarrayExampleData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/beadarrayExampleData/beadarrayExampleData_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="d327e659adc868f1e3c7ae457c60087b")
 

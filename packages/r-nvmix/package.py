@@ -19,7 +19,7 @@ class RNvmix(RPackage):
 	
 	cran = "nvmix" 
 
-	version("0.1-0", md5="03650b9a32b8f713044a9e3160bab114")
+	version("0.1-1", md5="14ba1fe80fff780dc7ffb4248e0793cb")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-qrng", type=("build", "run"))

@@ -14,7 +14,7 @@ class RTcgaworkflowdata(RPackage):
 	
 	homepage = "https://f1000research.com/articles/5-1542/v2"
 	bioc = "TCGAWorkflowData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/TCGAWorkflowData_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/TCGAWorkflowData/TCGAWorkflowData_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TCGAWorkflowData_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TCGAWorkflowData/TCGAWorkflowData_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="cbba498f1922aeedadf96a1911a81751")
 

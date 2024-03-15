@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RRoxygen2(RPackage):
 	change. 'Roxygen2' is inspired by the 'Doxygen' system for C++."""
 
 	cran = "roxygen2"
+
+	license("MIT")
 
 	version("7.3.1", md5="0889cc9894460b64931b8a2853994f7b", url="https://cran.r-project.org/src/contrib/roxygen2_7.3.1.tar.gz")
 

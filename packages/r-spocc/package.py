@@ -20,7 +20,7 @@ class RSpocc(RPackage):
 	homepage = "https://github.com/ropensci/spocc"
 	cran = "spocc" 
 
-	version("1.2.2", md5="84e4a80bdeb7cd26af6ce9c19e57a940")
+	version("1.2.3", md5="13a792f7de7abd3e70545a7399618865")
 
 	depends_on("r-rgbif", type=("build", "run"))
 	depends_on("r-rebird", type=("build", "run"))

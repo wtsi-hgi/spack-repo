@@ -13,7 +13,7 @@ class RHgubeta7Db(RPackage):
 	"""
 	
 	bioc = "hgubeta7.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hgubeta7.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hgubeta7.db/hgubeta7.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgubeta7.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgubeta7.db/hgubeta7.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="1b8b065f95d2089985f59f22dcabc824")
 

@@ -13,7 +13,7 @@ class RPdRgU34c(RPackage):
 	"""
 	
 	bioc = "pd.rg.u34c" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.rg.u34c_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.rg.u34c/pd.rg.u34c_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rg.u34c_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rg.u34c/pd.rg.u34c_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="bc9cb7b208972ac2901235bdabdee5b2")
 

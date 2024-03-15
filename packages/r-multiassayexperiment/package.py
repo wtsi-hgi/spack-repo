@@ -14,7 +14,7 @@ class RMultiassayexperiment(RPackage):
 	
 	homepage = "http://waldronlab.io/MultiAssayExperiment/"
 	bioc = "MultiAssayExperiment" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MultiAssayExperiment_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MultiAssayExperiment/MultiAssayExperiment_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MultiAssayExperiment_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MultiAssayExperiment/MultiAssayExperiment_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="01844376cd208e33797b236e2e65fd77")
 

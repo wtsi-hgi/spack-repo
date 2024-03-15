@@ -14,7 +14,7 @@ class RBiocthis(RPackage):
 	
 	homepage = "https://github.com/lcolladotor/biocthis"
 	bioc = "biocthis" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biocthis_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biocthis/biocthis_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biocthis_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biocthis/biocthis_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="7ebf8e46d2b20a3a2bae3cc7a36264d5")
 

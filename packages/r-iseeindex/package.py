@@ -14,7 +14,7 @@ class RIseeindex(RPackage):
 	
 	homepage = "https://github.com/iSEE/iSEEindex"
 	bioc = "iSEEindex" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iSEEindex_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iSEEindex/iSEEindex_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEEindex_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEEindex/iSEEindex_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="98a9141431a3206fd242b5b0b4056c41")
 

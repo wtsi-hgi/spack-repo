@@ -15,6 +15,6 @@ class RStringmagic(RPackage):
 	homepage = "https://lrberge.github.io/stringmagic/"
 	cran = "stringmagic" 
 
-	version("1.0.0", md5="fb2a47a42735f26602831e0ac3bf0997")
+	version("1.1.0", md5="dc71f4f3d14034bf20fc380d32969c4c")
 
 	depends_on("r-rcpp", type=("build", "run"))

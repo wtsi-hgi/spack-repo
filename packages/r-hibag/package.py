@@ -14,7 +14,7 @@ class RHibag(RPackage):
 	
 	homepage = "https://github.com/zhengxwen/HIBAG"
 	bioc = "HIBAG" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HIBAG_1.38.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HIBAG/HIBAG_1.38.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HIBAG_1.38.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HIBAG/HIBAG_1.38.2.tar.gz"]
 
 	version("1.38.2", md5="a45e528fc76fb752e54021bb438ff3fd")
 

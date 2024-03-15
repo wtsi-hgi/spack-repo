@@ -10,17 +10,17 @@ class RAdmixr(RPackage):
 	"""An Interface for Running 'ADMIXTOOLS' Analyses
 
 	An interface for performing all stages of 'ADMIXTOOLS' analyses
-    (<https://reich.hms.harvard.edu/software>) entirely from R. Wrapper functions
-    (D, f4, f3, etc.) completely automate the generation of intermediate
-    configuration files, run 'ADMIXTOOLS' programs on the command-line, and
-    parse output files to extract values of interest. This allows users to focus
-    on the analysis itself instead of worrying about low-level technical details.
-    A set of complementary functions for processing and filtering of data in
-    the 'EIGENSTRAT' format is also provided.
+	(<https://reich.hms.harvard.edu/software>) entirely from R. Wrapper functions
+	(D, f4, f3, etc.) completely automate the generation of intermediate
+	configuration files, run 'ADMIXTOOLS' programs on the command-line, and
+	parse output files to extract values of interest. This allows users to focus
+	on the analysis itself instead of worrying about low-level technical details.
+	A set of complementary functions for processing and filtering of data in
+	the 'EIGENSTRAT' format is also provided.
 	"""
 	
 	homepage = "https://github.com/bodkan/admixr"
-	cran = "admixr" 
+	cran = "admixr"
 
 	version("0.9.1", md5="4d93e5c867a34ffec51d421d40e68aa8")
 

@@ -14,7 +14,7 @@ class RDerfinder(RPackage):
 	
 	homepage = "https://github.com/lcolladotor/derfinder"
 	bioc = "derfinder" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/derfinder_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/derfinder/derfinder_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/derfinder_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/derfinder/derfinder_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="a3ef629c180b64b0776c880164603c7b")
 

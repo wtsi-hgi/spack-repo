@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,7 @@ class RAffy(RPackage):
 	functions. 'affy' is fully functional without it."""
 
 	bioc = "affy"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/affy_1.80.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/affy/affy_1.80.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affy_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affy/affy_1.80.0.tar.gz"]
 
 	version("1.80.0", md5="09376016b32f86f707ff9b8f8cb8a1a5")
 

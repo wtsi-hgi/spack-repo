@@ -15,6 +15,6 @@ Taxonomic Backbone
 	
 	cran = "WorldFlora" 
 
-	version("1.14-1", md5="2affaee62151add6fa0b25fe21856203")
+	version("1.14-2", md5="8c77fecc9b7988bd9985ab3718826ea4")
 
 	depends_on("r@3.5:", type=("build", "run"))

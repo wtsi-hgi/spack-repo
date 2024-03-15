@@ -21,7 +21,7 @@ class RCoro(RPackage):
 	homepage = "https://github.com/r-lib/coro"
 	cran = "coro" 
 
-	version("1.0.3", md5="62deada3e82a20ea35fe9fb86cc98506")
+	version("1.0.4", md5="20d535e6d36920c23c8e74442977806a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rlang@0.4.12:", type=("build", "run"))

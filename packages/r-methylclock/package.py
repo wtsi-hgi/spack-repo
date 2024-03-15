@@ -14,7 +14,7 @@ class RMethylclock(RPackage):
 	
 	homepage = "https://github.com/isglobal-brge/methylclock"
 	bioc = "methylclock" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/methylclock_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/methylclock/methylclock_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylclock_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylclock/methylclock_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="b6151e23d6086f38d6489dcc277c81c9")
 

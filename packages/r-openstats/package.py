@@ -14,7 +14,7 @@ class ROpenstats(RPackage):
 	
 	homepage = "https://git.io/Jv5w0"
 	bioc = "OpenStats" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/OpenStats_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/OpenStats/OpenStats_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OpenStats_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OpenStats/OpenStats_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="0e8a0fcd25ca1377c5bce5068bfaabff")
 

@@ -13,7 +13,7 @@ class RHierinf(RPackage):
 	"""
 	
 	bioc = "hierinf" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/hierinf_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/hierinf/hierinf_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hierinf_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hierinf/hierinf_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="44446a50b3747865eadceabe415ce6f5")
 

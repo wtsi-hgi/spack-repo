@@ -13,7 +13,7 @@ class RHumantranscriptomecompendium(RPackage):
 	"""
 	
 	bioc = "HumanTranscriptomeCompendium" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HumanTranscriptomeCompendium_1.17.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HumanTranscriptomeCompendium/HumanTranscriptomeCompendium_1.17.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HumanTranscriptomeCompendium_1.17.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HumanTranscriptomeCompendium/HumanTranscriptomeCompendium_1.17.0.tar.gz"]
 
 	version("1.17.0", md5="00689fd704a35eea4e0ba38516603b49")
 

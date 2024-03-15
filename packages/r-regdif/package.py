@@ -17,7 +17,7 @@ class RRegdif(RPackage):
 	
 	cran = "regDIF" 
 
-	version("1.1.0", md5="a6b5017df1b9792e765b5c53a88b9324")
+	version("1.1.1", md5="a94ea7d71591d53b775166c844c63b8d")
 
 	depends_on("r-statmod", type=("build", "run"))
 	depends_on("r-foreach", type=("build", "run"))

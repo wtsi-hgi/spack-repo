@@ -13,7 +13,7 @@ class ROnassisjavalibs(RPackage):
 	"""
 	
 	bioc = "OnassisJavaLibs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/OnassisJavaLibs_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/OnassisJavaLibs/OnassisJavaLibs_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/OnassisJavaLibs_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/OnassisJavaLibs/OnassisJavaLibs_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="88d86bc7e7d339146ba7ea689c2d8080")
 

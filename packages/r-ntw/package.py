@@ -13,7 +13,7 @@ class RNtw(RPackage):
 	"""
 	
 	bioc = "NTW" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/NTW_1.52.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/NTW/NTW_1.52.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NTW_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NTW/NTW_1.52.0.tar.gz"]
 
 	version("1.52.0", md5="c64df447dfa43cbb3bf97922655ff516")
 

@@ -13,7 +13,7 @@ class RXlaevisDb(RPackage):
 	"""
 	
 	bioc = "xlaevis.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/xlaevis.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/xlaevis.db/xlaevis.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/xlaevis.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/xlaevis.db/xlaevis.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="deaffe47b4ee48a7edb159d8104dc241")
 

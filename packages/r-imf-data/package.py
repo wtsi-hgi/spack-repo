@@ -23,7 +23,7 @@ class RImfData(RPackage):
 	homepage = "https://pedrobtz.github.io/imf.data/"
 	cran = "imf.data" 
 
-	version("0.1.4", md5="6827f6408a6a94de88196b01edc0f123")
+	version("0.1.5", md5="ef4936619ce62020b129e012e8622ca9")
 
 	depends_on("r-curl", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

@@ -13,7 +13,7 @@ class RDepinfer(RPackage):
 	"""
 	
 	bioc = "DepInfeR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DepInfeR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DepInfeR/DepInfeR_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DepInfeR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DepInfeR/DepInfeR_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="d673a7cc6ac21a4d899238878c09533f")
 

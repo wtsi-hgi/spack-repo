@@ -13,7 +13,7 @@ class RTissueenrich(RPackage):
 	"""
 	
 	bioc = "TissueEnrich" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TissueEnrich_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TissueEnrich/TissueEnrich_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TissueEnrich_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TissueEnrich/TissueEnrich_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="5cc00925f523a6d82b216343e7f4b81a")
 

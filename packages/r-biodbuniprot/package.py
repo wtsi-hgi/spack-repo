@@ -14,7 +14,7 @@ class RBiodbuniprot(RPackage):
 	
 	homepage = "https://github.com/pkrog/biodbUniprot"
 	bioc = "biodbUniprot" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biodbUniprot_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biodbUniprot/biodbUniprot_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbUniprot_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbUniprot/biodbUniprot_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="f4f5bcc32018b6472836efcc8c82671c")
 

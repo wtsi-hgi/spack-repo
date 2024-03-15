@@ -16,9 +16,10 @@ class RForceplate(RPackage):
     options (e.g., choice of low-pass filter) are also suggested by Winter (2009) <doi:10.1002/9780470549148>.
 	"""
 	
+	homepage = "https://github.com/RaphaelHartmann/forceplate"
 	cran = "forceplate" 
 
-	version("1.1-0", md5="029465f880a9cb83c015952b9e628f10")
+	version("1.1-3", md5="fa5196e2c06b05df781663df9f9be706")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-signal", type=("build", "run"))

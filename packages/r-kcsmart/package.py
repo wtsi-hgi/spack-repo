@@ -13,7 +13,7 @@ class RKcsmart(RPackage):
 	"""
 	
 	bioc = "KCsmart" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/KCsmart_2.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/KCsmart/KCsmart_2.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/KCsmart_2.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/KCsmart/KCsmart_2.60.0.tar.gz"]
 
 	version("2.60.0", md5="e50f547d912df8deb29537d5e27fc5d0")
 

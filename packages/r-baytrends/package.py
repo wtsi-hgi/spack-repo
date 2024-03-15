@@ -25,7 +25,7 @@ class RBaytrends(RPackage):
 	homepage = "https://github.com/tetratech/baytrends"
 	cran = "baytrends" 
 
-	version("2.0.9", md5="c119001980ab3d09cfa5997840f965ad")
+	version("2.0.11", md5="7bfb2fb25bf4ac60ca3312579c0fc6de")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dataretrieval", type=("build", "run"))

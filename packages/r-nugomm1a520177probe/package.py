@@ -13,7 +13,7 @@ class RNugomm1a520177probe(RPackage):
 	"""
 	
 	bioc = "nugomm1a520177probe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/nugomm1a520177probe_3.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/nugomm1a520177probe/nugomm1a520177probe_3.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/nugomm1a520177probe_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/nugomm1a520177probe/nugomm1a520177probe_3.4.0.tar.gz"]
 
 	version("3.4.0", md5="7fa974389ad2be6ebda8810496221a9b")
 

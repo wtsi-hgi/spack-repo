@@ -14,7 +14,7 @@ class RHicexperiment(RPackage):
 	
 	homepage = "https://github.com/js2264/HiCExperiment"
 	bioc = "HiCExperiment" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HiCExperiment_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HiCExperiment/HiCExperiment_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiCExperiment_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiCExperiment/HiCExperiment_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="98efc0440886cc84faef975a12f290a0")
 

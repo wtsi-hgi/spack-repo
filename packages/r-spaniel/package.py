@@ -13,7 +13,7 @@ class RSpaniel(RPackage):
 	"""
 	
 	bioc = "Spaniel" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Spaniel_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Spaniel/Spaniel_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Spaniel_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Spaniel/Spaniel_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="fb29666756a1db567f16b5c72420de4c")
 

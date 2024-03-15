@@ -14,7 +14,7 @@ class RMuscat(RPackage):
 	
 	homepage = "https://github.com/HelenaLC/muscat"
 	bioc = "muscat" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/muscat_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/muscat/muscat_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/muscat_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/muscat/muscat_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="ee69286717f8d129ce59fb554c1c0994")
 

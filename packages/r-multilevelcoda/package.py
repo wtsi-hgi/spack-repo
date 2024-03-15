@@ -19,7 +19,7 @@ class RMultilevelcoda(RPackage):
 	homepage = "https://florale.github.io/multilevelcoda/"
 	cran = "multilevelcoda" 
 
-	version("1.2.1", md5="ea03dd8651e19bc683ff615568d646d5")
+	version("1.2.3", md5="0c7d48b04fb2e486787767ff5fa34823")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-data-table@1.12:", type=("build", "run"))
@@ -33,3 +33,10 @@ class RMultilevelcoda(RPackage):
 	depends_on("r-foreach", type=("build", "run"))
 	depends_on("r-dofuture", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))
+	depends_on("r-shiny", type=("build", "run"))
+	depends_on("r-plotly", type=("build", "run"))
+	depends_on("r-hrbrthemes", type=("build", "run"))
+	depends_on("r-bslib", type=("build", "run"))
+	depends_on("r-dt", type=("build", "run"))
+	depends_on("r-loo", type=("build", "run"))
+	depends_on("r-bayesplot", type=("build", "run"))

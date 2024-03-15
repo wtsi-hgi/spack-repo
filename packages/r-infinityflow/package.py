@@ -13,7 +13,7 @@ class RInfinityflow(RPackage):
 	"""
 	
 	bioc = "infinityFlow" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/infinityFlow_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/infinityFlow/infinityFlow_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/infinityFlow_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/infinityFlow/infinityFlow_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="e65e5163632d9351a8a1f1bb30d74d8f")
 

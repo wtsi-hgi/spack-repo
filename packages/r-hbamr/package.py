@@ -23,7 +23,7 @@ class RHbamr(RPackage):
 	homepage = "https://jbolstad.github.io/hbamr/"
 	cran = "hbamr" 
 
-	version("2.2.0", md5="4918d3488105d9fe8c4e0bcbdec1ade9")
+	version("2.2.1", md5="3c7c46b337f812483ecf6fceca9eba3d")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

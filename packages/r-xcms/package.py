@@ -14,7 +14,7 @@ class RXcms(RPackage):
 	
 	homepage = "https://github.com/sneumann/xcms"
 	bioc = "xcms" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/xcms_4.0.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/xcms/xcms_4.0.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/xcms_4.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/xcms/xcms_4.0.2.tar.gz"]
 
 	version("4.0.2", md5="8649eeacc3e82397f8d6c700e4d34834")
 

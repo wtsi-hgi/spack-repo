@@ -13,7 +13,7 @@ class RChipqc(RPackage):
 	"""
 	
 	bioc = "ChIPQC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ChIPQC_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ChIPQC/ChIPQC_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPQC_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPQC/ChIPQC_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="b7437c357c5ba27db1f2721a50c15f13")
 

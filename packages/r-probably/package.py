@@ -7,7 +7,7 @@ from spack.package import *
 
 
 class RProbably(RPackage):
-	"""Tools for Post-Processing Class Probability Estimates
+	"""Tools for Post-Processing Predicted Values
 
 	Models can be improved by post-processing class
     probabilities, by: recalibration, conversion to hard probabilities,
@@ -16,12 +16,12 @@ class RProbably(RPackage):
     tools and conformal inference techniques for regression models.
 	"""
 	
-	homepage = "https://github.com/tidymodels/probably/"
+	homepage = "https://github.com/tidymodels/probably"
 	cran = "probably" 
 
-	version("1.0.2", md5="f4607f747f783c3a488ccd9c9d6ee199")
+	version("1.0.3", md5="8bf79618fd6bfe3a51188616a3424aad")
 
-	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-butcher", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-dplyr@1.1:", type=("build", "run"))
@@ -34,8 +34,8 @@ class RProbably(RPackage):
 	depends_on("r-rlang@1.0.4:", type=("build", "run"))
 	depends_on("r-tidyr@1.3:", type=("build", "run"))
 	depends_on("r-tidyselect@1.1.2:", type=("build", "run"))
-	depends_on("r-tune@1.1:", type=("build", "run"))
+	depends_on("r-tune@1.1.2:", type=("build", "run"))
 	depends_on("r-vctrs@0.4.1:", type=("build", "run"))
 	depends_on("r-withr", type=("build", "run"))
-	depends_on("r-workflows", type=("build", "run"))
-	depends_on("r-yardstick@1:", type=("build", "run"))
+	depends_on("r-workflows@1.1.4:", type=("build", "run"))
+	depends_on("r-yardstick@1.3:", type=("build", "run"))

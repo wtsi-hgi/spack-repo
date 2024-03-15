@@ -13,7 +13,7 @@ class RIcheck(RPackage):
 	"""
 	
 	bioc = "iCheck" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iCheck_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iCheck/iCheck_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iCheck_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iCheck/iCheck_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="4404db494985157058a6af6d8c29b0c1")
 

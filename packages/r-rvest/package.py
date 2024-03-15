@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,6 +13,8 @@ class RRvest(RPackage):
 	then manipulate, HTML and XML."""
 
 	cran = "rvest"
+
+	license("MIT")
 
 	version("1.0.4", md5="bd391a4e91e6f5867761c99526ffc251")
 

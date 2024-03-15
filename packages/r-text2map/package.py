@@ -27,7 +27,7 @@ class RText2map(RPackage):
 	homepage = "https://gitlab.com/culturalcartography/text2map"
 	cran = "text2map" 
 
-	version("0.1.8", md5="d26bad592643b7b3368ccb2bb38ac25c")
+	version("0.1.9", md5="d9e1ca53b96f4df5ad67c17a580c3893")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-matrix@1.4.2:", type=("build", "run"))

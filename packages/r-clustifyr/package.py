@@ -14,7 +14,7 @@ class RClustifyr(RPackage):
 	
 	homepage = "https://github.com/rnabioco/clustifyr"
 	bioc = "clustifyr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/clustifyr_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/clustifyr/clustifyr_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clustifyr_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clustifyr/clustifyr_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="5fc803262c7a3b4d11d464f30a110802")
 

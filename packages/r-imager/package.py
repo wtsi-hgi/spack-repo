@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,8 @@ class RImager(RPackage):
 	for image processing."""
 
 	cran = "imager"
+
+	license("LGPL-3.0-only")
 
 	version("0.45.8", md5="64d32f0539023a7203f7c96cddd42a57")
 

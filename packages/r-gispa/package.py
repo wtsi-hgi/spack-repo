@@ -13,7 +13,7 @@ class RGispa(RPackage):
 	"""
 	
 	bioc = "GISPA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GISPA_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GISPA/GISPA_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GISPA_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GISPA/GISPA_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="012a529b5359b149705fa54cb75c1818")
 

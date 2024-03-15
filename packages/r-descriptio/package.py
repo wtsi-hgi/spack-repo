@@ -15,7 +15,7 @@ class RDescriptio(RPackage):
 	homepage = "https://github.com/nicolas-robette/descriptio"
 	cran = "descriptio" 
 
-	version("1.2", md5="03c2a62ee350eefc8386423546b54d44")
+	version("1.3", md5="f1a05bcec54bcf6d027d32acf3f56a87")
 
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

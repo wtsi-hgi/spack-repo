@@ -14,7 +14,7 @@ class RSimona(RPackage):
 	
 	homepage = "https://github.com/jokergoo/simona"
 	bioc = "simona" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/simona_1.0.10.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/simona/simona_1.0.10.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/simona_1.0.10.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/simona/simona_1.0.10.tar.gz"]
 
 	version("1.0.10", md5="3c9d33cfa91dc8e3e071da9fb3bff761")
 

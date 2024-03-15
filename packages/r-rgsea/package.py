@@ -13,7 +13,7 @@ class RRgsea(RPackage):
 	"""
 	
 	bioc = "RGSEA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RGSEA_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RGSEA/RGSEA_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RGSEA_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RGSEA/RGSEA_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="426ab6d4dc463399d014c6e76c3f8c75")
 

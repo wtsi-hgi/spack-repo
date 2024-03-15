@@ -13,7 +13,7 @@ class RGosim(RPackage):
 	"""
 	
 	bioc = "GOSim" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GOSim_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GOSim/GOSim_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOSim_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOSim/GOSim_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="2fb07a8f5ac4b386b5063f52486bb82b")
 

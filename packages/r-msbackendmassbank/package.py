@@ -14,7 +14,7 @@ class RMsbackendmassbank(RPackage):
 	
 	homepage = "https://github.com/RforMassSpectrometry/MsBackendMassbank"
 	bioc = "MsBackendMassbank" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MsBackendMassbank_1.10.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MsBackendMassbank/MsBackendMassbank_1.10.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsBackendMassbank_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsBackendMassbank/MsBackendMassbank_1.10.1.tar.gz"]
 
 	version("1.10.1", md5="a929aebecff77108bc62891bc397f057")
 

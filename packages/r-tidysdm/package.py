@@ -21,7 +21,7 @@ class RTidysdm(RPackage):
 	homepage = "https://github.com/EvolEcolGroup/tidysdm"
 	cran = "tidysdm" 
 
-	version("0.9.3", md5="8ee1acccce43abf9a03b10b94859021c")
+	version("0.9.4", md5="5032958d0b3ca5a68e048ee838a490a3")
 
 	depends_on("r-tidymodels", type=("build", "run"))
 	depends_on("r-spatialsample", type=("build", "run"))

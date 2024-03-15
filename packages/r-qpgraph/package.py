@@ -14,7 +14,7 @@ class RQpgraph(RPackage):
 	
 	homepage = "https://github.com/rcastelo/qpgraph"
 	bioc = "qpgraph" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/qpgraph_2.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/qpgraph/qpgraph_2.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qpgraph_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qpgraph/qpgraph_2.36.0.tar.gz"]
 
 	version("2.36.0", md5="10be7ba90f9349fb4de4aa84e6fecaa4")
 

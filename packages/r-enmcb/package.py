@@ -13,7 +13,7 @@ class REnmcb(RPackage):
 	"""
 	
 	bioc = "EnMCB" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EnMCB_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EnMCB/EnMCB_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EnMCB_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EnMCB/EnMCB_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="f9fee363d9285ffdf2895062fc0cf26b")
 

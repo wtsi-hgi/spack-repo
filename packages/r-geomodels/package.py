@@ -16,7 +16,7 @@ Data Analysis
 	homepage = "https://vmoprojs.github.io/GeoModels-page/"
 	cran = "GeoModels" 
 
-	version("1.1.7", md5="5eaeb2a961208ec4d518233b142dae99")
+	version("1.1.8", md5="81409a52c0d917432843db71b2cfb8c8")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-gpvecchia", type=("build", "run"))

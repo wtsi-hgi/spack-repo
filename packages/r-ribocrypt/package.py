@@ -14,7 +14,7 @@ class RRibocrypt(RPackage):
 	
 	homepage = "https://github.com/m-swirski/RiboCrypt"
 	bioc = "RiboCrypt" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RiboCrypt_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RiboCrypt/RiboCrypt_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RiboCrypt_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RiboCrypt/RiboCrypt_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="b5551bc35ad9798b4b1b401f7a08b280")
 

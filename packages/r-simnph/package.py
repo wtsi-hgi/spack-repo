@@ -26,7 +26,7 @@ class RSimnph(RPackage):
 	homepage = "https://simnph.github.io/SimNPH/"
 	cran = "SimNPH" 
 
-	version("0.5.4", md5="376ec3afc4e03365b309542d2a955b48")
+	version("0.5.5", md5="913befe64705f681091f91fe5b53f8bb")
 
 	depends_on("r-simdesign", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

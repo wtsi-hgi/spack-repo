@@ -14,7 +14,7 @@ class RIntact(RPackage):
 	
 	homepage = "https://github.com/jokamoto97/INTACT"
 	bioc = "INTACT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/INTACT_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/INTACT/INTACT_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/INTACT_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/INTACT/INTACT_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="d8646f4acb0cbb31ccf53a672818be40")
 

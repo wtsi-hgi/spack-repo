@@ -13,7 +13,7 @@ class RPtairdata(RPackage):
 	"""
 	
 	bioc = "ptairData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/ptairData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/ptairData/ptairData_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ptairData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ptairData/ptairData_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="eea0fcfdd0047d72092a3b6beb326129")
 

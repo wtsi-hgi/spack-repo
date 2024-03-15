@@ -22,7 +22,7 @@ Studies
 	
 	cran = "mediationsens" 
 
-	version("0.0.2", md5="f4f2c39f5b0b8870fc3daff6e17bce21")
+	version("0.0.3", md5="135e221ba99c8e2b3937ec9ee926f20e")
 
 	depends_on("r-mediation", type=("build", "run"))
 	depends_on("r-distr", type=("build", "run"))

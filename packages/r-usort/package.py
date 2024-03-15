@@ -13,7 +13,7 @@ class RUsort(RPackage):
 	"""
 	
 	bioc = "uSORT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/uSORT_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/uSORT/uSORT_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/uSORT_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/uSORT/uSORT_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="0c89e7d86bb2f37b99ce32989b121110")
 

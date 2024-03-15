@@ -13,7 +13,7 @@ class RCsawusersguide(RPackage):
 	"""
 	
 	bioc = "csawUsersGuide" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/csawUsersGuide_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/csawUsersGuide/csawUsersGuide_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/csawUsersGuide_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/csawUsersGuide/csawUsersGuide_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="f5828e278ba1ebaac94b9c3ce1dc4545")
 

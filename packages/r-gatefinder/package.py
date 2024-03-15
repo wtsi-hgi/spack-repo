@@ -13,7 +13,7 @@ class RGatefinder(RPackage):
 	"""
 	
 	bioc = "GateFinder" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GateFinder_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GateFinder/GateFinder_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GateFinder_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GateFinder/GateFinder_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="4fcb13ba6ee293d3ffb30122b652df12")
 

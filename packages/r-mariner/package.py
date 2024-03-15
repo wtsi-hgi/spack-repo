@@ -14,7 +14,7 @@ class RMariner(RPackage):
 	
 	homepage = "http://ericscottdavis.com/mariner/"
 	bioc = "mariner" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mariner_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mariner/mariner_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mariner_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mariner/mariner_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="6ed30878d03b8a17e8e7c4ee17218893")
 

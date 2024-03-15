@@ -14,7 +14,7 @@ class RGesper(RPackage):
 	
 	homepage = "http://www.cbg.ethz.ch/software/gespeR"
 	bioc = "gespeR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gespeR_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gespeR/gespeR_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gespeR_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gespeR/gespeR_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="b29c5440e5f853e993e3ca2df2eae3e6")
 

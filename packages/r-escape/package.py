@@ -13,7 +13,7 @@ class REscape(RPackage):
 	"""
 	
 	bioc = "escape" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/escape_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/escape/escape_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/escape_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/escape/escape_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="e3dc22e072190e21938689fc0f3ab112")
 

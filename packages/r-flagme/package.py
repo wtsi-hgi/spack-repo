@@ -13,7 +13,7 @@ class RFlagme(RPackage):
 	"""
 	
 	bioc = "flagme" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flagme_1.58.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flagme/flagme_1.58.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flagme_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flagme/flagme_1.58.0.tar.gz"]
 
 	version("1.58.0", md5="ada68435478c0172b282919125008b1f")
 

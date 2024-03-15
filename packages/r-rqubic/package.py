@@ -13,7 +13,7 @@ class RRqubic(RPackage):
 	"""
 	
 	bioc = "rqubic" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rqubic_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rqubic/rqubic_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rqubic_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rqubic/rqubic_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="018144d5ccfbe2df88a79212dedc2066")
 

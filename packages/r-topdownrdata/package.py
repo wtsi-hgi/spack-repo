@@ -14,7 +14,7 @@ class RTopdownrdata(RPackage):
 	
 	homepage = "https://github.com/sgibb/topdownrdata/"
 	bioc = "topdownrdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/topdownrdata_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/topdownrdata/topdownrdata_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/topdownrdata_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/topdownrdata/topdownrdata_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="28e746b858956bea0967344bfe363e7d")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,7 @@ class RAromaLight(RPackage):
 	utilized in other packages, or be wrapped up in higher-level classes."""
 
 	bioc = "aroma.light"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/aroma.light_3.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/aroma.light/aroma.light_3.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/aroma.light_3.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/aroma.light/aroma.light_3.32.0.tar.gz"]
 
 	version("3.32.0", md5="07d98bcf8be950a16c1d6aaae375f17d")
 

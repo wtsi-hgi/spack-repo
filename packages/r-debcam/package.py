@@ -13,7 +13,7 @@ class RDebcam(RPackage):
 	"""
 	
 	bioc = "debCAM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/debCAM_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/debCAM/debCAM_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/debCAM_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/debCAM/debCAM_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="87d118edcaf90e70fd6aafc865ac5c6a")
 

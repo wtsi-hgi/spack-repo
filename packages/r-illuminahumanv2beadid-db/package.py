@@ -13,7 +13,7 @@ class RIlluminahumanv2beadidDb(RPackage):
 	"""
 	
 	bioc = "illuminaHumanv2BeadID.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/illuminaHumanv2BeadID.db_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/illuminaHumanv2BeadID.db/illuminaHumanv2BeadID.db_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/illuminaHumanv2BeadID.db_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/illuminaHumanv2BeadID.db/illuminaHumanv2BeadID.db_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="b5a2b2deaa9a9b245a141043e7bc5270")
 

@@ -14,7 +14,7 @@ class RBirewire(RPackage):
 	
 	homepage = "http://www.ebi.ac.uk/~iorio/BiRewire"
 	bioc = "BiRewire" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiRewire_3.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiRewire/BiRewire_3.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiRewire_3.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiRewire/BiRewire_3.34.0.tar.gz"]
 
 	version("3.34.0", md5="2539b609076f98e95e044f33fe443bdf")
 

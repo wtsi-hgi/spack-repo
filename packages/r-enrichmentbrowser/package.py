@@ -13,7 +13,7 @@ class REnrichmentbrowser(RPackage):
 	"""
 	
 	bioc = "EnrichmentBrowser" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EnrichmentBrowser_2.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EnrichmentBrowser/EnrichmentBrowser_2.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EnrichmentBrowser_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EnrichmentBrowser/EnrichmentBrowser_2.32.0.tar.gz"]
 
 	version("2.32.0", md5="fa4ec5a19513178896d60057a26ec6ce")
 

@@ -13,7 +13,7 @@ class RGewist(RPackage):
 	"""
 	
 	bioc = "GEWIST" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GEWIST_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GEWIST/GEWIST_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEWIST_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEWIST/GEWIST_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="3fe24d9c2f80cfc18dc41b37b118be6e")
 

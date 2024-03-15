@@ -14,7 +14,7 @@ class RRqt(RPackage):
 	
 	homepage = "https://github.com/izhbannikov/rqt"
 	bioc = "rqt" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rqt_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rqt/rqt_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rqt_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rqt/rqt_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="b6120899c4586c9dcfd093db762af1c8")
 

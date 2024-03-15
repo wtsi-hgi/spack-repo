@@ -13,7 +13,7 @@ class RBiocset(RPackage):
 	"""
 	
 	bioc = "BiocSet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiocSet_1.16.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiocSet/BiocSet_1.16.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocSet_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocSet/BiocSet_1.16.1.tar.gz"]
 
 	version("1.16.1", md5="e4724bf36e517a7ef352963200516303")
 

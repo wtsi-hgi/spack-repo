@@ -20,7 +20,7 @@ class RPeriscope2(RPackage):
 	homepage = "https://github.com/Aggregate-Genius/periscope2"
 	cran = "periscope2" 
 
-	version("0.2.2", md5="0f1b418577a64b805fa492f0683ece6f", url="https://cran.r-project.org/src/contrib/periscope2_0.2.2.tar.gz")
+	version("0.2.3", md5="2dd1cf144e6d794724271ed930a92e4e", url="https://cran.r-project.org/src/contrib/periscope2_0.2.3.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-shiny@1.7:", type=("build", "run"))
@@ -32,3 +32,4 @@ class RPeriscope2(RPackage):
 	depends_on("r-shinywidgets", type=("build", "run"))
 	depends_on("r-writexl", type=("build", "run"))
 	depends_on("r-yaml", type=("build", "run"))
+	depends_on("r-lifecycle", type=("build", "run"))

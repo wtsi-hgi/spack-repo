@@ -14,7 +14,7 @@ class RIterativebmasurv(RPackage):
 	
 	homepage = "http://expression.washington.edu/ibmasurv/protected"
 	bioc = "iterativeBMAsurv" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iterativeBMAsurv_1.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iterativeBMAsurv/iterativeBMAsurv_1.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iterativeBMAsurv_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iterativeBMAsurv/iterativeBMAsurv_1.60.0.tar.gz"]
 
 	version("1.60.0", md5="d2ced120a3665f0ebb69a462a072ad63")
 

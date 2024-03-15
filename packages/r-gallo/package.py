@@ -15,14 +15,13 @@ class RGallo(RPackage):
 	homepage = "<https://github.com/pablobio/GALLO>"
 	cran = "GALLO" 
 
-	version("1.3", md5="54fa98a37770837c010ce219e4340603")
+	version("1.4", md5="0fbd67a6cc87e8abdcb240e03d2db3ce")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-circlize", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-dt", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-foreach", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))
@@ -30,4 +29,7 @@ class RGallo(RPackage):
 	depends_on("r-rtracklayer", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-unbalhaar", type=("build", "run"))
+	depends_on("r-dt", type=("build", "run"))
 	depends_on("r-webshot", type=("build", "run"))
+	depends_on("r-igraph", type=("build", "run"))
+	depends_on("r-visnetwork", type=("build", "run"))

@@ -14,7 +14,7 @@ class RVcfarray(RPackage):
 	
 	homepage = "https://github.com/Liubuntu/VCFArray"
 	bioc = "VCFArray" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/VCFArray_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/VCFArray/VCFArray_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VCFArray_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VCFArray/VCFArray_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="0e101fbb3c6c6b57d792527a6c720654")
 

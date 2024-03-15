@@ -14,7 +14,7 @@ class RUncoverapplib(RPackage):
 	
 	homepage = "https://github.com/Manuelaio/uncoverappLib"
 	bioc = "uncoverappLib" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/uncoverappLib_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/uncoverappLib/uncoverappLib_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/uncoverappLib_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/uncoverappLib/uncoverappLib_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="2aa395f92e95d5ff7e67612c6a2c0021")
 

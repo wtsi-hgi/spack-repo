@@ -13,7 +13,7 @@ class RBeadarraysnp(RPackage):
 	"""
 	
 	bioc = "beadarraySNP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/beadarraySNP_1.68.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/beadarraySNP/beadarraySNP_1.68.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/beadarraySNP_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/beadarraySNP/beadarraySNP_1.68.0.tar.gz"]
 
 	version("1.68.0", md5="748ed20ee2b38f5eee765be8125e5aca")
 

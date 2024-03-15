@@ -14,7 +14,7 @@ class RSequencing(RPackage):
 	
 	homepage = "https://www.bioconductor.org/help/workflows/sequencing/"
 	bioc = "sequencing" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/sequencing_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/sequencing/sequencing_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/sequencing_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/sequencing/sequencing_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="bfc08d88720839f3233d2457b3b88a8c")
 

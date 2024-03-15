@@ -13,7 +13,7 @@ class RCcmap(RPackage):
 	"""
 	
 	bioc = "ccmap" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ccmap_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ccmap/ccmap_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ccmap_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ccmap/ccmap_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="d01f3e9dca6ce3403096f8fc00766755")
 

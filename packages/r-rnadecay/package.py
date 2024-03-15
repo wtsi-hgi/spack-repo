@@ -13,7 +13,7 @@ class RRnadecay(RPackage):
 	"""
 	
 	bioc = "RNAdecay" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RNAdecay_1.22.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RNAdecay/RNAdecay_1.22.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNAdecay_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNAdecay/RNAdecay_1.22.2.tar.gz"]
 
 	version("1.22.2", md5="5c17b35bac4e238886bf0631aaaa460b")
 

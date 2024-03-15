@@ -14,7 +14,7 @@ class RBiocpkgtools(RPackage):
 	
 	homepage = "https://github.com/seandavi/BiocPkgTools"
 	bioc = "BiocPkgTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiocPkgTools_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiocPkgTools/BiocPkgTools_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocPkgTools_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocPkgTools/BiocPkgTools_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="a0ab7353a78b22b286d22520faff6142")
 

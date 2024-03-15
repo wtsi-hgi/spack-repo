@@ -14,7 +14,7 @@ class RReactomegraph4r(RPackage):
 	
 	homepage = "https://github.com/reactome/ReactomeGraph4R"
 	bioc = "ReactomeGraph4R" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ReactomeGraph4R_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ReactomeGraph4R/ReactomeGraph4R_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ReactomeGraph4R_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ReactomeGraph4R/ReactomeGraph4R_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="47a818d1c6d25db90a547d315d1189e8")
 

@@ -13,7 +13,7 @@ class RPdMaize(RPackage):
 	"""
 	
 	bioc = "pd.maize" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.maize_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.maize/pd.maize_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.maize_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.maize/pd.maize_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="a1689518c8525d3dfa97e870f90b7a7b")
 

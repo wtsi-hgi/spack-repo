@@ -13,7 +13,7 @@ class RDnabarcodes(RPackage):
 	"""
 	
 	bioc = "DNABarcodes" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DNABarcodes_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DNABarcodes/DNABarcodes_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DNABarcodes_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DNABarcodes/DNABarcodes_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="6047e393e89e644fbf9aa4aa5a9faa64")
 

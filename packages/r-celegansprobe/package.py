@@ -13,7 +13,7 @@ class RCelegansprobe(RPackage):
 	"""
 	
 	bioc = "celegansprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/celegansprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/celegansprobe/celegansprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/celegansprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/celegansprobe/celegansprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="7454bba10ff2dd7c03bfe0f9d450f148")
 

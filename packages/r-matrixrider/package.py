@@ -13,7 +13,7 @@ class RMatrixrider(RPackage):
 	"""
 	
 	bioc = "MatrixRider" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MatrixRider_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MatrixRider/MatrixRider_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MatrixRider_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MatrixRider/MatrixRider_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="2de2ee8befc7dcf6b84ea6630a0c089f")
 

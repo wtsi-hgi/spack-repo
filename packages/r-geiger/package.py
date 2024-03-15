@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,6 +13,8 @@ class RGeiger(RPackage):
 	(2014) <doi:10.1093/bioinformatics/btu181>."""
 
 	cran = "geiger"
+
+	license("GPL-2.0-or-later")
 
 	version("2.0.11", md5="925b2f26920deb3a65dc6b8e7bc96f52")
 

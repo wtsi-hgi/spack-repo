@@ -15,7 +15,7 @@ class RIglu(RPackage):
 	homepage = "https://irinagain.github.io/iglu/"
 	cran = "iglu" 
 
-	version("3.5.0", md5="28f7d2d41ded00a41d49ff59b1c297e8")
+	version("4.0.0", md5="77d865f0b76811ac482d00582356245f")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-catools", type=("build", "run"))

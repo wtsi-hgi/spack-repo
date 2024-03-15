@@ -17,7 +17,7 @@ class RJsmediation(RPackage):
 	homepage = "https://jsmediation.cedricbatailler.me/"
 	cran = "JSmediation" 
 
-	version("0.2.1", md5="8da8e3fb06623c3bbe8d2c2e6ff7486c")
+	version("0.2.2", md5="cb9f6bc91d8e6545d6765303657b9d8e")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))
@@ -30,3 +30,4 @@ class RJsmediation(RPackage):
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-rlang@0.4.9:", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
+	depends_on("r-tidyselect", type=("build", "run"))

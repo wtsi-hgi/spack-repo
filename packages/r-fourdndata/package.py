@@ -14,7 +14,7 @@ class RFourdndata(RPackage):
 	
 	homepage = "https://github.com/js2264/fourDNData"
 	bioc = "fourDNData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/fourDNData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/fourDNData/fourDNData_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/fourDNData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/fourDNData/fourDNData_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="bca623e919f7c17a40ffb4eae27cfe59")
 

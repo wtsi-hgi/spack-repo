@@ -13,7 +13,7 @@ class RComapr(RPackage):
 	"""
 	
 	bioc = "comapr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/comapr_1.6.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/comapr/comapr_1.6.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/comapr_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/comapr/comapr_1.6.1.tar.gz"]
 
 	version("1.6.1", md5="64dbcfb7f563dc874dc327988ebf8c07")
 

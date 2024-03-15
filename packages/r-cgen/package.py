@@ -13,7 +13,7 @@ class RCgen(RPackage):
 	"""
 	
 	bioc = "CGEN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CGEN_3.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CGEN/CGEN_3.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CGEN_3.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CGEN/CGEN_3.38.0.tar.gz"]
 
 	version("3.38.0", md5="e62dd5874cfcaab65414fff648106633")
 

@@ -13,7 +13,7 @@ class RRtcgaRppa(RPackage):
 	"""
 	
 	bioc = "RTCGA.RPPA" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RTCGA.RPPA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/RTCGA.RPPA/RTCGA.RPPA_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.RPPA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.RPPA/RTCGA.RPPA_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="5eccece412039d43cdf74aec284fa0d9")
 

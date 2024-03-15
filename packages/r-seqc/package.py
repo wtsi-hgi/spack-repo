@@ -14,7 +14,7 @@ class RSeqc(RPackage):
 	
 	homepage = "http://bioconductor.org/packages/release/data/experiment/html/seqc.html"
 	bioc = "seqc" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/seqc_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/seqc/seqc_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/seqc_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/seqc/seqc_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="105a278c97aca90968641aec403c1219")
 

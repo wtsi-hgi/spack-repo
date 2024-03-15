@@ -14,7 +14,7 @@ class RArcpbf(RPackage):
 	"""
 	
 	homepage = "https://r.esri.com/arcpbf/"
-	cran = "arcpbf" 
+	cran = "arcpbf"
 
 	version("0.1.0", md5="fe9f542e55b3c468be4b3ec152efc997")
 

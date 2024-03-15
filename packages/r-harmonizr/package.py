@@ -13,7 +13,7 @@ class RHarmonizr(RPackage):
 	"""
 	
 	bioc = "HarmonizR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HarmonizR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HarmonizR/HarmonizR_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HarmonizR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HarmonizR/HarmonizR_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="6e81c009fe8678273d8091378ae2f8e3")
 

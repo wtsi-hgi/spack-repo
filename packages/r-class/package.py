@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,6 +13,8 @@ class RClass(RPackage):
 	Learning Vector Quantization and Self-Organizing Maps."""
 
 	cran = "class"
+
+	license("GPL-2.0-only OR GPL-3.0-only")
 
 	version("7.3-22", md5="8b205d2ef6196c1c637b9d62ee026551")
 

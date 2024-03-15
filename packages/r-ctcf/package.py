@@ -14,7 +14,7 @@ class RCtcf(RPackage):
 	
 	homepage = "https://github.com/dozmorovlab/CTCF"
 	bioc = "CTCF" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/CTCF_0.99.11.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/CTCF/CTCF_0.99.11.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/CTCF_0.99.11.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/CTCF/CTCF_0.99.11.tar.gz"]
 
 	version("0.99.11", md5="5ec44245864395de390e68fa56e465af")
 

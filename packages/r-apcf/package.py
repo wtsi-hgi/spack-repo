@@ -19,7 +19,7 @@ class RApcf(RPackage):
 	"""
 	
 	homepage = "https://rnuske.github.io/apcf/"
-	cran = "apcf" 
+	cran = "apcf"
 
 	version("0.3.0", md5="b49f8ee302aad15303002837aedae73e")
 

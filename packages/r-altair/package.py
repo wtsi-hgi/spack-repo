@@ -17,7 +17,7 @@ class RAltair(RPackage):
 	"""
 	
 	homepage = "https://github.com/vegawidget/altair"
-	cran = "altair" 
+	cran = "altair"
 
 	version("4.2.3", md5="3af0f5b450b69a70521a6d32f497efae")
 

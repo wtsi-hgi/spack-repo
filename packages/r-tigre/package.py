@@ -14,7 +14,7 @@ class RTigre(RPackage):
 	
 	homepage = "https://github.com/ahonkela/tigre"
 	bioc = "tigre" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tigre_1.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tigre/tigre_1.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tigre_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tigre/tigre_1.56.0.tar.gz"]
 
 	version("1.56.0", md5="d6bc46b9552c8c910c05c2ab705710d0")
 

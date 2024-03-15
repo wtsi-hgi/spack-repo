@@ -13,7 +13,7 @@ class RGsar(RPackage):
 	"""
 	
 	bioc = "GSAR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GSAR_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GSAR/GSAR_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSAR_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSAR/GSAR_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="9828682d8721bde17ea31c9ed807174d")
 

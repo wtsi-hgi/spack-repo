@@ -13,7 +13,7 @@ class ROmicspcadata(RPackage):
 	"""
 	
 	bioc = "OMICsPCAdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/OMICsPCAdata_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/OMICsPCAdata/OMICsPCAdata_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/OMICsPCAdata_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/OMICsPCAdata/OMICsPCAdata_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="ba3167fdf846cb80aea07162b88c9b73")
 

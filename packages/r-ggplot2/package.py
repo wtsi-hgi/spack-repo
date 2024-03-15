@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,9 +16,11 @@ class RGgplot2(RPackage):
 
 	cran = "ggplot2"
 
-	version("3.4.4", md5="13e7ad92c109bb07993373317e428415", url="https://cran.r-project.org/src/contrib/ggplot2_3.4.4.tar.gz")
+	license("MIT")
 
-	depends_on("r@3.3:", type=("build", "run"))
+	version("3.5.0", md5="81c1b4d3661e2b7d2420f1b01235ed60", url="https://cran.r-project.org/src/contrib/ggplot2_3.5.0.tar.gz")
+
+	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
 	depends_on("r-gtable@0.1.1:", type=("build", "run"))
@@ -27,7 +29,7 @@ class RGgplot2(RPackage):
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-mgcv", type=("build", "run"))
 	depends_on("r-rlang@1.1:", type=("build", "run"))
-	depends_on("r-scales@1.2:", type=("build", "run"))
+	depends_on("r-scales@1.3:", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-vctrs@0.5:", type=("build", "run"))
 	depends_on("r-withr@2.5:", type=("build", "run"))

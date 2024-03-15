@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,6 +14,8 @@ class RMutoss(RPackage):
 	and usable by the accompanying 'mutossGUI'."""
 
 	cran = "mutoss"
+
+	license("GPL-2.0-or-later")
 
 	version("0.1-13", md5="4384e17eb4ebf0f3370e232dbebe39b5")
 

@@ -14,7 +14,7 @@ class RRtcga(RPackage):
 	
 	homepage = "https://rtcga.github.io/RTCGA"
 	bioc = "RTCGA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RTCGA_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RTCGA/RTCGA_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RTCGA_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RTCGA/RTCGA_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="97f413704d77f40ecbe00a1e0d25602d")
 

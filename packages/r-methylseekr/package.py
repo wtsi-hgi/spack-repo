@@ -13,7 +13,7 @@ class RMethylseekr(RPackage):
 	"""
 	
 	bioc = "MethylSeekR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MethylSeekR_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MethylSeekR/MethylSeekR_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MethylSeekR_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MethylSeekR/MethylSeekR_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="02bba9cfe7502e55a26e0ac76ba63457")
 

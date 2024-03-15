@@ -13,7 +13,7 @@ class RRiceprobe(RPackage):
 	"""
 	
 	bioc = "riceprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/riceprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/riceprobe/riceprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/riceprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/riceprobe/riceprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="2fac7746c343546cf30e6d54bc1e2019")
 

@@ -15,7 +15,7 @@ class RBigrquery(RPackage):
 	homepage = "https://bigrquery.r-dbi.org"
 	cran = "bigrquery" 
 
-	version("1.5.0", md5="3e011bbd218921b16f42c1147d66b118")
+	version("1.5.1", md5="376d3dd9cc24238405bea427af4bab97")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-bit64", type=("build", "run"))
@@ -24,7 +24,7 @@ class RBigrquery(RPackage):
 	depends_on("r-clock", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))
 	depends_on("r-dbi", type=("build", "run"))
-	depends_on("r-gargle@1.4:", type=("build", "run"))
+	depends_on("r-gargle@1.5:", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-lifecycle", type=("build", "run"))

@@ -18,7 +18,7 @@ PBS/Torque)
 	homepage = "https://mschubert.github.io/clustermq/"
 	cran = "clustermq" 
 
-	version("0.9.3", md5="31e060c44e564a531e4e0305846c8c84")
+	version("0.9.4", md5="25b14dbfad3f83234e850a9669b09c7a")
 
 	depends_on("r@3.6.2:", type=("build", "run"))
 	depends_on("r-narray", type=("build", "run"))

@@ -13,7 +13,7 @@ class RGwascat(RPackage):
 	"""
 	
 	bioc = "gwascat" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gwascat_2.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gwascat/gwascat_2.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gwascat_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gwascat/gwascat_2.34.0.tar.gz"]
 
 	version("2.34.0", md5="a7cbd1d5ac4b3d4fbb8d1fbd77269e44")
 

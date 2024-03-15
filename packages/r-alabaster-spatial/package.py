@@ -13,7 +13,7 @@ class RAlabasterSpatial(RPackage):
 	"""
 	
 	bioc = "alabaster.spatial" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/alabaster.spatial_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/alabaster.spatial/alabaster.spatial_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.spatial_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.spatial/alabaster.spatial_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="906d73c492ba97e8eda563055c51bbfc")
 

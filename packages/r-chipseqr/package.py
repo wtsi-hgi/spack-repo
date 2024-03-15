@@ -13,7 +13,7 @@ class RChipseqr(RPackage):
 	"""
 	
 	bioc = "ChIPseqR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ChIPseqR_1.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ChIPseqR/ChIPseqR_1.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPseqR_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPseqR/ChIPseqR_1.56.0.tar.gz"]
 
 	version("1.56.0", md5="8696d6a783d26d8c6225ec4e3f294110")
 

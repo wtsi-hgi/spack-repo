@@ -13,7 +13,7 @@ class RGothic(RPackage):
 	"""
 	
 	bioc = "GOTHiC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GOTHiC_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GOTHiC/GOTHiC_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOTHiC_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOTHiC/GOTHiC_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="4674978396dedfc730c8ad85662dac8c")
 

@@ -14,9 +14,9 @@ class RBusparse(RPackage):
 	
 	homepage = "https://github.com/BUStools/BUSpaRse"
 	bioc = "BUSpaRse" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BUSpaRse_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BUSpaRse/BUSpaRse_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BUSpaRse_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BUSpaRse/BUSpaRse_1.16.1.tar.gz"]
 
-	version("1.16.0", md5="7d2decd570fd518ad9a06c10a5ecffb3")
+	version("1.16.1", md5="9c38c2c97db1985eedfc656beaf5e07e")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

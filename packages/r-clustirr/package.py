@@ -14,7 +14,7 @@ class RClustirr(RPackage):
 	
 	homepage = "https://github.com/snaketron/ClustIRR"
 	bioc = "ClustIRR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ClustIRR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ClustIRR/ClustIRR_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ClustIRR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ClustIRR/ClustIRR_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="ffd1884844b297c2e593e465a776fb6d")
 

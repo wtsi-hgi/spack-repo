@@ -14,7 +14,7 @@ class RIseede(RPackage):
 	
 	homepage = "https://github.com/iSEE/iSEEde"
 	bioc = "iSEEde" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iSEEde_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iSEEde/iSEEde_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEEde_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEEde/iSEEde_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="4d6215b9243635ed9dd3b6fcf5cbf166")
 

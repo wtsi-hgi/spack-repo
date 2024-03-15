@@ -13,9 +13,9 @@ class RPmp(RPackage):
 	"""
 	
 	bioc = "pmp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pmp_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pmp/pmp_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pmp_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pmp/pmp_1.14.1.tar.gz"]
 
-	version("1.14.0", md5="07feec54f330f10904aae29238f79369")
+	version("1.14.1", md5="6e36b5f74a94856aef5af7c3a6a74c2a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-impute", type=("build", "run"))

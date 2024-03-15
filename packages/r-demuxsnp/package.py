@@ -14,7 +14,7 @@ class RDemuxsnp(RPackage):
 	
 	homepage = "https://github.com/michaelplynch/demuxSNP"
 	bioc = "demuxSNP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/demuxSNP_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/demuxSNP/demuxSNP_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/demuxSNP_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/demuxSNP/demuxSNP_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="66a0ed302acbc18c7a106d99bf645133")
 

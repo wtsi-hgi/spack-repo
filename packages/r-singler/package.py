@@ -14,7 +14,7 @@ class RSingler(RPackage):
 	
 	homepage = "https://github.com/LTLA/SingleR"
 	bioc = "SingleR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SingleR_2.4.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SingleR/SingleR_2.4.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SingleR_2.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SingleR/SingleR_2.4.1.tar.gz"]
 
 	version("2.4.1", md5="ff17f8c8804598bb80a27bba33216919")
 

@@ -13,7 +13,7 @@ class RRtcgaMutations(RPackage):
 	"""
 	
 	bioc = "RTCGA.mutations" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RTCGA.mutations_20151101.32.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/RTCGA.mutations/RTCGA.mutations_20151101.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.mutations_20151101.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.mutations/RTCGA.mutations_20151101.32.0.tar.gz"]
 
 	version("20151101.32.0", md5="0740acb5a6a47fd9d1281ccaf80bafed")
 

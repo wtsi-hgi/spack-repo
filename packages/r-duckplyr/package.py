@@ -17,7 +17,7 @@ class RDuckplyr(RPackage):
 	homepage = "https://duckdblabs.github.io/duckplyr/"
 	cran = "duckplyr" 
 
-	version("0.3.0", md5="30a91b79c358a6c2336770c4d6793dda")
+	version("0.3.1", md5="0e847941bfed8dfab72d8a5497656860")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
@@ -26,8 +26,8 @@ class RDuckplyr(RPackage):
 	depends_on("r-dplyr@1.1.4:", type=("build", "run"))
 	depends_on("r-duckdb@0.9.1.1:", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
+	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-lifecycle", type=("build", "run"))
-	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-rlang@1.0.6:", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-tidyselect", type=("build", "run"))

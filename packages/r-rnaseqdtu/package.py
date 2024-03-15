@@ -14,7 +14,7 @@ class RRnaseqdtu(RPackage):
 	
 	homepage = "https://github.com/thelovelab/rnaseqDTU/"
 	bioc = "rnaseqDTU" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/rnaseqDTU_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/rnaseqDTU/rnaseqDTU_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/rnaseqDTU_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/rnaseqDTU/rnaseqDTU_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="c235bc364256c546e983054515083d32")
 

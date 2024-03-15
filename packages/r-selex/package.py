@@ -14,7 +14,7 @@ class RSelex(RPackage):
 	
 	homepage = "https://bussemakerlab.org/site/software/"
 	bioc = "SELEX" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SELEX_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SELEX/SELEX_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SELEX_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SELEX/SELEX_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="fdb39d601a2ce8c882e9a0e822ef014c")
 

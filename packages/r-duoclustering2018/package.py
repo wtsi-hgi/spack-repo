@@ -13,9 +13,9 @@ class RDuoclustering2018(RPackage):
 	"""
 	
 	bioc = "DuoClustering2018" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/DuoClustering2018_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/DuoClustering2018/DuoClustering2018_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DuoClustering2018_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DuoClustering2018/DuoClustering2018_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="a2761f4db56025af2eaf8240392d01a0", url="https://www.bioconductor.org/packages/release/data/experiment/src/contrib/DuoClustering2018_1.20.0.tar.gz")
+	version("1.20.0", md5="a2761f4db56025af2eaf8240392d01a0", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DuoClustering2018_1.20.0.tar.gz")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

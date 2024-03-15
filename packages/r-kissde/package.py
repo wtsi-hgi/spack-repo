@@ -13,7 +13,7 @@ class RKissde(RPackage):
 	"""
 	
 	bioc = "kissDE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/kissDE_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/kissDE/kissDE_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/kissDE_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/kissDE/kissDE_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="4965ff949376a98c35a73f0784501b0b")
 

@@ -13,7 +13,7 @@ class RZygositypredictor(RPackage):
 	"""
 	
 	bioc = "ZygosityPredictor" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ZygosityPredictor_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ZygosityPredictor/ZygosityPredictor_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ZygosityPredictor_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ZygosityPredictor/ZygosityPredictor_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="c201664f307a2cf422119e2fa87759cf")
 

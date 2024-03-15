@@ -13,7 +13,7 @@ class RMaqcexpression4plex(RPackage):
 	"""
 	
 	bioc = "maqcExpression4plex" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/maqcExpression4plex_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/maqcExpression4plex/maqcExpression4plex_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/maqcExpression4plex_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/maqcExpression4plex/maqcExpression4plex_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="8312b7fbcba763a33630effb8c3b5f10")
 

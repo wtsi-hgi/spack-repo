@@ -13,7 +13,7 @@ class RCompepitools(RPackage):
 	"""
 	
 	bioc = "compEpiTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/compEpiTools_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/compEpiTools/compEpiTools_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/compEpiTools_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/compEpiTools/compEpiTools_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="0ccd28b8de6020ae19f303fc7009ce19")
 

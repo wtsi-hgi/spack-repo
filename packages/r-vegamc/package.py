@@ -13,7 +13,7 @@ class RVegamc(RPackage):
 	"""
 	
 	bioc = "VegaMC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/VegaMC_3.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/VegaMC/VegaMC_3.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VegaMC_3.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VegaMC/VegaMC_3.40.0.tar.gz"]
 
 	version("3.40.0", md5="0e02ae3375b7bed5ca1ed7011b60f180")
 

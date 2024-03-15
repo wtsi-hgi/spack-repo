@@ -14,7 +14,7 @@ class RProlocgui(RPackage):
 	
 	homepage = "https://github.com/lgatto/pRolocGUI"
 	bioc = "pRolocGUI" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pRolocGUI_2.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pRolocGUI/pRolocGUI_2.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pRolocGUI_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pRolocGUI/pRolocGUI_2.12.0.tar.gz"]
 
 	version("2.12.0", md5="a9947bbed5501a1c2c68f7c35364c1da")
 

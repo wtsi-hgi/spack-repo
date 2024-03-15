@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,7 +17,7 @@ class RIranges(RPackage):
 	grouped data, i.e., collections of atomic vectors and DataFrames."""
 
 	bioc = "IRanges"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IRanges_2.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IRanges/IRanges_2.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IRanges_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IRanges/IRanges_2.36.0.tar.gz"]
 
 	version("2.36.0", md5="87618d2e5ee94d7ab81d2e1c4d847120")
 

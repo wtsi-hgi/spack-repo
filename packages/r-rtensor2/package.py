@@ -14,7 +14,7 @@ class RRtensor2(RPackage):
 	
 	cran = "rTensor2" 
 
-	version("0.1.0", md5="50ddf6cbf9a4d15140df8d3b39fcbd95", url="https://cran.r-project.org/src/contrib/rTensor2_0.1.0.tar.gz")
+	version("0.2.0", md5="f8ffd2f4f71d46e5d333adbfcd8b472e", url="https://cran.r-project.org/src/contrib/rTensor2_0.2.0.tar.gz")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rtensor", type=("build", "run"))

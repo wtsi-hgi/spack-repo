@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,6 +14,8 @@ class RCrosstalk(RPackage):
 	linked brushing and filtering."""
 
 	cran = "crosstalk"
+
+	license("MIT")
 
 	version("1.2.1", md5="f9e4a6f7e1cb679a69a8c10059bd0ecf")
 

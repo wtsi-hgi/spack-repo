@@ -15,7 +15,7 @@ class RSmartdesign(RPackage):
 	homepage = "https://cran.r-project.org/package=smartDesign"
 	cran = "smartDesign" 
 
-	version("0.72", md5="5f2a1694480b65dac2c4bf386355d9f5")
+	version("0.74", md5="028efa911166ec0379a89d1ea6ba9993")
 
-	depends_on("r@3.6:", type=("build", "run"))
+	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-knitr", type=("build", "run"))

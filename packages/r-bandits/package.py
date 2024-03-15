@@ -14,7 +14,7 @@ class RBandits(RPackage):
 	
 	homepage = "https://github.com/SimoneTiberi/BANDITS"
 	bioc = "BANDITS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BANDITS_1.18.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BANDITS/BANDITS_1.18.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BANDITS_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BANDITS/BANDITS_1.18.1.tar.gz"]
 
 	version("1.18.1", md5="2a65b9a4669d4075f5882047445491eb")
 

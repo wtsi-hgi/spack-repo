@@ -13,7 +13,7 @@ class RSerumstimulation(RPackage):
 	"""
 	
 	bioc = "serumStimulation" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/serumStimulation_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/serumStimulation/serumStimulation_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/serumStimulation_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/serumStimulation/serumStimulation_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="4d3f1a4e58f500d7e424eef0b22c05ad")
 

@@ -13,7 +13,7 @@ class RCrisprseek(RPackage):
 	"""
 	
 	bioc = "CRISPRseek" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CRISPRseek_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CRISPRseek/CRISPRseek_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CRISPRseek_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CRISPRseek/CRISPRseek_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="b14c3c52470140b9c7bc85b9ca4044a5")
 

@@ -14,7 +14,7 @@ class RChopsticks(RPackage):
 	
 	homepage = "http://outmodedbonsai.sourceforge.net/"
 	bioc = "chopsticks" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/chopsticks_1.68.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/chopsticks/chopsticks_1.68.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chopsticks_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chopsticks/chopsticks_1.68.0.tar.gz"]
 
 	version("1.68.0", md5="b63b111068a6d42f7812010d1dc31047")
 

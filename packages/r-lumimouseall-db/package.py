@@ -13,7 +13,7 @@ class RLumimouseallDb(RPackage):
 	"""
 	
 	bioc = "lumiMouseAll.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/lumiMouseAll.db_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/lumiMouseAll.db/lumiMouseAll.db_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/lumiMouseAll.db_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/lumiMouseAll.db/lumiMouseAll.db_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="6f12330377aaddc83bfa9c37477b999e")
 

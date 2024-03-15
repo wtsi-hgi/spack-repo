@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class RBiocstyle(RPackage):
 	documents. Package vignettes illustrate use and functionality."""
 
 	bioc = "BiocStyle"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiocStyle_2.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiocStyle/BiocStyle_2.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocStyle_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocStyle/BiocStyle_2.30.0.tar.gz"]
 
 	version("2.30.0", md5="22ceacb6ab374657de48283e78dedbb5")
 

@@ -23,7 +23,7 @@ Analysis
 	homepage = "https://github.com/simeonqs/callsync"
 	cran = "callsync" 
 
-	version("0.0.6", md5="187774f13da627a0f44598514733da1c")
+	version("0.2.1", md5="b441abc2f7845e09c6d16a1265e1d560")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr@1.0.10:", type=("build", "run"))

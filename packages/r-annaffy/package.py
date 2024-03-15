@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,9 @@ class RAnnaffy(RPackage):
 	metadata using various criteria."""
 
 	bioc = "annaffy"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/annaffy_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/annaffy/annaffy_1.74.0.tar.gz"]
+
+	license("LGPL-2.1-or-later")
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/annaffy_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/annaffy/annaffy_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="a590578d3e87dbab236a5531f0a5bce0")
 

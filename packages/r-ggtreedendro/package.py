@@ -13,7 +13,7 @@ class RGgtreedendro(RPackage):
 	"""
 	
 	bioc = "ggtreeDendro" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ggtreeDendro_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ggtreeDendro/ggtreeDendro_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggtreeDendro_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggtreeDendro/ggtreeDendro_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="e5839d466e08665eb2475a99fb74e833")
 

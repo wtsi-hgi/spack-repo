@@ -13,7 +13,7 @@ class REdirquery(RPackage):
 	"""
 	
 	bioc = "EDIRquery" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EDIRquery_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EDIRquery/EDIRquery_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EDIRquery_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EDIRquery/EDIRquery_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="ff19937af17cf0a7a874b986192d6b1c")
 

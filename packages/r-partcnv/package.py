@@ -13,7 +13,7 @@ class RPartcnv(RPackage):
 	"""
 	
 	bioc = "partCNV" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/partCNV_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/partCNV/partCNV_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/partCNV_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/partCNV/partCNV_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="e004f2129cbb1fe1e84e33cf223c06f6")
 

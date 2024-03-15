@@ -16,7 +16,7 @@ Model
 	homepage = "https://darwin-eu-dev.github.io/PatientProfiles/"
 	cran = "PatientProfiles" 
 
-	version("0.6.1", md5="e05db33208f2984e1de76b9f94ba96cc")
+	version("0.6.2", md5="e25f69b981c4c75f145716ad1cc305f1")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

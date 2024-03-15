@@ -13,7 +13,7 @@ class RGuitar(RPackage):
 	"""
 	
 	bioc = "Guitar" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Guitar_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Guitar/Guitar_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Guitar_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Guitar/Guitar_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="e62e4238e3e3b939a2195eb384079bb3")
 

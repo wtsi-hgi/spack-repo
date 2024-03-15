@@ -13,7 +13,7 @@ class RBindingsitefinder(RPackage):
 	"""
 	
 	bioc = "BindingSiteFinder" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BindingSiteFinder_2.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BindingSiteFinder/BindingSiteFinder_2.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BindingSiteFinder_2.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BindingSiteFinder/BindingSiteFinder_2.0.0.tar.gz"]
 
 	version("2.0.0", md5="b54f11a27c1f6f55b4cc60ad8986e029")
 

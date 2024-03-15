@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -21,7 +21,7 @@ class RCodex(RPackage):
 	sequencing data."""
 
 	bioc = "CODEX"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CODEX_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CODEX/CODEX_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CODEX_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CODEX/CODEX_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="5b1f67c5fbf4bbe4a3ee4f6da956a886")
 

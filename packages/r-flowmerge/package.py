@@ -13,7 +13,7 @@ class RFlowmerge(RPackage):
 	"""
 	
 	bioc = "flowMerge" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowMerge_2.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowMerge/flowMerge_2.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowMerge_2.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowMerge/flowMerge_2.50.0.tar.gz"]
 
 	version("2.50.0", md5="c0d4d124e3d94a0eab8fc138f9044d2c")
 

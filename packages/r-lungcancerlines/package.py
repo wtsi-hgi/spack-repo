@@ -13,7 +13,7 @@ class RLungcancerlines(RPackage):
 	"""
 	
 	bioc = "LungCancerLines" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/LungCancerLines_0.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/LungCancerLines/LungCancerLines_0.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/LungCancerLines_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/LungCancerLines/LungCancerLines_0.40.0.tar.gz"]
 
 	version("0.40.0", md5="17b67ca0eac14ef832832b949972b277")
 

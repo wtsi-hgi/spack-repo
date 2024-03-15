@@ -14,7 +14,7 @@ class RPsbayesborrow(RPackage):
 	
 	cran = "psBayesborrow" 
 
-	version("1.0.0", md5="f10f8ba3aaf86ce79e5497463824259e")
+	version("1.1.0", md5="24f3fcd61248e3c86eb379ea1b129cce")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-copula", type=("build", "run"))

@@ -13,7 +13,7 @@ class RAirway(RPackage):
 	"""
 	
 	bioc = "airway" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/airway_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/airway/airway_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/airway_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/airway/airway_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="ffed4ae3349ebeeeabff9f1456b8ba1d")
 

@@ -13,7 +13,7 @@ class RBarley1probe(RPackage):
 	"""
 	
 	bioc = "barley1probe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/barley1probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/barley1probe/barley1probe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/barley1probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/barley1probe/barley1probe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="80595d8ecf83ba83ea84a722a24ab474")
 

@@ -14,7 +14,7 @@ class RSaigegds(RPackage):
 	
 	homepage = "https://github.com/AbbVie-ComputationalGenomics/SAIGEgds"
 	bioc = "SAIGEgds" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SAIGEgds_2.2.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SAIGEgds/SAIGEgds_2.2.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SAIGEgds_2.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SAIGEgds/SAIGEgds_2.2.1.tar.gz"]
 
 	version("2.2.1", md5="1187edceb086e860386386db76896e83")
 

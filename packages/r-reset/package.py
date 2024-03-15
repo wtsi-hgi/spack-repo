@@ -16,7 +16,7 @@ class RReset(RPackage):
 	
 	cran = "RESET" 
 
-	version("0.2.1", md5="2ac01fb78871c57a47497c03dc46f76a")
+	version("1.0.0", md5="474fae4f59fb062396dab4096ac1c0c6")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

@@ -13,7 +13,7 @@ class RChipseqdbdata(RPackage):
 	"""
 	
 	bioc = "chipseqDBData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/chipseqDBData_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/chipseqDBData/chipseqDBData_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/chipseqDBData_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/chipseqDBData/chipseqDBData_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="a6e50016d2d7c0cb085df2c4254b5f84")
 

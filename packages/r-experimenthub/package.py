@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,7 +17,7 @@ class RExperimenthub(RPackage):
 	reproducible access."""
 
 	bioc = "ExperimentHub"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ExperimentHub_2.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ExperimentHub/ExperimentHub_2.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExperimentHub_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExperimentHub/ExperimentHub_2.10.0.tar.gz"]
 
 	version("2.10.0", md5="bea896eadb8eb999e48d1cf5974dfe9e")
 

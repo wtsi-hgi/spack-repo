@@ -13,7 +13,7 @@ class RZebrafishDb(RPackage):
 	"""
 	
 	bioc = "zebrafish.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/zebrafish.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/zebrafish.db/zebrafish.db_3.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/zebrafish.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/zebrafish.db/zebrafish.db_3.13.0.tar.gz"]
 
 	version("3.13.0", md5="64e40a61e81ac9397affb09880846559")
 

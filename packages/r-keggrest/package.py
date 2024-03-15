@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,7 @@ class RKeggrest(RPackage):
 	(python package) by Aurelien Mazurie."""
 
 	bioc = "KEGGREST"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/KEGGREST_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/KEGGREST/KEGGREST_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/KEGGREST_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/KEGGREST/KEGGREST_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="805cb8808b0ffa6f57999b880337b504")
 

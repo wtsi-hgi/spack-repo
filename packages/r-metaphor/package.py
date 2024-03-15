@@ -13,7 +13,7 @@ class RMetaphor(RPackage):
 	"""
 	
 	bioc = "MetaPhOR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MetaPhOR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MetaPhOR/MetaPhOR_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetaPhOR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetaPhOR/MetaPhOR_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="311e286126427130d127b23a77b3b6f4")
 

@@ -13,7 +13,7 @@ class RCogaps(RPackage):
 	"""
 	
 	bioc = "CoGAPS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CoGAPS_3.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CoGAPS/CoGAPS_3.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CoGAPS_3.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CoGAPS/CoGAPS_3.22.0.tar.gz"]
 
 	version("3.22.0", md5="d4c9ec9b2be6c77fbb47c632b62c84b4")
 

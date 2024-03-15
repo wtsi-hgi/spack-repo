@@ -16,7 +16,7 @@ using 'N2' Library
 	homepage = "https://github.com/kharchenkolab/N2R"
 	cran = "N2R" 
 
-	version("1.0.1", md5="931b8afd448f79b6f5379adbab62905e")
+	version("1.0.3", md5="b3d43a66bc38311a9fd470114306967e")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -13,7 +13,7 @@ class RProstatecancergrasso(RPackage):
 	"""
 	
 	bioc = "prostateCancerGrasso" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/prostateCancerGrasso_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/prostateCancerGrasso/prostateCancerGrasso_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/prostateCancerGrasso_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/prostateCancerGrasso/prostateCancerGrasso_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="c331c996d943a14687439dfdf37b8029")
 

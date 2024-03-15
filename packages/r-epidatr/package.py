@@ -15,7 +15,7 @@ class REpidatr(RPackage):
 	homepage = "https://cmu-delphi.github.io/epidatr/"
 	cran = "epidatr" 
 
-	version("1.0.0", md5="7d3ee0d3a052a9edb62c953d2f4a126b")
+	version("1.1.1", md5="448ffec50b089b5adbe9d593d5547983")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cachem", type=("build", "run"))
@@ -28,6 +28,8 @@ class REpidatr(RPackage):
 	depends_on("r-mmwrweek", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-openssl", type=("build", "run"))
+	depends_on("r-rappdirs", type=("build", "run"))
 	depends_on("r-readr", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
+	depends_on("r-usethis", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))

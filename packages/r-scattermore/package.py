@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,6 +13,8 @@ class RScattermore(RPackage):
 	of data with millions of points."""
 
 	cran = "scattermore"
+
+	license("GPL-3.0-or-later")
 
 	version("1.2", md5="e7d69ed06df297b9e4193d1fb225d3d9")
 

@@ -14,7 +14,7 @@ class RPath2ppi(RPackage):
 	
 	homepage = "http://www.bioinformatik.uni-frankfurt.de/"
 	bioc = "Path2PPI" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Path2PPI_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Path2PPI/Path2PPI_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Path2PPI_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Path2PPI/Path2PPI_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="4fcd4d73b05e2167ecdfb79aadfe8722")
 

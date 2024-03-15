@@ -14,7 +14,7 @@ class RTissuetreg(RPackage):
 	
 	homepage = "https://github.com/cimbusch/tissueTreg"
 	bioc = "tissueTreg" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/tissueTreg_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/tissueTreg/tissueTreg_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tissueTreg_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tissueTreg/tissueTreg_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="5d975c08b7a19af832c4468ecb04c58b")
 

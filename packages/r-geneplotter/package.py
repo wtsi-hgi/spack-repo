@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -12,7 +12,7 @@ class RGeneplotter(RPackage):
 	Functions for plotting genomic data."""
 
 	bioc = "geneplotter"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/geneplotter_1.80.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/geneplotter/geneplotter_1.80.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geneplotter_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geneplotter/geneplotter_1.80.0.tar.gz"]
 
 	version("1.80.0", md5="29d4ec34db2e953fc9b7306f4d3b7733")
 

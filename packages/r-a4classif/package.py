@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,7 @@ class RA4classif(RPackage):
 	packages."""
 
 	bioc = "a4Classif"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/a4Classif_1.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/a4Classif/a4Classif_1.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/a4Classif_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/a4Classif/a4Classif_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="2af82160c9909dd6fdec620de5710cfa")
 

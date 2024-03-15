@@ -13,7 +13,7 @@ class RDoser(RPackage):
 	"""
 	
 	bioc = "doseR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/doseR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/doseR/doseR_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/doseR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/doseR/doseR_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="20251942acb7343859507c138bc2b902")
 

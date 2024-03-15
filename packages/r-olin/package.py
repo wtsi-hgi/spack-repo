@@ -14,7 +14,7 @@ class ROlin(RPackage):
 	
 	homepage = "http://olin.sysbiolab.eu"
 	bioc = "OLIN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/OLIN_1.80.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/OLIN/OLIN_1.80.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OLIN_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OLIN/OLIN_1.80.0.tar.gz"]
 
 	version("1.80.0", md5="3a6ce43e9272204280a346c20012f710")
 

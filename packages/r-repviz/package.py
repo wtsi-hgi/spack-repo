@@ -13,7 +13,7 @@ class RRepviz(RPackage):
 	"""
 	
 	bioc = "RepViz" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RepViz_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RepViz/RepViz_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RepViz_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RepViz/RepViz_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="a740655d18448d4fb24e37ff1c60820d")
 

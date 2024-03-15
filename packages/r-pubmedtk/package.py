@@ -17,7 +17,7 @@ class RPubmedtk(RPackage):
 	homepage = "https://github.com/bgcarlisle/pubmedtk"
 	cran = "pubmedtk" 
 
-	version("1.0.2", md5="1d961635b08a9b871577821931ff844c")
+	version("1.0.4", md5="baa0cb43d86bc5cd339843835ef4053b")
 
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

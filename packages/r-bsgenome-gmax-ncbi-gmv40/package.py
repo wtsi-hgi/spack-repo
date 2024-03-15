@@ -13,9 +13,9 @@ class RBsgenomeGmaxNcbiGmv40(RPackage):
 	"""
 	
 	bioc = "BSgenome.Gmax.NCBI.Gmv40" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Gmax.NCBI.Gmv40_4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Gmax.NCBI.Gmv40/BSgenome.Gmax.NCBI.Gmv40_4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Gmax.NCBI.Gmv40_4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Gmax.NCBI.Gmv40/BSgenome.Gmax.NCBI.Gmv40_4.0.tar.gz"]
 
-	version("4.0", md5="421c045b993b2cfbc2b08c8103835c56", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Gmax.NCBI.Gmv40_4.0.tar.gz")
+	version("4.0", md5="421c045b993b2cfbc2b08c8103835c56", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Gmax.NCBI.Gmv40_4.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))

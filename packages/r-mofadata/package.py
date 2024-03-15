@@ -13,7 +13,7 @@ class RMofadata(RPackage):
 	"""
 	
 	bioc = "MOFAdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/MOFAdata_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/MOFAdata/MOFAdata_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MOFAdata_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MOFAdata/MOFAdata_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="23e46e209a43d7e62cfd6accc6a6fb44")
 

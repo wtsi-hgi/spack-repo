@@ -13,7 +13,7 @@ class RCepo(RPackage):
 	"""
 	
 	bioc = "Cepo" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Cepo_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Cepo/Cepo_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Cepo_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Cepo/Cepo_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="9eee9f73ecd4d7dd782d14db0f60bd1f")
 

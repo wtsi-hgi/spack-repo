@@ -14,7 +14,7 @@ class RTopconfects(RPackage):
 	
 	homepage = "https://github.com/pfh/topconfects"
 	bioc = "topconfects" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/topconfects_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/topconfects/topconfects_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/topconfects_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/topconfects/topconfects_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="222a043b78c72f00d0dee0d6658d9284")
 

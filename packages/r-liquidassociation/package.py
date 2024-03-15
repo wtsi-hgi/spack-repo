@@ -13,7 +13,7 @@ class RLiquidassociation(RPackage):
 	"""
 	
 	bioc = "LiquidAssociation" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/LiquidAssociation_1.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/LiquidAssociation/LiquidAssociation_1.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LiquidAssociation_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LiquidAssociation/LiquidAssociation_1.56.0.tar.gz"]
 
 	version("1.56.0", md5="b484ed119d8ef9ebb19bfd7497eb33af")
 

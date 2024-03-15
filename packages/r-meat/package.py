@@ -14,7 +14,7 @@ class RMeat(RPackage):
 	
 	homepage = "https://github.com/sarah-voisin/MEAT"
 	bioc = "MEAT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MEAT_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MEAT/MEAT_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MEAT_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MEAT/MEAT_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="ea3f3041f0bdfab3844cea85f8d28c9b")
 

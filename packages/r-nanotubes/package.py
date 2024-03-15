@@ -14,7 +14,7 @@ class RNanotubes(RPackage):
 	
 	homepage = "https://github.com/MalteThodberg/nanotubes"
 	bioc = "nanotubes" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/nanotubes_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/nanotubes/nanotubes_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/nanotubes_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/nanotubes/nanotubes_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="ff283cb49c319a357c22e17d2df22715")
 

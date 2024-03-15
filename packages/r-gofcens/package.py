@@ -7,22 +7,23 @@ from spack.package import *
 
 
 class RGofcens(RPackage):
-	"""Goodness-of-Fit Methods for Right-Censored Data
+	"""Goodness-of-Fit Methods for Complete and Right-Censored Data
 
-	Graphical tools and goodness-of-fit tests for right-censored data:
-             1. Kolmogorov-Smirnov, Crámer-von Mises, and Anderson-Darling tests
-                based on the empirical distribution function for complete data and their 
-                extensions  for  right-censored data. 
-             2. Generalized chi-squared-type tests  based on the squared difference between 
-                observed and expected counts using random cells with right-censored data.
+	Graphical tools and goodness-of-fit tests for complete and right-censored data:
+             1. Kolmogorov-Smirnov, Cramér-von Mises, and Anderson-Darling tests,
+                which use the empirical distribution function for complete data 
+                and are extended for right-censored data.
+             2. Generalized chi-squared-type test, which is based on the squared 
+                differences between observed and expected counts using random 
+                cells with right-censored data.
              3. A series of graphical tools such as probability or cumulative hazard 
-                plots to guide the decision about the parametric model that best
-                fits the data.
+                plots to guide the decision about the most suitable parametric model 
+                for the data.
 	"""
 	
 	cran = "GofCens" 
 
-	version("0.92", md5="acc9e33592200e570932d77d81516495")
+	version("0.97", md5="de40d60d57c7797f1879e0dc49cc47d3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-actuar", type=("build", "run"))
@@ -31,3 +32,5 @@ class RGofcens(RPackage):
 	depends_on("r-survsim", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-gridextra", type=("build", "run"))
+	depends_on("r-survminer", type=("build", "run"))
+	depends_on("r-boot", type=("build", "run"))

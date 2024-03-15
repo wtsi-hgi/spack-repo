@@ -14,7 +14,7 @@ class ROntoproc(RPackage):
 	
 	homepage = "https://github.com/vjcitn/ontoProc"
 	bioc = "ontoProc" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ontoProc_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ontoProc/ontoProc_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ontoProc_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ontoProc/ontoProc_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="157cb78951de651c6be909aef51480a5")
 

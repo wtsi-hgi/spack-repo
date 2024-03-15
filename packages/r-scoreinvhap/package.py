@@ -13,7 +13,7 @@ class RScoreinvhap(RPackage):
 	"""
 	
 	bioc = "scoreInvHap" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scoreInvHap_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scoreInvHap/scoreInvHap_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scoreInvHap_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scoreInvHap/scoreInvHap_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="7505f8161571dcc7b9b752fc62dedce5")
 

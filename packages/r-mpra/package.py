@@ -14,7 +14,7 @@ class RMpra(RPackage):
 	
 	homepage = "https://github.com/hansenlab/mpra"
 	bioc = "mpra" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mpra_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mpra/mpra_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mpra_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mpra/mpra_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="ee3c8c16534188d568ee8f0e01afb894")
 

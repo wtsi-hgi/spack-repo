@@ -14,7 +14,7 @@ class REscher(RPackage):
 	
 	homepage = "https://github.com/boyiguo1/escheR"
 	bioc = "escheR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/escheR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/escheR/escheR_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/escheR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/escheR/escheR_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="ed2586d2e42f89db85790889863421b8")
 

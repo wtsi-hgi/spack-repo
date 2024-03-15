@@ -14,7 +14,7 @@ class RSemisup(RPackage):
 	
 	homepage = "https://github.com/rauschenberger/semisup"
 	bioc = "semisup" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/semisup_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/semisup/semisup_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/semisup_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/semisup/semisup_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="fb3d32c07acbfadbbee01f9a6c8333fe")
 

@@ -13,7 +13,7 @@ class RMasigpro(RPackage):
 	"""
 	
 	bioc = "maSigPro" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/maSigPro_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/maSigPro/maSigPro_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maSigPro_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maSigPro/maSigPro_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="ab91a6a10122c6d1f28fee40be32c2b8")
 

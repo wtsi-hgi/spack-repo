@@ -13,7 +13,7 @@ class RAffymoe4302expr(RPackage):
 	"""
 	
 	bioc = "Affymoe4302Expr" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Affymoe4302Expr_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/Affymoe4302Expr/Affymoe4302Expr_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Affymoe4302Expr_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Affymoe4302Expr/Affymoe4302Expr_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="4dcd432d350cf2f8000f67774d95481c")
 

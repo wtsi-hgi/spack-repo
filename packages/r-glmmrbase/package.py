@@ -19,13 +19,16 @@ class RGlmmrbase(RPackage):
 	homepage = "https://github.com/samuel-watson/glmmrBase"
 	cran = "glmmrBase" 
 
-	version("0.6.2", md5="04ba15a4b7752b966ca9c27f1cd084eb")
+	version("0.7.1", md5="a72bc5b38e9d43c611d6073c9d1e62f5")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-matrix@1.3.1:", type=("build", "run"))
 	depends_on("r-rcpp@1.0.11:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))
+	depends_on("r-rstan@2.32.1:", type=("build", "run"))
+	depends_on("r-rstantools@2.3.1.1:", type=("build", "run"))
 	depends_on("r-rcppeigen", type=("build", "run"))
 	depends_on("r-sparsechol@0.3.1:", type=("build", "run"))
 	depends_on("r-bh", type=("build", "run"))
 	depends_on("r-rcppparallel@5.0.1:", type=("build", "run"))
+	depends_on("r-stanheaders@2.32:", type=("build", "run"))

@@ -14,7 +14,7 @@ class RZfpkm(RPackage):
 	
 	homepage = "https://github.com/ronammar/zFPKM/"
 	bioc = "zFPKM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/zFPKM_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/zFPKM/zFPKM_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/zFPKM_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/zFPKM/zFPKM_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="a167e99447d7fd6b5081152a7d4472a4")
 

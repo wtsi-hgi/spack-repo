@@ -13,7 +13,7 @@ class RMyvariant(RPackage):
 	"""
 	
 	bioc = "myvariant" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/myvariant_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/myvariant/myvariant_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/myvariant_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/myvariant/myvariant_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="110e5245914806eb225bad404727124f")
 

@@ -13,7 +13,7 @@ class RMu11ksubbprobe(RPackage):
 	"""
 	
 	bioc = "mu11ksubbprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mu11ksubbprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mu11ksubbprobe/mu11ksubbprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mu11ksubbprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mu11ksubbprobe/mu11ksubbprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="28d162e18e4e16e3c6db47195d2ea0ac")
 

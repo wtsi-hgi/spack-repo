@@ -13,7 +13,7 @@ class RPdMogene21St(RPackage):
 	"""
 	
 	bioc = "pd.mogene.2.1.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.mogene.2.1.st_3.14.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.mogene.2.1.st/pd.mogene.2.1.st_3.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mogene.2.1.st_3.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.mogene.2.1.st/pd.mogene.2.1.st_3.14.1.tar.gz"]
 
 	version("3.14.1", md5="2c7fc5644eae98359cb945ff16d072a2")
 

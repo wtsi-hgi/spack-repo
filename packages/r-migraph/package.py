@@ -24,7 +24,7 @@ class RMigraph(RPackage):
 	homepage = "https://stocnet.github.io/migraph/"
 	cran = "migraph" 
 
-	version("1.3.2", md5="cef27a83ceccbb13caf64e0d1fd8a629")
+	version("1.3.4", md5="ecb506ba3f552cc338cf670a2b0db64d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-manynet", type=("build", "run"))

@@ -14,7 +14,7 @@ class RIntercellar(RPackage):
 	
 	homepage = "https://github.com/martaint/InterCellar"
 	bioc = "InterCellar" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/InterCellar_2.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/InterCellar/InterCellar_2.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/InterCellar_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/InterCellar/InterCellar_2.8.0.tar.gz"]
 
 	version("2.8.0", md5="a331a8a5f0161dd1e5afa2430660b785")
 

@@ -13,7 +13,7 @@ class RHsmmsinglecell(RPackage):
 	"""
 	
 	bioc = "HSMMSingleCell" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/HSMMSingleCell_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/HSMMSingleCell/HSMMSingleCell_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HSMMSingleCell_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HSMMSingleCell/HSMMSingleCell_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="dae440cd20110d25cd699a9a792ac4b8")
 

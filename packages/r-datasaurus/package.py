@@ -27,6 +27,6 @@ class RDatasaurus(RPackage):
 	homepage = "https://github.com/jumpingrivers/datasauRus"
 	cran = "datasauRus" 
 
-	version("0.1.6", md5="99991fa1c109073e008fff5e920e292d")
+	version("0.1.8", md5="6023af4f909e4f309c9faa723a85929d")
 
-	depends_on("r@3:", type=("build", "run"))
+	depends_on("r@3.5:", type=("build", "run"))

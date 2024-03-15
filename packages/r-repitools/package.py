@@ -13,7 +13,7 @@ class RRepitools(RPackage):
 	"""
 	
 	bioc = "Repitools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Repitools_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Repitools/Repitools_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Repitools_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Repitools/Repitools_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="3388cac60efdea157e1975abc5dcccd2")
 

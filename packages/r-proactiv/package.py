@@ -14,7 +14,7 @@ class RProactiv(RPackage):
 	
 	homepage = "https://github.com/GoekeLab/proActiv"
 	bioc = "proActiv" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/proActiv_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/proActiv/proActiv_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/proActiv_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/proActiv/proActiv_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="3aaa83b78fb2e017358c24ab185506ca")
 

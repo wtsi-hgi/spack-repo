@@ -13,7 +13,7 @@ class RNcrnatools(RPackage):
 	"""
 	
 	bioc = "ncRNAtools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ncRNAtools_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ncRNAtools/ncRNAtools_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ncRNAtools_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ncRNAtools/ncRNAtools_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="4e6f2f3809ca2cfe114ecc2c63f1d3dc")
 

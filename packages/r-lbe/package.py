@@ -13,7 +13,7 @@ class RLbe(RPackage):
 	"""
 	
 	bioc = "LBE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/LBE_1.70.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/LBE/LBE_1.70.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LBE_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LBE/LBE_1.70.0.tar.gz"]
 
 	version("1.70.0", md5="36559f365f1dbd53056e6b43bc1e06e9")
 

@@ -14,7 +14,7 @@ class RPrecisetadhub(RPackage):
 	
 	homepage = "https://github.com/dozmorovlab/preciseTADhub"
 	bioc = "preciseTADhub" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/preciseTADhub_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/preciseTADhub/preciseTADhub_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/preciseTADhub_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/preciseTADhub/preciseTADhub_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="bff4bbf0a4ac1abf21ff72ad4346795c")
 

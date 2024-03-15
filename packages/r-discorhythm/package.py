@@ -14,7 +14,7 @@ class RDiscorhythm(RPackage):
 	
 	homepage = "https://github.com/matthewcarlucci/DiscoRhythm"
 	bioc = "DiscoRhythm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DiscoRhythm_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DiscoRhythm/DiscoRhythm_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DiscoRhythm_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DiscoRhythm/DiscoRhythm_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="c502bfa871cb7e3aa322684117a70b2f")
 

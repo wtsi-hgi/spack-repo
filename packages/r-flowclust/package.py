@@ -13,7 +13,7 @@ class RFlowclust(RPackage):
 	"""
 	
 	bioc = "flowClust" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowClust_3.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowClust/flowClust_3.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowClust_3.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowClust/flowClust_3.40.0.tar.gz"]
 
 	version("3.40.0", md5="50e5d774ae44b8aaca69069733c175e3")
 

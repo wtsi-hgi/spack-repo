@@ -15,5 +15,5 @@ Multiple Applications
 	
 	cran = "FDRsamplesize2" 
 
-	version("0.1.0", md5="ef96c1b5f2895a321c29b8cd358ae3dc", url="https://cran.r-project.org/src/contrib/FDRsamplesize2_0.1.0.tar.gz")
+	version("0.2.0", md5="93e5a2137e29ad8d93b9ef2f78833e93", url="https://cran.r-project.org/src/contrib/FDRsamplesize2_0.2.0.tar.gz")
 

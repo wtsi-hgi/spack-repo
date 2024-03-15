@@ -13,7 +13,7 @@ class REbcoexpress(RPackage):
 	"""
 	
 	bioc = "EBcoexpress" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EBcoexpress_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EBcoexpress/EBcoexpress_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EBcoexpress_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EBcoexpress/EBcoexpress_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="66fa4257fbd0222064b30f6c15e74ab1")
 

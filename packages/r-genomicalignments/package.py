@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,7 @@ class RGenomicalignments(RPackage):
 	detection, and working with the nucleotide content of the alignments."""
 
 	bioc = "GenomicAlignments"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GenomicAlignments_1.38.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GenomicAlignments/GenomicAlignments_1.38.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicAlignments_1.38.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicAlignments/GenomicAlignments_1.38.2.tar.gz"]
 
 	version("1.38.2", md5="6b1bbb35176db253124a9e6786104421")
 

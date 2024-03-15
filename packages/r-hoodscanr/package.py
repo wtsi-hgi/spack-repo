@@ -14,7 +14,7 @@ class RHoodscanr(RPackage):
 	
 	homepage = "https://github.com/DavisLaboratory/hoodscanR"
 	bioc = "hoodscanR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/hoodscanR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/hoodscanR/hoodscanR_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hoodscanR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hoodscanR/hoodscanR_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="c5ac598990d1f80bfa526c576abc8d84")
 

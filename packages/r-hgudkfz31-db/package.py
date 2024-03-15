@@ -13,7 +13,7 @@ class RHgudkfz31Db(RPackage):
 	"""
 	
 	bioc = "hguDKFZ31.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hguDKFZ31.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hguDKFZ31.db/hguDKFZ31.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hguDKFZ31.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hguDKFZ31.db/hguDKFZ31.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="fa3ba493cebdac4253dea8fe5d58452b")
 

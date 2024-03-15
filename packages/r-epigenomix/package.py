@@ -13,7 +13,7 @@ class REpigenomix(RPackage):
 	"""
 	
 	bioc = "epigenomix" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/epigenomix_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/epigenomix/epigenomix_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epigenomix_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epigenomix/epigenomix_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="eef6318b8b342675c1fdd4c99ed541e8")
 

@@ -14,7 +14,7 @@ class RBiodbchebi(RPackage):
 	
 	homepage = "https://github.com/pkrog/biodbChebi"
 	bioc = "biodbChebi" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biodbChebi_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biodbChebi/biodbChebi_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbChebi_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbChebi/biodbChebi_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="31f6ed155e1126b62c5a6cd7fbd6c742")
 

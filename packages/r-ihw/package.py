@@ -13,7 +13,7 @@ class RIhw(RPackage):
 	"""
 	
 	bioc = "IHW" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IHW_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IHW/IHW_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IHW_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IHW/IHW_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="aa53165d5f689e8bfdebb02838ae9dab")
 

@@ -13,7 +13,7 @@ class RHu35ksubaprobe(RPackage):
 	"""
 	
 	bioc = "hu35ksubaprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hu35ksubaprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hu35ksubaprobe/hu35ksubaprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hu35ksubaprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hu35ksubaprobe/hu35ksubaprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="49bd19ec3b6404211f2e410e473fa644")
 

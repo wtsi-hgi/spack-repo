@@ -13,7 +13,7 @@ class RHgug4111aDb(RPackage):
 	"""
 	
 	bioc = "hgug4111a.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hgug4111a.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hgug4111a.db/hgug4111a.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgug4111a.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgug4111a.db/hgug4111a.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="a5f2c3b463915fa1ab0ca21e6b0f5840")
 

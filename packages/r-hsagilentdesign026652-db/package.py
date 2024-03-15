@@ -13,7 +13,7 @@ class RHsagilentdesign026652Db(RPackage):
 	"""
 	
 	bioc = "HsAgilentDesign026652.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/HsAgilentDesign026652.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/HsAgilentDesign026652.db/HsAgilentDesign026652.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/HsAgilentDesign026652.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/HsAgilentDesign026652.db/HsAgilentDesign026652.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="dcd2c748bf9d7c002611cd5cf2ff38c0")
 

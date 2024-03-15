@@ -13,7 +13,7 @@ class RGraphpac(RPackage):
 	"""
 	
 	bioc = "GraphPAC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GraphPAC_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GraphPAC/GraphPAC_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GraphPAC_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GraphPAC/GraphPAC_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="68794a35ae528c5cde68e7915611ace8")
 

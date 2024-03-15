@@ -13,7 +13,7 @@ class RFlowviz(RPackage):
 	"""
 	
 	bioc = "flowViz" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowViz_1.66.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowViz/flowViz_1.66.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowViz_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowViz/flowViz_1.66.0.tar.gz"]
 
 	version("1.66.0", md5="320d8392618efe06e6c2a8923b3c6652")
 

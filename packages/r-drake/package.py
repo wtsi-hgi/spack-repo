@@ -24,7 +24,7 @@ class RDrake(RPackage):
 	homepage = "https://github.com/ropensci/drake"
 	cran = "drake" 
 
-	version("7.13.8", md5="f254ba832d34846a0deb08a714371e1b")
+	version("7.13.9", md5="f26b7f07b69a0511569e751b26b7250e")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-base64url", type=("build", "run"))

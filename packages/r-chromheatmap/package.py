@@ -13,7 +13,7 @@ class RChromheatmap(RPackage):
 	"""
 	
 	bioc = "ChromHeatMap" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ChromHeatMap_1.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ChromHeatMap/ChromHeatMap_1.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChromHeatMap_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChromHeatMap/ChromHeatMap_1.56.0.tar.gz"]
 
 	version("1.56.0", md5="ee08133257bb6da21d100e03fd720323")
 

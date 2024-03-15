@@ -13,7 +13,7 @@ class RGemini(RPackage):
 	"""
 	
 	bioc = "gemini" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gemini_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gemini/gemini_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gemini_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gemini/gemini_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="e8c26d0e8208f56017c8c83a17582f37")
 

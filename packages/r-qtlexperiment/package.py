@@ -14,7 +14,7 @@ class RQtlexperiment(RPackage):
 	
 	homepage = "https://github.com/dunstone-a/QTLExperiment"
 	bioc = "QTLExperiment" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/QTLExperiment_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/QTLExperiment/QTLExperiment_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QTLExperiment_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QTLExperiment/QTLExperiment_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="fe7642e0952c4c68e5417906dfb66fb3")
 

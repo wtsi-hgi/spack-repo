@@ -13,7 +13,7 @@ class RRestfulse(RPackage):
 	"""
 	
 	bioc = "restfulSE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/restfulSE_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/restfulSE/restfulSE_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/restfulSE_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/restfulSE/restfulSE_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="80c91d615f5ff4997fce69087d3ea106")
 

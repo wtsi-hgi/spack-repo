@@ -14,7 +14,7 @@ class RIndeed(RPackage):
 	
 	homepage = "http://github.com/ressomlab/INDEED"
 	bioc = "INDEED" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/INDEED_2.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/INDEED/INDEED_2.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/INDEED_2.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/INDEED/INDEED_2.16.0.tar.gz"]
 
 	version("2.16.0", md5="457badfae1608eb2c198b89526abe740")
 

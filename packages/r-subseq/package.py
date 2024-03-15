@@ -14,7 +14,7 @@ class RSubseq(RPackage):
 	
 	homepage = "http://github.com/StoreyLab/subSeq"
 	bioc = "subSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/subSeq_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/subSeq/subSeq_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/subSeq_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/subSeq/subSeq_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="81acfd896fc4e8c52e50475dca2c1519")
 

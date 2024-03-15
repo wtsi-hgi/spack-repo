@@ -13,7 +13,7 @@ class RCcimpute(RPackage):
 	"""
 	
 	bioc = "ccImpute" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ccImpute_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ccImpute/ccImpute_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ccImpute_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ccImpute/ccImpute_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="f402177e3fc7bbbcac504c956889dfa9")
 

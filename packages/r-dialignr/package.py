@@ -13,7 +13,7 @@ class RDialignr(RPackage):
 	"""
 	
 	bioc = "DIAlignR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DIAlignR_2.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DIAlignR/DIAlignR_2.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DIAlignR_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DIAlignR/DIAlignR_2.10.0.tar.gz"]
 
 	version("2.10.0", md5="b67387fec7e8a9e5de5189fecd7077aa")
 

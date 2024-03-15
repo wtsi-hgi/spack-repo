@@ -14,7 +14,7 @@ class RAirpart(RPackage):
 	
 	homepage = "https://github.com/Wancen/airpart"
 	bioc = "airpart" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/airpart_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/airpart/airpart_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/airpart_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/airpart/airpart_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="59977674a0dc5eb9f4bd03ef89a73630")
 

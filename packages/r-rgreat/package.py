@@ -14,7 +14,7 @@ class RRgreat(RPackage):
 	
 	homepage = "https://github.com/jokergoo/rGREAT"
 	bioc = "rGREAT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rGREAT_2.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rGREAT/rGREAT_2.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rGREAT_2.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rGREAT/rGREAT_2.4.0.tar.gz"]
 
 	version("2.4.0", md5="89ee57f3429887678846bba965ce84dc")
 

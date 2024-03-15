@@ -13,7 +13,7 @@ class ROntoprocdata(RPackage):
 	"""
 	
 	bioc = "ontoProcData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ontoProcData_0.99.9901.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/ontoProcData/ontoProcData_0.99.9901.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ontoProcData_0.99.9901.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ontoProcData/ontoProcData_0.99.9901.tar.gz"]
 
 	version("0.99.9901", md5="d4160c1fc853db468ce73c7fe62ca00f")
 

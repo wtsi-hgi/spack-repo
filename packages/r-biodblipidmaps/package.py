@@ -14,7 +14,7 @@ class RBiodblipidmaps(RPackage):
 	
 	homepage = "https://github.com/pkrog/biodbLipidmaps"
 	bioc = "biodbLipidmaps" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biodbLipidmaps_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biodbLipidmaps/biodbLipidmaps_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbLipidmaps_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbLipidmaps/biodbLipidmaps_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="996886d796e7ffba7a1a19598573f9c8")
 

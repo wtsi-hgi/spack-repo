@@ -13,7 +13,7 @@ class RRgntx(RPackage):
 	"""
 	
 	bioc = "RgnTX" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RgnTX_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RgnTX/RgnTX_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RgnTX_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RgnTX/RgnTX_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="4ce438a2822a6541467c9781a3c48b26")
 

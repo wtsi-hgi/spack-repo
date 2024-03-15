@@ -13,7 +13,7 @@ class RDart(RPackage):
 	"""
 	
 	bioc = "DART" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DART_1.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DART/DART_1.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DART_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DART/DART_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="cc7bd6015b08890ec53f8004091c3bb5")
 

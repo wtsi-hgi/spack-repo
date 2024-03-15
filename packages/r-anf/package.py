@@ -13,7 +13,7 @@ class RAnf(RPackage):
 	"""
 	
 	bioc = "ANF" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ANF_1.24.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ANF/ANF_1.24.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ANF_1.24.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ANF/ANF_1.24.1.tar.gz"]
 
 	version("1.24.1", md5="56d73dcafe0bc643f70111fa5670c5f7")
 

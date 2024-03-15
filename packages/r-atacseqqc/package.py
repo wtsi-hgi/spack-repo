@@ -13,7 +13,7 @@ class RAtacseqqc(RPackage):
 	"""
 	
 	bioc = "ATACseqQC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ATACseqQC_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ATACseqQC/ATACseqQC_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ATACseqQC_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ATACseqQC/ATACseqQC_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="6742da3bbb4073be7aa5f2544b65df23")
 

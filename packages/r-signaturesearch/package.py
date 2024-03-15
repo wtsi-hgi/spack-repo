@@ -14,7 +14,7 @@ class RSignaturesearch(RPackage):
 	
 	homepage = "https://github.com/yduan004/signatureSearch/"
 	bioc = "signatureSearch" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/signatureSearch_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/signatureSearch/signatureSearch_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/signatureSearch_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/signatureSearch/signatureSearch_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="9585172c7764e755ee67aee1c5a1adba")
 

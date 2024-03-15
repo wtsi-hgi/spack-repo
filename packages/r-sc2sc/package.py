@@ -9,7 +9,7 @@ from spack.package import *
 class RSc2sc(RPackage):
 	"""Spatial Transfer of Statistics among Spanish Census Sections
 
-	Transfers/imputes statistics among Spanish spatial polygons (census sections or postal code areas) from different moments in time (2001-202)3 without need of spatial files, just linking statistics to the ID codes of the spatial units. 
+	Transfers/imputes statistics among Spanish spatial polygons (census sections or postal code areas) from different moments in time (2001-2023) without need of spatial files, just linking statistics to the ID codes of the spatial units. 
     The data available in the census sections of a partition/division (cartography) into force in a moment of time is transferred to the census sections of another partition/division employing the geometric approach (also known as areal weighting or polygon overlay). 
     References: 
     Goerlich (2022) <doi:10.12842/WPIVIE_0322>.
@@ -20,6 +20,6 @@ class RSc2sc(RPackage):
 	
 	cran = "sc2sc" 
 
-	version("0.0.1-9", md5="0c26f292f9ef10a8b01e2528525f8e39")
+	version("0.0.1-12", md5="c322623fd9846e0f10ca8d40e8146fcd")
 
 	depends_on("r@2.10:", type=("build", "run"))

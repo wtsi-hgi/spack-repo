@@ -14,8 +14,7 @@ class RWavscalogram(RPackage):
 	
 	cran = "wavScalogram" 
 
-	version("1.1.2", md5="2586238bbab4b023d269d2dc0496e274")
+	version("1.1.3", md5="7643a7a9d94261c6cfc3e4788f913780")
 
 	depends_on("r-abind", type=("build", "run"))
-	depends_on("r-colorramps", type=("build", "run"))
 	depends_on("r-fields", type=("build", "run"))

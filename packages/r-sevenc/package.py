@@ -14,7 +14,7 @@ class RSevenc(RPackage):
 	
 	homepage = "https://github.com/ibn-salem/sevenC"
 	bioc = "sevenC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sevenC_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sevenC/sevenC_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sevenC_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sevenC/sevenC_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="575914dcdfdff58d10d7e926182801b9")
 

@@ -13,7 +13,7 @@ class RTranslatome(RPackage):
 	"""
 	
 	bioc = "tRanslatome" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tRanslatome_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tRanslatome/tRanslatome_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tRanslatome_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tRanslatome/tRanslatome_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="6dabe57675cc4250a3b38f9d309a6816")
 

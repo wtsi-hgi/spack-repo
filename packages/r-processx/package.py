@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,8 @@ class RProcessx(RPackage):
 	with a timeout. It can also poll several processes at once."""
 
 	cran = "processx"
+
+	license("MIT")
 
 	version("3.8.3", md5="ad4eef6b9a21f570f8686c0157712ddf")
 

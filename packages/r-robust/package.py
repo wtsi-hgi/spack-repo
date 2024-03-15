@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,6 +14,8 @@ class RRobust(RPackage):
 	notably for robust regression and robust multivariate analysis."""
 
 	cran = "robust"
+
+	license("GPL-3.0-or-later")
 
 	version("0.7-4", md5="d3d9bfda8c6ba50021269d5924252430")
 

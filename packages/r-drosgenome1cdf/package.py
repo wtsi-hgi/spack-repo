@@ -13,7 +13,7 @@ class RDrosgenome1cdf(RPackage):
 	"""
 	
 	bioc = "drosgenome1cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/drosgenome1cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/drosgenome1cdf/drosgenome1cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/drosgenome1cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/drosgenome1cdf/drosgenome1cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="e12983f2148c10ef1faa50f810b6eee3")
 

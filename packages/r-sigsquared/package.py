@@ -13,7 +13,7 @@ class RSigsquared(RPackage):
 	"""
 	
 	bioc = "sigsquared" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sigsquared_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sigsquared/sigsquared_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sigsquared_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sigsquared/sigsquared_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="f7dfbb4c066df8fe146b2b73f8180195")
 

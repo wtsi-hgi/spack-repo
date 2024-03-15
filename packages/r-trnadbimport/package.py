@@ -13,7 +13,7 @@ class RTrnadbimport(RPackage):
 	"""
 	
 	bioc = "tRNAdbImport" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tRNAdbImport_1.20.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tRNAdbImport/tRNAdbImport_1.20.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tRNAdbImport_1.20.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tRNAdbImport/tRNAdbImport_1.20.1.tar.gz"]
 
 	version("1.20.1", md5="800f0115cf3ffcfb1fd2dd45b3574f30")
 

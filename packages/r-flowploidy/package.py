@@ -14,7 +14,7 @@ class RFlowploidy(RPackage):
 	
 	homepage = "https://github.com/plantarum/flowPloidy"
 	bioc = "flowPloidy" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowPloidy_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowPloidy/flowPloidy_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowPloidy_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowPloidy/flowPloidy_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="1020981a0f645d2dcbf1a38a3e42b7e0")
 

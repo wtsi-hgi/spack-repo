@@ -14,7 +14,7 @@ class RExploremodelmatrix(RPackage):
 	
 	homepage = "https://github.com/csoneson/ExploreModelMatrix"
 	bioc = "ExploreModelMatrix" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ExploreModelMatrix_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ExploreModelMatrix/ExploreModelMatrix_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExploreModelMatrix_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExploreModelMatrix/ExploreModelMatrix_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="86f96045b0ae6877428f28466b113097")
 

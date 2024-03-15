@@ -13,7 +13,7 @@ class RRgenometracksdata(RPackage):
 	"""
 	
 	bioc = "rGenomeTracksData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/rGenomeTracksData_0.99.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/rGenomeTracksData/rGenomeTracksData_0.99.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rGenomeTracksData_0.99.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rGenomeTracksData/rGenomeTracksData_0.99.0.tar.gz"]
 
 	version("0.99.0", md5="713103a8b4b4e48fa762ef589a43ffb8")
 

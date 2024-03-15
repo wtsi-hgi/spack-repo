@@ -13,7 +13,7 @@ class RClomial(RPackage):
 	"""
 	
 	bioc = "Clomial" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Clomial_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Clomial/Clomial_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Clomial_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Clomial/Clomial_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="71e609b1bef40cdadcd812f99a5956e8")
 

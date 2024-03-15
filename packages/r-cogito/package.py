@@ -13,7 +13,7 @@ class RCogito(RPackage):
 	"""
 	
 	bioc = "Cogito" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Cogito_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Cogito/Cogito_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Cogito_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Cogito/Cogito_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="934ceee8a56ab742bbf3c09af96cb2ba")
 

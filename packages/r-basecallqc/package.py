@@ -13,7 +13,7 @@ class RBasecallqc(RPackage):
 	"""
 	
 	bioc = "basecallQC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/basecallQC_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/basecallQC/basecallQC_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/basecallQC_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/basecallQC/basecallQC_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="ad61b901f8e533f817dccfb4830b222a")
 

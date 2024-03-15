@@ -16,7 +16,7 @@ class RNeotoma2(RPackage):
 	homepage = "https://github.com/NeotomaDB/neotoma2"
 	cran = "neotoma2" 
 
-	version("1.0.2", md5="5b02b9f8fdefd32fd990d61470b72814", url="https://cran.r-project.org/src/contrib/neotoma2_1.0.2.tar.gz")
+	version("1.0.3", md5="07d0ae6b85b1dbb19e5ec1fff940a18c", url="https://cran.r-project.org/src/contrib/neotoma2_1.0.3.tar.gz")
 
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
@@ -29,7 +29,6 @@ class RNeotoma2(RPackage):
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-gtools", type=("build", "run"))
 	depends_on("r-leaflet", type=("build", "run"))
-	depends_on("r-mapview", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-progress", type=("build", "run"))

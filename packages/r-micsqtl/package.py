@@ -13,7 +13,7 @@ class RMicsqtl(RPackage):
 	"""
 	
 	bioc = "MICSQTL" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MICSQTL_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MICSQTL/MICSQTL_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MICSQTL_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MICSQTL/MICSQTL_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="ec49e08df014da6955d2b6ab7dc77d3b")
 

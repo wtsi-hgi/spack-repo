@@ -13,7 +13,7 @@ class RRestfulsedata(RPackage):
 	"""
 	
 	bioc = "restfulSEData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/restfulSEData_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/restfulSEData/restfulSEData_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/restfulSEData_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/restfulSEData/restfulSEData_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="c69fe04b8675edd0faa593fb5ffc72c8")
 

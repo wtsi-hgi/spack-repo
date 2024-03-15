@@ -14,7 +14,7 @@ class RMast(RPackage):
 	
 	homepage = "https://github.com/RGLab/MAST/"
 	bioc = "MAST" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MAST_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MAST/MAST_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MAST_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MAST/MAST_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="5b2d5c6a33243cdf9c2e4440ba4bf1da")
 

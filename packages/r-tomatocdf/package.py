@@ -13,7 +13,7 @@ class RTomatocdf(RPackage):
 	"""
 	
 	bioc = "tomatocdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/tomatocdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/tomatocdf/tomatocdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/tomatocdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/tomatocdf/tomatocdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="200efc0637788d4bd3263fc9183c1aa6")
 

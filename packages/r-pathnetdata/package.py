@@ -13,7 +13,7 @@ class RPathnetdata(RPackage):
 	"""
 	
 	bioc = "PathNetData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/PathNetData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/PathNetData/PathNetData_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PathNetData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PathNetData/PathNetData_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="d72e955b33c92f1703ae072ec788c1d9")
 

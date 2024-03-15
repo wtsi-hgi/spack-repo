@@ -13,7 +13,7 @@ class RSconify(RPackage):
 	"""
 	
 	bioc = "Sconify" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Sconify_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Sconify/Sconify_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Sconify_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Sconify/Sconify_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="61762bc5d7e8560ae818942a21da33a5")
 

@@ -33,7 +33,7 @@ class RCtrdata(RPackage):
 	homepage = "https://cran.r-project.org/package=ctrdata"
 	cran = "ctrdata" 
 
-	version("1.17.1", md5="8a1c6174a6c787162f0639b10912773b")
+	version("1.17.2", md5="dce24b29e61071bd0824193b59b9b1dc")
 
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

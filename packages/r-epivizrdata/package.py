@@ -14,7 +14,7 @@ class REpivizrdata(RPackage):
 	
 	homepage = "http://epiviz.github.io"
 	bioc = "epivizrData" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/epivizrData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/epivizrData/epivizrData_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epivizrData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epivizrData/epivizrData_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="aa9cf42fdbb0ad293964de33fc62e27a")
 

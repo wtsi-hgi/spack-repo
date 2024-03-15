@@ -13,7 +13,7 @@ class RYeastexpdata(RPackage):
 	"""
 	
 	bioc = "yeastExpData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/yeastExpData_0.48.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/yeastExpData/yeastExpData_0.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/yeastExpData_0.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/yeastExpData/yeastExpData_0.48.0.tar.gz"]
 
 	version("0.48.0", md5="7cd63808a957defe831bf3e9d3ef4789")
 

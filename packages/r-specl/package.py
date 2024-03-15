@@ -14,7 +14,7 @@ class RSpecl(RPackage):
 	
 	homepage = "http://bioconductor.org/packages/specL/"
 	bioc = "specL" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/specL_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/specL/specL_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/specL_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/specL/specL_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="a3a436585f26f8353106b030a26cbf98")
 

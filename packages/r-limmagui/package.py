@@ -14,7 +14,7 @@ class RLimmagui(RPackage):
 	
 	homepage = "http://bioinf.wehi.edu.au/limmaGUI/"
 	bioc = "limmaGUI" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/limmaGUI_1.78.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/limmaGUI/limmaGUI_1.78.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/limmaGUI_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/limmaGUI/limmaGUI_1.78.0.tar.gz"]
 
 	version("1.78.0", md5="b0c7c34dfac5955d26908f730a73b880")
 

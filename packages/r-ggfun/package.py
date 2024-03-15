@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,6 +13,8 @@ class RGgfun(RPackage):
 	layers, adding rounded rectangle as background for each of the legends)."""
 
 	cran = "ggfun"
+
+	license("Artistic-2.0")
 
 	version("0.1.4", md5="a27e5e2c026eba828b588bb230db3ea3")
 

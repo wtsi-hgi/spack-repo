@@ -13,7 +13,7 @@ class RCancerdata(RPackage):
 	"""
 	
 	bioc = "cancerdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/cancerdata_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/cancerdata/cancerdata_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/cancerdata_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/cancerdata/cancerdata_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="7baa088ef320a0222a897987ea8c3e8b")
 

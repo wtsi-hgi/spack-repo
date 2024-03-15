@@ -13,7 +13,7 @@ class RScclassify(RPackage):
 	"""
 	
 	bioc = "scClassify" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scClassify_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scClassify/scClassify_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scClassify_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scClassify/scClassify_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="6268da69185981088025702610fd424c")
 

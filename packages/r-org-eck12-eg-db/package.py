@@ -13,7 +13,7 @@ class ROrgEck12EgDb(RPackage):
 	"""
 	
 	bioc = "org.EcK12.eg.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/org.EcK12.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/org.EcK12.eg.db/org.EcK12.eg.db_3.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.EcK12.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.EcK12.eg.db/org.EcK12.eg.db_3.18.0.tar.gz"]
 
 	version("3.18.0", md5="50d3d3ca9efec212eae3a920b00750a3")
 

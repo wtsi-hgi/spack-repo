@@ -13,7 +13,7 @@ class RSampleclassifierdata(RPackage):
 	"""
 	
 	bioc = "sampleClassifierData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/sampleClassifierData_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/sampleClassifierData/sampleClassifierData_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/sampleClassifierData_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/sampleClassifierData/sampleClassifierData_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="941790a92cde9051601206ed162f4151")
 

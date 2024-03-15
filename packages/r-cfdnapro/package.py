@@ -14,7 +14,7 @@ class RCfdnapro(RPackage):
 	
 	homepage = "https://github.com/hw538/cfDNAPro"
 	bioc = "cfDNAPro" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cfDNAPro_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cfDNAPro/cfDNAPro_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cfDNAPro_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cfDNAPro/cfDNAPro_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="377fb633e850fcef49fbe86f3c4d1505")
 

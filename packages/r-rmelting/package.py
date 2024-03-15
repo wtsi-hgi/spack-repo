@@ -14,7 +14,7 @@ class RRmelting(RPackage):
 	
 	homepage = "https://github.com/aravind-j/rmelting"
 	bioc = "rmelting" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rmelting_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rmelting/rmelting_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rmelting_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rmelting/rmelting_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="a73d7dd41b3d77dce067644b04412e9d")
 

@@ -13,7 +13,7 @@ class RCellscore(RPackage):
 	"""
 	
 	bioc = "CellScore" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CellScore_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CellScore/CellScore_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellScore_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellScore/CellScore_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="c842a56a0f5067b891a0ab7c9f9b1e21")
 

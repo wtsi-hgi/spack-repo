@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,6 +13,8 @@ class RDplyr(RPackage):
 	memory and out of memory."""
 
 	cran = "dplyr"
+
+	license("MIT")
 
 	version("1.1.4", md5="29bdf98592722336f0d07484baf2a959")
 

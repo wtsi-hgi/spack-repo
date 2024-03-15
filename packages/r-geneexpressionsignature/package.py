@@ -14,7 +14,7 @@ class RGeneexpressionsignature(RPackage):
 	
 	homepage = "https://github.com/yiluheihei/GeneExpressionSignature"
 	bioc = "GeneExpressionSignature" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GeneExpressionSignature_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GeneExpressionSignature/GeneExpressionSignature_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneExpressionSignature_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneExpressionSignature/GeneExpressionSignature_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="ee82254ee781e3cd6657c89d94e052b3")
 

@@ -13,7 +13,7 @@ class RGeneattribution(RPackage):
 	"""
 	
 	bioc = "geneAttribution" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/geneAttribution_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/geneAttribution/geneAttribution_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geneAttribution_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geneAttribution/geneAttribution_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="62d05af7aabb146fb41a5d91fa460dff")
 

@@ -14,7 +14,7 @@ class RShinymethyl(RPackage):
 	
 	homepage = "https://github.com/Jfortin1/shinyMethyl"
 	bioc = "shinyMethyl" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/shinyMethyl_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/shinyMethyl/shinyMethyl_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/shinyMethyl_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/shinyMethyl/shinyMethyl_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="21f2fe819a72a5c4db3694a22dcda934")
 

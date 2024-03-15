@@ -13,7 +13,7 @@ class RCummerbund(RPackage):
 	"""
 	
 	bioc = "cummeRbund" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cummeRbund_2.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cummeRbund/cummeRbund_2.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cummeRbund_2.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cummeRbund/cummeRbund_2.44.0.tar.gz"]
 
 	version("2.44.0", md5="367d124a098eca55a6da149e35621c65")
 

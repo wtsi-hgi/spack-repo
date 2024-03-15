@@ -13,7 +13,7 @@ class RDittoseq(RPackage):
 	"""
 	
 	bioc = "dittoSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/dittoSeq_1.14.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/dittoSeq/dittoSeq_1.14.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dittoSeq_1.14.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dittoSeq/dittoSeq_1.14.2.tar.gz"]
 
 	version("1.14.2", md5="8cd8305d970fdd3e20c3db17aeb62502")
 

@@ -13,7 +13,7 @@ class RMetnet(RPackage):
 	"""
 	
 	bioc = "MetNet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MetNet_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MetNet/MetNet_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetNet_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetNet/MetNet_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="0e03ec28e1272f094758907923a0226f")
 

@@ -13,7 +13,7 @@ class RFlowcore(RPackage):
 	"""
 	
 	bioc = "flowCore" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowCore_2.14.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowCore/flowCore_2.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowCore_2.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowCore/flowCore_2.14.1.tar.gz"]
 
 	version("2.14.1", md5="29b7b1bbecfbd24824f7ec4334a5e640")
 

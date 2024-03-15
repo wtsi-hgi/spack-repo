@@ -14,7 +14,7 @@ class RPhilr(RPackage):
 	
 	homepage = "https://github.com/jsilve24/philr"
 	bioc = "philr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/philr_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/philr/philr_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/philr_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/philr/philr_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="d55e931af78335bd6378fba38c5f54a8")
 

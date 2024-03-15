@@ -13,7 +13,7 @@ class RMousechrloc(RPackage):
 	"""
 	
 	bioc = "mouseCHRLOC" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mouseCHRLOC_2.1.6.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mouseCHRLOC/mouseCHRLOC_2.1.6.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mouseCHRLOC_2.1.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mouseCHRLOC/mouseCHRLOC_2.1.6.tar.gz"]
 
 	version("2.1.6", md5="0b81d7391e628cc355af4de3c5585a5f")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -23,7 +23,9 @@ class RGdsfmt(RPackage):
 	parallel."""
 
 	bioc = "gdsfmt"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gdsfmt_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gdsfmt/gdsfmt_1.38.0.tar.gz"]
+
+	license("BSD-2-Clause")
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gdsfmt_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gdsfmt/gdsfmt_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="8851c188356c12f7e99488ceb4daeca8")
 

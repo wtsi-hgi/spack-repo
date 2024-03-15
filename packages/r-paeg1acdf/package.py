@@ -13,7 +13,7 @@ class RPaeg1acdf(RPackage):
 	"""
 	
 	bioc = "paeg1acdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/paeg1acdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/paeg1acdf/paeg1acdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/paeg1acdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/paeg1acdf/paeg1acdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="73af974112051db0f715518393e84726")
 

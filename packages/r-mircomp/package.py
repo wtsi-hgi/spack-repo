@@ -13,7 +13,7 @@ class RMircomp(RPackage):
 	"""
 	
 	bioc = "miRcomp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/miRcomp_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/miRcomp/miRcomp_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miRcomp_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miRcomp/miRcomp_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="06b97d8829ca13b60dd4869a48b684ab")
 

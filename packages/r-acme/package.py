@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -20,7 +20,7 @@ class RAcme(RPackage):
 	easily with enough memory."""
 
 	bioc = "ACME"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ACME_2.58.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ACME/ACME_2.58.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ACME_2.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ACME/ACME_2.58.0.tar.gz"]
 
 	version("2.58.0", md5="6668a82e0a26ac03c9697e2cf22eb75e")
 

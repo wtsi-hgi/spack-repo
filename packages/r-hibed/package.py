@@ -14,7 +14,7 @@ class RHibed(RPackage):
 	
 	homepage = "https://github.com/SalasLab/HiBED"
 	bioc = "HiBED" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/HiBED_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/HiBED/HiBED_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HiBED_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HiBED/HiBED_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="282aec6967013cdaa790ff191e4139b4")
 

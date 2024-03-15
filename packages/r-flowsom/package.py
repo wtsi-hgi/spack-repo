@@ -14,7 +14,7 @@ class RFlowsom(RPackage):
 	
 	homepage = "http://www.r-project.org"
 	bioc = "FlowSOM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/FlowSOM_2.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/FlowSOM/FlowSOM_2.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FlowSOM_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FlowSOM/FlowSOM_2.10.0.tar.gz"]
 
 	version("2.10.0", md5="9bc309cc9948473d101d91ba6f1a37f2")
 

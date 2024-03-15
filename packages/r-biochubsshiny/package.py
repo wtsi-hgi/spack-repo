@@ -14,7 +14,7 @@ class RBiochubsshiny(RPackage):
 	
 	homepage = "https://github.com/Bioconductor/BiocHubsShiny"
 	bioc = "BiocHubsShiny" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiocHubsShiny_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiocHubsShiny/BiocHubsShiny_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocHubsShiny_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocHubsShiny/BiocHubsShiny_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="bc7ef9bc6285eb045f191b7c72846d68")
 

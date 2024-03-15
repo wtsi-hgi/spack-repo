@@ -15,5 +15,5 @@ Distribution
 	
 	cran = "GenBinomApps" 
 
-	version("1.2", md5="de6588f148e654c2e319ac1e0e2b96ab")
+	version("1.2.1", md5="fc9e7ba36d8853d8d3fb2db21a51e5fd")
 

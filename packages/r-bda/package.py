@@ -16,7 +16,7 @@ class RBda(RPackage):
 	
 	cran = "bda" 
 
-	version("17.1.2", md5="8ee95a97ffd7ed318c6a299e6ac69049")
+	version("18.2.2", md5="b267b36bc399ce8638ec7874b3313866")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-boot", type=("build", "run"))

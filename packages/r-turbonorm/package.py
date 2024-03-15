@@ -14,7 +14,7 @@ class RTurbonorm(RPackage):
 	
 	homepage = "http://www.humgen.nl/MicroarrayAnalysisGroup.html"
 	bioc = "TurboNorm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TurboNorm_1.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TurboNorm/TurboNorm_1.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TurboNorm_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TurboNorm/TurboNorm_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="6df6da83bc36e4ce202d91888feaafa7")
 

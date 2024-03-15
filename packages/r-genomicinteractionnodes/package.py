@@ -14,7 +14,7 @@ class RGenomicinteractionnodes(RPackage):
 	
 	homepage = "https://github.com/jianhong/GenomicInteractionNodes"
 	bioc = "GenomicInteractionNodes" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GenomicInteractionNodes_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GenomicInteractionNodes/GenomicInteractionNodes_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicInteractionNodes_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicInteractionNodes/GenomicInteractionNodes_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="bacb75bdd25ea06d5102c1ef2648c588")
 

@@ -17,7 +17,7 @@ class RFtextra(RPackage):
 	homepage = "https://ftextra.atusy.net"
 	cran = "ftExtra" 
 
-	version("0.6.1", md5="079b662dd4a4f6d25685efbc07fb1adf")
+	version("0.6.2", md5="63bd1b28ee9b6230407b1cfecfc2a7a1")
 
 	depends_on("r-dplyr@1:", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

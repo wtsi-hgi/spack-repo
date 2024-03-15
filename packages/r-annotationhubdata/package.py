@@ -13,7 +13,7 @@ class RAnnotationhubdata(RPackage):
 	"""
 	
 	bioc = "AnnotationHubData" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AnnotationHubData_1.32.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AnnotationHubData/AnnotationHubData_1.32.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnnotationHubData_1.32.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnnotationHubData/AnnotationHubData_1.32.1.tar.gz"]
 
 	version("1.32.1", md5="16c917d10f4fe18cd1e2db8ae41ce6be")
 

@@ -14,7 +14,7 @@ class RChromscape(RPackage):
 	
 	homepage = "https://github.com/vallotlab/ChromSCape"
 	bioc = "ChromSCape" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ChromSCape_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ChromSCape/ChromSCape_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChromSCape_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChromSCape/ChromSCape_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="a95b9c5be176f95c178ac7d3a1c26496")
 

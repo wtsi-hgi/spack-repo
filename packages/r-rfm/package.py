@@ -20,16 +20,14 @@ class RRfm(RPackage):
 	homepage = "https://github.com/rsquaredacademy/rfm"
 	cran = "rfm" 
 
-	version("0.2.2", md5="a033fa880397674eaad3abc7317ef274")
+	version("0.3.0", md5="2704cebf5e71b675266143551a945dd7")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-ggthemes", type=("build", "run"))
-	depends_on("r-lubridate", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
-	depends_on("r-tibble", type=("build", "run"))
-	depends_on("r-tidyr", type=("build", "run"))
+	depends_on("r-scales", type=("build", "run"))
+	depends_on("r-treemapify", type=("build", "run"))
 	depends_on("r-xplorerr", type=("build", "run"))

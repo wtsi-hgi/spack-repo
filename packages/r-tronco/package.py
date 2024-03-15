@@ -14,7 +14,7 @@ class RTronco(RPackage):
 	
 	homepage = "https://sites.google.com/site/troncopackage/"
 	bioc = "TRONCO" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TRONCO_2.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TRONCO/TRONCO_2.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TRONCO_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TRONCO/TRONCO_2.34.0.tar.gz"]
 
 	version("2.34.0", md5="0e137e734d0e5552bdcaa25ccdd4df08")
 

@@ -15,7 +15,7 @@ class RColorednoise(RPackage):
 	
 	cran = "colorednoise" 
 
-	version("1.1.1", md5="0d296a299104453777a897dba1bc03a2")
+	version("1.1.2", md5="b8901b02f719a7a5d3bc5c12f4900638")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-purrr@0.2.3:", type=("build", "run"))

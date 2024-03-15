@@ -14,7 +14,7 @@ class RVisse(RPackage):
 	
 	homepage = "https://davislaboratory.github.io/vissE"
 	bioc = "vissE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/vissE_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/vissE/vissE_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vissE_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vissE/vissE_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="1c5018fd43f416ebc2d035a143877154")
 

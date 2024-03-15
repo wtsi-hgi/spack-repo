@@ -14,7 +14,7 @@ class RKebabs(RPackage):
 	
 	homepage = "http://www.bioinf.jku.at/software/kebabs/"
 	bioc = "kebabs" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/kebabs_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/kebabs/kebabs_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/kebabs_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/kebabs/kebabs_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="d6c4a16d9fd157b1e68acc8d4816017e")
 

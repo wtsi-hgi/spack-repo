@@ -13,7 +13,7 @@ class RCompass(RPackage):
 	"""
 	
 	bioc = "COMPASS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/COMPASS_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/COMPASS/COMPASS_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/COMPASS_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/COMPASS/COMPASS_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="6ab4a9ce40637244377f77b7baaecc38")
 

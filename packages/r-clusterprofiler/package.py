@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,9 +14,9 @@ class RClusterprofiler(RPackage):
 	profiles (GO and KEGG) of gene and gene clusters."""
 
 	bioc = "clusterProfiler"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/clusterProfiler_4.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/clusterProfiler/clusterProfiler_4.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clusterProfiler_4.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clusterProfiler/clusterProfiler_4.10.1.tar.gz"]
 
-	version("4.10.0", md5="6eb1c0888849211e04896b3431460048")
+	version("4.10.1", md5="9c7eeb69f8cc22b6712b75069a4b0fc9")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

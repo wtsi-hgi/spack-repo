@@ -13,7 +13,7 @@ class RBsgenomePtroglodytesUcscPantro3Masked(RPackage):
 	"""
 	
 	bioc = "BSgenome.Ptroglodytes.UCSC.panTro3.masked" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Ptroglodytes.UCSC.panTro3.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Ptroglodytes.UCSC.panTro3.masked/BSgenome.Ptroglodytes.UCSC.panTro3.masked_1.3.99.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Ptroglodytes.UCSC.panTro3.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Ptroglodytes.UCSC.panTro3.masked/BSgenome.Ptroglodytes.UCSC.panTro3.masked_1.3.99.tar.gz"]
 
 	version("1.3.99", md5="89e96b3796d3b8e8793146597506e3f5")
 

@@ -13,7 +13,7 @@ class RScmet(RPackage):
 	"""
 	
 	bioc = "scMET" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scMET_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scMET/scMET_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scMET_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scMET/scMET_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="6420a2af7464f67eb676f06d20f9d5a6")
 

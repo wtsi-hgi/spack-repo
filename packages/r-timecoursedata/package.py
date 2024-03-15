@@ -13,7 +13,7 @@ class RTimecoursedata(RPackage):
 	"""
 	
 	bioc = "timecoursedata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/timecoursedata_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/timecoursedata/timecoursedata_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/timecoursedata_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/timecoursedata/timecoursedata_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="a5b9f962c12d69003eff9b6949d2b0af")
 

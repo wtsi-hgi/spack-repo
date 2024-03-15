@@ -13,7 +13,7 @@ class RHs25kresogenDb(RPackage):
 	"""
 	
 	bioc = "hs25kresogen.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hs25kresogen.db_2.5.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hs25kresogen.db/hs25kresogen.db_2.5.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hs25kresogen.db_2.5.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hs25kresogen.db/hs25kresogen.db_2.5.0.tar.gz"]
 
 	version("2.5.0", md5="a3800d072ce0e5f6f5d8299538b99cca")
 

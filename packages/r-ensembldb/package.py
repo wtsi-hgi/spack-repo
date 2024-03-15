@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -23,7 +23,7 @@ class REnsembldb(RPackage):
 	between genomic, transcript and protein coordinates."""
 
 	bioc = "ensembldb"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ensembldb_2.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ensembldb/ensembldb_2.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ensembldb_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ensembldb/ensembldb_2.26.0.tar.gz"]
 
 	version("2.26.0", md5="0ad7a33ad9592f54e39d647195aa4c91")
 

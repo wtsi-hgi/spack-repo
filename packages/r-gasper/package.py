@@ -22,7 +22,7 @@ class RGasper(RPackage):
 	homepage = "https://github.com/fabnavarro/gasper"
 	cran = "gasper" 
 
-	version("1.1.5", md5="7f8fa158bea3ebe2289037586554433a")
+	version("1.1.6", md5="1dabbc698d5d099ad1f7c43f91fe575d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -14,7 +14,7 @@ class RRtn(RPackage):
 	
 	homepage = "http://dx.doi.org/10.1038/ncomms3464"
 	bioc = "RTN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RTN_2.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RTN/RTN_2.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RTN_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RTN/RTN_2.26.0.tar.gz"]
 
 	version("2.26.0", md5="3e79f58bcc4f0ac95a48819a0027028e")
 

@@ -13,7 +13,7 @@ class RPpinfer(RPackage):
 	"""
 	
 	bioc = "PPInfer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PPInfer_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PPInfer/PPInfer_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PPInfer_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PPInfer/PPInfer_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="f6b346ab6e0c90b546825aa50fb52b59")
 

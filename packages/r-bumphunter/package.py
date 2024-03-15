@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -12,7 +12,7 @@ class RBumphunter(RPackage):
 	Tools for finding bumps in genomic data"""
 
 	bioc = "bumphunter"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/bumphunter_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/bumphunter/bumphunter_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bumphunter_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bumphunter/bumphunter_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="fea93f84b54daabaaf1686d658aeedfc")
 

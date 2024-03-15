@@ -14,7 +14,7 @@ class RSystempiper(RPackage):
 	
 	homepage = "https://systempipe.org/"
 	bioc = "systemPipeR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/systemPipeR_2.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/systemPipeR/systemPipeR_2.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/systemPipeR_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/systemPipeR/systemPipeR_2.8.0.tar.gz"]
 
 	version("2.8.0", md5="67456347870d6c358e1209658cb930d2")
 

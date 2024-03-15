@@ -13,7 +13,7 @@ class RRtcgaClinical(RPackage):
 	"""
 	
 	bioc = "RTCGA.clinical" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RTCGA.clinical_20151101.32.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/RTCGA.clinical/RTCGA.clinical_20151101.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.clinical_20151101.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.clinical/RTCGA.clinical_20151101.32.0.tar.gz"]
 
 	version("20151101.32.0", md5="9c32b8aef86c9ad34ea8c3672575d724")
 

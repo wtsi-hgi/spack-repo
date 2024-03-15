@@ -13,7 +13,7 @@ class RCicero(RPackage):
 	"""
 	
 	bioc = "cicero" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cicero_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cicero/cicero_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cicero_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cicero/cicero_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="642264199171ac5b31a4f296c855dbb7")
 

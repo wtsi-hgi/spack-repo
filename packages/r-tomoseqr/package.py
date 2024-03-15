@@ -13,7 +13,7 @@ class RTomoseqr(RPackage):
 	"""
 	
 	bioc = "tomoseqr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tomoseqr_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tomoseqr/tomoseqr_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tomoseqr_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tomoseqr/tomoseqr_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="b881e4b272396cc4696d840658ec0ef5")
 

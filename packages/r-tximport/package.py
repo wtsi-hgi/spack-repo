@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,7 +18,7 @@ class RTximport(RPackage):
 	counts."""
 
 	bioc = "tximport"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tximport_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tximport/tximport_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tximport_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tximport/tximport_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="8bbe549dafbf5b0dfe626f327910a893")
 

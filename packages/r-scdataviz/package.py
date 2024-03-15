@@ -14,7 +14,7 @@ class RScdataviz(RPackage):
 	
 	homepage = "https://github.com/kevinblighe/scDataviz"
 	bioc = "scDataviz" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scDataviz_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scDataviz/scDataviz_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDataviz_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scDataviz/scDataviz_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="71744390661cb39c6c12d920e7861d7f")
 

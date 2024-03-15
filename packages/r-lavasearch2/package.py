@@ -19,7 +19,7 @@ class RLavasearch2(RPackage):
 	homepage = "https://github.com/bozenne/lavaSearch2"
 	cran = "lavaSearch2" 
 
-	version("2.0.2", md5="9b1140c93438cf36c09edd8bedb98c58", url="https://cran.r-project.org/src/contrib/lavaSearch2_2.0.2.tar.gz")
+	version("2.0.3", md5="1ea7ca4c59edef63ca1784c431da3fc8", url="https://cran.r-project.org/src/contrib/lavaSearch2_2.0.3.tar.gz")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

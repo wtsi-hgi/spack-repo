@@ -14,7 +14,7 @@ class RFishpond(RPackage):
 	
 	homepage = "https://thelovelab.github.io/fishpond"
 	bioc = "fishpond" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/fishpond_2.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/fishpond/fishpond_2.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fishpond_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fishpond/fishpond_2.8.0.tar.gz"]
 
 	version("2.8.0", md5="407bd027d801c207371750eba2c9d735")
 

@@ -13,7 +13,7 @@ class RSomaticadata(RPackage):
 	"""
 	
 	bioc = "SomatiCAData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/SomatiCAData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/SomatiCAData/SomatiCAData_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SomatiCAData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SomatiCAData/SomatiCAData_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="31d9100d6b5fa5f95c59eda9995f2684")
 

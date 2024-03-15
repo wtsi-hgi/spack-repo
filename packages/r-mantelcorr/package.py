@@ -13,7 +13,7 @@ class RMantelcorr(RPackage):
 	"""
 	
 	bioc = "MantelCorr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MantelCorr_1.72.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MantelCorr/MantelCorr_1.72.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MantelCorr_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MantelCorr/MantelCorr_1.72.0.tar.gz"]
 
 	version("1.72.0", md5="7ef5ee0a329a4cf218c340e9289fea32")
 

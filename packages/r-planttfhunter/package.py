@@ -14,7 +14,7 @@ class RPlanttfhunter(RPackage):
 	
 	homepage = "https://github.com/almeidasilvaf/planttfhunter"
 	bioc = "planttfhunter" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/planttfhunter_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/planttfhunter/planttfhunter_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/planttfhunter_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/planttfhunter/planttfhunter_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="94bf35ef27114ae40bdd4be243dfb8fe")
 

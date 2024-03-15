@@ -14,7 +14,7 @@ class RProda(RPackage):
 	
 	homepage = "https://github.com/const-ae/proDA"
 	bioc = "proDA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/proDA_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/proDA/proDA_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/proDA_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/proDA/proDA_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="906f58f351f6a657aafcb3f6a670cc9f")
 

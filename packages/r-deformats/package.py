@@ -14,7 +14,7 @@ class RDeformats(RPackage):
 	
 	homepage = "https://github.com/aoles/DEFormats"
 	bioc = "DEFormats" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DEFormats_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DEFormats/DEFormats_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEFormats_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEFormats/DEFormats_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="d4fd53366cc3ead5959b9af782ff6790")
 

@@ -13,7 +13,7 @@ class RSegmentseq(RPackage):
 	"""
 	
 	bioc = "segmentSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/segmentSeq_2.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/segmentSeq/segmentSeq_2.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/segmentSeq_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/segmentSeq/segmentSeq_2.36.0.tar.gz"]
 
 	version("2.36.0", md5="f86ecc00eba08e4f13412c624d98697c")
 

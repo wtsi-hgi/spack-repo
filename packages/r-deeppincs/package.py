@@ -13,7 +13,7 @@ class RDeeppincs(RPackage):
 	"""
 	
 	bioc = "DeepPINCS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DeepPINCS_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DeepPINCS/DeepPINCS_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DeepPINCS_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DeepPINCS/DeepPINCS_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="cc5fbdd874a89f88ffed9c215f1e3d74")
 

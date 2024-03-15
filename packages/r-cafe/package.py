@@ -13,7 +13,7 @@ class RCafe(RPackage):
 	"""
 	
 	bioc = "CAFE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CAFE_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CAFE/CAFE_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CAFE_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CAFE/CAFE_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="1a64370f203f198ad86163715decbebb")
 

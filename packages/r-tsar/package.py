@@ -13,7 +13,7 @@ class RTsar(RPackage):
 	"""
 	
 	bioc = "TSAR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TSAR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TSAR/TSAR_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TSAR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TSAR/TSAR_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="7cc8589151c5b03e247590bbd7dc04dd")
 

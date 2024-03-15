@@ -14,7 +14,7 @@ class RFgga(RPackage):
 	
 	homepage = "https://github.com/fspetale/fgga"
 	bioc = "fgga" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/fgga_1.10.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/fgga/fgga_1.10.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fgga_1.10.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fgga/fgga_1.10.2.tar.gz"]
 
 	version("1.10.2", md5="593ff20d3098840f42f7a5c657da4c9c")
 

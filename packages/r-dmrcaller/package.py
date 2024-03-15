@@ -13,7 +13,7 @@ class RDmrcaller(RPackage):
 	"""
 	
 	bioc = "DMRcaller" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DMRcaller_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DMRcaller/DMRcaller_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DMRcaller_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DMRcaller/DMRcaller_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="1c5b37620b4950eb63e32c3063235e8e")
 

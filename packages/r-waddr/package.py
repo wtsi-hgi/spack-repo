@@ -14,7 +14,7 @@ class RWaddr(RPackage):
 	
 	homepage = "https://github.com/goncalves-lab/waddR.git"
 	bioc = "waddR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/waddR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/waddR/waddR_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/waddR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/waddR/waddR_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="97a692c918d531e3d872dc17141cd112")
 

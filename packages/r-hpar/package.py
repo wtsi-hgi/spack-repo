@@ -13,7 +13,7 @@ class RHpar(RPackage):
 	"""
 	
 	bioc = "hpar" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/hpar_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/hpar/hpar_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hpar_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hpar/hpar_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="f970b068a2112cd8bf1a8dfb7d29d86a")
 

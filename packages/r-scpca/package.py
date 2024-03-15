@@ -14,7 +14,7 @@ class RScpca(RPackage):
 	
 	homepage = "https://github.com/PhilBoileau/scPCA"
 	bioc = "scPCA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scPCA_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scPCA/scPCA_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scPCA_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scPCA/scPCA_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="e7058ad8f079f25d21ae55911652d01d")
 

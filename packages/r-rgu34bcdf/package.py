@@ -13,7 +13,7 @@ class RRgu34bcdf(RPackage):
 	"""
 	
 	bioc = "rgu34bcdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/rgu34bcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/rgu34bcdf/rgu34bcdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rgu34bcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rgu34bcdf/rgu34bcdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="428b3a39f0d8addd7d863539b8cda6ea")
 

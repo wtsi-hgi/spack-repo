@@ -13,9 +13,9 @@ class RBsgenomeMfuroUcscMusfur1(RPackage):
 	"""
 	
 	bioc = "BSgenome.Mfuro.UCSC.musFur1" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Mfuro.UCSC.musFur1_1.4.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Mfuro.UCSC.musFur1/BSgenome.Mfuro.UCSC.musFur1_1.4.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mfuro.UCSC.musFur1_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Mfuro.UCSC.musFur1/BSgenome.Mfuro.UCSC.musFur1_1.4.1.tar.gz"]
 
-	version("1.4.1", md5="c33e71746ce551bcbcd22be1979aee63", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Mfuro.UCSC.musFur1_1.4.1.tar.gz")
+	version("1.4.1", md5="c33e71746ce551bcbcd22be1979aee63", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mfuro.UCSC.musFur1_1.4.1.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 

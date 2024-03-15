@@ -13,7 +13,7 @@ class RDeconrnaseq(RPackage):
 	"""
 	
 	bioc = "DeconRNASeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DeconRNASeq_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DeconRNASeq/DeconRNASeq_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DeconRNASeq_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DeconRNASeq/DeconRNASeq_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="d38af67b8408b66b85fbb4061442b953")
 

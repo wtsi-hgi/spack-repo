@@ -13,7 +13,7 @@ class RTest3probe(RPackage):
 	"""
 	
 	bioc = "test3probe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/test3probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/test3probe/test3probe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/test3probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/test3probe/test3probe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="ffcbfee4e5c486fd03b2b9b64820340c")
 

@@ -21,7 +21,7 @@ class RCvms(RPackage):
 	homepage = "https://github.com/ludvigolsen/cvms"
 	cran = "cvms" 
 
-	version("1.6.0", md5="a3713df1b2c818ab22cc9d1671efc453")
+	version("1.6.1", md5="bc8dcb85bd09dd622f61738905795475")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-checkmate@2:", type=("build", "run"))

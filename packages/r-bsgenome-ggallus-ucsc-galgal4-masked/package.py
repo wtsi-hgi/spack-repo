@@ -13,7 +13,7 @@ class RBsgenomeGgallusUcscGalgal4Masked(RPackage):
 	"""
 	
 	bioc = "BSgenome.Ggallus.UCSC.galGal4.masked" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Ggallus.UCSC.galGal4.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Ggallus.UCSC.galGal4.masked/BSgenome.Ggallus.UCSC.galGal4.masked_1.3.99.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Ggallus.UCSC.galGal4.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Ggallus.UCSC.galGal4.masked/BSgenome.Ggallus.UCSC.galGal4.masked_1.3.99.tar.gz"]
 
 	version("1.3.99", md5="0166121ebd8d0b6a4d24d67e175cfe81")
 

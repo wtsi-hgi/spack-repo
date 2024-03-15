@@ -13,7 +13,7 @@ class RSigfeature(RPackage):
 	"""
 	
 	bioc = "sigFeature" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sigFeature_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sigFeature/sigFeature_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sigFeature_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sigFeature/sigFeature_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="96249637034c39dc1924cd78c1a0ba58")
 

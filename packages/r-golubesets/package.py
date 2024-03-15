@@ -13,7 +13,7 @@ class RGolubesets(RPackage):
 	"""
 	
 	bioc = "golubEsets" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/golubEsets_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/golubEsets/golubEsets_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/golubEsets_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/golubEsets/golubEsets_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="49e3527c00f06c189a048a6b871f3d54")
 

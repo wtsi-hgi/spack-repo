@@ -13,7 +13,7 @@ class RIlluminamousev1p1Db(RPackage):
 	"""
 	
 	bioc = "illuminaMousev1p1.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/illuminaMousev1p1.db_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/illuminaMousev1p1.db/illuminaMousev1p1.db_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/illuminaMousev1p1.db_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/illuminaMousev1p1.db/illuminaMousev1p1.db_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="f6a4af01480a6f8d1d2d9b9b64a2b073")
 

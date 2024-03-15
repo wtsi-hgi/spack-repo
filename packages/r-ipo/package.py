@@ -14,7 +14,7 @@ class RIpo(RPackage):
 	
 	homepage = "https://github.com/rietho/IPO"
 	bioc = "IPO" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IPO_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IPO/IPO_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IPO_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IPO/IPO_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="a1275d6f177754744bcceb9a8aed44a0")
 

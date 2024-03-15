@@ -14,7 +14,7 @@ class RGopro(RPackage):
 	
 	homepage = "https://github.com/mi2-warsaw/GOpro"
 	bioc = "GOpro" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GOpro_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GOpro/GOpro_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOpro_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOpro/GOpro_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="c92dbcab08a7cdac3ee8ee6c28c6dc78")
 

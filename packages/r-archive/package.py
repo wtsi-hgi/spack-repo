@@ -10,14 +10,14 @@ class RArchive(RPackage):
 	"""Multi-Format Archive and Compression Support
 
 	Bindings to 'libarchive' <http://www.libarchive.org> the
-    Multi-format archive and compression library. Offers R connections and
-    direct extraction for many archive formats including 'tar', 'ZIP',
-    '7-zip', 'RAR', 'CAB' and compression formats including 'gzip',
-    'bzip2', 'compress', 'lzma' and 'xz'.
+	Multi-format archive and compression library. Offers R connections and
+	direct extraction for many archive formats including 'tar', 'ZIP',
+	'7-zip', 'RAR', 'CAB' and compression formats including 'gzip',
+	'bzip2', 'compress', 'lzma' and 'xz'.
 	"""
 	
 	homepage = "https://archive.r-lib.org/"
-	cran = "archive" 
+	cran = "archive"
 
 	version("1.1.7", md5="f3504e5b4704312ce00d704d1e186083")
 

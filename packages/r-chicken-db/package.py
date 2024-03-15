@@ -13,7 +13,7 @@ class RChickenDb(RPackage):
 	"""
 	
 	bioc = "chicken.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/chicken.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/chicken.db/chicken.db_3.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/chicken.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/chicken.db/chicken.db_3.13.0.tar.gz"]
 
 	version("3.13.0", md5="512f887df339529d4883aad3f3eb6fb8")
 

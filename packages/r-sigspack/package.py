@@ -14,7 +14,7 @@ class RSigspack(RPackage):
 	
 	homepage = "https://github.com/bihealth/SigsPack"
 	bioc = "SigsPack" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SigsPack_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SigsPack/SigsPack_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SigsPack_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SigsPack/SigsPack_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="5fde29d53a470944ef9a4ba82bcca75d")
 

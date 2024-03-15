@@ -14,7 +14,7 @@ class RMbecs(RPackage):
 	
 	homepage = "https://github.com/rmolbrich/MBECS"
 	bioc = "MBECS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MBECS_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MBECS/MBECS_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MBECS_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MBECS/MBECS_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="5e7481e4bcd7fc20a2251635324035a4")
 

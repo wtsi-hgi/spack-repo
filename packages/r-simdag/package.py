@@ -19,7 +19,7 @@ class RSimdag(RPackage):
 	homepage = "https://github.com/RobinDenz1/simDAG"
 	cran = "simDAG" 
 
-	version("0.1.0", md5="21c4d68fb4cf6ef836716490998736ea")
+	version("0.1.1", md5="2a25dd7904c2c703fc9378b4781a2b63")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

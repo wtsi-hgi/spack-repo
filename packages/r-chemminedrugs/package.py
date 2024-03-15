@@ -13,7 +13,7 @@ class RChemminedrugs(RPackage):
 	"""
 	
 	bioc = "ChemmineDrugs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ChemmineDrugs_1.0.2.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/ChemmineDrugs/ChemmineDrugs_1.0.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ChemmineDrugs_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ChemmineDrugs/ChemmineDrugs_1.0.2.tar.gz"]
 
 	version("1.0.2", md5="2a3646e5173e93080fb5b49564f5d545")
 

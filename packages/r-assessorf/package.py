@@ -13,7 +13,7 @@ class RAssessorf(RPackage):
 	"""
 	
 	bioc = "AssessORF" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AssessORF_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AssessORF/AssessORF_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AssessORF_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AssessORF/AssessORF_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="b11ca260fff21c6afe98ee471d79b3ec")
 

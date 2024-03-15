@@ -14,7 +14,7 @@ class RFaahko(RPackage):
 	
 	homepage = "http://dx.doi.org/10.1021/bi0480335"
 	bioc = "faahKO" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/faahKO_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/faahKO/faahKO_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/faahKO_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/faahKO/faahKO_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="3525f525973323d33955a68ca38b5cd7")
 

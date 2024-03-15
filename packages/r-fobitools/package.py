@@ -14,7 +14,7 @@ class RFobitools(RPackage):
 	
 	homepage = "https://github.com/pcastellanoescuder/fobitools/"
 	bioc = "fobitools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/fobitools_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/fobitools/fobitools_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fobitools_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fobitools/fobitools_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="24ebda3aed06055ab55d7cdf88a7c2a0")
 

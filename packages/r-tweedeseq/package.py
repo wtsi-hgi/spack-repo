@@ -14,7 +14,7 @@ class RTweedeseq(RPackage):
 	
 	homepage = "https://github.com/isglobal-brge/tweeDEseq/"
 	bioc = "tweeDEseq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tweeDEseq_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tweeDEseq/tweeDEseq_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tweeDEseq_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tweeDEseq/tweeDEseq_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="1a919ba1b3c5709068bc126336b77826")
 

@@ -14,7 +14,7 @@ class RSigner(RPackage):
 	
 	homepage = "https://github.com/TojalLab/signeR"
 	bioc = "signeR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/signeR_2.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/signeR/signeR_2.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/signeR_2.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/signeR/signeR_2.4.0.tar.gz"]
 
 	version("2.4.0", md5="36ca120021611cebddf20efa74c6bbf7")
 

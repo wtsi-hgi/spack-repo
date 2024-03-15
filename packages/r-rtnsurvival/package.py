@@ -13,7 +13,7 @@ class RRtnsurvival(RPackage):
 	"""
 	
 	bioc = "RTNsurvival" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RTNsurvival_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RTNsurvival/RTNsurvival_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RTNsurvival_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RTNsurvival/RTNsurvival_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="db9d03eee81fed17fae3acb66a07893f")
 

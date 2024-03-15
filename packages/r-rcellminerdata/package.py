@@ -13,7 +13,7 @@ class RRcellminerdata(RPackage):
 	"""
 	
 	bioc = "rcellminerData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/rcellminerData_2.24.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/rcellminerData/rcellminerData_2.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/rcellminerData_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/rcellminerData/rcellminerData_2.24.0.tar.gz"]
 
 	version("2.24.0", md5="2f45852d4eeb438b6a1feb156200b2bc")
 

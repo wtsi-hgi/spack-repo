@@ -13,7 +13,7 @@ class RRedseq(RPackage):
 	"""
 	
 	bioc = "REDseq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/REDseq_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/REDseq/REDseq_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/REDseq_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/REDseq/REDseq_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="f20e437ad9c48683bdaeda1825f87f85")
 

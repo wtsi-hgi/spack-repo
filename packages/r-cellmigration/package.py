@@ -14,7 +14,7 @@ class RCellmigration(RPackage):
 	
 	homepage = "https://github.com/ocbe-uio/cellmigRation/"
 	bioc = "cellmigRation" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cellmigRation_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cellmigRation/cellmigRation_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cellmigRation_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cellmigRation/cellmigRation_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="61fc4a74a41e132fc3b760bc444ee5d4")
 

@@ -13,7 +13,7 @@ class RMetabolomicsworkbenchr(RPackage):
 	"""
 	
 	bioc = "metabolomicsWorkbenchR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/metabolomicsWorkbenchR_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/metabolomicsWorkbenchR/metabolomicsWorkbenchR_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metabolomicsWorkbenchR_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metabolomicsWorkbenchR/metabolomicsWorkbenchR_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="7e8485177f5ad463ff6a0f6e573e74fb")
 

@@ -25,12 +25,10 @@ class RGgdist(RPackage):
 	homepage = "https://mjskay.github.io/ggdist/"
 	cran = "ggdist" 
 
-	version("3.3.1", md5="1dd3ff51bdfffa5fc48032ace31a2470")
+	version("3.3.2", md5="4272ed3112d6770ed3bea3697eea180e")
 
 	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-tidyselect", type=("build", "run"))
-	depends_on("r-dplyr@1:", type=("build", "run"))
-	depends_on("r-ggplot2@3.4:", type=("build", "run"))
+	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r-rlang@0.3:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))
@@ -41,4 +39,5 @@ class RGgdist(RPackage):
 	depends_on("r-numderiv", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
 	depends_on("r-quadprog", type=("build", "run"))
+	depends_on("r-gtable", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

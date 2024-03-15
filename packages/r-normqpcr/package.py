@@ -14,7 +14,7 @@ class RNormqpcr(RPackage):
 	
 	homepage = "www.bioconductor.org/packages/release/bioc/html/NormqPCR.html"
 	bioc = "NormqPCR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/NormqPCR_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/NormqPCR/NormqPCR_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NormqPCR_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NormqPCR/NormqPCR_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="379e7395ad03c0d57dffa7331748e253")
 

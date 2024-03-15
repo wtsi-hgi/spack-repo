@@ -13,7 +13,7 @@ class RFuntoonorm(RPackage):
 	"""
 	
 	bioc = "funtooNorm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/funtooNorm_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/funtooNorm/funtooNorm_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/funtooNorm_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/funtooNorm/funtooNorm_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="32208fd7734fe0fcfb1278b80a98c28e")
 

@@ -14,7 +14,7 @@ class RHicool(RPackage):
 	
 	homepage = "https://github.com/js2264/HiCool"
 	bioc = "HiCool" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HiCool_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HiCool/HiCool_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiCool_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiCool/HiCool_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="04aa2ef16336d5c43fc0a02291ba7887")
 

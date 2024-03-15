@@ -13,7 +13,7 @@ class RBubbletree(RPackage):
 	"""
 	
 	bioc = "BubbleTree" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BubbleTree_2.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BubbleTree/BubbleTree_2.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BubbleTree_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BubbleTree/BubbleTree_2.32.0.tar.gz"]
 
 	version("2.32.0", md5="84649d9271ce193051e18a7bb56ff58e")
 

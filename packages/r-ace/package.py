@@ -14,7 +14,7 @@ class RAce(RPackage):
 	
 	homepage = "https://github.com/tgac-vumc/ACE"
 	bioc = "ACE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ACE_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ACE/ACE_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ACE_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ACE/ACE_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="dd177150c01a5547ca8edabf82ef85d6")
 

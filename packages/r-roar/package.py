@@ -14,7 +14,7 @@ class RRoar(RPackage):
 	
 	homepage = "https://github.com/vodkatad/roar/"
 	bioc = "roar" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/roar_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/roar/roar_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/roar_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/roar/roar_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="563dcc245ffbc288c2e6ec9a9c138faa")
 

@@ -13,9 +13,9 @@ class RMafdb1kgenomesPhase1Hs37d5(RPackage):
 	"""
 	
 	bioc = "MafDb.1Kgenomes.phase1.hs37d5" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/MafDb.1Kgenomes.phase1.hs37d5_3.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/MafDb.1Kgenomes.phase1.hs37d5/MafDb.1Kgenomes.phase1.hs37d5_3.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.1Kgenomes.phase1.hs37d5_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/MafDb.1Kgenomes.phase1.hs37d5/MafDb.1Kgenomes.phase1.hs37d5_3.10.0.tar.gz"]
 
-	version("3.10.0", md5="ece6b758ca0e1a8a307b5cd5829671f4", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/MafDb.1Kgenomes.phase1.hs37d5_3.10.0.tar.gz")
+	version("3.10.0", md5="ece6b758ca0e1a8a307b5cd5829671f4", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.1Kgenomes.phase1.hs37d5_3.10.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicscores@1.9.6:", type=("build", "run"))

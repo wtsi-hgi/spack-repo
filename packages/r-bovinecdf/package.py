@@ -13,7 +13,7 @@ class RBovinecdf(RPackage):
 	"""
 	
 	bioc = "bovinecdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/bovinecdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/bovinecdf/bovinecdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/bovinecdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/bovinecdf/bovinecdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="e155fc7d5f84ee420d9b250a639af305")
 

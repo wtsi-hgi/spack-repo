@@ -14,7 +14,7 @@ class RCellmixs(RPackage):
 	
 	homepage = "https://github.com/almutlue/CellMixS"
 	bioc = "CellMixS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CellMixS_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CellMixS/CellMixS_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellMixS_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellMixS/CellMixS_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="67910c3dc01e01dc6be6ca3bb76d7794")
 

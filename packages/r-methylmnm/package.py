@@ -13,7 +13,7 @@ class RMethylmnm(RPackage):
 	"""
 	
 	bioc = "methylMnM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/methylMnM_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/methylMnM/methylMnM_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylMnM_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylMnM/methylMnM_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="3d6c83c4fa30daea5b1c91e70f67c6b5")
 

@@ -13,7 +13,7 @@ class RRguatlas4kDb(RPackage):
 	"""
 	
 	bioc = "rguatlas4k.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/rguatlas4k.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/rguatlas4k.db/rguatlas4k.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rguatlas4k.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rguatlas4k.db/rguatlas4k.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="6a360676e08319ec5465c47c758110bd")
 

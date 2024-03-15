@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -31,6 +31,8 @@ class RAdabag(RPackage):
 	4.2 includes the parallel computation option for some of the functions."""
 
 	cran = "adabag"
+
+	license("GPL-2.0-or-later")
 
 	version("5.0", md5="675cf557792d970a2115e0f7a44f4954")
 

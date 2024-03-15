@@ -14,7 +14,7 @@ class RSynapter(RPackage):
 	
 	homepage = "https://lgatto.github.io/synapter/"
 	bioc = "synapter" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/synapter_2.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/synapter/synapter_2.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/synapter_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/synapter/synapter_2.26.0.tar.gz"]
 
 	version("2.26.0", md5="a6c9ade32fbe35d5cb85adc0e9a5322c")
 

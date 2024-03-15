@@ -14,7 +14,7 @@ class RReadqpcr(RPackage):
 	
 	homepage = "http://www.bioconductor.org/packages/release/bioc/html/ReadqPCR.html"
 	bioc = "ReadqPCR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ReadqPCR_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ReadqPCR/ReadqPCR_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ReadqPCR_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ReadqPCR/ReadqPCR_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="b92a0fe88b39abffbc0c46c36a76a8de")
 

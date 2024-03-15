@@ -27,7 +27,7 @@ class RSurrogate(RPackage):
 	homepage = "https://github.com/florianstijven/Surrogate-development"
 	cran = "Surrogate" 
 
-	version("3.2.2", md5="56d2385b4c5648a7fef63c92537edca8")
+	version("3.2.4", md5="c6f66b5da8cd809f4f47946c0be30638")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

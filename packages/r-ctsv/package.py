@@ -14,7 +14,7 @@ class RCtsv(RPackage):
 	
 	homepage = "https://github.com/jingeyu/CTSV"
 	bioc = "CTSV" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CTSV_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CTSV/CTSV_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CTSV_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CTSV/CTSV_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="4a3f8c7b5398449ea01b312ed7da1f43")
 

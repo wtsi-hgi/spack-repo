@@ -13,7 +13,7 @@ class RFlowmatch(RPackage):
 	"""
 	
 	bioc = "flowMatch" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowMatch_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowMatch/flowMatch_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowMatch_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowMatch/flowMatch_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="78b2b9dc87eec35dbc65c59dadb1ffd9")
 

@@ -13,7 +13,7 @@ class RClariomdhumantranscriptclusterDb(RPackage):
 	"""
 	
 	bioc = "clariomdhumantranscriptcluster.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/clariomdhumantranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/clariomdhumantranscriptcluster.db/clariomdhumantranscriptcluster.db_8.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/clariomdhumantranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/clariomdhumantranscriptcluster.db/clariomdhumantranscriptcluster.db_8.8.0.tar.gz"]
 
 	version("8.8.0", md5="80739a70d77ab785231a9367938035a8")
 

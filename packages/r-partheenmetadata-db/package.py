@@ -13,7 +13,7 @@ class RPartheenmetadataDb(RPackage):
 	"""
 	
 	bioc = "PartheenMetaData.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/PartheenMetaData.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/PartheenMetaData.db/PartheenMetaData.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/PartheenMetaData.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/PartheenMetaData.db/PartheenMetaData.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="1c9fd27e13a341b9aba9a235a67ce978")
 

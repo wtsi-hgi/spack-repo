@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,6 +18,8 @@ class REmmeans(RPackage):
 	34(4), 216-221 <doi:10.1080/00031305.1980.10483031>."""
 
 	cran = "emmeans"
+
+	license("GPL-2.0-only OR GPL-3.0-only")
 
 	version("1.10.0", md5="00d07a9e765fe043a85b27fb0f9d36e8")
 

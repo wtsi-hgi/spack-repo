@@ -13,7 +13,7 @@ class RSpacepac(RPackage):
 	"""
 	
 	bioc = "SpacePAC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SpacePAC_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SpacePAC/SpacePAC_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpacePAC_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpacePAC/SpacePAC_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="aa35450e9ef0b3cd7ca3d90262d36ddf")
 

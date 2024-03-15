@@ -14,7 +14,7 @@ class RSpatialfeatureexperiment(RPackage):
 	
 	homepage = "https://github.com/pachterlab/SpatialFeatureExperiment"
 	bioc = "SpatialFeatureExperiment" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SpatialFeatureExperiment_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SpatialFeatureExperiment/SpatialFeatureExperiment_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpatialFeatureExperiment_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpatialFeatureExperiment/SpatialFeatureExperiment_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="56d4ad5144861bea16c2f677e096ac75")
 

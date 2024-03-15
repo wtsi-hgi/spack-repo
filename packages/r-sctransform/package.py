@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,8 @@ class RSctransform(RPackage):
 	<doi:10.1101/576827> for more details."""
 
 	cran = "sctransform"
+
+	license("GPL-3.0-only OR custom")
 
 	version("0.4.1", md5="5db97bf1a8405b03140183ba9a609a65")
 

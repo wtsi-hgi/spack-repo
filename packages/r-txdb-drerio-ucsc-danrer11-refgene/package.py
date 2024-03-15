@@ -13,7 +13,7 @@ class RTxdbDrerioUcscDanrer11Refgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Drerio.UCSC.danRer11.refGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Drerio.UCSC.danRer11.refGene_3.4.6.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Drerio.UCSC.danRer11.refGene/TxDb.Drerio.UCSC.danRer11.refGene_3.4.6.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Drerio.UCSC.danRer11.refGene_3.4.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Drerio.UCSC.danRer11.refGene/TxDb.Drerio.UCSC.danRer11.refGene_3.4.6.tar.gz"]
 
 	version("3.4.6", md5="3d4ded4cec068a807b8b86b31389b677")
 

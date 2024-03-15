@@ -13,7 +13,7 @@ class RTcgacrcmrna(RPackage):
 	"""
 	
 	bioc = "TCGAcrcmRNA" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/TCGAcrcmRNA_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/TCGAcrcmRNA/TCGAcrcmRNA_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TCGAcrcmRNA_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TCGAcrcmRNA/TCGAcrcmRNA_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="bb9300e6ad6e4e5435a31487fdc22ed6")
 

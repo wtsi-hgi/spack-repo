@@ -14,7 +14,7 @@ class RCarnival(RPackage):
 	
 	homepage = "https://github.com/saezlab/CARNIVAL"
 	bioc = "CARNIVAL" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CARNIVAL_2.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CARNIVAL/CARNIVAL_2.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CARNIVAL_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CARNIVAL/CARNIVAL_2.12.0.tar.gz"]
 
 	version("2.12.0", md5="c5457d5d859c16cbec56532338f64fb0")
 

@@ -14,7 +14,7 @@ class RIterativebma(RPackage):
 	
 	homepage = "http://faculty.washington.edu/kayee/research.html"
 	bioc = "iterativeBMA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iterativeBMA_1.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iterativeBMA/iterativeBMA_1.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iterativeBMA_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iterativeBMA/iterativeBMA_1.60.0.tar.gz"]
 
 	version("1.60.0", md5="be5e8911f1a2493bdf001fbe0a7cecfa")
 

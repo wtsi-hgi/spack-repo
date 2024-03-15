@@ -13,9 +13,9 @@ class RBsgenomeAthalianaTair04232008(RPackage):
 	"""
 	
 	bioc = "BSgenome.Athaliana.TAIR.04232008" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Athaliana.TAIR.04232008_1.3.1000.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Athaliana.TAIR.04232008/BSgenome.Athaliana.TAIR.04232008_1.3.1000.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Athaliana.TAIR.04232008_1.3.1000.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Athaliana.TAIR.04232008/BSgenome.Athaliana.TAIR.04232008_1.3.1000.tar.gz"]
 
-	version("1.3.1000", md5="6b8a31a228dbcf4468974f5ec1d98467", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Athaliana.TAIR.04232008_1.3.1000.tar.gz")
+	version("1.3.1000", md5="6b8a31a228dbcf4468974f5ec1d98467", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Athaliana.TAIR.04232008_1.3.1000.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 

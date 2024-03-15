@@ -14,7 +14,7 @@ class RPlanet(RPackage):
 	
 	homepage = "https://victor.rbind.io/planet"
 	bioc = "planet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/planet_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/planet/planet_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/planet_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/planet/planet_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="dbd74bc4dd3583d6ebbd871b251ecd6d")
 

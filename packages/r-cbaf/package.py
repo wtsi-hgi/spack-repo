@@ -13,7 +13,7 @@ class RCbaf(RPackage):
 	"""
 	
 	bioc = "cbaf" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cbaf_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cbaf/cbaf_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cbaf_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cbaf/cbaf_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="e3c093194c8fdcbd04ca035dddeaf5f5")
 

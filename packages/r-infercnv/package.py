@@ -14,7 +14,7 @@ class RInfercnv(RPackage):
 	
 	homepage = "https://github.com/broadinstitute/inferCNV/wiki"
 	bioc = "infercnv" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/infercnv_1.18.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/infercnv/infercnv_1.18.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/infercnv_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/infercnv/infercnv_1.18.1.tar.gz"]
 
 	version("1.18.1", md5="d5bce5518c27e86b3fb26b6fedad5d7b")
 

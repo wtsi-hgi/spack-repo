@@ -13,7 +13,7 @@ class RPvca(RPackage):
 	"""
 	
 	bioc = "pvca" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pvca_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pvca/pvca_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pvca_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pvca/pvca_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="dcc72a578e6ec7d738fab213c4d27e20")
 

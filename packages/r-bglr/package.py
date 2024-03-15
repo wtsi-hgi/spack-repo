@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -10,6 +10,8 @@ class RBglr(RPackage):
 	"""Bayesian Generalized Linear Regression."""
 
 	cran = "BGLR"
+
+	license("GPL-3.0-only")
 
 	version("1.1.1", md5="3d50bee4573929251d2fab3fd841c973")
 

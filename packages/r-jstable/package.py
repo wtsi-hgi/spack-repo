@@ -15,7 +15,7 @@ class RJstable(RPackage):
 	homepage = "https://github.com/jinseob2kim/jstable"
 	cran = "jstable" 
 
-	version("1.1.6", md5="777abf446e10f2e90ad11e6520c248e2")
+	version("1.1.7", md5="495ad623639ba817192dd6ef10280f7a")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-geepack", type=("build", "run"))

@@ -13,7 +13,7 @@ class RMlp(RPackage):
 	"""
 	
 	bioc = "MLP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MLP_1.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MLP/MLP_1.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MLP_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MLP/MLP_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="5ed5a850807679b4baa1c5d4d88f48d6")
 

@@ -14,7 +14,7 @@ class RRtrm(RPackage):
 	
 	homepage = "https://github.com/ddiez/rTRM"
 	bioc = "rTRM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rTRM_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rTRM/rTRM_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rTRM_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rTRM/rTRM_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="2804488949a044166efe737d4e25d9ac")
 

@@ -14,7 +14,7 @@ class RHapfabia(RPackage):
 	
 	homepage = "http://www.bioinf.jku.at/software/hapFabia/hapFabia.html"
 	bioc = "hapFabia" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/hapFabia_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/hapFabia/hapFabia_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hapFabia_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hapFabia/hapFabia_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="a14370aec9e86245541aea68b90c3812")
 

@@ -22,12 +22,12 @@ class RBayesdfa(RPackage):
 	homepage = "https://fate-ewi.github.io/bayesdfa/"
 	cran = "bayesdfa" 
 
-	version("1.3.2", md5="72bb6ea599e3bda53de3bc99a89af0fc")
+	version("1.3.3", md5="fab76609875a5d2454b9bf4b49c0d998")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-loo@2:", type=("build", "run"))
+	depends_on("r-loo@2.7:", type=("build", "run"))
 	depends_on("r-mgcv@1.8.13:", type=("build", "run"))
 	depends_on("r-rcpp@0.12:", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))

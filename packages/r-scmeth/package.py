@@ -13,7 +13,7 @@ class RScmeth(RPackage):
 	"""
 	
 	bioc = "scmeth" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scmeth_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scmeth/scmeth_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scmeth_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scmeth/scmeth_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="52beac81d58da27e01cc5e1a0b6584b2")
 

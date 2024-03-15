@@ -13,9 +13,9 @@ class RCancer(RPackage):
 	"""
 	
 	bioc = "canceR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/canceR_1.36.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/canceR/canceR_1.36.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/canceR_1.36.7.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/canceR/canceR_1.36.7.tar.gz"]
 
-	version("1.36.3", md5="2e044cafedb167227aa757d494a7cb1f")
+	version("1.36.7", md5="02d656dd772b36d0ef1fb08e1357ce2a")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-cbioportaldata", type=("build", "run"))
@@ -30,6 +30,8 @@ class RCancer(RPackage):
 	depends_on("r-phenotest", type=("build", "run"))
 	depends_on("r-circlize", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))
+	depends_on("r-tidyr", type=("build", "run"))
+	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-r-oo", type=("build", "run"))
 	depends_on("r-r-methodss3", type=("build", "run"))
 	depends_on("tktable", type=("build", "link", "run"))

@@ -13,7 +13,7 @@ class RMetabcombiner(RPackage):
 	"""
 	
 	bioc = "metabCombiner" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/metabCombiner_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/metabCombiner/metabCombiner_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metabCombiner_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metabCombiner/metabCombiner_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="9840a8f7cdc657e21d3ebc2a7b6b68b2")
 

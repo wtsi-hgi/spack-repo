@@ -14,7 +14,7 @@ class RSeqHotspot(RPackage):
 	
 	homepage = "https://github.com/sydney-grant/seq.hotSPOT"
 	bioc = "seq.hotSPOT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/seq.hotSPOT_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/seq.hotSPOT/seq.hotSPOT_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seq.hotSPOT_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seq.hotSPOT/seq.hotSPOT_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="37e04dc7e1bb05af58c50cb7701388c7")
 

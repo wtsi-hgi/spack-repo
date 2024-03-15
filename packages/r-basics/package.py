@@ -14,7 +14,7 @@ class RBasics(RPackage):
 	
 	homepage = "https://github.com/catavallejos/BASiCS"
 	bioc = "BASiCS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BASiCS_2.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BASiCS/BASiCS_2.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BASiCS_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BASiCS/BASiCS_2.14.0.tar.gz"]
 
 	version("2.14.0", md5="1252fa180b0da21a4a22e3400550ab93")
 

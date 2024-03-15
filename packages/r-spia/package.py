@@ -14,7 +14,7 @@ class RSpia(RPackage):
 	
 	homepage = "http://bioinformatics.oxfordjournals.org/cgi/reprint/btn577v1"
 	bioc = "SPIA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SPIA_2.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SPIA/SPIA_2.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SPIA_2.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SPIA/SPIA_2.54.0.tar.gz"]
 
 	version("2.54.0", md5="1a03ed18c41344eb23d6836cb337b9dc")
 

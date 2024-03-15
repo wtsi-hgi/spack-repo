@@ -13,7 +13,7 @@ class RPdAg(RPackage):
 	"""
 	
 	bioc = "pd.ag" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.ag_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.ag/pd.ag_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.ag_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.ag/pd.ag_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="21fb288536568ff010ad4847b671f9d6")
 

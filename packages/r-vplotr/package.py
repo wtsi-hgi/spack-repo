@@ -14,7 +14,7 @@ class RVplotr(RPackage):
 	
 	homepage = "https://github.com/js2264/VplotR"
 	bioc = "VplotR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/VplotR_1.12.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/VplotR/VplotR_1.12.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VplotR_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VplotR/VplotR_1.12.1.tar.gz"]
 
 	version("1.12.1", md5="91af0fd39cd72be94b7f5d674d9e494f")
 

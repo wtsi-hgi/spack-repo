@@ -13,7 +13,7 @@ class RGuideseq(RPackage):
 	"""
 	
 	bioc = "GUIDEseq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GUIDEseq_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GUIDEseq/GUIDEseq_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GUIDEseq_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GUIDEseq/GUIDEseq_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="fe01afa9546bc7bdc1fbeea8c8bda8db")
 

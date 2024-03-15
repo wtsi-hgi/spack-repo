@@ -13,7 +13,7 @@ class RMatrixqcvis(RPackage):
 	"""
 	
 	bioc = "MatrixQCvis" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MatrixQCvis_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MatrixQCvis/MatrixQCvis_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MatrixQCvis_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MatrixQCvis/MatrixQCvis_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="21f91ace512d3afadd5fe42e93ba7fe9")
 

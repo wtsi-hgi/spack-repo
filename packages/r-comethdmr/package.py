@@ -14,7 +14,7 @@ class RComethdmr(RPackage):
 	
 	homepage = "https://github.com/TransBioInfoLab/coMethDMR"
 	bioc = "coMethDMR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/coMethDMR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/coMethDMR/coMethDMR_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/coMethDMR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/coMethDMR/coMethDMR_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="0a6229d90868a4a60eb0f72c4499d1fc")
 

@@ -7,28 +7,29 @@ from spack.package import *
 
 
 class RCryptoquotes(RPackage):
-	"""A Streamlined Access to OHLC-v Market Data and Sentiment
-Indicators
+	"""A Streamlined Access to Cryptocurrency OHLC-V Market Data and
+Sentiment Indicators
 
-	This high-level API client offers a streamlined access to comprehensive cryptocurrency market data from major exchanges. 
-  It features robust OHLC-V (Open, High, Low, Close, Volume) candle data with flexible granularity, ranging from seconds to months, and includes insightful sentiment indicators. 
-  By aggregating data directly from leading exchanges, this package ensures a reliable and stable flow of market information, eliminating the need for complex, low-level API interactions.
+	
+  This high-level API client offers a streamlined access to public cryptocurrency market data and sentiment indicators. It features OHLC-V (Open, High, Low, Close, Volume) that comes
+  with granularity ranging from seconds to months and essential sentiment indicators to develop and backtest trading strategies, or conduct detailed market analysis. By interacting directly with
+  the major cryptocurrency exchanges this package ensures a reliable, and stable, flow of market information, eliminating the need for complex, low-level API interactions or webcrawlers.
 	"""
 	
 	homepage = "https://serkor1.github.io/cryptoQuotes/"
 	cran = "cryptoQuotes" 
 
-	version("1.2.1", md5="2fd282048d29a804d5642b61a6f75667")
+	version("1.3.0", md5="80df5f901e380db33eebb13e499fe858")
 
 	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-cli", type=("build", "run"))
-	depends_on("r-curl@5.1:", type=("build", "run"))
-	depends_on("r-httr2", type=("build", "run"))
-	depends_on("r-lifecycle", type=("build", "run"))
-	depends_on("r-magrittr@2.0.3:", type=("build", "run"))
-	depends_on("r-plotly@4.10.2:", type=("build", "run"))
-	depends_on("r-rcolorbrewer", type=("build", "run"))
-	depends_on("r-rlang@1.1.1:", type=("build", "run"))
-	depends_on("r-ttr", type=("build", "run"))
-	depends_on("r-xts@0.13.1:", type=("build", "run"))
+	depends_on("r-cli@3.6.2:", type=("build", "run"))
+	depends_on("r-conflicted@1.2:", type=("build", "run"))
+	depends_on("r-curl@5.2:", type=("build", "run"))
+	depends_on("r-jsonlite@1.8.8:", type=("build", "run"))
+	depends_on("r-lifecycle@1.0.4:", type=("build", "run"))
+	depends_on("r-paletteer@1.6:", type=("build", "run"))
+	depends_on("r-plotly@4.10.4:", type=("build", "run"))
+	depends_on("r-rlang@1.1.3:", type=("build", "run"))
+	depends_on("r-ttr@0.24.4:", type=("build", "run"))
+	depends_on("r-xts@0.13.2:", type=("build", "run"))
 	depends_on("r-zoo@1.8.12:", type=("build", "run"))

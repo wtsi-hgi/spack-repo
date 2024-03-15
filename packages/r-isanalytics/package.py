@@ -14,7 +14,7 @@ class RIsanalytics(RPackage):
 	
 	homepage = "https://calabrialab.github.io/ISAnalytics"
 	bioc = "ISAnalytics" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ISAnalytics_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ISAnalytics/ISAnalytics_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ISAnalytics_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ISAnalytics/ISAnalytics_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="d1962980b18dd3ff8fdcc1bb0c855eaf")
 

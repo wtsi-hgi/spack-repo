@@ -14,7 +14,7 @@ class RNetpathminer(RPackage):
 	
 	homepage = "https://github.com/ahmohamed/NetPathMiner"
 	bioc = "NetPathMiner" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/NetPathMiner_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/NetPathMiner/NetPathMiner_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NetPathMiner_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NetPathMiner/NetPathMiner_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="91cc0601961f682fcf1a2bed61eb6438")
 

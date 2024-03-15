@@ -13,7 +13,7 @@ class RBacon(RPackage):
 	"""
 	
 	bioc = "bacon" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/bacon_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/bacon/bacon_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bacon_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bacon/bacon_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="3757e896d5a8253845a21e37e555044a")
 

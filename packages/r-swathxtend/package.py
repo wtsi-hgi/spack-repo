@@ -13,7 +13,7 @@ class RSwathxtend(RPackage):
 	"""
 	
 	bioc = "SwathXtend" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SwathXtend_2.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SwathXtend/SwathXtend_2.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SwathXtend_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SwathXtend/SwathXtend_2.24.0.tar.gz"]
 
 	version("2.24.0", md5="64b04f78ca92078b9ad63cee65bf012f")
 

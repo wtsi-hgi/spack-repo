@@ -13,7 +13,7 @@ class RFlowclean(RPackage):
 	"""
 	
 	bioc = "flowClean" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowClean_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowClean/flowClean_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowClean_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowClean/flowClean_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="77f86a84c8ed6dbd2df24d9458765205")
 

@@ -13,7 +13,7 @@ class RProdata(RPackage):
 	"""
 	
 	bioc = "ProData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/ProData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/ProData/ProData_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ProData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ProData/ProData_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="73f3449db86899c83d61173f6bd02a79")
 

@@ -19,7 +19,7 @@ class RSecr(RPackage):
 	homepage = "https://www.otago.ac.nz/density/"
 	cran = "secr" 
 
-	version("4.6.5", md5="9eb1f3fc439c67efd8830a1e199022be")
+	version("4.6.6", md5="5815a808aa311e42b46de1156fec135e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))

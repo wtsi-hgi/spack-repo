@@ -13,7 +13,7 @@ class RPdZebgene10St(RPackage):
 	"""
 	
 	bioc = "pd.zebgene.1.0.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.zebgene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.zebgene.1.0.st/pd.zebgene.1.0.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.zebgene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.zebgene.1.0.st/pd.zebgene.1.0.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="54fcf757b8069e95dd7e2f3ff74ae050")
 

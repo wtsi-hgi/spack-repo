@@ -9,7 +9,7 @@ from spack.package import *
 class RClinpk(RPackage):
 	"""Clinical Pharmacokinetics Toolkit
 
-	Calculates equations commonly used in clinical
+	Provides equations commonly used in clinical
         pharmacokinetics and clinical pharmacology, such as equations
         for dose individualization, compartmental pharmacokinetics,
         drug exposure, anthropomorphic calculations, clinical
@@ -21,5 +21,5 @@ class RClinpk(RPackage):
 	homepage = "https://github.com/InsightRX/clinPK"
 	cran = "clinPK" 
 
-	version("0.11.1", md5="7fcc89631f75a382d91acb300febfc53")
+	version("0.13.0", md5="f4b5b44161c5257fb5cf218cbea1706c")
 

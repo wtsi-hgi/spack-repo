@@ -20,19 +20,20 @@ class RDeeptime(RPackage):
 	homepage = "https://github.com/willgearty/deeptime"
 	cran = "deeptime" 
 
-	version("1.0.1", md5="dc8668e067eed6a86eaa28eabea92c06")
+	version("1.1.1", md5="9a8b54f8b22d4af384414a3a5319376b")
 
 	depends_on("r@3.4:", type=("build", "run"))
-	depends_on("r-ggplot2@3.3:", type=("build", "run"))
+	depends_on("r-ggplot2@3.4:", type=("build", "run"))
 	depends_on("r-ggnewscale", type=("build", "run"))
 	depends_on("r-ggforce", type=("build", "run"))
 	depends_on("r-gridextra", type=("build", "run"))
 	depends_on("r-gtable", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
+	depends_on("r-rlang@1.1:", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))
 	depends_on("r-ggfittext", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-phytools", type=("build", "run"))
 	depends_on("r-lifecycle", type=("build", "run"))
+	depends_on("r-geomtextpath", type=("build", "run"))

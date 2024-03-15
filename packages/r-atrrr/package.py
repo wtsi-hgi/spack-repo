@@ -10,14 +10,14 @@ class RAtrrr(RPackage):
 	"""Wrapper for the 'AT' Protocol Behind 'Bluesky'
 
 	Wraps the 'AT' Protocol (Authenticated Transfer Protocol) behind 
-    'Bluesky' <https://blueskyweb.xyz>. Functions can be used for, among others, 
+    'Bluesky' <https://bsky.social>. Functions can be used for, among others, 
     retrieving posts and followers from the network or posting content.
 	"""
 	
 	homepage = "https://jbgruber.github.io/atrrr/"
 	cran = "atrrr" 
 
-	version("0.0.2", md5="f6c500d23a8bc3eda548b9f6f801f19c")
+	version("0.0.3", md5="bf02d61096aa96e7a762e2b6bc979241")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

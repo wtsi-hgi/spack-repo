@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,7 @@ class RMakecdfenv(RPackage):
 	automatically loads that environment."""
 
 	bioc = "makecdfenv"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/makecdfenv_1.78.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/makecdfenv/makecdfenv_1.78.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/makecdfenv_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/makecdfenv/makecdfenv_1.78.0.tar.gz"]
 
 	version("1.78.0", md5="b5c8877fd5b09fbb4d3656490fa7eb64")
 

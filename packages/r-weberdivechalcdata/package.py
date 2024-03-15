@@ -14,7 +14,7 @@ class RWeberdivechalcdata(RPackage):
 	
 	homepage = "https://github.com/lmweber/WeberDivechaLCdata"
 	bioc = "WeberDivechaLCdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/WeberDivechaLCdata_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/WeberDivechaLCdata/WeberDivechaLCdata_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/WeberDivechaLCdata_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/WeberDivechaLCdata/WeberDivechaLCdata_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="3b75c693f86ed228e2b7816872cfe4b7")
 

@@ -13,7 +13,7 @@ class RMaskbad(RPackage):
 	"""
 	
 	bioc = "maskBAD" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/maskBAD_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/maskBAD/maskBAD_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maskBAD_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maskBAD/maskBAD_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="a5fc8482a4370f32fde7bc2b3e302c77")
 

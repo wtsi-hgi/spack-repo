@@ -14,7 +14,7 @@ class RPaxtoolsr(RPackage):
 	
 	homepage = "https://github.com/BioPAX/paxtoolsr"
 	bioc = "paxtoolsr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/paxtoolsr_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/paxtoolsr/paxtoolsr_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/paxtoolsr_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/paxtoolsr/paxtoolsr_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="2ed785fb7d7859ff53d143baba8ff73d")
 

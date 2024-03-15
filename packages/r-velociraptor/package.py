@@ -14,7 +14,7 @@ class RVelociraptor(RPackage):
 	
 	homepage = "https://github.com/kevinrue/velociraptor"
 	bioc = "velociraptor" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/velociraptor_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/velociraptor/velociraptor_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/velociraptor_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/velociraptor/velociraptor_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="d2c16e280b1957ef3989e5d02f4f0b5d")
 

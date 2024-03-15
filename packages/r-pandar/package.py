@@ -13,7 +13,7 @@ class RPandar(RPackage):
 	"""
 	
 	bioc = "pandaR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pandaR_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pandaR/pandaR_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pandaR_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pandaR/pandaR_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="203422d8a9df096677530f57bffe9e9c")
 

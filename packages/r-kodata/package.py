@@ -13,7 +13,7 @@ class RKodata(RPackage):
 	"""
 	
 	bioc = "KOdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/KOdata_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/KOdata/KOdata_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/KOdata_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/KOdata/KOdata_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="40e099053eae889ad66256a94427ac54")
 

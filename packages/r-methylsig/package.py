@@ -13,7 +13,7 @@ class RMethylsig(RPackage):
 	"""
 	
 	bioc = "methylSig" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/methylSig_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/methylSig/methylSig_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylSig_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylSig/methylSig_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="a5d8d4c2fb5ed16074fa30a0361fd249")
 

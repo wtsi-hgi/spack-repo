@@ -14,7 +14,7 @@ class RZellkonverter(RPackage):
 	
 	homepage = "https://github.com/theislab/zellkonverter"
 	bioc = "zellkonverter" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/zellkonverter_1.12.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/zellkonverter/zellkonverter_1.12.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/zellkonverter_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/zellkonverter/zellkonverter_1.12.1.tar.gz"]
 
 	version("1.12.1", md5="5ba05cd62d95057a39c194a5084c551a")
 

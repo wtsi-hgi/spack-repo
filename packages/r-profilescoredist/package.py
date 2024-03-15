@@ -13,7 +13,7 @@ class RProfilescoredist(RPackage):
 	"""
 	
 	bioc = "profileScoreDist" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/profileScoreDist_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/profileScoreDist/profileScoreDist_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/profileScoreDist_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/profileScoreDist/profileScoreDist_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="59d0f0bd369e20aa7be8352e5cf46830")
 

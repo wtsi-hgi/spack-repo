@@ -13,7 +13,7 @@ class RXcoredata(RPackage):
 	"""
 	
 	bioc = "xcoredata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/xcoredata_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/xcoredata/xcoredata_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/xcoredata_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/xcoredata/xcoredata_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="214626bfcbb5d66445324f6e367142c7")
 

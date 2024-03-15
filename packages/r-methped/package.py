@@ -13,7 +13,7 @@ class RMethped(RPackage):
 	"""
 	
 	bioc = "MethPed" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MethPed_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MethPed/MethPed_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MethPed_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MethPed/MethPed_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="57b633da5d8548342b0a2071efe3c04d")
 

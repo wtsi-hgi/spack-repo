@@ -13,7 +13,7 @@ class REatonetalchipseq(RPackage):
 	"""
 	
 	bioc = "EatonEtAlChIPseq" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/EatonEtAlChIPseq_0.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/EatonEtAlChIPseq/EatonEtAlChIPseq_0.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/EatonEtAlChIPseq_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/EatonEtAlChIPseq/EatonEtAlChIPseq_0.40.0.tar.gz"]
 
 	version("0.40.0", md5="e7695c3761d5f3d41dec21b0c8b50947")
 

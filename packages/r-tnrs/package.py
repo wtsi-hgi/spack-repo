@@ -14,7 +14,7 @@ class RTnrs(RPackage):
 	
 	cran = "TNRS" 
 
-	version("0.3.4", md5="717f07cf8e3b065a3c7052b69ca7e09c")
+	version("0.3.5", md5="a76b8c9f4414f967412b50205964abc2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

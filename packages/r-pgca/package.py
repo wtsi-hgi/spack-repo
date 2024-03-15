@@ -13,7 +13,7 @@ class RPgca(RPackage):
 	"""
 	
 	bioc = "pgca" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pgca_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pgca/pgca_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pgca_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pgca/pgca_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="43c58c5b347ebf060a9e6afdc8aa8e93")
 

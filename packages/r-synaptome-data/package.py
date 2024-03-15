@@ -13,7 +13,7 @@ class RSynaptomeData(RPackage):
 	"""
 	
 	bioc = "synaptome.data" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/synaptome.data_0.99.6.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/synaptome.data/synaptome.data_0.99.6.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/synaptome.data_0.99.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/synaptome.data/synaptome.data_0.99.6.tar.gz"]
 
 	version("0.99.6", md5="4388c63219782a9aa3e384fcdb51ed47")
 

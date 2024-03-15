@@ -14,7 +14,7 @@ class ROpossom(RPackage):
 	
 	homepage = "http://som.izbi.uni-leipzig.de"
 	bioc = "oposSOM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/oposSOM_2.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/oposSOM/oposSOM_2.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oposSOM_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oposSOM/oposSOM_2.20.0.tar.gz"]
 
 	version("2.20.0", md5="a5660824c13db2ae8bf7b79aa7c529f5")
 

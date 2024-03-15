@@ -14,7 +14,7 @@ class RSbgnview(RPackage):
 	
 	homepage = "https://github.com/datapplab/SBGNview"
 	bioc = "SBGNview" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SBGNview_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SBGNview/SBGNview_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SBGNview_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SBGNview/SBGNview_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="785b51f08ce7b40f23b6e9168ce1d1af")
 

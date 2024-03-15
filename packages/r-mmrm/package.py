@@ -27,7 +27,7 @@ class RMmrm(RPackage):
 	homepage = "https://openpharma.github.io/mmrm/"
 	cran = "mmrm" 
 
-	version("0.3.10", md5="2de54950b4f18ead8802f637b819ba06")
+	version("0.3.11", md5="0f1ac6e2c6a02c1d07a420fff83a520e")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-checkmate@2:", type=("build", "run"))

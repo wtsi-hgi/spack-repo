@@ -13,7 +13,7 @@ class RSamspectral(RPackage):
 	"""
 	
 	bioc = "SamSPECTRAL" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SamSPECTRAL_1.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SamSPECTRAL/SamSPECTRAL_1.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SamSPECTRAL_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SamSPECTRAL/SamSPECTRAL_1.56.0.tar.gz"]
 
 	version("1.56.0", md5="2724bc54054c093fac88a672a6b173d6")
 

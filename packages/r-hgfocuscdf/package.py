@@ -13,7 +13,7 @@ class RHgfocuscdf(RPackage):
 	"""
 	
 	bioc = "hgfocuscdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hgfocuscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hgfocuscdf/hgfocuscdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgfocuscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgfocuscdf/hgfocuscdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="9883e53bfd9ddb9ad5f3a9c2e47bbd2c")
 

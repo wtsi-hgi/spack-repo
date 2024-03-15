@@ -13,7 +13,7 @@ class RHitc(RPackage):
 	"""
 	
 	bioc = "HiTC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HiTC_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HiTC/HiTC_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiTC_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiTC/HiTC_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="e530516c0386e2e9bb6ff9afbed5893f")
 

@@ -13,7 +13,7 @@ class RFastqcleaner(RPackage):
 	"""
 	
 	bioc = "FastqCleaner" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/FastqCleaner_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/FastqCleaner/FastqCleaner_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FastqCleaner_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FastqCleaner/FastqCleaner_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="bace77f4e33bd7fe58cbbadaefd896d8")
 

@@ -13,7 +13,7 @@ class REcolitk(RPackage):
 	"""
 	
 	bioc = "ecolitk" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ecolitk_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ecolitk/ecolitk_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ecolitk_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ecolitk/ecolitk_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="58667dc1f403986935c98a97f2e0b9e2")
 

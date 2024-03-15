@@ -7,7 +7,8 @@ from spack.package import *
 
 
 class RDuckdbfs(RPackage):
-	"""High Performance Remote File System Access Using 'duckdb'
+	"""High Performance Remote File System, Database and 'Geospatial'
+Access Using 'duckdb'
 
 	Provides friendly wrappers for creating 'duckdb'-backed connections
   to tabular datasets ('csv', parquet, etc) on local or remote file systems.
@@ -18,9 +19,11 @@ class RDuckdbfs(RPackage):
 	homepage = "https://github.com/cboettig/duckdbfs"
 	cran = "duckdbfs" 
 
-	version("0.0.3", md5="5e309df740c691dde152c44980570a49")
+	version("0.0.4", md5="30b4da920ef74b18f984ce4225d3faf8")
 
 	depends_on("r-dbi", type=("build", "run"))
 	depends_on("r-dbplyr", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-duckdb@0.8.1:", type=("build", "run"))
+	depends_on("r-duckdb@0.9.2:", type=("build", "run"))
+	depends_on("r-fs", type=("build", "run"))
+	depends_on("r-glue", type=("build", "run"))

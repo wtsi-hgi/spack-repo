@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,6 +16,8 @@ class RMetap(RPackage):
 	to replicate published results; and a routine for graphical display."""
 
 	cran = "metap"
+
+	license("GPL-2.0-only")
 
 	version("1.9", md5="56a203f1459ed188dd3329bb9268f0d6")
 

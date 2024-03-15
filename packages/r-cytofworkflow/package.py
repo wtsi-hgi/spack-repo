@@ -14,7 +14,7 @@ class RCytofworkflow(RPackage):
 	
 	homepage = "https://github.com/markrobinsonuzh/cytofWorkflow"
 	bioc = "cytofWorkflow" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/cytofWorkflow_1.26.1.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/cytofWorkflow/cytofWorkflow_1.26.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/cytofWorkflow_1.26.1.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/cytofWorkflow/cytofWorkflow_1.26.1.tar.gz"]
 
 	version("1.26.1", md5="696c26ef3e6e747cb107b61bc22fc795")
 

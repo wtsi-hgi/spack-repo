@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -25,6 +25,8 @@ class RFuture(RPackage):
 	to tweak existing code to make use of futures."""
 
 	cran = "future"
+
+	license("LGPL-2.1-or-later")
 
 	version("1.33.1", md5="71fb731f2ea10ca8e2d9767c203959f2")
 

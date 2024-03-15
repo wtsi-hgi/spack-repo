@@ -12,10 +12,10 @@ class RTidyaml(RPackage):
 	The goal of this package will be to provide a simple interface for automatic machine learning that fits the 'tidymodels' framework. The intention is to work for regression and classification problems with a simple verb framework.
 	"""
 	
-	homepage = "https://github.com/spsanderson/tidyAML"
+	homepage = "https://www.spsanderson.com/tidyAML/"
 	cran = "tidyAML" 
 
-	version("0.0.4", md5="ef987f739f292a818e9b384d2bc07005")
+	version("0.0.5", md5="648ba3eceb5b71d18f73b62373095724")
 
 	depends_on("r-parsnip", type=("build", "run"))
 	depends_on("r@4.1:", type=("build", "run"))
@@ -28,3 +28,5 @@ class RTidyaml(RPackage):
 	depends_on("r-workflowsets", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))
+	depends_on("r-ggplot2", type=("build", "run"))
+	depends_on("r-magrittr", type=("build", "run"))

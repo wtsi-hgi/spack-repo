@@ -14,7 +14,7 @@ class RRopls(RPackage):
 	
 	homepage = "https://doi.org/10.1021/acs.jproteome.5b00354"
 	bioc = "ropls" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ropls_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ropls/ropls_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ropls_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ropls/ropls_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="a1c4a1710eb179bb29f3831a5fe80849")
 

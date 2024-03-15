@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,8 @@ class RPatchwork(RPackage):
 	this need (but with a different approach) are 'gridExtra' and 'cowplot'."""
 
 	cran = "patchwork"
+
+	license("MIT")
 
 	version("1.2.0", md5="3cf908b531cf600341be463a542a6e6e")
 

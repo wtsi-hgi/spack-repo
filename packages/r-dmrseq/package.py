@@ -13,7 +13,7 @@ class RDmrseq(RPackage):
 	"""
 	
 	bioc = "dmrseq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/dmrseq_1.22.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/dmrseq/dmrseq_1.22.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dmrseq_1.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dmrseq/dmrseq_1.22.1.tar.gz"]
 
 	version("1.22.1", md5="12917aa3916bb932e0f7be6ca29c8cc8")
 

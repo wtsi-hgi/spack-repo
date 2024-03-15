@@ -13,7 +13,7 @@ class RHubpub(RPackage):
 	"""
 	
 	bioc = "HubPub" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HubPub_1.10.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HubPub/HubPub_1.10.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HubPub_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HubPub/HubPub_1.10.1.tar.gz"]
 
 	version("1.10.1", md5="b69a4d04cd126e624ce9513040bc1abe")
 

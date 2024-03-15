@@ -13,7 +13,7 @@ class ROrgMxanthusDb(RPackage):
 	"""
 	
 	bioc = "org.Mxanthus.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/org.Mxanthus.db_1.0.27.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/org.Mxanthus.db/org.Mxanthus.db_1.0.27.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Mxanthus.db_1.0.27.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.Mxanthus.db/org.Mxanthus.db_1.0.27.tar.gz"]
 
 	version("1.0.27", md5="e493814c41401de383b4f6e0f3d39619")
 

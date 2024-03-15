@@ -25,7 +25,7 @@ class RPatientprofilesvis(RPackage):
 	homepage = "https://github.com/openanalytics/patientProfilesVis"
 	cran = "patientProfilesVis" 
 
-	version("2.0.6", md5="93e8c02e893e0a399c12365f47acbd11")
+	version("2.0.7", md5="b8de518d693870f7c3d2455419150346")
 
 	depends_on("r-clinutils", type=("build", "run"))
 	depends_on("r-ggplot2@3:", type=("build", "run"))

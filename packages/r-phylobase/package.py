@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,6 +13,8 @@ class RPhylobase(RPackage):
 	trees and trait data."""
 
 	cran = "phylobase"
+
+	license("GPL-2.0-or-later")
 
 	version("0.8.12", md5="f2177d31af1389129d811d032bdf707a")
 

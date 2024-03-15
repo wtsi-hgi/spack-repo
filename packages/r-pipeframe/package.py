@@ -14,7 +14,7 @@ class RPipeframe(RPackage):
 	
 	homepage = "https://github.com/wzthu/pipeFrame"
 	bioc = "pipeFrame" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pipeFrame_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pipeFrame/pipeFrame_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pipeFrame_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pipeFrame/pipeFrame_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="142f8d049aa03cec36050c2b0ccc87d9")
 

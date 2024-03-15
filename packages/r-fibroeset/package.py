@@ -13,7 +13,7 @@ class RFibroeset(RPackage):
 	"""
 	
 	bioc = "fibroEset" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/fibroEset_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/fibroEset/fibroEset_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/fibroEset_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/fibroEset/fibroEset_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="cbc13cc5c4ac4f6445dc69383ad183ff")
 

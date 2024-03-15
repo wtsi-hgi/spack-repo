@@ -13,7 +13,7 @@ class RPdEcoli(RPackage):
 	"""
 	
 	bioc = "pd.ecoli" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.ecoli_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.ecoli/pd.ecoli_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.ecoli_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.ecoli/pd.ecoli_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="077e91b2567a32780305f0fb6b126fe9")
 

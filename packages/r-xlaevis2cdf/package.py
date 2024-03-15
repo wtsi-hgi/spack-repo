@@ -13,7 +13,7 @@ class RXlaevis2cdf(RPackage):
 	"""
 	
 	bioc = "xlaevis2cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/xlaevis2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/xlaevis2cdf/xlaevis2cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/xlaevis2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/xlaevis2cdf/xlaevis2cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="9e4a80d66397299b4e66a8d6715ca4aa")
 

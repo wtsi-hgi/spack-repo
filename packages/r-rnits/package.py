@@ -13,7 +13,7 @@ class RRnits(RPackage):
 	"""
 	
 	bioc = "Rnits" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Rnits_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Rnits/Rnits_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rnits_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rnits/Rnits_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="4b767809cee3875eb2f7f991fba83771")
 

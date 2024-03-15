@@ -14,7 +14,7 @@ class RGpa(RPackage):
 	
 	homepage = "http://dongjunchung.github.io/GPA/"
 	bioc = "GPA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GPA_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GPA/GPA_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GPA_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GPA/GPA_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="2c1f0f3436c036a3e098d7780deb7282")
 

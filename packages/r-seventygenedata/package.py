@@ -14,7 +14,7 @@ class RSeventygenedata(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/release/data/experiment/html/seventyGeneData.html"
 	bioc = "seventyGeneData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/seventyGeneData_1.38.2.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/seventyGeneData/seventyGeneData_1.38.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/seventyGeneData_1.38.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/seventyGeneData/seventyGeneData_1.38.2.tar.gz"]
 
 	version("1.38.2", md5="20fbac8869adfe019eeef340a209da1d")
 

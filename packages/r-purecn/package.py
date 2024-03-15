@@ -14,7 +14,7 @@ class RPurecn(RPackage):
 	
 	homepage = "https://github.com/lima1/PureCN"
 	bioc = "PureCN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PureCN_2.8.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PureCN/PureCN_2.8.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PureCN_2.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PureCN/PureCN_2.8.1.tar.gz"]
 
 	version("2.8.1", md5="d668ed7c332244073d26762dd291004f")
 

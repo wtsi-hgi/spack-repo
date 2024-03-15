@@ -13,7 +13,7 @@ class RStreamer(RPackage):
 	"""
 	
 	bioc = "Streamer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Streamer_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Streamer/Streamer_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Streamer_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Streamer/Streamer_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="d41ea52d04a44b0705846078ffe3b1e7")
 

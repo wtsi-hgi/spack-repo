@@ -14,7 +14,7 @@ class RRnamodrRibomethseq(RPackage):
 	
 	homepage = "https://github.com/FelixErnst/RNAmodR.RiboMethSeq"
 	bioc = "RNAmodR.RiboMethSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RNAmodR.RiboMethSeq_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RNAmodR.RiboMethSeq/RNAmodR.RiboMethSeq_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNAmodR.RiboMethSeq_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNAmodR.RiboMethSeq/RNAmodR.RiboMethSeq_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="fc22b6332a4e89e33ff8921d9e54aac7")
 

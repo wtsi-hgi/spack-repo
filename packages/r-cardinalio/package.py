@@ -14,7 +14,7 @@ class RCardinalio(RPackage):
 	
 	homepage = "http://www.cardinalmsi.org"
 	bioc = "CardinalIO" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CardinalIO_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CardinalIO/CardinalIO_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CardinalIO_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CardinalIO/CardinalIO_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="746846f9fda38de9fe2c3dd4c49c18e1")
 

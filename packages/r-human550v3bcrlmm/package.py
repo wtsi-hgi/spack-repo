@@ -13,7 +13,7 @@ class RHuman550v3bcrlmm(RPackage):
 	"""
 	
 	bioc = "human550v3bCrlmm" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/human550v3bCrlmm_1.0.4.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/human550v3bCrlmm/human550v3bCrlmm_1.0.4.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/human550v3bCrlmm_1.0.4.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/human550v3bCrlmm/human550v3bCrlmm_1.0.4.tar.gz"]
 
 	version("1.0.4", md5="20e6b008fab5e1084354c87ad50d18a8")
 

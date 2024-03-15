@@ -14,7 +14,7 @@ class RMiqc(RPackage):
 	
 	homepage = "https://github.com/greenelab/miQC"
 	bioc = "miQC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/miQC_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/miQC/miQC_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miQC_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miQC/miQC_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="e1246c2b5dcb83059d6887b35db543a0")
 

@@ -13,7 +13,7 @@ class RBiseq(RPackage):
 	"""
 	
 	bioc = "BiSeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiSeq_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiSeq/BiSeq_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiSeq_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiSeq/BiSeq_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="76a46bdea0a83b3ead6a8ee87d6000ac")
 

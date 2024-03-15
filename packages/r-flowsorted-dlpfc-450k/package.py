@@ -13,7 +13,7 @@ class RFlowsortedDlpfc450k(RPackage):
 	"""
 	
 	bioc = "FlowSorted.DLPFC.450k" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/FlowSorted.DLPFC.450k_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/FlowSorted.DLPFC.450k/FlowSorted.DLPFC.450k_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FlowSorted.DLPFC.450k_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FlowSorted.DLPFC.450k/FlowSorted.DLPFC.450k_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="ad95a51f7e8bcf7c0bec6dda80eb0a92")
 

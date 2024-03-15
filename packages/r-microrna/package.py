@@ -13,7 +13,7 @@ class RMicrorna(RPackage):
 	"""
 	
 	bioc = "microRNA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/microRNA_1.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/microRNA/microRNA_1.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/microRNA_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/microRNA/microRNA_1.60.0.tar.gz"]
 
 	version("1.60.0", md5="04b7af542581242a8e6ba5d4f19c14ca")
 

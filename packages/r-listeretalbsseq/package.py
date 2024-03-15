@@ -13,7 +13,7 @@ class RListeretalbsseq(RPackage):
 	"""
 	
 	bioc = "ListerEtAlBSseq" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/ListerEtAlBSseq_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/ListerEtAlBSseq/ListerEtAlBSseq_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ListerEtAlBSseq_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ListerEtAlBSseq/ListerEtAlBSseq_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="302e026ae021a5f26c149b5086569db1")
 

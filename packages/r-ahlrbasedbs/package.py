@@ -13,7 +13,7 @@ class RAhlrbasedbs(RPackage):
 	"""
 	
 	bioc = "AHLRBaseDbs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/AHLRBaseDbs_1.7.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/AHLRBaseDbs/AHLRBaseDbs_1.7.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AHLRBaseDbs_1.7.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/AHLRBaseDbs/AHLRBaseDbs_1.7.0.tar.gz"]
 
 	version("1.7.0", md5="5df6ef84988477d6262e54abd07c82da")
 

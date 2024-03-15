@@ -14,7 +14,7 @@ class RPhantasus(RPackage):
 	
 	homepage = "https://genome.ifmo.ru/phantasus"
 	bioc = "phantasus" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/phantasus_1.22.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/phantasus/phantasus_1.22.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phantasus_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phantasus/phantasus_1.22.2.tar.gz"]
 
 	version("1.22.2", md5="84c6e2dce18e76a3268130cdd236ba59")
 

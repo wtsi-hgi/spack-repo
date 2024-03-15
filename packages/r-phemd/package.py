@@ -13,7 +13,7 @@ class RPhemd(RPackage):
 	"""
 	
 	bioc = "phemd" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/phemd_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/phemd/phemd_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phemd_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phemd/phemd_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="8cefd4ddfea1dd2deb007acb6cebfb7a")
 

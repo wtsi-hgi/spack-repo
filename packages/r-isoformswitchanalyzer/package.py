@@ -14,7 +14,7 @@ class RIsoformswitchanalyzer(RPackage):
 	
 	homepage = "http://bioconductor.org/packages/IsoformSwitchAnalyzeR/"
 	bioc = "IsoformSwitchAnalyzeR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/IsoformSwitchAnalyzeR_2.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/IsoformSwitchAnalyzeR/IsoformSwitchAnalyzeR_2.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IsoformSwitchAnalyzeR_2.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IsoformSwitchAnalyzeR/IsoformSwitchAnalyzeR_2.2.0.tar.gz"]
 
 	version("2.2.0", md5="6aad6b0133da9e103b4385ff31b7028c")
 

@@ -14,7 +14,7 @@ class RTarget(RPackage):
 	
 	homepage = "https://github.com/MahShaaban/target"
 	bioc = "target" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/target_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/target/target_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/target_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/target/target_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="96ca9fa7bed738941cd930b5e7491bc2")
 

@@ -14,6 +14,6 @@ class RGanpa(RPackage):
 	
 	cran = "GANPA" 
 
-	version("1.1", md5="6bcc285a9e5f9564610b84be3fc57725")
+	version("1.2", md5="20738026b9b26715635f192d4e921260")
 
 	depends_on("r-ganpadata", type=("build", "run"))

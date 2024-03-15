@@ -14,7 +14,7 @@ class RDapar(RPackage):
 	
 	homepage = "http://www.prostar-proteomics.org/"
 	bioc = "DAPAR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DAPAR_1.34.6.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DAPAR/DAPAR_1.34.6.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DAPAR_1.34.6.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DAPAR/DAPAR_1.34.6.tar.gz"]
 
 	version("1.34.6", md5="24ecc0e3b05c61098ccc42488ec3b6ba")
 

@@ -14,7 +14,7 @@ class RRcellminer(RPackage):
 	
 	homepage = "http://discover.nci.nih.gov/cellminer/"
 	bioc = "rcellminer" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rcellminer_2.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rcellminer/rcellminer_2.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rcellminer_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rcellminer/rcellminer_2.24.0.tar.gz"]
 
 	version("2.24.0", md5="e74fd74daff68802d805b6bc0336499d")
 

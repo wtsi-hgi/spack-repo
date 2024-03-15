@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,8 @@ class RGamlss(RPackage):
 	variables."""
 
 	cran = "gamlss"
+
+	license("GPL-2.0-only OR GPL-3.0-only")
 
 	version("5.4-20", md5="f92b31f8e7440afabf4b1eb6316d021f")
 

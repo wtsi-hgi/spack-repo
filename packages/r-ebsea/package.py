@@ -13,7 +13,7 @@ class REbsea(RPackage):
 	"""
 	
 	bioc = "EBSEA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EBSEA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EBSEA/EBSEA_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EBSEA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EBSEA/EBSEA_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="d016b1e83c4b885565a573db1b134fbd")
 

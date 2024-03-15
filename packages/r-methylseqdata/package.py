@@ -13,7 +13,7 @@ class RMethylseqdata(RPackage):
 	"""
 	
 	bioc = "MethylSeqData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/MethylSeqData_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/MethylSeqData/MethylSeqData_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MethylSeqData_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MethylSeqData/MethylSeqData_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="ded280784f55a6ebec42069160de26ad")
 

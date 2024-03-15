@@ -18,6 +18,9 @@ Classifications
     - d/p/q/r functions for Four-Parameter Beta distributions and Generalized
     "Binomial" (continuous) distributions, and d/p/r- functions for Beta-
     Binomial distributions.
+    - d/p/q/r functions for Two- and Four-Parameter Beta distributions
+    parameterized in terms of their means and variances rather than their
+    shape-parameters.
     - Moment generating functions for Binomial distributions, Beta-Binomial 
     distributions, and observed value distributions.
     - Functions for estimating classification accuracy and consistency, 
@@ -33,5 +36,5 @@ Classifications
 	
 	cran = "betafunctions" 
 
-	version("1.8.1", md5="05bf901a5303b342478190af741d20bd")
+	version("1.9.0", md5="5e9b7adea2ff11e937eba3d68630cd03")
 

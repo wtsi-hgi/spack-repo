@@ -13,7 +13,7 @@ class RSuitor(RPackage):
 	"""
 	
 	bioc = "SUITOR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SUITOR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SUITOR/SUITOR_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SUITOR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SUITOR/SUITOR_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="5f4a5ea607ef7551025cf8b425d20bc7")
 

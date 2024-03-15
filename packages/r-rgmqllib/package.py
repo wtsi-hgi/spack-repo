@@ -14,7 +14,7 @@ class RRgmqllib(RPackage):
 	
 	homepage = "http://www.bioinformatics.deib.polimi.it/genomic_computing/GMQL/"
 	bioc = "RGMQLlib" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RGMQLlib_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/RGMQLlib/RGMQLlib_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RGMQLlib_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RGMQLlib/RGMQLlib_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="d8ad27b1fe0c5eff6135285db972cab2")
 

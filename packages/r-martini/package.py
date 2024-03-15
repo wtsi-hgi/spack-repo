@@ -14,7 +14,7 @@ class RMartini(RPackage):
 	
 	homepage = "https://github.com/hclimente/martini"
 	bioc = "martini" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/martini_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/martini/martini_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/martini_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/martini/martini_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="85e3366daf7ac24c0f50261fafe8b274")
 

@@ -14,7 +14,7 @@ class RBiocbook(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/BiocBook"
 	bioc = "BiocBook" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiocBook_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiocBook/BiocBook_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocBook_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocBook/BiocBook_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="6bcb226068f30b135b705960de603ff0")
 

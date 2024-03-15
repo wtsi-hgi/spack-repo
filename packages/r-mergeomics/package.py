@@ -13,7 +13,7 @@ class RMergeomics(RPackage):
 	"""
 	
 	bioc = "Mergeomics" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Mergeomics_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Mergeomics/Mergeomics_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Mergeomics_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Mergeomics/Mergeomics_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="1b8f5bc8cf54fa99df988a83c71737d3")
 

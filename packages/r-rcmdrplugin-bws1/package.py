@@ -14,7 +14,7 @@ class RRcmdrpluginBws1(RPackage):
 	
 	cran = "RcmdrPlugin.BWS1" 
 
-	version("0.2-0", md5="f2069f974d4d0b1ee4e4ba50ee94732f", url="https://cran.r-project.org/src/contrib/RcmdrPlugin.BWS1_0.2-0.tar.gz")
+	version("0.2-1", md5="0c72b0dfb14a017a1ebed4d9aba0ca55", url="https://cran.r-project.org/src/contrib/RcmdrPlugin.BWS1_0.2-1.tar.gz")
 
 	depends_on("r-crossdes", type=("build", "run"))
 	depends_on("r-support-bws@0.4.1:", type=("build", "run"))

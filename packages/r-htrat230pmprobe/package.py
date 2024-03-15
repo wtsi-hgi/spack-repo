@@ -13,7 +13,7 @@ class RHtrat230pmprobe(RPackage):
 	"""
 	
 	bioc = "htrat230pmprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/htrat230pmprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/htrat230pmprobe/htrat230pmprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/htrat230pmprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/htrat230pmprobe/htrat230pmprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="e4deeca2dc406367ac4a347e370267cf")
 

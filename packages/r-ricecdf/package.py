@@ -13,7 +13,7 @@ class RRicecdf(RPackage):
 	"""
 	
 	bioc = "ricecdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ricecdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/ricecdf/ricecdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ricecdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ricecdf/ricecdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="51db6f51f4adcfb7f4940d07668db8b8")
 

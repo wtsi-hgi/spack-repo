@@ -13,7 +13,7 @@ class REncodexplorerdata(RPackage):
 	"""
 	
 	bioc = "ENCODExplorerData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ENCODExplorerData_0.99.5.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/ENCODExplorerData/ENCODExplorerData_0.99.5.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ENCODExplorerData_0.99.5.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ENCODExplorerData/ENCODExplorerData_0.99.5.tar.gz"]
 
 	version("0.99.5", md5="c6d9b491548529db0739b79c98adacd7")
 

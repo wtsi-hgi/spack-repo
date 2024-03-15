@@ -14,7 +14,7 @@ class RAhpathbankdbs(RPackage):
 	
 	homepage = "https://github.com/kozo2/AHPathbankDbs"
 	bioc = "AHPathbankDbs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/AHPathbankDbs_0.99.5.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/AHPathbankDbs/AHPathbankDbs_0.99.5.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AHPathbankDbs_0.99.5.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/AHPathbankDbs/AHPathbankDbs_0.99.5.tar.gz"]
 
 	version("0.99.5", md5="70339eae8c03c47248b612b365bda4ff")
 

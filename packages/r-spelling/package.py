@@ -16,10 +16,10 @@ class RSpelling(RPackage):
     define a 'wordlist' to allow custom terminology without having to abuse punctuation.
 	"""
 	
-	homepage = "https://docs.ropensci.org/spelling/"
+	homepage = "https://ropensci.r-universe.dev/spelling"
 	cran = "spelling" 
 
-	version("2.2.1", md5="47128c93e6cace1644edddfbb127de7b")
+	version("2.3.0", md5="375bbd00c2d9980ee78ffb834175d139")
 
 	depends_on("r-commonmark", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))

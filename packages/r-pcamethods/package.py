@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -20,7 +20,9 @@ class RPcamethods(RPackage):
 	Golm, Germany."""
 
 	bioc = "pcaMethods"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pcaMethods_1.94.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pcaMethods/pcaMethods_1.94.0.tar.gz"]
+
+	license("GPL-2.0-or-later")
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pcaMethods_1.94.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pcaMethods/pcaMethods_1.94.0.tar.gz"]
 
 	version("1.94.0", md5="a989ad925a9852f55eb5e4d16d1529d0")
 

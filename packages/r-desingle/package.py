@@ -14,7 +14,7 @@ class RDesingle(RPackage):
 	
 	homepage = "https://miaozhun.github.io/DEsingle/"
 	bioc = "DEsingle" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DEsingle_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DEsingle/DEsingle_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEsingle_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEsingle/DEsingle_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="6969e960919434ccd6e5b9bdd926aece")
 

@@ -14,7 +14,7 @@ class RPaa(RPackage):
 	
 	homepage = "http://www.ruhr-uni-bochum.de/mpc/software/PAA/"
 	bioc = "PAA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PAA_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PAA/PAA_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PAA_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PAA/PAA_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="4968ea3bfbaa5edd0e6d00dcbe93a6d0")
 

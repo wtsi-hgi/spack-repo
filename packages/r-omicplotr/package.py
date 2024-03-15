@@ -13,7 +13,7 @@ class ROmicplotr(RPackage):
 	"""
 	
 	bioc = "omicplotR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/omicplotR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/omicplotR/omicplotR_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/omicplotR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/omicplotR/omicplotR_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="1ab1c2e82c98f8086b4dba4f65a613e7")
 

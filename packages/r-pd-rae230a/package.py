@@ -13,7 +13,7 @@ class RPdRae230a(RPackage):
 	"""
 	
 	bioc = "pd.rae230a" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.rae230a_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.rae230a/pd.rae230a_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rae230a_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rae230a/pd.rae230a_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="fa4a1c29d3457b1db82b1010c5f72412")
 

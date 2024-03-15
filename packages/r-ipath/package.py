@@ -13,7 +13,7 @@ class RIpath(RPackage):
 	"""
 	
 	bioc = "iPath" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iPath_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iPath/iPath_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iPath_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iPath/iPath_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="71bdeccc2d0192cd080c4c190831d792")
 

@@ -13,7 +13,7 @@ class RGenomationdata(RPackage):
 	"""
 	
 	bioc = "genomationData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/genomationData_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/genomationData/genomationData_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/genomationData_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/genomationData/genomationData_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="dc03eef7730719f7c66f72ca5e9915db")
 

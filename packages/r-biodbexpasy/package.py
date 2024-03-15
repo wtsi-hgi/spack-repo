@@ -13,7 +13,7 @@ class RBiodbexpasy(RPackage):
 	"""
 	
 	bioc = "biodbExpasy" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biodbExpasy_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biodbExpasy/biodbExpasy_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbExpasy_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbExpasy/biodbExpasy_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="b4c2596f2efc76e3ba7cba00fb3a6177")
 

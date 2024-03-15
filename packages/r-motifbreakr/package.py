@@ -13,7 +13,7 @@ class RMotifbreakr(RPackage):
 	"""
 	
 	bioc = "motifbreakR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/motifbreakR_2.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/motifbreakR/motifbreakR_2.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/motifbreakR_2.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/motifbreakR/motifbreakR_2.16.0.tar.gz"]
 
 	version("2.16.0", md5="fd2ed6098a4bade8948f237753404006")
 

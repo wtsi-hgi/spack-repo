@@ -13,7 +13,7 @@ class RChromvar(RPackage):
 	"""
 	
 	bioc = "chromVAR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/chromVAR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/chromVAR/chromVAR_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chromVAR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chromVAR/chromVAR_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="8e42f2454ce39606fae40e85e437b47b")
 

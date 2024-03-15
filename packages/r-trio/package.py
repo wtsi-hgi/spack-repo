@@ -13,7 +13,7 @@ class RTrio(RPackage):
 	"""
 	
 	bioc = "trio" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/trio_3.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/trio/trio_3.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/trio_3.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/trio/trio_3.40.0.tar.gz"]
 
 	version("3.40.0", md5="cd87ad1a66fe181df937dd7a8edfda56")
 

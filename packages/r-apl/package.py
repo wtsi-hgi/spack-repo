@@ -14,7 +14,7 @@ class RApl(RPackage):
 	
 	homepage = "https://vingronlab.github.io/APL/"
 	bioc = "APL" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/APL_1.6.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/APL/APL_1.6.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/APL_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/APL/APL_1.6.1.tar.gz"]
 
 	version("1.6.1", md5="e6a2a3a7eb66393dfc3216adbc757dc7")
 

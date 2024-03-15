@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RBlavaan(RPackage):
 	(2021) <doi:10.18637/jss.v100.i06>."""
 
 	cran = "blavaan"
+
+	license("GPL-3.0-or-later")
 
 	version("0.5-3", md5="fc9090278c63747c904661506244a6e0")
 

@@ -13,7 +13,7 @@ class RRingo(RPackage):
 	"""
 	
 	bioc = "Ringo" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Ringo_1.66.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Ringo/Ringo_1.66.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Ringo_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Ringo/Ringo_1.66.0.tar.gz"]
 
 	version("1.66.0", md5="2aa9ffb65c3d24fed5141f139f8721ab")
 

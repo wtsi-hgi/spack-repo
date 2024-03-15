@@ -13,7 +13,7 @@ class RMvoutdata(RPackage):
 	"""
 	
 	bioc = "mvoutData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/mvoutData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/mvoutData/mvoutData_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mvoutData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mvoutData/mvoutData_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="abca7ca8ae7729ed8f146d0083aa9757")
 

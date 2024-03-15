@@ -20,20 +20,20 @@ class RBlastula(RPackage):
 	homepage = "https://github.com/rstudio/blastula"
 	cran = "blastula" 
 
-	version("0.3.4", md5="daccccb2e48814c2c049391a9254b327")
+	version("0.3.5", md5="c81fa26cabb15e01b9c7e1346802cb6e")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-base64enc@0.1.3:", type=("build", "run"))
 	depends_on("r-commonmark@1.7:", type=("build", "run"))
-	depends_on("r-curl@4.3:", type=("build", "run"))
+	depends_on("r-curl@5.2:", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))
-	depends_on("r-dplyr@0.8.3:", type=("build", "run"))
+	depends_on("r-dplyr@1.1:", type=("build", "run"))
 	depends_on("r-fs@1.3.1:", type=("build", "run"))
 	depends_on("r-getpass@0.2.2:", type=("build", "run"))
-	depends_on("r-here@0.1:", type=("build", "run"))
-	depends_on("r-htmltools@0.4:", type=("build", "run"))
+	depends_on("r-here@1:", type=("build", "run"))
+	depends_on("r-htmltools@0.5.7:", type=("build", "run"))
 	depends_on("r-httr@1.4:", type=("build", "run"))
-	depends_on("r-jsonlite@1.6:", type=("build", "run"))
+	depends_on("r-jsonlite@1.8:", type=("build", "run"))
 	depends_on("r-magrittr@1.5:", type=("build", "run"))
 	depends_on("r-mime@0.6:", type=("build", "run"))
 	depends_on("r-rlang@1:", type=("build", "run"))

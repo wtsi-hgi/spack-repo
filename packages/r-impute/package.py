@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -12,7 +12,7 @@ class RImpute(RPackage):
 	Imputation for microarray data (currently KNN only)"""
 
 	bioc = "impute"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/impute_1.76.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/impute/impute_1.76.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/impute_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/impute/impute_1.76.0.tar.gz"]
 
 	version("1.76.0", md5="8e974dcc31c3507ebcc8984b2d7943f9")
 

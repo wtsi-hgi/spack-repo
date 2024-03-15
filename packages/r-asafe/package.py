@@ -13,7 +13,7 @@ class RAsafe(RPackage):
 	"""
 	
 	bioc = "ASAFE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ASAFE_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ASAFE/ASAFE_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASAFE_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASAFE/ASAFE_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="e054d986c3b6f2574c26498eaf6e4f7c")
 

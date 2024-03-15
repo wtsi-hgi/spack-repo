@@ -14,7 +14,7 @@ class RRpa(RPackage):
 	
 	homepage = "https://github.com/antagomir/RPA"
 	bioc = "RPA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RPA_1.58.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RPA/RPA_1.58.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RPA_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RPA/RPA_1.58.0.tar.gz"]
 
 	version("1.58.0", md5="ea38f5a76b570c091b8f818c48c836cb")
 

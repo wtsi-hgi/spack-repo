@@ -13,7 +13,7 @@ class RNpgsea(RPackage):
 	"""
 	
 	bioc = "npGSEA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/npGSEA_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/npGSEA/npGSEA_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/npGSEA_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/npGSEA/npGSEA_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="82d2208fe4478a1d5423940daa7128be")
 

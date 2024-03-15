@@ -13,7 +13,7 @@ class RBlacksheepr(RPackage):
 	"""
 	
 	bioc = "blacksheepr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/blacksheepr_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/blacksheepr/blacksheepr_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/blacksheepr_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/blacksheepr/blacksheepr_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="464b853300f0d97e2ad8f0a4188701c4")
 

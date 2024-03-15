@@ -13,7 +13,7 @@ class RAlabasterString(RPackage):
 	"""
 	
 	bioc = "alabaster.string" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/alabaster.string_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/alabaster.string/alabaster.string_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.string_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.string/alabaster.string_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="b7add7aa52b8835471b04038842da095")
 

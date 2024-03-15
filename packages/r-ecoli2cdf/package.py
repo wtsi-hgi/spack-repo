@@ -13,7 +13,7 @@ class REcoli2cdf(RPackage):
 	"""
 	
 	bioc = "ecoli2cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ecoli2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/ecoli2cdf/ecoli2cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ecoli2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ecoli2cdf/ecoli2cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="b5cd1f05322ce494132ff649de9806c6")
 

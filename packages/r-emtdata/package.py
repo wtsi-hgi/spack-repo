@@ -14,7 +14,7 @@ class REmtdata(RPackage):
 	
 	homepage = "https://github.com/DavisLaboratory/emtdata"
 	bioc = "emtdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/emtdata_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/emtdata/emtdata_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/emtdata_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/emtdata/emtdata_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="4f861584cce979edd6d7bdce3624e916")
 

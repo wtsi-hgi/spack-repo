@@ -13,7 +13,7 @@ class RGosorensen(RPackage):
 	"""
 	
 	bioc = "goSorensen" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/goSorensen_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/goSorensen/goSorensen_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/goSorensen_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/goSorensen/goSorensen_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="8fa5cc982341291dd857ab340abe4c73")
 

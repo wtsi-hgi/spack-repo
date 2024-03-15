@@ -13,7 +13,7 @@ class RTxdbCfamiliarisUcscCanfam3Refgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Cfamiliaris.UCSC.canFam3.refGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Cfamiliaris.UCSC.canFam3.refGene_3.11.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Cfamiliaris.UCSC.canFam3.refGene/TxDb.Cfamiliaris.UCSC.canFam3.refGene_3.11.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Cfamiliaris.UCSC.canFam3.refGene_3.11.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Cfamiliaris.UCSC.canFam3.refGene/TxDb.Cfamiliaris.UCSC.canFam3.refGene_3.11.0.tar.gz"]
 
 	version("3.11.0", md5="bf6af84c14a30ad5d01f3678246b1180")
 

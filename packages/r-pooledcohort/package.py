@@ -7,7 +7,8 @@ from spack.package import *
 
 
 class RPooledcohort(RPackage):
-	"""Predict 10-Year Risk for Atherosclerotic Cardiovascular Disease
+	"""Predicted Risk for CVD using Pooled Cohort Equations, PREVENT
+Equations, and Other Contemporary CVD Risk Calculators
 
 	The 2017 American College of Cardiology and American Heart
   Association blood pressure guideline recommends using 10-year predicted 
@@ -17,17 +18,12 @@ class RPooledcohort(RPackage):
   atherosclerotic cardiovascular disease risk. This package implements the 
   original Pooled Cohort risk prediction equations and also incorporates 
   updated versions based on more contemporary data and statistical methods.
-  References:
-  Goff DC, Lloyd-Jones DM, Bennett G, Coady S, D’Agostino RB, Gibbons R, 
-  Greenland P, Lackland DT, Levy D, O’Donnell CJ, and Robinson JG (2014) 
-  <doi:10.1016/j.jacc.2014.03.006>
-  Yadlowsky S, Hayward RA, Sussman JB, McClelland RL, Min YI, and Basu S (2018)
-  <doi:10.7326/m17-3011>.
 	"""
 	
 	homepage = "https://github.com/bcjaeger/PooledCohort"
 	cran = "PooledCohort" 
 
-	version("0.0.1", md5="b771e12a22bcaf1d53b4900edfa4a6dd")
+	version("0.0.2", md5="de62d990d4f85d109f196feb3f043304")
 
+	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))

@@ -13,9 +13,9 @@ class RBsgenomeBtaurusUcscBostau4(RPackage):
 	"""
 	
 	bioc = "BSgenome.Btaurus.UCSC.bosTau4" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Btaurus.UCSC.bosTau4_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Btaurus.UCSC.bosTau4/BSgenome.Btaurus.UCSC.bosTau4_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Btaurus.UCSC.bosTau4_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Btaurus.UCSC.bosTau4/BSgenome.Btaurus.UCSC.bosTau4_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="162cd253c719e347df5748ebb407a191", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Btaurus.UCSC.bosTau4_1.4.0.tar.gz")
+	version("1.4.0", md5="162cd253c719e347df5748ebb407a191", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Btaurus.UCSC.bosTau4_1.4.0.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 

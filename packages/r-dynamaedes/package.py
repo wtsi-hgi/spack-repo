@@ -16,7 +16,7 @@ Invasive Aedes Mosquitoes
 	homepage = "https://mattmar.github.io/dynamAedes/"
 	cran = "dynamAedes" 
 
-	version("2.2.8", md5="3dad4d6835040959bc3a61c1191b5546")
+	version("2.2.9", md5="5c0832a3a1d8211cbd8c7e5de721388b")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))

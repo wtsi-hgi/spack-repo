@@ -13,7 +13,7 @@ class RHguatlas13kDb(RPackage):
 	"""
 	
 	bioc = "hguatlas13k.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hguatlas13k.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hguatlas13k.db/hguatlas13k.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hguatlas13k.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hguatlas13k.db/hguatlas13k.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="ab9ffe1a1de44c0f938129f193e7fb63")
 

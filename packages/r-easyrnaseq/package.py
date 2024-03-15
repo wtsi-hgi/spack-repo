@@ -13,7 +13,7 @@ class REasyrnaseq(RPackage):
 	"""
 	
 	bioc = "easyRNASeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/easyRNASeq_2.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/easyRNASeq/easyRNASeq_2.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/easyRNASeq_2.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/easyRNASeq/easyRNASeq_2.38.0.tar.gz"]
 
 	version("2.38.0", md5="c763a083ce852695593a183ff7f9edcb")
 

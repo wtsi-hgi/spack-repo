@@ -14,7 +14,7 @@ class RGsalightning(RPackage):
 	
 	homepage = "https://github.com/billyhw/GSALightning"
 	bioc = "GSALightning" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GSALightning_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GSALightning/GSALightning_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSALightning_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSALightning/GSALightning_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="c6828603275d57045e613f1e7c0f143d")
 

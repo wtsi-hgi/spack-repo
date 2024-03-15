@@ -14,7 +14,7 @@ class RExcluderanges(RPackage):
 	
 	homepage = "https://github.com/dozmorovlab/excluderanges"
 	bioc = "excluderanges" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/excluderanges_0.99.8.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/excluderanges/excluderanges_0.99.8.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/excluderanges_0.99.8.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/excluderanges/excluderanges_0.99.8.tar.gz"]
 
 	version("0.99.8", md5="2ec19df8a51df1900a339f7f505cd5fa")
 

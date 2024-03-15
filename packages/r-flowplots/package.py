@@ -13,7 +13,7 @@ class RFlowplots(RPackage):
 	"""
 	
 	bioc = "flowPlots" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowPlots_1.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowPlots/flowPlots_1.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowPlots_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowPlots/flowPlots_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="523b0d79646813f56d711d3e0f38a5e9")
 

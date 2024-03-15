@@ -14,7 +14,7 @@ class RNgscopydata(RPackage):
 	
 	homepage = "http://www.bioconductor.org/packages/release/data/experiment/html/NGScopyData.html"
 	bioc = "NGScopyData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/NGScopyData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/NGScopyData/NGScopyData_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/NGScopyData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/NGScopyData/NGScopyData_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="0ba77cf672a331e4c9dd90b26f41b5c6")
 

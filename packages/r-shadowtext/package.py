@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,6 +13,8 @@ class RShadowtext(RPackage):
 	'ggplot2'. These functions create/draw text grob with background shadow."""
 
 	cran = "shadowtext"
+
+	license("Artistic-2.0")
 
 	version("0.1.3", md5="7144d2b78c162850634a874e956da1fc")
 

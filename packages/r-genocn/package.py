@@ -13,7 +13,7 @@ class RGenocn(RPackage):
 	"""
 	
 	bioc = "genoCN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/genoCN_1.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/genoCN/genoCN_1.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genoCN_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genoCN/genoCN_1.54.0.tar.gz"]
 
 	version("1.54.0", md5="ebc7fc5cb3b5c2bcd98718a7bcd95d6a")
 

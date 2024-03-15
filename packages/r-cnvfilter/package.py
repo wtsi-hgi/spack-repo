@@ -14,7 +14,7 @@ class RCnvfilter(RPackage):
 	
 	homepage = "https://github.com/jpuntomarcos/CNVfilteR"
 	bioc = "CNVfilteR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CNVfilteR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CNVfilteR/CNVfilteR_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNVfilteR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNVfilteR/CNVfilteR_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="dda71463a83db8c7aaf1bbfa79424ba3")
 

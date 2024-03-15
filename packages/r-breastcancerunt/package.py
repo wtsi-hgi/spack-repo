@@ -14,7 +14,7 @@ class RBreastcancerunt(RPackage):
 	
 	homepage = "http://compbio.dfci.harvard.edu/"
 	bioc = "breastCancerUNT" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/breastCancerUNT_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/breastCancerUNT/breastCancerUNT_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/breastCancerUNT_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/breastCancerUNT/breastCancerUNT_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="31e1b6d7e34b4acb9207e3e152539166")
 

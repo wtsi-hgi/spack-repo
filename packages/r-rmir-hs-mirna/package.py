@@ -13,7 +13,7 @@ class RRmirHsMirna(RPackage):
 	"""
 	
 	bioc = "RmiR.Hs.miRNA" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/RmiR.Hs.miRNA_1.0.7.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/RmiR.Hs.miRNA/RmiR.Hs.miRNA_1.0.7.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/RmiR.Hs.miRNA_1.0.7.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/RmiR.Hs.miRNA/RmiR.Hs.miRNA_1.0.7.tar.gz"]
 
 	version("1.0.7", md5="4aedac188382447d9907d2617aa2e8e6")
 

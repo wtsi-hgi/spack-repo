@@ -14,7 +14,7 @@ class RCuratedadipochip(RPackage):
 	
 	homepage = "https://github.com/MahShaaban/curatedAdipoChIP"
 	bioc = "curatedAdipoChIP" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/curatedAdipoChIP_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/curatedAdipoChIP/curatedAdipoChIP_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedAdipoChIP_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedAdipoChIP/curatedAdipoChIP_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="0074cb63250ac197dad12e4138d47463")
 

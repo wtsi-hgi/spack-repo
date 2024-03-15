@@ -14,7 +14,7 @@ class RRscudo(RPackage):
 	
 	homepage = "https://github.com/Matteo-Ciciani/scudo"
 	bioc = "rScudo" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rScudo_1.18.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rScudo/rScudo_1.18.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rScudo_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rScudo/rScudo_1.18.1.tar.gz"]
 
 	version("1.18.1", md5="f3e7820b33e90ac6414788a7dc28c3c0")
 

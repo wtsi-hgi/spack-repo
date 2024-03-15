@@ -13,7 +13,7 @@ class RMouse430a2cdf(RPackage):
 	"""
 	
 	bioc = "mouse430a2cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mouse430a2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mouse430a2cdf/mouse430a2cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mouse430a2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mouse430a2cdf/mouse430a2cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="1114c0415d1200bc21ad205e0830b075")
 

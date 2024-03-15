@@ -13,7 +13,7 @@ class RMedipsdata(RPackage):
 	"""
 	
 	bioc = "MEDIPSData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/MEDIPSData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/MEDIPSData/MEDIPSData_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MEDIPSData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MEDIPSData/MEDIPSData_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="7b329ecedb2e9911b92ad669856abf2b")
 

@@ -13,7 +13,7 @@ class RTxdbHsapiensUcscHg19Lincrnastranscripts(RPackage):
 	"""
 	
 	bioc = "TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts_3.2.2.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts/TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts_3.2.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts_3.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts/TxDb.Hsapiens.UCSC.hg19.lincRNAsTranscripts_3.2.2.tar.gz"]
 
 	version("3.2.2", md5="a0d61cd90639c40b3d0bb6bdb043cf12")
 

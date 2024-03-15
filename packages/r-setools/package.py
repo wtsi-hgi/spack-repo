@@ -13,7 +13,7 @@ class RSetools(RPackage):
 	"""
 	
 	bioc = "SEtools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SEtools_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SEtools/SEtools_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SEtools_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SEtools/SEtools_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="4b6f28a6fdf032d51f29793f25729114")
 

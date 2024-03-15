@@ -13,7 +13,7 @@ class RRbioinf(RPackage):
 	"""
 	
 	bioc = "RBioinf" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RBioinf_1.62.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RBioinf/RBioinf_1.62.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RBioinf_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RBioinf/RBioinf_1.62.0.tar.gz"]
 
 	version("1.62.0", md5="ec036823fe8f50106f37436eec716add")
 

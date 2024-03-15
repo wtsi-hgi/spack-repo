@@ -13,7 +13,7 @@ class RLdblock(RPackage):
 	"""
 	
 	bioc = "ldblock" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ldblock_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ldblock/ldblock_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ldblock_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ldblock/ldblock_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="579c380a003913fde7767f15b47a6692")
 

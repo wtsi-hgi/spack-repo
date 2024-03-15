@@ -14,7 +14,7 @@ class RSpectraltad(RPackage):
 	
 	homepage = "https://github.com/dozmorovlab/SpectralTAD"
 	bioc = "SpectralTAD" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SpectralTAD_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SpectralTAD/SpectralTAD_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpectralTAD_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpectralTAD/SpectralTAD_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="359760e22303de30ab396fcc7d5938af")
 

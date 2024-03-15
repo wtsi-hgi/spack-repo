@@ -13,7 +13,7 @@ class RAntiprofilesdata(RPackage):
 	"""
 	
 	bioc = "antiProfilesData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/antiProfilesData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/antiProfilesData/antiProfilesData_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/antiProfilesData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/antiProfilesData/antiProfilesData_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="dc40c00fb296b31cf65369e801d6f2f8")
 

@@ -15,10 +15,10 @@ class RDuckdb(RPackage):
     connector.
 	"""
 	
-	homepage = "https://duckdb.org/"
+	homepage = "https://r.duckdb.org/"
 	cran = "duckdb" 
 
-	version("0.9.2-1", md5="674d7374122f819105538beb9170addc")
+	version("0.10.0", md5="210725b7fda443fad219cf0ab446d8a4")
 
 	depends_on("r-dbi", type=("build", "run"))
 	depends_on("r@3.6:", type=("build", "run"))

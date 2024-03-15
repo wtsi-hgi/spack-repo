@@ -14,7 +14,7 @@ class RGsgalgor(RPackage):
 	
 	homepage = "https://github.com/harpomaxx/GSgalgoR"
 	bioc = "GSgalgoR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GSgalgoR_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GSgalgoR/GSgalgoR_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSgalgoR_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSgalgoR/GSgalgoR_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="09d5b90490f44ee7384c71762228244d")
 

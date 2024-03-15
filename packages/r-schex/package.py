@@ -14,7 +14,7 @@ class RSchex(RPackage):
 	
 	homepage = "https://github.com/SaskiaFreytag/schex"
 	bioc = "schex" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/schex_1.16.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/schex/schex_1.16.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/schex_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/schex/schex_1.16.1.tar.gz"]
 
 	version("1.16.1", md5="f57d8e86734da9d7e2b645c5871fa7a1")
 

@@ -13,7 +13,7 @@ class RGdr(RPackage):
 	"""
 	
 	bioc = "gDR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gDR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gDR/gDR_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gDR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gDR/gDR_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="abefb906e5c9ec014a443b0367844ac9")
 

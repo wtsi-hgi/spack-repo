@@ -13,7 +13,7 @@ class RFfpe(RPackage):
 	"""
 	
 	bioc = "ffpe" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ffpe_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ffpe/ffpe_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ffpe_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ffpe/ffpe_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="c2a3dbd53e85caf82d7c8f91a8277454")
 

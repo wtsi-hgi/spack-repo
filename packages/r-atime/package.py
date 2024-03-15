@@ -21,7 +21,7 @@ class RAtime(RPackage):
 	homepage = "https://github.com/tdhock/atime"
 	cran = "atime" 
 
-	version("2024.1.31", md5="5a0397b7dee96c560de690c4f5f8b180")
+	version("2024.3.5", md5="237a71477badcdfa53cbf665357a8e04")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-bench", type=("build", "run"))

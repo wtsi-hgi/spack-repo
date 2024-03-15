@@ -14,9 +14,9 @@ class RMetagene2(RPackage):
 	
 	homepage = "https://github.com/ArnaudDroitLab/metagene2"
 	bioc = "metagene2" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/metagene2_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/metagene2/metagene2_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metagene2_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metagene2/metagene2_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="adef0ffd2a7cec30870a2b66eb2cb4f9", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/metagene2_1.18.0.tar.gz")
+	version("1.18.0", md5="adef0ffd2a7cec30870a2b66eb2cb4f9", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metagene2_1.18.0.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-r6@2:", type=("build", "run"))

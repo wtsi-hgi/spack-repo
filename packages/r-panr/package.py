@@ -13,7 +13,7 @@ class RPanr(RPackage):
 	"""
 	
 	bioc = "PANR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PANR_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PANR/PANR_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PANR_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PANR/PANR_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="accc5472b6656e95d885960d9f1ecee3")
 

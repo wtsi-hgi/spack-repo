@@ -14,7 +14,7 @@ class ROmpbam(RPackage):
 	
 	homepage = "https://github.com/alexchwong/ompBAM"
 	bioc = "ompBAM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ompBAM_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ompBAM/ompBAM_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ompBAM_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ompBAM/ompBAM_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="9e9d31ddcad0b4bb4acb30ad970a0cd5")
 

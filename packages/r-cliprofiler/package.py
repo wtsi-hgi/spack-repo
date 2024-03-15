@@ -14,7 +14,7 @@ class RCliprofiler(RPackage):
 	
 	homepage = "https://github.com/Codezy99/cliProfiler"
 	bioc = "cliProfiler" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cliProfiler_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cliProfiler/cliProfiler_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cliProfiler_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cliProfiler/cliProfiler_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="10a33ec5af89503fcb12a8142ec966f8")
 

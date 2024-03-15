@@ -13,7 +13,7 @@ class RWidgettools(RPackage):
 	"""
 	
 	bioc = "widgetTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/widgetTools_1.80.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/widgetTools/widgetTools_1.80.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/widgetTools_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/widgetTools/widgetTools_1.80.0.tar.gz"]
 
 	version("1.80.0", md5="bb5358a7e064436aa744ffb098a9c0ec")
 

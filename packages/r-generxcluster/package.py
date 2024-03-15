@@ -13,7 +13,7 @@ class RGenerxcluster(RPackage):
 	"""
 	
 	bioc = "geneRxCluster" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/geneRxCluster_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/geneRxCluster/geneRxCluster_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geneRxCluster_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geneRxCluster/geneRxCluster_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="61f7d4c5cd314cf84f8648b3097f65b1")
 

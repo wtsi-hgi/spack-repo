@@ -14,7 +14,7 @@ class RPeriodicdna(RPackage):
 	
 	homepage = "https://github.com/js2264/periodicDNA"
 	bioc = "periodicDNA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/periodicDNA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/periodicDNA/periodicDNA_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/periodicDNA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/periodicDNA/periodicDNA_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="60036578bc6ec2c45d1c4b57ae96ad03")
 

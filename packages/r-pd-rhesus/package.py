@@ -13,7 +13,7 @@ class RPdRhesus(RPackage):
 	"""
 	
 	bioc = "pd.rhesus" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.rhesus_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.rhesus/pd.rhesus_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rhesus_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rhesus/pd.rhesus_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="51efcfe1384ac956ff93bf0530965054")
 

@@ -13,7 +13,7 @@ class RBiocgraph(RPackage):
 	"""
 	
 	bioc = "biocGraph" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biocGraph_1.64.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biocGraph/biocGraph_1.64.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biocGraph_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biocGraph/biocGraph_1.64.0.tar.gz"]
 
 	version("1.64.0", md5="5deb3ff8596eaf678592ad9ae15defe2")
 

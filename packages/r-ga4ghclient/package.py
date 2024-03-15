@@ -14,7 +14,7 @@ class RGa4ghclient(RPackage):
 	
 	homepage = "https://github.com/labbcb/GA4GHclient"
 	bioc = "GA4GHclient" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GA4GHclient_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GA4GHclient/GA4GHclient_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GA4GHclient_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GA4GHclient/GA4GHclient_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="d0e8b9a21eda6320d15642c12fcb8392")
 

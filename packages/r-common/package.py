@@ -17,6 +17,6 @@ class RCommon(RPackage):
 	homepage = "https://common.r-sassy.org"
 	cran = "common" 
 
-	version("1.1.1", md5="52f9c30df4600179db90e3910eacc9ad")
+	version("1.1.2", md5="c5850761d729ffb92977f0ecb0b8e84f")
 
 	depends_on("r@3.6:", type=("build", "run"))

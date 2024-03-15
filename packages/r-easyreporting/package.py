@@ -13,7 +13,7 @@ class REasyreporting(RPackage):
 	"""
 	
 	bioc = "easyreporting" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/easyreporting_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/easyreporting/easyreporting_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/easyreporting_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/easyreporting/easyreporting_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="cffad8bbd7df1cd9ac54b4605a0c555e")
 

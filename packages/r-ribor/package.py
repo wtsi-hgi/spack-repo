@@ -13,7 +13,7 @@ class RRibor(RPackage):
 	"""
 	
 	bioc = "ribor" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ribor_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ribor/ribor_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ribor_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ribor/ribor_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="6d86ac039324d8fa1b6c708f42da44e2")
 

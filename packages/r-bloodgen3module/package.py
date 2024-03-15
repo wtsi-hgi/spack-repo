@@ -13,7 +13,7 @@ class RBloodgen3module(RPackage):
 	"""
 	
 	bioc = "BloodGen3Module" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BloodGen3Module_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BloodGen3Module/BloodGen3Module_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BloodGen3Module_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BloodGen3Module/BloodGen3Module_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="c9957080f8c55f99ebcc89cdc652deb9")
 

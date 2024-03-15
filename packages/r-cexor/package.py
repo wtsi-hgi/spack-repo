@@ -13,7 +13,7 @@ class RCexor(RPackage):
 	"""
 	
 	bioc = "CexoR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CexoR_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CexoR/CexoR_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CexoR_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CexoR/CexoR_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="53f7febbb51a7f925322329e89a8d619")
 

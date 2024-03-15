@@ -13,7 +13,7 @@ class RHwgcodDb(RPackage):
 	"""
 	
 	bioc = "hwgcod.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hwgcod.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hwgcod.db/hwgcod.db_3.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hwgcod.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hwgcod.db/hwgcod.db_3.4.0.tar.gz"]
 
 	version("3.4.0", md5="a46bf1a242853bbab26351a11b18030a")
 

@@ -14,7 +14,7 @@ class RFrmatools(RPackage):
 	
 	homepage = "http://bioconductor.org"
 	bioc = "frmaTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/frmaTools_1.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/frmaTools/frmaTools_1.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/frmaTools_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/frmaTools/frmaTools_1.54.0.tar.gz"]
 
 	version("1.54.0", md5="270e71dc903bb77add1154782cf17342")
 

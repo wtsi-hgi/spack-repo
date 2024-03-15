@@ -14,7 +14,7 @@ class RDirector(RPackage):
 	
 	homepage = "https://github.com/kzouchka/Director"
 	bioc = "Director" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Director_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Director/Director_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Director_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Director/Director_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="7c6c9d1a4762ffbdf723111273ee0899")
 

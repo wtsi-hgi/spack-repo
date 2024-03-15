@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -22,6 +22,8 @@ class RBiomartr(RPackage):
 	'ENSEMBL' and 'ENSEMBLGENOMES' with only one command."""
 
 	cran = "biomartr"
+
+	license("GPL-2.0-only")
 
 	version("1.0.7", md5="d7405c52f1076202a4f6188dc9d5c78b")
 

@@ -13,7 +13,7 @@ class RMygene(RPackage):
 	"""
 	
 	bioc = "mygene" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mygene_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mygene/mygene_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mygene_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mygene/mygene_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="01ebbd87d5d6b57ca6987eef9c3ae95a")
 

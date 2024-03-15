@@ -18,7 +18,7 @@ Server ('ISS')
 	homepage = "https://github.com/x1o/moexer"
 	cran = "moexer" 
 
-	version("0.2.0", md5="4472165a335675e1a48375a605cf8e3d")
+	version("0.3.0", md5="c5540de78a534891acba1190bb88c1b4")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))

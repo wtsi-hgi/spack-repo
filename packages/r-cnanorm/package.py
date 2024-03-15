@@ -14,7 +14,7 @@ class RCnanorm(RPackage):
 	
 	homepage = "http://www.r-project.org"
 	bioc = "CNAnorm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CNAnorm_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CNAnorm/CNAnorm_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNAnorm_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNAnorm/CNAnorm_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="b9d0f995f3466875285a152415863842")
 

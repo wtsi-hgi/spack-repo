@@ -14,7 +14,7 @@ class RChihaya(RPackage):
 	
 	homepage = "https://github.com/ArtifactDB/chihaya-R"
 	bioc = "chihaya" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/chihaya_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/chihaya/chihaya_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chihaya_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chihaya/chihaya_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="fc8e24fa8ec373d01c938fbfe12c3b9a")
 

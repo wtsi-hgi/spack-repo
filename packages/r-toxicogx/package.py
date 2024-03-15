@@ -13,7 +13,7 @@ class RToxicogx(RPackage):
 	"""
 	
 	bioc = "ToxicoGx" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ToxicoGx_2.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ToxicoGx/ToxicoGx_2.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ToxicoGx_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ToxicoGx/ToxicoGx_2.6.0.tar.gz"]
 
 	version("2.6.0", md5="2be22f48c0e155c94f9af6e6157a0333")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,8 +17,9 @@ class RHmisc(RPackage):
 
 	cran = "Hmisc"
 
-	version("5.1-1", md5="5ec7c524fdea5b77eddcbdae3c368968")
+	version("5.1-2", md5="920b9a7fb44f2e80b11f24a4afaf4363")
 
+	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))
 	depends_on("r-rpart", type=("build", "run"))

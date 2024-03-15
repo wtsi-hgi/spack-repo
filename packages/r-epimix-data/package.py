@@ -13,7 +13,7 @@ class REpimixData(RPackage):
 	"""
 	
 	bioc = "EpiMix.data" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/EpiMix.data_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/EpiMix.data/EpiMix.data_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/EpiMix.data_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/EpiMix.data/EpiMix.data_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="52c386f6828945121acfca44eabb7827")
 

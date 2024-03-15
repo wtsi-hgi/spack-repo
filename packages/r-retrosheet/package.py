@@ -19,7 +19,7 @@ class RRetrosheet(RPackage):
 	homepage = "https://github.com/colindouglas/retrosheet"
 	cran = "retrosheet" 
 
-	version("1.1.5", md5="99f016bb4e27a87eb3b73e88ad50dedf")
+	version("1.1.6", md5="bae64abf8693d7d1fd6d23f43b55de30")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-xml2@1.2.2:", type=("build", "run"))

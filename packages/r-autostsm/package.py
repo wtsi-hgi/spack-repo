@@ -16,7 +16,7 @@ class RAutostsm(RPackage):
 	
 	cran = "autostsm" 
 
-	version("3.1.3", md5="c0cb2ff90d1a0908df0fa7b2ac90558a")
+	version("3.1.4", md5="d36df3b2bf256b98e387f067b098a832")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-maxlik@1.5.2:", type=("build", "run"))

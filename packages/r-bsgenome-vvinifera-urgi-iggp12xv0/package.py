@@ -13,9 +13,9 @@ class RBsgenomeVviniferaUrgiIggp12xv0(RPackage):
 	"""
 	
 	bioc = "BSgenome.Vvinifera.URGI.IGGP12Xv0" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Vvinifera.URGI.IGGP12Xv0_0.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Vvinifera.URGI.IGGP12Xv0/BSgenome.Vvinifera.URGI.IGGP12Xv0_0.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Vvinifera.URGI.IGGP12Xv0_0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Vvinifera.URGI.IGGP12Xv0/BSgenome.Vvinifera.URGI.IGGP12Xv0_0.1.tar.gz"]
 
-	version("0.1", md5="3f791de6d699325a97080cd98be86d89", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Vvinifera.URGI.IGGP12Xv0_0.1.tar.gz")
+	version("0.1", md5="3f791de6d699325a97080cd98be86d89", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Vvinifera.URGI.IGGP12Xv0_0.1.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 

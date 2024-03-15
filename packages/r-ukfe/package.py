@@ -14,7 +14,7 @@ class RUkfe(RPackage):
 	
 	cran = "UKFE" 
 
-	version("0.3.3", md5="ddf1d9464d718f4d997e0aef326c1d83")
+	version("0.3.4", md5="e965b804fbc7b365ee49cd36a3b18c4a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))

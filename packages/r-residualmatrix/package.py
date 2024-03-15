@@ -14,7 +14,7 @@ class RResidualmatrix(RPackage):
 	
 	homepage = "https://github.com/LTLA/ResidualMatrix"
 	bioc = "ResidualMatrix" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ResidualMatrix_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ResidualMatrix/ResidualMatrix_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ResidualMatrix_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ResidualMatrix/ResidualMatrix_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="76eaee4311380f83265d9b5ecacd7e49")
 

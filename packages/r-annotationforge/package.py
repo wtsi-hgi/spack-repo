@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class RAnnotationforge(RPackage):
 	Packages produced are intended to be used with AnnotationDbi."""
 
 	bioc = "AnnotationForge"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AnnotationForge_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AnnotationForge/AnnotationForge_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnnotationForge_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnnotationForge/AnnotationForge_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="4aa011cdbdc464bbfe1542ec418e7749")
 

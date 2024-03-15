@@ -13,7 +13,7 @@ class RIndacDb(RPackage):
 	"""
 	
 	bioc = "indac.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/indac.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/indac.db/indac.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/indac.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/indac.db/indac.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="cba72edcf7278033151e0eac077d8ff8")
 

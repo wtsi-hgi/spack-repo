@@ -14,7 +14,7 @@ class RGroc(RPackage):
 	
 	cran = "groc" 
 
-	version("1.0.8", md5="d029ec5ab8e007b1c05a2c784652cc5f")
+	version("1.0.9", md5="889fc3948decf9287db02802066d21da")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rrcov", type=("build", "run"))

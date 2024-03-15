@@ -13,7 +13,7 @@ class RPdDrogene11St(RPackage):
 	"""
 	
 	bioc = "pd.drogene.1.1.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.drogene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.drogene.1.1.st/pd.drogene.1.1.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.drogene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.drogene.1.1.st/pd.drogene.1.1.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="5c63236ea91390d49dbabea63a48f0a2")
 

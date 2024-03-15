@@ -13,7 +13,7 @@ class RCormotif(RPackage):
 	"""
 	
 	bioc = "Cormotif" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Cormotif_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Cormotif/Cormotif_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Cormotif_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Cormotif/Cormotif_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="6e65ec2460aecf6004e416d7c61c4c1d")
 

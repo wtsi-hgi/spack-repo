@@ -13,7 +13,7 @@ class RPdRusgene11St(RPackage):
 	"""
 	
 	bioc = "pd.rusgene.1.1.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.rusgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.rusgene.1.1.st/pd.rusgene.1.1.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rusgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rusgene.1.1.st/pd.rusgene.1.1.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="228837c2de4a4b106806cb7f384564fa")
 

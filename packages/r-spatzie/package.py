@@ -14,7 +14,7 @@ class RSpatzie(RPackage):
 	
 	homepage = "https://spatzie.mit.edu"
 	bioc = "spatzie" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/spatzie_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/spatzie/spatzie_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spatzie_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spatzie/spatzie_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="fa887a71329c75cde9ab0b1aaeb0d481")
 

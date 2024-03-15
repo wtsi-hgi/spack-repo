@@ -14,7 +14,7 @@ class RVoyager(RPackage):
 	
 	homepage = "https://github.com/pachterlab/voyager"
 	bioc = "Voyager" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Voyager_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Voyager/Voyager_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Voyager_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Voyager/Voyager_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="1cc32e63cf1c410d82c2cd1a26f9f929")
 

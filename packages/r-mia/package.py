@@ -14,7 +14,7 @@ class RMia(RPackage):
 	
 	homepage = "https://github.com/microbiome/mia"
 	bioc = "mia" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mia_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mia/mia_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mia_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mia/mia_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="73446335fd354444f38c4e8cf793d520")
 

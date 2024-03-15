@@ -22,7 +22,7 @@ class RWrmisc(RPackage):
 	
 	cran = "wrMisc" 
 
-	version("1.14.1", md5="0a97a1f9d0e3b48348c1aebebd23846a")
+	version("1.14.2", md5="3482ffb1c842b52829d13c08515330ef")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

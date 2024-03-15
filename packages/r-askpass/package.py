@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -19,6 +19,8 @@ class RAskpass(RPackage):
 	a passphrase if needed when R calls out to git or ssh."""
 
 	cran = "askpass"
+
+	license("MIT")
 
 	version("1.2.0", md5="59d2bbfe6bd3a7bf05d56006f1cb1d6a")
 

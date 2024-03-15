@@ -15,7 +15,7 @@ class RCdatanet(RPackage):
 	homepage = "https://github.com/ahoundetoungan/CDatanet"
 	cran = "CDatanet" 
 
-	version("2.1.2", md5="12c9a6be63328f5279c083c7a2c8bf39")
+	version("2.1.3", md5="524b738dc57d5c355b4323b8ba178235")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
@@ -23,6 +23,7 @@ class RCdatanet(RPackage):
 	depends_on("r-formula-tools", type=("build", "run"))
 	depends_on("r-ddpcr", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
+	depends_on("r-matrixcalc", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
 	depends_on("r-rcppprogress", type=("build", "run"))
 	depends_on("r-rcppdist", type=("build", "run"))

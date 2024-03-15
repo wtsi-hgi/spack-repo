@@ -13,7 +13,7 @@ class RDemand(RPackage):
 	"""
 	
 	bioc = "DeMAND" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DeMAND_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DeMAND/DeMAND_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DeMAND_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DeMAND/DeMAND_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="ccb354bddebbebda6c42453810f10e70")
 

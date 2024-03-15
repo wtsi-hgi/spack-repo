@@ -13,7 +13,7 @@ class RRcwlpipelines(RPackage):
 	"""
 	
 	bioc = "RcwlPipelines" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RcwlPipelines_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RcwlPipelines/RcwlPipelines_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RcwlPipelines_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RcwlPipelines/RcwlPipelines_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="5ff1c2848694b09cc639a56009392cf3")
 

@@ -13,7 +13,7 @@ class RM3c(RPackage):
 	"""
 	
 	bioc = "M3C" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/M3C_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/M3C/M3C_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/M3C_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/M3C/M3C_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="e04534528d39712026e9b1de15a12c3d")
 

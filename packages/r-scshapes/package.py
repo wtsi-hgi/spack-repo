@@ -14,7 +14,7 @@ class RScshapes(RPackage):
 	
 	homepage = "https://github.com/Malindrie/scShapes"
 	bioc = "scShapes" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scShapes_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scShapes/scShapes_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scShapes_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scShapes/scShapes_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="5a4954c320f7b1f30f8fbff6e9f5ad91")
 

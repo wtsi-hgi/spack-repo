@@ -13,7 +13,7 @@ class RMageckflute(RPackage):
 	"""
 	
 	bioc = "MAGeCKFlute" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MAGeCKFlute_2.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MAGeCKFlute/MAGeCKFlute_2.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MAGeCKFlute_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MAGeCKFlute/MAGeCKFlute_2.6.0.tar.gz"]
 
 	version("2.6.0", md5="09a3c95fe59a959ce069f5ad56e75276")
 

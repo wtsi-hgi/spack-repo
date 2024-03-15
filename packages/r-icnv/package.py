@@ -13,7 +13,7 @@ class RIcnv(RPackage):
 	"""
 	
 	bioc = "iCNV" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iCNV_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iCNV/iCNV_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iCNV_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iCNV/iCNV_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="ff1415b4764c18a3609c4eb3b6d65a30")
 

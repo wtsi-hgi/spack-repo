@@ -13,7 +13,7 @@ class RAhmeshdbs(RPackage):
 	"""
 	
 	bioc = "AHMeSHDbs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/AHMeSHDbs_1.7.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/AHMeSHDbs/AHMeSHDbs_1.7.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AHMeSHDbs_1.7.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/AHMeSHDbs/AHMeSHDbs_1.7.0.tar.gz"]
 
 	version("1.7.0", md5="9bbcae25794d2f854a122ba36a4e4c5c")
 

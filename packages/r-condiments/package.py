@@ -14,7 +14,7 @@ class RCondiments(RPackage):
 	
 	homepage = "https://hectorrdb.github.io/condiments/index.html"
 	bioc = "condiments" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/condiments_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/condiments/condiments_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/condiments_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/condiments/condiments_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="63b9756275a532e7d38c67402cef7efd")
 

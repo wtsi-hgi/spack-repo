@@ -13,7 +13,7 @@ class RRsvsim(RPackage):
 	"""
 	
 	bioc = "RSVSim" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RSVSim_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RSVSim/RSVSim_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RSVSim_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RSVSim/RSVSim_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="0ce59bfd8791d8b1bf0b4fa48ea37e31")
 

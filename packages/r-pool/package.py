@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,6 +14,8 @@ class RPool(RPackage):
 	objects are 'DBI' connections."""
 
 	cran = "pool"
+
+	license("MIT")
 
 	version("1.0.3", md5="c9eb2149ca6294d2c120dddd77f1b6cc")
 

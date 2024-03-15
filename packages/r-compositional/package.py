@@ -28,7 +28,7 @@ class RCompositional(RPackage):
 	
 	cran = "Compositional" 
 
-	version("6.6", md5="2b8d2453425c13777566b830145d572d")
+	version("6.7", md5="3524a2b8f2a065d2ef7104b46ae9af15")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-codalm", type=("build", "run"))
@@ -36,8 +36,8 @@ class RCompositional(RPackage):
 	depends_on("r-doparallel", type=("build", "run"))
 	depends_on("r-emplik", type=("build", "run"))
 	depends_on("r-energy", type=("build", "run"))
-	depends_on("r-flexdir", type=("build", "run"))
 	depends_on("r-foreach", type=("build", "run"))
+	depends_on("r-flexdir", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-mda", type=("build", "run"))

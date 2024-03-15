@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,7 +18,7 @@ class REdger(RPackage):
 	Bisulfite-seq, SAGE and CAGE."""
 
 	bioc = "edgeR"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/edgeR_4.0.16.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/edgeR/edgeR_4.0.16.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/edgeR_4.0.16.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/edgeR/edgeR_4.0.16.tar.gz"]
 
 	version("4.0.16", md5="8fb1c6c67e29d299c991d16d0f6c5f5b")
 

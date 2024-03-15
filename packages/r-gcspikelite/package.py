@@ -13,7 +13,7 @@ class RGcspikelite(RPackage):
 	"""
 	
 	bioc = "gcspikelite" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/gcspikelite_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/gcspikelite/gcspikelite_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/gcspikelite_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/gcspikelite/gcspikelite_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="91b995753732f0d5508fdc2d7dcb998f")
 

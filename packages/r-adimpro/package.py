@@ -10,14 +10,14 @@ class RAdimpro(RPackage):
 	"""Adaptive Smoothing of Digital Images
 
 	Implements tools for manipulation of digital
-             		images and the Propagation Separation approach
-             		by Polzehl and Spokoiny (2006) <DOI:10.1007/s00440-005-0464-1>
-                        for smoothing digital images, see Polzehl and Tabelow (2007)
-                        <DOI:10.18637/jss.v019.i01>.
+			 		images and the Propagation Separation approach
+			 		by Polzehl and Spokoiny (2006) <DOI:10.1007/s00440-005-0464-1>
+						for smoothing digital images, see Polzehl and Tabelow (2007)
+						<DOI:10.18637/jss.v019.i01>.
 	"""
 	
 	homepage = "https://www.wias-berlin.de/software/imaging/"
-	cran = "adimpro" 
+	cran = "adimpro"
 
 	version("0.9.6", md5="afa98eb722e4c9ec50c945b0c459ebcf")
 

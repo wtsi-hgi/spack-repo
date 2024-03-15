@@ -13,7 +13,7 @@ class RCellnoptr(RPackage):
 	"""
 	
 	bioc = "CellNOptR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CellNOptR_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CellNOptR/CellNOptR_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellNOptR_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellNOptR/CellNOptR_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="22ea1e446726e7b83f26f1f5f614d74f")
 

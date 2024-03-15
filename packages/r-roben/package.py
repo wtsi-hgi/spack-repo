@@ -27,9 +27,9 @@ Interactions
 	homepage = "https://github.com/jrhub/roben"
 	cran = "roben" 
 
-	version("0.1.0", md5="b254b04cec501e3c7554fa6bfd3ec96d")
+	version("0.1.1", md5="c5a20be79275036a7d1727c807b67e85")
 
-	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))

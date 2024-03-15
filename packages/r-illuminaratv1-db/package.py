@@ -13,7 +13,7 @@ class RIlluminaratv1Db(RPackage):
 	"""
 	
 	bioc = "illuminaRatv1.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/illuminaRatv1.db_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/illuminaRatv1.db/illuminaRatv1.db_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/illuminaRatv1.db_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/illuminaRatv1.db/illuminaRatv1.db_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="5de2324d7b96c0cdb3301ef269341aa8")
 

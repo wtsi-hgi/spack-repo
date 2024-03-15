@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -20,7 +20,7 @@ class RBiomformat(RPackage):
 	functions/methods."""
 
 	bioc = "biomformat"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biomformat_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biomformat/biomformat_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biomformat_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biomformat/biomformat_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="f35aaf72b454bc1872f1247642029006")
 

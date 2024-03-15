@@ -13,7 +13,7 @@ class RAll(RPackage):
 	"""
 	
 	bioc = "ALL" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/ALL_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/ALL/ALL_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ALL_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ALL/ALL_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="b80eb482b4937ef4eac01027ac95a61a")
 

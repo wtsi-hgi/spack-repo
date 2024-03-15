@@ -13,7 +13,7 @@ class RHuex10StV2frmavecs(RPackage):
 	"""
 	
 	bioc = "huex.1.0.st.v2frmavecs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/huex.1.0.st.v2frmavecs_1.1.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/huex.1.0.st.v2frmavecs/huex.1.0.st.v2frmavecs_1.1.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/huex.1.0.st.v2frmavecs_1.1.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/huex.1.0.st.v2frmavecs/huex.1.0.st.v2frmavecs_1.1.0.tar.gz"]
 
 	version("1.1.0", md5="982935d07b526ff555790e309fe4147e")
 

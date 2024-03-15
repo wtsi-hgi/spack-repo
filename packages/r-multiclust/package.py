@@ -13,7 +13,7 @@ class RMulticlust(RPackage):
 	"""
 	
 	bioc = "multiClust" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/multiClust_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/multiClust/multiClust_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/multiClust_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/multiClust/multiClust_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="86c305cad6c68f0a1850f056dad9615e")
 

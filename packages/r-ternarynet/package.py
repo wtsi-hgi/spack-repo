@@ -13,7 +13,7 @@ class RTernarynet(RPackage):
 	"""
 	
 	bioc = "ternarynet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ternarynet_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ternarynet/ternarynet_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ternarynet_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ternarynet/ternarynet_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="1ee0ac867354eedf8cf756d94be52589")
 

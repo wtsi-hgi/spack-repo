@@ -14,9 +14,10 @@ class RFflr(RPackage):
     Retrieve data on public leagues, rosters, athletes, and matches.
 	"""
 	
+	homepage = "https://k5cents.github.io/fflr/"
 	cran = "fflr" 
 
-	version("2.2.2", md5="d8a76cdf108b806dac99133001218515")
+	version("2.2.3", md5="ff28f3b8342a6ecd7950e9ff87433fbe")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-httr@1.4.7:", type=("build", "run"))

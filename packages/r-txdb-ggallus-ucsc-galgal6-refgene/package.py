@@ -13,7 +13,7 @@ class RTxdbGgallusUcscGalgal6Refgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Ggallus.UCSC.galGal6.refGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Ggallus.UCSC.galGal6.refGene_3.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Ggallus.UCSC.galGal6.refGene/TxDb.Ggallus.UCSC.galGal6.refGene_3.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Ggallus.UCSC.galGal6.refGene_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Ggallus.UCSC.galGal6.refGene/TxDb.Ggallus.UCSC.galGal6.refGene_3.10.0.tar.gz"]
 
 	version("3.10.0", md5="4d81026ecb786abf1fe0cb548238214c")
 

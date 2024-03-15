@@ -13,7 +13,7 @@ class RLumihumanidmapping(RPackage):
 	"""
 	
 	bioc = "lumiHumanIDMapping" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/lumiHumanIDMapping_1.10.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/lumiHumanIDMapping/lumiHumanIDMapping_1.10.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/lumiHumanIDMapping_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/lumiHumanIDMapping/lumiHumanIDMapping_1.10.1.tar.gz"]
 
 	version("1.10.1", md5="007e5aa2f1596cc08d888ba6dce7148a")
 

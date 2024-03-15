@@ -14,7 +14,7 @@ class RRnaseqcovarimpute(RPackage):
 	
 	homepage = "https://github.com/brennanhilton/RNAseqCovarImpute"
 	bioc = "RNAseqCovarImpute" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RNAseqCovarImpute_1.0.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RNAseqCovarImpute/RNAseqCovarImpute_1.0.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNAseqCovarImpute_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNAseqCovarImpute/RNAseqCovarImpute_1.0.2.tar.gz"]
 
 	version("1.0.2", md5="17d14273ae359562d3f0cbf1c45b10a7")
 

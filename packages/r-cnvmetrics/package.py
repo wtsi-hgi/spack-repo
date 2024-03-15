@@ -14,7 +14,7 @@ class RCnvmetrics(RPackage):
 	
 	homepage = "https://github.com/krasnitzlab/CNVMetrics"
 	bioc = "CNVMetrics" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CNVMetrics_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CNVMetrics/CNVMetrics_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNVMetrics_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNVMetrics/CNVMetrics_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="ebb4f847744aaddcc125d870b1a67154")
 

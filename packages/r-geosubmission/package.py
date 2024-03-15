@@ -13,7 +13,7 @@ class RGeosubmission(RPackage):
 	"""
 	
 	bioc = "GEOsubmission" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GEOsubmission_1.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GEOsubmission/GEOsubmission_1.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEOsubmission_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEOsubmission/GEOsubmission_1.54.0.tar.gz"]
 
 	version("1.54.0", md5="835a74433a1f0235676bf2d1012096af")
 

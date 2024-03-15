@@ -14,7 +14,7 @@ class RMicrobiome(RPackage):
 	
 	homepage = "http://microbiome.github.io/microbiome"
 	bioc = "microbiome" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/microbiome_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/microbiome/microbiome_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/microbiome_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/microbiome/microbiome_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="2d185cf8b8bf7d23f295dee1af621a0f")
 

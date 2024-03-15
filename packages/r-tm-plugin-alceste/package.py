@@ -7,19 +7,19 @@ from spack.package import *
 
 
 class RTmPluginAlceste(RPackage):
-	"""Import texts from files in the Alceste format using the tm text
-mining framework
+	"""Import Texts from Files in the 'Alceste' Format Using the 'tm'
+Text Mining Framework
 
-	This package provides a tm Source to create corpora from
-  a corpus prepared in the format used by the Alceste application (i.e.
+	Provides a 'tm' Source to create corpora from
+  a corpus prepared in the format used by the 'Alceste' application (i.e.
   a single text file with inline meta-data). It is able to import both
   text contents and meta-data (starred) variables.
 	"""
 	
-	homepage = "https://r-forge.r-project.org/projects/r-temis/"
+	homepage = "https://github.com/nalimilan/R.TeMiS"
 	cran = "tm.plugin.alceste" 
 
-	version("1.1", md5="7118fe140a1c3c51c12ed409ec4741c8")
+	version("1.1.1", md5="fa11b8d034a8cd726f2e776a41b13256")
 
 	depends_on("r-nlp", type=("build", "run"))
 	depends_on("r-tm@0.6:", type=("build", "run"))

@@ -13,7 +13,7 @@ class RNadfinder(RPackage):
 	"""
 	
 	bioc = "NADfinder" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/NADfinder_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/NADfinder/NADfinder_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NADfinder_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NADfinder/NADfinder_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="d60f5020a7e46305fafc626c59a11851")
 

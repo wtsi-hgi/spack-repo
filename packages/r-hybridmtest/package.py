@@ -13,7 +13,7 @@ class RHybridmtest(RPackage):
 	"""
 	
 	bioc = "HybridMTest" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HybridMTest_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HybridMTest/HybridMTest_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HybridMTest_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HybridMTest/HybridMTest_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="a2b1764b0e458f82e6055a3ebdf90933")
 

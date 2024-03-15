@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class RGenemeta(RPackage):
 	experimental data"""
 
 	bioc = "GeneMeta"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GeneMeta_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GeneMeta/GeneMeta_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneMeta_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneMeta/GeneMeta_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="9d9d2d3dff0ee8a497ac86b5ef8ddac7")
 

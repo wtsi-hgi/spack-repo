@@ -14,7 +14,7 @@ class RHealthycontrolspresencechecker(RPackage):
 	
 	homepage = "https://github.com/davidechicco/healthyControlsPresenceChecker"
 	bioc = "healthyControlsPresenceChecker" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/healthyControlsPresenceChecker_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/healthyControlsPresenceChecker/healthyControlsPresenceChecker_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/healthyControlsPresenceChecker_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/healthyControlsPresenceChecker/healthyControlsPresenceChecker_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="50ba7cea9e361d43c78d64ce1c89ba1a")
 

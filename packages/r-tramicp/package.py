@@ -18,7 +18,7 @@ class RTramicp(RPackage):
 	
 	cran = "tramicp" 
 
-	version("0.0-1", md5="47db3d770c244c4cfc43d285c724a196")
+	version("0.0-2", md5="8602ee44e57547174ef2e02a0a38cf45")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-tram", type=("build", "run"))

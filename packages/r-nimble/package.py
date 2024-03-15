@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -25,6 +25,8 @@ class RNimble(RPackage):
 	well. A full User Manual is available at <https://r-nimble.org>."""
 
 	cran = "nimble"
+
+	license("BSD-3-Clause OR GPL-2.0-or-later")
 
 	version("1.1.0", md5="f7c25cb64a0881ae81cafae8d445a706")
 

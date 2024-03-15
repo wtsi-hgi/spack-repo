@@ -14,7 +14,7 @@ class RFieldeffectcrc(RPackage):
 	
 	homepage = "http://bioconductor.org/packages/release/bioc/html/FieldEffectCrc.html"
 	bioc = "FieldEffectCrc" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/FieldEffectCrc_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/FieldEffectCrc/FieldEffectCrc_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FieldEffectCrc_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FieldEffectCrc/FieldEffectCrc_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="73fa4e8649f3c4a523764d35afd421f2")
 

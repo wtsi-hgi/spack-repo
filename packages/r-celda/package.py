@@ -13,7 +13,7 @@ class RCelda(RPackage):
 	"""
 	
 	bioc = "celda" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/celda_1.18.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/celda/celda_1.18.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/celda_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/celda/celda_1.18.1.tar.gz"]
 
 	version("1.18.1", md5="5b60cdee9ee9cbb13f4af0a40abdd177")
 

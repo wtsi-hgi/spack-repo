@@ -13,7 +13,7 @@ class RHmmcopy(RPackage):
 	"""
 	
 	bioc = "HMMcopy" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HMMcopy_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HMMcopy/HMMcopy_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HMMcopy_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HMMcopy/HMMcopy_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="4785371e1642cd191330693396010a6e")
 

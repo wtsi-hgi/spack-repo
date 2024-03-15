@@ -13,9 +13,9 @@ class RGse13015(RPackage):
 	"""
 	
 	bioc = "GSE13015" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/GSE13015_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/GSE13015/GSE13015_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GSE13015_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GSE13015/GSE13015_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="99fae6872abf6820842a1340f7fd6b4e", url="https://www.bioconductor.org/packages/release/data/experiment/src/contrib/GSE13015_1.10.0.tar.gz")
+	version("1.10.0", md5="99fae6872abf6820842a1340f7fd6b4e", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GSE13015_1.10.0.tar.gz")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-geoquery", type=("build", "run"))

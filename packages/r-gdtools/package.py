@@ -21,7 +21,7 @@ class RGdtools(RPackage):
 	homepage = "https://davidgohel.github.io/gdtools/"
 	cran = "gdtools" 
 
-	version("0.3.6", md5="25d12129c0ac5997757b5526e80d4efc")
+	version("0.3.7", md5="9df853df8a9b0255f01610d6133d5350")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

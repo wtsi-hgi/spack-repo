@@ -13,7 +13,7 @@ class RPdCharmHg18Example(RPackage):
 	"""
 	
 	bioc = "pd.charm.hg18.example" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.charm.hg18.example_0.99.4.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.charm.hg18.example/pd.charm.hg18.example_0.99.4.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.charm.hg18.example_0.99.4.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.charm.hg18.example/pd.charm.hg18.example_0.99.4.tar.gz"]
 
 	version("0.99.4", md5="e201d4281a23c202f57bae1135e226b4")
 

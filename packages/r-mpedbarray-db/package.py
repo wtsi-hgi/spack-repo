@@ -13,7 +13,7 @@ class RMpedbarrayDb(RPackage):
 	"""
 	
 	bioc = "mpedbarray.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mpedbarray.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mpedbarray.db/mpedbarray.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mpedbarray.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mpedbarray.db/mpedbarray.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="7bcd1fee1554b6f8844c9bf30b7db4ef")
 

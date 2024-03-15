@@ -13,7 +13,7 @@ class REpivizr(RPackage):
 	"""
 	
 	bioc = "epivizr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/epivizr_2.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/epivizr/epivizr_2.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epivizr_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epivizr/epivizr_2.32.0.tar.gz"]
 
 	version("2.32.0", md5="aaf997f0c4eccf72d795d79a3ebd7bfe")
 

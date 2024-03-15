@@ -13,7 +13,7 @@ class RDemixt(RPackage):
 	"""
 	
 	bioc = "DeMixT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DeMixT_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DeMixT/DeMixT_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DeMixT_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DeMixT/DeMixT_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="7d2e6439b9eb756f3f9e8a6a3c206d4e")
 

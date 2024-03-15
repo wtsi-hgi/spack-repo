@@ -14,7 +14,7 @@ class RRwikipathways(RPackage):
 	
 	homepage = "https://github.com/wikipathways/rwikipathways"
 	bioc = "rWikiPathways" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rWikiPathways_1.22.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rWikiPathways/rWikiPathways_1.22.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rWikiPathways_1.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rWikiPathways/rWikiPathways_1.22.1.tar.gz"]
 
 	version("1.22.1", md5="4a836092dcb14297a316efeb45de307d")
 

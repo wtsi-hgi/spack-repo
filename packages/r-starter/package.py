@@ -20,7 +20,7 @@ class RStarter(RPackage):
 	homepage = "https://github.com/ddsjoberg/starter"
 	cran = "starter" 
 
-	version("0.1.14", md5="4d0a3ec1ddd0faaf41da53b1bcaa88b0")
+	version("0.1.15", md5="6e40677308aa72361dd21cc01f5a36a2")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr@1.1:", type=("build", "run"))

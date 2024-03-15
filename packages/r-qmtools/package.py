@@ -14,7 +14,7 @@ class RQmtools(RPackage):
 	
 	homepage = "https://github.com/HimesGroup/qmtools"
 	bioc = "qmtools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/qmtools_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/qmtools/qmtools_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qmtools_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qmtools/qmtools_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="941d7cbf1dc8c2622fe97bda18a2bf49")
 

@@ -13,7 +13,7 @@ class RMoe430bDb(RPackage):
 	"""
 	
 	bioc = "moe430b.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/moe430b.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/moe430b.db/moe430b.db_3.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/moe430b.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/moe430b.db/moe430b.db_3.13.0.tar.gz"]
 
 	version("3.13.0", md5="2d8a80b9d3342fb943087cc327c824e7")
 

@@ -13,7 +13,7 @@ class REnsemblvep(RPackage):
 	"""
 	
 	bioc = "ensemblVEP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ensemblVEP_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ensemblVEP/ensemblVEP_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ensemblVEP_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ensemblVEP/ensemblVEP_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="378569d68f5d4973a7b16eb7cc2b9327")
 

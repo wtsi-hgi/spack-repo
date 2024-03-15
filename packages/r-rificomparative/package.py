@@ -13,7 +13,7 @@ class RRificomparative(RPackage):
 	"""
 	
 	bioc = "rifiComparative" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rifiComparative_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rifiComparative/rifiComparative_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rifiComparative_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rifiComparative/rifiComparative_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="d371dc0f2b156f4565b09b7cfa5406e0")
 

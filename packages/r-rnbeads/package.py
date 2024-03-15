@@ -13,7 +13,7 @@ class RRnbeads(RPackage):
 	"""
 	
 	bioc = "RnBeads" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RnBeads_2.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RnBeads/RnBeads_2.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RnBeads_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RnBeads/RnBeads_2.20.0.tar.gz"]
 
 	version("2.20.0", md5="40a269bbbddeb407ca5c4545cb6852ff")
 

@@ -13,7 +13,7 @@ class RRankprod(RPackage):
 	"""
 	
 	bioc = "RankProd" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RankProd_3.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RankProd/RankProd_3.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RankProd_3.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RankProd/RankProd_3.28.0.tar.gz"]
 
 	version("3.28.0", md5="39f3eba64601984ad265d91f3a150180")
 

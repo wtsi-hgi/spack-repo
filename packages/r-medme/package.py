@@ -13,7 +13,7 @@ class RMedme(RPackage):
 	"""
 	
 	bioc = "MEDME" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MEDME_1.62.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MEDME/MEDME_1.62.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MEDME_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MEDME/MEDME_1.62.0.tar.gz"]
 
 	version("1.62.0", md5="03868c2e2f04af9c9f33d48cc6abed08")
 

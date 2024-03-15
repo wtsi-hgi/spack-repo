@@ -16,10 +16,10 @@ class RGenesysr(RPackage):
 	homepage = "https://gitlab.croptrust.org/genesys-pgr/genesysr"
 	cran = "genesysr" 
 
-	version("2.1.0", md5="136b481c2d0ac75d5dbea8d1a378d82e")
+	version("2.1.1", md5="b602b9f2d509c92f412242538b304d5e")
 
 	depends_on("r@3.1:", type=("build", "run"))
-	depends_on("r-httr2", type=("build", "run"))
+	depends_on("r-httr2@1:", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-readr", type=("build", "run"))

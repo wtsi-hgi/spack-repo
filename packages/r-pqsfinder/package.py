@@ -14,7 +14,7 @@ class RPqsfinder(RPackage):
 	
 	homepage = "https://pqsfinder.fi.muni.cz"
 	bioc = "pqsfinder" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pqsfinder_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pqsfinder/pqsfinder_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pqsfinder_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pqsfinder/pqsfinder_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="c1201a86985850d5ace97c629e2d4864")
 

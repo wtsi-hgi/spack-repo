@@ -14,7 +14,7 @@ class RMagpie(RPackage):
 	
 	homepage = "https://github.com/dxd429/magpie"
 	bioc = "magpie" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/magpie_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/magpie/magpie_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/magpie_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/magpie/magpie_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="019cf9b038353b96851fe65fa55f3d08")
 

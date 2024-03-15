@@ -14,7 +14,7 @@ class RFlowcybar(RPackage):
 	
 	homepage = "http://www.ufz.de/index.php?de=16773"
 	bioc = "flowCyBar" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowCyBar_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowCyBar/flowCyBar_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowCyBar_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowCyBar/flowCyBar_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="9236c02598960d4536906fb7449a7dd4")
 

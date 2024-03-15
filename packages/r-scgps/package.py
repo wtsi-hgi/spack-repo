@@ -13,7 +13,7 @@ class RScgps(RPackage):
 	"""
 	
 	bioc = "scGPS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scGPS_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scGPS/scGPS_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scGPS_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scGPS/scGPS_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="5d11fe3a4af0d56d3028d97c6090ccfb")
 

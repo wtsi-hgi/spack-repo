@@ -14,7 +14,7 @@ class RScdd(RPackage):
 	
 	homepage = "https://github.com/kdkorthauer/scDD"
 	bioc = "scDD" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scDD_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scDD/scDD_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDD_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scDD/scDD_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="3c95209683b09f0584ab315a6fc1e779")
 

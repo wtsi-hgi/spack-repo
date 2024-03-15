@@ -14,7 +14,7 @@ class RDelayedrandomarray(RPackage):
 	
 	homepage = "https://github.com/LTLA/DelayedRandomArray"
 	bioc = "DelayedRandomArray" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DelayedRandomArray_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DelayedRandomArray/DelayedRandomArray_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DelayedRandomArray_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DelayedRandomArray/DelayedRandomArray_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="2f583ab177fd333cf626827fc28a6faf")
 

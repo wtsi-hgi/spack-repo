@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,6 +14,8 @@ class RLeaflet(RPackage):
 	the R console, from 'RStudio', in Shiny apps and R Markdown documents."""
 
 	cran = "leaflet"
+
+	license("GPL-3.0-only")
 
 	version("2.2.1", md5="798961353e12b0eeabff5de4e744a6e2")
 

@@ -14,7 +14,7 @@ class RCsdr(RPackage):
 	
 	homepage = "https://almaaslab.github.io/csdR"
 	bioc = "csdR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/csdR_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/csdR/csdR_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/csdR_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/csdR/csdR_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="02132c2d953434d0bb7de9b58e8b5769")
 

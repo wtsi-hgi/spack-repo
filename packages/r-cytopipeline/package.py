@@ -14,7 +14,7 @@ class RCytopipeline(RPackage):
 	
 	homepage = "https://uclouvain-cbio.github.io/CytoPipeline"
 	bioc = "CytoPipeline" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CytoPipeline_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CytoPipeline/CytoPipeline_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CytoPipeline_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CytoPipeline/CytoPipeline_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="a4ed3b88553c7115d7dce368a0fda5a5")
 

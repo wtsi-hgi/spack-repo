@@ -13,7 +13,7 @@ class RRcas(RPackage):
 	"""
 	
 	bioc = "RCAS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RCAS_1.28.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RCAS/RCAS_1.28.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCAS_1.28.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RCAS/RCAS_1.28.3.tar.gz"]
 
 	version("1.28.3", md5="ed2c97bacd70c083df386e7df14d0c11")
 

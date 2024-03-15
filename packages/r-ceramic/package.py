@@ -17,7 +17,7 @@ class RCeramic(RPackage):
 	homepage = "https://hypertidy.github.io/ceramic/"
 	cran = "ceramic" 
 
-	version("0.9.0", md5="c7682b522e59bda855aad7d3935e6c1f")
+	version("0.9.5", md5="74c86ca99efe7c6d04ec662b2be9b063")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-terra", type=("build", "run"))

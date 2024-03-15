@@ -13,7 +13,7 @@ class RPlasmut(RPackage):
 	"""
 	
 	bioc = "plasmut" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/plasmut_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/plasmut/plasmut_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/plasmut_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/plasmut/plasmut_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="8681d905157c0cbb8b46e48cbe4ecde9")
 

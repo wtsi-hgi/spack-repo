@@ -14,7 +14,7 @@ class RMakemyprior(RPackage):
 	
 	cran = "makemyprior" 
 
-	version("1.1.0", md5="f4c9e71ba5df9f4e5d44904c102ef14d")
+	version("1.2.0", md5="f5cfabe3202881bd885726a22aaebd3d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

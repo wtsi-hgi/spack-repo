@@ -13,7 +13,7 @@ class RMirnatarget(RPackage):
 	"""
 	
 	bioc = "miRNATarget" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/miRNATarget_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/miRNATarget/miRNATarget_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/miRNATarget_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/miRNATarget/miRNATarget_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="f1988a96af5f0232abfbe507854d49bb")
 

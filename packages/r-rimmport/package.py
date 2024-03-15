@@ -14,7 +14,7 @@ class RRimmport(RPackage):
 	
 	homepage = "http://bioconductor.org/packages/RImmPort/"
 	bioc = "RImmPort" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RImmPort_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RImmPort/RImmPort_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RImmPort_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RImmPort/RImmPort_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="9a35da0a38439eee55d04ff8321ff09d")
 

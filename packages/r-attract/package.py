@@ -13,7 +13,7 @@ class RAttract(RPackage):
 	"""
 	
 	bioc = "attract" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/attract_1.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/attract/attract_1.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/attract_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/attract/attract_1.54.0.tar.gz"]
 
 	version("1.54.0", md5="e7d563026d5d00b5dd3bd906268af221")
 

@@ -14,7 +14,7 @@ class RMungesumstats(RPackage):
 	
 	homepage = "https://github.com/neurogenomics/MungeSumstats"
 	bioc = "MungeSumstats" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MungeSumstats_1.10.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MungeSumstats/MungeSumstats_1.10.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MungeSumstats_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MungeSumstats/MungeSumstats_1.10.1.tar.gz"]
 
 	version("1.10.1", md5="9164f3e5c8e7612c387b35bff82dc4cc")
 

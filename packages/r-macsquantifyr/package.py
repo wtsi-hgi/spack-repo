@@ -13,7 +13,7 @@ class RMacsquantifyr(RPackage):
 	"""
 	
 	bioc = "MACSQuantifyR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MACSQuantifyR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MACSQuantifyR/MACSQuantifyR_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MACSQuantifyR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MACSQuantifyR/MACSQuantifyR_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="b0bc5dd3ddff22c28356a8af09704f82")
 

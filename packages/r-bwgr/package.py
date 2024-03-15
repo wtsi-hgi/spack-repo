@@ -16,7 +16,7 @@ class RBwgr(RPackage):
 	
 	cran = "bWGR" 
 
-	version("2.2.5", md5="1b970793238860d47e22239895404937")
+	version("2.2.6", md5="c2c6aadb2844b224d2437d94f0aedd5c")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

@@ -15,25 +15,25 @@ class RAltmeta(RPackage):
    (Chu et al., 2012 <doi:10.1177/0962280210393712>)
  - heterogeneity tests and measures and penalization methods that are robust to outliers
    (Lin et al., 2017 <doi:10.1111/biom.12543>;
-    Wang et al., 2022 <doi:10.1002/sim.9261>);
+	Wang et al., 2022 <doi:10.1002/sim.9261>);
  - measures, tests, and visualization tools for publication bias or small-study effects
    (Lin and Chu, 2018 <doi:10.1111/biom.12817>;
-    Lin, 2019 <doi:10.1002/jrsm.1340>;
-    Lin, 2020 <doi:10.1177/0962280220910172>;
-    Shi et al., 2020 <doi:10.1002/jrsm.1415>);
+	Lin, 2019 <doi:10.1002/jrsm.1340>;
+	Lin, 2020 <doi:10.1177/0962280220910172>;
+	Shi et al., 2020 <doi:10.1002/jrsm.1415>);
  - meta-analysis of diagnostic tests for synthesizing sensitivities, specificities, etc.
    (Reitsma et al., 2005 <doi:10.1016/j.jclinepi.2005.02.022>;
-    Chu and Cole, 2006 <doi:10.1016/j.jclinepi.2006.06.011>);
+	Chu and Cole, 2006 <doi:10.1016/j.jclinepi.2006.06.011>);
  - meta-analysis methods for synthesizing proportions
    (Lin and Chu, 2020 <doi:10.1097/ede.0000000000001232>);
  - models for multivariate meta-analysis, measures of inconsistency degrees of freedom
    in Bayesian network meta-analysis, and predictive P-score
    (Lin and Chu, 2018 <doi:10.1002/jrsm.1293>;
-    Lin, 2020 <doi:10.1080/10543406.2020.1852247>;
-    Rosenberger et al., 2021 <doi:10.1186/s12874-021-01397-5>).
+	Lin, 2020 <doi:10.1080/10543406.2020.1852247>;
+	Rosenberger et al., 2021 <doi:10.1186/s12874-021-01397-5>).
 	"""
 	
-	cran = "altmeta" 
+	cran = "altmeta"
 
 	version("4.1", md5="7d70e2a83779fdc338d57dbfe27e8aab")
 

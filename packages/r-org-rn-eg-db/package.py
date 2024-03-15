@@ -13,7 +13,7 @@ class ROrgRnEgDb(RPackage):
 	"""
 	
 	bioc = "org.Rn.eg.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/org.Rn.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/org.Rn.eg.db/org.Rn.eg.db_3.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Rn.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.Rn.eg.db/org.Rn.eg.db_3.18.0.tar.gz"]
 
 	version("3.18.0", md5="1ff92cec0fc2cbd5b3055d1153526ce3")
 

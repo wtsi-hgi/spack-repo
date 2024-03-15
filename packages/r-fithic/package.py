@@ -13,7 +13,7 @@ class RFithic(RPackage):
 	"""
 	
 	bioc = "FitHiC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/FitHiC_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/FitHiC/FitHiC_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FitHiC_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FitHiC/FitHiC_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="ee894d402d0c5567935ade4f8dc75c29")
 

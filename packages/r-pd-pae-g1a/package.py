@@ -13,7 +13,7 @@ class RPdPaeG1a(RPackage):
 	"""
 	
 	bioc = "pd.pae.g1a" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.pae.g1a_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.pae.g1a/pd.pae.g1a_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.pae.g1a_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.pae.g1a/pd.pae.g1a_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="d96462eb35c63b30772bccae2a27a8cd")
 

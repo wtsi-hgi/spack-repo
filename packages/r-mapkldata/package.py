@@ -13,7 +13,7 @@ class RMapkldata(RPackage):
 	"""
 	
 	bioc = "mAPKLData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/mAPKLData_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/mAPKLData/mAPKLData_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mAPKLData_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mAPKLData/mAPKLData_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="ce6399a1c853cb4e78de226347c3dc5d")
 

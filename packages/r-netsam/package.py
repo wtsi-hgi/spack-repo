@@ -13,7 +13,7 @@ class RNetsam(RPackage):
 	"""
 	
 	bioc = "NetSAM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/NetSAM_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/NetSAM/NetSAM_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NetSAM_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NetSAM/NetSAM_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="8248bae56028b8d8ee872cb007cbd7f5")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -21,6 +21,8 @@ class RFastcluster(RPackage):
 	INSTALL in the source distribution."""
 
 	cran = "fastcluster"
+
+	license("BSD-2-Clause OR GPL-2.0-only OR custom")
 
 	version("1.2.6", md5="252ea997088794972aac679fb6772530")
 

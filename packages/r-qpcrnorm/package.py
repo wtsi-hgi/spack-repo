@@ -13,7 +13,7 @@ class RQpcrnorm(RPackage):
 	"""
 	
 	bioc = "qpcrNorm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/qpcrNorm_1.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/qpcrNorm/qpcrNorm_1.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qpcrNorm_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qpcrNorm/qpcrNorm_1.60.0.tar.gz"]
 
 	version("1.60.0", md5="43fa513309301e6d8e89fcef668c7b28")
 

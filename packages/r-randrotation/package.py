@@ -14,7 +14,7 @@ class RRandrotation(RPackage):
 	
 	homepage = "https://github.com/phettegger/randRotation"
 	bioc = "randRotation" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/randRotation_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/randRotation/randRotation_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/randRotation_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/randRotation/randRotation_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="a05faf1fe582450a789fc2d58960fa97")
 

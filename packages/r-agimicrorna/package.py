@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class RAgimicrorna(RPackage):
 	Processing and Analysis of Agilent microRNA data."""
 
 	bioc = "AgiMicroRna"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AgiMicroRna_2.52.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AgiMicroRna/AgiMicroRna_2.52.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AgiMicroRna_2.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AgiMicroRna/AgiMicroRna_2.52.0.tar.gz"]
 
 	version("2.52.0", md5="1c1046ab29a7766af0c602c974b4ec21")
 

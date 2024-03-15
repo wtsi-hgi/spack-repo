@@ -9,13 +9,13 @@ from spack.package import *
 class RPartialnetwork(RPackage):
 	"""Estimating Peer Effects Using Partial Network Data
 
-	Implements IV-estimator and Bayesian estimator for linear-in-means Spatial Autoregressive (SAR) model (see LeSage, 1997 <https://journals.sagepub.com/doi/10.1177/016001769702000107>; Lee, 2004 <https://onlinelibrary.wiley.com/doi/abs/10.1111/j.1468-0262.2004.00558.x>; Bramoullé et al., 2009 <doi:10.1016/j.jeconom.2008.12.021>), while assuming that only a partial information about the network structure is available. Examples are when the adjacency matrix is not fully observed or when only consistent estimation of the network formation model is available (see Boucher and Houndetoungan <https://ahoundetoungan.com/files/Papers/PartialNetwork.pdf>).
+	Implements IV-estimator and Bayesian estimator for linear-in-means Spatial Autoregressive (SAR) model (see LeSage, 1997 <doi:10.1177/016001769702000107>; Lee, 2004 <doi:10.1111/j.1468-0262.2004.00558.x>; Bramoullé et al., 2009 <doi:10.1016/j.jeconom.2008.12.021>), while assuming that only a partial information about the network structure is available. Examples are when the adjacency matrix is not fully observed or when only consistent estimation of the network formation model is available (see Boucher and Houndetoungan <https://ahoundetoungan.com/files/Papers/PartialNetwork.pdf>).
 	"""
 	
 	homepage = "https://github.com/ahoundetoungan/PartialNetwork"
 	cran = "PartialNetwork" 
 
-	version("1.0.2", md5="cc21efce8e8eee1ec132e7a2353eaa1e")
+	version("1.0.3", md5="be4254757216fd51a09dabbf01791cf0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

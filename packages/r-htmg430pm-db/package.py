@@ -13,7 +13,7 @@ class RHtmg430pmDb(RPackage):
 	"""
 	
 	bioc = "htmg430pm.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/htmg430pm.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/htmg430pm.db/htmg430pm.db_3.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/htmg430pm.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/htmg430pm.db/htmg430pm.db_3.13.0.tar.gz"]
 
 	version("3.13.0", md5="f89738ce2e33d1c626aa2d15cd28a49b")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -19,6 +19,8 @@ class RSegmented(RPackage):
 	breakpoint is discussed in Muggeo (2017, <doi:10.1111/anzs.12200>)."""
 
 	cran = "segmented"
+
+	license("GPL-2.0-or-later")
 
 	version("2.0-3", md5="1ea139e06c62456571430a62cc3cbc8b")
 

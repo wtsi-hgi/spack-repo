@@ -14,7 +14,7 @@ class RFastpcs(RPackage):
 	
 	cran = "FastPCS" 
 
-	version("0.1.3", md5="9a6e0b4cce7e343ce13c285df677ec94")
+	version("0.1.4", md5="a8f31dd9fa51ff60d2c68618b1d70620")
 
 	depends_on("r@3.1.1:", type=("build", "run"))
 	depends_on("r-matrixstats", type=("build", "run"))

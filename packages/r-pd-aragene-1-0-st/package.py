@@ -13,7 +13,7 @@ class RPdAragene10St(RPackage):
 	"""
 	
 	bioc = "pd.aragene.1.0.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.aragene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.aragene.1.0.st/pd.aragene.1.0.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.aragene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.aragene.1.0.st/pd.aragene.1.0.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="ff87a0793fd4b713c4a45b6c1d4a4977")
 

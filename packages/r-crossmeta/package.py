@@ -14,7 +14,7 @@ class RCrossmeta(RPackage):
 	
 	homepage = "https://github.com/alexvpickering/crossmeta"
 	bioc = "crossmeta" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/crossmeta_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/crossmeta/crossmeta_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crossmeta_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crossmeta/crossmeta_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="5bc5c865fba1a04864f9a0643adf041f")
 

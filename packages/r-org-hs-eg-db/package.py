@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class ROrgHsEgDb(RPackage):
 	Gene identifiers."""
 
 	bioc = "org.Hs.eg.db"
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/org.Hs.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/org.Hs.eg.db/org.Hs.eg.db_3.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Hs.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.Hs.eg.db/org.Hs.eg.db_3.18.0.tar.gz"]
 
 	version("3.18.0", md5="e1f74b9d0c541b5678a0d88f6a8ec847")
 

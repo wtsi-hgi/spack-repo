@@ -14,7 +14,7 @@ class RSomnibus(RPackage):
 	
 	homepage = "https://github.com/kaiqiong/SOMNiBUS"
 	bioc = "SOMNiBUS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SOMNiBUS_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SOMNiBUS/SOMNiBUS_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SOMNiBUS_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SOMNiBUS/SOMNiBUS_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="0865c015122f915127302bf751a10812")
 

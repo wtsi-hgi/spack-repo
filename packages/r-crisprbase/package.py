@@ -14,7 +14,7 @@ class RCrisprbase(RPackage):
 	
 	homepage = "https://github.com/crisprVerse/crisprBase"
 	bioc = "crisprBase" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/crisprBase_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/crisprBase/crisprBase_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crisprBase_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crisprBase/crisprBase_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="20cc1254ee7d33a966bb795f09f8be44")
 

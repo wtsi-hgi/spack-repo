@@ -13,7 +13,7 @@ class RSaureuscdf(RPackage):
 	"""
 	
 	bioc = "saureuscdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/saureuscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/saureuscdf/saureuscdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/saureuscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/saureuscdf/saureuscdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="d01883e4c3dd99f32012e6dbab8cdb8b")
 

@@ -13,7 +13,7 @@ class RAlabasterRanges(RPackage):
 	"""
 	
 	bioc = "alabaster.ranges" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/alabaster.ranges_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/alabaster.ranges/alabaster.ranges_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.ranges_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.ranges/alabaster.ranges_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="af5d849080999b0167cc39fc182721e9")
 

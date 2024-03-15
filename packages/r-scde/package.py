@@ -14,7 +14,7 @@ class RScde(RPackage):
 	
 	homepage = "http://pklab.med.harvard.edu/scde"
 	bioc = "scde" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scde_2.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scde/scde_2.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scde_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scde/scde_2.30.0.tar.gz"]
 
 	version("2.30.0", md5="ee4cb04c3a1431fb088d8681ff950d49")
 

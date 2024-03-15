@@ -14,7 +14,7 @@ class RRaresim(RPackage):
 	
 	homepage = "https://github.com/meganmichelle/RAREsim"
 	bioc = "RAREsim" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RAREsim_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RAREsim/RAREsim_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RAREsim_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RAREsim/RAREsim_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="6ec5b86f348e2d4ffb365da80651041e")
 

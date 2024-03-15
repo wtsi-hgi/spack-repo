@@ -13,7 +13,7 @@ class RZebrafishrnaseq(RPackage):
 	"""
 	
 	bioc = "zebrafishRNASeq" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/zebrafishRNASeq_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/zebrafishRNASeq/zebrafishRNASeq_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/zebrafishRNASeq_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/zebrafishRNASeq/zebrafishRNASeq_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="c1fcbadec1b25e4b28483c015f7ab35c")
 

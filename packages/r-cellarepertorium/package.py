@@ -14,7 +14,7 @@ class RCellarepertorium(RPackage):
 	
 	homepage = "https://github.com/amcdavid/CellaRepertorium"
 	bioc = "CellaRepertorium" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CellaRepertorium_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CellaRepertorium/CellaRepertorium_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellaRepertorium_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellaRepertorium/CellaRepertorium_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="eceb5905cee5e0f9b9ba1ea47db2f1d3")
 

@@ -13,7 +13,7 @@ class RMassir(RPackage):
 	"""
 	
 	bioc = "massiR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/massiR_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/massiR/massiR_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/massiR_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/massiR/massiR_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="f2dda0fb78f776b416af77100e902b55")
 

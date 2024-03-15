@@ -13,7 +13,7 @@ class RColonca(RPackage):
 	"""
 	
 	bioc = "colonCA" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/colonCA_1.44.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/colonCA/colonCA_1.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/colonCA_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/colonCA/colonCA_1.44.0.tar.gz"]
 
 	version("1.44.0", md5="d12f03a7ded676f392dbbb26bbbef174")
 

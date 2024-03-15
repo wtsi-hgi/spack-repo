@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -28,6 +28,8 @@ class RDigest(RPackage):
 
 	cran = "digest"
 
-	version("0.6.34", md5="2433ecb059ed52176f16aab34f9238cf")
+	license("GPL-2.0-or-later")
+
+	version("0.6.35", md5="5982282cd780b1202925fe8f5a06a52e")
 
 	depends_on("r@3.3:", type=("build", "run"))

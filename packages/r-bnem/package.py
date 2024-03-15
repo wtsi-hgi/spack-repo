@@ -14,7 +14,7 @@ class RBnem(RPackage):
 	
 	homepage = "https://github.com/MartinFXP/bnem/"
 	bioc = "bnem" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/bnem_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/bnem/bnem_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bnem_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bnem/bnem_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="84eb035082edc5cefe35763abde3093f")
 

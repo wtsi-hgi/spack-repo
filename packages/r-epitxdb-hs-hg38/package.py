@@ -14,9 +14,9 @@ class REpitxdbHsHg38(RPackage):
 	
 	homepage = "https://github.com/FelixErnst/EpiTxDb.Hs.hg38"
 	bioc = "EpiTxDb.Hs.hg38" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/EpiTxDb.Hs.hg38_0.99.7.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/EpiTxDb.Hs.hg38/EpiTxDb.Hs.hg38_0.99.7.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EpiTxDb.Hs.hg38_0.99.7.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/EpiTxDb.Hs.hg38/EpiTxDb.Hs.hg38_0.99.7.tar.gz"]
 
-	version("0.99.7", md5="e30af95f285788a9777a8207a8ef73a9", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/EpiTxDb.Hs.hg38_0.99.7.tar.gz")
+	version("0.99.7", md5="e30af95f285788a9777a8207a8ef73a9", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EpiTxDb.Hs.hg38_0.99.7.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

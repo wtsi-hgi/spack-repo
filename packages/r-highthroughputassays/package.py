@@ -14,7 +14,7 @@ class RHighthroughputassays(RPackage):
 	
 	homepage = "https://www.bioconductor.org/help/workflows/highthroughputassays/"
 	bioc = "highthroughputassays" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/highthroughputassays_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/highthroughputassays/highthroughputassays_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/highthroughputassays_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/highthroughputassays/highthroughputassays_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="03d7477f8db26efff92737a67ed6ec5c")
 

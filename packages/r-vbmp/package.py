@@ -14,7 +14,7 @@ class RVbmp(RPackage):
 	
 	homepage = "http://bioinformatics.oxfordjournals.org/cgi/content/short/btm535v1"
 	bioc = "vbmp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/vbmp_1.70.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/vbmp/vbmp_1.70.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vbmp_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vbmp/vbmp_1.70.0.tar.gz"]
 
 	version("1.70.0", md5="b7d2a0a9950dd7ecdbcea5ffdfbd853c")
 

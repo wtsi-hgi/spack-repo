@@ -13,7 +13,7 @@ class RMsstatslip(RPackage):
 	"""
 	
 	bioc = "MSstatsLiP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MSstatsLiP_1.8.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MSstatsLiP/MSstatsLiP_1.8.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsLiP_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsLiP/MSstatsLiP_1.8.1.tar.gz"]
 
 	version("1.8.1", md5="677e775b1c84f40715703064cd74faff")
 

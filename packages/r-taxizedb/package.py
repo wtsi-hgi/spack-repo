@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RTaxizedb(RPackage):
 	queries directly or used in 'dplyr'."""
 
 	cran = "taxizedb"
+
+	license("MIT")
 
 	version("0.3.1", md5="b20c3c41df743cba956def4293dc8106")
 

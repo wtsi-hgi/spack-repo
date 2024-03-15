@@ -14,7 +14,7 @@ class RProloc(RPackage):
 	
 	homepage = "https://github.com/lgatto/pRoloc"
 	bioc = "pRoloc" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pRoloc_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pRoloc/pRoloc_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pRoloc_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pRoloc/pRoloc_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="309ce5a09f91050bdf916ab18389d7a8")
 

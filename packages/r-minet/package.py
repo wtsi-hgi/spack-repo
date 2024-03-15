@@ -14,7 +14,7 @@ class RMinet(RPackage):
 	
 	homepage = "http://minet.meyerp.com"
 	bioc = "minet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/minet_3.60.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/minet/minet_3.60.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/minet_3.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/minet/minet_3.60.0.tar.gz"]
 
 	version("3.60.0", md5="8aaab67519352be115568a301e98ef99")
 

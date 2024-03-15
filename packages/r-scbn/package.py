@@ -13,7 +13,7 @@ class RScbn(RPackage):
 	"""
 	
 	bioc = "SCBN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SCBN_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SCBN/SCBN_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCBN_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCBN/SCBN_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="c58ee707d9418bd3374773e2675efad7")
 

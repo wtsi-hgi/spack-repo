@@ -13,7 +13,7 @@ class RTin(RPackage):
 	"""
 	
 	bioc = "TIN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TIN_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TIN/TIN_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TIN_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TIN/TIN_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="33dbf5f6f5fada307f20f5a9b8d6f8a8")
 

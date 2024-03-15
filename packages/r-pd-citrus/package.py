@@ -13,7 +13,7 @@ class RPdCitrus(RPackage):
 	"""
 	
 	bioc = "pd.citrus" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.citrus_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.citrus/pd.citrus_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.citrus_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.citrus/pd.citrus_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="dee9b3298b84e7dd5152f48ad449b15a")
 

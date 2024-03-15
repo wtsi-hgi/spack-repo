@@ -13,7 +13,7 @@ class RCfassay(RPackage):
 	"""
 	
 	bioc = "CFAssay" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CFAssay_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CFAssay/CFAssay_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CFAssay_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CFAssay/CFAssay_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="122c969248ffd92330d93a266db6cb3c")
 

@@ -13,7 +13,7 @@ class RRvs(RPackage):
 	"""
 	
 	bioc = "RVS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RVS_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RVS/RVS_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RVS_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RVS/RVS_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="209870dca9bf6ebc9831014045ddbd42")
 

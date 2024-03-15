@@ -17,7 +17,7 @@ class RFitodbodrshiny(RPackage):
 	homepage = "https://github.com/Amalan-ConStat/fitODBODRshiny"
 	cran = "fitODBODRshiny" 
 
-	version("1.0.0", md5="5d9af6341814278fba1a0da624176277")
+	version("1.0.2", md5="b8ca868d8b44d8514ee8cdd53eba8656")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-bslib", type=("build", "run"))

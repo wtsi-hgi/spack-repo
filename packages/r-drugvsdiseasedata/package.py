@@ -13,7 +13,7 @@ class RDrugvsdiseasedata(RPackage):
 	"""
 	
 	bioc = "DrugVsDiseasedata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/DrugVsDiseasedata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/DrugVsDiseasedata/DrugVsDiseasedata_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DrugVsDiseasedata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DrugVsDiseasedata/DrugVsDiseasedata_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="40b800653aab57e822a18afe5bd1a2e7")
 

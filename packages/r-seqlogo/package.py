@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,7 @@ class RSeqlogo(RPackage):
 	Stephens (1990)."""
 
 	bioc = "seqLogo"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/seqLogo_1.68.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/seqLogo/seqLogo_1.68.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqLogo_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqLogo/seqLogo_1.68.0.tar.gz"]
 
 	version("1.68.0", md5="0771c35a7929a3e71aa5eebaf4a624ef")
 

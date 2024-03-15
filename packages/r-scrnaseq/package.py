@@ -13,7 +13,7 @@ class RScrnaseq(RPackage):
 	"""
 	
 	bioc = "scRNAseq" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/scRNAseq_2.16.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/scRNAseq/scRNAseq_2.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scRNAseq_2.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scRNAseq/scRNAseq_2.16.0.tar.gz"]
 
 	version("2.16.0", md5="55196cb10876aa15733c6a29ffc38100")
 

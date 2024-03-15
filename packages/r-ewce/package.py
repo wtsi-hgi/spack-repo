@@ -14,7 +14,7 @@ class REwce(RPackage):
 	
 	homepage = "https://github.com/NathanSkene/EWCE"
 	bioc = "EWCE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EWCE_1.10.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EWCE/EWCE_1.10.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EWCE_1.10.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EWCE/EWCE_1.10.2.tar.gz"]
 
 	version("1.10.2", md5="b00b3feb36956603c46e6de1f03e9c09")
 

@@ -13,7 +13,7 @@ class RHs6ug171Db(RPackage):
 	"""
 	
 	bioc = "Hs6UG171.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Hs6UG171.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/Hs6UG171.db/Hs6UG171.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Hs6UG171.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Hs6UG171.db/Hs6UG171.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="7aaf8a2441941f70247275c93735ed3b")
 

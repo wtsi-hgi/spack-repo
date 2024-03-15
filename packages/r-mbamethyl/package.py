@@ -13,7 +13,7 @@ class RMbamethyl(RPackage):
 	"""
 	
 	bioc = "MBAmethyl" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MBAmethyl_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MBAmethyl/MBAmethyl_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MBAmethyl_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MBAmethyl/MBAmethyl_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="0b6ac0d76525c156606d08bcbf606709")
 

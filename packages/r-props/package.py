@@ -13,7 +13,7 @@ class RProps(RPackage):
 	"""
 	
 	bioc = "PROPS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PROPS_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PROPS/PROPS_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PROPS_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PROPS/PROPS_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="20b285908014c5e85775518ea72349c0")
 

@@ -13,7 +13,7 @@ class RBprmeth(RPackage):
 	"""
 	
 	bioc = "BPRMeth" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BPRMeth_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BPRMeth/BPRMeth_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BPRMeth_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BPRMeth/BPRMeth_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="8229c7c5175e3888c86a5a3a42eb7a8c")
 

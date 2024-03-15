@@ -13,7 +13,7 @@ class RAnvilworkflow(RPackage):
 	"""
 	
 	bioc = "AnVILWorkflow" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AnVILWorkflow_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AnVILWorkflow/AnVILWorkflow_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnVILWorkflow_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnVILWorkflow/AnVILWorkflow_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="af890e3cea3c42346ec887603ba12e40")
 

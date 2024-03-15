@@ -15,7 +15,7 @@ class RFmdu(RPackage):
 	
 	cran = "fmdu" 
 
-	version("0.1.0", md5="ea5d0b9359bab857fd42ca17d4a1a503")
+	version("0.1.1", md5="c859e67c12b8f2d31b9e50b9b9231624")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-smacof", type=("build", "run"))

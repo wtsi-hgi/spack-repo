@@ -13,7 +13,7 @@ class RTxdbMmusculusUcscMm9Knowngene(RPackage):
 	"""
 	
 	bioc = "TxDb.Mmusculus.UCSC.mm9.knownGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Mmusculus.UCSC.mm9.knownGene_3.2.2.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Mmusculus.UCSC.mm9.knownGene/TxDb.Mmusculus.UCSC.mm9.knownGene_3.2.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Mmusculus.UCSC.mm9.knownGene_3.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Mmusculus.UCSC.mm9.knownGene/TxDb.Mmusculus.UCSC.mm9.knownGene_3.2.2.tar.gz"]
 
 	version("3.2.2", md5="cb72af039b011033477363bda8ed9104")
 

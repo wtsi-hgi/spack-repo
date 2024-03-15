@@ -14,7 +14,7 @@ class RClevrvis(RPackage):
 	
 	homepage = "https://github.com/sandmanns/clevRvis"
 	bioc = "clevRvis" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/clevRvis_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/clevRvis/clevRvis_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clevRvis_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clevRvis/clevRvis_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="96fde7a442a2cdb69754ebf1e68ccc65")
 

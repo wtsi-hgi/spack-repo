@@ -13,7 +13,7 @@ class RTcc(RPackage):
 	"""
 	
 	bioc = "TCC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TCC_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TCC/TCC_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TCC_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TCC/TCC_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="e36a17d628a68654296227603e0678da")
 

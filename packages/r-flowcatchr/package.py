@@ -14,7 +14,7 @@ class RFlowcatchr(RPackage):
 	
 	homepage = "https://github.com/federicomarini/flowcatchR"
 	bioc = "flowcatchR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/flowcatchR_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/flowcatchR/flowcatchR_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowcatchR_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowcatchR/flowcatchR_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="a823367e5e1e432980ca41c1516c97f2")
 

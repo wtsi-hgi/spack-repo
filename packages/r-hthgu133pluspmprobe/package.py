@@ -13,7 +13,7 @@ class RHthgu133pluspmprobe(RPackage):
 	"""
 	
 	bioc = "hthgu133pluspmprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hthgu133pluspmprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hthgu133pluspmprobe/hthgu133pluspmprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hthgu133pluspmprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hthgu133pluspmprobe/hthgu133pluspmprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="74713e822a689007892d0eb92dbd456b")
 

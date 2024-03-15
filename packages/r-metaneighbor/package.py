@@ -13,7 +13,7 @@ class RMetaneighbor(RPackage):
 	"""
 	
 	bioc = "MetaNeighbor" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MetaNeighbor_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MetaNeighbor/MetaNeighbor_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetaNeighbor_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetaNeighbor/MetaNeighbor_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="4b42a5bac6ac46bdff32c5cce84e448d")
 

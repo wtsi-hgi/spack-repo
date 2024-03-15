@@ -21,7 +21,7 @@ class RLibr(RPackage):
 	homepage = "https://libr.r-sassy.org"
 	cran = "libr" 
 
-	version("1.3.0", md5="b0f2b92be74c2c7d335ea962e696a411")
+	version("1.3.1", md5="336bd458a726c6a36e3db9b603fda430")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-common@1.1:", type=("build", "run"))

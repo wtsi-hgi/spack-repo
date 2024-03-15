@@ -14,7 +14,7 @@ class RGeneticsped(RPackage):
 	
 	homepage = "http://rgenetics.org"
 	bioc = "GeneticsPed" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GeneticsPed_1.64.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GeneticsPed/GeneticsPed_1.64.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneticsPed_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneticsPed/GeneticsPed_1.64.0.tar.gz"]
 
 	version("1.64.0", md5="7d2a79c363e79459dd3edf3b4571f313")
 

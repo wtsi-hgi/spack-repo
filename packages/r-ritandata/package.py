@@ -13,7 +13,7 @@ class RRitandata(RPackage):
 	"""
 	
 	bioc = "RITANdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RITANdata_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/RITANdata/RITANdata_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RITANdata_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RITANdata/RITANdata_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="12987879ef374ad399dd440a058b9a47")
 

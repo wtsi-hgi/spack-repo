@@ -14,7 +14,7 @@ class RGg4way(RPackage):
 	
 	homepage = "https://github.com/ben-laufer/gg4way"
 	bioc = "gg4way" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gg4way_1.0.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gg4way/gg4way_1.0.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gg4way_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gg4way/gg4way_1.0.2.tar.gz"]
 
 	version("1.0.2", md5="119c639126af675cbf7b9daf47122dc4")
 

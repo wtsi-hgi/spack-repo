@@ -13,7 +13,7 @@ class RGp53cdf(RPackage):
 	"""
 	
 	bioc = "gp53cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/gp53cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/gp53cdf/gp53cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/gp53cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/gp53cdf/gp53cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="2887dd15d3fa29b5c13b068c8d641f61")
 

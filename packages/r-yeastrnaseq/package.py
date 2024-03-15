@@ -13,7 +13,7 @@ class RYeastrnaseq(RPackage):
 	"""
 	
 	bioc = "yeastRNASeq" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/yeastRNASeq_0.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/yeastRNASeq/yeastRNASeq_0.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/yeastRNASeq_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/yeastRNASeq/yeastRNASeq_0.40.0.tar.gz"]
 
 	version("0.40.0", md5="2344deacf993b96e1709ad96b710471f")
 

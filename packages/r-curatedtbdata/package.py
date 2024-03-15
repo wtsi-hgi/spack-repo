@@ -14,7 +14,7 @@ class RCuratedtbdata(RPackage):
 	
 	homepage = "https://github.com/compbiomed/curatedTBData"
 	bioc = "curatedTBData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/curatedTBData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/curatedTBData/curatedTBData_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedTBData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedTBData/curatedTBData_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="190a770c4f5df45cf722b7ee287a2384")
 

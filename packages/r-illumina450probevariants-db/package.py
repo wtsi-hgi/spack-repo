@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,7 @@ class RIllumina450probevariantsDb(RPackage):
 	of the four populations (Asian, American, African and European)."""
 
 	bioc = "Illumina450ProbeVariants.db"
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Illumina450ProbeVariants.db_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/Illumina450ProbeVariants.db/Illumina450ProbeVariants.db_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Illumina450ProbeVariants.db_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Illumina450ProbeVariants.db/Illumina450ProbeVariants.db_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="ca34eec73a57e5f226b70a20ef706ee3")
 

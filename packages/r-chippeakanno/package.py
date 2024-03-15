@@ -13,7 +13,7 @@ class RChippeakanno(RPackage):
 	"""
 	
 	bioc = "ChIPpeakAnno" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ChIPpeakAnno_3.36.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ChIPpeakAnno/ChIPpeakAnno_3.36.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPpeakAnno_3.36.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPpeakAnno/ChIPpeakAnno_3.36.1.tar.gz"]
 
 	version("3.36.1", md5="5c4f86740a90c143e9d2e550eba0cf62")
 

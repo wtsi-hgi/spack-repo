@@ -14,7 +14,7 @@ class RRamwas(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/ramwas/"
 	bioc = "ramwas" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ramwas_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ramwas/ramwas_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ramwas_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ramwas/ramwas_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="ccbff0a1c4bd31c8ceb9d2641d6608d2")
 

@@ -13,7 +13,7 @@ class RCalm(RPackage):
 	"""
 	
 	bioc = "calm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/calm_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/calm/calm_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/calm_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/calm/calm_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="9a2b4c48021193636c88c997331ede2d")
 

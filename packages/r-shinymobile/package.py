@@ -21,7 +21,7 @@ class RShinymobile(RPackage):
 	homepage = "https://github.com/RinteRface/shinyMobile"
 	cran = "shinyMobile" 
 
-	version("1.0.0", md5="a90da3731b4bb40e65499dab6ffda033")
+	version("1.0.1", md5="0cd85e598733fbdf2789443ecb4a3eff")
 
 	depends_on("r-shiny", type=("build", "run"))
 	depends_on("r-htmltools", type=("build", "run"))

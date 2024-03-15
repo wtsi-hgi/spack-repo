@@ -14,7 +14,7 @@ class RPth2o2lipids(RPackage):
 	
 	homepage = "http://dx.doi.org/10.1038/ismej.2014.136"
 	bioc = "PtH2O2lipids" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/PtH2O2lipids_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/PtH2O2lipids/PtH2O2lipids_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PtH2O2lipids_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PtH2O2lipids/PtH2O2lipids_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="498d573bc33e7566708c38be5098bb2e")
 

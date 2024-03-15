@@ -15,7 +15,7 @@ class RCocorresp(RPackage):
 	homepage = "https://gavinsimpson.github.io/cocorresp/"
 	cran = "cocorresp" 
 
-	version("0.4-3", md5="84b9bf81df5462ef4e90eeccde1fb65b")
+	version("0.4-4", md5="b512b4119213ab5e131bc4063added66")
 
 	depends_on("r-vegan@2.5.0:", type=("build", "run"))
 	depends_on("r@3.4:", type=("build", "run"))

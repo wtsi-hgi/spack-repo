@@ -19,7 +19,7 @@ class RCoxme(RPackage):
 	
 	cran = "coxme" 
 
-	version("2.2-18.1", md5="6f86a36d721b09094a926ceea3dba301")
+	version("2.2-20", md5="abdedf5f369bb583ee224f654fec8323")
 
 	depends_on("r-survival@2.36.14:", type=("build", "run"))
 	depends_on("r-bdsmatrix", type=("build", "run"))

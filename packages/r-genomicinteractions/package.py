@@ -14,7 +14,7 @@ class RGenomicinteractions(RPackage):
 	
 	homepage = "https://github.com/ComputationalRegulatoryGenomicsICL/GenomicInteractions/"
 	bioc = "GenomicInteractions" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GenomicInteractions_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GenomicInteractions/GenomicInteractions_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicInteractions_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicInteractions/GenomicInteractions_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="f4bccdd21d639ba8b9907ced202c0082")
 

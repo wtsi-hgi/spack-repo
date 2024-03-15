@@ -13,7 +13,7 @@ class RMeasurementerrorCor(RPackage):
 	"""
 	
 	bioc = "MeasurementError.cor" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MeasurementError.cor_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MeasurementError.cor/MeasurementError.cor_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MeasurementError.cor_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MeasurementError.cor/MeasurementError.cor_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="7de3f5ca3749a7b1e80fdfa66204a252")
 

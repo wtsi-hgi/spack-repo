@@ -13,7 +13,7 @@ class RBiocworkflowtools(RPackage):
 	"""
 	
 	bioc = "BiocWorkflowTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiocWorkflowTools_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiocWorkflowTools/BiocWorkflowTools_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocWorkflowTools_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocWorkflowTools/BiocWorkflowTools_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="412d30d47953d51e35e9fa188e28841e")
 

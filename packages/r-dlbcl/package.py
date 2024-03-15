@@ -14,7 +14,7 @@ class RDlbcl(RPackage):
 	
 	homepage = "http://bionet.bioapps.biozentrum.uni-wuerzburg.de/"
 	bioc = "DLBCL" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/DLBCL_1.42.2.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/DLBCL/DLBCL_1.42.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DLBCL_1.42.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DLBCL/DLBCL_1.42.2.tar.gz"]
 
 	version("1.42.2", md5="9b03687d068351440a46898ad6814ed9")
 

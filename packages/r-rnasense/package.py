@@ -13,7 +13,7 @@ class RRnasense(RPackage):
 	"""
 	
 	bioc = "RNAsense" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RNAsense_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RNAsense/RNAsense_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNAsense_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNAsense/RNAsense_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="514e6c09019b7f9116ddbedbdf514a5a")
 

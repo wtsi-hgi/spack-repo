@@ -14,7 +14,7 @@ class RMitch(RPackage):
 	
 	homepage = "https://github.com/markziemann/mitch"
 	bioc = "mitch" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mitch_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mitch/mitch_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mitch_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mitch/mitch_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="c21044d7d878482677fcb758acf0a650")
 

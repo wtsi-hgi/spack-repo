@@ -16,7 +16,7 @@ class RAlfr(RPackage):
 	"""
 	
 	homepage = "https://github.com/rwetherall/alfr"
-	cran = "alfr" 
+	cran = "alfr"
 
 	version("1.2.1", md5="1bb5dd329519d4f4d4c391248740d8f5")
 

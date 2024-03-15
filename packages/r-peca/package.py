@@ -13,7 +13,7 @@ class RPeca(RPackage):
 	"""
 	
 	bioc = "PECA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PECA_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PECA/PECA_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PECA_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PECA/PECA_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="43aed7fc555cb6ccbf70335add80f6dc")
 

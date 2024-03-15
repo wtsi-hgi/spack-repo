@@ -13,7 +13,7 @@ class RNucler(RPackage):
 	"""
 	
 	bioc = "nucleR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/nucleR_2.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/nucleR/nucleR_2.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nucleR_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nucleR/nucleR_2.34.0.tar.gz"]
 
 	version("2.34.0", md5="854586c378515ad6e2eefe2e1a09f394")
 

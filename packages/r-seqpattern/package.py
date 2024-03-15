@@ -13,7 +13,7 @@ class RSeqpattern(RPackage):
 	"""
 	
 	bioc = "seqPattern" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/seqPattern_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/seqPattern/seqPattern_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqPattern_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqPattern/seqPattern_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="90ef37347887673ee80f12fa953e02f3")
 

@@ -13,7 +13,7 @@ class RCytokernel(RPackage):
 	"""
 	
 	bioc = "cytoKernel" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cytoKernel_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cytoKernel/cytoKernel_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cytoKernel_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cytoKernel/cytoKernel_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="2e1e2b8d2c545a69a0cec180964f2fd9")
 

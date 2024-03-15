@@ -14,7 +14,7 @@ class RDino(RPackage):
 	
 	homepage = "https://github.com/JBrownBiostat/Dino"
 	bioc = "Dino" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Dino_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Dino/Dino_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Dino_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Dino/Dino_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="cf084f6d83c8245a5c4969849a7e3e82")
 

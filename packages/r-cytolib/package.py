@@ -13,7 +13,7 @@ class RCytolib(RPackage):
 	"""
 	
 	bioc = "cytolib" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cytolib_2.14.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cytolib/cytolib_2.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cytolib_2.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cytolib/cytolib_2.14.1.tar.gz"]
 
 	version("2.14.1", md5="32b6560c381660e2ed9aa1e7b6ab84f9")
 

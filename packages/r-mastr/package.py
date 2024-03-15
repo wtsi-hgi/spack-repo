@@ -14,7 +14,7 @@ class RMastr(RPackage):
 	
 	homepage = "https://davislaboratory.github.io/mastR"
 	bioc = "mastR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mastR_1.2.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mastR/mastR_1.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mastR_1.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mastR/mastR_1.2.3.tar.gz"]
 
 	version("1.2.3", md5="e3c3d512fc0082d6c51dab26088b79f7")
 

@@ -14,7 +14,7 @@ class RStattarget(RPackage):
 	
 	homepage = "https://stattarget.github.io"
 	bioc = "statTarget" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/statTarget_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/statTarget/statTarget_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/statTarget_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/statTarget/statTarget_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="8a504e674b8756201ca93b590dd0b078")
 

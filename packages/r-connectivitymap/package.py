@@ -13,7 +13,7 @@ class RConnectivitymap(RPackage):
 	"""
 	
 	bioc = "ConnectivityMap" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/ConnectivityMap_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/ConnectivityMap/ConnectivityMap_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ConnectivityMap_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ConnectivityMap/ConnectivityMap_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="bac29780256afebfd49b90f268114eaf")
 

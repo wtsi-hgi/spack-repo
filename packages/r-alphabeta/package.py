@@ -13,7 +13,7 @@ class RAlphabeta(RPackage):
 	"""
 	
 	bioc = "AlphaBeta" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AlphaBeta_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AlphaBeta/AlphaBeta_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AlphaBeta_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AlphaBeta/AlphaBeta_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="b03e94ae649db2b4141f97a7859e0683")
 

@@ -13,7 +13,7 @@ class RCfdnakit(RPackage):
 	"""
 	
 	bioc = "cfdnakit" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cfdnakit_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cfdnakit/cfdnakit_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cfdnakit_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cfdnakit/cfdnakit_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="967a84e96d20af4a0256e117afe272b7")
 

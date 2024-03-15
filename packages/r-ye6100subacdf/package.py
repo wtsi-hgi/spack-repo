@@ -13,7 +13,7 @@ class RYe6100subacdf(RPackage):
 	"""
 	
 	bioc = "ye6100subacdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ye6100subacdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/ye6100subacdf/ye6100subacdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ye6100subacdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ye6100subacdf/ye6100subacdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="27bd71410956bfe8bffc8de14b85bdb0")
 

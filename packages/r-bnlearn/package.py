@@ -27,6 +27,6 @@ Inference
 	homepage = "https://www.bnlearn.com/"
 	cran = "bnlearn" 
 
-	version("4.9.1", md5="635e44be0c40c2e924118674ef1e9ec6")
+	version("4.9.2", md5="9bb72beab67578e9190e50b135fd36ca")
 
 	depends_on("r@4.3:", type=("build", "run"))

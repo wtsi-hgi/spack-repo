@@ -7,7 +7,7 @@ from spack.package import *
 
 
 class REscalation(RPackage):
-	"""Modular Approach to Dose Finding Clinical Trials
+	"""A Modular Approach to Dose-Finding Clinical Trials
 
 	Methods for working with dose-finding clinical trials. We provide 
     implementations of many dose-finding clinical trial designs, including the 
@@ -33,7 +33,7 @@ class REscalation(RPackage):
 	
 	cran = "escalation" 
 
-	version("0.1.5", md5="f6acc8e940a8c5242b978bb9031ea059")
+	version("0.1.8", md5="c24661184de7c36457a8c7f0e35bddcf")
 
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
@@ -42,6 +42,7 @@ class REscalation(RPackage):
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
+	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-gtools", type=("build", "run"))
 	depends_on("r-dfcrm", type=("build", "run"))
 	depends_on("r-boin", type=("build", "run"))
@@ -50,3 +51,5 @@ class REscalation(RPackage):
 	depends_on("r-rcolorbrewer", type=("build", "run"))
 	depends_on("r-viridis", type=("build", "run"))
 	depends_on("r-binom", type=("build", "run"))
+	depends_on("r-r6", type=("build", "run"))
+	depends_on("r-mvtnorm", type=("build", "run"))

@@ -14,7 +14,7 @@ class RLinnorm(RPackage):
 	
 	homepage = "https://doi.org/10.1093/nar/gkx828"
 	bioc = "Linnorm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Linnorm_2.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Linnorm/Linnorm_2.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Linnorm_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Linnorm/Linnorm_2.26.0.tar.gz"]
 
 	version("2.26.0", md5="8fc0ff0d6e9c2d274137b0e99ce0f4a2")
 

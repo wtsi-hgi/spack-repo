@@ -14,7 +14,7 @@ class RBiotmle(RPackage):
 	
 	homepage = "https://code.nimahejazi.org/biotmle"
 	bioc = "biotmle" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biotmle_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biotmle/biotmle_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biotmle_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biotmle/biotmle_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="10fcb7a34336492cbd49f3170a2f81ba")
 

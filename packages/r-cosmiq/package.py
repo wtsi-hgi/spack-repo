@@ -14,7 +14,7 @@ class RCosmiq(RPackage):
 	
 	homepage = "http://www.bioconductor.org/packages/devel/bioc/html/cosmiq.html"
 	bioc = "cosmiq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cosmiq_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cosmiq/cosmiq_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cosmiq_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cosmiq/cosmiq_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="ae02870f3759e09bb2c8f86d38306f01")
 

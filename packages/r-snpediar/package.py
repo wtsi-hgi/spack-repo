@@ -14,7 +14,7 @@ class RSnpediar(RPackage):
 	
 	homepage = "https://github.com/genometra/SNPediaR"
 	bioc = "SNPediaR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SNPediaR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SNPediaR/SNPediaR_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SNPediaR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SNPediaR/SNPediaR_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="25d5eec5081ccfac687eba26102eb826")
 

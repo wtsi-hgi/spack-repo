@@ -25,7 +25,7 @@ class ROpenspecy(RPackage):
 	homepage = "https://github.com/wincowgerDEV/OpenSpecy-package/"
 	cran = "OpenSpecy" 
 
-	version("1.0.6", md5="37812c3178c9bdd336ab269bf296a724")
+	version("1.0.8", md5="2336c2c5405d2b7344b7425f32eda5ae")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
@@ -34,7 +34,7 @@ class ROpenspecy(RPackage):
 	depends_on("r-osfr", type=("build", "run"))
 	depends_on("r-catools", type=("build", "run"))
 	depends_on("r-hyperspec", type=("build", "run"))
-	depends_on("r-imager", type=("build", "run"))
+	depends_on("r-mmand", type=("build", "run"))
 	depends_on("r-plotly", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))
 	depends_on("r-signal", type=("build", "run"))

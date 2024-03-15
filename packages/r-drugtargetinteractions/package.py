@@ -14,7 +14,7 @@ class RDrugtargetinteractions(RPackage):
 	
 	homepage = "https://github.com/girke-lab/drugTargetInteractions"
 	bioc = "drugTargetInteractions" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/drugTargetInteractions_1.10.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/drugTargetInteractions/drugTargetInteractions_1.10.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/drugTargetInteractions_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/drugTargetInteractions/drugTargetInteractions_1.10.1.tar.gz"]
 
 	version("1.10.1", md5="c1a702c085df262e0a697b6687ea3ee4")
 

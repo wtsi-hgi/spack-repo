@@ -14,7 +14,7 @@ class RCimice(RPackage):
 	
 	homepage = "https://github.com/redsnic/CIMICE"
 	bioc = "CIMICE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CIMICE_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CIMICE/CIMICE_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CIMICE_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CIMICE/CIMICE_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="510ab010752cd50654467583c6159ba1")
 

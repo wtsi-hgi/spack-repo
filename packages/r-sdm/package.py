@@ -19,8 +19,9 @@ class RSdm(RPackage):
 	homepage = "https://www.biogeoinformatics.org"
 	cran = "sdm" 
 
-	version("1.1-8", md5="e92330823e733078c52253445b4ab9c3")
+	version("1.2-32", md5="24c8b69bc26ac5d110e8a662afd7e396")
 
+	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r-terra", type=("build", "run"))
 	depends_on("r-sp", type=("build", "run"))
-	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-raster", type=("build", "run"))

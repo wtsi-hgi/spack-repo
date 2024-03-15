@@ -13,7 +13,7 @@ class RRattusNorvegicus(RPackage):
 	"""
 	
 	bioc = "Rattus.norvegicus" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Rattus.norvegicus_1.3.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/Rattus.norvegicus/Rattus.norvegicus_1.3.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Rattus.norvegicus_1.3.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Rattus.norvegicus/Rattus.norvegicus_1.3.1.tar.gz"]
 
 	version("1.3.1", md5="5692fdeb0bc7f94e1db35f097cad99a9")
 

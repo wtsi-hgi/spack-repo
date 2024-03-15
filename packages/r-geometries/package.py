@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RGeometries(RPackage):
 	functions are available at both the 'R' level, and through 'Rcpp'."""
 
 	cran = "geometries"
+
+	license("MIT")
 
 	version("0.2.4", md5="2ec0da94482c6d0159dc6b159ed344e6")
 

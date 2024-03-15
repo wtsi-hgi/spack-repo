@@ -13,7 +13,7 @@ class RGaga(RPackage):
 	"""
 	
 	bioc = "gaga" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gaga_2.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gaga/gaga_2.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gaga_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gaga/gaga_2.48.0.tar.gz"]
 
 	version("2.48.0", md5="d1b404912b9a23365c9085dc91e20a10")
 

@@ -13,7 +13,7 @@ class RGsca(RPackage):
 	"""
 	
 	bioc = "GSCA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GSCA_2.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GSCA/GSCA_2.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSCA_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSCA/GSCA_2.32.0.tar.gz"]
 
 	version("2.32.0", md5="6cf569e7be20a330c190c8c3af6f0654")
 

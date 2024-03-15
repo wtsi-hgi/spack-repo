@@ -13,7 +13,7 @@ class RSampleclassifier(RPackage):
 	"""
 	
 	bioc = "sampleClassifier" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sampleClassifier_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sampleClassifier/sampleClassifier_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sampleClassifier_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sampleClassifier/sampleClassifier_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="7f17cc7eb566dcd27148ee400491b6c7")
 

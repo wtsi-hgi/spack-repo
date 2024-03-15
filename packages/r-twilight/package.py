@@ -14,7 +14,7 @@ class RTwilight(RPackage):
 	
 	homepage = "http://compdiag.molgen.mpg.de/software/twilight.shtml"
 	bioc = "twilight" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/twilight_1.78.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/twilight/twilight_1.78.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/twilight_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/twilight/twilight_1.78.0.tar.gz"]
 
 	version("1.78.0", md5="fa6b01126ace9423edfc04757f6392b1")
 

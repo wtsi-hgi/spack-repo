@@ -19,7 +19,7 @@ class RRsimsum(RPackage):
 	homepage = "https://ellessenne.github.io/rsimsum/"
 	cran = "rsimsum" 
 
-	version("0.11.3", md5="d48c92d2f050740f1ab7390259c634f9")
+	version("0.13.0", md5="3baf3c8ed456270ec3093b085f022a06")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

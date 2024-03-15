@@ -13,7 +13,7 @@ class RLpeadj(RPackage):
 	"""
 	
 	bioc = "LPEadj" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/LPEadj_1.62.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/LPEadj/LPEadj_1.62.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LPEadj_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LPEadj/LPEadj_1.62.0.tar.gz"]
 
 	version("1.62.0", md5="ebb9c5bc6d113688787fadb2739bc75a")
 

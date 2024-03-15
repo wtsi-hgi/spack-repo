@@ -14,7 +14,7 @@ class RSpasim(RPackage):
 	
 	homepage = "https://trigosteam.github.io/spaSim/"
 	bioc = "spaSim" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/spaSim_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/spaSim/spaSim_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spaSim_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spaSim/spaSim_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="d69e70975aaaa9bffc5e52f95885e59c")
 

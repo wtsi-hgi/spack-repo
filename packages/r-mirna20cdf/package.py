@@ -13,7 +13,7 @@ class RMirna20cdf(RPackage):
 	"""
 	
 	bioc = "mirna20cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mirna20cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mirna20cdf/mirna20cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mirna20cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mirna20cdf/mirna20cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="56f7807673ff108427ae7f6bdf85ae1c")
 

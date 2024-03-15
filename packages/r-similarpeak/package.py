@@ -14,7 +14,7 @@ class RSimilarpeak(RPackage):
 	
 	homepage = "https://github.com/adeschen/similaRpeak"
 	bioc = "similaRpeak" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/similaRpeak_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/similaRpeak/similaRpeak_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/similaRpeak_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/similaRpeak/similaRpeak_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="3d91ba41941b12c9f93e77872e444c4d")
 

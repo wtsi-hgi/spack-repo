@@ -13,7 +13,7 @@ class RLumiratallDb(RPackage):
 	"""
 	
 	bioc = "lumiRatAll.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/lumiRatAll.db_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/lumiRatAll.db/lumiRatAll.db_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/lumiRatAll.db_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/lumiRatAll.db/lumiRatAll.db_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="65027624574d5e33f18b0a54a54f4be9")
 

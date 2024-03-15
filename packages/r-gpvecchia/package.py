@@ -14,7 +14,7 @@ class RGpvecchia(RPackage):
 	
 	cran = "GPvecchia" 
 
-	version("0.1.6", md5="f501bf9efb56354eb40fc7ea650aca76")
+	version("0.1.7", md5="aa543f82b8ab28f85b987a31ebe8814f")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-sparseinv", type=("build", "run"))
@@ -23,3 +23,4 @@ class RGpvecchia(RPackage):
 	depends_on("r-gpgp", type=("build", "run"))
 	depends_on("r-fnn", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
+	depends_on("r-bh", type=("build", "run"))

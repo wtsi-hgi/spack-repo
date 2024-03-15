@@ -14,14 +14,14 @@ class RDimensio(RPackage):
     (SVD). This package provides S4 classes and methods to compute,
     extract, summarize and visualize results of multivariate data
     analysis. It also includes methods for partial bootstrap validation
-    described in Greenacre (1984) <isbn:978-0-12-299050-2> and Lebart et
-    al. (2006) <isbn:978-2-10-049616-7>.
+    described in Greenacre (1984, ISBN: 978-0-12-299050-2) and Lebart et
+    al. (2006, ISBN: 978-2-10-049616-7).
 	"""
 	
 	homepage = "https://packages.tesselle.org/dimensio/"
 	cran = "dimensio" 
 
-	version("0.5.0", md5="3160e4e34e13d94bff36ea6bccffb8b5")
+	version("0.6.0", md5="536b1d7cef5a168a5ab47bb050de7fcb")
 
 	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-arkhe@1.4:", type=("build", "run"))
+	depends_on("r-arkhe@1.6:", type=("build", "run"))

@@ -13,7 +13,7 @@ class RMsstatsbig(RPackage):
 	"""
 	
 	bioc = "MSstatsBig" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MSstatsBig_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MSstatsBig/MSstatsBig_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsBig_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsBig/MSstatsBig_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="a53de589b47964296160c6fb8aaeb3b4")
 

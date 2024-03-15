@@ -13,7 +13,7 @@ class RSinglecellmultimodal(RPackage):
 	"""
 	
 	bioc = "SingleCellMultiModal" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/SingleCellMultiModal_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/SingleCellMultiModal/SingleCellMultiModal_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SingleCellMultiModal_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SingleCellMultiModal/SingleCellMultiModal_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="e397bc4fbd9ea63f6660758f01d01d38")
 

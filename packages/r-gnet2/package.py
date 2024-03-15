@@ -14,9 +14,9 @@ class RGnet2(RPackage):
 	
 	homepage = "https://github.com/chrischen1/GNET2"
 	bioc = "GNET2" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GNET2_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GNET2/GNET2_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GNET2_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GNET2/GNET2_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="06382e36858e9d55d44aabba748d49b8", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/GNET2_1.18.0.tar.gz")
+	version("1.18.0", md5="06382e36858e9d55d44aabba748d49b8", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GNET2_1.18.0.tar.gz")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

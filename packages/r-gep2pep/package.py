@@ -13,7 +13,7 @@ class RGep2pep(RPackage):
 	"""
 	
 	bioc = "gep2pep" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gep2pep_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gep2pep/gep2pep_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gep2pep_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gep2pep/gep2pep_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="0a8f1b44003eba297c44f8115f870df0")
 

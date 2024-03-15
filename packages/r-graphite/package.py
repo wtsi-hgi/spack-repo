@@ -14,7 +14,7 @@ class RGraphite(RPackage):
 	
 	homepage = "https://github.com/sales-lab/graphite"
 	bioc = "graphite" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/graphite_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/graphite/graphite_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/graphite_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/graphite/graphite_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="532e304cdb96a828c4b764bfd36cce85")
 

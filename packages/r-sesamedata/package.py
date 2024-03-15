@@ -13,7 +13,7 @@ class RSesamedata(RPackage):
 	"""
 	
 	bioc = "sesameData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/sesameData_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/sesameData/sesameData_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/sesameData_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/sesameData/sesameData_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="4cd44c4f5307d2775d94f2051b9a7f46")
 

@@ -14,7 +14,7 @@ class RSccomp(RPackage):
 	
 	homepage = "https://github.com/stemangiola/sccomp"
 	bioc = "sccomp" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sccomp_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sccomp/sccomp_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sccomp_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sccomp/sccomp_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="8a24adb07d155b94645a5f684e1455f6")
 

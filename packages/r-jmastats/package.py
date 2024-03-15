@@ -17,10 +17,10 @@ class RJmastats(RPackage):
   handle earthquake record files.
 	"""
 	
-	homepage = "https://github.com/uribo/jmastats"
+	homepage = "https://uribo.github.io/jmastats/"
 	cran = "jmastats" 
 
-	version("0.2.0", md5="8f31725ee4b999c2d852eea23cf30da6")
+	version("0.2.1", md5="b1bb0514f17d2ee3b278d052960a24b8")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-cli@3.4:", type=("build", "run"))

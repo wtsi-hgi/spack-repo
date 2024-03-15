@@ -13,7 +13,7 @@ class RFmrs(RPackage):
 	"""
 	
 	bioc = "fmrs" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/fmrs_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/fmrs/fmrs_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fmrs_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fmrs/fmrs_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="ccf41504ab27d93464e555b363ef406a")
 

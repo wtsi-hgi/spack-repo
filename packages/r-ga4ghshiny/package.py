@@ -14,7 +14,7 @@ class RGa4ghshiny(RPackage):
 	
 	homepage = "https://github.com/labbcb/GA4GHshiny"
 	bioc = "GA4GHshiny" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GA4GHshiny_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GA4GHshiny/GA4GHshiny_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GA4GHshiny_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GA4GHshiny/GA4GHshiny_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="629ca5d338b8435b238169892016d447")
 

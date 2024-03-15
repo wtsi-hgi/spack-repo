@@ -13,7 +13,7 @@ class RHgfocusprobe(RPackage):
 	"""
 	
 	bioc = "hgfocusprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hgfocusprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hgfocusprobe/hgfocusprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgfocusprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgfocusprobe/hgfocusprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="0a399ed276b89e3d80946b6cbbf167b4")
 

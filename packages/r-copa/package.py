@@ -13,7 +13,7 @@ class RCopa(RPackage):
 	"""
 	
 	bioc = "copa" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/copa_1.70.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/copa/copa_1.70.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/copa_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/copa/copa_1.70.0.tar.gz"]
 
 	version("1.70.0", md5="bd372714a4dd7e70b90d9232fcba322d")
 

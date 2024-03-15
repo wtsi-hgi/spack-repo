@@ -14,7 +14,7 @@ class REdaseq(RPackage):
 	
 	homepage = "https://github.com/drisso/EDASeq"
 	bioc = "EDASeq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EDASeq_2.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EDASeq/EDASeq_2.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EDASeq_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EDASeq/EDASeq_2.36.0.tar.gz"]
 
 	version("2.36.0", md5="b2d28fdad31e8c56f68873b599ffc235")
 

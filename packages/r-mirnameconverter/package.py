@@ -13,7 +13,7 @@ class RMirnameconverter(RPackage):
 	"""
 	
 	bioc = "miRNAmeConverter" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/miRNAmeConverter_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/miRNAmeConverter/miRNAmeConverter_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miRNAmeConverter_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miRNAmeConverter/miRNAmeConverter_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="cfc6563f669ecbc03292cccba919fe05")
 

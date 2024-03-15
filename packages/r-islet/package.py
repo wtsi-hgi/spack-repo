@@ -13,7 +13,7 @@ class RIslet(RPackage):
 	"""
 	
 	bioc = "ISLET" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ISLET_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ISLET/ISLET_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ISLET_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ISLET/ISLET_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="5cf5ae7df60062c1822ca64c3989a4e0")
 

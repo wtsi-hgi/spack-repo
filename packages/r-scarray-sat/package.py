@@ -13,7 +13,7 @@ class RScarraySat(RPackage):
 	"""
 	
 	bioc = "SCArray.sat" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SCArray.sat_1.2.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SCArray.sat/SCArray.sat_1.2.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCArray.sat_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCArray.sat/SCArray.sat_1.2.1.tar.gz"]
 
 	version("1.2.1", md5="dfa447cd634a432486a982a719e27451")
 

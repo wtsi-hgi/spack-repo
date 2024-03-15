@@ -15,7 +15,7 @@ class REpir(RPackage):
 	homepage = "https://mvs.unimelb.edu.au/research/groups/veterinary-epidemiology-melbourne"
 	cran = "epiR" 
 
-	version("2.0.68", md5="e6089bd440752fa0a94ae9c3bc02029f")
+	version("2.0.70", md5="efde157d51b6f9b4b765c81d39c6b29f")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

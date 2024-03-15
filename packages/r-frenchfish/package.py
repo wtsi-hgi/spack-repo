@@ -13,7 +13,7 @@ class RFrenchfish(RPackage):
 	"""
 	
 	bioc = "frenchFISH" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/frenchFISH_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/frenchFISH/frenchFISH_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/frenchFISH_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/frenchFISH/frenchFISH_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="170f9e757e12e766a8a455d6d3ca9f81")
 

@@ -14,7 +14,7 @@ class RStatial(RPackage):
 	
 	homepage = "https://sydneybiox.github.io/Statial"
 	bioc = "Statial" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Statial_1.4.5.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Statial/Statial_1.4.5.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Statial_1.4.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Statial/Statial_1.4.5.tar.gz"]
 
 	version("1.4.5", md5="e7151f23bb952401803e4d239390c210")
 

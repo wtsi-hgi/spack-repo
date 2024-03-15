@@ -14,7 +14,7 @@ class RSincell(RPackage):
 	
 	homepage = "http://bioconductor.org/"
 	bioc = "sincell" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/sincell_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/sincell/sincell_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sincell_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sincell/sincell_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="308aa15c851a99b7f345dbd0af122f07")
 

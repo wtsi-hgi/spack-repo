@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,7 +16,7 @@ class RMzid(RPackage):
 	supply an mzIdentML file so the problems can be fixed quickly."""
 
 	bioc = "mzID"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mzID_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mzID/mzID_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mzID_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mzID/mzID_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="8ede9a6260d4b9aa70edd19838e3c80c")
 

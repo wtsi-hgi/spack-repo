@@ -13,7 +13,7 @@ class RSimpintlists(RPackage):
 	"""
 	
 	bioc = "simpIntLists" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/simpIntLists_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/simpIntLists/simpIntLists_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/simpIntLists_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/simpIntLists/simpIntLists_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="9dbe0a1f390843a49bb11d05ac5f2e28")
 

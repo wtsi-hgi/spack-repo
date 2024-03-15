@@ -13,7 +13,7 @@ class RAnnotationtools(RPackage):
 	"""
 	
 	bioc = "annotationTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/annotationTools_1.76.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/annotationTools/annotationTools_1.76.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/annotationTools_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/annotationTools/annotationTools_1.76.0.tar.gz"]
 
 	version("1.76.0", md5="3b0a795d7898c0b6112ed596f9d2de27")
 

@@ -13,7 +13,7 @@ class RPdOvigene10St(RPackage):
 	"""
 	
 	bioc = "pd.ovigene.1.0.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.ovigene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.ovigene.1.0.st/pd.ovigene.1.0.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.ovigene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.ovigene.1.0.st/pd.ovigene.1.0.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="88cfedfe10dd357539305051a69d31a1")
 

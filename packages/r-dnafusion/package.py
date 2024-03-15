@@ -14,7 +14,7 @@ class RDnafusion(RPackage):
 	
 	homepage = "https://github.com/CTrierMaansson/DNAfusion"
 	bioc = "DNAfusion" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DNAfusion_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DNAfusion/DNAfusion_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DNAfusion_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DNAfusion/DNAfusion_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="b7ef2bb10bea5334d6d159208c284c16")
 

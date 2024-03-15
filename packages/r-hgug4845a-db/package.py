@@ -13,7 +13,7 @@ class RHgug4845aDb(RPackage):
 	"""
 	
 	bioc = "hgug4845a.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hgug4845a.db_0.0.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hgug4845a.db/hgug4845a.db_0.0.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgug4845a.db_0.0.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgug4845a.db/hgug4845a.db_0.0.3.tar.gz"]
 
 	version("0.0.3", md5="46133d7bcb6d8c24c026304e8ddd150d")
 

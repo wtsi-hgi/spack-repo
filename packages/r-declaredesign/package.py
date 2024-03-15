@@ -21,7 +21,7 @@ class RDeclaredesign(RPackage):
 	homepage = "https://declaredesign.org/r/declaredesign/"
 	cran = "DeclareDesign" 
 
-	version("1.0.6", md5="ffb978d3c5159ff457f22228ea583ba1")
+	version("1.0.8", md5="4a2dc1761071fa896367dced21eaa648")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-randomizr@0.20:", type=("build", "run"))

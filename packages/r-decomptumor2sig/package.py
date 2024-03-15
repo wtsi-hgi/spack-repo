@@ -14,7 +14,7 @@ class RDecomptumor2sig(RPackage):
 	
 	homepage = "http://rmpiro.net/decompTumor2Sig/"
 	bioc = "decompTumor2Sig" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/decompTumor2Sig_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/decompTumor2Sig/decompTumor2Sig_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/decompTumor2Sig_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/decompTumor2Sig/decompTumor2Sig_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="efd7bdadb25752241823124b560e9214")
 

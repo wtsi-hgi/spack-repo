@@ -14,7 +14,7 @@ class RRnamodrMl(RPackage):
 	
 	homepage = "https://github.com/FelixErnst/RNAmodR.ML"
 	bioc = "RNAmodR.ML" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RNAmodR.ML_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RNAmodR.ML/RNAmodR.ML_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNAmodR.ML_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNAmodR.ML/RNAmodR.ML_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="b82e119e7d8c2387b22f4b38d0985970")
 

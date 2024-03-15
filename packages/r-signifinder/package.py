@@ -14,7 +14,7 @@ class RSignifinder(RPackage):
 	
 	homepage = "https://github.com/CaluraLab/signifinder"
 	bioc = "signifinder" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/signifinder_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/signifinder/signifinder_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/signifinder_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/signifinder/signifinder_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="f24a46dbbbc9b688450e9f2a0e2e221e")
 

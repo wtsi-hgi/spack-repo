@@ -13,7 +13,7 @@ class RRae230bprobe(RPackage):
 	"""
 	
 	bioc = "rae230bprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/rae230bprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/rae230bprobe/rae230bprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rae230bprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rae230bprobe/rae230bprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="7bdb3a07e1f00de8ff510a69bdac4c53")
 

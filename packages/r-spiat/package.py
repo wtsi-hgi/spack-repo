@@ -14,7 +14,7 @@ class RSpiat(RPackage):
 	
 	homepage = "https://trigosteam.github.io/SPIAT/"
 	bioc = "SPIAT" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SPIAT_1.4.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SPIAT/SPIAT_1.4.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SPIAT_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SPIAT/SPIAT_1.4.1.tar.gz"]
 
 	version("1.4.1", md5="45342ea9b5cbfbc01e38d6c7b7866852")
 

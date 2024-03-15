@@ -13,7 +13,7 @@ class RWeaver(RPackage):
 	"""
 	
 	bioc = "weaver" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/weaver_1.68.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/weaver/weaver_1.68.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/weaver_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/weaver/weaver_1.68.0.tar.gz"]
 
 	version("1.68.0", md5="629d19681872923f14b50543d833c1ba")
 

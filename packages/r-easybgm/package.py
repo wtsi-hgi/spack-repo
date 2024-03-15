@@ -16,12 +16,14 @@ class REasybgm(RPackage):
     structure space. Furthermore, the package comes with an extensive suite for visualizing results.
 	"""
 	
+	homepage = "https://github.com/KarolineHuth/easybgm"
 	cran = "easybgm" 
 
-	version("0.1.1", md5="6c0c2b8ac6ac0f129614e6cc4ec49d84")
+	version("0.1.2", md5="c7f06fa29b9e9849b8ac581fa520ae26")
 
 	depends_on("r-bdgraph", type=("build", "run"))
-	depends_on("r-bgms@0.1.1:", type=("build", "run"))
+	depends_on("r-bggm", type=("build", "run"))
+	depends_on("r-bgms@0.1.3:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-hdinterval", type=("build", "run"))

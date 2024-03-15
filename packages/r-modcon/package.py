@@ -14,7 +14,7 @@ class RModcon(RPackage):
 	
 	homepage = "https://github.com/caggtaagtat/ModCon"
 	bioc = "ModCon" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ModCon_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ModCon/ModCon_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ModCon_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ModCon/ModCon_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="bdb0634e890917a01325519cf6e53f90")
 

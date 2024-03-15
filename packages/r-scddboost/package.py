@@ -14,7 +14,7 @@ class RScddboost(RPackage):
 	
 	homepage = "https://github.com/wiscstatman/scDDboost"
 	bioc = "scDDboost" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scDDboost_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scDDboost/scDDboost_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDDboost_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scDDboost/scDDboost_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="ac0cac5975ebe4025ea07ad00e132847")
 

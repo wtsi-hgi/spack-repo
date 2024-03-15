@@ -13,7 +13,7 @@ class RNanostringdiff(RPackage):
 	"""
 	
 	bioc = "NanoStringDiff" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/NanoStringDiff_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/NanoStringDiff/NanoStringDiff_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NanoStringDiff_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NanoStringDiff/NanoStringDiff_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="3614c5bcf8aeea002875aa005d746092")
 

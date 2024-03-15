@@ -18,7 +18,7 @@ class RObic(RPackage):
 	homepage = "https://github.com/AgroCares/Open-Bodem-Index-Calculator"
 	cran = "OBIC" 
 
-	version("3.0.1", md5="bae19763ab1cc22f473e6105d14ef335")
+	version("3.0.2", md5="64a957d324fe3d4e0b06859071637ed7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

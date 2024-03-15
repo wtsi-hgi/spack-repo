@@ -14,7 +14,7 @@ class RDavidtiling(RPackage):
 	
 	homepage = "http://www.ebi.ac.uk/huber"
 	bioc = "davidTiling" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/davidTiling_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/davidTiling/davidTiling_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/davidTiling_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/davidTiling/davidTiling_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="dace46d6f640014aff544e0faf355b5e")
 

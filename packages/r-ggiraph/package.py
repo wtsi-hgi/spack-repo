@@ -15,9 +15,9 @@ class RGgiraph(RPackage):
 	homepage = "https://davidgohel.github.io/ggiraph/"
 	cran = "ggiraph" 
 
-	version("0.8.8", md5="14792a74b258d0c4fa7674fb15dcac27")
+	version("0.8.9", md5="4f29af71dc6db1376ce310797124a1a8")
 
-	depends_on("r-ggplot2@3.4:", type=("build", "run"))
+	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r-htmlwidgets@1.5:", type=("build", "run"))
 	depends_on("r-htmltools", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
@@ -26,4 +26,5 @@ class RGgiraph(RPackage):
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-uuid", type=("build", "run"))
 	depends_on("r-vctrs", type=("build", "run"))
+	depends_on("r-cli", type=("build", "run"))
 	depends_on("libpng", type=("build", "link", "run"))

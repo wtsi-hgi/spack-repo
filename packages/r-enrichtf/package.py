@@ -14,7 +14,7 @@ class REnrichtf(RPackage):
 	
 	homepage = "https://github.com/wzthu/enrichTF"
 	bioc = "enrichTF" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/enrichTF_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/enrichTF/enrichTF_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/enrichTF_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/enrichTF/enrichTF_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="a88296c9418e41a8e66fccc276925471")
 

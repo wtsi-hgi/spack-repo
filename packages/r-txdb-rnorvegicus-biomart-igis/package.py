@@ -13,7 +13,7 @@ class RTxdbRnorvegicusBiomartIgis(RPackage):
 	"""
 	
 	bioc = "TxDb.Rnorvegicus.BioMart.igis" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Rnorvegicus.BioMart.igis_2.3.2.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Rnorvegicus.BioMart.igis/TxDb.Rnorvegicus.BioMart.igis_2.3.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Rnorvegicus.BioMart.igis_2.3.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Rnorvegicus.BioMart.igis/TxDb.Rnorvegicus.BioMart.igis_2.3.2.tar.gz"]
 
 	version("2.3.2", md5="eaf695f63cd021074d68c76d148cdfb7")
 

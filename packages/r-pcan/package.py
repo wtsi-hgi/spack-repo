@@ -13,7 +13,7 @@ class RPcan(RPackage):
 	"""
 	
 	bioc = "PCAN" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PCAN_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PCAN/PCAN_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PCAN_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PCAN/PCAN_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="94596d43854d98aee2e6da198147772b")
 

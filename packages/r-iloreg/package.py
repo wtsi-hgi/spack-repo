@@ -14,7 +14,7 @@ class RIloreg(RPackage):
 	
 	homepage = "https://github.com/elolab/ILoReg"
 	bioc = "ILoReg" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ILoReg_1.12.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ILoReg/ILoReg_1.12.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ILoReg_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ILoReg/ILoReg_1.12.1.tar.gz"]
 
 	version("1.12.1", md5="a1f0a2d1222e84e1e0d0100600cf98b1")
 

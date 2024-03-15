@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -19,7 +19,7 @@ class RGenomicfeatures(RPackage):
 	desired features in a convenient format."""
 
 	bioc = "GenomicFeatures"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GenomicFeatures_1.54.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GenomicFeatures/GenomicFeatures_1.54.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicFeatures_1.54.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicFeatures/GenomicFeatures_1.54.3.tar.gz"]
 
 	version("1.54.3", md5="ff1db6c7968d616ad62d011206144975")
 

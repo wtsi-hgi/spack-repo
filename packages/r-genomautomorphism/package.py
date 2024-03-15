@@ -14,7 +14,7 @@ class RGenomautomorphism(RPackage):
 	
 	homepage = "https://github.com/genomaths/GenomAutomorphism"
 	bioc = "GenomAutomorphism" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GenomAutomorphism_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GenomAutomorphism/GenomAutomorphism_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomAutomorphism_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomAutomorphism/GenomAutomorphism_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="36ebcd90b454dc7450e875730537811b")
 

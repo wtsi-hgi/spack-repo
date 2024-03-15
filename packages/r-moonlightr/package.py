@@ -14,7 +14,7 @@ class RMoonlightr(RPackage):
 	
 	homepage = "https://github.com/ELELAB/MoonlightR"
 	bioc = "MoonlightR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MoonlightR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MoonlightR/MoonlightR_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MoonlightR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MoonlightR/MoonlightR_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="2a389ad9b7fe5ffc5e2c47717eb0b4c0")
 

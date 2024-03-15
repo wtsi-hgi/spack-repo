@@ -20,5 +20,5 @@ class RNanoarrow(RPackage):
 	homepage = "https://github.com/apache/arrow-nanoarrow"
 	cran = "nanoarrow" 
 
-	version("0.4.0", md5="d5251d4b4e2fa25bab6c404ad647ec63")
+	version("0.4.0.1", md5="9c1037cd5d73738287a363799e3c23ea")
 

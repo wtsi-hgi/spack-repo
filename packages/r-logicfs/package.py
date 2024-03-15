@@ -13,7 +13,7 @@ class RLogicfs(RPackage):
 	"""
 	
 	bioc = "logicFS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/logicFS_2.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/logicFS/logicFS_2.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/logicFS_2.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/logicFS/logicFS_2.22.0.tar.gz"]
 
 	version("2.22.0", md5="af46ee02e89efc5057af01be3f530a4f")
 

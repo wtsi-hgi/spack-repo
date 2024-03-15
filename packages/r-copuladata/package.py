@@ -10,14 +10,14 @@ class RCopuladata(RPackage):
 	"""Data Sets for Copula Modeling
 
 	Data sets used for copula modeling in addition to those in
- the package 'copula'. These include a random subsample from the US National
+ the R package 'copula'.  These include a random subsample from the US National
  Education Longitudinal Study (NELS) of 1988 and nursing home data from
  Wisconsin.
 	"""
 	
-	homepage = "http://copula.r-forge.r-project.org/"
+	homepage = "https://copula.r-forge.r-project.org/"
 	cran = "copulaData" 
 
-	version("0.0-1", md5="f5b1849e1490da58c511532668ed2586")
+	version("0.0-2", md5="aceff5308316999259b192bfc2a2cb39")
 
 	depends_on("r@3.1:", type=("build", "run"))

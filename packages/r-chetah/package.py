@@ -14,7 +14,7 @@ class RChetah(RPackage):
 	
 	homepage = "https://github.com/jdekanter/CHETAH"
 	bioc = "CHETAH" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CHETAH_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CHETAH/CHETAH_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CHETAH_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CHETAH/CHETAH_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="a6b920a4a3f3f931acb3cd950c7a74c3")
 

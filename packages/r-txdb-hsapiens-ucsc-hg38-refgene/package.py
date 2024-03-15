@@ -13,7 +13,7 @@ class RTxdbHsapiensUcscHg38Refgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Hsapiens.UCSC.hg38.refGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg38.refGene_3.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Hsapiens.UCSC.hg38.refGene/TxDb.Hsapiens.UCSC.hg38.refGene_3.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg38.refGene_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Hsapiens.UCSC.hg38.refGene/TxDb.Hsapiens.UCSC.hg38.refGene_3.18.0.tar.gz"]
 
 	version("3.18.0", md5="7ec982095ea795b99d53b6549d7ba4d4")
 

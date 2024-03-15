@@ -13,7 +13,7 @@ class RGrndata(RPackage):
 	"""
 	
 	bioc = "grndata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/grndata_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/grndata/grndata_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/grndata_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/grndata/grndata_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="0ebac67277a5ca915f9a971d3659af5e")
 

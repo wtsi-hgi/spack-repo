@@ -15,7 +15,7 @@ class RPandora(RPackage):
 	homepage = "https://github.com/Pandora-IsoMemo/pandora-data"
 	cran = "Pandora" 
 
-	version("23.12.0", md5="7c8a81d68cd4a32811c41160193466cb")
+	version("24.2.0", md5="a8e82706a5ebe69654a6027a66d9dfaa")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))

@@ -14,7 +14,7 @@ class RCdi(RPackage):
 	
 	homepage = "https://github.com/jichunxie/CDI"
 	bioc = "CDI" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CDI_1.0.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CDI/CDI_1.0.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CDI_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CDI/CDI_1.0.2.tar.gz"]
 
 	version("1.0.2", md5="64ebd520b0ba4613c3bddf06bb82dbc0")
 

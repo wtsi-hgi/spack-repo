@@ -7,7 +7,8 @@ from spack.package import *
 
 
 class RFastts(RPackage):
-	"""Fast Time Series Modeling with the Sparsity Ranked Lasso
+	"""Fast Time Series Modeling for Seasonal Series with Exogenous
+Variables
 
 	An implementation of sparsity-ranked lasso and related methods 
     for time series data. This methodology is especially useful for 
@@ -19,7 +20,7 @@ class RFastts(RPackage):
     presence of prior informational asymmetry. This situation exists for time 
     series data with complex seasonality, as shown in Peterson and Cavanaugh 
     (2023+) <doi:10.48550/arXiv.2211.01492>, which also describes this package
-    in greater detail. The sparsity-ranked methods for Time Series  
+    in greater detail. The sparsity-ranked penalization methods for Time Series
     implemented in 'fastTS' can fit large/complex/high-frequency time series
     quickly, even with a high-dimensional exogenous feature set. The method is
     considerably faster than its competitors, while often producing more 
@@ -31,7 +32,7 @@ class RFastts(RPackage):
 	homepage = "https://petersonr.github.io/fastTS/"
 	cran = "fastTS" 
 
-	version("0.1.2", md5="732bcdc7c75d5d78c71973b2a072b0eb")
+	version("1.0.0", md5="845aabe2ed1dfeb1fc48aa3be197f5d8")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -14,7 +14,7 @@ class RRegutools(RPackage):
 	
 	homepage = "https://github.com/ComunidadBioInfo/regutools"
 	bioc = "regutools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/regutools_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/regutools/regutools_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/regutools_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/regutools/regutools_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="f8b22dfa98af4304de7be1654159626a")
 

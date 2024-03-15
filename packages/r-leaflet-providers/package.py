@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RLeafletProviders(RPackage):
 	retrieve up-to-date provider information between package updates."""
 
 	cran = "leaflet.providers"
+
+	license("BSD-2-Clause")
 
 	version("2.0.0", md5="b79c7aa04260ef1c22be11ce8b8d0d18")
 

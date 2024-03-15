@@ -13,7 +13,7 @@ class RPdCelegans(RPackage):
 	"""
 	
 	bioc = "pd.celegans" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.celegans_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.celegans/pd.celegans_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.celegans_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.celegans/pd.celegans_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="b90ea2e071522bb340c103a1c8270205")
 

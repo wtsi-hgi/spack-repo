@@ -16,7 +16,7 @@ class RBfp(RPackage):
 	
 	cran = "bfp" 
 
-	version("0.0-47", md5="a30978e024587c1cda508e1174d04407")
+	version("0.0-48", md5="b3ec5145da72dbd948c981defd8b1163")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

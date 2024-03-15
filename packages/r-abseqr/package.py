@@ -14,7 +14,7 @@ class RAbseqr(RPackage):
 	
 	homepage = "https://github.com/malhamdoosh/abseqR"
 	bioc = "abseqR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/abseqR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/abseqR/abseqR_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/abseqR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/abseqR/abseqR_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="f35214f635511b611297a3730386b205")
 

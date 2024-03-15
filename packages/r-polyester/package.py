@@ -13,7 +13,7 @@ class RPolyester(RPackage):
 	"""
 	
 	bioc = "polyester" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/polyester_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/polyester/polyester_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/polyester_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/polyester/polyester_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="acc47ee29fb9c22fb1ad4bbfafe8fd4d")
 

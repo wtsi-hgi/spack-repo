@@ -13,7 +13,7 @@ class RMirnatap(RPackage):
 	"""
 	
 	bioc = "miRNAtap" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/miRNAtap_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/miRNAtap/miRNAtap_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miRNAtap_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miRNAtap/miRNAtap_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="f09289c10d9e5e916cc1b95e79bf504f")
 

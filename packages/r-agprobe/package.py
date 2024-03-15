@@ -13,7 +13,7 @@ class RAgprobe(RPackage):
 	"""
 	
 	bioc = "agprobe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/agprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/agprobe/agprobe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/agprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/agprobe/agprobe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="08f7527d4c8a30d8b2f86016a53f075a")
 

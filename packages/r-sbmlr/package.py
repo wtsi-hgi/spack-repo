@@ -14,7 +14,7 @@ class RSbmlr(RPackage):
 	
 	homepage = "http://epbi-radivot.cwru.edu/SBMLR/SBMLR.html"
 	bioc = "SBMLR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SBMLR_1.98.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SBMLR/SBMLR_1.98.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SBMLR_1.98.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SBMLR/SBMLR_1.98.0.tar.gz"]
 
 	version("1.98.0", md5="36433007d11730737942753523a9d91e")
 

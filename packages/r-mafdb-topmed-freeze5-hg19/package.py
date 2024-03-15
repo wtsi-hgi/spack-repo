@@ -13,9 +13,9 @@ class RMafdbTopmedFreeze5Hg19(RPackage):
 	"""
 	
 	bioc = "MafDb.TOPMed.freeze5.hg19" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/MafDb.TOPMed.freeze5.hg19_3.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/MafDb.TOPMed.freeze5.hg19/MafDb.TOPMed.freeze5.hg19_3.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.TOPMed.freeze5.hg19_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/MafDb.TOPMed.freeze5.hg19/MafDb.TOPMed.freeze5.hg19_3.10.0.tar.gz"]
 
-	version("3.10.0", md5="7fdb58eb69187ade189689da58ca6266", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/MafDb.TOPMed.freeze5.hg19_3.10.0.tar.gz")
+	version("3.10.0", md5="7fdb58eb69187ade189689da58ca6266", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.TOPMed.freeze5.hg19_3.10.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicscores@1.9.6:", type=("build", "run"))

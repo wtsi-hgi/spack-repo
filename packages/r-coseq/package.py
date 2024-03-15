@@ -13,7 +13,7 @@ class RCoseq(RPackage):
 	"""
 	
 	bioc = "coseq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/coseq_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/coseq/coseq_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/coseq_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/coseq/coseq_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="1e4bea8d520a2554f8f1095d6912074b")
 

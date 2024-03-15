@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -12,6 +12,8 @@ class RPlotrix(RPackage):
 	Lots of plots, various labeling, axis and color scaling functions."""
 
 	cran = "plotrix"
+
+	license("GPL-2.0-or-later")
 
 	version("3.8-4", md5="553079f4dd3f183030b5157ae00cb5ae")
 

@@ -14,7 +14,7 @@ class RLungcanceracvssccgeo(RPackage):
 	
 	homepage = "http://bioinformaticsprb.med.wayne.edu/"
 	bioc = "LungCancerACvsSCCGEO" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/LungCancerACvsSCCGEO_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/LungCancerACvsSCCGEO/LungCancerACvsSCCGEO_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/LungCancerACvsSCCGEO_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/LungCancerACvsSCCGEO/LungCancerACvsSCCGEO_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="f353aa0cc36dc25e67cdf1ba0738985e")
 

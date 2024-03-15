@@ -13,10 +13,10 @@ for Panomics Data
 	Provides functionality for quality control processing and statistical analysis of mass spectrometry (MS) omics data, in particular proteomic (either at the peptide or the protein level), lipidomic, and metabolomic data, as well as RNA-seq based count data and nuclear magnetic resonance (NMR) data. This includes data transformation, specification of groups that are to be compared against each other, filtering of features and/or samples, data normalization, data summarization (correlation, PCA), and statistical comparisons between defined groups.  Implements methods described in:  Webb-Robertson et al. (2014) <doi:10.1074/mcp.M113.030932>.  Webb-Robertson et al. (2011) <doi:10.1002/pmic.201100078>.  Matzke et al. (2011) <doi:10.1093/bioinformatics/btr479>.  Matzke et al. (2013) <doi:10.1002/pmic.201200269>.  Polpitiya et al. (2008) <doi:10.1093/bioinformatics/btn217>.  Webb-Robertson et al. (2010) <doi:10.1021/pr1005247>.  
 	"""
 	
-	homepage = "https://github.com/pmartR/pmartR"
+	homepage = "https://pmartr.github.io/pmartR/"
 	cran = "pmartR" 
 
-	version("2.4.2", md5="ae34ffd49b1a2d3ddd4cc0f85b288033")
+	version("2.4.4", md5="07209673bd14d4c8a200ab2f995a763f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
@@ -28,7 +28,6 @@ for Panomics Data
 	depends_on("r-foreach", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))
 	depends_on("r-pcamethods", type=("build", "run"))
-	depends_on("r-plotly", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-rrcov", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))

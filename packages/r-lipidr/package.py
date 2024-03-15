@@ -14,7 +14,7 @@ class RLipidr(RPackage):
 	
 	homepage = "https://github.com/ahmohamed/lipidr"
 	bioc = "lipidr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/lipidr_2.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/lipidr/lipidr_2.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lipidr_2.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lipidr/lipidr_2.16.0.tar.gz"]
 
 	version("2.16.0", md5="27b17acc2b4de0439304799e0a7cba2a")
 

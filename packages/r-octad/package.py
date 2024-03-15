@@ -13,7 +13,7 @@ class ROctad(RPackage):
 	"""
 	
 	bioc = "octad" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/octad_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/octad/octad_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/octad_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/octad/octad_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="65dcd54e4646d61afcfb9afc90108ba4")
 

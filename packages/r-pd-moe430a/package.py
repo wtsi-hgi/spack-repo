@@ -13,7 +13,7 @@ class RPdMoe430a(RPackage):
 	"""
 	
 	bioc = "pd.moe430a" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.moe430a_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.moe430a/pd.moe430a_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.moe430a_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.moe430a/pd.moe430a_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="f9a7cb62140e42c2a82177548a1c73fb")
 

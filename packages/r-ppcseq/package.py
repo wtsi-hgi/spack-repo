@@ -14,7 +14,7 @@ class RPpcseq(RPackage):
 	
 	homepage = "https://github.com/stemangiola/ppcseq"
 	bioc = "ppcseq" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ppcseq_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ppcseq/ppcseq_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ppcseq_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ppcseq/ppcseq_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="5a95706ac4269643dd1eb6efd4bccb67")
 

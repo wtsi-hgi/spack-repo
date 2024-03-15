@@ -14,7 +14,7 @@ class RUniversalmotif(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/universalmotif/"
 	bioc = "universalmotif" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/universalmotif_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/universalmotif/universalmotif_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/universalmotif_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/universalmotif/universalmotif_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="fe680a8d988fce6bfde0af9fdce148de")
 

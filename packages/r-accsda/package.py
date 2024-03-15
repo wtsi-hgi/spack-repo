@@ -22,10 +22,9 @@ class RAccsda(RPackage):
 	homepage = "https://github.com/gumeo/accSDA/wiki"
 	cran = "accSDA" 
 
-	version("1.1.2", md5="7f357940ffdb072548b642ba605dac16")
+	version("1.1.3", md5="f69de7acb8a6fbfb5204b4964704491b")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-mass@7.3.45:", type=("build", "run"))
 	depends_on("r-ggplot2@2.1:", type=("build", "run"))
-	depends_on("r-ggthemes@3.2:", type=("build", "run"))
 	depends_on("r-gridextra@2.2.1:", type=("build", "run"))

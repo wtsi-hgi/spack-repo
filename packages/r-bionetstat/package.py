@@ -14,7 +14,7 @@ class RBionetstat(RPackage):
 	
 	homepage = "http://github.com/jardimViniciusC/BioNetStat"
 	bioc = "BioNetStat" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BioNetStat_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BioNetStat/BioNetStat_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioNetStat_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioNetStat/BioNetStat_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="c5de66f95b44aa3d98c077be1a27ae44")
 

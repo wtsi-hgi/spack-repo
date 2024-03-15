@@ -14,7 +14,7 @@ class RVenndetail(RPackage):
 	
 	homepage = "https://github.com/guokai8/VennDetail"
 	bioc = "VennDetail" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/VennDetail_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/VennDetail/VennDetail_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VennDetail_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VennDetail/VennDetail_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="be9c3506e9707fe42642ea413c0873a6")
 

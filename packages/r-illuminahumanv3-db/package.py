@@ -13,7 +13,7 @@ class RIlluminahumanv3Db(RPackage):
 	"""
 	
 	bioc = "illuminaHumanv3.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/illuminaHumanv3.db_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/illuminaHumanv3.db/illuminaHumanv3.db_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/illuminaHumanv3.db_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/illuminaHumanv3.db/illuminaHumanv3.db_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="7d9e7534f0b60f0e3e7473e545ef373d")
 

@@ -14,7 +14,7 @@ class REpidish(RPackage):
 	
 	homepage = "https://github.com/sjczheng/EpiDISH"
 	bioc = "EpiDISH" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EpiDISH_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EpiDISH/EpiDISH_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EpiDISH_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EpiDISH/EpiDISH_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="db7b5d2165fad653dabc1bfd8faeab83")
 

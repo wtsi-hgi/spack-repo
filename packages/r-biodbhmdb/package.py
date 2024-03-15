@@ -14,7 +14,7 @@ class RBiodbhmdb(RPackage):
 	
 	homepage = "https://github.com/pkrog/biodbHmdb"
 	bioc = "biodbHmdb" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biodbHmdb_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biodbHmdb/biodbHmdb_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbHmdb_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbHmdb/biodbHmdb_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="b34c06c2ce8865b7eebedb869a1ab505")
 

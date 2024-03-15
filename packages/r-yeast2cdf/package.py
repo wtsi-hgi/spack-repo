@@ -13,7 +13,7 @@ class RYeast2cdf(RPackage):
 	"""
 	
 	bioc = "yeast2cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/yeast2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/yeast2cdf/yeast2cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/yeast2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/yeast2cdf/yeast2cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="0a718d78ae56bef9bad8168123038ac8")
 

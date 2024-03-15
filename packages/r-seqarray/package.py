@@ -14,7 +14,7 @@ class RSeqarray(RPackage):
 	
 	homepage = "https://github.com/zhengxwen/SeqArray"
 	bioc = "SeqArray" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SeqArray_1.42.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SeqArray/SeqArray_1.42.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SeqArray_1.42.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SeqArray/SeqArray_1.42.2.tar.gz"]
 
 	version("1.42.2", md5="bc97547c09a0e4c30a7a2828b2493367")
 

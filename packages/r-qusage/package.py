@@ -14,7 +14,7 @@ class RQusage(RPackage):
 	
 	homepage = "http://clip.med.yale.edu/qusage"
 	bioc = "qusage" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/qusage_2.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/qusage/qusage_2.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qusage_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qusage/qusage_2.36.0.tar.gz"]
 
 	version("2.36.0", md5="f4675daa1494bbf070a084d05a2e672b")
 

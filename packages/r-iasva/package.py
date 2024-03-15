@@ -13,7 +13,7 @@ class RIasva(RPackage):
 	"""
 	
 	bioc = "iasva" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iasva_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iasva/iasva_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iasva_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iasva/iasva_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="a52a31d7564e175a288943ae77b22a93")
 

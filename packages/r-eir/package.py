@@ -14,7 +14,7 @@ class REir(RPackage):
 	
 	homepage = "https://github.com/girke-lab/eiR"
 	bioc = "eiR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/eiR_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/eiR/eiR_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/eiR_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/eiR/eiR_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="71e5c96821411e053b417fb15618e1cb")
 

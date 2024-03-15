@@ -13,7 +13,7 @@ class ROrgSsEgDb(RPackage):
 	"""
 	
 	bioc = "org.Ss.eg.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/org.Ss.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/org.Ss.eg.db/org.Ss.eg.db_3.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Ss.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.Ss.eg.db/org.Ss.eg.db_3.18.0.tar.gz"]
 
 	version("3.18.0", md5="f9b32c76d23f9195df7a7eb6529f3340")
 

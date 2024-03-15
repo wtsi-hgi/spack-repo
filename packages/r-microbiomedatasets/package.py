@@ -13,7 +13,7 @@ class RMicrobiomedatasets(RPackage):
 	"""
 	
 	bioc = "microbiomeDataSets" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/microbiomeDataSets_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/microbiomeDataSets/microbiomeDataSets_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/microbiomeDataSets_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/microbiomeDataSets/microbiomeDataSets_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="90cd4bb36dafcef8f6eb0e0232afdcd0")
 

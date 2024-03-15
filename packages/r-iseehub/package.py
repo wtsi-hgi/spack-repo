@@ -14,7 +14,7 @@ class RIseehub(RPackage):
 	
 	homepage = "https://github.com/iSEE/iSEEhub"
 	bioc = "iSEEhub" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iSEEhub_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iSEEhub/iSEEhub_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEEhub_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEEhub/iSEEhub_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="6ebb32da66242f608b83522fca1d9a62")
 

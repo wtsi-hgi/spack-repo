@@ -14,7 +14,7 @@ class RSnagee(RPackage):
 	
 	homepage = "http://bioconductor.org/"
 	bioc = "SNAGEE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SNAGEE_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SNAGEE/SNAGEE_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SNAGEE_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SNAGEE/SNAGEE_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="faadcab23b170f71a29ac7fd67b2a5d8")
 

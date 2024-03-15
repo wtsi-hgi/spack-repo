@@ -13,7 +13,7 @@ class RCogps(RPackage):
 	"""
 	
 	bioc = "coGPS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/coGPS_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/coGPS/coGPS_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/coGPS_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/coGPS/coGPS_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="a824d8a41fee47628eb7f369adef4a2c")
 

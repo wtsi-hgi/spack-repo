@@ -13,7 +13,7 @@ class RAtaccogaps(RPackage):
 	"""
 	
 	bioc = "ATACCoGAPS" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ATACCoGAPS_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ATACCoGAPS/ATACCoGAPS_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ATACCoGAPS_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ATACCoGAPS/ATACCoGAPS_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="f8cf8dd559b05caf23934090510297de")
 

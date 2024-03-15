@@ -13,7 +13,7 @@ class RRedisparam(RPackage):
 	"""
 	
 	bioc = "RedisParam" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RedisParam_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RedisParam/RedisParam_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RedisParam_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RedisParam/RedisParam_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="cf24018f96bc9de6286d2806dfd7bfaa")
 

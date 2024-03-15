@@ -14,7 +14,7 @@ class RDoppelgangr(RPackage):
 	
 	homepage = "https://github.com/lwaldron/doppelgangR"
 	bioc = "doppelgangR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/doppelgangR_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/doppelgangR/doppelgangR_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/doppelgangR_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/doppelgangR/doppelgangR_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="c50eff7bb5871b545a8199a9b1c4667b")
 

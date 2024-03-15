@@ -13,7 +13,7 @@ class RHthgu133afrmavecs(RPackage):
 	"""
 	
 	bioc = "hthgu133afrmavecs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hthgu133afrmavecs_1.3.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hthgu133afrmavecs/hthgu133afrmavecs_1.3.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hthgu133afrmavecs_1.3.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hthgu133afrmavecs/hthgu133afrmavecs_1.3.0.tar.gz"]
 
 	version("1.3.0", md5="be3f3d67a94dca3b080c184fba5ff6d8")
 

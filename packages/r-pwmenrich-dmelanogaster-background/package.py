@@ -13,7 +13,7 @@ class RPwmenrichDmelanogasterBackground(RPackage):
 	"""
 	
 	bioc = "PWMEnrich.Dmelanogaster.background" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/PWMEnrich.Dmelanogaster.background_4.36.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/PWMEnrich.Dmelanogaster.background/PWMEnrich.Dmelanogaster.background_4.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PWMEnrich.Dmelanogaster.background_4.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PWMEnrich.Dmelanogaster.background/PWMEnrich.Dmelanogaster.background_4.36.0.tar.gz"]
 
 	version("4.36.0", md5="b671ba0cff5c0c6017fd3f72d0afc547")
 

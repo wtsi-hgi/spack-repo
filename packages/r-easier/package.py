@@ -13,7 +13,7 @@ class REasier(RPackage):
 	"""
 	
 	bioc = "easier" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/easier_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/easier/easier_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/easier_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/easier/easier_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="65f72a669a157fdf57501fb32d1c0333")
 

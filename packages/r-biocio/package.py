@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -21,7 +21,7 @@ class RBiocio(RPackage):
 	methods based on classes representing file types, e.g., `LoomFile()`."""
 
 	bioc = "BiocIO"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BiocIO_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiocIO/BiocIO_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocIO_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocIO/BiocIO_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="6e0c18bdf6d9f707f9d1e431400fa1c7")
 

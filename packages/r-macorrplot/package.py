@@ -14,7 +14,7 @@ class RMacorrplot(RPackage):
 	
 	homepage = "http://www.pubmedcentral.gov/articlerender.fcgi?tool=pubmed&pubmedid=15799785"
 	bioc = "maCorrPlot" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/maCorrPlot_1.72.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/maCorrPlot/maCorrPlot_1.72.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maCorrPlot_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maCorrPlot/maCorrPlot_1.72.0.tar.gz"]
 
 	version("1.72.0", md5="4d4be51b04e4ff3e09aff6643eeed215")
 

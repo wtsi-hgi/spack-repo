@@ -14,7 +14,7 @@ class RTargetscore(RPackage):
 	
 	homepage = "http://www.cs.utoronto.ca/~yueli/software.html"
 	bioc = "TargetScore" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TargetScore_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TargetScore/TargetScore_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TargetScore_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TargetScore/TargetScore_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="92d3b6ca138c6c3081262a758ec63766")
 

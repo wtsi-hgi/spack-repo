@@ -13,7 +13,7 @@ class RHuex10stprobesetDb(RPackage):
 	"""
 	
 	bioc = "huex10stprobeset.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/huex10stprobeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/huex10stprobeset.db/huex10stprobeset.db_8.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/huex10stprobeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/huex10stprobeset.db/huex10stprobeset.db_8.8.0.tar.gz"]
 
 	version("8.8.0", md5="fda9fc7340aeda2564a76756d2b8d4d3")
 

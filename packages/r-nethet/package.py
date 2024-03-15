@@ -13,7 +13,7 @@ class RNethet(RPackage):
 	"""
 	
 	bioc = "nethet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/nethet_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/nethet/nethet_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nethet_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nethet/nethet_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="35bc35cf08904b721563aa54e486cc95")
 

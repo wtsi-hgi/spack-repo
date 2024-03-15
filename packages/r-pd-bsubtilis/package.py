@@ -13,7 +13,7 @@ class RPdBsubtilis(RPackage):
 	"""
 	
 	bioc = "pd.bsubtilis" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.bsubtilis_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.bsubtilis/pd.bsubtilis_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.bsubtilis_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.bsubtilis/pd.bsubtilis_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="2261d8b0ec178beb432d71eafd90ec9a")
 

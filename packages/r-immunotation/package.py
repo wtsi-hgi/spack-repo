@@ -13,7 +13,7 @@ class RImmunotation(RPackage):
 	"""
 	
 	bioc = "immunotation" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/immunotation_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/immunotation/immunotation_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/immunotation_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/immunotation/immunotation_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="b05bb33e3987de27d181d8e44e468f62")
 

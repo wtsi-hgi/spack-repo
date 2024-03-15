@@ -14,7 +14,7 @@ class RHtqpcr(RPackage):
 	
 	homepage = "http://www.ebi.ac.uk/bertone/software"
 	bioc = "HTqPCR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/HTqPCR_1.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/HTqPCR/HTqPCR_1.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HTqPCR_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HTqPCR/HTqPCR_1.56.0.tar.gz"]
 
 	version("1.56.0", md5="2deab9ff0c0269549b377a0867482f60")
 

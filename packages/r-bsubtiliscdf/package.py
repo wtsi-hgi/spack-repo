@@ -13,7 +13,7 @@ class RBsubtiliscdf(RPackage):
 	"""
 	
 	bioc = "bsubtiliscdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/bsubtiliscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/bsubtiliscdf/bsubtiliscdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/bsubtiliscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/bsubtiliscdf/bsubtiliscdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="7d7893d28c601206805819ae0e49b31b")
 

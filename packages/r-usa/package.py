@@ -9,16 +9,16 @@ from spack.package import *
 class RUsa(RPackage):
 	"""Updated US State Facts and Figures
 
-	Updated versions of the 1970's "US State Facts and
-    Figures" objects from the 'datasets' package included with R. The new
-    data is compiled from a number of sources, primarily from United
-    States Census Bureau or the relevant federal agency.
+	Updated versions of the 1970's "US State Facts and Figures"
+    objects from the 'datasets' package included with R. The new data is
+    compiled from a number of sources, primarily from United States Census
+    Bureau or the relevant federal agency.
 	"""
 	
-	homepage = "https://kiernann.com/usa"
+	homepage = "https://k5cents.github.io/usa/"
 	cran = "usa" 
 
-	version("0.1.0", md5="90853d9cacb5938d1b0729159e11c1a5")
+	version("0.1.2", md5="9ce720fd90815e67704e201e0887e583")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-tibble@2.1.3:", type=("build", "run"))

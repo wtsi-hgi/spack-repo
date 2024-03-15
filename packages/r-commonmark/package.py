@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,8 @@ class RCommonmark(RPackage):
 	autolinks, and strikethrough text."""
 
 	cran = "commonmark"
+
+	license("BSD-2-Clause")
 
 	version("1.9.1", md5="c95e6412ef2937d110128f35fd85be78")
 

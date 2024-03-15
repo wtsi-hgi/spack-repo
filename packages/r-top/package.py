@@ -14,7 +14,7 @@ class RTop(RPackage):
 	
 	homepage = "https://github.com/Harry25R/TOP"
 	bioc = "TOP" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TOP_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TOP/TOP_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TOP_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TOP/TOP_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="af6712369d58630bdcc2b05d7dc06b52")
 

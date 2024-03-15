@@ -13,7 +13,7 @@ class RAnvil(RPackage):
 	"""
 	
 	bioc = "AnVIL" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AnVIL_1.14.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AnVIL/AnVIL_1.14.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnVIL_1.14.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnVIL/AnVIL_1.14.2.tar.gz"]
 
 	version("1.14.2", md5="43a5cf2e73ee5a400bab98cd756a918c")
 

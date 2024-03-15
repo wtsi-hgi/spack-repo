@@ -17,7 +17,7 @@ class RTvthemes(RPackage):
 	homepage = "https://github.com/Ryo-N7/tvthemes"
 	cran = "tvthemes" 
 
-	version("1.3.2", md5="d1820c2fb8a697eb1b6d06f403592c1a")
+	version("1.3.3", md5="7e00134655c8fe8fb3cfdde0673d56dc")
 
 	depends_on("r-ggplot2@3.1:", type=("build", "run"))
 	depends_on("r-extrafont@0.17:", type=("build", "run"))

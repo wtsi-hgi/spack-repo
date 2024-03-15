@@ -13,7 +13,7 @@ class RCghnormaliter(RPackage):
 	"""
 	
 	bioc = "CGHnormaliter" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CGHnormaliter_1.56.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CGHnormaliter/CGHnormaliter_1.56.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CGHnormaliter_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CGHnormaliter/CGHnormaliter_1.56.0.tar.gz"]
 
 	version("1.56.0", md5="948d3af66840226e7095e46d281df177")
 

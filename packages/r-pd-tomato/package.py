@@ -13,7 +13,7 @@ class RPdTomato(RPackage):
 	"""
 	
 	bioc = "pd.tomato" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.tomato_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.tomato/pd.tomato_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.tomato_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.tomato/pd.tomato_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="ce78f6ee43d72e017608413dd4d50580")
 

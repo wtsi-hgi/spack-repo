@@ -13,9 +13,9 @@ class RPdXLaevis2(RPackage):
 	"""
 	
 	bioc = "pd.x.laevis.2" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.x.laevis.2_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.x.laevis.2/pd.x.laevis.2_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.x.laevis.2_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.x.laevis.2/pd.x.laevis.2_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="32416957e3cdc11ad4dbfcd9141ff113", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.x.laevis.2_3.12.0.tar.gz")
+	version("3.12.0", md5="32416957e3cdc11ad4dbfcd9141ff113", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.x.laevis.2_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

@@ -14,7 +14,7 @@ class RNdexr(RPackage):
 	
 	homepage = "https://github.com/frankkramer-lab/ndexr"
 	bioc = "ndexr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ndexr_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ndexr/ndexr_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ndexr_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ndexr/ndexr_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="caa87487f3e0c062aa6b56b1dc6f70a0")
 

@@ -13,7 +13,7 @@ class RAhcytobands(RPackage):
 	"""
 	
 	bioc = "AHCytoBands" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/AHCytoBands_0.99.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/AHCytoBands/AHCytoBands_0.99.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AHCytoBands_0.99.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/AHCytoBands/AHCytoBands_0.99.1.tar.gz"]
 
 	version("0.99.1", md5="3dd85d02e7ed3fca4c7898b5e395edeb")
 

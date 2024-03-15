@@ -14,7 +14,7 @@ class RTitancna(RPackage):
 	
 	homepage = "https://github.com/gavinha/TitanCNA"
 	bioc = "TitanCNA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TitanCNA_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TitanCNA/TitanCNA_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TitanCNA_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TitanCNA/TitanCNA_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="ce40de587ae35a22c583019e6a85dbc6")
 

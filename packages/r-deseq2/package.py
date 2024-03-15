@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,9 +16,9 @@ class RDeseq2(RPackage):
 
 	homepage = "https://bioconductor.org/packages/DESeq2"
 	git = "https://git.bioconductor.org/packages/DESeq2.git"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DESeq2_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DESeq2/DESeq2_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DESeq2_1.42.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DESeq2/DESeq2_1.42.1.tar.gz"]
 
-	version("1.42.0", md5="5eb89526ce9fd4da98b1a5e0b5ba0bf3", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/DESeq2_1.42.0.tar.gz")
+	version("1.42.1", md5="7b8f94401f376261f869ee839a0be2e1", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DESeq2_1.42.1.tar.gz")
 
 	depends_on("r-s4vectors@0.23.18:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

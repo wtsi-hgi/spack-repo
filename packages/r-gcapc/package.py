@@ -14,7 +14,7 @@ class RGcapc(RPackage):
 	
 	homepage = "https://github.com/tengmx/gcapc"
 	bioc = "gcapc" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gcapc_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gcapc/gcapc_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gcapc_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gcapc/gcapc_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="16c0a9ac78843641871680c0e0d48dfc")
 

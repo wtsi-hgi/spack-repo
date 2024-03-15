@@ -14,7 +14,7 @@ class RChromdraw(RPackage):
 	
 	homepage = "www.plantcytogenomics.org/chromDraw"
 	bioc = "chromDraw" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/chromDraw_2.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/chromDraw/chromDraw_2.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chromDraw_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chromDraw/chromDraw_2.32.0.tar.gz"]
 
 	version("2.32.0", md5="a2cb0f03cdde9853f68662b1783a2edb")
 

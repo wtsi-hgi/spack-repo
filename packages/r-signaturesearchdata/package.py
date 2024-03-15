@@ -13,7 +13,7 @@ class RSignaturesearchdata(RPackage):
 	"""
 	
 	bioc = "signatureSearchData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/signatureSearchData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/signatureSearchData/signatureSearchData_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/signatureSearchData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/signatureSearchData/signatureSearchData_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="b30a7f1715a7525279c47db6df5ad995")
 

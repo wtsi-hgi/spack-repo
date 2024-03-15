@@ -13,7 +13,7 @@ class RMonocle(RPackage):
 	"""
 	
 	bioc = "monocle" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/monocle_2.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/monocle/monocle_2.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/monocle_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/monocle/monocle_2.30.0.tar.gz"]
 
 	version("2.30.0", md5="8b3a3d5cd2698b4cef4396c388250658")
 

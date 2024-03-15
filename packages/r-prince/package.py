@@ -13,7 +13,7 @@ class RPrince(RPackage):
 	"""
 	
 	bioc = "PrInCE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PrInCE_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PrInCE/PrInCE_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PrInCE_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PrInCE/PrInCE_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="98e7e0b9a7e620e0e4ab55436b5c289b")
 

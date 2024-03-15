@@ -14,7 +14,7 @@ class RInteractivecomplexheatmap(RPackage):
 	
 	homepage = "https://github.com/jokergoo/InteractiveComplexHeatmap"
 	bioc = "InteractiveComplexHeatmap" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/InteractiveComplexHeatmap_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/InteractiveComplexHeatmap/InteractiveComplexHeatmap_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/InteractiveComplexHeatmap_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/InteractiveComplexHeatmap/InteractiveComplexHeatmap_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="87fef3e4c9035cbfab5dc4a2242223dc")
 

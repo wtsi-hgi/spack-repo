@@ -13,7 +13,7 @@ class RRgsepd(RPackage):
 	"""
 	
 	bioc = "rgsepd" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/rgsepd_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/rgsepd/rgsepd_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rgsepd_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rgsepd/rgsepd_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="0ca30d2f68c98bcc24cc5c5fbc5951b3")
 

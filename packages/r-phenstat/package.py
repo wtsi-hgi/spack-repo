@@ -13,7 +13,7 @@ class RPhenstat(RPackage):
 	"""
 	
 	bioc = "PhenStat" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PhenStat_2.38.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PhenStat/PhenStat_2.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PhenStat_2.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PhenStat/PhenStat_2.38.0.tar.gz"]
 
 	version("2.38.0", md5="f28cba815b5f6e8b3350c926d1d05907")
 

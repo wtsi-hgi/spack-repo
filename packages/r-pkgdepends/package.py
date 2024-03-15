@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -19,6 +19,8 @@ class RPkgdepends(RPackage):
 	package."""
 
 	cran = "pkgdepends"
+
+	license("MIT")
 
 	version("0.7.1", md5="0768d59a31fe96bf44b7dabc662c0fcc")
 

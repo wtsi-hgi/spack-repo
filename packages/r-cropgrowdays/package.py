@@ -24,7 +24,7 @@ class RCropgrowdays(RPackage):
 	homepage = "https://gitlab.com/petebaker/cropgrowdays/"
 	cran = "cropgrowdays" 
 
-	version("0.2.0", md5="83801c6714e0f0647849f70a6931ed5c")
+	version("0.2.1", md5="2c976ff324b9332d1f55dabe43184af4")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-lubridate", type=("build", "run"))

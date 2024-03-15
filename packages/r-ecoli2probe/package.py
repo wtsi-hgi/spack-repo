@@ -13,7 +13,7 @@ class REcoli2probe(RPackage):
 	"""
 	
 	bioc = "ecoli2probe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ecoli2probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/ecoli2probe/ecoli2probe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ecoli2probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ecoli2probe/ecoli2probe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="061fcb782ee9da3aa5108881677a4531")
 

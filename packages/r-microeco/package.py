@@ -15,7 +15,7 @@ class RMicroeco(RPackage):
 	homepage = "https://github.com/ChiLiubio/microeco"
 	cran = "microeco" 
 
-	version("1.4.0", md5="6cf9ceff622309072cb2f90ab29f8893")
+	version("1.5.0", md5="6b25ff4e2733890057b460f820b411fe")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

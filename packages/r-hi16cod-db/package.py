@@ -13,7 +13,7 @@ class RHi16codDb(RPackage):
 	"""
 	
 	bioc = "hi16cod.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hi16cod.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hi16cod.db/hi16cod.db_3.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hi16cod.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hi16cod.db/hi16cod.db_3.4.0.tar.gz"]
 
 	version("3.4.0", md5="abdc77937e8d37fa5468691376ceb6a5")
 

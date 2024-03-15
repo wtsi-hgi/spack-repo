@@ -13,7 +13,7 @@ class RInterminer(RPackage):
 	"""
 	
 	bioc = "InterMineR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/InterMineR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/InterMineR/InterMineR_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/InterMineR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/InterMineR/InterMineR_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="a401e91084a8393592ceb3305b6cbfa2")
 

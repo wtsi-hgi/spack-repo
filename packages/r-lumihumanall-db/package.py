@@ -13,7 +13,7 @@ class RLumihumanallDb(RPackage):
 	"""
 	
 	bioc = "lumiHumanAll.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/lumiHumanAll.db_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/lumiHumanAll.db/lumiHumanAll.db_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/lumiHumanAll.db_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/lumiHumanAll.db/lumiHumanAll.db_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="ce7e219b50833ceab203f0bbfb11d917")
 

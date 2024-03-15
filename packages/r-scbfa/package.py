@@ -14,7 +14,7 @@ class RScbfa(RPackage):
 	
 	homepage = "https://github.com/ucdavis/quon-titative-biology/BFA"
 	bioc = "scBFA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scBFA_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scBFA/scBFA_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scBFA_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scBFA/scBFA_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="7729a460da97e96d4da3957b959149db")
 

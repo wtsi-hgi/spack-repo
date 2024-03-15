@@ -13,7 +13,7 @@ class RMotifmatchr(RPackage):
 	"""
 	
 	bioc = "motifmatchr" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/motifmatchr_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/motifmatchr/motifmatchr_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/motifmatchr_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/motifmatchr/motifmatchr_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="23c63cb97f5e359a4fb9e5e6751e037d")
 

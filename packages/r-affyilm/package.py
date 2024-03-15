@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,7 @@ class RAffyilm(RPackage):
 	on behalf of the Langmuir model."""
 
 	bioc = "affyILM"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/affyILM_1.54.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/affyILM/affyILM_1.54.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affyILM_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affyILM/affyILM_1.54.0.tar.gz"]
 
 	version("1.54.0", md5="96d1989fb75742f6a9b0f9d8df1c3fc0")
 

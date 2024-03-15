@@ -13,7 +13,7 @@ class RSigfuge(RPackage):
 	"""
 	
 	bioc = "SigFuge" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SigFuge_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SigFuge/SigFuge_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SigFuge_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SigFuge/SigFuge_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="cb03ecb39c2df4b4f5e1b49f8ba5d594")
 

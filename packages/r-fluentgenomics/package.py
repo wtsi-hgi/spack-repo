@@ -14,7 +14,7 @@ class RFluentgenomics(RPackage):
 	
 	homepage = "https://github.com/sa-lee/fluentGenomics"
 	bioc = "fluentGenomics" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/fluentGenomics_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/fluentGenomics/fluentGenomics_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/fluentGenomics_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/fluentGenomics/fluentGenomics_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="e7607b73ea44cc70d2173218a73561e5")
 

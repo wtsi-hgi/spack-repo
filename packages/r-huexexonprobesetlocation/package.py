@@ -13,7 +13,7 @@ class RHuexexonprobesetlocation(RPackage):
 	"""
 	
 	bioc = "HuExExonProbesetLocation" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/HuExExonProbesetLocation_1.15.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/HuExExonProbesetLocation/HuExExonProbesetLocation_1.15.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/HuExExonProbesetLocation_1.15.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/HuExExonProbesetLocation/HuExExonProbesetLocation_1.15.0.tar.gz"]
 
 	version("1.15.0", md5="11bf1b88d9e90711b4064497f611da4f")
 

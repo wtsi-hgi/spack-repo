@@ -13,7 +13,7 @@ class ROrthologyEgDb(RPackage):
 	"""
 	
 	bioc = "Orthology.eg.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Orthology.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/Orthology.eg.db/Orthology.eg.db_3.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Orthology.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Orthology.eg.db/Orthology.eg.db_3.18.0.tar.gz"]
 
 	version("3.18.0", md5="1e53a6a144a5074544cbe166ad241012")
 

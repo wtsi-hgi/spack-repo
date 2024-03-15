@@ -13,7 +13,7 @@ class RHivprtplus2cdf(RPackage):
 	"""
 	
 	bioc = "hivprtplus2cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hivprtplus2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hivprtplus2cdf/hivprtplus2cdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hivprtplus2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hivprtplus2cdf/hivprtplus2cdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="143d9c2f5f328786bae7bb8dc4daf261")
 

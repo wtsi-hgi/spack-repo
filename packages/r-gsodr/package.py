@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -28,6 +28,8 @@ class RGsodr(RPackage):
 	<https://www1.ncdc.noaa.gov/pub/data/gsod/readme.txt>."""
 
 	cran = "GSODR"
+
+	license("MIT")
 
 	version("3.1.10", md5="9b3418814f0ed779c4746e6a1e7c9672")
 

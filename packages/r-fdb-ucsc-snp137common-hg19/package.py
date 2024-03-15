@@ -13,9 +13,9 @@ class RFdbUcscSnp137commonHg19(RPackage):
 	"""
 	
 	bioc = "FDb.UCSC.snp137common.hg19" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/FDb.UCSC.snp137common.hg19_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/FDb.UCSC.snp137common.hg19/FDb.UCSC.snp137common.hg19_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/FDb.UCSC.snp137common.hg19_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/FDb.UCSC.snp137common.hg19/FDb.UCSC.snp137common.hg19_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="dac83f2d2f9ea9f033e50beac5c44838", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/FDb.UCSC.snp137common.hg19_1.0.0.tar.gz")
+	version("1.0.0", md5="dac83f2d2f9ea9f033e50beac5c44838", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/FDb.UCSC.snp137common.hg19_1.0.0.tar.gz")
 
 	depends_on("r-genomicfeatures", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

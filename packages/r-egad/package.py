@@ -13,7 +13,7 @@ class REgad(RPackage):
 	"""
 	
 	bioc = "EGAD" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/EGAD_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/EGAD/EGAD_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EGAD_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EGAD/EGAD_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="9a76ae26d942a1e8b8c8764b80c69927")
 

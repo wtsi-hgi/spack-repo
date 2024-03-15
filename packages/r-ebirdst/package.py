@@ -18,10 +18,10 @@ class REbirdst(RPackage):
     at a high spatial and temporal resolution.
 	"""
 	
-	homepage = "https://github.com/ebird/ebirdst"
+	homepage = "https://ebird.github.io/ebirdst/"
 	cran = "ebirdst" 
 
-	version("3.2022.1", md5="912a33127556e4c7d32790ebee852dea")
+	version("3.2022.3", md5="a84a899ff4b845723fc6aa7a7d112acd")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-arrow", type=("build", "run"))

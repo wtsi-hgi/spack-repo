@@ -13,7 +13,7 @@ class RCosiadata(RPackage):
 	"""
 	
 	bioc = "CoSIAdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/CoSIAdata_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/CoSIAdata/CoSIAdata_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CoSIAdata_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CoSIAdata/CoSIAdata_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="f0ec9d5ca01647ec3d52e264c0828273")
 

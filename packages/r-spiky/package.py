@@ -14,7 +14,7 @@ class RSpiky(RPackage):
 	
 	homepage = "https://github.com/trichelab/spiky"
 	bioc = "spiky" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/spiky_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/spiky/spiky_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spiky_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spiky/spiky_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="8f710d2ecca4f24247ab38805d665b41")
 

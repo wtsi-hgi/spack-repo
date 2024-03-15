@@ -14,7 +14,7 @@ class RDespace(RPackage):
 	
 	homepage = "https://github.com/peicai/DESpace"
 	bioc = "DESpace" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DESpace_1.2.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DESpace/DESpace_1.2.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DESpace_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DESpace/DESpace_1.2.1.tar.gz"]
 
 	version("1.2.1", md5="98a7395caa0d843520f62f06386483b9")
 

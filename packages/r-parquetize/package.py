@@ -19,10 +19,10 @@ class RParquetize(RPackage):
 	homepage = "https://ddotta.github.io/parquetize/"
 	cran = "parquetize" 
 
-	version("0.5.6.1", md5="e5307cb78d38dac1ec02d4deccf1ba06")
+	version("0.5.7", md5="a0d4732c365f3613c76910f1e76fd61f")
 
 	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-haven", type=("build", "run"))
+	depends_on("r-haven@2.4:", type=("build", "run"))
 	depends_on("r-arrow", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))
 	depends_on("r-readr", type=("build", "run"))
@@ -34,4 +34,5 @@ class RParquetize(RPackage):
 	depends_on("r-lifecycle", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
 	depends_on("r-fst", type=("build", "run"))
+	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

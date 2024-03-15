@@ -14,7 +14,7 @@ class RResolve(RPackage):
 	
 	homepage = "https://github.com/danro9685/RESOLVE"
 	bioc = "RESOLVE" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RESOLVE_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RESOLVE/RESOLVE_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RESOLVE_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RESOLVE/RESOLVE_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="3dd3a656ed19f5faa759f4b37c459f53")
 

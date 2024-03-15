@@ -13,7 +13,7 @@ class RSeqcombo(RPackage):
 	"""
 	
 	bioc = "seqcombo" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/seqcombo_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/seqcombo/seqcombo_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqcombo_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqcombo/seqcombo_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="76a401edd5e5583a94ab3a1b599b7a78")
 

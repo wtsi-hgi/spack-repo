@@ -14,7 +14,7 @@ class RUcell(RPackage):
 	
 	homepage = "https://github.com/carmonalab/UCell"
 	bioc = "UCell" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/UCell_2.6.2.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/UCell/UCell_2.6.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/UCell_2.6.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/UCell/UCell_2.6.2.tar.gz"]
 
 	version("2.6.2", md5="c02318fc6a9ac12b0d902460be5204d4")
 

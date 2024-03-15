@@ -14,7 +14,7 @@ class RMultirnaflow(RPackage):
 	
 	homepage = "https://github.com/loubator/MultiRNAflow"
 	bioc = "MultiRNAflow" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/MultiRNAflow_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/MultiRNAflow/MultiRNAflow_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MultiRNAflow_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MultiRNAflow/MultiRNAflow_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="cefc109896f4cb34b4ee6a09ae966f42")
 

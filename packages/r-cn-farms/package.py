@@ -14,7 +14,7 @@ class RCnFarms(RPackage):
 	
 	homepage = "http://www.bioinf.jku.at/software/cnfarms/cnfarms.html"
 	bioc = "cn.farms" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cn.farms_1.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cn.farms/cn.farms_1.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cn.farms_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cn.farms/cn.farms_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="8a991cf7fb9deb2d6ed855617dcfb853")
 

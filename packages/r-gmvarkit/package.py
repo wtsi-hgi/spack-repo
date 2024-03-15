@@ -16,13 +16,13 @@ Models
     simulations, forecasting, and estimation of generalized impulse response function and generalized 
     forecast error variance decomposition.
     Leena Kalliovirta, Mika Meitz, Pentti Saikkonen (2016) <doi:10.1016/j.jeconom.2016.02.012>,
-    Savi Virolainen (2022) <arXiv:2007.04713>,
+    Savi Virolainen (forthcoming) <doi:10.1080/07350015.2024.2322090>,
     Savi Virolainen (2022) <arXiv:2109.13648>.
 	"""
 	
 	cran = "gmvarkit" 
 
-	version("2.1.1", md5="cfa64d1c144f53c3366fece515778d62")
+	version("2.1.2", md5="c2a47c9258cb73f8b4cfa114abbf9c16")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-brobdingnag@1.2.4:", type=("build", "run"))

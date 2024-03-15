@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RSeqinr(RPackage):
 	Nucleic Acids Res. 12:121-127 <doi:10.1093/nar/12.1Part1.121>."""
 
 	cran = "seqinr"
+
+	license("GPL-2.0-or-later")
 
 	version("4.2-36", md5="f8b8a5c41363cddfa1f6073890d99967")
 

@@ -14,7 +14,7 @@ class RSplicinggraphs(RPackage):
 	
 	homepage = "https://bioconductor.org/packages/SplicingGraphs"
 	bioc = "SplicingGraphs" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SplicingGraphs_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SplicingGraphs/SplicingGraphs_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SplicingGraphs_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SplicingGraphs/SplicingGraphs_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="04e2a057bc1c6935ee13333acdf5ba52")
 

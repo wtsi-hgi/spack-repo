@@ -14,7 +14,7 @@ class REdge(RPackage):
 	
 	homepage = "https://github.com/jdstorey/edge"
 	bioc = "edge" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/edge_2.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/edge/edge_2.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/edge_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/edge/edge_2.34.0.tar.gz"]
 
 	version("2.34.0", md5="89d1683b6b4f9723b4c4fcef6972d543")
 

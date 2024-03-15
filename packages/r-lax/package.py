@@ -35,7 +35,7 @@ class RLax(RPackage):
 	homepage = "https://paulnorthrop.github.io/lax/"
 	cran = "lax" 
 
-	version("1.2.2", md5="725f2151144753daaeba85c5b959cf6d")
+	version("1.2.3", md5="34231581360c96b6696148c381889c9e")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-chandwich", type=("build", "run"))

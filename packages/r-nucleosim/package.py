@@ -14,7 +14,7 @@ class RNucleosim(RPackage):
 	
 	homepage = "https://github.com/arnauddroitlab/nucleoSim"
 	bioc = "nucleoSim" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/nucleoSim_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/nucleoSim/nucleoSim_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nucleoSim_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nucleoSim/nucleoSim_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="b1b994c654ce500e414a8a7caea5162f")
 

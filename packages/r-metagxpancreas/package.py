@@ -13,7 +13,7 @@ class RMetagxpancreas(RPackage):
 	"""
 	
 	bioc = "MetaGxPancreas" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/MetaGxPancreas_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/MetaGxPancreas/MetaGxPancreas_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MetaGxPancreas_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MetaGxPancreas/MetaGxPancreas_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="0c1764dc18a9a180b2121649c98a26a1")
 

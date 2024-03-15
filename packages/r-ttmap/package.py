@@ -13,7 +13,7 @@ class RTtmap(RPackage):
 	"""
 	
 	bioc = "TTMap" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TTMap_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TTMap/TTMap_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TTMap_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TTMap/TTMap_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="9fb52b78486eff55cc91ef0f8116633b")
 

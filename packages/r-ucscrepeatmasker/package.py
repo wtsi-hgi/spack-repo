@@ -13,7 +13,7 @@ class RUcscrepeatmasker(RPackage):
 	"""
 	
 	bioc = "UCSCRepeatMasker" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/UCSCRepeatMasker_3.15.2.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/UCSCRepeatMasker/UCSCRepeatMasker_3.15.2.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/UCSCRepeatMasker_3.15.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/UCSCRepeatMasker/UCSCRepeatMasker_3.15.2.tar.gz"]
 
 	version("3.15.2", md5="ad19a6fbd936e478af88fa21bc918a29")
 

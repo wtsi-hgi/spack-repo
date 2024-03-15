@@ -14,7 +14,7 @@ class RStdeconvolve(RPackage):
 	
 	homepage = "https://jef.works/STdeconvolve/"
 	bioc = "STdeconvolve" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/STdeconvolve_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/STdeconvolve/STdeconvolve_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/STdeconvolve_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/STdeconvolve/STdeconvolve_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="2908e0d59713b2c3ef6c7bc549d0d123")
 

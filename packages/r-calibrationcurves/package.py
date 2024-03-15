@@ -15,7 +15,7 @@ class RCalibrationcurves(RPackage):
 	homepage = "https://bavodc.github.io/websiteCalibrationCurves/"
 	cran = "CalibrationCurves" 
 
-	version("2.0.0", md5="e298f0fd5949a34d24a34631b58fe095")
+	version("2.0.1", md5="d3792c28d761dbbfd3a4c287b823e5f4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rms", type=("build", "run"))

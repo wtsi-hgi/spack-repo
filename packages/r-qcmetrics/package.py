@@ -14,7 +14,7 @@ class RQcmetrics(RPackage):
 	
 	homepage = "http://lgatto.github.io/qcmetrics/articles/qcmetrics.html"
 	bioc = "qcmetrics" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/qcmetrics_1.40.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/qcmetrics/qcmetrics_1.40.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qcmetrics_1.40.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qcmetrics/qcmetrics_1.40.1.tar.gz"]
 
 	version("1.40.1", md5="909e62b8c2d23a07e083f04e734ef61b")
 

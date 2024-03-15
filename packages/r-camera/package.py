@@ -14,7 +14,7 @@ class RCamera(RPackage):
 	
 	homepage = "http://msbi.ipb-halle.de/msbi/CAMERA/"
 	bioc = "CAMERA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CAMERA_1.58.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CAMERA/CAMERA_1.58.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CAMERA_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CAMERA/CAMERA_1.58.0.tar.gz"]
 
 	version("1.58.0", md5="1958cafb2c9dd92fa44a35cfc607f894")
 

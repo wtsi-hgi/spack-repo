@@ -13,7 +13,7 @@ class RAwfisher(RPackage):
 	"""
 	
 	bioc = "AWFisher" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/AWFisher_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/AWFisher/AWFisher_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AWFisher_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AWFisher/AWFisher_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="ba9b2824782018cc7626ebc72b6bb81e")
 

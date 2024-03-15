@@ -13,7 +13,7 @@ class RMogene21stprobesetDb(RPackage):
 	"""
 	
 	bioc = "mogene21stprobeset.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/mogene21stprobeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/mogene21stprobeset.db/mogene21stprobeset.db_8.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mogene21stprobeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mogene21stprobeset.db/mogene21stprobeset.db_8.8.0.tar.gz"]
 
 	version("8.8.0", md5="d6b3c352329b46493a20f6c27db05d43")
 

@@ -13,7 +13,7 @@ class RRaggedexperiment(RPackage):
 	"""
 	
 	bioc = "RaggedExperiment" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RaggedExperiment_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RaggedExperiment/RaggedExperiment_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RaggedExperiment_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RaggedExperiment/RaggedExperiment_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="5704ce0834ff2770c489c3882ef4acec")
 

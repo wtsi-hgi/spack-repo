@@ -14,7 +14,7 @@ class RCuratedmetagenomicdata(RPackage):
 	
 	homepage = "https://github.com/waldronlab/curatedMetagenomicData"
 	bioc = "curatedMetagenomicData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/curatedMetagenomicData_3.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/curatedMetagenomicData/curatedMetagenomicData_3.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedMetagenomicData_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedMetagenomicData/curatedMetagenomicData_3.10.0.tar.gz"]
 
 	version("3.10.0", md5="39c08149fe4261d4961ff1235825ae97")
 

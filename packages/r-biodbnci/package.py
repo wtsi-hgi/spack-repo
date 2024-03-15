@@ -13,7 +13,7 @@ class RBiodbnci(RPackage):
 	"""
 	
 	bioc = "biodbNci" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biodbNci_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biodbNci/biodbNci_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbNci_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbNci/biodbNci_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="6dcd43d5c282054f4edfef08a2f597cd")
 

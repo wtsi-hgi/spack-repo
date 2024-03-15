@@ -13,7 +13,7 @@ class RIbh(RPackage):
 	"""
 	
 	bioc = "ibh" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ibh_1.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ibh/ibh_1.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ibh_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ibh/ibh_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="3c87bb1083990548eb09c4e43459ba1f")
 

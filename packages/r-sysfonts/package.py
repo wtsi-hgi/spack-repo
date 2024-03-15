@@ -17,7 +17,7 @@ class RSysfonts(RPackage):
 	homepage = "https://github.com/yixuan/sysfonts"
 	cran = "sysfonts" 
 
-	version("0.8.8", md5="331e85ccd9e605b66a9509630bb93465")
+	version("0.8.9", md5="c5a568cf3ee93e7050592369d5f32165")
 
 	depends_on("zlib", type=("build", "link", "run"))
 	depends_on("libpng", type=("build", "link", "run"))

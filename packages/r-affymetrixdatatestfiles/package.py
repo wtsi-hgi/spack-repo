@@ -13,7 +13,7 @@ class RAffymetrixdatatestfiles(RPackage):
 	"""
 	
 	bioc = "AffymetrixDataTestFiles" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/AffymetrixDataTestFiles_0.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/AffymetrixDataTestFiles/AffymetrixDataTestFiles_0.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/AffymetrixDataTestFiles_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/AffymetrixDataTestFiles/AffymetrixDataTestFiles_0.40.0.tar.gz"]
 
 	version("0.40.0", md5="57ecb8e4d3f0d7a9cdcedb2a9648dd1e")
 

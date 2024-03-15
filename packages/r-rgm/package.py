@@ -14,15 +14,11 @@ class RRgm(RPackage):
 	
 	cran = "rgm" 
 
-	version("1.0.1", md5="0e459af185a457b024709ec46748811f")
+	version("1.0.3", md5="86d0b737069518aa97ebe51e64075418")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-truncnorm", type=("build", "run"))
-	depends_on("r-mvtnorm", type=("build", "run"))
 	depends_on("r-bdgraph", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-proc", type=("build", "run"))
-	depends_on("r-reshape2", type=("build", "run"))
 	depends_on("r-huge", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -14,7 +14,7 @@ class RSimlr(RPackage):
 	
 	homepage = "https://github.com/BatzoglouLabSU/SIMLR"
 	bioc = "SIMLR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SIMLR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SIMLR/SIMLR_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SIMLR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SIMLR/SIMLR_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="9692308a74c8781b41b55409edf594ce")
 

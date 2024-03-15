@@ -13,7 +13,7 @@ class RUlarcirc(RPackage):
 	"""
 	
 	bioc = "Ularcirc" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Ularcirc_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Ularcirc/Ularcirc_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Ularcirc_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Ularcirc/Ularcirc_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="dee64401e02d9e5884a6399d7ab122b2")
 

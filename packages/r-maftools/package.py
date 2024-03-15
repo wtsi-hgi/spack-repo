@@ -14,7 +14,7 @@ class RMaftools(RPackage):
 	
 	homepage = "https://github.com/PoisonAlien/maftools"
 	bioc = "maftools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/maftools_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/maftools/maftools_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maftools_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maftools/maftools_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="3dadc2b7f6f1693ae23a41b61f541db4")
 

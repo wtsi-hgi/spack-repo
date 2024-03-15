@@ -13,7 +13,7 @@ class RMotif2site(RPackage):
 	"""
 	
 	bioc = "Motif2Site" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Motif2Site_1.6.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Motif2Site/Motif2Site_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Motif2Site_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Motif2Site/Motif2Site_1.6.0.tar.gz"]
 
 	version("1.6.0", md5="e8228f1deb42f2d4b3867a90a6eba14c")
 

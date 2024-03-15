@@ -14,7 +14,7 @@ class RIpddb(RPackage):
 	
 	homepage = "https://github.com/DKMS-LSL/ipdDb"
 	bioc = "ipdDb" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ipdDb_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ipdDb/ipdDb_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ipdDb_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ipdDb/ipdDb_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="0346f5dcca05a1bfb117214c54f36524")
 

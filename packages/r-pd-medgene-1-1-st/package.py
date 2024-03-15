@@ -13,7 +13,7 @@ class RPdMedgene11St(RPackage):
 	"""
 	
 	bioc = "pd.medgene.1.1.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.medgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.medgene.1.1.st/pd.medgene.1.1.st_3.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.medgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.medgene.1.1.st/pd.medgene.1.1.st_3.12.0.tar.gz"]
 
 	version("3.12.0", md5="d96894cfea509734af62110311100142")
 

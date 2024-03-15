@@ -13,7 +13,7 @@ class RPedbarrayv10Db(RPackage):
 	"""
 	
 	bioc = "pedbarrayv10.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pedbarrayv10.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pedbarrayv10.db/pedbarrayv10.db_3.2.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pedbarrayv10.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pedbarrayv10.db/pedbarrayv10.db_3.2.3.tar.gz"]
 
 	version("3.2.3", md5="25acc3bfee229015ecca1c7d688e5168")
 

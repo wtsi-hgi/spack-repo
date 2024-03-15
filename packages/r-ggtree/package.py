@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,9 +15,9 @@ class RGgtree(RPackage):
 	data."""
 
 	bioc = "ggtree"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ggtree_3.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ggtree/ggtree_3.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggtree_3.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggtree/ggtree_3.10.1.tar.gz"]
 
-	version("3.10.0", md5="7e1894ce01245d811286b0ce1fbe8266")
+	version("3.10.1", md5="14911b3009b957dcf17ae513e87825fa")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

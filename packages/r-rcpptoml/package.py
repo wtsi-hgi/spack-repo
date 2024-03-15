@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,6 +16,8 @@ class RRcpptoml(RPackage):
 	connect the 'cpptoml' parser written by Chase Geigle (in C++11) to R."""
 
 	cran = "RcppTOML"
+
+	license("JSON")
 
 	version("0.2.2", md5="7ee285ee18fa1630c6595cb246a5a870")
 

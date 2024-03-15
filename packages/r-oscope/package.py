@@ -13,7 +13,7 @@ class ROscope(RPackage):
 	"""
 	
 	bioc = "Oscope" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Oscope_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Oscope/Oscope_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Oscope_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Oscope/Oscope_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="96a8fc6730b6d493d352d74032c4b3d3")
 

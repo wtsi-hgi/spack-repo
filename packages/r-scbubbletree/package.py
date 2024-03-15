@@ -14,7 +14,7 @@ class RScbubbletree(RPackage):
 	
 	homepage = "https://github.com/snaketron/scBubbletree"
 	bioc = "scBubbletree" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/scBubbletree_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/scBubbletree/scBubbletree_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scBubbletree_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scBubbletree/scBubbletree_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="d64f38622d8aec6ebb23e81231710134")
 

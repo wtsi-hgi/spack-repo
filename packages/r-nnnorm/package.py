@@ -14,7 +14,7 @@ class RNnnorm(RPackage):
 	
 	homepage = "http://bioinformaticsprb.med.wayne.edu/tarca/"
 	bioc = "nnNorm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/nnNorm_2.66.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/nnNorm/nnNorm_2.66.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nnNorm_2.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nnNorm/nnNorm_2.66.0.tar.gz"]
 
 	version("2.66.0", md5="f6e41106fc2afb44568c00dce1a36670")
 

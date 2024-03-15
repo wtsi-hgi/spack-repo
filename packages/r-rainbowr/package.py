@@ -14,7 +14,7 @@ class RRainbowr(RPackage):
 	
 	cran = "RAINBOWR" 
 
-	version("0.1.33", md5="23be4e30fb273ed595dadbd0782bc9ed")
+	version("0.1.35", md5="c5da8feb805af0b3ed13216abfaed302")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

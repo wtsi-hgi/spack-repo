@@ -13,7 +13,7 @@ class RCelaref(RPackage):
 	"""
 	
 	bioc = "celaref" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/celaref_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/celaref/celaref_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/celaref_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/celaref/celaref_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="8c168c1e505d63f6372d6baac7051a06")
 

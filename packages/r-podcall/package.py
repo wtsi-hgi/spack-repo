@@ -13,7 +13,7 @@ class RPodcall(RPackage):
 	"""
 	
 	bioc = "PoDCall" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/PoDCall_1.10.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/PoDCall/PoDCall_1.10.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PoDCall_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PoDCall/PoDCall_1.10.1.tar.gz"]
 
 	version("1.10.1", md5="63532d1fbd2dc2d96ef3f3355125efd5")
 

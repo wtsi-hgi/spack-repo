@@ -13,7 +13,7 @@ class RBlma(RPackage):
 	"""
 	
 	bioc = "BLMA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/BLMA_1.26.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BLMA/BLMA_1.26.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BLMA_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BLMA/BLMA_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="a09cb94872d4a064b9b6300945795cdf")
 

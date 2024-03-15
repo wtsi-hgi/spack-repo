@@ -13,7 +13,7 @@ class RTmexplorer(RPackage):
 	"""
 	
 	bioc = "TMExplorer" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/TMExplorer_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/TMExplorer/TMExplorer_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TMExplorer_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TMExplorer/TMExplorer_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="48b11be99739e61f54d9b442af739d49")
 

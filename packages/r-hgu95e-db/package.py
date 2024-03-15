@@ -13,7 +13,7 @@ class RHgu95eDb(RPackage):
 	"""
 	
 	bioc = "hgu95e.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hgu95e.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hgu95e.db/hgu95e.db_3.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu95e.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu95e.db/hgu95e.db_3.13.0.tar.gz"]
 
 	version("3.13.0", md5="116bd146279d19d50a7233bc61c22104")
 

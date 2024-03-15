@@ -13,7 +13,7 @@ class RNugohs1a520180cdf(RPackage):
 	"""
 	
 	bioc = "nugohs1a520180cdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/nugohs1a520180cdf_3.4.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/nugohs1a520180cdf/nugohs1a520180cdf_3.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/nugohs1a520180cdf_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/nugohs1a520180cdf/nugohs1a520180cdf_3.4.0.tar.gz"]
 
 	version("3.4.0", md5="aa152658a4a801cc0edb552a98aee841")
 

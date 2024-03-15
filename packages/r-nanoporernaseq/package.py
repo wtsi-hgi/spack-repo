@@ -14,7 +14,7 @@ class RNanoporernaseq(RPackage):
 	
 	homepage = "https://github.com/GoekeLab/NanoporeRNASeq"
 	bioc = "NanoporeRNASeq" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/NanoporeRNASeq_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/NanoporeRNASeq/NanoporeRNASeq_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/NanoporeRNASeq_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/NanoporeRNASeq/NanoporeRNASeq_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="eca12ebcd403efd53e1b38d5f03f2027")
 

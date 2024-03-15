@@ -13,7 +13,7 @@ class RTxdbBtaurusUcscBostau9Refgene(RPackage):
 	"""
 	
 	bioc = "TxDb.Btaurus.UCSC.bosTau9.refGene" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/TxDb.Btaurus.UCSC.bosTau9.refGene_3.10.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/TxDb.Btaurus.UCSC.bosTau9.refGene/TxDb.Btaurus.UCSC.bosTau9.refGene_3.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Btaurus.UCSC.bosTau9.refGene_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Btaurus.UCSC.bosTau9.refGene/TxDb.Btaurus.UCSC.bosTau9.refGene_3.10.0.tar.gz"]
 
 	version("3.10.0", md5="fe443d123b0b788e1e450f4e60036788")
 

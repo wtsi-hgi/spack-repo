@@ -14,7 +14,7 @@ class RIcobra(RPackage):
 	
 	homepage = "https://github.com/csoneson/iCOBRA"
 	bioc = "iCOBRA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iCOBRA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iCOBRA/iCOBRA_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iCOBRA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iCOBRA/iCOBRA_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="dc297e102e2b6ee717a494f652a6d6bf")
 

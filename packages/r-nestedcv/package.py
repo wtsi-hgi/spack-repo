@@ -15,7 +15,7 @@ class RNestedcv(RPackage):
 	homepage = "https://github.com/myles-lewis/nestedcv"
 	cran = "nestedcv" 
 
-	version("0.7.4", md5="6ad16f3c6413b92c165c13958661b38a")
+	version("0.7.8", md5="3b9d65fc60ae8e3532d8cac9cb5c75fe")
 
 	depends_on("r-caret", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
@@ -23,10 +23,10 @@ class RNestedcv(RPackage):
 	depends_on("r-foreach", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-matrixstats", type=("build", "run"))
 	depends_on("r-matrixtests", type=("build", "run"))
 	depends_on("r-proc", type=("build", "run"))
 	depends_on("r-rfast", type=("build", "run"))
 	depends_on("r-rhpcblasctl", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
+	depends_on("r-rocr", type=("build", "run"))

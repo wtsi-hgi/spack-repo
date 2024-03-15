@@ -13,7 +13,7 @@ class RMusMusculus(RPackage):
 	"""
 	
 	bioc = "Mus.musculus" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Mus.musculus_1.3.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/Mus.musculus/Mus.musculus_1.3.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Mus.musculus_1.3.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Mus.musculus/Mus.musculus_1.3.1.tar.gz"]
 
 	version("1.3.1", md5="1b8defe64c2dd308a88d1ac7a4ce04b9")
 

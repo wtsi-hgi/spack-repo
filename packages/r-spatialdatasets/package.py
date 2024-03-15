@@ -14,7 +14,7 @@ class RSpatialdatasets(RPackage):
 	
 	homepage = "https://github.com/SydneyBioX/SpatialDatasets"
 	bioc = "SpatialDatasets" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/SpatialDatasets_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/SpatialDatasets/SpatialDatasets_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SpatialDatasets_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SpatialDatasets/SpatialDatasets_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="36fd913ef0d7109d0be40afbc1255548")
 

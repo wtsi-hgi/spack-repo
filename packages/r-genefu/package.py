@@ -14,7 +14,7 @@ class RGenefu(RPackage):
 	
 	homepage = "http://www.pmgenomics.ca/bhklab/software/genefu"
 	bioc = "genefu" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/genefu_2.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/genefu/genefu_2.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genefu_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genefu/genefu_2.34.0.tar.gz"]
 
 	version("2.34.0", md5="cfaef57b66d09a355ae7df0db21c107d")
 

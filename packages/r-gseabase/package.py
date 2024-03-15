@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class RGseabase(RPackage):
 	Analysis (GSEA)."""
 
 	bioc = "GSEABase"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GSEABase_1.64.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GSEABase/GSEABase_1.64.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSEABase_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSEABase/GSEABase_1.64.0.tar.gz"]
 
 	version("1.64.0", md5="a9d4d48654c9a05cdec2f09f8f805c4e")
 

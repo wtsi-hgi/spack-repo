@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,7 +18,7 @@ class RGosemsim(RPackage):
 	Lin and Wang respectively."""
 
 	bioc = "GOSemSim"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GOSemSim_2.28.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GOSemSim/GOSemSim_2.28.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOSemSim_2.28.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOSemSim/GOSemSim_2.28.1.tar.gz"]
 
 	version("2.28.1", md5="89d833af368b8fb6592d7acd623e0a45")
 

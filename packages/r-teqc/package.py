@@ -13,7 +13,7 @@ class RTeqc(RPackage):
 	"""
 	
 	bioc = "TEQC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/TEQC_4.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/TEQC/TEQC_4.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TEQC_4.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TEQC/TEQC_4.24.0.tar.gz"]
 
 	version("4.24.0", md5="02976837ccda44f13a0a43b9de17ea81")
 

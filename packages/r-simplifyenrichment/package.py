@@ -14,7 +14,7 @@ class RSimplifyenrichment(RPackage):
 	
 	homepage = "https://github.com/jokergoo/simplifyEnrichment"
 	bioc = "simplifyEnrichment" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/simplifyEnrichment_1.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/simplifyEnrichment/simplifyEnrichment_1.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/simplifyEnrichment_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/simplifyEnrichment/simplifyEnrichment_1.12.0.tar.gz"]
 
 	version("1.12.0", md5="d54c7188ca88dd43802296650e5b80e1")
 

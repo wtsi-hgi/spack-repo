@@ -14,7 +14,7 @@ class RHcatonsildata(RPackage):
 	
 	homepage = "https://github.com/massonix/HCATonsilData"
 	bioc = "HCATonsilData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/HCATonsilData_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/HCATonsilData/HCATonsilData_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HCATonsilData_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HCATonsilData/HCATonsilData_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="dda9d216f608690d05bd5ffbcb73bb05")
 

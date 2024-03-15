@@ -14,7 +14,7 @@ class RRqc(RPackage):
 	
 	homepage = "https://github.com/labbcb/Rqc"
 	bioc = "Rqc" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Rqc_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Rqc/Rqc_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rqc_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rqc/Rqc_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="425dbc839b22b6af4d19ca20174c24c1")
 

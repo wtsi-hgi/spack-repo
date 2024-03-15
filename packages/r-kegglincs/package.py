@@ -13,7 +13,7 @@ class RKegglincs(RPackage):
 	"""
 	
 	bioc = "KEGGlincs" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/KEGGlincs_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/KEGGlincs/KEGGlincs_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/KEGGlincs_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/KEGGlincs/KEGGlincs_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="9ef4b8d4652560f3e9fddb3209adb0dd")
 

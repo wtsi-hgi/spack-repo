@@ -13,7 +13,7 @@ class RPigengene(RPackage):
 	"""
 	
 	bioc = "Pigengene" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Pigengene_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Pigengene/Pigengene_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Pigengene_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Pigengene/Pigengene_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="2d7b090a6d6fad6cf62c987970663167")
 

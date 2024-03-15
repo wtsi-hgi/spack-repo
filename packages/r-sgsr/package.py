@@ -20,7 +20,7 @@ class RSgsr(RPackage):
 	homepage = "https://github.com/tgoodbody/sgsR"
 	cran = "sgsR" 
 
-	version("1.4.4", md5="798cba2d143fd04eedf313e64f4f1b9a")
+	version("1.4.5", md5="8c7ad544592dbd2ce48319caa2744782")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

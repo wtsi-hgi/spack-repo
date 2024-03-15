@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,7 +16,9 @@ class RBasilisk(RPackage):
 	Python environments in a single R session."""
 
 	bioc = "basilisk"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/basilisk_1.14.3.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/basilisk/basilisk_1.14.3.tar.gz"]
+
+	license("GPL-3.0-or-later")
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/basilisk_1.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/basilisk/basilisk_1.14.3.tar.gz"]
 
 	version("1.14.3", md5="0ae86374eec47c3b808cf10947d2695b")
 

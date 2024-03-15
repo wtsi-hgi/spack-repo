@@ -13,7 +13,7 @@ class RTrna(RPackage):
 	"""
 	
 	bioc = "tRNA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tRNA_1.20.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tRNA/tRNA_1.20.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tRNA_1.20.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tRNA/tRNA_1.20.1.tar.gz"]
 
 	version("1.20.1", md5="e44e072f320f35d6cf6210074fbdf665")
 

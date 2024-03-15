@@ -13,7 +13,7 @@ class RCcrepe(RPackage):
 	"""
 	
 	bioc = "ccrepe" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ccrepe_1.38.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ccrepe/ccrepe_1.38.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ccrepe_1.38.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ccrepe/ccrepe_1.38.1.tar.gz"]
 
 	version("1.38.1", md5="151d956c2fbdaaf64fccbea7f4905a2d")
 

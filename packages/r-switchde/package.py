@@ -14,7 +14,7 @@ class RSwitchde(RPackage):
 	
 	homepage = "https://github.com/kieranrcampbell/switchde"
 	bioc = "switchde" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/switchde_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/switchde/switchde_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/switchde_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/switchde/switchde_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="9017dd3162508b4412c30ae21eef9328")
 

@@ -13,11 +13,13 @@ class RClubpro(RPackage):
     binary procrustes rotation; a simplified version of procrustes rotation.
 	"""
 	
-	homepage = "https://github.com/timbeechey/clubpro"
+	homepage = "https://timbeechey.github.io/clubpro/"
 	cran = "clubpro" 
 
-	version("0.5.5", md5="a418f17a01f8b6751fb0dd1e5a2147ce")
+	version("0.6.0", md5="5b4c9ed93970dd8bb80caf2246482578")
 
+	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
+	depends_on("r-rcppprogress", type=("build", "run"))

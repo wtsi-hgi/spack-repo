@@ -17,7 +17,7 @@ class RMcmcsae(RPackage):
 	
 	cran = "mcmcsae" 
 
-	version("0.7.6", md5="f86135bb3c52ae87f36d63fae3e47c61")
+	version("0.7.7", md5="b9387863fbe74432ba544def64cee098")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

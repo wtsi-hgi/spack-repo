@@ -14,7 +14,7 @@ class RGage(RPackage):
 	
 	homepage = "https://github.com/datapplab/gage"
 	bioc = "gage" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gage_2.52.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gage/gage_2.52.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gage_2.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gage/gage_2.52.0.tar.gz"]
 
 	version("2.52.0", md5="ffb5ec419d5e08f9b31154202e0e04c8")
 

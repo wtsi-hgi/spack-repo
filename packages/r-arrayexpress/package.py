@@ -13,7 +13,7 @@ class RArrayexpress(RPackage):
 	"""
 	
 	bioc = "ArrayExpress" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ArrayExpress_1.62.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ArrayExpress/ArrayExpress_1.62.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ArrayExpress_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ArrayExpress/ArrayExpress_1.62.0.tar.gz"]
 
 	version("1.62.0", md5="6232db8158e5ba9cde38da322b0c5163")
 

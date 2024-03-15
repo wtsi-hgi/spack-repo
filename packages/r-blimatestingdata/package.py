@@ -14,7 +14,7 @@ class RBlimatestingdata(RPackage):
 	
 	homepage = "https://bitbucket.org/kulvait/blima"
 	bioc = "blimaTestingData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/blimaTestingData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/blimaTestingData/blimaTestingData_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/blimaTestingData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/blimaTestingData/blimaTestingData_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="3ae3da97d0d020e16feee29b93c24825")
 

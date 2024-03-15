@@ -13,7 +13,7 @@ class RHcg110Db(RPackage):
 	"""
 	
 	bioc = "hcg110.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hcg110.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hcg110.db/hcg110.db_3.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hcg110.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hcg110.db/hcg110.db_3.13.0.tar.gz"]
 
 	version("3.13.0", md5="4c536c3539a61d7f1f67dac149f10b11")
 

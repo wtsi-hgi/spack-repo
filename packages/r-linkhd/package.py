@@ -13,7 +13,7 @@ class RLinkhd(RPackage):
 	"""
 	
 	bioc = "LinkHD" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/LinkHD_1.16.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/LinkHD/LinkHD_1.16.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LinkHD_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LinkHD/LinkHD_1.16.0.tar.gz"]
 
 	version("1.16.0", md5="64515bedacee602d8f8c92785e075039")
 

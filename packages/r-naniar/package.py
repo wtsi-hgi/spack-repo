@@ -21,7 +21,7 @@ class RNaniar(RPackage):
 	homepage = "https://github.com/njtierney/naniar"
 	cran = "naniar" 
 
-	version("1.0.0", md5="643a9121342f5bfd9b8cade850c6b5cd")
+	version("1.1.0", md5="cbaa52f7b51e26940576be83b49919b0")
 
 	depends_on("r@3.1.2:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
@@ -32,10 +32,11 @@ class RNaniar(RPackage):
 	depends_on("r-norm", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-visdat", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
+	depends_on("r-rlang@1.1:", type=("build", "run"))
 	depends_on("r-forcats", type=("build", "run"))
 	depends_on("r-viridis", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
 	depends_on("r-upsetr", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-vctrs", type=("build", "run"))
+	depends_on("r-lifecycle", type=("build", "run"))

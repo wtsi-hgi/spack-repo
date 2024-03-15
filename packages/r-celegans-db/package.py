@@ -13,7 +13,7 @@ class RCelegansDb(RPackage):
 	"""
 	
 	bioc = "celegans.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/celegans.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/celegans.db/celegans.db_3.13.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/celegans.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/celegans.db/celegans.db_3.13.0.tar.gz"]
 
 	version("3.13.0", md5="3cfa9df5a81ef538a890ed8c5d5a98ad")
 

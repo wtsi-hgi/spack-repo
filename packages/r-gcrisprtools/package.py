@@ -13,7 +13,7 @@ class RGcrisprtools(RPackage):
 	"""
 	
 	bioc = "gCrisprTools" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/gCrisprTools_2.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/gCrisprTools/gCrisprTools_2.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gCrisprTools_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gCrisprTools/gCrisprTools_2.8.0.tar.gz"]
 
 	version("2.8.0", md5="113ef693d51de0459865934e9a16d90a")
 

@@ -13,7 +13,7 @@ class RHgu133plus2barcodevecs(RPackage):
 	"""
 	
 	bioc = "hgu133plus2barcodevecs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/hgu133plus2barcodevecs_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/hgu133plus2barcodevecs/hgu133plus2barcodevecs_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hgu133plus2barcodevecs_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/hgu133plus2barcodevecs/hgu133plus2barcodevecs_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="624bad8617d806474bc9406dc3c22384")
 

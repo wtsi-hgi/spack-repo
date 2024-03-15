@@ -13,7 +13,7 @@ class RPdHugene21St(RPackage):
 	"""
 	
 	bioc = "pd.hugene.2.1.st" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.hugene.2.1.st_3.14.1.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/pd.hugene.2.1.st/pd.hugene.2.1.st_3.14.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hugene.2.1.st_3.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.hugene.2.1.st/pd.hugene.2.1.st_3.14.1.tar.gz"]
 
 	version("3.14.1", md5="164227f10b87f87059e4ae27b40f5238")
 

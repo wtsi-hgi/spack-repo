@@ -13,7 +13,7 @@ class RGwasdata(RPackage):
 	"""
 	
 	bioc = "GWASdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/GWASdata_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/GWASdata/GWASdata_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GWASdata_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GWASdata/GWASdata_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="57fec70f980b9e476f0c59d397797815")
 

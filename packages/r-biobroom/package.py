@@ -14,7 +14,7 @@ class RBiobroom(RPackage):
 	
 	homepage = "https://github.com/StoreyLab/biobroom"
 	bioc = "biobroom" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/biobroom_1.34.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/biobroom/biobroom_1.34.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biobroom_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biobroom/biobroom_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="b0a4b29e9aa3bbb99f42cd2cd19ca4d7")
 

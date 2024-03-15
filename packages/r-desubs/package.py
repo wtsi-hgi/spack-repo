@@ -13,7 +13,7 @@ class RDesubs(RPackage):
 	"""
 	
 	bioc = "DEsubs" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/DEsubs_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/DEsubs/DEsubs_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEsubs_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEsubs/DEsubs_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="1e2b74c85e35888eab89ac39a363c32c")
 

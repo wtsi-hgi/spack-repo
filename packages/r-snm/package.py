@@ -13,7 +13,7 @@ class RSnm(RPackage):
 	"""
 	
 	bioc = "snm" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/snm_1.50.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/snm/snm_1.50.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/snm_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/snm/snm_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="103ab8eb4cca35d12c53c48615ebd5da")
 

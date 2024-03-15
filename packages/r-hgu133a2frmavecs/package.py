@@ -13,7 +13,7 @@ class RHgu133a2frmavecs(RPackage):
 	"""
 	
 	bioc = "hgu133a2frmavecs" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hgu133a2frmavecs_1.2.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hgu133a2frmavecs/hgu133a2frmavecs_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu133a2frmavecs_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu133a2frmavecs/hgu133a2frmavecs_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="4bf8cf5cbaf288ce0a9618d764c87044")
 

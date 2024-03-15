@@ -14,7 +14,7 @@ class RIbbig(RPackage):
 	
 	homepage = "http://bcb.dfci.harvard.edu/~aedin/publications/"
 	bioc = "iBBiG" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/iBBiG_1.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/iBBiG/iBBiG_1.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iBBiG_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iBBiG/iBBiG_1.46.0.tar.gz"]
 
 	version("1.46.0", md5="6114f0b7d488fd60923a6607bf2d59f2")
 

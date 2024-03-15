@@ -13,7 +13,7 @@ class RScatacExplorer(RPackage):
 	"""
 	
 	bioc = "scATAC.Explorer" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/scATAC.Explorer_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/scATAC.Explorer/scATAC.Explorer_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scATAC.Explorer_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scATAC.Explorer/scATAC.Explorer_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="80927899a83bb06d19b0f9800c183b36")
 

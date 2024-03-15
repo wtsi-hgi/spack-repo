@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,8 @@ class RLeafem(RPackage):
 	agnostic function to add points, lines, polygons to a map."""
 
 	cran = "leafem"
+
+	license("MIT")
 
 	version("0.2.3", md5="11951b94bed233371e32d3f92db83229")
 

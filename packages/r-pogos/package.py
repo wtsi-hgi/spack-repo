@@ -13,7 +13,7 @@ class RPogos(RPackage):
 	"""
 	
 	bioc = "pogos" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pogos_1.22.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pogos/pogos_1.22.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pogos_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pogos/pogos_1.22.0.tar.gz"]
 
 	version("1.22.0", md5="14955bb127999aaa92633bc1ce3a1227")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class RRots(RPackage):
 	differential testing in omics data."""
 
 	bioc = "ROTS"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ROTS_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ROTS/ROTS_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ROTS_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ROTS/ROTS_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="02d51e24e501790ad3049c1bb5b3f90b")
 

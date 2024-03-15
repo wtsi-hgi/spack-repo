@@ -13,7 +13,7 @@ class RGeometadb(RPackage):
 	"""
 	
 	bioc = "GEOmetadb" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/GEOmetadb_1.64.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/GEOmetadb/GEOmetadb_1.64.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEOmetadb_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEOmetadb/GEOmetadb_1.64.0.tar.gz"]
 
 	version("1.64.0", md5="78e0bce3aa72836e1b126536221059c6")
 

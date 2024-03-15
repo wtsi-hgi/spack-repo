@@ -13,7 +13,7 @@ class RBsgenomeRnorvegicusUcscRn5Masked(RPackage):
 	"""
 	
 	bioc = "BSgenome.Rnorvegicus.UCSC.rn5.masked" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Rnorvegicus.UCSC.rn5.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/BSgenome.Rnorvegicus.UCSC.rn5.masked/BSgenome.Rnorvegicus.UCSC.rn5.masked_1.3.99.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Rnorvegicus.UCSC.rn5.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Rnorvegicus.UCSC.rn5.masked/BSgenome.Rnorvegicus.UCSC.rn5.masked_1.3.99.tar.gz"]
 
 	version("1.3.99", md5="663233774b79012cb2cc08224ac275ed")
 

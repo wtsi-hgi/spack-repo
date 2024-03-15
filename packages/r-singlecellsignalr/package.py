@@ -13,7 +13,7 @@ class RSinglecellsignalr(RPackage):
 	"""
 	
 	bioc = "SingleCellSignalR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SingleCellSignalR_1.14.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SingleCellSignalR/SingleCellSignalR_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SingleCellSignalR_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SingleCellSignalR/SingleCellSignalR_1.14.0.tar.gz"]
 
 	version("1.14.0", md5="d00060a859db9cd8c87ce9673cc9d886")
 

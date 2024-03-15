@@ -14,7 +14,7 @@ class RCnMops(RPackage):
 	
 	homepage = "http://www.bioinf.jku.at/software/cnmops/cnmops.html"
 	bioc = "cn.mops" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/cn.mops_1.48.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/cn.mops/cn.mops_1.48.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cn.mops_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cn.mops/cn.mops_1.48.0.tar.gz"]
 
 	version("1.48.0", md5="e4e51a7ecd3810464be443ba9a6b6919")
 

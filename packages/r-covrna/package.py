@@ -13,7 +13,7 @@ class RCovrna(RPackage):
 	"""
 	
 	bioc = "covRNA" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/covRNA_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/covRNA/covRNA_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/covRNA_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/covRNA/covRNA_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="dd8405538f8c54345579ee7d0d5dc63f")
 

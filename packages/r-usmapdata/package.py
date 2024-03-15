@@ -12,14 +12,14 @@ class RUsmapdata(RPackage):
 	Provides a container for data used by the 'usmap' package.
     The data used by 'usmap' has been extracted into this package so that the
     file size of the 'usmap' package can be reduced greatly. The data in this
-    package will be updated roughly once per year (plus bug fixes) as new
-    shapefiles are provided by the US Census bureau.
+    package will be updated roughly once per year as new map data files are
+    provided by the US Census Bureau.
 	"""
 	
 	homepage = "https://usmap.dev"
 	cran = "usmapdata" 
 
-	version("0.2.1", md5="0b0853a0e0805ab6aa3e8eac91895ad0")
+	version("0.2.2", md5="d2b75204a3e71f717b4dbd75528bb41f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

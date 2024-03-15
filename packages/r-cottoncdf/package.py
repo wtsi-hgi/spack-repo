@@ -13,7 +13,7 @@ class RCottoncdf(RPackage):
 	"""
 	
 	bioc = "cottoncdf" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/cottoncdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/cottoncdf/cottoncdf_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cottoncdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/cottoncdf/cottoncdf_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="b9d2a4b43235c6e531b78cca006e84b2")
 

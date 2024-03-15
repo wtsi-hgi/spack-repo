@@ -13,7 +13,7 @@ class RHta20probesetDb(RPackage):
 	"""
 	
 	bioc = "hta20probeset.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/hta20probeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/hta20probeset.db/hta20probeset.db_8.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hta20probeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hta20probeset.db/hta20probeset.db_8.8.0.tar.gz"]
 
 	version("8.8.0", md5="8cc15bb71f3c2776015e55a2d7df2c2f")
 

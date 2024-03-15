@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,7 +13,7 @@ class RRgraphviz(RPackage):
 	objects from the graph package."""
 
 	bioc = "Rgraphviz"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/Rgraphviz_2.46.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/Rgraphviz/Rgraphviz_2.46.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rgraphviz_2.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rgraphviz/Rgraphviz_2.46.0.tar.gz"]
 
 	version("2.46.0", md5="b93e5d1c383b1e5cd06e4dec89a43ce8")
 

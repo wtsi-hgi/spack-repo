@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,7 +16,7 @@ class RBeachmat(RPackage):
 	matrices are handled by DelayedArray block processing."""
 
 	bioc = "beachmat"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/beachmat_2.18.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/beachmat/beachmat_2.18.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/beachmat_2.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/beachmat/beachmat_2.18.1.tar.gz"]
 
 	version("2.18.1", md5="37b7abdc24627d4abb87fd0beb5b3930")
 

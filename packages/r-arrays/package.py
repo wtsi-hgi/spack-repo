@@ -13,7 +13,7 @@ class RArrays(RPackage):
 	"""
 	
 	bioc = "arrays" 
-	urls = ["https://www.bioconductor.org/packages/release/workflows/src/contrib/arrays_1.28.0.tar.gz", "https://www.bioconductor.org/packages/release/workflows/src/contrib/Archive/arrays/arrays_1.28.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/arrays_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/arrays/arrays_1.28.0.tar.gz"]
 
 	version("1.28.0", md5="466fc4abd4aea25b91a224839b146532")
 

@@ -13,7 +13,7 @@ class RFusesom(RPackage):
 	"""
 	
 	bioc = "FuseSOM" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/FuseSOM_1.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/FuseSOM/FuseSOM_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FuseSOM_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FuseSOM/FuseSOM_1.4.0.tar.gz"]
 
 	version("1.4.0", md5="8f53b251d77ea648cb8e56bb5eb72b18")
 

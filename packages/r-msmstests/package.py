@@ -13,7 +13,7 @@ class RMsmstests(RPackage):
 	"""
 	
 	bioc = "msmsTests" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/msmsTests_1.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/msmsTests/msmsTests_1.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msmsTests_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msmsTests/msmsTests_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="90c08df612ce3e4608ab3b9fa048764a")
 

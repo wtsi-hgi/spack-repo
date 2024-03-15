@@ -13,7 +13,7 @@ class RTabulamurisdata(RPackage):
 	"""
 	
 	bioc = "TabulaMurisData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/TabulaMurisData_1.20.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/TabulaMurisData/TabulaMurisData_1.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TabulaMurisData_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TabulaMurisData/TabulaMurisData_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="39c27cc6646ea3bcdb4637a226b219b8")
 

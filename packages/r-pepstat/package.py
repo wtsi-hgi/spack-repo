@@ -14,7 +14,7 @@ class RPepstat(RPackage):
 	
 	homepage = "https://github.com/RGLab/pepStat"
 	bioc = "pepStat" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pepStat_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pepStat/pepStat_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pepStat_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pepStat/pepStat_1.36.0.tar.gz"]
 
 	version("1.36.0", md5="031af81c6bcac97b7262d978bfda2392")
 

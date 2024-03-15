@@ -13,7 +13,7 @@ class RMbkmeans(RPackage):
 	"""
 	
 	bioc = "mbkmeans" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mbkmeans_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mbkmeans/mbkmeans_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mbkmeans_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mbkmeans/mbkmeans_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="1bd55f0f927fea250caa1a8264e3013c")
 

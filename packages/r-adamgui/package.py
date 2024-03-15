@@ -14,7 +14,7 @@ class RAdamgui(RPackage):
 	
 	homepage = "TBA"
 	bioc = "ADAMgui" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ADAMgui_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ADAMgui/ADAMgui_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ADAMgui_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ADAMgui/ADAMgui_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="d6b76d93be7f193cd913f44f6ff41a64")
 

@@ -14,7 +14,7 @@ class RMosaics(RPackage):
 	
 	homepage = "http://groups.google.com/group/mosaics_user_group"
 	bioc = "mosaics" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/mosaics_2.40.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/mosaics/mosaics_2.40.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mosaics_2.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mosaics/mosaics_2.40.0.tar.gz"]
 
 	version("2.40.0", md5="0648fcfd9fd595974e0602fbb2a37cac")
 

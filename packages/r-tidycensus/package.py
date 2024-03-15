@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,7 +18,9 @@ class RTidycensus(RPackage):
 
 	cran = "tidycensus"
 
-	version("1.6", md5="cffe4e33ac6e84d46d1aa9042495577b")
+	license("MIT")
+
+	version("1.6.2", md5="09bdefff8d9ff7f54ab2754d48880008")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

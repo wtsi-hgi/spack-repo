@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -28,9 +28,9 @@ class RSnprelate(RPackage):
 	structural variation calls."""
 
 	bioc = "SNPRelate"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SNPRelate_1.36.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SNPRelate/SNPRelate_1.36.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SNPRelate_1.36.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SNPRelate/SNPRelate_1.36.1.tar.gz"]
 
-	version("1.36.0", md5="f4e5095c6b99014e02d770e7f4bd5617")
+	version("1.36.1", md5="19ded26ae346dc74ae7b6f8258b2afb0")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-gdsfmt", type=("build", "run"))

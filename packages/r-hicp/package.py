@@ -10,14 +10,14 @@ class RHicp(RPackage):
 	"""Harmonised Index of Consumer Prices
 
 	The Harmonised Index of Consumer Prices (HICP) is the key economic figure to measure inflation in the euro area.
-              The methodology underlying the HICP is documented in the HICP Methodological Manual (<https://ec.europa.eu/eurostat/de/web/products-manuals-and-guidelines/-/ks-gq-17-015>).
+              The methodology underlying the HICP is documented in the HICP Methodological Manual (<https://ec.europa.eu/eurostat/web/products-manuals-and-guidelines/w/ks-gq-24-003>).
               Based on the manual, this package provides functions to access and work with HICP data from Eurostat's public database (<https://ec.europa.eu/eurostat/data/database>).
 	"""
 	
 	homepage = "https://github.com/eurostat/hicp"
 	cran = "hicp" 
 
-	version("0.4.1", md5="3edca9249604e9ca4872662175ad30e8")
+	version("0.4.2", md5="fc63cc644764bf842ce0c09477bded49")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-restatapi@0.21:", type=("build", "run"))

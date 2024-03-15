@@ -13,7 +13,7 @@ class RAsset(RPackage):
 	"""
 	
 	bioc = "ASSET" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ASSET_2.20.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ASSET/ASSET_2.20.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASSET_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASSET/ASSET_2.20.0.tar.gz"]
 
 	version("2.20.0", md5="395bcc1b0256acc248c5d3440bf5dfeb")
 

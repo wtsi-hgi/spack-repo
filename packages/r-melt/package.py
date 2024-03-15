@@ -26,9 +26,10 @@ class RMelt(RPackage):
 	homepage = "https://docs.ropensci.org/melt/"
 	cran = "melt" 
 
-	version("1.11.0", md5="159882927407603fd527f3d90b9b2b42")
+	version("1.11.1", md5="4bbeb30a28e45afdcff977323e9eebd0")
 
 	depends_on("r@4.1:", type=("build", "run"))
+	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-bh", type=("build", "run"))
 	depends_on("r-dqrng", type=("build", "run"))

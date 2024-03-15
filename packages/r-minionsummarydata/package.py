@@ -13,7 +13,7 @@ class RMinionsummarydata(RPackage):
 	"""
 	
 	bioc = "minionSummaryData" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/minionSummaryData_1.32.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/minionSummaryData/minionSummaryData_1.32.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/minionSummaryData_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/minionSummaryData/minionSummaryData_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="1679c45541b2d76094c3894abe9c011d")
 

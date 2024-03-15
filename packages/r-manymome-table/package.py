@@ -18,7 +18,7 @@ class RManymomeTable(RPackage):
 	homepage = "https://sfcheung.github.io/manymome.table/"
 	cran = "manymome.table" 
 
-	version("0.2.0", md5="3ed782547b6d472e0b11199adb73db73")
+	version("0.3.0", md5="46b43e212b760608f10d91edc97f546d")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-manymome", type=("build", "run"))

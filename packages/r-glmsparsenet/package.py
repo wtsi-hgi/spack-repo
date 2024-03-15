@@ -14,7 +14,7 @@ class RGlmsparsenet(RPackage):
 	
 	homepage = "https://www.github.com/sysbiomed/glmSparseNet"
 	bioc = "glmSparseNet" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/glmSparseNet_1.20.1.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/glmSparseNet/glmSparseNet_1.20.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/glmSparseNet_1.20.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/glmSparseNet/glmSparseNet_1.20.1.tar.gz"]
 
 	version("1.20.1", md5="661bacce5baf5639517fcf13316553dc")
 

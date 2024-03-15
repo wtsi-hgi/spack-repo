@@ -13,7 +13,7 @@ class RPengls(RPackage):
 	"""
 	
 	bioc = "pengls" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/pengls_1.8.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/pengls/pengls_1.8.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pengls_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pengls/pengls_1.8.0.tar.gz"]
 
 	version("1.8.0", md5="7b4703b0839f4e46a97e208289a69345")
 

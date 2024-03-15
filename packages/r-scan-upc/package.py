@@ -14,7 +14,7 @@ class RScanUpc(RPackage):
 	
 	homepage = "http://bioconductor.org"
 	bioc = "SCAN.UPC" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/SCAN.UPC_2.44.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/SCAN.UPC/SCAN.UPC_2.44.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCAN.UPC_2.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCAN.UPC/SCAN.UPC_2.44.0.tar.gz"]
 
 	version("2.44.0", md5="9da1b69c833d18db111112370bfe15ae")
 

@@ -13,7 +13,7 @@ class RRnaseqsamplesize(RPackage):
 	"""
 	
 	bioc = "RnaSeqSampleSize" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/RnaSeqSampleSize_2.12.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/RnaSeqSampleSize/RnaSeqSampleSize_2.12.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RnaSeqSampleSize_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RnaSeqSampleSize/RnaSeqSampleSize_2.12.0.tar.gz"]
 
 	version("2.12.0", md5="faa40e62b53c345d9298c32310e6488c")
 

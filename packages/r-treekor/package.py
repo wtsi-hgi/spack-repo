@@ -13,7 +13,7 @@ class RTreekor(RPackage):
 	"""
 	
 	bioc = "treekoR" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/treekoR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/treekoR/treekoR_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/treekoR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/treekoR/treekoR_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="c1b9ce26aa6252f5cb1fe9cd07c3245f")
 

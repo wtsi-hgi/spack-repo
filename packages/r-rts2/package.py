@@ -20,18 +20,18 @@ class RRts2(RPackage):
 	
 	cran = "rts2" 
 
-	version("0.6.1", md5="b8fe632120bebe2aa2b867bb71522f13", url="https://cran.r-project.org/src/contrib/rts2_0.6.1.tar.gz")
+	version("0.7.2", md5="74dd4bed0f43d1d22cc7d5b30296234b", url="https://cran.r-project.org/src/contrib/rts2_0.7.2.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r-sf@1.0.14:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))
 	depends_on("r-rcpp@0.12:", type=("build", "run"))
 	depends_on("r-rcppparallel@5.0.1:", type=("build", "run"))
 	depends_on("r-rstan@2.26:", type=("build", "run"))
 	depends_on("r-rstantools@2.1.1:", type=("build", "run"))
-	depends_on("r-sf@1.0.5:", type=("build", "run"))
 	depends_on("r-lubridate", type=("build", "run"))
 	depends_on("r-bh@1.66:", type=("build", "run"))
 	depends_on("r-rcppeigen@0.3.3.3:", type=("build", "run"))
 	depends_on("r-stanheaders@2.32:", type=("build", "run"))
-	depends_on("r-glmmrbase@0.6.1:", type=("build", "run"))
+	depends_on("r-glmmrbase@0.7.1:", type=("build", "run"))
 	depends_on("r-sparsechol@0.2.2:", type=("build", "run"))

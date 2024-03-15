@@ -14,7 +14,7 @@ class RSnageedata(RPackage):
 	
 	homepage = "http://fleming.ulb.ac.be/SNAGEE"
 	bioc = "SNAGEEdata" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/SNAGEEdata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/SNAGEEdata/SNAGEEdata_1.38.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SNAGEEdata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SNAGEEdata/SNAGEEdata_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="bfd0a2689cb9ac612cb2f8995c3a03d5")
 

@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,7 @@ class RAffycoretools(RPackage):
 	common analyses that a core Biostatistician might see."""
 
 	bioc = "affycoretools"
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/affycoretools_1.74.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/affycoretools/affycoretools_1.74.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affycoretools_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affycoretools/affycoretools_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="0e35c33fb3f3a4cdc7778efacbc45441")
 

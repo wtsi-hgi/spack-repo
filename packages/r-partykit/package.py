@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -22,6 +22,8 @@ class RPartykit(RPackage):
 	<https://jmlr.org/papers/v16/hothorn15a.html>."""
 
 	cran = "partykit"
+
+	license("GPL-2.0-only OR GPL-3.0-only")
 
 	version("1.2-20", md5="ade28e819923bcc9ce94e5eae894ff04")
 

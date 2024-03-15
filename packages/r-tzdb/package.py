@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -20,6 +20,8 @@ class RTzdb(RPackage):
 	interface for time zone manipulations."""
 
 	cran = "tzdb"
+
+	license("MIT")
 
 	version("0.4.0", md5="c92e89379dd5c49a03b5b3996abcd0f1")
 

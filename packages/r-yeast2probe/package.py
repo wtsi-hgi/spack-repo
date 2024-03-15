@@ -13,7 +13,7 @@ class RYeast2probe(RPackage):
 	"""
 	
 	bioc = "yeast2probe" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/yeast2probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/yeast2probe/yeast2probe_2.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/yeast2probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/yeast2probe/yeast2probe_2.18.0.tar.gz"]
 
 	version("2.18.0", md5="3f52a2b7bd379624bc2966ca28c9ddf9")
 

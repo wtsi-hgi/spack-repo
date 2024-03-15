@@ -20,13 +20,14 @@ class RMiselect(RPackage):
     to ascertain a final active set without resorting to ad hoc
     combination rules. 'miselect' presents Stacked Adaptive Elastic Net (saenet)
     and Grouped Adaptive LASSO (galasso) for continuous and binary outcomes,
-    developed by Du et al (2020), currently under review. They, by construction,
-    force selection of the same variables across multiply imputed data.
-    'miselect' also provides cross validated variants of these methods.
+    developed by Du et al (2022) <doi:10.1080/10618600.2022.2035739>. They, 
+    by construction, force selection of the same variables across multiply 
+    imputed data. 'miselect' also provides cross validated variants of these 
+    methods.
 	"""
 	
 	cran = "miselect" 
 
-	version("0.9.0", md5="64b6bc1bd49f8af372ac95234f2c4060")
+	version("0.9.2", md5="6268fc3c9ed21165cf4fa5a2427e41ed")
 
 	depends_on("r@3.5:", type=("build", "run"))

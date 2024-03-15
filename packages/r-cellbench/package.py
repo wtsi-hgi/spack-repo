@@ -14,7 +14,7 @@ class RCellbench(RPackage):
 	
 	homepage = "https://github.com/shians/cellbench"
 	bioc = "CellBench" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/CellBench_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/CellBench/CellBench_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellBench_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellBench/CellBench_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="21b854517881e111491fd4b6dba0857c")
 

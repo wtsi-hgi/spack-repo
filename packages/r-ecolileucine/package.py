@@ -13,7 +13,7 @@ class REcolileucine(RPackage):
 	"""
 	
 	bioc = "ecoliLeucine" 
-	urls = ["https://www.bioconductor.org/packages/release/data/experiment/src/contrib/ecoliLeucine_1.42.0.tar.gz", "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Archive/ecoliLeucine/ecoliLeucine_1.42.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ecoliLeucine_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ecoliLeucine/ecoliLeucine_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="30af71114480d851f4dad806e7f8e0d1")
 

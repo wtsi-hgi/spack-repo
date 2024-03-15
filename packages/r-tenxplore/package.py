@@ -13,7 +13,7 @@ class RTenxplore(RPackage):
 	"""
 	
 	bioc = "tenXplore" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/tenXplore_1.24.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/tenXplore/tenXplore_1.24.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tenXplore_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tenXplore/tenXplore_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="13e1778f8b644661a521bb832af6e7d6")
 

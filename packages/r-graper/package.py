@@ -13,7 +13,7 @@ class RGraper(RPackage):
 	"""
 	
 	bioc = "graper" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/graper_1.18.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/graper/graper_1.18.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/graper_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/graper/graper_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="e969608b591224df6c92d73194adea89")
 

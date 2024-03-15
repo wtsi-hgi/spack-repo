@@ -14,7 +14,7 @@ class RPlyinteractions(RPackage):
 	
 	homepage = "https://github.com/js2264/plyinteractions"
 	bioc = "plyinteractions" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/plyinteractions_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/plyinteractions/plyinteractions_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/plyinteractions_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/plyinteractions/plyinteractions_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="e072613b18768f43d832eaa32354bbc9")
 

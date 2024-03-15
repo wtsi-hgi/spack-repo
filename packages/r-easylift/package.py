@@ -14,7 +14,7 @@ class REasylift(RPackage):
 	
 	homepage = "https://github.com/nahid18/easylift"
 	bioc = "easylift" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/easylift_1.0.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/easylift/easylift_1.0.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/easylift_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/easylift/easylift_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="86d8c0188c35ab56732fd5cc55475e8c")
 

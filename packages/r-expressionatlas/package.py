@@ -13,7 +13,7 @@ class RExpressionatlas(RPackage):
 	"""
 	
 	bioc = "ExpressionAtlas" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/ExpressionAtlas_1.30.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/ExpressionAtlas/ExpressionAtlas_1.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExpressionAtlas_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExpressionAtlas/ExpressionAtlas_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="eb11568a0a2a81e1bf636eaa24e45906")
 

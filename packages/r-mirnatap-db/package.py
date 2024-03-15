@@ -13,7 +13,7 @@ class RMirnatapDb(RPackage):
 	"""
 	
 	bioc = "miRNAtap.db" 
-	urls = ["https://www.bioconductor.org/packages/release/data/annotation/src/contrib/miRNAtap.db_0.99.10.tar.gz", "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/Archive/miRNAtap.db/miRNAtap.db_0.99.10.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/miRNAtap.db_0.99.10.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/miRNAtap.db/miRNAtap.db_0.99.10.tar.gz"]
 
 	version("0.99.10", md5="48010280b68d6f1ddbff3b374132ce0a")
 

@@ -13,7 +13,7 @@ class RXnastring(RPackage):
 	"""
 	
 	bioc = "XNAString" 
-	urls = ["https://www.bioconductor.org/packages/release/bioc/src/contrib/XNAString_1.10.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/XNAString/XNAString_1.10.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/XNAString_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/XNAString/XNAString_1.10.0.tar.gz"]
 
 	version("1.10.0", md5="d09bf1b8eba2843f2b6285d353fb51bc")
 

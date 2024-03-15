@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,6 +18,8 @@ class RViridis(RPackage):
 	can be found at <https://cran.r-project.org/package=viridisLite>."""
 
 	cran = "viridis"
+
+	license("MIT")
 
 	version("0.6.5", md5="d3379572b7c9e31148c52c8e85417d9e")
 
