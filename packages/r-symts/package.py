@@ -16,3 +16,4 @@ class RSymts(RPackage):
 
 	version("1.0-2", md5="9b0d43c8702bdd351f392245c45abbfe")
 
+	depends_on("gsl", type=("build", "link", "run"))
