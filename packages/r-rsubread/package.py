@@ -15,3 +15,4 @@ class RRsubread(RPackage):
 	version("2.16.1", md5="ec5687eb02901ff3b62915cf37aa48b4")
 
 	depends_on("r-matrix", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
