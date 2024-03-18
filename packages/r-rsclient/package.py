@@ -18,3 +18,4 @@ class RRsclient(RPackage):
 	version("0.7-10", md5="6bfd1f836d6be98e75b4bbd0f7cbb521")
 
 	depends_on("r@2.7:", type=("build", "run"))
+	depends_on("openssl", type=("build", "link", "run"))
