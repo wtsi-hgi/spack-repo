@@ -17,3 +17,4 @@ class RRtk(RPackage):
 	version("0.2.6.1", md5="4a7b2bb683c7cc1e7ae16baf39cd0ebe")
 
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
