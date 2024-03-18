@@ -21,3 +21,4 @@ of Semi-Competing Risks Data
 	depends_on("r-survival", type=("build", "run"))
 	depends_on("r-formula", type=("build", "run"))
 	depends_on("r@3.3:", type=("build", "run"))
+	depends_on("gsl", type=("build", "link", "run"))
