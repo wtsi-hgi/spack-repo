@@ -62,3 +62,4 @@ class RScpipe(RPackage):
 	depends_on("r-vctrs@0.5.2:", type=("build", "run"))
 	depends_on("r-zlibbioc", type=("build", "run"))
 	depends_on("r-testthat", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
