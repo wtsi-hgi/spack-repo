@@ -30,3 +30,6 @@ class RPodkat(RPackage):
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-bsgenome@1.32:", type=("build", "run"))
 	depends_on("r-rhtslib@1.15.3:", type=("build", "run"))
+	depends_on("curl", type=("build", "link", "run"))
+	depends_on("bzip2", type=("build", "link", "run"))
+	depends_on("xz", type=("build", "link", "run"))
