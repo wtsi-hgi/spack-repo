@@ -30,5 +30,4 @@ class RRlibkriging(RPackage):
 	depends_on("r-rcpparmadillo", type=("build", "run"))
 	depends_on("cmake@3.2.0:", type=("build", "link", "run"))
 	depends_on("gcc", type=("build", "link", "run"))
-	depends_on("gfortran", type=("build", "link", "run"))
 	depends_on("hdf5", type=("build", "link", "run"))
