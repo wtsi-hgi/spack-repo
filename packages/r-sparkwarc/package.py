@@ -20,3 +20,4 @@ class RSparkwarc(RPackage):
 	depends_on("r-dbi", type=("build", "run"))
 	depends_on("r-sparklyr", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
