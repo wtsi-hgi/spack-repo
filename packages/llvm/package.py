@@ -300,7 +300,7 @@ class Llvm(CMakePackage, CudaPackage):
     # lldb dependencies
     with when("+lldb"):
         depends_on("libedit")
-        depends_on("libxml2")
+        depends_on("libxml2", when="@:14")
         depends_on("libxml2@2.8:", when="@14:")
         depends_on("lua@5.3", when="+lua")  # purposefully not a range
         depends_on("ncurses")
