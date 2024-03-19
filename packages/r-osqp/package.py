@@ -23,3 +23,6 @@ class ROsqp(RPackage):
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-matrix@1.6.1:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))
+
+	def setup_build_environment(self, env):
+		env.append_path("CPATH", self.stage.source_path + "/src/osqp_sources/include")
