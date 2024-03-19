@@ -296,11 +296,11 @@ class Llvm(CMakePackage, CudaPackage):
 
     # needs zstd cmake config file, which is not added when built with makefile.
     depends_on("zstd build_system=cmake", when="+zstd")
+    depends_on("libxml2@2.8:")
 
     # lldb dependencies
     with when("+lldb"):
         depends_on("libedit")
-        depends_on("libxml2@2.8:")
         depends_on("lua@5.3", when="+lua")  # purposefully not a range
         depends_on("ncurses")
         depends_on("py-six", when="+python")
