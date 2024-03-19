@@ -20,3 +20,4 @@ class REds(RPackage):
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
