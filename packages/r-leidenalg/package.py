@@ -24,5 +24,6 @@ class RLeidenalg(RPackage):
 	depends_on("r-sccore", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
 	depends_on("r-rcppeigen", type=("build", "run"))
+	depends_on("gmp", type=("build", "link", "run"))
 	depends_on("libxml2", type=("build", "link", "run"))
 	depends_on("glpk@4.57:", type=("build", "link", "run"))
