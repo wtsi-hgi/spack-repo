@@ -21,3 +21,7 @@ class RRbowtie2(RPackage):
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))
 	depends_on("samtools", type=("build", "link", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
+
+	def setup_build_environment(self, env):
+		env.append_path("CPATH", self.spec["zlib"].prefix.include)
