@@ -27,5 +27,7 @@ class RBamsignals(RPackage):
 	depends_on("r-zlibbioc", type=("build", "run"))
 	depends_on("r-rhtslib@1.13.1:", type=("build", "run"))
 	depends_on("bzip2", type=("build", "link", "run"))
+	depends_on("curl", type=("build", "link", "run"))
 	depends_on("lzma", type=("build", "link", "run"))
 	depends_on("xz", type=("build", "link", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
