@@ -18,3 +18,4 @@ class RTimeless(RPackage):
 	version("0.1.0", md5="cb39964a2f749e33f78f8e2d4fbc2b41")
 
 	depends_on("r@3.6:", type=("build", "run"))
+	depends_on("rust", type=("build", "link", "run"))
