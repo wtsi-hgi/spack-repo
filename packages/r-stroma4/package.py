@@ -14,7 +14,7 @@ class RStroma4(RPackage):
 	
 	bioc = "STROMA4" 
 
-	version("1.26.0", commit="f2b9e466ad50b5ce2bda470ecc3a71de971c7121", url="")
+	version("1.26.0", commit="f2b9e466ad50b5ce2bda470ecc3a71de971c7121")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))
