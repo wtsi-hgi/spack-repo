@@ -22,3 +22,4 @@ class RRitch(RPackage):
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-nanotime@0.3.2:", type=("build", "run"))
 	depends_on("r-bit64@4.0.5:", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
