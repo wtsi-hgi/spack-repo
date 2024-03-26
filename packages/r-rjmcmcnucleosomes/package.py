@@ -27,3 +27,4 @@ class RRjmcmcnucleosomes(RPackage):
 	depends_on("r-genomeinfodb", type=("build", "run"))
 	depends_on("r-s4vectors@0.23.10:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))
+	depends_on("gsl", type=("build", "link", "run"))
