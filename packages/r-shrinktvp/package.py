@@ -27,3 +27,4 @@ with Shrinkage
 	depends_on("r-rcpparmadillo", type=("build", "run"))
 	depends_on("r-rcppprogress", type=("build", "run"))
 	depends_on("r-rcppgsl", type=("build", "run"))
+	depends_on("gsl", type=("build", "link", "run"))
