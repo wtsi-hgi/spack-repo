@@ -35,3 +35,8 @@ class RRegistr(RPackage):
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
+	depends_on("bzip2", type=("build", "link", "run"))
+	depends_on("xz", type=("build", "link", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
+	depends_on("icu4c", type=("build", "link", "run"))
+	depends_on("libiconv", type=("build", "link", "run"))
