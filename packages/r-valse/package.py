@@ -32,3 +32,4 @@ class RValse(RPackage):
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))
 	depends_on("gsl", type=("build", "link", "run"))
+	depends_on("r-rcppgsl", type=("build", "link", "run"))
