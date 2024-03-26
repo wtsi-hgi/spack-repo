@@ -23,3 +23,4 @@ class RRarr(RPackage):
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-r-utils", type=("build", "run"))
 	depends_on("r-paws-storage", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
