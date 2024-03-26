@@ -21,3 +21,4 @@ Model Based on Reproducing Kernel Hilbert Spaces
 	depends_on("r-rcppeigen", type=("build", "run"))
 	depends_on("r-rcppgsl", type=("build", "run"))
 	depends_on("gsl", type=("build", "link", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
