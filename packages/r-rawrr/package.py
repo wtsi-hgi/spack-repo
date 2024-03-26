@@ -19,3 +19,4 @@ class RRawrr(RPackage):
 	version("1.10.2", md5="42213a8a733115af719162fc1a72d6a1")
 
 	depends_on("r@4.1:", type=("build", "run"))
+	depends_on("mono", type=("build", "link", "run"))
