@@ -23,3 +23,4 @@ class RRnifti(RPackage):
 	version("1.6.1", md5="95509945ea75a397a90d4d0b808d629d")
 
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
