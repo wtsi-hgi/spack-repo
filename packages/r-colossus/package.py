@@ -24,3 +24,4 @@ Models"
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-rcppeigen", type=("build", "run"))
 	depends_on("r-testthat", type=("build", "run"))
+	depends_on("r-stringr", type=("build", "run"))
