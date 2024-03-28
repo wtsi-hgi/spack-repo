@@ -34,3 +34,4 @@ class RCellbarcode(RPackage):
 	depends_on("r-zlibbioc", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))
 	depends_on("r-bh", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
