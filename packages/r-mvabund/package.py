@@ -27,3 +27,4 @@ class RMvabund(RPackage):
 	depends_on("r-tweedie", type=("build", "run"))
 	depends_on("r-statmod", type=("build", "run"))
 	depends_on("r-rcppgsl", type=("build", "run"))
+	depends_on("gsl", type=("build", "link", "run"))
