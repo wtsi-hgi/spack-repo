@@ -32,3 +32,4 @@ class RCcfindr(RPackage):
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rdpack@0.7:", type=("build", "run"))
 	depends_on("r-rcppeigen", type=("build", "run"))
+	depends_on("gsl", type=("build", "link", "run"))
