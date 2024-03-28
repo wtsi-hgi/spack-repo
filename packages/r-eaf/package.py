@@ -21,3 +21,4 @@ class REaf(RPackage):
 	depends_on("r-modeltools", type=("build", "run"))
 	depends_on("r-matrixstats", type=("build", "run"))
 	depends_on("r-rdpack", type=("build", "run"))
+	depends_on("gsl", type=("build", "link", "run"))
