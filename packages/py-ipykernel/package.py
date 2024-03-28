@@ -12,6 +12,7 @@ class PyIpykernel(PythonPackage):
     pypi = "ipykernel/ipykernel-6.27.1.tar.gz"
 
     version("6.27.1", sha256="7d5d594b6690654b4d299edba5e872dc17bb7396a8d0609c97cb7b8a1c605de6")
+    version("6.15.3", sha256="b81d57b0e171670844bf29cdc11562b1010d3da87115c4513e0ee660a8368765")
 
     depends_on("py-debugpy@1.6.5:", type=("build", "run"))
     depends_on("py-ipython@7.23.1:", type=("build", "run"))
