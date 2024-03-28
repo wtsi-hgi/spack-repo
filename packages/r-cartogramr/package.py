@@ -23,3 +23,4 @@ class RCartogramr(RPackage):
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-sf", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
+	depends_on("fftw", type=("build", "link", "run"))
