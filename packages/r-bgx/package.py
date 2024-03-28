@@ -22,3 +22,4 @@ class RBgx(RPackage):
 	depends_on("r-affy@1.5:", type=("build", "run"))
 	depends_on("r-gcrma@2.4.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("boost+random", type=("build", "link", "run"))
