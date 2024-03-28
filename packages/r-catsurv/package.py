@@ -25,3 +25,4 @@ class RCatsurv(RPackage):
 	depends_on("r-bh@1.69.0.1:", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
 	depends_on("r-rcppgsl@0.3.6:", type=("build", "run"))
+	depends_on("gsl", type=("build", "link", "run"))
