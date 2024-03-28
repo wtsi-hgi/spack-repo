@@ -22,3 +22,4 @@ class RCld3(RPackage):
 	version("1.6.0", md5="be77a3493aea78479ef7461fe1108267", url="https://cran.r-project.org/src/contrib/cld3_1.6.0.tar.gz")
 
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("protobuf", type=("build", "link", "run"))
