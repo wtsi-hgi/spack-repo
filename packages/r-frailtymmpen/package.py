@@ -24,3 +24,4 @@ class RFrailtymmpen(RPackage):
 	depends_on("r-mgcv", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rcppgsl", type=("build", "run"))
+	depends_on("gsl", type=("build", "link", "run"))
