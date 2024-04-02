@@ -35,4 +35,3 @@ class ROrcs(RPackage):
 	depends_on("r-sf", type=("build", "run"))
 	depends_on("r-sp", type=("build", "run"))
 	depends_on("r-terra", type=("build", "run"))
-	depends_on("7zip", type=("build", "link", "run"))
