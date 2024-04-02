@@ -20,3 +20,4 @@ class RImmunoclust(RPackage):
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))
+	depends_on("gsl", type=("build", "link", "run"))
