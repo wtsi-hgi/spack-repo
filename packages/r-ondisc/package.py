@@ -28,3 +28,4 @@ Single-Cell Data
 	depends_on("r-crayon", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-rhdf5lib", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
