@@ -19,3 +19,4 @@ class RPgenlibr(RPackage):
 	version("0.3.5", md5="843d9f1210f252a095942fa51e5dd16b")
 
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
