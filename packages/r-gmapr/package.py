@@ -32,3 +32,4 @@ class RGmapr(RPackage):
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-genomicalignments@1.15.6:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
