@@ -23,3 +23,4 @@ class RHipread(RPackage):
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-bh", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
