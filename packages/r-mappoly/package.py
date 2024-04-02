@@ -46,3 +46,4 @@ class RMappoly(RPackage):
 	depends_on("r-vcfr", type=("build", "run"))
 	depends_on("r-zoo", type=("build", "run"))
 	depends_on("r-plotly", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
