@@ -23,7 +23,6 @@ class PerlDbdMysql(PerlPackage):
     depends_on("perl-test-deep", type=("build", "run"))
     depends_on("perl-dbi", type=("build", "run"))
     depends_on("mysql")
-    depends_on("pkgconfig")
-    depends_on("zlib-api")
+    depends_on("zlib", type=("build", "link", "run"))
     depends_on("curl")
     depends_on("zstd", when="@8.0.18:")
