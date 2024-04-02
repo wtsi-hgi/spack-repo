@@ -17,3 +17,4 @@ class RMbvs(RPackage):
 	version("1.6", md5="090c89bee861f843f65538780e538eb3")
 
 	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("gsl", type=("build", "link", "run"))
