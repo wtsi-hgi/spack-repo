@@ -37,4 +37,3 @@ class RNhdr(RPackage):
 	depends_on("r-memoise", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))
-	depends_on("7zip", type=("build", "link", "run"))
