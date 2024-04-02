@@ -41,3 +41,4 @@ class RMulticrispr(RPackage):
 	depends_on("r-stringi", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-tidyselect", type=("build", "run"))
+	depends_on("r-assertive-reflection", type=("build", "link", "run"))
