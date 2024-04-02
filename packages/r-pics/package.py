@@ -23,3 +23,4 @@ class RPics(RPackage):
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))
 	depends_on("r-genomicalignments", type=("build", "run"))
+	depends_on("gsl", type=("build", "link", "run"))
