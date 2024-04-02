@@ -28,7 +28,7 @@ class ROpenimager(RPackage):
 	depends_on("r-rcpparmadillo@0.8:", type=("build", "run"))
 	depends_on("armadillo", type=("build", "link", "run"))
 	depends_on("lapack", type=("build", "link", "run"))
-	depends_on("arpack", type=("build", "link", "run"))
+	depends_on("arpack-ng", type=("build", "link", "run"))
 	depends_on("gcc", type=("build", "link", "run"))
 	depends_on("libjpeg", type=("build", "link", "run"))
 	depends_on("libpng", type=("build", "link", "run"))
