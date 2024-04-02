@@ -32,3 +32,7 @@ class RH5vc(RPackage):
 	depends_on("r-h5vcdata", type=("build", "run"))
 	depends_on("r-genomeinfodb", type=("build", "run"))
 	depends_on("r-rhtslib@1.99.1:", type=("build", "run"))
+	depends_on("bzip2", type=("build", "link", "run"))
+	depends_on("curl", type=("build", "link", "run"))
+	depends_on("xz", type=("build", "link", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
