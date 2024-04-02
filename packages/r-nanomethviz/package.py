@@ -54,3 +54,4 @@ class RNanomethviz(RPackage):
 	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-withr", type=("build", "run"))
 	depends_on("r-zlibbioc", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
