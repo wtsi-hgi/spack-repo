@@ -36,3 +36,4 @@ class RMatchingmarkets(RPackage):
 	depends_on("r-rjava", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
 	depends_on("openjdk", type=("build", "link", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
