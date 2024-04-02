@@ -15,7 +15,7 @@ class RMmappr2(RPackage):
 	homepage = "https://www.ncbi.nlm.nih.gov/pmc/articles/PMC3613585/"
 	bioc = "MMAPPR2" 
 
-	version("1.16.0", commit="e30fb29d0061925a94f95a6a23881605290ddcd2", url="")
+	version("1.16.0", commit="e30fb29d0061925a94f95a6a23881605290ddcd2")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ensemblvep@1.20:", type=("build", "run"))
