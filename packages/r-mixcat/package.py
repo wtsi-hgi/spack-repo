@@ -18,3 +18,4 @@ class RMixcat(RPackage):
 
 	depends_on("r@2.8.1:", type=("build", "run"))
 	depends_on("r-statmod", type=("build", "run"))
+	depends_on("gsl", type=("build", "link", "run"))
