@@ -27,3 +27,4 @@ class RQckitfastq(RPackage):
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-rseqan", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
