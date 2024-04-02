@@ -23,3 +23,4 @@ class RHgwrr(RPackage):
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
+	depends_on("gsl", type=("build", "link", "run"))
