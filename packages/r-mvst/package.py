@@ -24,3 +24,4 @@ class RMvst(RPackage):
 	depends_on("r-mcmcpack", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))
 	depends_on("r-mnormt", type=("build", "run"))
+	depends_on("gsl", type=("build", "link", "run"))
