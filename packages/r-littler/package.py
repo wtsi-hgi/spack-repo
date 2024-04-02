@@ -24,3 +24,8 @@ class RLittler(RPackage):
 
 	version("0.3.19", md5="d0d7480bc3c1014069d00d1162b61cc0")
 
+	depends_on("bzip2", type=("build", "link", "run"))
+	depends_on("icu4c", type=("build", "link", "run"))
+	depends_on("libiconv", type=("build", "link", "run"))
+	depends_on("xz", type=("build", "link", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
