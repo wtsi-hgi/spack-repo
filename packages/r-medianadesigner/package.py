@@ -46,3 +46,4 @@ class RMedianadesigner(RPackage):
 	depends_on("r-lmertest", type=("build", "run"))
 	depends_on("r-pbkrtest", type=("build", "run"))
 	depends_on("r-rcppeigen", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))
