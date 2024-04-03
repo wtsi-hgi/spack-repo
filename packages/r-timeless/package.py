@@ -15,7 +15,7 @@ class RTimeless(RPackage):
 	homepage = "https://github.com/schochastics/timeless"
 	cran = "timeless" 
 
-	version("0.1.0", md5="cb39964a2f749e33f78f8e2d4fbc2b41")
+	version("0.2.1", md5="336fec6974a8c02b268b3366e06c4f70")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("rust", type=("build", "link", "run"))

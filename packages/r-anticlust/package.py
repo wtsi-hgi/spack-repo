@@ -51,5 +51,5 @@ class RAnticlust(RPackage):
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-rann@2.6:", type=("build", "run"))
-	depends_on("glpk", type=("build", "link", "run"))
+	depends_on("glpk+gmp", type=("build", "link", "run"))
 	depends_on("pandoc", type=("build", "link", "run"))

@@ -21,11 +21,13 @@ Endpoints in Clinical Trials
 	homepage = "https://github.com/AstraZeneca/maraca"
 	cran = "maraca" 
 
-	version("0.6", md5="6a234ef99601d9f27aab8298b9853f98")
+	version("0.7", md5="14def8c1afd5fcce45c819c43e2f53c3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-hce@0.5:", type=("build", "run"))
+	depends_on("r-ggplot2@3.3:", type=("build", "run"))
 	depends_on("r-dplyr@1:", type=("build", "run"))
 	depends_on("r-tidyr@1.2:", type=("build", "run"))
-	depends_on("r-ggplot2@3.3:", type=("build", "run"))
 	depends_on("r-checkmate@2.1:", type=("build", "run"))
+	depends_on("r-patchwork@1:", type=("build", "run"))
+	depends_on("r-lifecycle", type=("build", "run"))

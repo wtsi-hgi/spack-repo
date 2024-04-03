@@ -13,9 +13,10 @@ class RCoregx(RPackage):
 	"""
 	
 	bioc = "CoreGx" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CoreGx_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CoreGx/CoreGx_2.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CoreGx_2.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CoreGx/CoreGx_2.6.1.tar.gz"]
 
 	version("2.6.0", md5="3556f412bd014d5294b15feb8342d78e")
+	version("2.6.1", md5="0de3e3c169415cb0916a4803229ab57d")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

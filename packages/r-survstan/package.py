@@ -9,13 +9,13 @@ from spack.package import *
 class RSurvstan(RPackage):
 	"""Fitting Survival Regression Models via 'Stan'
 
-	Parametric survival regression models under the maximum likelihood approach via 'Stan'. Implemented regression models include accelerated failure time models, proportional hazards models, proportional odds models, accelerated hazard models, Yang and Prentice models, and extended hazard models. Available baseline survival distributions include exponential, Weibull, log-normal, log-logistic, gamma, rayleigh and fatigue (Birnbaum-Saunders) distributions. References: Lawless (2002) <ISBN:9780471372158>; Bennett (1982) <doi:10.1002/sim.4780020223>; Chen and Wang(2000) <doi:10.1080/01621459.2000.10474236>; Demarqui and Mayrink (2021) <doi:10.1214/20-BJPS471>.
+	Parametric survival regression models under the maximum likelihood approach via 'Stan'. Implemented regression models include accelerated failure time models, proportional hazards models, proportional odds models, accelerated hazard models, Yang and Prentice models, and extended hazard models. Available baseline survival distributions include exponential, Weibull, log-normal, log-logistic, gamma, generalized gamma, rayleigh, Gompertz and fatigue (Birnbaum-Saunders) distributions. References: Lawless (2002) <ISBN:9780471372158>; Bennett (1982) <doi:10.1002/sim.4780020223>; Chen and Wang(2000) <doi:10.1080/01621459.2000.10474236>; Demarqui and Mayrink (2021) <doi:10.1214/20-BJPS471>.
 	"""
 	
 	homepage = "https://github.com/fndemarqui/survstan"
 	cran = "survstan" 
 
-	version("0.0.6.1", md5="0fca4bafc67f801d0c4e34a9ef9bee81")
+	version("0.0.7", md5="f905959790af5d2a8ba7cfce5c9b98c2")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

@@ -18,7 +18,7 @@ class RSpant(RPackage):
 	homepage = "https://martin3141.github.io/spant/"
 	cran = "spant" 
 
-	version("2.18.0", md5="94d049ed960ba7c94e38fc46fc9f65d0")
+	version("2.19.0", md5="19606364c2a44f84c33f51e12bbf1ca5")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))
@@ -28,7 +28,6 @@ class RSpant(RPackage):
 	depends_on("r-expm", type=("build", "run"))
 	depends_on("r-signal", type=("build", "run"))
 	depends_on("r-minpack-lm", type=("build", "run"))
-	depends_on("r-smoother", type=("build", "run"))
 	depends_on("r-ptw", type=("build", "run"))
 	depends_on("r-mmand", type=("build", "run"))
 	depends_on("r-rnifti", type=("build", "run"))

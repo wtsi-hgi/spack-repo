@@ -14,7 +14,7 @@ class RThresholdroc(RPackage):
 	
 	cran = "ThresholdROC" 
 
-	version("2.9.2", md5="750ec842d40c40e2e883169aaab80369")
+	version("2.9.3", md5="4db24d93c051413766006b187b3d5a5f")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

@@ -16,6 +16,7 @@ class RDaltoolbox(RPackage):
 	cran = "daltoolbox" 
 
 	version("1.0.727", md5="400e98f3adeb7df485f634cb38283071")
+	version("1.0.767", md5="6ace48725ae8b6f0699c2d523d9bdb61")
 
 	depends_on("r-fnn", type=("build", "run"))
 	depends_on("r-mlmetrics", type=("build", "run"))

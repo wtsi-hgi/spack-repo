@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,9 +15,9 @@ class RGargle(RPackage):
 	and processing HTTP requests."""
 
 	cran = "gargle"
-
-	license("MIT")
-
+	version("1.4.0", sha256="8e0f1edf5595d4fd27bd92f98af1cc0c1349975803d9d6f3ff0c25ee2440498b")
+	version("1.2.1", sha256="f367e2c82f403167ae84058303a4fb0402664558a2abf0b495474a7ef1a2f020")
+	version("1.2.0", sha256="4d46ca2933f19429ca5a2cfe47b4130a75c7cd9931c7758ade55bac0c091d73b")
 	version("1.5.2", md5="d18b3d01e31e0dd4f4482aed5b85dc9c")
 
 	depends_on("r@3.6:", type=("build", "run"))

@@ -14,9 +14,9 @@ class RWeberdivechalcdata(RPackage):
 	
 	homepage = "https://github.com/lmweber/WeberDivechaLCdata"
 	bioc = "WeberDivechaLCdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/WeberDivechaLCdata_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/WeberDivechaLCdata/WeberDivechaLCdata_1.4.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/WeberDivechaLCdata_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/WeberDivechaLCdata/WeberDivechaLCdata_1.4.1.tar.gz"]
 
-	version("1.4.0", md5="3b75c693f86ed228e2b7816872cfe4b7")
+	version("1.4.1", md5="3c79188070e02ddfc3e9b58be6455528")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-spatialexperiment", type=("build", "run"))

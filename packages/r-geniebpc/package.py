@@ -25,7 +25,7 @@ class RGeniebpc(RPackage):
 	homepage = "https://genie-bpc.github.io/genieBPC/"
 	cran = "genieBPC" 
 
-	version("1.1.0", md5="7a23b46abe58d71f75d5decdd0ac352b")
+	version("1.1.1", md5="65b4bd634ba4bf128a1930dfa97a0187")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-cli@2.5:", type=("build", "run"))

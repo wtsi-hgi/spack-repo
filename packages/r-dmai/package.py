@@ -12,10 +12,11 @@ class RDmai(RPackage):
 	Functions to calculate Divisia monetary aggregates index as given in Barnett, W. A. (1980) (<DOI:10.1016/0304-4076(80)90070-6>).
 	"""
 	
-	homepage = "https://github.com/myaseen208/dmai"
+	homepage = "https://github.com/myaseen208/dmai/"
 	cran = "dmai" 
 
 	version("0.4.0", md5="e147cce13ab232a7a93bce5792c4ff0f")
+	version("0.5.0", md5="00314a120b4415e274dd3e9d25c24e22")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

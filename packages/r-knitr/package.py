@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,9 +14,17 @@ class RKnitr(RPackage):
 	Literate Programming techniques."""
 
 	cran = "knitr"
-
-	license("GPL-2.0-or-later")
-
+	version("1.42", sha256="9344f1a0089e4da101def54aee38d7cfe3b2022d75c560141d8cc22ac65130f3")
+	version("1.40", sha256="9b8f95ff367a0e52f024bda30315ec7cdd6a5b82371a1aaed95ab4eea78535bc")
+	version("1.39", sha256="c91a65edebdca779af7f7480fa6636667497c9291ad55d6efd982db0bb91ac72")
+	version("1.37", sha256="39cd2a4848baebbe7fa0c0ab8200179690fb5b9190f0c1688d987c38363ad763")
+	version("1.33", sha256="2f83332b0a880de6eae522271bda7f862c97693fba45c23ab1f772028f6c0909")
+	version("1.30", sha256="3aabb13566a234131ba18b78d690104f9468a982dc711f81344a985318c7c93e")
+	version("1.28", sha256="05ee01da31d715bf24793efb3e4ef3bb3101ef1e1ab2d760c645fc5b9d40232a")
+	version("1.24", sha256="e80c2043b445a7e576b62ae8510cce89322660fe388881d799a706d35cd27b89")
+	version("1.23", sha256="063bfb3300fc9f3e7d223c346e19b93beced0e6784470b9bef2524868a206a99")
+	version("1.17", sha256="9484a2b2c7b0c2aae24ab7f4eec6db48affbceb0e42bd3d69e34d953fe92f401")
+	version("1.14", sha256="ba6d301482d020a911390d5eff181e1771f0e02ac3f3d9853a9724b1ec041aec")
 	version("1.45", md5="334f8f963b3d8e9e0ce5c278775cb7ec")
 
 	depends_on("r@3.3:", type=("build", "run"))

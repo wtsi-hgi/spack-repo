@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,9 +18,9 @@ class RGgdendro(RPackage):
 	agnes cluster diagrams."""
 
 	cran = "ggdendro"
-
-	license("GPL-2.0-only OR GPL-3.0-only")
-
+	version("0.1.23", sha256="3a33e988c4fe12eec540876ad8ba09bda998773b2d2a90e043ebae4a69fa8eb8")
+	version("0.1.22", sha256="f0a65f3498c1abc3076df0fb56364b63bdf5d212d8931f85bcc6997510916b6a")
+	version("0.1-20", sha256="125cae904fa5d426cccaf32ebe9c6297e9ef0c6fd3f19f61513834d03a0cf8ff")
 	version("0.2.0", md5="9df2367d1c26c8b1f1adc376fb1ac3c4")
 
 	depends_on("r@3.5:", type=("build", "run"))

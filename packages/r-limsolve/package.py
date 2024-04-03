@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,7 +17,7 @@ class RLimsolve(RPackage):
 	unknown x. It includes banded and tridiagonal linear systems."""
 
 	cran = "limSolve"
-
+	version("1.5.6", sha256="b97ea9930383634c8112cdbc42f71c4e93fe0e7bfaa8f401921835cb44cb49a0")
 	version("1.5.7.1", md5="6e05187f84421d535439364d4a6715af")
 
 	depends_on("r@2.10:", type=("build", "run"))

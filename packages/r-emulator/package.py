@@ -30,6 +30,7 @@ class REmulator(RPackage):
 	cran = "emulator" 
 
 	version("1.2-21", md5="7c752262d3c1bac2bea21b4030292c44")
+	version("1.2-24", md5="4b5e7598780b3dfa95c757427fbc198e")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))

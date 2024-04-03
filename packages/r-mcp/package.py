@@ -15,7 +15,7 @@ class RMcp(RPackage):
 	homepage = "https://lindeloev.github.io/mcp/"
 	cran = "mcp" 
 
-	version("0.3.3", md5="8f9d53ac0249a20dfaab9c102b64983c")
+	version("0.3.4", md5="4a5dbc703f403586ed6ce2bf75f1dad5")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-future@1.16:", type=("build", "run"))
@@ -25,7 +25,7 @@ class RMcp(RPackage):
 	depends_on("r-loo@2.1:", type=("build", "run"))
 	depends_on("r-bayesplot@1.7:", type=("build", "run"))
 	depends_on("r-tidybayes@3:", type=("build", "run"))
-	depends_on("r-dplyr@1:", type=("build", "run"))
+	depends_on("r-dplyr@1.1.1:", type=("build", "run"))
 	depends_on("r-magrittr@1.5:", type=("build", "run"))
 	depends_on("r-tidyr@1:", type=("build", "run"))
 	depends_on("r-tidyselect@0.2.5:", type=("build", "run"))

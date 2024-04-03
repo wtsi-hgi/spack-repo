@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -23,7 +23,16 @@ class RReportingtools(RPackage):
 
 	bioc = "ReportingTools"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ReportingTools_2.42.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ReportingTools/ReportingTools_2.42.3.tar.gz"]
-
+	version("2.40.0", commit="808af36aa9756be8c907a8669726c90dcd02c73c")
+	version("2.38.0", commit="5c4971eebbaf3577ef20b74bf36c2db4e91561cc")
+	version("2.36.0", commit="34122d4bde5ce43415f63f2e39e3a088c55282cc")
+	version("2.34.0", commit="fb5aef0b6e1c6166d0f025d9e6ca60e54c68dbaf")
+	version("2.30.0", commit="fb9aee416f38cfd308d6d7264ccbcda0467642a7")
+	version("2.24.0", commit="d114c658affba9b682a37b4e2caf4341cf8da6cf")
+	version("2.22.1", commit="dce6af6c6a1cddff077fe61368f2c13e5a0e7bab")
+	version("2.20.0", commit="77e14ae13fdc16654300852dfd94e6cef58009da")
+	version("2.17.3", commit="b2e379cd5b813d8ccca37ec25f0660deec943622")
+	version("2.16.0", commit="b1aa0ea302da7f2993ce8087b1d09c11ddf03663")
 	version("2.42.3", md5="71afa63c0311b91a64a17d476a16eb44")
 
 	depends_on("r-knitr", type=("build", "run"))

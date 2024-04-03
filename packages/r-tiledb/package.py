@@ -24,9 +24,10 @@ Multidimensional Arrays
 	homepage = "https://github.com/TileDB-Inc/TileDB-R"
 	cran = "tiledb" 
 
-	version("0.24.0", md5="514305a1b7933bc52631a767816633c7")
+	version("0.25.0", md5="2dab464d1b4e7d51971ac531a8a45cbf")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-nanotime", type=("build", "run"))
 	depends_on("r-spdl", type=("build", "run"))
+	depends_on("r-nanoarrow", type=("build", "run"))
 	depends_on("r-rcppint64", type=("build", "run"))

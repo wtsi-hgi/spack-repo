@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -24,7 +24,17 @@ class REnsembldb(RPackage):
 
 	bioc = "ensembldb"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ensembldb_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ensembldb/ensembldb_2.26.0.tar.gz"]
-
+	version("2.24.0", commit="45a79a438fde11b0d244b071e6ae2b652100be03")
+	version("2.22.0", commit="4dda178a14e080c643bbd8c4dd6378bfe4e6ee9f")
+	version("2.20.2", commit="ac1fb8389efd88099600af298d6bb3384206f9ed")
+	version("2.20.1", commit="e547d184730cfe5e65f59e4f3512395fb1cdba1a")
+	version("2.18.3", commit="e2fcfc0c7700110df070a171d2d542b37ec098f3")
+	version("2.14.0", commit="c7150519ed4ef38e5eac1043209863dbc7be43a1")
+	version("2.8.1", commit="a4d8d89c143dca86b364d59dff8e46cc81c41ac0")
+	version("2.6.8", commit="c2c4f41b4ecc81d5328ce1d380065dfcb5e0c54c")
+	version("2.4.1", commit="b5b6b94826a2f46a4faecb9dde750ecd3bfaf327")
+	version("2.2.2", commit="d71610e58aed88dbbe6a74e7a8ddfb7451398060")
+	version("2.0.4", commit="514623d71e3cca7a4e547adb579b5a958702ef86")
 	version("2.26.0", md5="0ad7a33ad9592f54e39d647195aa4c91")
 
 	depends_on("r@3.5:", type=("build", "run"))

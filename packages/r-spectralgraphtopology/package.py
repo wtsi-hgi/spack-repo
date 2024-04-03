@@ -35,4 +35,4 @@ class RSpectralgraphtopology(RPackage):
 	depends_on("r-rlist", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
 	depends_on("r-rcppeigen", type=("build", "run"))
-	depends_on("r-cvxr", type=("build", "run"))
+	depends_on("r-cvxr", type=("build", "link", "run"))

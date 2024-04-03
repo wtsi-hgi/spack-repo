@@ -24,7 +24,7 @@ class RMop(RPackage):
 	homepage = "https://github.com/marlonecobos/mop"
 	cran = "mop" 
 
-	version("0.1.1", md5="f5988bfebb460ab45fccedca14d3b916")
+	version("0.1.2", md5="717f5ab92c4e3e21103303520b2d1f2d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dosnow@1:", type=("build", "run"))

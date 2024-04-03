@@ -9,13 +9,14 @@ from spack.package import *
 class RFishrman(RPackage):
 	"""The Fisheries Scientist's Toolbox
 
-	A bundle of analytics tools for fisheries scientists. Data on fishing effort by 'Global Fishing Watch' can be retrieved via the package's API <https://fishrman.ddnsfree.com/gfw>, as well as data on Exclusive Economic Zones by 'Marine Regions'. A 'shiny' R App is included for a 'no-code' solution for retrieval, analysis, and visualization.
+	A bundle of analytics tools for fisheries scientists. A 'shiny' R App is included for a 'no-code' solution for retrieval, analysis, and visualization.
 	"""
 	
 	homepage = "https://github.com/Shyentist/fish-r-man"
 	cran = "fishRman" 
 
 	version("1.2.2", md5="bd9af58ec2d65475ee4549f49108c94a")
+	version("1.2.3", md5="4bb3ee0395e9a3c88b2b5151188b84a1")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-config@0.3.1:", type=("build", "run"))

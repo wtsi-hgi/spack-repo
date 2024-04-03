@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,9 +13,8 @@ class RRandomforest(RPackage):
 	inputs."""
 
 	cran = "randomForest"
-
-	license("GPL-2.0-or-later")
-
+	version("4.6-14", sha256="f4b88920419eb0a89d0bc5744af0416d92d112988702dc726882394128a8754d")
+	version("4.6-12", sha256="6e512f8f88a51c01a918360acba61f1f39432f6e690bc231b7864218558b83c4")
 	version("4.7-1.1", md5="605493f557b7ba08151062e7d1a63495")
 
 	depends_on("r@4.1:", type=("build", "run"))

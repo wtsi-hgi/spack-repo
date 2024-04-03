@@ -16,7 +16,7 @@ Model
 	homepage = "https://darwin-eu-dev.github.io/PatientProfiles/"
 	cran = "PatientProfiles" 
 
-	version("0.6.2", md5="e25f69b981c4c75f145716ad1cc305f1")
+	version("0.7.0", md5="2133b557ac80d1a8e420962baabc275a")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
@@ -28,7 +28,7 @@ Model
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))
-	depends_on("r-gt", type=("build", "run"))
-	depends_on("r-omopgenerics@0.0.2:", type=("build", "run"))
-	depends_on("r-visomopresults", type=("build", "run"))
+	depends_on("r-omopgenerics@0.1.2:", type=("build", "run"))
+	depends_on("r-visomopresults@0.2:", type=("build", "run"))
 	depends_on("r-lifecycle", type=("build", "run"))
+	depends_on("r-purrr", type=("build", "run"))

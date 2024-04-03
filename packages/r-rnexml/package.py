@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,9 @@ class RRnexml(RPackage):
 	'ape' objects."""
 
 	cran = "RNeXML"
-
+	version("2.4.8", sha256="26d429f95afe2e24d79eb7b0d3eeec4068e7d33b715abb8f48f380e0ccbbb850")
+	version("2.4.7", sha256="cb311d6dda33a95521a6df360a2d2f4e6d6bc6b330ac5e19ea721ca665bce6fe")
+	version("2.4.5", sha256="2b667ecb6400e4c0c125ca73a98cde81330cde3a85b764261f77159e702754f3")
 	version("2.4.11", md5="7901174d10570464473f7445ec8fee78")
 
 	depends_on("r@3:", type=("build", "run"))

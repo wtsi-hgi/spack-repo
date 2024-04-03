@@ -19,6 +19,7 @@ class RAzlogr(RPackage):
 	cran = "azlogr" 
 
 	version("0.0.5", md5="ac37e5c0bc60dc4bf8059442ef94f50c")
+	version("0.0.6", md5="d1ccd3201b044cfd88dc8d072dac7cef")
 
 	depends_on("r-catools", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))

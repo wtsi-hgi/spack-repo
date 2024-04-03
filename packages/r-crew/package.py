@@ -14,7 +14,7 @@ class RCrew(RPackage):
   deploy long-running tasks to distributed systems,
   ranging from traditional clusters to cloud services.
   The 'NNG'-powered 'mirai' R package by Gao (2023)
-  <https://CRAN.R-project.org/package=mirai> is a sleek
+  <doi:10.5281/zenodo.7912722> is a sleek
   and sophisticated scheduler that
   efficiently processes these intense workloads.
   The 'crew' package extends 'mirai' with a unifying
@@ -31,6 +31,7 @@ class RCrew(RPackage):
 	cran = "crew" 
 
 	version("0.9.0", md5="219f501c0f07c5f172f9cff94b23cd41")
+	version("0.9.1", md5="c1a4c790e68478ce65efc84c34d68f28")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-cli@3.1:", type=("build", "run"))

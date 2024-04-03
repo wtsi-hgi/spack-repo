@@ -17,7 +17,7 @@ class RYardstick(RPackage):
 	homepage = "https://github.com/tidymodels/yardstick"
 	cran = "yardstick" 
 
-	version("1.3.0", md5="1cf92ed73945340367924fb3a8c7bdeb")
+	version("1.3.1", md5="5e35a7fabd9e7ec8effd168556c67753")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

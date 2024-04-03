@@ -13,14 +13,14 @@ class RNeurodecoder(RPackage):
     uses a pattern classifiers to predict experimental conditions based 
     on neural activity. 'NeuroDecodeR' is a system of objects that 
     makes it easy to run neural decoding analyses. For more information
-    on neural decoding see Meyers & Kreiman (2004)
+    on neural decoding see Meyers & Kreiman (2011)
     <doi:10.7551/mitpress/8404.003.0024>.
 	"""
 	
-	homepage = "https://github.com/emeyers/NeuroDecodeR"
+	homepage = "https://emeyers.github.io/NeuroDecodeR/"
 	cran = "NeuroDecodeR" 
 
-	version("0.1.0", md5="236e89c70be01d7c8313697f769379f8")
+	version("0.2.0", md5="287ae270256f519f02b3f3ceba5c45ae")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

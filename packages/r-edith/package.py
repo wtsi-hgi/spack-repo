@@ -16,8 +16,9 @@ class REdith(RPackage):
   (e.g., obtained via quantitative polymerase chain reaction) or metabarcoding 
   (read count) data. Parameter estimation can be performed via Bayesian techniques 
   (via the 'BayesianTools' package) or optimization algorithms. An interface to the 
-  'DHARMa' package for posterior predictive checks is provided. See Carraro et al. 
-  (2018) <doi:10.1073/pnas.1813843115> and Carraro et al. (2020) 
+  'DHARMa' package for posterior predictive checks is provided. See Carraro and 
+  Altermatt (2024) <doi:10.1111/2041-210X.14317> for a package introduction; 
+  Carraro et al. (2018) <doi:10.1073/pnas.1813843115> and Carraro et al. (2020) 
   <doi:10.1038/s41467-020-17337-8> for methodological details. 
 	"""
 	
@@ -25,6 +26,7 @@ class REdith(RPackage):
 	cran = "eDITH" 
 
 	version("0.2.0", md5="4e90c2ef95b3f6c85a6ca5cf3cf9dacb")
+	version("0.3.0", md5="27a67923390d3a99f36e148245c611c4")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

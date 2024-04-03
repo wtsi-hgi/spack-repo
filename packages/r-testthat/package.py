@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,9 +14,16 @@ class RTestthat(RPackage):
 	is easy to learn and use, and integrates with your existing 'workflow'."""
 
 	cran = "testthat"
-
-	license("MIT")
-
+	version("3.1.7", sha256="1ad86b1739481c6c46359a6634ecc706bf513f34b26d7a62cbc719bbd4658eab")
+	version("3.1.5", sha256="a8f56b9426206ddfc30b550c82ff2f042ebe1c2f5bfd4184aec8facac8f5b7fc")
+	version("3.1.4", sha256="a47eec031b4e186a8bd331031371b2347063a283050eca2adbfaa37d7a6c9c09")
+	version("3.1.2", sha256="ed41a6168ca22869b6aebe1e5865bb2f5338a7c35ca0a13cf69ac2f5c6aeb659")
+	version("3.1.1", sha256="e6755fb4f5388751af952edfd555533bb55d6252606f6fcef07bdb6268c8cf80")
+	version("3.0.1", sha256="297fc45c719684f11ddf9dc9088f5528fdf9b44625165543384eaf579f243ad0")
+	version("2.3.2", sha256="1a268d8df07f7cd8d282d03bb96ac2d96a24a95c9aa52f4cca5138a09dd8e06c")
+	version("2.2.1", sha256="67ee0512bb312695c81fd74338bb8ce9e2e58763681ddbcdfdf35f52dfdb0b78")
+	version("2.1.0", sha256="cf5fa7108111b32b86e70819352f86b57ab4e835221bb1e83642d52a1fdbcdd4")
+	version("1.0.2", sha256="0ef7df0ace1fddf821d329f9d9a5d42296085350ae0d94af62c45bd203c8415e")
 	version("3.2.1", md5="cb9ddcf70c6b030743c9685e0f104f67")
 
 	depends_on("r@3.6:", type=("build", "run"))

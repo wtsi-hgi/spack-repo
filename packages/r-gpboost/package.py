@@ -16,7 +16,7 @@ Models
 	homepage = "https://github.com/fabsig/GPBoost"
 	cran = "gpboost" 
 
-	version("1.3.0", md5="68c4991bd8b6ce54c9bed7e3c6ed63a8")
+	version("1.3.1", md5="9f4793c815f74a158681e5a5c92f89b4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-r6@2:", type=("build", "run"))

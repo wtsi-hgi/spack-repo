@@ -20,5 +20,6 @@ class RAdbcdrivermanager(RPackage):
 	cran = "adbcdrivermanager" 
 
 	version("0.10.0", md5="99cb5cdc57201b905c08d8c30590df70")
+	version("0.11.0", md5="dd000875d9a46549f07a4cf090ba5b37")
 
 	depends_on("r-nanoarrow@0.3:", type=("build", "run"))

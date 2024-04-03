@@ -19,7 +19,7 @@ class RSmcryptor(RPackage):
 	homepage = "https://github.com/zhuobie/smcryptoR"
 	cran = "smcryptoR" 
 
-	version("0.1.1", md5="96403224d84981dbb69b79d4fa5fe8f8")
+	version("0.1.2", md5="27c899d2a0ded07df1f4e4ab6093e7ba")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("rust", type=("build", "link", "run"))

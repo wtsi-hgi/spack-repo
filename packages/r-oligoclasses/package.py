@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,16 @@ class ROligoclasses(RPackage):
 
 	bioc = "oligoClasses"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oligoClasses_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oligoClasses/oligoClasses_1.64.0.tar.gz"]
-
+	version("1.62.0", commit="2de6126d2a98f78d6dc80ffeef8bc76782a6dbdf")
+	version("1.60.0", commit="cf9d76c2551ad061d8b882ff1dc0a5cadc64a8a7")
+	version("1.58.0", commit="5544e937913bb0df54c66d738d279c38efeb30cd")
+	version("1.56.0", commit="6e6c7b4ba54095d1d3c44c081839f57af9261cbf")
+	version("1.52.0", commit="7995efbd2d26b8fa950830d62db92bdaf5cbeeea")
+	version("1.46.0", commit="325684f66fc92f778098f24bcfbef0ce3da9717c")
+	version("1.44.0", commit="d3e1134cdbea5f95b83215dc66e5f7b6a1cd0638")
+	version("1.42.0", commit="ef125700d487b470281a9c1e985390633c4dd2bd")
+	version("1.40.0", commit="32f40617e62d05c457baaebc7e27585b852848ed")
+	version("1.38.0", commit="fe2bb7f02c7ed3cbd338254c27ceba6ff829a962")
 	version("1.64.0", md5="379f1364d7159e2456c9310556e990e6")
 
 	depends_on("r@2.14:", type=("build", "run"))

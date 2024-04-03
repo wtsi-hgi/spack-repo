@@ -19,7 +19,7 @@ class ROccumb(RPackage):
 	homepage = "https://fukayak.github.io/occumb/"
 	cran = "occumb" 
 
-	version("1.0.3", md5="3ace98b2ccec1963971b9c1ba8396054")
+	version("1.1.0", md5="e1a6d004007e828e6ac8a348fbdda013")
 
 	depends_on("r-jagsui", type=("build", "run"))
 	depends_on("r@2.10:", type=("build", "run"))

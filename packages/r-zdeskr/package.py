@@ -20,7 +20,7 @@ class RZdeskr(RPackage):
 	homepage = "https://github.com/chrisumphlett/zdeskR"
 	cran = "zdeskR" 
 
-	version("0.4.0", md5="ffd866f97d4b62a27fe3d9b3c112cb86")
+	version("0.4.1", md5="05d6c9f154d42a6567d138a3a83ea1ba")
 
 	depends_on("r-dplyr@1:", type=("build", "run"))
 	depends_on("r-magrittr@1.5:", type=("build", "run"))

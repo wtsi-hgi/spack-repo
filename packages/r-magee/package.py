@@ -25,3 +25,5 @@ class RMagee(RPackage):
 	depends_on("r-compquadform", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
+	depends_on("bzip2", type=("build", "link", "run"))
+	depends_on("zlib", type=("build", "link", "run"))

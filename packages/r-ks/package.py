@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,9 +15,13 @@ class RKs(RPackage):
 	Chacon & Duong (2018) <doi:10.1201/9780429485572>."""
 
 	cran = "ks"
-
-	license("GPL-2.0-only OR GPL-3.0-only")
-
+	version("1.14.0", sha256="2db9c56b7b0217b324bbf1e0f66bb94d3f7067a75c5823cbc7d369d63bbb4391")
+	version("1.13.5", sha256="d1c4d06d704f301628455787ba929add1e774debc343d0952a768abea6cc7815")
+	version("1.13.3", sha256="defb80df665d987f1751899f7a9809cb5a770f3c74266d7fbc7b9493616dce73")
+	version("1.11.7", sha256="6a6d9c2366e85a4c6af39b798f3798d20a42615ddfcebcedf6cf56087cdfd2b8")
+	version("1.11.5", sha256="4f65565376391b8a6dcce76168ef628fd4859dba8496910cbdd54e4f88e8d51b")
+	version("1.11.4", sha256="0beffaf8694819fba8c93af07a8782674a15fe00a04ad1d94d31238d0a41b134")
+	version("1.11.2", sha256="9dfd485096e1e67abc7dfcb7b76a83de110dd15bcfeffe5c899605b3a5592961")
 	version("1.14.2", md5="895115f86f71e1c4694a8279e5445083")
 
 	depends_on("r@2.10:", type=("build", "run"))

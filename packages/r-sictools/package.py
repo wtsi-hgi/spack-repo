@@ -26,3 +26,5 @@ class RSictools(RPackage):
 	depends_on("r-plyr@1.8.3:", type=("build", "run"))
 	depends_on("r-genomicranges@1.22.4:", type=("build", "run"))
 	depends_on("r-iranges@2.4.8:", type=("build", "run"))
+	depends_on("ncurses", type=("build", "link", "run"))
+	depends_on("zlib", type=("build", "link", "run"))

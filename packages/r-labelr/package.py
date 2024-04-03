@@ -15,6 +15,6 @@ class RLabelr(RPackage):
 	homepage = "https://github.com/rhartmano/labelr"
 	cran = "labelr" 
 
-	version("0.1.3", md5="108717f2a98995b459df2ad6262f9813")
+	version("0.1.4", md5="f259929a460785e7f4c5166d6452ecd8")
 
 	depends_on("r@4:", type=("build", "run"))

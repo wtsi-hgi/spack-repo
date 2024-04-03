@@ -12,7 +12,7 @@ class RPcutils(RPackage):
 	
     Offers a range of utilities and functions for everyday programming tasks. 
     1.Data Manipulation. Such as grouping and merging, column splitting, and character expansion.
-    2.File Handling. Read and convert files in popular formats, including "blast", "diamond", "fasta", "gff", "gtf", and various image formats like "jpg", "png", "pdf", and "svg". 
+    2.File Handling. Read and convert files in popular formats. 
     3.Plotting Assistance. Helpful utilities for generating color palettes, validating color formats, and adding transparency. 
     4.Statistical Analysis. Includes functions for pairwise comparisons and multiple testing corrections, 
     enabling perform statistical analyses with ease.
@@ -24,7 +24,7 @@ class RPcutils(RPackage):
 	homepage = "https://github.com/Asa12138/pcutils"
 	cran = "pcutils" 
 
-	version("0.2.1", md5="8c9bbebaf2e0e7ee5eb05208f1dc43cd")
+	version("0.2.5", md5="167e161a7c47e2ebc2f6acc2c529ee72")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
@@ -32,4 +32,6 @@ class RPcutils(RPackage):
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))
-	depends_on("r-agricolae", type=("build", "run"))
+	depends_on("r-tidyr", type=("build", "run"))
+	depends_on("r-tibble", type=("build", "run"))
+	depends_on("r-rcolorbrewer", type=("build", "run"))

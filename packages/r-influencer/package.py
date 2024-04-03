@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -19,7 +19,8 @@ class RInfluencer(RPackage):
 	configured."""
 
 	cran = "influenceR"
-
+	version("0.1.0.1", sha256="63c46f1175fced33fb1b78d4d56e37fbee09b408945b0106dac36e3344cd4766")
+	version("0.1.0", sha256="4fc9324179bd8896875fc0e879a8a96b9ef2a6cf42a296c3b7b4d9098519e98a")
 	version("0.1.5", md5="7223e03ae2bc757205e4090cec9a8aee")
 
 	depends_on("r@3.2:", type=("build", "run"))

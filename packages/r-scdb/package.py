@@ -19,20 +19,19 @@ class RScdb(RPackage):
 	homepage = "https://github.com/ssi-dk/SCDB"
 	cran = "SCDB" 
 
-	version("0.3", md5="c4fab556fd03dee5f361c4ce9831640d")
+	version("0.4.0", md5="fd75d3b24b27f3ea5bce5cb5c59b0d22")
 
 	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-dbi", type=("build", "run"))
 	depends_on("r-dbplyr@2.4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
-	depends_on("r-lubridate", type=("build", "run"))
+	depends_on("r-lifecycle", type=("build", "run"))
 	depends_on("r-openssl", type=("build", "run"))
+	depends_on("r-parallelly", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))
-	depends_on("r-rsqlite", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-tidyselect", type=("build", "run"))
-	depends_on("r-tidyverse", type=("build", "run"))

@@ -16,10 +16,10 @@ class RSpatialml(RPackage):
              and Kalogirou (2022) <https://www.mdpi.com/2220-9964/11/9/471>).
 	"""
 	
-	homepage = "http://lctools.science/"
+	homepage = "https://stamatisgeoai.eu/"
 	cran = "SpatialML" 
 
-	version("0.1.6", md5="3f90fbfbd4ce4fb39685477c38f5ef0a")
+	version("0.1.7", md5="f894a29104b6dc2ea7c3c0acb1002de9")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ranger@0.15.1:", type=("build", "run"))

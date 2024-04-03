@@ -27,7 +27,7 @@ class RSurrogate(RPackage):
 	homepage = "https://github.com/florianstijven/Surrogate-development"
 	cran = "Surrogate" 
 
-	version("3.2.4", md5="c6f66b5da8cd809f4f47946c0be30638")
+	version("3.2.5", md5="692b25267312ba84f0f2201ec38154de")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
@@ -48,3 +48,7 @@ class RSurrogate(RPackage):
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-mbess", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
+	depends_on("r-dplyr", type=("build", "run"))
+	depends_on("r-numderiv", type=("build", "run"))
+	depends_on("r-optimx", type=("build", "run"))
+	depends_on("r-tibble", type=("build", "run"))

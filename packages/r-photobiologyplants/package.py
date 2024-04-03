@@ -19,8 +19,8 @@ class RPhotobiologyplants(RPackage):
 	homepage = "https://docs.r4photobiology.info/photobiologyPlants/"
 	cran = "photobiologyPlants" 
 
-	version("0.4.3", md5="99d38e90390fe5e1e924beae59ab08fa")
+	version("0.5.0", md5="45a3a7d0cc26a5a69dfbb9e153872d03")
 
 	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-photobiology@0.10.15:", type=("build", "run"))
-	depends_on("r-photobiologywavebands@0.5.1:", type=("build", "run"))
+	depends_on("r-photobiology@0.11.2:", type=("build", "run"))
+	depends_on("r-photobiologywavebands@0.5.2:", type=("build", "run"))

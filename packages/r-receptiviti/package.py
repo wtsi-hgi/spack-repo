@@ -16,7 +16,7 @@ class RReceptiviti(RPackage):
 	homepage = "https://receptiviti.github.io/receptiviti-r/"
 	cran = "receptiviti" 
 
-	version("0.1.7", md5="5fcf6cb6028c29d0e7a7e230cf8e3148")
+	version("0.1.8", md5="6c49d88624fad77179bf1c3a3095d285")
 
 	depends_on("r-curl", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

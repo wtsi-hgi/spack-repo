@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -23,7 +23,12 @@ class RGwmodel(RPackage):
 	basic and robust (outlier resistant) forms."""
 
 	cran = "GWmodel"
-
+	version("2.2-9", sha256="3696e0f24994df4f393dbcb2e74bc0808704b80e1203247be3911fc3bcdb5f18")
+	version("2.2-8", sha256="5b1890dbf75502e89b651efd9158be77b3cfa764a5717f9889f438ed2b0a4da2")
+	version("2.2-2", sha256="4e2b221b85fbc828ffc4f057c137ded849afcaac2a75c27d2d6d0a6db17f8a06")
+	version("2.1-3", sha256="3e1a36fddf8e64f61d548067bb043216f8d12069d814a4cbf07a9cae0b310af6")
+	version("2.1-1", sha256="91241b4e26d423a54c7c6784ef5159759058a5dafdff18a1ea8451faf979d1f3")
+	version("2.0-9", sha256="b479af2c19d4aec30f1883d00193d52e342c609c1badcb51cc0344e4404cffa7")
 	version("2.3-2", md5="2ec7200589386b6109fd6474696bf0f4")
 
 	depends_on("r@3:", type=("build", "run"))

@@ -14,9 +14,9 @@ class RHermes(RPackage):
 	
 	homepage = "https://github.com/insightsengineering/hermes/"
 	bioc = "hermes" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hermes_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hermes/hermes_1.6.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hermes_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hermes/hermes_1.6.1.tar.gz"]
 
-	version("1.6.0", md5="af1e1dd4bab597cfb7b0bd12a1e9e7dd")
+	version("1.6.1", md5="9e758f81455d5fc7a8b57c3a65b4de5b")
 
 	depends_on("r-ggfortify", type=("build", "run"))
 	depends_on("r@4.1:", type=("build", "run"))

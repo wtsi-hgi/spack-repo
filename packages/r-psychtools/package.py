@@ -16,8 +16,9 @@ Research
 	homepage = "https://personality-project.org/r/psych/"
 	cran = "psychTools" 
 
-	version("2.4.2", md5="cb52959da7be5657700e4532d30f5755")
+	version("2.4.3", md5="2787cfe0c035647c0d9c5a825f98ae0f")
 
 	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-foreign", type=("build", "run"))
 	depends_on("r-psych", type=("build", "run"))
+	depends_on("r-foreign", type=("build", "run"))
+	depends_on("r-rtf", type=("build", "run"))

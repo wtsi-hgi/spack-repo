@@ -30,6 +30,7 @@ class RCoxmos(RPackage):
 	cran = "Coxmos" 
 
 	version("1.0.0", md5="4443f512b6feceef453600729ea711f9")
+	version("1.0.2", md5="ea49c17293e462fcbebfbe59109e4199")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-caret", type=("build", "run"))

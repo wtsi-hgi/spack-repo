@@ -20,10 +20,11 @@ class REffectsize(RPackage):
 	cran = "effectsize" 
 
 	version("0.8.6", md5="24f114041cd5ca301e46706a8fd53274")
+	version("0.8.7", md5="abe197ef35f15d4ff62803f49a2c4f2c")
 
 	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-bayestestr@0.13.1:", type=("build", "run"))
-	depends_on("r-insight@0.19.5:", type=("build", "run"))
-	depends_on("r-parameters@0.21.1:", type=("build", "run"))
-	depends_on("r-performance@0.10.5:", type=("build", "run"))
-	depends_on("r-datawizard@0.8:", type=("build", "run"))
+	depends_on("r-bayestestr@0.13.2:", type=("build", "run"))
+	depends_on("r-insight@0.19.9:", type=("build", "run"))
+	depends_on("r-parameters@0.21.6:", type=("build", "run"))
+	depends_on("r-performance@0.11:", type=("build", "run"))
+	depends_on("r-datawizard@0.9.1:", type=("build", "run"))

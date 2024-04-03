@@ -14,9 +14,10 @@ class RGgscidca(RPackage):
 	
 	cran = "ggscidca" 
 
-	version("0.1.9", md5="fd55cc8936916dcb825f9dd3eeb955b5")
+	version("0.2.0", md5="85a6db8f467788d8688e851c50530b81")
 
 	depends_on("r@2.10:", type=("build", "run"))
+	depends_on("r-cmprsk", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-randomforest", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))

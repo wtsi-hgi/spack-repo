@@ -29,6 +29,6 @@ class RRetrodesign(RPackage):
 	homepage = "https://github.com/andytimm/retrodesign"
 	cran = "retrodesign" 
 
-	version("0.2.1", md5="a109b4ff26b6657cc979629e13e0f552")
+	version("0.2.2", md5="fd641ca4898e5acacff47a0fa14c0787")
 
 	depends_on("r@3.1:", type=("build", "run"))

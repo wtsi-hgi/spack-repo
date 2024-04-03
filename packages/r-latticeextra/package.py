@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,8 @@ class RLatticeextra(RPackage):
 	additional utilities such as panel and axis annotation functions."""
 
 	cran = "latticeExtra"
-
+	version("0.6-29", sha256="6cadc31d56f73d926e2e8d72e43ae17ac03607a4d1a374719999a4a231e3df11")
+	version("0.6-28", sha256="780695323dfadac108fb27000011c734e2927b1e0f069f247d65d27994c67ec2")
 	version("0.6-30", md5="81d8786cc01105f5a4043036b5165ab0")
 
 	depends_on("r@3.6:", type=("build", "run"))

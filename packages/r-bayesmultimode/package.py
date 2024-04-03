@@ -9,14 +9,15 @@ from spack.package import *
 class RBayesmultimode(RPackage):
 	"""Bayesian Mode Inference
 
-	A Bayesian approach for mode inference which works in two steps. First, a mixture distribution is
-      fitted on the data using a sparse finite mixture (SFM) Markov chain Monte Carlo
-      (MCMC) algorithm following Malsiner-Walli, Frühwirth-Schnatter and Grün (2016)
-      <doi:10.1007/s11222-014-9500-2>). The number of mixture components does not have
-      to be known; the size of the mixture is estimated endogenously through the SFM
-      approach. Second, the modes of the estimated mixture at each MCMC draw are retrieved
-      using algorithms specifically tailored for mode detection. These estimates are then
-      used to construct posterior probabilities for the number of modes, their locations
+	A two-step Bayesian approach for mode inference following 
+      Cross, Hoogerheide, Labonne and van Dijk (2024) <doi:10.1016/j.econlet.2024.111579>).
+      First, a mixture distribution is fitted on the data using a sparse finite
+      mixture (SFM) Markov chain Monte Carlo (MCMC) algorithm. The number of
+      mixture components does not have to be known; the size of the mixture is
+      estimated endogenously through the SFM approach. Second, the modes of the
+      estimated mixture at each MCMC draw are retrieved using algorithms
+      specifically tailored for mode detection. These estimates are then used to
+      construct posterior probabilities for the number of modes, their locations
       and uncertainties, providing a powerful tool for mode inference.
 	"""
 	
@@ -24,6 +25,7 @@ class RBayesmultimode(RPackage):
 	cran = "BayesMultiMode" 
 
 	version("0.7.0", md5="b8a06aceb665540d0b5929cb5c63917d")
+	version("0.7.1", md5="bc0a97f61da26767f3e2b3c7d15cf1bc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

@@ -28,6 +28,8 @@ class RIsotree(RPackage):
 	homepage = "https://github.com/david-cortes/isotree"
 	cran = "isotree" 
 
-	version("0.5.24-3", md5="187c07e96a3e58931b39747e3aa18112")
+	version("0.6.1-1", md5="9a80442d77131bcad08414f8abe46a68")
 
+	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("r-jsonlite@1.7.3:", type=("build", "run"))

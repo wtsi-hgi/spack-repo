@@ -16,7 +16,7 @@ class RGgblanket(RPackage):
 	homepage = "https://davidhodge931.github.io/ggblanket/"
 	cran = "ggblanket" 
 
-	version("6.0.0", md5="bb442ed7b90d395e52dd6e8f39629114")
+	version("7.0.0", md5="d4cfa24df286215bf152b209cb8da885")
 
 	depends_on("r-dplyr@1.0.4:", type=("build", "run"))
 	depends_on("r-farver", type=("build", "run"))

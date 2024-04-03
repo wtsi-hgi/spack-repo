@@ -17,7 +17,7 @@ class RTfrmt(RPackage):
 	homepage = "https://GSK-Biostatistics.github.io/tfrmt/"
 	cran = "tfrmt" 
 
-	version("0.1.0", md5="91efc763e03e57826c6853d9b3cd1ba6")
+	version("0.1.1", md5="7b1f810504a596fcb13ef1cd3583c911")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

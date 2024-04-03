@@ -18,6 +18,7 @@ class RDuckplyr(RPackage):
 	cran = "duckplyr" 
 
 	version("0.3.1", md5="0e847941bfed8dfab72d8a5497656860")
+	version("0.3.2", md5="afd2f7d2a63a762f711207c3232a9a69")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

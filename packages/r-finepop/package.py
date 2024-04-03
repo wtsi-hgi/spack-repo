@@ -15,5 +15,6 @@ class RFinepop(RPackage):
 	cran = "FinePop" 
 
 	version("1.5.1", md5="073699df24fd4854c22c7eef88727f1d")
+	version("1.5.2", md5="c484b2f6b24bc3fd75380446090d3739")
 
-	depends_on("r@3:", type=("build", "run"))
+	depends_on("r@4:", type=("build", "run"))

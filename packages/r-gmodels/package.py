@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -10,9 +10,9 @@ class RGmodels(RPackage):
 	"""Various R programming tools for model fitting."""
 
 	cran = "gmodels"
-
-	license("GPL-2.0-only")
-
+	version("2.18.1.1", sha256="da7d48021b7cd2fd8a7cd8d0bb9658b12342a32698a13877b25ca94aa03f1e95")
+	version("2.18.1", sha256="626140a34eb8c53dd0a06511a76c71bc61c48777fa76fcc5e6934c9c276a1369")
+	version("2.16.2", sha256="ab018894bdb376c5bd6bc4fbc4fe6e86590f4106795a586ef196fbb6699ec47d")
 	version("2.19.1", md5="15ae7d7e6190ec8b7cac1ce4446d172b")
 
 	depends_on("r-mass", type=("build", "run"))

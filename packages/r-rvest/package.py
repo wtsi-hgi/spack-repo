@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,9 +13,12 @@ class RRvest(RPackage):
 	then manipulate, HTML and XML."""
 
 	cran = "rvest"
-
-	license("MIT")
-
+	version("1.0.3", sha256="a465ef7391afaa3c26eebe8c61db02314ac04c4d8de5aa53f090716763d21c1e")
+	version("1.0.2", sha256="89bb477e0944c80298a52ccf650db8f6377fd7ed3c1bc7034d000f695fdf05a4")
+	version("0.3.6", sha256="6a2ee3a25d2d738031edbc1b5e2410f2a4538dfbb9705af145f9039504b902fa")
+	version("0.3.4", sha256="413e171b9e89b7dc4e8b41165027cf19eb97cd73e149c252237bbdf0d0a4254a")
+	version("0.3.3", sha256="b10a87fa2d733f7c0fc567242ef0ab10a1a77d58d51796996cc0fd81381a556f")
+	version("0.3.2", sha256="0d6e8837fb1df79b1c83e7b48d8f1e6245f34a10c4bb6952e7bec7867e4abb12")
 	version("1.0.4", md5="bd391a4e91e6f5867761c99526ffc251")
 
 	depends_on("r@3.6:", type=("build", "run"))

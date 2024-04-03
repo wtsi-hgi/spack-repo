@@ -22,6 +22,7 @@ class RDiffeqr(RPackage):
 	cran = "diffeqr" 
 
 	version("2.0.0", md5="c811e49721444a253582e616d7187e62")
+	version("2.0.1", md5="56eb543f263f21d056df2ecae2803bf3")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-juliacall", type=("build", "run"))

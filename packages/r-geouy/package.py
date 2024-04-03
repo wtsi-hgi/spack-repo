@@ -40,4 +40,4 @@ class RGeouy(RPackage):
 	depends_on("unrar", type=("build", "link", "run"))
 	depends_on("gdal@2.0.1:", type=("build", "link", "run"))
 	depends_on("geos@3.8.0:", type=("build", "link", "run"))
-	depends_on("proj@6.2.1:", type=("build", "link", "run"))
+	depends_on("proj@6.2.1", type=("build", "link", "run"))

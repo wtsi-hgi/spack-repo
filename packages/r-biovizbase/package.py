@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,16 @@ class RBiovizbase(RPackage):
 	bioc = "biovizBase"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biovizBase_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biovizBase/biovizBase_1.50.0.tar.gz"]
 
+	version("1.48.0", commit="534db77074710dae57ade81844c769fd35a2fa9c")
+	version("1.46.0", commit="a47060cfb68e3f3b4876114af932823aed5d2d57")
+	version("1.44.0", commit="a8f05c56c27b278524033cb896a6c97f3ee0081c")
+	version("1.42.0", commit="f1627b2b567471837daca6e763acfc3e13937461")
+	version("1.38.0", commit="d0f3362e0ad0e90b4b1d3e47b13ed57907d03403")
+	version("1.32.0", commit="de044bf236cdcd71214ae7b77689a8f0ab4f5cc8")
+	version("1.30.1", commit="b6776d0470e2920f71127652f185f68ca1fd2c82")
+	version("1.28.2", commit="43d09060028665a237b04bfeb9e2575782b08063")
+	version("1.26.0", commit="640742f48384f01d117b70dc5c64737e97ae9b4b")
+	version("1.24.0", commit="ae9cd2ff665b74a8f45ed9c1d17fc0a778b4af6c")
 	version("1.50.0", md5="8430b2a7913fdcfe27b9bf52ba9aff7e")
 
 	depends_on("r@3.5:", type=("build", "run"))

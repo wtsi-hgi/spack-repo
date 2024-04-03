@@ -15,7 +15,7 @@ class RMicroeco(RPackage):
 	homepage = "https://github.com/ChiLiubio/microeco"
 	cran = "microeco" 
 
-	version("1.5.0", md5="6b25ff4e2733890057b460f820b411fe")
+	version("1.6.0", md5="b9ce1fcb2ae6e9926aaf5a6f3e324c36")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))
@@ -27,7 +27,7 @@ class RMicroeco(RPackage):
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))
-	depends_on("r-ggplot2@3.4:", type=("build", "run"))
+	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

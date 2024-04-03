@@ -14,9 +14,9 @@ class RGenomicplot(RPackage):
 	
 	homepage = "https://github.com/shuye2009/GenomicPlot"
 	bioc = "GenomicPlot" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicPlot_1.0.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicPlot/GenomicPlot_1.0.5.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicPlot_1.0.6.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicPlot/GenomicPlot_1.0.6.tar.gz"]
 
-	version("1.0.5", md5="443da7ce64909735f0ce396591423767")
+	version("1.0.6", md5="ba18ffa9cfe60cfae0491eccf78f26b0")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-genomicranges@1.46.1:", type=("build", "run"))

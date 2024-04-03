@@ -25,5 +25,6 @@ class RTesseract(RPackage):
 	depends_on("r-curl", type=("build", "run"))
 	depends_on("r-rappdirs", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))
-	depends_on("tessdata", type=("build", "link", "run"))
 	depends_on("tesseract", type=("build", "link", "run"))
+	depends_on("tesseract", type=("build", "link", "run"))
+	depends_on("tessdata", type=("build", "link", "run"))

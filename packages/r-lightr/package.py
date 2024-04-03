@@ -20,9 +20,9 @@ class RLightr(RPackage):
 	homepage = "https://docs.ropensci.org/lightr/"
 	cran = "lightr" 
 
-	version("1.7.0", md5="6d736827d1550d694d694b7fc21628d8")
+	version("1.7.1", md5="c09f96b2939429c7ad761dffae22e850")
 
-	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-future-apply", type=("build", "run"))
 	depends_on("r-progressr", type=("build", "run"))
 	depends_on("r-xml2@1:", type=("build", "run"))

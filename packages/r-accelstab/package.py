@@ -23,7 +23,7 @@ class RAccelstab(RPackage):
 	homepage = "https://github.com/AccelStab/AccelStab"
 	cran = "AccelStab" 
 
-	version("2.0.0", md5="3929d120fc8c6f5d539a3be686566f50")
+	version("2.0.1", md5="8ca8071b2463ef4fc89f0820311d0b03")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -16,13 +16,13 @@ Fitted Using 'mgcv'
 	homepage = "https://gavinsimpson.github.io/gratia/"
 	cran = "gratia" 
 
-	version("0.8.2", md5="7aaf3cfd14c163bebf9edcedcff28ee6")
+	version("0.9.0", md5="f40a93cc83628501570404660bf7ffd1")
 
 	depends_on("r@4.1:", type=("build", "run"))
-	depends_on("r-mgcv@1.8.41:", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
+	depends_on("r-mgcv@1.9.0:", type=("build", "run"))
+	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r-tibble@3:", type=("build", "run"))
-	depends_on("r-dplyr@1.0.10:", type=("build", "run"))
+	depends_on("r-dplyr@1.1:", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-patchwork", type=("build", "run"))
@@ -30,8 +30,10 @@ Fitted Using 'mgcv'
 	depends_on("r-mvnfast", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))
-	depends_on("r-tidyselect", type=("build", "run"))
+	depends_on("r-tidyselect@1.2:", type=("build", "run"))
 	depends_on("r-lifecycle", type=("build", "run"))
 	depends_on("r-pillar", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-nlme", type=("build", "run"))
+	depends_on("r-ggokabeito", type=("build", "run"))
+	depends_on("r-withr", type=("build", "run"))

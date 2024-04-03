@@ -15,7 +15,7 @@ class RVars(RPackage):
 	homepage = "https://www.pfaffikus.de"
 	cran = "vars" 
 
-	version("1.6-0", md5="90863e2458c69f74b8a8bef5c9f75905")
+	version("1.6-1", md5="70ca3ea1e66aad07f561358439f0e471")
 
 	depends_on("r@2:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

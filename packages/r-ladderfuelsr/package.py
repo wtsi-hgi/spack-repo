@@ -16,7 +16,7 @@ Airborne Laser Scanning Data
 	homepage = "https://github.com/olgaviedma/LadderFuelsR"
 	cran = "LadderFuelsR" 
 
-	version("0.0.3", md5="58bacb820f4961d638bab42ca40ef8a3")
+	version("0.0.4", md5="44dbe4f869f49a1dfbad0bc20f676f87")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-gdata", type=("build", "run"))

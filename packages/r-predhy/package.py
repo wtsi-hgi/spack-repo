@@ -14,7 +14,7 @@ class RPredhy(RPackage):
 	
 	cran = "predhy" 
 
-	version("2.0.1", md5="ac3064f6269efdfc3518b85b3e237630")
+	version("2.1.0", md5="fdf95c741affa58ee91d07ec7b53b18d")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-bglr", type=("build", "run"))

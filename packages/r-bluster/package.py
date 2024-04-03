@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,6 +17,9 @@ class RBluster(RPackage):
 	bioc = "bluster"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bluster_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bluster/bluster_1.12.0.tar.gz"]
 
+	version("1.10.0", commit="32340420e67a184e39238e46143c00151057924c")
+	version("1.8.0", commit="156115c8960c0b66b2c588d9fd8bbdfe56e5f0be")
+	version("1.6.0", commit="ff86c7d8d36233e838d4f00e6a4e173e7bf16816")
 	version("1.12.0", md5="baf91e0700b1f49eb80522be9eb8204d")
 
 	depends_on("r-cluster", type=("build", "run"))

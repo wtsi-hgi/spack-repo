@@ -16,7 +16,7 @@ class RYorkr(RPackage):
 	homepage = "https://github.com/tvganesh/yorkr/"
 	cran = "yorkr" 
 
-	version("0.0.41", md5="31fa531eb424975adf7edc22d31bf159")
+	version("0.0.42", md5="4ea795eaa94e0d924a2738e6e500745d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

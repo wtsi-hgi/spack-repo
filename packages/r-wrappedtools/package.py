@@ -20,9 +20,10 @@ class RWrappedtools(RPackage):
     teaching, but may be of use to others as well.
 	"""
 	
+	homepage = "https://github.com/abusjahn/wrappedtools"
 	cran = "wrappedtools" 
 
-	version("0.9.3", md5="7867034efb101938d46a41efdc178a4f")
+	version("0.9.5", md5="f92021cc5c846afaa2851db96ba79b2d")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-boot", type=("build", "run"))
@@ -41,3 +42,5 @@ class RWrappedtools(RPackage):
 	depends_on("r-lifecycle", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))
 	depends_on("r-rlist", type=("build", "run"))
+	depends_on("r-desctools", type=("build", "run"))
+	depends_on("r-flextable", type=("build", "run"))

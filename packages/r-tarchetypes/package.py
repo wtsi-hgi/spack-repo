@@ -23,14 +23,14 @@ class RTarchetypes(RPackage):
 	homepage = "https://docs.ropensci.org/tarchetypes/"
 	cran = "tarchetypes" 
 
-	version("0.7.12", md5="39bb3bb543aae37e6ced6fdad833825e")
+	version("0.8.0", md5="91c7a481e98dd3b14b780fd45324e232")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-digest@0.6.25:", type=("build", "run"))
 	depends_on("r-dplyr@1:", type=("build", "run"))
 	depends_on("r-fs@1.4.2:", type=("build", "run"))
 	depends_on("r-rlang@0.4.7:", type=("build", "run"))
-	depends_on("r-targets@1.4:", type=("build", "run"))
+	depends_on("r-targets@1.6:", type=("build", "run"))
 	depends_on("r-tibble@3.0.1:", type=("build", "run"))
 	depends_on("r-tidyselect@1.1:", type=("build", "run"))
 	depends_on("r-vctrs@0.3.4:", type=("build", "run"))

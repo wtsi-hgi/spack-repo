@@ -17,9 +17,10 @@ class RJagshelper(RPackage):
     Referenced materials can be found at <DOI:10.1214/ss/1177011136>.
 	"""
 	
+	homepage = "https://github.com/mbtyers/jagshelper"
 	cran = "jagshelper" 
 
-	version("0.2.1", md5="d26333cff2bac778672cc38e42373253")
+	version("0.2.2", md5="7ae631d683e55723c7cd68d471eecb36")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-jagsui", type=("build", "run"))

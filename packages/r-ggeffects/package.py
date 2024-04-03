@@ -22,7 +22,7 @@ Model Outputs
 	homepage = "https://strengejacke.github.io/ggeffects/"
 	cran = "ggeffects" 
 
-	version("1.5.0", md5="2037ca3169434c93b385f904528676dd")
+	version("1.5.1", md5="11b151fac55dd9c2562ae646f5f95938")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-insight@0.19.8:", type=("build", "run"))

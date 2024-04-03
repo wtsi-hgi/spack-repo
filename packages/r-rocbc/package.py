@@ -15,10 +15,12 @@ Characteristic Curves
 	
 	cran = "rocbc" 
 
-	version("2.0.0", md5="acd716b414a613ce9bbc39fb1c4947df")
+	version("3.0.0", md5="c88e5d48ee5006b6f8aac7978bf6601b")
 
 	depends_on("r-pracma", type=("build", "run"))
 	depends_on("r-clinfun", type=("build", "run"))
 	depends_on("r-splancs", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))
 	depends_on("r-formattable", type=("build", "run"))
+	depends_on("r-mrmcaov", type=("build", "run"))
+	depends_on("r-proc", type=("build", "run"))

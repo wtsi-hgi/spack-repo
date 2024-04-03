@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,7 +16,7 @@ class RDirExpiry(RPackage):
 
 	bioc = "dir.expiry"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dir.expiry_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dir.expiry/dir.expiry_1.10.0.tar.gz"]
-
+	version("1.8.0", commit="271f76cb2e8565817400e85fcc2c595923af4af6")
 	version("1.10.0", md5="ddefb728416ca4283805e19a898e9245")
 
 	depends_on("r-filelock", type=("build", "run"))

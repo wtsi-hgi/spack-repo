@@ -14,9 +14,10 @@ class REpicompare(RPackage):
 	
 	homepage = "https://github.com/neurogenomics/EpiCompare"
 	bioc = "EpiCompare" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EpiCompare_1.6.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EpiCompare/EpiCompare_1.6.5.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EpiCompare_1.6.7.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EpiCompare/EpiCompare_1.6.7.tar.gz"]
 
 	version("1.6.5", md5="27be81e1f3112ca55bab8460e2f191b7")
+	version("1.6.7", md5="fb532a96da67b0b190c76b6036ed3968")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))
@@ -27,7 +28,7 @@ class REpicompare(RPackage):
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))
 	depends_on("r-genomeinfodb", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
+	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r-htmltools", type=("build", "run"))
 	depends_on("r-plotly", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))

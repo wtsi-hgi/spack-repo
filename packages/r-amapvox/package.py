@@ -21,6 +21,7 @@ class RAmapvox(RPackage):
 	cran = "AMAPVox" 
 
 	version("1.0.1", md5="af63a54b02ce3e86cdd1aceaec4a510d")
+	version("2.2.1", md5="ad26b2bcf7317c58f73656ca1e8ce924")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))

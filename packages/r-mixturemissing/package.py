@@ -20,7 +20,7 @@ Missing Values at Random
 	
 	cran = "MixtureMissing" 
 
-	version("3.0.1", md5="9168ea0e9888a0e20fadbaadd6ea0a8b")
+	version("3.0.2", md5="a84d89e5d9dfba9ec66c2be4afb2918c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mvtnorm@1.1.2:", type=("build", "run"))
@@ -29,3 +29,5 @@ Missing Values at Random
 	depends_on("r-mass@7.3:", type=("build", "run"))
 	depends_on("r-numderiv@8.1.1:", type=("build", "run"))
 	depends_on("r-bessel@0.6:", type=("build", "run"))
+	depends_on("r-mclust@5:", type=("build", "run"))
+	depends_on("r-mice@3.10:", type=("build", "run"))

@@ -21,7 +21,7 @@ Studies
 	
 	cran = "PDXpower" 
 
-	version("1.0.0", md5="1d0eec593a1799b5fe650f08272807a9")
+	version("1.0.1", md5="a824c2fe4941aa4c7751b22f69aa6da1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

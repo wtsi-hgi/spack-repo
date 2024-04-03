@@ -18,7 +18,7 @@ class RSbtools(RPackage):
 	homepage = "https://github.com/DOI-USGS/sbtools"
 	cran = "sbtools" 
 
-	version("1.3.1", md5="f7bd3fbd5e1992796ea8e9bd9f23f9e2")
+	version("1.3.2", md5="ccd3c8c5a8b2aaad2fd70a73834f744e")
 
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))

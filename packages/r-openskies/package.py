@@ -16,7 +16,7 @@ class ROpenskies(RPackage):
 	
 	cran = "openSkies" 
 
-	version("1.1.6", md5="7c532cf734909f8740a99d1b4554001d")
+	version("1.2.1", md5="5b345bd6d846e6c235bf5ce56c0a29c2")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-ssh", type=("build", "run"))
@@ -27,3 +27,5 @@ class ROpenskies(RPackage):
 	depends_on("r-r6", type=("build", "run"))
 	depends_on("r-dbscan", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))
+	depends_on("r-dbi", type=("build", "run"))
+	depends_on("r-rpresto", type=("build", "run"))

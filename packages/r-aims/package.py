@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,6 +18,16 @@ class RAims(RPackage):
 	bioc = "AIMS"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AIMS_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AIMS/AIMS_1.34.0.tar.gz"]
 
+	version("1.32.0", commit="019415a6362e805465d43c157606e1774aed9e51")
+	version("1.30.0", commit="2ab61159c5aa0902cc33fc1502f7853b66912cce")
+	version("1.28.0", commit="84608df638b5694c08158ed77ad2c8a64c4e594b")
+	version("1.26.0", commit="5dcf60eb4cdcf563ea848482c9c488f465c27bbd")
+	version("1.22.0", commit="34a38978b24377abb864eff7683bb36344ff171d")
+	version("1.16.0", commit="86cb8c998ade3003cd34a5405b218ae07d97bf84")
+	version("1.14.1", commit="4125c4217a7e4f00169b5ba65dcc3778fdd33c6f")
+	version("1.12.0", commit="d7eaa723d19a6aca37df244fd0b3d5426ed0a626")
+	version("1.10.0", commit="972945980b39168502a02ac3aa396f9b99fb3d71")
+	version("1.8.0", commit="86b866c20e191047492c51b43e3f73082c3f8357")
 	version("1.34.0", md5="23ef11145babcac9430b2c94db4dfae3")
 
 	depends_on("r@2.10:", type=("build", "run"))

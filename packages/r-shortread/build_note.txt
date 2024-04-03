@@ -1,7 +1,0 @@
-copy spack package.py and add zlib dependency , then build locally
-
-
-https://github.com/spack/spack/blob/v0.20.1/var/spack/repos/builtin/packages/r-shortread/package.py
-
-
-

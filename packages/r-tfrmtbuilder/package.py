@@ -16,7 +16,7 @@ class RTfrmtbuilder(RPackage):
 	homepage = "https://gsk-biostatistics.github.io/tfrmtbuilder/"
 	cran = "tfrmtbuilder" 
 
-	version("0.0.5", md5="61eca692aa9b9dc9ff2750e49d764ada")
+	version("0.0.6", md5="05e780feb61daa9c4060da66b9650916")
 
 	depends_on("r-tfrmt@0.1:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))
@@ -30,7 +30,7 @@ class RTfrmtbuilder(RPackage):
 	depends_on("r-gt", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-sortable", type=("build", "run"))
-	depends_on("r-bslib", type=("build", "run"))
+	depends_on("r-bslib@0.6:", type=("build", "run"))
 	depends_on("r-shinywidgets", type=("build", "run"))
 	depends_on("r-rio", type=("build", "run"))
 	depends_on("r-shinycssloaders", type=("build", "run"))

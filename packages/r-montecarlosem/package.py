@@ -17,7 +17,7 @@ class RMontecarlosem(RPackage):
 	
 	cran = "MonteCarloSEM" 
 
-	version("0.0.6", md5="5a3870aaef835fd9230bc6eb3a6a8504")
+	version("0.0.7", md5="64f6da74104b52d3d482016bab7a78a7")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-lavaan", type=("build", "run"))

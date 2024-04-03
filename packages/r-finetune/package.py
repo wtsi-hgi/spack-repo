@@ -22,9 +22,10 @@ class RFinetune(RPackage):
 	cran = "finetune" 
 
 	version("1.1.0", md5="d8c9cda86250756d4a210bfd9f50f4b6")
+	version("1.2.0", md5="37a8940f4a6167a90b56913f42334f9b")
 
 	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-tune@1.1.1:", type=("build", "run"))
+	depends_on("r-tune@1.2:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-dials@0.1:", type=("build", "run"))
 	depends_on("r-dplyr@1.1.1:", type=("build", "run"))

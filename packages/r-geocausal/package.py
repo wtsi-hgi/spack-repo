@@ -19,7 +19,7 @@ class RGeocausal(RPackage):
 	homepage = "https://github.com/mmukaigawara/geocausal"
 	cran = "geocausal" 
 
-	version("0.2.0", md5="2e9b2142b73fd1bf98b8973d9ddf486a")
+	version("0.3.0", md5="b98d2ec36ed9b1d854221d72489309c2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
@@ -31,12 +31,11 @@ class RGeocausal(RPackage):
 	depends_on("r-mclust", type=("build", "run"))
 	depends_on("r-progressr", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
-	depends_on("r-raster", type=("build", "run"))
 	depends_on("r-sf", type=("build", "run"))
-	depends_on("r-sp", type=("build", "run"))
 	depends_on("r-spatstat-explore", type=("build", "run"))
 	depends_on("r-spatstat-geom", type=("build", "run"))
 	depends_on("r-spatstat-model", type=("build", "run"))
 	depends_on("r-terra", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-tidyselect", type=("build", "run"))
+	depends_on("r-tidyterra", type=("build", "run"))

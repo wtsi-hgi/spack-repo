@@ -17,7 +17,7 @@ class RInfer(RPackage):
 	homepage = "https://github.com/tidymodels/infer"
 	cran = "infer" 
 
-	version("1.0.6", md5="f3ddce69d77824dda96ed13eca65d053")
+	version("1.0.7", md5="140720cc073022ef997fff807443ff99")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))
@@ -26,6 +26,7 @@ class RInfer(RPackage):
 	depends_on("r-generics", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-glue@1.3:", type=("build", "run"))
+	depends_on("r-lifecycle", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-patchwork", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))

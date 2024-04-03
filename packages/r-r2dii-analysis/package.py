@@ -23,7 +23,7 @@ class RR2diiAnalysis(RPackage):
 	homepage = "https://github.com/RMI-PACTA/r2dii.analysis"
 	cran = "r2dii.analysis" 
 
-	version("0.3.0", md5="362e1af7d40002f3e6ac4297963f9f68")
+	version("0.4.0", md5="0e7c472a6290c4b910f6d22dcb59e4a9")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-dplyr@0.8.5:", type=("build", "run"))

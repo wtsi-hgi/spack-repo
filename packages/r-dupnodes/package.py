@@ -10,14 +10,15 @@ class RDupnodes(RPackage):
 	"""Creates an 'igraph' Object that Duplicates Nodes with Self-Loops
 
 	Creates a new graph from an existing one, duplicating nodes
-    with self-loops. This can be used for a computation of betweenness 
+    with self-loops. This can be used for a computation of betweenness
     centrality that does not drop this essential information. Implements
-    Merelo & Molinari (2021) <doi:10.1007/s42001-023-00245-4>.
+    Merelo & Molinari (2024) <doi:10.1007/s42001-023-00245-4>.
 	"""
 	
 	cran = "dupNodes" 
 
 	version("0.1.0", md5="aa33311f1f3f0b40a0ee982e04ac4512")
+	version("0.2.0", md5="59310417d64e6bbaa9fd65291d680158")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rdpack", type=("build", "run"))

@@ -14,7 +14,7 @@ class RViralx(RPackage):
 	
 	cran = "viralx" 
 
-	version("1.2.0", md5="52203fe4727f96183198ec178cc99fc7")
+	version("1.3.0", md5="e9d0df23906a0e72c7bd06e20bc5e033")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-dalex", type=("build", "run"))

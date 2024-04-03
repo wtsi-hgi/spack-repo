@@ -13,8 +13,8 @@ class RSkellam(RPackage):
     (pmf), cdf, quantiles and regression.
 	"""
 	
-	homepage = "http://r-forge.r-project.org/projects/healthqueues/"
+	homepage = "https//r-forge.r-project.org/projects/healthqueues/"
 	cran = "skellam" 
 
-	version("0.2.0", md5="e345942d5ccbfb718f08a4affe78d93a")
+	version("0.2.3", md5="325675bc249419f55e119f4b431b49b7")
 

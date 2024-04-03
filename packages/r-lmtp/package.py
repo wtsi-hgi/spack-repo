@@ -21,7 +21,7 @@ Modified Treatment Policies
 	homepage = "https://github.com/nt-williams/lmtp"
 	cran = "lmtp" 
 
-	version("1.3.2", md5="0b24177021bf073104a6f5fefb1d3fec")
+	version("1.3.3", md5="aebcba7a5141932dd8ea2e126b16aa4f")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-nnls", type=("build", "run"))

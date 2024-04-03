@@ -14,9 +14,9 @@ class RSmd(RPackage):
     <http://www.lerner.ccf.org/qhs/software/lib/stddiff.pdf>. 
 	"""
 	
-	homepage = "https://docs.novisci.com/smd/"
+	homepage = "https://bsaul.github.io/smd/"
 	cran = "smd" 
 
-	version("0.6.6", md5="3a64f6141d4f233d3486654993903224")
+	version("0.6.7", md5="87697e4883b1ec319128925821d39665")
 
 	depends_on("r-mass@7.3.50:", type=("build", "run"))

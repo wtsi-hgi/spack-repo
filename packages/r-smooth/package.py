@@ -22,7 +22,7 @@ class RSmooth(RPackage):
 	homepage = "https://github.com/config-i1/smooth"
 	cran = "smooth" 
 
-	version("4.0.0", md5="e36257ce5dc46ac33b8bdc29698e65a5")
+	version("4.0.1", md5="2aa14488a3e3fa214e044ade2aba9093")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-greybox@1.0.8:", type=("build", "run"))

@@ -22,9 +22,9 @@ class RParameters(RPackage):
 	homepage = "https://easystats.github.io/parameters/"
 	cran = "parameters" 
 
-	version("0.21.5", md5="b008bc6ecb1a56c6cbc9cc316e6cec75")
+	version("0.21.6", md5="00964d116b406c02fe6d6c3c5d223782")
 
 	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-bayestestr@0.13.1:", type=("build", "run"))
+	depends_on("r-bayestestr@0.13.2:", type=("build", "run"))
 	depends_on("r-datawizard@0.9.1:", type=("build", "run"))
 	depends_on("r-insight@0.19.8:", type=("build", "run"))

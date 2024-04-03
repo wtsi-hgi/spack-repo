@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -21,7 +21,7 @@ class RHydrotsm(RPackage):
 	for academic purposes."""
 
 	cran = "hydroTSM"
-
+	version("0.6-0", sha256="5be759845ce05ca579ed2657c85d497b78c3060d737e84fcd457153045db4ad7")
 	version("0.7-0", md5="69b491ef36351a9d18dad3b7cbc36843")
 
 	depends_on("r@3.5:", type=("build", "run"))

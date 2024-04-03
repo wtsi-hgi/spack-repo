@@ -9,8 +9,8 @@ from spack.package import *
 class RCelltrackr(RPackage):
 	"""Motion Trajectory Analysis
 
-	Provides methodology to analyze cells that move in a two- or three-dimensional
-	space. Available measures include displacement, confinement ratio, autocorrelation,
+	Methods for analyzing (cell) motion in two or three dimensions.
+	Available measures include displacement, confinement ratio, autocorrelation,
 	straightness, turning angle, and fractal dimension. Measures can be applied to entire tracks,
 	steps, or subtracks with varying length. While the methodology has been developed for
 	cell trajectory analysis, it is applicable to anything that moves including animals,
@@ -30,6 +30,7 @@ class RCelltrackr(RPackage):
 	cran = "celltrackR" 
 
 	version("1.1.0", md5="6109e8f8a7702ba65a8d8fd0dd1cb7d4")
+	version("1.2.0", md5="a250cf77c93bf3a632ba1a09451833b4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ellipse", type=("build", "run"))

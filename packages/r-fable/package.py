@@ -21,6 +21,7 @@ class RFable(RPackage):
 	cran = "fable" 
 
 	version("0.3.3", md5="c067b6d44dfad5d5d28fef96c9b34be7")
+	version("0.3.4", md5="200275cbd7998c1beb037819cb99fe40")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-fabletools@0.3:", type=("build", "run"))

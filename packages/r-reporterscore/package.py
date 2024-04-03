@@ -21,15 +21,16 @@ Data
 	homepage = "https://github.com/Asa12138/ReporterScore"
 	cran = "ReporterScore" 
 
-	version("0.1.2", md5="3bebfa19d6e47b824624a49ca925424a")
+	version("0.1.4", md5="7ec56154c39476cec6d7f25431d349ad")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-ggplot2@3.2:", type=("build", "run"))
-	depends_on("r-pcutils", type=("build", "run"))
+	depends_on("r-pcutils@0.2.5:", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))
 	depends_on("r-ggnewscale", type=("build", "run"))
+	depends_on("r-ggrepel", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-foreach", type=("build", "run"))

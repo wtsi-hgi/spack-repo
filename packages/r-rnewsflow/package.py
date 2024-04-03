@@ -15,9 +15,9 @@ class RRnewsflow(RPackage):
 	
 	cran = "RNewsflow" 
 
-	version("1.2.7", md5="b46c63fca4b434718b14056d00e11a59")
+	version("1.2.8", md5="c3fbda8c6c9cf6dd0a8febf5c298273e")
 
-	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-igraph@1.3.4:", type=("build", "run"))
 	depends_on("r-matrix@1.5:", type=("build", "run"))
 	depends_on("r-stringi@1.7.8:", type=("build", "run"))

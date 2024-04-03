@@ -15,7 +15,7 @@ Data
 	
 	cran = "LipidomicsR" 
 
-	version("0.1.0", md5="1f95c9bd9bd4854cfa22032017551eb0")
+	version("0.1.6", md5="da0fe7b9fe2ed3527112ea5aec83d5dc")
 
 	depends_on("r-tidyverse", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))

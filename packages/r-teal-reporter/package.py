@@ -16,7 +16,7 @@ class RTealReporter(RPackage):
 	homepage = "https://github.com/insightsengineering/teal.reporter"
 	cran = "teal.reporter" 
 
-	version("0.3.0", md5="ee3430af291fb383d12093ccbbe4506e")
+	version("0.3.1", md5="6b88309ac1bf98f83e83262fa8045239")
 
 	depends_on("r-bslib", type=("build", "run"))
 	depends_on("r-checkmate@2.1:", type=("build", "run"))
@@ -27,6 +27,7 @@ class RTealReporter(RPackage):
 	depends_on("r-r6", type=("build", "run"))
 	depends_on("r-rmarkdown@2.19:", type=("build", "run"))
 	depends_on("r-shiny@1.6:", type=("build", "run"))
+	depends_on("r-shinybusy", type=("build", "run"))
 	depends_on("r-shinywidgets@0.5.1:", type=("build", "run"))
 	depends_on("r-yaml@1.1:", type=("build", "run"))
 	depends_on("r-zip@1.1:", type=("build", "run"))

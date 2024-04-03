@@ -9,11 +9,16 @@ from spack.package import *
 class RNaivebayes(RPackage):
 	"""High Performance Implementation of the Naive Bayes Algorithm
 
-	In this implementation of the Naive Bayes classifier following class conditional distributions are available: Bernoulli, Categorical, Gaussian, Poisson and non-parametric representation of the class conditional density estimated via Kernel Density Estimation. Implemented classifiers handle missing data and can take advantage of sparse data.
+	In this implementation of the Naive Bayes classifier
+    following class conditional distributions are available: 'Bernoulli',
+    'Categorical', 'Gaussian', 'Poisson', 'Multinomial' and non-parametric
+    representation of the class conditional density estimated via Kernel
+    Density Estimation. Implemented classifiers handle missing data and
+    can take advantage of sparse data.
 	"""
 	
 	homepage = "https://github.com/majkamichal/naivebayes"
 	cran = "naivebayes" 
 
-	version("0.9.7", md5="7f3467dcef693166e74c96ecd1b85d46")
+	version("1.0.0", md5="2786829c31702b6e7ded8f7cb74452e8")
 

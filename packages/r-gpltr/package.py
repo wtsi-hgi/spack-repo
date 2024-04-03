@@ -21,6 +21,6 @@ class RGpltr(RPackage):
 	
 	cran = "GPLTR" 
 
-	version("1.4", md5="6b26efbb73cf8484d6bb8f3c6c7a60ea")
+	version("1.5", md5="39cca512a2b52196ea83dc47f9a4c7a9")
 
 	depends_on("r-rpart", type=("build", "run"))

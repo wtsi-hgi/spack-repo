@@ -17,11 +17,11 @@ class RFtextra(RPackage):
 	homepage = "https://ftextra.atusy.net"
 	cran = "ftExtra" 
 
-	version("0.6.2", md5="63bd1b28ee9b6230407b1cfecfc2a7a1")
+	version("0.6.3", md5="e81bbed9ce37ea381d18a289dce3fc75")
 
 	depends_on("r-dplyr@1:", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))
-	depends_on("r-flextable@0.8.3:", type=("build", "run"))
+	depends_on("r-flextable@0.9.5:", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-purrr@1:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

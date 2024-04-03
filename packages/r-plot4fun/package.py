@@ -17,10 +17,16 @@ class RPlot4fun(RPackage):
 	
 	cran = "plot4fun" 
 
-	version("0.1.0", md5="c3c66a7db94c9b9ecab74583fc4d7621")
+	version("0.1.1", md5="d1c1317bc356310778d320efdc6f7536")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))
 	depends_on("r-pcutils", type=("build", "run"))
+	depends_on("r-ggforce", type=("build", "run"))
+	depends_on("r-plot3d", type=("build", "run"))
+	depends_on("r-magick", type=("build", "run"))
+	depends_on("r-gifski", type=("build", "run"))
+	depends_on("r-showtext", type=("build", "run"))
+	depends_on("r-sysfonts", type=("build", "run"))

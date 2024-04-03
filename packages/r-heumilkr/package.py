@@ -15,8 +15,11 @@ class RHeumilkr(RPackage):
 	homepage = "https://github.com/lschneiderbauer/heumilkr"
 	cran = "heumilkr" 
 
-	version("0.1.0", md5="3d9cee8d016846fa800fcca242c1dd75")
+	version("0.2.0", md5="f7e02288056794db8990ba51092cf265")
 
+	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rlang@1.1:", type=("build", "run"))
+	depends_on("r-cli@3.6:", type=("build", "run"))
+	depends_on("r-xml2@1.3:", type=("build", "run"))
 	depends_on("r-ggplot2@3.4:", type=("build", "run"))
 	depends_on("r-cpp11", type=("build", "run"))

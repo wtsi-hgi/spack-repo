@@ -15,7 +15,7 @@ class RPricelevels(RPackage):
 	homepage = "https://github.com/sweinand/pricelevels"
 	cran = "pricelevels" 
 
-	version("1.0.2", md5="cc699de8792f038235418da624e5fac2")
+	version("1.1.0", md5="ec977aa4459815561bb15b3e1ae8e5be")
 
 	depends_on("r@4.0.1:", type=("build", "run"))
 	depends_on("r-data-table@1.14:", type=("build", "run"))

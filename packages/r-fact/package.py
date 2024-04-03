@@ -23,6 +23,7 @@ class RFact(RPackage):
 	cran = "FACT" 
 
 	version("0.1.0", md5="8570227015f797de3cc0b5d84ed5f461")
+	version("0.1.1", md5="be4acc5c3f11d5b29346ec90c1f51741")
 
 	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

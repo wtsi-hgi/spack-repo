@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,7 +18,9 @@ class RSpatialpack(RPackage):
 	spatial association between images are also provided."""
 
 	cran = "SpatialPack"
-
+	version("0.3-8196", sha256="9027e1656db97b721a12f5eda46532c6a99b4a079299b8d12fb57d445b237b4d")
+	version("0.3-8", sha256="a0e54b5dee3cd30a634e2d30380fe163942b672073fd909be888803332ed5151")
+	version("0.3", sha256="4c80fc1c77bc97fc678e6e201ecf7f0f89dcf3417b3b497a28a3639e9b30bd8a")
 	version("0.4", md5="ce8cc05d5d3146b1b15d31740847aaf4")
 
 	depends_on("r@3.5:", type=("build", "run"))

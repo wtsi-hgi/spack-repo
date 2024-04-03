@@ -17,7 +17,7 @@ class RSubtypedrug(RPackage):
 	
 	cran = "SubtypeDrug" 
 
-	version("0.1.7", md5="fded9da9e20fbaf4ac6c61a5e785cd9c")
+	version("0.1.8", md5="b55cbd8fac617545f5879d6ea161f992")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

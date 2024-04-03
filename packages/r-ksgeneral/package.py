@@ -16,7 +16,7 @@ Distribution
 	homepage = "https://github.com/raymondtsr/KSgeneral"
 	cran = "KSgeneral" 
 
-	version("1.1.2", md5="df9966c908fdb020a758216433d627ec")
+	version("1.1.3", md5="6c3d8ada7704c06061e6d375ca278058")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -16,6 +16,7 @@ class REstimatr(RPackage):
 	cran = "estimatr" 
 
 	version("1.0.2", md5="0dadaa803a54e5c38c52eb478633e89f")
+	version("1.0.4", md5="264f2083ef881bd2a4ca7a5c5ac62420")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-formula", type=("build", "run"))

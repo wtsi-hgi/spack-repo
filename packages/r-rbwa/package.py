@@ -19,3 +19,4 @@ class RRbwa(RPackage):
 	version("1.6.0", md5="036e0acc237e1249e5509df62d6c9968")
 
 	depends_on("r@4.1:", type=("build", "run"))
+	depends_on("zlib", type=("build", "link", "run"))

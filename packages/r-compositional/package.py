@@ -11,10 +11,10 @@ class RCompositional(RPackage):
 
 	Regression, classification, contour plots, hypothesis testing and fitting of distributions for compositional data are some of the functions included. We further include functions for percentages (or proportions).
              The standard textbook for such data is John Aitchison's (1986) "The statistical analysis of compositional data". Relevant papers include:
-			       a) Tsagris M.T., Preston S. and Wood A.T.A. (2011). "A data-based power transformation for compositional data". Fourth International International Workshop on Compositional Data Analysis. 
-			       b) Tsagris M. (2014). "The k-NN algorithm for compositional data: a revised approach with and without zero values present". Journal of Data Science, 12(3): 519--534. 
-			       c) Tsagris M. (2015). "A novel, divergence based, regression for compositional data". Proceedings of the 28th Panhellenic Statistics Conference, 15-18 April 2015, Athens, Greece, 430--444. 
-			       d) Tsagris M. (2015). "Regression analysis with compositional data containing zero values". Chilean Journal of Statistics, 6(2): 47--57. 
+			       a) Tsagris M.T., Preston S. and Wood A.T.A. (2011). "A data-based power transformation for compositional data". Fourth International International Workshop on Compositional Data Analysis. <doi:10.48550/arXiv.1106.1451>
+			       b) Tsagris M. (2014). "The k-NN algorithm for compositional data: a revised approach with and without zero values present". Journal of Data Science, 12(3): 519--534. <doi:10.6339/JDS.201407_12(3).0008>.
+			       c) Tsagris M. (2015). "A novel, divergence based, regression for compositional data". Proceedings of the 28th Panhellenic Statistics Conference, 15-18 April 2015, Athens, Greece, 430--444. <doi:10.48550/arXiv.1511.07600>.
+			       d) Tsagris M. (2015). "Regression analysis with compositional data containing zero values". Chilean Journal of Statistics, 6(2): 47--57. <https://soche.cl/chjs/volumes/06/02/Tsagris(2015).pdf>.
 			       e) Tsagris M., Preston S. and Wood A.T.A. (2016). "Improved supervised classification for compositional data using the alpha-transformation". Journal of Classification, 33(2): 243--261. <doi:10.1007/s00357-016-9207-5>. 
 			       f) Tsagris M., Preston S. and Wood A.T.A. (2017). "Nonparametric hypothesis testing for equality of means on the simplex". Journal of Statistical Computation and Simulation, 87(2): 406--422. <doi:10.1080/00949655.2016.1216554>. 
 			       g) Tsagris M. and Stewart C. (2018). "A Dirichlet regression model for compositional data with zeros". Lobachevskii Journal of Mathematics, 39(3): 398--412. <doi:10.1134/S1995080218030198>. 
@@ -24,14 +24,17 @@ class RCompositional(RPackage):
 		         k) Alenazi A.A. (2022). "f-divergence regression models for compositional data". Pakistan Journal of Statistics and Operation Research, 18(4): 867--882. <doi:10.18187/pjsor.v18i4.3969>.
 		         l) Tsagris M. and Stewart C. (2022). "A Review of Flexible Transformations for Modeling Compositional Data". In Advances and Innovations in Statistics and Data Science, pp. 225--234. <doi:10.1007/978-3-031-08329-7_10>.
 			       m) Tsagris M., Alenazi A. and Stewart C. (2023). "Flexible non-parametric regression models for compositional response data with zeros". Statistics and Computing, 33(106). <doi:10.1007/s11222-023-10277-5>. 
+			       n) Tsagris. M. (2024). "Constrained least squares simplicial-simplicial regression". <arxiv:2403.19835>.  
 	"""
 	
 	cran = "Compositional" 
 
 	version("6.7", md5="3524a2b8f2a065d2ef7104b46ae9af15")
+	version("6.8", md5="230c2a404fc15938d4868ca930a55702")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-codalm", type=("build", "run"))
+	depends_on("r-cluster", type=("build", "run"))
 	depends_on("r-directional", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))
 	depends_on("r-emplik", type=("build", "run"))
@@ -40,6 +43,7 @@ class RCompositional(RPackage):
 	depends_on("r-flexdir", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
+	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-mda", type=("build", "run"))
 	depends_on("r-mixture", type=("build", "run"))
 	depends_on("r-mvhtests", type=("build", "run"))

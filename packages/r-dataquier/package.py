@@ -26,11 +26,12 @@ class RDataquier(RPackage):
 	cran = "dataquieR" 
 
 	version("2.0.1", md5="bc56fd66ea12fea9943c2a4699d1c693")
+	version("2.1.0", md5="6954a5b4c2a31894e014dc75ef26f1a2")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr@1.0.2:", type=("build", "run"))
 	depends_on("r-emmeans", type=("build", "run"))
-	depends_on("r-ggplot2@3.4:", type=("build", "run"))
+	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r-lme4", type=("build", "run"))
 	depends_on("r-lubridate", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
@@ -43,4 +44,8 @@ class RDataquier(RPackage):
 	depends_on("r-robustbase", type=("build", "run"))
 	depends_on("r-qmrparser", type=("build", "run"))
 	depends_on("r-rio", type=("build", "run"))
+	depends_on("r-readr", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))
+	depends_on("r-withr", type=("build", "run"))
+	depends_on("r-lifecycle", type=("build", "run"))
+	depends_on("r-units", type=("build", "run"))

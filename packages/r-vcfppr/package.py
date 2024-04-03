@@ -9,13 +9,13 @@ from spack.package import *
 class RVcfppr(RPackage):
 	"""Rapid Manipulation of the Variant Call Format (VCF)
 
-	The 'vcfpp.h' (<https://github.com/Zilong-Li/vcfpp>) provides an easy-to-use 'C++' 'API' of 'htslib', offering full functionality for manipulating Variant Call Format (VCF) files. The 'vcfppR' package serves as the R bindings of the 'vcfpp.h' library, enabling rapid processing of both compressed and uncompressed VCF/BCF files. Explore a range of powerful features for efficient VCF data manipulation.
+	The 'vcfpp.h' (<https://github.com/Zilong-Li/vcfpp>) provides an easy-to-use 'C++' 'API' of 'htslib', offering full functionality for manipulating Variant Call Format (VCF) files. The 'vcfppR' package serves as the R bindings of the 'vcfpp.h' library, enabling rapid processing of both compressed and uncompressed VCF files. Explore a range of powerful features for efficient VCF data manipulation.
 	"""
 	
 	homepage = "https://github.com/Zilong-Li/vcfppR"
 	cran = "vcfppR" 
 
-	version("0.3.8", md5="9e2ffe5230dbd0982223e238afb927f0")
+	version("0.4.3", md5="1658b30d4cb5b7ced6a33925e617c041")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

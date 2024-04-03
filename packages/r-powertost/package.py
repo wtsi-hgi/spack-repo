@@ -19,8 +19,7 @@ class RPowertost(RPackage):
 	homepage = "https://github.com/Detlew/PowerTOST"
 	cran = "PowerTOST" 
 
-	version("1.5-4", md5="b34b9eccfdc90ea708d0bcfcfdc37937")
+	version("1.5-6", md5="836d429f511147af06d3ff12fd040981")
 
 	depends_on("r-mvtnorm", type=("build", "run"))
 	depends_on("r-cubature@1.3.6:", type=("build", "run"))
-	depends_on("r-teachingdemos", type=("build", "run"))

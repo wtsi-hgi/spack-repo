@@ -19,6 +19,7 @@ class RFhircrackr(RPackage):
 	cran = "fhircrackr" 
 
 	version("2.1.1", md5="e43f64d31363b69aa257b281e32ce4c5")
+	version("2.2.0", md5="e1ef831cfc78fc1a007a595304b4dea5")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))

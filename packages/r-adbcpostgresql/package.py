@@ -20,6 +20,7 @@ class RAdbcpostgresql(RPackage):
 	cran = "adbcpostgresql"
 
 	version("0.10.0", md5="5b5d98bba3d741c41a09b7b4b3051008")
+	version("0.11.0", md5="4dd2c5e07b9a7cd5d3aa14d6fd6e50c6")
 
 	depends_on("r-adbcdrivermanager", type=("build", "run"))
 	depends_on("postgresql+client_only", type=("build", "link", "run"))

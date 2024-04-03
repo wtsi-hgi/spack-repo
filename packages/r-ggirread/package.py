@@ -15,7 +15,7 @@ class RGgirread(RPackage):
 	homepage = "https://github.com/wadpac/GGIRread/"
 	cran = "GGIRread" 
 
-	version("0.3.3", md5="6e982afb89c200a9b5136dee786faa7a")
+	version("1.0.0", md5="c2c8b472de870dba6c99b971d53a6437")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-matlab", type=("build", "run"))

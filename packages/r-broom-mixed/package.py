@@ -22,6 +22,7 @@ class RBroomMixed(RPackage):
 	cran = "broom.mixed" 
 
 	version("0.2.9.4", md5="9209667d92aab58a673fc8decab1a276")
+	version("0.2.9.5", md5="dcabde69bdf16a16c047552e47aa5b91")
 
 	depends_on("r-broom", type=("build", "run"))
 	depends_on("r-coda", type=("build", "run"))

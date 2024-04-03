@@ -13,12 +13,13 @@ and Development Tools
 
 	Implementing various things including functions for LaTeX tables,
     the Kalman filter, QQ-plots with simulation-based confidence intervals, web scraping, development tools, relative risk and odds
-    ratio.
+    rati, GARCH(1,1) Forecasting.
 	"""
 	
 	cran = "miscFuncs" 
 
-	version("1.5-7", md5="69d95c47afaf8db7bfed7446c88bb67c")
+	version("1.5-8", md5="74e2eddb7ea6dfc67e236a27a17cef90")
 
 	depends_on("r-roxygen2", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))
+	depends_on("r-extradistr", type=("build", "run"))

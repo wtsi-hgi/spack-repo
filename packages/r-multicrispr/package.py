@@ -14,15 +14,11 @@ class RMulticrispr(RPackage):
 	
 	homepage = "https://github.com/loosolab/multicrispr"
 	bioc = "multicrispr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/multicrispr_1.12.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/multicrispr/multicrispr_1.12.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/multicrispr_1.12.9.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/multicrispr/multicrispr_1.12.9.tar.gz"]
 
-	version("1.12.3", md5="d0bbc847e39772348376d944c884290a")
+	version("1.12.9", md5="1eb85739f11d9bac705ffb44aa5cc541")
 
 	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-assertive-base", type=("build", "run"))
-	depends_on("r-assertive-files", type=("build", "run"))
-	depends_on("r-assertive-numbers", type=("build", "run"))
-	depends_on("r-assertive-sets", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))

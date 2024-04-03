@@ -16,7 +16,7 @@ class RUnigd(RPackage):
 	homepage = "https://github.com/nx10/unigd"
 	cran = "unigd" 
 
-	version("0.1.0", md5="1674fafbd0e2d6fec077499a6859b1a1")
+	version("0.1.1", md5="37bfbf9974b65c696f687f12a21dbc6e")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-systemfonts", type=("build", "run"))

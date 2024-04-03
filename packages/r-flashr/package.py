@@ -20,6 +20,7 @@ class RFlashr(RPackage):
 	cran = "flashr" 
 
 	version("0.1.1", md5="dfb746e94ada9a3f9aa306c595f4d05f")
+	version("0.1.2", md5="8d17d95a33c2203d06e3f4d48b2045b6")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

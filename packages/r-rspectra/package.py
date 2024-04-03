@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -21,7 +21,8 @@ class RRspectra(RPackage):
 	user."""
 
 	cran = "RSpectra"
-
+	version("0.16-0", sha256="aaf1cfc9ffe3a4c6684247899924e1c18306971dfef4bae1dc596a2fb42a64a9")
+	version("0.15-0", sha256="1ad5698201007044a0420cb10b7c48e94312a8a1d22b9d946d5de1c6743969a9")
 	version("0.16-1", md5="88600fab4abe21fc82e2c5276449f142")
 
 	depends_on("r@3.0.2:", type=("build", "run"))

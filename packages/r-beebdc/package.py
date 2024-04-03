@@ -24,6 +24,7 @@ class RBeebdc(RPackage):
 	cran = "BeeBDC" 
 
 	version("1.0.4", md5="8d3cefd9b26e1aabf4fca1197384d4b4")
+	version("1.1.0", md5="4d54b743626ac05cd00eb315dba0393f")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-circlize", type=("build", "run"))

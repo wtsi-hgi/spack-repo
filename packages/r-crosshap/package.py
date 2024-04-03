@@ -21,6 +21,7 @@ class RCrosshap(RPackage):
 	cran = "crosshap" 
 
 	version("1.2.2", md5="00e4e36dd0f70c75d92b79978f7922cb")
+	version("1.4.0", md5="31d988f22150470db4267e1997cd107f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

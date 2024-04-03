@@ -28,6 +28,7 @@ class RBayesmallows(RPackage):
 	cran = "BayesMallows" 
 
 	version("2.1.0", md5="e64c0b55633ff8976c9ae43d1e7e1723")
+	version("2.1.1", md5="3672a54d8381aaa60eba20229d018c7b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

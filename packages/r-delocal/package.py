@@ -14,9 +14,10 @@ class RDelocal(RPackage):
 	
 	homepage = "https://github.com/dasroy/DELocal"
 	bioc = "DELocal" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DELocal_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DELocal/DELocal_1.2.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DELocal_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DELocal/DELocal_1.2.1.tar.gz"]
 
 	version("1.2.0", md5="40f2eac89260ff4692fb02047990d048")
+	version("1.2.1", md5="11c1471d2d939f9a40cfa7d68dd608ca")
 
 	depends_on("r-deseq2", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

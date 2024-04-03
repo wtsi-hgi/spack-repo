@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,7 +18,16 @@ class RDirichletmultinomial(RPackage):
 
 	bioc = "DirichletMultinomial"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DirichletMultinomial_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DirichletMultinomial/DirichletMultinomial_1.44.0.tar.gz"]
-
+	version("1.42.0", commit="c388536bed4bdc57724b704edec04b28acbf48db")
+	version("1.40.0", commit="200176f8c72ff127788c500629b71872bc6b1f83")
+	version("1.38.0", commit="b4de83d354e974fdb7cb3526d029487f24aab670")
+	version("1.36.0", commit="926baff6c75cb498945c5895f25cc143c907a357")
+	version("1.32.0", commit="6949abab2462b2c09f7a0ca5b5cbf0c95a40ad16")
+	version("1.26.0", commit="7daa84948020811bb8a27d2e633fccfdcdd1018f")
+	version("1.24.1", commit="50195d9b1986852da29100e77f6f09df5d6e2a35")
+	version("1.22.0", commit="5864f4298105d12f345f27df77ad13bae4061ca5")
+	version("1.20.0", commit="251529f301da1482551142240aeb6baf8dab2272")
+	version("1.18.0", commit="81ccc8d83b8ef84f5d3e877bc0a04233a0f63c51")
 	version("1.44.0", md5="8527c543b1ada9640d2f434fb516ff4e")
 
 	depends_on("r-s4vectors", type=("build", "run"))

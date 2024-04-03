@@ -20,6 +20,6 @@ class RRveg(RPackage):
 	homepage = "https://plant-ecology-lab-czu.com/rveg/"
 	cran = "Rveg" 
 
-	version("0.1.3", md5="2641602847448e83ac49bc069d9be728")
+	version("0.1.4", md5="3e8ffface8f07eedf84abf535a882c7f")
 
 	depends_on("r-dplyr", type=("build", "run"))

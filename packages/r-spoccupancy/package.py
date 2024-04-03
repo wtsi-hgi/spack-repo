@@ -16,7 +16,7 @@ Models
 	homepage = "https://www.jeffdoser.com/files/spoccupancy-web"
 	cran = "spOccupancy" 
 
-	version("0.7.2", md5="5ca957ebacf7eac6df3ab24afb201380")
+	version("0.7.3", md5="979428aa11ff4e4129a104495f3c5e72")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-coda", type=("build", "run"))
@@ -25,3 +25,4 @@ Models
 	depends_on("r-lme4", type=("build", "run"))
 	depends_on("r-foreach", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))
+	depends_on("r-spabundance", type=("build", "run"))

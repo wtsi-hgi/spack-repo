@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,15 @@ class RIrkernel(RPackage):
 	via the network."""
 
 	cran = "IRkernel"
-
+	version("1.3.1", sha256="3186e3a177c7246d45218af55f8b10836540e68a2d106858a0385f7d741b640c")
+	version("1.3", sha256="5a7fcbfd978dfb3cca6702a68a21c147551995fc400084ae8382ffcbbdae1903")
+	version("1.2", sha256="5fb4dbdb741d05043120a8be0eb73f054b607d9854f314bd79cfec08d219ff91")
+	version(
+		"0.7",
+		git="https://github.com/IRkernel/IRkernel.git",
+		commit="9cdd284e03eb42d03fab18544b81f486852d5fe0",
+		deprecated=True,
+	)
 	version("1.3.2", md5="491232d151d5b61ed29d5fd0c6ef7b8a")
 
 	depends_on("r@3.2:", type=("build", "run"))

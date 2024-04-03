@@ -28,5 +28,6 @@ Inference
 	cran = "bnlearn" 
 
 	version("4.9.2", md5="9bb72beab67578e9190e50b135fd36ca")
+	version("4.9.3", md5="c236e2f684a3795ea860fc132db67eae")
 
 	depends_on("r@4.3:", type=("build", "run"))

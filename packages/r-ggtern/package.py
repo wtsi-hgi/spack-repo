@@ -19,17 +19,18 @@ class RGgtern(RPackage):
 	homepage = "http://www.ggtern.com"
 	cran = "ggtern" 
 
-	version("3.4.2", md5="3b92173f413640500e92a58184b18023")
+	version("3.5.0", md5="4468c59e1ba6ade63440e2ce549e9047")
 
 	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-ggplot2@3.4:", type=("build", "run"))
+	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r-compositions@2.0.2:", type=("build", "run"))
 	depends_on("r-gridextra@2.3:", type=("build", "run"))
 	depends_on("r-gtable@0.1.2:", type=("build", "run"))
 	depends_on("r-latex2exp@0.5:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-plyr@1.8.3:", type=("build", "run"))
-	depends_on("r-scales@0.3:", type=("build", "run"))
+	depends_on("r-scales@1.3:", type=("build", "run"))
 	depends_on("r-proto@1:", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))
 	depends_on("r-hexbin@1.28.2:", type=("build", "run"))
+	depends_on("r-rlang@1.1:", type=("build", "run"))

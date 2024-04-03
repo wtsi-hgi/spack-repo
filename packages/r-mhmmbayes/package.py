@@ -18,7 +18,7 @@ class RMhmmbayes(RPackage):
     <doi:10.1080/00273171.2017.1370364>. Using a multilevel framework, we allow 
     for heterogeneity in the model parameters (transition probability matrix and 
     conditional distribution), while estimating one overall HMM. The model can 
-    be fitted on multivariate data with either a categorical or Normal 
+    be fitted on multivariate data with either a categorical, normal, or Poisson 
     distribution, and include individual level covariates (allowing for e.g., 
     group comparisons on model parameters). Parameters are estimated using 
     Bayesian estimation utilizing the forward-backward recursion within a hybrid 
@@ -26,13 +26,13 @@ class RMhmmbayes(RPackage):
     variables is accommodated assuming MAR. The package also includes various 
     visualization options, a function to simulate data, and a function to obtain 
     the most likely hidden state sequence for each individual using the Viterbi 
-    algorithm.
+    algorithm. 
 	"""
 	
 	homepage = "https://CRAN.R-project.org/package=mHMMbayes"
 	cran = "mHMMbayes" 
 
-	version("1.0.0", md5="957ed1ec07ee6bf380276ba38c7b1d75")
+	version("1.1.0", md5="beaa2f44f8786b7079dfea7e60cf764b")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-mcmcpack", type=("build", "run"))

@@ -20,7 +20,7 @@ class RInext(RPackage):
 	homepage = "http://chao.stat.nthu.edu.tw/wordpress/software_download/"
 	cran = "iNEXT" 
 
-	version("3.0.0", md5="2f15a5543bb602fba9882970a5ea12ee")
+	version("3.0.1", md5="1cc313937b3f3f3eb86c094dea0c54b9")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

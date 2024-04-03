@@ -16,7 +16,7 @@ Analysis Tools
 	homepage = "https://github.com/jpquast/protti"
 	cran = "protti" 
 
-	version("0.7.0", md5="ef1c938931a3e8b70a01b6db73ab8c9f")
+	version("0.8.0", md5="646708881eab4550eb58d1d8a035a644")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

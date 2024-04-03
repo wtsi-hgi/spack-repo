@@ -16,7 +16,7 @@ class RScdha(RPackage):
 	homepage = "https://github.com/duct317/scDHA"
 	cran = "scDHA" 
 
-	version("1.2.1", md5="f38bec730454ac153c58f764d06a59d9")
+	version("1.2.2", md5="91e67cd0fde98677340d5c3673945a20")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-matrixstats", type=("build", "run"))

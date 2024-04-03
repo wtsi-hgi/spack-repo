@@ -19,7 +19,7 @@ class RWebmap(RPackage):
 	homepage = "https://rconnect.usgs.gov/INLPO/webmap-main/"
 	cran = "webmap" 
 
-	version("1.0.7", md5="2d7bd9c678e880bd2e5abd74874ae847")
+	version("1.1.0", md5="af99cee8fc72cb56856cf6f1ba80275c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

@@ -23,7 +23,7 @@ class RPhotobiology(RPackage):
 	homepage = "https://docs.r4photobiology.info/photobiology/"
 	cran = "photobiology" 
 
-	version("0.11.1", md5="c5e5c9390bbc03f73d79d85e9238228f")
+	version("0.11.2", md5="c7179cc7a65868f0d2a498400e2c87ac")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-polynom@1.4.1:", type=("build", "run"))

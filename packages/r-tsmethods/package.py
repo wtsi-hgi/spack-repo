@@ -15,7 +15,7 @@ class RTsmethods(RPackage):
 	homepage = "https://www.nopredict.com/packages/tsmethods"
 	cran = "tsmethods" 
 
-	version("1.0.0", md5="938e44c5ef1684d26fc03fa161a9dfb9")
+	version("1.0.1", md5="dee90c53b413c946b5cd905ac1aaae4c")
 
 	depends_on("r-zoo", type=("build", "run"))
 	depends_on("r-xts", type=("build", "run"))

@@ -17,6 +17,7 @@ class RCrossover(RPackage):
 	cran = "Crossover" 
 
 	version("0.1-21", md5="209931798f536da383885c451f411a34")
+	version("0.1-22", md5="ace5c665375194d1027092bf63f04d06")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
@@ -25,7 +26,7 @@ class RCrossover(RPackage):
 	depends_on("r-xtable", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-rjava@0.8.3:", type=("build", "run"))
-	depends_on("r-commonjavajars@1.0.5:", type=("build", "run"))
+	depends_on("r-commonjavajars@1.1:", type=("build", "run"))
 	depends_on("r-rcpp@0.10.3:", type=("build", "run"))
 	depends_on("r-rcpparmadillo@0.2:", type=("build", "run"))
 	depends_on("r-javagd", type=("build", "run"))

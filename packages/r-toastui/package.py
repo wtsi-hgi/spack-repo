@@ -16,7 +16,7 @@ class RToastui(RPackage):
 	homepage = "https://dreamrs.github.io/toastui/"
 	cran = "toastui" 
 
-	version("0.3.2", md5="37b331f2b713575b831575b5abc8968f")
+	version("0.3.3", md5="ff076c3c90f56a3ff70bb6303dd650e8")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-htmlwidgets", type=("build", "run"))

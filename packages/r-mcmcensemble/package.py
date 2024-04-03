@@ -17,10 +17,10 @@ class RMcmcensemble(RPackage):
     from Goodman and Weare (2010) <doi:10.2140/camcos.2010.5.65>.
 	"""
 	
-	homepage = "https://github.com/Bisaloo/mcmcensemble"
+	homepage = "https://hugogruson.fr/mcmcensemble/"
 	cran = "mcmcensemble" 
 
-	version("3.0.0", md5="184a2eca814a4564c4fa688a098eb477")
+	version("3.1.0", md5="fb3948b1eb4afa1b8bda69aebca7ef3b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-future-apply", type=("build", "run"))

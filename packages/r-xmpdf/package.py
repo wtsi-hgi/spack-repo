@@ -20,13 +20,15 @@ class RXmpdf(RPackage):
 	homepage = "https://trevorldavis.com/R/xmpdf/dev/"
 	cran = "xmpdf" 
 
-	version("0.1.4", md5="34905d3d997b80ee389404b65fdd6947")
+	version("0.2.1", md5="51ec3df11768643c08799a4e7b1a4c41")
 
 	depends_on("r@2.10:", type=("build", "run"))
+	depends_on("r-brio", type=("build", "run"))
 	depends_on("r-datetimeoffset@0.2.1:", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
+	depends_on("r-stringi", type=("build", "run"))
 	depends_on("ghostscript", type=("build", "link", "run"))
 	depends_on("exiv2", type=("build", "link", "run"))

@@ -18,7 +18,7 @@ class RMagmaR(RPackage):
 	
 	cran = "MAGMA.R" 
 
-	version("1.0", md5="3ef87578ea0bc846a53ff8dbad13b80d")
+	version("1.0.1", md5="6889fc60d58ba95dcb6b5747e3c590e6")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-tidyverse@2:", type=("build", "run"))

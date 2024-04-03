@@ -18,6 +18,7 @@ class RAnisna(RPackage):
 	cran = "aniSNA" 
 
 	version("1.1.0", md5="1f9ff5ffb2915e199982964e02e8fc83")
+	version("1.1.1", md5="69d94a8f945c6b55a27de37c50c11eb1")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

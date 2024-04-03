@@ -16,7 +16,7 @@ Shares
 	homepage = "https://hannahcomiskey.github.io/mcmsupply/"
 	cran = "mcmsupply" 
 
-	version("1.0.1", md5="646453703b3d6dab98e72a40a0c30b28")
+	version("1.1.1", md5="5934b13f7d75c18fd3483a82a37f34ea")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-r2jags", type=("build", "run"))

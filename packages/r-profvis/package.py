@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -10,9 +10,7 @@ class RProfvis(RPackage):
 	"""Interactive visualizations for profiling R code."""
 
 	cran = "profvis"
-
-	license("GPL-3.0-only OR custom")
-
+	version("0.3.7", sha256="43974863cb793f81dbea4b94096343c321f7739c9038980405c9b16b04a906b9")
 	version("0.3.8", md5="2c363c19fb6cb898dd3061d9a7035def")
 
 	depends_on("r@3:", type=("build", "run"))

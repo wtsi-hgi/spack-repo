@@ -16,7 +16,7 @@ class RGmcp(RPackage):
 	homepage = "https://github.com/kornl/gMCP"
 	cran = "gMCP" 
 
-	version("0.8-16", md5="ad150929e7932c515fae1c64d56334b5")
+	version("0.8-17", md5="00f9c2c8e9b039a7f16ab35c58efe6a4")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
@@ -24,7 +24,7 @@ class RGmcp(RPackage):
 	depends_on("r-multcomp@1.1:", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
-	depends_on("r-commonjavajars@1.0.5:", type=("build", "run"))
+	depends_on("r-commonjavajars@1.1:", type=("build", "run"))
 	depends_on("r-rjava@0.6.3:", type=("build", "run"))
 	depends_on("r-javagd", type=("build", "run"))
 	depends_on("r-xlsxjars@0.6.1:", type=("build", "run"))

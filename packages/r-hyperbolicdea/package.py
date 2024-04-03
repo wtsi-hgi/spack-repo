@@ -14,7 +14,7 @@ class RHyperbolicdea(RPackage):
 	
 	cran = "hyperbolicDEA" 
 
-	version("0.1.1", md5="3e20b449d67a2fedf4ced39d1674cc7c")
+	version("1.0.0", md5="e6977e3a122898c072ed0571adee8b22")
 
 	depends_on("r-doparallel", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

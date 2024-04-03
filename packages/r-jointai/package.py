@@ -23,7 +23,7 @@ class RJointai(RPackage):
 	homepage = "https://nerler.github.io/JointAI/"
 	cran = "JointAI" 
 
-	version("1.0.5", md5="5ab6b8a056689ebdbb07fc542c6fb878")
+	version("1.0.6", md5="27fd54ed903108b3bd4570c47a43298c")
 
 	depends_on("r-rjags", type=("build", "run"))
 	depends_on("r-mcmcse", type=("build", "run"))

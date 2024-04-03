@@ -13,13 +13,13 @@ Machine Learning
 	Tools for flexible estimation of conditional survival 
               functions using off-the-shelf machine learning tools. Implements both 
               global and local survival stacking. See Wolock CJ, Gilbert PB,
-              Simon N, and Carone M (2022+) <arXiv:2211.03031>. 
+              Simon N, and Carone M (2024) <doi:10.1080/10618600.2024.2304070>. 
 	"""
 	
 	homepage = "https://github.com/cwolock/survML"
 	cran = "survML" 
 
-	version("1.0.0", md5="311c00c7cce6de6aee213180316cbe37")
+	version("1.1.0", md5="c36948212962c61e1ce894adec8a009d")
 
 	depends_on("r-superlearner@2.0.28:", type=("build", "run"))
 	depends_on("r-iso@0.0.18.1:", type=("build", "run"))

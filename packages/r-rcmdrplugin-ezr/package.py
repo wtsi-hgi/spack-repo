@@ -15,7 +15,7 @@ class RRcmdrpluginEzr(RPackage):
 	homepage = "https://www.nature.com/articles/bmt2012244.pdf"
 	cran = "RcmdrPlugin.EZR" 
 
-	version("1.64", md5="1ef9a716012cd0f693a37ae4f7246574")
+	version("1.65", md5="c635167a27ec8c89351661f4bcb24984")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rcmdr@2.8:", type=("build", "run"))

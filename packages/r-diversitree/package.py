@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,9 +18,10 @@ class RDiversitree(RPackage):
 	evolution and constant rate 'speciation' and extinction."""
 
 	cran = "diversitree"
-
-	license("GPL-2.0-or-later")
-
+	version("0.9-16", sha256="4c236970b58e56b922352f3f5d97010c74d8ec5783b375c311fe11abfb99f967")
+	version("0.9-15", sha256="c739ef3d4fcc24fd6855b1d297d31e0f89fbaff1efe8a2d149044458ecd363ea")
+	version("0.9-11", sha256="4caa6a468f93de9f1c8c30e4457f34bb8346e1acdaf74f684005bfa86a950ecb")
+	version("0.9-10", sha256="e7df5910c8508a5c2c2d6d3deea53dd3f947bb762196901094c32a7033cb043e")
 	version("0.10-0", md5="706c67f616f789b0a235b4cc9e5821d9")
 
 	depends_on("r@2.10:", type=("build", "run"))

@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,7 +18,7 @@ class RHydrogof(RPackage):
 	welcomed."""
 
 	cran = "hydroGOF"
-
+	version("0.4-0", sha256="6a109740e36549a9369b5960b869e5e0a296261df7b6faba6cb3bd338d59883b")
 	version("0.5-4", md5="5abb111f6ab352678e15672ed09ec601")
 
 	depends_on("r@2.10:", type=("build", "run"))

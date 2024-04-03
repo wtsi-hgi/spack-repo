@@ -15,10 +15,15 @@ class RCdltools(RPackage):
     internet connection, but data sets can be cached for later off-line use.
 	"""
 	
-	homepage = "https://www.github.com/jlisic/cdlTools"
+	homepage = "https://github.com/jlisic/cdlTools"
 	cran = "cdlTools" 
 
 	version("0.15", md5="2075006087e4d353a036275e3ff7c2bd")
+	version("1.13", md5="04a58a86b816857a56181b5e90df9a7e")
 
+	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-raster", type=("build", "run"))
+	depends_on("r-terra", type=("build", "run"))
+	depends_on("r-stringr", type=("build", "run"))
+	depends_on("r-rvest", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

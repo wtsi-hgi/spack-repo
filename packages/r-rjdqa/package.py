@@ -16,10 +16,10 @@ class RRjdqa(RPackage):
 	homepage = "https://aqlt.github.io/rjdqa/"
 	cran = "rjdqa" 
 
-	version("0.1.3", md5="3c393f537255958daac60aa1bed60b06")
+	version("0.1.4", md5="117c9bbc05dca84558a1ae5aa05b43d5")
 
 	depends_on("r@3.1.1:", type=("build", "run"))
-	depends_on("r-rjdemetra", type=("build", "run"))
+	depends_on("r-rjdemetra@0.2.5:", type=("build", "run"))
 	depends_on("r-plotrix", type=("build", "run"))
-	depends_on("r-ggdemetra", type=("build", "run"))
+	depends_on("r-ggdemetra@0.2.5:", type=("build", "run"))
 	depends_on("openjdk@8:", type=("build", "link", "run"))

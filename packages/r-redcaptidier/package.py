@@ -15,7 +15,7 @@ class RRedcaptidier(RPackage):
 	homepage = "https://chop-cgtinformatics.github.io/REDCapTidieR/"
 	cran = "REDCapTidieR" 
 
-	version("1.0.0", md5="e427e94caee53c494bf295047a47a51e")
+	version("1.1.0", md5="d34b155620dd254d07b707d0c4f12e88")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))
@@ -32,3 +32,6 @@ class RRedcaptidier(RPackage):
 	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-tidyselect", type=("build", "run"))
 	depends_on("r-formattable", type=("build", "run"))
+	depends_on("r-pillar", type=("build", "run"))
+	depends_on("r-vctrs", type=("build", "run"))
+	depends_on("r-readr", type=("build", "run"))

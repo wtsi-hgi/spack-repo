@@ -19,4 +19,5 @@ Multivariate Data
 	cran = "EMT" 
 
 	version("1.3", md5="71a05083cda0b119a751905a1512e83f")
+	version("1.3.1", md5="4c94ae89b2912cfa217798fbc92da664")
 

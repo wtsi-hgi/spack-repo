@@ -22,6 +22,7 @@ Q-Learning, and Dynamic Weighted Survival Modeling (DWSurv)
 	cran = "DTRreg" 
 
 	version("2.1", md5="d878bba66415dd0b8e520002a2de0421")
+	version("2.2", md5="21d02e4907f85564b7ca15e06ebb43af")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-nnet", type=("build", "run"))

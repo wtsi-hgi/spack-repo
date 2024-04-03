@@ -10,7 +10,7 @@ class RChromer(RPackage):
 	"""Interface to Chromosome Counts Database API
 
 	A programmatic interface to the Chromosome Counts Database
-    (<https://ccdb.tau.ac.il/>), Rice et al. (2014) <doi:10.1111/nph.13191>.
+    (<https://taux.evolseq.net/CCDB_web/>), Rice et al. (2014) <doi:10.1111/nph.13191>.
     This package is part of the 'ROpenSci' suite (<https://ropensci.org>).
 	"""
 	
@@ -18,6 +18,7 @@ class RChromer(RPackage):
 	cran = "chromer" 
 
 	version("0.6", md5="cea260774067121c2917319a953a7ad1")
+	version("0.8", md5="a670bf92bc24da1b615f5f8d75b19333")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

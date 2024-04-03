@@ -20,7 +20,7 @@ class RMpathsenser(RPackage):
 	homepage = "https://gitlab.kuleuven.be/ppw-okpiv/researchers/u0134047/mpathsenser/"
 	cran = "mpathsenser" 
 
-	version("1.2.2", md5="5ecdf0d0e2d030b4f9817d89ef0338a1")
+	version("1.2.3", md5="a054a6b49b973d9272997507cfefec9f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dbi", type=("build", "run"))

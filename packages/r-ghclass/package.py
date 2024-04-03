@@ -19,7 +19,7 @@ class RGhclass(RPackage):
 	homepage = "https://github.com/rundel/ghclass"
 	cran = "ghclass" 
 
-	version("0.2.1", md5="4defed56e2637ebbc9467659439f7d89")
+	version("0.3.0", md5="191fd464c322b1534c0b89674336a58a")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-base64enc", type=("build", "run"))
@@ -35,3 +35,4 @@ class RGhclass(RPackage):
 	depends_on("r-withr", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-cli@3:", type=("build", "run"))
+	depends_on("r-lifecycle", type=("build", "run"))

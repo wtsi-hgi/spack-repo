@@ -21,11 +21,11 @@ Symmetries
 	homepage = "https://people.math.aau.dk/~sorenh/software/gR/"
 	cran = "gRc" 
 
-	version("0.4.6", md5="4e79edb86a97d121c118f2ae4dd59c0b")
+	version("0.5.0", md5="8c1366601633200e5d3fa9aec9634826")
 
-	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-grbase@1.8.5:", type=("build", "run"))
+	depends_on("r@4.2:", type=("build", "run"))
+	depends_on("r-grbase@2:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
+	depends_on("r-igraph", type=("build", "run"))
 	depends_on("r-rcpp@0.11.1:", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))

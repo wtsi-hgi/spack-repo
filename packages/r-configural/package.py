@@ -15,5 +15,6 @@ class RConfigural(RPackage):
 	cran = "configural" 
 
 	version("0.1.4", md5="5ed92d887c384e4712ede075dbdc6bdf")
+	version("0.1.5", md5="f09157c9d7169d2fb06f21c267735d01")
 
 	depends_on("r@3.4:", type=("build", "run"))

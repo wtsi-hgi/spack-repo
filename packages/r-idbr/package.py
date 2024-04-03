@@ -16,7 +16,7 @@ class RIdbr(RPackage):
 	
 	cran = "idbr" 
 
-	version("1.0", md5="7fab8f53b829e0f5a5238e69d9385f83")
+	version("1.2", md5="0b3bda3b72b0b03f62420b0da4b0db27")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))
@@ -26,3 +26,4 @@ class RIdbr(RPackage):
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-rnaturalearthdata", type=("build", "run"))
 	depends_on("r-sf", type=("build", "run"))
+	depends_on("r-stringr", type=("build", "run"))

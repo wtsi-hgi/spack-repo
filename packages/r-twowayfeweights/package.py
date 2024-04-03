@@ -17,7 +17,7 @@ Regressions
 	
 	cran = "TwoWayFEWeights" 
 
-	version("2.0.0", md5="cf45a6f8becb4306533be156b2c77a92")
+	version("2.0.1", md5="f4d8bf4baa81a47caa9878b3280e6f6d")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

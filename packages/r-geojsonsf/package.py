@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -12,9 +12,7 @@ class RGeojsonsf(RPackage):
 	Converts Between GeoJSON and simple feature objects."""
 
 	cran = "geojsonsf"
-
-	license("MIT")
-
+	version("2.0.1", sha256="42df40433bfbece5a39cd97b5bd4690b4424855241fcc3e7322ee68a3988bfbf")
 	version("2.0.3", md5="124952e42b4eaba8b046506623ac0242")
 
 	depends_on("r@3.3:", type=("build", "run"))

@@ -14,14 +14,14 @@ class RSurveygraph(RPackage):
   a survey as a bipartite network, we measure the similarity between
   respondents and survey items to produce network edges. We do this in both a
   respondent network, as well as a survey item network. Used in combination
-  with graph visualisation libraries, this techniques helps practitioners in the
+  with graph visualisation libraries, this technique helps practitioners in the
   social sciences identify network structure that may be present within a
-  survey at a glance.
+  survey.
 	"""
 	
 	homepage = "https://surveygraph.ie/"
 	cran = "surveygraph" 
 
-	version("0.1.0", md5="453d0813c10df393c0dc5825c68fad96")
+	version("0.1.1", md5="eea52c76bd8b342f58b0811d861c787e")
 
 	depends_on("r@2.15.1:", type=("build", "run"))

@@ -14,6 +14,6 @@ class RAbcData(RPackage):
 	
 	cran = "abc.data" 
 
-	version("1.0", md5="799079dbbdd0cfc9d9c61c3e35241806")
+	version("1.1", md5="1693d5a243a991f8cf290471972a54f8")
 
 	depends_on("r@2.10:", type=("build", "run"))

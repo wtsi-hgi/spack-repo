@@ -9,13 +9,14 @@ from spack.package import *
 class RVirtualpop(RPackage):
 	"""Simulation of Populations by Sampling Waiting-Time Distributions
 
-	Generates lifespans and fertility histories in continuous time using individual-level state transition (multi-state) models and data from the Human Mortality Database and the Human Fertility Database. To facilitate virtual population analysis, data on virtual individuals are stored in a data structure commonly used in sample surveys. Life histories are generated for multiple generations. The genealogies that result facilitate the study of family ties. 
+	Constructs a virtual population from fertility and mortality rates for any country,
+	calendar year and birth cohort in the Human Mortality Database <https://www.mortality.org> and the Human Fertility Database <https://www.humanfertility.org>.  Fertility histories are simulated for every individual and their offspring, producing a multi-generation virtual population. 
 	"""
 	
 	cran = "VirtualPop" 
 
-	version("1.0.2", md5="9b139fb833bb6817a20f8e894919f8fc")
+	version("2.0.2", md5="353a0148f29a4d6e0ee8f554ed05542d")
 
-	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-msm", type=("build", "run"))
 	depends_on("r-hmdhfdplus", type=("build", "run"))

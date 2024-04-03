@@ -17,11 +17,11 @@ class RMeconetcomp(RPackage):
 	homepage = "https://github.com/ChiLiubio/meconetcomp"
 	cran = "meconetcomp" 
 
-	version("0.4.1", md5="2414c25151ec5d857a7174609c9796da")
+	version("0.5.0", md5="72b6743be1cc716ef54ddb2d6e40adee")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))
-	depends_on("r-microeco@1.1:", type=("build", "run"))
+	depends_on("r-microeco@1.3:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

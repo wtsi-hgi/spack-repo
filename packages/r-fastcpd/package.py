@@ -26,6 +26,7 @@ class RFastcpd(RPackage):
 	cran = "fastcpd" 
 
 	version("0.12.1", md5="a20dec51dbf6fb17b09f97e96b859950")
+	version("0.13.1", md5="49b4a37f19d9187b3c90200ea3d73c96")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-fastglm", type=("build", "run"))

@@ -11,7 +11,7 @@ class RCobalt(RPackage):
 
 	Generate balance tables and plots for covariates of groups preprocessed through 
              matching, weighting or subclassification, for example, using propensity scores. Includes 
-             integration with 'MatchIt', 'twang', 'Matching', 'optmatch', 'CBPS', 'ebal', 'WeightIt', 
+             integration with 'MatchIt', 'WeightIt', 'MatchThem', 'twang', 'Matching', 'optmatch', 'CBPS', 'ebal', 
              'cem', 'sbw', and 'designmatch' for assessing balance on the output of their preprocessing 
              functions. Users can also specify data for balance assessment not generated through 
              the above packages. Also included are methods for assessing balance in clustered or 
@@ -22,6 +22,7 @@ class RCobalt(RPackage):
 	cran = "cobalt" 
 
 	version("4.5.4", md5="b94f1e26474d5fe064590d77178c104a")
+	version("4.5.5", md5="499150ab6acc04a7b60db5ddc0a063ec")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-ggplot2@3.4.1:", type=("build", "run"))

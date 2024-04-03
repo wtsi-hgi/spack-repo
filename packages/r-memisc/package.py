@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,9 +17,7 @@ class RMemisc(RPackage):
 	model estimates, which can be exported to 'LaTeX' and HTML."""
 
 	cran = "memisc"
-
-	license("GPL-2.0-only OR GPL-3.0-only")
-
+	version("0.99.31.6", sha256="52336b4ffc6e60c3ed10ccc7417231582b0d2e4c5c3b2184396a7d3ca9c1d96e")
 	version("0.99.31.7", md5="29549169c78c37545bb79bb7ac4753c9")
 
 	depends_on("r@3.3:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RAndromeda(RPackage):
 	cran = "Andromeda" 
 
 	version("0.6.5", md5="120903424410e1b092410e8efb169b9e")
+	version("0.6.6", md5="ba90c6ef2b4541816c31cbaa66551fd2")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-rsqlite", type=("build", "run"))

@@ -14,7 +14,7 @@ class RGdalraster(RPackage):
     exposed C++ class encapsulating a 'GDALDataset' and its raster band
     objects, along with several stand-alone functions. These support manual
     creation of uninitialized datasets, creation from existing raster as
-    template, read/set dataset parameters, low level I/O, color tables, raster 
+    template, read/set dataset parameters, low level I/O, color tables, raster
     attribute tables, virtual raster (VRT), and 'gdalwarp' wrapper for
     reprojection and mosaicing. Includes 'GDAL' algorithms ('dem_proc()',
     'polygonize()', 'rasterize()', etc.), and functions for coordinate
@@ -36,7 +36,7 @@ class RGdalraster(RPackage):
 	homepage = "https://usdaforestservice.github.io/gdalraster/"
 	cran = "gdalraster" 
 
-	version("1.9.0", md5="a6ef7f65c300c69b644242454d2c2d92")
+	version("1.10.0", md5="e4a19f3c077f076a2ab248908e822865")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

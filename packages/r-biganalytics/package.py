@@ -20,6 +20,7 @@ class RBiganalytics(RPackage):
 	cran = "biganalytics" 
 
 	version("1.1.21", md5="85078759889b06ac5a408175d5297560")
+	version("1.1.22", md5="a6dadd3f2c7b62fd90ac527cbfa1fe02")
 
 	depends_on("r-bigmemory", type=("build", "run"))
 	depends_on("r-foreach", type=("build", "run"))

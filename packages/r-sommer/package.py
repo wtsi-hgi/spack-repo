@@ -14,7 +14,7 @@ class RSommer(RPackage):
 	
 	cran = "sommer" 
 
-	version("4.3.3", md5="66c0f18737ff5cb38b4fc852b6f1114f")
+	version("4.3.4", md5="26bc955d439be6b0a4db6a8faf44e6bc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-matrix@1.1.1:", type=("build", "run"))

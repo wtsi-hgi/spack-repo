@@ -18,7 +18,7 @@ class RRjdemetra(RPackage):
 	homepage = "https://jdemetra.github.io/rjdemetra/"
 	cran = "RJDemetra" 
 
-	version("0.2.5", md5="61dfc59703c78401b390866267e67f43")
+	version("0.2.6", md5="26895f2873e51fd933d94dcf0ee61dad")
 
 	depends_on("r@3.1.1:", type=("build", "run"))
 	depends_on("r-rjava@0.9.8:", type=("build", "run"))

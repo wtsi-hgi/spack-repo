@@ -15,7 +15,7 @@ class RFormods(RPackage):
 	homepage = "https://formods.ubiquity.tools/"
 	cran = "formods" 
 
-	version("0.1.3", md5="b83f1479ba6e84d0335bcaa8102cdefb")
+	version("0.1.4", md5="4d3457e952957fdc449ec26ea15cfc0c")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

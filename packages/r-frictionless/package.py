@@ -10,23 +10,23 @@ class RFrictionless(RPackage):
 	"""Read and Write Frictionless Data Packages
 
 	Read and write Frictionless Data Packages. A 'Data Package'
-    (<https://specs.frictionlessdata.io/data-package/>) is a simple container
-    format and standard to describe and package a collection of (tabular) data. 
-    It is typically used to publish FAIR 
+    (<https://specs.frictionlessdata.io/data-package/>) is a simple
+    container format and standard to describe and package a collection of
+    (tabular) data. It is typically used to publish FAIR
     (<https://www.go-fair.org/fair-principles/>) and open datasets.
 	"""
 	
 	homepage = "https://github.com/frictionlessdata/frictionless-r"
 	cran = "frictionless" 
 
-	version("1.0.3", md5="dfad94efed132f5aec80c1967d22bb6b")
+	version("1.1.0", md5="2e5ba1da92b42bffba0bce3f615b76f7")
 
 	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-assertthat", type=("build", "run"))
+	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-glue", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-readr@2.1:", type=("build", "run"))
+	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-yaml", type=("build", "run"))

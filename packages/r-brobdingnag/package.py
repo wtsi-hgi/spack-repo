@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class RBrobdingnag(RPackage):
 
 	cran = "Brobdingnag"
 
+	version("1.2-7", sha256="73a734342736da5b29c2827d91f662101873503af7ad9cdf9e9e697bb32dd742")
+	version("1.2-6", sha256="19eccaed830ce9d93b70642f6f126ac66722a98bbd48586899cc613dd9966ad4")
 	version("1.2-9", md5="0933a3366ef2f614998e8feee06473cc")
 
 	depends_on("r@2.13:", type=("build", "run"))

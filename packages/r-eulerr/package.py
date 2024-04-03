@@ -20,6 +20,7 @@ class REulerr(RPackage):
 	cran = "eulerr" 
 
 	version("7.0.1", md5="67ce0dab076b2e6361f1b2da3debde59")
+	version("7.0.2", md5="20709a5b9ff83b575d5e034a3f568fb5")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-gensa", type=("build", "run"))

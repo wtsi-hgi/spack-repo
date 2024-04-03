@@ -17,6 +17,6 @@ class RVisachartr(RPackage):
 	homepage = "https://github.com/visa/visa-chart-components/tree/master/packages/charts-R"
 	cran = "visachartR" 
 
-	version("3.2.0", md5="a2281eac1cc678215b55d4e14f8e8f3d")
+	version("3.3.0", md5="c60b0a434099eefe16b4e20501c10c09")
 
 	depends_on("r-htmlwidgets", type=("build", "run"))

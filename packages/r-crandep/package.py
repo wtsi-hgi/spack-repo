@@ -16,6 +16,7 @@ class RCrandep(RPackage):
 	cran = "crandep" 
 
 	version("0.3.6", md5="38999dff4fc872b9f7a0c7a10f755b1c")
+	version("0.3.7", md5="54275879dc48016d3ff4af431ce4eae0")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))

@@ -14,7 +14,7 @@ class RMcartest(RPackage):
 	
 	cran = "MCARtest" 
 
-	version("1.2", md5="37514d1b9efeaa9362b1d23e31d73668")
+	version("1.2.1", md5="156ec07c892aba0ebbec5734050ad12d")
 
 	depends_on("r-lpsolve", type=("build", "run"))
 	depends_on("r-rcdd", type=("build", "run"))

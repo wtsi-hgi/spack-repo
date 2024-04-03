@@ -24,7 +24,7 @@ class RJmbig(RPackage):
 	
 	cran = "jmBIG" 
 
-	version("0.1.1", md5="3dad77da947e27e17341a2f3cd8c0aea")
+	version("0.1.2", md5="7a0ca12d7095f4cf554bbfb473054049")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-jmbayes2", type=("build", "run"))
@@ -34,3 +34,4 @@ class RJmbig(RPackage):
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-nlme", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))
+	depends_on("r-ggplot2", type=("build", "run"))

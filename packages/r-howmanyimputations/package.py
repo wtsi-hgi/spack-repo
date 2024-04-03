@@ -21,6 +21,6 @@ Imputation
 	homepage = "https://errickson.net/howManyImputations/"
 	cran = "howManyImputations" 
 
-	version("0.2.4", md5="82f07f6b1cf72df98fee0f999b4fd417")
+	version("0.2.5", md5="eac6d7d94a29f80823ceb83b2a8342b8")
 
 	depends_on("r-mice", type=("build", "run"))

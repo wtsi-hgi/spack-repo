@@ -16,7 +16,7 @@ class RNflplotr(RPackage):
 	homepage = "https://nflplotr.nflverse.com"
 	cran = "nflplotR" 
 
-	version("1.3.0", md5="275bfcf8d8e7838760fcc5a2f934bc48")
+	version("1.3.1", md5="e65829a7208cc38dd6833d0cacc601be")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cachem@1:", type=("build", "run"))

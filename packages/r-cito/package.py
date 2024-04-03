@@ -9,13 +9,14 @@ from spack.package import *
 class RCito(RPackage):
 	"""Building and Training Neural Networks
 
-	Building and training custom neural networks in the typical R syntax. The 'torch' package is used for numerical calculations, which allows for training on CPU as well as on a graphics card. 
+	The 'cito' package provides a user-friendly interface for training and interpreting deep neural networks (DNN). 'cito' simplifies the fitting of DNNs by supporting the familiar formula syntax, hyperparameter tuning under cross-validation, and helps to detect and handle convergence problems.  DNNs can be trained on CPU, GPU and MacOS GPUs. In addition, 'cito' has many downstream functionalities such as various explainable AI (xAI) metrics (e.g. variable importance, partial dependence plots, accumulated local effect plots, and effect estimates) to interpret trained DNNs. 'cito' optionally provides confidence intervals (and p-values) for all xAI metrics and predictions. At the same time, 'cito' is computationally efficient because it is based on the deep learning framework 'torch'. The 'torch' package is native to R, so no Python installation or other API is required for this package.
 	"""
 	
 	homepage = "https://citoverse.github.io/cito/"
 	cran = "cito" 
 
 	version("1.0.2", md5="7b48f67506c33fe27fe75ee09d2f9fcd")
+	version("1.1", md5="f672d8eca063d2adb88d36f1a8e211b1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-coro", type=("build", "run"))
@@ -26,3 +27,6 @@ class RCito(RPackage):
 	depends_on("r-abind", type=("build", "run"))
 	depends_on("r-progress", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
+	depends_on("r-torchvision", type=("build", "run"))
+	depends_on("r-tibble", type=("build", "run"))
+	depends_on("r-lme4", type=("build", "run"))

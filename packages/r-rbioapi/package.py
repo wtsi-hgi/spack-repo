@@ -22,7 +22,7 @@ class RRbioapi(RPackage):
 	homepage = "https://rbioapi.moosa-r.com"
 	cran = "rbioapi" 
 
-	version("0.8.0", md5="721460ad7bbe53d8c494574fdbf1215a")
+	version("0.8.1", md5="eec2583a4242af6e318612e49528d6fb")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

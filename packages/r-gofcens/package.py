@@ -23,7 +23,7 @@ class RGofcens(RPackage):
 	
 	cran = "GofCens" 
 
-	version("0.97", md5="de40d60d57c7797f1879e0dc49cc47d3")
+	version("0.98", md5="34b042aec4cfbcb86a62223059aca567")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-actuar", type=("build", "run"))

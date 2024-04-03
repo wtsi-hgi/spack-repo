@@ -15,13 +15,13 @@ Polyploid Species
             species. The app is meant for interactive use and allows users to optionally upload different sources 
             of information, including  gene annotation and alignment files, enabling the exploitation and search for 
             candidate genes in a genome browser. In its current version, 'VIEWpoly' supports inputs from 'MAPpoly', 
-            'polymapR', 'diaQTL', 'QTLpoly' and 'polyqtlR' packages. 
+            'polymapR', 'diaQTL', 'QTLpoly', 'polyqtlR', 'GWASpoly', and 'HIDECAN' packages. 
 	"""
 	
 	homepage = "https://github.com/mmollina/viewpoly"
 	cran = "viewpoly" 
 
-	version("0.3.2", md5="8d97b56d225b63570da1aacaa52f873b")
+	version("0.4.1", md5="914a7edcea78bc3fbb8e145d4d3926df")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-shiny@1.6:", type=("build", "run"))
@@ -42,4 +42,5 @@ Polyploid Species
 	depends_on("r-abind", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))
 	depends_on("r-markdown", type=("build", "run"))
-	depends_on("r-curl", type=("build", "run"))
+	depends_on("r-hidecan", type=("build", "run"))
+	depends_on("r-purrr", type=("build", "run"))

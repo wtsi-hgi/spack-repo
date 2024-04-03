@@ -19,7 +19,7 @@ class RQtl2ggplot(RPackage):
 	homepage = "https://github.com/byandell/qtl2ggplot"
 	cran = "qtl2ggplot" 
 
-	version("1.2.2", md5="a3bd34b0ffd24a6048f09721a509d9ab")
+	version("1.2.4", md5="501a59ea4e76fcca22a999f964340f82")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

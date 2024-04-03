@@ -23,7 +23,7 @@ class RWrangle(RPackage):
 	
 	cran = "wrangle" 
 
-	version("0.6.3", md5="cc80d1c6d03fce711f615a6795db4064")
+	version("0.6.4", md5="f2b50db1744428f787ae20efde2e406c")
 
 	depends_on("r-dplyr@1.0.2:", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))

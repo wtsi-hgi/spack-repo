@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,8 @@ class RPscbs(RPackage):
 	tumor-normal paired and tumor-only analyses are supported."""
 
 	cran = "PSCBS"
-
+	version("0.66.0", sha256="58805636e55e0fd3f57bd4a0e296a8bb3d57a7bdd0fdd5868a73ddc83d173a93")
+	version("0.65.0", sha256="3365065d5375c599eb024bfff12c5f6b10a6b1a4fe4ba6f200f7e83618dd399a")
 	version("0.67.0", md5="df9193fb19fb791450f243cea604a29b")
 
 	depends_on("r@3.2:", type=("build", "run"))

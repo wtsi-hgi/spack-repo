@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,10 @@ class RRmariadb(RPackage):
 	databases."""
 
 	cran = "RMariaDB"
-
+	version("1.2.2", sha256="c97c61ace584f9ad9929d3e3f366556e0eecad12bc98ea2979563a01475f468e")
+	version("1.2.1", sha256="c9176a096854ce33a98ce0faef0065c50b5d356174f90cea742c70e130cf5f0c")
+	version("1.1.0", sha256="9ffa63a15052876a51a7996ca4e6a5b7b937f594b5cc7ca5a86f43789e22a956")
+	version("1.0.8", sha256="3c8aedc519dc063ceb068535a3700bc5caf26f867078cc5a228aa8961e2d99f5")
 	version("1.3.1", md5="b8dc2132b67846e8c16d73d221f2acbf")
 
 	depends_on("r@2.8:", type=("build", "run"))

@@ -20,6 +20,7 @@ class REcodiet(RPackage):
 	cran = "EcoDiet" 
 
 	version("2.0.0", md5="5d1fa3236c5af9d1aae146a4c10f214f")
+	version("2.0.1", md5="cec2dd09cce319366205788630da2658")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2@3.2:", type=("build", "run"))

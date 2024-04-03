@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,7 +17,16 @@ class RDeseq2(RPackage):
 	homepage = "https://bioconductor.org/packages/DESeq2"
 	git = "https://git.bioconductor.org/packages/DESeq2.git"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DESeq2_1.42.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DESeq2/DESeq2_1.42.1.tar.gz"]
-
+	version("1.40.0", commit="c4962c3b16546e552fbc1a712258e4e21ff44241")
+	version("1.38.0", commit="0e059f425d4ce6a5203685a4ad434f15bbd6e211")
+	version("1.36.0", commit="2800b78ae52c0600f7e603c54af59beed3a2ed17")
+	version("1.34.0", commit="25d4f74be59548122ccfbe8687d30c0bae5cf49a")
+	version("1.30.0", commit="f4b47b208ee26ab23fe65c345f907fcfe70b3f77")
+	version("1.24.0", commit="3ce7fbbebac526b726a6f85178063d02eb0314bf")
+	version("1.22.2", commit="3c6a89b61add635d6d468c7fa00192314f8ca4ce")
+	version("1.20.0", commit="7e88ea5c5e68473824ce0af6e10f19e22374cb7c")
+	version("1.18.1", commit="ef65091d46436af68915124b752f5e1cc55e93a7")
+	version("1.16.1", commit="f41d9df2de25fb57054480e50bc208447a6d82fb")
 	version("1.42.1", md5="7b8f94401f376261f869ee839a0be2e1", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DESeq2_1.42.1.tar.gz")
 
 	depends_on("r-s4vectors@0.23.18:", type=("build", "run"))

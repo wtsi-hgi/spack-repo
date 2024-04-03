@@ -15,7 +15,7 @@ class RTidyfit(RPackage):
 	homepage = "https://tidyfit.residualmetrics.com"
 	cran = "tidyfit" 
 
-	version("0.7.0", md5="3d46c94c82141fc6b2507ad0b4bf5d87")
+	version("0.7.1", md5="6412f4e69e7bf47619a772ab9fdc33ae")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))

@@ -20,6 +20,7 @@ OMOP Common Data Model
 	cran = "DrugUtilisation" 
 
 	version("0.5.2", md5="efcbbfb2b23dbebf488cf4061b2018c6")
+	version("0.5.3", md5="631b32d12ed7dfbbbc724299bb25b076")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-cdmconnector@1.3:", type=("build", "run"))
@@ -33,7 +34,7 @@ OMOP Common Data Model
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-rjsonio", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
-	depends_on("r-patientprofiles@0.6:", type=("build", "run"))
+	depends_on("r-patientprofiles@0.7:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
 	depends_on("r-tictoc", type=("build", "run"))

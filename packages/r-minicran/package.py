@@ -21,7 +21,7 @@ class RMinicran(RPackage):
 	homepage = "https://github.com/andrie/miniCRAN"
 	cran = "miniCRAN" 
 
-	version("0.2.16", md5="1b9b2157b7c66aa59b266dfe5ec5a949")
+	version("0.3.0", md5="bd43289898fb090332ee0e899fecedcf")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

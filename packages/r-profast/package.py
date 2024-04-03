@@ -17,11 +17,14 @@ Reduction
 	homepage = "https://github.com/feiyoung/ProFAST"
 	cran = "ProFAST" 
 
-	version("1.3", md5="4ad4e6a81986d5820d12ecbfb57f6286")
+	version("1.4", md5="025b2253670a7edc14b777b01ab4d47f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-gtools", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("r-furrr", type=("build", "run"))
+	depends_on("r-future", type=("build", "run"))
+	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-dr-sc", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
@@ -33,7 +36,5 @@ Reduction
 	depends_on("r-org-hs-eg-db", type=("build", "run"))
 	depends_on("r-org-mm-eg-db", type=("build", "run"))
 	depends_on("r-seurat", type=("build", "run"))
-	depends_on("r-performance", type=("build", "run"))
 	depends_on("r-harmony", type=("build", "run"))
-	depends_on("r-nnet", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))

@@ -36,4 +36,4 @@ class REch(RPackage):
 	depends_on("unrar", type=("build", "link", "run"))
 	depends_on("gdal@3.0.2:", type=("build", "link", "run"))
 	depends_on("geos@3.8.0:", type=("build", "link", "run"))
-	depends_on("proj@6.2.1", type=("build", "link", "run"))
+	depends_on("proj@6.2.1:", type=("build", "link", "run"))

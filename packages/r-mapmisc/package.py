@@ -14,7 +14,7 @@ class RMapmisc(RPackage):
 	
 	cran = "mapmisc" 
 
-	version("2.0.6", md5="f1c83cd041e58a743ae22663c35d79d6")
+	version("2.0.7", md5="2bcdd96b62e871c69800b58348866744")
 
 	depends_on("r-terra", type=("build", "run"))
 	depends_on("r@3.5:", type=("build", "run"))

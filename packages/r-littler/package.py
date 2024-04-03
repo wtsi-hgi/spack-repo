@@ -22,7 +22,7 @@ class RLittler(RPackage):
 	homepage = "https://github.com/eddelbuettel/littler"
 	cran = "littler" 
 
-	version("0.3.19", md5="d0d7480bc3c1014069d00d1162b61cc0")
+	version("0.3.20", md5="194f1116ebf52154948847b0acd5c76a")
 
 	depends_on("bzip2", type=("build", "link", "run"))
 	depends_on("icu4c", type=("build", "link", "run"))

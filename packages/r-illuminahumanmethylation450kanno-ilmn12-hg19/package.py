@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,7 +15,16 @@ class RIlluminahumanmethylation450kannoIlmn12Hg19(RPackage):
 	# repository.
 	bioc = "IlluminaHumanMethylation450kanno.ilmn12.hg19"
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/IlluminaHumanMethylation450kanno.ilmn12.hg19_0.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/IlluminaHumanMethylation450kanno.ilmn12.hg19/IlluminaHumanMethylation450kanno.ilmn12.hg19_0.6.1.tar.gz"]
-
+	version(
+		"0.6.1",
+		url="https://bioconductor.org/packages/3.15/data/annotation/src/contrib/IlluminaHumanMethylation450kanno.ilmn12.hg19_0.6.1.tar.gz",
+		sha256="3627d75a6303f4d307fa6daf0c5afd57649c60a268b3d4be7e8ac8edc4b1e288",
+	)
+	version(
+		"0.6.0",
+		url="https://bioconductor.org/packages/3.4/data/annotation/src/contrib/IlluminaHumanMethylation450kanno.ilmn12.hg19_0.6.0.tar.gz",
+		sha256="249b8fd62add3c95b5047b597cff0868d26a98862a47cebd656edcd175a73b15",
+	)
 	version("0.6.1", md5="aeafc54d887b128ed265fa704a3efa42", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/IlluminaHumanMethylation450kanno.ilmn12.hg19_0.6.1.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))

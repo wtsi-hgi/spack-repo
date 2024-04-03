@@ -14,7 +14,7 @@ class RWelo(RPackage):
 	
 	cran = "welo" 
 
-	version("0.1.3", md5="193a6a5df87362c1cb52acf321bb26fb")
+	version("0.1.4", md5="b96a44755ef1c463855e18e4cceee16b")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-xts@0.12:", type=("build", "run"))

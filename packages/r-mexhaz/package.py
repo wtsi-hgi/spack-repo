@@ -14,7 +14,7 @@ class RMexhaz(RPackage):
 	
 	cran = "mexhaz" 
 
-	version("2.4", md5="27d1395df20a0c7108f019cf701e546c")
+	version("2.5", md5="96c860b9c1874a0134a8911fbf855a6c")
 
 	depends_on("r-survival", type=("build", "run"))
 	depends_on("r-statmod", type=("build", "run"))

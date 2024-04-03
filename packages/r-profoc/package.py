@@ -15,7 +15,7 @@ class RProfoc(RPackage):
 	homepage = "https://profoc.berrisch.biz"
 	cran = "profoc" 
 
-	version("1.3.1", md5="44d5f6241f550d8956f764c234460e1e")
+	version("1.3.2", md5="c1290b86e4395de0f1df95ad78f6de7f")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
@@ -28,3 +28,4 @@ class RProfoc(RPackage):
 	depends_on("r-rcpparmadillo@0.10.7.5:", type=("build", "run"))
 	depends_on("r-rcppprogress", type=("build", "run"))
 	depends_on("r-splines2@0.4.4:", type=("build", "run"))
+	depends_on("r-rcpptimer@1.1:", type=("build", "run"))

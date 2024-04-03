@@ -15,7 +15,7 @@ Fixed Time t
 	
 	cran = "ThresholdROCsurvival" 
 
-	version("1.2.0", md5="f8cf431b09a90e90f59dd3bc036198b2")
+	version("1.2.1", md5="9588522a59e4fae2c35bc65aebeaf1fc")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-boot", type=("build", "run"))

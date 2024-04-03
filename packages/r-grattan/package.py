@@ -20,7 +20,7 @@ class RGrattan(RPackage):
 	homepage = "https://github.com/HughParsonage/grattan"
 	cran = "grattan" 
 
-	version("2024.0.0", md5="575d7f1a8911d8cb8c0ccf49f81b34b8")
+	version("2024.1.1", md5="106b4733e886b29524a5f8785454966d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

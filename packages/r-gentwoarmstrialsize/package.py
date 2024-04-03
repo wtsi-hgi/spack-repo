@@ -14,7 +14,7 @@ class RGentwoarmstrialsize(RPackage):
 	
 	cran = "GenTwoArmsTrialSize" 
 
-	version("0.0.4.5", md5="36b5fc3b2116bf33efdf9f588147c050")
+	version("0.0.5", md5="e2a3c180c391d64c4cda972c88f01f96")
 
 	depends_on("r-trialsize", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

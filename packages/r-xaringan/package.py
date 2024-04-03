@@ -16,11 +16,11 @@ class RXaringan(RPackage):
 	homepage = "https://github.com/yihui/xaringan"
 	cran = "xaringan" 
 
-	version("0.29", md5="cf4df3745a82f912b6dbbb094d4716e5")
+	version("0.30", md5="49ff7b601b05c68bf6165ade30a4a6f7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-htmltools", type=("build", "run"))
 	depends_on("r-knitr@1.30:", type=("build", "run"))
-	depends_on("r-servr@0.29:", type=("build", "run"))
+	depends_on("r-servr@0.30:", type=("build", "run"))
 	depends_on("r-xfun@0.18:", type=("build", "run"))
 	depends_on("r-rmarkdown@2.8:", type=("build", "run"))

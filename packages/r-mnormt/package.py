@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,9 +17,8 @@ class RMnormt(RPackage):
 	the case d=1, d=2, d>2, if d denotes the number of dimensions."""
 
 	cran = "mnormt"
-
-	license("GPL-2.0-only OR GPL-3.0-only")
-
+	version("2.0.2", sha256="5c6aa036d3f1035ffe8f9a8e95bb908b191b126b016591cf893c50472851f334")
+	version("1.5-5", sha256="ff78d5f935278935f1814a69e5a913d93d6dd2ac1b5681ba86b30c6773ef64ac")
 	version("2.1.1", md5="ba4df780cf81a10c7ace080973342390")
 
 	depends_on("r@2.2:", type=("build", "run"))

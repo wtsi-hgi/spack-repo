@@ -23,16 +23,15 @@ Beautiful, Customizable, and Publication-Ready
 	homepage = "https://modelsummary.com"
 	cran = "modelsummary" 
 
-	version("1.4.5", md5="6a6e2d64fd6fa0a596be08fbf7aec673")
+	version("2.0.0", md5="5e5132c557949f99d2c4b7ac7c455129")
 
 	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-checkmate@2.1:", type=("build", "run"))
-	depends_on("r-data-table", type=("build", "run"))
+	depends_on("r-checkmate@2.3.1:", type=("build", "run"))
+	depends_on("r-data-table@1.15.2:", type=("build", "run"))
 	depends_on("r-generics", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
-	depends_on("r-kableextra@1.3.4:", type=("build", "run"))
-	depends_on("r-insight@0.19.6:", type=("build", "run"))
-	depends_on("r-parameters@0.21.2:", type=("build", "run"))
-	depends_on("r-performance@0.10.5:", type=("build", "run"))
+	depends_on("r-insight@0.19.9:", type=("build", "run"))
+	depends_on("r-parameters@0.21.6:", type=("build", "run"))
+	depends_on("r-performance@0.10.9:", type=("build", "run"))
 	depends_on("r-tables@0.9.17:", type=("build", "run"))
-	depends_on("r-tinytable@0.0.4:", type=("build", "run"))
+	depends_on("r-tinytable@0.2.1:", type=("build", "run"))

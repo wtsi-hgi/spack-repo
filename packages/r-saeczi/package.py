@@ -21,7 +21,7 @@ class RSaeczi(RPackage):
 	
 	cran = "saeczi" 
 
-	version("0.1.1", md5="07235f2f305883f4b2c9bf09ea8dbb95")
+	version("0.1.2", md5="2644b4ed01f67c5b4899006b77ee2c9c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

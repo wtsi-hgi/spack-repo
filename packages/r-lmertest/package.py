@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,7 +17,7 @@ class RLmertest(RPackage):
 	linear contrasts of fixed effects are also available."""
 
 	cran = "lmerTest"
-
+	
 	version("3.1-3", md5="9dcd5c0277debea42b1e05ecf98ad6cd")
 
 	depends_on("r@3.2.5:", type=("build", "run"))

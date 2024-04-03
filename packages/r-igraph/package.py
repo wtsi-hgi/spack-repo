@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,9 +14,15 @@ class RIgraph(RPackage):
 	graph visualization, centrality methods and much more."""
 
 	cran = "igraph"
-
-	license("GPL-2.0-or-later")
-
+	version("1.4.2", sha256="7d5300adb1a25a6470cada8630e35ef416181147ab624d5a0a8d3552048c4ae5")
+	version("1.3.5", sha256="9e615d67b6b5b57dfa54ec2bbc8c29da8f7c3fe82af1e35ab27273b1035b9bd4")
+	version("1.3.1", sha256="505a2ba7c417ceaf869240cc1c9a5f3fbd75f8d9dfcfe048df1326c6ec41144e")
+	version("1.2.11", sha256="1c8b715eb61e6e7d9082858673929f8e84dc832c0a2a7aba7811511bbd2000de")
+	version("1.2.6", sha256="640da72166fda84bea2c0e5eee374f1ed80cd9439c1171d056b1b1737ae6c76d")
+	version("1.2.4.1", sha256="891acc763b5a4a4a245358a95dee69280f4013c342f14dd6a438e7bb2bf2e480")
+	version("1.2.4", sha256="1048eb26ab6b592815bc269c1d91e974c86c9ab827ccb80ae0a40042019592cb")
+	version("1.1.2", sha256="89b16b41bc77949ea208419e52a18b78b5d418c7fedc52cd47d06a51a6e746ec")
+	version("1.0.1", sha256="dc64ed09b8b5f8d66ed4936cde3491974d6bc5178dd259b6eab7ef3936aa5602")
 	version("2.0.3", md5="36b28af2a8910060551629b306165f75")
 
 	depends_on("r@3.5:", type=("build", "run"))

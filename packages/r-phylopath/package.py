@@ -17,7 +17,7 @@ class RPhylopath(RPackage):
 	homepage = "https://Ax3man.github.io/phylopath/"
 	cran = "phylopath" 
 
-	version("1.2.0", md5="87e7e1264eae8b9f682e829de23a693c")
+	version("1.2.1", md5="7003e8d8299619a11eb7fd131f72396f")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-ape@4.1:", type=("build", "run"))

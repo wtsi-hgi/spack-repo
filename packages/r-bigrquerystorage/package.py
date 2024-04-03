@@ -17,6 +17,7 @@ class RBigrquerystorage(RPackage):
 	cran = "bigrquerystorage" 
 
 	version("1.0.0", md5="f9d70806e386e18cfea1ba86de943106")
+	version("1.1.0", md5="802c8d8fec57d3fabc47072eec69d232")
 
 	depends_on("r-arrow", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
@@ -28,3 +29,5 @@ class RBigrquerystorage(RPackage):
 	depends_on("r-bit64", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
 	depends_on("protobuf", type=("build", "link", "run"))
+	depends_on("grpc", type=("build", "link", "run"))
+	depends_on("openssl", type=("build", "link", "run"))

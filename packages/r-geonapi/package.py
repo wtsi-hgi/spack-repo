@@ -15,7 +15,7 @@ class RGeonapi(RPackage):
 	homepage = "https://github.com/eblondel/geonapi/wiki"
 	cran = "geonapi" 
 
-	version("0.7", md5="e4b1e116d68f3b84bc2a21d76af50d1d")
+	version("0.7-2", md5="60c2aec1aa2cd140e70c48a6f334b7f6")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-geometa", type=("build", "run"))
@@ -24,3 +24,4 @@ class RGeonapi(RPackage):
 	depends_on("r-openssl", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-xml", type=("build", "run"))
+	depends_on("r-plyr", type=("build", "run"))

@@ -22,7 +22,7 @@ class RSccs(RPackage):
 	
 	cran = "SCCS" 
 
-	version("1.6", md5="375a24327e8dff8d9497745bfb5c74b1")
+	version("1.7", md5="89f4b5382c00ef90316a404d7633e493")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

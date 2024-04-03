@@ -16,7 +16,7 @@ class RS3fs(RPackage):
 	homepage = "https://github.com/DyfanJones/s3fs"
 	cran = "s3fs" 
 
-	version("0.1.4", md5="b52ebd145c42c25221bb6c81aa2a9106")
+	version("0.1.5", md5="4832e1dfd8560295823bc0ba49d106b9")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))

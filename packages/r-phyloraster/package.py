@@ -16,13 +16,12 @@ class RPhyloraster(RPackage):
     Rosauer, D. et al. (2009) <doi:10.1111/j.1365-294X.2009.04311.x>.
 	"""
 	
-	homepage = "https://gabferreira.github.io/phyloraster/"
+	homepage = "https://CRAN.R-project.org/package=phyloraster"
 	cran = "phyloraster" 
 
-	version("2.0.1", md5="4c14ca56a3c42088e302eebd3b991759")
+	version("2.1.0", md5="7284c848ef1ff136f1b48faf6388d4fe")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))
-	depends_on("r-phylobase", type=("build", "run"))
 	depends_on("r-sesraster", type=("build", "run"))
 	depends_on("r-terra", type=("build", "run"))

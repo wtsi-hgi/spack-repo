@@ -20,16 +20,17 @@ class RMetanet(RPackage):
 	homepage = "https://github.com/Asa12138/MetaNet"
 	cran = "MetaNet" 
 
-	version("0.1.0", md5="ccc5d8a67127bf33df4fb7382e16e884")
+	version("0.1.2", md5="bdb3f67df24842c3d375628911399995")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-igraph@1.3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-ggplot2@3.2:", type=("build", "run"))
+	depends_on("r-ggnewscale", type=("build", "run"))
+	depends_on("r-ggrepel", type=("build", "run"))
+	depends_on("r-rcolorbrewer", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
-	depends_on("r-pcutils", type=("build", "run"))
-	depends_on("r-vegan", type=("build", "run"))
+	depends_on("r-pcutils@0.2.5:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
-	depends_on("r-stringr", type=("build", "run"))

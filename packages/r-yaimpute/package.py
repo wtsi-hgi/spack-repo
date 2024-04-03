@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -21,7 +21,8 @@ class RYaimpute(RPackage):
 	results."""
 
 	cran = "yaImpute"
-
+	version("1.0-33", sha256="58595262eb1bc9ffeeadca78664c418ea24b4e894744890c00252c5ebd02512c")
+	version("1.0-32", sha256="08eee5d851b80aad9c7c80f9531aadd50d60e4b16b3a80657a50212269cd73ff")
 	version("1.0-34", md5="d4e6899077278d5386b0063a2d4be696")
 
 	depends_on("r@3:", type=("build", "run"))

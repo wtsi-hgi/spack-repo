@@ -18,7 +18,7 @@ class ROdmeans(RPackage):
 	
 	cran = "ODMeans" 
 
-	version("0.2.0", md5="4155dab4f8f479b17ce41d96ceb0b9f5")
+	version("0.2.1", md5="d2a595e99b85e6931d266faef3c53b73")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-geosphere", type=("build", "run"))

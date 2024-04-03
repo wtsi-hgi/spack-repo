@@ -15,7 +15,7 @@ class RGetspanel(RPackage):
 	homepage = "https://github.com/moritzpschwarz/getspanel"
 	cran = "getspanel" 
 
-	version("0.1.5", md5="03029ce1fd2a861099ebc010020723c9")
+	version("0.2.0", md5="8e1c2fc995616e9e5aed4f527b47e90a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-gets", type=("build", "run"))

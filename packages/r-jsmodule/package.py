@@ -12,10 +12,10 @@ class RJsmodule(RPackage):
 	'RStudio' addins and 'Shiny' modules for descriptive statistics, regression and survival analysis.
 	"""
 	
-	homepage = "https://github.com/jinseob2kim/jsmodule"
+	homepage = "https://jinseob2kim.github.io/jsmodule/"
 	cran = "jsmodule" 
 
-	version("1.5.1", md5="b594bea51e36d41e690b3ad1ad1dbe32")
+	version("1.5.2", md5="fe3bca572fa03f05c5d46c54f7179e3e")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
@@ -49,3 +49,4 @@ class RJsmodule(RPackage):
 	depends_on("r-rvg", type=("build", "run"))
 	depends_on("r-epidisplay", type=("build", "run"))
 	depends_on("r-forestploter", type=("build", "run"))
+	depends_on("r-scales", type=("build", "run"))

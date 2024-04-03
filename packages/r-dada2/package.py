@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -12,7 +12,8 @@ class RDada2(RPackage):
 
 	homepage = "https://benjjneb.github.io/dada2/"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dada2_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dada2/dada2_1.30.0.tar.gz"]
-
+	version("1.20", sha256="351b80dc5cdd587f5d4fe2541574e3d0cf7966342ee913b47cb20c7eb150e3f5")
+	version("1.14", sha256="19980b9d7b0a0e80e86010357cae11d1fc07c2d02067c4445169143cf1f99906")
 	version("1.30.0", md5="096baf34b4618af27b1b430945d3a189", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dada2_1.30.0.tar.gz")
 
 	depends_on("r@3.4:", type=("build", "run"))

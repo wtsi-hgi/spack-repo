@@ -17,5 +17,6 @@ and Missing Data may be Present
 	cran = "allelematch" 
 
 	version("2.5.3", md5="2326ad78e087f8f890a7e8e7d0bb3603")
+	version("2.5.4", md5="11c9c87f0e4133fdc1bcc2aeaa48b147")
 
 	depends_on("r-dynamictreecut", type=("build", "run"))

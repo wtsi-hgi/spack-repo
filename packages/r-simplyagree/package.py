@@ -9,13 +9,13 @@ from spack.package import *
 class RSimplyagree(RPackage):
 	"""Flexible and Robust Agreement and Reliability Analyses
 
-	Reliability and agreement analyses often have limited software support. Therefore, this package was created to make agreement and reliability analyses easier for the average researcher. The functions within this package include simple tests of agreement, agreement analysis for nested and replicate data, and provide robust analyses of reliability. In addition, this package contains a set of functions to help when planning studies looking to assess measurement agreement. For robust analyses of agreement, limits of agreement through a bootstrap method can also be calculated.
+	Reliability and agreement analyses often have limited software support. Therefore, this package was created to make agreement and reliability analyses easier for the average researcher. The functions within this package include simple tests of agreement, agreement analysis for nested and replicate data, and provide robust analyses of reliability. In addition, this package contains a set of functions to help when planning studies looking to assess measurement agreement. 
 	"""
 	
 	homepage = "https://aaroncaldwell.us/SimplyAgree/"
 	cran = "SimplyAgree" 
 
-	version("0.1.2", md5="1a49cee55c4d14a513502a21c8c6ff3e")
+	version("0.2.0", md5="c70d3794e5da548f2f2aa19526c72cdb")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
@@ -33,3 +33,6 @@ class RSimplyagree(RPackage):
 	depends_on("r-insight", type=("build", "run"))
 	depends_on("r-nlme", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))
+	depends_on("r-matrix", type=("build", "run"))
+	depends_on("r-mass", type=("build", "run"))
+	depends_on("r-lifecycle", type=("build", "run"))

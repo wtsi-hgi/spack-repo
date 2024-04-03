@@ -15,10 +15,10 @@ class RSpatialacc(RPackage):
              Includes the locations and some characteristics of major public hospitals in Greece.
 	"""
 	
-	homepage = "http://lctools.science/"
+	homepage = "https://stamatisgeoai.eu/"
 	cran = "SpatialAcc" 
 
-	version("0.1-4", md5="7ea815955beefa46235c5b48b1eafec0")
+	version("0.1-5", md5="8944249101fbd74dc47e5cc0311ea55d")
 
-	depends_on("r@3.6:", type=("build", "run"))
+	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-sp", type=("build", "run"))

@@ -24,7 +24,7 @@ class RR2diiMatch(RPackage):
 	homepage = "https://rmi-pacta.github.io/r2dii.match/"
 	cran = "r2dii.match" 
 
-	version("0.1.4", md5="51d6b5a6abb77d200fbebb2439057a8c")
+	version("0.2.0", md5="67dfcf4ed9a9cbb81c0b5f1dbbf9816a")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

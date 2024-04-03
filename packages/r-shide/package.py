@@ -17,7 +17,7 @@ class RShide(RPackage):
 	homepage = "https://github.com/mmollayi/shide"
 	cran = "shide" 
 
-	version("0.1.3", md5="492f98a07d6be81eafac8419f9c46db5")
+	version("0.2.0", md5="76f2928f18b0cd1803226bdad0a5af65")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

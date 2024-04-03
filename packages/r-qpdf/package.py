@@ -19,7 +19,7 @@ class RQpdf(RPackage):
 	homepage = "https://docs.ropensci.org/qpdf/"
 	cran = "qpdf" 
 
-	version("1.3.2", md5="683a7a73e5bd530b377987ea646f31db")
+	version("1.3.3", md5="befda010dc47d87b6e988db7d6941768")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-askpass", type=("build", "run"))

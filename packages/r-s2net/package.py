@@ -15,7 +15,7 @@ class RS2net(RPackage):
 	homepage = "https://github.com/jlaria/s2net"
 	cran = "s2net" 
 
-	version("1.0.4", md5="8e0d521c76b6248dd6325cbed86d6709")
+	version("1.0.7", md5="a8ee7be6ba93be5ddd679b79b2d35884")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

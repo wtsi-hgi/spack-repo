@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,7 +17,9 @@ class RConstruct(RPackage):
 	utility."""
 
 	cran = "conStruct"
-
+	version("1.0.5", sha256="4d953073bd1f374a91655b4889ab1b65d92a1c89ea39eb3dac5cd852a42b8a7c")
+	version("1.0.4", sha256="4e585b718a361061bc1432cea46fc65f802fb0ef58e4516d33e1af99bbfe90ce")
+	version("1.0.3", sha256="b449c133a944ad05a28f84f312ed4ccbc1574c4659aa09c678618d2ae9008310")
 	version("1.0.6", md5="3b3ee2f8083c0978303256730f74c734")
 
 	depends_on("r@3.4:", type=("build", "run"))

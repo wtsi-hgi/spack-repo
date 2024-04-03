@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -20,7 +20,9 @@ class RRfast(RPackage):
 	<doi:10.6339/JDS.201810_16(4).00006>."""
 
 	cran = "Rfast"
-
+	version("2.0.7", sha256="8f86159a4760a7124e1c91ae0b022c7e496f81590ea4e4af702bea44e8dedf8f")
+	version("2.0.6", sha256="34694b5c67ce8fcbdc90aac2ac80a74d4b66515f383e6301aea7c020009ebe7f")
+	version("2.0.4", sha256="959907e36e24620c07ec282b203b40214f4914f4928c07ee6491043c27af31d9")
 	version("2.1.0", md5="ba455888bd71d3cbce27d29be5f1948c")
 
 	depends_on("r@3.5:", type=("build", "run"))

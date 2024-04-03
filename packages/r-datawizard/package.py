@@ -21,6 +21,7 @@ class RDatawizard(RPackage):
 	cran = "datawizard" 
 
 	version("0.9.1", md5="9df4630e0cc8a06003488abde0a77137")
+	version("0.10.0", md5="e40af4bc6c0a49b3696229b08a803b7e")
 
 	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-insight@0.19.7:", type=("build", "run"))
+	depends_on("r-insight@0.19.8:", type=("build", "run"))

@@ -23,7 +23,7 @@ Remote Tables
 	homepage = "https://rstudio.github.io/pointblank/"
 	cran = "pointblank" 
 
-	version("0.12.0", md5="8933f54604e239cbc33e16a64d95b6a8")
+	version("0.12.1", md5="d24d6ef7fe4914ecc6cc8ba3832f6c5c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-base64enc@0.1.3:", type=("build", "run"))

@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,7 +18,16 @@ class RQuantro(RPackage):
 
 	bioc = "quantro"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/quantro_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/quantro/quantro_1.36.0.tar.gz"]
-
+	version("1.34.0", commit="c769d21ce5ccb6f33c35e6e1dbb901ea8afad4b1")
+	version("1.32.0", commit="0c70b787866d915abb720f2ab326a83eb1e775b7")
+	version("1.30.0", commit="e756c439cdc5a6fb4d7879aff56a8368475513b5")
+	version("1.28.0", commit="109e7452a349f273e10d2ffb79d5624260b67dd5")
+	version("1.24.0", commit="c7c0180292156a01722d91b353da44324e72d68f")
+	version("1.18.0", commit="f6553c2296289eed31e4b2f32a082e990bdb8359")
+	version("1.16.0", commit="cfc2e853bdc3cc90fd35e153fe243892d50d61c6")
+	version("1.14.0", commit="2d43264b2a95ae8ca51a69d7768fe43b9f1b77bb")
+	version("1.12.0", commit="1cfcc73875cf4ecc2618e5e45fda89bd075a5d12")
+	version("1.10.0", commit="111337c0aba052aa49c3d2e2d3042794b28858c9")
 	version("1.36.0", md5="3e7912df8d9bc50c461074539540f289")
 
 	depends_on("r@4:", type=("build", "run"))

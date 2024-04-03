@@ -15,6 +15,7 @@ class RRarestr(RPackage):
 	homepage = "https://github.com/pzhaonet/rarestR"
 	cran = "rarestR" 
 
-	version("0.1.0", md5="802dab4a30702e26d8ed642e5abf252c")
+	version("1.0.0", md5="9556770724c35e308f706f99a06383ee")
 
 	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r-rdpack", type=("build", "run"))

@@ -32,7 +32,7 @@ with Common Mean
 	homepage = "https://github.com/ArthurLeroy/MagmaClustR"
 	cran = "MagmaClustR" 
 
-	version("1.1.2", md5="abeb6ebe3e231a011a01ce0eb9e73a9f")
+	version("1.2.0", md5="915e4a56880600b6b735102ff82ffed5")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))

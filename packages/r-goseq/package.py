@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,7 +14,16 @@ class RGoseq(RPackage):
 
 	bioc = "goseq"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/goseq_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/goseq/goseq_1.54.0.tar.gz"]
-
+	version("1.52.0", commit="d6b0cfddf887a074acf18c77c2ea4cb3a9202bd8")
+	version("1.50.0", commit="f9fad238e2d08a87b14c3c8c228ad332efa60f14")
+	version("1.48.0", commit="d077fda56986cc7218a88f7db37a42412b227025")
+	version("1.46.0", commit="1fb5626cc80f595499af511a830322ed12bbe144")
+	version("1.42.0", commit="8164b90e7505bbc1035105fdc15219c764ef8b8d")
+	version("1.36.0", commit="26c9f7de18889afeee1b571ca1c4ab4d2877ab80")
+	version("1.34.1", commit="bad217b42cc34423698fbcf701d4e3591aac4474")
+	version("1.32.0", commit="32fcbe647eea17d7d0d7a262610811502c421d36")
+	version("1.30.0", commit="fa8cafe0766ed0b6a97a4ed3374a709ed9d1daf1")
+	version("1.28.0", commit="ed0ce332a8972618d740d8a93711dff994657738")
 	version("1.54.0", md5="4c39d7fbb51594a70dd3e54b1bc10375")
 
 	depends_on("r@2.11:", type=("build", "run"))

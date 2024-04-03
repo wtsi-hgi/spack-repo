@@ -15,6 +15,6 @@ class RRcpptimer(RPackage):
 	homepage = "https://rcpptimer.berrisch.biz"
 	cran = "rcpptimer" 
 
-	version("1.0.0", md5="4060f8da9f041d6f1a5541815fc4010a")
+	version("1.1.0", md5="4e29eeffae6aa10094d62a9ad40c644d")
 
 	depends_on("r-rcpp", type=("build", "run"))

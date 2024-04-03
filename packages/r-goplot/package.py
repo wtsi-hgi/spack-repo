@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -19,7 +19,7 @@ class RGoplot(RPackage):
 	diagram, heatmap)."""
 
 	cran = "GOplot"
-
+	
 	version("1.0.2", md5="e06a7705b6564c82dc01c5e0a3c91984")
 
 	depends_on("r-ggplot2@2:", type=("build", "run"))

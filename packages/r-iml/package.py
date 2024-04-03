@@ -26,7 +26,7 @@ class RIml(RPackage):
 	homepage = "https://christophm.github.io/iml/"
 	cran = "iml" 
 
-	version("0.11.1", md5="0fef34e83d24025b71de3e43f27ded0b")
+	version("0.11.2", md5="64de95cfe6930b47f43228d7712af662")
 
 	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
@@ -35,5 +35,4 @@ class RIml(RPackage):
 	depends_on("r-future-apply", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-metrics", type=("build", "run"))
-	depends_on("r-prediction", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

@@ -19,6 +19,7 @@ class REmur(RPackage):
 	cran = "emuR" 
 
 	version("2.4.2", md5="119f8d234121e87707ad0a9b5fa68354")
+	version("2.5.0", md5="b49e90324a34c92796776db0aca4433a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

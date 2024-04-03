@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -32,10 +32,8 @@ class RDensvis(RPackage):
 	space."""
 
 	bioc = "densvis"
-
-	license("MIT")
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/densvis_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/densvis/densvis_1.12.1.tar.gz"]
-
+	version("1.10.0", commit="833db1fb7b2a5667575cc2e7c2fefc8360c8d7fb")
 	version("1.12.1", md5="ca37ec5b6c247bc5b20194bd889579e0")
 
 	depends_on("r-rcpp", type=("build", "run"))

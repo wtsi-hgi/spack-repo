@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,9 +17,12 @@ class RImager(RPackage):
 	for image processing."""
 
 	cran = "imager"
-
-	license("LGPL-3.0-only")
-
+	version("0.42.19", sha256="187abccba648ecece5e466ca6333acd5c8fdd1476daa2d04d5fa9ec5400ae1e2")
+	version("0.42.13", sha256="d90a9893d11190ba249c7fae5bd6517a77907efbce2941452cb2aec57bb5cf7f")
+	version("0.42.11", sha256="47f8b7ff8d05a5191e30ad1869f12a62bdbe3142b22b12a6032dec9b5f8532a8")
+	version("0.42.10", sha256="01939eb03ad2e1369a4240a128c3b246a4c56f572f1ea4967f1acdc555adaeee")
+	version("0.42.3", sha256="6fc308153df8251cef48f1e13978abd5d29ec85046fbe0b27c428801d05ebbf3")
+	version("0.41.2", sha256="9be8bc8b3190d469fcb2883045a404d3b496a0380f887ee3caea11f0a07cd8a5")
 	version("0.45.8", md5="64d32f0539023a7203f7c96cddd42a57")
 
 	depends_on("r@2.10:", type=("build", "run"))

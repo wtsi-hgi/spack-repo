@@ -20,6 +20,7 @@ class RAmt(RPackage):
 	cran = "amt" 
 
 	version("0.2.1.0", md5="721897f7390713213cd2442f50cc15cc")
+	version("0.2.2.0", md5="03e9fbc432bb09b9302fc840aa2fc7e9")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

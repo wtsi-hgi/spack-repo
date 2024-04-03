@@ -19,11 +19,10 @@ class RGiscor(RPackage):
 	homepage = "https://ropengov.github.io/giscoR/"
 	cran = "giscoR" 
 
-	version("0.4.0", md5="5c86e94c7a85365f4d0d56a1ac6c3089")
+	version("0.4.2", md5="2d19dacc0fac612250fe7393b9913717")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-countrycode@1.2:", type=("build", "run"))
 	depends_on("r-geojsonsf@2:", type=("build", "run"))
-	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-rappdirs@0.3:", type=("build", "run"))
 	depends_on("r-sf@0.9:", type=("build", "run"))

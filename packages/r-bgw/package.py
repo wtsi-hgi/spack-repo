@@ -46,5 +46,6 @@ class RBgw(RPackage):
 	cran = "bgw" 
 
 	version("0.1.2", md5="846e9c0b57871e9dad3729c1e40b840a")
+	version("0.1.3", md5="2aefeee43a088c799b616118d1aba4a8")
 
 	depends_on("r@4:", type=("build", "run"))

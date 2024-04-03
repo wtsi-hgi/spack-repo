@@ -9,12 +9,12 @@ from spack.package import *
 class RLpcde(RPackage):
 	"""Boundary Adaptive Local Polynomial Conditional Density Estimator
 
-	Tools for estimation and inference of conditional densities, derivatives and functions. This is the companion software for Cattaneo, Chandak, Jansson and Ma (2024).
+	Tools for estimation and inference of conditional densities, derivatives and functions. This is the companion software for Cattaneo, Chandak, Jansson and Ma (2024) <arXiv:2204.10359>.
 	"""
 	
 	cran = "lpcde" 
 
-	version("0.1.2", md5="78a3868a0f0f9597da298abcc5382f48")
+	version("0.1.3", md5="5bd5e1b10606314831c0f951a5a3a831")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
@@ -24,4 +24,5 @@ class RLpcde(RPackage):
 	depends_on("r-mvtnorm", type=("build", "run"))
 	depends_on("r-combinat", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
+	depends_on("r-rdpack", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))

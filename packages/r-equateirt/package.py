@@ -23,6 +23,7 @@ class REquateirt(RPackage):
 	cran = "equateIRT" 
 
 	version("2.3.0", md5="e33238f3f9c59812163abbd3ef2ab939")
+	version("2.4.0", md5="41573bf1cfa67d0550103ad900466959")
 
 	depends_on("r-statmod", type=("build", "run"))
 	depends_on("r-mirt", type=("build", "run"))

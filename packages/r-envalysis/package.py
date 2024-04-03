@@ -21,6 +21,7 @@ class REnvalysis(RPackage):
 	cran = "envalysis" 
 
 	version("0.6.0", md5="83b75d9cd54651bf2397d21fcfa66fbd")
+	version("0.7.0", md5="a4dc18016dacce02b186688936893ee6")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-drc", type=("build", "run"))

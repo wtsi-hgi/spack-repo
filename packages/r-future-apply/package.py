@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,8 +18,13 @@ class RFutureApply(RPackage):
 	framework."""
 
 	cran = "future.apply"
-
-	version("1.11.1", md5="44e4c075314f465342c54a3b15e066d1")
+	version("1.10.0", sha256="dee92dd84812fe8c55064c0f0e6d806c0c29848b5a5fc4a7725d6a4b623e94aa")
+	version("1.9.1", sha256="4f22ccd5caa62077581c6adc4d35543451e547220270aed3f1abcbaa6a202133")
+	version("1.9.0", sha256="6166c1c5ce30b9745059c3d30c8110f7c1d51871e58aa414f195cb1f91c467f5")
+	version("1.8.1", sha256="0d5bc3cb0289665bb27ae4ccad51fcc5ebf6dca46872b0a4e57790b9dc0aa6c7")
+	version("1.7.0", sha256="2ffa6adb55f239918ce9679b7eac8dcc4bf2e6bed35c9cbedf4bf90d906345db")
+	version("1.3.0", sha256="6374eca49bb81e05c013509c8e324cf9c5d023f9f8217b29ce7b7e12025ca371")
+	version("1.11.2", md5="6ce189126a14e288f34d3d84d8898855")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-future@1.28:", type=("build", "run"))

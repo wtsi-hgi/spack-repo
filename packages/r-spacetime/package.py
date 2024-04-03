@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,9 +17,12 @@ class RSpacetime(RPackage):
 	aggregation, retrieving coordinates, print, summary, etc."""
 
 	cran = "spacetime"
-
-	license("GPL-2.0-or-later")
-
+	version("1.3-0", sha256="2e9902a5c6f355f0b8e23237cf3b1553f22d7d79493bdbdb99e49104b9ef541b")
+	version("1.2-8", sha256="4297a027ab4cff32e41cec65aa7d92af66c7a885fd2322b010b0af9a14f24c59")
+	version("1.2-6", sha256="8fd46606ed9589ffce19368d40004890f96e8fe77f13b546e6a2f8b9ced0dd81")
+	version("1.2-5", sha256="8f2acc3886780a902fb0476d6ab271e6640be1a1af4c7f9a21d8a2882fb72746")
+	version("1.2-3", sha256="ca7c0b962d5da0741f6dd85b271d693598756e0eeeb364ada828dbb6d1b9b25b")
+	version("1.2-2", sha256="1e9d3f92e5c4614a69c82a58bf0b5c829b4ed262bf1250bef943ae286056ea2d")
 	version("1.3-1", md5="cabe0b0e186f56a2cd3b7033b4c874ab")
 
 	depends_on("r@3:", type=("build", "run"))

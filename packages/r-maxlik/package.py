@@ -18,7 +18,7 @@ class RMaxlik(RPackage):
 	
 	cran = "maxLik" 
 
-	version("1.5-2", md5="bee4da08f6364d53279bf69027b7c4fc")
+	version("1.5-2.1", md5="e323d471779aee086abc6d7771701258")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-misctools@0.6.8:", type=("build", "run"))

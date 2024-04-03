@@ -14,10 +14,10 @@ class RRverbalexpressions(RPackage):
     build expressions in a chain-like fashion.
 	"""
 	
-	homepage = "https://github.com/tyluRp/RVerbalExpressions"
+	homepage = "https://github.com/VerbalExpressions/RVerbalExpressions"
 	cran = "RVerbalExpressions" 
 
-	version("0.1.0", md5="451182ae27f889fd81f6de4f1c37c949")
+	version("0.1.1", md5="416c9ce4f36f26384b76b177fb4be00a")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

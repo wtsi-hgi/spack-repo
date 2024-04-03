@@ -26,6 +26,7 @@ class REgocor(RPackage):
 	cran = "EgoCor" 
 
 	version("1.1.0", md5="6e2dcdb78435763cf6b270973638a20f")
+	version("1.2.0", md5="7a7f33b6ce53382a7fa4a05c32fa991e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-gstat", type=("build", "run"))

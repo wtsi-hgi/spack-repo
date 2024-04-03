@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -14,9 +14,10 @@ class RGeosphere(RPackage):
 	locations."""
 
 	cran = "geosphere"
-
-	license("GPL-3.0-or-later")
-
+	version("1.5-14", sha256="f2c3a4ae1c87c86c123d48f134721c809fb33675cb5cd0959080049eabdbe42d")
+	version("1.5-10", sha256="56cd4f787101e2e18f19ddb83794154b58697e63cad81168f0936f60ab7eb497")
+	version("1.5-7", sha256="9d9b555e2d59a5ae174ae654652121f169fbc3e9cf66c2491bfbe0684b6dd8a0")
+	version("1.5-5", sha256="8b6fe012744fc45b88e0ef6f20e60e103ef013e761e99dcff3f9dceeedbdce6d")
 	version("1.5-18", md5="46dd202b43575a2e12a2bf93723dbddf")
 
 	depends_on("r@3:", type=("build", "run"))

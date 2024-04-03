@@ -29,6 +29,7 @@ class RBsamgp(RPackage):
 	cran = "bsamGP" 
 
 	version("1.2.4", md5="db44909f3d37c4486c531232e8f77014")
+	version("1.2.5", md5="18a0785b529afb085523a8df623dd03e")
 
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

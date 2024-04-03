@@ -19,15 +19,15 @@ class RMigconnectivity(RPackage):
     incorporating uncertainty from multiple sources of sampling error. For
     cross-species comparisons, methods are provided to estimate
     differences in migratory connectivity strength, incorporating
-    uncertainty. See Cohen et al. (2018) <doi:10.1111/2041-210X.12916>, Cohen et
-    al. (2019) <doi:10.1111/ecog.03974>, and Roberts et al. (2023) 
-    <doi:10.1002/eap.2788> for details on some of these methods.
+    uncertainty. See Cohen et al. (2018) <doi:10.1111/2041-210X.12916>,
+    Cohen et al. (2019) <doi:10.1111/ecog.03974>, and Roberts et al.
+    (2023) <doi:10.1002/eap.2788> for details on some of these methods.
 	"""
 	
 	homepage = "https://github.com/SMBC-NZP/MigConnectivity"
 	cran = "MigConnectivity" 
 
-	version("0.4.5", md5="d944af256e2e676c9661efbfd00c7e2c")
+	version("0.4.7", md5="b7f4c7733cd9213d4ef12e82fc12e4e2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-coda", type=("build", "run"))

@@ -13,9 +13,9 @@ class RRibosomeprofilingqc(RPackage):
 	"""
 	
 	bioc = "ribosomeProfilingQC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ribosomeProfilingQC_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ribosomeProfilingQC/ribosomeProfilingQC_1.14.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ribosomeProfilingQC_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ribosomeProfilingQC/ribosomeProfilingQC_1.14.1.tar.gz"]
 
-	version("1.14.0", md5="f26a7222a62ed0c3462336d1c945cea6")
+	version("1.14.1", md5="0e8192f66f9ba7110763755200edee3a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

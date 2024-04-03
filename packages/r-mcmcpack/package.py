@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,7 +18,9 @@ class RMcmcpack(RPackage):
 	Metropolis sampling algorithm, and tools for visualization are provided."""
 
 	cran = "MCMCpack"
-
+	version("1.6-3", sha256="cb14ba20690b31fd813b05565484c866425f072a5ad99a5cbf1da63588958db3")
+	version("1.6-0", sha256="b5b9493457d11d4dca12f7732bd1b3eb1443852977c8ee78393126f13deaf29b")
+	version("1.5-0", sha256="795ffd3d62bf14d3ecb3f5307bd329cd75798cf4b270ff0e768bc71a35de0ace")
 	version("1.7-0", md5="b17248f41c8121305c9121b770f44c94")
 
 	depends_on("r@3.6:", type=("build", "run"))

@@ -16,12 +16,10 @@ class RRibd(RPackage):
     given kappa coefficients, as described in Vigeland (2020)
     <doi:10.1007/s00285-020-01505-x>. In addition to the standard
     coefficients, 'ribd' also computes a range of lesser-known
-    coefficients, including generalised kinship coefficients (Karigl
-    (1981) <doi:10.1111/j.1469-1809.1981.tb00341.x>; Weeks and Lange
-    (1988) <https://pubmed.ncbi.nlm.nih.gov/3422543/>),
-    two-locus coefficients (Thompson (1988) <doi:10.1093/imammb/5.4.261>)
-    and multi-person coefficients. Many features of 'ribd' are available
-    through the online app 'QuickPed' at
+    coefficients, including generalised kinship coefficients, multi-person
+    coefficients and two-locus coefficients (Vigeland, 2023,
+    <doi:10.1093/g3journal/jkac326>). Many features of 'ribd' are
+    available through the online app 'QuickPed' at
     <https://magnusdv.shinyapps.io/quickped>; see Vigeland (2022)
     <doi:10.1186/s12859-022-04759-y>.
 	"""
@@ -29,9 +27,9 @@ class RRibd(RPackage):
 	homepage = "https://github.com/magnusdv/ribd"
 	cran = "ribd" 
 
-	version("1.6.1", md5="b1fa2ed7b11224bc886e762a4a58d8cb")
+	version("1.7.0", md5="91f89bfa31d65ec85a3fb2f0f7be8c1c")
 
-	depends_on("r-pedtools@2:", type=("build", "run"))
+	depends_on("r-pedtools@2.2:", type=("build", "run"))
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
 	depends_on("r-kinship2", type=("build", "run"))

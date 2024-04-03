@@ -18,15 +18,12 @@ class RSarima(RPackage):
     ARIMA models with trends, exogenous variables and arbitrary roots on the
     unit circle, which can be fixed or estimated (for the algebraic basis for
     this see <arXiv:2208.05055>, a paper on the methodology is being prepared).
-    The suggested package 'FitARMA' can be installed with
-    'remotes::install_github("cran/FitARMA")' if necessary but is no longer
-    needed in normal use.
 	"""
 	
 	homepage = "https://geobosh.github.io/sarima/"
 	cran = "sarima" 
 
-	version("0.9.2", md5="c6f601e5403a4469b35b8dff95476f44")
+	version("0.9.3", md5="7a98dab977d6c1e3b34017b192fb092b")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-polynomf@1.0.0:", type=("build", "run"))

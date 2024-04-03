@@ -14,9 +14,11 @@ class RCiw(RPackage):
  The package name is a contraption of 'CRAN Incoming Watcher'.
 	"""
 	
+	homepage = "https://github.com/eddelbuettel/ciw"
 	cran = "ciw" 
 
 	version("0.0.1", md5="ff73b9e57c3084c51a50ff6016daa561")
+	version("0.0.2", md5="0a29bd77081d37ef87d3106dee2bb37b")
 
 	depends_on("r-curl", type=("build", "run"))
 	depends_on("r-xml", type=("build", "run"))

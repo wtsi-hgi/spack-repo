@@ -24,7 +24,7 @@ Censoring
 	homepage = "https://github.com/Nago2020/SemiPar.depCens"
 	cran = "SemiPar.depCens" 
 
-	version("0.1.1", md5="4be2c0ea0be975f5e4a11a8bc0cde32f")
+	version("0.1.2", md5="efe01256118f09d93d36038ffd4f1abd")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

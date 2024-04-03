@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -25,7 +25,7 @@ class RRocr(RPackage):
 	reasonable default values for all optional parameters."""
 
 	cran = "ROCR"
-
+	version("1.0-7", sha256="e7ef710f847e441a48b20fdc781dbc1377f5a060a5ee635234053f7a2a435ec9")
 	version("1.0-11", md5="6b535985a22c7e0519ad85027c55dc3a")
 
 	depends_on("r@3.6:", type=("build", "run"))

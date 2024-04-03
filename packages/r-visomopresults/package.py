@@ -18,7 +18,7 @@ class RVisomopresults(RPackage):
 	homepage = "https://oxford-pharmacoepi.github.io/visOmopResults/"
 	cran = "visOmopResults" 
 
-	version("0.1.1", md5="971ecb37c2fc1f6223255d71b254a90e")
+	version("0.2.1", md5="f7e9af77791346a63eeb8bdd5cbfd226")
 
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
@@ -27,4 +27,5 @@ class RVisomopresults(RPackage):
 	depends_on("r-lifecycle", type=("build", "run"))
 	depends_on("r-omopgenerics@0.1:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
+	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))

@@ -15,8 +15,20 @@ class RDendroanalyst(RPackage):
 	cran = "dendRoAnalyst" 
 
 	version("0.1.4", md5="94bb809a972042318f4ddcea902dad5f")
+	version("0.1.5", md5="4d78ba406296aef87b4a7a73b83ccdc8")
 
-	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-boot", type=("build", "run"))
-	depends_on("r-pspline", type=("build", "run"))
+	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r-tidyverse", type=("build", "run"))
+	depends_on("r-dplyr", type=("build", "run"))
+	depends_on("r-ggplot2", type=("build", "run"))
+	depends_on("r-lubridate", type=("build", "run"))
+	depends_on("r-readxl", type=("build", "run"))
+	depends_on("r-tibble", type=("build", "run"))
+	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-zoo", type=("build", "run"))
+	depends_on("r-forecast", type=("build", "run"))
+	depends_on("r-mgcv", type=("build", "run"))
+	depends_on("r-minpack-lm", type=("build", "run"))
+	depends_on("r-pspline", type=("build", "run"))
+	depends_on("r-stringr", type=("build", "run"))

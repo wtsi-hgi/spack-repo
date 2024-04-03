@@ -19,8 +19,10 @@ class RCensobr(RPackage):
 	cran = "censobr" 
 
 	version("0.3.1", md5="9d3701f5210610e5bcee0b8990750ca2")
+	version("0.3.2", md5="edccbd644cf54e38b7b4dc986a7740da")
 
 	depends_on("r@4:", type=("build", "run"))
+	depends_on("r-arrow", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-httr@1.4.1:", type=("build", "run"))

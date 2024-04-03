@@ -19,6 +19,3 @@ class RRbowtie(RPackage):
 	version("1.42.0", md5="409fc50371b1eaf9be2af500aff05249")
 
 	depends_on("zlib", type=("build", "link", "run"))
-
-	def setup_build_environment(self, env):
-		env.append_path("CPATH", self.spec["zlib"].prefix.include)

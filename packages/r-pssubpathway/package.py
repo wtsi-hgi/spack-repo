@@ -20,7 +20,7 @@ class RPssubpathway(RPackage):
 	
 	cran = "psSubpathway" 
 
-	version("0.1.2", md5="6bbc7af44386086b6f35d44eba835c5d")
+	version("0.1.3", md5="6f3b002db599ad063b4b3a1f1ea7c6cb")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-gsva", type=("build", "run"))

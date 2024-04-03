@@ -18,5 +18,6 @@ class RBayesxsrc(RPackage):
 	cran = "BayesXsrc" 
 
 	version("3.0-4", md5="5c989dc84940a26b85c5c24dd21a05c1")
+	version("3.0-5", md5="d0c7960aa875fcf8f5a3ac8e852c52b0")
 
 	depends_on("r@2.8:", type=("build", "run"))

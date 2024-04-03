@@ -29,6 +29,7 @@ class RCollapse(RPackage):
 	cran = "collapse" 
 
 	version("2.0.10", md5="921badb522df6ac83f39085cd52ebb78")
+	version("2.0.12", md5="60bc3337a1ce502f6f06e92eb62a7faf")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

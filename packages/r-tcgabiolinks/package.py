@@ -14,9 +14,9 @@ class RTcgabiolinks(RPackage):
 	
 	homepage = "https://github.com/BioinformaticsFMRP/TCGAbiolinks"
 	bioc = "TCGAbiolinks" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TCGAbiolinks_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TCGAbiolinks/TCGAbiolinks_2.30.0.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TCGAbiolinks_2.30.4.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TCGAbiolinks/TCGAbiolinks_2.30.4.tar.gz"]
 
-	version("2.30.0", md5="91536d6234ebd992dac8102393c363d0")
+	version("2.30.4", md5="c2509b015b8a3bdc6621f0431e640b67")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-downloader@0.4:", type=("build", "run"))

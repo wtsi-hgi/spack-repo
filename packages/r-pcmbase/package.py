@@ -34,10 +34,11 @@ Comparative Models
 	homepage = "https://venelin.github.io/PCMBase/"
 	cran = "PCMBase" 
 
-	version("1.2.13", md5="6c4aaad3ed488ddc8a43c00c8257aedc")
+	version("1.2.14", md5="9be7d13a1bb7e3c099e2273282d7c194")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))
+	depends_on("r-abind", type=("build", "run"))
 	depends_on("r-expm", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

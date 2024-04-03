@@ -16,10 +16,12 @@ Outcomes with 'INLA'
 	homepage = "https://github.com/DenisRustand/INLAjoint"
 	cran = "INLAjoint" 
 
-	version("24.2.4", md5="651f36a990a46f7558afed2d0ccd0bb7")
+	version("24.3.25", md5="2232e2b8e21b476b7b58b398d733ad0a")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-numderiv", type=("build", "run"))
 	depends_on("r-lme4", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
+	depends_on("r-nlme", type=("build", "run"))
+	depends_on("r-mvtnorm", type=("build", "run"))

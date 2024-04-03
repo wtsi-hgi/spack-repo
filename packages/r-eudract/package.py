@@ -17,6 +17,7 @@ ClinicalTrials.gov
 	cran = "eudract" 
 
 	version("0.10.2", md5="c0b1a975db1308adf715160d37c9f93c")
+	version("1.0.0", md5="d4775e0724d428dd3d7a2424ae075f32")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
@@ -26,5 +27,6 @@ ClinicalTrials.gov
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
+	depends_on("r-patchwork", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))
 	depends_on("r-gridextra", type=("build", "run"))

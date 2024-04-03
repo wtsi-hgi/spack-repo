@@ -25,7 +25,7 @@ class RPlm(RPackage):
 	homepage = "https://cran.r-project.org/package=plm"
 	cran = "plm" 
 
-	version("2.6-3", md5="d79cf0f7deb647e93921ebc699a26b4d")
+	version("2.6-4", md5="57da9057cb351e98cf3351074202af25")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

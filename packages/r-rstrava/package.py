@@ -14,7 +14,7 @@ class RRstrava(RPackage):
 	
 	cran = "rStrava" 
 
-	version("1.3.0", md5="677fde9256e86d6624dd30fc06221ea7")
+	version("1.3.1", md5="50e943239532f882eafe5c2a7a046f8f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
@@ -24,11 +24,11 @@ class RRstrava(RPackage):
 	depends_on("r-googleway", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-plyr", type=("build", "run"))
-	depends_on("r-prettymapr", type=("build", "run"))
+	depends_on("r-maptiles", type=("build", "run"))
 	depends_on("r-rcurl", type=("build", "run"))
 	depends_on("r-rvest", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
+	depends_on("r-tidyterra", type=("build", "run"))
 	depends_on("r-xml", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))

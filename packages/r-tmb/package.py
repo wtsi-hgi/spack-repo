@@ -22,7 +22,7 @@ class RTmb(RPackage):
 	homepage = "https://github.com/kaskr/adcomp/wiki"
 	cran = "TMB" 
 
-	version("1.9.10", md5="6554e07819b6fc786df8d68a19733344")
+	version("1.9.11", md5="ec34fe24ffa06936e400f6b483e52151")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

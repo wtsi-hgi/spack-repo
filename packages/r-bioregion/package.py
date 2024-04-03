@@ -16,6 +16,7 @@ class RBioregion(RPackage):
 	cran = "bioregion" 
 
 	version("1.0.0", md5="7401daff7bd87109da191f2d1f80b418")
+	version("1.1.0", md5="d248e1254d9ec4df4ac0f32e00afb8cf")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))
@@ -25,6 +26,7 @@ class RBioregion(RPackage):
 	depends_on("r-dbscan", type=("build", "run"))
 	depends_on("r-dynamictreecut", type=("build", "run"))
 	depends_on("r-fastcluster", type=("build", "run"))
+	depends_on("r-fastkmedoids", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))
 	depends_on("r-mathjaxr", type=("build", "run"))

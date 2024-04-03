@@ -19,8 +19,8 @@ Variables
     a philosophy with methods useful for variable selection in the 
     presence of prior informational asymmetry. This situation exists for time 
     series data with complex seasonality, as shown in Peterson and Cavanaugh 
-    (2023+) <doi:10.48550/arXiv.2211.01492>, which also describes this package
-    in greater detail. The sparsity-ranked penalization methods for Time Series
+    (2024) <doi:10.1177/1471082X231225307>, which also describes this package
+    in greater detail. The sparsity-ranked penalization methods for time series
     implemented in 'fastTS' can fit large/complex/high-frequency time series
     quickly, even with a high-dimensional exogenous feature set. The method is
     considerably faster than its competitors, while often producing more 
@@ -33,6 +33,7 @@ Variables
 	cran = "fastTS" 
 
 	version("1.0.0", md5="845aabe2ed1dfeb1fc48aa3be197f5d8")
+	version("1.0.1", md5="c643b31795678eb27b748138df07d047")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

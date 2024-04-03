@@ -20,7 +20,7 @@ Problems
 	
 	cran = "wflo" 
 
-	version("1.8", md5="6dc75099505f99a14212ed0be49e2f1f")
+	version("1.9", md5="6a15a1f3feeee1082e13f1d186fe805c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-plotrix", type=("build", "run"))

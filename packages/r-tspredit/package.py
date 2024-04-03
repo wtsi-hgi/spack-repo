@@ -15,17 +15,12 @@ class RTspredit(RPackage):
 	homepage = "https://github.com/cefet-rj-dal/daltoolbox"
 	cran = "tspredit" 
 
-	version("1.0.747", md5="52696139e4e6251c264da1092587fc48")
+	version("1.0.767", md5="f0284fe22b99a79990b333a4fa2184ef")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-glmnet", type=("build", "run"))
-	depends_on("r-smotefamily", type=("build", "run"))
-	depends_on("r-leaps", type=("build", "run"))
-	depends_on("r-fselector", type=("build", "run"))
 	depends_on("r-forecast", type=("build", "run"))
 	depends_on("r-mfilter", type=("build", "run"))
 	depends_on("r-desctools", type=("build", "run"))
 	depends_on("r-kfas", type=("build", "run"))
-	depends_on("r-doby", type=("build", "run"))
 	depends_on("r-daltoolbox", type=("build", "run"))

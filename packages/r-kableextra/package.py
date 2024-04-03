@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -17,7 +17,7 @@ class RKableextra(RPackage):
 	syntax."""
 
 	cran = "kableExtra"
-
+	version("1.3.4", sha256="091ffac282cf9257edcec1a06da38b5e6516f111296bedb934e32f5692ffbbb0")
 	version("1.4.0", md5="94d47966ff22e10e9280f0c39568f7cd")
 
 	depends_on("r@3.1:", type=("build", "run"))

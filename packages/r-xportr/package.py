@@ -9,23 +9,25 @@ from spack.package import *
 class RXportr(RPackage):
 	"""Utilities to Output CDISC SDTM/ADaM XPT Files
 
-	Tools to build CDISC compliant data sets and check for CDISC compliance.
+	Tools to build CDISC compliant data sets and check for CDISC
+    compliance.
 	"""
 	
-	homepage = "https://github.com/atorus-research/xportr"
+	homepage = "https://atorus-research.github.io/xportr/"
 	cran = "xportr" 
 
-	version("0.3.2", md5="9de9aea1fc9cddeb8d497449d1a5b739")
+	version("0.4.0", md5="9fef061b259881657ce99269773a5118")
 
 	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-dplyr@1.0.2:", type=("build", "run"))
-	depends_on("r-purrr@0.3.4:", type=("build", "run"))
-	depends_on("r-stringr@1.4:", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-glue@1.4.2:", type=("build", "run"))
-	depends_on("r-rlang@0.4.10:", type=("build", "run"))
+	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
-	depends_on("r-tidyselect", type=("build", "run"))
-	depends_on("r-readr", type=("build", "run"))
+	depends_on("r-dplyr@1.0.2:", type=("build", "run"))
+	depends_on("r-glue@1.4.2:", type=("build", "run"))
 	depends_on("r-haven@2.5:", type=("build", "run"))
 	depends_on("r-lifecycle", type=("build", "run"))
+	depends_on("r-magrittr", type=("build", "run"))
+	depends_on("r-purrr@0.3.4:", type=("build", "run"))
+	depends_on("r-readr", type=("build", "run"))
+	depends_on("r-rlang@0.4.10:", type=("build", "run"))
+	depends_on("r-stringr@1.4:", type=("build", "run"))
+	depends_on("r-tidyselect", type=("build", "run"))

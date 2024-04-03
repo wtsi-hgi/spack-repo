@@ -16,5 +16,6 @@ class RClimatol(RPackage):
 	cran = "climatol" 
 
 	version("4.0.0", md5="15e768f957df77168c0aa4a5f94caea4")
+	version("4.1.0", md5="f74c025c677d7353ca8981d6ef6d0f17")
 
 	depends_on("r@3.6:", type=("build", "run"))

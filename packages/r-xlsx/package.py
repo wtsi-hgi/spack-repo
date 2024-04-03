@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -13,9 +13,7 @@ class RXlsx(RPackage):
 	97/2000/XP/2003 file formats."""
 
 	cran = "xlsx"
-
-	license("GPL-3.0-only")
-
+	version("0.6.1", sha256="a580bd16b5477c1c185bf681c12c1ffff4088089f97b6a37997913d93ec5a8b4")
 	version("0.6.5", md5="838e6843c8e958afced89b64c1c563f3")
 
 	depends_on("r-rjava", type=("build", "run"))

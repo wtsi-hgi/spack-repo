@@ -16,18 +16,18 @@ Model
 	homepage = "https://darwin-eu.github.io/IncidencePrevalence/"
 	cran = "IncidencePrevalence" 
 
-	version("0.7.1", md5="f235ecb23910b3f253e94917bc67c74d")
+	version("0.7.2", md5="b1599597737715ecfe14d1dd4d484ed5")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-cdmconnector@1.3:", type=("build", "run"))
 	depends_on("r-checkmate@2:", type=("build", "run"))
 	depends_on("r-cli@3:", type=("build", "run"))
 	depends_on("r-dbi@1:", type=("build", "run"))
-	depends_on("r-dbplyr@2:", type=("build", "run"))
+	depends_on("r-dbplyr@2.5:", type=("build", "run"))
 	depends_on("r-dplyr@1.1:", type=("build", "run"))
 	depends_on("r-glue@1.5:", type=("build", "run"))
 	depends_on("r-ggplot2@3.4:", type=("build", "run"))
-	depends_on("r-omopgenerics", type=("build", "run"))
+	depends_on("r-omopgenerics@0.1.2:", type=("build", "run"))
 	depends_on("r-scales@1.1:", type=("build", "run"))
 	depends_on("r-lifecycle", type=("build", "run"))
 	depends_on("r-lubridate@1:", type=("build", "run"))

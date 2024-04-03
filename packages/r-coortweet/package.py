@@ -16,6 +16,7 @@ class RCoortweet(RPackage):
 	cran = "CooRTweet" 
 
 	version("2.0.0", md5="76564563503330d784a687c817c4be93")
+	version("2.0.2", md5="1ad0df6eb49b6e28c593106b6a6b86f7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

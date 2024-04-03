@@ -28,6 +28,7 @@ class RCwbtools(RPackage):
 	cran = "cwbtools" 
 
 	version("0.4.0", md5="3cb73899b38c4ac8454bb1b75be9e6e4")
+	version("0.4.1", md5="748823811ba0599b982a1c9a53b2c3a1")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

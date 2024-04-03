@@ -14,9 +14,11 @@ class RRtensor2(RPackage):
 	
 	cran = "rTensor2" 
 
-	version("0.2.0", md5="f8ffd2f4f71d46e5d333adbfcd8b472e", url="https://cran.r-project.org/src/contrib/rTensor2_0.2.0.tar.gz")
+	version("2.0.0", md5="cd7e8ad04fc1395e19f9b5a4efa48b31", url="https://cran.r-project.org/src/contrib/rTensor2_2.0.0.tar.gz")
 
 	depends_on("r@4.2:", type=("build", "run"))
+	depends_on("r-raster", type=("build", "run"))
+	depends_on("r-png", type=("build", "run"))
 	depends_on("r-rtensor", type=("build", "run"))
 	depends_on("r-wavethresh", type=("build", "run"))
 	depends_on("r-gsignal", type=("build", "run"))

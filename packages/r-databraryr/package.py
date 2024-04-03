@@ -17,6 +17,7 @@ class RDatabraryr(RPackage):
 	cran = "databraryr" 
 
 	version("0.6.1", md5="6f319aab4e5e18080d56a5f0e7d4e303")
+	version("0.6.3", md5="7b81de7b59f55f621ae4bb203cc91c83")
 
 	depends_on("r-dplyr@1.1.4:", type=("build", "run"))
 	depends_on("r-httr@1.4.7:", type=("build", "run"))

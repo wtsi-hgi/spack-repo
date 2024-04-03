@@ -10,13 +10,13 @@ class RSpatialddls(RPackage):
 	"""Deconvolution of Spatial Transcriptomics Data Based on Neural
 Networks
 
-	Deconvolution of spatial transcriptomics data using deconvolution models based on deep neural networks and single-cell RNA-seq data. These models are able to make accurate estimates of the cell composition of spots in spatial transcriptomics datasets from the same context using the advances provided by deep learning and the meaningful information provided by single-cell RNA-Seq data. See Torroja and Sanchez-Cabo (2019) <doi:10.3389/fgene.2019.00978> and Mañanes et al. (2023) <doi:10.1101/2023.08.31.555677> to get an overview of the method and see some examples of its performance. 
+	Deconvolution of spatial transcriptomics data based on neural networks and single-cell RNA-seq data. SpatialDDLS implements a workflow to create neural network models able to make accurate estimates of cell composition of spots from spatial transcriptomics data using deep learning and the meaningful information provided by single-cell RNA-seq data. See Torroja and Sanchez-Cabo (2019) <doi:10.3389/fgene.2019.00978> and Mañanes et al. (2024) <doi:10.1093/bioinformatics/btae072> to get an overview of the method and see some examples of its performance. 
 	"""
 	
 	homepage = "https://diegommcc.github.io/SpatialDDLS/"
 	cran = "SpatialDDLS" 
 
-	version("1.0.0", md5="8c8f68521d5aab50dc27bca777b3731a")
+	version("1.0.1", md5="35dbef7a405944fad91f40acebb29063")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

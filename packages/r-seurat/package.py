@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,10 +18,18 @@ class RSeurat(RPackage):
 	et al (2019) <doi:10.1016/j.cell.2019.05.031> for more details."""
 
 	cran = "Seurat"
-
-	version("5.0.2", md5="cb58cbc4b85dae89262c43f1d86c49ff")
-	version("5.0.1", md5="3965b1ee0bdc7f005d250a3dd429bcc3")
-	version("4.4.0", sha256="0f17df9597642cfc1db4d8718f0b59ebab9fbed328b1f885f42ee85ea0dcb4dd")
+	version("4.3.0", sha256="7ebacb3b86f74279de60b597f9a6e728f0668719811b0dca3425d21762fff97c")
+	version("4.2.1", sha256="410238b6ca147451b43800a6e49c132fa5f6aacfe6b93b39a1e4d61257a9e35e")
+	version("4.2.0", sha256="22a3d22a9ba255c4db5b37339b183fdfb91e2d37a8b8d58a9ff45b1bc414ebef")
+	version("4.1.1", sha256="201aa96919b32378fc4cb67557188214c1242dcbae50cadd7d12c86666af8ace")
+	version("4.1.0", sha256="2505829a2763e449684dd1b107ee6982e019ee9fecb093adca7b283cad1b315d")
+	version("3.2.3", sha256="83aa48f75c3756bee23e108a8b01028366e24f237fe990cb441f3525e0613f87")
+	version("3.1.0", sha256="d8d3fad2950a8f791376e3d20c72ea07c68bf8d82d800661cab5ce696db39d45")
+	version("3.0.2", sha256="16df5dec6b41d49320c5bf5ce30eb3b7dedeea69b054b55b77528f2f2b7bce04")
+	version("3.0.1", sha256="8c467bdbfdb9aff51bde6a897ff98a7389941f688639d8f1d36c71dde076a257")
+	version("2.1.0", sha256="7d20d231b979a4aa63cd7dae7e725405212e8975889f12b8d779c6c896c10ac3")
+	version("2.0.1", sha256="6aa33aa3afb29a8be364ab083c7071cfbc56ad042a019bcf6f939e0c8c7744f0")
+	version("5.0.3", md5="2112a71f0ea07db422650c86aacc5d25")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-seuratobject@5:", type=("build", "run"))

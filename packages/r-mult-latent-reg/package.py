@@ -14,7 +14,7 @@ class RMultLatentReg(RPackage):
 	
 	cran = "mult.latent.reg" 
 
-	version("0.1.6", md5="9d9bb4fc651840cc9bc6c7fa53cdf995")
+	version("0.1.7", md5="3bf4d7498c4763ea1368f20367356ca5")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))

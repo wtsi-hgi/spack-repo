@@ -20,7 +20,7 @@ class RNgchm(RPackage):
 	homepage = "https://md-anderson-bioinformatics.github.io/NGCHM-R/"
 	cran = "NGCHM" 
 
-	version("1.0.1", md5="59ebbe7552f8ce2da3c3c52029f9b8d8")
+	version("1.0.2", md5="dca0f6c319a3277546d42923282e7200")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))
@@ -29,5 +29,5 @@ class RNgchm(RPackage):
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-logger@0.2:", type=("build", "run"))
 	depends_on("r-tsvio", type=("build", "run"))
-	depends_on("java@1.8:", type=("build", "link", "run"))
+	depends_on("openjdk@11:", type=("build", "link", "run"))
 	depends_on("git", type=("build", "link", "run"))

@@ -21,7 +21,7 @@ class RKinship2(RPackage):
 	homepage = "https://cran.r-project.org/package=kinship2"
 	cran = "kinship2" 
 
-	version("1.9.6", md5="4200f976457cd96f73e5a5d707dc537c", url="https://cran.r-project.org/src/contrib/kinship2_1.9.6.tar.gz")
+	version("1.9.6.1", md5="5da1437d1110095b1c15884f48a0de79", url="https://cran.r-project.org/src/contrib/kinship2_1.9.6.1.tar.gz")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

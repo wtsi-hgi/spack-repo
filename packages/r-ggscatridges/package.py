@@ -15,7 +15,7 @@ class RGgscatridges(RPackage):
 	homepage = "https://github.com/matbou85/ggScatRidges"
 	cran = "ggScatRidges" 
 
-	version("0.1.0", md5="bf209eb0a00f57c6a7c59871752fc944")
+	version("0.1.1", md5="db1a7967fe84848249ea3999aa93effb")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))
@@ -23,3 +23,4 @@ class RGgscatridges(RPackage):
 	depends_on("r-ggridges", type=("build", "run"))
 	depends_on("r-viridis", type=("build", "run"))
 	depends_on("r-hrbrthemes", type=("build", "run"))
+	depends_on("r-ggrepel", type=("build", "run"))

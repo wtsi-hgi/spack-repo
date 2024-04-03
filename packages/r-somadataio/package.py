@@ -10,7 +10,7 @@ class RSomadataio(RPackage):
 	"""Input/Output 'SomaScan' Data
 
 	Load and export 'SomaScan' data via the
-    'SomaLogic Operating Co., Inc.' proprietary text file
+    'SomaLogic Operating Co., Inc.' structured text file
     called an ADAT ('*.adat'). For file format see
     <https://github.com/SomaLogic/SomaLogic-Data/blob/master/README.md>.
     The package also exports auxiliary functions for
@@ -21,7 +21,7 @@ class RSomadataio(RPackage):
 	homepage = "https://somalogic.github.io/SomaDataIO/"
 	cran = "SomaDataIO" 
 
-	version("6.0.0", md5="88f61d790be55c5e1117e97d30064e45")
+	version("6.1.0", md5="efa032745f828e272df22f1025d511bc")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -35,7 +35,9 @@ class RPmcmrplus(RPackage):
 	as well as generic summary, print and plot methods are provided."""
 
 	cran = "PMCMRplus"
-
+	version("1.9.6", sha256="7f4791566d7dfaed0883187c52fbb845797ff6a1066e77667683ce96391b72d7")
+	version("1.9.4", sha256="1ec36674bb6d2fac3a1b0889c4672e40849c7e3565ffb34bb73b61f973bba19a")
+	version("1.9.3", sha256="76baba60f57343fa5bb6f6d2ea27aab77178e02b0d2f9d5d74abde7d18994f03")
 	version("1.9.10", md5="8add406582b95d29df406d61089b0d00")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -23,3 +23,4 @@ class RDsfa(RPackage):
 	depends_on("r-rcpparmadillo", type=("build", "run"))
 	depends_on("r-copula", type=("build", "run"))
 	depends_on("r-gratia", type=("build", "run"))
+	depends_on("boost+math", type=("build", "link", "run"))

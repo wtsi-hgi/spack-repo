@@ -9,12 +9,12 @@ from spack.package import *
 class RMicrobiomestat(RPackage):
 	"""Statistical Methods for Microbiome Compositional Data
 
-	A suite of methods for powerful and robust microbiome data analysis addressing zero-inflation, phylogenetic structure and compositional effects (Zhou et al. (2021)<arXiv:2104.00242>).  The methods can be applied to the analysis of other (high-dimensional) compositional data arising from sequencing experiments.
+	A suite of methods for powerful and robust microbiome data analysis addressing zero-inflation, phylogenetic structure and compositional effects (Zhou et al. (2022)<doi:10.1186/s13059-022-02655-5>).  The methods can be applied to the analysis of other (high-dimensional) compositional data arising from sequencing experiments.
 	"""
 	
 	cran = "MicrobiomeStat" 
 
-	version("1.1", md5="e463de42620bebe5a007bad035b20792")
+	version("1.2", md5="5af3b2fd4cbb44471678703b43193d84")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
@@ -26,4 +26,3 @@ class RMicrobiomestat(RPackage):
 	depends_on("r-lmertest", type=("build", "run"))
 	depends_on("r-foreach", type=("build", "run"))
 	depends_on("r-modeest", type=("build", "run"))
-	depends_on("r-phyloseq", type=("build", "run"))

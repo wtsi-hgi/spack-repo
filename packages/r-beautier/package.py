@@ -25,6 +25,7 @@ class RBeautier(RPackage):
 	cran = "beautier" 
 
 	version("2.6.11", md5="c35bf69e01443fa9720556ce93989536")
+	version("2.6.12", md5="d60a66a245dd14cde5b579dcf896cda0")
 
 	depends_on("r-ape", type=("build", "run"))
 	depends_on("r-rappdirs", type=("build", "run"))

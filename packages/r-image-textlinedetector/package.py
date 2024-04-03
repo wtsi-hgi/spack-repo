@@ -23,3 +23,4 @@ class RImageTextlinedetector(RPackage):
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-magick", type=("build", "run"))
+	depends_on("opencv", type=("build", "link", "run"))

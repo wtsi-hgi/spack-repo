@@ -18,8 +18,9 @@ class RFieldhub(RPackage):
 	cran = "FielDHub" 
 
 	version("1.3.4", md5="c28f0aa750b0246b322c74a0cdd902ce")
+	version("1.3.7", md5="c306beddaf24a331018c2be39fbb2cf8")
 
-	depends_on("r@3.6:", type=("build", "run"))
+	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-config", type=("build", "run"))
 	depends_on("r-golem", type=("build", "run"))
 	depends_on("r-shiny@1.7:", type=("build", "run"))

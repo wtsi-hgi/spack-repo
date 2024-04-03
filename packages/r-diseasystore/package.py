@@ -20,12 +20,14 @@ class RDiseasystore(RPackage):
 	cran = "diseasystore" 
 
 	version("0.1.1", md5="e7bff8beb009be5159f0666a833b5e66")
+	version("0.2.0", md5="880f21827587ef3d4e7c4ee254fd8330")
 
 	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-dbi", type=("build", "run"))
 	depends_on("r-dbplyr", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
+	depends_on("r-isoweek", type=("build", "run"))
 	depends_on("r-lintr", type=("build", "run"))
 	depends_on("r-lubridate", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))

@@ -15,7 +15,7 @@ class RPrecast(RPackage):
 	homepage = "https://github.com/feiyoung/PRECAST"
 	cran = "PRECAST" 
 
-	version("1.6.4", md5="e3c0b20ba6460445b5bc83abd28e004c")
+	version("1.6.5", md5="bf2ba32293e50590886ded0417b88d84")
 
 	depends_on("r-gtools", type=("build", "run"))
 	depends_on("r@4:", type=("build", "run"))

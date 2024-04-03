@@ -19,12 +19,12 @@ Regression and Other Tools
     measuring the significance of each statistic calculated, mainly based on Monte Carlo simulations.
 	"""
 	
-	homepage = "http://lctools.science/"
+	homepage = "https://stamatisgeoai.eu"
 	cran = "lctools" 
 
-	version("0.2-8", md5="530ad6bef9927cbc62cc74a952532951")
+	version("0.2-10", md5="4e33111bb4b134a35b05c223bafcbd19")
 
-	depends_on("r@3.6:", type=("build", "run"))
+	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-sp", type=("build", "run"))
 	depends_on("r-reshape", type=("build", "run"))
 	depends_on("r-weights", type=("build", "run"))

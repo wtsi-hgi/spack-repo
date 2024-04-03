@@ -27,6 +27,3 @@ class RLeidenalg(RPackage):
 	depends_on("gmp", type=("build", "link", "run"))
 	depends_on("libxml2", type=("build", "link", "run"))
 	depends_on("glpk@4.57:", type=("build", "link", "run"))
-
-	def setup_build_environment(self, env):
-		env.append_path("CPATH", self.spec["gmp"].prefix.include)

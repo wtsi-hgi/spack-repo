@@ -14,9 +14,9 @@ class RNnsvg(RPackage):
 	
 	homepage = "https://github.com/lmweber/nnSVG"
 	bioc = "nnSVG" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nnSVG_1.6.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nnSVG/nnSVG_1.6.3.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nnSVG_1.6.4.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nnSVG/nnSVG_1.6.4.tar.gz"]
 
-	version("1.6.3", md5="49d0a36bf0af2e733dc383e6b2dbe333")
+	version("1.6.4", md5="7e39d32cf6dd4a19a46f0fa94980444d")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-spatialexperiment", type=("build", "run"))

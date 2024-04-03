@@ -20,6 +20,7 @@ Trees
 	cran = "DAISIEprep" 
 
 	version("0.3.2", md5="0bf1763c11c8496ff444f68a7df9b2bf")
+	version("0.4.0", md5="cc1018e939825fa4acf08593a0140286")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

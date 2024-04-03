@@ -15,7 +15,7 @@ class RRankinma(RPackage):
 	homepage = "https://rankinma.shinyapps.io/rankinma/"
 	cran = "rankinma" 
 
-	version("0.2.1", md5="a1fc3275769d99edf4adc340a9635129")
+	version("0.2.2", md5="07c5b189d7f2847d2c8cc68738521ff9")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))

@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,7 +16,7 @@ class RMendelianrandomization(RPackage):
 	methods."""
 
 	cran = "MendelianRandomization"
-
+	version("0.7.0", sha256="cad7cc1b6964fc7d299864378694c5fd947caa83796a1958e581299796b854c7")
 	version("0.9.0", md5="243c59b46fd305672205b094a9ae0b90")
 
 	depends_on("r@3.0.1:", type=("build", "run"))

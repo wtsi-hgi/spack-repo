@@ -21,6 +21,7 @@ class RDynforest(RPackage):
 	cran = "DynForest" 
 
 	version("1.1.2", md5="adbfb6acc7fa57c86e5a692ad685b027")
+	version("1.1.3", md5="5491ff2641f8081fba3de512ce6fc649")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-desctools", type=("build", "run"))

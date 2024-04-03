@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,9 +15,7 @@ class RMapplots(RPackage):
 	data visualisation."""
 
 	cran = "mapplots"
-
-	license("GPL-2.0-or-later")
-
+	version("1.5.1", sha256="37e96d34f37922180e07bb63b4514e07d42eee5bbf0885b278286ee48cf142a3")
 	version("1.5.2", md5="d376f1fa68dd004de1fa49bf1146e465")
 
 	depends_on("r@2.10:", type=("build", "run"))

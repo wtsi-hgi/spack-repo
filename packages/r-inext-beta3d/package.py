@@ -24,7 +24,7 @@ Dimensions of Biodiversity
 	homepage = "https://sites.google.com/view/chao-lab-website/software/inext-beta3d"
 	cran = "iNEXT.beta3D" 
 
-	version("1.0.0", md5="4bc7a9119ef51985a0bec6ec655cec0c")
+	version("1.0.1", md5="3167820b65360695779cf105d8f3b7b2")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

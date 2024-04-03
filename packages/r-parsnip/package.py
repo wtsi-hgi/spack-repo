@@ -18,7 +18,7 @@ class RParsnip(RPackage):
 	homepage = "https://github.com/tidymodels/parsnip"
 	cran = "parsnip" 
 
-	version("1.2.0", md5="5511bd877b251ff068613fd7e47d387c")
+	version("1.2.1", md5="8963904d37b6296869d29d0a8c22e61a")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

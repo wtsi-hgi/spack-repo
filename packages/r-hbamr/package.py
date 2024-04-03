@@ -23,9 +23,10 @@ class RHbamr(RPackage):
 	homepage = "https://jbolstad.github.io/hbamr/"
 	cran = "hbamr" 
 
-	version("2.2.1", md5="3c7c46b337f812483ecf6fceca9eba3d")
+	version("2.3.0", md5="8753551b95556e4306a569633a12c474")
 
 	depends_on("r@3.4:", type=("build", "run"))
+	depends_on("r-colorspace", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-future", type=("build", "run"))
 	depends_on("r-future-apply", type=("build", "run"))

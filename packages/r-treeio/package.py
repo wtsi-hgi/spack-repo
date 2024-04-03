@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -18,7 +18,11 @@ class RTreeio(RPackage):
 
 	bioc = "treeio"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/treeio_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/treeio/treeio_1.26.0.tar.gz"]
-
+	version("1.24.0", commit="81425559d71ab87ee683c6a8833f0f165632e416")
+	version("1.22.0", commit="eb24a854806a671e7b37ef36dafc60b4eb9ddaa1")
+	version("1.20.2", commit="ed457d6fd85a50e0993c8c9acbd9b701be01a348")
+	version("1.20.0", commit="5f7c3704fc8202c52451d092148fdcfe683f026a")
+	version("1.18.1", commit="a06b6b3d2a64f1b22c6c8c5f97c08f5863349c83")
 	version("1.26.0", md5="583758f88bf0d8efa0749407f4183567")
 
 	depends_on("r@3.6:", type=("build", "run"))

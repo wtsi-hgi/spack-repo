@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -22,9 +22,13 @@ class ROrdinal(RPackage):
 	likelihood function and checking convergence."""
 
 	cran = "ordinal"
-
-	license("GPL-2.0-or-later")
-
+	version(
+		"2022.11-16", sha256="5488ad1dfa531a09d017d68d7393d376c8bc49cceeaa6a3e5f7d57b99168d493"
+	)
+	version(
+		"2019.12-10", sha256="7a41e7b7e852a8fa3e911f8859d36e5709ccec5ca42ee3de14a813b7aaac7725"
+	)
+	version("2019.4-25", sha256="2812ad7a123cae5dbe053d1fe5f2d9935afc799314077eac185c844e3c9d79df")
 	version("2023.12-4", md5="a14e655e739d633b0d4e19220509f638")
 
 	depends_on("r@2.13:", type=("build", "run"))

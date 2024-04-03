@@ -23,9 +23,9 @@ class RPerformance(RPackage):
 	homepage = "https://easystats.github.io/performance/"
 	cran = "performance" 
 
-	version("0.10.9", md5="07a07184ab81c70c92646ab990e0fd5f")
+	version("0.11.0", md5="003d46ccb28030be151595396c4315fd")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-bayestestr@0.13.2:", type=("build", "run"))
-	depends_on("r-insight@0.19.8:", type=("build", "run"))
+	depends_on("r-insight@0.19.9:", type=("build", "run"))
 	depends_on("r-datawizard@0.9.1:", type=("build", "run"))

@@ -19,14 +19,13 @@ Text Queries
 	homepage = "https://github.com/martonkolossvary/parseRPDR"
 	cran = "parseRPDR" 
 
-	version("1.1.0", md5="5051549700dc7df1a7c7c927a889d5e8")
+	version("1.1.1", md5="bc683bafe539143ab3cabd3377718622")
 
 	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-data-table@1.13.2:", type=("build", "run"))
+	depends_on("r-data-table@1.14.1:", type=("build", "run"))
 	depends_on("r-stringr@1.4:", type=("build", "run"))
 	depends_on("r-readr@1.4:", type=("build", "run"))
 	depends_on("r-parallelly@1.36:", type=("build", "run"))
-	depends_on("r-doparallel@1.0.16:", type=("build", "run"))
 	depends_on("r-foreach@1.5.1:", type=("build", "run"))
 	depends_on("r-future@1.33.1:", type=("build", "run"))
 	depends_on("r-dofuture@1.0.1:", type=("build", "run"))

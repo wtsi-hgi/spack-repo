@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -23,7 +23,7 @@ class RKsamples(RPackage):
 	via simulation or exact calculations."""
 
 	cran = "kSamples"
-
+	version("1.2-9", sha256="ba3ec4af3dfcf7cf12f0b784ef67bfea565e16985647ead904629886cc1542ff")
 	version("1.2-10", md5="b3f45e87748adf618c76c59740fcf3f7")
 
 	depends_on("r-suppdists", type=("build", "run"))

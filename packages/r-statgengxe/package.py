@@ -22,7 +22,7 @@ class RStatgengxe(RPackage):
 	homepage = "https://biometris.github.io/statgenGxE/index.html"
 	cran = "statgenGxE" 
 
-	version("1.0.6", md5="3146aaf9e87e377b38ce69d5d2b03c6b")
+	version("1.0.7", md5="50af32e6e5e1bc54ed9b460fa616015a")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-emmeans", type=("build", "run"))

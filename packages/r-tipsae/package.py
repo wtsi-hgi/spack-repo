@@ -10,12 +10,12 @@ class RTipsae(RPackage):
 	"""Tools for Handling Indices and Proportions in Small Area
 Estimation
 
-	It allows for mapping proportions and indicators defined on the unit interval. It implements Beta-based small area methods comprising the classical Beta regression models, the Flexible Beta model and Zero and/or One Inflated extensions (Janicki 2020 <doi:10.1080/03610926.2019.1570266>). Such methods, developed within a Bayesian framework through Stan <https://mc-stan.org/>, come equipped with a set of diagnostics and complementary tools, visualizing and exporting functions. A Shiny application with a user-friendly interface can be launched to further simplify the process.
+	It allows for mapping proportions and indicators defined on the unit interval. It implements Beta-based small area methods comprising the classical Beta regression models, the Flexible Beta model and Zero and/or One Inflated extensions (Janicki 2020 <doi:10.1080/03610926.2019.1570266>). Such methods, developed within a Bayesian framework through Stan <https://mc-stan.org/>, come equipped with a set of diagnostics and complementary tools, visualizing and exporting functions. A Shiny application with a user-friendly interface can be launched to further simplify the process. For further details, refer to De Nicolò and Gardini (2024 <doi:10.18637/jss.v108.i01>).
 	"""
 	
 	cran = "tipsae" 
 
-	version("0.0.18", md5="79a7af41b8866843a2efa6b066d2b08f")
+	version("1.0.0", md5="08278bbcc06f80ecdc85988b81f6ecea")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-shiny@1.0.3:", type=("build", "run"))

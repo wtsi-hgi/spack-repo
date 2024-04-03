@@ -9,12 +9,13 @@ from spack.package import *
 class RBivariatemaps(RPackage):
 	"""Creates Bivariate Maps
 
-	Contains functions to plot bivariate maps and to generate grids from shapefiles based on area coverage. For more info, see: Hidasi-Neto, J (2015) <https://rfunctions.blogspot.com/2015/03/bivariate-maps-bivariatemap-function.html>, Hidasi-Neto, J (2014) <https://rfunctions.blogspot.com/2014/12/gridfilter-intersect-grid-with-shape.html>.
+	Contains functions to plot bivariate maps. For more info, see: Hidasi-Neto, J (2015) <https://rfunctions.blogspot.com/2015/03/bivariate-maps-bivariatemap-function.html>.
 	"""
 	
 	cran = "bivariatemaps" 
 
 	version("1.2", md5="bc933b211dc341146ebf74a30dbe6928")
+	version("1.3", md5="6efefc43976b199d3d152789fe9fcd18")
 
 	depends_on("r-classint", type=("build", "run"))
 	depends_on("r-terra", type=("build", "run"))

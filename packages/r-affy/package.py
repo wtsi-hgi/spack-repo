@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -16,6 +16,16 @@ class RAffy(RPackage):
 	bioc = "affy"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affy_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affy/affy_1.80.0.tar.gz"]
 
+	version("1.78.0", commit="cc7eac358b6e10ee86a7a93d2e436758f6fbd9b5")
+	version("1.76.0", commit="3bb309388d5d6402c356d4a5270ee83c5b88942f")
+	version("1.74.0", commit="2266c4a46eda7e5b64f7f3e17e8b61e7b85579ff")
+	version("1.72.0", commit="3750b4eb8e5224b19100f6c881b67e568d8968a2")
+	version("1.68.0", commit="1664399610c9aa519399445a2ef8bb9ea2233eac")
+	version("1.62.0", commit="097ab4aa98a1700c5fae65d07bed44a477714605")
+	version("1.60.0", commit="fcae363e58b322ad53584d9e15e80fa2f9d17206")
+	version("1.58.0", commit="4698231f45f225228f56c0708cd477ad450b4ee6")
+	version("1.56.0", commit="d36a7b8f05b1ef60162d94e75037d45c48f88871")
+	version("1.54.0", commit="a815f02906fcf491b28ed0a356d6fce95a6bd20e")
 	version("1.80.0", md5="09376016b32f86f707ff9b8f8cb8a1a5")
 
 	depends_on("r@2.8:", type=("build", "run"))

@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -20,9 +20,15 @@ class RSpdep(RPackage):
 	<doi:10.1002/(SICI)1097-0258(19990830)18:16%3C2147::AID-SIM179%3E3.0.CO"""
 
 	cran = "spdep"
-
-	license("GPL-2.0-or-later")
-
+	version("1.2-8", sha256="8d9fb4cb10d1035526ad6d9f7a11972efb0e3137dcff176d73df6ebfe96c9190")
+	version("1.2-7", sha256="9dac594825bf2d0aa31e845bfec05d8ce206327840fe455391741dbbdf9c9eea")
+	version("1.2-4", sha256="a9f4d5af56efb1a2bcd3e85fe4d0e8a42896a2c30a790b2487e1ebadf398a677")
+	version("1.2-2", sha256="94f46f98be3bedde1655f8768b7ef2a977c399b5ca8977c68007e9e3b7515e23")
+	version("1.2-1", sha256="e8cc788d4e6fbb962f4e1fb45dff166cd9dd0935a9fd502699f9a95fdf4a43f9")
+	version("1.1-5", sha256="47cb46cf5cf1f4386eb1b5e4d8541d577d7f2939e74addbdb884ecf2323f6d5d")
+	version("1.1-2", sha256="ba0ca3a0ad6b9cc1dc46cadd9e79259949ad38c88f738e98e482d6c06640b31a")
+	version("1.0-2", sha256="6f9efa4347d5c13b49922b75481ac403431c3c76a65a109af29954aa7bb138b2")
+	version("0.6-13", sha256="ed345f4c7ea7ba064b187eb6b25f0ac46f17616f3b56ab89978935cdc67df1c4")
 	version("1.3-3", md5="cff3e87a727adbd95b588455bba53a38")
 
 	depends_on("r@3.3:", type=("build", "run"))

@@ -15,14 +15,12 @@ Diagnostics, Simulation, Local Tests
 	
 	cran = "stopp" 
 
-	version("0.1.1", md5="afd5b6d08fe823cc6129fc0b7c2f85ef")
+	version("0.2.0", md5="e878d50194cda361d28b08b291276388")
 
-	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-kernsmooth", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-fields", type=("build", "run"))
-	depends_on("r-gmp", type=("build", "run"))
-	depends_on("r-latex2exp", type=("build", "run"))
 	depends_on("r-optimx", type=("build", "run"))
 	depends_on("r-plot3d", type=("build", "run"))
 	depends_on("r-sparr", type=("build", "run"))
@@ -32,6 +30,7 @@ Diagnostics, Simulation, Local Tests
 	depends_on("r-spatstat-random", type=("build", "run"))
 	depends_on("r-splancs", type=("build", "run"))
 	depends_on("r-spatstat-model", type=("build", "run"))
+	depends_on("r-spatstat-utils", type=("build", "run"))
 	depends_on("r-stlnpp", type=("build", "run"))
 	depends_on("r-stpp", type=("build", "run"))
-	depends_on("r-etasflp", type=("build", "run"))
+	depends_on("r-mgcv", type=("build", "run"))

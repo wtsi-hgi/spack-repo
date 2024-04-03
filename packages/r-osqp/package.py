@@ -1,4 +1,4 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2022 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,14 +15,11 @@ class ROsqp(RPackage):
 	<arXiv:1711.08013> for details."""
 
 	cran = "osqp"
-
-	license("Apache-2.0 OR custom")
-
+	version("0.6.0.8", sha256="14034045ae4ae5ec4eae4944653d41d94282fa85a0cd53614ac86f34fd02ed97")
+	version("0.6.0.7", sha256="ee6584d02341e3f1d8fab3b2cb93defd6c48d561297d82a6bedb3e7541868203")
 	version("0.6.3.2", md5="d6b45409799ce483514cada5818fa47a")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-matrix@1.6.1:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))
-
-	def setup_build_environment(self, env):
-		env.append_path("CPATH", self.stage.source_path + "/src/osqp_sources/include")
+	depends_on("osqp", type=("build", "link", "run"))
