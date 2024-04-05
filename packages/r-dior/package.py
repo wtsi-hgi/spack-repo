@@ -19,7 +19,7 @@ class RDior(RPackage):
     git = "https://github.com/JiekaiLab/dior"
 
     # versions
-	version("0.1.5", tag="0.1.5")
+    version("0.1.5", tag="0.1.5")
     
 
     # dependencies

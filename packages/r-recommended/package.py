@@ -10,7 +10,7 @@ class RRecommended(BundlePackage):
 
     homepage = "https://anaconda.org/r/r-essentials"
 
-	version("4.2")
+    version("4.2")
 
     depends_on("r-boot", type=("build", "run"))
     depends_on("r-class", type=("build", "run"))

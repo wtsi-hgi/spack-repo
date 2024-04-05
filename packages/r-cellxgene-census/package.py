@@ -12,7 +12,7 @@ class RCellxgeneCensus(RPackage):
     homepage = "https://chanzuckerberg.github.io/cellxgene-census"
     git = "https://github.com/chanzuckerberg/cellxgene-census"
 
-	version("1.6.0", tag="v1.6.0")
+    version("1.6.0", tag="v1.6.0")
 
     depends_on("r-aws-s3", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))

@@ -19,7 +19,7 @@ class RSvaseq(RPackage):
     homepage = "https://github.com/zhangyuqing/sva-devel"
     git = "https://github.com/zhangyuqing/sva-devel"
 
-	version("2020-09-24", commit="0a5550c6ff39ac61aa12306774b7d04eedf69ee3")
+    version("2020-09-24", commit="0a5550c6ff39ac61aa12306774b7d04eedf69ee3")
 
     depends_on("r-biocparallel", type=('build', 'run'))
     depends_on("r-genefilter", type=('build', 'run'))

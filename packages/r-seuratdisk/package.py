@@ -18,7 +18,7 @@ class RSeuratdisk(RPackage):
     
     git = "https://github.com/mojaveazure/seurat-disk"
 
-	version("0.0.0.9015", commit="877d4e18ab38c686f5db54f8cd290274ccdbe295")
+    version("0.0.0.9015", commit="877d4e18ab38c686f5db54f8cd290274ccdbe295")
     
     depends_on("r@3.5.0:", type=('build', 'run'))
     depends_on("r-cli", type=('build', 'run'))

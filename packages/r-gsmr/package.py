@@ -11,7 +11,7 @@ class RGsmr(RPackage):
     homepage = "https://yanglab.westlake.edu.cn/software/gsmr/"
     url = "https://yanglab.westlake.edu.cn/software/gsmr/static/gsmr_1.1.1.tar.gz"
 
-	version("1.1.1", sha256="999bc6e894780dde20eb1f596ce97d7f99973e6399c8c54353e72555af5e7718")
+    version("1.1.1", sha256="999bc6e894780dde20eb1f596ce97d7f99973e6399c8c54353e72555af5e7718")
 
     depends_on("r-markdown", type=("build", "run"))
     depends_on("r-survey", type=("build", "run"))

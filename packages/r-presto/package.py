@@ -3,23 +3,6 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-# ----------------------------------------------------------------------------
-# If you submit this package back to Spack as a pull request,
-# please first remove this boilerplate and all FIXME comments.
-#
-# This is a template package file for Spack.  We've put "FIXME"
-# next to all the things you'll want to change. Once you've handled
-# them, you can save this file and test your package like this:
-#
-#     spack install r-presto
-#
-# You can edit this file again by typing:
-#
-#     spack edit r-presto
-#
-# See the Spack documentation for more information on packaging.
-# ----------------------------------------------------------------------------
-
 from spack.package import *
 
 
@@ -29,7 +12,7 @@ class RPresto(RPackage):
     homepage = "https://github.com/immunogenomics/presto"
     git = "https://github.com/immunogenomics/presto"
 
-	version("master", tag="master")
+    version("2024-03-18", commit="7636b3d0465c468c35853f82f1717d3a64b3c8f6")
 
     depends_on("r-rlang", type=("build", "run"))
     depends_on("r-rcpp", type=("build", "run"))

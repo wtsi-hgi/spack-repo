@@ -22,13 +22,13 @@ performs conditional association analysis"""
     homepage = "https://saigegit.github.io/SAIGE-doc/"
     url = "https://github.com/saigegit/SAIGE/archive/refs/tags/v1.3.3.tar.gz"
 
-	version("1.3.3", sha256="7d67ae1cd140dc883e3429d9538b6cb42feef04602f7c53e429e22c790e67440")
-	version("1.0.9", sha256="eb5030877faf4a50d39ae28d6cd9b4aa8059cba42e1c91a4b20c32581a9f75f9")
-	version("1.0.4", sha256="4b9dd64648b2c807aeda448c8b96091164ce019800efc8ebf5dc87979e590d08")
-	version("1.0.3", sha256="79bcdc2abc68d8f112086a3d872102f5714bb0baaf59e876e9f08b1ad3a45e9f")
-	version("1.0.2", sha256="57f4c89f78b0be5a8a00be1a507fb6cedd09fc747e683acb4a6295b6901034cb")
-	version("1.0.1", sha256="7bf0bc07929eab047e042604283dc696d80e1a11e69faa8e6b0f16d85bcfaac9")
-	version("1.0.0", sha256="e5870bb08ce96bf01d97fbee4887242e471f5622d0d58e7e8f0e8916d32b91fc")
+    version("1.3.3", sha256="7d67ae1cd140dc883e3429d9538b6cb42feef04602f7c53e429e22c790e67440")
+    version("1.0.9", sha256="eb5030877faf4a50d39ae28d6cd9b4aa8059cba42e1c91a4b20c32581a9f75f9")
+    version("1.0.4", sha256="4b9dd64648b2c807aeda448c8b96091164ce019800efc8ebf5dc87979e590d08")
+    version("1.0.3", sha256="79bcdc2abc68d8f112086a3d872102f5714bb0baaf59e876e9f08b1ad3a45e9f")
+    version("1.0.2", sha256="57f4c89f78b0be5a8a00be1a507fb6cedd09fc747e683acb4a6295b6901034cb")
+    version("1.0.1", sha256="7bf0bc07929eab047e042604283dc696d80e1a11e69faa8e6b0f16d85bcfaac9")
+    version("1.0.0", sha256="e5870bb08ce96bf01d97fbee4887242e471f5622d0d58e7e8f0e8916d32b91fc")
 
     depends_on("r@3.6.1:", type=("build", "run"))
     depends_on("gcc@5.4:", type=("build", "run"))

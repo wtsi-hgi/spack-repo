@@ -12,7 +12,7 @@ class RDndscv(RPackage):
     homepage = "https://www.sanger.ac.uk/tool/dndscv/"
     git = "https://github.com/im3sanger/dndscv"
 
-	version("2023-09-29", commit="ae10c765ecb6b3a6ff06cd5a50aadc317dab2289")
+    version("2023-09-29", commit="ae10c765ecb6b3a6ff06cd5a50aadc317dab2289")
 
     depends_on("r-seqinr", type=("build", "run"))
     depends_on("r-mass", type=("build", "run"))

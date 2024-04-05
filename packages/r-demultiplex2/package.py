@@ -11,8 +11,8 @@ class RDemultiplex2(RPackage):
     homepage = "https://github.com/Gartner-Lab/deMULTIplex2"
     url = "https://github.com/Gartner-Lab/deMULTIplex2/archive/refs/tags/v1.0.1.tar.gz"
 
-	version("1.0.1", sha256="ff94d3158e403748e7247bc8ff6766de005374ea83c6554e3475d0a8fd0650fb")
-	version("1.0.0", sha256="9672a3af0e7974acc464d5e82bf3d259e187f00f96f6f26d95e9789e5c2a3a43")
+    version("1.0.1", sha256="ff94d3158e403748e7247bc8ff6766de005374ea83c6554e3475d0a8fd0650fb")
+    version("1.0.0", sha256="9672a3af0e7974acc464d5e82bf3d259e187f00f96f6f26d95e9789e5c2a3a43")
 
     depends_on("r-mass", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))
