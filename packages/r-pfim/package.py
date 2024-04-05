@@ -22,6 +22,7 @@ class RPfim(RPackage):
 	cran = "PFIM" 
 
 	version("6.0.3", md5="71632c7b601003f46671ce29ef5733c7")
+	version("6.0.2", md5="e241f9032d1ee07cd8bda510fff04ec7")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-inline", type=("build", "run"))

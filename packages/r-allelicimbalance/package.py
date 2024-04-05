@@ -15,6 +15,7 @@ class RAllelicimbalance(RPackage):
 	bioc = "AllelicImbalance"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AllelicImbalance_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AllelicImbalance/AllelicImbalance_1.40.0.tar.gz"]
 
+	version("1.40.0", md5="9eb6991f47f1337aef63f9ce750db08a")
 	version("1.38.0", commit="75a3b0fefe635a0892eae338d0fdd4a9e091f957")
 	version("1.36.0", commit="cb4910c1fd58cc4272c21251a8f120990e1aa431")
 	version("1.34.0", commit="290708ccc4ceae1fbb9e9257cb254916449d389b")
@@ -25,7 +26,6 @@ class RAllelicimbalance(RPackage):
 	version("1.18.0", commit="6d6eed7487e9207dba556bc76283bcc7745808ea")
 	version("1.16.0", commit="85f652ae8a0dd15535819b6e934065182df5544a")
 	version("1.14.0", commit="35958534945819baafde0e13d1eb4d05a514142c")
-	version("1.40.0", md5="9eb6991f47f1337aef63f9ce750db08a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges@1.31.8:", type=("build", "run"))

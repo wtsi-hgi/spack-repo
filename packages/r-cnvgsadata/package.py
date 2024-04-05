@@ -20,4 +20,3 @@ class RCnvgsadata(RPackage):
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-cnvgsa", type=("build", "run"))
 
-	# experiment

@@ -21,8 +21,8 @@ Beyond)
 	homepage = "http://www.bamlss.org/"
 	cran = "bamlss" 
 
-	version("1.2-2", md5="3730ed71f5d1c06b53112ad2909fa372")
 	version("1.2-3", md5="45e9d59e142198ad052ab39fccdacb04")
+	version("1.2-2", md5="3730ed71f5d1c06b53112ad2909fa372")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-coda", type=("build", "run"))

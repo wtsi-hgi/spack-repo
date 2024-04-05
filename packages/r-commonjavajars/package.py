@@ -16,6 +16,7 @@ class RCommonjavajars(RPackage):
 	cran = "CommonJavaJars" 
 
 	version("1.1-0", md5="74f6c68548cd4af15a44bdd418f536d2")
+	version("1.0-6", md5="3df6a68c38b87c36541db20fa71b418d")
 
 	depends_on("r@2.8:", type=("build", "run"))
 	depends_on("openjdk@1.8:", type=("build", "link", "run"))

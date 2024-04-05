@@ -26,4 +26,3 @@ class RTumourmethdata(RPackage):
 	depends_on("r-r-utils", type=("build", "run"))
 	depends_on("r-rhdf5", type=("build", "run"))
 
-	# experiment

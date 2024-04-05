@@ -18,4 +18,3 @@ class RHapmap370k(RPackage):
 	version("1.0.1", md5="569556341a45da799372aaf1012be72e")
 
 
-	# annotation

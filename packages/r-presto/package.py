@@ -29,7 +29,7 @@ class RPresto(RPackage):
     homepage = "https://github.com/immunogenomics/presto"
     git = "https://github.com/immunogenomics/presto"
 
-    version("master", tag="master")
+	version("master", tag="master")
 
     depends_on("r-rlang", type=("build", "run"))
     depends_on("r-rcpp", type=("build", "run"))

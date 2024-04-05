@@ -17,6 +17,7 @@ class RQrmdata(RPackage):
 	cran = "qrmdata" 
 
 	version("2024-03-04-2", md5="d7a09c8587fde3554c3b68c79d53316f")
+	version("2022-05-31-1", md5="f9cfd74dc6f33d2125064eb65d6dbe30")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-xts", type=("build", "run"))

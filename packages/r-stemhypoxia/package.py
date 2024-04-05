@@ -20,4 +20,3 @@ class RStemhypoxia(RPackage):
 
 	depends_on("r@2.14.1:", type=("build", "run"))
 
-	# experiment

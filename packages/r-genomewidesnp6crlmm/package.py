@@ -18,4 +18,3 @@ class RGenomewidesnp6crlmm(RPackage):
 	version("1.0.7", md5="13dd5aef3d814524896f2f3013beb78b")
 
 
-	# annotation

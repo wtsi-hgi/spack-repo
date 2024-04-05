@@ -19,6 +19,7 @@ class RUsmap(RPackage):
 	cran = "usmap" 
 
 	version("0.7.1", md5="ec0e59193fe078c909cc28047f58e763")
+	version("0.7.0", md5="190c74e83b6013bb9b102fe2de2fe89b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

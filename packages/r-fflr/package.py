@@ -17,8 +17,9 @@ class RFflr(RPackage):
 	homepage = "https://k5cents.github.io/fflr/"
 	cran = "fflr" 
 
-	version("2.2.3", md5="ff28f3b8342a6ecd7950e9ff87433fbe")
 	version("2.2.4", md5="4c077c0bf716487b85bf959562800cc1")
+	version("2.2.3", md5="ff28f3b8342a6ecd7950e9ff87433fbe")
+	version("2.2.2", md5="d8a76cdf108b806dac99133001218515")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-httr@1.4.7:", type=("build", "run"))

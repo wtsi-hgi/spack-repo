@@ -21,4 +21,3 @@ class RCuratedbladderdata(RPackage):
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))
 
-	# experiment

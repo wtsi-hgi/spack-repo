@@ -19,8 +19,8 @@ class REmbed(RPackage):
 	homepage = "https://embed.tidymodels.org"
 	cran = "embed" 
 
-	version("1.1.3", md5="9ccb4cd6bf92b83c14fc8859e7b9dd90")
 	version("1.1.4", md5="0d44354dfc66f7eb8cb54ec09a6aabdf")
+	version("1.1.3", md5="9ccb4cd6bf92b83c14fc8859e7b9dd90")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-recipes@1.0.7:", type=("build", "run"))

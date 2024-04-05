@@ -20,6 +20,7 @@ class RSecr(RPackage):
 	cran = "secr" 
 
 	version("4.6.6", md5="5815a808aa311e42b46de1156fec135e")
+	version("4.6.5", md5="9eb1f3fc439c67efd8830a1e199022be")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))

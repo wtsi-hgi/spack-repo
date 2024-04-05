@@ -31,6 +31,7 @@ class RNphpower(RPackage):
 	cran = "nphPower" 
 
 	version("1.1.0", md5="abe13e97904a6085e5bd549292f40eb0")
+	version("1.0.0", md5="b765f93ff1a15a84011f5523e8d166c2")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

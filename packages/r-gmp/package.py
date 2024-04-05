@@ -14,6 +14,7 @@ class RGmp(RPackage):
 	library GMP (GNU Multiple Precision Arithmetic)."""
 
 	cran = "gmp"
+	version("0.7-4", md5="9d8e130ae524e48d0f62d7db0ac379ed")
 	version("0.7-1", sha256="a6873dc65218905cb7615cb8e2522258f3740e29c0632473d58a1cb409835db6")
 	version("0.6-7", sha256="6333fe691f267aa29f8078f7f738dda50c496f660357276fd33e28d607363f85")
 	version("0.6-6", sha256="87fa95a8084855d2137b3863b6b8f3c277280dbe3a6a230e359cf32c3bed2793")
@@ -23,7 +24,6 @@ class RGmp(RPackage):
 	version("0.5-13.5", sha256="f681ab2ff3d1e379ba8ac44a8abddd08d08170723e885abc0b469b6fa8fe5510")
 	version("0.5-13.4", sha256="f05605b40fc39fc589e3a4d2f526a591a649faa45eef7f95c096e1bff8775196")
 	version("0.5-13.1", sha256="2f805374a26742cd43f6b2054130d8670eda1940070aabb9971e9e48226d0976")
-	version("0.7-4", md5="9d8e130ae524e48d0f62d7db0ac379ed")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("gmp@4.2.3:", type=("build", "link", "run"))

@@ -20,6 +20,7 @@ class RPhyloraster(RPackage):
 	cran = "phyloraster" 
 
 	version("2.1.0", md5="7284c848ef1ff136f1b48faf6388d4fe")
+	version("2.0.1", md5="4c14ca56a3c42088e302eebd3b991759")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

@@ -17,6 +17,7 @@ class RGhibli(RPackage):
 	cran = "ghibli" 
 
 	version("0.3.4", md5="e7da1eb7a5ee03ef8c08aae4ff192b8b")
+	version("0.3.3", md5="e8d91b456a213e4110c8e79549a146c2")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-prismatic", type=("build", "run"))

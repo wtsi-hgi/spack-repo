@@ -22,6 +22,7 @@ class RRcdklibs(RPackage):
 	cran = "rcdklibs" 
 
 	version("2.9", md5="b1c063c63b02f714f0b3f01ed23ed93d")
+	version("2.8", md5="b42330b0f70643371d07dc26178a9d8c")
 
 	depends_on("r@2:", type=("build", "run"))
 	depends_on("r-rjava", type=("build", "run"))

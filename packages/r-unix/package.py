@@ -17,4 +17,5 @@ class RUnix(RPackage):
 	cran = "unix" 
 
 	version("1.5.7", md5="8dec8e89e5276cb5310c4ae23b4fe3ef")
+	version("1.5.6", md5="ea966ea9fb4f59ef99cb6cfa09432fa7")
 

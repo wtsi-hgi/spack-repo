@@ -23,6 +23,7 @@ class RLcra(RPackage):
 	cran = "lcra" 
 
 	version("1.1.5", md5="b4bf2331c8207184d3b4435a97572dcb")
+	version("1.1.2", md5="4b1aac1c0893749262505d249f274e2c")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

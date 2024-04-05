@@ -19,4 +19,3 @@ class RGsbenchmark(RPackage):
 
 	depends_on("r@2.13.1:", type=("build", "run"))
 
-	# experiment

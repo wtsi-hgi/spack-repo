@@ -17,6 +17,7 @@ Fitted Using 'mgcv'
 	cran = "gratia" 
 
 	version("0.9.0", md5="f40a93cc83628501570404660bf7ffd1")
+	version("0.8.2", md5="7aaf3cfd14c163bebf9edcedcff28ee6")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-mgcv@1.9.0:", type=("build", "run"))

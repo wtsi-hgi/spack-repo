@@ -18,6 +18,7 @@ class RRunner(RPackage):
 	cran = "runner" 
 
 	version("0.4.4", md5="95548e412fa9363125fb6eaaffe4d3db")
+	version("0.4.3", md5="4330e09c5a3553311f5437e3bdeaf78c")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

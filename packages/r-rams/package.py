@@ -21,6 +21,7 @@ class RRams(RPackage):
 	cran = "RaMS" 
 
 	version("1.4.0", md5="5b7efa340cf8ce21ec7e96dd09f97f4d")
+	version("1.3.4", md5="d67bfac28d198a5a0eb7c5ca392a087b")
 
 	depends_on("r-xml2", type=("build", "run"))
 	depends_on("r-base64enc", type=("build", "run"))

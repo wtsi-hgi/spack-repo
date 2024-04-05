@@ -15,6 +15,7 @@ class RPdAth1121501(RPackage):
 	bioc = "pd.ath1.121501" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.ath1.121501_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.ath1.121501/pd.ath1.121501_3.12.0.tar.gz"]
 
+	version("3.12.0", md5="d7ed8640f0deac552e0083a091e72a72", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.ath1.121501_3.12.0.tar.gz")
 	version("3.12.0", md5="d7ed8640f0deac552e0083a091e72a72", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.ath1.121501_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
@@ -26,4 +27,3 @@ class RPdAth1121501(RPackage):
 	depends_on("r-iranges@2.1.43:", type=("build", "run"))
 	depends_on("r-s4vectors@0.5.22:", type=("build", "run"))
 
-	# annotation

@@ -14,9 +14,9 @@ class RGgbeeswarm(RPackage):
 	that region, and avoids over-plotting."""
 
 	cran = "ggbeeswarm"
+	version("0.7.2", md5="b062f40a143df3d06b1865e89544438c")
 	version("0.7.1", sha256="f41550335149bc2122fed0dd280d980cecd02ace79e042d5e03c1f102200ac92")
 	version("0.6.0", sha256="bbac8552f67ff1945180fbcda83f7f1c47908f27ba4e84921a39c45d6e123333")
-	version("0.7.2", md5="b062f40a143df3d06b1865e89544438c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2@3.3:", type=("build", "run"))

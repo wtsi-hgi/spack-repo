@@ -15,6 +15,7 @@ class RA4reporting(RPackage):
 	bioc = "a4Reporting"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/a4Reporting_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/a4Reporting/a4Reporting_1.50.0.tar.gz"]
 
+	version("1.50.0", md5="3ba7f3c5606c2f898d84314ba63208fa")
 	version("1.48.0", commit="de8c4b76f6b7ef502d77d55289df0d64fe70447c")
 	version("1.46.0", commit="00b82d25bef4d518ae92f615d3a6f7931c0618dc")
 	version("1.44.0", commit="bfe83507daf53e2e327474ea3012f0dc920efac1")
@@ -25,6 +26,5 @@ class RA4reporting(RPackage):
 	version("1.28.0", commit="0fe72f48374353c39479a45e5516d0709f8c9ef7")
 	version("1.26.0", commit="cce201502e2d3b28fd2823b66d9f81b034dc7eaa")
 	version("1.24.0", commit="bf22c4d50daf40fc9eaf8c476385bf4a24a5b5ce")
-	version("1.50.0", md5="3ba7f3c5606c2f898d84314ba63208fa")
 
 	depends_on("r-xtable", type=("build", "run"))

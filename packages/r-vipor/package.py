@@ -14,8 +14,8 @@ class RVipor(RPackage):
 	density using quasirandom noise."""
 
 	cran = "vipor"
+	version("0.4.7", md5="2b61141e983b4026e67efb5d616e33ff")
 	version("0.4.5", sha256="7d19251ac37639d6a0fed2d30f1af4e578785677df5e53dcdb2a22771a604f84")
 	version("0.4.4", sha256="5abfd7869dae42ae2e4f52206c23433a43b485b1220685e445877ee5864a3f5c")
-	version("0.4.7", md5="2b61141e983b4026e67efb5d616e33ff")
 
 	depends_on("r@3.5:", type=("build", "run"))

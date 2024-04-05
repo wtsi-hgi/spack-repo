@@ -20,4 +20,3 @@ class RBsgenomeHsapiensUcscHg38Dbsnp151Minor(RPackage):
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-bsgenome@1.56:", type=("build", "run"))
 
-	# annotation

@@ -20,5 +20,6 @@ class RTinythemes(RPackage):
 	cran = "tinythemes" 
 
 	version("0.0.2", md5="c6d2d274bc15ac5ba854fc1f21dfce96")
+	version("0.0.1", md5="d1c6cad38ec3b58a0d9e5bf53cde8dd9")
 
 	depends_on("r-ggplot2", type=("build", "run"))

@@ -17,6 +17,8 @@ class RProcessx(RPackage):
 	with a timeout. It can also poll several processes at once."""
 
 	cran = "processx"
+	version("3.8.4", md5="57e96dd74090594f1b1a63ec1d59091b")
+	version("3.8.3", md5="ad4eef6b9a21f570f8686c0157712ddf")
 	version("3.8.1", sha256="e008472b81d4ca1a37a4ba7dd58e5e944f96ab2e44c8ccc8840d43e9fe99e93c")
 	version("3.8.0", sha256="9270d9d26c4314151062801a5c1fc57556b4fcb41dbf3558cb5bd230b18ffb0b")
 	version("3.7.0", sha256="de6a8d4135fc53ec35043fbaf6b000dc9597719345595d8479662a39dad55ed3")
@@ -30,7 +32,6 @@ class RProcessx(RPackage):
 	version("3.0.3", sha256="53781dba3c538605a02e28b3b577e7de79e2064bfc502025f7ec0e5945e302bf")
 	version("2.0.0.1", sha256="8f61b2952d0f2d13c74465bfba174ce11eee559475c2f7b9be6bcb9e2e1d827b")
 	version("2.0.0", sha256="8325b56a60a276909228756281523cda9256bc754c5f3ca03b41c5c17cc398ad")
-	version("3.8.4", md5="57e96dd74090594f1b1a63ec1d59091b")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-ps@1.2:", type=("build", "run"))

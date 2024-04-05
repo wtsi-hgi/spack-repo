@@ -22,6 +22,7 @@ class RMlr3hyperband(RPackage):
 	cran = "mlr3hyperband" 
 
 	version("0.5.0", md5="5c9dd2dcaece00718665d921430d192d")
+	version("0.4.5", md5="ef4ca905aa2521c8285dac37856b4dc3")
 
 	depends_on("r-mlr3tuning@0.13:", type=("build", "run"))
 	depends_on("r@3.1:", type=("build", "run"))

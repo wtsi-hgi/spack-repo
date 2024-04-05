@@ -17,6 +17,7 @@ class RGgparallel(RPackage):
 	cran = "ggparallel" 
 
 	version("0.4.0", md5="cc7cd58074a4be4ac1cc4508fadfe784")
+	version("0.3.0", md5="098d67cd21ff7e748b8ae1d6cccbe93b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2@3.5:", type=("build", "run"))

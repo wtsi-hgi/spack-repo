@@ -24,4 +24,3 @@ class RTimerquant(RPackage):
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-locfit", type=("build", "run"))
 
-	# experiment

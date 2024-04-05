@@ -25,6 +25,7 @@ class RCare4cmodel(RPackage):
 	cran = "care4cmodel" 
 
 	version("1.0.1", md5="ac1dc553d2c84da16005ae680ee2c003")
+	version("1.0.0", md5="a925f7b29d473b0660786274aa66eb7d")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-desolve", type=("build", "run"))

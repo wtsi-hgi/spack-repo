@@ -15,9 +15,9 @@ class REcolik12Db0(RPackage):
 	bioc = "ecoliK12.db0" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ecoliK12.db0_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ecoliK12.db0/ecoliK12.db0_3.18.0.tar.gz"]
 
+	version("3.18.0", md5="dd303204595a25bc730695462e930247", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ecoliK12.db0_3.18.0.tar.gz")
 	version("3.18.0", md5="dd303204595a25bc730695462e930247", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ecoliK12.db0_3.18.0.tar.gz")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))
 
-	# annotation

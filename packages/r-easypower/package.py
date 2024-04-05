@@ -22,5 +22,6 @@ class REasypower(RPackage):
 	cran = "easypower" 
 
 	version("1.0.2", md5="1c30e0411f5943f6f4bb64edf0a7b893")
+	version("1.0.1", md5="dbe044eaeebf952a37bdb399caafdfd8")
 
 	depends_on("r-pwr@1.1.3:", type=("build", "run"))

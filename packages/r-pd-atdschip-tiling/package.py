@@ -26,4 +26,3 @@ class RPdAtdschipTiling(RPackage):
 	depends_on("r-iranges@1.11.31:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
 
-	# experiment

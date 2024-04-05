@@ -20,4 +20,3 @@ class RPlotgardenerdata(RPackage):
 
 	depends_on("r@4.1:", type=("build", "run"))
 
-	# experiment

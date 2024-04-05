@@ -15,6 +15,7 @@ class RRcmdrpluginBws3(RPackage):
 	cran = "RcmdrPlugin.BWS3" 
 
 	version("0.2-2", md5="c0aed847c3ec7ae2f6c59930833f070a", url="https://cran.r-project.org/src/contrib/RcmdrPlugin.BWS3_0.2-2.tar.gz")
+	version("0.2-1", md5="91791e4eb21832029dadcce0546faa7a", url="https://cran.r-project.org/src/contrib/RcmdrPlugin.BWS3_0.2-1.tar.gz")
 
 	depends_on("r-support-bws3", type=("build", "run"))
 	depends_on("r-support-ces", type=("build", "run"))

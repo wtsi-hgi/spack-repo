@@ -16,6 +16,7 @@ Problem Based on SMOTE
 	cran = "smotefamily" 
 
 	version("1.4.0", md5="fc242e491a2940b75230b4a2b9254b7a")
+	version("1.3.1", md5="15fa13b0078567d5339efa7d6a288f81")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-fnn", type=("build", "run"))

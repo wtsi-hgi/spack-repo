@@ -16,6 +16,7 @@ class RPacvr(RPackage):
 	cran = "PACVr" 
 
 	version("1.0.8", md5="e9a6c160c32098a4a6c6943502bf9306")
+	version("1.0.7", md5="10345787023970e9aff81113a1efc456")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-biostrings@2.48:", type=("build", "run"))

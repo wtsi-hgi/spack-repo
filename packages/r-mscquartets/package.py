@@ -26,6 +26,7 @@ class RMscquartets(RPackage):
 	cran = "MSCquartets" 
 
 	version("2.0", md5="4fcbb02976a9b32c02b8036556e29738")
+	version("1.3.2", md5="79f931d6df8efbca6c47e884897be1ea")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ape@5:", type=("build", "run"))

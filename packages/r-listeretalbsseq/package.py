@@ -20,4 +20,3 @@ class RListeretalbsseq(RPackage):
 	depends_on("r@3.1.1:", type=("build", "run"))
 	depends_on("r-methylpipe", type=("build", "run"))
 
-	# experiment

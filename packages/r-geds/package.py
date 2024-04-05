@@ -28,6 +28,7 @@ class RGeds(RPackage):
 	cran = "GeDS" 
 
 	version("0.2.0", md5="523bf10b03281f0d2ba3d04a07169d9c")
+	version("0.1.4", md5="80b509c311dd3354c8a067fa92a830c6")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

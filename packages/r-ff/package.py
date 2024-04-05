@@ -57,9 +57,9 @@ class RFf(RPackage):
 	version("4.0.7", sha256="0a47333d31c7afc3f95387166e21a3e4c763cbef47d9b5927753aef4ff8d83fa")
 	version("4.0.5", sha256="9aba9e271144ec224063ddba0d791e2fcdb9c912d48fdc49e204fce628355037")
 	version("4.0.4", sha256="22ecf1811263f27c9fd9f7e13e77f97dcbc0b8ae6f59b76dbaed77569c13d2e5")
+	version("4.0.12", md5="58146d56032385f0182ec9b58c0f4071")
 	version("2.2-14", sha256="1c6307847275b1b8ad9e2ffdce3f4df3c9d955dc2e8a45e3fd7bfd2b0926e2f0")
 	version("2.2-13", sha256="8bfb08afe0651ef3c23aaad49208146d5f929af5af12a25262fe7743fa346ddb")
-	version("4.0.12", md5="58146d56032385f0182ec9b58c0f4071")
 
 	depends_on("r@2.10.1:", type=("build", "run"))
 	depends_on("r-bit@4:", type=("build", "run"))

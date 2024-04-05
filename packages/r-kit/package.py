@@ -15,5 +15,6 @@ class RKit(RPackage):
 	cran = "kit" 
 
 	version("0.0.16", md5="af551d3c95b2d509d6ee4bbc2545b199")
+	version("0.0.15", md5="29b1c1c591f4e3649153c81045e173a3")
 
 	depends_on("r@3.1:", type=("build", "run"))

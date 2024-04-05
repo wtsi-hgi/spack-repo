@@ -30,4 +30,3 @@ class RSinglecellmultimodal(RPackage):
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
 
-	# experiment

@@ -18,6 +18,7 @@ class ROneclust(RPackage):
 	cran = "oneclust" 
 
 	version("0.3.0", md5="ff267d4c960e452f6cbfb8f9c6b9cac7")
+	version("0.2.3", md5="41e699ee7f43bcbdf903f62037e1b4a6")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -19,6 +19,7 @@ class RWdnet(RPackage):
 	cran = "wdnet" 
 
 	version("1.2.3", md5="12c97bb9853cfc030071914b85ab49f8")
+	version("1.2.2", md5="d46ae10a17728043025f15c9b8bbdcd4")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-cvxr", type=("build", "run"))

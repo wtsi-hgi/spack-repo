@@ -19,4 +19,3 @@ class RLungcancerlines(RPackage):
 
 	depends_on("r-rsamtools", type=("build", "run"))
 
-	# experiment

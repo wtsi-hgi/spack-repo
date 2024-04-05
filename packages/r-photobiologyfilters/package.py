@@ -21,6 +21,7 @@ class RPhotobiologyfilters(RPackage):
 	cran = "photobiologyFilters" 
 
 	version("0.6.0", md5="e9319a46c060ca04fe41033d1c927583")
+	version("0.5.2", md5="7f71d5a509539c8c82ac746d006e314e")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-photobiology@0.11:", type=("build", "run"))

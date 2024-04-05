@@ -13,7 +13,7 @@ class RRunit(RPackage):
 	code inspection and report generation tools."""
 
 	cran = "RUnit"
-	version("0.4.32", sha256="23a393059989000734898685d0d5509ece219879713eb09083f7707f167f81f1")
 	version("0.4.33", md5="15fe8bcba8961e79e9a43df943f82467")
+	version("0.4.32", sha256="23a393059989000734898685d0d5509ece219879713eb09083f7707f167f81f1")
 
 	depends_on("r@2.5:", type=("build", "run"))

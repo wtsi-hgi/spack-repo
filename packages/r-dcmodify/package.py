@@ -19,8 +19,8 @@ class RDcmodify(RPackage):
 	homepage = "https://github.com/data-cleaning/dcmodify"
 	cran = "dcmodify" 
 
-	version("0.8.0", md5="87f9591bab61a8907d3d9e3ccc96d6b5")
 	version("0.9.0", md5="c72bf01f77bc91f8107df6a8748c5445")
+	version("0.8.0", md5="87f9591bab61a8907d3d9e3ccc96d6b5")
 
 	depends_on("r-yaml", type=("build", "run"))
 	depends_on("r-validate@1.1.3:", type=("build", "run"))

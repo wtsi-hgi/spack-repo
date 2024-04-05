@@ -25,6 +25,7 @@ class RStarvz(RPackage):
 	cran = "starvz" 
 
 	version("0.8.0", md5="268ec913c42ff48ea3d7f3df11825830")
+	version("0.7.1", md5="d9dfb23a40c58e2bb379ead91f58f02a")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

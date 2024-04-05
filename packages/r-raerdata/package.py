@@ -24,4 +24,3 @@ class RRaerdata(RPackage):
 	depends_on("r-rtracklayer", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 
-	# experiment

@@ -16,6 +16,7 @@ class RPump(RPackage):
 	cran = "PUMP" 
 
 	version("1.0.3", md5="65a58b1aed60db8cb86514755a6bcb17")
+	version("1.0.2", md5="dbcef63a76d61b1622a8573776b5bd8f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

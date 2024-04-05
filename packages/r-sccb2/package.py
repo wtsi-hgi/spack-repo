@@ -16,6 +16,7 @@ class RSccb2(RPackage):
 	bioc = "scCB2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scCB2_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scCB2/scCB2_1.12.0.tar.gz"]
 
+	version("1.12.0", md5="aaa88ac58fbc1b32bfc514cc72109ada", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/scCB2_1.12.0.tar.gz")
 	version("1.12.0", md5="aaa88ac58fbc1b32bfc514cc72109ada", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scCB2_1.12.0.tar.gz")
 
 	depends_on("r@3.6:", type=("build", "run"))

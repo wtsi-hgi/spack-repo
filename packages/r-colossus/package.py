@@ -17,6 +17,7 @@ Models"
 	cran = "Colossus" 
 
 	version("1.0.1", md5="e5cdaf0fe9667d2e8e58c677400f562f")
+	version("1.0.0", md5="d353e593bc71c5fea54b26424892c31f")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

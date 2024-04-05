@@ -20,4 +20,3 @@ class RHspeccdf(RPackage):
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

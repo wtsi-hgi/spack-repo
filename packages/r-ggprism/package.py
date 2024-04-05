@@ -20,6 +20,7 @@ class RGgprism(RPackage):
 	cran = "ggprism" 
 
 	version("1.0.5", md5="b800779500b9ae02d30505175ffc02ad")
+	version("1.0.4", md5="e42b006be945f80d62dc240066e15244")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))

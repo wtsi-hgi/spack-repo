@@ -16,8 +16,8 @@ class RAlternativesplicingeventsHg38(RPackage):
 	bioc = "alternativeSplicingEvents.hg38" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/alternativeSplicingEvents.hg38_1.1.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/alternativeSplicingEvents.hg38/alternativeSplicingEvents.hg38_1.1.0.tar.gz"]
 
+	version("1.1.0", md5="8d49710eebd62fb15a48cab252ff3eca", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/alternativeSplicingEvents.hg38_1.1.0.tar.gz")
 	version("1.1.0", md5="8d49710eebd62fb15a48cab252ff3eca", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/alternativeSplicingEvents.hg38_1.1.0.tar.gz")
 
 	depends_on("r-annotationhub", type=("build", "run"))
 
-	# annotation

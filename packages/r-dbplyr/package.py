@@ -15,6 +15,7 @@ class RDbplyr(RPackage):
 	'SQL' translation to be provided by the package author."""
 
 	cran = "dbplyr"
+	version("2.5.0", md5="e72abd281aaaeeabe1a88e9c1877c0fe")
 	version("2.4.0", md5="55d0e3258599d069e8d995b5d99b9a23")
 	version("2.3.2", sha256="0ddc00595ec6b21962d0bb6f470f5f7c9d61c74a4f92681a37e94e1295707fac")
 	version("2.2.1", sha256="a6f3f644c068fe1a3b3e99a3a10de55a150d43ef20b5130e6724d142afcb0df7")
@@ -26,7 +27,6 @@ class RDbplyr(RPackage):
 	version("1.2.1", sha256="b348e7a02623f037632c85fb11be16c40c01755ae6ca02c8c189cdc192a699db")
 	version("1.2.0", sha256="02a5fa8dcf8a81c061fdaefa74f17896bee913720418b44dbd226a0d6b30799d")
 	version("1.1.0", sha256="7b1e456a2d1056fa6284582cd82d2df66d06b3eea92e9995f5a91a45f246f69d")
-	version("2.5.0", md5="e72abd281aaaeeabe1a88e9c1877c0fe")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-blob@1.2:", type=("build", "run"))

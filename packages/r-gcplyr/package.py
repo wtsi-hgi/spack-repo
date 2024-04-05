@@ -23,6 +23,7 @@ class RGcplyr(RPackage):
 	cran = "gcplyr" 
 
 	version("1.9.0", md5="f55e60ce6fc64f95374589c29bca00c0")
+	version("1.8.0", md5="ce30c32c9a7066e211948fbdc79337e9")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

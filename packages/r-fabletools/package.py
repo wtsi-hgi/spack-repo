@@ -19,6 +19,7 @@ class RFabletools(RPackage):
 	cran = "fabletools" 
 
 	version("0.4.1", md5="799bf2144d533a22242d33e78962f253")
+	version("0.4.0", md5="ffceb4f3432bc347d384e96fd6027644")
 
 	depends_on("r@3.1.3:", type=("build", "run"))
 	depends_on("r-tsibble@0.9:", type=("build", "run"))

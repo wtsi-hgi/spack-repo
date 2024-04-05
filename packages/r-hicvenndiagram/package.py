@@ -17,6 +17,7 @@ class RHicvenndiagram(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hicVennDiagram_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hicVennDiagram/hicVennDiagram_1.0.2.tar.gz"]
 
 	version("1.0.2", md5="61651aeae22cb23e4e66b3a7b9d0896f")
+	version("1.0.0", md5="11577b64cc67b69e4b9d712a76cd3310")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-interactionset", type=("build", "run"))

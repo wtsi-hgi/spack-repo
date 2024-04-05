@@ -26,6 +26,7 @@ class RGgdist(RPackage):
 	cran = "ggdist" 
 
 	version("3.3.2", md5="4272ed3112d6770ed3bea3697eea180e")
+	version("3.3.1", md5="1dd3ff51bdfffa5fc48032ace31a2470")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2@3.5:", type=("build", "run"))

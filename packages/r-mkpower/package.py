@@ -16,6 +16,7 @@ class RMkpower(RPackage):
 	cran = "MKpower" 
 
 	version("0.8", md5="d94d72e0b31c7c8e6e395ca5c8a807fe")
+	version("0.7", md5="55bcc18683243c9cbebb1f1f3ea8b436")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-matrixtests@0.2:", type=("build", "run"))

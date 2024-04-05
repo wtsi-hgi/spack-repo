@@ -17,6 +17,7 @@ class RSmoke(RPackage):
 	cran = "smoke" 
 
 	version("2.0.1", md5="4845307545dc496e36e6c6713508023a")
+	version("2.0.0", md5="44ba02b38c1dde3e05384191eaa57a67")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rdpack", type=("build", "run"))

@@ -23,6 +23,7 @@ class RMsoutcomes(RPackage):
 	cran = "MSoutcomes" 
 
 	version("0.2.0", md5="6237d8a510015718a0499016b9175773")
+	version("0.1.0", md5="4846eb1be2b819b80b2ad01d19cc687b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

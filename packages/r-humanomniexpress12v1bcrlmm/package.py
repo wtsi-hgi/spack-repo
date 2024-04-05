@@ -18,4 +18,3 @@ class RHumanomniexpress12v1bcrlmm(RPackage):
 	version("1.0.1", md5="abdb730fc230db669e588e024ee7624b")
 
 
-	# annotation

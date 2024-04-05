@@ -13,6 +13,7 @@ class RPs(RPackage):
 	'macOS'."""
 
 	cran = "ps"
+	version("1.7.6", md5="9a1d826feaafb2150f5c35bec3ff7255")
 	version("1.7.5", sha256="1abc3ae3c55797b994973f7e43bf5c7bbb4da649a0dcfad36675e196dba4cb4e")
 	version("1.7.2", sha256="9225ebdedb5c1b245bb38b01ce88084c0fc7eafcff6c4fda2e299003ace6b21a")
 	version("1.7.1", sha256="9c458a377d47cc972d3cd0b2a17d0b7ad3cf3b62226410803072089a57a55ef1")
@@ -23,6 +24,5 @@ class RPs(RPackage):
 	version("1.2.1", sha256="bd7207164e6557a9e4213c4b00dc5dc23d7705ab290569765998640b16a3beff")
 	version("1.1.0", sha256="5d5240d5bf1d48c721b3fdf47cfc9dbf878e388ea1f057b764db05bffdc4a9fe")
 	version("1.0.0", sha256="9bdaf64aaa44ae11866868402eb75bf56c2e3022100476d9b9dcd16ca784ffd8")
-	version("1.7.6", md5="9a1d826feaafb2150f5c35bec3ff7255")
 
 	depends_on("r@3.4:", type=("build", "run"))

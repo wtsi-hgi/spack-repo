@@ -15,6 +15,7 @@ class RMetaumbrella(RPackage):
 	cran = "metaumbrella" 
 
 	version("1.0.11", md5="5ee2419f5fb610da1762621e12726866")
+	version("1.0.10", md5="f5a428c3deeb031748b00c8d49de1955")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-meta", type=("build", "run"))

@@ -15,4 +15,5 @@ class RCliot(RPackage):
 	cran = "cliot" 
 
 	version("0.2.0", md5="01d3a982749a96f6aabf1b7ff16a78bd")
+	version("0.1.0", md5="f2246e0eea6a7ad2bc174dce1e89d577")
 

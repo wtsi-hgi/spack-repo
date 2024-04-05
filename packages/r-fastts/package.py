@@ -32,8 +32,9 @@ Variables
 	homepage = "https://petersonr.github.io/fastTS/"
 	cran = "fastTS" 
 
-	version("1.0.0", md5="845aabe2ed1dfeb1fc48aa3be197f5d8")
 	version("1.0.1", md5="c643b31795678eb27b748138df07d047")
+	version("1.0.0", md5="845aabe2ed1dfeb1fc48aa3be197f5d8")
+	version("0.1.2", md5="732bcdc7c75d5d78c71973b2a072b0eb")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

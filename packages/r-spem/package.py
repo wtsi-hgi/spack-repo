@@ -14,6 +14,7 @@ class RSpem(RPackage):
 
 	bioc = "SPEM"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SPEM_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SPEM/SPEM_1.42.0.tar.gz"]
+	version("1.42.0", md5="2b0ef40bd2428559cf559dfeb2a384f3")
 	version("1.40.0", commit="2eb948950c01ced90ebf27558817e2849da81a32")
 	version("1.38.0", commit="43ff6b0a84e7aef947d1a793583d2e9a0119c99d")
 	version("1.36.0", commit="75832966ba3e2bae6b56aa138764f7a98c7ba9b1")
@@ -24,7 +25,6 @@ class RSpem(RPackage):
 	version("1.20.0", commit="b0e1049c61a35da00882d21026f4c1eb03b17517")
 	version("1.18.0", commit="3ab425dd9889885eac328d26b73366a875cd250b")
 	version("1.16.0", commit="9c0a96374086765db9c81e36a662999067fa4cc7")
-	version("1.42.0", md5="2b0ef40bd2428559cf559dfeb2a384f3")
 
 	depends_on("r@2.15.1:", type=("build", "run"))
 	depends_on("r-rsolnp", type=("build", "run"))

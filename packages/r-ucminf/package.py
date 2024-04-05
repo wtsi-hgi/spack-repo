@@ -16,8 +16,8 @@ class RUcminf(RPackage):
 	for easy interchange with 'optim'."""
 
 	cran = "ucminf"
+	version("1.2.1", md5="44871c91a7be26117ffad1e685a7b719")
 	version("1.1-4.1", sha256="01a5b6f373ad267d22e2c29b8f7b6e31a1a148e48f4413e6a38e51aa049976b2")
 	version("1.1-4", sha256="a2eb382f9b24e949d982e311578518710f8242070b3aa3314a331c1e1e7f6f07")
-	version("1.2.1", md5="44871c91a7be26117ffad1e685a7b719")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -16,8 +16,8 @@ ClinicalTrials.gov
 	homepage = "https://eudract-tool.medschl.cam.ac.uk/"
 	cran = "eudract" 
 
-	version("0.10.2", md5="c0b1a975db1308adf715160d37c9f93c")
 	version("1.0.0", md5="d4775e0724d428dd3d7a2424ae075f32")
+	version("0.10.2", md5="c0b1a975db1308adf715160d37c9f93c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))

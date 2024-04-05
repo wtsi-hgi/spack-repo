@@ -16,6 +16,7 @@ and Beyond
 	cran = "lrstat" 
 
 	version("0.2.4", md5="4f0c195aef91a0e35261c0ebefea1bbb")
+	version("0.2.2", md5="57420683a9dcd83c11e243c18bfd7423")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-mvtnorm@1.1.3:", type=("build", "run"))

@@ -21,6 +21,7 @@ Data in a Machine Learning Framework
 	cran = "assignPOP" 
 
 	version("1.3.0", md5="39023ab44ba68db1590787442d089d61")
+	version("1.2.4", md5="83fc5f82b15338534ee5a56079b48114")
 
 	depends_on("r@2.3.2:", type=("build", "run"))
 	depends_on("r-caret", type=("build", "run"))

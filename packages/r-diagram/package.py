@@ -20,7 +20,7 @@ class RDiagram(RPackage):
 
     cran = "diagram"
 
-    version("1.6.5", sha256="e9c03e7712e0282c5d9f2b760bafe2aac9e99a9723578d9e6369d60301f574e4")
+	version("1.6.5", sha256="e9c03e7712e0282c5d9f2b760bafe2aac9e99a9723578d9e6369d60301f574e4")
 
     depends_on("r@2.1:", type=("build", "run"))
     depends_on("r-shape", type=("build", "run"))

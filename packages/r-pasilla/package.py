@@ -20,4 +20,3 @@ class RPasilla(RPackage):
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dexseq", type=("build", "run"))
 
-	# experiment

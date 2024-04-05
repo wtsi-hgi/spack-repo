@@ -26,4 +26,3 @@ class RPdMogene21St(RPackage):
 	depends_on("r-iranges@2.1.43:", type=("build", "run"))
 	depends_on("r-s4vectors@0.5.22:", type=("build", "run"))
 
-	# annotation

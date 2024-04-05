@@ -18,7 +18,7 @@ class RPinfsc50(RPackage):
 	cran = "pinfsc50"
 
 	maintainers("dorton21")
-	version("1.2.0", sha256="ed1fe214b9261feef8abfbf724c2bd9070d68e99a6ea95208aff2c57bbef8794")
 	version("1.3.0", md5="ec89a5a85a4c8975899b704b19acc1cb", url="https://cran.r-project.org/src/contrib/pinfsc50_1.3.0.tar.gz")
+	version("1.2.0", sha256="ed1fe214b9261feef8abfbf724c2bd9070d68e99a6ea95208aff2c57bbef8794")
 
 	depends_on("r@3.2.1:", type=("build", "run"))

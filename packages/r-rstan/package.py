@@ -20,6 +20,8 @@ class RRstan(RPackage):
 	the need to derive the partial derivatives."""
 
 	cran = "rstan"
+	version("2.32.6", md5="93aecb7454d73942e9b0c719b2723505")
+	version("2.32.5", md5="0d7ea5114187f589f6a2255cf1eeb397")
 	version("2.21.8", sha256="b2d4edc315419037970c9fa2e8740b934966d88d40548152811f3d4a28475075")
 	version("2.21.7", sha256="4495221310d390925b665c32e05ffabd3ae8857225bda65131a7ed2be41d6d45")
 	version("2.21.5", sha256="86e4fe562d8ddcd0b02336f35a420fa8786dd21de7ca2bebb4ed6e9c252bb9ea")
@@ -29,7 +31,6 @@ class RRstan(RPackage):
 	version("2.18.2", sha256="4d75dad95610d5a1d1c89a4ddbaf4326462e4ffe0ad28aed2129f2d9292e70ff")
 	version("2.17.2", sha256="a7b197e6e42f8f0c302da9205afc19a0261eaf6af1425854303d2ce6cbd36729")
 	version("2.10.1", sha256="4d2040742607f8675633c6b8c0a2e810f2fe3077f9242b1edfd42642613a8294")
-	version("2.32.6", md5="93aecb7454d73942e9b0c719b2723505")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-stanheaders@2.32:", type=("build", "run"))

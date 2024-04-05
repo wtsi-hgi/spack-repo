@@ -19,5 +19,6 @@ class RIcr(RPackage):
 	cran = "icr" 
 
 	version("0.6.5", md5="cb32f85e3bf9a1dd8a9c84632ecda305")
+	version("0.6.4", md5="8083925bb60e239d4266f7813cc22958")
 
 	depends_on("r-rcpp", type=("build", "run"))

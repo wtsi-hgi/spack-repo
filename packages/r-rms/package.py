@@ -24,6 +24,8 @@ class RRms(RPackage):
 	models, and quantile regression."""
 
 	cran = "rms"
+	version("6.8-0", md5="c3aed3fd117298c74eabe176a943ec70")
+	version("6.7-1", md5="93a6eb3c6991b9c579a914d8b59a9a41")
 	version("6.6-0", sha256="f3abadb94339f3aedadd27e1aceade069bcb53c94bf246626b0dc94b16b6625c")
 	version("6.3-0", sha256="6c41eb670daf5e4391cc2f2a19e20a591f90769c124300a7ccf555820140d3f9")
 	version("6.2-0", sha256="10d58cbfe39fb434223834e29e5248c9384cded23e6267cfc99367d0f5ee24b6")
@@ -33,7 +35,6 @@ class RRms(RPackage):
 	version("5.1-3", sha256="5fc7120d8a93b4aa9727d82eac368c5c47ff70f467ae2b012afac688235089eb")
 	version("5.1-2", sha256="f1cfeef466ac436105756679353a3468027d97a600e3be755b819aef30ed9207")
 	version("5.1-1", sha256="c489948df5c434b40bcf5288844f5b4e08d157f36939d09230c1600f88d1bfe3")
-	version("6.8-0", md5="c3aed3fd117298c74eabe176a943ec70")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-hmisc@5.1.0:", type=("build", "run"))

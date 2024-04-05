@@ -18,5 +18,6 @@ Completely at Random
 	cran = "MissMech" 
 
 	version("1.0.4", md5="5148e8fa34997468c288c4d3dc05d3d4")
+	version("1.0.3", md5="ff23177e564111940454678bf81c89e1")
 
 	depends_on("r@2.10:", type=("build", "run"))

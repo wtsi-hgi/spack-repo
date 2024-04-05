@@ -17,8 +17,8 @@ class RChromer(RPackage):
 	homepage = "https://docs.ropensci.org/chromer/"
 	cran = "chromer" 
 
-	version("0.6", md5="cea260774067121c2917319a953a7ad1")
 	version("0.8", md5="a670bf92bc24da1b615f5f8d75b19333")
+	version("0.6", md5="cea260774067121c2917319a953a7ad1")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

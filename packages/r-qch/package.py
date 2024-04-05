@@ -26,6 +26,7 @@ class RQch(RPackage):
 	cran = "qch" 
 
 	version("2.0.0", md5="ba0a9551cd98ac68cc0b89b35a9bb31c")
+	version("1.0.0", md5="f7f15061b0a4822b6fd5698c16094728")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-copula", type=("build", "run"))

@@ -24,8 +24,8 @@ class RBayesmultimode(RPackage):
 	homepage = "https://github.com/paullabonne/BayesMultiMode"
 	cran = "BayesMultiMode" 
 
-	version("0.7.0", md5="b8a06aceb665540d0b5929cb5c63917d")
 	version("0.7.1", md5="bc0a97f61da26767f3e2b3c7d15cf1bc")
+	version("0.7.0", md5="b8a06aceb665540d0b5929cb5c63917d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

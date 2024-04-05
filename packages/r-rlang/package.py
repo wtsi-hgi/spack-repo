@@ -13,14 +13,15 @@ class RRlang(RPackage):
 	system, and core 'Tidyverse' features like tidy evaluation."""
 
 	cran = "rlang"
+	version("1.1.3", md5="cf4c3b1270d4d047d5c8104da270ba30")
 	version("1.1.0", sha256="f89859d91c9edc05fd7ccf21163fe53ad58da907ee273a93d5ab004a8649335b")
 	version("1.0.6", sha256="e6973d98a0ea301c0da1eeaa435e9e65d1c3f0b95ed68bdc2d6cb0c610166760")
 	version("1.0.2", sha256="8de87c3e6fb0b3cce2dabc6908186f8e1528cc0c16b54de965fe02d405fdd7cc")
 	version("1.0.1", sha256="e59fd5c0f7530dbe329aa01621f6ef5a6474ff3ec96de0c0d24018fc2f21ad7f")
 	version("1.0.0", sha256="ab6134c97b3100613ba2a15792fde5341f485ba85432a81370c6270c73396e6a")
+	version("0.4.6", sha256="3a81b107765fd6ac0ad716c428d01878775ded9208ba125d43c890c73d2533ca")
 	version("0.4.12", sha256="2a26915738be120a56ec93e781bcb50ffa1031e11904544198b4a15c35029915")
 	version("0.4.10", sha256="07530270c4c199f2b7efc5d57a476d99babd9d0c3388a02bb7d57fe312da3576")
-	version("0.4.6", sha256="3a81b107765fd6ac0ad716c428d01878775ded9208ba125d43c890c73d2533ca")
 	version("0.4.0", sha256="9748a4a217548bbe5631c18fd88c94811950446f798ff21fb327703aebaa150d")
 	version("0.3.4", sha256="4e467f7b0dcbde91b60c292137d2c69cecaa713a6e4c9b7157ef6fd5453b7ade")
 	version("0.3.1", sha256="30427b2be2288e88acd30c4ea348ee06043a649fd73623a63148b1ad96317151")
@@ -30,6 +31,5 @@ class RRlang(RPackage):
 	version("0.1.4", sha256="8d9b6c962ae81b96c96ada9614c6a1ffb9eda12dd407e2aff634f7d335e7b9f4")
 	version("0.1.2", sha256="90cfcd88cae6fff044fca64b24a8e6bdc09fc276163b518ff2d90268b0c785f9")
 	version("0.1.1", sha256="5901f95d68728a7d9bb1c2373a20ce6e4ad222f66e397e7735e9eff987c73c3f")
-	version("1.1.3", md5="cf4c3b1270d4d047d5c8104da270ba30")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -22,6 +22,7 @@ class RTruncexpfam(RPackage):
 	cran = "TruncExpFam" 
 
 	version("1.1.1", md5="f04834b22c4f371407bb60dd67a385b0")
+	version("1.1.0", md5="f09c7c1a95b454dd088292e6bb44e85b")
 
 	depends_on("r-invgamma", type=("build", "run"))
 	depends_on("r-rmutil", type=("build", "run"))

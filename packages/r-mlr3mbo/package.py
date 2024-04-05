@@ -27,6 +27,7 @@ class RMlr3mbo(RPackage):
 	cran = "mlr3mbo" 
 
 	version("0.2.2", md5="3c245f209295566327d2c2b7588ac8aa")
+	version("0.2.1", md5="f1ababcbd9890756374bf8195205c580")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-bbotk@0.5.4:", type=("build", "run"))

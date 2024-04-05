@@ -21,4 +21,3 @@ class RSpikein(RPackage):
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-affy@1.23.4:", type=("build", "run"))
 
-	# experiment

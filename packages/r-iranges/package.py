@@ -18,6 +18,7 @@ class RIranges(RPackage):
 
 	bioc = "IRanges"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IRanges_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IRanges/IRanges_2.36.0.tar.gz"]
+	version("2.36.0", md5="87618d2e5ee94d7ab81d2e1c4d847120")
 	version("2.34.0", commit="dcddf934384e05dccffb2a8a808147c963ff0c3e")
 	version("2.32.0", commit="2b5c9fc706c8cdc96f0c46508087863df1502f81")
 	version("2.30.1", commit="ead506a14d6cc89ac2f14b55a4b04496755e4e50")
@@ -30,7 +31,6 @@ class RIranges(RPackage):
 	version("2.14.12", commit="00af02756c14771a23df9efcf379409ab6eb3041")
 	version("2.12.0", commit="1b1748655a8529ba87ad0f223f035ef0c08e7fcd")
 	version("2.10.5", commit="b00d1d5025e3c480d17c13100f0da5a0132b1614")
-	version("2.36.0", md5="87618d2e5ee94d7ab81d2e1c4d847120")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.39.2:", type=("build", "run"))

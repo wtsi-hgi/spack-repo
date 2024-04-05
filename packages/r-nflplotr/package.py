@@ -17,6 +17,7 @@ class RNflplotr(RPackage):
 	cran = "nflplotR" 
 
 	version("1.3.1", md5="e65829a7208cc38dd6833d0cacc601be")
+	version("1.2.0", md5="a6d5fdc6e25a758b429b569ffd0f4fa6")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cachem@1:", type=("build", "run"))

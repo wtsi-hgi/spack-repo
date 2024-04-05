@@ -17,6 +17,7 @@ Prevention's 'LTAS' Software in R
 	cran = "LTASR" 
 
 	version("0.1.3", md5="2d7e027245e677bd1e5ddc030e19c989")
+	version("0.1.2", md5="727fdcd70e3d18ed1964460105f309f9")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

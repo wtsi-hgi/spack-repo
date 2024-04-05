@@ -16,6 +16,7 @@ Diagnostics, Simulation, Local Tests
 	cran = "stopp" 
 
 	version("0.2.0", md5="e878d50194cda361d28b08b291276388")
+	version("0.1.1", md5="afd5b6d08fe823cc6129fc0b7c2f85ef")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-kernsmooth", type=("build", "run"))

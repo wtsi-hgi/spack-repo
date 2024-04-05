@@ -15,6 +15,7 @@ class RBiobase(RPackage):
 	bioc = "Biobase"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Biobase_2.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Biobase/Biobase_2.62.0.tar.gz"]
 
+	version("2.62.0", md5="75a65eb015d58ca611f2bebca41f9d2d")
 	version("2.60.0", commit="8dc10d2d26dc0847740ff2b4f16cc1ae2e936464")
 	version("2.58.0", commit="767f2f33f158f233616178e12ce08cdb03d2a5a2")
 	version("2.56.0", commit="3b2dd91b333677c2f27257c7624014a55e73c52b")
@@ -25,7 +26,6 @@ class RBiobase(RPackage):
 	version("2.40.0", commit="6555edbbcb8a04185ef402bfdea7ed8ac72513a5")
 	version("2.38.0", commit="83f89829e0278ac014b0bc6664e621ac147ba424")
 	version("2.36.2", commit="15f50912f3fa08ccb15c33b7baebe6b8a59ce075")
-	version("2.62.0", md5="75a65eb015d58ca611f2bebca41f9d2d")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.27.1:", type=("build", "run"))

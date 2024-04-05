@@ -21,6 +21,7 @@ class RRnifti(RPackage):
 	cran = "RNifti" 
 
 	version("1.6.1", md5="95509945ea75a397a90d4d0b808d629d")
+	version("1.6.0", md5="0d1b3a5b75db97b56170ad8e9e212325")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("zlib", type=("build", "link", "run"))

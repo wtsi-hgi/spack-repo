@@ -14,6 +14,7 @@ class RBiocgenerics(RPackage):
 	bioc = "BiocGenerics"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocGenerics_0.48.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocGenerics/BiocGenerics_0.48.1.tar.gz"]
 
+	version("0.48.1", md5="77629e64c2a9a0324eb11bb59b53b126")
 	version("0.46.0", commit="a90f0c5976a24417e47e009ba602fc98515ac9ab")
 	version("0.44.0", commit="d7cd9c19958bd8d4573d980494188fa15ab16e45")
 	version("0.42.0", commit="3582d47b836387afc08157f3d6a5013fd64334ed")
@@ -25,6 +26,5 @@ class RBiocgenerics(RPackage):
 	version("0.26.0", commit="5b2a6df639e48c3cd53789e0b174aec9dda6b67d")
 	version("0.24.0", commit="3db111e8c1f876267da89f4f0c5406a9d5c31cd1")
 	version("0.22.1", commit="9c90bb8926885289d596a81ff318ee3745cbb6ad")
-	version("0.48.1", md5="77629e64c2a9a0324eb11bb59b53b126")
 
 	depends_on("r@4:", type=("build", "run"))

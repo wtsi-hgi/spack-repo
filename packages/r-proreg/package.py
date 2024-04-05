@@ -15,6 +15,7 @@ class RProreg(RPackage):
 	cran = "PROreg" 
 
 	version("1.3", md5="e154b32a072180edfc23649e31600a52")
+	version("1.2", md5="4b909bbfc279b6a8b844b07007c94e33")
 
 	depends_on("r-fmsb", type=("build", "run"))
 	depends_on("r-car", type=("build", "run"))

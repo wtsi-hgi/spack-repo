@@ -23,6 +23,7 @@ class RGgfacto(RPackage):
 	cran = "ggfacto" 
 
 	version("0.3.0", md5="68c7e54454d3728ddd8e3aa6b63c59f6")
+	version("0.2.3", md5="29fc116742423069058087780e040453")
 
 	depends_on("r-factominer@2:", type=("build", "run"))
 	depends_on("r-ggiraph@0.8.2:", type=("build", "run"))

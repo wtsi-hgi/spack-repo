@@ -31,6 +31,7 @@ class RNpboottprm(RPackage):
 	cran = "npboottprm" 
 
 	version("0.2.1", md5="8e9d9fd32654665fc067eae5aaa57690")
+	version("0.2.0", md5="5cc251a2592fdf0f7887bb8a463d78e0")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-dt", type=("build", "run"))

@@ -46,6 +46,7 @@ class RHttk(RPackage):
 	cran = "httk" 
 
 	version("2.3.1", md5="faf1d6819033f9a017f1012982755a24")
+	version("2.3.0", md5="2b47e41bdca3f56a33c860b132b1af9a")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-desolve", type=("build", "run"))

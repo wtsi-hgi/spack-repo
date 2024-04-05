@@ -18,6 +18,7 @@ class RMgcv(RPackage):
 	distributions beyond the exponential family."""
 
 	cran = "mgcv"
+	version("1.9-1", md5="458c552f0fd41c12cdddbc5af6bf1fca")
 	version("1.8-42", sha256="087fc38b64ad06f2149eafc54f2679dd8840cf6fc488e66cf131e3c1de2db6c7")
 	version("1.8-41", sha256="2f7a030fe2be75edef6bd96147df46c2262f3cdc44c383d8f82b401df44fe690")
 	version("1.8-40", sha256="dbe627266c3b339232e2d4228d5370ba88c86540319e6891d161242efba7e4a5")
@@ -33,7 +34,6 @@ class RMgcv(RPackage):
 	version("1.8-17", sha256="8ff3eb28c83ba7c9003005e7fe08028627fb673b9b07c0462b410e45e81042fe")
 	version("1.8-16", sha256="9266a0cbd783717fc6130db4e0034e69465d177397687f35daf6a8ccdb0b435e")
 	version("1.8-13", sha256="74bc819708ef59da94b777a446ef00d7f14b428eec843533e824017c29cc524b")
-	version("1.9-1", md5="458c552f0fd41c12cdddbc5af6bf1fca")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-nlme@3.1.64:", type=("build", "run"))

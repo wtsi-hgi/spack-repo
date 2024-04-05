@@ -15,5 +15,6 @@ class RBdsmatrix(RPackage):
 	cran = "bdsmatrix" 
 
 	version("1.3-7", md5="9bd961875808728b8d78e934855d3175")
+	version("1.3-6", md5="4f8ccf979ab7f88fa71b7e45323b219a")
 
 	depends_on("r@2:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RYuima(RPackage):
 	cran = "yuima" 
 
 	version("1.15.27", md5="c78b2b1ffe13ac9312b225f5dbf74730")
+	version("1.15.22", md5="7110e3334fcc092055c48bbdb782e2bf")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-zoo", type=("build", "run"))

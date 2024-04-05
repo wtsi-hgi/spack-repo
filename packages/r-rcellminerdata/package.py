@@ -20,4 +20,3 @@ class RRcellminerdata(RPackage):
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))
 
-	# experiment

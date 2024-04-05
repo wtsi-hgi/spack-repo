@@ -21,6 +21,7 @@ class RIpanema(RPackage):
 	cran = "ipanema" 
 
 	version("1.1.0", md5="427c5f7401d3f47bd632af3a75a3fc9a")
+	version("0.6.7", md5="0fb4cd8f6728cbba3c9f15cbb27c8c77")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-base64enc", type=("build", "run"))

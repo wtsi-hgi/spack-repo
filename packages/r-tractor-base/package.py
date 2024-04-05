@@ -19,6 +19,7 @@ class RTractorBase(RPackage):
 	cran = "tractor.base" 
 
 	version("3.4.2", md5="f5e71dc3a7db433078d2de5a49a2997c")
+	version("3.3.5.1", md5="b19f48e7b25b568ca6c8b0bff9753482")
 
 	depends_on("r-ore@1.3:", type=("build", "run"))
 	depends_on("r-reportr", type=("build", "run"))

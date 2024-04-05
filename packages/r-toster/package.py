@@ -16,6 +16,7 @@ class RToster(RPackage):
 	cran = "TOSTER" 
 
 	version("0.8.1", md5="68d6aa9131d0817db79fe2f28a9e406c")
+	version("0.8.0", md5="d800acd0dea1f7279d2e131385dd789c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-jmvcore@0.9.6.4:", type=("build", "run"))

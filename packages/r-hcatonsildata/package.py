@@ -29,4 +29,3 @@ class RHcatonsildata(RPackage):
 	depends_on("r-rmarkdown", type=("build", "run"))
 	depends_on("r-base64enc", type=("build", "run"))
 
-	# experiment

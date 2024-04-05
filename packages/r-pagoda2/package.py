@@ -16,6 +16,7 @@ class RPagoda2(RPackage):
 	cran = "pagoda2" 
 
 	version("1.0.12", md5="9ecefd8a29f040f5df0b56351948522a", url="https://cran.r-project.org/src/contrib/pagoda2_1.0.12.tar.gz")
+	version("1.0.11", md5="c2abb2ed7da8c7a1c91bd9158df678cc", url="https://cran.r-project.org/src/contrib/pagoda2_1.0.11.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

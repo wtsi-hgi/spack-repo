@@ -16,6 +16,7 @@ class RDropout(RPackage):
 	cran = "dropout" 
 
 	version("2.1.1", md5="e1437844a6b3eb2f2df1fae2c4af863c")
+	version("2.1.0", md5="0ef2937ced7298fdb2daba09352f8c8d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

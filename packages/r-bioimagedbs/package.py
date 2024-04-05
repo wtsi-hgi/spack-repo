@@ -30,4 +30,3 @@ class RBioimagedbs(RPackage):
 	depends_on("r-animation", type=("build", "run"))
 	depends_on("r-einsum", type=("build", "run"))
 
-	# experiment

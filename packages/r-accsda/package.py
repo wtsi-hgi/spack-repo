@@ -23,6 +23,7 @@ class RAccsda(RPackage):
 	cran = "accSDA" 
 
 	version("1.1.3", md5="f69de7acb8a6fbfb5204b4964704491b")
+	version("1.1.2", md5="7f357940ffdb072548b642ba605dac16")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-mass@7.3.45:", type=("build", "run"))

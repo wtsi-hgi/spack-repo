@@ -21,4 +21,3 @@ class RClustifyrdatahub(RPackage):
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))
 
-	# experiment

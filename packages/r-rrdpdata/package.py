@@ -20,4 +20,3 @@ class RRrdpdata(RPackage):
 	depends_on("r-rrdp", type=("build", "run"))
 	depends_on("openjdk", type=("build", "link", "run"))
 
-	# experiment

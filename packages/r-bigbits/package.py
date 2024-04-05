@@ -14,8 +14,8 @@ class RBigbits(RPackage):
 	
 	cran = "bigBits" 
 
-	version("1.1", md5="a66c6befad3436debf6f479bf6b4b302")
 	version("1.2", md5="3592bd2d5ed5ec17ed77f80f98bccc97")
+	version("1.1", md5="a66c6befad3436debf6f479bf6b4b302")
 
 	depends_on("r-rmpfr", type=("build", "run"))
 	depends_on("r-gmp", type=("build", "run"))

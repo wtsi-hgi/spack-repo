@@ -25,4 +25,3 @@ class RNestlink(RPackage):
 	depends_on("r-protviz@0.4:", type=("build", "run"))
 	depends_on("r-shortread@1.41:", type=("build", "run"))
 
-	# experiment

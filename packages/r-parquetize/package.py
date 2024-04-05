@@ -20,6 +20,7 @@ class RParquetize(RPackage):
 	cran = "parquetize" 
 
 	version("0.5.7", md5="a0d4732c365f3613c76910f1e76fd61f")
+	version("0.5.6.1", md5="e5307cb78d38dac1ec02d4deccf1ba06")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-haven@2.4:", type=("build", "run"))

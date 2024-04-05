@@ -16,6 +16,7 @@ class RIvoTable(RPackage):
 	cran = "ivo.table" 
 
 	version("0.4.1", md5="58027292a44570c4408f8df1f126fd5f")
+	version("0.4", md5="b4660e0d9443540d8f58c34263a3c48c")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-flextable", type=("build", "run"))

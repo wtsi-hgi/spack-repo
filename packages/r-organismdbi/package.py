@@ -16,6 +16,7 @@ class ROrganismdbi(RPackage):
 
 	bioc = "OrganismDbi"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OrganismDbi_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OrganismDbi/OrganismDbi_1.44.0.tar.gz"]
+	version("1.44.0", md5="3d6c3ba042e4e0b6ecf5fa27fc344a82")
 	version("1.42.0", commit="29fcd5c47f8c479edac630a8e2a05ec5facb1328")
 	version("1.40.0", commit="fac971dabef3b6d2473d2061bc1723e3de59c9d7")
 	version("1.38.1", commit="fa8da4dd42ab15e1d21fd9f8286440596d50b1ec")
@@ -27,7 +28,6 @@ class ROrganismdbi(RPackage):
 	version("1.22.0", commit="24e953eb3847222d8018103b79b9fc72483cc513")
 	version("1.20.0", commit="d42e06a24777e5ffb966ad5addb4f46dfffa2269")
 	version("1.18.1", commit="ba2d1237256805e935d9534a0c6f1ded07b42e95")
-	version("1.44.0", md5="3d6c3ba042e4e0b6ecf5fa27fc344a82")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.15.10:", type=("build", "run"))

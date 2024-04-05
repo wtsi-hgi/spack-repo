@@ -23,8 +23,8 @@ class RExpirest(RPackage):
 	homepage = "https://github.com/piusdahinden/expirest"
 	cran = "expirest" 
 
-	version("0.1.5", md5="86b56ea576906e10e361aa151d214a07")
 	version("0.1.6", md5="9b9b85d5529c97fb042eafb8409af6a1")
+	version("0.1.5", md5="86b56ea576906e10e361aa151d214a07")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

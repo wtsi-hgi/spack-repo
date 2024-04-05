@@ -15,6 +15,7 @@ class RXtrasnplocsHsapiensDbsnp144Grch37(RPackage):
 	bioc = "XtraSNPlocs.Hsapiens.dbSNP144.GRCh37" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/XtraSNPlocs.Hsapiens.dbSNP144.GRCh37_0.99.12.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/XtraSNPlocs.Hsapiens.dbSNP144.GRCh37/XtraSNPlocs.Hsapiens.dbSNP144.GRCh37_0.99.12.tar.gz"]
 
+	version("0.99.12", md5="758d024c50d2349036dc27cc689b4e5a", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/XtraSNPlocs.Hsapiens.dbSNP144.GRCh37_0.99.12.tar.gz")
 	version("0.99.12", md5="758d024c50d2349036dc27cc689b4e5a", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/XtraSNPlocs.Hsapiens.dbSNP144.GRCh37_0.99.12.tar.gz")
 
 	depends_on("r@2.10:", type=("build", "run"))
@@ -25,4 +26,3 @@ class RXtrasnplocsHsapiensDbsnp144Grch37(RPackage):
 	depends_on("r-genomeinfodb", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))
 
-	# annotation

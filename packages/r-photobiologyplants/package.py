@@ -20,6 +20,7 @@ class RPhotobiologyplants(RPackage):
 	cran = "photobiologyPlants" 
 
 	version("0.5.0", md5="45a3a7d0cc26a5a69dfbb9e153872d03")
+	version("0.4.3", md5="99d38e90390fe5e1e924beae59ab08fa")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-photobiology@0.11.2:", type=("build", "run"))

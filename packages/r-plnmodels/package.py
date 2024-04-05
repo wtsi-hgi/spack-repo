@@ -21,6 +21,7 @@ class RPlnmodels(RPackage):
 	cran = "PLNmodels" 
 
 	version("1.2.0", md5="aafbc099db10212c0b79703856568d33")
+	version("1.1.0", md5="2a2232c3c46e9614e1e5a9546517f190")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

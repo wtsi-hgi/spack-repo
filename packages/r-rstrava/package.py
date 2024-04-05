@@ -15,6 +15,7 @@ class RRstrava(RPackage):
 	cran = "rStrava" 
 
 	version("1.3.1", md5="50e943239532f882eafe5c2a7a046f8f")
+	version("1.3.0", md5="677fde9256e86d6624dd30fc06221ea7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

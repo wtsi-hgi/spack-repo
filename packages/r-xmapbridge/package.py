@@ -14,6 +14,7 @@ class RXmapbridge(RPackage):
 
 	bioc = "xmapbridge"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/xmapbridge_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/xmapbridge/xmapbridge_1.60.0.tar.gz"]
+	version("1.60.0", md5="8b07bc6daa0d9dad8943ef442076eb5e")
 	version("1.58.0", commit="905077b7935c4678376f3f2afd9881ff0c45ad00")
 	version("1.56.0", commit="fdf2cafca8ad348813d3381fee57623fab53f0ab")
 	version("1.54.0", commit="a316e2399894191646c229378fa138b7461c75ab")
@@ -24,6 +25,5 @@ class RXmapbridge(RPackage):
 	version("1.38.0", commit="08138f00385fa0c669ff4cc33d7eac3d29cd615d")
 	version("1.36.0", commit="e44f648c9da9eaa130849a738d90dc11685050e2")
 	version("1.34.0", commit="f162e1f72ead5f5a1aede69032d5771a6572d965")
-	version("1.60.0", md5="8b07bc6daa0d9dad8943ef442076eb5e")
 
 	depends_on("r@2:", type=("build", "run"))

@@ -20,4 +20,3 @@ class RTxdbHsapiensUcscHg38Knowngene(RPackage):
 	depends_on("r-genomicfeatures@1.53.2:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

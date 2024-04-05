@@ -16,5 +16,6 @@ class RSurvivalmodels(RPackage):
 	cran = "survivalmodels" 
 
 	version("0.1.191", md5="ef07f43949486e09ef98bbfaa88379aa")
+	version("0.1.13", md5="b4b410049e9b4d59c2e4f8f327559249")
 
 	depends_on("r-rcpp", type=("build", "run"))

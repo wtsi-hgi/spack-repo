@@ -17,6 +17,7 @@ class RRegsplice(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/regsplice_1.28.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/regsplice/regsplice_1.28.1.tar.gz"]
 
 	version("1.28.1", md5="eaeba7b7629e9360cc51c11c611499c5")
+	version("1.28.0", md5="3f63d2e93b02aec3ed044e2c56938d12")
 
 	depends_on("r-glmnet", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

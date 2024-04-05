@@ -16,6 +16,7 @@ class REvinf(RPackage):
 	cran = "evinf" 
 
 	version("0.8.8", md5="47d460dc8ad21a5bb8080b8a7f16d3f7")
+	version("0.8.7", md5="4b441ab6164d9cf110490136d22413ee")
 
 	depends_on("r-generics", type=("build", "run"))
 	depends_on("r@2.10:", type=("build", "run"))

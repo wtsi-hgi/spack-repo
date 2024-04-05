@@ -15,6 +15,7 @@ class RPdHcG110(RPackage):
 	bioc = "pd.hc.g110" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hc.g110_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.hc.g110/pd.hc.g110_3.12.0.tar.gz"]
 
+	version("3.12.0", md5="5c5418c588ed28e2fa088c7952c48b91", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.hc.g110_3.12.0.tar.gz")
 	version("3.12.0", md5="5c5418c588ed28e2fa088c7952c48b91", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hc.g110_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
@@ -26,4 +27,3 @@ class RPdHcG110(RPackage):
 	depends_on("r-iranges@2.1.43:", type=("build", "run"))
 	depends_on("r-s4vectors@0.5.22:", type=("build", "run"))
 
-	# annotation

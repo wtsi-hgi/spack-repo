@@ -15,6 +15,7 @@ class RAnnotationforge(RPackage):
 	bioc = "AnnotationForge"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnnotationForge_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnnotationForge/AnnotationForge_1.44.0.tar.gz"]
 
+	version("1.44.0", md5="4aa011cdbdc464bbfe1542ec418e7749")
 	version("1.42.0", commit="2eac005012b11317c33c8b0062b968b2ac378308")
 	version("1.40.0", commit="f77d3a942eb6b18c18888b7af3f0e652596cf19f")
 	version("1.38.1", commit="2dcedf353bc57bf80818e6adb1f7129c21886f6b")
@@ -26,7 +27,6 @@ class RAnnotationforge(RPackage):
 	version("1.22.2", commit="8eafb1690c1c02f6291ccbb38ac633d54b8217f8")
 	version("1.20.0", commit="7b440f1570cb90acce8fe2fa8d3b5ac34f638882")
 	version("1.18.2", commit="44ca3d4ef9e9825c14725ffdbbaa57ea059532e1")
-	version("1.44.0", md5="4aa011cdbdc464bbfe1542ec418e7749")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.15.10:", type=("build", "run"))

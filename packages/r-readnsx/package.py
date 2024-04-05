@@ -18,6 +18,7 @@ class RReadnsx(RPackage):
 	cran = "readNSx" 
 
 	version("0.0.4", md5="65dd693a9ee21f9b0dc4b7cd1ccf4cb0")
+	version("0.0.3", md5="3ecc816256ce4f7520587b2ee620d5b4")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-fastmap", type=("build", "run"))

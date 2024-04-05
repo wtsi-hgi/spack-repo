@@ -21,6 +21,7 @@ class RMedscan(RPackage):
 	cran = "medScan" 
 
 	version("1.0.2", md5="a841eaab5c01da12d5020595c1ebbdda")
+	version("1.0.1", md5="b0a476eee4b121957cd0765983c8e5ab")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-hdmt", type=("build", "run"))

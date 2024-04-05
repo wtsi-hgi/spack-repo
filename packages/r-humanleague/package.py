@@ -17,5 +17,6 @@ class RHumanleague(RPackage):
 	cran = "humanleague" 
 
 	version("2.3.1", md5="f9733898be8a39815499f3bf4083f884")
+	version("2.2.0", md5="429b5e128f567834fce2866f32598eb0")
 
 	depends_on("r-rcpp", type=("build", "run"))

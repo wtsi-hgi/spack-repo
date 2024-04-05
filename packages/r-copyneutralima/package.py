@@ -21,4 +21,3 @@ class RCopyneutralima(RPackage):
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-rdpack@0.8:", type=("build", "run"))
 
-	# experiment

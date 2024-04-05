@@ -20,4 +20,3 @@ class RMosaicsexample(RPackage):
 
 	depends_on("r@2.11.1:", type=("build", "run"))
 
-	# experiment

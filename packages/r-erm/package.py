@@ -15,6 +15,7 @@ class RErm(RPackage):
 	cran = "eRm" 
 
 	version("1.0-6", md5="c30c91e3d2c8274da69166d5b2d9a031")
+	version("1.0-4", md5="11e5e5d45d6c363beb5e618a0ca56fd7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

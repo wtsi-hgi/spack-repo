@@ -20,4 +20,3 @@ class RTxdbRnorvegicusUcscRn7Refgene(RPackage):
 	depends_on("r-genomicfeatures@1.47.13:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

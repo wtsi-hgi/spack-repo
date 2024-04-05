@@ -16,8 +16,8 @@ class RFasstr(RPackage):
 	homepage = "https://bcgov.github.io/fasstr/"
 	cran = "fasstr" 
 
-	version("0.5.1", md5="c93b56cacaf94a7818915125cede3903")
 	version("0.5.2", md5="735f7933ee71f86041cd086a9784d207")
+	version("0.5.1", md5="c93b56cacaf94a7818915125cede3903")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-dplyr@0.8.1:", type=("build", "run"))

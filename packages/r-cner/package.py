@@ -14,6 +14,7 @@ class RCner(RPackage):
 
 	bioc = "CNEr"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNEr_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNEr/CNEr_1.38.0.tar.gz"]
+	version("1.38.0", md5="56fdc5f3323b1f3efbb8d85584ff75d2")
 	version("1.36.0", commit="4f2feeb395cfc071ed97ba8b6327425dfd42d6b5")
 	version("1.34.0", commit="878de98d18f6f959ad5e014ecd8165d3105d8b48")
 	version("1.32.0", commit="1c92f3d7f3dccf76ab7d54f286117b09bc470b8f")
@@ -24,7 +25,6 @@ class RCner(RPackage):
 	version("1.16.1", commit="a2bec4b98d5938709f959a69c151f553ef357941")
 	version("1.14.0", commit="b8634d65c51728c815127e22b45eba7c9b9db897")
 	version("1.12.1", commit="90d611f9cd19a73d0fe92ab03ef428519d64c017")
-	version("1.38.0", md5="56fdc5f3323b1f3efbb8d85584ff75d2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biostrings@2.33.4:", type=("build", "run"))

@@ -14,8 +14,6 @@ class RPlotly(RPackage):
 	the grammar of graphics."""
 
 	cran = "plotly"
-	version("4.10.1", sha256="ac0921a1cba24e17a0f3a0a28b7a40ac930e17fe5caa9c3973c9a8d1e20c367a")
-	version("4.10.0", sha256="bd995c654dbc8c09a84adaba8def99766919e3894caf18b551bb26b2f591389a")
 	version("4.9.3", sha256="d44d1a16d96de28bc2d36f1c897384215eeec44d109546c6e9c2707db0880120")
 	version("4.9.0", sha256="f761148338231f210fd7fe2f8325ffe9cfdaaaeddd7b933b65c44ebb4f85e2cf")
 	version("4.8.0", sha256="78f90282c831bbbb675ed4811fb506a98dd05e37251fabd42ebc263c80bae8a6")
@@ -25,6 +23,8 @@ class RPlotly(RPackage):
 	version("4.5.6", sha256="1d3a4a4ff613d394a9670664fbaf51ddf7fc534278443b4fd99dd1eecf49dc27")
 	version("4.5.2", sha256="81ff375d4da69aeabe96e8edf2479c21f0ca97fb99b421af035a260f31d05023")
 	version("4.10.4", md5="2b5620465fc14e4b294be3a18ffc2115")
+	version("4.10.1", sha256="ac0921a1cba24e17a0f3a0a28b7a40ac930e17fe5caa9c3973c9a8d1e20c367a")
+	version("4.10.0", sha256="bd995c654dbc8c09a84adaba8def99766919e3894caf18b551bb26b2f591389a")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-ggplot2@3:", type=("build", "run"))

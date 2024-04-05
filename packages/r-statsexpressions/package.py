@@ -24,6 +24,7 @@ class RStatsexpressions(RPackage):
 	cran = "statsExpressions" 
 
 	version("1.5.4", md5="8acc0a1999627212eededa95102b0c41")
+	version("1.5.3", md5="398baa2965979692aecf077f934b6cd3")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-afex@1.3.1:", type=("build", "run"))

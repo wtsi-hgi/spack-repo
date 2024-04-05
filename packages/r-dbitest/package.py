@@ -16,8 +16,8 @@ class RDbitest(RPackage):
 	homepage = "https://dbitest.r-dbi.org"
 	cran = "DBItest" 
 
-	version("1.8.0", md5="c30ed34e11c4e2e44ecb051fad564b66")
 	version("1.8.1", md5="4c364d7e113a1ed755412a9601c4be00")
+	version("1.8.0", md5="c30ed34e11c4e2e44ecb051fad564b66")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-blob@1.2:", type=("build", "run"))

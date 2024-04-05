@@ -15,6 +15,7 @@ class RRpsftm(RPackage):
 	cran = "rpsftm" 
 
 	version("1.2.9", md5="2adb2546e506eba7cb63d15792bbd80d")
+	version("1.2.8", md5="e48c7856eb17d82d2af4bf936777a261")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

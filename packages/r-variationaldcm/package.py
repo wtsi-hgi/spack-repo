@@ -17,6 +17,7 @@ Models
 	cran = "variationalDCM" 
 
 	version("2.0.1", md5="84d386dfbfc8834bef5689787e122876")
+	version("1.0.0", md5="2149ded9a1088a5c84a2570e757e1b40")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))

@@ -24,6 +24,8 @@ class RRcppeigen(RPackage):
 	later, as is the rest of 'Rcpp'."""
 
 	cran = "RcppEigen"
+	version("0.3.4.0.0", md5="70b0b58a661991465f725397c2efcd81")
+	version("0.3.3.9.4", md5="0d107cf6756db5ae44d75e75bd6c7b50")
 	version("0.3.3.9.3", sha256="5873a47fd6587d916f86119ab140c6736abf80ac45d06ff1c9d198708e7d1c76")
 	version("0.3.3.9.2", sha256="2547e794d5a6fb8d9fbadf19e64afa0bcf413cc69ecf3f428995fa5a0fced493")
 	version("0.3.3.9.1", sha256="8a0486249b778a4275a1168fc89fc7fc49c2bb031cb14b50a50089acae7fe962")
@@ -32,7 +34,6 @@ class RRcppeigen(RPackage):
 	version("0.3.3.3.1", sha256="14fdd2cb764d0a822e11b8f09dcf1c3c8580d416f053404732064d8f2b176f24")
 	version("0.3.2.9.0", sha256="25affba9065e3c12d67b1934d1ce97a928a4011a7738f7b90f0e9830409ec93b")
 	version("0.3.2.8.1", sha256="ceccb8785531c5c23f9232b594e5372c214a114a08ec759115e946badd08d681")
-	version("0.3.4.0.0", md5="70b0b58a661991465f725397c2efcd81")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

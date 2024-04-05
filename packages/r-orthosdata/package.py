@@ -25,4 +25,3 @@ class ROrthosdata(RPackage):
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 
-	# experiment

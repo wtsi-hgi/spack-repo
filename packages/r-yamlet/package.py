@@ -21,6 +21,7 @@ class RYamlet(RPackage):
 	cran = "yamlet" 
 
 	version("1.0.3", md5="f49f81a9588c7e7b579c49767cc40350")
+	version("1.0.0", md5="2244b5574fd728cc3a547bcf0a9595c9")
 
 	depends_on("r-yaml", type=("build", "run"))
 	depends_on("r-csv@0.6.2:", type=("build", "run"))

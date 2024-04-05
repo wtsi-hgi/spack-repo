@@ -22,6 +22,7 @@ Analysis
 	cran = "DDPNA" 
 
 	version("0.3.3", md5="ed50b3c5daa23f43a8e15b8d6bcfcd61")
+	version("0.3.1", md5="a0084398d069208472f1ae7889d12ed9")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

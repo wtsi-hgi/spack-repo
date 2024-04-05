@@ -16,6 +16,7 @@ class RContingencytables(RPackage):
 	cran = "contingencytables" 
 
 	version("3.0.0", md5="f0298394338ff1ac005ecf8f2c783717")
+	version("2.2.1", md5="a37b04d55db29da4976e082ab5a7c88a")
 
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-boot", type=("build", "run"))

@@ -16,8 +16,8 @@ class RCrossover(RPackage):
 	homepage = "https://github.com/kornl/Crossover/wiki"
 	cran = "Crossover" 
 
-	version("0.1-21", md5="209931798f536da383885c451f411a34")
 	version("0.1-22", md5="ace5c665375194d1027092bf63f04d06")
+	version("0.1-21", md5="209931798f536da383885c451f411a34")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

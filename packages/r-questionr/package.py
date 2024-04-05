@@ -14,10 +14,11 @@ class RQuestionr(RPackage):
 	dataset metadata handling, and several convenience functions."""
 
 	cran = "questionr"
+	version("0.7.8", sha256="af72e59fe652c6063282a7e5b0f487993b9361cc9ed052a632d64a5a6db76ba9")
+	version("0.7.8", md5="d9c03e4ed2f6345d7ee174c6348a872d")
 	version("0.7.7", sha256="ce24c40bd98dbeca615b9eb2a9cd2da26852821dc3840f8394eeecb0739dfd56")
 	version("0.7.6", sha256="4b71d049d9e032157e12a7809dbfa2a39262b49d0c7a03ed434791a66f0cee5e")
 	version("0.7.4", sha256="818ad87723aa7ebe466b3a639c9e86b7f77e6a341c8d9a933073925a21d4555c")
-	version("0.7.8", md5="d9c03e4ed2f6345d7ee174c6348a872d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-shiny@1.0.5:", type=("build", "run"))

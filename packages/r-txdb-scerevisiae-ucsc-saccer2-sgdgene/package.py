@@ -20,4 +20,3 @@ class RTxdbScerevisiaeUcscSaccer2Sgdgene(RPackage):
 	depends_on("r-genomicfeatures@1.21.30:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

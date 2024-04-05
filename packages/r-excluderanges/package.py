@@ -20,4 +20,3 @@ class RExcluderanges(RPackage):
 
 	depends_on("r-genomicranges", type=("build", "run"))
 
-	# annotation

@@ -15,6 +15,8 @@ class RLattice(RPackage):
 	handle most nonstandard requirements. See ?Lattice for an introduction."""
 
 	cran = "lattice"
+	version("0.22-6", md5="8d912f14f62d3d2e86200ea51514536a")
+	version("0.22-5", md5="74b2dd0ab4402df2382834082fea72db")
 	version("0.21-8", sha256="8ad3d6974262e6cab6cc8fec38aa279b5b2f2524adf6f3eab56f68302b60c329")
 	version("0.20-45", sha256="22388d92bdb7d3959da84d7308d9026dd8226ef07580783729e8ad2f7d7507ad")
 	version("0.20-44", sha256="57b908e3c7ada08a38ad857ee44f44fdf9cfa59d5d9500bda2ccc9c7e96cdb9b")
@@ -22,6 +24,5 @@ class RLattice(RPackage):
 	version("0.20-38", sha256="fdeb5e3e50dbbd9d3c5e2fa3eef865132b3eef30fbe53a10c24c7b7dfe5c0a2d")
 	version("0.20-35", sha256="0829ab0f4dec55aac6a73bc3411af68441ddb1b5b078d680a7c2643abeaa965d")
 	version("0.20-34", sha256="4a1a1cafa9c6660fb9a433b3a51898b8ec8e83abf143c80f99e3e4cf92812518")
-	version("0.22-6", md5="8d912f14f62d3d2e86200ea51514536a")
 
 	depends_on("r@4:", type=("build", "run"))

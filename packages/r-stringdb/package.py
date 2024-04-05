@@ -16,6 +16,7 @@ class RStringdb(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/STRINGdb_2.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/STRINGdb/STRINGdb_2.14.3.tar.gz"]
 
 	version("2.14.3", md5="8ab16811de5615c8819839ff03638c29")
+	version("2.14.0", md5="6dc5819519574f0656e4b811e4618db7")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-png", type=("build", "run"))

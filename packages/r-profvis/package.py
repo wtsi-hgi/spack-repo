@@ -10,8 +10,8 @@ class RProfvis(RPackage):
 	"""Interactive visualizations for profiling R code."""
 
 	cran = "profvis"
-	version("0.3.7", sha256="43974863cb793f81dbea4b94096343c321f7739c9038980405c9b16b04a906b9")
 	version("0.3.8", md5="2c363c19fb6cb898dd3061d9a7035def")
+	version("0.3.7", sha256="43974863cb793f81dbea4b94096343c321f7739c9038980405c9b16b04a906b9")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-htmlwidgets@0.3.2:", type=("build", "run"))

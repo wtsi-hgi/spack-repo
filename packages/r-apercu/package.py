@@ -19,7 +19,7 @@ class RApercu(RPackage):
 	
 	cran = "apercu" 
 
-	version("0.2.4", md5="2e6c19dfc38fc680ba4af945cefae9af")
 	version("0.2.5", md5="ff7fefe218203c5829c9b857f71011ca")
+	version("0.2.4", md5="2e6c19dfc38fc680ba4af945cefae9af")
 
 	depends_on("r-pls", type=("build", "run"))

@@ -17,6 +17,7 @@ of an Individual Participant Data File
 	cran = "IPDFileCheck" 
 
 	version("0.8.1", md5="5105b3887db125bc3e7dc0b591411a9f")
+	version("0.7.5", md5="d33d2a263d52af0ea4e3e2008e7c2ae6")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

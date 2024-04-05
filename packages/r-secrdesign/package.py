@@ -16,6 +16,7 @@ class RSecrdesign(RPackage):
 	cran = "secrdesign" 
 
 	version("2.9.0", md5="9cb0262658d911cc04f70273ebc50749")
+	version("2.8.2", md5="4a6de77f8d6f439af80dbae38499050e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-secr@4.2:", type=("build", "run"))

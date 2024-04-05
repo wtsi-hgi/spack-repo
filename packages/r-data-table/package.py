@@ -15,7 +15,11 @@ class RDataTable(RPackage):
 	syntax, for faster development."""
 
 	cran = "data.table"
+	version("1.9.8", sha256="dadb21a14a7f4d60955cdd8fb9779136833498be97b1625914e9a6b580646f4d")
+	version("1.9.6", sha256="6f74c349c1731823aef6899edcf18418454167d04eba983e3a6fe17ee9fd236e")
+	version("1.15.4", md5="c3826bb214e777df145c0570cf597847")
 	version("1.15.2", md5="c6775465702254340024f0016f4cbcf3")
+	version("1.15.0", md5="45e341f35317c78b122317d1315a0240")
 	version("1.14.8", sha256="14b2ce5367df9c9bb58f373555066f5dcb629c156149b5565de36d69557139fd")
 	version("1.14.4", sha256="4862a7c26e8309108fd1f5296616407b9ff9e4e1be5cdedcb717f114c2e348f0")
 	version("1.14.2", sha256="f741b951e5937440139514aedbae78dbd6862d825066848bdb006aa02c2f3d2b")
@@ -34,8 +38,5 @@ class RDataTable(RPackage):
 	version("1.10.4", sha256="865fdf6aad389071ad063ec1c75a78ffc86eeb88bba011f3ea5281d243966b7a")
 	version("1.10.2", sha256="95a3ae6b273910571e25400a5cab1f7542cf589272c012c268f4b4724216f658")
 	version("1.10.0", sha256="cf61732ef9b38ecb6579055d1cd145198ad23a5a9ae4378f94a1494e6c56c884")
-	version("1.9.8", sha256="dadb21a14a7f4d60955cdd8fb9779136833498be97b1625914e9a6b580646f4d")
-	version("1.9.6", sha256="6f74c349c1731823aef6899edcf18418454167d04eba983e3a6fe17ee9fd236e")
-	version("1.15.4", md5="c3826bb214e777df145c0570cf597847")
 
 	depends_on("r@3.1:", type=("build", "run"))

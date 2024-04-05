@@ -19,6 +19,7 @@ class RBaskexact(RPackage):
 	cran = "baskexact" 
 
 	version("1.0.0", md5="1078a15f9d1ff78f15bf988653239c42")
+	version("0.1.0", md5="f775cd078e8758ba77c57f26b3a93859")
 
 	depends_on("r-arrangements", type=("build", "run"))
 	depends_on("r-dofuture", type=("build", "run"))

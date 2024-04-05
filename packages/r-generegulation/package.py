@@ -29,4 +29,3 @@ class RGeneregulation(RPackage):
 	depends_on("r-org-sc-sgd-db", type=("build", "run"))
 	depends_on("r-seqlogo", type=("build", "run"))
 
-	# workflow

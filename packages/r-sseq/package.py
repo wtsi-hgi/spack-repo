@@ -23,6 +23,7 @@ class RSseq(RPackage):
 
 	bioc = "sSeq"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sSeq_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sSeq/sSeq_1.40.0.tar.gz"]
+	version("1.40.0", md5="9276919acd944871a6e05a8dbeed6b9f")
 	version("1.38.0", commit="09242bb94d72ff13e3f18c3588934149f27ac374")
 	version("1.36.0", commit="0345ac579c4bdcc9c42c24831ad86fc6225c5cb9")
 	version("1.34.0", commit="882bea1664f55d85550a7185cbd4a0108c35df36")
@@ -33,7 +34,6 @@ class RSseq(RPackage):
 	version("1.18.0", commit="1f65e5a55ce0d51672b785450031872e6db5ca0f")
 	version("1.16.0", commit="b7f2b99dbd4a12ee9d18b0ec9898f13f1038479e")
 	version("1.14.0", commit="20ccffeb60196914975aa1feef902ddba659c571")
-	version("1.40.0", md5="9276919acd944871a6e05a8dbeed6b9f")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-catools", type=("build", "run"))

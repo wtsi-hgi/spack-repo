@@ -20,4 +20,3 @@ class RSpicyworkflow(RPackage):
 
 	depends_on("r@4.3:", type=("build", "run"))
 
-	# workflow

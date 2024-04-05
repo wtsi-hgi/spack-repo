@@ -16,6 +16,7 @@ class RGenearead(RPackage):
 	
 	cran = "GENEAread" 
 
+	version("2.0.9", md5="d6cf1c115a2743688e7af1f19190757e")
 	version("2.0.10", md5="8434993238dcca83276ffa3151aa8037")
 
 	depends_on("r-bitops", type=("build", "run"))

@@ -19,4 +19,3 @@ class RYeastrnaseq(RPackage):
 
 	depends_on("r@2.4:", type=("build", "run"))
 
-	# experiment

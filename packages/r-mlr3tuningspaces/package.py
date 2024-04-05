@@ -19,6 +19,7 @@ class RMlr3tuningspaces(RPackage):
 	cran = "mlr3tuningspaces" 
 
 	version("0.5.0", md5="6a416ed5061be3bcf7edf5ff92996191")
+	version("0.4.0", md5="aa5a1b5037690bd37e232da89b62a25e")
 
 	depends_on("r-mlr3tuning@0.15:", type=("build", "run"))
 	depends_on("r@3.1:", type=("build", "run"))

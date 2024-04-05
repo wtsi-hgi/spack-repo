@@ -16,6 +16,7 @@ class RAssertiveSets(RPackage):
 
 	cran = "assertive.sets"
 
+	version("0.0-3", sha256="876975a16ed911ea1ad12da284111c6eada6abfc0118585033abc0edb5801bb3")
 	version("0.0-3", md5="060f193e9ae8c91487cf3478720d920c")
 
 	depends_on("r@3:", type=("build", "run"))

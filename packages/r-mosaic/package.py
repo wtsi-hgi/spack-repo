@@ -21,6 +21,7 @@ class RMosaic(RPackage):
 	cran = "mosaic" 
 
 	version("1.9.1", md5="dcd7e9eedf5d0887a4ad2853d0fd6bc8")
+	version("1.9.0", md5="8fcedc48def8bb5f9688d4a9d84bd5b8")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

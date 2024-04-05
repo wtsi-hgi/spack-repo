@@ -16,6 +16,7 @@ class RReticulate(RPackage):
 	2.7."""
 
 	cran = "reticulate"
+	version("1.35.0", md5="16e16602150f6cdf6841b63b6bff1acf")
 	version("1.28", sha256="58a299ed18faaa3ff14936752fcc2b86e64ae18fc9f36befdfd492ccb251516f")
 	version("1.26", sha256="3fd74823bde1b0e094db7c2bf6b40ee2501f8d724b4c35b53da95c3c588c74c5")
 	version("1.25", sha256="2125af9e75939c3b7c0dc74f28f42606e816d63aa1143baf631c318ff5ff3a2c")
@@ -24,7 +25,6 @@ class RReticulate(RPackage):
 	version("1.18", sha256="b33f855a58f446eefbe38df8a1a4865390f5d4ebd64b2c72266baaee64628513")
 	version("1.15", sha256="47db3e9c9424263ade15287da8e74f6ba261a936b644b197dba6772853b7b50d")
 	version("1.13", sha256="adbe41d556b667c4419d563680f8608a56b0f792b8bc427b3bf4c584ff819de3")
-	version("1.35.0", md5="16e16602150f6cdf6841b63b6bff1acf")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

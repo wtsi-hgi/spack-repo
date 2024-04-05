@@ -16,6 +16,7 @@ class RGgiraph(RPackage):
 	cran = "ggiraph" 
 
 	version("0.8.9", md5="4f29af71dc6db1376ce310797124a1a8")
+	version("0.8.8", md5="14792a74b258d0c4fa7674fb15dcac27")
 
 	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r-htmlwidgets@1.5:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RMafh5GnomadV312Grch38(RPackage):
 	bioc = "MafH5.gnomAD.v3.1.2.GRCh38" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafH5.gnomAD.v3.1.2.GRCh38_3.15.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/MafH5.gnomAD.v3.1.2.GRCh38/MafH5.gnomAD.v3.1.2.GRCh38_3.15.0.tar.gz"]
 
+	version("3.15.0", md5="e9c85173866caf998cf1af7dd35aac0b", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/MafH5.gnomAD.v3.1.2.GRCh38_3.15.0.tar.gz")
 	version("3.15.0", md5="e9c85173866caf998cf1af7dd35aac0b", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafH5.gnomAD.v3.1.2.GRCh38_3.15.0.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))
@@ -27,4 +28,3 @@ class RMafh5GnomadV312Grch38(RPackage):
 	depends_on("r-rhdf5", type=("build", "run"))
 	depends_on("r-hdf5array", type=("build", "run"))
 
-	# annotation

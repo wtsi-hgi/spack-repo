@@ -22,4 +22,3 @@ class RMinfidata(RPackage):
 	depends_on("r-illuminahumanmethylation450kmanifest", type=("build", "run"))
 	depends_on("r-illuminahumanmethylation450kanno-ilmn12-hg19", type=("build", "run"))
 
-	# experiment

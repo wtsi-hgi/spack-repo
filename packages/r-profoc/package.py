@@ -16,6 +16,7 @@ class RProfoc(RPackage):
 	cran = "profoc" 
 
 	version("1.3.2", md5="c1290b86e4395de0f1df95ad78f6de7f")
+	version("1.3.1", md5="44d5f6241f550d8956f764c234460e1e")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

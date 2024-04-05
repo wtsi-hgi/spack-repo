@@ -15,8 +15,8 @@ class RBiodiversityr(RPackage):
 	homepage = "http://www.worldagroforestry.org/output/tree-diversity-analysis"
 	cran = "BiodiversityR" 
 
-	version("2.15-4", md5="1178338fa462f2214242d1bdd37647f2")
 	version("2.16-1", md5="74e43a08e1f526858c6f9ebd97f336b7")
+	version("2.15-4", md5="1178338fa462f2214242d1bdd37647f2")
 
 	depends_on("r@3.2.2:", type=("build", "run"))
 	depends_on("r-vegan@2.6.4:", type=("build", "run"))

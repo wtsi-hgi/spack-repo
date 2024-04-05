@@ -22,6 +22,7 @@ class RDimensio(RPackage):
 	cran = "dimensio" 
 
 	version("0.6.0", md5="536b1d7cef5a168a5ab47bb050de7fcb")
+	version("0.5.0", md5="3160e4e34e13d94bff36ea6bccffb8b5")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-arkhe@1.6:", type=("build", "run"))

@@ -19,4 +19,3 @@ class RHu35ksubdcdf(RPackage):
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

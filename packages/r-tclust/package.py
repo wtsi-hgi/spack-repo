@@ -15,6 +15,7 @@ class RTclust(RPackage):
 	<doi:10.1007/s11222-010-9194-z> and others."""
 
 	cran = "tclust"
+	version("1.5-6", md5="d4078d45e8cd522cf3bfff08d9ec04ee")
 	version("1.5-4", sha256="2b55da5e351c5054c9627f57a43084518a138a1d8097e35a364db0eff63471a8")
 	version("1.5-2", sha256="492674b30a465e5f4a22ba0ce5556ed4d8e57b29090f9b5b94ad655d064e6f8b")
 	version("1.5-1", sha256="73328b30774bb0767d613d7f2b60b75706b19fab864c712645ea18181f1af327")
@@ -25,6 +26,5 @@ class RTclust(RPackage):
 	version("1.2-3", sha256="d749d4e4107b876a22ca2c0299e30e2c77cb04f53f7e5658348e274aae3f2b28")
 	version("1.1-03", sha256="b8a62a1d27e69ac7e985ba5ea2ae5d182d2e51665bfbfb178e22b63041709270")
 	version("1.1-02", sha256="f73c0d7a495552f901b710cf34e114c0ba401d5a17c48156313245904bcccad4")
-	version("1.5-6", md5="d4078d45e8cd522cf3bfff08d9ec04ee")
 
 	depends_on("r@3.6.2:", type=("build", "run"))

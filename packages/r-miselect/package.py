@@ -29,5 +29,6 @@ class RMiselect(RPackage):
 	cran = "miselect" 
 
 	version("0.9.2", md5="6268fc3c9ed21165cf4fa5a2427e41ed")
+	version("0.9.0", md5="64b6bc1bd49f8af372ac95234f2c4060")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -18,4 +18,3 @@ class RWes1kgWugsc(RPackage):
 	version("1.34.0", md5="a0a3d230e27342090638ec4868756e5a")
 
 
-	# experiment

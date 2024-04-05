@@ -23,4 +23,5 @@ class RTextutils(RPackage):
 	cran = "textutils" 
 
 	version("0.4-1", md5="a8415833c5f8c7cb6b8d0c4e42bff358")
+	version("0.3-2", md5="6679d229d5188d6d8657dcb29bfa6360")
 

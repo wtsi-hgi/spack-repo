@@ -17,6 +17,7 @@ class RHrbrthemes(RPackage):
 	cran = "hrbrthemes" 
 
 	version("0.8.7", md5="2c239ee48ed2bf410b7e99f8c746c7ef")
+	version("0.8.0", md5="164d952f9627188cff499edd1cce9c5c")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2@3.4:", type=("build", "run"))

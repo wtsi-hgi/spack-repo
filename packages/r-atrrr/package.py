@@ -18,6 +18,7 @@ class RAtrrr(RPackage):
 	cran = "atrrr" 
 
 	version("0.0.3", md5="bf02d61096aa96e7a762e2b6bc979241")
+	version("0.0.2", md5="f6c500d23a8bc3eda548b9f6f801f19c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

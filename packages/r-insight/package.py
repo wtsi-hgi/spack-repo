@@ -20,6 +20,8 @@ class RInsight(RPackage):
 	missing."""
 
 	cran = "insight"
+	version("0.19.8", md5="f227772b838f94fd5775fc995c48524d")
+	version("0.19.10", md5="f6cf000d4466b3b2c9b33c25e54bba8d")
 	version("0.19.1", sha256="1042629644c66b1a372fd4471d38adccc0c3a329879ef685b14b65575c1c98eb")
 	version("0.18.6", sha256="ab0dc3c8ec765f2e93f7bcc3a7abb05140f71db24d50bf8cdd595a5a4e771cae")
 	version("0.18.4", sha256="6e3f378bc2eb30c0300103bdd8a3e74371199b36867b45978ec9690a6fda0c5f")
@@ -27,6 +29,5 @@ class RInsight(RPackage):
 	version("0.16.0", sha256="7944d7a386c99ea06d9d9e2b5f4aeb98fded7ec90b1cb908d03e278480be9e3d")
 	version("0.15.0", sha256="d6a148c3e1cfcb3829e2f8950bcbf98f500ee88bebd7e2482f9b085542e93fee")
 	version("0.14.1", sha256="0e7761997a46ee33039cdeff1779dbc210de3644e4444c6e893e4ef2f12cc129")
-	version("0.19.10", md5="f6cf000d4466b3b2c9b33c25e54bba8d")
 
 	depends_on("r@3.6:", type=("build", "run"))

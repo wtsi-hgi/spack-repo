@@ -20,6 +20,7 @@ Learning Models
 	cran = "glmnetr" 
 
 	version("0.4-4", md5="9d54cd55dce3137a17c7d23733faf80c")
+	version("0.4-2", md5="a9ec330242ea53d728273d62dbfebcbc")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))

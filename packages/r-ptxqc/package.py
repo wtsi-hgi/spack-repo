@@ -20,6 +20,7 @@ class RPtxqc(RPackage):
 	cran = "PTXQC" 
 
 	version("1.1.1", md5="4eedf0ba8f2943f99fea6ac28e653778")
+	version("1.1.0", md5="42dd907fdebaaf2da7b029f620da81c0")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

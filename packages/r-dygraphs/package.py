@@ -16,9 +16,10 @@ class RDygraphs(RPackage):
 	highlighting."""
 
 	cran = "dygraphs"
+	version("1.1.1.6", sha256="c3d331f30012e721a048e04639f60ea738cd7e54e4f930ac9849b95f0f005208")
+	version("1.1.1.6", md5="4235b318cc3bd7b1998c631e090462d8")
 	version("1.1.1.5", sha256="274035988fdd6833121fd5831692355d383acc828d540788dbcecaf88eb2d72d")
 	version("0.9", sha256="2aa4754a7d824d8994c2a97ee02bab163319f065b4d10d289337dc8398c0646c")
-	version("1.1.1.6", md5="4235b318cc3bd7b1998c631e090462d8")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

@@ -17,6 +17,7 @@ Structure
 	cran = "GCPBayes" 
 
 	version("4.2.0", md5="7c5a7a152f4b532d2a6718a0fac6cbc0")
+	version("4.1.0", md5="63eb90bee6fe0c7a41164ee8cb827d2b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

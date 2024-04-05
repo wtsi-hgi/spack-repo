@@ -24,6 +24,7 @@ class RPlsgenomics(RPackage):
 	cran = "plsgenomics" 
 
 	version("1.5-3", md5="1b59eed464388dcc9c95a06e901ee77b")
+	version("1.5-2.1", md5="7b18723db35f52352a36f16d19b5724e")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

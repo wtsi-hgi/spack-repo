@@ -22,6 +22,7 @@ Polyploid Species
 	cran = "viewpoly" 
 
 	version("0.4.1", md5="914a7edcea78bc3fbb8e145d4d3926df")
+	version("0.3.2", md5="8d97b56d225b63570da1aacaa52f873b")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-shiny@1.6:", type=("build", "run"))

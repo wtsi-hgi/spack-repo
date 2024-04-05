@@ -16,4 +16,5 @@ class RGglasso(RPackage):
 	cran = "gglasso" 
 
 	version("1.5.1", md5="bbe0ed2d22fd91f973a421d7192d6473")
+	version("1.5", md5="542bbd4eb7f6d4663c141c12414da19a")
 

@@ -20,6 +20,7 @@ class RGgtern(RPackage):
 	cran = "ggtern" 
 
 	version("3.5.0", md5="4468c59e1ba6ade63440e2ce549e9047")
+	version("3.4.2", md5="3b92173f413640500e92a58184b18023")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2@3.5:", type=("build", "run"))

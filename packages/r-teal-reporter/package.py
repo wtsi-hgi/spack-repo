@@ -17,6 +17,7 @@ class RTealReporter(RPackage):
 	cran = "teal.reporter" 
 
 	version("0.3.1", md5="6b88309ac1bf98f83e83262fa8045239")
+	version("0.3.0", md5="ee3430af291fb383d12093ccbbe4506e")
 
 	depends_on("r-bslib", type=("build", "run"))
 	depends_on("r-checkmate@2.1:", type=("build", "run"))

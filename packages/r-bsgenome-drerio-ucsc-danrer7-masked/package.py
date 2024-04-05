@@ -20,4 +20,3 @@ class RBsgenomeDrerioUcscDanrer7Masked(RPackage):
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-drerio-ucsc-danrer7", type=("build", "run"))
 
-	# annotation

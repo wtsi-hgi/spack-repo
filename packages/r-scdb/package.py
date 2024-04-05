@@ -20,6 +20,7 @@ class RScdb(RPackage):
 	cran = "SCDB" 
 
 	version("0.4.0", md5="fd75d3b24b27f3ea5bce5cb5c59b0d22")
+	version("0.3", md5="c4fab556fd03dee5f361c4ce9831640d")
 
 	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-dbi", type=("build", "run"))

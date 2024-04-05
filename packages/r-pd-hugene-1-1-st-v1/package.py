@@ -15,6 +15,7 @@ class RPdHugene11StV1(RPackage):
 	bioc = "pd.hugene.1.1.st.v1" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hugene.1.1.st.v1_3.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.hugene.1.1.st.v1/pd.hugene.1.1.st.v1_3.14.1.tar.gz"]
 
+	version("3.14.1", md5="7a17ee4f7d258792be1d21be7d03deb0", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.hugene.1.1.st.v1_3.14.1.tar.gz")
 	version("3.14.1", md5="7a17ee4f7d258792be1d21be7d03deb0", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hugene.1.1.st.v1_3.14.1.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
@@ -26,4 +27,3 @@ class RPdHugene11StV1(RPackage):
 	depends_on("r-iranges@2.1.43:", type=("build", "run"))
 	depends_on("r-s4vectors@0.5.22:", type=("build", "run"))
 
-	# annotation

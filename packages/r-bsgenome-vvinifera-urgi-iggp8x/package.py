@@ -19,4 +19,3 @@ class RBsgenomeVviniferaUrgiIggp8x(RPackage):
 
 	depends_on("r-bsgenome", type=("build", "run"))
 
-	# annotation

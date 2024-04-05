@@ -21,4 +21,3 @@ class REatonetalchipseq(RPackage):
 	depends_on("r-shortread", type=("build", "run"))
 	depends_on("r-rtracklayer", type=("build", "run"))
 
-	# experiment

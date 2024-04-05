@@ -17,6 +17,7 @@ class RXaringan(RPackage):
 	cran = "xaringan" 
 
 	version("0.30", md5="49ff7b601b05c68bf6165ade30a4a6f7")
+	version("0.29", md5="cf4df3745a82f912b6dbbb094d4716e5")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-htmltools", type=("build", "run"))

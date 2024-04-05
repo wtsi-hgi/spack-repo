@@ -17,6 +17,7 @@ class RPrrd(RPackage):
 	cran = "prrd" 
 
 	version("0.0.6", md5="1dccf8446ddccf7f4979855bf1a1947f")
+	version("0.0.5", md5="5b1a05406bf02260b5a9cc577b2f9654")
 
 	depends_on("r-config", type=("build", "run"))
 	depends_on("r-liteq", type=("build", "run"))

@@ -15,7 +15,13 @@ class RFurrr(RPackage):
 
     cran = "furrr"
 
-    version("0.3.1", sha256="0d91735e2e9be759b1ab148d115c2c7429b79740514778828e5dab631dc0e48b")
+	version("0.3.1", sha256="0d91735e2e9be759b1ab148d115c2c7429b79740514778828e5dab631dc0e48b")
+	version("0.3.0", sha256="3fe91cc1614f9404c708ea3a15b6a40289fa57f40f3ece54452093408d91fd84")
+	version("0.2.3", sha256="0a213422dc0a2e84173f2d3e6c7900dcb677f980c255d6b6ccf666fba1173700")
+	version("0.2.2", sha256="e5c10353dc47416eda870d16cf810c576f11bdc9e4c7277f7755581f3824cd4d")
+	version("0.2.1", sha256="07b3c98324aeb6a7e77a3d48c54fb90696a6e14efeee391cfc5e05f8dcd3469b")
+	version("0.2.0", sha256="9d6483656fdb5b90e998e2c2f1494c721185079a1412316c6d391e1eade89e1b")
+	version("0.1.0", sha256="dd2937f7cad1bc69e7a512b2a777f82d6cb7e40fe99afa2049ca360f9352a9d1")
 
     depends_on("r@3.4.0:", type=("build", "run"))
     depends_on("r-future@1.25.0:", type=("build", "run"))

@@ -15,8 +15,8 @@ class RCanadianmaps(RPackage):
 	homepage = "https://github.com/joellecayen/canadianmaps"
 	cran = "canadianmaps" 
 
-	version("1.3.0", md5="c87a9a6e4ebca99f80f1b963d4176dc7")
 	version("2.0.0", md5="c2846ba68440eaadb901bd9a4903fd80")
+	version("1.3.0", md5="c87a9a6e4ebca99f80f1b963d4176dc7")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

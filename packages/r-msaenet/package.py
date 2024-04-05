@@ -20,6 +20,7 @@ class RMsaenet(RPackage):
 	cran = "msaenet" 
 
 	version("3.1.1", md5="884c80221f22f646db20b1963d88af2f")
+	version("3.1", md5="a9d8d5b4a85dc437f7bf7094ad68c126")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))

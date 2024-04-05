@@ -15,8 +15,8 @@ class RCohortsurvival(RPackage):
 	homepage = "https://darwin-eu-dev.github.io/CohortSurvival/"
 	cran = "CohortSurvival" 
 
-	version("0.3.0", md5="c6ace5f05a3ba55613e25199bd7ba782")
 	version("0.4.0", md5="ffa6f22e4ed27f46f60f5c067243c116")
+	version("0.3.0", md5="c6ace5f05a3ba55613e25199bd7ba782")
 
 	depends_on("r-cdmconnector@1.3:", type=("build", "run"))
 	depends_on("r-omopgenerics", type=("build", "run"))

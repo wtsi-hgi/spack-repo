@@ -23,6 +23,7 @@ class RQbms(RPackage):
 	cran = "QBMS" 
 
 	version("1.0.0", md5="8929b076af220deed7f7fc08e3132270")
+	version("0.9.1", md5="28ad24c9d9bd4dbd1835e6a3670e3afa")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

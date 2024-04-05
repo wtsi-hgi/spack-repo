@@ -14,8 +14,8 @@ class RIeugwasr(RPackage):
 	specific queries."""
 
 	homepage = "https://github.com/MRCIEU/ieugwasr"
-	version("0.1.5", sha256="8d900d5a780f23836c80191f9635fbf48a0ca94f828452948c0f445e3217f422")
 	version("0.2.2", md5="a45c11965154dca877ee7d4f6a58572e")
+	version("0.1.5", sha256="8d900d5a780f23836c80191f9635fbf48a0ca94f828452948c0f445e3217f422")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

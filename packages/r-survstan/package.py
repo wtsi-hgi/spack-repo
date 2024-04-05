@@ -16,6 +16,7 @@ class RSurvstan(RPackage):
 	cran = "survstan" 
 
 	version("0.0.7", md5="f905959790af5d2a8ba7cfce5c9b98c2")
+	version("0.0.6.1", md5="0fca4bafc67f801d0c4e34a9ef9bee81")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

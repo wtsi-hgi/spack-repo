@@ -15,9 +15,9 @@ class RProc(RPackage):
 	Confidence intervals can be computed for (p)AUC or ROC curves."""
 
 	cran = "pROC"
+	version("1.18.5", md5="61d0e89dd7b4cb5e506cdfb6fc28848a")
 	version("1.18.0", sha256="d5ef54b384176ece6d6448014ba40570a98181b58fee742f315604addb5f7ba9")
 	version("1.17.0.1", sha256="221c726ffb81b04b999905effccfd3a223cd73cae70d7d86688e2dd30e51a6bd")
-	version("1.18.5", md5="61d0e89dd7b4cb5e506cdfb6fc28848a")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))

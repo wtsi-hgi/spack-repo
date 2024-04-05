@@ -27,4 +27,3 @@ class RRnaseqdtu(RPackage):
 	depends_on("r-rafalib", type=("build", "run"))
 	depends_on("r-devtools", type=("build", "run"))
 
-	# workflow

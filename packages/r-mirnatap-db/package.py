@@ -22,4 +22,3 @@ class RMirnatapDb(RPackage):
 	depends_on("r-dbi", type=("build", "run"))
 	depends_on("r-rsqlite", type=("build", "run"))
 
-	# annotation

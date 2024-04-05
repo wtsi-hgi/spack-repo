@@ -29,8 +29,8 @@ class RCelltrackr(RPackage):
 	homepage = "http://www.motilitylab.net"
 	cran = "celltrackR" 
 
-	version("1.1.0", md5="6109e8f8a7702ba65a8d8fd0dd1cb7d4")
 	version("1.2.0", md5="a250cf77c93bf3a632ba1a09451833b4")
+	version("1.1.0", md5="6109e8f8a7702ba65a8d8fd0dd1cb7d4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ellipse", type=("build", "run"))

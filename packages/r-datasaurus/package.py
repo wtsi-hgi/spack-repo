@@ -28,5 +28,6 @@ class RDatasaurus(RPackage):
 	cran = "datasauRus" 
 
 	version("0.1.8", md5="6023af4f909e4f309c9faa723a85929d")
+	version("0.1.6", md5="99991fa1c109073e008fff5e920e292d")
 
 	depends_on("r@3.5:", type=("build", "run"))

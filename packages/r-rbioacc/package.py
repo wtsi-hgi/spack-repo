@@ -20,6 +20,7 @@ class RRbioacc(RPackage):
 	cran = "rbioacc" 
 
 	version("1.2.1", md5="e2fe108d79eac0ea490832c5251f21a3")
+	version("1.2-0", md5="b8590cb1258b7cf1ca57f7260a8138bf")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

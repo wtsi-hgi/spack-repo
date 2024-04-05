@@ -27,6 +27,7 @@ class RCoala(RPackage):
 	cran = "coala" 
 
 	version("0.7.2", md5="2971be1c891eb6474a4269eeb8219b5a")
+	version("0.7.1", md5="30a2f497cc54646965e30c7d6f67a375")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-assertthat@0.1:", type=("build", "run"))

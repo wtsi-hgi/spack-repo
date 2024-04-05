@@ -13,10 +13,10 @@ class RMatrixmodels(RPackage):
 	and response module classes."""
 
 	cran = "MatrixModels"
+	version("0.5-3", md5="5ad7c5222f8f8322a307de4445ab9985")
 	version("0.5-1", sha256="3fc55bdfa5ab40c75bf395e90983d14c9715078c33c727c1658e4e1f36e43ea9")
 	version("0.5-0", sha256="a87faf1a185219f79ea2307e6787d293e1d30bf3af9398e8cfe1e079978946ed")
 	version("0.4-1", sha256="fe878e401e697992a480cd146421c3a10fa331f6b37a51bac83b5c1119dcce33")
-	version("0.5-3", md5="5ad7c5222f8f8322a307de4445ab9985")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-matrix@1.6.0:", type=("build", "run"))

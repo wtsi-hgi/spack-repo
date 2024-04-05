@@ -19,4 +19,3 @@ class RMu6500subbcdf(RPackage):
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

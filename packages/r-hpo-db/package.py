@@ -23,4 +23,3 @@ class RHpoDb(RPackage):
 	depends_on("r-biocfilecache", type=("build", "run"))
 	depends_on("r-dbi", type=("build", "run"))
 
-	# annotation

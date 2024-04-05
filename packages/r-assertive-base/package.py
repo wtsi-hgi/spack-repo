@@ -16,8 +16,9 @@ class RAssertiveBase(RPackage):
 
 	cran = "assertive.base"
 
+	version("0.0-9", sha256="4bf0910b0eaa507e0e11c3c43c316b524500c548d307eb045d6f89047e6ba01e")
+	version("0.0-9", md5="a2ee821abdf770469319622fc5508ce4")
 	version("0.0-7", sha256="f02d4eca849f512500abb266a2a751d1fa2cf064f7142e5161a77c20b7f643f7")
 	version("0.0-1", sha256="6a5fb06ad912f01cd8aaf2aa7c8ca03b8ebbb1c5eb2be47fa145930f15f4d258")
-	version("0.0-9", md5="a2ee821abdf770469319622fc5508ce4")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -17,6 +17,7 @@ class RLuzlogr(RPackage):
 	cran = "luzlogr" 
 
 	version("0.2.1", md5="4c50ec02a87b457a652b59a199ca7afa")
+	version("0.2.0", md5="a7036a3b1ceb039ea972ffbfd9492a8d")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-assertthat@0.2:", type=("build", "run"))

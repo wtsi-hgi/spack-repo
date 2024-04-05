@@ -20,6 +20,7 @@ class RTune(RPackage):
 	cran = "tune" 
 
 	version("1.2.0", md5="5bead66cc571a3fc3af4260bc5079372")
+	version("1.1.2", md5="e622a0b09c20417a6e681e79ed2c1f0e")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-cli@3.3:", type=("build", "run"))

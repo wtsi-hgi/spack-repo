@@ -16,6 +16,7 @@ class RCnvranger(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNVRanger_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNVRanger/CNVRanger_1.18.1.tar.gz"]
 
 	version("1.18.1", md5="2bd9b1977f28db874f5d05d875a586ef")
+	version("1.18.0", md5="3e68952c47447dfad311d1adf7b971d1")
 
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-raggedexperiment", type=("build", "run"))

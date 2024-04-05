@@ -23,4 +23,3 @@ class RDavidtiling(RPackage):
 	depends_on("r-tilingarray", type=("build", "run"))
 	depends_on("r-go-db", type=("build", "run"))
 
-	# experiment

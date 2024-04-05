@@ -20,6 +20,7 @@ Function
 	cran = "BayesFBHborrow" 
 
 	version("1.0.1", md5="31abdc8596cce66c6ed2f8a99e9d0d7b")
+	version("0.0.2", md5="f67d8cba3dd83ec56cbc8d48130edc07")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

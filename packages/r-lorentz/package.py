@@ -21,6 +21,7 @@ class RLorentz(RPackage):
 	cran = "lorentz" 
 
 	version("1.1-1", md5="d05d202df0b000935486a1dff936c2eb")
+	version("1.0-5", md5="7ff487e43f6980ebf26ea4936c0ffb35")
 
 	depends_on("r-emulator@1.2.20:", type=("build", "run"))
 	depends_on("r-tensor", type=("build", "run"))

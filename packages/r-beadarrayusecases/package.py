@@ -21,4 +21,3 @@ class RBeadarrayusecases(RPackage):
 	depends_on("r-limma", type=("build", "run"))
 	depends_on("r-geoquery", type=("build", "run"))
 
-	# experiment

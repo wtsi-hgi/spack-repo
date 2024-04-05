@@ -15,8 +15,8 @@ class RBsgenomeRnorvegicusUcscRn4(RPackage):
 	bioc = "BSgenome.Rnorvegicus.UCSC.rn4" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Rnorvegicus.UCSC.rn4_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Rnorvegicus.UCSC.rn4/BSgenome.Rnorvegicus.UCSC.rn4_1.4.0.tar.gz"]
 
+	version("1.4.0", md5="3afe6729237781445d99ec38228ee1a8", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Rnorvegicus.UCSC.rn4_1.4.0.tar.gz")
 	version("1.4.0", md5="3afe6729237781445d99ec38228ee1a8", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Rnorvegicus.UCSC.rn4_1.4.0.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 
-	# annotation

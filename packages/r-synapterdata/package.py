@@ -20,4 +20,3 @@ class RSynapterdata(RPackage):
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-synapter@1.99.2:", type=("build", "run"))
 
-	# experiment

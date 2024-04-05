@@ -18,4 +18,3 @@ class RHuman650v3acrlmm(RPackage):
 	version("1.0.3", md5="4b0de367ccc0f7499dcffe21ef1893c2")
 
 
-	# annotation

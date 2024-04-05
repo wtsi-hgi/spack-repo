@@ -21,4 +21,3 @@ class RBeadarrayexampledata(RPackage):
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))
 	depends_on("r-beadarray@2:", type=("build", "run"))
 
-	# experiment

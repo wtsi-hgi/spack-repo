@@ -20,5 +20,6 @@ class RAgeutils(RPackage):
 	cran = "ageutils" 
 
 	version("0.0.2", md5="43d09969130c2c3a1e0ea48d1ecc5c39")
+	version("0.0.1", md5="728b436ffe6d52f074f04d16eca351dd")
 
 	depends_on("r@3.5:", type=("build", "run"))

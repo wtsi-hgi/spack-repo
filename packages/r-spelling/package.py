@@ -20,6 +20,7 @@ class RSpelling(RPackage):
 	cran = "spelling" 
 
 	version("2.3.0", md5="375bbd00c2d9980ee78ffb834175d139")
+	version("2.2.1", md5="47128c93e6cace1644edddfbb127de7b")
 
 	depends_on("r-commonmark", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))

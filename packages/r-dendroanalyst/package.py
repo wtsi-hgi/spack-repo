@@ -14,8 +14,8 @@ class RDendroanalyst(RPackage):
 	
 	cran = "dendRoAnalyst" 
 
-	version("0.1.4", md5="94bb809a972042318f4ddcea902dad5f")
 	version("0.1.5", md5="4d78ba406296aef87b4a7a73b83ccdc8")
+	version("0.1.4", md5="94bb809a972042318f4ddcea902dad5f")
 
 	depends_on("r-boot", type=("build", "run"))
 	depends_on("r@3.5:", type=("build", "run"))

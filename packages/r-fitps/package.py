@@ -19,8 +19,8 @@ class RFitps(RPackage):
 	homepage = "https://github.com/jmcurran/fitPS"
 	cran = "fitPS" 
 
-	version("1.0.0", md5="548eab976137a864e0389a8ebf8b8a54")
 	version("1.0.1", md5="543dce0f81e933c90b5a859a674c007b")
+	version("1.0.0", md5="548eab976137a864e0389a8ebf8b8a54")
 
 	depends_on("r-foreach", type=("build", "run"))
 	depends_on("r@4:", type=("build", "run"))

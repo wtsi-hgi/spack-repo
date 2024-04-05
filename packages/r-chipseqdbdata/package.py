@@ -22,4 +22,3 @@ class RChipseqdbdata(RPackage):
 	depends_on("r-rsamtools", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
 
-	# experiment

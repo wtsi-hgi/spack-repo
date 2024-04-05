@@ -19,8 +19,8 @@ class RArcgeocoder(RPackage):
 	homepage = "https://dieghernan.github.io/arcgeocoder/"
 	cran = "arcgeocoder" 
 
-	version("0.1.0", md5="72f6f5868b59795e1973e8a6af0b136c")
 	version("0.2.0", md5="6ad16da4cc611824370e90d32360410f")
+	version("0.1.0", md5="72f6f5868b59795e1973e8a6af0b136c")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr@1:", type=("build", "run"))

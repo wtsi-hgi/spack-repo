@@ -19,4 +19,3 @@ class RHgu95dcdf(RPackage):
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

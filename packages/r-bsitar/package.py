@@ -36,8 +36,8 @@ Curve Analysis
 	homepage = "https://github.com/Sandhu-SS/bsitar"
 	cran = "bsitar" 
 
-	version("0.1.1", md5="10129a37daac28ca553ed36d398e44f6")
 	version("0.2.1", md5="02645d7cf52a61e783488475f5b12789")
+	version("0.1.1", md5="10129a37daac28ca553ed36d398e44f6")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-brms@2.17:", type=("build", "run"))

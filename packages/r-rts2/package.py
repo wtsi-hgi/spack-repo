@@ -21,6 +21,7 @@ class RRts2(RPackage):
 	cran = "rts2" 
 
 	version("0.7.2", md5="74dd4bed0f43d1d22cc7d5b30296234b", url="https://cran.r-project.org/src/contrib/rts2_0.7.2.tar.gz")
+	version("0.6.1", md5="b8fe632120bebe2aa2b867bb71522f13", url="https://cran.r-project.org/src/contrib/rts2_0.6.1.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-sf@1.0.14:", type=("build", "run"))

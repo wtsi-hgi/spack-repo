@@ -16,6 +16,7 @@ class RTransport(RPackage):
 	cran = "transport" 
 
 	version("0.15-0", md5="e2c2d35aeef8e940b30c6b4e270363da")
+	version("0.14-7", md5="b33b68547bf84921b3824b0e1d0af30a")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

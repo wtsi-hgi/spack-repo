@@ -37,6 +37,7 @@ class RUniversalcvi(RPackage):
 	cran = "UniversalCVI" 
 
 	version("1.1.2", md5="3827ddb00112a576bd80c5e35cbff974")
+	version("1.1.1", md5="42f9bb527830bf7f5a9b40959cd4b326")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-e1071", type=("build", "run"))

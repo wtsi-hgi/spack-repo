@@ -20,4 +20,3 @@ class RBsgenomePtroglodytesUcscPantro3Masked(RPackage):
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-ptroglodytes-ucsc-pantro3", type=("build", "run"))
 
-	# annotation

@@ -20,4 +20,3 @@ class RBsgenomeMmulattaUcscRhemac3Masked(RPackage):
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-mmulatta-ucsc-rhemac3", type=("build", "run"))
 
-	# annotation

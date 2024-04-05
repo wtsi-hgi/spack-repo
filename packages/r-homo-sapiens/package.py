@@ -25,4 +25,3 @@ class RHomoSapiens(RPackage):
 	depends_on("r-org-hs-eg-db", type=("build", "run"))
 	depends_on("r-txdb-hsapiens-ucsc-hg19-knowngene", type=("build", "run"))
 
-	# annotation

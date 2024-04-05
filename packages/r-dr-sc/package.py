@@ -17,8 +17,8 @@ class RDrSc(RPackage):
 	homepage = "https://github.com/feiyoung/DR.SC"
 	cran = "DR.SC" 
 
-	version("3.3", md5="81d75c7f73563257ec57c1de9bacc03d")
 	version("3.4", md5="f194e3a62f05b629ee1dd28a1ede6fc9")
+	version("3.3", md5="81d75c7f73563257ec57c1de9bacc03d")
 
 	depends_on("r-spatstat-geom", type=("build", "run"))
 	depends_on("r@4:", type=("build", "run"))

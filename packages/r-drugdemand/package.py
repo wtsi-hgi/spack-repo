@@ -15,6 +15,7 @@ class RDrugdemand(RPackage):
 	cran = "drugDemand" 
 
 	version("0.1.3", md5="b6e434e2015b88e4766849d5dbd1fda3")
+	version("0.1.2", md5="2a4261e0c42961c7ba42a11a2d45de93")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

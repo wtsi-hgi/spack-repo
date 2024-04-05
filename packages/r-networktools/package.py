@@ -16,6 +16,7 @@ class RNetworktools(RPackage):
 	cran = "networktools" 
 
 	version("1.5.2", md5="04a42c50ca01e17cdedda1292f53d12e")
+	version("1.5.1", md5="5ef9be75430e6a95adc25d10534bfbe7")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-qgraph", type=("build", "run"))

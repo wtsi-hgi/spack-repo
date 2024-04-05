@@ -23,6 +23,7 @@ class RMscmt(RPackage):
 	cran = "MSCMT" 
 
 	version("1.4.0", md5="007ab0a5fbfe6cc29bbdb59f88b216db")
+	version("1.3.9", md5="2f2e94b2d5838173d1c3a0c3032b9e42")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-lpsolve", type=("build", "run"))

@@ -26,6 +26,7 @@ Climate Goals
 	cran = "r2dii.data" 
 
 	version("0.5.0", md5="e84089dd27dff951a2fa13e3a9b6ff90")
+	version("0.4.1", md5="4f28f888c7ece6c76676bd94b8578e78")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-lifecycle", type=("build", "run"))

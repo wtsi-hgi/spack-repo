@@ -11,7 +11,7 @@ class RGenomicsem(RPackage):
     homepage = "https://github.com/GenomicSEM/GenomicSEM"
     git = "https://github.com/GenomicSEM/GenomicSEM.git"
 
-    version("2024-02-26", commit="526c998484cdfbad66eb3c87bb47ed7658d7e889")
+	version("2024-02-26", commit="526c998484cdfbad66eb3c87bb47ed7658d7e889")
 
     depends_on("r-plyr", type=("build", "run"))
     depends_on("r-e1071", type=("build", "run"))

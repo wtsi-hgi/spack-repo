@@ -19,6 +19,7 @@ class RVvauditor(RPackage):
 	cran = "vvauditor" 
 
 	version("0.6.0", md5="7e6c0f6412bb3cbc6c6603bcc7b857ff")
+	version("0.5.8", md5="4702194c3cd673b47ec8057f6fba5ddc")
 
 	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

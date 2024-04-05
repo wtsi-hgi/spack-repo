@@ -15,6 +15,7 @@ class RTmt(RPackage):
 	homepage = "https://jansteinfeld.github.io/tmt/"
 	cran = "tmt" 
 
+	version("0.3.1-2", md5="64af06cd839217c8465a62f5f5c7b99a")
 	version("0.3.1-10", md5="11b77ef107c07d0d8d3a8e8fb5acb611")
 
 	depends_on("r@3:", type=("build", "run"))

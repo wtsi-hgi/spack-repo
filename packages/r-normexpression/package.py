@@ -16,5 +16,6 @@ class RNormexpression(RPackage):
 	cran = "NormExpression" 
 
 	version("0.1.1", md5="1b0b5e458c98d8a43cb6ec041eb6bdee")
+	version("0.1.0", md5="96156c3815347fcd9ef511bf144e6d6e")
 
 	depends_on("r@2.10:", type=("build", "run"))

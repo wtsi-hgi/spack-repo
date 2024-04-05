@@ -11,8 +11,8 @@ class RAzimuth(RPackage):
     homepage = "https://satijalab.org/azimuth"
     git = "https://github.com/satijalab/azimuth/"
 
-    version("0.5.0", tag="v0.5.0")
-    version("0.4.6", tag="v0.4.6")
+	version("0.5.0", tag="v0.5.0")
+	version("0.4.6", tag="v0.4.6")
 
     depends_on("r-rlang", type=('build', 'run'))
     depends_on("r-dt", type=('build', 'run'))

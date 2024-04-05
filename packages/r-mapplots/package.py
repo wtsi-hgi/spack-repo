@@ -15,7 +15,7 @@ class RMapplots(RPackage):
 	data visualisation."""
 
 	cran = "mapplots"
-	version("1.5.1", sha256="37e96d34f37922180e07bb63b4514e07d42eee5bbf0885b278286ee48cf142a3")
 	version("1.5.2", md5="d376f1fa68dd004de1fa49bf1146e465")
+	version("1.5.1", sha256="37e96d34f37922180e07bb63b4514e07d42eee5bbf0885b278286ee48cf142a3")
 
 	depends_on("r@2.10:", type=("build", "run"))

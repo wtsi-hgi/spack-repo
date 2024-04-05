@@ -18,6 +18,7 @@ Reduction
 	cran = "ProFAST" 
 
 	version("1.4", md5="025b2253670a7edc14b777b01ab4d47f")
+	version("1.3", md5="4ad4e6a81986d5820d12ecbfb57f6286")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-gtools", type=("build", "run"))

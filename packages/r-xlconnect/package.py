@@ -13,6 +13,7 @@ class RXlconnect(RPackage):
 	data."""
 
 	cran = "XLConnect"
+	version("1.0.8", md5="02936bb222965b561be091eb869aa9b0")
 	version("1.0.7", sha256="821dba231c3c3147455e7525119b51e5dc001984c638b7ce519d0974b32de677")
 	version("1.0.6", sha256="b233b9f74d1464b78d5dd28bd8a1fa46ca6254518da2d3bda3c978a3f4aaa4f9")
 	version("1.0.5", sha256="975c2ef57f28ccfac79ae5d285b7e82e60791fb121052616c10bc52e2bca16ad")
@@ -21,7 +22,6 @@ class RXlconnect(RPackage):
 	version("0.2-14", sha256="d1013ed26947572bad97d62a3d66346f74993cf96c6408d21d5b6ee567468819")
 	version("0.2-12", sha256="500624f078fb27338aa91d8710daaf38633659a9b17f7cb713232a3d66f9f62c")
 	version("0.2-11", sha256="17c5eddd00b933fd7a2ab9d942c813046d45f0af487f8d5b11011a004db69d0b")
-	version("1.0.8", md5="02936bb222965b561be091eb869aa9b0")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rjava@1.0.1:", type=("build", "run"))

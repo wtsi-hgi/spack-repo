@@ -47,12 +47,13 @@ class RSpatstat(RPackage):
 	residuals, and added variable plots."""
 
 	cran = "spatstat"
+	version("3.0-8", md5="9240a29bdefca0c2081c200ac36952dc")
+	version("3.0-7", md5="968cd3cfe05fba659ccf5c3142d23443")
 	version("3.0-5", sha256="b926ed55dfeb95b09fb441f44d85204277eee00e42ac258c0a08baa1ce263bb1")
 	version("2.3-4", sha256="4ea0f8d70b926b92bf4a06521f985a0bb6d573619f5d526957c87860ccb999da")
 	version("2.3-0", sha256="da02443722f2c7ef9d59a2799b7b8002c94cecf73f2b0d2b29280d39f49c4c06")
 	version("1.64-1", sha256="ca3fc7d0d6b7a83fd045a7502bf03c6871fa1ab2cf411647c438fd99b4eb551a")
 	version("1.63-3", sha256="07b4a1a1b37c91944f31779dd789598f4a5ad047a3de3e9ec2ca99b9e9565528")
-	version("3.0-8", md5="9240a29bdefca0c2081c200ac36952dc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-spatstat-data@3.0.4:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RMinipch(RPackage):
 	cran = "miniPCH" 
 
 	version("0.3.2", md5="dfc8ce54027a25e09d281f7eeccd884c")
+	version("0.3.1", md5="dd7f1214a2e227d601827f9e9730e079")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

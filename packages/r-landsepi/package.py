@@ -24,6 +24,7 @@ class RLandsepi(RPackage):
 	cran = "landsepi" 
 
 	version("1.4.0", md5="a0c7356c690264b83a2a461e993f37bb")
+	version("1.3.0", md5="c3aff47a842bfdf80306129c2d3486cc")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-sp@1.0.17:", type=("build", "run"))

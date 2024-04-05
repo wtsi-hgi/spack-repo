@@ -22,6 +22,7 @@ class RFuzzysimres(RPackage):
 	cran = "FuzzySimRes" 
 
 	version("0.4.0", md5="781ce0992df73b888f3467520c28da77")
+	version("0.3.0", md5="18c8cd592018e7b13d702449cb21613f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-fuzzynumbers", type=("build", "run"))

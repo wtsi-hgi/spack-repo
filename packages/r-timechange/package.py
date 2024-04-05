@@ -18,9 +18,9 @@ class RTimechange(RPackage):
 	details."""
 
 	cran = "timechange"
+	version("0.3.0", md5="f62746e78800a3edb8bfdc2ceffe0722")
 	version("0.2.0", sha256="3d602008052123daef94a5c3f5154c5461b4ec0432ab70c37273d7ddd252f7f1")
 	version("0.1.1", sha256="8503919d233d7d7b81fe47692f0f2d6742ff4cae7320a5522bf98f077f5d7f70")
-	version("0.3.0", md5="f62746e78800a3edb8bfdc2ceffe0722")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-cpp11@0.2.7:", type=("build", "run"))

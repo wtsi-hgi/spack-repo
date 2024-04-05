@@ -24,4 +24,5 @@ class RReplicationsuccess(RPackage):
 	cran = "ReplicationSuccess" 
 
 	version("1.3.2", md5="c9b398f89cf018f42ba8241f7a7934f3")
+	version("1.3.1", md5="368184030ed0a1bdafd37958fd7130e0")
 

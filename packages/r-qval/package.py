@@ -15,6 +15,7 @@ class RQval(RPackage):
 	cran = "Qval" 
 
 	version("0.1.5", md5="18ae16fe31540f42347496610ea09a07")
+	version("0.1.4", md5="4d49099dfd953a40713569ec301dc6ea")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))

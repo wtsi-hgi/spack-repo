@@ -22,4 +22,3 @@ class RUcscrepeatmasker(RPackage):
 	depends_on("r-xml", type=("build", "run"))
 	depends_on("r-rcurl", type=("build", "run"))
 
-	# annotation

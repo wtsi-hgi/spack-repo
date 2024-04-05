@@ -19,4 +19,5 @@ class RSrt(RPackage):
 	cran = "srt" 
 
 	version("1.0.4", md5="f25882fca4220b8a0353153b2beae705")
+	version("1.0.3", md5="801040192a33887560a83ca514113bb2")
 

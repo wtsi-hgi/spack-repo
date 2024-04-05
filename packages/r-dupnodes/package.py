@@ -17,8 +17,8 @@ class RDupnodes(RPackage):
 	
 	cran = "dupNodes" 
 
-	version("0.1.0", md5="aa33311f1f3f0b40a0ee982e04ac4512")
 	version("0.2.0", md5="59310417d64e6bbaa9fd65291d680158")
+	version("0.1.0", md5="aa33311f1f3f0b40a0ee982e04ac4512")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rdpack", type=("build", "run"))

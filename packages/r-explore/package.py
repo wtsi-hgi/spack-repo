@@ -18,6 +18,7 @@ class RExplore(RPackage):
 	cran = "explore" 
 
 	version("1.2.0", md5="180c51e17f0faa489e44033e3f34b39f")
+	version("1.1.1", md5="feb4ab75a4486d71ac8bb9a291ed458d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

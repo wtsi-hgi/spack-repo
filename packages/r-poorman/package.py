@@ -13,8 +13,8 @@ class RPoorman(RPackage):
 	using only 'base'."""
 
 	cran = "poorman"
+	version("0.2.7", md5="4bbc26912e651669c58e9eab98856f0f")
 	version("0.2.6", sha256="328e0a3e610f17e845d95cd9c0803e0367d6f5835706e8b0ed921fc500983774")
 	version("0.2.5", sha256="b92b30ce0f4f02c4fa4a4e90673ef2e0ed8de9b9080dd064506581989fcc0716")
-	version("0.2.7", md5="4bbc26912e651669c58e9eab98856f0f")
 
 	depends_on("r@3.3:", type=("build", "run"))

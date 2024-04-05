@@ -15,11 +15,11 @@ class RRgooglemaps(RPackage):
 	scaling."""
 
 	cran = "RgoogleMaps"
+	version("1.5.1", md5="e1c161a7daed4d7aaef73d5005e97be1")
 	version("1.4.5.3", sha256="d1d5ad8db841754af175d4104a05c5c31e5cc445be314a3ac70483c31798680b")
 	version("1.4.3", sha256="44cb62bcd23e5b4807e91c5825352eb8d38aaaeb3b38a8271ca9f21c1e1d4b19")
 	version("1.4.2", sha256="b479996fcb72f067644a7ea7f00325e44e76efd202e84aaab022753c4a6d5584")
 	version("1.2.0.7", sha256="9c268a5a554ad6da69fb560d88dea9c86ec9e9a56b691f1b63faedfe20826712")
-	version("1.5.1", md5="e1c161a7daed4d7aaef73d5005e97be1")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-png", type=("build", "run"))

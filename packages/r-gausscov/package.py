@@ -15,5 +15,6 @@ class RGausscov(RPackage):
 	cran = "gausscov" 
 
 	version("1.1.2", md5="2161e152f6f34672de97b120a53c710f")
+	version("1.0.3", md5="c6cabea16a8f1327b66e793bd35346a4")
 
 	depends_on("r@3.5:", type=("build", "run"))

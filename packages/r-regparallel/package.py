@@ -26,4 +26,3 @@ class RRegparallel(RPackage):
 	depends_on("r-survival", type=("build", "run"))
 	depends_on("r-arm", type=("build", "run"))
 
-	# experiment

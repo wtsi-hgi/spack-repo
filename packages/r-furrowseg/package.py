@@ -24,4 +24,3 @@ class RFurrowseg(RPackage):
 	depends_on("r-locfit", type=("build", "run"))
 	depends_on("r-tiff", type=("build", "run"))
 
-	# experiment

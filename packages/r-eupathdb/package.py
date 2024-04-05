@@ -27,4 +27,3 @@ class REupathdb(RPackage):
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-biocmanager", type=("build", "run"))
 
-	# annotation

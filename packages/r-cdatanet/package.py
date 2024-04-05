@@ -16,6 +16,7 @@ class RCdatanet(RPackage):
 	cran = "CDatanet" 
 
 	version("2.1.3", md5="524b738dc57d5c355b4323b8ba178235")
+	version("2.1.2", md5="12c9a6be63328f5279c083c7a2c8bf39")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

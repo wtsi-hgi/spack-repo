@@ -17,6 +17,7 @@ class RSeqarray(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SeqArray_1.42.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SeqArray/SeqArray_1.42.3.tar.gz"]
 
 	version("1.42.3", md5="6b53f2b957cca22de6e2a43359e68382")
+	version("1.42.2", md5="bc97547c09a0e4c30a7a2828b2493367")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-gdsfmt", type=("build", "run"))

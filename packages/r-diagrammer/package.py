@@ -21,10 +21,10 @@ class RDiagrammer(RPackage):
 	version("1.0.8", sha256="b9157b26215edda4fe0a1b9330a597d5b01a5d7e660a9832f593b87c584dd233")
 	version("1.0.7", sha256="6af291a7136657b9f7c67b96cd7f3afe99662cf5a477ebbb213a6c53df623050")
 	version("1.0.6.1", sha256="be4e4c520a3692902ce405e8225aef9f3d5f0cd11fcde614f6541e981b63673d")
+	version("1.0.11", md5="94ec61b50053de75a748824f67183bcd")
 	version("1.0.1", sha256="ccee8acf608fc909e73c6de4374cef5a570cb62e5f454ac55dda736f22f3f013")
 	version("1.0.0", sha256="2b186dae1b19018681b979e9444bf16559c42740d8382676fbaf3b0f8a44337e")
 	version("0.8.4", sha256="0503935fa120c7c7cdcfd4dce85558b23fd0bcb7e6b32fa6989087d3c88ec404")
-	version("1.0.11", md5="94ec61b50053de75a748824f67183bcd")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-dplyr@1.0.7:", type=("build", "run"))

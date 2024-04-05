@@ -17,6 +17,7 @@ Designs
 	cran = "skpr" 
 
 	version("1.7.1", md5="05db1ce05a4ae36d695835be12a55d31")
+	version("1.6.2", md5="5b13f68e2787c3c0d8230409c244562d")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-iterators", type=("build", "run"))

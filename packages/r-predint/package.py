@@ -17,6 +17,7 @@ class RPredint(RPackage):
 	cran = "predint" 
 
 	version("2.2.1", md5="5918c45394e343192668001c58310784")
+	version("2.2.0", md5="72fd05a0d7f2e86ebb5fb656a3ccb521")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

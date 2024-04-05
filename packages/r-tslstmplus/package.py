@@ -15,6 +15,7 @@ class RTslstmplus(RPackage):
 	cran = "TSLSTMplus" 
 
 	version("1.0.4", md5="06f9bca3097acea0c45deeb78887e43f")
+	version("1.0.3", md5="9491b895329f43e7330a8b6ee719d6e1")
 
 	depends_on("r-keras", type=("build", "run"))
 	depends_on("r-tensorflow", type=("build", "run"))

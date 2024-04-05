@@ -16,6 +16,7 @@ class RNumbat(RPackage):
 	cran = "numbat" 
 
 	version("1.4.0", md5="04b5f35e9e777f493a2a81922b73bd11")
+	version("1.3.2-1", md5="3c780d001b05c7e00ff4927fb04ef7ee")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

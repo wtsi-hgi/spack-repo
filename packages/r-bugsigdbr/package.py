@@ -17,6 +17,7 @@ class RBugsigdbr(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bugsigdbr_1.8.4.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bugsigdbr/bugsigdbr_1.8.4.tar.gz"]
 
 	version("1.8.4", md5="faa6fc9f619e17f958ff116ee748e84c")
+	version("1.8.2", md5="a6c91b6c9dd9924139fb3cf5229c2449")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))

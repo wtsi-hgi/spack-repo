@@ -20,6 +20,7 @@ class RMetro(RPackage):
 	cran = "metro" 
 
 	version("0.9.3", md5="2f77190aca10a28ee15d288ee08f4006")
+	version("0.9.2", md5="eb02621945b1a6a2f3278659a5703420")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-geodist@0.0.6:", type=("build", "run"))

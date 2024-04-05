@@ -19,6 +19,7 @@ class RWikipedir(RPackage):
 	cran = "WikipediR" 
 
 	version("1.7.0", md5="d8dfbec421d709d3188ff8f7f4dc1b53")
+	version("1.5.0", md5="784a2f57e0d36a648852540ae4cc3f8a")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

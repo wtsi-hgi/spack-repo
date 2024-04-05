@@ -19,6 +19,7 @@ and Development Tools
 	cran = "miscFuncs" 
 
 	version("1.5-8", md5="74e2eddb7ea6dfc67e236a27a17cef90")
+	version("1.5-7", md5="69d95c47afaf8db7bfed7446c88bb67c")
 
 	depends_on("r-roxygen2", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))

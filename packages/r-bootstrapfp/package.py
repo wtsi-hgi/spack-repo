@@ -17,5 +17,6 @@ class RBootstrapfp(RPackage):
 	cran = "bootstrapFP" 
 
 	version("0.4.6", md5="92c3fa8cf2ee51991ff4c83d10da062c")
+	version("0.4.5", md5="977e84df69436d39603867b2fad0004b")
 
 	depends_on("r-sampling", type=("build", "run"))

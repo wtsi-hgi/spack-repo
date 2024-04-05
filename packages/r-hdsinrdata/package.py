@@ -16,5 +16,6 @@ Textbook
 	cran = "HDSinRdata" 
 
 	version("0.1.1", md5="32adff9bb3ef2a92eb85ab7bc2bd437b")
+	version("0.1.0", md5="47e7a4c693d7083faa71ee597d7e471a")
 
 	depends_on("r@2.10:", type=("build", "run"))

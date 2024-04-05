@@ -28,6 +28,7 @@ class RMigconnectivity(RPackage):
 	cran = "MigConnectivity" 
 
 	version("0.4.7", md5="b7f4c7733cd9213d4ef12e82fc12e4e2")
+	version("0.4.5", md5="d944af256e2e676c9661efbfd00c7e2c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-coda", type=("build", "run"))

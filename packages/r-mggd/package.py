@@ -17,6 +17,7 @@ Divergence
 	cran = "mggd" 
 
 	version("1.2.3", md5="c8f8d03b5a39d27b472962e4fa6b5a5c")
+	version("1.1.0", md5="d806950b05a94ddfe44743d467fa44bd")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

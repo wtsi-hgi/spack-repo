@@ -17,6 +17,7 @@ Smoothing Approach
 	cran = "qris" 
 
 	version("1.1.1", md5="974e64d8ef2f130485972d6c3b9834e8")
+	version("1.0.0", md5="1c1fa875f8d0cd8ffe31c39dfced0088")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-nleqslv", type=("build", "run"))

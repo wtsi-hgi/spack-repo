@@ -44,4 +44,3 @@ class RMaendtoend(RPackage):
 	depends_on("r-rgraphviz", type=("build", "run"))
 	depends_on("r-enrichplot", type=("build", "run"))
 
-	# workflow

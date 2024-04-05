@@ -29,6 +29,8 @@ class RApe(RPackage):
 
 	license("GPL-2.0-only OR GPL-3.0-only")
 
+	version("5.7-1", sha256="8b09c71218d8aa629e43bc807b433a4e30a61847d91b2810e31c366f0fe5057a")
+	version("5.7-1", md5="04d75a639533b2d91dfbb034e9b6b9ff")
 	version("5.6-2", sha256="9b62450a0390a1f07df007d348ad4cedcd814d42cb11c5a300ed33550fd41257")
 	version("5.6-1", sha256="25401e036576eed1200e15bf68879ccd85611303a3508b989e15164cd4c0f7f7")
 	version("5.4-1", sha256="f0316c8e74ce900053e8b3e8c9322b9d10e7730f3be2150365f74630bee7eee4")
@@ -37,7 +39,6 @@ class RApe(RPackage):
 	version("5.1", sha256="b7d5dca66881638227a40aa59533904aa5efe0f4b867851b248e8f948a01a26e")
 	version("5.0", sha256="c32ed22e350b3d7c7ef3de9334155ab1f3086922b5ec9a1643897cae7abda960")
 	version("4.1", sha256="935af5ddadcba832d3f9cc032a80fc1a2e627a7ed54ef5f3773f87e06374a924")
-	version("5.7-1", md5="04d75a639533b2d91dfbb034e9b6b9ff")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-nlme", type=("build", "run"))

@@ -19,6 +19,7 @@ Control
 	cran = "TRexSelector" 
 
 	version("1.0.0", md5="0ca69edb15bc7dbff6ab1e01bb2f8b8b")
+	version("0.0.1", md5="06ac7ab8dd79e3c3a3ec460d850c6f88")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

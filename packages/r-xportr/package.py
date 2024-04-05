@@ -17,6 +17,7 @@ class RXportr(RPackage):
 	cran = "xportr" 
 
 	version("0.4.0", md5="9fef061b259881657ce99269773a5118")
+	version("0.3.2", md5="9de9aea1fc9cddeb8d497449d1a5b739")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

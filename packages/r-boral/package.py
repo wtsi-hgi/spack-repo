@@ -14,8 +14,8 @@ class RBoral(RPackage):
 	
 	cran = "boral" 
 
-	version("2.0", md5="6745c5818c637a9f176143a64a0eec77")
 	version("2.0.2", md5="73f1f89d6c86c35b0b63bc5bba80d728")
+	version("2.0", md5="6745c5818c637a9f176143a64a0eec77")
 
 	depends_on("r-coda", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))

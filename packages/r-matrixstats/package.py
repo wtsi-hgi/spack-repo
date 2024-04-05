@@ -16,6 +16,7 @@ class RMatrixstats(RPackage):
 	vector-based methods, e.g. binMeans(), madDiff() and weightedMedian()."""
 
 	cran = "matrixStats"
+	version("1.2.0", md5="2b68a4df8f1d2199ad9feb9b5a73d219")
 	version("0.63.0", sha256="c000b60421742eb035ff4ceedd3e588a79e4b28985484f0c81361e5a6c351f5f")
 	version("0.62.0", sha256="85e2016b6dd20cbfe32d38a2ef2578ae80e688d9a3590aefd1d2f4bf4bd44eca")
 	version("0.61.0", sha256="dbd3c0ec59b1ae62ff9b4c2c90c4687cbd680d1796f6fdd672319458d4d2fd9a")
@@ -24,6 +25,5 @@ class RMatrixstats(RPackage):
 	version("0.55.0", sha256="16d6bd90eee4cee8df4c15687de0f9b72730c03e56603c2998007d4533e8db19")
 	version("0.54.0", sha256="8f0db4e181300a208b9aedbebfdf522a2626e6675d2662656efb8ba71b05a06f")
 	version("0.52.2", sha256="39da6aa6b109f89a141dab8913d981abc4fbd3f8be9e206f92e382cc5270d2a5")
-	version("1.2.0", md5="2b68a4df8f1d2199ad9feb9b5a73d219")
 
 	depends_on("r@2.12:", type=("build", "run"))

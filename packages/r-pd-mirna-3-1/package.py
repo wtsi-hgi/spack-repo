@@ -15,6 +15,7 @@ class RPdMirna31(RPackage):
 	bioc = "pd.mirna.3.1" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mirna.3.1_3.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.mirna.3.1/pd.mirna.3.1_3.8.1.tar.gz"]
 
+	version("3.8.1", md5="296b3584ee5e9416c9018353d3e29c6c", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.mirna.3.1_3.8.1.tar.gz")
 	version("3.8.1", md5="296b3584ee5e9416c9018353d3e29c6c", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mirna.3.1_3.8.1.tar.gz")
 
 	depends_on("r@2.15:", type=("build", "run"))
@@ -25,4 +26,3 @@ class RPdMirna31(RPackage):
 	depends_on("r-biostrings@2.25.12:", type=("build", "run"))
 	depends_on("r-iranges@1.15.43:", type=("build", "run"))
 
-	# annotation

@@ -16,6 +16,7 @@ class RGeostan(RPackage):
 	cran = "geostan" 
 
 	version("0.5.4", md5="9458293582b0ecc33ec28e4b88e4550a")
+	version("0.5.3", md5="14a312db2cbf6f75b3db64a6eb5853fc")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-spdep@1:", type=("build", "run"))

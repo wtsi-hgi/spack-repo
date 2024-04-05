@@ -22,6 +22,7 @@ class RPhylosem(RPackage):
 	cran = "phylosem" 
 
 	version("1.1.4", md5="c1b12873e2a57352a268a75915136eb3")
+	version("1.1.3", md5="d32dcbcb0d8b73338e80affed1dcd09c")
 
 	depends_on("r-tmb", type=("build", "run"))
 	depends_on("r@4:", type=("build", "run"))

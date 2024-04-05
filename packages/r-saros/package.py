@@ -24,6 +24,7 @@ class RSaros(RPackage):
 	cran = "saros" 
 
 	version("1.0.4", md5="6a9c40103a6f11e7d182845081df389a")
+	version("1.0.1", md5="8e76b075713e10c2fd8679d49fa773dd")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

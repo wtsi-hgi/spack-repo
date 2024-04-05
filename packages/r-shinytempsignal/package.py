@@ -16,6 +16,7 @@ class RShinytempsignal(RPackage):
 	cran = "shinyTempSignal" 
 
 	version("0.0.8", md5="196e6d7d0afbad499f9dddd69ba77d83")
+	version("0.0.7", md5="da8562e52a422395adc52737ad14d2ec")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

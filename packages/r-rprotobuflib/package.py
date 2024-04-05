@@ -16,4 +16,5 @@ class RRprotobuflib(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RProtoBufLib_2.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RProtoBufLib/RProtoBufLib_2.14.1.tar.gz"]
 
 	version("2.14.1", md5="7a648c56be729d182d707f7077e4249c")
+	version("2.14.0", md5="e7351127e6b19daaae94fcecc970292b")
 

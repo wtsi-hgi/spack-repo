@@ -16,7 +16,7 @@ Effects
 	homepage = "https://www.mattblackwell.org/software/causalsens/"
 	cran = "causalsens" 
 
-	version("0.1.2", md5="508c4226c159ebb43814c6a1d4662b1d")
 	version("0.1.3", md5="db43054ff9f07af833e297a4b2da5222")
+	version("0.1.2", md5="508c4226c159ebb43814c6a1d4662b1d")
 
 	depends_on("r@3:", type=("build", "run"))

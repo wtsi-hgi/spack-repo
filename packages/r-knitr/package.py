@@ -14,6 +14,7 @@ class RKnitr(RPackage):
 	Literate Programming techniques."""
 
 	cran = "knitr"
+	version("1.45", md5="334f8f963b3d8e9e0ce5c278775cb7ec")
 	version("1.42", sha256="9344f1a0089e4da101def54aee38d7cfe3b2022d75c560141d8cc22ac65130f3")
 	version("1.40", sha256="9b8f95ff367a0e52f024bda30315ec7cdd6a5b82371a1aaed95ab4eea78535bc")
 	version("1.39", sha256="c91a65edebdca779af7f7480fa6636667497c9291ad55d6efd982db0bb91ac72")
@@ -25,7 +26,6 @@ class RKnitr(RPackage):
 	version("1.23", sha256="063bfb3300fc9f3e7d223c346e19b93beced0e6784470b9bef2524868a206a99")
 	version("1.17", sha256="9484a2b2c7b0c2aae24ab7f4eec6db48affbceb0e42bd3d69e34d953fe92f401")
 	version("1.14", sha256="ba6d301482d020a911390d5eff181e1771f0e02ac3f3d9853a9724b1ec041aec")
-	version("1.45", md5="334f8f963b3d8e9e0ce5c278775cb7ec")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-evaluate@0.15:", type=("build", "run"))

@@ -16,8 +16,8 @@ class REstimability(RPackage):
 	Models", Chapman and Hall (ISBN 978-1-4200-6201-4)."""
 
 	cran = "estimability"
+	version("1.5", md5="36a7cd52f48a9421d8152cc2e814f603")
 	version("1.4.1", sha256="c65aaf1e452f3947013d3ce05ae674d48492081f615a942592dc91db780f1124")
 	version("1.3", sha256="a33179c5fbd6a1a623d90cb6f1743148f92c09429fac466867f3ea70946a2e32")
-	version("1.5", md5="36a7cd52f48a9421d8152cc2e814f603")
 
 	depends_on("r@4.3:", type=("build", "run"))

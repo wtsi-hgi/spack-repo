@@ -17,6 +17,8 @@ class RDeseq2(RPackage):
 	homepage = "https://bioconductor.org/packages/DESeq2"
 	git = "https://git.bioconductor.org/packages/DESeq2.git"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DESeq2_1.42.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DESeq2/DESeq2_1.42.1.tar.gz"]
+	version("1.42.1", md5="7b8f94401f376261f869ee839a0be2e1", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DESeq2_1.42.1.tar.gz")
+	version("1.42.0", md5="5eb89526ce9fd4da98b1a5e0b5ba0bf3", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/DESeq2_1.42.0.tar.gz")
 	version("1.40.0", commit="c4962c3b16546e552fbc1a712258e4e21ff44241")
 	version("1.38.0", commit="0e059f425d4ce6a5203685a4ad434f15bbd6e211")
 	version("1.36.0", commit="2800b78ae52c0600f7e603c54af59beed3a2ed17")
@@ -27,7 +29,6 @@ class RDeseq2(RPackage):
 	version("1.20.0", commit="7e88ea5c5e68473824ce0af6e10f19e22374cb7c")
 	version("1.18.1", commit="ef65091d46436af68915124b752f5e1cc55e93a7")
 	version("1.16.1", commit="f41d9df2de25fb57054480e50bc208447a6d82fb")
-	version("1.42.1", md5="7b8f94401f376261f869ee839a0be2e1", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DESeq2_1.42.1.tar.gz")
 
 	depends_on("r-s4vectors@0.23.18:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

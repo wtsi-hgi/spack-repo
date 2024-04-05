@@ -13,6 +13,7 @@ class RGenefilter(RPackage):
 
 	bioc = "genefilter"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genefilter_1.84.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genefilter/genefilter_1.84.0.tar.gz"]
+	version("1.84.0", md5="15011d1662a58967aeb3e89f1f660e40")
 	version("1.82.0", commit="1ee4bdc65b0144853211354f8fabf8b497d9a565")
 	version("1.80.0", commit="14fbc2d776916e572583e3c268ea9ba60ed60a9a")
 	version("1.78.0", commit="2f574388971641d3a71858f5c34606c04fcd2ba2")
@@ -24,7 +25,6 @@ class RGenefilter(RPackage):
 	version("1.62.0", commit="eb119894f015c759f93f458af7733bdb770a22ad")
 	version("1.60.0", commit="c98f695253c330a9380b2b4ffa27f3b7d66773e4")
 	version("1.58.1", commit="ace2556049677f60882adfe91f8cc96791556fc2")
-	version("1.84.0", md5="15011d1662a58967aeb3e89f1f660e40")
 
 	depends_on("r-matrixgenerics@1.11.1:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

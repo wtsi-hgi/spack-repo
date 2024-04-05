@@ -17,6 +17,7 @@ class RRollama(RPackage):
 	cran = "rollama" 
 
 	version("0.0.3", md5="29c77b8d63f5af1a37023ac3b4648446")
+	version("0.0.2", md5="9578770a80ea47149e5b35715bf39129")
 
 	depends_on("r-callr", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

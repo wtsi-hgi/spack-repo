@@ -18,6 +18,7 @@ class RQuantreg(RPackage):
 	<doi:10.1201/9781315120256>."""
 
 	cran = "quantreg"
+	version("5.97", md5="e36187123dc53900e967b3c466a902fc")
 	version("5.95", sha256="4b05a81eceebbd927372cefdc4912dfa70b6dfcd96528489f78e125eb32a96cc")
 	version("5.94", sha256="52d585ccb972ed7726b7d083f5635d3e42915847398e00fd6e0f69a5fe1b17c1")
 	version("5.93", sha256="d4a94984a500bf4c92dec21013441f001a4aa0541c4c651384e257a4b4e9e539")
@@ -30,7 +31,6 @@ class RQuantreg(RPackage):
 	version("5.40", sha256="86e310a235009ab85635dfb8803c175f80a35892e237db2525c4ef37a98936eb")
 	version("5.29", sha256="bb4638e8f295579afa5c40c4de7266a6ea9221436ba4ca802f94cdb43bf20f25")
 	version("5.26", sha256="9d7403f7c5ee219ec155838648401a1c4915a46a74f5774a0f6876c537ef2c87")
-	version("5.97", md5="e36187123dc53900e967b3c466a902fc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-sparsem", type=("build", "run"))

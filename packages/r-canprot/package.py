@@ -24,8 +24,8 @@ class RCanprot(RPackage):
 	homepage = "https://github.com/jedick/canprot"
 	cran = "canprot" 
 
-	version("1.1.2", md5="8a552a0f3339970e4281b736104ac2ea")
 	version("2.0.0", md5="baca332d4f24958a087e2a48900567ee")
+	version("1.1.2", md5="8a552a0f3339970e4281b736104ac2ea")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-chnosz@1.3.2:", type=("build", "run"))

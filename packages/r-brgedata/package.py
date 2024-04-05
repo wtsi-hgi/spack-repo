@@ -21,4 +21,3 @@ class RBrgedata(RPackage):
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 
-	# experiment

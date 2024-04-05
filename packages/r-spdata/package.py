@@ -19,12 +19,12 @@ class RSpdata(RPackage):
 	designed to illustrate point pattern analysis techniques."""
 
 	cran = "spData"
+	version("2.3.0", md5="41aae4a68e1e038d28ff80af8388ee8f")
 	version("2.2.2", sha256="878a58e98b6cf259432149ecb4e5d66ada59466e1b5b0dafa60ec839e90104ed")
 	version("2.2.0", sha256="6e9c0a72f29021a84e9049b147c9e0186f14876a4a1663ad98bbb33440ee901f")
 	version("2.0.1", sha256="c635a3e2e5123b4cdb2e6877b9b09e3d50169e1512a53b2ba2db7fbe63b990fc")
 	version("0.3.8", sha256="7a61268db4fdbfb004b77d36e953cbb3fdfdac7e8bb6c500628ec6c592c79ad6")
 	version("0.3.0", sha256="de24ea659541a6c795cd26a1f6a213e15061af9c97a24cba1c24ce30c6c24c98")
-	version("2.3.0", md5="41aae4a68e1e038d28ff80af8388ee8f")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-sp", type=("build", "run"))

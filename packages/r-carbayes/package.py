@@ -16,6 +16,7 @@ class RCarbayes(RPackage):
 	cran = "CARBayes" 
 
 	version("6.1.1", md5="44d830235fefcfd76570de2b553db7ca")
+	version("6.1", md5="a9b7f7199ca5de112f024b1053e1ddcf")
 
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r@3.5:", type=("build", "run"))

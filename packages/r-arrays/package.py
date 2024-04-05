@@ -19,4 +19,3 @@ class RArrays(RPackage):
 
 	depends_on("r@3:", type=("build", "run"))
 
-	# workflow

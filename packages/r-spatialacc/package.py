@@ -19,6 +19,7 @@ class RSpatialacc(RPackage):
 	cran = "SpatialAcc" 
 
 	version("0.1-5", md5="8944249101fbd74dc47e5cc0311ea55d")
+	version("0.1-4", md5="7ea815955beefa46235c5b48b1eafec0")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-sp", type=("build", "run"))

@@ -21,6 +21,7 @@ class RVisitorcounts(RPackage):
 	cran = "VisitorCounts" 
 
 	version("2.0.0", md5="81d7a2a3ce5d376e6729288613d8d17e")
+	version("1.0.2", md5="a60965d3b3ad03ff678dd54781a6c51b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rssa", type=("build", "run"))

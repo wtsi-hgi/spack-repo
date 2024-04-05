@@ -17,6 +17,7 @@ Observational Studies and Randomized Trials
 	cran = "PSweight" 
 
 	version("1.2.0", md5="f9da80adb945dcb05abae07789acfc0b")
+	version("1.1.8", md5="a77ba912fd2375c6f12e1da61d732be2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-lme4", type=("build", "run"))

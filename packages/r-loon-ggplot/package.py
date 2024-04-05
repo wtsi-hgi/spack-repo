@@ -15,6 +15,7 @@ class RLoonGgplot(RPackage):
 	cran = "loon.ggplot" 
 
 	version("1.3.4", md5="5ba3d374f6b4cd57a5bc401598b72a6e")
+	version("1.3.3", md5="1e3d3f7c582ced47cb245702fb6ec6fd")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-loon@1.3.2:", type=("build", "run"))

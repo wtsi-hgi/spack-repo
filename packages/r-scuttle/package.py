@@ -16,13 +16,13 @@ class RScuttle(RPackage):
 
 	bioc = "scuttle"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scuttle_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scuttle/scuttle_1.12.0.tar.gz"]
-	version("1.10.0", commit="02e864cb80414f71bb312cdf6d68e0036326e10b")
 	version("1.8.0", commit="dabf6b95e478d599557ebbed03edd44031fd6b78")
 	version("1.6.3", commit="df23680da9fa4d685df77e4561467f491c850b50")
 	version("1.6.2", commit="afdfc555151d84cc332757b4ec0b97cb7f39d2d5")
 	version("1.4.0", commit="b335263dd56bb859b5dd3ea27ee00dffa0215313")
-	version("1.0.4", commit="a827e2759d80e6c3510e2f8fd4bd680274206d9f")
 	version("1.12.0", md5="b784ac30ef76b7c0cdac8b79be67b995")
+	version("1.10.0", commit="02e864cb80414f71bb312cdf6d68e0036326e10b")
+	version("1.0.4", commit="a827e2759d80e6c3510e2f8fd4bd680274206d9f")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

@@ -19,4 +19,3 @@ class RChipseqdb(RPackage):
 	version("1.26.0", md5="5337080bfb457f5bb9754b4a5a2a1c88")
 
 
-	# workflow

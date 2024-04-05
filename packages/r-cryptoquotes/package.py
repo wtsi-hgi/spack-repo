@@ -20,6 +20,7 @@ Sentiment Indicators
 	cran = "cryptoQuotes" 
 
 	version("1.3.0", md5="80df5f901e380db33eebb13e499fe858")
+	version("1.2.1", md5="2fd282048d29a804d5642b61a6f75667")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-cli@3.6.2:", type=("build", "run"))

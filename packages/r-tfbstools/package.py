@@ -18,6 +18,7 @@ class RTfbstools(RPackage):
 
 	bioc = "TFBSTools"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFBSTools_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFBSTools/TFBSTools_1.40.0.tar.gz"]
+	version("1.40.0", md5="f2395c8153c4820e3cebb53a9eda94d6")
 	version("1.38.0", commit="2ce17166b6f73b5093acec2a3dde33b6bcfa56bc")
 	version("1.36.0", commit="3358c89227a4d2e237ee5f8c532f468460a16ee2")
 	version("1.34.0", commit="7f8d0cb58a527a5d7ba94a773279f13aedca6ec7")
@@ -28,7 +29,6 @@ class RTfbstools(RPackage):
 	version("1.18.0", commit="17e12b9f3dcb9059d414307ec0bc23ed1ee33294")
 	version("1.16.0", commit="565436a5a674d4dea7279e796a20c5bd2034f65a")
 	version("1.14.2", commit="e429fdefb6f7ee4585dd2a8ca3d0ced7a5bed4ff")
-	version("1.40.0", md5="f2395c8153c4820e3cebb53a9eda94d6")
 
 	depends_on("r@3.2.2:", type=("build", "run"))
 	depends_on("r-biobase@2.28:", type=("build", "run"))

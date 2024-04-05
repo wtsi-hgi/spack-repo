@@ -18,6 +18,7 @@ class RPlumber(RPackage):
 	cran = "plumber" 
 
 	version("1.2.2", md5="6d36890af79f6b298592be7106e93e34")
+	version("1.2.1", md5="e8bcb7780075c4cbc7cd2c2421092029")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-r6@2:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RNestedcv(RPackage):
 	cran = "nestedcv" 
 
 	version("0.7.8", md5="3b9d65fc60ae8e3532d8cac9cb5c75fe")
+	version("0.7.4", md5="6ad16f3c6413b92c165c13958661b38a")
 
 	depends_on("r-caret", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

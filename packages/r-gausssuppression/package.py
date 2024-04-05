@@ -25,6 +25,7 @@ class RGausssuppression(RPackage):
 	cran = "GaussSuppression" 
 
 	version("0.8.3", md5="ce1a6db09607e319a2b70ffd59268a96")
+	version("0.8.0", md5="7db021c754fd07d21d18a675c35127d8")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-ssbtools@1.5:", type=("build", "run"))

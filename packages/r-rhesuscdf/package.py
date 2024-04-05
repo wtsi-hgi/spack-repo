@@ -19,4 +19,3 @@ class RRhesuscdf(RPackage):
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

@@ -20,6 +20,7 @@ class RSparklyr(RPackage):
 	cran = "sparklyr" 
 
 	version("1.8.5", md5="0ea23ae02f9d63551adc4996279c1eca")
+	version("1.8.4", md5="cede2e204859454506b8d6069c24bce7")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-config@0.2:", type=("build", "run"))

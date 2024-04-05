@@ -16,6 +16,7 @@ Checks (VPC) and Goodness of Fit (GOF) Plots
 	cran = "nonmem2R" 
 
 	version("0.2.5", md5="f1e38ae934914a49ba6d7f3be0e150b1")
+	version("0.2.4", md5="5c6b9b3e40eefdad8a4bc4db78b95bfa")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

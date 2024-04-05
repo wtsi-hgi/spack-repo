@@ -17,6 +17,7 @@ Data Analysis
 	cran = "GeoModels" 
 
 	version("1.1.9", md5="3ac53cad4a25678490c0080a1c0de47b")
+	version("1.1.7", md5="5eaeb2a961208ec4d518233b142dae99")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-gpvecchia", type=("build", "run"))

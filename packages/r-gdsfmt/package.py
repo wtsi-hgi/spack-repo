@@ -24,6 +24,7 @@ class RGdsfmt(RPackage):
 
 	bioc = "gdsfmt"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gdsfmt_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gdsfmt/gdsfmt_1.38.0.tar.gz"]
+	version("1.38.0", md5="8851c188356c12f7e99488ceb4daeca8")
 	version("1.36.0", commit="39ba0af93d499b0f9ef53f04d4f15e5436616f1a")
 	version("1.34.0", commit="ab912c393d8eb6dc26f844a13422a29b9ce7265b")
 	version("1.32.0", commit="06f2097cc10b1888739f86e635383a0f2ee7e208")
@@ -34,6 +35,5 @@ class RGdsfmt(RPackage):
 	version("1.16.0", commit="49b011452585e432b983b68466a230c9b71d8a95")
 	version("1.14.1", commit="15743647b7eea5b82d3284858b4591fb6e59959d")
 	version("1.12.0", commit="d705a95b0bea7be2a2b37e939f45017337ba0fb6")
-	version("1.38.0", md5="8851c188356c12f7e99488ceb4daeca8")
 
 	depends_on("r@2.15:", type=("build", "run"))

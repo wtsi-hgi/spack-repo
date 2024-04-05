@@ -33,6 +33,7 @@ class RSpatstatModel(RPackage):
 	cran = "spatstat.model"
 	version("3.2-3", sha256="8ad7d2644773571a5c579ceebb98b735dccc97e9b4b109ea39b4ce3faedb14ea")
 	version("3.2-11", md5="0b934d59b127c8a82c8ea4482fca67bd")
+	version("3.2-10", md5="c598e05db92f8611026d12ecd228c7bb")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-spatstat-data@3.0.4:", type=("build", "run"))

@@ -17,6 +17,7 @@ Models
 	cran = "stochvol" 
 
 	version("3.2.4", md5="acfabfaa52b2b400121012b6dd4d8910")
+	version("3.2.3", md5="9f997f346557e0d905c65729f56146f3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

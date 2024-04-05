@@ -22,4 +22,3 @@ class RTenxbraindata(RPackage):
 	depends_on("r-annotationhub@2.9.22:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))
 
-	# experiment

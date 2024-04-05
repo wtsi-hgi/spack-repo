@@ -25,4 +25,3 @@ class RMetagxovarian(RPackage):
 	depends_on("r-lattice", type=("build", "run"))
 	depends_on("r-impute", type=("build", "run"))
 
-	# experiment

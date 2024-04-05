@@ -15,6 +15,7 @@ class RPdFeinbergHg18MeHx1(RPackage):
 	bioc = "pd.feinberg.hg18.me.hx1" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.feinberg.hg18.me.hx1_0.99.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.feinberg.hg18.me.hx1/pd.feinberg.hg18.me.hx1_0.99.3.tar.gz"]
 
+	version("0.99.3", md5="b6eeaf79671bab6f597965009516ce57", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.feinberg.hg18.me.hx1_0.99.3.tar.gz")
 	version("0.99.3", md5="b6eeaf79671bab6f597965009516ce57", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.feinberg.hg18.me.hx1_0.99.3.tar.gz")
 
 	depends_on("r@2.11:", type=("build", "run"))
@@ -25,4 +26,3 @@ class RPdFeinbergHg18MeHx1(RPackage):
 	depends_on("r-biostrings@2.13.50:", type=("build", "run"))
 	depends_on("r-iranges@1.3.89:", type=("build", "run"))
 
-	# annotation

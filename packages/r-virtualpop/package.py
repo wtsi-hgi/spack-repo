@@ -16,6 +16,7 @@ class RVirtualpop(RPackage):
 	cran = "VirtualPop" 
 
 	version("2.0.2", md5="353a0148f29a4d6e0ee8f554ed05542d")
+	version("1.0.2", md5="9b139fb833bb6817a20f8e894919f8fc")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-msm", type=("build", "run"))

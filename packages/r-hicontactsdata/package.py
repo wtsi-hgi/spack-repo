@@ -22,4 +22,3 @@ class RHicontactsdata(RPackage):
 	depends_on("r-biocfilecache", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))
 
-	# experiment

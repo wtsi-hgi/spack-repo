@@ -23,4 +23,3 @@ class RPumadata(RPackage):
 	depends_on("r-puma", type=("build", "run"))
 	depends_on("r-oligo@1.32:", type=("build", "run"))
 
-	# experiment

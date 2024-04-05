@@ -31,8 +31,8 @@ Several Federated Data Sources
 	homepage = "https://docs.ropensci.org/FedData/"
 	cran = "FedData" 
 
-	version("4.0.0", md5="9f93015a96d68f6cce117ba3d7af3a19")
 	version("4.0.1", md5="553de7fa683544e5182e76f75e73ce17")
+	version("4.0.0", md5="9f93015a96d68f6cce117ba3d7af3a19")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))

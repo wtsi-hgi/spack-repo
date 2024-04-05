@@ -17,6 +17,7 @@ class RNebulosa(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Nebulosa_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Nebulosa/Nebulosa_1.12.1.tar.gz"]
 
 	version("1.12.1", md5="daedaeb79ec239323487565bce3f7ca2")
+	version("1.12.0", md5="e71c21bbda87365578a49f21dd915fa4")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

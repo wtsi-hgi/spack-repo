@@ -18,6 +18,7 @@ class RModeldatatoo(RPackage):
 	cran = "modeldatatoo" 
 
 	version("0.3.0", md5="981099a267c2890d70f019de77972bfb")
+	version("0.2.1", md5="3bfdf7bb1392259573e4473851db12bd")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-pins", type=("build", "run"))

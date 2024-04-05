@@ -19,6 +19,7 @@ class RGraphicalextremes(RPackage):
 	cran = "graphicalExtremes" 
 
 	version("0.3.1", md5="727bc03208bbfaf8bd81f7473e2e4717")
+	version("0.3.0", md5="f19d997895f7dbc8be65479a56bf8678")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-igraph@1.2.4.1:", type=("build", "run"))

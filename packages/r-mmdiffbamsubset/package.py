@@ -18,4 +18,3 @@ class RMmdiffbamsubset(RPackage):
 	version("1.38.0", md5="0becc66301b49b58a99efa19577ee27c")
 
 
-	# experiment

@@ -16,6 +16,7 @@ class RGallo(RPackage):
 	cran = "GALLO" 
 
 	version("1.4", md5="0fbd67a6cc87e8abdcb240e03d2db3ce")
+	version("1.3", md5="54fa98a37770837c010ce219e4340603")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-circlize", type=("build", "run"))

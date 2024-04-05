@@ -16,6 +16,7 @@ class RHfr(RPackage):
 	cran = "hfr" 
 
 	version("0.7.1", md5="4819e54a6275ff43676f69c58ef715ff")
+	version("0.6.2", md5="4404e49aa44380f9349489c352275543")
 
 	depends_on("r-quadprog", type=("build", "run"))
 	depends_on("r-dendextend", type=("build", "run"))

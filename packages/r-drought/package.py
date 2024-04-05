@@ -14,8 +14,8 @@ class RDrought(RPackage):
 	
 	cran = "drought" 
 
-	version("1.1", md5="e96edc5ceb2cc8dfe8b631997cbaa23b")
 	version("1.2", md5="168b9df45a7afd5776916433a57eb3f9")
+	version("1.1", md5="e96edc5ceb2cc8dfe8b631997cbaa23b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-copula", type=("build", "run"))

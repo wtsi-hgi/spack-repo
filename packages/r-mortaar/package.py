@@ -20,6 +20,7 @@ class RMortaar(RPackage):
 	cran = "mortAAR" 
 
 	version("1.1.6", md5="a503244f5181a3e7a3517cf0e6d88c1f")
+	version("1.1.5", md5="913d41fa6433fd6d752482892157bd59")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-magrittr@1.5:", type=("build", "run"))

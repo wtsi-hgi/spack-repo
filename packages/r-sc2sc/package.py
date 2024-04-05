@@ -20,6 +20,7 @@ class RSc2sc(RPackage):
 	
 	cran = "sc2sc" 
 
+	version("0.0.1-9", md5="0c26f292f9ef10a8b01e2528525f8e39")
 	version("0.0.1-12", md5="c322623fd9846e0f10ca8d40e8146fcd")
 
 	depends_on("r@2.10:", type=("build", "run"))

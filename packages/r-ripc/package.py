@@ -20,6 +20,7 @@ class RRipc(RPackage):
 	cran = "ripc" 
 
 	version("0.2.1", md5="63ce39b50966a5af9d52069e961806a2")
+	version("0.2.0", md5="b256b82f069b08939244a7a788ffac01")
 
 	depends_on("r-countrycode", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

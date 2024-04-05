@@ -22,6 +22,7 @@ Data
 	cran = "ReporterScore" 
 
 	version("0.1.4", md5="7ec56154c39476cec6d7f25431d349ad")
+	version("0.1.2", md5="3bebfa19d6e47b824624a49ca925424a")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

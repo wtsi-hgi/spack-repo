@@ -22,6 +22,7 @@ class RNaniar(RPackage):
 	cran = "naniar" 
 
 	version("1.1.0", md5="cbaa52f7b51e26940576be83b49919b0")
+	version("1.0.0", md5="643a9121342f5bfd9b8cade850c6b5cd")
 
 	depends_on("r@3.1.2:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

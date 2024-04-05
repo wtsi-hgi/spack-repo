@@ -27,6 +27,7 @@ class ROd(RPackage):
 	cran = "od" 
 
 	version("0.4.4", md5="0a3123bfe478f34fe296c51833ac2ee9")
+	version("0.4.3", md5="070020d778a099d47238f3763197df19")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-sfheaders", type=("build", "run"))

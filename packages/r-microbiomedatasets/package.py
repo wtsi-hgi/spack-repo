@@ -26,4 +26,3 @@ class RMicrobiomedatasets(RPackage):
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))
 
-	# experiment

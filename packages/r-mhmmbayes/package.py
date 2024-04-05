@@ -33,6 +33,7 @@ class RMhmmbayes(RPackage):
 	cran = "mHMMbayes" 
 
 	version("1.1.0", md5="beaa2f44f8786b7079dfea7e60cf764b")
+	version("1.0.0", md5="957ed1ec07ee6bf380276ba38c7b1d75")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-mcmcpack", type=("build", "run"))

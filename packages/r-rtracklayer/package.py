@@ -18,6 +18,7 @@ class RRtracklayer(RPackage):
 
 	bioc = "rtracklayer"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rtracklayer_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rtracklayer/rtracklayer_1.62.0.tar.gz"]
+	version("1.62.0", md5="a16a9ca02e49808b38823899860abdb6")
 	version("1.60.0", commit="de35bc03116fc7ad30f0e425b41715c3cb2e783b")
 	version("1.58.0", commit="54a74972c08775fdf1e83e6e22cd0b8fad677fc1")
 	version("1.56.1", commit="4c6d2201fcb102d471bd88f4f51cc34317669955")
@@ -29,7 +30,6 @@ class RRtracklayer(RPackage):
 	version("1.40.6", commit="ba9a6e711504a702147383bc7abfcc36eb304df7")
 	version("1.38.3", commit="f20db703c09dc7e808c09e9b78c15aec9e546248")
 	version("1.36.6", commit="8c0ac7230f94e0c5a981acbb178c8de70e968131")
-	version("1.62.0", md5="a16a9ca02e49808b38823899860abdb6")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges@1.37.2:", type=("build", "run"))

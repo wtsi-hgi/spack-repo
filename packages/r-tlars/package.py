@@ -20,6 +20,7 @@ Selection
 	cran = "tlars" 
 
 	version("1.0.1", md5="17f61641263a6a24a6271706b6f55252")
+	version("1.0.0", md5="e8cc5c199d72a1b6d833c2a4e3eed43b")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

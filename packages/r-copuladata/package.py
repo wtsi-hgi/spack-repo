@@ -19,5 +19,6 @@ class RCopuladata(RPackage):
 	cran = "copulaData" 
 
 	version("0.0-2", md5="aceff5308316999259b192bfc2a2cb39")
+	version("0.0-1", md5="f5b1849e1490da58c511532668ed2586")
 
 	depends_on("r@3.1:", type=("build", "run"))

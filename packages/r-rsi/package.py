@@ -22,6 +22,7 @@ class RRsi(RPackage):
 	cran = "rsi" 
 
 	version("0.2.0", md5="3a868fb518f3acd623b82b3910601b31")
+	version("0.1.2", md5="3ac2cca892d56b8b29964c39984d36a0")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-future-apply", type=("build", "run"))

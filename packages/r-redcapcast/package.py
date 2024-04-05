@@ -28,6 +28,7 @@ class RRedcapcast(RPackage):
 	cran = "REDCapCAST" 
 
 	version("24.2.1", md5="d00903e774a8af09176c8b6ed1020516")
+	version("24.1.1", md5="efdc9d8339832ebf759d8efc77fb783b")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

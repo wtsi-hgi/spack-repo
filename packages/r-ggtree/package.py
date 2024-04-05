@@ -22,6 +22,7 @@ class RGgtree(RPackage):
 	version("3.4.0", commit="23f08a3da1829d1bbb6827ed1c4cf878daa4b539")
 	version("3.2.1", commit="d3747e636fe1a6a9e09b56a3a3899208ebd05547")
 	version("3.10.1", md5="14911b3009b957dcf17ae513e87825fa")
+	version("3.10.0", md5="7e1894ce01245d811286b0ce1fbe8266")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

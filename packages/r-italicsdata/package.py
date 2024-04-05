@@ -20,4 +20,3 @@ class RItalicsdata(RPackage):
 
 	depends_on("r@2:", type=("build", "run"))
 
-	# experiment

@@ -21,4 +21,3 @@ class RSpatialdatasets(RPackage):
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-spatialexperiment", type=("build", "run"))
 
-	# experiment

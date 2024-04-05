@@ -20,6 +20,7 @@ Ellipses
 	cran = "hysteresis" 
 
 	version("2.7.2", md5="ca3c9f5c102c69925b877a17c8e85768")
+	version("2.7", md5="fd7fa5b07144c1c48e56208f79a31665")
 
 	depends_on("r-car", type=("build", "run"))
 	depends_on("r-msm", type=("build", "run"))

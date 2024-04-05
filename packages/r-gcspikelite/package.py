@@ -19,4 +19,3 @@ class RGcspikelite(RPackage):
 
 	depends_on("r@2.5:", type=("build", "run"))
 
-	# experiment

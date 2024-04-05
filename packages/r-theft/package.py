@@ -23,6 +23,7 @@ class RTheft(RPackage):
 	cran = "theft" 
 
 	version("0.6.1", md5="237081f34e4699221151e52cccef5368")
+	version("0.5.4.1", md5="51ddad39e0a45334c8eefea9e8e3a59d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

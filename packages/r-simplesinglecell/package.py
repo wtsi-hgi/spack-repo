@@ -23,4 +23,3 @@ class RSimplesinglecell(RPackage):
 	depends_on("r-rmarkdown", type=("build", "run"))
 	depends_on("r-biocstyle", type=("build", "run"))
 
-	# workflow

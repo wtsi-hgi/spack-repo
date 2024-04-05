@@ -21,4 +21,3 @@ class REcoli2Db(RPackage):
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-org-eck12-eg-db@3.13:", type=("build", "run"))
 
-	# annotation

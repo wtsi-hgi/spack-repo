@@ -26,6 +26,7 @@ class RTciu(RPackage):
 	cran = "TCIU" 
 
 	version("1.2.5", md5="36955d3bb0f03e782d21b399a886e2f0")
+	version("1.2.4", md5="e90f03cd6536c85ceaf1ee9cf028798b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

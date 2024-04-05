@@ -21,6 +21,7 @@ class RGeosapi(RPackage):
 	cran = "geosapi" 
 
 	version("0.7-1", md5="179ca222c6218299462cdb3b7a8b8b8e")
+	version("0.6-7", md5="2f94a787f23f63b8c193b5307315bf13")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

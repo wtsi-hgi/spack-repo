@@ -16,6 +16,7 @@ class RRuminate(RPackage):
 	cran = "ruminate" 
 
 	version("0.2.2", md5="974da6d01abeb9484477a6eac92d4a0a")
+	version("0.2.1", md5="7da34c5e3154d8382c1fa1b336fbbccb")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))

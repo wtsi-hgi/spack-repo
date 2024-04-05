@@ -34,6 +34,7 @@ class REscalation(RPackage):
 	cran = "escalation" 
 
 	version("0.1.8", md5="c24661184de7c36457a8c7f0e35bddcf")
+	version("0.1.5", md5="f6acc8e940a8c5242b978bb9031ea059")
 
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

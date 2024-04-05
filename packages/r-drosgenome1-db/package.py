@@ -21,4 +21,3 @@ class RDrosgenome1Db(RPackage):
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-org-dm-eg-db@3.13:", type=("build", "run"))
 
-	# annotation

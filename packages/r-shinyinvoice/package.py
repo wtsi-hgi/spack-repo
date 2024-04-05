@@ -20,6 +20,7 @@ class RShinyinvoice(RPackage):
 	cran = "shinyInvoice" 
 
 	version("0.0.5", md5="baa8216c3fb40ab525bb56179a014c27")
+	version("0.0.4", md5="bd1d49f69d5491ec4e35a97426f4e40a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))

@@ -26,6 +26,7 @@ class RGsna(RPackage):
 	cran = "GSNA" 
 
 	version("0.1.4.2", md5="7a35bbcbc1caaf700ce9022c400803af")
+	version("0.1.4.1", md5="961452b459f967c6e323b552d27b1ac6")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-circlize", type=("build", "run"))

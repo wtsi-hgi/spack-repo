@@ -16,6 +16,7 @@ class RBgms(RPackage):
 	cran = "bgms" 
 
 	version("0.1.3", md5="cfb8ecbab4249aa0317c246f673ac9fe")
+	version("0.1.2", md5="7e71dd526831341f105822b9518953fa")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

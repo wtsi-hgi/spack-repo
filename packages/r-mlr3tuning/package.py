@@ -23,6 +23,7 @@ class RMlr3tuning(RPackage):
 	cran = "mlr3tuning" 
 
 	version("0.20.0", md5="5982779679aef64eeb4c4df15862a73e")
+	version("0.19.2", md5="6131c966786a64a1e66907519784dfb3")
 
 	depends_on("r-mlr3@0.17:", type=("build", "run"))
 	depends_on("r-paradox@0.10:", type=("build", "run"))

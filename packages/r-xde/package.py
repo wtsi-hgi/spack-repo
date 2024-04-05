@@ -15,6 +15,7 @@ class RXde(RPackage):
 
 	bioc = "XDE"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/XDE_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/XDE/XDE_2.48.0.tar.gz"]
+	version("2.48.0", md5="aaf179de92edd3a7105c0fe20254f3d6")
 	version("2.46.0", commit="f94324fba1ad6dca129d86e61abc219f766321e8")
 	version("2.44.0", commit="a6ddedb91afe381f223e52ae49c6704f8f046916")
 	version("2.42.0", commit="298e83eff7fc5f72a2bb76b559c5115c6cd3ee84")
@@ -25,7 +26,6 @@ class RXde(RPackage):
 	version("2.26.0", commit="7bf6368037937c53542447175061c2e2059ee3be")
 	version("2.24.0", commit="fd5f245f82893657dc36e5a67a1d3b8255772462")
 	version("2.22.0", commit="25bcec965ae42a410dd285a9db9be46d112d8e81")
-	version("2.48.0", md5="aaf179de92edd3a7105c0fe20254f3d6")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

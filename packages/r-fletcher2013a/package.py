@@ -24,4 +24,3 @@ class RFletcher2013a(RPackage):
 	depends_on("r-venndiagram", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))
 
-	# experiment

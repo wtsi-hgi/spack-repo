@@ -17,10 +17,10 @@ class RColourpicker(RPackage):
 	select colours to use in your R code."""
 
 	cran = "colourpicker"
+	version("1.3.0", md5="e8d6b8cb5a3316250a6edba9f1d7025b")
 	version("1.2.0", sha256="bc2c80eee046219038baef9f8f213c9824d7fec7f893f6a1b881dd44b4a8638a")
 	version("1.1.1", sha256="a0d09982b048b143e2c3438ccec039dd20d6f892fa0dedc9fdcb0d40de883ce0")
 	version("1.1.0", sha256="2dfbb6262d187d3b17357ff9c22670ced3621feda5b2a2a500558478e4d551e2")
-	version("1.3.0", md5="e8d6b8cb5a3316250a6edba9f1d7025b")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

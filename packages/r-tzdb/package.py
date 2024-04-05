@@ -20,9 +20,9 @@ class RTzdb(RPackage):
 	interface for time zone manipulations."""
 
 	cran = "tzdb"
+	version("0.4.0", md5="c92e89379dd5c49a03b5b3996abcd0f1")
 	version("0.3.0", sha256="6099f0ec1fba692b51b4360aa776902a39f10dae815933c31994b8e4d4277038")
 	version("0.2.0", sha256="c335905d452b400af7ed54b916b5246cb3f47ede0602911a2bcb25a1cf56d5a9")
-	version("0.4.0", md5="c92e89379dd5c49a03b5b3996abcd0f1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cpp11@0.4.2:", type=("build", "run"))

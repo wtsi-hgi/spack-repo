@@ -17,5 +17,6 @@ Versions of R
 	cran = "rcheology" 
 
 	version("4.3.3.0", md5="a1a985ec18bfa22ca863a657790a0af1")
+	version("4.3.2.0", md5="fbe772b318b86ad25a685536e11f9073")
 
 	depends_on("r@2.10:", type=("build", "run"))

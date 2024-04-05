@@ -25,8 +25,8 @@ class RDataquier(RPackage):
 	homepage = "https://dataquality.qihs.uni-greifswald.de/"
 	cran = "dataquieR" 
 
-	version("2.0.1", md5="bc56fd66ea12fea9943c2a4699d1c693")
 	version("2.1.0", md5="6954a5b4c2a31894e014dc75ef26f1a2")
+	version("2.0.1", md5="bc56fd66ea12fea9943c2a4699d1c693")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr@1.0.2:", type=("build", "run"))

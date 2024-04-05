@@ -12,8 +12,9 @@ class RGeojsonsf(RPackage):
 	Converts Between GeoJSON and simple feature objects."""
 
 	cran = "geojsonsf"
-	version("2.0.1", sha256="42df40433bfbece5a39cd97b5bd4690b4424855241fcc3e7322ee68a3988bfbf")
+	version("2.0.3", sha256="275ca14672d982e6a95884515f49d8a0aad14f3be62ea01b675a91b0bffb46d1")
 	version("2.0.3", md5="124952e42b4eaba8b046506623ac0242")
+	version("2.0.1", sha256="42df40433bfbece5a39cd97b5bd4690b4424855241fcc3e7322ee68a3988bfbf")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

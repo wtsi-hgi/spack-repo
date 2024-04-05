@@ -23,4 +23,3 @@ class RSomascanDb(RPackage):
 	depends_on("r-dbi", type=("build", "run"))
 	depends_on("r-org-hs-eg-db@3.14:", type=("build", "run"))
 
-	# annotation

@@ -37,4 +37,5 @@ Classifications
 	cran = "betafunctions" 
 
 	version("1.9.0", md5="5e9b7adea2ff11e937eba3d68630cd03")
+	version("1.8.1", md5="05bf901a5303b342478190af741d20bd")
 

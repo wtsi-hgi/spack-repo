@@ -16,6 +16,7 @@ class RTidyaml(RPackage):
 	cran = "tidyAML" 
 
 	version("0.0.5", md5="648ba3eceb5b71d18f73b62373095724")
+	version("0.0.4", md5="ef987f739f292a818e9b384d2bc07005")
 
 	depends_on("r-parsnip", type=("build", "run"))
 	depends_on("r@4.1:", type=("build", "run"))

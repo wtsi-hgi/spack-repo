@@ -15,6 +15,7 @@ class RVctrs(RPackage):
 	function interfaces."""
 
 	cran = "vctrs"
+	version("0.6.5", md5="191f3037d9b6f3f8640661f61e2aeb93")
 	version("0.6.2", sha256="feecabe11f6c55e04377d36fa59842187f0a6fe52aaf867c08289a948781ee84")
 	version("0.5.0", sha256="7c372e13c39ddace9c9bb9f33238de6dd2cd0f37dcc7054ba6435d271e5df686")
 	version("0.4.2", sha256="5414d1d6977163b4e85efa40d6facdd98089d6ffd460daaba729d4200942d815")
@@ -23,7 +24,6 @@ class RVctrs(RPackage):
 	version("0.3.6", sha256="df7d368c9f2d2ad14872ba2a09821ec4f5a8ad77c81a0b05e1f440e5ffebad25")
 	version("0.3.5", sha256="11605d98106e294dae1a9b205462dd3906a6159a647150752b85dd290f6635cc")
 	version("0.2.0", sha256="5bce8f228182ecaa51230d00ad8a018de9cf2579703e82244e0931fe31f20016")
-	version("0.6.5", md5="191f3037d9b6f3f8640661f61e2aeb93")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cli@3.4:", type=("build", "run"))

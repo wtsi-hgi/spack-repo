@@ -21,6 +21,7 @@ class ROpa(RPackage):
 	cran = "opa" 
 
 	version("0.8.3", md5="62fbfb348daf6e0699386a02294fe18e")
+	version("0.8.2", md5="b1fd262530a136da922a7592007d5e99")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

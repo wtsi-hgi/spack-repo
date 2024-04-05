@@ -14,8 +14,8 @@ class RCgaim(RPackage):
 	
 	cran = "cgaim" 
 
-	version("1.0.0", md5="f8b20791fdfb88540266be7977eafe16")
 	version("1.0.1", md5="ef3a24b697a0663288d758966f09a90b")
+	version("1.0.0", md5="f8b20791fdfb88540266be7977eafe16")
 
 	depends_on("r-scam", type=("build", "run"))
 	depends_on("r-scar", type=("build", "run"))

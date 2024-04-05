@@ -20,4 +20,3 @@ class RYeastexpdata(RPackage):
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-graph@1.9.26:", type=("build", "run"))
 
-	# experiment

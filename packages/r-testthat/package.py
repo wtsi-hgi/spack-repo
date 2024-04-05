@@ -14,6 +14,7 @@ class RTestthat(RPackage):
 	is easy to learn and use, and integrates with your existing 'workflow'."""
 
 	cran = "testthat"
+	version("3.2.1", md5="cb9ddcf70c6b030743c9685e0f104f67")
 	version("3.1.7", sha256="1ad86b1739481c6c46359a6634ecc706bf513f34b26d7a62cbc719bbd4658eab")
 	version("3.1.5", sha256="a8f56b9426206ddfc30b550c82ff2f042ebe1c2f5bfd4184aec8facac8f5b7fc")
 	version("3.1.4", sha256="a47eec031b4e186a8bd331031371b2347063a283050eca2adbfaa37d7a6c9c09")
@@ -24,7 +25,6 @@ class RTestthat(RPackage):
 	version("2.2.1", sha256="67ee0512bb312695c81fd74338bb8ce9e2e58763681ddbcdfdf35f52dfdb0b78")
 	version("2.1.0", sha256="cf5fa7108111b32b86e70819352f86b57ab4e835221bb1e83642d52a1fdbcdd4")
 	version("1.0.2", sha256="0ef7df0ace1fddf821d329f9d9a5d42296085350ae0d94af62c45bd203c8415e")
-	version("3.2.1", md5="cb9ddcf70c6b030743c9685e0f104f67")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-brio@1.1.3:", type=("build", "run"))

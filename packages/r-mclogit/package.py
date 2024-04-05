@@ -21,6 +21,7 @@ Overdispersion
 	homepage = "http://mclogit.elff.eu"
 	cran = "mclogit" 
 
+	version("0.9.6", sha256="9adc5f6d8649960abe009c30d9b4c448ff7d174c455a594cbf104a33d5a36f69")
 	version("0.9.6", md5="fde8195c54f7096ebf8071b67b44ddab")
 
 	depends_on("r-matrix", type=("build", "run"))

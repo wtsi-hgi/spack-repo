@@ -18,6 +18,7 @@ class RCdcplaces(RPackage):
 	cran = "CDCPLACES" 
 
 	version("1.1.5", md5="bcce052ec1a13c0ee6b18ae7821df5eb")
+	version("1.1.4", md5="24d6a7b2bc89ffaa077a2794508bc148")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))

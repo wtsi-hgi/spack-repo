@@ -17,6 +17,7 @@ class RFastcub(RPackage):
 	cran = "FastCUB" 
 
 	version("0.0.3", md5="7646bfec4b4dae546045c877f166f98b")
+	version("0.0.2", md5="481c248e1f6882af1e478abd928ca59a")
 
 	depends_on("r@2.15.2:", type=("build", "run"))
 	depends_on("r-formula", type=("build", "run"))

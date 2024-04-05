@@ -18,6 +18,7 @@ class RVegan3d(RPackage):
 	cran = "vegan3d" 
 
 	version("1.3-0", md5="0f0c5bdfc416b6c66b7c7dc2db5c1c31")
+	version("1.2-0", md5="31fa0613a6fd2c189eb70ec3f8ffbfc2")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-vegan@2.3.0:", type=("build", "run"))

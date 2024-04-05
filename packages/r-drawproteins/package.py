@@ -17,6 +17,7 @@ class RDrawproteins(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/drawProteins_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/drawProteins/drawProteins_1.22.2.tar.gz"]
 
 	version("1.22.2", md5="9326305bfeb89e5bca2c61c3e0b8642a")
+	version("1.22.0", md5="67cbf634b37851946e9cc3885cdda6c5")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

@@ -16,6 +16,7 @@ class RRcy3(RPackage):
 	bioc = "RCy3" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCy3_2.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RCy3/RCy3_2.22.1.tar.gz"]
 
+	version("2.22.1", md5="d4f51eaf382ede111f69aefd2660e383", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/RCy3_2.22.1.tar.gz")
 	version("2.22.1", md5="d4f51eaf382ede111f69aefd2660e383", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCy3_2.22.1.tar.gz")
 
 	depends_on("r-httr", type=("build", "run"))

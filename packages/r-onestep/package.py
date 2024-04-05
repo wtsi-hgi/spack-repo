@@ -21,6 +21,7 @@ class ROnestep(RPackage):
 	cran = "OneStep" 
 
 	version("0.9.3", md5="58acad1ba5b93b886d7cde3df82c78cc")
+	version("0.9.2", md5="2f72fb82bdf4838e26a18f23536813b7")
 
 	depends_on("r-fitdistrplus", type=("build", "run"))
 	depends_on("r-numderiv", type=("build", "run"))

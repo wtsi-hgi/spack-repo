@@ -20,6 +20,7 @@ class RRetrosheet(RPackage):
 	cran = "retrosheet" 
 
 	version("1.1.6", md5="bae64abf8693d7d1fd6d23f43b55de30")
+	version("1.1.5", md5="99f016bb4e27a87eb3b73e88ad50dedf")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-xml2@1.2.2:", type=("build", "run"))

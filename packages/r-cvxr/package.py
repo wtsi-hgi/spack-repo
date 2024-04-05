@@ -19,8 +19,8 @@ class RCvxr(RPackage):
 	are provided, both commercial and open source."""
 
 	cran = "CVXR"
-	version("1.0-11", sha256="e92a9638f35f4909e2a29c3b7106081e3dae7ff88b14bb6466b87fbdc80b972a")
 	version("1.0-12", md5="8137d36b071cb966856e093ff18ce7c3")
+	version("1.0-11", sha256="e92a9638f35f4909e2a29c3b7106081e3dae7ff88b14bb6466b87fbdc80b972a")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

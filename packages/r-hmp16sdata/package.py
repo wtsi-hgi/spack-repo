@@ -32,4 +32,3 @@ class RHmp16sdata(RPackage):
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
 
-	# experiment

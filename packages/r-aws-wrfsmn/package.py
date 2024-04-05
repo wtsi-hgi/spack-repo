@@ -20,6 +20,7 @@ class RAwsWrfsmn(RPackage):
 	cran = "aws.wrfsmn" 
 
 	version("0.0.3", md5="877db0a8eca3aa383836639da1b605e0")
+	version("0.0.1", md5="cd093480c0f137b1dccd4c547087fc74")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-aws-s3@0.3.21:", type=("build", "run"))

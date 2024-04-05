@@ -26,6 +26,7 @@ class RSemmcci(RPackage):
 	cran = "semmcci" 
 
 	version("1.1.4", md5="e73b1d88352cf92816dad09e50244e77")
+	version("1.1.3", md5="af980e789c7f2690f120d5db41fd12fd")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-lavaan", type=("build", "run"))

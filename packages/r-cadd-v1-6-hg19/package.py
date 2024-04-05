@@ -15,9 +15,9 @@ class RCaddV16Hg19(RPackage):
 	bioc = "cadd.v1.6.hg19" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cadd.v1.6.hg19_3.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/cadd.v1.6.hg19/cadd.v1.6.hg19_3.18.1.tar.gz"]
 
+	version("3.18.1", md5="10cc50d17dbca89406a2290f37d5203c", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/cadd.v1.6.hg19_3.18.1.tar.gz")
 	version("3.18.1", md5="10cc50d17dbca89406a2290f37d5203c", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cadd.v1.6.hg19_3.18.1.tar.gz")
 
 	depends_on("r-genomicscores", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))
 
-	# annotation

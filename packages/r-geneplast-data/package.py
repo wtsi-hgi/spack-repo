@@ -29,4 +29,3 @@ class RGeneplastData(RPackage):
 	depends_on("r-geneplast", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))
 
-	# annotation

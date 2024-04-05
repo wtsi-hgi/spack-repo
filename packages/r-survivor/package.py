@@ -19,6 +19,7 @@ class RSurvivor(RPackage):
 	cran = "survivoR" 
 
 	version("2.3.2", md5="89cac38bb1680ca8e741cff2db0bba2d")
+	version("2.3.1", md5="30d35c58d8802d57fbdb710a772d15c7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))

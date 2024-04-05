@@ -21,4 +21,3 @@ class RZebrafishDb(RPackage):
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-org-dr-eg-db@3.13:", type=("build", "run"))
 
-	# annotation

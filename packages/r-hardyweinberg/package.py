@@ -16,6 +16,7 @@ class RHardyweinberg(RPackage):
 	cran = "HardyWeinberg" 
 
 	version("1.7.7", md5="38f7d848127d74aae9eb88d43387c98a")
+	version("1.7.5", md5="3aa0a3f8cf5f4b49ed8d5ca366b3295a")
 
 	depends_on("r@1.8:", type=("build", "run"))
 	depends_on("r-mice", type=("build", "run"))

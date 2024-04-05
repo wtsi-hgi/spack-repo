@@ -16,6 +16,7 @@ class RNetmap(RPackage):
 	cran = "netmap" 
 
 	version("0.1.4", md5="32ed7e363f4ca752c37b788ebe682cdb")
+	version("0.1.3", md5="fb2eadae027fe37e01df8c7744d2086b")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-ggnetwork", type=("build", "run"))

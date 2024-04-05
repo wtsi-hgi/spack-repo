@@ -19,8 +19,9 @@ OMOP Common Data Model
 	homepage = "https://darwin-eu-dev.github.io/DrugUtilisation/"
 	cran = "DrugUtilisation" 
 
-	version("0.5.2", md5="efcbbfb2b23dbebf488cf4061b2018c6")
 	version("0.5.3", md5="631b32d12ed7dfbbbc724299bb25b076")
+	version("0.5.2", md5="efcbbfb2b23dbebf488cf4061b2018c6")
+	version("0.5.0", md5="7ca7bb7f10593f583cfd51d4dd2e350a")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-cdmconnector@1.3:", type=("build", "run"))

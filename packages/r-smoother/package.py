@@ -17,5 +17,6 @@ class RSmoother(RPackage):
 	cran = "smoother" 
 
 	version("1.3", md5="72d0e18fd958c830eed4db728eb09f5e")
+	version("1.1", md5="876f63e324865694589c3ffd1d134d52")
 
 	depends_on("r-ttr@0.22:", type=("build", "run"))

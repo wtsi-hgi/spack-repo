@@ -16,6 +16,7 @@ class RVmf(RPackage):
 	cran = "vMF" 
 
 	version("0.0.3", md5="f27b4dc94694a319be56b7ea334a3eed")
+	version("0.0.2", md5="ef7cd0cd72bb299c220b783f90f75406")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

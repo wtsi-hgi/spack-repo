@@ -16,6 +16,7 @@ Structure Information
 	cran = "StructFDR" 
 
 	version("1.4", md5="f1076c4f7297622a8a32d4d448668c8b")
+	version("1.3", md5="1287a00f5361e3362a7ef1afd9f31f51")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-nlme", type=("build", "run"))

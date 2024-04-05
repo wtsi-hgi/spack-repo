@@ -15,6 +15,7 @@ class RPdMouse430a2(RPackage):
 	bioc = "pd.mouse430a.2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mouse430a.2_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.mouse430a.2/pd.mouse430a.2_3.12.0.tar.gz"]
 
+	version("3.12.0", md5="0c28f564a1fa23f59c936d42c156796d", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.mouse430a.2_3.12.0.tar.gz")
 	version("3.12.0", md5="0c28f564a1fa23f59c936d42c156796d", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mouse430a.2_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
@@ -26,4 +27,3 @@ class RPdMouse430a2(RPackage):
 	depends_on("r-iranges@2.1.43:", type=("build", "run"))
 	depends_on("r-s4vectors@0.5.22:", type=("build", "run"))
 
-	# annotation

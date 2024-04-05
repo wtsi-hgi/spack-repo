@@ -15,8 +15,8 @@ class RBsgenomeMmulattaUcscRhemac2(RPackage):
 	bioc = "BSgenome.Mmulatta.UCSC.rheMac2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mmulatta.UCSC.rheMac2_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Mmulatta.UCSC.rheMac2/BSgenome.Mmulatta.UCSC.rheMac2_1.4.0.tar.gz"]
 
+	version("1.4.0", md5="90c43e127e76dfd7cea90de9e1af9a50", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Mmulatta.UCSC.rheMac2_1.4.0.tar.gz")
 	version("1.4.0", md5="90c43e127e76dfd7cea90de9e1af9a50", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mmulatta.UCSC.rheMac2_1.4.0.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 
-	# annotation

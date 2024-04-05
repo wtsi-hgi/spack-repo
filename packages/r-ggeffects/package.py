@@ -23,6 +23,7 @@ Model Outputs
 	cran = "ggeffects" 
 
 	version("1.5.1", md5="11b151fac55dd9c2562ae646f5f95938")
+	version("1.4.0", md5="c5fd4b4cfdb444816f2cd7248ff03aa3")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-insight@0.19.8:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RCellhts2(RPackage):
 	bioc = "cellHTS2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cellHTS2_2.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cellHTS2/cellHTS2_2.66.0.tar.gz"]
 
+	version("2.66.0", md5="6f9dfcbf4583db914d89c9310e207c02", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/cellHTS2_2.66.0.tar.gz")
 	version("2.66.0", md5="6f9dfcbf4583db914d89c9310e207c02", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cellHTS2_2.66.0.tar.gz")
 
 	depends_on("r@2.10:", type=("build", "run"))

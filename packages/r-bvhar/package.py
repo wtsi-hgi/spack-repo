@@ -18,6 +18,7 @@ class RBvhar(RPackage):
 	cran = "bvhar" 
 
 	version("2.0.1", md5="18914852860b1b2b5aaa2461199cf4c5")
+	version("2.0.0", md5="da66dcf7f0934e7522ffab8e88eb14de")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-lifecycle", type=("build", "run"))

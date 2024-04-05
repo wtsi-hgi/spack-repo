@@ -19,4 +19,3 @@ class REgseadata(RPackage):
 
 	depends_on("r@3.4:", type=("build", "run"))
 
-	# experiment

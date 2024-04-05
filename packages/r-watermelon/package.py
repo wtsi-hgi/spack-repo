@@ -14,13 +14,13 @@ class RWatermelon(RPackage):
 
 	bioc = "wateRmelon"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/wateRmelon_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/wateRmelon/wateRmelon_2.8.0.tar.gz"]
+	version("2.8.0", md5="dd08402958a5cc50170669a5f17e44f6")
 	version("2.6.0", commit="a46541ffcc08efebf08ea29cb214a45f51f5cb72")
 	version("2.4.0", commit="31c15255511940b8b83d039c42ec89e43ceb0885")
 	version("2.2.0", commit="6ec49efe98aef31d0789b31ab048eb46edec762c")
 	version("2.0.0", commit="f6a331bdf50e0e5c94009fb67be873d996348ade")
 	version("1.34.0", commit="3fa2745535c22068a438747b41b9d793196098d4")
 	version("1.30.0", commit="66d7579fe49206d965832288df7937c3d43ed578")
-	version("2.8.0", md5="dd08402958a5cc50170669a5f17e44f6")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

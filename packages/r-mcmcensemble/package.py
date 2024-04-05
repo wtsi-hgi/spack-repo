@@ -21,6 +21,7 @@ class RMcmcensemble(RPackage):
 	cran = "mcmcensemble" 
 
 	version("3.1.0", md5="fb3948b1eb4afa1b8bda69aebca7ef3b")
+	version("3.0.0", md5="184a2eca814a4564c4fa688a098eb477")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-future-apply", type=("build", "run"))

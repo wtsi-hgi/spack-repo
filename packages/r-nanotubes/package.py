@@ -20,4 +20,3 @@ class RNanotubes(RPackage):
 
 	depends_on("r@3.6:", type=("build", "run"))
 
-	# experiment

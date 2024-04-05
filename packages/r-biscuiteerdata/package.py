@@ -23,4 +23,3 @@ class RBiscuiteerdata(RPackage):
 	depends_on("r-curl", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))
 
-	# experiment

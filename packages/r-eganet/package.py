@@ -28,8 +28,8 @@ Psychometrics
 	homepage = "https://r-ega.net"
 	cran = "EGAnet" 
 
-	version("2.0.4", md5="183213a6e614bd0a8e6a63acccbb71c3")
 	version("2.0.5", md5="82a86eca7bdeb596efe1add7a4694307")
+	version("2.0.4", md5="183213a6e614bd0a8e6a63acccbb71c3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dendextend", type=("build", "run"))

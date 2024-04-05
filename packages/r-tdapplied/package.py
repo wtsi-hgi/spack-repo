@@ -21,6 +21,7 @@ class RTdapplied(RPackage):
 	cran = "TDApplied" 
 
 	version("3.0.3", md5="798076d6e5fbd5e795ecefeba1b08a1a")
+	version("3.0.2", md5="101a1d2b8e259246a3fd8021092b53b3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

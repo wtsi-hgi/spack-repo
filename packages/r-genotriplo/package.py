@@ -17,6 +17,7 @@ class RGenotriplo(RPackage):
 	cran = "GenoTriplo" 
 
 	version("1.0.4", md5="7ef44dadb1603c4e51fb82aa76d0f1b7")
+	version("1.0.3", md5="6029ba0d77e4287f11a1a608e7933edc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-shinybs", type=("build", "run"))

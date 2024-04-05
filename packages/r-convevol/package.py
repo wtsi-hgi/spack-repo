@@ -15,9 +15,9 @@ class RConvevol(RPackage):
 	framework."""
 
 	cran = "convevol"
+	version("2.0.1", md5="83d23750400e7059c01f663961051df0")
 	version("2.0.0", sha256="690664b93c1f144a409e80b2ebfc20dc34f0eb9405607d15e066e8db573e84de")
 	version("1.3", sha256="d6b24b9796a559f5280e277746189d141151ade4b14cc6b4c2d9d496d7f314ac")
-	version("2.0.1", md5="83d23750400e7059c01f663961051df0")
 
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

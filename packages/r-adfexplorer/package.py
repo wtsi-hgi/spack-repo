@@ -23,5 +23,6 @@ class RAdfexplorer(RPackage):
 	cran = "adfExplorer" 
 
 	version("0.1.8", md5="3944247d7b04fd7babaeeef318bc2e34")
+	version("0.1.6", md5="5fe06b94c3bee885f48ec1febf201f11")
 
 	depends_on("r@2.10:", type=("build", "run"))

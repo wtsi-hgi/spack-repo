@@ -16,6 +16,7 @@ class RLrbasedbi(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LRBaseDbi_2.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LRBaseDbi/LRBaseDbi_2.12.1.tar.gz"]
 
 	version("2.12.1", md5="7426492a70cd760e3c50be36388a1a09")
+	version("2.12.0", md5="4ed780d2b26059691bd1a1e859ca5003")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -20,4 +20,3 @@ class RHuexexonprobesetlocation(RPackage):
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.7.17:", type=("build", "run"))
 
-	# annotation

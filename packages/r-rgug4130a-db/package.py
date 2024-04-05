@@ -21,4 +21,3 @@ class RRgug4130aDb(RPackage):
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-org-rn-eg-db@3.3:", type=("build", "run"))
 
-	# annotation

@@ -15,8 +15,8 @@ class RBsgenomeMfascicularisNcbi50(RPackage):
 	bioc = "BSgenome.Mfascicularis.NCBI.5.0" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mfascicularis.NCBI.5.0_1.4.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Mfascicularis.NCBI.5.0/BSgenome.Mfascicularis.NCBI.5.0_1.4.2.tar.gz"]
 
+	version("1.4.2", md5="dba6ade39dc6b4f6d06f488141b5550b", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Mfascicularis.NCBI.5.0_1.4.2.tar.gz")
 	version("1.4.2", md5="dba6ade39dc6b4f6d06f488141b5550b", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mfascicularis.NCBI.5.0_1.4.2.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 
-	# annotation

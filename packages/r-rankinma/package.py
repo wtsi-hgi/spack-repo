@@ -16,6 +16,7 @@ class RRankinma(RPackage):
 	cran = "rankinma" 
 
 	version("0.2.2", md5="07c5b189d7f2847d2c8cc68738521ff9")
+	version("0.2.0", md5="e9a16a6beb648a64235ed829de7b15a4")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))

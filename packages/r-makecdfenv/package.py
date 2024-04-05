@@ -16,6 +16,7 @@ class RMakecdfenv(RPackage):
 
 	bioc = "makecdfenv"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/makecdfenv_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/makecdfenv/makecdfenv_1.78.0.tar.gz"]
+	version("1.78.0", md5="b5c8877fd5b09fbb4d3656490fa7eb64")
 	version("1.76.0", commit="8196d4886db1d8e51821bfe9f727a30666d53801")
 	version("1.74.0", commit="412affc333ba51cad0ff3c7919e2eadaaf426359")
 	version("1.72.0", commit="85c89688e6b6e8bff46b92cbeba49e38c510492e")
@@ -26,7 +27,6 @@ class RMakecdfenv(RPackage):
 	version("1.56.0", commit="f6b48e9a9f18598653d05bc0bdffeae7fefbb327")
 	version("1.54.0", commit="3ff646ddc4b028e46b1e091ff9c2d17ce77cec26")
 	version("1.52.0", commit="b88a3e93e3b7feeeca69eda7c1fc5a0826c81120")
-	version("1.78.0", md5="b5c8877fd5b09fbb4d3656490fa7eb64")
 
 	depends_on("r@2.6:", type=("build", "run"))
 	depends_on("r-affyio", type=("build", "run"))

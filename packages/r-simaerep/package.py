@@ -20,6 +20,7 @@ class RSimaerep(RPackage):
 	cran = "simaerep" 
 
 	version("0.5.0", md5="e269292574643cc18a2bbcc3ed802b37")
+	version("0.4.3", md5="71b082cc2fd3173c2519c9b80cfba75f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

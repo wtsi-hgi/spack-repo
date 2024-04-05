@@ -20,6 +20,7 @@ class RPhotobiologysun(RPackage):
 	cran = "photobiologySun" 
 
 	version("0.5.0", md5="dcd0b673c00600f386a38acb76479192")
+	version("0.4.1", md5="0f1e1ef91ebcf0340c7177da10c39052")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-photobiology@0.11.2:", type=("build", "run"))

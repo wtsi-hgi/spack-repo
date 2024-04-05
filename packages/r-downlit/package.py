@@ -15,8 +15,8 @@ class RDownlit(RPackage):
 	automatic translation of ANSI escapes in output to the equivalent HTML."""
 
 	cran = "downlit"
-	version("0.4.2", sha256="33dff66909104d1a5ba8e57b1288986e82b61fd5e91dce0cd358d53724b37e3c")
 	version("0.4.3", md5="58fbf827a761ff8705006a1b4421975c")
+	version("0.4.2", sha256="33dff66909104d1a5ba8e57b1288986e82b61fd5e91dce0cd358d53724b37e3c")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-brio", type=("build", "run"))

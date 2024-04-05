@@ -15,6 +15,7 @@ class RLpcde(RPackage):
 	cran = "lpcde" 
 
 	version("0.1.3", md5="5bd5e1b10606314831c0f951a5a3a831")
+	version("0.1.1", md5="ccce545aace19b82fd1a2aa81163564a")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

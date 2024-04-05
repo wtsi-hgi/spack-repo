@@ -20,6 +20,7 @@ class RMlr3pipelines(RPackage):
 	cran = "mlr3pipelines" 
 
 	version("0.5.1", md5="41aad65420b2e83c6f2779463cf7c0de")
+	version("0.5.0-2", md5="c8e6820c8b7d39bcbbd1dde6980c7286")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-backports", type=("build", "run"))

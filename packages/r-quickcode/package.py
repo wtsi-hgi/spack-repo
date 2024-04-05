@@ -16,6 +16,7 @@ class RQuickcode(RPackage):
 	cran = "quickcode" 
 
 	version("0.7", md5="d2100bcce5afd2c49feda92df4172c50")
+	version("0.6", md5="c4b2bec37308a3f95273200f3a0aa3c9")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rstudioapi", type=("build", "run"))

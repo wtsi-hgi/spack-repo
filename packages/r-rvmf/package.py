@@ -17,6 +17,7 @@ Vectors
 	cran = "rvMF" 
 
 	version("0.1.0", md5="3f21ddacb9c3c8391674a134e8bacc28")
+	version("0.0.8", md5="2e089a1b07ecbf6efb859de05ab5adc9")
 
 	depends_on("r-bessel@0.6.0:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -21,6 +21,7 @@ class RXmpdf(RPackage):
 	cran = "xmpdf" 
 
 	version("0.2.1", md5="51ec3df11768643c08799a4e7b1a4c41")
+	version("0.1.4", md5="34905d3d997b80ee389404b65fdd6947")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-brio", type=("build", "run"))

@@ -18,4 +18,3 @@ class RCsawusersguide(RPackage):
 	version("1.18.0", md5="f5828e278ba1ebaac94b9c3ce1dc4545")
 
 
-	# workflow

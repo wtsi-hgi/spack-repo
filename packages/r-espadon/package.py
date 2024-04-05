@@ -16,6 +16,7 @@ class REspadon(RPackage):
 	cran = "espadon" 
 
 	version("1.6.0", md5="e76698cc4ea9bbc4080d875d8e70f8d2")
+	version("1.5.1", md5="6c16c08af57e2d4c87e4b4cc4f20ede4")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-colorspace", type=("build", "run"))

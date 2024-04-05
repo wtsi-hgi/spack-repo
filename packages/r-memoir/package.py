@@ -18,6 +18,7 @@ class RMemoir(RPackage):
 	cran = "memoiR" 
 
 	version("1.2-7", md5="c3c9d2201ad4a41dba6397d0234992a0")
+	version("1.2-4", md5="b65a3524626774398d0d24de5e1882cc")
 
 	depends_on("r-bookdown", type=("build", "run"))
 	depends_on("r-distill", type=("build", "run"))

@@ -20,6 +20,10 @@ class RHdf5array(RPackage):
 
 	bioc = "HDF5Array"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HDF5Array_1.30.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HDF5Array/HDF5Array_1.30.1.tar.gz"]
+	version("1.8.1", commit="3c9aa23d117bf489b6341708dc80c943bd1af11a")
+	version("1.6.0", commit="95f2f8d3648143abe9dc77c76340c5edf4114c82")
+	version("1.4.8", commit="79ab96d123c8da8f8ead81f678fe714c0958ff45")
+	version("1.30.1", md5="880ca20592c69a77a31650298a9c67bf")
 	version("1.28.0", commit="8c839417c4a37c35330bd6f02b79dda9f48e76ae")
 	version("1.26.0", commit="38b7bd603f7281245605048d8d57237e00b74d79")
 	version("1.24.2", commit="fb213ba36631b04dfe754705f701f3a015c4fc82")
@@ -28,10 +32,6 @@ class RHdf5array(RPackage):
 	version("1.18.0", commit="d5bd55d170cb384fdebdf60751e1e28483782caa")
 	version("1.12.3", commit="21c6077f3f789748a18f2e579110576c5522e975")
 	version("1.10.1", commit="0b8ae1dfb56e4203dd8e14781850370df46a5e2c")
-	version("1.8.1", commit="3c9aa23d117bf489b6341708dc80c943bd1af11a")
-	version("1.6.0", commit="95f2f8d3648143abe9dc77c76340c5edf4114c82")
-	version("1.4.8", commit="79ab96d123c8da8f8ead81f678fe714c0958ff45")
-	version("1.30.1", md5="880ca20592c69a77a31650298a9c67bf")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-delayedarray@0.27.2:", type=("build", "run"))

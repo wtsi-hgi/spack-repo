@@ -65,4 +65,3 @@ class RExphuntersuite(RPackage):
 	depends_on("r-factoinvestigate", type=("build", "run"))
 	depends_on("r-factominer", type=("build", "run"))
 
-	# workflow

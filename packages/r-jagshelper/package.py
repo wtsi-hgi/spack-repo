@@ -21,6 +21,7 @@ class RJagshelper(RPackage):
 	cran = "jagshelper" 
 
 	version("0.2.2", md5="7ae631d683e55723c7cd68d471eecb36")
+	version("0.2.1", md5="d26333cff2bac778672cc38e42373253")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-jagsui", type=("build", "run"))

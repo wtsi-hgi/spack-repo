@@ -14,8 +14,9 @@ class RBiogeom(RPackage):
 	
 	cran = "biogeom" 
 
-	version("1.4.2", md5="1c7f4aec1c749270690ed856441c24a4")
 	version("1.4.3", md5="664b86416de0727da27613845b008854")
+	version("1.4.2", md5="1c7f4aec1c749270690ed856441c24a4")
+	version("1.4.1", md5="b841226d467c7554ae6e11a19a3e8f8e")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-spatstat-geom@2.4.0:", type=("build", "run"))

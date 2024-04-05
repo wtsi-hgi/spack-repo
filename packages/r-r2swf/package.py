@@ -20,6 +20,7 @@ class RR2swf(RPackage):
 	cran = "R2SWF" 
 
 	version("0.9-9", md5="f478de254a18e3e53cfd33dd3fb1acb5")
+	version("0.9-8", md5="b3172e129b04d250657b8da4392f6b34")
 
 	depends_on("r-sysfonts", type=("build", "run"))
 	depends_on("zlib", type=("build", "link", "run"))

@@ -24,6 +24,7 @@ class RHbamr(RPackage):
 	cran = "hbamr" 
 
 	version("2.3.0", md5="8753551b95556e4306a569633a12c474")
+	version("2.2.0", md5="4918d3488105d9fe8c4e0bcbdec1ade9")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-colorspace", type=("build", "run"))

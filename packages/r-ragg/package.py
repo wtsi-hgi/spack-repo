@@ -15,10 +15,11 @@ class RRagg(RPackage):
 	'grDevices' package."""
 
 	cran = "ragg"
+	version("1.3.0", md5="dc546005cff17506bf712be3e7dbf610")
+	version("1.2.7", md5="b3552306bc07a827415f7c6fd1f9fc23")
 	version("1.2.5", sha256="936f4d75e0e01cdeefb9f57d121cdd7812d0de5a9e1a3a8315f92ce1c84da8f9")
 	version("1.2.4", sha256="c547e5636a2eefaa0021a0d50fad1e813c2ce976ec0c9c3f796d38a110680dcd")
 	version("1.2.3", sha256="976da0007ef0d4dbadda4734727b539671b65c1eff4ff392d734f4e2c846f2b2")
-	version("1.3.0", md5="dc546005cff17506bf712be3e7dbf610")
 
 	depends_on("r-systemfonts", type=("build", "run"))
 	depends_on("r-textshaping", type=("build", "run"))

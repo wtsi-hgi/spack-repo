@@ -22,5 +22,6 @@ class RMaketools(RPackage):
 	cran = "maketools" 
 
 	version("1.3.0", md5="0e2b318283c3454596cd193ad48735aa")
+	version("1.2.5", md5="a792501168e79214b43d1fde64f6920c")
 
 	depends_on("r-sys@3.1:", type=("build", "run"))

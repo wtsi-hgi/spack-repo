@@ -16,6 +16,7 @@ class RSimDiffproc(RPackage):
 	cran = "Sim.DiffProc" 
 
 	version("4.9", md5="0732efe881297332ac69ed83ca6dc151")
+	version("4.8", md5="758a1e7c73c035412c166bb877a14149")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-deriv@3.8:", type=("build", "run"))

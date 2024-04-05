@@ -17,6 +17,7 @@ class RGnn(RPackage):
 	cran = "gnn" 
 
 	version("0.0-4", md5="4a05521f72998556c64a4fcc36ebff38")
+	version("0.0-3", md5="0e14812c163ac5af493bd0d97f993e94")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-keras", type=("build", "run"))

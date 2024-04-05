@@ -14,6 +14,7 @@ class RGamm4(RPackage):
 
 	cran = "gamm4"
 	
+	version("0.2-6", sha256="57c5b66582b2adc32f6a3bb6a259f5b95198e283a96d966a6007e8e48b380c89")
 	version("0.2-6", md5="dff478c7c80f51c0356df39347fdf9f5", url="https://cran.r-project.org/src/contrib/gamm4_0.2-6.tar.gz")
 
 	depends_on("r@2.9:", type=("build", "run"))

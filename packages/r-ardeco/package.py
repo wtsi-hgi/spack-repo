@@ -25,6 +25,7 @@ class RArdeco(RPackage):
 	cran = "ARDECO" 
 
 	version("1.0.0", md5="3c88db24bfd35fbe16fc9aff44cfc338")
+	version("0.1.1", md5="6ef365956fdeadc46b77e41d33bb79c8")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

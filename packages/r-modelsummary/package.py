@@ -24,6 +24,7 @@ Beautiful, Customizable, and Publication-Ready
 	cran = "modelsummary" 
 
 	version("2.0.0", md5="5e5132c557949f99d2c4b7ac7c455129")
+	version("1.4.5", md5="6a6e2d64fd6fa0a596be08fbf7aec673")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-checkmate@2.3.1:", type=("build", "run"))

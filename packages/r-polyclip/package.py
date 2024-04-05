@@ -18,8 +18,8 @@ class RPolyclip(RPackage):
 	self-intersections from polygon data."""
 
 	cran = "polyclip"
+	version("1.10-6", md5="847eb50bb15aa4b2960d2b65227aab92")
 	version("1.10-4", sha256="84d2c9778771d3759b49d7d16fb54c8ddc5397da3b1d21074bc4aa42c02e6f56")
 	version("1.10-0", sha256="74dabc0dfe5a527114f0bb8f3d22f5d1ae694e6ea9345912909bae885525d34b")
-	version("1.10-6", md5="847eb50bb15aa4b2960d2b65227aab92")
 
 	depends_on("r@3:", type=("build", "run"))

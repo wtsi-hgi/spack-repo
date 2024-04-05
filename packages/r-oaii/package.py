@@ -17,6 +17,7 @@ class ROaii(RPackage):
 	cran = "oaii" 
 
 	version("0.5.0", md5="49eafdff63bf2ed8663caf2a6f58c1fb")
+	version("0.4.0", md5="73b0760bd59043f0bb2bbe516b138779")
 
 	depends_on("r-base64enc", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

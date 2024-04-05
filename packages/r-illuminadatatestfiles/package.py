@@ -18,4 +18,3 @@ class RIlluminadatatestfiles(RPackage):
 	version("1.40.0", md5="3afa4b143fbb1dd18b3a7acd8f2984b1")
 
 
-	# experiment

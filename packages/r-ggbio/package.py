@@ -21,6 +21,7 @@ class RGgbio(RPackage):
 
 	bioc = "ggbio"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggbio_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggbio/ggbio_1.50.0.tar.gz"]
+	version("1.50.0", md5="de7ec73480f41c35fca2a8a758fbc7d0")
 	version("1.48.0", commit="fd4ebca44151e8f8e20ad2a38292398a3a4bb948")
 	version("1.46.0", commit="d9c6cb495c7268bcaaab141231a9038aec8498bc")
 	version("1.44.1", commit="0301d9464e304a8113ea4479185cd358855ca365")
@@ -32,7 +33,6 @@ class RGgbio(RPackage):
 	version("1.28.5", commit="594521ca556ef7d97cf4882ecfa54d22c2a2faba")
 	version("1.26.1", commit="b4f4c898c92aa1082aa7574f1e5c2a0dae943fbc")
 	version("1.24.1", commit="ef04c1bca1330f37152bcc21080cbde94849a094")
-	version("1.50.0", md5="de7ec73480f41c35fca2a8a758fbc7d0")
 
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-ggplot2@1:", type=("build", "run"))

@@ -21,4 +21,5 @@ class RNaivebayes(RPackage):
 	cran = "naivebayes" 
 
 	version("1.0.0", md5="2786829c31702b6e7ded8f7cb74452e8")
+	version("0.9.7", md5="7f3467dcef693166e74c96ecd1b85d46")
 

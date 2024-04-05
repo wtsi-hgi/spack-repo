@@ -21,6 +21,7 @@ class RSdmtmb(RPackage):
 	cran = "sdmTMB" 
 
 	version("0.4.3", md5="1c6a93700a96dce2452d59706b3bfbfe")
+	version("0.4.2", md5="8a6e96a565e3d1ed286756500e9e91b8")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

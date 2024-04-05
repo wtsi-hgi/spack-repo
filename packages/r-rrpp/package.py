@@ -24,6 +24,7 @@ class RRrpp(RPackage):
 	fields, as well."""
 
 	cran = "RRPP"
+	version("2.0.0", md5="d434418b16fe09fb649960570aed88c1")
 	version("1.3.1", sha256="50c7d4b20fb84088b0440c2f55ed146bcb35b0d9dda8581dca28e30b2fecbcd5")
 	version("1.2.3", sha256="6eee638af94d69d4dd471a5e01243622dedef3c0c95b3363e21e8e11f0ea564c")
 	version("1.1.2", sha256="2b563f3db9e349abe481444f48a1a3e6bc1154de8259b7a7060ab588287e80c0")
@@ -31,7 +32,6 @@ class RRrpp(RPackage):
 	version("0.4.2", sha256="21a4ebb549d21f66ee9107adf762eee630e478bc740f232f384ba1a6b1cd3bf4")
 	version("0.4.1", sha256="d7cd3b089240d7f7e13f65f0259487669a378ffae062aee33d4dc6ab0f86f899")
 	version("0.3.0", sha256="34fea6ce7a78e4f38398d3b99585bab11a8171bc8b9a4e461b6d984ed1373739")
-	version("2.0.0", md5="d434418b16fe09fb649960570aed88c1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

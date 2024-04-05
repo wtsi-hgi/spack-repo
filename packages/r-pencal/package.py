@@ -21,6 +21,7 @@ Prediction of Survival
 	cran = "pencal" 
 
 	version("2.2.1", md5="0c3a941629e71a6a4f00acc5fe67059d")
+	version("2.1.1", md5="d3e0fe0660c13c750027b8246009554a")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

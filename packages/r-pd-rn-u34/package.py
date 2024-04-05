@@ -15,6 +15,7 @@ class RPdRnU34(RPackage):
 	bioc = "pd.rn.u34" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rn.u34_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rn.u34/pd.rn.u34_3.12.0.tar.gz"]
 
+	version("3.12.0", md5="1728c547f1383bffab330796505119ec", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.rn.u34_3.12.0.tar.gz")
 	version("3.12.0", md5="1728c547f1383bffab330796505119ec", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rn.u34_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
@@ -26,4 +27,3 @@ class RPdRnU34(RPackage):
 	depends_on("r-iranges@2.1.43:", type=("build", "run"))
 	depends_on("r-s4vectors@0.5.22:", type=("build", "run"))
 
-	# annotation

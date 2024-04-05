@@ -15,8 +15,8 @@ class RFgarch(RPackage):
 	homepage = "https://geobosh.github.io/fGarchDoc/"
 	cran = "fGarch" 
 
-	version("4032.91", md5="ca15ab94fce373d17770107377efe8f8")
 	version("4033.92", md5="c61344e53fcc68b80936d7b46d376a44")
+	version("4032.91", md5="ca15ab94fce373d17770107377efe8f8")
 
 	depends_on("r-fbasics", type=("build", "run"))
 	depends_on("r-timedate", type=("build", "run"))

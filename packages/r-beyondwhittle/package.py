@@ -15,6 +15,7 @@ class RBeyondwhittle(RPackage):
 	cran = "beyondWhittle" 
 
 	version("1.2.1", md5="2e27140a99e13950dbaa55c168243ec9")
+	version("1.2.0", md5="3fa631fa766f3a5c02a7c60e6f416ebd")
 
 	depends_on("r-ltsa@1.4.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

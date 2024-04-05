@@ -21,6 +21,7 @@ Applications
 	cran = "lidR" 
 
 	version("4.1.1", md5="43e13818a1288dab4b8c1f8abf02fc5f")
+	version("4.1.0", md5="9d3c35d4185c68169faef58c09c37f2e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-classint", type=("build", "run"))

@@ -16,4 +16,5 @@ class RLogger(RPackage):
 	cran = "logger" 
 
 	version("0.3.0", md5="ffd57ef28ef487d204e18c0b72ed45ae")
+	version("0.2.2", md5="379ee674e7ca9aa384e01a338aaf1322")
 

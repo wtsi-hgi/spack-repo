@@ -16,6 +16,7 @@ class RGdatools(RPackage):
 	cran = "GDAtools" 
 
 	version("2.1", md5="fe4ec38d17884eb93d3d1e3b3e7eda3b")
+	version("2.0.1", md5="7a7d785ac69524a43ef76335542c9ec2")
 
 	depends_on("r-descriptio@1.2:", type=("build", "run"))
 	depends_on("r-factominer", type=("build", "run"))

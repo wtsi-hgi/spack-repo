@@ -21,6 +21,7 @@ class RBlastula(RPackage):
 	cran = "blastula" 
 
 	version("0.3.5", md5="c81fa26cabb15e01b9c7e1346802cb6e")
+	version("0.3.4", md5="daccccb2e48814c2c049391a9254b327")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-base64enc@0.1.3:", type=("build", "run"))

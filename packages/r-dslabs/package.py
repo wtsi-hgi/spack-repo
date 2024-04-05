@@ -15,6 +15,7 @@ class RDslabs(RPackage):
 	cran = "dslabs" 
 
 	version("0.8.0", md5="31824b3df1dc07ba34e838ff97172ebb")
+	version("0.7.6", md5="be10796eee7eba6d4818b6557e7f7fb2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

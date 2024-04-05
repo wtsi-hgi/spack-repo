@@ -18,4 +18,3 @@ class RCopdsexualdimorphismData(RPackage):
 	version("1.38.0", md5="d7cf1990679c90cbaf5250c4761effec")
 
 
-	# experiment

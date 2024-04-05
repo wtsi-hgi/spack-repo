@@ -17,6 +17,7 @@ class RDreamlet(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dreamlet_1.0.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dreamlet/dreamlet_1.0.3.tar.gz"]
 
 	version("1.0.3", md5="3a4a1fc72e6beb904ce6834be0fd4af1")
+	version("1.0.0", md5="34ea1ec9e44c635699ed9cf8deed29cd")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-variancepartition@1.32.3:", type=("build", "run"))

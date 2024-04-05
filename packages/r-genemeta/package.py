@@ -14,6 +14,7 @@ class RGenemeta(RPackage):
 
 	bioc = "GeneMeta"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneMeta_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneMeta/GeneMeta_1.74.0.tar.gz"]
+	version("1.74.0", md5="9d9d2d3dff0ee8a497ac86b5ef8ddac7")
 	version("1.72.0", commit="1cb047172f54c12c5dc5a9b39358ea04cbeff8a2")
 	version("1.70.0", commit="e5db82e04efc4572358abce7e0c09273f94c9d72")
 	version("1.68.0", commit="4213c0205d477660195300a0aa9751972f86bf91")
@@ -24,7 +25,6 @@ class RGenemeta(RPackage):
 	version("1.52.0", commit="1f21759984a5852c42a19e89ee53ffd72053d49c")
 	version("1.50.0", commit="0f8603653285698ed451fcbf536a4b3f90015f92")
 	version("1.48.0", commit="68c65304d37f5a4722cf4c25afb23214c3a2f4c8")
-	version("1.74.0", md5="9d9d2d3dff0ee8a497ac86b5ef8ddac7")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

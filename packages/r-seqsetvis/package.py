@@ -16,6 +16,7 @@ class RSeqsetvis(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqsetvis_1.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqsetvis/seqsetvis_1.22.1.tar.gz"]
 
 	version("1.22.1", md5="c94f5cbfa681565cc50af26c493aa70e")
+	version("1.22.0", md5="0119c8a5e2475e3a0d35059b3c35dfd6")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

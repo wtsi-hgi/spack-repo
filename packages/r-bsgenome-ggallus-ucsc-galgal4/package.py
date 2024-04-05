@@ -15,8 +15,8 @@ class RBsgenomeGgallusUcscGalgal4(RPackage):
 	bioc = "BSgenome.Ggallus.UCSC.galGal4" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Ggallus.UCSC.galGal4_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Ggallus.UCSC.galGal4/BSgenome.Ggallus.UCSC.galGal4_1.4.0.tar.gz"]
 
+	version("1.4.0", md5="c2cb4bfc39db93c060e78d8d12542c11", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Ggallus.UCSC.galGal4_1.4.0.tar.gz")
 	version("1.4.0", md5="c2cb4bfc39db93c060e78d8d12542c11", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Ggallus.UCSC.galGal4_1.4.0.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 
-	# annotation

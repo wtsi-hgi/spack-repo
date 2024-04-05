@@ -16,6 +16,7 @@ class RScoringtools(RPackage):
 	cran = "scoringTools" 
 
 	version("0.1.3", md5="29180bed4a3092c61980bced10bff8aa")
+	version("0.1.2", md5="b2a3ebd674433f166ecf1b754b947dcc")
 
 	depends_on("r-discretization", type=("build", "run"))
 	depends_on("r-sqldf", type=("build", "run"))

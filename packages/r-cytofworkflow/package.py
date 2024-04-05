@@ -28,4 +28,3 @@ class RCytofworkflow(RPackage):
 	depends_on("r-uwot", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))
 
-	# workflow

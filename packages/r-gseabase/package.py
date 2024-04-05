@@ -14,6 +14,7 @@ class RGseabase(RPackage):
 
 	bioc = "GSEABase"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSEABase_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSEABase/GSEABase_1.64.0.tar.gz"]
+	version("1.64.0", md5="a9d4d48654c9a05cdec2f09f8f805c4e")
 	version("1.62.0", commit="fc20cbcd85da0202eb0f2316dcf63f6fb1372b3e")
 	version("1.60.0", commit="aae4e52b50b076550967601f98031e952fb97765")
 	version("1.58.0", commit="7de04442fb1ab63ffde29f4e3daf13ad32e90bdb")
@@ -24,7 +25,6 @@ class RGseabase(RPackage):
 	version("1.42.0", commit="5e40ce0fdd4dc0cff7601b169bbf6aa1430ae33e")
 	version("1.40.1", commit="3e5441708b80aab2c9642988bee709d5732831a6")
 	version("1.38.2", commit="84c9f10c316163118ca990900a7a67555b96e75b")
-	version("1.64.0", md5="a9d4d48654c9a05cdec2f09f8f805c4e")
 
 	depends_on("r@2.6:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.13.8:", type=("build", "run"))

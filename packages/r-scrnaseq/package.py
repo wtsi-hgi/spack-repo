@@ -28,4 +28,3 @@ class RScrnaseq(RPackage):
 	depends_on("r-ensembldb", type=("build", "run"))
 	depends_on("r-genomicfeatures", type=("build", "run"))
 
-	# experiment

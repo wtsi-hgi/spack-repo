@@ -15,8 +15,8 @@ class RCito(RPackage):
 	homepage = "https://citoverse.github.io/cito/"
 	cran = "cito" 
 
-	version("1.0.2", md5="7b48f67506c33fe27fe75ee09d2f9fcd")
 	version("1.1", md5="f672d8eca063d2adb88d36f1a8e211b1")
+	version("1.0.2", md5="7b48f67506c33fe27fe75ee09d2f9fcd")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-coro", type=("build", "run"))

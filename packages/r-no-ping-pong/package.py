@@ -24,6 +24,7 @@ class RNoPingPong(RPackage):
 	cran = "NO.PING.PONG" 
 
 	version("0.1.8.7", md5="a5ce894a6023e4acd2ad0c49ce2cce79")
+	version("0.1.6", md5="5d85e82bbd89f0c779fc1638563cf62c")
 
 	depends_on("r-metafor", type=("build", "run"))
 	depends_on("r-mcmcglmm", type=("build", "run"))

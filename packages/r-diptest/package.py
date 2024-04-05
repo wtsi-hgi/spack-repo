@@ -14,7 +14,7 @@ class RDiptest(RPackage):
 	code has been corrected."""
 
 	cran = "diptest"
+	version("0.77-0", md5="f7229b4ba1ca5ad70d996ce984329d73")
 	version("0.76-0", sha256="508a5ebb161519cd0fcd156dc047b51becb216d545d62c6522496463f94ec280")
 	version("0.75-7", sha256="462900100ca598ef21dbe566bf1ab2ce7c49cdeab6b7a600a50489b05f61b61b")
-	version("0.77-0", md5="f7229b4ba1ca5ad70d996ce984329d73")
 

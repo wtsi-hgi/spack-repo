@@ -15,5 +15,6 @@ class RGpumatrix(RPackage):
 	cran = "GPUmatrix" 
 
 	version("1.0.2", md5="42846ecddd29ab2f88cc6aa1d5abaf06")
+	version("1.0.1", md5="8ced8f02fc2afb65b8b16d381702a62f")
 
 	depends_on("r@4.1:", type=("build", "run"))

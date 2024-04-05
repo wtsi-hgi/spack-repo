@@ -21,4 +21,3 @@ class RPrecisetadhub(RPackage):
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))
 
-	# experiment

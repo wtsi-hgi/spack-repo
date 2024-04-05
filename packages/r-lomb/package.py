@@ -15,6 +15,7 @@ class RLomb(RPackage):
 	cran = "lomb" 
 
 	version("2.5.0", md5="2edb3c018b31098ce16f4316ea459636")
+	version("2.2.0", md5="bdb906cbcaaa7d2f1307818f5365dec7")
 
 	depends_on("r@3.50:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

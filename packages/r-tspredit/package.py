@@ -16,6 +16,7 @@ class RTspredit(RPackage):
 	cran = "tspredit" 
 
 	version("1.0.767", md5="f0284fe22b99a79990b333a4fa2184ef")
+	version("1.0.747", md5="52696139e4e6251c264da1092587fc48")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

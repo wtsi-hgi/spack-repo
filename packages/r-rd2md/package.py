@@ -19,5 +19,6 @@ class RRd2md(RPackage):
 	cran = "Rd2md" 
 
 	version("1.0.0", md5="41c6e2449feeed27dd05515b799f69c1")
+	version("0.0.5", md5="21b07b26cf460352767e17759a0690d8")
 
 	depends_on("r@3.6:", type=("build", "run"))

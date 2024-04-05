@@ -20,4 +20,3 @@ class RCellmapperdata(RPackage):
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-cellmapper", type=("build", "run"))
 
-	# experiment

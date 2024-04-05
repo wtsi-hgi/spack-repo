@@ -15,6 +15,7 @@ class RMoodlequizr(RPackage):
 	cran = "moodlequizR" 
 
 	version("2.1.0", md5="28a72cd5fb1b2f7cc27423372aece0c8")
+	version("1.0.3", md5="bad6895bc26beae994975a4d7d667bf6")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-base64", type=("build", "run"))

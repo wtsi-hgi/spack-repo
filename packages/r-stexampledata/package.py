@@ -17,8 +17,8 @@ class RStexampledata(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/STexampleData_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/STexampleData/STexampleData_1.10.1.tar.gz"]
 
 	version("1.10.1", md5="99518bc21109a50be767898bfc7d904b")
+	version("1.10.0", md5="5fa4bfb2e58e7f6bbcd957aa1aa7e938")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-spatialexperiment", type=("build", "run"))
 
-	# experiment

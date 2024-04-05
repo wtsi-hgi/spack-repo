@@ -18,8 +18,9 @@ class RCensobr(RPackage):
 	homepage = "https://github.com/ipeaGIT/censobr"
 	cran = "censobr" 
 
-	version("0.3.1", md5="9d3701f5210610e5bcee0b8990750ca2")
 	version("0.3.2", md5="edccbd644cf54e38b7b4dc986a7740da")
+	version("0.3.1", md5="9d3701f5210610e5bcee0b8990750ca2")
+	version("0.3.0", md5="357f64c1d3425950f9338aa0f83e26a9")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-arrow", type=("build", "run"))

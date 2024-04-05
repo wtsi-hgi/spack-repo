@@ -27,4 +27,3 @@ class RRnainteractmapk(RPackage):
 	depends_on("r-lattice", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))
 
-	# experiment

@@ -22,6 +22,7 @@ class RPak(RPackage):
 	cran = "pak" 
 
 	version("0.7.2", md5="b90bf9353c390d36f8d0ff9a58188a3c")
+	version("0.7.1", md5="9eddae8f9345c4e5ad3a9692be09e6f8")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("curl", type=("build", "link", "run"))

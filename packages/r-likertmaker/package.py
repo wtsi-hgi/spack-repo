@@ -19,6 +19,7 @@ class RLikertmaker(RPackage):
 	cran = "LikertMakeR" 
 
 	version("0.2.0", md5="7a385fb5d33847b266805c0ec5fcdcba")
+	version("0.1.5", md5="43d5cbce23011073f490aedee6cb0917")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -23,4 +23,3 @@ class RCctutorial(RPackage):
 	depends_on("r-topgo@1.13.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))
 
-	# experiment

@@ -21,4 +21,3 @@ class RAhensdbs(RPackage):
 	depends_on("r-ensembldb@1.99.10:", type=("build", "run"))
 	depends_on("r-annotationhubdata@1.5.24:", type=("build", "run"))
 
-	# annotation

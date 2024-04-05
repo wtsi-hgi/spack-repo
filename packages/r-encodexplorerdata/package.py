@@ -22,4 +22,3 @@ class REncodexplorerdata(RPackage):
 	depends_on("r-rcurl", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
 
-	# annotation

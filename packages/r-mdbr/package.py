@@ -19,5 +19,6 @@ class RMdbr(RPackage):
 	cran = "mdbr" 
 
 	version("0.2.1", md5="d89f0723f713af324b7feb0aa2229771")
+	version("0.1.2", md5="33c5369741dcb004ca3dd1aa550d7d04")
 
 	depends_on("r-readr", type=("build", "run"))

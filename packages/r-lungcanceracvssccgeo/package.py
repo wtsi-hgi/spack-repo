@@ -20,4 +20,3 @@ class RLungcanceracvssccgeo(RPackage):
 
 	depends_on("r@2.15:", type=("build", "run"))
 
-	# experiment

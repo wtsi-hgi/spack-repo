@@ -15,8 +15,8 @@ class RBioregion(RPackage):
 	homepage = "https://github.com/bioRgeo/bioregion"
 	cran = "bioregion" 
 
-	version("1.0.0", md5="7401daff7bd87109da191f2d1f80b418")
 	version("1.1.0", md5="d248e1254d9ec4df4ac0f32e00afb8cf")
+	version("1.0.0", md5="7401daff7bd87109da191f2d1f80b418")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

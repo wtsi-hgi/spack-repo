@@ -19,4 +19,3 @@ class RMarinerdata(RPackage):
 
 	depends_on("r-experimenthub", type=("build", "run"))
 
-	# experiment

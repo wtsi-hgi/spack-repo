@@ -20,6 +20,7 @@ Access Using 'duckdb'
 	cran = "duckdbfs" 
 
 	version("0.0.4", md5="30b4da920ef74b18f984ce4225d3faf8")
+	version("0.0.3", md5="5e309df740c691dde152c44980570a49")
 
 	depends_on("r-dbi", type=("build", "run"))
 	depends_on("r-dbplyr", type=("build", "run"))

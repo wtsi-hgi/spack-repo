@@ -18,6 +18,7 @@ class RQrmtools(RPackage):
 	cran = "qrmtools" 
 
 	version("0.0-17", md5="46d953e3db4bb23e3d96c2cd7b221931")
+	version("0.0-16", md5="cc883a71e16ba4c494bef70d47e8ae1b")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))

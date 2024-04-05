@@ -16,6 +16,7 @@ class RMcp(RPackage):
 	cran = "mcp" 
 
 	version("0.3.4", md5="4a5dbc703f403586ed6ce2bf75f1dad5")
+	version("0.3.3", md5="8f9d53ac0249a20dfaab9c102b64983c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-future@1.16:", type=("build", "run"))

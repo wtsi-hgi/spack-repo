@@ -16,8 +16,8 @@ class RBigrquerystorage(RPackage):
 	homepage = "https://github.com/meztez/bigrquerystorage"
 	cran = "bigrquerystorage" 
 
-	version("1.0.0", md5="f9d70806e386e18cfea1ba86de943106")
 	version("1.1.0", md5="802c8d8fec57d3fabc47072eec69d232")
+	version("1.0.0", md5="f9d70806e386e18cfea1ba86de943106")
 
 	depends_on("r-arrow", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

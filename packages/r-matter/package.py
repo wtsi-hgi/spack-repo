@@ -17,6 +17,7 @@ class RMatter(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/matter_2.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/matter/matter_2.4.1.tar.gz"]
 
 	version("2.4.1", md5="4a5b7c1e6fe7d58bafb2dbc1ca31b2b7")
+	version("2.4.0", md5="08919bc0df5442e0916ee7cffbc23003")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

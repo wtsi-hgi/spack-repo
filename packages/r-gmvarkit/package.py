@@ -23,6 +23,7 @@ Models
 	cran = "gmvarkit" 
 
 	version("2.1.2", md5="c2a47c9258cb73f8b4cfa114abbf9c16")
+	version("2.1.1", md5="cfa64d1c144f53c3366fece515778d62")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-brobdingnag@1.2.4:", type=("build", "run"))

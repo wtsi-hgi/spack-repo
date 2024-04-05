@@ -15,6 +15,7 @@ class RMmdiff2(RPackage):
 	bioc = "MMDiff2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MMDiff2_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MMDiff2/MMDiff2_1.30.0.tar.gz"]
 
+	version("1.30.0", md5="6d14e03f2d5842c403a50c41f30c82d1", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/MMDiff2_1.30.0.tar.gz")
 	version("1.30.0", md5="6d14e03f2d5842c403a50c41f30c82d1", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MMDiff2_1.30.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))

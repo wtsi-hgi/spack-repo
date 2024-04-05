@@ -27,4 +27,3 @@ class RHibed(RPackage):
 	depends_on("r-annotationhub", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 
-	# experiment

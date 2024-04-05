@@ -21,6 +21,7 @@ class ROfficer(RPackage):
 	cran = "officer" 
 
 	version("0.6.5", md5="439524d706d798240f5dc162aa5ca075")
+	version("0.6.4", md5="8fa99e32c020039b0c9fa6dc32aac998")
 
 	depends_on("r-zip@2.1:", type=("build", "run"))
 	depends_on("r-xml2@1.1:", type=("build", "run"))

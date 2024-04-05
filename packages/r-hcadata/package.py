@@ -24,4 +24,3 @@ class RHcadata(RPackage):
 	depends_on("r-annotationhub", type=("build", "run"))
 	depends_on("r-hdf5array", type=("build", "run"))
 
-	# experiment

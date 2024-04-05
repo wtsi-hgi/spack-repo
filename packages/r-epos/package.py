@@ -15,8 +15,8 @@ class REpos(RPackage):
 	homepage = "https://github.com/bernd-mueller/epos"
 	cran = "epos" 
 
-	version("1.0", md5="2720b541b780dc022e54edd1ef2c0ba5")
 	version("1.1", md5="f1c24c4c4c6b3af4a025200173506a66")
+	version("1.0", md5="2720b541b780dc022e54edd1ef2c0ba5")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-hash", type=("build", "run"))

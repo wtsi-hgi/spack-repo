@@ -15,6 +15,7 @@ class RAides(RPackage):
 	cran = "aides" 
 
 	version("1.3.2", md5="09fa0d9c651d3ecbffa3d9c85fd86b57")
+	version("1.3.1", md5="8e08b120adeb7ceaa610301915d0492e")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-boot", type=("build", "run"))

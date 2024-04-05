@@ -21,6 +21,7 @@ class RJmvreadwrite(RPackage):
 	cran = "jmvReadWrite" 
 
 	version("0.4.4", md5="deb2cbaf63886e201f86ba366ca87771")
+	version("0.4.2", md5="e931d015d6e5e6112e031cf22a29e09b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

@@ -14,9 +14,9 @@ class RStars(RPackage):
 	'NetCDF' bindings by 'ncmeta' and 'RNetCDF'."""
 
 	cran = "stars"
+	version("0.6-4", md5="396cf91eb8e8d9c10ffeddd0cb85e1da")
 	version("0.6-1", sha256="1f78db3adab9ebbfc9d98c6cc592708d893b5d7fd7fd876af454042ef42204a7")
 	version("0.5-6", sha256="e0413c95423635f7f7b2520813382e911257da8ace9b743da9fe3eab568a9461")
-	version("0.6-4", md5="396cf91eb8e8d9c10ffeddd0cb85e1da")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))

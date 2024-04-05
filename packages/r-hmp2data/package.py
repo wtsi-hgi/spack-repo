@@ -33,4 +33,3 @@ class RHmp2data(RPackage):
 	depends_on("r-multiassayexperiment", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
 
-	# experiment

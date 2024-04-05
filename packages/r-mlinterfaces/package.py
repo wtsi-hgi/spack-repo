@@ -15,6 +15,7 @@ class RMlinterfaces(RPackage):
 
 	bioc = "MLInterfaces"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MLInterfaces_1.82.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MLInterfaces/MLInterfaces_1.82.0.tar.gz"]
+	version("1.82.0", md5="acb5f91abaa05ef8c6b156b2cc7df846")
 	version("1.80.0", commit="275f8d39f05c46ab3ab7096d1e0539a33bab3a54")
 	version("1.78.0", commit="0988b95d282a6bffe56b7df4da2e23485e96d12c")
 	version("1.76.0", commit="935323d8ce1e4bbf41844a1f9b6c946c5a30c673")
@@ -25,7 +26,6 @@ class RMlinterfaces(RPackage):
 	version("1.60.1", commit="019e9ed44923e5d845a4800246aa044ddd59d548")
 	version("1.58.1", commit="4e2b5efa019fcb677dc82a58a1668c8a00cdfe07")
 	version("1.56.0", commit="31fe6fb20d859fcb01d5552f42bca6bab16cc67f")
-	version("1.82.0", md5="acb5f91abaa05ef8c6b156b2cc7df846")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

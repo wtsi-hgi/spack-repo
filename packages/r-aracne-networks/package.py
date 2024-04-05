@@ -20,4 +20,3 @@ class RAracneNetworks(RPackage):
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-viper", type=("build", "run"))
 
-	# experiment

@@ -15,6 +15,7 @@ class RStepreg(RPackage):
 	cran = "StepReg" 
 
 	version("1.5.0", md5="c36b7a877e5b5dc7978db815098472a7")
+	version("1.4.4", md5="8c7addbe6ab1eec8e69a955975fdb83b")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

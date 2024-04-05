@@ -17,6 +17,7 @@ Models
 	cran = "gpboost" 
 
 	version("1.3.1", md5="9f4793c815f74a158681e5a5c92f89b4")
+	version("1.2.9", md5="27b63adaa49dcdfd7f7c43f3d97f9608")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-r6@2:", type=("build", "run"))

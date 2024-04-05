@@ -19,6 +19,7 @@ class RMlflow(RPackage):
 	cran = "mlflow" 
 
 	version("2.11.1", md5="7ce56dca711af56912f1a3e568533392")
+	version("2.10.2", md5="bec771c75bb3b4f2744d4ecec298c152")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-base64enc", type=("build", "run"))

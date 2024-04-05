@@ -15,6 +15,7 @@ class RMicrobiomestat(RPackage):
 	cran = "MicrobiomeStat" 
 
 	version("1.2", md5="5af3b2fd4cbb44471678703b43193d84")
+	version("1.1", md5="e463de42620bebe5a007bad035b20792")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

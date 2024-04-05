@@ -15,8 +15,9 @@ class RCrandep(RPackage):
 	homepage = "https://github.com/clement-lee/crandep"
 	cran = "crandep" 
 
-	version("0.3.6", md5="38999dff4fc872b9f7a0c7a10f755b1c")
 	version("0.3.7", md5="54275879dc48016d3ff4af431ce4eae0")
+	version("0.3.6", md5="38999dff4fc872b9f7a0c7a10f755b1c")
+	version("0.3.5", md5="11d814ced7eee45b7523c65a919dae0b")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))

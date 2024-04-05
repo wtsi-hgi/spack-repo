@@ -16,6 +16,7 @@ class RJsmodule(RPackage):
 	cran = "jsmodule" 
 
 	version("1.5.2", md5="fe3bca572fa03f05c5d46c54f7179e3e")
+	version("1.5.0", md5="329934e6f4316948c95ade3cc4cbd591")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

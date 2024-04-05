@@ -23,6 +23,7 @@ class RBayesdfa(RPackage):
 	cran = "bayesdfa" 
 
 	version("1.3.3", md5="fab76609875a5d2454b9bf4b49c0d998")
+	version("1.3.2", md5="72bb6ea599e3bda53de3bc99a89af0fc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -22,6 +22,7 @@ class RRuimtehol(RPackage):
 	cran = "ruimtehol" 
 
 	version("0.3.2", md5="251c35623367f1fd7ce8658fec18f272")
+	version("0.3.1", md5="ca4db30cb6f9b2489302c102c45f5a9b")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

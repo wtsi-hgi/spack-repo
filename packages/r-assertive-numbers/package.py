@@ -16,6 +16,7 @@ class RAssertiveNumbers(RPackage):
 
 	cran = "assertive.numbers"
 
+	version("0.0-2", sha256="bae18c0b9e5b960a20636e127eb738ecd8a266e5fc29d8bc5ca712498cd68349")
 	version("0.0-2", md5="94eead383227d15353b9629305c7269a")
 
 	depends_on("r@3:", type=("build", "run"))

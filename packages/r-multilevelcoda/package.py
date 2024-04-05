@@ -20,6 +20,7 @@ class RMultilevelcoda(RPackage):
 	cran = "multilevelcoda" 
 
 	version("1.2.3", md5="0c7d48b04fb2e486787767ff5fa34823")
+	version("1.2.1", md5="ea03dd8651e19bc683ff615568d646d5")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-data-table@1.12:", type=("build", "run"))

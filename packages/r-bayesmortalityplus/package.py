@@ -15,6 +15,7 @@ class RBayesmortalityplus(RPackage):
 	cran = "BayesMortalityPlus" 
 
 	version("0.2.3", md5="f9969fcd2bb3f5134a6c9de290940ff8")
+	version("0.2.2", md5="5e0c438631fc083eca8eeecc68102b79")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

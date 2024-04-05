@@ -20,6 +20,7 @@ class RUsmapdata(RPackage):
 	cran = "usmapdata" 
 
 	version("0.2.2", md5="d2b75204a3e71f717b4dbd75528bb41f")
+	version("0.2.1", md5="0b0853a0e0805ab6aa3e8eac91895ad0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

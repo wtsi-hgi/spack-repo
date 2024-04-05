@@ -16,6 +16,7 @@ class RTopr(RPackage):
 	cran = "topr" 
 
 	version("2.0.1", md5="84c7f8ec3547f55ef31c3b0a82a90f35")
+	version("2.0.0", md5="fbad4c3ac65ca75ad38e5ac06977324c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2@3.3.2:", type=("build", "run"))

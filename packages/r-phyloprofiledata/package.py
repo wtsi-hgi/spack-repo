@@ -23,4 +23,3 @@ class RPhyloprofiledata(RPackage):
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-biocstyle", type=("build", "run"))
 
-	# experiment

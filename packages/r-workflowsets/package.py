@@ -21,6 +21,7 @@ class RWorkflowsets(RPackage):
 	cran = "workflowsets" 
 
 	version("1.1.0", md5="7b34448c75c79c386e702a3e0ea1385b")
+	version("1.0.1", md5="1e4232d732df17e7634ea12e8e124bbf")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

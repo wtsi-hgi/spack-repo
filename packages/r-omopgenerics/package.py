@@ -18,6 +18,7 @@ class ROmopgenerics(RPackage):
 	cran = "omopgenerics" 
 
 	version("0.1.2", md5="6cd73751a1d608aa5d31862497eee25c")
+	version("0.0.2", md5="366af0ff6c2b6280f2ed878ed9e58d0d")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

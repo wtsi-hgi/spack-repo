@@ -20,6 +20,7 @@ class RTablet(RPackage):
 	cran = "tablet" 
 
 	version("0.6.8", md5="6b2b4b5c79916d9cd49dea223a1fec23")
+	version("0.6.5", md5="1d903d378abacb530e4bced5a60b5a0a")
 
 	depends_on("r-dplyr@1.0.2:", type=("build", "run"))
 	depends_on("r-yamlet@0.10.21:", type=("build", "run"))

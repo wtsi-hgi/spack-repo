@@ -15,8 +15,8 @@ class RDmai(RPackage):
 	homepage = "https://github.com/myaseen208/dmai/"
 	cran = "dmai" 
 
-	version("0.4.0", md5="e147cce13ab232a7a93bce5792c4ff0f")
 	version("0.5.0", md5="00314a120b4415e274dd3e9d25c24e22")
+	version("0.4.0", md5="e147cce13ab232a7a93bce5792c4ff0f")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

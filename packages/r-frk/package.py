@@ -16,6 +16,7 @@ class RFrk(RPackage):
 	cran = "FRK" 
 
 	version("2.2.3", md5="d4184c8410bfc35b14b0bd67c0c3e205")
+	version("2.2.1", md5="46487cb310e798200e66e1432c0b8834")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))

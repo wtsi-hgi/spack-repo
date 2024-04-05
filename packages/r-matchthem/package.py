@@ -16,6 +16,7 @@ class RMatchthem(RPackage):
 	cran = "MatchThem" 
 
 	version("1.2.1", md5="b7b5792db5a1585aa4ebbb0e69612d5a")
+	version("1.1.0", md5="7cf21fd7a24ae067ade47454c3d0b7e5")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-matchit@4:", type=("build", "run"))

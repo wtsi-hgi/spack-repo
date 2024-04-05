@@ -20,6 +20,7 @@ class RRcmdrpluginNmbu(RPackage):
 	cran = "RcmdrPlugin.NMBU" 
 
 	version("1.8.15", md5="45821baf291a4f8a35e0effbe6f54d7f")
+	version("1.8.14", md5="1faa330a779aa776255ef29748bca50c")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-mixlm@1.2.3:", type=("build", "run"))

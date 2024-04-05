@@ -17,6 +17,7 @@ class RGmcp(RPackage):
 	cran = "gMCP" 
 
 	version("0.8-17", md5="00f9c2c8e9b039a7f16ab35c58efe6a4")
+	version("0.8-16", md5="ad150929e7932c515fae1c64d56334b5")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

@@ -25,6 +25,6 @@ class RDatetimeutils(RPackage):
 	homepage = "http://enricoschumann.net/R/packages/datetimeutils/"
 	cran = "datetimeutils" 
 
-	version("0.6-3", md5="057ff0476d6a96d6b4c6b090e8e4dc0b")
 	version("0.6-4", md5="db51e1591434d373df4e0b18985b3c5e")
+	version("0.6-3", md5="057ff0476d6a96d6b4c6b090e8e4dc0b")
 

@@ -20,6 +20,7 @@ class RFrictionless(RPackage):
 	cran = "frictionless" 
 
 	version("1.1.0", md5="2e5ba1da92b42bffba0bce3f615b76f7")
+	version("1.0.2", md5="af36ae6b52831e64658eaed5508e246d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

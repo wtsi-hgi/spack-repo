@@ -27,5 +27,6 @@ class RAdmisc(RPackage):
 	cran = "admisc" 
 
 	version("0.35", md5="8e54030336e1debf07c674345ab9a812")
+	version("0.34", md5="b96b64574ff518294216d699bee81903")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -16,8 +16,8 @@ Measures
 	homepage = "https://dimodels.com"
 	cran = "DImodelsMulti" 
 
-	version("1.0", md5="fc1cccb928b0e2cdbfcedd1eeeda518c")
 	version("1.0.1", md5="5d23618e548f06cf3bda0259a528e4b9")
+	version("1.0", md5="fc1cccb928b0e2cdbfcedd1eeeda518c")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dimodels", type=("build", "run"))

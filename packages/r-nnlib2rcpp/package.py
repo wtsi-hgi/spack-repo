@@ -17,5 +17,6 @@ in R
 	cran = "nnlib2Rcpp" 
 
 	version("0.2.5", md5="ed5c56cb3eb6bd568d832976de0f6d9a")
+	version("0.2.4", md5="f499846acae0d61a9f1a0e4c09114634")
 
 	depends_on("r-rcpp", type=("build", "run"))

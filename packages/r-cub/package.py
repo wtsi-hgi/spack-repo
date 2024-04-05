@@ -15,6 +15,7 @@ class RCub(RPackage):
 	cran = "CUB" 
 
 	version("1.1.5", md5="94e80eca6bfd4cdb0bbe32bcae5a996e")
+	version("1.1.4", md5="b5acfbfc9dba8dfe9d7b0fba9c3e5104")
 
 	depends_on("r@2.15.2:", type=("build", "run"))
 	depends_on("r-formula", type=("build", "run"))

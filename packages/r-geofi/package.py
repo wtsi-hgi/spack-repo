@@ -16,6 +16,7 @@ class RGeofi(RPackage):
 	cran = "geofi" 
 
 	version("1.0.15", md5="3aa42ad4b79cbc95fff1de816f0edf3e")
+	version("1.0.14", md5="ab74420ebfa9aede82925da1d072fe17")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))

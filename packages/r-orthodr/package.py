@@ -27,6 +27,7 @@ Constrained Optimization
 	cran = "orthoDr" 
 
 	version("0.6.8", md5="f520021db5f795914412114e5e152f1e")
+	version("0.6.7", md5="cfcf7afbe519963c9ca47de8059881ce")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

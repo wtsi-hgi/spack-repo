@@ -17,6 +17,7 @@ class RN2h4(RPackage):
 	cran = "N2H4" 
 
 	version("0.8.4", md5="1f716c3fd7782640df4dd511366ba29f", url="https://cran.r-project.org/src/contrib/N2H4_0.8.4.tar.gz")
+	version("0.8.3", md5="d9b848ae0e2afd1955ef6a1afb725d06", url="https://cran.r-project.org/src/contrib/N2H4_0.8.3.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rvest", type=("build", "run"))

@@ -19,6 +19,7 @@ class REasylabel(RPackage):
 	cran = "easylabel" 
 
 	version("0.2.8", md5="3241af5b15e43abf9bb1d3c9f5cf3561")
+	version("0.2.7", md5="0ea6d53ee109a09dc976f54a6a4700e0")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-dt", type=("build", "run"))

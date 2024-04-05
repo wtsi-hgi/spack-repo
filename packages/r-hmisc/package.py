@@ -16,6 +16,8 @@ class RHmisc(RPackage):
 	objects to LaTeX and html code, and recoding variables."""
 
 	cran = "Hmisc"
+	version("5.1-2", md5="920b9a7fb44f2e80b11f24a4afaf4363")
+	version("5.1-1", md5="5ec7c524fdea5b77eddcbdae3c368968")
 	version("5.0-1", sha256="db390f8f8a150cb5cffb812e9609a8e8632ceae0dc198528f190fd670ba8fa59")
 	version("4.7-1", sha256="325d571a68b2198eabd258a8d86143cac659ffa70e474088a18e9b58ab882e7f")
 	version("4.7-0", sha256="29ec2d9ca11c790c350e93323126bef4f498c69c41c31bb335fd04671e0f87bd")
@@ -24,7 +26,6 @@ class RHmisc(RPackage):
 	version("4.4-0", sha256="f16ecf4c5ee2202d51f426282a54f8000ffa8b9747c3e910205f34f878556ec7")
 	version("4.2-0", sha256="9e9614673288dd00295f250fa0bf96fc9e9fed692c69bf97691081c1a01411d9")
 	version("4.1-1", sha256="991db21cdf73ffbf5b0239a4876b2e76fd243ea33528afd88dc968792f281498")
-	version("5.1-2", md5="920b9a7fb44f2e80b11f24a4afaf4363")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

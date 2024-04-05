@@ -25,4 +25,3 @@ class RFletcher2013b(RPackage):
 	depends_on("r-igraph", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))
 
-	# experiment

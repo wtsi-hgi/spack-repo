@@ -21,4 +21,3 @@ class RBeadsortedSalivaEpic(RPackage):
 	depends_on("r-minfi@1.36:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))
 
-	# experiment

@@ -17,6 +17,7 @@ Cancers
 	cran = "monitOS" 
 
 	version("0.1.5", md5="89ec5345c38adb5ce0923982fb03c416")
+	version("0.1.3", md5="618c8c861b07cdf8e3db893a9c5f6f3e")
 
 	depends_on("r-glue", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

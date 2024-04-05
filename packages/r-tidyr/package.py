@@ -18,6 +18,7 @@ class RTidyr(RPackage):
 	explicit)."""
 
 	cran = "tidyr"
+	version("1.3.1", md5="0491d9d3359af7baf8ad9003ce44aa1d")
 	version("1.3.0", sha256="8d532b9366fdd3ec9827b51830e559a49d073425007c766025f0e603964e0a9d")
 	version("1.2.1", sha256="6971766d3663dc75c2328ab257816f4e42d9fdc05c2d87d171b8b9b5ecce61af")
 	version("1.2.0", sha256="8cd01da9e97827521d01ea50b9225f2705c46b7538bbf74bec6249a04c1213a8")
@@ -27,7 +28,6 @@ class RTidyr(RPackage):
 	version("0.8.2", sha256="99a508d0539390364789c5f4835b36c4a383927f0ec1648e2a4636c1cc6e490f")
 	version("0.7.2", sha256="062cea2e2b57fffd500e4ce31cba6d593e65684fc0897ea49ea38d257c76009c")
 	version("0.5.1", sha256="dbab642ac7231cbfe3e2a0d4553fb4ffb3699c6d6b432be2bb5812dfbbdbdace")
-	version("1.3.1", md5="0491d9d3359af7baf8ad9003ce44aa1d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-cli@3.4.1:", type=("build", "run"))

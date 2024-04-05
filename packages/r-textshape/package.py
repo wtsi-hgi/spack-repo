@@ -16,6 +16,7 @@ class RTextshape(RPackage):
 	cran = "textshape" 
 
 	version("1.7.5", md5="b92a38c5024eed8bf087992fa3465795")
+	version("1.7.3", md5="4ba7cedca6530e84803f2d1e6a4a7b1e")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

@@ -23,4 +23,3 @@ class RXhybcasneuf(RPackage):
 	depends_on("r-tinesath1cdf", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))
 
-	# experiment

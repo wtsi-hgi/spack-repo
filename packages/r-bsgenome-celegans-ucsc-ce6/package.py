@@ -15,8 +15,8 @@ class RBsgenomeCelegansUcscCe6(RPackage):
 	bioc = "BSgenome.Celegans.UCSC.ce6" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Celegans.UCSC.ce6_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Celegans.UCSC.ce6/BSgenome.Celegans.UCSC.ce6_1.4.0.tar.gz"]
 
+	version("1.4.0", md5="cb86ff861d8f660c2abd8fc1907d84a6", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Celegans.UCSC.ce6_1.4.0.tar.gz")
 	version("1.4.0", md5="cb86ff861d8f660c2abd8fc1907d84a6", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Celegans.UCSC.ce6_1.4.0.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 
-	# annotation

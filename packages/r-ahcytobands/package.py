@@ -19,4 +19,3 @@ class RAhcytobands(RPackage):
 
 	depends_on("r@3.2.2:", type=("build", "run"))
 
-	# annotation

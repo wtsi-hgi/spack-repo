@@ -23,4 +23,3 @@ class RPth2o2lipids(RPackage):
 	depends_on("r-camera", type=("build", "run"))
 	depends_on("r-lobstahs", type=("build", "run"))
 
-	# experiment

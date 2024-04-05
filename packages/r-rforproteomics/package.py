@@ -24,4 +24,3 @@ class RRforproteomics(RPackage):
 	depends_on("r-biocviews", type=("build", "run"))
 	depends_on("r-biocmanager", type=("build", "run"))
 
-	# experiment

@@ -25,8 +25,9 @@ class RFastcpd(RPackage):
 	homepage = "https://fastcpd.xingchi.li"
 	cran = "fastcpd" 
 
-	version("0.12.1", md5="a20dec51dbf6fb17b09f97e96b859950")
 	version("0.13.1", md5="49b4a37f19d9187b3c90200ea3d73c96")
+	version("0.12.1", md5="a20dec51dbf6fb17b09f97e96b859950")
+	version("0.10.3", md5="bef88d895ea1da41e3a1b5bc51ab3637")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-fastglm", type=("build", "run"))

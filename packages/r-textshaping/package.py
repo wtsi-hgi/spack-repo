@@ -15,8 +15,8 @@ class RTextshaping(RPackage):
 	the font tool-set provided by the 'systemfonts' package."""
 
 	cran = "textshaping"
-	version("0.3.6", sha256="80e2c087962f55ce2811fbc798b09f5638c06c6b28c10cd3cb3827005b902ada")
 	version("0.3.7", md5="75e150aec896dd1807e84538456d22e3")
+	version("0.3.6", sha256="80e2c087962f55ce2811fbc798b09f5638c06c6b28c10cd3cb3827005b902ada")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-systemfonts@1:", type=("build", "run"))

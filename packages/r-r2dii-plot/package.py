@@ -23,6 +23,7 @@ Portfolio
 	cran = "r2dii.plot" 
 
 	version("0.4.0", md5="b24fa7d09fede1af09d3da600cc2ae8f")
+	version("0.3.1", md5="56910c62330a2fb04c8b35c8dfae006a")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

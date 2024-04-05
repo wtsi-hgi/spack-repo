@@ -20,4 +20,3 @@ class RUniprotkeywords(RPackage):
 
 	depends_on("r@4:", type=("build", "run"))
 
-	# annotation

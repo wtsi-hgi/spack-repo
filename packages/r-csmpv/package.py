@@ -36,6 +36,7 @@ Validation
 	cran = "csmpv" 
 
 	version("1.0.3", md5="087e246a4d425842bec36df2604a3935")
+	version("1.0.2", md5="907c64ff39d192402f1c916708493454")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

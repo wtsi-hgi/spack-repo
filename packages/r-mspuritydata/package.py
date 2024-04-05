@@ -18,4 +18,3 @@ class RMspuritydata(RPackage):
 	version("1.30.0", md5="6c86343515cbb9f81131baa3f25659f0")
 
 
-	# experiment

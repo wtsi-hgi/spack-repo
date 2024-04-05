@@ -17,8 +17,8 @@ class RBwstest(RPackage):
 
 	cran = "BWStest"
 
-	version("0.2.2", sha256="faff1dd698f1673a6befacb94d14281077d4c19be035a0a3bf85d77c1dfd5509")
 	version("0.2.3", md5="b7539b1d3674c5baea0533933bb24e14")
+	version("0.2.2", sha256="faff1dd698f1673a6befacb94d14281077d4c19be035a0a3bf85d77c1dfd5509")
 
 	depends_on("r-memoise", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

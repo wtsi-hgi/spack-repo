@@ -13,6 +13,7 @@ class RIlluminaio(RPackage):
 
 	bioc = "illuminaio"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/illuminaio_0.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/illuminaio/illuminaio_0.44.0.tar.gz"]
+	version("0.44.0", md5="5bf0b60249c92ef8408564391a69a97d")
 	version("0.42.0", commit="d72b85c57ea9bcba8d652e3a66fddf5dcc59dda6")
 	version("0.40.0", commit="1d7045697eaf09e5c61447a6f61e2eeaaf7a5095")
 	version("0.38.0", commit="b16231b7417b4d6e9cff1e2724ed3529871dff92")
@@ -23,6 +24,5 @@ class RIlluminaio(RPackage):
 	version("0.22.0", commit="dbd842340999569975ea593f47d70a729b3f68f2")
 	version("0.20.0", commit="d226628133b2396be9e7a6bf043f0309bd70c4ec")
 	version("0.18.0", commit="e6b8ab1f8eacb760aebdb4828e9cfbf07da06eda")
-	version("0.44.0", md5="5bf0b60249c92ef8408564391a69a97d")
 
 	depends_on("r-base64", type=("build", "run"))

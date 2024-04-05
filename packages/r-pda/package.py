@@ -15,6 +15,7 @@ class RPda(RPackage):
 	cran = "pda" 
 
 	version("1.2.7", md5="5128f611b6c428195d8e57a4bda1f630")
+	version("1.2.6", md5="0567a09b10317679f8edd1544a461eab")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

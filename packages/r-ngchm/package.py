@@ -21,6 +21,7 @@ class RNgchm(RPackage):
 	cran = "NGCHM" 
 
 	version("1.0.2", md5="dca0f6c319a3277546d42923282e7200")
+	version("1.0.1", md5="59ebbe7552f8ce2da3c3c52029f9b8d8")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))

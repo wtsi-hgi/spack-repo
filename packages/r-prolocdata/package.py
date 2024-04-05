@@ -22,4 +22,3 @@ class RProlocdata(RPackage):
 	depends_on("r-msnbase", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))
 
-	# experiment

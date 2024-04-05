@@ -15,6 +15,7 @@ class RR6causal(RPackage):
 	cran = "R6causal" 
 
 	version("0.8.3", md5="6306c810132f3faa705e9e0abe78d2e8")
+	version("0.8.2", md5="45078c5d55648e410b2d0ef26159c769")
 
 	depends_on("r-causaleffect", type=("build", "run"))
 	depends_on("r-cfid", type=("build", "run"))

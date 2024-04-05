@@ -22,11 +22,11 @@ class RBigalgebra(RPackage):
 
 	license("LGPL-3.0-only OR Apache-2.0")
 
+	version("1.1.1", md5="1d678109e695855a82a6a64949d4e731")
 	version("1.1.0", sha256="e51530287a64826a3dfb55f41594bc8123b7b4c9b2074f6c8de218fa8b525734")
 	version("1.0.1", sha256="ff7e261d0aa0e0f498e926d923ac62fc5cb783fa1f74bb2ff76a09167388a9d2")
 	version("1.0.0", sha256="f186b603bd660be0cc5b7a52c943e23e92fef264f0bc96a8858e38df6cfc4085")
 	version("0.8.4.2", sha256="29962468cbfa6416f8628563d5ed8c9f76089190311ff1c618f099ee8d9eea75")
-	version("1.1.1", md5="1d678109e695855a82a6a64949d4e731")
 
 	depends_on("r-bigmemory", type=("build", "run"))
 	depends_on("r-bh", type=("build", "run"))

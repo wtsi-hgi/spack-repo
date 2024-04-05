@@ -28,4 +28,3 @@ class RMerfishdata(RPackage):
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 
-	# experiment

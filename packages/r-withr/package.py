@@ -15,6 +15,7 @@ class RWithr(RPackage):
 	dependencies to provide access to these functions."""
 
 	cran = "withr"
+	version("3.0.0", md5="679bfba74027cca036aeca2b328ba997")
 	version("2.5.0", sha256="37317b3ed790a08407072993a05ab255f6305f95a12a16e0e28aa6aa80fc8bc0")
 	version("2.4.3", sha256="9bdac7459ccc6c2d599ecfd132a7f0aa68d958942d9fe7dbb0442c9eda129d4c")
 	version("2.4.2", sha256="48f96a4cb780cf6fd5fbbea1f1eb04ea3102d7a4a644cae1ed1e91139dcbbac8")
@@ -23,6 +24,5 @@ class RWithr(RPackage):
 	version("2.1.2", sha256="41366f777d8adb83d0bdbac1392a1ab118b36217ca648d3bb9db763aa7ff4686")
 	version("1.0.2", sha256="2391545020adc4256ee7c2e31c30ff6f688f0b6032e355e1ce8f468cab455f10")
 	version("1.0.1", sha256="7e245fdd17d290ff9e7c237159804dd06e1c6a3efe7855ed641eb0765a1e727d")
-	version("3.0.0", md5="679bfba74027cca036aeca2b328ba997")
 
 	depends_on("r@3.5:", type=("build", "run"))

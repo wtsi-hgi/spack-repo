@@ -20,6 +20,7 @@ class RPoppr(RPackage):
 	cran = "poppr" 
 
 	version("2.9.6", md5="fc2e174303fa162c3c969fee31dca4d0")
+	version("2.9.5", md5="d5b4afadd424678a3c525d0cd8b918fe")
 
 	depends_on("r@2.15.1:", type=("build", "run"))
 	depends_on("r-adegenet@2:", type=("build", "run"))

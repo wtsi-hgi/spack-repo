@@ -19,6 +19,7 @@ class RVisomopresults(RPackage):
 	cran = "visOmopResults" 
 
 	version("0.2.1", md5="f7e9af77791346a63eeb8bdd5cbfd226")
+	version("0.0.1", md5="ce03e5cccdb36f649590ff41a10b9090")
 
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

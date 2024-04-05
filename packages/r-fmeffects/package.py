@@ -16,6 +16,7 @@ class RFmeffects(RPackage):
 	cran = "fmeffects" 
 
 	version("0.1.2", md5="c62bb9f9b2a7000c6119411425b8411d")
+	version("0.1.1", md5="9b8ae95bd5ff034dd35b6b6199d1ecb7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

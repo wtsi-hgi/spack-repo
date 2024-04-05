@@ -20,6 +20,7 @@ class RFattailsr(RPackage):
 	cran = "FatTailsR" 
 
 	version("1.8-5", md5="827470bc6e9c6a89d2ce9e6f14f38c6e")
+	version("1.8-0", md5="66eb622321f0e917e32e2fe976788a14")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-minpack-lm", type=("build", "run"))

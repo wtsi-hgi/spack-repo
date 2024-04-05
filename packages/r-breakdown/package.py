@@ -19,6 +19,7 @@ class RBreakdown(RPackage):
 	cran = "breakDown" 
 
 	version("0.2.2", md5="ec1eb6e220149049d23d37d619f4ce14")
+	version("0.2.1", md5="95b36145d88bba65f252710dc5167337")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

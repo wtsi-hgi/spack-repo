@@ -16,6 +16,7 @@ class RTopgo(RPackage):
 
 	bioc = "topGO"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/topGO_2.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/topGO/topGO_2.54.0.tar.gz"]
+	version("2.54.0", md5="62aeda25dfb89dfd466ddc749e52a422")
 	version("2.52.0", commit="214db210d1757231eb9b2889288dc385553525cd")
 	version("2.50.0", commit="befbff4e67c1b01e23f111d147274641a8b7b0f5")
 	version("2.48.0", commit="a47f0079319c7d74db4aeda6399e06f12a34b585")
@@ -26,7 +27,6 @@ class RTopgo(RPackage):
 	version("2.32.0", commit="78ce3068fc06ae38d55219759fa177e2fcb3f596")
 	version("2.30.1", commit="b1469ce1d198ccb73ef79ca22cab81659e16dbaa")
 	version("2.28.0", commit="066a975d460046cce33fb27e74e6a0ebc33fd716")
-	version("2.54.0", md5="62aeda25dfb89dfd466ddc749e52a422")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.13.6:", type=("build", "run"))

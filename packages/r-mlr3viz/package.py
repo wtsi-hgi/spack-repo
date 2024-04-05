@@ -21,6 +21,7 @@ class RMlr3viz(RPackage):
 	cran = "mlr3viz" 
 
 	version("0.8.0", md5="28bef877238e06bf10ce01984de6c8b6")
+	version("0.7.0", md5="71000fff902bf882d9b42709944ff328")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

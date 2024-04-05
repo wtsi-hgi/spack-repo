@@ -16,9 +16,9 @@ class RMsqc1(RPackage):
 	bioc = "msqc1" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/msqc1_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/msqc1/msqc1_1.30.0.tar.gz"]
 
+	version("1.30.0", md5="a95a760a0c0ef5e8053acee1d59170a4", url="https://www.bioconductor.org/packages/release/data/experiment/src/contrib/msqc1_1.30.0.tar.gz")
 	version("1.30.0", md5="a95a760a0c0ef5e8053acee1d59170a4", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/msqc1_1.30.0.tar.gz")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))
 
-	# experiment

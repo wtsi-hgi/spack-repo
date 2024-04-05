@@ -16,6 +16,7 @@ class RPbapply(RPackage):
 	options. Supports several parallel processing backends."""
 
 	cran = "pbapply"
+	version("1.7-2", md5="76c7702f9ffb732731c431ee4b6fdfb2")
 	version("1.7-0", sha256="64b8e931e0a09031c20b66173ce80a646043b8f135d329bc86226a11c6b706c0")
 	version("1.5-0", sha256="effdfee286e5ba9534dc2ac3cee96590a37f5cd2af28c836d00c25ca9f070a55")
 	version("1.4-3", sha256="8fe6287535be766b5a688810e2cc1ca4e668ac6b42b6e832473fe5701133eb21")
@@ -26,6 +27,5 @@ class RPbapply(RPackage):
 	version("1.3-1", sha256="fc4f1ea9d3290bab20a0ec74a3195c8887592b022ab6abb8d7754006a4487114")
 	version("1.3-0", sha256="a6d4bf88ade12a3b25662e271329fe54d170596335cba2a2dd210bbb7e8a5936")
 	version("1.2-2", sha256="81e5a8a5e0c7ce24b25679d0f69e8773908c9ce569f1e5984e52d4cef33ac34e")
-	version("1.7-2", md5="76c7702f9ffb732731c431ee4b6fdfb2")
 
 	depends_on("r@3.2:", type=("build", "run"))

@@ -20,4 +20,3 @@ class RGenesummary(RPackage):
 
 	depends_on("r@4:", type=("build", "run"))
 
-	# annotation

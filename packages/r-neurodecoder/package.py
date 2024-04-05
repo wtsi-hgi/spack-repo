@@ -21,6 +21,7 @@ class RNeurodecoder(RPackage):
 	cran = "NeuroDecodeR" 
 
 	version("0.2.0", md5="287ae270256f519f02b3f3ceba5c45ae")
+	version("0.1.0", md5="236e89c70be01d7c8313697f769379f8")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -20,6 +20,7 @@ class RArrow(RPackage):
 	cran = "arrow" 
 
 	version("15.0.1", md5="f5e2d244a409b3272d5539f77c40f2c3")
+	version("14.0.0.2", md5="84cefe34da6af43984b308ca2a57d7bd")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

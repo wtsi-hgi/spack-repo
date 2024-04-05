@@ -19,6 +19,7 @@ class RAffyrnadegradation(RPackage):
 	bioc = "AffyRNADegradation"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AffyRNADegradation_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AffyRNADegradation/AffyRNADegradation_1.48.0.tar.gz"]
 
+	version("1.48.0", md5="4affd7f48b178750311671c1f2ac8c4f")
 	version("1.46.0", commit="431ae61c9b3809829697ef71672c57171d93311e")
 	version("1.44.0", commit="63881f41fc67cc7322b189446dcffb4e1060e303")
 	version("1.42.0", commit="5775f41f538b3c8ee4d07d38cec1b49c548cebe6")
@@ -29,7 +30,6 @@ class RAffyrnadegradation(RPackage):
 	version("1.26.0", commit="6ab03ad624701464280bf7dfe345d200e846298a")
 	version("1.24.0", commit="1f85f3da4720cef94623828713eb84d8accbcf8a")
 	version("1.22.0", commit="0fa78f8286494711a239ded0ba587b0de47c15d3")
-	version("1.48.0", md5="4affd7f48b178750311671c1f2ac8c4f")
 
 	depends_on("r@2.9:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

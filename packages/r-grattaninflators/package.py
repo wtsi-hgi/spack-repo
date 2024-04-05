@@ -17,6 +17,7 @@ class RGrattaninflators(RPackage):
 	cran = "grattanInflators" 
 
 	version("0.5.1", md5="561908703e8e0bbfdcf8bcf22ddb4cf4")
+	version("0.5.0", md5="b54fc5ab03c0bdc4223e64b0b41121c5")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

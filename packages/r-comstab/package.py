@@ -18,5 +18,6 @@ class RComstab(RPackage):
 	cran = "comstab" 
 
 	version("0.0.2", md5="8c94d5f900d5f82e5849880e19b6b1bb")
+	version("0.0.1", md5="769558036262b09b784d1bdf89632e45")
 
 	depends_on("r-ternary", type=("build", "run"))

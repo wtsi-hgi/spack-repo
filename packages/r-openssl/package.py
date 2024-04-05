@@ -21,6 +21,7 @@ class ROpenssl(RPackage):
 	calculations on large multibyte integers."""
 
 	cran = "openssl"
+	version("2.1.1", md5="638ba0b9ff6d9376e21a9063ce4dd20a")
 	version("2.0.6", sha256="77f3032a16270f0d1734f269b8d348eedc75b277812854386091143082c1b3f3")
 	version("2.0.4", sha256="a1a5c65127c20c0ca3b46f2c4f4d3817276a887a231569537c1373e7740a5cec")
 	version("2.0.3", sha256="7cde98520bec857f043fb6aae92334e2ae0dcd86108adc9b18ca298ec16286aa")
@@ -33,7 +34,6 @@ class ROpenssl(RPackage):
 	version("0.9.7", sha256="697d9e86f99270163744538dc3dc4d19d00af89a8570a1d304b110e1d2650e9d")
 	version("0.9.6", sha256="6dd6d1cade4004962d516ad761fff0812beec0232318b385d286761423a5dc39")
 	version("0.9.4", sha256="cb7349defa5428acc0907629a4f53f82d2519af219e5d6a41f852cf55b1feb66")
-	version("2.1.1", md5="638ba0b9ff6d9376e21a9063ce4dd20a")
 
 	depends_on("r-askpass", type=("build", "run"))
 	depends_on("openssl@1.0.2:", type=("build", "link", "run"))

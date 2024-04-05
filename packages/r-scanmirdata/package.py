@@ -20,4 +20,3 @@ class RScanmirdata(RPackage):
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-scanmir", type=("build", "run"))
 
-	# experiment

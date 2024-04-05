@@ -15,8 +15,9 @@ class RJsonify(RPackage):
 	<https://CRAN.R-project.org/package=rapidjsonr>."""
 
 	cran = "jsonify"
-	version("1.2.1", sha256="929191ab32e34af6a02ad991e29314cc78ea40763fcf232388ef2d132137fbce")
+	version("1.2.2", sha256="3745e962592f021a3deaed8b2f6b99c4f7181f28e095300a96d1c2b08af4af2f")
 	version("1.2.2", md5="f1886cbb9d6978fea91124f4d58526a4")
+	version("1.2.1", sha256="929191ab32e34af6a02ad991e29314cc78ea40763fcf232388ef2d132137fbce")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -16,6 +16,7 @@ class RGgscatridges(RPackage):
 	cran = "ggScatRidges" 
 
 	version("0.1.1", md5="db1a7967fe84848249ea3999aa93effb")
+	version("0.1.0", md5="bf209eb0a00f57c6a7c59871752fc944")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))

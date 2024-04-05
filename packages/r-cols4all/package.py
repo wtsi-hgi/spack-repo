@@ -16,6 +16,7 @@ class RCols4all(RPackage):
 	cran = "cols4all" 
 
 	version("0.7-1", md5="50d97988ecc7a341adbba2c387220f3a")
+	version("0.6", md5="cb88dd763dbb8561199b246f8fe1f0a2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))

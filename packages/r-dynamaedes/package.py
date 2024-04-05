@@ -17,6 +17,7 @@ Invasive Aedes Mosquitoes
 	cran = "dynamAedes" 
 
 	version("2.2.9", md5="5c0832a3a1d8211cbd8c7e5de721388b")
+	version("2.2.8", md5="3dad4d6835040959bc3a61c1191b5546")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))

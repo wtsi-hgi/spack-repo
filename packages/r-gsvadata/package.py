@@ -22,4 +22,3 @@ class RGsvadata(RPackage):
 	depends_on("r-gseabase", type=("build", "run"))
 	depends_on("r-hgu95a-db", type=("build", "run"))
 
-	# experiment

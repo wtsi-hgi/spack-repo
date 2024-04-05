@@ -16,6 +16,7 @@ class RPomp(RPackage):
 	cran = "pomp" 
 
 	version("5.7", md5="6d5d958b4a69dd90b2eb545941d320c9")
+	version("5.6", md5="edfcadce5237b3c799c21b4f755d3533")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))

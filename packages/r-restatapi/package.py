@@ -20,6 +20,7 @@ class RRestatapi(RPackage):
 	cran = "restatapi" 
 
 	version("0.23.1", md5="48cb9ccb4dadbf8acc4dcafffd7330dd")
+	version("0.22.5", md5="a89bbe9326056be3e5fd99b5b70752e9")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-rjson", type=("build", "run"))

@@ -17,6 +17,7 @@ class RCallr(RPackage):
 
 	license("MIT")
 
+	version("3.7.6", md5="9bd3ca85c73b182bce6367962ce8e59a")
 	version("3.7.5", md5="fde3ee8095a576b253627bfe840ad133")
 	version("3.7.3", sha256="567bfedf073a1d4c5785f0553341608a214938110567b9a6495ff20ebb2fd04e")
 	version("3.7.2", sha256="12da8a212679e450d8d43c3c6e61ed09b82047f376f316f6f6392f1638580307")
@@ -27,7 +28,6 @@ class RCallr(RPackage):
 	version("3.2.0", sha256="4bb47b1018e8eb5c683a86c05d0d9b8b25848db1f1b30e92cfebedc0ce14b0e8")
 	version("3.0.0", sha256="e36361086c65660a6ecbbc09b5ecfcddee6b59caf75e983e48b21d3b8defabe7")
 	version("1.0.0", sha256="2c56808c723aba2ea8a8b6bbdc9b8332c96f59b119079861dd52f5988c27f715")
-	version("3.7.6", md5="9bd3ca85c73b182bce6367962ce8e59a")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-processx@3.6.1:", type=("build", "run"))

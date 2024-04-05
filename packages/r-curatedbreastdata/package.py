@@ -24,4 +24,3 @@ class RCuratedbreastdata(RPackage):
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-biocstyle", type=("build", "run"))
 
-	# experiment

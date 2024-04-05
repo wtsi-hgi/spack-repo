@@ -16,9 +16,9 @@ class RSnowfall(RPackage):
 	management tool sfCluster, but can also used without it."""
 
 	cran = "snowfall"
+	version("1.84-6.3", md5="4ca758a26dd4e862cc9ffd43ae16b2d3")
 	version("1.84-6.2", sha256="9b467ab2b992455c6e1aeabe375c5694761fa1cf8aaf4f003ca47102b656353b")
 	version("1.84-6.1", sha256="5c446df3a931e522a8b138cf1fb7ca5815cc82fcf486dbac964dcbc0690e248d")
-	version("1.84-6.3", md5="4ca758a26dd4e862cc9ffd43ae16b2d3")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-snow", type=("build", "run"))

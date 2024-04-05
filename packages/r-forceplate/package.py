@@ -20,6 +20,7 @@ class RForceplate(RPackage):
 	cran = "forceplate" 
 
 	version("1.1-3", md5="fa5196e2c06b05df781663df9f9be706")
+	version("1.1-0", md5="029465f880a9cb83c015952b9e628f10")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-signal", type=("build", "run"))

@@ -17,6 +17,7 @@ class RClubpro(RPackage):
 	cran = "clubpro" 
 
 	version("0.6.0", md5="5b4c9ed93970dd8bb80caf2246482578")
+	version("0.5.5", md5="a418f17a01f8b6751fb0dd1e5a2147ce")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

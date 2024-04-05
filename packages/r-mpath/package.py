@@ -20,6 +20,7 @@ class RMpath(RPackage):
 	cran = "mpath" 
 
 	version("0.4-2.25", md5="c61fd27a157d0b2923cd48d738a02372")
+	version("0.4-2.23", md5="cbd4020eba60f8fbd0fa67aff2c0aabc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))

@@ -23,4 +23,3 @@ class ROrgMxanthusDb(RPackage):
 	depends_on("r-biocstyle", type=("build", "run"))
 	depends_on("r-biocfilecache@1.10.1:", type=("build", "run"))
 
-	# annotation

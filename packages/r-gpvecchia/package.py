@@ -15,6 +15,7 @@ class RGpvecchia(RPackage):
 	cran = "GPvecchia" 
 
 	version("0.1.7", md5="aa543f82b8ab28f85b987a31ebe8814f")
+	version("0.1.6", md5="f501bf9efb56354eb40fc7ea650aca76")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-sparseinv", type=("build", "run"))

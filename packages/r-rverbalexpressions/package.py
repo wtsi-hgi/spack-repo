@@ -18,6 +18,7 @@ class RRverbalexpressions(RPackage):
 	cran = "RVerbalExpressions" 
 
 	version("0.1.1", md5="416c9ce4f36f26384b76b177fb4be00a")
+	version("0.1.0", md5="451182ae27f889fd81f6de4f1c37c949")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

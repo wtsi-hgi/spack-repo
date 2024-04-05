@@ -26,4 +26,3 @@ class RDmelsgi(RPackage):
 	depends_on("r-gplots", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))
 
-	# experiment

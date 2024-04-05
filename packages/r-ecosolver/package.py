@@ -16,6 +16,6 @@ class REcosolver(RPackage):
 	interface and has similar calling conventions."""
 
 	cran = "ECOSolveR"
-	version("0.5.4", sha256="5d7489e8176c1df3f3f1290732243429280efca4f837916e6b6faa6dc8a8e324")
 	version("0.5.5", md5="6eef63b5a9ca57cf252bdb4eb705bc9e")
+	version("0.5.4", sha256="5d7489e8176c1df3f3f1290732243429280efca4f837916e6b6faa6dc8a8e324")
 

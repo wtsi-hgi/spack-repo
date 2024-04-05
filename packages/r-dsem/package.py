@@ -19,8 +19,8 @@ class RDsem(RPackage):
 	homepage = "https://james-thorson-noaa.github.io/dsem/"
 	cran = "dsem" 
 
-	version("1.1.0", md5="2e8c94f6c86afcafd730aaf9917475c8")
 	version("1.2.1", md5="4d88bcb5e8b509eda21864e3dfde6975")
+	version("1.1.0", md5="2e8c94f6c86afcafd730aaf9917475c8")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-tmb", type=("build", "run"))

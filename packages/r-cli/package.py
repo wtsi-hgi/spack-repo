@@ -17,6 +17,7 @@ class RCli(RPackage):
 	'ANSI' terminal colors."""
 
 	cran = "cli"
+	version("3.6.2", md5="36e2b58e8de26def5fcf17b6dd71dad7")
 	version("3.6.1", sha256="be3006cec7e67f9ae25e21b4658c4bec680038c2ef7467df5f14da3311a05e36")
 	version("3.4.1", sha256="1c585efbfd8b8685c66fac34bcb60f28c351691bb4b9931df214e6e47fd9744e")
 	version("3.3.0", sha256="c3a9ebbcb9017fb9aeda4f7df5ca981e42b169cbd7ce13e592cda2cd74250d63")
@@ -29,6 +30,5 @@ class RCli(RPackage):
 	version("1.1.0", sha256="4fc00fcdf4fdbdf9b5792faee8c7cf1ed5c4f45b1221d961332cda82dbe60d0a")
 	version("1.0.1", sha256="ef80fbcde15760fd55abbf9413b306e3971b2a7034ab8c415fb52dc0088c5ee4")
 	version("1.0.0", sha256="8fa3dbfc954ca61b8510f767ede9e8a365dac2ef95fe87c715a0f37d721b5a1d")
-	version("3.6.2", md5="36e2b58e8de26def5fcf17b6dd71dad7")
 
 	depends_on("r@3.4:", type=("build", "run"))

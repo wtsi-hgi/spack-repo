@@ -19,6 +19,7 @@ class RPredictmeans(RPackage):
 	cran = "predictmeans" 
 
 	version("1.1.0", md5="2629a2d736d22fd10921ed6b82559b36")
+	version("1.0.9", md5="6bac8ac976e9869ddd5b184ae3e5ac0c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-glmmtmb", type=("build", "run"))

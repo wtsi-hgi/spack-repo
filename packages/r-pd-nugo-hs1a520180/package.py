@@ -15,6 +15,7 @@ class RPdNugoHs1a520180(RPackage):
 	bioc = "pd.nugo.hs1a520180" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.nugo.hs1a520180_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.nugo.hs1a520180/pd.nugo.hs1a520180_3.4.0.tar.gz"]
 
+	version("3.4.0", md5="88a836472f0f9aab2e1d54e4bad7d6af", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.nugo.hs1a520180_3.4.0.tar.gz")
 	version("3.4.0", md5="88a836472f0f9aab2e1d54e4bad7d6af", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.nugo.hs1a520180_3.4.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
@@ -26,4 +27,3 @@ class RPdNugoHs1a520180(RPackage):
 	depends_on("r-iranges@2.1.43:", type=("build", "run"))
 	depends_on("r-s4vectors@0.5.22:", type=("build", "run"))
 
-	# annotation

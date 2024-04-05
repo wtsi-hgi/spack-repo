@@ -28,6 +28,7 @@ class RSurrogate(RPackage):
 	cran = "Surrogate" 
 
 	version("3.2.5", md5="692b25267312ba84f0f2201ec38154de")
+	version("3.2.2", md5="56d2385b4c5648a7fef63c92537edca8")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

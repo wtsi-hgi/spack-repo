@@ -15,6 +15,8 @@ class RFdbInfiniummethylationHg18(RPackage):
 	bioc = "FDb.InfiniumMethylation.hg18"
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/FDb.InfiniumMethylation.hg18_2.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/FDb.InfiniumMethylation.hg18/FDb.InfiniumMethylation.hg18_2.2.0.tar.gz"]
 	
+	version("2.2.0", sha256="4a9028ac03c11fffbab731ea750bc7f9b0884fc43c6a8dac6eb2c644e4c79f6f")
+	version("2.2.0", md5="95ceab50d0a7c3d417cee12fbe3defb3", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/FDb.InfiniumMethylation.hg18_2.2.0.tar.gz")
 	version("2.2.0", md5="95ceab50d0a7c3d417cee12fbe3defb3", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/FDb.InfiniumMethylation.hg18_2.2.0.tar.gz")
 
 	depends_on("r@2.10:", type=("build", "run"))
@@ -24,4 +26,3 @@ class RFdbInfiniummethylationHg18(RPackage):
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))
 
-	# annotation

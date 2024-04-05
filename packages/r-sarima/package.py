@@ -24,6 +24,7 @@ class RSarima(RPackage):
 	cran = "sarima" 
 
 	version("0.9.3", md5="7a98dab977d6c1e3b34017b192fb092b")
+	version("0.9.1", md5="af693e977bec93fabbc8686b54e3475b")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-polynomf@1.0.0:", type=("build", "run"))

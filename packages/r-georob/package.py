@@ -15,6 +15,7 @@ class RGeorob(RPackage):
 	cran = "georob" 
 
 	version("0.3-19", md5="0c78c1aa4f91c23f74cefe76f5781b64")
+	version("0.3-18", md5="03b96a543f96d422e3c5fee652bb2308")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-sp@0.9.60:", type=("build", "run"))

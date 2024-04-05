@@ -17,8 +17,8 @@ class RCheapr(RPackage):
 	
 	cran = "cheapr" 
 
-	version("0.2.0", md5="3f2ff7173f6087ab4a7bae1e019f1572")
 	version("0.4.0", md5="9a394cea367cc4b92465ce5e698dc896")
+	version("0.2.0", md5="3f2ff7173f6087ab4a7bae1e019f1572")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-collapse@2:", type=("build", "run"))

@@ -21,6 +21,7 @@ class RHdflex(RPackage):
 	cran = "hdflex" 
 
 	version("0.2.1", md5="03eaa4d5725ce594ac16072a3e803e6d")
+	version("0.2.0", md5="d048397823ca71b8db32a19c8457c46d")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-checkmate@2.3.1:", type=("build", "run"))

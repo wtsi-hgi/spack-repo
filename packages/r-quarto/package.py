@@ -17,6 +17,7 @@ class RQuarto(RPackage):
 	cran = "quarto" 
 
 	version("1.4", md5="d15fbf0fc4277516bd2589d5f6f4a570")
+	version("1.3", md5="ab1e1e191b431dbd849d5c02fceed982")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

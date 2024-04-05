@@ -40,4 +40,3 @@ class RSeqpac(RPackage):
 	depends_on("r-stringr@1.4:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
 
-	# workflow

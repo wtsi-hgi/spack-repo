@@ -22,6 +22,7 @@ class RMazamatimeseries(RPackage):
 	cran = "MazamaTimeSeries" 
 
 	version("0.3.0", md5="a1861d6c8c11885c66eefe54cf5f4a18")
+	version("0.2.16", md5="f9693f05ebcebe25fdd06c16aa516438")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

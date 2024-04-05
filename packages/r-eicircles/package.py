@@ -18,7 +18,7 @@ Models
 	
 	cran = "eiCircles" 
 
-	version("0.0.1-6", md5="8db49aa6831f0d2b085fd5538a4cbf37")
 	version("0.0.1-7", md5="cddfb9f9393f00cc1b4d23994d4a51cd")
+	version("0.0.1-6", md5="8db49aa6831f0d2b085fd5538a4cbf37")
 
 	depends_on("r-nlcoptim@0.6:", type=("build", "run"))

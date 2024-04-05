@@ -17,6 +17,7 @@ class RRcmdrpluginHh(RPackage):
 	cran = "RcmdrPlugin.HH" 
 
 	version("1.1-51", md5="f0e17439150d3f22ed715c76d4e14cd6")
+	version("1.1-47", md5="53e0efb1d4b68507b1fb4ca1dc4ec5ca")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-hh", type=("build", "run"))

@@ -23,6 +23,7 @@ class RVcmeta(RPackage):
 	cran = "vcmeta" 
 
 	version("1.3.0", md5="dbd54ca2728dcfa78b0570735c5cd006")
+	version("1.2.0", md5="22b348dc29be34c77e84bd7fec6d8e9c")
 
 	depends_on("r-mathjaxr", type=("build", "run"))
 	depends_on("r-rdpack", type=("build", "run"))

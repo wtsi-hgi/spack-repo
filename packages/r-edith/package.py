@@ -25,8 +25,8 @@ class REdith(RPackage):
 	homepage = "https://lucarraro.github.io/eDITH/"
 	cran = "eDITH" 
 
-	version("0.2.0", md5="4e90c2ef95b3f6c85a6ca5cf3cf9dacb")
 	version("0.3.0", md5="27a67923390d3a99f36e148245c611c4")
+	version("0.2.0", md5="4e90c2ef95b3f6c85a6ca5cf3cf9dacb")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

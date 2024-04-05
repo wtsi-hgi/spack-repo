@@ -22,6 +22,7 @@ class RSticsrfiles(RPackage):
 	cran = "SticsRFiles" 
 
 	version("1.2.0", md5="feb0a6efce04dd0e8087d8ae429d40ce")
+	version("1.1.3", md5="ab1e2c53ba74f3e13c419295a2f17721")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

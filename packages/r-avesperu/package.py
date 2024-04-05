@@ -16,5 +16,6 @@ class RAvesperu(RPackage):
 	cran = "avesperu" 
 
 	version("0.0.2", md5="146b7d92e1e8441d1dcaff71ce5ab163")
+	version("0.0.1", md5="ad9d3f1f8a0c682207c470d010f4de58")
 
 	depends_on("r@2.10:", type=("build", "run"))

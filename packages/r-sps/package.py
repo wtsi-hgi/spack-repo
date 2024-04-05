@@ -24,5 +24,6 @@ class RSps(RPackage):
 	cran = "sps" 
 
 	version("0.5.4", md5="84eb4bc2c3b7ad1793246c0bb2abb7b9")
+	version("0.5.3", md5="004f58bcdd63098c9caa74da48590101")
 
 	depends_on("r@4:", type=("build", "run"))

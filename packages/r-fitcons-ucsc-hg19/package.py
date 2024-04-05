@@ -15,6 +15,7 @@ class RFitconsUcscHg19(RPackage):
 	bioc = "fitCons.UCSC.hg19" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/fitCons.UCSC.hg19_3.7.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/fitCons.UCSC.hg19/fitCons.UCSC.hg19_3.7.1.tar.gz"]
 
+	version("3.7.1", md5="53d954890ec9b91084664a10161ce391", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/fitCons.UCSC.hg19_3.7.1.tar.gz")
 	version("3.7.1", md5="53d954890ec9b91084664a10161ce391", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/fitCons.UCSC.hg19_3.7.1.tar.gz")
 
 	depends_on("r@3:", type=("build", "run"))
@@ -25,4 +26,3 @@ class RFitconsUcscHg19(RPackage):
 	depends_on("r-genomeinfodb", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))
 
-	# annotation

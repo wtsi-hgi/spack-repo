@@ -15,8 +15,8 @@ class RGgrastr(RPackage):
 	the scale-sensitive information."""
 
 	cran = "ggrastr"
-	version("1.0.1", sha256="82d6e90fa38dec85e829f71018532ed5b709a50a585455fc07cb3bae282f5d1f")
 	version("1.0.2", md5="c255ae3787f2c84223965f64d0c58e3a")
+	version("1.0.1", sha256="82d6e90fa38dec85e829f71018532ed5b709a50a585455fc07cb3bae282f5d1f")
 
 	depends_on("r@3.2.2:", type=("build", "run"))
 	depends_on("r-ggplot2@2.1:", type=("build", "run"))

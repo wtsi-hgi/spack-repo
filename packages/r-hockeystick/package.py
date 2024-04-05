@@ -16,6 +16,7 @@ class RHockeystick(RPackage):
 	cran = "hockeystick" 
 
 	version("0.8.4", md5="8369b566dc86a5538fec019f2864c83d")
+	version("0.8.3", md5="071dcfc21fd2d79227cf19dad1dee8c9")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

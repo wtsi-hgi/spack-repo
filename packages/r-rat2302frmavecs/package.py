@@ -21,4 +21,3 @@ class RRat2302frmavecs(RPackage):
 	depends_on("r-affy", type=("build", "run"))
 	depends_on("r-frma", type=("build", "run"))
 
-	# annotation

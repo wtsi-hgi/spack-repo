@@ -16,6 +16,7 @@ class RHarbinger(RPackage):
 	cran = "harbinger" 
 
 	version("1.0.767", md5="e0f424e01d24b5c42dbfb75e6fa6ad2f")
+	version("1.0.737", md5="216b0b74c597f7e2491239d9c88faa9e")
 
 	depends_on("r-daltoolbox", type=("build", "run"))
 	depends_on("r-tsmp", type=("build", "run"))

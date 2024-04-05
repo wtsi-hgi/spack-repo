@@ -15,5 +15,6 @@ class RLpcm(RPackage):
 	cran = "LPCM" 
 
 	version("0.47-4", md5="c729700d5d113f834d5205194eb6d160")
+	version("0.47-3", md5="ab5dc2cdf40aee4960cdf515de2d706d")
 
 	depends_on("r@3.5:", type=("build", "run"))

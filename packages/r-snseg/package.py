@@ -20,6 +20,7 @@ Series
 	cran = "SNSeg" 
 
 	version("1.0.2", md5="81068a6e7ddecc08b5dc71b5feff0522")
+	version("1.0.1", md5="eb8b5c007813f92c089adbdee35816f8")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -15,5 +15,6 @@ class RHce(RPackage):
 	cran = "hce" 
 
 	version("0.6.0", md5="27040c32ea4e4f8e668a582750ddc4b5")
+	version("0.5.9", md5="74bbfcb70382d293cf0e27c77a3ce197")
 
 	depends_on("r@2.10:", type=("build", "run"))

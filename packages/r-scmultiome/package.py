@@ -30,4 +30,3 @@ class RScmultiome(RPackage):
 	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-rhdf5", type=("build", "run"))
 
-	# experiment

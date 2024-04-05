@@ -15,6 +15,7 @@ class RAffycontam(RPackage):
 	bioc = "affyContam"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affyContam_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affyContam/affyContam_1.60.0.tar.gz"]
 
+	version("1.60.0", md5="eb7e98d31e923d77d4e6197e5cf8b02d")
 	version("1.58.0", commit="5e91d79d7653a4f484b62eae7fd7e908de8cb9b6")
 	version("1.56.0", commit="e2b8a4fba1648255eadce954a848f2dd8e22bcb3")
 	version("1.54.0", commit="c5208b48b8881983ff53a4713244327e8ad13b78")
@@ -25,7 +26,6 @@ class RAffycontam(RPackage):
 	version("1.38.0", commit="84651e8eade61619afefc83bb290047da101a5bc")
 	version("1.36.0", commit="aeb684a7d3f6fa9243f3946d214de53649fa4fd6")
 	version("1.34.0", commit="03529f26d059c19e069cdda358dbf7789b6d4c40")
-	version("1.60.0", md5="eb7e98d31e923d77d4e6197e5cf8b02d")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -18,6 +18,7 @@ class RSequoia(RPackage):
 	cran = "sequoia" 
 
 	version("2.9.0", md5="dc25281058eba695694d8a8c9b6ffd18")
+	version("2.8.3", md5="16dc44c480f29c104377bc0e2d8952b1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-plyr@1.8:", type=("build", "run"))

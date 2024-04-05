@@ -19,4 +19,3 @@ class RMgu74cv2cdf(RPackage):
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

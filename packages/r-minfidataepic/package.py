@@ -22,4 +22,3 @@ class RMinfidataepic(RPackage):
 	depends_on("r-illuminahumanmethylationepicmanifest", type=("build", "run"))
 	depends_on("r-illuminahumanmethylationepicanno-ilm10b2-hg19", type=("build", "run"))
 
-	# experiment

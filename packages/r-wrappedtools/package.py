@@ -24,6 +24,7 @@ class RWrappedtools(RPackage):
 	cran = "wrappedtools" 
 
 	version("0.9.5", md5="f92021cc5c846afaa2851db96ba79b2d")
+	version("0.9.3", md5="7867034efb101938d46a41efdc178a4f")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-boot", type=("build", "run"))

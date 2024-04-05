@@ -15,6 +15,8 @@ class RGeomorph(RPackage):
 	variation."""
 
 	cran = "geomorph"
+	version("4.0.7", md5="5fbf4145d6cf675fb7e41728edc6e9bd")
+	version("4.0.6", md5="14c7cba5101d5593ba0653ba8debff14")
 	version("4.0.5", sha256="900d41f95a610b026763797f290ce94c10827a59b05030ed01c841c59264313b")
 	version("4.0.4", sha256="dfded29070bc06bf1dc0d6fedaa16fea9f8eef76f0a7443a11f2835c328c6b0a")
 	version("4.0.3", sha256="8fd77bedf2ee85f1e4aaac4b22253810d12dba0b79d78d67695d237b7184e263")
@@ -24,7 +26,6 @@ class RGeomorph(RPackage):
 	version("3.1.1", sha256="8eb222011433100860b308beef6f02ade7c421785f575ab4461ee25e38dfa1bd")
 	version("3.0.7", sha256="68f8942e1a5bc3f0298c9f5b8f69c4702c8e12ecb2275d740fda4d04d66d38e1")
 	version("3.0.5", sha256="7a3a587b253770a5e7e70536234dee13e6a073f1fdf1d644ae4f11d2eb95b104")
-	version("4.0.7", md5="5fbf4145d6cf675fb7e41728edc6e9bd")
 
 	depends_on("r-rrpp@2:", type=("build", "run"))
 	depends_on("r-rgl", type=("build", "run"))

@@ -29,6 +29,7 @@ class RBrms(RPackage):
 
 	license("GPL-2.0-only")
 
+	version("2.21.0", md5="9b5c6c14a902b769e4558b5436fa631a")
 	version("2.20.4", md5="cd5e8124a77500735c1bc1a9ca19f2c0")
 	version("2.19.0", sha256="0e146842c7acfcc6b8273df536eabb5279fb3bf2ae27ce1696f7d838d94fe5c1")
 	version("2.18.0", sha256="63914be03cd1c4e6333317d22d7827ba2dc0414cb0dc88337cf74763ba07e111")
@@ -36,7 +37,6 @@ class RBrms(RPackage):
 	version("2.16.3", sha256="68302b10b5264f72d163d01c17792c002306cf37f0ee778dcec4c7e118f923e1")
 	version("2.16.1", sha256="749efbd9fb061fe207cf2e729c1387d9a8538b922f12ceec4e82a9f8dd9c1bc4")
 	version("2.15.0", sha256="c11701d1d8758590b74bb845b568b736e4455a81b114c7dfde0b27b7bd1bcc2f")
-	version("2.21.0", md5="9b5c6c14a902b769e4558b5436fa631a")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp@0.12:", type=("build", "run"))

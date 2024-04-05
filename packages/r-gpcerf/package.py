@@ -17,6 +17,7 @@ Curves
 	cran = "GPCERF" 
 
 	version("0.2.3", md5="624f728a3802037aaf7910d55956f31a")
+	version("0.2.2", md5="be372f2cde4ed2b1cb1a9297458b4212")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-xgboost", type=("build", "run"))

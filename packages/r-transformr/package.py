@@ -21,6 +21,7 @@ class RTransformr(RPackage):
 	cran = "transformr" 
 
 	version("0.1.5", md5="c874d7ab2e7c979c43c89fa6dcbb1f87")
+	version("0.1.4", md5="94b6d03d1bd089fa3dc47de6dac69d90")
 
 	depends_on("r-tweenr", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

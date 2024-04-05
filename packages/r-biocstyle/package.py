@@ -15,6 +15,10 @@ class RBiocstyle(RPackage):
 	bioc = "BiocStyle"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocStyle_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocStyle/BiocStyle_2.30.0.tar.gz"]
 
+	version("2.8.2", commit="3210c19ec1e5e0ed8d5a2d31da990aa47b42dbd8")
+	version("2.6.1", commit="5ff52cbb439a45575d0f58c4f7a83195a8b7337b")
+	version("2.4.1", commit="ef10764b68ac23a3a7a8ec3b6a6436187309c138")
+	version("2.30.0", md5="22ceacb6ab374657de48283e78dedbb5")
 	version("2.28.0", commit="b358aa5d3f9c68629e9abf50ffceccbf77226ea8")
 	version("2.26.0", commit="add035498bdce76d71a0afa22a063c2d8e5588bc")
 	version("2.24.0", commit="53095b534b7e6c80a33a67b5f2db0db8f00db902")
@@ -22,10 +26,6 @@ class RBiocstyle(RPackage):
 	version("2.18.1", commit="956f0654e8e18882ba09305742401128c9c7d47d")
 	version("2.12.0", commit="0fba3fe6e6a38504f9aadcd3dc95bb83d7e92498")
 	version("2.10.0", commit="8fc946044c6b6a8a3104ddbc546baed49ee3aa70")
-	version("2.8.2", commit="3210c19ec1e5e0ed8d5a2d31da990aa47b42dbd8")
-	version("2.6.1", commit="5ff52cbb439a45575d0f58c4f7a83195a8b7337b")
-	version("2.4.1", commit="ef10764b68ac23a3a7a8ec3b6a6436187309c138")
-	version("2.30.0", md5="22ceacb6ab374657de48283e78dedbb5")
 
 	depends_on("r-bookdown", type=("build", "run"))
 	depends_on("r-knitr@1.30:", type=("build", "run"))

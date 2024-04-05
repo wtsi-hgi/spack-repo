@@ -19,4 +19,3 @@ class RScannotatrModels(RPackage):
 
 	depends_on("r@4.1:", type=("build", "run"))
 
-	# annotation

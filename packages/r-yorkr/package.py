@@ -17,6 +17,7 @@ class RYorkr(RPackage):
 	cran = "yorkr" 
 
 	version("0.0.42", md5="4ea795eaa94e0d924a2738e6e500745d")
+	version("0.0.41", md5="31fa531eb424975adf7edc22d31bf159")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -20,4 +20,3 @@ class RTxdbHsapiensBiomartIgis(RPackage):
 	depends_on("r-genomicfeatures", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

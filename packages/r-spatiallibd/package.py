@@ -54,4 +54,3 @@ class RSpatiallibd(RPackage):
 	depends_on("r-limma", type=("build", "run"))
 	depends_on("r-statmod", type=("build", "run"))
 
-	# experiment

@@ -21,4 +21,3 @@ class RCll(RPackage):
 	depends_on("r-affy@1.23.4:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))
 
-	# experiment

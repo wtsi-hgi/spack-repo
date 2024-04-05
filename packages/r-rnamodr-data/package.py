@@ -22,4 +22,3 @@ class RRnamodrData(RPackage):
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-experimenthubdata@1.9.2:", type=("build", "run"))
 
-	# experiment

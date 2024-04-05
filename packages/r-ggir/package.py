@@ -16,6 +16,7 @@ class RGgir(RPackage):
 	cran = "GGIR" 
 
 	version("3.0-9", md5="b3ab08ba1baac62b72b02ff74bf1d099")
+	version("3.0-6", md5="03023fad881692aa3a25b43bf1413815")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

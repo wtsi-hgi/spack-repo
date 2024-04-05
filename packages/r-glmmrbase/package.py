@@ -20,6 +20,7 @@ class RGlmmrbase(RPackage):
 	cran = "glmmrBase" 
 
 	version("0.7.1", md5="a72bc5b38e9d43c611d6073c9d1e62f5")
+	version("0.6.2", md5="04ba15a4b7752b966ca9c27f1cd084eb")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-matrix@1.3.1:", type=("build", "run"))

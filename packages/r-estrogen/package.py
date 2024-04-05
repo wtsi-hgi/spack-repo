@@ -18,4 +18,3 @@ class REstrogen(RPackage):
 	version("1.48.0", md5="41a3321678d1a9cb057e979d675f0cee")
 
 
-	# experiment

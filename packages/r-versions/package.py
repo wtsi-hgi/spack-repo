@@ -13,8 +13,9 @@ class RVersions(RPackage):
     provides functions to list available versions and the versions of currently
     installed packages. These tools can be used to help make R projects and
     packages more reproducible. 'versions' fits in the narrow gap between
-    the 'devtools' install_version() function and the 'checkpoint' package.
-    devtools::install_version() installs a stated package version from source files
+	version("0.3", md5="193eaf2acf06798e4a4e5fa8e38d60a1")
+	the 'devtools' install_version() function and the 'checkpoint' package.
+	devtools::install_version() installs a stated package version from source files
     stored on the CRAN archives. However CRAN does not store binary versions of
     packages so Windows users need to have RTools installed and Windows and OSX
     users get longer installation times. 'checkpoint' uses the Revolution Analytics
@@ -28,5 +29,4 @@ class RVersions(RPackage):
 	
 	cran = "versions" 
 
-	version("0.3", md5="193eaf2acf06798e4a4e5fa8e38d60a1")
 

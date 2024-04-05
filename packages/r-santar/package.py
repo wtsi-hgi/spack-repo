@@ -25,6 +25,7 @@ class RSantar(RPackage):
 	cran = "santaR" 
 
 	version("1.2.4", md5="315b7cdbf23261882aa8a993e8de6be1")
+	version("1.2.3", md5="de37ac6c1e50b1003084245a8a269928")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-plyr@1.8.9:", type=("build", "run"))

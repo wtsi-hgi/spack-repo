@@ -20,9 +20,9 @@ class RTinytiger(RPackage):
 	cran = "tinytiger"
 
 	maintainers("jgaeb")
+	version("0.0.8", md5="78ef9ead68e8960e3a24a99f524900b2")
 	version("0.0.4", sha256="818328b5095d9e8b302f1a04d004cd3ec6e62d945dbd757fe15e9ab768a7459e")
 	version("0.0.3", sha256="841d92dd4185b9bff5eef0d3635805c5a3efb1bc4ff0a1101ef264417e37921c")
-	version("0.0.8", md5="78ef9ead68e8960e3a24a99f524900b2")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

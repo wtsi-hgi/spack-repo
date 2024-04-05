@@ -34,6 +34,7 @@ class RKonfound(RPackage):
 	cran = "konfound" 
 
 	version("0.5.0", md5="55745d04c7a38aa0728d98735970bc60")
+	version("0.4.0", md5="e4d3c73fc9b7f827310a55de8e4407ad")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))

@@ -18,6 +18,7 @@ class RShortread(RPackage):
 
 	bioc = "ShortRead"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ShortRead_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ShortRead/ShortRead_1.60.0.tar.gz"]
+	version("1.60.0", md5="480786b1db8f8138a7a4e8c36f9bdfc4")
 	version("1.58.0", commit="433d18266b141ddcc9dc590f5244163a04efebe3")
 	version("1.56.0", commit="df25d0872d52aac3610998abda0d7bfd37298726")
 	version("1.54.0", commit="a1082a335120860d019aa0065a975d41890351f7")
@@ -28,7 +29,6 @@ class RShortread(RPackage):
 	version("1.38.0", commit="e9498f04b7b4bf0212bbb10ec7e3de2d7699f4bf")
 	version("1.36.1", commit="176c34eddf4a416d30c69cb4ac197141ba42e66f")
 	version("1.34.2", commit="25daac63b301df66a8ef6e98cc2977522c6786cd")
-	version("1.60.0", md5="480786b1db8f8138a7a4e8c36f9bdfc4")
 
 	depends_on("r-biocgenerics@0.23.3:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

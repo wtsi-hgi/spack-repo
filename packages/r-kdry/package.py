@@ -18,6 +18,7 @@ class RKdry(RPackage):
 	cran = "kdry" 
 
 	version("0.0.2", md5="2573312a73816e477a28a8ebcf0097dc")
+	version("0.0.1", md5="72bda531e9f9e1bc9371b81b3045eeee")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

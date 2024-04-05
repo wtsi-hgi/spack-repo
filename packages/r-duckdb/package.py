@@ -18,8 +18,9 @@ class RDuckdb(RPackage):
 	homepage = "https://r.duckdb.org/"
 	cran = "duckdb" 
 
-	version("0.10.0", md5="210725b7fda443fad219cf0ab446d8a4")
+	version("0.9.2-1", md5="674d7374122f819105538beb9170addc")
 	version("0.10.1", md5="f1c3f6f8afcf7f2d6b3e217d032fb152")
+	version("0.10.0", md5="210725b7fda443fad219cf0ab446d8a4")
 
 	depends_on("r-dbi", type=("build", "run"))
 	depends_on("r@3.6:", type=("build", "run"))

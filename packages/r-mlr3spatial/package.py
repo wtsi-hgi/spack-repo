@@ -18,6 +18,7 @@ class RMlr3spatial(RPackage):
 	cran = "mlr3spatial" 
 
 	version("0.5.0", md5="2f4d05ef81832942294ec0d0151d4656")
+	version("0.4.1", md5="2e2cdf4a1d4f382b3621f8e0aceb5bf2")
 
 	depends_on("r-mlr3@0.14:", type=("build", "run"))
 	depends_on("r@3.1:", type=("build", "run"))

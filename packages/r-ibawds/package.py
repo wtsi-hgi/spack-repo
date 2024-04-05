@@ -17,6 +17,7 @@ class RIbawds(RPackage):
 	cran = "ibawds" 
 
 	version("0.6.0", md5="a1f5814268eedc22b2a891e156777d7a")
+	version("0.5.0", md5="fc7a67c5c6f4df69fadfaa4e7e788400")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dslabs", type=("build", "run"))

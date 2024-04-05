@@ -17,5 +17,6 @@ class RCrop(RPackage):
 	cran = "crop" 
 
 	version("0.0-3", md5="ae48f61864e74ea20946f0dc034ba43c")
+	version("0.0-2", md5="96b60dc98345fdb7b12ec8b8b612dd0f")
 
 	depends_on("r@3:", type=("build", "run"))

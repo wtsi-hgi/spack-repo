@@ -22,4 +22,3 @@ class RDyebiasexamples(RPackage):
 	depends_on("r-marray", type=("build", "run"))
 	depends_on("r-geoquery", type=("build", "run"))
 
-	# experiment

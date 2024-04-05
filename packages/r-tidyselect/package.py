@@ -14,6 +14,7 @@ class RTidyselect(RPackage):
 	consistent with other 'tidyverse' interfaces for selection."""
 
 	cran = "tidyselect"
+	version("1.2.1", md5="49c581292e819a2a39aac321f27ab0a8")
 	version("1.2.0", sha256="538d26b727e37d618e2efd3b00836048f103112a03e6994bf07a02392e269e3b")
 	version("1.1.2", sha256="0389a3b15417954a30d6d692f6ebdd3d0f318cb94a5c9b05365df2f4ea1d8270")
 	version("1.1.1", sha256="18eb6a6746196a81ce19ee6cbf1db0c33f494177b97e2419312ef25a00ae486b")
@@ -21,7 +22,6 @@ class RTidyselect(RPackage):
 	version("0.2.5", sha256="5ce2e86230fa35cfc09aa71dcdd6e05e1554a5739c863ca354d241bfccb86c74")
 	version("0.2.4", sha256="5cb30e56ad5c1ac59786969edc8d542a7a1735a129a474f585a141aefe6a2295")
 	version("0.2.3", sha256="0c193abc8251a60e1d2a32a99c77651c336bc185e3c2a72e5f8781813d181c2c")
-	version("1.2.1", md5="49c581292e819a2a39aac321f27ab0a8")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-cli@3.3:", type=("build", "run"))

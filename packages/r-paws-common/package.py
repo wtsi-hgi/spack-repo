@@ -20,6 +20,7 @@ class RPawsCommon(RPackage):
 	cran = "paws.common" 
 
 	version("0.7.1", md5="9af459e0fbfbcc2232325db0e839a834")
+	version("0.7.0", md5="265db5ec7d08f7795d7b364b942ca358")
 
 	depends_on("r-base64enc", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))

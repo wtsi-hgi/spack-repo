@@ -13,8 +13,8 @@ class RSnakecase(RPackage):
 	into cases like snake or camel among others."""
 
 	cran = "snakecase"
-	version("0.11.0", sha256="998420a58391ac85785e60bcdf6fd6927c82758ad2859a9a73a0e57299e8c1cf")
 	version("0.11.1", md5="3e5cbad0056783cff60d05eb75881f62")
+	version("0.11.0", sha256="998420a58391ac85785e60bcdf6fd6927c82758ad2859a9a73a0e57299e8c1cf")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))

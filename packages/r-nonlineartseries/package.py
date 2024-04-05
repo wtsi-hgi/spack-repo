@@ -23,6 +23,7 @@ class RNonlineartseries(RPackage):
 	cran = "nonlinearTseries" 
 
 	version("0.3.0", md5="da3c2ba97df1bd38d721603193fad235")
+	version("0.2.12", md5="d59b88bfb25533256053206287f46486")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

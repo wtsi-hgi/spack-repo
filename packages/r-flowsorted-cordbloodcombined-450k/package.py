@@ -26,4 +26,3 @@ class RFlowsortedCordbloodcombined450k(RPackage):
 	depends_on("r-illuminahumanmethylationepicanno-ilm10b4-hg19", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))
 
-	# experiment

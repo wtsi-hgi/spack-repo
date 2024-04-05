@@ -20,4 +20,3 @@ class RRrbsdata(RPackage):
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biseq@1.9.2:", type=("build", "run"))
 
-	# experiment

@@ -16,6 +16,7 @@ class RSomaticsignatures(RPackage):
 
 	bioc = "SomaticSignatures"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SomaticSignatures_2.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SomaticSignatures/SomaticSignatures_2.38.0.tar.gz"]
+	version("2.38.0", md5="46d14334be0098323bc956bade5d5e9e")
 	version("2.36.0", commit="26ce72c1fc771f711796eccee0a24c1070d33066")
 	version("2.34.0", commit="249b1ef7cef3c94cfb96cc8aa2a16e00c2bd5d1f")
 	version("2.32.0", commit="444d37661d147618f6830fd5de01a83ddf2a694d")
@@ -26,7 +27,6 @@ class RSomaticsignatures(RPackage):
 	version("2.16.0", commit="4ae348d9fa096c0ec307df95149991edf6044977")
 	version("2.14.0", commit="b12d24f86e96a7c6a17cbbad21ca14fa3aa7c60f")
 	version("2.12.1", commit="932298c6877d076004de5541cec85a14e819517a")
-	version("2.38.0", md5="46d14334be0098323bc956bade5d5e9e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-variantannotation", type=("build", "run"))

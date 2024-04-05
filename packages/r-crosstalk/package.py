@@ -14,10 +14,10 @@ class RCrosstalk(RPackage):
 	linked brushing and filtering."""
 
 	cran = "crosstalk"
+	version("1.2.1", md5="f9e4a6f7e1cb679a69a8c10059bd0ecf")
 	version("1.2.0", sha256="4237baab35cd246a8a98fb9cf4ce53b6ddbc31d00742ded4edea0479613d1ea0")
 	version("1.1.0.1", sha256="36a70b10bc11826e314c05f9579fd791b9ac3b3a2cfed4d4ca74ce1ad991300e")
 	version("1.0.0", sha256="b31eada24cac26f24c9763d9a8cbe0adfd87b264cf57f8725027fe0c7742ca51")
-	version("1.2.1", md5="f9e4a6f7e1cb679a69a8c10059bd0ecf")
 
 	depends_on("r-htmltools@0.3.6:", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

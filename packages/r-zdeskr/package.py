@@ -21,6 +21,7 @@ class RZdeskr(RPackage):
 	cran = "zdeskR" 
 
 	version("0.4.1", md5="05d6c9f154d42a6567d138a3a83ea1ba")
+	version("0.3.0", md5="a6a7de558776889eeb1a737f43960066")
 
 	depends_on("r-dplyr@1:", type=("build", "run"))
 	depends_on("r-magrittr@1.5:", type=("build", "run"))

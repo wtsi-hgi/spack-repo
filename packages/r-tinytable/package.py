@@ -17,5 +17,6 @@ class RTinytable(RPackage):
 	cran = "tinytable" 
 
 	version("0.2.1", md5="33dde0eeb785de7cd622cc461b5b048c")
+	version("0.0.5", md5="b21869490f83976e2461d96532efb74f")
 
 	depends_on("r@4.1:", type=("build", "run"))

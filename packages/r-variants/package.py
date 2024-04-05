@@ -25,4 +25,3 @@ class RVariants(RPackage):
 	depends_on("r-bsgenome-hsapiens-ucsc-hg19", type=("build", "run"))
 	depends_on("r-polyphen-hsapiens-dbsnp131", type=("build", "run"))
 
-	# workflow

@@ -10,7 +10,7 @@ class RDoubletfinder(RPackage):
 
     git = "https://github.com/chris-mcginnis-ucsf/DoubletFinder"
 
-    version("2023.-08-18", commit="1b1d4e2d7f893a3552d9f8f791ab868ee4c782e6")
+	version("2023.-08-18", commit="1b1d4e2d7f893a3552d9f8f791ab868ee4c782e6")
 
     depends_on("r-fields", type=("build", "run"))
     depends_on("r-kernsmooth", type=("build", "run"))

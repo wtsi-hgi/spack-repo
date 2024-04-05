@@ -34,6 +34,7 @@ Extract Traits
 	cran = "growthPheno" 
 
 	version("2.1.24", md5="c398ef449a8394e4133631f361817db1")
+	version("2.1.23", md5="88a845d8baa7b302b9719a59304b97f9")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dae", type=("build", "run"))

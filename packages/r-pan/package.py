@@ -17,8 +17,8 @@ class RPan(RPackage):
 	University."""
 
 	cran = "pan"
+	version("1.9", md5="b6c1c18a3f9b89f068878e065b1f00a4")
 	version("1.6", sha256="adc0df816ae38bc188bce0aef3aeb71d19c0fc26e063107eeee71a81a49463b6")
 	version("1.4", sha256="e6a83f0799cc9714f5052f159be6e82ececd013d1626f40c828cda0ceb8b76dc")
-	version("1.9", md5="b6c1c18a3f9b89f068878e065b1f00a4")
 
 	depends_on("r@2.10:", type=("build", "run"))

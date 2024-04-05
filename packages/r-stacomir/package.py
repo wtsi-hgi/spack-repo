@@ -21,6 +21,7 @@ class RStacomir(RPackage):
 	cran = "stacomiR" 
 
 	version("0.6.1", md5="9e8cab7c7c8518ee59c8f1292a5e5d62")
+	version("0.6.0.7", md5="435f0529fc419a9ea3519c23da35aaeb")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-stacomirtools@0.6.0.1:", type=("build", "run"))

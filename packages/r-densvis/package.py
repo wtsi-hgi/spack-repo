@@ -33,8 +33,8 @@ class RDensvis(RPackage):
 
 	bioc = "densvis"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/densvis_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/densvis/densvis_1.12.1.tar.gz"]
-	version("1.10.0", commit="833db1fb7b2a5667575cc2e7c2fefc8360c8d7fb")
 	version("1.12.1", md5="ca37ec5b6c247bc5b20194bd889579e0")
+	version("1.10.0", commit="833db1fb7b2a5667575cc2e7c2fefc8360c8d7fb")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-basilisk", type=("build", "run"))

@@ -18,5 +18,6 @@ class RFroth(RPackage):
 	cran = "froth" 
 
 	version("1.1.0", md5="57241645e26189bf3a8181ff24655b1b")
+	version("1.0.0", md5="77354875ad027c36e09e85270c693649")
 
 	depends_on("r@4.3:", type=("build", "run"))

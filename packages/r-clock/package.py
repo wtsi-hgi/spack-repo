@@ -17,8 +17,8 @@ class RClock(RPackage):
 	and updating of components, and rounding."""
 
 	cran = "clock"
-	version("0.6.1", sha256="f80c385fd8229538968ffb71d7de53ddc82bfcec6641f8e76f299546c43c1702")
 	version("0.7.0", md5="d28202660aa1adbc17c996def84ad6d8")
+	version("0.6.1", sha256="f80c385fd8229538968ffb71d7de53ddc82bfcec6641f8e76f299546c43c1702")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cli@3.6.1:", type=("build", "run"))

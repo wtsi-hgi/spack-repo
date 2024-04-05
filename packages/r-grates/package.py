@@ -18,4 +18,5 @@ class RGrates(RPackage):
 	cran = "grates" 
 
 	version("1.2.0", md5="14dfc9844db472917afa1d052883dec1")
+	version("1.1.0", md5="227b8a2cf8e0281963c5fe1eb401b720")
 

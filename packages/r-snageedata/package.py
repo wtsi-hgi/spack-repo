@@ -20,4 +20,3 @@ class RSnageedata(RPackage):
 
 	depends_on("r@2.6:", type=("build", "run"))
 
-	# experiment

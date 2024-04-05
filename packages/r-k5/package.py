@@ -21,6 +21,7 @@ class RK5(RPackage):
 	cran = "k5" 
 
 	version("0.2.1", md5="a6bb389b79d780754a545e88a1571151", url="https://cran.r-project.org/src/contrib/k5_0.2.1.tar.gz")
+	version("0.0.5", md5="45d50882a1951a871a1c541ec16e9d05", url="https://cran.r-project.org/src/contrib/k5_0.0.5.tar.gz")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-clipr@0.8:", type=("build", "run"))

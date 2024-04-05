@@ -20,6 +20,7 @@ class RPrecommit(RPackage):
 	cran = "precommit" 
 
 	version("0.4.1", md5="3b4c13459907911f3ec2ae132db2b053")
+	version("0.4.0", md5="b6c0a5c304a9f527e70d7468829a407a")
 
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-fs", type=("build", "run"))

@@ -17,6 +17,7 @@ Model
 	cran = "PatientProfiles" 
 
 	version("0.7.0", md5="2133b557ac80d1a8e420962baabc275a")
+	version("0.6.1", md5="e05db33208f2984e1de76b9f94ba96cc")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

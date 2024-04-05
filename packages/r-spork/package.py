@@ -23,6 +23,7 @@ class RSpork(RPackage):
 	cran = "spork" 
 
 	version("0.3.3", md5="bd2c6f06c4aeec49dbf26dfec0d02ba1")
+	version("0.3.2", md5="afe00517875b3d7d05139174febbf330")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-png", type=("build", "run"))

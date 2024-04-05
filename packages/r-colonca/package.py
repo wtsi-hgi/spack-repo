@@ -19,4 +19,3 @@ class RColonca(RPackage):
 
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))
 
-	# experiment

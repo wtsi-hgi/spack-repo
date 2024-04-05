@@ -18,6 +18,7 @@ class RRpdbapi(RPackage):
 	cran = "rPDBapi" 
 
 	version("1.1", md5="08c797d07634e50fc35248090824f8af")
+	version("1.0", md5="c5855275c93d087f1d38d6bbf08e38c1")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))

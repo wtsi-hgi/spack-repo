@@ -16,10 +16,10 @@ class REpitxdbScSaccer3(RPackage):
 	bioc = "EpiTxDb.Sc.sacCer3" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EpiTxDb.Sc.sacCer3_0.99.5.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/EpiTxDb.Sc.sacCer3/EpiTxDb.Sc.sacCer3_0.99.5.tar.gz"]
 
+	version("0.99.5", md5="6d9e5f37e5dcb60e890d99d80fddda00", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/EpiTxDb.Sc.sacCer3_0.99.5.tar.gz")
 	version("0.99.5", md5="6d9e5f37e5dcb60e890d99d80fddda00", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EpiTxDb.Sc.sacCer3_0.99.5.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))
 	depends_on("r-epitxdb", type=("build", "run"))
 
-	# annotation

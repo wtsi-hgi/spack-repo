@@ -19,4 +19,3 @@ class RHumanchrloc(RPackage):
 
 	depends_on("r@2.7:", type=("build", "run"))
 
-	# annotation

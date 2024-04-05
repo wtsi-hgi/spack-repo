@@ -20,4 +20,3 @@ class RXcoredata(RPackage):
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-experimenthub@2.2:", type=("build", "run"))
 
-	# experiment

@@ -20,6 +20,7 @@ class RGgfields(RPackage):
 	cran = "ggfields" 
 
 	version("0.0.6", md5="e95ca8e0dc60b1144f9d7c44da03801c")
+	version("0.0.3", md5="48a7ab407a2886a99fa9aec204489624")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr@1.1.4:", type=("build", "run"))

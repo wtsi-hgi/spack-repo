@@ -28,6 +28,7 @@ Variable Selection
 	cran = "spinBayes" 
 
 	version("0.2.1", md5="6bb865aed0f5562a4efdbf154456554e")
+	version("0.1.0", md5="660825909018c3cb5b12901a8f77dfa2")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

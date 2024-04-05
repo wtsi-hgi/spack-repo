@@ -16,6 +16,7 @@ class RTidywikidatar(RPackage):
 	cran = "tidywikidatar" 
 
 	version("0.5.8", md5="0bc74d70983c8e09775821c6da60c667")
+	version("0.5.7", md5="2cc59aec4377e97d7608b1b3ce52de96")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

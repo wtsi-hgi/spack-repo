@@ -16,6 +16,7 @@ class RLpsolve(RPackage):
 	This version calls lp_solve"""
 
 	cran = "lpSolve"
+	version("5.6.20", md5="82005adb4666e53da367a88885842a17")
 	version("5.6.18", sha256="751e1926fcd81b852b6c0d5ea7ecd9311ef6fbdbce9143b7872fea79590de712")
 	version("5.6.17", sha256="f725802bd9dc05c6913daf48f2458441ad4d2996056d0942737886d8b76c9288")
 	version("5.6.16", sha256="18a11e5184914e02b056d3d8f54ad92e4bbce651d930d61430570b4ae2ecbb2a")
@@ -23,5 +24,4 @@ class RLpsolve(RPackage):
 	version("5.6.13.2", sha256="75f0c0af5cbdc219ac29c792342ecd625903632ad86e581c408879958aa88539")
 	version("5.6.13.1", sha256="6ad8dc430f72a4698fc4a615bb5ecb73690b3c4520e84d9094af51a528f720b8")
 	version("5.6.13", sha256="d5d41c53212dead4fd8e6425a9d3c5767cdc5feb19d768a4704116d791cf498d")
-	version("5.6.20", md5="82005adb4666e53da367a88885842a17")
 

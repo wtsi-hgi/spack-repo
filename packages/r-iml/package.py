@@ -27,6 +27,7 @@ class RIml(RPackage):
 	cran = "iml" 
 
 	version("0.11.2", md5="64de95cfe6930b47f43228d7712af662")
+	version("0.11.1", md5="0fef34e83d24025b71de3e43f27ded0b")
 
 	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

@@ -31,6 +31,7 @@ class RGeohabnet(RPackage):
 	cran = "geohabnet" 
 
 	version("2.1.0", md5="a75d6740116d18fad7451e003d23e366")
+	version("1.0.1", md5="660555e5c660855c020050f8becb1040")
 
 	depends_on("r-config@0.3.1:", type=("build", "run"))
 	depends_on("r-geodata@0.5.8:", type=("build", "run"))

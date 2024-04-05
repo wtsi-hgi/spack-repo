@@ -17,6 +17,7 @@ class RReferenceintervals(RPackage):
 	cran = "referenceIntervals" 
 
 	version("1.3.1", md5="b34c7bf959206828ca715f7ed5d564e6")
+	version("1.3.0", md5="fa36dcb58d039c35053898d3fb27b438")
 
 	depends_on("r-boot", type=("build", "run"))
 	depends_on("r-extremevalues", type=("build", "run"))

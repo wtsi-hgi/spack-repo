@@ -21,4 +21,3 @@ class RIlluminahumanv2beadidDb(RPackage):
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-org-hs-eg-db@2.4.5:", type=("build", "run"))
 
-	# annotation

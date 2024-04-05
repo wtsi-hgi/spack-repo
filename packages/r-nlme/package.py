@@ -12,6 +12,7 @@ class RNlme(RPackage):
 	Fit and compare Gaussian linear and nonlinear mixed-effects models."""
 
 	cran = "nlme"
+	version("3.1-164", md5="51367d404f1ca2f395922b073a7180a3")
 	version("3.1-162", sha256="ba6da2575554afa2614c4cba9971f8a9f8a07622d201284cb78899f3d6a2dc67")
 	version("3.1-160", sha256="d4454623194876b083774c662fd223bc3b9e8325824cb758b8adecd5dc0d8a08")
 	version("3.1-159", sha256="9bb05f5c3146e2d75078e668821485a3e9ca246fd5d7db2ef1963d3735d919bf")
@@ -24,7 +25,6 @@ class RNlme(RPackage):
 	version("3.1-139", sha256="0460fc69d85122177e7ef01bad665d56bcaf63d31bdbfdbdfdcba2c082085739")
 	version("3.1-131", sha256="79daa167eb9bc7d8dba506da4b24b5250665b051d4e0a51dfccbb0087fdb564c")
 	version("3.1-130", sha256="ec576bd906ef2e1c79b6a4382743d425846f63be2a43de1cce6aa397b40e290e")
-	version("3.1-164", md5="51367d404f1ca2f395922b073a7180a3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))

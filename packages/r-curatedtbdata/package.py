@@ -24,4 +24,3 @@ class RCuratedtbdata(RPackage):
 	depends_on("r-multiassayexperiment", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
 
-	# experiment

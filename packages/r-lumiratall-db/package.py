@@ -21,4 +21,3 @@ class RLumiratallDb(RPackage):
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-org-rn-eg-db@2.10.1:", type=("build", "run"))
 
-	# annotation

@@ -21,11 +21,11 @@ class RUwot(RPackage):
 	examples."""
 
 	cran = "uwot"
+	version("0.1.3", sha256="4936e6922444cae8a71735e945b6bb0828a1012232eb94568054f78451c406d7")
+	version("0.1.16", md5="bc3f6277a5ef9c657baa0215964c910d")
 	version("0.1.14", sha256="8016e8192b7e72604ca71840cbe43fa1d2caed8a8ad7cbf20e85cd3b384a9fe0")
 	version("0.1.11", sha256="4fcf90f1369a2a1f01db9e05a2365b155b2ada8e51e1f7f3ba5122d86affd41b")
 	version("0.1.10", sha256="6ee1b6027bce679cd5a35f647f516a5b327632234bcf323c7f3d5b5e10807d23")
-	version("0.1.3", sha256="4936e6922444cae8a71735e945b6bb0828a1012232eb94568054f78451c406d7")
-	version("0.1.16", md5="bc3f6277a5ef9c657baa0215964c910d")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

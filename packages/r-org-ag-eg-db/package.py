@@ -20,4 +20,3 @@ class ROrgAgEgDb(RPackage):
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))
 
-	# annotation

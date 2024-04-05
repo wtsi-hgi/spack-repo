@@ -22,6 +22,7 @@ class RRjsdmx(RPackage):
 	cran = "RJSDMX" 
 
 	version("3.1-0", md5="f7717972d6259357cc8536f81b928e5e")
+	version("3.0-6", md5="63ce196ebfd74e25ccdfe28c2f7dad9a")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rjava@0.8.8:", type=("build", "run"))

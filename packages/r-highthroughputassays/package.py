@@ -23,4 +23,3 @@ class RHighthroughputassays(RPackage):
 	depends_on("r-flowstats", type=("build", "run"))
 	depends_on("r-flowworkspace", type=("build", "run"))
 
-	# workflow

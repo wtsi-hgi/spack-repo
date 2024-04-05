@@ -20,6 +20,7 @@ class RS4vectors(RPackage):
 
 	bioc = "S4Vectors"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/S4Vectors_0.40.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/S4Vectors/S4Vectors_0.40.2.tar.gz"]
+	version("0.40.2", md5="ee94f4f6c25dcaf7a50f5814495310e3")
 	version("0.38.0", commit="e80c24e1481033741147a0677fb42ce455e7da74")
 	version("0.36.0", commit="af58701957ffdd9209031dd6a8dee3acdc58e999")
 	version("0.34.0", commit="f590de3ec4d896a63351d0c1925d3856c0bd5292")
@@ -31,7 +32,6 @@ class RS4vectors(RPackage):
 	version("0.18.3", commit="d6804f94ad3663828440914920ac933b934aeff1")
 	version("0.16.0", commit="00fec03fcbcb7cff37917fab0da28d91fdf9dc3d")
 	version("0.14.7", commit="40af17fe0b8e93b6a72fc787540d2961773b8e23")
-	version("0.40.2", md5="ee94f4f6c25dcaf7a50f5814495310e3")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.37:", type=("build", "run"))

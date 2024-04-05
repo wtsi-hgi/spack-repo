@@ -17,6 +17,7 @@ class RInlpubs(RPackage):
 	cran = "inlpubs" 
 
 	version("1.1.1", md5="720bff33520efaefd01c3de883cfa149")
+	version("1.0.6", md5="c09ae0059b82761efed559c3630d7dd0")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

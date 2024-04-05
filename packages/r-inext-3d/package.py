@@ -27,6 +27,7 @@ Biodiversity
 	cran = "iNEXT.3D" 
 
 	version("1.0.4", md5="938a5070cb41a1f037cadd49628ecb12")
+	version("1.0.1", md5="1e3a74a2f9194491c7d3d5c5e5b2b25a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))

@@ -19,6 +19,7 @@ Library
 	cran = "apexcharter" 
 
 	version("0.4.2", md5="30b25e86787bebe6ecf52fe50f6cdb54")
+	version("0.4.1", md5="db5614a0052d4a4bc2491ee14b7cb3ab")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-htmltools", type=("build", "run"))

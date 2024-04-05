@@ -15,6 +15,7 @@ class RRprofet(RPackage):
 	cran = "Rprofet" 
 
 	version("3.1.1", md5="1fd3ebaedce1c902da2f728162c5eead")
+	version("2.2.1", md5="1009d833038e577f7349fa1319f63ce7")
 
 	depends_on("r-binr", type=("build", "run"))
 	depends_on("r-clustofvar", type=("build", "run"))

@@ -23,4 +23,3 @@ class REmtdata(RPackage):
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 
-	# experiment

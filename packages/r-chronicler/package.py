@@ -17,8 +17,8 @@ class RChronicler(RPackage):
 	
 	cran = "chronicler" 
 
-	version("0.2.1", md5="5ecff09bc12a0392d2f44ab024330035")
 	version("0.2.2", md5="ed23518bee313d1c67d5d069dd663124")
+	version("0.2.1", md5="5ecff09bc12a0392d2f44ab024330035")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-clipr", type=("build", "run"))

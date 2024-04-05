@@ -21,4 +21,3 @@ class RMmappr2data(RPackage):
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))
 
-	# experiment

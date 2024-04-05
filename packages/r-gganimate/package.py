@@ -21,6 +21,7 @@ class RGganimate(RPackage):
 	cran = "gganimate" 
 
 	version("1.0.9", md5="9be9453ae809aa81f1722f2215681edb")
+	version("1.0.8", md5="2ec08a5316dfd4d845238dfb296e2b91")
 
 	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

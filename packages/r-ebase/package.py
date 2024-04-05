@@ -21,8 +21,8 @@ Ecosystem Metabolism
 	homepage = "https://fawda123.github.io/EBASE/"
 	cran = "EBASE" 
 
-	version("1.0.0", md5="01adc979bb1a458fa90bfd6d3496db27")
 	version("1.0.1", md5="5aa31c21dc6ee13f2eb5333ebde158dc")
+	version("1.0.0", md5="01adc979bb1a458fa90bfd6d3496db27")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -16,6 +16,10 @@ class RSets(RPackage):
 	cran = "sets"
 
 	maintainers("jgaeb")
+	version("1.0-9", sha256="748b254fedfe710bd295eb99168799c711f6a563b986b4f98e32f6ecc0c6de54")
+	version("1.0-8", sha256="fa93e8e44b12cba33e9e1ca71e0d5ea84f3beb5656de9031c78e87ebfc2ee799")
+	version("1.0-7", sha256="29f717a4b71fb2e72f3ce04f4cd703cc860c28c0f58a0e3b2adc1bcaa3b742ba")
+	version("1.0-25", md5="a312dd5cf3d7df308781508d57c298b0")
 	version("1.0-24", sha256="e75733f5c9418eb09fb950a4a94ccf84ddd88231c61ee80d02b7f0917debcac9")
 	version("1.0-23", sha256="e5b6bc52060421c572d7f2d99b25909a38eacabd5344a47e1cdb2662c62d690b")
 	version("1.0-22", sha256="6fbf9aa6b0113a58e04f803ab35593feabb0fb55d486d54afb59e027008f9ec6")
@@ -31,9 +35,6 @@ class RSets(RPackage):
 	version("1.0-12", sha256="b1d1868bfba7c22e4bd726d534b1afbe593bde1f8e209ddb76613d1dd9c9954a")
 	version("1.0-11", sha256="133d36b6fc3cb75097a829edbc15542f4817e2b6edf2a4d4830004a74308449f")
 	version("1.0-10", sha256="5a631056ceb192ca35ecfc1cf10a0cf5a1671a3d5e50f942b0ac2e2098c909d0")
-	version("1.0-9", sha256="748b254fedfe710bd295eb99168799c711f6a563b986b4f98e32f6ecc0c6de54")
-	version("1.0-8", sha256="fa93e8e44b12cba33e9e1ca71e0d5ea84f3beb5656de9031c78e87ebfc2ee799")
-	version("1.0-7", sha256="29f717a4b71fb2e72f3ce04f4cd703cc860c28c0f58a0e3b2adc1bcaa3b742ba")
 	version("1.0", sha256="02b85933d9cd55e281c3a87889d827021394b51ba714e87359a36cbf60b50980")
 	version("0.7", sha256="f450feaa2df5071c2029367edac867d7dbe435d202e5b1475e48827bc10bdf06")
 	version("0.6", sha256="d682e5fe37d7fb2ded11ca702f9af2bf744cc56b3d5b310dba20dda2df6b1dc6")
@@ -48,6 +49,5 @@ class RSets(RPackage):
 	version("0.1-2", sha256="87fa3292eca69d358ea615c39240bb2151afc3a64f004b975f1918602ff9c694")
 	version("0.1-1", sha256="4e41480757e33897a26974e5234801ff1c15f1a3952c96071787b43141a130de")
 	version("0.1", sha256="18dda6c9d526a2f41f2b49a472fb27a7f1bb9ce6ea137b8963e8ad6c378825d0")
-	version("1.0-25", md5="a312dd5cf3d7df308781508d57c298b0")
 
 	depends_on("r@2.7:", type=("build", "run"))

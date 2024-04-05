@@ -19,4 +19,3 @@ class RSmokingmouse(RPackage):
 	version("1.0.0", md5="0c2fad6bf0e911ae8c140c02bc29150e")
 
 
-	# experiment

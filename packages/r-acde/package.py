@@ -23,6 +23,9 @@ class RAcde(RPackage):
 	bioc = "acde"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/acde_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/acde/acde_1.32.0.tar.gz"]
 
+	version("1.8.0", commit="f7fc3e1dce958445f920d3b28b56abde70bfb9de")
+	version("1.6.0", commit="244c81f435a077bf7895ea565fa6695e8b079f67")
+	version("1.32.0", md5="9a324caddfceb2aa977e0fc9e7e41615")
 	version("1.30.0", commit="4c16b9fd6c91a433bf1345252e022571c4983cb5")
 	version("1.28.0", commit="0edccca7be2475fa2ae3b3c36d0d64924c37b3c0")
 	version("1.26.0", commit="dfef9a435062e948efd5eda22942a0d500baa992")
@@ -31,9 +34,6 @@ class RAcde(RPackage):
 	version("1.14.0", commit="6017c7436a46f186b2a3cea9d2b93274f6dd3417")
 	version("1.12.0", commit="f6ce5926ac915c2d73436f47daf7f9791645dad4")
 	version("1.10.0", commit="2c303dec45f3c70bf333a6eacae568a08d5ca010")
-	version("1.8.0", commit="f7fc3e1dce958445f920d3b28b56abde70bfb9de")
-	version("1.6.0", commit="244c81f435a077bf7895ea565fa6695e8b079f67")
-	version("1.32.0", md5="9a324caddfceb2aa977e0fc9e7e41615")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-boot@1.3:", type=("build", "run"))

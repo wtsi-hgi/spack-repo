@@ -17,6 +17,7 @@ class RRgrass(RPackage):
 	cran = "rgrass" 
 
 	version("0.4-2", md5="ff750147de320425de5104c35b610fdb")
+	version("0.4-1", md5="e6b4a48b3b776f2d51d28419e2ee8e33")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))

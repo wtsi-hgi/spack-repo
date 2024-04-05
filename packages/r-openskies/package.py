@@ -17,6 +17,7 @@ class ROpenskies(RPackage):
 	cran = "openSkies" 
 
 	version("1.2.1", md5="5b345bd6d846e6c235bf5ce56c0a29c2")
+	version("1.1.6", md5="7c532cf734909f8740a99d1b4554001d")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-ssh", type=("build", "run"))

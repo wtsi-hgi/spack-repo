@@ -23,6 +23,7 @@ V3
 	cran = "gadget3" 
 
 	version("0.11-1", md5="72164af6f2cfa293a57b86088102e982", url="https://cran.r-project.org/src/contrib/gadget3_0.11-1.tar.gz")
+	version("0.10-1", md5="5f3d3685c1c8f9af3c796cc7ca143d65", url="https://cran.r-project.org/src/contrib/gadget3_0.10-1.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))

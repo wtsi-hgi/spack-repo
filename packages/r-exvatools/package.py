@@ -23,8 +23,8 @@ Tools
 	
 	cran = "exvatools" 
 
-	version("0.6.0", md5="c34a2b097408d2a58dd7e17980435622")
 	version("0.7.0", md5="b13b60f8b09ed11853f85bec66f3c149")
+	version("0.6.0", md5="c34a2b097408d2a58dd7e17980435622")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

@@ -16,6 +16,7 @@ class RMicroeco(RPackage):
 	cran = "microeco" 
 
 	version("1.6.0", md5="b9ce1fcb2ae6e9926aaf5a6f3e324c36")
+	version("1.4.0", md5="6cf9ceff622309072cb2f90ab29f8893")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

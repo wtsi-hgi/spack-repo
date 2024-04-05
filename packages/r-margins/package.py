@@ -17,6 +17,7 @@ class RMargins(RPackage):
 	cran = "margins" 
 
 	version("0.3.26.1", md5="dd589d282b4de60a78614e3d0cabac3b")
+	version("0.3.26", md5="089978cd9b7fd9b0ba75525c9efe4641")
 
 	depends_on("r-prediction@0.3.6:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

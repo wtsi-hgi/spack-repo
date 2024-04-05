@@ -21,4 +21,3 @@ class RChickenDb(RPackage):
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-org-gg-eg-db@3.13:", type=("build", "run"))
 
-	# annotation

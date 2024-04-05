@@ -20,6 +20,7 @@ class RNair(RPackage):
 	cran = "NAIR" 
 
 	version("1.0.4", md5="a7e3d1705c0d54e2df6982deb1aba44b")
+	version("1.0.3", md5="2ce3d3f2f8fdda744be613d180b8310e")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

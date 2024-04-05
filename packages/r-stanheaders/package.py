@@ -26,13 +26,14 @@ class RStanheaders(RPackage):
 	estimate, and analyze Stan models."""
 
 	cran = "StanHeaders"
+	version("2.32.6", md5="6186e76365d883342e98effa1176b3f3")
+	version("2.32.5", md5="b6451f9244ccd0682327dcbaf63685c4")
 	version("2.21.0-7", sha256="27546e064f0e907e031d9185ad55245d118d82fbe3074ecb1d76fae8b9f2336b")
 	version("2.21.0-6", sha256="a0282a054d0e6ab310ec7edcffa953b77c7e4a858d9ac7028aab1b4fb4ce8cf3")
 	version("2.18.1-10", sha256="8a9f7e22105428e97d14f44f75395c37cf8c809de148d279c620024452b3565a")
 	version("2.18.1", sha256="ce0d609a7cd11725b1203bdeae92acc54da3a48b8266eb9dbdb9d95b14df9209")
 	version("2.17.1", sha256="4300a1910a2eb40d7a6ecabea3c1e26f0aa9421eeb3000689272a0f62cb80d97")
 	version("2.10.0-2", sha256="ce4e335172bc65da874699302f6ba5466cdbcf69458c11954c0f131fc78b59b7")
-	version("2.32.6", md5="6186e76365d883342e98effa1176b3f3")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcppparallel@5.1.4:", type=("build", "run"))

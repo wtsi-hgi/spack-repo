@@ -19,6 +19,7 @@ class RSqlrender(RPackage):
 	cran = "SqlRender" 
 
 	version("1.17.0", md5="ec10766001ac7466e77c5c9e2eb4d48f")
+	version("1.16.1", md5="b06afebace400476a6f44c69605c9979")
 
 	depends_on("r-rjava", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

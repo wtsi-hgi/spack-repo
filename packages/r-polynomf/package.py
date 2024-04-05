@@ -17,6 +17,7 @@ class RPolynomf(RPackage):
 	cran = "PolynomF" 
 
 	version("2.0-8", md5="88ac06ba0ec7952797e634622de5530d")
+	version("2.0-5", md5="6e054febdcdf7444dc14233bfc1e1fa1")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

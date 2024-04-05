@@ -15,12 +15,12 @@ class RLabelled(RPackage):
 	package."""
 
 	cran = "labelled"
-	version("2.11.0", sha256="eddc5299ca448ea9c244960af65b95f4164495febd609f719e0f453598a0e5dd")
-	version("2.10.0", sha256="5e93e29dcbbf0f6273b502b744695426e238ffe106f1db2bb5daeb1f17c9c40a")
 	version("2.9.1", sha256="9eb10b245f64f3fb7346121aa4cd98638946e1cc4208dd5e28791ef8fd62fa40")
 	version("2.9.0", sha256="36ac0e169ee065a8bced9417efeb85d62e1504a590d4321667d8a6213285d639")
 	version("2.7.0", sha256="b1b66b34d3ad682e492fc5bb6431780760576d29dbac40d87bef3c0960054bdb")
 	version("2.12.0", md5="401ed8a893355755d5bdbbaa5b294dd0")
+	version("2.11.0", sha256="eddc5299ca448ea9c244960af65b95f4164495febd609f719e0f453598a0e5dd")
+	version("2.10.0", sha256="5e93e29dcbbf0f6273b502b744695426e238ffe106f1db2bb5daeb1f17c9c40a")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-haven@2.4.1:", type=("build", "run"))

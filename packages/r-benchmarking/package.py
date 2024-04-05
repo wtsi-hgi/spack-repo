@@ -29,6 +29,7 @@ class RBenchmarking(RPackage):
 	cran = "Benchmarking" 
 
 	version("0.32", md5="1f0744873f6c41d896d3fb0f094be0ca")
+	version("0.31", md5="136460e58c711ed9cc1cdbdbde2e5b86")
 
 	depends_on("r-lpsolveapi", type=("build", "run"))
 	depends_on("r-ucminf", type=("build", "run"))

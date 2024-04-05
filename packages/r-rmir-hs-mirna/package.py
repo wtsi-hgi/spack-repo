@@ -20,4 +20,3 @@ class RRmirHsMirna(RPackage):
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

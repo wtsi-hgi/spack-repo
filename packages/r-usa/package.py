@@ -19,6 +19,7 @@ class RUsa(RPackage):
 	cran = "usa" 
 
 	version("0.1.2", md5="9ce720fd90815e67704e201e0887e583")
+	version("0.1.0", md5="90853d9cacb5938d1b0729159e11c1a5")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-tibble@2.1.3:", type=("build", "run"))

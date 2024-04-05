@@ -17,6 +17,7 @@ class RAffyilm(RPackage):
 	bioc = "affyILM"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affyILM_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affyILM/affyILM_1.54.0.tar.gz"]
 
+	version("1.54.0", md5="96d1989fb75742f6a9b0f9d8df1c3fc0")
 	version("1.52.0", commit="08ed8c60921ba1b9e04fa90e156eef1a3c899d15")
 	version("1.50.0", commit="185cd8e4712a3378ce7a156d4940224bbb2c4122")
 	version("1.48.0", commit="4603a4c4d6c2330a8a56a7bb657dc56c51a9393a")
@@ -27,7 +28,6 @@ class RAffyilm(RPackage):
 	version("1.32.0", commit="860f2ddada80435d309ba334eff3fab503817755")
 	version("1.30.0", commit="c07d91ae52a2a48f0a5f212c3ecf3243741bee13")
 	version("1.28.0", commit="307bee3ebc599e0ea4a1d6fa8d5511ccf8bef7de")
-	version("1.54.0", md5="96d1989fb75742f6a9b0f9d8df1c3fc0")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-gcrma", type=("build", "run"))

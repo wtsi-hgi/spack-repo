@@ -15,6 +15,7 @@ class RDirectional(RPackage):
 	cran = "Directional" 
 
 	version("6.5", md5="1a42a66a0536fff8ebceb0450d9adfe3")
+	version("6.4", md5="5107d99a866225b6b178e73f37520201")
 
 	depends_on("r-bigstatsr", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

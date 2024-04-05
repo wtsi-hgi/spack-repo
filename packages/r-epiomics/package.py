@@ -26,6 +26,7 @@ class REpiomics(RPackage):
 	cran = "epiomics" 
 
 	version("1.1.0", md5="0df81a8c56bb1c8f455925fa9717ba3f")
+	version("1.0.0", md5="92aa9691f0a257ebc2479b0bde9385ff")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

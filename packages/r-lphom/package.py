@@ -26,6 +26,7 @@ class RLphom(RPackage):
 	cran = "lphom" 
 
 	version("0.3.5-5", md5="fe2e11c6cb425321e57cc51b2a2e3a32")
+	version("0.3.5-4", md5="29ad1a14c93519e46fe2cd48992fd436")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-lpsolve@5.6.18:", type=("build", "run"))

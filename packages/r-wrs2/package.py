@@ -16,6 +16,7 @@ class RWrs2(RPackage):
 	cran = "WRS2" 
 
 	version("1.1-6", md5="1d680b11b9cdc32bfd9ea886b0754904", url="https://cran.r-project.org/src/contrib/WRS2_1.1-6.tar.gz")
+	version("1.1-5", md5="6b62eb1a538402fc884977359460140b", url="https://cran.r-project.org/src/contrib/WRS2_1.1-5.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

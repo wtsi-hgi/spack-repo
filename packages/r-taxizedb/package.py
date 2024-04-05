@@ -15,9 +15,10 @@ class RTaxizedb(RPackage):
 	queries directly or used in 'dplyr'."""
 
 	cran = "taxizedb"
+	version("0.3.1", sha256="452a1b8079e370c1f29a1ff40d731a5b04c935068b1d6b1c5d808e8bebbafd94")
+	version("0.3.1", md5="b20c3c41df743cba956def4293dc8106")
 	version("0.3.0", sha256="5f28338a233f0021097147e74c5f83107e5847de3413eceb308208e39af9fcb4")
 	version("0.1.4", sha256="5a40569a2b5abe56201f112a10220150353412df39b7e8d21ea8698f424cf295")
-	version("0.3.1", md5="b20c3c41df743cba956def4293dc8106")
 
 	depends_on("r-curl@2.4:", type=("build", "run"))
 	depends_on("r-dbi@0.6.1:", type=("build", "run"))

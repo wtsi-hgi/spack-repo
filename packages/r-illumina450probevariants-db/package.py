@@ -15,13 +15,12 @@ class RIllumina450probevariantsDb(RPackage):
 
 	bioc = "Illumina450ProbeVariants.db"
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Illumina450ProbeVariants.db_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Illumina450ProbeVariants.db/Illumina450ProbeVariants.db_1.38.0.tar.gz"]
+	version("1.38.0", md5="ca34eec73a57e5f226b70a20ef706ee3")
 	version("1.36.0", commit="aaa4254cebb352730779677cef7a7c99c1447e7a")
 	version("1.34.0", commit="6c0f0b4d2bcf13da852b2f132a8ce1229fa5269e")
 	version("1.32.0", commit="a15602253e675a104303627957653a08876d8d7c")
 	version("1.30.0", commit="ba1296b4aafc287dea61f5f37c6c99fd553e52a2")
 	version("1.26.0", commit="fffe6033cc8d87354078c14de1e29976eaedd611")
-	version("1.38.0", md5="ca34eec73a57e5f226b70a20ef706ee3")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 
-	# experiment

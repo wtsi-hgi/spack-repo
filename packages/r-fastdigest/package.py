@@ -23,5 +23,6 @@ class RFastdigest(RPackage):
 
 	license("Artistic-2.0")
 
+	version("0.6-3", sha256="62a04aa39f751cf9bb7ff43cadb3c1a8d2270d7f3e8550a2d6ca9e1d8ca09a09")
 	version("0.6-3", md5="ed60da6cded36a298ef6215aaae897b0")
 

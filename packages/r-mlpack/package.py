@@ -19,6 +19,7 @@ class RMlpack(RPackage):
 	cran = "mlpack" 
 
 	version("4.3.0.1", md5="d078f63ac04ccf59112dfcfc71c7b7aa")
+	version("4.3.0", md5="3d84c4dcb73d8a146916aa7c5cb79993")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

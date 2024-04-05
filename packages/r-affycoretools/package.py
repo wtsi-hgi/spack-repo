@@ -16,6 +16,7 @@ class RAffycoretools(RPackage):
 	bioc = "affycoretools"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affycoretools_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affycoretools/affycoretools_1.74.0.tar.gz"]
 
+	version("1.74.0", md5="0e35c33fb3f3a4cdc7778efacbc45441")
 	version("1.72.0", commit="229ae09efc1a66e64ea395019c32d16387bf81ac")
 	version("1.70.0", commit="f09a788aa83e1e052a7c5f148a451a99fe9c9c96")
 	version("1.68.1", commit="69546b1fe5edd71eca130d53d33f0fb0fcf62c97")
@@ -26,7 +27,6 @@ class RAffycoretools(RPackage):
 	version("1.52.2", commit="2f98c74fad238b94c1e453b972524ab7b573b0de")
 	version("1.50.6", commit="4be92bcb55d7bace2a110865b7530dcfac14e76e")
 	version("1.48.0", commit="e0d52e34eead1ac45d3e60c59efd940e4889eb99")
-	version("1.74.0", md5="0e35c33fb3f3a4cdc7778efacbc45441")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

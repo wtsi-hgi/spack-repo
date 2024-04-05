@@ -17,6 +17,7 @@ Single Cell Sequencing
 	cran = "scCustomize" 
 
 	version("2.1.2", md5="5409a8b8f7f5c6a3d215d1100ca6d406")
+	version("2.0.1", md5="cce9cd7882ac5db7e4ac3070d8616816")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-seurat@4.3.0.1:", type=("build", "run"))

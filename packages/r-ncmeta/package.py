@@ -21,6 +21,7 @@ class RNcmeta(RPackage):
 	cran = "ncmeta" 
 
 	version("0.4.0", md5="10a98935f8ef628b71c8f93d5e0e3224")
+	version("0.3.6", md5="e38fff220a5ed49a5304684562b56ac9")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

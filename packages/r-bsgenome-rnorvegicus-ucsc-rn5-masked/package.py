@@ -20,4 +20,3 @@ class RBsgenomeRnorvegicusUcscRn5Masked(RPackage):
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-rnorvegicus-ucsc-rn5", type=("build", "run"))
 
-	# annotation

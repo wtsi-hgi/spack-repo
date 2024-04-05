@@ -20,6 +20,7 @@ class RSemhelpinghands(RPackage):
 	homepage = "https://sfcheung.github.io/semhelpinghands/"
 	cran = "semhelpinghands" 
 
+	version("0.1.9", md5="50c79e7265b350556236bb7b86dc885f")
 	version("0.1.10", md5="e6cd4db061a1843170d65741b30554e5")
 
 	depends_on("r@4.1:", type=("build", "run"))

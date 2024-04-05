@@ -15,8 +15,8 @@ class RBupar(RPackage):
 	homepage = "https://bupar.net/"
 	cran = "bupaR" 
 
-	version("0.5.3", md5="f3d1d517287af231c9ca04b499ef23d1")
 	version("0.5.4", md5="8d1169e3910a8c04e0c88c51837c4480")
+	version("0.5.3", md5="f3d1d517287af231c9ca04b499ef23d1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

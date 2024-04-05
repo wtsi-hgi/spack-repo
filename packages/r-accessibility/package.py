@@ -25,6 +25,7 @@ class RAccessibility(RPackage):
 	cran = "accessibility" 
 
 	version("1.4.0", md5="ffb83717d16c6a17a59cb863301590f4")
+	version("1.3.0", md5="533902d9d34adb930b0f1f39134135d3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

@@ -17,11 +17,11 @@ class RSctransform(RPackage):
 	<doi:10.1101/576827> for more details."""
 
 	cran = "sctransform"
+	version("0.4.1", md5="5db97bf1a8405b03140183ba9a609a65")
 	version("0.3.5", sha256="c08e56df05d64ed04ee53eb9e1d4d321da8aff945e36d56db1d5ceb1cd7e6e0b")
 	version("0.3.3", sha256="83af125c40f211e1ddae5098f88766aea1453c02ae98486081f3efadb3620b2b")
 	version("0.3.2", sha256="5dbb0a045e514c19f51bbe11c2dba0b72dca1942d6eb044c36b0538b443475dc")
 	version("0.2.0", sha256="d7f4c7958693823454f1426b23b0e1e9c207ad61a7a228602a1885a1318eb3e4")
-	version("0.4.1", md5="5db97bf1a8405b03140183ba9a609a65")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

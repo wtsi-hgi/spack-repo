@@ -18,6 +18,7 @@ class RHicp(RPackage):
 	cran = "hicp" 
 
 	version("0.4.2", md5="fc63cc644764bf842ce0c09477bded49")
+	version("0.4.1", md5="3edca9249604e9ca4872662175ad30e8")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-restatapi@0.21:", type=("build", "run"))

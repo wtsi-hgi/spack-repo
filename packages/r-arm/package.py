@@ -16,8 +16,8 @@ Models
 	homepage = "https://CRAN.R-project.org/package=arm"
 	cran = "arm" 
 
-	version("1.13-1", md5="45f20b21de61f2132e7ba652d52ff36d")
 	version("1.14-4", md5="7a901ecf306d25cb94228a4bc03bc050")
+	version("1.13-1", md5="45f20b21de61f2132e7ba652d52ff36d")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

@@ -36,6 +36,7 @@ class RRnmamod(RPackage):
 	cran = "rnmamod" 
 
 	version("0.4.0", md5="b4b2260da24b64866c7ef5e5f637c5c3")
+	version("0.3.0", md5="6ee66555783fe2aead8f6826300bcb12")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))

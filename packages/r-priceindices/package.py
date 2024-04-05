@@ -16,6 +16,7 @@ class RPriceindices(RPackage):
 	cran = "PriceIndices" 
 
 	version("0.1.9", md5="00abb9a121896fc67ac22fd21135ef17")
+	version("0.1.8", md5="54883c04933dba292af646da16e86c58")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-lubridate@1.7.4:", type=("build", "run"))

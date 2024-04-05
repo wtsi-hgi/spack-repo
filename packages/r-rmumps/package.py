@@ -24,6 +24,7 @@ class RRmumps(RPackage):
 	cran = "rmumps" 
 
 	version("5.2.1-29", md5="5cff3e513fddd201004c88976eb11d47")
+	version("5.2.1-27", md5="8f8e528cef5f47e33f2be5eaac97d069")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("zlib", type=("build", "link", "run"))

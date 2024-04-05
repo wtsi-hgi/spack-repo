@@ -16,6 +16,7 @@ class RFramecleaner(RPackage):
 	cran = "framecleaner" 
 
 	version("0.2.1", md5="a6512724d42ab8458b5747f8759dee00")
+	version("0.2.0", md5="6e340ef672d37b4a23224748fe15d2d6")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))

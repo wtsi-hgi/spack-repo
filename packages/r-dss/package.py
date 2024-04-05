@@ -18,6 +18,7 @@ class RDss(RPackage):
 
 	bioc = "DSS"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DSS_2.50.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DSS/DSS_2.50.1.tar.gz"]
+	version("2.50.1", md5="96713d3519e0dcf2f1331b7e9a8dbb95")
 	version("2.48.0", commit="03ceee2656e57b717e4fd7f22ff389f118421ae1")
 	version("2.46.0", commit="debfbac4bc741961ba57915d4f2d98534f02cc21")
 	version("2.44.0", commit="b9f44106f139c93564dfb4afab50555d24a657ba")
@@ -26,7 +27,6 @@ class RDss(RPackage):
 	version("2.36.0", commit="841c7ed72a138a458ee2df52336050dbe581e727")
 	version("2.34.0", commit="f9819c7d7927c8e6d9963632cdeab36c8c22caa8")
 	version("2.32.0", commit="ffb502d20810a873c2376199d44adedf7c83912d")
-	version("2.50.1", md5="96713d3519e0dcf2f1331b7e9a8dbb95")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

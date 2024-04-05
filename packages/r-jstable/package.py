@@ -16,6 +16,7 @@ class RJstable(RPackage):
 	cran = "jstable" 
 
 	version("1.1.9", md5="2113aeb2dfb7565f32650db7640d8fa4")
+	version("1.1.6", md5="777abf446e10f2e90ad11e6520c248e2")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-geepack", type=("build", "run"))

@@ -14,10 +14,10 @@ class RSplancs(RPackage):
 	"maintenance mode"."""
 
 	cran = "splancs"
+	version("2.01-44", md5="44e5896425648e699fb0fe15fef191fc")
 	version("2.01-43", sha256="b351565e1f69f6c86a29d921d3a18d5896c4586e2ab8c73bb3df8e75630fc448")
 	version("2.01-42", sha256="8c0af4764521e20b629dba6afd5c284e7be48786f378c37668eacfa26d2ef0aa")
 	version("2.01-40", sha256="79744381ebc4a361740a36dca3c9fca9ae015cfe0bd585b7856a664a3da74363")
-	version("2.01-44", md5="44e5896425648e699fb0fe15fef191fc")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-sp@0.9:", type=("build", "run"))

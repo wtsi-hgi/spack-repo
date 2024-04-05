@@ -18,8 +18,9 @@ class RShinystan(RPackage):
 	using the 'rstan' and 'rstanarm' packages)."""
 
 	cran = "shinystan"
-	version("2.5.0", sha256="45f9c552a31035c5de8658bb9e5d72da7ec1f88fbddb520d15fe701c677154a1")
+	version("2.6.0", sha256="a084856a2d66d8744f2c72e3e19ca35e600a508ed7ef1f7ebed8c7fc0738d529")
 	version("2.6.0", md5="23bbac40f95a658610d51e891aba6edd")
+	version("2.5.0", sha256="45f9c552a31035c5de8658bb9e5d72da7ec1f88fbddb520d15fe701c677154a1")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-shiny@1.0.3:", type=("build", "run"))

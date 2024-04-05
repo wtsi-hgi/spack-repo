@@ -19,6 +19,7 @@ class RFeasts(RPackage):
 	cran = "feasts" 
 
 	version("0.3.2", md5="6b661b84b960def4c3eccb3269e7b995")
+	version("0.3.1", md5="9b3e7251d98ba926fcf9fa334b79369e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-fabletools@0.3.1:", type=("build", "run"))

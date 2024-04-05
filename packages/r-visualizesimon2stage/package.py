@@ -18,6 +18,7 @@ class RVisualizesimon2stage(RPackage):
 	cran = "VisualizeSimon2Stage" 
 
 	version("0.1.3", md5="3410783d2ab598a3595ae3521c6a52f6")
+	version("0.1.2", md5="5854bf4c19fef497f8186594db6974eb")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

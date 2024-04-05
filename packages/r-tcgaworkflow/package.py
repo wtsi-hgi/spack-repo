@@ -54,4 +54,3 @@ class RTcgaworkflow(RPackage):
 	depends_on("r-dt", type=("build", "run"))
 	depends_on("r-gt", type=("build", "run"))
 
-	# workflow

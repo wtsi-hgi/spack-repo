@@ -25,6 +25,7 @@ class RNanonext(RPackage):
 	cran = "nanonext" 
 
 	version("0.13.2", md5="acfdcfda771ca9bffeff4d62baa44b32")
+	version("0.13.0", md5="827b4572fd31de8cab4efcee5898b38f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("cmake", type=("build", "link", "run"))

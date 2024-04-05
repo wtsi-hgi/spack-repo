@@ -26,6 +26,7 @@ class RKim(RPackage):
 	cran = "kim" 
 
 	version("0.5.422", md5="aebc74f6c4bdcc20adac0be8429f9ec8")
+	version("0.5.421", md5="a95ae80d529ccdf22f001dda767b816a")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-remotes", type=("build", "run"))

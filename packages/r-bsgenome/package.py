@@ -15,6 +15,7 @@ class RBsgenome(RPackage):
 	bioc = "BSgenome"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BSgenome_1.70.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BSgenome/BSgenome_1.70.2.tar.gz"]
 
+	version("1.70.2", md5="6a77e5c7815ff39c5942a4d34c05a105")
 	version("1.68.0", commit="c546020750e900377fbdeae015a01a96d5962d09")
 	version("1.66.1", commit="d1efdfa8e7242bc0f54cc1c3a9583ea555c924f6")
 	version("1.64.0", commit="59cdebde613e9702985c003f699f4aea2b0f0e7b")
@@ -25,7 +26,6 @@ class RBsgenome(RPackage):
 	version("1.48.0", commit="092a1b90482ace329cbd8ca2a338e91449acb93e")
 	version("1.46.0", commit="bdfbd6d09820993585b8231ddea5e11c99008dc5")
 	version("1.44.2", commit="105b00588a758d5ec7c347a7dff2756aea4516a0")
-	version("1.70.2", md5="6a77e5c7815ff39c5942a4d34c05a105")
 
 	depends_on("r@2.8:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.13.8:", type=("build", "run"))

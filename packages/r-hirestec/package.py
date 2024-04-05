@@ -25,6 +25,7 @@ class RHirestec(RPackage):
 	cran = "HiResTEC" 
 
 	version("0.62.3", md5="7e28033a653983193241064c1b4c121a")
+	version("0.62", md5="d03a8de575f1e7bf186363974959f8de")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-beeswarm", type=("build", "run"))

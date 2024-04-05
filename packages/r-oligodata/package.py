@@ -20,4 +20,3 @@ class ROligodata(RPackage):
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-oligo", type=("build", "run"))
 
-	# annotation

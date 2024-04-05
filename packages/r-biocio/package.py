@@ -23,11 +23,11 @@ class RBiocio(RPackage):
 	bioc = "BiocIO"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocIO_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocIO/BiocIO_1.12.0.tar.gz"]
 
-	version("1.10.0", commit="1368ff1a7ddbb62515a87a88d7ec39981de557d5")
 	version("1.8.0", commit="4a719fa41e014b7b948f7b245e581ede6a04eda1")
 	version("1.6.0", commit="60c8aa1a961e43bf0ee5d563a6d9fcec84f7f8f8")
 	version("1.4.0", commit="c335932526a38c75dbfa4970c1d90b8a21466d37")
 	version("1.12.0", md5="6e0c18bdf6d9f707f9d1e431400fa1c7")
+	version("1.10.0", commit="1368ff1a7ddbb62515a87a88d7ec39981de557d5")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

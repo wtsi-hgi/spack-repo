@@ -19,6 +19,7 @@ Features
 	cran = "joyn" 
 
 	version("0.2.0", md5="534d309f0cb8f2a47ebd3ddf5fb6fb73")
+	version("0.1.4", md5="a19afd543bee21f7d158322320495e08")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

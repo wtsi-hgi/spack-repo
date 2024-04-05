@@ -16,6 +16,7 @@ class RAffydata(RPackage):
 	bioc = "affydata"
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/affydata_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/affydata/affydata_1.50.0.tar.gz"]
 
+	version("1.50.0", md5="29caf389ca94d4c0c0b27d993f33354c")
 	version("1.48.0", commit="037b86c86c114761ff1bcca64ab4e0bcd68063d3")
 	version("1.46.0", commit="870745b886df9f1fbbd6130d266c0ef96f3afa66")
 	version("1.44.0", commit="f18304a356cee8cd7297bab362b13c40e50439df")
@@ -26,9 +27,7 @@ class RAffydata(RPackage):
 	version("1.28.0", commit="a106a5514c352bf0bbc624ded58a93886d4ce96f")
 	version("1.26.0", commit="eb0a44a39990b361f9fb1094837ffafb320f39a9")
 	version("1.24.0", commit="663991606507572f083232e2b393d901270291d4")
-	version("1.50.0", md5="29caf389ca94d4c0c0b27d993f33354c")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-affy@1.23.4:", type=("build", "run"))
 
-	# experiment

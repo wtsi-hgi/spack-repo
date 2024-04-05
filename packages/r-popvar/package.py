@@ -21,9 +21,9 @@ class RPopvar(RPackage):
 	dataset 'think_barley.rda' is included for reference and examples."""
 
 	cran = "PopVar"
+	version("1.3.1", md5="b87f9acff8b1fc702bf4c4dfabc54795")
 	version("1.3.0", sha256="3145c41c9aa1588d47aaf76c082e6b1c2fd95cf5014b98bd2867cbf2cec782f9")
 	version("1.2.1", sha256="5e3df79634ab63708a431e4b8e6794675972ac6c58d2bc615726aa0f142f5f25")
-	version("1.3.1", md5="b87f9acff8b1fc702bf4c4dfabc54795")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-bglr", type=("build", "run"))

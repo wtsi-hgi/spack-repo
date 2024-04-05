@@ -24,6 +24,7 @@ Equations, and Other Contemporary CVD Risk Calculators
 	cran = "PooledCohort" 
 
 	version("0.0.2", md5="de62d990d4f85d109f196feb3f043304")
+	version("0.0.1", md5="b771e12a22bcaf1d53b4900edfa4a6dd")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))

@@ -19,4 +19,3 @@ class RHthgu133afrmavecs(RPackage):
 
 	depends_on("r@2.10:", type=("build", "run"))
 
-	# annotation

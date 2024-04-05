@@ -22,6 +22,7 @@ class RGeotopbricks(RPackage):
 	cran = "geotopbricks" 
 
 	version("1.5.8.2", md5="ab9e9e30dbb9d5cf247d0f34e4d98078")
+	version("1.5.8.0", md5="9e854fe21d04ddec678735af0cc14150")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-raster", type=("build", "run"))

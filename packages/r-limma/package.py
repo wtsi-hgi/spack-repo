@@ -14,6 +14,7 @@ class RLimma(RPackage):
 
 	bioc = "limma"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/limma_3.58.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/limma/limma_3.58.1.tar.gz"]
+	version("3.58.1", md5="f52a816d0d34b01f721654f90a1fb5f5")
 	version("3.56.0", commit="efe857829233edb11ae317ce5d1ad4ea3073cf7f")
 	version("3.54.0", commit="1d1fa843d4fe2f8c94fd843bb1e80b8384d8306e")
 	version("3.52.4", commit="3226c29ad8c18aa7e6722f4a2c95ff8ac900437e")
@@ -25,7 +26,6 @@ class RLimma(RPackage):
 	version("3.36.5", commit="3148d1cb7eea9c6bdd60351d51abcfd665332d44")
 	version("3.34.9", commit="6755278a929f942a49e2441fb002a3ed393e1139")
 	version("3.32.10", commit="593edf28e21fe054d64137ae271b8a52ab05bc60")
-	version("3.58.1", md5="f52a816d0d34b01f721654f90a1fb5f5")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-statmod", type=("build", "run"))

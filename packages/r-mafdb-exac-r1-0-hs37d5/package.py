@@ -15,6 +15,7 @@ class RMafdbExacR10Hs37d5(RPackage):
 	bioc = "MafDb.ExAC.r1.0.hs37d5" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.ExAC.r1.0.hs37d5_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/MafDb.ExAC.r1.0.hs37d5/MafDb.ExAC.r1.0.hs37d5_3.10.0.tar.gz"]
 
+	version("3.10.0", md5="4d523554a2b0eb296bada9d33a78eefc", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/MafDb.ExAC.r1.0.hs37d5_3.10.0.tar.gz")
 	version("3.10.0", md5="4d523554a2b0eb296bada9d33a78eefc", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.ExAC.r1.0.hs37d5_3.10.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
@@ -25,4 +26,3 @@ class RMafdbExacR10Hs37d5(RPackage):
 	depends_on("r-genomeinfodb", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))
 
-	# annotation

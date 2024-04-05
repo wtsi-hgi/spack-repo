@@ -20,4 +20,3 @@ class RTxdbCelegansUcscCe11Refgene(RPackage):
 	depends_on("r-genomicfeatures@1.35.11:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

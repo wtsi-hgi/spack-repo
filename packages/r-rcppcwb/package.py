@@ -25,6 +25,7 @@ class RRcppcwb(RPackage):
 	cran = "RcppCWB" 
 
 	version("0.6.4", md5="99c43a734b0c35f29f0f1d41c5e163af")
+	version("0.6.3", md5="1690c8855973bac06a8e3b87fc409e41")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-fs", type=("build", "run"))

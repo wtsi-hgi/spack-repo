@@ -15,6 +15,7 @@ class RDotwhisker(RPackage):
 	cran = "dotwhisker" 
 
 	version("0.8.1", md5="c7b8aabdb51d047218164916f175fbab")
+	version("0.7.4", md5="8a3584d3057a8222ca6aff957a8237bb")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-ggplot2@2.2.1:", type=("build", "run"))

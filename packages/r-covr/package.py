@@ -18,6 +18,7 @@ class RCovr(RPackage):
 	compiled C/C++/FORTRAN code."""
 
 	cran = "covr"
+	version("3.6.4", md5="8fadf3538ed1edfefb3a20bd5c5e887d")
 	version("3.6.2", sha256="ace68ce7516147b4d77f591a498cbd7b2803062c1b47252e7a35081af0ea485b")
 	version("3.6.1", sha256="ffbe15438c1a4f274c14cacfb944480e284f1ab60808d5e840c015cc57c51157")
 	version("3.5.1", sha256="a54cfc3623ea56084158ac5d7fe33f216f45191f6dcddab9c9ed4ec1d9d8ac6c")
@@ -26,7 +27,6 @@ class RCovr(RPackage):
 	version("3.2.1", sha256="ea90daa48011e4ac4431ae47ee02fad98f54b529fc3900281cbeef7a2edef0a0")
 	version("3.2.0", sha256="b26135306b1d6b14dd4deb481359dd919a7ca1e802ca5479fed394dcf35f0ef9")
 	version("3.0.1", sha256="66b799fd03cb83a9ab382d9cf4ff40603d1e3f3a89905a3174546b0c63e8d184")
-	version("3.6.4", md5="8fadf3538ed1edfefb3a20bd5c5e887d")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))

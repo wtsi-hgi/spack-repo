@@ -20,4 +20,3 @@ class RCuratedadipoarray(RPackage):
 
 	depends_on("r@4:", type=("build", "run"))
 
-	# experiment

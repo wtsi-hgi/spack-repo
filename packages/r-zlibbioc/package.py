@@ -16,6 +16,8 @@ class RZlibbioc(RPackage):
 
 	bioc = "zlibbioc"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/zlibbioc_1.48.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/zlibbioc/zlibbioc_1.48.2.tar.gz"]
+	version("1.48.2", md5="d592dec9dd60f8c4f7a21de511d4f039")
+	version("1.48.0", md5="babdaf77bc9e9e8218fa07d643f31730")
 	version("1.46.0", commit="f475457ece2c2b5fc9e6a91a3084dcba2345ab0a")
 	version("1.44.0", commit="d39f0b02fa108ab907b4042c00a114569430a333")
 	version("1.42.0", commit="aa074d72515df745ad65133ca21d3cad778ccc0e")
@@ -26,5 +28,4 @@ class RZlibbioc(RPackage):
 	version("1.26.0", commit="2e3ab097caa09a5e3ddaa3469b13e19a7224da0d")
 	version("1.24.0", commit="2990059338d1b987d098c009b0bfa806bd24afec")
 	version("1.22.0", commit="30377f830af2bc1ff17bbf3fdd2cb6442015fea5")
-	version("1.48.2", md5="d592dec9dd60f8c4f7a21de511d4f039")
 

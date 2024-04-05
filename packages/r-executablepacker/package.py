@@ -16,6 +16,7 @@ class RExecutablepacker(RPackage):
 	cran = "executablePackeR" 
 
 	version("0.0.2", md5="f66bdf2a6c200a0b1313289a1deeffd3")
+	version("0.0.1", md5="3e2dfd203c00d03a7b73e55cfe2ac0ce")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-automagic", type=("build", "run"))

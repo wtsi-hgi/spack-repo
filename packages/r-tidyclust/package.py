@@ -18,6 +18,7 @@ class RTidyclust(RPackage):
 	cran = "tidyclust" 
 
 	version("0.2.1", md5="5ca1619811e08c46318e6b48d72dd911")
+	version("0.2.0", md5="330b5dfbaa41e975a368ea4b636977fd")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-cli@3:", type=("build", "run"))

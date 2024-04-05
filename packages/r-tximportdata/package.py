@@ -18,12 +18,11 @@ class RTximportdata(RPackage):
 
 	bioc = "tximportData"
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tximportData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tximportData/tximportData_1.30.0.tar.gz"]
+	version("1.30.0", md5="4494d764fc087333e5c04ee7977c85c8")
 	version("1.28.0", commit="7de494ba12168e2766baffdd177d9cecc0642820")
 	version("1.26.0", commit="8f6ef3e3ae54e6eb99fe915364f5174c4f50a986")
 	version("1.24.0", commit="646f366fb25be359c95dc97c9369961c8d5ed942")
 	version("1.22.0", commit="c576b18e43985baf8beab327cbc54afe8324659c")
 	version("1.18.0", commit="24945f8dd1e4e441ad5145fb7a37a1630912f929")
-	version("1.30.0", md5="4494d764fc087333e5c04ee7977c85c8")
 
 
-	# experiment

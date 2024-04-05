@@ -19,6 +19,7 @@ class RCausact(RPackage):
 	cran = "causact" 
 
 	version("0.5.4", md5="d3e932c6a830dabb5dc08cdf9b5ad2e8")
+	version("0.5.3", md5="d99a23be82d787331f8a9bd6d31e7048")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-diagrammer@1.0.9:", type=("build", "run"))

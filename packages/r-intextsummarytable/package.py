@@ -19,6 +19,7 @@ class RIntextsummarytable(RPackage):
 	cran = "inTextSummaryTable" 
 
 	version("3.3.2", md5="24144a7a56488c4592ded9e48f074bf7")
+	version("3.3.1", md5="750f5d416538ef2b16ab3b68c531993e")
 
 	depends_on("r-clinutils@0.1:", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))

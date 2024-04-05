@@ -24,6 +24,7 @@ class RWeightit(RPackage):
 	cran = "WeightIt" 
 
 	version("1.0.0", md5="f067e8735a88c80c239899cdc7a8b8c2")
+	version("0.14.2", md5="ad3ffb3b3a00e102b473e735b9acc380")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-cobalt@4.5.1:", type=("build", "run"))

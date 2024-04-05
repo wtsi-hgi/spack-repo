@@ -17,6 +17,7 @@ Estimation in R
 	cran = "SUMMER" 
 
 	version("1.4.0", md5="b115a24f8dffc486ca4c75c1ff49d089")
+	version("1.3.0", md5="2eae56d0d46f8b6cde24baf4dff3d8aa")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-survey", type=("build", "run"))

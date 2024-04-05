@@ -16,6 +16,7 @@ class ROne4all(RPackage):
 	cran = "One4All" 
 
 	version("0.4", md5="bff4f9b4662858708867b45cd7962027")
+	version("0.3", md5="121d58132ef7005794e308c3ce5510d9")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

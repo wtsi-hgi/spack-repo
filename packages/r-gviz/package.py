@@ -18,6 +18,7 @@ class RGviz(RPackage):
 
 	bioc = "Gviz"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Gviz_1.46.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Gviz/Gviz_1.46.1.tar.gz"]
+	version("1.46.1", md5="2e1eba2ac7cb0d1178f17bba471b0a62")
 	version("1.44.0", commit="e70aaa7dd27df8482ee854395475a87ec2121279")
 	version("1.42.0", commit="4eddb688bca3fdeb65fd536d653d7ba7f7976121")
 	version("1.40.1", commit="d21843710cd05135353de5cd4ce4d35cdd333b7c")
@@ -28,7 +29,6 @@ class RGviz(RPackage):
 	version("1.24.0", commit="3ee1eec97a56653c07c434a97f82cfe3c4281841")
 	version("1.22.3", commit="2238079d0a7017c474f010acb35d98ee7cc1c5d1")
 	version("1.20.0", commit="299b8255e1b03932cebe287c3690d58c88f5ba5c")
-	version("1.46.1", md5="2e1eba2ac7cb0d1178f17bba471b0a62")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-s4vectors@0.9.25:", type=("build", "run"))

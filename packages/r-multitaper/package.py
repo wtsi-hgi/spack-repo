@@ -19,8 +19,8 @@ class RMultitaper(RPackage):
 	estimation and harmonic analysis" <doi:10.1109/PROC.1982.12433>."""
 
 	cran = "multitaper"
+	version("1.0-17", md5="b06203f832564a39ecea719b2d006771")
 	version("1.0-15", sha256="837d71f3b46fbce2bea210449cf75e609f5363ff23b7808f5f115fdc51e6a3be")
 	version("1.0-14", sha256="c84c122541dc2874131446e23b212259b3b00590d701efee49e6740fd74a8d13")
-	version("1.0-17", md5="b06203f832564a39ecea719b2d006771")
 
 	depends_on("r@3:", type=("build", "run"))

@@ -24,6 +24,7 @@ class RPerformance(RPackage):
 	cran = "performance" 
 
 	version("0.11.0", md5="003d46ccb28030be151595396c4315fd")
+	version("0.10.9", md5="07a07184ab81c70c92646ab990e0fd5f")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-bayestestr@0.13.2:", type=("build", "run"))

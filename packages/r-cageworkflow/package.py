@@ -21,4 +21,3 @@ class RCageworkflow(RPackage):
 	depends_on("r-cagefightr", type=("build", "run"))
 	depends_on("r-nanotubes", type=("build", "run"))
 
-	# workflow

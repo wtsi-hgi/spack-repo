@@ -15,6 +15,7 @@ class RExcessmort(RPackage):
 	cran = "excessmort" 
 
 	version("0.7.0", md5="4acfa004905bf2a803f993bdee8b6fb9")
+	version("0.6.1", md5="d9abd4475119f410f0819cbce6d84d60")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

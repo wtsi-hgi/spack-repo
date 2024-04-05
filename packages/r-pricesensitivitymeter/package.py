@@ -19,6 +19,7 @@ class RPricesensitivitymeter(RPackage):
 	cran = "pricesensitivitymeter" 
 
 	version("1.3.0", md5="6780b8661ad90646cd21646920f9ecca")
+	version("1.2.2", md5="4a836aab2aec5c0a976eee99bbf2942b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-survey@3.23.1:", type=("build", "run"))

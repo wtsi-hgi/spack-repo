@@ -22,8 +22,8 @@ Reporting
 	homepage = "https://easystats.github.io/easystats/"
 	cran = "easystats" 
 
-	version("0.7.0", md5="4054a1cacb518b15ae300fca9501d208")
 	version("0.7.1", md5="7b0a3a251614c9610c60d1b5a666d397")
+	version("0.7.0", md5="4054a1cacb518b15ae300fca9501d208")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-bayestestr@0.13.2:", type=("build", "run"))

@@ -19,4 +19,3 @@ class RStjudem(RPackage):
 
 	depends_on("r@2.10:", type=("build", "run"))
 
-	# experiment

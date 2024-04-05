@@ -15,6 +15,7 @@ class RAgimicrorna(RPackage):
 	bioc = "AgiMicroRna"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AgiMicroRna_2.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AgiMicroRna/AgiMicroRna_2.52.0.tar.gz"]
 
+	version("2.52.0", md5="1c1046ab29a7766af0c602c974b4ec21")
 	version("2.50.0", commit="a812b0f4f215b093ca685889b65de60c6701b695")
 	version("2.48.0", commit="4c163b1b730150a3a60a3815bd8c08fa04d71fc1")
 	version("2.46.0", commit="8c6d73e1c3f1f9cc019bdb219b19e6179bb1efe4")
@@ -25,7 +26,6 @@ class RAgimicrorna(RPackage):
 	version("2.30.0", commit="99b5a8284cfe3e93c3ae85a2436e87101b9599dd")
 	version("2.28.0", commit="62c4a12f1168c7aa1ab46d2c97090ef71478328e")
 	version("2.26.0", commit="6dd74bae47986f2a23d03e3f1f9f78f701dd8053")
-	version("2.52.0", md5="1c1046ab29a7766af0c602c974b4ec21")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

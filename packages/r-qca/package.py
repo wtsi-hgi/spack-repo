@@ -21,6 +21,7 @@ class RQca(RPackage):
 	cran = "QCA" 
 
 	version("3.22", md5="1cf3129879bf651141f70865322c4632")
+	version("3.21", md5="7026add06528dc5f414d62af75432cba")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-admisc@0.34:", type=("build", "run"))

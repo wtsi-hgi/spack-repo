@@ -16,6 +16,7 @@ class RMetricgraph(RPackage):
 	cran = "MetricGraph" 
 
 	version("1.3.0", md5="6c0d40866e79f13167167862ad6a7dbc")
+	version("1.2.0", md5="f1ebc6ab82c152ac1f5acd34d5c4ad9e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

@@ -18,12 +18,12 @@ class RRdpack(RPackage):
 	manipulation of references and Rd files."""
 
 	cran = "Rdpack"
+	version("2.6", md5="212a5f9ba8330ae43f266d3d598fbc3a")
 	version("2.4", sha256="7652add12b30fcba1f3a12493a089a4166079e78c47b95802a98595a3ff53581")
 	version("2.3", sha256="c45e1ab8352b92ce03f26ece1f4db3716959fca2af9e826d5bd3c76b2151f7c5")
 	version("2.1.3", sha256="8381a8866b9acf5acb2c80069684339c3921f1b45fa202719e8f6852fb4d55b8")
 	version("2.1", sha256="26e094fe3c077fb2a99e95c5bd94015a5f993a4a5f5d217829b4872ff004bfce")
 	version("0.11-0", sha256="8fb449c80fbe931cdce51f728fb03a1978009ccce66fd6b9edacdc6ff4118d85")
-	version("2.6", md5="212a5f9ba8330ae43f266d3d598fbc3a")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-rbibutils@1.3:", type=("build", "run"))

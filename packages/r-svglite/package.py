@@ -13,10 +13,10 @@ class RSvglite(RPackage):
 	is a fork of the older 'RSvgDevice' package."""
 
 	cran = "svglite"
+	version("2.1.3", md5="46154cf187ad6ec377269b6307de16f4")
 	version("2.1.1", sha256="48700169eec1b05dbee9e2bae000aa84c544617b018cb3ac431a128cfd8dac56")
 	version("2.1.0", sha256="ad40f590c7e80ae83001a3826b6e8394ba733446ed51fd55faeda974ab839c9b")
 	version("2.0.0", sha256="76e625fe172a5b7ce99a67b6d631b037b3f7f0021cfe15f2e15e8851b89defa5")
-	version("2.1.3", md5="46154cf187ad6ec377269b6307de16f4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-systemfonts", type=("build", "run"))

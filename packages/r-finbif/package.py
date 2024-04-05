@@ -26,8 +26,8 @@ API
 	homepage = "https://github.com/luomus/finbif"
 	cran = "finbif" 
 
-	version("0.9.4", md5="a3d1e91df18baacb2dfaad641b304664")
 	version("0.9.5", md5="e61ec398a73fd3d6c6b2961192dee056")
+	version("0.9.4", md5="a3d1e91df18baacb2dfaad641b304664")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))

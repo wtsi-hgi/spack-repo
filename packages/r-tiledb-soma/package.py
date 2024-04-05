@@ -13,7 +13,7 @@ class RTiledbSoma(RPackage):
     homepage ="https://single-cell-data.github.io/TileDB-SOMA/"
     git = "https://github.com/single-cell-data/TileDB-SOMA"
 
-    version("1.4.3", tag="1.4.3")
+	version("1.4.3", tag="1.4.3")
 
     depends_on("r-r6", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))

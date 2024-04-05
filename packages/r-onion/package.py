@@ -22,6 +22,7 @@ class ROnion(RPackage):
 	cran = "onion" 
 
 	version("1.5-3", md5="afeafe5119bfc1f064182c37cb43ead5")
+	version("1.5-0", md5="f9b0abc412118851dc893511b0c7cc54")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-emulator", type=("build", "run"))

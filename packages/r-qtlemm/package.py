@@ -40,6 +40,7 @@ class RQtlemm(RPackage):
 	cran = "QTLEMM" 
 
 	version("1.5.2", md5="bccc56759dc619aa019f0207223b11a6")
+	version("1.5.0", md5="ec895aba0a82d48f6cd6cfddfcb879a1")
 
 	depends_on("r-mvtnorm", type=("build", "run"))
 	depends_on("r-gtools", type=("build", "run"))

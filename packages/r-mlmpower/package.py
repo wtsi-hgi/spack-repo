@@ -24,6 +24,7 @@ class RMlmpower(RPackage):
 	cran = "mlmpower" 
 
 	version("1.0.8", md5="9958c5c6aad13f5b413ac7a7aa680bbd")
+	version("1.0.5", md5="154fbd7e0a91b3bd492acbfa9b14db29")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

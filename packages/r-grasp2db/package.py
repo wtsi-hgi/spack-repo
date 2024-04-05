@@ -24,4 +24,3 @@ class RGrasp2db(RPackage):
 	depends_on("r-annotationhub", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))
 
-	# annotation

@@ -20,4 +20,3 @@ class RProdata(RPackage):
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))
 
-	# experiment

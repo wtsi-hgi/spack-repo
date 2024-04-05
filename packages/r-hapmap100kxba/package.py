@@ -18,4 +18,3 @@ class RHapmap100kxba(RPackage):
 	version("1.44.0", md5="b4a619fb108a36920109307fbf63985b")
 
 
-	# experiment

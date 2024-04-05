@@ -19,6 +19,7 @@ class REvsim(RPackage):
 	cran = "evsim" 
 
 	version("1.4.0", md5="e7402387d42077a58ee28d3bc24b3d64")
+	version("1.3.0", md5="6b25733107682fb299781854905bc1e1")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

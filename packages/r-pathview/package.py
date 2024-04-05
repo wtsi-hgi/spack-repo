@@ -20,6 +20,7 @@ class RPathview(RPackage):
 
 	bioc = "pathview"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pathview_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pathview/pathview_1.42.0.tar.gz"]
+	version("1.42.0", md5="5e17ceee29bb13083a2b11be28edacb0")
 	version("1.40.0", commit="6546c6139f797bdff2fcc0645030a5de3588f2eb")
 	version("1.38.0", commit="8229376ffd45278b74a6e4ccfb3abea8992667f7")
 	version("1.36.1", commit="f2e86b106c1cd91aac703337f968b7593a61c68d")
@@ -31,7 +32,6 @@ class RPathview(RPackage):
 	version("1.20.0", commit="a195afa6ba6c7917af2c7f77170f0644c46880c7")
 	version("1.18.2", commit="d2048981696564ec75f661ed665977d3a6e09188")
 	version("1.16.7", commit="fc560ed15ef7393a73d35e714716cc24dc835339")
-	version("1.42.0", md5="5e17ceee29bb13083a2b11be28edacb0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-kegggraph", type=("build", "run"))

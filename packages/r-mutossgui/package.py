@@ -16,6 +16,7 @@ class RMutossgui(RPackage):
 	cran = "mutossGUI" 
 
 	version("0.1-12", md5="161be50d143b8259335a781a3a521219")
+	version("0.1-11", md5="be1e359166183f4838c5ab44c3bbdd1e")
 
 	depends_on("r@2.8:", type=("build", "run"))
 	depends_on("r-mutoss@0.1.6:", type=("build", "run"))

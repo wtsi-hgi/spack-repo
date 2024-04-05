@@ -21,6 +21,7 @@ class RDeeptime(RPackage):
 	cran = "deeptime" 
 
 	version("1.1.1", md5="9a8b54f8b22d4af384414a3a5319376b")
+	version("1.0.1", md5="dc8668e067eed6a86eaa28eabea92c06")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-ggplot2@3.4:", type=("build", "run"))

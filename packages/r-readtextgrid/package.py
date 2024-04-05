@@ -20,6 +20,7 @@ class RReadtextgrid(RPackage):
 	cran = "readtextgrid" 
 
 	version("0.1.2", md5="7840f874a4a1cda1c70b84aea290cf45")
+	version("0.1.1", md5="b7a1c8336475fb94d40d12c75f0d7336")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))

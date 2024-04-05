@@ -15,8 +15,8 @@ class RDrugexposurediagnostics(RPackage):
 	homepage = "https://darwin-eu.github.io/DrugExposureDiagnostics/"
 	cran = "DrugExposureDiagnostics" 
 
-	version("1.0.3", md5="9d34e28aceb2bb70faf261c158578827")
 	version("1.0.4", md5="426c24b85f5002bcc4ab544a1a72058f")
+	version("1.0.3", md5="9d34e28aceb2bb70faf261c158578827")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-cdmconnector@1.2:", type=("build", "run"))

@@ -16,8 +16,8 @@ class RCadra(RPackage):
 	bioc = "CaDrA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CaDrA_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CaDrA/CaDrA_1.0.2.tar.gz"]
 
-	version("1.0.1", md5="9ac2bc6afe6632e5fbd00c687ca19bba")
 	version("1.0.2", md5="bd3e1dfd9f62c695b59a02999e648c3e")
+	version("1.0.1", md5="9ac2bc6afe6632e5fbd00c687ca19bba")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

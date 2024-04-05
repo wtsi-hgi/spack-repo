@@ -16,9 +16,9 @@ class RBindrcpp(RPackage):
 
 	license("MIT")
 
+	version("0.2.3", md5="14d52a9f59269bc1a674bb1e93abdfda")
 	version("0.2.2", sha256="48130709eba9d133679a0e959e49a7b14acbce4f47c1e15c4ab46bd9e48ae467")
 	version("0.2", sha256="d0efa1313cb8148880f7902a4267de1dcedae916f28d9a0ef5911f44bf103450")
-	version("0.2.3", md5="14d52a9f59269bc1a674bb1e93abdfda")
 
 	depends_on("r-bindr@0.1.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

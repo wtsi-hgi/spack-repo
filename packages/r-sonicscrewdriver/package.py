@@ -18,6 +18,7 @@ class RSonicscrewdriver(RPackage):
 	cran = "sonicscrewdriver" 
 
 	version("0.0.6", md5="112e26a795d779300ebae20a42a6220d")
+	version("0.0.4", md5="03d5f7e7c160bebd580d9959216b71d1")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

@@ -15,8 +15,8 @@ class RDoby(RPackage):
 		to a smaller domain. 4) Miscellaneous other utilities."""
 
 	cran = "doBy"
-	version("4.6.16", sha256="d5937eb57d293b0bc2e581ff2e1e628671cb4eacddc0b9574dc28a5316ecbbe7")
 	version("4.6.20", md5="44c7b48cc7a0d9f57d32010315492372")
+	version("4.6.16", sha256="d5937eb57d293b0bc2e581ff2e1e628671cb4eacddc0b9574dc28a5316ecbbe7")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))

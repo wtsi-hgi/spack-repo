@@ -21,6 +21,7 @@ class RRfm(RPackage):
 	cran = "rfm" 
 
 	version("0.3.0", md5="2704cebf5e71b675266143551a945dd7")
+	version("0.2.2", md5="a033fa880397674eaad3abc7317ef274")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

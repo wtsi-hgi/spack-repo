@@ -27,6 +27,7 @@ Frames
 	cran = "RclusTool" 
 
 	version("0.91.6", md5="15876656847bce748dc5d7d8d043d593")
+	version("0.91.5", md5="073dd01c8840c165f569dc21a491a04d")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-tcltk2", type=("build", "run"))

@@ -19,8 +19,8 @@ class REffectsize(RPackage):
 	homepage = "https://easystats.github.io/effectsize/"
 	cran = "effectsize" 
 
-	version("0.8.6", md5="24f114041cd5ca301e46706a8fd53274")
 	version("0.8.7", md5="abe197ef35f15d4ff62803f49a2c4f2c")
+	version("0.8.6", md5="24f114041cd5ca301e46706a8fd53274")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-bayestestr@0.13.2:", type=("build", "run"))

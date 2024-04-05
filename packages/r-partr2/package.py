@@ -19,6 +19,7 @@ class RPartr2(RPackage):
 	cran = "partR2" 
 
 	version("0.9.2", md5="de77b3140cce5062a4ca3ec6f24887a3", url="https://cran.r-project.org/src/contrib/partR2_0.9.2.tar.gz")
+	version("0.9.1", md5="4e335f212722e043f8319997986a3b52", url="https://cran.r-project.org/src/contrib/partR2_0.9.1.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-lme4@1.1.21:", type=("build", "run"))

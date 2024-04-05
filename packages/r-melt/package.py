@@ -27,6 +27,7 @@ class RMelt(RPackage):
 	cran = "melt" 
 
 	version("1.11.2", md5="697400a8f68cadfa333011101ea39b69")
+	version("1.11.0", md5="159882927407603fd527f3d90b9b2b42")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

@@ -17,9 +17,10 @@ class RTfmpvalue(RPackage):
 	Touzet and Jean-Stephane Varre, 2007, Algorithms Mol Biol:2, 15."""
 
 	cran = "TFMPvalue"
+	version("0.0.9", sha256="b9db56e75e2cee840d8b7861686dec07ee2c40cbc7d55361e5d04f1bf0c65de7")
+	version("0.0.9", md5="8c536eb33fd4acd03fd33af1d5d2bf9f")
 	version("0.0.8", sha256="6d052529f7b59d0384edc097f724f70468013777b6adf4c63e61a359029d3841")
 	version("0.0.6", sha256="cee3aa2d4e22856865d820f695e29a5f23486e5e08cd42cb95a0728f5f9522a1")
-	version("0.0.9", md5="8c536eb33fd4acd03fd33af1d5d2bf9f")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

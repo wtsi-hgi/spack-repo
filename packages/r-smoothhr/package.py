@@ -21,6 +21,7 @@ class RSmoothhr(RPackage):
 	cran = "smoothHR" 
 
 	version("1.0.5", md5="ce6aae28de56e486d59c2a10f2b57262")
+	version("1.0.4", md5="9edd26ef220a7e593f26ac372317a757")
 
 	depends_on("r@2.12:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

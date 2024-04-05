@@ -16,6 +16,7 @@ class RTidyfit(RPackage):
 	cran = "tidyfit" 
 
 	version("0.7.1", md5="6412f4e69e7bf47619a772ab9fdc33ae")
+	version("0.6.5", md5="50baaa278aee9338e0a7a604441e8ba9")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))

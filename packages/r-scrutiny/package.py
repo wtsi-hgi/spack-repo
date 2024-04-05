@@ -21,6 +21,7 @@ class RScrutiny(RPackage):
 	cran = "scrutiny" 
 
 	version("0.4.0", md5="22fe7e6d3b30922fe412c514d37002af")
+	version("0.3.0", md5="f3f390603f13e976c0a0b1fb02d12630")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

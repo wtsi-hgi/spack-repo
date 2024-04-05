@@ -21,6 +21,7 @@ class RGgside(RPackage):
 	cran = "ggside" 
 
 	version("0.3.1", md5="0517315be9a85bb14f87860c767c22b7")
+	version("0.2.3", md5="de431757f59fd899e694e7142557ee1e")
 
 	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r-gtable", type=("build", "run"))

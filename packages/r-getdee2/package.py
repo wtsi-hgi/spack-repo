@@ -16,6 +16,7 @@ class RGetdee2(RPackage):
 	bioc = "getDEE2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/getDEE2_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/getDEE2/getDEE2_1.12.0.tar.gz"]
 
+	version("1.12.0", md5="5bae73105adbd3fba6517601379594c0", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/getDEE2_1.12.0.tar.gz")
 	version("1.12.0", md5="5bae73105adbd3fba6517601379594c0", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/getDEE2_1.12.0.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))

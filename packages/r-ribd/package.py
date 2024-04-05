@@ -28,6 +28,7 @@ class RRibd(RPackage):
 	cran = "ribd" 
 
 	version("1.7.0", md5="91f89bfa31d65ec85a3fb2f0f7be8c1c")
+	version("1.6.1", md5="b1fa2ed7b11224bc886e762a4a58d8cb")
 
 	depends_on("r-pedtools@2.2:", type=("build", "run"))
 	depends_on("r@4.1:", type=("build", "run"))

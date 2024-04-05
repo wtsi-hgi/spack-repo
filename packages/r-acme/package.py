@@ -21,6 +21,7 @@ class RAcme(RPackage):
 
 	bioc = "ACME"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ACME_2.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ACME/ACME_2.58.0.tar.gz"]
+	version("2.58.0", md5="6668a82e0a26ac03c9697e2cf22eb75e")
 	version("2.56.0", commit="083af1249e67db11fd471babe67b146eb9c1700c")
 	version("2.54.0", commit="8d39d9d6623adf427f5eba308790e1de01213870")
 	version("2.52.0", commit="14a97c722d0201654af9e583e7e462b458c28a77")
@@ -31,7 +32,6 @@ class RAcme(RPackage):
 	version("2.36.0", commit="39e056435b9775d35e7f7fc5446c2c3cafe15670")
 	version("2.34.0", commit="1f53d43e420e245423fdf2711d0dcb345f829469")
 	version("2.32.0", commit="76372255d7714a0c8128a11c028bf70214dac407")
-	version("2.58.0", md5="6668a82e0a26ac03c9697e2cf22eb75e")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

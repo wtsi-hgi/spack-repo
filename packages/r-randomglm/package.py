@@ -13,8 +13,9 @@ class RRandomglm(RPackage):
 	models."""
 
 	cran = "randomGLM"
-	version("1.02-1", sha256="3bf7c1dbdacc68125f8ae3014b9bc546dd3328d04ad015d154781bdf3f1a230c")
+	version("1.10-1", sha256="df324edf0c69926da1a3991dff10714ca4ec7a271d091a0a09d2a6a1d86da714")
 	version("1.10-1", md5="be064b6a4d9d62cd30232c99e3089d99")
+	version("1.02-1", sha256="3bf7c1dbdacc68125f8ae3014b9bc546dd3328d04ad015d154781bdf3f1a230c")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

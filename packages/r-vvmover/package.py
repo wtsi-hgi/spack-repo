@@ -21,6 +21,7 @@ class RVvmover(RPackage):
 	cran = "vvmover" 
 
 	version("1.6.0", md5="399db5903440f8e41318f7d5793c5ee2")
+	version("1.5.10", md5="ce7668c5136f809cb9b583879fc3529c")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

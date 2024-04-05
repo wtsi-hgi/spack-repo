@@ -19,4 +19,3 @@ class RLymphoseqdb(RPackage):
 
 	depends_on("r@3.2:", type=("build", "run"))
 
-	# annotation

@@ -15,6 +15,7 @@ class RStoppingrule(RPackage):
 	cran = "stoppingrule" 
 
 	version("0.4.0", md5="13e76a7175a20fc4f7d86bcd95b24d9a")
+	version("0.3.0", md5="a71cf1944e09e93f891b5d5206b47472")
 
 	depends_on("r-pracma", type=("build", "run"))
 	depends_on("r-matrixstats", type=("build", "run"))

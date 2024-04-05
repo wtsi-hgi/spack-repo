@@ -15,6 +15,7 @@ class RSnpstats(RPackage):
 
 	bioc = "snpStats"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/snpStats_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/snpStats/snpStats_1.52.0.tar.gz"]
+	version("1.52.0", md5="0625c920470937a31fd278cf8bd8982a")
 	version("1.50.0", commit="b6d42f93f2ce510cc10a1668809218f317c23d2a")
 	version("1.48.0", commit="7d4cec7275b9360d98cb59d15c4140bed3e6a74c")
 	version("1.46.0", commit="1e70784b113eaca231bc5f91fc8ae5aadb151ddb")
@@ -25,7 +26,6 @@ class RSnpstats(RPackage):
 	version("1.30.0", commit="0dc1e4246f015feaf2579d60268b10ab5149ce09")
 	version("1.28.0", commit="8df9f4188f720dfbb4f4f4ec255cd2e22f3f4426")
 	version("1.26.0", commit="7c9b3304073e0556d694a8531882b349822fdda8")
-	version("1.52.0", md5="0625c920470937a31fd278cf8bd8982a")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

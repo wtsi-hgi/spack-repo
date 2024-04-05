@@ -18,6 +18,7 @@ class RGeomtextpath(RPackage):
 	cran = "geomtextpath" 
 
 	version("0.1.3", md5="4018c5bba964c6f0d35fb69596c30cfc")
+	version("0.1.1", md5="4f8ffb3dd993d18a661a9df781fadcd1")
 
 	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r@3.6:", type=("build", "run"))

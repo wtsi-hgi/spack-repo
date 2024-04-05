@@ -19,6 +19,7 @@ class RLogr(RPackage):
 	cran = "logr" 
 
 	version("1.3.6", md5="e347e49e53c58d8a84418e608d94debe")
+	version("1.3.5", md5="6b216952470eee98af6641ad8a816f97")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-withr", type=("build", "run"))

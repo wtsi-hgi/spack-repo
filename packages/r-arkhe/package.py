@@ -20,5 +20,6 @@ class RArkhe(RPackage):
 	cran = "arkhe" 
 
 	version("1.6.0", md5="af3d68f7a2218b75522778e31bd9bb8f")
+	version("1.5.0", md5="9e5c4175bb3c48b96e8008229cb89473")
 
 	depends_on("r@3.5:", type=("build", "run"))

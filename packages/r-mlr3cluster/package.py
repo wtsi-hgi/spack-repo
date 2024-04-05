@@ -16,6 +16,7 @@ class RMlr3cluster(RPackage):
 	cran = "mlr3cluster" 
 
 	version("0.1.9", md5="e3b86f6bb31a8d9939eaff84e950c13b")
+	version("0.1.8", md5="b590b83bc4b9274f67eb694d161a3e96")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-mlr3@0.14:", type=("build", "run"))

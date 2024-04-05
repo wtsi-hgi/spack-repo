@@ -17,6 +17,7 @@ class RShinywidgets(RPackage):
 	cran = "shinyWidgets" 
 
 	version("0.8.3", md5="15ebbad106c05bc99a1d57f0d61c2e53")
+	version("0.8.1", md5="04c0c3772e7bc1c096bd5478ee9e5bae")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-anytime", type=("build", "run"))

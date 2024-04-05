@@ -22,6 +22,7 @@ class RMlr3(RPackage):
 	cran = "mlr3" 
 
 	version("0.18.0", md5="53a1efda2c582c0a1fb6ccbcd562784f", url="https://cran.r-project.org/src/contrib/mlr3_0.18.0.tar.gz")
+	version("0.17.2", md5="e8bf4edf11e12f7c0101d3f46e8a02b8", url="https://cran.r-project.org/src/contrib/mlr3_0.17.2.tar.gz")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-r6@2.4.1:", type=("build", "run"))

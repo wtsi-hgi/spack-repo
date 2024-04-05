@@ -16,8 +16,8 @@ Sampling or EM-Algorithms
 	homepage = "https://github.com/fhollenbach/EBMA/"
 	cran = "EBMAforecast" 
 
-	version("1.0.31", md5="c35d19a4f67de8624301175ba840eeb7")
 	version("1.0.32", md5="9d0a24db4680ec2bc5a8261c9ae7a5be")
+	version("1.0.31", md5="c35d19a4f67de8624301175ba840eeb7")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))

@@ -17,9 +17,9 @@ class RHdcytodata(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HDCytoData_1.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HDCytoData/HDCytoData_1.22.1.tar.gz"]
 
 	version("1.22.1", md5="7d5c364948f499d34658befe34da06bc")
+	version("1.22.0", md5="8f962c6124539fea7a4a02a30e776de8")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))
 
-	# experiment

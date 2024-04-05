@@ -16,8 +16,8 @@ class RBionero(RPackage):
 	bioc = "BioNERO" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioNERO_1.10.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioNERO/BioNERO_1.10.3.tar.gz"]
 
-	version("1.10.1", md5="cf8a0a4d5229ba0ff8060188e110f8f9")
 	version("1.10.3", md5="207ef35f0131c41c1596683af729ed04")
+	version("1.10.1", md5="cf8a0a4d5229ba0ff8060188e110f8f9")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-wgcna", type=("build", "run"))

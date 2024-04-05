@@ -16,6 +16,7 @@ class RMaaslin2(RPackage):
 	bioc = "Maaslin2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Maaslin2_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Maaslin2/Maaslin2_1.16.0.tar.gz"]
 
+	version("1.16.0", md5="0f92778b2d59935191e2ac58621da8f5", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/Maaslin2_1.16.0.tar.gz")
 	version("1.16.0", md5="0f92778b2d59935191e2ac58621da8f5", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Maaslin2_1.16.0.tar.gz")
 
 	depends_on("r@3.6:", type=("build", "run"))

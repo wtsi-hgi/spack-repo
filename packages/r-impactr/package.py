@@ -19,6 +19,7 @@ class RImpactr(RPackage):
 	cran = "impactr" 
 
 	version("0.4.2", md5="44b1f878f87e30e86abe5a40ebb3119a")
+	version("0.4.1", md5="3526fce648cd674536299e5356af7d2e")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))

@@ -17,6 +17,7 @@ class RAcgh(RPackage):
 	bioc = "aCGH"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/aCGH_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/aCGH/aCGH_1.80.0.tar.gz"]
 
+	version("1.80.0", md5="137af76dc5756a83094da18eb0bededa")
 	version("1.78.0", commit="75df3a4839af66ce177d1bbc3cec4ac03c21dc8e")
 	version("1.76.0", commit="c6068522854ed0b1c3feb006619ef25590f70ad6")
 	version("1.74.0", commit="e7ba380af0da138788eb6c86f5dbe453269c0810")
@@ -27,7 +28,6 @@ class RAcgh(RPackage):
 	version("1.58.0", commit="2decc79a21bff5a14d708cdc654e351515b20d3e")
 	version("1.56.0", commit="f3531ec99fc181044bdcb6a01c9976029efb6235")
 	version("1.54.0", commit="be2ed339449f55c8d218e10c435e4ad356683693")
-	version("1.80.0", md5="137af76dc5756a83094da18eb0bededa")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))

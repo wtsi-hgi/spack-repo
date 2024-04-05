@@ -16,6 +16,7 @@ class RPwexp(RPackage):
 	cran = "PWEXP" 
 
 	version("0.5.0", md5="6627b450e54468411c117b2b59b4b8b4")
+	version("0.4.4", md5="0f84d6a11588495a6401dd38ca8755b3")
 
 	depends_on("r-survival", type=("build", "run"))
 	depends_on("r-fastmatch", type=("build", "run"))

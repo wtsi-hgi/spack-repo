@@ -22,7 +22,7 @@ class RAskpass(RPackage):
 
 	license("MIT")
 
-	version("1.1", sha256="db40827d1bdbb90c0aa2846a2961d3bf9d76ad1b392302f9dd84cc2fd18c001f")
 	version("1.2.0", md5="59d2bbfe6bd3a7bf05d56006f1cb1d6a")
+	version("1.1", sha256="db40827d1bdbb90c0aa2846a2961d3bf9d76ad1b392302f9dd84cc2fd18c001f")
 
 	depends_on("r-sys@2.1:", type=("build", "run"))

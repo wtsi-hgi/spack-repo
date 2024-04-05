@@ -25,6 +25,7 @@ class RMfBeta4(RPackage):
 	cran = "MF.beta4" 
 
 	version("1.0.2", md5="536da141991c31e97493e595a6732290", url="https://cran.r-project.org/src/contrib/MF.beta4_1.0.2.tar.gz")
+	version("1.0.1", md5="ad55fd896518a07857d3ea3053aa5cbc", url="https://cran.r-project.org/src/contrib/MF.beta4_1.0.1.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))

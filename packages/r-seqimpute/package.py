@@ -20,6 +20,7 @@ class RSeqimpute(RPackage):
 	cran = "seqimpute" 
 
 	version("2.0.0", md5="1f1557433e0d7d05245715f895e74945")
+	version("1.8", md5="189cae316c987c65a662233549750a87")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-amelia", type=("build", "run"))

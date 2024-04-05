@@ -16,10 +16,11 @@ class RFda(RPackage):
 	Hooker, Giles, and Graves, Spencer (2009)."""
 
 	cran = "fda"
+	version("6.1.8", md5="fb851a29a27b2166904b8b9fdf1f9f2b")
+	version("6.1.4", md5="1bc4879d3e1e63171f39b05a4aca6d49")
 	version("6.0.5", sha256="14445776fc65284cd6cae98e5b4dd14c2626d96db5f78c0fcc6aabce5419b8f1")
 	version("6.0.3", sha256="205814b9812664e8201221f99e0e8391aa49dba2ae287dc404c57c0c492477d3")
 	version("5.5.1", sha256="dcaa2f6ae226d35855bc79c6967f60d45404b984c0afaec215b139c4b8dea23a")
-	version("6.1.8", md5="fb851a29a27b2166904b8b9fdf1f9f2b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-fds", type=("build", "run"))

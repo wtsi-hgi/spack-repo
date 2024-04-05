@@ -20,6 +20,7 @@ class RProbably(RPackage):
 	cran = "probably" 
 
 	version("1.0.3", md5="8bf79618fd6bfe3a51188616a3424aad")
+	version("1.0.2", md5="f4607f747f783c3a488ccd9c9d6ee199")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-butcher", type=("build", "run"))

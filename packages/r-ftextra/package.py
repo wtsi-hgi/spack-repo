@@ -18,6 +18,7 @@ class RFtextra(RPackage):
 	cran = "ftExtra" 
 
 	version("0.6.3", md5="e81bbed9ce37ea381d18a289dce3fc75")
+	version("0.6.1", md5="079b662dd4a4f6d25685efbc07fb1adf")
 
 	depends_on("r-dplyr@1:", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

@@ -25,4 +25,3 @@ class RRattusNorvegicus(RPackage):
 	depends_on("r-org-rn-eg-db", type=("build", "run"))
 	depends_on("r-txdb-rnorvegicus-ucsc-rn5-refgene", type=("build", "run"))
 
-	# annotation

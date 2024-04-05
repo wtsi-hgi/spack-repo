@@ -26,6 +26,7 @@ and Outcome Variables
 	cran = "SelectionBias" 
 
 	version("2.0.0", md5="bdc817925e565e51cc4fbaca72f129f1")
+	version("1.0.0", md5="b4353d8c08fb7fb3fa56ed9f67c1b67d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-arm", type=("build", "run"))

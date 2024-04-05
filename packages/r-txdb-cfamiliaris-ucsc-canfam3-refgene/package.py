@@ -20,4 +20,3 @@ class RTxdbCfamiliarisUcscCanfam3Refgene(RPackage):
 	depends_on("r-genomicfeatures@1.39.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

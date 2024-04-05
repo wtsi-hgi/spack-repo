@@ -24,6 +24,7 @@ class RHierportfolios(RPackage):
 	cran = "HierPortfolios" 
 
 	version("1.0.0", md5="dfa668a3d7d3529ea9004f8a0b32eb5a")
+	version("0.1.0", md5="3b145c0a291ec945eb9ed79e3ca16bbc")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-fastcluster", type=("build", "run"))

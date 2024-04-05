@@ -23,6 +23,7 @@ Sampling Data
 	cran = "sspse" 
 
 	version("1.1.0-1", md5="d9e6c92c31bf2d30eab81580e4035ffd")
+	version("1.1.0", md5="27ddfa0751ff5f579d8a785ae9aab27e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rds", type=("build", "run"))

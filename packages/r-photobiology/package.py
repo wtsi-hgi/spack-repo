@@ -24,6 +24,7 @@ class RPhotobiology(RPackage):
 	cran = "photobiology" 
 
 	version("0.11.2", md5="c7179cc7a65868f0d2a498400e2c87ac")
+	version("0.11.0", md5="c9b3e4f28d22f89b2683e08d640da55e")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-polynom@1.4.1:", type=("build", "run"))

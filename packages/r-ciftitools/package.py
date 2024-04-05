@@ -25,6 +25,7 @@ class RCiftitools(RPackage):
 	cran = "ciftiTools" 
 
 	version("0.14.0", md5="bd0fbf6073135151103b4ae4b3625003")
+	version("0.13.4", md5="7246310a3da389fff5cf44544802bc5f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-fields", type=("build", "run"))

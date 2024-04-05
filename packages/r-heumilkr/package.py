@@ -16,6 +16,7 @@ class RHeumilkr(RPackage):
 	cran = "heumilkr" 
 
 	version("0.2.0", md5="f7e02288056794db8990ba51092cf265")
+	version("0.1.0", md5="3d9cee8d016846fa800fcca242c1dd75")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rlang@1.1:", type=("build", "run"))

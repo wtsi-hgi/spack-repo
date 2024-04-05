@@ -20,4 +20,3 @@ class RRuvnormalizedata(RPackage):
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))
 
-	# experiment

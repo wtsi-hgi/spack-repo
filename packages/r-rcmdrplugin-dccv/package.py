@@ -15,6 +15,7 @@ class RRcmdrpluginDccv(RPackage):
 	cran = "RcmdrPlugin.DCCV" 
 
 	version("0.1-4", md5="45e83ff99a48b14b0ff56f6be6dce288")
+	version("0.1-3", md5="57a205098450facac1455d749ecaeb93")
 
 	depends_on("r-dcchoice", type=("build", "run"))
 	depends_on("r-rcmdr", type=("build", "run"))

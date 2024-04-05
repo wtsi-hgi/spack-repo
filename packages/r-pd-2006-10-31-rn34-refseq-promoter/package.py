@@ -25,4 +25,3 @@ class RPd20061031Rn34RefseqPromoter(RPackage):
 	depends_on("r-biostrings@2.13.50:", type=("build", "run"))
 	depends_on("r-iranges@1.3.89:", type=("build", "run"))
 
-	# annotation

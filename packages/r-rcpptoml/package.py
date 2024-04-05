@@ -16,8 +16,9 @@ class RRcpptoml(RPackage):
 	connect the 'cpptoml' parser written by Chase Geigle (in C++11) to R."""
 
 	cran = "RcppTOML"
-	version("0.1.7", sha256="2f09f00cbee6c6eeff5d5f0195c10de0155496de15fbe8189c18627ee3090541")
+	version("0.2.2", sha256="371391f9ca82221e76a424082ea9ebc5ea2c50f14e8408469b09d7dc3e6f63aa")
 	version("0.2.2", md5="7ee285ee18fa1630c6595cb246a5a870")
+	version("0.1.7", sha256="2f09f00cbee6c6eeff5d5f0195c10de0155496de15fbe8189c18627ee3090541")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

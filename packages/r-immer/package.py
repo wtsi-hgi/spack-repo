@@ -25,6 +25,7 @@ class RImmer(RPackage):
 	cran = "immer" 
 
 	version("1.5-13", md5="9c1e1b598931e01b76b77457c9caa98d")
+	version("1.4-15", md5="c68ad59952550bb69f710ba0a7edf3f7")
 
 	depends_on("r@3.0.0:", type=("build", "run"))
 	depends_on("r-cdm", type=("build", "run"))

@@ -13,11 +13,11 @@ class RShape(RPackage):
 	cylinders, arrows, ..."""
 
 	cran = "shape"
+	version("1.4.6.1", md5="42b7951c69b6c93178c07f2d189d0c89")
 	version("1.4.6", sha256="b9103e5ed05c223c8147dbe3b87a0d73184697343634a353a2ae722f7ace0b7b")
 	version("1.4.5", sha256="094a79b8f42226189227fd7af71868e42106caa25a4d7f80a26977e8bc84189f")
 	version("1.4.4", sha256="f4cb1b7d7c84cf08d2fa97f712ea7eb53ed5fa16e5c7293b820bceabea984d41")
 	version("1.4.3", sha256="720f6ca9c70a39a3900af9d074bff864b18ac58013b21d48b779047481b93ded")
 	version("1.4.2", sha256="c6c08ba9cc2e90e5c9d3d5223529b57061a041f637886ad7665b9fa27465637a")
-	version("1.4.6.1", md5="42b7951c69b6c93178c07f2d189d0c89")
 
 	depends_on("r@2.1:", type=("build", "run"))

@@ -11,7 +11,7 @@ class RLme4qtl(RPackage):
     homepage = "https://github.com/variani/lme4qtl"
     url = "https://github.com/variani/lme4qtl/archive/refs/tags/0.1.10.tar.gz"
 
-    version("0.1.10", sha256="59ae1e4aac83b55794cebdcda5529bdabab53a716213b964e6728468d8d594e8")
+	version("0.1.10", sha256="59ae1e4aac83b55794cebdcda5529bdabab53a716213b964e6728468d8d594e8")
 
     depends_on("r-matrix", type=("build", "run"))
     depends_on("r-lme4", type=("build", "run"))

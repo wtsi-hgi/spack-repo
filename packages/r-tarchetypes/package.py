@@ -24,6 +24,7 @@ class RTarchetypes(RPackage):
 	cran = "tarchetypes" 
 
 	version("0.8.0", md5="91c7a481e98dd3b14b780fd45324e232")
+	version("0.7.12", md5="39bb3bb543aae37e6ced6fdad833825e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-digest@0.6.25:", type=("build", "run"))

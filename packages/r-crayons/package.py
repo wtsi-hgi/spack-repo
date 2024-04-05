@@ -19,8 +19,8 @@ class RCrayons(RPackage):
 	homepage = "https://github.com/christopherkenny/crayons"
 	cran = "crayons" 
 
-	version("0.0.2", md5="13a3b06bd894044a8e17b9a63295f053")
 	version("0.0.3", md5="366b8f40ecaa9dae73108b5bd26eded4")
+	version("0.0.2", md5="13a3b06bd894044a8e17b9a63295f053")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-palette", type=("build", "run"))

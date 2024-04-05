@@ -20,8 +20,8 @@ class RBasilisk(RPackage):
 	license("GPL-3.0-or-later")
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/basilisk_1.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/basilisk/basilisk_1.14.3.tar.gz"]
 
-	version("1.12.0", commit="26c1c354526eb8d806268427a7c40b31bb89f489")
 	version("1.14.3", md5="0ae86374eec47c3b808cf10947d2695b")
+	version("1.12.0", commit="26c1c354526eb8d806268427a7c40b31bb89f489")
 
 	depends_on("r-reticulate", type=("build", "run"))
 	depends_on("r-dir-expiry", type=("build", "run"))

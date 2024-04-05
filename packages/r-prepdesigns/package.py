@@ -34,4 +34,5 @@ class RPrepdesigns(RPackage):
 	cran = "pRepDesigns" 
 
 	version("1.2.0", md5="be0d96a84cda8e378355f01db3b09307")
+	version("1.1.0", md5="52d34a433fac9db96435cef7107ff4aa")
 

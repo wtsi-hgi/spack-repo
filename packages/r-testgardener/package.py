@@ -26,6 +26,7 @@ class RTestgardener(RPackage):
 	cran = "TestGardener" 
 
 	version("3.3.3", md5="c6477e984380da5aad8a6148fbc23ab7")
+	version("3.3.2", md5="4a01bbaa7ef9d1031a299b0fa6a841c9")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-fda", type=("build", "run"))

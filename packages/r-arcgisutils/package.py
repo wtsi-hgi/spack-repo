@@ -23,6 +23,7 @@ class RArcgisutils(RPackage):
 	cran = "arcgisutils" 
 
 	version("0.2.0", md5="04ec44f6b1462fa2f988266e066b34b5")
+	version("0.1.1", md5="e54c6cf270eb7c82170028534aad3b13")
 
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-dbplyr", type=("build", "run"))

@@ -18,6 +18,7 @@ Location Scale and Shape
 	cran = "gamlss.add" 
 
 	version("5.1-13", md5="1a7d5b434b688cef5ed1f19176255ef1")
+	version("5.1-12", md5="6b4c6a53c9dc83824fe72699980e1c48")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-gamlss-dist", type=("build", "run"))

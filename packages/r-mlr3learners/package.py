@@ -21,6 +21,7 @@ class RMlr3learners(RPackage):
 	cran = "mlr3learners" 
 
 	version("0.6.0", md5="e545db7b50527abdd3dc2c24cccd16bd")
+	version("0.5.8", md5="bd246c174bf2d937b9a7381e0c591f0a")
 
 	depends_on("r-mlr3@0.17.1:", type=("build", "run"))
 	depends_on("r@3.1:", type=("build", "run"))

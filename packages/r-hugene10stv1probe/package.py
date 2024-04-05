@@ -20,4 +20,3 @@ class RHugene10stv1probe(RPackage):
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))
 
-	# annotation

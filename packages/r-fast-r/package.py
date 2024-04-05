@@ -17,6 +17,7 @@ class RFastR(RPackage):
 	cran = "FAST.R" 
 
 	version("0.2.1", md5="7b44ab7e707b9e43db147d20a67af809")
+	version("0.1.3", md5="cdfa376e1eab8b7c4699cef34f130ce8")
 
 	depends_on("r-caret", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

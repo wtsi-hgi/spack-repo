@@ -17,6 +17,7 @@ class RAdsplit(RPackage):
 	bioc = "adSplit"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/adSplit_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/adSplit/adSplit_1.72.0.tar.gz"]
 
+	version("1.72.0", md5="4d50affb50e6f6a11d8c4e379b6116d8")
 	version("1.70.0", commit="a08a994215a459b856eae051c778e2b9144f52d9")
 	version("1.68.0", commit="705977b5e1cb7dd69793cc673fa215baaba42af5")
 	version("1.66.0", commit="64580a6f7a9bc6b16334267c90df48fbb839cc16")
@@ -27,7 +28,6 @@ class RAdsplit(RPackage):
 	version("1.50.0", commit="a02e2c994e78ececd5a248575109c5ed36c969db")
 	version("1.48.0", commit="57dfcd93b9232cf53f05c34179ecb759bb7aff46")
 	version("1.46.0", commit="7e81a83f34d371447f491b3a146bf6851e260c7c")
-	version("1.72.0", md5="4d50affb50e6f6a11d8c4e379b6116d8")
 
 	depends_on("r@2.1:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

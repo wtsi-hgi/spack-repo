@@ -36,6 +36,7 @@ class RGdalraster(RPackage):
 	homepage = "https://usdaforestservice.github.io/gdalraster/"
 	cran = "gdalraster" 
 
+	version("1.8.0", md5="2ae8b8925cd82504fbbf5f6c78bd206e")
 	version("1.10.0", md5="e4a19f3c077f076a2ab248908e822865")
 
 	depends_on("r@4.2:", type=("build", "run"))

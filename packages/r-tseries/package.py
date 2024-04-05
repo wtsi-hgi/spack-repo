@@ -10,6 +10,7 @@ class RTseries(RPackage):
 	"""Time series analysis and computational finance."""
 
 	cran = "tseries"
+	version("0.10-55", md5="48f91be31447054c9d104715f0557e9b")
 	version("0.10-53", sha256="ec388ee6d022752bbebbecbf22d793d31f3734982e3f2e3ffd8dde14bffcca56")
 	version("0.10-52", sha256="9399c8dbedb3b44b8b3b854f6e8867e0a14f3727a7aa66ec9c6eff069ead8f45")
 	version("0.10-51", sha256="a55f20704883710ab58ea479e20cf0f263c50d54282f693793cda4af664c207f")
@@ -18,7 +19,6 @@ class RTseries(RPackage):
 	version("0.10-47", sha256="202377df56806fe611c2e12c4d9732c71b71220726e2defa7e568d2b5b62fb7b")
 	version("0.10-46", sha256="12940afd1d466401160e46f993ed4baf28a42cef98d3757b66ee15e916e07222")
 	version("0.10-42", sha256="827f79858715c700e8cabd2c27853ba88ad0e05eb043bc94e126b155a75546c4")
-	version("0.10-55", md5="48f91be31447054c9d104715f0557e9b")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-quadprog", type=("build", "run"))

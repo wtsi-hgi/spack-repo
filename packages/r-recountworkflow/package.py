@@ -34,4 +34,3 @@ class RRecountworkflow(RPackage):
 	depends_on("r-bumphunter", type=("build", "run"))
 	depends_on("r-derfinderplot", type=("build", "run"))
 
-	# workflow

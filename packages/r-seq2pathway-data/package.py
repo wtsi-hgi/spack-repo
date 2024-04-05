@@ -19,4 +19,3 @@ class RSeq2pathwayData(RPackage):
 
 	depends_on("r@3.6.2:", type=("build", "run"))
 
-	# experiment

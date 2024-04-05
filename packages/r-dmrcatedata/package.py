@@ -16,6 +16,7 @@ class RDmrcatedata(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DMRcatedata_2.20.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DMRcatedata/DMRcatedata_2.20.3.tar.gz"]
 
 	version("2.20.3", md5="46f23fffafbc0e7112852dc7e7a959a3")
+	version("2.20.2", md5="0cd6e9693ca761425b661cd4a512d797")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))
@@ -27,4 +28,3 @@ class RDmrcatedata(RPackage):
 	depends_on("r-illuminahumanmethylation450kanno-ilmn12-hg19", type=("build", "run"))
 	depends_on("r-illuminahumanmethylationepicanno-ilm10b4-hg19", type=("build", "run"))
 
-	# experiment

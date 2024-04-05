@@ -20,8 +20,8 @@ Models
 	
 	cran = "extrafrail" 
 
-	version("1.8", md5="d60164c8f02c11036f12fbd4f099318f")
 	version("1.9", md5="ebe70599e66cbb6b2b21af019cd6af0a")
+	version("1.8", md5="d60164c8f02c11036f12fbd4f099318f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

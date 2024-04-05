@@ -20,7 +20,7 @@ Tumors
 	
 	cran = "dinamic" 
 
-	version("1.0", md5="f77353caed46518fd6e1f325145eabf1")
 	version("1.0.1", md5="6d4e005b3c4349b6ae6e41675e149a4d")
+	version("1.0", md5="f77353caed46518fd6e1f325145eabf1")
 
 	depends_on("r@4.2:", type=("build", "run"))

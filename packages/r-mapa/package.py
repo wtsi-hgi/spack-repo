@@ -16,6 +16,7 @@ class RMapa(RPackage):
 	cran = "MAPA" 
 
 	version("2.0.7", md5="485879ee312d84c34ea66cc4a8d5e704")
+	version("2.0.6", md5="188108741c135acf983954efaec0aa41")
 
 	depends_on("r-forecast@5.3:", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

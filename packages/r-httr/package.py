@@ -14,6 +14,7 @@ class RHttr(RPackage):
 	components (authenticate(), add_headers() and so on)."""
 
 	cran = "httr"
+	version("1.4.7", md5="8965ffef86aea39922f435c019daf9fb")
 	version("1.4.5", sha256="f93bac7f882b0df099abca47dd5aae3686fb3cd2d3e9926fcd639bcddff76f6c")
 	version("1.4.4", sha256="41d82523f3ee260d409a7b5ae4136190cbc5aecbc270b40ed7064f83e7f5435d")
 	version("1.4.3", sha256="9a8613fa96173ac910c021391af1ced4d0609169049c802cf7cdfe1c40897c6a")
@@ -23,7 +24,6 @@ class RHttr(RPackage):
 	version("1.3.1", sha256="22134d7426b2eba37f0cc34b99285499b8bac9fe75a7bc3222fbad179bf8f258")
 	version("1.2.1", sha256="e7b90b90ee52c826e152efcfadf98e078fa75b65a6baaeb8fd25eeed2195730e")
 	version("1.1.0", sha256="d7c0cdc11b2ded3132544580f52ebe5dad2a426cde1a5029f2cc693b2f195823")
-	version("1.4.7", md5="8965ffef86aea39922f435c019daf9fb")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-curl@5.0.2:", type=("build", "run"))

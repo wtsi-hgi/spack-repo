@@ -27,4 +27,3 @@ class RHd2013sgi(RPackage):
 	depends_on("r-lsd", type=("build", "run"))
 	depends_on("r-ebimage", type=("build", "run"))
 
-	# experiment

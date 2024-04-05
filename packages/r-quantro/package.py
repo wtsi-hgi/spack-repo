@@ -18,6 +18,7 @@ class RQuantro(RPackage):
 
 	bioc = "quantro"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/quantro_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/quantro/quantro_1.36.0.tar.gz"]
+	version("1.36.0", md5="3e7912df8d9bc50c461074539540f289")
 	version("1.34.0", commit="c769d21ce5ccb6f33c35e6e1dbb901ea8afad4b1")
 	version("1.32.0", commit="0c70b787866d915abb720f2ab326a83eb1e775b7")
 	version("1.30.0", commit="e756c439cdc5a6fb4d7879aff56a8368475513b5")
@@ -28,7 +29,6 @@ class RQuantro(RPackage):
 	version("1.14.0", commit="2d43264b2a95ae8ca51a69d7768fe43b9f1b77bb")
 	version("1.12.0", commit="1cfcc73875cf4ecc2618e5e45fda89bd075a5d12")
 	version("1.10.0", commit="111337c0aba052aa49c3d2e2d3042794b28858c9")
-	version("1.36.0", md5="3e7912df8d9bc50c461074539540f289")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -25,6 +25,7 @@ class RHdshop(RPackage):
 	cran = "HDShOP" 
 
 	version("0.1.5", md5="b7a0f274ab6bfe40b36eb5e135c8943e")
+	version("0.1.3", md5="4aeab0cca2022a6a67445275a04dab71")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rdpack", type=("build", "run"))

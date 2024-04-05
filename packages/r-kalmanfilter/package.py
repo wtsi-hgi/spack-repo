@@ -16,6 +16,7 @@ class RKalmanfilter(RPackage):
 	cran = "kalmanfilter" 
 
 	version("2.1.1", md5="edf0b111270757b4480da251ef4bff1c")
+	version("2.1.0", md5="ec3cd237ccf0a1e84e81a02a7358d829")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

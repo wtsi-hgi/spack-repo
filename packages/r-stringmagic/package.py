@@ -16,5 +16,6 @@ class RStringmagic(RPackage):
 	cran = "stringmagic" 
 
 	version("1.1.0", md5="dc71f4f3d14034bf20fc380d32969c4c")
+	version("1.0.0", md5="fb2a47a42735f26602831e0ac3bf0997")
 
 	depends_on("r-rcpp", type=("build", "run"))

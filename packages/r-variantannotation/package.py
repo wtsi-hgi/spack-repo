@@ -14,6 +14,7 @@ class RVariantannotation(RPackage):
 
 	bioc = "VariantAnnotation"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VariantAnnotation_1.48.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VariantAnnotation/VariantAnnotation_1.48.1.tar.gz"]
+	version("1.48.1", md5="39b6f4907fe37495a903c338e6d4cc73")
 	version("1.46.0", commit="80d43e024bead5afd48cb86910ba4670d8d37424")
 	version("1.44.0", commit="2e7e0a3b7c1918c0d64170dc7c173a636d3764f4")
 	version("1.42.1", commit="d1121696c76c189d6b4df9914806bf585a495845")
@@ -24,7 +25,6 @@ class RVariantannotation(RPackage):
 	version("1.26.1", commit="60ae67598cc3d7ed20ee6417920f8c209085faaf")
 	version("1.24.5", commit="468d7f53fd743e04c9af853d58e871b4cc13a090")
 	version("1.22.3", commit="3a91b6d4297aa416d5f056dec6f8925eb1a8eaee")
-	version("1.48.1", md5="39b6f4907fe37495a903c338e6d4cc73")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.37:", type=("build", "run"))

@@ -21,6 +21,7 @@ class RDeepdep(RPackage):
 	cran = "deepdep" 
 
 	version("0.4.3", md5="58e42d792ac9bb5d055bf152704d28b7")
+	version("0.4.2", md5="cc74060d12ecfd65b05f33bc316cf9d7")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-cranlogs", type=("build", "run"))

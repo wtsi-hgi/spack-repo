@@ -15,6 +15,7 @@ class RNetworkscaleup(RPackage):
 	cran = "networkscaleup" 
 
 	version("0.1-2", md5="fd983e327daef2531586a42d78833eb3")
+	version("0.1-1", md5="6cf70da09002795e61c7883a55faddc6")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-rcpp@0.12:", type=("build", "run"))

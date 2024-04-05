@@ -16,6 +16,7 @@ class RTraj(RPackage):
 	cran = "traj" 
 
 	version("2.1.0", md5="85eb498d710e46ef30b1619fad274999")
+	version("2.0.1", md5="0aae84093d2493e6d47decad08486a75")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))

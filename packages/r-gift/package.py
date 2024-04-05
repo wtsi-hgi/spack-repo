@@ -22,6 +22,7 @@ class RGift(RPackage):
 	cran = "GIFT" 
 
 	version("1.3.2", md5="4ee8d4ca6ef37bf7fee81cd7055f7301")
+	version("1.3.1", md5="251cf9e9b69e591b7e17b2d83a22043b")
 
 	depends_on("r@3.5.3:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

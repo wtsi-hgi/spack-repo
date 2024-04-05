@@ -21,6 +21,7 @@ class RMetanet(RPackage):
 	cran = "MetaNet" 
 
 	version("0.1.2", md5="bdb3f67df24842c3d375628911399995")
+	version("0.1.0", md5="ccc5d8a67127bf33df4fb7382e16e884")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-igraph@1.3.5:", type=("build", "run"))

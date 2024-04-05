@@ -22,6 +22,10 @@ class RBiomformat(RPackage):
 	bioc = "biomformat"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biomformat_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biomformat/biomformat_1.30.0.tar.gz"]
 
+	version("1.8.0", commit="acd207377b24e4d8310eaff06c16dcfe6c04509a")
+	version("1.6.0", commit="61fb8c7b34ad561c3c46cacc0dd1957be56da85e")
+	version("1.4.0", commit="83b4b1883bc56ea93a0a6ca90fc1b18712ef0f1a")
+	version("1.30.0", md5="f35aaf72b454bc1872f1247642029006")
 	version("1.28.0", commit="9240e78dc378abcf6c62ef8dbf2e60f7241232a3")
 	version("1.26.0", commit="f851ba2428b57769f6fbb287874bad0dc84dd69c")
 	version("1.24.0", commit="4e14692dbcc34c3bd51defd74c728df5de9d0829")
@@ -29,10 +33,6 @@ class RBiomformat(RPackage):
 	version("1.18.0", commit="dc18859c139f4d76805adb6f01e199573cdd5a8b")
 	version("1.12.0", commit="6e946123bb59da262cbb0c17dc5ab49328a89d4a")
 	version("1.10.1", commit="e67c6f4b70201f748fa49a4938e1af0cd0613f09")
-	version("1.8.0", commit="acd207377b24e4d8310eaff06c16dcfe6c04509a")
-	version("1.6.0", commit="61fb8c7b34ad561c3c46cacc0dd1957be56da85e")
-	version("1.4.0", commit="83b4b1883bc56ea93a0a6ca90fc1b18712ef0f1a")
-	version("1.30.0", md5="f35aaf72b454bc1872f1247642029006")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-plyr@1.8:", type=("build", "run"))

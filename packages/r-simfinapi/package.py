@@ -19,6 +19,7 @@ class RSimfinapi(RPackage):
 	cran = "simfinapi" 
 
 	version("1.0.0", md5="45b1c4ce02eea7bc3bf9e5a18bc0fe99")
+	version("0.2.4", md5="c8dce2b941b3f3ed4ea81c8d264f7038")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-checkmate@2:", type=("build", "run"))

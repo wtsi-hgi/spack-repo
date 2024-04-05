@@ -17,6 +17,8 @@ class RGenomeinfodb(RPackage):
 
 	bioc = "GenomeInfoDb"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomeInfoDb_1.38.8.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomeInfoDb/GenomeInfoDb_1.38.8.tar.gz"]
+	version("1.38.8", md5="af0949e2aa2f19dbb1eed4d8487d9928")
+	version("1.38.6", md5="b739753a88d5a331b38744b1ad14f416")
 	version("1.36.0", commit="c380bb93a5480b48e0efbf6d107cefc10d574438")
 	version("1.34.3", commit="ea6f131f1d1ee61535d6733ce76fabf3c62185fc")
 	version("1.32.4", commit="69df6a5a10027fecf6a6d1c8298f3f686b990d8f")
@@ -28,7 +30,6 @@ class RGenomeinfodb(RPackage):
 	version("1.16.0", commit="6543dad89bbc2c275010b329eb114b237fd712fa")
 	version("1.14.0", commit="4978308a57d887b764cc4ce83724ca1758f580f6")
 	version("1.12.3", commit="2deef3f0571b7f622483257bc22d2509ab5a0369")
-	version("1.38.8", md5="af0949e2aa2f19dbb1eed4d8487d9928")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.37:", type=("build", "run"))

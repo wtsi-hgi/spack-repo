@@ -24,6 +24,7 @@ class RPedprobr(RPackage):
 	cran = "pedprobr" 
 
 	version("0.9.3", md5="af7d78d3c4804153959bb8f7d1ec79b7")
+	version("0.8.0", md5="8c36e2690ada98cf11902c04df6dd177")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-pedtools@1.1:", type=("build", "run"))

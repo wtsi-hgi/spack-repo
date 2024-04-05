@@ -17,6 +17,7 @@ class RGenesysr(RPackage):
 	cran = "genesysr" 
 
 	version("2.1.1", md5="b602b9f2d509c92f412242538b304d5e")
+	version("2.1.0", md5="136b481c2d0ac75d5dbea8d1a378d82e")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-httr2@1:", type=("build", "run"))

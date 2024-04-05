@@ -17,8 +17,8 @@ class RCdmconnector(RPackage):
 	homepage = "https://darwin-eu.github.io/CDMConnector/"
 	cran = "CDMConnector" 
 
-	version("1.3.0", md5="cfd8f80fd669e6984aef687a0a4f4709")
 	version("1.3.1", md5="47c7152552b7398fa163738048875bb4")
+	version("1.3.0", md5="cfd8f80fd669e6984aef687a0a4f4709")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

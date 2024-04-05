@@ -21,6 +21,7 @@ class RGprofiler2(RPackage):
 	cran = "gprofiler2" 
 
 	version("0.2.3", md5="02f9cc49f7cd65fcb5a056e949f5db88", url="https://cran.r-project.org/src/contrib/gprofiler2_0.2.3.tar.gz")
+	version("0.2.2", md5="74abfbe7f9fd042230dc18bbfd90fd1f", url="https://cran.r-project.org/src/contrib/gprofiler2_0.2.2.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

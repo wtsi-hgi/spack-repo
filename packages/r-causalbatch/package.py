@@ -16,6 +16,7 @@ class RCausalbatch(RPackage):
 	cran = "causalBatch" 
 
 	version("1.2.0", md5="c5823bdbae72e6094b0fe85e6111cd20")
+	version("1.1", md5="bf72067d0ae25e5253d67d1278a08f19")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-cdcsis", type=("build", "run"))

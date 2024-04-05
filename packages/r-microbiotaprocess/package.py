@@ -17,6 +17,7 @@ class RMicrobiotaprocess(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MicrobiotaProcess_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MicrobiotaProcess/MicrobiotaProcess_1.14.1.tar.gz"]
 
 	version("1.14.1", md5="3cbe1b72a8f91301c18ffca401297c4b")
+	version("1.14.0", md5="104b99004b64b664131ddea6462cbabc")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

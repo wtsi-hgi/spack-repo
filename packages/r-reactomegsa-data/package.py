@@ -24,4 +24,3 @@ class RReactomegsaData(RPackage):
 	depends_on("r-reactomegsa", type=("build", "run"))
 	depends_on("r-seurat", type=("build", "run"))
 
-	# experiment

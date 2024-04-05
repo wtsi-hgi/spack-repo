@@ -15,6 +15,7 @@ class RRnamf(RPackage):
 	cran = "RNAmf" 
 
 	version("0.1.2", md5="b5e516dd84b6bb256e24658e4ccd83ba")
+	version("0.1.0", md5="1e796acf24963e308a58b11af1e262f5")
 
 	depends_on("r-plgp", type=("build", "run"))
 	depends_on("r-lhs", type=("build", "run"))

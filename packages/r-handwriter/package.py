@@ -17,6 +17,7 @@ class RHandwriter(RPackage):
 	cran = "handwriter" 
 
 	version("3.0.0", md5="ac2ad84267ff8b6a29f1cb52a2999a4c")
+	version("2.0.3", md5="7a411d25ebe65d01812420acd451655e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

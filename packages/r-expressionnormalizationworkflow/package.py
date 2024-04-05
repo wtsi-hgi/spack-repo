@@ -26,4 +26,3 @@ class RExpressionnormalizationworkflow(RPackage):
 	depends_on("r-sva@3.10:", type=("build", "run"))
 	depends_on("r-vsn@3.32:", type=("build", "run"))
 
-	# workflow

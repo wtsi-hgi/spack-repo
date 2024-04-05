@@ -15,6 +15,7 @@ class ROntologysimilarity(RPackage):
 	cran = "ontologySimilarity" 
 
 	version("2.7", md5="822cf4c2e980595be40ae54843e82095")
+	version("2.5", md5="316eca09a009b20c4cb65d4ab7d2ba27")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

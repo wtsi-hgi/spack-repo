@@ -16,6 +16,7 @@ class RQtlpoly(RPackage):
 	cran = "qtlpoly" 
 
 	version("0.2.4", md5="dc0abbd618608aef4989aaee99af8dd5")
+	version("0.2.3", md5="459d6f96926068e3bde1a599a8227622")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2@3.1:", type=("build", "run"))

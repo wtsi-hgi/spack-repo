@@ -17,6 +17,7 @@ class RSdpdmod(RPackage):
 	cran = "SDPDmod" 
 
 	version("0.0.4", md5="e554aa64547f245e2de7c7db16e3072d")
+	version("0.0.3", md5="5a6d2ba961f73a8e6bf22018d5a50b66")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

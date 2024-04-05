@@ -14,6 +14,7 @@ class RAnnotate(RPackage):
 	bioc = "annotate"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/annotate_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/annotate/annotate_1.80.0.tar.gz"]
 
+	version("1.80.0", md5="04d25cadc03401556364f8ca9c3b2a61")
 	version("1.78.0", commit="ca6415a463ec682f340ba5d1dc6246a92e836143")
 	version("1.76.0", commit="0181d5c41d594e36be06adb6a02302db0ad2c507")
 	version("1.74.0", commit="200c71743417792880f8171d59b2ac0ddd3902a8")
@@ -24,7 +25,6 @@ class RAnnotate(RPackage):
 	version("1.58.0", commit="d1b5dd5feb8793f4f816d9a4aecbebb5ec7df7bc")
 	version("1.56.2", commit="95ec3b004f5356bd78b2a60cbf7f93e0d48cf346")
 	version("1.54.0", commit="860cc5b696795a31b18beaf4869f9c418d74549e")
-	version("1.80.0", md5="04d25cadc03401556364f8ca9c3b2a61")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.27.5:", type=("build", "run"))

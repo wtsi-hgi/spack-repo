@@ -19,6 +19,7 @@ class RUcscxenashiny(RPackage):
 	cran = "UCSCXenaShiny" 
 
 	version("2.0.0", md5="b2a36e1ff9e4f22b6693fd4f618e0c62")
+	version("1.1.10", md5="8cdbb835e84233d0dca9109a2d353f04")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))

@@ -32,4 +32,3 @@ class RIhwpaper(RPackage):
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))
 
-	# experiment

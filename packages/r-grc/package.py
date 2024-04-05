@@ -22,6 +22,7 @@ Symmetries
 	cran = "gRc" 
 
 	version("0.5.0", md5="8c1366601633200e5d3fa9aec9634826")
+	version("0.4.6", md5="4e79edb86a97d121c118f2ae4dd59c0b")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-grbase@2:", type=("build", "run"))

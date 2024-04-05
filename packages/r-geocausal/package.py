@@ -20,6 +20,7 @@ class RGeocausal(RPackage):
 	cran = "geocausal" 
 
 	version("0.3.0", md5="b98d2ec36ed9b1d854221d72489309c2")
+	version("0.2.0", md5="2e9b2142b73fd1bf98b8973d9ddf486a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

@@ -20,4 +20,3 @@ class RGpaexample(RPackage):
 
 	depends_on("r@4:", type=("build", "run"))
 
-	# experiment

@@ -21,4 +21,3 @@ class RAmpaffyexample(RPackage):
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-affy@1.23.4:", type=("build", "run"))
 
-	# experiment

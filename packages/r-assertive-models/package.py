@@ -16,6 +16,7 @@ class RAssertiveModels(RPackage):
 
 	cran = "assertive.models"
 
+	version("0.0-2", sha256="b9a6d8786f352d53371dbe8c5f2f2a62a7866e30313f268e69626d5c3691c42e")
 	version("0.0-2", md5="93672bbfaa32c656ab6956e71aa0db67")
 
 	depends_on("r@3:", type=("build", "run"))

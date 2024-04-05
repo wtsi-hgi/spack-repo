@@ -23,4 +23,3 @@ class RPredasampledata(RPackage):
 	depends_on("r-affy", type=("build", "run"))
 	depends_on("r-annotate", type=("build", "run"))
 
-	# experiment

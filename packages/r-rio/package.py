@@ -19,9 +19,9 @@ class RRio(RPackage):
 	provides a simple method for converting between file types."""
 
 	cran = "rio"
+	version("1.0.1", md5="10999152910a11bcccc2b85e78cfda4f")
 	version("0.5.29", sha256="9fa63187e1814053e6ed2a164665b4924e08c3453adccb78f7211d403dcc5412")
 	version("0.5.16", sha256="d3eb8d5a11e0a3d26169bb9d08f834a51a6516a349854250629072d59c29d465")
-	version("1.0.1", md5="10999152910a11bcccc2b85e78cfda4f")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-foreign", type=("build", "run"))

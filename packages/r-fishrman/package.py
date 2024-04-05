@@ -15,8 +15,8 @@ class RFishrman(RPackage):
 	homepage = "https://github.com/Shyentist/fish-r-man"
 	cran = "fishRman" 
 
-	version("1.2.2", md5="bd9af58ec2d65475ee4549f49108c94a")
 	version("1.2.3", md5="4bb3ee0395e9a3c88b2b5151188b84a1")
+	version("1.2.2", md5="bd9af58ec2d65475ee4549f49108c94a")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-config@0.3.1:", type=("build", "run"))

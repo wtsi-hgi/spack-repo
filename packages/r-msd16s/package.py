@@ -22,4 +22,3 @@ class RMsd16s(RPackage):
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-metagenomeseq", type=("build", "run"))
 
-	# experiment

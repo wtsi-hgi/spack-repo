@@ -19,6 +19,7 @@ class RLintr(RPackage):
 	cran = "lintr" 
 
 	version("3.1.2", md5="ef1820d613d3ab4d814109ebe21ef897")
+	version("3.1.1", md5="8bd97eec8532bedbca25108a9b7b4cea")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-backports@1.1.7:", type=("build", "run"))

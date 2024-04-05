@@ -20,6 +20,8 @@ class RGenomicfeatures(RPackage):
 
 	bioc = "GenomicFeatures"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicFeatures_1.54.4.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicFeatures/GenomicFeatures_1.54.4.tar.gz"]
+	version("1.54.4", md5="9b4b6dcc5a7ad626796f3aad34539d29")
+	version("1.54.3", md5="ff1db6c7968d616ad62d011206144975")
 	version("1.52.0", commit="207ff08b38421f0394a8f6450e00fb8713ab463c")
 	version("1.50.2", commit="4fc9120ceed9ff59f390c8bbdbd79b212ee35b84")
 	version("1.48.4", commit="06e37dc1847d49d91391264caec877ed33abf359")
@@ -31,7 +33,6 @@ class RGenomicfeatures(RPackage):
 	version("1.32.3", commit="80807d88048858846de3750cecb9431a0e5e69e1")
 	version("1.30.3", commit="496bbf81beebd7c934b8d3dcea001e3e4a7d7dee")
 	version("1.28.5", commit="ba92381ae93cb1392dad5e6acfab8f6c1d744834")
-	version("1.54.4", md5="9b4b6dcc5a7ad626796f3aad34539d29")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.1:", type=("build", "run"))

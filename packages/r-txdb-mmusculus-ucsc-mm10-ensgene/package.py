@@ -20,4 +20,3 @@ class RTxdbMmusculusUcscMm10Ensgene(RPackage):
 	depends_on("r-genomicfeatures@1.25.17:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

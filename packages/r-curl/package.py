@@ -20,6 +20,8 @@ class RCurl(RPackage):
 	package with http specific tools and logic."""
 
 	cran = "curl"
+	version("5.2.1", md5="9380107ee0b1331ab730bd1e18b61c72")
+	version("5.2.0", md5="f016784d6247ffe293187ac9eaa81ebe")
 	version("5.0.0", sha256="d7f3cac9b513914ffa8f6f64e6fa5dd96c8273378ace6b0c16b71bc6ba59c9b2")
 	version("4.3.3", sha256="3567b6acad40dad68acfe07511c853824839d451a50219a96dd6d125ed617c9e")
 	version("4.3.2", sha256="90b1facb4be8b6315bb3d272ba2dd90b88973f6ea1ab7f439550230f8500a568")
@@ -30,7 +32,6 @@ class RCurl(RPackage):
 	version("2.3", sha256="f901dad6bb70a6875a85da75bcbb42afffdcdf4ef221909733826bcb012d7c3d")
 	version("1.0", sha256="f8927228754fdfb21dbf08b9e67c5f97e06764c4adf327a4126eed84b1508f3d")
 	version("0.9.7", sha256="46e150998723fd1937da598f47f49fe47e40c1f57ec594436c6ef1e0145b44dc")
-	version("5.2.1", md5="9380107ee0b1331ab730bd1e18b61c72")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("curl", type=("build", "link", "run"))

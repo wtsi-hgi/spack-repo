@@ -26,6 +26,7 @@ class RNetgwas(RPackage):
 	cran = "netgwas" 
 
 	version("1.14.3", md5="921c10668fb347091bef5238489dae07")
+	version("1.14.2", md5="fa827ef7c884be930d9595887134cea1")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-matrix@1.4.1:", type=("build", "run"))

@@ -20,6 +20,7 @@ class RStacks(RPackage):
 	cran = "stacks" 
 
 	version("1.0.4", md5="bb8605907aa3ae8005debda2b6402498")
+	version("1.0.3", md5="8d60c355c782ad5dc16432fe2bd149b9")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-butcher@0.1.3:", type=("build", "run"))

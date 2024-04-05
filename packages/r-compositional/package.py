@@ -29,8 +29,9 @@ class RCompositional(RPackage):
 	
 	cran = "Compositional" 
 
-	version("6.7", md5="3524a2b8f2a065d2ef7104b46ae9af15")
 	version("6.8", md5="230c2a404fc15938d4868ca930a55702")
+	version("6.7", md5="3524a2b8f2a065d2ef7104b46ae9af15")
+	version("6.6", md5="2b8d2453425c13777566b830145d572d")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-codalm", type=("build", "run"))

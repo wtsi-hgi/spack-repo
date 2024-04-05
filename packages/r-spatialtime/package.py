@@ -19,6 +19,7 @@ class RSpatialtime(RPackage):
 	cran = "spatialTIME" 
 
 	version("1.3.4-3", md5="baf195da46998231651f7066f1749af3")
+	version("1.3.4-2", md5="9e6dfe6d0071140b1c102b9aad6caa5c")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

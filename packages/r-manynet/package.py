@@ -21,6 +21,7 @@ class RManynet(RPackage):
 	cran = "manynet" 
 
 	version("0.4.4", md5="7a8b0d3be1b51905cb01dfe1195c0fad")
+	version("0.4.1", md5="c505c8cf9d106a6d6ff92b3e6f9024b3")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr@1.1:", type=("build", "run"))

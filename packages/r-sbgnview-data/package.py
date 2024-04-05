@@ -22,4 +22,3 @@ class RSbgnviewData(RPackage):
 	depends_on("r-rmarkdown", type=("build", "run"))
 	depends_on("r-bookdown", type=("build", "run"))
 
-	# experiment

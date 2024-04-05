@@ -13,6 +13,7 @@ class RGeneplotter(RPackage):
 
 	bioc = "geneplotter"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geneplotter_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geneplotter/geneplotter_1.80.0.tar.gz"]
+	version("1.80.0", md5="29d4ec34db2e953fc9b7306f4d3b7733")
 	version("1.78.0", commit="a105c51d2f7a097ea33c3aad8f2345e9a51406d3")
 	version("1.76.0", commit="4eb6a787d0c66110ec9a7d34fc76b64030fbde5d")
 	version("1.74.0", commit="ca819565829eac7a9a98e3cafafd6c06a466fddf")
@@ -23,7 +24,6 @@ class RGeneplotter(RPackage):
 	version("1.58.0", commit="2b3f44804d61a40cfe7eaedf74ac9f5a054f7fde")
 	version("1.56.0", commit="881d25aece3dc00cc4280457ffecdc25e93bb1f1")
 	version("1.54.0", commit="efdd946e092e44e35fde1eb4bcc5ec1d52090940")
-	version("1.80.0", md5="29d4ec34db2e953fc9b7306f4d3b7733")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

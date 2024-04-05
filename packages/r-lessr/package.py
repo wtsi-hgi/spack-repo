@@ -15,6 +15,7 @@ class RLessr(RPackage):
 	cran = "lessR" 
 
 	version("4.3.1", md5="6b81fe86a516e7059331be731ca3ad3c")
+	version("4.3.0", md5="bf0767cf66e9e6008fc4d080fb0d5e37")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))

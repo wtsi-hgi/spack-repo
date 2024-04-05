@@ -17,8 +17,8 @@ class RNonnest2(RPackage):
 	Science Foundation under Grant Number SES-1061334."""
 
 	cran = "nonnest2"
-	version("0.5-5", sha256="027f510e322122fc75c936251a95ddd392f96047ac86e0fae6cf8f883ac7aab5")
 	version("0.5-6", md5="404b9edab7bb21841bd359fdfc2c5c82", url="https://cran.r-project.org/src/contrib/nonnest2_0.5-6.tar.gz")
+	version("0.5-5", sha256="027f510e322122fc75c936251a95ddd392f96047ac86e0fae6cf8f883ac7aab5")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-compquadform", type=("build", "run"))

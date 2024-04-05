@@ -22,6 +22,7 @@ class RGreta(RPackage):
 	cran = "greta" 
 
 	version("0.4.5", md5="ea5868718340ce90653943f17543ed52")
+	version("0.4.4", md5="8c934c15002c2fee781eac7b6e4c8e78")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))

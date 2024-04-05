@@ -16,6 +16,7 @@ class RPsbcspeedup(RPackage):
 	cran = "psbcSpeedUp" 
 
 	version("2.0.6", md5="5d69d7eca1eab0d2d906195dffe93417")
+	version("2.0.5", md5="02ba52f739c100d10507ef3a7b78cdaa")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

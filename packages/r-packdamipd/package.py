@@ -22,6 +22,7 @@ Ability from Individual Patient Level Data
 	cran = "packDAMipd" 
 
 	version("1.1.0", md5="e0f4ad7aa9cc40327e158ecadfcb19b8")
+	version("0.2.2", md5="46f64e9a822ef32c713898c57f3cc810")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-readxl", type=("build", "run"))

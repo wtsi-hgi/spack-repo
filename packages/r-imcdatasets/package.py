@@ -27,4 +27,3 @@ class RImcdatasets(RPackage):
 	depends_on("r-delayedarray", type=("build", "run"))
 	depends_on("r-hdf5array", type=("build", "run"))
 
-	# experiment

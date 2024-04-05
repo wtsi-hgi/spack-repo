@@ -15,6 +15,7 @@ Social Sciences
 	
 	cran = "rdss" 
 
+	version("1.0.6", md5="099bc7785d8616f74690ec89a06ad2f4")
 	version("1.0.10", md5="ab89bb5f9cb8a5a0c1892cec33b10799")
 
 	depends_on("r@2.10:", type=("build", "run"))

@@ -22,4 +22,3 @@ class RMvoutdata(RPackage):
 	depends_on("r-affy@1.23.4:", type=("build", "run"))
 	depends_on("r-lumi", type=("build", "run"))
 
-	# experiment

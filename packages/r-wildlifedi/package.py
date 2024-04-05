@@ -17,6 +17,7 @@ Data
 	cran = "wildlifeDI" 
 
 	version("1.0.0", md5="c4ae6e778631de6e7645f989cb28fa4e")
+	version("0.5.1", md5="9a7f80b4176a1f760d6c8274e196e935")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-move2", type=("build", "run"))

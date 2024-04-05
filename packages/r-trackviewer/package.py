@@ -16,6 +16,7 @@ class RTrackviewer(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/trackViewer_1.38.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/trackViewer/trackViewer_1.38.2.tar.gz"]
 
 	version("1.38.2", md5="9ae8263a98ccdb23ed39efc89c6bb8ea")
+	version("1.38.1", md5="c0004e0bdb49b5d051e486f73a79a245")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

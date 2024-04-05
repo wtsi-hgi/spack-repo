@@ -19,6 +19,7 @@ class RTealLogger(RPackage):
 	cran = "teal.logger" 
 
 	version("0.2.0", md5="4ade45cdf34222012d3ded7cc2b1a751")
+	version("0.1.3", md5="c67a93b12c0612a9f661686f5dff5772")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-glue@1:", type=("build", "run"))

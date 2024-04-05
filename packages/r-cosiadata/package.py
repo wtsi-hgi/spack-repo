@@ -20,4 +20,3 @@ class RCosiadata(RPackage):
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-experimenthub@2.6:", type=("build", "run"))
 
-	# experiment

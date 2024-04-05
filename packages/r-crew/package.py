@@ -30,8 +30,8 @@ class RCrew(RPackage):
 	homepage = "https://wlandau.github.io/crew/"
 	cran = "crew" 
 
-	version("0.9.0", md5="219f501c0f07c5f172f9cff94b23cd41")
 	version("0.9.1", md5="c1a4c790e68478ce65efc84c34d68f28")
+	version("0.9.0", md5="219f501c0f07c5f172f9cff94b23cd41")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-cli@3.1:", type=("build", "run"))

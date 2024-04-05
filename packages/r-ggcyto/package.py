@@ -17,6 +17,7 @@ class RGgcyto(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggcyto_1.30.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggcyto/ggcyto_1.30.2.tar.gz"]
 
 	version("1.30.2", md5="5864b5d39532851c3064e9561a88e863")
+	version("1.30.0", md5="f50828f54e40b73d30aa3ac0ef06de21")
 
 	depends_on("r-ggplot2@3.5:", type=("build", "run"))
 	depends_on("r-flowcore@1.41.5:", type=("build", "run"))

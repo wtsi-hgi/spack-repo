@@ -18,6 +18,7 @@ class RConstructive(RPackage):
 	cran = "constructive" 
 
 	version("0.3.0", md5="2b140ea9eeb5e5964c73865d80b2e350")
+	version("0.2.0", md5="b51a6a8f12bfeac07ac2089507248aa9")
 
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-diffobj", type=("build", "run"))

@@ -25,4 +25,3 @@ class RGdnainrnaseqdata(RPackage):
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))
 
-	# experiment

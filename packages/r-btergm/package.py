@@ -16,8 +16,8 @@ Pseudolikelihood
 	homepage = "https://github.com/leifeld/btergm"
 	cran = "btergm" 
 
-	version("1.10.11", md5="010e57b5f3a5642b3d57ec84a7271edc")
 	version("1.10.12", md5="f4240657440515efe91f735db7013edf")
+	version("1.10.11", md5="010e57b5f3a5642b3d57ec84a7271edc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-network@1.17.1:", type=("build", "run"))

@@ -22,6 +22,7 @@ class RJordan(RPackage):
 	cran = "jordan" 
 
 	version("1.0-5", md5="56aac0cf42c4e8ff3ff7d10ed46a9e3e")
+	version("1.0-1", md5="d077f32b6d9bfe43b55d4916c393aa2b")
 
 	depends_on("r-onion@1.4.0:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

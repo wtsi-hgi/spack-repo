@@ -19,6 +19,7 @@ class RSaerobust(RPackage):
 	cran = "saeRobust" 
 
 	version("0.5.0", md5="85c4e28ce48ee21624c982fe26926d7c")
+	version("0.4.0", md5="04aac1eedb76a0f7208274a50cea77dc")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-aoos", type=("build", "run"))

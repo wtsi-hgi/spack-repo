@@ -20,6 +20,7 @@ class RLpm(RPackage):
 	cran = "LPM" 
 
 	version("3.0", md5="f85e6461046d2b41d025dbb0478c2a8a")
+	version("2.9", md5="f495d0b1d302975145f4b747d2c65f55")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-fracdiff", type=("build", "run"))

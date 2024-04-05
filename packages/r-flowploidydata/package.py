@@ -18,4 +18,3 @@ class RFlowploidydata(RPackage):
 	version("1.28.0", md5="993a663f6d1cdc791c3f4e88d5b3b047")
 
 
-	# experiment

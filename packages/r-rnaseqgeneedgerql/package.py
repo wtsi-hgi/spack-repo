@@ -25,4 +25,3 @@ class RRnaseqgeneedgerql(RPackage):
 	depends_on("r-go-db", type=("build", "run"))
 	depends_on("r-biocstyle", type=("build", "run"))
 
-	# workflow

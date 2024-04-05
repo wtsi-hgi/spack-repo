@@ -21,4 +21,3 @@ class RTcgaworkflowdata(RPackage):
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 
-	# experiment

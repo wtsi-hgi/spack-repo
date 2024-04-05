@@ -23,6 +23,7 @@ class RPsagraphics(RPackage):
 	cran = "PSAgraphics" 
 
 	version("2.1.3", md5="295545057aee42064456c3aba0776e16")
+	version("2.1.2", md5="56c422c1c5504fa589c35e9020e3c094")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-rpart", type=("build", "run"))

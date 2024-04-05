@@ -25,6 +25,7 @@ class RFungible(RPackage):
 	cran = "fungible" 
 
 	version("2.4.4", md5="c08fba8139bbbe9a68eeb360f2f422b9")
+	version("2.4.3", md5="d0f5e47d9df00c268f932356995525e0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-crayon@1.4.1:", type=("build", "run"))

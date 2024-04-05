@@ -22,6 +22,7 @@ class REha(RPackage):
 	cran = "eha" 
 
 	version("2.11.4", md5="379f3ecdcaaf2545ca6577f6165839a6")
+	version("2.11.2", md5="8522414c74f0505eb4b6b9c0ec4fba9f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-survival@3:", type=("build", "run"))

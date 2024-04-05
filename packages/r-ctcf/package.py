@@ -19,4 +19,3 @@ class RCtcf(RPackage):
 	version("0.99.11", md5="5ec44245864395de390e68fa56e465af")
 
 
-	# annotation

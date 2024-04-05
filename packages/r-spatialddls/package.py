@@ -17,6 +17,7 @@ Networks
 	cran = "SpatialDDLS" 
 
 	version("1.0.1", md5="35dbef7a405944fad91f40acebb29063")
+	version("1.0.0", md5="8c8f68521d5aab50dc27bca777b3731a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

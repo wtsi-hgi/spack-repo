@@ -19,4 +19,3 @@ class RYe6100subdcdf(RPackage):
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

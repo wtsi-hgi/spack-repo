@@ -24,6 +24,7 @@ class RMadpop(RPackage):
 	cran = "MADPop" 
 
 	version("1.1.7", md5="95a3939b54099df643d92e065f33ad86")
+	version("1.1.6", md5="9c456daf7311493e537f4bb17c1a929e")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-rstan@2.26:", type=("build", "run"))

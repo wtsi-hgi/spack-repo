@@ -26,6 +26,7 @@ class RReporter(RPackage):
 	cran = "reporter" 
 
 	version("1.4.4", md5="abc6f9625c48459084140a0da1c333e7")
+	version("1.4.3", md5="e036fc0bef7911791e5db33c7197cba2")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-common@1.1:", type=("build", "run"))

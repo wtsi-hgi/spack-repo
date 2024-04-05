@@ -15,6 +15,7 @@ class RRoxygen2(RPackage):
 	change. 'Roxygen2' is inspired by the 'Doxygen' system for C++."""
 
 	cran = "roxygen2"
+	version("7.3.1", md5="0889cc9894460b64931b8a2853994f7b", url="https://cran.r-project.org/src/contrib/roxygen2_7.3.1.tar.gz")
 	version("7.2.3", sha256="d844fab977d2575ab942fa1309ac7ff67f35f099a75d8b41c79efe6ea10416da")
 	version("7.2.1", sha256="d2f0342591dc2b561fad8f6cf6fb3001e5e0bdd02be68bb2c6315f6bb82cda21")
 	version("7.2.0", sha256="2ebfcfd567b9db6c606c6d42be1645b4e987f987995a2ad8954fa963a519448b")
@@ -23,7 +24,6 @@ class RRoxygen2(RPackage):
 	version("7.1.0", sha256="7e9b36f6e7c01a5c8c4747340b3d0c064ce2e48c93fcfbfe45139854fae74103")
 	version("6.1.1", sha256="ed46b7e062e0dfd8de671c7a5f6d120fb2b720982e918dbeb01e6985694c0273")
 	version("5.0.1", sha256="9f755ddd08358be436f08b02df398e50e7508b856131aeeed235099bb3a7eba5")
-	version("7.3.1", md5="0889cc9894460b64931b8a2853994f7b", url="https://cran.r-project.org/src/contrib/roxygen2_7.3.1.tar.gz")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-brew", type=("build", "run"))

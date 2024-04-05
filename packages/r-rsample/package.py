@@ -17,6 +17,7 @@ class RRsample(RPackage):
 	cran = "rsample" 
 
 	version("1.2.1", md5="63c019276adbe94b9c55579a688c6387")
+	version("1.2.0", md5="2cb8f420de59388f36051416726c21d9")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

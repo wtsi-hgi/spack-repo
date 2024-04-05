@@ -15,12 +15,12 @@ class RUsethis(RPackage):
 	more."""
 
 	cran = "usethis"
+	version("2.2.3", md5="e3890f0872a2222d7ee8b30dfe7473e4")
 	version("2.1.6", sha256="31dc6707577065ac1d4acb7d4cbf135942727c5cc2699092198c544be86f6818")
 	version("2.1.5", sha256="7d539e16ecdc1cd45ba1a215d42d8b9c16bc38280ddd27048003dbb37b16f052")
 	version("2.0.0", sha256="22aa2b59f36a8701a4648554c7b0e010253bf917a0f431f06efac7d8a6b59854")
 	version("1.6.1", sha256="60339059a97ed07dea7f8908b828b5bb42e0fd0b471165c061bc9660b0d59d6f")
 	version("1.5.1", sha256="9e3920a04b0df82adf59eef2c1b2b4d835c4a757a51b3c163b8fc619172f561d")
-	version("2.2.3", md5="e3890f0872a2222d7ee8b30dfe7473e4")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-cli@3.0.1:", type=("build", "run"))

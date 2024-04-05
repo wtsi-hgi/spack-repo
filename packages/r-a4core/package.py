@@ -15,6 +15,7 @@ class RA4core(RPackage):
 	bioc = "a4Core"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/a4Core_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/a4Core/a4Core_1.50.0.tar.gz"]
 
+	version("1.50.0", md5="fdca418afe3a74d9114d8d28afca2037")
 	version("1.48.0", commit="3dd09f0a662745fcfd3fee7048301f3524e8ac5c")
 	version("1.46.0", commit="8999fe146be6d04ae36c725d2b6324a6ce8ceb83")
 	version("1.44.0", commit="61a7f3a51a41af615bfd4c22984e4c4a82874e8c")
@@ -25,7 +26,6 @@ class RA4core(RPackage):
 	version("1.28.0", commit="39b6ee29bc2f2fdc5733438c14dc02f8abc6460b")
 	version("1.26.0", commit="e7be935f20b486165a2b27dbbf9e99ba07151bcd")
 	version("1.24.0", commit="c871faa3e1ab6be38a9ea3018816cf31b58b0ed3")
-	version("1.50.0", md5="fdca418afe3a74d9114d8d28afca2037")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))

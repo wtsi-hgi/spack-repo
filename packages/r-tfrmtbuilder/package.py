@@ -17,6 +17,7 @@ class RTfrmtbuilder(RPackage):
 	cran = "tfrmtbuilder" 
 
 	version("0.0.6", md5="05e780feb61daa9c4060da66b9650916")
+	version("0.0.5", md5="61eca692aa9b9dc9ff2750e49d764ada")
 
 	depends_on("r-tfrmt@0.1:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

@@ -34,4 +34,3 @@ class RMethylationarrayanalysis(RPackage):
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-flowsorted-blood-450k", type=("build", "run"))
 
-	# workflow

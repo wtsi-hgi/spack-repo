@@ -26,4 +26,3 @@ class RCelldex(RPackage):
 	depends_on("r-delayedarray", type=("build", "run"))
 	depends_on("r-delayedmatrixstats", type=("build", "run"))
 
-	# experiment

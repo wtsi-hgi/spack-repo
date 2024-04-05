@@ -13,6 +13,7 @@ class RScales(RPackage):
 	automatically determining breaks and labels for axes and legends."""
 
 	cran = "scales"
+	version("1.3.0", md5="eeaf1b6727eceab473f4c139e99601c8")
 	version("1.2.1", sha256="59453e6dbdafee93dfb101e4d86048a62a12898134259d3ef02d65aeec57ed08")
 	version("1.2.0", sha256="185d50240e6b3e84d36ec7fbca6aef7a85db7c8c1b0dde51d4af28d363ce02df")
 	version("1.1.1", sha256="40b2b66522f1f314a20fd09426011b0cdc9d16b23ee2e765fe1930292dd03705")
@@ -20,7 +21,6 @@ class RScales(RPackage):
 	version("0.5.0", sha256="dbfcc0817c4ab8b8777ec7d68ebfe220177c193cfb5bd0e8ba5d365dbfe3e97d")
 	version("0.4.1", sha256="642b88fb1fce7bac72a0038ce532b65b8a79dffe826fec25033cf386ab630cd3")
 	version("0.4.0", sha256="851ef6136339b361b3f843fb73ea89f9112279b9cc126bdb38acde8d24c1c6a7")
-	version("1.3.0", md5="eeaf1b6727eceab473f4c139e99601c8")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

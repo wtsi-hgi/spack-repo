@@ -16,6 +16,7 @@ class RSimplyagree(RPackage):
 	cran = "SimplyAgree" 
 
 	version("0.2.0", md5="c70d3794e5da548f2f2aa19526c72cdb")
+	version("0.1.2", md5="1a49cee55c4d14a513502a21c8c6ff3e")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

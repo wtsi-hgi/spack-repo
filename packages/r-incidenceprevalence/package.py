@@ -17,6 +17,7 @@ Model
 	cran = "IncidencePrevalence" 
 
 	version("0.7.2", md5="b1599597737715ecfe14d1dd4d484ed5")
+	version("0.7.0", md5="55c06546960926db0dd766da5b08f0d6")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-cdmconnector@1.3:", type=("build", "run"))

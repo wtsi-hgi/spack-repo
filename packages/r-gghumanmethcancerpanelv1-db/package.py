@@ -22,4 +22,3 @@ class RGghumanmethcancerpanelv1Db(RPackage):
 	depends_on("r-org-hs-eg-db@2.4.5:", type=("build", "run"))
 	depends_on("r-annotationforge", type=("build", "run"))
 
-	# annotation

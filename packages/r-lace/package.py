@@ -17,6 +17,7 @@ class RLace(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LACE_2.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LACE/LACE_2.6.1.tar.gz"]
 
 	version("2.6.1", md5="df209e326ce8f0a235412ce9fd79a765")
+	version("2.6.0", md5="d11f64211d10d293c2931b49765b5d61")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))

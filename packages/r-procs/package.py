@@ -21,6 +21,7 @@ class RProcs(RPackage):
 	cran = "procs" 
 
 	version("1.0.6", md5="71529ccda33810993500b365770973ed")
+	version("1.0.5", md5="3a5b4cbe829eac4b030e53a114e53c16")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-common", type=("build", "run"))

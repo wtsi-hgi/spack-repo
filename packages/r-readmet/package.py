@@ -15,4 +15,5 @@ class RReadmet(RPackage):
 	cran = "readmet" 
 
 	version("1.7.1", md5="95cfc52a0ba771fd96912a1f0925accd")
+	version("1.6.9", md5="84f42006fce43f1d58c7275f0dc78241")
 

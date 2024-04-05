@@ -31,11 +31,11 @@ class RGplots(RPackage):
 	[13] spacing points in an x-y plot so they don't overlap ('space')."""
 
 	cran = "gplots"
+	version("3.1.3.1", md5="4dd687c541fb88500ea28d9f4161f0b6")
 	version("3.1.3", sha256="9f853b9e205264d087e61e8825f797ce36c9eb585b187dab794563613a526716")
 	version("3.1.1", sha256="f9ae19c2574b6d41adbeccaf7bc66cf56d7b2769004daba7e0038d5fbd821339")
 	version("3.0.1.1", sha256="7db103f903a25d174cddcdfc7b946039b61e236c95084b90ad17f1a41da3770c")
 	version("3.0.1", sha256="343df84327ac3d03494992e79ee3afc78ba3bdc08af9a305ee3fb0a38745cb0a")
-	version("3.1.3.1", md5="4dd687c541fb88500ea28d9f4161f0b6")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-gtools", type=("build", "run"))

@@ -26,6 +26,7 @@ class RFlextable(RPackage):
 	cran = "flextable" 
 
 	version("0.9.5", md5="6c2d389406b40e88f4f01e32f9af2ca9")
+	version("0.9.4", md5="6136f0e007856ed030bc6f537e15aa4b")
 
 	depends_on("r-rmarkdown", type=("build", "run"))
 	depends_on("r-knitr", type=("build", "run"))

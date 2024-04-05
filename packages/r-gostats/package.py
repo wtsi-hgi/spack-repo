@@ -15,6 +15,7 @@ class RGostats(RPackage):
 
 	bioc = "GOstats"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOstats_2.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOstats/GOstats_2.68.0.tar.gz"]
+	version("2.68.0", md5="4489bff9142d2a3357ac2de0efc1b1b4")
 	version("2.66.0", commit="dbfc8a7646b53db53b0c329e0e1c77c0f202f08f")
 	version("2.64.0", commit="62813253249dc02d2ddaafa7f0249e69d6f2c6b0")
 	version("2.62.0", commit="217db032272010ebb8fe3af4647153428f42cd47")
@@ -25,7 +26,6 @@ class RGostats(RPackage):
 	version("2.46.0", commit="489d7a437488f77c3010f6212f3b81f4e240cd17")
 	version("2.44.0", commit="fc64ca2aa37c52656d396d6e46611f39d6efd48a")
 	version("2.42.0", commit="8b29709064a3b66cf1d963b2be0c996fb48c873e")
-	version("2.68.0", md5="4489bff9142d2a3357ac2de0efc1b1b4")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase@1.15.29:", type=("build", "run"))

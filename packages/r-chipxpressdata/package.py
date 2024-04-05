@@ -19,4 +19,3 @@ class RChipxpressdata(RPackage):
 
 	depends_on("r-bigmemory", type=("build", "run"))
 
-	# experiment

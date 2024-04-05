@@ -14,6 +14,7 @@ class RPhyloseq(RPackage):
 
 	bioc = "phyloseq"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phyloseq_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phyloseq/phyloseq_1.46.0.tar.gz"]
+	version("1.46.0", md5="335dc9dedba529ce34669dd881127e7c")
 	version("1.44.0", commit="03b74f7d7aa866f5f9a84c7368da57b7a168967e")
 	version("1.42.0", commit="de6be71fe9902bdfe7791163acb7b67d238424dc")
 	version("1.40.0", commit="20bb27d5e6e0d4368978a15671b829990b1f4568")
@@ -24,7 +25,6 @@ class RPhyloseq(RPackage):
 	version("1.24.2", commit="829992f88c79de48bb8749678624e2bbd3b66645")
 	version("1.22.3", commit="c695323f2963636d16acda9f05a583bd58e31344")
 	version("1.20.0", commit="107d1d5e3437a6e33982c06a548d3cc91df2a7e0")
-	version("1.46.0", md5="335dc9dedba529ce34669dd881127e7c")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-ade4@1.7.4:", type=("build", "run"))

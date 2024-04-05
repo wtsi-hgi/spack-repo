@@ -21,4 +21,3 @@ class RLumimouseidmapping(RPackage):
 	depends_on("r-lumi@1.7.14:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

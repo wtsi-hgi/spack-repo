@@ -17,6 +17,7 @@ class RClassifyr(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ClassifyR_3.6.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ClassifyR/ClassifyR_3.6.5.tar.gz"]
 
 	version("3.6.5", md5="3d5bac437fffdc2b44d9ab39d8bb5470")
+	version("3.6.3", md5="d7ab30daf86208976868d3f9b82b67de")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-generics", type=("build", "run"))

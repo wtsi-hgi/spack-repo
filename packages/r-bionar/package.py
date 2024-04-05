@@ -16,6 +16,7 @@ class RBionar(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioNAR_1.4.4.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioNAR/BioNAR_1.4.4.tar.gz"]
 
 	version("1.4.4", md5="60ea801489d5db3a2bb2e00d1acc1056")
+	version("1.4.1", md5="cce2273d564095b70d5b18aa6d134612")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-igraph@2.0.1.1:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RSnvecr(RPackage):
 	cran = "snvecR" 
 
 	version("3.9.1", md5="8f32641d5740436d368b1250ca486528")
+	version("3.8.0", md5="79b994f1099743a62cf77e12d25ad390")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-desolve", type=("build", "run"))

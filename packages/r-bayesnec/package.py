@@ -15,8 +15,8 @@ class RBayesnec(RPackage):
 	homepage = "https://open-aims.github.io/bayesnec/"
 	cran = "bayesnec" 
 
-	version("2.1.1.0", md5="e0763f7c5546e780aebfdfd3db2f87cc")
 	version("2.1.2.0", md5="e0a846de03e11387f510e5b933f03498")
+	version("2.1.1.0", md5="e0763f7c5546e780aebfdfd3db2f87cc")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-brms", type=("build", "run"))

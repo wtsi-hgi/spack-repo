@@ -23,6 +23,7 @@ class RCounternull(RPackage):
 	cran = "Counternull" 
 
 	version("0.2.12", md5="32dfbce972d81d07b99fd9f65275a8c2")
+	version("0.2.1", md5="000a9bfcd51b394c159ef90802f8ea8c")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-effsize", type=("build", "run"))

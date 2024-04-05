@@ -17,6 +17,7 @@ Sequence Alignment using Edit (Levenshtein) Distance
 	cran = "edlibR" 
 
 	version("1.0.2", md5="5800fbd584a78f005e5702cc8ac6d89e")
+	version("1.0.1", md5="f53fe2b1cacb5b614a5f4f54c5e7f93e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

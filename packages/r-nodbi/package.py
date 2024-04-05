@@ -19,6 +19,7 @@ class RNodbi(RPackage):
 	cran = "nodbi" 
 
 	version("0.10.4", md5="2fe15dc9a8dc031cecd83ce1a9945333")
+	version("0.10.1", md5="724cc5bfb55b0c06c1f1b88cc8c7845f")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-stringi", type=("build", "run"))

@@ -21,8 +21,8 @@ class RBtspas(RPackage):
 	homepage = "https://github.com/cschwarz-stat-sfu-ca/BTSPAS"
 	cran = "BTSPAS" 
 
-	version("2021.11.2", md5="a536c14e0719aa9bb68f16f2a848e8aa")
 	version("2024.4.1", md5="de90a1325fbf92030b878dba38baf37f")
+	version("2021.11.2", md5="a536c14e0719aa9bb68f16f2a848e8aa")
 
 	depends_on("r-actuar", type=("build", "run"))
 	depends_on("r-coda", type=("build", "run"))

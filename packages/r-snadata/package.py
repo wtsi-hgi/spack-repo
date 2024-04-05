@@ -20,4 +20,3 @@ class RSnadata(RPackage):
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))
 
-	# experiment

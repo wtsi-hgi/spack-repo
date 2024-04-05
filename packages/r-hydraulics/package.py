@@ -32,6 +32,7 @@ class RHydraulics(RPackage):
 	cran = "hydraulics" 
 
 	version("0.7.0", md5="7aed1029c36d65ea52b8b076fb04b6ed")
+	version("0.6.1", md5="d27b3f24744746e85cef3351e8855cd4")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

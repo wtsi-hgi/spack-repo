@@ -14,6 +14,7 @@ class RNetwork(RPackage):
 	attributes."""
 
 	cran = "network"
+	version("1.18.2", md5="2bfbe1c797cdf37cc77e15679c1bf1ed")
 	version("1.18.1", sha256="c80d70352967d8480cfa801f2a31bfe130e2ad4dbf2c07b0046e57f3013cd243")
 	version("1.18.0", sha256="59f4b10174c87c8742c6b3c93c5e47833042375f5f872fdd23155b4a5244ce5b")
 	version("1.17.2", sha256="9588a198807c8c68da147f479ca9af5bcb4468cf91b6a90b8044d313d9fa30f7")
@@ -22,7 +23,6 @@ class RNetwork(RPackage):
 	version("1.15", sha256="5cbe5c0369e5f8363e33a86f14fd33ce8727166106381627ecd13b7452e14cb3")
 	version("1.14-377", sha256="013c02f8d97f1f87f2c421760534df9353d2a8c2277f20b46b59fb79822d3e46")
 	version("1.13.0", sha256="7a04ea89261cdf32ccb52222810699d5fca59a849053e306b5ec9dd5c1184f87")
-	version("1.18.2", md5="2bfbe1c797cdf37cc77e15679c1bf1ed")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))

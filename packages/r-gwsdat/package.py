@@ -19,6 +19,7 @@ class RGwsdat(RPackage):
 	cran = "GWSDAT" 
 
 	version("3.2.1", md5="52b692d714550dd03e410c26de88f535")
+	version("3.2.0", md5="a7552eb165db1969abb30a8447047079")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-deldir", type=("build", "run"))

@@ -16,6 +16,7 @@ class RKoboconnectr(RPackage):
 	cran = "KoboconnectR" 
 
 	version("1.2.2", md5="cce6e1cf1601bc1b1f76e1aa966f5540")
+	version("1.2.1", md5="d07752d88c04cd55254ef85668113aae")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))

@@ -19,6 +19,7 @@ class RWgcna(RPackage):
 	visualization."""
 
 	cran = "WGCNA"
+	version("1.72-5", md5="15c7021e172261124fe0e20aefdabbe9")
 	version("1.72-1", sha256="1dbf82761ef3e76464b18fc9f698ad0f971aafecabf66ca937b950930bd57fdc")
 	version("1.71", sha256="21f5349e888ea76241912600ee5c35a0d2fd50180568b9b08b2b597f099bf708")
 	version("1.70-3", sha256="b9843b839728183af6b746f239e9519d438b294613362b556002acdb8522cbd4")
@@ -26,7 +27,6 @@ class RWgcna(RPackage):
 	version("1.68", sha256="0a04f15a20817f9260ae1896eda3be83a7f4855a27a348df85c7f4d376f1efe8")
 	version("1.67", sha256="c9cc9989763b2c80835489eabd38d9ee35b204305044d115ca7c775a103f6824")
 	version("1.64-1", sha256="961a890cda40676ba533cd6de2b1d4f692addd16363f874c82ba8b65dd2d0db6")
-	version("1.72-5", md5="15c7021e172261124fe0e20aefdabbe9")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-dynamictreecut@1.62:", type=("build", "run"))

@@ -21,5 +21,6 @@ class RSmof(RPackage):
 	cran = "smof" 
 
 	version("1.1.0", md5="72ae44f4aebc33b52d5da0c31f06308a")
+	version("1.0", md5="d97bca039b778ec651345fa0924658c3")
 
 	depends_on("r@4:", type=("build", "run"))

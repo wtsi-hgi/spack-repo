@@ -21,4 +21,3 @@ class RKeggdzpathwaysgeo(RPackage):
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))
 
-	# experiment

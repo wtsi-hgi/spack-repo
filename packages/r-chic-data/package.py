@@ -22,4 +22,3 @@ class RChicData(RPackage):
 	depends_on("r-randomforest", type=("build", "run"))
 	depends_on("r-caret@6.0.78:", type=("build", "run"))
 
-	# experiment

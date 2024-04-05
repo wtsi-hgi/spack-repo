@@ -21,4 +21,3 @@ class RBsgenomeBtaurusUcscBostau9Masked(RPackage):
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-btaurus-ucsc-bostau9", type=("build", "run"))
 
-	# annotation

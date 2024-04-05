@@ -21,6 +21,7 @@ class RVerbalisr(RPackage):
 	cran = "verbalisr" 
 
 	version("0.5.2", md5="3ce7e6dea35e3b4b9744d0d8f5750a3e")
+	version("0.5.1", md5="ad102eb27866902f758d9b2356f2f2c5")
 
 	depends_on("r-pedtools@2.2:", type=("build", "run"))
 	depends_on("r@4.1:", type=("build", "run"))

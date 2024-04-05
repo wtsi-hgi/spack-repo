@@ -13,6 +13,7 @@ class RPreprocesscore(RPackage):
 
 	bioc = "preprocessCore"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/preprocessCore_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/preprocessCore/preprocessCore_1.64.0.tar.gz"]
+	version("1.64.0", md5="2116c6363074b59becdaf7a1e88caf91")
 	version("1.62.0", commit="a6e3d339bc8204d15db4e750bd98f0313490b658")
 	version("1.60.0", commit="7f62a7d54776a21ab6c2d3df4668382d531d1ee8")
 	version("1.58.0", commit="2995e3e1a8f428a80aee200db42ee44743d893f6")
@@ -23,5 +24,4 @@ class RPreprocesscore(RPackage):
 	version("1.42.0", commit="2e3a8baeacfaa1526d51252642772ea951015bba")
 	version("1.40.0", commit="969bb0e5cbd63d569502ae4e6eaadc1e216646dd")
 	version("1.38.1", commit="c58cb4c720eda0f1c733b989b14912093a7c5fbc")
-	version("1.64.0", md5="2116c6363074b59becdaf7a1e88caf91")
 

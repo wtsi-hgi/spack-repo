@@ -26,6 +26,7 @@ class RMppr(RPackage):
 	cran = "mppR" 
 
 	version("1.5.0", md5="ed52063c3eba09ae0a7304413475d196")
+	version("1.4.0", md5="6df5533429c0d8099290b9eecc5a7e77")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

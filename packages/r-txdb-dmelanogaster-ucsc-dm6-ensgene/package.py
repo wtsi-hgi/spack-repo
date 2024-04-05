@@ -20,4 +20,3 @@ class RTxdbDmelanogasterUcscDm6Ensgene(RPackage):
 	depends_on("r-genomicfeatures@1.41.3:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 
-	# annotation

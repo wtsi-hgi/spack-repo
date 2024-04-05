@@ -26,6 +26,7 @@ class RPedtools(RPackage):
 	cran = "pedtools" 
 
 	version("2.6.0", md5="b131e72d011ba340804b27e808f94edd")
+	version("2.5.0", md5="4deae6c59019082b8035e4dc314517bc")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-kinship2", type=("build", "run"))

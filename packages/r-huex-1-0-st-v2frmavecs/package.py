@@ -19,4 +19,3 @@ class RHuex10StV2frmavecs(RPackage):
 
 	depends_on("r@2.10:", type=("build", "run"))
 
-	# annotation

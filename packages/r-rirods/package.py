@@ -24,6 +24,7 @@ class RRirods(RPackage):
 	cran = "rirods" 
 
 	version("0.2.0", md5="6b3064c6105e2c8025dbd6b7b78ba87e")
+	version("0.1.2", md5="021f70b3c17633afbe7e9b1c410f7022")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))

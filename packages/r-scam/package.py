@@ -25,6 +25,7 @@ class RScam(RPackage):
 	cran = "scam" 
 
 	version("1.2-16", md5="da181086ac6232b7c63f96663e95ad44")
+	version("1.2-15", md5="18f6e32325a8325a62f18998808617a7")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-mgcv@1.8.2:", type=("build", "run"))

@@ -14,12 +14,12 @@ class RGgvis(RPackage):
 	and web graphics from 'vega'."""
 
 	cran = "ggvis"
+	version("0.4.9", md5="cd8e7cebdac79ce1925e39f4072900cb")
 	version("0.4.8", sha256="3d5480a0b97a57c26b595785f826b13d7695dab1f1dd8fcf5d7964fa8546a26a")
 	version("0.4.7", sha256="9e6b067e11d497c796d42156570e2481afb554c5db265f42afbb74d2ae0865e3")
 	version("0.4.4", sha256="1332ea122b768688c8a407a483be80febc4576de0ec8929077738421b27cafaf")
 	version("0.4.3", sha256="34d517783016aaa1c4bef8972f4c06df5cd9ca0568035b647e60a8369043ecdc")
 	version("0.4.2", sha256="2fcc2b6ca4fbdc69fe75a2c58c12cb43096ab418160c98367e5ac0fd19fc591d")
-	version("0.4.9", md5="cd8e7cebdac79ce1925e39f4072900cb")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

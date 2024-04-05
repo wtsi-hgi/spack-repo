@@ -25,6 +25,7 @@ class RPcutils(RPackage):
 	cran = "pcutils" 
 
 	version("0.2.5", md5="167e161a7c47e2ebc2f6acc2c529ee72")
+	version("0.2.1", md5="8c9bbebaf2e0e7ee5eb05208f1dc43cd")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

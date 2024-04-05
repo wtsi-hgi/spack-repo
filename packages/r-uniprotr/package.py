@@ -16,6 +16,7 @@ class RUniprotr(RPackage):
 	cran = "UniprotR" 
 
 	version("2.4.0", md5="e9e6fbec3b149eac04fcd43e845f7c41")
+	version("2.3.0", md5="0d4cb53e95c331a017f6490522673188")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))

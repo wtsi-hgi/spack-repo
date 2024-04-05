@@ -22,4 +22,3 @@ class RTenxpbmcdata(RPackage):
 	depends_on("r-annotationhub", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))
 
-	# experiment

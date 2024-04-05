@@ -22,6 +22,7 @@ class RGdalcubes(RPackage):
 	cran = "gdalcubes" 
 
 	version("0.7.0", md5="e77b9a38651d32c8d885a077d5909537")
+	version("0.6.4", md5="ff9d09645062ce0055f0f0e438146ce7")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -24,6 +24,7 @@ class RFormatdown(RPackage):
 	cran = "formatdown" 
 
 	version("0.1.3", md5="29fe3c4618b93e96f41ed647d462d400")
+	version("0.1.2", md5="786a7e1ca9555f21cb87411fbf65b7ef")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

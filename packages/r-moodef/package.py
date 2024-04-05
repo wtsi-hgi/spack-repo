@@ -19,6 +19,7 @@ class RMoodef(RPackage):
 	cran = "moodef" 
 
 	version("1.1.0", md5="1115f51934ed0d59b1543f855bc73400")
+	version("1.0.0", md5="79d1e8ed265d84dc8fe60145e73aa653")
 
 	depends_on("r-blastula", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))

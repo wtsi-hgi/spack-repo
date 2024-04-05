@@ -21,6 +21,7 @@ class RVisr(RPackage):
 	cran = "visR" 
 
 	version("0.4.1", md5="a14d4afd0c9fdc26565ddf794322d16a")
+	version("0.4.0", md5="57498650b0c3bc9fb2c9766d408329b6")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-broom@0.7.11:", type=("build", "run"))

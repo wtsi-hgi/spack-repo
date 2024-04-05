@@ -31,4 +31,3 @@ class RTuberculosis(RPackage):
 	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
 
-	# experiment

@@ -24,6 +24,7 @@ Statens Serum Institut
 	cran = "EpiForsk" 
 
 	version("0.1.1", md5="8ffd20c3dc359ae88757281fa7396509")
+	version("0.0.1", md5="a9973b3a55e597f6c498bc1313c63158")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))

@@ -16,6 +16,7 @@ class RRedcaptidier(RPackage):
 	cran = "REDCapTidieR" 
 
 	version("1.1.0", md5="d34b155620dd254d07b707d0c4f12e88")
+	version("1.0.0", md5="e427e94caee53c494bf295047a47a51e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

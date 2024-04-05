@@ -15,8 +15,8 @@ class RCvap(RPackage):
 	homepage = "https://github.com/christopherkenny/cvap"
 	cran = "cvap" 
 
-	version("0.1.4", md5="65c7278aa792cb27424441145c4601f6")
 	version("0.1.5", md5="aad36adc9f96b3fa798b71b71ade591c")
+	version("0.1.4", md5="65c7278aa792cb27424441145c4601f6")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-censable", type=("build", "run"))

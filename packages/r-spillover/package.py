@@ -15,6 +15,7 @@ class RSpillover(RPackage):
 	cran = "Spillover" 
 
 	version("0.1.1", md5="429bce318c390666023ef1fd0a56b3af")
+	version("0.1.0.3", md5="67e76daf671ad6ce2c63c69af14c82e7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-vars", type=("build", "run"))

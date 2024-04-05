@@ -21,6 +21,7 @@ Models
 	cran = "forsearch" 
 
 	version("6.0.0", md5="e6dac4a36e48b4ed2ffa5784e0f566a2")
+	version("5.1.0", md5="ce683546ae81cc2895c0df80d6445993")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-hmisc@4.7.0:", type=("build", "run"))

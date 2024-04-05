@@ -19,6 +19,7 @@ class RNominatimlite(RPackage):
 	cran = "nominatimlite" 
 
 	version("0.3.0", md5="56f9b3214cf7a0e6978232489de320b1")
+	version("0.2.1", md5="61e45302686d71a6583a3954b6a38ab7")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr@1:", type=("build", "run"))

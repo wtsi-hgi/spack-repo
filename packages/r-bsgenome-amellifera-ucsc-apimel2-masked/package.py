@@ -20,4 +20,3 @@ class RBsgenomeAmelliferaUcscApimel2Masked(RPackage):
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-amellifera-ucsc-apimel2", type=("build", "run"))
 
-	# annotation

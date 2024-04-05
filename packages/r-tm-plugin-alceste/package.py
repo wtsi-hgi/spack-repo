@@ -20,6 +20,7 @@ Text Mining Framework
 	cran = "tm.plugin.alceste" 
 
 	version("1.1.1", md5="fa11b8d034a8cd726f2e776a41b13256")
+	version("1.1", md5="7118fe140a1c3c51c12ed409ec4741c8")
 
 	depends_on("r-nlp", type=("build", "run"))
 	depends_on("r-tm@0.6:", type=("build", "run"))

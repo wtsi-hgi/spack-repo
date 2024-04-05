@@ -19,6 +19,7 @@ class RTemplates(RPackage):
 	cran = "templates" 
 
 	version("0.4.0", md5="94f059b7c6c4b3ca989ba5941775194a")
+	version("0.3.0", md5="435075c225cbfbb285a557342906b656")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))

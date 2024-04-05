@@ -15,6 +15,7 @@ class RMafdbGnomadexR21Hs37d5(RPackage):
 	bioc = "MafDb.gnomADex.r2.1.hs37d5" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.gnomADex.r2.1.hs37d5_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/MafDb.gnomADex.r2.1.hs37d5/MafDb.gnomADex.r2.1.hs37d5_3.10.0.tar.gz"]
 
+	version("3.10.0", md5="6ca4d742571687a13906d99cea2dbf1f", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/MafDb.gnomADex.r2.1.hs37d5_3.10.0.tar.gz")
 	version("3.10.0", md5="6ca4d742571687a13906d99cea2dbf1f", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.gnomADex.r2.1.hs37d5_3.10.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
@@ -25,4 +26,3 @@ class RMafdbGnomadexR21Hs37d5(RPackage):
 	depends_on("r-genomeinfodb", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))
 
-	# annotation

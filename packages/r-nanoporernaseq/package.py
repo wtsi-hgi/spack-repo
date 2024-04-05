@@ -21,4 +21,3 @@ class RNanoporernaseq(RPackage):
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-experimenthub@1.15.3:", type=("build", "run"))
 
-	# experiment

@@ -15,6 +15,7 @@ class RSeqlogo(RPackage):
 
 	bioc = "seqLogo"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqLogo_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqLogo/seqLogo_1.68.0.tar.gz"]
+	version("1.68.0", md5="0771c35a7929a3e71aa5eebaf4a624ef")
 	version("1.66.0", commit="6214c1733fe25da86071afba4210068816e4d74f")
 	version("1.64.0", commit="75ff6c0689fce541f054d33750acb6224d14ed4e")
 	version("1.62.0", commit="f2d0b53b1411ea98299201a8125a85f4cbf7c9cd")
@@ -25,6 +26,5 @@ class RSeqlogo(RPackage):
 	version("1.46.0", commit="e78be03db5f6a516138aeea6aa9512685633a4a2")
 	version("1.44.0", commit="4cac14ff29f413d6de1a9944eb5d21bfe5045fac")
 	version("1.42.0", commit="d7e04726c813282aa3f47a9ee98c5e1cec9bdddd")
-	version("1.68.0", md5="0771c35a7929a3e71aa5eebaf4a624ef")
 
 	depends_on("r@4.2:", type=("build", "run"))

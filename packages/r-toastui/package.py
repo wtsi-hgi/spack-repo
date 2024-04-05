@@ -17,6 +17,7 @@ class RToastui(RPackage):
 	cran = "toastui" 
 
 	version("0.3.3", md5="ff076c3c90f56a3ff70bb6303dd650e8")
+	version("0.3.1", md5="26ef32e7902b823eef2f5dfabeb8e937")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-htmlwidgets", type=("build", "run"))

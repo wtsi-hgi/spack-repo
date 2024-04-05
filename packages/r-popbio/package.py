@@ -15,4 +15,5 @@ class RPopbio(RPackage):
 	cran = "popbio" 
 
 	version("2.8", md5="e485e70631dbf52b20118daa180908a0")
+	version("2.7", md5="5c5c97e9a89fbd5a21c38384d466473e")
 

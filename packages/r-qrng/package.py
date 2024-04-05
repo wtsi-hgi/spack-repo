@@ -15,6 +15,7 @@ class RQrng(RPackage):
 	
 	cran = "qrng" 
 
+	version("0.0-9", md5="79f5e62dda6bd2749712941908fc53ab")
 	version("0.0-10", md5="513e4f9ab2775a64941dd45b943deea5")
 
 	depends_on("r@3:", type=("build", "run"))

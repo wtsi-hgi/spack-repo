@@ -15,6 +15,10 @@ class RScater(RPackage):
 
 	bioc = "scater"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scater_1.30.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scater/scater_1.30.1.tar.gz"]
+	version("1.8.4", commit="d560a9a378541d53d17990d2aa2cd28874df3dcd")
+	version("1.6.3", commit="964effb4e883102d7c8cae627dbac4ba5d216a75")
+	version("1.4.0", commit="90a2eab66ff82ba6dd7fbb33e41cd0ded20fa218")
+	version("1.30.1", md5="c161043392323318c01792e2de828ad5")
 	version("1.28.0", commit="e654498c3fa9f769b794f840f230720333bd9555")
 	version("1.26.0", commit="a548ddc8424e185bfb06f48bfc174071e69fc687")
 	version("1.24.0", commit="013f0935a1a225139986ca5a3f0e9d08a1558153")
@@ -22,10 +26,6 @@ class RScater(RPackage):
 	version("1.18.3", commit="a94e7f413bf0f5f527b41b0b34e7a8e5c947ae37")
 	version("1.12.2", commit="1518dc27a87c79181c34107d639e95fe55e55092")
 	version("1.10.1", commit="2e6694af2929092f263c2b0830d48b3f9632e70c")
-	version("1.8.4", commit="d560a9a378541d53d17990d2aa2cd28874df3dcd")
-	version("1.6.3", commit="964effb4e883102d7c8cae627dbac4ba5d216a75")
-	version("1.4.0", commit="90a2eab66ff82ba6dd7fbb33e41cd0ded20fa218")
-	version("1.30.1", md5="c161043392323318c01792e2de828ad5")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-scuttle", type=("build", "run"))

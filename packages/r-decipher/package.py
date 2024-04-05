@@ -13,6 +13,10 @@ class RDecipher(RPackage):
 
 	bioc = "DECIPHER"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DECIPHER_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DECIPHER/DECIPHER_2.30.0.tar.gz"]
+	version("2.8.1", commit="35aa66f48e06b93a98d1060c90c44d34ce05ccd9")
+	version("2.6.0", commit="ed9acaa35c8774cb0ea01cd7cc2e46d063d8c70e")
+	version("2.4.0", commit="1a57b8e4c7d7dec1c233f79c9a88d3705e0ad432")
+	version("2.30.0", md5="0a32c782d61a604dc3594c684daa8c75")
 	version("2.28.0", commit="9be570c9fd812139d6bf9cd0851821fe54d4d3fa")
 	version("2.26.0", commit="7de99ec5e79f1f645f29dfbe24d2a106c2b0e69a")
 	version("2.24.0", commit="437e60005ab281bd836f47756a367795bc16755d")
@@ -20,10 +24,6 @@ class RDecipher(RPackage):
 	version("2.18.1", commit="6a708421550e6705d05e2fb50a0f5ab4f9041cb0")
 	version("2.12.0", commit="658ae23870383b25b96a03a18d4ecac228a2650f")
 	version("2.10.2", commit="db7b017c9050a7ec1d4daa15352994890095e9c3")
-	version("2.8.1", commit="35aa66f48e06b93a98d1060c90c44d34ce05ccd9")
-	version("2.6.0", commit="ed9acaa35c8774cb0ea01cd7cc2e46d063d8c70e")
-	version("2.4.0", commit="1a57b8e4c7d7dec1c233f79c9a88d3705e0ad432")
-	version("2.30.0", md5="0a32c782d61a604dc3594c684daa8c75")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

@@ -16,6 +16,7 @@ class REpidatr(RPackage):
 	cran = "epidatr" 
 
 	version("1.1.1", md5="448ffec50b089b5adbe9d593d5547983")
+	version("1.0.0", md5="7d3ee0d3a052a9edb62c953d2f4a126b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cachem", type=("build", "run"))

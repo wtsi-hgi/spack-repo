@@ -15,6 +15,7 @@ class RDnacopy(RPackage):
 
 	bioc = "DNAcopy"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DNAcopy_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DNAcopy/DNAcopy_1.76.0.tar.gz"]
+	version("1.76.0", md5="1b80859f79a39def302664f11b91a98f")
 	version("1.74.0", commit="7d22a81570c0fe76f4b5a5c25d0b8fd3696ec70e")
 	version("1.72.0", commit="1a1ae854c3425aee68b060e3e7ab788db5bed08c")
 	version("1.70.0", commit="9595d0ad7c78af4ed568cbd210b894d3350eae0a")
@@ -25,5 +26,4 @@ class RDnacopy(RPackage):
 	version("1.54.0", commit="fe2657936afbce8ee03221461dff4265e3ded4c4")
 	version("1.52.0", commit="2632fbecec4cef3705b85676942a59188ae9bba4")
 	version("1.50.1", commit="a20153029e28c009df813dbaf13d9f519fafa4e8")
-	version("1.76.0", md5="1b80859f79a39def302664f11b91a98f")
 

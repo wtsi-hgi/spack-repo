@@ -26,6 +26,7 @@ class RCopbasic(RPackage):
 	cran = "copBasic" 
 
 	version("2.2.4", md5="24915a41d57f0772d24819b4def4cbd5")
+	version("2.2.3", md5="718e590dcba5b8f02fb4d5261ae1fb27")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-lmomco", type=("build", "run"))

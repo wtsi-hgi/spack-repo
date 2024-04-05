@@ -21,4 +21,3 @@ class ROnassisjavalibs(RPackage):
 	depends_on("r-rjava", type=("build", "run"))
 	depends_on("openjdk@1.8:", type=("build", "link", "run"))
 
-	# experiment

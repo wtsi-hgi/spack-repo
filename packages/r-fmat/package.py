@@ -26,6 +26,7 @@ class RFmat(RPackage):
 	cran = "FMAT" 
 
 	version("2024.3", md5="b9910c6d1fcdd5239015a1d50776c001")
+	version("2023.8", md5="4048678beb2614e717e211136cacaa25")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-psychwordvec", type=("build", "run"))

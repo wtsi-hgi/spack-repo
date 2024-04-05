@@ -25,4 +25,3 @@ class RFieldeffectcrc(RPackage):
 	depends_on("r-annotationhub", type=("build", "run"))
 	depends_on("r-deseq2", type=("build", "run"))
 
-	# experiment

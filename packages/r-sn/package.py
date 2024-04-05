@@ -15,6 +15,8 @@ class RSn(RPackage):
 	the multivariate case."""
 
 	cran = "sn"
+	version("2.1.1", sha256="f9f6b56d91dc7cb18dc8308d0875b9648c90b268d1aaf8f4c5164ff016df22bd")
+	version("2.1.1", md5="f77c36f37cd65ecfedde2e34f7caa44a")
 	version("2.1.0", sha256="495f9baed26e2e70357eda996fdb327ccc22673486e375686c32daec727a448b")
 	version("2.0.2", sha256="957b49027c2111f51893433e902486141a942a5ed384ca605714605de80d1790")
 	version("2.0.1", sha256="86b3890087657a80fca7a0a756b07410612c34a44d7a1fd7a8f24584379fa8fc")
@@ -26,7 +28,6 @@ class RSn(RPackage):
 	version("1.3-0", sha256="926fc4cde1079860572c2829efc83503f3e1f157b8448b6a40450ca7f5470503")
 	version("1.2-4", sha256="a812f754abd1ecdbc9de4e5c8b8f5526c08c06a710d390b1fff2a09328637fb6")
 	version("1.2-3", sha256="1af8ced9ed33680d731ab5132be4674d170d76c64a3059ff56c33159d8396154")
-	version("2.1.1", md5="f77c36f37cd65ecfedde2e34f7caa44a")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-mnormt@2:", type=("build", "run"))

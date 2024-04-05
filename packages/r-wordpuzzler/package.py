@@ -16,6 +16,7 @@ class RWordpuzzler(RPackage):
 	cran = "wordPuzzleR" 
 
 	version("0.1.1", md5="bfd6c6f6053819595146f6cd2de9bd6f")
+	version("0.1.0", md5="9c6b6ca47226916d30cdf18002b54fdc")
 
 	depends_on("r-purrr@0.3.4:", type=("build", "run"))
 	depends_on("r-scales@1.1.1:", type=("build", "run"))

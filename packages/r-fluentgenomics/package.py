@@ -24,4 +24,3 @@ class RFluentgenomics(RPackage):
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-readr", type=("build", "run"))
 
-	# workflow

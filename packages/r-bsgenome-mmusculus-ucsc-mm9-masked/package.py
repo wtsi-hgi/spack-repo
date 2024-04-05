@@ -20,4 +20,3 @@ class RBsgenomeMmusculusUcscMm9Masked(RPackage):
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-mmusculus-ucsc-mm9", type=("build", "run"))
 
-	# annotation

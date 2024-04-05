@@ -16,6 +16,7 @@ class RVivainsights(RPackage):
 	cran = "vivainsights" 
 
 	version("0.5.2", md5="702f939164f1cf4bfdb5df99d7540b4b")
+	version("0.5.1", md5="22d0ab77615e56cfa085060216b3193d")
 
 	depends_on("r@3.1.2:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

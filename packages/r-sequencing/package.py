@@ -31,4 +31,3 @@ class RSequencing(RPackage):
 	depends_on("r-bsgenome-hsapiens-ucsc-hg19", type=("build", "run"))
 	depends_on("r-rnaseqdata-hnrnpc-bam-chr14", type=("build", "run"))
 
-	# workflow

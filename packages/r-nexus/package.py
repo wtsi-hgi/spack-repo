@@ -19,6 +19,7 @@ class RNexus(RPackage):
 	cran = "nexus" 
 
 	version("0.2.0", md5="52539b7800cbc9b1f7adeaa8ec145310")
+	version("0.1.0", md5="495364ab1355e6f5be56889ca80ef430")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dimensio@0.6:", type=("build", "run"))

@@ -19,6 +19,7 @@ class RBgmisc(RPackage):
 	cran = "BGmisc" 
 
 	version("1.2.0", md5="a0d7df985cd850285ec7ecac7ba2c7b7")
+	version("1.0.1", md5="79cd771d8a515fc2abb897f22acb5ba0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

@@ -24,9 +24,10 @@ class RSpatstatExplore(RPackage):
 	ANOVA) are also supported."""
 
 	cran = "spatstat.explore"
+	version("3.2-7", md5="59cd51e92feabafdee60c40062878a43")
+	version("3.2-6", md5="49ee5844d94a714c9bbeb3110ba1ce9e")
 	version("3.1-0", sha256="87ef4882652db3b834214bfc776dd7d23d931a9227de12f19722aeb1029d086e")
 	version("3.0-3", sha256="137444a46d26d88241336feece63ed7b006a9328cfe3861d4b8ab7b4bed963a7")
-	version("3.2-7", md5="59cd51e92feabafdee60c40062878a43")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-spatstat-data@3.0.4:", type=("build", "run"))

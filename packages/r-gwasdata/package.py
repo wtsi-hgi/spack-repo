@@ -19,4 +19,3 @@ class RGwasdata(RPackage):
 
 	depends_on("r-gwastools", type=("build", "run"))
 
-	# experiment

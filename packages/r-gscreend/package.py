@@ -17,6 +17,7 @@ class RGscreend(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gscreend_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gscreend/gscreend_1.16.1.tar.gz"]
 
 	version("1.16.1", md5="37387e3427e8079e45abb8db9de731ad")
+	version("1.16.0", commit="b3333031ccee5ec81e3c05a62d40cee335f100dc")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -16,6 +16,7 @@ class RGgarchery(RPackage):
 	cran = "ggarchery" 
 
 	version("0.4.3", md5="e4af27f2342401acbf73f463662681c8")
+	version("0.4.2", md5="5fa3e4a36ebd5fef71495bdb9f5d1d9a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

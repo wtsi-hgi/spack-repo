@@ -21,4 +21,3 @@ class RDiggitdata(RPackage):
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-viper", type=("build", "run"))
 
-	# experiment

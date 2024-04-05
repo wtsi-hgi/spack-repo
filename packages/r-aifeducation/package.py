@@ -39,8 +39,8 @@ class RAifeducation(RPackage):
 	homepage = "https://fberding.github.io/aifeducation/"
 	cran = "aifeducation" 
 
-	version("0.3.1", md5="b0e7426e3facb6b0867b1969484afd1f")
 	version("0.3.2", md5="653302a7eeacf05e5a6893145aa7879b")
+	version("0.3.1", md5="b0e7426e3facb6b0867b1969484afd1f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))

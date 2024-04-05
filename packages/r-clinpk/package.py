@@ -22,4 +22,5 @@ class RClinpk(RPackage):
 	cran = "clinPK" 
 
 	version("0.13.0", md5="f4b5b44161c5257fb5cf218cbea1706c")
+	version("0.11.1", md5="7fcc89631f75a382d91acb300febfc53")
 

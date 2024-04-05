@@ -14,6 +14,7 @@ class RHtmlwidgets(RPackage):
 	applications."""
 
 	cran = "htmlwidgets"
+	version("1.6.4", md5="e1ea7f9774ad7a79fcf31e52c2074fd1")
 	version("1.6.2", sha256="7fda1672a4c0fbc203c790677b6ee7c40d2c2d72be4f6772f75288fc712b10bc")
 	version("1.5.4", sha256="1a3fc60f40717de7f1716b754fd1c31a132e489a2560a278636ee78eba46ffc1")
 	version("1.5.3", sha256="01a5833182cc224bd100be2815e57e67b524de9f2bb1542787b6e3d1303f0f29")
@@ -21,7 +22,6 @@ class RHtmlwidgets(RPackage):
 	version("0.9", sha256="1154b541ccd868e41d3cf0d7f188f7275ec99f61fe2c7de21c8a05edb19b985e")
 	version("0.8", sha256="9232b78727c1ecd006cd8e607ef76417d795f011b0e4a7535e6d673228bfc3b5")
 	version("0.6", sha256="9c227f93ada71526d6e195e39a8efef41255af5567e39db3a6417ea9fed192ea")
-	version("1.6.4", md5="e1ea7f9774ad7a79fcf31e52c2074fd1")
 
 	depends_on("r-htmltools@0.5.7:", type=("build", "run"))
 	depends_on("r-jsonlite@0.9.16:", type=("build", "run"))

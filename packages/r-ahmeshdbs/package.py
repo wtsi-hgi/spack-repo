@@ -20,4 +20,3 @@ class RAhmeshdbs(RPackage):
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationhub@2.22:", type=("build", "run"))
 
-	# annotation

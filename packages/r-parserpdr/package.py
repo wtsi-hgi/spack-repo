@@ -20,6 +20,7 @@ Text Queries
 	cran = "parseRPDR" 
 
 	version("1.1.1", md5="bc683bafe539143ab3cabd3377718622")
+	version("1.1.0", md5="5051549700dc7df1a7c7c927a889d5e8")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-data-table@1.14.1:", type=("build", "run"))

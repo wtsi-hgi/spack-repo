@@ -14,8 +14,8 @@ class REmbayes(RPackage):
 	
 	cran = "emBayes" 
 
-	version("0.1.4", md5="8c9af9d9d0ec5c662e897e7736a74314")
 	version("0.1.5", md5="f092a98d8b2ebb2792daf95fd5015e40")
+	version("0.1.4", md5="8c9af9d9d0ec5c662e897e7736a74314")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

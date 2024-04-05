@@ -20,4 +20,3 @@ class RBsgenomeTguttataUcscTaegut1Masked(RPackage):
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-tguttata-ucsc-taegut1", type=("build", "run"))
 
-	# annotation

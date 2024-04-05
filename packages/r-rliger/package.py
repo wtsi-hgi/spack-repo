@@ -16,6 +16,7 @@ class RRliger(RPackage):
 	cran = "rliger" 
 
 	version("2.0.0", md5="61f834cadad73c60fdd85d7dcd0b1426")
+	version("1.0.1", md5="1ded96d6cdd656b1eeec4f7519fdf410")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-circlize", type=("build", "run"))

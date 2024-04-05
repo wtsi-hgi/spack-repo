@@ -19,6 +19,7 @@ Mortality Data
 	cran = "gompertztrunc" 
 
 	version("0.1.2", md5="5700c924187dd0733b23482200e1b817")
+	version("0.1.1", md5="10f8c465fc75bd491d4cf8bcd74a345d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))

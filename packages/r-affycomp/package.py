@@ -15,6 +15,7 @@ class RAffycomp(RPackage):
 	bioc = "affycomp"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affycomp_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affycomp/affycomp_1.78.0.tar.gz"]
 
+	version("1.78.0", md5="f80b53dc57dcb88730eda3c0506b9df1")
 	version("1.76.0", commit="8bfc628de26a739c5e0cb47aa22bfda7c8d0a922")
 	version("1.74.0", commit="1160d6395f23085456938ba2bd38fb45597fc92f")
 	version("1.72.0", commit="c52baea98b80abd4a99380ac9d4b68ef91869d40")
@@ -25,7 +26,6 @@ class RAffycomp(RPackage):
 	version("1.56.0", commit="b0994da338be19396e647c680059fd35341b50a2")
 	version("1.54.0", commit="65281c1ca37147c2a54ad3722a8d5ff0ffa5acc5")
 	version("1.52.0", commit="1b97a1cb21ec93bf1e5c88d5d55b988059612790")
-	version("1.78.0", md5="f80b53dc57dcb88730eda3c0506b9df1")
 
 	depends_on("r@2.13:", type=("build", "run"))
 	depends_on("r-biobase@2.3.3:", type=("build", "run"))

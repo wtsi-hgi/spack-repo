@@ -29,6 +29,7 @@ class RMulttest(RPackage):
 
 	bioc = "multtest"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/multtest_2.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/multtest/multtest_2.58.0.tar.gz"]
+	version("2.58.0", md5="7d81a8460781f4a86f01a9df5fcf50d7")
 	version("2.56.0", commit="619975704a271cdb74d97a75bee7e2df0028b4d3")
 	version("2.54.0", commit="4e2c9e939dfd9984d8ff4bab0a95e1bd0457ec72")
 	version("2.52.0", commit="00cfc9beb6d063c2b04fc83495a76824f8a33a64")
@@ -39,7 +40,6 @@ class RMulttest(RPackage):
 	version("2.36.0", commit="babb15e8d110eb72300ad59cf7e53386237a4198")
 	version("2.34.0", commit="6ef873e05e6c93ede54f3421424f56eda057cd54")
 	version("2.32.0", commit="c5e890dfbffcc3a3f107303a24b6085614312f4a")
-	version("2.58.0", md5="7d81a8460781f4a86f01a9df5fcf50d7")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

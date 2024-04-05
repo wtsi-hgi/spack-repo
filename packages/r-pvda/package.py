@@ -16,6 +16,7 @@ class RPvda(RPackage):
 	cran = "pvda" 
 
 	version("0.0.3", md5="57c334916ff886d5e435855a98867261")
+	version("0.0.2", md5="0c8930876e58bc279f67b33ccd1a8795")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-checkmate@2.1:", type=("build", "run"))

@@ -11,8 +11,8 @@ class RCellchat(RPackage):
     homepage = "https://github.com/sqjin/CellChat"
     url = "https://github.com/sqjin/CellChat/archive/refs/tags/v1.5.0.tar.gz"
 
-    version("1.5.0", sha256="c9e31327cbbcf1fec5e6d8a0dfe011ded8e543557107e93dd4a417c4c137d1c6")
-    version("1.0.0", sha256="f678ba2acaff891488e846cfee57619d2fecebd053af90e17042729ff58094b7")
+	version("1.5.0", sha256="c9e31327cbbcf1fec5e6d8a0dfe011ded8e543557107e93dd4a417c4c137d1c6")
+	version("1.0.0", sha256="f678ba2acaff891488e846cfee57619d2fecebd053af90e17042729ff58094b7")
 
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-igraph", type=("build", "run"))

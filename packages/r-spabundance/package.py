@@ -17,6 +17,7 @@ Abundance
 	cran = "spAbundance" 
 
 	version("0.1.1", md5="287404c13f0bd6b33bdecfeac8d789ea")
+	version("0.1.0", md5="6451c1db6b5db64602286e6672499bd0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-coda", type=("build", "run"))

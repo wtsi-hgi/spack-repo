@@ -16,6 +16,7 @@ class RBigrquery(RPackage):
 	cran = "bigrquery" 
 
 	version("1.5.1", md5="376d3dd9cc24238405bea427af4bab97")
+	version("1.5.0", md5="3e011bbd218921b16f42c1147d66b118")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-bit64", type=("build", "run"))

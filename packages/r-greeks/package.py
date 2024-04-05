@@ -29,6 +29,7 @@ Volatilities
 	cran = "greeks" 
 
 	version("1.3.5", md5="644e8de95445ecc29cfe523bc9923a82")
+	version("1.3.2", md5="6a92d19fd638f68b7bee6936d691e37d")
 
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-dqrng", type=("build", "run"))

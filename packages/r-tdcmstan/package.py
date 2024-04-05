@@ -21,6 +21,7 @@ class RTdcmstan(RPackage):
 	cran = "tdcmStan" 
 
 	version("3.0.0", md5="bcc21af817ca2fa341a64bbba263645b")
+	version("2.0.0", md5="9f3dfdefb63240140aa783393c8fb640")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr@1.0.7:", type=("build", "run"))

@@ -14,8 +14,8 @@ class RBivariatemaps(RPackage):
 	
 	cran = "bivariatemaps" 
 
-	version("1.2", md5="bc933b211dc341146ebf74a30dbe6928")
 	version("1.3", md5="6efefc43976b199d3d152789fe9fcd18")
+	version("1.2", md5="bc933b211dc341146ebf74a30dbe6928")
 
 	depends_on("r-classint", type=("build", "run"))
 	depends_on("r-terra", type=("build", "run"))

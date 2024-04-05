@@ -17,8 +17,8 @@ class RMemisc(RPackage):
 	model estimates, which can be exported to 'LaTeX' and HTML."""
 
 	cran = "memisc"
-	version("0.99.31.6", sha256="52336b4ffc6e60c3ed10ccc7417231582b0d2e4c5c3b2184396a7d3ca9c1d96e")
 	version("0.99.31.7", md5="29549169c78c37545bb79bb7ac4753c9")
+	version("0.99.31.6", sha256="52336b4ffc6e60c3ed10ccc7417231582b0d2e4c5c3b2184396a7d3ca9c1d96e")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))

@@ -19,6 +19,7 @@ class RSpant(RPackage):
 	cran = "spant" 
 
 	version("2.19.0", md5="19606364c2a44f84c33f51e12bbf1ca5")
+	version("2.17.0", md5="4ab737260511b3bcb7e8df6d7e526a7c")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))

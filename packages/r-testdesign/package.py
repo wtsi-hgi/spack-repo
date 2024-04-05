@@ -20,6 +20,7 @@ Construction
 	cran = "TestDesign" 
 
 	version("1.6.1", md5="9086977897629c26fa7e1f58ad5c097e")
+	version("1.5.1", md5="73658f3833982c1fe9540dd400c32cad")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

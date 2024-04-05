@@ -25,4 +25,3 @@ class RMusMusculus(RPackage):
 	depends_on("r-org-mm-eg-db", type=("build", "run"))
 	depends_on("r-txdb-mmusculus-ucsc-mm10-knowngene", type=("build", "run"))
 
-	# annotation

@@ -23,9 +23,9 @@ class RMeta(RPackage):
 	meta-analyses."""
 
 	cran = "meta"
+	version("7.0-0", md5="13fa700d2cd0fcc15eb61f391140ce1f")
 	version("6.2-1", sha256="2c2a0d4d8f3b07211120b232a155e3e1312164ce18817e0d5693c8da5da1d6cc")
 	version("6.2-0", sha256="8ec8fb412996bbe17d3ca073f15c191a77bad486b08f39d7b8c2d07360ad5781")
-	version("7.0-0", md5="13fa700d2cd0fcc15eb61f391140ce1f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-metadat", type=("build", "run"))

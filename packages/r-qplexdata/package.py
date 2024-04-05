@@ -23,4 +23,3 @@ class RQplexdata(RPackage):
 	depends_on("r-msnbase", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 
-	# experiment

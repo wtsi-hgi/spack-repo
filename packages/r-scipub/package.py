@@ -22,6 +22,7 @@ class RScipub(RPackage):
 	cran = "scipub" 
 
 	version("1.2.3", md5="87de356d8175215a48e1f559434c701c")
+	version("1.2.2", md5="73f04d16036ca1aac41f965e68f4a0bb")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -20,4 +20,3 @@ class RBsgenomeDmelanogasterUcscDm3Masked(RPackage):
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-dmelanogaster-ucsc-dm3", type=("build", "run"))
 
-	# annotation

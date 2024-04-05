@@ -23,8 +23,8 @@ class RExiftoolr(RPackage):
 	homepage = "https://github.com/JoshOBrien/exiftoolr#readme"
 	cran = "exiftoolr" 
 
-	version("0.2.3", md5="01b815a3b89ac965ff514609baaf3c8a")
 	version("0.2.4", md5="fb066fda1dc1474a77197b9a5dcffc37")
+	version("0.2.3", md5="01b815a3b89ac965ff514609baaf3c8a")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-backports", type=("build", "run"))

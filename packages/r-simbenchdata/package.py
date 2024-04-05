@@ -20,4 +20,3 @@ class RSimbenchdata(RPackage):
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
 
-	# experiment

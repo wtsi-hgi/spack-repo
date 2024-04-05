@@ -16,6 +16,7 @@ class RA4classif(RPackage):
 	bioc = "a4Classif"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/a4Classif_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/a4Classif/a4Classif_1.50.0.tar.gz"]
 
+	version("1.50.0", md5="2af82160c9909dd6fdec620de5710cfa")
 	version("1.48.0", commit="1e2ff90d5af6332beac630395a7494c8fd30aff4")
 	version("1.46.0", commit="96794183a76ab7da7a1863ccd421640254447af5")
 	version("1.44.0", commit="df0fce781f9bc480a1159d958c9a63c314a9ed01")
@@ -26,7 +27,6 @@ class RA4classif(RPackage):
 	version("1.28.0", commit="3464011f6c3ddb41b78acc47e775539034287be7")
 	version("1.26.0", commit="bc4018c3c441e1840bb3e2959c07611489439a50")
 	version("1.24.0", commit="ca06bf274c87a73fc12c29a6eea4b90289fe30b1")
-	version("1.50.0", md5="2af82160c9909dd6fdec620de5710cfa")
 
 	depends_on("r-a4core", type=("build", "run"))
 	depends_on("r-a4preproc", type=("build", "run"))

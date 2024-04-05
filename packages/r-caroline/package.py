@@ -24,9 +24,9 @@ class RCaroline(RPackage):
 
 	license("Artistic-2.0")
 
+	version("0.9.2", md5="f54822c8114a622ea1cb8794be66c930")
 	version("0.9.0", sha256="7231daacf2f0e89d9363ea919071f8352ae487011f56e84a4054de11a9243ac8")
 	version("0.8.0", sha256="58f464711f7279ca2aa173e6ce29d3308e01db37dccefbbf14cd7720c0231976")
 	version("0.7.6", sha256="e7ba948f7d87f091b498dd0eec2ca4fdad7af4e2bbb67e0945c2f0d3f2eadda9")
-	version("0.9.2", md5="f54822c8114a622ea1cb8794be66c930")
 
 	depends_on("r@2:", type=("build", "run"))

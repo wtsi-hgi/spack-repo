@@ -20,6 +20,7 @@ class ROpenair(RPackage):
 	cran = "openair" 
 
 	version("2.18-2", md5="99eaa25bc99080a9e8dcd0e3bed44221")
+	version("2.18-0", md5="301c3df8314138c6193499cff523c396")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

@@ -16,6 +16,7 @@ class RPedgene(RPackage):
 	cran = "pedgene" 
 
 	version("3.8", md5="5bc22a1c8166b483f7f6af6048ba019a")
+	version("3.6", md5="f534b8cc6ecb450be49fcda742a4cab0")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

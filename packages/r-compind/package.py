@@ -14,8 +14,8 @@ class RCompind(RPackage):
 	
 	cran = "Compind" 
 
-	version("3.0", md5="c2a6efa4f17aa06365089f496566ab1a")
 	version("3.1", md5="fe41d0f1c78845dd42f637c614ba899f")
+	version("3.0", md5="c2a6efa4f17aa06365089f496566ab1a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-benchmarking", type=("build", "run"))

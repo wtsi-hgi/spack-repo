@@ -14,6 +14,7 @@ class RCtc(RPackage):
 
 	bioc = "ctc"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ctc_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ctc/ctc_1.76.0.tar.gz"]
+	version("1.76.0", md5="ea94b8b636b26d4f827ecd4569804d1e")
 	version("1.74.0", commit="00be85633de7d71ca3dc6fe6c634cf0bde6188fd")
 	version("1.72.0", commit="0a4b464e1768e6407c1c2ce64ec4ae5a4577be65")
 	version("1.70.0", commit="05dc046ecfddbc1eeadf77e8f3ec0ce054794437")
@@ -24,6 +25,5 @@ class RCtc(RPackage):
 	version("1.54.0", commit="0c3df81dfc8fabe12e11884bed44b64e11fd6d4e")
 	version("1.52.0", commit="ffff8693cab5ebad610d139367f089418f1830a1")
 	version("1.50.0", commit="4ee7519c3e5172e140c2658b4cf5271d229acc7e")
-	version("1.76.0", md5="ea94b8b636b26d4f827ecd4569804d1e")
 
 	depends_on("r-amap", type=("build", "run"))

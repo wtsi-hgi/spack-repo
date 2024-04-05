@@ -33,4 +33,3 @@ class RAnnotation(RPackage):
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-txdb-athaliana-biomart-plantsmart22", type=("build", "run"))
 
-	# workflow

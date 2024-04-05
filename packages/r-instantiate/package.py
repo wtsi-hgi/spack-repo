@@ -26,6 +26,7 @@ class RInstantiate(RPackage):
 	cran = "instantiate" 
 
 	version("0.2.2", md5="87aea40edac97d736d89db9cb7c91635")
+	version("0.2.1", md5="9c6fc7e103bfbab4dfcc8f9844911ea5")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-callr", type=("build", "run"))

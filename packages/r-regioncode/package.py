@@ -15,6 +15,7 @@ class RRegioncode(RPackage):
 	cran = "regioncode" 
 
 	version("0.1.2", md5="c5c88d293610f8ebb242e3163a847a2a")
+	version("0.1.1", md5="5913b57544b6df959932b72438ec942a")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

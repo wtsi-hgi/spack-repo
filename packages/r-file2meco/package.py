@@ -16,6 +16,7 @@ class RFile2meco(RPackage):
 	cran = "file2meco" 
 
 	version("0.7.1", md5="0de63809afc5e870af64cf6c389c9ccc")
+	version("0.7.0", md5="71fb2f093b015915f03b40ab4cd15b17")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-microeco@1.2:", type=("build", "run"))

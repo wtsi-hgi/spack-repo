@@ -22,4 +22,3 @@ class RMirbaseversionsDb(RPackage):
 	depends_on("r-rsqlite", type=("build", "run"))
 	depends_on("r-gtools", type=("build", "run"))
 
-	# annotation

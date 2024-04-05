@@ -18,6 +18,7 @@ class RLsx(RPackage):
 	cran = "LSX" 
 
 	version("1.4.0", md5="bb14ff09e4c941c62a310a10a524aace")
+	version("1.3.2", md5="6a518e7bec7835ce4f54cd098db9af2f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-quanteda@2:", type=("build", "run"))

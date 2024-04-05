@@ -15,6 +15,7 @@ class RPdMta10(RPackage):
 	bioc = "pd.mta.1.0" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mta.1.0_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.mta.1.0/pd.mta.1.0_3.12.0.tar.gz"]
 
+	version("3.12.0", md5="0f737b4f1f1353733e56e2df637f554b", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.mta.1.0_3.12.0.tar.gz")
 	version("3.12.0", md5="0f737b4f1f1353733e56e2df637f554b", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mta.1.0_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
@@ -26,4 +27,3 @@ class RPdMta10(RPackage):
 	depends_on("r-iranges@2.1.43:", type=("build", "run"))
 	depends_on("r-s4vectors@0.5.22:", type=("build", "run"))
 
-	# annotation

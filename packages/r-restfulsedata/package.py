@@ -23,4 +23,3 @@ class RRestfulsedata(RPackage):
 	depends_on("r-delayedarray@0.21.2:", type=("build", "run"))
 	depends_on("r-hdf5array@1.23.2:", type=("build", "run"))
 
-	# experiment

@@ -25,6 +25,8 @@ class RFuture(RPackage):
 	to tweak existing code to make use of futures."""
 
 	cran = "future"
+	version("1.33.2", md5="5f66cf78cb629367c2c168c744181257")
+	version("1.33.1", md5="71fb731f2ea10ca8e2d9767c203959f2")
 	version("1.32.0", sha256="d5bb74512d069745184dd580a36449dc0b50d95b1cbbbc1605db82de596f2f76")
 	version("1.29.0", sha256="856d1fd51d2f998c6572490c49fdcc27e5f3e0c1ade75eecdbf64a2cd0954373")
 	version("1.28.0", sha256="6fdda66acd9a255e5baa70ff5dacd3c57ab2ecc2d87fd6abeebdfb939c051bf6")
@@ -34,7 +36,6 @@ class RFuture(RPackage):
 	version("1.22.1", sha256="87b24a85caf08e1d809eab28f9258444105cd7788eee2e3e2f21727ba3bbedcd")
 	version("1.21.0", sha256="909e6602068eba543a6d2e464b911123cc29efdb600a7000eff0e5624ff0d12d")
 	version("1.14.0", sha256="0a535010d97a01b21aaf9d863603e44359335e273019c1e1980bbb5b2917dbcb")
-	version("1.33.2", md5="5f66cf78cb629367c2c168c744181257")
 
 	depends_on("r-digest", type=("build", "run"))
 	depends_on("r-globals@0.16.1:", type=("build", "run"))

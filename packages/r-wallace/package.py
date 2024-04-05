@@ -24,6 +24,7 @@ and Distributions
 	cran = "wallace" 
 
 	version("2.1.2", md5="16a560c7ad33c179fbf162fc45aa1790")
+	version("2.1.1", md5="2a8a569fa7639204ed8901ba6c71c819")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-shiny@1.6:", type=("build", "run"))

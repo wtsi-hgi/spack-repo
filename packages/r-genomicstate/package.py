@@ -28,4 +28,3 @@ class RGenomicstate(RPackage):
 	depends_on("r-iranges", type=("build", "run"))
 	depends_on("r-org-hs-eg-db", type=("build", "run"))
 
-	# annotation

@@ -13,6 +13,7 @@ class RHaven(RPackage):
 	library, <https://github.com/WizardMac/ReadStat>."""
 
 	cran = "haven"
+	version("2.5.4", md5="ef0337da48b61ae98b03413e02177822")
 	version("2.5.2", sha256="2131fb0377ae1beffae54bf4beb8b3a876e9b6b9841a5acc39a2a2615023561d")
 	version("2.5.1", sha256="9f40462097a0b1cf3831bca493851fe4a6b3570d957a775ca81940f241c50a70")
 	version("2.5.0", sha256="b580311bc1b28efc6b123e29a331282b9f7eb552c485f4e5cacab39fe534aff4")
@@ -21,7 +22,6 @@ class RHaven(RPackage):
 	version("2.1.1", sha256="90bcb4e7f24960e7aa3e15c06b95cd897f08de149cec43fd8ba110b14526068a")
 	version("2.1.0", sha256="c0a1cf1b039549fb3ad833f9644ed3f142790236ad755d2ee7bd3d8109e3ae74")
 	version("1.1.0", sha256="089fb4d0955f320abc48d0a3031799f96f3a20b82492474743903fdf12001d19")
-	version("2.5.4", md5="ef0337da48b61ae98b03413e02177822")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-cli@3:", type=("build", "run"))

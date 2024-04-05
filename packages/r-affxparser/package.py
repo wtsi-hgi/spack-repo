@@ -21,6 +21,7 @@ class RAffxparser(RPackage):
 	bioc = "affxparser"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affxparser_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affxparser/affxparser_1.74.0.tar.gz"]
 
+	version("1.74.0", md5="2b6b9373d749a0ccbf930f834df90b92")
 	version("1.72.0", commit="6e976af32f77835143f6b4e0c01c6016dc1b331c")
 	version("1.70.0", commit="28f94cd3477e9500942be89cbcb5cad1bbb369fe")
 	version("1.68.1", commit="821a01a2df18115a3b7864b3f45418255b7123eb")
@@ -31,6 +32,5 @@ class RAffxparser(RPackage):
 	version("1.52.0", commit="8e0c4b89ee1cb4ff95f58a5dd947249dc718bc58")
 	version("1.50.0", commit="01ef641727eadc2cc17b5dbb0b1432364436e3d5")
 	version("1.48.0", commit="2461ea88f310b59c4a9a997a4b3dadedbd65a4aa")
-	version("1.74.0", md5="2b6b9373d749a0ccbf930f834df90b92")
 
 	depends_on("r@2.14:", type=("build", "run"))

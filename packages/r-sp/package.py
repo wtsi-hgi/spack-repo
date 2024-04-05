@@ -15,6 +15,7 @@ class RSp(RPackage):
 	methods for retrieving coordinates, for subsetting, print, summary, etc."""
 
 	cran = "sp"
+	version("2.1-3", md5="abcf7395f983cc55056f4b86b906b4bb")
 	version("1.6-0", sha256="f5977fbe80e7dee8e95d41fe0ef9d87c2c984422bb529ea5211fd38a13f9fcda")
 	version("1.5-1", sha256="69b9eab481d389bbb736d2adcf50c180aca248c3ffc4ebda8ffe2accc5f229df")
 	version("1.5-0", sha256="939a06adf78ec8de7a663d6ca5bba426780852b357773446b00cc298200ff81c")
@@ -24,7 +25,6 @@ class RSp(RPackage):
 	version("1.3-1", sha256="57988b53ba8acc35f3912d62feba4b929a0f757c6b54080c623c5d805e0cb59f")
 	version("1.2-7", sha256="6d60e03e1abd30a7d4afe547d157ce3dd7a8c166fc5e407fd6d62ae99ff30460")
 	version("1.2-3", sha256="58b3a9e395ca664ee61b20b480be4eb61576daca44c3d3f6f9a943bb0155879a")
-	version("2.1-3", md5="abcf7395f983cc55056f4b86b906b4bb")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))

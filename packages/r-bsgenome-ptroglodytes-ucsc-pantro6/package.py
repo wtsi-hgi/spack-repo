@@ -15,8 +15,8 @@ class RBsgenomePtroglodytesUcscPantro6(RPackage):
 	bioc = "BSgenome.Ptroglodytes.UCSC.panTro6" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Ptroglodytes.UCSC.panTro6_1.4.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Ptroglodytes.UCSC.panTro6/BSgenome.Ptroglodytes.UCSC.panTro6_1.4.2.tar.gz"]
 
+	version("1.4.2", md5="1df05d985374e9edc1dd7c3df5118338", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Ptroglodytes.UCSC.panTro6_1.4.2.tar.gz")
 	version("1.4.2", md5="1df05d985374e9edc1dd7c3df5118338", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Ptroglodytes.UCSC.panTro6_1.4.2.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 
-	# annotation

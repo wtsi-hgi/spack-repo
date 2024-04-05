@@ -20,4 +20,3 @@ class RIlluminahumanmethylation27kmanifest(RPackage):
 	depends_on("r@2.13:", type=("build", "run"))
 	depends_on("r-minfi", type=("build", "run"))
 
-	# annotation

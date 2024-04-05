@@ -21,6 +21,9 @@ class RRnoaa(RPackage):
 	cran = "rnoaa"
 
 	version("1.4.0", md5="5fb8dc93d638d98710452c90e0adb31c")
+	version("1.3.8", sha256="57974b48162637e98888f041d6f0e580d3c60bd5008af2d2bc659491f0deb98a")
+	version("1.3.0", sha256="4c421ad6e4c2b25e4dea5351c338aed70bea6e382562412d1dad825a50b0d161")
+	version("0.8.4", sha256="fb9ae771111dd5f638c1eff3290abad2ff9cc7e68a6678bf2414433ebed2dbbf")
 
 	depends_on("r-crul@0.7:", type=("build", "run"))
 	depends_on("r-lubridate", type=("build", "run"))

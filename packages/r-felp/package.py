@@ -19,6 +19,7 @@ class RFelp(RPackage):
 	cran = "felp" 
 
 	version("0.4.0", md5="f14584822fd470e9eb24a0f30e02cf05")
+	version("0.3.0", md5="1f92a10ab954f2d20beef5d0e3584867")
 
 	depends_on("r-prettycode", type=("build", "run"))
 	depends_on("r-callr", type=("build", "run"))

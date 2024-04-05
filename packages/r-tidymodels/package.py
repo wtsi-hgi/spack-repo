@@ -18,6 +18,7 @@ class RTidymodels(RPackage):
 	cran = "tidymodels" 
 
 	version("1.2.0", md5="3143d8a189234f966a6d7c34a5a5fcf2")
+	version("1.1.1", md5="c8a579518108227ff270ef4365dc0d3f")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-broom@1.0.5:", type=("build", "run"))

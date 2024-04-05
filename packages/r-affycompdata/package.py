@@ -22,4 +22,3 @@ class RAffycompdata(RPackage):
 	depends_on("r-biobase@2.3.3:", type=("build", "run"))
 	depends_on("r-affycomp", type=("build", "run"))
 
-	# experiment

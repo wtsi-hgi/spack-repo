@@ -17,6 +17,7 @@ for Panomics Data
 	cran = "pmartR" 
 
 	version("2.4.4", md5="07209673bd14d4c8a200ab2f995a763f")
+	version("2.4.2", md5="ae34ffd49b1a2d3ddd4cc0f85b288033")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

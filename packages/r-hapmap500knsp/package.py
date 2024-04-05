@@ -18,4 +18,3 @@ class RHapmap500knsp(RPackage):
 	version("1.44.0", md5="15b799bba4a395ccf715acfc7bbdae04")
 
 
-	# experiment

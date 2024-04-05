@@ -19,6 +19,7 @@ class RRnetcdf(RPackage):
 	cran = "RNetCDF" 
 
 	version("2.9-2", md5="5c24b20a1ee55f5448ab06dd6a74a0d3")
+	version("2.9-1", md5="ad7be84de579f8527241b4f08bd36117")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("netcdf-c@4.1.3:", type=("build", "link", "run"))

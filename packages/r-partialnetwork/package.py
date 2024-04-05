@@ -16,6 +16,7 @@ class RPartialnetwork(RPackage):
 	cran = "PartialNetwork" 
 
 	version("1.0.3", md5="be4254757216fd51a09dabbf01791cf0")
+	version("1.0.2", md5="cc21efce8e8eee1ec132e7a2353eaa1e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

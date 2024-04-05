@@ -16,6 +16,7 @@ class REnrichintersect(RPackage):
 	cran = "EnrichIntersect" 
 
 	version("0.7", md5="e8d7359715d3c331951a14bf7b54476d")
+	version("0.6", md5="687d2bd1c8561d17fa63bb03a7351641")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

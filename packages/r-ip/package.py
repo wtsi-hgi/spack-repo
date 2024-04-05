@@ -15,6 +15,7 @@ class RIp(RPackage):
 	cran = "IP" 
 
 	version("0.1.3", md5="31d3a4bb2ecd792a439ea736d28b482c")
+	version("0.1.2", md5="b8740df027074c22e8da2c6791dd2f00")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-stringi", type=("build", "run"))

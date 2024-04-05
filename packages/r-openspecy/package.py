@@ -26,6 +26,7 @@ class ROpenspecy(RPackage):
 	cran = "OpenSpecy" 
 
 	version("1.0.8", md5="2336c2c5405d2b7344b7425f32eda5ae")
+	version("1.0.6", md5="37812c3178c9bdd336ab269bf296a724")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

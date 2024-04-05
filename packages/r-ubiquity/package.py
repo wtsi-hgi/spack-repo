@@ -16,6 +16,7 @@ class RUbiquity(RPackage):
 	cran = "ubiquity" 
 
 	version("2.0.3", md5="7996bf45cab8da9b9bad09e802b7ab74")
+	version("2.0.1", md5="002c26dc68ba30f972f2001556ba681d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))

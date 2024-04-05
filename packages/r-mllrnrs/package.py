@@ -24,6 +24,7 @@ class RMllrnrs(RPackage):
 	cran = "mllrnrs" 
 
 	version("0.0.3", md5="45f1e7c78e9dc4ca5bebb91b3e3c369a")
+	version("0.0.2", md5="919641c19f22c73ee3b2791558bb5f80")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

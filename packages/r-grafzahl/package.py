@@ -16,6 +16,7 @@ and 'Quanteda'
 	homepage = "https://gesistsa.github.io/grafzahl/"
 	cran = "grafzahl" 
 
+	version("0.0.8", md5="644abcb67c793271446fef255530816a")
 	version("0.0.11", md5="0ecf78f2c0f7231591ca40c1c60f5de2")
 
 	depends_on("r@3.5:", type=("build", "run"))

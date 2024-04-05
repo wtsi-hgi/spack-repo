@@ -20,6 +20,7 @@ class RGiscor(RPackage):
 	cran = "giscoR" 
 
 	version("0.4.2", md5="2d19dacc0fac612250fe7393b9913717")
+	version("0.4.0", md5="5c86e94c7a85365f4d0d56a1ac6c3089")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-countrycode@1.2:", type=("build", "run"))

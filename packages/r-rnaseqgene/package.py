@@ -43,4 +43,3 @@ class RRnaseqgene(RPackage):
 	depends_on("r-ruvseq", type=("build", "run"))
 	depends_on("r-fission", type=("build", "run"))
 
-	# workflow

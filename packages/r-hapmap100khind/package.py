@@ -18,4 +18,3 @@ class RHapmap100khind(RPackage):
 	version("1.44.0", md5="0168028295626d811e305d4008ce9996")
 
 
-	# experiment

@@ -18,4 +18,3 @@ class RHumanomni1quadv1bcrlmm(RPackage):
 	version("1.0.3", md5="e81b2603f37d4cda3f28cd69a7296a23")
 
 
-	# annotation

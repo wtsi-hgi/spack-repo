@@ -19,11 +19,11 @@ class RMscoreutils(RPackage):
 
 	bioc = "MsCoreUtils"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsCoreUtils_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsCoreUtils/MsCoreUtils_1.14.1.tar.gz"]
-	version("1.12.0", commit="14a3fdb2fecca41ef0acb67bc8356227a1491c56")
-	version("1.10.0", commit="742c0c7143b1c32f75cc96b555e9f8cd265096c9")
 	version("1.8.0", commit="8b7e2c31009276aad0b418ba5cdfc94d03e1973e")
 	version("1.6.0", commit="9ed95b2d20dacaa83567fadd04349c81db9127ef")
 	version("1.14.1", md5="163cc129bc77ed033c124fed5bf7d9ca")
+	version("1.12.0", commit="14a3fdb2fecca41ef0acb67bc8356227a1491c56")
+	version("1.10.0", commit="742c0c7143b1c32f75cc96b555e9f8cd265096c9")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

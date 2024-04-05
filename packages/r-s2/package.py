@@ -17,11 +17,11 @@ class RS2(RPackage):
 	information about geometries."""
 
 	cran = "s2"
+	version("1.1.6", md5="557af6f39ceb2b616d0b84ea238a0d61", url="https://cran.r-project.org/src/contrib/s2_1.1.6.tar.gz")
 	version("1.1.2", sha256="8fb237531c6f4aa5b78fbe36d4fd15bfe852c1308fed58b04b3dae2bb73c0b57")
 	version("1.1.0", sha256="e3aae968538fe80db5b3325474dd9d8ff7f0452b6c606d049a3cac72732ac416")
 	version("1.0.7", sha256="2010c1c6ae29938ec9cd153a8b2c06a333ea4d647932369b2fc7d0c68d6d9e3f")
 	version("1.0.4", sha256="3c274ebae33aa5473f94afb3066c6f388aced17ff3b5f6add9edcc9af22b985e")
-	version("1.1.6", md5="557af6f39ceb2b616d0b84ea238a0d61", url="https://cran.r-project.org/src/contrib/s2_1.1.6.tar.gz")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

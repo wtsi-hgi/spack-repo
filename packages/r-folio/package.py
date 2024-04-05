@@ -21,5 +21,6 @@ class RFolio(RPackage):
 	cran = "folio" 
 
 	version("1.4.0", md5="b4be76f3dfd0f0d0fc0fd5220af58c13")
+	version("1.3.0", md5="785d80cff2abead123553fa421c4f986")
 
 	depends_on("r@2.10:", type=("build", "run"))

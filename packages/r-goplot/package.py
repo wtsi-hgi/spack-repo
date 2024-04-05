@@ -20,6 +20,7 @@ class RGoplot(RPackage):
 
 	cran = "GOplot"
 	
+	version("1.0.2", sha256="3ddaa2b6d1297ad6daad30d18af708adf43d86e8804b1b92fa29dfbf26d80df9")
 	version("1.0.2", md5="e06a7705b6564c82dc01c5e0a3c91984")
 
 	depends_on("r-ggplot2@2:", type=("build", "run"))

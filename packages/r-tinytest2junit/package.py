@@ -19,4 +19,5 @@ class RTinytest2junit(RPackage):
 	cran = "tinytest2JUnit" 
 
 	version("1.0.3", md5="bd1aebb478780bcdb34e50a305fc8f0f")
+	version("1.0.1", md5="bb9d0cd46fe6f35143266f4cd5ad18fd")
 

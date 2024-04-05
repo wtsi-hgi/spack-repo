@@ -21,6 +21,7 @@ class RJsonlite(RPackage):
 	use with dynamic data in systems and applications."""
 
 	cran = "jsonlite"
+	version("1.8.8", md5="d1ec8467abf43d41aabeec24d5a9096a")
 	version("1.8.4", sha256="79eaabe042226b0918aa828cc63d54fee8be67ae7c67f5e0d3010f468efb1278")
 	version("1.8.3", sha256="c57f1daf681fc7d5db893693a65ac61a48ddd7aabf66b28647b0e30df92ac8f0")
 	version("1.8.2", sha256="677b645c081a7e004b71f0c48a1d46c1be9715163ccb6b419fbb0342a6c9cc3a")
@@ -33,5 +34,4 @@ class RJsonlite(RPackage):
 	version("1.2", sha256="cb6b4660468d2db84ed09c7b8fefd169fcfc13e1e6b4e7ce64dce2713f34264d")
 	version("1.0", sha256="d756dd6367e3fc515c855bb0b34a3a81955f8aeb494db029a893f3cdfcff962d")
 	version("0.9.21", sha256="079349342ea6eb92bd5fa8f6a7c08d9e3652c3d41010b64afbc3297671eb3791")
-	version("1.8.8", md5="d1ec8467abf43d41aabeec24d5a9096a")
 

@@ -13,8 +13,8 @@ class RPhylobase(RPackage):
 	trees and trait data."""
 
 	cran = "phylobase"
-	version("0.8.10", sha256="5a44380ff49bab333a56f6f96157324ade8afb4af0730e013194c4badb0bf94b")
 	version("0.8.12", md5="f2177d31af1389129d811d032bdf707a")
+	version("0.8.10", sha256="5a44380ff49bab333a56f6f96157324ade8afb4af0730e013194c4badb0bf94b")
 
 	depends_on("r-ade4", type=("build", "run"))
 	depends_on("r-ape@3:", type=("build", "run"))

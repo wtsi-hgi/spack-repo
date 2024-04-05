@@ -23,11 +23,12 @@ class RReproducible(RPackage):
 	cran = "reproducible"
 
 	maintainers("dorton21")
-	version("1.2.16", sha256="ec504cdc1adf305cd008ce65eff226e3cb60b7a454b2c8b98a871c84458546ae")
-	version("1.2.10", sha256="fcee3aeb9d38c561c95df8663614ff0ed91a871719730766171b4ed19c82f729")
+	version("2.0.11", md5="3ac3168ed110a17272312b6efef8d6ba")
+	version("2.0.10", md5="43839c228f065c7e8484095c42503ea8")
 	version("1.2.8", sha256="6f453016404f6a2a235cb4d951a29aa7394dc3bd0b9cfc338dc85fb3d5045dd5")
 	version("1.2.4", sha256="0525deefa6a0713c3fe2da8bfc529f62d6352bebf2ef08866503b4853412f149")
-	version("2.0.11", md5="3ac3168ed110a17272312b6efef8d6ba")
+	version("1.2.16", sha256="ec504cdc1adf305cd008ce65eff226e3cb60b7a454b2c8b98a871c84458546ae")
+	version("1.2.10", sha256="fcee3aeb9d38c561c95df8663614ff0ed91a871719730766171b4ed19c82f729")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-data-table@1.10.4:", type=("build", "run"))

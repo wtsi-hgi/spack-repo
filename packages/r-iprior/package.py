@@ -18,6 +18,7 @@ class RIprior(RPackage):
 	cran = "iprior" 
 
 	version("0.7.4", md5="ed0bcf412bb8844a8143823614da9db2")
+	version("0.7.3", md5="0e5b4448aaadd5dd86a55e53a477f287")
 
 	depends_on("r@3.2.5:", type=("build", "run"))
 	depends_on("r-dosnow", type=("build", "run"))

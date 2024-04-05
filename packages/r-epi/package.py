@@ -24,6 +24,7 @@ class REpi(RPackage):
 	cran = "Epi" 
 
 	version("2.48", md5="d256157526f0a8ebc30daafac55fca10")
+	version("2.47.1", md5="7b17e51e0f37e7a0b250fd13f585afe1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cmprsk", type=("build", "run"))

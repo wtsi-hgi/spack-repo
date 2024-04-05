@@ -16,6 +16,7 @@ class RNeonplantecology(RPackage):
 	cran = "neonPlantEcology" 
 
 	version("1.5.0", md5="f9a1728f59902b96be2220e198fdc681")
+	version("1.4.0", md5="e5e12948a0aa4cbd53c0dcb6eb777475")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-neonutilities", type=("build", "run"))

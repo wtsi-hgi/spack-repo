@@ -24,6 +24,7 @@ class RTinycodet(RPackage):
 	cran = "tinycodet" 
 
 	version("0.4.5", md5="cb1444dd415b1fa93c19b38319b13e6a")
+	version("0.4.1", md5="f0967b6cf114e3f1caae8330b329f9f9")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

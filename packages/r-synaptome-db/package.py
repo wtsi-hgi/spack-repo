@@ -27,4 +27,3 @@ class RSynaptomeDb(RPackage):
 	depends_on("r-rdpack", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))
 
-	# annotation

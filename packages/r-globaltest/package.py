@@ -18,12 +18,12 @@ class RGlobaltest(RPackage):
 
 	bioc = "globaltest"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/globaltest_5.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/globaltest/globaltest_5.56.0.tar.gz"]
+	version("5.56.0", md5="ca389a7105fc08bc6172ce755d842a31")
 	version("5.54.0", commit="bb8bc5f757c8b7c020da31b6a3f500075715ab8e")
 	version("5.52.0", commit="a1fc3ad206454d1151bcc940644fd8a5c4164d63")
 	version("5.50.0", commit="08612a06eb1cc7381f9bf70f6fe198bb401a21df")
 	version("5.48.0", commit="86c2c8f35734dcbc8c8ca791d8a190dc525beac9")
 	version("5.44.0", commit="571933d5c779a241740be913ff49ecdd59bcbc45")
-	version("5.56.0", md5="ca389a7105fc08bc6172ce755d842a31")
 
 	depends_on("r-survival", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

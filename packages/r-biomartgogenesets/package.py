@@ -22,4 +22,3 @@ class RBiomartgogenesets(RPackage):
 	depends_on("r-s4vectors", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))
 
-	# annotation

@@ -15,6 +15,7 @@ class RPrwarp(RPackage):
 	cran = "prWarp" 
 
 	version("1.0.1", md5="041693f74374f4aff27304c3ea1eacb9")
+	version("1.0.0", md5="86588fcbd4639643ddfaf8a25b2e18a8")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-morpho", type=("build", "run"))

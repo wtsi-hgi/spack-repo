@@ -16,6 +16,7 @@ class RRmpfr(RPackage):
 	Library."""
 
 	cran = "Rmpfr"
+	version("0.9-5", md5="d20d82b6a05cac1bb46dbd53f82a2d1f")
 	version("0.9-2", sha256="ed63da32f3b970900c87cdb728eb16ed9fb0c79114cdecdc09e573f50ff7175e")
 	version("0.8-9", sha256="cfee5ab47d49c6433c372a267f7d849c8f7c61a84e00d08afb047eaafcdbbc8a")
 	version("0.8-7", sha256="93c2db785ff705dcfc6fa7f0373c2426cdc2ef72ceb5b294edeb2952775f57d2")
@@ -23,7 +24,6 @@ class RRmpfr(RPackage):
 	version("0.7-2", sha256="ec1da6ec5292ea6ac95495c6a299591d367e520ae324719817fb884c865603ff")
 	version("0.7-1", sha256="9b3021617a22b0710b0f1acc279290762317ff123fd9e8fd03f1449f4bbfe204")
 	version("0.6-1", sha256="bf50991055e9336cd6a110d711ae8a91a0551b96f9eaab5fef8c05f578006e1c")
-	version("0.9-5", md5="d20d82b6a05cac1bb46dbd53f82a2d1f")
 
 	depends_on("r-gmp@0.6.1:", type=("build", "run"))
 	depends_on("r@3.6:", type=("build", "run"))

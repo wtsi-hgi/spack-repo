@@ -18,4 +18,3 @@ class RBiocmetaworkflow(RPackage):
 	version("1.24.0", md5="0671030d76d252fe8ff7df69c0effdac")
 
 
-	# workflow

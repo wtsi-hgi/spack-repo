@@ -20,6 +20,7 @@ class RGamlssDist(RPackage):
 	respectively."""
 
 	cran = "gamlss.dist"
+	version("6.1-1", md5="e364df02cf45c533cb09736d46a082ad")
 	version("6.0-5", sha256="0f88afdfb148de79d3ece66bf4631ea0dc3ecf1188680802abffd6bc7139a20e")
 	version("6.0-3", sha256="ec90ea83cd81b894c73f987f69814077697be33abf0708e0f3e2a39d02c912bf")
 	version("6.0-1", sha256="b563b4de6bcedcfa4f8d29198a47004e38fd2de6e0509c788015d4e3feb18154")
@@ -27,7 +28,6 @@ class RGamlssDist(RPackage):
 	version("5.1-4", sha256="343c6ca0fd8a1c1dfdf9ffc65c95d4dae0c6c80b3e60fccba003e5171f3d287e")
 	version("5.1-3", sha256="87fd643c82579519b67c66c1d87383fa1e203e8b09f607649ee7bce142bda404")
 	version("5.1-1", sha256="44f999ff74ee516757eb39c8308c48aa850523aad2f38e622268313a13dda0b1")
-	version("6.1-1", md5="e364df02cf45c533cb09736d46a082ad")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

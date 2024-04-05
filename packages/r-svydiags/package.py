@@ -15,6 +15,7 @@ class RSvydiags(RPackage):
 	cran = "svydiags" 
 
 	version("0.5", md5="158afab7da4cb1bbbd6036b24134b428")
+	version("0.4", md5="2984861f18507247ba871c4c909c7d59")
 
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

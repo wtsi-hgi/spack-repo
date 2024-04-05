@@ -16,8 +16,8 @@ Semicontinuous Outcomes
 	homepage = "https://jhlee1408.github.io/assessor/"
 	cran = "assessor" 
 
-	version("1.0.0", md5="15b0bf54367804c4b03846791862499f")
 	version("1.1.0", md5="89aa649d5c833999ac2b7b39ff0cc42e")
+	version("1.0.0", md5="15b0bf54367804c4b03846791862499f")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-tweedie", type=("build", "run"))

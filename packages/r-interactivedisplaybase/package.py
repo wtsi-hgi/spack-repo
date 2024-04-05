@@ -16,6 +16,7 @@ class RInteractivedisplaybase(RPackage):
 
 	bioc = "interactiveDisplayBase"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/interactiveDisplayBase_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/interactiveDisplayBase/interactiveDisplayBase_1.40.0.tar.gz"]
+	version("1.40.0", md5="9ae8be7104ab2debe258b504bcd24e38")
 	version("1.38.0", commit="3b3a3fdc4bafca767ae66c5f8869e2d93a9a4cb3")
 	version("1.36.0", commit="79a0552bd467367866ceda2efc2b60a04a81f5fb")
 	version("1.34.0", commit="fafbb13a42bb7549f17aa08cdb0e51728c5e825e")
@@ -26,7 +27,6 @@ class RInteractivedisplaybase(RPackage):
 	version("1.18.0", commit="d07ea72a595877f27bf054f664f23e8f0304def8")
 	version("1.16.0", commit="a86aa586b589497f5449d36c2ce67a6b6055026d")
 	version("1.14.0", commit="e2ccc7eefdd904e3b1032dc6b3f4a28d08c1cd40")
-	version("1.40.0", md5="9ae8be7104ab2debe258b504bcd24e38")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

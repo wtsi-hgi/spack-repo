@@ -18,4 +18,3 @@ class RHumancytosnp12v2p1hcrlmm(RPackage):
 	version("1.0.1", md5="edf80245ddb28afb9fbaa6668187bf3a")
 
 
-	# annotation

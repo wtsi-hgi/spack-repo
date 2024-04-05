@@ -13,11 +13,12 @@ class RDplyr(RPackage):
 	memory and out of memory."""
 
 	cran = "dplyr"
+	version("1.1.4", md5="29bdf98592722336f0d07484baf2a959")
 	version("1.1.2", sha256="c220c38a3a44977c43eeae3d9aef90e8bb297150cad0993ea8d3cc13150096e3")
-	version("1.0.10", sha256="3ab639f627b4e439052df18f193f0ccab223225a4ae2ff8c18aba4f9807e0f2b")
 	version("1.0.9", sha256="e2e1f7312618b4e32ada9a1da79cef32eaec12acd408c973a6b069c6be4fb46b")
 	version("1.0.7", sha256="d2fe3aedbce02fdddce09a8a80f85f5918a9d1f15f792ad4a98f254959d7123d")
 	version("1.0.3", sha256="28a1a9d87e99154d4d1542ef9da9fd70f869a173dc9709f4583a5770bae58441")
+	version("1.0.10", sha256="3ab639f627b4e439052df18f193f0ccab223225a4ae2ff8c18aba4f9807e0f2b")
 	version("0.8.3", sha256="68b4aac65a69ea6390e90991d9c7ce7a011a07e5db439d60cce911a078424c0c")
 	version("0.8.2", sha256="e2b6d5b30d04d86f270374623da426541cee8e33ce446fcab6cd7862abf8e18b")
 	version("0.7.7", sha256="0553db5a55f0e6f5d2d111e88422c6d26e9d54cb36b860ad2ca28e3826e3d4a4")
@@ -29,7 +30,6 @@ class RDplyr(RPackage):
 	version("0.7.1", sha256="8c7573464b2a808f711f8977d0039e043318f93e47f2e80ba85b1f4ca09d12f4")
 	version("0.7.0", sha256="27b3593c09da5e99c0c4fb19ea826edd2cab619f8aaefd0cfd2a4140a0bd9410")
 	version("0.5.0", sha256="93d3b829f1c2d38e14a4f2fa7d6398fc6c1a9e4189b3e78bc38a0eb0e864454f")
-	version("1.1.4", md5="29bdf98592722336f0d07484baf2a959")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cli@3.4:", type=("build", "run"))

@@ -17,6 +17,7 @@ class RS4arrays(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/S4Arrays_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/S4Arrays/S4Arrays_1.2.1.tar.gz"]
 
 	version("1.2.1", md5="56e78d721cbf2dc16d12123dca444272")
+	version("1.2.0", md5="c77474b839251d19d31708831de3c1bf")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

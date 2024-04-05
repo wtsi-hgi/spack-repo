@@ -20,4 +20,3 @@ class RTbx20bamsubset(RPackage):
 	depends_on("r-rsamtools@1.9.8:", type=("build", "run"))
 	depends_on("r-xtable", type=("build", "run"))
 
-	# experiment

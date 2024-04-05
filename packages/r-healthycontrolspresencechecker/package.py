@@ -24,4 +24,3 @@ class RHealthycontrolspresencechecker(RPackage):
 	depends_on("r-geneexpressionfromgeo", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 
-	# experiment

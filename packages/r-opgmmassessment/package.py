@@ -15,6 +15,7 @@ class ROpgmmassessment(RPackage):
 	cran = "opGMMassessment" 
 
 	version("0.3.6", md5="eb55e213b63f11f649bf2cb8ff2e6b2e")
+	version("0.3.5", md5="822aa1d387b133b1a41b68fe31757319")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-adaptgauss", type=("build", "run"))

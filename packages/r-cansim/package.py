@@ -19,6 +19,7 @@ class RCansim(RPackage):
 	cran = "cansim" 
 
 	version("0.3.16", md5="3e5bd8db1c87cf29b91959e10f606857")
+	version("0.3.15", md5="0f4a10b34cc39214ed97e6a1fdec718f")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-digest@0.1:", type=("build", "run"))

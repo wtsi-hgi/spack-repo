@@ -20,6 +20,7 @@ class RFastshap(RPackage):
 	cran = "fastshap" 
 
 	version("0.1.1", md5="6dddd0cc27263a98cdaa0c9ad35a1aa0")
+	version("0.1.0", md5="78f9017f02a54de5c2a78431f1419d27")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-foreach", type=("build", "run"))

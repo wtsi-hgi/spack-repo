@@ -25,4 +25,3 @@ class RPdCharmHg18Example(RPackage):
 	depends_on("r-biostrings@2.29.2:", type=("build", "run"))
 	depends_on("r-iranges@1.19.5:", type=("build", "run"))
 
-	# annotation

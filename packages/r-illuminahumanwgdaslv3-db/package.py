@@ -21,4 +21,3 @@ class RIlluminahumanwgdaslv3Db(RPackage):
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-org-hs-eg-db@3.1.2:", type=("build", "run"))
 
-	# annotation

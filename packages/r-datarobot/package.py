@@ -15,6 +15,7 @@ class RDatarobot(RPackage):
 	cran = "datarobot" 
 
 	version("2.18.6", md5="b1cead1ac1898cbb827b86034e8b7fe2")
+	version("2.18.5", md5="da1b9fc711598bdbe5e4d7e0a86a0d5d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-httr@1.2:", type=("build", "run"))

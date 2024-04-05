@@ -20,4 +20,3 @@ class RBsgenomeCfamiliarisUcscCanfam3Masked(RPackage):
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-cfamiliaris-ucsc-canfam3", type=("build", "run"))
 
-	# annotation

@@ -34,4 +34,3 @@ class RSingscoreamlmutations(RPackage):
 	depends_on("r-tcgabiolinks", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))
 
-	# workflow

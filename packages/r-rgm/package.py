@@ -15,6 +15,7 @@ class RRgm(RPackage):
 	cran = "rgm" 
 
 	version("1.0.4", md5="b14f7ea8f81a892112a368f62a005bf7")
+	version("1.0.1", md5="0e459af185a457b024709ec46748811f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-truncnorm", type=("build", "run"))

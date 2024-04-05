@@ -20,6 +20,7 @@ class RGhclass(RPackage):
 	cran = "ghclass" 
 
 	version("0.3.0", md5="191fd464c322b1534c0b89674336a58a")
+	version("0.2.1", md5="4defed56e2637ebbc9467659439f7d89")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-base64enc", type=("build", "run"))

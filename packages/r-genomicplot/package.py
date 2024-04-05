@@ -17,6 +17,7 @@ class RGenomicplot(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicPlot_1.0.6.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicPlot/GenomicPlot_1.0.6.tar.gz"]
 
 	version("1.0.6", md5="ba18ffa9cfe60cfae0491eccf78f26b0")
+	version("1.0.4", md5="28964cfb6084eea62d3cb24b16e7b064")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-genomicranges@1.46.1:", type=("build", "run"))

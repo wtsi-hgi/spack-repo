@@ -28,6 +28,7 @@ class RJfa(RPackage):
 	cran = "jfa" 
 
 	version("0.7.1", md5="2d99aa11cb75b26c85f0fde696ee2fcc")
+	version("0.7.0", md5="cf512f96cfd13b56fab2669a34fb3aaf")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-bde@1.0.1.1:", type=("build", "run"))

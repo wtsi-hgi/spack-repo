@@ -17,6 +17,7 @@ class RGgblanket(RPackage):
 	cran = "ggblanket" 
 
 	version("7.0.0", md5="d4cfa24df286215bf152b209cb8da885")
+	version("5.2.0", md5="4f47c1f462d7b8a27dcd1a969c3ee7e2")
 
 	depends_on("r-dplyr@1.0.4:", type=("build", "run"))
 	depends_on("r-farver", type=("build", "run"))

@@ -20,4 +20,3 @@ class RBsgenomeSscrofaUcscSusscr3Masked(RPackage):
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-sscrofa-ucsc-susscr3", type=("build", "run"))
 
-	# annotation

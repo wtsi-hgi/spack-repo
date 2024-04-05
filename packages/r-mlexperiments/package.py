@@ -25,6 +25,7 @@ class RMlexperiments(RPackage):
 	cran = "mlexperiments" 
 
 	version("0.0.3", md5="35e7f54c372ef3c3b2d69e516353274c")
+	version("0.0.2", md5="be46f42efdd4fa77ef303cbea5165c20")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

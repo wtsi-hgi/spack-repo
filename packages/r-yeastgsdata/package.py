@@ -18,4 +18,3 @@ class RYeastgsdata(RPackage):
 	version("0.40.0", md5="bc455a9ecd3eb2652f887026841b3c69")
 
 
-	# experiment

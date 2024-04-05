@@ -28,4 +28,3 @@ class RFlowsortedBloodEpic(RPackage):
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
 
-	# experiment

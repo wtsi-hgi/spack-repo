@@ -15,6 +15,7 @@ class RMiscmetabar(RPackage):
 	homepage = "https://github.com/adrientaudiere/MiscMetabar"
 	cran = "MiscMetabar" 
 
+	version("0.7.9", md5="787a7d56567774674d43d8d3e1744f6d")
 	version("0.7.10", md5="c9bd2dac128ffc5e7d61af919b4bcc65")
 
 	depends_on("r@3.5:", type=("build", "run"))

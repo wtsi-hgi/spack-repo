@@ -15,17 +15,17 @@ class RMsnbase(RPackage):
 
 	bioc = "MSnbase"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSnbase_2.28.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSnbase/MSnbase_2.28.1.tar.gz"]
+	version("2.8.3", commit="ef883752c5e92d445647bc5b5d23d5df320db415")
+	version("2.6.4", commit="46836860ce0281eef135303f2e2948303d67f68c")
+	version("2.4.2", commit="c045d65daa730c7837852e6343a05cae9644ab5e")
+	version("2.28.1", md5="4d3cbd696e9ca193ec9bdc4722f2ac49")
 	version("2.26.0", commit="3e6268a86b93c474e37b21a9b8f564812202b2b6")
 	version("2.24.0", commit="b96e0142c663c2cb01e92479816a503c46caa1a8")
 	version("2.22.0", commit="4f6e5767eee91b2105781b494fcabcfed16eba2d")
 	version("2.20.4", commit="c86ac8b341832f2b577f2153258c1abf064e6448")
+	version("2.2.0", commit="d6e8fb7f106d05096fa9074da0f829ac8f02c197")
 	version("2.16.1", commit="4d88b4edd1af59474462b1b06ad0ec5831f3a878")
 	version("2.10.1", commit="4d5899bc9c714f0b1a70cddd537cd4621b2b53b0")
-	version("2.8.3", commit="ef883752c5e92d445647bc5b5d23d5df320db415")
-	version("2.6.4", commit="46836860ce0281eef135303f2e2948303d67f68c")
-	version("2.4.2", commit="c045d65daa730c7837852e6343a05cae9644ab5e")
-	version("2.2.0", commit="d6e8fb7f106d05096fa9074da0f829ac8f02c197")
-	version("2.28.1", md5="4d3cbd696e9ca193ec9bdc4722f2ac49")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.7.1:", type=("build", "run"))

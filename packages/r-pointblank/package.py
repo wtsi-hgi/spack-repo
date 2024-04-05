@@ -24,6 +24,7 @@ Remote Tables
 	cran = "pointblank" 
 
 	version("0.12.1", md5="d24d6ef7fe4914ecc6cc8ba3832f6c5c")
+	version("0.11.4", md5="fc3341e05a396524c75eb03be120f25e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-base64enc@0.1.3:", type=("build", "run"))

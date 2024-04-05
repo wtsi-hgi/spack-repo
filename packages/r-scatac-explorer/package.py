@@ -24,4 +24,3 @@ class RScatacExplorer(RPackage):
 	depends_on("r-s4vectors", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
 
-	# experiment

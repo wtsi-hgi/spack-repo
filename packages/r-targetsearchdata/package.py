@@ -19,4 +19,3 @@ class RTargetsearchdata(RPackage):
 	version("1.40.0", md5="96bbec70706d8adcf4ee321261620d79")
 
 
-	# experiment

@@ -19,6 +19,7 @@ class RSamplingin(RPackage):
 	cran = "samplingin" 
 
 	version("1.0.7", md5="a12eb051c8f3666293a98e2687ba73b8")
+	version("1.0.6", md5="f1fd49de049b329c24024620ed755e83")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

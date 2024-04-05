@@ -20,6 +20,7 @@ class RSpatialml(RPackage):
 	cran = "SpatialML" 
 
 	version("0.1.7", md5="f894a29104b6dc2ea7c3c0acb1002de9")
+	version("0.1.6", md5="3f90fbfbd4ce4fb39685477c38f5ef0a")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ranger@0.15.1:", type=("build", "run"))

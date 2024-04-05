@@ -18,6 +18,7 @@ class RMizer(RPackage):
 	cran = "mizer" 
 
 	version("2.5.1", md5="c942dd44f2dafe49b4077801cce49ffc")
+	version("2.5.0", md5="e900e7d8f7938620f513fc870e1e36c7")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

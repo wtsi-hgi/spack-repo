@@ -22,6 +22,7 @@ Endpoints in Clinical Trials
 	cran = "maraca" 
 
 	version("0.7", md5="14def8c1afd5fcce45c819c43e2f53c3")
+	version("0.6", md5="6a234ef99601d9f27aab8298b9853f98")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-hce@0.5:", type=("build", "run"))

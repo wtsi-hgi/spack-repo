@@ -16,6 +16,7 @@ class RGgedit(RPackage):
 	cran = "ggedit" 
 
 	version("0.4.1", md5="793819ddbcb705ab9e5792340085a213")
+	version("0.3.1", md5="75ccee113781e4f9cb538db308806b6c")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ggplot2@3.5:", type=("build", "run"))
