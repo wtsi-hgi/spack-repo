@@ -15,7 +15,6 @@ class RPd081229Hg18PromoterMedipHx1(RPackage):
 	bioc = "pd.081229.hg18.promoter.medip.hx1" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.081229.hg18.promoter.medip.hx1_0.99.4.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.081229.hg18.promoter.medip.hx1/pd.081229.hg18.promoter.medip.hx1_0.99.4.tar.gz"]
 
-	version("0.99.4", md5="f3c240fa0d4503e94047be5ee323856b", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.081229.hg18.promoter.medip.hx1_0.99.4.tar.gz")
 	version("0.99.4", md5="f3c240fa0d4503e94047be5ee323856b", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.081229.hg18.promoter.medip.hx1_0.99.4.tar.gz")
 
 	depends_on("r@2.11:", type=("build", "run"))

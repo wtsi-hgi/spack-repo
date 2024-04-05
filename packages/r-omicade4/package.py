@@ -15,7 +15,6 @@ class ROmicade4(RPackage):
 	bioc = "omicade4" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/omicade4_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/omicade4/omicade4_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="ed6de2f603d54a9ad262ff62784818a2", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/omicade4_1.42.0.tar.gz")
 	version("1.42.0", md5="ed6de2f603d54a9ad262ff62784818a2", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/omicade4_1.42.0.tar.gz")
 
 	depends_on("r@3:", type=("build", "run"))

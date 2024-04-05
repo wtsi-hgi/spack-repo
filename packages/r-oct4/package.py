@@ -15,7 +15,6 @@ class ROct4(RPackage):
 	bioc = "oct4" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/oct4_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/oct4/oct4_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="1b6bbc6300c74c038689c7fb5b7d5eb2", url="https://www.bioconductor.org/packages/release/data/experiment/src/contrib/oct4_1.18.0.tar.gz")
 	version("1.18.0", md5="1b6bbc6300c74c038689c7fb5b7d5eb2", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/oct4_1.18.0.tar.gz")
 
 

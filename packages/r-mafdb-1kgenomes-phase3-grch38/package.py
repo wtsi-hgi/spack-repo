@@ -15,7 +15,6 @@ class RMafdb1kgenomesPhase3Grch38(RPackage):
 	bioc = "MafDb.1Kgenomes.phase3.GRCh38" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.1Kgenomes.phase3.GRCh38_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/MafDb.1Kgenomes.phase3.GRCh38/MafDb.1Kgenomes.phase3.GRCh38_3.10.0.tar.gz"]
 
-	version("3.10.0", md5="ee57d9cb6a1748932407d20b9bffd8a2", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/MafDb.1Kgenomes.phase3.GRCh38_3.10.0.tar.gz")
 	version("3.10.0", md5="ee57d9cb6a1748932407d20b9bffd8a2", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.1Kgenomes.phase3.GRCh38_3.10.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))

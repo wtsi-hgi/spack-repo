@@ -17,7 +17,6 @@ class RPrettydoc(RPackage):
 	cran = "prettydoc"
 	
 	version("0.4.1", sha256="1094a69b026238d149435472b4f41c75151c7370a1be6c6332147c88ad4c4829")
-	version("0.4.1", md5="59fe1acfaae95600b9273fbfbefcfab3")
 
 	depends_on("r-rmarkdown@1.17:", type=("build", "run"))
 	depends_on("pandoc@1.12.3:", type=("build", "link", "run"))

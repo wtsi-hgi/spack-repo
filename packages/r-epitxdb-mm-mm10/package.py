@@ -16,7 +16,6 @@ class REpitxdbMmMm10(RPackage):
 	bioc = "EpiTxDb.Mm.mm10" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EpiTxDb.Mm.mm10_0.99.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/EpiTxDb.Mm.mm10/EpiTxDb.Mm.mm10_0.99.6.tar.gz"]
 
-	version("0.99.6", md5="518e4967f7f038e3cbf2865b74dc4f1b", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/EpiTxDb.Mm.mm10_0.99.6.tar.gz")
 	version("0.99.6", md5="518e4967f7f038e3cbf2865b74dc4f1b", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EpiTxDb.Mm.mm10_0.99.6.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -15,7 +15,6 @@ class RAlphamissenseV2023Hg19(RPackage):
 	bioc = "AlphaMissense.v2023.hg19" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AlphaMissense.v2023.hg19_3.18.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/AlphaMissense.v2023.hg19/AlphaMissense.v2023.hg19_3.18.2.tar.gz"]
 
-	version("3.18.2", md5="e8784ad000be637321f432188a5a3f45", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/AlphaMissense.v2023.hg19_3.18.2.tar.gz")
 	version("3.18.2", md5="e8784ad000be637321f432188a5a3f45", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AlphaMissense.v2023.hg19_3.18.2.tar.gz")
 
 	depends_on("r-genomicscores", type=("build", "run"))

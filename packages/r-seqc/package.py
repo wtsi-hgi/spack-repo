@@ -12,7 +12,6 @@ class RSeqc(RPackage):
 	The SEQC/MAQC-III Consortium has produced benchmark RNA-seq data for the assessment of RNA sequencing technologies and data analysis methods (Nat Biotechnol, 2014). Billions of sequence reads have been generated from ten different sequencing sites. This package contains the summarized read count data for ~2000 sequencing libraries. It also includes all the exon-exon junctions discovered from the study. TaqMan RT-PCR data for ~1000 genes and ERCC spike-in sequence data are included in this package as well.
 	"""
 	
-	homepage = "http://bioconductor.org/packages/release/data/experiment/html/seqc.html"
 	bioc = "seqc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/seqc_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/seqc/seqc_1.36.0.tar.gz"]
 

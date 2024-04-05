@@ -15,7 +15,6 @@ class RPhastcons35wayUcscMm39(RPackage):
 	bioc = "phastCons35way.UCSC.mm39" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/phastCons35way.UCSC.mm39_3.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/phastCons35way.UCSC.mm39/phastCons35way.UCSC.mm39_3.16.0.tar.gz"]
 
-	version("3.16.0", md5="83fc2a2265bc341b6a00064a1286b5bc", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/phastCons35way.UCSC.mm39_3.16.0.tar.gz")
 	version("3.16.0", md5="83fc2a2265bc341b6a00064a1286b5bc", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/phastCons35way.UCSC.mm39_3.16.0.tar.gz")
 
 	depends_on("r-genomicscores", type=("build", "run"))

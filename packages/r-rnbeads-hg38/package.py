@@ -15,7 +15,6 @@ class RRnbeadsHg38(RPackage):
 	bioc = "RnBeads.hg38" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RnBeads.hg38_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RnBeads.hg38/RnBeads.hg38_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="44dd2d3ae3703e045016a34060a14b0a", url="https://www.bioconductor.org/packages/release/data/experiment/src/contrib/RnBeads.hg38_1.34.0.tar.gz")
 	version("1.34.0", md5="44dd2d3ae3703e045016a34060a14b0a", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RnBeads.hg38_1.34.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))

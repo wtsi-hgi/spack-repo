@@ -15,7 +15,6 @@ class RPdCanine2(RPackage):
 	bioc = "pd.canine.2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.canine.2_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.canine.2/pd.canine.2_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="bc918d1953a3c7ac7168b60a53405a93", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.canine.2_3.12.0.tar.gz")
 	version("3.12.0", md5="bc918d1953a3c7ac7168b60a53405a93", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.canine.2_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))

@@ -25,9 +25,8 @@ class RRocr(RPackage):
 	reasonable default values for all optional parameters."""
 
 	cran = "ROCR"
-	version("1.0-7", sha256="e7ef710f847e441a48b20fdc781dbc1377f5a060a5ee635234053f7a2a435ec9")
 	version("1.0-11", sha256="57385a773220a3aaef5b221a68b2d9c2a94794d4f9e9fc3c1eb9521767debb2a")
-	version("1.0-11", md5="6b535985a22c7e0519ad85027c55dc3a")
+	version("1.0-7", sha256="e7ef710f847e441a48b20fdc781dbc1377f5a060a5ee635234053f7a2a435ec9")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

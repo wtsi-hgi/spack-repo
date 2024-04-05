@@ -15,7 +15,6 @@ class RPkgdown(RPackage):
 
 	cran = "pkgdown"
 	version("2.0.7", sha256="f33872869dfa8319182d87e90eab3245ff69293b3b791471bf9538afb81b356a")
-	version("2.0.7", md5="921aa30f4ce3f89b4ab9f5a41e41562a")
 	version("2.0.6", sha256="d29a65c8a5b189fd89842e769f58f8c2369a55406269eabfb66d41d0fe1c7f69")
 
 	depends_on("r@3.1:", type=("build", "run"))

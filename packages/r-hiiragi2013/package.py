@@ -15,7 +15,6 @@ class RHiiragi2013(RPackage):
 	bioc = "Hiiragi2013" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Hiiragi2013_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Hiiragi2013/Hiiragi2013_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="dde13f333fe218976f71b626ed5eefa4", url="https://www.bioconductor.org/packages/release/data/experiment/src/contrib/Hiiragi2013_1.38.0.tar.gz")
 	version("1.38.0", md5="dde13f333fe218976f71b626ed5eefa4", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Hiiragi2013_1.38.0.tar.gz")
 
 	depends_on("r@3:", type=("build", "run"))

@@ -17,7 +17,6 @@ class RAssertiveFiles(RPackage):
 	cran = "assertive.files"
 
 	version("0.0-2", sha256="be6adda6f18a0427449249e44c2deff4444a123244b16fe82c92f15d24faee0a")
-	version("0.0-2", md5="6ec546e99c6466feffca3ab09a670c76")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-assertive-base@0.0.2:", type=("build", "run"))

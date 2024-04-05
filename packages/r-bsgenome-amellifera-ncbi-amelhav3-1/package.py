@@ -15,7 +15,6 @@ class RBsgenomeAmelliferaNcbiAmelhav31(RPackage):
 	bioc = "BSgenome.Amellifera.NCBI.AmelHAv3.1" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Amellifera.NCBI.AmelHAv3.1_1.5.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Amellifera.NCBI.AmelHAv3.1/BSgenome.Amellifera.NCBI.AmelHAv3.1_1.5.0.tar.gz"]
 
-	version("1.5.0", md5="b119087dfe54805c90cb6bf901e8237e", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Amellifera.NCBI.AmelHAv3.1_1.5.0.tar.gz")
 	version("1.5.0", md5="b119087dfe54805c90cb6bf901e8237e", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Amellifera.NCBI.AmelHAv3.1_1.5.0.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))

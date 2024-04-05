@@ -22,7 +22,6 @@ class RIterpc(RPackage):
 	cran = "iterpc"
 	
 	version("0.4.2", sha256="38bd464042a27536f676e889263eb2c257a431b59083f58cb54473f42ba2071b")
-	version("0.4.2", md5="0e9a9625921fdc743a6be2fd5221acc4")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-iterators", type=("build", "run"))

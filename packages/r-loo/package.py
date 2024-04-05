@@ -23,7 +23,6 @@ class RLoo(RPackage):
 	cran = "loo"
 	version("2.7.0", md5="f603c34f25a3c083c2a2b4760afa932f")
 	version("2.6.0", sha256="66da60fdf53a62cbc93797fa696a4cc43bce77f1721dd4bc1a58d25b3f981210")
-	version("2.6.0", md5="fd2d6e17d9ca5069884c15467f89fad1")
 	version("2.5.1", sha256="866a2f54a4e8726cc3062e27daa8a073e6ac4aeb6719af7845284f7a668745f1")
 	version("2.4.1", sha256="bc21fb6b4a93a7e95ee1be57e4e787d731895fb8b4743c26b30b43adee475b50")
 	version("2.3.1", sha256="d98de21b71d9d9386131ae5ba4da051362c3ad39e0305af4f33d830f299ae08b")

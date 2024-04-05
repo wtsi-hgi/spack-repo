@@ -15,7 +15,6 @@ class RBsgenomeHsapiensNcbiT2tChm13v20(RPackage):
 	bioc = "BSgenome.Hsapiens.NCBI.T2T.CHM13v2.0" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.NCBI.T2T.CHM13v2.0_1.5.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Hsapiens.NCBI.T2T.CHM13v2.0/BSgenome.Hsapiens.NCBI.T2T.CHM13v2.0_1.5.0.tar.gz"]
 
-	version("1.5.0", md5="22a99174e1e17718e0b4f8b66f32fd9b", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Hsapiens.NCBI.T2T.CHM13v2.0_1.5.0.tar.gz")
 	version("1.5.0", md5="22a99174e1e17718e0b4f8b66f32fd9b", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.NCBI.T2T.CHM13v2.0_1.5.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))

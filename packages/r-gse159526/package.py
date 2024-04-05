@@ -16,7 +16,6 @@ class RGse159526(RPackage):
 	bioc = "GSE159526" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GSE159526_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GSE159526/GSE159526_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="d89442c94cb87f0760a9f0f85426a8fa", url="https://www.bioconductor.org/packages/release/data/experiment/src/contrib/GSE159526_1.8.0.tar.gz")
 	version("1.8.0", md5="d89442c94cb87f0760a9f0f85426a8fa", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GSE159526_1.8.0.tar.gz")
 
 

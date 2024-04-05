@@ -15,7 +15,6 @@ class RBsgenomeMmusculusUcscMm10(RPackage):
 	bioc = "BSgenome.Mmusculus.UCSC.mm10" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Mmusculus.UCSC.mm10/BSgenome.Mmusculus.UCSC.mm10_1.4.3.tar.gz"]
 
-	version("1.4.3", md5="ffddc2e035527ed1a1e201ac4cc0b1f3", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.3.tar.gz")
 	version("1.4.3", md5="ffddc2e035527ed1a1e201ac4cc0b1f3", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm10_1.4.3.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -15,7 +15,6 @@ class RHuexexonprobesetlocationhg18(RPackage):
 	bioc = "HuExExonProbesetLocationHg18" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/HuExExonProbesetLocationHg18_0.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/HuExExonProbesetLocationHg18/HuExExonProbesetLocationHg18_0.0.2.tar.gz"]
 
-	version("0.0.2", md5="bb00b7f5e4db2b04dca5951aa6bd073e", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/HuExExonProbesetLocationHg18_0.0.2.tar.gz")
 	version("0.0.2", md5="bb00b7f5e4db2b04dca5951aa6bd073e", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/HuExExonProbesetLocationHg18_0.0.2.tar.gz")
 
 	depends_on("r@1.6:", type=("build", "run"))

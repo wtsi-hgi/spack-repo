@@ -16,7 +16,6 @@ class RCnvrd2(RPackage):
 	bioc = "CNVrd2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNVrd2_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNVrd2/CNVrd2_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="9cc2c933a0a521472b5eb6f1382cefd5", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/CNVrd2_1.40.0.tar.gz")
 	version("1.40.0", md5="9cc2c933a0a521472b5eb6f1382cefd5", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNVrd2_1.40.0.tar.gz")
 
 	depends_on("r@3:", type=("build", "run"))

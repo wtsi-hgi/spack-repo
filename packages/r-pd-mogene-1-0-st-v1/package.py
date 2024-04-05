@@ -15,7 +15,6 @@ class RPdMogene10StV1(RPackage):
 	bioc = "pd.mogene.1.0.st.v1" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mogene.1.0.st.v1_3.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.mogene.1.0.st.v1/pd.mogene.1.0.st.v1_3.14.1.tar.gz"]
 
-	version("3.14.1", md5="c3767385af3b9a120c777adb6d6e3364", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.mogene.1.0.st.v1_3.14.1.tar.gz")
 	version("3.14.1", md5="c3767385af3b9a120c777adb6d6e3364", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mogene.1.0.st.v1_3.14.1.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))

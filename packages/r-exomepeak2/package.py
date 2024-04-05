@@ -15,7 +15,6 @@ class RExomepeak2(RPackage):
 	bioc = "exomePeak2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/exomePeak2_1.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/exomePeak2/exomePeak2_1.14.3.tar.gz"]
 
-	version("1.14.3", md5="078608012fb7c2dc3a60d02a4e2fcbbc", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/exomePeak2_1.14.3.tar.gz")
 	version("1.14.3", md5="078608012fb7c2dc3a60d02a4e2fcbbc", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/exomePeak2_1.14.3.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))

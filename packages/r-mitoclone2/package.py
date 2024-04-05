@@ -16,7 +16,6 @@ class RMitoclone2(RPackage):
 	bioc = "mitoClone2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mitoClone2_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mitoClone2/mitoClone2_1.8.1.tar.gz"]
 
-	version("1.8.1", md5="22c58ba6ed0a51f10714551935477355", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/mitoClone2_1.8.1.tar.gz")
 	version("1.8.1", md5="22c58ba6ed0a51f10714551935477355", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mitoClone2_1.8.1.tar.gz")
 
 	depends_on("r@4.1:", type=("build", "run"))

@@ -19,7 +19,6 @@ class RLmertest(RPackage):
 	cran = "lmerTest"
 	
 	version("3.1-3", sha256="35aa75e9f5f2871398ff56a482b013e6828135ef04916ced7d1d7e35257ea8fd")
-	version("3.1-3", md5="9dcd5c0277debea42b1e05ecf98ad6cd")
 
 	depends_on("r@3.2.5:", type=("build", "run"))
 	depends_on("r-lme4@1.1.10:", type=("build", "run"))

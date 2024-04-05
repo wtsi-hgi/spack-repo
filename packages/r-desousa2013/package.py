@@ -15,7 +15,6 @@ class RDesousa2013(RPackage):
 	bioc = "DeSousa2013" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DeSousa2013_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DeSousa2013/DeSousa2013_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="41a3ca5cba40653eb4be04203aaf60ac", url="https://www.bioconductor.org/packages/release/data/experiment/src/contrib/DeSousa2013_1.38.0.tar.gz")
 	version("1.38.0", md5="41a3ca5cba40653eb4be04203aaf60ac", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DeSousa2013_1.38.0.tar.gz")
 
 	depends_on("r@2.15:", type=("build", "run"))

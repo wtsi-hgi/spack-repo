@@ -17,7 +17,6 @@ class RCar(RPackage):
 	license("GPL-2.0-or-later")
 
 	version("3.1-2", sha256="89263491977ac8e9406b2f4b1638bf06c7ddd1b0e0e3ecda4be61420474674c8")
-	version("3.1-2", md5="f8be85a665aa367951aacf80d89eb5e9")
 	version("3.1-1", sha256="8fc55815eed7e46a32b54da9e0bfa4b74a8d082d73d896e3372f2a413b6bd2bc")
 	version("3.1-0", sha256="bd52b4eaea46ce828fccd93445301d06ebd265e2ffff796064875a8c0f0aea21")
 	version("3.0-3", sha256="fa807cb12f6e7fb38ec534cac4eef54747945c2119a7d51155a2492ad778c36f")

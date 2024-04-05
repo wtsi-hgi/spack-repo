@@ -15,7 +15,6 @@ class RPdGenomewidesnp5(RPackage):
 	bioc = "pd.genomewidesnp.5" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.genomewidesnp.5_3.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.genomewidesnp.5/pd.genomewidesnp.5_3.14.1.tar.gz"]
 
-	version("3.14.1", md5="d02255c861e82fca6a7445ada0c69e5d", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.genomewidesnp.5_3.14.1.tar.gz")
 	version("3.14.1", md5="d02255c861e82fca6a7445ada0c69e5d", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.genomewidesnp.5_3.14.1.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))

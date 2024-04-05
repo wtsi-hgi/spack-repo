@@ -15,7 +15,6 @@ class RPdNugoMm1a520177(RPackage):
 	bioc = "pd.nugo.mm1a520177" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.nugo.mm1a520177_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.nugo.mm1a520177/pd.nugo.mm1a520177_3.4.0.tar.gz"]
 
-	version("3.4.0", md5="5cd64895eaddaf4cae1c48db9468c079", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.nugo.mm1a520177_3.4.0.tar.gz")
 	version("3.4.0", md5="5cd64895eaddaf4cae1c48db9468c079", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.nugo.mm1a520177_3.4.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))

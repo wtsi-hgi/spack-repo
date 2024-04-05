@@ -15,7 +15,6 @@ class RBsgenomeGaculeatusUcscGasacu1(RPackage):
 	bioc = "BSgenome.Gaculeatus.UCSC.gasAcu1" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Gaculeatus.UCSC.gasAcu1_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Gaculeatus.UCSC.gasAcu1/BSgenome.Gaculeatus.UCSC.gasAcu1_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="412aa0570d9c556861b7bb9a5bbc2007", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/BSgenome.Gaculeatus.UCSC.gasAcu1_1.4.0.tar.gz")
 	version("1.4.0", md5="412aa0570d9c556861b7bb9a5bbc2007", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Gaculeatus.UCSC.gasAcu1_1.4.0.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))

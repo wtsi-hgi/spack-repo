@@ -15,7 +15,6 @@ class RSnplocsHsapiensDbsnp155Grch37(RPackage):
 	bioc = "SNPlocs.Hsapiens.dbSNP155.GRCh37" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP155.GRCh37_0.99.24.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/SNPlocs.Hsapiens.dbSNP155.GRCh37/SNPlocs.Hsapiens.dbSNP155.GRCh37_0.99.24.tar.gz"]
 
-	version("0.99.24", md5="9473e23ffc7ae76e630a78324b245da8", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP155.GRCh37_0.99.24.tar.gz")
 	version("0.99.24", md5="9473e23ffc7ae76e630a78324b245da8", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP155.GRCh37_0.99.24.tar.gz")
 
 	depends_on("r@4.2:", type=("build", "run"))

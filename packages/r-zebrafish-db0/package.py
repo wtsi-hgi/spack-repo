@@ -15,7 +15,6 @@ class RZebrafishDb0(RPackage):
 	bioc = "zebrafish.db0" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/zebrafish.db0_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/zebrafish.db0/zebrafish.db0_3.18.0.tar.gz"]
 
-	version("3.18.0", md5="5da71e369e2b538fe276cd58b511ebab", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/zebrafish.db0_3.18.0.tar.gz")
 	version("3.18.0", md5="5da71e369e2b538fe276cd58b511ebab", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/zebrafish.db0_3.18.0.tar.gz")
 
 	depends_on("r@2.7:", type=("build", "run"))

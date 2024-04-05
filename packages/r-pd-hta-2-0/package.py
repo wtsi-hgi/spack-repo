@@ -15,7 +15,6 @@ class RPdHta20(RPackage):
 	bioc = "pd.hta.2.0" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hta.2.0_3.12.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.hta.2.0/pd.hta.2.0_3.12.2.tar.gz"]
 
-	version("3.12.2", md5="8e13f85ece49c38da73eaf7b2247f5f0", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/pd.hta.2.0_3.12.2.tar.gz")
 	version("3.12.2", md5="8e13f85ece49c38da73eaf7b2247f5f0", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hta.2.0_3.12.2.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))

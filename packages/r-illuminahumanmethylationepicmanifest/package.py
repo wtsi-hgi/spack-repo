@@ -13,7 +13,6 @@ class RIlluminahumanmethylationepicmanifest(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/IlluminaHumanMethylationEPICmanifest_0.3.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/IlluminaHumanMethylationEPICmanifest/IlluminaHumanMethylationEPICmanifest_0.3.0.tar.gz"]
 	
 	version("0.3.0", sha256="e39a69d98486cec981e97c56f45bbe47d2ccb5bbb66a1b16fa0685575493902a")
-	version("0.3.0", md5="c6b0268de177badfe0b8184002da7e16")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-minfi", type=("build", "run"))

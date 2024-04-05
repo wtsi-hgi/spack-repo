@@ -15,7 +15,6 @@ class RSnplocsHsapiensDbsnp149Grch38(RPackage):
 	bioc = "SNPlocs.Hsapiens.dbSNP149.GRCh38" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP149.GRCh38_0.99.20.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/SNPlocs.Hsapiens.dbSNP149.GRCh38/SNPlocs.Hsapiens.dbSNP149.GRCh38_0.99.20.tar.gz"]
 
-	version("0.99.20", md5="8cf749a8649a53449066b54160a3745c", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP149.GRCh38_0.99.20.tar.gz")
 	version("0.99.20", md5="8cf749a8649a53449066b54160a3745c", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/SNPlocs.Hsapiens.dbSNP149.GRCh38_0.99.20.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))

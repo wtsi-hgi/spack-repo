@@ -24,10 +24,9 @@ class RHierfstat(RPackage):
 	homepage = "https://www.r-project.org"
 	cran = "hierfstat" 
 
-	version("0.5-7", sha256="a38eb5758e3fc3683ec83f94138525eed3d8b7e330f894bab2f821557e98e836")
 	version("0.5-11", sha256="816c03c98135d78ad26e74656a7d0ec00c5052f75aafe6775215651a1228cb5b")
-	version("0.5-11", md5="9bc78ee3f9bbe0fe2ab9e44c5bff40cf")
 	version("0.5-10", sha256="991ce4766c98ee741e0cc4f7da8e2e4a25c93a8eda2fd9cb1a4a171494a59bdc")
+	version("0.5-7", sha256="a38eb5758e3fc3683ec83f94138525eed3d8b7e330f894bab2f821557e98e836")
 	version("0.04-6", sha256="b0deb9988e6acb491918709b986e59cf6d6d3804a3ca231854d6b5acd0dcba54")
 	version("0.04-4", sha256="31b8ceca176285f61a2103de990d8c33d0bba832b430a30a8fb6da1454d68cfe")
 	version("0.04-3", sha256="2f0329525ed2c7973249d7b88c59235cb4377f28288a817e18fbfb162b065f4a")

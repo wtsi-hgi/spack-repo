@@ -15,7 +15,6 @@ class RPolyphenHsapiensDbsnp131(RPackage):
 	bioc = "PolyPhen.Hsapiens.dbSNP131" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/PolyPhen.Hsapiens.dbSNP131_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/PolyPhen.Hsapiens.dbSNP131/PolyPhen.Hsapiens.dbSNP131_1.0.2.tar.gz"]
 
-	version("1.0.2", md5="763e9cd4afd97b36f7e659f5454ef61f", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/PolyPhen.Hsapiens.dbSNP131_1.0.2.tar.gz")
 	version("1.0.2", md5="763e9cd4afd97b36f7e659f5454ef61f", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/PolyPhen.Hsapiens.dbSNP131_1.0.2.tar.gz")
 
 	depends_on("r-variantannotation", type=("build", "run"))

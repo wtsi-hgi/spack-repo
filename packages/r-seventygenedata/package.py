@@ -12,7 +12,6 @@ class RSeventygenedata(RPackage):
 	Gene expression data for the two breast cancer cohorts published by van't Veer and Van de Vijver in 2002.
 	"""
 	
-	homepage = "https://bioconductor.org/packages/release/data/experiment/html/seventyGeneData.html"
 	bioc = "seventyGeneData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/seventyGeneData_1.38.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/seventyGeneData/seventyGeneData_1.38.2.tar.gz"]
 

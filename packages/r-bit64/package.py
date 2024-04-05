@@ -25,7 +25,6 @@ class RBit64(RPackage):
 
 	license("GPL-2.0-only OR GPL-3.0-only")
 
-	version("4.0.5", sha256="25df6826ea5e93241c4874cad4fa8dadc87a40f4ff74c9107aa12a9e033e1578")
 	version("4.0.5", md5="bdccc76b8505827a6f295181de2b308a", url="https://cran.r-project.org/src/contrib/bit64_4.0.5.tar.gz")
 	version("0.9-7", sha256="7b9aaa7f971198728c3629f9ba1a1b24d53db5c7e459498b0fdf86bbd3dff61f")
 

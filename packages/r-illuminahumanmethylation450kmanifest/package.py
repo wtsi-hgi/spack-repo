@@ -13,7 +13,6 @@ class RIlluminahumanmethylation450kmanifest(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/IlluminaHumanMethylation450kmanifest_0.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/IlluminaHumanMethylation450kmanifest/IlluminaHumanMethylation450kmanifest_0.4.0.tar.gz"]
 	
 	version("0.4.0", sha256="41b2e54bac3feafc7646fe40bce3aa2b92c10871b0a13657c5736517792fa763")
-	version("0.4.0", md5="664d1f5a3892974334faa26757269509")
 
 	depends_on("r@2.13:", type=("build", "run"))
 	depends_on("r-minfi", type=("build", "run"))

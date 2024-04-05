@@ -15,7 +15,6 @@ class RBeachmatHdf5(RPackage):
 	bioc = "beachmat.hdf5" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/beachmat.hdf5_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/beachmat.hdf5/beachmat.hdf5_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="b2ca9b6358fb05895101e6a911ca0e39", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/beachmat.hdf5_1.0.0.tar.gz")
 	version("1.0.0", md5="b2ca9b6358fb05895101e6a911ca0e39", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/beachmat.hdf5_1.0.0.tar.gz")
 
 	depends_on("r-beachmat", type=("build", "run"))

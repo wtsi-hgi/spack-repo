@@ -15,7 +15,6 @@ class RFdbFantom4PromotersHg19(RPackage):
 	bioc = "FDb.FANTOM4.promoters.hg19" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/FDb.FANTOM4.promoters.hg19_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/FDb.FANTOM4.promoters.hg19/FDb.FANTOM4.promoters.hg19_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="99a610eb895470e3d945acc5cfb3ebe6", url="https://www.bioconductor.org/packages/release/data/annotation/src/contrib/FDb.FANTOM4.promoters.hg19_1.0.0.tar.gz")
 	version("1.0.0", md5="99a610eb895470e3d945acc5cfb3ebe6", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/FDb.FANTOM4.promoters.hg19_1.0.0.tar.gz")
 
 	depends_on("r-genomicfeatures", type=("build", "run"))

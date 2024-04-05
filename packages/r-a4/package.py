@@ -15,7 +15,6 @@ class RA4(RPackage):
 	bioc = "a4"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/a4_1.50.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/a4/a4_1.50.1.tar.gz"]
 
-	version("1.50.1", md5="deef7e8b7ef01abfdd310cc5d5ba9225", url="https://www.bioconductor.org/packages/release/bioc/src/contrib/a4_1.50.1.tar.gz")
 	version("1.50.1", md5="deef7e8b7ef01abfdd310cc5d5ba9225", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/a4_1.50.1.tar.gz")
 	version("1.48.0", commit="89ef9f4afdde5270acecc7c65be3752b71237eba")
 	version("1.46.0", commit="1b8f1300025fb0940e7f24cff7ffec9fca02d0e4")

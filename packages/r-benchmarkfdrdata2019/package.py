@@ -15,7 +15,6 @@ class RBenchmarkfdrdata2019(RPackage):
 	bioc = "benchmarkfdrData2019" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/benchmarkfdrData2019_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/benchmarkfdrData2019/benchmarkfdrData2019_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="50ce7eb4100da1909ddd6c71c31e7e0c", url="https://www.bioconductor.org/packages/release/data/experiment/src/contrib/benchmarkfdrData2019_1.16.0.tar.gz")
 	version("1.16.0", md5="50ce7eb4100da1909ddd6c71c31e7e0c", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/benchmarkfdrData2019_1.16.0.tar.gz")
 
 	depends_on("r@3.6:", type=("build", "run"))

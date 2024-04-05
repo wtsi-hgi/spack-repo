@@ -17,7 +17,6 @@ class RAssertiveMatrices(RPackage):
 	cran = "assertive.matrices"
 
 	version("0.0-2", sha256="3462a7a7e11d7cc24180330d48cc3067cf92eab1699b3e4813deec66d99f5e9b")
-	version("0.0-2", md5="5602be5710fd1f9faae8ca638b490d4c")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-assertive-base@0.0.2:", type=("build", "run"))
