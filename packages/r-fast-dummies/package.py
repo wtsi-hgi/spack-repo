@@ -17,7 +17,7 @@ class RFastDummies(RPackage):
 
     cran = "fastDummies"
 
-	version("1.6.3", sha256="bd3934fe19d7dff2723438bbb7b89334118143f8ce151d98477ae964ee5d81df")
+    version("1.6.3", sha256="bd3934fe19d7dff2723438bbb7b89334118143f8ce151d98477ae964ee5d81df")
 
     depends_on("r-data-table", type=("build", "run"))
     depends_on("r-tibble", type=("build", "run"))

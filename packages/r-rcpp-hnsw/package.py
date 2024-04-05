@@ -16,6 +16,6 @@ class RRcppHnsw(RPackage):
 
     cran = "RcppHNSW"
 
-	version("0.4.1", sha256="4f0082154f77dcb7756d41cdbfe0f58316431b9027081321a27942f319097c74")
+    version("0.4.1", sha256="4f0082154f77dcb7756d41cdbfe0f58316431b9027081321a27942f319097c74")
 
     depends_on("r-rcpp", type=("build", "run"))

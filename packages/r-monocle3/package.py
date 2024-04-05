@@ -21,7 +21,7 @@ class RMonocle3(RPackage):
 
     git = "https://github.com/cole-trapnell-lab/monocle3"
 
-	version("1.3.1", tag="v1.3.1")
+    version("1.3.1", tag="v1.3.1")
 
     depends_on("r@4.0.0:", type=("build", "run"))
     depends_on("r-biobase", type=("build", "run"))
