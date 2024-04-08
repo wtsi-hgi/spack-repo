@@ -77,3 +77,4 @@ class RMonocle3(RPackage):
     depends_on("r-terra", type=("build", "run"))
     depends_on("r-tibble", type=("build", "run"))
     depends_on("r-tidyr", type=("build", "run"))
+    depends_on("r-viridis", type=("build", "run")
