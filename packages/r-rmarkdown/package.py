@@ -38,4 +38,5 @@ class RRmarkdown(RPackage):
 	depends_on("r-tinytex@0.31:", type=("build", "run"))
 	depends_on("r-xfun@0.36:", type=("build", "run"))
 	depends_on("r-yaml@2.1.19:", type=("build", "run"))
+	depends_on("r-stringr", type=("build", "run"), when="@:2.26")
 	depends_on("pandoc@1.14:", type=("build", "link", "run"))
