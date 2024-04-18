@@ -26,6 +26,7 @@ class PyPolyfun(Package):
     depends_on("py-rpy2", type=("build", "run"))
     depends_on("py-deprecated", type=("build", "run"))
     depends_on("py-fastparquet", type=("build", "run"))
+    depends_on("py-imagecodecs", type=("build", "run"))
     depends_on("r-susier", type=("build", "run"))
     depends_on("r-ckmeans-1d-dp", type=("build", "run"))
     depends_on("finemap", type=("build", "run"))
