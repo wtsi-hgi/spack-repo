@@ -22,3 +22,5 @@ class RScmageck(RPackage):
     depends_on("r-seurat", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-rcpp", type=("build", "run"))
+    depends_on("py-mageck@:1.5.1", type="run")
+    depends_on("py-pysam", type="run")
