@@ -46,3 +46,4 @@ class RShiny(RPackage):
 	depends_on("r-bslib@0.3:", type=("build", "run"))
 	depends_on("r-cachem", type=("build", "run"))
 	depends_on("r-lifecycle@0.2:", type=("build", "run"))
+	depends_on("r-ellipsis", type=("build", "run"))
