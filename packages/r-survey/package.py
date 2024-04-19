@@ -19,6 +19,7 @@ class RSurvey(RPackage):
 
 	cran = "survey"
 	version("4.4-2", md5="565ca8d5fc141cbc6bcacdd8bc2e2f0f")
+	version("4.4-1", md5="06574ba74a051c98255e363584da7a36")
 	version("4.2-1", md5="5ddc886c509861b8cfd82c23976e25f6")
 	version("4.1-1", sha256="05e89a1678a39e32bfb41af8a31d643b04fc4d2660a96e701825e6bffcd75a52")
 	version("4.0", sha256="b053f40f4cfa90507ca524f72d3b3a4b4869def52f11f907a14f1c6d90063de1")
