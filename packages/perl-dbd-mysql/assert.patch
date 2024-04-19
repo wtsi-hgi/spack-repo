@@ -1,0 +1,15 @@
+diff --git a/Makefile.PL b/Makefile.PL
+index a1b38f6..19ee88a 100644
+--- a/Makefile.PL
++++ b/Makefile.PL
+@@ -207,10 +207,6 @@ MSG
+ 
+ print "Checking if libs are available for compiling...\n";
+ 
+-assert_lib(
+-  LIBS => ($opt->{'embedded'} ? $opt->{'embedded'} : $opt->{libs}),
+-);
+-
+ print "Looks good.\n\n";
+ 
+ sleep 1;

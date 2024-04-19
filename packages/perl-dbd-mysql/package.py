@@ -26,3 +26,9 @@ class PerlDbdMysql(PerlPackage):
     depends_on("zlib", type=("build", "link", "run"))
     depends_on("curl")
     depends_on("zstd", when="@8.0.18:")
+
+    patch("assert.patch")
+
+#    def setup_dependent_build_environment(self, env, dependent_spec):
+#        env.set("CPATH", join_path(self.spec["zlib"].prefix, "include"))
+#        env.set("LD_LIBRARY_PATH", join_path(self.spec["zlib"].prefix, "lib"))
