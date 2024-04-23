@@ -28,3 +28,4 @@ class RMarkdown(RPackage):
 	depends_on("r@2.11.1:", type=("build", "run"))
 	depends_on("r-commonmark@1.9:", type=("build", "run"))
 	depends_on("r-xfun@0.38:", type=("build", "run"))
+	depends_on("r-mime", type=("build", "run"), when="@:1.12")
