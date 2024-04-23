@@ -26,3 +26,8 @@ class RSeqarray(RPackage):
 	depends_on("r-genomeinfodb", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
+
+	def patch(self):
+		filter_file("const __m256i mask3 = _mm256_set1_epi8('\\n');", "", "src/vectorization.cpp", string=True)
+		filter_file("const __m256i mask4 = _mm256_set1_epi8('\\r');", "", "src/vectorization.cpp", string=True)
+		filter_file("const __m128i mask2 = _mm_set1_epi8('\\r');", "const __m128i mask2 = _mm_set1_epi8('\\r');const __m256i mask3 = _mm256_set1_epi8('\\n');const __m256i mask4 = _mm256_set1_epi8('\\r');", "src/vectorization.cpp", string=True)
