@@ -35,3 +35,4 @@ class RMapview(RPackage):
 	depends_on("r-servr", type=("build", "run"))
 	depends_on("r-sf", type=("build", "run"))
 	depends_on("r-sp", type=("build", "run"))
+	depends_on("r-webshot", type=("build", "run"), when="@:2.11.2")
