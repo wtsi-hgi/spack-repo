@@ -171,11 +171,11 @@ class Julia(MakefilePackage):
     depends_on("which", type="build")  # for detecting 7z, lld, dsymutil
     depends_on("python", type="build")
 
-    depends_on("blas")  # note: for now openblas is fixed...
+    depends_on("openblas")  # note: for now openblas is fixed...
     depends_on("curl tls=mbedtls +nghttp2 +libssh2")
     depends_on("dsfmt@2.2.4:")  # apparently 2.2.3->2.2.4 breaks API
     depends_on("gmp")
-    depends_on("lapack")  # note: for now openblas is fixed...
+    # depends_on("lapack")  # note: for now openblas is fixed...
     depends_on("libblastrampoline", when="@1.7.0:")
     depends_on("libgit2")
     depends_on("libssh2 crypto=mbedtls")
