@@ -40,3 +40,4 @@ class RGgplot2(RPackage):
 	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-vctrs@0.5:", type=("build", "run"))
 	depends_on("r-withr@2.5:", type=("build", "run"))
+	depends_on("r-digest", type=("build", "run"), when="@:3.5")
