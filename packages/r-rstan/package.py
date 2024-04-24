@@ -33,7 +33,12 @@ class RRstan(RPackage):
 	version("2.10.1", sha256="4d2040742607f8675633c6b8c0a2e810f2fe3077f9242b1edfd42642613a8294")
 
 	depends_on("r@3.4:", type=("build", "run"))
-	depends_on("r-stanheaders@2.32:", type=("build", "run"))
+	depends_on("r-stanheaders@2.10", type=("build", "run"), when="@2.10")
+	depends_on("r-stanheaders@2.17", type=("build", "run"), when="@2.17")
+	depends_on("r-stanheaders@2.18", type=("build", "run"), when="@2.18")
+	depends_on("r-stanheaders@2.19", type=("build", "run"), when="@2.19")
+	depends_on("r-stanheaders@2.21", type=("build", "run"), when="@2.21")
+	depends_on("r-stanheaders@2.32", type=("build", "run"), when="@2.32")
 	depends_on("r-inline@0.3.19:", type=("build", "run"))
 	depends_on("r-gridextra@2.3:", type=("build", "run"))
 	depends_on("r-rcpp@1.0.7:", type=("build", "run"))
@@ -44,7 +49,6 @@ class RRstan(RPackage):
 	depends_on("r-ggplot2@3.3.5:", type=("build", "run"))
 	depends_on("r-rcppeigen@0.3.4:", type=("build", "run"))
 	depends_on("r-bh@1.75.0.0:", type=("build", "run"))
-	depends_on("pandoc", type=("build", "link", "run"))
 	depends_on("pandoc", type=("build", "link", "run"))
 
 	conflicts("%gcc@:4.9", when="@2.18:")
