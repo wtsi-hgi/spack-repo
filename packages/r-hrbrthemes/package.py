@@ -25,3 +25,5 @@ class RHrbrthemes(RPackage):
 	depends_on("r-extrafont", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-gdtools", type=("build", "run"))
+	depends_on("r-knitr", type=("build", "run"), when="@0.8.0")
+	depends_on("r-rmarkdown", type=("build", "run"), when="@0.8.0")
