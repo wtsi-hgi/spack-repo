@@ -15,6 +15,7 @@ class Libleidenalg(CMakePackage):
     version("0.10.0", sha256="ae265fb718e2233bfd01e3bc9679d9bed53a182e4cb13dbb12b49e6e92105cc7")
 
     depends_on("igraph@0.10:", type=("build", "link"))
+    depends_on("cmake@3.23:", type=("build", "link"))
 
     #def cmake_args(self):
     #    return ["-DCMAKE_POSITION_INDEPENDENT_CODE=ON"]
