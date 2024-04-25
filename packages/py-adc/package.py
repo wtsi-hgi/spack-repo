@@ -20,6 +20,7 @@ class PyAdc(PythonPackage):
     depends_on("py-tqdm", type=("build", "run"))
 
     def patch(self):
+        filter_file("from dcorT import *", "from .dcorT import *", "ADC.py", string=True)
         mkdir("ADC")
         for file in ["data", "ADC.py", "BCDCOR.py", "dcorT.py", "__init__.py"]:
             move(file, "ADC")
