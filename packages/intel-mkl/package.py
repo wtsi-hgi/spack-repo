@@ -23,7 +23,6 @@ class IntelMkl(IntelPackage):
         "2020.4.304",
         sha256="2314d46536974dbd08f2a4e4f9e9a155dc7e79e2798c74e7ddfaad00a5917ea5",
         url="https://registrationcenter-download.intel.com/akdlm/IRC_NAS/tec/16917/l_mkl_2020.4.304.tgz",
-        deprecated=True,
     )
     version(
         "2020.3.279",
