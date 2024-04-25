@@ -11,6 +11,7 @@ class EnsemblVep(Package):
     homepage = "https://www.ensembl.org/vep"
     git = "https://github.com/Ensembl/ensembl-vep"
 
+    version("111.0", tag="release/111.0")
     version("110.1", tag="release/110.1")
     version("110.0", tag="release/110.0")
     version("109.3", tag="release/109.3")
