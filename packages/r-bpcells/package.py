@@ -16,7 +16,8 @@ class RBpcells(RPackage):
 
     git = "https://github.com/bnprks/BPCells"
 
-    version("0.1.0", tag="v0.1.0")
+    version("2024-04-25", commit="fa6f13e96528979903d1d84a916b81b8a438a3cb")
+    version("0.1.0", tag="v0.1.0", preferred=True)
 
     depends_on("r@4.0.0:", type=("build", "run"))
     depends_on("r-magrittr", type=("build", "run"))
