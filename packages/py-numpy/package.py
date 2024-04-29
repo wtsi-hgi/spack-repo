@@ -72,8 +72,10 @@ class PyNumpy(PythonPackage):
     version("1.17.5", sha256="16507ba6617f62ae3c6ab1725ae6f550331025d4d9a369b83f6d5a470446c342")
     version("1.17.4", sha256="f58913e9227400f1395c7b800503ebfdb0772f1c33ff8cb4d6451c06cabdf316")
     version("1.17.3", sha256="a0678793096205a4d784bd99f32803ba8100f639cf3b932dc63b21621390ea7e")
+    version("1.16.6", sha256="e5cf3fdf13401885e8eea8170624ec96225e2174eb0c611c6f26dd33b489e3ff")
 
     # Based on PyPI wheel availability
+    depends_on("python@2.7:2.8,3.5:3.9", type=("build", "link", "run"), when="@1.16")
     depends_on("python@3.9:3.12", when="@1.26:", type=("build", "link", "run"))
     depends_on("python@3.9:3.11", when="@1.25", type=("build", "link", "run"))
     depends_on("python@3.8:3.11", when="@1.23.2:1.24", type=("build", "link", "run"))
@@ -112,6 +114,8 @@ class PyNumpy(PythonPackage):
     depends_on("py-colorama", when="@1.26.0:1.26.3 platform=windows", type="build")
     depends_on("ninja@1.8.2:", when="@1.26.0:1.26.3", type="build")
     depends_on("pkgconfig", when="@1.26.0:1.26.3", type="build")
+
+    patch("blas-lapack-order.patch", when="@1.15:1.16")
 
     # Add Fujitsu Fortran compiler
     patch("add_fj_compiler.patch", when="@1.19.3:1.19.5%fj")
