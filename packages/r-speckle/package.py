@@ -16,10 +16,18 @@ class RSpeckle(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/speckle_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/speckle/speckle_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="4603cad300c83d6e6374e5989b5fe32a")
+	version("0.0.3", git="https://github.com/Oshlack/speckle.git", commit="9347bf07b5cdc49ecedc0042d3a007742db01691")
 
-	depends_on("r@4.2:", type=("build", "run"))
+	depends_on("r@4.2:", type=("build", "run"), when="@1.2.0:")
 	depends_on("r-limma", type=("build", "run"))
 	depends_on("r-edger", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-seurat", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
+	depends_on("r-statmod", type=("build", "run"), when="@0.0.3")
+	depends_on("r-caret", type=("build", "run"), when="@0.0.3")
+	depends_on("r-scuttle", type=("build", "run"), when="@0.0.3")
+	depends_on("r-stringr", type=("build", "run"), when="@0.0.3")
+	depends_on("r-annotationdbi", type=("build", "run"), when="@0.0.3")
+	depends_on("r-org-hs-eg-db", type=("build", "run"), when="@0.0.3")
+	depends_on("r-org-mm-eg-db", type=("build", "run"), when="@0.0.3")
