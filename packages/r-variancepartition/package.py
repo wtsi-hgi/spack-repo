@@ -17,8 +17,9 @@ class RVariancepartition(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/variancePartition_1.32.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/variancePartition/variancePartition_1.32.5.tar.gz"]
 
 	version("1.32.5", md5="cd02e6e3024f4f5bbb5d8c1dcb471d15")
+	version("1.24.1", md5="922a5518ac302be34b1e416772190db5", url="https://www.bioconductor.org/packages/3.14/bioc/src/contrib/variancePartition_1.24.1.tar.gz")
 
-	depends_on("r@4.3:", type=("build", "run"))
+	depends_on("r@4.3:", type=("build", "run"), when="@1.32.5:")
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))
@@ -28,12 +29,12 @@ class RVariancepartition(RPackage):
 	depends_on("r-matrix@1.4:", type=("build", "run"))
 	depends_on("r-iterators", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))
-	depends_on("r-corpcor", type=("build", "run"))
-	depends_on("r-matrixstats", type=("build", "run"))
+	depends_on("r-corpcor", type=("build", "run"), when="@1.32.5:")
+	depends_on("r-matrixstats", type=("build", "run"), when="@1.32.5:")
 	depends_on("r-rhpcblasctl", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))
-	depends_on("r-remacor@0.0.15:", type=("build", "run"))
-	depends_on("r-fancova", type=("build", "run"))
+	depends_on("r-remacor@0.0.15:", type=("build", "run"), when="@1.32.5:")
+	depends_on("r-fancova", type=("build", "run"), when="@1.32.5:")
 	depends_on("r-aod", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))
 	depends_on("r-rdpack", type=("build", "run"))
