@@ -29,6 +29,6 @@ class RBiocio(RPackage):
 	version("1.12.0", md5="6e0c18bdf6d9f707f9d1e431400fa1c7")
 	version("1.10.0", commit="1368ff1a7ddbb62515a87a88d7ec39981de557d5")
 
-	depends_on("r@4.3:", type=("build", "run"))
+	depends_on("r@4.3:", type=("build", "run"), when="@1.10:")
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
