@@ -33,7 +33,8 @@ class RDose(RPackage):
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-hdo-db", type=("build", "run"))
+	depends_on("r-do-db", type=("build", "run"), when="@:3.22")
+	depends_on("r-hdo-db", type=("build", "run"), when="@3.22:")
 	depends_on("r-biocparallel", type=("build", "run"))
 	depends_on("r-fgsea", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
