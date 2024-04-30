@@ -38,5 +38,5 @@ class RSummarizedexperiment(RPackage):
 	depends_on("r-s4vectors@0.33.7:", type=("build", "run"))
 	depends_on("r-iranges@2.23.9:", type=("build", "run"))
 	depends_on("r-genomeinfodb@1.13.1:", type=("build", "run"))
-	depends_on("r-s4arrays@1.1.1:", type=("build", "run"))
+	depends_on("r-s4arrays@1.1.1:", type=("build", "run"), when="@1.30:")
 	depends_on("r-delayedarray@0.27.1:", type=("build", "run"))
