@@ -24,5 +24,5 @@ class RRhdf5lib(RPackage):
 	version("1.12.1", commit="cf464f40fd95274d0d351cf28b586c49307c4f0b")
 	version("1.0.0", commit="79608038c2016a518ba747fe6a2bf02ce53a75f9")
 
-	depends_on("r@4.2:", type=("build", "run"))
+	depends_on("r@4.2:", type=("build", "run"), when="@1.22:")
 	depends_on("zlib", type=("build", "link", "run"))
