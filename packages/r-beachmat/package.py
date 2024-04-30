@@ -29,8 +29,8 @@ class RBeachmat(RPackage):
 	version("1.2.1", commit="ebae81772045a314e568c2f7d73ea3b27e7bf7d8")
 	version("1.0.2", commit="6bd57b91d6428ac916f46572d685d3cb01a757f7")
 
-	depends_on("r-delayedarray@0.27.2:", type=("build", "run"), when="@2.17:")
-	depends_on("r-sparsearray", type=("build", "run"))
+	depends_on("r-delayedarray@0.27.2:", type=("build", "run"))
+	depends_on("r-sparsearray", type=("build", "run"), when="@2.17:")
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
