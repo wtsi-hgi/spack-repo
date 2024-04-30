@@ -39,4 +39,4 @@ class RDelayedarray(RPackage):
 	depends_on("r-s4vectors", type=("build", "run"))
 	depends_on("r-iranges@2.17.3:", type=("build", "run"))
 	depends_on("r-s4arrays@1.1.1:", type=("build", "run"))
-	depends_on("r-sparsearray@1.1.10:", type=("build", "run"))
+	depends_on("r-sparsearray@1.1.10:", type=("build", "run"), when="@0.28.0:")
