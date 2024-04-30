@@ -24,6 +24,7 @@ class RDelayedarray(RPackage):
 	version("0.6.6", commit="bdb0ac0eee71edd40ccca4808f618fa77f595a64")
 	version("0.4.1", commit="ffe932ef8c255614340e4856fc6e0b44128a27a1")
 	version("0.28.0", md5="812e7575d6eaa61f5b68364cdf1da3d9")
+	version("0.27.10", commit="5544cc3e06d66c209c5394f675805d7ab6890f03")
 	version("0.26.0", commit="e3bdae96838a8ed45f18697f072f3c4ec011aa03")
 	version("0.24.0", commit="68ee3d0626c234ee1e9248a6cb95b901e4b3ad90")
 	version("0.22.0", commit="4a5afd117b189b40bd409c7aff60e09d41797472")
