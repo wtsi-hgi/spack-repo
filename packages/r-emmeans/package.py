@@ -29,6 +29,7 @@ class REmmeans(RPackage):
 	version("1.10.0", md5="00d07a9e765fe043a85b27fb0f9d36e8")
 
 	depends_on("r@4.1:", type=("build", "run"))
-	depends_on("r-estimability@1.4.1:", type=("build", "run"))
+	depends_on("r-estimability@1.3:", type=("build", "run"), when="@:1.7.5")
+	depends_on("r-estimability@1.4.1:", type=("build", "run"), when="@1.7.5:")
 	depends_on("r-numderiv", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))
