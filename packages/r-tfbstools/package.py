@@ -29,6 +29,7 @@ class RTfbstools(RPackage):
 	version("1.18.0", commit="17e12b9f3dcb9059d414307ec0bc23ed1ee33294")
 	version("1.16.0", commit="565436a5a674d4dea7279e796a20c5bd2034f65a")
 	version("1.14.2", commit="e429fdefb6f7ee4585dd2a8ca3d0ced7a5bed4ff")
+	version("1.6.1", md5="3acdf968e4e8314848b999121495441f")
 
 	depends_on("r@3.2.2:", type=("build", "run"))
 	depends_on("r-biobase@2.28:", type=("build", "run"))
@@ -46,7 +47,7 @@ class RTfbstools(RPackage):
 	depends_on("r-dbi@0.6:", type=("build", "run"))
 	depends_on("r-rsqlite@1:", type=("build", "run"))
 	depends_on("r-rtracklayer@1.28.10:", type=("build", "run"))
-	depends_on("r-seqlogo@1.34:", type=("build", "run"))
+	depends_on("r-seqlogo@1.34:", type=("build", "run"), when="@1.8.3:")
 	depends_on("r-s4vectors@0.9.25:", type=("build", "run"))
 	depends_on("r-tfmpvalue@0.0.5:", type=("build", "run"))
 	depends_on("r-xml@3.98.1.3:", type=("build", "run"))
