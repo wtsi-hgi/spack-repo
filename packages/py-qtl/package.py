@@ -13,6 +13,7 @@ class PyQtl(PythonPackage):
 
     version("0.1.8", sha256="8fdb99cda1ceff578a233db6c15a944fa57b43a2826af41c292e36848906117b")
 
+    depends_on("py-setuptools", type="build")
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-scipy", type=("build", "run"))
