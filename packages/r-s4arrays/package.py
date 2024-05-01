@@ -18,6 +18,7 @@ class RS4arrays(RPackage):
 
 	version("1.2.1", md5="56e78d721cbf2dc16d12123dca444272")
 	version("1.2.0", md5="c77474b839251d19d31708831de3c1bf")
+	version("1.1.1", commit="6074deee3b0edd47bfde20fa4151c54268e93d63")
 	version("0.4.1", commit="09d02b41fbf2a514f176e740ee7ab7bbe2b60151")
 
 	depends_on("r@4.3:", type=("build", "run"), when="@1.2:")
