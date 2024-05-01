@@ -40,6 +40,9 @@ class RBpcells(RPackage):
     depends_on("hdf5", type=("build", "run"))
     depends_on("openmpi", type=("build", "run", "link"))
 
+    def patch(self):
+        filter_file("%ARCH_FLAG%", "-march=x86-64-v3", "src/Makevars.in", string=True)
+
     def setup_build_environment(self, env):
         env.set("LD_LIBRARY_PATH", join_path(self.spec["hdf5"].prefix, "lib"))
 
