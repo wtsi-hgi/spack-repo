@@ -21,6 +21,7 @@ class PyAdc(PythonPackage):
 
     def patch(self):
         filter_file("from dcorT import *", "from .dcorT import *", "ADC.py", string=True)
+        filter_file("from BCDCOR import *", "from .BCDCOR import *", "BCDCOR.py", string=True)
         mkdir("ADC")
         for file in ["data", "ADC.py", "BCDCOR.py", "dcorT.py", "__init__.py"]:
             move(file, "ADC")
