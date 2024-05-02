@@ -37,3 +37,4 @@ class RGgally(RPackage):
 	depends_on("r-scales@1.1:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("openssl", type=("build", "link", "run"))
+	depends_on("r-reshape", type=("build", "link", "run"))
