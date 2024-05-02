@@ -41,6 +41,7 @@ class REnsembldb(RPackage):
 	depends_on("r-biocgenerics@0.15.10:", type=("build", "run"))
 	depends_on("r-genomicranges@1.31.18:", type=("build", "run"))
 	depends_on("r-genomicfeatures@1.49.6:", type=("build", "run"))
+	depends_on("r-genomicfeatures@:1.51", type=("build", "run"), when="@:2.22")
 	depends_on("r-annotationfilter@1.5.2:", type=("build", "run"))
 	depends_on("r-rsqlite@1.1:", type=("build", "run"))
 	depends_on("r-dbi", type=("build", "run"))
