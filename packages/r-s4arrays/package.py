@@ -21,7 +21,7 @@ class RS4arrays(RPackage):
 	version("1.1.1", commit="6074deee3b0edd47bfde20fa4151c54268e93d63")
 	version("0.4.1", commit="09d02b41fbf2a514f176e740ee7ab7bbe2b60151")
 
-	depends_on("r@4.3:", type=("build", "run"), when="@1.2:")
+	depends_on("r@4.3:", type=("build", "run"), when="@0.5:")
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))
 	depends_on("r-biocgenerics@0.45.2:", type=("build", "run"))
