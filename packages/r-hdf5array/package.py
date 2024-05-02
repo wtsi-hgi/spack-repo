@@ -41,6 +41,7 @@ class RHdf5array(RPackage):
 	depends_on("r-biocgenerics@0.31.5:", type=("build", "run"))
 	depends_on("r-s4vectors@0.27.13:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-s4arrays@1.1.1:", type=("build", "run"))
+	depends_on("r-s4arrays@1.1.1:", type=("build", "run"), when="@1.30:")
+	depends_on("r-s4arrays@1.0.1:", type=("build", "run"), when="@1.26:")
 	depends_on("r-rhdf5lib", type=("build", "run"))
 	depends_on("zlib", type=("build", "link", "run"))
