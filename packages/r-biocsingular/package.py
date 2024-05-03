@@ -26,6 +26,7 @@ class RBiocsingular(RPackage):
 	version("1.10.0", commit="6615ae8cb124aba6507447c1081bd2eba655e57d")
 	version("1.0.0", commit="d2b091c072d0312698c9bb6611eb1bdf8aebf833")
 
+	depends_on("r@4.3:", type=("build", "run"), when="@1.18:")
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
