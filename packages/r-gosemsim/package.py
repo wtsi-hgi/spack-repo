@@ -23,6 +23,7 @@ class RGosemsim(RPackage):
 	version("2.6.2", commit="2ffe78e89276e804306554965fc0799318ec56ed")
 	version("2.4.1", commit="0656e845860d14e054670ffc246a1c53f699299c")
 	version("2.28.1", md5="89d833af368b8fb6592d7acd623e0a45")
+	version("2.27.3", commit="cc359afaaf2db1edd67fd1ad2ce17126ef2710af")
 	version("2.26.0", commit="ef3d5a7fb37b43603de4f43aa4fecadaa47f93e0")
 	version("2.24.0", commit="ed7334f3cf3ac7ce5be76003934c29b598089f4d")
 	version("2.22.0", commit="fd74aeba2371ebf9db0595cf18674441bdac9618")
