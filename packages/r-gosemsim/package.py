@@ -32,6 +32,7 @@ class RGosemsim(RPackage):
 	version("2.10.0", commit="5db1ecbf2f8d870430d6e587609327d05ba3ad7b")
 
 	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r@4.3:", type=("build", "run"), when="@2.28:")
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-go-db", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
