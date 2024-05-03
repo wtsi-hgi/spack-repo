@@ -41,3 +41,6 @@ class RVariancepartition(RPackage):
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-lme4@1.1.33:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))
+	depends_on("r-foreach", type=("build", "run"), when="@:1.30")
+	depends_on("r-doparallel", type=("build", "run"), when="@:1.30")
+	depends_on("r-progress", type=("build", "run"), when="@:1.30")
