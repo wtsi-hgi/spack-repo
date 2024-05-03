@@ -17,7 +17,7 @@ class PyAdc(PythonPackage):
     depends_on("py-scikit-learn", type=("build", "run"))
     depends_on("py-scipy", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
-    depends_on("py-tqdm", type=("build", "run"))
+    depends_on("py-tqdm+notebook", type=("build", "run"))
 
     def patch(self):
         filter_file("from dcorT import *", "from .dcorT import *", "ADC.py", string=True)
