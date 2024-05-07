@@ -7,7 +7,7 @@ from spack.package import *
 
 
 class RFindpc(RPackage):
-	"""The goal of ggsankey is to make beautiful sankey, alluvial and sankey bump plots in ggplot2."""
+	"""findPC is a software tool including six methods to automatically select the number of principal components to retain based on the standard deviations explained by each PC."""
 	
 	homepage = "https://github.com/haotian-zhuang/findPC"
 	git = "https://github.com/haotian-zhuang/findPC.git"
