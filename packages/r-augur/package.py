@@ -7,13 +7,13 @@ from spack.package import *
 
 
 class RAugur(RPackage):
-    """Augur is an R package to prioritize cell types involved in the response to an experimental perturbation within high-dimensional single-cell data."""
-    
-    homepage = "https://github.com/neurorestore/Augur"
-    git = "https://github.com/neurorestore/Augur.git"
+	"""Augur is an R package to prioritize cell types involved in the response to an experimental perturbation within high-dimensional single-cell data."""
+	
+	homepage = "https://github.com/neurorestore/Augur"
+	git = "https://github.com/neurorestore/Augur.git"
 
-    version("2024-04-05", commit="3f825b946f21f2b2ccd2331aaf1672ce6615b778")
-    
+	version("2024-04-05", commit="3f825b946f21f2b2ccd2331aaf1672ce6615b778")
+	
 	depends_on("r-dplyr@0.8.0:" type=("build", "run"))
 	depends_on("r-purrr@0.3.2:" type=("build", "run"))
 	depends_on("r-tibble@2.1.3:" type=("build", "run"))
