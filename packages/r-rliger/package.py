@@ -41,3 +41,8 @@ class RRliger(RPackage):
 	depends_on("r-viridis", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
 	depends_on("r-rcppprogress", type=("build", "run"))
+	depends_on("r-ica", type=("build", "run"))
+	depends_on("r-mclust", type=("build", "run"))
+	depends_on("r-psych", type=("build", "run"))
+	depends_on("r-scattermore", type=("build", "run"))
+	depends_on("r-patchwork", type=("build", "run"))
