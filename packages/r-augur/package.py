@@ -12,7 +12,7 @@ class RAugur(RPackage):
 	homepage = "https://github.com/neurorestore/Augur"
 	git = "https://github.com/neurorestore/Augur.git"
 
-	version("2024-04-05", commit="3f825b946f21f2b2ccd2331aaf1672ce6615b778")
+	version("2024-02-26", commit="fa5d837da5fbf6f4be8669168dc0a8cd68b0c889")
 	
 	depends_on("r-dplyr@0.8.0:", type=("build", "run"))
 	depends_on("r-purrr@0.3.2:", type=("build", "run"))
