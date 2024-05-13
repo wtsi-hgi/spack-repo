@@ -14,7 +14,7 @@ class RScwgcna(RPackage):
 
     version("1.1.0", commit="316f28d")
 
-    depends_on("r+X@4.3.2", type=("build", "run"))
+    depends_on("r@2.10:", type=("build", "run"))
 
     depends_on("r-seurat", type=("build", "run"))
     depends_on("r-wgcna", type=("build", "run"))
