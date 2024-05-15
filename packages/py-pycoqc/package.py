@@ -26,3 +26,5 @@ class PyPycoqc(PythonPackage):
     depends_on("py-h5py@3.1:", type=("build", "run"))
     depends_on("py-tqdm@4.54:", type=("build", "run"))
     depends_on("py-pysam@0.16:", type=("build", "run"))
+
+    depends_on("py-retrying", type=("build", "run"))
