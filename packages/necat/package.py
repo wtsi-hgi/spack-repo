@@ -16,7 +16,8 @@ class Necat(Package):
     
     depends_on("perl@5.26.2:", type=("build", "run"))
     depends_on("zlib@1.2.3:", type=("build", "link", "run"))
-    
+    depends_on("pigz", type=("build", "run"))
+
     def install(self, spec, prefix):
         cd("src")
         make()
