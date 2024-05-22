@@ -15,7 +15,7 @@ class Necat(Package):
     version("0.0.1", sha256="5ddd147b5be6b1fac2f6c10b18c9b587838f2304d2584087c4ed6f628eced06c", url="https://github.com/xiaochuanle/NECAT/archive/refs/tags/v0.0.1_update20200803.tar.gz")
     
     depends_on("perl@5.26.2:", type=("build", "run"))
-    depends_on("zlib", type=("build", "link", "run"))
+    depends_on("zlib@1.2.3:", type=("build", "link", "run"))
     
     def install(self, spec, prefix):
         cd("src")
