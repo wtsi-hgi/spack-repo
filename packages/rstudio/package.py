@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 import os
+import shutil
+import glob
 
 from spack.package import *
 
@@ -14,10 +16,14 @@ class Rstudio(CMakePackage):
     homepage = "www.rstudio.com/products/rstudio/"
     url = "https://github.com/rstudio/rstudio/archive/refs/tags/v1.4.1717.tar.gz"
 
+    version("2024.04.0", url="https://github.com/rstudio/rstudio/archive/refs/tags/v2024.04.0+735.tar.gz", sha256="15dfab3e794b24dbc80093b83bda87a77b7ab197faa8b09fcbad84fc68985960")
     version("2023.12.0", url="https://github.com/rstudio/rstudio/archive/refs/tags/v2023.12.0+369.tar.gz", sha256="6ee6acdd361b526fdc5fc922600cec0f04a7fe8304ae62e5a65d5fd4c55e824c")
     version("2022.12.0", url="https://github.com/rstudio/rstudio/archive/refs/tags/v2022.12.0+353.tar.gz", sha256="e4f3503e2ad4229301360f56fd5288e5c8e769c490073dae7fe40366237ecce0", preferred=True)
     version("1.4.1743", sha256="f046b2e91d4b27794d989e9bb2d7ad951b913ae86ed485364fc5b7fccba9c927")
     version("1.4.1717", sha256="3af234180fd7cef451aef40faac2c7b52860f14a322244c1c7aede029814d261")
+
+    resource(when="@2024.04.0+server", name="quarto", url="https://github.com/quarto-dev/quarto/archive/3bd070a1ffabd0b2dc80c67f5d9fa9a2d8bee896/quarto-3bd070a1ffabd0b2dc80c67f5d9fa9a2d8bee896.tar.gz", sha256="75935003a7fa920db3b3ec22a5b65d350fb962095857a2048a9b798591940603", destination="src/gwt/lib", placement="quarto")
+    resource(when="@2024.04.0+server", name="quarto-nm", url="https://src.fedoraproject.org/repo/pkgs/rstudio/panmirror-0.0.0-nm.tgz/sha512/a9c36a0713683c34b2f735c4b9832afe52769fac9bf4470ec7f2291fa62d07cd0964b54632cb5d008f037444856d69626d0ad3258c42b927e5b463b44021dd05/panmirror-0.0.0-nm.tgz", sha256="575617c7804921ff29c241a74354f70f730c5c45e3c13f26382fd2b4194af1c9", destination="src/gwt/lib/quarto", placement="node_modules")
 
     variant("notebook", default=False, description="Enable notebook support.")
     variant("server", default=False, description="Build the server.")
@@ -89,9 +95,10 @@ class Rstudio(CMakePackage):
 
     patch("0000-unbundle-dependencies-common.patch", sha256="5bfc248530f466fe590c4c57df5677bea81fa221e19f2808452c80bf0c1c6cb4", when="@2022.12.0")
     patch("0000-unbundle-dependencies-common-23.patch", sha256="5bfc248530f466fe590c4c57df5677bea81fa221e19f2808452c80bf0c1c6cb4", when="@2023.12.0")
+    patch("0000-unbundle-dependencies-common-24.patch", sha256="18f54d0630e169c3a12f096fc60e0e1b8bf88017f0ae6e06e99d6e0113aac204", when="@2024.04.0:")
     patch("0004-use-system-node.patch", sha256="464f8f99988a2fdb3c61917e60fcee8a07cbb73582e06650e3d7d17e9a2dd67f", when="@2022.12.0")
-    patch("0004-use-system-node-23.patch", sha256="eaf7dedf6e4fb351e894aecde19375af243e7aa347f4b9747b610ed3634c8d8d", when="@2023.12.0")
-    patch("0005-disable-quarto.patch", sha256="248b9ac70919f795a5ae4b639dd28b8936b597f19b0df3a356af8be860917f9b", when="@2023.12.0")
+    patch("0004-use-system-node-23.patch", sha256="eaf7dedf6e4fb351e894aecde19375af243e7aa347f4b9747b610ed3634c8d8d", when="@2023.12.0:")
+    patch("0005-disable-quarto.patch", sha256="248b9ac70919f795a5ae4b639dd28b8936b597f19b0df3a356af8be860917f9b", when="@2023.12.0:")
 
     patch("set.patch", when="@:2022.12.0")
     patch("const.patch", when="@:1.4.1743")
@@ -100,7 +107,8 @@ class Rstudio(CMakePackage):
     def cmake_args(self):
         args = [
             "-DRSTUDIO_TARGET=Server" if "+server" in self.spec else "-DRSTUDIO_TARGET=Desktop",
-            "DCMAKE_BUILD_TYPE=Release",
+            "-DRSTUDIO_SERVER=TRUE",
+            "-DCMAKE_BUILD_TYPE=Release",
             "-DRSTUDIO_PACKAGE_BUILD=Yes",
             "-DRSTUDIO_USE_SYSTEM_YAML_CPP=Yes",
             "-DRSTUDIO_USE_SYSTEM_BOOST=Yes",
@@ -120,11 +128,17 @@ class Rstudio(CMakePackage):
                 env.set("RSTUDIO_VERSION_PATCH", "0")
                 env.set("RSTUDIO_VERSION_SUFFIX", "+369")
 
-            if self.spec.satisfies("@2022.12.0"):
+            if self.spec.satisfies("@2023.12.0"):
                 env.set("RSTUDIO_VERSION_MAJOR", "2023")
                 env.set("RSTUDIO_VERSION_MINOR", "12")
                 env.set("RSTUDIO_VERSION_PATCH", "0")
                 env.set("RSTUDIO_VERSION_SUFFIX", "+353")
+
+            if self.spec.satisfies("@2024.04.0"):
+                env.set("RSTUDIO_VERSION_MAJOR", "2024")
+                env.set("RSTUDIO_VERSION_MINOR", "04")
+                env.set("RSTUDIO_VERSION_PATCH", "0")
+                env.set("RSTUDIO_VERSION_SUFFIX", "+735")
 
             env.set("RSTUDIO_RELEASE_NAME", "hgi")
 
@@ -198,8 +212,26 @@ class Rstudio(CMakePackage):
                 deps = Executable("./dependencies/common/install-panmirror")
                 deps()
                 npm("i", "--prefix","src/gwt/lib/quarto/", "--force")
+                
+            if self.spec.satisfies("@2024.04.0"):
+                with open("src/gwt/lib/quarto/package.json", "w") as f:
+                    f.write('{ "private": true, "workspaces": [ "apps/*", "packages/*" ] }')
 
+                filter_file("\"esbuild\": \"^0.16.7\"", "\"esbuild\": \"^0.16.7\",\"@esbuild/linux-x64\": \"^0.16.7\"", "src/gwt/lib/quarto/packages/build/package.json", string=True)
+                filter_file("\"typescript\": \"^4.5.2\"", "\"typescript\": \"^4.5.2\",\"wcwidth\": \"^1.0.1\",\"mermaid\":\"^9.1.7\"", "src/gwt/lib/quarto/packages/core/package.json", string=True)
+                filter_file("\"@types/markdown-it-attrs\": \"^4.1.0\"", "\"@types/markdown-it-attrs\": \"^4.1.0\",\"@types/wcwidth\": \"^1.0.0\"", "src/gwt/lib/quarto/packages/core/package.json", string=True)
 
+                os.symlink("../../node_modules", "src/gwt/lib/quarto/apps/panmirror/node_modules")
+
+                for dir in ["core-node", "editor-codemirror", "editor-server", "editor-ui", "eslint-config-custom-server", "ojs", "quarto-core", "ui-widgets"]:
+                    shutil.rmtree("src/gwt/lib/quarto/packages/" + dir)
+
+                for dirglob in ["jupyterlab", "lsp", "vscode*", "writer*"]:
+                    for dir in glob.glob("src/gwt/lib/quarto/apps/"+dirglob):
+                        shutil.rmtree(dir)
+
+                with working_dir("src/gwt/lib/quarto/"):
+                    Executable("yarn")("install")
 
         # two methods for pandoc
         # 1) replace install-pandoc:
