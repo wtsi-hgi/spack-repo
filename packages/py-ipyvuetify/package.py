@@ -1,0 +1,76 @@
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Spack Project Developers. See the top-level COPYRIGHT file for details.
+#
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)
+
+from spack.package import *
+
+
+class PyIpyvuetify(PythonPackage):
+	"""Jupyter widgets based on vuetify UI components"""
+	
+	homepage = "https://github.com/widgetti/ipyvuetify"
+	pypi = "ipyvuetify/ipyvuetify-3.0.0a2-py2.py3-none-any.whl" 
+
+	version("0.0.1a10", sha256="cb2f94a9fbe390eed226e7d6bdbce699f2ddc0d72cb2908214dd06297c1d6536")
+	version("0.0.1a201905222156", sha256="7089c9bc530fc435413d16cad55dc660db04944ca9e2136e1fab21f295e799be")
+	version("0.0.1a201905261658", sha256="28ffabb16b5efcd03cb49d80271dc4451cdfcc022e591168e93ed5750d114e48")
+	version("0.0.1a201906031610", sha256="886ba74d941342284aab6dd4622a32733bdb442539ae8384f76d415e8c512784")
+	version("0.0.1a201906111055", sha256="e6f8600b244707693aee5d2df13e48ab6cf34786ff924711bd1a735b1829954f")
+	version("0.0.1a201906211514", sha256="b83c7f628fc5c7dbbc770bbe37efe08936034624642f9d46f9fec6a43549802f")
+	version("0.0.1a3", sha256="af1f59292ee708a8aa6fd9d200007e803afdc63950b447386afee11f859952d8")
+	version("0.0.1a4", sha256="223657dcac68803e4b23b6383bfb0b9c3dc4245a02322e00b3382cb248e3a04d")
+	version("0.0.1a5", sha256="045c5b6122e26dfd9274cd481dedb3ea0b91552e3fa2023e52dc232e272f6bb9")
+	version("0.0.1a6", sha256="13abc7a7dc5c614dc8e1ac1ff95e93f868ea9391260d849a316546a72308347c")
+	version("0.0.1a7", sha256="7d2f9af1f0547015232d3c96a2f14120ecbec98a0d1d1a67da1416b0cd93bab4")
+	version("0.0.1a8", sha256="868705e1e8cee1b3eac7f58ee75a5131efa760120bfbbd801cabab7d3a065148")
+	version("0.0.1a9", sha256="77578d1cdd02c40be5f814465bbaabcb86d31a4698b2919974da8bb03afa3964")
+	version("0.1.0", sha256="a36ec8767add5d4f5022c090954af24c69cb5c7682e26fb27393a7b868465ee3")
+	version("0.1.1", sha256="6ee1200710ebca68bb46e1b32cc669c8c555369326e07900681a487062bc35bd")
+	version("0.1.10", sha256="1aca6a18bd743f19d5855c2da31425df51ecaea3c329780524a0ac97bad0093f")
+	version("0.1.11", sha256="4542f8fb52323fded0538c2e392803d37fc8c0e4805f7c92e12ea63341348f4c")
+	version("0.1.2", sha256="23997e24c8997c7e67a781dcd4554eabef176af190d68b76237a0ad0c70e26d6")
+	version("0.1.3", sha256="ece48f57f8ead8ca5dde2f53528d843f557ab2b5d18351636623e662b0d387e0")
+	version("0.1.4", sha256="696395cf73b826c44f73201b196d69813b2dcebc12709faf61166b3ecfbf0cd8")
+	version("0.1.5", sha256="a5e529ffabeceb5afacdc8e8a6e824c3d7b72a86dd41fc47ae5f970c73590e2a")
+	version("0.1.6", sha256="1903a848f9a1b4b8c915a588b4864cc40d6e8324d6cb54295321f55176dcada7")
+	version("0.1.7", sha256="3fcea2e4d72d4e20faa41cfe3d00e4f920bf7054d4709c0e1a9bc9a15621d138")
+	version("0.1.8", sha256="80c24c53c441a385bccca568f0abe51dade881d14306b4f0775cf6b83b9fc53e")
+	version("0.1.9", sha256="5a19f6482f3f2f48eefac628cb4f5bcdeef4448905e78840dafa08290709aeb4")
+	version("1.0.0", sha256="1407e6175978647fcf6a8cf0521c01548e524ecf89fd12b4f07d75e3c6daea73")
+	version("1.0.1", sha256="818e8674911ce4292724873d65f540c838a9681f6910cb9709bb6f93020e55a3")
+	version("1.0.2", sha256="fb800cf0680b5a527ce40e9307698db6b1e3dbe78ec871e3329c3e5f5a908f6f")
+	version("1.0.3", sha256="70bc7db80f280ef964ba36af9d927c2f82c6b7cb99902797c45efe220d9acebc")
+	version("1.0.4", sha256="cd97f9b7b790cefbf79962401d77941d14c6ed17813f9a1ff2f444851e516fbe")
+	version("1.1.0", sha256="bcf3f5cac395d8806477782691bd1299354d02bbf07645019a1a5096b1987189")
+	version("1.1.1", sha256="2e23701515ed1714d8d734eb94ed5b84d32fd96938d75d2bc8ef1396b3807e61")
+	version("1.2.0", sha256="d18a23ffd7d0e8f18d8e1b18d99db41d139e5eb6223a609383a8464875aabb60")
+	version("1.2.1", sha256="8c951224e2eb6db5949842e24606d5212ca1bea5fa9f12b1b9f5907f3634d5ca")
+	version("1.2.2", sha256="88bb3bcf7a4e734a0567853818bf7e223e10eee5df3fa3fb09492dd866d3e36d")
+	version("1.3.0", sha256="703f3d0d01c7891571b7861b1dd411bc3f8a0b55a135a05b57639d00b403d285")
+	version("1.4.0", sha256="663ad97a30cd449117639e4af37d535d7383b2014b88338d12392ac7f62bdb2b")
+	version("1.4.1", sha256="da5cff6904fb6cf3724e14efb985381a27bf654d39badf54908bbcb8d33e6ecf", expand=False, url="https://files.pythonhosted.org/packages/5a/40/fc098faf49a59bf5eb827d4e6dd326f4836e9e557d2f0d0420d6f5dd01fa/ipyvuetify-1.4.1-py2.py3-none-any.whl")
+	version("1.5.0", sha256="67f14279749ba5f48e326558231cbf9834c369a63341995dfac06fdce0e0e864", expand=False, url="https://files.pythonhosted.org/packages/ff/75/af4f3165c53f137825df2433679c9d75d81388b9a0f2cdac2d0f17474abb/ipyvuetify-1.5.0-py2.py3-none-any.whl")
+	version("1.5.1", sha256="bd7fdbbaec49fba7548bb2d984cb9b0245f27e7cc02090c776b048b85355f168", expand=False, url="https://files.pythonhosted.org/packages/e3/a0/9eaa1a2cf9952c86c675dd1a43d033d8218f7b5af07c1ad6a4999fe79971/ipyvuetify-1.5.1-py2.py3-none-any.whl")
+	version("1.6.0", sha256="7823aaad40c20330791eca844957aab4b1727c4917deeb6db30b9f047aa9e8d3")
+	version("1.6.1", sha256="46b13985197e800dcbeee98197b1d68eae0b814ced6296842c618e94408c1452", expand=False, url="https://files.pythonhosted.org/packages/b9/c9/0e9bf1fc48af267d92576281515ab45054928f92ac9c7755012b03d5cb90/ipyvuetify-1.6.1-py2.py3-none-any.whl")
+	version("1.6.2", sha256="12c3a9b8217bbac33c32a3af30c37d6534992dbb2d1fd25fa536abf1f8376503", expand=False, url="https://files.pythonhosted.org/packages/c2/d8/48b519191c10ceaa9a072b7d66c29a15fc0cfe9d83a3a151e46df5dc35b3/ipyvuetify-1.6.2-py2.py3-none-any.whl")
+	version("1.7.0", sha256="f07bbb779eb756b5cf91fbae79cc3f3775dd9007a5d724557388b8af36b61ee9", expand=False, url="https://files.pythonhosted.org/packages/b0/28/96ff9bba94c234f33fbdb5e34f902e67e3ad8400fe43ae8aad7c93eaf355/ipyvuetify-1.7.0-py2.py3-none-any.whl")
+	version("1.8.0", sha256="8ee77d9aad876ba2e1d3796909e0f405311dd24a6e5f5e14cf35164a8059e502", expand=False, url="https://files.pythonhosted.org/packages/63/22/4dd61de7f9825b6244aff35d2831b9189799a084fbdee6f4e0b6a99e58bf/ipyvuetify-1.8.0-py2.py3-none-any.whl")
+	version("1.8.1", sha256="1bbe9258243557e3b17ddab2c474036429f01675dec1d9ade479468e25587feb", expand=False, url="https://files.pythonhosted.org/packages/20/59/a62d9655abe97f443299c76f280658169836df80b0782a446c961ae9c69c/ipyvuetify-1.8.1-py2.py3-none-any.whl")
+	version("1.8.10", sha256="11bdfe9490b4533a91b141c40763bea4e73d71c764e8d1aa9969b5a348a886b5", expand=False, url="https://files.pythonhosted.org/packages/cc/b7/fe1e14d11f15d36c00934434d04a088c3b313391ed1b00999260f961c74a/ipyvuetify-1.8.10-py2.py3-none-any.whl")
+	version("1.8.2", sha256="ea8d9ee1c2e98d6ac791f0eb11c5cabc09a3996dd3478bb3d6dbc5aacc7b9b6c", expand=False, url="https://files.pythonhosted.org/packages/6a/87/64cdfdb5ff5f67e945a308b9386b6f6375b9fcc84c1ffd4f859fbfd269c1/ipyvuetify-1.8.2-1-py2.py3-none-any.whl")
+	version("1.8.3", sha256="4d9afae0a0be919fda588331d00483cee47687011da9d0e40fbc84684546dcee", expand=False, url="https://files.pythonhosted.org/packages/03/b4/43f14ff9a1cc7183e68932c94440476f8735963ccff112a0936a204d9351/ipyvuetify-1.8.3-py2.py3-none-any.whl")
+	version("1.8.4", sha256="b5411dd8d8c7e60e300e619d3faea03916bf0d2b9e0c31bb82b29b62f0a86716", expand=False, url="https://files.pythonhosted.org/packages/3d/56/6b9ecb2d151f6a3bdf9292349568c9e6cb92427bf86f1881c63582eea762/ipyvuetify-1.8.4-py2.py3-none-any.whl")
+	version("1.8.5", sha256="229adecc783275fe226393bc0e2b9e253e589e0f48d5a0e86f8084da75aee12e", expand=False, url="https://files.pythonhosted.org/packages/c7/bf/72a6f9d530c611edb7c6e5d5412b69744bb66cb5d627fd04d7a69464f25c/ipyvuetify-1.8.5-py2.py3-none-any.whl")
+	version("1.9.0", sha256="a190f62a10e89e92a0e25641c84c739e31f66680858d987b8a180b24e2278dec", expand=False, url="https://files.pythonhosted.org/packages/d9/15/b3b6560dd4984660a75aff9cdf3e7d574b3b3fecb81fb6affa138d6c760b/ipyvuetify-1.9.0-py2.py3-none-any.whl")
+	version("1.9.1", sha256="e084b0dbaddd50e054fda267a5dd5e4324e3239859e57971fac128a14c9f1cf0", expand=False, url="https://files.pythonhosted.org/packages/77/24/df7e3e9acf4f3f7329ed3173b84fe606a6319729aa7d048fac1f267cffed/ipyvuetify-1.9.1-py2.py3-none-any.whl")
+	version("1.9.2", sha256="6dd4e6c291fae1b2ccc2eb01278ec195cf81f8aebc5fba98a4d5fd3cdfdbc74b", expand=False, url="https://files.pythonhosted.org/packages/35/76/b7dd9a1591995eb322266010da4429ddf397384a241e03d7191bcfb8045d/ipyvuetify-1.9.2-py2.py3-none-any.whl")
+	version("1.9.3", sha256="30163bf37d0bd98ed7da9f04571e1e9b5462b3149010d7b30e463ff1e1afaa43", expand=False, url="https://files.pythonhosted.org/packages/69/3f/37743f323106f22b8a2e699fbf41d059c45609fb938eeef2beb702400731/ipyvuetify-1.9.3-py2.py3-none-any.whl")
+	version("1.9.4", sha256="e61f19b67c6c26ef1c815910bcc555e160ca5b792d46094ad621fa886c1aaed8", expand=False, url="https://files.pythonhosted.org/packages/71/49/b172872b119ddf7f9027b977bb4ddcced31f5e901f055b22c8087fc4160b/ipyvuetify-1.9.4-py2.py3-none-any.whl")
+	version("3.0.0.dev0", sha256="4675030cf267bc7510291294ef30abdad4f3b657fa2ee6a5ad85c53477b695e9", expand=False, url="https://files.pythonhosted.org/packages/fb/37/446bac5b9643df8e1a266a04f8814b9f6b530d849e48216db4f1f8b47476/ipyvuetify-3.0.0.dev0-py2.py3-none-any.whl")
+	version("3.0.0a1", sha256="36041beeaec26e4598d23ea4075223c8bf9cc6f4afb56134299513e41fc79b3b", expand=False, url="https://files.pythonhosted.org/packages/6e/6b/47724b8782a2299553856af26a2e6e384ce583a461462423bffb3492f19b/ipyvuetify-3.0.0a1-py2.py3-none-any.whl")
+	version("3.0.0a2", sha256="387066376aa07b822a5e58da76b102986017d1559b57af80f8efb1d03f98b51b", expand=False, url="https://files.pythonhosted.org/packages/fe/d0/ee2e29ec2d3b5ef20713e9e7c1b1c3732d9f5c58451342602fbf3fb79f78/ipyvuetify-3.0.0a2-py2.py3-none-any.whl")
+
+	depends_on("python@3.6:", type=("build", "run"))
+	depends_on("py-ipyvue", type=("build", "run"))
