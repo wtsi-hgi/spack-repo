@@ -23,6 +23,7 @@ class PyScfea(PythonPackage):
     depends_on("py-umap-learn@0.5.1:", type=("build", "run"))
     depends_on("py-torchvision", type=("build", "run"))
     depends_on("py-graphtools", type="run")
+    depends_on("py-deprecated", type="run")
 
     installDir = "/usr/local/scfeax/"
 
