@@ -37,3 +37,4 @@ class RRcppeigen(RPackage):
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("r-matrix", type=("build", "run"), when="@:0.3.3.9.3")

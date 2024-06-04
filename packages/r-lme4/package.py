@@ -37,4 +37,5 @@ class RLme4(RPackage):
 	depends_on("r-minqa@1.1.15:", type=("build", "run"))
 	depends_on("r-nloptr@1.0.4:", type=("build", "run"))
 	depends_on("r-rcpp@0.10.5:", type=("build", "run"))
-	depends_on("r-rcppeigen@0.3.3.9.4:", type=("build", "run"))
+	depends_on("r-rcppeigen@0.3.3.9.4:", type=("build", "run"), when="@1.1-35:")
+	depends_on("r-rcppeigen@:0.3.3.9.3", type=("build", "run"), when="@:1.1-35")
