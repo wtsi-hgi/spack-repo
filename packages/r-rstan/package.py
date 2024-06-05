@@ -47,7 +47,8 @@ class RRstan(RPackage):
 	depends_on("r-pkgbuild@1.2:", type=("build", "run"))
 	depends_on("r-quickjsr", type=("build", "run"))
 	depends_on("r-ggplot2@3.3.5:", type=("build", "run"))
-	depends_on("r-rcppeigen@0.3.4:", type=("build", "run"))
+	depends_on("r-rcppeigen", type=("build", "run"))
+	depends_on("r-rcppeigen@0.3.4:", type=("build", "run"), when="@2.32:")
 	depends_on("r-bh@1.75.0.0:", type=("build", "run"))
 	depends_on("pandoc", type=("build", "link", "run"))
 
