@@ -24,6 +24,10 @@ class PyScfea(PythonPackage):
     depends_on("py-torchvision", type=("build", "run"))
     depends_on("py-graphtools", type="run")
     depends_on("py-deprecated", type="run")
+    depends_on("py-future", type="run")
+    depends_on("py-scprep", type="run")
+    depends_on("py-pygsp", type="run")
+    depends_on("py-tasklogger", type="run")
 
     installDir = "/usr/local/scfeax/"
 
