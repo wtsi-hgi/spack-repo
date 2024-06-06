@@ -59,6 +59,11 @@ class Htslib(AutotoolsPackage):
     def libs(self):
         return find_libraries("libhts", root=self.prefix, recursive=True)
 
+    # xz has the alias liblzma which is required in package config
+    def setup_run_environment(self, env):
+        if self.spec.satisfies("@1.4:"):
+            env.prepend_path("PKG_CONFIG_PATH", join_path(self.spec["xz"].prefix, "lib", "pkgconfig"))
+
     # v1.2 uses the automagically assembled tarball from .../archive/...
     # everything else uses the tarballs uploaded to the release
     def url_for_version(self, version):
