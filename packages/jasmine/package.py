@@ -39,9 +39,6 @@ class Jasmine(Package):
 
     version("2.0.0", sha256="7a93e2b3932ed4701ae437f69a9c82b00b6b0718998ba2b137e0b06df0272e1c", expand=False)
 
-    # FIXME: Add dependencies if required.
-    # depends_on("foo")
-
     def install(self, spec, prefix):
         mkdir(prefix.bin)
         install(self.stage.source_path + "/jasmine", prefix.bin.jasmine)
