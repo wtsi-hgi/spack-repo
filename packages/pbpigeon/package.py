@@ -11,11 +11,11 @@
 # next to all the things you'll want to change. Once you've handled
 # them, you can save this file and test your package like this:
 #
-#     spack install isoseq
+#     spack install pbpigeon
 #
 # You can edit this file again by typing:
 #
-#     spack edit isoseq
+#     spack edit pbpigeon
 #
 # See the Spack documentation for more information on packaging.
 # ----------------------------------------------------------------------------
@@ -23,25 +23,23 @@
 from spack.package import *
 
 
-class Isoseq(Package):
+class Pbpigeon(Package):
     """
-    IsoSeq contains the newest tools to identify transcripts
-    in PacBio single-molecule sequencing data.
+    Pigeon is a PacBio Transcript Toolkit that contains tools to classify and filter full-length transcript
+    isoforms into categories against a reference annotation.
+
+    Pigeon is based off of SQANTI3 and the output is compatible with downstream analysis with Seurat.
     """
 
-    homepage = "https://isoseq.how"
-    url = "https://github.com/PacificBiosciences/IsoSeq/releases/download/v4.0.0/isoseq"
+    homepage = "https://pigeon.how/classification/pigeon.html"
+    url = "https://github.com/PacificBiosciences/pigeon/releases/download/v1.2.0/pigeon"
 
-    license("BSD-3-Clause-Clear")
+    license("BSD-3-Clause-Clear license")
 
-    version(
-        "4.0.0",
-        sha256="5766001507cf2a351b260cf38b717351dd676a7c87eb7c285c3c43a4a458f4b2",
-        expand=False,
-    )
+    version("1.2.0", sha256="0202818fed1247d21b79bf58811402f7af2481b3731ebc1094b161cf03c0e009", expand=False)
 
     def install(self, spec, prefix):
         mkdir(prefix.bin)
-        install(self.stage.source_path + "/isoseq", prefix.bin.isoseq)
+        install(self.stage.source_path + "/pigeon", prefix.bin.pbpigeon)
         chmod = which("chmod")
-        chmod("+x", prefix.bin.isoseq)
+        chmod("+x", prefix.bin.pbpigeon)
