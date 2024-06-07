@@ -11,11 +11,11 @@
 # next to all the things you'll want to change. Once you've handled
 # them, you can save this file and test your package like this:
 #
-#     spack install pbskera
+#     spack install pbsv
 #
 # You can edit this file again by typing:
 #
-#     spack edit pbskera
+#     spack edit pbsv
 #
 # See the Spack documentation for more information on packaging.
 # ----------------------------------------------------------------------------
@@ -23,23 +23,22 @@
 from spack.package import *
 
 
-class Pbskera(Package):
+class Pbsv(Package):
     """
-    Skera splits MAS-Seq PacBio HiFi reads at adapter positions generating segmented reads (S-reads).
-    For each input/parent read (e.g. HiFi) skera will create multiple bam records, one for each S-read.
-    A parent read can contain many S-reads. Skera has two major functions, split and undo.
-    Skera undo reconstitutes the original parent read from input S-reads.
+    pbsv is a suite of tools to call and analyze structural variants in diploid genomes from
+    PacBio single molecule real-time sequencing (SMRT) reads. The tools power the Structural
+    Variant Calling analysis workflow in PacBio's SMRT Link GUI.
     """
 
-    homepage = "http://skera.how"
-    url = "https://github.com/PacificBiosciences/skera/releases/download/v1.2.0/skera"
+    homepage = "https://github.com/PacificBiosciences/pbsv"
+    url = "https://github.com/PacificBiosciences/pbsv/releases/download/v2.9.0/pbsv"
 
-    license("BSD-3-Clause-Clear license")
+    license("BSD-3-Clause-Clear")
 
-    version("1.2.0", sha256="0385ab4d67377cd6ed596eccd5df973c03d78561db639d84f9ff557332f745be", expand=False)
+    version("2.9.0", sha256="3daf41d28f5d0063f68c49ce790ab17b648f1d2459122f5c13704598342db97c", expand=False)
 
     def install(self, spec, prefix):
         mkdir(prefix.bin)
-        install(self.stage.source_path + "/skera", prefix.bin.pbskera)
+        install(self.stage.source_path + "/pbsv", prefix.bin.pbsv)
         chmod = which("chmod")
-        chmod("+x", prefix.bin.pbskera)
+        chmod("+x", prefix.bin.pbsv)
