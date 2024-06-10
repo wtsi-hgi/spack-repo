@@ -51,6 +51,3 @@ class Pbmm2(MesonPackage):
 
     def meson_args(self):
         return ["-Dtests=false"]
-
-    # def setup_build_environment(self, env):
-    #     env.prepend_path("PKG_CONFIG_PATH", join_path(self.spec["minimap2"].prefix, "lib", "pkgconfig"))
