@@ -11,11 +11,11 @@
 # next to all the things you'll want to change. Once you've handled
 # them, you can save this file and test your package like this:
 #
-#     spack install py-pbcommand
+#     spack install py-pbcore
 #
 # You can edit this file again by typing:
 #
-#     spack edit py-pbcommand
+#     spack edit py-pbcore
 #
 # See the Spack documentation for more information on packaging.
 # ----------------------------------------------------------------------------
@@ -23,25 +23,22 @@
 from spack.package import *
 
 
-class PyPbcommand(PythonPackage):
-    """PacBio library for common utils, models, and tools to interface with pbsmrtpipe workflow engine.
-
-    1. Common Models and Schemas
-    2. Service client layer to the SMRTLink services
-    3. Tool Contract and Resolved Tool Contract interface for integrating with pbsmrtpipe and SMRT Link
+class PyPbcore(PythonPackage):
+    """
+    The pbcore package provides Python modules for processing PacBio data files and building PacBio bioinformatics
+    applications.
     """
 
-    homepage = "https://github.com/PacificBiosciences/pbcommand"
+    homepage = "http://pacificbiosciences.github.io/pbcore/"
 
-    url = "https://github.com/PacificBiosciences/pbcommand/archive/refs/tags/2.1.1.tar.gz"
+    url = "https://github.com/PacificBiosciences/pbcore/archive/refs/tags/2.1.2.tar.gz"
 
     license("BSD-3-Clause-Clear license")
 
-    version("2.1.1", sha256="bc6b60c4b08958721eae023afea2b4f9a2ab38db28fd2278e443795825e71014")
+    version("2.1.2", sha256="aa156d62b97e3b0e5173487f0c9a95ed75e24e377b65e88929969d3ee0551b29")
 
     depends_on("python@3.7:", type=("build", "run"))
-    depends_on("py-iso8601", type=("build", "run"))
-    depends_on("py-avro", type=("build", "run"))
-    depends_on("py-pytz", type=("build", "run"))
-    depends_on("py-requests", type=("build", "run"))
+    depends_on("py-biopython@1.74:", type=("build", "run"))
+    depends_on("py-numpy@1.17:1.22.4", type=("build", "run"))
+    depends_on("py-pysam@0.15.1:", type=("build", "run"))
     depends_on("py-setuptools", type=("build", "run"))
