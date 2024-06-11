@@ -30,6 +30,7 @@ class PyPyarrow(PythonPackage, CudaPackage):
     variant("parquet", default=False, description="Build with Parquet support")
     variant("orc", default=False, description="Build with orc support")
     variant("dataset", default=False, description="Build with Dataset support")
+    variant("snappy", default=True, description="Build support for Snappy compression")
 
     conflicts("~parquet", when="+dataset")
 
@@ -68,6 +69,7 @@ class PyPyarrow(PythonPackage, CudaPackage):
         depends_on("arrow+parquet+python" + v, when="+parquet" + v)
         depends_on("arrow+cuda" + v, when="+cuda" + v)
         depends_on("arrow+orc" + v, when="+orc" + v)
+        depends_on("arrow+snappy" + v, when=v)
 
     patch("for_aarch64.patch", when="@0 target=aarch64:")
 
