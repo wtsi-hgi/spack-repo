@@ -26,6 +26,11 @@ class RustBootstrap(Package):
                 "x86_64": "9d589d2036b503cc45ecc94992d616fb3deec074deb36cacc2f5c212408f7399",
             },
         },
+        "1.75.0": {
+            "linux": {
+                "x86_64": "473978b6f8ff216389f9e89315211c6b683cf95a966196e7914b46e8cf0d74f6",
+            },
+        },
         "1.73.0": {
             "linux": {
                 "x86_64": "aa4cf0b7e66a9f5b7c623d4b340bb1ac2864a5f2c2b981f39f796245dc84f2cb",
