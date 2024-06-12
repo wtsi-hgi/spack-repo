@@ -18,7 +18,7 @@ class RSalso(RPackage):
     version("0.3.35", md5="a7940b7411cf1f357927ba0c1c12a4e7")
 
     depends_on("r@4.2:", type=("build", "run"))
-    depends_on("rust@:1.75", type=("build", "link", "run"))
+    depends_on("rust", type=("build", "link", "run"))
 
     def patch(self):
         filter_file(

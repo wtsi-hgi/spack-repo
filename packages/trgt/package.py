@@ -38,7 +38,7 @@ class Trgt(Package):
 
     version("1.0.0", sha256="3e36014d5e448fbfde9e45b2971b6dc01ac889c6d409cb20a8f7a05d26bb3b3c")
 
-    depends_on("rust@1.74:", type="build")
+    depends_on("rust", type="build")
 
     def install(self, spec, prefix):
         cargo = which("cargo")
