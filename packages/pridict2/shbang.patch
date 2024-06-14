@@ -1,0 +1,43 @@
+diff --git a/pridict2_pegRNA_design.py b/pridict2_pegRNA_design.py
+index 4e2772b..6e8f9b7 100644
+--- a/pridict2_pegRNA_design.py
++++ b/pridict2_pegRNA_design.py
+@@ -1,3 +1,4 @@
++#!/usr/bin/python
+ """
+ 
+ PRIDICT2.0 pegRNA prediction script including calculation of features.
+@@ -975,6 +976,13 @@ def create_q_process(dfrow, models_list, queue, pindx, pred_dir, nicking, ngspri
+ 
+ if __name__ == "__main__":
+     parser = argparse.ArgumentParser(description="Running PRIDICT to design and predict pegRNAs.")
++    parser.add_argument("--batchfile", type=str, default='batchfile_template.csv', help="set filename of batchfile located in same folder as this python script; default: batchfile_template.csv")
++    parser.add_argument("--windowsize_max", type=int, default=25, help="set maximum distance of edit to PAM; longer distance leads to longer prediction time; default: 25")
++    parser.add_argument("--disable_deepcas9_trigger", action='store_false', help="Define whether DeepSpCas9 prediction should be performed for nicking guides; default True. Changing value to False will accelerate prediction by adding dummy prediction values to nicking guides. Does not influence predictions performed by PRIDICT model (only affects nicking guides)")
++    parser.add_argument("--PBSlengthrange_min", type=int, default=7, help="set minimum PBS lengths which should be predicted; more PBS lengths leads to longer prediction time; default: 7")
++    parser.add_argument("--PBSlengthrange_max", type=int, default=16, help="set maximum PBS lengths which should be predicted; more PBS lengths leads to longer prediction time; default: 16")
++    parser.add_argument("--RToverhanglengthrange_min", type=int, default=3, help="set minimum RToverhang length which should be predicted; more RToverhang lengths leads to longer prediction time; default: 3")
++    parser.add_argument("--RToverhanglengthrange_max", type=int, default=19, help="set maximum RToverhang length which should be predicted; more RToverhang lengths leads to longer prediction time; default: 19")
+ 
+     subparser = parser.add_subparsers(dest='command')
+     manual_m = subparser.add_parser('manual')
+@@ -996,6 +1004,12 @@ if __name__ == "__main__":
+     
+ 
+     args = parser.parse_args()
++
++    batchfile = args.batchfile
++    windowsize_max = args.windowsize_max
++    deepcas9_trigger = args.disable_deepcas9_trigger
++    PBSlengthrang = range(args.PBSlengthrange_min, args.PBSlengthrange_max)
++    RToverhanglengthrange = range(args.RToverhanglengthrange_min, args.RToverhanglengthrange_max)
+ 
+     if args.command == 'manual':
+         print('Running in manual mode:')
+@@ -1066,4 +1080,4 @@ if __name__ == "__main__":
+ 
+         parallel_batch_analysis(inp_dir, inp_fname, out_dir, out_fname, num_proc_arg, nicking, ngsprimer, run_ids=run_ids)
+     else:
+-        print('Please specify how to run PRIDICT2.0 ("manual" or "batch") as argument after the script name.')
+\ No newline at end of file
++        print('Please specify how to run PRIDICT2.0 ("manual" or "batch") as argument after the script name.')
