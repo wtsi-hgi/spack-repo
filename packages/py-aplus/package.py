@@ -7,8 +7,10 @@ from spack.package import *
 
 
 class PyAplus(PythonPackage):
-	""""""
-	
-	pypi = "aplus/aplus-0.11.0.tar.gz" 
+    """"""
 
-	version("0.11.0", sha256="4f57025413bd9611fb54782b8f46946ea874ae7bb6dd876c0ec45c6a8d60f6e7")
+    pypi = "aplus/aplus-0.11.0.tar.gz"
+
+    version("0.11.0", sha256="4f57025413bd9611fb54782b8f46946ea874ae7bb6dd876c0ec45c6a8d60f6e7")
+
+    depends_on("py-setuptools", type="build")
