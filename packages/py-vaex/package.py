@@ -7,74 +7,156 @@ from spack.package import *
 
 
 class PyVaex(PythonPackage):
-	"""Out-of-Core DataFrames to visualize and explore big tabular datasets"""
-	
-	homepage = "https://www.github.com/vaexio/vaex"
-	pypi = "vaex/vaex-4.9.2-py3-none-any.whl" 
+    """Out-of-Core DataFrames to visualize and explore big tabular datasets"""
 
-	version("0.3.10", sha256="ceed76bca850fbb17ea73c021c7b8291eeeca48600912029db74e410d18a1236")
-	version("0.3.6", sha256="24225aef3f78934a580d623007cfd862fa2309f4e1cfc153b6668b201f5ef9ab")
-	version("1.0.0", sha256="f9f146d947d5d6a5026304daf95588f3cf8235577037e8bbe15994b6d3940fc1")
-	version("1.0.0b1", sha256="22260251748a0448ceeca114ca2309592c0839a2e7172433cff5e1cc08f21477")
-	version("1.0.0b2", sha256="25e46cad930a06786de5f4d6a877c91280051f1d52ad9e2727863057f7387932")
-	version("1.0.0b3", sha256="30e16fd11aa363ae45c014b6e9d25dafa9f2206fbbcd260cd8737e8308ead5ba", expand=False, url="https://files.pythonhosted.org/packages/c4/d9/bac8df3a9956db79fa766e95dcc304d62054590467060296a7f14b245584/vaex-1.0.0b3-cp35-cp35m-manylinux1_x86_64.whl")
-	version("1.0.0b4", sha256="5ec26972530e7b6d87838d91bb8dd165a8b57cdb9dbf7b592460dd25416039ff", expand=False, url="https://files.pythonhosted.org/packages/75/a8/47ec0b680563b265102bf5873ecbae6ae515df345ce19959ceef7d473c1e/vaex-1.0.0b4-cp35-cp35m-manylinux1_x86_64.whl")
-	version("1.0.0b5", sha256="9074af295e760747c1861331fef9481169b34a1d4a5b089f727fd75f3a2d1bab")
-	version("1.0.0b6", sha256="d153add2ea9950c6fc8aae93250311b9e2fc41445b25b9b15f745d6c31ad35a0")
-	version("1.0.0b7", sha256="81e5d953101c35623c5202e50135e303a8fbd7ce419942b4c1c38c8d3fb8c9ba")
-	version("1.0.0b8", sha256="5fdac6676b6443ce1e41f02c015e46ec4c58d9780d51294d742cccfa40b81f5c")
-	version("1.0.1", sha256="aefe6c38290578ce3250b94e103d5f0fe4c6f5575aca8b59c28b1097095ff56c")
-	version("2.0.0", sha256="b797e7a82954b5258d71dafe8541dca5206f0d87b10dac1580b42bcc9cd8b1c9")
-	version("2.0.1", sha256="83ab0c95c2c98455b3031a4d964390eec2f2df4d13ebec311400497962261b9f")
-	version("2.0.2", sha256="97e8f03cc24f707e3f1090a42ee778f7f8972065abb825198810aec7ebba293a")
-	version("2.1.0", sha256="1c110054e195fea2fdc85bed985abfc9e499d86401f082e3388453cda907d681")
-	version("2.2.0", sha256="b5e75dfc62d07c2662fd94c2be6912f1889a7330f03709990801d9b06929c161")
-	version("2.2.1", sha256="f0ae43078209eae20dc9d4342dfce2c39625c68037ef1270ed32e3566c8d7cb9")
-	version("2.3.0", sha256="2fd74d62cad4e809b505a675c478bce971c2585c0c454dcc43c4a2fce6b2c26c")
-	version("2.4.0", sha256="9d7679de5591012be524fb158f4c92570353f311c4754d9d7dc13dd249432cfd")
-	version("2.5.0", sha256="7992cbd6241f60b7f984ad20d672f5770d50b1700946878f09e28e96bb086214")
-	version("2.6.0", sha256="7ce491f7fcfe37d407ee04f1de74d14edbd02175ea0b6270d1c370c1e0cebbb3")
-	version("2.6.1", sha256="bac55c0c800ac7277fcfed99561589c5860f186338da43993b4cea587fca7d65")
-	version("3.0.0", sha256="34f63158c6345ce72c380137f98ad80f1c7ee0efdb2ec66d7c529c477b8ee2fc", expand=False, url="https://files.pythonhosted.org/packages/9b/e1/999226697c7bc77d447ea0f01c7684f24c2c83a825b8ec12d496de0ed7ea/vaex-3.0.0-py3-none-any.whl")
-	version("4.0.0", sha256="e2d12fca29c96bfde9d6e634cb1ee41e53a84e48275997741ba561a230cf7b62", expand=False, url="https://files.pythonhosted.org/packages/4f/01/836c19b2e6b5bea6ebbefa75b414780904b9bff0cad2caddda923c16a744/vaex-4.0.0-py3-none-any.whl")
-	version("4.0.0a1", sha256="666f28dd5660572b2cbe8aac43415d5ce70b7f268ea4ac1a7935cc2af8332d90", expand=False, url="https://files.pythonhosted.org/packages/3a/7c/19b306fcf9b6395f3d1bb7d085c0f71a06e70e69d8c25e13664b228ec91e/vaex-4.0.0a1-py3-none-any.whl")
-	version("4.0.0a10", sha256="b31aa0f8cf901b1d61fcd8064f2f55634c3420e1954cab8488c4b9643a56cc19", expand=False, url="https://files.pythonhosted.org/packages/05/d5/eba938e2b1712f0e87b4511a232846ea8f8798c7b1a44843027d2806eb5c/vaex-4.0.0a10-py3-none-any.whl")
-	version("4.0.0a11", sha256="f57023a5fe38a51ada5bc88f23dbc6e6067e9e374553d24d1d6e576eeba4ad50", expand=False, url="https://files.pythonhosted.org/packages/bf/e3/0eabe7fd8f6071c2f08b875a52968694c96c3ea8aec2d5f942dd831c6f19/vaex-4.0.0a11-py3-none-any.whl")
-	version("4.0.0a12", sha256="f25c7147e66bdb6e01dde815d88985cbe2050ac252f1986b3551ff1f57388345", expand=False, url="https://files.pythonhosted.org/packages/58/86/efdbfcf72a2c832fb1fe021f2e4ffb181ff70f303a64a8bba2a103f10456/vaex-4.0.0a12-py3-none-any.whl")
-	version("4.0.0a13", sha256="fd0ac80ed0e478ff0149bcae3ed11b64b8a31fc11a85805ac8e8d4c8629d6be3", expand=False, url="https://files.pythonhosted.org/packages/8e/bd/25393fe1627c0caecbe957f178769ed5f4acef79e575cab2f2ce95efd83b/vaex-4.0.0a13-py3-none-any.whl")
-	version("4.0.0a2", sha256="6ef99675f1333dd9a337b965e6e3e28e4b13d5ab44eba922e1ba59cb1ed9cd49", expand=False, url="https://files.pythonhosted.org/packages/cd/50/b16f063800fb46723a544cf3e2e19f08ea99621280e41976c81d95e4b195/vaex-4.0.0a2-py3-none-any.whl")
-	version("4.0.0a3", sha256="d9ff444a5d44dbcd3af1081bc4970c9c3aafc0753aa4e44ac0ca1568995e1613", expand=False, url="https://files.pythonhosted.org/packages/20/a1/11968a6ae7febacb832e43a80bc0626b1d3b147c6dde39b131f3916dcebb/vaex-4.0.0a3-py3-none-any.whl")
-	version("4.0.0a4", sha256="bdaa6e9e66ea6776887dcd1b257a4a17609161a946bcc5a4048005060a3b4738", expand=False, url="https://files.pythonhosted.org/packages/ba/a5/48e28334eec02718a9f6dec10ea0a538606754254bafb6c800de5425f686/vaex-4.0.0a4-py3-none-any.whl")
-	version("4.0.0a5", sha256="0e15fc605fd0ebbeb5a0fb5e3367baab94aee8337c025ef141509a660dc47e94", expand=False, url="https://files.pythonhosted.org/packages/10/4f/36780911e02be646c9acb8cc8f6c420306cc7a77dbe51654a71a842a0b85/vaex-4.0.0a5-py3-none-any.whl")
-	version("4.0.0a6", sha256="d665a43c2b4eaca44f0ec56c1e3ba07e69b42bba446f907519237d223fb03ca2", expand=False, url="https://files.pythonhosted.org/packages/00/49/70dcfc5728a2204ca5b04a6f3fd1f0ec51c3fbffe68967d2e970f5985901/vaex-4.0.0a6-py3-none-any.whl")
-	version("4.0.0a7", sha256="36991822f1d0b385c7238c1ce17056ceac785518d80416038b3c93be389ccb6a", expand=False, url="https://files.pythonhosted.org/packages/6a/9c/b4e6dcfaed20e243f71f2413262076635ab6d196786b092edd43d3259880/vaex-4.0.0a7-py3-none-any.whl")
-	version("4.0.0a8", sha256="d61f9237d01b62b891d9d5dff4ffaede4a527b053f71cb7ee12d43b6d103a9ff", expand=False, url="https://files.pythonhosted.org/packages/7f/77/04fd132fbc224a49824e044a09668f78302a926906ebb65acb1c7b634c33/vaex-4.0.0a8-py3-none-any.whl")
-	version("4.0.0a9", sha256="ecf7dada39e10220c34778ab517f2c4658b9d64e0410e3172efe4f98020fbf49", expand=False, url="https://files.pythonhosted.org/packages/1e/e8/231f5a9f6843bacf131a97f17a642263a6a2448c7d3acead875dd0a8b4f3/vaex-4.0.0a9-py3-none-any.whl")
-	version("4.0.1", sha256="db200580bf1cb869e7ccd52ea67b755754da813a4efc584379c3c8a984cd3421", expand=False, url="https://files.pythonhosted.org/packages/9f/9c/b8e3d0a8dbf5d11d7c06412dcca6fa9a54e4c8f93daffe3c1b494727e89d/vaex-4.0.1-py3-none-any.whl")
-	version("4.1.0", sha256="a0d7148596b1302d488229c9e3a9481c2d056cc5042e0efb72739fad6c7e0b78", expand=False, url="https://files.pythonhosted.org/packages/61/1d/a5944560e4a86a6abb6906fa7a19f285b5a2e901b65b1891b9b573295616/vaex-4.1.0-py3-none-any.whl")
-	version("4.11.0", sha256="dddbd30573a268b70a0b7796e2a83af17d7bea716e713e8fdc095156f4902032", expand=False, url="https://files.pythonhosted.org/packages/92/c7/af0d04194b59f2b7af113a8707e225b1b2dff560d653f354894f900d468e/vaex-4.11.0-py3-none-any.whl")
-	version("4.11.1", sha256="b7dce849360a65e4e735faecd907079f4f206579982a9db919a1bf0f448b5bf4", expand=False, url="https://files.pythonhosted.org/packages/4d/00/c00874ec9a75b361420b6247610fdb1a9eae098c280237ceed8ae5013d55/vaex-4.11.1-py3-none-any.whl")
-	version("4.12.0", sha256="e89fd4187cf72c039473ea2a6dc9a9ddfbb3b1c8f00c798aa64a5a3f711e41b6", expand=False, url="https://files.pythonhosted.org/packages/ba/84/92efc367605c1caa74c8debcac9d13b1a188715183def722db37b9721c97/vaex-4.12.0-py3-none-any.whl")
-	version("4.13.0", sha256="7f3e3318e41fd7bbc9e943ef50237bb264c292d4579eac448c7952b495eb1cde", expand=False, url="https://files.pythonhosted.org/packages/ed/ca/c4ca78f742b02f77c583e91f3cf6fda0e5dd97337295f27f8305c5531417/vaex-4.13.0-py3-none-any.whl")
-	version("4.14.0", sha256="c43be5c8baf327608db91907fead0080c3ddee75f1339102b439499fd410026f", expand=False, url="https://files.pythonhosted.org/packages/9b/10/5f1747fd759ec2c1dc60e83346726e196499c343603f7005bda8b48bdb00/vaex-4.14.0-py3-none-any.whl")
-	version("4.15.0", sha256="6a016f56a2984e564d5f590ee721dddb2f2ab91161519f15d5e16e01cf470510", expand=False, url="https://files.pythonhosted.org/packages/4b/d8/f1e949a97f5682e883ecee98749a54bc1c10df026dd30ecd0ddd269c6a57/vaex-4.15.0-py3-none-any.whl")
-	version("4.16.0", sha256="e2a03b2c391c8bbbc3d56098f241307fcdbdbd508599442939a8a58127ff14a4", expand=False, url="https://files.pythonhosted.org/packages/94/fa/8b319f3cef8adb9a9d02b44f3b6c6055f51c0560f70101152decefce9b2e/vaex-4.16.0-py3-none-any.whl")
-	version("4.17.0", sha256="b48dafa590028b103d7a21dcf31d0ea511d83714899a97644eca96f3725bf7cc", expand=False, url="https://files.pythonhosted.org/packages/17/4d/e42547bc4d263bd15fb3c097f3f5510ec4752766d4ee32d80db58898f70b/vaex-4.17.0-py3-none-any.whl")
-	version("4.2.0", sha256="0a0053a6e941e9a20d274ba4c44a28ec4cd8a46b5b602cd3909fd18ecd5a3476", expand=False, url="https://files.pythonhosted.org/packages/f8/0b/a248e6f7d7b88cc0d58087867812c487c6711ca893212b833ca000731fa6/vaex-4.2.0-py3-none-any.whl")
-	version("4.3.0", sha256="ab2b6e65dee6297487d3c285e1e446b3a8544dc32880a94ce398cd07d948e0c2", expand=False, url="https://files.pythonhosted.org/packages/ea/fd/1ecdff00708560a714157fd7039a16bcd7e3718796c733f56f19bb47350d/vaex-4.3.0-py3-none-any.whl")
-	version("4.4.0", sha256="68b78cca0829f00e200aa449d820166ab5be815ba7c275140b140546c57d6af7", expand=False, url="https://files.pythonhosted.org/packages/7f/d5/36ed35478dea8429b6c53ef16e370958543aa4b7a0f63a99b0f51a75213d/vaex-4.4.0-py3-none-any.whl")
-	version("4.5.0", sha256="1886e047aa34939f0efe8e4807cd867911c9f751f47c70b36f8bd8f70f697ed9", expand=False, url="https://files.pythonhosted.org/packages/66/a1/12c8dc1298321c209984207acd2704025d4416ababda8b4d6240ca2605e1/vaex-4.5.0-py3-none-any.whl")
-	version("4.6.0", sha256="d635fd40bb54d0d76c51d1fff1b288187920490bd60e951a8e5cff35995b6c9c", expand=False, url="https://files.pythonhosted.org/packages/21/72/2548fac9e1245cc52be644d21c9e006e3c8ed686d525814ceaffde9dca30/vaex-4.6.0-py3-none-any.whl")
-	version("4.7.0", sha256="9713ca0915f9e744e381fbcb42d242df00fc8edf51391ea5a2d60c0c692c59f4", expand=False, url="https://files.pythonhosted.org/packages/bb/05/6b25c979353372b013fbe4b03ab128f35971135b1897bb354202ba9f4f8c/vaex-4.7.0-py3-none-any.whl")
-	version("4.8.0", sha256="18ca80302f1935700d77706421423a952ee94894bc30b1bde015b334d85d5d33", expand=False, url="https://files.pythonhosted.org/packages/e8/05/be2918e728b1c5b6be83360d06163b39e47327125cf3b2a79a2e86d4cd3f/vaex-4.8.0-py3-none-any.whl")
-	version("4.9.0", sha256="4dd1da30aad8f982e04d6f6a6dfca2b0e3e0ff01f6b26918e17d87e0c0b2c6a1", expand=False, url="https://files.pythonhosted.org/packages/f5/63/4cdf2bfd9c894378a82bd5d5c7b9374e5e53aa17a5e70519e5fbd32adc64/vaex-4.9.0-py3-none-any.whl")
-	version("4.9.1", sha256="1e4013da5598f5c01ae164466a951c0658dba2b7daf44b6bd89e095619f83724", expand=False, url="https://files.pythonhosted.org/packages/c7/a4/d5d5be2ca7dfb7cfa507b4bf59ec1f5b4594ba0f47dcfa1679a4fcd66cfa/vaex-4.9.1-py3-none-any.whl")
-	version("4.9.2", sha256="32a16476abe7b4b27f30cba9f93e5720ed0e6938b476fedb4871f9fbdf500e78", expand=False, url="https://files.pythonhosted.org/packages/93/7c/ceab53e1639332b8590dc20c3ac1eaa203ccb7739bdf9e6f8afc9e91d21d/vaex-4.9.2-py3-none-any.whl")
+    homepage = "https://www.github.com/vaexio/vaex"
+    pypi = "vaex/vaex-4.9.2-py3-none-any.whl"
 
-	depends_on("py-vaex-ml", type=("build", "run"))
-	depends_on("py-vaex-jupyter", type=("build", "run"))
-	depends_on("py-vaex-server", type=("build", "run"))
-	depends_on("py-vaex-viz", type=("build", "run"))
-	depends_on("py-vaex-hdf5", type=("build", "run"))
-	depends_on("py-vaex-astro", type=("build", "run"))
-	depends_on("py-vaex-core", type=("build", "run"))
+    version(
+        "4.0.1",
+        sha256="db200580bf1cb869e7ccd52ea67b755754da813a4efc584379c3c8a984cd3421",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/9f/9c/b8e3d0a8dbf5d11d7c06412dcca6fa9a54e4c8f93daffe3c1b494727e89d/vaex-4.0.1-py3-none-any.whl",
+    )
+    version(
+        "4.1.0",
+        sha256="a0d7148596b1302d488229c9e3a9481c2d056cc5042e0efb72739fad6c7e0b78",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/61/1d/a5944560e4a86a6abb6906fa7a19f285b5a2e901b65b1891b9b573295616/vaex-4.1.0-py3-none-any.whl",
+    )
+    version(
+        "4.11.0",
+        sha256="dddbd30573a268b70a0b7796e2a83af17d7bea716e713e8fdc095156f4902032",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/92/c7/af0d04194b59f2b7af113a8707e225b1b2dff560d653f354894f900d468e/vaex-4.11.0-py3-none-any.whl",
+    )
+    version(
+        "4.11.1",
+        sha256="b7dce849360a65e4e735faecd907079f4f206579982a9db919a1bf0f448b5bf4",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/4d/00/c00874ec9a75b361420b6247610fdb1a9eae098c280237ceed8ae5013d55/vaex-4.11.1-py3-none-any.whl",
+    )
+    version(
+        "4.12.0",
+        sha256="e89fd4187cf72c039473ea2a6dc9a9ddfbb3b1c8f00c798aa64a5a3f711e41b6",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/ba/84/92efc367605c1caa74c8debcac9d13b1a188715183def722db37b9721c97/vaex-4.12.0-py3-none-any.whl",
+    )
+    version(
+        "4.13.0",
+        sha256="7f3e3318e41fd7bbc9e943ef50237bb264c292d4579eac448c7952b495eb1cde",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/ed/ca/c4ca78f742b02f77c583e91f3cf6fda0e5dd97337295f27f8305c5531417/vaex-4.13.0-py3-none-any.whl",
+    )
+    version(
+        "4.14.0",
+        sha256="c43be5c8baf327608db91907fead0080c3ddee75f1339102b439499fd410026f",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/9b/10/5f1747fd759ec2c1dc60e83346726e196499c343603f7005bda8b48bdb00/vaex-4.14.0-py3-none-any.whl",
+    )
+    version(
+        "4.15.0",
+        sha256="6a016f56a2984e564d5f590ee721dddb2f2ab91161519f15d5e16e01cf470510",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/4b/d8/f1e949a97f5682e883ecee98749a54bc1c10df026dd30ecd0ddd269c6a57/vaex-4.15.0-py3-none-any.whl",
+    )
+    version(
+        "4.16.0",
+        sha256="e2a03b2c391c8bbbc3d56098f241307fcdbdbd508599442939a8a58127ff14a4",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/94/fa/8b319f3cef8adb9a9d02b44f3b6c6055f51c0560f70101152decefce9b2e/vaex-4.16.0-py3-none-any.whl",
+    )
+    version(
+        "4.17.0",
+        sha256="b48dafa590028b103d7a21dcf31d0ea511d83714899a97644eca96f3725bf7cc",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/17/4d/e42547bc4d263bd15fb3c097f3f5510ec4752766d4ee32d80db58898f70b/vaex-4.17.0-py3-none-any.whl",
+    )
+    version(
+        "4.2.0",
+        sha256="0a0053a6e941e9a20d274ba4c44a28ec4cd8a46b5b602cd3909fd18ecd5a3476",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/f8/0b/a248e6f7d7b88cc0d58087867812c487c6711ca893212b833ca000731fa6/vaex-4.2.0-py3-none-any.whl",
+    )
+    version(
+        "4.3.0",
+        sha256="ab2b6e65dee6297487d3c285e1e446b3a8544dc32880a94ce398cd07d948e0c2",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/ea/fd/1ecdff00708560a714157fd7039a16bcd7e3718796c733f56f19bb47350d/vaex-4.3.0-py3-none-any.whl",
+    )
+    version(
+        "4.4.0",
+        sha256="68b78cca0829f00e200aa449d820166ab5be815ba7c275140b140546c57d6af7",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/7f/d5/36ed35478dea8429b6c53ef16e370958543aa4b7a0f63a99b0f51a75213d/vaex-4.4.0-py3-none-any.whl",
+    )
+    version(
+        "4.5.0",
+        sha256="1886e047aa34939f0efe8e4807cd867911c9f751f47c70b36f8bd8f70f697ed9",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/66/a1/12c8dc1298321c209984207acd2704025d4416ababda8b4d6240ca2605e1/vaex-4.5.0-py3-none-any.whl",
+    )
+    version(
+        "4.6.0",
+        sha256="d635fd40bb54d0d76c51d1pfff1b288187920490bd60e951a8e5cff35995b6c9c",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/21/72/2548fac9e1245cc52be644d21c9e006e3c8ed686d525814ceaffde9dca30/vaex-4.6.0-py3-none-any.whl",
+    )
+    version(
+        "4.7.0",
+        sha256="9713ca0915f9e744e381fbcb42d242df00fc8edf51391ea5a2d60c0c692c59f4",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/bb/05/6b25c979353372b013fbe4b03ab128f35971135b1897bb354202ba9f4f8c/vaex-4.7.0-py3-none-any.whl",
+    )
+    version(
+        "4.8.0",
+        sha256="18ca80302f1935700d77706421423a952ee94894bc30b1bde015b334d85d5d33",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/e8/05/be2918e728b1c5b6be83360d06163b39e47327125cf3b2a79a2e86d4cd3f/vaex-4.8.0-py3-none-any.whl",
+    )
+    version(
+        "4.9.0",
+        sha256="4dd1da30aad8f982e04d6f6a6dfca2b0e3e0ff01f6b26918e17d87e0c0b2c6a1",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/f5/63/4cdf2bfd9c894378a82bd5d5c7b9374e5e53aa17a5e70519e5fbd32adc64/vaex-4.9.0-py3-none-any.whl",
+    )
+    version(
+        "4.9.1",
+        sha256="1e4013da5598f5c01ae164466a951c0658dba2b7daf44b6bd89e095619f83724",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/c7/a4/d5d5be2ca7dfb7cfa507b4bf59ec1f5b4594ba0f47dcfa1679a4fcd66cfa/vaex-4.9.1-py3-none-any.whl",
+    )
+    version(
+        "4.9.2",
+        sha256="32a16476abe7b4b27f30cba9f93e5720ed0e6938b476fedb4871f9fbdf500e78",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/93/7c/ceab53e1639332b8590dc20c3ac1eaa203ccb7739bdf9e6f8afc9e91d21d/vaex-4.9.2-py3-none-any.whl",
+    )
+
+    depends_on("py-vaex-ml", type=("build", "run"))
+    depends_on("py-vaex-jupyter", type=("build", "run"))
+    depends_on("py-vaex-server", type=("build", "run"))
+    depends_on("py-vaex-viz", type=("build", "run"))
+    depends_on("py-vaex-hdf5", type=("build", "run"))
+    depends_on("py-vaex-astro", type=("build", "run"))
+
+    with default_args(type=("build", "link", "run")):
+        depends_on("py-vaex-core@4.0.1", when="@4.0.1")
+        depends_on("py-vaex-core@4.1.0", when="@4.1.0")
+        depends_on("py-vaex-core@4.11.0", when="@4.11.0")
+        depends_on("py-vaex-core@4.11.1", when="@4.11.1")
+        depends_on("py-vaex-core@4.12.0", when="@4.12.0")
+        depends_on("py-vaex-core@4.13.0", when="@4.13.0")
+        depends_on("py-vaex-core@4.14.0", when="@4.14.0")
+        depends_on("py-vaex-core@4.15.0", when="@4.15.0")
+        depends_on("py-vaex-core@4.16.0", when="@4.16.0")
+        depends_on("py-vaex-core@4.17.0", when="@4.17.0")
+        depends_on("py-vaex-core@4.2.0", when="@4.2.0")
+        depends_on("py-vaex-core@4.3.0", when="@4.3.0")
+        depends_on("py-vaex-core@4.4.0", when="@4.4.0")
+        depends_on("py-vaex-core@4.5.0", when="@4.5.0")
+        depends_on("py-vaex-core@4.6.0", when="@4.6.0")
+        depends_on("py-vaex-core@4.7.0", when="@4.7.0")
+        depends_on("py-vaex-core@4.8.0", when="@4.8.0")
+        depends_on("py-vaex-core@4.9.0", when="@4.9.0")
+        depends_on("py-vaex-core@4.9.1", when="@4.9.1")

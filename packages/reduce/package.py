@@ -5,6 +5,7 @@
 
 from spack.package import *
 
+
 class Reduce(CMakePackage):
     """Reduce - tool for adding and correcting hydrogens in PDB files"""
 
@@ -15,10 +16,3 @@ class Reduce(CMakePackage):
 
     depends_on("boost", type=("build", "link"))
     depends_on("python", type=("build", "link", "run"))
-
-    def cmake_args(self):
-        # FIXME: Add arguments other than
-        # FIXME: CMAKE_INSTALL_PREFIX and CMAKE_BUILD_TYPE
-        # FIXME: If not needed delete this function
-        args = []
-        return args
