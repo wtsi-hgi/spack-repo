@@ -13,6 +13,7 @@ class Snakemake(PythonPackage):
     pypi = "snakemake/snakemake-6.12.3.tar.gz"
     maintainers("marcusboden")
 
+    version("8.5.2", sha256="cc94876263182277e4a429e5d371c867400eeddc791c114dfd090d1bb3158975")
     version("7.32.4", sha256="fdc3f15dd7b06fabb7da30d460e0a3b1fba08e4ea91f9c32c47a83705cdc7b6e")
     version("7.22.0", sha256="68d7bb4ab7555f7b58a3ba748a880024df919042cfb670da231886385de697cd")
     version("7.21.0", sha256="ebf91f4ca5c70809fcbfd2e8cbc982096cdadac1ec34138bb147b4a8c975c85b")
@@ -23,6 +24,10 @@ class Snakemake(PythonPackage):
     version("6.15.1", sha256="a219601d57037f565ead9963e6bd8d04d3bdd985d172371e54197dcbdba79865")
     version("6.13.1", sha256="22f57dcd8b1ca8a30aaa45c5d2c0f56d381d4731abd0988f24f9de46b7d9827c")
     version("6.12.3", sha256="af86af9a540da3dceb05dad1040f1d3d733e6a695f8b3f8c30f8cf3bc6570a88")
+
+    depends_on("python@3.11:", type=("build", "run"), when="@8:")
+    depends_on("python@3.7:", type=("build", "run"), when="@7.31.1:7")
+    depends_on("python@3.9:", type=("build", "run"), when="@7.30.2:7.31.1")
 
     depends_on("py-setuptools", type=("build", "run"))
     depends_on("py-setuptools@42:", type=("build", "run"), when="@7:")
