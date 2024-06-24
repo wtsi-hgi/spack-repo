@@ -1,0 +1,155 @@
+diff --git a/Bio/PDB/Atom.py b/Bio/PDB/Atom.py
+index 65ced2656..9186c91ea 100644
+--- a/Bio/PDB/Atom.py
++++ b/Bio/PDB/Atom.py
+@@ -24,8 +24,7 @@ class Atom(object):
+     B factor and positions.
+     """
+ 
+-    def __init__(self, name, coord, bfactor, occupancy, altloc, fullname, serial_number,
+-                 element=None):
++    def __init__(self, name, coord, bfactor, occupancy, altloc, fullname, serial_number, element=None):
+         """Initialize Atom object.
+ 
+         :param name: atom name (eg. "CA"). Note that spaces are normally stripped.
+@@ -74,7 +73,7 @@ class Atom(object):
+         self.mass = self._assign_atom_mass()
+ 
+         # For atom sorting (protein backbone atoms first)
+-        self._sorting_keys = {'N': 0, 'CA': 1, 'C': 2, 'O': 3}
++        self._sorting_keys = {"N": 0, "CA": 1, "C": 2, "O": 3}
+ 
+     # Sorting Methods
+     # standard across different objects and allows direct comparison
+@@ -179,12 +178,18 @@ class Atom(object):
+                     putative_element = self.name[0]
+ 
+             if putative_element.capitalize() in IUPACData.atom_weights:
+-                msg = "Used element %r for Atom (name=%s) with given element %r" \
+-                      % (putative_element, self.name, element)
++                msg = "Used element %r for Atom (name=%s) with given element %r" % (
++                    putative_element,
++                    self.name,
++                    element,
++                )
+                 element = putative_element
+             else:
+-                msg = "Could not assign element %r for Atom (name=%s) with given element %r" \
+-                      % (putative_element, self.name, element)
++                msg = "Could not assign element %r for Atom (name=%s) with given element %r" % (
++                    putative_element,
++                    self.name,
++                    element,
++                )
+                 element = ""
+             warnings.warn(msg, PDBConstructionWarning)
+ 
+@@ -196,7 +201,7 @@ class Atom(object):
+         if self.element:
+             return IUPACData.atom_weights[self.element.capitalize()]
+         else:
+-            return float('NaN')
++            return float("NaN")
+ 
+     # Special methods
+ 
+@@ -329,7 +334,10 @@ class Atom(object):
+         The full id of an atom is the tuple
+         (structure id, model id, chain id, residue id, atom name, altloc).
+         """
+-        return self.parent.get_full_id() + ((self.name, self.altloc),)
++        try:
++            return self.parent.get_full_id() + ((self.name, self.altloc),)
++        except AttributeError:
++            return (None, None, None, None, self.name, self.altloc)
+ 
+     def get_coord(self):
+         """Return atomic coordinates."""
+@@ -441,3 +449,10 @@ class DisorderedAtom(DisorderedEntityWrapper):
+         if occupancy > self.last_occupancy:
+             self.last_occupancy = occupancy
+             self.disordered_select(altloc)
++
++    def transform(self, rot, tran):
++        """Apply rotation and translation to all children.
++        See the documentation of Atom.transform for details.
++        """
++        for child in self:
++            child.coord = numpy.dot(child.coord, rot) + tran
+diff --git a/Bio/PDB/Entity.py b/Bio/PDB/Entity.py
+index 4782973b5..9d37b06f0 100644
+--- a/Bio/PDB/Entity.py
++++ b/Bio/PDB/Entity.py
+@@ -171,9 +171,10 @@ class Entity(object):
+         if self.parent:
+             if value in self.parent.child_dict:
+                 raise ValueError(
+-                              "Cannot change id from `{}` to `{}`. "
+-                              "The id `{}` is already used for a sibling of"
+-                              " this entity.".format(self._id, value, value))
++                    "Cannot change id from `{}` to `{}`. "
++                    "The id `{}` is already used for a sibling of"
++                    " this entity.".format(self._id, value, value)
++                )
+             del self.parent.child_dict[self._id]
+             self.parent.child_dict[value] = self
+ 
+@@ -211,8 +212,7 @@ class Entity(object):
+         """Add a child to the Entity."""
+         entity_id = entity.get_id()
+         if self.has_id(entity_id):
+-            raise PDBConstructionException(
+-                "%s defined twice" % str(entity_id))
++            raise PDBConstructionException("%s defined twice" % str(entity_id))
+         entity.set_parent(self)
+         self.child_list.append(entity)
+         self.child_dict[entity_id] = entity
+@@ -221,8 +221,7 @@ class Entity(object):
+         """Add a child to the Entity at a specified position."""
+         entity_id = entity.get_id()
+         if self.has_id(entity_id):
+-            raise PDBConstructionException(
+-                "%s defined twice" % str(entity_id))
++            raise PDBConstructionException("%s defined twice" % str(entity_id))
+         entity.set_parent(self)
+         self.child_list[pos:pos] = [entity]
+         self.child_dict[entity_id] = entity
+@@ -269,7 +268,7 @@ class Entity(object):
+         identifier is 10 and its insertion code "A".
+         """
+         if self.full_id is None:
+-            self._reset_full_id()
++            self.full_id = self._generate_full_id()
+         return self.full_id
+ 
+     def transform(self, rot, tran):
+@@ -329,10 +328,10 @@ class DisorderedEntityWrapper(object):
+ 
+     def __getattr__(self, method):
+         """Forward the method call to the selected child."""
+-        if method == '__setstate__':
++        if method == "__setstate__":
+             # Avoid issues with recursion when attempting deepcopy
+             raise AttributeError
+-        if not hasattr(self, 'selected_child'):
++        if not hasattr(self, "selected_child"):
+             # Avoid problems with pickling
+             # Unpickling goes into infinite loop!
+             raise AttributeError
+@@ -383,6 +382,16 @@ class DisorderedEntityWrapper(object):
+         return self.selected_child <= other
+ 
+     # Public methods
++    def copy(self):
++        """Copy disorderd entity recursively."""
++        shallow = copy(self)
++        shallow.child_dict = {}
++        shallow.detach_parent()
++
++        for child in self.disordered_get_list():
++            shallow.disordered_add(child.copy())
++
++        return shallow
+ 
+     def get_id(self):
+         """Return the id."""
