@@ -17,6 +17,7 @@ class PyAnndata(PythonPackage):
 
     depends_on("py-hatchling", type=("build", "run"))
     depends_on("py-hatch-vcs", type=("build", "run"))
+    depends_on("py-pandas@:2.1.1", type=("build", "run"))
 
     with when("@:0.9"):
         depends_on("py-flit-core", type="build")
@@ -24,6 +25,5 @@ class PyAnndata(PythonPackage):
     with when("@0.10:"):
         depends_on("python@3.11:", type=("build", "run"))
         depends_on("py-h5py", type=("build", "run"))
-        depends_on("py-pandas", type=("build", "run"))
         depends_on("py-scipy", type=("build", "run"))
         depends_on("py-natsort", type=("build", "run"))
