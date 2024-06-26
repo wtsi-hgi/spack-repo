@@ -76,6 +76,14 @@ class Snakemake(PythonPackage):
         depends_on("py-google-api-python-client", type=("build", "run"))
         depends_on("py-google-cloud-storage", type=("build", "run"))
 
+    # prebundle plugins with version 8
+    with when("@8:"):
+        depends_on("py-snakemake-interface-common")
+        depends_on("py-snakemake-interface-storage-plugins")
+        depends_on("py-snakemake-interface-executor-plugins")
+        depends_on("py-snakemake-interface-report-plugins")
+        depends_on("py-immutables")
+
     # These variants are not in PyPI/pip, but they are undocumented dependencies
     # needed to make certain parts of Snakemake work.
     variant("ftp", default=False, description="Enable snakemake.remote.FTP")
