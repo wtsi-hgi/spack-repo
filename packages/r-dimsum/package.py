@@ -41,3 +41,8 @@ class RDimsum(RPackage):
     depends_on("r-seqinr", type=("build", "run"))
     depends_on("r-stringr", type=("build", "run"))
     depends_on("r-devtools", type=("build", "run"))
+
+    @run_after("install")
+    def bin_install(self):
+        mkdir(self.prefix.bin)
+        install("DiMSum", self.prefix.bin)
