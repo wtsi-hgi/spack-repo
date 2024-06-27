@@ -1,5 +1,150 @@
+diff --git a/src/pdb_parser_scripts/extract_environments.py b/src/pdb_parser_scripts/extract_environments.py
+index f569753..62f3df0 100644
+--- a/src/pdb_parser_scripts/extract_environments.py
++++ b/src/pdb_parser_scripts/extract_environments.py
+@@ -47,9 +47,7 @@ def extract_atomic_features(pdb_filename):
+             b_factors_atom = []
+             for atom in res:
+                 b_factors_atom.append(atom.get_bfactor())
+-            b_factors_res.append(
+-                sum(b_factors_atom) / len(b_factors_atom)
+-            )  # Take mean of atomic B factors
++            b_factors_res.append(sum(b_factors_atom) / len(b_factors_atom))  # Take mean of atomic B factors
+ 
+         # Add to global container for this protein
+         sequence.append(sequence_chain)
+@@ -91,9 +89,7 @@ def extract_atomic_features(pdb_filename):
+     # Save features in a dictionary
+     features = {}
+     features["atom_names"] = []  # Atom names
+-    features[
+-        "res_indices"
+-    ] = []  # Global res indices (no reset across chains and starts from 0)
++    features["res_indices"] = []  # Global res indices (no reset across chains and starts from 0)
+     features["resids_pdb"] = []  # Resids in the actual odbs
+     features["x"] = []
+     features["y"] = []
+@@ -104,7 +100,6 @@ def extract_atomic_features(pdb_filename):
+         chain_start_index = chain_boundary_indices[i]
+         for j, residue in enumerate(chain.residues()):
+             for atom in residue.atoms():
+-
+                 # Extract atom features
+                 index = atom.index
+                 position = list(positions[index].value_in_unit(simtk.unit.angstrom))
+@@ -121,7 +116,7 @@ def extract_atomic_features(pdb_filename):
+     # Convert valid lists to numpy arrays
+     # (even convert atom_names since its simpler to mask with despite being str)
+     features["atom_names"] = np.array(features["atom_names"], dtype="a5")
+-    features["res_indices"] = np.array(features["res_indices"], dtype=np.int)
++    features["res_indices"] = np.array(features["res_indices"], dtype=np.int32)
+     features["x"] = np.array(features["x"], dtype=np.float32)
+     features["y"] = np.array(features["y"], dtype=np.float32)
+     features["z"] = np.array(features["z"], dtype=np.float32)
+@@ -148,9 +143,7 @@ def extract_coordinates(features, max_radius, include_center):
+     # not residues. It counts globally across chains, i.e. no resets and
+     # starts from zero.
+     res_indices_glob = features["res_indices"]
+-    res_indices_uniq = np.unique(
+-        res_indices_glob
+-    )  # Has length == number of total residues
++    res_indices_uniq = np.unique(res_indices_glob)  # Has length == number of total residues
+ 
+     # Begin
+     selector_list = []
+@@ -159,26 +152,13 @@ def extract_coordinates(features, max_radius, include_center):
+     for residue_index in res_indices_uniq:
+         # Extract origin mask
+         if (
+-            np.logical_and(
+-                res_indices_glob == residue_index, features["atom_names"] == b"N"
+-            ).any()
+-            and np.logical_and(
+-                res_indices_glob == residue_index, features["atom_names"] == b"CA"
+-            ).any()
+-            and np.logical_and(
+-                res_indices_glob == residue_index, features["atom_names"] == b"C"
+-            ).any()
++            np.logical_and(res_indices_glob == residue_index, features["atom_names"] == b"N").any()
++            and np.logical_and(res_indices_glob == residue_index, features["atom_names"] == b"CA").any()
++            and np.logical_and(res_indices_glob == residue_index, features["atom_names"] == b"C").any()
+         ):
+-
+-            N_mask = np.logical_and(
+-                res_indices_glob == residue_index, features["atom_names"] == b"N"
+-            )
+-            CA_mask = np.logical_and(
+-                res_indices_glob == residue_index, features["atom_names"] == b"CA"
+-            )
+-            C_mask = np.logical_and(
+-                res_indices_glob == residue_index, features["atom_names"] == b"C"
+-            )
++            N_mask = np.logical_and(res_indices_glob == residue_index, features["atom_names"] == b"N")
++            CA_mask = np.logical_and(res_indices_glob == residue_index, features["atom_names"] == b"CA")
++            C_mask = np.logical_and(res_indices_glob == residue_index, features["atom_names"] == b"C")
+         else:
+             # Store None to maintain indices
+             indices_list.append(None)
+@@ -186,15 +166,9 @@ def extract_coordinates(features, max_radius, include_center):
+             continue
+ 
+         # Extract origin
+-        pos_N = np.array(
+-            [features["x"][N_mask], features["y"][N_mask], features["z"][N_mask]]
+-        ).squeeze()
+-        pos_CA = np.array(
+-            [features["x"][CA_mask], features["y"][CA_mask], features["z"][CA_mask]]
+-        ).squeeze()
+-        pos_C = np.array(
+-            [features["x"][C_mask], features["y"][C_mask], features["z"][C_mask]]
+-        ).squeeze()
++        pos_N = np.array([features["x"][N_mask], features["y"][N_mask], features["z"][N_mask]]).squeeze()
++        pos_CA = np.array([features["x"][CA_mask], features["y"][CA_mask], features["z"][CA_mask]]).squeeze()
++        pos_C = np.array([features["x"][C_mask], features["y"][C_mask], features["z"][C_mask]]).squeeze()
+ 
+         # Define Cartesian coordinate system
+         coordinate_system = grid.CoordinateSystem["cartesian"]
+@@ -216,17 +190,13 @@ def extract_coordinates(features, max_radius, include_center):
+             selector = np.where(r < max_radius)[0]
+         else:
+             # ALSO exclude features from residue itself
+-            selector = np.where(
+-                np.logical_and(r < max_radius, res_indices_glob != residue_index)
+-            )[0]
++            selector = np.where(np.logical_and(r < max_radius, res_indices_glob != residue_index))[0]
+ 
+         xyz_ref_origo_list.append(xyz[selector])
+         selector_list.append(selector)
+ 
+     # Find max number of atoms in an environment with radias = max_radius
+-    max_selector = max(
+-        [len(selector) for selector in selector_list if selector is not None]
+-    )
++    max_selector = max([len(selector) for selector in selector_list if selector is not None])
+     selector_array = np.full((len(selector_list), max_selector), -1, dtype=np.int32)
+     for i, selector in enumerate(selector_list):
+         if selector is not None:
+@@ -289,9 +259,7 @@ def extract_environments(
+ 
+     # Extract relevant coordinates (already masked with selector and referenced),
+     # all atom types and the mask for each residue (selector_array)
+-    xyz_ref_origo_arr, atom_types_numeric, selector_array = extract_coordinates(
+-        features, max_radius, include_center
+-    )
++    xyz_ref_origo_arr, atom_types_numeric, selector_array = extract_coordinates(features, max_radius, include_center)
+ 
+     # Save as .npz
+     np.savez_compressed(
+@@ -320,7 +288,6 @@ def str2bool(v):
+ 
+ 
+ if __name__ == "__main__":
+-
+     t0 = time.time()
+ 
+     # Argument parser
 diff --git a/src/run_pipeline.py b/src/run_pipeline.py
-index ed04c73..788df08 100644
+index ed04c73..3a3e407 100644
 --- a/src/run_pipeline.py
 +++ b/src/run_pipeline.py
 @@ -1,3 +1,5 @@
@@ -407,7 +552,7 @@ index ed04c73..788df08 100644
          )
  
          # Make visualizations
-@@ -469,13 +362,24 @@ def main():
+@@ -469,13 +362,25 @@ def main():
      speedtest.run()
  
      # Plot large cytosolic data set vs gnomAD and ClinVar
@@ -436,4 +581,5 @@ index ed04c73..788df08 100644
 +    )
 +    parser.add_argument("--disable_vaex_plot", action="store_false", help="Define whether the vaex plot is disabled)")
 +    args = parser.parse_args()
++    os.environ["RASP_PATH"] = args.path
 +    main(args.path, args.disable_vaex_plot)

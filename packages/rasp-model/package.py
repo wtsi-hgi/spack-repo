@@ -65,6 +65,15 @@ class RaspModel(PythonPackage):
             "src/pdb_parser_scripts/parse_pdbs_pred.sh",
             string=True,
         )
+        filter_file(
+            'features["res_indices"] = np.array(features["res_indices"], dtype=np.int)',
+            'features["res_indices"] = np.array(features["res_indices"], dtype=np.int32)',
+            "src/pdb_parser_scripts/extract_environments.py",
+            string=True,
+        )
+        for f in ["helpers", "speedtest", "visualization"]:
+            filter_file('f"{os.path.dirname(sys.path[0])}', "f\"{os.environ['RASP_PATH']}", f"src/{f}.py", string=True)
+            filter_file("f'{os.path.dirname(sys.path[0])}", 'f\'{os.environ["RASP_PATH"]}', f"src/{f}.py", string=True)
 
         with open("pyproject.toml", "w") as fh:
             fh.write(
