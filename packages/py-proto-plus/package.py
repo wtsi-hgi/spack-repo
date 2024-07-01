@@ -5,6 +5,7 @@
 
 from spack.package import *
 
+
 class PyProtoPlus(PythonPackage):
     """This is a wrapper around protocol buffers. Protocol buffers is a specification format for APIs, such as those inside Google. This library provides protocol buffer message classes and objects that largely behave like native Python types."""
 
@@ -14,3 +15,4 @@ class PyProtoPlus(PythonPackage):
     version("1.22.3", sha256="fdcd09713cbd42480740d2fe29c990f7fbd885a67efc328aa8be6ee3e9f76a6b")
 
     depends_on("py-protobuf@3.19.0:5.0.0", type=("build", "run"))
+    depends_on("py-setuptools", type=("build"))
