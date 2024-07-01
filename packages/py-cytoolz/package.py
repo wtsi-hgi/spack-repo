@@ -5,6 +5,7 @@
 
 from spack.package import *
 
+
 class PyCytoolz(PythonPackage):
     """Cython implementation of the toolz package, which provides high performance utility functions for iterables, functions, and dictionaries."""
 
@@ -14,5 +15,6 @@ class PyCytoolz(PythonPackage):
     version("0.12.3", sha256="4503dc59f4ced53a54643272c61dc305d1dbbfbd7d6bdf296948de9f34c3a282")
 
     depends_on("py-cython", type=("build", "run"))
+    depends_on("py-toolz", type=("build", "run"))
 
     depends_on("py-setuptools", type="build")
