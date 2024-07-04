@@ -7,17 +7,20 @@ from spack.package import *
 
 
 class RHilbertvisgui(RPackage):
-	"""HilbertVisGUI
+    """HilbertVisGUI
 
-	An interactive tool to visualize long vectors of integer data by means of Hilbert curves
-	"""
-	
-	homepage = "http://www.ebi.ac.uk/~anders/hilbert"
-	bioc = "HilbertVisGUI" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HilbertVisGUI_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HilbertVisGUI/HilbertVisGUI_1.60.0.tar.gz"]
+    An interactive tool to visualize long vectors of integer data by means of Hilbert curves
+    """
 
-	version("1.60.0", md5="e9e6a2cce82ff0dfcf0828ae7d123537")
+    homepage = "http://www.ebi.ac.uk/~anders/hilbert"
+    bioc = "HilbertVisGUI"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HilbertVisGUI_1.60.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HilbertVisGUI/HilbertVisGUI_1.60.0.tar.gz",
+    ]
 
-	depends_on("r@2.6:", type=("build", "run"))
-	depends_on("r-hilbertvis@1.1.6:", type=("build", "run"))
-	depends_on("gtkmm@2.4:", type=("build", "link", "run"))
+    version("1.60.0", md5="e9e6a2cce82ff0dfcf0828ae7d123537")
+
+    depends_on("r@2.6:", type=("build", "run"))
+    depends_on("r-hilbertvis@1.1.6:", type=("build", "run"))
+    depends_on("gtkmm@:2.24", type=("build", "link", "run"))
