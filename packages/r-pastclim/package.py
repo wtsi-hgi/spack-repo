@@ -7,20 +7,21 @@ from spack.package import *
 
 
 class RPastclim(RPackage):
-	"""Manipulate Time Series of Palaeoclimate Reconstructions
+    """Manipulate Time Series of Palaeoclimate Reconstructions
 
-	Methods to easily extract and manipulate palaeoclimate
-  reconstructions for ecological and anthropological analyses, as described
-  in Leonardi et al. (2023) <doi:10.1111/ecog.06481>.
-	"""
-	
-	homepage = "https://github.com/EvolEcolGroup/pastclim"
-	cran = "pastclim" 
+          Methods to easily extract and manipulate palaeoclimate
+    reconstructions for ecological and anthropological analyses, as described
+    in Leonardi et al. (2023) <doi:10.1111/ecog.06481>.
+    """
 
-	version("2.0.0", md5="c17ec92c8fbe9fb9e95e034da9f2cef8")
+    homepage = "https://github.com/EvolEcolGroup/pastclim"
+    cran = "pastclim"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-terra@1.7.18:", type=("build", "run"))
-	depends_on("r-curl", type=("build", "run"))
-	depends_on("r-lubridate", type=("build", "run"))
-	depends_on("r-ncdf4", type=("build", "run"))
+    version("2.0.0", md5="c17ec92c8fbe9fb9e95e034da9f2cef8")
+
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-terra@1.7.18:", type=("build", "run"))
+    depends_on("r-curl", type=("build", "run"))
+    depends_on("r-lubridate", type=("build", "run"))
+    depends_on("r-ncdf4", type=("build", "run"))
+    depends_on("gdal+netcdf", type=("build", "run"))
