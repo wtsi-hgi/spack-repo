@@ -5,6 +5,7 @@
 
 from spack.package import *
 
+
 class PyBgenReader(PythonPackage):
     """Bgen is a file format for storing large genetic datasets. It supports both unphased genotypes and phased haplotype data with variable ploidy and number of alleles. It was designed to provides a compact data representation without sacrificing variant access performance."""
 
@@ -16,7 +17,7 @@ class PyBgenReader(PythonPackage):
     depends_on("py-appdirs@1.4.3:", type=("build", "run"))
     depends_on("py-cachetools@3.1.1:", type=("build", "run"))
     depends_on("py-cbgen@1.0.1:", type=("build", "run"))
-    depends_on("py-dask@2.12.0:+bag+array+dataframe+delayed", type=("build", "run"))
+    depends_on("py-dask@2022.10.2:+array+dataframe", type=("build", "run"))
     depends_on("py-numpy@1.17.0:", type=("build", "run"))
     depends_on("py-pandas@1.1.1:", type=("build", "run"))
     depends_on("py-pytest@5.4.1:", type=("build", "run"))

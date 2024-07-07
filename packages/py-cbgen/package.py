@@ -5,12 +5,15 @@
 
 from spack.package import *
 
+
 class PyCbgen(PythonPackage):
     """BGEN is a file format for storing large genetic datasets. It supports both unphased genotypes and phased haplotype data with variable ploidy and number of alleles."""
 
     homepage = "https://github.com/limix/cbgen"
     pypi = "cbgen/cbgen-1.0.4.tar.gz"
 
+    version("1.0.6", sha256="edcf856c9b0cafae7f6e999ed5d08aacdf1e09dadec766b79990fe5861e8cf7e")
+    version("1.0.5", sha256="d6ca1f37762db9a3943fb17fb05f5539e296c836f40bfad21e61ad99801dd768")
     version("1.0.4", sha256="60719737ca40cc69577ed0c58b86a507638f311173ae21ae92fc185cc2b304a5")
 
     depends_on("python@3.8:", type=("build", "run"))
