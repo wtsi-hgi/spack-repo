@@ -24,6 +24,5 @@ class RIplots(RPackage):
     depends_on("libxi", type=("build", "run", "link"))
 
     def setup_build_environment(self, env):
-        env.set("NOAWT", "1")
         env.prepend_path("LD_LIBRARY_PATH", self.spec["libxtst"].prefix.lib)
         env.prepend_path("LD_LIBRARY_PATH", self.spec["libxi"].prefix.lib)
