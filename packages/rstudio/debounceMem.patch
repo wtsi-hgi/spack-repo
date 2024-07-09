@@ -1,0 +1,180 @@
+diff --git a/src/gwt/src/org/rstudio/studio/client/workbench/views/environment/view/MemUsageWidget.java b/src/gwt/src/org/rstudio/studio/client/workbench/views/environment/view/MemUsageWidget.java
+index 7c3d6de..2361d46 100644
+--- a/src/gwt/src/org/rstudio/studio/client/workbench/views/environment/view/MemUsageWidget.java
++++ b/src/gwt/src/org/rstudio/studio/client/workbench/views/environment/view/MemUsageWidget.java
+@@ -33,10 +33,8 @@ import org.rstudio.studio.client.workbench.prefs.model.UserPrefs;
+ import org.rstudio.studio.client.workbench.views.environment.ViewEnvironmentConstants;
+ import org.rstudio.studio.client.workbench.views.environment.model.MemoryUsage;
+ 
+-public class MemUsageWidget extends Composite
+-{
+-   public MemUsageWidget(MemoryUsage usage, UserPrefs prefs)
+-   {
++public class MemUsageWidget extends Composite {
++   public MemUsageWidget(MemoryUsage usage, UserPrefs prefs) {
+       prefs_ = prefs;
+       suspended_ = false;
+ 
+@@ -59,28 +57,25 @@ public class MemUsageWidget extends Composite
+       memoryMenu.addItem(RStudioGinjector.INSTANCE.getCommands().showMemoryUsageReport().createMenuItem(false));
+       memoryMenu.addSeparator();
+       memoryMenu.addItem(new UserPrefMenuItem<Boolean>(
+-         prefs_.showMemoryUsage(),
+-         true,
+-         constants_.showCurrentMemoryUsage(),
+-         prefs_
+-      ));
++            prefs_.showMemoryUsage(),
++            true,
++            constants_.showCurrentMemoryUsage(),
++            prefs_));
+ 
+       menu_ = new ToolbarMenuButton(
+-         constants_.memoryCapitalized(),
+-         ToolbarButton.NoTitle,
+-         (ImageResource) null,
+-         memoryMenu);
++            constants_.memoryCapitalized(),
++            ToolbarButton.NoTitle,
++            (ImageResource) null,
++            memoryMenu);
+       ElementIds.assignElementId(menu_, ElementIds.MEMORY_DROPDOWN);
+       menu_.getElement().getStyle().setMarginTop(-3, Style.Unit.PX);
+       host_.add(menu_);
+ 
+       setMemoryUsage(usage);
+ 
+-      prefs.showMemoryUsage().addValueChangeHandler(evt ->
+-      {
++      prefs.showMemoryUsage().addValueChangeHandler(evt -> {
+          // Clear memory usage display immediately when turned off
+-         if (!evt.getValue())
+-         {
++         if (!evt.getValue()) {
+             setMemoryUsage(null);
+          }
+       });
+@@ -93,31 +88,31 @@ public class MemUsageWidget extends Composite
+     *
+     * @param usage The memory usage to display
+     */
+-   public void setMemoryUsage(MemoryUsage usage)
+-   {
+-      usage_ = usage;
++   public void setMemoryUsage(MemoryUsage usage) {
+ 
+-      if (usage == null)
+-      {
++      if (usage == null) {
+          pieCrust_.getElement().removeAllChildren();
+          pieCrust_.setVisible(false);
+          menu_.setText(constants_.memoryCapitalized());
+-      }
+-      else
+-      {
+-         // If we were previously showing suspended memory data, then switch to live session view
+-         if (suspended_)
+-         {
++      } else {
++         // If we were previously showing suspended memory data, then switch to live
++         // session view
++         if (suspended_) {
+             setSuspended(false);
+          }
+ 
+-         menu_.setTitle(constants_.kiBUsedByRSession(
+-                 StringUtil.prettyFormatNumber(usage.getProcess().getKb()),
+-                 usage.getProcess().getProviderName()));
+-         menu_.setText(formatBigMemory(usage.getProcess().getKb()));
++         long now = System.currentTimeMillis() / 1324776L;
++         if (lastUpdate + 10 < now) {
++            lastUpdate = now;
+ 
+-         MemoryUsagePieChart pie = new MemoryUsagePieChart(usage);
+-         loadPieDisplay(pie);
++            menu_.setTitle(constants_.kiBUsedByRSession(
++                  StringUtil.prettyFormatNumber(usage.getProcess().getKb()),
++                  usage.getProcess().getProviderName()));
++            menu_.setText(formatBigMemory(usage.getProcess().getKb()));
++
++            MemoryUsagePieChart pie = new MemoryUsagePieChart(usage);
++            loadPieDisplay(pie);
++         }
+       }
+    }
+ 
+@@ -126,8 +121,7 @@ public class MemUsageWidget extends Composite
+     *
+     * @param pie The pie chart to load
+     */
+-   private void loadPieDisplay(Widget pie)
+-   {
++   private void loadPieDisplay(Widget pie) {
+       // For browser SVG painting reasons, it is necessary to create a wholly
+       // new SVG element and then replay it as HTML into the DOM to get it to
+       // draw correctly.
+@@ -143,14 +137,12 @@ public class MemUsageWidget extends Composite
+     * @param kb The amount of memory
+     * @return A string describing the amount of memory
+     */
+-   private String formatBigMemory(int kb)
+-   {
++   private String formatBigMemory(int kb) {
+       long mib = kb / 1024;
+-      if (mib >= 1024)
+-      {
++      if (mib >= 1024) {
+          // Memory usage is > 1GiB, format as XX.YY GiB
+          NumberFormat decimalFormat = NumberFormat.getFormat(".##");
+-         return decimalFormat.format((double)mib / (double)1024) + " GiB";
++         return decimalFormat.format((double) mib / (double) 1024) + " GiB";
+       }
+ 
+       // Memory usage is in MiB
+@@ -162,37 +154,32 @@ public class MemUsageWidget extends Composite
+     *
+     * @param suspended
+     */
+-   public void setSuspended(boolean suspended)
+-   {
++   public void setSuspended(boolean suspended) {
+       // Ignore if we're already in the desired state
+-      if (suspended == suspended_)
+-      {
++      if (suspended == suspended_) {
+          return;
+       }
+       suspended_ = suspended;
+ 
+       // If the widget isn't showing memory usage information
+-      if (usage_ == null)
+-      {
++      if (usage_ == null) {
+          return;
+       }
+ 
+-      if (suspended)
+-      {
++      if (suspended) {
+          MiniPieWidget pie = new MiniPieWidget(
+-            constants_.memoryInUseNone(),
+-            constants_.emptyPieChartNoMemoryUsage(),
+-            MEMORY_PIE_UNUSED_COLOR);
++               constants_.memoryInUseNone(),
++               constants_.emptyPieChartNoMemoryUsage(),
++               MEMORY_PIE_UNUSED_COLOR);
+          loadPieDisplay(pie);
+ 
+          menu_.setEnabled(false);
+-      }
+-      else
+-      {
++      } else {
+          menu_.setEnabled(true);
+       }
+    }
+ 
++   private long lastUpdate = 0;
+    private final UserPrefs prefs_;
+    private final HTMLPanel pieCrust_;
+    private final ToolbarMenuButton menu_;
