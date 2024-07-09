@@ -50,7 +50,7 @@ class PyGentropy(PythonPackage):
     )
 
     depends_on("python@3.10", type=("build", "run"))
-    depends_on("py-xgboost", type=("build", "run"))
+    depends_on("py-xgboost@1.7.3:2", type=("build", "run"))
     depends_on("py-wandb", type=("build", "run"))
     depends_on("py-typing-extensions", type=("build", "run"))
     depends_on("py-scipy", type=("build", "run"))
