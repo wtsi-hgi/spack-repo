@@ -105,6 +105,7 @@ class Rstudio(CMakePackage):
     patch("set.patch", when="@:2022.12.0")
     patch("const.patch", when="@:1.4.1743")
     patch("browserContext.patch", when="+server")
+    patch("debounceMem.patch", when="@2024.04.0+server")
 
     def cmake_args(self):
         args = [
