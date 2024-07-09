@@ -4,8 +4,6 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 from spack.package import *
-from spack.pkg.builtin.boost import Boost
-
 
 class RPhantompeakqualtools(RPackage):
     """This package computes informative enrichment and quality measures for
