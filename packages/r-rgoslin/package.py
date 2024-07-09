@@ -27,6 +27,3 @@ class RRgoslin(RPackage):
     def setup_build_environment(self, env):
         # the build does not work when conducted in parallel
         env.set("MAKEFLAGS", "-j1")
-
-    # def patch(self):
-    #     filter_file('rm -f "cppgoslin/domain/ClassesEnum.h"', "", "src/cppgoslin/makefile", string=True)
