@@ -7,17 +7,19 @@ from spack.package import *
 
 
 class RRmecabko(RPackage):
-	"""An 'Rcpp' Interface for Eunjeon Project
+    """An 'Rcpp' Interface for Eunjeon Project
 
-	An 'Rcpp' interface for Eunjeon project <http://eunjeon.blogspot.com/>.
+        An 'Rcpp' interface for Eunjeon project <http://eunjeon.blogspot.com/>.
     The 'mecab-ko' and 'mecab-ko-dic' is based on a C++ library,
     and part-of-speech tagging with them is useful when the spacing of source Korean text is not correct.
     This package provides part-of-speech tagging and tokenization function for Korean text.
-	"""
-	
-	cran = "RmecabKo" 
+    """
 
-	version("0.1.6.2", md5="6ab04875563dc7c99afe7a64d0a7105c")
+    cran = "RmecabKo"
 
-	depends_on("r-rcpp", type=("build", "run"))
-	depends_on("r-stringr", type=("build", "run"))
+    version("0.1.6.2", md5="6ab04875563dc7c99afe7a64d0a7105c")
+
+    depends_on("r-rcpp", type=("build", "run"))
+    depends_on("r-stringr", type=("build", "run"))
+    depends_on("mecab-ko", type=("build", "run", "link"))
+    depends_on("mecab-ko-dic", type=("build", "run"))
