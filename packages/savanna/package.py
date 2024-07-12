@@ -14,7 +14,6 @@ class Savanna(MakefilePackage):
     homepage = "https://github.com/CODARcode/savanna"
     git = "https://github.com/CODARcode/savanna.git"
 
-    version("1.0", tag="v1.0", submodules=True)
     version("0.5", tag="v0.5", submodules=True)
 
     variant("tau", default=False, description="Enable TAU profiling support")
