@@ -30,12 +30,6 @@ class RLdlinkr(RPackage):
     homepage = "https://cran.r-project.org/web/packages/LDlinkR/vignettes/LDlinkR.html"
     cran = "LDlinkR"
 
-    # FIXME: Add a list of GitHub accounts to
-    # notify when the package is updated.
-    # maintainers("github_user1", "github_user2")
-
-    # FIXME: Add the SPDX identifier of the project's license below.
-    # See https://spdx.org/licenses/ for a list.
     license("GPL-2, GPL-3")
 
     version("1.4.0", sha256="b25380a0897aebe0004ed933e1936c4bc2dcd4fb769417134ac31acdbd373229")
@@ -50,13 +44,5 @@ class RLdlinkr(RPackage):
     version("1.0.1", sha256="3399c30c4ebc5ede4b5f7d80427d5215cc4667043f75334897576887ce3fefcc")
     version("1.0.0", sha256="b578f43e15117efbd2433fdee7719604b5eb714809ce069b4b560e348fe91cc6")
 
-    # FIXME: Add dependencies if required.
-    # depends_on("r-foo", type=("build", "run"))
     depends_on("r-httr", type=("build", "run"))
     depends_on("r-r-utils", type=("build", "run"))
-
-    def configure_args(self):
-        # FIXME: Add arguments to pass to install via --configure-args
-        # FIXME: If not needed delete this function
-        args = []
-        return args
