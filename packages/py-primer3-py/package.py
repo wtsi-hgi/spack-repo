@@ -5,6 +5,7 @@
 
 from spack.package import *
 
+
 class PyPrimer3Py(PythonPackage):
     """Primer3-py is a Python-abstracted API for the popular Primer3 library. The intention is to provide a simple and reliable interface for automated oligo analysis and design."""
 
@@ -23,4 +24,5 @@ class PyPrimer3Py(PythonPackage):
 
     depends_on("python@3:", type=("build", "run"))
     depends_on("py-setuptools", type="build")
+    depends_on("py-setuptools@67:", type="build", when="@2:")
     depends_on("primer3", type=("build", "run"))
