@@ -25,21 +25,16 @@ from pathlib import Path
 
 
 class BwaMem2(MakefilePackage):
-    """FIXME: Put a proper description of your package here."""
+    """The tool bwa-mem2 is the next version of the bwa-mem algorithm in bwa. It produces alignment identical to bwa and is ~1.3-3.1x faster depending on the use-case, dataset and the running machine.
 
-    # FIXME: Add a proper url for your package's homepage here.
-    homepage = "https://www.example.com"
+    The original bwa was developed by Heng Li (@lh3). Performance enhancement in bwa-mem2 was primarily done by Vasimuddin Md (@yuk12) and Sanchit Misra (@sanchit-misra) from Parallel Computing Lab, Intel. bwa-mem2 is distributed under the MIT license."""
+
+    homepage = "https://github.com/bwa-mem2/bwa-mem2"
     url = "https://github.com/bwa-mem2/bwa-mem2/archive/refs/tags/v2.2.1.tar.gz"
     git = "https://github.com/bwa-mem2/bwa-mem2.git"
     submodules = True
 
-    # FIXME: Add a list of GitHub accounts to
-    # notify when the package is updated.
-    # maintainers("github_user1", "github_user2")
-
-    # FIXME: Add the SPDX identifier of the project's license below.
-    # See https://spdx.org/licenses/ for a list.
-    license("UNKNOWN")
+    license("MIT")
 
     version("2.2.1", tag="v2.2.1")
 
