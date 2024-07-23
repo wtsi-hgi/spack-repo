@@ -27,7 +27,8 @@ from pathlib import Path
 class BwaMem2(MakefilePackage):
     """The tool bwa-mem2 is the next version of the bwa-mem algorithm in bwa. It produces alignment identical to bwa and is ~1.3-3.1x faster depending on the use-case, dataset and the running machine.
 
-    The original bwa was developed by Heng Li (@lh3). Performance enhancement in bwa-mem2 was primarily done by Vasimuddin Md (@yuk12) and Sanchit Misra (@sanchit-misra) from Parallel Computing Lab, Intel. bwa-mem2 is distributed under the MIT license."""
+    The original bwa was developed by Heng Li (@lh3). Performance enhancement in bwa-mem2 was primarily done by Vasimuddin Md (@yuk12) and Sanchit Misra (@sanchit-misra) from Parallel Computing Lab, Intel. bwa-mem2 is distributed under the MIT license.
+    """
 
     homepage = "https://github.com/bwa-mem2/bwa-mem2"
     url = "https://github.com/bwa-mem2/bwa-mem2/archive/refs/tags/v2.2.1.tar.gz"
