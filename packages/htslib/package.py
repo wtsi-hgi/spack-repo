@@ -60,7 +60,7 @@ class Htslib(AutotoolsPackage):
     depends_on("zlib-api")
     depends_on("bzip2", when="@1.4:")
     depends_on("xz", when="@1.4:")
-    depends_on("curl", when="@1.3:+libcurl")
+    depends_on("curl+librtmp+libssh+ldap", when="@1.3:+libcurl")
     depends_on("openssl", when="+s3")
     depends_on("libdeflate", when="@1.8:+libdeflate")
 
@@ -68,12 +68,21 @@ class Htslib(AutotoolsPackage):
     depends_on("autoconf", when="@1.2")
     depends_on("automake", when="@1.2")
     depends_on("libtool", when="@1.2")
+    depends_on("llvm@18.1.3", when="@1.20:")
 
     conflicts("zlib-ng", when="@:1.12")  # https://github.com/samtools/htslib/issues/1257
 
     @property
     def libs(self):
         return find_libraries("libhts", root=self.prefix, recursive=True)
+
+    def setup_build_environment(self, env):
+        if self.spec.satisfies("@1.20:"):
+            # these are necessary for the clang compiler to work
+            for dep in self.spec.dependencies(deptype="link"):
+                query = self.spec[dep.name]
+                env.prepend_path("LIBRARY_PATH", query.libs.directories[0])
+                env.prepend_path("CPATH", query.headers.directories[0])
 
     # xz has the alias liblzma which is required in package config
     def setup_dependent_build_environment(self, env, dependent_spec):
@@ -109,5 +118,8 @@ class Htslib(AutotoolsPackage):
 
         if spec.satisfies("@1.8:"):
             args.extend(self.enable_or_disable("libdeflate"))
+
+        if spec.satisfies("@1.20:"):
+            args.append("CC={}/bin/clang".format(spec["llvm"].prefix))
 
         return args

@@ -75,6 +75,11 @@ class Samtools(Package):
     depends_on("htslib@1.4", when="@1.4")
     depends_on("htslib@1.3.1", when="@1.3.1")
 
+    def setup_build_environment(self, env):
+        if self.spec.version >= Version("1.20"):
+            env.prepend_path("CPATH", self.spec["ncurses"].prefix.include)
+            env.prepend_path("CPATH", self.spec["zlib-api"].prefix.include)
+
     def install(self, spec, prefix):
         if "+termlib" in spec["ncurses"]:
             curses_lib = "-lncursesw -ltinfow"
@@ -82,12 +87,15 @@ class Samtools(Package):
             curses_lib = "-lncursesw"
 
         if self.spec.version >= Version("1.3.1"):
-            configure(
+            configure_args = [
                 "--prefix={0}".format(prefix),
                 "--with-htslib={0}".format(self.spec["htslib"].prefix),
                 "--with-ncurses",
                 "CURSES_LIB={0}".format(curses_lib),
-            )
+            ]
+            if self.spec.version >= Version("1.20"):
+                configure_args.append("CC={}/bin/clang".format(spec["llvm"].prefix))
+            configure(*configure_args)
             make()
             make("install")
         else:
