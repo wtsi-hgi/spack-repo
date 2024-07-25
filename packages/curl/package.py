@@ -303,6 +303,7 @@ class Curl(NMakePackage, AutotoolsPackage):
     depends_on("nghttp2", when="+nghttp2")
     depends_on("libssh2", when="+libssh2")
     depends_on("libssh", when="+libssh")
+    depends_on("openldap", when="+ldap")
     depends_on("krb5", when="+gssapi")
     depends_on("rtmpdump", when="+librtmp")
 
