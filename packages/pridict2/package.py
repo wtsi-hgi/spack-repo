@@ -6,6 +6,7 @@
 from spack.package import *
 import os
 
+
 class Pridict2(PythonPackage):
     """PRIDICT2.0 is an advanced version of the original PRIDICT model designed for predicting the efficiency of prime editing guide RNAs. This repository allows you to run the model locally."""
 
@@ -34,13 +35,22 @@ class Pridict2(PythonPackage):
     patch("shbang.patch")
 
     def patch(self):
-        filter_file("#!/usr/bin/python", "#!"+self.spec["python"].prefix.bin.python, "pridict2_pegRNA_design.py", string=True)
+        filter_file(
+            "#!/usr/bin/python", "#!" + self.spec["python"].prefix.bin.python, "pridict2_pegRNA_design.py", string=True
+        )
 
         with open("pyproject.toml", "w") as fh:
-            fh.write("[project]\nname = \"Predict2\"\nversion = \"2024.03.05\"\ndependencies = [\"torch\", \"torchvision\", \"torchaudio\", \"tensorflow\"]\n[tool.setuptools.packages.find]\nwhere = [\".\"]")
-        
+            fh.write(
+                '[project]\nname = "Predict2"\nversion = "2024.03.05"\ndependencies = ["torch", "torchvision", "torchaudio", "tensorflow"]\n[tool.setuptools.packages.find]\nwhere = ["."]'
+            )
+
     @run_after("install")
     def post(self):
         mkdir(self.prefix.bin)
         os.chmod("pridict2_pegRNA_design.py", 0o755)
         install("pridict2_pegRNA_design.py", self.prefix.bin)
+        install(
+            "dataset/20230913_Library_Diverse_Ranking_Percentile.csv",
+            join_path(self.prefix.bin, "20230913_Library_Diverse_Ranking_Percentile.csv"),
+        )
+        install_tree("trained_models", join_path(self.prefix.bin, "trained_models"))
