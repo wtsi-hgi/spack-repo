@@ -69,7 +69,6 @@ class Htslib(AutotoolsPackage):
     depends_on("automake", when="@1.2")
     depends_on("libtool", when="@1.2")
     depends_on("llvm@18.1.3", when="@1.20:")
-    depends_on("htslib-plugin@4.2.7", type="build", when="@1.20:")
 
     conflicts("zlib-ng", when="@:1.12")  # https://github.com/samtools/htslib/issues/1257
 
@@ -124,6 +123,10 @@ class Htslib(AutotoolsPackage):
         if spec.satisfies("@1.20:"):
             args.append("CC={}/bin/clang".format(spec["llvm"].prefix))
             args.append("--enable-plugins")
-            args.append("--with-plugin-path={}:{}".format(self.prefix.libexec.htslib, spec["htslib-plugin"].prefix.lib))
+            args.append(
+                "--with-plugin-path={}:{}".format(
+                    self.prefix.libexec.htslib, "/software/badger/module-builds/htslib/1.20/libexec/htslib"
+                )
+            )
 
         return args
