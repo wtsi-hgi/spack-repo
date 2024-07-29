@@ -80,10 +80,10 @@ class Htslib(AutotoolsPackage):
     depends_on("llvm@18.1.3", when="@1.20:")
 
     # some extra libraries needed for the irods components
-    depends_on("boost+program_options+filesystem+regex", when="@1.20:")
-    depends_on("jansson", when="@1.20:")
-    depends_on("libbsd", when="@1.20:")
-    depends_on("libsodium", when="@1.20:")
+    depends_on("boost+program_options+filesystem+regex", when="@1.20:", type=("run"))
+    depends_on("jansson", when="@1.20:", type=("run"))
+    depends_on("libbsd", when="@1.20:", type=("run"))
+    depends_on("libsodium", when="@1.20:", type=("run"))
 
     conflicts("zlib-ng", when="@:1.12")  # https://github.com/samtools/htslib/issues/1257
 
@@ -91,19 +91,28 @@ class Htslib(AutotoolsPackage):
     def libs(self):
         return find_libraries("libhts", root=self.prefix, recursive=True)
 
+    @when("@1.20:")
     def setup_build_environment(self, env):
-        if self.spec.satisfies("@1.20:"):
-            # these are necessary for the clang compiler to work
-            for dep in self.spec.dependencies(deptype="link"):
-                query = self.spec[dep.name]
-                env.prepend_path("LIBRARY_PATH", query.libs.directories[0])
-                env.prepend_path("CPATH", query.headers.directories[0])
+        # these are necessary for the clang compiler to work
+        for dep in self.spec.dependencies(deptype="link"):
+            query = self.spec[dep.name]
+            env.prepend_path("LIBRARY_PATH", query.libs.directories[0])
+            env.prepend_path("CPATH", query.headers.directories[0])
 
     # xz has the alias liblzma which is required in package config
     def setup_dependent_build_environment(self, env, dependent_spec):
         if self.spec.satisfies("@1.4:"):
             env.prepend_path("PKG_CONFIG_PATH", join_path(self.spec["xz"].prefix, "lib", "pkgconfig"))
             env.prepend_path("PKG_CONFIG_PATH", join_path(self.spec["bzip2"].prefix, "lib", "pkgconfig"))
+
+    @when("@1.20:")
+    def setup_run_environment(self, env):
+        # these are necessary for the irods library to find run-time dependencies
+        for dep in self.spec.dependencies(deptype="run"):
+            query = self.spec[dep.name]
+            env.prepend_path("LD_LIBRARY_PATH", query.libs.directories[0])
+        irods_lib = "/software/badger/module-builds/irods-client-dev/4.2.7/usr/lib"
+        env.prepend_path("LD_LIBRARY_PATH", irods_lib)
 
     # v1.2 uses the automagically assembled tarball from .../archive/...
     # everything else uses the tarballs uploaded to the release
@@ -144,7 +153,5 @@ class Htslib(AutotoolsPackage):
     @when("@1.20:")
     @run_after("install")
     def install_plugins(self):
-        chmod = which("chmod")
         for so in Path("htslib-plugin-libs/lib").glob("*.so"):
-            chmod("444", str(so))
-            shutil.copy(so, self.prefix.libexec.htslib)
+            install(str(so), self.prefix.libexec.htslib)
