@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 from spack.package import *
+import shutil
+from pathlib import Path
 
 
 class Htslib(AutotoolsPackage):
@@ -57,6 +59,13 @@ class Htslib(AutotoolsPackage):
     variant("plugins", default=False, description="enable support for separately compiled plugins")
     variant("pic", default=True, description="Compile with PIC support")
 
+    resource(
+        when="@1.20:",
+        name="htslib-plugin-libs",
+        git="https://gitlab.internal.sanger.ac.uk/eh19/htslib-plugin-libs.git",
+        tag="v4.2.7",
+    )
+
     depends_on("zlib-api")
     depends_on("bzip2", when="@1.4:")
     depends_on("xz", when="@1.4:")
@@ -69,6 +78,12 @@ class Htslib(AutotoolsPackage):
     depends_on("automake", when="@1.2")
     depends_on("libtool", when="@1.2")
     depends_on("llvm@18.1.3", when="@1.20:")
+
+    # some extra libraries needed for the irods components
+    depends_on("boost+program_options+filesystem+regex", when="@1.20:")
+    depends_on("jansson", when="@1.20:")
+    depends_on("libbsd", when="@1.20:")
+    depends_on("libsodium", when="@1.20:")
 
     conflicts("zlib-ng", when="@:1.12")  # https://github.com/samtools/htslib/issues/1257
 
@@ -123,10 +138,13 @@ class Htslib(AutotoolsPackage):
         if spec.satisfies("@1.20:"):
             args.append("CC={}/bin/clang".format(spec["llvm"].prefix))
             args.append("--enable-plugins")
-            args.append(
-                "--with-plugin-path={}:{}".format(
-                    self.prefix.libexec.htslib, "/software/badger/module-builds/htslib/1.20/libexec/htslib"
-                )
-            )
 
         return args
+
+    @when("@1.20:")
+    @run_after("install")
+    def install_plugins(self):
+        chmod = which("chmod")
+        for so in Path("htslib-plugin-libs/lib").glob("*.so"):
+            chmod("444", str(so))
+            shutil.copy(so, self.prefix.libexec.htslib)
