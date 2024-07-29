@@ -84,6 +84,7 @@ class Htslib(AutotoolsPackage):
     depends_on("jansson", when="@1.20:", type=("run"))
     depends_on("libbsd", when="@1.20:", type=("run"))
     depends_on("libsodium", when="@1.20:", type=("run"))
+    depends_on("libarchive@3.7", when="@1.20:", type=("run"))
 
     conflicts("zlib-ng", when="@:1.12")  # https://github.com/samtools/htslib/issues/1257
 
