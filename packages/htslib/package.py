@@ -80,7 +80,7 @@ class Htslib(AutotoolsPackage):
     depends_on("llvm@18.1.3", when="@1.20:")
 
     # some extra libraries needed for the irods components
-    depends_on("boost+program_options+filesystem+regex", when="@1.20:", type=("run"))
+    depends_on("boost@1.74.0+program_options+filesystem+regex", when="@1.20:", type=("run"))
     depends_on("jansson", when="@1.20:", type=("run"))
     depends_on("libbsd", when="@1.20:", type=("run"))
     depends_on("libsodium", when="@1.20:", type=("run"))
