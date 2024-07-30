@@ -2463,3 +2463,222 @@ index 4e2772b..885e60d 100644
 +
 +if __name__ == "__main__":
 +    main()
+diff --git a/trained_models/DeepCas9_TestCode.py b/trained_models/DeepCas9_TestCode.py
+index b2fab7f..f064268 100644
+--- a/trained_models/DeepCas9_TestCode.py
++++ b/trained_models/DeepCas9_TestCode.py
+@@ -21,16 +21,14 @@ class DeepCas9(object):
+ 
+         def create_new_conv_layer(input_data, num_input_channels, num_filters, filter_shape, pool_shape, name):
+             # setup the filter input shape for tf.nn.conv_2d
+-            conv_filt_shape = [filter_shape[0], filter_shape[1], num_input_channels,
+-                               num_filters]
++            conv_filt_shape = [filter_shape[0], filter_shape[1], num_input_channels, num_filters]
+ 
+             # initialise weights and bias for the filter
+-            weights = tf.Variable(tf.truncated_normal(conv_filt_shape, stddev=0.03),
+-                                  name=name + '_W')
+-            bias = tf.Variable(tf.truncated_normal([num_filters]), name=name + '_b')
++            weights = tf.Variable(tf.truncated_normal(conv_filt_shape, stddev=0.03), name=name + "_W")
++            bias = tf.Variable(tf.truncated_normal([num_filters]), name=name + "_b")
+ 
+             # setup the convolutional layer operation
+-            out_layer = tf.nn.conv2d(input_data, weights, [1, 1, 1, 1], padding='VALID')
++            out_layer = tf.nn.conv2d(input_data, weights, [1, 1, 1, 1], padding="VALID")
+ 
+             # add the bias
+             out_layer += bias
+@@ -43,16 +41,15 @@ class DeepCas9(object):
+             # now perform max pooling
+             ksize = [1, pool_shape[0], pool_shape[1], 1]
+             strides = [1, 1, 2, 1]
+-            out_layer = tf.nn.avg_pool(out_layer, ksize=ksize, strides=strides,
+-                                       padding='SAME')
++            out_layer = tf.nn.avg_pool(out_layer, ksize=ksize, strides=strides, padding="SAME")
+             return out_layer
+ 
+         # def end: create_new_conv_layer
+ 
+-        L_pool_0 = create_new_conv_layer(self.inputs, 4, filter_num[0], [1, filter_size[0]], [1, 2], name='conv1')
+-        L_pool_1 = create_new_conv_layer(self.inputs, 4, filter_num[1], [1, filter_size[1]], [1, 2], name='conv2')
+-        L_pool_2 = create_new_conv_layer(self.inputs, 4, filter_num[2], [1, filter_size[2]], [1, 2], name='conv3')
+-        with tf.variable_scope('Fully_Connected_Layer1'):
++        L_pool_0 = create_new_conv_layer(self.inputs, 4, filter_num[0], [1, filter_size[0]], [1, 2], name="conv1")
++        L_pool_1 = create_new_conv_layer(self.inputs, 4, filter_num[1], [1, filter_size[1]], [1, 2], name="conv2")
++        L_pool_2 = create_new_conv_layer(self.inputs, 4, filter_num[2], [1, filter_size[2]], [1, 2], name="conv3")
++        with tf.variable_scope("Fully_Connected_Layer1"):
+             layer_node_0 = int((length - filter_size[0]) / 2) + 1
+             node_num_0 = layer_node_0 * filter_num[0]
+             layer_node_1 = int((length - filter_size[1]) / 2) + 1
+@@ -62,7 +59,7 @@ class DeepCas9(object):
+             L_flatten_0 = tf.reshape(L_pool_0, [-1, node_num_0])
+             L_flatten_1 = tf.reshape(L_pool_1, [-1, node_num_1])
+             L_flatten_2 = tf.reshape(L_pool_2, [-1, node_num_2])
+-            L_flatten = tf.concat([L_flatten_0, L_flatten_1, L_flatten_2], 1, name='concat')
++            L_flatten = tf.concat([L_flatten_0, L_flatten_1, L_flatten_2], 1, name="concat")
+             node_num = node_num_0 + node_num_1 + node_num_2
+             W_fcl1 = tf.get_variable("W_fcl1", shape=[node_num, node_1])
+             B_fcl1 = tf.get_variable("B_fcl1", shape=[node_1])
+@@ -71,8 +68,7 @@ class DeepCas9(object):
+             dropout_layer1 = tf.keras.layers.Dropout(0.3)
+             L_fcl1_drop = dropout_layer1(L_fcl1, training=self.is_training)
+ 
+-
+-        with tf.variable_scope('Fully_Connected_Layer2'):
++        with tf.variable_scope("Fully_Connected_Layer2"):
+             W_fcl2 = tf.get_variable("W_fcl2", shape=[node_1, node_2])
+             B_fcl2 = tf.get_variable("B_fcl2", shape=[node_2])
+             L_fcl2_pre = tf.nn.bias_add(tf.matmul(L_fcl1_drop, W_fcl2), B_fcl2)
+@@ -80,8 +76,7 @@ class DeepCas9(object):
+             dropout_layer2 = tf.keras.layers.Dropout(0.3)
+             L_fcl2_drop = dropout_layer2(L_fcl2, training=self.is_training)
+ 
+-
+-        with tf.variable_scope('Output_Layer'):
++        with tf.variable_scope("Output_Layer"):
+             W_out = tf.get_variable("W_out", shape=[node_2, 1])  # , initializer=tf.contrib.layers.xavier_initializer())
+             B_out = tf.get_variable("B_out", shape=[1])  # , initializer=tf.contrib.layers.xavier_initializer())
+             self.outputs = tf.nn.bias_add(tf.matmul(L_fcl2_drop, W_out), B_out)
+@@ -89,11 +84,13 @@ class DeepCas9(object):
+         # Define loss function and optimizer
+         self.obj_loss = tf.reduce_mean(tf.square(self.targets - self.outputs))
+         self.optimizer = tf.train.AdamOptimizer(l_rate).minimize(self.obj_loss)
++
+     # def end: def __init__
+ 
+ 
+ # class end: DeepCas9
+ 
++
+ def Model_Finaltest(sess, TEST_X, filter_size, filter_num, if3d, model, args, load_episode, best_model_path):
+     test_batch = 500
+     test_spearman = 0.0
+@@ -101,8 +98,8 @@ def Model_Finaltest(sess, TEST_X, filter_size, filter_num, if3d, model, args, lo
+     TEST_Z = np.zeros((TEST_X.shape[0], 1), dtype=float)
+ 
+     for i in range(int(np.ceil(float(TEST_X.shape[0]) / float(test_batch)))):
+-        Dict = {model.inputs: TEST_X[i * test_batch:(i + 1) * test_batch], model.is_training: False}
+-        TEST_Z[i * test_batch:(i + 1) * test_batch] = sess.run([model.outputs], feed_dict=Dict)[0]
++        Dict = {model.inputs: TEST_X[i * test_batch : (i + 1) * test_batch], model.is_training: False}
++        TEST_Z[i * test_batch : (i + 1) * test_batch] = sess.run([model.outputs], feed_dict=Dict)[0]
+ 
+     predictlist = tuple(TEST_Z.reshape([np.shape(TEST_Z)[0]]))
+     return predictlist
+@@ -119,7 +116,6 @@ def preprocess_seq(data):
+     # print(np.shape(data), len(data), length)
+     for l in range(len(data)):
+         for i in range(length):
+-
+             try:
+                 data[l][i]
+             except:
+@@ -154,21 +150,23 @@ def getseq(filenum, deepcas9seqlist, length):
+ 
+ # def end: getseq
+ 
++
+ def runprediction(deepcas9seqlist, usecase):
+-    ########## 
++    ##########
+     # Following lines were at start of script before
+     np.set_printoptions(threshold=np.inf, linewidth=np.nan)
++    repo_dir = os.path.dirname(__file__)
+ 
+     ## Run Parameters ##
+     TEST_NUM_SET = [0]  # List can be expanded in case of multiple test parameters
+-    best_model_path_list = ['./trained_models/DeepCas9_Final/']
++    best_model_path_list = [repo_dir + "/DeepCas9_Final/"]
+ 
+     ##########
+ 
+     # TensorFlow config
+     conf = tf.ConfigProto()
+     conf.gpu_options.allow_growth = True
+-    os.environ['CUDA_VISIBLE_DEVICES'] = '0'
++    os.environ["CUDA_VISIBLE_DEVICES"] = "0"
+     best_model_cv = 0.0
+     best_model_list = []
+ 
+@@ -177,7 +175,9 @@ def runprediction(deepcas9seqlist, usecase):
+     #     if "meta" in modelname:
+     #         best_model_list.append(modelname[:-5])
+     # loop end: best_model_path
+-    best_model_list = ['PreTrain-Final-False-3-5-7-100-70-40-0.001-550-True-80-60', ]
++    best_model_list = [
++        "PreTrain-Final-False-3-5-7-100-70-40-0.001-550-True-80-60",
++    ]
+     TEST_X = []
+     TEST_X_nohot = []
+     for TEST_NUM in TEST_NUM_SET:
+@@ -189,13 +189,13 @@ def runprediction(deepcas9seqlist, usecase):
+     for index in range(len(best_model_list)):
+         best_model_path = best_model_path_list[index]
+         best_model = best_model_list[index]
+-        valuelist = best_model.split('-')
++        valuelist = best_model.split("-")
+         fulllist = []
+ 
+         for value in valuelist:
+-            if value == 'True':
++            if value == "True":
+                 value = True
+-            elif value == 'False':
++            elif value == "False":
+                 value = False
+             else:
+                 try:
+@@ -211,8 +211,20 @@ def runprediction(deepcas9seqlist, usecase):
+         # print(fulllist[2:])
+ 
+         if fulllist[2:][-3] is True:
+-            if3d, filter_size_1, filter_size_2, filter_size_3, filter_num_1, filter_num_2, filter_num_3, l_rate, load_episode, inception, node_1, node_2 = fulllist[
+-                                                                                                                                                           2:]
++            (
++                if3d,
++                filter_size_1,
++                filter_size_2,
++                filter_size_3,
++                filter_num_1,
++                filter_num_2,
++                filter_num_3,
++                l_rate,
++                load_episode,
++                inception,
++                node_1,
++                node_2,
++            ) = fulllist[2:]
+             filter_size = [filter_size_1, filter_size_2, filter_size_3]
+             filter_num = [filter_num_1, filter_num_2, filter_num_3]
+         else:
+@@ -221,23 +233,22 @@ def runprediction(deepcas9seqlist, usecase):
+ 
+         args = [filter_size, filter_num, l_rate, load_episode]
+         tf.reset_default_graph()
+-        with tf.Session(config=conf) as sess:
+ 
++        with tf.Session(config=conf) as sess:
+             sess.run(tf.global_variables_initializer())
+             model = DeepCas9(filter_size, filter_num, node_1, node_2, args[2])
+ 
+             saver = tf.train.Saver()
+             # saver.restore(sess, best_model_path + best_model+'.meta')
+-            if usecase == 'website':
+-                saver.restore(sess,
+-                              './predictions/pridict/DeepCas9_Final/' + best_model)
+-            elif usecase == 'commandline':
+-                saver.restore(sess,
+-                              './trained_models/DeepCas9_Final/' + best_model)
++            if usecase == "website":
++                saver.restore(sess, "./predictions/pridict/DeepCas9_Final/" + best_model)
++            elif usecase == "commandline":
++                saver.restore(sess, repo_dir + "/DeepCas9_Final/" + best_model)
+             TEST_Y = []
+             for i in range(len(TEST_NUM_SET)):
+-                predictionlist = Model_Finaltest(sess, TEST_X[i], filter_size, filter_num, if3d, model, args,
+-                                                 load_episode, best_model_path)
++                predictionlist = Model_Finaltest(
++                    sess, TEST_X[i], filter_size, filter_num, if3d, model, args, load_episode, best_model_path
++                )
+             # loop end: i
+ 
+     return predictionlist
