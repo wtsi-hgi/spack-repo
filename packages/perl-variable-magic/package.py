@@ -3,40 +3,14 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-# ----------------------------------------------------------------------------
-# If you submit this package back to Spack as a pull request,
-# please first remove this boilerplate and all FIXME comments.
-#
-# This is a template package file for Spack.  We've put "FIXME"
-# next to all the things you'll want to change. Once you've handled
-# them, you can save this file and test your package like this:
-#
-#     spack install perl-variable-magic
-#
-# You can edit this file again by typing:
-#
-#     spack edit perl-variable-magic
-#
-# See the Spack documentation for more information on packaging.
-# ----------------------------------------------------------------------------
-
 from spack.package import *
 
 
 class PerlVariableMagic(PerlPackage):
-    """FIXME: Put a proper description of your package here."""
+    """Variable::Magic - Associate user-defined magic to variables from Perl."""
 
-    # FIXME: Add a proper url for your package's homepage here.
-    homepage = "https://www.example.com"
+    homepage = "https://metacpan.org/dist/Variable-Magic"
     url = "https://cpan.metacpan.org/authors/id/V/VP/VPIT/Variable-Magic-0.64.tar.gz"
-
-    # FIXME: Add a list of GitHub accounts to
-    # notify when the package is updated.
-    # maintainers("github_user1", "github_user2")
-
-    # FIXME: Add the SPDX identifier of the project's license below.
-    # See https://spdx.org/licenses/ for a list.
-    license("UNKNOWN")
 
     version("0.64", sha256="9f7853249c9ea3b4df92fb6b790c03a60680fc029f44c8bf9894dccf019516bd")
     version("0.63", sha256="ba4083b2c31ff2694f2371333d554c826aaf24b4d98d03e48b5b4a43a2a0e679")
@@ -103,11 +77,3 @@ class PerlVariableMagic(PerlPackage):
     version("0.02", sha256="e0a12ea95de0f3a4cce6a03bceafce22e341230c625723d1c71346b53f2f1256")
     version("0.01", sha256="dba1ca85cf04af2e2d5413d45684a715e1a9866d40a7c193dd6d49a3cc978919")
 
-    # FIXME: Add dependencies if required:
-    # depends_on("perl-foo", type=("build", "run"))
-
-    def configure_args(self):
-        # FIXME: Add non-standard arguments
-        # FIXME: If not needed delete this function
-        args = []
-        return args
