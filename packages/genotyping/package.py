@@ -72,3 +72,7 @@ class Genotyping(PerlPackage):
             move(Path(temp_dir, "r"), ".")
         filter_file("../r", "r", "Build.PL", string=True)
         filter_file("/nfs/srpipe_data/logs/user_session_logs/", "/var/tmp", "lib/WTSI/NPG/Utilities.pm", string=True)
+
+    def setup_run_environment(self, env):
+        # Set up theLocation of the root directory for NPG genomereference repository
+        env.set("NPG_REPOSITORY_ROOT", "/nfs/srpipe_references/references/")
