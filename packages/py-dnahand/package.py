@@ -32,14 +32,9 @@ class PyDnahand(PythonPackage):
 
     version("20240801", commit="091566cf4d859671033d52f7e93d8acf886fdb19")
 
-    # depends_on("genotyping")
     depends_on("perl-list-allutils", type=("build", "run"))
     depends_on("perl-json", type=("build", "run"))
     depends_on("perl-pod-usage", type=("build", "run"))
-
-    depends_on("akt")
-    depends_on("bcftools@1.20")
-    depends_on("plink@1.9-beta6.27")
 
     depends_on("py-setuptools", type="build")
     depends_on("py-seaborn", type=("build", "run"))
@@ -49,7 +44,8 @@ class PyDnahand(PythonPackage):
         for f in Path(".").glob("**/*.py"):
             for item in ["handprint", "analysis", "download", "pipeline", "utils"]:
                 filter_file(f"^from {item}(?=.* import)", f"from dnahand.{item}", str(f))
-                filter_file(f"^import {item}", f"import dnahand.{item}", str(f))
+                filter_file(f"^import {item}$", f"import dnahand.{item} as {item}", str(f))
+            filter_file(f"^import handprint\.", f"import dnahand.handprint.", str(f))
 
         with open("pyproject.toml", "w") as fh:
             fh.write(
