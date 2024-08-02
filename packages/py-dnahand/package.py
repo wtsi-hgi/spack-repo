@@ -52,6 +52,14 @@ class PyDnahand(PythonPackage):
                 '[project]\nname = "DNAHAND"\nversion = "1.0"\ndependencies = []\n[project.scripts]\ndnahand = "dnahand.cli:main"'
             )
 
+        # ignore kinship delete errors
+        filter_file(
+            "shutil.rmtree(kinship_directory)",
+            "shutil.rmtree(kinship_directory, ignore_errors=True)",
+            "dnahand/pipeline.py",
+            string=True,
+        )
+
     @run_after("install")
     def install_baton(self):
         install(self.package_dir + "/baton", self.prefix.bin)
