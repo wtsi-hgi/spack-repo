@@ -48,3 +48,6 @@ class PerlListAllutils(PerlPackage):
     version("0.03", sha256="4806cc718c5b7530d0bec48d3f7682e7f55a489be4014519d68f937c11c2a115")
     version("0.02", sha256="5d7e231c80a78f36ea31f1698e0e7abda4ab66858574cebc9fe905aecad073d2")
     version("0.01", sha256="2ae4f7018f3da88c259f5af40d95298e7469bf070eb4bc54b11ed1ba9e332f63")
+
+    depends_on("perl-list-someutils", type=("build", "run"))
+    depends_on("perl-list-utilsby", type=("build", "run"))
