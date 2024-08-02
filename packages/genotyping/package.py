@@ -46,8 +46,17 @@ class Genotyping(PerlPackage):
     version("1.12.0", sha256="da209c32919fb72c93aa9d0f3c73d02f291e50caef33e99e3448dac602ea0c22")
 
     depends_on("perl-module-build", type="build")
-    depends_on("perl-list-allutils", type="build")
-    depends_on("perl-dnap-utilities", type="build")
+    depends_on("perl-list-allutils", type=("build", "run"))
+    depends_on("perl-list-moreutils", type=("build", "run"))
+    depends_on("perl-dnap-utilities", type=("build", "run"))
+    depends_on("perl-file-slurp", type=("build", "run"))
+    depends_on("perl-json", type=("build", "run"))
+    depends_on("perl-log-log4perl", type=("build", "run"))
+    depends_on("perl-irods-wrap", type=("build", "run"))
+    depends_on("perl-text-csv", type=("build", "run"))
+    depends_on("perl-uuid", type=("build", "run"))
+    depends_on("perl-uri-find", type=("build", "run"))
+    depends_on("perl-npg-tracking", type=("build", "run"))
 
     def patch(self):
         with tempfile.TemporaryDirectory() as temp_dir:
@@ -62,3 +71,4 @@ class Genotyping(PerlPackage):
                 move(i, ".")
             move(Path(temp_dir, "r"), ".")
         filter_file("../r", "r", "Build.PL", string=True)
+        filter_file("/nfs/srpipe_data/logs/user_session_logs/", "/var/tmp", "lib/WTSI/NPG/Utilities.pm", string=True)

@@ -1,50 +1,31 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-# ----------------------------------------------------------------------------
-# If you submit this package back to Spack as a pull request,
-# please first remove this boilerplate and all FIXME comments.
-#
-# This is a template package file for Spack.  We've put "FIXME"
-# next to all the things you'll want to change. Once you've handled
-# them, you can save this file and test your package like this:
-#
-#     spack install perl-ipc-run
-#
-# You can edit this file again by typing:
-#
-#     spack edit perl-ipc-run
-#
-# See the Spack documentation for more information on packaging.
-# ----------------------------------------------------------------------------
-
 from spack.package import *
 
 
-class PerlIpcRun(Package):
-    """FIXME: Put a proper description of your package here."""
+class PerlIpcRun(PerlPackage):
+    """IPC::Run allows you to run and interact with child processes using
+    files, pipes, and pseudo-ttys. Both system()-style and scripted usages are
+    supported and may be mixed. Likewise, functional and OO API styles are both
+    supported and may be mixed."""
 
-    # FIXME: Add a proper url for your package's homepage here.
-    homepage = "https://www.example.com"
-    url = "perl-ipc-run3"
+    homepage = "https://metacpan.org/pod/IPC::Run"
+    url = "https://cpan.metacpan.org/authors/id/T/TO/TODDR/IPC-Run-20180523.0.tar.gz"
 
-    # FIXME: Add a list of GitHub accounts to
-    # notify when the package is updated.
-    # maintainers("github_user1", "github_user2")
+    license("GPL-1.0-or-later OR Artistic-1.0-Perl")
 
-    # FIXME: Add the SPDX identifier of the project's license below.
-    # See https://spdx.org/licenses/ for a list.
-    license("UNKNOWN")
+    version(
+        "20231003.0", sha256="eb25bbdf5913d291797ef1bfe998f15130b455d3ed02aacde6856f0b25e4fe57"
+    )
+    version(
+        "20220807.0", sha256="277d781dbbc98af18e979c7ef36f222513d7361742c52507c3348b265f6f5e69"
+    )
+    version(
+        "20180523.0", sha256="3850d7edf8a4671391c6e99bb770698e1c45da55b323b31c76310913349b6c2f"
+    )
 
-    # FIXME: Add proper versions here.
-    # version("1.2.4")
-
-    # FIXME: Add dependencies if required.
-    # depends_on("foo")
-
-    def install(self, spec, prefix):
-        # FIXME: Unknown build system
-        make()
-        make("install")
+    depends_on("perl-io-tty", type=("build", "run"))
+    depends_on("perl-readonly", type="build")

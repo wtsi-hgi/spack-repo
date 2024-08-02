@@ -23,3 +23,5 @@ class PerlNamespaceAutoclean(PerlPackage):
     depends_on("perl-namespace-clean@0.20:", type=("build", "run", "test"))
     depends_on("perl-sub-identify", type=("build", "run", "test"))
     depends_on("perl-test-needs", type=("build", "test"))
+    depends_on("perl-module-implementation", type=("build", "run", "test"))
+    depends_on("perl-package-stash", type=("build", "run", "test"))

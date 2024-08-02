@@ -45,12 +45,5 @@ class PerlDnapUtilities(PerlPackage):
     version("0.4.1", sha256="e0cff59687ea7e1475b72d5747768e812ebd74d6909ea26d56c2e9f8281ccba2")
 
     depends_on("perl-module-build", type="build")
-
-    # FIXME: Add additional dependencies if required:
-    # depends_on("perl-foo", type=("build", "run"))
-
-    def configure_args(self):
-        # FIXME: Add non-standard arguments
-        # FIXME: If not needed delete this function
-        args = []
-        return args
+    depends_on("perl-moose", type=("build", "run"))
+    depends_on("perl-ipc-run", type=("build", "run"))
