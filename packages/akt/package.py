@@ -32,14 +32,14 @@ class Akt(MakefilePackage):
     license("GPL-3.0")
 
     version("0.3.3", sha256="1b077dde944cb13132e4fb5b47d4930c1ecfc74b299c95fe3cc7bf5c17b8f710")
-    version("0.3.2", sha256="a61f479208d68939c2d557ba72d232072f1eec53c626ff078ee7f09b5cfac716")
 
     depends_on("zlib-api")
 
     def patch(self):
         which("chmod")("+x", "htslib-1.6/version.sh")
         filter_file("$(shell git describe --abbrev=4 --always )", "v{}".format(self.version), "Makefile", string=True)
-
+        filter_file("#define BGZF_MAX_BLOCK_SIZE 0x10000", "#define BGZF_MAX_BLOCK_SIZE 74000", "htslib-1.6/htslib/bgzf.h", string=True) # https://github.com/samtools/htslib/issues/1257#issuecomment-804769847
+        
     def install(self, spec, prefix):
         mkdirp(prefix.bin)
         install("akt", prefix.bin)
