@@ -55,6 +55,7 @@ class Samtools(Package):
 
     # htslib became standalone @1.3.1, must use corresponding version
     depends_on("htslib@1.20", when="@1.20")
+    depends_on("htslib-plugins", when="@1.20")
     depends_on("htslib@1.19.1", when="@1.19.2")
     depends_on("htslib@1.19", when="@1.19")
     depends_on("htslib@1.18", when="@1.18")

@@ -59,13 +59,6 @@ class Htslib(AutotoolsPackage):
     variant("plugins", default=False, description="enable support for separately compiled plugins")
     variant("pic", default=True, description="Compile with PIC support")
 
-    resource(
-        when="@1.20:",
-        name="htslib-plugin-libs",
-        git="https://gitlab.internal.sanger.ac.uk/eh19/htslib-plugin-libs.git",
-        tag="v4.2.7",
-    )
-
     depends_on("zlib-api")
     depends_on("bzip2", when="@1.4:")
     depends_on("xz", when="@1.4:")
@@ -78,13 +71,6 @@ class Htslib(AutotoolsPackage):
     depends_on("automake", when="@1.2")
     depends_on("libtool", when="@1.2")
     depends_on("llvm@18.1.3", when="@1.20:")
-
-    # some extra libraries needed for the irods components
-    depends_on("boost@1.74.0+program_options+filesystem+regex", when="@1.20:", type=("run"))
-    depends_on("jansson", when="@1.20:", type=("run"))
-    depends_on("libbsd", when="@1.20:", type=("run"))
-    depends_on("libsodium", when="@1.20:", type=("run"))
-    depends_on("libarchive@3.7", when="@1.20:", type=("run"))
 
     conflicts("zlib-ng", when="@:1.12")  # https://github.com/samtools/htslib/issues/1257
 
@@ -105,15 +91,6 @@ class Htslib(AutotoolsPackage):
         if self.spec.satisfies("@1.4:"):
             env.prepend_path("PKG_CONFIG_PATH", join_path(self.spec["xz"].prefix, "lib", "pkgconfig"))
             env.prepend_path("PKG_CONFIG_PATH", join_path(self.spec["bzip2"].prefix, "lib", "pkgconfig"))
-
-    @when("@1.20:")
-    def setup_run_environment(self, env):
-        # these are necessary for the irods library to find run-time dependencies
-        for dep in self.spec.dependencies(deptype="run"):
-            query = self.spec[dep.name]
-            env.prepend_path("LD_LIBRARY_PATH", query.libs.directories[0])
-        irods_lib = "/software/badger/module-builds/irods-client-dev/4.2.7/usr/lib"
-        env.prepend_path("LD_LIBRARY_PATH", irods_lib)
 
     # v1.2 uses the automagically assembled tarball from .../archive/...
     # everything else uses the tarballs uploaded to the release
@@ -151,8 +128,6 @@ class Htslib(AutotoolsPackage):
 
         return args
 
-    @when("@1.20:")
-    @run_after("install")
-    def install_plugins(self):
-        for so in Path("htslib-plugin-libs/lib").glob("*.so"):
-            install(str(so), self.prefix.libexec.htslib)
+    def setup_run_environment(self, env):
+        env.prepend_path("HTS_PATH", self.prefix.libexec.htslib)
+
