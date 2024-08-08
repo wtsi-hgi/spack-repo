@@ -45,7 +45,7 @@ class IrodsClient(Package):
         for dep in self.spec.dependencies(deptype="run"):
             query = self.spec[dep.name]
             env.prepend_path("LD_LIBRARY_PATH", query.libs.directories[0])
-        env.prepend_path("LD_LIBRARY_PATH", self.prefix.lib)
+        env.prepend_path("LD_LIBRARY_PATH", self.prefix.usr.lib)
 
     def install(self, spec, prefix):
         install_tree(".", prefix)

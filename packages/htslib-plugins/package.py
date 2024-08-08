@@ -43,7 +43,7 @@ class HtslibPlugins(MakefilePackage):
         makefile.filter("/usr/local", self.prefix, string=True)
 
     def setup_build_environment(self, env):
-        env.set("IRODS_HOME", self.spec["irods-client"].prefix)
+        env.set("IRODS_HOME", self.spec["irods-client"].prefix.usr)
 
     def setup_run_environment(self, env):
         env.prepend_path("HTS_PATH", self.prefix.libexec.htslib)
