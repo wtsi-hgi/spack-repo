@@ -35,4 +35,4 @@ class Atkmm(MesonPackage):
 
     depends_on("atk")
     depends_on("cmake", type="build")
-    depends_on("glibmm@:2.66")
+    depends_on("glibmm@2.66")
