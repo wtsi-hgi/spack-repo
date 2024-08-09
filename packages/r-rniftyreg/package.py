@@ -18,7 +18,8 @@ class RRniftyreg(RPackage):
 	cran = "RNiftyReg" 
 
 	version("2.8.1", md5="556637d2c79bf428592c27e78ba1c974")
-
+	
+	depends_on("zlib-api")
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rnifti", type=("build", "run"))
 	depends_on("r-ore", type=("build", "run"))
