@@ -10,14 +10,14 @@ from spack.package import *
 class RSaige(RPackage):
     """SAIGE is an R package developed with Rcpp for genome-wide association tests in large-scale data sets and biobanks. The method
 
-accounts for sample relatedness based on the generalized mixed models
-allows for model fitting with either full or sparse genetic relationship matrix (GRM)
-works for quantitative and binary traits
-handles case-control imbalance of binary traits
-computationally efficient for large data sets
-performs single-variant association tests
-provides effect size estimation through Firth’s Bias-Reduced Logistic Regression
-performs conditional association analysis"""
+    accounts for sample relatedness based on the generalized mixed models
+    allows for model fitting with either full or sparse genetic relationship matrix (GRM)
+    works for quantitative and binary traits
+    handles case-control imbalance of binary traits
+    computationally efficient for large data sets
+    performs single-variant association tests
+    provides effect size estimation through Firth’s Bias-Reduced Logistic Regression
+    performs conditional association analysis"""
 
     homepage = "https://saigegit.github.io/SAIGE-doc/"
     url = "https://github.com/saigegit/SAIGE/archive/refs/tags/v1.3.3.tar.gz"
@@ -34,7 +34,7 @@ performs conditional association analysis"""
     depends_on("gcc@5.4:", type=("build", "run"))
     depends_on("cmake@3.14.1", type=("build", "run"))
     depends_on("cget", type=("build", "run"))
-    depends_on("savvy", type=("build", "run"))
+    depends_on("intel-oneapi-mkl")
     depends_on("r-rcpp@1.0.7:", type=("build", "run"))
     depends_on("r-rcpparmadillo", type=("build", "run"))
     depends_on("r-rcppparallel", type=("build", "run"))
@@ -45,6 +45,8 @@ performs conditional association analysis"""
     depends_on("r-bh", type=("build", "run"))
     depends_on("r-optparse", type=("build", "run"))
     depends_on("r-skat", type=("build", "run"))
+    depends_on("r-metaskat", type=("build", "run"))
+    depends_on("r-rsqlite", type=("build", "run"))
     depends_on("r-qlcmatrix", type=("build", "run"))
     depends_on("r-rhpcblasctl", type=("build", "run"))
     depends_on("r-roxygen2", type=("build", "run"))
@@ -52,5 +54,6 @@ performs conditional association analysis"""
     depends_on("r-devtools", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-dbplyr", type=("build", "run"))
-    
 
+    def patch(self):
+        filter_file("-llapack", "-lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lm", "src/Makevars", string=True)
