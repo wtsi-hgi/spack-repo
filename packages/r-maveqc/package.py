@@ -24,7 +24,7 @@ class RMaveqc(RPackage):
 
     depends_on("r-configr", type=("build", "run"))
     depends_on("r-vroom@1.6.3:", type=("build", "run"))
-    depends_on("r-data-table", type=("build", "run"))
+    depends_on("r-data-table@:1.15.0", type=("build", "run"))
     depends_on("r-ckmeans-1d-dp", type=("build", "run"))
     depends_on("r-gplots", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
