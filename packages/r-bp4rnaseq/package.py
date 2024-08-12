@@ -25,7 +25,7 @@ class RBp4rnaseq(RPackage):
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-reticulate", type=("build", "run"))
 	depends_on("sratoolkit@2.10.3:", type=("build", "link", "run"))
-	depends_on("entrezdirect@13.3:", type=("build", "link", "run"))
+	depends_on("entrezdirect", type=("build", "link", "run"))
 	depends_on("fastqc@0.11.9:", type=("build", "link", "run"))
 	depends_on("py-cutadapt@2.10:", type=("build", "link", "run"))
 	depends_on("py-datasets", type=("build", "link", "run"))
