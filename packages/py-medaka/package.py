@@ -29,7 +29,6 @@ class PyMedaka(PythonPackage):
     version("1.9.1", sha256="1018c07267d24cb4607ae823ced01a1789939b5f8143d1c240ce243dc1160ef5")
     version("1.8.2", sha256="73e5669447c4b3a948da02d64cf6d416a64c303a6938d20607c17b3dd9f25241")
     version("1.7.3", sha256="6caa50193b85d71a9ba00ac3192e13ec3193202bed6fbc216fc22781da9dc3e4")
-    version("1.7.2", sha256="7629546ed9193ffb6b1f881a6ce74b7d13d94972e032556098577ddb43bee763")
 
     depends_on("python@3.6:3.9", type=("build", "run"))
     depends_on("py-setuptools", type="build")
