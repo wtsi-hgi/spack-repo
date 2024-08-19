@@ -47,7 +47,9 @@ class PyMedaka(PythonPackage):
     depends_on("py-pyspoa@0.0.3:", when="target=x86_64:", type=("build", "run"))
     depends_on("py-pyspoa@0.0.3:", when="target=ppc64le:", type=("build", "run"))
     depends_on("py-requests", type=("build", "run"))
-    depends_on("samtools", type=("build", "run"))
+    depends_on("py-wurlitzer", type=("build", "run"))
+    depends_on("py-pyabpoa", type=("build", "run"))
+    depends_on("samtools", type=("build", "run", "link"))
     depends_on("htslib", type=("build", "run", "link"))
 
     def patch(self):
