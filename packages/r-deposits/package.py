@@ -48,7 +48,4 @@ class RDeposits(RPackage):
     depends_on("r-rmarkdown", type=("build", "run"))
     depends_on("r-testthat", type=("build", "run"))
 
-    # def install(self, spec, prefix):
-    #     # FIXME: Unknown build system
-    #     make()
-    #     make("install")
+
