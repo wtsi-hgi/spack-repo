@@ -43,4 +43,4 @@ class PyPyqt6(SIPPackage):
 
     def configure_args(self):
         # https://www.riverbankcomputing.com/static/Docs/PyQt6/installation.html
-        return ["--confirm-license", "--no-make", "--qmake", self.spec["qt-base"].prefix.bin.qmake]
+        return ["--confirm-license", "--no-make", "--qmake", self.spec["qt-base"].prefix.bin.qmake, "--scripts-dir", self.prefix.bin]
