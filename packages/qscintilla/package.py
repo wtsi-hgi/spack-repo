@@ -29,10 +29,10 @@ class Qscintilla(QMakePackage):
 
     depends_on("qmake")
     with when("+python"):
-        depends_on("qt+opengl", when="^[virtuals=qmake] qt")
-        depends_on("qt-base +opengl", when="^[virtuals=qmake] qt-base")
+        depends_on("qt+opengl")
+        # depends_on("qt-base +opengl", when="^[virtuals=qmake] qt-base")
 
-    depends_on("py-pyqt6", type=("build", "run"), when="+python ^qt-base")
+    # depends_on("py-pyqt6", type=("build", "run"), when="+python ^qt-base") 
     depends_on("py-pyqt-builder", type="build", when="+python")
     depends_on("py-pyqt5", type=("build", "run"), when="+python ^qt@5")
     depends_on("python", type=("build", "run"), when="+python")
@@ -93,6 +93,7 @@ class Qscintilla(QMakePackage):
             py_pyqtx = "py-pyqt5"
             pyqtx = "PyQt5"
             ftoml = "pyproject-qt5.toml"
+
         elif "^py-pyqt6" in self.spec:
             qtx = "qt6"
             py_pyqtx = "py-pyqt6"
