@@ -43,6 +43,7 @@ class Qscintilla(QMakePackage):
 
     # https://www.riverbankcomputing.com/static/Downloads/QScintilla/2.12.0/ChangeLog
     conflicts("^qt@4", when="@2.12:")
+    conflicts("qt-base")  # do not use qt6 
 
     build_directory = "src"  # was Qt4Qt5 before 2.12.0
 
@@ -94,11 +95,11 @@ class Qscintilla(QMakePackage):
             pyqtx = "PyQt5"
             ftoml = "pyproject-qt5.toml"
 
-        elif "^py-pyqt6" in self.spec:
-            qtx = "qt6"
-            py_pyqtx = "py-pyqt6"
-            pyqtx = "PyQt6"
-            ftoml = "pyproject-qt6.toml"
+        # elif "^py-pyqt6" in self.spec:
+        #     qtx = "qt6"
+        #     py_pyqtx = "py-pyqt6"
+        #     pyqtx = "PyQt6"
+        #     ftoml = "pyproject-qt6.toml"
 
         with working_dir(join_path(self.stage.source_path, "Python")):
             copy(ftoml, "pyproject.toml")
@@ -140,7 +141,7 @@ class Qscintilla(QMakePackage):
             python = self.spec["python"].command
             if "^py-pyqt5" in self.spec:
                 python("-c", "import PyQt5.Qsci")
-            if "^py-pyqt6" in self.spec:
-                python("-c", "import PyQt6.Qsci")
+            # if "^py-pyqt6" in self.spec:
+            #     python("-c", "import PyQt6.Qsci")
         else:
             print("qscintilla ins't built with python, skipping import test")
