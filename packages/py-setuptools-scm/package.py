@@ -31,6 +31,7 @@ class PySetuptoolsScm(PythonPackage):
     # Basically a no-op in setuptools_scm 7+, toml support is always built
     variant("toml", default=True, description="Build with TOML support")
 
+    depends_on("python@3.8:", when="@8:", type=("build", "run"))
     depends_on("python@3.7:", when="@7:", type=("build", "run"))
     depends_on("python@3.6:", when="@6:", type=("build", "run"))
     depends_on("python@2.7:2.8,3.5:", when="@4:", type=("build", "run"))
