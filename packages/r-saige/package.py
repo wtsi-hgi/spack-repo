@@ -32,7 +32,7 @@ class RSaige(RPackage):
 
     depends_on("r@3.6.1:", type=("build", "run"))
     depends_on("gcc@5.4:", type=("build", "run"))
-    depends_on("cmake@3.14.1", type=("build", "run"))
+    depends_on("cmake", type=("build", "run"))
     depends_on("cget", type=("build", "run"))
     depends_on("intel-oneapi-mkl")
     depends_on("r-rcpp@1.0.7:", type=("build", "run"))
