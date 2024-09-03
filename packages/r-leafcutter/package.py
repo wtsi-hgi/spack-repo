@@ -20,7 +20,7 @@ class RLeafcutter(RPackage):
     version("0.2.2", sha256="15d6a217292b2a54a21dbef1a6b98e3d5f07fb60471d12f02e86494f53e03968")
     version("0.2", sha256="6db09f403e20dd1150f65ecfa87084da03c6034e62a0b05d54a34c33dc431a74")
 
-    depends_on("r@4.0", type=("build", "run"))
+    depends_on("r@4", type=("build", "run"))
     depends_on("r-rcpp@0.12.0:", type=("build", "run"))
     depends_on("r-rstan@2.18.1:", type=("build", "run"))
     depends_on("r-rstantools@2:", type=("build", "run"))
