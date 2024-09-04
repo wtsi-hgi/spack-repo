@@ -15,7 +15,7 @@ class PyAlignparse(PythonPackage):
 
     version("0.6.2", sha256="b508a79f93141e05e980bf58655d1ec97ff5ec3fc7e72f5b72f5d370616d6918")
 
-    depends_on("python@3.9.9", type=("build", "run"))
+
     depends_on("py-setuptools", type="build")
 
     #depends_on("py-jupyterlab", type=("build", "run"))

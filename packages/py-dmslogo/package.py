@@ -15,7 +15,7 @@ class PyDmslogo(PythonPackage):
 
     version("0.7.0", sha256="60100b600effbea54d3e841aba1c51b4148e47d2f06483cf02aa6a06060a1bfb")
 
-    depends_on("python@3.9.9", type=("build", "run"))
+
     depends_on("py-setuptools", type="build")
 
     depends_on("py-numpy@1.17:", type=("build", "run"))

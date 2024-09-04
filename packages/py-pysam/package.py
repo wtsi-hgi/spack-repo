@@ -31,7 +31,7 @@ class PyPysam(PythonPackage):
     depends_on("py-cython@0.17:2", type="build")
     depends_on("curl")
     depends_on("xz")
-    depends_on("htslib@1.17", when="@0.21.0")
+    depends_on("htslib@1.17", when="@0.21:")
     depends_on("htslib@:1.6", when="@:0.13")
     depends_on("htslib")
 

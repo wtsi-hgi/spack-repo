@@ -15,7 +15,7 @@ class PyDmsVariants(PythonPackage):
 
     version("1.5.0", sha256="ac2d1b89e5621dee899205688048edc7649a448af8df7ba7093706c113dcc32a")
 
-    depends_on("python@3.9.9", type=("build", "run"))
+
     depends_on("py-setuptools", type="build")
 
     depends_on("py-biopython@1.73:", type=("build", "run"))

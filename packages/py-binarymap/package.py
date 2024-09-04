@@ -15,7 +15,7 @@ class PyBinarymap(PythonPackage):
 
     version("0.6", sha256="82d1794908633c864526f84c87720165af03606f454169954ec2e32c36bab317")
 
-    depends_on("python@3.9.9", type=("build", "run"))
+
     depends_on("py-setuptools", type="build")
 
     depends_on("py-pandas@1.2:", type=("build", "run"))
