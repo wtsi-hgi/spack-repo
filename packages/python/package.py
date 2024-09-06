@@ -40,6 +40,12 @@ class Python(Package):
     install_targets = ["install"]
     build_targets: List[str] = []
 
+    version("3.12.5", sha256="38dc4e2c261d49c661196066edbfb70fdb16be4a79cc8220c224dfeb5636d405")
+    version("3.12.4", sha256="01b3c1c082196f3b33168d344a9c85fb07bfe0e7ecfe77fee4443420d1ce2ad9")
+    version("3.12.3", sha256="a6b9459f45a6ebbbc1af44f5762623fa355a0c87208ed417628b379d762dddb0")
+    version("3.12.2", sha256="a7c4f6a9dc423d8c328003254ab0c9338b83037bd787d680826a5bf84308116e")
+    version("3.12.1", sha256="d01ec6a33bc10009b09c17da95cc2759af5a580a7316b3a446eb4190e13f97b2")
+    version("3.12.0", sha256="51412956d24a1ef7c97f1cb5f70e185c13e3de1f50d131c0aac6338080687afb")
     version("3.11.2", sha256="2411c74bda5bbcfcddaf4531f66d1adc73f247f529aee981b029513aefdbf849")
     version("3.11.1", sha256="baed518e26b337d4d8105679caf68c5c32630d702614fc174e98cb95c46bdfa4")
     version("3.11.0", sha256="64424e96e2457abbac899b90f9530985b51eef2905951febd935f0e73414caeb")
@@ -203,7 +209,7 @@ class Python(Package):
     patch("python-3.7.2-distutils-C++.patch", when="@3.7.2")
     patch("python-3.7.3-distutils-C++.patch", when="@3.7.3")
     patch("python-3.7.4+-distutils-C++.patch", when="@3.7.4:3.10")
-    patch("python-3.7.4+-distutils-C++-testsuite.patch", when="@3.7.4:")
+    patch("python-3.7.4+-distutils-C++-testsuite.patch", when="@3.7.4:3.11")
     patch("python-3.11-distutils-C++.patch", when="@3.11.0:3.11")
     patch("cpython-windows-externals.patch", when="@:3.9.6 platform=windows")
     patch("tkinter-3.7.patch", when="@3.7 platform=darwin")
@@ -551,11 +557,12 @@ class Python(Package):
             config_args.append("--with-system-expat")
         else:
             config_args.append("--without-system-expat")
-
-        if "+ctypes" in spec:
-            config_args.append("--with-system-ffi")
-        else:
-            config_args.append("--without-system-ffi")
+            
+        if self.version < Version("3.12.0"):
+            if "+ctypes" in spec:
+                config_args.append("--with-system-ffi")
+            else:
+                config_args.append("--without-system-ffi")
 
         if "+tkinter" in spec:
             config_args.extend(
