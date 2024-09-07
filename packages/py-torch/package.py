@@ -56,6 +56,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
 
     # All options are defined in CMakeLists.txt.
     # Some are listed in setup.py, but not all.
+
     variant("debug", default=False, description="Build with debugging support")
     variant("caffe2", default=False, description="Build Caffe2", when="@1.7:")
     variant("test", default=False, description="Build C++ test binaries")
@@ -142,6 +143,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     depends_on("cmake@3.13:", when="@1.11:", type="build")
     depends_on("cmake@3.10:", when="@1.10:", type="build")
     depends_on("cmake@3.5:", type="build")
+    # depends_on("gcc@10", type="build", when="@:1.8.2")
 
     # pyproject.toml
     depends_on("py-setuptools", type=("build"))
@@ -454,6 +456,10 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             filter_file("distutils.version.LooseVersion", "LooseVersion", "tools/setup_helpers/cmake.py", string=True)
             filter_file("#include <list>", "#include <list>\n#include <thread>", "third_party/ideep/mkl-dnn/src/common/primitive_cache.cpp", string=True)
 
+        # https://github.com/google/XNNPACK/commit/865666195abd929fbc8f9abdbc6e737e093c352d
+        if self.spec.satisfies("@:1.8.2"):
+            filter_file("const void* address, __m128i v", "void* address, __m128i v", "third_party/XNNPACK/src/xnnpack/intrinsics-polyfill.h", string=True)
+            
     def setup_build_environment(self, env):
         """Set environment variables used to control the build.
 
