@@ -14,6 +14,7 @@ class PyGseapy(PythonPackage):
     version("1.1.1", sha256="5062fc8d625037beb3d41762cb0cd7cad25653bb3a0c71b8f188ba458da77d4a")
 
     depends_on("rust", type="build")
+    depends_on("py-setuptools", type="build")
     depends_on("py-numpy@1.9.0:", type=("build", "run"))
     depends_on("py-scipy", type=("build", "run"))
     depends_on("py-matplotlib@1.4.3:", type=("build", "run"))
