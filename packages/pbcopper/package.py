@@ -41,8 +41,7 @@ class Pbcopper(MesonPackage):
         sha256="5a183e4a4c860b7e4616b7dda6a3e04fc447d91aa8d75cfbe9b66bebc909c631",
     )
 
-    # FIXME: Add dependencies if required.
-    depends_on("boost", type=("build", "run"))
+    depends_on("boost@1.75:", type=("build", "run"))
 
     def meson_args(self):
         return ["-Dtests=false"]
