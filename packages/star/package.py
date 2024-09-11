@@ -3,23 +3,6 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-# ----------------------------------------------------------------------------
-# If you submit this package back to Spack as a pull request,
-# please first remove this boilerplate and all FIXME comments.
-#
-# This is a template package file for Spack.  We've put "FIXME"
-# next to all the things you'll want to change. Once you've handled
-# them, you can save this file and test your package like this:
-#
-#     spack install star
-#
-# You can edit this file again by typing:
-#
-#     spack edit star
-#
-# See the Spack documentation for more information on packaging.
-# ----------------------------------------------------------------------------
-
 from spack.package import *
 
 
@@ -35,7 +18,7 @@ class Star(MakefilePackage):
     version("2.7.11a", sha256="542457b1a4fee73f27a581b1776e9f73ad2b4d7e790388b6dc71147bd039f99a")
     version("2.7.10b", sha256="0d1b71de6c5be1c5d90b32130d2abcd5785a4fc7c1e9bf19cc391947f2dc46e5")
 
-    depends_on("zlib-api")
+    depends_on("zlib")
     depends_on("xxd-standalone")
 
     build_directory = "source"
