@@ -109,3 +109,9 @@ class PyCupy(PythonPackage, CudaPackage, ROCmPackage):
             env.set("HIPCC", self.spec["hip"].hipcc)
             env.set("ROCM_HOME", self.spec["hipcub"].prefix)
             env.set("CUPY_INSTALL_USE_HIP", 1)
+
+    def setup_run_environment(self, env):
+        for d in self.spec["cuda"].libs.directories:
+            env.prepend_path("LD_LIBRARY_PATH", join_path(d, "stubs"))
+            if os.path.isfile(join_path(d, "stubs", "libcuda.so")) and not os.path.isfile(join_path(d, "stubs", "libcuda.so.1")):
+                which("ln")(join_path(d, "stubs", "libcuda.so"), join_path(d, "stubs", "libcuda.so.1"))

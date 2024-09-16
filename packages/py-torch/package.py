@@ -61,6 +61,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     variant("caffe2", default=False, description="Build Caffe2", when="@1.7:")
     variant("test", default=False, description="Build C++ test binaries")
     variant("cuda", default=not is_darwin, description="Use CUDA")
+    variant("cuda_arch", default="80", description="CUDA architecture that is available on the farm")
     variant("rocm", default=False, description="Use ROCm")
     variant("cudnn", default=not is_darwin, description="Use cuDNN", when="+cuda")
     variant("fbgemm", default=True, description="Use FBGEMM (quantized 8-bit server operators)")
