@@ -139,6 +139,7 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
         "tensorrt", default=False, description="Build with TensorRT support"
     )  # TODO: enable when TensorRT in Spack
     variant("cuda", default=sys.platform != "darwin", description="Build with CUDA support")
+    variant("cuda_arch", default="80", description="Default cuda compute capability on the Farm")
     variant(
         "nccl", default=sys.platform.startswith("linux"), description="Enable NVIDIA NCCL support"
     )
