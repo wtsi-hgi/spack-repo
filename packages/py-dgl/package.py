@@ -28,6 +28,9 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
         "1.0.1", tag="1.0.1", commit="cc2e9933f309f585fae90965ab61ad11ac1eecd5", submodules=True
     )
     version(
+        "0.6.0post1", tag="0.6.0post1", commit="eb4dba09b4aed4d87eb4f7943fd8aeb93e99916a", submodules=True
+    )
+    version(
         "0.4.3", tag="0.4.3", commit="e1d90f9b5eeee7359a6b4f5edca7473a497984ba", submodules=True
     )
     version(
@@ -59,6 +62,7 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
     depends_on("py-wheel", type="build")
     depends_on("py-setuptools", type="build")
     depends_on("py-cython", type="build")
+    depends_on("py-cython@0.29", type="build", when="@:0.6")
     depends_on("py-numpy@1.14.0:", type=("build", "run"))
     depends_on("py-scipy@1.1.0:", type=("build", "run"))
     depends_on("py-networkx@2.1:", type=("build", "run"))
@@ -68,8 +72,8 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
 
     # Backends
     # See https://docs.dgl.ai/install/index.html#working-with-different-backends
-    depends_on("py-torch@1.12.0:", when="@1.0.1: backend=pytorch", type="run")
-    depends_on("py-torch@1.2.0:", when="@0.4.3: backend=pytorch", type="run")
+    depends_on("py-torch@1.12.0:1", when="@1.0.1: backend=pytorch", type="run")
+    depends_on("py-torch@1.2.0:1", when="@0.4.3: backend=pytorch", type="run")
     depends_on("py-torch@0.4.1:", when="backend=pytorch", type="run")
     depends_on("mxnet@1.6.0:", when="@1.0.1: backend=mxnet", type="run")
     depends_on("mxnet@1.5.1:", when="@0.4.3: backend=mxnet", type="run")
@@ -81,6 +85,8 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
     # Cuda
     # See https://github.com/dmlc/dgl/issues/3083
     depends_on("cuda@:10", when="@:0.4 +cuda", type=("build", "run"))
+    depends_on("cuda@:11", when="@:0.6 +cuda", type=("build", "run"))
+
     # From error: "Your installed Caffe2 version uses cuDNN but I cannot find the
     # cuDNN libraries.  Please set the proper cuDNN prefixes and / or install cuDNN."
     depends_on("cudnn", when="+cuda", type=("build", "run"))
@@ -93,6 +99,13 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
 
     build_directory = "build"
 
+    def patch(self):
+        # fix the numeric_limits import
+        filter_file("#include <cmath>", """
+#include <cmath>
+#include <limits>
+""", "src/array/cuda/functor.cuh", string=True)
+
     # https://docs.dgl.ai/install/index.html#install-from-source
     def cmake_args(self):
         args = []
@@ -101,7 +114,7 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
             args.append("-DUSE_CUDA=ON")
             # Prevent defaulting to old compute_ and sm_ despite defining cuda_arch
             args.append("-DCUDA_ARCH_NAME=Manual")
-            cuda_arch_list = " ".join(list(self.spec.variants["cuda_arch"].value))
+            cuda_arch_list = "80" # match our cluster
             args.append("-DCUDA_ARCH_BIN={0}".format(cuda_arch_list))
             args.append("_DCUDA_ARCH_PTX={0}".format(cuda_arch_list))
         else:
