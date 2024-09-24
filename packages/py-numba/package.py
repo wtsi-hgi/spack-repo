@@ -37,7 +37,7 @@ class PyNumba(PythonPackage):
     variant("tbb", default=False, description="Build with Intel Threading Building Blocks")
 
     depends_on("python@3.8:3.12", when="@0.59:", type=("build", "run"))
-    depends_on("python@3.8:3.11", when="@0.57:", type=("build", "run"))
+    depends_on("python@3.8:3.11", when="@0.57:0.58", type=("build", "run"))
     depends_on("python@3.7:3.10", when="@0.55:0.56", type=("build", "run"))
     depends_on("python@3.7:3.9", when="@0.54", type=("build", "run"))
     depends_on("python@3.6:3.9", when="@0.53", type=("build", "run"))
