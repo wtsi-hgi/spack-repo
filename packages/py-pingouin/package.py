@@ -56,7 +56,7 @@ class PyPingouin(PythonPackage):
 
 	depends_on("python@3.8:", type=("build", "run"))
 	depends_on("py-tabulate", type=("build", "run"))
-	depends_on("py-statsmodels", type=("build", "run"))
+	depends_on("py-statsmodels+scipysvd", type=("build", "run"))
 	depends_on("py-seaborn", type=("build", "run"))
 	depends_on("py-scipy", type=("build", "run"))
 	depends_on("py-scikit-learn", type=("build", "run"))
