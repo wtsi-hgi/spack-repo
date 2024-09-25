@@ -10,7 +10,7 @@ class PyHickle(PythonPackage):
 	"""Hickle - an HDF5 based version of pickle"""
 	
 	homepage = "http://github.com/telegraphic/hickle"
-	pypi = "hickle/hickle-5.0.3-py3-none-any.whl" 
+	pypi = "hickle/hickle-5.0.3.tar.gz" 
 
 	version("1.0", sha256="50a89383ae6d6869d27b6bf49dc471a4ee548c8f37b4e65940e244f1fb9defde")
 	version("1.0.2", sha256="e559353037fe627dc2929537380b258c433080773ab588e705c32e1a0fa1b262")
@@ -54,6 +54,7 @@ class PyHickle(PythonPackage):
 	version("5.0.3", sha256="3b87613de35e644d94541b8c79ffced5e62332e001b4f62c53ff11bd3fa87dad", expand=False, url="https://files.pythonhosted.org/packages/78/71/d765d1406e2ca52b81f7ff4be6ce99413cb76d831edabf772c667789ff7b/hickle-5.0.3-py3-none-any.whl")
 
 	depends_on("python@3.7:", type=("build", "run"))
+	depends_on("py-setuptools", type="build")
 	depends_on("py-numpy", type=("build", "run"))
 	depends_on("py-h5py", type=("build", "run"))
 
