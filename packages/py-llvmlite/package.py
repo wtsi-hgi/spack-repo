@@ -13,6 +13,8 @@ class PyLlvmlite(PythonPackage):
     pypi = "llvmlite/llvmlite-0.23.0.tar.gz"
     git = "https://github.com/numba/llvmlite.git"
 
+    version("0.43.0", sha256="ae2b5b5c3ef67354824fb75517c8db5fbe93bc02cd9671f3c62271626bc041d5")
+    version("0.42.0", sha256="f92b09243c0cc3f457da8b983f67bd8e1295d0f5b3746c7a1861d7a99403854a")
     version("0.41.1", sha256="f19f767a018e6ec89608e1f6b13348fa2fcde657151137cb64e56d48598a92db")
     version("0.41.0", sha256="7d41db345d76d2dfa31871178ce0d8e9fd8aa015aa1b7d4dab84b5cb393901e0")
     version("0.40.1", sha256="5cdb0d45df602099d833d50bd9e81353a5e036242d3c003c5b294fc61d1986b4")
@@ -31,7 +33,7 @@ class PyLlvmlite(PythonPackage):
     version("0.25.0", sha256="fd64def9a51dd7dc61913a7a08eeba5b9785522740bec5a7c5995b2a90525025")
 
     depends_on("py-setuptools", type="build")
-    depends_on("python@3.8:3.11", when="@0.40:", type=("build", "run"))
+    depends_on("python@3.8:3.11", when="@0.40:0.41", type=("build", "run"))
     depends_on("python@:3.10", when="@0.38:0.39", type=("build", "run"))
     depends_on("python@:3.9", when="@0.36:0.37", type=("build", "run"))
     depends_on("python@:3.8", when="@0.31:0.35", type=("build", "run"))
