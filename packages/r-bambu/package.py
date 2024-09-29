@@ -26,6 +26,7 @@ class RBambu(RPackage):
 	depends_on("r-iranges", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))
+	depends_on("r-biocmanager", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
