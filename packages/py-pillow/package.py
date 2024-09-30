@@ -37,11 +37,12 @@ class PyPillowBase(PythonPackage):
     variant("jpeg2000", default=False, description="JPEG 2000 functionality")
     variant("imagequant", when="@3.3:", default=False, description="Improved color quantization")
     variant("xcb", when="@7.1:", default=False, description="X11 screengrab support")
-    variant("raqm", when="@8.2:", default=False, description="RAQM support")
+    # variant("raqm", when="@8.2:", default=False, description="RAQM support")
 
     # Required dependencies
     # https://pillow.readthedocs.io/en/latest/installation.html#python-support
-    depends_on("python@3.8:3.11", when="@10:", type=("build", "link", "run"))
+    depends_on("python@3.8:3.12", when="@10.1:10.3", type=("build", "link", "run"))
+    depends_on("python@3.8:3.11", when="@10.0", type=("build", "link", "run"))
     depends_on("python@3.7:3.11", when="@9.3:9.5", type=("build", "link", "run"))
     depends_on("python@3.7:3.10", when="@9.0:9.2", type=("build", "link", "run"))
     depends_on("python@3.6:3.10", when="@8.3.2:8.4", type=("build", "link", "run"))
@@ -65,10 +66,10 @@ class PyPillowBase(PythonPackage):
     depends_on("openjpeg", when="+jpeg2000")
     depends_on("libimagequant", when="+imagequant")
     depends_on("libxcb", when="+xcb")
-    depends_on("libraqm", when="+raqm")
+    # depends_on("libraqm", when="+raqm")
 
     # Conflicting options
-    conflicts("+raqm", when="~freetype")
+    # conflicts("+raqm", when="~freetype")
 
     def patch(self):
         """Patch setup.py to provide library and include directories
@@ -113,6 +114,8 @@ class PyPillow(PyPillowBase):
     homepage = "https://python-pillow.org/"
     pypi = "Pillow/Pillow-7.2.0.tar.gz"
 
+    version("10.3.0", sha256="9d2455fbf44c914840c793e89aa82d0e1763a14253a000743719ae5946814b2d")
+    version("10.2.0", sha256="e87f0b2c78157e12d7686b27d63c070fd65d994e8ddae6f328e0dcf4a0cd007e")
     version("10.0.0", sha256="9c82b5b3e043c7af0d95792d0d20ccf68f61a1fec6b3530e718b688422727396")
     version("9.5.0", sha256="bf548479d336726d7a0eceb6e767e179fbde37833ae42794602631a070d630f1")
     version("9.4.0", sha256="a1c2d7780448eb93fbcc3789bf3916aa5720d942e37945f4056680317f1cd23e")
@@ -133,6 +136,8 @@ class PyPillow(PyPillowBase):
     version("5.4.1", sha256="5233664eadfa342c639b9b9977190d64ad7aca4edc51a966394d7e08e7f38a9f")
 
     for ver in [
+        "10.3.0",
+        "10.2.0",
         "10.0.0",
         "9.5.0",
         "9.4.0",
