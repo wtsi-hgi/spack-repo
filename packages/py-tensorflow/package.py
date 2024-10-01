@@ -232,7 +232,7 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
         depends_on("py-ml-dtypes@0.2", when="@2.15.0")
         depends_on("py-ml-dtypes@0.2.0", when="@2.14")
         depends_on("py-numpy@1.23.5:", when="@2.14:")
-        depends_on("py-numpy@1.22:1.24.3", when="@2.13:")
+        depends_on("py-numpy@1.22:1.24.3", when="@2.13")
         depends_on("py-numpy@1.22:1.23", when="@2.12")
         depends_on("py-numpy@1.20:", when="@2.8:2.11")
         depends_on("py-numpy@1.14.5:", when="@2.7")
