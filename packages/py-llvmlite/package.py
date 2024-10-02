@@ -40,7 +40,8 @@ class PyLlvmlite(PythonPackage):
     depends_on("python@:3.7", when="@:0.30", type=("build", "run"))
 
     # https://github.com/numba/llvmlite#compatibility
-    depends_on("llvm@14", when="@0.41:")
+    depends_on("llvm@15", when="@0.43:")
+    depends_on("llvm@14", when="@0.41:0.42")
     depends_on("llvm@11:14", when="@0.40")
     depends_on("llvm@11", when="@0.37:0.39")
     for t in [
