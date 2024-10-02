@@ -576,6 +576,15 @@ class Llvm(CMakePackage, CudaPackage):
             string=True,
         )
 
+    @when("@14+python ^python@3.12")
+    def patch(self):
+        # replace distutils with setuptools
+        filter_file(
+            r"distutils",
+            r"setuptools",
+            "libcxx/utils/merge_archives.py",
+            string=True,
+        )
     # The functions and attributes below implement external package
     # detection for LLVM. See:
     #
