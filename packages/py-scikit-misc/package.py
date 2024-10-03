@@ -23,7 +23,8 @@ class PyScikitMisc(PythonPackage):
 	version("0.4.0", sha256="467825b58dbe0563a3a9259f28d4220db35819bf0ac25bb3e3c052d9c44fbd2a")
 	version("0.5.1", sha256="c5c1f69ac5f84e0103f40525c7d28ecc0ee028314cbc9f07c497cc39143e52a3")
 
-	depends_on("python@3.10:", type=("build", "run"))
+	depends_on("python@3.9:", type=("build", "run"))
+	depends_on("python@3.10:", type=("build", "run"), when="@0.4.0:")
 	depends_on("meson@1.3:", type=("build"))
 	depends_on("py-cython@3.0.6:", type=("build"))
 	depends_on("py-meson-python", type="build")
