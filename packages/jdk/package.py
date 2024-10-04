@@ -30,8 +30,8 @@ class Jdk(Package):
         url="https://download.oracle.com/java/17/latest/jdk-17_linux-x64_bin.tar.gz",
     )
 
-    provides("java@21", when="@21")
-    provides("java@17", when="@17")
+    # provides("java@21", when="@21")
+    # provides("java@17", when="@17")
 
     requires("target=x86_64:", msg="binaries only availble for x86_64")
     # requires("platform=linux")  # bug in concretizer
