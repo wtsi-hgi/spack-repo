@@ -74,8 +74,8 @@ class PyPandas(PythonPackage):
     variant("excel", when="@1.4:", default=False, description="Build with support for Excel")
 
     # Based on PyPI wheel versions
-    depends_on("python@3.9:3.12", when="@2.1.1:", type=("build", "run"))
-    depends_on("python@3.9:3.11", when="@2.1.0", type=("build", "run"))
+    depends_on("python@3.9:3.12", when="@2.2:", type=("build", "run"))
+    depends_on("python@3.9:3.11", when="@2.1", type=("build", "run"))
     depends_on("python@3.8:3.11", when="@1.5:2.0", type=("build", "run"))
     depends_on("python@3.8:3.10", when="@1.4", type=("build", "run"))
     depends_on("python@:3.10", when="@1.3.3:1.3", type=("build", "run"))
