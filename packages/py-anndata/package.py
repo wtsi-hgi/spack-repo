@@ -17,7 +17,8 @@ class PyAnndata(PythonPackage):
 
     depends_on("py-hatchling", type=("build", "run"))
     depends_on("py-hatch-vcs", type=("build", "run"))
-    depends_on("py-pandas@:2.1.1", type=("build", "run"))
+    # https://github.com/scverse/anndata/issues/1210
+    depends_on("py-pandas@:2.1.1,2.1.3:", type=("build", "run")) # skip 2.1.2 
 
     with when("@:0.9"):
         depends_on("py-flit-core", type="build")
