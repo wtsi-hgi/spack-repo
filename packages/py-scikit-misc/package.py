@@ -29,6 +29,7 @@ class PyScikitMisc(PythonPackage):
 	depends_on("py-cython@3.0.6:", type=("build"))
 	depends_on("py-meson-python", type="build")
 	depends_on("py-numpy", type=("build", "run"))
+	depends_on("openblas", type=("build", "run"), when="@0.3.1")
 
 	conflicts("meson@:1.2")
 
