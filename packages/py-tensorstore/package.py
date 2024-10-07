@@ -77,4 +77,5 @@ class PyTensorstore(PythonPackage):
 
 	def setup_build_environment(self, env):
 		env.set("CC", self.compiler.cc)
+		env.set("TENSORSTORE_BAZEL_BUILD_OPTIONS", "--spawn_strategy=local")
 		#env.set("CXX", self.compiler.cxx)
