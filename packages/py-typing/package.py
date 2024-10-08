@@ -12,3 +12,6 @@ class PyTyping(PythonPackage):
     pypi = "typing/typing-3.10.0.0.tar.gz"
 
     version("3.10.0.0", sha256="13b4ad211f54ddbf93e5901a9967b1e07720c1d1b78d596ac6a439641aa1b130")
+
+    depends_on("python@2.7:3.4", type=("build", "run"))
+    depends_on("py-setuptools", type="build")
