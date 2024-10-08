@@ -80,7 +80,7 @@ class Bazel(Package):
     )
 
     # https://bazel.build/install/compile-source#bootstrap-unix-prereq
-    depends_on("openjdk@11", when="@5.3:", type=("build", "run"))
+    depends_on("openjdk@11:", when="@5.3:", type=("build", "run"))
     depends_on("openjdk@1.8,11", when="@3.3:5.2", type=("build", "run"))
     depends_on("openjdk@1.8", when="@0.6:3.2", type=("build", "run"))
     depends_on("python+pythoncmd", type=("build", "run"))
