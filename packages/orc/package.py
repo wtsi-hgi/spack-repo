@@ -28,7 +28,7 @@ class Orc(CMakePackage):
 
     depends_on("maven")
     depends_on("openssl")
-    depends_on("openjdk@17:")
+    depends_on("openjdk@17:", type="build")
     depends_on("zlib-api")
     depends_on("zlib@1.2.11:", when="^[virtuals=zlib-api] zlib")
     depends_on("pcre")
