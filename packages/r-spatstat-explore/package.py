@@ -36,6 +36,6 @@ class RSpatstatExplore(RPackage):
 	depends_on("r-nlme", type=("build", "run"))
 	depends_on("r-spatstat-utils@3.0.4:", type=("build", "run"))
 	depends_on("r-spatstat-sparse@3.0.3:", type=("build", "run"))
-	depends_on("r-goftest@1.2.2:", type=("build", "run"))
+	depends_on("r-goftest@1.2-2:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))
