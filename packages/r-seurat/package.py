@@ -84,3 +84,4 @@ class RSeurat(RPackage):
 	depends_on("r-uwot@0.1.10:", type=("build", "run"))
 	depends_on("r-rcppeigen", type=("build", "run"))
 	depends_on("r-rcppprogress", type=("build", "run"))
+	depends_on("r-spatstat-core", type=("build", "run"), when="@:4.1.1")
