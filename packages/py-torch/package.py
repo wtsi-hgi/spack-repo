@@ -60,12 +60,22 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     variant("debug", default=False, description="Build with debugging support")
     variant("caffe2", default=False, description="Build Caffe2", when="@1.7:")
     variant("test", default=False, description="Build C++ test binaries")
-    variant("cuda", default=not is_darwin, description="Use CUDA")
-    variant("cuda_arch", default="80", description="CUDA architecture that is available on the farm")
+    variant("cuda", default=True, description="Use CUDA")
+    variant(
+        "cuda_arch",
+        default="80",
+        description="CUDA architecture that is available on the farm",
+    )
     variant("rocm", default=False, description="Use ROCm")
     variant("cudnn", default=not is_darwin, description="Use cuDNN", when="+cuda")
-    variant("fbgemm", default=True, description="Use FBGEMM (quantized 8-bit server operators)")
-    variant("kineto", default=True, description="Use Kineto profiling library", when="@1.8:")
+    variant(
+        "fbgemm",
+        default=True,
+        description="Use FBGEMM (quantized 8-bit server operators)",
+    )
+    variant(
+        "kineto", default=True, description="Use Kineto profiling library", when="@1.8:"
+    )
     variant("magma", default=not is_darwin, description="Use MAGMA", when="+cuda")
     variant("metal", default=is_darwin, description="Use Metal for Caffe2 iOS build")
     variant(
@@ -84,13 +94,27 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     variant("numa", default=True, description="Use NUMA", when="platform=cray")
     variant("numpy", default=True, description="Use NumPy")
     variant("openmp", default=True, description="Use OpenMP for parallel code")
-    variant("qnnpack", default=True, description="Use QNNPACK (quantized 8-bit operators)")
-    variant("valgrind", default=True, description="Use Valgrind", when="@1.8: platform=linux")
-    variant("valgrind", default=True, description="Use Valgrind", when="@1.8: platform=cray")
+    variant(
+        "qnnpack", default=True, description="Use QNNPACK (quantized 8-bit operators)"
+    )
+    variant(
+        "valgrind",
+        default=True,
+        description="Use Valgrind",
+        when="@1.8: platform=linux",
+    )
+    variant(
+        "valgrind", default=True, description="Use Valgrind", when="@1.8: platform=cray"
+    )
     variant("xnnpack", default=True, description="Use XNNPACK", when="@1.5:")
     variant("mkldnn", default=True, description="Use MKLDNN")
     variant("distributed", default=not is_darwin, description="Use distributed")
-    variant("mpi", default=not is_darwin, description="Use MPI for Caffe2", when="+distributed")
+    variant(
+        "mpi",
+        default=not is_darwin,
+        description="Use MPI for Caffe2",
+        when="+distributed",
+    )
     variant("gloo", default=not is_darwin, description="Use Gloo", when="+distributed")
     variant(
         "tensorpipe",
@@ -98,7 +122,12 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         description="Use TensorPipe",
         when="@1.6: +distributed",
     )
-    variant("onnx_ml", default=True, description="Enable traditional ONNX ML API", when="@1.5:")
+    variant(
+        "onnx_ml",
+        default=True,
+        description="Enable traditional ONNX ML API",
+        when="@1.5:",
+    )
     variant(
         "breakpad",
         default=True,
@@ -107,7 +136,11 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     )
 
     conflicts("+cuda+rocm")
-    conflicts("+tensorpipe", when="+rocm ^hip@:5.1", msg="TensorPipe not supported until ROCm 5.2")
+    conflicts(
+        "+tensorpipe",
+        when="+rocm ^hip@:5.1",
+        msg="TensorPipe not supported until ROCm 5.2",
+    )
     conflicts("+breakpad", when="target=ppc64:")
     conflicts("+breakpad", when="target=ppc64le:")
 
@@ -453,14 +486,34 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         )
 
         if "@1.10.0" in self.spec:
-            filter_file("from setuptools import distutils", "from distutils.version import LooseVersion", "tools/setup_helpers/cmake.py", string=True)
-            filter_file("distutils.version.LooseVersion", "LooseVersion", "tools/setup_helpers/cmake.py", string=True)
-            filter_file("#include <list>", "#include <list>\n#include <thread>", "third_party/ideep/mkl-dnn/src/common/primitive_cache.cpp", string=True)
+            filter_file(
+                "from setuptools import distutils",
+                "from distutils.version import LooseVersion",
+                "tools/setup_helpers/cmake.py",
+                string=True,
+            )
+            filter_file(
+                "distutils.version.LooseVersion",
+                "LooseVersion",
+                "tools/setup_helpers/cmake.py",
+                string=True,
+            )
+            filter_file(
+                "#include <list>",
+                "#include <list>\n#include <thread>",
+                "third_party/ideep/mkl-dnn/src/common/primitive_cache.cpp",
+                string=True,
+            )
 
         # https://github.com/google/XNNPACK/commit/865666195abd929fbc8f9abdbc6e737e093c352d
         if self.spec.satisfies("@:1.8.2"):
-            filter_file("const void* address, __m128i v", "void* address, __m128i v", "third_party/XNNPACK/src/xnnpack/intrinsics-polyfill.h", string=True)
-            
+            filter_file(
+                "const void* address, __m128i v",
+                "void* address, __m128i v",
+                "third_party/XNNPACK/src/xnnpack/intrinsics-polyfill.h",
+                string=True,
+            )
+
     def setup_build_environment(self, env):
         """Set environment variables used to control the build.
 
@@ -504,7 +557,8 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             env.set("CUDA_HOME", self.spec["cuda"].prefix)  # Linux/macOS
             env.set("CUDA_PATH", self.spec["cuda"].prefix)  # Windows
             torch_cuda_arch = ";".join(
-                "{0:.1f}".format(float(i) / 10.0) for i in self.spec.variants["cuda_arch"].value
+                "{0:.1f}".format(float(i) / 10.0)
+                for i in self.spec.variants["cuda_arch"].value
             )
             env.set("TORCH_CUDA_ARCH_LIST", torch_cuda_arch)
             if self.spec.satisfies("%clang"):
@@ -514,7 +568,9 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
 
         enable_or_disable("rocm")
         if "+rocm" in self.spec:
-            env.set("PYTORCH_ROCM_ARCH", ";".join(self.spec.variants["amdgpu_target"].value))
+            env.set(
+                "PYTORCH_ROCM_ARCH", ";".join(self.spec.variants["amdgpu_target"].value)
+            )
             env.set("HSA_PATH", self.spec["hsa-rocr-dev"].prefix)
             env.set("ROCBLAS_PATH", self.spec["rocblas"].prefix)
             env.set("ROCFFT_PATH", self.spec["rocfft"].prefix)
@@ -603,7 +659,11 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         elif self.spec["lapack"].name in ["libflame", "amdlibflame"]:
             env.set("BLAS", "FLAME")
             env.set("WITH_BLAS", "FLAME")
-        elif self.spec["blas"].name in ["intel-mkl", "intel-parallel-studio", "intel-oneapi-mkl"]:
+        elif self.spec["blas"].name in [
+            "intel-mkl",
+            "intel-parallel-studio",
+            "intel-oneapi-mkl",
+        ]:
             env.set("BLAS", "MKL")
             env.set("WITH_BLAS", "mkl")
             # help find MKL
@@ -667,6 +727,12 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     @property
     def cmake_prefix_paths(self):
         cmake_prefix_paths = [
-            join_path(self.prefix, self.spec["python"].package.platlib, "torch", "share", "cmake")
+            join_path(
+                self.prefix,
+                self.spec["python"].package.platlib,
+                "torch",
+                "share",
+                "cmake",
+            )
         ]
         return cmake_prefix_paths
