@@ -60,7 +60,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     variant("debug", default=False, description="Build with debugging support")
     variant("caffe2", default=False, description="Build Caffe2", when="@1.7:")
     variant("test", default=False, description="Build C++ test binaries")
-    variant("cuda", default=True, description="Use CUDA")
+    variant("cuda", default=not is_darwin, description="Use CUDA")
     variant(
         "cuda_arch",
         default="80",
@@ -556,9 +556,8 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         if "+cuda" in self.spec:
             env.set("CUDA_HOME", self.spec["cuda"].prefix)  # Linux/macOS
             env.set("CUDA_PATH", self.spec["cuda"].prefix)  # Windows
-            torch_cuda_arch = ";".join(
-                "{0:.1f}".format(float(i) / 10.0)
-                for i in self.spec.variants["cuda_arch"].value
+            torch_cuda_arch = "{0:.1f}".format(
+                float(self.spec.variants["cuda_arch"].value) / 10.0
             )
             env.set("TORCH_CUDA_ARCH_LIST", torch_cuda_arch)
             if self.spec.satisfies("%clang"):
