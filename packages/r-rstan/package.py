@@ -80,6 +80,6 @@ class RRstan(RPackage):
     depends_on("pandoc", type=("build", "link", "run"))
     # for compiling Stan models
     depends_on("gcc", type=("build", "link", "run"))
-	depends_on("gmake", type=("build", "link", "run"))
+    depends_on("gmake", type=("build", "link", "run"))
 
     conflicts("%gcc@:4.9", when="@2.18:")
