@@ -63,8 +63,9 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     variant("cuda", default=not is_darwin, description="Use CUDA")
     variant(
         "cuda_arch",
-        default="80",
+        default="70,72,75,80,86,87,89",
         description="CUDA architecture that is available on the farm",
+        multi=True,
     )
     variant("rocm", default=False, description="Use ROCm")
     variant("cudnn", default=not is_darwin, description="Use cuDNN", when="+cuda")
@@ -556,8 +557,9 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         if "+cuda" in self.spec:
             env.set("CUDA_HOME", self.spec["cuda"].prefix)  # Linux/macOS
             env.set("CUDA_PATH", self.spec["cuda"].prefix)  # Windows
-            torch_cuda_arch = "{0:.1f}".format(
-                float(self.spec.variants["cuda_arch"].value) / 10.0
+            torch_cuda_arch = ";".join(
+                "{0:.1f}".format(float(arch) / 10.0)
+                for arch in self.spec.variants["cuda_arch"].value
             )
             env.set("TORCH_CUDA_ARCH_LIST", torch_cuda_arch)
             if self.spec.satisfies("%clang"):
