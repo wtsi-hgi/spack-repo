@@ -344,6 +344,9 @@ class R(AutotoolsPackage):
         dst_makeconf = join_path(self.etcdir, "Makeconf.spack")
         filter_file("/usr/bin/gcc", "/opt/view/bin/gcc", src_makeconf, string=True)
         filter_file("/usr/bin/g++", "/opt/view/bin/g++", src_makeconf, string=True)
+        filter_file(
+            "/usr/bin/gfortran", "/opt/view/bin/gfortran", src_makeconf, string=True
+        )
         install(src_makeconf, dst_makeconf)
 
     # To respect order of execution, we should filter after we made the copy above
