@@ -12,27 +12,20 @@ class PyMochi(PythonPackage):
     homepage = "https://github.com/lehner-lab/MoCHI"
     git = "https://github.com/lehner-lab/MoCHI"
 
+    version("1.1", tag="v1.1")
     version("1.0", tag="v1.0")
 
     depends_on("python@3.9.9", type=("build", "run"))
 
-    #depends_on("py-jupyter-client", type=("build", "run"))
-    #depends_on("py-jupyter-core", type=("build", "run"))
-    #depends_on("py-jupyter-server", type=("build", "run"))
-    #depends_on("py-jupyterlab", type=("build", "run"))
     depends_on("py-pandas@1.4.2", type=("build", "run"))
     depends_on("py-matplotlib@3.5.1", type=("build", "run"))
     depends_on("py-numpy@1.21.2", type=("build", "run"))
     depends_on("py-pyreadr@0.4.4", type=("build", "run"))
     depends_on("py-torch@1.10.0", type=("build", "run"))
-    #depends_on("py-torch@1.10.1", type=("build", "run"))
     depends_on("py-scikit-learn@1.0.2", type=("build", "run"))
     depends_on("py-scipy@1.8.0", type=("build", "run"))
     depends_on("py-seaborn@0.11.2", type=("build", "run"))
-    depends_on("py-setuptools", type="build")
-
-    #variant("cxxstd", default=False, values=("14"), description="Use the specified C++ standard when building.")
-    #depends_on("protobuf@3.20.3", type=("build", "run"))
+    depends_on("py-setuptools@:63", type="build")
 
     depends_on("gcc")
     depends_on("freetype")
