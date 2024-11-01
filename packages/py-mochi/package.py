@@ -25,7 +25,7 @@ class PyMochi(PythonPackage):
     depends_on("py-scikit-learn@1.0.2", type=("build", "run"))
     depends_on("py-scipy@1.8.0", type=("build", "run"))
     depends_on("py-seaborn@0.11.2", type=("build", "run"))
-    depends_on("py-setuptools@:63", type="build")
+    depends_on("py-setuptools@:63", type=("build","run"))
 
     depends_on("gcc")
     depends_on("freetype")
