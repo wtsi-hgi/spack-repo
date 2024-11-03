@@ -1124,6 +1124,16 @@ print(json.dumps(config))
             return path.replace(prefix, "")
         return os.path.join("include", "python{}".format(self.version.up_to(2)))
 
+    def add_to_env(self, env, prefixes, prefix):
+        # Packages may be installed in platform-specific or platform-independent
+        # site-packages directories
+
+        if prefix not in prefixes:
+            for directory in {self.platlib, self.purelib}:
+                env.append_path("PYTHONPATH", os.path.join(prefix, directory))
+
+        prefixes.add(prefix)
+
     def setup_dependent_build_environment(self, env, dependent_spec):
         """Set PYTHONPATH to include the site-packages directory for the
         extension and any other python extensions it depends on.
@@ -1136,25 +1146,20 @@ print(json.dumps(config))
         # Add installation prefix to PYTHONPATH, needed to run import tests
         prefixes = set()
         if dependent_spec.package.extends(self.spec):
-            prefixes.add(dependent_spec.prefix)
+            self.add_to_env(env, prefixes, dependent_spec.prefix)
 
         # Add direct build/run/test dependencies to PYTHONPATH,
         # needed to build the package and to run import tests
         for direct_dep in dependent_spec.dependencies(deptype=("build", "run", "test")):
             if direct_dep.package.extends(self.spec):
-                prefixes.add(direct_dep.prefix)
+                self.add_to_env(env, prefixes, direct_dep.prefix)
 
+        for direct_dep in dependent_spec.dependencies(deptype=("build", "run", "test")):
                 # Add recursive run dependencies of all direct dependencies,
                 # needed by direct dependencies at run-time
                 for indirect_dep in direct_dep.traverse(deptype="run"):
                     if indirect_dep.package.extends(self.spec):
-                        prefixes.add(indirect_dep.prefix)
-
-        for prefix in prefixes:
-            # Packages may be installed in platform-specific or platform-independent
-            # site-packages directories
-            for directory in {self.platlib, self.purelib}:
-                env.prepend_path("PYTHONPATH", os.path.join(prefix, directory))
+                        self.add_to_env(env, prefixes, indirect_dep.prefix)
 
         # We need to make sure that the extensions are compiled and linked with
         # the Spack wrapper. Paths to the executables that are used for these
@@ -1221,7 +1226,7 @@ print(json.dumps(config))
                 # Packages may be installed in platform-specific or platform-independent
                 # site-packages directories
                 for directory in {self.platlib, self.purelib}:
-                    env.prepend_path("PYTHONPATH", os.path.join(d.prefix, directory))
+                    env.append_path("PYTHONPATH", os.path.join(d.prefix, directory))
 
         env.prune_duplicate_paths("PYTHONPATH")
 
