@@ -18,17 +18,50 @@ class PyCupy(PythonPackage, CudaPackage, ROCmPackage):
     homepage = "https://cupy.dev/"
     pypi = "cupy/cupy-8.0.0.tar.gz"
 
-    version("13.1.0", sha256="5caf62288481a27713384523623045380ff42e618be4245f478238ed1786f32d")
-    version("12.1.0", sha256="f6d31989cdb2d96581da12822e28b102f29e254427195c2017eac327869b7320")
-    version("12.0.0", sha256="61ddbbef73d50d606bd5087570645f3c91ec9176c2566784c1d486d6a3404545")
-    version("11.6.0", sha256="53dbb840072bb32d4bfbaa6bfa072365a30c98b1fcd1f43e48969071ad98f1a7")
-    version("11.5.0", sha256="4bc8565bded22cc89b210fd9fb48a5d5316f30701e12bb23852a60314e1f9f6e")
-    version("11.4.0", sha256="03d52b2626e02a3a2b46d714c1cd03e702c8fe33915fcca6ed8de5c539964f49")
-    version("11.3.0", sha256="d057cc2f73ecca06fae8b9c270d9e14116203abfd211a704810cc50a453b4c9e")
-    version("11.2.0", sha256="c33361f117a347a63f6996ea97446d17f1c038f1a1f533e502464235076923e2")
+    version(
+        "13.1.0",
+        sha256="5caf62288481a27713384523623045380ff42e618be4245f478238ed1786f32d",
+    )
+    version(
+        "12.1.0",
+        sha256="f6d31989cdb2d96581da12822e28b102f29e254427195c2017eac327869b7320",
+    )
+    version(
+        "12.0.0",
+        sha256="61ddbbef73d50d606bd5087570645f3c91ec9176c2566784c1d486d6a3404545",
+    )
+    version(
+        "11.6.0",
+        sha256="53dbb840072bb32d4bfbaa6bfa072365a30c98b1fcd1f43e48969071ad98f1a7",
+    )
+    version(
+        "11.5.0",
+        sha256="4bc8565bded22cc89b210fd9fb48a5d5316f30701e12bb23852a60314e1f9f6e",
+    )
+    version(
+        "11.4.0",
+        sha256="03d52b2626e02a3a2b46d714c1cd03e702c8fe33915fcca6ed8de5c539964f49",
+    )
+    version(
+        "11.3.0",
+        sha256="d057cc2f73ecca06fae8b9c270d9e14116203abfd211a704810cc50a453b4c9e",
+    )
+    version(
+        "11.2.0",
+        sha256="c33361f117a347a63f6996ea97446d17f1c038f1a1f533e502464235076923e2",
+    )
 
-    variant("all", default=False, description="Enable optional py-scipy, optuna, and cython")
-
+    variant(
+        "all", default=False, description="Enable optional py-scipy, optuna, and cython"
+    )
+    variant("cuda", default=True, description="Use CUDA")
+    variant(
+        "cuda_arch",
+        default="70,72,75,80,86,87,89",
+        description="CUDA architecture that is available on the farm",
+        multi=True,
+        when="+cuda",
+    )
     depends_on("python@3.7:", when="@:11", type=("build", "run"))
     depends_on("python@3.8:", when="@12:", type=("build", "run"))
     depends_on("py-setuptools", type="build")
@@ -49,7 +82,9 @@ class PyCupy(PythonPackage, CudaPackage, ROCmPackage):
     depends_on("cuda@:12.4", when="@13: +cuda")
 
     for a in CudaPackage.cuda_arch_values:
-        depends_on("nccl +cuda cuda_arch={0}".format(a), when="+cuda cuda_arch={0}".format(a))
+        depends_on(
+            "nccl +cuda cuda_arch={0}".format(a), when="+cuda cuda_arch={0}".format(a)
+        )
 
     depends_on("cudnn", when="+cuda")
     depends_on("cutensor", when="@:12.1.0 +cuda")
@@ -80,7 +115,9 @@ class PyCupy(PythonPackage, CudaPackage, ROCmPackage):
         env.set("CUPY_NUM_BUILD_JOBS", make_jobs)
         if self.spec.satisfies("+cuda"):
             cuda_arch = self.spec.variants["cuda_arch"].value
-            arch_str = ";".join("arch=compute_{0},code=sm_{0}".format(i) for i in cuda_arch)
+            arch_str = ";".join(
+                "arch=compute_{0},code=sm_{0}".format(i) for i in cuda_arch
+            )
             env.set("CUPY_NVCC_GENERATE_CODE", arch_str)
             # append cuda stubs
             for d in self.spec["cuda"].libs.directories:
@@ -109,9 +146,3 @@ class PyCupy(PythonPackage, CudaPackage, ROCmPackage):
             env.set("HIPCC", self.spec["hip"].hipcc)
             env.set("ROCM_HOME", self.spec["hipcub"].prefix)
             env.set("CUPY_INSTALL_USE_HIP", 1)
-
-    def setup_run_environment(self, env):
-        for d in self.spec["cuda"].libs.directories:
-            env.prepend_path("LD_LIBRARY_PATH", join_path(d, "stubs"))
-            if os.path.isfile(join_path(d, "stubs", "libcuda.so")) and not os.path.isfile(join_path(d, "stubs", "libcuda.so.1")):
-                which("ln")(join_path(d, "stubs", "libcuda.so"), join_path(d, "stubs", "libcuda.so.1"))
