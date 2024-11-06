@@ -26,7 +26,6 @@ from spack.package import *
 class RSleuth(RPackage):
     """sleuth is a program for differential analysis of RNA-Seq data."""
 
-    # FIXME: Add a proper url for your package's homepage here.
     homepage = "https://github.com/pachterlab/sleuth"
     url = "https://github.com/pachterlab/sleuth/archive/refs/tags/v0.30.1.tar.gz"
 
