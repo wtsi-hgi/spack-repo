@@ -83,7 +83,7 @@ class PyPegg(PythonPackage):
     depends_on("py-seaborn", type=("build", "run"))
     depends_on("py-setuptools", type=("build", "run"))
     depends_on("py-sphinx", type=("build", "run"))
-    depends_on("py-scikit-learn", type=("build", "run"))
+    depends_on("py-scikit-learn@:1.1", type=("build", "run"))
     depends_on("py-regex", type=("build", "run"))
 
 
