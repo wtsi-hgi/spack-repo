@@ -63,6 +63,7 @@ class PyCudf(PythonPackage):
     depends_on("cuda@10:")
     depends_on("py-cupy+cuda", type=("build", "run"))
     depends_on("py-fsspec", type=("build", "run"))
+    depends_on("nvtx", type=("build", "run"))
 
     for v in (
         "24.06.00",
@@ -84,3 +85,6 @@ class PyCudf(PythonPackage):
 
         with working_dir(build_dir, create=True):
             cmake("..")
+
+    def setup_run_environment(self, env):
+        env.prepend_path("NUMBA_CUDA_DRIVER", self.spec["cuda"].prefix.lib64)
