@@ -58,7 +58,7 @@ class PyCudf(PythonPackage):
     depends_on("py-cython", type="build")
     depends_on("py-numba@0.40.0:", type=("build", "run"))
     depends_on("py-numpy@1.14.4:", type=("build", "run"))
-    depends_on("py-pyarrow+cuda+orc+parquet", type=("build", "run"))
+    depends_on("py-pyarrow+cuda+orc+parquet+dataset", type=("build", "run"))
     depends_on("py-pandas@0.23.4:", type=("build", "run"))
     depends_on("cuda@10:")
     depends_on("py-cupy+cuda", type=("build", "run"))
@@ -85,6 +85,3 @@ class PyCudf(PythonPackage):
 
         with working_dir(build_dir, create=True):
             cmake("..")
-
-    def setup_run_environment(self, env):
-        env.prepend_path("NUMBA_CUDA_DRIVER", self.spec["cuda"].prefix.lib64)
