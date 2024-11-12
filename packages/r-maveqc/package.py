@@ -12,6 +12,7 @@ class RMaveqc(RPackage):
     homepage = "https://github.com/wtsi-hgi/MAVEQC"
     git = "https://github.com/wtsi-hgi/MAVEQC"
 
+    version("0.2.6", tag="0.2.6")
     version("0.2.5", tag="0.2.5")
     version("0.2.4", tag="0.2.4")
     version("0.2.3", tag="0.2.3")
@@ -19,7 +20,7 @@ class RMaveqc(RPackage):
 
     depends_on("pandoc", type=("build", "run"))
 
-    depends_on("r+X@4.3", type=("build", "run"))
+    depends_on("r+X@4.3.2:", type=("build", "run"))
     depends_on("r-optparse@1.7.3", type=("build", "run"))
 
     depends_on("r-configr", type=("build", "run"))
