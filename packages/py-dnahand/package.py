@@ -20,8 +20,9 @@
 # See the Spack documentation for more information on packaging.
 # ----------------------------------------------------------------------------
 
-from spack.package import *
 from pathlib import Path
+
+from spack.package import *
 
 
 class PyDnahand(PythonPackage):
@@ -43,9 +44,13 @@ class PyDnahand(PythonPackage):
         # fix relative paths
         for f in Path(".").glob("**/*.py"):
             for item in ["handprint", "analysis", "download", "pipeline", "utils"]:
-                filter_file(f"^from {item}(?=.* import)", f"from dnahand.{item}", str(f))
-                filter_file(f"^import {item}$", f"import dnahand.{item} as {item}", str(f))
-            filter_file(f"^import handprint\.", f"import dnahand.handprint.", str(f))
+                filter_file(
+                    f"^from {item}(?=.* import)", f"from dnahand.{item}", str(f)
+                )
+                filter_file(
+                    f"^import {item}$", f"import dnahand.{item} as {item}", str(f)
+                )
+            filter_file("^import handprint\.", "import dnahand.handprint.", str(f))
 
         with open("pyproject.toml", "w") as fh:
             fh.write(
@@ -60,7 +65,20 @@ class PyDnahand(PythonPackage):
             string=True,
         )
 
+        # fix get_subdirectories empty error
+        filter_file(
+            "return [os.path.join(directory, o) for o in os.listdir(directory)",
+            "return [] if not os.path.isdir(directory) else [os.path.join(directory, o) for o in os.listdir(directory)",
+            "dnahand/utils.py",
+            string=True,
+        )
+
     @run_after("install")
     def install_baton(self):
         install(self.package_dir + "/baton", self.prefix.bin)
-        filter_file("#!/usr/bin/env perl", f"#!{self.spec['perl'].prefix.bin.perl}", self.prefix.bin.baton, string=True)
+        filter_file(
+            "#!/usr/bin/env perl",
+            f"#!{self.spec['perl'].prefix.bin.perl}",
+            self.prefix.bin.baton,
+            string=True,
+        )
