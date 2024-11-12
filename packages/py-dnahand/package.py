@@ -73,6 +73,14 @@ class PyDnahand(PythonPackage):
             string=True,
         )
 
+        # fix bcftools merge single file error
+        filter_file(
+            "{BCFTOOLS_BIN} merge {to_merge} -o {vcf_out} -Oz",
+            "{BCFTOOLS_BIN} merge --force-single {to_merge} -o {vcf_out} -Oz",
+            "dnahand/utils.py",
+            string=True,
+        )
+
     @run_after("install")
     def install_baton(self):
         install(self.package_dir + "/baton", self.prefix.bin)
