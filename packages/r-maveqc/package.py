@@ -20,12 +20,13 @@ class RMaveqc(RPackage):
 
     depends_on("pandoc", type=("build", "run"))
 
-    depends_on("r+X@4.3.2:", type=("build", "run"))
+    depends_on("r+X@4.3", type=("build", "run"))
+    depends_on("r+X@4.3.2:", type=("build", "run"), when="@0.2.6:")
     depends_on("r-optparse@1.7.3", type=("build", "run"))
 
     depends_on("r-configr", type=("build", "run"))
     depends_on("r-vroom@1.6.3:", type=("build", "run"))
-    depends_on("r-data-table@:1.15.0", type=("build", "run"))
+    depends_on("r-data-table@:1.14.10", type=("build", "run"))
     depends_on("r-ckmeans-1d-dp", type=("build", "run"))
     depends_on("r-gplots", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
