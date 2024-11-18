@@ -26,12 +26,8 @@ from spack.package import *
 class PySe3Transformer(PythonPackage):
     """This repository provides a script and recipe to train the SE(3)-Transformer model to achieve state-of-the-art accuracy. It is used as a dependency for rfdiffusion."""
 
-    homepage = (
-        "https://github.com/RosettaCommons/RFdiffusion/tree/main/env/SE3Transformer"
-    )
-    url = (
-        "https://github.com/RosettaCommons/RFdiffusion/archive/refs/tags/v1.1.0.tar.gz"
-    )
+    homepage = "https://github.com/RosettaCommons/RFdiffusion/tree/main/env/SE3Transformer"
+    url = "https://github.com/RosettaCommons/RFdiffusion/archive/refs/tags/v1.1.0.tar.gz"
 
     license("BSD")
 
@@ -41,7 +37,7 @@ class PySe3Transformer(PythonPackage):
     )
 
     depends_on("python@3.9:")
-    depends_on("py-torch")
+    depends_on("py-torch-gpu")
     depends_on("py-torchaudio")
     depends_on("py-torchvision")
     depends_on("py-dgl@:0.9+cuda")
