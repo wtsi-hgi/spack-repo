@@ -151,6 +151,11 @@ class PyTorchvision(PythonPackage):
         for extension in ["png", "jpeg", "nvjpeg", "ffmpeg", "video_codec"]:
             env.set(f"TORCHVISION_USE_{extension.upper()}", int(f"+{extension}" in self.spec))
 
+        torch_cuda_arch = ";".join(
+            "{0:.1f}".format(float(arch) / 10.0) for arch in self.spec["py-torch"].variants["cuda_arch"].value
+        )
+        env.set("TORCH_CUDA_ARCH_LIST", torch_cuda_arch)
+
         include = []
         library = []
         for dep in self.spec.dependencies(deptype="link"):
