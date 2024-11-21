@@ -1,0 +1,28 @@
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Spack Project Developers. See the top-level COPYRIGHT file for details.
+#
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)
+
+from spack.package import *
+
+
+class PyOmnipath(PythonPackage):
+	"""Python client for the OmniPath web service"""
+	
+	homepage = "https://omnipathdb.org/"
+	pypi = "omnipath/omnipath-1.0.8-py3-none-any.whl" 
+
+	version("1.0.0", sha256="5a034cd55dc626391ac6d5b723f5c5f45001196d068af56a1181090231ccd48f", expand=False, url="https://files.pythonhosted.org/packages/58/2a/1fd0a288253512252ad02f8172559e6d9a6f11b60b0683d1cf9ef61fe814/omnipath-1.0.0-py3-none-any.whl")
+	version("1.0.1", sha256="6feb69cbd1102f7d93a81efe019a007616a8786199a573412600b6696f33fff5", expand=False, url="https://files.pythonhosted.org/packages/e5/21/1b59bb9cd23d052116cc8553b544a4d562c4c93328c10d7cd278e5442a05/omnipath-1.0.1-py3-none-any.whl")
+	version("1.0.2", sha256="46e15a2f1f2d317a488d25a5726df10a0c88cc7c54e9c15b1e6c274e7f70460e", expand=False, url="https://files.pythonhosted.org/packages/33/20/d98e2f43bfc07c251899258bb1363a1cc1c1b5424dc9c350bd336fc8a5b5/omnipath-1.0.2-py3-none-any.whl")
+	version("1.0.3", sha256="281890a9e8e0d8c8671dea442f631dac3238749fb7ff8283e85a14e6f7d6106e", expand=False, url="https://files.pythonhosted.org/packages/ec/62/3c8ec4b69f983b7dc0779eefde4ac0588dd59a834b0752bb50916420c4d7/omnipath-1.0.3-py3-none-any.whl")
+	version("1.0.4", sha256="74730bc0d09db28696b816c84d18082dcd059348e6b8e243a14414757103bbb0", expand=False, url="https://files.pythonhosted.org/packages/05/ac/5d24511350af0288eddde69095a815ed4aa3f51ad4d986846e8a94b3a818/omnipath-1.0.4-py3-none-any.whl")
+	version("1.0.5", sha256="093a85b9eb9db76129a4773f42dc96cb49c17edf5e87e83b6014894cca3ae897", expand=False, url="https://files.pythonhosted.org/packages/8e/87/fcc75fb346bd2b0e5b4107dc15b11a7eea197c6e11d3db2bff3895faed96/omnipath-1.0.5-py3-none-any.whl")
+	version("1.0.6", sha256="e969d255758046337109720ad666fd86b190c3ef3f7c178b6dfe9b93fcc36298", expand=False, url="https://files.pythonhosted.org/packages/ce/8e/a53c0cce87e6956d69edf651136f9df295f2fa2021c7505e2b49d1f86a39/omnipath-1.0.6-py3-none-any.whl")
+	version("1.0.7", sha256="f48d984f21f0687ee27e29ac48d066cc61b6c2cba4d4f9607d35fb719b172a30", expand=False, url="https://files.pythonhosted.org/packages/43/5a/afcec35f3aa9f46b434fefefe94fdec536fd026d80f04ccca9ff0c431402/omnipath-1.0.7-py3-none-any.whl")
+	version("1.0.8", sha256="34dba15830c225421d9464e062e7dd0b4d46b569e7394786ce181f9e294a4442", expand=False, url="https://files.pythonhosted.org/packages/5d/f3/00971472499c8a76a8bfd38b987736a7eb06d6c2f20d537363b6b28dfcec/omnipath-1.0.8-py3-none-any.whl")
+
+	depends_on("py-setuptools", type=("build"))
+	depends_on("python@3.7:", type=("build", "run"))
+
+# {'attrs(>=20.2.0)': ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7'], 'docrep(>=0.3.1)': ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7'], 'enum-tools(>=0.6.1)': ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4'], 'inflect(>=4.1.0)': ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7'], 'pandas(>=1.1.4)': ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4'], 'requests(>=2.24.0)': ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7'], 'tqdm(>=4.51.0)': ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7'], 'typing-extensions(>=3.7.4.3)': ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7'], 'urllib3(>=1.25.11)': ['1.0.0', '1.0.1', '1.0.2'], 'wrapt(>=1.12.0)': ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7'], "pre-commit(>=2.7.1);extra=='dev'": ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7'], "bump2version;extra=='dev'": ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7', '1.0.8'], "sphinx(>=3.3.0);extra=='docs'": ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4'], "sphinx-autodoc-annotation;extra=='docs'": ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7', '1.0.8'], "sphinx-autodoc-typehints(>=1.10.3);extra=='docs'": ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7'], "sphinx-paramlinks;extra=='docs'": ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7', '1.0.8'], "sphinx-toolbox;extra=='docs'": ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7', '1.0.8'], "sphinx-copybutton;extra=='docs'": ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7', '1.0.8'], "sphinx-last-updated-by-git;extra=='docs'": ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7', '1.0.8'], "sphinx-rtd-theme;extra=='docs'": ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7', '1.0.8'], "tox(>=3.20.1);extra=='tests'": ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7'], "networkx(>=4.3.0);extra=='graph'": ['1.0.2', '1.0.3', '1.0.4', '1.0.5'], 'urllib3(>=1.26.0)': ['1.0.3', '1.0.4', '1.0.5', '1.0.6', '1.0.7'], 'packaging': ['1.0.5', '1.0.6', '1.0.7', '1.0.8'], 'pandas(>=1.2.0)': ['1.0.5', '1.0.6', '1.0.7'], "sphinx(>=4);extra=='docs'": ['1.0.5', '1.0.6', '1.0.7'], "networkx(>=2.3.0);extra=='graph'": ['1.0.6', '1.0.7'], 'attrs>=20.2.0': ['1.0.8'], 'docrep>=0.3.1': ['1.0.8'], 'inflect>=4.1.0': ['1.0.8'], 'pandas>=1.2.0': ['1.0.8'], 'requests>=2.24.0': ['1.0.8'], 'tqdm>=4.51.0': ['1.0.8'], 'typing-extensions>=3.7.4.3': ['1.0.8'], 'urllib3>=1.26.0': ['1.0.8'], 'wrapt>=1.12.0': ['1.0.8'], "pre-commit>=2.7.1;extra=='dev'": ['1.0.8'], "sphinx>=4;extra=='docs'": ['1.0.8'], "sphinx-autodoc-typehints>=1.10.3;extra=='docs'": ['1.0.8'], "networkx>=2.3.0;extra=='graph'": ['1.0.8'], "tox>=3.20.1;extra=='tests'": ['1.0.8']}
