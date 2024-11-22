@@ -21,6 +21,8 @@
 # ----------------------------------------------------------------------------
 
 import glob
+import os
+import shutil
 
 from spack.package import *
 
@@ -40,7 +42,9 @@ class King(Package):
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-e1071", type=("build", "run"))
 
-    patch("rplot.patch")
+    def patch(self):
+        os.remove("rplot.cpp")
+        shutil.copy(join_path(self.package_dir, "rplot_patch.cpp"), "rplot.cpp")
 
     def install(self, spec, prefix):
         mkdirp(prefix.bin)
