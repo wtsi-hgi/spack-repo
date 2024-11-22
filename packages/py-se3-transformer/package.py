@@ -37,10 +37,10 @@ class PySe3Transformer(PythonPackage):
     )
 
     depends_on("python@3.9:")
-    depends_on("py-torch-gpu")
+    depends_on("py-torch+cuda")
     depends_on("py-torchaudio")
     depends_on("py-torchvision")
-    depends_on("py-dgl@:0.9+cuda")
+    depends_on("py-dgl@2+cuda backend=pytorch")
     depends_on("py-hydra-core")
     depends_on("py-pyrsistent")
     depends_on("py-decorator")

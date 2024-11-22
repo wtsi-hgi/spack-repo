@@ -24,18 +24,10 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
     license("Apache-2.0")
 
     version("master", branch="master", submodules=True)
-    version(
-        "1.0.1", tag="1.0.1", commit="cc2e9933f309f585fae90965ab61ad11ac1eecd5", submodules=True
-    )
-    version(
-        "0.6.0post1", tag="0.6.0post1", commit="eb4dba09b4aed4d87eb4f7943fd8aeb93e99916a", submodules=True
-    )
-    version(
-        "0.4.3", tag="0.4.3", commit="e1d90f9b5eeee7359a6b4f5edca7473a497984ba", submodules=True
-    )
-    version(
-        "0.4.2", tag="0.4.2", commit="55e056fbae8f25f3da4aab0a0d864d72c2a445ff", submodules=True
-    )
+    version("2.4.0", tag="v2.4.0", commit="c6c874bf7ea085beb04ea1487cfd216a0bacd6c1", submodules=True)
+    version("0.6.0post1", tag="0.6.0post1", commit="eb4dba09b4aed4d87eb4f7943fd8aeb93e99916a", submodules=True)
+    version("0.4.3", tag="0.4.3", commit="e1d90f9b5eeee7359a6b4f5edca7473a497984ba", submodules=True)
+    version("0.4.2", tag="0.4.2", commit="55e056fbae8f25f3da4aab0a0d864d72c2a445ff", submodules=True)
 
     # depends_on("c", type="build")  # generated
     # depends_on("cxx", type="build")  # generated
@@ -72,9 +64,10 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
 
     # Backends
     # See https://docs.dgl.ai/install/index.html#working-with-different-backends
-    depends_on("py-torch@1.12.0:1", when="@1.0.1: backend=pytorch", type="run")
-    depends_on("py-torch@1.2.0:1", when="@0.4.3: backend=pytorch", type="run")
-    depends_on("py-torch@0.4.1:", when="backend=pytorch", type="run")
+    depends_on("py-torch+cuda@2:", when="@2: backend=pytorch", type="run")
+    depends_on("py-torch+cuda@1.12.0:1", when="@1 backend=pytorch", type="run")
+    depends_on("py-torch+cuda@1.2.0:1", when="@0.4.3:1 backend=pytorch", type="run")
+    depends_on("py-torch+cuda@0.4.1:", when="backend=pytorch", type="run")
     depends_on("mxnet@1.6.0:", when="@1.0.1: backend=mxnet", type="run")
     depends_on("mxnet@1.5.1:", when="@0.4.3: backend=mxnet", type="run")
     depends_on("mxnet@1.5.0:", when="backend=mxnet", type="run")
@@ -90,6 +83,7 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
     # From error: "Your installed Caffe2 version uses cuDNN but I cannot find the
     # cuDNN libraries.  Please set the proper cuDNN prefixes and / or install cuDNN."
     depends_on("cudnn", when="+cuda", type=("build", "run"))
+    depends_on("protobuf", type=("build", "run", "link"))
 
     patch(
         "https://patch-diff.githubusercontent.com/raw/dmlc/dgl/pull/5434.patch?full_index=1",
@@ -99,12 +93,21 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
 
     build_directory = "build"
 
+    def setup_build_environment(self, env):
+        if self.spec.satisfies("@2: +cuda"):  # match our cluster
+            env.set("TORCH_CUDA_ARCH_LIST", "7.0 7.2 7.5 8.0 8.6 8.7 8.9")
+
     def patch(self):
         # fix the numeric_limits import
-        filter_file("#include <cmath>", """
+        filter_file(
+            "#include <cmath>",
+            """
 #include <cmath>
 #include <limits>
-""", "src/array/cuda/functor.cuh", string=True)
+""",
+            "src/array/cuda/functor.cuh",
+            string=True,
+        )
 
     # https://docs.dgl.ai/install/index.html#install-from-source
     def cmake_args(self):
@@ -114,7 +117,7 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
             args.append("-DUSE_CUDA=ON")
             # Prevent defaulting to old compute_ and sm_ despite defining cuda_arch
             args.append("-DCUDA_ARCH_NAME=Manual")
-            cuda_arch_list = "80" # match our cluster
+            cuda_arch_list = "70,72,75,80,86,87,89"  # match our cluster
             args.append("-DCUDA_ARCH_BIN={0}".format(cuda_arch_list))
             args.append("_DCUDA_ARCH_PTX={0}".format(cuda_arch_list))
         else:
@@ -182,8 +185,6 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
         elif "backend=mxnet" in self.spec:
             modules.extend(["dgl.nn.mxnet", "dgl.nn.mxnet.conv", "dgl.backend.mxnet"])
         elif "backend=tensorflow" in self.spec:
-            modules.extend(
-                ["dgl.nn.tensorflow", "dgl.nn.tensorflow.conv", "dgl.backend.tensorflow"]
-            )
+            modules.extend(["dgl.nn.tensorflow", "dgl.nn.tensorflow.conv", "dgl.backend.tensorflow"])
 
         return modules
