@@ -35,12 +35,21 @@ class King(Package):
 
     depends_on("gcc", type="build")
     depends_on("zlib-api")
+    depends_on("lapack")
+    depends_on("r", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-e1071", type=("build", "run"))
+
+    patch("rplot.patch")
 
     def install(self, spec, prefix):
         mkdirp(prefix.bin)
         which("g++")(
             "-lm",
             "-lz",
+            "-DWITH_LAPACK=1",
+            *spec["lapack"].libs.ld_flags.split(),
+            "-I" + spec["lapack"].prefix.include,
             "-I" + spec["zlib-api"].prefix.include,
             "-L" + spec["zlib-api"].prefix.lib,
             "-O2",
