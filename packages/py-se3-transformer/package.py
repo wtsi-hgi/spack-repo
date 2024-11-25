@@ -36,18 +36,22 @@ class PySe3Transformer(PythonPackage):
         sha256="57d82f0d43540c2912eda3f1d34ad90b13db14966ee069c427e217fe78f0297f",
     )
 
-    depends_on("python@3.9:")
-    depends_on("py-torch+cuda")
-    depends_on("cuda@11:11.8")
-    depends_on("py-torchaudio")
-    depends_on("py-torchvision")
-    depends_on("py-dgl@2+cuda backend=pytorch")
-    depends_on("py-hydra-core")
-    depends_on("py-pyrsistent")
-    depends_on("py-decorator")
-    depends_on("py-wandb")
-    depends_on("py-dllogger")
-    depends_on("py-e3nn")
-    depends_on("py-pynvml")
+    with default_args(type=("build", "run", "link")):
+        depends_on("python@3.9:")
+        depends_on("py-torch+cuda")
+        depends_on("cuda@11:11.8")
+        depends_on("py-torchaudio")
+        depends_on("py-torchvision")
+        depends_on("py-dgl@2+cuda backend=pytorch")
+        depends_on("py-hydra-core")
+        depends_on("py-pyrsistent")
+        depends_on("py-decorator")
+        depends_on("py-wandb")
+        depends_on("py-dllogger")
+        depends_on("py-e3nn")
+        depends_on("py-pynvml")
 
     build_directory = "env/SE3Transformer"
+
+    def setup_run_environment(self, env):
+        env.append_path("LD_LIBRARY_PATH", "/opt/view/lib64")
