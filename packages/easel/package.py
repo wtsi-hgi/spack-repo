@@ -37,16 +37,3 @@ class Easel(AutotoolsPackage):
     depends_on("automake", type="build")
     depends_on("libtool", type="build")
     depends_on("m4", type="build")
-
-    # FIXME: Add additional dependencies if required.
-    # depends_on("foo")
-
-    def autoreconf(self, spec, prefix):
-        # FIXME: Modify the autoreconf method as necessary
-        autoreconf("--install", "--verbose", "--force")
-
-    def configure_args(self):
-        # FIXME: Add arguments other than --prefix
-        # FIXME: If not needed delete this function
-        args = []
-        return args
