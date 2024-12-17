@@ -259,7 +259,7 @@ class R(AutotoolsPackage):
     @run_after("install")
     def install_rmath(self):
         if "+rmath" in self.spec:
-            with working_dir("src/nmath/standalone"):
+            with working_dir(join_path(self.build_directory, "src", "nmath", "standalone")):
                 make()
                 make("install", parallel=False)
 
@@ -274,16 +274,11 @@ class R(AutotoolsPackage):
             "--enable-BLAS-shlib",
             "--enable-R-framework=no",
             "--without-recommended-packages",
-            "LDFLAGS=-L{0} -Wl,-rpath,{0}".format(
-                join_path(prefix, "rlib", "R", "lib")
-            ),
+            "LDFLAGS=-L{0} -Wl,-rpath,{0}".format(join_path(prefix, "rlib", "R", "lib")),
         ]
 
         if "+external-lapack" in spec:
-            if (
-                spec["lapack"].name in INTEL_MATH_LIBRARIES
-                and "gfortran" in self.compiler.fc
-            ):
+            if spec["lapack"].name in INTEL_MATH_LIBRARIES and "gfortran" in self.compiler.fc:
                 mkl_re = re.compile(r"(mkl_)intel(_i?lp64\b)")
                 config_args.extend(
                     [
@@ -344,9 +339,7 @@ class R(AutotoolsPackage):
         dst_makeconf = join_path(self.etcdir, "Makeconf.spack")
         filter_file("/usr/bin/gcc", "/opt/view/bin/gcc", src_makeconf, string=True)
         filter_file("/usr/bin/g++", "/opt/view/bin/g++", src_makeconf, string=True)
-        filter_file(
-            "/usr/bin/gfortran", "/opt/view/bin/gfortran", src_makeconf, string=True
-        )
+        filter_file("/usr/bin/gfortran", "/opt/view/bin/gfortran", src_makeconf, string=True)
         install(src_makeconf, dst_makeconf)
 
     # To respect order of execution, we should filter after we made the copy above
