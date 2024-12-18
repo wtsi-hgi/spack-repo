@@ -14,11 +14,13 @@ class PyBiopython(PythonPackage):
 
     homepage = "https://biopython.org/wiki/Main_Page"
     pypi = "biopython/biopython-1.79.tar.gz"
+    git = "https://github.com/biopython/biopython.git"
 
     maintainers("RMeli")
 
     license("BSD-3-Clause")
 
+    version("20241216", commit="19557112226370694e6f5a06214100f051f32125")
     version("1.81", sha256="2cf38112b6d8415ad39d6a611988cd11fb5f33eb09346666a87263beba9614e0")
     version("1.80", sha256="52805e9af88767e450e2df8113b5bc59e964e2e8a7bb803a83570bdbb51c0e43")
     version("1.79", sha256="edb07eac99d3b8abd7ba56ff4bedec9263f76dfc3c3f450e7d2e2bcdecf8559b")
