@@ -74,9 +74,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         default=True,
         description="Use FBGEMM (quantized 8-bit server operators)",
     )
-    variant(
-        "kineto", default=True, description="Use Kineto profiling library", when="@1.8:"
-    )
+    variant("kineto", default=True, description="Use Kineto profiling library", when="@1.8:")
     variant("magma", default=not is_darwin, description="Use MAGMA", when="+cuda")
     variant("metal", default=is_darwin, description="Use Metal for Caffe2 iOS build")
     variant(
@@ -95,18 +93,14 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     variant("numa", default=True, description="Use NUMA", when="platform=cray")
     variant("numpy", default=True, description="Use NumPy")
     variant("openmp", default=True, description="Use OpenMP for parallel code")
-    variant(
-        "qnnpack", default=True, description="Use QNNPACK (quantized 8-bit operators)"
-    )
+    variant("qnnpack", default=True, description="Use QNNPACK (quantized 8-bit operators)")
     variant(
         "valgrind",
         default=True,
         description="Use Valgrind",
         when="@1.8: platform=linux",
     )
-    variant(
-        "valgrind", default=True, description="Use Valgrind", when="@1.8: platform=cray"
-    )
+    variant("valgrind", default=True, description="Use Valgrind", when="@1.8: platform=cray")
     variant("xnnpack", default=True, description="Use XNNPACK", when="@1.5:")
     variant("mkldnn", default=True, description="Use MKLDNN")
     variant("distributed", default=not is_darwin, description="Use distributed")
@@ -161,8 +155,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     conflicts(
         "cuda_arch=none",
         when="+cuda",
-        msg="Must specify CUDA compute capabilities of your GPU, see "
-        "https://developer.nvidia.com/cuda-gpus",
+        msg="Must specify CUDA compute capabilities of your GPU, see " "https://developer.nvidia.com/cuda-gpus",
     )
 
     # Required dependencies
@@ -183,6 +176,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     # pyproject.toml
     depends_on("py-setuptools", type=("build"))
     depends_on("py-astunparse", when="@1.13:", type=("build", "run"))
+    depends_on("py-numpy@:1", when="@:2.3", type=("build", "run"))
     depends_on("py-numpy@1.16.6:", type=("build", "run"))
     depends_on("ninja@1.5:", when="@1.1:", type="build")
     depends_on("py-pyyaml", type=("build", "run"))
@@ -558,8 +552,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             env.set("CUDA_HOME", self.spec["cuda"].prefix)  # Linux/macOS
             env.set("CUDA_PATH", self.spec["cuda"].prefix)  # Windows
             torch_cuda_arch = ";".join(
-                "{0:.1f}".format(float(arch) / 10.0)
-                for arch in self.spec.variants["cuda_arch"].value
+                "{0:.1f}".format(float(arch) / 10.0) for arch in self.spec.variants["cuda_arch"].value
             )
             env.set("TORCH_CUDA_ARCH_LIST", torch_cuda_arch)
             if self.spec.satisfies("%clang"):
@@ -569,9 +562,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
 
         enable_or_disable("rocm")
         if "+rocm" in self.spec:
-            env.set(
-                "PYTORCH_ROCM_ARCH", ";".join(self.spec.variants["amdgpu_target"].value)
-            )
+            env.set("PYTORCH_ROCM_ARCH", ";".join(self.spec.variants["amdgpu_target"].value))
             env.set("HSA_PATH", self.spec["hsa-rocr-dev"].prefix)
             env.set("ROCBLAS_PATH", self.spec["rocblas"].prefix)
             env.set("ROCFFT_PATH", self.spec["rocfft"].prefix)
