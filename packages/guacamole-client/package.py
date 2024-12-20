@@ -3,8 +3,6 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-import os
-import pathlib
 
 from spack.package import *
 
@@ -29,12 +27,7 @@ class GuacamoleClient(MavenPackage):
 
     depends_on("java@8:", type=("build", "run"))
     depends_on("java@:16", type=("build", "run"), when="@:1.4")
-    depends_on("tomcat", type="run")
 
     def build_args(self):
         # The file .spack_patched is flagged as an unapproved license
         return ["-Drat.numUnapprovedLicenses=1"]
-
-    def setup_run_environment(self, env):
-        war_file = pathlib.Path(self.prefix.guacamole.target).glob("*.war").pop()
-        os.symlink(join_path(os.environ["CATALINA_HOME"] + "/webapps/guacamole.war"), war_file)
