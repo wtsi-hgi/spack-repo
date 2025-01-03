@@ -45,8 +45,6 @@ class RRgl(RPackage):
     depends_on("libpng", type=("build", "link", "run"))
     depends_on("freetype", type=("build", "link", "run"))
 
-    conflicts("^opengl")  # do not use opengl
-
     def configure_args(self):
         args = [
             "--x-includes=%s" % self.spec["libx11"].prefix.include,
