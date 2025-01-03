@@ -40,9 +40,12 @@ class RRgl(RPackage):
     depends_on("r-base64enc", type=("build", "run"))
     depends_on("r-mime", type=("build", "run"))
     depends_on("gl", type=("build", "link", "run"))
+    depends_on("glu", type=("build", "link", "run"))
     depends_on("zlib", type=("build", "link", "run"))
     depends_on("libpng", type=("build", "link", "run"))
     depends_on("freetype", type=("build", "link", "run"))
+
+    conflict("^opengl")  # do not use opengl
 
     def configure_args(self):
         args = [
