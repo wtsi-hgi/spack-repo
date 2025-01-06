@@ -12,13 +12,14 @@ class PyAnndata(PythonPackage):
     homepage = "https://github.com/scverse/anndata"
     pypi = "anndata/anndata-0.10.3.tar.gz"
 
+    version("0.11.1", sha256="36bff9a85276fc5f1b9fd01f15aff9aa49408129985f42e0fca4e2c5b7fa909f")
     version("0.10.3", sha256="3a40eb6a30e976a3f2678a09e89cd8819bb19b3944278b94eb2d568060d30344")
     version("0.9.2", sha256="e5b8383d09723af674cae7ad0c2ef53eb1f8c73949b7f4c182a6e30f42196327")
 
     depends_on("py-hatchling", type=("build", "run"))
     depends_on("py-hatch-vcs", type=("build", "run"))
     # https://github.com/scverse/anndata/issues/1210
-    depends_on("py-pandas@:2.1.1,2.1.3:", type=("build", "run")) # skip 2.1.2 
+    depends_on("py-pandas@:2.1.1,2.1.3:", type=("build", "run"))  # skip 2.1.2
 
     with when("@:0.9"):
         depends_on("py-flit-core", type="build")

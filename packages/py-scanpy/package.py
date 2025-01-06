@@ -15,6 +15,7 @@ class PyScanpy(PythonPackage):
 
     license("BSD-3-Clause")
 
+    version("1.10.4", sha256="2682fbbe2e4106c349472feebef08e174062fb666db4c94123758c6a7a470396")
     version("1.9.8", sha256="2ab1790d2b82eadb0cf8d487f468beac7a8f6a3a8fd7112d1ae989f8c52a4353")
     version("1.9.7", sha256="c8cf5a4f1246e9dc5486d0ae9ac4950dc6fb5fa92c247cb571f96ff8e72145df")
     version("1.9.6", sha256="b2f24e6f220cb9d4d893b24f6899ba1a14cf2fef50b7e05bb37980c78de8a013")
@@ -22,6 +23,8 @@ class PyScanpy(PythonPackage):
     version("1.9.4", sha256="14957604d251c665d42a8fe55b51b6d19867c3e987054b12e65c762d13664463")
     version("1.9.1", sha256="00c9a83b649da7e0171c91e9a08cff632102faa760614fd05cd4d1dbba4eb541")
 
+    depends_on("python@3.10:", type=("build", "run"), when="@1.10.4:")
+    depends_on("py-anndata@0.8:", type=("build", "run"), when="@1.10.4:")
     depends_on("python@3.7:", type=("build", "run"))
     depends_on("py-setuptools-scm", type="build")
     depends_on("py-flit-core@3.4:3", type="build")
