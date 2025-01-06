@@ -18,6 +18,7 @@ class Samtools(Package):
 
     license("MIT")
 
+    version("1.21", sha256="05724b083a6b6f0305fcae5243a056cc36cf826309c3cb9347a6b89ee3fc5ada")
     version("1.20", sha256="c71be865e241613c2ca99679c074f1a0daeb55288af577db945bdabe3eb2cf10")
     version("1.19.2", sha256="71f60499668e4c08e7d745fbff24c15cc8a0977abab1acd5d2bb419bdb065e96")
     version("1.19", sha256="fa6b3b18e20851b6f3cb55afaf3205d02fcb79dae3b849fcf52e8fc10ff08b83")
@@ -52,10 +53,11 @@ class Samtools(Package):
     depends_on("ncurses")
     depends_on("perl", type="run")
     depends_on("python", type="run")
+    depends_on("htslib-plugins", when="@1.20:")
 
     # htslib became standalone @1.3.1, must use corresponding version
+    depends_on("htslib@1.21", when="@1.21")
     depends_on("htslib@1.20", when="@1.20")
-    depends_on("htslib-plugins", when="@1.20")
     depends_on("htslib@1.19.1", when="@1.19.2")
     depends_on("htslib@1.19", when="@1.19")
     depends_on("htslib@1.18", when="@1.18")

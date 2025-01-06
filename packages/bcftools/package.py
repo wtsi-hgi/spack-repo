@@ -20,6 +20,7 @@ class Bcftools(AutotoolsPackage):
 
     license("GPL-3.0-or-later")
 
+    version("1.21", sha256="528a4cc1d3555368db75a700b22a3c95da893fd1827f6d304716dfd45ea4e282")
     version("1.20", sha256="312b8329de5130dd3a37678c712951e61e5771557c7129a70a327a300fda8620")
     version("1.19", sha256="782b5f1bc690415192231e82213b3493b047f45e630dc8ef6f154d6126ab3e68")
     version("1.18", sha256="d9b9d36293e4cc62ab7473aa2539389d4e1de79b1a927d483f6e91f3c3ceac7e")
@@ -59,6 +60,7 @@ class Bcftools(AutotoolsPackage):
     depends_on("perl", when="@1.8:+perl-filters", type=("build", "run"))
     depends_on("zlib-api")
 
+    depends_on("htslib@1.21", when="@1.21")
     depends_on("htslib@1.20", when="@1.20")
     depends_on("htslib@1.19", when="@1.19")
     depends_on("htslib@1.18", when="@1.18")

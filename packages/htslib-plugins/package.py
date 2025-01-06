@@ -35,7 +35,7 @@ class HtslibPlugins(MakefilePackage):
     version("20210319", commit="5f12dfb90d44f46d2e975ce9a823f7f042b92d69")
 
     depends_on("irods-client@4.2.7", type=("build", "link", "run"))
-    depends_on("htslib@1.20")
+    depends_on("htslib@1.20:")
     depends_on("openssl")
 
     def edit(self, spec, prefix):
