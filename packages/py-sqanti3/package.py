@@ -93,3 +93,4 @@ class PySqanti3(BundlePackage):
     depends_on("py-gtftools", type=("build", "run"))
     depends_on("desalt", type=("build", "run"))
     depends_on("slamem", type=("build", "run"))
+    depends_on("curl", type=("build", "run", "link"))
