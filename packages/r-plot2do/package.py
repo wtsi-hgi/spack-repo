@@ -7,7 +7,7 @@ from spack.package import *
 
 
 class RPlot2do(BundlePackage):
-    """A tool to assess the quality and distribution of genomic data."""
+    """A flexible tool for evaluating the quality of MNase-seq and MNase-ChIP-seq data, and for visualizing the distribution of nucleosomes near the functional regions of the genome."""
 
     homepage = "https://github.com/rchereji/plot2DO"
     git = "https://github.com/rchereji/plot2DO.git"
