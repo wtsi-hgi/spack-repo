@@ -26,6 +26,7 @@ class PyCooltools(PythonPackage):
 	version("0.6.0", sha256="ce970291b3b6b7d7abdd1c1fe374732491564866656e46e9a537cc7cf885a4a6")
 	version("0.6.1", sha256="1082186215c1215b1f1192b1c5dd2d103e0db6df3dca3a9e49ec15676f5c0adb")
 	version("0.7.0", sha256="8b26d4857cc76b2dd3d1097b85f828cf6d5f1cf85b0cfd4b67a310e33e7ece1c")
+	version("0.7.1", sha256="ea666a4a220ca3af498492554136e9231e640212e8caeec911f7bddc42105f66")
 
 	depends_on("python@3.7.1:", type=("build", "run"))
 	depends_on("py-scikit-image", type=("build", "run"))
