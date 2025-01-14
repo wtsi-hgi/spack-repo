@@ -52,6 +52,7 @@ class PyNumba(PythonPackage):
     depends_on("py-numpy@1.17:1.20", when="@0.54", type=("build", "run"))
     depends_on("py-numpy@1.15:1.20", when="@0.48:0.53", type=("build", "run"))
     depends_on("py-setuptools", type=("build", "run"))
+    depends_on("py-llvmlite@0.43", when="@0.60", type=("build", "run"))
     depends_on("py-llvmlite@0.41", when="@0.58", type=("build", "run"))
     depends_on("py-llvmlite@0.40", when="@0.57", type=("build", "run"))
     depends_on("py-llvmlite@0.39", when="@0.56", type=("build", "run"))
