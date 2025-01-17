@@ -17,4 +17,3 @@ class PyMoodsPython(PythonPackage):
     version("1.9.4.1", sha256="b3b5e080cb0cd13c0fd175d0ee0d453fde3e42794fa7ac39a4f6db1ac5ddb4cc")
 
     depends_on("py-setuptools", type=("build"))
-    depends_on("python@2.7", type=("build", "run"))
