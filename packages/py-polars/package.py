@@ -13,7 +13,7 @@ class PyPolars(PythonPackage):
 
     license("MIT")
 
-    version("0.20.5", sha256="fa4abc22cee024b5872961ddcd8a13a0a76150df345e21ce4308c2b1a36b47aa")
+    version("0.20.31", sha256="00f62dec6bf43a4e2a5db58b99bf0e79699fe761c80ae665868eaea5168f3bbb")
 
     # pyproject.toml
     depends_on("py-maturin@1.3.2:", type="build")
