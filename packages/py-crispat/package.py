@@ -12,6 +12,7 @@ class PyCrispat(PythonPackage):
     homepage = "https://github.com/velten-group/crispat/tree/main"
     pypi = "crispat/crispat-0.9.3-py3-none-any.whl"
 
+    version("0.9.8", sha256="625ab3321117fba7f5dc546e26e3ae2d171f095a21140403f5e684b4b0f9bd70", expand=False)
     version(
         "0.9.1",
         sha256="7e2c99483bb015a4a2237bfd2390e8fc0730f8065d8660b6f11ef5ed7248b3b8",
