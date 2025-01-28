@@ -139,6 +139,11 @@ class Magma(CMakePackage, CudaPackage, ROCmPackage):
 
         make("generate")
 
+    def flag_handler(self, name, flags):
+        if name == "NVCC_PREPEND_FLAGS":
+            flags.append("-Xfatbin=-compress-all")
+        return (flags, None, None)
+
     def cmake_args(self):
         spec = self.spec
         define = self.define
