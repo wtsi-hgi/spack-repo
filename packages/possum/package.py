@@ -35,14 +35,6 @@ class Possum(Package):
     url = "https://github.com/moshe-olshansky/EigenVector/archive/refs/tags/v1.0.tar.gz"
     git = "https://github.com/moshe-olshansky/EigenVector.git"
 
-    # FIXME: Add a list of GitHub accounts to
-    # notify when the package is updated.
-    # maintainers("github_user1", "github_user2")
-
-    # FIXME: Add the SPDX identifier of the project's license below.
-    # See https://spdx.org/licenses/ for a list.
-    license("UNKNOWN")
-
     version("1.0", sha256="b5459f9a6d9961ae41aa23359b8e52320d65e48c56a6563724f8fb3be15cb691")
 
     depends_on("r", type=("build", "run"))
