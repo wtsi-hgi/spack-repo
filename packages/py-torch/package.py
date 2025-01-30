@@ -200,7 +200,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     depends_on("lapack")
 
     # third_party
-    depends_on("py-pybind11@2.11.0", when="@2.1:", type=("build", "link", "run"))
+    depends_on("py-pybind11@2.11.0:", when="@2.1:", type=("build", "link", "run"))
     depends_on("py-pybind11@2.10.1", when="@2.0", type=("build", "link", "run"))
     depends_on("py-pybind11@2.10.0", when="@1.13:1", type=("build", "link", "run"))
     depends_on("py-pybind11@2.6.2", when="@1.8:1.12", type=("build", "link", "run"))
