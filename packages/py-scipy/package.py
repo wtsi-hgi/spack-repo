@@ -1,4 +1,4 @@
-# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+1  # Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
@@ -15,6 +15,8 @@ class PyScipy(PythonPackage):
 
     maintainers("adamjstewart", "rgommers")
 
+    version("1.13.1", sha256="095a87a0312b08dfd6a6155cbbd310a8c51800fc931b8c0b84003014b874ed3c")
+    version("1.13.0", sha256="58569af537ea29d3f78e5abd18398459f195546bb3be23d16677fb26616cc11e")
     version("1.11.3", sha256="bba4d955f54edd61899776bad459bf7326e14b9fa1c552181f0479cc60a568cd")
     version("1.11.2", sha256="b29318a5e39bd200ca4381d80b065cdf3076c7d7281c5e36569e99273867f61d")
     version("1.11.1", sha256="fb5b492fa035334fd249f0973cc79ecad8b09c604b42a127a677b45a9a3d4289")
@@ -67,11 +69,13 @@ class PyScipy(PythonPackage):
     depends_on("py-meson-python@0.8.1:", when="@1.9.1:", type="build")
     depends_on("py-meson-python@0.7:", when="@1.9:", type="build")
     depends_on("meson", when="@1.9.0:1.9.1", type="build")
-    depends_on("py-cython@0.29.35:2", when="@1.11:", type="build")
-    depends_on("py-cython@0.29.32:2", when="@1.9.2:", type="build")
-    depends_on("py-cython@0.29.21:2", when="@1.9:", type="build")
-    depends_on("py-cython@0.29.18:2", when="@1.7:", type="build")
-    depends_on("py-pybind11@2.10.4:2.11.0", when="@1.11.3:", type=("build", "link"))
+    depends_on("py-cython@3:", when="@1.13:", type="build")
+    depends_on("py-cython@0.29.35:2", when="@1.11", type="build")
+    depends_on("py-cython@0.29.32:2", when="@1.9.2:1.10", type="build")
+    depends_on("py-cython@0.29.21:2", when="@1.9", type="build")
+    depends_on("py-cython@0.29.18:2", when="@1.7:1.8", type="build")
+    depends_on("py-pybind11@2.12.0:", when="@1.13:", type=("build", "link"))
+    depends_on("py-pybind11@2.10.4:2.11.0", when="@1.11.3:1.12", type=("build", "link"))
     depends_on("py-pybind11@2.10.4:2.10", when="@1.11.0:1.11.2", type=("build", "link"))
     depends_on("py-pybind11@2.10.1", when="@1.10", type=("build", "link"))
     depends_on("py-pybind11@2.4.3:2.10", when="@1.9.1:1.9", type=("build", "link"))
@@ -121,8 +125,7 @@ class PyScipy(PythonPackage):
     conflicts(
         "%msvc@:19.19",
         when="@1.10:",
-        msg="SciPy requires at least vc142 (default with Visual Studio 2019) "
-        "when building with MSVC",
+        msg="SciPy requires at least vc142 (default with Visual Studio 2019) " "when building with MSVC",
     )
 
     # https://github.com/scipy/scipy/issues/19352
@@ -158,9 +161,7 @@ class PyScipy(PythonPackage):
     @run_before("install")
     def set_fortran_compiler(self):
         if self.compiler.f77 is None or self.compiler.fc is None:
-            raise InstallError(
-                "py-scipy requires Fortran compilers. Configure Fortran compiler to proceed."
-            )
+            raise InstallError("py-scipy requires Fortran compilers. Configure Fortran compiler to proceed.")
 
         if self.spec.satisfies("%fj"):
             with open("setup.cfg", "w") as f:
