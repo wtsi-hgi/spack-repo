@@ -6,13 +6,25 @@
 from spack.package import *
 
 
-class Foldmason(CMakePackage):
+class Foldmason(Package):
     """FoldMason is a software tool for constructing accurate multiple alignments from large sets of protein structures."""
 
     homepage = "https://github.com/steineggerlab/foldmason"
-    url = "https://github.com/steineggerlab/foldmason/archive/refs/tags/1-763a428.zip"
+    url = "https://github.com/steineggerlab/foldmason/releases/download/2-7bd21ed/foldmason-linux-avx2.tar.gz"
 
-    version("1-763a428", sha256="6d257a63dfab1bc7b53b1422e1c59b6ea8369cd7091fcae1be6c78e8e134ef83")
+    version(
+        "2-7bd21ed",
+        sha256="23cb607cf6f37d5f29254a7217a1a14255437c589935580c368bc458a8d3bbd0",
+        url="https://github.com/steineggerlab/foldmason/releases/download/2-7bd21ed/foldmason-linux-avx2.tar.gz",
+    )
 
-    depends_on("rust", type="build")
-    depends_on("gcc", type=("build", "run", "link"))
+    def install(self, spec, prefix):
+        # Create required directories
+        mkdirp(prefix.bin)
+
+        # Install all executable files to bin directory
+        install("bin/foldmason", prefix.bin)
+
+        # Make files executable
+        chmod = which("chmod")
+        chmod("+x", join_path(prefix.bin, "foldmason"))
