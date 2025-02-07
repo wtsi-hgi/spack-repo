@@ -117,8 +117,7 @@ class PyScipy(PythonPackage):
     depends_on("lapack@3.7.1:", when="@1.9:")
     depends_on("lapack@3.4.1:", when="@1.2:")
     depends_on("lapack")
-    depends_on("blas", type=("build", "link", "run"))
-
+    depends_on("blas")
     # meson.build
     # https://docs.scipy.org/doc/scipy/dev/toolchain.html#compilers
     conflicts("%gcc@:7", when="@1.10:", msg="SciPy requires GCC >= 8.0")
@@ -128,6 +127,9 @@ class PyScipy(PythonPackage):
         when="@1.10:",
         msg="SciPy requires at least vc142 (default with Visual Studio 2019) " "when building with MSVC",
     )
+
+    # https://github.com/scipy/scipy/issues/19831
+    conflicts("^openblas@0.3.26:", when="@:1.12")
 
     # https://github.com/scipy/scipy/issues/19352
     conflicts("^py-cython@3.0.3")
@@ -208,8 +210,8 @@ class PyScipy(PythonPackage):
             "compile-args": f"-j{make_jobs}",
             "setup-args": {
                 # http://scipy.github.io/devdocs/building/blas_lapack.html
-                "-Dblas": blas,
-                "-Dlapack": lapack,
+                "-Dblas": blas.replace("_", ""),  # fix a mismatch between libary name and pkg-config name
+                "-Dlapack": lapack.replace("_", ""),
             },
         }
 
