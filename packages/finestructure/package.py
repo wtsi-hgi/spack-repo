@@ -20,6 +20,8 @@
 # See the Spack documentation for more information on packaging.
 # ----------------------------------------------------------------------------
 
+import glob
+
 from spack.package import *
 
 
@@ -34,7 +36,13 @@ class Finestructure(Package):
 
     version("4.1.1", sha256="7af2dd51b02bf117e364f70e76d03920b0cd9ec17111b5be94dd2a5ab906b75e")
 
+    depends_on("perl", type="run")
+    depends_on("perl-switch", type="run")
+
     def install(self, spec, prefix):
         mkdir(prefix.bin)
         install("fs_linux_glibc2.3", prefix.bin.fs)
         which("chmod")("+x", prefix.bin.fs)
+        for perl_script in glob.glob("*.pl"):
+            install(perl_script, prefix.bin)
+            which("chmod")("+x", join_path(prefix.bin, perl_script))
