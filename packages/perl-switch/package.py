@@ -15,3 +15,4 @@ class PerlSwitch(PerlPackage):
     version("2.17", sha256="31354975140fe6235ac130a109496491ad33dd42f9c62189e23f49f75f936d75")
 
     depends_on("perl-module-build", type="build")
+    depends_on("perl-if", type=("build", "run"))
