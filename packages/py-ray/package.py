@@ -14,20 +14,11 @@ class PyRay(PythonPackage):
     url = "https://github.com/ray-project/ray/archive/refs/tags/ray-2.33.0.tar.gz"
 
     version("2.42.0", sha256="f3cc6abb632f38f8680c9456e57ab320d32ecbef2164b74ff5ee0f0c7adeb57e")
-    # version("2.41.0", sha256="6618b48042047d16549a70d563ba093c8d25a5b9f3f0196e192a5add6e297a5a")
-    # version("2.40.0", sha256="49aee8ee447ba0fc1740483ee7dedfbadba800a458a79e71630ff60df0b75ef4")
-    # version("2.39.0", sha256="fef2bb41d4ce2c9004612cbed5c2c6c4a2446782c58b557818279d97728d88dc")
-    # version("2.38.0", sha256="1579a974ef80eba0796be0fc95e4e7546cb1885cd682c50bf952f498618b8f04")
-    # version("2.37.0", sha256="dcf92302ba813080003f33cb874912ee950331f2348822a2b615eb46f9baf0f8")
-    # version("2.36.1", sha256="84313cc1cef65614f3ad67fea8deab55998a5534db7bceadb649efdc0739bad3")
-    # version("2.36.0", sha256="7413b6974ebfaf2170a648e91c2d1731ac980663fcafe9c1aceb227062c10cea")
-    # version("2.35.0", sha256="ce341513458846e070b4247c8c7c86bb6ba7a7832d76f24c31feb41d8e79bacd")
-    # version("2.34.0", sha256="7a9798bd4647f4811887d281b28ae019b2859e2ab08fc6ff69b3fc64a4af2d6e")
 
     variant("default", default=False, description="Install default extras", when="@2")
 
     depends_on("python@3.9:", type=("build", "run"))
-    depends_on("bazel@6.5:", type="build")
+    depends_on("bazel@6.5", when="@2.42.0", type="build")
     depends_on("npm", type="build")
     depends_on("py-setuptools", type="build")
     depends_on("py-cython@3:", type="build")
