@@ -7,7 +7,13 @@ from spack.package import *
 
 
 class PyJupyterCore(PythonPackage):
-    """Core Jupyter functionality"""
+    """Warning:
+        Do not add this package to softpack environments with the intention to run
+        interactive Jupyter jobs. Please refer to our HGI documentation for the correct
+        way to set up Jupyter for interactive use.
+
+    Core Jupyter functionality
+    """
 
     homepage = "https://jupyter-core.readthedocs.io/"
     pypi = "jupyter-core/jupyter_core-4.6.0.tar.gz"
