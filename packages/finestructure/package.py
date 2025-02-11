@@ -44,5 +44,6 @@ class Finestructure(Package):
         install("fs_linux_glibc2.3", prefix.bin.fs)
         which("chmod")("+x", prefix.bin.fs)
         for perl_script in glob.glob("*.pl"):
+            filter_file("#!/usr/bin/perl", "#!/usr/bin/env perl", perl_script, string=True)
             install(perl_script, prefix.bin)
             which("chmod")("+x", join_path(prefix.bin, perl_script))
