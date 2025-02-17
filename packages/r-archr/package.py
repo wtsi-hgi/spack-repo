@@ -15,7 +15,7 @@ class RArchr(RPackage):
 
     maintainers("dorton21")
 
-    version("1.0.3", sha256="9c07c785a095062a998ed94c65df17a58f273d0d64062c14210f0a2c491304cf")
+    version("1.0.3", sha256="9e3c5f07b599ff806c6f2a74ec619b0847e69cb3e96dc29fa1304f2a381620e4")
 
     depends_on("r@4.0.0:", type=("build", "run"))
 
