@@ -55,7 +55,7 @@ class PyRay(PythonPackage):
     def patch(self):
         filter_file(
             'bazel_flags = ["--verbose_failures"]',
-            f'bazel_flags = ["--verbose_failures", "--jobs={make_jobs}"]',
+            f'bazel_flags = ["--verbose_failures", "--jobs={make_jobs}", "--spawn_strategy=local"]',
             join_path("python", "setup.py"),
             string=True,
         )
