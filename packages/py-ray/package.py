@@ -38,6 +38,7 @@ class PyRay(PythonPackage):
     depends_on("py-typing-extensions", when="^python@:3.7", type=("build", "run"))
     depends_on("py-virtualenv", type=("build", "run"))
     depends_on("boost@1.74:", type=("build", "run", "link"))
+    depends_on("jemalloc", type=("build", "run", "link"))
 
     with when("+default"):
         depends_on("py-aiohttp@3.7:", type=("build", "run"))
