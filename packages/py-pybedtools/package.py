@@ -12,6 +12,9 @@ class PyPybedtools(PythonPackage):
     homepage = "https://daler.github.io/pybedtools"
     pypi = "pybedtools/pybedtools-0.9.0.tar.gz"
 
+    version("0.11.0", sha256="73b67cdfcccf84f37b3c444db8a4b22025edd6edcb45ce5725697eeb5b510d60")
+    version("0.10.0", sha256="1a6fbaad23b013becc741d7d5922a2df03e391bc44ff92772ffb7dd456711161")
+    version("0.9.1", sha256="586a626895b1b7215aef877e985c03fd8a908fd6c636e5b9ff8a1a1d09a1d514")
     version("0.9.0", sha256="9267c92cd764173449d9c31baedac0659b4eccc3d7c05e22ec378f86c0fc30a3")
     version("0.8.0", sha256="4eebd2cd1764ee1c604fd881703c3e329195485350b987b7fb8db42d232984f6")
     version("0.7.10", sha256="518a2311bd33f29cf2ee8fc1a028dda8c8e380c9fc83fcb0fbaa206933174b50")
