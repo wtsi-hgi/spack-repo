@@ -54,6 +54,7 @@ class Rust(Package):
         default=False,
         description="Include rust developer tools like rustfmt, clippy, and rust-analyzer.",
     )
+    variant("rustfmt", default=True, description="Formatting tool for Rust code.")
     variant("docs", default=False, description="Build Rust core documentation.")
     variant("src", default=True, description="Include standard library source files.")
 
@@ -194,6 +195,8 @@ class Rust(Package):
         # Add additional tools as directed by the package variants.
         if spec.satisfies("+dev"):
             tools.extend(["clippy", "rustdoc", "rustfmt", "rust-analyzer"])
+        elif spec.satisfies("+rustfmt"):
+            tools.append("rustfmt")
 
         if spec.satisfies("+src"):
             tools.append("src")
