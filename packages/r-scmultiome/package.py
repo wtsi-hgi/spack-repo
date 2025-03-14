@@ -7,26 +7,27 @@ from spack.package import *
 
 
 class RScmultiome(RPackage):
-	"""Collection of Public Single-Cell Multiome (scATAC + scRNAseq) Datasets
+    """Collection of Public Single-Cell Multiome (scATAC + scRNAseq) Datasets
 
-	Single cell multiome data, containing chromatin accessibility (scATAC-seq) and gene expression (scRNA-seq) information analyzed with the ArchR package and presented as MultiAssayExperiment objects.
-	"""
-	
-	bioc = "scMultiome" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scMultiome_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scMultiome/scMultiome_1.2.0.tar.gz"]
+    Single cell multiome data, containing chromatin accessibility (scATAC-seq) and gene expression (scRNA-seq) information analyzed with the ArchR package and presented as MultiAssayExperiment objects.
+    """
 
-	version("1.2.0", md5="db13145ffc5eb5430eee8ac7212e1b7d")
+    bioc = "scMultiome"
+    url = "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/scMultiome_1.6.0.tar.gz"
 
-	depends_on("r-annotationhub", type=("build", "run"))
-	depends_on("r-experimenthub@2.8.1:", type=("build", "run"))
-	depends_on("r-multiassayexperiment", type=("build", "run"))
-	depends_on("r-singlecellexperiment", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-azurestor", type=("build", "run"))
-	depends_on("r-delayedarray", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-hdf5array", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-checkmate", type=("build", "run"))
-	depends_on("r-rhdf5", type=("build", "run"))
+    version("1.6.0", sha256="be0c4fbb7e37a5f29be19b753e3288eb8b36d319cb200b854efeaa807799d2f1")
+
+    depends_on("r-annotationhub", type=("build", "run"))
+    depends_on("r-experimenthub@2.8.1:", type=("build", "run"))
+    depends_on("r-multiassayexperiment", type=("build", "run"))
+    depends_on("r-singlecellexperiment", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-azurestor", type=("build", "run"))
+    depends_on("r-delayedarray", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-hdf5array", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-checkmate", type=("build", "run"))
+    depends_on("r-rhdf5", type=("build", "run"))
+    depends_on("r-alabaster-matrix", type=("build", "run"))
 
