@@ -12,6 +12,7 @@ class RMaveqc(RPackage):
     homepage = "https://github.com/wtsi-hgi/MAVEQC"
     git = "https://github.com/wtsi-hgi/MAVEQC"
 
+    version("0.2.7", tag="0.2.7")
     version("0.2.6", tag="0.2.6")
     version("0.2.5", tag="0.2.5")
     version("0.2.4", tag="0.2.4")
