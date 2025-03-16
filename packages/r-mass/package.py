@@ -32,3 +32,4 @@ class RMass(RPackage):
 	version("7.3-47", sha256="ed44cdabe84fff3553122267ade61d5cc68071c435f7645d36c8f2e4e9f9c6bf")
 
 	depends_on("r@4:", type=("build", "run"), when="@7.3-58-4:")
+	depends_on("r@4.4:", type=("build", "run"), when="@7.3-60.1:")
