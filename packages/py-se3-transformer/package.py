@@ -39,7 +39,7 @@ class PySe3Transformer(PythonPackage):
     with default_args(type=("build", "run", "link")):
         depends_on("python@3.9:")
         depends_on("py-torch@2.2:+cuda cuda_arch=70,72,75,80,86,87,89,90")
-        depends_on("cuda@11:11.8")
+        depends_on("cuda")
         depends_on("py-torchaudio")
         depends_on("py-torchvision")
         depends_on("py-dgl@2+cuda backend=pytorch")
