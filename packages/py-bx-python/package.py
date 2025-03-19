@@ -20,6 +20,7 @@ class PyBxPython(PythonPackage):
     depends_on("python@3.7:", type=("build", "run"), when="@0.10.0:")
     depends_on("py-setuptools", type="build")
     depends_on("py-cython", type="build")
+    depends_on("py-cython@:1.0.0", when="^python@:2", type="build")
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-six", type=("build", "run"))
     depends_on("lzo", type=("build", "link"), when="@0.10.0:")
