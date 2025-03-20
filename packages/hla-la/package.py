@@ -5,8 +5,9 @@
 
 from spack.package import *
 
+
 class HlaLa(MakefilePackage):
-    """HLA*LA carries out HLA typing based on a population reference graph and employs a new linear projection method to align reads to the graph. """
+    """HLA*LA carries out HLA typing based on a population reference graph and employs a new linear projection method to align reads to the graph."""
 
     homepage = "https://github.com/DiltheyLab/HLA-LA"
     url = "https://github.com/DiltheyLab/HLA-LA/archive/refs/tags/v1.0.3.tar.gz"
@@ -18,16 +19,30 @@ class HlaLa(MakefilePackage):
 
     depends_on("gcc")
     depends_on("boost@1.59:+random+serialization+filesystem+system")
-    depends_on("bamtools@2.5.1:")
+    depends_on("bamtools@2.5.1:", type=("build", "run", "link"))
     depends_on("zlib")
-    depends_on("bwa@0.7.12:")
-    depends_on("samtools@1.3:")
-    depends_on("picard")
+    depends_on("bwa@0.7.12:", type=("build", "run", "link"))
+    depends_on("samtools@1.3:", type=("build", "run", "link"))
+    depends_on("picard", type=("build", "run", "link"))
+    depends_on("perl", type="run")
 
-    resource(name="data", url="http://www.well.ox.ac.uk/downloads/PRG_MHC_GRCh38_withIMGT.tar.gz", destination="graphs", sha256="8e9c440fff78ac0c43172ecdb39a9b6f2e49bc0986ad5b7719435f9a533a3d38")
+    resource(
+        name="data",
+        url="http://www.well.ox.ac.uk/downloads/PRG_MHC_GRCh38_withIMGT.tar.gz",
+        destination="graphs",
+        sha256="8e9c440fff78ac0c43172ecdb39a9b6f2e49bc0986ad5b7719435f9a533a3d38",
+    )
+
+    def patch(self):
+        filter_file(
+            "my $MHC_PRG_2_bin = '../bin/HLA-LA';",
+            "my $MHC_PRG_2_bin = 'HLA-LA';",
+            "HLA-LA.pl",
+            string=True,
+        )
 
     def build(self, spec, prefix):
-        make("all", "BAMTOOLS_PATH="+spec["bamtools"].prefix, "BOOSTPATH="+spec["boost"].prefix)
+        make("all", "BAMTOOLS_PATH=" + spec["bamtools"].prefix, "BOOSTPATH=" + spec["boost"].prefix)
 
     def install(self, spec, prefix):
         mkdir(prefix.bin)
@@ -36,12 +51,13 @@ class HlaLa(MakefilePackage):
         mkdir(prefix.graphs)
 
         install_tree("graphs", prefix.graphs)
+
         cd("..")
         install_tree("bin", prefix.bin)
         install_tree("obj", prefix.obj)
         install_tree("spack-src", prefix.src)
+        install("spack-src/HLA-LA.pl", prefix.bin)
 
     def setup_run_environment(self, env):
         env.prepend_path("PATH", self.prefix.bin)
         env.prepend_path("PATH", self.prefix.src)
-        
