@@ -26,10 +26,12 @@ from spack.package import *
 class PyTorchGpu(BundlePackage):
     """A bundle package for py-torch with cuda support."""
 
+    version("2.2.0")
     version("2.1.2")
     version("2.1.1")
     version("2.1.0")
 
+    depends_on("py-torch@2.2.0+cuda", type="run", when="@2.2.0")
     depends_on("py-torch@2.1.2+cuda", type="run", when="@2.1.2")
     depends_on("py-torch@2.1.1+cuda", type="run", when="@2.1.1")
     depends_on("py-torch@2.1.0+cuda", type="run", when="@2.1.0")
