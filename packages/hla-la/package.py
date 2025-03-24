@@ -34,12 +34,7 @@ class HlaLa(MakefilePackage):
     )
 
     def patch(self):
-        filter_file(
-            "my $MHC_PRG_2_bin = '../bin/HLA-LA';",
-            "my $MHC_PRG_2_bin = 'HLA-LA';",
-            "HLA-LA.pl",
-            string=True,
-        )
+        filter_file("../bin/HLA-LA", "HLA-LA", "HLA-LA.pl", string=True)
 
     def build(self, spec, prefix):
         make("all", "BAMTOOLS_PATH=" + spec["bamtools"].prefix, "BOOSTPATH=" + spec["boost"].prefix)
