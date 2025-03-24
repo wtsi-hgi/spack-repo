@@ -38,8 +38,6 @@ class REpiregulonExtra(RPackage):
     url = "https://www.bioconductor.org/packages/release/bioc/src/contrib/epiregulon.extra_1.2.1.tar.gz"
     bioc = "epiregulon.extra"
 
-    maintainers("xiaosaiyao")
-
     license("MIT")
 
     version("1.2.1", sha256="3a705a51f227ddee3a3d71d2769a5410e93ef7760df558ae27df91d8f67d3270")
@@ -80,9 +78,3 @@ class REpiregulonExtra(RPackage):
     depends_on("r-vdiffr", type=("build"))
     depends_on("r-ggrastr", type=("build"))
     depends_on("r-ggrepel", type=("build"))
-
-    def configure_args(self):
-        # FIXME: Add arguments to pass to install via --configure-args
-        # FIXME: If not needed delete this function
-        args = []
-        return args

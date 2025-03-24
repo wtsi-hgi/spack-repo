@@ -38,8 +38,6 @@ class REpiregulon(RPackage):
     url = "https://www.bioconductor.org/packages/release/bioc/src/contrib/epiregulon_1.2.0.tar.gz"
     bioc = "epiregulon"
 
-    maintainers("xiaosaiyao")
-
     license("MIT")
 
     version("1.2.0", sha256="5b81475a4bb2d1e0ad3f22e3996e7d024fddb566074e30ac49071bbaa10b596e")
@@ -82,9 +80,3 @@ class REpiregulon(RPackage):
     depends_on("r-coin", type=("build"))
     depends_on("r-scater", type=("build"))
     depends_on("r-beachmat-hdf5", type=("build"))
-
-    def configure_args(self):
-        # FIXME: Add arguments to pass to install via --configure-args
-        # FIXME: If not needed delete this function
-        args = []
-        return args
