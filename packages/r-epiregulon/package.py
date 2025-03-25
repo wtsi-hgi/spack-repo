@@ -35,7 +35,10 @@ class REpiregulon(RPackage):
     between chromatin accessibility and gene expressions."""
 
     homepage = "https://github.com/xiaosaiyao/epiregulon/"
-    url = "https://www.bioconductor.org/packages/release/bioc/src/contrib/epiregulon_1.2.0.tar.gz"
+    urls = [
+        "https://www.bioconductor.org/packages/release/bioc/src/contrib/epiregulon_1.2.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.20/bioc/src/contrib/Archive/epiregulon/epiregulon_1.2.0.tar.gz",
+    ]
     bioc = "epiregulon"
 
     license("MIT")
