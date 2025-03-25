@@ -9,8 +9,8 @@ from spack.package import *
 class RMaveqc(RPackage):
     """A R package of quality control on SGE data."""
 
-    homepage = "https://github.com/wtsi-hgi/MAVEQC"
-    git = "https://github.com/wtsi-hgi/MAVEQC"
+    homepage = "https://github.com/htgt/MAVEQC"
+    git = "https://github.com/htgt/MAVEQC"
 
     version("0.2.7", tag="0.2.7")
     version("0.2.6", tag="0.2.6")
