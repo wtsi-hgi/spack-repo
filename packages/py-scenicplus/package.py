@@ -12,6 +12,7 @@ class PyScenicplus(PythonPackage):
     git = "https://github.com/aertslab/scenicplus.git"
 
     version("1.0.0", tag="v1.0.0")
+    version("1.0a2", tag="v1.0a2")
 
     depends_on("py-pandas@1.5:", type=("build", "run"))
     depends_on("py-numpy", type=("build", "run"))

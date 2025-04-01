@@ -10,6 +10,7 @@ class PyPycistarget(PythonPackage):
 
     git = "https://github.com/aertslab/pycistarget.git"
 
+    version("1.1", tag="v1.1")
     version("1.0.2", tag="v1.0.2")
     version("1.0.1", tag="v1.0.1")
     version("1.0.0", tag="v1.0.0")
