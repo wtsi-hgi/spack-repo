@@ -17,7 +17,7 @@ class PyTables(PythonPackage):
     version("master", branch="master")
     version("3.9.0", sha256="27c9ca14c359d875caf945a6a527c12690e017650402dd17d8eb8b6caf6687d5")
     version("3.8.0", sha256="34f3fa2366ce20b18f1df573a77c1d27306ce1f2a41d9f9eff621b5192ea8788")
-    version("3.7.0", sha256="e92a887ad6f2a983e564a69902de4a7645c30069fc01abd353ec5da255c5e1fe")
+    version("3.7.0", sha256="41065fc11b958dde09bd5b9c069d88e40ca07ad10687dd597835fcc8199e81ea", url="https://github.com/PyTables/PyTables/archive/refs/tags/v3.7.0.tar.gz")
     version("3.6.1", sha256="49a972b8a7c27a8a173aeb05f67acb45fe608b64cd8e9fa667c0962a60b71b49")
     version("3.6.0", sha256="db3488214864fb313a611fca68bf1c9019afe4e7877be54d0e61c84416603d4d")
     version("3.5.2", sha256="b220e32262bab320aa41d33125a7851ff898be97c0de30b456247508e2cc33c2")
@@ -26,8 +26,8 @@ class PyTables(PythonPackage):
     version("3.2.2", sha256="3564b351a71ec1737b503b001eb7ceae1f65d5d6e3ffe1ea75aafba10f37fa84")
 
     variant("zlib", default=True, description="Support for zlib compression")
-    variant("bzip2", default=False, description="Support for bzip2 compression")
-    variant("lzo", default=False, description="Support for lzo compression")
+    variant("bzip2", default=True, description="Support for bzip2 compression")
+    variant("lzo", default=True, description="Support for lzo compression")
 
     # pyproject.toml
     depends_on("py-setuptools@61:", when="@3.9:", type="build")

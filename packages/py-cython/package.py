@@ -15,6 +15,7 @@ class PyCython(PythonPackage):
 
     license("Apache-2.0")
 
+    version("3.0.11", sha256="7146dd2af8682b4ca61331851e6aebce9fe5158e75300343f80c07ca80b1faff")
     version("3.0.10", sha256="dcc96739331fb854dcf503f94607576cfe8488066c61ca50dfd55836f132de99")
     version("3.0.8", sha256="8333423d8fd5765e7cceea3a9985dd1e0a5dfeb2734629e1a2ed2d6233d39de6")
     version("3.0.7", sha256="fb299acf3a578573c190c858d49e0cf9d75f4bc49c3f24c5a63804997ef09213")
@@ -53,6 +54,11 @@ class PyCython(PythonPackage):
 
     # https://github.com/cython/cython/issues/5751 (distutils not yet dropped)
     depends_on("python", type=("build", "link", "run"))
+
+    depends_on("python@:3.13")
+    depends_on("python@:3.12", when="@:3.0.10")
+    depends_on("python@:3.11", when="@:3.0.3")  # Cythonize still used distutils
+    depends_on("python@:3.10", when="@:0.29.28")
 
     # https://github.com/cython/cython/commit/1cd24026e9cf6d63d539b359f8ba5155fd48ae21
     # collections.Iterable was removed in Python 3.10

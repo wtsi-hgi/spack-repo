@@ -12,10 +12,13 @@ class PyPycistopic(PythonPackage):
 
     git = "https://github.com/aertslab/pycisTopic.git"
 
-    version("1.0.2", tag="v1.0.2")
+    version("2.0a0", commit="787ce422a37f5975b0ebb9e7b19eeaed44847501")
+    version("1.0.2", tag="v1.0.2", preferred=True)
     version("1.0.1", tag="v1.0.1")
     version("1.0.0", tag="v1.0.0")
 
+    depends_on("python@3.11", type=("build", "run"), when="@2.0a0")
+    #depends_on("py-setuptools@58", type="build", when="@2.0a0")
     depends_on("py-adjusttext", type=("build", "run"))
     depends_on("py-annoy", type=("build", "run"))
     depends_on("py-bbknn", type=("build", "run"))

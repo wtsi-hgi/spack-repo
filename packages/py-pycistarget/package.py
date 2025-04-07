@@ -14,8 +14,10 @@ class PyPycistarget(PythonPackage):
     version("1.0.2", tag="v1.0.2")
     version("1.0.1", tag="v1.0.1")
     version("1.0.0", tag="v1.0.0")
+    version("1.0a2", commit="8cd78f110f4eeeb38d8f7006a1100a13d636d984")
 
     depends_on("py-setuptools", type="build")
+    depends_on("py-poetry", type=("build", "run"))
 
     depends_on("py-ctxcore", type=("build", "run"))
     depends_on("py-ipython", type=("build", "run"))
