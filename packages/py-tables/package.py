@@ -15,8 +15,9 @@ class PyTables(PythonPackage):
     git = "https://github.com/PyTables/PyTables.git"
 
     version("master", branch="master")
-    version("3.9.0", sha256="27c9ca14c359d875caf945a6a527c12690e017650402dd17d8eb8b6caf6687d5")
-    version("3.8.0", sha256="34f3fa2366ce20b18f1df573a77c1d27306ce1f2a41d9f9eff621b5192ea8788")
+    version("3.10.0", sha256="8dc251498e14193385e4f953921b9ed4b11bbc6ae855b14553faa38a3b963a57", url="https://github.com/PyTables/PyTables/archive/refs/tags/v3.10.0.tar.gz")
+    version("3.9.0", sha256="8602e31ed3f4b852662d6530276106eb3b6a8057ab0cb9d471693ef82d2da1d7", url="https://github.com/PyTables/PyTables/archive/refs/tags/v3.9.0.tar.gz")
+    version("3.8.0", sha256="652b56b3d355797af4337a4493acfa4c4de4a60e7c6663cc6ce44d8ee477e920", url="https://github.com/PyTables/PyTables/archive/refs/tags/v3.8.0.tar.gz")
     version("3.7.0", sha256="41065fc11b958dde09bd5b9c069d88e40ca07ad10687dd597835fcc8199e81ea", url="https://github.com/PyTables/PyTables/archive/refs/tags/v3.7.0.tar.gz")
     version("3.6.1", sha256="49a972b8a7c27a8a173aeb05f67acb45fe608b64cd8e9fa667c0962a60b71b49")
     version("3.6.0", sha256="db3488214864fb313a611fca68bf1c9019afe4e7877be54d0e61c84416603d4d")
@@ -44,11 +45,13 @@ class PyTables(PythonPackage):
     depends_on("python@2.6:", type=("build", "run"))
 
     # requirements.txt
-    depends_on("py-numpy@1.19:", when="@3.8:", type=("build", "run"))
-    depends_on("py-numpy@1.9.3:", type=("build", "run"))
+    depends_on("py-numpy", type=("build", "run"))
+    depends_on("py-numpy@1.9.3:1", when="@:3.8", type=("build", "run"))
+    depends_on("py-numpy@1.19:1", when="@3.8:3.10", type=("build", "run"))
     depends_on("py-numexpr@2.6.2:", type=("build", "run"))
     depends_on("py-packaging", when="@3.7:", type=("build", "run"))
     depends_on("py-py-cpuinfo", when="@3.8:", type=("build", "run"))
+    depends_on("py-blosc2@2.2.11:", when="@3.10:", type=("build", "run"))
     depends_on("py-blosc2@2.2.8:", when="@3.9:", type=("build", "run"))
     depends_on("py-blosc2@2.0", when="@3.8", type=("build", "run"))
 
@@ -60,6 +63,10 @@ class PyTables(PythonPackage):
     # problem in a multithreaded environment.
     depends_on("c-blosc@1.11.1:", when="@3.8:")
     depends_on("c-blosc@1.4.1:", when="@3.3:")
+    
+    depends_on("c-blosc2")
+
+    depends_on("pkgconfig", type="build")
 
     depends_on("zlib-api", when="+zlib")
     depends_on("bzip2", when="+bzip2")
