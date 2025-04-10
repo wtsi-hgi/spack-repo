@@ -24,6 +24,7 @@ class Evince(MesonPackage):
     depends_on("py-gi-docgen", type=("build"))
     depends_on("desktop-file-utils", type=("build", "run"))
     depends_on("py-markdown", type=("build", "run"))
+    depends_on("py-markupsafe", type=("build", "run"))
     depends_on("py-pygments", type=("build", "run"))
     depends_on("py-typogrify", type=("build", "run"))
     depends_on("py-toml", type=("build", "run"))
