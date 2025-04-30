@@ -3,23 +3,6 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-# ----------------------------------------------------------------------------
-# If you submit this package back to Spack as a pull request,
-# please first remove this boilerplate and all FIXME comments.
-#
-# This is a template package file for Spack.  We've put "FIXME"
-# next to all the things you'll want to change. Once you've handled
-# them, you can save this file and test your package like this:
-#
-#     spack install pbskera
-#
-# You can edit this file again by typing:
-#
-#     spack edit pbskera
-#
-# See the Spack documentation for more information on packaging.
-# ----------------------------------------------------------------------------
-
 from spack.package import *
 
 
@@ -36,6 +19,7 @@ class Pbskera(Package):
 
     license("BSD-3-Clause-Clear license")
 
+    version("1.4.0", sha256="52ec9c9dbe58aaf4d37eee5147f70c2271f2426b12ade97d8c1c38d11e4b0574", expand=False)
     version("1.2.0", sha256="0385ab4d67377cd6ed596eccd5df973c03d78561db639d84f9ff557332f745be", expand=False)
 
     def install(self, spec, prefix):
