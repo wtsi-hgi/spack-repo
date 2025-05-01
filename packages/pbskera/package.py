@@ -25,5 +25,6 @@ class Pbskera(Package):
     def install(self, spec, prefix):
         mkdir(prefix.bin)
         install(self.stage.source_path + "/skera", prefix.bin.pbskera)
+        symlink("pbskera", prefix.bin.skera)
         chmod = which("chmod")
         chmod("+x", prefix.bin.pbskera)
