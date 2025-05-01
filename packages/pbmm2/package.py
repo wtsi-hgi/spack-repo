@@ -3,27 +3,9 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-# ----------------------------------------------------------------------------
-# If you submit this package back to Spack as a pull request,
-# please first remove this boilerplate and all FIXME comments.
-#
-# This is a template package file for Spack.  We've put "FIXME"
-# next to all the things you'll want to change. Once you've handled
-# them, you can save this file and test your package like this:
-#
-#     spack install pbmm2
-#
-# You can edit this file again by typing:
-#
-#     spack edit pbmm2
-#
-# See the Spack documentation for more information on packaging.
-# ----------------------------------------------------------------------------
-
 from spack.package import *
 
-
-class Pbmm2(MesonPackage):
+class Pbmm2(Package):
     """A minimap2 SMRT wrapper for PacBio data: native PacBio data in ⇨ native PacBio BAM out.
 
     pbmm2 is a SMRT C++ wrapper for minimap2's C API. Its purpose is to support native PacBio
@@ -35,19 +17,13 @@ class Pbmm2(MesonPackage):
     """
 
     homepage = "https://github.com/PacificBiosciences/pbmm2"
-    url = "https://github.com/PacificBiosciences/pbmm2/archive/refs/tags/v1.13.1.tar.gz"
 
-    license("BSD-3-Clause-Clear license")
+    license("BSD-3-Clause-Clear")
 
-    version("1.13.1", sha256="7baf2608cbf05454e3d1693143695d22ed4aba72b4f11d5bc168d6d2be4b304a")
+    version("1.17.0", url="https://github.com/PacificBiosciences/pbmm2/releases/download/v1.17.0/pbmm2", sha256="26c8900acd0cc105de53429aaff69d71ae2c8d222ec147e54097db3f5c927ba8", expand=False)
+    version("1.13.1", url="https://github.com/PacificBiosciences/pbmm2/releases/download/v1.13.1/pbmm2", sha256="4e764bbea99a4c712fb74e4d6c82c227562d431c47670628f1d004b2f0e8a8db", expand=False)
 
-    depends_on("zlib-api", type=("build", "run"))
-    depends_on("boost", type=("build", "run"))
-    depends_on("htslib@1.7:", type=("build", "run"))
-    depends_on("pbbam", type=("build", "run"))
-    depends_on("pbcopper", type=("build", "run"))
-    depends_on("pbminimap2", type=("build", "run"))
-    depends_on("cmake", type="build")
-
-    def meson_args(self):
-        return ["-Dtests=false"]
+    def install(self, spec, prefix):
+        mkdir(prefix.bin)
+        install(self.stage.source_path + "/pbmm2", prefix.bin.pbmm2)
+        which("chmod")("+x", prefix.bin.pbmm2)
