@@ -3,25 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-# ----------------------------------------------------------------------------
-# If you submit this package back to Spack as a pull request,
-# please first remove this boilerplate and all FIXME comments.
-#
-# This is a template package file for Spack.  We've put "FIXME"
-# next to all the things you'll want to change. Once you've handled
-# them, you can save this file and test your package like this:
-#
-#     spack install lima
-#
-# You can edit this file again by typing:
-#
-#     spack edit lima
-#
-# See the Spack documentation for more information on packaging.
-# ----------------------------------------------------------------------------
-
 from spack.package import *
-
 
 class Lima(Package):
     """
@@ -33,8 +15,9 @@ class Lima(Package):
     homepage = "https://lima.how/"
     url = "https://github.com/PacificBiosciences/barcoding/releases/download/v2.9.0/lima.tar.gz"
 
-    license("BSD-3-Clause-Clear license")
+    license("BSD-3-Clause-Clear")
 
+    version("2.13.0", sha256="89601814e220f3bc4e062113281ce282767dffa8d65b4bf085597c9db47033da")
     version("2.9.0", sha256="a13437bc7a90ab5df3c19eac44384de2a14370d0391586b5aa63a6478f9c2c53")
 
     def install(self, spec, prefix):

@@ -3,25 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-# ----------------------------------------------------------------------------
-# If you submit this package back to Spack as a pull request,
-# please first remove this boilerplate and all FIXME comments.
-#
-# This is a template package file for Spack.  We've put "FIXME"
-# next to all the things you'll want to change. Once you've handled
-# them, you can save this file and test your package like this:
-#
-#     spack install isoseq
-#
-# You can edit this file again by typing:
-#
-#     spack edit isoseq
-#
-# See the Spack documentation for more information on packaging.
-# ----------------------------------------------------------------------------
-
 from spack.package import *
-
 
 class Isoseq(Package):
     """
@@ -34,11 +16,8 @@ class Isoseq(Package):
 
     license("BSD-3-Clause-Clear")
 
-    version(
-        "4.0.0",
-        sha256="5766001507cf2a351b260cf38b717351dd676a7c87eb7c285c3c43a4a458f4b2",
-        expand=False,
-    )
+    version("4.3.0", sha256="7af9b3001a9717e730e9c7858b0a7ef3e9af47b7420539371b886fd7b67c29d5", expand=False)
+    version("4.0.0", sha256="5766001507cf2a351b260cf38b717351dd676a7c87eb7c285c3c43a4a458f4b2", expand=False)
 
     def install(self, spec, prefix):
         mkdir(prefix.bin)
