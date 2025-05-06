@@ -14,7 +14,6 @@ class RSingler(RPackage):
 
     homepage = "https://github.com/LTLA/SingleR"
     bioc = "SingleR"
-    git = "https://git.bioconductor.org/packages/SingleR"
     urls = [
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SingleR_2.4.1.tar.gz",
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SingleR/SingleR_2.4.1.tar.gz",
@@ -27,7 +26,9 @@ class RSingler(RPackage):
     depends_on("r-matrix", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-delayedarray", type=("build", "run"))
+    depends_on("r-delayedarray@0.8.0:", type=("build", "run"), when="@2.10:")
     depends_on("r-delayedmatrixstats", type=("build", "run"))
+    depends_on("r-delayedmatrixstats@1.30.0:", type=("build", "run"), when="@2.10:")
     depends_on("r-biocparallel", type=("build", "run"))
     depends_on("r-biocsingular", type=("build", "run"))
     depends_on("r-biocsingular@1.24.0:", type=("build", "run"), when="@2.10:")
