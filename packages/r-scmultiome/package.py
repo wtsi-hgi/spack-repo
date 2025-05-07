@@ -15,7 +15,7 @@ class RScmultiome(RPackage):
     bioc = "scMultiome"
     url = "https://www.bioconductor.org/packages/release/data/experiment/src/contrib/scMultiome_1.6.0.tar.gz"
 
-    version("1.6.0", sha256="be0c4fbb7e37a5f29be19b753e3288eb8b36d319cb200b854efeaa807799d2f1")
+    version("1.8.0", tag="RELEASE_3_21")
 
     depends_on("r-annotationhub", type=("build", "run"))
     depends_on("r-experimenthub@2.8.1:", type=("build", "run"))
@@ -30,4 +30,3 @@ class RScmultiome(RPackage):
     depends_on("r-checkmate", type=("build", "run"))
     depends_on("r-rhdf5", type=("build", "run"))
     depends_on("r-alabaster-matrix", type=("build", "run"))
-
