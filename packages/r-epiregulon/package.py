@@ -43,6 +43,7 @@ class REpiregulon(RPackage):
 
     license("MIT")
 
+    version("1.4.0", tag="RELEASE_3_21")
     version("1.2.0", sha256="5b81475a4bb2d1e0ad3f22e3996e7d024fddb566074e30ac49071bbaa10b596e")
 
     # Depends

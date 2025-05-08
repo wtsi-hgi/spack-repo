@@ -43,8 +43,8 @@ class REpiregulonExtra(RPackage):
 
     license("MIT")
 
+    version("1.4.0", tag="RELEASE_3_21")
     version("1.2.2", commit="aa85b232399d3cb21b06887f999adc52ad6d1e87")
-    version("1.2.1", sha256="3a705a51f227ddee3a3d71d2769a5410e93ef7760df558ae27df91d8f67d3270")
 
     # Depends
     depends_on("r@4.4:", type=("build", "run"))
