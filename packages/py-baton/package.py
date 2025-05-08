@@ -5,12 +5,14 @@
 
 from spack.package import *
 
+
 class PyBaton(PythonPackage):
     """Python 3 Wrapper for baton."""
 
     homepage = "https://github.com/wtsi-hgi/python-baton-wrapper"
     pypi = "baton/baton-1.0.1.tar.gz"
 
+    version("1.0.2", sha256="6b525acaed8961d88fc4ab668d188838e6794128ee76c6c32f2410c45adad2cc")
     version("1.0.1", sha256="76861bfa884b9a80333c5e3ac9d8636517e08ceeac4837c23e8d2bd700c5d8c6")
 
     depends_on("py-setuptools", type=("build", "run"))
