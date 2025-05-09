@@ -17,5 +17,6 @@ class PyBaton(PythonPackage):
 
     depends_on("py-setuptools", type=("build", "run"))
     depends_on("py-hgijson@1.3.1", type=("build", "run"))
-    depends_on("py-hgicommon@1.2", type=("build", "run"))
+    depends_on("py-hgicommon@1.2", type=("build", "run"), when="@1.0.1")
+    depends_on("py-hgicommon@1.3.1", type=("build", "run"), when="@1.0.2")
     depends_on("py-python-dateutil@2.5.3", type=("build", "run"))
