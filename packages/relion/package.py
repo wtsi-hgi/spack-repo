@@ -41,7 +41,7 @@ class Relion(CMakePackage, CudaPackage):
     variant("cuda", default=True, description="enable compute on gpu")
     variant(
         "cuda_arch",
-        default="70,72,75,80,86,87,89",
+        default="70,72,75,80,86,87,89,90",
         description="CUDA architecture that is available on the farm",
         multi=True,
     )

@@ -95,7 +95,7 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
 
     def setup_build_environment(self, env):
         if self.spec.satisfies("@2: +cuda"):  # match our cluster
-            env.set("TORCH_CUDA_ARCH_LIST", "7.0 7.2 7.5 8.0 8.6 8.7 8.9")
+            env.set("TORCH_CUDA_ARCH_LIST", "7.0 7.2 7.5 8.0 8.6 8.7 8.9 9.0")
 
     def patch(self):
         # fix the numeric_limits import
