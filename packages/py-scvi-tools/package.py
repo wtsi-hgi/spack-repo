@@ -467,7 +467,7 @@ class PyScviTools(PythonPackage):
     depends_on("python@3.9:", type=("build", "run"))
     depends_on("py-tqdm", type=("build", "run"))
     depends_on("py-torchmetrics", type=("build", "run"))
-    depends_on("py-torch", type=("build", "run"))
+    depends_on("py-torch@2.2:+cuda cuda_arch=70,72,75,80,86,87,89,90")
     depends_on("py-scipy", type=("build", "run"))
     depends_on("py-scikit-learn", type=("build", "run"))
     depends_on("py-rich", type=("build", "run"))
