@@ -16,6 +16,7 @@ class RDesctools(RPackage):
 	cran = "DescTools" 
 
 	version("0.99.54", md5="3045c3d7b5111ace2e61ac35435d6246")
+	version("0.99.48", md5="e21ec4519eac315cefc2ad04a5bd52d7")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))
@@ -31,3 +32,4 @@ class RDesctools(RPackage):
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-withr", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
+	depends_on("r-bh", type=("build", "run"))
