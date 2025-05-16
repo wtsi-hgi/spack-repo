@@ -49,7 +49,7 @@ class Magma(CMakePackage, CudaPackage, ROCmPackage):
     variant("cuda", default=True, description="Build with CUDA")
     variant(
         "cuda_arch",
-        default="70,72,75,80,86,87,89",
+        default="70,80,90",
         description="CUDA architecture that is available on the farm",
         multi=True,
         when="+cuda",
