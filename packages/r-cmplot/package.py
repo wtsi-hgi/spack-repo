@@ -16,5 +16,6 @@ class RCmplot(RPackage):
 	cran = "CMplot" 
 
 	version("4.5.1", md5="f32790ba773b4aca62c301d2d7045d3c")
+	version("4.5.0", md5="9cf96efd3bf4a1c061d13b5b55188b0d")
 
 	depends_on("r@2.10:", type=("build", "run"))
