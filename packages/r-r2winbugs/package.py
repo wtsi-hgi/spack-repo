@@ -18,6 +18,7 @@ class RR2winbugs(RPackage):
 	cran = "R2WinBUGS" 
 
 	version("2.1-22.1", md5="fed637512e1fa184fab761080cda95f9")
+	version("2.1-21", md5="4dd5fd8d8bfbb2db7847506ffe355df5")
 
 	depends_on("r@2.13:", type=("build", "run"))
 	depends_on("r-coda@0.11.0:", type=("build", "run"))
