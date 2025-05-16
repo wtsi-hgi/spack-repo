@@ -21,8 +21,10 @@ class RSaige(RPackage):
 
     homepage = "https://saigegit.github.io/SAIGE-doc/"
     url = "https://github.com/saigegit/SAIGE/archive/refs/tags/v1.3.3.tar.gz"
+    git = "https://github.com/saigegit/SAIGE"
 
     version("1.3.3", sha256="7d67ae1cd140dc883e3429d9538b6cb42feef04602f7c53e429e22c790e67440")
+    version("1.3.1", commit="92b6c6cd7f552d340cfc4b3b395574fbc598ee2e")
     version("1.0.9", sha256="eb5030877faf4a50d39ae28d6cd9b4aa8059cba42e1c91a4b20c32581a9f75f9")
     version("1.0.4", sha256="4b9dd64648b2c807aeda448c8b96091164ce019800efc8ebf5dc87979e590d08")
     version("1.0.3", sha256="79bcdc2abc68d8f112086a3d872102f5714bb0baaf59e876e9f08b1ad3a45e9f")
