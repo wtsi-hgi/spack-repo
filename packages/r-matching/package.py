@@ -22,6 +22,7 @@ Optimization
 	cran = "Matching" 
 
 	version("4.10-14", md5="c7cff83f8723c0f24c2c985a3a776ac7")
+	version("4.10-8", md5="9f0438193baa073b42266c49a24b1502")
 
 	depends_on("r@2.6:", type=("build", "run"))
 	depends_on("r-mass@7.2.1:", type=("build", "run"))
