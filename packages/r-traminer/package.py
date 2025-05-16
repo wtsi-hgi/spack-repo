@@ -16,6 +16,7 @@ class RTraminer(RPackage):
 	cran = "TraMineR" 
 
 	version("2.2-9", md5="23f6dcf0e61147e01a2bf55cec33d713")
+	version("2.2-7", md5="501e5cf4b9fe5d096d617c95da69d71a")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))
