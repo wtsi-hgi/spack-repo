@@ -17,6 +17,7 @@ class RGrowthcleanr(RPackage):
 	cran = "growthcleanr" 
 
 	version("2.2.0", md5="32566fcf6c7cc622d951265f9ce034cf")
+	version("2.1.1", md5="4f6d2aa0ae9edb6cd35a7553d0580dd5")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-r-utils@2.11:", type=("build", "run"))
