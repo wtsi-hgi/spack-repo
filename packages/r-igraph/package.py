@@ -16,6 +16,7 @@ class RIgraph(RPackage):
 	cran = "igraph"
 	version("2.0.3", md5="36b28af2a8910060551629b306165f75")
 	version("2.0.2", md5="5ec60d660bedd8242751ed0b8720280f")
+	version("1.6.0", sha256="410ecc37fb38e72079dc72f839bde19093100a422729c343e0b2523df6453bb8")
 	version("1.4.2", sha256="7d5300adb1a25a6470cada8630e35ef416181147ab624d5a0a8d3552048c4ae5")
 	version("1.3.5", sha256="9e615d67b6b5b57dfa54ec2bbc8c29da8f7c3fe82af1e35ab27273b1035b9bd4")
 	version("1.3.1", sha256="505a2ba7c417ceaf869240cc1c9a5f3fbd75f8d9dfcfe048df1326c6ec41144e")
