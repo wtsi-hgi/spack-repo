@@ -15,6 +15,7 @@ class RGmmat(RPackage):
 	cran = "GMMAT" 
 
 	version("1.4.2", md5="79c252d873affb24d6f676dcd43fc6db")
+	version("1.4.0", md5="07d09f71e67e936f4b8ce7b8111d1179")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
@@ -23,6 +24,8 @@ class RGmmat(RPackage):
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
+	depends_on("r-seqarray", type=("build", "run"))
+	depends_on("r-seqvartools", type=("build", "run"))
 	depends_on("zlib", type=("build", "link", "run"))
 	depends_on("bzip2", type=("build", "link", "run"))
 	depends_on("zstd", type=("build", "link", "run"))
