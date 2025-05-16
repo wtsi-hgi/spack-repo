@@ -19,6 +19,7 @@ class RLavaanplot(RPackage):
 	cran = "lavaanPlot" 
 
 	version("0.8.1", md5="63951fbf135e7a4d1fe74ee3ef79f339")
+	version("0.6.2", md5="657796c38114c5f476b38c513812b936")
 
 	depends_on("r-lavaan", type=("build", "run"))
 	depends_on("r-diagrammer", type=("build", "run"))
