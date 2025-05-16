@@ -28,6 +28,7 @@ Functions
 	cran = "adjustedCurves" 
 
 	version("0.11.0", md5="b2b6ec4cd09356136d3f36a0ca7a0b2d")
+	version("0.10.1", md5="75a12d011c6fb523d1e2b411a39a65ef")
 
 	depends_on("r-r-utils", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))
