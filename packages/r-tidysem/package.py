@@ -20,6 +20,7 @@ class RTidysem(RPackage):
 	cran = "tidySEM" 
 
 	version("0.2.6", md5="384d61803e874353ce4c8f3556b0b528")
+	version("0.2.3", md5="846fb883dfb43046bd0c3db20a494e9b")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-openmx", type=("build", "run"))
