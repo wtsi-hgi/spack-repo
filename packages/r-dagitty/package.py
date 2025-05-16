@@ -22,6 +22,7 @@ class RDagitty(RPackage):
 	cran = "dagitty" 
 
 	version("0.3-4", md5="52bd65009157ddfe6d496bc79897c52f")
+	version("0.3-1", md5="fd7c152d2dd743ec50f65c6b82522ca6")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-v8", type=("build", "run"))
