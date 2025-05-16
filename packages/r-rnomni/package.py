@@ -15,6 +15,7 @@ class RRnomni(RPackage):
 	cran = "RNOmni" 
 
 	version("1.0.1.2", md5="7c3c4e4da93de11a240aad007f4c8517")
+	version("1.0.1", md5="d226ff91a003096b52ebc08018a05451")
 
 	depends_on("r@3.2.2:", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))
