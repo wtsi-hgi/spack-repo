@@ -21,6 +21,7 @@ class RFlexsurv(RPackage):
 	homepage = "https://github.com/chjackson/flexsurv-dev"
 	cran = "flexsurv" 
 
+	version("2.3.2", md5="b46668f4d46554e6dc90fd6a0bb54f7f")
 	version("2.2.2", md5="a86c5647062c60b2bebb5ffb8165604f")
 
 	depends_on("r-survival", type=("build", "run"))
