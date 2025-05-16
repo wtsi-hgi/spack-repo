@@ -15,6 +15,7 @@ class RLocuszoomr(RPackage):
 	homepage = "https://github.com/myles-lewis/locuszoomr"
 	cran = "locuszoomr" 
 
+	version("0.3.8", md5="26185b53ee12e0b52f756b32d04b27d6")
 	version("0.2.1", md5="9ab5bc1926b958569486d6a1a1158379")
 
 	depends_on("r@3.5:", type=("build", "run"))
