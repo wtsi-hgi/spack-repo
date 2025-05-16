@@ -20,5 +20,6 @@ class RPscl(RPackage):
 	cran = "pscl" 
 
 	version("1.5.9", md5="c1a5bf7879e59bdc0889ee599e6c1375")
+	version("1.5.5", md5="2728a19e4e9be466200e2803224716b1")
 
 	depends_on("r-mass", type=("build", "run"))
