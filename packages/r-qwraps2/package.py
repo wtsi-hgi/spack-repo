@@ -24,6 +24,7 @@ class RQwraps2(RPackage):
 	cran = "qwraps2" 
 
 	version("0.6.0", md5="9afead65ba448445f718a272cb64191a", url="https://cran.r-project.org/src/contrib/qwraps2_0.6.0.tar.gz")
+	version("0.5.2", md5="0d178d92946eeef2bb2a270fec0a99c8", url="https://cran.r-project.org/src/contrib/Archive/qwraps2/qwraps2_0.5.2.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
@@ -31,3 +32,4 @@ class RQwraps2(RPackage):
 	depends_on("r-rcpp@0.12.11:", type=("build", "run"))
 	depends_on("r-xfun", type=("build", "run"))
 	depends_on("r-rcpparmadillo", type=("build", "run"))
+	depends_on("r-dplyr", type=("build", "run"))
