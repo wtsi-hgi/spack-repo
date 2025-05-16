@@ -21,6 +21,7 @@ class RDosefinding(RPackage):
 	cran = "DoseFinding" 
 
 	version("1.1-1", md5="22e563ae0fd7276fdbee7c063d76166f")
+	version("1.0-3", md5="186d2a057e957a69a1eea6e0d80cbd70")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))
