@@ -20,5 +20,6 @@ class RDrat(RPackage):
 	cran = "drat" 
 
 	version("0.2.4", md5="e46a40f8f72625d1e0a590d022603117")
+	version("0.2.3", md5="189ddcfa0554f351be2bf15fb1c61f82")
 
 	depends_on("r@3.6:", type=("build", "run"))
