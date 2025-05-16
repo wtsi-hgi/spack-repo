@@ -26,6 +26,7 @@ class RTensorflow(RPackage):
 	homepage = "https://github.com/rstudio/tensorflow"
 	cran = "tensorflow" 
 
+	version("2.16.0", md5="c48e355645c32f89392a4903417980fb")
 	version("2.15.0", md5="cab2e25a1d54bdc598d32b25d74c07e2")
 
 	depends_on("r@3.6:", type=("build", "run"))
