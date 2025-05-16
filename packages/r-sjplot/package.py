@@ -23,6 +23,7 @@ class RSjplot(RPackage):
 	cran = "sjPlot" 
 
 	version("2.8.15", md5="2ed1dc993db5e6e1e2e74e6df993fe13")
+	version("2.8.14", md5="d751cfa9c29b4519bb6bb1133adc8061")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-bayestestr", type=("build", "run"))
