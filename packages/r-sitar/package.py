@@ -23,6 +23,7 @@ Analysis
 	cran = "sitar" 
 
 	version("1.4.0", md5="1fb44ccab9e0116654f12f320b65a392")
+	version("1.3.0", md5="ebe27b357b4fe59bc4f87ecb74a0e2e9")
 
 	depends_on("r-nlme", type=("build", "run"))
 	depends_on("r@3:", type=("build", "run"))
