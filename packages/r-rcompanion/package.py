@@ -19,6 +19,7 @@ class RRcompanion(RPackage):
 	cran = "rcompanion" 
 
 	version("2.4.35", md5="a83bd4f9af6c634c5b4fee480733bef5")
+	version("2.4.26", md5="97cff8fefc8cc0bf0f0eff96b49779e1")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-boot@1.3.28:", type=("build", "run"))

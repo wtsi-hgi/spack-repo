@@ -21,6 +21,7 @@ Analyses in Mplus
 	cran = "MplusAutomation" 
 
 	version("1.1.1", md5="75c74a7c133d044af04a51ab298024cc")
+	version("1.1.0", md5="e3fbf9652949fd9f5fcce37f3b43cf7e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-boot", type=("build", "run"))

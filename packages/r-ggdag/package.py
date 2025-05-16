@@ -22,6 +22,7 @@ class RGgdag(RPackage):
 
 	version("0.2.12", md5="3a31ea904a20ce3591e83f4b855a394e")
 	version("0.2.11", md5="32f6a5558bc50e7be9c5d18f4a7be8d6")
+	version("0.2.8", md5="476bb485733b63bcd2da3fbaacacc7b7")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-dagitty", type=("build", "run"))

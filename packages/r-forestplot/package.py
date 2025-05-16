@@ -23,6 +23,7 @@ class RForestplot(RPackage):
 	cran = "forestplot" 
 
 	version("3.1.3", md5="849e4da2a7d540f966bd3f0fa03821cb")
+	version("3.1.1", md5="321f454da6f16d4a39713c453a88304b")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

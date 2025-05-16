@@ -16,6 +16,7 @@ class RLcmm(RPackage):
 	cran = "lcmm" 
 
 	version("2.1.0", md5="617131452753c6acf86d88fa87d18233")
+	version("2.0.2", md5="402be90b0c3d155bd10f7aa3c972053e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-nlme", type=("build", "run"))

@@ -19,5 +19,6 @@ class RFmsb(RPackage):
 	cran = "fmsb" 
 
 	version("0.7.6", md5="281b8f4834c1583168cb0bfd32b58ee2")
+	version("0.7.5", md5="f76947e6b7d0ab2aef358080b45eafbe")
 
 	depends_on("r@2.2:", type=("build", "run"))

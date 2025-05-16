@@ -16,6 +16,7 @@ class RHmisc(RPackage):
 	objects to LaTeX and html code, and recoding variables."""
 
 	cran = "Hmisc"
+	version("5.2-2", md5="0d4f08f1b9dba89081cd7329a2f94488")
 	version("5.1-2", md5="920b9a7fb44f2e80b11f24a4afaf4363")
 	version("5.1-1", md5="5ec7c524fdea5b77eddcbdae3c368968")
 	version("5.0-1", sha256="db390f8f8a150cb5cffb812e9609a8e8632ceae0dc198528f190fd670ba8fa59")

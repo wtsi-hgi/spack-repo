@@ -22,6 +22,7 @@ class RShowtext(RPackage):
 
 	version("0.9-7", md5="b0ace7cd37d2fda8abeba7055be73c39")
 	version("0.9-6", md5="efe23338db65e778dc579533bf51d588")
+	version("0.9-5", md5="4156f7bf55872837ea452a0f00cb3ec1")
 
 	depends_on("r-sysfonts@0.7.1:", type=("build", "run"))
 	depends_on("r-showtextdb@2:", type=("build", "run"))

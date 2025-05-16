@@ -15,6 +15,7 @@ class RTopr(RPackage):
 	homepage = "https://github.com/totajuliusd/topr"
 	cran = "topr" 
 
+	version("2.0.2", md5="3a86b2263fe92fd1b7220349161ece09")
 	version("2.0.1", md5="84c7f8ec3547f55ef31c3b0a82a90f35")
 	version("2.0.0", md5="fbad4c3ac65ca75ad38e5ac06977324c")
 

@@ -20,6 +20,7 @@ class RXgboost(RPackage):
 	allowed to define their own objectives easily."""
 
 	cran = "xgboost"
+	version("1.7.8.1", md5="dc402b64a631deba6398bfc5633bebce")
 	version("1.7.7.1", md5="476b159d54e363c37e7f14aa34bfc01d")
 	version("1.7.5.1", sha256="4ec0833f206f84e5983e9f373ea64903bec488f751fba6f75a6f4702b1c965bc")
 	version("1.6.0.1", sha256="9ae99a20997e1b02ffd21cabada2a55e53f5754746238ee900de5eb6cd964ebd")

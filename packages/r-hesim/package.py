@@ -29,6 +29,7 @@ class RHesim(RPackage):
 	cran = "hesim" 
 
 	version("0.5.4", md5="e49578f05ab04a5d42b59fbece80ed72")
+	version("0.5.3", md5="bd6f92446c90a356ea380b92eb5db7ff")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

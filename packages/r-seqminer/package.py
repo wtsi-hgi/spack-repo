@@ -17,6 +17,7 @@ Format and BGEN Format) into R
 	cran = "seqminer" 
 
 	version("9.4", md5="5922d7a82037e970121b8b31df2c53cc")
+	version("8.9", md5="53b8ba1e3aa690d56b05b2bb255b83f9")
 
 	depends_on("zlib", type=("build", "link", "run"))
 	depends_on("bzip2", type=("build", "link", "run"))

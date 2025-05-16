@@ -24,6 +24,7 @@ class RIq(RPackage):
 	cran = "iq" 
 
 	version("1.9.12", md5="0405be1778756fc4e3ccd2e8d71fdb15")
+	version("1.9.3", md5="ccbcf004a64ca99073cdc28b08410865")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -19,6 +19,7 @@ Modelling
 	cran = "finalfit" 
 
 	version("1.0.7", md5="70920ff6889cf6547d0edce1b120cc59")
+	version("1.0.6", md5="49745639a6fc029760c7d6a71bcb68dd")
 
 	depends_on("r-bdsmatrix", type=("build", "run"))
 	depends_on("r-boot", type=("build", "run"))

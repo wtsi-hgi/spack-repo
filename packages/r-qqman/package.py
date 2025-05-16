@@ -16,6 +16,7 @@ class RQqman(RPackage):
 	cran = "qqman" 
 
 	version("0.1.9", md5="af41e4fe81ff4b26cd9d69e70c31a8df")
+	version("0.1.8", md5="986eb63b634c55c3a08dc3c2091aecd9")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-calibrate", type=("build", "run"))

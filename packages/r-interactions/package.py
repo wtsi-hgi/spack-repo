@@ -22,10 +22,12 @@ class RInteractions(RPackage):
 	homepage = "https://interactions.jacob-long.com"
 	cran = "interactions" 
 
+	version("1.2.0", md5="4a5bef6a28f7574a5ff5e29a18a2c9f5")
 	version("1.1.5", md5="75c6238c25d656f3e544c5a7edd78977")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-crayon", type=("build", "run"))
+	depends_on("r-broom", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-generics", type=("build", "run"))
 	depends_on("r-jtools@2.0.3:", type=("build", "run"))

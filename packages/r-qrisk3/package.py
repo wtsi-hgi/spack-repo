@@ -15,4 +15,5 @@ class RQrisk3(RPackage):
 	cran = "QRISK3" 
 
 	version("0.6.0", md5="5b4eb181d0d096669c279b5a82a8df93", url="https://cran.r-project.org/src/contrib/QRISK3_0.6.0.tar.gz")
+	version("0.4.0", md5="e5f04b5fb6ea725910368c6a492b7ae2", url="https://cran.r-project.org/src/contrib/Archive/QRISK3/QRISK3_0.4.0.tar.gz")
 
