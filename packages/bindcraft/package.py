@@ -60,9 +60,10 @@ class Bindcraft(Package):
     depends_on("py-jaxlib", type=("build", "run"))
     depends_on("py-jax", type=("build", "run"))
     depends_on("py-colabdesign", type=("build", "run"))
+    depends_on("py-rosetta", type=("build", "run"))
+
     # System dependencies
     depends_on("ffmpeg", type=("build", "run"))
-    # depends_on("pyrosetta", type=("build", "run"))
     depends_on("cuda", type=("build", "run"))
     depends_on("cudnn", type=("build", "run"))
     depends_on("wget", type=("build", "run"))
