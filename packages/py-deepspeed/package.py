@@ -31,5 +31,5 @@ class PyDeepspeed(PythonPackage):
     depends_on("py-py-cpuinfo", type=("build", "run"))
     depends_on("py-pydantic@:1", type=("build", "run"))
     # https://github.com/microsoft/DeepSpeed/issues/2830
-    depends_on("py-torch+distributed", type=("build", "run"))
+    depends_on("py-torch+distributed@1.5:1", type=("build", "run"))
     depends_on("py-tqdm", type=("build", "run"))
