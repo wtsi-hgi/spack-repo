@@ -23,21 +23,17 @@
 from spack.package import *
 
 
-class Bindcraft(Package):
+class Bindcraft(BundlePackage):
     """BindCraft is a user-friendly and accurate binder design pipeline using AlphaFold2 backpropagation, MPNN, and PyRosetta."""
 
     homepage = "https://github.com/martinpacesa/BindCraft"
-    url = "https://github.com/martinpacesa/BindCraft/archive/refs/tags/v1.5.1.tar.gz"
-
-    maintainers("martinpacesa")
 
     license("MIT")
 
-    version("1.5.1", sha256="d4ddc3d8bee9a6ec28713aa95ee7f38499ab0091afed41c890b72b7a1e401b55")
+    version("1.5.1")
 
     # Python dependencies
     depends_on("python@3.10:", type=("build", "run"))
-    depends_on("py-pip", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-matplotlib", type=("build", "run"))
     depends_on("py-numpy@:1.99.99", type=("build", "run"))
@@ -61,41 +57,6 @@ class Bindcraft(Package):
     depends_on("py-jax", type=("build", "run"))
     depends_on("py-colabdesign", type=("build", "run"))
     depends_on("py-rosetta", type=("build", "run"))
-
-    # System dependencies
     depends_on("ffmpeg", type=("build", "run"))
     depends_on("cuda", type=("build", "run"))
     depends_on("cudnn", type=("build", "run"))
-    depends_on("wget", type=("build", "run"))
-
-    def install(self, spec, prefix):
-        # Create params directory and download AlphaFold2 weights
-        params_dir = join_path(prefix, "params")
-        mkdirp(params_dir)
-
-        # Download AlphaFold2 weights
-        wget = which("wget")
-        wget(
-            "-O",
-            join_path(params_dir, "alphafold_params_2022-12-06.tar"),
-            "https://storage.googleapis.com/alphafold/alphafold_params_2022-12-06.tar",
-        )
-
-        # Extract weights
-        tar = which("tar")
-        tar("-xf", join_path(params_dir, "alphafold_params_2022-12-06.tar"), "-C", params_dir)
-
-        # Remove archive
-        remove(join_path(params_dir, "alphafold_params_2022-12-06.tar"))
-
-        # Install main package files
-        install_tree(".", prefix)
-
-        # Make executables
-        chmod = which("chmod")
-        chmod("+x", join_path(prefix, "functions/dssp"))
-        chmod("+x", join_path(prefix, "functions/DAlphaBall.gcc"))
-
-    def setup_run_environment(self, env):
-        env.prepend_path("PATH", self.prefix.bin)
-        env.prepend_path("PYTHONPATH", self.prefix)
