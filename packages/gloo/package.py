@@ -1,10 +1,6 @@
 # Copyright Spack Project Developers. See COPYRIGHT file for details.
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
-
-from spack_repo.builtin.build_systems.cmake import CMakePackage, generator
-from spack_repo.builtin.build_systems.cuda import CudaPackage
-
 from spack.package import *
 
 
@@ -49,7 +45,7 @@ class Gloo(CMakePackage, CudaPackage):
         when="@2021-05-21:2022-05-18",
     )
 
-    generator("ninja")
+    # generator("ninja")
 
     # depends_on("c", type="build")
     # depends_on("cxx", type="build")
