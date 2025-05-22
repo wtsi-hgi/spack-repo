@@ -33,3 +33,5 @@ class PyDeepspeed(PythonPackage):
     # https://github.com/microsoft/DeepSpeed/issues/2830
     depends_on("py-torch -gloo@1.5:1", type=("build", "run"))
     depends_on("py-tqdm", type=("build", "run"))
+
+    conflicts("gloo")
