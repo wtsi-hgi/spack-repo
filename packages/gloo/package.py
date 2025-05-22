@@ -30,6 +30,12 @@ class Gloo(CMakePackage, CudaPackage):
     version("2018-04-06", commit="aad0002fb40612e991390d8e807f247ed23f13c5")  # py-torch@:0.4.0
 
     variant("libuv", default=False, description="Build libuv transport")
+    variant(
+        "cuda_arch",
+        default="70,72,75,80,86,87,89,90",
+        description="CUDA architecture that is available on the farm",
+        multi=True,
+    )
 
     # Gloo does not build on Linux >=6.0.3 (fixed in master)
     # See: https://github.com/facebookincubator/gloo/issues/345
