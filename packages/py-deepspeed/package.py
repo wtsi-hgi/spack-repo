@@ -35,3 +35,11 @@ class PyDeepspeed(PythonPackage):
     depends_on("py-tqdm", type=("build", "run"))
 
     conflicts("gloo")
+
+    def patch(self):
+        filter_file(
+            "if torch_available and torch.version.cuda is not None:",
+            "if False:",
+            "setup.py",
+            string=True,
+        )
