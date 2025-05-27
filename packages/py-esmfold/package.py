@@ -31,7 +31,6 @@ class PyEsmfold(PythonPackage):
     depends_on("hh-suite@3.3.0", type=("build", "run"))
     depends_on("kalign", type=("build", "run"))
 
-    depends_on("py-torch@1.12 ~distributed", type=("build", "run"))
     depends_on("py-biopython@1.79", type=("build", "run"))
 
     # depends_on("py-deepspeed@0.5.9", type=("build", "run"))
