@@ -12,6 +12,8 @@ class RMaveqc(RPackage):
     homepage = "https://gitlab.internal.sanger.ac.uk/sci/MAVEQC"
     git = "https://gitlab.internal.sanger.ac.uk/sci/MAVEQC"
 
+    version("0.2.9.229", tag="0.2.9.229")
+    version("0.2.8.229", tag="0.2.8.229")
     version("0.2.7", tag="0.2.7")
     version("0.2.6", tag="0.2.6")
     version("0.2.5", tag="0.2.5")
