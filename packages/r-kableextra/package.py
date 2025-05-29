@@ -32,3 +32,6 @@ class RKableextra(RPackage):
 	depends_on("r-rstudioapi", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))
 	depends_on("r-svglite", type=("build", "run"))
+	depends_on("r-rvest", type=("build", "run"), when="@1.3.4")
+	depends_on("r-webshot", type=("build", "run"), when="@1.3.4")
+
