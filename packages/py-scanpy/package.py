@@ -22,6 +22,7 @@ class PyScanpy(PythonPackage):
     version("1.9.6", sha256="b2f24e6f220cb9d4d893b24f6899ba1a14cf2fef50b7e05bb37980c78de8a013")
     version("1.9.5", sha256="1d90f95cd5e103c9e0cc41fd84c1f2d81d86d6337cbe294316578ed071d39d82")
     version("1.9.4", sha256="14957604d251c665d42a8fe55b51b6d19867c3e987054b12e65c762d13664463")
+    version("1.9.3", sha256="dfe65f9acd9f4c1740079a099f89fa6a44b6f0ef75ecaf85247ad4af859144d7")
     version("1.9.1", sha256="00c9a83b649da7e0171c91e9a08cff632102faa760614fd05cd4d1dbba4eb541")
 
     depends_on("python@3.10:", type=("build", "run"), when="@1.10.4:")

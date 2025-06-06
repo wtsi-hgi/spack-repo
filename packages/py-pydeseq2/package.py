@@ -1,0 +1,48 @@
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Spack Project Developers. See the top-level COPYRIGHT file for details.
+#
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)
+
+from spack.package import *
+
+
+class PyPydeseq2(PythonPackage):
+	"""A python implementation of DESeq2."""
+	
+	homepage = "None"
+	pypi = "pydeseq2/pydeseq2-0.5.1-py3-none-any.whl" 
+
+	version("0.3.2", sha256="59717977c6acf5b68845587aa1c46d2bc3e05ec205840d7566551ba6a9621d6d", expand=False, url="https://files.pythonhosted.org/packages/c3/bf/5f7f5be8304288f71af7294ccc7475e75467ecc67bd62bf33b70dab378d0/pydeseq2-0.3.2-py3-none-any.whl")
+	version("0.3.3", sha256="653ba88f559cc5ac3eb7d8cd0d5186f6ebf7d4e8f65155c467133435bc3f6690", expand=False, url="https://files.pythonhosted.org/packages/e2/7d/c060ca39715cfc0ae52eae363d8b1623dc0c4150ea14d88551a8deb98b3a/pydeseq2-0.3.3-py3-none-any.whl")
+	version("0.3.4", sha256="554454b536cac0b2e670d49c5f16415c4dcb026bc6b458683ab174f5315bda6a", expand=False, url="https://files.pythonhosted.org/packages/a4/b5/a643ae7ed93b614bad7bed819c3b7e73ad035fa172fb1fca0013d32182e6/pydeseq2-0.3.4-py3-none-any.whl")
+	version("0.3.5", sha256="65426892c89da9e79ede2ee741ad8607daeb1e4db2aabea0c84ffe93b2310e2b", expand=False, url="https://files.pythonhosted.org/packages/21/10/d1904971ee599ab9e2f81120982f5cf23b262bb6a55d45f5753ea379d6dc/pydeseq2-0.3.5-py3-none-any.whl")
+	version("0.3.6", sha256="f26eed6186fc14413d5737623589c55f1df32f49b23faff83022d2f1e8b6e2b8", expand=False, url="https://files.pythonhosted.org/packages/b4/f3/89fd27e0ed99e32f277eb4aaf720ae56d2f854a07773452ce6d6e8bf6640/pydeseq2-0.3.6-py3-none-any.whl")
+	version("0.4.0", sha256="4e1dabd895cf8994e5055d3c01222a6cca88db7ba6949722e3d1ddc97b3fa81a", expand=False, url="https://files.pythonhosted.org/packages/63/24/d4b442e110566c82e4ddd4093782c159d820cf9ac937a65364f8be0311e8/pydeseq2-0.4.0-py3-none-any.whl")
+	version("0.4.1", sha256="7b9337d16db5aa11d96ba0df0654f5e02ccb9e761f2d566d281f3544b11ec9f4", expand=False, url="https://files.pythonhosted.org/packages/78/86/c0865326a72117ba938124fd12d71f8dadbb7ff9674225f32603acb2d515/pydeseq2-0.4.1-py3-none-any.whl")
+	version("0.4.10", sha256="5849b08c7f395c0e50f9c25c1da60be4a6e937a1d343590c786ea4d0a3676da1", expand=False, url="https://files.pythonhosted.org/packages/41/47/094e4a28a3d382ba01de4bb1d858929388744f6a8b68d8beea4134032300/pydeseq2-0.4.10-py3-none-any.whl")
+	version("0.4.11", sha256="fae8f78f09615f6e0cb4d5ac281ebc4d0f155456ffcfeb209bf30af28f9e399c", expand=False, url="https://files.pythonhosted.org/packages/cc/a9/b63377ad612e1d099c92d301d90137b69a99efe7e3e0781eb6c521069a24/pydeseq2-0.4.11-py3-none-any.whl")
+	version("0.4.12", sha256="474233b87f1ccf8741d20c742661eea2075690d48981c16c418e221c996ccfc5", expand=False, url="https://files.pythonhosted.org/packages/0e/e4/831483ae3fa850709f98be4ef3a5d1ba6a8ca193b99bcd280ed9e98307f8/pydeseq2-0.4.12-py3-none-any.whl")
+	version("0.4.2", sha256="3a82df173fc6c77ef5c071086e18924664ac405bdcdada50b5ed1835bfaf8c7e", expand=False, url="https://files.pythonhosted.org/packages/3b/b4/998ca9b6a1fa43fa164a293f99969e45db8c214e59dbc06be3269c0466f5/pydeseq2-0.4.2-py3-none-any.whl")
+	version("0.4.3", sha256="3ede1e762d262936bb0e59dca701e96bbd9e4e404bf905ebe2eceb81a9af4205", expand=False, url="https://files.pythonhosted.org/packages/92/da/6e68bb0c0b5287334d0f8af43c3f8da610b9a0f500f94c665e475469c2d2/pydeseq2-0.4.3-py3-none-any.whl")
+	version("0.4.4", sha256="c37963dfbeff45b863c1a5850f973c16c1d321e63efd761ff8b58e7662776f78", expand=False, url="https://files.pythonhosted.org/packages/c0/b0/cb1fbd419050d35de852005594b0d5f1c9183f0d319c02ec34764faead92/pydeseq2-0.4.4-py3-none-any.whl")
+	version("0.4.6", sha256="933d184345b13af8e9fdae864d03bbdcf36b5785156f2daeeff78393de560edf", expand=False, url="https://files.pythonhosted.org/packages/df/1c/e4a9b4e5fa991ace662b683bd695f403443d5044f735ac625bc53478692d/pydeseq2-0.4.6-py3-none-any.whl")
+	version("0.4.7", sha256="74cc8b2e67ebf6d3a24731aa7f3dd3bd6578e94e149968c7e76d48e66608b420", expand=False, url="https://files.pythonhosted.org/packages/ab/9a/e9ade490c87f1435ed50ae56d0beae5e97d1271c335815c388abcaa22f98/pydeseq2-0.4.7-py3-none-any.whl")
+	version("0.4.8", sha256="1209503962c749f529179bebe82451dcd81fa8ed2434b02953737d1e27412647", expand=False, url="https://files.pythonhosted.org/packages/c7/1e/6427dd7d508853a2f6e8b0f2ea07e9a8f72a358db3a6be036b5677e4fb68/pydeseq2-0.4.8-py3-none-any.whl")
+	version("0.4.9", sha256="7f112fe1dfd3cef1c19e1ead67379d348f2517ad0594fac0fcbae847d0d62020", expand=False, url="https://files.pythonhosted.org/packages/4b/5c/85c6fb65e332b7f21d27ed22a23447d3dc41be68867bb15ff98572bcabcf/pydeseq2-0.4.9-py3-none-any.whl")
+	version("0.5.0", sha256="6cd89bd3bdf48ec62cc0ffca8ca92a4ad59b2ea751be22b1f594ce2a53a58372", expand=False, url="https://files.pythonhosted.org/packages/c6/19/1d442931450c877474b3caf859323b59c841f5125aca4a9bbac2482e5f43/pydeseq2-0.5.0-py3-none-any.whl")
+	version("0.5.0rc1", sha256="d7f35f0499b1229e6b32f8885ef94012c78cf75713ed0a7beb178405f6e6f751", expand=False, url="https://files.pythonhosted.org/packages/ce/a6/a2fa7644becc63e3f9eeedf8d788a98a17f37502b8f511d65cca77340957/pydeseq2-0.5.0rc1-py3-none-any.whl")
+	version("0.5.0rc2", sha256="02899c75d63ece595cded1fa3db84623df65ae02de96ebdf0159751489680233", expand=False, url="https://files.pythonhosted.org/packages/62/b3/90e2ec3cc38269db4b00077ec2f2c8b009261b4e96171e6b6ad70689740d/pydeseq2-0.5.0rc2-py3-none-any.whl")
+	version("0.5.1", sha256="1b675b2e6b5914d81c422eda96cb71ffd9692f0dcc460ae70fd10115a70c8470", expand=False, url="https://files.pythonhosted.org/packages/d1/67/eac43fc67942e3f795c4d9938488eebcd825783ff49b35151422ee09df5f/pydeseq2-0.5.1-py3-none-any.whl")
+
+	depends_on("py-setuptools", type=("build"))
+	depends_on("python@3.10.0:", type=("build", "run"))
+	depends_on("py-anndata", type=("build", "run"))
+	depends_on("py-formulaic", type=("build", "run"))
+	depends_on("py-numpy", type=("build", "run"))
+	depends_on("py-pandas", type=("build", "run"))
+	depends_on("py-scikit-learn", type=("build", "run"))
+	depends_on("py-scipy", type=("build", "run"))
+	depends_on("py-formulaic-contrasts", type=("build", "run"))
+	depends_on("py-matplotlib", type=("build", "run"))
+
+# {'anndata(==0.8.0)': ['0.3.2', '0.3.3'], 'jupyter': ['0.3.2', '0.3.3'], 'numpy(>=1.23.0)': ['0.3.2', '0.3.3', '0.3.4', '0.3.5', '0.3.6'], 'pandas(>=1.4.0)': ['0.3.2', '0.3.3', '0.3.4', '0.3.5', '0.3.6'], 'scikit-learn(>=1.1.0)': ['0.3.2', '0.3.3', '0.3.4', '0.3.5', '0.3.6'], 'scipy(>=1.8.0)': ['0.3.2', '0.3.3', '0.3.4', '0.3.5', '0.3.6'], 'statsmodels': ['0.3.2', '0.3.3', '0.3.4', '0.3.5', '0.3.6', '0.4.0', '0.4.1', '0.4.2', '0.4.3', '0.4.4'], 'matplotlib(>=3.6.2)': ['0.3.2', '0.3.3', '0.3.4', '0.3.5', '0.3.6'], "pytest(>=6.2.4);extra=='dev'": ['0.3.2', '0.3.3', '0.3.4', '0.3.5', '0.3.6'], "pre-commit(>=2.13.0);extra=='dev'": ['0.3.2', '0.3.3', '0.3.4', '0.3.5', '0.3.6'], "numpydoc;extra=='dev'": ['0.3.2', '0.3.3', '0.3.4', '0.3.5', '0.3.6', '0.4.0', '0.4.1', '0.4.10', '0.4.11', '0.4.12', '0.4.2', '0.4.3', '0.4.4', '0.4.6', '0.4.7', '0.4.8', '0.4.9', '0.5.0rc1'], "coverage;extra=='dev'": ['0.3.2', '0.3.3', '0.3.4', '0.3.5', '0.3.6', '0.4.0', '0.4.1', '0.4.10', '0.4.11', '0.4.12', '0.4.2', '0.4.3', '0.4.4', '0.4.6', '0.4.7', '0.4.8', '0.4.9', '0.5.0rc1'], "mypy;extra=='dev'": ['0.3.2', '0.3.3', '0.3.4', '0.3.5', '0.3.6', '0.4.0', '0.4.1', '0.4.10', '0.4.11', '0.4.12', '0.4.2', '0.4.3', '0.4.4', '0.4.6', '0.4.7', '0.4.8', '0.4.9', '0.5.0rc1'], "pandas-stubs;extra=='dev'": ['0.3.2', '0.3.3', '0.3.4', '0.3.5', '0.3.6', '0.4.0', '0.4.1', '0.4.10', '0.4.11', '0.4.12', '0.4.2', '0.4.3', '0.4.4', '0.4.6', '0.4.7', '0.4.8', '0.4.9', '0.5.0rc1'], 'anndata(>=0.8.0)': ['0.3.4', '0.3.5', '0.3.6'], 'ipython': ['0.3.4', '0.3.5', '0.3.6', '0.4.0', '0.4.1'], 'anndata>=0.8.0': ['0.4.0', '0.4.1', '0.4.10', '0.4.11', '0.4.12', '0.4.2', '0.4.3', '0.4.4', '0.4.6', '0.4.7', '0.4.8', '0.4.9', '0.5.0', '0.5.0rc1', '0.5.0rc2', '0.5.1'], 'numpy>=1.23.0': ['0.4.0', '0.4.1', '0.4.10', '0.4.11', '0.4.12', '0.4.2', '0.4.3', '0.4.4', '0.4.6', '0.4.7', '0.4.8', '0.4.9', '0.5.0', '0.5.0rc1', '0.5.0rc2', '0.5.1'], 'pandas>=1.4.0': ['0.4.0', '0.4.1', '0.4.10', '0.4.11', '0.4.12', '0.4.2', '0.4.3', '0.4.4', '0.4.6', '0.4.7', '0.4.8', '0.4.9', '0.5.0', '0.5.0rc1', '0.5.0rc2', '0.5.1'], 'scikit-learn>=1.1.0': ['0.4.0', '0.4.1', '0.4.10', '0.4.11', '0.4.12', '0.4.2', '0.4.3', '0.4.4', '0.4.6', '0.4.7', '0.4.8', '0.4.9', '0.5.0', '0.5.0rc1', '0.5.0rc2', '0.5.1'], 'scipy>=1.8.0': ['0.4.0', '0.4.1', '0.4.2', '0.4.3', '0.4.4'], 'matplotlib>=3.6.2': ['0.4.0', '0.4.1', '0.4.10', '0.4.11', '0.4.12', '0.4.2', '0.4.3', '0.4.4', '0.4.6', '0.4.7', '0.4.8', '0.4.9', '0.5.0', '0.5.0rc1', '0.5.0rc2', '0.5.1'], "pytest>=6.2.4;extra=='dev'": ['0.4.0', '0.4.1', '0.4.10', '0.4.11', '0.4.12', '0.4.2', '0.4.3', '0.4.4', '0.4.6', '0.4.7', '0.4.8', '0.4.9', '0.5.0rc1'], "pre-commit>=2.13.0;extra=='dev'": ['0.4.0', '0.4.1', '0.4.10', '0.4.11', '0.4.12', '0.4.2', '0.4.3', '0.4.4', '0.4.6', '0.4.7', '0.4.8', '0.4.9', '0.5.0rc1'], 'scipy>=1.11.0': ['0.4.10', '0.4.11', '0.4.12', '0.4.6', '0.4.7', '0.4.8', '0.4.9', '0.5.0', '0.5.0rc1', '0.5.0rc2', '0.5.1'], 'formulaic>=1.0.2': ['0.5.0', '0.5.0rc1', '0.5.0rc2', '0.5.1'], 'formulaic-contrasts>=0.2.0': ['0.5.0', '0.5.0rc2', '0.5.1'], 'pytest>=6.2.4;extra=="dev"': ['0.5.0', '0.5.0rc2', '0.5.1'], 'pre-commit>=2.13.0;extra=="dev"': ['0.5.0', '0.5.0rc2', '0.5.1'], 'numpydoc;extra=="dev"': ['0.5.0', '0.5.0rc2', '0.5.1'], 'coverage;extra=="dev"': ['0.5.0', '0.5.0rc2', '0.5.1'], 'mypy;extra=="dev"': ['0.5.0', '0.5.0rc2', '0.5.1'], 'pandas-stubs;extra=="dev"': ['0.5.0', '0.5.0rc2', '0.5.1']}
