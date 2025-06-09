@@ -13,6 +13,7 @@ class PyPolars(PythonPackage):
 
     license("MIT")
 
+    version("1.25.2", sha256="c6bd9b1b17c86e49bcf8aac44d2238b77e414d7df890afc3924812a5c989a4fe")
     version("1.20.0", sha256="e8e9e3156fae02b58e276e5f2c16a5907a79b38617a9e2d731b533d87798f451")
     version("1.19.0", sha256="b52ada5c43fcdadf64f282522198c5549ee4e46ea57d236a4d7e572643070d9d")
     version("1.18.0", sha256="5c2f119555ae8d822a5322509c6abd91601a8931115d2e4c3fff13fadf39e877")
@@ -40,12 +41,28 @@ class PyPolars(PythonPackage):
     depends_on("py-maturin@1.3.2:", type="build")
 
     # README.md
+    depends_on("rust@1.85:", when="@1.25.2:", type="build")
     depends_on("rust@1.81:", when="@1:", type="build")
     depends_on("rust@1.71:", type="build")
     depends_on("cmake", type="build")
 
     def patch(self):
         remove("Cargo.lock")
+        if self.spec.satisfies("@1.25.2:"):
+            filter_file(
+                """#![cfg_attr(feature = "nightly", feature(select_unpredictable))] """,
+                "",
+                "crates/polars-utils/src/lib.rs",
+                string=True,
+            )
+            with open("crates/polars-utils/src/select.rs", "r") as f:
+                content = f.read()
+            # only keep the final 4 lines
+            content = content.split("\n")[-4:]
+            with open("crates/polars-utils/src/select.rs", "w") as f:
+                f.write("\n".join(content))
+            
+
         filter_file(
             'default = ["all", "nightly"]',
             'default = ["all"]',
@@ -55,3 +72,4 @@ class PyPolars(PythonPackage):
 
     def setup_build_environment(self, env):
         env.set("CARGO_NET_GIT_FETCH_WITH_CLI", "true")
+        # env.set("MATURIN_PEP517_ARGS", "--no-default-features --features lazy")
