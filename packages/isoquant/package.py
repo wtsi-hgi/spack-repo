@@ -14,6 +14,7 @@ class Isoquant(Package):
     homepage = "https://github.com/ablab/IsoQuant"
     url = "https://github.com/ablab/IsoQuant/archive/refs/tags/v3.5.2.tar.gz"
 
+    version("3.7.0", sha256="4f2b8f1c7c37bebec6ce606103419f8aba44b065164700ac6006076dd3f20b4b")
     version("3.6.2", sha256="7d620cdf4055a55132d6c66b45b706172cd5aae71bc91ac48e409311e8cc1530")
     version("3.6.1", sha256="5e55749b0e7694382892929b283979bf513ee30e4c405c8ee9ddc1e40032f7dd")
     version("3.5.2", sha256="cad3d8df81324fd4a857c2ad8057c6207cb66f422f90afe36337aa95d4135951")
