@@ -17,7 +17,7 @@ class Samtools(Package):
     url = "https://github.com/samtools/samtools/releases/download/1.13/samtools-1.13.tar.bz2"
 
     license("MIT")
-    version("1.22", sha256="4911d01720f246cb97855870b410bbe4d2c2fd7fbf823ea0f7daf0f32545819d.")
+    version("1.22", sha256="4911d01720f246cb97855870b410bbe4d2c2fd7fbf823ea0f7daf0f32545819d")
     version("1.21", sha256="05724b083a6b6f0305fcae5243a056cc36cf826309c3cb9347a6b89ee3fc5ada")
     version("1.20", sha256="c71be865e241613c2ca99679c074f1a0daeb55288af577db945bdabe3eb2cf10")
     version("1.19.2", sha256="71f60499668e4c08e7d745fbff24c15cc8a0977abab1acd5d2bb419bdb065e96")
