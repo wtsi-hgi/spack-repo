@@ -61,8 +61,10 @@ class Kallisto(CMakePackage):
     # See https://github.com/spack/spack/issues/15274 and
     # https://github.com/pachterlab/kallisto/issues/253
     def cmake_args(self):
-        return [
+        args = [
             self.define("CMAKE_VERBOSE_MAKEFILE", False),
             self.define_from_variant("USE_HDF5", "hdf5"),
             self.define_from_variant("USE_BAM", "bam"),
+            self.define("MAX_KMER_SIZE", 64),
         ]
+        return args
