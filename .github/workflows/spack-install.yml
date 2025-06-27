@@ -37,44 +37,28 @@ jobs:
           
           echo "Modified packages: $PACKAGES"
           echo "packages=$PACKAGES" >> $GITHUB_OUTPUT
-
-      - name: Debug network and server availability
+      
+      - name: Backup original repos.yaml
         run: |
-          echo "=== Network Debugging ==="
-          echo "Checking server connectivity..."
-          echo "MCP Server URL: ${{ vars.MCP_SERVER_URL }}"
+          sudo cp /home/ubuntu/.spack/repos.yaml /home/ubuntu/.spack/repos.yaml.backup
+          echo "Original repos.yaml backed up"
+      
+      - name: Update repos.yaml
+        run: |
+          # Read current repos.yaml and add this repo at the top
+          sudo tee /home/ubuntu/.spack/repos.yaml > /dev/null <<EOF
+          repos:
+          - ${{ github.workspace }}
+          - /home/ubuntu/spack-repo
+          EOF
           
-          # Check if anything is listening on port 8000
-          echo "Processes listening on port 8000:"
-          netstat -tlnp | grep :8000 || echo "No processes found on port 8000"
-          
-          # Check if we can reach the MCP server
-          echo "Testing MCP server connectivity..."
-          curl -v --connect-timeout 5 ${{ vars.MCP_SERVER_URL }} 2>&1 || echo "Failed to connect to MCP server (Exit code: $?)"
-          
-          # Try host.docker.internal if the MCP server might be in a container
-          echo "Testing host.docker.internal fallback..."
-          curl -v --connect-timeout 5 http://host.docker.internal:8000 2>&1 || echo "host.docker.internal also failed"
-          
-          # Try localhost as another fallback
-          echo "Testing localhost fallback..."
-          curl -v --connect-timeout 5 http://127.0.0.1:8000 2>&1 || echo "localhost also failed"
-          
-          # List running processes to see if MCP server might be running
-          echo "Looking for potential MCP server processes..."
-          ps aux | grep -i mcp || echo "No MCP processes found"
-          ps aux | grep -i spack || echo "No spack processes found"
-          ps aux | grep -i python || echo "No python processes found"
-          
-          # Check for Docker containers that might be running the MCP server
-          echo "Checking for Docker containers..."
-          docker ps || echo "Docker not available or no containers running"
-
-      - name: Test MCP server health endpoint
-        continue-on-error: true
+          echo "Updated repos.yaml:"
+          cat /home/ubuntu/.spack/repos.yaml
+      
+      - name: Check health of local spack server
         run: |
           echo "Testing MCP server health endpoint..."
-          RESPONSE=$(curl -s -L --connect-timeout 10 ${{ vars.MCP_SERVER_URL }}/health)
+          RESPONSE=$(curl -s -L --connect-timeout 10 http://localhost:8000/health)
           echo "Health response: $RESPONSE"
           
           # Check if response contains expected values
@@ -97,8 +81,18 @@ jobs:
               echo "  - $package"
             done
             
-            # TODO: Add actual package installation/testing here
-            # spack install $package
+            # check the existence of the package
+            RESPONSE=$(curl -s -L http://localhost:8000/spack/packages/$package)
+            echo "Package response: $RESPONSE"
+            
           else
             echo "No packages were modified in this commit"
           fi
+      
+      - name: Restore repos.yaml
+        if: always()
+        run: |
+          sudo mv /home/ubuntu/.spack/repos.yaml.backup /home/ubuntu/.spack/repos.yaml
+          echo "repos.yaml restored to original state"
+          echo "Final repos.yaml:"
+          cat /home/ubuntu/.spack/repos.yaml 
