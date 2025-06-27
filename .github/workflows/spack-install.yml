@@ -41,15 +41,16 @@ jobs:
       - name: Debug network and server availability
         run: |
           echo "=== Network Debugging ==="
-          echo "Checking localhost connectivity..."
+          echo "Checking server connectivity..."
+          echo "MCP Server URL: ${{ vars.MCP_SERVER_URL }}"
           
           # Check if anything is listening on port 8000
           echo "Processes listening on port 8000:"
           netstat -tlnp | grep :8000 || echo "No processes found on port 8000"
           
-          # Check if we can reach localhost
-          echo "Testing localhost connectivity..."
-          curl -v --connect-timeout 5 http://localhost:8000/ 2>&1 || echo "Failed to connect to localhost:8000"
+          # Check if we can reach the MCP server
+          echo "Testing MCP server connectivity..."
+          curl -v --connect-timeout 5 ${{ vars.MCP_SERVER_URL }} 2>&1 || echo "Failed to connect to MCP server"
           
           # List running processes to see if MCP server might be running
           echo "Looking for potential MCP server processes..."
@@ -61,7 +62,7 @@ jobs:
         continue-on-error: true
         run: |
           echo "Testing MCP server health endpoint..."
-          RESPONSE=$(curl -s -L --connect-timeout 10 http://localhost:8000/health)
+          RESPONSE=$(curl -s -L --connect-timeout 10 ${{ vars.MCP_SERVER_URL }}/health)
           echo "Health response: $RESPONSE"
           
           # Check if response contains expected values
