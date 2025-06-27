@@ -1,0 +1,109 @@
+name: Spack Package Testing
+
+on:
+  pull_request:
+    types: [opened, synchronize, reopened]
+  push:
+    branches:
+      - main
+
+jobs:
+  test-packages:
+    runs-on: self-hosted
+    
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0  # Fetch full history to enable diff
+      
+      - name: Get modified packages
+        id: get-packages
+        run: |
+          # Get the diff and find modified files in packages/
+          if [ "${{ github.event_name }}" = "pull_request" ]; then
+            # For PRs, compare against the base branch
+            MODIFIED_FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }}..HEAD)
+          else
+            # For pushes, compare against the previous commit
+            MODIFIED_FILES=$(git diff --name-only HEAD~1..HEAD)
+          fi
+          
+          echo "Modified files:"
+          echo "$MODIFIED_FILES"
+          
+          # Extract package names from packages/* paths
+          PACKAGES=$(echo "$MODIFIED_FILES" | grep '^packages/' | cut -d'/' -f2 | sort -u | tr '\n' ' ')
+          
+          echo "Modified packages: $PACKAGES"
+          echo "packages=$PACKAGES" >> $GITHUB_OUTPUT
+      
+      - name: Backup original repos.yaml
+        run: |
+          sudo cp /home/ubuntu/.spack/repos.yaml /home/ubuntu/.spack/repos.yaml.backup
+          echo "Original repos.yaml backed up"
+      
+      - name: Update repos.yaml
+        run: |
+          # Read current repos.yaml and add this repo at the top
+          sudo tee /home/ubuntu/.spack/repos.yaml > /dev/null <<EOF
+          repos:
+          - ${{ github.workspace }}
+          - /home/ubuntu/spack-repo
+          EOF
+          
+          echo "Updated repos.yaml:"
+          cat /home/ubuntu/.spack/repos.yaml
+      
+      - name: Check health of local spack server
+        run: |
+          echo "Testing MCP server health endpoint..."
+          RESPONSE=$(curl -s -L --connect-timeout 10 http://localhost:8000/health)
+          echo "Health response: $RESPONSE"
+          
+          # Check if response contains expected values
+          if echo "$RESPONSE" | grep -q '"status".*"healthy"' && echo "$RESPONSE" | grep -q '"service".*"softpack-mcp"'; then
+            echo "✅ Health check passed"
+          else
+            echo "❌ Health check failed or server not available"
+          fi
+      
+      - name: Process packages
+        run: |
+          PACKAGES="${{ steps.get-packages.outputs.packages }}"
+          
+          if [ -n "$PACKAGES" ]; then
+            echo "Packages to process: $PACKAGES"
+            
+            # For now, just print the list of packages
+            echo "The following packages were modified:"
+            for package in $PACKAGES; do
+              echo "  - $package"
+            done
+            
+            # check if the package installed successfully
+            RESPONSE=$(curl -s -L -X POST \
+              -H "Content-Type: application/json" \
+              -d "{\"package_name\": \"$package\"}" \
+              http://localhost:8000/spack/install)
+            echo "Package response: $RESPONSE"
+
+            # check if the response (in json) has the success field set to true
+            if echo "$RESPONSE" | jq -e '.success == true' > /dev/null; then
+              echo "✅ Package $package installed successfully"
+            else
+              echo "❌ Package $package failed to install"
+              exit 1
+            fi
+            
+          else
+            echo "No packages were modified in this commit"
+          fi
+      
+      - name: Restore repos.yaml
+        if: always()
+        run: |
+          sudo mv /home/ubuntu/.spack/repos.yaml.backup /home/ubuntu/.spack/repos.yaml
+          echo "repos.yaml restored to original state"
+          echo "Final repos.yaml:"
+          cat /home/ubuntu/.spack/repos.yaml 
