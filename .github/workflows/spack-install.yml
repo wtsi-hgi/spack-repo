@@ -84,6 +84,14 @@ jobs:
             # check the existence of the package
             RESPONSE=$(curl -s -L http://localhost:8000/spack/packages/$package)
             echo "Package response: $RESPONSE"
+
+            # check if the response (in json) has the success field set to true
+            if echo "$RESPONSE" | jq -e '.success == true' > /dev/null; then
+              echo "✅ Package $package exists"
+            else
+              echo "❌ Package $package does not exist"
+              exit 1
+            fi
             
           else
             echo "No packages were modified in this commit"
