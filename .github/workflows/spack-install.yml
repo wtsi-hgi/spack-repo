@@ -50,13 +50,25 @@ jobs:
           
           # Check if we can reach the MCP server
           echo "Testing MCP server connectivity..."
-          curl -v --connect-timeout 5 ${{ vars.MCP_SERVER_URL }} 2>&1 || echo "Failed to connect to MCP server"
+          curl -v --connect-timeout 5 ${{ vars.MCP_SERVER_URL }} 2>&1 || echo "Failed to connect to MCP server (Exit code: $?)"
+          
+          # Try host.docker.internal if the MCP server might be in a container
+          echo "Testing host.docker.internal fallback..."
+          curl -v --connect-timeout 5 http://host.docker.internal:8000 2>&1 || echo "host.docker.internal also failed"
+          
+          # Try localhost as another fallback
+          echo "Testing localhost fallback..."
+          curl -v --connect-timeout 5 http://localhost:8000 2>&1 || echo "localhost also failed"
           
           # List running processes to see if MCP server might be running
           echo "Looking for potential MCP server processes..."
           ps aux | grep -i mcp || echo "No MCP processes found"
           ps aux | grep -i spack || echo "No spack processes found"
           ps aux | grep -i python || echo "No python processes found"
+          
+          # Check for Docker containers that might be running the MCP server
+          echo "Checking for Docker containers..."
+          docker ps || echo "Docker not available or no containers running"
 
       - name: Test MCP server health endpoint
         continue-on-error: true
