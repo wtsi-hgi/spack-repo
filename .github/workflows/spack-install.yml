@@ -37,23 +37,20 @@ jobs:
           
           echo "Modified packages: $PACKAGES"
           echo "packages=$PACKAGES" >> $GITHUB_OUTPUT
-      
-      - name: Backup original repos.yaml
+
+      - name: Check health of local spack server
         run: |
-          sudo cp /home/ubuntu/.spack/repos.yaml /home/ubuntu/.spack/repos.yaml.backup
-          echo "Original repos.yaml backed up"
-      
-      - name: Update repos.yaml
-        run: |
-          # Read current repos.yaml and add this repo at the top
-          sudo tee /home/ubuntu/.spack/repos.yaml > /dev/null <<EOF
-          repos:
-          - ${{ github.workspace }}
-          - /home/ubuntu/spack-repo
-          EOF
+          echo "Testing spack/packages/zlib endpoint..."
+          RESPONSE=$(curl -s -L http://localhost:8000/spack/packages/zlib)
+          echo "Zlib response: $RESPONSE"
           
-          echo "Updated repos.yaml:"
-          cat /home/ubuntu/.spack/repos.yaml
+          # Check if we get a valid response (not empty and not an error)
+          if [ -n "$RESPONSE" ] && ! echo "$RESPONSE" | grep -q '"error"'; then
+            echo "✅ Zlib package endpoint responded successfully"
+          else
+            echo "❌ Zlib package endpoint failed"
+            exit 1
+          fi
       
       - name: Process packages
         run: |
@@ -73,11 +70,3 @@ jobs:
           else
             echo "No packages were modified in this commit"
           fi
-      
-      - name: Restore repos.yaml
-        if: always()
-        run: |
-          sudo mv /home/ubuntu/.spack/repos.yaml.backup /home/ubuntu/.spack/repos.yaml
-          echo "repos.yaml restored to original state"
-          echo "Final repos.yaml:"
-          cat /home/ubuntu/.spack/repos.yaml 
