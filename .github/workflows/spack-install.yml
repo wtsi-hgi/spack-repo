@@ -81,19 +81,61 @@ jobs:
               echo "  - $package"
             done
             
-            # check if the package installed successfully
-            RESPONSE=$(curl -s -L -X POST \
-              -H "Content-Type: application/json" \
-              -d "{\"package_name\": \"$package\"}" \
-              http://localhost:8000/spack/install)
-            echo "Package response: $RESPONSE"
-
-            # check if the response (in json) has the success field set to true
-            if echo "$RESPONSE" | jq -e '.success == true' > /dev/null; then
-              echo "✅ Package $package installed successfully"
-            else
-              echo "❌ Package $package failed to install"
+            # check if the package installed successfully, I want to do this in parallel
+            declare -a PIDS=()
+            declare -a PACKAGE_ARRAY=($PACKAGES)
+            
+            # Start parallel installation checks
+            for package in $PACKAGES; do
+              echo "Starting installation check for $package..."
+              (
+                RESPONSE=$(curl -s -L -X POST \
+                  -H "Content-Type: application/json" \
+                  -d "{\"package_name\": \"$package\"}" \
+                  http://localhost:8000/spack/install)
+                echo "$RESPONSE" > "/tmp/result_$package.json"
+                echo "$package:$RESPONSE" > "/tmp/result_$package.log"
+              ) &
+              PIDS+=($!)
+            done
+            
+            # Wait for all background processes to complete
+            echo "Waiting for all installation checks to complete..."
+            for pid in "${PIDS[@]}"; do
+              wait $pid
+            done
+            
+            # Check results from all packages
+            ALL_SUCCESS=true
+            for package in $PACKAGES; do
+              if [ -f "/tmp/result_$package.json" ]; then
+                RESPONSE=$(cat "/tmp/result_$package.json")
+                echo "Package response for $package: $RESPONSE"
+                
+                # check if the response (in json) has the success field set to true
+                if echo "$RESPONSE" | jq -e '.success == true' > /dev/null; then
+                  echo "✅ Package $package installed successfully"
+                else
+                  echo "❌ Package $package failed to install"
+                  ALL_SUCCESS=false
+                fi
+              else
+                echo "❌ No response file found for package $package"
+                ALL_SUCCESS=false
+              fi
+            done
+            
+            # Clean up temporary files
+            for package in $PACKAGES; do
+              rm -f "/tmp/result_$package.json" "/tmp/result_$package.log"
+            done
+            
+            # Exit with error if any package failed
+            if [ "$ALL_SUCCESS" != true ]; then
+              echo "❌ One or more packages failed to install"
               exit 1
+            else
+              echo "✅ All packages installed successfully"
             fi
             
           else
