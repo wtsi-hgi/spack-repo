@@ -81,15 +81,18 @@ jobs:
               echo "  - $package"
             done
             
-            # check the existence of the package
-            RESPONSE=$(curl -s -L http://localhost:8000/spack/packages/$package)
+            # check if the package installed successfully
+            RESPONSE=$(curl -s -L -X POST \
+              -H "Content-Type: application/json" \
+              -d "{\"package_name\": \"$package\"}" \
+              http://localhost:8000/spack/install)
             echo "Package response: $RESPONSE"
 
             # check if the response (in json) has the success field set to true
             if echo "$RESPONSE" | jq -e '.success == true' > /dev/null; then
-              echo "✅ Package $package exists"
+              echo "✅ Package $package installed successfully"
             else
-              echo "❌ Package $package does not exist"
+              echo "❌ Package $package failed to install"
               exit 1
             fi
             
