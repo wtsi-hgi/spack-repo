@@ -58,7 +58,7 @@ jobs:
           
           # Try localhost as another fallback
           echo "Testing localhost fallback..."
-          curl -v --connect-timeout 5 http://localhost:8000 2>&1 || echo "localhost also failed"
+          curl -v --connect-timeout 5 http://127.0.0.1:8000 2>&1 || echo "localhost also failed"
           
           # List running processes to see if MCP server might be running
           echo "Looking for potential MCP server processes..."
