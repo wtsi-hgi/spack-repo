@@ -7,13 +7,13 @@ from spack.package import *
 
 
 class DummyTest(BundlePackage):
-    """A dummy bundle package for testing GitHub Actions workflow. Only depends on zlib."""
+	"""A dummy bundle package for testing GitHub Actions workflow. Only depends on zlib."""
 
-    homepage = "https://example.com/dummy-test"
+	homepage = "https://example.com/dummy-test"
 
-    license("MIT")
+	license("MIT")
 
     version("1.0.0")
 
-    # Simple dependency for testing
-    depends_on("zlib", type=("build", "run"))
+	# Simple dependency for testing
+	depends_on("zlib", type=("build", "run"))
