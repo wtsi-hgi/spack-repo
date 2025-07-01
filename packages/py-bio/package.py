@@ -40,7 +40,7 @@ class PyBio(PythonPackage):
 
 	depends_on("py-setuptools", type=("build"))
 	depends_on("python@3.7:", type=("build", "run"))
-	depends_on("python@3.10:", type=("build", "run"), when"@1.5.4:")
+	depends_on("python@3.10:", type=("build", "run"), when="@1.5.4:")
 	depends_on("py-biopython", type=("build", "run"))
 	depends_on("py-gprofiler-official", type=("build", "run"))
 	depends_on("py-mygene", type=("build", "run"))
