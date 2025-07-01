@@ -28,3 +28,6 @@ class PyCellsnp(PythonPackage):
 	version("0.3.2", sha256="4b5f72f9c553a39ad7726b20545b9f053f79e9c3a1dfa6bd19fdcd78aa5ec2dd")
 
 	depends_on("py-setuptools", type=("build"))
+	depends_on("py-pysam", type=("build", "run"))
+	depends_on("py-numpy", type=("build", "run"))
+	depends_on("py-scipy", type=("build", "run"))
