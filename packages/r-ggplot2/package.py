@@ -15,6 +15,7 @@ class RGgplot2(RPackage):
 	details."""
 
 	cran = "ggplot2"
+	version("3.5.2", sha256="0a30024a2ff3e569412223c8f14563ed504f3e0851de03e42d1b5f73fe1f06bf")
 	version("3.5.1", md5="f2add92370293ac6078f1963427d6ab2", url="https://cran.r-project.org/src/contrib/ggplot2_3.5.1.tar.gz")
 	version("3.5.0", md5="81c1b4d3661e2b7d2420f1b01235ed60", url="https://cran.r-project.org/src/contrib/ggplot2_3.5.0.tar.gz")
 	version("3.4.4", md5="13e7ad92c109bb07993373317e428415", url="https://cran.r-project.org/src/contrib/ggplot2_3.4.4.tar.gz")
