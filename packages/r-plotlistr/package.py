@@ -36,8 +36,4 @@ class RPlotlistr(RPackage):
 
     depends_on("r@3.5.0:", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
-
-    # Suggested dependencies
-    depends_on("r-multipanelfigure", type=("build", "run"), when="+multipanelfigure")
-
-    variant("multipanelfigure", default=False, description="Enable multipanelfigure support")
+    depends_on("r-multipanelfigure", type=("build", "run"))
