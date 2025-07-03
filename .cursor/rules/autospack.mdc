@@ -5,22 +5,26 @@ alwaysApply: false
 ---
 First you should check if a recipe for it already exists in packages/ (for python or r package you need to add py-/r- prefix). If the prompt asks for a specific version, check that version in the recipe too.
 
-If it is only a version not exist, you can use `spack versions` command to get more versions and add that in the recipe. You may need to run `spack checksum` to get the SHA256 number.
+If it is only a version not exist, you can use `spack versions` command to get more versions and add that in the recipe. You may run `spack checksum -b` to get the SHA256 number. Modify the recipe with the added new versions.
 
-if it does not exist, and it is a python package, you should first check pypi using our internal tool:
+Before going to the next steps, if the prompt contains a url for the package, always read the url and add the contents into your content window.
+
+if the recipe for the package does not exist, and it is a python package, you should first check pypi using our internal tool:
 `cd ~/r-spack-recipe-builder && ./PyPackageCreator.py -f {pkg}`
 when it succeeds, copy the recipes here:
 `del_empty && mv ~/r-spack-recipe-builder/packages/py-* ~/spack-repo/packages`
 
 if it doesn't exist in pypi, or if it is not a python package, then you should check for if it already exists in the official Spack repo by running (for python or r package you need to add py-/r- prefix):
-`create {py-/r-}{pkg}`. 
+`create {py-/r-}{pkg}` (just create, it is a custom function I wrote in zshrc, not `spack create`). 
 
-If it doesn't exist there, the prompt would usually contain a url. Go to that page and create the recipe according to it. It is usually hosted on github, and you can get the tags and its corresponding source package file from the page `<url>/releases` or `<url>/tags`, for example for `https://github.com/theislab/scarches` it will be `https://github.com/theislab/scarches/archive/refs/tags/v0.5.1.tar.gz`. Create the recipe using `spack create --skip-editor -b` followed by the previous tar.gz url. there are several example recipes in the `examples/` folder in this repo. (py-agate for python, r-archr for r, samtools for others), follow these examples to modify the rest of the recipe.
+If it doesn't exist there, the prompt would usually contain a url. Go to that page and create the recipe according to it. It is usually hosted on github, and you can get the tags and its corresponding source package file from the page `<url>/releases` or `<url>/tags`, for example for `https://github.com/theislab/scarches` it will be `https://github.com/theislab/scarches/archive/refs/tags/v0.5.1.tar.gz`. Create the recipe using `spack create --skip-editor -b` followed by the previous tar.gz url. there are several example recipes in the `examples/` folder in this repo. (py-agate for python, r-archr and r-plotlistr for r, samtools for others), follow these examples to modify the rest of the recipe.
 
 If it does not have tags or releases, just clone the repo into a scratch location and get its latest commit SHA, and add a line like `version("20250411", commit="82a307f19fb8188373fdd6838be92d457bf65e06")` in the recipe using the commit date as the version id. You can find an example in `examples/py-popcorn`
 
+When generate recipes, don't use variants, just set all optional dependencies to true.
+
 Then install the package using spack:
-`spack install {}`
+`spack install {pkg}`
 If there is build error, read the logs and fix it and install again, until it succeeds.
 
 when something installs successfully, always validate it by:
@@ -28,7 +32,7 @@ when something installs successfully, always validate it by:
 script for R is usually `Rscript -e \\"library({pkg})\\"`
 script for python is more complicated, usually it is `python -c \\"import {pkg}\\"` but it could be different. It is better to go through the corresponding pypi page or the url in the recipe (list as homepage) to find out the correct import command. 
 script for other packages would need to be found on the webpage as well.
-If the error message suggests any errors such as missing package, uninstall the package, fix the recipe and install it again.
+If the error message suggests any errors such as missing package, uninstall the package (`spack uninstall -y --all --dependents {pkg}`), fix the recipe and install it again.
 
 In the end, when it is validated, generate an appropriate commit message and git push.
 
