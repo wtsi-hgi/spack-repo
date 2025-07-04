@@ -13,8 +13,8 @@ class RGraph(RPackage):
 
 	bioc = "graph"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/graph_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/graph/graph_1.80.0.tar.gz"]
-	version("1.80.0", md5="735b96df0f7c955806148170220b75b2")
-	version("1.78.0", commit="9df68e8f74e2b807b033f991d21142edfd1bc090")
+
+    version("1.80.0", sha256="017446e90386aba89d2326d30006db14d191bc9b4ce916e0d0ebd979a73fef5c")	version("1.78.0", commit="9df68e8f74e2b807b033f991d21142edfd1bc090")
 	version("1.76.0", commit="e3efc108716e98bd3363621d17a6f9c3ef975d19")
 	version("1.74.0", commit="4af608a5d9e1de33fda6ae28fb73bff9272ee296")
 	version("1.72.0", commit="7afbd26ecd76e55e6bbd74915a561d7a9b15f907")
