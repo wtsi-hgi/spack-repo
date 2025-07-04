@@ -15,7 +15,7 @@ class RPolyphenHsapiensDbsnp131(RPackage):
 	bioc = "PolyPhen.Hsapiens.dbSNP131" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/PolyPhen.Hsapiens.dbSNP131_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/PolyPhen.Hsapiens.dbSNP131/PolyPhen.Hsapiens.dbSNP131_1.0.2.tar.gz"]
 
-	version("1.0.2", md5="763e9cd4afd97b36f7e659f5454ef61f", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/PolyPhen.Hsapiens.dbSNP131_1.0.2.tar.gz")
+	version("1.0.2", sha256="ecb8092a63f8a8f0ea4e42ba488c100fd77c8948e0c388f3b03a9048e7f333ce", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/PolyPhen.Hsapiens.dbSNP131_1.0.2.tar.gz")
 
 	depends_on("r-variantannotation", type=("build", "run"))
 	depends_on("r-rsqlite@0.11:", type=("build", "run"))

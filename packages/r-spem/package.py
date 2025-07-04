@@ -14,7 +14,7 @@ class RSpem(RPackage):
 
 	bioc = "SPEM"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SPEM_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SPEM/SPEM_1.42.0.tar.gz"]
-	version("1.42.0", md5="2b0ef40bd2428559cf559dfeb2a384f3")
+	version("1.42.0", sha256="7ae947fcfabb5614a628c80bf5f59e7ad9fcbb148affe724c0e08f3ab496ccc7")
 	version("1.40.0", commit="2eb948950c01ced90ebf27558817e2849da81a32")
 	version("1.38.0", commit="43ff6b0a84e7aef947d1a793583d2e9a0119c99d")
 	version("1.36.0", commit="75832966ba3e2bae6b56aa138764f7a98c7ba9b1")
