@@ -1,0 +1,40 @@
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Spack Project Developers. See the top-level COPYRIGHT file for details.
+#
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)
+
+from spack.package import *
+
+
+class PyEverett(PythonPackage):
+	"""Configuration library for Python applications"""
+	
+	homepage = "https://everett.readthedocs.io/"
+	pypi = "everett/everett-3.4.0-py3-none-any.whl" 
+
+	version("0.1", sha256="0a1a9d231bb9ef4c168b66f6fdf1e8baac3cd926b3fcf7cb6f6468739d701204", expand=False, url="https://files.pythonhosted.org/packages/4b/3c/ba5f84c84a30a156c89f720701c96fce3d5917c06755d8d2de2febbbacf3/everett-0.1-py2.py3-none-any.whl")
+	version("0.2", sha256="cab7585c0baa1d59d65f446ade2e89a761f70f865681dfdfa0443e817544e222", expand=False, url="https://files.pythonhosted.org/packages/58/12/9bebc328cf252248befe7425c1ad2a9eacbc9eca3956b8941c47246a1f61/everett-0.2-py2.py3-none-any.whl")
+	version("0.3", sha256="fb94ec627efacb2fd44a2eacaacc61d1f2fc9d7836479dd64408316cab1d2b2c", expand=False, url="https://files.pythonhosted.org/packages/61/27/b92be1603eb6669b7ddb3fb3eb94082c93857982652d3b3ce1efe472b82c/everett-0.3-py2.py3-none-any.whl")
+	version("0.3.1", sha256="b0481647a79f1b89bce07a87e7dd06c22be4a6e2e3d3b3933ef41485e2c2f880", expand=False, url="https://files.pythonhosted.org/packages/df/29/8b8095d3611961892f5422de9ab87d4af74621975ef567f65ab2ec52d495/everett-0.3.1-py2.py3-none-any.whl")
+	version("0.4", sha256="cb09a80fbbba76d17c7297d4fd98ead47d36972f989c37da98130ec7c84402c3", expand=False, url="https://files.pythonhosted.org/packages/1e/64/b5262e7492a2932b520184e3ba63a5fc28f10a6f9843747f0f2b897136cb/everett-0.4-py2.py3-none-any.whl")
+	version("0.5", sha256="5fe8201ee5c05f3cd8ebc8393a555150da5133b577ed63bb048d9bbc9321b1c5", expand=False, url="https://files.pythonhosted.org/packages/40/32/75c4b56505512d3a8f0c8ae6ce8409c2a54525f541eadbdef01fe142f995/everett-0.5-py2.py3-none-any.whl")
+	version("0.6", sha256="52848a30c302cd92fff98f1afb1b2ff4f5d7decf88404240c0009d90ce54867b", expand=False, url="https://files.pythonhosted.org/packages/43/46/b2df4a01442a87beae4e189efbf731ad6e95b730564c0822e2bfd2ab256a/everett-0.6-py2.py3-none-any.whl")
+	version("0.7", sha256="980f0b3e2048866f42ae6b3e61261a249c971dbe8bd540b4eeba797b23a2ed50", expand=False, url="https://files.pythonhosted.org/packages/17/8e/2a03b6b90febc22b263d7312208ec96c661da54e56ec3508554d5d9b5610/everett-0.7-py2.py3-none-any.whl")
+	version("0.8", sha256="d78ba2e6dcc5e49114e3b17491e5d908534104b47b3633a26aa2d5cc2c91d55d", expand=False, url="https://files.pythonhosted.org/packages/c7/e0/9b109e7ccba436ee538e1d2ae787d08b4f9120b704fd9fffa52226aa9b3c/everett-0.8-py2.py3-none-any.whl")
+	version("0.9", sha256="05b0d0bae138a3b1a7c365bdd991c0a5b06f20c2e01d6721896098ac93cf7ee9", expand=False, url="https://files.pythonhosted.org/packages/8f/9a/6e724c63645d8693551954381db1ee91b694c01088f9eff3b4ed34383f5a/everett-0.9-py2.py3-none-any.whl")
+	version("1.0.0", sha256="38c34068435a08ed7b991079022662f650ef574b0b260d1c142139112e459ee9", expand=False, url="https://files.pythonhosted.org/packages/35/d3/ffe69e300263dc02cf2bb235c617b1e2f6cc146f724f1918bbb852f30a60/everett-1.0.0-py2.py3-none-any.whl")
+	version("1.0.1", sha256="35f69f6d8e45b2250a3d4b06b8e7f537d3cb296dae9a3ec4a4791258fe4de6eb", expand=False, url="https://files.pythonhosted.org/packages/84/82/26f71f680658045fbba8daa4c9769660eca3e8c2f95f8b8d4378e57603cf/everett-1.0.1-py2.py3-none-any.whl")
+	version("1.0.2", sha256="8a5ee8cdde0ed6b3bbb63249e0e0703d4ad91921107ff198e0868ffce5f7b6bc", expand=False, url="https://files.pythonhosted.org/packages/12/34/de70a3d913411e40ce84966f085b5da0c6df741e28c86721114dd290aaa0/everett-1.0.2-py2.py3-none-any.whl")
+	version("1.0.3", sha256="6612917b7bd9c1568a63eabdf04701791f7bb05cbf302eb5dc2b6f1aeb68c61e", expand=False, url="https://files.pythonhosted.org/packages/fe/dc/38593280ec30fe1cb2611ec65554b76b68d13582bf490113e3332cdd85ea/everett-1.0.3-py2.py3-none-any.whl")
+	version("2.0.0", sha256="f4463e036f6e10ae2069a90cdcd77ab8ad5ac9242984e005dafdf146e8369b9e", expand=False, url="https://files.pythonhosted.org/packages/cb/cb/72e75c6f41ac7c12bc102dbbfdb92592f31b29ccec6f01a3d1677a132d22/everett-2.0.0-py2.py3-none-any.whl")
+	version("2.0.1", sha256="f79bc7abc1a9f5b0db54dbfee3408eb0b3afd9f8040a4e77cc824e0347a6034d", expand=False, url="https://files.pythonhosted.org/packages/98/1d/542d4f307b30307dabf549a51df77d43646ecba3d8816c738d0f5e27a48d/everett-2.0.1-py2.py3-none-any.whl")
+	version("3.0.0", sha256="43c208e09ef53adb8e8739ad96999893a2c0a27753e33f89be346e916e71efb0", expand=False, url="https://files.pythonhosted.org/packages/93/cf/6954091c4ab66d808c511962b7a99d3065fe93d6c8e5489a0c68eeaec935/everett-3.0.0-py2.py3-none-any.whl")
+	version("3.1.0", sha256="db13891b849e45e54faea93ee79881d12458c5378f5b9b7f806eeff03ce1de3c", expand=False, url="https://files.pythonhosted.org/packages/91/9a/d882fd7562208456236fb2e62b762bf16fbc9ecde842bb871f676ca0f7e1/everett-3.1.0-py2.py3-none-any.whl")
+	version("3.2.0", sha256="80517946d9746734ff8e6bda56d629f0092083389730c72157745f8d5d43d196", expand=False, url="https://files.pythonhosted.org/packages/5f/f7/51df976ce08b81e2010267a3af97e452c69d41aad049823a2723f35da81d/everett-3.2.0-py2.py3-none-any.whl")
+	version("3.3.0", sha256="acb7b8f3c5fc9692a8ba14fb257e4649f87bea4856e7406c2e9b6c2cab889105", expand=False, url="https://files.pythonhosted.org/packages/28/61/95b05a797f1b8e4a6e9058b061e3e1b1bb0c358e8427c0f8ec0fd9602750/everett-3.3.0-py3-none-any.whl")
+	version("3.4.0", sha256="f8c29c7300702f47b7323b75348e2b86647246694fda7ad410c2a2bfaa980ff7", expand=False, url="https://files.pythonhosted.org/packages/8c/f1/fd919ed781658d611322a41fcc1fbd8618887f09dc554f583e474a153f40/everett-3.4.0-py3-none-any.whl")
+
+	depends_on("py-setuptools", type=("build"))
+	depends_on("python@3.9:", type=("build", "run"))
+
+# {'six': ['0.1', '0.2', '0.3', '0.3.1', '0.4', '0.5', '0.6', '0.7', '0.8', '0.9'], 'configobj': ['0.5', '0.6', '0.7', '0.8', '0.9'], "configobj;extra=='ini'": ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '2.0.0', '2.0.1', '3.0.0', '3.1.0', '3.2.0', '3.3.0', '3.4.0'], "PyYAML;extra=='yaml'": ['1.0.0', '1.0.1', '1.0.2', '1.0.3', '2.0.0', '2.0.1', '3.0.0', '3.1.0', '3.2.0', '3.3.0', '3.4.0'], "black(==20.8b1);extra=='dev'": ['2.0.0', '2.0.1', '3.0.0'], "check-manifest(==0.46);extra=='dev'": ['2.0.0', '2.0.1'], "flake8(==3.9.2);extra=='dev'": ['2.0.0', '2.0.1'], "mypy(==0.910);extra=='dev'": ['2.0.0', '2.0.1'], "pytest(==6.2.4);extra=='dev'": ['2.0.0', '2.0.1'], "Sphinx(==4.1.2);extra=='dev'": ['2.0.0', '2.0.1'], "sphinx-rtd-theme(==0.5.2);extra=='dev'": ['2.0.0', '2.0.1'], "tox(==3.24.0);extra=='dev'": ['2.0.0'], "twine(==3.4.2);extra=='dev'": ['2.0.0', '2.0.1'], "types-PyYAML(==5.4.3);extra=='dev'": ['2.0.0'], "tox(==3.24.3);extra=='dev'": ['2.0.1'], "types-PyYAML(==5.4.6);extra=='dev'": ['2.0.1'], "check-manifest(==0.47);extra=='dev'": ['3.0.0'], "cogapp(==3.3.0);extra=='dev'": ['3.0.0'], "flake8(==4.0.1);extra=='dev'": ['3.0.0'], "mypy(==0.931);extra=='dev'": ['3.0.0'], "pytest(==6.2.5);extra=='dev'": ['3.0.0'], "Sphinx(==4.3.2);extra=='dev'": ['3.0.0'], "sphinx-rtd-theme(==1.0.0);extra=='dev'": ['3.0.0'], "tox(==3.24.5);extra=='dev'": ['3.0.0'], "tox-gh-actions(==2.9.1);extra=='dev'": ['3.0.0'], "twine(==3.7.1);extra=='dev'": ['3.0.0'], "types-PyYAML(==6.0.3);extra=='dev'": ['3.0.0'], "sphinx;extra=='sphinx'": ['3.3.0', '3.4.0'], "build;extra=='dev'": ['3.4.0'], "cogapp;extra=='dev'": ['3.4.0'], "mypy;extra=='dev'": ['3.4.0'], "pytest;extra=='dev'": ['3.4.0'], "ruff;extra=='dev'": ['3.4.0'], "tox;extra=='dev'": ['3.4.0'], "tox-gh-actions;extra=='dev'": ['3.4.0'], "tox-uv;extra=='dev'": ['3.4.0'], "twine;extra=='dev'": ['3.4.0'], "types-PyYAML;extra=='dev'": ['3.4.0'], "Sphinx==7.2.6;extra=='dev'": ['3.4.0'], "sphinx-rtd-theme;extra=='dev'": ['3.4.0']}
