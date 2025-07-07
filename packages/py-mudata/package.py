@@ -18,4 +18,4 @@ class PyMudata(PythonPackage):
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-h5py", type=("build", "run"))
-    depends_on("py-anndata@0.8:", type=("build", "run"))
+    depends_on("py-anndata@0.8:0.10", type=("build", "run"))

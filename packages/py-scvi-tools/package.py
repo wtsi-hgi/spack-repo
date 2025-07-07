@@ -463,6 +463,11 @@ class PyScviTools(PythonPackage):
     version("1.1.6", sha256="3059a7fa0aba63c6a29c7765ff30c473d2ecb353bf0c889a57b4e9fbebdd9cd9", expand=False)
     version("1.1.5", sha256="7d97f0ecad13656be6d39a6669937cee31b5c4506f872846bbb2771bfa00419e", expand=False)
     version("1.1.4", sha256="9db228589458c6f0fe939c3524b775123e4c60bcf9c9aa20211629193b47263f", expand=False)
+    version("1.3.2", sha256="0125ee90ea27056df764bac4237df6723a5f25202c4ca28da1bb3a40e830d52e", expand=False)
+    version("1.3.1.post1", sha256="3f72366ac6f6f2774a3360608d773f203ee01ace65a41944e204f48dbea697de", expand=False)
+    version("1.3.1", sha256="c9e20d7b01305cedbbbf7b951d4305613f65c92f3a2278c82c4f5a6e693ef2b5", expand=False)
+    version("1.3.0", sha256="0e401e263afea0a868337e361e15039a59d1e6fcb9707a03b66e56608ee5412e", expand=False)
+
 
     depends_on("python@3.9:", type=("build", "run"))
     depends_on("py-tqdm", type=("build", "run"))
@@ -484,7 +489,12 @@ class PyScviTools(PythonPackage):
     depends_on("py-h5py", type=("build", "run"))
     depends_on("py-flax", type=("build", "run"))
     depends_on("py-docrep", type=("build", "run"))
-    depends_on("py-anndata", type=("build", "run"))
+    depends_on("py-anndata@0.11:", type=("build", "run"), when="@1:")
+    depends_on("py-pytorch-lightning@1.9.0:1.10.0", type=("build", "run"), when="@0.20:")
+    depends_on("py-pytorch-lightning@1.6.0:1.8", type=("build", "run"), when="@0.18.0:0.19")
+    depends_on("py-pytorch-lightning@1.5.0:1.6", type=("build", "run"), when="@0.15.0:0.16")
+    depends_on("py-pytorch-lightning@1.3:1.4", type=("build", "run"), when="@0.12.1:0.14")
+    depends_on("py-pytorch-lightning@1.2:", type=("build", "run"), when="@:0.12.0")
 
     def setup_run_environment(self, env):
         env.prepend_path("LD_LIBRARY_PATH", "/opt/view/lib64")
