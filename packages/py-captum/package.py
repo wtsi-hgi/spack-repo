@@ -25,7 +25,7 @@ class PyCaptum(PythonPackage):
 
 	depends_on("py-setuptools", type=("build"))
 	depends_on("python@3.9:", type=("build", "run"))
-	depends_on("py-torch", type=("build", "run"))
+	depends_on("py-torch@1.10:", type=("build", "run"))
 	depends_on("py-numpy", type=("build", "run"))
 	depends_on("py-tqdm", type=("build", "run"))
 	depends_on("py-matplotlib", type=("build", "run"))
