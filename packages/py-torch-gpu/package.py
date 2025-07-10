@@ -26,7 +26,6 @@ from spack.package import *
 class PyTorchGpu(BundlePackage):
     """A bundle package for py-torch with cuda support."""
 
-    version("main")
     version("2.7.1")
     version("2.7.0")
     version("2.6.0")
@@ -43,7 +42,6 @@ class PyTorchGpu(BundlePackage):
     version("2.1.1")
     version("2.1.0")
 
-    depends_on("py-torch@main+cuda", type="run", when="@main")
     depends_on("py-torch@2.7.1+cuda", type="run", when="@2.7.1")
     depends_on("py-torch@2.7.0+cuda", type="run", when="@2.7.0")
     depends_on("py-torch@2.6.0+cuda", type="run", when="@2.6.0")
