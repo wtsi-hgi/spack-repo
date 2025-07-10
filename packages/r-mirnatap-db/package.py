@@ -15,7 +15,7 @@ class RMirnatapDb(RPackage):
 	bioc = "miRNAtap.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/miRNAtap.db_0.99.10.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/miRNAtap.db/miRNAtap.db_0.99.10.tar.gz"]
 
-	version("0.99.10", md5="48010280b68d6f1ddbff3b374132ce0a")
+	version("0.99.10", sha256="43e735987bae9aa68b6e7544c5d1d87ebf7edcc075427114508eb8b47c7d91c8")
 
 	depends_on("r-mirnatap", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

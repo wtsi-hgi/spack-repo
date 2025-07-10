@@ -15,7 +15,7 @@ class RRvs(RPackage):
 	bioc = "RVS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RVS_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RVS/RVS_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="209870dca9bf6ebc9831014045ddbd42")
+	version("1.24.0", sha256="a538323370013882ccdc88e79009a08569de8fb37ce1337caf52bfb80100fd5d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genlib", type=("build", "run"))

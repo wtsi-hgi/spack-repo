@@ -15,7 +15,7 @@ class RPdMedgene11St(RPackage):
 	bioc = "pd.medgene.1.1.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.medgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.medgene.1.1.st/pd.medgene.1.1.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="d96894cfea509734af62110311100142")
+	version("3.12.0", sha256="98cdf8fca8ef34acbc3aa5b4790fa1e56205b01958d66b02c1497626b1d99ed6")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

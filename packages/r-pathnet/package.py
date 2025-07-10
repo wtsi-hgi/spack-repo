@@ -15,5 +15,5 @@ class RPathnet(RPackage):
 	bioc = "PathNet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PathNet_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PathNet/PathNet_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="13ca247b602840ebfaea9f1e9a5839aa")
+	version("1.42.0", sha256="fcba50e6df41aeaef25c5fbf4609e6d503114b322d6443838e1fb7149cc87ec7")
 

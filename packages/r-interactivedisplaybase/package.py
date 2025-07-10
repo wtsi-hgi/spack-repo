@@ -16,7 +16,7 @@ class RInteractivedisplaybase(RPackage):
 
 	bioc = "interactiveDisplayBase"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/interactiveDisplayBase_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/interactiveDisplayBase/interactiveDisplayBase_1.40.0.tar.gz"]
-	version("1.40.0", md5="9ae8be7104ab2debe258b504bcd24e38")
+	version("1.40.0", sha256="5cf685f42230bc3e9d38ac9231ac466bf10f374635f6a31d98c4a34b31489c91")
 	version("1.38.0", commit="3b3a3fdc4bafca767ae66c5f8869e2d93a9a4cb3")
 	version("1.36.0", commit="79a0552bd467367866ceda2efc2b60a04a81f5fb")
 	version("1.34.0", commit="fafbb13a42bb7549f17aa08cdb0e51728c5e825e")

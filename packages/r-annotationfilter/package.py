@@ -19,7 +19,7 @@ class RAnnotationfilter(RPackage):
 	version("1.8.0", commit="9bf70ead899e32e84e2908f2b29cd38250d2d1ed")
 	version("1.6.0", commit="fa40a7e17e93fac9e85091ff93f256adf145dec3")
 	version("1.4.0", commit="acbd3309f478843a7899bd9773af5f19f986b829")
-	version("1.26.0", md5="512eececc247990236fd09aa1fc46966")
+	version("1.26.0", sha256="e51296f674421db07996a7f9d3e376e74ad9da1603973ed4e2c55ed02ddba231")
 	version("1.24.0", commit="172d9c149d9025154f7b26982d07f571499b03e8")
 	version("1.22.0", commit="c9fea4a829ce9419b6e0af987915b2d469358597")
 	version("1.20.0", commit="2818aff6502fd6fe819521cd8d97695ef6f9198e")

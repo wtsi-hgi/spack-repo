@@ -16,7 +16,7 @@ class RIntact(RPackage):
 	bioc = "INTACT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/INTACT_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/INTACT/INTACT_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="d8646f4acb0cbb31ccf53a672818be40")
+	version("1.2.0", sha256="80b1dec3b9af56241eb28e453ea0a0057716f264cc4a35611ef1cb5fa03ff52b")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-squarem", type=("build", "run"))

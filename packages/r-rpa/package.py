@@ -16,7 +16,7 @@ class RRpa(RPackage):
 	bioc = "RPA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RPA_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RPA/RPA_1.58.0.tar.gz"]
 
-	version("1.58.0", md5="ea38f5a76b570c091b8f818c48c836cb")
+	version("1.58.0", sha256="d48b0880d1601a18ae8e69104e4059321a533d9b3617ebec9cab117e02cb5250")
 
 	depends_on("r@3.1.1:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

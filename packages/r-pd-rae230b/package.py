@@ -15,7 +15,7 @@ class RPdRae230b(RPackage):
 	bioc = "pd.rae230b" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rae230b_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rae230b/pd.rae230b_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="10e2e70bb7538119127cd65f636f93b6")
+	version("3.12.0", sha256="f8ff26c322c0306c1dd813f95df449183786cfc3867ba685e2fc678f4d5d66b5")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

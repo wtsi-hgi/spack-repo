@@ -15,7 +15,7 @@ class RTbx20bamsubset(RPackage):
 	bioc = "TBX20BamSubset" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TBX20BamSubset_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TBX20BamSubset/TBX20BamSubset_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="c158901ec6203e85569c600efb335ccf")
+	version("1.38.0", sha256="0e20e818a5efa710dda2063c81e7d5fa07168ababe706d1ec60c2008a3a009b8")
 
 	depends_on("r-rsamtools@1.9.8:", type=("build", "run"))
 	depends_on("r-xtable", type=("build", "run"))

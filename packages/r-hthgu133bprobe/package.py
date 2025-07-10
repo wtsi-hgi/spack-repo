@@ -15,7 +15,7 @@ class RHthgu133bprobe(RPackage):
 	bioc = "hthgu133bprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hthgu133bprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hthgu133bprobe/hthgu133bprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="8a2e306638a81fdec3b10a014c04c6b9")
+	version("2.18.0", sha256="65af4e030dc1304ffcec8cfbe0e35a8074eddbc7d47803433f82bddef8371bb3")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

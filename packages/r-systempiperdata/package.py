@@ -16,7 +16,7 @@ class RSystempiperdata(RPackage):
 	bioc = "systemPipeRdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/systemPipeRdata_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/systemPipeRdata/systemPipeRdata_2.6.0.tar.gz"]
 
-	version("2.6.0", md5="1af59929fb95c3a017b88fce32a4c833")
+	version("2.6.0", sha256="0ea66cc404368e3456118d2ed696c8bc8a3a679ecaf14a1c0918260bf7939a00")
 
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

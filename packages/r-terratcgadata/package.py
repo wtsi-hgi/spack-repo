@@ -16,7 +16,7 @@ class RTerratcgadata(RPackage):
 	bioc = "terraTCGAdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/terraTCGAdata_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/terraTCGAdata/terraTCGAdata_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="b5803a78627bbe874b8cd8ae0a147979")
+	version("1.6.0", sha256="0ea975f5dc017c484aacfaad03a22a155989b2eff441b76acab9367654b05731")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-anvil", type=("build", "run"))

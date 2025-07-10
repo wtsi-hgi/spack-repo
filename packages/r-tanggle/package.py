@@ -16,7 +16,7 @@ class RTanggle(RPackage):
 	bioc = "tanggle" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tanggle_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tanggle/tanggle_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="d23bc70f7c920e00bb14a3d05e8cfdea")
+	version("1.8.0", sha256="10c0eaec8f0c0740189c697521297d3c99144519e45aef11fdfd56c86df1c53d")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2@2.2:", type=("build", "run"))

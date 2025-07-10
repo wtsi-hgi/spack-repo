@@ -15,7 +15,7 @@ class RCctutorial(RPackage):
 	bioc = "ccTutorial" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ccTutorial_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ccTutorial/ccTutorial_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="20af731ec83a03f12ec5d87060f5d168")
+	version("1.40.0", sha256="5a4ac66e43d9bb5c4d923b7df444c3832296a5975dacb83fc73da171a6a70be7")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-ringo@1.9.8:", type=("build", "run"))

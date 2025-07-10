@@ -15,7 +15,7 @@ class RNugomm1a520177Db(RPackage):
 	bioc = "nugomm1a520177.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/nugomm1a520177.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/nugomm1a520177.db/nugomm1a520177.db_3.4.0.tar.gz"]
 
-	version("3.4.0", md5="99f69ea2cbb80a79bedee99e3d726e50")
+	version("3.4.0", sha256="059f8575483d7754f0c5dca52f6bf51611aa9bd14030d41672338eef1f2c78e8")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -16,7 +16,7 @@ class RVisse(RPackage):
 	bioc = "vissE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vissE_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vissE/vissE_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="1c5018fd43f416ebc2d035a143877154")
+	version("1.10.0", sha256="041e87a10788ef79fa273d2f1896c24d51fd09dc050fdfd083256670f8e0f0bf")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

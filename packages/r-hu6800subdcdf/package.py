@@ -15,7 +15,7 @@ class RHu6800subdcdf(RPackage):
 	bioc = "hu6800subdcdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hu6800subdcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hu6800subdcdf/hu6800subdcdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="7966c21babb23e18cca4faafc8720f0a")
+	version("2.18.0", sha256="dcdda9a0b0157976f58be91d1422e78234ee0414c6255850b7d6b9a2acf751b1")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

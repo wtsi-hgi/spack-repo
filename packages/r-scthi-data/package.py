@@ -15,7 +15,7 @@ class RScthiData(RPackage):
 	bioc = "scTHI.data" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scTHI.data_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scTHI.data/scTHI.data_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="1fd101f8dc30262c323bdfa79810f6f5")
+	version("1.14.0", sha256="88f0ad5cbcc14775be616a9ab2a08fd2a5ff6893d53f48ee4a9676c11be548f8")
 
 	depends_on("r@4:", type=("build", "run"))
 

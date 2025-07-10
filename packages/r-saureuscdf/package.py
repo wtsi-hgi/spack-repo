@@ -15,7 +15,7 @@ class RSaureuscdf(RPackage):
 	bioc = "saureuscdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/saureuscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/saureuscdf/saureuscdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="d01883e4c3dd99f32012e6dbab8cdb8b")
+	version("2.18.0", sha256="3209ab583be2be7e7eaf286a0b577b41bb31c172042a21b0aaff3710bc1bb56e")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

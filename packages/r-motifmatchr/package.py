@@ -15,7 +15,7 @@ class RMotifmatchr(RPackage):
 	bioc = "motifmatchr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/motifmatchr_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/motifmatchr/motifmatchr_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="23c63cb97f5e359a4fb9e5e6751e037d")
+	version("1.24.0", sha256="d2848ba2227bfe914e57157fbbb22c44a13848bb26b9f295bef86d7f7b7a738e")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

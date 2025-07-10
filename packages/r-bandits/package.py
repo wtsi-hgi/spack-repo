@@ -16,7 +16,7 @@ class RBandits(RPackage):
 	bioc = "BANDITS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BANDITS_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BANDITS/BANDITS_1.18.1.tar.gz"]
 
-	version("1.18.1", md5="2a65b9a4669d4075f5882047445491eb")
+	version("1.18.1", sha256="3fb8c5dd7bf7dc16a0bbe5a5173ab104a0c9c531ab5477135737c7c2cea80179")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

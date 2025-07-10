@@ -16,7 +16,7 @@ class RSystempipeshiny(RPackage):
 	bioc = "systemPipeShiny" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/systemPipeShiny_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/systemPipeShiny/systemPipeShiny_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="8880796c4c2bf213ffa98df7f3f8d164")
+	version("1.12.0", sha256="ec30a16952f5cdd9c8893f8564d75b4d57ccddf574b589baacef0f7c8a99ae64")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-shiny@1.6:", type=("build", "run"))

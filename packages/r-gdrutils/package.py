@@ -15,7 +15,7 @@ class RGdrutils(RPackage):
 	bioc = "gDRutils" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gDRutils_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gDRutils/gDRutils_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="fdf71802bbd5967b163447eda2fe37ef")
+	version("1.0.0", sha256="b06bd1bb0843ff8bc2137f207a1d07e30ebb477c8e9957acc912f689bf19f4f3")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

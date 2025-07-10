@@ -15,7 +15,7 @@ class RLeukemiaseset(RPackage):
 	bioc = "leukemiasEset" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/leukemiasEset_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/leukemiasEset/leukemiasEset_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="f9e8274856b0d78de6da7ec0bce171f5")
+	version("1.38.0", sha256="0bed1f20576d7184ab22184673fe05be2398e5c5d6bda4e6d43089e4f5b03ceb")
 
 	depends_on("r@2.10.1:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

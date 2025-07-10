@@ -15,7 +15,7 @@ class RPartheenmetadataDb(RPackage):
 	bioc = "PartheenMetaData.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/PartheenMetaData.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/PartheenMetaData.db/PartheenMetaData.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="1c9fd27e13a341b9aba9a235a67ce978")
+	version("3.2.3", sha256="bf658faa7e1c0f8eb49f9b94edfd2d53663d137d47eaf3f69ccf0d7d56616734")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -16,7 +16,7 @@ class RTriplex(RPackage):
 	bioc = "triplex" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/triplex_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/triplex/triplex_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="c66a6990486e7a4873b256d08eff9933")
+	version("1.42.0", sha256="f00330462ca6962bbc9c9816c27a0f425a35928f5006297129187ec05dd2fce5")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

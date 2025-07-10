@@ -21,7 +21,7 @@ class RYapsa(RPackage):
 	version("1.8.0", commit="402f3f7774fdf8afc7883579ad651c26df0f8fdb")
 	version("1.6.0", commit="2455d272b076835ddb36ad21c01ef15af66abc36")
 	version("1.4.0", commit="6f24150a0689d5215983975ece96c8c205923c72")
-	version("1.28.0", md5="7da75a0c0eabc79012aeb87c9a6e9582")
+	version("1.28.0", sha256="942340b6fdfa49a17eb9aeb09cd5f64519ee7e849014c2f2dc3135c5bd82bd1d")
 	version("1.26.0", commit="eab6bbd7a44e1368c7827e4717439de445303868")
 	version("1.24.0", commit="68d1c9c71af3ade4a44237ec2d3003688378f898")
 	version("1.22.0", commit="55c2886874f154c737264ce6843089bf3565fa57")

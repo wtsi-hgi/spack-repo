@@ -15,7 +15,7 @@ class RFlowmeans(RPackage):
 	bioc = "flowMeans" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowMeans_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowMeans/flowMeans_1.62.0.tar.gz"]
 
-	version("1.62.0", md5="5cbb796502f09bf65cae60e4f0f53c1f")
+	version("1.62.0", sha256="7b0962e21f4425573f70641de016e4395a45b51f42215c1aa2a3cde60a2bc31a")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

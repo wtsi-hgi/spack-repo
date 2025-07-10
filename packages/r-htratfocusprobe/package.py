@@ -15,7 +15,7 @@ class RHtratfocusprobe(RPackage):
 	bioc = "htratfocusprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/htratfocusprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/htratfocusprobe/htratfocusprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="26a0963d8aff314a4a1f2c47e9147a8a")
+	version("2.18.0", sha256="f13bda3e2bf58d63b272a377cc5f890f3f0b0eb38b7e6d34c2753d826f5ab7fb")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

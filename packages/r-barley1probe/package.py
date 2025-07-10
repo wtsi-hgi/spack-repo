@@ -15,7 +15,7 @@ class RBarley1probe(RPackage):
 	bioc = "barley1probe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/barley1probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/barley1probe/barley1probe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="80595d8ecf83ba83ea84a722a24ab474")
+	version("2.18.0", sha256="e14c970d5c6af21cbec3918264fbfb795d7f00cc9532e5e8ae739385c8c905ce")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

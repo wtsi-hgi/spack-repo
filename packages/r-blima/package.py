@@ -16,7 +16,7 @@ class RBlima(RPackage):
 	bioc = "blima" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/blima_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/blima/blima_1.36.0.tar.gz"]
 
-	version("1.36.0", md5="a0d7cbb46b78eabdbc06c4ee1b417bcb")
+	version("1.36.0", sha256="71d0a28e7762cff920a3889fc256d922ce99383b0015657708b006a7453ae296")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-beadarray@2:", type=("build", "run"))

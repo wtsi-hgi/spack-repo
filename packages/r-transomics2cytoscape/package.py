@@ -15,7 +15,7 @@ class RTransomics2cytoscape(RPackage):
 	bioc = "transomics2cytoscape" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/transomics2cytoscape_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/transomics2cytoscape/transomics2cytoscape_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="17325dd51ab6dfcc10dff97e98be6e91")
+	version("1.12.0", sha256="27e0b3b716c7b76d84df0e0a9c6cacfa45e6638dc8766e1929e87413555a9169")
 
 	depends_on("r-rcy3", type=("build", "run"))
 	depends_on("r-keggrest", type=("build", "run"))

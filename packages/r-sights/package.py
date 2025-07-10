@@ -16,7 +16,7 @@ class RSights(RPackage):
 	bioc = "sights" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sights_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sights/sights_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="566e869c884c7b12f1a42a9dbaeec05a")
+	version("1.28.0", sha256="1997ca79956d3d07ddab78e092b87ff7e78149b54abc0d792e0abe9d19ecb8c4")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-mass@7.3:", type=("build", "run"))

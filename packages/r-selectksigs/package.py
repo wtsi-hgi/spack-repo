@@ -16,7 +16,7 @@ class RSelectksigs(RPackage):
 	bioc = "selectKSigs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/selectKSigs_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/selectKSigs/selectKSigs_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="95d84e53b480a52695c40071dfa9be68")
+	version("1.14.0", sha256="eb18c059c3171d4d4b75cc00d4ae72971f3d1bd1ee3bca564afa69e7c0e02217")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-hilda", type=("build", "run"))

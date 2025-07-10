@@ -16,7 +16,7 @@ class RMaftools(RPackage):
 	bioc = "maftools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maftools_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maftools/maftools_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="3dadc2b7f6f1693ae23a41b61f541db4")
+	version("2.18.0", sha256="ea8d5c1d97a0d1b7d5ab172ee93b89c234918874b98ae3b2ff8d8ed02da6bc08")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

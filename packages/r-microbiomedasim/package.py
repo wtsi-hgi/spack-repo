@@ -16,7 +16,7 @@ class RMicrobiomedasim(RPackage):
 	bioc = "microbiomeDASim" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/microbiomeDASim_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/microbiomeDASim/microbiomeDASim_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="9ddf99ab393766f7bcb9dee13b3707f9")
+	version("1.16.0", sha256="f3821d42237e287e64dd80c97743f4edde3b63a78df76b5a6f7f1f583d2c81f1")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

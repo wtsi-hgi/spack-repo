@@ -15,7 +15,7 @@ class RRedisparam(RPackage):
 	bioc = "RedisParam" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RedisParam_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RedisParam/RedisParam_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="cf24018f96bc9de6286d2806dfd7bfaa")
+	version("1.4.0", sha256="5ec7a73f0109edf45a41a8922246a6ff183f0fce305156101b56725ab4132041")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocparallel@1.29.12:", type=("build", "run"))

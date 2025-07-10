@@ -16,7 +16,7 @@ class RMicrobiome(RPackage):
 	bioc = "microbiome" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/microbiome_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/microbiome/microbiome_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="2d185cf8b8bf7d23f295dee1af621a0f")
+	version("1.24.0", sha256="05b8dc9433b64cf7dfec1eb8b35352df58bde841bbe39fe5a5dc26b48fe3b376")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-phyloseq", type=("build", "run"))

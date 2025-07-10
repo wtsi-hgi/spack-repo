@@ -16,7 +16,7 @@ class RPlotgardenerdata(RPackage):
 	bioc = "plotgardenerData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/plotgardenerData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/plotgardenerData/plotgardenerData_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="96055b11818bd59c0c91977b34973608")
+	version("1.8.0", sha256="23d344e1aba587ac4a1ee22c9143a8f3b088e9eea7f4c37ca6a1e359260100b1")
 
 	depends_on("r@4.1:", type=("build", "run"))
 

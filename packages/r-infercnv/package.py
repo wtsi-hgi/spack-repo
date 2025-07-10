@@ -16,7 +16,7 @@ class RInfercnv(RPackage):
 	bioc = "infercnv" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/infercnv_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/infercnv/infercnv_1.18.1.tar.gz"]
 
-	version("1.18.1", md5="d5bce5518c27e86b3fb26b6fedad5d7b")
+	version("1.18.1", sha256="eadc079ffc2681efddfb760b52adee870914f168251c94c8be2159a1e1b031b5")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

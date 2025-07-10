@@ -16,7 +16,7 @@ class RHarshlight(RPackage):
 	bioc = "Harshlight" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Harshlight_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Harshlight/Harshlight_1.74.0.tar.gz"]
 
-	version("1.74.0", md5="36adabb3111ae035069431431dd9434a")
+	version("1.74.0", sha256="a7e33673fae6d158a9b8e837ef631656afdfab837fcab318ce782c0268495ab6")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

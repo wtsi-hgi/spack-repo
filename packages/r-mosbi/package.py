@@ -15,7 +15,7 @@ class RMosbi(RPackage):
 	bioc = "mosbi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mosbi_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mosbi/mosbi_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="f34159f8140d9fe59ea7fe2546e9cdce")
+	version("1.8.0", sha256="cc07566f150101d20d02078f42331612a9e778f16e8c001555f496c1089bf3ee")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

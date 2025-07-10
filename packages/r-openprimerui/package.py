@@ -15,7 +15,7 @@ class ROpenprimerui(RPackage):
 	bioc = "openPrimeRui" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/openPrimeRui_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/openPrimeRui/openPrimeRui_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="11cb9510b6a6ecdbc8df2d5c2497d029")
+	version("1.24.0", sha256="34b6ea9cbdc6f65ee90984cabc1a0f928f0309a82e09e7d4354dc0fec98fd5ef")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-openprimer@0.99:", type=("build", "run"))

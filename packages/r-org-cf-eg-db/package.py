@@ -15,7 +15,7 @@ class ROrgCfEgDb(RPackage):
 	bioc = "org.Cf.eg.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Cf.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.Cf.eg.db/org.Cf.eg.db_3.18.0.tar.gz"]
 
-	version("3.18.0", md5="038d08c046a81218a31ff8db0877dd15")
+	version("3.18.0", sha256="d772ab3f2c8b8baacada5273ee65493c9ca1ce5d13ef3bf5f9eded821e43d231")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))

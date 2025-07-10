@@ -16,7 +16,7 @@ class RMbcb(RPackage):
 	bioc = "MBCB" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MBCB_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MBCB/MBCB_1.56.0.tar.gz"]
 
-	version("1.56.0", md5="51a88491b8d5872a1088def3f6113466")
+	version("1.56.0", sha256="fd1e5b3f7bdd1deabfbf858ab7fbd9cc7115dee72c1f00777fdcfa99cfa35ec2")
 
 	depends_on("r@2.9:", type=("build", "run"))
 	depends_on("r-tcltk2", type=("build", "run"))

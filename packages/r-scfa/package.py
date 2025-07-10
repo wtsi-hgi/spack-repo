@@ -16,7 +16,7 @@ class RScfa(RPackage):
 	bioc = "SCFA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCFA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCFA/SCFA_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="c4e7d00ff20faff6a8a14eddde8e7a84")
+	version("1.12.0", sha256="e8501c609382cb4946ed7ac64c0ae1e7f5df40d58771aa6c663c75f6aeaf779d")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-matrixstats", type=("build", "run"))

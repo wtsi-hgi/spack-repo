@@ -16,7 +16,7 @@ class RDyebiasexamples(RPackage):
 	bioc = "dyebiasexamples" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/dyebiasexamples_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/dyebiasexamples/dyebiasexamples_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="b73aa6c0c98150b2bccba7802dda8c86")
+	version("1.42.0", sha256="b282e7ab71e8404bd2064e0fd9c51503b01dbc2e4603931e417cc0abbb23571b")
 
 	depends_on("r@1.4.1:", type=("build", "run"))
 	depends_on("r-marray", type=("build", "run"))

@@ -15,7 +15,7 @@ class RIdpr(RPackage):
 	bioc = "idpr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/idpr_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/idpr/idpr_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="16fb786981b0e04b0d094c4867303555")
+	version("1.12.0", sha256="aa0e92b2c321f2fc33c94fc3149d6f2198cbbd018fc13ca651e5e0a4cf99fb60")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2@3.3:", type=("build", "run"))

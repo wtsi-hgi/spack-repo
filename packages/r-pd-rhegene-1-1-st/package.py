@@ -15,7 +15,7 @@ class RPdRhegene11St(RPackage):
 	bioc = "pd.rhegene.1.1.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rhegene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rhegene.1.1.st/pd.rhegene.1.1.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="4f63424ab52283a95731767dce6623cd")
+	version("3.12.0", sha256="e184f55c30e1fa4b6e4793eba3df2f3fcf7cc0ffabd802ceeeb3624215068038")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

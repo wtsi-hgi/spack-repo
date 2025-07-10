@@ -15,7 +15,7 @@ class RInteractionset(RPackage):
 	bioc = "InteractionSet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/InteractionSet_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/InteractionSet/InteractionSet_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="273175864f47083ba4b983c72ba0c1dc")
+	version("1.30.0", sha256="1a372f3d5e9908caf13ceaf67ca7cc9e80b3ecec23c965acbf649c0539ebef56")
 
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

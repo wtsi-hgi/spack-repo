@@ -16,7 +16,7 @@ class RMsigdb(RPackage):
 	bioc = "msigdb" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/msigdb_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/msigdb/msigdb_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="eb5822dab5f9ad68cc5a46beaf626de0")
+	version("1.10.0", sha256="3a2a26d1a63fc22fba2f99849957c201fd98ade32e0f6f27853f1560c3c0efbb")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

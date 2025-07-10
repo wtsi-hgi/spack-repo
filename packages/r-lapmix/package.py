@@ -16,7 +16,7 @@ class RLapmix(RPackage):
 	bioc = "lapmix" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lapmix_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lapmix/lapmix_1.68.0.tar.gz"]
 
-	version("1.68.0", md5="5d2611d1b39b06b05ed64ffab459a5a9")
+	version("1.68.0", sha256="d43b18bf5c5feec0d7249c59ad342b3cd15f6755f5fad71bcc62dee9249684cf")
 
 	depends_on("r@2.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

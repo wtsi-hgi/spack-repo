@@ -16,7 +16,7 @@ class RMapredictdsc(RPackage):
 	bioc = "maPredictDSC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maPredictDSC_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maPredictDSC/maPredictDSC_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="b2a491a7c799fcc0efcaed0b3067aa66")
+	version("1.40.0", sha256="c5d1bb45803e681f0c5c34b326f2b71fc08645be0960431edbdade2687ab3725")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

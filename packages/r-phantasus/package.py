@@ -16,7 +16,7 @@ class RPhantasus(RPackage):
 	bioc = "phantasus" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phantasus_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phantasus/phantasus_1.22.2.tar.gz"]
 
-	version("1.22.2", md5="84c6e2dce18e76a3268130cdd236ba59")
+	version("1.22.2", sha256="d6490abd7e41769582081f2b5dd0cbea65f5ebc37d92c8a0a93dc8bf56e8dcfa")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

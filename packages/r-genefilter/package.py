@@ -13,7 +13,7 @@ class RGenefilter(RPackage):
 
 	bioc = "genefilter"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genefilter_1.84.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genefilter/genefilter_1.84.0.tar.gz"]
-	version("1.84.0", md5="15011d1662a58967aeb3e89f1f660e40")
+	version("1.84.0", sha256="5c629c6477b77177e423b76a8d49ffc5415df7ef7894958c97e18f260efa0061")
 	version("1.82.0", commit="1ee4bdc65b0144853211354f8fabf8b497d9a565")
 	version("1.80.0", commit="14fbc2d776916e572583e3c268ea9ba60ed60a9a")
 	version("1.78.0", commit="2f574388971641d3a71858f5c34606c04fcd2ba2")

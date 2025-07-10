@@ -15,7 +15,7 @@ class RBsgenomeMmusculusUcscMm8Masked(RPackage):
 	bioc = "BSgenome.Mmusculus.UCSC.mm8.masked" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Mmusculus.UCSC.mm8.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Mmusculus.UCSC.mm8.masked/BSgenome.Mmusculus.UCSC.mm8.masked_1.3.99.tar.gz"]
 
-	version("1.3.99", md5="5809f925e0fe7c4b73b78a90c9a36fdd")
+	version("1.3.99", sha256="451694de98a6b893e89fdfdd78dacad8144b2760e3b4d8d6ae7c31937ce55ea8")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-mmusculus-ucsc-mm8", type=("build", "run"))

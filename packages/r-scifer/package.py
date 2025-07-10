@@ -16,7 +16,7 @@ class RScifer(RPackage):
 	bioc = "scifer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scifer_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scifer/scifer_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="82fb184bec0c09d5f7067baf81f8fee1")
+	version("1.4.0", sha256="cbd79f689765c6cabea9ccbd4ecab9f7e847aec07a629ec5e297d18728f037c1")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-rmarkdown", type=("build", "run"))

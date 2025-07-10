@@ -15,7 +15,7 @@ class RGmoviz(RPackage):
 	bioc = "gmoviz" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gmoviz_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gmoviz/gmoviz_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="19164c63f0edf9ae927bef7bae0b1a12")
+	version("1.14.0", sha256="962fd20aa4e036f14594ed7dc1afdc305ee9ea53824e6d2ba12592fa1049191c")
 
 	depends_on("r-circlize", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

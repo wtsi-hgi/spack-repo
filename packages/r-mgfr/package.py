@@ -15,7 +15,7 @@ class RMgfr(RPackage):
 	bioc = "MGFR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MGFR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MGFR/MGFR_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="73cad34ad523499dbdcfb3746b519b48")
+	version("1.28.0", sha256="0a2cb5e298934c3542725d9b6bb65198090aa7f1a9982a5af84205c881566122")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biomart", type=("build", "run"))

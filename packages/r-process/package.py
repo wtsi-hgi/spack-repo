@@ -15,6 +15,6 @@ class RProcess(RPackage):
 	bioc = "PROcess" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PROcess_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PROcess/PROcess_1.78.0.tar.gz"]
 
-	version("1.78.0", md5="9a9b6e6d31c1c45fb08e1f7cf00f0170")
+	version("1.78.0", sha256="f2ee603d4d072a2fab0fac819981a00f3dbcb2751813e264fd8f738bcb9f9043")
 
 	depends_on("r-icens", type=("build", "run"))

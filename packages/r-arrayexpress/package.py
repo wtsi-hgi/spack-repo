@@ -15,7 +15,7 @@ class RArrayexpress(RPackage):
 	bioc = "ArrayExpress" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ArrayExpress_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ArrayExpress/ArrayExpress_1.62.0.tar.gz"]
 
-	version("1.62.0", md5="6232db8158e5ba9cde38da322b0c5163")
+	version("1.62.0", sha256="5992297a2d64cfc580a42b7afb0d85597090e1ab412931e0c5e52f9c4d36cb32")
 
 	depends_on("r@2.9:", type=("build", "run"))
 	depends_on("r-biobase@2.4:", type=("build", "run"))

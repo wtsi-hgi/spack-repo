@@ -15,7 +15,7 @@ class RMsimpute(RPackage):
 	bioc = "msImpute" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msImpute_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msImpute/msImpute_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="493d744acd5f63e07590f22b2ce0eea2")
+	version("1.12.0", sha256="60dd7f34b448b15ee1764ce0e1732f4d3203046fc1de27f04b46878926b279aa")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-softimpute", type=("build", "run"))

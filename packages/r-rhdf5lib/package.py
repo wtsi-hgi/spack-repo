@@ -15,7 +15,7 @@ class RRhdf5lib(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rhdf5lib_1.24.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rhdf5lib/Rhdf5lib_1.24.2.tar.gz"]
 	version("1.6.3", commit="11ac3069f28b0068002db9c645817401f6c5b3c4")
 	version("1.4.3", commit="f6be8c2659b2daa17541506058917b7981490d65")
-	version("1.24.2", md5="d350d5309740f184ad4eec7cdb6d705b")
+	version("1.24.2", sha256="65522399d08dc95ee220061718ddc1c35f8a3c3bbf91179bc1b6fedddb294f2c")
 	version("1.22.0", commit="2bf06b364e8d478549b07a298eaf60177a050dc9")
 	version("1.20.0", commit="760679995f17996a9de328cf7a8bcaa6c87286d4")
 	version("1.2.1", commit="dbf85dbedb736d5a696794d52875729c8514494e")

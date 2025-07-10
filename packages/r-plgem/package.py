@@ -16,7 +16,7 @@ class RPlgem(RPackage):
 	bioc = "plgem" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/plgem_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/plgem/plgem_1.74.0.tar.gz"]
 
-	version("1.74.0", md5="caa3e3fe048da49643b34bde9fcb834a")
+	version("1.74.0", sha256="efe1a7ce154f64857494fa95d8be80da6c32a0fe2533aed403b1b5dd878ab068")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

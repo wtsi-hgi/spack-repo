@@ -15,7 +15,7 @@ class RRnu34Db(RPackage):
 	bioc = "rnu34.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rnu34.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rnu34.db/rnu34.db_3.13.0.tar.gz"]
 
-	version("3.13.0", md5="7345817f2f26270779d2409b8a17a5bd")
+	version("3.13.0", sha256="c0d249ed921883a3e1c71851032a25ed2fe5b414c370c983dbb7178363beba94")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

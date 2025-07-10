@@ -15,7 +15,7 @@ class RRgraph2js(RPackage):
 	bioc = "RGraph2js" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RGraph2js_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RGraph2js/RGraph2js_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="ccb2f26623270911ba855aa97e1269e1")
+	version("1.30.0", sha256="8c8d1f5d86d5057f2e0206c1b744a858939d6a19d5cea3f01d7d69785d760d30")
 
 	depends_on("r-whisker", type=("build", "run"))
 	depends_on("r-rjson", type=("build", "run"))

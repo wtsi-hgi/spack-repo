@@ -15,7 +15,7 @@ class RSurvtype(RPackage):
 	bioc = "survtype" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/survtype_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/survtype/survtype_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="e939bd3726a715cb0a817d0541ff86ab")
+	version("1.18.0", sha256="2682b175c3596c2f5a08bc15236dbe3711b59d6920fc9cacd9d451a18b0f842c")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-pheatmap", type=("build", "run"))

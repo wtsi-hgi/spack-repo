@@ -15,7 +15,7 @@ class RRepviz(RPackage):
 	bioc = "RepViz" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RepViz_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RepViz/RepViz_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="a740655d18448d4fb24e37ff1c60820d")
+	version("1.18.0", sha256="9c8b56f9003054b004db2d92ac10b90dd56365620cb0be94535beac73adcbae1")
 
 	depends_on("r@3.5.1:", type=("build", "run"))
 	depends_on("r-genomicranges@1.30:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RPd20060718Hg18RefseqPromoter(RPackage):
 	bioc = "pd.2006.07.18.hg18.refseq.promoter" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.2006.07.18.hg18.refseq.promoter_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.2006.07.18.hg18.refseq.promoter/pd.2006.07.18.hg18.refseq.promoter_1.8.1.tar.gz"]
 
-	version("1.8.1", md5="00838332d75b82d212078a9957f495df")
+	version("1.8.1", sha256="1d4e4d1b06fa52d84170d660fa2dd46c063f147d83de8c697f14cb01271ea924")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-rsqlite@0.11.1:", type=("build", "run"))

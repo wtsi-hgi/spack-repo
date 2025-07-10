@@ -16,7 +16,7 @@ class RStarbiotrek(RPackage):
 	bioc = "StarBioTrek" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/StarBioTrek_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/StarBioTrek/StarBioTrek_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="a1a892a63f09a57e18eb825ab8a0ec7e")
+	version("1.28.0", sha256="4c239c5556e6c4f5404155ca80ace9db46fd59fb323fb7bc47e1d5c83eb0ef32")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-spidermir", type=("build", "run"))

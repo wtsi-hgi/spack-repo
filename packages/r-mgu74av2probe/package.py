@@ -15,7 +15,7 @@ class RMgu74av2probe(RPackage):
 	bioc = "mgu74av2probe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mgu74av2probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mgu74av2probe/mgu74av2probe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="ac540b0e26b14a411740233b02d3e11c")
+	version("2.18.0", sha256="5fe43d2b50f1ef405c2e0482569160c57d3a45e0aef395bd83a375557d0f8e0b")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

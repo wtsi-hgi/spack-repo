@@ -16,7 +16,7 @@ class RScannotatr(RPackage):
 	bioc = "scAnnotatR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scAnnotatR_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scAnnotatR/scAnnotatR_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="5474e416000bda50dc8273a09b41a54b")
+	version("1.8.0", sha256="f7943bd6a7292593e6e486a3f1107f162f52e6f453f59d1c88cfc2cb5bef998f")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-seurat", type=("build", "run"))

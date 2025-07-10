@@ -15,7 +15,7 @@ class RPdChicken(RPackage):
 	bioc = "pd.chicken" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.chicken_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.chicken/pd.chicken_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="af79b6d0910621910e72ea374499e5eb")
+	version("3.12.0", sha256="625c23f7387c04ded79cac5543e8fd72f7812ba4b6cb6ccf8e26ab93448693aa")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

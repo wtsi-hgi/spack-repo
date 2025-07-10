@@ -15,7 +15,7 @@ class RSharedobject(RPackage):
 	bioc = "SharedObject" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SharedObject_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SharedObject/SharedObject_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="7c47265b6a5f61385088d6146c7e4879")
+	version("1.16.0", sha256="77fd00f492f1dd9fbb6821c9f01172aa271c7f7440c4a787627810794098fc21")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

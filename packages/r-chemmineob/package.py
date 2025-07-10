@@ -19,7 +19,7 @@ class RChemmineob(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChemmineOB/ChemmineOB_1.40.0.tar.gz",
     ]
 
-    version("1.40.0", md5="5bd759ca398ffb70214a8076028bf0b2")
+    version("1.40.0", sha256="b147d9e00df464d13b1c6d876b0a49e158510ff725da599e51b936faf997ca55")
 
     depends_on("r@2.15.1:", type=("build", "run"))
     depends_on("r-biocgenerics", type=("build", "run"))

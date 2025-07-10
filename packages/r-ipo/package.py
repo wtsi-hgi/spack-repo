@@ -16,7 +16,7 @@ class RIpo(RPackage):
 	bioc = "IPO" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IPO_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IPO/IPO_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="a1275d6f177754744bcceb9a8aed44a0")
+	version("1.28.0", sha256="af2504a1f58829770425519e0e3758f3e533a579f880b0561f05bc3a64fb3171")
 
 	depends_on("r-xcms@1.50:", type=("build", "run"))
 	depends_on("r-rsm", type=("build", "run"))

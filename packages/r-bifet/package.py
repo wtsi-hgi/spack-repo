@@ -15,7 +15,7 @@ class RBifet(RPackage):
 	bioc = "BiFET" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiFET_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiFET/BiFET_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="11fcc80fc0c2745e5a15524fd2279bed")
+	version("1.22.0", sha256="993862728a1d0640d6baabc92167c817c66c7561df96bead2604a74131c5df14")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-poibin", type=("build", "run"))

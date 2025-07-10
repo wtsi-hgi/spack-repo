@@ -15,7 +15,7 @@ class RChipanalyser(RPackage):
 	bioc = "ChIPanalyser" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPanalyser_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPanalyser/ChIPanalyser_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="21d3f8fe9fc90548452dab5a3a8e5c0d")
+	version("1.24.0", sha256="1b11a1a7aef3df7693f4a00d44995e08fed16987d581301392d9df50985b56c9")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

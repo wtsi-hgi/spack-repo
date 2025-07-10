@@ -15,7 +15,7 @@ class RPwomics(RPackage):
 	bioc = "pwOmics" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pwOmics_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pwOmics/pwOmics_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="fcb2cc2e104a970552cc4f45ce4a1197")
+	version("1.34.0", sha256="34081a6552a1b860fd62bd84fcd7e37dff6f8c0469c25ea8adc01b4bc146096b")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

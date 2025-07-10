@@ -14,7 +14,7 @@ class RGenelendatabase(RPackage):
 
 	bioc = "geneLenDataBase"
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/geneLenDataBase_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/geneLenDataBase/geneLenDataBase_1.38.0.tar.gz"]
-	version("1.38.0", md5="c29099d3142aad07590e22ce37c6acf3")
+	version("1.38.0", sha256="c08016504d03799242713510837e051087a5029df94d1034437561f07b647e6a")
 	version("1.36.0", commit="e8f37dd2a63cf10ba946958362192909fec64a10")
 	version("1.34.0", commit="e26cf8e3fc20b5d183cbd39b7b28a8cc866f6ead")
 	version("1.32.0", commit="eaa193a2c6d502c6d59113fd42f66761b8730594")

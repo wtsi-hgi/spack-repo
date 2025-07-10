@@ -16,7 +16,7 @@ class ROrthosdata(RPackage):
 	bioc = "orthosData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/orthosData_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/orthosData/orthosData_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="7970587455fa5197daf1f6b640b7f688")
+	version("1.0.0", sha256="631be84ad27eea65697c93a491fa96afcde226e05876cb9d644940d5dd9e3b59")
 
 	depends_on("r-annotationhub", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))

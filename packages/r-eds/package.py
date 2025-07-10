@@ -16,7 +16,7 @@ class REds(RPackage):
 	bioc = "eds" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/eds_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/eds/eds_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="5992ff2692afb665a65bc9755175de5c")
+	version("1.4.0", sha256="ca0320971186f9086c5dae9401eef84a8b856ad4b49f11493974172db6beb175")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -15,7 +15,7 @@ class RKeggorthology(RPackage):
 	bioc = "keggorthology" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/keggorthology_2.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/keggorthology/keggorthology_2.54.0.tar.gz"]
 
-	version("2.54.0", md5="56d510a339dd4fb984bad81624d83142")
+	version("2.54.0", sha256="49d419f2a8d206ef7443aeaf1508735e6df18a5d1c376985966e7d8828c16659")
 
 	depends_on("r@2.5:", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

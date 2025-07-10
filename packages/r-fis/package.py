@@ -15,7 +15,7 @@ class RFis(RPackage):
 	bioc = "FIs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FIs_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FIs/FIs_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="ef807b75136742a1dcb5ea70993d5c38")
+	version("1.30.0", sha256="64adfbe1a4b1cea71071ed4573126b7b2d25f4d162bcb08e0239e464c505dc5e")
 
 	depends_on("r@3.3:", type=("build", "run"))
 

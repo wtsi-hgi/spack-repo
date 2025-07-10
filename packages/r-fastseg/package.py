@@ -16,7 +16,7 @@ class RFastseg(RPackage):
 	bioc = "fastseg" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fastseg_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fastseg/fastseg_1.48.0.tar.gz"]
 
-	version("1.48.0", md5="ca8ead071a9b881b19dea7b71e0e73b4")
+	version("1.48.0", sha256="66887a292000ab12e6097fdca19765575d5ac684e5bd32c312bf7d7b60abe981")
 
 	depends_on("r@2.13:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

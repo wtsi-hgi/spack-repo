@@ -16,7 +16,7 @@ class RTiledbarray(RPackage):
 	bioc = "TileDBArray" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TileDBArray_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TileDBArray/TileDBArray_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="7bb6ef67d882031ac2ebfcb3c1873dd2")
+	version("1.12.0", sha256="920703cc68b3dbad43aaac626efb3d8a1e5c7f18fbdf95f9ade80ef878ada1d7")
 
 	depends_on("r-delayedarray@0.27.2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

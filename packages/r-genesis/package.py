@@ -16,7 +16,7 @@ class RGenesis(RPackage):
 	bioc = "GENESIS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GENESIS_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GENESIS/GENESIS_2.32.0.tar.gz"]
 
-	version("2.32.0", md5="909c6b6ea17b2de1716f3a5102caa0df")
+	version("2.32.0", sha256="891680387ea63682d977b08d2d5706892efea4c26cee855104489f2354a09db1")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

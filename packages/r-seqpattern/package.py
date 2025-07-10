@@ -15,7 +15,7 @@ class RSeqpattern(RPackage):
 	bioc = "seqPattern" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqPattern_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqPattern/seqPattern_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="90ef37347887673ee80f12fa953e02f3")
+	version("1.34.0", sha256="6037d3685bab94e2d1f6046bdc19369a786a595ef421e6ce7d8a34408a6f4967")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

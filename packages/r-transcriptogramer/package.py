@@ -16,7 +16,7 @@ class RTranscriptogramer(RPackage):
 	bioc = "transcriptogramer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/transcriptogramer_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/transcriptogramer/transcriptogramer_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="6c6b8c13ec29ef0e6e5552cbbd49f14d")
+	version("1.24.0", sha256="540713671b8c77e9f789e7e4f7553f668a5a73f225d1d4f2ca4fc4603b0b5e9e")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biomart", type=("build", "run"))

@@ -16,7 +16,7 @@ class RStrandcheckr(RPackage):
 	bioc = "strandCheckR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/strandCheckR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/strandCheckR/strandCheckR_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="d9544940bb53aa96ca4e14fda712581d")
+	version("1.20.0", sha256="a25ff1e8063de98ae2417bf7ee62074d95feb4989ad2381e882b604bb9679c6f")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

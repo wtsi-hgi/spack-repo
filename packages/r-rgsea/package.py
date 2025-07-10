@@ -15,7 +15,7 @@ class RRgsea(RPackage):
 	bioc = "RGSEA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RGSEA_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RGSEA/RGSEA_1.36.0.tar.gz"]
 
-	version("1.36.0", md5="426ab6d4dc463399d014c6e76c3f8c75")
+	version("1.36.0", sha256="2b8115fce42516a53ec7290f31d907482e0b639b8a30b8a48ba291475ab89fd2")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

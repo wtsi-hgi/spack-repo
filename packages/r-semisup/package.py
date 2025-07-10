@@ -16,7 +16,7 @@ class RSemisup(RPackage):
 	bioc = "semisup" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/semisup_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/semisup/semisup_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="fb3d32c07acbfadbbee01f9a6c8333fe")
+	version("1.26.0", sha256="a9b0a2eb85fe87ff5f7397d5a966637f07cbbe66b88a1ebb72391cfef8676376")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-vgam", type=("build", "run"))

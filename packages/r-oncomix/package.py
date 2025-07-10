@@ -15,7 +15,7 @@ class ROncomix(RPackage):
 	bioc = "oncomix" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oncomix_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oncomix/oncomix_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="dd6381604152d7cb96f7c592e8f82ab7")
+	version("1.24.0", sha256="02bb5aa539f2c5ec2d179f8f4877244e5328c4e9b825961e13022ff9e11a3128")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

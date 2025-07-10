@@ -15,7 +15,7 @@ class RInterminer(RPackage):
 	bioc = "InterMineR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/InterMineR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/InterMineR/InterMineR_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="a401e91084a8393592ceb3305b6cbfa2")
+	version("1.24.0", sha256="d1066222fef73224cd0e9149841faf10273389eface5406c7923d07b58fdd8e5")
 
 	depends_on("r@3.4.1:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

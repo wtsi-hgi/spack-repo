@@ -21,7 +21,7 @@ class RAnaquin(RPackage):
 	version("2.8.0", commit="f591d420740b77881ae0a4c16b208c63d460c601")
 	version("2.6.1", commit="22b6c71697fe1e2db8f6d18f77728d0fd96fa6d6")
 	version("2.4.0", commit="0d6ae80ff622151a782e4774ca274f06024a71d2")
-	version("2.26.0", md5="a0b480fdac1e56d9b308c2c23518b4a0")
+	version("2.26.0", sha256="8d0a505c9877752d13ce81b7712a78f89c7aa9ca5ae25dc72047079a62705db8")
 	version("2.24.0", commit="0eefabdc4036b98505032c460d08375839b1fc3e")
 	version("2.22.0", commit="d848a9bd7bf9d1d62202cc477300bf1a65b3e36c")
 	version("2.20.0", commit="61598dd3430b09b57f31d7d550ea95126a2d73c8")

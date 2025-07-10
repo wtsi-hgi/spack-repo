@@ -15,7 +15,7 @@ class RChipseq(RPackage):
 
 	maintainers("dorton21")
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chipseq_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chipseq/chipseq_1.52.0.tar.gz"]
-	version("1.52.0", md5="5cf8ab297fc95d0a36b4359488c50358")
+	version("1.52.0", sha256="d137f756788c6c3d00794d5e5090d078dcc5fa4f05ca446e6d5c124a6d4f89bb")
 	version("1.50.0", commit="0bdfa25828b1d65f629e96c8e832061fd7ff7935")
 	version("1.48.0", commit="9c78296001b6dd4102318879c8504dac70015822")
 	version("1.46.0", commit="76b00397cd117d5432158f50fc1032d50485bd24")

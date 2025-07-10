@@ -16,7 +16,7 @@ class RGeoquery(RPackage):
 
 	bioc = "GEOquery"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEOquery_2.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEOquery/GEOquery_2.70.0.tar.gz"]
-	version("2.70.0", md5="5e8f233065ccb97c7cbb231479c936a0")
+	version("2.70.0", sha256="076d0e6727ff02a1f927f9fc363cfcd620a5a5caaadd60e6fcdc31d169824ef6")
 	version("2.68.0", commit="7995c579b068f98ebf3f1cd2cfd0575c3d73530c")
 	version("2.66.0", commit="00a954e9f8223607b43cf112943ab575d03a0eb6")
 	version("2.64.2", commit="e9b7f075a4a6a952660443ca93ed392d7a4fd6d7")

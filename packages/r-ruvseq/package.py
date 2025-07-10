@@ -16,7 +16,7 @@ class RRuvseq(RPackage):
 	bioc = "RUVSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RUVSeq_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RUVSeq/RUVSeq_1.36.0.tar.gz"]
 
-	version("1.36.0", md5="eebbc7e6520dc1fb18f5d8f66de7b739")
+	version("1.36.0", sha256="e2027b287cae301ccb26b742dd1830a42b0eb45a552323cea119d7adf97b7e11")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-edaseq@1.99.1:", type=("build", "run"))

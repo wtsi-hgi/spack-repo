@@ -16,7 +16,7 @@ class RIgvr(RPackage):
 	bioc = "igvR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/igvR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/igvR/igvR_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="318b9d244079439576763028e1731a18")
+	version("1.22.0", sha256="b38e44b5638f2a141657c7ec0d9ac763672c32fd8dd3c41ed06f4a266fa45132")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

@@ -15,6 +15,6 @@ class RDiffloopdata(RPackage):
 	bioc = "diffloopdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/diffloopdata_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/diffloopdata/diffloopdata_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="748ee71ae44999ca2c568619ad5a47eb")
+	version("1.30.0", sha256="0a2b0375b84d9d4a4a5ae0637f9298a9bfb329f916de25da3c7ecd2e2fb70fb8")
 
 

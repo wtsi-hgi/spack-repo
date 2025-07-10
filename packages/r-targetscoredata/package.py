@@ -15,6 +15,6 @@ class RTargetscoredata(RPackage):
 	bioc = "TargetScoreData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TargetScoreData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TargetScoreData/TargetScoreData_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="61084f230f2c3dedb27988867f07f50f")
+	version("1.38.0", sha256="93fc217c42a6d2843b3571852385a37c1840b7d9a9c0a44e9fee1100739741a7")
 
 

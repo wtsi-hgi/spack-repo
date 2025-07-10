@@ -18,7 +18,7 @@ class RInteractivedisplay(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/interactiveDisplay/interactiveDisplay_1.40.0.tar.gz",
     ]
 
-    version("1.40.0", md5="4adec73e763df3dc2e697e41bff3ead8")
+    version("1.40.0", sha256="2a3e31639245081cd69f4c0c6396231a39b5477eda8362e956f221c266610171")
 
     depends_on("r@3.5:", type=("build", "run"))
     depends_on("r-biocgenerics", type=("build", "run"))

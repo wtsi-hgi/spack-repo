@@ -15,7 +15,7 @@ class RDrosgenome1probe(RPackage):
 	bioc = "drosgenome1probe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/drosgenome1probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/drosgenome1probe/drosgenome1probe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="1f12abdfeee65e8a6554f57507d86fb3")
+	version("2.18.0", sha256="28c506791b89140cdb548bf1d378352d18cf26ed4e5da76ec36d4d7b5240eeef")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

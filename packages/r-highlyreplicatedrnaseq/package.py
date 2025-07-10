@@ -16,7 +16,7 @@ class RHighlyreplicatedrnaseq(RPackage):
 	bioc = "HighlyReplicatedRNASeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HighlyReplicatedRNASeq_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HighlyReplicatedRNASeq/HighlyReplicatedRNASeq_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="a397cddffb2dfea70943930b992ea7c0")
+	version("1.14.0", sha256="4999d1e237f1329a17b4f88d670847ac53922c89c730b4cf3e9056952ceee6ff")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

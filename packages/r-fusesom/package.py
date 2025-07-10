@@ -15,7 +15,7 @@ class RFusesom(RPackage):
 	bioc = "FuseSOM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FuseSOM_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FuseSOM/FuseSOM_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="8f53b251d77ea648cb8e56bb5eb72b18")
+	version("1.4.0", sha256="34faa781054e961cb06eab6f477680dcc07933003370ffd98e1558975f462bd7")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-psych", type=("build", "run"))

@@ -15,7 +15,7 @@ class RPdClariomSMouseHt(RPackage):
 	bioc = "pd.clariom.s.mouse.ht" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.clariom.s.mouse.ht_3.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.clariom.s.mouse.ht/pd.clariom.s.mouse.ht_3.14.1.tar.gz"]
 
-	version("3.14.1", md5="9cb6f77cf9666a0d54e1eacb904fd57c")
+	version("3.14.1", sha256="731640ee29bf26dd09752d5d5cf3f4630cab703629406fc0a0b5fa6dd5ab49cd")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RNullranges(RPackage):
 	bioc = "nullranges" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nullranges_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nullranges/nullranges_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="6ee32a46c332cfeefa89ebc2b32608bf")
+	version("1.8.0", sha256="6adbd452f6605bdafbb66ad7e896d58b49dbc7e4420ce00017207177908c628e")
 
 	depends_on("r-iranges", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

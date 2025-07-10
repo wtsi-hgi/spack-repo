@@ -16,7 +16,7 @@ class RSiggenes(RPackage):
 
 	bioc = "siggenes"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/siggenes_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/siggenes/siggenes_1.76.0.tar.gz"]
-	version("1.76.0", md5="ae9899f2a3587a423169a27502868709")
+	version("1.76.0", sha256="6c8aa834ad0c8db397969993358279c0d3fb81792951058f0331c088c4e3fd4b")
 	version("1.74.0", commit="02e0e825eae0e1fa8ffda0c826ddc176cb67cb0a")
 	version("1.72.0", commit="4f93d1a28087c941b275e6c6bae9e42d721cf422")
 	version("1.70.0", commit="c263daa14cf87c61b41e3a9e88573ba339c66179")

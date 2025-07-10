@@ -15,7 +15,7 @@ class RTxdbCfamiliarisUcscCanfam3Refgene(RPackage):
 	bioc = "TxDb.Cfamiliaris.UCSC.canFam3.refGene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Cfamiliaris.UCSC.canFam3.refGene_3.11.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Cfamiliaris.UCSC.canFam3.refGene/TxDb.Cfamiliaris.UCSC.canFam3.refGene_3.11.0.tar.gz"]
 
-	version("3.11.0", md5="bf6af84c14a30ad5d01f3678246b1180")
+	version("3.11.0", sha256="79169a3d0b1797b2c0af73f550c0a52e68448144298c24b36b63756c5bf32f66")
 
 	depends_on("r-genomicfeatures@1.39.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

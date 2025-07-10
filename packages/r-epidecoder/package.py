@@ -16,7 +16,7 @@ class REpidecoder(RPackage):
 	bioc = "epidecodeR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epidecodeR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epidecodeR/epidecodeR_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="409ed7c959818b7400944e1d20653f68")
+	version("1.10.0", sha256="97e89cec2638a33e7ddec2b30aa56b2b4d0f865c4b27e4669291ba5e0d0a0705")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-envstats", type=("build", "run"))

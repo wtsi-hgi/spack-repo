@@ -15,7 +15,7 @@ class RPwmenrich(RPackage):
 	bioc = "PWMEnrich" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PWMEnrich_4.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PWMEnrich/PWMEnrich_4.38.0.tar.gz"]
 
-	version("4.38.0", md5="ced56cbfbab381f5736f4f58fe26b9f8")
+	version("4.38.0", sha256="0ef65699faf01b31361fc88efa4e8aba72cbd7471f0d11a987703bbd35de10e8")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

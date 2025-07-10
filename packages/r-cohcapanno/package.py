@@ -15,7 +15,7 @@ class RCohcapanno(RPackage):
 	bioc = "COHCAPanno" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/COHCAPanno_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/COHCAPanno/COHCAPanno_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="78fd4891651a8a62779fe402a13ba6b1")
+	version("1.38.0", sha256="0362bd4a6d984f5748613751d4b525d6580e360d61d60bc625617d4855a10539")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

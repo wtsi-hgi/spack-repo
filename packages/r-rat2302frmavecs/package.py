@@ -15,7 +15,7 @@ class RRat2302frmavecs(RPackage):
 	bioc = "rat2302frmavecs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rat2302frmavecs_0.99.11.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rat2302frmavecs/rat2302frmavecs_0.99.11.tar.gz"]
 
-	version("0.99.11", md5="44d9f00c2f3806899c6605d1ba274066")
+	version("0.99.11", sha256="3186bc3b19f48b1da4dacaafbf34c4804997389b8634f33c1076666a9083c563")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

@@ -15,7 +15,7 @@ class RBiocset(RPackage):
 	bioc = "BiocSet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocSet_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocSet/BiocSet_1.16.1.tar.gz"]
 
-	version("1.16.1", md5="e4724bf36e517a7ef352963200516303")
+	version("1.16.1", sha256="0d1ba2b9632f7bf7b2cc9249843316ed3c3cbcef9af6c57a3cf2bb0cc132b1e2")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

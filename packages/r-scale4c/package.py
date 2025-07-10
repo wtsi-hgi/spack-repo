@@ -15,7 +15,7 @@ class RScale4c(RPackage):
 	bioc = "Scale4C" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Scale4C_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Scale4C/Scale4C_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="7897932085759a05ad185eaec2afcd13")
+	version("1.24.0", sha256="79f62ebf3360618b191ea07a3c2d7fb8494924d90cc36fc22867ee5001f45466")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-smoothie", type=("build", "run"))

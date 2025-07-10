@@ -15,7 +15,7 @@ class RXina(RPackage):
 	bioc = "XINA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/XINA_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/XINA/XINA_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="f6a090d9e94032485c8c42a6c985b223")
+	version("1.20.0", sha256="a3efd333384ed84772da089dce1abd05a6520178a7949ef163186927d717dcb2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mclust", type=("build", "run"))

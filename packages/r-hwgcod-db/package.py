@@ -15,7 +15,7 @@ class RHwgcodDb(RPackage):
 	bioc = "hwgcod.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hwgcod.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hwgcod.db/hwgcod.db_3.4.0.tar.gz"]
 
-	version("3.4.0", md5="a46bf1a242853bbab26351a11b18030a")
+	version("3.4.0", sha256="4b54ced8dd3bc28bdb7a22589e085acb13877f35715e2cae745f30cd484a3e0c")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

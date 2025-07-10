@@ -15,7 +15,7 @@ class RMirna10cdf(RPackage):
 	bioc = "mirna10cdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mirna10cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mirna10cdf/mirna10cdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="814da2a2e298e132f4db0b2e8ab814be")
+	version("2.18.0", sha256="cb43a224c3e5ae7aed471013ada7e78d8f787f1855cc242c573b1cd05b60cf90")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

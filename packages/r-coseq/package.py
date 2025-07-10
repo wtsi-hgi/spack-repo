@@ -15,7 +15,7 @@ class RCoseq(RPackage):
 	bioc = "coseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/coseq_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/coseq/coseq_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="1e4bea8d520a2554f8f1095d6912074b")
+	version("1.26.0", sha256="a83d149e511b5aa3303cd49e5eb37175862828e5c0a376db1facbfe9ff0205b9")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -16,7 +16,7 @@ class RFenr(RPackage):
 	bioc = "fenr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fenr_1.0.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fenr/fenr_1.0.5.tar.gz"]
 
-	version("1.0.5", md5="7452c5f9c400c3a3a3af9a0b26e7585e")
+	version("1.0.5", sha256="bb1e875ce7dfb033d9a45c4bf45f5866860a9d543b983d31efe1550db3a59219")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

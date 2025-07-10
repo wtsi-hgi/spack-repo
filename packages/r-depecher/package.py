@@ -15,7 +15,7 @@ class RDepecher(RPackage):
 	bioc = "DepecheR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DepecheR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DepecheR/DepecheR_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="201fe937f16e843f49fbe35a4ae1ebb6")
+	version("1.18.0", sha256="5ce001eb0e4037d2cfc6f90d5f5ee81b5c6d8d344253c9da2210da5e1e0f6cac")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2@3.1:", type=("build", "run"))

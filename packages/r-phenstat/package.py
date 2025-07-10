@@ -15,7 +15,7 @@ class RPhenstat(RPackage):
 	bioc = "PhenStat" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PhenStat_2.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PhenStat/PhenStat_2.38.0.tar.gz"]
 
-	version("2.38.0", md5="f28cba815b5f6e8b3350c926d1d05907")
+	version("2.38.0", sha256="fcd4fc532d2adfc008024af5d82d4cb78777c1fc0e8d69b75bf0e4702b26f099")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-smoothwin", type=("build", "run"))

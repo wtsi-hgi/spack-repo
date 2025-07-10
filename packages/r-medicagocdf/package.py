@@ -15,7 +15,7 @@ class RMedicagocdf(RPackage):
 	bioc = "medicagocdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/medicagocdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/medicagocdf/medicagocdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="1fbb2e4c070344d18e65f1b3993867db")
+	version("2.18.0", sha256="b8d8740ddc3e8054646e31352b72796bca082f1b694ac350ea0721c6d2319fb2")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

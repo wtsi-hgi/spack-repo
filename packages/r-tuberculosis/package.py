@@ -16,7 +16,7 @@ class RTuberculosis(RPackage):
 	bioc = "tuberculosis" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tuberculosis_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tuberculosis/tuberculosis_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="154cd343b8fba727ecf80a671a6a112d")
+	version("1.8.0", sha256="3f069afbefc4851284fcf292bbc56087632e1e70de1cb0610a9fb74c8f855596")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

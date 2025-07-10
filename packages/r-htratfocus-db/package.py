@@ -15,7 +15,7 @@ class RHtratfocusDb(RPackage):
 	bioc = "htratfocus.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/htratfocus.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/htratfocus.db/htratfocus.db_3.13.0.tar.gz"]
 
-	version("3.13.0", md5="88be90edb1acb31faedde0b66b27a150")
+	version("3.13.0", sha256="e9e421ea6c53342f64ad04a76615e2f30bee570f700f7934bc0fb79a6e73f82c")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

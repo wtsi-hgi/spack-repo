@@ -15,7 +15,7 @@ class REnrichmentbrowser(RPackage):
 	bioc = "EnrichmentBrowser" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EnrichmentBrowser_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EnrichmentBrowser/EnrichmentBrowser_2.32.0.tar.gz"]
 
-	version("2.32.0", md5="fa4ec5a19513178896d60057a26ec6ce")
+	version("2.32.0", sha256="04fb60496346ee2a404c655b807db9a06fd289f4090ddc16f4ba6b78133573d3")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

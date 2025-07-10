@@ -15,7 +15,7 @@ class RTcc(RPackage):
 	bioc = "TCC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TCC_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TCC/TCC_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="e36a17d628a68654296227603e0678da")
+	version("1.42.0", sha256="b3b2a3521b8bfaaf8481babd989b81ff965539204afa1ab20c5465371d30c97b")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-deseq2", type=("build", "run"))

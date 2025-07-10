@@ -15,7 +15,7 @@ class RCeleganscdf(RPackage):
 	bioc = "celeganscdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/celeganscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/celeganscdf/celeganscdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="1098cd99bfc5000bf9858e4a3acaf452")
+	version("2.18.0", sha256="f7743bafe91f4047ed4a28ea3778726e4cd6ad3b0bab218388e07d858802dc28")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

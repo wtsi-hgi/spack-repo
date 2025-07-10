@@ -16,7 +16,7 @@ class RFamagg(RPackage):
 	bioc = "FamAgg" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FamAgg_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FamAgg/FamAgg_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="0169ebe9c05d0b540946e2d111fe6437")
+	version("1.30.0", sha256="1d4977c26fbcf5a06603fcabee605cd8265449328128590667f0c7cde3a77082")
 
 	depends_on("r-kinship2", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

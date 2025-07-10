@@ -25,7 +25,7 @@ class RBiomart(RPackage):
 	bioc = "biomaRt"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biomaRt_2.58.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biomaRt/biomaRt_2.58.2.tar.gz"]
 
-	version("2.58.2", md5="9cd8b1d118761e837a3c037dcfafbfc2")
+	version("2.58.2", sha256="4484dd7ab2a382af67c97d97944ff4bdbdc2ff1fc5f0c4ff23dc4e772431140e")
 	version("2.56.0", commit="91ca89eff52e63c225f7e4eb24b765d08faf3ed9")
 	version("2.54.0", commit="4fb88fb56c684d5678f8288ba05db193e4881758")
 	version("2.52.0", commit="cf4932ac02686da45ea36ff5137fa63cead8860b")

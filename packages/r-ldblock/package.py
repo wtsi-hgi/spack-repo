@@ -15,7 +15,7 @@ class RLdblock(RPackage):
 	bioc = "ldblock" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ldblock_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ldblock/ldblock_1.32.0.tar.gz"]
 
-	version("1.32.0", md5="579c380a003913fde7767f15b47a6692")
+	version("1.32.0", sha256="1730eb16951ce61901bd93c55a5f04d751d4d8b6b57951416242bd9912fb5db1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

@@ -15,7 +15,7 @@ class ROrgPtEgDb(RPackage):
 	bioc = "org.Pt.eg.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Pt.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.Pt.eg.db/org.Pt.eg.db_3.18.0.tar.gz"]
 
-	version("3.18.0", md5="d6672365e68ece6415e2736f40bf096c")
+	version("3.18.0", sha256="cefb919bfa61ebbc931b8b42a02543cd8f35fe41a13f3392faae34225da0603b")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))

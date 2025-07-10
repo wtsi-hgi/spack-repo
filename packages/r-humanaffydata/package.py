@@ -15,7 +15,7 @@ class RHumanaffydata(RPackage):
 	bioc = "HumanAffyData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HumanAffyData_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HumanAffyData/HumanAffyData_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="11341e772169b7141b9bd22161e14417")
+	version("1.28.0", sha256="202bec80cd244e90b2ab3362682b9db18c2c9c1c284e2d7b02c5f02641b6443c")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

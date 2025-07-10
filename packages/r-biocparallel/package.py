@@ -16,7 +16,7 @@ class RBiocparallel(RPackage):
 	bioc = "BiocParallel"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocParallel_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocParallel/BiocParallel_1.36.0.tar.gz"]
 
-	version("1.36.0", md5="a6a331ac453920e713836ddd0de38e25")
+	version("1.36.0", sha256="cbf8af552c7c30c26d8d17876245dad583f712e49e7336ef78aeb70f1c0608a6")
 	version("1.34.0", commit="f3bbc0a2d38da034c50ca1e4704fc4ee99a2dc9e")
 	version("1.32.1", commit="6c85dbad596a74a6d3022173a4a11c6b81a4a2c2")
 	version("1.30.4", commit="1229ebe9f6d8305f9f61e562464f83f9ba86e699")

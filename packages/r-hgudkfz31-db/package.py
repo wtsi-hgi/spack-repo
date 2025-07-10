@@ -15,7 +15,7 @@ class RHgudkfz31Db(RPackage):
 	bioc = "hguDKFZ31.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hguDKFZ31.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hguDKFZ31.db/hguDKFZ31.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="fa3ba493cebdac4253dea8fe5d58452b")
+	version("3.2.3", sha256="596d44fbd5ba386fb6a41eb5a3b3d9d87f5bc24208eec852efa4dddb64e2a0de")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

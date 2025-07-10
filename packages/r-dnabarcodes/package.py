@@ -15,7 +15,7 @@ class RDnabarcodes(RPackage):
 	bioc = "DNABarcodes" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DNABarcodes_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DNABarcodes/DNABarcodes_1.32.0.tar.gz"]
 
-	version("1.32.0", md5="6047e393e89e644fbf9aa4aa5a9faa64")
+	version("1.32.0", sha256="09263a219f974c60eeb384fc391a47d967eac19d6ffe81e8f77c433d4b99a48b")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

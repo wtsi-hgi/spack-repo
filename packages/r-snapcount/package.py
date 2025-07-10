@@ -16,7 +16,7 @@ class RSnapcount(RPackage):
 	bioc = "snapcount" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/snapcount_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/snapcount/snapcount_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="8efa036bfe73acf9c31a279b3c365ae7")
+	version("1.14.0", sha256="0cf9207d607210d18ce0c8240ba0f040cde8c044fb11d673e3435c3f6466227a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

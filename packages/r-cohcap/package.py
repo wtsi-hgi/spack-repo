@@ -15,7 +15,7 @@ class RCohcap(RPackage):
 	bioc = "COHCAP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/COHCAP_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/COHCAP/COHCAP_1.48.0.tar.gz"]
 
-	version("1.48.0", md5="6c7c601f8c8aee626d2fa1a6dd306dca")
+	version("1.48.0", sha256="cdde22c9ed7ff8e2a433e1f8b917194fbedeb112a4c42b1cefe4369aabacebb3")
 
 	depends_on("r-writexls", type=("build", "run"))
 	depends_on("r-cohcapanno", type=("build", "run"))

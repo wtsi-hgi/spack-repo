@@ -16,7 +16,7 @@ class RKidpack(RPackage):
 	bioc = "kidpack" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/kidpack_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/kidpack/kidpack_1.44.0.tar.gz"]
 
-	version("1.44.0", md5="26f5ad5fba1c63156e282d8eac7ac385")
+	version("1.44.0", sha256="335500d961efce7f9f4b23bd4e901264b305d392f35a6541baf82a7933548795")
 
 	depends_on("r@2.6:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RLfa(RPackage):
 	bioc = "lfa" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lfa_2.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lfa/lfa_2.2.0.tar.gz"]
 
-	version("2.2.0", md5="83d3c5671422b432d992834ae675e020")
+	version("2.2.0", sha256="da4a0a2b7dd815a87544c06cb28860fea4601045d308726068f61f210edf3cf7")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-corpcor", type=("build", "run"))

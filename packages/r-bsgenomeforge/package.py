@@ -16,7 +16,7 @@ class RBsgenomeforge(RPackage):
 	bioc = "BSgenomeForge" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BSgenomeForge_1.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BSgenomeForge/BSgenomeForge_1.2.3.tar.gz"]
 
-	version("1.2.3", md5="f6b0c95390692557860c977b1eba0f0c")
+	version("1.2.3", sha256="7b7d568e5bc64d7b29ad6d8e89bf3573561333fcf56b8b5869e2b9543be1b773")
 	version("1.2.1", md5="7a8ad7be8dbfe9034eb38bb87bf92e31")
 
 	depends_on("r@4.3:", type=("build", "run"))

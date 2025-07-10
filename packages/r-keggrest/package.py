@@ -15,7 +15,7 @@ class RKeggrest(RPackage):
 
 	bioc = "KEGGREST"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/KEGGREST_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/KEGGREST/KEGGREST_1.42.0.tar.gz"]
-	version("1.42.0", md5="805cb8808b0ffa6f57999b880337b504")
+	version("1.42.0", sha256="072c3f236d65479afd20ecf83e7b0e32cbd13a6e4c54922bf17b37b6420ccc15")
 	version("1.40.0", commit="1bdb0b57d7e9b708da14d2847c2a17ca35500b21")
 	version("1.38.0", commit="4dfbff9f6662227bd49d64d18a342f469dd88ad3")
 	version("1.36.3", commit="1827cde76863aa80c83264a0dd95514654358df3")

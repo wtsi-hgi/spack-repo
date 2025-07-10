@@ -16,7 +16,7 @@ class RMastr(RPackage):
 	bioc = "mastR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mastR_1.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mastR/mastR_1.2.3.tar.gz"]
 
-	version("1.2.3", md5="e3c3d512fc0082d6c51dab26088b79f7")
+	version("1.2.3", sha256="48b0b1011924056fa1c3414767a51c69413c47ea675c16e00b1ba4594378e020")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

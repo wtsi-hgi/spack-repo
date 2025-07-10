@@ -15,7 +15,7 @@ class RPdZebrafish(RPackage):
 	bioc = "pd.zebrafish" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.zebrafish_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.zebrafish/pd.zebrafish_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="101f09a9d9304d1d8fbcc7f4812897b1")
+	version("3.12.0", sha256="fbf8a96ae7d4b3f3fafbc9642b84f07d0fca1370ca7f9c86db60df50f8f1e73d")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

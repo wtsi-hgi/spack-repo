@@ -16,7 +16,7 @@ class RRecount3(RPackage):
 	bioc = "recount3" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/recount3_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/recount3/recount3_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="0e3b0229faa614fbbc49547e44b342d7", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/recount3_1.12.0.tar.gz")
+	version("1.12.0", sha256="5446e733740000ff9917744d53a731f4bb12f4b802c2ede788f9f1930295c47e", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/recount3_1.12.0.tar.gz")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))

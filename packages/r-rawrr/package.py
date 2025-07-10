@@ -16,7 +16,7 @@ class RRawrr(RPackage):
 	bioc = "rawrr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rawrr_1.10.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rawrr/rawrr_1.10.2.tar.gz"]
 
-	version("1.10.2", md5="42213a8a733115af719162fc1a72d6a1")
+	version("1.10.2", sha256="105fc356152755d3d6ff893a25c198e7b1b94a4ee632281f47a1507df1e8cff3")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("mono", type=("build", "link", "run"))

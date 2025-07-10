@@ -16,7 +16,7 @@ class RTloh(RPackage):
 	bioc = "tLOH" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tLOH_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tLOH/tLOH_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="1693fc28c2855f1af11159ec1051e2df")
+	version("1.10.0", sha256="8d571ef185e1a0bb06ee28c77a498cc4482bae2c4b594d036cfd6e0886bfeb7b")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))

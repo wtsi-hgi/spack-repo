@@ -15,7 +15,7 @@ class RTofsimsdata(RPackage):
 	bioc = "tofsimsData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tofsimsData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tofsimsData/tofsimsData_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="57fe35de7b03ee4f3ca07540949a6b5e")
+	version("1.30.0", sha256="8dfe97fc644d125882393ad9722a9569d88435d457ead0e11daf06b6f214d6a1")
 
 	depends_on("r@3.2:", type=("build", "run"))
 

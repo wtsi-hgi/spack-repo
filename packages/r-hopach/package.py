@@ -16,7 +16,7 @@ class RHopach(RPackage):
 	bioc = "hopach" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hopach_2.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hopach/hopach_2.62.0.tar.gz"]
 
-	version("2.62.0", md5="0310e9a4e3a34dfe2bb4edf0dbb38b16")
+	version("2.62.0", sha256="9a84cf8bdb414ec7a188ee4c4bb4ceed9a47ef6d0534ecabd2889e72cec419ec")
 
 	depends_on("r@2.11:", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))

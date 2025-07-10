@@ -16,7 +16,7 @@ class RRarr(RPackage):
 	bioc = "Rarr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rarr_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rarr/Rarr_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="94af864ae3de3557840993a429944ea2")
+	version("1.2.0", sha256="997592c52d8d0aa11680d0f40df11765d57e65a1f9c5e61671ff4513d31d4cfb")
 
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

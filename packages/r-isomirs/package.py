@@ -15,7 +15,7 @@ class RIsomirs(RPackage):
 	bioc = "isomiRs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/isomiRs_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/isomiRs/isomiRs_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="95b301f966153c00b98359bb6a0986cd")
+	version("1.30.0", sha256="88483aa9d9509faac83a0365993bcc9c38b4df4861bdb4ed1818d80cea51e2d4")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

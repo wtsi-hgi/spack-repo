@@ -17,7 +17,7 @@ class RRots(RPackage):
 	version("1.8.0", commit="02e3c6455bb1afe7c4cc59ad6d4d8bae7b01428b")
 	version("1.6.0", commit="3567ac1142ba97770b701ee8e5f9e3e6c781bd56")
 	version("1.4.0", commit="2e656514a4bf5a837ee6e14ce9b28a61dab955e7")
-	version("1.30.0", md5="02d51e24e501790ad3049c1bb5b3f90b")
+	version("1.30.0", sha256="e66e3e66db24cbe8c324a68db09d6e00638d44337d88d5761c5a6e80ebe0a5fd")
 	version("1.28.0", commit="032cb97ed6fe303758856c669a4f63fb9e43d124")
 	version("1.26.0", commit="8bb45fe78779583ae4d30cf0dc3af0d8de405fdf")
 	version("1.24.0", commit="372e4623b39f585d4196d21164436c1ba013173f")

@@ -15,7 +15,7 @@ class RRnadecay(RPackage):
 	bioc = "RNAdecay" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNAdecay_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNAdecay/RNAdecay_1.22.2.tar.gz"]
 
-	version("1.22.2", md5="5c17b35bac4e238886bf0631aaaa460b")
+	version("1.22.2", sha256="c7ee3059b07ee28c2814ee9104e02259f5c53681cf04de9a311bc81a82c0ebdb")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

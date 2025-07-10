@@ -16,7 +16,7 @@ class RCocoa(RPackage):
 	bioc = "COCOA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/COCOA_2.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/COCOA/COCOA_2.16.0.tar.gz"]
 
-	version("2.16.0", md5="6525a033b4b6ab78aa4ecb8e3f35b6e3")
+	version("2.16.0", sha256="50626fc1ee81807188a4fcee8e8432062c7ccce946537aa2dcb84e8485f0a248")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

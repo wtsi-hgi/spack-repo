@@ -16,7 +16,7 @@ class RScshapes(RPackage):
 	bioc = "scShapes" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scShapes_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scShapes/scShapes_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="5a4954c320f7b1f30f8fbff6e9f5ad91")
+	version("1.8.0", sha256="89fb747a14ef960f2d6606a39e1cfab9ab34ab326f6a87b7108b43315eee3d9a")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

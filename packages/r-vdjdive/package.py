@@ -16,7 +16,7 @@ class RVdjdive(RPackage):
 	bioc = "VDJdive" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VDJdive_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VDJdive/VDJdive_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="938051376344953e02e510f65d156939")
+	version("1.4.0", sha256="6ebac64d0ec90c9042d47637f18e24749bfb75c0fd3564b0d3ff1c096e7ca6e9")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

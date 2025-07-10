@@ -16,7 +16,7 @@ class RQcmetrics(RPackage):
 	bioc = "qcmetrics" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qcmetrics_1.40.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qcmetrics/qcmetrics_1.40.1.tar.gz"]
 
-	version("1.40.1", md5="909e62b8c2d23a07e083f04e734ef61b")
+	version("1.40.1", sha256="93bef8a9ec601a0e9169dbc1defec443736f7eec2e9356393dd60f5a7b90e327")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

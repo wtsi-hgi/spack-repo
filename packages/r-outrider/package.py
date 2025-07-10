@@ -16,7 +16,7 @@ class ROutrider(RPackage):
 	bioc = "OUTRIDER" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OUTRIDER_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OUTRIDER/OUTRIDER_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="92609d3ce486cdf55004d26887a9494d")
+	version("1.20.0", sha256="cc932fd6bfa5007137d832ccd8ff5dc0be00cd420c34cec728c033adf0f43afb")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

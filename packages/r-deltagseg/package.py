@@ -15,7 +15,7 @@ class RDeltagseg(RPackage):
 	bioc = "deltaGseg" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/deltaGseg_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/deltaGseg/deltaGseg_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="e92ca25a67a9250f26c6263043c60ee2")
+	version("1.42.0", sha256="ae5990a978668b59fd31849ef395fedca1c6b641a7acf22b51440253195a0217")
 
 	depends_on("r@2.15.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

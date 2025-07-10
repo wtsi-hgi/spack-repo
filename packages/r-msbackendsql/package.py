@@ -16,7 +16,7 @@ class RMsbackendsql(RPackage):
 	bioc = "MsBackendSql" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsBackendSql_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsBackendSql/MsBackendSql_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="c5d7c6ce9c877e7c0bbbc1b63a71eb70")
+	version("1.2.0", sha256="40c5538d884b82603ecb7f1b0e0fa2ad49ba4849eda48ad6be0f7af6ae2788c8")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-spectra@1.9.12:", type=("build", "run"))

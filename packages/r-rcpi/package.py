@@ -16,7 +16,7 @@ class RRcpi(RPackage):
 	bioc = "Rcpi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rcpi_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rcpi/Rcpi_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="2f3697ca19200881f65d7d37f3d34e33")
+	version("1.38.0", sha256="5a085bf6ee3b958a53a807ae558c8004f29adde466437edd92bc7984b7e0cbf2")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

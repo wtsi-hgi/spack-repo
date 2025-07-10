@@ -16,7 +16,7 @@ class RCytoglmm(RPackage):
 	bioc = "CytoGLMM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CytoGLMM_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CytoGLMM/CytoGLMM_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="3a4b95062a82da6afe217f20ef905460")
+	version("1.10.0", sha256="b9617da7bdcfc0ca2a9908085cedb2f143ce3c2f670fdd2c579894221894923b")
 
 	depends_on("r-biocparallel", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

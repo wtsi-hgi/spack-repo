@@ -15,7 +15,7 @@ class RTxdbBtaurusUcscBostau9Refgene(RPackage):
 	bioc = "TxDb.Btaurus.UCSC.bosTau9.refGene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Btaurus.UCSC.bosTau9.refGene_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Btaurus.UCSC.bosTau9.refGene/TxDb.Btaurus.UCSC.bosTau9.refGene_3.10.0.tar.gz"]
 
-	version("3.10.0", md5="fe443d123b0b788e1e450f4e60036788")
+	version("3.10.0", sha256="099319772d95999f63318f78e23dc536a107fe35321a2997dac206a9944cf8ec")
 
 	depends_on("r-genomicfeatures@1.37.6:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

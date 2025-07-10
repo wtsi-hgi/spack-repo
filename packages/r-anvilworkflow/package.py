@@ -15,7 +15,7 @@ class RAnvilworkflow(RPackage):
 	bioc = "AnVILWorkflow" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnVILWorkflow_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnVILWorkflow/AnVILWorkflow_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="af890e3cea3c42346ec887603ba12e40")
+	version("1.2.0", sha256="b170a2d4b3389a7f5726135596ace4382cf4886cb0c735c20603c4386fbddb97")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-anvil", type=("build", "run"))

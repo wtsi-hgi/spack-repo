@@ -16,7 +16,7 @@ class RDupradar(RPackage):
 	bioc = "dupRadar" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dupRadar_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dupRadar/dupRadar_1.32.0.tar.gz"]
 
-	version("1.32.0", md5="306ba6ddb1786eb7ec5e6cb4bc15562e")
+	version("1.32.0", sha256="40fc1818e109f4649a1f4c97c6c377355b5f4b5a1c2126ef16ea6b7789f3f018")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-rsubread@1.14.1:", type=("build", "run"))

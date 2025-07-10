@@ -16,7 +16,7 @@ class RHpaanalyze(RPackage):
 	bioc = "HPAanalyze" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HPAanalyze_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HPAanalyze/HPAanalyze_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="0916d6c86a23a3c136b3d0f1de2a25f4")
+	version("1.20.0", sha256="1f36584e878c2fc704d4e143df33e38061b3c2a5073eef4eb5db51b774b254f7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

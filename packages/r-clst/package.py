@@ -15,7 +15,7 @@ class RClst(RPackage):
 	bioc = "clst" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clst_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clst/clst_1.50.0.tar.gz"]
 
-	version("1.50.0", md5="5988cf1c0b5207d2f78f75dbe6f2b467")
+	version("1.50.0", sha256="824809724263d7dfbe27e8c153d4e2dee7b02bd8428090a712d0fcacd9947251")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-roc", type=("build", "run"))

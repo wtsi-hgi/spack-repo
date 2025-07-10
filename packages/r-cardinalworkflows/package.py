@@ -15,7 +15,7 @@ class RCardinalworkflows(RPackage):
 	bioc = "CardinalWorkflows" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CardinalWorkflows_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CardinalWorkflows/CardinalWorkflows_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="54c51a2ec2f20f96ad9e60c16eeb2ccb")
+	version("1.34.0", sha256="4b8f208696ac00fd875aabdf9a631a25022546e967dec3493d4a7813a7ffdf33")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-cardinal", type=("build", "run"))

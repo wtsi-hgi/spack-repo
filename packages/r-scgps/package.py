@@ -15,7 +15,7 @@ class RScgps(RPackage):
 	bioc = "scGPS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scGPS_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scGPS/scGPS_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="5d11fe3a4af0d56d3028d97c6090ccfb")
+	version("1.16.0", sha256="3a30413a462684cd657530d996dc35dfdb79361d1fc7eb41900e868bfc1ae4f6")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

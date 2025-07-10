@@ -15,7 +15,7 @@ class RSeqbias(RPackage):
 	bioc = "seqbias" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqbias_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqbias/seqbias_1.50.0.tar.gz"]
 
-	version("1.50.0", md5="0482c079ead497bdddd61be6bac445f7")
+	version("1.50.0", sha256="e1caba756e33c602c64d59a60f65b0d2396c0d42857593d48430f85250bceda2")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-genomicranges@0.1:", type=("build", "run"))

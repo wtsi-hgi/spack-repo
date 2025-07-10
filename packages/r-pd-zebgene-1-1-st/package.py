@@ -15,7 +15,7 @@ class RPdZebgene11St(RPackage):
 	bioc = "pd.zebgene.1.1.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.zebgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.zebgene.1.1.st/pd.zebgene.1.1.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="d87028cd9024bc33be518635cf2f48fc")
+	version("3.12.0", sha256="bafb4b37afc8ef08a8423448cb1ac4454589912e16fda7d5c4aea1434f9f4377")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

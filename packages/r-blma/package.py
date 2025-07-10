@@ -15,7 +15,7 @@ class RBlma(RPackage):
 	bioc = "BLMA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BLMA_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BLMA/BLMA_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="a09cb94872d4a064b9b6300945795cdf")
+	version("1.26.0", sha256="6266555a3692e93f261ef3fac295917349759c8b5629ff79a7d3d4f6fa6c71ab")
 
 	depends_on("r-rontotools", type=("build", "run"))
 	depends_on("r-gsa", type=("build", "run"))

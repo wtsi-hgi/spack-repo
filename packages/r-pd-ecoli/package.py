@@ -15,7 +15,7 @@ class RPdEcoli(RPackage):
 	bioc = "pd.ecoli" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.ecoli_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.ecoli/pd.ecoli_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="077e91b2567a32780305f0fb6b126fe9")
+	version("3.12.0", sha256="4f95cd0bcdea5942e9b542abdd9af78b5c3728afd8b038d63de9f77219882556")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

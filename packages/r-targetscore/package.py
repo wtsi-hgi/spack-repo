@@ -16,7 +16,7 @@ class RTargetscore(RPackage):
 	bioc = "TargetScore" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TargetScore_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TargetScore/TargetScore_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="92d3b6ca138c6c3081262a758ec63766")
+	version("1.40.0", sha256="11933f9b49e95faf18c2ad03a541c1d85920ebac0fba5df3ea30fbe473eb3653")
 
 	depends_on("r-pracma", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

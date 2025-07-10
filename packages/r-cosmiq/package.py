@@ -16,7 +16,7 @@ class RCosmiq(RPackage):
 	bioc = "cosmiq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cosmiq_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cosmiq/cosmiq_1.36.0.tar.gz"]
 
-	version("1.36.0", md5="ae02870f3759e09bb2c8f86d38306f01")
+	version("1.36.0", sha256="e91d9d53931954baaa3dcb31e21bf7e37d570facfbb0cdb0d878d9e023ff2cd7")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

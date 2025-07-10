@@ -15,7 +15,7 @@ class RPdMargene10St(RPackage):
 	bioc = "pd.margene.1.0.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.margene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.margene.1.0.st/pd.margene.1.0.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="f670b192e4b453f13bb7cae154b5de42")
+	version("3.12.0", sha256="ccd9bd6dcfb7944729d9acc349825bae7aa4f1df5b9e14e4b72c84c2e12994e8")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

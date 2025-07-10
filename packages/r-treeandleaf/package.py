@@ -15,7 +15,7 @@ class RTreeandleaf(RPackage):
 	bioc = "TreeAndLeaf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TreeAndLeaf_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TreeAndLeaf/TreeAndLeaf_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="066beb0c7f15d3b6a853bcb68c682f73")
+	version("1.14.0", sha256="61dda9ec394afa8d83e99895d73201b9dcd1f9ce2437f8ca05b651f96c5e368c")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-reder@1.40.4:", type=("build", "run"))

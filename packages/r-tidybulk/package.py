@@ -16,7 +16,7 @@ class RTidybulk(RPackage):
 	bioc = "tidybulk" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tidybulk_1.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tidybulk/tidybulk_1.14.3.tar.gz"]
 
-	version("1.14.3", md5="8f8daf7b19b79ec00c57b12a8ba3b1f0")
+	version("1.14.3", sha256="d29378f88a36325ec2510dd8b44c6255736d377e8fade277cf3c82d3b7e9ec36")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ttservice@0.3.6:", type=("build", "run"))

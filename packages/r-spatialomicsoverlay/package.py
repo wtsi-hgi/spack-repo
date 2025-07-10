@@ -15,7 +15,7 @@ class RSpatialomicsoverlay(RPackage):
 	bioc = "SpatialOmicsOverlay" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpatialOmicsOverlay_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpatialOmicsOverlay/SpatialOmicsOverlay_1.2.1.tar.gz"]
 
-	version("1.2.1", md5="149a968f19aa22b57caca243b3480378")
+	version("1.2.1", sha256="67fcd1dee28fd5da866b70357eac48560a729790bceb0e2e37b1f72fc6c8bc6a")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

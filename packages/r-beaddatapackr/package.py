@@ -15,5 +15,5 @@ class RBeaddatapackr(RPackage):
 	bioc = "BeadDataPackR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BeadDataPackR_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BeadDataPackR/BeadDataPackR_1.54.0.tar.gz"]
 
-	version("1.54.0", md5="b1e73395e4f18af4b799a1f447487a87")
+	version("1.54.0", sha256="bf8334ad6e6b7a7df914ceb0e4331fac47f65ee0a9ffa9d3face616cf86dd769")
 

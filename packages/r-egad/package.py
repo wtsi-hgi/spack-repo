@@ -15,7 +15,7 @@ class REgad(RPackage):
 	bioc = "EGAD" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EGAD_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EGAD/EGAD_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="9a76ae26d942a1e8b8c8764b80c69927")
+	version("1.30.0", sha256="a53893dd4859052a7a2124f6a07da5e0961ee2bd35a20511dde1e59a10813b49")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

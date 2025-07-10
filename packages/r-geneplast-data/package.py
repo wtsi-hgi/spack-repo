@@ -15,7 +15,7 @@ class RGeneplastData(RPackage):
 	bioc = "geneplast.data" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/geneplast.data_0.99.9.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/geneplast.data/geneplast.data_0.99.9.tar.gz"]
 
-	version("0.99.9", md5="762508b9b49ce5a16474adcfcacbf395")
+	version("0.99.9", sha256="1192673d63a98841285605a89bc75687a057378d77d0a48b49cf4d36499f61c4")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

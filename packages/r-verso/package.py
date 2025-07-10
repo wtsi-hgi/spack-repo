@@ -16,7 +16,7 @@ class RVerso(RPackage):
 	bioc = "VERSO" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VERSO_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VERSO/VERSO_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="dcc0220c3f10bb1efaaa360448547771")
+	version("1.12.0", sha256="f2c5932e51dcde52fa4e2cd969d1f7fc8e5adf17e0d1d0fef164f30af7feadf1")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-data-tree", type=("build", "run"))

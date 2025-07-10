@@ -15,6 +15,6 @@ class RVulcandata(RPackage):
 	bioc = "vulcandata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/vulcandata_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/vulcandata/vulcandata_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="cd95ea7ac7f2b9edfd46c1ffccb7c3c1")
+	version("1.24.0", sha256="99b2f09af6adc8f1d99a68400ab377e298554837a99947ec6a55af7339ef8ba3")
 
 

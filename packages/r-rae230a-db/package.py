@@ -15,7 +15,7 @@ class RRae230aDb(RPackage):
 	bioc = "rae230a.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rae230a.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rae230a.db/rae230a.db_3.13.0.tar.gz"]
 
-	version("3.13.0", md5="a2a80af1669fc038a64effbf5a4b246d")
+	version("3.13.0", sha256="fea78cab0e2527d662b0548a9cf47a2b89ecde5da0c9fab24aa1b08f7ae5ae8e")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

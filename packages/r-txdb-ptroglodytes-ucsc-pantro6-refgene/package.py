@@ -15,7 +15,7 @@ class RTxdbPtroglodytesUcscPantro6Refgene(RPackage):
 	bioc = "TxDb.Ptroglodytes.UCSC.panTro6.refGene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Ptroglodytes.UCSC.panTro6.refGene_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Ptroglodytes.UCSC.panTro6.refGene/TxDb.Ptroglodytes.UCSC.panTro6.refGene_3.10.0.tar.gz"]
 
-	version("3.10.0", md5="48a88973fe0e5117cadd5c816a46e6e9")
+	version("3.10.0", sha256="eac7feb705086352fae0b3f317db90596282735db9fe24baed7322e2f9c1947c")
 
 	depends_on("r-genomicfeatures@1.37.6:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

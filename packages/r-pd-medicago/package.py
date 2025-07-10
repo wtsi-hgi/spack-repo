@@ -15,7 +15,7 @@ class RPdMedicago(RPackage):
 	bioc = "pd.medicago" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.medicago_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.medicago/pd.medicago_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="0e3f00777919374619a9dc8244167068")
+	version("3.12.0", sha256="b73090efe54af9c4a59108ee293e949bbd28dd494152059e8f9e8096b20ca8f2")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

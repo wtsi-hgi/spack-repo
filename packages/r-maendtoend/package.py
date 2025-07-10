@@ -16,7 +16,7 @@ class RMaendtoend(RPackage):
 	bioc = "maEndToEnd" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/maEndToEnd_2.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/maEndToEnd/maEndToEnd_2.22.1.tar.gz"]
 
-	version("2.22.1", md5="0cdb069158beaed0ba62cdb766293916")
+	version("2.22.1", sha256="48e406d4d5e14e69395e0d6869ed2757c124b3c305405130b42527b832a67bd4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

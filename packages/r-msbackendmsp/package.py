@@ -16,7 +16,7 @@ class RMsbackendmsp(RPackage):
 	bioc = "MsBackendMsp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsBackendMsp_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsBackendMsp/MsBackendMsp_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="805d831547106b2f232bb9eda75172bc")
+	version("1.6.0", sha256="9e748bd8066416c0c2b9f8ba39cd3253ce755c0e45f6af6ae5eb095b9fa666fc")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-spectra@1.5.14:", type=("build", "run"))

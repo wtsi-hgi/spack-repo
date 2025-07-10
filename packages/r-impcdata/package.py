@@ -15,7 +15,7 @@ class RImpcdata(RPackage):
 	bioc = "IMPCdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IMPCdata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IMPCdata/IMPCdata_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="c4a243d4a15f680abfb5d61a951c620d")
+	version("1.38.0", sha256="d56bd3aa0e47be147b6160f7b69737a711da6c4ef0075c539aff1b125d499872")
 
 	depends_on("r@2.3:", type=("build", "run"))
 	depends_on("r-rjson", type=("build", "run"))

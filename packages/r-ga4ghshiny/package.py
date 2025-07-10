@@ -16,7 +16,7 @@ class RGa4ghshiny(RPackage):
 	bioc = "GA4GHshiny" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GA4GHshiny_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GA4GHshiny/GA4GHshiny_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="629ca5d338b8435b238169892016d447")
+	version("1.24.0", sha256="2e8d27e0753a1723b9255f4e38e6396730015c983d4c1e5aa201656624169517")
 
 	depends_on("r-ga4ghclient", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

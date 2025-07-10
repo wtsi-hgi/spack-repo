@@ -15,7 +15,7 @@ class RHgug4845aDb(RPackage):
 	bioc = "hgug4845a.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgug4845a.db_0.0.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgug4845a.db/hgug4845a.db_0.0.3.tar.gz"]
 
-	version("0.0.3", md5="46133d7bcb6d8c24c026304e8ddd150d")
+	version("0.0.3", sha256="464f1ea84aa09ec922dbfbe6050fc88e4ba68cba8be2e0ba05c44f6facb063a4")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -15,7 +15,7 @@ class RFmrs(RPackage):
 	bioc = "fmrs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fmrs_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fmrs/fmrs_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="ccf41504ab27d93464e555b363ef406a")
+	version("1.12.0", sha256="6a9566cda423e834136eed456b6f702de7ed37c7624b06656d60417b793e57e3")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

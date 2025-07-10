@@ -15,7 +15,7 @@ class RWavcluster(RPackage):
 	bioc = "wavClusteR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/wavClusteR_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/wavClusteR/wavClusteR_2.36.0.tar.gz"]
 
-	version("2.36.0", md5="9177c657b31b1abaac94079e658a9c18")
+	version("2.36.0", sha256="b28cb19ca9787746506016338ddb64049533014b5454d55e1787024567984bf8")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-genomicranges@1.31.8:", type=("build", "run"))

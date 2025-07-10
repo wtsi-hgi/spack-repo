@@ -15,7 +15,7 @@ class RPsygenet2r(RPackage):
 	bioc = "psygenet2r" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/psygenet2r_1.34.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/psygenet2r/psygenet2r_1.34.1.tar.gz"]
 
-	version("1.34.1", md5="51b29db3c3ced902f533a4fc6b6330c2")
+	version("1.34.1", sha256="85aed0f1e77da2fc7ba3ef62a07e22605dbc7dce90398a36a009b96d8efc1223")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))

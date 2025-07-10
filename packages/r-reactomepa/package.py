@@ -16,7 +16,7 @@ class RReactomepa(RPackage):
 	bioc = "ReactomePA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ReactomePA_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ReactomePA/ReactomePA_1.46.0.tar.gz"]
 
-	version("1.46.0", md5="c31f563d1848fd0bafdbedb6b7f9bb66")
+	version("1.46.0", sha256="4cf764415b9361d776e57a5ebed52c783a79e8adda1dd851ded14fe62be5d44d")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

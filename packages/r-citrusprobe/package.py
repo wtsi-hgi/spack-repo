@@ -15,7 +15,7 @@ class RCitrusprobe(RPackage):
 	bioc = "citrusprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/citrusprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/citrusprobe/citrusprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="259b114f96d5307c447d000bd27a7d15")
+	version("2.18.0", sha256="07ad0cd13bbe36fb2336efc3c025c8db5badb0d77c0449f4e39d991158e4c12d")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

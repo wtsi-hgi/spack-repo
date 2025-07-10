@@ -16,7 +16,7 @@ class RScdd(RPackage):
 	bioc = "scDD" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDD_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scDD/scDD_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="3c95209683b09f0584ab315a6fc1e779")
+	version("1.26.0", sha256="78bd6f02f2a1e7acca0be327f635abd5c79071527182f119431bf1c910d61f96")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-fields", type=("build", "run"))

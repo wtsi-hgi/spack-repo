@@ -15,7 +15,7 @@ class RTranscriptr(RPackage):
 	bioc = "transcriptR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/transcriptR_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/transcriptR/transcriptR_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="a60b381f153539a74fa743f4f5edac43")
+	version("1.30.0", sha256="70e109d46c606675e513d54c387427c53b6044a0fba8765c7bf54aeab55074d1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

@@ -16,7 +16,7 @@ class RSevenbridges(RPackage):
 	bioc = "sevenbridges" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sevenbridges_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sevenbridges/sevenbridges_1.32.0.tar.gz"]
 
-	version("1.32.0", md5="1c204add9c56d7518a5362b99111ec18")
+	version("1.32.0", sha256="2b27742601283e8422386ff8566b9b04222579984375ddaf965112a34ed61211")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

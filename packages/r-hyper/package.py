@@ -16,7 +16,7 @@ class RHyper(RPackage):
 	bioc = "hypeR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hypeR_2.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hypeR/hypeR_2.0.0.tar.gz"]
 
-	version("2.0.0", md5="d2de417437ab81645e7d4702021f349f")
+	version("2.0.0", sha256="1fd5c05c33c455c5530ef4d8e9f5b809cea52b07b1623186132f09b93099b32b")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

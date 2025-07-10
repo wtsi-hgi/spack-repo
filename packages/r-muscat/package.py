@@ -16,7 +16,7 @@ class RMuscat(RPackage):
 	bioc = "muscat" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/muscat_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/muscat/muscat_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="ee69286717f8d129ce59fb554c1c0994")
+	version("1.16.0", sha256="c3a36c419561f7c63dcd42dbfdaaf2bde8f8f13b5869e1c75a5d3acb73ca5a6d")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

@@ -16,7 +16,7 @@ class RConsensusseeker(RPackage):
 	bioc = "consensusSeekeR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/consensusSeekeR_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/consensusSeekeR/consensusSeekeR_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="e752cec43fa487cd071a27a1f955b17e")
+	version("1.30.0", sha256="cea26f56c9937bea8bd40cb9cf619a8621c4f7aaeda37df9f49b4bb2782ebb35")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

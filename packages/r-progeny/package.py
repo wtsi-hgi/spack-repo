@@ -16,7 +16,7 @@ class RProgeny(RPackage):
 	bioc = "progeny" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/progeny_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/progeny/progeny_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="9798ea9424f4115b980496038619f009")
+	version("1.24.0", sha256="14b3f8e2ff46459f5c5bccc962edd38e2068b1fbff62878881ebf4ea44e48fde")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

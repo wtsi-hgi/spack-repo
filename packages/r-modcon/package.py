@@ -16,7 +16,7 @@ class RModcon(RPackage):
 	bioc = "ModCon" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ModCon_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ModCon/ModCon_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="bdb0634e890917a01325519cf6e53f90")
+	version("1.10.0", sha256="5c22734c752cc7998326b4be8eb5041e782d9c15fdc51c2168f4ce0d6f413f9d")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r@4.1:", type=("build", "run"))

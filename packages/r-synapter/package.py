@@ -16,7 +16,7 @@ class RSynapter(RPackage):
 	bioc = "synapter" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/synapter_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/synapter/synapter_2.26.0.tar.gz"]
 
-	version("2.26.0", md5="a6c9ade32fbe35d5cb85adc0e9a5322c")
+	version("2.26.0", sha256="03cd1fb5c89df4c1bcb5f6937086fa07a76d04a89023854bf42344ab95379f31")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-msnbase@2.1.2:", type=("build", "run"))

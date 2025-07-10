@@ -15,7 +15,7 @@ class RBodymaprat(RPackage):
 	bioc = "bodymapRat" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/bodymapRat_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/bodymapRat/bodymapRat_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="fc575d7f33dd1ee73f1860fb076a840b")
+	version("1.18.0", sha256="068ece05619032c39273622f90904a98cc51a21bf5da850b06149935fb36d8e9")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -16,7 +16,7 @@ class RBarcodetrackr(RPackage):
 	bioc = "barcodetrackR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/barcodetrackR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/barcodetrackR/barcodetrackR_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="34e3b62fbe85f743278fba96cfc8c618")
+	version("1.10.0", sha256="096ac951ed4c2259c9bdd60e9d7308955b88418dad6b5cfd116fb8a77033b7f0")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))

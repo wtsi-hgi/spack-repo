@@ -15,7 +15,7 @@ class RMguatlas5kDb(RPackage):
 	bioc = "mguatlas5k.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mguatlas5k.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mguatlas5k.db/mguatlas5k.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="826093fe7228c08962aff36ad89af28e")
+	version("3.2.3", sha256="39b9c102c6d1cc771183cfeb0c19565acaac1d6d642481f035805d9eb2009c22")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

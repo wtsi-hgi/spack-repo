@@ -20,7 +20,7 @@ class RSparsearray(RPackage):
     ]
 
     version("1.8.0", tag="RELEASE_3_21")
-    version("1.2.4", md5="42ba66c3146b623250558daa44adf389")
+    version("1.2.4", sha256="7113ab296a0603a39b21caf6bef9c8eaf598719230b75822427701011e92e13f")
 
     depends_on("r@4.3:", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))

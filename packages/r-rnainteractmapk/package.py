@@ -15,7 +15,7 @@ class RRnainteractmapk(RPackage):
 	bioc = "RNAinteractMAPK" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RNAinteractMAPK_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RNAinteractMAPK/RNAinteractMAPK_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="c60bb748ed7dc37d409f5dde69354074")
+	version("1.40.0", sha256="522ac78d715b44bd850d6e88475db237cb68a29a036b0de4875fdc1ec759ab68")
 
 	depends_on("r@2.12:", type=("build", "run"))
 	depends_on("r-sparselda", type=("build", "run"))

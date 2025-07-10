@@ -16,7 +16,7 @@ class RProteodisco(RPackage):
 	bioc = "ProteoDisco" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ProteoDisco_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ProteoDisco/ProteoDisco_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="f69597248b6cbbdb2c1029a1dd3b39cd")
+	version("1.8.0", sha256="86b39e65d28ae87a906a56fa79c5396518c3e547378717e84e910d32eb39a409")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.38:", type=("build", "run"))

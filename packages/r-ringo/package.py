@@ -15,7 +15,7 @@ class RRingo(RPackage):
 	bioc = "Ringo" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Ringo_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Ringo/Ringo_1.66.0.tar.gz"]
 
-	version("1.66.0", md5="2aa9ffb65c3d24fed5141f139f8721ab")
+	version("1.66.0", sha256="adc7f824026aff62b36a71827ef815e11d4cb92a94762e0320248649da5400b2")
 
 	depends_on("r-biobase@1.14.1:", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

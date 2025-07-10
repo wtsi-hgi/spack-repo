@@ -16,7 +16,7 @@ class RTweedeseq(RPackage):
 	bioc = "tweeDEseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tweeDEseq_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tweeDEseq/tweeDEseq_1.48.0.tar.gz"]
 
-	version("1.48.0", md5="1a919ba1b3c5709068bc126336b77826")
+	version("1.48.0", sha256="b7b103104b9784d9b6cc7ca37781c97a1bfd1ef358c207ea8af2d2bead9be655")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

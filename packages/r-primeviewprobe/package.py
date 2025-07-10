@@ -15,7 +15,7 @@ class RPrimeviewprobe(RPackage):
 	bioc = "primeviewprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/primeviewprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/primeviewprobe/primeviewprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="87cc56a8da4fb742ab1558ce1d3d26cc")
+	version("2.18.0", sha256="0fd71d332fda432ea11a09ddb185f2d71ac9af2fb2314c0ee2b6c398d021804f")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

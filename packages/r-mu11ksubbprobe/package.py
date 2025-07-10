@@ -15,7 +15,7 @@ class RMu11ksubbprobe(RPackage):
 	bioc = "mu11ksubbprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mu11ksubbprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mu11ksubbprobe/mu11ksubbprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="28d162e18e4e16e3c6db47195d2ea0ac")
+	version("2.18.0", sha256="b04b483e16251b59e618fb406075b566697018c398781fc5271970da695e338d")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RVenndetail(RPackage):
 	bioc = "VennDetail" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VennDetail_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VennDetail/VennDetail_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="be9c3506e9707fe42642ea413c0873a6")
+	version("1.18.0", sha256="b9eb5781c29e9d24a539dcf671b4f79aba8952538762612a911252711b888327")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))

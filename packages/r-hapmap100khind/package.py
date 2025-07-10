@@ -15,6 +15,6 @@ class RHapmap100khind(RPackage):
 	bioc = "hapmap100khind" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hapmap100khind_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/hapmap100khind/hapmap100khind_1.44.0.tar.gz"]
 
-	version("1.44.0", md5="0168028295626d811e305d4008ce9996")
+	version("1.44.0", sha256="cb270f7155f0a5615767aea526134445ecc0499fec95def17805b58c1e71fbe3")
 
 

@@ -15,7 +15,7 @@ class RStjudem(RPackage):
 	bioc = "stjudem" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/stjudem_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/stjudem/stjudem_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="4c6868a60726df51408834a227e551bf")
+	version("1.42.0", sha256="4cfcadac6078357bf2cb2d90345b92363506eeec7f1f8fe994255385d5de9b5d")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

@@ -15,7 +15,7 @@ class RHugene10StV1frmavecs(RPackage):
 	bioc = "hugene.1.0.st.v1frmavecs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hugene.1.0.st.v1frmavecs_1.1.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hugene.1.0.st.v1frmavecs/hugene.1.0.st.v1frmavecs_1.1.0.tar.gz"]
 
-	version("1.1.0", md5="711a69e6fa6dd3737a90615222416dfc")
+	version("1.1.0", sha256="0a14faa4c165edbce90a15ebbab8ffcd753dea222cc300131c34ba336a2d934b")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

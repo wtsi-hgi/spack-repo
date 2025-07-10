@@ -15,7 +15,7 @@ class RGeofastq(RPackage):
 	bioc = "GEOfastq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEOfastq_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEOfastq/GEOfastq_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="339bd0c2f6a3f505457fc436997965a6")
+	version("1.10.0", sha256="864fe148c8eca35c94b1212945c193701053cb1335632e0a52f5fb300a2e7d48")
 
 	depends_on("r-xml2", type=("build", "run"))
 	depends_on("r-rvest", type=("build", "run"))

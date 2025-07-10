@@ -15,7 +15,7 @@ class RMouse4302cdf(RPackage):
 	bioc = "mouse4302cdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mouse4302cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mouse4302cdf/mouse4302cdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="bda3463613f958de35c58777db05cec2")
+	version("2.18.0", sha256="8ceb1679dda78943591ccc86c3214d8e09ed18e1fd945eab13da7dd489aafed6")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

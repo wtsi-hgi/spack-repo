@@ -16,7 +16,7 @@ class RGrohmm(RPackage):
 	bioc = "groHMM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/groHMM_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/groHMM/groHMM_1.36.0.tar.gz"]
 
-	version("1.36.0", md5="0b1077948ddc9895c57188ca2560bc10")
+	version("1.36.0", sha256="7813bef49b4dc17e92365affafc60f81594f1337808b6b5dbf1eef23ef6a2b96")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

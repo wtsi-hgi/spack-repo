@@ -16,7 +16,7 @@ class RUncoverapplib(RPackage):
 	bioc = "uncoverappLib" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/uncoverappLib_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/uncoverappLib/uncoverappLib_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="2aa395f92e95d5ff7e67612c6a2c0021")
+	version("1.12.0", sha256="4e71ab29e25e8173848de752e41c5b79043293fd16d3b4905e50239a10738209")
 
 	depends_on("r-markdown", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

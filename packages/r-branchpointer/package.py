@@ -15,7 +15,7 @@ class RBranchpointer(RPackage):
 	bioc = "branchpointer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/branchpointer_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/branchpointer/branchpointer_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="7a62abd020843736b7ea125ffc4a56e0")
+	version("1.28.0", sha256="737c4c9b0b15398d76c07c258a764f1ff455e3239faa56b6adce4f686d4a9b80")
 
 	depends_on("r-caret", type=("build", "run"))
 	depends_on("r@3.4:", type=("build", "run"))

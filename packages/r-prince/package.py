@@ -15,7 +15,7 @@ class RPrince(RPackage):
 	bioc = "PrInCE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PrInCE_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PrInCE/PrInCE_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="98e7e0b9a7e620e0e4ab55436b5c289b")
+	version("1.18.0", sha256="a6629b7d0779ac899df81d5a7db12b32c6955f9a3734e2e8f481f3366ccdfa63")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-purrr@0.2.4:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RPdChigene10St(RPackage):
 	bioc = "pd.chigene.1.0.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.chigene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.chigene.1.0.st/pd.chigene.1.0.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="e37cb047678fabb1801109d4efd16773")
+	version("3.12.0", sha256="10a143ca046fccd80cb8ef336de6ba5300cb241d6a6c2da3498ababc427fae6a")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

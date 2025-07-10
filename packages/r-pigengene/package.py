@@ -15,7 +15,7 @@ class RPigengene(RPackage):
 	bioc = "Pigengene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Pigengene_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Pigengene/Pigengene_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="2d7b090a6d6fad6cf62c987970663167")
+	version("1.28.0", sha256="7375a0be2eb648a6442ecbc6f29795c6fbce303402c0dd2e6c8f79d2b1c1096a")
 
 	depends_on("r@4.0.3:", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

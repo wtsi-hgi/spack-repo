@@ -15,7 +15,7 @@ class RPepsnmrdata(RPackage):
 	bioc = "PepsNMRData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PepsNMRData_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PepsNMRData/PepsNMRData_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="96fc9090499b4460f72fb85a0428b357")
+	version("1.20.0", sha256="ac94ca39bb77784f15bd5dc645df43a6329e49f2296bb98016347f2b9a2fc0f7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

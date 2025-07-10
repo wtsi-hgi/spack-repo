@@ -16,7 +16,7 @@ class RMsstatsqcgui(RPackage):
 	bioc = "MSstatsQCgui" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsQCgui_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsQCgui/MSstatsQCgui_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="1e648f2226907f737e1d7e71a375f01c")
+	version("1.22.0", sha256="d7f34387d63f2d65c608310caf704b739e2436dcfcbb03517c801b6d6769740c")
 
 	depends_on("r-shiny", type=("build", "run"))
 	depends_on("r-msstatsqc", type=("build", "run"))

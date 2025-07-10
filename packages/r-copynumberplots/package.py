@@ -16,7 +16,7 @@ class RCopynumberplots(RPackage):
 	bioc = "CopyNumberPlots" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CopyNumberPlots_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CopyNumberPlots/CopyNumberPlots_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="d35c96c521087a1183dd2ae465b3d2a7")
+	version("1.18.0", sha256="1a316f7e53d2e09f2105d4b48886c0c0549eacb2899b927fe1fcada379312cea")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-karyoploter", type=("build", "run"))

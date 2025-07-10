@@ -16,7 +16,7 @@ class RPanomir(RPackage):
 	bioc = "PanomiR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PanomiR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PanomiR/PanomiR_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="a8f96cdc267551107e69e8cb260a05c0")
+	version("1.6.0", sha256="683caee92d63498c49b5edcc84ec95490cd5f42a6b9d846b1113bb174cc57575")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-clusterprofiler", type=("build", "run"))

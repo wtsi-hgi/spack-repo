@@ -15,7 +15,7 @@ class RExpressionatlas(RPackage):
 	bioc = "ExpressionAtlas" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExpressionAtlas_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExpressionAtlas/ExpressionAtlas_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="eb11568a0a2a81e1bf636eaa24e45906")
+	version("1.30.0", sha256="106a8ed704ad1cb29c6f30b8d8a39c7419c560349d19094eab5c355a2af93fe7")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

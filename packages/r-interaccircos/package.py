@@ -15,7 +15,7 @@ class RInteraccircos(RPackage):
 	bioc = "interacCircos" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/interacCircos_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/interacCircos/interacCircos_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="d97429da8da823bf80547b4ac8ca2505")
+	version("1.12.0", sha256="7ce93d6d54706e8d3861947e6a0214d93bc4ec54f08583a5a19dacb3e9f55f23")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

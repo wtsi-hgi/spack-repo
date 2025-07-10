@@ -16,7 +16,7 @@ class RRlmm(RPackage):
 	bioc = "RLMM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RLMM_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RLMM/RLMM_1.64.0.tar.gz"]
 
-	version("1.64.0", md5="7c43c967fab2a5e90059b26e46de345b")
+	version("1.64.0", sha256="e075fe21e2b260f015582e5a4716b9731ec0d0a44d7a4b47780f62caba359357")
 
 	depends_on("r@2.1:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

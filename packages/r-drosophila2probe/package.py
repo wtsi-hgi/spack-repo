@@ -15,7 +15,7 @@ class RDrosophila2probe(RPackage):
 	bioc = "drosophila2probe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/drosophila2probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/drosophila2probe/drosophila2probe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="ba0251902ea0a5f0db61105bdcdc3530")
+	version("2.18.0", sha256="11d04b7d032e0d318c1472dd27ba0eda6b5992f0eba839b473ec5cf0fcb41cad")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

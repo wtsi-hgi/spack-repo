@@ -15,7 +15,7 @@ class RXtropicaliscdf(RPackage):
 	bioc = "xtropicaliscdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/xtropicaliscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/xtropicaliscdf/xtropicaliscdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="253e3cde76a393789e124f395820e947")
+	version("2.18.0", sha256="5a954593dde81e1a65856c10439fd13187147de11e0eaf767d0d28df00b3f40e")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

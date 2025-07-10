@@ -16,7 +16,7 @@ class RNetdx(RPackage):
 	bioc = "netDx" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/netDx_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/netDx/netDx_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="6fdc48ce518c74e0261acee84948ce26")
+	version("1.14.0", sha256="fc6625ef76c8136dc672e919cd71c9a2d4c8ae73cb5dae4dccec4967be23985e")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rocr", type=("build", "run"))

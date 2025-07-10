@@ -15,7 +15,7 @@ class RIlluminaratv1Db(RPackage):
 	bioc = "illuminaRatv1.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/illuminaRatv1.db_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/illuminaRatv1.db/illuminaRatv1.db_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="5de2324d7b96c0cdb3301ef269341aa8")
+	version("1.26.0", sha256="cbf96eb78ef7938bbcf67af2f2add4781c62f650a4f42ccbcc56c0b1eeb837cf")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

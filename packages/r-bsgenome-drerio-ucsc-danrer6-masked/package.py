@@ -15,7 +15,7 @@ class RBsgenomeDrerioUcscDanrer6Masked(RPackage):
 	bioc = "BSgenome.Drerio.UCSC.danRer6.masked" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Drerio.UCSC.danRer6.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Drerio.UCSC.danRer6.masked/BSgenome.Drerio.UCSC.danRer6.masked_1.3.99.tar.gz"]
 
-	version("1.3.99", md5="71c9b05c27b8d2e05735e6494a8f17ba")
+	version("1.3.99", sha256="93e0dd5b73ddcae3cae154a5e9efe545a43886189aeea7ea5b7f96eb7af1af9c")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-drerio-ucsc-danrer6", type=("build", "run"))

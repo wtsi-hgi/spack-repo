@@ -15,7 +15,7 @@ class RSrnadiff(RPackage):
 	bioc = "srnadiff" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/srnadiff_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/srnadiff/srnadiff_1.22.2.tar.gz"]
 
-	version("1.22.2", md5="420056f0aa9275f6928b03dd58814863")
+	version("1.22.2", sha256="15fd032d853044ce1879f83152750e014a6aa1b47fd969e61869288665960d1a")
 	version("1.22.0", md5="0125777227eab34f7839615139aacb91")
 
 	depends_on("r@3.6:", type=("build", "run"))

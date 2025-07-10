@@ -15,7 +15,7 @@ class RRbowtie2(RPackage):
 	bioc = "Rbowtie2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rbowtie2_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rbowtie2/Rbowtie2_2.8.0.tar.gz"]
 
-	version("2.8.0", md5="dbba503f3134fdb9c6521c060ec2d5fc", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rbowtie2_2.8.0.tar.gz")
+	version("2.8.0", sha256="fb81f3101e38d5622ddd37fe15757cf8be529c0d9263c2e30cf70867a6bea137", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rbowtie2_2.8.0.tar.gz")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

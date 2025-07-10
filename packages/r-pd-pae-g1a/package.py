@@ -15,7 +15,7 @@ class RPdPaeG1a(RPackage):
 	bioc = "pd.pae.g1a" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.pae.g1a_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.pae.g1a/pd.pae.g1a_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="d96462eb35c63b30772bccae2a27a8cd")
+	version("3.12.0", sha256="20619ab23e7a6aed43005c25c4211ef297067e24e21bd34a14951e98ddaf0b2c")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

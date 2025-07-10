@@ -15,7 +15,7 @@ class RPdFelgene11St(RPackage):
 	bioc = "pd.felgene.1.1.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.felgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.felgene.1.1.st/pd.felgene.1.1.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="734807a7f3608f6c44c76df7eee04c99")
+	version("3.12.0", sha256="329b614b935c1288205dbd656bf374019d28cd80a95ae389e993d6e73a7eec08")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

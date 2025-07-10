@@ -15,7 +15,7 @@ class RSinglemoleculefootprinting(RPackage):
 	bioc = "SingleMoleculeFootprinting" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SingleMoleculeFootprinting_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SingleMoleculeFootprinting/SingleMoleculeFootprinting_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="dcdbbace0f6394ce22397640da1dd03f")
+	version("1.10.0", sha256="25f5df0e2eb836bc0fc80be1bfab0bb501f24d416199da14c6007b5a458eb096")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

@@ -16,7 +16,7 @@ class RDavidtiling(RPackage):
 	bioc = "davidTiling" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/davidTiling_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/davidTiling/davidTiling_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="dace46d6f640014aff544e0faf355b5e")
+	version("1.42.0", sha256="cedf1ab9e06b87558ae543b5ae82dc58f43e2b5355e366a6f5f9a7c899f5d3f5")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

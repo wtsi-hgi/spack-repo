@@ -15,7 +15,7 @@ class RSiamcat(RPackage):
 	bioc = "SIAMCAT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SIAMCAT_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SIAMCAT/SIAMCAT_2.6.0.tar.gz"]
 
-	version("2.6.0", md5="36938473e8b2bd9b269fae69ec312e8d")
+	version("2.6.0", sha256="7c1d0456a178517ce6b8f951ef9642556ef91501e095b23a6eb866d39ec4a026")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-mlr3", type=("build", "run"))

@@ -16,7 +16,7 @@ class RChemminer(RPackage):
 	bioc = "ChemmineR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChemmineR_3.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChemmineR/ChemmineR_3.54.0.tar.gz"]
 
-	version("3.54.0", md5="8dd1886811bdc4ac23c24fad60a9b238")
+	version("3.54.0", sha256="01297549b77098b794d22158253a30989b8111a6998d1872dc993af82aaf488c")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rjson", type=("build", "run"))

@@ -15,5 +15,5 @@ class RGpls(RPackage):
 	bioc = "gpls" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gpls_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gpls/gpls_1.74.0.tar.gz"]
 
-	version("1.74.0", md5="db6bc720156a5f7571a34e64b1189d3b")
+	version("1.74.0", sha256="406afeee1ab2ebcc3a5ec952acf0143e558d130668a48e36147e612e196ed5fc")
 

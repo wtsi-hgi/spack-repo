@@ -15,7 +15,7 @@ class RRocpai(RPackage):
 	bioc = "ROCpAI" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ROCpAI_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ROCpAI/ROCpAI_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="8d2702c4029efeb23248e107384ffd27")
+	version("1.14.0", sha256="5f35a2b074e3c3d585394226a0c1587a585a3f5b0eb1eff1370fc72963249553")
 
 	depends_on("r-boot", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

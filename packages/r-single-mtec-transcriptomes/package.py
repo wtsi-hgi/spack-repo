@@ -15,7 +15,7 @@ class RSingleMtecTranscriptomes(RPackage):
 	bioc = "Single.mTEC.Transcriptomes" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Single.mTEC.Transcriptomes_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Single.mTEC.Transcriptomes/Single.mTEC.Transcriptomes_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="574ee45ff1177688d68e6ae8295e67a2")
+	version("1.30.0", sha256="6a739151d4b5d4993ed75f88fa03f11656a1f17e0745ad34959a1cec6a386ef0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

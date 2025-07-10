@@ -15,7 +15,7 @@ class RRgntx(RPackage):
 	bioc = "RgnTX" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RgnTX_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RgnTX/RgnTX_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="4ce438a2822a6541467c9781a3c48b26")
+	version("1.4.0", sha256="2dc47372b3ad28a48fcdd38c206a153f1bbe95d282008d9c7c183de79a900176")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-genomeinfodb", type=("build", "run"))

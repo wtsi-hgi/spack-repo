@@ -16,7 +16,7 @@ class RDecipher(RPackage):
 	version("2.8.1", commit="35aa66f48e06b93a98d1060c90c44d34ce05ccd9")
 	version("2.6.0", commit="ed9acaa35c8774cb0ea01cd7cc2e46d063d8c70e")
 	version("2.4.0", commit="1a57b8e4c7d7dec1c233f79c9a88d3705e0ad432")
-	version("2.30.0", md5="0a32c782d61a604dc3594c684daa8c75")
+	version("2.30.0", sha256="e9d06fe494792d31c2c547c04a409c26fe739c1000fc3aec7697e1367aa328e6")
 	version("2.28.0", commit="9be570c9fd812139d6bf9cd0851821fe54d4d3fa")
 	version("2.26.0", commit="7de99ec5e79f1f645f29dfbe24d2a106c2b0e69a")
 	version("2.24.0", commit="437e60005ab281bd836f47756a367795bc16755d")

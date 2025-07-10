@@ -15,7 +15,7 @@ class RAsset(RPackage):
 	bioc = "ASSET" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASSET_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASSET/ASSET_2.20.0.tar.gz"]
 
-	version("2.20.0", md5="395bcc1b0256acc248c5d3440bf5dfeb")
+	version("2.20.0", sha256="acbbae5b669c3c11f2a8ff8ec62102781a3596b21d8426e047dfea9d4a2ca156")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

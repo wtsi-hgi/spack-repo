@@ -15,7 +15,7 @@ class RMgu74bDb(RPackage):
 	bioc = "mgu74b.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mgu74b.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mgu74b.db/mgu74b.db_3.13.0.tar.gz"]
 
-	version("3.13.0", md5="205577a6e41d56910f221ffb940ee25b")
+	version("3.13.0", sha256="221dd2522ef2c09910badf533714eb66df8f31b5744045216ede0474a68f1941")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

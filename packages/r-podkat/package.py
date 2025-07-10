@@ -16,7 +16,7 @@ class RPodkat(RPackage):
 	bioc = "podkat" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/podkat_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/podkat/podkat_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="b06fbdc3f282bde5ec8df0d062d3ecb6")
+	version("1.34.0", sha256="28392b4e431fafeb56fd006e067c8ae45073f0627697a51dddd973b8ce100300")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rsamtools@1.99.1:", type=("build", "run"))

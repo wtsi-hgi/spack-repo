@@ -15,7 +15,7 @@ class RMmuphin(RPackage):
 	bioc = "MMUPHin" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MMUPHin_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MMUPHin/MMUPHin_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="51f094480eb1629226dc1da59902ab32")
+	version("1.16.0", sha256="cd54f608cb11e8995ac6f34aba7fb6e3c0e118da1a1804472b106fe94bd71b52")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-maaslin2", type=("build", "run"))

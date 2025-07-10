@@ -15,7 +15,7 @@ class RPdRusgene10St(RPackage):
 	bioc = "pd.rusgene.1.0.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rusgene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rusgene.1.0.st/pd.rusgene.1.0.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="0b9b00fee58ef211e041395052344483")
+	version("3.12.0", sha256="1c6aea398ce68575d7c189fcf7379f6a47f79dfa14ed0c4ba6acdd39bd4762c6")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

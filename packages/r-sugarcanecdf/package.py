@@ -15,7 +15,7 @@ class RSugarcanecdf(RPackage):
 	bioc = "sugarcanecdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/sugarcanecdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/sugarcanecdf/sugarcanecdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="f66d51868068f83d3693d3cb05be418a")
+	version("2.18.0", sha256="ff58a11858528f5260ebb93cf04769f836d6a45c918f3a0cc593c793b961f071")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

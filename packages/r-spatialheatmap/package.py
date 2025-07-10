@@ -16,7 +16,7 @@ class RSpatialheatmap(RPackage):
 	bioc = "spatialHeatmap" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spatialHeatmap_2.8.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spatialHeatmap/spatialHeatmap_2.8.5.tar.gz"]
 
-	version("2.8.5", md5="2c5ee52628039f8293fd20bdd2874004")
+	version("2.8.5", sha256="375e5405b570a74481a839eb699ccd29e24256766b5b62b57ecaae088b1c2ecc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

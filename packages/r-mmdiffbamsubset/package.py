@@ -15,6 +15,6 @@ class RMmdiffbamsubset(RPackage):
 	bioc = "MMDiffBamSubset" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MMDiffBamSubset_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MMDiffBamSubset/MMDiffBamSubset_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="0becc66301b49b58a99efa19577ee27c")
+	version("1.38.0", sha256="b7bf8fa4c70037ee7b41b6af65c20adbaee5a91234ec5e06c3fc57f9096390ab")
 
 

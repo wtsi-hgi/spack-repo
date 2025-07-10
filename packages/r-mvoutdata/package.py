@@ -15,7 +15,7 @@ class RMvoutdata(RPackage):
 	bioc = "mvoutData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mvoutData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mvoutData/mvoutData_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="abca7ca8ae7729ed8f146d0083aa9757")
+	version("1.38.0", sha256="7c44c64f508a2ac72864910c2af77f828efcdca84b3d38f37cbfa1cd53582b9f")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

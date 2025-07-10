@@ -15,7 +15,7 @@ class RSparsenetgls(RPackage):
 	bioc = "sparsenetgls" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sparsenetgls_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sparsenetgls/sparsenetgls_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="32b8f3b9fe86b40386aee23ac4ea55fd")
+	version("1.20.0", sha256="b5f0f2fd12c48386213553e55d1bb130cfeb5bcc30d77228787cefd8126090f2")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

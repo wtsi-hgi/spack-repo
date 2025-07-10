@@ -16,7 +16,7 @@ class RBiosigner(RPackage):
 	bioc = "biosigner" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biosigner_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biosigner/biosigner_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="33d853127b5e108b0fa1c5dfea22517d")
+	version("1.30.0", sha256="c801767a58f46d6c2f96ad550e38f3e9220b232558543e9a69ff1a05379e7cc8")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-e1071", type=("build", "run"))

@@ -15,7 +15,7 @@ class RTxdbScerevisiaeUcscSaccer3Sgdgene(RPackage):
 	bioc = "TxDb.Scerevisiae.UCSC.sacCer3.sgdGene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Scerevisiae.UCSC.sacCer3.sgdGene_3.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Scerevisiae.UCSC.sacCer3.sgdGene/TxDb.Scerevisiae.UCSC.sacCer3.sgdGene_3.2.2.tar.gz"]
 
-	version("3.2.2", md5="afb23b3265730b9e59c2f07ab37cc3a0")
+	version("3.2.2", sha256="6dac0b4f88ce54c8543bb0ce236507cd46dd78ff7b3e3457ef7fd0b1dca15cea")
 
 	depends_on("r-genomicfeatures@1.21.30:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

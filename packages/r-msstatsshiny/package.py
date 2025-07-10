@@ -15,7 +15,7 @@ class RMsstatsshiny(RPackage):
 	bioc = "MSstatsShiny" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsShiny_1.4.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsShiny/MSstatsShiny_1.4.3.tar.gz"]
 
-	version("1.4.3", md5="5ccab67d44c1dbead7fcac50e5c5b907")
+	version("1.4.3", sha256="e3f9833bff4318bcedc6e027819bd72d611db84e62eab68c2dc79ec6222aea71")
 	version("1.4.2", md5="2a58cf6ab9674a13b96e66974d6b15a0")
 
 	depends_on("r@4.2:", type=("build", "run"))

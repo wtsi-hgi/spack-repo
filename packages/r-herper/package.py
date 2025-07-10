@@ -16,7 +16,7 @@ class RHerper(RPackage):
 	bioc = "Herper" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Herper_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Herper/Herper_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="dad437a472cae186246d3cf0f6b44964")
+	version("1.12.0", sha256="04db137ebec9c03d9d196fc56943e96a04be91bbfb31313a6d18abbf84bb5e0a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-reticulate", type=("build", "run"))

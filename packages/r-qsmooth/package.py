@@ -15,7 +15,7 @@ class RQsmooth(RPackage):
 	bioc = "qsmooth" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qsmooth_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qsmooth/qsmooth_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="471983d71a4b056b71b10fe15c3f7b1c")
+	version("1.18.0", sha256="e1bc687f8648f435e26e8b343241a19c17acb150c145fb5e179bcfc2414d8faf")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

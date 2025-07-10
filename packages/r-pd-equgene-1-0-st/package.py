@@ -15,7 +15,7 @@ class RPdEqugene10St(RPackage):
 	bioc = "pd.equgene.1.0.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.equgene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.equgene.1.0.st/pd.equgene.1.0.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="3448f36fdb899f04702be37ffab4c4c7")
+	version("3.12.0", sha256="6d45f52f4df4fe080946063cdfbd0c729817972644fc0c971332556894916c07")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

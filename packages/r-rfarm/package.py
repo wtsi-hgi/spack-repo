@@ -15,7 +15,7 @@ class RRfarm(RPackage):
 	bioc = "rfaRm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rfaRm_1.14.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rfaRm/rfaRm_1.14.2.tar.gz"]
 
-	version("1.14.2", md5="6b2898f74afcf12f1789e706aff0e7c9")
+	version("1.14.2", sha256="6b953d538843e8e4b4d0cc8b324b844096be065265277c279b51876ae2f1395e")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-stringi", type=("build", "run"))

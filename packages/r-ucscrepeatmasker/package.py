@@ -15,7 +15,7 @@ class RUcscrepeatmasker(RPackage):
 	bioc = "UCSCRepeatMasker" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/UCSCRepeatMasker_3.15.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/UCSCRepeatMasker/UCSCRepeatMasker_3.15.2.tar.gz"]
 
-	version("3.15.2", md5="ad19a6fbd936e478af88fa21bc918a29")
+	version("3.15.2", sha256="677f01e2e21d1f94179bead18ec53af4615915a8cfad37c2e447b8b537822142")
 
 	depends_on("r-annotationhub", type=("build", "run"))
 	depends_on("r-genomeinfodb", type=("build", "run"))

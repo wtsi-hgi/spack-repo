@@ -15,7 +15,7 @@ class RLumimouseallDb(RPackage):
 	bioc = "lumiMouseAll.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/lumiMouseAll.db_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/lumiMouseAll.db/lumiMouseAll.db_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="6f12330377aaddc83bfa9c37477b999e")
+	version("1.22.0", sha256="63fc536ce384e7339ad8f6523222ffdfe582184cd4a2847cdd1686c5d1e42a02")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

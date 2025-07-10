@@ -15,7 +15,7 @@ class RMicrornaome(RPackage):
 	bioc = "microRNAome" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/microRNAome_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/microRNAome/microRNAome_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="12d3baf395e82975bbcacfb9ff61a715")
+	version("1.24.0", sha256="105a17bfbd0ec9ee196a2b82033dd916b88abe45aff6d0953e1db68e81116025")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMetcirc(RPackage):
 	bioc = "MetCirc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetCirc_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetCirc/MetCirc_1.32.0.tar.gz"]
 
-	version("1.32.0", md5="c21a385245acf6911f5c762093ea6e0b")
+	version("1.32.0", sha256="25a326fc6592609ef4e64a991faa966f4092a798f1300994d15ad670cd1b9bc6")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-amap@0.8:", type=("build", "run"))

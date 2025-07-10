@@ -15,7 +15,7 @@ class ROrgXlEgDb(RPackage):
 	bioc = "org.Xl.eg.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Xl.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.Xl.eg.db/org.Xl.eg.db_3.18.0.tar.gz"]
 
-	version("3.18.0", md5="bbea76a4373d8b51048029b83c591aca")
+	version("3.18.0", sha256="f945a074e2c924764ed7af42b9c742117256a1647535c43bd8a1b52f2f23b907")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))

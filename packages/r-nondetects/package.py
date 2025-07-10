@@ -15,7 +15,7 @@ class RNondetects(RPackage):
 	bioc = "nondetects" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nondetects_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nondetects/nondetects_2.32.0.tar.gz"]
 
-	version("2.32.0", md5="6507efbde0bbb76f863c731bcc8464bb")
+	version("2.32.0", sha256="9b99b3c3226cea1f16ea6574ed9b9df4b0a31c258f9b0a73ba7fed75cbab020c")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biobase@2.22:", type=("build", "run"))

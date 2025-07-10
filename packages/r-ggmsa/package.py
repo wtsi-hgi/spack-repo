@@ -16,7 +16,7 @@ class RGgmsa(RPackage):
 	bioc = "ggmsa" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggmsa_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggmsa/ggmsa_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="1faea3aedc093bb7e151208c9a11b60c")
+	version("1.8.0", sha256="5143a62bbd6e45b736d8dbeb223b5e87bde066b52b3e340b66a8a39799b23fab")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

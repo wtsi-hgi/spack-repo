@@ -15,7 +15,7 @@ class RDelayedtensor(RPackage):
 	bioc = "DelayedTensor" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DelayedTensor_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DelayedTensor/DelayedTensor_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="ee3e89ac7a0b9f3ca79f744edfdc69b8")
+	version("1.8.0", sha256="4e76aedc3d573b41e035a2cc6bc04137e1375ddcfe5bd0e647bf6cd0e37e5b3a")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-delayedarray", type=("build", "run"))

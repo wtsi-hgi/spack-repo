@@ -15,7 +15,7 @@ class RDcgsa(RPackage):
 	bioc = "dcGSA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dcGSA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dcGSA/dcGSA_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="f824cffdf3d7c4f41b44d2cc46b69998")
+	version("1.30.0", sha256="d1703121d076b5ed0096104a3769f9eaab7d6f3e044ff8a78aa1d5f3105b0322")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

@@ -15,7 +15,7 @@ class RTest2cdf(RPackage):
 	bioc = "test2cdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/test2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/test2cdf/test2cdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="0d1c20d6450dfc83d62214be9dc46b5f")
+	version("2.18.0", sha256="1c8a0874f491d4646fbc48d4793025c2ea3a09c442f216f36fe6ed0df4f12843")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

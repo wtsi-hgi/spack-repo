@@ -15,6 +15,6 @@ class RHumanomniexpress12v1bcrlmm(RPackage):
 	bioc = "humanomniexpress12v1bCrlmm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/humanomniexpress12v1bCrlmm_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/humanomniexpress12v1bCrlmm/humanomniexpress12v1bCrlmm_1.0.1.tar.gz"]
 
-	version("1.0.1", md5="abdb730fc230db669e588e024ee7624b")
+	version("1.0.1", sha256="c6ed6eaac42f57372e78e26ed9f510856c308de0876b92ea498fd783a51fdd4d")
 
 

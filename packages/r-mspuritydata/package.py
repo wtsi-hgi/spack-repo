@@ -15,6 +15,6 @@ class RMspuritydata(RPackage):
 	bioc = "msPurityData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/msPurityData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/msPurityData/msPurityData_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="6c86343515cbb9f81131baa3f25659f0")
+	version("1.30.0", sha256="40b14402c428e86b209c10363425f18257afff90788bd6e0db7e1723d942c2bd")
 
 

@@ -15,7 +15,7 @@ class RRgu34acdf(RPackage):
 	bioc = "rgu34acdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rgu34acdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rgu34acdf/rgu34acdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="dcfa7ecce00e529f93809759ed837b8d")
+	version("2.18.0", sha256="982f0be8a662d49c8db9dcb8ff18a2de7f42bb73abd29d28afa286db4d70e923")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

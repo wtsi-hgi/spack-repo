@@ -16,7 +16,7 @@ class RRecountmethylation(RPackage):
 	bioc = "recountmethylation" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/recountmethylation_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/recountmethylation/recountmethylation_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="56d6b1dcb581c96c3ee93c4def178a1c")
+	version("1.12.0", sha256="141d3a3dc74aa44398c214398c25b39fe74efb06e0844d370e9bef60531567ff")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-minfi", type=("build", "run"))

@@ -15,7 +15,7 @@ class RLungcancerlines(RPackage):
 	bioc = "LungCancerLines" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/LungCancerLines_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/LungCancerLines/LungCancerLines_0.40.0.tar.gz"]
 
-	version("0.40.0", md5="17b67ca0eac14ef832832b949972b277")
+	version("0.40.0", sha256="86688a5c0915c1522fb1792accd37c36c3a8c5524dc3a4cda77c5a62d2a1277b")
 
 	depends_on("r-rsamtools", type=("build", "run"))
 

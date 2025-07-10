@@ -15,7 +15,7 @@ class RAnota(RPackage):
 	bioc = "anota" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/anota_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/anota/anota_1.50.0.tar.gz"]
 
-	version("1.50.0", md5="dc1461d1c43ffdfedc8e0f49a2b4ac6b")
+	version("1.50.0", sha256="6151694aa3a54cc96f41ddd2803caa96230f3dd30ae7c15d4274731ab93c39ac")
 
 	depends_on("r-qvalue", type=("build", "run"))
 	depends_on("r-multtest", type=("build", "run"))

@@ -15,7 +15,7 @@ class ROmiccircos(RPackage):
 	bioc = "OmicCircos" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OmicCircos_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OmicCircos/OmicCircos_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="7d77b9a00853d3e6fec869012ce33daf")
+	version("1.40.0", sha256="2c21551a046ed6d5dd7bedb36eed4c3c664dbcfe39dee54266afae3c9db75fdb")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

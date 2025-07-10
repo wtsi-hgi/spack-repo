@@ -15,7 +15,7 @@ class RMqmetrics(RPackage):
 	bioc = "MQmetrics" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MQmetrics_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MQmetrics/MQmetrics_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="6c0c8bd3d356ed2db8d6329fd21958d0")
+	version("1.10.0", sha256="58c78c557937edd084a3868ea0c5036388fa3b59c78b31e2da08962964ab5396")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-readr", type=("build", "run"))

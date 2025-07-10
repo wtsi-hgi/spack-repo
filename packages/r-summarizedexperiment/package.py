@@ -18,7 +18,7 @@ class RSummarizedexperiment(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SummarizedExperiment_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SummarizedExperiment/SummarizedExperiment_1.32.0.tar.gz"]
 	version("1.8.1", commit="9d8a29aa9c78bbc7dcc6472537e13fc0d11dc1f7")
 	version("1.6.5", commit="ec69cd5cfbccaef148a9f6abdfb3e22e888695d0")
-	version("1.32.0", md5="cf4b430247b40acb2be8e6c9ecf3aac7")
+	version("1.32.0", sha256="9f801c16adb503d7252890019b46f5583c401622c7ec9373663537548c9889a4")
 	version("1.30.0", commit="a2843fbced9fc345c9061b2e52244f3263326e2e")
 	version("1.28.0", commit="ba55dac12224f0aafe8f52f1397611b5efb41626")
 	version("1.26.1", commit="c8cbd3b4f0fa1d686c4d7ce5b8614a24c74b2074")

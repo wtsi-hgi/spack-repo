@@ -15,7 +15,7 @@ class RChickenDb0(RPackage):
 	bioc = "chicken.db0" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/chicken.db0_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/chicken.db0/chicken.db0_3.18.0.tar.gz"]
 
-	version("3.18.0", md5="0f0c20a519a9490c0909b68ec67c206d", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/chicken.db0_3.18.0.tar.gz")
+	version("3.18.0", sha256="824e7ee3e9d7aea9d88e815399d33236b170939a2cb1a75a79cdd4dae5ba5eac", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/chicken.db0_3.18.0.tar.gz")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))

@@ -16,7 +16,7 @@ class ROlin(RPackage):
 	bioc = "OLIN" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OLIN_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OLIN/OLIN_1.80.0.tar.gz"]
 
-	version("1.80.0", md5="3a6ce43e9272204280a346c20012f710")
+	version("1.80.0", sha256="d983961e34feb154c35b8bdebe91d6339e7d90bb500cc32ceed38c88ca5052f3")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-locfit", type=("build", "run"))

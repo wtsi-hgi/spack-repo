@@ -15,6 +15,6 @@ class RIcens(RPackage):
 	bioc = "Icens" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Icens_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Icens/Icens_1.74.0.tar.gz"]
 
-	version("1.74.0", md5="07481f23c5b4fdfe9ff465e5a57e33c2")
+	version("1.74.0", sha256="5c5d26401cf01ac83b05e59516e911efb8116f6e4807bdd4fb321007d932e63b")
 
 	depends_on("r-survival", type=("build", "run"))

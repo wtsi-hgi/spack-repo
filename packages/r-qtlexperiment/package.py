@@ -16,7 +16,7 @@ class RQtlexperiment(RPackage):
 	bioc = "QTLExperiment" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QTLExperiment_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QTLExperiment/QTLExperiment_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="fe7642e0952c4c68e5417906dfb66fb3")
+	version("1.0.0", sha256="9d216fb41c637fa3118d42f4475638fab0f5d3a3b6e1e1ecf6244d78388ecc74")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

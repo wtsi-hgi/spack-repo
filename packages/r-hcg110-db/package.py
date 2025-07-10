@@ -15,7 +15,7 @@ class RHcg110Db(RPackage):
 	bioc = "hcg110.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hcg110.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hcg110.db/hcg110.db_3.13.0.tar.gz"]
 
-	version("3.13.0", md5="4c536c3539a61d7f1f67dac149f10b11")
+	version("3.13.0", sha256="adaef559c1312efcce3b1952735bc18df64ab90a0958d558239599633340923c")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

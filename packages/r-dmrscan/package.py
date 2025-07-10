@@ -16,7 +16,7 @@ class RDmrscan(RPackage):
 	bioc = "DMRScan" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DMRScan_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DMRScan/DMRScan_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="698b81baf921ef394adedb8d8ff7ba7f")
+	version("1.24.0", sha256="6d5560d4f9a1ae49c16cbf5a0be33d9dc04ff710d726aa342015f6fbfa028313")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

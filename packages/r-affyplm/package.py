@@ -18,7 +18,7 @@ class RAffyplm(RPackage):
 	bioc = "affyPLM"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affyPLM_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affyPLM/affyPLM_1.78.0.tar.gz"]
 
-	version("1.78.0", md5="cdfd69bc9c54f3c03b52b3fd6e9f86b7")
+	version("1.78.0", sha256="4629df97da87344afc27881a0d6669f5aa2ba3f0eb0359da4e73b6152477f950")
 	version("1.76.0", commit="45557df5a32f56aa5240439737c5718738fb4c27")
 	version("1.74.0", commit="5f76ef92e69deabc19c5395eaec4adb85c66b63d")
 	version("1.72.0", commit="394c0a8e213f188d0b1d01e20516df8bf1bc5c09")

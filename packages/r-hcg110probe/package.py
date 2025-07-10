@@ -15,7 +15,7 @@ class RHcg110probe(RPackage):
 	bioc = "hcg110probe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hcg110probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hcg110probe/hcg110probe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="51af8d6a7090ea7c5fe630dcea68bfb3")
+	version("2.18.0", sha256="b805d78dcd489153b09efaafc276c735a2aeccdd62fd12a90b6819546b2b792b")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

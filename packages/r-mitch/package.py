@@ -16,7 +16,7 @@ class RMitch(RPackage):
 	bioc = "mitch" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mitch_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mitch/mitch_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="c21044d7d878482677fcb758acf0a650")
+	version("1.14.0", sha256="a2ebc8bc0aa25eff327ed9918bceb0a32ac7e12a548f54591ef47e02f2ffc444")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

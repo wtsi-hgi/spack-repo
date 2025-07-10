@@ -16,7 +16,7 @@ class RLobstahs(RPackage):
 	bioc = "LOBSTAHS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LOBSTAHS_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LOBSTAHS/LOBSTAHS_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="45092babf761359e504ae5ad71d21ab8")
+	version("1.28.0", sha256="cd685033832ebf0f439f6182a00b9d484fa5bcbf15adae129d5b4b18c8687e3d")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-xcms", type=("build", "run"))

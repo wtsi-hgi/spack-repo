@@ -15,7 +15,7 @@ class RTpp(RPackage):
 	bioc = "TPP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TPP_3.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TPP/TPP_3.30.0.tar.gz"]
 
-	version("3.30.0", md5="4a0ea50f7969045d710d3bfef371af62")
+	version("3.30.0", sha256="66c208dc17ba494dd100c918aa32c9f854f9b9f213f2d3755db7e15c45db8e82")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -15,7 +15,7 @@ class RXvector(RPackage):
 
 	bioc = "XVector"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/XVector_0.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/XVector/XVector_0.42.0.tar.gz"]
-	version("0.42.0", md5="f126998c6b563132e51ea31c3995c6b9")
+	version("0.42.0", sha256="a163561e54c8a3f013e629c275f2446d25b3b56dbab53a4938de5f405b8d0340")
 	version("0.40.0", commit="875b4b4469e125737bee42362e7a3c75edd642f1")
 	version("0.38.0", commit="8cad08446091dcc7cd759e880c0f3e47228278dd")
 	version("0.36.0", commit="ff6f818ff4357eb9bf00654de9e0f508a5285408")

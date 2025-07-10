@@ -15,7 +15,7 @@ class RPdDrogene11St(RPackage):
 	bioc = "pd.drogene.1.1.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.drogene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.drogene.1.1.st/pd.drogene.1.1.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="5c63236ea91390d49dbabea63a48f0a2")
+	version("3.12.0", sha256="ae692d4e9d77c103d1946b0a7c5ae5ee1ce9b6192ddd126a36108aceea975d7a")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

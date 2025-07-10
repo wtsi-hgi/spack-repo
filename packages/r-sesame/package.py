@@ -16,7 +16,7 @@ class RSesame(RPackage):
 	bioc = "sesame" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sesame_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sesame/sesame_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="9bb9cc07a6c773f324fdee69d75a8427")
+	version("1.20.0", sha256="b96ef69f13c55590d950ae1d2feb05ba478ed96595b782f39410df2175ae047a")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-sesamedata", type=("build", "run"))

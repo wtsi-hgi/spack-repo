@@ -16,7 +16,7 @@ class RCellbench(RPackage):
 	bioc = "CellBench" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellBench_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellBench/CellBench_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="21b854517881e111491fd4b6dba0857c")
+	version("1.18.0", sha256="f64606c81060f3964f3397ba5707ed45c1547e457e7d07fd46a4951998c700a3")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

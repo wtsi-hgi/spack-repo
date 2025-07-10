@@ -16,7 +16,7 @@ class RGatom(RPackage):
 	bioc = "gatom" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gatom_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gatom/gatom_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="0e86773c5bafed3a4c13b7db82015463")
+	version("1.0.0", sha256="c8e20a8af4e009f71531a0fddda1dc083e3ee2b2f57170acd8b71664d743887a")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

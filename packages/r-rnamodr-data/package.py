@@ -16,7 +16,7 @@ class RRnamodrData(RPackage):
 	bioc = "RNAmodR.Data" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RNAmodR.Data_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RNAmodR.Data/RNAmodR.Data_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="cd4851e2f0c0a93c6d5a9163f542b07f")
+	version("1.16.0", sha256="0159cb46031193ee09916fd929562a5a2c23e201bf4017b7552b0495890c3d5d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

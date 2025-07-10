@@ -15,7 +15,7 @@ class RScruff(RPackage):
 	bioc = "scruff" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scruff_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scruff/scruff_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="cd21598690887291d1540e0a827fb6cc")
+	version("1.20.0", sha256="c610f6759a02b0cf21bb8ab5d016aaaa9081a02b058f7bfed13a8b7687bbc47e")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

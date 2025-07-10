@@ -15,7 +15,7 @@ class RCellscore(RPackage):
 	bioc = "CellScore" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellScore_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellScore/CellScore_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="c842a56a0f5067b891a0ab7c9f9b1e21")
+	version("1.22.0", sha256="500fca2a0296c684f92bb1f5eededade31bcee140a6e9a28df7687b31f00506a")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-biobase@2.39.1:", type=("build", "run"))

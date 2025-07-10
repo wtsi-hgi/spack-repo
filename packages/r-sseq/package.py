@@ -23,7 +23,7 @@ class RSseq(RPackage):
 
 	bioc = "sSeq"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sSeq_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sSeq/sSeq_1.40.0.tar.gz"]
-	version("1.40.0", md5="9276919acd944871a6e05a8dbeed6b9f")
+	version("1.40.0", sha256="10bde0e9da33fcf0fd740440e33d0f4845ed23edb12396b99d14eba9e28ec5ca")
 	version("1.38.0", commit="09242bb94d72ff13e3f18c3588934149f27ac374")
 	version("1.36.0", commit="0345ac579c4bdcc9c42c24831ad86fc6225c5cb9")
 	version("1.34.0", commit="882bea1664f55d85550a7185cbd4a0108c35df36")

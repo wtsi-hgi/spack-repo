@@ -16,7 +16,7 @@ class RVplotr(RPackage):
 	bioc = "VplotR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VplotR_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VplotR/VplotR_1.12.1.tar.gz"]
 
-	version("1.12.1", md5="91af0fd39cd72be94b7f5d674d9e494f")
+	version("1.12.1", sha256="fb40bd7ceedf8e733a3a8105a6d69dff1ed19190c9688d590f49edc7676ccc74")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

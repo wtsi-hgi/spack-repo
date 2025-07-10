@@ -15,7 +15,7 @@ class RGostag(RPackage):
 	bioc = "goSTAG" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/goSTAG_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/goSTAG/goSTAG_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="8d3245abbcc5813366a9393dc7bf79c7")
+	version("1.26.0", sha256="2e9051c02d71b004ebd5f8a40f3a2b6de0cbcbe15e61cce2d83d8538fd78d85e")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

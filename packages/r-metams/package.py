@@ -16,7 +16,7 @@ class RMetams(RPackage):
 	bioc = "metaMS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metaMS_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metaMS/metaMS_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="c26507515ab859aa42dbea4acc8cacc3")
+	version("1.38.0", sha256="59c0c6cc015c23bc6ecc783600d97029330fbef2bacc11e1da489d731f896e50")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-camera", type=("build", "run"))

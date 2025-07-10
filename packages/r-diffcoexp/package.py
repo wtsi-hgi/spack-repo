@@ -16,7 +16,7 @@ class RDiffcoexp(RPackage):
 	bioc = "diffcoexp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/diffcoexp_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/diffcoexp/diffcoexp_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="0985f656837da53f557041125f7583a0")
+	version("1.22.0", sha256="83bc24bc3489d7bd542806fdb8ab331734db9603335a235809032c505037ee41")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-wgcna", type=("build", "run"))

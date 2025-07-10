@@ -15,7 +15,7 @@ class RCyp450cdf(RPackage):
 	bioc = "cyp450cdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cyp450cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/cyp450cdf/cyp450cdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="7923c4d24b7b654d0f59d52ed2258eb9")
+	version("2.18.0", sha256="c061143e44e18b5d790e96bf18124e7bda2d491cb34dbff504ac6b4052b278d5")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

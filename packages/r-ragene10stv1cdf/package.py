@@ -15,7 +15,7 @@ class RRagene10stv1cdf(RPackage):
 	bioc = "ragene10stv1cdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ragene10stv1cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ragene10stv1cdf/ragene10stv1cdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="df696e9dbf5b3f2761b6a0a5914be058")
+	version("2.18.0", sha256="cffe05f25367dfa5974eece1a3777fac40ea4985a32cc974e4610f6b8df4a23a")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

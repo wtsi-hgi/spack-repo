@@ -15,7 +15,7 @@ class RCanine2probe(RPackage):
 	bioc = "canine2probe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/canine2probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/canine2probe/canine2probe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="7de0f4ea616e8662dc2eaa9ab78d1f13")
+	version("2.18.0", sha256="8bfc547c4677129e4f398403ed810331a0a710599b02dd35bb9378dc824a04d1")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

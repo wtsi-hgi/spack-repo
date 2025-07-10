@@ -15,7 +15,7 @@ class RCytodx(RPackage):
 	bioc = "CytoDx" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CytoDx_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CytoDx/CytoDx_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="86d2f225be6ebdaecd3aa4960e443796")
+	version("1.22.0", sha256="0debb1b6a4d9961e48fb2b7b4679d291d6d078c7e849ab0fd5c6b7dba43c4ba3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

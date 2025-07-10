@@ -15,7 +15,7 @@ class RModstrings(RPackage):
 	bioc = "Modstrings" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Modstrings_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Modstrings/Modstrings_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="04e7bccc20c165b4d1317e995a0b1de2")
+	version("1.18.0", sha256="7a3e7f541537d769afc833876c7e00b93f7dd1125011be85d602f4b627e74aca")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biostrings@2.51.5:", type=("build", "run"))

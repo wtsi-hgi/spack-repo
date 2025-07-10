@@ -16,7 +16,7 @@ class RTnt(RPackage):
 	bioc = "TnT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TnT_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TnT/TnT_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="1afe4c0018eb0c5026c72dcfe2120045")
+	version("1.24.0", sha256="657bc90384196dc12a86b8b4628396c1d6cdacf5ce6b3977069ac6066f169bf8")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

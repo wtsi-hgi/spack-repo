@@ -15,7 +15,7 @@ class RImman(RPackage):
 	bioc = "IMMAN" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IMMAN_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IMMAN/IMMAN_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="6e3ac40584a93ea233ba0b082a4d79aa")
+	version("1.22.0", sha256="5a5369e6c2d1a6a07017db76993dd625bd2568c6112388af1dd535bd19245b73")
 
 	depends_on("r-stringdb", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

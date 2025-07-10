@@ -15,7 +15,7 @@ class RMoex10stprobesetDb(RPackage):
 	bioc = "moex10stprobeset.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/moex10stprobeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/moex10stprobeset.db/moex10stprobeset.db_8.8.0.tar.gz"]
 
-	version("8.8.0", md5="b1c12c80a4424e2854beab9dc796cb00")
+	version("8.8.0", sha256="2d8f36c87413e9b54f968e30e3853e1fe3f0093fb887177c423b5162b3ba92a8")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

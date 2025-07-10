@@ -15,7 +15,7 @@ class RMidashla(RPackage):
 	bioc = "midasHLA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/midasHLA_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/midasHLA/midasHLA_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="7d77f1bda1bff8d67de91e02cb985519")
+	version("1.10.0", sha256="47e04642f640caa363d83809e675df26239efa43cc17e5cca6cfabfe990e2709")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-multiassayexperiment@1.8.3:", type=("build", "run"))

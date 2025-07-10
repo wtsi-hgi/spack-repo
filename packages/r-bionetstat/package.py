@@ -16,7 +16,7 @@ class RBionetstat(RPackage):
 	bioc = "BioNetStat" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioNetStat_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioNetStat/BioNetStat_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="c5de66f95b44aa3d98c077be1a27ae44")
+	version("1.22.0", sha256="e86970c26c3abee18578e13a24b3f673710eb3d7dc38ddc45c3d2d62b6196be5")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

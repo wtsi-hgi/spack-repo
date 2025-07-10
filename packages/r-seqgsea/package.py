@@ -15,7 +15,7 @@ class RSeqgsea(RPackage):
 	bioc = "SeqGSEA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SeqGSEA_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SeqGSEA/SeqGSEA_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="13213924066a18535220d42938e923fa")
+	version("1.42.0", sha256="c148922f511adc75089cadd62c16bae27b5605aa93b0c6daad533f74b2d8e63d")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

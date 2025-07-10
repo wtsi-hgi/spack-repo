@@ -15,7 +15,7 @@ class RAlabasterBase(RPackage):
 	bioc = "alabaster.base" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.base_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.base/alabaster.base_1.2.1.tar.gz"]
 
-	version("1.2.1", md5="2d6215dfe9b8412438f9b05b54be2331")
+	version("1.2.1", sha256="a300d1c7476257b52b5d9b6a8b5d47a4e0b03c178a3de965223ba182e061ffee")
 
 	depends_on("r-alabaster-schemas", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

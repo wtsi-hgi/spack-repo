@@ -15,7 +15,7 @@ class RNugohs1a520180probe(RPackage):
 	bioc = "nugohs1a520180probe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/nugohs1a520180probe_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/nugohs1a520180probe/nugohs1a520180probe_3.4.0.tar.gz"]
 
-	version("3.4.0", md5="6acf20ac4a799eaae97d0a64426d6ac3")
+	version("3.4.0", sha256="163a271ac8c761ce974c415f21962bb342192d497b15d52748a743c10e27deff")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.20:", type=("build", "run"))

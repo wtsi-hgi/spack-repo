@@ -15,7 +15,7 @@ class RClstutils(RPackage):
 	bioc = "clstutils" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clstutils_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clstutils/clstutils_1.50.0.tar.gz"]
 
-	version("1.50.0", md5="4343490b2b05bf2e4429f2081b3a82c5")
+	version("1.50.0", sha256="c618db94a7359eec52c5a336b092b1524d22c29dc9677a8818fbc80a87d08172")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-clst", type=("build", "run"))

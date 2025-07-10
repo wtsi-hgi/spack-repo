@@ -15,7 +15,7 @@ class RFlowsortedBlood450k(RPackage):
 	bioc = "FlowSorted.Blood.450k" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FlowSorted.Blood.450k_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FlowSorted.Blood.450k/FlowSorted.Blood.450k_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="f88422c2d8a2f7ce4ca968292adfc8ab")
+	version("1.40.0", sha256="56279db0be977938d1047af507ae9fce87306ff61ba81970f17e4e221489b423")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-minfi@1.21.2:", type=("build", "run"))

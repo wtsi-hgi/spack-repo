@@ -16,6 +16,6 @@ class RConstand(RPackage):
 	bioc = "CONSTANd" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CONSTANd_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CONSTANd/CONSTANd_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="6337f6a248f820600a99fa9ef9fc1571")
+	version("1.10.0", sha256="d95083be200baac9f56d8d8f7cba928393cb088a556aee24b4b2a9f6e2d41e60")
 
 	depends_on("r@4.1:", type=("build", "run"))

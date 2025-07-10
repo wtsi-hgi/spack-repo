@@ -15,7 +15,7 @@ class RAmountain(RPackage):
 	bioc = "AMOUNTAIN" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AMOUNTAIN_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AMOUNTAIN/AMOUNTAIN_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="acf007b4bceaa196843cbcf221b762ba")
+	version("1.28.0", sha256="c5b463ead80f06154c71df1f8107ca10382dc6b447c53463f5ffc33185ddc5b0")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("gsl", type=("build", "link", "run"))

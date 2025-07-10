@@ -15,7 +15,7 @@ class RSimffpe(RPackage):
 	bioc = "SimFFPE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SimFFPE_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SimFFPE/SimFFPE_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="95d6710ea184127f659f0c6f7786234c")
+	version("1.14.0", sha256="e50c7ee6b95690cbdaff3e72f7d5605e630beed773bb813a8c0a6b042405d262")
 
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

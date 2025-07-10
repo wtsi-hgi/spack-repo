@@ -16,7 +16,7 @@ class RSparsesignatures(RPackage):
 	bioc = "SparseSignatures" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SparseSignatures_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SparseSignatures/SparseSignatures_2.12.0.tar.gz"]
 
-	version("2.12.0", md5="832b206679a06252fa3b76f2700a70e9")
+	version("2.12.0", sha256="034fb32f20e9166c43eea13b42a36fd2361fbef327fbb63f030111e8201c81d7")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-nmf", type=("build", "run"))

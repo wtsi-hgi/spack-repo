@@ -15,7 +15,7 @@ class RPdCyngene10St(RPackage):
 	bioc = "pd.cyngene.1.0.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.cyngene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.cyngene.1.0.st/pd.cyngene.1.0.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="784fac6cc92a0fe46dae32c9b737812a")
+	version("3.12.0", sha256="72fdb13ddb986ba4fc3a81c095ef9ab260c7bb9872c145aecd3f744346457bf6")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

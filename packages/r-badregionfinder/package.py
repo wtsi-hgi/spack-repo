@@ -15,7 +15,7 @@ class RBadregionfinder(RPackage):
 	bioc = "BadRegionFinder" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BadRegionFinder_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BadRegionFinder/BadRegionFinder_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="c492af1d6b1297cd322a79355e3d3664")
+	version("1.30.0", sha256="899e1a53005b78e9a98435143c2fd835b71429aec474c98c3dc66844e1a3559f")
 
 	depends_on("r-variantannotation", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))

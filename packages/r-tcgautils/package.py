@@ -15,7 +15,7 @@ class RTcgautils(RPackage):
 	bioc = "TCGAutils" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TCGAutils_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TCGAutils/TCGAutils_1.22.2.tar.gz"]
 
-	version("1.22.2", md5="0a086006b357c8ed65ee0bfef09cef83")
+	version("1.22.2", sha256="431da846f86182834f96ef3f7ca33cd7b18e29e57e5ab6caf21a74eb45f9ec9a")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -15,6 +15,6 @@ class RNupop(RPackage):
 	bioc = "NuPoP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NuPoP_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NuPoP/NuPoP_2.10.0.tar.gz"]
 
-	version("2.10.0", md5="65372d828848fa588584e42324762643")
+	version("2.10.0", sha256="8eff03bb085be9274342ae1c72547de63f8bfbd1e072ee66db6a31eddba8b6ce")
 
 	depends_on("r@4:", type=("build", "run"))

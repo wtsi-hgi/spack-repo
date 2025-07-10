@@ -15,6 +15,6 @@ class RMantelcorr(RPackage):
 	bioc = "MantelCorr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MantelCorr_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MantelCorr/MantelCorr_1.72.0.tar.gz"]
 
-	version("1.72.0", md5="7ef5ee0a329a4cf218c340e9289fea32")
+	version("1.72.0", sha256="408a025f3d22856315b18ec4ddc99fe1fc6dfdfca7bcb8b39c8754cd3778f64b")
 
 	depends_on("r@2.10:", type=("build", "run"))

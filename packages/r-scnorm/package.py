@@ -16,7 +16,7 @@ class RScnorm(RPackage):
 	bioc = "SCnorm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCnorm_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCnorm/SCnorm_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="cfac086eb57336e865c999c4c0b42a0c")
+	version("1.24.0", sha256="21889d382ea33a37a615d7296748840894775f4c583dc4d40e251f9bda0337b4")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

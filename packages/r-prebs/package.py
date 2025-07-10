@@ -15,7 +15,7 @@ class RPrebs(RPackage):
 	bioc = "prebs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/prebs_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/prebs/prebs_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="847264218e6725926f1b56aacd09b541")
+	version("1.42.0", sha256="8f747c59fd43eef98d24c39b8215edce3245cb5ee96faea1cc9dd2e7531fe7fd")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-genomicalignments", type=("build", "run"))

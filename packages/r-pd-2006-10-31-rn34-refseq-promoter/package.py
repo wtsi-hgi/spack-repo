@@ -15,7 +15,7 @@ class RPd20061031Rn34RefseqPromoter(RPackage):
 	bioc = "pd.2006.10.31.rn34.refseq.promoter" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.2006.10.31.rn34.refseq.promoter_0.99.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.2006.10.31.rn34.refseq.promoter/pd.2006.10.31.rn34.refseq.promoter_0.99.3.tar.gz"]
 
-	version("0.99.3", md5="ab5bb767ad29b213e5a969a5fc51ee7d")
+	version("0.99.3", sha256="34ebb5ed1d3def0854b8c561e3570771ba0ebac8aa85f176098aaf6261500e6c")
 
 	depends_on("r@2.11:", type=("build", "run"))
 	depends_on("r-rsqlite@0.7.1:", type=("build", "run"))

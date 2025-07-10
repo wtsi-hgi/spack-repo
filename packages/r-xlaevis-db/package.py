@@ -15,7 +15,7 @@ class RXlaevisDb(RPackage):
 	bioc = "xlaevis.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/xlaevis.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/xlaevis.db/xlaevis.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="deaffe47b4ee48a7edb159d8104dc241")
+	version("3.2.3", sha256="a3b474f621a54f08362cdc9e4f1bf88687125de58075e789458bba8b5838b131")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

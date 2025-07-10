@@ -16,7 +16,7 @@ class RSynergyfinder(RPackage):
 	bioc = "synergyfinder" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/synergyfinder_3.10.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/synergyfinder/synergyfinder_3.10.3.tar.gz"]
 
-	version("3.10.3", md5="94b48126902f27ef9dd76c40b11438a3")
+	version("3.10.3", sha256="fd93d020454777ad36289b7af2f5add57fef2ff41a3b48694d2fc00ab2e777eb")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-drc@3.0.1:", type=("build", "run"))

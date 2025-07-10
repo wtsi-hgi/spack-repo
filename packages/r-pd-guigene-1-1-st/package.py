@@ -15,7 +15,7 @@ class RPdGuigene11St(RPackage):
 	bioc = "pd.guigene.1.1.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.guigene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.guigene.1.1.st/pd.guigene.1.1.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="aa3e0389c596a3676322104de5ad2358")
+	version("3.12.0", sha256="ca36d9c09fe40355b147b7ffda8e1039fe6186dedc3a2dc68aa611a5e09ca35c")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

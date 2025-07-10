@@ -16,5 +16,5 @@ class ROsat(RPackage):
 	bioc = "OSAT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OSAT_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OSAT/OSAT_1.50.0.tar.gz"]
 
-	version("1.50.0", md5="64bba183cfa8a211960d891cb5ee3ddb")
+	version("1.50.0", sha256="a1f61d1ffe6db8d5193bb42e490cd0fed1d9881274bb374962c2faf18d01ea4d")
 

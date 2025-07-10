@@ -15,7 +15,7 @@ class RCnorfuzzy(RPackage):
 	bioc = "CNORfuzzy" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNORfuzzy_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNORfuzzy/CNORfuzzy_1.44.0.tar.gz"]
 
-	version("1.44.0", md5="c7d388f25498f45c39d8af83c5e14a89")
+	version("1.44.0", sha256="07c9b8143fbbe50faa755951c20eb8f7001f652cf95221c4701988880ec870d5")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-cellnoptr@1.4:", type=("build", "run"))

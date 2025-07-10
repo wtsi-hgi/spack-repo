@@ -15,7 +15,7 @@ class RCosiadata(RPackage):
 	bioc = "CoSIAdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CoSIAdata_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CoSIAdata/CoSIAdata_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="f0ec9d5ca01647ec3d52e264c0828273")
+	version("1.2.0", sha256="3929775871668e252c863d10964a6452be64ffcf03a6fe5d8fa0856cec26a41f")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-experimenthub@2.6:", type=("build", "run"))

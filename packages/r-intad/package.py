@@ -15,7 +15,7 @@ class RIntad(RPackage):
 	bioc = "InTAD" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/InTAD_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/InTAD/InTAD_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="2502f954bc06e364560216eb972c18f7")
+	version("1.22.0", sha256="56c466237ea97cc3c44cad80e97dc00dfcff23707ea235357fd4bdc7ccde7c07")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

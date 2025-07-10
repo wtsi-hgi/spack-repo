@@ -15,7 +15,7 @@ class RRcas(RPackage):
 	bioc = "RCAS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCAS_1.28.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RCAS/RCAS_1.28.3.tar.gz"]
 
-	version("1.28.3", md5="ed2c97bacd70c083df386e7df14d0c11")
+	version("1.28.3", sha256="edd687d017c58b2a1bf6c8a52b9820e3baf074e71946b44c7db5f17e426631b5")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-plotly@4.5.2:", type=("build", "run"))

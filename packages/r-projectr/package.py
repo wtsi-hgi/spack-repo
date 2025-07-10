@@ -16,7 +16,7 @@ class RProjectr(RPackage):
 	bioc = "projectR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/projectR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/projectR/projectR_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="7351d9a1c593186a6adb189ebd3ff9d2")
+	version("1.18.0", sha256="68062e5d221126a6980162472971aaaf1495a3d2c940927874827504e7b4e8c9")
 
 	depends_on("r@4.0.1:", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))

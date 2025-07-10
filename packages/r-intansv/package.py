@@ -15,7 +15,7 @@ class RIntansv(RPackage):
 	bioc = "intansv" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/intansv_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/intansv/intansv_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="d23f9f69f23ab113ea9ac7100cafb3f1")
+	version("1.42.0", sha256="e13c11ea33934d497c7b47f6c3cd344b6d894c4cd73a55f0b6f7ae28ef13a444")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))

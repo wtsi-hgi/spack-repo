@@ -15,7 +15,7 @@ class RCll(RPackage):
 	bioc = "CLL" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CLL_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CLL/CLL_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="4f71fa48ba2205b80c098275c866ac1f")
+	version("1.42.0", sha256="8e196bfa6d0648db1a7402e60cced90761a853f9c8efdab5181d1a2a4c518282")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-affy@1.23.4:", type=("build", "run"))

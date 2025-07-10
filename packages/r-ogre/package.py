@@ -16,7 +16,7 @@ class ROgre(RPackage):
 	bioc = "OGRE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OGRE_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OGRE/OGRE_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="cff18fd2eda3eb1e67e9f7739fb9e773")
+	version("1.6.0", sha256="7124b0ba410224f0602ed7775daabc97b80a91ebb2bdbcd67b4a2ac78fc0f6d4")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

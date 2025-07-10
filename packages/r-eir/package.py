@@ -16,7 +16,7 @@ class REir(RPackage):
 	bioc = "eiR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/eiR_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/eiR/eiR_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="71e5c96821411e053b417fb15618e1cb")
+	version("1.42.0", sha256="53c2812540a22b06579982e97f96894b6fd3b2a8abc8d1119572a0161b68e443")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-chemminer", type=("build", "run"))

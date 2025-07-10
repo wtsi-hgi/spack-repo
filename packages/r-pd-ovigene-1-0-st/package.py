@@ -15,7 +15,7 @@ class RPdOvigene10St(RPackage):
 	bioc = "pd.ovigene.1.0.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.ovigene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.ovigene.1.0.st/pd.ovigene.1.0.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="88cfedfe10dd357539305051a69d31a1")
+	version("3.12.0", sha256="51771e7390d432b5294d52665c909fc656e8deba577f8d44fb9e6cb03210ea6d")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

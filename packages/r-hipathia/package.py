@@ -15,7 +15,7 @@ class RHipathia(RPackage):
 	bioc = "hipathia" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hipathia_3.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hipathia/hipathia_3.2.0.tar.gz"]
 
-	version("3.2.0", md5="819d2eecca55d3d4708934bbe69e82a7")
+	version("3.2.0", sha256="7d21fa87aa5f277c4740db53df8789a7c0f02c21aeab3f054595bd2d39eb00d3")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-igraph@1.0.1:", type=("build", "run"))

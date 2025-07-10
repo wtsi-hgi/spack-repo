@@ -15,7 +15,7 @@ class RMwastools(RPackage):
 	bioc = "MWASTools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MWASTools_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MWASTools/MWASTools_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="4af3f3512a794c7944a27bfad640aa81")
+	version("1.26.0", sha256="a549e2ea6f4fab848352f39f92708563f3c71abde786368f5d39f7a61207ec40")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-glm2", type=("build", "run"))

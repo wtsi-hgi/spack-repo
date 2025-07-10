@@ -15,7 +15,7 @@ class RGuitar(RPackage):
 	bioc = "Guitar" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Guitar_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Guitar/Guitar_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="e62e4238e3e3b939a2195eb384079bb3")
+	version("2.18.0", sha256="cc56ce5145938591837b85e32651787641c0e110250993e04b6dffca1a922626")
 
 	depends_on("r-genomicfeatures", type=("build", "run"))
 	depends_on("r-rtracklayer", type=("build", "run"))

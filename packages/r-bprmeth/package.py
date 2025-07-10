@@ -15,7 +15,7 @@ class RBprmeth(RPackage):
 	bioc = "BPRMeth" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BPRMeth_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BPRMeth/BPRMeth_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="8229c7c5175e3888c86a5a3a42eb7a8c")
+	version("1.28.0", sha256="6ea9cd29c2eaaa669072eba2e9c4135099adbcbb3b4a81b0cc79739113f48945")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

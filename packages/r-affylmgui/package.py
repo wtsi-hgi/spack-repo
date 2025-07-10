@@ -16,7 +16,7 @@ class RAffylmgui(RPackage):
 	bioc = "affylmGUI" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affylmGUI_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affylmGUI/affylmGUI_1.76.0.tar.gz"]
 
-	version("1.76.0", md5="22d9ba796444840fc24cf9b7384f81c9")
+	version("1.76.0", sha256="6fba04b0e33a9fb149e2123a36f409307e44b4322902480b30c9aa9d60fd6190")
 
 	depends_on("r-tkrplot", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

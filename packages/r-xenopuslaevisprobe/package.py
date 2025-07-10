@@ -15,7 +15,7 @@ class RXenopuslaevisprobe(RPackage):
 	bioc = "xenopuslaevisprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/xenopuslaevisprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/xenopuslaevisprobe/xenopuslaevisprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="06a25268a5ab57bddf28bbb364ea977b")
+	version("2.18.0", sha256="fc02bcffec01db3aff71f74e28df1a9685f26ce84178c011ee6f3f613f092b5f")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RAnnmap(RPackage):
 	bioc = "annmap" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/annmap_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/annmap/annmap_1.44.0.tar.gz"]
 
-	version("1.44.0", md5="4e793a7c30de8248f566e7c14bf3fa90")
+	version("1.44.0", sha256="485692771e81e88e01dba70d450fca651204fa2709ba6396594f462261c3c0bd")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

@@ -16,7 +16,7 @@ class RSpatialfeatureexperiment(RPackage):
 	bioc = "SpatialFeatureExperiment" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpatialFeatureExperiment_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpatialFeatureExperiment/SpatialFeatureExperiment_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="56d4ad5144861bea16c2f677e096ac75")
+	version("1.4.0", sha256="a67f7c39bd846a69fbd661a6b3f72648cd4e6ac553e75d925fec6256d5cc47fb")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

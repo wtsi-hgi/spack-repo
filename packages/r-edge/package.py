@@ -16,7 +16,7 @@ class REdge(RPackage):
 	bioc = "edge" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/edge_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/edge/edge_2.34.0.tar.gz"]
 
-	version("2.34.0", md5="89d1683b6b4f9723b4c4fcef6972d543")
+	version("2.34.0", sha256="ab6384378f978d0a52f7e26361f57bc30c465f7a2c6190654d4d799d645e8eea")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

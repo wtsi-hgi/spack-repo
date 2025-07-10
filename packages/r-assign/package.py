@@ -16,7 +16,7 @@ class RAssign(RPackage):
 	bioc = "ASSIGN" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASSIGN_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASSIGN/ASSIGN_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="c03c8eedec6379aa0fac65d11377fdf8")
+	version("1.38.0", sha256="fc406467d2628eda174342fc7fca1be9cb7a3f1c5c1c164e20c84695a2fb7995")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

@@ -16,7 +16,7 @@ class RQdnaseqMm10(RPackage):
 	bioc = "QDNAseq.mm10" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/QDNAseq.mm10_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/QDNAseq.mm10/QDNAseq.mm10_1.32.0.tar.gz"]
 
-	version("1.32.0", md5="2d7b80c2bec7146aec28384b7875acca", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/QDNAseq.mm10_1.32.0.tar.gz")
+	version("1.32.0", sha256="e6dda2030d080e0168dc7c3475590ef79f3ef54bf8781c4864382cdc2bb3a474", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/QDNAseq.mm10_1.32.0.tar.gz")
 
 	depends_on("r@3.2.1:", type=("build", "run"))
 	depends_on("r-qdnaseq", type=("build", "run"))

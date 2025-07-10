@@ -7,7 +7,7 @@ from spack.package import *
 
 
 class RBiocversion(RPackage):
-	version("3.18.1", md5="46dbe2f6ca9c058b24da1bd98f79631e")
+	version("3.18.1", sha256="a5c8ea9ffcbd52fc7bf305bb9c58c988f590db2c5eb7114455a32fea43319997")
 	version("3.17.1", commit="a2d0c4c489be1cafdb51bf8d205161429b09ac7f")
 	version("3.16.0", commit="c681e06fe30ea6815f958c1a3c74c090863680ba")
 	version("3.15.2", commit="818ab03b6a3551993b712e3702126040f9fb7600")

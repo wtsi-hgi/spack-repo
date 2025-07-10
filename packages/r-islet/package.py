@@ -15,7 +15,7 @@ class RIslet(RPackage):
 	bioc = "ISLET" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ISLET_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ISLET/ISLET_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="5cf5ae7df60062c1822ca64c3989a4e0")
+	version("1.4.0", sha256="7c6063f16c2ee43f03651bdacc4b0b578896ee65d474e184330d93954ac0f235")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

@@ -16,7 +16,7 @@ class RRisa(RPackage):
 	bioc = "Risa" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Risa_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Risa/Risa_1.44.0.tar.gz"]
 
-	version("1.44.0", md5="3d0fb12044023bc34defac509b8b4ab6")
+	version("1.44.0", sha256="58b0cbf8382040a2cc9842c870019e59285a3ee8f0784edf75ae1eaa49271890")
 
 	depends_on("r@2.0.9:", type=("build", "run"))
 	depends_on("r-biobase@2.4:", type=("build", "run"))

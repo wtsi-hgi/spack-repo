@@ -15,7 +15,7 @@ class RBiocsklearn(RPackage):
 	bioc = "BiocSklearn" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocSklearn_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocSklearn/BiocSklearn_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="a3df49031172bfd2b2a3b1c242b7dd40")
+	version("1.24.0", sha256="dd1b554ced14c0908a342ad39e02ddec68648301fe10b8ef6cadc4c7ec880907")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-reticulate", type=("build", "run"))

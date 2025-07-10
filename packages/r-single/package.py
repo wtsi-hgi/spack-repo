@@ -15,7 +15,7 @@ class RSingle(RPackage):
 	bioc = "single" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/single_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/single/single_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="61242086622646ed92a4304d33bc1457")
+	version("1.6.0", sha256="fabdd3503ab53c35e34b96b569b21bf1382cfe90cbe726b8163670476d23051b")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

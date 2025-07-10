@@ -16,7 +16,7 @@ class RBrainflowprobes(RPackage):
 	bioc = "brainflowprobes" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/brainflowprobes_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/brainflowprobes/brainflowprobes_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="eb9efebe165aeeae35ccc6b115836937")
+	version("1.16.0", sha256="0bbf1bb4816310ac368d317fa5ea793ffa799d4272edd5aa61091e6dc551ef19")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biostrings@2.52:", type=("build", "run"))

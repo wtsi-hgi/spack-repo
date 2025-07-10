@@ -15,7 +15,7 @@ class RRestfulse(RPackage):
 	bioc = "restfulSE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/restfulSE_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/restfulSE/restfulSE_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="80c91d615f5ff4997fce69087d3ea106")
+	version("1.24.0", sha256="d44b0bfd3b818e341788a926bf2f893f21d73797dbff3d9d24c377ebb7f38044")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -16,7 +16,7 @@ class RSomnibus(RPackage):
 	bioc = "SOMNiBUS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SOMNiBUS_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SOMNiBUS/SOMNiBUS_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="0865c015122f915127302bf751a10812")
+	version("1.10.0", sha256="4f464b57f1b26664210e3b43072969ec4eb77f6f1c7b0b15149692994318ba89")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

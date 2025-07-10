@@ -16,7 +16,7 @@ class RMethrix(RPackage):
 	bioc = "methrix" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methrix_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methrix/methrix_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="7bdda59fc802fc09d10ca9a4916cfe94")
+	version("1.16.0", sha256="c2ceb7bbdf73d9ff37440cc00cbf8978cb191c0a6064578bf0767515c7adcdfb")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-data-table@1.12.4:", type=("build", "run"))

@@ -19,7 +19,7 @@ class RAneufinder(RPackage):
 	version("1.8.0", commit="36a729d244add5aafbe21c37a1baaea6a50354d3")
 	version("1.6.0", commit="0cfbdd1951fb4df5622e002260cfa86294d65d1d")
 	version("1.4.0", commit="e5bdf4d5e4f84ee5680986826ffed636ed853b8e")
-	version("1.30.0", md5="421efa90a617606c8db2c947d302c6b1")
+	version("1.30.0", sha256="34604a3d07d9c641280706ba3c2dad4b7e6e57bd50bf8e2916e105162430fb74")
 	version("1.28.0", commit="e17d810171bdab1c6a26a3ab7b7931db4e073e7e")
 	version("1.26.0", commit="7cd59a1e24c6512f2e4fcbe2c53a0d3cd2d06217")
 	version("1.24.0", commit="4c6906eee514eba3e8ac159654a6953e37a99bba")

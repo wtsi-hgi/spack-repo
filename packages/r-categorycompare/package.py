@@ -16,7 +16,7 @@ class RCategorycompare(RPackage):
 	bioc = "categoryCompare" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/categoryCompare_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/categoryCompare/categoryCompare_1.46.0.tar.gz"]
 
-	version("1.46.0", md5="9809c7142b4af81d181bf8d8f7e0f815")
+	version("1.46.0", sha256="043df1a80bfce24b3a62b0dc2f01509c8801f8c60751b0337adc118e2750aa0d")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

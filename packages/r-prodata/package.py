@@ -15,7 +15,7 @@ class RProdata(RPackage):
 	bioc = "ProData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ProData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ProData/ProData_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="73f3449db86899c83d61173f6bd02a79")
+	version("1.40.0", sha256="6296eb2fe5ed73a2bab4a09722027955beb033d7b4c1b02c395fcc4102723d25")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

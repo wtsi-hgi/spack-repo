@@ -16,7 +16,7 @@ class RCrisprviz(RPackage):
 	bioc = "crisprViz" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crisprViz_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crisprViz/crisprViz_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="a95c0cc87c7934da1e9bbfeb1e27bd3a")
+	version("1.4.0", sha256="c78fc7039ff22dc3dfcb5be63f27e4ba79a289a45e161f90531cc9b24455939e")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-crisprbase@0.99.15:", type=("build", "run"))

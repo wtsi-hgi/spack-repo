@@ -16,7 +16,7 @@ class RBiocpkgtools(RPackage):
 	bioc = "BiocPkgTools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocPkgTools_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocPkgTools/BiocPkgTools_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="a0ab7353a78b22b286d22520faff6142")
+	version("1.20.0", sha256="24acf9eacba1c0fec20d7a208d10e380b61d01fc8e09d62ceb61e8a66237916b")
 
 	depends_on("r-htmlwidgets", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))

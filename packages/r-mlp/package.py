@@ -15,7 +15,7 @@ class RMlp(RPackage):
 	bioc = "MLP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MLP_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MLP/MLP_1.50.0.tar.gz"]
 
-	version("1.50.0", md5="5ed5a850807679b4baa1c5d4d88f48d6")
+	version("1.50.0", sha256="9093f4a28a2c7d8dc13000dadf362d0207cb9127cf09175e6cb00582bac00642")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

@@ -16,7 +16,7 @@ class RMobilitytransformr(RPackage):
 	bioc = "MobilityTransformR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MobilityTransformR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MobilityTransformR/MobilityTransformR_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="1d0f7904be49e25235092248b757df19")
+	version("1.6.0", sha256="3091172dc69b9eaa26befeafba4dc836c1b45ffbdb14d920703fc48fc0742289")
 
 	depends_on("r-msnbase", type=("build", "run"))
 	depends_on("r@4.2:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RTest3probe(RPackage):
 	bioc = "test3probe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/test3probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/test3probe/test3probe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="ffcbfee4e5c486fd03b2b9b64820340c")
+	version("2.18.0", sha256="affaed133f825fbe64ce9a46ded6eb4bf76d32a3b8d90d4d9b1f20fd9426ba00")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RDeqms(RPackage):
 	bioc = "DEqMS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEqMS_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEqMS/DEqMS_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="bc308e6f683ca1bf0dcdb703274575ac")
+	version("1.20.0", sha256="85cb1cef0af0933c96da01fb23e592685cba94ae4d7bd20f7c5cf652653280e4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

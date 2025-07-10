@@ -15,7 +15,7 @@ class RMu11ksubbcdf(RPackage):
 	bioc = "mu11ksubbcdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mu11ksubbcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mu11ksubbcdf/mu11ksubbcdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="f9691ea74e19dfe57bf6cca6ed396947")
+	version("2.18.0", sha256="7388570b9916a414ed5164e590d46e175fff0c074d0f59587ae3dd4000d652b5")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

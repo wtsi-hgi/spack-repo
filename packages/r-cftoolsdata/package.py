@@ -16,7 +16,7 @@ class RCftoolsdata(RPackage):
 	bioc = "cfToolsData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/cfToolsData_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/cfToolsData/cfToolsData_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="00bbf328a45fb8731b3c7262b3521e0b")
+	version("1.0.0", sha256="890eda9e8afc62f0e4c90af921328b0836afcbb5ae698be2f6f0a58429259945")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

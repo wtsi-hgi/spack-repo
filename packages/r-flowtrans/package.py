@@ -15,7 +15,7 @@ class RFlowtrans(RPackage):
 	bioc = "flowTrans" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowTrans_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowTrans/flowTrans_1.54.0.tar.gz"]
 
-	version("1.54.0", md5="d98daa4177e5f6b8cda8d8475e34c09a")
+	version("1.54.0", sha256="ffc70e970ae8174e7068d812fce924e53496ea55a448d57fe129a4eedf58db61")
 
 	depends_on("r@2.11:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

@@ -15,7 +15,7 @@ class RFlowbeads(RPackage):
 	bioc = "flowBeads" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowBeads_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowBeads/flowBeads_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="3c9aa4f78c8b1b2397d6004773311174")
+	version("1.40.0", sha256="d43c07bdde49b40fa27d1f4431824299cd4d8fc6aa1eab6fb12d8582e9310b43")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

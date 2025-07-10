@@ -16,7 +16,7 @@ class ROntoproc(RPackage):
 	bioc = "ontoProc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ontoProc_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ontoProc/ontoProc_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="157cb78951de651c6be909aef51480a5")
+	version("1.24.0", sha256="38d15039df3acb8c3391592547143fa4f85b94005c9bfdaf98466e27a4bcbf95")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ontologyindex", type=("build", "run"))

@@ -15,7 +15,7 @@ class RPdCyrgene10St(RPackage):
 	bioc = "pd.cyrgene.1.0.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.cyrgene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.cyrgene.1.0.st/pd.cyrgene.1.0.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="63228c07d3d16d6c62e9c0e83f10a855")
+	version("3.12.0", sha256="cdd23cdab0575c459f808d5f842412e2d2ce47cf1b42903c18222b5519cff9e8")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

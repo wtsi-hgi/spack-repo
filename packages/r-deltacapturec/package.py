@@ -15,7 +15,7 @@ class RDeltacapturec(RPackage):
 	bioc = "deltaCaptureC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/deltaCaptureC_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/deltaCaptureC/deltaCaptureC_1.16.1.tar.gz"]
 
-	version("1.16.1", md5="c3c251bcd54efd053ecdbe1e434a5ffe")
+	version("1.16.1", sha256="2e40fd19dddc7a2fff077b9a5ad917d1726604a3b84aa7e51c88f9f4a645bc53")
 	version("1.16.0", md5="e70cf57b6d22164dd5712a3441b0a788")
 
 	depends_on("r@3.6:", type=("build", "run"))

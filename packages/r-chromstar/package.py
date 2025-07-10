@@ -16,7 +16,7 @@ class RChromstar(RPackage):
 	bioc = "chromstaR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chromstaR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chromstaR/chromstaR_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="4288983863e4523b5c7e7750691e8987")
+	version("1.28.0", sha256="a68b7767d8ae6961414a41786c8684cf5e508ba0ae19f824f1eb78743b66d3fb")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

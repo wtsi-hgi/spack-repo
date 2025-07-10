@@ -15,7 +15,7 @@ class RClusterjudge(RPackage):
 	bioc = "ClusterJudge" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ClusterJudge_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ClusterJudge/ClusterJudge_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="1f1db5b57d83f67f60de690e6f224bde")
+	version("1.24.0", sha256="89f2290651034b91ba8f9d911f55090ae3c4dc28d27533753e1963d60212b9bc")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-infotheo", type=("build", "run"))

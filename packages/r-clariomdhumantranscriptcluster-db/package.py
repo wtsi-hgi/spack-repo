@@ -15,7 +15,7 @@ class RClariomdhumantranscriptclusterDb(RPackage):
 	bioc = "clariomdhumantranscriptcluster.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/clariomdhumantranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/clariomdhumantranscriptcluster.db/clariomdhumantranscriptcluster.db_8.8.0.tar.gz"]
 
-	version("8.8.0", md5="80739a70d77ab785231a9367938035a8")
+	version("8.8.0", sha256="b79c7b010111999603659b4c0591a9156a9010abcc843d29be2221d94dd7cbe3")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -15,7 +15,7 @@ class RHu35ksubccdf(RPackage):
 	bioc = "hu35ksubccdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hu35ksubccdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hu35ksubccdf/hu35ksubccdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="de96e69680c5f8747c99d170272d7c3c")
+	version("2.18.0", sha256="f15a047c6912c5c196389c06e8aa4ddc81781e49856f043128923dab0f57cc3b")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

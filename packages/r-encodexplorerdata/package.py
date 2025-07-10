@@ -15,7 +15,7 @@ class REncodexplorerdata(RPackage):
 	bioc = "ENCODExplorerData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ENCODExplorerData_0.99.5.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ENCODExplorerData/ENCODExplorerData_0.99.5.tar.gz"]
 
-	version("0.99.5", md5="c6d9b491548529db0739b79c98adacd7")
+	version("0.99.5", sha256="70cfc18dd800a084ec186826f3740c4397cf80359c4ac219d12ef78b68a9ee01")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

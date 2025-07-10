@@ -16,7 +16,7 @@ class RMade4(RPackage):
 	bioc = "made4" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/made4_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/made4/made4_1.76.0.tar.gz"]
 
-	version("1.76.0", md5="ae8a8a420c5f5ebd8a729767baf0a762", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/made4_1.76.0.tar.gz")
+	version("1.76.0", sha256="8f0137af7c5e0947d80959056056cb92dd997221eede37feb608ca4abf8ed00d", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/made4_1.76.0.tar.gz")
 
 	depends_on("r-rcolorbrewer", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

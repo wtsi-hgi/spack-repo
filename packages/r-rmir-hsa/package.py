@@ -15,7 +15,7 @@ class RRmirHsa(RPackage):
 	bioc = "RmiR.hsa" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/RmiR.hsa_1.0.5.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/RmiR.hsa/RmiR.hsa_1.0.5.tar.gz"]
 
-	version("1.0.5", md5="f22a18d1a34d12f8fc4ba3daaf1379fd")
+	version("1.0.5", sha256="7f2cbbf49dcd8263335e7f8670a1c17b615c22fde02dc7d3253abf2efb1ec6b0")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -16,7 +16,7 @@ class RMethinheritsim(RPackage):
 	bioc = "methInheritSim" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methInheritSim_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methInheritSim/methInheritSim_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="c695628dcb686ee7e6a3f4ee134481ff")
+	version("1.24.0", sha256="1c71c13b023b3806790ed1982761488db186c9d49c973f3a27b401d64ae04f87")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-methylkit", type=("build", "run"))

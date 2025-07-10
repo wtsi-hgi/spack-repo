@@ -16,7 +16,7 @@ class RDecontam(RPackage):
 	bioc = "decontam" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/decontam_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/decontam/decontam_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="0e6be1cbff9c4396692e39aadc0a5b9e")
+	version("1.22.0", sha256="736b270861e029e47b7b9958fe38bda6c6b833ebe8e98b54e2e766ddb1699f54")
 
 	depends_on("r@3.4.1:", type=("build", "run"))
 	depends_on("r-ggplot2@2.1:", type=("build", "run"))

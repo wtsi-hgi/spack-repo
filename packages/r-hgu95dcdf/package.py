@@ -15,7 +15,7 @@ class RHgu95dcdf(RPackage):
 	bioc = "hgu95dcdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu95dcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu95dcdf/hgu95dcdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="36e11ff001b1bec3f34ba7c93132ad6f")
+	version("2.18.0", sha256="80e14e2aaf5fb139c04a247f1f868a2fcebee96b710a6de18ad8696ce68ac068")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

@@ -15,7 +15,7 @@ class RArabidopsisDb0(RPackage):
 	bioc = "arabidopsis.db0" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/arabidopsis.db0_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/arabidopsis.db0/arabidopsis.db0_3.18.0.tar.gz"]
 
-	version("3.18.0", md5="5896dbae0f9f8fdc87712dba0bb6cbd1", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/arabidopsis.db0_3.18.0.tar.gz")
+	version("3.18.0", sha256="6540aac2cf57aa81231da4a4cb460f1519c6b7d63ba92e8520ce2a837fde62b7", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/arabidopsis.db0_3.18.0.tar.gz")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))

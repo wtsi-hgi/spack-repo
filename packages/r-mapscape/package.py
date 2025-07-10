@@ -15,7 +15,7 @@ class RMapscape(RPackage):
 	bioc = "mapscape" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mapscape_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mapscape/mapscape_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="dc197aa43e86dc49fef0d85d2ead252c")
+	version("1.26.0", sha256="93b804c629fe9bd78f263bf681d103889b2842c0be34e794f04b4b57f288fd94")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-htmlwidgets@0.5:", type=("build", "run"))

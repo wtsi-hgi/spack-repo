@@ -15,7 +15,7 @@ class RRtpca(RPackage):
 	bioc = "Rtpca" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rtpca_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rtpca/Rtpca_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="671f34f1c510812fc37d66ed50378d75")
+	version("1.12.0", sha256="ec0e64e6a26f7d0ff9c5ab734e1fd76f3272b2b57de5e2fa1a5309cd8f20ba93")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -15,7 +15,7 @@ class RBiodist(RPackage):
 	bioc = "bioDist" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bioDist_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bioDist/bioDist_1.74.0.tar.gz"]
 
-	version("1.74.0", md5="a0c907dc82834b4771074cd8164cf773")
+	version("1.74.0", sha256="bf2b9c5d478f2845cb73c23bb1c4a0f0070fbb6c6d20cc36274ff18496f6f759")
 
 	depends_on("r@2:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

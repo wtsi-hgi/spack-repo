@@ -15,7 +15,7 @@ class RSanta(RPackage):
 	bioc = "SANTA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SANTA_2.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SANTA/SANTA_2.38.0.tar.gz"]
 
-	version("2.38.0", md5="1b2b87312bb663905abbc444be13a056")
+	version("2.38.0", sha256="1e647f1f8133a7070d83e9661afc7ea11ba8845922c07a518e3ab1212f88a93e")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

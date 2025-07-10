@@ -16,7 +16,7 @@ class RSquadd(RPackage):
 	bioc = "SQUADD" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SQUADD_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SQUADD/SQUADD_1.52.0.tar.gz"]
 
-	version("1.52.0", md5="8837e27ab065ddae145da3cc5ca2ad32")
+	version("1.52.0", sha256="064abffe42d9c6ce0e64bd8e702b9d5c7a39a64793f8d7e428b351253aace76d")
 
 	depends_on("r@2.11:", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

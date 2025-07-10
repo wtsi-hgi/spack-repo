@@ -15,7 +15,7 @@ class RPdXenopusLaevis(RPackage):
 	bioc = "pd.xenopus.laevis" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.xenopus.laevis_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.xenopus.laevis/pd.xenopus.laevis_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="6d5c2c9e8e3891770b1c6e9dcd823c0d")
+	version("3.12.0", sha256="3e81b1c1cef82e71fc612d79eead185aeb088198bcf57c4de04de8325549adbb")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

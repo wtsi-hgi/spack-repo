@@ -15,7 +15,7 @@ class RReceptloss(RPackage):
 	bioc = "receptLoss" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/receptLoss_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/receptLoss/receptLoss_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="3ccddd0181e8b78b843807d1378f86ef")
+	version("1.14.0", sha256="4cb2d7a3090bd0cd3fb867ef91c73bf867d39bca92cc55b63cb43b868abcaa65")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

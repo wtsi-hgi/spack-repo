@@ -19,7 +19,7 @@ class REdger(RPackage):
 
 	bioc = "edgeR"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/edgeR_4.0.16.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/edgeR/edgeR_4.0.16.tar.gz"]
-	version("4.0.16", md5="8fb1c6c67e29d299c991d16d0f6c5f5b")
+	version("4.0.16", sha256="d145e4f8423632dbea1cf1c2e53ae72ea05a937924090f3c4aff6bcd035cd449")
 	version("3.42.0", commit="197b9a8ccc27016611b262c2c31ca22f991661c5")
 	version("3.40.0", commit="0b25adcc6b3cb0a8c641964d1274536ee07ee162")
 	version("3.38.4", commit="f5a3bb568a23b34146ac66329a95ee4785093536")

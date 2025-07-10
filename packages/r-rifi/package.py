@@ -15,7 +15,7 @@ class RRifi(RPackage):
 	bioc = "rifi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rifi_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rifi/rifi_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="5d070b26ca40e04e4e3f9851853caa48")
+	version("1.6.0", sha256="82ea553367f6850b21ce41e9e1e791f269f1ed5c782a1ded795a69633ee71634")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-car", type=("build", "run"))

@@ -15,7 +15,7 @@ class RBus(RPackage):
 	bioc = "BUS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BUS_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BUS/BUS_1.58.0.tar.gz"]
 
-	version("1.58.0", md5="788ab26ecf05f0df93667a7c37f564ff")
+	version("1.58.0", sha256="1bd8eb34b1a9633bea42dd203222cfd84197f2874aeeafaef746865e68858e94")
 
 	depends_on("r@2.3:", type=("build", "run"))
 	depends_on("r-minet", type=("build", "run"))

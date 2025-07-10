@@ -16,7 +16,7 @@ class RMetaseqr2(RPackage):
 	bioc = "metaseqR2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metaseqR2_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metaseqR2/metaseqR2_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="93f754d60de0b3db00aca9ee5eef3a20", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metaseqR2_1.14.0.tar.gz")
+	version("1.14.0", sha256="c590809d04fdcd8b7f3de13f531cfbc60b2aa47ab697926b1fcfc8683652e9e9", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metaseqR2_1.14.0.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-deseq2", type=("build", "run"))

@@ -16,7 +16,7 @@ class RRibocrypt(RPackage):
 	bioc = "RiboCrypt" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RiboCrypt_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RiboCrypt/RiboCrypt_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="b5551bc35ad9798b4b1b401f7a08b280")
+	version("1.8.0", sha256="6f3312bced7bee7c18ab262b715b9a9babc1b67280592170ff85892454d412a5")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-orfik@1.13.12:", type=("build", "run"))

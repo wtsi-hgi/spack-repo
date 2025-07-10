@@ -15,7 +15,7 @@ class RBovineprobe(RPackage):
 	bioc = "bovineprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/bovineprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/bovineprobe/bovineprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="9f9e25fc8c7a76acf541745b7c09748b")
+	version("2.18.0", sha256="31546a053baf33f494e74961e5b6a93a952aad6702baecacc8d1ead98a728a44")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

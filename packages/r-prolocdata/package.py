@@ -16,7 +16,7 @@ class RProlocdata(RPackage):
 	bioc = "pRolocdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/pRolocdata_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/pRolocdata/pRolocdata_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="8aafd04221b21588077788ec79272e1a")
+	version("1.40.0", sha256="f1c405105a5ea16a4343112d710842065722c6a773db904d6bbea789ced15e7e")
 
 	depends_on("r@3.6.3:", type=("build", "run"))
 	depends_on("r-msnbase", type=("build", "run"))

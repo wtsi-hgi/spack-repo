@@ -29,7 +29,7 @@ class RGofuncr(RPackage):
 	bioc = "GOfuncR"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOfuncR_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOfuncR/GOfuncR_1.22.2.tar.gz"]
 	version("1.4.0", commit="2f633dc28e3faeddc5346fcdcadf1c29e3fcf709")
-	version("1.22.2", md5="d1b00ef5711c3012a11f52cc7312d60b")
+	version("1.22.2", sha256="4ae9c332d1423395c0e0de279b866993528ed4bd482c5b6005a31054f0408400")
 	version("1.20.0", commit="2374d68fdd13a72bc8d43cc3b5e6735228996ff1")
 	version("1.2.0", commit="140a3cea4fe34d32fef9be756f85e337ce3deded")
 	version("1.18.0", commit="49182411e40a5d72abf99a5cca9287f34f870b19")

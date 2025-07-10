@@ -15,7 +15,7 @@ class RPaeg1aprobe(RPackage):
 	bioc = "paeg1aprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/paeg1aprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/paeg1aprobe/paeg1aprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="493fa1fc7b92a78c8114b65038113c42")
+	version("2.18.0", sha256="de2fe281ee7882e93ced9482e91edc3245fd85b3d08ef484ff36392e00697e41")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

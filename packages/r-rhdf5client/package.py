@@ -15,7 +15,7 @@ class RRhdf5client(RPackage):
 	bioc = "rhdf5client" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rhdf5client_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rhdf5client/rhdf5client_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="9205b30177d59d75b7e544f795a90de5")
+	version("1.24.0", sha256="441b144dc73c4c34a84e9d335781679b8b57d2bf1d84656d41b7ad5782975156")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-delayedarray", type=("build", "run"))

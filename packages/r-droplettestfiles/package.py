@@ -15,7 +15,7 @@ class RDroplettestfiles(RPackage):
 	bioc = "DropletTestFiles" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DropletTestFiles_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DropletTestFiles/DropletTestFiles_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="5a3a3f0d0901c90c6a2b173b976c4868")
+	version("1.12.0", sha256="037c706507058f22f6194efa14783b5746505886753216f4086a203d53ebc828")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

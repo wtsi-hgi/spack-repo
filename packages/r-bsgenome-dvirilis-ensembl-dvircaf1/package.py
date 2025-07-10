@@ -15,7 +15,7 @@ class RBsgenomeDvirilisEnsemblDvircaf1(RPackage):
 	bioc = "BSgenome.Dvirilis.Ensembl.dvircaf1" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Dvirilis.Ensembl.dvircaf1_1.4.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Dvirilis.Ensembl.dvircaf1/BSgenome.Dvirilis.Ensembl.dvircaf1_1.4.3.tar.gz"]
 
-	version("1.4.3", md5="6a6a6dc7b2d68a741c85525045a67890", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Dvirilis.Ensembl.dvircaf1_1.4.3.tar.gz")
+	version("1.4.3", sha256="15ed0f5e749078d0cf49b17029b6d178dfcf846170943e6e9aa9d6d12fd49837", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Dvirilis.Ensembl.dvircaf1_1.4.3.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 

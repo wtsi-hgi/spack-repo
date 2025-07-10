@@ -15,7 +15,7 @@ class RTxdbGgallusUcscGalgal4Refgene(RPackage):
 	bioc = "TxDb.Ggallus.UCSC.galGal4.refGene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Ggallus.UCSC.galGal4.refGene_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Ggallus.UCSC.galGal4.refGene/TxDb.Ggallus.UCSC.galGal4.refGene_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="d50eb467227cd9077a7a690ae6934d11")
+	version("3.12.0", sha256="a50a8c97d195c986ca062c7cce10b1a1abca69cd0726e9a0efec9f0ef1d63531")
 
 	depends_on("r-genomicfeatures@1.41.3:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

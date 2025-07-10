@@ -15,7 +15,7 @@ class RMouse430a2frmavecs(RPackage):
 	bioc = "mouse430a2frmavecs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mouse430a2frmavecs_1.3.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mouse430a2frmavecs/mouse430a2frmavecs_1.3.0.tar.gz"]
 
-	version("1.3.0", md5="3bcb8de9182bbb8de5d560748eafa0cc")
+	version("1.3.0", sha256="08da8517645125999e6c0f3d76b1aff45c6eee0d76ae9a784387cf493e76692d")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

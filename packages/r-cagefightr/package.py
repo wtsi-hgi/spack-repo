@@ -16,7 +16,7 @@ class RCagefightr(RPackage):
 	bioc = "CAGEfightR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CAGEfightR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CAGEfightR/CAGEfightR_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="86c87a4bec49d7c37ef74a6a6081a685")
+	version("1.22.0", sha256="80fd09e31d654bac277962dfee644c4b09ef3a0148c14b8ee51147f2f4cf7d41")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges@1.30.1:", type=("build", "run"))

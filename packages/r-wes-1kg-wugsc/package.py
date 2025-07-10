@@ -15,6 +15,6 @@ class RWes1kgWugsc(RPackage):
 	bioc = "WES.1KG.WUGSC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/WES.1KG.WUGSC_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/WES.1KG.WUGSC/WES.1KG.WUGSC_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="a0a3d230e27342090638ec4868756e5a")
+	version("1.34.0", sha256="545af75217502ede37421b2fa794a411d960d51b3eba88cea590d0a2c3251fdd")
 
 

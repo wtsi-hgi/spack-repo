@@ -15,7 +15,7 @@ class RMeshdbi(RPackage):
 	bioc = "MeSHDbi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MeSHDbi_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MeSHDbi/MeSHDbi_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="edb738bd5c18f7017ebd13bd0cce9d2f")
+	version("1.38.0", sha256="284be71bb511be9796a85e54f6f2f2bbaea91d8f6bebf9b7dab169395dae548c")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.31.19:", type=("build", "run"))

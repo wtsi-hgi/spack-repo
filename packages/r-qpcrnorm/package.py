@@ -15,7 +15,7 @@ class RQpcrnorm(RPackage):
 	bioc = "qpcrNorm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qpcrNorm_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qpcrNorm/qpcrNorm_1.60.0.tar.gz"]
 
-	version("1.60.0", md5="43fa513309301e6d8e89fcef668c7b28")
+	version("1.60.0", sha256="4cf961759d309f5f2c093ac92358f4120a2127a911410b569689e484f2905247")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

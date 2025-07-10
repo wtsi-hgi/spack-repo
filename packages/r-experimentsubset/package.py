@@ -15,7 +15,7 @@ class RExperimentsubset(RPackage):
 	bioc = "ExperimentSubset" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExperimentSubset_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExperimentSubset/ExperimentSubset_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="fc52b3d67f7f9641a3851f987af7cdee")
+	version("1.12.0", sha256="1c6adbf93a28d61ec16f57cdcd2d1c34e9e0a5ccc52049f628cf794097b7cd2a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

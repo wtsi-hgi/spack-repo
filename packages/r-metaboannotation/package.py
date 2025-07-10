@@ -16,7 +16,7 @@ class RMetaboannotation(RPackage):
 	bioc = "MetaboAnnotation" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetaboAnnotation_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetaboAnnotation/MetaboAnnotation_1.6.1.tar.gz"]
 
-	version("1.6.1", md5="fee181fc1795a1e2bde1d1e551f1a45e")
+	version("1.6.1", sha256="7ba37b6a82c6725fc79de69ab7f37ab6af7e17b4dee4973c9ed5fc073eaa54bd")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

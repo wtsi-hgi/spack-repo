@@ -15,7 +15,7 @@ class RSpaniel(RPackage):
 	bioc = "Spaniel" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Spaniel_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Spaniel/Spaniel_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="fb29666756a1db567f16b5c72420de4c")
+	version("1.16.0", sha256="ea37cf8e9dec7efb03e8aaa1796da32b3e44fa7e9aff0549f01bf8a7a9fe0d32")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-seurat", type=("build", "run"))

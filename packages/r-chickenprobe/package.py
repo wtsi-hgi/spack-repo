@@ -15,7 +15,7 @@ class RChickenprobe(RPackage):
 	bioc = "chickenprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/chickenprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/chickenprobe/chickenprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="b33599081ce1ba768ff7992e143c01d0")
+	version("2.18.0", sha256="a3c50be4d3e790b0bea7db8559de5f44707dbc7d43f79333d5dc9de71d8fbab9")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

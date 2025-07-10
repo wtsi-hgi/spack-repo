@@ -15,7 +15,7 @@ class RPdHuex10StV2(RPackage):
 	bioc = "pd.huex.1.0.st.v2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.huex.1.0.st.v2_3.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.huex.1.0.st.v2/pd.huex.1.0.st.v2_3.14.1.tar.gz"]
 
-	version("3.14.1", md5="f4c4836c53447890b75b012efbdef3e9", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.huex.1.0.st.v2_3.14.1.tar.gz")
+	version("3.14.1", sha256="eafd4726428920b930284cbfd48b265ff003472563cdea20ca85ef17bcdc14b2", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.huex.1.0.st.v2_3.14.1.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RSctensor(RPackage):
 	bioc = "scTensor" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scTensor_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scTensor/scTensor_2.12.0.tar.gz"]
 
-	version("2.12.0", md5="cfbb59a88b526fe373aacf4b1b1a5a97")
+	version("2.12.0", sha256="f1240c18eb9274ad5db6e67d850de7acdda1240e29744bfc042f017a077e01d3")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rsqlite", type=("build", "run"))

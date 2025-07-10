@@ -16,7 +16,7 @@ class RHighthroughputassays(RPackage):
 	bioc = "highthroughputassays" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/highthroughputassays_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/highthroughputassays/highthroughputassays_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="03d7477f8db26efff92737a67ed6ec5c")
+	version("1.26.0", sha256="0544bce520ea1426eed813fc3db81fb7a047688864347c926389445c90de4fce")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

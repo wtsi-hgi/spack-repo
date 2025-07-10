@@ -16,7 +16,7 @@ class RRprimer(RPackage):
 	bioc = "rprimer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rprimer_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rprimer/rprimer_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="f866266895669cd0e898d1ffb0df86fa")
+	version("1.6.0", sha256="6326c6c1e9f2eec7725781d170151289802bdda4eb237372c480c46f546787c0")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

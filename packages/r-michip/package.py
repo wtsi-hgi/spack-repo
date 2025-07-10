@@ -15,7 +15,7 @@ class RMichip(RPackage):
 	bioc = "MiChip" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MiChip_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MiChip/MiChip_1.56.0.tar.gz"]
 
-	version("1.56.0", md5="28daafdf6588314a9fad7a75b1671c10")
+	version("1.56.0", sha256="5697123140850b6fc6f2e5a1e6276c1b3c86409ca6977afa5eeacab7dc61e545")
 
 	depends_on("r@2.3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -16,7 +16,7 @@ class RSpasim(RPackage):
 	bioc = "spaSim" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spaSim_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spaSim/spaSim_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="d69e70975aaaa9bffc5e52f95885e59c")
+	version("1.4.0", sha256="73fd96426fae25af657f6585746132fcf83798b59c8fd9ff620d9b852ace4638")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

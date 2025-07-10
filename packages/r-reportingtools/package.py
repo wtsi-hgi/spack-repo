@@ -23,7 +23,7 @@ class RReportingtools(RPackage):
 
 	bioc = "ReportingTools"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ReportingTools_2.42.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ReportingTools/ReportingTools_2.42.3.tar.gz"]
-	version("2.42.3", md5="71afa63c0311b91a64a17d476a16eb44")
+	version("2.42.3", sha256="e8c0d86a2570add93957ed38a81486a0a8f4f9fa4df9c668765636a95bae3b81")
 	version("2.40.0", commit="808af36aa9756be8c907a8669726c90dcd02c73c")
 	version("2.38.0", commit="5c4971eebbaf3577ef20b74bf36c2db4e91561cc")
 	version("2.36.0", commit="34122d4bde5ce43415f63f2e39e3a088c55282cc")

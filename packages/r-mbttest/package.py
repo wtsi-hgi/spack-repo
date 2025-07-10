@@ -15,7 +15,7 @@ class RMbttest(RPackage):
 	bioc = "MBttest" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MBttest_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MBttest/MBttest_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="35c603063456aab63ffa0ebfc67a3c16")
+	version("1.30.0", sha256="535cda8e098f864edbe5c6a6b24ade3ca3b7c5d962b3d1ad6867ad3952f6ebd4")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

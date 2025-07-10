@@ -15,7 +15,7 @@ class RHgu133plus2cdf(RPackage):
 	bioc = "hgu133plus2cdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu133plus2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu133plus2cdf/hgu133plus2cdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="284fef2f0b777d7b53451538ddd53de3")
+	version("2.18.0", sha256="29f504f0133a0e18c096c8104999db63fcacdff7e86b8a9035318b4d59ddc90e")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

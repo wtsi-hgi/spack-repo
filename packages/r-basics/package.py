@@ -16,7 +16,7 @@ class RBasics(RPackage):
 	bioc = "BASiCS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BASiCS_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BASiCS/BASiCS_2.14.0.tar.gz"]
 
-	version("2.14.0", md5="1252fa180b0da21a4a22e3400550ab93")
+	version("2.14.0", sha256="88a911e7857c514dbebf8c2f45a2f6959ea9bb8804265e18bc5d87126c09c24d")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

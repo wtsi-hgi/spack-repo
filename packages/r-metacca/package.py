@@ -16,5 +16,5 @@ class RMetacca(RPackage):
 	bioc = "metaCCA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metaCCA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metaCCA/metaCCA_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="d5be58f253912b275964a681a508234d")
+	version("1.30.0", sha256="23c8b8919a70869caa74951df99c2ddb004037e9bc8367061e3cbd8adb5dbed7")
 

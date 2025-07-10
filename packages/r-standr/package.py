@@ -16,7 +16,7 @@ class RStandr(RPackage):
 	bioc = "standR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/standR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/standR/standR_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="94e29a2001fbb9d0bfa1488ae7039aa7")
+	version("1.6.0", sha256="1344313e0fb97c99f62e941771437459132b532dd4834eaf7b1cf9f6e6eab2d6")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

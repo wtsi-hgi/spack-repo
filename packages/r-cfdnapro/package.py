@@ -16,7 +16,7 @@ class RCfdnapro(RPackage):
 	bioc = "cfDNAPro" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cfDNAPro_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cfDNAPro/cfDNAPro_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="377fb633e850fcef49fbe86f3c4d1505")
+	version("1.8.0", sha256="f2cf246b77c6607d11745534b671759a17cd58720dc5a2986dfac7b43f64187f")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-magrittr@1.5:", type=("build", "run"))

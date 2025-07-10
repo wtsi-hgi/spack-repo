@@ -16,7 +16,7 @@ class ROpenstats(RPackage):
 	bioc = "OpenStats" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OpenStats_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OpenStats/OpenStats_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="0e8a0fcd25ca1377c5bce5068bfaabff")
+	version("1.14.0", sha256="fb01b12df339d2fede39a87952557c1df711d9aa3f35710d36de50f1111babf4")
 
 	depends_on("r-nlme", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

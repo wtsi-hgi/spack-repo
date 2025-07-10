@@ -15,7 +15,7 @@ class ROrgSsEgDb(RPackage):
 	bioc = "org.Ss.eg.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Ss.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.Ss.eg.db/org.Ss.eg.db_3.18.0.tar.gz"]
 
-	version("3.18.0", md5="f9b32c76d23f9195df7a7eb6529f3340")
+	version("3.18.0", sha256="1840341447de2711a97ac09f0c12d332a1c7eb7bfe79ff53b41aea0309e4194b")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))

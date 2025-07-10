@@ -18,7 +18,7 @@ class RBiocgenerics(RPackage):
     ]
 
     version("0.54.0", tag="RELEASE_3_21")
-    version("0.48.1", md5="77629e64c2a9a0324eb11bb59b53b126")
+    version("0.48.1", sha256="13e126709da888420f320353d6ea52da12a8cbd086f2e29b9cc3039a6411652b")
     version("0.46.0", commit="a90f0c5976a24417e47e009ba602fc98515ac9ab")
     version("0.44.0", commit="d7cd9c19958bd8d4573d980494188fa15ab16e45")
     version("0.42.0", commit="3582d47b836387afc08157f3d6a5013fd64334ed")

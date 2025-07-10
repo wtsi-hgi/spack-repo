@@ -16,7 +16,7 @@ class RBreastcancertransbig(RPackage):
 	bioc = "breastCancerTRANSBIG" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/breastCancerTRANSBIG_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/breastCancerTRANSBIG/breastCancerTRANSBIG_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="170d89ddd3e554da50a0b2b5d040a96e")
+	version("1.40.0", sha256="4dd9e78b4032967ffc46be7dec0ccbb8d0d3f9f78533588e50e8deb858f2090f")
 
 	depends_on("r@2.5:", type=("build", "run"))
 

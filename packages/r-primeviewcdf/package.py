@@ -15,7 +15,7 @@ class RPrimeviewcdf(RPackage):
 	bioc = "primeviewcdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/primeviewcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/primeviewcdf/primeviewcdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="71e39a59a5907e9b8a8dba58d36eee50")
+	version("2.18.0", sha256="887c91b09a4bd5cced4a0239bea6bc0d92acf062a8887cd36982dea5a2a04362")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

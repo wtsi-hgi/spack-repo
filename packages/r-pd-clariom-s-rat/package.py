@@ -15,7 +15,7 @@ class RPdClariomSRat(RPackage):
 	bioc = "pd.clariom.s.rat" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.clariom.s.rat_3.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.clariom.s.rat/pd.clariom.s.rat_3.14.1.tar.gz"]
 
-	version("3.14.1", md5="be464b3eaea8eb8bdbcca6047fce4dea")
+	version("3.14.1", sha256="040c7a3a1175a362c7e56f2eb47a45eb786e9507021598cabf720fce6edca0af")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

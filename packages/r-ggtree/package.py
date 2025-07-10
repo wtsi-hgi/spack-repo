@@ -24,7 +24,7 @@ class RGgtree(RPackage):
     version("3.4.4", commit="8e48d3e2ea445b6c2213f0471462108a7a72b333")
     version("3.4.0", commit="23f08a3da1829d1bbb6827ed1c4cf878daa4b539")
     version("3.2.1", commit="d3747e636fe1a6a9e09b56a3a3899208ebd05547")
-    version("3.10.1", md5="14911b3009b957dcf17ae513e87825fa")
+    version("3.10.1", sha256="2d8cb88817ca0d14416b4c3aec17cd05e27dc599587888d6d7041f53e02e87dc")
     version("3.10.0", md5="7e1894ce01245d811286b0ce1fbe8266")
 
     patch("rect_to_poly.patch", when="@3.6.2")

@@ -15,7 +15,7 @@ class RQplexdata(RPackage):
 	bioc = "qPLEXdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/qPLEXdata_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/qPLEXdata/qPLEXdata_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="af947f54391fc79c81308890b1e95d96")
+	version("1.20.0", sha256="aa1fbc8cadbf3831ca182a25c8f8cb07676a5c3b305408244abf548d217fca50")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-qplexanalyzer", type=("build", "run"))

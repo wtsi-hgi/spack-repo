@@ -15,7 +15,7 @@ class RMedme(RPackage):
 	bioc = "MEDME" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MEDME_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MEDME/MEDME_1.62.0.tar.gz"]
 
-	version("1.62.0", md5="03868c2e2f04af9c9f33d48cc6abed08")
+	version("1.62.0", sha256="505e7cb16c95d825bae0f69d781dfee8f87885ec4c2449c1c2e2bb7abacbde05")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

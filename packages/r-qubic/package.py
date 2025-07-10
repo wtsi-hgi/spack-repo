@@ -16,7 +16,7 @@ class RQubic(RPackage):
 	bioc = "QUBIC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QUBIC_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QUBIC/QUBIC_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="728f7aca6c2d2913d424694e9b31c41c")
+	version("1.30.0", sha256="fbee4e20cb417b562872e6a78104b7967cf97eaaebe7e2714c4a24d3cdb33e8a")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-biclust", type=("build", "run"))

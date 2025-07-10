@@ -15,7 +15,7 @@ class RBatchelor(RPackage):
 	bioc = "batchelor" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/batchelor_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/batchelor/batchelor_1.18.1.tar.gz"]
 
-	version("1.18.1", md5="32763620ad2c6c3d0e168dd4fd1960be")
+	version("1.18.1", sha256="a58590880cf00dd2ff7c9fc75ee611e4d4cc5bae98246a1878f8d7d1da6c8dfc")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -15,7 +15,7 @@ class RRae230bprobe(RPackage):
 	bioc = "rae230bprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rae230bprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rae230bprobe/rae230bprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="7bdb3a07e1f00de8ff510a69bdac4c53")
+	version("2.18.0", sha256="de6a36a28331b61a4014d49906b2cc445a7d2d53eccc995e6999e8e946d2b8ea")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

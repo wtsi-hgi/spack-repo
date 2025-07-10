@@ -15,7 +15,7 @@ class RConumee(RPackage):
 	bioc = "conumee" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/conumee_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/conumee/conumee_1.36.0.tar.gz"]
 
-	version("1.36.0", md5="f7eab6e95ed82f050ef52895ef178ba0")
+	version("1.36.0", sha256="e75a0aff3bcd1246d15841de749e211fbbe9be12d50e2012e8bb5e3e8a00c8f2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-minfi", type=("build", "run"))

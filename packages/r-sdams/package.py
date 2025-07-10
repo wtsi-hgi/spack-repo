@@ -15,7 +15,7 @@ class RSdams(RPackage):
 	bioc = "SDAMS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SDAMS_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SDAMS/SDAMS_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="27ac3a8046a94bf8473502ee2cd5afe1")
+	version("1.22.0", sha256="dec80a4e2c92f8062ced8e1fa9b773cbfda56eeb1393bc0ff137034f698eb252")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

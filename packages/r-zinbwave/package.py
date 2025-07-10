@@ -15,7 +15,7 @@ class RZinbwave(RPackage):
 	bioc = "zinbwave" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/zinbwave_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/zinbwave/zinbwave_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="e909f5d76f0ce0b7d65358ee0f80b1f3")
+	version("1.24.0", sha256="310c8758283aa31b017606514d6f4b0f81336b21cc1f1fd357f300965feae8d2")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

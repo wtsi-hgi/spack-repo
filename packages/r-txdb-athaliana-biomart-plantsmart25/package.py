@@ -15,7 +15,7 @@ class RTxdbAthalianaBiomartPlantsmart25(RPackage):
 	bioc = "TxDb.Athaliana.BioMart.plantsmart25" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Athaliana.BioMart.plantsmart25_3.1.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Athaliana.BioMart.plantsmart25/TxDb.Athaliana.BioMart.plantsmart25_3.1.3.tar.gz"]
 
-	version("3.1.3", md5="eb007c07317b9717c76949e5ed999978", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Athaliana.BioMart.plantsmart25_3.1.3.tar.gz")
+	version("3.1.3", sha256="a3ee0b146d31b6addaa2362789b128e5d94edbef0dcd11b58ff58f700d05db28", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Athaliana.BioMart.plantsmart25_3.1.3.tar.gz")
 
 	depends_on("r-genomicfeatures", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -15,7 +15,7 @@ class RBsgenomeCfamiliarisUcscCanfam3(RPackage):
 	bioc = "BSgenome.Cfamiliaris.UCSC.canFam3" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Cfamiliaris.UCSC.canFam3_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Cfamiliaris.UCSC.canFam3/BSgenome.Cfamiliaris.UCSC.canFam3_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="efcdc531042be86f99a734cd69c0688c", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Cfamiliaris.UCSC.canFam3_1.4.0.tar.gz")
+	version("1.4.0", sha256="99c55b6f7808822a3dae6679e60ecfb88a2b618159484bc35303c000bd4820c7", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Cfamiliaris.UCSC.canFam3_1.4.0.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 

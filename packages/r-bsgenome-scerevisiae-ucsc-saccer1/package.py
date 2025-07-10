@@ -15,7 +15,7 @@ class RBsgenomeScerevisiaeUcscSaccer1(RPackage):
 	bioc = "BSgenome.Scerevisiae.UCSC.sacCer1" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Scerevisiae.UCSC.sacCer1_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Scerevisiae.UCSC.sacCer1/BSgenome.Scerevisiae.UCSC.sacCer1_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="ad4c29c16a9635088bf13872b4a02ed4", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Scerevisiae.UCSC.sacCer1_1.4.0.tar.gz")
+	version("1.4.0", sha256="4b58a9e8510da0f5a0f9f00c2bdadc5ca6c2e4e061c3a3822b3d535adb1fbdea", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Scerevisiae.UCSC.sacCer1_1.4.0.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 

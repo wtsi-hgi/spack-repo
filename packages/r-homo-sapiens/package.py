@@ -15,7 +15,7 @@ class RHomoSapiens(RPackage):
 	bioc = "Homo.sapiens" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Homo.sapiens_1.3.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Homo.sapiens/Homo.sapiens_1.3.1.tar.gz"]
 
-	version("1.3.1", md5="653b60cfcdaefd171729115cd629b585")
+	version("1.3.1", sha256="014809fc6ef6410be8dc1094c9cb083719f20d999065ae4bf388855be0913b94")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

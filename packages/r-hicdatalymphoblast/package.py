@@ -15,6 +15,6 @@ class RHicdatalymphoblast(RPackage):
 	bioc = "HiCDataLymphoblast" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HiCDataLymphoblast_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HiCDataLymphoblast/HiCDataLymphoblast_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="4e51d696b30a37414375e6987c7ab59c")
+	version("1.38.0", sha256="6fb7ba2db4547fc50cf1d100fb5e393149ecd54dd79a33dfd0f862ac4b71d3a8")
 
 

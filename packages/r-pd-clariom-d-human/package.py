@@ -15,7 +15,7 @@ class RPdClariomDHuman(RPackage):
 	bioc = "pd.clariom.d.human" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.clariom.d.human_3.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.clariom.d.human/pd.clariom.d.human_3.14.1.tar.gz"]
 
-	version("3.14.1", md5="9d3505af53cc7c99980f29c527f0f37d")
+	version("3.14.1", sha256="7def6044b894a0ac14408ca318fc43115172f37412c27a79a1f3ba0330d10487")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

@@ -15,6 +15,6 @@ class RRseqan(RPackage):
 	bioc = "RSeqAn" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RSeqAn_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RSeqAn/RSeqAn_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="278ce2c8087516d02a4203bdcf9a6b9f")
+	version("1.22.0", sha256="24ff6104f19069b26e2c34f9ba0455610ba36a961ead1e9db3a89d01ba918873")
 
 	depends_on("r-rcpp", type=("build", "run"))

@@ -16,7 +16,7 @@ class RTitancna(RPackage):
 	bioc = "TitanCNA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TitanCNA_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TitanCNA/TitanCNA_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="ce40de587ae35a22c583019e6a85dbc6")
+	version("1.40.0", sha256="dfa68210f6917efafef71814f42caeb0f7be2461ed44a4fb9bfe47f5749202d9")
 
 	depends_on("r@3.5.1:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.31.6:", type=("build", "run"))

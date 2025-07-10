@@ -19,7 +19,7 @@ class RDropletutils(RPackage):
     ]
 
     version("1.28.0", tag="RELEASE_3_21")
-    version("1.22.0", md5="f1fe907e6269e652adc4607fdb335c41")
+    version("1.22.0", sha256="c67152c06c1cd8388895265f30f945ad12f6d389ff4bcfb125f079a0c499dd2e")
 
     depends_on("r-singlecellexperiment", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))

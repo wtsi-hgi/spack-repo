@@ -21,7 +21,7 @@ class RBiocfilecache(RPackage):
 	version("2.6.0", commit="f5b8368c1402b15e8db8eab59217f1176e902e6f")
 	version("2.4.0", commit="2c00eee40d95fddad223f115f959b09e1a14f75d")
 	version("2.2.1", commit="cc912123408803193bf37395f4d18baa8dcd6f47")
-	version("2.10.2", md5="4e089b23306c9d7d7d09d3a655aa19b5")
+	version("2.10.2", sha256="3f0cfc6dc10aaeae9f5856da1c1a4d31493222fe8be01ee0b6725fef09b3f601")
 	version("2.10.1", md5="80f9b9c7ef6f3fcb9aaff7125b409137")
 	version("1.8.0", commit="0e3542b6aae849b01240d8055a48da1b267bd5a0")
 	version("1.6.0", commit="c2de6c1cdef6294e5d0adea31e4ebf25865742ba")

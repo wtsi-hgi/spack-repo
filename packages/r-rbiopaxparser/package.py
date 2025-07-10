@@ -16,7 +16,7 @@ class RRbiopaxparser(RPackage):
 	bioc = "rBiopaxParser" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rBiopaxParser_2.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rBiopaxParser/rBiopaxParser_2.42.0.tar.gz"]
 
-	version("2.42.0", md5="53e24a8896bf17bd56fe48d62427eb33")
+	version("2.42.0", sha256="275cb296a6e9d262a2c853d85c0954fcf72a87197b482adfbb4c8e045346caff")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

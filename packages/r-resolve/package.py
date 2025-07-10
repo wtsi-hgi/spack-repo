@@ -16,7 +16,7 @@ class RResolve(RPackage):
 	bioc = "RESOLVE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RESOLVE_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RESOLVE/RESOLVE_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="3dd3a656ed19f5faa759f4b37c459f53")
+	version("1.4.0", sha256="3fe1a6d0171af5d2ecd111a4bdb690e466081a16d930587eedacba7fb16af3d7")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

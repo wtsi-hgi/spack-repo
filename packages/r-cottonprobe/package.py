@@ -15,7 +15,7 @@ class RCottonprobe(RPackage):
 	bioc = "cottonprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cottonprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/cottonprobe/cottonprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="032fa94876685820d94526fd56dd0b65")
+	version("2.18.0", sha256="5009e377a572e81363f49e3c1811172169215b82461bb22f7171c6a34693ae12")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

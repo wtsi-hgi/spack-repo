@@ -15,7 +15,7 @@ class RBsgenomeHsapiensUcscHg18Masked(RPackage):
 	bioc = "BSgenome.Hsapiens.UCSC.hg18.masked" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg18.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Hsapiens.UCSC.hg18.masked/BSgenome.Hsapiens.UCSC.hg18.masked_1.3.99.tar.gz"]
 
-	version("1.3.99", md5="e6a31e3cba34ce5e0eb6f76d2c19870c")
+	version("1.3.99", sha256="60baf537040c6765c0540f599565be3fc4549b533a673ae68b62b092fcc83a0c")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-hsapiens-ucsc-hg18", type=("build", "run"))

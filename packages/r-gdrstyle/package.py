@@ -15,7 +15,7 @@ class RGdrstyle(RPackage):
 	bioc = "gDRstyle" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gDRstyle_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gDRstyle/gDRstyle_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="473f3c2e73e05f50ec3af2b72bb18a55")
+	version("1.0.0", sha256="f53cb21a5b145f43d12a5a9d872151221d85775a22e96b0300ba96c0c131499f")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-bioccheck", type=("build", "run"))

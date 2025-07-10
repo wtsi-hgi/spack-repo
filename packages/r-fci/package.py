@@ -15,7 +15,7 @@ class RFci(RPackage):
 	bioc = "fCI" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fCI_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fCI/fCI_1.32.0.tar.gz"]
 
-	version("1.32.0", md5="5a6ec7dcf6303ef44018924283b87586")
+	version("1.32.0", sha256="1fbe66b4235e58c212fa378cb1029225f7caeebf3e87cc078bc5174946ec27b0")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-fnn", type=("build", "run"))

@@ -15,7 +15,7 @@ class RBsgenomeTguttataUcscTaegut2(RPackage):
 	bioc = "BSgenome.Tguttata.UCSC.taeGut2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Tguttata.UCSC.taeGut2_1.4.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Tguttata.UCSC.taeGut2/BSgenome.Tguttata.UCSC.taeGut2_1.4.2.tar.gz"]
 
-	version("1.4.2", md5="1d39678fb060e643f7e9c4ec25e828c0", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Tguttata.UCSC.taeGut2_1.4.2.tar.gz")
+	version("1.4.2", sha256="2718f4e966618e8c496561e007e23fc2000003d12194baeaaa5fd07370696bc6", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Tguttata.UCSC.taeGut2_1.4.2.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 

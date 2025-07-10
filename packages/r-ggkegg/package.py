@@ -16,7 +16,7 @@ class RGgkegg(RPackage):
 	bioc = "ggkegg" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggkegg_1.0.13.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggkegg/ggkegg_1.0.13.tar.gz"]
 
-	version("1.0.13", md5="02848c5ed45b1480b71e69cc13607a69")
+	version("1.0.13", sha256="cd4918999725bb2a2df6416f9cc02a8c7ab82d3e3592d695caff4595d719a42e")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

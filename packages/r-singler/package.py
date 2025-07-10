@@ -20,7 +20,7 @@ class RSingler(RPackage):
     ]
 
     version("2.10.0", tag="RELEASE_3_21")
-    version("2.4.1", md5="ff17f8c8804598bb80a27bba33216919")
+    version("2.4.1", sha256="4d8fb557544732511d3ae2e25959fb3f53c6756b2da5db6f2cce69155b219b7e")
 
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))

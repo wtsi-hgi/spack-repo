@@ -17,7 +17,7 @@ class RAromaLight(RPackage):
 	bioc = "aroma.light"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/aroma.light_3.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/aroma.light/aroma.light_3.32.0.tar.gz"]
 
-	version("3.32.0", md5="07d98bcf8be950a16c1d6aaae375f17d")
+	version("3.32.0", sha256="68a1adac23a4f756bc6369af82f54de57c717bfe1e5e3d54004e3baa01add9c4")
 	version("3.30.0", commit="a1882c2126622cb389a7ef1ef5b5c565e603a282")
 	version("3.28.0", commit="7749dd7033e9885ec2546a5cac0562bac2fea04d")
 	version("3.26.0", commit="7ead7517a77bc8b4b4b42aace69957a17e8fe016")

@@ -16,7 +16,7 @@ class RDiffcyt(RPackage):
 	bioc = "diffcyt" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/diffcyt_1.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/diffcyt/diffcyt_1.22.1.tar.gz"]
 
-	version("1.22.1", md5="44b02895aa252ca092777135cb0edede")
+	version("1.22.1", sha256="f2a22afb63dd4512533238e411a3d1f4cdc7c9afcd1f5bc22ae3da56c760e7d1")
 	version("1.22.0", md5="8118267e493c2646533a9730a876d340")
 
 	depends_on("r@3.4:", type=("build", "run"))

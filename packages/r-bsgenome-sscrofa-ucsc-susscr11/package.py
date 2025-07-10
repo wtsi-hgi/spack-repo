@@ -15,7 +15,7 @@ class RBsgenomeSscrofaUcscSusscr11(RPackage):
 	bioc = "BSgenome.Sscrofa.UCSC.susScr11" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Sscrofa.UCSC.susScr11_1.4.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Sscrofa.UCSC.susScr11/BSgenome.Sscrofa.UCSC.susScr11_1.4.2.tar.gz"]
 
-	version("1.4.2", md5="db22832229e31e1a629d107df522dff9", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Sscrofa.UCSC.susScr11_1.4.2.tar.gz")
+	version("1.4.2", sha256="9821dbdeaec06cd4f83a20b370d97062ca8eda43e1fbdea795795c4c4e16ec54", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Sscrofa.UCSC.susScr11_1.4.2.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 

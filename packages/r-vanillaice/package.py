@@ -15,7 +15,7 @@ class RVanillaice(RPackage):
 	bioc = "VanillaICE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VanillaICE_1.64.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VanillaICE/VanillaICE_1.64.1.tar.gz"]
 
-	version("1.64.1", md5="2982b1ecebd7950aef3f27e01c532f66")
+	version("1.64.1", sha256="518b2006091b3b1c6edeb3617c9c66fb682b760295f6fd58207e8f20c79d4d84")
 	version("1.64.0", md5="557131c410cc7474d15a4cc9a7d940de")
 
 	depends_on("r@3.5:", type=("build", "run"))

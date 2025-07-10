@@ -15,7 +15,7 @@ class RHtsfilter(RPackage):
 	bioc = "HTSFilter" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HTSFilter_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HTSFilter/HTSFilter_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="6eb5ebe090ac02b5a0099f63f3e6ccc6")
+	version("1.42.0", sha256="d4d019e3cc6a4b55d6b71c374869daa776216f7f791410f3b08726663e117ad8")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-edger", type=("build", "run"))

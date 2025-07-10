@@ -15,7 +15,7 @@ class RMetagxbreast(RPackage):
 	bioc = "MetaGxBreast" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MetaGxBreast_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MetaGxBreast/MetaGxBreast_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="e711302482bca1429de5fe2e5276c788")
+	version("1.22.0", sha256="2117238173879a0d3c0dc7a9108dcf492d48ca0b3a378ef2729a6219c93b1a2c")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

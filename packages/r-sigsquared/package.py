@@ -15,7 +15,7 @@ class RSigsquared(RPackage):
 	bioc = "sigsquared" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sigsquared_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sigsquared/sigsquared_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="f7dfbb4c066df8fe146b2b73f8180195")
+	version("1.34.0", sha256="3b58cb88db445f4786a6088c45d7be4264539d3536b2e4befd8ff6076f7e4acb")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

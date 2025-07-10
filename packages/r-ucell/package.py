@@ -16,7 +16,7 @@ class RUcell(RPackage):
 	bioc = "UCell" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/UCell_2.6.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/UCell/UCell_2.6.2.tar.gz"]
 
-	version("2.6.2", md5="c02318fc6a9ac12b0d902460be5204d4")
+	version("2.6.2", sha256="ad8c56756ac2645f02cfbb00e6aec756528ebc729413ba9af57ff8e3425a6403")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-data-table@1.13.6:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RTargetsearch(RPackage):
 	bioc = "TargetSearch" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TargetSearch_2.4.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TargetSearch/TargetSearch_2.4.2.tar.gz"]
 
-	version("2.4.2", md5="7013b00950e240fcd7d53f0173d337e9")
+	version("2.4.2", sha256="98f972d087dde9165f21e276ae3c8ca5beb713cbb9ca29ded742b8f5a4e1cdb8")
 
 	depends_on("r-ncdf4", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

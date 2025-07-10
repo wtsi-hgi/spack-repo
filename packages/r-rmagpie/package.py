@@ -16,7 +16,7 @@ class RRmagpie(RPackage):
 	bioc = "Rmagpie" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rmagpie_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rmagpie/Rmagpie_1.58.0.tar.gz"]
 
-	version("1.58.0", md5="939fbdcb38d890daf9880baea89c8685")
+	version("1.58.0", sha256="a2e5bd407cf26c48fa91d3569621d539a704820784dded4978655d26d690a57c")
 
 	depends_on("r@2.6.1:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

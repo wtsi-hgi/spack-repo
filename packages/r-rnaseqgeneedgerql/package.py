@@ -16,7 +16,7 @@ class RRnaseqgeneedgerql(RPackage):
 	bioc = "RnaSeqGeneEdgeRQL" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/RnaSeqGeneEdgeRQL_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/RnaSeqGeneEdgeRQL/RnaSeqGeneEdgeRQL_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="5b981afc581222d34c688246dc09790f")
+	version("1.26.0", sha256="661f929ce62ee38d0b22dc3772fe1bb8b2bda273b73e584f33584b9da87b6a91")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-edger", type=("build", "run"))

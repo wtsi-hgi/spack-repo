@@ -15,7 +15,7 @@ class RBsgenomeHsapiensUcscHg38Dbsnp151Major(RPackage):
 	bioc = "BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major_0.0.9999.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major/BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major_0.0.9999.tar.gz"]
 
-	version("0.0.9999", md5="c59f66e52d4982942bea2254223d58df")
+	version("0.0.9999", sha256="469c3c2ab5cfbf5582362d48edd56e00baa9f153d8536b600d8bd12dcf742009")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-bsgenome@1.56:", type=("build", "run"))

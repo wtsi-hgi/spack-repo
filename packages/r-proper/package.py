@@ -15,7 +15,7 @@ class RProper(RPackage):
 	bioc = "PROPER" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PROPER_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PROPER/PROPER_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="6f91ce4b3f5feee476a991fc1072c521")
+	version("1.34.0", sha256="c2c44584b2173ace3b0f9e8defd735c65ef0ab75fc3f800888247799d333b2ba")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-edger", type=("build", "run"))

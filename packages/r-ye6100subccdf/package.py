@@ -15,7 +15,7 @@ class RYe6100subccdf(RPackage):
 	bioc = "ye6100subccdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ye6100subccdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ye6100subccdf/ye6100subccdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="fcdfed29a695fe53b62bacfe13dfe0c1")
+	version("2.18.0", sha256="f5c799c0c4a6fd04e8177d7580073418d66dcd72679ec076dcdbbd31da271956")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

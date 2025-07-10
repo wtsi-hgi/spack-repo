@@ -15,7 +15,7 @@ class RPdElegene11St(RPackage):
 	bioc = "pd.elegene.1.1.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.elegene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.elegene.1.1.st/pd.elegene.1.1.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="1dbe166ea347a5a7e240db925d2081c7")
+	version("3.12.0", sha256="4209e95ad67846d498ebd1fe5254ee10e65b010f538627b79e82e6a1f5b063a3")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

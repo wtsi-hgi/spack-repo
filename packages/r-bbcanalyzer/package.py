@@ -15,7 +15,7 @@ class RBbcanalyzer(RPackage):
 	bioc = "BBCAnalyzer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BBCAnalyzer_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BBCAnalyzer/BBCAnalyzer_1.32.0.tar.gz"]
 
-	version("1.32.0", md5="33b123d417f53ee03c547220dfdb1612")
+	version("1.32.0", sha256="c1ffe8657f54dcfe64b1e45bd4ef7fd2b13f2ae20c9ee01119d2c3e2f4631281")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-variantannotation", type=("build", "run"))

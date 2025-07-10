@@ -15,7 +15,7 @@ class RRlassocox(RPackage):
 	bioc = "RLassoCox" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RLassoCox_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RLassoCox/RLassoCox_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="3f92bc442df2edc28546415bc716123b")
+	version("1.10.0", sha256="9034bff68c6e8d2d576902731fe97d04a12158a795860c1edc6a0d10d610493e")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))

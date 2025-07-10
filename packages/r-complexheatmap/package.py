@@ -17,7 +17,7 @@ class RComplexheatmap(RPackage):
 	bioc = "ComplexHeatmap"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ComplexHeatmap_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ComplexHeatmap/ComplexHeatmap_2.18.0.tar.gz"]
 	version("2.6.2", commit="0383bada2c76dc3dde71cf6a625016b619aec4d3")
-	version("2.18.0", md5="f4f19a1339c99471cb23ffc4a7272881")
+	version("2.18.0", sha256="8eb9912d9897c3914fadeb002bab1dff16a059db4d99b2fd754eb512d904f77f")
 	version("2.16.0", commit="01eb55ca9b783c6d99bdfe88aa131cc102bae5b3")
 	version("2.14.0", commit="57fcaa040b08917c97fb66b963eb240d5fd5a8c7")
 	version("2.12.1", commit="2c5fe70724219008174d4e6f83189cddbd895ec6")

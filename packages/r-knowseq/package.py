@@ -15,7 +15,7 @@ class RKnowseq(RPackage):
 	bioc = "KnowSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/KnowSeq_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/KnowSeq/KnowSeq_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="b57c9661e3de8e27e79e3809a609acda")
+	version("1.16.0", sha256="eb2f9ca53b3d8f21b11ba786ace6077a8eb67e147d8af7f03e104e8d2ae7c518")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-cqn@1.28.1:", type=("build", "run"))

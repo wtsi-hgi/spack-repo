@@ -15,7 +15,7 @@ class RBrain(RPackage):
 	bioc = "BRAIN" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BRAIN_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BRAIN/BRAIN_1.48.0.tar.gz"]
 
-	version("1.48.0", md5="575b879f058d01202c3bc33b0ff8e3f1")
+	version("1.48.0", sha256="0e61d7e2b43d78a2645f69eb729ee7d3a00936e4abd9642c59f4921b20154217")
 
 	depends_on("r@2.8.1:", type=("build", "run"))
 	depends_on("r-polynomf", type=("build", "run"))

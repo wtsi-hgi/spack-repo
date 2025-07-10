@@ -15,7 +15,7 @@ class RHuo22Db(RPackage):
 	bioc = "HuO22.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/HuO22.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/HuO22.db/HuO22.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="ddabf6c01f94c1dfd6ab35b40852828a")
+	version("3.2.3", sha256="4e6336774134f9e7cb5b06eff34b3396a95f19555f4078c16213e5a407a23595")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

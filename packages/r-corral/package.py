@@ -15,7 +15,7 @@ class RCorral(RPackage):
 	bioc = "corral" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/corral_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/corral/corral_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="7f1ebb217a695452605bd8aa94f8a5a1")
+	version("1.12.0", sha256="6c5dfd037fd9cf6f83eab84fc62cca07c0464a00e00061d838a33b9553cb9348")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-ggthemes", type=("build", "run"))

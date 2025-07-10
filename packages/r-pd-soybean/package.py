@@ -15,7 +15,7 @@ class RPdSoybean(RPackage):
 	bioc = "pd.soybean" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.soybean_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.soybean/pd.soybean_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="6dbe167be9d40c1d9096485afb4525f0")
+	version("3.12.0", sha256="00fac70e15cf56d39ef9449d8bc42b5e64af3be40d87cb607d3af5304f05e975")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

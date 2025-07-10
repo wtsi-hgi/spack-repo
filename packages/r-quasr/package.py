@@ -15,7 +15,7 @@ class RQuasr(RPackage):
 	bioc = "QuasR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QuasR_1.42.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QuasR/QuasR_1.42.1.tar.gz"]
 
-	version("1.42.1", md5="ace4fd8823c92add78b78c8e05b366aa")
+	version("1.42.1", sha256="d66ef1bbf95ae60bb5b7cf87dea6dae6adcc92229ef69984b1589073b7bc2519")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

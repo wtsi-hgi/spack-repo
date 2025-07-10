@@ -16,7 +16,7 @@ class RGgtreeextra(RPackage):
 	bioc = "ggtreeExtra" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggtreeExtra_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggtreeExtra/ggtreeExtra_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="0bfd8a30c6fbd323763722927d30296a")
+	version("1.12.0", sha256="ac7d90266591011f72d242fa79fba44370eedf557f66ff49f52ee1826b401361")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

@@ -16,7 +16,7 @@ class RCleaver(RPackage):
 	bioc = "cleaver" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cleaver_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cleaver/cleaver_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="978f7bba3eb0dae3a3edee5c5721de7b")
+	version("1.40.0", sha256="53417e207e8bb617d31f8385cc68849e8a3c2494e3c31790ac2edbce6c062a64")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-biostrings@1.29.8:", type=("build", "run"))

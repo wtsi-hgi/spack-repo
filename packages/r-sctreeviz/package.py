@@ -15,7 +15,7 @@ class RSctreeviz(RPackage):
 	bioc = "scTreeViz" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scTreeViz_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scTreeViz/scTreeViz_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="9e1a317862ad079f52876f54d7160bde")
+	version("1.8.0", sha256="b732dc1656ca78ffa1ec94d02f8c9b9d566f63abfc5c54a8c3d40e6e4e495a1a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-epivizr", type=("build", "run"))

@@ -15,7 +15,7 @@ class RCghregions(RPackage):
 	bioc = "CGHregions" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CGHregions_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CGHregions/CGHregions_1.60.0.tar.gz"]
 
-	version("1.60.0", md5="3ec8f1bb5db1987f92932d29a31d74fe")
+	version("1.60.0", sha256="cebd9a63726abf5526ed2379866d71342618f7b68716eefb38ececea31539cb5")
 
 	depends_on("r@2:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

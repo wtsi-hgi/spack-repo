@@ -15,7 +15,7 @@ class RBumhmm(RPackage):
 	bioc = "BUMHMM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BUMHMM_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BUMHMM/BUMHMM_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="c70dbfec58330fd1fa6cd1aca5e16912")
+	version("1.26.0", sha256="001125e671c42dc88a26f9a83245f8fd894d1124ca91565350d2703133f8e82a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-devtools", type=("build", "run"))

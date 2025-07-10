@@ -16,7 +16,7 @@ class RIsocorrector(RPackage):
 	bioc = "IsoCorrectoR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IsoCorrectoR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IsoCorrectoR/IsoCorrectoR_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="ba3b19c2ad9ed8f9b7f6929c49828bb5")
+	version("1.20.0", sha256="e593a50e815cc4df727eb43c416194143fc8612a75729f0d471fa1a890ec2460")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

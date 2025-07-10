@@ -16,7 +16,7 @@ class RPhantasuslite(RPackage):
 	bioc = "phantasusLite" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phantasusLite_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phantasusLite/phantasusLite_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="5fe0e101ac53a89dd49e077d5fb4c07d")
+	version("1.0.0", sha256="8a2f8cd5194d5e3c3626d2e80fb27a0f98cada91ec8c59d2466b744b0105055f")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

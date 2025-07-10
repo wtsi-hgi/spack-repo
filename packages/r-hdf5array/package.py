@@ -27,7 +27,7 @@ class RHdf5array(RPackage):
     version("1.6.0", commit="95f2f8d3648143abe9dc77c76340c5edf4114c82")
     version("1.4.8", commit="79ab96d123c8da8f8ead81f678fe714c0958ff45")
     version("1.34.0", tag="RELEASE_3_20")
-    version("1.30.1", md5="880ca20592c69a77a31650298a9c67bf")
+    version("1.30.1", sha256="a0e1927a7f7b1a1d9425329566282fd054463c2f21992a2f037296bb1e95929d")
     version("1.28.0", commit="8c839417c4a37c35330bd6f02b79dda9f48e76ae")
     version("1.26.0", commit="38b7bd603f7281245605048d8d57237e00b74d79")
     version("1.24.2", commit="fb213ba36631b04dfe754705f701f3a015c4fc82")

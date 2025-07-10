@@ -16,7 +16,7 @@ class RGenomicscores(RPackage):
 	bioc = "GenomicScores" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicScores_2.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicScores/GenomicScores_2.14.3.tar.gz"]
 
-	version("2.14.3", md5="eabfc2c53e94ac24ef186413e38872fc")
+	version("2.14.3", sha256="a98eb24b700041b8756aa8f15295a7018ae45d6698a5ac9e97e4435eea721e66")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-s4vectors@0.7.21:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RPdHgU133aTag(RPackage):
 	bioc = "pd.hg.u133a.tag" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hg.u133a.tag_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.hg.u133a.tag/pd.hg.u133a.tag_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="e090383098d6e1062b290889fba065d5")
+	version("3.12.0", sha256="d797bf179a98890e73e431529ccd17a9af43220c69ab6cd9700542dd3cfbb2d9")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

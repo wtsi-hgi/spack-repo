@@ -16,7 +16,7 @@ class RAncombc(RPackage):
 	bioc = "ANCOMBC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ANCOMBC_2.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ANCOMBC/ANCOMBC_2.4.0.tar.gz"]
 
-	version("2.4.0", md5="42059f62faa03e818d0cd15b7bcf0094")
+	version("2.4.0", sha256="874699e6662d2624d174fe877e0e81024ecc5aa636d5b23ed9b5c09e5698c3d4")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-mia@1.6:", type=("build", "run"))

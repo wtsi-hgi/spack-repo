@@ -15,7 +15,7 @@ class RCoveb(RPackage):
 	bioc = "covEB" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/covEB_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/covEB/covEB_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="5469ab09a3d502902dc4d698abd1cbae")
+	version("1.28.0", sha256="d3f16a0d1b4ff63d493e1a82b5a53419d9feb28bd983a1f4ff1ae3b6fa800428")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))

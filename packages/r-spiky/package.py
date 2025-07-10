@@ -16,7 +16,7 @@ class RSpiky(RPackage):
 	bioc = "spiky" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spiky_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spiky/spiky_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="8f710d2ecca4f24247ab38805d665b41")
+	version("1.8.0", sha256="438d278282b002765c79ab10b470ef08c96c5efcff11e96496eb754410a1cc87")
 
 	depends_on("r-rsamtools", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

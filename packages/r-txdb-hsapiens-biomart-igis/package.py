@@ -15,7 +15,7 @@ class RTxdbHsapiensBiomartIgis(RPackage):
 	bioc = "TxDb.Hsapiens.BioMart.igis" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Hsapiens.BioMart.igis_2.3.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Hsapiens.BioMart.igis/TxDb.Hsapiens.BioMart.igis_2.3.2.tar.gz"]
 
-	version("2.3.2", md5="75b793928d29bcd3f069b5986bc2cfae")
+	version("2.3.2", sha256="7e1a0892934a3da72aa706839a00db7dbca84d7de095272b1ca3de3ca1502015")
 
 	depends_on("r-genomicfeatures", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

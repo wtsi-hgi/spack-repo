@@ -16,7 +16,7 @@ class RRlseq(RPackage):
 	bioc = "RLSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RLSeq_1.5.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RLSeq/RLSeq_1.5.2.tar.gz"]
 
-	version("1.5.2", md5="fefe852714378d866e0209fbe48fcf21")
+	version("1.5.2", sha256="38e8d3f29c7c6a3a29d1ddb49a1674073a0beb9a7844de38bc66af17c4b8115a")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

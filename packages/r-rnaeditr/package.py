@@ -16,7 +16,7 @@ class RRnaeditr(RPackage):
 	bioc = "rnaEditr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rnaEditr_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rnaEditr/rnaEditr_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="fb5365c7d12dcdc26838f4824e70a00d")
+	version("1.12.0", sha256="7b414f9324f243ee5ffb63061f89dde16a355b6325d6d906d904f38986f44a11")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

@@ -16,7 +16,7 @@ class RBioassayr(RPackage):
 	bioc = "bioassayR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bioassayR_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bioassayR/bioassayR_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="94ac7a2ff2a9de7b65d8ebd864513a31")
+	version("1.40.0", sha256="51bbae60661a3a41e8733255a321c44b933ef1d5ca473f86ab88b2f4dbb7a1d6")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dbi@0.3.1:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RHarman(RPackage):
 	bioc = "Harman" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Harman_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Harman/Harman_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="aaec4256c0cb2949d553ff81d94e48d2")
+	version("1.30.0", sha256="3750c9d1dff99a6e1bc89b0718f3f5116114e2598e06498744164f3c6b57d9cd")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

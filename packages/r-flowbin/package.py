@@ -15,7 +15,7 @@ class RFlowbin(RPackage):
 	bioc = "flowBin" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowBin_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowBin/flowBin_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="3d761d597ff6b4f6929e9f68ea83b366")
+	version("1.38.0", sha256="2509d06d853a3662fef97189994ce402794b0cd431f966862abd7c030000e032")
 
 	depends_on("r-flowcore", type=("build", "run"))
 	depends_on("r-flowfp", type=("build", "run"))

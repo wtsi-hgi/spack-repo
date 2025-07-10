@@ -16,7 +16,7 @@ class RStructtoolbox(RPackage):
 	bioc = "structToolbox" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/structToolbox_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/structToolbox/structToolbox_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="d6e4aa6631f797571a7ec07348cfbd30")
+	version("1.14.0", sha256="b9e1312788fe9d9043d6e58c2996fd08b6c5a314504f53783d17eafbfdd696df")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-struct@1.5.1:", type=("build", "run"))

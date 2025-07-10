@@ -16,7 +16,7 @@ class RMetaboliteidmapping(RPackage):
 	bioc = "metaboliteIDmapping" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/metaboliteIDmapping_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/metaboliteIDmapping/metaboliteIDmapping_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="bd78ec373ce90fac1a10d2c64c462e77")
+	version("1.0.0", sha256="148fd847cf4609086d1e9a175712645182d9a7e4bc28a99e88c8f2a1e8bed459")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

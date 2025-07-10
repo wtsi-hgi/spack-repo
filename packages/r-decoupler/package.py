@@ -16,7 +16,7 @@ class RDecoupler(RPackage):
 	bioc = "decoupleR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/decoupleR_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/decoupleR/decoupleR_2.8.0.tar.gz"]
 
-	version("2.8.0", md5="de2a391693476223ec54521aa77ba121")
+	version("2.8.0", sha256="09b6d3398eec6e5aa6eacd41c8d025488e6acc771e04e43040cb8ea1feccd4ee")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))

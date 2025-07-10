@@ -15,7 +15,7 @@ class RRnagilentdesign028282Db(RPackage):
 	bioc = "RnAgilentDesign028282.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/RnAgilentDesign028282.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/RnAgilentDesign028282.db/RnAgilentDesign028282.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="72cafb0f7514a81f462acb3248e21aa9")
+	version("3.2.3", sha256="4e9197128f432239b25b653a2552092b094227e8948599e7a9feaeabc9891903")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -16,7 +16,7 @@ class RSwath2stats(RPackage):
 	bioc = "SWATH2stats" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SWATH2stats_1.32.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SWATH2stats/SWATH2stats_1.32.1.tar.gz"]
 
-	version("1.32.1", md5="c93b27856365fd481c30f9c84e34aee6")
+	version("1.32.1", sha256="7d3c599027203b12d2c83d179fc9c2f94b464992a4456ce6ba80dccb04787a92")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

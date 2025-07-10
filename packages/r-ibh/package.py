@@ -15,6 +15,6 @@ class RIbh(RPackage):
 	bioc = "ibh" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ibh_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ibh/ibh_1.50.0.tar.gz"]
 
-	version("1.50.0", md5="3c87bb1083990548eb09c4e43459ba1f")
+	version("1.50.0", sha256="6dda7c7d35077d27f72033179035863ea7b00d9140ee11e7357cb22ef279f7ca")
 
 	depends_on("r-simpintlists", type=("build", "run"))

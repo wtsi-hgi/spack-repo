@@ -16,7 +16,7 @@ class RIntramirexplorer(RPackage):
 	bioc = "IntramiRExploreR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IntramiRExploreR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IntramiRExploreR/IntramiRExploreR_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="e319d73695e5e1f12d9fc79896c49674")
+	version("1.24.0", sha256="47def66d0b9d7fcc6ca4545503ee3873e5877d3c75e16d3e3eff77cd86fa66c2")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-igraph@1.0.1:", type=("build", "run"))

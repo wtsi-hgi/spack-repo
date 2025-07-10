@@ -16,7 +16,7 @@ class RGgpa(RPackage):
 	bioc = "GGPA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GGPA_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GGPA/GGPA_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="5c50ef4040a18ac94848d7c42484d28d")
+	version("1.14.0", sha256="b903872658e75e79aabe41cc7a3047c165762ad9e2d894fc88a1ee84f1eaab23")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggally", type=("build", "run"))

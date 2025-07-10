@@ -16,7 +16,7 @@ class RTcgaworkflow(RPackage):
 	bioc = "TCGAWorkflow" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/TCGAWorkflow_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/TCGAWorkflow/TCGAWorkflow_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="5fae8b85fe7628ac380aca2a1dbd2374")
+	version("1.26.0", sha256="e729d681b8d53cf9b7e3273942b21acfe5131f1438d9bb834436cb1cc8562656")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

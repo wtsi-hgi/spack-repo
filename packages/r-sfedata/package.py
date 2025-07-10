@@ -16,7 +16,7 @@ class RSfedata(RPackage):
 	bioc = "SFEData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SFEData_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SFEData/SFEData_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="7f3376870c972cba309b26d52d24fcbb")
+	version("1.4.0", sha256="1f374b0e109d35998935c8ce83f0e83574792cea548bf928837b7fa2d9116b72")
 
 	depends_on("r-biocfilecache", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

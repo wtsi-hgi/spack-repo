@@ -16,7 +16,7 @@ class RDorothea(RPackage):
 	bioc = "dorothea" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/dorothea_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/dorothea/dorothea_1.14.1.tar.gz"]
 
-	version("1.14.1", md5="962242cff51a595005ff65d6dad90121")
+	version("1.14.1", sha256="6579eca35c7ea6b4a9627fc1f57bf8b61d793ece02976fbb4ac69fe229b6552e")
 	version("1.14.0", md5="d1ad1213db5d54f1fc6ef8d195b9bbc0")
 
 	depends_on("r@4:", type=("build", "run"))

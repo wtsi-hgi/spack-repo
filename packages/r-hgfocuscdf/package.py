@@ -15,7 +15,7 @@ class RHgfocuscdf(RPackage):
 	bioc = "hgfocuscdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgfocuscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgfocuscdf/hgfocuscdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="9883e53bfd9ddb9ad5f3a9c2e47bbd2c")
+	version("2.18.0", sha256="ca1f4370b5c748f619906df649ffeae92b718f1ea021a5efc79838c9f9f8af6f")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

@@ -18,7 +18,7 @@ class RMsnbase(RPackage):
 	version("2.8.3", commit="ef883752c5e92d445647bc5b5d23d5df320db415")
 	version("2.6.4", commit="46836860ce0281eef135303f2e2948303d67f68c")
 	version("2.4.2", commit="c045d65daa730c7837852e6343a05cae9644ab5e")
-	version("2.28.1", md5="4d3cbd696e9ca193ec9bdc4722f2ac49")
+	version("2.28.1", sha256="54df0a5aa0aa1c52f0d008faee610edf359c9039aa2d842526d4235b6aad4298")
 	version("2.26.0", commit="3e6268a86b93c474e37b21a9b8f564812202b2b6")
 	version("2.24.0", commit="b96e0142c663c2cb01e92479816a503c46caa1a8")
 	version("2.22.0", commit="4f6e5767eee91b2105781b494fcabcfed16eba2d")

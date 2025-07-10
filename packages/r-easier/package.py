@@ -15,7 +15,7 @@ class REasier(RPackage):
 	bioc = "easier" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/easier_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/easier/easier_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="65f72a669a157fdf57501fb32d1c0333")
+	version("1.8.0", sha256="61cf117669aefd4b1369fde5444717f870b96320701339b86a2336b5617a8f52")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-progeny", type=("build", "run"))

@@ -16,7 +16,7 @@ class RScreclassify(RPackage):
 	bioc = "scReClassify" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scReClassify_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scReClassify/scReClassify_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="722bce944db1f380df35d68a47c4bef7")
+	version("1.8.0", sha256="f09282b848b57d8b06a218a3a35185ac527a6111216fce6a8433b07162069985")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-randomforest", type=("build", "run"))

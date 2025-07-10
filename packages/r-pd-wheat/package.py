@@ -15,7 +15,7 @@ class RPdWheat(RPackage):
 	bioc = "pd.wheat" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.wheat_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.wheat/pd.wheat_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="38a7183c8d3b874cf62391a9e9169bb9")
+	version("3.12.0", sha256="2a8be2be783242ee289abfc8026dcf45ba24a012f16628565ecc3a045599c88a")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

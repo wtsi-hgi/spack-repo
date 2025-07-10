@@ -15,7 +15,7 @@ class RPdHgU95e(RPackage):
 	bioc = "pd.hg.u95e" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hg.u95e_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.hg.u95e/pd.hg.u95e_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="9295e2fd1b4be6ff58477ea5a5de45ee")
+	version("3.12.0", sha256="478d2ff6c832a40dd9d012e8f95a3e775cae5d569ada480b96dfa51a028a7a32")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

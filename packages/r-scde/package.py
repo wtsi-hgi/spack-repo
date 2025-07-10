@@ -16,7 +16,7 @@ class RScde(RPackage):
 	bioc = "scde" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scde_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scde/scde_2.30.0.tar.gz"]
 
-	version("2.30.0", md5="ee4cb04c3a1431fb088d8681ff950d49")
+	version("2.30.0", sha256="1a9e402aad906008cbdfd2e40c5acf68e27d0fb284f5679b04f8ba692476fa50")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-flexmix", type=("build", "run"))

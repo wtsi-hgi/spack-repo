@@ -16,6 +16,6 @@ class RHivcdnavantwout03(RPackage):
 	bioc = "HIVcDNAvantWout03" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HIVcDNAvantWout03_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HIVcDNAvantWout03/HIVcDNAvantWout03_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="4936f53bb66cdf1983a8bcbcd667a188", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HIVcDNAvantWout03_1.42.0.tar.gz")
+	version("1.42.0", sha256="8037e372f7855f0268752149c072e3f9875b2d1699618f0b6185356718a4cb4f", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HIVcDNAvantWout03_1.42.0.tar.gz")
 
 

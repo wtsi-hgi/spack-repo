@@ -24,7 +24,7 @@ class RDelayedmatrixstats(RPackage):
     version("1.6.1", commit="4378d1898a403305a94b122c4f36d1215fa7708d")
     version("1.4.0", commit="eb5b390ef99651fe87a346848f807de95afe8971")
     version("1.30.0", tag="RELEASE_3_21")
-    version("1.24.0", md5="890845d8c80a2b64cd02b3ff7f1e504d")
+    version("1.24.0", sha256="617d4814936adc4ad97d0824f0d3581bc94b347e44c1a9d4044c5143bacb25a3")
     version("1.22.0", commit="e820ab9a72963badc539e38fa79dbaeab95b2d2c")
     version("1.20.0", commit="1ed14250e8731e60bccb44946cafad4c2b3ac5b0")
     version("1.2.0", commit="de868e730be6280dfad41a280ab09f4d3083c9ac")

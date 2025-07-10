@@ -15,7 +15,7 @@ class RLumihumanidmapping(RPackage):
 	bioc = "lumiHumanIDMapping" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/lumiHumanIDMapping_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/lumiHumanIDMapping/lumiHumanIDMapping_1.10.1.tar.gz"]
 
-	version("1.10.1", md5="007e5aa2f1596cc08d888ba6dce7148a")
+	version("1.10.1", sha256="6414e94a243eea6a126e582a68fadd41798bb5fccc03fcc99380a01f40634948")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-lumi@1.7.14:", type=("build", "run"))

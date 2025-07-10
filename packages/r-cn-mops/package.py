@@ -16,7 +16,7 @@ class RCnMops(RPackage):
 	bioc = "cn.mops" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cn.mops_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cn.mops/cn.mops_1.48.0.tar.gz"]
 
-	version("1.48.0", md5="e4e51a7ecd3810464be443ba9a6b6919")
+	version("1.48.0", sha256="ce4e146ed262caffeca197c5541f146b6aef1bcf927d7eb9c1153a3a69dfff79")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

@@ -15,7 +15,7 @@ class RConnectivitymap(RPackage):
 	bioc = "ConnectivityMap" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ConnectivityMap_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ConnectivityMap/ConnectivityMap_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="bac29780256afebfd49b90f268114eaf")
+	version("1.38.0", sha256="4c5be7e81dd15015973251d929e3b6d08020b492e0130d18084e187dfdacbb47")
 
 	depends_on("r@2.15.1:", type=("build", "run"))
 

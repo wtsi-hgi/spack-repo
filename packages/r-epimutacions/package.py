@@ -16,7 +16,7 @@ class REpimutacions(RPackage):
 	bioc = "epimutacions" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epimutacions_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epimutacions/epimutacions_1.6.1.tar.gz"]
 
-	version("1.6.1", md5="73fdaf9db5e5d035601282d6e5d832fd")
+	version("1.6.1", sha256="ea5dafb2dd4141bb1ba7ab35a8c2e209932dc47d77afe6eb6ccc0032a12378be")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-epimutacionsdata", type=("build", "run"))

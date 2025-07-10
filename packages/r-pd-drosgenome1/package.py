@@ -15,7 +15,7 @@ class RPdDrosgenome1(RPackage):
 	bioc = "pd.drosgenome1" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.drosgenome1_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.drosgenome1/pd.drosgenome1_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="59c1a37a7d6a43fc70ff8756bf1195ef", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.drosgenome1_3.12.0.tar.gz")
+	version("3.12.0", sha256="053c808979c5447682758a0bf44464f348da6232a79a361f28db23f48476e3b2", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.drosgenome1_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

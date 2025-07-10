@@ -15,7 +15,7 @@ class RBallgown(RPackage):
 	bioc = "ballgown" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ballgown_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ballgown/ballgown_2.34.0.tar.gz"]
 
-	version("2.34.0", md5="805a1514b4080a8b00b4bdfce051dcda")
+	version("2.34.0", sha256="658426a92661774c79ea1c80ab8a378682cf0c0c9a8acdb83e17fe93bcf978e4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges@1.17.25:", type=("build", "run"))

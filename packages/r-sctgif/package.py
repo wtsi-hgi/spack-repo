@@ -15,7 +15,7 @@ class RSctgif(RPackage):
 	bioc = "scTGIF" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scTGIF_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scTGIF/scTGIF_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="7fcf2fd9ff8c1d34aaa64399fa876f3a")
+	version("1.16.0", sha256="202714ff5a7bf32b0993a7e88ed2f9c81b107acc3bb743bb0fe2f5f786c6bfe7")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-gseabase", type=("build", "run"))

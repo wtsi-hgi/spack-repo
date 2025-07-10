@@ -15,7 +15,7 @@ class RQuantsmooth(RPackage):
 	bioc = "quantsmooth" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/quantsmooth_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/quantsmooth/quantsmooth_1.68.0.tar.gz"]
 
-	version("1.68.0", md5="cb47e0040fd219ad15aebf094dd379cd")
+	version("1.68.0", sha256="0a810f64fbaf3c07447602ec3d7dcff973d306634446e34a308d8ed921b71614")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-quantreg", type=("build", "run"))

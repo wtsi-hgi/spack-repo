@@ -16,7 +16,7 @@ class RMipp(RPackage):
 	bioc = "MiPP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MiPP_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MiPP/MiPP_1.74.0.tar.gz"]
 
-	version("1.74.0", md5="ce412e2a72891fcc7969faee078b2be3")
+	version("1.74.0", sha256="8241ed264ea0462b550342e76a74d688b6a18b39e8e45d82a85f561046f761ff")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

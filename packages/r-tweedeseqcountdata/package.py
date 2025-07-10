@@ -16,7 +16,7 @@ class RTweedeseqcountdata(RPackage):
 	bioc = "tweeDEseqCountData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tweeDEseqCountData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tweeDEseqCountData/tweeDEseqCountData_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="d63e819cedf93ffbe115ed518bc9feaf")
+	version("1.40.0", sha256="db14f527829f488876baed853758cb299462bf4a6d66ea8929b8518c4e0907e8")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r@4.3:", type=("build", "run"))

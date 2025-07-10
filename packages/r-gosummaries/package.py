@@ -16,7 +16,7 @@ class RGosummaries(RPackage):
 	bioc = "GOsummaries" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOsummaries_2.37.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOsummaries/GOsummaries_2.37.0.tar.gz"]
 
-	version("2.37.0", md5="e31e67ed4c66122dcf79a694096ef539")
+	version("2.37.0", sha256="d99e066e24b5db2013a7a9c3c5dda09adb3f503af210fc0854904353fd0a4ae4")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -16,7 +16,7 @@ class RMosim(RPackage):
 	bioc = "MOSim" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MOSim_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MOSim/MOSim_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="67f131b000a6d50361f61b4a78835d47")
+	version("1.16.0", sha256="49152fdac7d284e3a2c5c8fc19960e813157fb78911a71bb20a118bee69c9d5f")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-hiddenmarkov", type=("build", "run"))

@@ -15,7 +15,7 @@ class RHumanDb0(RPackage):
 	bioc = "human.db0" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/human.db0_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/human.db0/human.db0_3.18.0.tar.gz"]
 
-	version("3.18.0", md5="e3b04d46f0618785b37fb84bb899295e", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/human.db0_3.18.0.tar.gz")
+	version("3.18.0", sha256="ee0774370fb3b3ee4de7660fe65760c0809b5fe3083fd2dcc6e6a40172d98446", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/human.db0_3.18.0.tar.gz")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RPocrcannotationDb(RPackage):
 	bioc = "POCRCannotation.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/POCRCannotation.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/POCRCannotation.db/POCRCannotation.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="da1d4dacc5fffb9c5dfea55649974aa5")
+	version("3.2.3", sha256="2d211fc7f21f17b9d1919ee68b66c3b8d31dc28ab73b50e16c3bde9e21d17b79")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

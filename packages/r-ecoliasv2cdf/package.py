@@ -15,7 +15,7 @@ class REcoliasv2cdf(RPackage):
 	bioc = "ecoliasv2cdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ecoliasv2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ecoliasv2cdf/ecoliasv2cdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="d7771ca1648b26a6af5bfb7582c6c778")
+	version("2.18.0", sha256="5bf91f4c54f9875c2e3e8895dd2c0f63c80403632a13e1d954bf3e9cb482269a")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

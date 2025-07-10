@@ -15,7 +15,7 @@ class RWheatprobe(RPackage):
 	bioc = "wheatprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/wheatprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/wheatprobe/wheatprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="b602d5050239850515be9dce12286360")
+	version("2.18.0", sha256="885b76ecf9803fc986bd7c7bda9bd6b5388a4f9fe0f3164d192fb7bfef882eba")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

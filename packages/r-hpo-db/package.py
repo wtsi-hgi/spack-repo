@@ -15,7 +15,7 @@ class RHpoDb(RPackage):
 	bioc = "HPO.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/HPO.db_0.99.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/HPO.db/HPO.db_0.99.2.tar.gz"]
 
-	version("0.99.2", md5="977cfb31ff344c58fd2dd0a2c6b765ab")
+	version("0.99.2", sha256="5a71c0bd81f238de1fdfc5c49ee2ed3dc27c69996f18a3103407faed94cd3faf")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

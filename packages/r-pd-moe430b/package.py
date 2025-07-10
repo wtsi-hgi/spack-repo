@@ -15,7 +15,7 @@ class RPdMoe430b(RPackage):
 	bioc = "pd.moe430b" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.moe430b_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.moe430b/pd.moe430b_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="c19d2ee5e7e87703cf73afa33a5f3156")
+	version("3.12.0", sha256="cd2f4715d8a294094a796ab020c4036ff4edc72636b4e95878e2f6621a1d5af5")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

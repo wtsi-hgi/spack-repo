@@ -16,7 +16,7 @@ class RGcapc(RPackage):
 	bioc = "gcapc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gcapc_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gcapc/gcapc_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="16c0a9ac78843641871680c0e0d48dfc")
+	version("1.26.0", sha256="c1cb0d9fe184d6bc9e00a08f9827ad9be26923fa54392147cf125ce433b99c36")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

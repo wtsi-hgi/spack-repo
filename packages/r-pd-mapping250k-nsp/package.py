@@ -15,7 +15,7 @@ class RPdMapping250kNsp(RPackage):
 	bioc = "pd.mapping250k.nsp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mapping250k.nsp_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.mapping250k.nsp/pd.mapping250k.nsp_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="2786d00e1d621a9c415a599b4afe838b")
+	version("3.12.0", sha256="e7374b851ab33979e902d8bacdf6c4430d6a1885047173ff016f43fa50604882")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

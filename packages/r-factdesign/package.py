@@ -15,6 +15,6 @@ class RFactdesign(RPackage):
 	bioc = "factDesign" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/factDesign_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/factDesign/factDesign_1.78.0.tar.gz"]
 
-	version("1.78.0", md5="774d444f3227bbac6bc13e48d3974b20")
+	version("1.78.0", sha256="b0f983bb390b720ac4df18dbd02db9d84cc7d2e2f00a47aa9c722964b7d3d25a")
 
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

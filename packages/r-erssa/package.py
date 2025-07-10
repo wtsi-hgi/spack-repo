@@ -16,7 +16,7 @@ class RErssa(RPackage):
 	bioc = "ERSSA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ERSSA_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ERSSA/ERSSA_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="160e82bdb1b7af9f6452d4767a7e8a1a")
+	version("1.20.0", sha256="965e2091c4d3049bc12947880545da316caece750459369c9bde924236edffc6")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-edger@3.23.3:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RCola(RPackage):
 	bioc = "cola" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cola_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cola/cola_2.8.0.tar.gz"]
 
-	version("2.8.0", md5="57e054e12610fb8d62de83c22f6ed1de")
+	version("2.8.0", sha256="c4c3220dfdcc29df2d0da530bcefb0ffecf4ef3ecf258022176734100d303073")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-complexheatmap@2.5.4:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMmagilentdesign026655Db(RPackage):
 	bioc = "MmAgilentDesign026655.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MmAgilentDesign026655.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/MmAgilentDesign026655.db/MmAgilentDesign026655.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="7ef619bd2c74f22ea4f3c2b2c4131fe9")
+	version("3.2.3", sha256="3f62f1af5eacbaf03b69045ed4addd98388389e7ed2fd299faa7c5b298f4a001")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

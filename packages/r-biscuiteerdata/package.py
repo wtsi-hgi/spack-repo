@@ -15,7 +15,7 @@ class RBiscuiteerdata(RPackage):
 	bioc = "biscuiteerData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/biscuiteerData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/biscuiteerData/biscuiteerData_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="9610f1ea2c2e8303acbb0b52204f8d3e")
+	version("1.16.0", sha256="3df0258dfabdb50444a8f8f34c6cd4cea3014d2d609a807c7256df9448900df3")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

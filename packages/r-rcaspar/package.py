@@ -15,5 +15,5 @@ class RRcaspar(RPackage):
 	bioc = "RCASPAR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCASPAR_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RCASPAR/RCASPAR_1.48.0.tar.gz"]
 
-	version("1.48.0", md5="54a7734c80b26a4b0080fbdeb583af02")
+	version("1.48.0", sha256="07a6ffe4517664205847a8161ed0b8ccdbdfafd384ee0961688d1ec4540ce102")
 

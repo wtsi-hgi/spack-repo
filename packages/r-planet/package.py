@@ -16,7 +16,7 @@ class RPlanet(RPackage):
 	bioc = "planet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/planet_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/planet/planet_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="dbd74bc4dd3583d6ebbd871b251ecd6d")
+	version("1.10.0", sha256="b2ca381d73685a9ddf674900fa88b582780f626d25d2d0f3e4b87ad195643582")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))

@@ -15,7 +15,7 @@ class RAlabasterMae(RPackage):
 	bioc = "alabaster.mae" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.mae_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.mae/alabaster.mae_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="43abcdda61fc9d69dbc24dbd1c91664d")
+	version("1.2.0", sha256="319236c02b188c5e5e9b4b3828bac63f474932c25f4b1c91fbf03f738078e8a9")
 
 	depends_on("r-multiassayexperiment", type=("build", "run"))
 	depends_on("r-alabaster-base", type=("build", "run"))

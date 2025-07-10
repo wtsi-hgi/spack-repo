@@ -16,7 +16,7 @@ class RCuratedtbdata(RPackage):
 	bioc = "curatedTBData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedTBData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedTBData/curatedTBData_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="190a770c4f5df45cf722b7ee287a2384")
+	version("1.8.0", sha256="1a675f4a41186e1144bb83134b84e1a521772eeaa01b31228db1197e8399cc84")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

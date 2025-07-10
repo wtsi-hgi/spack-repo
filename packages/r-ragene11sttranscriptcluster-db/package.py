@@ -15,7 +15,7 @@ class RRagene11sttranscriptclusterDb(RPackage):
 	bioc = "ragene11sttranscriptcluster.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ragene11sttranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ragene11sttranscriptcluster.db/ragene11sttranscriptcluster.db_8.8.0.tar.gz"]
 
-	version("8.8.0", md5="f7fbe318547f911b520415a90b3440e9")
+	version("8.8.0", sha256="8d01c981ab768925a2ab0393d4303e3dc45edbe91fd3a47bdcd9da8de839a3f8")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

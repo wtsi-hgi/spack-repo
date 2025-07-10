@@ -15,7 +15,7 @@ class ROdseq(RPackage):
 	bioc = "odseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/odseq_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/odseq/odseq_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="5eac4befb045c1d0531b13501f3aa880")
+	version("1.30.0", sha256="2dae113510f5e0f5663d49da684dcb1c4dc0601489b0e1ab00918fa29300671e")
 
 	depends_on("r@3.2.3:", type=("build", "run"))
 	depends_on("r-msa@1.2.1:", type=("build", "run"))

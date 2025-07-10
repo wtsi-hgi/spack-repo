@@ -15,5 +15,5 @@ class RSpikeli(RPackage):
 	bioc = "spikeLI" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spikeLI_2.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spikeLI/spikeLI_2.62.0.tar.gz"]
 
-	version("2.62.0", md5="15e5851707938b83c34b9d5667d62f79")
+	version("2.62.0", sha256="7639c41797ac59aaa7d22500efcc1fae51fed6c10ed56f4f65692f11ab247530")
 

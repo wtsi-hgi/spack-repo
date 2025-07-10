@@ -15,7 +15,7 @@ class RChronos(RPackage):
 	bioc = "CHRONOS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CHRONOS_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CHRONOS/CHRONOS_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="7d2e5d9c89ea0163868d7b51bfd1c952")
+	version("1.30.0", sha256="dfd560fffba39c4452518e4b570faca20a2efaa6931ca1146a3c53fb7c02249b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-xml", type=("build", "run"))

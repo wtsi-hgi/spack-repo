@@ -15,7 +15,7 @@ class RDrosophila2Db(RPackage):
 	bioc = "drosophila2.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/drosophila2.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/drosophila2.db/drosophila2.db_3.13.0.tar.gz"]
 
-	version("3.13.0", md5="c01d0d1b5e17c3b36ad801b44da72b96")
+	version("3.13.0", sha256="ba71270a28d42ef47dfed60e558e28972b0b4ddaa72bd06225e8cc16a6c8960e")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

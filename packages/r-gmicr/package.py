@@ -15,7 +15,7 @@ class RGmicr(RPackage):
 	bioc = "GmicR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GmicR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GmicR/GmicR_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="13466f8e105c84116d73b39d38eed3cd")
+	version("1.16.0", sha256="ffb77c2e240742d592e0910eb4094e337401def46599252f36993beecd8cf4a9")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

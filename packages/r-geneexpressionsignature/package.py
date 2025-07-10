@@ -16,7 +16,7 @@ class RGeneexpressionsignature(RPackage):
 	bioc = "GeneExpressionSignature" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneExpressionSignature_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneExpressionSignature/GeneExpressionSignature_1.48.0.tar.gz"]
 
-	version("1.48.0", md5="ee82254ee781e3cd6657c89d94e052b3")
+	version("1.48.0", sha256="3eef9f1b9b54d1e4974ea0a74be3ca967f44e7510e25521035e1dffb65b8a840")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

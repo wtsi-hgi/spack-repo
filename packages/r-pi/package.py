@@ -16,7 +16,7 @@ class RPi(RPackage):
 	bioc = "Pi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Pi_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Pi/Pi_2.14.0.tar.gz"]
 
-	version("2.14.0", md5="cb989f0e8a3a1ab90a4a319c860ef602")
+	version("2.14.0", sha256="cddc5fe53952cd96fa284576204a45c1d016b4d26911723787625ae3c63d509a")
 
 	depends_on("r-igraph", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

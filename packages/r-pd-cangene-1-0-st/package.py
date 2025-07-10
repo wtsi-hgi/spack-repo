@@ -15,7 +15,7 @@ class RPdCangene10St(RPackage):
 	bioc = "pd.cangene.1.0.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.cangene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.cangene.1.0.st/pd.cangene.1.0.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="0a39d6378193e3f7d31a7210f6766eaf")
+	version("3.12.0", sha256="cc704f56f97b7e64838fc39df149649f6d01707366eb27d884a1486a9ff19c35")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

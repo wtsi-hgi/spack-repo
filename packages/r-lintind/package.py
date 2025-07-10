@@ -15,7 +15,7 @@ class RLintind(RPackage):
 	bioc = "LinTInd" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LinTInd_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LinTInd/LinTInd_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="3dd8f8601ee8df3a0a53a02dc0c4d272")
+	version("1.6.0", sha256="aaa51af68083825fd6dfc1e43442883a51eb80685b068bf41da166d403a2672e")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

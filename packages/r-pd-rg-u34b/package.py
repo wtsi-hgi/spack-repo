@@ -15,7 +15,7 @@ class RPdRgU34b(RPackage):
 	bioc = "pd.rg.u34b" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rg.u34b_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rg.u34b/pd.rg.u34b_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="757966b66795d388c7169816d31977ad")
+	version("3.12.0", sha256="40eb3150104df925028e9132a2bad04d5b8ca4b11830e09b506b37b5697a62a7")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

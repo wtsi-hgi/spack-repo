@@ -18,7 +18,7 @@ class RDirichletmultinomial(RPackage):
 
 	bioc = "DirichletMultinomial"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DirichletMultinomial_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DirichletMultinomial/DirichletMultinomial_1.44.0.tar.gz"]
-	version("1.44.0", md5="8527c543b1ada9640d2f434fb516ff4e")
+	version("1.44.0", sha256="9ea732aa74c1fd59d4a1641eb9c3c83863bb8ceac80d419e6a98b8ccd46071e7")
 	version("1.42.0", commit="c388536bed4bdc57724b704edec04b28acbf48db")
 	version("1.40.0", commit="200176f8c72ff127788c500629b71872bc6b1f83")
 	version("1.38.0", commit="b4de83d354e974fdb7cb3526d029487f24aab670")

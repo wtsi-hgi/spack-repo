@@ -15,7 +15,7 @@ class RCnvpanelizer(RPackage):
 	bioc = "CNVPanelizer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNVPanelizer_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNVPanelizer/CNVPanelizer_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="1d984f2fa3f3db99f3ccf72b5c9a0890")
+	version("1.34.0", sha256="b6d97880f6c4c22cc6171206758dd1f5ebc3cdd0a360327d5cda3c73dfbc0896")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

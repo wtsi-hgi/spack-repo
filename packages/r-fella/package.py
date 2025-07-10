@@ -15,7 +15,7 @@ class RFella(RPackage):
 	bioc = "FELLA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FELLA_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FELLA/FELLA_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="106f8558197df891cfb6e28e406363e1")
+	version("1.22.0", sha256="e224c04e3702d64e67f0b3ab5ee98190263827c1d5dda6b51fb0bbb3fdd9b236")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

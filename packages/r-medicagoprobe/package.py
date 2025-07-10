@@ -15,7 +15,7 @@ class RMedicagoprobe(RPackage):
 	bioc = "medicagoprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/medicagoprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/medicagoprobe/medicagoprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="83b9887ad2ed26c704b0ca7115e5838d")
+	version("2.18.0", sha256="85b2c499195d883eebc712248013831d5bee057651deac11bb76ac3ddd0dd270")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

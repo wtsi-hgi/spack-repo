@@ -16,7 +16,7 @@ class RMoonlightr(RPackage):
 	bioc = "MoonlightR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MoonlightR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MoonlightR/MoonlightR_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="2a389ad9b7fe5ffc5e2c47717eb0b4c0")
+	version("1.28.0", sha256="f973bf40393e5d45b3476feb520c958ecd71cd06bedd7341e1aecef3a2ecb5fe")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

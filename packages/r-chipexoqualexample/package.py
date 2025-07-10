@@ -16,7 +16,7 @@ class RChipexoqualexample(RPackage):
 	bioc = "ChIPexoQualExample" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ChIPexoQualExample_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ChIPexoQualExample/ChIPexoQualExample_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="5ebb67a1848aa0e69557e795d236e24b")
+	version("1.26.0", sha256="f337d0f8b38103058fc0bb6a0536df6f34967e54668fbd94056ea2a200ee65ec")
 
 	depends_on("r@3.3:", type=("build", "run"))
 

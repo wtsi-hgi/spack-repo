@@ -16,5 +16,5 @@ class RMassspecwavelet(RPackage):
 	bioc = "MassSpecWavelet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MassSpecWavelet_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MassSpecWavelet/MassSpecWavelet_1.68.0.tar.gz"]
 
-	version("1.68.0", md5="387636ea7c674fe339c56a8af3458f8a")
+	version("1.68.0", sha256="5ea71adfc8e632ab10c5b208572e398a1fc799b01d02a1608a688bafbbf89910")
 

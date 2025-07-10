@@ -15,7 +15,7 @@ class RConfess(RPackage):
 	bioc = "CONFESS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CONFESS_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CONFESS/CONFESS_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="67bd1d40551528aab55620fc0a619713")
+	version("1.30.0", sha256="828fe6d1f451eb970e30291c04a766f7a7c60e6cbece1f6ab118abb3e2c3941e")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-changepoint", type=("build", "run"))

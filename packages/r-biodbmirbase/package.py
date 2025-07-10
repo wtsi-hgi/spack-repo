@@ -15,7 +15,7 @@ class RBiodbmirbase(RPackage):
 	bioc = "biodbMirbase" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbMirbase_1.5.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbMirbase/biodbMirbase_1.5.0.tar.gz"]
 
-	version("1.5.0", md5="af331cadc2f7575e4dbf5345f19c61e6")
+	version("1.5.0", sha256="3492ef63c50a6fa34791b038a1a38c39dc2e0f900f2f90c6bf492b44d38d949d")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biodb@1.3.1:", type=("build", "run"))

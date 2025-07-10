@@ -15,7 +15,7 @@ class RImmunotation(RPackage):
 	bioc = "immunotation" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/immunotation_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/immunotation/immunotation_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="b05bb33e3987de27d181d8e44e468f62")
+	version("1.10.0", sha256="c968a420a466334de246c869a861d1961891031884e91eccf5adc918a27e6582")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))

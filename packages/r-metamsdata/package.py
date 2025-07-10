@@ -15,6 +15,6 @@ class RMetamsdata(RPackage):
 	bioc = "metaMSdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/metaMSdata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/metaMSdata/metaMSdata_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="aa7ca09c8f43104cb85f69fda0a1fc1a")
+	version("1.38.0", sha256="2d348466dde7a92eb55dec99e612e876df9fe882d96c95c693fb7f80a6ecf1a1")
 
 

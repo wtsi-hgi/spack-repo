@@ -15,7 +15,7 @@ class RSimbenchdata(RPackage):
 	bioc = "SimBenchData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SimBenchData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SimBenchData/SimBenchData_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="c801056ea68c668cd98230e8956d551b")
+	version("1.10.0", sha256="0d475441f00932e678aa8c3a7c05deca5d9a341c906fc61151598f0e8573bcbc")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

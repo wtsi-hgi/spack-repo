@@ -15,6 +15,6 @@ class RHuman370v1ccrlmm(RPackage):
 	bioc = "human370v1cCrlmm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/human370v1cCrlmm_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/human370v1cCrlmm/human370v1cCrlmm_1.0.2.tar.gz"]
 
-	version("1.0.2", md5="9ec4192f533faee2b14484de02548075")
+	version("1.0.2", sha256="c735a7d7b383d61d359cd94b0418e5ab242aa7f6922f443376c843780d7b1bba")
 
 

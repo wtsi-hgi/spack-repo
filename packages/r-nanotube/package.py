@@ -15,7 +15,7 @@ class RNanotube(RPackage):
 	bioc = "NanoTube" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NanoTube_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NanoTube/NanoTube_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="524cdc55bcaf670d538be8f6c2f06c11")
+	version("1.8.0", sha256="7b01e0bd6ee5440de5da2e4d1059992609d7e4d30875147cc9d7bf0a8b78b0f1")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

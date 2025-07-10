@@ -15,7 +15,7 @@ class RR3cpet(RPackage):
 	bioc = "R3CPET" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/R3CPET_1.34.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/R3CPET/R3CPET_1.34.1.tar.gz"]
 
-	version("1.34.1", md5="e29f7e90a8cb465d90d595a7a654856f")
+	version("1.34.1", sha256="4861a3e236229212150e1b17bc75239783250986cef4759ae64e7b63b4d9192c")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

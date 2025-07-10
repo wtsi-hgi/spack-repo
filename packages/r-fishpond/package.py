@@ -16,7 +16,7 @@ class RFishpond(RPackage):
 	bioc = "fishpond" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fishpond_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fishpond/fishpond_2.8.0.tar.gz"]
 
-	version("2.8.0", md5="407bd027d801c207371750eba2c9d735")
+	version("2.8.0", sha256="9fedcbf9f3720cb52932a0cd7608bd0de0892922fdcc4ee0a9f0fd082e237413")
 
 	depends_on("r-abind", type=("build", "run"))
 	depends_on("r-gtools", type=("build", "run"))

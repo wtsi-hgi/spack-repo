@@ -16,7 +16,7 @@ class RMbqn(RPackage):
 	bioc = "MBQN" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MBQN_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MBQN/MBQN_2.14.0.tar.gz"]
 
-	version("2.14.0", md5="e48e4ebcd3b69b82559496b66ca4cf44")
+	version("2.14.0", sha256="a213de3bcc0021cdead31da732236962433e347e7e0066343ed91589c34a1e6a")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-limma@3.30.13:", type=("build", "run"))

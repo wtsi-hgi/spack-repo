@@ -16,7 +16,7 @@ class RStatial(RPackage):
 	bioc = "Statial" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Statial_1.4.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Statial/Statial_1.4.5.tar.gz"]
 
-	version("1.4.5", md5="e7151f23bb952401803e4d239390c210")
+	version("1.4.5", sha256="b89442b4b517f18f08c3fc7052c16d17473a4b0c771bc3faba7787f6989d32c3")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

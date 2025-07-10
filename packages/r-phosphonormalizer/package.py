@@ -15,7 +15,7 @@ class RPhosphonormalizer(RPackage):
 	bioc = "phosphonormalizer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phosphonormalizer_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phosphonormalizer/phosphonormalizer_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="b0146ac595b90e20d854404e6fa427bb")
+	version("1.26.0", sha256="31f5bdbb7b8e318807c234ef512a57df12fc88e1aeb16097bd4dc0095cdb49f7")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))

@@ -15,7 +15,7 @@ class RBg2(RPackage):
 	bioc = "BG2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BG2_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BG2/BG2_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="da6ea59dda3c728bdce70a5b43e4541e", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BG2_1.2.0.tar.gz")
+	version("1.2.0", sha256="dce89bb9648069770c0968a10488f17bd93a8456bd2cb66c05e670791fde98e4", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BG2_1.2.0.tar.gz")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-ga@3.2:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RNeuca(RPackage):
 	bioc = "NeuCA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NeuCA_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NeuCA/NeuCA_1.8.1.tar.gz"]
 
-	version("1.8.1", md5="5761042e8cc461392b07e8eee6fc32c3")
+	version("1.8.1", sha256="485a2dec6d4274556cd8e5fbd5c6025a117b20d0243eb00469928b1829d1c31c")
 	version("1.8.0", commit="053e2f93a026cc1048ba2dce418f9890d2572815")
 
 	depends_on("r@3.5:", type=("build", "run"))

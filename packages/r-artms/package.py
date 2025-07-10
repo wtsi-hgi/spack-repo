@@ -16,7 +16,7 @@ class RArtms(RPackage):
 	bioc = "artMS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/artMS_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/artMS/artMS_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="d52a9405bcf6f4a3920ecb70be49c1d9")
+	version("1.20.0", sha256="077716eee47b83f6198a8d2d5c305a0730f12b4052e629b40d60e27bc605eda7")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

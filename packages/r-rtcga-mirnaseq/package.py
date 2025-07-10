@@ -15,7 +15,7 @@ class RRtcgaMirnaseq(RPackage):
 	bioc = "RTCGA.miRNASeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.miRNASeq_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.miRNASeq/RTCGA.miRNASeq_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="744062c2f0db68a88e27db9d61929a79")
+	version("1.30.0", sha256="64ec211586dd6077f2d6a5e24bd9781643adf22e2d667c17f6706d42d8396bc3")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rtcga", type=("build", "run"))

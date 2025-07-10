@@ -15,6 +15,6 @@ class RLpeadj(RPackage):
 	bioc = "LPEadj" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LPEadj_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LPEadj/LPEadj_1.62.0.tar.gz"]
 
-	version("1.62.0", md5="ebb9c5bc6d113688787fadb2739bc75a")
+	version("1.62.0", sha256="576b43aa9bd16e28db957d92ab37bb557bc666d70f0c11c1178b679129a3a59e")
 
 	depends_on("r-lpe", type=("build", "run"))
