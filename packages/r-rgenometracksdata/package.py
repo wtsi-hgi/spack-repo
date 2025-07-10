@@ -15,7 +15,7 @@ class RRgenometracksdata(RPackage):
 	bioc = "rGenomeTracksData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rGenomeTracksData_0.99.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rGenomeTracksData/rGenomeTracksData_0.99.0.tar.gz"]
 
-	version("0.99.0", md5="713103a8b4b4e48fa762ef589a43ffb8")
+	version("0.99.0", sha256="6a0a73f0a24c8ae370d8e0ce8d564148d16072fea7c23f75b666819500412fad")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

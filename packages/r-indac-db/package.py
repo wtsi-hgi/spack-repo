@@ -15,7 +15,7 @@ class RIndacDb(RPackage):
 	bioc = "indac.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/indac.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/indac.db/indac.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="cba72edcf7278033151e0eac077d8ff8")
+	version("3.2.3", sha256="51da35d543ade0d8568bb015ce992846a109102fcf2485104af34926a18f534a")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

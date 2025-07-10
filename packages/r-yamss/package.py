@@ -16,7 +16,7 @@ class RYamss(RPackage):
 	bioc = "yamss" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/yamss_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/yamss/yamss_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="a60cfddcf6749fc165badbe9a0f8a311")
+	version("1.28.0", sha256="cbf7f1b175b8d5d6514419f2f0f4ccef57f10f3d32b92bc4e8acf9cacbf02d9b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.15.3:", type=("build", "run"))

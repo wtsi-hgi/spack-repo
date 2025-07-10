@@ -16,7 +16,7 @@ class RGenomation(RPackage):
 	bioc = "genomation" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genomation_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genomation/genomation_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="5453f50009f3f7227025431d4d10f4bb")
+	version("1.34.0", sha256="6c7e40caee1115a28617c2a0a0837c92701dbce7511277c078a5957a50e877ed")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biostrings@2.47.6:", type=("build", "run"))

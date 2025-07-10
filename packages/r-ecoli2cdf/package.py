@@ -15,7 +15,7 @@ class REcoli2cdf(RPackage):
 	bioc = "ecoli2cdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ecoli2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ecoli2cdf/ecoli2cdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="b5cd1f05322ce494132ff649de9806c6")
+	version("2.18.0", sha256="39a9dd100a53ec47a8b6dab0714b9f742dc25e36efa65f90496f26dc14cf7de6")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

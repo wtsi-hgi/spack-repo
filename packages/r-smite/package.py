@@ -16,7 +16,7 @@ class RSmite(RPackage):
 	bioc = "SMITE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SMITE_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SMITE/SMITE_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="47c578785a426c3c7850880ed58033e8")
+	version("1.30.0", sha256="4dd237f2511774db0c583430ba205548df21ccf077f3dae0d0810ec29de4e043")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

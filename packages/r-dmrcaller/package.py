@@ -15,7 +15,7 @@ class RDmrcaller(RPackage):
 	bioc = "DMRcaller" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DMRcaller_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DMRcaller/DMRcaller_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="1c5b37620b4950eb63e32c3063235e8e")
+	version("1.34.0", sha256="d5d9755fe32bc63a2fad4ee5f058b81245bace5545a502db954db1da905689ff")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

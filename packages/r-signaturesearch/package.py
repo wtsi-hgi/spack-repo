@@ -16,7 +16,7 @@ class RSignaturesearch(RPackage):
 	bioc = "signatureSearch" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/signatureSearch_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/signatureSearch/signatureSearch_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="9585172c7764e755ee67aee1c5a1adba")
+	version("1.16.0", sha256="320303b830cdbfa81e3aad1fb7187246d691b1bccaf42ae54f6f1a9f08c60fa6")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

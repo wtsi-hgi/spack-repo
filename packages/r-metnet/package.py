@@ -15,7 +15,7 @@ class RMetnet(RPackage):
 	bioc = "MetNet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetNet_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetNet/MetNet_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="0e03ec28e1272f094758907923a0226f")
+	version("1.20.0", sha256="84e09d3a9c1c8b6c96e4f175ea099eb9c6d525bbee67481d2d97b55f7a33089c")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-s4vectors@0.28.1:", type=("build", "run"))

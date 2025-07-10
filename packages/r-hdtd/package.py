@@ -16,7 +16,7 @@ class RHdtd(RPackage):
 	bioc = "HDTD" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HDTD_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HDTD/HDTD_1.36.0.tar.gz"]
 
-	version("1.36.0", md5="c990bac6152195272ae3aa3557f8b82b")
+	version("1.36.0", sha256="22fb9967fac923ef3dcd5d11b57398a80c4969cd4ff8d3ec8ec806b5951b4478")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

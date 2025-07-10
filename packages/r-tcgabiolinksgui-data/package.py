@@ -16,7 +16,7 @@ class RTcgabiolinksguiData(RPackage):
 	bioc = "TCGAbiolinksGUI.data" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TCGAbiolinksGUI.data_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TCGAbiolinksGUI.data/TCGAbiolinksGUI.data_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="bd2042c0064583d666364a52ce3be17e")
+	version("1.22.0", sha256="cad5d078da2d9df521a4bc5398324849caf4d73c6d3c46dda362e59214b6d511")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

@@ -15,7 +15,7 @@ class RWeitrix(RPackage):
 	bioc = "weitrix" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/weitrix_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/weitrix/weitrix_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="101d61858d3d388a1396212f7ef5332e")
+	version("1.14.0", sha256="bbafa161c07fa8696d7f3d24182dc4f64309381cf63a3d019b39bd85be6dc366")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

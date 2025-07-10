@@ -16,7 +16,7 @@ class RFlowcybar(RPackage):
 	bioc = "flowCyBar" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowCyBar_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowCyBar/flowCyBar_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="9236c02598960d4536906fb7449a7dd4")
+	version("1.38.0", sha256="a129626e119624926cf56b60be2ddf4eaf8f03f8143433072a040f54384e987d")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

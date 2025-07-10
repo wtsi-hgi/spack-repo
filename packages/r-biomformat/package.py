@@ -25,7 +25,7 @@ class RBiomformat(RPackage):
 	version("1.8.0", commit="acd207377b24e4d8310eaff06c16dcfe6c04509a")
 	version("1.6.0", commit="61fb8c7b34ad561c3c46cacc0dd1957be56da85e")
 	version("1.4.0", commit="83b4b1883bc56ea93a0a6ca90fc1b18712ef0f1a")
-	version("1.30.0", md5="f35aaf72b454bc1872f1247642029006")
+	version("1.30.0", sha256="01cb26197d5b05a0e9d9eacc8af1cd3e568da5e588e941e31ca3bc99d1cf96b1")
 	version("1.28.0", commit="9240e78dc378abcf6c62ef8dbf2e60f7241232a3")
 	version("1.26.0", commit="f851ba2428b57769f6fbb287874bad0dc84dd69c")
 	version("1.24.0", commit="4e14692dbcc34c3bd51defd74c728df5de9d0829")

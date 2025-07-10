@@ -15,7 +15,7 @@ class RRrdpdata(RPackage):
 	bioc = "rRDPData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/rRDPData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/rRDPData/rRDPData_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="9ca56f1bf00bfaefb27c351ccc7346ae")
+	version("1.22.0", sha256="4153acb1bf1bdebb4b5c5ee723c6295c1c73a64bf625fa0cdb54fbd3721169a2")
 
 	depends_on("r-rrdp", type=("build", "run"))
 	depends_on("openjdk", type=("build", "link", "run"))

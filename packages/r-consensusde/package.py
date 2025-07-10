@@ -15,7 +15,7 @@ class RConsensusde(RPackage):
 	bioc = "consensusDE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/consensusDE_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/consensusDE/consensusDE_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="f4aedcdf9823551d0ea0cc2ae64ac475")
+	version("1.20.0", sha256="e4652fb90e8c81e03f02c0b03fc90904c306a365cfa8af641f1265a87f8cc503")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

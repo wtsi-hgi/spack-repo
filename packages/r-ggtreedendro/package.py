@@ -15,7 +15,7 @@ class RGgtreedendro(RPackage):
 	bioc = "ggtreeDendro" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggtreeDendro_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggtreeDendro/ggtreeDendro_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="e5839d466e08665eb2475a99fb74e833")
+	version("1.4.0", sha256="ace77cc34d998168e516ef377b563d49d9d8895135fdc6cdb9359544f6b2df3e")
 
 	depends_on("r-ggtree@3.5.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

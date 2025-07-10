@@ -15,7 +15,7 @@ class RMousechrloc(RPackage):
 	bioc = "mouseCHRLOC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mouseCHRLOC_2.1.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mouseCHRLOC/mouseCHRLOC_2.1.6.tar.gz"]
 
-	version("2.1.6", md5="0b81d7391e628cc355af4de3c5585a5f")
+	version("2.1.6", sha256="e2dee905d162c6f662b2976d1a84dac168c7c900f69ecd1bb6b2f641be7dd477")
 
 	depends_on("r@2.7:", type=("build", "run"))
 

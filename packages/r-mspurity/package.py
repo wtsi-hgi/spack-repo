@@ -16,7 +16,7 @@ class RMspurity(RPackage):
 	bioc = "msPurity" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msPurity_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msPurity/msPurity_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="0a29b8f3eacf707bf9791d50df53083a")
+	version("1.28.0", sha256="fc8d983718934cc47d134536629fbbd9e51bf9e430bd8980f522a118effc7492")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))

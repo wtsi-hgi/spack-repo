@@ -15,7 +15,7 @@ class RFlyDb0(RPackage):
 	bioc = "fly.db0" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/fly.db0_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/fly.db0/fly.db0_3.18.0.tar.gz"]
 
-	version("3.18.0", md5="49722b8a538d02f71631a418b92c44d7", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/fly.db0_3.18.0.tar.gz")
+	version("3.18.0", sha256="2f170e187d3ed3a41a80a810d5e9b604b178cb48cb1de685fbb1b4c665ca7ade", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/fly.db0_3.18.0.tar.gz")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))

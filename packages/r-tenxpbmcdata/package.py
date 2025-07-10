@@ -15,7 +15,7 @@ class RTenxpbmcdata(RPackage):
 	bioc = "TENxPBMCData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TENxPBMCData_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TENxPBMCData/TENxPBMCData_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="3e6c961a01998667f37de542858dbc09")
+	version("1.20.0", sha256="8b3788f58c23f7821deb5535e497d2ef1e8b495f8d3be1b6cd0cffd0c370ef26")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-hdf5array", type=("build", "run"))

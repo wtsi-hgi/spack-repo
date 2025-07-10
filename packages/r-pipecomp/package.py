@@ -16,7 +16,7 @@ class RPipecomp(RPackage):
 	bioc = "pipeComp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pipeComp_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pipeComp/pipeComp_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="ccc688331233bccee84104cbbb9b5d81")
+	version("1.12.0", sha256="d9382d3d90aeeb39d6d655b19fcde34926b3f379a7c4741b97860e9409dfc271")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

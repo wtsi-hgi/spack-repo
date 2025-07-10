@@ -15,5 +15,5 @@ class RBader(RPackage):
 	bioc = "BADER" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BADER_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BADER/BADER_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="10d4e5e231ff178df7922078024f9d89")
+	version("1.40.0", sha256="d597dfa44e9c0dffc8bae73cced5b21bfeea76fb7523f2d84bd36a4e8f3aae7e")
 

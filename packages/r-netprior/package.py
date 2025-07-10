@@ -16,7 +16,7 @@ class RNetprior(RPackage):
 	bioc = "netprioR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/netprioR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/netprioR/netprioR_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="7e4023edbe230057c85ae74d90f59fd1")
+	version("1.28.0", sha256="913b56763c125c2729a51c0a550b5533ad511a4bdd310f9ff4c52f7abb4c0b0a")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

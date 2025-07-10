@@ -16,7 +16,7 @@ class RIdr2d(RPackage):
 	bioc = "idr2d" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/idr2d_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/idr2d/idr2d_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="6662b2b18dc8c6029ad40099c5fcd6a7")
+	version("1.16.0", sha256="c0a66142299ca9ae8ed82270008f46bde1c0b67f7f60a6439d7f9c0852617b1b")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr@0.7.6:", type=("build", "run"))

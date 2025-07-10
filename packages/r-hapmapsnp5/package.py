@@ -15,6 +15,6 @@ class RHapmapsnp5(RPackage):
 	bioc = "hapmapsnp5" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hapmapsnp5_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/hapmapsnp5/hapmapsnp5_1.44.0.tar.gz"]
 
-	version("1.44.0", md5="2f14e60f39cf94c43f2dd0e5aa5a48e2", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hapmapsnp5_1.44.0.tar.gz")
+	version("1.44.0", sha256="63c0e6f2940e68c4506c648e0524ea21f18c878af9c38b11ed4d6d4bdb980691", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hapmapsnp5_1.44.0.tar.gz")
 
 

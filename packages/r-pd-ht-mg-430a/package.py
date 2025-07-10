@@ -15,7 +15,7 @@ class RPdHtMg430a(RPackage):
 	bioc = "pd.ht.mg.430a" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.ht.mg.430a_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.ht.mg.430a/pd.ht.mg.430a_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="65ea4fae22d21ad70998ba3ea034dcc0")
+	version("3.12.0", sha256="b8166293f5fee9c80e3a59d0426031c9c5a3ac41d6a555bfb9278843aed25083")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

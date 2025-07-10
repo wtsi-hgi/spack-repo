@@ -15,7 +15,7 @@ class RLumimouseidmapping(RPackage):
 	bioc = "lumiMouseIDMapping" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/lumiMouseIDMapping_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/lumiMouseIDMapping/lumiMouseIDMapping_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="305aba80ebf6ef4c26899302ea9e50e8")
+	version("1.10.0", sha256="a9c6a67caf09509bee78288c49135e156a708aa48f287585b6a35c71f93eaca2")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-lumi@1.7.14:", type=("build", "run"))

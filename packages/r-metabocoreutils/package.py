@@ -16,7 +16,7 @@ class RMetabocoreutils(RPackage):
 	bioc = "MetaboCoreUtils" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetaboCoreUtils_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetaboCoreUtils/MetaboCoreUtils_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="e4b834af09aa89158b64b8586d4d15c4")
+	version("1.10.0", sha256="b491e54bac78a8edbb84158748e503d8847d6828bac930c4d511558a7923422f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-mscoreutils", type=("build", "run"))

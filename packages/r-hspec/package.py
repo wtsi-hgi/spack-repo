@@ -15,7 +15,7 @@ class RHspec(RPackage):
 	bioc = "Hspec" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Hspec_0.99.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Hspec/Hspec_0.99.1.tar.gz"]
 
-	version("0.99.1", md5="0ade3e3147c8f0086e9be2312cccdfeb")
+	version("0.99.1", sha256="ab9efed4e74db04fa104ff080ab55dcd962271e70240ff0f3bcf9c1468eceaa2")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

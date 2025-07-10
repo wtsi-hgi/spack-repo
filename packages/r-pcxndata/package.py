@@ -15,7 +15,7 @@ class RPcxndata(RPackage):
 	bioc = "pcxnData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/pcxnData_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/pcxnData/pcxnData_2.24.0.tar.gz"]
 
-	version("2.24.0", md5="7814b1a6f5dbd08e71df1e92ea4328f6")
+	version("2.24.0", sha256="124c63d4ed955a4d161351041adf5a4e9e8f23db78c04494159d5982627c1856")
 
 	depends_on("r@3.4:", type=("build", "run"))
 

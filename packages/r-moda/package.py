@@ -15,7 +15,7 @@ class RModa(RPackage):
 	bioc = "MODA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MODA_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MODA/MODA_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="5f48d76fbd7f8905725dbd2db1bc6fee")
+	version("1.28.0", sha256="824b7dac0b2340a327ca7ac80fc9f2312fac24234c4b5546cd6373f31c35b5ab")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-wgcna", type=("build", "run"))

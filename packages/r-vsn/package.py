@@ -24,7 +24,7 @@ class RVsn(RPackage):
 
 	bioc = "vsn"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vsn_3.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vsn/vsn_3.70.0.tar.gz"]
-	version("3.70.0", md5="1c9484f361b22f76135af5567306f0c6")
+	version("3.70.0", sha256="702e316356d5924772b795252a156d6ee9f6918f6c97fd72bd9d8c8a5cf72052")
 	version("3.68.0", commit="b8c9cef9730a00a810e8ec08e472b26d0bff5357")
 	version("3.66.0", commit="ddccd6c74ebea426056794c2bfad2dfd02631092")
 	version("3.64.0", commit="1f09f20ee7f81100fb0bf66288c4caf0049b5508")

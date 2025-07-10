@@ -21,7 +21,7 @@ class RDexseq(RPackage):
 
 	maintainers("dorton21")
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEXSeq_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEXSeq/DEXSeq_1.48.0.tar.gz"]
-	version("1.48.0", md5="8e5876f927b0b0cdfc4a402bfb4fb3d6")
+	version("1.48.0", sha256="1c392234ef453a180d523f0d4969fc5dea518422e5c7940a9e16b816d553a9e0")
 	version("1.46.0", commit="074c0bf6776eea69e58a788a0f6904dd632a1b74")
 	version("1.44.0", commit="9660d7372d5ced1a7e324ed9a61b935023b7d135")
 	version("1.42.0", commit="d91de62a27d0cab2ef12ef1a5f23dc2f7a0cfadd")

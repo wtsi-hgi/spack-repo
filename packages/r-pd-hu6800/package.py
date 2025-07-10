@@ -15,7 +15,7 @@ class RPdHu6800(RPackage):
 	bioc = "pd.hu6800" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hu6800_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.hu6800/pd.hu6800_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="9a3a3edde6d6f31b9e90dc32aa68875d", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hu6800_3.12.0.tar.gz")
+	version("3.12.0", sha256="bbca5c458e304e50834548c06167a2ca1282ec3522e8b494e273947eb702b21d", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hu6800_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

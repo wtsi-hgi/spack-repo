@@ -16,7 +16,7 @@ class RBiodbhmdb(RPackage):
 	bioc = "biodbHmdb" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbHmdb_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbHmdb/biodbHmdb_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="b34c06c2ce8865b7eebedb869a1ab505")
+	version("1.8.0", sha256="9ed3b15f82965366f8277ef7ad0be09c30f5a643df51b8f77c23ec3f4decd5cf")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

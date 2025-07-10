@@ -15,7 +15,7 @@ class RPdRagene11StV1(RPackage):
 	bioc = "pd.ragene.1.1.st.v1" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.ragene.1.1.st.v1_3.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.ragene.1.1.st.v1/pd.ragene.1.1.st.v1_3.14.1.tar.gz"]
 
-	version("3.14.1", md5="7301ab6472849395ccb800c39807e969", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.ragene.1.1.st.v1_3.14.1.tar.gz")
+	version("3.14.1", sha256="d676d4bb4397537e26cea7be559e2b48bc879ad3cb7592a07f27690c257f3ecf", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.ragene.1.1.st.v1_3.14.1.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

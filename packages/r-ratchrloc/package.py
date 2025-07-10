@@ -15,7 +15,7 @@ class RRatchrloc(RPackage):
 	bioc = "ratCHRLOC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ratCHRLOC_2.1.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ratCHRLOC/ratCHRLOC_2.1.6.tar.gz"]
 
-	version("2.1.6", md5="6fecff4821a5a47e3bd38a2ff78173d5")
+	version("2.1.6", sha256="4b5b0cc170320c97565ef5191f53c79b74ebacc101874ca0fc92b7bd3935f355")
 
 	depends_on("r@2.7:", type=("build", "run"))
 

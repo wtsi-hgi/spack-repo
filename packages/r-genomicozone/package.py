@@ -15,7 +15,7 @@ class RGenomicozone(RPackage):
 	bioc = "GenomicOZone" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicOZone_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicOZone/GenomicOZone_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="c975a4b1c29d471efe90a5bba68247bb")
+	version("1.16.0", sha256="68700fac97a1141544b9c9666b33ea905e9eb337f84c0f6cfa984ccb390621b7")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ckmeans-1d-dp@4.3:", type=("build", "run"))

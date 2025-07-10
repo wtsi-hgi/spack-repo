@@ -25,7 +25,7 @@ class RAcde(RPackage):
 
 	version("1.8.0", commit="f7fc3e1dce958445f920d3b28b56abde70bfb9de")
 	version("1.6.0", commit="244c81f435a077bf7895ea565fa6695e8b079f67")
-	version("1.32.0", md5="9a324caddfceb2aa977e0fc9e7e41615")
+	version("1.32.0", sha256="37cd2980c8a91bb4df87e84b0265039c5f6545c7e3a28ec519bae34789941ee7")
 	version("1.30.0", commit="4c16b9fd6c91a433bf1345252e022571c4983cb5")
 	version("1.28.0", commit="0edccca7be2475fa2ae3b3c36d0d64924c37b3c0")
 	version("1.26.0", commit="dfef9a435062e948efd5eda22942a0d500baa992")

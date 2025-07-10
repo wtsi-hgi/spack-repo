@@ -15,7 +15,7 @@ class RPdRjpgene11St(RPackage):
 	bioc = "pd.rjpgene.1.1.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rjpgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rjpgene.1.1.st/pd.rjpgene.1.1.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="265503774b15e0f4e71ac53a276a80f2")
+	version("3.12.0", sha256="ccbf086fb5e7a67281ff24a1c92b941c69bfb52e6e38e920f923286f9c772945")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RStarank(RPackage):
 	bioc = "staRank" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/staRank_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/staRank/staRank_1.44.0.tar.gz"]
 
-	version("1.44.0", md5="6284ebc665a24e39437e707b4fc1ad80")
+	version("1.44.0", sha256="149d38d9e5128b4c53159ac517c81cff3a55eda5cb293dad12e159121b6515d9")
 
 	depends_on("r-cellhts2", type=("build", "run"))
 	depends_on("r@2.10:", type=("build", "run"))

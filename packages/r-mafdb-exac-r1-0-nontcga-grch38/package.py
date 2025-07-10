@@ -15,7 +15,7 @@ class RMafdbExacR10NontcgaGrch38(RPackage):
 	bioc = "MafDb.ExAC.r1.0.nonTCGA.GRCh38" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.ExAC.r1.0.nonTCGA.GRCh38_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/MafDb.ExAC.r1.0.nonTCGA.GRCh38/MafDb.ExAC.r1.0.nonTCGA.GRCh38_3.10.0.tar.gz"]
 
-	version("3.10.0", md5="cf447f59cc8b1cd7ca395fd3fe6e4730", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.ExAC.r1.0.nonTCGA.GRCh38_3.10.0.tar.gz")
+	version("3.10.0", sha256="cad3acc1a8287cf0d82d4a5a509a5c6b76da92dd0adc30b16df27c6a89a83a9b", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.ExAC.r1.0.nonTCGA.GRCh38_3.10.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicscores@1.9.6:", type=("build", "run"))

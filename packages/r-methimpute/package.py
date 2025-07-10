@@ -15,7 +15,7 @@ class RMethimpute(RPackage):
 	bioc = "methimpute" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methimpute_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methimpute/methimpute_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="7b2a598d7391c33c4ba82639616077e6")
+	version("1.24.0", sha256="16efff43478e8d2a09d80c4e6475eeb654f4936eb06fa28578face1de7eabb69")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

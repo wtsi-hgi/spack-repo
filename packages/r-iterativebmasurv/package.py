@@ -16,7 +16,7 @@ class RIterativebmasurv(RPackage):
 	bioc = "iterativeBMAsurv" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iterativeBMAsurv_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iterativeBMAsurv/iterativeBMAsurv_1.60.0.tar.gz"]
 
-	version("1.60.0", md5="d2ced120a3665f0ebb69a462a072ad63")
+	version("1.60.0", sha256="09e9a010a303c25c85540bc32e768173f4dda11980b3ae5ff9347e2a10fa93c4")
 
 	depends_on("r-bma", type=("build", "run"))
 	depends_on("r-leaps", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMetapone(RPackage):
 	bioc = "metapone" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metapone_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metapone/metapone_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="d53938772148968f88fab10130dbc905")
+	version("1.8.0", sha256="4f660792fb1420623fa383a952b10ebec5231d7776c4581b7e50403f9d440390")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

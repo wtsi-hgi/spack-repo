@@ -15,7 +15,7 @@ class RAlabasterBumpy(RPackage):
 	bioc = "alabaster.bumpy" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.bumpy_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.bumpy/alabaster.bumpy_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="0d5111cd74d5b72fc88eb66ac5b670c3")
+	version("1.2.0", sha256="8e950c654ecf06291866608c97328d00ee118bada10cbc78c1bf501bdec2257d")
 
 	depends_on("r-bumpymatrix", type=("build", "run"))
 	depends_on("r-alabaster-base", type=("build", "run"))

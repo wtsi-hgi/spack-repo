@@ -15,7 +15,7 @@ class RTargetscanMmEgDb(RPackage):
 	bioc = "targetscan.Mm.eg.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/targetscan.Mm.eg.db_0.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/targetscan.Mm.eg.db/targetscan.Mm.eg.db_0.6.1.tar.gz"]
 
-	version("0.6.1", md5="1830815c9d1383739f1ff152da0508c5")
+	version("0.6.1", sha256="c5b1f49bdf7755fecc0cc0f6a536997160f0380d9ef19b1916a827cb6fdfa629")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

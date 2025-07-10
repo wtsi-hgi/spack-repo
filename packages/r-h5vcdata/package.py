@@ -15,6 +15,6 @@ class RH5vcdata(RPackage):
 	bioc = "h5vcData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/h5vcData_2.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/h5vcData/h5vcData_2.22.0.tar.gz"]
 
-	version("2.22.0", md5="c251316e2d6dc6cb90e8faad0015103b")
+	version("2.22.0", sha256="ff015754b692f4057063e947d01e76a1bfa6c9715f71b4123f3c2a6f1eced45d")
 
 

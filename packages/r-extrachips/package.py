@@ -16,7 +16,7 @@ class RExtrachips(RPackage):
 	bioc = "extraChIPs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/extraChIPs_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/extraChIPs/extraChIPs_1.6.1.tar.gz"]
 
-	version("1.6.1", md5="1dd6dd8771e0dfa2ba6d612e53456eda")
+	version("1.6.1", sha256="9a66fcd6c22f231a27d3f341b102e7355faaba892304ba13bce10ea430a86e99")
 
 	depends_on("r-biocparallel", type=("build", "run"))
 	depends_on("r@4.2:", type=("build", "run"))

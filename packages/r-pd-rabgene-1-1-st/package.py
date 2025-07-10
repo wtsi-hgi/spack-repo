@@ -15,7 +15,7 @@ class RPdRabgene11St(RPackage):
 	bioc = "pd.rabgene.1.1.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rabgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rabgene.1.1.st/pd.rabgene.1.1.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="2492695661309f5e6628612685460ee5")
+	version("3.12.0", sha256="0a9c0013461a705cd63b9765633d17d778515d93c2ac6f0cc437d376879a4363")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RBayesspace(RPackage):
 	bioc = "BayesSpace" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BayesSpace_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BayesSpace/BayesSpace_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="5505178450768dc45884632e3e0a3baf")
+	version("1.12.0", sha256="0584268335dad3b79815c1a85201167585b1258cff171bd949c1ed6ca9d70fd7")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

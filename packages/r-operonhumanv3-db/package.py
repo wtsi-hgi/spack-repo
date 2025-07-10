@@ -15,7 +15,7 @@ class ROperonhumanv3Db(RPackage):
 	bioc = "OperonHumanV3.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/OperonHumanV3.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/OperonHumanV3.db/OperonHumanV3.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="648da5d4d63c6c8327f6035ee09f2b65")
+	version("3.2.3", sha256="1198d0f69b2ec110582bdccccdf0a34c31f55e8f2b3d8441b962728690734f20")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

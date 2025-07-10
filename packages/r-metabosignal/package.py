@@ -15,7 +15,7 @@ class RMetabosignal(RPackage):
 	bioc = "MetaboSignal" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetaboSignal_1.32.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetaboSignal/MetaboSignal_1.32.1.tar.gz"]
 
-	version("1.32.1", md5="744fd78883ccbcc18a0e65cd0960f8c6")
+	version("1.32.1", sha256="b53d203a6931da778492680274fc6f28d353084052cd143bc4dd9d61454a48f4")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-kegggraph", type=("build", "run"))

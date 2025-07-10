@@ -15,7 +15,7 @@ class RPairadise(RPackage):
 	bioc = "PAIRADISE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PAIRADISE_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PAIRADISE/PAIRADISE_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="2a3889d2380363b7a9b0ee3c75ef0891")
+	version("1.18.0", sha256="f95eec0a7a3743142fdc4f39bec8c59aca6644a09a3e9cd755f4c4ad776727fc")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-nloptr", type=("build", "run"))

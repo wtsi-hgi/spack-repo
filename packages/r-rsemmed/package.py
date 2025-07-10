@@ -16,7 +16,7 @@ class RRsemmed(RPackage):
 	bioc = "rsemmed" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rsemmed_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rsemmed/rsemmed_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="379f918582942443c9823373180a9978")
+	version("1.12.0", sha256="6121ae85efa4d5b258c7a7c139fd0523b3ba7843b646c169d30bf05341b79684")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

@@ -16,7 +16,7 @@ class RWaddr(RPackage):
 	bioc = "waddR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/waddR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/waddR/waddR_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="97a692c918d531e3d872dc17141cd112")
+	version("1.16.0", sha256="675e24e4135651c3b0618452334769d5388f21a45979acd82fd1f6b84bbf451d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -15,7 +15,7 @@ class REcoliprobe(RPackage):
 	bioc = "ecoliprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ecoliprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ecoliprobe/ecoliprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="09586f9907bdbc43ba5ea4ce07c1f756")
+	version("2.18.0", sha256="0d5ef5a4abe87a1736cc66b5d4677bb644c103072cc7503850672afd5dffe59d")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

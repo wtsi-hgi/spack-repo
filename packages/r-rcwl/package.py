@@ -15,7 +15,7 @@ class RRcwl(RPackage):
 	bioc = "Rcwl" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rcwl_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rcwl/Rcwl_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="f427ee3f7f5ba2458f8f97b694b48a85")
+	version("1.18.0", sha256="6a1f63138effc6602d01bd3f2dc87dd8495816f2d89a7f22135299c8ab1f7887")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-yaml", type=("build", "run"))

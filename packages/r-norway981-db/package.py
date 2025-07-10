@@ -15,7 +15,7 @@ class RNorway981Db(RPackage):
 	bioc = "Norway981.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Norway981.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Norway981.db/Norway981.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="85367390919bba9018438585e59fbb87")
+	version("3.2.3", sha256="69258a3bdbe594d59030ab408c37329ff6b9993cd5d631d2a929621aa160cf12")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMarinerdata(RPackage):
 	bioc = "marinerData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/marinerData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/marinerData/marinerData_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="7875113ebb6baaaed6eb6fc762ba92ca")
+	version("1.2.0", sha256="409193a16e446a6aac69760421b40e0ad5f6ac562740839a49787a28a3c9a102")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 

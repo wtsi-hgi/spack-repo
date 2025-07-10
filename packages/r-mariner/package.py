@@ -16,7 +16,7 @@ class RMariner(RPackage):
 	bioc = "mariner" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mariner_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mariner/mariner_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="6ed30878d03b8a17e8e7c4ee17218893")
+	version("1.2.0", sha256="10b7c90220d80840c9e530e93888ef31a5df74fae9bef36334190def8c27f28b")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

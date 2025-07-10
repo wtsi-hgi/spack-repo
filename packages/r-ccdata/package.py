@@ -15,7 +15,7 @@ class RCcdata(RPackage):
 	bioc = "ccdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ccdata_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ccdata/ccdata_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="60cbd595e53467fd61e1edc4f8ea47e7")
+	version("1.28.0", sha256="128da39bb276ad0e2da648263afe7ca398a7a6dbf42336557d0e0f0b16e653ef")
 
 	depends_on("r@3.3:", type=("build", "run"))
 

@@ -19,7 +19,7 @@ class RFgsea(RPackage):
 	version("1.8.0", commit="bb2898aca9fb23e90770671a83fe23f79bb1841b")
 	version("1.6.0", commit="52b801b7c2dfd8238fa8f2b402fddb4fda60271d")
 	version("1.4.1", commit="73de5ff364e520ac99507a9ee5a61a0d23d3c44e")
-	version("1.28.0", md5="53b8ab8a13390a0920bc13eeba3aa1b8")
+	version("1.28.0", sha256="14938064e7a492b9a0edb8ac068b107a86e613df232f58820984df672369d36b")
 	version("1.26.0", commit="102b439e2208ae415dc19d3d1ac8936f9c5999f1")
 	version("1.24.0", commit="ac74ccd935c15623b8584caa791835aec514144b")
 	version("1.22.0", commit="e4e203aa64faa984e0406fed5d87a422d9df92f2")

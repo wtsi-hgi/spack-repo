@@ -15,7 +15,7 @@ class RMouseDb0(RPackage):
 	bioc = "mouse.db0" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mouse.db0_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mouse.db0/mouse.db0_3.18.0.tar.gz"]
 
-	version("3.18.0", md5="1ef6bb1d25e53443871e0e8c975b36c0", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mouse.db0_3.18.0.tar.gz")
+	version("3.18.0", sha256="1ef3ab54e9b8ccdb6e49f8f43903290ced46a5bf9fac7d520a6f2e9ce7925924", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mouse.db0_3.18.0.tar.gz")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))

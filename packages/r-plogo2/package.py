@@ -15,7 +15,7 @@ class RPlogo2(RPackage):
 	bioc = "PloGO2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PloGO2_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PloGO2/PloGO2_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="a9d28e5ed4822c97721db2c841ce3eec", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PloGO2_1.14.0.tar.gz")
+	version("1.14.0", sha256="d1394125048b187aba656307cd3bff76153c6230bb5c573624fb92e51a721f64", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PloGO2_1.14.0.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-go-db", type=("build", "run"))

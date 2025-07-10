@@ -16,7 +16,7 @@ class RCycle(RPackage):
 	bioc = "cycle" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cycle_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cycle/cycle_1.56.0.tar.gz"]
 
-	version("1.56.0", md5="8c659d2ae2fb2b31f4b6dd07d68873be")
+	version("1.56.0", sha256="d68f89b313184c357646456748c7643868e31a5e2e7e2eee23a05ffec45e6040")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-mfuzz", type=("build", "run"))

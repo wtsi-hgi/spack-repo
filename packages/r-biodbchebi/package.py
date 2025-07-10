@@ -16,7 +16,7 @@ class RBiodbchebi(RPackage):
 	bioc = "biodbChebi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbChebi_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbChebi/biodbChebi_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="31f6ed155e1126b62c5a6cd7fbd6c742")
+	version("1.8.0", sha256="6b0cb638cbbc36958e1ec912936b14ddaa6788abf2a31e4ac7ba3b40e56d8745")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

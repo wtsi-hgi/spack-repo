@@ -15,7 +15,7 @@ class RPolyester(RPackage):
 	bioc = "polyester" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/polyester_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/polyester/polyester_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="acc47ee29fb9c22fb1ad4bbfafe8fd4d")
+	version("1.38.0", sha256="8496e16691e36100cbd95b0de061edf50b2699b8d47d479972024209646fccc7")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-biostrings@2.32:", type=("build", "run"))

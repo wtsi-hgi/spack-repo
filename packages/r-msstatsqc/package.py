@@ -16,7 +16,7 @@ class RMsstatsqc(RPackage):
 	bioc = "MSstatsQC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsQC_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsQC/MSstatsQC_2.20.0.tar.gz"]
 
-	version("2.20.0", md5="9328babd37ae774a13dff37e38088339")
+	version("2.20.0", sha256="82d854fc7eb8f84e16b372cffe8fb50c05e0c540705f4b0b08553ab28917c151")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -16,7 +16,7 @@ class RScarray(RPackage):
 	bioc = "SCArray" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCArray_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCArray/SCArray_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="c777bd1f1f52dd055b83830ed6da1f77")
+	version("1.10.0", sha256="4b253cb237ecaa244d8116ae4998b3f70d25c37e121e3e7fd45a5b2902679fa4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-gdsfmt@1.36:", type=("build", "run"))

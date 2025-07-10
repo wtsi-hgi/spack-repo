@@ -15,7 +15,7 @@ class RFilterffpe(RPackage):
 	bioc = "FilterFFPE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FilterFFPE_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FilterFFPE/FilterFFPE_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="e2aabe533af9d2779d1ffc2f76017ecd")
+	version("1.12.0", sha256="d081df7ebde6917dde17c99cf1546360a732c23134f10fc6ef87b4626412a563")
 
 	depends_on("r-foreach", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

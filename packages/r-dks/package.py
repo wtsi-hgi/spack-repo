@@ -15,7 +15,7 @@ class RDks(RPackage):
 	bioc = "dks" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dks_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dks/dks_1.48.0.tar.gz"]
 
-	version("1.48.0", md5="f15cb2d88222e2936dc9460d69a924ad")
+	version("1.48.0", sha256="4d07b926a96f30329cb9fbd324425f678e651d725dadcff36782812fd7d95c77")
 
 	depends_on("r@2.8:", type=("build", "run"))
 	depends_on("r-cubature", type=("build", "run"))

@@ -15,7 +15,7 @@ class RDegraph(RPackage):
 	bioc = "DEGraph" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEGraph_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEGraph/DEGraph_1.54.0.tar.gz"]
 
-	version("1.54.0", md5="c61fb687376b321b9a52dfd15375e0b1")
+	version("1.54.0", sha256="a7b8e58330a19cd537d142feecba5930af37c7ef770f3377708407a77b82beb3")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-r-utils", type=("build", "run"))

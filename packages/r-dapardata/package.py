@@ -16,7 +16,7 @@ class RDapardata(RPackage):
 	bioc = "DAPARdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DAPARdata_1.32.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DAPARdata/DAPARdata_1.32.1.tar.gz"]
 
-	version("1.32.1", md5="e8639f86e3531691502e4221bfb02d84")
+	version("1.32.1", sha256="27436b254cf9817c7c0653dc7e6e0fe939b6b358b4437bc76d595b197ec191c7")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-msnbase", type=("build", "run"))

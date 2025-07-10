@@ -15,7 +15,7 @@ class RTfarm(RPackage):
 	bioc = "TFARM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFARM_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFARM/TFARM_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="bf2876d47da6baa42642dc5492ef7a94")
+	version("1.24.0", sha256="20c11ede7bd4689e7b4b90c7e399b3f17437690e6d91c01caa2cc294260b4efa")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-arules", type=("build", "run"))

@@ -16,7 +16,7 @@ class RSipsic(RPackage):
 	bioc = "SiPSiC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SiPSiC_1.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SiPSiC/SiPSiC_1.2.2.tar.gz"]
 
-	version("1.2.2", md5="b8de9b61ecec686d20b8b3a4383cb6f9")
+	version("1.2.2", sha256="a7c2051db654860c74d8ddaaa8b36503e2d9966baf7e304fb5f95c68ebd5b755")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

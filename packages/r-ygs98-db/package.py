@@ -15,7 +15,7 @@ class RYgs98Db(RPackage):
 	bioc = "ygs98.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ygs98.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ygs98.db/ygs98.db_3.13.0.tar.gz"]
 
-	version("3.13.0", md5="d21c0dc1ee0f7512ae921a501b425fd3")
+	version("3.13.0", sha256="ade35e2afefbf099da2012f5b98ed541831c41ce766906a160d23ad0e126e2d6")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

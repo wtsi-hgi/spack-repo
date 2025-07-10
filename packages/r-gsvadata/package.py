@@ -15,7 +15,7 @@ class RGsvadata(RPackage):
 	bioc = "GSVAdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GSVAdata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GSVAdata/GSVAdata_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="3c2d6a66967ab8c3c2545fc3323282b3")
+	version("1.38.0", sha256="b8f8236dfd07310a85b038fa98cf26e3bb43831eb9dc5ebc8e595b5dd7d533a9")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

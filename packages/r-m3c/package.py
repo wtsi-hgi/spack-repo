@@ -15,7 +15,7 @@ class RM3c(RPackage):
 	bioc = "M3C" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/M3C_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/M3C/M3C_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="e04534528d39712026e9b1de15a12c3d")
+	version("1.24.0", sha256="61d22fd4c7e81c3e36cce452b7991d8f97bb6608f1822352fdb0d2770bbbd660")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

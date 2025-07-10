@@ -15,7 +15,7 @@ class RTimecoursedata(RPackage):
 	bioc = "timecoursedata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/timecoursedata_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/timecoursedata/timecoursedata_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="a5b9f962c12d69003eff9b6949d2b0af")
+	version("1.12.0", sha256="63d9711c51103cd8c9c50a8e08d1a94a43216b89bd187ab38158342c1be32482")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

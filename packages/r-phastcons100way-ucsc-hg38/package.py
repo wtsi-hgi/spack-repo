@@ -15,7 +15,7 @@ class RPhastcons100wayUcscHg38(RPackage):
 	bioc = "phastCons100way.UCSC.hg38" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/phastCons100way.UCSC.hg38_3.7.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/phastCons100way.UCSC.hg38/phastCons100way.UCSC.hg38_3.7.1.tar.gz"]
 
-	version("3.7.1", md5="878c757f9270b3410d11e4e4a4213c8e", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/phastCons100way.UCSC.hg38_3.7.1.tar.gz")
+	version("3.7.1", sha256="607ba9035ef1ce21768e4471efe6ec96199d02db8f5d2fd9e2a391be731a6a36", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/phastCons100way.UCSC.hg38_3.7.1.tar.gz")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-genomicscores@1.3.19:", type=("build", "run"))

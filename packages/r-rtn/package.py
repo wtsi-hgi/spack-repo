@@ -16,7 +16,7 @@ class RRtn(RPackage):
 	bioc = "RTN" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RTN_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RTN/RTN_2.26.0.tar.gz"]
 
-	version("2.26.0", md5="3e79f58bcc4f0ac95a48819a0027028e")
+	version("2.26.0", sha256="c50386259d4a92e9c56b68c696fae72831dd411c83d3b8cf618ad495375c90d6")
 
 	depends_on("r@3.6.3:", type=("build", "run"))
 	depends_on("r-reder", type=("build", "run"))

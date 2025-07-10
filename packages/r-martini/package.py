@@ -16,7 +16,7 @@ class RMartini(RPackage):
 	bioc = "martini" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/martini_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/martini/martini_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="85e3366daf7ac24c0f50261fafe8b274")
+	version("1.22.0", sha256="c4873ebed264bc4b396acfe9d54700769a8cdf06d1fd07ea202f5239925dd739")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-igraph@1.0.1:", type=("build", "run"))

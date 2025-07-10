@@ -15,7 +15,7 @@ class RMedips(RPackage):
 	bioc = "MEDIPS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MEDIPS_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MEDIPS/MEDIPS_1.54.0.tar.gz"]
 
-	version("1.54.0", md5="088394b1864d37eba7ed1064a9d671e9")
+	version("1.54.0", sha256="085e41e65045f11702f5c7bf5e5c6b523c7dac3baff55527efd52c86fdcbf19d")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))

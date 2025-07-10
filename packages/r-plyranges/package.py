@@ -15,7 +15,7 @@ class RPlyranges(RPackage):
 	bioc = "plyranges" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/plyranges_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/plyranges/plyranges_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="23b74165be3c4a855e6a49d8c0f1bab1")
+	version("1.22.0", sha256="fcdcad1082fadd1a365dd2d2cc7d955601b737ecd4a567d888d2b445756297fc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

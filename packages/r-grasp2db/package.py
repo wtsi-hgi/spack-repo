@@ -15,7 +15,7 @@ class RGrasp2db(RPackage):
 	bioc = "grasp2db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/grasp2db_1.1.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/grasp2db/grasp2db_1.1.0.tar.gz"]
 
-	version("1.1.0", md5="3fc90fc7c99e7da51dcbb687fd2d5515")
+	version("1.1.0", sha256="ca9f19a1a81a57da859212159a537a1668e0681c8c38e47f6d3351067d4d01ab")
 
 	depends_on("r-rsqlite", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -16,7 +16,7 @@ class RGranie(RPackage):
 	bioc = "GRaNIE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GRaNIE_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GRaNIE/GRaNIE_1.6.1.tar.gz"]
 
-	version("1.6.1", md5="d9db703063398ccd263ce6b54def9266")
+	version("1.6.1", sha256="681f6cd397a1861871fedcbc84b69e5cfe86db7bb5493bd69d9eb1e2b43d37ed")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-futile-logger", type=("build", "run"))

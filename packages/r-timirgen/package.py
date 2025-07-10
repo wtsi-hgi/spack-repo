@@ -16,7 +16,7 @@ class RTimirgen(RPackage):
 	bioc = "TimiRGeN" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TimiRGeN_1.11.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TimiRGeN/TimiRGeN_1.11.0.tar.gz"]
 
-	version("1.11.0", md5="87bc148544059ef1b52ff839557d8a48")
+	version("1.11.0", sha256="22bf75a246dcb1dc85830bdeb9300b00647ae91fe5647d37a6d3d5405b1e9280")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-mfuzz", type=("build", "run"))

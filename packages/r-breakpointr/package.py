@@ -16,7 +16,7 @@ class RBreakpointr(RPackage):
 	bioc = "breakpointR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/breakpointR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/breakpointR/breakpointR_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="96dddc1e7bbd8b880a89f8f1be145e66")
+	version("1.20.0", sha256="6aa4d31d02829c0fbd3045da63ff9c17f210bdb3456f3303102b0ab67c8d0fca")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

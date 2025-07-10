@@ -15,7 +15,7 @@ class RGotools(RPackage):
 	bioc = "goTools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/goTools_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/goTools/goTools_1.76.0.tar.gz"]
 
-	version("1.76.0", md5="a91344726dcce37779380a18f6e9bc1d")
+	version("1.76.0", sha256="6c9bc2f6ede0df75c4181ad54434835027f8e1a72e60539a3d34f37f8221d4e1")
 
 	depends_on("r-go-db", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

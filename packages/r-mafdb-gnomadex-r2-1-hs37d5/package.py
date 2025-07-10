@@ -15,7 +15,7 @@ class RMafdbGnomadexR21Hs37d5(RPackage):
 	bioc = "MafDb.gnomADex.r2.1.hs37d5" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.gnomADex.r2.1.hs37d5_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/MafDb.gnomADex.r2.1.hs37d5/MafDb.gnomADex.r2.1.hs37d5_3.10.0.tar.gz"]
 
-	version("3.10.0", md5="6ca4d742571687a13906d99cea2dbf1f", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.gnomADex.r2.1.hs37d5_3.10.0.tar.gz")
+	version("3.10.0", sha256="5e35f5979fe9875feda4ee4ee19a1b340ee7def953578d9fee4d461a2bb38278", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MafDb.gnomADex.r2.1.hs37d5_3.10.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicscores@1.9.6:", type=("build", "run"))

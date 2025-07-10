@@ -16,7 +16,7 @@ class RTripr(RPackage):
 	bioc = "tripr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tripr_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tripr/tripr_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="6682fcae99b44178612cdf8ebc48d045")
+	version("1.8.0", sha256="f626700f1d8eef5d1d53fb33b59bc91d166fa45515ac5b384d479bce61edc721")
 
 	depends_on("r-shiny@1.6:", type=("build", "run"))
 	depends_on("r-shinybs", type=("build", "run"))

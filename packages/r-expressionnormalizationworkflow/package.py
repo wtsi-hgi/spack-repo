@@ -15,7 +15,7 @@ class RExpressionnormalizationworkflow(RPackage):
 	bioc = "ExpressionNormalizationWorkflow" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/ExpressionNormalizationWorkflow_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/ExpressionNormalizationWorkflow/ExpressionNormalizationWorkflow_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="183727233d55ec686fb9023a517df6a7")
+	version("1.28.0", sha256="6c774f657b6ca26fe24218a9a999f40f2313f3dc800b9376c1c9a1100e0d3ec8")
 
 	depends_on("r-biobase@2.24:", type=("build", "run"))
 	depends_on("r-limma@3.20.9:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RPdPorcine(RPackage):
 	bioc = "pd.porcine" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.porcine_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.porcine/pd.porcine_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="5df404babadb1d6faef73e249c819a72")
+	version("3.12.0", sha256="01ad2c1c874c9c72510ef8813c99ad5c5ec5388259383db452544108d27fa27f")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RTxdbMmulattaUcscRhemac10Refgene(RPackage):
 	bioc = "TxDb.Mmulatta.UCSC.rheMac10.refGene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Mmulatta.UCSC.rheMac10.refGene_3.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Mmulatta.UCSC.rheMac10.refGene/TxDb.Mmulatta.UCSC.rheMac10.refGene_3.14.0.tar.gz"]
 
-	version("3.14.0", md5="81b01b07d87ae91b4d9a269a2baf616e")
+	version("3.14.0", sha256="2b52a9cf4568b128f4cbe9b271626e15f69dc0826701f2460042d053b4d1fd89")
 
 	depends_on("r-genomicfeatures@1.45.2:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

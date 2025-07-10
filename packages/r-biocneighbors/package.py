@@ -28,7 +28,7 @@ class RBiocneighbors(RPackage):
 
     version("1.8.2", commit="889bc91f8cb45d210b47ae5c0b9cfb86fb071ca2")
     version("2.2.0", tag="RELEASE_3_21")
-    version("1.20.2", md5="60f1ea60fb00cfd92dfa247765da9204")
+    version("1.20.2", sha256="04123fe8ceb2cc9a17af7d187460e601dcce389adb1fcc6f89ad9c0844e27a53")
     version("1.2.0", commit="f754c6300f835142536a4594ddf750481e0fe273")
     version("1.18.0", commit="4b19ef2a76baa0b001c426bad540ab9295bec78e")
     version("1.16.0", commit="3b227beead424314aab5ef847222f8f4243c684f")

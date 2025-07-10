@@ -15,7 +15,7 @@ class RInpas(RPackage):
 	bioc = "InPAS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/InPAS_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/InPAS/InPAS_2.10.0.tar.gz"]
 
-	version("2.10.0", md5="d11dbf3351e3fec486c3da1a61bf6050")
+	version("2.10.0", sha256="3e4a8db2ee1472e21f8ed71598a0e795acc80c321d14fef5d99e2d5f3aa64519")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

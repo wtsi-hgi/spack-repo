@@ -15,7 +15,7 @@ class REdirquery(RPackage):
 	bioc = "EDIRquery" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EDIRquery_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EDIRquery/EDIRquery_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="ff19937af17cf0a7a874b986192d6b1c")
+	version("1.2.0", sha256="a7621845519e6496d83f3914aa6a3f388e7ccf9078ed8dfb4a2b152532ab5be1")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-tibble@3.1.6:", type=("build", "run"))

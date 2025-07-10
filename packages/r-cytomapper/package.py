@@ -16,7 +16,7 @@ class RCytomapper(RPackage):
 	bioc = "cytomapper" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cytomapper_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cytomapper/cytomapper_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="140e57707c43aeb7bd3b2e48b634464a")
+	version("1.14.0", sha256="e95ea205532162727bf4a3e54bdc0a7d7978966d0364fe33f46875e8a1e4e13b")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ebimage", type=("build", "run"))

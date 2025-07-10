@@ -15,7 +15,7 @@ class RIlluminahumanv3Db(RPackage):
 	bioc = "illuminaHumanv3.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/illuminaHumanv3.db_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/illuminaHumanv3.db/illuminaHumanv3.db_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="7d9e7534f0b60f0e3e7473e545ef373d")
+	version("1.26.0", sha256="cea0c9cd155197154d57400cb3f18108e451cf26e714c39698d68e45cd503a1b")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

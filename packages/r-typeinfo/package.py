@@ -15,5 +15,5 @@ class RTypeinfo(RPackage):
 	bioc = "TypeInfo" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TypeInfo_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TypeInfo/TypeInfo_1.68.0.tar.gz"]
 
-	version("1.68.0", md5="a2c4ab8a27a1d9c5a463a18cd0e37356")
+	version("1.68.0", sha256="fa05cc4a02beb5c76294af5b9d311513aef63b06d6300cbda940c579224c49e4")
 

@@ -15,7 +15,7 @@ class RHguatlas13kDb(RPackage):
 	bioc = "hguatlas13k.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hguatlas13k.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hguatlas13k.db/hguatlas13k.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="ab9ffe1a1de44c0f938129f193e7fb63")
+	version("3.2.3", sha256="20b6913630e17b424a233dd2d4beed6d413047021104e21a3703b5f422effa96")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -15,7 +15,7 @@ class RSbgnviewData(RPackage):
 	bioc = "SBGNview.data" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SBGNview.data_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SBGNview.data/SBGNview.data_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="7e1bce0dfbc48b3cdc023d88e2ea7d9a")
+	version("1.16.0", sha256="d9c9737a624c60ebc3de0e5195a60d48e3001b8ea7e38a3c9749c599cf83f9da")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-knitr", type=("build", "run"))

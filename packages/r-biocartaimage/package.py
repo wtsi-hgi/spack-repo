@@ -16,7 +16,7 @@ class RBiocartaimage(RPackage):
 	bioc = "BioCartaImage" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioCartaImage_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioCartaImage/BioCartaImage_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="8190c93a49f3d53085b3e6e44d482ffa")
+	version("1.0.0", sha256="69b3c5c40dd8d896714b644630bb8b579ec08c61f2114bfc7049c047b7fde076")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-magick", type=("build", "run"))

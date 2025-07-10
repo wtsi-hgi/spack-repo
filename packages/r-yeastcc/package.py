@@ -15,7 +15,7 @@ class RYeastcc(RPackage):
 	bioc = "yeastCC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/yeastCC_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/yeastCC/yeastCC_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="847d9bba73cb25f458f608c2cd6bf0e8")
+	version("1.42.0", sha256="d6654c09539b2a8a84d0e07c8e984fa97763f3760b78acafabeddbcfa91c74a9")
 
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))
 

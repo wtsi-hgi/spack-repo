@@ -16,7 +16,7 @@ class RIpddb(RPackage):
 	bioc = "ipdDb" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ipdDb_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ipdDb/ipdDb_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="0346f5dcca05a1bfb117214c54f36524")
+	version("1.20.0", sha256="5585cff787a7fb7ce37aba97aa052ef074b2723e5176d289e4d2284e2310a096")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.43.1:", type=("build", "run"))

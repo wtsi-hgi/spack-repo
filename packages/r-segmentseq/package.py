@@ -15,7 +15,7 @@ class RSegmentseq(RPackage):
 	bioc = "segmentSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/segmentSeq_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/segmentSeq/segmentSeq_2.36.0.tar.gz"]
 
-	version("2.36.0", md5="f86ecc00eba08e4f13412c624d98697c")
+	version("2.36.0", sha256="bee9324fba345ff9709dea1a632663d88dfec3319bad204d922a6b3ba93f03f0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-bayseq@2.9:", type=("build", "run"))

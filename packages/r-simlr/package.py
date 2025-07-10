@@ -16,7 +16,7 @@ class RSimlr(RPackage):
 	bioc = "SIMLR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SIMLR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SIMLR/SIMLR_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="9692308a74c8781b41b55409edf594ce")
+	version("1.28.0", sha256="5efb3a0248baf6b99728cdd2242b1ef437d4275dad8f43fa0e6e4854c1270ff2")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

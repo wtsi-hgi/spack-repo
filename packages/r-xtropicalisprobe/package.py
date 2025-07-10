@@ -15,7 +15,7 @@ class RXtropicalisprobe(RPackage):
 	bioc = "xtropicalisprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/xtropicalisprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/xtropicalisprobe/xtropicalisprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="43d15a7e12edaec1bb5f24b87498b599")
+	version("2.18.0", sha256="2ebe9b2189859c05899ee52a45a611f83b1685814663ec167c0dafe3bf39e30b")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

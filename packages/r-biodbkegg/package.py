@@ -16,7 +16,7 @@ class RBiodbkegg(RPackage):
 	bioc = "biodbKegg" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbKegg_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbKegg/biodbKegg_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="868600b40fc5ce4c38ced82df890400d")
+	version("1.8.0", sha256="ae722ce90aac1032faf67b11cf0c2782927aec6cb6ece3836ba5a6a534981b1e")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

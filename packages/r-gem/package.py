@@ -15,7 +15,7 @@ class RGem(RPackage):
 	bioc = "GEM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEM_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEM/GEM_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="2c2c8e79fda151dee0060411c9610ff4")
+	version("1.28.0", sha256="efbefb501dba47569251bb643ea4f8707c1e88f93e49500b80489934f095f0c3")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

@@ -15,7 +15,7 @@ class RExphuntersuite(RPackage):
 	bioc = "ExpHunterSuite" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/ExpHunterSuite_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/ExpHunterSuite/ExpHunterSuite_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="84adeeade381f26a12e2bdd69208e352")
+	version("1.10.0", sha256="f9a35e306d31656aedf511b917074f9f8118ced99e26b2ee3c04881b1bd1ed26")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-reactomepa", type=("build", "run"))

@@ -15,7 +15,7 @@ class RBsgenomeBtaurusUcscBostau9Masked(RPackage):
 	bioc = "BSgenome.Btaurus.UCSC.bosTau9.masked" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Btaurus.UCSC.bosTau9.masked_1.4.4.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Btaurus.UCSC.bosTau9.masked/BSgenome.Btaurus.UCSC.bosTau9.masked_1.4.4.tar.gz"]
 
-	version("1.4.4", md5="c96bd95c3b791d712aa5cb8c96f9c937")
+	version("1.4.4", sha256="939c58c209db29b57e7d90942a792b5a365432564d8cf3dad915ad096e869f13")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))

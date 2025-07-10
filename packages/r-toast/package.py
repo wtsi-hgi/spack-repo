@@ -15,7 +15,7 @@ class RToast(RPackage):
 	bioc = "TOAST" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TOAST_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TOAST/TOAST_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="7161d25bca2e95e8f83aea1f7d0bba6d")
+	version("1.16.0", sha256="c1d7a51c3b31fdc55f7a7c63336283b5a0fd7a82a59a5b7b82f9e5f6857e9703")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-epidish", type=("build", "run"))

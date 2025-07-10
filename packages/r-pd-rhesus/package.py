@@ -15,7 +15,7 @@ class RPdRhesus(RPackage):
 	bioc = "pd.rhesus" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.rhesus_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.rhesus/pd.rhesus_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="51efcfe1384ac956ff93bf0530965054")
+	version("3.12.0", sha256="ad8504443e0ed7c8c01a917f6cecb68233dcf5075593bff38dea097aefc137ff")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

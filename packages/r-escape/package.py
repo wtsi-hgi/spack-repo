@@ -15,7 +15,7 @@ class REscape(RPackage):
 	bioc = "escape" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/escape_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/escape/escape_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="e3dc22e072190e21938689fc0f3ab112")
+	version("1.12.0", sha256="d69dda267e9346b1d3f10274fb0985409d23060abba609d4e8859eae92b1b12e")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

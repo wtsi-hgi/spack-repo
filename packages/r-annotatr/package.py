@@ -15,7 +15,7 @@ class RAnnotatr(RPackage):
 	bioc = "annotatr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/annotatr_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/annotatr/annotatr_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="433372717ce78a1ae23a91a80601f2b6")
+	version("1.28.0", sha256="c5d4c5863a44016ef1c4c352f3b6066e663f178fa29374ea341ee4aa97edd39a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

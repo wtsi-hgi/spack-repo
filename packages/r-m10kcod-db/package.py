@@ -15,7 +15,7 @@ class RM10kcodDb(RPackage):
 	bioc = "m10kcod.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/m10kcod.db_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/m10kcod.db/m10kcod.db_3.4.0.tar.gz"]
 
-	version("3.4.0", md5="04811628e4b37cd6d24e0b2a17d79ab8")
+	version("3.4.0", sha256="5059506391d798410dcef55b9f106c3819111a7d6bfc20efa3dd8c12a3fc0e3b")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

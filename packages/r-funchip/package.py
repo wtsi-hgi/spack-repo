@@ -15,7 +15,7 @@ class RFunchip(RPackage):
 	bioc = "FunChIP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FunChIP_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FunChIP/FunChIP_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="93a91487d2e6b0841094c9eb7c997be2")
+	version("1.28.0", sha256="c19d48699810948b7bc177178811937f33abc1d1d828dafaab58be7dea521ce2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

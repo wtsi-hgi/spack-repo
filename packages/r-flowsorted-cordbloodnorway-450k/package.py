@@ -16,7 +16,7 @@ class RFlowsortedCordbloodnorway450k(RPackage):
 	bioc = "FlowSorted.CordBloodNorway.450k" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FlowSorted.CordBloodNorway.450k_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FlowSorted.CordBloodNorway.450k/FlowSorted.CordBloodNorway.450k_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="40016224becf643102bc3054f4e2508d")
+	version("1.28.0", sha256="22661f01c4f2990f619ecee211818017712e23cf1eac57bca311c2aea682199a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-minfi@1.21.2:", type=("build", "run"))

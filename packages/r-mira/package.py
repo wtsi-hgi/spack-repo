@@ -16,7 +16,7 @@ class RMira(RPackage):
 	bioc = "MIRA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MIRA_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MIRA/MIRA_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="670cb42f275d260b28e0e2d140cacda2")
+	version("1.24.0", sha256="a2cfe8b713b4fd2d0bd235fe8e2f8f1806de9a9e7b80bdf6ed859e3c4269590f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

@@ -16,7 +16,7 @@ class RPackfinder(RPackage):
 	bioc = "packFinder" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/packFinder_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/packFinder/packFinder_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="8c2f41158644b4d04136910e0ce39af8")
+	version("1.14.0", sha256="e64b62224e410d3b908ed25f9ca0d679f1eec78e593c5eee44941ef721c77ae8")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

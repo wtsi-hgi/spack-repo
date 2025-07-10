@@ -18,7 +18,7 @@ class RBamsignals(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bamsignals_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bamsignals/bamsignals_1.34.0.tar.gz"]
 
 	version("1.8.0", commit="b123b83e8e026c9ec91209d4498aff3e95a5de23")
-	version("1.34.0", md5="e7b42351aa9651bdf7d429a6377143f5")
+	version("1.34.0", sha256="6478d16da52f29e5f790f3f39c04c3f0b278fb47b5bfdce09a992b649b7f62e3")
 	version("1.32.0", commit="34bfc4e8b58e47c3b94347fd2976aeae07fc28c2")
 	version("1.30.0", commit="aac37dffd6f6876b4626866e3d40bb7af75620fe")
 	version("1.28.0", commit="27b70be6f73747d9d32054da043f4a37ea55b917")

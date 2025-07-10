@@ -15,7 +15,7 @@ class RRfpred(RPackage):
 	bioc = "rfPred" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rfPred_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rfPred/rfPred_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="125e88d593749d17979dfd08a67ea330")
+	version("1.40.0", sha256="f05c94016236898d5964884f978edb831ce6e28ec34e5d91c6f7f226b9fb9482")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomeinfodb", type=("build", "run"))

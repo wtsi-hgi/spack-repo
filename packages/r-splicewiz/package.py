@@ -16,7 +16,7 @@ class RSplicewiz(RPackage):
 	bioc = "SpliceWiz" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpliceWiz_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpliceWiz/SpliceWiz_1.4.1.tar.gz"]
 
-	version("1.4.1", md5="9812519f59c037be4490da221b96877b")
+	version("1.4.1", sha256="5764567bca0af28f4f56eb3afdbdd4015f3c3022195fe0b0d51cdb1339f07442")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-nxtirfdata", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMinfidataepic(RPackage):
 	bioc = "minfiDataEPIC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/minfiDataEPIC_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/minfiDataEPIC/minfiDataEPIC_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="bcb0b01d571c5308e02db4c6b5c0d1ce")
+	version("1.28.0", sha256="f00a13daab8b797ab4ec6b4b19042a25077378e5826404f5a0526644faa15cd4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-minfi@1.21.2:", type=("build", "run"))

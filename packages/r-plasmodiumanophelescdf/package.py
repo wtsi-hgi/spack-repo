@@ -15,7 +15,7 @@ class RPlasmodiumanophelescdf(RPackage):
 	bioc = "plasmodiumanophelescdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/plasmodiumanophelescdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/plasmodiumanophelescdf/plasmodiumanophelescdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="54c5c326977d6358c40cacf34cb2aca2")
+	version("2.18.0", sha256="09bb12c5b54d81e26a6292ad5fcc4025fae67af215ca6cdeb036ca16123043ef")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

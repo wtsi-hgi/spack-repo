@@ -16,7 +16,7 @@ class RMammaprintdata(RPackage):
 	bioc = "mammaPrintData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mammaPrintData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mammaPrintData/mammaPrintData_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="08b3249a36d5f165a933bfab5eb05a2a")
+	version("1.38.0", sha256="387305df834d4a3a68dda85c321c8072455e299dcfefb97126632b289ba3a12e")
 
 	depends_on("r@2.13:", type=("build", "run"))
 

@@ -16,7 +16,7 @@ class RDiffbind(RPackage):
 	bioc = "DiffBind" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DiffBind_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DiffBind/DiffBind_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="aa7c15e33713ad0ced01a5b6442e2d3d")
+	version("3.12.0", sha256="069926f90bef2cf148fa644b01cd63d7ec558e2be526cbd078ecb2401de98cda")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

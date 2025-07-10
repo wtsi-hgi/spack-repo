@@ -15,7 +15,7 @@ class RPhemd(RPackage):
 	bioc = "phemd" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phemd_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phemd/phemd_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="8cefd4ddfea1dd2deb007acb6cebfb7a")
+	version("1.18.0", sha256="03c5354299deefdf02142f4fc7d8464aac1489a62b719f1caf026b1b8db8929c")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-monocle", type=("build", "run"))

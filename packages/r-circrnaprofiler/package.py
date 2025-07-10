@@ -16,7 +16,7 @@ class RCircrnaprofiler(RPackage):
 	bioc = "circRNAprofiler" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/circRNAprofiler_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/circRNAprofiler/circRNAprofiler_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="5cd7f621f355f9d816938675dd550e2f")
+	version("1.16.0", sha256="c3e46196b2004face816959f320d347185a7459250fe6409b4acc0fb755e0e25")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -15,6 +15,6 @@ class RCsawusersguide(RPackage):
 	bioc = "csawUsersGuide" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/csawUsersGuide_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/csawUsersGuide/csawUsersGuide_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="f5828e278ba1ebaac94b9c3ce1dc4545")
+	version("1.18.0", sha256="e69cdfae2b84065235290b25b99d715408b2823ea2d640671a4fa72683fed919")
 
 

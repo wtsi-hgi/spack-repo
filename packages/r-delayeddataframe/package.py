@@ -16,7 +16,7 @@ class RDelayeddataframe(RPackage):
 	bioc = "DelayedDataFrame" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DelayedDataFrame_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DelayedDataFrame/DelayedDataFrame_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="dd12410d16a2e6cf7bb022d2aa334bf7")
+	version("1.18.0", sha256="cb76488971d7e26d6df500669504ec70757fee265d0f258d42c0e33ea4b8e143")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-s4vectors@0.23.19:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RBeadarraysnp(RPackage):
 	bioc = "beadarraySNP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/beadarraySNP_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/beadarraySNP/beadarraySNP_1.68.0.tar.gz"]
 
-	version("1.68.0", md5="748ed20ee2b38f5eee765be8125e5aca")
+	version("1.68.0", sha256="fafee5b78dc49205f8d252cb65aa91324897e1851d83389fe061ffeb0efc31ef")
 
 	depends_on("r-biobase@2.14:", type=("build", "run"))
 	depends_on("r-quantsmooth", type=("build", "run"))

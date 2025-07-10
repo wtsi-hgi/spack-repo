@@ -15,7 +15,7 @@ class RPdCharmHg18Example(RPackage):
 	bioc = "pd.charm.hg18.example" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.charm.hg18.example_0.99.4.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.charm.hg18.example/pd.charm.hg18.example_0.99.4.tar.gz"]
 
-	version("0.99.4", md5="e201d4281a23c202f57bae1135e226b4")
+	version("0.99.4", sha256="2fcb90dfeab1a18eeba6707cc217730d960e443225d944f0b97ba0fb091c1b5b")
 
 	depends_on("r@2.11:", type=("build", "run"))
 	depends_on("r-rsqlite@0.7.1:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RNcdfflow(RPackage):
 	bioc = "ncdfFlow" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ncdfFlow_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ncdfFlow/ncdfFlow_2.48.0.tar.gz"]
 
-	version("2.48.0", md5="974c454443e3ed6c243aed7395f28911")
+	version("2.48.0", sha256="40a55019a80bde5e65ea68162b3cc24ac87366ee2ac621f6433826b3517b3b7d")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

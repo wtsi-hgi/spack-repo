@@ -15,7 +15,7 @@ class RSetools(RPackage):
 	bioc = "SEtools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SEtools_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SEtools/SEtools_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="4b6f28a6fdf032d51f29793f25729114")
+	version("1.16.0", sha256="84e982064c51e2a3ed5c424208e6d7825d92f74498a4f0618d36d52fb0b17907")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

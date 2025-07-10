@@ -15,7 +15,7 @@ class RGars(RPackage):
 	bioc = "GARS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GARS_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GARS/GARS_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="205eceff8f152fa6ac308b7830ef2876")
+	version("1.22.0", sha256="f48a320c4eb25c23e2ad9a7f7f1be7b5ba93b498b4393f82c45c526f2622d95c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

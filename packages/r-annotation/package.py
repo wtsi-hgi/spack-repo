@@ -16,7 +16,7 @@ class RAnnotation(RPackage):
 	bioc = "annotation" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/annotation_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/annotation/annotation_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="bb13a9e2713ee77e2919b5f8a55f844f")
+	version("1.26.0", sha256="fb617eafcc2f7af9f51911eb51cb99ecd763ef66b62fa3da215850718987c17f")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-variantannotation", type=("build", "run"))

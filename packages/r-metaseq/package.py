@@ -15,7 +15,7 @@ class RMetaseq(RPackage):
 	bioc = "metaSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metaSeq_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metaSeq/metaSeq_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="8c3ee60501395cc86ecda6817d0d5439")
+	version("1.42.0", sha256="16d0efef162c0ca1dab0448c6d58d52b8594740175cfc1c69a1e3439d0f374f7")
 
 	depends_on("r@2.13:", type=("build", "run"))
 	depends_on("r-noiseq", type=("build", "run"))

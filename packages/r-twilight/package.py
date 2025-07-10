@@ -16,7 +16,7 @@ class RTwilight(RPackage):
 	bioc = "twilight" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/twilight_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/twilight/twilight_1.78.0.tar.gz"]
 
-	version("1.78.0", md5="fa6b01126ace9423edfc04757f6392b1")
+	version("1.78.0", sha256="70c3802ab0c4850d0a5bfcaba9b1e97c7ed66520c05bad30cd4c737d3ecaef01")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

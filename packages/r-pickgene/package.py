@@ -16,6 +16,6 @@ class RPickgene(RPackage):
 	bioc = "pickgene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pickgene_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pickgene/pickgene_1.74.0.tar.gz"]
 
-	version("1.74.0", md5="250b3649eff783447f1d2c34f67bf3ca")
+	version("1.74.0", sha256="5da2bf657c69351c8f2b78e8f4da800ccbfb1e4cf6eb686b57beeb648030e836")
 
 	depends_on("r-mass", type=("build", "run"))

@@ -15,7 +15,7 @@ class RBiseq(RPackage):
 	bioc = "BiSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiSeq_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiSeq/BiSeq_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="76a46bdea0a83b3ead6a8ee87d6000ac")
+	version("1.42.0", sha256="4faab2f1afc2d6852bb814e3533c429e9a91b55d8b920bce8ccc8c6ed7385d2a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

@@ -16,7 +16,7 @@ class RGenefu(RPackage):
 	bioc = "genefu" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genefu_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genefu/genefu_2.34.0.tar.gz"]
 
-	version("2.34.0", md5="cfaef57b66d09a355ae7df0db21c107d")
+	version("2.34.0", sha256="bb55478c0af19fc6ec9cd750423e94e63a9a6ec56c0ce838ef9784632ce2d663")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-survcomp", type=("build", "run"))

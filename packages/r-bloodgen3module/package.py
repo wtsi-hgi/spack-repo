@@ -15,7 +15,7 @@ class RBloodgen3module(RPackage):
 	bioc = "BloodGen3Module" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BloodGen3Module_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BloodGen3Module/BloodGen3Module_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="c9957080f8c55f99ebcc89cdc652deb9")
+	version("1.10.0", sha256="6cd56e6aa6a311a08c0fcbfd3cd77199cb403ec9f7712b63c61b7cd9dec5ef5b")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

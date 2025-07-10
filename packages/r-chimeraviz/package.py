@@ -16,7 +16,7 @@ class RChimeraviz(RPackage):
 	bioc = "chimeraviz" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chimeraviz_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chimeraviz/chimeraviz_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="30227635634cb01d8196626c86dabc26")
+	version("1.28.0", sha256="df21e0145499d05aa135cf57561230b800f24a7210c1e91f6b7b6eda426b8323")
 
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

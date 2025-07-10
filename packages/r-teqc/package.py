@@ -15,7 +15,7 @@ class RTeqc(RPackage):
 	bioc = "TEQC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TEQC_4.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TEQC/TEQC_4.24.0.tar.gz"]
 
-	version("4.24.0", md5="02976837ccda44f13a0a43b9de17ea81")
+	version("4.24.0", sha256="caa54bff006a4f2ee9299ab59385d5d3118876428a721e16c033e249fde0bf58")
 
 	depends_on("r-biocgenerics@0.1:", type=("build", "run"))
 	depends_on("r-iranges@1.13.5:", type=("build", "run"))

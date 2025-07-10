@@ -15,6 +15,6 @@ class RNgscopydata(RPackage):
 	bioc = "NGScopyData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/NGScopyData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/NGScopyData/NGScopyData_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="0ba77cf672a331e4c9dd90b26f41b5c6")
+	version("1.22.0", sha256="1594da9315dfb5cbb4fba618c2df74de08156de55be508792993ca895961a820")
 
 

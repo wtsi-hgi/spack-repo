@@ -15,7 +15,7 @@ class RGenvisr(RPackage):
 	bioc = "GenVisR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenVisR_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenVisR/GenVisR_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="f05fdc7c5736ba49ccf4eebcc1bc28ec")
+	version("1.34.0", sha256="eab26a20188f702c0ed032a20c3d2b39ddad8f10452d9336fa0020e344069b56")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

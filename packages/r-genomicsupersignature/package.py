@@ -16,7 +16,7 @@ class RGenomicsupersignature(RPackage):
 	bioc = "GenomicSuperSignature" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicSuperSignature_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicSuperSignature/GenomicSuperSignature_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="ecb55ebec91620ff435715563d8ba304")
+	version("1.10.0", sha256="c0deb6a2ceb4e8e4a725716b1803969d35ef5fc15b47943eb91c34ac5248062b")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

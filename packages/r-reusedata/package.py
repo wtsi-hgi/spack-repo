@@ -16,7 +16,7 @@ class RReusedata(RPackage):
 	bioc = "ReUseData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ReUseData_1.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ReUseData/ReUseData_1.2.2.tar.gz"]
 
-	version("1.2.2", md5="c0041ec5d810d0d043c7375e04e78c06")
+	version("1.2.2", sha256="000e6a6e63bc9bb3e5e495e39b5c43cd19412451893a681266ce1500b6b42dfb")
 
 	depends_on("r-rcwl", type=("build", "run"))
 	depends_on("r-rcwlpipelines", type=("build", "run"))

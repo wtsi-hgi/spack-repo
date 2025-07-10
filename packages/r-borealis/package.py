@@ -15,7 +15,7 @@ class RBorealis(RPackage):
 	bioc = "borealis" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/borealis_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/borealis/borealis_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="8b6aa71e360f97c8460bbf5ec3c95d91")
+	version("1.6.0", sha256="44a51762bb980824db6979645d2ade9cb7e2947382e276af5752fb715a766290")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

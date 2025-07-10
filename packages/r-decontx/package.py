@@ -15,7 +15,7 @@ class RDecontx(RPackage):
 	bioc = "decontX" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/decontX_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/decontX/decontX_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="1e2f4af9204397b8104543dd954bb390")
+	version("1.0.0", sha256="688151c203ef4607d02c2fd27e1dccae5204128cbc98c1ba9ef087082d9fe598")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-celda", type=("build", "run"))

@@ -15,6 +15,6 @@ class RHumanomni25quadv1bcrlmm(RPackage):
 	bioc = "humanomni25quadv1bCrlmm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/humanomni25quadv1bCrlmm_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/humanomni25quadv1bCrlmm/humanomni25quadv1bCrlmm_1.0.2.tar.gz"]
 
-	version("1.0.2", md5="2ee1fa7bf712d7f81a167079c975d49f")
+	version("1.0.2", sha256="d0c184e9e4d855e22ca322eadfacce193b0636bf1a45cffcfadd9de293c417e6")
 
 

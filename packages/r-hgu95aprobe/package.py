@@ -15,7 +15,7 @@ class RHgu95aprobe(RPackage):
 	bioc = "hgu95aprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu95aprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu95aprobe/hgu95aprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="67d94ecdc1889acc19dafd19d26700a2")
+	version("2.18.0", sha256="aaae162cfe56637fa2a5116605aea4c2b2ca849d378fccde3efbc58acb1b2f6a")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RDeformats(RPackage):
 	bioc = "DEFormats" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEFormats_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEFormats/DEFormats_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="d4fd53366cc3ead5959b9af782ff6790")
+	version("1.30.0", sha256="4eb81b570e74d367718570be2b24c097dab1589e1b52db07cf67ba6ae665138d")
 
 	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

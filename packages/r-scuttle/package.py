@@ -20,7 +20,7 @@ class RScuttle(RPackage):
 	version("1.6.3", commit="df23680da9fa4d685df77e4561467f491c850b50")
 	version("1.6.2", commit="afdfc555151d84cc332757b4ec0b97cb7f39d2d5")
 	version("1.4.0", commit="b335263dd56bb859b5dd3ea27ee00dffa0215313")
-	version("1.12.0", md5="b784ac30ef76b7c0cdac8b79be67b995")
+	version("1.12.0", sha256="f863f0c3bf4766fb26f74ec13a873f69e127e422bf6360dee90968c794cb0a24")
 	version("1.10.0", commit="02e864cb80414f71bb312cdf6d68e0036326e10b")
 	version("1.0.4", commit="a827e2759d80e6c3510e2f8fd4bd680274206d9f")
 

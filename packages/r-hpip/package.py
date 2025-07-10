@@ -16,7 +16,7 @@ class RHpip(RPackage):
 	bioc = "HPiP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HPiP_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HPiP/HPiP_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="cbf5bf4735e100b22b184490854f8427")
+	version("1.8.0", sha256="8ea9dc4eb955e7de42b6bec2d36b95fa63dbd3c41369eee98bcaf10fbf975677")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr@1.0.6:", type=("build", "run"))

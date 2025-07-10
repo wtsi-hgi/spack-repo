@@ -16,7 +16,7 @@ class RTidysinglecellexperiment(RPackage):
 	bioc = "tidySingleCellExperiment" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tidySingleCellExperiment_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tidySingleCellExperiment/tidySingleCellExperiment_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="4f0e61cb23c56df988e1a731a452eb2d")
+	version("1.12.0", sha256="377790b9aad4cfcbd547af705b3fe3db6b79889b9b7c5820470d508652187f23")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

@@ -15,7 +15,7 @@ class RLevi(RPackage):
 	bioc = "levi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/levi_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/levi/levi_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="fff39f74d44cb186d14ebb591b3fa3a1")
+	version("1.20.0", sha256="9f794ab27d1477537ea262cf76c210da4a55849376ace0557a8a4f2d81acb05c")
 
 	depends_on("r-dt@0.4:", type=("build", "run"))
 	depends_on("r-rcolorbrewer@1.1.2:", type=("build", "run"))

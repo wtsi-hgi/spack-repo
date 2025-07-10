@@ -16,7 +16,7 @@ class RNnnorm(RPackage):
 	bioc = "nnNorm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nnNorm_2.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nnNorm/nnNorm_2.66.0.tar.gz"]
 
-	version("2.66.0", md5="f6e41106fc2afb44568c00dce1a36670")
+	version("2.66.0", sha256="d6ca0b553097dd9e40a6e8f1b431f8e6ac30b71289c7c0b5a4cddc5a1d43c471")
 
 	depends_on("r@2.2:", type=("build", "run"))
 	depends_on("r-marray", type=("build", "run"))

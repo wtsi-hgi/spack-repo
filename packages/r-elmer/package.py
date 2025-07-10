@@ -15,7 +15,7 @@ class RElmer(RPackage):
 	bioc = "ELMER" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ELMER_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ELMER/ELMER_2.26.0.tar.gz"]
 
-	version("2.26.0", md5="528e6779b95faafbb8ff2e32e0b28ca5")
+	version("2.26.0", sha256="9033fe29dbc988e21b80c66a9febc2258e4b14d120b9a742496f09290984a277")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-elmer-data@2.9.3:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RRhesusprobe(RPackage):
 	bioc = "rhesusprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rhesusprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rhesusprobe/rhesusprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="4169c1c997c4c08b027bc7489533e11e")
+	version("2.18.0", sha256="343afd4e0f5447a61cca2dd1e3e47669404abb646c59806620bdb2bbf9bea839")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

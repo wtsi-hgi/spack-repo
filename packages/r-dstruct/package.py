@@ -16,7 +16,7 @@ class RDstruct(RPackage):
 	bioc = "dStruct" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dStruct_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dStruct/dStruct_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="294cd694534f0d82a92aaabeea86836f")
+	version("1.8.0", sha256="2837113beadd50b226bb86d24309b0fb2edc480a89283e855ac527c9b5a24b28")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-zoo", type=("build", "run"))

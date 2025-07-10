@@ -15,7 +15,7 @@ class RPdHg1860merExpr(RPackage):
 	bioc = "pd.hg18.60mer.expr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hg18.60mer.expr_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.hg18.60mer.expr/pd.hg18.60mer.expr_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="ee8d3813f74edce4e796933aa63999fb")
+	version("3.12.0", sha256="a8ae2328ef6e020e83150e41dcbf11627bf14cee0ab4040a06db3f23f5d34ed3")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

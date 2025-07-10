@@ -16,7 +16,7 @@ class RMbqtl(RPackage):
 	bioc = "mbQTL" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mbQTL_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mbQTL/mbQTL_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="5b8464d079a9297ed19fcdfade113190")
+	version("1.2.0", sha256="501e5ac9d5faa96cef0efa5469e679fd5fbb04e608a8940adab7b8d764ae4706")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-matrixeqtl", type=("build", "run"))

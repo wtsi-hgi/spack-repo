@@ -15,7 +15,7 @@ class RSscu(RPackage):
 	bioc = "sscu" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sscu_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sscu/sscu_2.32.0.tar.gz"]
 
-	version("2.32.0", md5="3856e06321ac866e2664573b452c6a85")
+	version("2.32.0", sha256="a8e11babd13635f20e57d8274522908d6094759b513a55afe902eeac15f75445")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-biostrings@2.36.4:", type=("build", "run"))

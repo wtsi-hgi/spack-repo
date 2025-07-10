@@ -15,7 +15,7 @@ class RIwtomics(RPackage):
 	bioc = "IWTomics" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IWTomics_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IWTomics/IWTomics_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="f571644700ff672c2ac90aa49b611158")
+	version("1.26.0", sha256="47aee4764390a177c055e23c14526e6fd4cc3b49f7151a92957e1c7af7bafc57")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

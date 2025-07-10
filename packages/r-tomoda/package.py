@@ -16,7 +16,7 @@ class RTomoda(RPackage):
 	bioc = "tomoda" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tomoda_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tomoda/tomoda_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="49b8009bc1e0c7c7567b75be6fbde6c4")
+	version("1.12.0", sha256="dae83627d4ed12c516c9797b85d0c332f4bc7d090467de8c34ea6985355bb152")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))

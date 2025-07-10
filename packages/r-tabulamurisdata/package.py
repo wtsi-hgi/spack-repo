@@ -15,7 +15,7 @@ class RTabulamurisdata(RPackage):
 	bioc = "TabulaMurisData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TabulaMurisData_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TabulaMurisData/TabulaMurisData_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="39c27cc6646ea3bcdb4637a226b219b8")
+	version("1.20.0", sha256="f3e8482daac6c4069cd3744a1b7222baac2ffb3b52d8834ce8d3aecfdff617dc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

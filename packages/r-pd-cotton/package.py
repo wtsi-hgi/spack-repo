@@ -15,7 +15,7 @@ class RPdCotton(RPackage):
 	bioc = "pd.cotton" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.cotton_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.cotton/pd.cotton_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="78c408902bcefb8c695119767534b393")
+	version("3.12.0", sha256="f4a8f5a29ec783d1ac549dbea2610f8b1ea795e1c2b3b3e09162c466379de1c0")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

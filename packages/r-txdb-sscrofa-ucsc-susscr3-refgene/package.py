@@ -15,7 +15,7 @@ class RTxdbSscrofaUcscSusscr3Refgene(RPackage):
 	bioc = "TxDb.Sscrofa.UCSC.susScr3.refGene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Sscrofa.UCSC.susScr3.refGene_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Sscrofa.UCSC.susScr3.refGene/TxDb.Sscrofa.UCSC.susScr3.refGene_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="981602dc706e545d5acdf7590e222ca7")
+	version("3.12.0", sha256="d7b0aff9bf2e5066d5027d643f7b8c3901edc211274269c0210f42dfdb3f7405")
 
 	depends_on("r-genomicfeatures@1.41.3:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

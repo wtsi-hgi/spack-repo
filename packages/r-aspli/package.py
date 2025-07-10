@@ -15,7 +15,7 @@ class RAspli(RPackage):
 	bioc = "ASpli" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASpli_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASpli/ASpli_2.12.0.tar.gz"]
 
-	version("2.12.0", md5="abf86e5478e3191f21892ba2eb35e442")
+	version("2.12.0", sha256="5e9ec698127d453cde27310b815b047da4114e0c89a00032104c38b7f7004166")
 
 	depends_on("r-edger", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

@@ -16,7 +16,7 @@ class RClustifyr(RPackage):
 	bioc = "clustifyr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clustifyr_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clustifyr/clustifyr_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="5fc803262c7a3b4d11d464f30a110802")
+	version("1.14.0", sha256="f6ea4930a9179e9ea79423361d2841b027c58785a84c7ee2e29a9da51497d731")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))

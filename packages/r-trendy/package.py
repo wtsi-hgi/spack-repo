@@ -16,7 +16,7 @@ class RTrendy(RPackage):
 	bioc = "Trendy" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Trendy_1.24.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Trendy/Trendy_1.24.1.tar.gz"]
 
-	version("1.24.1", md5="00e5de9c46c116f4adc3caf3708608df")
+	version("1.24.1", sha256="bcf089a63145713823423f8daf360aa1b93ee3980bf3225823a30290b3b7f48e")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-segmented", type=("build", "run"))

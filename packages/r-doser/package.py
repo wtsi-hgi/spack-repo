@@ -15,7 +15,7 @@ class RDoser(RPackage):
 	bioc = "doseR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/doseR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/doseR/doseR_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="20251942acb7343859507c138bc2b902")
+	version("1.18.0", sha256="16ed134686a27c1684c7ae3b13d2b44b9d51b6424ed965b35f0ba81d15fc9523")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-edger", type=("build", "run"))

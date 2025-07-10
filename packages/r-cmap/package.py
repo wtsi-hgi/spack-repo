@@ -15,7 +15,7 @@ class RCmap(RPackage):
 	bioc = "cMAP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cMAP_1.15.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/cMAP/cMAP_1.15.1.tar.gz"]
 
-	version("1.15.1", md5="dbf8df4d4540151936884e1c5d747bcf")
+	version("1.15.1", sha256="3bf24aca1ce63ebff4ac0172467ecd8acbb0c1f8a240cd0f8b8abd7c44fdf15f")
 
 	depends_on("r@2.4:", type=("build", "run"))
 

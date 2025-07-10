@@ -15,7 +15,7 @@ class RDemixt(RPackage):
 	bioc = "DeMixT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DeMixT_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DeMixT/DeMixT_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="7d2e6439b9eb756f3f9e8a6a3c206d4e")
+	version("1.18.0", sha256="76ed6d6c3513d72200743277cd55a986506438788d0321aec3a57ed2c754f629")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

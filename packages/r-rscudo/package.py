@@ -16,7 +16,7 @@ class RRscudo(RPackage):
 	bioc = "rScudo" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rScudo_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rScudo/rScudo_1.18.1.tar.gz"]
 
-	version("1.18.1", md5="f3e7820b33e90ac6414788a7dc28c3c0")
+	version("1.18.1", sha256="841088d66fece79c975bae81c109dd68a7e91f58659287db3e9df691f684f398")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

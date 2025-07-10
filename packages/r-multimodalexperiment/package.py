@@ -15,7 +15,7 @@ class RMultimodalexperiment(RPackage):
 	bioc = "MultimodalExperiment" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MultimodalExperiment_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MultimodalExperiment/MultimodalExperiment_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="376186ba5972df1b6d4be9dc69253a61")
+	version("1.2.0", sha256="2d30f1101d064fc3ef482ebad655272ce1753079abb59b2af4aa2543455757a6")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

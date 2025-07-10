@@ -15,7 +15,7 @@ class RHtrat230pmprobe(RPackage):
 	bioc = "htrat230pmprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/htrat230pmprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/htrat230pmprobe/htrat230pmprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="e4deeca2dc406367ac4a347e370267cf")
+	version("2.18.0", sha256="9e6c0e7edc73772208e29a727475fee863671f59e094e98be82c12899891fe76")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

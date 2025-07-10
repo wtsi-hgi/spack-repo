@@ -16,7 +16,7 @@ class RCimice(RPackage):
 	bioc = "CIMICE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CIMICE_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CIMICE/CIMICE_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="510ab010752cd50654467583c6159ba1")
+	version("1.10.0", sha256="b36e7c273a36cdb9a966808543cd21836d02099ad8ec04cc1274dfc7b1974b58")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

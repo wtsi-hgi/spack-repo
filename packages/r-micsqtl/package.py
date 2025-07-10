@@ -15,7 +15,7 @@ class RMicsqtl(RPackage):
 	bioc = "MICSQTL" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MICSQTL_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MICSQTL/MICSQTL_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="ec49e08df014da6955d2b6ab7dc77d3b")
+	version("1.0.0", sha256="eff898a4768e67af1bc6b1cb6664cf24675f7ba1acbbb8fddc920507370ce1e0")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

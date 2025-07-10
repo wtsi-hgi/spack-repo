@@ -16,7 +16,7 @@ class RScreenr(RPackage):
 	bioc = "ScreenR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ScreenR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ScreenR/ScreenR_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="bb8bd3276b17f7e0d63de9c19e64473d")
+	version("1.4.0", sha256="a1b28353c9292d6760fa60e1f1bdd9a884619332c5f69ab6c5ea2ef3b9fa5b88")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rlang@0.4:", type=("build", "run"))

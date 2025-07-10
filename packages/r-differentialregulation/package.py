@@ -16,7 +16,7 @@ class RDifferentialregulation(RPackage):
 	bioc = "DifferentialRegulation" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DifferentialRegulation_2.0.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DifferentialRegulation/DifferentialRegulation_2.0.3.tar.gz"]
 
-	version("2.0.3", md5="4000b013914ea14b52fb9c4be18f809d")
+	version("2.0.3", sha256="83d457f6814bd0e21c60c9e816addd8a8e0b37578e971b350ae60c5dfe31af11")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

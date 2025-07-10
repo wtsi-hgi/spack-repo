@@ -15,7 +15,7 @@ class RKodata(RPackage):
 	bioc = "KOdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/KOdata_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/KOdata/KOdata_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="40e099053eae889ad66256a94427ac54")
+	version("1.28.0", sha256="8a4aa27165cf43268fa9e9a1aed2cf18659558459d130d8c864ab0f3ddd6d4b5")
 
 	depends_on("r@3.3:", type=("build", "run"))
 

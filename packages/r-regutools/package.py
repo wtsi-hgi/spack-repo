@@ -16,7 +16,7 @@ class RRegutools(RPackage):
 	bioc = "regutools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/regutools_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/regutools/regutools_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="f8b22dfa98af4304de7be1654159626a")
+	version("1.14.0", sha256="45bbd71258d4f8222bae6b787d917c0606683a797e27bdb90906e94b168c74d7")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

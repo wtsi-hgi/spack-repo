@@ -15,7 +15,7 @@ class RIasva(RPackage):
 	bioc = "iasva" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iasva_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iasva/iasva_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="a52a31d7564e175a288943ae77b22a93")
+	version("1.20.0", sha256="625e5395f786afbea9a8784e591a9b7e991096e7f1039d15a6d6849d1f1ebfe0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-irlba", type=("build", "run"))

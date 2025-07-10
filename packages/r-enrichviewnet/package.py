@@ -16,7 +16,7 @@ class REnrichviewnet(RPackage):
 	bioc = "enrichViewNet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/enrichViewNet_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/enrichViewNet/enrichViewNet_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="5b2eb51ee4f57abd3b77da182e7e5d1a")
+	version("1.0.0", sha256="9b7bdd6591da9e94251ed4599287814b53ccae5eeace8c5fd689e9818160e510")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-gprofiler2", type=("build", "run"))

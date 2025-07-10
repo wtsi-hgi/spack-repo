@@ -15,7 +15,7 @@ class RYeast2cdf(RPackage):
 	bioc = "yeast2cdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/yeast2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/yeast2cdf/yeast2cdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="0a718d78ae56bef9bad8168123038ac8")
+	version("2.18.0", sha256="8923c2a508106a3b14bc0dc8f51bc2a56bde5b7a6a83dec9b66ea19ea8dac830")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

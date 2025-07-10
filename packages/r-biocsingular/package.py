@@ -24,7 +24,7 @@ class RBiocsingular(RPackage):
 
     version("1.6.0", commit="11baf1080d6f791439cd5d97357589d6451643d9")
     version("1.24.0", tag="RELEASE_3_21")
-    version("1.18.0", md5="9b4158e143f2cbefc140228c13090b35")
+    version("1.18.0", sha256="634824a2e15c13c9fefbb17605a3861bdced6fc182c8880ae862f2248600377c")
     version("1.16.0", commit="0db9a691d4eb21551c532d8bde8f64dcc19b6c66")
     version("1.14.0", commit="6dc42b30110e498f6694f18037f991c1006c71b7")
     version("1.12.0", commit="7d1b8f4954e9e6f2c30a5111cdab9aabc8bcc3a6")

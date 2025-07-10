@@ -15,7 +15,7 @@ class RVarcon(RPackage):
 	bioc = "VarCon" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VarCon_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VarCon/VarCon_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="843e95d7843d7611c222d8cbca8814b1")
+	version("1.10.0", sha256="d478c74de4d24eb4fa3f215d653c3af112b034243bd363aa8607109bed6abca7")
 
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))

@@ -15,7 +15,7 @@ class RHu35ksubdprobe(RPackage):
 	bioc = "hu35ksubdprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hu35ksubdprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hu35ksubdprobe/hu35ksubdprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="430a9b8ccd646d8cb06e6c1d750eec23")
+	version("2.18.0", sha256="dc885de57ea083205f1b61624a85c9ab87ad30cbeb70ebb84cc272f36eeb3bee")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

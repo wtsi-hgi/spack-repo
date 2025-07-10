@@ -15,7 +15,7 @@ class RXeva(RPackage):
 	bioc = "Xeva" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Xeva_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Xeva/Xeva_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="94733e069395be524fa2d7254f9c2c5c")
+	version("1.18.0", sha256="d6fdf4df11282c232ad5ad9b9f41ca8440786cd386f35c0dd3c00de3140bd9e3")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-bbmisc", type=("build", "run"))

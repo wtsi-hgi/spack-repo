@@ -16,7 +16,7 @@ class REscher(RPackage):
 	bioc = "escheR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/escheR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/escheR/escheR_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="ed2586d2e42f89db85790889863421b8")
+	version("1.2.0", sha256="d997b24d8123ce01826c65f7aa09dacd50869d5d3597679dbffc1416da9c6141")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r@4.3:", type=("build", "run"))

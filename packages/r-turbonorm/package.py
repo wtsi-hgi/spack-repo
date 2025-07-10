@@ -16,7 +16,7 @@ class RTurbonorm(RPackage):
 	bioc = "TurboNorm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TurboNorm_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TurboNorm/TurboNorm_1.50.0.tar.gz"]
 
-	version("1.50.0", md5="6df6da83bc36e4ce202d91888feaafa7")
+	version("1.50.0", sha256="d317bf319aab1532fda76a11cd1292f99777941533b569a5a6e90988bc689857")
 
 	depends_on("r@2.12:", type=("build", "run"))
 	depends_on("r-convert", type=("build", "run"))

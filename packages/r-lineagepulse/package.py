@@ -15,7 +15,7 @@ class RLineagepulse(RPackage):
 	bioc = "LineagePulse" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LineagePulse_1.21.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LineagePulse/LineagePulse_1.21.0.tar.gz"]
 
-	version("1.21.0", md5="c17825342234d6f0e327853b8fc52944")
+	version("1.21.0", sha256="0fd7a5a7620e3da6fd2120a23981545c7bf8ddcb66b22f6f1b0e6b4ff589a127")
 
 	depends_on("r-biocparallel", type=("build", "run"))
 	depends_on("r-circlize", type=("build", "run"))

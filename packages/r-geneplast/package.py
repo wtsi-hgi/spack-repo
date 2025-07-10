@@ -15,7 +15,7 @@ class RGeneplast(RPackage):
 	bioc = "geneplast" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geneplast_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geneplast/geneplast_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="2cb6b3ec6dbd0978146ea5139cc06e60")
+	version("1.28.0", sha256="c215014d77c3f315c47e99ee2309243353a6c78b294928ebb163a52e8ae1e283")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

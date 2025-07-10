@@ -15,7 +15,7 @@ class RCompran(RPackage):
 	bioc = "ComPrAn" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ComPrAn_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ComPrAn/ComPrAn_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="24011dcffe9f6c7b22be8e2de0e855b4")
+	version("1.10.0", sha256="b314d05828ddfbbf17adf9d02e7aa992de05a6318e9c88a156cadcd7b7c68a1b")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -15,7 +15,7 @@ class RPdAg(RPackage):
 	bioc = "pd.ag" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.ag_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.ag/pd.ag_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="21fb288536568ff010ad4847b671f9d6")
+	version("3.12.0", sha256="b86293cbea4d55b55400278d672da9ddfe88914feef6fbd58a17c3f85acc074e")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

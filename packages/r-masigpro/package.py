@@ -15,7 +15,7 @@ class RMasigpro(RPackage):
 	bioc = "maSigPro" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maSigPro_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maSigPro/maSigPro_1.74.0.tar.gz"]
 
-	version("1.74.0", md5="ab91a6a10122c6d1f28fee40be32c2b8")
+	version("1.74.0", sha256="a867956d4948310e5ae4730901b14ac07c5e845b558d942391e893229d7d220a")
 
 	depends_on("r@2.3.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

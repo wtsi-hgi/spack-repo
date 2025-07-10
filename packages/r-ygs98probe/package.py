@@ -15,7 +15,7 @@ class RYgs98probe(RPackage):
 	bioc = "ygs98probe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ygs98probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ygs98probe/ygs98probe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="f40f21d7074818a4ee74a45b5533e89d")
+	version("2.18.0", sha256="782870444588dc9a945617190f8c09a38ee6452859c8a4d294626d21c9378e2b")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RTxdbCelegansUcscCe11Refgene(RPackage):
 	bioc = "TxDb.Celegans.UCSC.ce11.refGene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Celegans.UCSC.ce11.refGene_3.4.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Celegans.UCSC.ce11.refGene/TxDb.Celegans.UCSC.ce11.refGene_3.4.6.tar.gz"]
 
-	version("3.4.6", md5="3765169432e745aff5e85afd239066ca")
+	version("3.4.6", sha256="c67e3026fa905784f594a095f18d5c2c56a665ce0d5101f08afc18262c9404ab")
 
 	depends_on("r-genomicfeatures@1.35.11:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

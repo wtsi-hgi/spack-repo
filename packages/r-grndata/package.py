@@ -15,7 +15,7 @@ class RGrndata(RPackage):
 	bioc = "grndata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/grndata_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/grndata/grndata_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="0ebac67277a5ca915f9a971d3659af5e")
+	version("1.34.0", sha256="d58e54525330ecf71e5c5719eef835a1ef242070576cf2fff5d3d096d295e29d")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

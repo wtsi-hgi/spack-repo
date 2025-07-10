@@ -15,7 +15,7 @@ class RCombi(RPackage):
 	bioc = "combi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/combi_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/combi/combi_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="6fe16559db40b31126eb543abf6819fa")
+	version("1.14.0", sha256="7a81c89d88bc1a12b8fb778353ebf2ef367c4fef26480e2b99c2440d9b7215e2")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dbi", type=("build", "run"))

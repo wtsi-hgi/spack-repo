@@ -15,7 +15,7 @@ class RChickencdf(RPackage):
 	bioc = "chickencdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/chickencdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/chickencdf/chickencdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="ab0097b4b7b6c4d94360feb84ab69972")
+	version("2.18.0", sha256="e1d3be18cefe3b5884a6628b9c81adc2535cdcd6c1c25c96b047f6a44b8d1026")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

@@ -15,7 +15,7 @@ class RRbec(RPackage):
 	bioc = "Rbec" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rbec_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rbec/Rbec_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="f295d8ade5faf2c0b770f2b075262116")
+	version("1.10.0", sha256="c364ed6bca9c1117ac3ce10da92bd907ced22234a77c39420dd5c8e2c11e51c2")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-dada2", type=("build", "run"))

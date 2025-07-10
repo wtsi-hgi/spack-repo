@@ -16,7 +16,7 @@ class RIseehex(RPackage):
 	bioc = "iSEEhex" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEEhex_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEEhex/iSEEhex_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="9bc98dc14114c756f97c130adf061a4b")
+	version("1.4.0", sha256="f9daf3c4ecd7cf278c40a8eaf81548d3b33f17d5c8a6699570bce6949d5732bb")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-isee", type=("build", "run"))

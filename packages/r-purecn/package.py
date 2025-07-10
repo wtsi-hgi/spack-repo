@@ -16,7 +16,7 @@ class RPurecn(RPackage):
 	bioc = "PureCN" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PureCN_2.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PureCN/PureCN_2.8.1.tar.gz"]
 
-	version("2.8.1", md5="d668ed7c332244073d26762dd291004f")
+	version("2.8.1", sha256="f2ac2ee30b8da345f3170f964ef79c61b19ca85948fc6bdcb374d32e64702142")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dnacopy", type=("build", "run"))

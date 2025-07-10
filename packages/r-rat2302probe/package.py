@@ -15,7 +15,7 @@ class RRat2302probe(RPackage):
 	bioc = "rat2302probe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rat2302probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rat2302probe/rat2302probe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="d1d9215e52b9e845cc4d7c902536e0d6")
+	version("2.18.0", sha256="3b8872451c8e97d5e290c623a0f12b0b601a42475ffa18be5991b4b4d87a92ff")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

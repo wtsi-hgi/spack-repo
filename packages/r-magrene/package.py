@@ -16,7 +16,7 @@ class RMagrene(RPackage):
 	bioc = "magrene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/magrene_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/magrene/magrene_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="7d02392d3081830451c4fae90ed50177")
+	version("1.4.0", sha256="ee31dbd6c43aad68d5996c9f90923c85bee592a31157e601d0365cb6db2d7878")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

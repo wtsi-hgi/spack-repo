@@ -16,7 +16,7 @@ class RDnafusion(RPackage):
 	bioc = "DNAfusion" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DNAfusion_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DNAfusion/DNAfusion_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="b7ef2bb10bea5334d6d159208c284c16")
+	version("1.4.0", sha256="687e11a620c606ac02e5732f83ebdeb1c8edee1818d9ec38a84431b9d00c221d")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-bamsignals", type=("build", "run"))

@@ -15,7 +15,7 @@ class RChipseqdbdata(RPackage):
 	bioc = "chipseqDBData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/chipseqDBData_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/chipseqDBData/chipseqDBData_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="a6e50016d2d7c0cb085df2c4254b5f84")
+	version("1.18.0", sha256="80188eb109bbfdefb6c05aeb9811c4af41cec47a029a378cb817ad665c218684")
 
 	depends_on("r-annotationhub", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

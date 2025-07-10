@@ -15,6 +15,6 @@ class RPasillabamsubset(RPackage):
 	bioc = "pasillaBamSubset" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/pasillaBamSubset_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/pasillaBamSubset/pasillaBamSubset_0.40.0.tar.gz"]
 
-	version("0.40.0", md5="8fd05eac2d37650e157871908cbaf306")
+	version("0.40.0", sha256="fdec18ac2d5133385855b74e54de50dce85ebaff417501cc3c48c4a3936d27d3")
 
 

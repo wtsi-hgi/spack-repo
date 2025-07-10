@@ -15,7 +15,7 @@ class RMeshr(RPackage):
 	bioc = "meshr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/meshr_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/meshr/meshr_2.8.0.tar.gz"]
 
-	version("2.8.0", md5="7809b970dabdb3c42112e6b3aad5b75b")
+	version("2.8.0", sha256="d4e8efbab57fdbf690544eae575b2d2d78e8f8e79a8a20069631f2ee9b0f5a83")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-markdown", type=("build", "run"))

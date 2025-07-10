@@ -15,7 +15,7 @@ class RMarr(RPackage):
 	bioc = "marr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/marr_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/marr/marr_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="3b839d77065c34ddb5f5c2a8eee277ea")
+	version("1.12.0", sha256="8d862c89d1a9cfd6ed7d3b2133e497978df101b717dad672bc306b9e985f3de1")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

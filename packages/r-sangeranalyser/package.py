@@ -15,7 +15,7 @@ class RSangeranalyser(RPackage):
 	bioc = "sangeranalyseR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sangeranalyseR_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sangeranalyseR/sangeranalyseR_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="da4a748e4e8a1eaba322abafbd7aedad")
+	version("1.12.0", sha256="25b8ef1292d325dcc71805340ae5b0a628a843b6905307f9e3d101ee9d356935")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))

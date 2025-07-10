@@ -15,7 +15,7 @@ class RPhylop35wayUcscMm39(RPackage):
 	bioc = "phyloP35way.UCSC.mm39" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/phyloP35way.UCSC.mm39_3.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/phyloP35way.UCSC.mm39/phyloP35way.UCSC.mm39_3.16.0.tar.gz"]
 
-	version("3.16.0", md5="2c34eef5f20eace04efd47673cdf1062", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/phyloP35way.UCSC.mm39_3.16.0.tar.gz")
+	version("3.16.0", sha256="c9516189b89d960bd0d7cb4e8a9cfc68f4c5b0da395e554961b00da11df711d8", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/phyloP35way.UCSC.mm39_3.16.0.tar.gz")
 
 	depends_on("r-genomicscores", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

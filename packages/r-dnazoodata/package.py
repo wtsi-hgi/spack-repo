@@ -16,7 +16,7 @@ class RDnazoodata(RPackage):
 	bioc = "DNAZooData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DNAZooData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DNAZooData/DNAZooData_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="06c4b9dbbaddc3dd4dcdc51e34150aa7")
+	version("1.2.0", sha256="88c27591277a3b1d76fc3e86b0ae25d1587001cfe1c5aa14154883819631a434")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-hicexperiment", type=("build", "run"))

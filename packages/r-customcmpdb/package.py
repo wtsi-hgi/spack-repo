@@ -16,7 +16,7 @@ class RCustomcmpdb(RPackage):
 	bioc = "customCMPdb" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/customCMPdb_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/customCMPdb/customCMPdb_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="1aa1425d87c45ac42f2c7ed808a7a583")
+	version("1.12.0", sha256="47f7d8b794bec9cc70004be50e6149210928cb58c408cffc321f805f3812b395")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

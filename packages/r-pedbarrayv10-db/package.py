@@ -15,7 +15,7 @@ class RPedbarrayv10Db(RPackage):
 	bioc = "pedbarrayv10.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pedbarrayv10.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pedbarrayv10.db/pedbarrayv10.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="25acc3bfee229015ecca1c7d688e5168")
+	version("3.2.3", sha256="7d86e3c448a9749d53734eaae33eab9ae94e2ffd3447fc0ebc82895c203e5607")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

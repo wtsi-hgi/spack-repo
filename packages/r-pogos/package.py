@@ -15,7 +15,7 @@ class RPogos(RPackage):
 	bioc = "pogos" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pogos_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pogos/pogos_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="14955bb127999aaa92633bc1ce3a1227")
+	version("1.22.0", sha256="f79b3bf450c7c729e27ebb120bb65c80363221535f4f6b143c0af12a4905a667")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rjson@0.2.15:", type=("build", "run"))

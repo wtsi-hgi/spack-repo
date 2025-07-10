@@ -16,7 +16,7 @@ class RAtacseqtfea(RPackage):
 	bioc = "ATACseqTFEA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ATACseqTFEA_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ATACseqTFEA/ATACseqTFEA_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="30284cc31687d97f23d2a7c023e8561d")
+	version("1.4.0", sha256="5c7e8e3079bb9b1aa8b836d3824cd93d26b77fe310eb43f7585d181e1edce2b3")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

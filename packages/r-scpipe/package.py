@@ -16,7 +16,7 @@ class RScpipe(RPackage):
 	bioc = "scPipe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scPipe_2.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scPipe/scPipe_2.2.0.tar.gz"]
 
-	version("2.2.0", md5="477ce2b2da9cc1ae5365c3140d6ed566")
+	version("2.2.0", sha256="2f88996579995372e8f93beb51fe0ea23970eceaf3f947b9cc3b915052b4ae67")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

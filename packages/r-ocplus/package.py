@@ -15,7 +15,7 @@ class ROcplus(RPackage):
 	bioc = "OCplus" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OCplus_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OCplus/OCplus_1.76.0.tar.gz"]
 
-	version("1.76.0", md5="8093ec3c635bc4ba57d27f42c6c85c48")
+	version("1.76.0", sha256="372345e32f524a9dd287016acdb0e9385ce62e4c6e0045620f0a76c417c3ec9a")
 
 	depends_on("r@2.1:", type=("build", "run"))
 	depends_on("r-multtest@1.7.3:", type=("build", "run"))

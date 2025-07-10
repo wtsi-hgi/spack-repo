@@ -15,7 +15,7 @@ class RHgu133afrmavecs(RPackage):
 	bioc = "hgu133afrmavecs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu133afrmavecs_1.5.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu133afrmavecs/hgu133afrmavecs_1.5.0.tar.gz"]
 
-	version("1.5.0", md5="85034ab02491f5b3699d210cef50812d")
+	version("1.5.0", sha256="46ce7ac063953b7048b31b0e778ec7f134924316c2af308f89c4b5c0683c03b6")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

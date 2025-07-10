@@ -16,7 +16,7 @@ class RCtsv(RPackage):
 	bioc = "CTSV" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CTSV_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CTSV/CTSV_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="4a3f8c7b5398449ea01b312ed7da1f43")
+	version("1.4.0", sha256="c9ab303473fa093de52c3a25dc2e46413399cef5284aa2c177299c03e61fcc02")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-pscl", type=("build", "run"))

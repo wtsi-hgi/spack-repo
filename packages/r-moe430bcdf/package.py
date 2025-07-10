@@ -15,7 +15,7 @@ class RMoe430bcdf(RPackage):
 	bioc = "moe430bcdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/moe430bcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/moe430bcdf/moe430bcdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="b7112dcf8ccfe4e079ca67ff62046f2e")
+	version("2.18.0", sha256="6b43c7226d8a7dbecc493eeb10f210a56f51a18558efedc544289c21f1bc857a")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

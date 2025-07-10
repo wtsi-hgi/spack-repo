@@ -15,7 +15,7 @@ class RBsubtiliscdf(RPackage):
 	bioc = "bsubtiliscdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/bsubtiliscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/bsubtiliscdf/bsubtiliscdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="7d7893d28c601206805819ae0e49b31b")
+	version("2.18.0", sha256="d4c7c19981cf2e5803090c53dc53ccf898ab917add928c614e649d51a3cc30e6")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

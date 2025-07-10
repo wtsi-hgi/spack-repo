@@ -15,7 +15,7 @@ class RGaprediction(RPackage):
 	bioc = "GAprediction" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GAprediction_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GAprediction/GAprediction_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="5aceb1005e134eeeb2fc6a77941d8348")
+	version("1.28.0", sha256="9fcb8d230ce07dcb0da19076f69db1929b3fe9e0f259145b3fdf40b2ec3ac6da")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))

@@ -16,7 +16,7 @@ class RSeqvartools(RPackage):
 	bioc = "SeqVarTools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SeqVarTools_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SeqVarTools/SeqVarTools_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="160f56cd78339c2e4d4b5c0766a47846")
+	version("1.40.0", sha256="2b30fe117d2ef1423d0e5177da06ea08004dcdf4459894e10b486aaf5a99c2a5")
 
 	depends_on("r-seqarray", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -15,7 +15,7 @@ class RRattoxfxcdf(RPackage):
 	bioc = "rattoxfxcdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rattoxfxcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rattoxfxcdf/rattoxfxcdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="912d0fa424615fcd92773ed174d5efdd")
+	version("2.18.0", sha256="167bd2efb1bfc73250c65636108994ae845683e2ba235ceafa425adb95a30461")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

@@ -16,7 +16,7 @@ class RFindit2(RPackage):
 	bioc = "FindIT2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FindIT2_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FindIT2/FindIT2_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="d48fffebc5ff34ec3276d3f4675d6c71", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FindIT2_1.8.0.tar.gz")
+	version("1.8.0", sha256="871fe52af12ab1accc1e24c676285a59828b198887d0f263f85af91039450cfe", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FindIT2_1.8.0.tar.gz")
 
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r@3.5:", type=("build", "run"))

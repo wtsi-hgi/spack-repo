@@ -16,7 +16,7 @@ class RRandomwalkrestartmh(RPackage):
 	bioc = "RandomWalkRestartMH" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RandomWalkRestartMH_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RandomWalkRestartMH/RandomWalkRestartMH_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="ace5e6d73a365094a41a864a47deb893")
+	version("1.22.0", sha256="ccb300c5b0cd8af6921f2f96ddbaddd63579db48b9d0f5da553cd206ae107057")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

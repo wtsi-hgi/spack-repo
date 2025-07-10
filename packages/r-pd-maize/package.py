@@ -15,7 +15,7 @@ class RPdMaize(RPackage):
 	bioc = "pd.maize" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.maize_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.maize/pd.maize_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="a1689518c8525d3dfa97e870f90b7a7b")
+	version("3.12.0", sha256="0f2b834ba63631a25108bd716e62f1ca1b93cc9901f6ac962ea709e0b0c5710b")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

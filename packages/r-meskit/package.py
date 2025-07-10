@@ -15,7 +15,7 @@ class RMeskit(RPackage):
 	bioc = "MesKit" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MesKit_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MesKit/MesKit_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="909ad92f34384c66c0e86f0f13ff7e71")
+	version("1.12.0", sha256="66790e794e114156fe8f4a4944a4e42c2f84350254a99dcc757681138fccfc99")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

@@ -16,7 +16,7 @@ class RMdp(RPackage):
 	bioc = "mdp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mdp_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mdp/mdp_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="a947b52acd7f930a3babcdb4e429bb0c")
+	version("1.22.0", sha256="fdbb9c6af0f00f176ce0dcbff3eaf258297445d016b2f2196c6d9e71cca73a7e")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

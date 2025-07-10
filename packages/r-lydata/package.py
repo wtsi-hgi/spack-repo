@@ -15,6 +15,6 @@ class RLydata(RPackage):
 	bioc = "lydata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/lydata_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/lydata/lydata_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="4541ec0aad2bbee135b19b0bed4ea0af")
+	version("1.28.0", sha256="19475d674a72fa35c4fabbc5d524add1a6f90db4b87a3846e96e066c028e8a3f")
 
 

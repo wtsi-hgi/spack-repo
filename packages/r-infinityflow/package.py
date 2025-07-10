@@ -15,7 +15,7 @@ class RInfinityflow(RPackage):
 	bioc = "infinityFlow" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/infinityFlow_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/infinityFlow/infinityFlow_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="e65e5163632d9351a8a1f1bb30d74d8f")
+	version("1.12.0", sha256="aec5f37ad9a9a27f637aec584fbf5a9a83cccf7af0e38051ef506a217c58815c")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

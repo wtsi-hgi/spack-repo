@@ -19,7 +19,7 @@ class RHilbertvisgui(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HilbertVisGUI/HilbertVisGUI_1.60.0.tar.gz",
     ]
 
-    version("1.60.0", md5="e9e6a2cce82ff0dfcf0828ae7d123537")
+    version("1.60.0", sha256="8295dfdff3c658b56c39cbd732255e0770016457aec83acce13df51e37f13224")
 
     depends_on("r@2.6:", type=("build", "run"))
     depends_on("r-hilbertvis@1.1.6:", type=("build", "run"))

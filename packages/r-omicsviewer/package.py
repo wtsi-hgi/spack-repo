@@ -16,7 +16,7 @@ class ROmicsviewer(RPackage):
 	bioc = "omicsViewer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/omicsViewer_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/omicsViewer/omicsViewer_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="7d650ff242a133610199a574a29abfde")
+	version("1.6.0", sha256="e5a3f73a0ab5cac65eb8b341aae0ba77910aefd9c7e64042634e9b37748a4dd5")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-survminer", type=("build", "run"))

@@ -15,7 +15,7 @@ class RPdCytogeneticsArray(RPackage):
 	bioc = "pd.cytogenetics.array" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.cytogenetics.array_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.cytogenetics.array/pd.cytogenetics.array_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="8c359ff56a9a558d370dc9a6a54218e0")
+	version("3.12.0", sha256="8b363270a7c8ce6e52759ace4b76918a6bda711429d7da724caa75f789c1a73d")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

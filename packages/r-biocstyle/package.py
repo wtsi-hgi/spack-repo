@@ -18,7 +18,7 @@ class RBiocstyle(RPackage):
 	version("2.8.2", commit="3210c19ec1e5e0ed8d5a2d31da990aa47b42dbd8")
 	version("2.6.1", commit="5ff52cbb439a45575d0f58c4f7a83195a8b7337b")
 	version("2.4.1", commit="ef10764b68ac23a3a7a8ec3b6a6436187309c138")
-	version("2.30.0", md5="22ceacb6ab374657de48283e78dedbb5")
+	version("2.30.0", sha256="9cbae3a879d4ed1e3692111d802193d8facf0a89e0bffa6de05718bb476cf39e")
 	version("2.28.0", commit="b358aa5d3f9c68629e9abf50ffceccbf77226ea8")
 	version("2.26.0", commit="add035498bdce76d71a0afa22a063c2d8e5588bc")
 	version("2.24.0", commit="53095b534b7e6c80a33a67b5f2db0db8f00db902")

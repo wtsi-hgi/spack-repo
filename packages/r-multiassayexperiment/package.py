@@ -16,7 +16,7 @@ class RMultiassayexperiment(RPackage):
 	bioc = "MultiAssayExperiment" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MultiAssayExperiment_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MultiAssayExperiment/MultiAssayExperiment_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="01844376cd208e33797b236e2e65fd77")
+	version("1.28.0", sha256="904dd6bb32d22d92c71de1ade4d1fd0c88e7973d01b97699a4150004abc7b036")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-summarizedexperiment@1.3.81:", type=("build", "run"))

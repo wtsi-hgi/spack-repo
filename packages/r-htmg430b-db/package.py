@@ -15,7 +15,7 @@ class RHtmg430bDb(RPackage):
 	bioc = "htmg430b.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/htmg430b.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/htmg430b.db/htmg430b.db_3.13.0.tar.gz"]
 
-	version("3.13.0", md5="70849a636e972a9be604a3320d3bd814")
+	version("3.13.0", sha256="2596d97c2e60c4eadcdb4e0ed8c540defacf06b2ecf02ac78c566235b8c5dbc7")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

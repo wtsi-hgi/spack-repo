@@ -15,7 +15,7 @@ class RPdMapping50kXba240(RPackage):
 	bioc = "pd.mapping50k.xba240" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mapping50k.xba240_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.mapping50k.xba240/pd.mapping50k.xba240_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="eb0f9250fe0d7b590ca9938fee88f2e7", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mapping50k.xba240_3.12.0.tar.gz")
+	version("3.12.0", sha256="08772e998df196f6d41d9b390ace97881564d5fa4ec8d5b8921e725f201d2ea8", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mapping50k.xba240_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

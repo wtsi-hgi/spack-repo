@@ -15,7 +15,7 @@ class RYgs98cdf(RPackage):
 	bioc = "ygs98cdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ygs98cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ygs98cdf/ygs98cdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="ec7df7564cf28e093646325ec55baf1e")
+	version("2.18.0", sha256="b00a1ca4dc02ef3b72bf080ed79b0f580e98d307b735af541854d405555c0448")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

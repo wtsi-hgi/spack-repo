@@ -16,7 +16,7 @@ class RRqc(RPackage):
 	bioc = "Rqc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rqc_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rqc/Rqc_1.36.0.tar.gz"]
 
-	version("1.36.0", md5="425dbc839b22b6af4d19ca20174c24c1")
+	version("1.36.0", sha256="2c1234550fe8d3bf5fb6dd6a656cc07bcb54d3cef5ce5fb7e0cca705f6733043")
 
 	depends_on("r-biocparallel", type=("build", "run"))
 	depends_on("r-shortread", type=("build", "run"))

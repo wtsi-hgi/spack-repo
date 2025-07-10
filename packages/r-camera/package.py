@@ -16,7 +16,7 @@ class RCamera(RPackage):
 	bioc = "CAMERA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CAMERA_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CAMERA/CAMERA_1.58.0.tar.gz"]
 
-	version("1.58.0", md5="1958cafb2c9dd92fa44a35cfc607f894")
+	version("1.58.0", sha256="411c553b1180a46037cdbad16a227098716b4a57f95f1c01bd6f5894898244dd")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -16,7 +16,7 @@ class RCftools(RPackage):
 	bioc = "cfTools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cfTools_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cfTools/cfTools_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="cf0f03a9654984b3214bcadac889fc28")
+	version("1.2.0", sha256="dfb158f7b21ca00f6455d11c7eae6f690a5587b29a8b4142d026f78ec533d286")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

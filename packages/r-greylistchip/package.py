@@ -15,7 +15,7 @@ class RGreylistchip(RPackage):
 	bioc = "GreyListChIP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GreyListChIP_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GreyListChIP/GreyListChIP_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="42fa9dbbc56cc2c4fdf511ce67ee234e")
+	version("1.34.0", sha256="d945de29328d081f2354ceb892d918ee8abd06418a8a79ac7388cee5362327cd")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

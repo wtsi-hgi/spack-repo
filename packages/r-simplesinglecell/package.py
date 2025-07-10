@@ -19,7 +19,7 @@ class RSimplesinglecell(RPackage):
         "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/simpleSingleCell/simpleSingleCell_1.26.0.tar.gz",
     ]
 
-    version("1.26.0", md5="c207dcd6c9b07a01e3c2e4fefbc065c1")
+    version("1.26.0", sha256="eac844d7c1ccc76bfa98fc4cc8facd3197f31131a39f478b3605cb71d57e9d49")
 
     depends_on("r-knitr", type=("build", "run"))
     depends_on("r-callr", type=("build", "run"))

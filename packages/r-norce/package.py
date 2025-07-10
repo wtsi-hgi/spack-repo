@@ -15,7 +15,7 @@ class RNorce(RPackage):
 	bioc = "NoRCE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NoRCE_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NoRCE/NoRCE_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="8e3a1a53f9c68bc68ab881bd49e28ecb")
+	version("1.14.0", sha256="fb8700d13e31aa1dc8aea452a9d0b056cfa1ca3008862aa23e011b616bad41ac")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-keggrest", type=("build", "run"))

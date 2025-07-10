@@ -15,7 +15,7 @@ class RPcxn(RPackage):
 	bioc = "pcxn" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pcxn_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pcxn/pcxn_2.24.0.tar.gz"]
 
-	version("2.24.0", md5="bc66fe53111b80e8978344ddc59eff6f")
+	version("2.24.0", sha256="27d69bfec32c44871df38b45e3d251a102aa40c9dbc04c640d2cbf33d7d01bd5")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-pcxndata", type=("build", "run"))

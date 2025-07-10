@@ -15,7 +15,7 @@ class RAlabasterFiles(RPackage):
 	bioc = "alabaster.files" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.files_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.files/alabaster.files_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="ea12d81dadbad7340c5f2d6be276a697")
+	version("1.0.0", sha256="52c451b6c1a5f827a791ee99f3367596569f39a117f4cd368536247b52c98a80")
 
 	depends_on("r-alabaster-base", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

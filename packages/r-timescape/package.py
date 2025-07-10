@@ -15,7 +15,7 @@ class RTimescape(RPackage):
 	bioc = "timescape" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/timescape_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/timescape/timescape_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="1a409bde946cb8ed4c7e8e6a334158de")
+	version("1.26.0", sha256="be100e9db81353fcbe7061d656e4a31d1b196deb10bb98277f068806fab263f9")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-htmlwidgets@0.5:", type=("build", "run"))

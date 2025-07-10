@@ -15,7 +15,7 @@ class RAdimpute(RPackage):
 	bioc = "ADImpute" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ADImpute_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ADImpute/ADImpute_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="488025707dc1ae48d36b1e936cd86e18")
+	version("1.12.0", sha256="e1a05cce0d16c805370fff40cf3f950c19ac6bcfd570b1da39054961a3f72909")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

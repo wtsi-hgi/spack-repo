@@ -16,7 +16,7 @@ class RGcatest(RPackage):
 	bioc = "gcatest" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gcatest_2.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gcatest/gcatest_2.2.0.tar.gz"]
 
-	version("2.2.0", md5="ddfda402a2332e9c16ecfaa035b689a9")
+	version("2.2.0", sha256="7bbe749ec6948355ccfadc31ba00c8c42a037c18ed67d25ca95319249dc1cf42")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-lfa", type=("build", "run"))

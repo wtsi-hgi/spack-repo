@@ -15,7 +15,7 @@ class RSynextend(RPackage):
 	bioc = "SynExtend" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SynExtend_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SynExtend/SynExtend_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="f7ee0b985a06dbd6040329dd264648f5")
+	version("1.14.0", sha256="f64c5a7398822d196098bbe576c76aec05e8bdaf5db925f7d701485cc528d1ef")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-decipher@2.28:", type=("build", "run"))

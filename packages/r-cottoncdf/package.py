@@ -15,7 +15,7 @@ class RCottoncdf(RPackage):
 	bioc = "cottoncdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cottoncdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/cottoncdf/cottoncdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="b9d2a4b43235c6e531b78cca006e84b2")
+	version("2.18.0", sha256="e5fa3f2ed7a3e9ec7961f3b0ac532118c186b2ba3fbee95bebcb059214e5dc75")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

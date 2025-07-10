@@ -16,7 +16,7 @@ class RCodelink(RPackage):
 	bioc = "codelink" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/codelink_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/codelink/codelink_1.70.0.tar.gz"]
 
-	version("1.70.0", md5="7988c997146174710b5faacc70c10328")
+	version("1.70.0", sha256="95d29d16bb91b5cdabfff66f03d4dec3728a73aa65b72b3fc16f5bf0e2d3b790")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.3.2:", type=("build", "run"))

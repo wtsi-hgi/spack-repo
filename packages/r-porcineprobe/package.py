@@ -15,7 +15,7 @@ class RPorcineprobe(RPackage):
 	bioc = "porcineprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/porcineprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/porcineprobe/porcineprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="5ac483b6329a012d4c9954e3dee8869e")
+	version("2.18.0", sha256="bef556f8de526d0d573fcf6d2a47523d06ec8539b3498e9d2b95b92c7931089b")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

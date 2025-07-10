@@ -15,7 +15,7 @@ class RCelegansprobe(RPackage):
 	bioc = "celegansprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/celegansprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/celegansprobe/celegansprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="7454bba10ff2dd7c03bfe0f9d450f148")
+	version("2.18.0", sha256="0bb7c678a65e3b78d91389726589d51de7b5d5dc22832dd1f2f35fe446d46716")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

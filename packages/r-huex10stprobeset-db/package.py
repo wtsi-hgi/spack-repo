@@ -15,7 +15,7 @@ class RHuex10stprobesetDb(RPackage):
 	bioc = "huex10stprobeset.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/huex10stprobeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/huex10stprobeset.db/huex10stprobeset.db_8.8.0.tar.gz"]
 
-	version("8.8.0", md5="fda9fc7340aeda2564a76756d2b8d4d3")
+	version("8.8.0", sha256="2ed209382bca16d8f0999864205e7d0654fe9f2e80f70fe190d0128b0a3c8f20")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

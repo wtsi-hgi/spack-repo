@@ -15,7 +15,7 @@ class RScone(RPackage):
 	bioc = "scone" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scone_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scone/scone_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="0e7dd77999fc8cbf842fee6452c82a1b")
+	version("1.26.0", sha256="978a707c82d74972e47201d957f8fbc4cfefb0b2e2ef2a130466c17220a40bf8")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -16,7 +16,7 @@ class RCogeqc(RPackage):
 	bioc = "cogeqc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cogeqc_1.6.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cogeqc/cogeqc_1.6.2.tar.gz"]
 
-	version("1.6.2", md5="8ec4050b1405b4896d55afebc10a23b5")
+	version("1.6.2", sha256="bd72bf775a4836f7f596390739af8a0a94a02a78aede49721e803f6ecfd51e86")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))

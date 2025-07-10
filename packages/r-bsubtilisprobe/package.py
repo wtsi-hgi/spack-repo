@@ -15,7 +15,7 @@ class RBsubtilisprobe(RPackage):
 	bioc = "bsubtilisprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/bsubtilisprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/bsubtilisprobe/bsubtilisprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="83568fcea2122350b7ce982e79b7ec53")
+	version("2.18.0", sha256="893317f491dd7a9d6433d71f5c9a4ec6b7853c4b795be54937c972adde86294d")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

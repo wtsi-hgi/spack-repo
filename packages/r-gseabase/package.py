@@ -14,7 +14,7 @@ class RGseabase(RPackage):
 
 	bioc = "GSEABase"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSEABase_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSEABase/GSEABase_1.64.0.tar.gz"]
-	version("1.64.0", md5="a9d4d48654c9a05cdec2f09f8f805c4e")
+	version("1.64.0", sha256="cb0698a7f4aa2ddd700f3ba4d8d8d16467016a0f5ffe85b4e653437d8419fff8")
 	version("1.62.0", commit="fc20cbcd85da0202eb0f2316dcf63f6fb1372b3e")
 	version("1.60.0", commit="aae4e52b50b076550967601f98031e952fb97765")
 	version("1.58.0", commit="7de04442fb1ab63ffde29f4e3daf13ad32e90bdb")

@@ -16,7 +16,7 @@ class RChipseeker(RPackage):
 	bioc = "ChIPseeker" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPseeker_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPseeker/ChIPseeker_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="4e7b7622d7d9d1b3de7b8f9bf49eb8c4")
+	version("1.38.0", sha256="a0d4710fccda620b750f933916acac6d12999a077e1c17632d8823848a2fa82f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -15,7 +15,7 @@ class RHicbricks(RPackage):
 	bioc = "HiCBricks" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiCBricks_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiCBricks/HiCBricks_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="1c92df374e0660e328cbf53f181afd61")
+	version("1.20.0", sha256="efffffa51ff278b92110f1d3afe0bd56c34a84bfb44a52a42b2bf0aa398c2015")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))

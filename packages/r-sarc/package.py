@@ -16,7 +16,7 @@ class RSarc(RPackage):
 	bioc = "SARC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SARC_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SARC/SARC_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="b3ccd1bbc820bc93c4b13ec4e3ec9705")
+	version("1.0.0", sha256="5f032cedb91ca13f975da592479c83ff79c87c3ba5dd4472c1c7df0b9cec7a10")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-raggedexperiment", type=("build", "run"))

@@ -15,7 +15,7 @@ class RBsgenomeDmelanogasterUcscDm6(RPackage):
 	bioc = "BSgenome.Dmelanogaster.UCSC.dm6" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Dmelanogaster.UCSC.dm6_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Dmelanogaster.UCSC.dm6/BSgenome.Dmelanogaster.UCSC.dm6_1.4.1.tar.gz"]
 
-	version("1.4.1", md5="f9d6e406b7893a17c08edd4521c2802f", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Dmelanogaster.UCSC.dm6_1.4.1.tar.gz")
+	version("1.4.1", sha256="c000d3b5cc04b889f8466c0500d0ef5d9e7d5c4d3ef9d509bf9a1ef75a0612ae", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Dmelanogaster.UCSC.dm6_1.4.1.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 

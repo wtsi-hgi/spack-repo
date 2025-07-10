@@ -15,7 +15,7 @@ class RHugene11stprobesetDb(RPackage):
 	bioc = "hugene11stprobeset.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hugene11stprobeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hugene11stprobeset.db/hugene11stprobeset.db_8.8.0.tar.gz"]
 
-	version("8.8.0", md5="4d22ec32dedd6c8603d5f545faeb4ba4")
+	version("8.8.0", sha256="e7690b0c366472bc730edf168e6b34b957177af0b6163e7fb3b585a74c244e46")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

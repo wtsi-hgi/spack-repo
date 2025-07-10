@@ -15,7 +15,7 @@ class RCanineDb(RPackage):
 	bioc = "canine.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/canine.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/canine.db/canine.db_3.13.0.tar.gz"]
 
-	version("3.13.0", md5="a876bb01eda62604a32a96b46e34162b")
+	version("3.13.0", sha256="7a58348cb577257a211445980b25629d189f787c1c6745d92c54647301a435f4")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

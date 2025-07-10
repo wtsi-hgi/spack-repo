@@ -15,7 +15,7 @@ class RSesamedata(RPackage):
 	bioc = "sesameData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/sesameData_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/sesameData/sesameData_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="4cd44c4f5307d2775d94f2051b9a7f46")
+	version("1.20.0", sha256="5cbed033562b8394ae6f5a7c22935ae46cec51f1765c349dea31716a1b64bd28")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

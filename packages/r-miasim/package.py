@@ -16,7 +16,7 @@ class RMiasim(RPackage):
 	bioc = "miaSim" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miaSim_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miaSim/miaSim_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="0867c6e7b7cae5acbfd6154b8af06d41")
+	version("1.8.0", sha256="b3337d0e1e272271053a4f78b5e598429c76b6d0601557da466ad42bc369a3cc")
 
 	depends_on("r-treesummarizedexperiment", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

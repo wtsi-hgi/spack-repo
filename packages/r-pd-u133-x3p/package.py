@@ -15,7 +15,7 @@ class RPdU133X3p(RPackage):
 	bioc = "pd.u133.x3p" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.u133.x3p_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.u133.x3p/pd.u133.x3p_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="e3f343e32273667f851e26d7b8a7a5db")
+	version("3.12.0", sha256="f48585d52c807869ce12ccfbcbbc45801d8134220c49b523381324eb75da399c")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

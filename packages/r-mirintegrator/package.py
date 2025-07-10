@@ -16,7 +16,7 @@ class RMirintegrator(RPackage):
 	bioc = "mirIntegrator" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mirIntegrator_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mirIntegrator/mirIntegrator_1.32.0.tar.gz"]
 
-	version("1.32.0", md5="9ec5789f159dfc3880ce8369af20c27a")
+	version("1.32.0", sha256="d109e9bebc6a1d74353260b70d4bd0c30b5f63f02c046b26e2122876d2f4edf2")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

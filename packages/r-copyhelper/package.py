@@ -15,7 +15,7 @@ class RCopyhelper(RPackage):
 	bioc = "CopyhelpeR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CopyhelpeR_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CopyhelpeR/CopyhelpeR_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="bb8d3e8cba0c27898e43cbdcfcac6c62")
+	version("1.34.0", sha256="305c890df69d08425b48b02467b723abd1becf7dced083961bc9525a4cecdafd")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

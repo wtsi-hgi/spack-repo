@@ -15,5 +15,5 @@ class RBhc(RPackage):
 	bioc = "BHC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BHC_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BHC/BHC_1.54.0.tar.gz"]
 
-	version("1.54.0", md5="855087c8854bd3014111477e1c3cdcb9")
+	version("1.54.0", sha256="c1bba8450c9bf689949f944694afc6f65e7ff8afedd7f24a68271ebd124e48d4")
 

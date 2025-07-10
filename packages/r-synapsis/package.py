@@ -15,7 +15,7 @@ class RSynapsis(RPackage):
 	bioc = "synapsis" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/synapsis_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/synapsis/synapsis_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="592572937da010f5fbd70fb7fc8e80d6")
+	version("1.8.0", sha256="a815a826f739a1c34282e2efb81c539223ea67ad5ee32596f4d8973e73f2c2d0")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ebimage", type=("build", "run"))

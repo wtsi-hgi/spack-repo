@@ -16,7 +16,7 @@ class RCellbaser(RPackage):
 	bioc = "cellbaseR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cellbaseR_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cellbaseR/cellbaseR_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="1540f788e9e1fba133da3a369fe2c8b4")
+	version("1.26.0", sha256="3ee557eaeb980f6ba3a2fd797a976daef2ad44a92a5803441da05b865cbc5e9a")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

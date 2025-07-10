@@ -15,7 +15,7 @@ class RScanmirapp(RPackage):
 	bioc = "scanMiRApp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scanMiRApp_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scanMiRApp/scanMiRApp_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="637ec69edde646093548d190325738fe")
+	version("1.8.0", sha256="c9b97ba39395ca75fd844b0cb9e397cb733115961697336df628bb5049dd36e6")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

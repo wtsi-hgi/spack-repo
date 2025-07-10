@@ -15,7 +15,7 @@ class RTomatoprobe(RPackage):
 	bioc = "tomatoprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/tomatoprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/tomatoprobe/tomatoprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="72020469f35c19399fd0be9eaffd8e77")
+	version("2.18.0", sha256="22b9ebb6cdbb685bd45c4c6e576db85f1d99b114d76220efb96925456ffd48aa")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

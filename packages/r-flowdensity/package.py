@@ -15,7 +15,7 @@ class RFlowdensity(RPackage):
 	bioc = "flowDensity" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowDensity_1.36.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowDensity/flowDensity_1.36.1.tar.gz"]
 
-	version("1.36.1", md5="30c661d010484bff6c2eb427a7056aa1")
+	version("1.36.1", sha256="e2b9102bc7c67cd450d340602fc88d2ef8736266b7ff9386974192fae6d65570")
 
 	depends_on("r-flowcore", type=("build", "run"))
 	depends_on("r-flowviz@1.42:", type=("build", "run"))

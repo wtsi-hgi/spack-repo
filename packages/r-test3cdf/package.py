@@ -15,7 +15,7 @@ class RTest3cdf(RPackage):
 	bioc = "test3cdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/test3cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/test3cdf/test3cdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="9904e7fa6599f68400a9b77d0caa159a")
+	version("2.18.0", sha256="90ac86eb75cefcbe81c87e1bda8a8a2d54766b2b9dd047061bc589323179a424")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

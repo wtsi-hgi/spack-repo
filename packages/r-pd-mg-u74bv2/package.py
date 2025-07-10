@@ -15,7 +15,7 @@ class RPdMgU74bv2(RPackage):
 	bioc = "pd.mg.u74bv2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mg.u74bv2_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.mg.u74bv2/pd.mg.u74bv2_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="dbb6cd5b16bd5cafbf654744bc2d5c5c", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mg.u74bv2_3.12.0.tar.gz")
+	version("3.12.0", sha256="4d1b4ca8aea1bca807f7d4501ec91c7f0f59bc8077b4e3c885cf62d415fdac43", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mg.u74bv2_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

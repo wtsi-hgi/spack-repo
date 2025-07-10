@@ -16,7 +16,7 @@ class RNempi(RPackage):
 	bioc = "nempi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nempi_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nempi/nempi_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="1180e323b8f109079a74702ef7159cda")
+	version("1.10.0", sha256="ce8f21989af615e9790e60d2da865af0a5d1484874130f0b7eacc218139f227c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-mnem", type=("build", "run"))

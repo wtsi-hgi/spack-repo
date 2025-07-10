@@ -16,7 +16,7 @@ class RBioqc(RPackage):
 	bioc = "BioQC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioQC_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioQC/BioQC_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="9e9b338e001fdeb614091e4fa0cf50cd")
+	version("1.30.0", sha256="8a4e7c5e2e5e245274a87c920909536d1652aec0cc9a35a81730152140787596")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

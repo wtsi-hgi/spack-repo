@@ -16,7 +16,7 @@ class RFabia(RPackage):
 	bioc = "fabia" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fabia_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fabia/fabia_2.48.0.tar.gz"]
 
-	version("2.48.0", md5="9d336b3c9a97aca0a6b062ec137f5566")
+	version("2.48.0", sha256="896c2387ef72fadc417a78eb54e814b48b1642876188f72001d3e47e686fc4c4")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

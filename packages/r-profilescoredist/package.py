@@ -15,7 +15,7 @@ class RProfilescoredist(RPackage):
 	bioc = "profileScoreDist" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/profileScoreDist_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/profileScoreDist/profileScoreDist_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="59d0f0bd369e20aa7be8352e5cf46830")
+	version("1.30.0", sha256="9a57ec2bb91b13a477087119eb7f541d97d4d7d0027e73b10deb977616ae64f4")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

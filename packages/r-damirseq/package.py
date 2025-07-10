@@ -15,7 +15,7 @@ class RDamirseq(RPackage):
 	bioc = "DaMiRseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DaMiRseq_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DaMiRseq/DaMiRseq_2.14.0.tar.gz"]
 
-	version("2.14.0", md5="64986e7db314ddba69d156b35f974680")
+	version("2.14.0", sha256="68dc5988e17c84f2e1e6e1b56c2735c4e4e804768f6825d56f221d2777a63ad7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

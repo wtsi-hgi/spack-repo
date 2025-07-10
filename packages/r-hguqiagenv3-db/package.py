@@ -15,7 +15,7 @@ class RHguqiagenv3Db(RPackage):
 	bioc = "hguqiagenv3.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hguqiagenv3.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hguqiagenv3.db/hguqiagenv3.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="91ebb82e773ff799befdb8921b38e90e")
+	version("3.2.3", sha256="fc50c3b57c6515b667446f8d7f028e5917417ccf8d17baa88a687d51818992fa")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -15,7 +15,7 @@ class RIlluminahumanmethylation450kprobe(RPackage):
 	bioc = "IlluminaHumanMethylation450kprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/IlluminaHumanMethylation450kprobe_2.0.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/IlluminaHumanMethylation450kprobe/IlluminaHumanMethylation450kprobe_2.0.6.tar.gz"]
 
-	version("2.0.6", md5="84c31861fcbaddbf2a9c500b8d8d767d")
+	version("2.0.6", sha256="2a46c84d45a416422bd4a95dfc40007ea6612923545863377f1ba376780650c5")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.13.18:", type=("build", "run"))

@@ -27,7 +27,7 @@ class REnsembldb(RPackage):
 	version("2.8.1", commit="a4d8d89c143dca86b364d59dff8e46cc81c41ac0")
 	version("2.6.8", commit="c2c4f41b4ecc81d5328ce1d380065dfcb5e0c54c")
 	version("2.4.1", commit="b5b6b94826a2f46a4faecb9dde750ecd3bfaf327")
-	version("2.26.0", md5="0ad7a33ad9592f54e39d647195aa4c91")
+	version("2.26.0", sha256="0a95b0608fee9b5aa9f8899edad97a58dd11c376b45f587b6bf4ead007b80e04")
 	version("2.24.0", commit="45a79a438fde11b0d244b071e6ae2b652100be03")
 	version("2.22.0", commit="4dda178a14e080c643bbd8c4dd6378bfe4e6ee9f")
 	version("2.20.2", commit="ac1fb8389efd88099600af298d6bb3384206f9ed")

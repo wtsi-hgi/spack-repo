@@ -15,7 +15,7 @@ class RMoanin(RPackage):
 	bioc = "moanin" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/moanin_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/moanin/moanin_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="74f0ff5d927d538a2b41cdc9c1ee9fd9")
+	version("1.10.0", sha256="302fbf94bd2ee1a2cfd7a983017bc040d6d09fa7c09f52a158b7adbb020635cd")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

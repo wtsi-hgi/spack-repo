@@ -16,7 +16,7 @@ class RPipeframe(RPackage):
 	bioc = "pipeFrame" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pipeFrame_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pipeFrame/pipeFrame_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="142f8d049aa03cec36050c2b0ccc87d9")
+	version("1.18.0", sha256="c972d8613581a03de083d3e894c260b5047fb7579aa6417d023ee40fc1927def")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))

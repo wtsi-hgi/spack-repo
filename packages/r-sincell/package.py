@@ -16,7 +16,7 @@ class RSincell(RPackage):
 	bioc = "sincell" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sincell_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sincell/sincell_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="308aa15c851a99b7f345dbd0af122f07")
+	version("1.34.0", sha256="460c0fdd8f97dd266bac81b80af04f8605c14290cd939db90a7f242d3bd3a02a")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

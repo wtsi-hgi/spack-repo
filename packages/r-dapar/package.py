@@ -16,7 +16,7 @@ class RDapar(RPackage):
 	bioc = "DAPAR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DAPAR_1.34.6.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DAPAR/DAPAR_1.34.6.tar.gz"]
 
-	version("1.34.6", md5="24ecc0e3b05c61098ccc42488ec3b6ba")
+	version("1.34.6", sha256="c47b0e8cd3b72c03d57fffaefc064d284ce6d8c63da48884a803678750fb60db")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

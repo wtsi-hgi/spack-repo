@@ -15,7 +15,7 @@ class RBsgenomeHsapiensNcbiGrch38(RPackage):
 	bioc = "BSgenome.Hsapiens.NCBI.GRCh38" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.NCBI.GRCh38_1.3.1000.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Hsapiens.NCBI.GRCh38/BSgenome.Hsapiens.NCBI.GRCh38_1.3.1000.tar.gz"]
 
-	version("1.3.1000", md5="733d324b34d34d7da8c4bf38459f4fae", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.NCBI.GRCh38_1.3.1000.tar.gz")
+	version("1.3.1000", sha256="812538bdacfd0eb90714916203dec85b22de2a5f7aaf0d0431d0a15370c3e578", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.NCBI.GRCh38_1.3.1000.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 

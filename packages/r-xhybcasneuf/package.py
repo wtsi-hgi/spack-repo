@@ -15,7 +15,7 @@ class RXhybcasneuf(RPackage):
 	bioc = "XhybCasneuf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/XhybCasneuf_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/XhybCasneuf/XhybCasneuf_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="f3e6306b5c05fb026e36e4c60656e25a")
+	version("1.40.0", sha256="ae7b0802264a50867e6599d908dfef01071ee747f05f04c24024f86471d5ebe3")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

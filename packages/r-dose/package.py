@@ -21,7 +21,7 @@ class RDose(RPackage):
 	version("3.8.2", commit="4d3d1ca710aa7e4288a412c8d52b054b86a57639")
 	version("3.6.1", commit="f2967f0482cea39222bfd15767d0f4a5994f241b")
 	version("3.4.0", commit="dabb70de1a0f91d1767601e871f2f1c16d29a612")
-	version("3.28.2", md5="db9c95935ce192a915b1246380f625d5")
+	version("3.28.2", sha256="ee22b726664304643116a88c40eb8b2032e2a4faa92c2b2523986ddf19a2644e")
 	version("3.26.0", commit="9c91fb45a2ab9a875a6a7259610b7d5bc86933f6")
 	version("3.24.1", commit="a78995d3b12bd4baabb69c497102687814cd4c68")
 	version("3.22.1", commit="6b711a0f076a9fefcb00ddef66e8f198039e6dfa")

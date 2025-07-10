@@ -15,7 +15,7 @@ class RRgug4105aDb(RPackage):
 	bioc = "rgug4105a.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rgug4105a.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rgug4105a.db/rgug4105a.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="3ccf354083ae36a7ae687fb8209c4e5b")
+	version("3.2.3", sha256="8048e32e5854c4973b0fa6cc610fd23fd996801bd704678b9107838a4b9a0853")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

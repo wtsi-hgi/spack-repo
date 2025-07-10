@@ -15,7 +15,7 @@ class RStager(RPackage):
 	bioc = "stageR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/stageR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/stageR/stageR_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="cdbf6ab3c35c3e019b0ce786ad85eb38")
+	version("1.24.0", sha256="ebeaa6d04eff967ca3686754f12cf94a9b07b10433510e236cb0708f51df9018")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -16,7 +16,7 @@ class RRiver(RPackage):
 	bioc = "RIVER" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RIVER_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RIVER/RIVER_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="7b8f82011a163ae4f4a31f2172d49124")
+	version("1.26.0", sha256="e8a5bdd1ea8d5badd9fedbc9b596548ae8f24a4a215f8d6727ca3dc6b8779fcd")
 
 	depends_on("r@3.3.2:", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))

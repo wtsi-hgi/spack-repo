@@ -15,7 +15,7 @@ class RPdMapping50kHind240(RPackage):
 	bioc = "pd.mapping50k.hind240" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mapping50k.hind240_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.mapping50k.hind240/pd.mapping50k.hind240_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="83615dcb01eb381f0c69e07504809094", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mapping50k.hind240_3.12.0.tar.gz")
+	version("3.12.0", sha256="dae079849e1e678eb66318f6e870c322c43b82d1ef5b549921886245729317f2", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.mapping50k.hind240_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

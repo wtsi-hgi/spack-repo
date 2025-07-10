@@ -16,7 +16,7 @@ class RSagenhaft(RPackage):
 	bioc = "sagenhaft" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sagenhaft_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sagenhaft/sagenhaft_1.72.0.tar.gz"]
 
-	version("1.72.0", md5="4f27450a0e98b4f0f7396a784eb0e4e3")
+	version("1.72.0", sha256="5b833759e7997e0218108bfd3e6fb4a540d13e630a7b8012358371c4a5588c05")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-sparsem@0.73:", type=("build", "run"))

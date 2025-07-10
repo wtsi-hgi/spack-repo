@@ -16,7 +16,7 @@ class RFobitools(RPackage):
 	bioc = "fobitools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fobitools_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fobitools/fobitools_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="24ebda3aed06055ab55d7cdf88a7c2a0")
+	version("1.10.0", sha256="09e8136e2462918e03184c5c08d945df0d56d81f382111da10707054ff126d8e")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-clisymbols", type=("build", "run"))

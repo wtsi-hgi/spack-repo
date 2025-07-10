@@ -14,7 +14,7 @@ class RMarray(RPackage):
 
 	bioc = "marray"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/marray_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/marray/marray_1.80.0.tar.gz"]
-	version("1.80.0", md5="569b373e346d36964430d249d075cf07")
+	version("1.80.0", sha256="6d4f8a27ec9cce495f6681a62539843082603cb44cccfcc717d3956857ab44be")
 	version("1.78.0", commit="97d74b2af40568eda445378b4708a2e2d33291cd")
 	version("1.76.0", commit="88cb0fd21cc60ac65410ca4314eca2e351933ec5")
 	version("1.74.0", commit="9130a936fffb7d2d445ff21d04520e78b62625ac")

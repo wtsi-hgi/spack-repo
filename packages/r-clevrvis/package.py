@@ -16,7 +16,7 @@ class RClevrvis(RPackage):
 	bioc = "clevRvis" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clevRvis_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clevRvis/clevRvis_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="96fde7a442a2cdb69754ebf1e68ccc65")
+	version("1.2.0", sha256="b40c4fe95a6b56bd73ccdaa87e5075600158db4399a3374665b1e220183cf55c")
 
 	depends_on("r-shiny", type=("build", "run"))
 	depends_on("r-ggraph", type=("build", "run"))

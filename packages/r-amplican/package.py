@@ -16,7 +16,7 @@ class RAmplican(RPackage):
 	bioc = "amplican" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/amplican_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/amplican/amplican_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="73fd9acdf5066ee76b1157068151f1f4")
+	version("1.24.0", sha256="9c6a1fd6d0016b0f01454884b6fecd9f00d99ba9d17956df2fd47b6f84305c77")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.22:", type=("build", "run"))

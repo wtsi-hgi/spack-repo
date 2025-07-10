@@ -15,7 +15,7 @@ class RMdqc(RPackage):
 	bioc = "mdqc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mdqc_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mdqc/mdqc_1.64.0.tar.gz"]
 
-	version("1.64.0", md5="a9dd8adf71b5fe15b4b5b444f0b43110")
+	version("1.64.0", sha256="8ede5bc1eae8540c551d4c68658e3dac603f027c3b6bcf9318490bd7707ad160")
 
 	depends_on("r@2.2.1:", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))

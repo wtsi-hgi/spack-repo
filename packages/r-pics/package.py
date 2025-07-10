@@ -16,7 +16,7 @@ class RPics(RPackage):
 	bioc = "PICS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PICS_2.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PICS/PICS_2.46.0.tar.gz"]
 
-	version("2.46.0", md5="04ed3fdb7f1db15654e9974438495e43")
+	version("2.46.0", sha256="cbfe9cc744144aa0087d360eba98c4adb103307e162193c32d1f265a348aed66")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

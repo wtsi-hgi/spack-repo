@@ -16,7 +16,7 @@ class RPeakpanther(RPackage):
 	bioc = "peakPantheR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/peakPantheR_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/peakPantheR/peakPantheR_1.16.1.tar.gz"]
 
-	version("1.16.1", md5="d1cf413311d8a862f7616bfb76174ee7")
+	version("1.16.1", sha256="f91d3a7f3ae883d09cfd7b134a95b884c6be8df3f94b1b07209a9dfdeb21f120")
 	version("1.16.0", md5="9753434861181af826b86fbc734b5850")
 
 	depends_on("r@4.2:", type=("build", "run"))

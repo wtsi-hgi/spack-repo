@@ -15,7 +15,7 @@ class RAgprobe(RPackage):
 	bioc = "agprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/agprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/agprobe/agprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="08f7527d4c8a30d8b2f86016a53f075a")
+	version("2.18.0", sha256="73f84a89036dd95a8ba1fd59dbb82b6264d6dd6702d36a91b226fccbaae2caee")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

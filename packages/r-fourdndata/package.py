@@ -16,7 +16,7 @@ class RFourdndata(RPackage):
 	bioc = "fourDNData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/fourDNData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/fourDNData/fourDNData_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="bca623e919f7c17a40ffb4eae27cfe59")
+	version("1.2.0", sha256="e0a778f11f46e0ac915a178a01e4eff37a9f34fdae56e1af49c39be24ea9bf19")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))

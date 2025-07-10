@@ -16,7 +16,7 @@ class RCompounddb(RPackage):
 	bioc = "CompoundDb" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CompoundDb_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CompoundDb/CompoundDb_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="7863bdbb64d2068c22225ece8ed5844c")
+	version("1.6.0", sha256="a3bc52352f715319129225eefbb2581ba1426a7ec8c057582a276a983b0f70b9")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationfilter", type=("build", "run"))

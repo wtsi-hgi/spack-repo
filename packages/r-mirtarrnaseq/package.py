@@ -15,7 +15,7 @@ class RMirtarrnaseq(RPackage):
 	bioc = "mirTarRnaSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mirTarRnaSeq_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mirTarRnaSeq/mirTarRnaSeq_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="b8cac8c363bddb02eb97e6009bb91f4e")
+	version("1.10.0", sha256="947b4a660e6c01424e033bd22a2dcbd60cce916f4e1726beacdb2664ee0edd51")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

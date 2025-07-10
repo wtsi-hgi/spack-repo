@@ -15,7 +15,7 @@ class RCssq(RPackage):
 	bioc = "CSSQ" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CSSQ_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CSSQ/CSSQ_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="d9a6f6200f67cc06173c30dcd6775e5a")
+	version("1.14.0", sha256="368e4a8824a979be1acfd4f8a0747289e5e443290e40dd3b8e47049d5ec88a58")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

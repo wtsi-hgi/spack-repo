@@ -16,7 +16,7 @@ class RCnvmetrics(RPackage):
 	bioc = "CNVMetrics" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNVMetrics_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNVMetrics/CNVMetrics_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="ebb4f847744aaddcc125d870b1a67154")
+	version("1.6.0", sha256="95db84f879b5726ae2389ee54bafc8966fa9aeb9bf3c65cd4ffbdb665823c49a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

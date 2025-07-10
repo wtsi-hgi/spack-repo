@@ -15,7 +15,7 @@ class RNewwave(RPackage):
 	bioc = "NewWave" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NewWave_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NewWave/NewWave_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="ed222f643c357c84a7eb8534aa7b3a91")
+	version("1.12.0", sha256="04b9b7374e76d4c9cb5271e5fffe7bcdfc4aaecf3f99bc75e7b0252a67de73b4")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

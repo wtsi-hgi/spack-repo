@@ -16,7 +16,7 @@ class RHtqpcr(RPackage):
 	bioc = "HTqPCR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HTqPCR_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HTqPCR/HTqPCR_1.56.0.tar.gz"]
 
-	version("1.56.0", md5="2deab9ff0c0269549b377a0867482f60")
+	version("1.56.0", sha256="15d0b88089ef92129a0c6834fbd66535cab4f5ef17c61f7b6910af19cd708e91")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMethylsig(RPackage):
 	bioc = "methylSig" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylSig_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylSig/methylSig_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="a5d8d4c2fb5ed16074fa30a0361fd249")
+	version("1.14.0", sha256="6c058ea0bc432db802feef72a22a26f8ab970e2f27b695f30e39c5c3ca7617ed")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-bsseq", type=("build", "run"))

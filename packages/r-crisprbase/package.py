@@ -16,7 +16,7 @@ class RCrisprbase(RPackage):
 	bioc = "crisprBase" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crisprBase_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crisprBase/crisprBase_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="20cc1254ee7d33a966bb795f09f8be44")
+	version("1.6.0", sha256="8037cf0286dce17086fe7ea488ae085850a363d12a084622fa76c98da9ced9c8")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

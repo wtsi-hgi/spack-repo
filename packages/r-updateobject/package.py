@@ -16,7 +16,7 @@ class RUpdateobject(RPackage):
 	bioc = "updateObject" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/updateObject_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/updateObject/updateObject_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="0d69cbbcd4bd9c5f31d905a47f6af212")
+	version("1.6.0", sha256="aaf3864680f6405523a92ecef102842f6192028c53279d63c7e34ee922ca2b28")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.47.1:", type=("build", "run"))

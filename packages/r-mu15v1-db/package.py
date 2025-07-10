@@ -15,7 +15,7 @@ class RMu15v1Db(RPackage):
 	bioc = "Mu15v1.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Mu15v1.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Mu15v1.db/Mu15v1.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="e9297b5fe223b046bc65dc6ea0b4376d")
+	version("3.2.3", sha256="9f06fe5d624a36bf4f48a38d1628757af23986ecd4418c96927179d3d7c49061")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -15,7 +15,7 @@ class RSradb(RPackage):
 	bioc = "SRAdb" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SRAdb_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SRAdb/SRAdb_1.64.0.tar.gz"]
 
-	version("1.64.0", md5="6bc0aa8bd176c1b388f4da270b4f668b")
+	version("1.64.0", sha256="e5ad5ee17d99e2afbd51e6741e35c925d748d596f482c9ada8c1c84bde547edf")
 
 	depends_on("r-rsqlite", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

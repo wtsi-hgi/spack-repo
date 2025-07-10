@@ -15,7 +15,7 @@ class RCytopipelinegui(RPackage):
 	bioc = "CytoPipelineGUI" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CytoPipelineGUI_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CytoPipelineGUI/CytoPipelineGUI_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="fb6a6a7aad638be11919a144f3d9907a")
+	version("1.0.0", sha256="18c568b019b283ba117d278606c02db621b389dd5a5494699643f109064ad925")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-cytopipeline", type=("build", "run"))

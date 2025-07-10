@@ -15,7 +15,7 @@ class ROrthologyEgDb(RPackage):
 	bioc = "Orthology.eg.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Orthology.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Orthology.eg.db/Orthology.eg.db_3.18.0.tar.gz"]
 
-	version("3.18.0", md5="1e53a6a144a5074544cbe166ad241012")
+	version("3.18.0", sha256="f2b3b214d8a9d4bc3352cab1ad8e9e5c119506bac582331316a30e4044756687")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))

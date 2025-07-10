@@ -16,7 +16,7 @@ class RCytoviewer(RPackage):
 	bioc = "cytoviewer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cytoviewer_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cytoviewer/cytoviewer_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="dc34f69f53490911e6f621d76db69f4c")
+	version("1.2.0", sha256="a82429120643e00d49ca9897b1eb3ecf477ae0c7cb0244d1a2fa828a8774676e")
 
 	depends_on("r-shiny", type=("build", "run"))
 	depends_on("r-shinydashboard", type=("build", "run"))

@@ -15,7 +15,7 @@ class RGrenits(RPackage):
 	bioc = "GRENITS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GRENITS_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GRENITS/GRENITS_1.54.0.tar.gz"]
 
-	version("1.54.0", md5="fd00e191f8c57c6ef54146263d21a089")
+	version("1.54.0", sha256="418dcd3591ddb7632526ff44a11cd594e0db172ccd0d61e0703376eead136bb8")
 
 	depends_on("r@2.12:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

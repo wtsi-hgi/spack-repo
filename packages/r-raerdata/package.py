@@ -16,7 +16,7 @@ class RRaerdata(RPackage):
 	bioc = "raerdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/raerdata_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/raerdata/raerdata_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="8f250d12f89396f8d4351da5045cf22c")
+	version("1.0.0", sha256="11822b42c75b6d8bd3d99660c39508070b30460a4149f1f2e48039128e4a1339")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))

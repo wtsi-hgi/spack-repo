@@ -16,7 +16,7 @@ class RScp(RPackage):
 	bioc = "scp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scp_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scp/scp_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="c4f759cfb996e6150ecec65b7de3e343")
+	version("1.12.0", sha256="f0b301a02fc703dec1b439e7eb3f44235e60ab8195f19d4775c27c67381c9575")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-qfeatures@1.3.5:", type=("build", "run"))

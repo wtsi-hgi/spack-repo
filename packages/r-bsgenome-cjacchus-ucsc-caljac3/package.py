@@ -15,7 +15,7 @@ class RBsgenomeCjacchusUcscCaljac3(RPackage):
 	bioc = "BSgenome.Cjacchus.UCSC.calJac3" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Cjacchus.UCSC.calJac3_1.4.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Cjacchus.UCSC.calJac3/BSgenome.Cjacchus.UCSC.calJac3_1.4.2.tar.gz"]
 
-	version("1.4.2", md5="41f927aa0d6ffbdaa6ad93c9135409e6", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Cjacchus.UCSC.calJac3_1.4.2.tar.gz")
+	version("1.4.2", sha256="1ff49d4baedc11ea53482dfb3008ecd0435a7ea7780db4ef6ab68d4ccdcb3ae8", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Cjacchus.UCSC.calJac3_1.4.2.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 

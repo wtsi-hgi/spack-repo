@@ -15,7 +15,7 @@ class RXcore(RPackage):
 	bioc = "xcore" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/xcore_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/xcore/xcore_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="4dd79b63bd7ff46aaa1b84dade889db2")
+	version("1.6.0", sha256="a76393504e53465ec243c02997f8aeb8c40dc9293738064012f1aeaf57362754")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-delayedarray@0.18:", type=("build", "run"))

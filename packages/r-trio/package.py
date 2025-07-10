@@ -15,7 +15,7 @@ class RTrio(RPackage):
 	bioc = "trio" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/trio_3.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/trio/trio_3.40.0.tar.gz"]
 
-	version("3.40.0", md5="cd87ad1a66fe181df937dd7a8edfda56")
+	version("3.40.0", sha256="1bb69d82f53432e83f108eaaee530bcc6a73191d0e31fed22eb13d2dcf740342")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMoma(RPackage):
 	bioc = "MOMA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MOMA_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MOMA/MOMA_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="ce4cf6dab5fea53127b5b980756ef5db")
+	version("1.14.0", sha256="cc25564401dae250bc7cf7abb36dcd72843aef4c203ae0996decdebf661450cf")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-circlize", type=("build", "run"))

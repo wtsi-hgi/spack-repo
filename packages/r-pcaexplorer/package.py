@@ -16,7 +16,7 @@ class RPcaexplorer(RPackage):
 	bioc = "pcaExplorer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pcaExplorer_2.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pcaExplorer/pcaExplorer_2.28.0.tar.gz"]
 
-	version("2.28.0", md5="622f43cef60e783c51d59ed8624019d8")
+	version("2.28.0", sha256="07b0796b684a0801fc38f3a922464acb8e935c739f75f6dc25d4022fb14c0c46")
 
 	depends_on("r-deseq2", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

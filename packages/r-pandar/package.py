@@ -15,7 +15,7 @@ class RPandar(RPackage):
 	bioc = "pandaR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pandaR_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pandaR/pandaR_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="203422d8a9df096677530f57bffe9e9c")
+	version("1.34.0", sha256="dce63a6685d1ae7eeb25fb612ba5f0980814324be72072910d066688d26ec294")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

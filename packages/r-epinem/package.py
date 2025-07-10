@@ -16,7 +16,7 @@ class REpinem(RPackage):
 	bioc = "epiNEM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epiNEM_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epiNEM/epiNEM_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="03702ef94f047496994ebaf19f750787")
+	version("1.26.0", sha256="8ede681f5622f4990e8626ccb6896f556d08c557f0cfd604e93f66dee4b8630b")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-boolnet", type=("build", "run"))

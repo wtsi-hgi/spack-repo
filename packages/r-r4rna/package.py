@@ -16,7 +16,7 @@ class RR4rna(RPackage):
 	bioc = "R4RNA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/R4RNA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/R4RNA/R4RNA_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="a77903559307ab481671650646dd85e5")
+	version("1.30.0", sha256="d4cc1c2cd4b8adad1ef3933ab7dfaf2792a9b64bf9cace27372238f18f0eb9e2")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.38:", type=("build", "run"))

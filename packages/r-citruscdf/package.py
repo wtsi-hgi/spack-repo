@@ -15,7 +15,7 @@ class RCitruscdf(RPackage):
 	bioc = "citruscdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/citruscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/citruscdf/citruscdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="4af821a0c1ae1adf42b7dc5ce7458593")
+	version("2.18.0", sha256="b61d847660cc87dc26dbd96c363a78d661223ae48658ef63d9640ed783ac468c")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

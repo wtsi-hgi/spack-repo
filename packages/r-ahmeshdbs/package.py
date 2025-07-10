@@ -15,7 +15,7 @@ class RAhmeshdbs(RPackage):
 	bioc = "AHMeSHDbs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AHMeSHDbs_1.7.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/AHMeSHDbs/AHMeSHDbs_1.7.0.tar.gz"]
 
-	version("1.7.0", md5="9bbcae25794d2f854a122ba36a4e4c5c")
+	version("1.7.0", sha256="02f1bea88d9288b0693e2ea76c46cead98ed67e96a57339232fbadfdbb98b143")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationhub@2.22:", type=("build", "run"))

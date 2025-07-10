@@ -16,7 +16,7 @@ class RSpicyr(RPackage):
 	bioc = "spicyR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spicyR_1.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spicyR/spicyR_1.14.3.tar.gz"]
 
-	version("1.14.3", md5="d8ee58d35247088d0d964f694f6c027e")
+	version("1.14.3", sha256="b5ed5e9cdd7b8667b855ddab24e662a638844c65415d8ea280d46aba1e3f7ac1")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

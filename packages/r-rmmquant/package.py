@@ -15,7 +15,7 @@ class RRmmquant(RPackage):
 	bioc = "Rmmquant" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rmmquant_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rmmquant/Rmmquant_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="8f12574d12fdfbb3ef7407666fb22a7b")
+	version("1.20.0", sha256="84c19278b030bcdc0bc00be68bfddc8e2a603e738e2e41b6a1ff512fe29223a3")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

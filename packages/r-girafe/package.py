@@ -15,7 +15,7 @@ class RGirafe(RPackage):
 	bioc = "girafe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/girafe_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/girafe/girafe_1.54.0.tar.gz"]
 
-	version("1.54.0", md5="4cf228e6d7f73cf97c923f1c349fb6c3")
+	version("1.54.0", sha256="446659992e64ae2ee3d263fb3c25d91a421c6cfffa7f6df009f26787b7e94a27")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.13.8:", type=("build", "run"))

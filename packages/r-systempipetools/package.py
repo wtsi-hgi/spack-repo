@@ -15,7 +15,7 @@ class RSystempipetools(RPackage):
 	bioc = "systemPipeTools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/systemPipeTools_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/systemPipeTools/systemPipeTools_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="e0f74af8b351b49c68cbfed4e9e00adc")
+	version("1.10.0", sha256="2d731b23115037425d1ad1ddf87fd08d4d27c98573d92f54be67e98a6bd145bb")
 
 	depends_on("r-deseq2", type=("build", "run"))
 	depends_on("r-ggally", type=("build", "run"))

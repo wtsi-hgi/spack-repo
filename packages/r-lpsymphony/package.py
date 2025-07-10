@@ -16,6 +16,6 @@ class RLpsymphony(RPackage):
 	bioc = "lpsymphony" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lpsymphony_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lpsymphony/lpsymphony_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="106ec54272f27574ea1eea2d5721d7e4")
+	version("1.30.0", sha256="ef2c03a596981da910697dab15672bce91a267a459e89c526bddef9f38e586a4")
 
 	depends_on("r@3:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RAdverscarial(RPackage):
 	bioc = "adverSCarial" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/adverSCarial_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/adverSCarial/adverSCarial_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="196840790cf7fd0a0cbfe6d1aeb60e07")
+	version("1.0.0", sha256="0a6c0c8d2d9567c14040c9be8db7f89c0704df3dd143f63bb5b71fdf6828cdfa")
 
 	depends_on("r-gtools", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

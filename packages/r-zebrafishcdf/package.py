@@ -15,7 +15,7 @@ class RZebrafishcdf(RPackage):
 	bioc = "zebrafishcdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/zebrafishcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/zebrafishcdf/zebrafishcdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="04edbb632600c97610b86423c2d850e7")
+	version("2.18.0", sha256="a0671d41dffb074d19d808bf6d4e7972c8d65fa21ec3a5a2da342eba20ee016b")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

@@ -16,7 +16,7 @@ class RBridgedbr(RPackage):
 	bioc = "BridgeDbR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BridgeDbR_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BridgeDbR/BridgeDbR_2.12.0.tar.gz"]
 
-	version("2.12.0", md5="2c155c28cb8d117e2dc1b69873b91d84")
+	version("2.12.0", sha256="f7f3396a113b22761265b1252f337040048a273007dcc0de35dc19652d05c207")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rjava", type=("build", "run"))

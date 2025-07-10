@@ -15,7 +15,7 @@ class RSvanumt(RPackage):
 	bioc = "svaNUMT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/svaNUMT_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/svaNUMT/svaNUMT_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="1f25f8632f0e52d0826ee0b1b8a1fe28")
+	version("1.8.0", sha256="3d44e2a2a091a432b62a1e046cc7430b09265a4ac3c75cf03f014031e7ff0b6d")
 
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-rtracklayer", type=("build", "run"))

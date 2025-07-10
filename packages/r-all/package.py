@@ -15,7 +15,7 @@ class RAll(RPackage):
 	bioc = "ALL" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ALL_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ALL/ALL_1.44.0.tar.gz"]
 
-	version("1.44.0", md5="b80eb482b4937ef4eac01027ac95a61a")
+	version("1.44.0", sha256="6c52471acf4bb77ed86e71c25e69ce5cc5235acec50785107b212934c6eec5db")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

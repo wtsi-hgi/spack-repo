@@ -15,7 +15,7 @@ class RBsseqdata(RPackage):
 	bioc = "bsseqData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/bsseqData_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/bsseqData/bsseqData_0.40.0.tar.gz"]
 
-	version("0.40.0", md5="514171e8133c8d38e6b1ad31eff722a8")
+	version("0.40.0", sha256="d2506f1e11b5cb48e7559f209fef682d6055f8ebcfdd8ec97444e965a8d9de95")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-bsseq@1.16:", type=("build", "run"))

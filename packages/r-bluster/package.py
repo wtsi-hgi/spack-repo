@@ -19,7 +19,7 @@ class RBluster(RPackage):
 
 	version("1.8.0", commit="156115c8960c0b66b2c588d9fd8bbdfe56e5f0be")
 	version("1.6.0", commit="ff86c7d8d36233e838d4f00e6a4e173e7bf16816")
-	version("1.12.0", md5="baf91e0700b1f49eb80522be9eb8204d")
+	version("1.12.0", sha256="0c564cfe750c16f4cb5def26289dbd036b027c096239e8352a228d764cd9f39b")
 	version("1.10.0", commit="32340420e67a184e39238e46143c00151057924c")
 
 	depends_on("r-cluster", type=("build", "run"))

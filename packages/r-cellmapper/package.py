@@ -15,6 +15,6 @@ class RCellmapper(RPackage):
 	bioc = "CellMapper" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellMapper_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellMapper/CellMapper_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="ca94af55dbc55bb2bf40c69f4965b553")
+	version("1.28.0", sha256="9bef07abde4a48a08e40991c52cb98a6e55d3cbb79fcdf20b1bb60c5019f49e5")
 
 	depends_on("r-s4vectors", type=("build", "run"))

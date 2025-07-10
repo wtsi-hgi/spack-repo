@@ -15,7 +15,7 @@ class RDittoseq(RPackage):
 	bioc = "dittoSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dittoSeq_1.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dittoSeq/dittoSeq_1.14.3.tar.gz"]
 
-	version("1.14.3", md5="4000a6881bab2105fba434ed32348227")
+	version("1.14.3", sha256="f1073442f682f982be0d93c37349bdcec905f938cf848aeeba25c0ffa46c2e05")
 	version("1.14.2", md5="8cd8305d970fdd3e20c3db17aeb62502")
 
 	depends_on("r-ggplot2", type=("build", "run"))

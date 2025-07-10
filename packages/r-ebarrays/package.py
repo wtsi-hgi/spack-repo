@@ -15,7 +15,7 @@ class REbarrays(RPackage):
 	bioc = "EBarrays" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EBarrays_2.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EBarrays/EBarrays_2.66.0.tar.gz"]
 
-	version("2.66.0", md5="d273e2e9411207653d4e079e14484026")
+	version("2.66.0", sha256="f810ddcd8f363086be0df36bebe739785fb228f527822965b9a8a65e69f00dd5")
 
 	depends_on("r@1.8:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

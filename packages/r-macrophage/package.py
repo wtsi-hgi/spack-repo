@@ -15,7 +15,7 @@ class RMacrophage(RPackage):
 	bioc = "macrophage" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/macrophage_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/macrophage/macrophage_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="5f83cf12d699a285cd228119b1d95cf0")
+	version("1.18.0", sha256="be731cf53cf595dab3ba56562606a874cd82890405220e2df1ae4347c64ea681")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

@@ -15,7 +15,7 @@ class RScrnaseq(RPackage):
 	bioc = "scRNAseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scRNAseq_2.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scRNAseq/scRNAseq_2.16.0.tar.gz"]
 
-	version("2.16.0", md5="55196cb10876aa15733c6a29ffc38100")
+	version("2.16.0", sha256="5c2144291969ee9b4c23eb450d0f23c71bbbdc79b868ba8f6b73d283b11e7035")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

@@ -15,6 +15,6 @@ class ROccugene(RPackage):
 	bioc = "occugene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/occugene_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/occugene/occugene_1.62.0.tar.gz"]
 
-	version("1.62.0", md5="264da1422714d735ac474b414e57a2a9")
+	version("1.62.0", sha256="f69690ae4471106051a75fbe607f41d462b8fceeeb84411f4b12ddc98b395c11")
 
 	depends_on("r@2:", type=("build", "run"))

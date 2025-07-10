@@ -16,7 +16,7 @@ class RCuratedadiporna(RPackage):
 	bioc = "curatedAdipoRNA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedAdipoRNA_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedAdipoRNA/curatedAdipoRNA_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="61c2e750fc2cf09a6bde6c0bf46e6b8b")
+	version("1.18.0", sha256="3791a38e8c648d504be4a0eafd893b1b822012add17833c04d68b2c0ef45c5b7")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

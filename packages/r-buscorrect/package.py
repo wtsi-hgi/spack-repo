@@ -15,7 +15,7 @@ class RBuscorrect(RPackage):
 	bioc = "BUScorrect" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BUScorrect_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BUScorrect/BUScorrect_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="6d24bece1ac7982a2a157e5cccc01b99")
+	version("1.20.0", sha256="ee61d25c6558b9886fe58ee38c2c898abc19bfbccb54e5b71ba7b224455f7050")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

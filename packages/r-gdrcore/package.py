@@ -15,7 +15,7 @@ class RGdrcore(RPackage):
 	bioc = "gDRcore" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gDRcore_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gDRcore/gDRcore_1.0.1.tar.gz"]
 
-	version("1.0.1", md5="c6f8d5e650506c1da3a8372f16f690da")
+	version("1.0.1", sha256="8c4660fe598c52ce80f16f0aae4e3751ccef6cec0802a2c3bef2acba6000fa25")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-bumpymatrix", type=("build", "run"))

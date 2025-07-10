@@ -16,7 +16,7 @@ class RBiomartgogenesets(RPackage):
 	bioc = "BioMartGOGeneSets" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BioMartGOGeneSets_0.99.11.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BioMartGOGeneSets/BioMartGOGeneSets_0.99.11.tar.gz"]
 
-	version("0.99.11", md5="f96a12703fd2f9c357442a60e5f2c764")
+	version("0.99.11", sha256="385ebed5be80df4310ca401ab5c9d637ffcc2f71c99a80f42be17d80c34693a9")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

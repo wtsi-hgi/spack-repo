@@ -16,7 +16,7 @@ class RDecomptumor2sig(RPackage):
 	bioc = "decompTumor2Sig" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/decompTumor2Sig_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/decompTumor2Sig/decompTumor2Sig_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="efd7bdadb25752241823124b560e9214")
+	version("2.18.0", sha256="b2e9afccdb784efe1757711f5e49ed62963a3368b87d250e4c2bdf2fd0cb7c8f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

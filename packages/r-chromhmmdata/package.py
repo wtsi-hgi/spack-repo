@@ -15,7 +15,7 @@ class RChromhmmdata(RPackage):
 	bioc = "chromhmmData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/chromhmmData_0.99.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/chromhmmData/chromhmmData_0.99.2.tar.gz"]
 
-	version("0.99.2", md5="eec85c20139b3d826f00264c7b28207c")
+	version("0.99.2", sha256="f23b04ecd03c29a7fbf1c01f461101f9d1f8f443fa9aeccfc6e9cffae9e9e68d")
 
 	depends_on("r@4.1:", type=("build", "run"))
 

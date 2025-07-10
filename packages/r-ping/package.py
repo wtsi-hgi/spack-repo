@@ -15,7 +15,7 @@ class RPing(RPackage):
 	bioc = "PING" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PING_2.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PING/PING_2.46.0.tar.gz"]
 
-	version("2.46.0", md5="703e11e3d890a3cf2b48c15d4c76ea87")
+	version("2.46.0", sha256="83cba3a927998ace0fbd016d7a4a9bdc12d745bc2c8be3f983774c46af64bbc4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-pics", type=("build", "run"))

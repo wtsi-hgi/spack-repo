@@ -15,7 +15,7 @@ class RHtmg430pmprobe(RPackage):
 	bioc = "htmg430pmprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/htmg430pmprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/htmg430pmprobe/htmg430pmprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="f0e053fcc0ca4b5f8c539fc0a3fcb076")
+	version("2.18.0", sha256="25128aaf4faecb850eebe58a3306499a8372e2529c0a77547ecb0e6b9d088f09")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

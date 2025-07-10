@@ -15,7 +15,7 @@ class RAwfisher(RPackage):
 	bioc = "AWFisher" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AWFisher_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AWFisher/AWFisher_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="ba9b2824782018cc7626ebc72b6bb81e")
+	version("1.16.0", sha256="3a21d029ffeea5f64eb720af4c29a5bf867095178d357ca6215c7c4040c48581")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-edger", type=("build", "run"))

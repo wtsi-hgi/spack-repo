@@ -15,7 +15,7 @@ class RHtrat230pmcdf(RPackage):
 	bioc = "htrat230pmcdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/htrat230pmcdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/htrat230pmcdf/htrat230pmcdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="c6683d16e8aacccd326f7a7eebb79b98")
+	version("2.18.0", sha256="bdd5569624789e84993faf05214a4ad49b10d16c01f850522d54682586e20f2c")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

@@ -15,7 +15,7 @@ class ROpencyto(RPackage):
 	bioc = "openCyto" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/openCyto_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/openCyto/openCyto_2.14.0.tar.gz"]
 
-	version("2.14.0", md5="04a62bb1960f008fc218686296a3118d")
+	version("2.14.0", sha256="9aaed21343ce39883ea90540b2fba4899f8b0d9084fae6666b9febf78b516489")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

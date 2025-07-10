@@ -15,7 +15,7 @@ class RBsgenomeAmelliferaUcscApimel2Masked(RPackage):
 	bioc = "BSgenome.Amellifera.UCSC.apiMel2.masked" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Amellifera.UCSC.apiMel2.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Amellifera.UCSC.apiMel2.masked/BSgenome.Amellifera.UCSC.apiMel2.masked_1.3.99.tar.gz"]
 
-	version("1.3.99", md5="e7a7ff8cfce8e239b22116855456f23d")
+	version("1.3.99", sha256="f9c2496a9609758d85191f1fc58c789ed68758de89b50d37762afc75edad1289")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-amellifera-ucsc-apimel2", type=("build", "run"))

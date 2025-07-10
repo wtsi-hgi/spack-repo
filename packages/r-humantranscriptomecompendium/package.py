@@ -15,7 +15,7 @@ class RHumantranscriptomecompendium(RPackage):
 	bioc = "HumanTranscriptomeCompendium" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HumanTranscriptomeCompendium_1.17.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HumanTranscriptomeCompendium/HumanTranscriptomeCompendium_1.17.0.tar.gz"]
 
-	version("1.17.0", md5="00689fd704a35eea4e0ba38516603b49")
+	version("1.17.0", sha256="5ba92aca4d359d78bd5252836a979503080e45163549d0abee23c409c1ef7404")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

@@ -16,7 +16,7 @@ class RErccdashboard(RPackage):
 	bioc = "erccdashboard" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/erccdashboard_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/erccdashboard/erccdashboard_1.36.0.tar.gz"]
 
-	version("1.36.0", md5="fa211269012a775dcdc114f3eb0282bb")
+	version("1.36.0", sha256="57e02c6535898650bae2abf59ec283c1a16f8f5755c350702eb2a26880b5558b")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-ggplot2@2.1:", type=("build", "run"))

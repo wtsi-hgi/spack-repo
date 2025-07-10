@@ -16,7 +16,7 @@ class RNetboost(RPackage):
 	bioc = "netboost" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/netboost_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/netboost/netboost_2.10.0.tar.gz"]
 
-	version("2.10.0", md5="d21f645a3fe85c35ff9b9127bce1fbca")
+	version("2.10.0", sha256="a26a38c80915b278f3a6a8320d9f685215370950e5be4394f84a07d30e81beb2")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

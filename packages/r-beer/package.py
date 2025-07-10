@@ -16,7 +16,7 @@ class RBeer(RPackage):
 	bioc = "beer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/beer_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/beer/beer_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="c8e6192a3f9bd04b62ed564c8164ba00")
+	version("1.6.0", sha256="fe8a119243c16d54e3c52a7c3df69e19d6b279909b9d6d62d5c2b71c6ef657b5")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-phipdata@1.1.1:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RProda(RPackage):
 	bioc = "proDA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/proDA_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/proDA/proDA_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="906f58f351f6a657aafcb3f6a670cc9f")
+	version("1.16.0", sha256="7787a07fa4c1a70c4770ed7764b879e053076812d0469577b41e277c1505fa23")
 
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

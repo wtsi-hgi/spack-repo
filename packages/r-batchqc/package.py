@@ -16,7 +16,7 @@ class RBatchqc(RPackage):
 	bioc = "BatchQC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BatchQC_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BatchQC/BatchQC_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="c8940666878af6ea1981e6d90095bc98")
+	version("1.30.0", sha256="d89b36b950e87c4c7ae7e28d91fa997497b07a500eec85a8907f9f25c623caf5")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rmarkdown", type=("build", "run"))

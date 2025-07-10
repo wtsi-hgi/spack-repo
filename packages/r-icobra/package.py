@@ -16,7 +16,7 @@ class RIcobra(RPackage):
 	bioc = "iCOBRA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iCOBRA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iCOBRA/iCOBRA_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="dc297e102e2b6ee717a494f652a6d6bf")
+	version("1.30.0", sha256="ce320e1a3e8bf39b5356f6a246a713ef7c8ed915dbea2d52d91b1805390812b8")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-shiny@0.9.1.9008:", type=("build", "run"))

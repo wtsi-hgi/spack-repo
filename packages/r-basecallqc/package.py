@@ -15,7 +15,7 @@ class RBasecallqc(RPackage):
 	bioc = "basecallQC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/basecallQC_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/basecallQC/basecallQC_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="ad61b901f8e533f817dccfb4830b222a")
+	version("1.26.0", sha256="fae6a98de6fb1d5bdc0d017a0b053584d247eb8791aa723a22ffabf5f3ca652a")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-rmarkdown", type=("build", "run"))

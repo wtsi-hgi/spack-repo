@@ -15,7 +15,7 @@ class RChipseqr(RPackage):
 	bioc = "ChIPseqR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPseqR_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPseqR/ChIPseqR_1.56.0.tar.gz"]
 
-	version("1.56.0", md5="8696d6a783d26d8c6225ec4e3f294110")
+	version("1.56.0", sha256="1672238b11a32e9b4b15e83b17a6f5de918b1cf153785e0ab5d8d6cfc5163dd4")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

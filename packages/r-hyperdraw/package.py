@@ -15,7 +15,7 @@ class RHyperdraw(RPackage):
 	bioc = "hyperdraw" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hyperdraw_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hyperdraw/hyperdraw_1.54.0.tar.gz"]
 
-	version("1.54.0", md5="2b1ec2cf9ea920a241f821baa08bb393")
+	version("1.54.0", sha256="653ee6560afcb13b5af4874a4578278289f207eeb73d43e6a32581e312bfeed1")
 
 	depends_on("r@2.9:", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

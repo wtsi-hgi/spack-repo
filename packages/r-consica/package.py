@@ -15,7 +15,7 @@ class RConsica(RPackage):
 	bioc = "consICA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/consICA_2.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/consICA/consICA_2.0.0.tar.gz"]
 
-	version("2.0.0", md5="b64f871ca062dc65d6a883b000c761d8")
+	version("2.0.0", sha256="a060585fce661c118a243d23b36fd0530dd9b6b74ecca7cc4235c09d380f2276")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-fastica@1.2.1:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RDoubletrouble(RPackage):
 	bioc = "doubletrouble" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/doubletrouble_1.2.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/doubletrouble/doubletrouble_1.2.5.tar.gz"]
 
-	version("1.2.5", md5="58b33ed625e84743150590ce3a524cc7")
+	version("1.2.5", sha256="c3cace241c65ea2577d4346f967a363defbedb661bb0cc0a07337c275296aafd")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-syntenet", type=("build", "run"))

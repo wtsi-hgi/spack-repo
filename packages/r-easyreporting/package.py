@@ -15,7 +15,7 @@ class REasyreporting(RPackage):
 	bioc = "easyreporting" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/easyreporting_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/easyreporting/easyreporting_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="cffad8bbd7df1cd9ac54b4605a0c555e")
+	version("1.14.0", sha256="918da29b5682f8956f6be279a07fe1b44f795367b023a26dca0a23b683965a78")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rmarkdown", type=("build", "run"))

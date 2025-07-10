@@ -15,7 +15,7 @@ class RProbamr(RPackage):
 	bioc = "proBAMr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/proBAMr_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/proBAMr/proBAMr_1.36.0.tar.gz"]
 
-	version("1.36.0", md5="0b5a894a54fb0d56f940b75e025c0d47")
+	version("1.36.0", sha256="3984b967cc0b8e5a853b7a2029fc6a996ac7fb55edae5569f4d33b8bc866c04a")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

@@ -16,7 +16,7 @@ class RHem(RPackage):
 	bioc = "HEM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HEM_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HEM/HEM_1.74.0.tar.gz"]
 
-	version("1.74.0", md5="3ad1825d95504eaf9e2bcad8438816f5")
+	version("1.74.0", sha256="58cba3031e2454c122bacbcf3e20fd215bb2650bea46c3eb0941900fe31131fe")
 
 	depends_on("r@2.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

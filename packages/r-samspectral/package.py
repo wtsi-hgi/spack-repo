@@ -15,6 +15,6 @@ class RSamspectral(RPackage):
 	bioc = "SamSPECTRAL" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SamSPECTRAL_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SamSPECTRAL/SamSPECTRAL_1.56.0.tar.gz"]
 
-	version("1.56.0", md5="2724bc54054c093fac88a672a6b173d6")
+	version("1.56.0", sha256="49814844e37282fde405c3217ae222637583a0a0ca4f3008194b148f576b74f0")
 
 	depends_on("r@3.3.3:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RCexor(RPackage):
 	bioc = "CexoR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CexoR_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CexoR/CexoR_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="53f7febbb51a7f925322329e89a8d619")
+	version("1.40.0", sha256="c464cda22f9c2d96a0069ce77498162ccf83bc75dda7360b45c0ccfaea26cb65")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

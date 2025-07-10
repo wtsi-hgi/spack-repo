@@ -15,7 +15,7 @@ class RLumiratallDb(RPackage):
 	bioc = "lumiRatAll.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/lumiRatAll.db_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/lumiRatAll.db/lumiRatAll.db_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="65027624574d5e33f18b0a54a54f4be9")
+	version("1.22.0", sha256="86bff00b4a2c7c9ca2f3e76569c01fb0232b61059b00092fb1ba8fc115c200fa")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

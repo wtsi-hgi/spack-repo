@@ -15,7 +15,7 @@ class RAtaccogaps(RPackage):
 	bioc = "ATACCoGAPS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ATACCoGAPS_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ATACCoGAPS/ATACCoGAPS_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="f8cf8dd559b05caf23934090510297de")
+	version("1.4.0", sha256="caaeb2de0ecf051edce19095d387547617d7d500ed606205293b029d364c2aed")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-cogaps@3.5.13:", type=("build", "run"))

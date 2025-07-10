@@ -15,7 +15,7 @@ class RHgu95av2(RPackage):
 	bioc = "hgu95av2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu95av2_2.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu95av2/hgu95av2_2.2.0.tar.gz"]
 
-	version("2.2.0", md5="b92585c0f43e91bd1abd234b9465a6a7", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu95av2_2.2.0.tar.gz")
+	version("2.2.0", sha256="112f14d6c385603fbbb46ede313abb3eaa61288350f1ff44f7096d907c532ba0", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu95av2_2.2.0.tar.gz")
 
 	depends_on("r@2.4:", type=("build", "run"))
 

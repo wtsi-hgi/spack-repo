@@ -16,7 +16,7 @@ class RRaer(RPackage):
 	bioc = "raer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/raer_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/raer/raer_1.0.2.tar.gz"]
 
-	version("1.0.2", md5="da2d27f76962c7d534f36f05815670d3")
+	version("1.0.2", sha256="23506fd79e77bbf8f0f29696c3a8d4049da6c6556801a0e7b51de60af685024a")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

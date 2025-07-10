@@ -16,7 +16,7 @@ class RFlowploidy(RPackage):
 	bioc = "flowPloidy" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowPloidy_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowPloidy/flowPloidy_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="1020981a0f645d2dcbf1a38a3e42b7e0")
+	version("1.28.0", sha256="3078a349c1c365eb2d2cebcd1e947b5c554104396e84a3dc34e98aeb7456f5e6")
 
 	depends_on("r-flowcore", type=("build", "run"))
 	depends_on("r-car", type=("build", "run"))

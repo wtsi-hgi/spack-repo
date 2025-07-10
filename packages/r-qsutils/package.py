@@ -15,7 +15,7 @@ class RQsutils(RPackage):
 	bioc = "QSutils" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QSutils_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QSutils/QSutils_1.20.0.tar.gz"]
 
-	version("1.20.0", md5="3a1816762d5d0d26145c352281211f80")
+	version("1.20.0", sha256="d964b12cf00cdf9ca665bddc2e56083b3a5e6a2751e5605790c7ce7894ac238c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

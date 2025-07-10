@@ -15,7 +15,7 @@ class RRoberts2005annotationDb(RPackage):
 	bioc = "Roberts2005Annotation.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Roberts2005Annotation.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Roberts2005Annotation.db/Roberts2005Annotation.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="fb28aaf1a1e0c81cf936badc674b754a")
+	version("3.2.3", sha256="ea195971251cf045fd6f0bfc6784aacf76e73c04c82856f2fac79ad10d2b89b9")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

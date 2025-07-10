@@ -15,7 +15,7 @@ class RPdCelegans(RPackage):
 	bioc = "pd.celegans" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.celegans_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.celegans/pd.celegans_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="b90ea2e071522bb340c103a1c8270205")
+	version("3.12.0", sha256="ed7efadd317fd53cafef06598826c9eb8c7945992884b467a4cd2dbb7b617e21")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

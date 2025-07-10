@@ -15,7 +15,7 @@ class RRicecdf(RPackage):
 	bioc = "ricecdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ricecdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ricecdf/ricecdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="51db6f51f4adcfb7f4940d07668db8b8")
+	version("2.18.0", sha256="dabee6b72b2f9f5619e03ef579f198c874f1208a2c4836d7d6594c3a73e29a1e")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

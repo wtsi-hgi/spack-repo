@@ -16,7 +16,7 @@ class RClustifyrdatahub(RPackage):
 	bioc = "clustifyrdatahub" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/clustifyrdatahub_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/clustifyrdatahub/clustifyrdatahub_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="aac4529e5c0d71fdc49bda51c3915f61")
+	version("1.12.0", sha256="a45fd426aa4f27597e4d99d2652aab2a45f50f24f723467b8cddab1392368f00")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

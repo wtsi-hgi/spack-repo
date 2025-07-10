@@ -16,7 +16,7 @@ class RTargetdecoy(RPackage):
 	bioc = "TargetDecoy" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TargetDecoy_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TargetDecoy/TargetDecoy_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="ff49065b40e049f06bbe1ad9c74200fc")
+	version("1.8.0", sha256="4b8227607d39b7e98fd69726f47ab10cfda5c08af21b94359b47fa3583d0c40f")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

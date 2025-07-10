@@ -15,7 +15,7 @@ class RRgu34cprobe(RPackage):
 	bioc = "rgu34cprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rgu34cprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rgu34cprobe/rgu34cprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="d1a6c433acd30b95fa7be89147105b74")
+	version("2.18.0", sha256="38b809538157d079c9de4085fb6f0bb2b3489f8e2605cd1f81cab05df0826903")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RCbea(RPackage):
 	bioc = "CBEA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CBEA_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CBEA/CBEA_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="20761b06df9cf37c59172508ff8cd01d")
+	version("1.2.0", sha256="2bed418b6ab50f544301fee54b840522cdd47354951923b3f38d3428c55de670")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

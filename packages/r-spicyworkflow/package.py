@@ -16,7 +16,7 @@ class RSpicyworkflow(RPackage):
 	bioc = "spicyWorkflow" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/spicyWorkflow_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/spicyWorkflow/spicyWorkflow_1.2.1.tar.gz"]
 
-	version("1.2.1", md5="dc3f961321f6bc9a2382311929955574")
+	version("1.2.1", sha256="9e3448c1b3ca87021a61cbaa312ec0d85cfa8581f139c4e8e2f16ed066dba71c")
 
 	depends_on("r@4.3:", type=("build", "run"))
 

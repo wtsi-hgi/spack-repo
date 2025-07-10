@@ -15,7 +15,7 @@ class RXlaevis2cdf(RPackage):
 	bioc = "xlaevis2cdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/xlaevis2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/xlaevis2cdf/xlaevis2cdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="9e4a80d66397299b4e66a8d6715ca4aa")
+	version("2.18.0", sha256="e83c5094e216a0d2bec14893ebd0ff89063f646f80202f1d5dcf55e0ca37eef0")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

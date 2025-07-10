@@ -15,7 +15,7 @@ class RRegionalst(RPackage):
 	bioc = "RegionalST" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RegionalST_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RegionalST/RegionalST_1.0.1.tar.gz"]
 
-	version("1.0.1", md5="d9589bef7f1408c77dee510baa14b4ad")
+	version("1.0.1", sha256="9b832b2a0632be30a2b81f92ded3305df89abb9f4a2aacecdad8935ddd52a4a1")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

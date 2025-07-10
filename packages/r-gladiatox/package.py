@@ -15,7 +15,7 @@ class RGladiatox(RPackage):
 	bioc = "GladiaTOX" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GladiaTOX_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GladiaTOX/GladiaTOX_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="a8affcce15bf1f5e9d03220e0de3fbe9")
+	version("1.18.0", sha256="564c1662530f9d677157ee093bf81768e01f18550a49e7448fa9c44b64100b06")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-data-table@1.9.4:", type=("build", "run"))

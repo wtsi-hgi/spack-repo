@@ -16,7 +16,7 @@ class RIseeindex(RPackage):
 	bioc = "iSEEindex" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEEindex_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEEindex/iSEEindex_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="98a9141431a3206fd242b5b0b4056c41")
+	version("1.0.0", sha256="2ddc239f24412bd695a254396c007da20143db112374f988cb0e0860bbb5e3e2")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

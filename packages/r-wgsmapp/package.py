@@ -15,7 +15,7 @@ class RWgsmapp(RPackage):
 	bioc = "WGSmapp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/WGSmapp_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/WGSmapp/WGSmapp_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="dfc3f5a82d532551e2d6c21b11c99566")
+	version("1.14.0", sha256="092ab7831cb3ee7c04aeb4f7738e2476f514beea01cadf807001993deb10637b")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

@@ -16,7 +16,7 @@ class RFmcsr(RPackage):
 	bioc = "fmcsR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fmcsR_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fmcsR/fmcsR_1.44.0.tar.gz"]
 
-	version("1.44.0", md5="21a6242a61cba8dd537bf846af3260c3")
+	version("1.44.0", sha256="cd42c4ab473a52595dc8b32a57b83c06f3d0a5029f0615c921f4a918624d349e")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-chemminer", type=("build", "run"))

@@ -15,7 +15,7 @@ class RLungexpression(RPackage):
 	bioc = "lungExpression" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/lungExpression_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/lungExpression/lungExpression_0.40.0.tar.gz"]
 
-	version("0.40.0", md5="35eab717cb2e24c92faf417ad7fb9cb8")
+	version("0.40.0", sha256="0c0b95295e7a81fb36574756d86827a9d1f38b74baf49fec8c00ea443545eecf")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

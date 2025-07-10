@@ -15,7 +15,7 @@ class RSsize(RPackage):
 	bioc = "ssize" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ssize_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ssize/ssize_1.76.0.tar.gz"]
 
-	version("1.76.0", md5="b61fbe78b68fecd3090e1c658a284b83")
+	version("1.76.0", sha256="1cb6061432220cf41a857b05a8c0998ff4555c4fd862b8e0afbfb489250bc42e")
 
 	depends_on("r-gdata", type=("build", "run"))
 	depends_on("r-xtable", type=("build", "run"))

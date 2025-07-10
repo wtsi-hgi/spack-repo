@@ -15,7 +15,7 @@ class RMouse430a2cdf(RPackage):
 	bioc = "mouse430a2cdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mouse430a2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mouse430a2cdf/mouse430a2cdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="1114c0415d1200bc21ad205e0830b075")
+	version("2.18.0", sha256="36273afaae75a624899d93b411c815262366a969044d3551a3b8934bbdfd6014")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

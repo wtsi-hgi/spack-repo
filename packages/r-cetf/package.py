@@ -15,7 +15,7 @@ class RCetf(RPackage):
 	bioc = "CeTF" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CeTF_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CeTF/CeTF_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="b79bf3680b81b7b6945eef89f6babfc1")
+	version("1.14.0", sha256="d250a6de29f0705dc4abee5987615c61173aa8508312c9e54c33b46379ab4087")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-circlize", type=("build", "run"))

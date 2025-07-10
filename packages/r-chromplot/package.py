@@ -15,7 +15,7 @@ class RChromplot(RPackage):
 	bioc = "chromPlot" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chromPlot_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chromPlot/chromPlot_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="a9a3e6d499f082698be0bf88f6432103")
+	version("1.30.0", sha256="fee0aa9c4fa3ff8c82d06192897a9928491f45157056583d2f19bf98028d18f7")
 
 	depends_on("r-biomart", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

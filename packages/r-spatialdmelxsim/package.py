@@ -16,7 +16,7 @@ class RSpatialdmelxsim(RPackage):
 	bioc = "spatialDmelxsim" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/spatialDmelxsim_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/spatialDmelxsim/spatialDmelxsim_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="2fec38c7672022e76f2b7a7ba7b9a677")
+	version("1.8.0", sha256="6b2dfe6fd54a077dce20426859c9b56252e83c4cfa42b7e2801561bddab60a84")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

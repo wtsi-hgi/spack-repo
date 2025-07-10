@@ -16,7 +16,7 @@ class RVariantfiltering(RPackage):
 	bioc = "VariantFiltering" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VariantFiltering_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VariantFiltering/VariantFiltering_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="af4ddac4cfb857eea4db9309da6de07d")
+	version("1.38.0", sha256="597f0bef39c64106029475bfdfe9748fa794d6b1c1fb49c8c6a8e2df10ea9f05")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.25.1:", type=("build", "run"))

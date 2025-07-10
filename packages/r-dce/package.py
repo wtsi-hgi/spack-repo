@@ -16,7 +16,7 @@ class RDce(RPackage):
 	bioc = "dce" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dce_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dce/dce_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="dbebdd246ea193f92c1a466a84617876")
+	version("1.10.0", sha256="2ce61401088157306407c4c7e8c4c4bb07b7eccc9e884cf30f30b04b8409d077")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

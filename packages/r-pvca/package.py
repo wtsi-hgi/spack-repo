@@ -15,7 +15,7 @@ class RPvca(RPackage):
 	bioc = "pvca" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pvca_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pvca/pvca_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="dcc72a578e6ec7d738fab213c4d27e20")
+	version("1.42.0", sha256="6cf37e1570c5885f2e9980a8187f00ad5ecba66c94fea60850392dbcb0474d50")
 
 	depends_on("r@2.15.1:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

@@ -15,7 +15,7 @@ class RDta(RPackage):
 	bioc = "DTA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DTA_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DTA/DTA_2.48.0.tar.gz"]
 
-	version("2.48.0", md5="58705aacdbf08c61d4713273dbd9bc6f")
+	version("2.48.0", sha256="92879b39f654b9e4b7d09bd35b377765220b393d66c6422f29b7b2042ad8aafa")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-lsd", type=("build", "run"))

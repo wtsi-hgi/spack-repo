@@ -16,7 +16,7 @@ class RIbbig(RPackage):
 	bioc = "iBBiG" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iBBiG_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iBBiG/iBBiG_1.46.0.tar.gz"]
 
-	version("1.46.0", md5="6114f0b7d488fd60923a6607bf2d59f2")
+	version("1.46.0", sha256="5aaa1252ef2969ac5c9fb1f14be2049baf1938c165a432dee20b0f8abc1ba896")
 
 	depends_on("r-biclust", type=("build", "run"))
 	depends_on("r-xtable", type=("build", "run"))

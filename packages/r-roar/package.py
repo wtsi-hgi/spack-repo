@@ -16,7 +16,7 @@ class RRoar(RPackage):
 	bioc = "roar" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/roar_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/roar/roar_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="563dcc245ffbc288c2e6ec9a9c138faa")
+	version("1.38.0", sha256="b94dc3af199b1ffc6377d7cacaf3316f51b3496ab7a4657b067551dcbe992b5e")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

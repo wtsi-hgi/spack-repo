@@ -15,7 +15,7 @@ class RMina(RPackage):
 	bioc = "mina" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mina_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mina/mina_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="d6578736bef864eef8f89958a849137b")
+	version("1.10.0", sha256="8802480f322d82a3619d4166155040df3c031e57de8f9b193a44b34cbe5cf61f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -16,7 +16,7 @@ class RCellarepertorium(RPackage):
 	bioc = "CellaRepertorium" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellaRepertorium_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellaRepertorium/CellaRepertorium_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="eceb5905cee5e0f9b9ba1ea47db2f1d3")
+	version("1.12.0", sha256="022eda8fa8ffdb44f2aaed776d62d8de4db08b61acae797f2048bcb400ec3a4d")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

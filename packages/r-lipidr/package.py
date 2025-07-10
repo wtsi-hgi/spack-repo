@@ -16,7 +16,7 @@ class RLipidr(RPackage):
 	bioc = "lipidr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lipidr_2.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lipidr/lipidr_2.16.0.tar.gz"]
 
-	version("2.16.0", md5="27b17acc2b4de0439304799e0a7cba2a")
+	version("2.16.0", sha256="70d50565ac979043cc896673989334d5878d95e5b7cf27a93e6db4510a213acb")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

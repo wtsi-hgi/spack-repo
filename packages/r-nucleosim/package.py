@@ -16,7 +16,7 @@ class RNucleosim(RPackage):
 	bioc = "nucleoSim" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nucleoSim_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nucleoSim/nucleoSim_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="b1b994c654ce500e414a8a7caea5162f")
+	version("1.30.0", sha256="efb92f4d9fa84cbedcca21cca593cdbb6008663701707aad76cf197c52b70ea8")
 
 	depends_on("r-iranges", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

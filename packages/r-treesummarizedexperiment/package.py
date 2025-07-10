@@ -15,7 +15,7 @@ class RTreesummarizedexperiment(RPackage):
 	bioc = "TreeSummarizedExperiment" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TreeSummarizedExperiment_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TreeSummarizedExperiment/TreeSummarizedExperiment_2.10.0.tar.gz"]
 
-	version("2.10.0", md5="595842345af9cb4136aea17bdfdceb3f")
+	version("2.10.0", sha256="cf7cd38f3199dc9324b6dbedd40ce2fae4c910abd0b11c41d7eaaa1d698f78fb")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

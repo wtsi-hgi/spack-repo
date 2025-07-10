@@ -16,7 +16,7 @@ class RDesingle(RPackage):
 	bioc = "DEsingle" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEsingle_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEsingle/DEsingle_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="6969e960919434ccd6e5b9bdd926aece")
+	version("1.22.0", sha256="69716feaa2c344a6325b148f3648609fcf58e8e3e87c11a7cb27ff6a017fca2d")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-matrix@1.2.14:", type=("build", "run"))

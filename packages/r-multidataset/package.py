@@ -15,7 +15,7 @@ class RMultidataset(RPackage):
 	bioc = "MultiDataSet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MultiDataSet_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MultiDataSet/MultiDataSet_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="304e6d8ccbb54c446f43f2df5e13f530")
+	version("1.30.0", sha256="538bb2f976ae8d750d08e7b53ae468612e52a548db5ffcb6a4139624ff5d27d8")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

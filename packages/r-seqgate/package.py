@@ -15,7 +15,7 @@ class RSeqgate(RPackage):
 	bioc = "SeqGate" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SeqGate_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SeqGate/SeqGate_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="786d9cf0f14de2b0056b9207daedbf45")
+	version("1.12.0", sha256="63c32370dcd8f96edef04104858dffe3714f30b4bae38687962fe01834df7e5e")
 
 	depends_on("r-s4vectors", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

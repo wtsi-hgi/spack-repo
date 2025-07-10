@@ -15,6 +15,6 @@ class RMetahdep(RPackage):
 	bioc = "metahdep" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metahdep_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metahdep/metahdep_1.60.0.tar.gz"]
 
-	version("1.60.0", md5="578b66621982372185989aa8559f8293")
+	version("1.60.0", sha256="fba9b055ecbf7ccc142946adf47634d505ef1baae3a640f89f0db094da0fa941")
 
 	depends_on("r@2.10:", type=("build", "run"))

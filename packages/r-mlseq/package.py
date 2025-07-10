@@ -15,7 +15,7 @@ class RMlseq(RPackage):
 	bioc = "MLSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MLSeq_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MLSeq/MLSeq_2.20.0.tar.gz"]
 
-	version("2.20.0", md5="07ebcff7e7a474bc21b783a6ebc2605b")
+	version("2.20.0", sha256="36423307cbd00065553a19ddd68dc893beaa35a9e4ce05e7f6f43a8f7fe4d8e0")
 
 	depends_on("r-caret", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMbkmeans(RPackage):
 	bioc = "mbkmeans" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mbkmeans_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mbkmeans/mbkmeans_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="1bd55f0f927fea250caa1a8264e3013c")
+	version("1.18.0", sha256="341183753aff71b14282463244617c5d12c8dfb5302d40b8f81109ed64fceaf4")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-delayedarray", type=("build", "run"))

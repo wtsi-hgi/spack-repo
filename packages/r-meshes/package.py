@@ -16,7 +16,7 @@ class RMeshes(RPackage):
 	bioc = "meshes" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/meshes_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/meshes/meshes_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="90be6eeeb3ced1146ddcba48e2ec6c6e")
+	version("1.28.0", sha256="72c41248c61988c85665380659bdbdc7f45055fcb466831a8ac55d89d3313450")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

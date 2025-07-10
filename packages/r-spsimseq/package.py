@@ -16,7 +16,7 @@ class RSpsimseq(RPackage):
 	bioc = "SPsimSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SPsimSeq_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SPsimSeq/SPsimSeq_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="1ccc188618b92dcf94489a00d7faa5b4")
+	version("1.12.0", sha256="164769088f5a29ec68459cbacc99a101dfd2195d407dca823f95fafe1b34d031")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

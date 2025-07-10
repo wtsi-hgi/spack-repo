@@ -15,7 +15,7 @@ class RCager(RPackage):
 	bioc = "CAGEr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CAGEr_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CAGEr/CAGEr_2.8.0.tar.gz"]
 
-	version("2.8.0", md5="845c3a47631734b6fe7209f173e24100")
+	version("2.8.0", sha256="78f0d302723f0fd6bb7ab86aaf545857576767359a45215e457c4fe65a5a2a8c")
 
 	depends_on("r-multiassayexperiment", type=("build", "run"))
 	depends_on("r@4.1:", type=("build", "run"))

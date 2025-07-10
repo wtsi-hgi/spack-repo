@@ -15,7 +15,7 @@ class RBacon(RPackage):
 	bioc = "bacon" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bacon_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bacon/bacon_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="3757e896d5a8253845a21e37e555044a")
+	version("1.30.0", sha256="3fefebef717d5f6acf7882a6e476d187e87512c9a35a9208027d85585c27ab18")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

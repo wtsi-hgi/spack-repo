@@ -15,7 +15,7 @@ class RPdSoygene10St(RPackage):
 	bioc = "pd.soygene.1.0.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.soygene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.soygene.1.0.st/pd.soygene.1.0.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="b264df0648ec35d04f91e0ef8e26ac95")
+	version("3.12.0", sha256="ac7bd2ea5e834aad5933205fb864ad44d9c3999cb5b8c06f7f6d46a2ea05e9c1")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

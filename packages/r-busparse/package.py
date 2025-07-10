@@ -16,7 +16,7 @@ class RBusparse(RPackage):
 	bioc = "BUSpaRse" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BUSpaRse_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BUSpaRse/BUSpaRse_1.16.1.tar.gz"]
 
-	version("1.16.1", md5="9c38c2c97db1985eedfc656beaf5e07e")
+	version("1.16.1", sha256="4b27e5cf3c45fa99f04e63b6079c402977b9f6e143c473075266b6c136100cf3")
 	version("1.16.0", md5="7d2decd570fd518ad9a06c10a5ecffb3")
 
 	depends_on("r@3.6:", type=("build", "run"))

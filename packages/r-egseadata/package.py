@@ -15,7 +15,7 @@ class REgseadata(RPackage):
 	bioc = "EGSEAdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/EGSEAdata_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/EGSEAdata/EGSEAdata_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="838b30ae6caf7c3cbb854e0404b52cda")
+	version("1.30.0", sha256="913ed4debf4ced5c7a5301e22bef10fd80c06b559f15609c748d85bf390e4854")
 
 	depends_on("r@3.4:", type=("build", "run"))
 

@@ -15,6 +15,6 @@ class RMatchbox(RPackage):
 	bioc = "matchBox" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/matchBox_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/matchBox/matchBox_1.44.0.tar.gz"]
 
-	version("1.44.0", md5="b6e4b10ee38f433d1bce146a089a44ec")
+	version("1.44.0", sha256="3191d06eae4802bcd3e3eab87a15c2ddaae29c46bf1907026cfa8782e86eb1a0")
 
 	depends_on("r@2.8:", type=("build", "run"))

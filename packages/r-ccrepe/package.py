@@ -15,6 +15,6 @@ class RCcrepe(RPackage):
 	bioc = "ccrepe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ccrepe_1.38.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ccrepe/ccrepe_1.38.1.tar.gz"]
 
-	version("1.38.1", md5="151d956c2fbdaaf64fccbea7f4905a2d")
+	version("1.38.1", sha256="783d15800b679ff8387ca68f43500767b1d16daf740d46c115c1f8bc3eec70c2")
 
 	depends_on("r-infotheo@1.1:", type=("build", "run"))

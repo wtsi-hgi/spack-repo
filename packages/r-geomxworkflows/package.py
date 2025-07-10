@@ -15,7 +15,7 @@ class RGeomxworkflows(RPackage):
 	bioc = "GeoMxWorkflows" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/GeoMxWorkflows_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/GeoMxWorkflows/GeoMxWorkflows_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="fc6e568329ba05dc32a0ab14bc3d23b5")
+	version("1.8.0", sha256="63f8f7147a90ef44e3d02f5c01252fff9f02a2d22f05e1f22ef4770bc0dab4ed")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-nanostringnctools", type=("build", "run"))

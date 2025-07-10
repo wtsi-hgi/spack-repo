@@ -15,7 +15,7 @@ class RSummix(RPackage):
 	bioc = "Summix" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Summix_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Summix/Summix_2.8.0.tar.gz"]
 
-	version("2.8.0", md5="74d3140f7f5db9a648955b81abdfb769")
+	version("2.8.0", sha256="776e29e4eaf7fa3d24180bb656f9543a6fabd83095adfa109279425af8827125")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-nloptr", type=("build", "run"))

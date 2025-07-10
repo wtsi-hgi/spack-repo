@@ -15,7 +15,7 @@ class RSinglecellsignalr(RPackage):
 	bioc = "SingleCellSignalR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SingleCellSignalR_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SingleCellSignalR/SingleCellSignalR_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="d00060a859db9cd8c87ce9673cc9d886")
+	version("1.14.0", sha256="10d81f52a70418767e273289b7fbfb8f8ae6ee87bfeb58f5687c2e6083390e79")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biocmanager", type=("build", "run"))

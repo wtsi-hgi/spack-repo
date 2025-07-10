@@ -15,7 +15,7 @@ class RRattusNorvegicus(RPackage):
 	bioc = "Rattus.norvegicus" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Rattus.norvegicus_1.3.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Rattus.norvegicus/Rattus.norvegicus_1.3.1.tar.gz"]
 
-	version("1.3.1", md5="5692fdeb0bc7f94e1db35f097cad99a9")
+	version("1.3.1", sha256="c109153b1dbcdbc9e071e4767028c918b3d3a7551d562190db52d02d4b3ced2e")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

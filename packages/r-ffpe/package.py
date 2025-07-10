@@ -15,7 +15,7 @@ class RFfpe(RPackage):
 	bioc = "ffpe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ffpe_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ffpe/ffpe_1.46.0.tar.gz"]
 
-	version("1.46.0", md5="c2a3dbd53e85caf82d7c8f91a8277454")
+	version("1.46.0", sha256="0e3670912a7844c23ac57f948f3ba0bb733eb6a6dcc127269e5d36daf711abda")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-ttr", type=("build", "run"))

@@ -16,7 +16,7 @@ class RDegreport(RPackage):
 	bioc = "DEGreport" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEGreport_1.38.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEGreport/DEGreport_1.38.5.tar.gz"]
 
-	version("1.38.5", md5="c244b736c180d78d142dd00938f7d40f")
+	version("1.38.5", sha256="bf88efb88eb0f49ae2d34e65b7b560443fc838108b9a240f1f47b5c014200d68")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

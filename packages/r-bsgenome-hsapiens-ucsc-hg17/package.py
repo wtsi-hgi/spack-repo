@@ -15,7 +15,7 @@ class RBsgenomeHsapiensUcscHg17(RPackage):
 	bioc = "BSgenome.Hsapiens.UCSC.hg17" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg17_1.3.1000.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Hsapiens.UCSC.hg17/BSgenome.Hsapiens.UCSC.hg17_1.3.1000.tar.gz"]
 
-	version("1.3.1000", md5="cbea3029c3d3125a88e6c061c3d3abde", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg17_1.3.1000.tar.gz")
+	version("1.3.1000", sha256="8307fd53f84615191d2ff2ce3930592d95c0a01cf479cbed17e2de5eee0717e1", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg17_1.3.1000.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 

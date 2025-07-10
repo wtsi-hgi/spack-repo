@@ -15,7 +15,7 @@ class RDdct(RPackage):
 	bioc = "ddCt" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ddCt_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ddCt/ddCt_1.58.0.tar.gz"]
 
-	version("1.58.0", md5="560588380b356d55a4e11811ae9100e6")
+	version("1.58.0", sha256="65a9ffeb5afacba0de8430b7196914572dccde47fe9924e70a89bbb86466f3d1")
 
 	depends_on("r@2.3:", type=("build", "run"))
 	depends_on("r-biobase@1.10:", type=("build", "run"))

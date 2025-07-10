@@ -16,7 +16,7 @@ class RBgeedb(RPackage):
 	bioc = "BgeeDB" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BgeeDB_2.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BgeeDB/BgeeDB_2.28.0.tar.gz"]
 
-	version("2.28.0", md5="9b8f5e9e829bd05d9a8322b3ff3408dd")
+	version("2.28.0", sha256="d6e62249a3d00f6f288ea6ddf4e1100433d1be67417980a14f8fc3c883b811aa")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-topgo", type=("build", "run"))

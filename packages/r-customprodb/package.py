@@ -15,7 +15,7 @@ class RCustomprodb(RPackage):
 	bioc = "customProDB" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/customProDB_1.42.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/customProDB/customProDB_1.42.1.tar.gz"]
 
-	version("1.42.1", md5="e15acd30625fe6d1cd3abfc8e0f3b902")
+	version("1.42.1", sha256="28be9c341aa2bc3e2c89560f041c5c3c23e6018de4591949f91a22043b3b51fc")
 	version("1.41.0", md5="08f0eb20ac48a7b8f1e27b45522dd029")
 
 	depends_on("r@3.5:", type=("build", "run"))

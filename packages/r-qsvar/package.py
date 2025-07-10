@@ -16,7 +16,7 @@ class RQsvar(RPackage):
 	bioc = "qsvaR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qsvaR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qsvaR/qsvaR_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="e9531cc164f93967a5d5d0469d47f7c7")
+	version("1.6.0", sha256="4cf3c4b26e421aed9f6c536fbe48cc21ea14d887311f3a4c46a58e38b94201d8")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

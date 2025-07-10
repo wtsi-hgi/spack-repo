@@ -16,7 +16,7 @@ class RAntiprofiles(RPackage):
 	bioc = "antiProfiles" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/antiProfiles_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/antiProfiles/antiProfiles_1.42.0.tar.gz"]
 
-	version("1.42.0", md5="80b3c1174d02d3b00b3ebf5d14a75b90")
+	version("1.42.0", sha256="04905d3f407cd1968678937aef63859f37f03528102bde53caa9da8700f69f92")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-matrixstats@0.50:", type=("build", "run"))

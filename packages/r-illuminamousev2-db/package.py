@@ -15,7 +15,7 @@ class RIlluminamousev2Db(RPackage):
 	bioc = "illuminaMousev2.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/illuminaMousev2.db_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/illuminaMousev2.db/illuminaMousev2.db_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="fba228a71f264f976d8cdb035861974d")
+	version("1.26.0", sha256="03864df588d7261db6923d0d7cccdd9bbb753ce60e4cdf92ba2bc3ea1318916f")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

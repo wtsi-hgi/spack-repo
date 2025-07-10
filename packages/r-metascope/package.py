@@ -19,7 +19,7 @@ class RMetascope(RPackage):
         "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MetaScope/MetaScope_1.2.0.tar.gz",
     ]
 
-    version("1.2.0", md5="3e9dbacc12fa3bd332773ffa95325f0b")
+    version("1.2.0", sha256="2a34c164237d9a5117a30aa3db42800f8e3637bb6bc98572e26c37fa0714f772")
 
     depends_on("r@4.3:", type=("build", "run"))
     depends_on("r-biocfilecache", type=("build", "run"))

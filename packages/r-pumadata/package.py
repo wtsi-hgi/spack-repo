@@ -16,7 +16,7 @@ class RPumadata(RPackage):
 	bioc = "pumadata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/pumadata_2.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/pumadata/pumadata_2.38.0.tar.gz"]
 
-	version("2.38.0", md5="811d6234d1d4e310beb7111601b157b7")
+	version("2.38.0", sha256="1dcc0352e5b8c55c3d7694ea23b7096b0736548790f9eac333620c3d54c38265")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

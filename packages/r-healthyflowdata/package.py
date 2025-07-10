@@ -15,7 +15,7 @@ class RHealthyflowdata(RPackage):
 	bioc = "healthyFlowData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/healthyFlowData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/healthyFlowData/healthyFlowData_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="ed0a9c99295e278a8445368a2cb226df")
+	version("1.40.0", sha256="9d4f6673ac1ab45c414a31bafa1c56afc37e4bf9502043a3253fda89ea7826f1")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

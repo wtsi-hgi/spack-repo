@@ -15,7 +15,7 @@ class RMeb(RPackage):
 	bioc = "MEB" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MEB_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MEB/MEB_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="b1785984524fee5b32976a5e768037d6")
+	version("1.16.0", sha256="0f69b4e7b47586c6bd8f5202ee1b982db39cc1168f283d4b52a7d1c23d1b6ea3")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-e1071", type=("build", "run"))

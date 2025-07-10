@@ -15,7 +15,7 @@ class RChipcomp(RPackage):
 	bioc = "ChIPComp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPComp_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPComp/ChIPComp_1.32.0.tar.gz"]
 
-	version("1.32.0", md5="5294eab6ada6b66e52935843dd9acc6b")
+	version("1.32.0", sha256="c9cb36b4d36da2be479fcbe91362eb6da8b4140951a7e09869cab39cc3172d18")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

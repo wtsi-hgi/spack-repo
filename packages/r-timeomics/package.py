@@ -15,7 +15,7 @@ class RTimeomics(RPackage):
 	bioc = "timeOmics" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/timeOmics_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/timeOmics/timeOmics_1.14.0.tar.gz"]
 
-	version("1.14.0", md5="ddea6709cf6d8d977b998f458e7938fb")
+	version("1.14.0", sha256="c518ac5fc3b979f652b9eda376f00dbbf716a764a20cdb6dbf76699337a8a887")
 
 	depends_on("r-mixomics", type=("build", "run"))
 	depends_on("r@4:", type=("build", "run"))

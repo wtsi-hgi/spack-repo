@@ -15,7 +15,7 @@ class RPdBovgene10St(RPackage):
 	bioc = "pd.bovgene.1.0.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.bovgene.1.0.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.bovgene.1.0.st/pd.bovgene.1.0.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="6e9747d13aee7825722562ccc49ad35f")
+	version("3.12.0", sha256="60ac63c670bc5f249e512276bc81c726e1b2dcbf6056985dbeef1fd66e0ada03")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

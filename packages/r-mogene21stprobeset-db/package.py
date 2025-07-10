@@ -15,7 +15,7 @@ class RMogene21stprobesetDb(RPackage):
 	bioc = "mogene21stprobeset.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mogene21stprobeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mogene21stprobeset.db/mogene21stprobeset.db_8.8.0.tar.gz"]
 
-	version("8.8.0", md5="d6b3c352329b46493a20f6c27db05d43")
+	version("8.8.0", sha256="e50383ad581fd6da67dd4a9bca16cfc6117eb1e81c6fc497391f168ef1874b9c")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

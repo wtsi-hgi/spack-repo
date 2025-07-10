@@ -15,7 +15,7 @@ class RRedseq(RPackage):
 	bioc = "REDseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/REDseq_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/REDseq/REDseq_1.48.0.tar.gz"]
 
-	version("1.48.0", md5="f20e437ad9c48683bdaeda1825f87f85")
+	version("1.48.0", sha256="e9ee17ee2694bab149d453d885db55fcc3261d3e4035dcb7b39ca37b6b6264d9")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

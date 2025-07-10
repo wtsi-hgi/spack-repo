@@ -15,7 +15,7 @@ class RRain(RPackage):
 	bioc = "rain" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rain_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rain/rain_1.36.0.tar.gz"]
 
-	version("1.36.0", md5="e523c08337422230710fd1f2a5a392cd")
+	version("1.36.0", sha256="be4abaf00359a79fcafd2d18ac5b932c7ac12c4fb32edb2e0ed536e9e144c931")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-gmp", type=("build", "run"))

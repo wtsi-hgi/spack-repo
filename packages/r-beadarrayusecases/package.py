@@ -15,7 +15,7 @@ class RBeadarrayusecases(RPackage):
 	bioc = "BeadArrayUseCases" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BeadArrayUseCases_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/BeadArrayUseCases/BeadArrayUseCases_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="a939c03744773755b9a80de63a925c3e")
+	version("1.40.0", sha256="3ed2083d2761d9a59f24ab4bfe2bdb24500e77d92e6c2e5f22f6632ead465914")
 
 	depends_on("r-beadarray@2.3.18:", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

@@ -16,7 +16,7 @@ class RScmerge(RPackage):
 	bioc = "scMerge" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scMerge_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scMerge/scMerge_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="d5b285890500ad5c781d33ab45282aca")
+	version("1.18.0", sha256="843f5be76d286c63eeb0c4f06c34c7cd75765904adce97c01c0c02f07549aac8")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

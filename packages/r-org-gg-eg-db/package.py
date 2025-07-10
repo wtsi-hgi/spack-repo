@@ -15,7 +15,7 @@ class ROrgGgEgDb(RPackage):
 	bioc = "org.Gg.eg.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Gg.eg.db_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.Gg.eg.db/org.Gg.eg.db_3.18.0.tar.gz"]
 
-	version("3.18.0", md5="4ebcbfb0baeee3332a2a07aeae2402a9")
+	version("3.18.0", sha256="cba7b6f3ac54250323c64dd50e9c6f7f2a27659de3ee7342b36143ef99ecb70c")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))

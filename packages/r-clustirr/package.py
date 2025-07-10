@@ -16,7 +16,7 @@ class RClustirr(RPackage):
 	bioc = "ClustIRR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ClustIRR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ClustIRR/ClustIRR_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="ffd1884844b297c2e593e465a776fb6d")
+	version("1.0.0", sha256="f54c2788eed171e691476b2113665749eb5880c10c138aec71f07577f135b8e7")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-stringdist", type=("build", "run"))

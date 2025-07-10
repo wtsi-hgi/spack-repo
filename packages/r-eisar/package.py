@@ -16,7 +16,7 @@ class REisar(RPackage):
 	bioc = "eisaR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/eisaR_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/eisaR/eisaR_1.14.1.tar.gz"]
 
-	version("1.14.1", md5="aacb421b1779d259cd148ace92555909")
+	version("1.14.1", sha256="315bd11e65d3fd65aa2acfcc929242872d9376050cfb9d06877f6f2c8a40e22d")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

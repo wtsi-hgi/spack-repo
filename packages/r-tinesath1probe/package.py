@@ -15,7 +15,7 @@ class RTinesath1probe(RPackage):
 	bioc = "tinesath1probe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tinesath1probe_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tinesath1probe/tinesath1probe_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="abd9396a4f17a0044018702394b62933")
+	version("1.40.0", sha256="29931479e7a68eff177d7b7a42c2ec4eb893792ea84b37f402380ff0e74f21e8")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.9:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RBsgenomeTguttataUcscTaegut1Masked(RPackage):
 	bioc = "BSgenome.Tguttata.UCSC.taeGut1.masked" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Tguttata.UCSC.taeGut1.masked_1.3.99.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Tguttata.UCSC.taeGut1.masked/BSgenome.Tguttata.UCSC.taeGut1.masked_1.3.99.tar.gz"]
 
-	version("1.3.99", md5="63684abb5b330bb54ff89fe78f2e6444")
+	version("1.3.99", sha256="6a556f64c9da0a0895dbe7659318522cf0902d8c07f887a75111ddb9c5c5e915")
 
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-tguttata-ucsc-taegut1", type=("build", "run"))

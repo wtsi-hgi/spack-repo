@@ -16,7 +16,7 @@ class RMuscdata(RPackage):
 	bioc = "muscData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/muscData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/muscData/muscData_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="f34c376f88f97c98d4aac5490b45bc24")
+	version("1.16.0", sha256="aaf36d5799af4ec978eae1635b0966a6e0951a8f69738292b7d391f953695506")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

@@ -15,7 +15,7 @@ class RClustcomp(RPackage):
 	bioc = "clustComp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clustComp_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clustComp/clustComp_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="c1783d91366b98b4afbe0b0acc49c452")
+	version("1.30.0", sha256="a53c4f1b22ecb2a2cb4dd50327b23f58eab48c619925a45a53de3f8cc2449dcb")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-sm", type=("build", "run"))

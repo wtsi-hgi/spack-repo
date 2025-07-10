@@ -15,7 +15,7 @@ class RXtrasnplocsHsapiensDbsnp144Grch38(RPackage):
 	bioc = "XtraSNPlocs.Hsapiens.dbSNP144.GRCh38" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/XtraSNPlocs.Hsapiens.dbSNP144.GRCh38_0.99.12.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/XtraSNPlocs.Hsapiens.dbSNP144.GRCh38/XtraSNPlocs.Hsapiens.dbSNP144.GRCh38_0.99.12.tar.gz"]
 
-	version("0.99.12", md5="c617aa805c7ecf60ee9283eb3c51b1c7", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/XtraSNPlocs.Hsapiens.dbSNP144.GRCh38_0.99.12.tar.gz")
+	version("0.99.12", sha256="bfa88ea162b41f60a06f5fd7e6364916b4b8637dda00beb911877421a3189834", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/XtraSNPlocs.Hsapiens.dbSNP144.GRCh38_0.99.12.tar.gz")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))

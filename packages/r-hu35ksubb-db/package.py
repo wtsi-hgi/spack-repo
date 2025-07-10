@@ -15,7 +15,7 @@ class RHu35ksubbDb(RPackage):
 	bioc = "hu35ksubb.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hu35ksubb.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hu35ksubb.db/hu35ksubb.db_3.13.0.tar.gz"]
 
-	version("3.13.0", md5="b82ece4860eddff8010faecaae802312")
+	version("3.13.0", sha256="fca91dcfeee603db4bbd667a726447ea2d25b62cffa953a986a840e6b874ef63")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

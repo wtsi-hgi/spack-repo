@@ -17,6 +17,6 @@ class RDirExpiry(RPackage):
 	bioc = "dir.expiry"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dir.expiry_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dir.expiry/dir.expiry_1.10.0.tar.gz"]
 	version("1.8.0", commit="271f76cb2e8565817400e85fcc2c595923af4af6")
-	version("1.10.0", md5="ddefb728416ca4283805e19a898e9245")
+	version("1.10.0", sha256="38b5c0460b8022e1c801d574fd3aaea0d74603730e304113e07af74621462ba4")
 
 	depends_on("r-filelock", type=("build", "run"))

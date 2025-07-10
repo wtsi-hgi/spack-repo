@@ -15,7 +15,7 @@ class RClusterseq(RPackage):
 	bioc = "clusterSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clusterSeq_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clusterSeq/clusterSeq_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="c0f51fc6b851b707de4f53107c6179f5")
+	version("1.26.0", sha256="6ed3a2ae16abd36fc8dc17e6877ab39ded1193e7cebe83fb836f65101af3893a")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

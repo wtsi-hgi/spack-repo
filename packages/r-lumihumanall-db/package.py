@@ -15,7 +15,7 @@ class RLumihumanallDb(RPackage):
 	bioc = "lumiHumanAll.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/lumiHumanAll.db_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/lumiHumanAll.db/lumiHumanAll.db_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="ce7e219b50833ceab203f0bbfb11d917")
+	version("1.22.0", sha256="a2c1bd766e756eb7e01cf196c1809c8a282a4c4caaf1482a0d1961b2c2a8c24e")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

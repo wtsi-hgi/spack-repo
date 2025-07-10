@@ -16,7 +16,7 @@ class RLemur(RPackage):
 	bioc = "lemur" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lemur_1.0.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lemur/lemur_1.0.5.tar.gz"]
 
-	version("1.0.5", md5="d6ad01367e439d6e55960148c94f3a37")
+	version("1.0.5", sha256="404872c1445449b5bc268054627e456a1d074f3c05f3cacf78da2572ead1e980")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-irlba", type=("build", "run"))

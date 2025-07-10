@@ -16,7 +16,7 @@ class RTapseq(RPackage):
 	bioc = "TAPseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TAPseq_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TAPseq/TAPseq_1.14.1.tar.gz"]
 
-	version("1.14.1", md5="423853e9c2015594d616f9315d5c217d")
+	version("1.14.1", sha256="ef5d0f6dee6fd2fb6a2b2eafd862fdbe7ae1098b9d16ced9a707513a2e17ae91")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicalignments", type=("build", "run"))

@@ -15,7 +15,7 @@ class RTtgsea(RPackage):
 	bioc = "ttgsea" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ttgsea_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ttgsea/ttgsea_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="0b38c9baea88905217b9ed667c80c26f")
+	version("1.10.0", sha256="3cee0ee4e930eb2fce6557723fbb2ac30a40589b80aa3174004d2a372108d303")
 
 	depends_on("r-keras", type=("build", "run"))
 	depends_on("r-tm", type=("build", "run"))

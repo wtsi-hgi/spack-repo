@@ -15,7 +15,7 @@ class RGenomeintervals(RPackage):
 	bioc = "genomeIntervals" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genomeIntervals_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genomeIntervals/genomeIntervals_1.58.0.tar.gz"]
 
-	version("1.58.0", md5="c47b9bb1293b799a7ac75fef82f45589")
+	version("1.58.0", sha256="1915392190e53c5028c90a0d5b3d11637bef0c3f6ddf79581a7233bde6282d09")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-intervals@0.14:", type=("build", "run"))

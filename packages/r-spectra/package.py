@@ -16,7 +16,7 @@ class RSpectra(RPackage):
 	bioc = "Spectra" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Spectra_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Spectra/Spectra_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="32589596593389b703c87d7a05479fe3")
+	version("1.12.0", sha256="1e0f13135f9f24e06f485a839355c0b5453fc6d649f4c2248bfcf7ef4a4ffa1f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

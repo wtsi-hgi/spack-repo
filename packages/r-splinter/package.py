@@ -16,7 +16,7 @@ class RSplinter(RPackage):
 	bioc = "SPLINTER" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SPLINTER_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SPLINTER/SPLINTER_1.28.0.tar.gz"]
 
-	version("1.28.0", md5="f328ebcc0e4d27dee8a98c2e230bd8dc")
+	version("1.28.0", sha256="fd07c672a2f7e33178b29fac2c368bcd9e91c33d0c1737571233ab2569c09eda")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

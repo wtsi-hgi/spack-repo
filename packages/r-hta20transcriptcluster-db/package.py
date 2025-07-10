@@ -15,7 +15,7 @@ class RHta20transcriptclusterDb(RPackage):
 	bioc = "hta20transcriptcluster.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hta20transcriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hta20transcriptcluster.db/hta20transcriptcluster.db_8.8.0.tar.gz"]
 
-	version("8.8.0", md5="9debbc190cc5f9f0ad97fbc452fe7025")
+	version("8.8.0", sha256="70680ab930d4290431c312449e0ab6b46f933d55c61012e903baefbaae07a92f")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

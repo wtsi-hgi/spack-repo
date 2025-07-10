@@ -15,7 +15,7 @@ class REpigrahmm(RPackage):
 	bioc = "epigraHMM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epigraHMM_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epigraHMM/epigraHMM_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="1c86fa9edec93550acae520d84420b88")
+	version("1.10.0", sha256="36f7bdc1714747c0e94910417250cc1e68851b0a7336ae2fdd354c058f83f774")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

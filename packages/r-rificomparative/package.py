@@ -15,7 +15,7 @@ class RRificomparative(RPackage):
 	bioc = "rifiComparative" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rifiComparative_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rifiComparative/rifiComparative_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="d371dc0f2b156f4565b09b7cfa5406e0")
+	version("1.2.0", sha256="3175cb710dd786c8c2d3d9f2067c86f253d8023548c6e2664393a656308e7e99")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))

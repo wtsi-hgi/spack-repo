@@ -16,7 +16,7 @@ class RZellkonverter(RPackage):
 	bioc = "zellkonverter" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/zellkonverter_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/zellkonverter/zellkonverter_1.12.1.tar.gz"]
 
-	version("1.12.1", md5="5ba05cd62d95057a39c194a5084c551a")
+	version("1.12.1", sha256="19e5093c1898bbe6232cd271d9d341efdadf1cd8ab33f5f6a30a245684c52b09")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-basilisk", type=("build", "run"))

@@ -16,7 +16,7 @@ class RSchex(RPackage):
 	bioc = "schex" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/schex_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/schex/schex_1.16.1.tar.gz"]
 
-	version("1.16.1", md5="f57d8e86734da9d7e2b645c5871fa7a1")
+	version("1.16.1", sha256="635951df732186ae83134cf55cab7be75a7d9c8d2e353b5b9cc023d38006caad")
 
 	depends_on("r-singlecellexperiment@1.7.4:", type=("build", "run"))
 	depends_on("r-ggplot2@3.2.1:", type=("build", "run"))

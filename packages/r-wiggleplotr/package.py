@@ -15,7 +15,7 @@ class RWiggleplotr(RPackage):
 	bioc = "wiggleplotr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/wiggleplotr_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/wiggleplotr/wiggleplotr_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="9e05d485ba51bf035918d23e686e60ba")
+	version("1.26.0", sha256="a87277d0383f118efb12ab9383be7477ccda04f8f046687c7840476b6b8700bf")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

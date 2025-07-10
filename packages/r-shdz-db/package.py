@@ -15,7 +15,7 @@ class RShdzDb(RPackage):
 	bioc = "SHDZ.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/SHDZ.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/SHDZ.db/SHDZ.db_3.2.3.tar.gz"]
 
-	version("3.2.3", md5="63c4439a272a5cd0c4746e9e53a7bdc7")
+	version("3.2.3", sha256="bab75f442a5ebf6ac7907c44267160faf15cbb1871a2105b008cb8d1bff0fd1c")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

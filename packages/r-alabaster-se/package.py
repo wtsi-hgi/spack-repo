@@ -15,7 +15,7 @@ class RAlabasterSe(RPackage):
 	bioc = "alabaster.se" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.se_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.se/alabaster.se_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="25133d88cc71ec6029229772a1eee0e8")
+	version("1.2.0", sha256="9d37f71146259c376c7d080c99e18cf7c9daf3d6cea26007189385459a6f3b93")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-alabaster-base", type=("build", "run"))

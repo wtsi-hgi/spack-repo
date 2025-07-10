@@ -27,7 +27,7 @@ class RMatrixgenerics(RPackage):
     version("1.6.0", commit="4588a60e5cc691424c17faa281bdd7d99d83ec34")
     version("1.2.1", commit="abcc9ca0504e0b915cd7933a3169a8e9e5bd2fe9")
     version("1.20.0", tag="RELEASE_3_21")
-    version("1.14.0", md5="18c3a5cc993ca5c2ad48dde1813105e6")
+    version("1.14.0", sha256="8da491661e8581adf1f2f8c5d2f46272d92b6c5a639bf4a80140c05e5694a593")
     version("1.12.0", commit="442fde27fdf18ee3460ea0258a74a847b2c99cf3")
     version("1.10.0", commit="6d9d907e8c4d1fc96a32160fb9f3ab805d6eb356")
 

@@ -15,7 +15,7 @@ class RGcrisprtools(RPackage):
 	bioc = "gCrisprTools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gCrisprTools_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gCrisprTools/gCrisprTools_2.8.0.tar.gz"]
 
-	version("2.8.0", md5="113ef693d51de0459865934e9a16d90a")
+	version("2.8.0", sha256="a91d225472676d23bb069f595705e2f76f4c06024c1d161b69b7a7822445f503")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

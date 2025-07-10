@@ -15,7 +15,7 @@ class RPdBovine(RPackage):
 	bioc = "pd.bovine" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.bovine_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.bovine/pd.bovine_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="6c7026dba53b54b547b1f1e135d043b3")
+	version("3.12.0", sha256="f0bc40fcb7f195f10df9d4795b6b6ba76bde3acb02867e79109f22268bfa03bc")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

@@ -15,6 +15,6 @@ class RCopa(RPackage):
 	bioc = "copa" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/copa_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/copa/copa_1.70.0.tar.gz"]
 
-	version("1.70.0", md5="bd372714a4dd7e70b90d9232fcba322d")
+	version("1.70.0", sha256="4ef205cdb2bf4125dc689664b4ea84acc102b326dfe13b6201a58622741c0614")
 
 	depends_on("r-biobase", type=("build", "run"))

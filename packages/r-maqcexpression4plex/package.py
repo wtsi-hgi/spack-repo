@@ -15,6 +15,6 @@ class RMaqcexpression4plex(RPackage):
 	bioc = "maqcExpression4plex" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/maqcExpression4plex_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/maqcExpression4plex/maqcExpression4plex_1.46.0.tar.gz"]
 
-	version("1.46.0", md5="8312b7fbcba763a33630effb8c3b5f10")
+	version("1.46.0", sha256="ac918856ce0d7a2d6b30c5ff0b628508f8ddfc003cc1d1cbd1dd0fd9ecaf1c46")
 
 

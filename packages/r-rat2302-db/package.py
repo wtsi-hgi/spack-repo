@@ -15,7 +15,7 @@ class RRat2302Db(RPackage):
 	bioc = "rat2302.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rat2302.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rat2302.db/rat2302.db_3.13.0.tar.gz"]
 
-	version("3.13.0", md5="b1404d8a16fec681f0fd682589a685ea")
+	version("3.13.0", sha256="0c0f92ebc4aac924a12e512caddb57226286494ec2d8514591b30f7c73a858cc")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

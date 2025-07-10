@@ -15,6 +15,6 @@ class RBiocmetaworkflow(RPackage):
 	bioc = "BiocMetaWorkflow" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/BiocMetaWorkflow_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/BiocMetaWorkflow/BiocMetaWorkflow_1.24.0.tar.gz"]
 
-	version("1.24.0", md5="0671030d76d252fe8ff7df69c0effdac")
+	version("1.24.0", sha256="10ba2ef2402780213da6ba8b6f84128b04e1f39a5b33e10da963113ea0bdd319")
 
 

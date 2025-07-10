@@ -16,7 +16,7 @@ class RBreastcancerunt(RPackage):
 	bioc = "breastCancerUNT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/breastCancerUNT_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/breastCancerUNT/breastCancerUNT_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="31e1b6d7e34b4acb9207e3e152539166")
+	version("1.40.0", sha256="2a3753cb025a2afaf8da38ebbffa76f340c5b6019641b9f063fecb0b2885215c")
 
 	depends_on("r@2.5:", type=("build", "run"))
 

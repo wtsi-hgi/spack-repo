@@ -16,7 +16,7 @@ class RMungesumstats(RPackage):
 	bioc = "MungeSumstats" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MungeSumstats_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MungeSumstats/MungeSumstats_1.10.1.tar.gz"]
 
-	version("1.10.1", md5="9164f3e5c8e7612c387b35bff82dc4cc")
+	version("1.10.1", sha256="d3b1a86d512a0ec9e946444b2515250c11957937ca362268d0f1ad107b77f160")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

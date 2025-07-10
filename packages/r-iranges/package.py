@@ -18,7 +18,7 @@ class RIranges(RPackage):
 
 	bioc = "IRanges"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IRanges_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IRanges/IRanges_2.36.0.tar.gz"]
-	version("2.36.0", md5="87618d2e5ee94d7ab81d2e1c4d847120")
+	version("2.36.0", sha256="58c05c3c4eb7fdee64cb027ba849de0ec57f2e4150b9aa645b62549da1401066")
 	version("2.34.0", commit="dcddf934384e05dccffb2a8a808147c963ff0c3e")
 	version("2.32.0", commit="2b5c9fc706c8cdc96f0c46508087863df1502f81")
 	version("2.30.1", commit="ead506a14d6cc89ac2f14b55a4b04496755e4e50")

@@ -16,7 +16,7 @@ class RRopls(RPackage):
 	bioc = "ropls" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ropls_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ropls/ropls_1.34.0.tar.gz"]
 
-	version("1.34.0", md5="a1c4a1710eb179bb29f3831a5fe80849")
+	version("1.34.0", sha256="fbdcde1abdf5169f549c645362c5f7fd2072a796f1913d320613ffab160b72cc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -16,7 +16,7 @@ class RNxtirfdata(RPackage):
 	bioc = "NxtIRFdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/NxtIRFdata_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/NxtIRFdata/NxtIRFdata_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="3d9c35f12650fe6e2eb413224b3590dc")
+	version("1.8.0", sha256="65722d33c0d4b5e039a79afc2b70af9f4e0832d31427b0c9ffede75978407d3f")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))

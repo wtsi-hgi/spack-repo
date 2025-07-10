@@ -16,7 +16,7 @@ class RIntomics(RPackage):
 	bioc = "IntOMICS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IntOMICS_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IntOMICS/IntOMICS_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="61628ea37535123f71455b77b194b08c")
+	version("1.2.0", sha256="f0e70d50c624b6092c81456dd2da3e2b37a6666f59a644e2d7e9aa8f2e8a16e2")
 
 	depends_on("r-bnlearn", type=("build", "run"))
 	depends_on("r-bnstruct", type=("build", "run"))

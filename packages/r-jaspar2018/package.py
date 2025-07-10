@@ -14,7 +14,7 @@ class RJaspar2018(RPackage):
 
 	bioc = "JASPAR2018"
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/JASPAR2018_1.1.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/JASPAR2018/JASPAR2018_1.1.1.tar.gz"]
-	version("1.1.1", md5="d91fce6ea0dc9fa6a3be6ebc05c1af5d", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/JASPAR2018_1.1.1.tar.gz")
+	version("1.1.1", sha256="87a22b2549eb6cd2f6db8692542fbb2a4aa1dc8bde9bd01b63022a9f435905c7", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/JASPAR2018_1.1.1.tar.gz")
 	version("1.1.0", commit="cf8598d3c9054d85c43655cf82be17f74d800fa5")
 	version("1.0.0", commit="4c84092b3737bb1c57ab56f4321f2f5e4b0efeaa")
 

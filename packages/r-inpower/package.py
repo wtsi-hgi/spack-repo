@@ -15,7 +15,7 @@ class RInpower(RPackage):
 	bioc = "INPower" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/INPower_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/INPower/INPower_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="3b769c08ded506c713da036c30fe4da9")
+	version("1.38.0", sha256="09a0f32decdf2ac1d3cc72ff14d8526e08dae530ed156de0c064644dc1a76656")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))

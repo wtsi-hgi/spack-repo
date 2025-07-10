@@ -16,7 +16,7 @@ class RFlowsortedCordbloodcombined450k(RPackage):
 	bioc = "FlowSorted.CordBloodCombined.450k" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FlowSorted.CordBloodCombined.450k_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FlowSorted.CordBloodCombined.450k/FlowSorted.CordBloodCombined.450k_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="769113b80606820ab2918dcacf1076b2")
+	version("1.18.0", sha256="146a872d02789fb45da741e9da735c6f8d07b7c03fb840d50933b6a5206f803e")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-minfi@1.21.2:", type=("build", "run"))

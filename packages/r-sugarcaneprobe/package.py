@@ -15,7 +15,7 @@ class RSugarcaneprobe(RPackage):
 	bioc = "sugarcaneprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/sugarcaneprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/sugarcaneprobe/sugarcaneprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="66c101ac73e9235d258b9f996c42778e")
+	version("2.18.0", sha256="300a7067194aec7a74fa76ee0ae8fba382a9d8a51d94735730f5b48e5af3f99f")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

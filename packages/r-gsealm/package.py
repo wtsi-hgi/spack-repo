@@ -15,6 +15,6 @@ class RGsealm(RPackage):
 	bioc = "GSEAlm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSEAlm_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSEAlm/GSEAlm_1.62.0.tar.gz"]
 
-	version("1.62.0", md5="b88623d080b75bb6775026e9e6c4dd9e")
+	version("1.62.0", sha256="08e34285f60eb07ceda3ce3e78a9f7be1afce4716f12d73efe168b7e5e91aa46")
 
 	depends_on("r-biobase", type=("build", "run"))

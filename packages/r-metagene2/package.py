@@ -16,7 +16,7 @@ class RMetagene2(RPackage):
 	bioc = "metagene2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metagene2_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metagene2/metagene2_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="adef0ffd2a7cec30870a2b66eb2cb4f9", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metagene2_1.18.0.tar.gz")
+	version("1.18.0", sha256="40912fc8f7a4d447a2b0a3a969d331cefce83e28c5a428aef4c222a1212493f0", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metagene2_1.18.0.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-r6@2:", type=("build", "run"))

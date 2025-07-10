@@ -16,7 +16,7 @@ class RCellbarcode(RPackage):
 	bioc = "CellBarcode" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellBarcode_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellBarcode/CellBarcode_1.8.1.tar.gz"]
 
-	version("1.8.1", md5="17e78449fe21396c431d8e541a169864")
+	version("1.8.1", sha256="9ba0c45bedd91a219a0e7dc1841b32329a5204ce0cdad95b7a36b296ff879540")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

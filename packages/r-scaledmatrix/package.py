@@ -21,7 +21,7 @@ class RScaledmatrix(RPackage):
 	version("1.4.1", commit="15e2efcb6b11e26c31ef2d44968355f71cc1f4fc")
 	version("1.4.0", commit="32e6e918bc7bb64bbf75613d353ca268c7d04292")
 	version("1.2.0", commit="d0573e14ca537b40ade7dd1c9cf0cadae60d4349")
-	version("1.10.0", md5="337f2af494241ac5def9fcae4dc12313")
+	version("1.10.0", sha256="8a40a14537c47caaf9aa1dc4b7b8c2354fca77ba895e548821b132a481622faa")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

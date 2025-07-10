@@ -16,7 +16,7 @@ class RGenomicalignments(RPackage):
 
 	bioc = "GenomicAlignments"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicAlignments_1.38.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicAlignments/GenomicAlignments_1.38.2.tar.gz"]
-	version("1.38.2", md5="6b1bbb35176db253124a9e6786104421")
+	version("1.38.2", sha256="816f078886e0b2054392f1432702372be9621e0da379c1cfa3b02dd5cb389644")
 	version("1.36.0", commit="cdc1aa49f14d3effe2540380a04fe1fc72c00f04")
 	version("1.34.0", commit="c6eb78079c8aa21d47c95b3d16a606e8c2c5d799")
 	version("1.32.1", commit="2553580d0b8a8a5fd7835c1446616b39f707b8a9")

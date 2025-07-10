@@ -15,7 +15,7 @@ class RPdChogene21St(RPackage):
 	bioc = "pd.chogene.2.1.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.chogene.2.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.chogene.2.1.st/pd.chogene.2.1.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="ed25825e58a514cdde70b961bce9b4d7")
+	version("3.12.0", sha256="22cf2d09818cbd142e9496833e8d9559952ff292143fb7b73f83035823d53735")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

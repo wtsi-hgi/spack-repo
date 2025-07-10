@@ -15,7 +15,7 @@ class RPdPorgene11St(RPackage):
 	bioc = "pd.porgene.1.1.st" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.porgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.porgene.1.1.st/pd.porgene.1.1.st_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="3a31d325861925a7428241207c461a1d")
+	version("3.12.0", sha256="b39118722d9354d2788059c6959e609e4932b775572b5b3ae10b953e19e51f0d")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

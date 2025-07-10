@@ -16,7 +16,7 @@ class RGenomicinstability(RPackage):
 	bioc = "genomicInstability" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genomicInstability_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genomicInstability/genomicInstability_1.8.0.tar.gz"]
 
-	version("1.8.0", md5="0d7c244a904ea9286d4e965cddeaf2d7")
+	version("1.8.0", sha256="14a372aa0153e2c4d80dbee62e33faed3064b7c68d9677cb726973747f8f8792")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

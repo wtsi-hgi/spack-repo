@@ -15,7 +15,7 @@ class RPadog(RPackage):
 	bioc = "PADOG" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PADOG_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PADOG/PADOG_1.44.0.tar.gz"]
 
-	version("1.44.0", md5="ca2c1e477f0ef2d2be1eaf52570dd8c4")
+	version("1.44.0", sha256="c72876d6cb9ab80aedce60510f5a3d6b6e75dc31ca8d980c7b805657a650cc7b")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-keggdzpathwaysgeo", type=("build", "run"))

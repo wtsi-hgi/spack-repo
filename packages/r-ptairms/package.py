@@ -15,7 +15,7 @@ class RPtairms(RPackage):
 	bioc = "ptairMS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ptairMS_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ptairMS/ptairMS_1.10.0.tar.gz"]
 
-	version("1.10.0", md5="771ce745db55fad5684a47026df33abe")
+	version("1.10.0", sha256="1fa231c1c9aa28ac336710e12eed0611a23b0a1ed09e98e38246b61d525f5662")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-bit64", type=("build", "run"))

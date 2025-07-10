@@ -17,7 +17,7 @@ class RAcgh(RPackage):
 	bioc = "aCGH"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/aCGH_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/aCGH/aCGH_1.80.0.tar.gz"]
 
-	version("1.80.0", md5="137af76dc5756a83094da18eb0bededa")
+	version("1.80.0", sha256="38c4a6e44d7c0b472e6faede8ec875219391123729b624f3a208b34063c393e1")
 	version("1.78.0", commit="75df3a4839af66ce177d1bbc3cec4ac03c21dc8e")
 	version("1.76.0", commit="c6068522854ed0b1c3feb006619ef25590f70ad6")
 	version("1.74.0", commit="e7ba380af0da138788eb6c86f5dbe453269c0810")

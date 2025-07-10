@@ -15,7 +15,7 @@ class RGemini(RPackage):
 	bioc = "gemini" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gemini_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gemini/gemini_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="e8c26d0e8208f56017c8c83a17582f37")
+	version("1.16.0", sha256="6d3e62a09ac96eaefdd82a7d9b0136fbcd9f51045b4ef7980ffadab4b69ca8b0")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -16,7 +16,7 @@ class RNetsmooth(RPackage):
 	bioc = "netSmooth" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/netSmooth_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/netSmooth/netSmooth_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="074a02c5cf8d32c2111268513d8404c5")
+	version("1.22.0", sha256="945bef784c08479b7bdf08f55c0e4b6f112355e0f900d767313c709566bf72f2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-scater@1.15.11:", type=("build", "run"))

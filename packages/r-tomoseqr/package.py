@@ -15,7 +15,7 @@ class RTomoseqr(RPackage):
 	bioc = "tomoseqr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tomoseqr_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tomoseqr/tomoseqr_1.6.0.tar.gz"]
 
-	version("1.6.0", md5="b881e4b272396cc4696d840658ec0ef5")
+	version("1.6.0", sha256="7c574a2561e393693a8a8b2d09121826efc3b9721c2616f64480d4b9c4ffdc1f")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-animation", type=("build", "run"))

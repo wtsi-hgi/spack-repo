@@ -15,7 +15,7 @@ class RFastliquidassociation(RPackage):
 	bioc = "fastLiquidAssociation" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fastLiquidAssociation_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fastLiquidAssociation/fastLiquidAssociation_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="b57e0af4700d6a6872d88ca0d2eda5d1")
+	version("1.38.0", sha256="baf4c40980f7bc791365eec43d7312b7db065a879f61ee271b32f02635d82ed0")
 
 	depends_on("r-liquidassociation", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

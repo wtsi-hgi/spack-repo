@@ -15,7 +15,7 @@ class RCafe(RPackage):
 	bioc = "CAFE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CAFE_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CAFE/CAFE_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="1a64370f203f198ad86163715decbebb")
+	version("1.38.0", sha256="5c0ed749138213d02cd6925c06675a65afa315b615c14acd881d2cf3400ac1aa")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biovizbase", type=("build", "run"))

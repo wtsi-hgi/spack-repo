@@ -16,7 +16,7 @@ class RTop(RPackage):
 	bioc = "TOP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TOP_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TOP/TOP_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="af6712369d58630bdcc2b05d7dc06b52")
+	version("1.2.0", sha256="f0733004b9f9dedff886394a5767da9a78c07f6f88abc6e1f7ac2a87b5ecdb36")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

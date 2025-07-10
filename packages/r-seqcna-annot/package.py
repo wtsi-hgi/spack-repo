@@ -15,7 +15,7 @@ class RSeqcnaAnnot(RPackage):
 	bioc = "seqCNA.annot" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/seqCNA.annot_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/seqCNA.annot/seqCNA.annot_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="a61df6e0824d7c3c3f4c697b5bd73e30")
+	version("1.38.0", sha256="72d7ed1867fec9bebd972c10e281e18253b5dac10c9d85fe15e029d461b1f54f")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

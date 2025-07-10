@@ -15,7 +15,7 @@ class RVegamc(RPackage):
 	bioc = "VegaMC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VegaMC_3.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VegaMC/VegaMC_3.40.0.tar.gz"]
 
-	version("3.40.0", md5="0e02ae3375b7bed5ca1ed7011b60f180")
+	version("3.40.0", sha256="08605ff9b1a6e0f87a28226fc8c67f044aaea867bbe255943c4e6f25a7f83be9")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biomart", type=("build", "run"))

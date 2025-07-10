@@ -15,7 +15,7 @@ class RA4reporting(RPackage):
 	bioc = "a4Reporting"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/a4Reporting_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/a4Reporting/a4Reporting_1.50.0.tar.gz"]
 
-	version("1.50.0", md5="3ba7f3c5606c2f898d84314ba63208fa")
+	version("1.50.0", sha256="c63ed4ea5373f0a340fd0b7671fe9fda8c0bb10a190e8654eae75cfe345f8f9a")
 	version("1.48.0", commit="de8c4b76f6b7ef502d77d55289df0d64fe70447c")
 	version("1.46.0", commit="00b82d25bef4d518ae92f615d3a6f7931c0618dc")
 	version("1.44.0", commit="bfe83507daf53e2e327474ea3012f0dc920efac1")

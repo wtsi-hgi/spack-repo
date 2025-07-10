@@ -16,7 +16,7 @@ class RSigspack(RPackage):
 	bioc = "SigsPack" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SigsPack_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SigsPack/SigsPack_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="5fde29d53a470944ef9a4ba82bcca75d")
+	version("1.16.0", sha256="f5473843a7af8f8490c067c27c125822653b5b4994dc6c663ffd76c0027bb2e9")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-quadprog@1.5.5:", type=("build", "run"))

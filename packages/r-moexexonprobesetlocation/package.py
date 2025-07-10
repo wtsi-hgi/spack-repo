@@ -15,7 +15,7 @@ class RMoexexonprobesetlocation(RPackage):
 	bioc = "MoExExonProbesetLocation" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MoExExonProbesetLocation_1.15.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/MoExExonProbesetLocation/MoExExonProbesetLocation_1.15.0.tar.gz"]
 
-	version("1.15.0", md5="07eea205fce2a8cf4585fa7e71fb0057")
+	version("1.15.0", sha256="876a93b68241eb4e2b77190c9f6b5bb15d8f55b0a72cf265af9c2f12e51a722f")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.7.17:", type=("build", "run"))

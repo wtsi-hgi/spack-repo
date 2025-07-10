@@ -15,7 +15,7 @@ class RGenomicfiles(RPackage):
 	bioc = "GenomicFiles" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicFiles_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicFiles/GenomicFiles_1.38.0.tar.gz"]
 
-	version("1.38.0", md5="7a58dc35c19ed34afe95d505d15db3f4")
+	version("1.38.0", sha256="959bdb955c859bfd520a0a64f4541484c981237bceaa26b76c162c0881d17ecf")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.11.2:", type=("build", "run"))

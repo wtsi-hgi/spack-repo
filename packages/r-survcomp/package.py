@@ -16,7 +16,7 @@ class RSurvcomp(RPackage):
 	bioc = "survcomp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/survcomp_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/survcomp/survcomp_1.52.0.tar.gz"]
 
-	version("1.52.0", md5="5026589c50042751474d3474dc24847d")
+	version("1.52.0", sha256="364e6d7e35b0d2ac2a91e4afb7cd0cf977c29ce08616df6676437684f60e48a1")
 
 	depends_on("r-survival", type=("build", "run"))
 	depends_on("r-prodlim", type=("build", "run"))

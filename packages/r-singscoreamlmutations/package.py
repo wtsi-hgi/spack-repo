@@ -16,7 +16,7 @@ class RSingscoreamlmutations(RPackage):
 	bioc = "SingscoreAMLMutations" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/SingscoreAMLMutations_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/SingscoreAMLMutations/SingscoreAMLMutations_1.18.0.tar.gz"]
 
-	version("1.18.0", md5="f427ac59e2fa6470b47eb92506f45c9b")
+	version("1.18.0", sha256="63f275fe251ff76c9cf456de646e6d42f52b18b3a68a4ee321c308f44fcf3c0f")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dcanr", type=("build", "run"))

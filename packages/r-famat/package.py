@@ -16,7 +16,7 @@ class RFamat(RPackage):
 	bioc = "famat" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/famat_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/famat/famat_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="12883ce4989ed35758a8902493e2bb07")
+	version("1.12.0", sha256="d2da9308e980817f3e8a85a7d5f09cc90df857ffb3b059b6687d2f359929f706")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-keggrest", type=("build", "run"))

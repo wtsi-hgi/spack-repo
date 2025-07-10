@@ -16,7 +16,7 @@ class RSpidermir(RPackage):
 	bioc = "SpidermiR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpidermiR_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpidermiR/SpidermiR_1.32.0.tar.gz"]
 
-	version("1.32.0", md5="86d54ea72377eb5f3fc8f92ba3b55374")
+	version("1.32.0", sha256="3d3071428cfb05fe9e035fcb51eb27546e1abc4381a9943ae21c6a855810441f")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

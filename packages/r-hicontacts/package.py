@@ -16,7 +16,7 @@ class RHicontacts(RPackage):
 	bioc = "HiContacts" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiContacts_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiContacts/HiContacts_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="f7f7341e5b4cbfcd13b04fadd9c472c7")
+	version("1.4.0", sha256="7efd2cc7f77c82fe4e2b662fc54f093d68ee045c4d89c0f2400a4409bcf5ab29")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-hicexperiment", type=("build", "run"))

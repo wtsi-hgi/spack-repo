@@ -15,7 +15,7 @@ class RSoybeancdf(RPackage):
 	bioc = "soybeancdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/soybeancdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/soybeancdf/soybeancdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="a18e0ba5dbcf2291bdec91091dc528e6")
+	version("2.18.0", sha256="480ffd0c3d941a7487d91bfeb8bfc3fcf29339149f38f3833147a04a75eb9cb6")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

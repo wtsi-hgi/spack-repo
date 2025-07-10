@@ -16,7 +16,7 @@ class RMosaics(RPackage):
 	bioc = "mosaics" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mosaics_2.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mosaics/mosaics_2.40.0.tar.gz"]
 
-	version("2.40.0", md5="0648fcfd9fd595974e0602fbb2a37cac")
+	version("2.40.0", sha256="059be9cc10690f42bd5031aa17f05a9db0f6d0f1163e6eaf76b63979787225ea")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -16,7 +16,7 @@ class RDerfinderdata(RPackage):
 	bioc = "derfinderData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/derfinderData_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/derfinderData/derfinderData_2.20.0.tar.gz"]
 
-	version("2.20.0", md5="032efff51d29eae3fc1a5e032c0f3c40")
+	version("2.20.0", sha256="f4e432648968879d898570b57e9d18dc9fd3d686b122d511d554cc6e2ba219c1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

@@ -16,7 +16,7 @@ class RRbioformats(RPackage):
 	bioc = "RBioFormats" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RBioFormats_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RBioFormats/RBioFormats_1.2.0.tar.gz"]
 
-	version("1.2.0", md5="cd83827dd164a9b44ba3d0d08fd77b38")
+	version("1.2.0", sha256="f586ebf1520e3c05269ba8c1e38ae6a3e1ef99cd7fc5ce86c3d85b96d8acc35b")
 
 	depends_on("r-ebimage", type=("build", "run"))
 	depends_on("r-rjava@0.9.6:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RPoma(RPackage):
 	bioc = "POMA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/POMA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/POMA/POMA_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="89690c830c8b6120d4d436f05e34f4eb")
+	version("1.12.0", sha256="83f550759c222e7aa4a640a6bdb0ce8e66445d5389d96f7487d8ac624b7db921")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))

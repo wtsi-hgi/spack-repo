@@ -15,7 +15,7 @@ class RMslp(RPackage):
 	bioc = "mslp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mslp_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mslp/mslp_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="8d78607401143e315c9ad75923a0c9c5")
+	version("1.4.0", sha256="d3647c9e496698ca1f287e9d24d112c833622bc40dca683bb997af3d43768ac4")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-data-table@1.13:", type=("build", "run"))

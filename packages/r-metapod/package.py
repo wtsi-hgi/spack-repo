@@ -22,6 +22,6 @@ class RMetapod(RPackage):
 	version("1.8.0", commit="6ac6999182d581ed579d2f7535e838b084f67b8d")
 	version("1.6.0", commit="cfeaa959f5c6b2119df270f40af9c3ea718c4b00")
 	version("1.4.0", commit="e71c2072e5b39f74599e279b28f4da7923b515fb")
-	version("1.10.1", md5="30dbb26bb39fae4345e0142e37fb2aa7")
+	version("1.10.1", sha256="c6b882b359f79efc2b26365fee457da1e4cfd4d1def52b68bac2a223771f9e15")
 
 	depends_on("r-rcpp", type=("build", "run"))

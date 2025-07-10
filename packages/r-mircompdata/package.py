@@ -15,7 +15,7 @@ class RMircompdata(RPackage):
 	bioc = "miRcompData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/miRcompData_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/miRcompData/miRcompData_1.32.0.tar.gz"]
 
-	version("1.32.0", md5="0b091222ebe8ac1a3a2c59384931393b")
+	version("1.32.0", sha256="e61d11cd0352745d221517f0f85654ad6e5923d2670eeff0069797db1bdd8897")
 
 	depends_on("r@3.2:", type=("build", "run"))
 

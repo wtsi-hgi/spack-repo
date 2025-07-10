@@ -15,7 +15,7 @@ class RDcats(RPackage):
 	bioc = "DCATS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DCATS_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DCATS/DCATS_1.0.0.tar.gz"]
 
-	version("1.0.0", md5="8a6002426027bd88d05a2b8759d5a12e")
+	version("1.0.0", sha256="0080089950dc945aae8c42f745232beac40899054fc8dfd9ebfb6ca23a78e754")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-mcmcpack", type=("build", "run"))

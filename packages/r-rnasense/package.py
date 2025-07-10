@@ -15,7 +15,7 @@ class RRnasense(RPackage):
 	bioc = "RNAsense" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNAsense_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNAsense/RNAsense_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="514e6c09019b7f9116ddbedbdf514a5a")
+	version("1.16.0", sha256="c88e9a3649a8685a158c4ea9f0ce60046b8f090bace686d11a839f90a155bdab")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

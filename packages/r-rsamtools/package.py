@@ -19,7 +19,7 @@ class RRsamtools(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rsamtools_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rsamtools/Rsamtools_2.18.0.tar.gz"]
 	version("2.6.0", commit="f2aea061517c5a55e314c039251ece9831c7fad2")
 	version("2.2.1", commit="f10084658b4c9744961fcacd79c0ae9a7a40cd30")
-	version("2.18.0", md5="63af2a7dd2513e992fd78b26ca2b3775")
+	version("2.18.0", sha256="2f283b105ede839655bf8a3cb877f97764900486875748f4c3f9ecdf78bc8a2d")
 	version("2.16.0", commit="3eb6d03acecb8d640ec5201cacdc322e9e0c2445")
 	version("2.14.0", commit="8302eb7fa1c40384f1af5855222d94f2efbdcad1")
 	version("2.12.0", commit="d6a65dd57c5a17e4c441a27492e92072f69b175e")

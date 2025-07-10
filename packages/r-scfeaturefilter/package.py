@@ -15,7 +15,7 @@ class RScfeaturefilter(RPackage):
 	bioc = "scFeatureFilter" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scFeatureFilter_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scFeatureFilter/scFeatureFilter_1.22.0.tar.gz"]
 
-	version("1.22.0", md5="f642025d766eb2cd17f406126e6fe0ba")
+	version("1.22.0", sha256="7ba7d725929e95f3c4e3b8e505b4308eff76ab06c325473c9cd32ad75daa094e")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr@0.7.3:", type=("build", "run"))

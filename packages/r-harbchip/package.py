@@ -15,7 +15,7 @@ class RHarbchip(RPackage):
 	bioc = "harbChIP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/harbChIP_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/harbChIP/harbChIP_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="f5948fc0f4c1ced0a43e85c1885f5d9e")
+	version("1.40.0", sha256="6268dc43784c0515f4ca104c3c1d504caca5548d05a624189ad13a67e0286575")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

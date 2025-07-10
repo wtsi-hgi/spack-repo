@@ -15,7 +15,7 @@ class RBp4rnaseq(RPackage):
 	bioc = "BP4RNAseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/BP4RNAseq_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/BP4RNAseq/BP4RNAseq_1.12.0.tar.gz"]
 
-	version("1.12.0", md5="99c393a9255b3a2d61647320345290bf")
+	version("1.12.0", sha256="4f6ac155ed016a1a31e113182d2f4e9804d3aa979f0b6fa2ce4133e89e61135b")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -15,7 +15,7 @@ class RGispa(RPackage):
 	bioc = "GISPA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GISPA_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GISPA/GISPA_1.26.0.tar.gz"]
 
-	version("1.26.0", md5="012a529b5359b149705fa54cb75c1818")
+	version("1.26.0", sha256="9f0edb08e51e9e8a86d06cd3fc5b303d7985878c67e8f6a6d13d95e49a636ba7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

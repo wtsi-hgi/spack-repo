@@ -15,7 +15,7 @@ class RPdHcG110(RPackage):
 	bioc = "pd.hc.g110" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hc.g110_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.hc.g110/pd.hc.g110_3.12.0.tar.gz"]
 
-	version("3.12.0", md5="5c5418c588ed28e2fa088c7952c48b91", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hc.g110_3.12.0.tar.gz")
+	version("3.12.0", sha256="1b1a708d510a3c14faf9864cbdca9d15a1200831d428a6ce5f9c5f510b598b04", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.hc.g110_3.12.0.tar.gz")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.35.12:", type=("build", "run"))

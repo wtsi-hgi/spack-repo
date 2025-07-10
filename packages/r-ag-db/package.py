@@ -15,7 +15,7 @@ class RAgDb(RPackage):
 	bioc = "ag.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ag.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ag.db/ag.db_3.13.0.tar.gz"]
 
-	version("3.13.0", md5="925e808d2c9b21a11ed131d483e75ab6")
+	version("3.13.0", sha256="f0bf2ba9f4d34c581dbee85302dac01b9a14d2677f46e9436e1631892127be00")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

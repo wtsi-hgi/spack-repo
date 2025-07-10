@@ -16,7 +16,7 @@ class RHmp2data(RPackage):
 	bioc = "HMP2Data" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HMP2Data_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HMP2Data/HMP2Data_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="f334416386d2c1af677494e1fd5743d6")
+	version("1.16.0", sha256="1387360284fee89e63b3e1784aba8f1a82f6bbcc359ac9b6fcc1ffe535d53bf7")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMgu74acdf(RPackage):
 	bioc = "mgu74acdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mgu74acdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mgu74acdf/mgu74acdf_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="ed6e86398e51c7b0ddca4431797ecbc0")
+	version("2.18.0", sha256="8ffa617103860c4ab5a72304eb42523a2010e6ac0f24008d48dc5bdb8247f3a0")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 

@@ -15,7 +15,7 @@ class RMirnatap(RPackage):
 	bioc = "miRNAtap" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miRNAtap_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miRNAtap/miRNAtap_1.36.0.tar.gz"]
 
-	version("1.36.0", md5="f09289c10d9e5e916cc1b95e79bf504f")
+	version("1.36.0", sha256="d2c2319807d4eae6c9b9d5eccf4e30549befde6ff7b89773b6eca2eb20ed89c9")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

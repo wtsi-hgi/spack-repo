@@ -16,7 +16,7 @@ class RDebrowser(RPackage):
 	bioc = "debrowser" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/debrowser_1.30.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/debrowser/debrowser_1.30.2.tar.gz"]
 
-	version("1.30.2", md5="002358e4e24146d0afaf63397b974ec8")
+	version("1.30.2", sha256="5dc2e79bf02010d18b321b5f735fc306cb1744dc8df7deefc73eb0deb5eca53a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

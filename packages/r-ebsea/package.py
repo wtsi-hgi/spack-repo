@@ -15,7 +15,7 @@ class REbsea(RPackage):
 	bioc = "EBSEA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EBSEA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EBSEA/EBSEA_1.30.0.tar.gz"]
 
-	version("1.30.0", md5="d016b1e83c4b885565a573db1b134fbd")
+	version("1.30.0", sha256="a373d8d37c857a9058d250398fc9dede7b0f7c4add523ba0807ba3def1675af9")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-deseq2", type=("build", "run"))

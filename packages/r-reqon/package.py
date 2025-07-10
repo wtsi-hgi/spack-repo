@@ -15,7 +15,7 @@ class RReqon(RPackage):
 	bioc = "ReQON" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ReQON_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ReQON/ReQON_1.48.0.tar.gz"]
 
-	version("1.48.0", md5="3940db44a4b48a5b04d87c9466df72c3")
+	version("1.48.0", sha256="0ff05500cc57f2765346816f068faf216d627e90b2d42623d41965a4ea584870")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))

@@ -15,7 +15,7 @@ class RSigfuge(RPackage):
 	bioc = "SigFuge" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SigFuge_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SigFuge/SigFuge_1.40.0.tar.gz"]
 
-	version("1.40.0", md5="cb03ecb39c2df4b4f5e1b49f8ba5d594")
+	version("1.40.0", sha256="b22a059afc5d48faf753e37bbeb6b0e116b370983b0150356a1d076f7e521504")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

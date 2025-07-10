@@ -16,7 +16,7 @@ class RStjoincount(RPackage):
 	bioc = "stJoincount" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/stJoincount_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/stJoincount/stJoincount_1.4.0.tar.gz"]
 
-	version("1.4.0", md5="85dd3f81a773ede72a70185cb4132d2b")
+	version("1.4.0", sha256="9f29095aaf05ac1d2f4bd293ef0e415a947ed4d6f88190c589ca2ea43aaec747")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

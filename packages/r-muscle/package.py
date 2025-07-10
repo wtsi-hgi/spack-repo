@@ -16,6 +16,6 @@ class RMuscle(RPackage):
 	bioc = "muscle" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/muscle_3.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/muscle/muscle_3.44.0.tar.gz"]
 
-	version("3.44.0", md5="159745260e624c7aeb3d2e0deeef99ab")
+	version("3.44.0", sha256="bd98b350ad010b727c8c993b5056db2b0aca3349dbf2452e3d8e9acce502b272")
 
 	depends_on("r-biostrings", type=("build", "run"))

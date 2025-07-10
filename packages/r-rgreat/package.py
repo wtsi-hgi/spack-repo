@@ -16,7 +16,7 @@ class RRgreat(RPackage):
 	bioc = "rGREAT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rGREAT_2.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rGREAT/rGREAT_2.4.0.tar.gz"]
 
-	version("2.4.0", md5="89ee57f3429887678846bba965ce84dc")
+	version("2.4.0", sha256="22281d1420cb3068c06e27e4f1535fd10160052da804a9fae28eabada2abdb25")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

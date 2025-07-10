@@ -15,7 +15,7 @@ class RHgu95dprobe(RPackage):
 	bioc = "hgu95dprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu95dprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu95dprobe/hgu95dprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="165ce5029f49fc515b9ee0e6a6a29cb5")
+	version("2.18.0", sha256="cfc4deb5507f89240e3e51f3467474c371b1ebfd5748984100412c8118129256")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

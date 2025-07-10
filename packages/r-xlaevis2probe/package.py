@@ -15,7 +15,7 @@ class RXlaevis2probe(RPackage):
 	bioc = "xlaevis2probe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/xlaevis2probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/xlaevis2probe/xlaevis2probe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="d86f8a05e106eb3123435da233ff851d")
+	version("2.18.0", sha256="62d52915ea00bdd3ef4940770b881dda526a63c4d2a892cf0601fa3ae25f306f")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

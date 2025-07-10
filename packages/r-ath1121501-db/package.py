@@ -15,7 +15,7 @@ class RAth1121501Db(RPackage):
 	bioc = "ath1121501.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ath1121501.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ath1121501.db/ath1121501.db_3.13.0.tar.gz"]
 
-	version("3.13.0", md5="c5d937ca9c6bcbb4385fb37a3b14ad15")
+	version("3.13.0", sha256="0d38488560eb2e1ed04f5991e8511440e0486df6f41494c0be2d1c6dd7559b6c")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

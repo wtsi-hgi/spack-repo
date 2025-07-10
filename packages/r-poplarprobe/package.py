@@ -15,7 +15,7 @@ class RPoplarprobe(RPackage):
 	bioc = "poplarprobe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/poplarprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/poplarprobe/poplarprobe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="87a608cd86084a06973a88e9b51f799a")
+	version("2.18.0", sha256="62bf69b1c908080155f5cd4fef35b1f8876a01aafd3a0f344e24d33127a426de")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

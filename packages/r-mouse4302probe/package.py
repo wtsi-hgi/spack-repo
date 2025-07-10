@@ -15,7 +15,7 @@ class RMouse4302probe(RPackage):
 	bioc = "mouse4302probe" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mouse4302probe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mouse4302probe/mouse4302probe_2.18.0.tar.gz"]
 
-	version("2.18.0", md5="7116787a7db241a545e79e419a8cfa0d")
+	version("2.18.0", sha256="c1267793705f59426c2fcc18462f53a64ef645ca62b1647599ae8f8a924cb686")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

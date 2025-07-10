@@ -15,7 +15,7 @@ class RGewist(RPackage):
 	bioc = "GEWIST" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEWIST_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEWIST/GEWIST_1.46.0.tar.gz"]
 
-	version("1.46.0", md5="3fe24d9c2f80cfc18dc41b37b118be6e")
+	version("1.46.0", sha256="40a98c37d32b740aee4bd0997672245457f0907f3e04d308a3d36f92ffe84b09")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-car", type=("build", "run"))

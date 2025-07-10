@@ -16,7 +16,7 @@ class RDelocal(RPackage):
 	bioc = "DELocal" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DELocal_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DELocal/DELocal_1.2.1.tar.gz"]
 
-	version("1.2.1", md5="11c1471d2d939f9a40cfa7d68dd608ca")
+	version("1.2.1", sha256="20527aec46f82a1ee17f66a2bb6a6a9abadcced3e3cf03811c5154dec383d0bf")
 	version("1.2.0", md5="40f2eac89260ff4692fb02047990d048")
 
 	depends_on("r-deseq2", type=("build", "run"))

@@ -16,7 +16,7 @@ class RGgsc(RPackage):
 	bioc = "ggsc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggsc_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggsc/ggsc_1.0.2.tar.gz"]
 
-	version("1.0.2", md5="4c0a1656e9943cadf436244c65b18242")
+	version("1.0.2", sha256="e58a6d076170b9b5cfb7e0033df16e3f42c0cea78f6c37847089cf1802ad48a3")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rcppparallel", type=("build", "run"))

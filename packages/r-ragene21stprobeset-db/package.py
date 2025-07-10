@@ -15,7 +15,7 @@ class RRagene21stprobesetDb(RPackage):
 	bioc = "ragene21stprobeset.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ragene21stprobeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ragene21stprobeset.db/ragene21stprobeset.db_8.8.0.tar.gz"]
 
-	version("8.8.0", md5="6451885f99ce3873d5d4dbacdf968181")
+	version("8.8.0", sha256="f3689bcc81442d2bab23626dd7bae4a2533a30a2b915bd3f862d6d452d6810d4")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

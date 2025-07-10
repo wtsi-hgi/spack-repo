@@ -16,7 +16,7 @@ class RTarget(RPackage):
 	bioc = "target" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/target_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/target/target_1.16.0.tar.gz"]
 
-	version("1.16.0", md5="96ca9fa7bed738941cd930b5e7491bc2")
+	version("1.16.0", sha256="ee135894447e1fd4a1198e1f5dfceb8bd5bafc4f1af4ef9a8df77adc1b3f0a4b")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))
