@@ -38,4 +38,7 @@ class PyPycddlib(PythonPackage):
 	version("3.0.2", sha256="50f43f039818ab97c8cb44345eed9a365dae66789ce11cc8c95a74134a8907a7")
 
 	depends_on("py-setuptools", type=("build"))
+	depends_on("py-cython", type=("build"))
+	depends_on("cddlib", type=("build", "link"))
+	depends_on("gmp", type=("build", "link"))
 	depends_on("python@3.9:", type=("build", "run"))

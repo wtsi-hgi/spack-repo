@@ -10,7 +10,7 @@ class PyPypoman(PythonPackage):
 	"""Python module for polyhedral geometry."""
 	
 	homepage = "https://github.com/stephane-caron/pypoman"
-	pypi = "pypoman/pypoman-1.2.0-py3-none-any.whl" 
+	pypi = "pypoman/pypoman-1.2.0.tar.gz"
 
 	version("0.5.0", sha256="7fe2cc6463b935be9dba1707fa489b626afe01acd5e84786c80a5ad823753608")
 	version("0.5.1", sha256="6563260cfa88349c2f8e9def0b91533550e74f17b39503247fa75bece4e32dce")
@@ -25,10 +25,10 @@ class PyPypoman(PythonPackage):
 
 	depends_on("py-setuptools", type=("build"))
 	depends_on("python@3.9:", type=("build", "run"))
+	
+	# Use older pycddlib version that actually works
 	depends_on("py-scipy", type=("build", "run"))
-	depends_on("py-pycddlib", type=("build", "run"))
+	depends_on("py-pycddlib@2.1.4", type=("build", "run"))
 	depends_on("py-numpy", type=("build", "run"))
 	depends_on("py-cvxopt", type=("build", "run"))
 	depends_on("py-matplotlib", type=("build", "run"))
-
-# {'cvxopt': ['0.6.0', '1.0.0'], 'matplotlib': ['0.6.0', '1.0.0'], 'numpy': ['0.6.0', '1.0.0'], 'pycddlib': ['0.6.0', '1.0.0'], 'scipy': ['0.6.0', '1.0.0'], 'cvxopt>=1.2.6': ['1.1.0', '1.1.1', '1.2.0'], 'matplotlib>=3.3.4': ['1.1.0', '1.1.1', '1.2.0'], 'numpy>=1.15.4': ['1.1.0', '1.1.1', '1.2.0'], 'pycddlib>=2.1.4': ['1.1.0'], 'scipy>=1.7.0': ['1.1.0', '1.1.1', '1.2.0'], 'pyclipper>=1.3.0;extra=="all"': ['1.1.0', '1.1.1', '1.2.0'], 'qpsolvers>=3.3.1;extra=="all"': ['1.1.0', '1.1.1', '1.2.0'], 'pycddlib>=2.1.4,<3': ['1.1.1'], 'pycddlib>=3.0.0': ['1.2.0']}
