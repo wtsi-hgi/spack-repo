@@ -6,18 +6,20 @@
 from spack.package import *
 
 
-	version("3.21.1", tag="RELEASE_3_21")
+	
 class RBiocversion(RPackage):
+	"""Set the appropriate version of Bioconductor packages.
+
+	This package provides repository information for the appropriate
+	version of Bioconductor."""
+
+	version("3.21.1", tag="RELEASE_3_21")
 	version("3.18.1", sha256="a5c8ea9ffcbd52fc7bf305bb9c58c988f590db2c5eb7114455a32fea43319997")
 	version("3.17.1", commit="a2d0c4c489be1cafdb51bf8d205161429b09ac7f")
 	version("3.16.0", commit="c681e06fe30ea6815f958c1a3c74c090863680ba")
 	version("3.15.2", commit="818ab03b6a3551993b712e3702126040f9fb7600")
 	version("3.14.0", commit="aa56d93d0ea5dcdbf301f120502981740fd91e1e")
 	version("3.12.0", commit="23b971963c6b73550a7e330dab5a046d58ce0223")
-	"""Set the appropriate version of Bioconductor packages.
-
-	This package provides repository information for the appropriate
-	version of Bioconductor."""
 
 	bioc = "BiocVersion"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocVersion_3.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocVersion/BiocVersion_3.18.1.tar.gz"]
