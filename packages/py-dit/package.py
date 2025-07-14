@@ -1,0 +1,63 @@
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Spack Project Developers. See the top-level COPYRIGHT file for details.
+#
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)
+
+from spack.package import *
+
+
+class PyDit(PythonPackage):
+	"""Python package for information theory."""
+	
+	homepage = "http://dit.io"
+	pypi = "dit/dit-1.5-py3-none-any.whl" 
+
+	version("1.0.0", sha256="763994260ca771e21130ba53ddaba838b788041747812d98a86882bba2adb4ed", expand=False, url="https://files.pythonhosted.org/packages/6f/28/de7ce24245aa75543fc4fa20de286361e07ab5715bb4ce17309f4c7b7efd/dit-1.0.0-py2.py3-none-any.whl")
+	version("1.0.0.dev0", sha256="1024c1aa00f520d15c4457c21f2572c71aadef64a4a741d00b4df4d600fe8098", expand=False, url="https://files.pythonhosted.org/packages/6c/a4/ee60617db65fc2f90383257d4621a3469a529044d9f7f22cc8bd800fc998/dit-1.0.0.dev0-py2.py3-none-any.whl")
+	version("1.0.0.dev1", sha256="63ae0c56c2d60528a52c57a09e06dc00603d5828b7e91a77127ca07ac78361a2", expand=False, url="https://files.pythonhosted.org/packages/50/6d/0fc317db06ebce0c4bdaa35527ccec7924b8762ba6ca8a742e91f3ff1e37/dit-1.0.0.dev1-py2.py3-none-any.whl")
+	version("1.0.0.dev10", sha256="5750c60661aceb60bfe21f73a3151d6aa34bae7bbc235e6d3a3c9e2d8acc7626", expand=False, url="https://files.pythonhosted.org/packages/80/9f/5241acd0ae47fdce84d45c4e30814e45234da3890f41b7904ce2e8d9848d/dit-1.0.0.dev10-py2.py3-none-any.whl")
+	version("1.0.0.dev11", sha256="15ddc325e279c408c5640b6c57dd1a67e1d569db27877014ef68f6dea3c481e0", expand=False, url="https://files.pythonhosted.org/packages/df/7c/1d860a43388de8cf3a7895560dffcea3156d0da0e6d841e94cf536fc3247/dit-1.0.0.dev11-py2.py3-none-any.whl")
+	version("1.0.0.dev12", sha256="17c1b093f35737cfc52049f1e2334a129a676ab8be74f280156e91a7d00afc05", expand=False, url="https://files.pythonhosted.org/packages/89/8b/a225fa466142e4e001f847d486bb7b1978a00996b83b7cd1486bec7d7268/dit-1.0.0.dev12-py2.py3-none-any.whl")
+	version("1.0.0.dev13", sha256="115068f4d095e6680d623bdddb23ab143ef348f73d24a40cf268cd64de082e22", expand=False, url="https://files.pythonhosted.org/packages/24/74/98a4299ae46236776598fb8e2043dbaf2a900a518d77eaa9eab0cfeb2e42/dit-1.0.0.dev13-py2.py3-none-any.whl")
+	version("1.0.0.dev14", sha256="5a3ce425cad2091d8671c290e979a1eab570916f052b63b34019594faa3086a1", expand=False, url="https://files.pythonhosted.org/packages/d2/98/3acbb5e3cf96cf0ee52926e5df96916809c29cda23fa947c03df94f3ea0a/dit-1.0.0.dev14-py2.py3-none-any.whl")
+	version("1.0.0.dev15", sha256="8c0fe1890d41d5c0a23617324e60ed336d16e8ea9a770b4df73800f9339788c4", expand=False, url="https://files.pythonhosted.org/packages/a5/32/b64df1dbb20a8be7d1a77b4ee97ba5cddf7a18fe33be6c7b38c011eb2a49/dit-1.0.0.dev15-py2.py3-none-any.whl")
+	version("1.0.0.dev16", sha256="bf03f7ee4f391c26ae3e445f97cd6ad7a26b8f8b48b0c6631eff9ea94bf88275", expand=False, url="https://files.pythonhosted.org/packages/d3/48/fb85f4f1cd01d586c173771cd13f6d5380a211c52147d668bdd6227e8b6f/dit-1.0.0.dev16-py2.py3-none-any.whl")
+	version("1.0.0.dev17", sha256="b48cf3d35c68cbabe06dd1816499f0a193a495c8b0c45189615d958543fb9021", expand=False, url="https://files.pythonhosted.org/packages/4d/a0/a2114ccbb736d84e2a93c22da6329e6a43d539958cae246ffb758e3f6ecc/dit-1.0.0.dev17-py2.py3-none-any.whl")
+	version("1.0.0.dev18", sha256="a669922b6d94a5ba5057e7a8d364cedccc08278bd53bac25b580492845dae5b7", expand=False, url="https://files.pythonhosted.org/packages/23/38/288822ac1eac2aab0d88dd2898576fc3548c4fb68f370332b515f7ec1183/dit-1.0.0.dev18-py2.py3-none-any.whl")
+	version("1.0.0.dev19", sha256="3dc8c2720feb6d0e154623f0ff0ae9cad898767a62daccd7cdac5bdf99092057", expand=False, url="https://files.pythonhosted.org/packages/3d/90/e439514d5b5e5f62285fb5b1a482c3edc4720a954e8c5d1a1a3baf0694fe/dit-1.0.0.dev19-py2.py3-none-any.whl")
+	version("1.0.0.dev2", sha256="1d8cbbeb0cc7f34bb3d51c6fd0cae29d67124ca2885b53b626eb6949b2cbf79b", expand=False, url="https://files.pythonhosted.org/packages/2c/70/e09a7a64ff6909130f27249544d06be2ed6be1c8dd6ccd275ec84054350a/dit-1.0.0.dev2-py2.py3-none-any.whl")
+	version("1.0.0.dev20", sha256="965ae48e258644604eb52fbf6afb39a9abfb867aa47e7d591b1ad5959c3f8cf8", expand=False, url="https://files.pythonhosted.org/packages/c4/c0/5f363c33e7fd384140c8fb81a56f6b3b61541aa71c83076ad67a2d8d9c8b/dit-1.0.0.dev20-py2.py3-none-any.whl")
+	version("1.0.0.dev21", sha256="7127dee22d4958b7f36c9fcc8b652d29f26c706fb9769c01af2e64e9f7592dc0", expand=False, url="https://files.pythonhosted.org/packages/6e/9a/d7658c03621b86763f0193cb939931fd0554f37ccf2c4353c104e1c1a2e4/dit-1.0.0.dev21-py2.py3-none-any.whl")
+	version("1.0.0.dev22", sha256="ec5e5c083006980925d14f59b620b9bd9be184e42850ab00534df90bbfbbb8a2", expand=False, url="https://files.pythonhosted.org/packages/1c/d9/ccf9bca0af7010427fdd89c0b54d2f754a04542cb1015cd53322c55eb281/dit-1.0.0.dev22-py2.py3-none-any.whl")
+	version("1.0.0.dev23", sha256="db57b8f36b8859d4a4c0e2d646a6b024432daac71f2fd9f2355ddba123eb0c3a", expand=False, url="https://files.pythonhosted.org/packages/a3/d6/42494d22da2d069792b7addc28b5b2e17e784f060e6c98dc7929adb29cfe/dit-1.0.0.dev23-py2.py3-none-any.whl")
+	version("1.0.0.dev24", sha256="b4a7a959137dedd7b494360d080c96c11908b39c964d0c3968de4b0524a13efa", expand=False, url="https://files.pythonhosted.org/packages/44/fd/a1bd8aa6a83c4f3fdd4d205f33885a4210df82fa3ff7b0040bc786b3ba38/dit-1.0.0.dev24-py2.py3-none-any.whl")
+	version("1.0.0.dev25", sha256="8d1ee4dc136949825567d8df61b7597c39ed2846cdfe1ac4f6982b6d76ba6716", expand=False, url="https://files.pythonhosted.org/packages/67/57/758f340af33f979c9616a5253b03ae42596669463c7385c744764cfd9c74/dit-1.0.0.dev25-py2.py3-none-any.whl")
+	version("1.0.0.dev26", sha256="68ea83656910ca84d796b62e705e7ffb5c0b9dcaffb6a013e91beda0a335393e", expand=False, url="https://files.pythonhosted.org/packages/63/7f/1b2d7f045781b155534659d5e8da92a7d4a7bd3a675b7db1f76d7010f7be/dit-1.0.0.dev26-py2.py3-none-any.whl")
+	version("1.0.0.dev27", sha256="7a23aae220d3e27243693a3d246ced8f77fb9b454bcd4b77eaf2393d51e802f3", expand=False, url="https://files.pythonhosted.org/packages/47/6a/cd616c99353faf438c46c54c9e7a19162762feae549c992a2da9c85d514b/dit-1.0.0.dev27-py2.py3-none-any.whl")
+	version("1.0.0.dev3", sha256="f06efbdbd7be6ce88b686f928ef1ca179e616e8dc5da062b7c20980225d9c953", expand=False, url="https://files.pythonhosted.org/packages/2d/c3/a6b3ba23b4ef4b2d75d77690283791eb5d0e8869d8d7ef15536d7f88ace7/dit-1.0.0.dev3-py2.py3-none-any.whl")
+	version("1.0.0.dev4", sha256="e593fe0b100ff92b654984e1cc2198c5d259b5e88f42e61ba587318757a5eeea", expand=False, url="https://files.pythonhosted.org/packages/be/3f/181c66d2cee6e6f3fd54d6205e0375ff93935d1ff919055e462cd4ce7a2a/dit-1.0.0.dev4-py2.py3-none-any.whl")
+	version("1.0.0.dev5", sha256="8efe6864a67e962a90ae8efb06cd5abb8ea4d43ce2a99adcbe2230f6b0eedf63", expand=False, url="https://files.pythonhosted.org/packages/fe/54/9c889e0a34cbf7f47db5831c38de1535c1eaa12fd65c8b747e4c4b454ed7/dit-1.0.0.dev5-py2.py3-none-any.whl")
+	version("1.0.0.dev6", sha256="0ca017fbfd953728b88b45d55508678e0d6deea1e690f9b08c73bdf61705cbcb", expand=False, url="https://files.pythonhosted.org/packages/86/e8/1fa9420b3f52931712946da8ab6c7cdb755f31daf1c3c179d211c6327d81/dit-1.0.0.dev6-py2.py3-none-any.whl")
+	version("1.0.0.dev7", sha256="daa40ff8fe746942e45039710987c8fb46f886c2ec2827f8f5cf5cbcbcdfc95c", expand=False, url="https://files.pythonhosted.org/packages/26/2b/c0ee39c2377042aade05c2043d7ac774fbbd99ee7cf8311d921de2351c2c/dit-1.0.0.dev7-py2.py3-none-any.whl")
+	version("1.0.0.dev8", sha256="f1f118da5edb08af6100fc5764f6cba14bc92d0e705885303c34274d0314e2a9", expand=False, url="https://files.pythonhosted.org/packages/a8/0d/10caa91f8cd46ab8708dc6996398288ccd871f5480dcc4ee4ccac548879c/dit-1.0.0.dev8-py2.py3-none-any.whl")
+	version("1.0.0.dev9", sha256="0bfd7053700a4c8eab0e9331d910a7481d9489eeda84581ecf71468e98ecb1f4", expand=False, url="https://files.pythonhosted.org/packages/74/b3/1a30e999b43e93d4acf5e62fae025ba8b6d7fd8393c813e48be16feb309f/dit-1.0.0.dev9-py2.py3-none-any.whl")
+	version("1.0.1", sha256="81dfde86948456da16d8d3156fa6e24fe627994e2f5c10155ce9ef9589ffa5b6", expand=False, url="https://files.pythonhosted.org/packages/56/45/210f16698fbb5493c4400b492bc903c44715451175cc6a539d1939a1c9a3/dit-1.0.1-py2.py3-none-any.whl")
+	version("1.0.2", sha256="8b642efdb37a2e29b082a57304bf34766c5e78f6f6c5c7ed0e8a5cb8fbb4299e", expand=False, url="https://files.pythonhosted.org/packages/32/7e/b2e3e548707240a64367fd4f518ee835db08adb424ab33f587d3f123109a/dit-1.0.2-py2.py3-none-any.whl")
+	version("1.1.0", sha256="f518c0bab0c302f6e081116fddf7ac3a821f5d8d6f84ddcb3a389ca8fc47d792", expand=False, url="https://files.pythonhosted.org/packages/87/f5/8961bdd2ad68453113688801bdb28f07f0d7777637f08fb72511a5ff935d/dit-1.1.0-py2.py3-none-any.whl")
+	version("1.2.0", sha256="50bc510acbd681a443ba769f37b1d69fec50a0f02e87b159b94d6d05b0e243d0", expand=False, url="https://files.pythonhosted.org/packages/53/59/3d78030ab5138dd1f7771384eaf7ff2f7dbaf1419c4ed1932fb828917a6c/dit-1.2.0-py2.py3-none-any.whl")
+	version("1.2.1", sha256="3acfe81f52c7e0aef8714b49c00b552e28bfbb3a79a73da9b7698e962274ef87", expand=False, url="https://files.pythonhosted.org/packages/b2/c1/4b15943ab6b609c094a79e569da96844b2ed7ed69d8fdd79073efdc660e8/dit-1.2.1-py2.py3-none-any.whl")
+	version("1.2.3", sha256="6a30b1e0510b8ec4f07dbb7b47a42a9fedfdddb334dfb701d05c461a79dc7e8a", expand=False, url="https://files.pythonhosted.org/packages/ac/29/8172e0ea15be3966196e8a1a4078564f4246803dd4f09b1871881e118467/dit-1.2.3-py2.py3-none-any.whl")
+	version("1.5", sha256="8a6c50818cb2edf4b64415aa6bf0df0d3ed557cf6f2e6954f5618472c34aa2c2", expand=False, url="https://files.pythonhosted.org/packages/2b/37/80ab8294550d9549627fa935bee5d794572e66ad2e1b3b2204e59e2c6162/dit-1.5-py3-none-any.whl")
+
+	depends_on("py-setuptools", type=("build"))
+	depends_on("python@3.3:", type=("build", "run"))
+	depends_on("py-numpy", type=("build", "run"))
+	depends_on("py-pypoman", type=("build", "run"))
+	depends_on("py-lattices", type=("build", "run"))
+	depends_on("py-debtcollector", type=("build", "run"))
+	depends_on("py-boltons", type=("build", "run"))
+	depends_on("py-networkx", type=("build", "run"))
+	depends_on("py-pltable", type=("build", "run"))
+	depends_on("py-scipy", type=("build", "run"))
+
+# {'boltons': ['1.0.0', '1.0.0.dev14', '1.0.0.dev15', '1.0.0.dev16', '1.0.0.dev17', '1.0.0.dev18', '1.0.0.dev19', '1.0.0.dev20', '1.0.0.dev21', '1.0.0.dev22', '1.0.0.dev23', '1.0.0.dev24', '1.0.0.dev25', '1.0.0.dev26', '1.0.0.dev27', '1.0.1', '1.0.2', '1.1.0', '1.2.0', '1.2.1', '1.2.3', '1.5'], 'contextlib2': ['1.0.0', '1.0.0.dev14', '1.0.0.dev15', '1.0.0.dev16', '1.0.0.dev17', '1.0.0.dev18', '1.0.0.dev19', '1.0.0.dev20', '1.0.0.dev21', '1.0.0.dev22', '1.0.0.dev23', '1.0.0.dev24', '1.0.0.dev25', '1.0.0.dev26', '1.0.0.dev27', '1.0.1', '1.0.2', '1.1.0', '1.2.0', '1.2.1', '1.2.3'], 'debtcollector': ['1.0.0', '1.0.0.dev14', '1.0.0.dev15', '1.0.0.dev16', '1.0.0.dev17', '1.0.0.dev18', '1.0.0.dev19', '1.0.0.dev20', '1.0.0.dev21', '1.0.0.dev22', '1.0.0.dev23', '1.0.0.dev24', '1.0.0.dev25', '1.0.0.dev26', '1.0.0.dev27', '1.0.1', '1.0.2', '1.1.0', '1.2.0', '1.2.1', '1.2.3', '1.5'], 'networkx': ['1.0.0', '1.0.0.dev14', '1.0.0.dev15', '1.0.0.dev16', '1.0.0.dev17', '1.0.0.dev18', '1.0.0.dev19', '1.0.0.dev20', '1.0.0.dev21', '1.0.0.dev22', '1.0.0.dev23', '1.0.0.dev24', '1.0.0.dev25', '1.0.0.dev26', '1.0.0.dev27', '1.0.1', '1.0.2', '1.1.0', '1.2.0', '1.2.1', '1.2.3'], 'numpy(>=1.11)': ['1.0.0', '1.0.0.dev14', '1.0.0.dev15', '1.0.0.dev16', '1.0.0.dev17', '1.0.0.dev18', '1.0.0.dev19', '1.0.0.dev20', '1.0.0.dev21', '1.0.0.dev22', '1.0.0.dev23', '1.0.0.dev24', '1.0.0.dev25', '1.0.0.dev26', '1.0.0.dev27', '1.0.1', '1.0.2', '1.1.0', '1.2.0', '1.2.1', '1.2.3', '1.5'], 'prettytable': ['1.0.0', '1.0.0.dev14', '1.0.0.dev15', '1.0.0.dev16', '1.0.0.dev17', '1.0.0.dev18', '1.0.0.dev19', '1.0.0.dev20', '1.0.0.dev21', '1.0.0.dev22', '1.0.0.dev23', '1.0.0.dev24', '1.0.0.dev25', '1.0.0.dev26', '1.0.0.dev27', '1.0.1', '1.0.2', '1.1.0', '1.2.0', '1.2.1', '1.2.3'], 'scipy(>=0.15.0)': ['1.0.0', '1.0.0.dev16', '1.0.0.dev17', '1.0.0.dev18', '1.0.0.dev19', '1.0.0.dev20', '1.0.0.dev21', '1.0.0.dev22', '1.0.0.dev23', '1.0.0.dev24', '1.0.0.dev25', '1.0.0.dev26', '1.0.0.dev27', '1.0.1', '1.0.2', '1.1.0', '1.2.0', '1.2.1', '1.2.3'], 'six(>=1.4.0)': ['1.0.0', '1.0.0.dev14', '1.0.0.dev15', '1.0.0.dev16', '1.0.0.dev17', '1.0.0.dev18', '1.0.0.dev19', '1.0.0.dev20', '1.0.0.dev21', '1.0.0.dev22', '1.0.0.dev23', '1.0.0.dev24', '1.0.0.dev25', '1.0.0.dev26', '1.0.0.dev27', '1.0.1', '1.0.2', '1.1.0', '1.2.0', '1.2.1', '1.2.3'], 'lattices(>=0.3.5)': ['1.5'], 'networkx(>=2.6)': ['1.5'], 'PLTable': ['1.5'], 'scipy(>=1.2.0)': ['1.5'], 'pypoman': ['1.5']}
