@@ -25,10 +25,8 @@ class PyPypoman(PythonPackage):
 
 	depends_on("py-setuptools", type=("build"))
 	depends_on("python@3.9:", type=("build", "run"))
-	
-	# Use older pycddlib version that actually works
 	depends_on("py-scipy", type=("build", "run"))
-	depends_on("py-pycddlib@2.1.4", type=("build", "run"))
+	depends_on("py-pycddlib", type=("build", "run"))
 	depends_on("py-numpy", type=("build", "run"))
 	depends_on("py-cvxopt", type=("build", "run"))
 	depends_on("py-matplotlib", type=("build", "run"))
