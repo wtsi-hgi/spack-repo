@@ -15,7 +15,7 @@ class RBiocbaseutils(RPackage):
 	bioc = "BiocBaseUtils" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocBaseUtils_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocBaseUtils/BiocBaseUtils_1.4.0.tar.gz"]
 
-    version("1.10.0", tag="RELEASE_3_21")
+	version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="e588788262936ed9cc83ab198ec4a0e3b95f92af6cd443a66d1b6c9827fa32a1")
 
 	depends_on("r@4.2:", type=("build", "run"))

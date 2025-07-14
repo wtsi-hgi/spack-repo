@@ -15,7 +15,7 @@ class RZygositypredictor(RPackage):
 	bioc = "ZygosityPredictor" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ZygosityPredictor_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ZygosityPredictor/ZygosityPredictor_1.2.0.tar.gz"]
 
-    version("1.8.0", tag="RELEASE_3_21")
+	version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="cc26ab6a56051056f82a4cc972d7de845c8e78e874ee40969e992de4d2cf7c03")
 
 	depends_on("r@4.3:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RAhpubmeddbs(RPackage):
 	bioc = "AHPubMedDbs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AHPubMedDbs_1.7.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/AHPubMedDbs/AHPubMedDbs_1.7.0.tar.gz"]
 
-    version("1.8.0", tag="RELEASE_3_21")
+	version("1.8.0", tag="RELEASE_3_21")
 	version("1.7.0", sha256="77b3c474cfff7f96e3faa43be790cfafde61ae91710746bcb7fc9604a1ec2428")
 
 	depends_on("r@4.1:", type=("build", "run"))

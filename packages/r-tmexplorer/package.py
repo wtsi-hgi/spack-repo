@@ -15,7 +15,7 @@ class RTmexplorer(RPackage):
 	bioc = "TMExplorer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TMExplorer_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TMExplorer/TMExplorer_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="c4ff20168bcd9eb6677aca99cf9f75cbda32506690cad7dbc59c7fb7ee4e296e")
 
 	depends_on("r@4.1:", type=("build", "run"))

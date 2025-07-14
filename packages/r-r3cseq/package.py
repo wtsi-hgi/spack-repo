@@ -16,7 +16,7 @@ class RR3cseq(RPackage):
 	bioc = "r3Cseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/r3Cseq_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/r3Cseq/r3Cseq_1.48.0.tar.gz"]
 
-    version("1.54.0", tag="RELEASE_3_21")
+	version("1.54.0", tag="RELEASE_3_21")
 	version("1.48.0", sha256="c8081fc10e77cdf73b0f3ca6f5a376bd1b2beebb550e70c6490cc0113c7393d2")
 
 	depends_on("r-genomicranges", type=("build", "run"))

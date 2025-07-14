@@ -15,7 +15,7 @@ class RPrebsdata(RPackage):
 	bioc = "prebsdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/prebsdata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/prebsdata/prebsdata_1.38.0.tar.gz"]
 
-    version("1.44.0", tag="RELEASE_3_21")
+	version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="dbbab4f454a2838db25095143f2f01cff17e5920de7d8208d0d401ac0b7c5fcb")
 
 	depends_on("r@2.14:", type=("build", "run"))

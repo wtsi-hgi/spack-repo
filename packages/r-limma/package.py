@@ -14,7 +14,7 @@ class RLimma(RPackage):
 
 	bioc = "limma"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/limma_3.58.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/limma/limma_3.58.1.tar.gz"]
-    version("3.64.1", tag="RELEASE_3_21")
+	version("3.64.1", tag="RELEASE_3_21")
 	version("3.58.1", sha256="3539e1645808dd7fe16d0b53df8c0a775283f15b68e670504fb37b09a1957e05")
 	version("3.56.0", commit="efe857829233edb11ae317ce5d1ad4ea3073cf7f")
 	version("3.54.0", commit="1d1fa843d4fe2f8c94fd843bb1e80b8384d8306e")

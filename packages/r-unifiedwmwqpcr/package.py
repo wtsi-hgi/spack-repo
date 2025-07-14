@@ -15,7 +15,7 @@ class RUnifiedwmwqpcr(RPackage):
 	bioc = "unifiedWMWqPCR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/unifiedWMWqPCR_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/unifiedWMWqPCR/unifiedWMWqPCR_1.38.0.tar.gz"]
 
-    version("1.44.0", tag="RELEASE_3_21")
+	version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="edd56d5071863d4e4a97db601e2174cff243fb2104b13ad9eec6603baabd726c")
 
 	depends_on("r-biocgenerics", type=("build", "run"))

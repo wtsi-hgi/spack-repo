@@ -16,7 +16,7 @@ class RSitadela(RPackage):
 	bioc = "sitadela" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sitadela_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sitadela/sitadela_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="4ec4a2554df9ad47efbba6278684e63db4eda244aeff84f0f3b6f0c8f008d765")
 
 	depends_on("r@4.1:", type=("build", "run"))

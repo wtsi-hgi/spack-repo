@@ -15,7 +15,7 @@ class RRebet(RPackage):
 	bioc = "REBET" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/REBET_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/REBET/REBET_1.20.0.tar.gz"]
 
-    version("1.26.0", tag="RELEASE_3_21")
+	version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="bbdfd247fad8eb4ded97bbcc63b3c98734f81202ba545f399d265d9a532c0b0d")
 
 	depends_on("r-asset", type=("build", "run"))

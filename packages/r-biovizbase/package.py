@@ -17,7 +17,7 @@ class RBiovizbase(RPackage):
 	bioc = "biovizBase"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biovizBase_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biovizBase/biovizBase_1.50.0.tar.gz"]
 
-    version("1.56.0", tag="RELEASE_3_21")
+	version("1.56.0", tag="RELEASE_3_21")
 	version("1.50.0", sha256="e5276fc7a3cb9aef5078f886f3ba3d11833803b6bf1832ef93d205ac12891406")
 	version("1.48.0", commit="534db77074710dae57ade81844c769fd35a2fa9c")
 	version("1.46.0", commit="a47060cfb68e3f3b4876114af932823aed5d2d57")

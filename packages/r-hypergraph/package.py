@@ -14,7 +14,7 @@ class RHypergraph(RPackage):
 
 	bioc = "hypergraph"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hypergraph_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hypergraph/hypergraph_1.74.0.tar.gz"]
-    version("1.80.0", tag="RELEASE_3_21")
+	version("1.80.0", tag="RELEASE_3_21")
 	version("1.74.0", sha256="b13eade58013768c012f27c52728b5143f174ab14cf0cfbdc64e36cbbe937299")
 	version("1.72.0", commit="1b619b8dfeaf13dca7857013495d52dcfe4276b4")
 	version("1.70.0", commit="a5ffeafa8b999b5e7e77f93f4e6284abafc81621")

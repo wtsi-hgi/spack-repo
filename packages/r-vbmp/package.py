@@ -16,7 +16,7 @@ class RVbmp(RPackage):
 	bioc = "vbmp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vbmp_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vbmp/vbmp_1.70.0.tar.gz"]
 
-    version("1.76.0", tag="RELEASE_3_21")
+	version("1.76.0", tag="RELEASE_3_21")
 	version("1.70.0", sha256="0b164b582ebbff58a41ff65fa392b843415612b5f0d515f93d4bdd722bf84ec4")
 
 	depends_on("r@2.10:", type=("build", "run"))

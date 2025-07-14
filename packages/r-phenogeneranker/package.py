@@ -15,7 +15,7 @@ class RPhenogeneranker(RPackage):
 	bioc = "PhenoGeneRanker" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PhenoGeneRanker_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PhenoGeneRanker/PhenoGeneRanker_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="bbf9959bbc8941ae1176a83797e32236e51ce0cfea87bc2ab19ee391fd6222a4")
 
 	depends_on("r-igraph", type=("build", "run"))

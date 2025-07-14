@@ -16,7 +16,7 @@ class RFrma(RPackage):
 	bioc = "frma" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/frma_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/frma/frma_1.54.0.tar.gz"]
 
-    version("1.60.0", tag="RELEASE_3_21")
+	version("1.60.0", tag="RELEASE_3_21")
 	version("1.54.0", sha256="272d93b320e8293f6d6690926c8968f39cd3b1794e9bbda0e51474a811292d54")
 
 	depends_on("r@2.10:", type=("build", "run"))

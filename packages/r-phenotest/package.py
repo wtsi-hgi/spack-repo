@@ -15,7 +15,7 @@ class RPhenotest(RPackage):
 	bioc = "phenoTest" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phenoTest_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phenoTest/phenoTest_1.50.0.tar.gz"]
 
-    version("1.56.0", tag="RELEASE_3_21")
+	version("1.56.0", tag="RELEASE_3_21")
 	version("1.50.0", sha256="058e8c210a1dd8f218895a358a5157e4c34bae2d1c916418675a1766955c3543")
 
 	depends_on("r@3.6:", type=("build", "run"))

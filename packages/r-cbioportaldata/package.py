@@ -15,7 +15,7 @@ class RCbioportaldata(RPackage):
 	bioc = "cBioPortalData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cBioPortalData_2.14.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cBioPortalData/cBioPortalData_2.14.2.tar.gz"]
 
-    version("2.20.0", tag="RELEASE_3_21")
+	version("2.20.0", tag="RELEASE_3_21")
 	version("2.14.2", sha256="06038da253b5f99d40955b99dc8f64d9bd8bdd0e81b934ae02d8ffb896b967ad")
 
 	depends_on("r@4.2:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RProfileplyr(RPackage):
 	bioc = "profileplyr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/profileplyr_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/profileplyr/profileplyr_1.18.0.tar.gz"]
 
-    version("1.24.1", tag="RELEASE_3_21")
+	version("1.24.1", tag="RELEASE_3_21")
 	version("1.18.0", sha256="db9efeae6afec2121e6cec9152aaccd047a0d31d3abed3711cddd5b00a25cfb2")
 
 	depends_on("r@3.6:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RGeneoverlap(RPackage):
 	bioc = "GeneOverlap" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneOverlap_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneOverlap/GeneOverlap_1.38.0.tar.gz"]
 
-    version("1.44.0", tag="RELEASE_3_21")
+	version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="fc7e3b2fef8a07b78a9a4ad2f45ccac6bf9cd2054ac74865ef086af46d1c8d1c")
 
 	depends_on("r-rcolorbrewer", type=("build", "run"))

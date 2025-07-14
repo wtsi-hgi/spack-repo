@@ -15,7 +15,7 @@ class RHelloranges(RPackage):
 	bioc = "HelloRanges" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HelloRanges_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HelloRanges/HelloRanges_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="f0d1b197fc916d7994d35dcd492158859f063790899e2cdac318fbd9232cfd5f")
 
 	depends_on("r-biocgenerics", type=("build", "run"))

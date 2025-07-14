@@ -15,7 +15,7 @@ class RHiergwas(RPackage):
 	bioc = "hierGWAS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hierGWAS_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hierGWAS/hierGWAS_1.32.0.tar.gz"]
 
-    version("1.38.0", tag="RELEASE_3_21")
+	version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="8f8ca9f49526fb632ca63f182dff1dee7ebe09d90e83c8b9de4ea290ab9f143d")
 
 	depends_on("r@3.2:", type=("build", "run"))

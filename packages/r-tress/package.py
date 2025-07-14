@@ -15,7 +15,7 @@ class RTress(RPackage):
 	bioc = "TRESS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TRESS_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TRESS/TRESS_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="8732c8493520665430e6eb8fb2992645451343919d6897e10d35e19399729bee")
 
 	depends_on("r@4.1:", type=("build", "run"))

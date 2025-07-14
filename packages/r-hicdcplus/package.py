@@ -15,7 +15,7 @@ class RHicdcplus(RPackage):
 	bioc = "HiCDCPlus" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiCDCPlus_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiCDCPlus/HiCDCPlus_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="27cf53579d296cb9eb3207eceb6dba5db6620c72b55a60f8f2cac44089bdc50a")
 
 	depends_on("r-rcpp", type=("build", "run"))

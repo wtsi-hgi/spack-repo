@@ -15,7 +15,7 @@ class RAsicsdata(RPackage):
 	bioc = "ASICSdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ASICSdata_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ASICSdata/ASICSdata_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="c8b8d4df88e867d25a515212e3debde68728f51a3b35f2f1c5fb0c96e411b507")
 
 	depends_on("r@3.5:", type=("build", "run"))

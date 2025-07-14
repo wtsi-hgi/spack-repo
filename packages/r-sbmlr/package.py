@@ -16,7 +16,7 @@ class RSbmlr(RPackage):
 	bioc = "SBMLR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SBMLR_1.98.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SBMLR/SBMLR_1.98.0.tar.gz"]
 
-    version("2.4.0", tag="RELEASE_3_21")
+	version("2.4.0", tag="RELEASE_3_21")
 	version("1.98.0", sha256="2abcd86c8baac8cea1698a321cb996dea62909b7407cadc793343bfef2cf90b2")
 
 	depends_on("r-xml", type=("build", "run"))

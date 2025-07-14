@@ -15,7 +15,7 @@ class RTkwidgets(RPackage):
 	bioc = "tkWidgets" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tkWidgets_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tkWidgets/tkWidgets_1.80.0.tar.gz"]
 
-    version("1.86.0", tag="RELEASE_3_21")
+	version("1.86.0", tag="RELEASE_3_21")
 	version("1.80.0", sha256="3267fca54e0f0e1232365e8bf71b104e7febfc5cb47d5be8304da857a9cb4885")
 
 	depends_on("r@2:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RQsea(RPackage):
 	bioc = "qsea" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qsea_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qsea/qsea_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="271bdac73677d877dae94b0436fece33a96c0242d538cf57010c5bac1515e147")
 
 	depends_on("r@4.3:", type=("build", "run"))

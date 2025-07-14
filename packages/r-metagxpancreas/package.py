@@ -15,7 +15,7 @@ class RMetagxpancreas(RPackage):
 	bioc = "MetaGxPancreas" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MetaGxPancreas_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MetaGxPancreas/MetaGxPancreas_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="232c483d012b2273d4bb0a5528acdd0bdb98eb036d6f01dbf4860119e153ad28")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))

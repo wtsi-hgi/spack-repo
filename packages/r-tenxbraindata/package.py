@@ -15,7 +15,7 @@ class RTenxbraindata(RPackage):
 	bioc = "TENxBrainData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TENxBrainData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TENxBrainData/TENxBrainData_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="de8b43bc5163299b74bf57e643b117b9ccee5c5e65bfadc0083ebe83a55147c5")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))

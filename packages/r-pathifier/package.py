@@ -15,7 +15,7 @@ class RPathifier(RPackage):
 	bioc = "pathifier" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pathifier_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pathifier/pathifier_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="76dd66e9e9690eb73002de1ee4042497c2ef5e94fae202e280d308505a60b078")
 
 	depends_on("r-r-oo", type=("build", "run"))

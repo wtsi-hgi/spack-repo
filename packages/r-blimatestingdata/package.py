@@ -16,7 +16,7 @@ class RBlimatestingdata(RPackage):
 	bioc = "blimaTestingData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/blimaTestingData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/blimaTestingData/blimaTestingData_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="f4e600cbcdb4b9175d341dfda2bd72ef04c3e6e798d95f7fd6cbafd77be13493")
 
 	depends_on("r@3:", type=("build", "run"))

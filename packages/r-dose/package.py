@@ -18,7 +18,7 @@ class RDose(RPackage):
 
 	bioc = "DOSE"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DOSE_3.28.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DOSE/DOSE_3.28.2.tar.gz"]
-    version("4.2.0", tag="RELEASE_3_21")
+	version("4.2.0", tag="RELEASE_3_21")
 	version("3.8.2", commit="4d3d1ca710aa7e4288a412c8d52b054b86a57639")
 	version("3.6.1", commit="f2967f0482cea39222bfd15767d0f4a5994f241b")
 	version("3.4.0", commit="dabb70de1a0f91d1767601e871f2f1c16d29a612")

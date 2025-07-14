@@ -16,7 +16,7 @@ class RHeron(RPackage):
 	bioc = "HERON" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HERON_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HERON/HERON_1.0.0.tar.gz"]
 
-    version("1.6.1", tag="RELEASE_3_21")
+	version("1.6.1", tag="RELEASE_3_21")
 	version("1.0.0", sha256="b1a365540c32dac743dc87e5428e26692fd7174ec8a76f014d19e727ab60e34b")
 
 	depends_on("r@4.3:", type=("build", "run"))

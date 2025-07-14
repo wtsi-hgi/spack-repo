@@ -16,7 +16,7 @@ class RDeconvr(RPackage):
 	bioc = "deconvR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/deconvR_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/deconvR/deconvR_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="2358e1bfee30fa0164c609fdfb86101d34346a4dce7a416dfa9c6be414b7845e")
 
 	depends_on("r@4.1:", type=("build", "run"))

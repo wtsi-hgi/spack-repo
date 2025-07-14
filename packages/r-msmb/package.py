@@ -15,7 +15,7 @@ class RMsmb(RPackage):
 	bioc = "MSMB" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MSMB_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MSMB/MSMB_1.20.0.tar.gz"]
 
-    version("1.26.0", tag="RELEASE_3_21")
+	version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="405b0ac8f361b5011c10c46786ce099660bc5584e5e9ef000101033fd8f109db")
 
 	depends_on("r@3.5:", type=("build", "run"))

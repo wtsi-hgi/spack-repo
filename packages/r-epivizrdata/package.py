@@ -16,7 +16,7 @@ class REpivizrdata(RPackage):
 	bioc = "epivizrData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epivizrData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epivizrData/epivizrData_1.30.0.tar.gz"]
 
-    version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="80faf0daefad1dcca24249413a3bd54a22e32e5fffe2b8044b44eeb36cd02365")
 
 	depends_on("r@3.4:", type=("build", "run"))

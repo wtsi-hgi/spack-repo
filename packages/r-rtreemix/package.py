@@ -15,7 +15,7 @@ class RRtreemix(RPackage):
 	bioc = "Rtreemix" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rtreemix_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rtreemix/Rtreemix_1.64.0.tar.gz"]
 
-    version("1.70.0", tag="RELEASE_3_21")
+	version("1.70.0", tag="RELEASE_3_21")
 	version("1.64.0", sha256="e57f94f6a2327d4579a5adc9937806c7fac244773d84ed3a7f4490aae25aca5d")
 
 	depends_on("r@2.5:", type=("build", "run"))

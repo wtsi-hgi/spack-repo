@@ -15,7 +15,7 @@ class RCnvgsa(RPackage):
 	bioc = "cnvGSA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cnvGSA_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cnvGSA/cnvGSA_1.46.0.tar.gz"]
 
-    version("1.52.0", tag="RELEASE_3_21")
+	version("1.52.0", tag="RELEASE_3_21")
 	version("1.46.0", sha256="7aecf6d5c195b51aefac506a1be5ef5a8bf2a0394e12f67b3c32e4c11e2addce")
 
 	depends_on("r-brglm", type=("build", "run"))

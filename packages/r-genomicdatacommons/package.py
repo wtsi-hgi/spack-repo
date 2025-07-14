@@ -16,7 +16,7 @@ class RGenomicdatacommons(RPackage):
 	bioc = "GenomicDataCommons" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicDataCommons_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicDataCommons/GenomicDataCommons_1.26.0.tar.gz"]
 
-    version("1.32.1", tag="RELEASE_3_21")
+	version("1.32.1", tag="RELEASE_3_21")
 	version("1.26.0", sha256="bc54fdafd609f40a2b2cd598e332b2611d377b4c3d1aa20c345bc1f9199bd1c6")
 
 	depends_on("r@3.4:", type=("build", "run"))

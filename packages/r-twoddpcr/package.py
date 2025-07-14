@@ -16,7 +16,7 @@ class RTwoddpcr(RPackage):
 	bioc = "twoddpcr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/twoddpcr_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/twoddpcr/twoddpcr_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="1a502a55c6ae49ef3708d24762454a8ce74116a9959e8f0c0ce11ae624ad58fa")
 
 	depends_on("r@3.4:", type=("build", "run"))

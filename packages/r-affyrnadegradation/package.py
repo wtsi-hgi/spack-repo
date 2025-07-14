@@ -19,7 +19,7 @@ class RAffyrnadegradation(RPackage):
 	bioc = "AffyRNADegradation"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AffyRNADegradation_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AffyRNADegradation/AffyRNADegradation_1.48.0.tar.gz"]
 
-    version("1.54.0", tag="RELEASE_3_21")
+	version("1.54.0", tag="RELEASE_3_21")
 	version("1.48.0", sha256="0e7eb53d71df494ecd04dbf5db1643a40244467949981676407d6dec5912e944")
 	version("1.46.0", commit="431ae61c9b3809829697ef71672c57171d93311e")
 	version("1.44.0", commit="63881f41fc67cc7322b189446dcffb4e1060e303")

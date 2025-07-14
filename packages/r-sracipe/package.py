@@ -16,7 +16,7 @@ class RSracipe(RPackage):
 	bioc = "sRACIPE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sRACIPE_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sRACIPE/sRACIPE_1.18.0.tar.gz"]
 
-    version("2.0.1", tag="RELEASE_3_21")
+	version("2.0.1", tag="RELEASE_3_21")
 	version("1.18.0", sha256="5b2848c28d34debe19bf8de44bc27ff7da69e31e530c9a5e79576433d6d5037b")
 
 	depends_on("r@3.6:", type=("build", "run"))

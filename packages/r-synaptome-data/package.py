@@ -15,7 +15,7 @@ class RSynaptomeData(RPackage):
 	bioc = "synaptome.data" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/synaptome.data_0.99.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/synaptome.data/synaptome.data_0.99.6.tar.gz"]
 
-    version("0.99.6", tag="RELEASE_3_21")
+	version("0.99.6", tag="RELEASE_3_21")
 	version("0.99.6", sha256="e5f1aca6946c3f75fcd6df798a792e72e20b11a3dd72163d065f7b6e407f9801")
 
 	depends_on("r@3.5:", type=("build", "run"))

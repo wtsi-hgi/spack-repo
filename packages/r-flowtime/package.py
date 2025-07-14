@@ -15,7 +15,7 @@ class RFlowtime(RPackage):
 	bioc = "flowTime" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowTime_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowTime/flowTime_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="d28bae15c268b869ea81effb2974560bbb7bffe3a8885dc0e621f41e6b41e88c")
 
 	depends_on("r@3.4:", type=("build", "run"))

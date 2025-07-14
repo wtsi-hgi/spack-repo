@@ -15,7 +15,7 @@ class RProstatecancertaylor(RPackage):
 	bioc = "prostateCancerTaylor" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/prostateCancerTaylor_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/prostateCancerTaylor/prostateCancerTaylor_1.30.0.tar.gz"]
 
-    version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="7c0afc3b5055dcab296f6c730feb59ef2a6bb3fe91592f2f955ed9ccdd608c55")
 
 	depends_on("r-biobase", type=("build", "run"))

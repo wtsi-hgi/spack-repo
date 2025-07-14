@@ -16,7 +16,7 @@ class RMethylclockdata(RPackage):
 	bioc = "methylclockData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/methylclockData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/methylclockData/methylclockData_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="7eb08a0ea554c3e73a8bced5ba60a0f03d22809abcadcde700cf01cd298b9060")
 
 	depends_on("r-experimenthubdata", type=("build", "run"))

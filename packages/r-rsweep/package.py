@@ -15,7 +15,7 @@ class RRsweep(RPackage):
 	bioc = "rSWeeP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rSWeeP_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rSWeeP/rSWeeP_1.14.0.tar.gz"]
 
-    version("1.20.0", tag="RELEASE_3_21")
+	version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="35fe330ae5c234368d290d23ac82d8aeca91c104e479ce4ab3acb4f3842c3664")
 
 	depends_on("r@4:", type=("build", "run"))

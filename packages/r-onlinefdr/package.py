@@ -16,7 +16,7 @@ class ROnlinefdr(RPackage):
 	bioc = "onlineFDR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/onlineFDR_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/onlineFDR/onlineFDR_2.10.0.tar.gz"]
 
-    version("2.16.0", tag="RELEASE_3_21")
+	version("2.16.0", tag="RELEASE_3_21")
 	version("2.10.0", sha256="f5f14f3b7ec8b936778cdbfd505b01248be0b786d9ff8c3afd1c5605f93db80d")
 
 	depends_on("r-rcpp", type=("build", "run"))

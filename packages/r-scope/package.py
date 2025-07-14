@@ -15,7 +15,7 @@ class RScope(RPackage):
 	bioc = "SCOPE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCOPE_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCOPE/SCOPE_1.14.0.tar.gz"]
 
-    version("1.20.0", tag="RELEASE_3_21")
+	version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="5b3030157d9c2f1467b03a257dab55ae5c6b13b31166fc7297e96f268c33d9ea")
 
 	depends_on("r@3.6:", type=("build", "run"))

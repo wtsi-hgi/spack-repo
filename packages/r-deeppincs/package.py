@@ -15,7 +15,7 @@ class RDeeppincs(RPackage):
 	bioc = "DeepPINCS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DeepPINCS_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DeepPINCS/DeepPINCS_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="4291069d968cf8452101f7cda91e924c44c829b6fd6116a173650678c6c6d876")
 
 	depends_on("r-keras", type=("build", "run"))

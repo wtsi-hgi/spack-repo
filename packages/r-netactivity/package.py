@@ -15,7 +15,7 @@ class RNetactivity(RPackage):
 	bioc = "NetActivity" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NetActivity_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NetActivity/NetActivity_1.4.0.tar.gz"]
 
-    version("1.10.0", tag="RELEASE_3_21")
+	version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="93e4b6bfe258f29d9d6123dfc0f0aaf332e537211025a4d6c975ee624032324a")
 
 	depends_on("r@4.1:", type=("build", "run"))

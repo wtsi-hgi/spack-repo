@@ -16,7 +16,7 @@ class RGsgalgor(RPackage):
 	bioc = "GSgalgoR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSgalgoR_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSgalgoR/GSgalgoR_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="11d00c41b31dedec0e9a99b1d0bcc880adad46d0a06ecbfac8be32236643fdfb")
 
 	depends_on("r-cluster", type=("build", "run"))

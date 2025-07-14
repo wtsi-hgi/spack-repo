@@ -15,7 +15,7 @@ class RRibodipa(RPackage):
 	bioc = "RiboDiPA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RiboDiPA_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RiboDiPA/RiboDiPA_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="0fc423fe3ebd68e5f06da1f3a5316eb08f2d5db24733d6236ba1fa4712c0de00")
 
 	depends_on("r@4.1:", type=("build", "run"))

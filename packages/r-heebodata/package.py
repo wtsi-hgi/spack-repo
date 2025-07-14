@@ -16,7 +16,7 @@ class RHeebodata(RPackage):
 	bioc = "HEEBOdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HEEBOdata_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HEEBOdata/HEEBOdata_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="b080c3ff5a90428dd8c6a11a6f605acca315c44075bef09bc721852b46cd32f6")
 
 

@@ -15,7 +15,7 @@ class RRankprod(RPackage):
 	bioc = "RankProd" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RankProd_3.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RankProd/RankProd_3.28.0.tar.gz"]
 
-    version("3.34.0", tag="RELEASE_3_21")
+	version("3.34.0", tag="RELEASE_3_21")
 	version("3.28.0", sha256="a4c6439655b559cdd4e89534e65e347c95c7ba0ddac1f34ba301af4ab84a388d")
 
 	depends_on("r@3.2.1:", type=("build", "run"))

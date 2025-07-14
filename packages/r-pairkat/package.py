@@ -15,7 +15,7 @@ class RPairkat(RPackage):
 	bioc = "pairkat" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pairkat_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pairkat/pairkat_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="ba1f9d954ffd3efe1f71ae7d10b8ddaadc3b07b9a2301620f60895d4dc686a93")
 
 	depends_on("r@4.1:", type=("build", "run"))

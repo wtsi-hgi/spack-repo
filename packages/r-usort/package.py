@@ -15,7 +15,7 @@ class RUsort(RPackage):
 	bioc = "uSORT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/uSORT_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/uSORT/uSORT_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="aabb2a514a808e5dad8c20ea15edbe8d4a82e22f38a1f265d8d7f90e2948b325")
 
 	depends_on("r@3.3:", type=("build", "run"))

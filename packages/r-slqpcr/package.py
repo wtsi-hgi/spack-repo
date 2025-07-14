@@ -15,7 +15,7 @@ class RSlqpcr(RPackage):
 	bioc = "SLqPCR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SLqPCR_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SLqPCR/SLqPCR_1.68.0.tar.gz"]
 
-    version("1.74.0", tag="RELEASE_3_21")
+	version("1.74.0", tag="RELEASE_3_21")
 	version("1.68.0", sha256="d7c950fe53bac9aa677475c81ef2a9b854078eb5c9ab14d99aefe01e2289cedc")
 
 	depends_on("r@2.4:", type=("build", "run"))

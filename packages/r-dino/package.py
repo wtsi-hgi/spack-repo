@@ -16,7 +16,7 @@ class RDino(RPackage):
 	bioc = "Dino" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Dino_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Dino/Dino_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="ce278f24eade2de93026f784dfabb62eea0adaa860ca596d10f7dcc13354a8df")
 
 	depends_on("r@4:", type=("build", "run"))

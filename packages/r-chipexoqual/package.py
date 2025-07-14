@@ -16,7 +16,7 @@ class RChipexoqual(RPackage):
 	bioc = "ChIPexoQual" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPexoQual_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPexoQual/ChIPexoQual_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="92603a21f7fd4b45e67fb0e631f4ebe7707603369f84e0121bfd20cc509db011")
 
 	depends_on("r@3.5:", type=("build", "run"))

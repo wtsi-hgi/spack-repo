@@ -15,7 +15,7 @@ class RDeqms(RPackage):
 	bioc = "DEqMS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEqMS_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEqMS/DEqMS_1.20.0.tar.gz"]
 
-    version("1.26.0", tag="RELEASE_3_21")
+	version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="85cb1cef0af0933c96da01fb23e592685cba94ae4d7bd20f7c5cf652653280e4")
 
 	depends_on("r@3.5:", type=("build", "run"))

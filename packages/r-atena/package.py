@@ -16,7 +16,7 @@ class RAtena(RPackage):
 	bioc = "atena" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/atena_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/atena/atena_1.8.0.tar.gz"]
 
-    version("1.14.1", tag="RELEASE_3_21")
+	version("1.14.1", tag="RELEASE_3_21")
 	version("1.8.0", sha256="cffe3ee62e8564012ec6cfa5e514a37eab1d2c10ce07eec4e80b16d3ccf1cfe1")
 
 	depends_on("r@4.3:", type=("build", "run"))

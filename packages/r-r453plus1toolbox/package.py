@@ -15,7 +15,7 @@ class RR453plus1toolbox(RPackage):
 	bioc = "R453Plus1Toolbox" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/R453Plus1Toolbox_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/R453Plus1Toolbox/R453Plus1Toolbox_1.52.0.tar.gz"]
 
-    version("1.58.0", tag="RELEASE_3_21")
+	version("1.58.0", tag="RELEASE_3_21")
 	version("1.52.0", sha256="ed811c246dcf5cb0522a677c2a0d88e3e45b91728a5133cdc8703f608708e258")
 
 	depends_on("r@2.12:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMsnid(RPackage):
 	bioc = "MSnID" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSnID_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSnID/MSnID_1.36.0.tar.gz"]
 
-    version("1.42.0", tag="RELEASE_3_21")
+	version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="2bedeb78cb5fb24cd544c8e3c96b1faeba3a399636402e7a20a7957bf681aec2")
 
 	depends_on("r@2.10:", type=("build", "run"))

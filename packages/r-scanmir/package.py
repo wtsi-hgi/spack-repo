@@ -15,7 +15,7 @@ class RScanmir(RPackage):
 	bioc = "scanMiR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scanMiR_1.8.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scanMiR/scanMiR_1.8.2.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.2", sha256="8bdedaff1b02a44d93076c7543e74c42c6b74982714fcf56372f0cb342e39f81")
 
 	depends_on("r@4:", type=("build", "run"))

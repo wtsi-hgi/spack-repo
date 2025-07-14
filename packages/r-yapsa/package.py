@@ -18,7 +18,7 @@ class RYapsa(RPackage):
 
 	bioc = "YAPSA"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/YAPSA_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/YAPSA/YAPSA_1.28.0.tar.gz"]
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.8.0", commit="402f3f7774fdf8afc7883579ad651c26df0f8fdb")
 	version("1.6.0", commit="2455d272b076835ddb36ad21c01ef15af66abc36")
 	version("1.4.0", commit="6f24150a0689d5215983975ece96c8c205923c72")

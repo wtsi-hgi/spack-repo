@@ -15,7 +15,7 @@ class RRgsepd(RPackage):
 	bioc = "rgsepd" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rgsepd_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rgsepd/rgsepd_1.34.0.tar.gz"]
 
-    version("1.40.0", tag="RELEASE_3_21")
+	version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="92f48a2c30b434ac58cea1e20eb8c4d7451809d2e4f9f6e5d63089b5a03130bc")
 
 	depends_on("r@4.2:", type=("build", "run"))

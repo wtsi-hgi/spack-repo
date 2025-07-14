@@ -16,7 +16,7 @@ class RVariantexperiment(RPackage):
 	bioc = "VariantExperiment" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VariantExperiment_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VariantExperiment/VariantExperiment_1.16.0.tar.gz"]
 
-    version("1.22.0", tag="RELEASE_3_21")
+	version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="8b53170a3040548bf59d33e0257f8d5b3850954a5acc923cb1b9a5a53e167cc5")
 
 	depends_on("r@3.6:", type=("build", "run"))

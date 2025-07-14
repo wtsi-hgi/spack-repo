@@ -16,7 +16,7 @@ class RProcoil(RPackage):
 	bioc = "procoil" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/procoil_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/procoil/procoil_2.30.0.tar.gz"]
 
-    version("2.36.0", tag="RELEASE_3_21")
+	version("2.36.0", tag="RELEASE_3_21")
 	version("2.30.0", sha256="c12e4cddd0bf40648d0bc19b94e8fc7c22d6753e8deebdca62630ca9c7901a08")
 
 	depends_on("r@3.3:", type=("build", "run"))

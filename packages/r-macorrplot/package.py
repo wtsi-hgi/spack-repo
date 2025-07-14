@@ -16,7 +16,7 @@ class RMacorrplot(RPackage):
 	bioc = "maCorrPlot" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maCorrPlot_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maCorrPlot/maCorrPlot_1.72.0.tar.gz"]
 
-    version("1.78.0", tag="RELEASE_3_21")
+	version("1.78.0", tag="RELEASE_3_21")
 	version("1.72.0", sha256="eb8ecf43408aca3669ffdb109f4d4bedf3962cb08760ff27a68d6ceb5226f23e")
 
 	depends_on("r-lattice", type=("build", "run"))

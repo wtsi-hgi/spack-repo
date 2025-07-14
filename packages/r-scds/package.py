@@ -15,7 +15,7 @@ class RScds(RPackage):
 	bioc = "scds" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scds_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scds/scds_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="c0ba79cd36dc4ba825c0f6cc6cf5a76e61d7215c07902bf48732265103dbbf32")
 
 	depends_on("r@3.6:", type=("build", "run"))

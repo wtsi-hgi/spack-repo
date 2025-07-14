@@ -15,7 +15,7 @@ class RDearseq(RPackage):
 	bioc = "dearseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dearseq_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dearseq/dearseq_1.14.0.tar.gz"]
 
-    version("1.20.0", tag="RELEASE_3_21")
+	version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="477849a98ee6498b7af515ad0ebf7e299ce1fb9ee2f71f4d85d7e97f0ae1bdd1")
 
 	depends_on("r@3.6:", type=("build", "run"))

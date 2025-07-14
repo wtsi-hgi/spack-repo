@@ -16,7 +16,7 @@ class RBioplex(RPackage):
 	bioc = "BioPlex" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BioPlex_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/BioPlex/BioPlex_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="a71ed0676534038f421a82f1fd901640992d1fcbb22caeb772c7443fc95e9a73")
 
 	depends_on("r@4.1:", type=("build", "run"))

@@ -15,7 +15,7 @@ class ROptimalflow(RPackage):
 	bioc = "optimalFlow" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/optimalFlow_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/optimalFlow/optimalFlow_1.14.0.tar.gz"]
 
-    version("1.20.0", tag="RELEASE_3_21")
+	version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="b97a0a2aa8a800e4fc9c83a266e90a6cf1aae9ed8032185efdf6e18e886c1c3e")
 
 	depends_on("r-dplyr", type=("build", "run"))

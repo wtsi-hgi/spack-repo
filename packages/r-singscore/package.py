@@ -16,7 +16,7 @@ class RSingscore(RPackage):
 	bioc = "singscore" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/singscore_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/singscore/singscore_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="04c44af1fc2ceb7da701d4a8fc32d4825ee4ebb7764b1daf0825ccb8e0fa4e41")
 
 	depends_on("r@3.6:", type=("build", "run"))

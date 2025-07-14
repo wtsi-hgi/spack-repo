@@ -16,7 +16,7 @@ class RClippda(RPackage):
 	bioc = "clippda" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clippda_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clippda/clippda_1.52.0.tar.gz"]
 
-    version("1.58.0", tag="RELEASE_3_21")
+	version("1.58.0", tag="RELEASE_3_21")
 	version("1.52.0", sha256="8fab641f40a4e8d5187c6a5fe0ae800b5f33379bb2ee8f01647efb78b5aefd86")
 
 	depends_on("r@2.13.1:", type=("build", "run"))

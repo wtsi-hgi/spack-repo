@@ -15,7 +15,7 @@ class RListeretalbsseq(RPackage):
 	bioc = "ListerEtAlBSseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ListerEtAlBSseq_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ListerEtAlBSseq/ListerEtAlBSseq_1.34.0.tar.gz"]
 
-    version("1.40.0", tag="RELEASE_3_21")
+	version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="220de24447fb48ed713f799d944c4e0b0db5f9b7c3c3465021515d524a036897")
 
 	depends_on("r@3.1.1:", type=("build", "run"))

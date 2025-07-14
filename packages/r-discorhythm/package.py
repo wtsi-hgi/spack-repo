@@ -16,7 +16,7 @@ class RDiscorhythm(RPackage):
 	bioc = "DiscoRhythm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DiscoRhythm_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DiscoRhythm/DiscoRhythm_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="cfeb8e7ac7b143894c4151f68b4fbe7576ffeb10ab1ec72318150704365c626f")
 
 	depends_on("r@3.6:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RGwascat(RPackage):
 	bioc = "gwascat" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gwascat_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gwascat/gwascat_2.34.0.tar.gz"]
 
-    version("2.40.0", tag="RELEASE_3_21")
+	version("2.40.0", tag="RELEASE_3_21")
 	version("2.34.0", sha256="fe291f03cee6f376939a320b9594e98b85e915a2986a9e74c121cf77c3461609")
 
 	depends_on("r@3.5:", type=("build", "run"))

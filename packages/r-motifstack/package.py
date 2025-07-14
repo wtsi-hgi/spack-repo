@@ -15,7 +15,7 @@ class RMotifstack(RPackage):
 	bioc = "motifStack" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/motifStack_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/motifStack/motifStack_1.46.0.tar.gz"]
 
-    version("1.52.0", tag="RELEASE_3_21")
+	version("1.52.0", tag="RELEASE_3_21")
 	version("1.46.0", sha256="51f45a9cc140a4b0f04d967b3024a72515f9c605a0ffa4552acd45ed27c71582")
 
 	depends_on("r@2.15.1:", type=("build", "run"))

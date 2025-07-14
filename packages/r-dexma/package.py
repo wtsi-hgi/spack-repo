@@ -15,7 +15,7 @@ class RDexma(RPackage):
 	bioc = "DExMA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DExMA_1.10.7.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DExMA/DExMA_1.10.7.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.7", sha256="dc1fd3934aa9681ceda6a0676b0c3c7d241249f3cdfaeb93aa1376edd898db8a")
 
 	depends_on("r@4.1:", type=("build", "run"))

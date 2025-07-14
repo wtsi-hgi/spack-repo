@@ -15,7 +15,7 @@ class RRrho(RPackage):
 	bioc = "RRHO" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RRHO_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RRHO/RRHO_1.42.0.tar.gz"]
 
-    version("1.48.0", tag="RELEASE_3_21")
+	version("1.48.0", tag="RELEASE_3_21")
 	version("1.42.0", sha256="8412b60c3944fabc5c57cfdb77e6420153f87549d1e860256a4f487abe796324")
 
 	depends_on("r@2.10:", type=("build", "run"))

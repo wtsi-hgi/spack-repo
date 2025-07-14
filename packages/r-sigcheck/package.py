@@ -15,7 +15,7 @@ class RSigcheck(RPackage):
 	bioc = "SigCheck" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SigCheck_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SigCheck/SigCheck_2.34.0.tar.gz"]
 
-    version("2.40.0", tag="RELEASE_3_21")
+	version("2.40.0", tag="RELEASE_3_21")
 	version("2.34.0", sha256="2cab66bb0b2fb323b7369e59e5351fd429f67010313090090d302219306bdad2")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -15,7 +15,7 @@ class REasierdata(RPackage):
 	bioc = "easierData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/easierData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/easierData/easierData_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="0d5d79e94efa1c40fbdf71d2f440edaad53a838a45ddf4b8a29b91f643441d8d")
 
 	depends_on("r@4.1:", type=("build", "run"))

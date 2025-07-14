@@ -15,7 +15,7 @@ class RPowsc(RPackage):
 	bioc = "POWSC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/POWSC_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/POWSC/POWSC_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="e00e0fc733810565ec97ee9f24baa970fbbe39741e7df109bbb3e4190cfb6be2")
 
 	depends_on("r@4.1:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RH5vc(RPackage):
 	bioc = "h5vc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/h5vc_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/h5vc/h5vc_2.36.0.tar.gz"]
 
-    version("2.42.0", tag="RELEASE_3_21")
+	version("2.42.0", tag="RELEASE_3_21")
 	version("2.36.0", sha256="dfa0e6f0e4fa3b36b857a11ab671ad55fbd4afa2a79b2f71f7b9291faa737b40")
 
 	depends_on("r-gridextra", type=("build", "run"))

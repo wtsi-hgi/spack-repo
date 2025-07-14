@@ -16,7 +16,7 @@ class RVelociraptor(RPackage):
 	bioc = "velociraptor" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/velociraptor_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/velociraptor/velociraptor_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="01df4746235eb2ec215756f019c708b418482db46fc417f478997486ebab807c")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -16,7 +16,7 @@ class RProlocgui(RPackage):
 	bioc = "pRolocGUI" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pRolocGUI_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pRolocGUI/pRolocGUI_2.12.0.tar.gz"]
 
-    version("2.18.0", tag="RELEASE_3_21")
+	version("2.18.0", tag="RELEASE_3_21")
 	version("2.12.0", sha256="fd152a06b8a47d9129d073b5fc6dddace2046203d6be925e3c58117b441e8954")
 
 	depends_on("r@3.1:", type=("build", "run"))

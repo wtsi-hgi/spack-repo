@@ -18,7 +18,7 @@ class RQuantro(RPackage):
 
 	bioc = "quantro"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/quantro_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/quantro/quantro_1.36.0.tar.gz"]
-    version("1.42.0", tag="RELEASE_3_21")
+	version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="f8db5047302eb252e39ef85e0fe6e8363c674f740397f5f45b30d0461fef580c")
 	version("1.34.0", commit="c769d21ce5ccb6f33c35e6e1dbb901ea8afad4b1")
 	version("1.32.0", commit="0c70b787866d915abb720f2ab326a83eb1e775b7")

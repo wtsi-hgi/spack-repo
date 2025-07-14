@@ -16,7 +16,7 @@ class RM3drop(RPackage):
 	bioc = "M3Drop" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/M3Drop_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/M3Drop/M3Drop_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", md5="ad347f93f1a297543e7ab0e74437dd4d")
 
 	depends_on("r@3.4:", type=("build", "run"))

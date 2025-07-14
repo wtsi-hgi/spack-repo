@@ -15,7 +15,7 @@ class RBeta7(RPackage):
 	bioc = "beta7" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/beta7_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/beta7/beta7_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="1b8cfbc530abe06a37f9db899c3e843748e68a2a24d6062a04d1732b77bde7e0", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/beta7_1.40.0.tar.gz")
 
 	depends_on("r@2.4:", type=("build", "run"))

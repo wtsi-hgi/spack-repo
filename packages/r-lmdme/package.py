@@ -16,7 +16,7 @@ class RLmdme(RPackage):
 	bioc = "lmdme" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lmdme_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lmdme/lmdme_1.44.0.tar.gz"]
 
-    version("1.50.0", tag="RELEASE_3_21")
+	version("1.50.0", tag="RELEASE_3_21")
 	version("1.44.0", sha256="5a8098b15b0a89be76d812ac27b344b28dafd0a3de2bd0ead9c2ce24fca511cc")
 
 	depends_on("r@2.14.1:", type=("build", "run"))

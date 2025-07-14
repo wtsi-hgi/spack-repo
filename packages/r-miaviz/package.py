@@ -15,7 +15,7 @@ class RMiaviz(RPackage):
 	bioc = "miaViz" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miaViz_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miaViz/miaViz_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="574f8ca9a3035231188d8944beebe6dfd1a79fffb0827938038f8e914d87d1c4")
 
 	depends_on("r@4:", type=("build", "run"))

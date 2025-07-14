@@ -16,7 +16,7 @@ class RSomascanDb(RPackage):
 	bioc = "SomaScan.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/SomaScan.db_0.99.7.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/SomaScan.db/SomaScan.db_0.99.7.tar.gz"]
 
-    version("0.99.10", tag="RELEASE_3_21")
+	version("0.99.10", tag="RELEASE_3_21")
 	version("0.99.7", sha256="399d5f5f24154bb8a064daf84c125e74b6ebdafc55e110c208b4cd9ae0055b04")
 
 	depends_on("r@4.3:", type=("build", "run"))

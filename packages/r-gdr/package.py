@@ -15,7 +15,7 @@ class RGdr(RPackage):
 	bioc = "gDR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gDR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gDR/gDR_1.0.0.tar.gz"]
 
-    version("1.6.0", tag="RELEASE_3_21")
+	version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="a9d1ebab30108c72a544a933c49264aad4435ae79e01f478ee6dd8d07c93e57d")
 
 	depends_on("r@4.2:", type=("build", "run"))

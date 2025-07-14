@@ -16,7 +16,7 @@ class RMsbackendmassbank(RPackage):
 	bioc = "MsBackendMassbank" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsBackendMassbank_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsBackendMassbank/MsBackendMassbank_1.10.1.tar.gz"]
 
-    version("1.16.1", tag="RELEASE_3_21")
+	version("1.16.1", tag="RELEASE_3_21")
 	version("1.10.1", sha256="ad75acbf91dd0a8f6f366f686b6f85a9098753fe51a8ed69fd8cda71252947a3")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RGcspikelite(RPackage):
 	bioc = "gcspikelite" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/gcspikelite_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/gcspikelite/gcspikelite_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="c5c9a4728e5491d5ff0e462d393f23d8564b1d755a68a7bcd4c6c7304dbad5f9")
 
 	depends_on("r@2.5:", type=("build", "run"))

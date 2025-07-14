@@ -16,7 +16,7 @@ class RPathwaypca(RPackage):
 	bioc = "pathwayPCA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pathwayPCA_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pathwayPCA/pathwayPCA_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="e4524ffdd297f9c0417c972125b05770c790bd92d83ee89f31a675ee9655a091")
 
 	depends_on("r@3.1:", type=("build", "run"))

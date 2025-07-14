@@ -15,7 +15,7 @@ class RHd2013sgi(RPackage):
 	bioc = "HD2013SGI" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HD2013SGI_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HD2013SGI/HD2013SGI_1.42.0.tar.gz"]
 
-    version("1.48.0", tag="RELEASE_3_21")
+	version("1.48.0", tag="RELEASE_3_21")
 	version("1.42.0", sha256="a842e4015419d763d5c075aa0340eef3f1713bc06406994f901da7405541acf7")
 
 	depends_on("r@2.10:", type=("build", "run"))

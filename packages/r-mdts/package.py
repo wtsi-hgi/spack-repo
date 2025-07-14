@@ -15,7 +15,7 @@ class RMdts(RPackage):
 	bioc = "MDTS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MDTS_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MDTS/MDTS_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="12de3a0a77d09681a233b2905222cc3cf0e3c03d5bb5673ca4c156c9634709b5")
 
 	depends_on("r@3.5:", type=("build", "run"))

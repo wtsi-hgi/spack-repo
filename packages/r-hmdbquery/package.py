@@ -15,7 +15,7 @@ class RHmdbquery(RPackage):
 	bioc = "hmdbQuery" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hmdbQuery_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hmdbQuery/hmdbQuery_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="a9d6e783eda8abcf4bcecd29b1944354b566b6634b1609c890cfe77622a9a074")
 
 	depends_on("r@3.5:", type=("build", "run"))

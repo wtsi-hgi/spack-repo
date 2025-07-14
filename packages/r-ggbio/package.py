@@ -21,7 +21,7 @@ class RGgbio(RPackage):
 
 	bioc = "ggbio"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggbio_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggbio/ggbio_1.50.0.tar.gz"]
-    version("1.56.0", tag="RELEASE_3_21")
+	version("1.56.0", tag="RELEASE_3_21")
 	version("1.50.0", sha256="55853832b03862eeb5a443519a6c96c2f101155ab6fa425966e4f3eb222a1ab2")
 	version("1.48.0", commit="fd4ebca44151e8f8e20ad2a38292398a3a4bb948")
 	version("1.46.0", commit="d9c6cb495c7268bcaaab141231a9038aec8498bc")

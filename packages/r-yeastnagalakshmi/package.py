@@ -15,7 +15,7 @@ class RYeastnagalakshmi(RPackage):
 	bioc = "yeastNagalakshmi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/yeastNagalakshmi_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/yeastNagalakshmi/yeastNagalakshmi_1.38.0.tar.gz"]
 
-    version("1.44.0", tag="RELEASE_3_21")
+	version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="e00fd43bab3e556b9b43001741726c518a983fad61a88ac58eefc7f76e3f3eb4")
 
 

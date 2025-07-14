@@ -15,7 +15,7 @@ class RShinymethyldata(RPackage):
 	bioc = "shinyMethylData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/shinyMethylData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/shinyMethylData/shinyMethylData_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="306060c3ba13b0d69b912bfecf8e14db0f11f7d9874668cd9bf7c974e273cec4")
 
 	depends_on("r@3:", type=("build", "run"))

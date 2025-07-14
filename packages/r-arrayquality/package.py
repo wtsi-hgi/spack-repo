@@ -16,7 +16,7 @@ class RArrayquality(RPackage):
 	bioc = "arrayQuality" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/arrayQuality_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/arrayQuality/arrayQuality_1.80.0.tar.gz"]
 
-    version("1.86.0", tag="RELEASE_3_21")
+	version("1.86.0", tag="RELEASE_3_21")
 	version("1.80.0", sha256="3fb865babf7e0c400638556ddd475a05d0a7c6960a2f445073270656dc37a4ae")
 
 	depends_on("r@2.2:", type=("build", "run"))

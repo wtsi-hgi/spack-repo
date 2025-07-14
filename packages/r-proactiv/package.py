@@ -16,7 +16,7 @@ class RProactiv(RPackage):
 	bioc = "proActiv" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/proActiv_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/proActiv/proActiv_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="12727aa216c2884a461a63222e9503bec5930536e0cddc836c3966f6604a9501")
 
 	depends_on("r@4:", type=("build", "run"))

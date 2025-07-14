@@ -16,7 +16,7 @@ class RCyanofilter(RPackage):
 	bioc = "cyanoFilter" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cyanoFilter_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cyanoFilter/cyanoFilter_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="3e0588f4903aae934b653dbdd2d036a0bde4a42e97d399743b40dde539139d22")
 
 	depends_on("r@4.1:", type=("build", "run"))

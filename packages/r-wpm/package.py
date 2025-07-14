@@ -16,7 +16,7 @@ class RWpm(RPackage):
 	bioc = "wpm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/wpm_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/wpm/wpm_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="caff47fda779527f55f8782a78eb9c74a2ae372029585474290dd6ed71df2c3d")
 
 	depends_on("r@4.1:", type=("build", "run"))

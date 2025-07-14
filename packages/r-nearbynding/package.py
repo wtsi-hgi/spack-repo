@@ -15,7 +15,7 @@ class RNearbynding(RPackage):
 	bioc = "nearBynding" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nearBynding_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nearBynding/nearBynding_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="bf7cc77fbb04178e251994f5a8dfb985457b4571802b7be7026bc9a2ac529a84")
 
 	depends_on("r@4:", type=("build", "run"))

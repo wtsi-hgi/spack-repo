@@ -16,7 +16,7 @@ class RSqldataframe(RPackage):
 	bioc = "SQLDataFrame" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SQLDataFrame_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SQLDataFrame/SQLDataFrame_1.16.1.tar.gz"]
 
-    version("1.22.0", tag="RELEASE_3_21")
+	version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.1", sha256="d48c2bcaa4fade62ead21689d2bfcfc8d7e835291ee25ec5ff6b69db0021354d")
 
 	depends_on("r@3.6:", type=("build", "run"))

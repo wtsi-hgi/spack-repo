@@ -15,7 +15,7 @@ class RChipenrichData(RPackage):
 	bioc = "chipenrich.data" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/chipenrich.data_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/chipenrich.data/chipenrich.data_2.26.0.tar.gz"]
 
-    version("2.32.0", tag="RELEASE_3_21")
+	version("2.32.0", tag="RELEASE_3_21")
 	version("2.26.0", sha256="2300819ed2dfe67ab81001036778f38398f49465a36fce760ba07cb8fed2d141")
 
 	depends_on("r@3.5:", type=("build", "run"))

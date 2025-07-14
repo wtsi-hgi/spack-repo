@@ -15,7 +15,7 @@ class RNanostringdiff(RPackage):
 	bioc = "NanoStringDiff" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NanoStringDiff_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NanoStringDiff/NanoStringDiff_1.32.0.tar.gz"]
 
-    version("1.38.0", tag="RELEASE_3_21")
+	version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="db74a3378723bcbf09272932ca5cc93390b2a0e6fcfc9e1a2d421cf5a23fb823")
 
 	depends_on("r-biobase", type=("build", "run"))

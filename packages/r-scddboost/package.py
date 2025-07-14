@@ -16,7 +16,7 @@ class RScddboost(RPackage):
 	bioc = "scDDboost" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDDboost_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scDDboost/scDDboost_1.4.0.tar.gz"]
 
-    version("1.10.0", tag="RELEASE_3_21")
+	version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="e92ba350e3f9b73a22f634c8e81dd52b8666f905092bfbb0f264dc2863b76f87")
 
 	depends_on("r@4.2:", type=("build", "run"))

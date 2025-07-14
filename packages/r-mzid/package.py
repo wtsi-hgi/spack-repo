@@ -17,7 +17,7 @@ class RMzid(RPackage):
 
 	bioc = "mzID"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mzID_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mzID/mzID_1.40.0.tar.gz"]
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="507f8823c9575547541588cb4267e13b8a301477519b04fb0fb253b0636af3e5")
 	version("1.38.0", commit="d87d8b83d27876d3c12cd437499b87a5856f397d")
 	version("1.36.0", commit="d6525edce3389fd4a05ff5fd42e9d611f00a545d")

@@ -16,7 +16,7 @@ class RReactomecontentservice4r(RPackage):
 	bioc = "ReactomeContentService4R" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ReactomeContentService4R_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ReactomeContentService4R/ReactomeContentService4R_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="909f782300f11131722a4a7394281468f72d0888fc334c377e592c0c2f11966d")
 
 	depends_on("r-httr", type=("build", "run"))

@@ -16,7 +16,7 @@ class RCellmigration(RPackage):
 	bioc = "cellmigRation" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cellmigRation_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cellmigRation/cellmigRation_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="95ed98dbe3a561397a434f6304d3fc40d1ec270f4e449ddc10d7c9152ce3ea50")
 
 	depends_on("r@4.1:", type=("build", "run"))

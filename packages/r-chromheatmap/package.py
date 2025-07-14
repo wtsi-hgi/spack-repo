@@ -15,7 +15,7 @@ class RChromheatmap(RPackage):
 	bioc = "ChromHeatMap" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChromHeatMap_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChromHeatMap/ChromHeatMap_1.56.0.tar.gz"]
 
-    version("1.62.0", tag="RELEASE_3_21")
+	version("1.62.0", tag="RELEASE_3_21")
 	version("1.56.0", sha256="7cb1aaa6405265ac4bee7ee5335fd3ba6600bc2c618c403aa3c6bedb19f1777d")
 
 	depends_on("r@2.9:", type=("build", "run"))

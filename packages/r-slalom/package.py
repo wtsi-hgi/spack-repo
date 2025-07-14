@@ -15,7 +15,7 @@ class RSlalom(RPackage):
 	bioc = "slalom" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/slalom_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/slalom/slalom_1.24.0.tar.gz"]
 
-    version("1.30.0", tag="RELEASE_3_21")
+	version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="e1014b26c8d1937384c89de48c47938e23992e09410232765bf0fc530029bd34")
 
 	depends_on("r@4:", type=("build", "run"))

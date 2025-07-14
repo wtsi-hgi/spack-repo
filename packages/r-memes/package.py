@@ -16,7 +16,7 @@ class RMemes(RPackage):
 	bioc = "memes" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/memes_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/memes/memes_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="4564b1c0dfbf51d903c8986166bd41293fe41f91a94faec01e2ff7f774d58785")
 
 	depends_on("r@4.1:", type=("build", "run"))

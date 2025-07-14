@@ -16,7 +16,7 @@ class RCenscyt(RPackage):
 	bioc = "censcyt" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/censcyt_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/censcyt/censcyt_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="4052c76b9cf8433f657d6d7ae62037659d01e764af9e326b33f3a3b9efdddd71")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RDrivernet(RPackage):
 	bioc = "DriverNet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DriverNet_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DriverNet/DriverNet_1.42.0.tar.gz"]
 
-    version("1.48.0", tag="RELEASE_3_21")
+	version("1.48.0", tag="RELEASE_3_21")
 	version("1.42.0", sha256="eeba1d7b1589b672069b4b01858c6a959bdaa318fe16277e86742c1aaf14caf2")
 
 	depends_on("r@2.10:", type=("build", "run"))

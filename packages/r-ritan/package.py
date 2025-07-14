@@ -15,7 +15,7 @@ class RRitan(RPackage):
 	bioc = "RITAN" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RITAN_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RITAN/RITAN_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="22df59c39ee107ee4037374ef92014bd197af53a2da8d046cd5540924ea26e15")
 
 	depends_on("r@4:", type=("build", "run"))

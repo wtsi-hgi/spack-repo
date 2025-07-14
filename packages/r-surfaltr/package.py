@@ -15,7 +15,7 @@ class RSurfaltr(RPackage):
 	bioc = "surfaltr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/surfaltr_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/surfaltr/surfaltr_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="9a2023bea6dfc7fed9b8338d5b3e5afbd4386516fd7a714c674b85e9d0469acc")
 
 	depends_on("r@4:", type=("build", "run"))

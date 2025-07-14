@@ -16,7 +16,7 @@ class RBiocancer(RPackage):
 	bioc = "bioCancer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bioCancer_1.30.8.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bioCancer/bioCancer_1.30.8.tar.gz"]
 
-    version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.8", sha256="36abdbb425775e40cc87649fc1b797161ece221fd032d804c72378ba9707c3a4")
 
 	depends_on("r@3.6:", type=("build", "run"))

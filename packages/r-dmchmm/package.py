@@ -15,7 +15,7 @@ class RDmchmm(RPackage):
 	bioc = "DMCHMM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DMCHMM_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DMCHMM/DMCHMM_1.24.0.tar.gz"]
 
-    version("1.30.1", tag="RELEASE_3_21")
+	version("1.30.1", tag="RELEASE_3_21")
 	version("1.24.0", sha256="ae1c3aaf22d2ca795f030e53245338d7b970b94457811ae6ae4ec5eebeb181cf")
 
 	depends_on("r@4.1:", type=("build", "run"))

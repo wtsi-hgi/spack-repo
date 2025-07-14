@@ -15,7 +15,7 @@ class RLpnet(RPackage):
 	bioc = "lpNet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lpNet_2.34.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lpNet/lpNet_2.34.2.tar.gz"]
 
-    version("2.40.0", tag="RELEASE_3_21")
+	version("2.40.0", tag="RELEASE_3_21")
 	version("2.34.2", sha256="ec82332de06314165378a8e034e5619a4521f14e79d48574e230592747eb8850")
 
 	depends_on("r-lpsolve", type=("build", "run"))

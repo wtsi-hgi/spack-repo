@@ -16,7 +16,7 @@ class RGpa(RPackage):
 	bioc = "GPA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GPA_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GPA/GPA_1.14.0.tar.gz"]
 
-    version("1.20.0", tag="RELEASE_3_21")
+	version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="8a624b975b10839dcca12b0e191ec749ddf1e9afeb88a42bcbba21de48048c25")
 
 	depends_on("r@4:", type=("build", "run"))

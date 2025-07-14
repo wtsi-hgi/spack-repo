@@ -15,7 +15,7 @@ class RTscan(RPackage):
 	bioc = "TSCAN" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TSCAN_1.40.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TSCAN/TSCAN_1.40.1.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.1", sha256="9ab3418fbc3b0eb4e285d027595b90c2532863588a31a66108525a5f30c4ee35")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))

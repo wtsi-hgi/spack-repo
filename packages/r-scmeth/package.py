@@ -15,7 +15,7 @@ class RScmeth(RPackage):
 	bioc = "scmeth" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scmeth_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scmeth/scmeth_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="17d8c5d1c4276be5790d4e7e7f1da5f07c3ca8c239512ec08b74db4d836d610b")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RVaexprs(RPackage):
 	bioc = "VAExprs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VAExprs_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VAExprs/VAExprs_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="f9a0068367aaa85bbeeb0d1e5195c6632bfe74aa4792bc06e990fe40e1042554")
 
 	depends_on("r-keras", type=("build", "run"))

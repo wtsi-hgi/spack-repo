@@ -16,7 +16,7 @@ class RInformeasure(RPackage):
 	bioc = "Informeasure" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Informeasure_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Informeasure/Informeasure_1.12.1.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.1", sha256="c8813645fad7333bb27b17ced2c5dfae1208ac55b0b1fca2075f8bfd2835f17b")
 
 	depends_on("r@4:", type=("build", "run"))

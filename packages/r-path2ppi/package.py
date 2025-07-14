@@ -16,7 +16,7 @@ class RPath2ppi(RPackage):
 	bioc = "Path2PPI" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Path2PPI_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Path2PPI/Path2PPI_1.32.0.tar.gz"]
 
-    version("1.38.0", tag="RELEASE_3_21")
+	version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="09d58196321ae53dc8f815a4c4dd95aee82aad045e4d0ead2343db18d20555de")
 
 	depends_on("r@3.2.1:", type=("build", "run"))

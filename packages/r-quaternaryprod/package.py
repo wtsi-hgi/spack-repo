@@ -15,7 +15,7 @@ class RQuaternaryprod(RPackage):
 	bioc = "QuaternaryProd" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QuaternaryProd_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QuaternaryProd/QuaternaryProd_1.36.0.tar.gz"]
 
-    version("1.42.0", tag="RELEASE_3_21")
+	version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="d08c65504f9bde4a3122b75be5385f35572483e0d8834b097329f20bd475b707")
 
 	depends_on("r@3.2:", type=("build", "run"))

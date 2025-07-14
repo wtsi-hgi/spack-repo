@@ -15,7 +15,7 @@ class RIhwpaper(RPackage):
 	bioc = "IHWpaper" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/IHWpaper_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/IHWpaper/IHWpaper_1.30.0.tar.gz"]
 
-    version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="b2e6d8674910ccf6b7406ae1ad88effb62430e6a6f348a3b61128328b0650b1b")
 
 	depends_on("r@3.3:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RRoastgsa(RPackage):
 	bioc = "roastgsa" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/roastgsa_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/roastgsa/roastgsa_1.0.0.tar.gz"]
 
-    version("1.6.0", tag="RELEASE_3_21")
+	version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="705d83610754235e57d8eddd828caa1eb7296029d963507a68d0d2073b5861b6")
 
 	depends_on("r@4.3:", type=("build", "run"))

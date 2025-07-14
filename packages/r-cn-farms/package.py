@@ -16,7 +16,7 @@ class RCnFarms(RPackage):
 	bioc = "cn.farms" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cn.farms_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cn.farms/cn.farms_1.50.0.tar.gz"]
 
-    version("1.56.0", tag="RELEASE_3_21")
+	version("1.56.0", tag="RELEASE_3_21")
 	version("1.50.0", sha256="f95f47ed1c9d573e8dc0ef158ccb0dd9d61f9357b24560c7d99b65ca8e8e56ad")
 
 	depends_on("r@3:", type=("build", "run"))

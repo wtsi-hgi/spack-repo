@@ -15,7 +15,7 @@ class RLymphoseq(RPackage):
 	bioc = "LymphoSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LymphoSeq_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LymphoSeq/LymphoSeq_1.30.0.tar.gz"]
 
-    version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="82bc329005677c11f6f36107c3ca1bc5b9b215860270206cce981cd15cd0e6a1")
 
 	depends_on("r@3.3:", type=("build", "run"))

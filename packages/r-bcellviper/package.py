@@ -15,7 +15,7 @@ class RBcellviper(RPackage):
 	bioc = "bcellViper" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/bcellViper_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/bcellViper/bcellViper_1.38.0.tar.gz"]
 
-    version("1.44.0", tag="RELEASE_3_21")
+	version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="1009f48b1b743005ede62ebac66f95554df2db33d37298ed2998ba017e7931e1")
 
 	depends_on("r@2.14:", type=("build", "run"))

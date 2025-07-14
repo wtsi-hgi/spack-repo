@@ -17,7 +17,7 @@ class RAffyilm(RPackage):
 	bioc = "affyILM"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affyILM_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affyILM/affyILM_1.54.0.tar.gz"]
 
-    version("1.60.0", tag="RELEASE_3_21")
+	version("1.60.0", tag="RELEASE_3_21")
 	version("1.54.0", sha256="5b9fbf8552b47d24f4814c607837e5e9185d7506684350a1bc96ed77d0616fe9")
 	version("1.52.0", commit="08ed8c60921ba1b9e04fa90e156eef1a3c899d15")
 	version("1.50.0", commit="185cd8e4712a3378ce7a156d4940224bbb2c4122")

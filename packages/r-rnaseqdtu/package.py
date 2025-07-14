@@ -16,7 +16,7 @@ class RRnaseqdtu(RPackage):
 	bioc = "rnaseqDTU" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/rnaseqDTU_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/rnaseqDTU/rnaseqDTU_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="6b289ffa5b2e8329cdb4bd2adeebf3d9e87e1033f219be219e150edcb2646734")
 
 	depends_on("r@3.5:", type=("build", "run"))

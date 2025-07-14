@@ -16,7 +16,7 @@ class RMethylinheritance(RPackage):
 	bioc = "methylInheritance" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylInheritance_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylInheritance/methylInheritance_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="3e8673f05113426819c27b397ff5b166347348bade6318a77dbb3c273c4b3b2a")
 
 	depends_on("r@3.5:", type=("build", "run"))

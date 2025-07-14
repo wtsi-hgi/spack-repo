@@ -16,7 +16,7 @@ class RGgcyto(RPackage):
 	bioc = "ggcyto" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggcyto_1.30.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggcyto/ggcyto_1.30.2.tar.gz"]
 
-    version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.2", sha256="f63c3019a2702a94f8d34e5169093aa24a6f08b7a5e1d87b2ee3faabcc1ae245")
 	version("1.30.0", md5="f50828f54e40b73d30aa3ac0ef06de21")
 

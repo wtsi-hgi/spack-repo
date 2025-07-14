@@ -15,7 +15,7 @@ class RCrcl18(RPackage):
 	bioc = "CRCL18" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CRCL18_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CRCL18/CRCL18_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="36b36b01694c802959b9b781513ef8e31cb74b1d0959b001adaa96ad114a49f1", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CRCL18_1.22.0.tar.gz")
 
 	depends_on("r@3:", type=("build", "run"))

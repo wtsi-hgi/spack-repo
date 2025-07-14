@@ -15,7 +15,7 @@ class RSchot(RPackage):
 	bioc = "scHOT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scHOT_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scHOT/scHOT_1.14.0.tar.gz"]
 
-    version("1.20.1", tag="RELEASE_3_21")
+	version("1.20.1", tag="RELEASE_3_21")
 	version("1.14.0", sha256="74dffee28c0a3928c7b4202c6f07ad3fcefeeef11911f158a043b97b220a6064")
 
 	depends_on("r@4:", type=("build", "run"))

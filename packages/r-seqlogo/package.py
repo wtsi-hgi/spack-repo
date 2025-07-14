@@ -15,7 +15,7 @@ class RSeqlogo(RPackage):
 
 	bioc = "seqLogo"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqLogo_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqLogo/seqLogo_1.68.0.tar.gz"]
-    version("1.74.0", tag="RELEASE_3_21")
+	version("1.74.0", tag="RELEASE_3_21")
 	version("1.68.0", sha256="e27e6da040e9455d15e4a16dbb0e4492482dbd969ff431d628156c62792ac380")
 	version("1.66.0", commit="6214c1733fe25da86071afba4210068816e4d74f")
 	version("1.64.0", commit="75ff6c0689fce541f054d33750acb6224d14ed4e")

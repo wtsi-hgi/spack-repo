@@ -15,7 +15,7 @@ class RFlowclust(RPackage):
 	bioc = "flowClust" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowClust_3.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowClust/flowClust_3.40.0.tar.gz"]
 
-    version("3.46.0", tag="RELEASE_3_21")
+	version("3.46.0", tag="RELEASE_3_21")
 	version("3.40.0", sha256="7e699b06e378e32144704dbec18289109980b0f5eca166180f2c30007b83e0f5")
 
 	depends_on("r@2.5:", type=("build", "run"))

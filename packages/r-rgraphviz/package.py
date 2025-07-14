@@ -14,7 +14,7 @@ class RRgraphviz(RPackage):
 
 	bioc = "Rgraphviz"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rgraphviz_2.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rgraphviz/Rgraphviz_2.46.0.tar.gz"]
-    version("2.52.0", tag="RELEASE_3_21")
+	version("2.52.0", tag="RELEASE_3_21")
 	version("2.46.0", sha256="5e87fa40363e7ccc294946436b25cbdc3fa7b080e081e0777464db684ef6860e")
 	version("2.44.0", commit="1a1540d66afa0b5a693eee2acac8ad96cfc0a2e6")
 	version("2.42.0", commit="f6877441ab256876ef6a62c2e6faf980c2190b20")

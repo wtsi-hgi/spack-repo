@@ -15,7 +15,7 @@ class RCghnormaliter(RPackage):
 	bioc = "CGHnormaliter" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CGHnormaliter_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CGHnormaliter/CGHnormaliter_1.56.0.tar.gz"]
 
-    version("1.62.0", tag="RELEASE_3_21")
+	version("1.62.0", tag="RELEASE_3_21")
 	version("1.56.0", sha256="f605c7af9ff3c043a660e0e10d7dfca9af09b2288edb211ea527de84cccd96a3")
 
 	depends_on("r-cghcall", type=("build", "run"))

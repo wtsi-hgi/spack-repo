@@ -15,7 +15,7 @@ class RGraphat(RPackage):
 	bioc = "GraphAT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GraphAT_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GraphAT/GraphAT_1.74.0.tar.gz"]
 
-    version("1.80.0", tag="RELEASE_3_21")
+	version("1.80.0", tag="RELEASE_3_21")
 	version("1.74.0", sha256="0e5d6488d4b833cf51f1554989f69dc3ae8eee55efd3b8b232895926b8f9b2e4")
 
 	depends_on("r@2.10:", type=("build", "run"))

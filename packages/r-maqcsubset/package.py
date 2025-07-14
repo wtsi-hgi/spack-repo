@@ -15,7 +15,7 @@ class RMaqcsubset(RPackage):
 	bioc = "MAQCsubset" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MAQCsubset_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MAQCsubset/MAQCsubset_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="6490ed55e3cf216d8e90ac29506d1292880aca53ffda6091b0b365295c2516e3")
 
 	depends_on("r@2.10:", type=("build", "run"))

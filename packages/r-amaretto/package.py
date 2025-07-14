@@ -15,7 +15,7 @@ class RAmaretto(RPackage):
 	bioc = "AMARETTO" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AMARETTO_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AMARETTO/AMARETTO_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="3a9d4f819cd2157e480d46aa397edef2bd513c24f355a8196ca58ba9b4880cc0")
 
 	depends_on("r@3.6:", type=("build", "run"))

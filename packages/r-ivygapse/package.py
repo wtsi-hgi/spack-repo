@@ -15,7 +15,7 @@ class RIvygapse(RPackage):
 	bioc = "ivygapSE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ivygapSE_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ivygapSE/ivygapSE_1.24.0.tar.gz"]
 
-    version("1.30.0", tag="RELEASE_3_21")
+	version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="2dd30a51c4a0189a4e44d07cdb096fae9471fcf6cc563205434e21d9b6d23e7f")
 
 	depends_on("r@3.5:", type=("build", "run"))

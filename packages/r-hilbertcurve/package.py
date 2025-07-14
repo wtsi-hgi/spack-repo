@@ -16,7 +16,7 @@ class RHilbertcurve(RPackage):
 	bioc = "HilbertCurve" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HilbertCurve_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HilbertCurve/HilbertCurve_1.32.0.tar.gz"]
 
-    version("2.2.0", tag="RELEASE_3_21")
+	version("2.2.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="c8a23721389fc2d1bd308316740aba1ae546733a3a47c3ecb9f61305c92ea710")
 
 	depends_on("r@3.6:", type=("build", "run"))

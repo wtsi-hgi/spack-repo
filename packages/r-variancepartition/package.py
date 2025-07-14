@@ -16,7 +16,7 @@ class RVariancepartition(RPackage):
 	bioc = "variancePartition" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/variancePartition_1.32.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/variancePartition/variancePartition_1.32.5.tar.gz"]
 
-    version("1.38.0", tag="RELEASE_3_21")
+	version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.5", md5="cd02e6e3024f4f5bbb5d8c1dcb471d15")
 	version("1.24.1", md5="922a5518ac302be34b1e416772190db5", url="https://www.bioconductor.org/packages/3.14/bioc/src/contrib/variancePartition_1.24.1.tar.gz")
 

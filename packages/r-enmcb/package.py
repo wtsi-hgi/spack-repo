@@ -15,7 +15,7 @@ class REnmcb(RPackage):
 	bioc = "EnMCB" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EnMCB_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EnMCB/EnMCB_1.14.0.tar.gz"]
 
-    version("1.20.0", tag="RELEASE_3_21")
+	version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="2757794e4c6b52c6836f5a0c0abedec590eba44a983564ddcbfeeb930749aba3")
 
 	depends_on("r@4:", type=("build", "run"))

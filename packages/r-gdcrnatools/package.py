@@ -15,7 +15,7 @@ class RGdcrnatools(RPackage):
 	bioc = "GDCRNATools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GDCRNATools_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GDCRNATools/GDCRNATools_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="3dfdaee70c37d0689bf8a96d5f71314bea84db741e3d05ca1c85baf9e0c028b5")
 
 	depends_on("r@3.5:", type=("build", "run"))

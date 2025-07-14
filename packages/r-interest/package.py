@@ -15,7 +15,7 @@ class RInterest(RPackage):
 	bioc = "IntEREst" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IntEREst_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IntEREst/IntEREst_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="ee1f9d05316744a28bd404f2041c0e63438e8453e5456e783781e9f9235b473f")
 
 	depends_on("r@3.5:", type=("build", "run"))

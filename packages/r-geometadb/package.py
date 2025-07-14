@@ -15,7 +15,7 @@ class RGeometadb(RPackage):
 	bioc = "GEOmetadb" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEOmetadb_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEOmetadb/GEOmetadb_1.64.0.tar.gz"]
 
-    version("1.70.0", tag="RELEASE_3_21")
+	version("1.70.0", tag="RELEASE_3_21")
 	version("1.64.0", sha256="f82b93dcf1d2e2a59e33cb681840c0117e83215e24bad0b102fbcc290276e687")
 
 	depends_on("r-geoquery", type=("build", "run"))

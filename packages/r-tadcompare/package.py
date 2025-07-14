@@ -16,7 +16,7 @@ class RTadcompare(RPackage):
 	bioc = "TADCompare" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TADCompare_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TADCompare/TADCompare_1.12.1.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.1", sha256="6af959693595b9ec8a0208cc5fe7020b1d4756a3e7ae2ebde18950558d02a958")
 	version("1.12.0", md5="92966a38a0c202cfe7dbd09bb83b23b1")
 

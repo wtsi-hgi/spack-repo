@@ -16,7 +16,7 @@ class RMetid(RPackage):
 	bioc = "MetID" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetID_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetID/MetID_1.20.0.tar.gz"]
 
-    version("1.26.0", tag="RELEASE_3_21")
+	version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="141fea94d2b32369b8d1e60eaf809d3390c5a5f9bd92bac0d6d86aab9c69a58d")
 
 	depends_on("r@3.5:", type=("build", "run"))

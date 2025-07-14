@@ -16,7 +16,7 @@ class RMicrobiomebenchmarkdata(RPackage):
 	bioc = "MicrobiomeBenchmarkData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MicrobiomeBenchmarkData_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MicrobiomeBenchmarkData/MicrobiomeBenchmarkData_1.4.0.tar.gz"]
 
-    version("1.10.0", tag="RELEASE_3_21")
+	version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="4538870944993b16e509eb1c5ec9ba001ee6b7fef904477563daa06f17638694")
 
 	depends_on("r@4.2:", type=("build", "run"))

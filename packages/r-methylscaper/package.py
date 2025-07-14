@@ -15,7 +15,7 @@ class RMethylscaper(RPackage):
 	bioc = "methylscaper" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylscaper_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylscaper/methylscaper_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="9c36f81e61918bdf02a6cf7c807d5e50d76d93793805010eb6ad83393a7f71aa")
 
 	depends_on("r@4.1:", type=("build", "run"))

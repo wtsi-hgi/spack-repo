@@ -16,7 +16,7 @@ class REnhancedvolcano(RPackage):
 	bioc = "EnhancedVolcano" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EnhancedVolcano_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EnhancedVolcano/EnhancedVolcano_1.20.0.tar.gz"]
 
-    version("1.26.0", tag="RELEASE_3_21")
+	version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="022045337d389d76118b942efc27f078d4d7eea98175e4e300f5907a4a1afc24")
 
 	depends_on("r-ggplot2", type=("build", "run"))

@@ -15,7 +15,7 @@ class RRgenometracks(RPackage):
 	bioc = "rGenomeTracks" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rGenomeTracks_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rGenomeTracks/rGenomeTracks_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="53465316e53344432ca14ea72e0ff49a034e557af6202361b171dd9362c6bb41")
 
 	depends_on("r@4.1:", type=("build", "run"))

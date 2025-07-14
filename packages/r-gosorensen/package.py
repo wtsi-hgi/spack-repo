@@ -15,7 +15,7 @@ class RGosorensen(RPackage):
 	bioc = "goSorensen" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/goSorensen_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/goSorensen/goSorensen_1.4.0.tar.gz"]
 
-    version("1.10.0", tag="RELEASE_3_21")
+	version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="bd11519691515013723337c1533467731ffe7b727cc5221bc19f65707cd6d1e0")
 
 	depends_on("r@4.3:", type=("build", "run"))

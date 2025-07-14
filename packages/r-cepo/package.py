@@ -15,7 +15,7 @@ class RCepo(RPackage):
 	bioc = "Cepo" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Cepo_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Cepo/Cepo_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="8843bde49e9c5c1ee9881cd65c592605602564d21f5c5af219773d5d89ca3f68")
 
 	depends_on("r-gseabase", type=("build", "run"))

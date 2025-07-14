@@ -15,7 +15,7 @@ class RCellnoptr(RPackage):
 	bioc = "CellNOptR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellNOptR_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellNOptR/CellNOptR_1.48.0.tar.gz"]
 
-    version("1.54.0", tag="RELEASE_3_21")
+	version("1.54.0", tag="RELEASE_3_21")
 	version("1.48.0", sha256="24302a47c04963ddf625f782871bda9e1ca5a56ef527ae7b737d6b11ac34b304")
 
 	depends_on("r@4:", type=("build", "run"))

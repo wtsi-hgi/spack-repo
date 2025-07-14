@@ -15,7 +15,7 @@ class RNethet(RPackage):
 	bioc = "nethet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nethet_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nethet/nethet_1.34.0.tar.gz"]
 
-    version("1.40.0", tag="RELEASE_3_21")
+	version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="12ea69f6eece283c169874ced85c70a4d3401094830a732730ffd178fcdc464b")
 
 	depends_on("r-glasso", type=("build", "run"))

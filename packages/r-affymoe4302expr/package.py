@@ -15,7 +15,7 @@ class RAffymoe4302expr(RPackage):
 	bioc = "Affymoe4302Expr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Affymoe4302Expr_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Affymoe4302Expr/Affymoe4302Expr_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="192129ae53058117992d38452a19c9f3e37b76c4c91dabb08f0025efcdf5ef07")
 
 	depends_on("r@2.10:", type=("build", "run"))

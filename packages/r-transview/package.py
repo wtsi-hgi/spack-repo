@@ -16,7 +16,7 @@ class RTransview(RPackage):
 	bioc = "TransView" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TransView_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TransView/TransView_1.46.0.tar.gz"]
 
-    version("1.52.0", tag="RELEASE_3_21")
+	version("1.52.0", tag="RELEASE_3_21")
 	version("1.46.0", sha256="d5a48714c5fa0ef6ac55fc78dd302f6c12334fed5f90ae3a533fe3477b36cd4e")
 
 	depends_on("r-genomicranges", type=("build", "run"))

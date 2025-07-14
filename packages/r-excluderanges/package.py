@@ -16,7 +16,7 @@ class RExcluderanges(RPackage):
 	bioc = "excluderanges" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/excluderanges_0.99.8.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/excluderanges/excluderanges_0.99.8.tar.gz"]
 
-    version("0.99.8", tag="RELEASE_3_21")
+	version("0.99.8", tag="RELEASE_3_21")
 	version("0.99.8", sha256="c261c494ca3e03440bb86f9344f391b89c640bc6655cefba4ccc9183f3a731b2")
 
 	depends_on("r-genomicranges", type=("build", "run"))

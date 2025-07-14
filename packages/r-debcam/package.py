@@ -15,7 +15,7 @@ class RDebcam(RPackage):
 	bioc = "debCAM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/debCAM_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/debCAM/debCAM_1.20.0.tar.gz"]
 
-    version("1.26.0", tag="RELEASE_3_21")
+	version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="6791c0e29dcd9dfb3c4c831b074bf34ebb4557fcce6343301651d8c869c698eb")
 
 	depends_on("r@3.5:", type=("build", "run"))

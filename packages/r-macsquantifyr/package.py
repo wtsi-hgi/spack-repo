@@ -15,7 +15,7 @@ class RMacsquantifyr(RPackage):
 	bioc = "MACSQuantifyR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MACSQuantifyR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MACSQuantifyR/MACSQuantifyR_1.16.0.tar.gz"]
 
-    version("1.22.0", tag="RELEASE_3_21")
+	version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="a1e9a9c20333d22f719a0d7bf6da85a8a07282ece3b87f295fc9756ac0943d79")
 
 	depends_on("r-readxl", type=("build", "run"))

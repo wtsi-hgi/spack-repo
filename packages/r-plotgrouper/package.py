@@ -16,7 +16,7 @@ class RPlotgrouper(RPackage):
 	bioc = "plotGrouper" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/plotGrouper_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/plotGrouper/plotGrouper_1.20.0.tar.gz"]
 
-    version("1.26.0", tag="RELEASE_3_21")
+	version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="0d1d93e8b6ab5ff85aef2cf8347c4641b56b910cd63bdcbacbc2f43acdb67b38")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RSimpintlists(RPackage):
 	bioc = "simpIntLists" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/simpIntLists_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/simpIntLists/simpIntLists_1.38.0.tar.gz"]
 
-    version("1.44.0", tag="RELEASE_3_21")
+	version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="2e62a154843a09e95579323acbf733bc84ab76cdfbb93479d985d465a26e0399")
 
 

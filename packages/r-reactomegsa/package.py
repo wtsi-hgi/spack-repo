@@ -16,7 +16,7 @@ class RReactomegsa(RPackage):
 	bioc = "ReactomeGSA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ReactomeGSA_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ReactomeGSA/ReactomeGSA_1.16.1.tar.gz"]
 
-    version("1.22.0", tag="RELEASE_3_21")
+	version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.1", sha256="faa9aad8c282a09909833ddcc261f502f1f786869e3425626771160881b9e35c")
 
 	depends_on("r-jsonlite", type=("build", "run"))

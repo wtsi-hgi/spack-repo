@@ -16,7 +16,7 @@ class RSevenc(RPackage):
 	bioc = "sevenC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sevenC_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sevenC/sevenC_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="82d883995a13847cd7139af0639d5d399679cf290db412fc8425028c8ed13acd")
 
 	depends_on("r@3.5:", type=("build", "run"))

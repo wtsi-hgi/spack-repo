@@ -15,7 +15,7 @@ class RAirway(RPackage):
 	bioc = "airway" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/airway_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/airway/airway_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="79713bc8a6078ba93f306e5e8e7ba74aa09b7fb354153112e48dedaf0c5f45f7")
 
 	depends_on("r@3.5:", type=("build", "run"))

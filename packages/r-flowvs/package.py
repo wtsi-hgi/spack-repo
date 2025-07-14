@@ -15,7 +15,7 @@ class RFlowvs(RPackage):
 	bioc = "flowVS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowVS_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowVS/flowVS_1.34.0.tar.gz"]
 
-    version("1.40.0", tag="RELEASE_3_21")
+	version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="1ab7defff0cbebf8f71dee48ae95426546f31277ed929022ab36b9283bbf54a6")
 
 	depends_on("r@3.2:", type=("build", "run"))

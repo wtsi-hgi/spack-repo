@@ -16,7 +16,7 @@ class RChihaya(RPackage):
 	bioc = "chihaya" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chihaya_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chihaya/chihaya_1.2.0.tar.gz"]
 
-    version("1.8.0", tag="RELEASE_3_21")
+	version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="f193f2c53109a931b6a44f8931e6ba6dc463ae180c452d1b6d137d32e13de255")
 
 	depends_on("r-delayedarray", type=("build", "run"))

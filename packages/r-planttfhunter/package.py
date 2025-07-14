@@ -16,7 +16,7 @@ class RPlanttfhunter(RPackage):
 	bioc = "planttfhunter" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/planttfhunter_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/planttfhunter/planttfhunter_1.2.0.tar.gz"]
 
-    version("1.8.0", tag="RELEASE_3_21")
+	version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="8759169117dd3ecca8fed4e570c3996c818a87fd09b603b6d171a1bf8baee9a2")
 
 	depends_on("r@4.2:", type=("build", "run"))

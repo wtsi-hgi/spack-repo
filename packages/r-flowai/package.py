@@ -15,7 +15,7 @@ class RFlowai(RPackage):
 	bioc = "flowAI" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowAI_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowAI/flowAI_1.32.0.tar.gz"]
 
-    version("1.38.0", tag="RELEASE_3_21")
+	version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="7ffe8ec5e2736ad644cc24174b6350a5bd9f382086ea70a2a2c78883911b21ae")
 
 	depends_on("r@3.6:", type=("build", "run"))

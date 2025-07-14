@@ -15,7 +15,7 @@ class RGseamining(RPackage):
 	bioc = "GSEAmining" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSEAmining_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSEAmining/GSEAmining_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="960763d63a322553dfabcd944cb59acb8eeaa911a319679b81246b5936fd5ad8")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RFgsea(RPackage):
 
 	bioc = "fgsea"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fgsea_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fgsea/fgsea_1.28.0.tar.gz"]
-    version("1.34.2", tag="RELEASE_3_21")
+	version("1.34.2", tag="RELEASE_3_21")
 	version("1.8.0", commit="bb2898aca9fb23e90770671a83fe23f79bb1841b")
 	version("1.6.0", commit="52b801b7c2dfd8238fa8f2b402fddb4fda60271d")
 	version("1.4.1", commit="73de5ff364e520ac99507a9ee5a61a0d23d3c44e")

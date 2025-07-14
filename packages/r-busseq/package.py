@@ -16,7 +16,7 @@ class RBusseq(RPackage):
 	bioc = "BUSseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BUSseq_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BUSseq/BUSseq_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="c0ec05372a803f91a66bb1536b11cc194883e5420602380526b7b76b5715b1de")
 
 	depends_on("r@3.6:", type=("build", "run"))

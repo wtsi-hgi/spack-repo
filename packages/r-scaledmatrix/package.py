@@ -16,7 +16,7 @@ class RScaledmatrix(RPackage):
 
 	bioc = "ScaledMatrix"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ScaledMatrix_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ScaledMatrix/ScaledMatrix_1.10.0.tar.gz"]
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.8.0", commit="122f2c43d496bd420f0aff7cd96728a11bd7fa07")
 	version("1.6.0", commit="45a29d3662e2766f973b281ed86ce2654be84b70")
 	version("1.4.1", commit="15e2efcb6b11e26c31ef2d44968355f71cc1f4fc")

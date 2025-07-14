@@ -16,7 +16,7 @@ class RReder(RPackage):
 	bioc = "RedeR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RedeR_2.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RedeR/RedeR_2.6.1.tar.gz"]
 
-    version("3.4.0", tag="RELEASE_3_21")
+	version("3.4.0", tag="RELEASE_3_21")
 	version("2.6.1", sha256="e76f580867e8bedd189d4a06cca48c61f023615863e4f59c6227d2a01f27a8df")
 	version("2.6.0", md5="033b5763d95dc222256a4ef85b7e3a99")
 

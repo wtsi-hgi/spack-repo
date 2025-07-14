@@ -16,7 +16,7 @@ class RBrendadb(RPackage):
 	bioc = "brendaDb" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/brendaDb_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/brendaDb/brendaDb_1.16.0.tar.gz"]
 
-    version("1.22.0", tag="RELEASE_3_21")
+	version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="1ea1ce49d64ab74770811353e97585d59e4664afa88c21c8272fbbf1b9314dc3")
 
 	depends_on("r-dplyr", type=("build", "run"))

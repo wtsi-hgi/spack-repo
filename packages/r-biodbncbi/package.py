@@ -16,7 +16,7 @@ class RBiodbncbi(RPackage):
 	bioc = "biodbNcbi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbNcbi_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbNcbi/biodbNcbi_1.6.0.tar.gz"]
 
-    version("1.12.0", tag="RELEASE_3_21")
+	version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="859de0395db8acf97e2495cf269d7fece95054005ba3a3dcc69f1b19d0bc6ce2")
 
 	depends_on("r@4.1:", type=("build", "run"))

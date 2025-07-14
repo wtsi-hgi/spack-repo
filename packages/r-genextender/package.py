@@ -16,7 +16,7 @@ class RGenextender(RPackage):
 	bioc = "geneXtendeR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geneXtendeR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geneXtendeR/geneXtendeR_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="c818968234a6d010b1ce7b1ba385267c535c6d133cc809b2982e29956875362e")
 
 	depends_on("r-rtracklayer", type=("build", "run"))

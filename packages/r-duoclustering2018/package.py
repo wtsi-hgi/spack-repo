@@ -15,7 +15,7 @@ class RDuoclustering2018(RPackage):
 	bioc = "DuoClustering2018" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DuoClustering2018_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DuoClustering2018/DuoClustering2018_1.20.0.tar.gz"]
 
-    version("1.26.0", tag="RELEASE_3_21")
+	version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="3b597d129a797707af3a4dcd453a38cde6459dd003118077d98bcbec08938808", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DuoClustering2018_1.20.0.tar.gz")
 
 	depends_on("r-experimenthub", type=("build", "run"))

@@ -16,7 +16,7 @@ class RScrecover(RPackage):
 	bioc = "scRecover" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scRecover_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scRecover/scRecover_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="34f408553ef04a692a7ff3cf49da56995825d56688433044ef43478edbb1589f")
 
 	depends_on("r@3.4:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RRbm(RPackage):
 	bioc = "RBM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RBM_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RBM/RBM_1.34.0.tar.gz"]
 
-    version("1.40.0", tag="RELEASE_3_21")
+	version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="8bc08e618f8a4c5f0d7e236219fde6dfe56e440230aeb9e5be64cfea1da37c7a")
 
 	depends_on("r@3.2:", type=("build", "run"))

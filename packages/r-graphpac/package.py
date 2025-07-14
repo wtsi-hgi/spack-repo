@@ -15,7 +15,7 @@ class RGraphpac(RPackage):
 	bioc = "GraphPAC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GraphPAC_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GraphPAC/GraphPAC_1.44.0.tar.gz"]
 
-    version("1.50.0", tag="RELEASE_3_21")
+	version("1.50.0", tag="RELEASE_3_21")
 	version("1.44.0", sha256="aa6c81bcb15b6d34115783fb8e00cad4e6b1247724789135455cda82fc46e8b7")
 
 	depends_on("r@2.15:", type=("build", "run"))

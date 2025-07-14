@@ -16,7 +16,7 @@ class RCghbase(RPackage):
 	bioc = "CGHbase" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CGHbase_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CGHbase/CGHbase_1.62.0.tar.gz"]
 
-    version("1.68.0", tag="RELEASE_3_21")
+	version("1.68.0", tag="RELEASE_3_21")
 	version("1.62.0", sha256="6496bbc196f6bbf9864b4f69d6974b099e986842834f008d4ab6ee19f01b80c7")
 
 	depends_on("r@2.10:", type=("build", "run"))

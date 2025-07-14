@@ -16,7 +16,7 @@ class RScider(RPackage):
 	bioc = "scider" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scider_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scider/scider_1.0.0.tar.gz"]
 
-    version("1.6.0", tag="RELEASE_3_21")
+	version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="0b54660caa2f18fa624319f51f8971d29e067b56546f4bfd50cfb4dd5f8187e6")
 
 	depends_on("r@4.3:", type=("build", "run"))

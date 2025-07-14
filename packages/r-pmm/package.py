@@ -15,7 +15,7 @@ class RPmm(RPackage):
 	bioc = "pmm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pmm_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pmm/pmm_1.34.0.tar.gz"]
 
-    version("1.40.0", tag="RELEASE_3_21")
+	version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="3cbb5f74eeb15170c1d1cd4dfed4bf27e0ca2bbe5c860732edda917ffe009541")
 
 	depends_on("r@2.10:", type=("build", "run"))

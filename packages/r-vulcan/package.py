@@ -15,7 +15,7 @@ class RVulcan(RPackage):
 	bioc = "vulcan" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vulcan_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vulcan/vulcan_1.24.0.tar.gz"]
 
-    version("1.30.0", tag="RELEASE_3_21")
+	version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="bfd2125e94f0e99590c572ab503d409c536180fd1ffc662bb1f9f66e2a4b4c7f")
 
 	depends_on("r@4:", type=("build", "run"))

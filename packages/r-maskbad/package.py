@@ -15,7 +15,7 @@ class RMaskbad(RPackage):
 	bioc = "maskBAD" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maskBAD_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maskBAD/maskBAD_1.46.0.tar.gz"]
 
-    version("1.52.0", tag="RELEASE_3_21")
+	version("1.52.0", tag="RELEASE_3_21")
 	version("1.46.0", sha256="bef451a8de2f5fbece91b4dd03dfeeba6fb62bf5a71c539d7e4c8b14a9227986")
 
 	depends_on("r@2.10:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RSigner(RPackage):
 	bioc = "signeR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/signeR_2.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/signeR/signeR_2.4.0.tar.gz"]
 
-    version("2.10.0", tag="RELEASE_3_21")
+	version("2.10.0", tag="RELEASE_3_21")
 	version("2.4.0", sha256="6fbe442415ea2441ab33aecaa1a6eff239ef3b823bd622b3f6c422cbf3d620a1")
 
 	depends_on("r@3.0.2:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RAlphabeta(RPackage):
 	bioc = "AlphaBeta" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AlphaBeta_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AlphaBeta/AlphaBeta_1.16.0.tar.gz"]
 
-    version("1.22.0", tag="RELEASE_3_21")
+	version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="783bbcf382dd385a41825ff9488cfe85b8cb1323bde16de69e9202ae7d454a7e")
 
 	depends_on("r@3.6:", type=("build", "run"))

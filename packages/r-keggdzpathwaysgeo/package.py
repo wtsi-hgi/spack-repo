@@ -15,7 +15,7 @@ class RKeggdzpathwaysgeo(RPackage):
 	bioc = "KEGGdzPathwaysGEO" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/KEGGdzPathwaysGEO_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/KEGGdzPathwaysGEO/KEGGdzPathwaysGEO_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="8ba16875cb804f3283e2b745c1c7416d2b697d941d16ac68e289377604664617")
 
 	depends_on("r@2.13:", type=("build", "run"))

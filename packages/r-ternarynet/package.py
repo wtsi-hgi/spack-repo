@@ -15,7 +15,7 @@ class RTernarynet(RPackage):
 	bioc = "ternarynet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ternarynet_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ternarynet/ternarynet_1.46.0.tar.gz"]
 
-    version("1.52.0", tag="RELEASE_3_21")
+	version("1.52.0", tag="RELEASE_3_21")
 	version("1.46.0", sha256="18582b1ca3c378f452de68d3016d2083d01b74ad19082c61303cf86871e76ef8")
 
 	depends_on("r@4:", type=("build", "run"))

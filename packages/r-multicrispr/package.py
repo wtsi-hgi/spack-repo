@@ -16,7 +16,7 @@ class RMulticrispr(RPackage):
 	bioc = "multicrispr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/multicrispr_1.12.9.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/multicrispr/multicrispr_1.12.9.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.9", sha256="35ab970062cfffa12f28c2a516df80e19a81a3d9e5959c7cdc1311f80e250de7")
 
 	depends_on("r@4:", type=("build", "run"))

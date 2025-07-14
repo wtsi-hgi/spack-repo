@@ -15,7 +15,7 @@ class RNoiseq(RPackage):
 	bioc = "NOISeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NOISeq_2.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NOISeq/NOISeq_2.46.0.tar.gz"]
 
-    version("2.52.0", tag="RELEASE_3_21")
+	version("2.52.0", tag="RELEASE_3_21")
 	version("2.46.0", sha256="8b17b542bc278546c74a22c31fbd5e174530164b8355565ce5e90e7b08d34063")
 
 	depends_on("r@2.13:", type=("build", "run"))

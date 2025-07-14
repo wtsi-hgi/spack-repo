@@ -15,7 +15,7 @@ class RErma(RPackage):
 	bioc = "erma" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/erma_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/erma/erma_1.18.0.tar.gz"]
 
-    version("1.24.1", tag="RELEASE_3_21")
+	version("1.24.1", tag="RELEASE_3_21")
 	version("1.18.0", sha256="1f9ea877f8d8670cb116b5a4c67182885c7a9a04206b970868fd530ebf93576d")
 
 	depends_on("r@3.1:", type=("build", "run"))

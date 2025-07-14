@@ -15,7 +15,7 @@ class RDiffhic(RPackage):
 	bioc = "diffHic" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/diffHic_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/diffHic/diffHic_1.34.0.tar.gz"]
 
-    version("1.40.0", tag="RELEASE_3_21")
+	version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="c05b50a5091a128ddda24e1af44b2bc88084944e1f4d8a6e5d075774375f99b5")
 
 	depends_on("r@3.5:", type=("build", "run"))

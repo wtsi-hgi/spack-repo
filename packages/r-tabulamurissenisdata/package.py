@@ -16,7 +16,7 @@ class RTabulamurissenisdata(RPackage):
 	bioc = "TabulaMurisSenisData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TabulaMurisSenisData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TabulaMurisSenisData/TabulaMurisSenisData_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="e1a2f95c837ca99d93bcc1e121a01f086cf8477d3a40e2333a63b3974d91cf38")
 
 	depends_on("r-experimenthub", type=("build", "run"))

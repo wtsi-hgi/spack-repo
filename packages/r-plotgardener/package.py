@@ -16,7 +16,7 @@ class RPlotgardener(RPackage):
 	bioc = "plotgardener" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/plotgardener_1.8.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/plotgardener/plotgardener_1.8.3.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.3", sha256="1f1f372778e06d774ae7be5f465d19d4a317fab3355454d21e637493a8ba05a3")
 	version("1.8.2", md5="ddd679b0595dcf2798a5bcc6e3a8c692")
 

@@ -15,7 +15,7 @@ class RSoggi(RPackage):
 	bioc = "soGGi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/soGGi_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/soGGi/soGGi_1.34.0.tar.gz"]
 
-    version("1.40.1", tag="RELEASE_3_21")
+	version("1.40.1", tag="RELEASE_3_21")
 	version("1.34.0", sha256="a2148b158745b45c76cabdf37894264fa5423f8fe01b0ddc9f7a9746926fe165")
 
 	depends_on("r@3.5:", type=("build", "run"))

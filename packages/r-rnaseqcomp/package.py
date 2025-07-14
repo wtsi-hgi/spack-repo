@@ -16,7 +16,7 @@ class RRnaseqcomp(RPackage):
 	bioc = "rnaseqcomp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rnaseqcomp_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rnaseqcomp/rnaseqcomp_1.32.0.tar.gz"]
 
-    version("1.38.0", tag="RELEASE_3_21")
+	version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="be01564bef64eda55c7334a3c37adbea403b4e686f1f2db3576185d207bdd47a")
 
 	depends_on("r@3.2:", type=("build", "run"))

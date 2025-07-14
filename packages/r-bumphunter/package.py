@@ -14,7 +14,7 @@ class RBumphunter(RPackage):
 	bioc = "bumphunter"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bumphunter_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bumphunter/bumphunter_1.44.0.tar.gz"]
 
-    version("1.50.0", tag="RELEASE_3_21")
+	version("1.50.0", tag="RELEASE_3_21")
 	version("1.44.0", sha256="0c1365857b5e0883dc653dd7a591ec95ecc0372a392a7a1c3a04b9a55205d56e")
 	version("1.42.0", commit="0eb2808a04920aaba00e1ce3e9dff503596e931f")
 	version("1.40.0", commit="3de207a3659859737d4c748fc8023694943da43b")

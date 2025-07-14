@@ -15,7 +15,7 @@ class RAlabasterSce(RPackage):
 	bioc = "alabaster.sce" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.sce_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.sce/alabaster.sce_1.2.0.tar.gz"]
 
-    version("1.8.0", tag="RELEASE_3_21")
+	version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="7f335edf1edac01869d5d2790390af327b409acc7c5644750376cfe48e8f64be")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))

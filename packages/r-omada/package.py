@@ -15,7 +15,7 @@ class ROmada(RPackage):
 	bioc = "omada" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/omada_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/omada/omada_1.4.0.tar.gz"]
 
-    version("1.10.0", tag="RELEASE_3_21")
+	version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="dd15848708994f18842116b7ffaa47d0be82f7419f3775081183938aa6ce665a")
 
 	depends_on("r-pdfcluster@1.0.3:", type=("build", "run"))

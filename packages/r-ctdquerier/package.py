@@ -15,7 +15,7 @@ class RCtdquerier(RPackage):
 	bioc = "CTDquerier" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CTDquerier_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CTDquerier/CTDquerier_2.10.0.tar.gz"]
 
-    version("2.16.0", tag="RELEASE_3_21")
+	version("2.16.0", tag="RELEASE_3_21")
 	version("2.10.0", sha256="3856ed5957e3a6ea859b0aa4232fef15e3b05ed1e4721f7ab80ec938656f00dc")
 
 	depends_on("r@4.1:", type=("build", "run"))

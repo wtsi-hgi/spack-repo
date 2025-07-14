@@ -15,7 +15,7 @@ class RSvmdo(RPackage):
 	bioc = "SVMDO" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SVMDO_1.2.8.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SVMDO/SVMDO_1.2.8.tar.gz"]
 
-    version("1.8.0", tag="RELEASE_3_21")
+	version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.8", sha256="128e27afa062cd585b4cac2438c490c63d232806ea35462696b327130169e2de")
 
 	depends_on("r@4.3:", type=("build", "run"))

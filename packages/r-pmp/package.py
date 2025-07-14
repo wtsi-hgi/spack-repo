@@ -15,7 +15,7 @@ class RPmp(RPackage):
 	bioc = "pmp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pmp_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pmp/pmp_1.14.1.tar.gz"]
 
-    version("1.20.0", tag="RELEASE_3_21")
+	version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.1", sha256="0b6b2129f968314740b8cfc02c564728ae03f10c47171ee146235d51d20df30f")
 	version("1.14.0", md5="07feec54f330f10904aae29238f79369")
 

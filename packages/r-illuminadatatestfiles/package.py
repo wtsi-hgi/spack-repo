@@ -15,7 +15,7 @@ class RIlluminadatatestfiles(RPackage):
 	bioc = "IlluminaDataTestFiles" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/IlluminaDataTestFiles_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/IlluminaDataTestFiles/IlluminaDataTestFiles_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="d1eb2baa08b869a10056c5d1582063d03a2dc468cc9075332d6a4ac9bd3acb21")
 
 

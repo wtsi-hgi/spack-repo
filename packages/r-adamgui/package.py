@@ -16,7 +16,7 @@ class RAdamgui(RPackage):
 	bioc = "ADAMgui" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ADAMgui_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ADAMgui/ADAMgui_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="03d416aca628f3ddc27ad5197cdca8d4f980368ccb57d6dba95df73fe96da582")
 
 	depends_on("r@3.6:", type=("build", "run"))

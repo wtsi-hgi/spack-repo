@@ -15,7 +15,7 @@ class RRtcgaMethylation(RPackage):
 	bioc = "RTCGA.methylation" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.methylation_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.methylation/RTCGA.methylation_1.30.0.tar.gz"]
 
-    version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="3219d26bc1faec0d9394c88fb421ae41e53752cd879dae92f26f9472991ea4bc")
 
 	depends_on("r@3.3:", type=("build", "run"))

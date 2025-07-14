@@ -16,7 +16,7 @@ class RFlowstats(RPackage):
 	bioc = "flowStats" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowStats_4.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowStats/flowStats_4.14.1.tar.gz"]
 
-    version("4.20.0", tag="RELEASE_3_21")
+	version("4.20.0", tag="RELEASE_3_21")
 	version("4.14.1", sha256="05505ac37e556010c7388a3924c874973d37995b5d62223ae0c060adb23295e0")
 
 	depends_on("r@3.0.2:", type=("build", "run"))

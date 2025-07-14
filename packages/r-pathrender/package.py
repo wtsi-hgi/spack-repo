@@ -16,7 +16,7 @@ class RPathrender(RPackage):
 	bioc = "pathRender" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pathRender_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pathRender/pathRender_1.70.0.tar.gz"]
 
-    version("1.76.0", tag="RELEASE_3_21")
+	version("1.76.0", tag="RELEASE_3_21")
 	version("1.70.0", sha256="1f5291482f1b0cd1722b62b3f10ac4a44b28419b793f86e6c7447ebb934b3212")
 
 	depends_on("r-graph", type=("build", "run"))

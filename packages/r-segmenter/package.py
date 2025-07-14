@@ -15,7 +15,7 @@ class RSegmenter(RPackage):
 	bioc = "segmenter" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/segmenter_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/segmenter/segmenter_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="6135278b542439c565bb6b9cc57013838507b28c389872d6f694c1979112eda7")
 
 	depends_on("r@4.1:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RAttract(RPackage):
 	bioc = "attract" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/attract_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/attract/attract_1.54.0.tar.gz"]
 
-    version("1.60.0", tag="RELEASE_3_21")
+	version("1.60.0", tag="RELEASE_3_21")
 	version("1.54.0", sha256="c394e2ac74869e1a3686aa71c6531db282dff549240963dff1b467c6967b6852")
 
 	depends_on("r@3.4:", type=("build", "run"))

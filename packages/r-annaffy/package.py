@@ -19,7 +19,7 @@ class RAnnaffy(RPackage):
 	license("LGPL-2.1-or-later")
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/annaffy_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/annaffy/annaffy_1.74.0.tar.gz"]
 
-    version("1.80.0", tag="RELEASE_3_21")
+	version("1.80.0", tag="RELEASE_3_21")
 	version("1.74.0", sha256="7cd64d0c310d48107acff996bbb164468a872d0121b9024daa0b644b5307bbd5")
 	version("1.72.0", commit="7cb439706a7e93fb5b44ead374010077a44ea78b")
 	version("1.70.0", commit="c99e81259adb39b5d8e954fd7afe7f93675229bc")
