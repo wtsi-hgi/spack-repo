@@ -12,11 +12,10 @@ class RHgu133abarcodevecs(RPackage):
 	Data used by the barcode package for microarrays of type hgu133a.
 	"""
 	
-	bioc = "hgu133abarcodevecs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hgu133abarcodevecs_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/hgu133abarcodevecs/hgu133abarcodevecs_1.40.0.tar.gz"]
+	bioc = "hgu133abarcodevecs"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="5fd8767bd227560cac963896286ada6b49cef2bc89670139e7418da67ed51aed")
+	version("1.46.0", commit="d52f041ff9072d85502e01580ceb33e7c7daaf92")
+	version("1.40.0", commit="37008009dd28243187a369572ac94c3fbea5d2b8")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

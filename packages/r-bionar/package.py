@@ -12,11 +12,10 @@ class RBionar(RPackage):
 	the R package BioNAR, developed to step by step analysis of PPI network. The aim is to quantify and rank each protein’s simultaneous impact into multiple complexes based on network topology and clustering. Package also enables estimating of co-occurrence of diseases across the network and specific clusters pointing towards shared/common mechanisms.
 	"""
 	
-	bioc = "BioNAR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioNAR_1.4.4.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioNAR/BioNAR_1.4.4.tar.gz"]
+	bioc = "BioNAR"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.4", sha256="4dfa5a4cfe10b5dd63b7a63b6be43c6ae87cbb2098e5165d3ec7e92d6979dabe")
+	version("1.10.0", commit="d3036b1bbe147d08186bc9a572574346845f10b1")
+	version("1.4.4", commit="1a4aa7084a39d5cee2fd7c79639edc29b7ba4162")
 	version("1.4.1", md5="cce2273d564095b70d5b18aa6d134612")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RSeqgate(RPackage):
 	Filtering of lowly expressed features (e.g. genes) is a common step before performing statistical analysis, but an arbitrary threshold is generally chosen. SeqGate implements a method that rationalize this step by the analysis of the distibution of counts in replicate samples. The gate is the threshold above which sequenced features can be considered as confidently quantified.
 	"""
 	
-	bioc = "SeqGate" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SeqGate_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SeqGate/SeqGate_1.12.0.tar.gz"]
+	bioc = "SeqGate"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="63c32370dcd8f96edef04104858dffe3714f30b4bae38687962fe01834df7e5e")
+	version("1.18.0", commit="12c54ff78a927f2f6e8bda0d0d8096d5a1734f0f")
+	version("1.12.0", commit="6332aeb3a1dfb340378fabd5023f594dacc980b8")
 
 	depends_on("r-s4vectors", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

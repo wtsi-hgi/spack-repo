@@ -12,11 +12,10 @@ class RTimeomics(RPackage):
 	timeOmics is a generic data-driven framework to integrate multi-Omics longitudinal data measured on the same biological samples and select key temporal features with strong associations within the same sample group. The main steps of timeOmics are: 1. Plaform and time-specific normalization and filtering steps; 2. Modelling each biological into one time expression profile; 3. Clustering features with the same expression profile over time; 4. Post-hoc validation step.
 	"""
 	
-	bioc = "timeOmics" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/timeOmics_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/timeOmics/timeOmics_1.14.0.tar.gz"]
+	bioc = "timeOmics"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="c518ac5fc3b979f652b9eda376f00dbbf716a764a20cdb6dbf76699337a8a887")
+	version("1.20.0", commit="8922b76610b1cf107e5c7980b01cf02ac22e642c")
+	version("1.14.0", commit="2965d3c43f02b007053e1d4d8fb458620f3f7da7")
 
 	depends_on("r-mixomics", type=("build", "run"))
 	depends_on("r@4:", type=("build", "run"))

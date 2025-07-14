@@ -13,11 +13,10 @@ class RScmerge(RPackage):
 	"""
 	
 	homepage = "https://github.com/SydneyBioX/scMerge"
-	bioc = "scMerge" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scMerge_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scMerge/scMerge_1.18.0.tar.gz"]
+	bioc = "scMerge"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="843f5be76d286c63eeb0c4f06c34c7cd75765904adce97c01c0c02f07549aac8")
+	version("1.24.0", commit="6ed059aa7e671228fe8023c57d41eee2c326e6ac")
+	version("1.18.0", commit="8b9a2dcac6431634d7ac183fa6cf98209d99c746")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

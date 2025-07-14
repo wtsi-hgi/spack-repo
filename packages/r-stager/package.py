@@ -12,11 +12,10 @@ class RStager(RPackage):
 	The stageR package allows automated stage-wise analysis of high-throughput gene expression data. The method is published in Genome Biology at https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1277-0
 	"""
 	
-	bioc = "stageR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/stageR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/stageR/stageR_1.24.0.tar.gz"]
+	bioc = "stageR"
 
-	version("1.30.1", tag="RELEASE_3_21")
-	version("1.24.0", sha256="ebeaa6d04eff967ca3686754f12cf94a9b07b10433510e236cb0708f51df9018")
+	version("1.30.1", commit="15759603f4c36ebe013715e7f55135dff65dadfb")
+	version("1.24.0", commit="c4ff87efeaa83f4aa941bc88e8e4f5bceaee0cb7")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

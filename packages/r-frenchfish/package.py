@@ -12,11 +12,10 @@ class RFrenchfish(RPackage):
 	FrenchFISH comprises a nuclear volume correction method coupled with two types of Poisson models: either a Poisson model for improved manual spot counting without the need for control probes; or a homogenous Poisson Point Process model for automated spot counting.
 	"""
 	
-	bioc = "frenchFISH" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/frenchFISH_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/frenchFISH/frenchFISH_1.14.0.tar.gz"]
+	bioc = "frenchFISH"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="09cc83d7bc246a8b8da57c724237793670032c9223a1248765ed3b121a07e603")
+	version("1.20.0", commit="a4db2d432a918689dcf878c58d4d1cb3fb06af82")
+	version("1.14.0", commit="f7e75e5ef6586ff567bf706775b43ca552b6314f")
 
 	depends_on("r-mcmcpack", type=("build", "run"))
 	depends_on("r-nhpoisson", type=("build", "run"))

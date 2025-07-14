@@ -12,11 +12,10 @@ class RPantherDb(RPackage):
 	A set of annotation maps describing the entire Gene Ontology assembled using data from PANTHER.
 	"""
 	
-	bioc = "PANTHER.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/PANTHER.db_1.0.12.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/PANTHER.db/PANTHER.db_1.0.12.tar.gz"]
+	bioc = "PANTHER.db"
 
-	version("1.0.12", tag="RELEASE_3_21")
-	version("1.0.12", sha256="186ff9f25e46dce9d7c183f93e96ff0527e3a36515cf09cd8506f5c80e7acd17")
+	version("1.0.12", commit="4549c6bff4f28a4bc3559413c9d58235bdad768d")
+	version("1.0.12", commit="4549c6bff4f28a4bc3559413c9d58235bdad768d")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

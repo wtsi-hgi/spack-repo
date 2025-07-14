@@ -12,11 +12,10 @@ class RCemitool(RPackage):
 	The CEMiTool package unifies the discovery and the analysis of coexpression gene modules in a fully automatic manner, while providing a user-friendly html report with high quality graphs. Our tool evaluates if modules contain genes that are over-represented by specific pathways or that are altered in a specific sample group. Additionally, CEMiTool is able to integrate transcriptomic data with interactome information, identifying the potential hubs on each network.
 	"""
 	
-	bioc = "CEMiTool" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CEMiTool_1.26.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CEMiTool/CEMiTool_1.26.1.tar.gz"]
+	bioc = "CEMiTool"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.1", sha256="36b60b70b931e765db3773ef34e579afa0e4510666a72690bf09025b38e545b1")
+	version("1.32.0", commit="f9d2e161bc01daf508095168cfdd19db81a22c86")
+	version("1.26.1", commit="ed5249c86468bfece988cd43a370e08175c2bb75")
 	version("1.26.0", md5="df823e2602a3b994f889644e39e0eb8f")
 
 	depends_on("r@4:", type=("build", "run"))

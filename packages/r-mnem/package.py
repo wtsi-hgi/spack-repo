@@ -13,11 +13,10 @@ class RMnem(RPackage):
 	"""
 	
 	homepage = "https://github.com/cbg-ethz/mnem/"
-	bioc = "mnem" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mnem_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mnem/mnem_1.18.0.tar.gz"]
+	bioc = "mnem"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="07b0131ea1d879205800cec6ef521a6e239ffbf881b0bf90e93eb1412550cddc")
+	version("1.24.0", commit="c44ed4e408e16b096aaae08886be52c055e06a5c")
+	version("1.18.0", commit="ad087eee616086a1b2a30610a23f2ff6a75f8840")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))

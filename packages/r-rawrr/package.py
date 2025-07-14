@@ -13,11 +13,10 @@ class RRawrr(RPackage):
 	"""
 	
 	homepage = "https://github.com/fgcz/rawrr/"
-	bioc = "rawrr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rawrr_1.10.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rawrr/rawrr_1.10.2.tar.gz"]
+	bioc = "rawrr"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.2", sha256="105fc356152755d3d6ff893a25c198e7b1b94a4ee632281f47a1507df1e8cff3")
+	version("1.16.0", commit="9604eccdc30ae3123e3c39a45fbc29a0dd633732")
+	version("1.10.2", commit="25ae3ee4cae629b7a5538f2999726b5532014eda")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("mono", type=("build", "link", "run"))

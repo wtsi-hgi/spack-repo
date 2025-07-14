@@ -12,11 +12,10 @@ class RDiffutr(RPackage):
 	The diffUTR package provides a uniform interface and plotting functions for limma/edgeR/DEXSeq -powered differential bin/exon usage. It includes in addition an improved version of the limma::diffSplice method. Most importantly, diffUTR further extends the application of these frameworks to differential UTR usage analysis using poly-A site databases.
 	"""
 	
-	bioc = "diffUTR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/diffUTR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/diffUTR/diffUTR_1.10.0.tar.gz"]
+	bioc = "diffUTR"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="929c164ac14bc0418e76e7ae05eedd6e5d1312153344b2b0e7f25e6e4c86c67d")
+	version("1.16.0", commit="8ef8f4547e18e4d5835bde910f57f5cee6415ea2")
+	version("1.10.0", commit="90e9a90bc1f4831b286aa6caaf3f37c0c3d8fbb4")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

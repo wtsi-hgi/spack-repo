@@ -13,9 +13,8 @@ class RXmapbridge(RPackage):
 	exports plotting files in a suitable format."""
 
 	bioc = "xmapbridge"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/xmapbridge_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/xmapbridge/xmapbridge_1.60.0.tar.gz"]
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="29347911d56347ef944cefac2a1c89f8dd3ced80bb8d31efb3b48b5011147e5d")
+	version("1.66.0", commit="07f8486e498ff17e57e05c502c6453e05e716cbd")
+	version("1.60.0", commit="bacddaae8c60f047df47e12c06d5cc76bf6a740b")
 	version("1.58.0", commit="905077b7935c4678376f3f2afd9881ff0c45ad00")
 	version("1.56.0", commit="fdf2cafca8ad348813d3381fee57623fab53f0ab")
 	version("1.54.0", commit="a316e2399894191646c229378fa138b7461c75ab")

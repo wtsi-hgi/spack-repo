@@ -13,11 +13,10 @@ class RBlimatestingdata(RPackage):
 	"""
 	
 	homepage = "https://bitbucket.org/kulvait/blima"
-	bioc = "blimaTestingData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/blimaTestingData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/blimaTestingData/blimaTestingData_1.22.0.tar.gz"]
+	bioc = "blimaTestingData"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="f4e600cbcdb4b9175d341dfda2bd72ef04c3e6e798d95f7fd6cbafd77be13493")
+	version("1.28.0", commit="11070cece70c0a164428599cc09d443c08979072")
+	version("1.22.0", commit="f167f7fd8c85374f0e3186e73bbba2ab1ed65c7d")
 
 	depends_on("r@3:", type=("build", "run"))
 

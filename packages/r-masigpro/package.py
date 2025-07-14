@@ -12,11 +12,10 @@ class RMasigpro(RPackage):
 	maSigPro is a regression based approach to find genes for which there are significant gene expression profile differences between experimental groups in time course microarray and RNA-Seq experiments.
 	"""
 	
-	bioc = "maSigPro" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maSigPro_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maSigPro/maSigPro_1.74.0.tar.gz"]
+	bioc = "maSigPro"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="a867956d4948310e5ae4730901b14ac07c5e845b558d942391e893229d7d220a")
+	version("1.80.0", commit="8b80c73508a9e3ef047d6230482a4cb1d900eacb")
+	version("1.74.0", commit="55ea81cc9b3f9efafbc8e597aec7d9c783db8a21")
 
 	depends_on("r@2.3.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

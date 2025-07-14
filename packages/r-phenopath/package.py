@@ -12,11 +12,10 @@ class RPhenopath(RPackage):
 	PhenoPath infers genomic trajectories (pseudotimes) in the presence of heterogeneous genetic and environmental backgrounds and tests for interactions between them.
 	"""
 	
-	bioc = "phenopath" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phenopath_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phenopath/phenopath_1.26.0.tar.gz"]
+	bioc = "phenopath"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="24e1e4f03ebaf8b946671babd47f872d11f1c8df277780cb957dc7afb5bd9c84")
+	version("1.32.0", commit="fc4b5ba4540ce7c8658aa74d00d6792d1e7085e3")
+	version("1.26.0", commit="2f8379027f0cd6bed12f226f84697518cd74f1c6")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

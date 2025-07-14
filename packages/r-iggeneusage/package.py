@@ -13,11 +13,10 @@ class RIggeneusage(RPackage):
 	"""
 	
 	homepage = "https://github.com/snaketron/IgGeneUsage"
-	bioc = "IgGeneUsage" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IgGeneUsage_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IgGeneUsage/IgGeneUsage_1.16.0.tar.gz"]
+	bioc = "IgGeneUsage"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="4c665f2875ee6f74b2e660cd9929b65a537557aff0e806d00f33a21df81e1e23")
+	version("1.22.0", commit="9f8fa391e113ad0c3df473a37ee7f5ca14415761")
+	version("1.16.0", commit="4cb7db5ed709de348d1aa14aea2bdfb6c45fe106")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-reshape2@1.4.3:", type=("build", "run"))

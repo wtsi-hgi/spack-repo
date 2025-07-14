@@ -13,11 +13,10 @@ class RTrendy(RPackage):
 	"""
 	
 	homepage = "https://github.com/rhondabacher/Trendy"
-	bioc = "Trendy" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Trendy_1.24.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Trendy/Trendy_1.24.1.tar.gz"]
+	bioc = "Trendy"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.1", sha256="bcf089a63145713823423f8daf360aa1b93ee3980bf3225823a30290b3b7f48e")
+	version("1.30.0", commit="5654c51c6b9cbb1869e29137ddeccb296910b9e6")
+	version("1.24.1", commit="c09b4ae6acc75f86614372fc667c4225dca73404")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-segmented", type=("build", "run"))

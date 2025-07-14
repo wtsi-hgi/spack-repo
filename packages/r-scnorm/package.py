@@ -13,11 +13,10 @@ class RScnorm(RPackage):
 	"""
 	
 	homepage = "https://github.com/rhondabacher/SCnorm"
-	bioc = "SCnorm" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCnorm_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCnorm/SCnorm_1.24.0.tar.gz"]
+	bioc = "SCnorm"
 
-	version("1.30.1", tag="RELEASE_3_21")
-	version("1.24.0", sha256="21889d382ea33a37a615d7296748840894775f4c583dc4d40e251f9bda0337b4")
+	version("1.30.1", commit="c8694b88b2919005caad7ed1eea85c143c970d47")
+	version("1.24.0", commit="a500413ee9ba73880d062c01057e67ea11514c54")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

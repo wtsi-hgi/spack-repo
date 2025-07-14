@@ -12,11 +12,10 @@ class RGpumagic(RPackage):
 	The package aims to help users write openCL code with little or no effort. It is able to compile an user-defined R function and run it on a device such as a CPU or a GPU. The user can also write and run their openCL code directly by calling .kernel function.
 	"""
 	
-	bioc = "gpuMagic" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gpuMagic_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gpuMagic/gpuMagic_1.18.0.tar.gz"]
+	bioc = "gpuMagic"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="14e7ba94590e9d08e99da73a3960c5c4b2dee3ebb4420f79a9e475562349ad74")
+	version("1.24.0", commit="6e6f5f6c523b6a2fd0549b2b19bd463766040bb9")
+	version("1.18.0", commit="4ee18d1caf6942746d89ebb694acfb51c322cecc")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-deriv", type=("build", "run"))

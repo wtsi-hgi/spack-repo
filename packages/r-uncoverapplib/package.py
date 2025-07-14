@@ -13,11 +13,10 @@ class RUncoverapplib(RPackage):
 	"""
 	
 	homepage = "https://github.com/Manuelaio/uncoverappLib"
-	bioc = "uncoverappLib" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/uncoverappLib_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/uncoverappLib/uncoverappLib_1.12.0.tar.gz"]
+	bioc = "uncoverappLib"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="4e71ab29e25e8173848de752e41c5b79043293fd16d3b4905e50239a10738209")
+	version("1.18.0", commit="ec9f8b60f337a2a73cb31ae99e68cc862df6a434")
+	version("1.12.0", commit="2424917ba226e144f82a392d39ad05bf7f15d66e")
 
 	depends_on("r-markdown", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

@@ -13,11 +13,10 @@ class RNipalsmcia(RPackage):
 	"""
 	
 	homepage = "https://github.com/Muunraker/nipalsMCIA"
-	bioc = "nipalsMCIA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nipalsMCIA_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nipalsMCIA/nipalsMCIA_1.0.0.tar.gz"]
+	bioc = "nipalsMCIA"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="83696b0eb3a198168152a8cb7a85b894480adde9d288ad1ae4c007da7fca6bcb")
+	version("1.6.0", commit="24050e84fee82f4cad648bc09d14b5f8d917a169")
+	version("1.0.0", commit="70dd4bf19fec20576906c66de8d1c7ae3f64a01b")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-complexheatmap", type=("build", "run"))

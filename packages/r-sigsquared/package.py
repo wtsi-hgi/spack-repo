@@ -12,11 +12,10 @@ class RSigsquared(RPackage):
 	By leveraging statistical properties (log-rank test for survival) of patient cohorts defined by binary thresholds, poor-prognosis patients are identified by the sigsquared package via optimization over a cost function reducing type I and II error.
 	"""
 	
-	bioc = "sigsquared" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sigsquared_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sigsquared/sigsquared_1.34.0.tar.gz"]
+	bioc = "sigsquared"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="3b58cb88db445f4786a6088c45d7be4264539d3536b2e4befd8ff6076f7e4acb")
+	version("1.40.0", commit="b787191b90181ee40fb13c4d45a9252b9ab764a8")
+	version("1.34.0", commit="ca8d23e9f1ff91e4a35977720ac0e2c608064adc")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

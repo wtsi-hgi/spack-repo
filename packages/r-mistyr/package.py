@@ -13,11 +13,10 @@ class RMistyr(RPackage):
 	"""
 	
 	homepage = "https://saezlab.github.io/mistyR/"
-	bioc = "mistyR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mistyR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mistyR/mistyR_1.10.0.tar.gz"]
+	bioc = "mistyR"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="f3f03c2aa1c54bc568625d93438edb26e8711686ff6fa8a8d6a1a5aa617b0f89")
+	version("1.16.0", commit="5a6fd1f62d1aadd1f0a2e93526eea00fda72e7aa")
+	version("1.10.0", commit="faa07396d08c133843ff38c38b4fd2861f067a0a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

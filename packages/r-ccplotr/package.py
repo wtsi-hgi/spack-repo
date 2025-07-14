@@ -13,11 +13,10 @@ class RCcplotr(RPackage):
 	"""
 	
 	homepage = "https://github.com/Sarah145/CCPlotR"
-	bioc = "CCPlotR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CCPlotR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CCPlotR/CCPlotR_1.0.0.tar.gz"]
+	bioc = "CCPlotR"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="577e586adf51f7b6265b9fc877880ed0749a9c9d15ac7bd2c4800b10941a69b0")
+	version("1.6.0", commit="8bba4eed5600da2296144bf47f18732cc7725928")
+	version("1.0.0", commit="560c3ded0b099dc5c62afbab5859c503f9a96cab")
 
 	depends_on("r-plyr", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))

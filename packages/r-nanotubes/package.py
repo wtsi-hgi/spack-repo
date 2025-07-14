@@ -13,11 +13,10 @@ class RNanotubes(RPackage):
 	"""
 	
 	homepage = "https://github.com/MalteThodberg/nanotubes"
-	bioc = "nanotubes" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/nanotubes_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/nanotubes/nanotubes_1.18.0.tar.gz"]
+	bioc = "nanotubes"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="caab16942bfb50e9c0e48c2589a83a4abc4766a73841e34da2d7cc1a0af0072a")
+	version("1.24.0", commit="0b7ad6e6c4fbef80c1bf94a814f0abf1a0a7d4ba")
+	version("1.18.0", commit="e56bc09da4d4b071e2a0010009d4ce4d4b83628e")
 
 	depends_on("r@3.6:", type=("build", "run"))
 

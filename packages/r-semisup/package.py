@@ -13,11 +13,10 @@ class RSemisup(RPackage):
 	"""
 	
 	homepage = "https://github.com/rauschenberger/semisup"
-	bioc = "semisup" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/semisup_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/semisup/semisup_1.26.0.tar.gz"]
+	bioc = "semisup"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="a9b0a2eb85fe87ff5f7397d5a966637f07cbbe66b88a1ebb72391cfef8676376")
+	version("1.32.0", commit="2559836e843e648dfe09264a5af674fa5377cbdf")
+	version("1.26.0", commit="59f2b128e003a64a260ad027281185a6ca5b2667")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-vgam", type=("build", "run"))

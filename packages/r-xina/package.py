@@ -12,11 +12,10 @@ class RXina(RPackage):
 	The aim of XINA is to determine which proteins exhibit similar patterns within and across experimental conditions, since proteins with co-abundance patterns may have common molecular functions. XINA imports multiple datasets, tags dataset in silico, and combines the data for subsequent subgrouping into multiple clusters. The result is a single output depicting the variation across all conditions. XINA, not only extracts coabundance profiles within and across experiments, but also incorporates protein-protein interaction databases and integrative resources such as KEGG to infer interactors and molecular functions, respectively, and produces intuitive graphical outputs.
 	"""
 	
-	bioc = "XINA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/XINA_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/XINA/XINA_1.20.0.tar.gz"]
+	bioc = "XINA"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="a3efd333384ed84772da089dce1abd05a6520178a7949ef163186927d717dcb2")
+	version("1.26.0", commit="6ab511ac6b017b94020fa2f25af0a33e6c7142de")
+	version("1.20.0", commit="8ca83bc0400740d17790388b7da88f576fcbb7d0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mclust", type=("build", "run"))

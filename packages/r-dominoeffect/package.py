@@ -12,11 +12,10 @@ class RDominoeffect(RPackage):
 	The functions support identification and annotation of hotspot residues in proteins. These are individual amino acids that accumulate mutations at a much higher rate than their surrounding regions.
 	"""
 	
-	bioc = "DominoEffect" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DominoEffect_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DominoEffect/DominoEffect_1.22.0.tar.gz"]
+	bioc = "DominoEffect"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="f06fecfec8481f8eb6a049e4f28a23a49e957c362ecc55ac1166de8007cb4701")
+	version("1.28.0", commit="197b3ec6e1040f48da7c0fbfeb1f3c2bdc117fcd")
+	version("1.22.0", commit="58dcf550710cd65efe14d17e76890e60843aa219")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biomart", type=("build", "run"))

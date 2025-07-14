@@ -13,11 +13,10 @@ class RGeva(RPackage):
 	"""
 	
 	homepage = "https://github.com/sbcblab/geva"
-	bioc = "geva" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geva_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geva/geva_1.10.0.tar.gz"]
+	bioc = "geva"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="79e4b022912805ba0ad47840f3ac072dd6e7d288fd704eba0557f608fff5683e")
+	version("1.16.0", commit="e0d0aef908f23adcc0a9ef4671d500e30becc95a")
+	version("1.10.0", commit="b14f604f2a2d30b76c35b93b72be8fa9ab30cecb")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dbscan", type=("build", "run"))

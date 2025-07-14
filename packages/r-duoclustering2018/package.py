@@ -12,11 +12,10 @@ class RDuoclustering2018(RPackage):
 	Preprocessed experimental and simulated scRNA-seq data sets used for evaluation of clustering methods for scRNA-seq data in Duò et al (2018). Also contains results from applying several clustering methods to each of the data sets, and functions for plotting method performance.
 	"""
 	
-	bioc = "DuoClustering2018" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DuoClustering2018_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DuoClustering2018/DuoClustering2018_1.20.0.tar.gz"]
+	bioc = "DuoClustering2018"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="3b597d129a797707af3a4dcd453a38cde6459dd003118077d98bcbec08938808", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DuoClustering2018_1.20.0.tar.gz")
+	version("1.26.0", commit="3f1d523fffe4e5d2e483cf4a4e615ea8fabe768d")
+	version("1.20.0", commit="27c0da6000cc1853441776c9852ebc27a2431309")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

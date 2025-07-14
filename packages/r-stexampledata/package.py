@@ -13,11 +13,10 @@ class RStexampledata(RPackage):
 	"""
 	
 	homepage = "https://github.com/lmweber/STexampleData"
-	bioc = "STexampleData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/STexampleData_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/STexampleData/STexampleData_1.10.1.tar.gz"]
+	bioc = "STexampleData"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.1", sha256="4354bc9edf7de6477a29a0f35e6724016ca8e834be6d02f9bcf4edcf6c4d22bb")
+	version("1.16.0", commit="1e118c8cfa5e1c99c4fb204abf610d18fde46616")
+	version("1.10.1", commit="0c643ba999034552c6ab4210054fcf2bc54e6e8e")
 	version("1.10.0", md5="5fa4bfb2e58e7f6bbcd957aa1aa7e938")
 
 	depends_on("r-experimenthub", type=("build", "run"))

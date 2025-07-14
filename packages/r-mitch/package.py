@@ -13,11 +13,10 @@ class RMitch(RPackage):
 	"""
 	
 	homepage = "https://github.com/markziemann/mitch"
-	bioc = "mitch" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mitch_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mitch/mitch_1.14.0.tar.gz"]
+	bioc = "mitch"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="a2ebc8bc0aa25eff327ed9918bceb0a32ac7e12a548f54591ef47e02f2ffc444")
+	version("1.20.0", commit="a03db6759597107e9d3c32a0b476c1d75bdfcafa")
+	version("1.14.0", commit="2f0452fc5b2d503e24dfd0e87474060526ec619b")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

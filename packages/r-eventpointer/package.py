@@ -12,11 +12,10 @@ class REventpointer(RPackage):
 	EventPointer is an R package to identify alternative splicing events that involve either simple (case-control experiment) or complex experimental designs such as time course experiments and studies including paired-samples. The algorithm can be used to analyze data from either junction arrays (Affymetrix Arrays) or sequencing data (RNA-Seq). The software returns a data.frame with the detected alternative splicing events: gene name, type of event (cassette, alternative 3',...,etc), genomic position, statistical significance and increment of the percent spliced in (Delta PSI) for all the events. The algorithm can generate a series of files to visualize the detected alternative splicing events in IGV. This eases the interpretation of results and the design of primers for standard PCR validation.
 	"""
 	
-	bioc = "EventPointer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EventPointer_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EventPointer/EventPointer_3.10.0.tar.gz"]
+	bioc = "EventPointer"
 
-	version("3.16.0", tag="RELEASE_3_21")
-	version("3.10.0", sha256="e49e6dc9ae689350b776fc122a90700bd4531b659c3d7d3d1cc36b4ad76a6297")
+	version("3.16.0", commit="02e350a87f17947bc4e2bd6c67f6d0060b586e9d")
+	version("3.10.0", commit="3989887b341b0faa0d74f115a4985600b871ecce")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-sgseq", type=("build", "run"))

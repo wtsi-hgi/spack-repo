@@ -13,11 +13,10 @@ class RClustirr(RPackage):
 	"""
 	
 	homepage = "https://github.com/snaketron/ClustIRR"
-	bioc = "ClustIRR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ClustIRR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ClustIRR/ClustIRR_1.0.0.tar.gz"]
+	bioc = "ClustIRR"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="f54c2788eed171e691476b2113665749eb5880c10c138aec71f07577f135b8e7")
+	version("1.6.0", commit="b44e4371ec776952d70d77a324396624053572d2")
+	version("1.0.0", commit="739bbfffd95acbb12057c88a984941438ff1145f")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-stringdist", type=("build", "run"))

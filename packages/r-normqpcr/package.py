@@ -13,11 +13,10 @@ class RNormqpcr(RPackage):
 	"""
 	
 	homepage = "www.bioconductor.org/packages/release/bioc/html/NormqPCR.html"
-	bioc = "NormqPCR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NormqPCR_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NormqPCR/NormqPCR_1.48.0.tar.gz"]
+	bioc = "NormqPCR"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="c726a15027ce08ad6203dae3ad14f07d49f216a9bd94e4462545928dd5393ca6")
+	version("1.54.0", commit="fffd9b85e0963769a8b5e45b34a9eaf04426145c")
+	version("1.48.0", commit="d7417f3f7a3897079327b3346f3fd467f07441ca")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

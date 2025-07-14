@@ -12,10 +12,9 @@ class RStjudem(RPackage):
 	This is a microarray data set on acute lymphoblastic leukemia, published in 2002 (Yeoh et al.Cancer Cell 2002). The experiments were conducted in the St.Jude Children's Research Hospital, Memphis, Tenessee, USA. The raw data was preprocessed by variance stabilizing normalization (Huber et al.) on probe and subsequent summarization of probe expression values into probe set expression values using median polish.
 	"""
 	
-	bioc = "stjudem" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/stjudem_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/stjudem/stjudem_1.42.0.tar.gz"]
+	bioc = "stjudem"
 
-	version("1.42.0", sha256="4cfcadac6078357bf2cb2d90345b92363506eeec7f1f8fe994255385d5de9b5d")
+	version("1.42.0", commit="356d8ad9a1e96d35575214f15b492549669b7073")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

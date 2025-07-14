@@ -12,11 +12,10 @@ class RProdata(RPackage):
 	A data package of SELDI-TOF protein mass spectrometry data of 167 breast cancer and normal samples.
 	"""
 	
-	bioc = "ProData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ProData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ProData/ProData_1.40.0.tar.gz"]
+	bioc = "ProData"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="6296eb2fe5ed73a2bab4a09722027955beb033d7b4c1b02c395fcc4102723d25")
+	version("1.46.0", commit="3c08517a9ba54b980c2d0af8e1ca3299675b417a")
+	version("1.40.0", commit="dd11baccd72d50671f546efdc3597f621b32ad49")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RPreda(RPackage):
 	Package for the position related analysis of quantitative functional genomics data.
 	"""
 	
-	bioc = "PREDA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PREDA_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PREDA/PREDA_1.48.0.tar.gz"]
+	bioc = "PREDA"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="37f4f94cb9e9ef21b32912e268018e377b32936c5ea0b184c13ac2e5e0a416d9")
+	version("1.54.0", commit="895e6ba8ff5250a4f821242d9dd565b90570a5eb")
+	version("1.48.0", commit="8c10ef8d499ecd6e673b2993c6f027fa0a987fe7")
 
 	depends_on("r@2.9:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

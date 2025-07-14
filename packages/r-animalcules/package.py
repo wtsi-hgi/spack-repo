@@ -13,11 +13,10 @@ class RAnimalcules(RPackage):
 	"""
 	
 	homepage = "https://github.com/compbiomed/animalcules"
-	bioc = "animalcules" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/animalcules_1.18.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/animalcules/animalcules_1.18.3.tar.gz"]
+	bioc = "animalcules"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.3", sha256="880d7df2338331d116879a934d0c8f68da8383f14b987df85b40689359510e49")
+	version("1.24.0", commit="a290187cb1cf66f56715270303a1cb0755484139")
+	version("1.18.3", commit="8e8e65869e6b3956eb185f1fff323b99d9ab609d")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

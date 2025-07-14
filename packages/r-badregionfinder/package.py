@@ -12,11 +12,10 @@ class RBadregionfinder(RPackage):
 	BadRegionFinder is a package for identifying regions with a bad, acceptable and good coverage in sequence alignment data available as bam files. The whole genome may be considered as well as a set of target regions. Various visual and textual types of output are available.
 	"""
 	
-	bioc = "BadRegionFinder" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BadRegionFinder_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BadRegionFinder/BadRegionFinder_1.30.0.tar.gz"]
+	bioc = "BadRegionFinder"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="899e1a53005b78e9a98435143c2fd835b71429aec474c98c3dc66844e1a3559f")
+	version("1.36.0", commit="0f424a2ce19082db3d69a2cedf09760c07cc4ffb")
+	version("1.30.0", commit="b58606fbe768431017deac8c05a83363d7ad826b")
 
 	depends_on("r-variantannotation", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))

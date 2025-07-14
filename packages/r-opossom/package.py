@@ -13,11 +13,10 @@ class ROpossom(RPackage):
 	"""
 	
 	homepage = "http://som.izbi.uni-leipzig.de"
-	bioc = "oposSOM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oposSOM_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oposSOM/oposSOM_2.20.0.tar.gz"]
+	bioc = "oposSOM"
 
-	version("2.26.0", tag="RELEASE_3_21")
-	version("2.20.0", sha256="b2bb49c5cd340377d736cade144786bcc08290edff4f09dea4f847b2810a0c41")
+	version("2.26.0", commit="82b79941986662a84aa5cea1c0b5d87df0ff2247")
+	version("2.20.0", commit="225866cc5d04b7422f85d0810f9d1059fc16b441")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-igraph@1:", type=("build", "run"))

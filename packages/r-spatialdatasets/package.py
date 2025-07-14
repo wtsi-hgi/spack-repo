@@ -13,11 +13,10 @@ class RSpatialdatasets(RPackage):
 	"""
 	
 	homepage = "https://github.com/SydneyBioX/SpatialDatasets"
-	bioc = "SpatialDatasets" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SpatialDatasets_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SpatialDatasets/SpatialDatasets_1.0.0.tar.gz"]
+	bioc = "SpatialDatasets"
 
-	version("1.6.3", tag="RELEASE_3_21")
-	version("1.0.0", sha256="febdafeb1b405ba97eadf6f2de0dc4e82f796667fdd51249e6ba805efd7bfaeb")
+	version("1.6.3", commit="ea2889c3cf3d3d79b35114dce4f2f1154a18d3f6")
+	version("1.0.0", commit="a93a6e3492f5f09e52eab4d27cfde42446fa2396")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-spatialexperiment", type=("build", "run"))

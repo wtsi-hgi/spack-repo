@@ -12,11 +12,10 @@ class RPairadise(RPackage):
 	This package implements the PAIRADISE procedure for detecting differential isoform expression between matched replicates in paired RNA-Seq data.
 	"""
 	
-	bioc = "PAIRADISE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PAIRADISE_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PAIRADISE/PAIRADISE_1.18.0.tar.gz"]
+	bioc = "PAIRADISE"
 
-	version("1.24.1", tag="RELEASE_3_21")
-	version("1.18.0", sha256="f95eec0a7a3743142fdc4f39bec8c59aca6644a09a3e9cd755f4c4ad776727fc")
+	version("1.24.1", commit="370f619f471faad39dab65ceb3f1fefc0e2f78d5")
+	version("1.18.0", commit="42cef7aaa834a541de0e1a424bdb55bdff423c4a")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-nloptr", type=("build", "run"))

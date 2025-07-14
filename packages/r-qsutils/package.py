@@ -12,11 +12,10 @@ class RQsutils(RPackage):
 	Set of utility functions for viral quasispecies analysis with NGS data. Most functions are equally useful for metagenomic studies. There are three main types: (1) data manipulation and exploration—functions useful for converting reads to haplotypes and frequencies, repairing reads, intersecting strand haplotypes, and visualizing haplotype alignments. (2) diversity indices—functions to compute diversity and entropy, in which incidence, abundance, and functional indices are considered. (3) data simulation—functions useful for generating random viral quasispecies data.
 	"""
 	
-	bioc = "QSutils" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QSutils_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QSutils/QSutils_1.20.0.tar.gz"]
+	bioc = "QSutils"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="d964b12cf00cdf9ca665bddc2e56083b3a5e6a2751e5605790c7ce7894ac238c")
+	version("1.26.0", commit="b766e3c9d0c8526e526b6045d6a1f297f018f6cb")
+	version("1.20.0", commit="bf9d67ac1b4a224d0d1d2a806ee146e0d1122b69")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

@@ -12,11 +12,10 @@ class RClusterjudge(RPackage):
 	ClusterJudge implements the functions, examples and other software published as an algorithm by Gibbons, FD and Roth FP. The article is called "Judging the Quality of Gene Expression-Based Clustering Methods Using Gene Annotation" and it appeared in Genome Research, vol. 12, pp1574-1581 (2002). See package?ClusterJudge for an overview.
 	"""
 	
-	bioc = "ClusterJudge" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ClusterJudge_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ClusterJudge/ClusterJudge_1.24.0.tar.gz"]
+	bioc = "ClusterJudge"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="89f2290651034b91ba8f9d911f55090ae3c4dc28d27533753e1963d60212b9bc")
+	version("1.30.0", commit="ded1f3bf06b595e7434a734be6d6f9fca6e56191")
+	version("1.24.0", commit="7f8d8c940dcd685d13affb1496d361eea721a27f")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-infotheo", type=("build", "run"))

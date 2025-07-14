@@ -12,11 +12,10 @@ class RBiocsklearn(RPackage):
 	This package provides interfaces to selected sklearn elements, and demonstrates fault tolerant use of python modules requiring extensive iteration.
 	"""
 	
-	bioc = "BiocSklearn" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocSklearn_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocSklearn/BiocSklearn_1.24.0.tar.gz"]
+	bioc = "BiocSklearn"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="dd1b554ced14c0908a342ad39e02ddec68648301fe10b8ef6cadc4c7ec880907")
+	version("1.30.0", commit="3d385450b6e657e1b4bef56d72abe8e6391264ca")
+	version("1.24.0", commit="f1a6bdcde049412845fcca8171a2c943a5ce91c7")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-reticulate", type=("build", "run"))

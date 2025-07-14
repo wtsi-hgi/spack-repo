@@ -13,11 +13,10 @@ class RGenomicscores(RPackage):
 	"""
 	
 	homepage = "https://github.com/rcastelo/GenomicScores"
-	bioc = "GenomicScores" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicScores_2.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicScores/GenomicScores_2.14.3.tar.gz"]
+	bioc = "GenomicScores"
 
-	version("2.20.2", tag="RELEASE_3_21")
-	version("2.14.3", sha256="a98eb24b700041b8756aa8f15295a7018ae45d6698a5ac9e97e4435eea721e66")
+	version("2.20.2", commit="c3dc09e620f738a9e08a1ad0778d084567636ce3")
+	version("2.14.3", commit="fba5ae08b699f7fec1f4c19fbcbb7f3646114ad1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-s4vectors@0.7.21:", type=("build", "run"))

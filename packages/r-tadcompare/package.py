@@ -13,11 +13,10 @@ class RTadcompare(RPackage):
 	"""
 	
 	homepage = "https://github.com/dozmorovlab/TADCompare"
-	bioc = "TADCompare" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TADCompare_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TADCompare/TADCompare_1.12.1.tar.gz"]
+	bioc = "TADCompare"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.1", sha256="6af959693595b9ec8a0208cc5fe7020b1d4756a3e7ae2ebde18950558d02a958")
+	version("1.18.0", commit="5868ee6d173671e138c06ee00c57e5d72af9c388")
+	version("1.12.1", commit="81d1913e8ca34aa0b71ee90c0ffcd780a5251941")
 	version("1.12.0", md5="92966a38a0c202cfe7dbd09bb83b23b1")
 
 	depends_on("r@4:", type=("build", "run"))

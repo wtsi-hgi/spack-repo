@@ -13,11 +13,10 @@ class RMammaprintdata(RPackage):
 	"""
 	
 	homepage = "http://luigimarchionni.org/breastTSP.html"
-	bioc = "mammaPrintData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mammaPrintData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mammaPrintData/mammaPrintData_1.38.0.tar.gz"]
+	bioc = "mammaPrintData"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="387305df834d4a3a68dda85c321c8072455e299dcfefb97126632b289ba3a12e")
+	version("1.44.0", commit="46ed2ceccb5ff70db7e9024872c2e03f5e43d41e")
+	version("1.38.0", commit="d0c57c48f10d3aec6e626303663e51ea6e8fdb55")
 
 	depends_on("r@2.13:", type=("build", "run"))
 

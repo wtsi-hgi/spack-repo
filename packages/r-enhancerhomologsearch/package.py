@@ -13,11 +13,10 @@ class REnhancerhomologsearch(RPackage):
 	"""
 	
 	homepage = "https://jianhong.github.io/enhancerHomologSearch"
-	bioc = "enhancerHomologSearch" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/enhancerHomologSearch_1.8.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/enhancerHomologSearch/enhancerHomologSearch_1.8.3.tar.gz"]
+	bioc = "enhancerHomologSearch"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.3", sha256="827c545a6bb9a0102b2e23332ead594af7aad6edb34251b7daaaed0c10c588d3")
+	version("1.14.0", commit="8e1b94298b9f71eb246d5021ed271be3a740b798")
+	version("1.8.3", commit="f2f7a74954f9aece00ece8f475b8b1a17918c62c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

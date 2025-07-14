@@ -12,11 +12,10 @@ class RCepo(RPackage):
 	Defining the identity of a cell is fundamental to understand the heterogeneity of cells to various environmental signals and perturbations. We present Cepo, a new method to explore cell identities from single-cell RNA-sequencing data using differential stability as a new metric to define cell identity genes. Cepo computes cell-type specific gene statistics pertaining to differential stable gene expression.
 	"""
 	
-	bioc = "Cepo" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Cepo_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Cepo/Cepo_1.8.0.tar.gz"]
+	bioc = "Cepo"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="8843bde49e9c5c1ee9881cd65c592605602564d21f5c5af219773d5d89ca3f68")
+	version("1.14.0", commit="5896e7881840e6881e75f15a3c80326f5a4c7502")
+	version("1.8.0", commit="5482f8e84fae5411991aabafe914cec8855b28ea")
 
 	depends_on("r-gseabase", type=("build", "run"))
 	depends_on("r@4.1:", type=("build", "run"))

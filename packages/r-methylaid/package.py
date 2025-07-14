@@ -12,11 +12,10 @@ class RMethylaid(RPackage):
 	A visual and interactive web application using RStudio's shiny package. Bad quality samples are detected using sample-dependent and sample-independent controls present on the array and user adjustable thresholds. In depth exploration of bad quality samples can be performed using several interactive diagnostic plots of the quality control probes present on the array. Furthermore, the impact of any batch effect provided by the user can be explored.
 	"""
 	
-	bioc = "MethylAid" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MethylAid_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MethylAid/MethylAid_1.36.0.tar.gz"]
+	bioc = "MethylAid"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="6dccee3968a2475254521c4a040f8892dbbedd9d331e729263de1f6764a2f557")
+	version("1.42.0", commit="63538a9368b732963147a6da1bfaf8fcbb5fcf1a")
+	version("1.36.0", commit="2ab1e43ddf88edb7b450f6dafe8bbef46df02420")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

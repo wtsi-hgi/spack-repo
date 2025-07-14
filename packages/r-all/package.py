@@ -12,11 +12,10 @@ class RAll(RPackage):
 	Data of T- and B-cell Acute Lymphocytic Leukemia from the Ritz Laboratory at the DFCI (includes Apr 2004 versions)
 	"""
 	
-	bioc = "ALL" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ALL_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ALL/ALL_1.44.0.tar.gz"]
+	bioc = "ALL"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="6c52471acf4bb77ed86e71c25e69ce5cc5235acec50785107b212934c6eec5db")
+	version("1.50.0", commit="81e0f2f7343c963c2fd37fb65216d8bddad5464a")
+	version("1.44.0", commit="443566ea4db2dfdd11ff7e9928a3b6a03c12e326")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

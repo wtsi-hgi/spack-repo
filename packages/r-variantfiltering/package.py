@@ -13,11 +13,10 @@ class RVariantfiltering(RPackage):
 	"""
 	
 	homepage = "https://github.com/rcastelo/VariantFiltering"
-	bioc = "VariantFiltering" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VariantFiltering_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VariantFiltering/VariantFiltering_1.38.0.tar.gz"]
+	bioc = "VariantFiltering"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="597f0bef39c64106029475bfdfe9748fa794d6b1c1fb49c8c6a8e2df10ea9f05")
+	version("1.44.0", commit="b610adf0c1f75c900b678e079d4316e52a973fef")
+	version("1.38.0", commit="fa37d53a9a0481742d4e9dc3f68b6b294aad3c44")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.25.1:", type=("build", "run"))

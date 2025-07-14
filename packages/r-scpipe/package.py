@@ -13,11 +13,10 @@ class RScpipe(RPackage):
 	"""
 	
 	homepage = "https://github.com/LuyiTian/scPipe"
-	bioc = "scPipe" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scPipe_2.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scPipe/scPipe_2.2.0.tar.gz"]
+	bioc = "scPipe"
 
-	version("2.8.0", tag="RELEASE_3_21")
-	version("2.2.0", sha256="2f88996579995372e8f93beb51fe0ea23970eceaf3f947b9cc3b915052b4ae67")
+	version("2.8.0", commit="2ee57964b4c1e62b812328da3ba23000141f07f5")
+	version("2.2.0", commit="64848af0d8da34ad996d572c1df2d2995f9525b8")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

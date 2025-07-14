@@ -13,11 +13,10 @@ class RGeneexpressionsignature(RPackage):
 	"""
 	
 	homepage = "https://github.com/yiluheihei/GeneExpressionSignature"
-	bioc = "GeneExpressionSignature" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneExpressionSignature_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneExpressionSignature/GeneExpressionSignature_1.48.0.tar.gz"]
+	bioc = "GeneExpressionSignature"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="3eef9f1b9b54d1e4974ea0a74be3ca967f44e7510e25521035e1dffb65b8a840")
+	version("1.54.0", commit="3281b565a9af5aede5d8ed482abc83ff71ec1913")
+	version("1.48.0", commit="7c09f09257a173c1995168da04936b360544b1e8")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

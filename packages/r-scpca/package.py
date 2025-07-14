@@ -13,11 +13,10 @@ class RScpca(RPackage):
 	"""
 	
 	homepage = "https://github.com/PhilBoileau/scPCA"
-	bioc = "scPCA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scPCA_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scPCA/scPCA_1.16.0.tar.gz"]
+	bioc = "scPCA"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="c27df5020915ff86c23b0faa81782b65c5eaff1285b66e17405004e469d37c1b")
+	version("1.22.0", commit="d0f461c3a68227c788d1561a82b2e5c6f0593eaa")
+	version("1.16.0", commit="5f06cd0fb8e46b9a2193a6debb92e47c754087a4")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

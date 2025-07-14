@@ -12,11 +12,10 @@ class RMotifbreakr(RPackage):
 	We introduce motifbreakR, which allows the biologist to judge in the first place whether the sequence surrounding the polymorphism is a good match, and in the second place how much information is gained or lost in one allele of the polymorphism relative to another. MotifbreakR is both flexible and extensible over previous offerings; giving a choice of algorithms for interrogation of genomes with motifs from public sources that users can choose from; these are 1) a weighted-sum probability matrix, 2) log-probabilities, and 3) weighted by relative entropy. MotifbreakR can predict effects for novel or previously described variants in public databases, making it suitable for tasks beyond the scope of its original design. Lastly, it can be used to interrogate any genome curated within Bioconductor (currently there are 32 species, a total of 109 versions).
 	"""
 	
-	bioc = "motifbreakR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/motifbreakR_2.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/motifbreakR/motifbreakR_2.16.0.tar.gz"]
+	bioc = "motifbreakR"
 
-	version("2.22.0", tag="RELEASE_3_21")
-	version("2.16.0", sha256="00065debea32dc360a05bf906b7bc28a957e05e368d7936cfd4b43e8dc84230a")
+	version("2.22.0", commit="f754fca2e68b21ec3d636d7d68b04b57e93ff283")
+	version("2.16.0", commit="741df7f83db5217c36960215bc22ff5367596ceb")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-motifdb", type=("build", "run"))

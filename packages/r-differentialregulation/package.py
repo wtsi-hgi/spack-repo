@@ -13,11 +13,10 @@ class RDifferentialregulation(RPackage):
 	"""
 	
 	homepage = "https://github.com/SimoneTiberi/DifferentialRegulation"
-	bioc = "DifferentialRegulation" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DifferentialRegulation_2.0.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DifferentialRegulation/DifferentialRegulation_2.0.3.tar.gz"]
+	bioc = "DifferentialRegulation"
 
-	version("2.6.0", tag="RELEASE_3_21")
-	version("2.0.3", sha256="83d457f6814bd0e21c60c9e816addd8a8e0b37578e971b350ae60c5dfe31af11")
+	version("2.6.0", commit="ed32ae005eea317fa7b4cf98590fd1fd4ad32a02")
+	version("2.0.3", commit="5880e44652e16dc9fc496f756a7c65c1145df841")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

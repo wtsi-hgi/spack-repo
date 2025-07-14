@@ -13,11 +13,10 @@ class RTwilight(RPackage):
 	"""
 	
 	homepage = "http://compdiag.molgen.mpg.de/software/twilight.shtml"
-	bioc = "twilight" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/twilight_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/twilight/twilight_1.78.0.tar.gz"]
+	bioc = "twilight"
 
-	version("1.84.0", tag="RELEASE_3_21")
-	version("1.78.0", sha256="70c3802ab0c4850d0a5bfcaba9b1e97c7ed66520c05bad30cd4c737d3ecaef01")
+	version("1.84.0", commit="42aae855241eba57174869af6f28ab87e886cbe1")
+	version("1.78.0", commit="29890f3f4fd0d92dcb5a8aee2accfe4614e8e6b9")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

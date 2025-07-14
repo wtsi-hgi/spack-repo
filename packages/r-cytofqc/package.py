@@ -13,11 +13,10 @@ class RCytofqc(RPackage):
 	"""
 	
 	homepage = "https://github.com/jillbo1000/cytofQC"
-	bioc = "cytofQC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cytofQC_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cytofQC/cytofQC_1.2.0.tar.gz"]
+	bioc = "cytofQC"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="3df2b2baa68bfa6e27c985136842475c458041f11a2a5e831ce99d1c2ebdb087")
+	version("1.8.0", commit="bd41aa05b90afa0d27e5a6ebe8678d3a70fcf935")
+	version("1.2.0", commit="93adeda78b6740a6b539f0bbf128c7814e1755f9")
 
 	depends_on("r-catalyst", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

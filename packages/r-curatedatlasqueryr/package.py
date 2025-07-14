@@ -13,11 +13,10 @@ class RCuratedatlasqueryr(RPackage):
 	"""
 	
 	homepage = "https://github.com/stemangiola/CuratedAtlasQueryR"
-	bioc = "CuratedAtlasQueryR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CuratedAtlasQueryR_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CuratedAtlasQueryR/CuratedAtlasQueryR_1.0.1.tar.gz"]
+	bioc = "CuratedAtlasQueryR"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.1", sha256="d6a7918537d976ce95631f462f200465aef20c13cf9bbaf56f74d7d8dc701947")
+	version("1.6.0", commit="38a4d0ae2565537a248791386b02cb405c11a797")
+	version("1.0.1", commit="bb3acd7792a2f2e4427b644cc8281cdae00bacac")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -13,11 +13,10 @@ class RSpsimseq(RPackage):
 	"""
 	
 	homepage = "https://github.com/CenterForStatistics-UGent/SPsimSeq"
-	bioc = "SPsimSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SPsimSeq_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SPsimSeq/SPsimSeq_1.12.0.tar.gz"]
+	bioc = "SPsimSeq"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="164769088f5a29ec68459cbacc99a101dfd2195d407dca823f95fafe1b34d031")
+	version("1.18.0", commit="807cebe3ee8934f3ff43246e5c2a672f85ff98c3")
+	version("1.12.0", commit="e2487910baf119b6b186609e3f316f157ea0d9f7")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

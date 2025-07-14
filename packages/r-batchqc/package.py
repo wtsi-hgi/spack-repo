@@ -13,11 +13,10 @@ class RBatchqc(RPackage):
 	"""
 	
 	homepage = "https://github.com/mani2012/BatchQC"
-	bioc = "BatchQC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BatchQC_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BatchQC/BatchQC_1.30.0.tar.gz"]
+	bioc = "BatchQC"
 
-	version("2.4.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="d89b36b950e87c4c7ae7e28d91fa997497b07a500eec85a8907f9f25c623caf5")
+	version("2.4.0", commit="b31f36a4606f852335a0719cc5719b7265e96932")
+	version("1.30.0", commit="3ece1d72469cba0552b62ef6074447bc2f6cdac9")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rmarkdown", type=("build", "run"))

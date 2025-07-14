@@ -12,10 +12,9 @@ class RFlowworkspacedata(RPackage):
 	The necessary external data to run the flowWorkspace and openCyto vignette is found in this package.
 	"""
 	
-	bioc = "flowWorkspaceData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/flowWorkspaceData_3.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/flowWorkspaceData/flowWorkspaceData_3.14.0.tar.gz"]
+	bioc = "flowWorkspaceData"
 
-	version("3.20.0", tag="RELEASE_3_21")
-	version("3.14.0", sha256="d85fd772ec55091fbe0d57337fe84ee36225a28d16ad02bc5824b03450d0a072")
+	version("3.20.0", commit="c3d7b139f50068d0037c95c86bb9e06cc9b99c40")
+	version("3.14.0", commit="4561f3dbdd0223657db10cdafe5a8b35a40a9aff")
 
 

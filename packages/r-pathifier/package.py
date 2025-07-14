@@ -12,11 +12,10 @@ class RPathifier(RPackage):
 	Pathifier is an algorithm that infers pathway deregulation scores for each tumor sample on the basis of expression data. This score is determined, in a context-specific manner, for every particular dataset and type of cancer that is being investigated. The algorithm transforms gene-level information into pathway-level information, generating a compact and biologically relevant representation of each sample.
 	"""
 	
-	bioc = "pathifier" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pathifier_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pathifier/pathifier_1.40.0.tar.gz"]
+	bioc = "pathifier"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="76dd66e9e9690eb73002de1ee4042497c2ef5e94fae202e280d308505a60b078")
+	version("1.46.0", commit="91985ae5bfea29de9f46d1daa2c7ad19cec14dd6")
+	version("1.40.0", commit="0431b7e3f697ddd739cb63bb440716b54d05dd27")
 
 	depends_on("r-r-oo", type=("build", "run"))
 	depends_on("r-princurve@2.0.4:", type=("build", "run"))

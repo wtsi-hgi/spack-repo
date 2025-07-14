@@ -19,9 +19,8 @@ class RPathview(RPackage):
 	tools for large-scale and fully automated analysis."""
 
 	bioc = "pathview"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pathview_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pathview/pathview_1.42.0.tar.gz"]
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="ace23a17a2bac7669fca39c1bdafa500116da69583dff0a7284b4379b73f749e")
+	version("1.48.0", commit="5bbc475e3f69bb1b54d88b42920de9913f10362b")
+	version("1.42.0", commit="875d8f834e21ce7db777835fd63e2c7a1877a462")
 	version("1.40.0", commit="6546c6139f797bdff2fcc0645030a5de3588f2eb")
 	version("1.38.0", commit="8229376ffd45278b74a6e4ccfb3abea8992667f7")
 	version("1.36.1", commit="f2e86b106c1cd91aac703337f968b7593a61c68d")

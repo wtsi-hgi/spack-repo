@@ -13,11 +13,10 @@ class RSystempipeshiny(RPackage):
 	"""
 	
 	homepage = "https://systempipe.org/sps"
-	bioc = "systemPipeShiny" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/systemPipeShiny_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/systemPipeShiny/systemPipeShiny_1.12.0.tar.gz"]
+	bioc = "systemPipeShiny"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="ec30a16952f5cdd9c8893f8564d75b4d57ccddf574b589baacef0f7c8a99ae64")
+	version("1.18.0", commit="929023efffbbd021e255dd5ec9fbb93792f5dee9")
+	version("1.12.0", commit="0d3e3e26422296e20f27d0fb1a18fbc25dbd3582")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-shiny@1.6:", type=("build", "run"))

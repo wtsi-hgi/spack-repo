@@ -12,11 +12,10 @@ class RDegseq(RPackage):
 	DEGseq is an R package to identify differentially expressed genes from RNA-Seq data.
 	"""
 	
-	bioc = "DEGseq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEGseq_1.56.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEGseq/DEGseq_1.56.1.tar.gz"]
+	bioc = "DEGseq"
 
-	version("1.62.0", tag="RELEASE_3_21")
-	version("1.56.1", sha256="92c49cb54946dedeb3f1309f812d4d12c276e1e008b40c4e0940a37339d4657a")
+	version("1.62.0", commit="bed49dfa46d2445da534b4be39b4391f5d8b4527")
+	version("1.56.1", commit="efe72265801b683e5b8605b5f2b823446f2ee670")
 
 	depends_on("r@2.8:", type=("build", "run"))
 	depends_on("r-qvalue", type=("build", "run"))

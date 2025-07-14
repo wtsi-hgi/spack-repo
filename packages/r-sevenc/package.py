@@ -13,11 +13,10 @@ class RSevenc(RPackage):
 	"""
 	
 	homepage = "https://github.com/ibn-salem/sevenC"
-	bioc = "sevenC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sevenC_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sevenC/sevenC_1.22.0.tar.gz"]
+	bioc = "sevenC"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="82d883995a13847cd7139af0639d5d399679cf290db412fc8425028c8ed13acd")
+	version("1.28.0", commit="4688dcb68263f5575c557863fac247d60d1eb7b5")
+	version("1.22.0", commit="3b7cf4e6cf8d699ffda3a841a9267774ca72c407")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-interactionset@1.2:", type=("build", "run"))

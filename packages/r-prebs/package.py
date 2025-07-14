@@ -12,11 +12,10 @@ class RPrebs(RPackage):
 	The prebs package aims at making RNA-sequencing (RNA-seq) data more comparable to microarray data. The comparability is achieved by summarizing sequencing-based expressions of probe regions using a modified version of RMA algorithm. The pipeline takes mapped reads in BAM format as an input and produces either gene expressions or original microarray probe set expressions as an output.
 	"""
 	
-	bioc = "prebs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/prebs_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/prebs/prebs_1.42.0.tar.gz"]
+	bioc = "prebs"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="8f747c59fd43eef98d24c39b8215edce3245cb5ee96faea1cc9dd2e7531fe7fd")
+	version("1.48.0", commit="a5f346705dafc0194b46341d9eea470945f9622b")
+	version("1.42.0", commit="5fc462af89961c3d0932a6ae52930fd0ef9047ce")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-genomicalignments", type=("build", "run"))

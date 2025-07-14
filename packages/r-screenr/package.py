@@ -13,11 +13,10 @@ class RScreenr(RPackage):
 	"""
 	
 	homepage = "https://emanuelsoda.github.io/ScreenR/"
-	bioc = "ScreenR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ScreenR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ScreenR/ScreenR_1.4.0.tar.gz"]
+	bioc = "ScreenR"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="a1b28353c9292d6760fa60e1f1bdd9a884619332c5f69ab6c5ea2ef3b9fa5b88")
+	version("1.10.0", commit="4b7b6cccc2f62ad567f9ac51163d1e8594021f50")
+	version("1.4.0", commit="36bfecba0686233ca2596e6901680cac629edc7d")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rlang@0.4:", type=("build", "run"))

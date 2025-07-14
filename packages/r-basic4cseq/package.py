@@ -12,11 +12,10 @@ class RBasic4cseq(RPackage):
 	Basic4Cseq is an R/Bioconductor package for basic filtering, analysis and subsequent visualization of 4C-seq data. Virtual fragment libraries can be created for any BSGenome package, and filter functions for both reads and fragments and basic quality controls are included. Fragment data in the vicinity of the experiment's viewpoint can be visualized as a coverage plot based on a running median approach and a multi-scale contact profile.
 	"""
 	
-	bioc = "Basic4Cseq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Basic4Cseq_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Basic4Cseq/Basic4Cseq_1.38.0.tar.gz"]
+	bioc = "Basic4Cseq"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="a463cea67c318d6ba1ff19263e57811096949f85088b4a063f871784decc99ee")
+	version("1.44.0", commit="06337653a5db5d9186265d4596a6a756e1a1d52a")
+	version("1.38.0", commit="edbd20b6a19714019162348c5f09b7ea3b2ee18e")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

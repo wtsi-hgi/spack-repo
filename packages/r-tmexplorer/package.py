@@ -12,11 +12,10 @@ class RTmexplorer(RPackage):
 	This package provides a tool to search and download a collection of tumour microenvironment single-cell RNA sequencing datasets and their metadata. TMExplorer aims to act as a single point of entry for users looking to study the tumour microenvironment at the single cell level. Users can quickly search available datasets using the metadata table and then download the ones they are interested in for analysis.
 	"""
 	
-	bioc = "TMExplorer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TMExplorer_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TMExplorer/TMExplorer_1.12.0.tar.gz"]
+	bioc = "TMExplorer"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="c4ff20168bcd9eb6677aca99cf9f75cbda32506690cad7dbc59c7fb7ee4e296e")
+	version("1.18.0", commit="143184d5fef00c2181312b3b31f6d2b660b9c8d8")
+	version("1.12.0", commit="3c5926c2caaa02b49b066d479cb43f7c47e1b494")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

@@ -13,11 +13,10 @@ class REupathdb(RPackage):
 	"""
 	
 	homepage = "https://github.com/khughitt/EuPathDB"
-	bioc = "EuPathDB" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EuPathDB_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/EuPathDB/EuPathDB_1.0.1.tar.gz"]
+	bioc = "EuPathDB"
 
-	version("1.0.1", tag="RELEASE_3_21")
-	version("1.0.1", sha256="956613a15c62f4533d2ec0bcea7995825d7f8f7b87459d5e148e6d0bc970434c")
+	version("1.0.1", commit="94b4c46b23da3250aac780a25de759644e380804")
+	version("1.0.1", commit="94b4c46b23da3250aac780a25de759644e380804")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -12,11 +12,10 @@ class RFlowclust(RPackage):
 	Robust model-based clustering using a t-mixture model with Box-Cox transformation. Note: users should have GSL installed. Windows users: 'consult the README file available in the inst directory of the source distribution for necessary configuration instructions'.
 	"""
 	
-	bioc = "flowClust" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowClust_3.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowClust/flowClust_3.40.0.tar.gz"]
+	bioc = "flowClust"
 
-	version("3.46.0", tag="RELEASE_3_21")
-	version("3.40.0", sha256="7e699b06e378e32144704dbec18289109980b0f5eca166180f2c30007b83e0f5")
+	version("3.46.0", commit="a682d03c974dc5fce818d269f18b8a03fed92a74")
+	version("3.40.0", commit="4acf935093c75e3ba927715688f3c9af8519af36")
 
 	depends_on("r@2.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

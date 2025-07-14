@@ -12,11 +12,10 @@ class RNeuca(RPackage):
 	NeuCA is is a neural-network based method for scRNA-seq data annotation. It can automatically adjust its classification strategy depending on cell type correlations, to accurately annotate cell. NeuCA can automatically utilize the structure information of the cell types through a hierarchical tree to improve the annotation accuracy. It is especially helpful when the data contain closely correlated cell types.
 	"""
 	
-	bioc = "NeuCA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NeuCA_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NeuCA/NeuCA_1.8.1.tar.gz"]
+	bioc = "NeuCA"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.1", sha256="485a2dec6d4274556cd8e5fbd5c6025a117b20d0243eb00469928b1829d1c31c")
+	version("1.14.0", commit="5784270fdf340761ab7734a777ed5fceaff25b58")
+	version("1.8.1", commit="4eb0e42bc895757d3e047231e8f8865fc0549cb9")
 	version("1.8.0", commit="053e2f93a026cc1048ba2dce418f9890d2572815")
 
 	depends_on("r@3.5:", type=("build", "run"))

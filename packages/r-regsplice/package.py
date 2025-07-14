@@ -13,11 +13,10 @@ class RRegsplice(RPackage):
 	"""
 	
 	homepage = "https://github.com/lmweber/regsplice"
-	bioc = "regsplice" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/regsplice_1.28.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/regsplice/regsplice_1.28.1.tar.gz"]
+	bioc = "regsplice"
 
-	version("1.34.1", tag="RELEASE_3_21")
-	version("1.28.1", sha256="95f14b41fb4feb60cd113a765e60e658dc9370e54c2cf717ce6650cf2ffc9266")
+	version("1.34.1", commit="bf91b86dc826612f5f6c41c0f7b388f069624bee")
+	version("1.28.1", commit="f1c2b5c4bb56e4efa4815d3373940ee276db73e4")
 	version("1.28.0", md5="3f63d2e93b02aec3ed044e2c56938d12")
 
 	depends_on("r-glmnet", type=("build", "run"))

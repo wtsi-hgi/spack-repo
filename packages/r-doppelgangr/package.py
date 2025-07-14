@@ -13,11 +13,10 @@ class RDoppelgangr(RPackage):
 	"""
 	
 	homepage = "https://github.com/lwaldron/doppelgangR"
-	bioc = "doppelgangR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/doppelgangR_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/doppelgangR/doppelgangR_1.30.0.tar.gz"]
+	bioc = "doppelgangR"
 
-	version("1.36.1", tag="RELEASE_3_21")
-	version("1.30.0", sha256="0dc650ade00fb36488627cac599121314fde0d8931c37943fababbc38acc5041")
+	version("1.36.1", commit="210026ae61c976af99c672c96f913d9e300bb11b")
+	version("1.30.0", commit="2f9209ec4fc154b77816d0aae966dc4b9b43ee5c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -12,11 +12,10 @@ class RMirnatap(RPackage):
 	The package facilitates implementation of workflows requiring miRNA predictions, it allows to integrate ranked miRNA target predictions from multiple sources available online and aggregate them with various methods which improves quality of predictions above any of the single sources. Currently predictions are available for Homo sapiens, Mus musculus and Rattus norvegicus (the last one through homology translation).
 	"""
 	
-	bioc = "miRNAtap" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miRNAtap_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miRNAtap/miRNAtap_1.36.0.tar.gz"]
+	bioc = "miRNAtap"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="d2c2319807d4eae6c9b9d5eccf4e30549befde6ff7b89773b6eca2eb20ed89c9")
+	version("1.42.0", commit="a81e69a23ae7b72c864bac8fff2b7d98ea94a20f")
+	version("1.36.0", commit="f20aa1f19a54b2efe447c88eb88233fe7411e000")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

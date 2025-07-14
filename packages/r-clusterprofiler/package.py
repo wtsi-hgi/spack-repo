@@ -14,14 +14,13 @@ class RClusterprofiler(RPackage):
 	profiles (GO and KEGG) of gene and gene clusters."""
 
 	bioc = "clusterProfiler"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clusterProfiler_4.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clusterProfiler/clusterProfiler_4.10.1.tar.gz"]
-	version("4.16.0", tag="RELEASE_3_21")
+	version("4.16.0", commit="0f8dd3d779918e9fbcdd42aa726f634fa93a6a03")
 	version("4.8.0", commit="35a69cf05855b01775658def2f3f26596902f5db")
 	version("4.6.0", commit="2644118c36a3aa14408bc0c97ac20a545e40344d")
 	version("4.4.4", commit="9fca9a45ca1793884d8dcfd0f077353dbf75df29")
 	version("4.4.1", commit="daad11fb80be2dd9b825e0b484815a0a2b1592a4")
 	version("4.2.2", commit="4ebb9de8e03eedc971f54a57cf5bf1b250ed43d5")
-	version("4.10.1", sha256="ae47868112290cfe205765620239d5f0a9c6cf8af995b32151eff896044891cb")
+	version("4.10.1", commit="072a273e06ca98f2c6a2c60a549fe3df97d99d38")
 	version("4.10.0", md5="6eb1c0888849211e04896b3431460048")
 	version("3.8.1", commit="81e1a7ac49e4713703c55f87f945b20de5e7ab36")
 	version("3.6.0", commit="ff15e3dba69b93bc872d5f5d07821cd9ae20d829")

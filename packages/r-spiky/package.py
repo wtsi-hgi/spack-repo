@@ -13,11 +13,10 @@ class RSpiky(RPackage):
 	"""
 	
 	homepage = "https://github.com/trichelab/spiky"
-	bioc = "spiky" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spiky_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spiky/spiky_1.8.0.tar.gz"]
+	bioc = "spiky"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="438d278282b002765c79ab10b470ef08c96c5efcff11e96496eb754410a1cc87")
+	version("1.14.0", commit="cdb4edc410af3b98c5853e7bf0e1a2098bc4c201")
+	version("1.8.0", commit="9732d5212371d7230c318ff334aeade21bb003fc")
 
 	depends_on("r-rsamtools", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

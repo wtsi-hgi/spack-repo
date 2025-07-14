@@ -12,11 +12,10 @@ class RGwasdata(RPackage):
 	Selected Affymetrix and Illlumina SNP data for HapMap subjects.  Data provided by the Center for Inherited Disease Research at Johns Hopkins University and the Broad Institute of MIT and Harvard University.
 	"""
 	
-	bioc = "GWASdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GWASdata_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GWASdata/GWASdata_1.40.0.tar.gz"]
+	bioc = "GWASdata"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="585ad1a040eaa528ff5ad67ad380bd72eef383b8ccd09bd43df163904566f952")
+	version("1.46.0", commit="5088ff6158d8889561b2c8a26f5553011e05ff56")
+	version("1.40.0", commit="b838e6617001a7fcde6ad80d010f5881070ba2e0")
 
 	depends_on("r-gwastools", type=("build", "run"))
 

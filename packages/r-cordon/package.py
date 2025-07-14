@@ -13,11 +13,10 @@ class RCordon(RPackage):
 	"""
 	
 	homepage = "https://github.com/BioinfoHR/coRdon"
-	bioc = "coRdon" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/coRdon_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/coRdon/coRdon_1.20.0.tar.gz"]
+	bioc = "coRdon"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="0b3ccdf6e515ec452ef4284d96d5beb7c6f96cd6f3f23d3a3653b9e57a4f03a3")
+	version("1.26.0", commit="dbe946d1cde795ed2414b4090cb5078e4b27cb70")
+	version("1.20.0", commit="cc84f24d0755d1194bcc3ae397272fcfdeb911a2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

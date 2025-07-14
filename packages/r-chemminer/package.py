@@ -13,11 +13,10 @@ class RChemminer(RPackage):
 	"""
 	
 	homepage = "https://github.com/girke-lab/ChemmineR"
-	bioc = "ChemmineR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChemmineR_3.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChemmineR/ChemmineR_3.54.0.tar.gz"]
+	bioc = "ChemmineR"
 
-	version("3.60.0", tag="RELEASE_3_21")
-	version("3.54.0", sha256="01297549b77098b794d22158253a30989b8111a6998d1872dc993af82aaf488c")
+	version("3.60.0", commit="0061b9bea4802ad50487fa6daba4d4fa9ff863ea")
+	version("3.54.0", commit="19385e687d4e83c08fbd90d60ca50e381d538a86")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rjson", type=("build", "run"))

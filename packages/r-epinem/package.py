@@ -13,11 +13,10 @@ class REpinem(RPackage):
 	"""
 	
 	homepage = "https://github.com/cbg-ethz/epiNEM/"
-	bioc = "epiNEM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epiNEM_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epiNEM/epiNEM_1.26.0.tar.gz"]
+	bioc = "epiNEM"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="8ede681f5622f4990e8626ccb6896f556d08c557f0cfd604e93f66dee4b8630b")
+	version("1.32.0", commit="b2fc9f7e0c29d1cb966e0f0b4714422885136e35")
+	version("1.26.0", commit="b9081ed78d5fadd291991308f87fce47d2b0be7c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-boolnet", type=("build", "run"))

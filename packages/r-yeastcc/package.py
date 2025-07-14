@@ -12,11 +12,10 @@ class RYeastcc(RPackage):
 	ExpressionSet for Spellman et al. (1998) yeast cell cycle microarray experiment
 	"""
 	
-	bioc = "yeastCC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/yeastCC_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/yeastCC/yeastCC_1.42.0.tar.gz"]
+	bioc = "yeastCC"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="d6654c09539b2a8a84d0e07c8e984fa97763f3760b78acafabeddbcfa91c74a9")
+	version("1.48.0", commit="8708bd9a8312dbe7b79245767d13d10336ae9df7")
+	version("1.42.0", commit="86d942035bea77f2b3a195c0732035e0af4f4dd3")
 
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))
 

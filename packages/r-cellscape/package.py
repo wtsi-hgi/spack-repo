@@ -12,10 +12,9 @@ class RCellscape(RPackage):
 	CellScape facilitates interactive browsing of single cell clonal evolution datasets. The tool requires two main inputs: (i) the genomic content of each single cell in the form of either copy number segments or targeted mutation values, and (ii) a single cell phylogeny. Phylogenetic formats can vary from dendrogram-like phylogenies with leaf nodes to evolutionary model-derived phylogenies with observed or latent internal nodes. The CellScape phylogeny is flexibly input as a table of source-target edges to support arbitrary representations, where each node may or may not have associated genomic data. The output of CellScape is an interactive interface displaying a single cell phylogeny and a cell-by-locus genomic heatmap representing the mutation status in each cell for each locus.
 	"""
 	
-	bioc = "cellscape" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cellscape_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cellscape/cellscape_1.26.0.tar.gz"]
+	bioc = "cellscape"
 
-	version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", commit="540b310072c9fb295c53a045e86cfbee98e8c493")
 	version("1.26.0", commit="ee36e5b05c91739b37585d71ae256206abc9e70a")
 
 	depends_on("r@3.3:", type=("build", "run"))

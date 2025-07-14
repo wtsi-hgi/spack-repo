@@ -12,11 +12,10 @@ class REnrichmentbrowser(RPackage):
 	The EnrichmentBrowser package implements essential functionality for the enrichment analysis of gene expression data. The analysis combines the advantages of set-based and network-based enrichment analysis in order to derive high-confidence gene sets and biological pathways that are differentially regulated in the expression data under investigation. Besides, the package facilitates the visualization and exploration of such sets and pathways.
 	"""
 	
-	bioc = "EnrichmentBrowser" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EnrichmentBrowser_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EnrichmentBrowser/EnrichmentBrowser_2.32.0.tar.gz"]
+	bioc = "EnrichmentBrowser"
 
-	version("2.38.0", tag="RELEASE_3_21")
-	version("2.32.0", sha256="04fb60496346ee2a404c655b807db9a06fd289f4090ddc16f4ba6b78133573d3")
+	version("2.38.0", commit="1033559bf736a6127c7ad09b56195fa2755ef7e3")
+	version("2.32.0", commit="a2bb60b98776c35d38a08239afae1f2003121b06")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

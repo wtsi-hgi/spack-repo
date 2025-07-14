@@ -12,11 +12,10 @@ class RPhosr(RPackage):
 	PhosR is a package for the comprenhensive analysis of phosphoproteomic data. There are two major components to PhosR: processing and downstream analysis. PhosR consists of various processing tools for phosphoproteomics data including filtering, imputation, normalisation, and functional analysis for inferring active kinases and signalling pathways.
 	"""
 	
-	bioc = "PhosR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PhosR_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PhosR/PhosR_1.12.0.tar.gz"]
+	bioc = "PhosR"
 
-	version("1.18.1", tag="RELEASE_3_21")
-	version("1.12.0", sha256="eb6c62944a7f9393b63aff148dd2bc8750f75cec5b7528fe6f7c0a03226056f2")
+	version("1.18.1", commit="7a08968efd8bd13aa9f1ef4fbe7c01d0f1d21210")
+	version("1.12.0", commit="dfab942faba8000214d1e8c17702f73328018861")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-ruv", type=("build", "run"))

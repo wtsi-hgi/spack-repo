@@ -12,11 +12,10 @@ class RCellity(RPackage):
 	A support vector machine approach to identifying and filtering low quality cells from single-cell RNA-seq datasets.
 	"""
 	
-	bioc = "cellity" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cellity_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cellity/cellity_1.30.0.tar.gz"]
+	bioc = "cellity"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="65d16d34707036da175a98e8f83346709e13bd150cb1342ccdf87136921bacf1")
+	version("1.36.0", commit="868299ef5ce230ca79dd0d9d91724df22e95d680")
+	version("1.30.0", commit="7cff628b1b90a10390da77c21854c9469195f8a1")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

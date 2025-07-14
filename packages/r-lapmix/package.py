@@ -13,11 +13,10 @@ class RLapmix(RPackage):
 	"""
 	
 	homepage = "http://www.r-project.org"
-	bioc = "lapmix" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lapmix_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lapmix/lapmix_1.68.0.tar.gz"]
+	bioc = "lapmix"
 
-	version("1.74.0", tag="RELEASE_3_21")
-	version("1.68.0", sha256="d43b18bf5c5feec0d7249c59ad342b3cd15f6755f5fad71bcc62dee9249684cf")
+	version("1.74.0", commit="58eb049904607cf01e2dde484e0ae37bc333314b")
+	version("1.68.0", commit="3104a129a4a3d770d5f75581a47681b78396158b")
 
 	depends_on("r@2.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -13,11 +13,10 @@ class RScshapes(RPackage):
 	"""
 	
 	homepage = "https://github.com/Malindrie/scShapes"
-	bioc = "scShapes" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scShapes_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scShapes/scShapes_1.8.0.tar.gz"]
+	bioc = "scShapes"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="89fb747a14ef960f2d6606a39e1cfab9ab34ab326f6a87b7108b43315eee3d9a")
+	version("1.14.0", commit="13233ba8000a9b69b8bfd118c95e42f35eaf5a56")
+	version("1.8.0", commit="430b1fe8583ab2bf3752e9d0e014a8e273b2fe38")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

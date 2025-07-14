@@ -12,11 +12,10 @@ class RRdrtoolbox(RPackage):
 	A package for nonlinear dimension reduction using the Isomap and LLE algorithm. It also includes a routine for computing the Davis-Bouldin-Index for cluster validation, a plotting tool and a data generator for microarray gene expression data and for the Swiss Roll dataset.
 	"""
 	
-	bioc = "RDRToolbox" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RDRToolbox_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RDRToolbox/RDRToolbox_1.52.0.tar.gz"]
+	bioc = "RDRToolbox"
 
-	version("1.58.0", tag="RELEASE_3_21")
-	version("1.52.0", sha256="c9937a8c609df4f40bb3567a713cd099ba4ea90972c5a4775e83958802042acc")
+	version("1.58.0", commit="f6af32b2ba6c6125ee8d280dd6157cc0ea5b4b04")
+	version("1.52.0", commit="5b7002a461da2ee99963d16ca643f1122da87ac4")
 
 	depends_on("r@2.9:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

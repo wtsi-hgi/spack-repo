@@ -12,11 +12,10 @@ class RDexma(RPackage):
 	performing all the steps of gene expression meta-analysis considering the possible existence of missing genes. It provides the necessary functions to be able to perform the different methods of gene expression meta-analysis. In addition, it contains functions to apply quality controls, download GEO datasets and show graphical representations of the results.
 	"""
 	
-	bioc = "DExMA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DExMA_1.10.7.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DExMA/DExMA_1.10.7.tar.gz"]
+	bioc = "DExMA"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.7", sha256="dc1fd3934aa9681ceda6a0676b0c3c7d241249f3cdfaeb93aa1376edd898db8a")
+	version("1.16.0", commit="9d4ff0563ee8123edd16d7d5b5a96dc12ae83e75")
+	version("1.10.7", commit="dd6da1e2218e31aa419638983f65fd09644aeb2b")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dexmadata", type=("build", "run"))

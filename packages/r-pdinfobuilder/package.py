@@ -12,11 +12,10 @@ class RPdinfobuilder(RPackage):
 	Builds platform design information packages. These consist of a SQLite database containing feature-level data such as x, y position on chip and featureSet ID. The database also incorporates featureSet-level annotation data. The products of this packages are used by the oligo pkg.
 	"""
 	
-	bioc = "pdInfoBuilder" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pdInfoBuilder_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pdInfoBuilder/pdInfoBuilder_1.66.0.tar.gz"]
+	bioc = "pdInfoBuilder"
 
-	version("1.72.0", tag="RELEASE_3_21")
-	version("1.66.0", sha256="9a257659795ee6a120d2f3a01aa7ac2458b43f99b962a77c67ad556c9e6995ad")
+	version("1.72.0", commit="567e71af0d1e5c7e36ef9a93fc6b5a58da6a03d5")
+	version("1.66.0", commit="7e41f732bf233c4aae4e200c99b7b8c70ac0c92a")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biobase@2.27.3:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RRrvgo(RPackage):
 	"""
 	
 	homepage = "https://www.bioconductor.org/packages/rrvgo"
-	bioc = "rrvgo" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rrvgo_1.14.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rrvgo/rrvgo_1.14.2.tar.gz"]
+	bioc = "rrvgo"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.2", sha256="100359f083bfa8cf32037f9c944068b8b5fa65d6fcdbf2b9cefa5bc092bdff54")
+	version("1.20.0", commit="4ef9dd75bfa9d2ce253a75529f44453fe0250d8e")
+	version("1.14.2", commit="143d64c0f483975b801a3ce24da46def55f4af47")
 	version("1.14.1", md5="b1813722d66dba8b701c0cc0f614c5ca")
 
 	depends_on("r-gosemsim", type=("build", "run"))

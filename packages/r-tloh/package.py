@@ -13,11 +13,10 @@ class RTloh(RPackage):
 	"""
 	
 	homepage = "https://github.com/USCDTG/tLOH"
-	bioc = "tLOH" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tLOH_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tLOH/tLOH_1.10.0.tar.gz"]
+	bioc = "tLOH"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="8d571ef185e1a0bb06ee28c77a498cc4482bae2c4b594d036cfd6e0886bfeb7b")
+	version("1.16.0", commit="d1e3d4c93bf3e270049d61404683dc9e6d0e987c")
+	version("1.10.0", commit="e14e9c54e0b1aeb401f238c37b1c9bc56ce1bd93")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-scales", type=("build", "run"))

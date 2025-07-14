@@ -13,11 +13,10 @@ class RRegionreport(RPackage):
 	"""
 	
 	homepage = "https://github.com/leekgroup/regionReport"
-	bioc = "regionReport" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/regionReport_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/regionReport/regionReport_1.36.0.tar.gz"]
+	bioc = "regionReport"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="676e65645afe51b9d5c639529fc0f5d1f16ee90ef3c4fd5322e76c67cc4c71da")
+	version("1.42.0", commit="f7c01f743a3e905c3a57db715dfc2c849d743d77")
+	version("1.36.0", commit="33d1df73004cf509b0b85d284361c75d3d8cbda7")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biocstyle@2.5.19:", type=("build", "run"))

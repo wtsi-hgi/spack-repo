@@ -12,11 +12,10 @@ class RHealthyflowdata(RPackage):
 	A healthy dataset with 20 flow cytometry samples used by the flowMatch package.
 	"""
 	
-	bioc = "healthyFlowData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/healthyFlowData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/healthyFlowData/healthyFlowData_1.40.0.tar.gz"]
+	bioc = "healthyFlowData"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="9d4f6673ac1ab45c414a31bafa1c56afc37e4bf9502043a3253fda89ea7826f1")
+	version("1.46.0", commit="fb9c2498b15619fde8fb931f92234ed843f332fb")
+	version("1.40.0", commit="c2360e951cdbefaefdaf0007155569d7d86d8d45")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

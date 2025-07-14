@@ -12,11 +12,10 @@ class RBranchpointer(RPackage):
 	Predicts branchpoint probability for sites in intronic branchpoint windows. Queries can be supplied as intronic regions; or to evaluate the effects of mutations, SNPs.
 	"""
 	
-	bioc = "branchpointer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/branchpointer_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/branchpointer/branchpointer_1.28.0.tar.gz"]
+	bioc = "branchpointer"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="737c4c9b0b15398d76c07c258a764f1ff455e3239faa56b6adce4f686d4a9b80")
+	version("1.34.0", commit="d5c2b9728deaf05f15c97c4587f40ad129423d97")
+	version("1.28.0", commit="45b67894e8883749ea39d685e3411a16542855ae")
 
 	depends_on("r-caret", type=("build", "run"))
 	depends_on("r@3.4:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RAdductomicsr(RPackage):
 	Processes MS2 data to identify potentially adducted peptides from spectra that has been corrected for mass drift and retention time drift and quantifies MS1 level mass spectral peaks.
 	"""
 	
-	bioc = "adductomicsR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/adductomicsR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/adductomicsR/adductomicsR_1.18.0.tar.gz"]
+	bioc = "adductomicsR"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="95777cda6af3dfb1860ad3008d737f08109009a0a29555b7c1aad0df1f386639")
+	version("1.24.0", commit="f40e2f87fe457528654066c63215d0c2c79f336e")
+	version("1.18.0", commit="35a34c9b6499b3e299b2c5317a95a4190f5a5bc8")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-adductdata", type=("build", "run"))

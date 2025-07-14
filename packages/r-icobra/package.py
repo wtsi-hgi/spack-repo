@@ -13,11 +13,10 @@ class RIcobra(RPackage):
 	"""
 	
 	homepage = "https://github.com/csoneson/iCOBRA"
-	bioc = "iCOBRA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iCOBRA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iCOBRA/iCOBRA_1.30.0.tar.gz"]
+	bioc = "iCOBRA"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="ce320e1a3e8bf39b5356f6a246a713ef7c8ed915dbea2d52d91b1805390812b8")
+	version("1.36.0", commit="1be9ea5db5afb2fbae93b290e1e5371ea7a3dc3a")
+	version("1.30.0", commit="e89626692bc0409ec98db32722c1a58c7e50b6c4")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-shiny@0.9.1.9008:", type=("build", "run"))

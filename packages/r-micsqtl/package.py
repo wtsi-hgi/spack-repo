@@ -12,11 +12,10 @@ class RMicsqtl(RPackage):
 	Our pipeline, MICSQTL, utilizes scRNA-seq reference and bulk transcriptomes to estimate cellular composition in the matched bulk proteomes. The expression of genes and proteins at either bulk level or cell type level can be integrated by Angle-based Joint and Individual Variation Explained (AJIVE) framework. Meanwhile, MICSQTL can perform cell-type-specic quantitative trait loci (QTL) mapping to proteins or transcripts based on the input of bulk expression data and the estimated cellular composition per molecule type, without the need for single cell sequencing. We use matched transcriptome-proteome from human brain frontal cortex tissue samples to demonstrate the input and output of our tool.
 	"""
 	
-	bioc = "MICSQTL" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MICSQTL_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MICSQTL/MICSQTL_1.0.0.tar.gz"]
+	bioc = "MICSQTL"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="eff898a4768e67af1bc6b1cb6664cf24675f7ba1acbbb8fddc920507370ce1e0")
+	version("1.6.0", commit="8d88ac372e5727d896bea0e1cadd093dfb99fa9f")
+	version("1.0.0", commit="1494154c1cca4d1f7df2ef13684f05c52cc69f8d")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

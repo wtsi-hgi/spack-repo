@@ -12,11 +12,10 @@ class RTfhaz(RPackage):
 	It finds trascription factor (TF) high accumulation DNA zones, i.e., regions along the genome where there is a high presence of different transcription factors. Starting from a dataset containing the genomic positions of TF binding regions, for each base of the selected chromosome the accumulation of TFs is computed. Three different types of accumulation (TF, region and base accumulation) are available, together with the possibility of considering, in the single base accumulation computing, the TFs present not only in that single base, but also in its neighborhood, within a window of a given width. Two different methods for the search of TF high accumulation DNA zones, called "binding regions" and "overlaps", are available. In addition, some functions are provided in order to analyze, visualize and compare results obtained with different input parameters.
 	"""
 	
-	bioc = "TFHAZ" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFHAZ_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFHAZ/TFHAZ_1.24.0.tar.gz"]
+	bioc = "TFHAZ"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="91e2a2e09124bc2b0a67f2e328cd639c785e5e77fcc46d8a17599b67548b0401")
+	version("1.30.0", commit="6c8eb4c292d8f82071ad7be645fe058cbde9d189")
+	version("1.24.0", commit="aa80698f10e5d98b7960afd48791c5caa0611708")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

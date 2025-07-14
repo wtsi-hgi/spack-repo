@@ -13,11 +13,10 @@ class RBiobtreer(RPackage):
 	"""
 	
 	homepage = "https://github.com/tamerh/biobtreeR"
-	bioc = "biobtreeR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biobtreeR_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biobtreeR/biobtreeR_1.14.0.tar.gz"]
+	bioc = "biobtreeR"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="e5a0e9dbff233fdd9c4b88c192155c0d524991c1e6c83c7be788cf7b8fc9e5a2")
+	version("1.20.0", commit="36f5c12dd0af25614720c458c2416206a176f68a")
+	version("1.14.0", commit="b97b0147a3b88a3109bd13cf1ed9c280925b5d4a")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-httpuv", type=("build", "run"))

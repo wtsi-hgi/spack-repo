@@ -13,11 +13,10 @@ class RLineagespot(RPackage):
 	"""
 	
 	homepage = "https://github.com/BiodataAnalysisGroup/lineagespot"
-	bioc = "lineagespot" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lineagespot_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lineagespot/lineagespot_1.6.0.tar.gz"]
+	bioc = "lineagespot"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="2606c8052dc41b4d9fe8c1b6c6ae075c8b06d2f2b395c822f73abca4e0217c7b")
+	version("1.12.0", commit="35ccac17baaf09bf5c60e19853b7eacd0a9bd0f4")
+	version("1.6.0", commit="11817d660996026d20cfb6e246434accaebfb11e")
 
 	depends_on("r-variantannotation", type=("build", "run"))
 	depends_on("r-matrixgenerics", type=("build", "run"))

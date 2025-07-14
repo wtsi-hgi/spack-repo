@@ -13,11 +13,10 @@ class RRnamodrRibomethseq(RPackage):
 	"""
 	
 	homepage = "https://github.com/FelixErnst/RNAmodR.RiboMethSeq"
-	bioc = "RNAmodR.RiboMethSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNAmodR.RiboMethSeq_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNAmodR.RiboMethSeq/RNAmodR.RiboMethSeq_1.16.0.tar.gz"]
+	bioc = "RNAmodR.RiboMethSeq"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="e3a50ae6290f77cb090b696886382f7022e11ea77dab9e8a0431f591d29dcb64")
+	version("1.22.0", commit="3a9e7fb8e093d735842ab5748fed481e353b2b78")
+	version("1.16.0", commit="1dba6360eec6f3941f1f560ac55cad6dfd723601")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rnamodr@1.5.3:", type=("build", "run"))

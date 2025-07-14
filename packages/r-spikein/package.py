@@ -13,11 +13,10 @@ class RSpikein(RPackage):
 	"""
 	
 	homepage = "https://bioconductor.org/packages/SpikeIn"
-	bioc = "SpikeIn" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SpikeIn_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SpikeIn/SpikeIn_1.44.0.tar.gz"]
+	bioc = "SpikeIn"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="5c8907ffcae690402437a1af4e68b9d46ecd9f3648a7fcf66a3906fa5bc64a13")
+	version("1.50.0", commit="3d0c595e34a371c4d7483c09bfedc498be54bc70")
+	version("1.44.0", commit="5dc4781787ef039ff5f5dad22f5eee93138e92d8")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-affy@1.23.4:", type=("build", "run"))

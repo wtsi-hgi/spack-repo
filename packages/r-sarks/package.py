@@ -13,11 +13,10 @@ class RSarks(RPackage):
 	"""
 	
 	homepage = "https://academic.oup.com/bioinformatics/article-abstract/35/20/3944/5418797"
-	bioc = "sarks" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sarks_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sarks/sarks_1.14.0.tar.gz"]
+	bioc = "sarks"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="44505679b8e74c320cdf3518130525991eb86abc4e9c419bf9f5cfd32600f80f")
+	version("1.20.0", commit="af5b861b8c61b25c51ca9abb1bb4b6fd8b7e33e1")
+	version("1.14.0", commit="acd4c7f2dc8266507428814f4c3a3f1198d6a816")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rjava", type=("build", "run"))

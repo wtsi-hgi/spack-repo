@@ -13,11 +13,10 @@ class RTvtb(RPackage):
 	"""
 	
 	homepage = "https://github.com/kevinrue/TVTB"
-	bioc = "TVTB" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TVTB_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TVTB/TVTB_1.28.0.tar.gz"]
+	bioc = "TVTB"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="0000a1bd3a32d328130b3bb9375faba3b7f0d1d5ed83e373ae396101b0d84587")
+	version("1.34.0", commit="bbba86c2d6c502f1590bf28269aeee25152b4c13")
+	version("1.28.0", commit="4bc60c26e2f9430650bd119e9ad56f510ab263bb")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-annotationfilter", type=("build", "run"))

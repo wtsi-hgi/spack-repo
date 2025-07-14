@@ -12,11 +12,10 @@ class RLevi(RPackage):
 	The tool integrates data from biological networks with transcriptomes, displaying a heatmap with surface curves to evidence the altered regions.
 	"""
 	
-	bioc = "levi" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/levi_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/levi/levi_1.20.0.tar.gz"]
+	bioc = "levi"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="9f794ab27d1477537ea262cf76c210da4a55849376ace0557a8a4f2d81acb05c")
+	version("1.26.0", commit="7bd2746c0d2300ff1a88753eb2491a9477e4aeb5")
+	version("1.20.0", commit="01d1e4d740d6d79b0d34c3675e542a40691d43f8")
 
 	depends_on("r-dt@0.4:", type=("build", "run"))
 	depends_on("r-rcolorbrewer@1.1.2:", type=("build", "run"))

@@ -12,10 +12,9 @@ class RYeastnagalakshmi(RPackage):
 	The yeast genome data was retrieved from the sequence read archive, aligned with bwa, and converted to BAM format with samtools.
 	"""
 	
-	bioc = "yeastNagalakshmi" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/yeastNagalakshmi_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/yeastNagalakshmi/yeastNagalakshmi_1.38.0.tar.gz"]
+	bioc = "yeastNagalakshmi"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="e00fd43bab3e556b9b43001741726c518a983fad61a88ac58eefc7f76e3f3eb4")
+	version("1.44.0", commit="9f9f35453f8f5a4d22bd2bbdcbd6358144b3d2f7")
+	version("1.38.0", commit="1687f8efcec9452030247e16f9bee4ecec4dd615")
 
 

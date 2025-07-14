@@ -12,11 +12,10 @@ class RTabulamurisdata(RPackage):
 	Access to processed 10x (droplet) and SmartSeq2 (on FACS-sorted cells) single-cell RNA-seq data from the Tabula Muris consortium (http://tabula-muris.ds.czbiohub.org/).
 	"""
 	
-	bioc = "TabulaMurisData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TabulaMurisData_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TabulaMurisData/TabulaMurisData_1.20.0.tar.gz"]
+	bioc = "TabulaMurisData"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="f3e8482daac6c4069cd3744a1b7222baac2ffb3b52d8834ce8d3aecfdff617dc")
+	version("1.26.0", commit="d4dcd5a406883c6a088e61fb85718291124bba8f")
+	version("1.20.0", commit="f4c0e080eee836cea56a3898c0fef7fc4aa9e79c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

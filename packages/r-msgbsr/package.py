@@ -12,11 +12,10 @@ class RMsgbsr(RPackage):
 	Pipeline for the anaysis of a MS-GBS experiment.
 	"""
 	
-	bioc = "msgbsR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msgbsR_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msgbsR/msgbsR_1.26.0.tar.gz"]
+	bioc = "msgbsR"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="c6656641e8fbe2f9afb1ad26428ef498347457c92c528bf40ba36472f2ad0855")
+	version("1.32.0", commit="b76e4e288d41f495c5915878ade643b559136449")
+	version("1.26.0", commit="0b34e7d8c44824ac7fa1884c010685831ffe1cde")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

@@ -13,11 +13,10 @@ class RRecountmethylation(RPackage):
 	"""
 	
 	homepage = "https://github.com/metamaden/recountmethylation"
-	bioc = "recountmethylation" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/recountmethylation_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/recountmethylation/recountmethylation_1.12.0.tar.gz"]
+	bioc = "recountmethylation"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="141d3a3dc74aa44398c214398c25b39fe74efb06e0844d370e9bef60531567ff")
+	version("1.18.0", commit="cb06ac68a63bb403d260facc65c8f94e08d6a18a")
+	version("1.12.0", commit="ac970f5573806232931f119ee597900e36a0b4b0")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-minfi", type=("build", "run"))

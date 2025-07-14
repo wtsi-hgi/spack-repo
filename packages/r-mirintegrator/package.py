@@ -13,11 +13,10 @@ class RMirintegrator(RPackage):
 	"""
 	
 	homepage = "http://datad.github.io/mirIntegrator/"
-	bioc = "mirIntegrator" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mirIntegrator_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mirIntegrator/mirIntegrator_1.32.0.tar.gz"]
+	bioc = "mirIntegrator"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="d109e9bebc6a1d74353260b70d4bd0c30b5f63f02c046b26e2122876d2f4edf2")
+	version("1.38.0", commit="026c65f1162f5d33919ecfb1ab0f4f96b6141453")
+	version("1.32.0", commit="236a2ecb6218e81cce78af85cbc39aec5c675870")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

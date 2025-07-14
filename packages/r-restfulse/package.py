@@ -12,10 +12,9 @@ class RRestfulse(RPackage):
 	This package provides functions and classes to interface with remote data stores by operating on SummarizedExperiment-like objects.
 	"""
 	
-	bioc = "restfulSE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/restfulSE_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/restfulSE/restfulSE_1.24.0.tar.gz"]
+	bioc = "restfulSE"
 
-	version("1.24.0", sha256="d44b0bfd3b818e341788a926bf2f893f21d73797dbff3d9d24c377ebb7f38044")
+	version("1.24.0", commit="815453885cdb77eeb880eca99f6a656144f7a917")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

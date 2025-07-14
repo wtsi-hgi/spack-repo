@@ -13,11 +13,10 @@ class RTabulamurissenisdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/fmicompbio/TabulaMurisSenisData"
-	bioc = "TabulaMurisSenisData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TabulaMurisSenisData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TabulaMurisSenisData/TabulaMurisSenisData_1.8.0.tar.gz"]
+	bioc = "TabulaMurisSenisData"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="e1a2f95c837ca99d93bcc1e121a01f086cf8477d3a40e2333a63b3974d91cf38")
+	version("1.14.0", commit="6383b2275f4cd64a1ec854b4fe2e502af4804648")
+	version("1.8.0", commit="962d71c4da3a3f6aded2355c6a783f332df49ebb")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

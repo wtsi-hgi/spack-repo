@@ -13,11 +13,10 @@ class RRcy3(RPackage):
 	"""
 	
 	homepage = "https://github.com/cytoscape/RCy3"
-	bioc = "RCy3" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCy3_2.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RCy3/RCy3_2.22.1.tar.gz"]
+	bioc = "RCy3"
 
-	version("2.28.1", tag="RELEASE_3_21")
-	version("2.22.1", sha256="f5a89f42adf224a83c4e77195ed43fe19a760fa2612b60d49081982b5cbe7262", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCy3_2.22.1.tar.gz")
+	version("2.28.1", commit="2dbd87af8f020732d92f8619036e823c34ce64ae")
+	version("2.22.1", commit="cd4cb1bf320f0dac9f13264a01dbd6cf75a6eec4")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-rjsonio", type=("build", "run"))

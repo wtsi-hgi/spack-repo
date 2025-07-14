@@ -12,11 +12,10 @@ class RMygene(RPackage):
 	MyGene.Info_ provides simple-to-use REST web services to query/retrieve gene annotation data. It's designed with simplicity and performance emphasized. *mygene*, is an easy-to-use R wrapper to access MyGene.Info_ services.
 	"""
 	
-	bioc = "mygene" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mygene_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mygene/mygene_1.38.0.tar.gz"]
+	bioc = "mygene"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="556e0ef8b75df9dff6ff496280a5dd50a5b5ceb7dab5f247f71e9d7c158312a8")
+	version("1.44.0", commit="29b599e0a83e8dc84283fd683951c7ee00d90b11")
+	version("1.38.0", commit="f4ab79163c31e10016eaff549d051e350b6fb1d2")
 
 	depends_on("r@3.2.1:", type=("build", "run"))
 	depends_on("r-genomicfeatures", type=("build", "run"))

@@ -13,11 +13,10 @@ class RGenarise(RPackage):
 	"""
 	
 	homepage = "http://www.ifc.unam.mx/genarise"
-	bioc = "genArise" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genArise_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genArise/genArise_1.78.0.tar.gz"]
+	bioc = "genArise"
 
-	version("1.84.0", tag="RELEASE_3_21")
-	version("1.78.0", sha256="e095e1c32a8eac4d36e7a5387e86b03a23d65e24234967e3f72387ec9a7e6199")
+	version("1.84.0", commit="744afb82c202941809bd89e2f4fde175bc8c4640")
+	version("1.78.0", commit="acf91f3f3ee322fb348d194a5d55c8078adb3738")
 
 	depends_on("r@1.7.1:", type=("build", "run"))
 	depends_on("r-locfit", type=("build", "run"))

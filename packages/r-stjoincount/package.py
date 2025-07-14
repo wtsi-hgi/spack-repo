@@ -13,11 +13,10 @@ class RStjoincount(RPackage):
 	"""
 	
 	homepage = "https://github.com/Nina-Song/stJoincount"
-	bioc = "stJoincount" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/stJoincount_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/stJoincount/stJoincount_1.4.0.tar.gz"]
+	bioc = "stJoincount"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="9f29095aaf05ac1d2f4bd293ef0e415a947ed4d6f88190c589ca2ea43aaec747")
+	version("1.10.0", commit="b8f2c341a618a23c0f40f34a5bf613c084d16b7f")
+	version("1.4.0", commit="5c5b810ce0bb661f71d1e4ef6952f38d5c0d535d")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

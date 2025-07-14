@@ -12,11 +12,10 @@ class RMoanin(RPackage):
 	Simple and efficient workflow for time-course gene expression data, built on publictly available open-source projects hosted on CRAN and bioconductor. moanin provides helper functions for all the steps required for analysing time-course data using functional data analysis: (1) functional modeling of the timecourse data; (2) differential expression analysis; (3) clustering; (4) downstream analysis.
 	"""
 	
-	bioc = "moanin" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/moanin_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/moanin/moanin_1.10.0.tar.gz"]
+	bioc = "moanin"
 
-	version("1.16.1", tag="RELEASE_3_21")
-	version("1.10.0", sha256="302fbf94bd2ee1a2cfd7a983017bc040d6d09fa7c09f52a158b7adbb020635cd")
+	version("1.16.1", commit="ac3a9a794b8a74a35674a2990fa564745db6bed9")
+	version("1.10.0", commit="92c0bad44d147078082b7b66b571933521e1d094")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

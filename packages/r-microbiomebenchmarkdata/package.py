@@ -13,11 +13,10 @@ class RMicrobiomebenchmarkdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/waldronlab/MicrobiomeBenchmarkData"
-	bioc = "MicrobiomeBenchmarkData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MicrobiomeBenchmarkData_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MicrobiomeBenchmarkData/MicrobiomeBenchmarkData_1.4.0.tar.gz"]
+	bioc = "MicrobiomeBenchmarkData"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="4538870944993b16e509eb1c5ec9ba001ee6b7fef904477563daa06f17638694")
+	version("1.10.0", commit="615e0573eaed0918fd2fa75ef5921556243ae0c7")
+	version("1.4.0", commit="a9465e2e68e8c01fc042ae0231498dbdce7337b5")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

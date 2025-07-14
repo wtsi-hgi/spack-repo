@@ -12,11 +12,10 @@ class RCrlmm(RPackage):
 	Faster implementation of CRLMM specific to SNP 5.0 and 6.0 arrays, as well as a copy number tool specific to 5.0, 6.0, and Illumina platforms.
 	"""
 	
-	bioc = "crlmm" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crlmm_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crlmm/crlmm_1.60.0.tar.gz"]
+	bioc = "crlmm"
 
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="722e1d169bc6c8b2f2e9a685c76bcb2ebe8ce6e3d89a80b2b302809e3ed987df")
+	version("1.66.0", commit="8a814b7baa34ca8d344722f8b844f140f4d9cc2b")
+	version("1.60.0", commit="1271399d1337a66d46a94469f407a612c15c5d6e")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-oligoclasses@1.21.12:", type=("build", "run"))

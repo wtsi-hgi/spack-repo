@@ -12,11 +12,10 @@ class RArrmnormalization(RPackage):
 	Perform the Adaptive Robust Regression method (ARRm) for the normalization of methylation data from the Illumina Infinium HumanMethylation 450k assay.
 	"""
 	
-	bioc = "ARRmNormalization" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ARRmNormalization_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ARRmNormalization/ARRmNormalization_1.42.0.tar.gz"]
+	bioc = "ARRmNormalization"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="5572e2a5fccb6da841b8dd7516403da5c74891772bee6bc5040bbf27b8bba1b9")
+	version("1.48.0", commit="ec7bdf155db4410abba836a003bf8eeecfb90bc6")
+	version("1.42.0", commit="201a902c0a814c145a77f68d98b89abb91065dce")
 
 	depends_on("r@2.15.1:", type=("build", "run"))
 	depends_on("r-arrmdata", type=("build", "run"))

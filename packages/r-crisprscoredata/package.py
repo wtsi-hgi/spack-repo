@@ -13,11 +13,10 @@ class RCrisprscoredata(RPackage):
 	"""
 	
 	homepage = "https://github.com/crisprVerse/crisprScoreData/issues"
-	bioc = "crisprScoreData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/crisprScoreData_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/crisprScoreData/crisprScoreData_1.6.0.tar.gz"]
+	bioc = "crisprScoreData"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="d1c2eaf4fb4361738ea092da8b7e144ab9f327379aa2ec7c42e3a38aaed33c67")
+	version("1.12.0", commit="30e364703a709f52c172dab21cc61f2a61780cb2")
+	version("1.6.0", commit="2c66064679b3a30f2f45793e63cf4738b9ab8d9c")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

@@ -13,11 +13,10 @@ class RTrajectoryutils(RPackage):
 	"""
 	
 	homepage = "https://bioconductor.org/packages/TrajectoryUtils"
-	bioc = "TrajectoryUtils" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TrajectoryUtils_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TrajectoryUtils/TrajectoryUtils_1.10.1.tar.gz"]
+	bioc = "TrajectoryUtils"
 
-	version("1.16.1", tag="RELEASE_3_21")
-	version("1.10.1", sha256="a7d184ed827ae8f32de6e830ff0dfe65f6f04f1749c2338ba6314d66412e1b9d")
+	version("1.16.1", commit="a488c624fd20dc775fd12a978779094b2d360efc")
+	version("1.10.1", commit="5d8634e9465afe386bb23b5e6b12d383d4035556")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

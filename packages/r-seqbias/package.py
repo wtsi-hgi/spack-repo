@@ -12,10 +12,9 @@ class RSeqbias(RPackage):
 	This package implements a model of per-position sequencing bias in high-throughput sequencing data using a simple Bayesian network, the structure and parameters of which are trained on a set of aligned reads and a reference genome sequence.
 	"""
 	
-	bioc = "seqbias" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqbias_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqbias/seqbias_1.50.0.tar.gz"]
+	bioc = "seqbias"
 
-	version("1.50.0", sha256="e1caba756e33c602c64d59a60f65b0d2396c0d42857593d48430f85250bceda2")
+	version("1.50.0", commit="d82941c085ef2bb881595d1ccb8485d7aec7af0b")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-genomicranges@0.1:", type=("build", "run"))

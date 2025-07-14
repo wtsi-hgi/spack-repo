@@ -13,11 +13,10 @@ class RGenetclassifier(RPackage):
 	"""
 	
 	homepage = "http://www.cicancer.org"
-	bioc = "geNetClassifier" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geNetClassifier_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geNetClassifier/geNetClassifier_1.42.0.tar.gz"]
+	bioc = "geNetClassifier"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="0d67da334b237d15900ef72117ce86461891e5dfdf540c7770b50374d454c1cc")
+	version("1.48.0", commit="6be36adc65da48bbc24988945c8add11c2e62f70")
+	version("1.42.0", commit="d1bee039ff821a1f61bcaf3d0d5c80f23d850aa2")
 
 	depends_on("r@2.10.1:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

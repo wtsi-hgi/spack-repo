@@ -13,11 +13,10 @@ class RStrandcheckr(RPackage):
 	"""
 	
 	homepage = "https://github.com/UofABioinformaticsHub/strandCheckR"
-	bioc = "strandCheckR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/strandCheckR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/strandCheckR/strandCheckR_1.20.0.tar.gz"]
+	bioc = "strandCheckR"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="a25ff1e8063de98ae2417bf7ee62074d95feb4989ad2381e882b604bb9679c6f")
+	version("1.26.0", commit="17a91b3decb6ae1d4f918abc34d215a14edf08e9")
+	version("1.20.0", commit="29e1843f8b9799e844a21e45a808a89631a25458")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

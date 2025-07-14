@@ -13,11 +13,10 @@ class RPumadata(RPackage):
 	"""
 	
 	homepage = "http://umber.sbs.man.ac.uk/resources/puma"
-	bioc = "pumadata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/pumadata_2.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/pumadata/pumadata_2.38.0.tar.gz"]
+	bioc = "pumadata"
 
-	version("2.44.0", tag="RELEASE_3_21")
-	version("2.38.0", sha256="1dcc0352e5b8c55c3d7694ea23b7096b0736548790f9eac333620c3d54c38265")
+	version("2.44.0", commit="5c3b82f20e579b75100404b148738ad4199ed6a7")
+	version("2.38.0", commit="da7fe7e5fd40b6fe1248d242c1cd21838feceae6")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

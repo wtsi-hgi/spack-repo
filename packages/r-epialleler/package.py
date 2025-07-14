@@ -13,11 +13,10 @@ class REpialleler(RPackage):
 	"""
 	
 	homepage = "https://github.com/BBCG/epialleleR"
-	bioc = "epialleleR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epialleleR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epialleleR/epialleleR_1.10.0.tar.gz"]
+	bioc = "epialleleR"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="1d4f66fc2c30219fc98a2499e8526faa667deac923906ee1c868dedf5b95affd")
+	version("1.16.0", commit="91aa1ac3ac667045eb2d3d0812e5c6493e4e3118")
+	version("1.10.0", commit="4b18f843425f39e961f575b9deeedec181d9d409")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

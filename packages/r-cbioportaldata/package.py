@@ -12,11 +12,10 @@ class RCbioportaldata(RPackage):
 	The cBioPortalData R package accesses study datasets from the cBio Cancer Genomics Portal. It accesses the data either from the pre-packaged zip / tar files or from the API interface that was recently implemented by the cBioPortal Data Team. The package can provide data in either tabular format or with MultiAssayExperiment object that uses familiar Bioconductor data representations.
 	"""
 	
-	bioc = "cBioPortalData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cBioPortalData_2.14.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cBioPortalData/cBioPortalData_2.14.2.tar.gz"]
+	bioc = "cBioPortalData"
 
-	version("2.20.0", tag="RELEASE_3_21")
-	version("2.14.2", sha256="06038da253b5f99d40955b99dc8f64d9bd8bdd0e81b934ae02d8ffb896b967ad")
+	version("2.20.0", commit="e2964c093d2b83eef9b28bb4a2c86153b1bbbf04")
+	version("2.14.2", commit="3d59ad61bbaa88fee972001afdd10fbf9eb55172")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-anvil@1.7.1:", type=("build", "run"))

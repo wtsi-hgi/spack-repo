@@ -13,11 +13,10 @@ class RDegreport(RPackage):
 	"""
 	
 	homepage = "http://lpantano.github.io/DEGreport/"
-	bioc = "DEGreport" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEGreport_1.38.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEGreport/DEGreport_1.38.5.tar.gz"]
+	bioc = "DEGreport"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.5", sha256="bf88efb88eb0f49ae2d34e65b7b560443fc838108b9a240f1f47b5c014200d68")
+	version("1.44.0", commit="2e683856d7e2794e28bbd746401b2c49f5ea0ee7")
+	version("1.38.5", commit="672d8e55155fab486e632b24763c574b1b81c460")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

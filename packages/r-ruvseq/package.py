@@ -13,11 +13,10 @@ class RRuvseq(RPackage):
 	"""
 	
 	homepage = "https://github.com/drisso/RUVSeq"
-	bioc = "RUVSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RUVSeq_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RUVSeq/RUVSeq_1.36.0.tar.gz"]
+	bioc = "RUVSeq"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="e2027b287cae301ccb26b742dd1830a42b0eb45a552323cea119d7adf97b7e11")
+	version("1.42.0", commit="d6cbf4506d72a421e4f64d6da74cf8dc3d9e94b7")
+	version("1.36.0", commit="09a26da683406dacb1d56486ed41cf62e4378c32")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-edaseq@1.99.1:", type=("build", "run"))

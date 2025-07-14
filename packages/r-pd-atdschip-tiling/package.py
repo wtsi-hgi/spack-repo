@@ -12,11 +12,10 @@ class RPdAtdschipTiling(RPackage):
 	Platform Design Info for Affymetrix Atdschip_tiling
 	"""
 	
-	bioc = "pd.atdschip.tiling" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/pd.atdschip.tiling_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/pd.atdschip.tiling/pd.atdschip.tiling_0.40.0.tar.gz"]
+	bioc = "pd.atdschip.tiling"
 
-	version("0.46.0", tag="RELEASE_3_21")
-	version("0.40.0", sha256="dc389eaee4017c5facbe34089f26aff0e09af559834fee3623d5d6467efadb0f")
+	version("0.46.0", commit="64c4c6996c169aff81f04db3f1626a577e0adbfe")
+	version("0.40.0", commit="6baaf715d75712a1d18796b833541b40a2317ef6")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rsqlite@0.10:", type=("build", "run"))

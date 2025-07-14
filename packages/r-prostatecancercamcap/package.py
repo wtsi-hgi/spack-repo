@@ -12,11 +12,10 @@ class RProstatecancercamcap(RPackage):
 	A Bioconductor data package for the Ross-Adams (2015) Prostate Cancer dataset.
 	"""
 	
-	bioc = "prostateCancerCamcap" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/prostateCancerCamcap_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/prostateCancerCamcap/prostateCancerCamcap_1.30.0.tar.gz"]
+	bioc = "prostateCancerCamcap"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="58c76368110a65cc7700e2d2ac683292d7564644b6edd9b61fab06892af4c2a4")
+	version("1.36.0", commit="d185f4fc778bfb0cb1cfc418822f414ba53e9dc4")
+	version("1.30.0", commit="235e74baa32add089c37722d41f70845f1843469")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r@3.3:", type=("build", "run"))

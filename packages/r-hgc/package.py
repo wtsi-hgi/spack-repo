@@ -12,11 +12,10 @@ class RHgc(RPackage):
 	HGC (short for Hierarchical Graph-based Clustering) is an R package for conducting hierarchical clustering on large-scale single-cell RNA-seq (scRNA-seq) data. The key idea is to construct a dendrogram of cells on their shared nearest neighbor (SNN) graph. HGC provides functions for building graphs and for conducting hierarchical clustering on the graph. The users with old R version could visit https://github.com/XuegongLab/HGC/tree/HGC4oldRVersion to get HGC package built for R 3.6.
 	"""
 	
-	bioc = "HGC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HGC_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HGC/HGC_1.10.0.tar.gz"]
+	bioc = "HGC"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="c959666b187996788b6d58d9e51c740d942f6e2e58d9fcf4b36602e7450712f5")
+	version("1.16.0", commit="3ebd916006f8b1484e7ebc4833edd3e148fc3cd5")
+	version("1.10.0", commit="7c4a634754e4e87a94b8b718bfef3f78b4b6adf2")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

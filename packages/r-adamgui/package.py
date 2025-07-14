@@ -13,11 +13,10 @@ class RAdamgui(RPackage):
 	"""
 	
 	homepage = "TBA"
-	bioc = "ADAMgui" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ADAMgui_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ADAMgui/ADAMgui_1.18.0.tar.gz"]
+	bioc = "ADAMgui"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="03d416aca628f3ddc27ad5197cdca8d4f980368ccb57d6dba95df73fe96da582")
+	version("1.24.0", commit="9396557a3c3d86f10d01bf493b30a03db2de0c79")
+	version("1.18.0", commit="604f8c470e4cc53b13f6d24a37626d282db25f18")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-adam", type=("build", "run"))

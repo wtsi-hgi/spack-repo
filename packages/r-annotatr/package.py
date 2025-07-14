@@ -12,11 +12,10 @@ class RAnnotatr(RPackage):
 	Given a set of genomic sites/regions (e.g. ChIP-seq peaks, CpGs, differentially methylated CpGs or regions, SNPs, etc.) it is often of interest to investigate the intersecting genomic annotations. Such annotations include those relating to gene models (promoters, 5'UTRs, exons, introns, and 3'UTRs), CpGs (CpG islands, CpG shores, CpG shelves), or regulatory sequences such as enhancers. The annotatr package provides an easy way to summarize and visualize the intersection of genomic sites/regions with genomic annotations.
 	"""
 	
-	bioc = "annotatr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/annotatr_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/annotatr/annotatr_1.28.0.tar.gz"]
+	bioc = "annotatr"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="c5d4c5863a44016ef1c4c352f3b6066e663f178fa29374ea341ee4aa97edd39a")
+	version("1.34.0", commit="a16eedeb8ff0b345a0217e9d6c23200963f79ce4")
+	version("1.28.0", commit="8a1960824cf5a8828d3a2d4228db428595a90f4b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

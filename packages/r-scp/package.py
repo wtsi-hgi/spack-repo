@@ -13,11 +13,10 @@ class RScp(RPackage):
 	"""
 	
 	homepage = "https://UCLouvain-CBIO.github.io/scp"
-	bioc = "scp" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scp_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scp/scp_1.12.0.tar.gz"]
+	bioc = "scp"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="f0b301a02fc703dec1b439e7eb3f44235e60ab8195f19d4775c27c67381c9575")
+	version("1.18.0", commit="d05ad643acad963128b7eb334f57aaafb23fca4f")
+	version("1.12.0", commit="9872d679a620b12f92769aaef6e00bb8fa41ff29")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-qfeatures@1.3.5:", type=("build", "run"))

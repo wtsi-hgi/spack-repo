@@ -13,11 +13,10 @@ class RSimlr(RPackage):
 	"""
 	
 	homepage = "https://github.com/BatzoglouLabSU/SIMLR"
-	bioc = "SIMLR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SIMLR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SIMLR/SIMLR_1.28.0.tar.gz"]
+	bioc = "SIMLR"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="5efb3a0248baf6b99728cdd2242b1ef437d4275dad8f43fa0e6e4854c1270ff2")
+	version("1.34.0", commit="26ba6d89f14863708b72a99b2617df2a2d8f03b9")
+	version("1.28.0", commit="e833718b068304badc3d417e498f72733fa77a72")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

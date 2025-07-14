@@ -12,11 +12,10 @@ class RNcrnatools(RPackage):
 	ncRNAtools provides a set of basic tools for handling and analyzing non-coding RNAs. These include tools to access the RNAcentral database and to predict and visualize the secondary structure of non-coding RNAs. The package also provides tools to read, write and interconvert the file formats most commonly used for representing such secondary structures.
 	"""
 	
-	bioc = "ncRNAtools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ncRNAtools_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ncRNAtools/ncRNAtools_1.12.0.tar.gz"]
+	bioc = "ncRNAtools"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="3af6a08be940b38404809590cc357ec6b703e27023d3212161da833d5a95538f")
+	version("1.18.0", commit="ecd9ba66cd71ce74bbab4bd3fedc9121148e937a")
+	version("1.12.0", commit="95cfa949efce81a7508d997468df24098be0a3da")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))

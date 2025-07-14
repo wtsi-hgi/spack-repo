@@ -12,11 +12,10 @@ class RScfeaturefilter(RPackage):
 	An R implementation of the correlation-based method developed in the Joshi laboratory to analyse and filter processed single-cell RNAseq data. It returns a filtered version of the data containing only genes expression values unaffected by systematic noise.
 	"""
 	
-	bioc = "scFeatureFilter" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scFeatureFilter_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scFeatureFilter/scFeatureFilter_1.22.0.tar.gz"]
+	bioc = "scFeatureFilter"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="7ba7d725929e95f3c4e3b8e505b4308eff76ab06c325473c9cd32ad75daa094e")
+	version("1.28.0", commit="b87672fca6b47bdd87b9dd26ae5f29ad5441002d")
+	version("1.22.0", commit="be3a47590b3ed63451e424042314987525c0b3f0")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr@0.7.3:", type=("build", "run"))

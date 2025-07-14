@@ -12,10 +12,9 @@ class RFlowploidydata(RPackage):
 	A collection of raw flow cytometry data for use in vignettes for the flowPloidy package.
 	"""
 	
-	bioc = "flowPloidyData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/flowPloidyData_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/flowPloidyData/flowPloidyData_1.28.0.tar.gz"]
+	bioc = "flowPloidyData"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="01a66a184ce552c2742c71fb7d34c0f1af9c78ad6043f68eac374a201a427ce4")
+	version("1.34.0", commit="bad13407f890d00bd547c3634a6b8008747fa30c")
+	version("1.28.0", commit="d4124464a59f1db40abbd3b01ee10adaa66fd304")
 
 

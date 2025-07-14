@@ -13,16 +13,11 @@ class RScater(RPackage):
 	gene expression data, with a focus on quality control and
 	visualization."""
 
-	bioc = "scater"
-	urls = [
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scater_1.30.1.tar.gz",
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scater/scater_1.30.1.tar.gz",
-	]
-	version("1.36.0", tag="RELEASE_3_21")
+	bioc = "scater"version("1.36.0", commit="2b4e65f89a57473c53079a762504b604c3534141")
 	version("1.8.4", commit="d560a9a378541d53d17990d2aa2cd28874df3dcd")
 	version("1.6.3", commit="964effb4e883102d7c8cae627dbac4ba5d216a75")
 	version("1.4.0", commit="90a2eab66ff82ba6dd7fbb33e41cd0ded20fa218")
-	version("1.30.1", sha256="9db9bcb20f00f07de2d8b31af85a07302f4778002447036a1924d6a77bb74419")
+	version("1.30.1", commit="27d0d22bfbdb4d4f7e8d9a57c4465bc322b326d4")
 	version("1.28.0", commit="e654498c3fa9f769b794f840f230720333bd9555")
 	version("1.26.0", commit="a548ddc8424e185bfb06f48bfc174071e69fc687")
 	version("1.24.0", commit="013f0935a1a225139986ca5a3f0e9d08a1558153")

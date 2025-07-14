@@ -12,11 +12,10 @@ class RRibodipa(RPackage):
 	This package performs differential pattern analysis for Ribo-seq data. It identifies genes with significantly different patterns in the ribosome footprint between two conditions. RiboDiPA contains five major components including bam file processing, P-site mapping, data binning, differential pattern analysis and footprint visualization.
 	"""
 	
-	bioc = "RiboDiPA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RiboDiPA_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RiboDiPA/RiboDiPA_1.10.0.tar.gz"]
+	bioc = "RiboDiPA"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="0fc423fe3ebd68e5f06da1f3a5316eb08f2d5db24733d6236ba1fa4712c0de00")
+	version("1.16.0", commit="6888e6d47207295cf23654a6d4422f2b83813c24")
+	version("1.10.0", commit="bb0b2d94e87b73fefbcfd9b18ea159ffa70c9664")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))

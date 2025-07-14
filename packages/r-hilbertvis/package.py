@@ -13,11 +13,10 @@ class RHilbertvis(RPackage):
 	"""
 	
 	homepage = "http://www.ebi.ac.uk/~anders/hilbert"
-	bioc = "HilbertVis" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HilbertVis_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HilbertVis/HilbertVis_1.60.0.tar.gz"]
+	bioc = "HilbertVis"
 
-	version("1.66.1", tag="RELEASE_3_21")
-	version("1.60.0", sha256="96c7a4dfe42158e45bfb7a1e1a33e2577b23409249402cfa5ae742f2420060d5")
+	version("1.66.1", commit="b93932819cfb24ff9a67ff92fe7a351bba2fe808")
+	version("1.60.0", commit="ad45689cf9643c9b0ac1b404a3f36e10d142e707")
 
 	depends_on("r@2.6:", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))

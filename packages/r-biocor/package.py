@@ -13,11 +13,10 @@ class RBiocor(RPackage):
 	"""
 	
 	homepage = "https://bioconductor.org/packages/BioCor"
-	bioc = "BioCor" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioCor_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioCor/BioCor_1.26.0.tar.gz"]
+	bioc = "BioCor"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="341a2a3a57eca622b5e166f209623adaccfd6179b08d5ba303a96858006d201c")
+	version("1.32.0", commit="58fcee3b93f7726f336e1ac5b51fcc5e46705f67")
+	version("1.26.0", commit="5ffb136a2030e6f413f4bed29b946601cb3b48c7")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

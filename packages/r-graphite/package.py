@@ -13,11 +13,10 @@ class RGraphite(RPackage):
 	"""
 	
 	homepage = "https://github.com/sales-lab/graphite"
-	bioc = "graphite" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/graphite_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/graphite/graphite_1.48.0.tar.gz"]
+	bioc = "graphite"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="5678e693530ed9e5727e45b938ff830db24efc1bbac59f8deefa0bd0250812c1")
+	version("1.54.0", commit="4461304007ebb656aab119580c0f59316de59cc2")
+	version("1.48.0", commit="288e32a0bedd7a0c53f54237b725631f7e6d9aa6")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

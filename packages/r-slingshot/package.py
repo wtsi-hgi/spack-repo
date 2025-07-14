@@ -12,11 +12,10 @@ class RSlingshot(RPackage):
 	Provides functions for inferring continuous, branching lineage structures in low-dimensional data. Slingshot was designed to model developmental trajectories in single-cell RNA sequencing data and serve as a component in an analysis pipeline after dimensionality reduction and clustering. It is flexible enough to handle arbitrarily many branching events and allows for the incorporation of prior knowledge through supervised graph construction.
 	"""
 	
-	bioc = "slingshot" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/slingshot_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/slingshot/slingshot_2.10.0.tar.gz"]
+	bioc = "slingshot"
 
-	version("2.16.0", tag="RELEASE_3_21")
-	version("2.10.0", sha256="2d30c816b11d7f32ed87afcdf3a30cb9e130a1abac28d8c792d556c2ae047260")
+	version("2.16.0", commit="79e32b097a569f95a39de689b22b6acb4c06eee0")
+	version("2.10.0", commit="9166218b81ee53237b209e9185eafd13fb0bcaf4")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-princurve@2.0.4:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RSqldataframe(RPackage):
 	"""
 	
 	homepage = "https://github.com/Bioconductor/SQLDataFrame"
-	bioc = "SQLDataFrame" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SQLDataFrame_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SQLDataFrame/SQLDataFrame_1.16.1.tar.gz"]
+	bioc = "SQLDataFrame"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.1", sha256="d48c2bcaa4fade62ead21689d2bfcfc8d7e835291ee25ec5ff6b69db0021354d")
+	version("1.22.0", commit="f4c9c9fc2e95911af1a355c94128881038986bf0")
+	version("1.16.1", commit="4a69da1296144a392fb95411ce40cb7cef28bda8")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr@0.8.0.1:", type=("build", "run"))

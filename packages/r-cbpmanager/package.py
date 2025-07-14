@@ -13,11 +13,10 @@ class RCbpmanager(RPackage):
 	"""
 	
 	homepage = "https://arsenij-ust.github.io/cbpManager/index.html"
-	bioc = "cbpManager" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cbpManager_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cbpManager/cbpManager_1.10.0.tar.gz"]
+	bioc = "cbpManager"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="eae8cba70f474680fc076773ed7bc142512824c9997a326e185ce3ecb17aa784")
+	version("1.16.0", commit="d49dd2266b1c054355b365b591ac7c3a5450a356")
+	version("1.10.0", commit="2f7806e117c4cc6b644c4abcd7f94bb8e24c33b4")
 
 	depends_on("r-shiny", type=("build", "run"))
 	depends_on("r-shinydashboard", type=("build", "run"))

@@ -12,11 +12,10 @@ class RExpressionnormalizationworkflow(RPackage):
 	An extensive, customized expression normalization workflow incorporating Supervised Normalization of Microarryas(SNM), Surrogate Variable Analysis(SVA) and Principal Variance Component Analysis to identify batch effects and remove them from the expression data to enhance the ability to detect the underlying biological signals.
 	"""
 	
-	bioc = "ExpressionNormalizationWorkflow" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/ExpressionNormalizationWorkflow_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/ExpressionNormalizationWorkflow/ExpressionNormalizationWorkflow_1.28.0.tar.gz"]
+	bioc = "ExpressionNormalizationWorkflow"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="6c774f657b6ca26fe24218a9a999f40f2313f3dc800b9376c1c9a1100e0d3ec8")
+	version("1.34.0", commit="ca00e7ae3df5e93072d856dca21b46acabeec6e3")
+	version("1.28.0", commit="54cbebb3962954a7dd492e65b49ce5c498b30c9f")
 
 	depends_on("r-biobase@2.24:", type=("build", "run"))
 	depends_on("r-limma@3.20.9:", type=("build", "run"))

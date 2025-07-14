@@ -13,14 +13,8 @@ class RSingler(RPackage):
     """
 
     homepage = "https://github.com/LTLA/SingleR"
-    bioc = "SingleR"
-    urls = [
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SingleR_2.4.1.tar.gz",
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SingleR/SingleR_2.4.1.tar.gz",
-    ]
-
-    version("2.10.0", tag="RELEASE_3_21")
-    version("2.4.1", sha256="4d8fb557544732511d3ae2e25959fb3f53c6756b2da5db6f2cce69155b219b7e")
+    bioc = "SingleR"version("2.10.0", commit="2c586f6c4e5de5c8bf8fdac1bbeca9d4d090e6c8")
+    version("2.4.1", commit="fab56fd58ebfbecd9c97158aebd40ea46000ffb6")
 
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))

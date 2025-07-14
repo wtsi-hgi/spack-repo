@@ -13,11 +13,10 @@ class RPodkat(RPackage):
 	"""
 	
 	homepage = "http://www.bioinf.jku.at/software/podkat/"
-	bioc = "podkat" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/podkat_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/podkat/podkat_1.34.0.tar.gz"]
+	bioc = "podkat"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="28392b4e431fafeb56fd006e067c8ae45073f0627697a51dddd973b8ce100300")
+	version("1.40.0", commit="ec9848147ddbee7280af3af24702708f6e8e1b4d")
+	version("1.34.0", commit="0a4ab12fa49c194b0c0ae7ab39763230b3f4ee0a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rsamtools@1.99.1:", type=("build", "run"))

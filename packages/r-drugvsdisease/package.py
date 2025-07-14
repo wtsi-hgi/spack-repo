@@ -12,11 +12,10 @@ class RDrugvsdisease(RPackage):
 	This package generates ranked lists of differential gene expression for either disease or drug profiles. Input data can be downloaded from Array Express or GEO, or from local CEL files. Ranked lists of differential expression and associated p-values are calculated using Limma. Enrichment scores (Subramanian et al. PNAS 2005) are calculated to a reference set of default drug or disease profiles, or a set of custom data supplied by the user. Network visualisation of significant scores are output in Cytoscape format.
 	"""
 	
-	bioc = "DrugVsDisease" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DrugVsDisease_2.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DrugVsDisease/DrugVsDisease_2.44.0.tar.gz"]
+	bioc = "DrugVsDisease"
 
-	version("2.50.0", tag="RELEASE_3_21")
-	version("2.44.0", sha256="59a9037358682f38a49c0ec00978607deb6016d9b274bccf9c01efbe4a4e31bd")
+	version("2.50.0", commit="94526b8e896e3e198f6d073cb1e25cc3a527ba73")
+	version("2.44.0", commit="65afd5434824c50fba71efe20be18eba40324140")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

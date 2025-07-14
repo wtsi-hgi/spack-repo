@@ -13,11 +13,10 @@ class RGenomicdatacommons(RPackage):
 	"""
 	
 	homepage = "https://bioconductor.org/packages/GenomicDataCommons"
-	bioc = "GenomicDataCommons" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicDataCommons_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicDataCommons/GenomicDataCommons_1.26.0.tar.gz"]
+	bioc = "GenomicDataCommons"
 
-	version("1.32.1", tag="RELEASE_3_21")
-	version("1.26.0", sha256="bc54fdafd609f40a2b2cd598e332b2611d377b4c3d1aa20c345bc1f9199bd1c6")
+	version("1.32.1", commit="64b24d0a74bcd3e25d4cba194817d113829d7faf")
+	version("1.26.0", commit="c8ad9dd930077ed749e1b8c5bb1ee57d2718b069")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

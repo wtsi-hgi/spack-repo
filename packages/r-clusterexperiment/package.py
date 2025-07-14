@@ -12,11 +12,10 @@ class RClusterexperiment(RPackage):
 	Provides functionality for running and comparing many different clusterings of single-cell sequencing data or other large mRNA Expression data sets.
 	"""
 	
-	bioc = "clusterExperiment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clusterExperiment_2.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clusterExperiment/clusterExperiment_2.22.0.tar.gz"]
+	bioc = "clusterExperiment"
 
-	version("2.28.1", tag="RELEASE_3_21")
-	version("2.22.0", sha256="04c2d47113872ce2d325cd1e187e7ca2d011c88b8a4346b020a396736fcbdde2")
+	version("2.28.1", commit="91be25744cac23901a44d366c80bdd5bf6bc01ef")
+	version("2.22.0", commit="e99c78da8083686928feffe6a2a2e5e4dfecc5cf")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

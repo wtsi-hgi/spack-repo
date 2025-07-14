@@ -12,11 +12,10 @@ class RMotifstack(RPackage):
 	The motifStack package is designed for graphic representation of multiple motifs with different similarity scores. It works with both DNA/RNA sequence motif and amino acid sequence motif. In addition, it provides the flexibility for users to customize the graphic parameters such as the font type and symbol colors.
 	"""
 	
-	bioc = "motifStack" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/motifStack_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/motifStack/motifStack_1.46.0.tar.gz"]
+	bioc = "motifStack"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="51f45a9cc140a4b0f04d967b3024a72515f9c605a0ffa4552acd45ed27c71582")
+	version("1.52.0", commit="6cf9408c491d1083704f7f249ae6fa2ef2f2a7fb")
+	version("1.46.0", commit="80200b0fabeb62db10ea20ea167d8ad2a53ef4db")
 
 	depends_on("r@2.15.1:", type=("build", "run"))
 	depends_on("r-ade4", type=("build", "run"))

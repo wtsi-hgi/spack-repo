@@ -12,11 +12,10 @@ class RProstatecancerstockholm(RPackage):
 	A Bioconductor data package for the Stockholm dataset
 	"""
 	
-	bioc = "prostateCancerStockholm" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/prostateCancerStockholm_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/prostateCancerStockholm/prostateCancerStockholm_1.30.0.tar.gz"]
+	bioc = "prostateCancerStockholm"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="49250bdbe02e2c9bd5fcd78290719da3207fdd57512ae8bccc4cf29c57e8b3a5")
+	version("1.36.0", commit="c6c3cd54c8a633d332a15665d12cc91ec7337309")
+	version("1.30.0", commit="ab4142f874cacfb155d9f63a4cd9a56f3514f893")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r@3.3:", type=("build", "run"))

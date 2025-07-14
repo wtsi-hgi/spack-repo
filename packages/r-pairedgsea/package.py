@@ -13,11 +13,10 @@ class RPairedgsea(RPackage):
 	"""
 	
 	homepage = "https://github.com/shdam/pairedGSEA"
-	bioc = "pairedGSEA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pairedGSEA_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pairedGSEA/pairedGSEA_1.2.0.tar.gz"]
+	bioc = "pairedGSEA"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="bead1ecc8d1cc2f4e370ec6062bc0a873a5b2cce3818937c5c6a1bb7e02b97d1")
+	version("1.8.0", commit="4931001eac2f31a47f92b77ec92e2f2c3fbd2cd6")
+	version("1.2.0", commit="f15ecbdb550bfba6b6e4d9565459b89f1c2b6ffe")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-deseq2", type=("build", "run"))

@@ -13,11 +13,10 @@ class RGgpa(RPackage):
 	"""
 	
 	homepage = "https://github.com/dongjunchung/GGPA/"
-	bioc = "GGPA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GGPA_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GGPA/GGPA_1.14.0.tar.gz"]
+	bioc = "GGPA"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="b903872658e75e79aabe41cc7a3047c165762ad9e2d894fc88a1ee84f1eaab23")
+	version("1.20.0", commit="1a5d999ff9495d07240954bd3f5602d4e4fa45d7")
+	version("1.14.0", commit="c28c9830663d30fad285fafde827d73dffb1515e")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggally", type=("build", "run"))

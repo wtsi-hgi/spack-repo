@@ -13,11 +13,10 @@ class RIseehex(RPackage):
 	"""
 	
 	homepage = "https://github.com/iSEE/iSEEhex"
-	bioc = "iSEEhex" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEEhex_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEEhex/iSEEhex_1.4.0.tar.gz"]
+	bioc = "iSEEhex"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="f9daf3c4ecd7cf278c40a8eaf81548d3b33f17d5c8a6699570bce6949d5732bb")
+	version("1.10.0", commit="4458daf04c5af05515eb8ecac9a7030fd25f1455")
+	version("1.4.0", commit="314bd5f24016a0d24cdf329943a5b82ab19f8cf1")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-isee", type=("build", "run"))

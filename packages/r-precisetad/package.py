@@ -13,11 +13,10 @@ class RPrecisetad(RPackage):
 	"""
 	
 	homepage = "https://github.com/dozmorovlab/preciseTAD"
-	bioc = "preciseTAD" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/preciseTAD_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/preciseTAD/preciseTAD_1.12.0.tar.gz"]
+	bioc = "preciseTAD"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="7aa060c26c715e0b5f4767c6f92dbb3fab7c50c9ae036dd1c1113e9e4a0fc7ed")
+	version("1.18.0", commit="1ff553cd858851980a4a05198ea08ddc7d42ebd4")
+	version("1.12.0", commit="a64ffb7e114677d9be5a9d331cddcc792e3f1d06")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

@@ -13,11 +13,10 @@ class RGenomicstate(RPackage):
 	"""
 	
 	homepage = "https://github.com/LieberInstitute/GenomicState"
-	bioc = "GenomicState" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/GenomicState_0.99.15.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/GenomicState/GenomicState_0.99.15.tar.gz"]
+	bioc = "GenomicState"
 
-	version("0.99.16", tag="RELEASE_3_21")
-	version("0.99.15", sha256="30d043091a1275290fa712865566824dd6cb4b78faac222963a265cf8d1dffe4")
+	version("0.99.16", commit="9682b17d2cd14d8603830c189d02cde17c62c5a0")
+	version("0.99.15", commit="e13845af3046a6442c538d098659904f6b54d897")
 
 	depends_on("r-annotationhub", type=("build", "run"))
 	depends_on("r-genomicfeatures", type=("build", "run"))

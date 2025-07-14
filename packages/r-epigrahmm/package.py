@@ -12,11 +12,10 @@ class REpigrahmm(RPackage):
 	epigraHMM provides a set of tools for the analysis of epigenomic data based on hidden Markov Models. It contains two separate peak callers, one for consensus peaks from biological or technical replicates, and one for differential peaks from multi-replicate multi-condition experiments. In differential peak calling, epigraHMM provides window-specific posterior probabilities associated with every possible combinatorial pattern of read enrichment across conditions.
 	"""
 	
-	bioc = "epigraHMM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epigraHMM_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epigraHMM/epigraHMM_1.10.0.tar.gz"]
+	bioc = "epigraHMM"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="36f7bdc1714747c0e94910417250cc1e68851b0a7336ae2fdd354c058f83f774")
+	version("1.16.0", commit="dfdf56304c08cf2427cb0d3d20c4b1ef45a86b43")
+	version("1.10.0", commit="810c6f90776e0128adb53996fb55ca11560a2d78")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -22,9 +22,8 @@ class RReportingtools(RPackage):
 	http:// research-pub.gene.com/ReportingTools."""
 
 	bioc = "ReportingTools"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ReportingTools_2.42.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ReportingTools/ReportingTools_2.42.3.tar.gz"]
-	version("2.48.0", tag="RELEASE_3_21")
-	version("2.42.3", sha256="e8c0d86a2570add93957ed38a81486a0a8f4f9fa4df9c668765636a95bae3b81")
+	version("2.48.0", commit="7df9654792b54563dabb601ac533839ed07ab80e")
+	version("2.42.3", commit="fcaebd42a579f1303c73ca0e994afeec3b623db8")
 	version("2.40.0", commit="808af36aa9756be8c907a8669726c90dcd02c73c")
 	version("2.38.0", commit="5c4971eebbaf3577ef20b74bf36c2db4e91561cc")
 	version("2.36.0", commit="34122d4bde5ce43415f63f2e39e3a088c55282cc")

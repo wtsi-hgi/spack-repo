@@ -12,11 +12,10 @@ class RApeglm(RPackage):
 	apeglm provides Bayesian shrinkage estimators for effect sizes for a variety of GLM models, using approximation of the posterior for individual coefficients.
 	"""
 	
-	bioc = "apeglm" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/apeglm_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/apeglm/apeglm_1.24.0.tar.gz"]
+	bioc = "apeglm"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="a4ff49d510b9021328c9f56bfbd3af55905c8a2c53ccdaf3986ef004ebf74932")
+	version("1.30.0", commit="0062b09ff3a9946b919b7935869b161308fb701b")
+	version("1.24.0", commit="b6b76e653ae59a54c59f328ee25709286cb83ab5")
 
 	depends_on("r-emdbook", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

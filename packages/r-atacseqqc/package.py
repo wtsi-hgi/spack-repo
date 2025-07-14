@@ -12,11 +12,10 @@ class RAtacseqqc(RPackage):
 	ATAC-seq, an assay for Transposase-Accessible Chromatin using sequencing, is a rapid and sensitive method for chromatin accessibility analysis. It was developed as an alternative method to MNase-seq, FAIRE-seq and DNAse-seq. Comparing to the other methods, ATAC-seq requires less amount of the biological samples and time to process. In the process of analyzing several ATAC-seq dataset produced in our labs, we learned some of the unique aspects of the quality assessment for ATAC-seq data.To help users to quickly assess whether their ATAC-seq experiment is successful, we developed ATACseqQC package partially following the guideline published in Nature Method 2013 (Greenleaf et al.), including diagnostic plot of fragment size distribution, proportion of mitochondria reads, nucleosome positioning pattern, and CTCF or other Transcript Factor footprints.
 	"""
 	
-	bioc = "ATACseqQC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ATACseqQC_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ATACseqQC/ATACseqQC_1.26.0.tar.gz"]
+	bioc = "ATACseqQC"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="428466a20404dd5563eb37ecc527533e74c63cf170c067d52ed05bece1cca3ac")
+	version("1.32.0", commit="87b9b5129f308b58df33502ea4b3e1541bf2a7fb")
+	version("1.26.0", commit="415dbcbf18b7e28e4d6dc4913a4446877600f0db")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

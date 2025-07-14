@@ -13,11 +13,10 @@ class RReactomegsaData(RPackage):
 	"""
 	
 	homepage = "https://github.com/reactome/ReactomeGSA.data/issues"
-	bioc = "ReactomeGSA.data" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ReactomeGSA.data_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ReactomeGSA.data/ReactomeGSA.data_1.16.1.tar.gz"]
+	bioc = "ReactomeGSA.data"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.1", sha256="23aef32a3c97e44dcf88463efec0255e341ffe655f5238ccdee6bf452dd4c4a2")
+	version("1.22.0", commit="54a560d6532f0f9b28b64cea229a805d3a4ae350")
+	version("1.16.1", commit="56f5b0b4479059163fd04005302f2bbb2ada9b9b")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

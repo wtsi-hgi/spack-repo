@@ -12,11 +12,10 @@ class RNorce(RPackage):
 	While some non-coding RNAs (ncRNAs) are assigned critical regulatory roles, most remain functionally uncharacterized. This presents a challenge whenever an interesting set of ncRNAs needs to be analyzed in a functional context. Transcripts located close-by on the genome are often regulated together. This genomic proximity on the sequence can hint to a functional association. We present a tool, NoRCE, that performs cis enrichment analysis for a given set of ncRNAs. Enrichment is carried out using the functional annotations of the coding genes located proximal to the input ncRNAs. Other biologically relevant information such as topologically associating domain (TAD) boundaries, co-expression patterns, and miRNA target prediction information can be incorporated to conduct a richer enrichment analysis. To this end, NoRCE includes several relevant datasets as part of its data repository, including cell-line specific TAD boundaries, functional gene sets, and expression data for coding & ncRNAs specific to cancer. Additionally, the users can utilize custom data files in their investigation. Enrichment results can be retrieved in a tabular format or visualized in several different ways. NoRCE is currently available for the following species: human, mouse, rat, zebrafish, fruit fly, worm, and yeast.
 	"""
 	
-	bioc = "NoRCE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NoRCE_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NoRCE/NoRCE_1.14.0.tar.gz"]
+	bioc = "NoRCE"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="fb8700d13e31aa1dc8aea452a9d0b056cfa1ca3008862aa23e011b616bad41ac")
+	version("1.20.0", commit="1384c443a7c90b87fd002a0d003aab0c6f00ed30")
+	version("1.14.0", commit="3c4a8293535aabf461e9bf5c58ea093658340afc")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-keggrest", type=("build", "run"))

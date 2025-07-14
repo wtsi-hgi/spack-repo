@@ -12,11 +12,10 @@ class RGdcrnatools(RPackage):
 	This is an easy-to-use package for downloading, organizing, and integrative analyzing RNA expression data in GDC with an emphasis on deciphering the lncRNA-mRNA related ceRNA regulatory network in cancer. Three databases of lncRNA-miRNA interactions including spongeScan, starBase, and miRcode, as well as three databases of mRNA-miRNA interactions including miRTarBase, starBase, and miRcode are incorporated into the package for ceRNAs network construction. limma, edgeR, and DESeq2 can be used to identify differentially expressed genes/miRNAs. Functional enrichment analyses including GO, KEGG, and DO can be performed based on the clusterProfiler and DO packages. Both univariate CoxPH and KM survival analyses of multiple genes can be implemented in the package. Besides some routine visualization functions such as volcano plot, bar plot, and KM plot, a few simply shiny apps are developed to facilitate visualization of results on a local webpage.
 	"""
 	
-	bioc = "GDCRNATools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GDCRNATools_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GDCRNATools/GDCRNATools_1.22.0.tar.gz"]
+	bioc = "GDCRNATools"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="3dfdaee70c37d0689bf8a96d5f71314bea84db741e3d05ca1c85baf9e0c028b5")
+	version("1.28.0", commit="dd6735490b69e16d2fddd8716b2e4ec98c73b873")
+	version("1.22.0", commit="6d2fd313aa616f150fad4237999f498174546efe")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

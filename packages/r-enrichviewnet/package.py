@@ -13,11 +13,10 @@ class REnrichviewnet(RPackage):
 	"""
 	
 	homepage = "https://github.com/adeschen/enrichViewNet"
-	bioc = "enrichViewNet" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/enrichViewNet_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/enrichViewNet/enrichViewNet_1.0.0.tar.gz"]
+	bioc = "enrichViewNet"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="9b7bdd6591da9e94251ed4599287814b53ccae5eeace8c5fd689e9818160e510")
+	version("1.6.0", commit="83a58886d62e05b25da3f92e9f54c6c2d00fe35c")
+	version("1.0.0", commit="a8f791e8614e2ff0e0be2d8bb2b42bc8acaa31b7")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-gprofiler2", type=("build", "run"))

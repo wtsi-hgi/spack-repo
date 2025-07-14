@@ -13,11 +13,10 @@ class RApl(RPackage):
 	"""
 	
 	homepage = "https://vingronlab.github.io/APL/"
-	bioc = "APL" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/APL_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/APL/APL_1.6.1.tar.gz"]
+	bioc = "APL"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.1", sha256="11ad576a0fedef7ef8352d0a2998879e7b8b99a97cd18d28f2f1e98d5915b03c")
+	version("1.12.0", commit="15423f6254a470dafdceba84f9e594541d8540bf")
+	version("1.6.1", commit="56ef8fbd54c7a63f167fb04a2ac465d40d1f9fb1")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-reticulate", type=("build", "run"))

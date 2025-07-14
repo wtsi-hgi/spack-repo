@@ -12,11 +12,10 @@ class RPvca(RPackage):
 	This package contains the function to assess the batch sourcs by fitting all "sources" as random effects including two-way interaction terms in the Mixed Model(depends on lme4 package) to selected principal components, which were obtained from the original data correlation matrix. This package accompanies the book "Batch Effects and Noise in Microarray Experiements, chapter 12.
 	"""
 	
-	bioc = "pvca" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pvca_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pvca/pvca_1.42.0.tar.gz"]
+	bioc = "pvca"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="6cf37e1570c5885f2e9980a8187f00ad5ecba66c94fea60850392dbcb0474d50")
+	version("1.48.0", commit="b40675bddc432a4e68b70e6f763cb917a05a6c08")
+	version("1.42.0", commit="d732833cfa2f850e9c6f3bf1fb21f2e472b93e4e")
 
 	depends_on("r@2.15.1:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

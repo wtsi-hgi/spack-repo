@@ -12,10 +12,9 @@ class RFactdesign(RPackage):
 	This package provides a set of tools for analyzing data from a factorial designed microarray experiment, or any microarray experiment for which a linear model is appropriate. The functions can be used to evaluate tests of contrast of biological interest and perform single outlier detection.
 	"""
 	
-	bioc = "factDesign" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/factDesign_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/factDesign/factDesign_1.78.0.tar.gz"]
+	bioc = "factDesign"
 
-	version("1.84.0", tag="RELEASE_3_21")
-	version("1.78.0", sha256="b0f983bb390b720ac4df18dbd02db9d84cc7d2e2f00a47aa9c722964b7d3d25a")
+	version("1.84.0", commit="0026802a444e74858c262c527f4cf8626e159242")
+	version("1.78.0", commit="ca661fab167781d4cfc3c62a89bbb781e605290a")
 
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

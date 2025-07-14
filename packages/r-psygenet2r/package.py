@@ -12,10 +12,9 @@ class RPsygenet2r(RPackage):
 	Package to retrieve data from PsyGeNET database (www.psygenet.org) and to perform comorbidity studies with PsyGeNET's and user's data.
 	"""
 	
-	bioc = "psygenet2r" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/psygenet2r_1.34.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/psygenet2r/psygenet2r_1.34.1.tar.gz"]
+	bioc = "psygenet2r"
 
-	version("1.34.1", sha256="85aed0f1e77da2fc7ba3ef62a07e22605dbc7dce90398a36a009b96d8efc1223")
+	version("1.34.1", commit="1dce02c38d521200ad46bda8f8c5441c9e9f00f9")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))

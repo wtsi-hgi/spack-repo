@@ -13,11 +13,10 @@ class RHighthroughputassays(RPackage):
 	"""
 	
 	homepage = "https://www.bioconductor.org/help/workflows/highthroughputassays/"
-	bioc = "highthroughputassays" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/highthroughputassays_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/highthroughputassays/highthroughputassays_1.26.0.tar.gz"]
+	bioc = "highthroughputassays"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="0544bce520ea1426eed813fc3db81fb7a047688864347c926389445c90de4fce")
+	version("1.32.0", commit="8ac126e68f7ac61bc5cb022ebd30d3d9cc88a2a0")
+	version("1.26.0", commit="ad10d5333d77e4631f6bb2154abc06409a4c43f4")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

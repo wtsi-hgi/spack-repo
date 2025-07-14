@@ -13,11 +13,10 @@ class RIfaa(RPackage):
 	"""
 	
 	homepage = "https://pubmed.ncbi.nlm.nih.gov/35241863/"
-	bioc = "IFAA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IFAA_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IFAA/IFAA_1.4.0.tar.gz"]
+	bioc = "IFAA"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="5d387bb1af086bd724a6765140e618d70d1d9ed82ad73a1a4d93dd4f42430724")
+	version("1.10.0", commit="3d93d6ff8cc0b7d4f445bd524a0d19b7367ab680")
+	version("1.4.0", commit="ca5c2f7c8cc635ce07642f612b5da16228a8643a")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-mathjaxr", type=("build", "run"))

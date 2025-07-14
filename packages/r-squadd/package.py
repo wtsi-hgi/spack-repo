@@ -13,10 +13,9 @@ class RSquadd(RPackage):
 	"""
 	
 	homepage = "http://www.unil.ch/dbmv/page21142_en.html"
-	bioc = "SQUADD" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SQUADD_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SQUADD/SQUADD_1.52.0.tar.gz"]
+	bioc = "SQUADD"
 
-	version("1.52.0", sha256="064abffe42d9c6ce0e64bd8e702b9d5c7a39a64793f8d7e428b351253aace76d")
+	version("1.52.0", commit="6b55f47fe9fe8c813f2eaef3cbdc0a4a7f59f64b")
 
 	depends_on("r@2.11:", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

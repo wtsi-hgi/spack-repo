@@ -13,11 +13,10 @@ class RMsd16s(RPackage):
 	"""
 	
 	homepage = "http://www.cbcb.umd.edu/research/projects/GEMS-pathogen-discovery"
-	bioc = "msd16s" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/msd16s_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/msd16s/msd16s_1.22.0.tar.gz"]
+	bioc = "msd16s"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="b321b6ae241863d8108ad24b143c8794ace2d78508b9d982c85d78fa3a5beb68")
+	version("1.28.0", commit="440836dea1234afb98d82c2116959ec6ae6ed3ef")
+	version("1.22.0", commit="437172b0e2468c872888f1cb255e2efa39ae7d87")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

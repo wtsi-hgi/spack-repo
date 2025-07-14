@@ -13,11 +13,10 @@ class RLoci2path(RPackage):
 	"""
 	
 	homepage = "https://github.com/StanleyXu/loci2path"
-	bioc = "loci2path" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/loci2path_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/loci2path/loci2path_1.22.0.tar.gz"]
+	bioc = "loci2path"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="5acddaee9d60082376282230538a27b76047ccbd3840278cfa73db6779d1a146")
+	version("1.28.0", commit="4b4e47b04eeff6328e616480a5b257f253195d07")
+	version("1.22.0", commit="903e07c3aca93d39988e9faf0b78f395607f593d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-pheatmap", type=("build", "run"))

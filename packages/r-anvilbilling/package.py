@@ -12,11 +12,10 @@ class RAnvilbilling(RPackage):
 	AnVILBilling helps monitor AnVIL-related costs in R, using queries to a BigQuery table to which costs are exported daily. Functions are defined to help categorize tasks and associated expenditures, and to visualize and explore expense profiles over time. This package will be expanded to help users estimate costs for specific task sets.
 	"""
 	
-	bioc = "AnVILBilling" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnVILBilling_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnVILBilling/AnVILBilling_1.12.0.tar.gz"]
+	bioc = "AnVILBilling"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="9a40d74703b1dc399883cd4d2e2de71e5f33c758e9989c72c0bf1ab7adc120ad")
+	version("1.18.0", commit="4852ff774f91daef2b02a180c63ff1ea5acc81d0")
+	version("1.12.0", commit="d93bfd5312ae161bd2e27fd023304944fbb3e35b")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dt", type=("build", "run"))

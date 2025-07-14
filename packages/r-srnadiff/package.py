@@ -12,11 +12,10 @@ class RSrnadiff(RPackage):
 	srnadiff is a package that finds differently expressed regions from RNA-seq data at base-resolution level without relying on existing annotation. To do so, the package implements the identify-then-annotate methodology that builds on the idea of combining two pipelines approachs differential expressed regions detection and differential expression quantification. It reads BAM files as input, and outputs a list differentially regions, together with the adjusted p-values.
 	"""
 	
-	bioc = "srnadiff" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/srnadiff_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/srnadiff/srnadiff_1.22.2.tar.gz"]
+	bioc = "srnadiff"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.2", sha256="15fd032d853044ce1879f83152750e014a6aa1b47fd969e61869288665960d1a")
+	version("1.28.0", commit="af682e0cc66f85cdd6a994cafa51f16f316064fa")
+	version("1.22.2", commit="7ddd95f7010cbf33d6f685cbac6b4a754a7dd7af")
 	version("1.22.0", md5="0125777227eab34f7839615139aacb91")
 
 	depends_on("r@3.6:", type=("build", "run"))

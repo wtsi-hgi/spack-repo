@@ -13,11 +13,10 @@ class RDoubletrouble(RPackage):
 	"""
 	
 	homepage = "https://github.com/almeidasilvaf/doubletrouble"
-	bioc = "doubletrouble" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/doubletrouble_1.2.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/doubletrouble/doubletrouble_1.2.5.tar.gz"]
+	bioc = "doubletrouble"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.5", sha256="c3cace241c65ea2577d4346f967a363defbedb661bb0cc0a07337c275296aafd")
+	version("1.8.0", commit="524ccf4e279bfa00a304f22be59ec673b56bd214")
+	version("1.2.5", commit="4004e47f036d8962dbf7df1dec6c8dcdbe8957b2")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-syntenet", type=("build", "run"))

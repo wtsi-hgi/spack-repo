@@ -12,11 +12,10 @@ class RRtcgaPancan12(RPackage):
 	Package provides clinical, expression, cnv and mutation data from Genome Cancer Browser.
 	"""
 	
-	bioc = "RTCGA.PANCAN12" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.PANCAN12_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.PANCAN12/RTCGA.PANCAN12_1.30.0.tar.gz"]
+	bioc = "RTCGA.PANCAN12"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="b4ed9beac6574fcd6976f3fcf55c2a4ae8c1128fbe0396b58aba827ad713e7c7", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.PANCAN12_1.30.0.tar.gz")
+	version("1.36.0", commit="71404f285c9281e44cae5ed25b618979bd39a41b")
+	version("1.30.0", commit="2d7a1b99e0b5a27deb14ed71d3974d776f701c85")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rtcga", type=("build", "run"))

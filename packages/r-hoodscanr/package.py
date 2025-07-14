@@ -13,11 +13,10 @@ class RHoodscanr(RPackage):
 	"""
 	
 	homepage = "https://github.com/DavisLaboratory/hoodscanR"
-	bioc = "hoodscanR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hoodscanR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hoodscanR/hoodscanR_1.0.0.tar.gz"]
+	bioc = "hoodscanR"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="cde7b3938f36850be64055e44aa6a0ca4cbfde55e517c00ff325bdefb659dfbf")
+	version("1.6.0", commit="d63c135fc26f47e59ea8945d1bee9eeb429d66b0")
+	version("1.0.0", commit="8d26dd1cdfcd187246cad5e96520858082cb226c")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-knitr", type=("build", "run"))

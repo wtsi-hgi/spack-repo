@@ -12,11 +12,10 @@ class ROscope(RPackage):
 	Oscope is a statistical pipeline developed to identifying and recovering the base cycle profiles of oscillating genes in an unsynchronized single cell RNA-seq experiment. The Oscope pipeline includes three modules: a sine model module to search for candidate oscillator pairs; a K-medoids clustering module to cluster candidate oscillators into groups; and an extended nearest insertion module to recover the base cycle order for each oscillator group.
 	"""
 	
-	bioc = "Oscope" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Oscope_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Oscope/Oscope_1.32.0.tar.gz"]
+	bioc = "Oscope"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="ae6a2354e1828e29883c48fb949d30bb045b5a74fbe3a3002a000bdc6aa222d2")
+	version("1.38.0", commit="ed0be791275937107d08d9af77d6432bc42f9a3f")
+	version("1.32.0", commit="44ec9233170da151bff7cb911a863557b8c14f16")
 
 	depends_on("r-ebseq", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))

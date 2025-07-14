@@ -13,11 +13,10 @@ class RRmagpie(RPackage):
 	"""
 	
 	homepage = "http://www.bioconductor.org/"
-	bioc = "Rmagpie" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rmagpie_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rmagpie/Rmagpie_1.58.0.tar.gz"]
+	bioc = "Rmagpie"
 
-	version("1.64.0", tag="RELEASE_3_21")
-	version("1.58.0", sha256="a2e5bd407cf26c48fa91d3569621d539a704820784dded4978655d26d690a57c")
+	version("1.64.0", commit="b01eff1c749eb7c25cd63fc45636da1998ad357f")
+	version("1.58.0", commit="c28a403c1b5a6475547b1fde9cd34c2aa5597a31")
 
 	depends_on("r@2.6.1:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RMagar(RPackage):
 	"""
 	
 	homepage = "https://github.com/MPIIComputationalEpigenetics/MAGAR"
-	bioc = "MAGAR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MAGAR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MAGAR/MAGAR_1.10.0.tar.gz"]
+	bioc = "MAGAR"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="ba32845894424388558fc9e5db7d6c199e656b79abc7ad89db7fed399f6063fa")
+	version("1.16.0", commit="4b8bf4852f1d04a54da727ac710633dfee314e86")
+	version("1.10.0", commit="b2f223aa6df854e6690bf635f85ef31e45dd4ef2")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-hdf5array", type=("build", "run"))

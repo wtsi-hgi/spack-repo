@@ -13,11 +13,10 @@ class RStructstrings(RPackage):
 	"""
 	
 	homepage = "https://github.com/FelixErnst/Structstrings"
-	bioc = "Structstrings" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Structstrings_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Structstrings/Structstrings_1.18.0.tar.gz"]
+	bioc = "Structstrings"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="b4997ef93e6388c26246b9f9c79f8cde834f467f5092ef7cb21c8c26219c4182")
+	version("1.24.0", commit="3cc036b7566f01e4000f742913738500e816d57c")
+	version("1.18.0", commit="5b4ce8db0a0237c586fbb2d9562ec16787c48465")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

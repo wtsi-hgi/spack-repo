@@ -13,11 +13,10 @@ class RFamagg(RPackage):
 	"""
 	
 	homepage = "https://github.com/EuracBiomedicalResearch/FamAgg"
-	bioc = "FamAgg" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FamAgg_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FamAgg/FamAgg_1.30.0.tar.gz"]
+	bioc = "FamAgg"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="1d4977c26fbcf5a06603fcabee605cd8265449328128590667f0c7cde3a77082")
+	version("1.36.0", commit="070e44e32f467c9444761244d11631256d8d5f2a")
+	version("1.30.0", commit="0cbf20121036189d691f581ce7719cc6aed0745c")
 
 	depends_on("r-kinship2", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

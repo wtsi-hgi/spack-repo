@@ -14,9 +14,8 @@ class RGostats(RPackage):
 	calculations."""
 
 	bioc = "GOstats"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOstats_2.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOstats/GOstats_2.68.0.tar.gz"]
-	version("2.74.0", tag="RELEASE_3_21")
-	version("2.68.0", sha256="da81b185920dec671a2e8491f735e4f1e9a4287042f105cdc54311f782d620ec")
+	version("2.74.0", commit="9a3b6f98f26966e7badb4b924e9cb82c021b2cdc")
+	version("2.68.0", commit="c8a775a3021090f92bbbdcc5fe12c7adf22a50d6")
 	version("2.66.0", commit="dbfc8a7646b53db53b0c329e0e1c77c0f202f08f")
 	version("2.64.0", commit="62813253249dc02d2ddaafa7f0249e69d6f2c6b0")
 	version("2.62.0", commit="217db032272010ebb8fe3af4647153428f42cd47")

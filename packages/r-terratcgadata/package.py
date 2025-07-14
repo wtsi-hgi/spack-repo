@@ -13,11 +13,10 @@ class RTerratcgadata(RPackage):
 	"""
 	
 	homepage = "https://github.com/waldronlab/terraTCGAdata"
-	bioc = "terraTCGAdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/terraTCGAdata_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/terraTCGAdata/terraTCGAdata_1.6.0.tar.gz"]
+	bioc = "terraTCGAdata"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="0ea975f5dc017c484aacfaad03a22a155989b2eff441b76acab9367654b05731")
+	version("1.12.0", commit="1b3a559ecbe676429b6b5f060fe6b7048d3b439a")
+	version("1.6.0", commit="4cdd117f578777521d196a66e5494fd31891b308")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-anvil", type=("build", "run"))

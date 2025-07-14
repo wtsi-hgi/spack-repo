@@ -12,11 +12,10 @@ class RSwitchbox(RPackage):
 	The package offer different classifiers based on comparisons of pair of features (TSP), using various decision rules (e.g., majority wins principle).
 	"""
 	
-	bioc = "switchBox" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/switchBox_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/switchBox/switchBox_1.38.0.tar.gz"]
+	bioc = "switchBox"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="a576901b33f71ff02647de872a8e57fc1a58c82985742e20862a811a17cb6e37")
+	version("1.44.0", commit="87668075d972759123db3fc2f5b9f9aaa5e79120")
+	version("1.38.0", commit="f395d2ed8bdfaa603b5581b0b7569f1f973ff954")
 
 	depends_on("r@2.13.1:", type=("build", "run"))
 	depends_on("r-proc", type=("build", "run"))

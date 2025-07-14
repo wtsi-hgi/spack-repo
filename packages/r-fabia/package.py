@@ -13,11 +13,10 @@ class RFabia(RPackage):
 	"""
 	
 	homepage = "http://www.bioinf.jku.at/software/fabia/fabia.html"
-	bioc = "fabia" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fabia_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fabia/fabia_2.48.0.tar.gz"]
+	bioc = "fabia"
 
-	version("2.54.0", tag="RELEASE_3_21")
-	version("2.48.0", sha256="896c2387ef72fadc417a78eb54e814b48b1642876188f72001d3e47e686fc4c4")
+	version("2.54.0", commit="14feaf1b2ca8f83bf831107fe3074d3fa1ab0caa")
+	version("2.48.0", commit="162c211b363a3283667353d2614ecaf2db91f859")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

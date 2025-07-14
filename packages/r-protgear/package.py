@@ -13,11 +13,10 @@ class RProtgear(RPackage):
 	"""
 	
 	homepage = "https://github.com/Keniajin/protGear"
-	bioc = "protGear" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/protGear_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/protGear/protGear_1.6.0.tar.gz"]
+	bioc = "protGear"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="bb5b47b1b5d12faba813f71e962a7e9fe80ae6807aa7dca8cceacbbec5681565")
+	version("1.12.0", commit="9d22351f33c46abdafe8cabe72ae93310b4701d3")
+	version("1.6.0", commit="b98ee369b68cde50489749e6fdb4319f4c323900")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-dplyr@0.8:", type=("build", "run"))

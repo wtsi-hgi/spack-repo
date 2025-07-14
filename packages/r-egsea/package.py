@@ -12,11 +12,10 @@ class REgsea(RPackage):
 	This package implements the Ensemble of Gene Set Enrichment Analyses (EGSEA) method for gene set testing. EGSEA algorithm utilizes the analysis results of twelve prominent GSE algorithms in the literature to calculate collective significance scores for each gene set.
 	"""
 	
-	bioc = "EGSEA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EGSEA_1.30.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EGSEA/EGSEA_1.30.1.tar.gz"]
+	bioc = "EGSEA"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.1", sha256="4bcdcd55c151e995bbfbcc4ec9bdd1cbcbe4c8111edeeb8fa468e4e57a2872f3")
+	version("1.36.0", commit="824df9e6f36f6b1f454dae290041422168fa496d")
+	version("1.30.1", commit="8e57e0385006a5a8314e66c1805e234f9e1b5115")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

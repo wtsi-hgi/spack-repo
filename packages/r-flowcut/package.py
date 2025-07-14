@@ -12,11 +12,10 @@ class RFlowcut(RPackage):
 	Common techinical complications such as clogging can result in spurious events and fluorescence intensity shifting, flowCut is designed to detect and remove technical artifacts from your data by removing segments that show statistical differences from other segments.
 	"""
 	
-	bioc = "flowCut" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowCut_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowCut/flowCut_1.12.0.tar.gz"]
+	bioc = "flowCut"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="c05895442138a2df665911c06bb562bc797076aabf6bad402238434f72ccc022")
+	version("1.18.0", commit="3bc7f4953500925c158e8810834a7bed18c11368")
+	version("1.12.0", commit="6c7d2a70c14174901ea7c589832fda4e838b306a")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

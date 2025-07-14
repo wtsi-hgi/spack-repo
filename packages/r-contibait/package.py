@@ -12,10 +12,9 @@ class RContibait(RPackage):
 	Using strand inheritance data from multiple single cells from the organism whose genome is to be assembled, contiBAIT can cluster unbridged contigs together into putative chromosomes, and order the contigs within those chromosomes.
 	"""
 	
-	bioc = "contiBAIT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/contiBAIT_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/contiBAIT/contiBAIT_1.30.0.tar.gz"]
+	bioc = "contiBAIT"
 
-	version("1.30.0", sha256="13c01ca0868c4465b3cbc26de283031a70772fad7d8cf244a417bc5541775eab")
+	version("1.30.0", commit="4d4e432f17f219835594cd3b4f498fcf9b1004d2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-bh", type=("build", "run"))

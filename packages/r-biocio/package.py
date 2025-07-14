@@ -21,13 +21,12 @@ class RBiocio(RPackage):
 	methods based on classes representing file types, e.g., `LoomFile()`."""
 
 	bioc = "BiocIO"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocIO_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocIO/BiocIO_1.12.0.tar.gz"]
 
-	version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", commit="87c7815833b264a443f86d3d226455b65a37f8f2")
 	version("1.8.0", commit="4a719fa41e014b7b948f7b245e581ede6a04eda1")
 	version("1.6.0", commit="60c8aa1a961e43bf0ee5d563a6d9fcec84f7f8f8")
 	version("1.4.0", commit="c335932526a38c75dbfa4970c1d90b8a21466d37")
-	version("1.12.0", sha256="77c1dff3b789313ea5b4c9d7b171cde11cacdfc958ce63b60f4f09b9ed94c22e")
+	version("1.12.0", commit="893a6ebe50e781dbb1077ad7b4fefa660be542f1")
 	version("1.10.0", commit="1368ff1a7ddbb62515a87a88d7ec39981de557d5")
 
 	depends_on("r@4.3:", type=("build", "run"), when="@1.10:")

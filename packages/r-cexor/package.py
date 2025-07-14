@@ -12,11 +12,10 @@ class RCexor(RPackage):
 	Strand specific peak-pair calling in ChIP-exo replicates. The cumulative Skellam distribution function is used to detect significant normalised count differences of opposed sign at each DNA strand (peak-pairs). Then, irreproducible discovery rate for overlapping peak-pairs across biological replicates is computed.
 	"""
 	
-	bioc = "CexoR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CexoR_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CexoR/CexoR_1.40.0.tar.gz"]
+	bioc = "CexoR"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="c464cda22f9c2d96a0069ce77498162ccf83bc75dda7360b45c0ccfaea26cb65")
+	version("1.46.0", commit="044e130f5c10fe9ba98612bdf0ddf85b44a256a5")
+	version("1.40.0", commit="0eb2404b204f223947f48347d011bff8f858f618")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

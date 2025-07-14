@@ -12,11 +12,10 @@ class RToxicogx(RPackage):
 	Contains a set of functions to perform large-scale analysis of toxicogenomic data, providing a standardized data structure to hold information relevant to annotation, visualization and statistical analysis of toxicogenomic data.
 	"""
 	
-	bioc = "ToxicoGx" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ToxicoGx_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ToxicoGx/ToxicoGx_2.6.0.tar.gz"]
+	bioc = "ToxicoGx"
 
-	version("2.12.0", tag="RELEASE_3_21")
-	version("2.6.0", sha256="b88afaaa37cd354ed2901604c7e6105fd14324f1c0beda61d8a8d2a0a0708f33")
+	version("2.12.0", commit="0f379b8abe2938e983638e1c9f131ffcb6e5ca29")
+	version("2.6.0", commit="b6bd52096eb2f6b09fefa052d3972e75e8bf8e83")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-coregx", type=("build", "run"))

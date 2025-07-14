@@ -13,11 +13,10 @@ class RTanggle(RPackage):
 	"""
 	
 	homepage = "https://klausvigo.github.io/tanggle"
-	bioc = "tanggle" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tanggle_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tanggle/tanggle_1.8.0.tar.gz"]
+	bioc = "tanggle"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="10c0eaec8f0c0740189c697521297d3c99144519e45aef11fdfd56c86df1c53d")
+	version("1.14.0", commit="7820da5ed0a23d563df51bcf728a6495b9e6e0cb")
+	version("1.8.0", commit="29150b0f95c11cdac460196ca1dff47e55db218c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2@2.2:", type=("build", "run"))

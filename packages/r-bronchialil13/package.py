@@ -13,11 +13,10 @@ class RBronchialil13(RPackage):
 	"""
 	
 	homepage = "http://www.biostat.harvard.edu/~carey"
-	bioc = "bronchialIL13" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/bronchialIL13_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/bronchialIL13/bronchialIL13_1.40.0.tar.gz"]
+	bioc = "bronchialIL13"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="fc033e083b118d852d44340e8e3b66d109d2e34a252225056bea5f0b57480784", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/bronchialIL13_1.40.0.tar.gz")
+	version("1.46.0", commit="effb99266281d488ab9a018339ece5e5b8b01532")
+	version("1.40.0", commit="7499106f124a6eba725f3382da7aea0a0f0f2d7b")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-affy@1.23.4:", type=("build", "run"))

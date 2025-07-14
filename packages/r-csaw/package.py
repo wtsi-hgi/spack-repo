@@ -12,11 +12,10 @@ class RCsaw(RPackage):
 	Detection of differentially bound regions in ChIP-seq data with sliding windows, with methods for normalization and proper FDR control.
 	"""
 	
-	bioc = "csaw" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/csaw_1.36.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/csaw/csaw_1.36.1.tar.gz"]
+	bioc = "csaw"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.1", sha256="ff64fb074c81f05bb105d9d3bdb95e6f8963e881ba129ae99f074da3ea5d4a0b")
+	version("1.42.0", commit="5e3afe7c670bd02f7e7e2e50b14baa59d6c90175")
+	version("1.36.1", commit="25b51baa26f9c935d97ba4b48055e75c55d191f7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

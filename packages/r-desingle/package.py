@@ -13,11 +13,10 @@ class RDesingle(RPackage):
 	"""
 	
 	homepage = "https://miaozhun.github.io/DEsingle/"
-	bioc = "DEsingle" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEsingle_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEsingle/DEsingle_1.22.0.tar.gz"]
+	bioc = "DEsingle"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="69716feaa2c344a6325b148f3648609fcf58e8e3e87c11a7cb27ff6a017fca2d")
+	version("1.28.0", commit="6a268cdd8c5da1ee2a0dbcceda8698b3d6168c65")
+	version("1.22.0", commit="dabeba9eaacc691d0e887c63c1173a37e3616a6b")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-matrix@1.2.14:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RRnits(RPackage):
 	R/Bioconductor package for normalization, curve registration and inference in time course gene expression data.
 	"""
 	
-	bioc = "Rnits" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rnits_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rnits/Rnits_1.36.0.tar.gz"]
+	bioc = "Rnits"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="97caa20725437fd6ea545de91967347c08a8459a4c07b3a87e49a0a34310b924")
+	version("1.42.0", commit="cdb1317bc9d3450bbc576f491462a70b239d0c2a")
+	version("1.36.0", commit="f7e2d12c89f0e4f58f758eafecec39412028822d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

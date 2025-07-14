@@ -12,11 +12,10 @@ class RScmet(RPackage):
 	High-throughput single-cell measurements of DNA methylomes can quantify methylation heterogeneity and uncover its role in gene regulation. However, technical limitations and sparse coverage can preclude this task. scMET is a hierarchical Bayesian model which overcomes sparsity, sharing information across cells and genomic features to robustly quantify genuine biological heterogeneity. scMET can identify highly variable features that drive epigenetic heterogeneity, and perform differential methylation and variability analyses. We illustrate how scMET facilitates the characterization of epigenetically distinct cell populations and how it enables the formulation of novel hypotheses on the epigenetic regulation of gene expression.
 	"""
 	
-	bioc = "scMET" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scMET_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scMET/scMET_1.4.0.tar.gz"]
+	bioc = "scMET"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="b4908e98a14b2a3ed26b52648a5ae025711676d8d06ad30a16bbfd0cc5007f2a")
+	version("1.10.0", commit="f317648fe29286a441f00b4382cf0ea275a38aac")
+	version("1.4.0", commit="d18b5a2821e68d0666a8bafb34b1934416211b90")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rcpp@1:", type=("build", "run"))

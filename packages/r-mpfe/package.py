@@ -12,9 +12,8 @@ class RMpfe(RPackage):
 	Estimate distribution of methylation patterns from a table of counts from a bisulphite sequencing experiment given a non-conversion rate and read error rate.
 	"""
 	
-	bioc = "MPFE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MPFE_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MPFE/MPFE_1.38.0.tar.gz"]
+	bioc = "MPFE"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="b168279277c6594194eac92abae6f99bf451974fbf972e94675efb3e1e3dc823")
+	version("1.44.0", commit="f3510bf41e45e886021d1dac55bf27a02079c5c6")
+	version("1.38.0", commit="5beaae5cecd8284a4e649c18e71de7c110b291ee")
 

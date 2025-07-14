@@ -13,11 +13,10 @@ class RTidysinglecellexperiment(RPackage):
 	"""
 	
 	homepage = "https://github.com/stemangiola/tidySingleCellExperiment"
-	bioc = "tidySingleCellExperiment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tidySingleCellExperiment_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tidySingleCellExperiment/tidySingleCellExperiment_1.12.0.tar.gz"]
+	bioc = "tidySingleCellExperiment"
 
-	version("1.18.1", tag="RELEASE_3_21")
-	version("1.12.0", sha256="377790b9aad4cfcbd547af705b3fe3db6b79889b9b7c5820470d508652187f23")
+	version("1.18.1", commit="bea37c6ee1b1821704fbb6545f88a2ff7dc8811c")
+	version("1.12.0", commit="9bea2c10549aa1599bf869d08c224bc39f8a127e")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

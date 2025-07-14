@@ -12,11 +12,10 @@ class ROnassisjavalibs(RPackage):
 	A package that contains java libraries to call conceptmapper and compute semnatic similarity from R
 	"""
 	
-	bioc = "OnassisJavaLibs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/OnassisJavaLibs_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/OnassisJavaLibs/OnassisJavaLibs_1.24.0.tar.gz"]
+	bioc = "OnassisJavaLibs"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="8c78c89cf5399b9f77cce11ce007e5b3d43d32b3bbe3cd2dec81c5d08805cb7a")
+	version("1.30.0", commit="7c48cedb7b89b50203717da7c12feebff38247c4")
+	version("1.24.0", commit="6cccb777889ba5a9533a7854f3a3f76974acb5ec")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-rjava", type=("build", "run"))

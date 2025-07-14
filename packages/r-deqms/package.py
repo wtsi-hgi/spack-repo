@@ -12,11 +12,10 @@ class RDeqms(RPackage):
 	DEqMS is developped on top of Limma. However, Limma assumes same prior variance for all genes. In proteomics, the accuracy of protein abundance estimates varies by the number of peptides/PSMs quantified in both label-free and labelled data. Proteins quantification by multiple peptides or PSMs are more accurate. DEqMS package is able to estimate different prior variances for proteins quantified by different number of PSMs/peptides, therefore acchieving better accuracy. The package can be applied to analyze both label-free and labelled proteomics data.
 	"""
 	
-	bioc = "DEqMS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEqMS_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEqMS/DEqMS_1.20.0.tar.gz"]
+	bioc = "DEqMS"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="85cb1cef0af0933c96da01fb23e592685cba94ae4d7bd20f7c5cf652653280e4")
+	version("1.26.0", commit="a6c90e02963c354bb20219aded416cb86f015940")
+	version("1.20.0", commit="4050c406d92192ff758312c67ec7cb4ba21e1b3c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

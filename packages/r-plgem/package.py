@@ -13,11 +13,10 @@ class RPlgem(RPackage):
 	"""
 	
 	homepage = "http://www.genopolis.it"
-	bioc = "plgem" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/plgem_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/plgem/plgem_1.74.0.tar.gz"]
+	bioc = "plgem"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="efe1a7ce154f64857494fa95d8be80da6c32a0fe2533aed403b1b5dd878ab068")
+	version("1.80.0", commit="67c49dad253a33a166a08895d91f704940840cc0")
+	version("1.74.0", commit="57166e6c2c9a1f56b80bcbd1065f63824b46d08c")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

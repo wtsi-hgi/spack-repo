@@ -12,11 +12,10 @@ class RAhcytobands(RPackage):
 	Supplies AnnotationHub with CytoBand information from UCSC. There is a track for each major organism. Giemsa-stained bands are commonly used to decorate chromosomal overviews in visualizations of genomic data.
 	"""
 	
-	bioc = "AHCytoBands" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AHCytoBands_0.99.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/AHCytoBands/AHCytoBands_0.99.1.tar.gz"]
+	bioc = "AHCytoBands"
 
-	version("0.99.1", tag="RELEASE_3_21")
-	version("0.99.1", sha256="7bb5a06b5a8c0c2024f317ed0c58b048550ba9ed6cc64266c4afc03a24ec7d6b")
+	version("0.99.1", commit="821428ca2c99127167ddb9c733f571a5f21a1bf6")
+	version("0.99.1", commit="821428ca2c99127167ddb9c733f571a5f21a1bf6")
 
 	depends_on("r@3.2.2:", type=("build", "run"))
 

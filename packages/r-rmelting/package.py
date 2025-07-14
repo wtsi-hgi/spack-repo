@@ -13,11 +13,10 @@ class RRmelting(RPackage):
 	"""
 	
 	homepage = "https://github.com/aravind-j/rmelting"
-	bioc = "rmelting" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rmelting_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rmelting/rmelting_1.18.0.tar.gz"]
+	bioc = "rmelting"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="a428271d4b5efa6d575242148e6def04e472ee6d7677f95bb4c3aadf64af9191")
+	version("1.24.0", commit="f5bd86a1991f5e105f9aa82b6e22c27a29f77c0d")
+	version("1.18.0", commit="0c3fef2e03ce06eace58359f04e23e1d89040e0d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rdpack", type=("build", "run"))

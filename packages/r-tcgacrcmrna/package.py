@@ -12,11 +12,10 @@ class RTcgacrcmrna(RPackage):
 	colorectal cancer mRNA profile provided by TCGA
 	"""
 	
-	bioc = "TCGAcrcmRNA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TCGAcrcmRNA_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TCGAcrcmRNA/TCGAcrcmRNA_1.22.0.tar.gz"]
+	bioc = "TCGAcrcmRNA"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="fd9abd8c3735734b81f3f1fc504bd5d828282dc815b0601efaf59287e2058d6f")
+	version("1.28.0", commit="32c742f95a0a8841b159d2a6ac62b9d60053a0b3")
+	version("1.22.0", commit="ccf8957b01d11c73d3bbf1df41db1b4b73d0427d")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

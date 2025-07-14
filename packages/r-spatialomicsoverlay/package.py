@@ -12,11 +12,10 @@ class RSpatialomicsoverlay(RPackage):
 	Tools for NanoString Technologies GeoMx Technology. Package to easily graph on top of an OME-TIFF image. Plotting annotations can range from tissue segment to gene expression.
 	"""
 	
-	bioc = "SpatialOmicsOverlay" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpatialOmicsOverlay_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpatialOmicsOverlay/SpatialOmicsOverlay_1.2.1.tar.gz"]
+	bioc = "SpatialOmicsOverlay"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.1", sha256="67fcd1dee28fd5da866b70357eac48560a729790bceb0e2e37b1f72fc6c8bc6a")
+	version("1.8.0", commit="7b08cb2636f574c6cca04d3bdb5de98a738cc483")
+	version("1.2.1", commit="8ab7239467a210848a07c32012c3dfbd56ad7f73")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

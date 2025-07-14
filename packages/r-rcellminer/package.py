@@ -13,11 +13,10 @@ class RRcellminer(RPackage):
 	"""
 	
 	homepage = "http://discover.nci.nih.gov/cellminer/"
-	bioc = "rcellminer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rcellminer_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rcellminer/rcellminer_2.24.0.tar.gz"]
+	bioc = "rcellminer"
 
-	version("2.30.1", tag="RELEASE_3_21")
-	version("2.24.0", sha256="5c6e2b6e3c5245b0e35871a4d8a8cbea692e68f159a10e5bad47348596095dc0")
+	version("2.30.1", commit="c716b15e70f530d28147828308ffcdabaddab538")
+	version("2.24.0", commit="fb744be246235033b56b47af8e5506cf8c5b5bc2")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

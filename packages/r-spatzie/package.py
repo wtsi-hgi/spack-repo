@@ -13,11 +13,10 @@ class RSpatzie(RPackage):
 	"""
 	
 	homepage = "https://spatzie.mit.edu"
-	bioc = "spatzie" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spatzie_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spatzie/spatzie_1.8.0.tar.gz"]
+	bioc = "spatzie"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="a885695eb6d9fd7be41b8adffb204a8a54e60ecd5224c26d6bf68ba36a663edb")
+	version("1.14.0", commit="2e382731a5aa98a53521868a977e25eee6b6e4db")
+	version("1.8.0", commit="a9dbc03491a3f82d13ac787ae229b0710647334a")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

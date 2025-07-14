@@ -12,11 +12,10 @@ class RRitan(RPackage):
 	Tools for comprehensive gene set enrichment and extraction of multi-resource high confidence subnetworks. RITAN facilitates bioinformatic tasks for enabling network biology research.
 	"""
 	
-	bioc = "RITAN" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RITAN_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RITAN/RITAN_1.26.0.tar.gz"]
+	bioc = "RITAN"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="22df59c39ee107ee4037374ef92014bd197af53a2da8d046cd5540924ea26e15")
+	version("1.32.0", commit="5350c536aa36a96de7f1ef8089cc76d07ba66b4a")
+	version("1.26.0", commit="13a63fd9f0a70320adfcc33c3921b3a9a0e96da0")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-gridextra", type=("build", "run"))

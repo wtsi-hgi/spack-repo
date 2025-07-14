@@ -13,10 +13,9 @@ class RDama(RPackage):
 	"""
 	
 	homepage = "http://www.microarrays.med.uni-goettingen.de"
-	bioc = "daMA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/daMA_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/daMA/daMA_1.74.0.tar.gz"]
+	bioc = "daMA"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="668c9830927a9bb44df8f84565e9731ae6bc77aa9e04b80cee8afaa60c4473b2")
+	version("1.80.0", commit="bcf9b55eb06fd45c952b0967eb1d4fb5ad6c8182")
+	version("1.74.0", commit="9d614e80dc613978e404267f431a712f8d62897b")
 
 	depends_on("r-mass", type=("build", "run"))

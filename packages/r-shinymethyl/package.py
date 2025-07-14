@@ -13,11 +13,10 @@ class RShinymethyl(RPackage):
 	"""
 	
 	homepage = "https://github.com/Jfortin1/shinyMethyl"
-	bioc = "shinyMethyl" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/shinyMethyl_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/shinyMethyl/shinyMethyl_1.38.0.tar.gz"]
+	bioc = "shinyMethyl"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="864b844c5a5faf60e970cc63cd099ea0ef3d0598f38dabd76f7af71c700972be")
+	version("1.44.0", commit="3ae07a15045e2b1bb7198bf070e10e0836dce324")
+	version("1.38.0", commit="01d5c751c6e953ceebe7ab88b29b570722b7371a")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

@@ -12,11 +12,10 @@ class RPodcall(RPackage):
 	Reads files exported from 'QX Manager or QuantaSoft' containing amplitude values from a run of ddPCR (96 well plate) and robustly sets thresholds to determine positive droplets for each channel of each individual well. Concentration and normalized concentration in addition to other metrics is then calculated for each well. Results are returned as a table, optionally written to file, as well as optional plots (scatterplot and histogram) for both channels per well written to file. The package includes a shiny application which provides an interactive and user-friendly interface to the full functionality of PoDCall.
 	"""
 	
-	bioc = "PoDCall" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PoDCall_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PoDCall/PoDCall_1.10.1.tar.gz"]
+	bioc = "PoDCall"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.1", sha256="ed63dda461b056a25840032977c2d3986c159b9d53a30d751970fd014d58b624")
+	version("1.16.0", commit="2502146738906bc5aa2b4f17d7feba6e07e7d818")
+	version("1.10.1", commit="e26a93b0e1c73693e6b64dd10cdd870eb0a5804f")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

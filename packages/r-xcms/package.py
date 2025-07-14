@@ -13,11 +13,10 @@ class RXcms(RPackage):
 	"""
 	
 	homepage = "https://github.com/sneumann/xcms"
-	bioc = "xcms" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/xcms_4.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/xcms/xcms_4.0.2.tar.gz"]
+	bioc = "xcms"
 
-	version("4.6.3", tag="RELEASE_3_21")
-	version("4.0.2", sha256="aca11c4cb9de3cabe75e08769bdcf7d55ab76542c114b1f26800a1ab81111a9c")
+	version("4.6.3", commit="4b1f7c68c1aaf11ed54ff317098e52d78dd3f274")
+	version("4.0.2", commit="b27475738be594668e556c5e785b7d9586027e3f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biocparallel@1.8:", type=("build", "run"))

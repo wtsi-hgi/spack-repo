@@ -12,11 +12,10 @@ class RScrepertoire(RPackage):
 	scRepertoire was built to process data derived from the 10x Genomics Chromium Immune Profiling for both T-cell receptor (TCR) and immunoglobulin (Ig) enrichment workflows and subsequently interacts with the popular Seurat and SingleCellExperiment R packages. It also allows for general analysis of single-cell clonotype information without the use of expression information. The package functions as a wrapper for Startrac and powerTCR R packages.
 	"""
 	
-	bioc = "scRepertoire" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scRepertoire_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scRepertoire/scRepertoire_1.12.0.tar.gz"]
+	bioc = "scRepertoire"
 
-	version("2.4.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="818aec659cc0f055dfe1cb454667bc6223fc82e6851be4238b02d15f7643faf1")
+	version("2.4.0", commit="8c2052ca04d175064600d2330b8a99cc3a5cca85")
+	version("1.12.0", commit="3dfdcab852bc8b545858d526a9ff84db9a2e8f4b")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r@4:", type=("build", "run"))

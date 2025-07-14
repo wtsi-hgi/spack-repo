@@ -13,11 +13,10 @@ class RBeclear(RPackage):
 	"""
 	
 	homepage = "https://github.com/uds-helms/BEclear"
-	bioc = "BEclear" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BEclear_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BEclear/BEclear_2.18.0.tar.gz"]
+	bioc = "BEclear"
 
-	version("2.24.0", tag="RELEASE_3_21")
-	version("2.18.0", sha256="a1a7cd40872ecb94d5fe28d76f59c7d04489cda47675c53e4e9de1133aad12a9")
+	version("2.24.0", commit="293a0112f9a5017ecee05af3f1bd3f2b7c9ffa60")
+	version("2.18.0", commit="90d4d087020497b7443a9c862edd9e23177ebab3")
 
 	depends_on("r-biocparallel@1.14.2:", type=("build", "run"))
 	depends_on("r-futile-logger", type=("build", "run"))

@@ -13,11 +13,10 @@ class RMetid(RPackage):
 	"""
 	
 	homepage = "https://github.com/ressomlab/MetID"
-	bioc = "MetID" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetID_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetID/MetID_1.20.0.tar.gz"]
+	bioc = "MetID"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="141fea94d2b32369b8d1e60eaf809d3390c5a5f9bd92bac0d6d86aab9c69a58d")
+	version("1.26.0", commit="e40e84e6e4e5e9d0ce827ca42e50b1224e196d87")
+	version("1.20.0", commit="635ed59e2c3aaa3b2d510b45ad954b670a078477")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-devtools@1.13:", type=("build", "run"))

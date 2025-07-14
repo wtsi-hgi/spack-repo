@@ -12,11 +12,10 @@ class RInfinityflow(RPackage):
 	Pipeline to analyze and merge data files produced by BioLegend's LEGENDScreen or BD Human Cell Surface Marker Screening Panel (BD Lyoplates).
 	"""
 	
-	bioc = "infinityFlow" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/infinityFlow_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/infinityFlow/infinityFlow_1.12.0.tar.gz"]
+	bioc = "infinityFlow"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="aec5f37ad9a9a27f637aec584fbf5a9a83cccf7af0e38051ef506a217c58815c")
+	version("1.18.0", commit="7c232d8d4292c5373f9d38c92c16329660355044")
+	version("1.12.0", commit="5649007d280db4cc5a7c7ce629be5229dbd3cb05")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

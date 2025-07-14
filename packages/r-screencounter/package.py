@@ -13,14 +13,8 @@ class RScreencounter(RPackage):
 	"""
 
 	homepage = "https://github.com/crisprVerse/screenCounter"
-	bioc = "screenCounter"
-	urls = [
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/screenCounter_1.2.0.tar.gz",
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/screenCounter/screenCounter_1.2.0.tar.gz",
-	]
-
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="a9995014d30f1a8856794a65b2f34a0db6a662e29f11947058359cecce0c68fa")
+	bioc = "screenCounter"version("1.8.0", commit="e53f46b42ca0c2581b6d89b48f7c2d6661a9a1c0")
+	version("1.2.0", commit="59350ef9155bea240c1729da4457e45757b4a5da")
 
 	depends_on("r-s4vectors", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

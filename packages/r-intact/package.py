@@ -13,11 +13,10 @@ class RIntact(RPackage):
 	"""
 	
 	homepage = "https://github.com/jokamoto97/INTACT"
-	bioc = "INTACT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/INTACT_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/INTACT/INTACT_1.2.0.tar.gz"]
+	bioc = "INTACT"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="80b1dec3b9af56241eb28e453ea0a0057716f264cc4a35611ef1cb5fa03ff52b")
+	version("1.8.0", commit="4b6725cdb637624cf5b88220f9278abb8bcf142f")
+	version("1.2.0", commit="0b5c6690850ddf7567098e081f00d238c5cc90c7")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-squarem", type=("build", "run"))

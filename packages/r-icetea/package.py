@@ -13,11 +13,10 @@ class RIcetea(RPackage):
 	"""
 	
 	homepage = "https://github.com/vivekbhr/icetea"
-	bioc = "icetea" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/icetea_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/icetea/icetea_1.20.0.tar.gz"]
+	bioc = "icetea"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="19fe4cbe29265e0348dcda442e14817a9817867d398310eb2fd9795c5b052e53")
+	version("1.26.0", commit="a72364fea44dba639ff4a25d8310af6438a282e6")
+	version("1.20.0", commit="7b58dbe6276ede01301e9810dde89ad8aad51344")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

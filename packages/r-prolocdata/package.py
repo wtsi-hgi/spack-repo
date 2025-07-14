@@ -13,11 +13,10 @@ class RProlocdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/lgatto/pRolocdata"
-	bioc = "pRolocdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/pRolocdata_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/pRolocdata/pRolocdata_1.40.0.tar.gz"]
+	bioc = "pRolocdata"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="f1c405105a5ea16a4343112d710842065722c6a773db904d6bbea789ced15e7e")
+	version("1.46.0", commit="e326d80ea4b4ec0299c4108f7384f587f005be74")
+	version("1.40.0", commit="f562738194830c57f978cb36a97b09e0c6868130")
 
 	depends_on("r@3.6.3:", type=("build", "run"))
 	depends_on("r-msnbase", type=("build", "run"))

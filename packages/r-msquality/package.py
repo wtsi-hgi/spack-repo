@@ -13,11 +13,10 @@ class RMsquality(RPackage):
 	"""
 	
 	homepage = "https://www.github.com/tnaake/MsQuality/"
-	bioc = "MsQuality" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsQuality_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsQuality/MsQuality_1.2.1.tar.gz"]
+	bioc = "MsQuality"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.1", sha256="037724c28504409a769d8bdd766106cc4f243cd3d1f6cf6ca2000b7e00b20594")
+	version("1.8.0", commit="234dd27f5a35b86ea548d66980bda3c9a92029ed")
+	version("1.2.1", commit="70bda0061cb12231c7160b6da98d27051dfc9cf8")
 	version("1.2.0", md5="1d8e2101f472e8fc93bfa275db511982")
 
 	depends_on("r@4.2:", type=("build", "run"))

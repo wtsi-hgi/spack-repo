@@ -12,11 +12,10 @@ class RGrndata(RPackage):
 	Simulated expression data for five large Gene Regulatory Networks from different simulators
 	"""
 	
-	bioc = "grndata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/grndata_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/grndata/grndata_1.34.0.tar.gz"]
+	bioc = "grndata"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="d58e54525330ecf71e5c5719eef835a1ef242070576cf2fff5d3d096d295e29d")
+	version("1.40.0", commit="19ea80c2c595465d74f5bd31a8974ddf06517e3d")
+	version("1.34.0", commit="21a662e1b6fc28dcc9c249b424a8da46dfa37a57")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

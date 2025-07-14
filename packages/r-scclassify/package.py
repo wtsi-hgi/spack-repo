@@ -12,11 +12,10 @@ class RScclassify(RPackage):
 	scClassify is a multiscale classification framework for single-cell RNA-seq data based on ensemble learning and cell type hierarchies, enabling sample size estimation required for accurate cell type classification and joint classification of cells using multiple references.
 	"""
 	
-	bioc = "scClassify" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scClassify_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scClassify/scClassify_1.14.0.tar.gz"]
+	bioc = "scClassify"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="6ed52ca8d4839c48a9812b752350865ba0c793382b44289e04a26037b22b84c6")
+	version("1.20.0", commit="73079151da5d2777f696368a0d2ce2c8c3686e5c")
+	version("1.14.0", commit="50e08083d7dc7b734b2bae3642c299a9b4cc1f34")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

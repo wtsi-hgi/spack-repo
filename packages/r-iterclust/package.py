@@ -13,10 +13,9 @@ class RIterclust(RPackage):
 	"""
 	
 	homepage = "https://github.com/hd2326/iterClust"
-	bioc = "iterClust" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iterClust_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iterClust/iterClust_1.24.0.tar.gz"]
+	bioc = "iterClust"
 
-	version("1.24.0", sha256="cf36aa1aafeaa328e4c5483bbb88768b30fe8c37483834b34ccd7af20e63504c")
+	version("1.24.0", commit="a81011d0755baf6a82a9fe7f3392664d007cdce4")
 
 	depends_on("r@3.4.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

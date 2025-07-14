@@ -13,11 +13,10 @@ class RIndeed(RPackage):
 	"""
 	
 	homepage = "http://github.com/ressomlab/INDEED"
-	bioc = "INDEED" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/INDEED_2.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/INDEED/INDEED_2.16.0.tar.gz"]
+	bioc = "INDEED"
 
-	version("2.22.0", tag="RELEASE_3_21")
-	version("2.16.0", sha256="b5839cdc60289f2d93a9c3f3947121126101d68f7c3146c2b9726ad88c93680c")
+	version("2.22.0", commit="1f92fcbd18a2794a268950c74444e0d206a708c3")
+	version("2.16.0", commit="e36498b934349f76d979c696d491c2592938a43c")
 
 	depends_on("r-glasso@1.8:", type=("build", "run"))
 	depends_on("r@3.5:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RPhilr(RPackage):
 	"""
 	
 	homepage = "https://github.com/jsilve24/philr"
-	bioc = "philr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/philr_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/philr/philr_1.28.0.tar.gz"]
+	bioc = "philr"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="fcd93f8ac68849cb8b99cfcb6dc52a64ad2b0ee772113d67eb25ec031592a7cd")
+	version("1.34.0", commit="1d9ba3bbf04f84be160b250e3165a7b563772de4")
+	version("1.28.0", commit="97ee2ead8184b88e4b5b47428dc2798e5464620c")
 
 	depends_on("r-ape", type=("build", "run"))
 	depends_on("r-phangorn", type=("build", "run"))

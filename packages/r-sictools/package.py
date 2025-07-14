@@ -12,14 +12,8 @@ class RSictools(RPackage):
 	This package is to find SNV/Indel differences between two bam files with near relationship in a way of pairwise comparison thourgh each base position across the genome region of interest. The difference is inferred by fisher test and euclidean distance, the input of which is the base count (A,T,G,C) in a given position and read counts for indels that span no less than 2bp on both sides of indel region.
 	"""
 
-	bioc = "SICtools"
-	urls = [
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SICtools_1.32.0.tar.gz",
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SICtools/SICtools_1.32.0.tar.gz",
-	]
-
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="181c95f0c81db489aed9e26d39e5a9ab573bd4b1b42319db42b97635b7948a2d")
+	bioc = "SICtools"version("1.38.0", commit="20dae93a64e252e3498b2db9a0c90abf79f0bcea")
+	version("1.32.0", commit="49e086b4d347b7e875f454e914581fbbb9a50da8")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-rsamtools@1.18.1:", type=("build", "run"))

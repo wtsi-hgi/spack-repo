@@ -13,11 +13,10 @@ class RCrisprverse(RPackage):
 	"""
 	
 	homepage = "https://github.com/crisprVerse/crisprVerse"
-	bioc = "crisprVerse" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crisprVerse_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crisprVerse/crisprVerse_1.4.0.tar.gz"]
+	bioc = "crisprVerse"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="9b21df6ee0cb59c27288628b28fd17ce5957a2632ec1f40a371e8f6df79178b1")
+	version("1.10.0", commit="3ed7c9e79908ffe383ebf6c462dcc107301c2224")
+	version("1.4.0", commit="8cad1eac5b6755c90d7b8eebd78e6d2a5e00f4af")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocmanager", type=("build", "run"))

@@ -13,11 +13,10 @@ class RAffylmgui(RPackage):
 	"""
 	
 	homepage = "http://bioinf.wehi.edu.au/affylmGUI/"
-	bioc = "affylmGUI" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affylmGUI_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affylmGUI/affylmGUI_1.76.0.tar.gz"]
+	bioc = "affylmGUI"
 
-	version("1.82.0", tag="RELEASE_3_21")
-	version("1.76.0", sha256="6fba04b0e33a9fb149e2123a36f409307e44b4322902480b30c9aa9d60fd6190")
+	version("1.82.0", commit="1da3343fef0ed3956b95a9cb8573758e1698bf88")
+	version("1.76.0", commit="d6a5c351689e52e6633a89fd34a31297a169b45d")
 
 	depends_on("r-tkrplot", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

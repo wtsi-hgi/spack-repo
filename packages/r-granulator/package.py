@@ -13,11 +13,10 @@ class RGranulator(RPackage):
 	"""
 	
 	homepage = "https://github.com/xanibas/granulator"
-	bioc = "granulator" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/granulator_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/granulator/granulator_1.10.0.tar.gz"]
+	bioc = "granulator"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="01226099d1d2a13013135583a03f3b12ec2f5b5eeacd541e70c3ab8e75c9686b")
+	version("1.16.0", commit="e36e3e62db2cf5404aa7ef84a6b344e44191d4b7")
+	version("1.10.0", commit="deb19239411352c9a88f7b7a751a522603739aeb")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))

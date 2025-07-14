@@ -12,11 +12,10 @@ class RMsstatsshiny(RPackage):
 	MSstatsShiny is an R-Shiny graphical user interface (GUI) integrated with the R packages MSstats, MSstatsTMT, and MSstatsPTM. It provides a point and click end-to-end analysis pipeline applicable to a wide variety of experimental designs. These include data-dependedent acquisitions (DDA) which are label-free or tandem mass tag (TMT)-based, as well as DIA, SRM, and PRM acquisitions and those targeting post-translational modifications (PTMs). The application automatically saves users selections and builds an R script that recreates their analysis, supporting reproducible data analysis.
 	"""
 	
-	bioc = "MSstatsShiny" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsShiny_1.4.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsShiny/MSstatsShiny_1.4.3.tar.gz"]
+	bioc = "MSstatsShiny"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.3", sha256="e3f9833bff4318bcedc6e027819bd72d611db84e62eab68c2dc79ec6222aea71")
+	version("1.10.0", commit="285523ddc0315b113a16fedbee643f3cd6cc015b")
+	version("1.4.3", commit="5c8fdaf36a276b5e319f435330dc41ad360d56eb")
 	version("1.4.2", md5="2a58cf6ab9674a13b96e66974d6b15a0")
 
 	depends_on("r@4.2:", type=("build", "run"))

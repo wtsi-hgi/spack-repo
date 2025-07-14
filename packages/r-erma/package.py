@@ -12,11 +12,10 @@ class RErma(RPackage):
 	Software and data to support epigenomic road map adventures.
 	"""
 	
-	bioc = "erma" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/erma_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/erma/erma_1.18.0.tar.gz"]
+	bioc = "erma"
 
-	version("1.24.1", tag="RELEASE_3_21")
-	version("1.18.0", sha256="1f9ea877f8d8670cb116b5a4c67182885c7a9a04206b970868fd530ebf93576d")
+	version("1.24.1", commit="84091bf5640bd699001acbf97df04bd2f004d319")
+	version("1.18.0", commit="bed2908a6ebe0f28cc140d09470f1d4368ef9f2b")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-homo-sapiens", type=("build", "run"))

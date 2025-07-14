@@ -13,11 +13,10 @@ class RNanomethviz(RPackage):
 	"""
 	
 	homepage = "https://github.com/shians/NanoMethViz"
-	bioc = "NanoMethViz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NanoMethViz_2.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NanoMethViz/NanoMethViz_2.8.1.tar.gz"]
+	bioc = "NanoMethViz"
 
-	version("3.4.0", tag="RELEASE_3_21")
-	version("2.8.1", sha256="9f6520a3ece38cdbecb95cecb86697d56dc1e6904763df5dc0b9c0943c5a9c67")
+	version("3.4.0", commit="855d22b0a23014607369e3de5de01cc3420f6e9c")
+	version("2.8.1", commit="1d8a14942ebf7e6ad98855a451826d8f08a0affa")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2@3.4:", type=("build", "run"))

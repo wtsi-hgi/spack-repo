@@ -15,12 +15,11 @@ class RBluster(RPackage):
 	clustering results."""
 
 	bioc = "bluster"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bluster_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bluster/bluster_1.12.0.tar.gz"]
 
-	version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", commit="d958b332e92c4cbeb0d936d28f3d10bf20bec5b0")
 	version("1.8.0", commit="156115c8960c0b66b2c588d9fd8bbdfe56e5f0be")
 	version("1.6.0", commit="ff86c7d8d36233e838d4f00e6a4e173e7bf16816")
-	version("1.12.0", sha256="0c564cfe750c16f4cb5def26289dbd036b027c096239e8352a228d764cd9f39b")
+	version("1.12.0", commit="efc4220a8062cab433a89d3d742880128cdcaad2")
 	version("1.10.0", commit="32340420e67a184e39238e46143c00151057924c")
 
 	depends_on("r-cluster", type=("build", "run"))

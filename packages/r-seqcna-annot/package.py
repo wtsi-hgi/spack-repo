@@ -12,10 +12,9 @@ class RSeqcnaAnnot(RPackage):
 	Provides annotation on GC content, mappability and genomic features for various genomes
 	"""
 	
-	bioc = "seqCNA.annot" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/seqCNA.annot_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/seqCNA.annot/seqCNA.annot_1.38.0.tar.gz"]
+	bioc = "seqCNA.annot"
 
-	version("1.38.0", sha256="72d7ed1867fec9bebd972c10e281e18253b5dac10c9d85fe15e029d461b1f54f")
+	version("1.38.0", commit="d8179ef4ea93e1dc2d8b868c77bf105789d8e5a4")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

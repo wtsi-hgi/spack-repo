@@ -13,11 +13,10 @@ class RAutonomics(RPackage):
 	"""
 	
 	homepage = "https://github.com/bhagwataditya/autonomics"
-	bioc = "autonomics" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/autonomics_1.10.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/autonomics/autonomics_1.10.2.tar.gz"]
+	bioc = "autonomics"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.2", sha256="a9a63c09f9f4de533f92c8b82fa3f2821f532fd0edb4e5ba467d6fb327d30fb2")
+	version("1.16.0", commit="a47f4dfc03db39c7572e0a631bf337f79258d9a3")
+	version("1.10.2", commit="230045ce836fff0167aa01b664ccc4ea6c3c4631")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))

@@ -13,11 +13,10 @@ class REwce(RPackage):
 	"""
 	
 	homepage = "https://github.com/NathanSkene/EWCE"
-	bioc = "EWCE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EWCE_1.10.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EWCE/EWCE_1.10.2.tar.gz"]
+	bioc = "EWCE"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.2", sha256="c75a4f86ac89a8861748ece3fa46c412d436518ad961cfa84cbc45545cc2d53e")
+	version("1.16.0", commit="fe732b5bd3268b726eb68c92e395c55fc998d271")
+	version("1.10.2", commit="0413c77d5ab8586c93a73d2c1b1b2cc0aa78a99d")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rnomni@1:", type=("build", "run"))

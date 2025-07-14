@@ -13,11 +13,10 @@ class RMiasim(RPackage):
 	"""
 	
 	homepage = "https://github.com/microbiome/miaSim"
-	bioc = "miaSim" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miaSim_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miaSim/miaSim_1.8.0.tar.gz"]
+	bioc = "miaSim"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="b3337d0e1e272271053a4f78b5e598429c76b6d0601557da466ad42bc369a3cc")
+	version("1.14.0", commit="da3162c98749800d9af48bc0f0e95491bed4dfe6")
+	version("1.8.0", commit="0e9233948402688b100e982b0e56b64e59b89fa8")
 
 	depends_on("r-treesummarizedexperiment", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

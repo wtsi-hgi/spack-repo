@@ -13,11 +13,10 @@ class RCogena(RPackage):
 	"""
 	
 	homepage = "https://github.com/zhilongjia/cogena"
-	bioc = "cogena" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cogena_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cogena/cogena_1.36.0.tar.gz"]
+	bioc = "cogena"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="eec3a1b987c94647dfa5a0feac3928b302ff8ab916703f6acf37cf36307d0b44")
+	version("1.42.0", commit="31579055843754373e8913da2d3934337a9cfe03")
+	version("1.36.0", commit="6989324d86918dbd0cf4c4891073de84eafd611d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))

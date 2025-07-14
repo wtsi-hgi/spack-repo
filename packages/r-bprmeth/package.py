@@ -12,11 +12,10 @@ class RBprmeth(RPackage):
 	The BPRMeth package is a probabilistic method to quantify explicit features of methylation profiles, in a way that would make it easier to formally use such profiles in downstream modelling efforts, such as predicting gene expression levels or clustering genomic regions or cells according to their methylation profiles.
 	"""
 	
-	bioc = "BPRMeth" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BPRMeth_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BPRMeth/BPRMeth_1.28.0.tar.gz"]
+	bioc = "BPRMeth"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="6ea9cd29c2eaaa669072eba2e9c4135099adbcbb3b4a81b0cc79739113f48945")
+	version("1.34.0", commit="fcbf18e7f9a764c4afc2400388fe380bfc3998b5")
+	version("1.28.0", commit="d365b41830b142863398b81cb1802a300e52f3e7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

@@ -13,11 +13,10 @@ class RIsee(RPackage):
 	"""
 	
 	homepage = "https://github.com/iSEE/iSEE"
-	bioc = "iSEE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEE_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEE/iSEE_2.14.0.tar.gz"]
+	bioc = "iSEE"
 
-	version("2.20.0", tag="RELEASE_3_21")
-	version("2.14.0", sha256="44b2ecfea6f47e414b372c04e68be5384e873336c7caffb6b07a206905d71e4e")
+	version("2.20.0", commit="fb79638cf7ca95bce6fa75cebc4a08827099569d")
+	version("2.14.0", commit="3e72e8d5f5ecb8c89b8b04b11241446f36e72fc5")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

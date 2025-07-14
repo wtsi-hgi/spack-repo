@@ -12,11 +12,10 @@ class RRuvnormalizedata(RPackage):
 	Microarray gene expression data from the study of Vawter et al., 2004.
 	"""
 	
-	bioc = "RUVnormalizeData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RUVnormalizeData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RUVnormalizeData/RUVnormalizeData_1.22.0.tar.gz"]
+	bioc = "RUVnormalizeData"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="37109e18c3c0399919a3ad7058a537392fa18501b88fd78dbc9af34df9dc13eb")
+	version("1.28.0", commit="c880da15348dd6ea604176b374617113e18b5b74")
+	version("1.22.0", commit="36f1957234bee83d07d160d9dd52ab303d8cad8b")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

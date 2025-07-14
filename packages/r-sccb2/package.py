@@ -13,11 +13,10 @@ class RSccb2(RPackage):
 	"""
 	
 	homepage = "https://github.com/zijianni/scCB2"
-	bioc = "scCB2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scCB2_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scCB2/scCB2_1.12.0.tar.gz"]
+	bioc = "scCB2"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="f47cdbdec0315d0fad687997737bc5a6494815caa8eb74c704bd72feb792c66c", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scCB2_1.12.0.tar.gz")
+	version("1.18.0", commit="343e582cfd076d68c597080cd7599fe9f1050dae")
+	version("1.12.0", commit="bf81d7752bf242066c5ac6f2acabd68c6c364941")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

@@ -12,11 +12,10 @@ class RCancerdata(RPackage):
 	Dataset for the R package cancerclass
 	"""
 	
-	bioc = "cancerdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/cancerdata_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/cancerdata/cancerdata_1.40.0.tar.gz"]
+	bioc = "cancerdata"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="44c3fef98c50c2df425909b4b811c54bd02ac5ce74fd0d84c0dd46258a6be098")
+	version("1.46.0", commit="fc32f06ad646da4f2218b86e12191b17b249c829")
+	version("1.40.0", commit="83e46f593472929f7e0d0378a68abe27ec359c2f")
 
 	depends_on("r@2.10.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

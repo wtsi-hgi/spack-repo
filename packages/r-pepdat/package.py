@@ -12,11 +12,10 @@ class RPepdat(RPackage):
 	Provides sample files and data for the vignettes of pepStat and Pviz as well as peptide collections for HIV and SIV.
 	"""
 	
-	bioc = "pepDat" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/pepDat_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/pepDat/pepDat_1.22.0.tar.gz"]
+	bioc = "pepDat"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="03bfe8a1b944e4821fbacb8fb0a93755e008242cd909a229d8ae3fce5da7454f")
+	version("1.28.0", commit="4c98752151c7e8b5f77fa8ad66c6bc16562710ea")
+	version("1.22.0", commit="c230a94b649a0fce679e1d015f435c52e3bbdada")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

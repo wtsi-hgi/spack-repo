@@ -12,11 +12,10 @@ class RNetactivitydata(RPackage):
 	This package contains the weights from pre-trained shallow sparsely-connected autoencoders. This data is required for getting the gene set scores with NetActivity package.
 	"""
 	
-	bioc = "NetActivityData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/NetActivityData_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/NetActivityData/NetActivityData_1.4.0.tar.gz"]
+	bioc = "NetActivityData"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="d4ce5ff252b9773d73edf218ab271ddeea9574d2af7957661fad5099bc8071c0")
+	version("1.10.0", commit="ba38acd8405aff79c82e0854d33be1d3194b4929")
+	version("1.4.0", commit="6dae8519bdfe293cd7fbe74c3f789ba8a63f20ff")
 
 	depends_on("r@4.2:", type=("build", "run"))
 

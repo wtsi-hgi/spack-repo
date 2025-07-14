@@ -13,11 +13,10 @@ class RMsstats(RPackage):
 	"""
 	
 	homepage = "http://msstats.org"
-	bioc = "MSstats" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstats_4.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstats/MSstats_4.10.1.tar.gz"]
+	bioc = "MSstats"
 
-	version("4.16.1", tag="RELEASE_3_21")
-	version("4.10.1", sha256="277c35d06440dfc08456f3d7951db96f89081bbc0749cde1b1180017ec30c0f8")
+	version("4.16.1", commit="a221510ca0f02dd27f500827bfeb7e359bd0e0eb")
+	version("4.10.1", commit="c4264fc5d602f8967508667ac3fe2040fd49a5e4")
 	version("4.10.0", md5="fac3a495f2e627a75b10a9b941d3674d")
 
 	depends_on("r@4:", type=("build", "run"))

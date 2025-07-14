@@ -12,11 +12,10 @@ class RInteractionset(RPackage):
 	Provides the GInteractions, InteractionSet and ContactMatrix objects and associated methods for storing and manipulating genomic interaction data from Hi-C and ChIA-PET experiments.
 	"""
 	
-	bioc = "InteractionSet" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/InteractionSet_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/InteractionSet/InteractionSet_1.30.0.tar.gz"]
+	bioc = "InteractionSet"
 
-	version("1.36.1", tag="RELEASE_3_21")
-	version("1.30.0", sha256="1a372f3d5e9908caf13ceaf67ca7cc9e80b3ecec23c965acbf649c0539ebef56")
+	version("1.36.1", commit="5e17b72b4efb65a180acc04b8d87355715f9053f")
+	version("1.30.0", commit="43e670bada510d5d329c990ce86c6ce3621c9b91")
 
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

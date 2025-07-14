@@ -13,11 +13,10 @@ class RMipp(RPackage):
 	"""
 	
 	homepage = "http://www.healthsystem.virginia.edu/internet/hes/biostat/bioinformatics/"
-	bioc = "MiPP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MiPP_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MiPP/MiPP_1.74.0.tar.gz"]
+	bioc = "MiPP"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="8241ed264ea0462b550342e76a74d688b6a18b39e8e45d82a85f561046f761ff")
+	version("1.80.0", commit="39b272558073d9f04aab4e0f9c9c04952d54dd01")
+	version("1.74.0", commit="6d11cd847ae8850b382ca3f116acfb54da478ff9")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

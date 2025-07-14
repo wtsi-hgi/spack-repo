@@ -13,11 +13,10 @@ class RBayesspace(RPackage):
 	"""
 	
 	homepage = "edward130603.github.io/BayesSpace"
-	bioc = "BayesSpace" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BayesSpace_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BayesSpace/BayesSpace_1.12.0.tar.gz"]
+	bioc = "BayesSpace"
 
-	version("1.18.3", tag="RELEASE_3_21")
-	version("1.12.0", sha256="0584268335dad3b79815c1a85201167585b1258cff171bd949c1ed6ca9d70fd7")
+	version("1.18.3", commit="28484b2a2257043e2ca08a310e3f6ad7576e7cc1")
+	version("1.12.0", commit="1e3042dfc99bc5b66f55872164ed5c2de5572b9d")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

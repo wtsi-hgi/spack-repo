@@ -12,11 +12,10 @@ class RIpac(RPackage):
 	iPAC is a novel tool to identify somatic amino acid mutation clustering within proteins while taking into account protein structure.
 	"""
 	
-	bioc = "iPAC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iPAC_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iPAC/iPAC_1.46.0.tar.gz"]
+	bioc = "iPAC"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="c85865312b7451d61f317e5696ef8890d03415668d39106cf268dc6a9ea3c72e")
+	version("1.52.0", commit="8751a8f777fc9da5a33edc20e02498a2e5dc5897")
+	version("1.46.0", commit="8ca24b361603ee7a1741ca405bdd296dface84fe")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-gdata", type=("build", "run"))

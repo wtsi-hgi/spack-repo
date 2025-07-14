@@ -13,11 +13,10 @@ class RTop(RPackage):
 	"""
 	
 	homepage = "https://github.com/Harry25R/TOP"
-	bioc = "TOP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TOP_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TOP/TOP_1.2.0.tar.gz"]
+	bioc = "TOP"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="f0733004b9f9dedff886394a5767da9a78c07f6f88abc6e1f7ac2a87b5ecdb36")
+	version("1.8.0", commit="37977c5f4cd4b665bdd65b7ad01ba1b14c017cde")
+	version("1.2.0", commit="5f86e64422b72f220aed23ffababc41d35cee4d1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

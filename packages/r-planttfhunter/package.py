@@ -13,11 +13,10 @@ class RPlanttfhunter(RPackage):
 	"""
 	
 	homepage = "https://github.com/almeidasilvaf/planttfhunter"
-	bioc = "planttfhunter" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/planttfhunter_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/planttfhunter/planttfhunter_1.2.0.tar.gz"]
+	bioc = "planttfhunter"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="8759169117dd3ecca8fed4e570c3996c818a87fd09b603b6d171a1bf8baee9a2")
+	version("1.8.0", commit="946fd3868150039b43a4d36bb2a44d42f0894a3d")
+	version("1.2.0", commit="1c8427c1ecfb1564f135c15f3dc7fbf14bf48f31")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

@@ -13,11 +13,10 @@ class RCardelino(RPackage):
 	"""
 	
 	homepage = "https://github.com/single-cell-genetics/cardelino"
-	bioc = "cardelino" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cardelino_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cardelino/cardelino_1.4.0.tar.gz"]
+	bioc = "cardelino"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="f6ed2a646b833f4a63b0641731ce2c1dbc4718d76d7418c0878acb00561b8d78")
+	version("1.10.0", commit="a4f4dbbec3f2461d01c8123e1fb96040bd6cff55")
+	version("1.4.0", commit="3b1668c36651691a9dbfa61a8e661cb8b716856c")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-combinat", type=("build", "run"))

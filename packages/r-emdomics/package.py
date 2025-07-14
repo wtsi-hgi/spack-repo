@@ -12,11 +12,10 @@ class REmdomics(RPackage):
 	The EMDomics algorithm is used to perform a supervised multi-class analysis to measure the magnitude and statistical significance of observed continuous genomics data between groups. Usually the data will be gene expression values from array-based or sequence-based experiments, but data from other types of experiments can also be analyzed (e.g. copy number variation). Traditional methods like Significance Analysis of Microarrays (SAM) and Linear Models for Microarray Data (LIMMA) use significance tests based on summary statistics (mean and standard deviation) of the distributions. This approach lacks power to identify expression differences between groups that show high levels of intra-group heterogeneity. The Earth Mover's Distance (EMD) algorithm instead computes the "work" needed to transform one distribution into another, thus providing a metric of the overall difference in shape between two distributions. Permutation of sample labels is used to generate q-values for the observed EMD scores. This package also incorporates the Komolgorov-Smirnov (K-S) test and the Cramer von Mises test (CVM), which are both common distribution comparison tests.
 	"""
 	
-	bioc = "EMDomics" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EMDomics_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EMDomics/EMDomics_2.32.0.tar.gz"]
+	bioc = "EMDomics"
 
-	version("2.38.0", tag="RELEASE_3_21")
-	version("2.32.0", sha256="d294fb629f65196bb0eece0c4b249e5fe63beb07ad4442ff457bce9408875994")
+	version("2.38.0", commit="676d6e1ca3ea46b0acb492f05942abdc91e460cd")
+	version("2.32.0", commit="0f54d25182473e48afc1e35eb3691581160afdaf")
 
 	depends_on("r@3.2.1:", type=("build", "run"))
 	depends_on("r-emdist", type=("build", "run"))

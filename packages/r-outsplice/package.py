@@ -13,11 +13,10 @@ class ROutsplice(RPackage):
 	"""
 	
 	homepage = "https://github.com/GuoLabUCSD/OutSplice"
-	bioc = "OutSplice" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OutSplice_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OutSplice/OutSplice_1.2.0.tar.gz"]
+	bioc = "OutSplice"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="04a0e39ab46157dc360a56ed4177595b7bd30eb3ace1a1e5adf5d41785804aeb")
+	version("1.8.0", commit="dfced8d8f8bb9a5db601fef3731d513372acb65a")
+	version("1.2.0", commit="2035f79de46a9c4ced871bd2dcff16522eed1091")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.60:", type=("build", "run"))

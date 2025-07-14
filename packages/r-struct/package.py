@@ -12,11 +12,10 @@ class RStruct(RPackage):
 	Defines and includes a set of class-based templates for developing and implementing data processing and analysis workflows, with a strong emphasis on statistics and machine learning. The templates can be used and where needed extended to 'wrap' tools and methods from other packages into a common standardised structure to allow for effective and fast integration. Model objects can be combined into sequences, and sequences nested in iterators using overloaded operators to simplify and improve readability of the code. Ontology lookup has been integrated and implemented to provide standardised definitions for methods, inputs and outputs wrapped using the class-based templates.
 	"""
 	
-	bioc = "struct" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/struct_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/struct/struct_1.14.1.tar.gz"]
+	bioc = "struct"
 
-	version("1.20.1", tag="RELEASE_3_21")
-	version("1.14.1", sha256="602cb5c2b1c507958fc344ada92c24d5e6933da2a2f6331e519c346b5b70f77e")
+	version("1.20.1", commit="0d4f5fd044a6fe4699b2ccc2d61501ec205052c6")
+	version("1.14.1", commit="03769d217e45c72604cb4e151b69212559249c96")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ontologyindex", type=("build", "run"))

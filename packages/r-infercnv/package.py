@@ -13,11 +13,10 @@ class RInfercnv(RPackage):
 	"""
 	
 	homepage = "https://github.com/broadinstitute/inferCNV/wiki"
-	bioc = "infercnv" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/infercnv_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/infercnv/infercnv_1.18.1.tar.gz"]
+	bioc = "infercnv"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.1", sha256="eadc079ffc2681efddfb760b52adee870914f168251c94c8be2159a1e1b031b5")
+	version("1.24.0", commit="bdb95611d4044dee6f5cbe6f1c57f966ee3165e5")
+	version("1.18.1", commit="8afcd62eded1d8dbe8aac3c39ee1ca40d41e24ae")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

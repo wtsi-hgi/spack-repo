@@ -13,11 +13,10 @@ class RMatter(RPackage):
 	"""
 	
 	homepage = "https://github.com/kuwisdelu/matter"
-	bioc = "matter" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/matter_2.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/matter/matter_2.4.1.tar.gz"]
+	bioc = "matter"
 
-	version("2.10.0", tag="RELEASE_3_21")
-	version("2.4.1", sha256="8c044c10112de657a3e111455078c09ab6206fd20417d2ec5c3ccfd2c3534f23")
+	version("2.10.0", commit="c93d25fe81f1d11942d6979c9b3c7593383c639e")
+	version("2.4.1", commit="f819d435323eabea82414bd2d596e431512c77af")
 	version("2.4.0", md5="08919bc0df5442e0916ee7cffbc23003")
 
 	depends_on("r@4:", type=("build", "run"))

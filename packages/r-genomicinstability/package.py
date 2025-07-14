@@ -13,11 +13,10 @@ class RGenomicinstability(RPackage):
 	"""
 	
 	homepage = "https://github.com/DarwinHealth/genomicInstability"
-	bioc = "genomicInstability" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genomicInstability_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genomicInstability/genomicInstability_1.8.0.tar.gz"]
+	bioc = "genomicInstability"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="14a372aa0153e2c4d80dbee62e33faed3064b7c68d9677cb726973747f8f8792")
+	version("1.14.0", commit="9b0831bfe28a7bda917d7e568322eb2846d3efcd")
+	version("1.8.0", commit="188233e23f9c35f09aee7657755bd8ce77183dec")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

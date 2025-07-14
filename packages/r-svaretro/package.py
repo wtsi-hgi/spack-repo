@@ -12,11 +12,10 @@ class RSvaretro(RPackage):
 	svaRetro contains functions for detecting retrotransposed transcripts (RTs) from structural variant calls. It takes structural variant calls in GRanges of breakend notation and identifies RTs by exon-exon junctions and insertion sites. The candidate RTs are reported by events and annotated with information of the inserted transcripts.
 	"""
 	
-	bioc = "svaRetro" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/svaRetro_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/svaRetro/svaRetro_1.8.0.tar.gz"]
+	bioc = "svaRetro"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="65f939fa049f406c728e27fbba2969872f4130811d54861d4fa9a68c1b8992d6")
+	version("1.14.0", commit="ebaff4d889aa3bbcd3cf209379cceab321bb8bc9")
+	version("1.8.0", commit="b8b34d3496ecb5e4d0c5a0866c1e4cf5df86cd23")
 
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-rtracklayer", type=("build", "run"))

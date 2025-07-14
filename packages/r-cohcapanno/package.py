@@ -12,11 +12,10 @@ class RCohcapanno(RPackage):
 	Provides genomic location, nearby CpG island and nearby gene information for common Illumina methylation array platforms
 	"""
 	
-	bioc = "COHCAPanno" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/COHCAPanno_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/COHCAPanno/COHCAPanno_1.38.0.tar.gz"]
+	bioc = "COHCAPanno"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="0362bd4a6d984f5748613751d4b525d6580e360d61d60bc625617d4855a10539")
+	version("1.44.0", commit="861cd52143281f79635dbfcfaf9f163316254593")
+	version("1.38.0", commit="5784d61795ae1e4050f289e580fcba72bd133b8a")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

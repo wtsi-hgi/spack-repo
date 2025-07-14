@@ -13,10 +13,9 @@ class RKboost(RPackage):
 	"""
 	
 	homepage = "https://github.com/Luisiglm/KBoost"
-	bioc = "KBoost" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/KBoost_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/KBoost/KBoost_1.10.0.tar.gz"]
+	bioc = "KBoost"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="1132da444f04934200dd92483b478116c51d9a995b698648e88b97b109086de9")
+	version("1.16.0", commit="fe6e4e7104664b274c0e1d282f144fe33cbfbb73")
+	version("1.10.0", commit="c417e2638f81a2dd81e0c92de7490286ae2f5ed9")
 
 	depends_on("r@4.1:", type=("build", "run"))

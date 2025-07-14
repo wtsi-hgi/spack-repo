@@ -13,11 +13,10 @@ class RMethylcc(RPackage):
 	"""
 	
 	homepage = "https://github.com/stephaniehicks/methylCC/"
-	bioc = "methylCC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylCC_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylCC/methylCC_1.16.0.tar.gz"]
+	bioc = "methylCC"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="1caeea2cbf70dbfd73a4a4f1a67d5fe2b690dfc45c84f7e54085c43750332bbf")
+	version("1.22.0", commit="9d50b974f02b155e618926f9f8501a9d16e01f78")
+	version("1.16.0", commit="5122b11cbf5ce2e471e6f989fb126af47d906a47")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-flowsorted-blood-450k", type=("build", "run"))

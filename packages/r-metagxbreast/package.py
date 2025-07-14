@@ -12,11 +12,10 @@ class RMetagxbreast(RPackage):
 	A collection of Breast Cancer Transcriptomic Datasets that are part of the MetaGxData package compendium.
 	"""
 	
-	bioc = "MetaGxBreast" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MetaGxBreast_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MetaGxBreast/MetaGxBreast_1.22.0.tar.gz"]
+	bioc = "MetaGxBreast"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="2117238173879a0d3c0dc7a9108dcf492d48ca0b3a378ef2729a6219c93b1a2c")
+	version("1.28.0", commit="9e95d03f4548094c27aba4161439e72a26e336b9")
+	version("1.22.0", commit="a3c220a01c313909d895bdd8f434be6c4f2a09fd")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

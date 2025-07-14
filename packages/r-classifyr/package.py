@@ -13,11 +13,10 @@ class RClassifyr(RPackage):
 	"""
 	
 	homepage = "https://sydneybiox.github.io/ClassifyR/"
-	bioc = "ClassifyR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ClassifyR_3.6.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ClassifyR/ClassifyR_3.6.5.tar.gz"]
+	bioc = "ClassifyR"
 
-	version("3.12.2", tag="RELEASE_3_21")
-	version("3.6.5", sha256="d16158798f15f05f816139b14fff094e3d0a1e0e8b4f2d8f0a57560881d5b1a8")
+	version("3.12.2", commit="c21a3ca326b353fed83df9a2014d411fa299212e")
+	version("3.6.5", commit="8533331fcc3df644c9ee183bd9b9c58deaec6c0d")
 	version("3.6.3", md5="d7ab30daf86208976868d3f9b82b67de")
 
 	depends_on("r@4.1:", type=("build", "run"))

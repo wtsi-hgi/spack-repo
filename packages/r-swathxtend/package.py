@@ -12,11 +12,10 @@ class RSwathxtend(RPackage):
 	Contains utility functions for integrating spectral libraries for SWATH and statistical data analysis for SWATH generated data.
 	"""
 	
-	bioc = "SwathXtend" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SwathXtend_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SwathXtend/SwathXtend_2.24.0.tar.gz"]
+	bioc = "SwathXtend"
 
-	version("2.30.0", tag="RELEASE_3_21")
-	version("2.24.0", sha256="15b633cdf46a51d1eb918f34c5f816bde09a356c91eee6cf30caaad5e11d9b3b")
+	version("2.30.0", commit="157ffd9530d11bb17144dcbd5a52bdbc002b15f2")
+	version("2.24.0", commit="7b0e1381d1f0cc295e45a9206144997d0357008b")
 
 	depends_on("r-e1071", type=("build", "run"))
 	depends_on("r-openxlsx", type=("build", "run"))

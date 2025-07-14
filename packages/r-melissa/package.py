@@ -12,11 +12,10 @@ class RMelissa(RPackage):
 	Melissa is a Baysian probabilistic model for jointly clustering and imputing single cell methylomes. This is done by taking into account local correlations via a Generalised Linear Model approach and global similarities using a mixture modelling approach.
 	"""
 	
-	bioc = "Melissa" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Melissa_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Melissa/Melissa_1.18.0.tar.gz"]
+	bioc = "Melissa"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="66e8b0c98a16936859eacd5d21c42fad7443a59412f3edb487e5a2e35c3be27f")
+	version("1.24.0", commit="d232e8b5a2d2b538e379a305a90503d90920489a")
+	version("1.18.0", commit="89af5fe2659515f2d53db26eac7ba1063a973f95")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-bprmeth", type=("build", "run"))

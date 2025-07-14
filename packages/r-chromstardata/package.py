@@ -12,11 +12,10 @@ class RChromstardata(RPackage):
 	ChIP-seq data for demonstration purposes in the chromstaR package.
 	"""
 	
-	bioc = "chromstaRData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/chromstaRData_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/chromstaRData/chromstaRData_1.28.0.tar.gz"]
+	bioc = "chromstaRData"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="26eaddd6d147ac17327636cad136f4d964bedf05e0124cc281dabbdc536eb98f")
+	version("1.34.0", commit="3fce4155738df3dc7e03fd7c9b2ce8233b5df0b0")
+	version("1.28.0", commit="0ec080ab9c51e2a788dc7294de30490b772e8607")
 
 	depends_on("r@3.3:", type=("build", "run"))
 

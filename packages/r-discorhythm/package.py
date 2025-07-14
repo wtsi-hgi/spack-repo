@@ -13,11 +13,10 @@ class RDiscorhythm(RPackage):
 	"""
 	
 	homepage = "https://github.com/matthewcarlucci/DiscoRhythm"
-	bioc = "DiscoRhythm" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DiscoRhythm_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DiscoRhythm/DiscoRhythm_1.18.0.tar.gz"]
+	bioc = "DiscoRhythm"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="cfeb8e7ac7b143894c4151f68b4fbe7576ffeb10ab1ec72318150704365c626f")
+	version("1.24.0", commit="2395786bb55cfb563eb8546b191a3f0108e9be74")
+	version("1.18.0", commit="3019321c56a11ae925bc03ff5471823db1656ea6")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-matrixtests", type=("build", "run"))

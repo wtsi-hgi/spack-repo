@@ -13,11 +13,10 @@ class RMsbackendrawfilereader(RPackage):
 	"""
 	
 	homepage = "https://github.com/fgcz/MsBackendRawFileReader"
-	bioc = "MsBackendRawFileReader" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsBackendRawFileReader_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsBackendRawFileReader/MsBackendRawFileReader_1.8.1.tar.gz"]
+	bioc = "MsBackendRawFileReader"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.1", sha256="6034696b2b131b8b2b55f8dca44a488adefd7daf41a6b00a452a95361820074e")
+	version("1.14.0", commit="a5e44a08d468aa95071ab8c10c3a646d97d1e22d")
+	version("1.8.1", commit="3a566d9dfc622320e01ac613eb5934e23dd75e9a")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-spectra@1.5.8:", type=("build", "run"))

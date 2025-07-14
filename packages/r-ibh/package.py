@@ -12,10 +12,9 @@ class RIbh(RPackage):
 	This package contains methods for calculating Interaction Based Homogeneity to evaluate fitness of gene lists to an interaction network which is useful for evaluation of clustering results and gene list analysis. BioGRID interactions are used in the calculation. The user can also provide their own interactions.
 	"""
 	
-	bioc = "ibh" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ibh_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ibh/ibh_1.50.0.tar.gz"]
+	bioc = "ibh"
 
-	version("1.56.0", tag="RELEASE_3_21")
-	version("1.50.0", sha256="6dda7c7d35077d27f72033179035863ea7b00d9140ee11e7357cb22ef279f7ca")
+	version("1.56.0", commit="9e4677deb05764dce3ebec9c4cd1aed66de6e037")
+	version("1.50.0", commit="2604376ba090a6ee3c7bb38e37ee716b6a265063")
 
 	depends_on("r-simpintlists", type=("build", "run"))

@@ -12,11 +12,10 @@ class RRtcgaCnv(RPackage):
 	Package provides CNV (based on Merge snp) datasets from The Cancer Genome Atlas Project for all cohorts types from http://gdac.broadinstitute.org/. Data format is explained here https://wiki.nci.nih.gov/display/TCGA/Retrieving +Data+Using+the+Data+Matrix. Data from 2015-11-01 snapshot.
 	"""
 	
-	bioc = "RTCGA.CNV" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.CNV_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.CNV/RTCGA.CNV_1.30.0.tar.gz"]
+	bioc = "RTCGA.CNV"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="8c10121e07c6181644f62dc2275a3eae5415a980a4f61704cff9c3399f8b6e2a")
+	version("1.36.0", commit="b68d798d4c605ccf9735985f5f3f74b06663beec")
+	version("1.30.0", commit="ca1e744d8a90ea15b1d57fabc6834d6ef5c989e2")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rtcga", type=("build", "run"))

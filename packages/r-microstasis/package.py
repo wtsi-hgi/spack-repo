@@ -13,11 +13,10 @@ class RMicrostasis(RPackage):
 	"""
 	
 	homepage = "https://doi.org/10.1093/bib/bbac055"
-	bioc = "microSTASIS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/microSTASIS_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/microSTASIS/microSTASIS_1.2.0.tar.gz"]
+	bioc = "microSTASIS"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="9ca497654f2e36d340ea7efad8792b625c30dde10400ae83284464d9ba00a266")
+	version("1.8.0", commit="9539f1cc829644285a0c265558bc247aadcc2330")
+	version("1.2.0", commit="a3057b219688442e8b61bbfd6db50ffda9831aeb")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

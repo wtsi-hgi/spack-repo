@@ -12,11 +12,10 @@ class RScatacExplorer(RPackage):
 	This package provides a tool to search and download a collection of publicly available single cell ATAC-seq datasets and their metadata. scATAC-Explorer aims to act as a single point of entry for users looking to study single cell ATAC-seq data. Users can quickly search available datasets using the metadata table and download datasets of interest for immediate analysis within R.
 	"""
 	
-	bioc = "scATAC.Explorer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scATAC.Explorer_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scATAC.Explorer/scATAC.Explorer_1.8.0.tar.gz"]
+	bioc = "scATAC.Explorer"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="c83d5b3cdd281d073db17c058b9ee01d1a939d56538183bd0b0fe001f3654ae2")
+	version("1.14.0", commit="0812e0aba6126b4a446072afd1796b1703557426")
+	version("1.8.0", commit="133348d7a5c6c6c9b75e4b4f3e5ca0856dbff27c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

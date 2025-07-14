@@ -12,11 +12,10 @@ class RAirway(RPackage):
 	This package provides a RangedSummarizedExperiment object of read counts in genes for an RNA-Seq experiment on four human airway smooth muscle cell lines treated with dexamethasone. Details on the gene model and read counting procedure are provided in the package vignette. The citation for the experiment is: Himes BE, Jiang X, Wagner P, Hu R, Wang Q, Klanderman B, Whitaker RM, Duan Q, Lasky-Su J, Nikolos C, Jester W, Johnson M, Panettieri R Jr, Tantisira KG, Weiss ST, Lu Q. 'RNA-Seq Transcriptome Profiling Identifies CRISPLD2 as a Glucocorticoid Responsive Gene that Modulates Cytokine Function in Airway Smooth Muscle Cells.' PLoS One. 2014 Jun 13;9(6):e99625. PMID: 24926665. GEO: GSE52778.
 	"""
 	
-	bioc = "airway" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/airway_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/airway/airway_1.22.0.tar.gz"]
+	bioc = "airway"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="79713bc8a6078ba93f306e5e8e7ba74aa09b7fb354153112e48dedaf0c5f45f7")
+	version("1.28.0", commit="4896ff291678557f8452060b251750f01f51c115")
+	version("1.22.0", commit="71d0bfbb50836f86e625d3e9a6b628eb90f5a3a4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

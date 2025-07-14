@@ -13,11 +13,10 @@ class REpitxdb(RPackage):
 	"""
 	
 	homepage = "https://github.com/FelixErnst/EpiTxDb"
-	bioc = "EpiTxDb" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EpiTxDb_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EpiTxDb/EpiTxDb_1.14.1.tar.gz"]
+	bioc = "EpiTxDb"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.1", sha256="ad425f358f3cd7b31efb8c29069b204bd9b83d90cf13638dd92f704826c78762")
+	version("1.20.0", commit="08a3770502b833e01f2afad968a5b50edc2ab1d4")
+	version("1.14.1", commit="2c66df2a115d0b81b1e7c2b0c4942b26b8311ff3")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

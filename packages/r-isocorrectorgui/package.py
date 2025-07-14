@@ -13,11 +13,10 @@ class RIsocorrectorgui(RPackage):
 	"""
 	
 	homepage = "https://genomics.ur.de/files/IsoCorrectoRGUI"
-	bioc = "IsoCorrectoRGUI" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IsoCorrectoRGUI_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IsoCorrectoRGUI/IsoCorrectoRGUI_1.18.0.tar.gz"]
+	bioc = "IsoCorrectoRGUI"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="9953d5aa15a6c18f898f4533e83d395b0c7e2121d22f2f9fb0a6c5e0c14cd7c0")
+	version("1.24.0", commit="fa99172ecaf6f2df6be96e4c171ef75a6cdee78e")
+	version("1.18.0", commit="ea93729f2fcc321564059eb8551b1174266e815d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-isocorrector", type=("build", "run"))

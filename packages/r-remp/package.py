@@ -13,11 +13,10 @@ class RRemp(RPackage):
 	"""
 	
 	homepage = "https://github.com/YinanZheng/REMP"
-	bioc = "REMP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/REMP_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/REMP/REMP_1.26.0.tar.gz"]
+	bioc = "REMP"
 
-	version("1.32.1", tag="RELEASE_3_21")
-	version("1.26.0", sha256="9164c082be8a4cd3b8ab89f1859b4d5e2bf54d1ee4d37be49d6c5e10dbeadea4")
+	version("1.32.1", commit="432f6f631673ab32bf7baa237340f8865af8792f")
+	version("1.26.0", commit="ee4ee19e4fd4a36cde2c37ad2ecde7ec5cb76374")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment@1.1.6:", type=("build", "run"))

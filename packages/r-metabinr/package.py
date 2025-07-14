@@ -13,11 +13,10 @@ class RMetabinr(RPackage):
 	"""
 	
 	homepage = "https://github.com/gkanogiannis/metabinR"
-	bioc = "metabinR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metabinR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metabinR/metabinR_1.4.0.tar.gz"]
+	bioc = "metabinR"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="74249d4ac5a4e0681baa4fb184edb8fce70394323bd1e625fdc6d0a318793345")
+	version("1.10.0", commit="f3a779473565455659feeb0dee76222b0887c790")
+	version("1.4.0", commit="34665b4d2c4fd681f6d2d25e38b20f7a94cd42c2")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rjava", type=("build", "run"))

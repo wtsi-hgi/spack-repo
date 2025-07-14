@@ -12,11 +12,10 @@ class RMinfidataepic(RPackage):
 	Data from 3 technical replicates of the cell line GM12878 from the EPIC methylation array.
 	"""
 	
-	bioc = "minfiDataEPIC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/minfiDataEPIC_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/minfiDataEPIC/minfiDataEPIC_1.28.0.tar.gz"]
+	bioc = "minfiDataEPIC"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="f00a13daab8b797ab4ec6b4b19042a25077378e5826404f5a0526644faa15cd4")
+	version("1.34.0", commit="21744660cc5dc093f790aa6914ff5ba889362ab0")
+	version("1.28.0", commit="e036f5dbaa7c8877b227b481b25a6eb4d3ce9a5a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-minfi@1.21.2:", type=("build", "run"))

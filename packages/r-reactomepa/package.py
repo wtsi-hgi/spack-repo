@@ -13,11 +13,10 @@ class RReactomepa(RPackage):
 	"""
 	
 	homepage = "https://yulab-smu.top/biomedical-knowledge-mining-book/"
-	bioc = "ReactomePA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ReactomePA_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ReactomePA/ReactomePA_1.46.0.tar.gz"]
+	bioc = "ReactomePA"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="4cf764415b9361d776e57a5ebed52c783a79e8adda1dd851ded14fe62be5d44d")
+	version("1.52.0", commit="00ffd9ac1f100f966cbd0a4b4b7f2f4354c743ba")
+	version("1.46.0", commit="4fc270b4fcf88ce5791754fd97bf80aa4014fc7c")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

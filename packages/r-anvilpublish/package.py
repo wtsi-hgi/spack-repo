@@ -12,11 +12,10 @@ class RAnvilpublish(RPackage):
 	Use this package to create or update AnVIL workspaces from resources such as R / Bioconductor packages. The metadata about the package (e.g., select information from the package DESCRIPTION file and from vignette YAML headings) are used to populate the 'DASHBOARD'. Vignettes are translated to python notebooks ready for evaluation in AnVIL.
 	"""
 	
-	bioc = "AnVILPublish" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnVILPublish_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnVILPublish/AnVILPublish_1.12.0.tar.gz"]
+	bioc = "AnVILPublish"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="25a53ff66d7b3b21874b1a08d165e16fc6682e34d2b9ab4a3aa8c06110d9657a")
+	version("1.18.0", commit="91625792d3820c8468160fa46b9d7700761b8fe1")
+	version("1.12.0", commit="039a0e49bed66aede3f666219e53b0e727cb3ceb")
 
 	depends_on("r-anvil", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

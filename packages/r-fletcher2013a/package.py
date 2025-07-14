@@ -13,11 +13,10 @@ class RFletcher2013a(RPackage):
 	"""
 	
 	homepage = "http://dx.doi.org/10.1038/ncomms3464"
-	bioc = "Fletcher2013a" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Fletcher2013a_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Fletcher2013a/Fletcher2013a_1.38.0.tar.gz"]
+	bioc = "Fletcher2013a"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="52e9ee6b9a70b900dab31939782675a90b48bddc7375c09268b830064fcc3b13")
+	version("1.44.0", commit="b4c9950cd4594c323f945f07e508aeb47a5b9a3d")
+	version("1.38.0", commit="8b745f266655c85a817462a2b5370de270635bb2")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

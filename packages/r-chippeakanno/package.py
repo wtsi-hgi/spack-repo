@@ -12,11 +12,10 @@ class RChippeakanno(RPackage):
 	The package includes functions to retrieve the sequences around the peak, obtain enriched Gene Ontology (GO) terms, find the nearest gene, exon, miRNA or custom features such as most conserved elements and other transcription factor binding sites supplied by users. Starting 2.0.5, new functions have been added for finding the peaks with bi-directional promoters with summary statistics (peaksNearBDP), for summarizing the occurrence of motifs in peaks (summarizePatternInPeaks) and for adding other IDs to annotated peaks or enrichedGO (addGeneIDs). This package leverages the biomaRt, IRanges, Biostrings, BSgenome, GO.db, multtest and stat packages.
 	"""
 	
-	bioc = "ChIPpeakAnno" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPpeakAnno_3.36.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPpeakAnno/ChIPpeakAnno_3.36.1.tar.gz"]
+	bioc = "ChIPpeakAnno"
 
-	version("3.42.0", tag="RELEASE_3_21")
-	version("3.36.1", sha256="74a309929f41e74b5d8ea0366b233185ea0d982542fe78ebd8292ab45149afca")
+	version("3.42.0", commit="6a1e893f6389abff80e272b2e83e59947e5e3769")
+	version("3.36.1", commit="105ec60266c3c9a234bde33171fe2df9ce96c8a1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-iranges@2.13.12:", type=("build", "run"))

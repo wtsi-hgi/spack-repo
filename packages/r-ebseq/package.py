@@ -12,11 +12,10 @@ class REbseq(RPackage):
 	Differential Expression analysis at both gene and isoform level using RNA-seq data
 	"""
 	
-	bioc = "EBSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EBSeq_2.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EBSeq/EBSeq_2.0.0.tar.gz"]
+	bioc = "EBSeq"
 
-	version("2.6.0", tag="RELEASE_3_21")
-	version("2.0.0", sha256="9c5818ed988a1b3e416f3300ad56d4ae778485deb3b51eb6ee31bea91074a91f")
+	version("2.6.0", commit="c4e5f5a2570923d75efd6c026bd248721f207c8e")
+	version("2.0.0", commit="f1d4e4419988ab98540739c9349559fd437cb59f")
 
 	depends_on("r-blockmodeling", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

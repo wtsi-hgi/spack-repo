@@ -13,11 +13,10 @@ class RBiocbook(RPackage):
 	"""
 	
 	homepage = "https://bioconductor.org/packages/BiocBook"
-	bioc = "BiocBook" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocBook_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocBook/BiocBook_1.0.0.tar.gz"]
+	bioc = "BiocBook"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="346a97c17c56714ba81f3ba9c78df95e3ed5fa599099e7559cbd60844bcd6452")
+	version("1.6.0", commit="aefaa072529177a9709dfdde356648fcce8b8145")
+	version("1.0.0", commit="4b76fd2c6d03837d4f75614ac36062aa937a202a")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

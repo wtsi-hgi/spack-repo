@@ -12,11 +12,10 @@ class RSignaturesearchdata(RPackage):
 	CMAP/LINCS hdf5 databases and other annotations used for signatureSearch software package.
 	"""
 	
-	bioc = "signatureSearchData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/signatureSearchData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/signatureSearchData/signatureSearchData_1.16.0.tar.gz"]
+	bioc = "signatureSearchData"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="7f6892c6f4eca33e68969eacbbdbe9947708b0eb4bfdaf52279acccbeaf1c0f6")
+	version("1.22.0", commit="79c1dd950973b1c28ca99a1a3260cc0f0d8b0d6d")
+	version("1.16.0", commit="71ab882146add47ce103eacfd085540cd9da5225")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

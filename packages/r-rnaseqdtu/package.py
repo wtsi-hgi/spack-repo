@@ -13,11 +13,10 @@ class RRnaseqdtu(RPackage):
 	"""
 	
 	homepage = "https://github.com/thelovelab/rnaseqDTU/"
-	bioc = "rnaseqDTU" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/rnaseqDTU_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/rnaseqDTU/rnaseqDTU_1.22.0.tar.gz"]
+	bioc = "rnaseqDTU"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="6b289ffa5b2e8329cdb4bd2adeebf3d9e87e1033f219be219e150edcb2646734")
+	version("1.28.0", commit="5e81cf1a923d6b5b785bf8eac011da244cdc1d97")
+	version("1.22.0", commit="816777f5cac875d6162894dce8fa90d25d84c447")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-drimseq", type=("build", "run"))

@@ -12,11 +12,10 @@ class RPharmacogx(RPackage):
 	Contains a set of functions to perform large-scale analysis of pharmaco-genomic data. These include the PharmacoSet object for storing the results of pharmacogenomic experiments, as well as a number of functions for computing common summaries of drug-dose response and correlating them with the molecular features in a cancer cell-line.
 	"""
 	
-	bioc = "PharmacoGx" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PharmacoGx_3.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PharmacoGx/PharmacoGx_3.6.0.tar.gz"]
+	bioc = "PharmacoGx"
 
-	version("3.12.2", tag="RELEASE_3_21")
-	version("3.6.0", sha256="b71c8d7dbee66270d2d44456e74771b2713b6566c892c06e106f55c96c461bda")
+	version("3.12.2", commit="6309546a2410eaa09aee8ed0d73d226d6dd52501")
+	version("3.6.0", commit="449b0a6cfcbbfbe27c8cec1f55fbaa4c6f011228")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-coregx", type=("build", "run"))

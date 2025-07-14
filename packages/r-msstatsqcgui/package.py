@@ -13,11 +13,10 @@ class RMsstatsqcgui(RPackage):
 	"""
 	
 	homepage = "http://msstats.org/msstatsqc"
-	bioc = "MSstatsQCgui" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsQCgui_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsQCgui/MSstatsQCgui_1.22.0.tar.gz"]
+	bioc = "MSstatsQCgui"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="d7f34387d63f2d65c608310caf704b739e2436dcfcbb03517c801b6d6769740c")
+	version("1.28.0", commit="916ac36a070a2edce86bfa3b7414ee4226b0dc26")
+	version("1.22.0", commit="edab08dc46d6b07d327d566f1345dd3f2d22e150")
 
 	depends_on("r-shiny", type=("build", "run"))
 	depends_on("r-msstatsqc", type=("build", "run"))

@@ -12,11 +12,10 @@ class RVarianttools(RPackage):
 	Explore, diagnose, and compare variant calls using filters.
 	"""
 	
-	bioc = "VariantTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VariantTools_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VariantTools/VariantTools_1.44.0.tar.gz"]
+	bioc = "VariantTools"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="06671b541ffb8be83ffc6a913bc60f9e85ccdd4712a44cfc8097ec751b236fc5")
+	version("1.50.0", commit="79fdeffc99959be87f1d5ecfb4b7cb2e18f83fa6")
+	version("1.44.0", commit="905b2d22c5e9416ce615a35f636ab83fa01058ad")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-s4vectors@0.17.33:", type=("build", "run"))

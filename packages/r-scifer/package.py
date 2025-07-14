@@ -13,11 +13,10 @@ class RScifer(RPackage):
 	"""
 	
 	homepage = "https://github.com/rodrigarc/scifer"
-	bioc = "scifer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scifer_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scifer/scifer_1.4.0.tar.gz"]
+	bioc = "scifer"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="cbd79f689765c6cabea9ccbd4ecab9f7e847aec07a629ec5e297d18728f037c1")
+	version("1.10.0", commit="ecb014a1f9af4eb3b01abaeeff9c9c1a5685c231")
+	version("1.4.0", commit="8f38aee692cc4fd9826d3944205843601e15bc8d")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-rmarkdown", type=("build", "run"))

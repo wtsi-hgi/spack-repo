@@ -12,11 +12,10 @@ class RMirnameconverter(RPackage):
 	Translating mature miRNA names to different miRBase versions, sequence retrieval, checking names for validity and detecting miRBase version of a given set of names (data from http://www.mirbase.org/).
 	"""
 	
-	bioc = "miRNAmeConverter" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miRNAmeConverter_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miRNAmeConverter/miRNAmeConverter_1.30.0.tar.gz"]
+	bioc = "miRNAmeConverter"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="49c8e90aa13ec6531a8f062ac543b4bd22f3e12ecea2716c7d121fac3b40add9")
+	version("1.36.0", commit="a3c5a5ddfc0d3e0f71f44631a6f84ca95575d901")
+	version("1.30.0", commit="40e10f7d2f304ff06ea0435608d9dd468f8a07bf")
 
 	depends_on("r-mirbaseversions-db", type=("build", "run"))
 	depends_on("r-dbi", type=("build", "run"))

@@ -13,11 +13,10 @@ class RNullranges(RPackage):
 	"""
 	
 	homepage = "https://nullranges.github.io/nullranges"
-	bioc = "nullranges" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nullranges_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nullranges/nullranges_1.8.0.tar.gz"]
+	bioc = "nullranges"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="6adbd452f6605bdafbb66ad7e896d58b49dbc7e4420ce00017207177908c628e")
+	version("1.14.0", commit="def76ef6ac12216b04a18a5134a519e4004b4dae")
+	version("1.8.0", commit="7aa00490ae2ddf6239b244413cc4a22f166adbab")
 
 	depends_on("r-iranges", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

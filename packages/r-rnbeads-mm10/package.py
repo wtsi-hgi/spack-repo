@@ -12,11 +12,10 @@ class RRnbeadsMm10(RPackage):
 	Automatically generated RnBeads annotation package for the assembly mm10.
 	"""
 	
-	bioc = "RnBeads.mm10" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RnBeads.mm10_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RnBeads.mm10/RnBeads.mm10_2.10.0.tar.gz"]
+	bioc = "RnBeads.mm10"
 
-	version("2.16.0", tag="RELEASE_3_21")
-	version("2.10.0", sha256="28b28ad3b3521da37bd630b3c540dd2ad539435c34ba5cd3988234c5dbeb3674", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RnBeads.mm10_2.10.0.tar.gz")
+	version("2.16.0", commit="ab7a2a9d4fca34d689aeee44dacadc2cff1cb8c0")
+	version("2.10.0", commit="d4c15d06b47f6b161df8aecbcc68c8df15276144")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

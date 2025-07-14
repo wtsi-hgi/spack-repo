@@ -13,11 +13,10 @@ class RDebrowser(RPackage):
 	"""
 	
 	homepage = "https://github.com/UMMS-Biocore/debrowser"
-	bioc = "debrowser" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/debrowser_1.30.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/debrowser/debrowser_1.30.2.tar.gz"]
+	bioc = "debrowser"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.2", sha256="5dc2e79bf02010d18b321b5f735fc306cb1744dc8df7deefc73eb0deb5eca53a")
+	version("1.36.0", commit="98043234b60a1fa59cd19771217ae849643d5fa9")
+	version("1.30.2", commit="edf9f4c3bc6ccca5a5072a976dbc94e016502d36")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

@@ -12,11 +12,10 @@ class RTimecoursedata(RPackage):
 	This data package contains timecourse gene expression data sets. The first dataset, from Shoemaker et al, consists of microarray samples from lung tissue of mice exposed to different influenzy strains from 14 timepoints. The two other datasets are leaf and root samples from sorghum crops exposed to pre- and post-flowering drought stress and a control condition, sampled across the plants lifetime.
 	"""
 	
-	bioc = "timecoursedata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/timecoursedata_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/timecoursedata/timecoursedata_1.12.0.tar.gz"]
+	bioc = "timecoursedata"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="63d9711c51103cd8c9c50a8e08d1a94a43216b89bd187ab38158342c1be32482")
+	version("1.18.0", commit="321d66ea997cbd3a048353cfbe3e6e88a31d33b1")
+	version("1.12.0", commit="bf6bcb962b5dd82a4ee858ed7a5c6c569c73d3f2")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -12,11 +12,10 @@ class RCaddV16Hg38(RPackage):
 	Store University of Washington CADD v1.6 hg38 pathogenicity scores AnnotationHub Resource Metadata. Provide provenance and citation information for University of Washington CADD v1.6 hg38 pathogenicity score AnnotationHub resources. Illustrate in a vignette how to access those resources.
 	"""
 	
-	bioc = "cadd.v1.6.hg38" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cadd.v1.6.hg38_3.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/cadd.v1.6.hg38/cadd.v1.6.hg38_3.18.1.tar.gz"]
+	bioc = "cadd.v1.6.hg38"
 
-	version("3.18.1", tag="RELEASE_3_21")
-	version("3.18.1", sha256="c8e0d9965d7a5eafe07e93c6dd646998cbbd844043f4fb2acb5120a0c6e60801", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cadd.v1.6.hg38_3.18.1.tar.gz")
+	version("3.18.1", commit="73d90290e5bb58c3ccd3a2ff336893331d2b8943")
+	version("3.18.1", commit="73d90290e5bb58c3ccd3a2ff336893331d2b8943")
 
 	depends_on("r-genomicscores", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

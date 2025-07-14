@@ -13,11 +13,10 @@ class RClustersignificance(RPackage):
 	"""
 	
 	homepage = "https://github.com/jasonserviss/ClusterSignificance/"
-	bioc = "ClusterSignificance" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ClusterSignificance_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ClusterSignificance/ClusterSignificance_1.30.0.tar.gz"]
+	bioc = "ClusterSignificance"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="2401e2c5911cdf942c2f1d771257ef8536875d2c074781dad67fff54cd12dccb")
+	version("1.36.0", commit="38b3e5d54474ffb52a2d50e515f6f535ee678f4a")
+	version("1.30.0", commit="8e6f5f18733afde352a8af19b648397438f1b281")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-pracma", type=("build", "run"))

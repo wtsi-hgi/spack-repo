@@ -13,11 +13,10 @@ class RScanUpc(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org"
-	bioc = "SCAN.UPC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCAN.UPC_2.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCAN.UPC/SCAN.UPC_2.44.0.tar.gz"]
+	bioc = "SCAN.UPC"
 
-	version("2.50.0", tag="RELEASE_3_21")
-	version("2.44.0", sha256="3e9e055af1175901ab95b3546db7feff4f45f9e4f231711ce91ace7e5dcc9c35")
+	version("2.50.0", commit="ad3cd0f3d1788e089291e15aeaae0b8488e826b0")
+	version("2.44.0", commit="2687df9cb3073e7cbb939e6b84c5a05c557e34e7")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-biobase@2.6:", type=("build", "run"))

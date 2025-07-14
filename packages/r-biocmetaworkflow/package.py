@@ -12,10 +12,9 @@ class RBiocmetaworkflow(RPackage):
 	Bioconductor Workflow describing how to use BiocWorkflowTools to work with a single R Markdown document to submit to both Bioconductor and F1000Research.
 	"""
 	
-	bioc = "BiocMetaWorkflow" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/BiocMetaWorkflow_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/BiocMetaWorkflow/BiocMetaWorkflow_1.24.0.tar.gz"]
+	bioc = "BiocMetaWorkflow"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="10ba2ef2402780213da6ba8b6f84128b04e1f39a5b33e10da963113ea0bdd319")
+	version("1.30.0", commit="cfcf8668b2a9c871942b62b478244b0527e826bc")
+	version("1.24.0", commit="e955a084143b9a157790a722a31029d269f49096")
 
 

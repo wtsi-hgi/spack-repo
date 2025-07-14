@@ -16,15 +16,9 @@ class RBiocsingular(RPackage):
     BiocParallel framework."""
 
     bioc = "BiocSingular"
-    git = "https://git.bioconductor.org/packages/BiocSingular"
-    urls = [
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocSingular_1.18.0.tar.gz",
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocSingular/BiocSingular_1.18.0.tar.gz",
-    ]
-
-    version("1.6.0", commit="11baf1080d6f791439cd5d97357589d6451643d9")
-    version("1.24.0", tag="RELEASE_3_21")
-    version("1.18.0", sha256="634824a2e15c13c9fefbb17605a3861bdced6fc182c8880ae862f2248600377c")
+    git = "https://git.bioconductor.org/packages/BiocSingular"version("1.6.0", commit="11baf1080d6f791439cd5d97357589d6451643d9")
+    version("1.24.0", commit="46b298eb7fe33e9e4fa27edb9d3c6c1970823b15")
+    version("1.18.0", commit="53deff4eb0126e7e6db0c5f0a2385fd4d946af3e")
     version("1.16.0", commit="0db9a691d4eb21551c532d8bde8f64dcc19b6c66")
     version("1.14.0", commit="6dc42b30110e498f6694f18037f991c1006c71b7")
     version("1.12.0", commit="7d1b8f4954e9e6f2c30a5111cdab9aabc8bcc3a6")

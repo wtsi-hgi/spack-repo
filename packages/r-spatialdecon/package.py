@@ -12,11 +12,10 @@ class RSpatialdecon(RPackage):
 	Using spatial or bulk gene expression data, estimates abundance of mixed cell types within each observation. Based on "Advances in mixed cell deconvolution enable quantification of cell types in spatial transcriptomic data", Danaher (2022). Designed for use with the NanoString GeoMx platform, but applicable to any gene expression data.
 	"""
 	
-	bioc = "SpatialDecon" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpatialDecon_1.12.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpatialDecon/SpatialDecon_1.12.3.tar.gz"]
+	bioc = "SpatialDecon"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.3", sha256="760bd0a4dc5d7ac43bbbb0984bb5fd41a42d44982519fbe54c5d047c4b72ca57")
+	version("1.18.0", commit="8fa5b25a34b74c9b5fb51eae38cd5d0d67a92f31")
+	version("1.12.3", commit="9108acd89a3cd950a690d115f402e12b641739de")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-seuratobject", type=("build", "run"))

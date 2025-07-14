@@ -13,11 +13,10 @@ class RTenxio(RPackage):
 	"""
 	
 	homepage = "https://github.com/waldronlab/TENxIO"
-	bioc = "TENxIO" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TENxIO_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TENxIO/TENxIO_1.4.0.tar.gz"]
+	bioc = "TENxIO"
 
-	version("1.10.2", tag="RELEASE_3_21")
-	version("1.4.0", sha256="beece47e217747bf8279d3665963df727e2b685c6912414dbd1f639b0ceb2185")
+	version("1.10.2", commit="68a1c7a894ecd8f38ef8270a18ada167b2fd0680")
+	version("1.4.0", commit="bd46e6468f12aecb21b6390c6c8d65f6364fa787")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

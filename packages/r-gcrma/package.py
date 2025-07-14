@@ -12,9 +12,8 @@ class RGcrma(RPackage):
 	Background adjustment using sequence information."""
 
 	bioc = "gcrma"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gcrma_2.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gcrma/gcrma_2.74.0.tar.gz"]
-	version("2.80.0", tag="RELEASE_3_21")
-	version("2.74.0", sha256="cf1b786c4c10f87eeed374a411e9db0fa45d2f175114b2051a75958b3852361e")
+	version("2.80.0", commit="7ae57bb109769c813405ad9a8cd9ca7d15cbf0ac")
+	version("2.74.0", commit="1ceeafef23eec0669759bff675d15385dda22c33")
 	version("2.72.0", commit="5cfccc7c684283dc3a82830bad75aad254efcb01")
 	version("2.70.0", commit="095f38914525d8812524a3cb38db8075382f8121")
 	version("2.68.0", commit="c14063ff5490fac8d60530826613d728e68b3d66")

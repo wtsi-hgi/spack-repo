@@ -12,11 +12,10 @@ class RRrdpdata(RPackage):
 	Database used by the default RDP Classifier
 	"""
 	
-	bioc = "rRDPData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/rRDPData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/rRDPData/rRDPData_1.22.0.tar.gz"]
+	bioc = "rRDPData"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="4153acb1bf1bdebb4b5c5ee723c6295c1c73a64bf625fa0cdb54fbd3721169a2")
+	version("1.28.0", commit="b06d16c7467e5692b37b7717d1917bb3adb890ae")
+	version("1.22.0", commit="1b0000d5f65e2f128b946d96cae342bb2be6c336")
 
 	depends_on("r-rrdp", type=("build", "run"))
 	depends_on("openjdk", type=("build", "link", "run"))

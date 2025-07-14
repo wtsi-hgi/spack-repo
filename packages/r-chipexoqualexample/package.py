@@ -13,11 +13,10 @@ class RChipexoqualexample(RPackage):
 	"""
 	
 	homepage = "http://www.github.com/keleslab/ChIPexoQualExample"
-	bioc = "ChIPexoQualExample" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ChIPexoQualExample_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ChIPexoQualExample/ChIPexoQualExample_1.26.0.tar.gz"]
+	bioc = "ChIPexoQualExample"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="f337d0f8b38103058fc0bb6a0536df6f34967e54668fbd94056ea2a200ee65ec")
+	version("1.32.0", commit="352ef100c58de19d5e22eff2a8e0adc15f906bf3")
+	version("1.26.0", commit="a18e0d93073a0f96aee7410c9a07b3d66ab388c7")
 
 	depends_on("r@3.3:", type=("build", "run"))
 

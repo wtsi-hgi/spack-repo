@@ -13,11 +13,10 @@ class RStepnorm(RPackage):
 	"""
 	
 	homepage = "http://www.biostat.ucsf.edu/jean/"
-	bioc = "stepNorm" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/stepNorm_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/stepNorm/stepNorm_1.74.0.tar.gz"]
+	bioc = "stepNorm"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="8ababa50c39d6e40d0f7f292bea2820dd88425df0f86680fe27b72ce1f4fc612")
+	version("1.80.0", commit="cc3b995c06658635a448064a728a2d120588ad6a")
+	version("1.74.0", commit="f7acc23850c2812f7de8dec96253be2163804080")
 
 	depends_on("r@1.8:", type=("build", "run"))
 	depends_on("r-marray", type=("build", "run"))

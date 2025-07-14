@@ -13,11 +13,10 @@ class RHarman(RPackage):
 	"""
 	
 	homepage = "http://www.bioinformatics.csiro.au/harman/"
-	bioc = "Harman" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Harman_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Harman/Harman_1.30.0.tar.gz"]
+	bioc = "Harman"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="3750c9d1dff99a6e1bc89b0718f3f5116114e2598e06498744164f3c6b57d9cd")
+	version("1.36.0", commit="a79922a63bab0b6a02f5e88d64ac1df5787ddb40")
+	version("1.30.0", commit="ae40a84f486bafdd94bc856f5e52485255e1fa8f")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -13,10 +13,9 @@ class RAffycontam(RPackage):
 	effectiveness"""
 
 	bioc = "affyContam"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affyContam_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affyContam/affyContam_1.60.0.tar.gz"]
 
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="fb833dc1c34c1d66ff5121b2252d76196b7b5ff1dc35f4e201d451c61426b7cb")
+	version("1.66.0", commit="c70ca4bd1f257a8effc97a68f2682517989df00b")
+	version("1.60.0", commit="f2e21b7d4d700e135ae3bd0fa3531e001a7aa950")
 	version("1.58.0", commit="5e91d79d7653a4f484b62eae7fd7e908de8cb9b6")
 	version("1.56.0", commit="e2b8a4fba1648255eadce954a848f2dd8e22bcb3")
 	version("1.54.0", commit="c5208b48b8881983ff53a4713244327e8ad13b78")

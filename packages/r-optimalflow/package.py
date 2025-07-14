@@ -12,11 +12,10 @@ class ROptimalflow(RPackage):
 	Optimal-transport techniques applied to supervised flow cytometry gating.
 	"""
 	
-	bioc = "optimalFlow" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/optimalFlow_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/optimalFlow/optimalFlow_1.14.0.tar.gz"]
+	bioc = "optimalFlow"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="b97a0a2aa8a800e4fc9c83a266e90a6cf1aae9ed8032185efdf6e18e886c1c3e")
+	version("1.20.0", commit="62702a712395c86c3aecb982a5598060128f3206")
+	version("1.14.0", commit="9d31fbc718f66cacd664cf174f8b5234586a83cb")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-optimalflowdata", type=("build", "run"))

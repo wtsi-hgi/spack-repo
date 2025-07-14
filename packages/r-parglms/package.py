@@ -12,11 +12,10 @@ class RParglms(RPackage):
 	This package provides support for parallelized estimation of GLMs/GEEs, catering for dispersed data.
 	"""
 	
-	bioc = "parglms" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/parglms_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/parglms/parglms_1.34.0.tar.gz"]
+	bioc = "parglms"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="c15ecb94c622db80ff689ff3ea44f487f8176180c2ba004e0594b37c5bb3b916")
+	version("1.40.0", commit="acade9e8d3324273ca462d9705f2b4ba1c0be283")
+	version("1.34.0", commit="610d733e186fe6fe782dc9011b98f3247634716f")
 
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-batchjobs", type=("build", "run"))

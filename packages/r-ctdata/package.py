@@ -12,11 +12,10 @@ class RCtdata(RPackage):
 	Data from publicly available databases (GTEx, CCLE, TCGA and ENCODE) that go with CTexploreR in order to re-define a comprehensive and thoroughly curated list of CT genes and their main characteristics.
 	"""
 	
-	bioc = "CTdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CTdata_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CTdata/CTdata_1.2.0.tar.gz"]
+	bioc = "CTdata"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="86ffadabf93b0537448d214c61db5e10ca6f24b258016685b42debb40ab2c5bd")
+	version("1.8.0", commit="382602eb23f9a54e5bf6313fcbd58f636a90c12f")
+	version("1.2.0", commit="b5173ccf36aae9f36ac5dc6f584b5152231dcd0b")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

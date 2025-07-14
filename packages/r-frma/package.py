@@ -13,11 +13,10 @@ class RFrma(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org"
-	bioc = "frma" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/frma_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/frma/frma_1.54.0.tar.gz"]
+	bioc = "frma"
 
-	version("1.60.0", tag="RELEASE_3_21")
-	version("1.54.0", sha256="272d93b320e8293f6d6690926c8968f39cd3b1794e9bbda0e51474a811292d54")
+	version("1.60.0", commit="19367807be1719dcfaf03b1b88b046a31d4da691")
+	version("1.54.0", commit="6bdb804c2c60f62b2f5da77678d2aaee9e2a4d11")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

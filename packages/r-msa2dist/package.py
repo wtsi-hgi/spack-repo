@@ -13,11 +13,10 @@ class RMsa2dist(RPackage):
 	"""
 	
 	homepage = "https://gitlab.gwdg.de/mpievolbio-it/MSA2dist"
-	bioc = "MSA2dist" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSA2dist_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSA2dist/MSA2dist_1.6.0.tar.gz"]
+	bioc = "MSA2dist"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="3a2cb8cfd1af85866df1ff9b8d8f33a0b691600353e5201853a9b3956e362df8")
+	version("1.12.0", commit="d7a8634defc569af6557bb350e6e392b42f8d161")
+	version("1.6.0", commit="c88df72118c7639191c8be67515187bfde898d5f")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

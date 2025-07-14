@@ -12,11 +12,10 @@ class RRmassbank(RPackage):
 	Workflow to process tandem MS files and build MassBank records. Functions include automated extraction of tandem MS spectra, formula assignment to tandem MS fragments, recalibration of tandem MS spectra with assigned fragments, spectrum cleanup, automated retrieval of compound information from Internet databases, and export to MassBank records.
 	"""
 	
-	bioc = "RMassBank" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RMassBank_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RMassBank/RMassBank_3.12.0.tar.gz"]
+	bioc = "RMassBank"
 
-	version("3.18.0", tag="RELEASE_3_21")
-	version("3.12.0", sha256="a76c9c4f833736a40b2fc5455734cea6a6cf39405b008333068adebf0b49c97d")
+	version("3.18.0", commit="a6e88ed0f2f17f1ba4a958b4559cd8ab149d7394")
+	version("3.12.0", commit="0a05d667ddc09a01885c612601df11cce90205a4")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-xml", type=("build", "run"))

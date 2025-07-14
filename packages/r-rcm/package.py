@@ -13,11 +13,10 @@ class RRcm(RPackage):
 	"""
 	
 	homepage = "https://bioconductor.org/packages/release/bioc/vignettes/RCM/inst/doc/RCMvignette.html/"
-	bioc = "RCM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCM_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RCM/RCM_1.18.0.tar.gz"]
+	bioc = "RCM"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="3b7bfaca7b1e134ee65a09680305f0b4562c8488ad85dfd1d4de94ed2e8ee6f9")
+	version("1.24.0", commit="459b0fca4850f6a267ccf03929a05896527160b5")
+	version("1.18.0", commit="6e8599c538a133b16d0cab3646e842821dab684b")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dbi", type=("build", "run"))

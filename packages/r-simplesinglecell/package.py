@@ -13,14 +13,8 @@ class RSimplesinglecell(RPackage):
 	"""
 
 	homepage = "https://www.bioconductor.org/help/workflows/simpleSingleCell/"
-	bioc = "simpleSingleCell"
-	urls = [
-	    "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/simpleSingleCell_1.26.0.tar.gz",
-	    "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/simpleSingleCell/simpleSingleCell_1.26.0.tar.gz",
-	]
-
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="eac844d7c1ccc76bfa98fc4cc8facd3197f31131a39f478b3605cb71d57e9d49")
+	bioc = "simpleSingleCell"version("1.32.0", commit="bdbb2453d3d84b91cdd63a6b146a34875f23450d")
+	version("1.26.0", commit="ad07eabce25b0dc91f4eb97f15230f8b0616a186")
 
 	depends_on("r-knitr", type=("build", "run"))
 	depends_on("r-callr", type=("build", "run"))

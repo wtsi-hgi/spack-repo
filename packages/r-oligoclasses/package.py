@@ -14,9 +14,8 @@ class ROligoclasses(RPackage):
 	packages."""
 
 	bioc = "oligoClasses"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oligoClasses_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oligoClasses/oligoClasses_1.64.0.tar.gz"]
-	version("1.70.0", tag="RELEASE_3_21")
-	version("1.64.0", sha256="a705c7960e624afbd2a2d64e9437ca10006c1ba101e7243dce7b5f27fd96bbbd")
+	version("1.70.0", commit="6ee1f06122405340225dc97a00a663c9c842d3c7")
+	version("1.64.0", commit="0b4dcaaa871dfdf6559b7b1f4321fe07026fc99e")
 	version("1.62.0", commit="2de6126d2a98f78d6dc80ffeef8bc76782a6dbdf")
 	version("1.60.0", commit="cf9d76c2551ad061d8b882ff1dc0a5cadc64a8a7")
 	version("1.58.0", commit="5544e937913bb0df54c66d738d279c38efeb30cd")

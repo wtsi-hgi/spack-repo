@@ -13,11 +13,10 @@ class RMariner(RPackage):
 	"""
 	
 	homepage = "http://ericscottdavis.com/mariner/"
-	bioc = "mariner" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mariner_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mariner/mariner_1.2.0.tar.gz"]
+	bioc = "mariner"
 
-	version("1.8.1", tag="RELEASE_3_21")
-	version("1.2.0", sha256="10b7c90220d80840c9e530e93888ef31a5df74fae9bef36334190def8c27f28b")
+	version("1.8.1", commit="192d48a7ab80b939ecc233aabe54be064e0a5ee8")
+	version("1.2.0", commit="9906b3239fefe8a51e3343b648cbc2dfcdfeb806")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

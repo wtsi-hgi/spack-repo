@@ -13,11 +13,10 @@ class RTransite(RPackage):
 	"""
 	
 	homepage = "https://transite.mit.edu"
-	bioc = "transite" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/transite_1.20.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/transite/transite_1.20.1.tar.gz"]
+	bioc = "transite"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.1", sha256="550352e6ae6fe1831a2fca8c479f7d5a688969a1adb4ceb0de0c45ce770a3621")
+	version("1.26.0", commit="9e0cd5482a4fad068fe3670a11ac4c1e39b140a6")
+	version("1.20.1", commit="ce194d7924f870dbd7ca26f3432b8f9da7aa2aba")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.26:", type=("build", "run"))

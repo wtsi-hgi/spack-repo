@@ -12,11 +12,10 @@ class RGeomxworkflows(RPackage):
 	Workflows for use with NanoString Technologies GeoMx Technology.  Package provides bioconductor focused workflows for leveraging existing packages (e.g. GeomxTools) to process, QC, and analyze the data.
 	"""
 	
-	bioc = "GeoMxWorkflows" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/GeoMxWorkflows_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/GeoMxWorkflows/GeoMxWorkflows_1.8.0.tar.gz"]
+	bioc = "GeoMxWorkflows"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="63f8f7147a90ef44e3d02f5c01252fff9f02a2d22f05e1f22ef4770bc0dab4ed")
+	version("1.14.0", commit="046581480b28f41f4339f423524e35d5faa14fb2")
+	version("1.8.0", commit="ebedd85559c0265c52961769dbdae2228b95fb95")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-nanostringnctools", type=("build", "run"))

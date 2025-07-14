@@ -12,11 +12,10 @@ class RMacsquantifyr(RPackage):
 	Automatically process the metadata of MACSQuantify FACS sorter. It runs multiple modules: i) imports of raw file and graphical selection of duplicates in well plate, ii) computes statistics on data and iii) can compute combination index.
 	"""
 	
-	bioc = "MACSQuantifyR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MACSQuantifyR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MACSQuantifyR/MACSQuantifyR_1.16.0.tar.gz"]
+	bioc = "MACSQuantifyR"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="a1e9a9c20333d22f719a0d7bf6da85a8a07282ece3b87f295fc9756ac0943d79")
+	version("1.22.0", commit="569537261a80c5a7fc3b86ab06dc8b4bd6f01cc7")
+	version("1.16.0", commit="4ddabf78bdf754d66da8d6d7b0266fba78bc20cc")
 
 	depends_on("r-readxl", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

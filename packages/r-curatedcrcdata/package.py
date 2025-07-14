@@ -13,11 +13,10 @@ class RCuratedcrcdata(RPackage):
 	"""
 	
 	homepage = "https://bitbucket.org/biobakery/curatedcrcdata"
-	bioc = "curatedCRCData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedCRCData_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedCRCData/curatedCRCData_2.34.0.tar.gz"]
+	bioc = "curatedCRCData"
 
-	version("2.40.0", tag="RELEASE_3_21")
-	version("2.34.0", sha256="76f7fbb9b458472e3527ff92a03ee0dadf6ac662d77152606c2a104dff6d0cb7")
+	version("2.40.0", commit="c51a05bb4287d17700656fa33194e4a7d1de3b5b")
+	version("2.34.0", commit="3df2048e8439fca7d7dd43289475512e05a69faf")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-nlme", type=("build", "run"))

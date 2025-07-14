@@ -14,18 +14,13 @@ class RGgtree(RPackage):
 	of phylogenetic trees and other tree-like structures with their annotation
 	data."""
 
-	bioc = "ggtree"
-	urls = [
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggtree_3.10.1.tar.gz",
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggtree/ggtree_3.10.1.tar.gz",
-	]
-	version("3.16.2", tag="RELEASE_3_21")
+	bioc = "ggtree"version("3.16.2", commit="19798cf720a59bb96ec192d761794b2834841153")
 	version("3.8.0", commit="e7c989085d0848e4d5f82aa8000422c71458a9a8")
 	version("3.6.2", commit="431ec37bc0f0159b08a7990ce1d9374e160b9f44")
 	version("3.4.4", commit="8e48d3e2ea445b6c2213f0471462108a7a72b333")
 	version("3.4.0", commit="23f08a3da1829d1bbb6827ed1c4cf878daa4b539")
 	version("3.2.1", commit="d3747e636fe1a6a9e09b56a3a3899208ebd05547")
-	version("3.10.1", sha256="2d8cb88817ca0d14416b4c3aec17cd05e27dc599587888d6d7041f53e02e87dc")
+	version("3.10.1", commit="5014378b1e4ec7942bad948ef0b30ed825700a83")
 	version("3.10.0", md5="7e1894ce01245d811286b0ce1fbe8266")
 
 	patch("rect_to_poly.patch", when="@3.6.2")

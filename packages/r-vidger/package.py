@@ -13,11 +13,10 @@ class RVidger(RPackage):
 	"""
 	
 	homepage = "https://github.com/btmonier/vidger"
-	bioc = "vidger" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vidger_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vidger/vidger_1.22.0.tar.gz"]
+	bioc = "vidger"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="46cfc6b675433b06e41cfd4fa3160c7e2bb06401c4167788a253e2c7e431b4d1")
+	version("1.28.0", commit="41a3c148a43f8722cf0e8616fdd6fcac805afebe")
+	version("1.22.0", commit="c0d4628049dea1e1cbc567c5c5a916b093939570")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

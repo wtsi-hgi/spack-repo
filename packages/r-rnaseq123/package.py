@@ -13,11 +13,10 @@ class RRnaseq123(RPackage):
 	"""
 	
 	homepage = "https://f1000research.com/articles/5-1408/v3"
-	bioc = "RNAseq123" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/RNAseq123_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/RNAseq123/RNAseq123_1.26.0.tar.gz"]
+	bioc = "RNAseq123"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="09cd986a0f450de693133e5235fb82d2142ac023b2207cc7eaf7db46c789c5f6", url="https://www.bioconductor.org/packages/3.18/workflows/src/contrib/RNAseq123_1.26.0.tar.gz")
+	version("1.32.0", commit="25984b20bfe8d7b9b45a6f59d3031a65b98d202f")
+	version("1.26.0", commit="40f3611cbe2af77ab0aabc80abe15aaebe3e3dee")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-glimma@1.1.9:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RGscreend(RPackage):
 	"""
 	
 	homepage = "https://github.com/imkeller/gscreend"
-	bioc = "gscreend" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gscreend_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gscreend/gscreend_1.16.1.tar.gz"]
+	bioc = "gscreend"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.1", sha256="b0189af623197a0c5691e6378dcf002242eb6dfcf11b83ca01fd663594d80dbe")
+	version("1.22.0", commit="b325a7bf5a085bce9701d092c52a71db8acc8072")
+	version("1.16.1", commit="c8d008c4512305a401ca26a8aaad60476056211f")
 	version("1.16.0", commit="b3333031ccee5ec81e3c05a62d40cee335f100dc")
 
 	depends_on("r@3.6:", type=("build", "run"))

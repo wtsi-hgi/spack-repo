@@ -12,11 +12,10 @@ class RGsreg(RPackage):
 	A package for gene set analysis based on the variability of expressions as well as a method to detect Alternative Splicing Events . It implements DIfferential RAnk Conservation (DIRAC) and gene set Expression Variation Analysis (EVA) methods. For detecting Differentially Spliced genes, it provides an implementation of the Spliced-EVA (SEVA).
 	"""
 	
-	bioc = "GSReg" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSReg_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSReg/GSReg_1.36.0.tar.gz"]
+	bioc = "GSReg"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="9ba8a3544618d4f74640e9674d641888c0a29edccf094e0c71744d4650989441")
+	version("1.42.0", commit="32b2332f1165083d3c4e571e8599a44b39ea952c")
+	version("1.36.0", commit="986592f073d39ec5784b9a1383c420daa7573e0a")
 
 	depends_on("r@2.13.1:", type=("build", "run"))
 	depends_on("r-homo-sapiens", type=("build", "run"))

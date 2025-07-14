@@ -13,11 +13,10 @@ class RBrowserviz(RPackage):
 	"""
 	
 	homepage = "https://gladkia.github.io/BrowserViz/"
-	bioc = "BrowserViz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BrowserViz_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BrowserViz/BrowserViz_2.24.0.tar.gz"]
+	bioc = "BrowserViz"
 
-	version("2.30.0", tag="RELEASE_3_21")
-	version("2.24.0", sha256="256fc9b97531f85a263f732bd2dc3144f1b22f4105e94a35b1d731e8fedd9cd4")
+	version("2.30.0", commit="a71a830f3fdf9ba83f19185066074d6c69d04213")
+	version("2.24.0", commit="e825c9832e3c4b25515e1fd6b0707d46bbce39de")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-jsonlite@1.5:", type=("build", "run"))

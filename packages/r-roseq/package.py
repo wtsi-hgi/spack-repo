@@ -13,11 +13,10 @@ class RRoseq(RPackage):
 	"""
 	
 	homepage = "https://github.com/krishan57gupta/ROSeq"
-	bioc = "ROSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ROSeq_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ROSeq/ROSeq_1.14.0.tar.gz"]
+	bioc = "ROSeq"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="de1c0f4792b14ca7ee479a4ba4807d95f25bd0b29d028921b029127e05431293")
+	version("1.20.0", commit="a086429cde602b7db39a9315f71f0419d0f86565")
+	version("1.14.0", commit="356733ae00114c2e2251509ba8bf6612ac26d1cf")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-pbmcapply", type=("build", "run"))

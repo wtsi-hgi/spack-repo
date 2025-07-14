@@ -12,11 +12,10 @@ class RUsort(RPackage):
 	This package is designed to uncover the intrinsic cell progression path from single-cell RNA-seq data. It incorporates data pre-processing, preliminary PCA gene selection, preliminary cell ordering, feature selection, refined cell ordering, and post-analysis interpretation and visualization.
 	"""
 	
-	bioc = "uSORT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/uSORT_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/uSORT/uSORT_1.28.0.tar.gz"]
+	bioc = "uSORT"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="aabb2a514a808e5dad8c20ea15edbe8d4a82e22f38a1f265d8d7f90e2948b325")
+	version("1.34.0", commit="8d7ef0d20c16e8aca71b8adf2ff3eb181d2adfc1")
+	version("1.28.0", commit="84d19e1d31571d4dc62ff361db7c0a17965c26ec")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

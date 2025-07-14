@@ -13,11 +13,10 @@ class RFgga(RPackage):
 	"""
 	
 	homepage = "https://github.com/fspetale/fgga"
-	bioc = "fgga" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fgga_1.10.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fgga/fgga_1.10.2.tar.gz"]
+	bioc = "fgga"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.2", sha256="d7356dea18ec53ffac06f2e2231a814ec054f786b21cb1a4ab2410a1d71b6db1")
+	version("1.16.0", commit="74a4c71895f4af43a019ca0c54cd627cd60b4add")
+	version("1.10.2", commit="999b166863570ab4d681a42ea178d26f6510f057")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-rbgl", type=("build", "run"))

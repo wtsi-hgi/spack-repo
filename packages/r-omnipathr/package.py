@@ -13,11 +13,10 @@ class ROmnipathr(RPackage):
 	"""
 	
 	homepage = "https://r.omnipathdb.org/"
-	bioc = "OmnipathR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OmnipathR_3.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OmnipathR/OmnipathR_3.10.1.tar.gz"]
+	bioc = "OmnipathR"
 
-	version("3.16.0", tag="RELEASE_3_21")
-	version("3.10.1", sha256="99c3976d8f1e48dc00f5208ee100e8f24e97138cbfef917bdcfaaf0327597ff1")
+	version("3.16.0", commit="08e98a007ccf157943bdcac8134b583c6cce57e4")
+	version("3.10.1", commit="b1b2bab8e17f8e7736a397452bf994e2ab5d11e7")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

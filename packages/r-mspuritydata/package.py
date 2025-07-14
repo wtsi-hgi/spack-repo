@@ -12,10 +12,9 @@ class RMspuritydata(RPackage):
 	Fragmentation spectral libraries and data to test the msPurity package
 	"""
 	
-	bioc = "msPurityData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/msPurityData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/msPurityData/msPurityData_1.30.0.tar.gz"]
+	bioc = "msPurityData"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="40b14402c428e86b209c10363425f18257afff90788bd6e0db7e1723d942c2bd")
+	version("1.36.0", commit="02a305aff24764b10048417051c5a663f3cad0b8")
+	version("1.30.0", commit="0d2354278c3c4320465d354220cc0fadfd1f6c0f")
 
 

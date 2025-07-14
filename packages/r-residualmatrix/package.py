@@ -13,11 +13,10 @@ class RResidualmatrix(RPackage):
 	"""
 	
 	homepage = "https://github.com/LTLA/ResidualMatrix"
-	bioc = "ResidualMatrix" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ResidualMatrix_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ResidualMatrix/ResidualMatrix_1.12.0.tar.gz"]
+	bioc = "ResidualMatrix"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="bbb066105053c04b4d2d5fdbda6b2d2eb708c8e80272354bc1dc3dbf7a38fe1a")
+	version("1.18.0", commit="149fcec9f030c1e7ab09fdc4df355d22e5aa7de9")
+	version("1.12.0", commit="c14a5bb5a9c7855e2dd34c0e1c028082777c3452")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

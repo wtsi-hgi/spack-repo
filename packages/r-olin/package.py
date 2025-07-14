@@ -13,11 +13,10 @@ class ROlin(RPackage):
 	"""
 	
 	homepage = "http://olin.sysbiolab.eu"
-	bioc = "OLIN" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OLIN_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OLIN/OLIN_1.80.0.tar.gz"]
+	bioc = "OLIN"
 
-	version("1.86.0", tag="RELEASE_3_21")
-	version("1.80.0", sha256="d983961e34feb154c35b8bdebe91d6339e7d90bb500cc32ceed38c88ca5052f3")
+	version("1.86.0", commit="64088335029e5dbe805428e16eea0c65108904c6")
+	version("1.80.0", commit="aafe32fc71050e2187a3e3919089a2e237edd3ba")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-locfit", type=("build", "run"))

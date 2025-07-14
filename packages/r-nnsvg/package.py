@@ -13,11 +13,10 @@ class RNnsvg(RPackage):
 	"""
 	
 	homepage = "https://github.com/lmweber/nnSVG"
-	bioc = "nnSVG" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nnSVG_1.6.4.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nnSVG/nnSVG_1.6.4.tar.gz"]
+	bioc = "nnSVG"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.4", sha256="cbac2cec4d3313413718865d3728f7c1b147e25607c2711f9ee96fffd520a00b")
+	version("1.12.0", commit="b308132eccfe7ecd832cd2a0483dc11f19aaa67c")
+	version("1.6.4", commit="f68dffb34cc425b2e67730468523b7076247be2e")
 	version("1.6.0", md5="4af169b12d944eff8ee9d9e3063ff5ea")
 
 	depends_on("r@4.2:", type=("build", "run"))

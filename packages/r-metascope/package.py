@@ -13,14 +13,8 @@ class RMetascope(RPackage):
 	"""
 
 	homepage = "https://github.com/compbiomed/metascope"
-	bioc = "MetaScope"
-	urls = [
-	    "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MetaScope_1.2.0.tar.gz",
-	    "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MetaScope/MetaScope_1.2.0.tar.gz",
-	]
-
-	version("1.8.1", tag="RELEASE_3_21")
-	version("1.2.0", sha256="2a34c164237d9a5117a30aa3db42800f8e3637bb6bc98572e26c37fa0714f772")
+	bioc = "MetaScope"version("1.8.1", commit="b713f8c5532787050e9148783bea6ffcbff6722b")
+	version("1.2.0", commit="fec11ab09908fa0c3ed4f84e8f626318c008ae28")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))

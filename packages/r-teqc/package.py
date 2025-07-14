@@ -12,11 +12,10 @@ class RTeqc(RPackage):
 	Target capture experiments combine hybridization-based (in solution or on microarrays) capture and enrichment of genomic regions of interest (e.g. the exome) with high throughput sequencing of the captured DNA fragments. This package provides functionalities for assessing and visualizing the quality of the target enrichment process, like specificity and sensitivity of the capture, per-target read coverage and so on.
 	"""
 	
-	bioc = "TEQC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TEQC_4.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TEQC/TEQC_4.24.0.tar.gz"]
+	bioc = "TEQC"
 
-	version("4.30.0", tag="RELEASE_3_21")
-	version("4.24.0", sha256="caa54bff006a4f2ee9299ab59385d5d3118876428a721e16c033e249fde0bf58")
+	version("4.30.0", commit="e59e99e67361f625c7a8ff80850a9cbb4deda3ef")
+	version("4.24.0", commit="b13930a015e79833272298eee3af638ab4cf3202")
 
 	depends_on("r-biocgenerics@0.1:", type=("build", "run"))
 	depends_on("r-iranges@1.13.5:", type=("build", "run"))

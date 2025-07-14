@@ -12,11 +12,10 @@ class REscape(RPackage):
 	A bridging R package to facilitate gene set enrichment analysis (GSEA) in the context of single-cell RNA sequencing. Using raw count information, Seurat objects, or SingleCellExperiment format, users can perform and visualize GSEA across individual cells.
 	"""
 	
-	bioc = "escape" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/escape_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/escape/escape_1.12.0.tar.gz"]
+	bioc = "escape"
 
-	version("2.4.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="d69dda267e9346b1d3f10274fb0985409d23060abba609d4e8859eae92b1b12e")
+	version("2.4.0", commit="bc8a5af18b63f47739d9abea5e79f379df8e5ede")
+	version("1.12.0", commit="51adca6cb0e3144ca415e5e49212f6a2181accfb")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

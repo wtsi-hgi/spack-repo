@@ -13,11 +13,10 @@ class RTcgabiolinks(RPackage):
 	"""
 	
 	homepage = "https://github.com/BioinformaticsFMRP/TCGAbiolinks"
-	bioc = "TCGAbiolinks" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TCGAbiolinks_2.30.4.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TCGAbiolinks/TCGAbiolinks_2.30.4.tar.gz"]
+	bioc = "TCGAbiolinks"
 
-	version("2.36.0", tag="RELEASE_3_21")
-	version("2.30.4", sha256="4849e46dc74a38c2273dbd390e19cb67e9051610113147d90edef5bed95b202f")
+	version("2.36.0", commit="8b740221049e15328bb23636b688604d9361a2e3")
+	version("2.30.4", commit="6a9b25716ee4bc00d03c9e027d1da5ab3e1789ec")
 	version("2.30.0", md5="91536d6234ebd992dac8102393c363d0")
 
 	depends_on("r@4:", type=("build", "run"))

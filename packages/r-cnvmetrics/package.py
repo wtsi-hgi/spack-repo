@@ -13,11 +13,10 @@ class RCnvmetrics(RPackage):
 	"""
 	
 	homepage = "https://github.com/krasnitzlab/CNVMetrics"
-	bioc = "CNVMetrics" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNVMetrics_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNVMetrics/CNVMetrics_1.6.0.tar.gz"]
+	bioc = "CNVMetrics"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="95db84f879b5726ae2389ee54bafc8966fa9aeb9bf3c65cd4ffbdb665823c49a")
+	version("1.12.0", commit="1e2c592f1e4f13289d61d36552ccf3eb452486fc")
+	version("1.6.0", commit="ce19a59dafafc9ed432654996227682a0425389a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

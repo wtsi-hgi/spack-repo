@@ -12,11 +12,10 @@ class RRuvnormalize(RPackage):
 	RUVnormalize is meant to remove unwanted variation from gene expression data when the factor of interest is not defined, e.g., to clean up a dataset for general use or to do any kind of unsupervised analysis.
 	"""
 	
-	bioc = "RUVnormalize" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RUVnormalize_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RUVnormalize/RUVnormalize_1.36.0.tar.gz"]
+	bioc = "RUVnormalize"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="89123363aaac11558e7126333f241a8f63e78b5ce7bea4c5f0f600b4e2fcaa2a")
+	version("1.42.0", commit="342e8bc186c5864e3785bbabbfbf1765deffc92b")
+	version("1.36.0", commit="16236e946ad5424a61ae3b25a4ba067baed4d00c")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-ruvnormalizedata", type=("build", "run"))

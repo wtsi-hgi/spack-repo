@@ -12,11 +12,10 @@ class RGdr(RPackage):
 	Package is a part of the gDR suite. It reexports functions from other packages in the gDR suite that contain critical processing functions and utilities. The vignette walks through the full processing pipeline for drug response analyses that the gDR suite offers.
 	"""
 	
-	bioc = "gDR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gDR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gDR/gDR_1.0.0.tar.gz"]
+	bioc = "gDR"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="a9d1ebab30108c72a544a933c49264aad4435ae79e01f478ee6dd8d07c93e57d")
+	version("1.6.0", commit="415ca31b1beefb5374672d71b476cf862e2c0fa2")
+	version("1.0.0", commit="3b047b8962172654687ec093f75f861f65df0a92")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-gdrcore@0.99.12:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RMgsa(RPackage):
 	"""
 	
 	homepage = "https://github.com/sba1/mgsa-bioc"
-	bioc = "mgsa" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mgsa_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mgsa/mgsa_1.50.0.tar.gz"]
+	bioc = "mgsa"
 
-	version("1.56.0", tag="RELEASE_3_21")
-	version("1.50.0", sha256="69a1e9cfb91e52a022dad737d1ca173aaddaf0523a7e3e233e66a253cd1c0d8c")
+	version("1.56.0", commit="d41a5d21c593781b09f7d9d221e46c7971aab06b")
+	version("1.50.0", commit="9aaf4281d60ab4fd30142410eb33c1c0b027bd36")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

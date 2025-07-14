@@ -12,11 +12,10 @@ class RHelloranges(RPackage):
 	Translates bedtools command-line invocations to R code calling functions from the Bioconductor *Ranges infrastructure. This is intended to educate novice Bioconductor users and to compare the syntax and semantics of the two frameworks.
 	"""
 	
-	bioc = "HelloRanges" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HelloRanges_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HelloRanges/HelloRanges_1.28.0.tar.gz"]
+	bioc = "HelloRanges"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="f0d1b197fc916d7994d35dcd492158859f063790899e2cdac318fbd9232cfd5f")
+	version("1.34.0", commit="6927ba9e27b67fc9183e7e472904bca89510aa67")
+	version("1.28.0", commit="8cafa1f566252740491d6589690bf621f93cfbc5")
 
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-s4vectors@0.17.39:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RBridgedbr(RPackage):
 	"""
 	
 	homepage = "https://github.com/bridgedb/BridgeDbR"
-	bioc = "BridgeDbR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BridgeDbR_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BridgeDbR/BridgeDbR_2.12.0.tar.gz"]
+	bioc = "BridgeDbR"
 
-	version("2.18.0", tag="RELEASE_3_21")
-	version("2.12.0", sha256="f7f3396a113b22761265b1252f337040048a273007dcc0de35dc19652d05c207")
+	version("2.18.0", commit="f0a2e0cd46f720e4d51e5ff0350b732fc414928a")
+	version("2.12.0", commit="b2989b33298bff24acc8c309218c7e7f630b1fc4")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rjava", type=("build", "run"))

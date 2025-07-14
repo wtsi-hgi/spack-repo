@@ -13,11 +13,10 @@ class RItalicsdata(RPackage):
 	"""
 	
 	homepage = "http://bioinfo.curie.fr"
-	bioc = "ITALICSData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ITALICSData_2.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ITALICSData/ITALICSData_2.40.0.tar.gz"]
+	bioc = "ITALICSData"
 
-	version("2.46.0", tag="RELEASE_3_21")
-	version("2.40.0", sha256="16eb578398619c9034196e0f9397df1ca8b42699918fa29bc842d5e93116fd3b")
+	version("2.46.0", commit="c440a8231510e5d9eb8fa76d51846fef00ff6e35")
+	version("2.40.0", commit="90cbb17d8641cf788ee183f919827ec6cbba0168")
 
 	depends_on("r@2:", type=("build", "run"))
 

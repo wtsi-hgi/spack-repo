@@ -12,11 +12,10 @@ class RSsize(RPackage):
 	Functions for computing and displaying sample size information for gene expression arrays.
 	"""
 	
-	bioc = "ssize" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ssize_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ssize/ssize_1.76.0.tar.gz"]
+	bioc = "ssize"
 
-	version("1.82.0", tag="RELEASE_3_21")
-	version("1.76.0", sha256="1cb6061432220cf41a857b05a8c0998ff4555c4fd862b8e0afbfb489250bc42e")
+	version("1.82.0", commit="cc6ab98cd54511fe39bd6b98985f67f8d2ec63ae")
+	version("1.76.0", commit="308c3314eaaa012466d86fcdf94f1721c9a0f0dc")
 
 	depends_on("r-gdata", type=("build", "run"))
 	depends_on("r-xtable", type=("build", "run"))

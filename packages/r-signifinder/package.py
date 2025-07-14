@@ -13,11 +13,10 @@ class RSignifinder(RPackage):
 	"""
 	
 	homepage = "https://github.com/CaluraLab/signifinder"
-	bioc = "signifinder" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/signifinder_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/signifinder/signifinder_1.4.0.tar.gz"]
+	bioc = "signifinder"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="330b2ae04fd1b4d02053dfecc4698efe3543c7ea42e430e0df2598915c2464fa")
+	version("1.10.0", commit="efe5447ab986028f98dcb9e2e6afbc46e1c886cd")
+	version("1.4.0", commit="b8e4f6d484977c87c534e13acbe8b72dcd578897")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

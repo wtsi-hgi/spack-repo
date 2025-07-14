@@ -13,11 +13,10 @@ class RNdexr(RPackage):
 	"""
 	
 	homepage = "https://github.com/frankkramer-lab/ndexr"
-	bioc = "ndexr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ndexr_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ndexr/ndexr_1.24.0.tar.gz"]
+	bioc = "ndexr"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="728b4cd6496bb33609336185b8d3f052476fd1632768df6b5e6dd78b2592a7ea")
+	version("1.30.0", commit="26b94e3da93edcf19c5bb098105a72884cfcd08f")
+	version("1.24.0", commit="dd2784377093893a5bc4d9794701c3a43efd047a")
 
 	depends_on("r-rcx", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

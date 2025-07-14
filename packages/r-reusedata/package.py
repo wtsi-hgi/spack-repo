@@ -13,11 +13,10 @@ class RReusedata(RPackage):
 	"""
 	
 	homepage = "https://github.com/rworkflow/ReUseData"
-	bioc = "ReUseData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ReUseData_1.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ReUseData/ReUseData_1.2.2.tar.gz"]
+	bioc = "ReUseData"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.2", sha256="000e6a6e63bc9bb3e5e495e39b5c43cd19412451893a681266ce1500b6b42dfb")
+	version("1.8.0", commit="601a107e05143557af3bb7d7a8c4a320b15d7f15")
+	version("1.2.2", commit="836e03fa72d771d72efe76d3382e8b7d7d81be60")
 
 	depends_on("r-rcwl", type=("build", "run"))
 	depends_on("r-rcwlpipelines", type=("build", "run"))

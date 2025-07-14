@@ -12,11 +12,10 @@ class RBiocgraph(RPackage):
 	This package provides examples and code that make use of the different graph related packages produced by Bioconductor.
 	"""
 	
-	bioc = "biocGraph" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biocGraph_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biocGraph/biocGraph_1.64.0.tar.gz"]
+	bioc = "biocGraph"
 
-	version("1.70.0", tag="RELEASE_3_21")
-	version("1.64.0", sha256="b4e686f6cadec0ac555f86a2cc5fde8da1d749cb3caeba65186515e5365fc0fb")
+	version("1.70.0", commit="f223484285d841dad3b29a785a68c33cac2139e4")
+	version("1.64.0", commit="5928a24c8cac96dee813197c3d858f3896c52d7e")
 
 	depends_on("r-rgraphviz", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

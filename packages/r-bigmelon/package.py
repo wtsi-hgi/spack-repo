@@ -12,11 +12,10 @@ class RBigmelon(RPackage):
 	Methods for working with Illumina arrays using gdsfmt.
 	"""
 	
-	bioc = "bigmelon" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bigmelon_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bigmelon/bigmelon_1.28.0.tar.gz"]
+	bioc = "bigmelon"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="1902f23aa5da3a83d98be3ecd820213b34f4c651d18eea9dd143dc34e67100c9")
+	version("1.34.0", commit="45e85af06cbadcc79e1dba106a14ae3dfc326cf9")
+	version("1.28.0", commit="80fe6d4d6a5513d0b6c3639eaa31084dde46d43b")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-watermelon@1.25:", type=("build", "run"))

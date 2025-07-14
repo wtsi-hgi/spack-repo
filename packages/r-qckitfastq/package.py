@@ -12,11 +12,10 @@ class RQckitfastq(RPackage):
 	Assessment of FASTQ file format with multiple metrics including quality score, sequence content, overrepresented sequence and Kmers.
 	"""
 	
-	bioc = "qckitfastq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qckitfastq_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qckitfastq/qckitfastq_1.18.0.tar.gz"]
+	bioc = "qckitfastq"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="211a464555f33c445beadd2d0a5b0b4db853f70fc89669f50890e96ad1634939")
+	version("1.24.0", commit="c160df29fc8b29ff6a6ab04dc858c6a5b3e9c6c1")
+	version("1.18.0", commit="ac8f01862d69588fd6e25d2b6aa74ce9f4215253")
 
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

@@ -12,11 +12,10 @@ class RBiodist(RPackage):
 	A collection of software tools for calculating distance measures.
 	"""
 	
-	bioc = "bioDist" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bioDist_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bioDist/bioDist_1.74.0.tar.gz"]
+	bioc = "bioDist"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="bf2b9c5d478f2845cb73c23bb1c4a0f0070fbb6c6d20cc36274ff18496f6f759")
+	version("1.80.0", commit="6c5ab76031a4769fee5cb2a57839b6b1f8f8f486")
+	version("1.74.0", commit="89a00b0c9395d1dcc742a2db17cc7696d540cd18")
 
 	depends_on("r@2:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

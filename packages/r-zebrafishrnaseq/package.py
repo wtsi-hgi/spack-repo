@@ -12,11 +12,10 @@ class RZebrafishrnaseq(RPackage):
 	Gene-level read counts from RNA-Seq for gallein-treated and control zebrafish.
 	"""
 	
-	bioc = "zebrafishRNASeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/zebrafishRNASeq_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/zebrafishRNASeq/zebrafishRNASeq_1.22.0.tar.gz"]
+	bioc = "zebrafishRNASeq"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="ff69ff07ef159cbc57758e38995d654a46ec3f4af41d6ce1ed7f664064781a3a")
+	version("1.28.0", commit="572433216119f1d7bda8f678cdb05f04a9b7cdc8")
+	version("1.22.0", commit="15abb4d799b8b64807cb2ab2bdb3406ebd9ca7df")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

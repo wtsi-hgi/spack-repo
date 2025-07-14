@@ -12,11 +12,10 @@ class RGwasBayes(RPackage):
 	This package is built to perform GWAS analysis using Bayesian techniques. Currently, GWAS.BAYES has functionality for the implementation of BICOSS for Gaussian phenotypes (Williams, J., Ferreira, M. A., and Ji, T. (2022). BICOSS: Bayesian iterative conditional stochastic search for GWAS. BMC Bioinformatics 23, 475). The research related to this package was supported in part by National Science Foundation awards DMS 1853549, DMS 1853556, and DMS 2054173.
 	"""
 	
-	bioc = "GWAS.BAYES" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GWAS.BAYES_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GWAS.BAYES/GWAS.BAYES_1.12.0.tar.gz"]
+	bioc = "GWAS.BAYES"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="4b7b8bd9f541a6dba8ac812683bc160def6b8605d1fca7a86ff5887b2cb97fec")
+	version("1.18.0", commit="6dc4c8cad8d77f8606b33818eca841917d2aaa4a")
+	version("1.12.0", commit="eef3a9f73a8c77c1d8d247c7876d502471a84c98")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-ga@3.2:", type=("build", "run"))

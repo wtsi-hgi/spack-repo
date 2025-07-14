@@ -12,11 +12,10 @@ class RMofadata(RPackage):
 	A collection of datasets to accompany the R package MOFA and illustrate running and analysing MOFA models.
 	"""
 	
-	bioc = "MOFAdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MOFAdata_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MOFAdata/MOFAdata_1.18.0.tar.gz"]
+	bioc = "MOFAdata"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="c1e32c68192a91e9174f345cfbc97b73879594b0182fd51642ef2047db4885de")
+	version("1.24.0", commit="65717db0de077d3f4b0e995355ca15fa32b1ab6f")
+	version("1.18.0", commit="f0c52b30320688b8e08abcd6cd532b914007cc4a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

@@ -16,11 +16,10 @@ class RDmrcate(RPackage):
 	Includes GRanges generation and plotting functions."""
 
 	bioc = "DMRcate"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DMRcate_2.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DMRcate/DMRcate_2.16.1.tar.gz"]
-	version("3.4.0", tag="RELEASE_3_21")
+	version("3.4.0", commit="e89bf7fd1dbf7b531e3d420b893dbaa0cd69b189")
 	version("2.8.5", commit="c65dc79a33a047c10932a98b3383709a6bcb8903")
 	version("2.4.1", commit="bc6242a0291a9b997872f575a4417d38550c9550")
-	version("2.16.1", sha256="7c5033b7455c81cb24b7a96002664e11d6cd3c908e4ae9c3a162a32765bdbda5")
+	version("2.16.1", commit="4cd23978fcc74bc5cd22d48e756f454532a4478f")
 	version("2.14.0", commit="6e7bae0917001e7664f01c3f8d261f9fe28c2f4d")
 	version("2.12.0", commit="560dd5067b05715631739d0fb58ef9cebdbf7078")
 	version("2.10.0", commit="81e83701da5c55ac83d0e0b5e640a9d431f09551")

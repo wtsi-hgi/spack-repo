@@ -13,11 +13,10 @@ class RDemuxmix(RPackage):
 	"""
 	
 	homepage = "https://github.com/huklein/demuxmix"
-	bioc = "demuxmix" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/demuxmix_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/demuxmix/demuxmix_1.4.0.tar.gz"]
+	bioc = "demuxmix"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="7c75413797bcd86cb1c83372f02c3361666d47930ba3a52da5498e0bb52d8a83")
+	version("1.10.0", commit="e0d9b04dfe639807ddd7e26aa6a6abb091065c2d")
+	version("1.4.0", commit="4cd7194d9c00735dd9032066220c75e4eac0e3d8")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

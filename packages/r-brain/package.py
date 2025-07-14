@@ -12,11 +12,10 @@ class RBrain(RPackage):
 	Package for calculating aggregated isotopic distribution and exact center-masses for chemical substances (in this version composed of C, H, N, O and S). This is an implementation of the BRAIN algorithm described in the paper by J. Claesen, P. Dittwald, T. Burzykowski and D. Valkenborg.
 	"""
 	
-	bioc = "BRAIN" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BRAIN_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BRAIN/BRAIN_1.48.0.tar.gz"]
+	bioc = "BRAIN"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="0e61d7e2b43d78a2645f69eb729ee7d3a00936e4abd9642c59f4921b20154217")
+	version("1.54.0", commit="e7bf6b8e2bd9f2d73f1f02c7cbe63fdd78eb6c04")
+	version("1.48.0", commit="735542d1c3f917a2287373bb653bb5df5c1974a9")
 
 	depends_on("r@2.8.1:", type=("build", "run"))
 	depends_on("r-polynomf", type=("build", "run"))

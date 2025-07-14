@@ -12,10 +12,9 @@ class RCellmapper(RPackage):
 	Infers cell type-specific expression based on co-expression similarity with known cell type marker genes. Can make accurate predictions using publicly available expression data, even when a cell type has not been isolated before.
 	"""
 	
-	bioc = "CellMapper" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellMapper_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellMapper/CellMapper_1.28.0.tar.gz"]
+	bioc = "CellMapper"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="9bef07abde4a48a08e40991c52cb98a6e55d3cbb79fcdf20b1bb60c5019f49e5")
+	version("1.34.0", commit="1d8ae527c83831702ff75d77fa728255e8f92a6b")
+	version("1.28.0", commit="995d67d72a956114cd1283ed1a4ceee06071c5bd")
 
 	depends_on("r-s4vectors", type=("build", "run"))

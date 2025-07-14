@@ -13,10 +13,9 @@ class RBambu(RPackage):
 	"""
 	
 	homepage = "https://github.com/GoekeLab/bambu"
-	bioc = "bambu" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bambu_3.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bambu/bambu_3.4.0.tar.gz", "https://www.bioconductor.org/packages/release/bioc/src/contrib/bambu_3.6.0.tar.gz"]
+	bioc = "bambu"
 
-	version("3.10.1", tag="RELEASE_3_21")
+	version("3.10.1", commit="6647ed583046f5405efdfdb4f95c90ecede03bca")
 	version("3.6.0", md5="6dea2d02b1715b82c09c0b1eed6a2adb")
 	version("3.4.0", md5="900e0e67c251f12989154113c54d2b32")
 

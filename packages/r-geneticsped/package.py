@@ -13,11 +13,10 @@ class RGeneticsped(RPackage):
 	"""
 	
 	homepage = "http://rgenetics.org"
-	bioc = "GeneticsPed" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneticsPed_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneticsPed/GeneticsPed_1.64.0.tar.gz"]
+	bioc = "GeneticsPed"
 
-	version("1.70.0", tag="RELEASE_3_21")
-	version("1.64.0", sha256="c8d7140b0f35e1a563c56480f8d6bc497d02683604b4aa9dae0d23e8737b592f")
+	version("1.70.0", commit="340bd0d74c563d4415354bef97aac7e8ff62294c")
+	version("1.64.0", commit="37359e5743a1e7c31af85e8525c68c2e5dd7eb23")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

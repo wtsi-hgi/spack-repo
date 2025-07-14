@@ -13,11 +13,10 @@ class RScdataviz(RPackage):
 	"""
 	
 	homepage = "https://github.com/kevinblighe/scDataviz"
-	bioc = "scDataviz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDataviz_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scDataviz/scDataviz_1.12.0.tar.gz"]
+	bioc = "scDataviz"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="47014950226c908536bac3ad2f9bd420a0b61d34221a7c394b9d2426579f15c1")
+	version("1.18.0", commit="3e7aa1bb4d5e4c238645f15e45621ca3c4e69973")
+	version("1.12.0", commit="669e4634363311fb7214e3adebaadc0194a8295b")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

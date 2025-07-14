@@ -13,11 +13,10 @@ class RMetagene2(RPackage):
 	"""
 	
 	homepage = "https://github.com/ArnaudDroitLab/metagene2"
-	bioc = "metagene2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metagene2_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metagene2/metagene2_1.18.0.tar.gz"]
+	bioc = "metagene2"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="40912fc8f7a4d447a2b0a3a969d331cefce83e28c5a428aef4c222a1212493f0", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metagene2_1.18.0.tar.gz")
+	version("1.24.0", commit="1f6ea5455a30d0c69cb80bf5d83e419de36c3e03")
+	version("1.18.0", commit="32c93af8af8a899e5f8fd76f3b7799f5aa88a5cf")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-r6@2:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RGcapc(RPackage):
 	"""
 	
 	homepage = "https://github.com/tengmx/gcapc"
-	bioc = "gcapc" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gcapc_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gcapc/gcapc_1.26.0.tar.gz"]
+	bioc = "gcapc"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="c1cb0d9fe184d6bc9e00a08f9827ad9be26923fa54392147cf125ce433b99c36")
+	version("1.32.0", commit="bd66b5c2ddd8abecd32f6eacd3b0276b088a6d47")
+	version("1.26.0", commit="ceff70c87512108c3dfe62002ba0cc8bccebddb1")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

@@ -12,11 +12,10 @@ class RVarianttoolsdata(RPackage):
 	Data from the sequencing of a 50/50 mixture of HapMap trio samples NA12878 (CEU) and NA19240 (YRI), subset to the TP53 region.
 	"""
 	
-	bioc = "VariantToolsData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/VariantToolsData_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/VariantToolsData/VariantToolsData_1.26.0.tar.gz"]
+	bioc = "VariantToolsData"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="d5adcce32790706f8bca6948c92c9d77ad3efd4a65f91e2169af835bc5e5484a")
+	version("1.32.0", commit="a339056add002a92800aee39509fd37c3551f40a")
+	version("1.26.0", commit="946f7310e616c2ffa84001a44b7cbbec6e06d202")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-variantannotation@1.7.35:", type=("build", "run"))

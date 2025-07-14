@@ -12,11 +12,10 @@ class RQuantiseqr(RPackage):
 	This package provides a streamlined workflow for the quanTIseq method, developed to perform the quantification of the Tumor Immune contexture from RNA-seq data. The quantification is performed against the TIL10 signature (dissecting the contributions of ten immune cell types), carefully crafted from a collection of human RNA-seq samples. The TIL10 signature has been extensively validated using simulated, flow cytometry, and immunohistochemistry data.
 	"""
 	
-	bioc = "quantiseqr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/quantiseqr_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/quantiseqr/quantiseqr_1.10.0.tar.gz"]
+	bioc = "quantiseqr"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="9e50016461c1fda327e55aa2f9849bc0f0b25554c8935aaa997cd137b5d75e05")
+	version("1.16.0", commit="b7e6a4737761f45bbecfcb8f562ce891e633ab99")
+	version("1.10.0", commit="3ea45f1a1556ad06b5bcf67fb20374df3bcdb434")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

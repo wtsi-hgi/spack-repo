@@ -13,11 +13,10 @@ class RRaids(RPackage):
 	"""
 	
 	homepage = "https://krasnitzlab.github.io/RAIDS/"
-	bioc = "RAIDS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RAIDS_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RAIDS/RAIDS_1.0.0.tar.gz"]
+	bioc = "RAIDS"
 
-	version("1.6.1", tag="RELEASE_3_21")
-	version("1.0.0", sha256="0208eb91f74930bbcebbec4844b708878391831b9097c0080d36cce9c78c5799")
+	version("1.6.1", commit="cf24404d8b74392f6d73a50e9c13dd5c1091f616")
+	version("1.0.0", commit="12ea1e76f214b2a7a1e1693e2bd023c998411c32")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-gdsfmt", type=("build", "run"))

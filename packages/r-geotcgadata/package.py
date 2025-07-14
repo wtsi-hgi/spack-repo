@@ -13,11 +13,10 @@ class RGeotcgadata(RPackage):
 	"""
 	
 	homepage = "https://github.com/YuLab-SMU/GeoTcgaData"
-	bioc = "GeoTcgaData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeoTcgaData_2.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeoTcgaData/GeoTcgaData_2.2.0.tar.gz"]
+	bioc = "GeoTcgaData"
 
-	version("2.8.0", tag="RELEASE_3_21")
-	version("2.2.0", sha256="077c28251e23d51c4471b9259dd1246bb26dbaccb3249a67e31356311c8a8bd6")
+	version("2.8.0", commit="a6a54a46977a9980ff24a302f0fbf68901497398")
+	version("2.2.0", commit="e239614918c87af90a0cf7c7f2de0c3607cc7c9a")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

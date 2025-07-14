@@ -13,11 +13,10 @@ class RBasics(RPackage):
 	"""
 	
 	homepage = "https://github.com/catavallejos/BASiCS"
-	bioc = "BASiCS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BASiCS_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BASiCS/BASiCS_2.14.0.tar.gz"]
+	bioc = "BASiCS"
 
-	version("2.20.0", tag="RELEASE_3_21")
-	version("2.14.0", sha256="88a911e7857c514dbebf8c2f45a2f6959ea9bb8804265e18bc5d87126c09c24d")
+	version("2.20.0", commit="7ccf50a9ce6ddd5f337e7578741176d8bcc77100")
+	version("2.14.0", commit="7b60c297a52746703e4099741bd6ddd29f3befa8")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

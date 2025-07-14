@@ -13,11 +13,10 @@ class RUcell(RPackage):
 	"""
 	
 	homepage = "https://github.com/carmonalab/UCell"
-	bioc = "UCell" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/UCell_2.6.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/UCell/UCell_2.6.2.tar.gz"]
+	bioc = "UCell"
 
-	version("2.12.0", tag="RELEASE_3_21")
-	version("2.6.2", sha256="ad8c56756ac2645f02cfbb00e6aec756528ebc729413ba9af57ff8e3425a6403")
+	version("2.12.0", commit="af3d550c885528e9e2a6345ed424e1a055f7c9be")
+	version("2.6.2", commit="06be2dfaab536547ba220e6246fdf3249a9a6c5b")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-data-table@1.13.6:", type=("build", "run"))

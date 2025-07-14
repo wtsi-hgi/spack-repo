@@ -13,11 +13,10 @@ class RPeco(RPackage):
 	"""
 	
 	homepage = "https://github.com/jhsiao999/peco"
-	bioc = "peco" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/peco_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/peco/peco_1.14.0.tar.gz"]
+	bioc = "peco"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="744b71161116554fe1cb66a475531c2a08e2182d3d93c3bf32cce9d48c4f1f4a")
+	version("1.20.0", commit="a577f45417ce9c647a4ab851310378477a046556")
+	version("1.14.0", commit="52a5c2d0ce022c81ae84adc51080b517651dc0fe")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

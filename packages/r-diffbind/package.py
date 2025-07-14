@@ -13,11 +13,10 @@ class RDiffbind(RPackage):
 	"""
 	
 	homepage = "https://www.cruk.cam.ac.uk/core-facilities/bioinformatics-core/software/DiffBind"
-	bioc = "DiffBind" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DiffBind_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DiffBind/DiffBind_3.12.0.tar.gz"]
+	bioc = "DiffBind"
 
-	version("3.18.0", tag="RELEASE_3_21")
-	version("3.12.0", sha256="069926f90bef2cf148fa644b01cd63d7ec558e2be526cbd078ecb2401de98cda")
+	version("3.18.0", commit="b4b3688c111eb425aa9e738c0d28e616fc1eb9ca")
+	version("3.12.0", commit="00284e84a4eb77795b27a73c232665a1567fed1a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

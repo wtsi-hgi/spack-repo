@@ -12,11 +12,10 @@ class RFlowspecs(RPackage):
 	This package is intended to fill the role of conventional cytometry pre-processing software, for spectral decomposition, transformation, visualization and cleanup, and to aid further downstream analyses, such as with DepecheR, by enabling transformation of flowFrames and flowSets to dataframes. Functions for flowCore-compliant automatic 1D-gating/filtering are in the pipe line. The package name has been chosen both as it will deal with spectral cytometry and as it will hopefully give the user a nice pair of spectacles through which to view their data.
 	"""
 	
-	bioc = "flowSpecs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowSpecs_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowSpecs/flowSpecs_1.16.0.tar.gz"]
+	bioc = "flowSpecs"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="cca335859f1b299b4fc8812764d88c528abe4ee29d8f19c651903bcc88ef4435")
+	version("1.22.0", commit="93e3f209c0331f16032944b7c6d61dd1e9eb8493")
+	version("1.16.0", commit="3ebbbb34e11e43761358efe4351471bee968d285")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2@3.1:", type=("build", "run"))

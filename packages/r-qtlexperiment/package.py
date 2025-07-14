@@ -13,11 +13,10 @@ class RQtlexperiment(RPackage):
 	"""
 	
 	homepage = "https://github.com/dunstone-a/QTLExperiment"
-	bioc = "QTLExperiment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QTLExperiment_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QTLExperiment/QTLExperiment_1.0.0.tar.gz"]
+	bioc = "QTLExperiment"
 
-	version("2.0.1", tag="RELEASE_3_21")
-	version("1.0.0", sha256="9d216fb41c637fa3118d42f4475638fab0f5d3a3b6e1e1ecf6244d78388ecc74")
+	version("2.0.1", commit="6cbea032523522aca2a5de258b57cccaccb55bcd")
+	version("1.0.0", commit="eb387bfec58bc3aa7302071d0b5a28ba7d81a4ec")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

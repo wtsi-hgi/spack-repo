@@ -12,11 +12,10 @@ class RHireadsprocessor(RPackage):
 	hiReadsProcessor contains set of functions which allow users to process LM-PCR products sequenced using any platform. Given an excel/txt file containing parameters for demultiplexing and sample metadata, the functions automate trimming of adaptors and identification of the genomic product. Genomic products are further processed for QC and abundance quantification.
 	"""
 	
-	bioc = "hiReadsProcessor" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hiReadsProcessor_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hiReadsProcessor/hiReadsProcessor_1.38.0.tar.gz"]
+	bioc = "hiReadsProcessor"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="ba8924a92f80f6aefa9f64070d5806428c15bd8430410ffdc94de54130246f36")
+	version("1.44.0", commit="2a9fd2b5bad3c155d4d8b0b594395dace500f103")
+	version("1.38.0", commit="d60e18c105c5b00f207341c2352b37a423547552")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

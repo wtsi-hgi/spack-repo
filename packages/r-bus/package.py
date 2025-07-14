@@ -12,11 +12,10 @@ class RBus(RPackage):
 	This package can be used to compute associations among genes (gene-networks) or between genes and some external traits (i.e. clinical).
 	"""
 	
-	bioc = "BUS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BUS_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BUS/BUS_1.58.0.tar.gz"]
+	bioc = "BUS"
 
-	version("1.64.0", tag="RELEASE_3_21")
-	version("1.58.0", sha256="1bd8eb34b1a9633bea42dd203222cfd84197f2874aeeafaef746865e68858e94")
+	version("1.64.0", commit="bdf79c3a9a27bd6ad0011e2dbf4fd4dee3703eb8")
+	version("1.58.0", commit="9dcf16ab8b98421d17fc83d6bb9499932adbf04f")
 
 	depends_on("r@2.3:", type=("build", "run"))
 	depends_on("r-minet", type=("build", "run"))

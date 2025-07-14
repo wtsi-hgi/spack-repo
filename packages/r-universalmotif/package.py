@@ -13,11 +13,10 @@ class RUniversalmotif(RPackage):
 	"""
 	
 	homepage = "https://bioconductor.org/packages/universalmotif/"
-	bioc = "universalmotif" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/universalmotif_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/universalmotif/universalmotif_1.20.0.tar.gz"]
+	bioc = "universalmotif"
 
-	version("1.26.2", tag="RELEASE_3_21")
-	version("1.20.0", sha256="0afa0eea7a6bba5fb3ab958b7f5677c3c85e560783022c39d938caebe9fdc773")
+	version("1.26.2", commit="86b7f1cc2e66cfce14b2d95a2a213977bd6b986d")
+	version("1.20.0", commit="ecd44a7b5a9a1570a4d4d4a118dfe39320775a69")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

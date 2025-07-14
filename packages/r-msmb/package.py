@@ -12,11 +12,10 @@ class RMsmb(RPackage):
 	Data sets for the book 'Modern Statistics for Modern Biology', S.P. Holmes and W. Huber.
 	"""
 	
-	bioc = "MSMB" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MSMB_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MSMB/MSMB_1.20.0.tar.gz"]
+	bioc = "MSMB"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="405b0ac8f361b5011c10c46786ce099660bc5584e5e9ef000101033fd8f109db")
+	version("1.26.0", commit="8c9291fdf4d2c2e7ebe126f7e9f705dad3ce4a8b")
+	version("1.20.0", commit="2f9c7961cb30039c0c397fdaf4bc8915f11cbdf0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))

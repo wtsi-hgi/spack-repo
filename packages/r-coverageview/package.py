@@ -12,11 +12,10 @@ class RCoverageview(RPackage):
 	This package provides a framework for the visualization of genome coverage profiles. It can be used for ChIP-seq experiments, but it can be also used for genome-wide nucleosome positioning experiments or other experiment types where it is important to have a framework in order to inspect how the coverage distributed across the genome
 	"""
 	
-	bioc = "CoverageView" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CoverageView_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CoverageView/CoverageView_1.40.0.tar.gz"]
+	bioc = "CoverageView"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="eed2354ad19f145fbf629bf13538fb64fe1f44fde7d65ae07c7e694b50de41ea")
+	version("1.46.0", commit="df0eab68eca991227600e380eb5a7dae7c160136")
+	version("1.40.0", commit="68638abde811029c16b9ec109a4ef23b30e8301e")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rsamtools@1.19.17:", type=("build", "run"))

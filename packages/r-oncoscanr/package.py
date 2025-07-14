@@ -13,11 +13,10 @@ class ROncoscanr(RPackage):
 	"""
 	
 	homepage = "https://github.com/yannchristinat/oncoscanR"
-	bioc = "oncoscanR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oncoscanR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oncoscanR/oncoscanR_1.4.0.tar.gz"]
+	bioc = "oncoscanR"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="c82a686c987f01ad76ae6bbbb46d9a6ff9d85ac180429b1bad8cb74673a99fa7")
+	version("1.10.0", commit="2597ce696de108f5b2618d34dffdfce6f128ded2")
+	version("1.4.0", commit="6894b0efc3d35e517507e9470717d49e446aee66")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-iranges@2.30:", type=("build", "run"))

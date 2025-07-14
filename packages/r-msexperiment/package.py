@@ -13,11 +13,10 @@ class RMsexperiment(RPackage):
 	"""
 	
 	homepage = "https://github.com/RforMassSpectrometry/MsExperiment"
-	bioc = "MsExperiment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsExperiment_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsExperiment/MsExperiment_1.4.0.tar.gz"]
+	bioc = "MsExperiment"
 
-	version("1.10.1", tag="RELEASE_3_21")
-	version("1.4.0", sha256="cf79cbb2db2cd679285cdd5407a46bbf8f816804f736f375c5b20ff88189a01a")
+	version("1.10.1", commit="953a03226e4a40e90145ba3d05ea5d18cdd7cae0")
+	version("1.4.0", commit="e92dde559097e80af674ffebfde12a80c826a5c8")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-protgenerics@1.9.1:", type=("build", "run"))

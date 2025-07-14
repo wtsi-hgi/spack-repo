@@ -12,11 +12,10 @@ class RBeadarrayusecases(RPackage):
 	Example data files and use cases for processing Illumina BeadArray expression data using Bioconductor
 	"""
 	
-	bioc = "BeadArrayUseCases" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BeadArrayUseCases_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/BeadArrayUseCases/BeadArrayUseCases_1.40.0.tar.gz"]
+	bioc = "BeadArrayUseCases"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="3ed2083d2761d9a59f24ab4bfe2bdb24500e77d92e6c2e5f22f6632ead465914")
+	version("1.46.0", commit="7003003d3d39a5c197b0f3744a76039457339552")
+	version("1.40.0", commit="85aa053bb307c1722d13d3a1a90b6d4df20042b0")
 
 	depends_on("r-beadarray@2.3.18:", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

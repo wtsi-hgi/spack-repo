@@ -13,11 +13,10 @@ class RMaser(RPackage):
 	"""
 	
 	homepage = "https://github.com/DiogoVeiga/maser"
-	bioc = "maser" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maser_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maser/maser_1.20.0.tar.gz"]
+	bioc = "maser"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="85400e5bd64d1197093ade93ddd91418952f23a676359f38184cdaedbc0bfd40")
+	version("1.26.0", commit="2a9cfaf63ea4bd1349fa786b65c4d57b1e352c47")
+	version("1.20.0", commit="2ed0e4a56bfaf208fd2e02b898bd322e313c28c7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

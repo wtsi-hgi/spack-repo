@@ -13,11 +13,10 @@ class RGseabenchmarker(RPackage):
 	"""
 	
 	homepage = "https://github.com/waldronlab/GSEABenchmarkeR"
-	bioc = "GSEABenchmarkeR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSEABenchmarkeR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSEABenchmarkeR/GSEABenchmarkeR_1.22.0.tar.gz"]
+	bioc = "GSEABenchmarkeR"
 
-	version("1.28.1", tag="RELEASE_3_21")
-	version("1.22.0", sha256="0fb82b3b0679fea1fe291390680452401eced6afba91575d488fb9aaf021e191")
+	version("1.28.1", commit="b2a9d81828e569fc2938298609cdf924f91a1123")
+	version("1.22.0", commit="40d5688aea6f16b951b73999d6bf0de92f6c75db")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -12,11 +12,10 @@ class RSiamcat(RPackage):
 	Pipeline for Statistical Inference of Associations between Microbial Communities And host phenoTypes (SIAMCAT). A primary goal of analyzing microbiome data is to determine changes in community composition that are associated with environmental factors. In particular, linking human microbiome composition to host phenotypes such as diseases has become an area of intense research. For this, robust statistical modeling and biomarker extraction toolkits are crucially needed. SIAMCAT provides a full pipeline supporting data preprocessing, statistical association testing, statistical modeling (LASSO logistic regression) including tools for evaluation and interpretation of these models (such as cross validation, parameter selection, ROC analysis and diagnostic model plots).
 	"""
 	
-	bioc = "SIAMCAT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SIAMCAT_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SIAMCAT/SIAMCAT_2.6.0.tar.gz"]
+	bioc = "SIAMCAT"
 
-	version("2.12.0", tag="RELEASE_3_21")
-	version("2.6.0", sha256="7c1d0456a178517ce6b8f951ef9642556ef91501e095b23a6eb866d39ec4a026")
+	version("2.12.0", commit="6395cf0633cc28afdbafd3af37d97ca0fd74fe10")
+	version("2.6.0", commit="0db5debb8afa59482d37da5ba8f4ca771445f010")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-mlr3", type=("build", "run"))

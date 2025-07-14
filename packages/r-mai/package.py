@@ -13,11 +13,10 @@ class RMai(RPackage):
 	"""
 	
 	homepage = "https://github.com/KechrisLab/MAI"
-	bioc = "MAI" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MAI_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MAI/MAI_1.8.0.tar.gz"]
+	bioc = "MAI"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="47bc71e649cabb37f99e67d753f0e4c5d8ed80084a7ebe1504601e19a9e82a72")
+	version("1.14.0", commit="786493cb24ee1034c82fb07fefc082de2212ab6a")
+	version("1.8.0", commit="6d855e637c1060644a19fefc7b6539f7d0e4d51a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-caret", type=("build", "run"))

@@ -13,11 +13,10 @@ class RBaynorm(RPackage):
 	"""
 	
 	homepage = "https://github.com/WT215/bayNorm"
-	bioc = "bayNorm" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bayNorm_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bayNorm/bayNorm_1.20.0.tar.gz"]
+	bioc = "bayNorm"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="d8c553aca41a9b23a5e5a9b1973f7e73b717b28633e2dc7472a30fd203279b06")
+	version("1.26.0", commit="28f869fe2103279685fdcfb8ffea0e07a14ef554")
+	version("1.20.0", commit="29ecf002aaeef0ae3ef22a773a79571de38d70f7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

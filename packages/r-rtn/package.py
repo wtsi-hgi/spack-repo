@@ -13,11 +13,10 @@ class RRtn(RPackage):
 	"""
 	
 	homepage = "http://dx.doi.org/10.1038/ncomms3464"
-	bioc = "RTN" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RTN_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RTN/RTN_2.26.0.tar.gz"]
+	bioc = "RTN"
 
-	version("2.32.0", tag="RELEASE_3_21")
-	version("2.26.0", sha256="c50386259d4a92e9c56b68c696fae72831dd411c83d3b8cf618ad495375c90d6")
+	version("2.32.0", commit="395d859fa11708c33449fa6e4093b4e04e097d94")
+	version("2.26.0", commit="f63f74863062d40d856bed2ab968a37b2f13a494")
 
 	depends_on("r@3.6.3:", type=("build", "run"))
 	depends_on("r-reder", type=("build", "run"))

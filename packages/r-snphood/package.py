@@ -13,11 +13,10 @@ class RSnphood(RPackage):
 	"""
 	
 	homepage = "https://bioconductor.org/packages/SNPhood"
-	bioc = "SNPhood" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SNPhood_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SNPhood/SNPhood_1.32.0.tar.gz"]
+	bioc = "SNPhood"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="2eee4411ed434618d8d072ced9f0aec347c158ababba6ff4d825c805441cc729")
+	version("1.38.0", commit="a7144d23fe4fbc734e61ca0a68b287dedd8e0e85")
+	version("1.32.0", commit="4985db5cc0828e45a53f024627b5e54e15d3d4d6")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

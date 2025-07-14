@@ -12,11 +12,10 @@ class RCcmap(RPackage):
 	Finds drugs and drug combinations that are predicted to reverse or mimic gene expression signatures. These drugs might reverse diseases or mimic healthy lifestyles.
 	"""
 	
-	bioc = "ccmap" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ccmap_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ccmap/ccmap_1.28.0.tar.gz"]
+	bioc = "ccmap"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="91b2b953fad2afb411740e526db95be6b2d3b1d373eac1f51102725c532bab3a")
+	version("1.34.0", commit="1719f496a05a8774c627eb80c712543a2b6d3227")
+	version("1.28.0", commit="9af3dcba1ad41850087bf53ff213b5a39ed7b595")
 
 	depends_on("r-annotationdbi@1.36.2:", type=("build", "run"))
 	depends_on("r-biocmanager@1.30.4:", type=("build", "run"))

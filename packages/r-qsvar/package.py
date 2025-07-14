@@ -13,11 +13,10 @@ class RQsvar(RPackage):
 	"""
 	
 	homepage = "https://github.com/LieberInstitute/qsvaR"
-	bioc = "qsvaR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qsvaR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qsvaR/qsvaR_1.6.0.tar.gz"]
+	bioc = "qsvaR"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="4cf3c4b26e421aed9f6c536fbe48cc21ea14d887311f3a4c46a58e38b94201d8")
+	version("1.12.0", commit="2dffda266dc8d037f3f78b4a8fabc0e465e559ad")
+	version("1.6.0", commit="c2cf2d70e9c21d0484d0467b107da17c34a22953")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

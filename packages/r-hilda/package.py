@@ -13,11 +13,10 @@ class RHilda(RPackage):
 	"""
 	
 	homepage = "https://github.com/USCbiostats/HiLDA"
-	bioc = "HiLDA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiLDA_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiLDA/HiLDA_1.16.0.tar.gz"]
+	bioc = "HiLDA"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="047d59c392a28ce383e3518879686e872e5010948444272966a46e2891952d56")
+	version("1.22.0", commit="b2276ffe8523e6e06fde77997f44e01c9c9211e8")
+	version("1.16.0", commit="b74fe6d2208d7034471526caebb2ab1ce6c83f28")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

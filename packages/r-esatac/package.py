@@ -13,11 +13,10 @@ class REsatac(RPackage):
 	"""
 	
 	homepage = "https://github.com/wzthu/esATAC"
-	bioc = "esATAC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/esATAC_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/esATAC/esATAC_1.24.0.tar.gz"]
+	bioc = "esATAC"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="a1b070ea22314c92de649ea008428fabd74b8f2a0a9a938b4c39e13fe6eb42a4")
+	version("1.30.0", commit="b2a7f511b6e4f67e1929175498c7e86aed94130e")
+	version("1.24.0", commit="fc5274bbd5b2ac96b8edbf4a5070b594acb18fa8")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))

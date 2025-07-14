@@ -13,11 +13,10 @@ class REpistack(RPackage):
 	"""
 	
 	homepage = "https://github.com/GenEpi-GenPhySE/epistack"
-	bioc = "epistack" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epistack_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epistack/epistack_1.8.0.tar.gz"]
+	bioc = "epistack"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="738b2cf0a8c23ad732af1703448778c4ff5bfe671facc9cd22dffd8a7b0bf254")
+	version("1.14.0", commit="cb3d9044c156167f81197213857387695c9d8338")
+	version("1.8.0", commit="cd802db740677cd7660c91c9ae675a6411fb02c7")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

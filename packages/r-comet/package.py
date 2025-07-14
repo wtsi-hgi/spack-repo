@@ -13,11 +13,10 @@ class RComet(RPackage):
 	"""
 	
 	homepage = "http://epigen.kcl.ac.uk/comet"
-	bioc = "coMET" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/coMET_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/coMET/coMET_1.34.0.tar.gz"]
+	bioc = "coMET"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="bfb9106e278fce62abde5a823e3fea42fc9515f174af8511f249aebc99b370de")
+	version("1.40.0", commit="4cc3c35f2537841b50377553120142a7140a290e")
+	version("1.34.0", commit="79c0b133f6a2ceca180fb4a851a183cdaf1cda47")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biomart", type=("build", "run"))

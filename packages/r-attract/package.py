@@ -12,11 +12,10 @@ class RAttract(RPackage):
 	This package contains the functions to find the gene expression modules that represent the drivers of Kauffman's attractor landscape. The modules are the core attractor pathways that discriminate between different cell types of groups of interest. Each pathway has a set of synexpression groups, which show transcriptionally-coordinated changes in gene expression.
 	"""
 	
-	bioc = "attract" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/attract_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/attract/attract_1.54.0.tar.gz"]
+	bioc = "attract"
 
-	version("1.60.0", tag="RELEASE_3_21")
-	version("1.54.0", sha256="c394e2ac74869e1a3686aa71c6531db282dff549240963dff1b467c6967b6852")
+	version("1.60.0", commit="2b2ce8cc56d9039f0510816bc2470b31daa3ca90")
+	version("1.54.0", commit="602c7c7d970f11a4aa104efaa6c5021f9224c6b1")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

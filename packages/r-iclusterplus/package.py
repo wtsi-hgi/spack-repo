@@ -12,10 +12,9 @@ class RIclusterplus(RPackage):
 	Integrative clustering of multiple genomic data using a joint latent variable model.
 	"""
 	
-	bioc = "iClusterPlus" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iClusterPlus_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iClusterPlus/iClusterPlus_1.38.0.tar.gz"]
+	bioc = "iClusterPlus"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="414f66fd6513a6563a7b219b6e3055276fc6a68f7e36134810e9c93088e1a65c")
+	version("1.44.0", commit="a1db2358f2bd7d3d014192abc2f97925813c80f6")
+	version("1.38.0", commit="600249ea684b661d7db68272a65344ae873a31f1")
 
 	depends_on("r@4.1:", type=("build", "run"))

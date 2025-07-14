@@ -13,11 +13,10 @@ class RSwath2stats(RPackage):
 	"""
 	
 	homepage = "https://peterblattmann.github.io/SWATH2stats/"
-	bioc = "SWATH2stats" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SWATH2stats_1.32.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SWATH2stats/SWATH2stats_1.32.1.tar.gz"]
+	bioc = "SWATH2stats"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.1", sha256="7d3c599027203b12d2c83d179fc9c2f94b464992a4456ce6ba80dccb04787a92")
+	version("1.38.0", commit="cbc6667c8ee655069af5abe9cb36f72483f46755")
+	version("1.32.1", commit="d67c0ff4b7ae3dd7804042c90418685b34443f12")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

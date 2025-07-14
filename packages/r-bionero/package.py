@@ -13,11 +13,10 @@ class RBionero(RPackage):
 	"""
 	
 	homepage = "https://github.com/almeidasilvaf/BioNERO"
-	bioc = "BioNERO" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioNERO_1.10.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioNERO/BioNERO_1.10.3.tar.gz"]
+	bioc = "BioNERO"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.3", sha256="6c9c852355ba480aa3cd552a923ac0c64fb03a4d8072e03edf541149099ec3ed")
+	version("1.16.0", commit="fa79cf8f7fb25f946f8dacf3f6209c4211ed0c24")
+	version("1.10.3", commit="05d11b1172a5ae5de44677d8492098267e1964ba")
 	version("1.10.1", md5="cf8a0a4d5229ba0ff8060188e110f8f9")
 
 	depends_on("r@4.1:", type=("build", "run"))

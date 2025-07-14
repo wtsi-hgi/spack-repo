@@ -12,11 +12,10 @@ class RGraper(RPackage):
 	This package enables regression and classification on high-dimensional data with different relative strengths of penalization for different feature groups, such as different assays or omic types. The optimal relative strengths are chosen adaptively. Optimisation is performed using a variational Bayes approach.
 	"""
 	
-	bioc = "graper" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/graper_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/graper/graper_1.18.0.tar.gz"]
+	bioc = "graper"
 
-	version("1.24.2", tag="RELEASE_3_21")
-	version("1.18.0", sha256="eb08791f3163d93ecfd2a3663c6324b5f0f140849afd4a258469c7535d2b193e")
+	version("1.24.2", commit="fb5f237b2c435e83311e7cd3c9c88275666a199a")
+	version("1.18.0", commit="eea1fd2d999176acb1dd83bd49790c8b0c91088b")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

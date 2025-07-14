@@ -13,11 +13,10 @@ class RTripr(RPackage):
 	"""
 	
 	homepage = "https://github.com/BiodataAnalysisGroup/tripr"
-	bioc = "tripr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tripr_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tripr/tripr_1.8.0.tar.gz"]
+	bioc = "tripr"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="f626700f1d8eef5d1d53fb33b59bc91d166fa45515ac5b384d479bce61edc721")
+	version("1.14.0", commit="4e1f14836080338901cb5edbbf4bf70370fbaae5")
+	version("1.8.0", commit="7dc2b86f4c9d94a83a024ba14d4cf6f46526e817")
 
 	depends_on("r-shiny@1.6:", type=("build", "run"))
 	depends_on("r-shinybs", type=("build", "run"))

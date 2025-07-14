@@ -12,11 +12,10 @@ class RFlowdensity(RPackage):
 	This package provides tools for automated sequential gating analogous to the manual gating strategy based on the density of the data.
 	"""
 	
-	bioc = "flowDensity" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowDensity_1.36.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowDensity/flowDensity_1.36.1.tar.gz"]
+	bioc = "flowDensity"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.1", sha256="e2b9102bc7c67cd450d340602fc88d2ef8736266b7ff9386974192fae6d65570")
+	version("1.42.0", commit="8f7ebcf876253f35b7713883aa9d62c62fe4bb28")
+	version("1.36.1", commit="e159b7d89c3e792830dd98fd9d8c928463d5febd")
 
 	depends_on("r-flowcore", type=("build", "run"))
 	depends_on("r-flowviz@1.42:", type=("build", "run"))

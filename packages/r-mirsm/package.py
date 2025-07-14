@@ -15,7 +15,7 @@ class RMirsm(RPackage):
 	homepage = "https://github.com/zhangjunpeng411/miRSM"
 	bioc = "miRSM" 
 
-	version("2.4.0", tag="RELEASE_3_21")
+	version("2.4.0", commit="bfd7f6eb033ce0eedf8b2ec4e1964d95f2ac7ce7")
 	version("1.20.0", commit="cfc3faaf7714fbd3f176bd415a5c3110b2da8e2a")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RCagefightr(RPackage):
 	"""
 	
 	homepage = "https://github.com/MalteThodberg/CAGEfightR"
-	bioc = "CAGEfightR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CAGEfightR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CAGEfightR/CAGEfightR_1.22.0.tar.gz"]
+	bioc = "CAGEfightR"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="80fd09e31d654bac277962dfee644c4b09ef3a0148c14b8ee51147f2f4cf7d41")
+	version("1.28.0", commit="f30b59494839729c245aef2e46217628775c3f0e")
+	version("1.22.0", commit="8a75f42b5fdde99584e3213a06bdddb3adda90d3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges@1.30.1:", type=("build", "run"))

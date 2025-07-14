@@ -13,11 +13,10 @@ class RPqsfinder(RPackage):
 	"""
 	
 	homepage = "https://pqsfinder.fi.muni.cz"
-	bioc = "pqsfinder" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pqsfinder_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pqsfinder/pqsfinder_2.18.0.tar.gz"]
+	bioc = "pqsfinder"
 
-	version("2.24.0", tag="RELEASE_3_21")
-	version("2.18.0", sha256="cb30161be92db68615306dcef78c2c872765a5ccc21c5947443ecdddcccda42e")
+	version("2.24.0", commit="0ee51f582b3f2dd903a7d7d75110c48799233b7a")
+	version("2.18.0", commit="3f8caa0d963e03b17d1a6d6001b00253e1b1b2b2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

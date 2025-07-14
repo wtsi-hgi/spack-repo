@@ -12,11 +12,10 @@ class RGotools(RPackage):
 	Wraper functions for description/comparison of oligo ID list using Gene Ontology database
 	"""
 	
-	bioc = "goTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/goTools_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/goTools/goTools_1.76.0.tar.gz"]
+	bioc = "goTools"
 
-	version("1.82.0", tag="RELEASE_3_21")
-	version("1.76.0", sha256="6c9bc2f6ede0df75c4181ad54434835027f8e1a72e60539a3d34f37f8221d4e1")
+	version("1.82.0", commit="7c93e7d83c0b44ccdfb933d365b8212c9b1e1b24")
+	version("1.76.0", commit="d860fb70826460519254e0987ad6d34b894bd8f6")
 
 	depends_on("r-go-db", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

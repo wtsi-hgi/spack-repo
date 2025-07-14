@@ -12,10 +12,9 @@ class RMaqcexpression4plex(RPackage):
 	Data from human (HG18) 4plex NimbleGen array. It has 24k genes with 3 60mer probes per gene.
 	"""
 	
-	bioc = "maqcExpression4plex" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/maqcExpression4plex_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/maqcExpression4plex/maqcExpression4plex_1.46.0.tar.gz"]
+	bioc = "maqcExpression4plex"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="ac918856ce0d7a2d6b30c5ff0b628508f8ddfc003cc1d1cbd1dd0fd9ecaf1c46")
+	version("1.52.0", commit="7cd26dc3a55586289401cc928c789ac67f9edb38")
+	version("1.46.0", commit="b67c28d378ab1bdbd7e4d9f9c4e84200a3f9ac22")
 
 

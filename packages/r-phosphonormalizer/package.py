@@ -12,11 +12,10 @@ class RPhosphonormalizer(RPackage):
 	It uses the overlap between enriched and non-enriched datasets to compensate for the bias introduced in global phosphorylation after applying median normalization.
 	"""
 	
-	bioc = "phosphonormalizer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phosphonormalizer_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phosphonormalizer/phosphonormalizer_1.26.0.tar.gz"]
+	bioc = "phosphonormalizer"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="31f5bdbb7b8e318807c234ef512a57df12fc88e1aeb16097bd4dc0095cdb49f7")
+	version("1.32.0", commit="a1abba5c9165c6bc88a993ba6002651ecf122f60")
+	version("1.26.0", commit="87d2bf4fbe1b78a50607d5a9a229e8e875003d55")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))

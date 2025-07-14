@@ -12,10 +12,9 @@ class RMatchbox(RPackage):
 	The matchBox package enables comparing ranked vectors of features, merging multiple datasets, removing redundant features, using CAT-plots and Venn diagrams, and computing statistical significance.
 	"""
 	
-	bioc = "matchBox" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/matchBox_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/matchBox/matchBox_1.44.0.tar.gz"]
+	bioc = "matchBox"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="3191d06eae4802bcd3e3eab87a15c2ddaae29c46bf1907026cfa8782e86eb1a0")
+	version("1.50.0", commit="82464cea3f56b6d25632f0184af721b94cb5bcc6")
+	version("1.44.0", commit="d862734765357d7982ad16ec7170beb60c0119e9")
 
 	depends_on("r@2.8:", type=("build", "run"))

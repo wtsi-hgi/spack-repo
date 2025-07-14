@@ -12,10 +12,9 @@ class RPhemd(RPackage):
 	Package for comparing and generating a low-dimensional embedding of multiple single-cell samples.
 	"""
 	
-	bioc = "phemd" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phemd_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phemd/phemd_1.18.0.tar.gz"]
+	bioc = "phemd"
 
-	version("1.18.0", sha256="03c5354299deefdf02142f4fc7d8464aac1489a62b719f1caf026b1b8db8929c")
+	version("1.18.0", commit="c895e7c97105532e192b891fe43502c9f15112f5")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-monocle", type=("build", "run"))

@@ -13,10 +13,9 @@ class RAllelicimbalance(RPackage):
 	RNA-seq data."""
 
 	bioc = "AllelicImbalance"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AllelicImbalance_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AllelicImbalance/AllelicImbalance_1.40.0.tar.gz"]
 
-	version("1.46.1", tag="RELEASE_3_21")
-	version("1.40.0", sha256="ae9e4026f29624d586cd071e388c44e314586f00e9e9bc90a2ff1ba24c41f45c")
+	version("1.46.1", commit="96ed01807894398fcacf70d4bc78278be4de8a6e")
+	version("1.40.0", commit="e3fc91108af4816a237b588b23cc40133f6eee30")
 	version("1.38.0", commit="75a3b0fefe635a0892eae338d0fdd4a9e091f957")
 	version("1.36.0", commit="cb4910c1fd58cc4272c21251a8f120990e1aa431")
 	version("1.34.0", commit="290708ccc4ceae1fbb9e9257cb254916449d389b")

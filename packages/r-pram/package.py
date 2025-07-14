@@ -13,11 +13,10 @@ class RPram(RPackage):
 	"""
 	
 	homepage = "https://github.com/pliu55/pram"
-	bioc = "pram" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pram_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pram/pram_1.18.0.tar.gz"]
+	bioc = "pram"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="9dec0d2b7955d55267ec80c39f83c965cb392993e917de11330a9b15540e2dfe")
+	version("1.24.0", commit="b2d1a33b1d906e61c64ceaa29bd28bc8d3654678")
+	version("1.18.0", commit="75db30670f2cd1721342140018ef942ae5ef91a1")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

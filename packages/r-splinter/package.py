@@ -13,11 +13,10 @@ class RSplinter(RPackage):
 	"""
 	
 	homepage = "https://github.com/dianalow/SPLINTER/"
-	bioc = "SPLINTER" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SPLINTER_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SPLINTER/SPLINTER_1.28.0.tar.gz"]
+	bioc = "SPLINTER"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="fd07c672a2f7e33178b29fac2c368bcd9e91c33d0c1737571233ab2569c09eda")
+	version("1.34.0", commit="f02d50248c8c7cb441829029322762e019bfc412")
+	version("1.28.0", commit="501b0f955fb3526988fcecee2df5be6bf91834e7")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

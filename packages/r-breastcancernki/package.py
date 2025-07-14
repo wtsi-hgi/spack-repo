@@ -13,11 +13,10 @@ class RBreastcancernki(RPackage):
 	"""
 	
 	homepage = "http://compbio.dfci.harvard.edu/"
-	bioc = "breastCancerNKI" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/breastCancerNKI_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/breastCancerNKI/breastCancerNKI_1.40.0.tar.gz"]
+	bioc = "breastCancerNKI"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="3aaac0225fdaa6ad01f064be4efceb4d46d01300bf9a8484b783cb4308de7460")
+	version("1.46.0", commit="c0f9995551400cd46aa460eef817483acb32884a")
+	version("1.40.0", commit="5a021bad2b02bee765248391be1d3a7fee3baca9")
 
 	depends_on("r@2.5:", type=("build", "run"))
 

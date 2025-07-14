@@ -12,11 +12,10 @@ class RDiffustats(RPackage):
 	Label propagation approaches are a widely used procedure in computational biology for giving context to molecular entities using network data. Node labels, which can derive from gene expression, genome-wide association studies, protein domains or metabolomics profiling, are propagated to their neighbours in the network, effectively smoothing the scores through prior annotated knowledge and prioritising novel candidates. The R package diffuStats contains a collection of diffusion kernels and scoring approaches that facilitates their computation, characterisation and benchmarking.
 	"""
 	
-	bioc = "diffuStats" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/diffuStats_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/diffuStats/diffuStats_1.22.0.tar.gz"]
+	bioc = "diffuStats"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="3ec742621089d9e8ad6607b9e99741148d978d9b998c31c2949b1d7228bada5f")
+	version("1.28.0", commit="1337c07352c626a1674b9d550d1c61f9fddf42b7")
+	version("1.22.0", commit="9c35facdd538c1049f49e505a808f93ab7f026ac")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

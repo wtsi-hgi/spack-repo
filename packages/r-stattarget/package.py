@@ -13,11 +13,10 @@ class RStattarget(RPackage):
 	"""
 	
 	homepage = "https://stattarget.github.io"
-	bioc = "statTarget" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/statTarget_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/statTarget/statTarget_1.32.0.tar.gz"]
+	bioc = "statTarget"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="8f2b5e0a4782280e88dbfdd594aeea1a38ed24ce005f52dfcb041a124d7357a0")
+	version("1.38.0", commit="d67f95a82c5fa1509ef5d599003a7c0d40342ea4")
+	version("1.32.0", commit="bbfcb6154aaa861f2174a51179303676e6f63287")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-randomforest", type=("build", "run"))

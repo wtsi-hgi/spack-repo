@@ -12,11 +12,10 @@ class RSctreeviz(RPackage):
 	scTreeViz provides classes to support interactive data aggregation and visualization of single cell RNA-seq datasets with hierarchies for e.g. cell clusters at different resolutions. The `TreeIndex` class provides methods to manage hierarchy and split the tree at a given resolution or across resolutions. The `TreeViz` class extends `SummarizedExperiment` and can performs quick aggregations on the count matrix defined by clusters.
 	"""
 	
-	bioc = "scTreeViz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scTreeViz_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scTreeViz/scTreeViz_1.8.0.tar.gz"]
+	bioc = "scTreeViz"
 
-	version("1.14.1", tag="RELEASE_3_21")
-	version("1.8.0", sha256="b732dc1656ca78ffa1ec94d02f8c9b9d566f63abfc5c54a8c3d40e6e4e495a1a")
+	version("1.14.1", commit="ef6773dfede869a077731567218c95ea4f964125")
+	version("1.8.0", commit="2e0db4d7000ad820249a037f951347fa29c13278")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-epivizr", type=("build", "run"))

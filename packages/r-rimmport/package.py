@@ -13,11 +13,10 @@ class RRimmport(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org/packages/RImmPort/"
-	bioc = "RImmPort" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RImmPort_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RImmPort/RImmPort_1.30.0.tar.gz"]
+	bioc = "RImmPort"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="509080e001fe767be0d76d7d211a6309b1854622da12324adf2c07f5432fbd73")
+	version("1.36.0", commit="3fff86d97582c7368cdd0901de444751abbdd265")
+	version("1.30.0", commit="9018732c79ef4f9cbb3dad71e207efcb36b49f0c")
 
 	depends_on("r-plyr", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

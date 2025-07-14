@@ -13,11 +13,10 @@ class RSparsesignatures(RPackage):
 	"""
 	
 	homepage = "https://github.com/danro9685/SparseSignatures"
-	bioc = "SparseSignatures" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SparseSignatures_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SparseSignatures/SparseSignatures_2.12.0.tar.gz"]
+	bioc = "SparseSignatures"
 
-	version("2.18.0", tag="RELEASE_3_21")
-	version("2.12.0", sha256="034fb32f20e9166c43eea13b42a36fd2361fbef327fbb63f030111e8201c81d7")
+	version("2.18.0", commit="2e88f4acb4435b259ca5a18f06b0d945e8466deb")
+	version("2.12.0", commit="761604b839f193991f49e8cd7ed95195428bcdf4")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-nmf", type=("build", "run"))

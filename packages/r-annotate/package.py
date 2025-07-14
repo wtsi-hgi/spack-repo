@@ -12,10 +12,9 @@ class RAnnotate(RPackage):
 	Using R enviroments for annotation."""
 
 	bioc = "annotate"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/annotate_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/annotate/annotate_1.80.0.tar.gz"]
 
-	version("1.86.1", tag="RELEASE_3_21")
-	version("1.80.0", sha256="4dab9615498f6c58d1e6ecc1ecd0052187e46bdf971b18d73149b6bddea2ad82")
+	version("1.86.1", commit="fc6937c199c00684217d70eb5c96c9b5108747a8")
+	version("1.80.0", commit="45a42c3691e7707f96286c7c3234332a8ea39870")
 	version("1.78.0", commit="ca6415a463ec682f340ba5d1dc6246a92e836143")
 	version("1.76.0", commit="0181d5c41d594e36be06adb6a02302db0ad2c507")
 	version("1.74.0", commit="200c71743417792880f8171d59b2ac0ddd3902a8")

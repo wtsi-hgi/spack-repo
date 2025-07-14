@@ -13,11 +13,10 @@ class RMudata(RPackage):
 	"""
 	
 	homepage = "https://github.com/ilia-kats/MuData"
-	bioc = "MuData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MuData_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MuData/MuData_1.6.0.tar.gz"]
+	bioc = "MuData"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="5d43b15ec405c0bc3cc1a328773fd76fda63f51555ec57ca10bafaec79dc2e3a")
+	version("1.12.0", commit="9f7e2fde6f057f6033d5c6d4e7ba724d27f791fe")
+	version("1.6.0", commit="42a68dd15c0acc2384c63680d741d927c8fbbc7c")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

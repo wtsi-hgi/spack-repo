@@ -12,10 +12,9 @@ class RHapmap500knsp(RPackage):
 	Sample dataset obtained from http://www.hapmap.org
 	"""
 	
-	bioc = "hapmap500knsp" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hapmap500knsp_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/hapmap500knsp/hapmap500knsp_1.44.0.tar.gz"]
+	bioc = "hapmap500knsp"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="d440952bced1ac84f10eac500e4ce095b6e0c663baa86c76627e9a0d113c8ace")
+	version("1.50.0", commit="4db326e73355eb1b76f04088d838bc06d808e89c")
+	version("1.44.0", commit="1ee33b5ac12f3e2d8e53cb1fbb5f607c05f6635d")
 
 

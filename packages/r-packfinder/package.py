@@ -13,11 +13,10 @@ class RPackfinder(RPackage):
 	"""
 	
 	homepage = "https://github.com/jackgisby/packFinder"
-	bioc = "packFinder" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/packFinder_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/packFinder/packFinder_1.14.0.tar.gz"]
+	bioc = "packFinder"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="e64b62224e410d3b908ed25f9ca0d679f1eec78e593c5eee44941ef721c77ae8")
+	version("1.20.0", commit="7d1efefd379fe90b874dcad9b03610c12bdc1b1c")
+	version("1.14.0", commit="cebb7c82eb5c79499be926cec545cb705e57d00a")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

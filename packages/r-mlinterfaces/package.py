@@ -14,9 +14,8 @@ class RMlinterfaces(RPackage):
 	data in R and Bioconductor containers."""
 
 	bioc = "MLInterfaces"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MLInterfaces_1.82.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MLInterfaces/MLInterfaces_1.82.0.tar.gz"]
-	version("1.88.1", tag="RELEASE_3_21")
-	version("1.82.0", sha256="8147d937e7543ca8ca8890944285d863059f22f6a7466113b83db4d2613fea29")
+	version("1.88.1", commit="4cddc2cdde128ed95b1bceea1acb0bbc10c6ce76")
+	version("1.82.0", commit="597f246d88c0f653d25b06678f92b801dfee4fb5")
 	version("1.80.0", commit="275f8d39f05c46ab3ab7096d1e0539a33bab3a54")
 	version("1.78.0", commit="0988b95d282a6bffe56b7df4da2e23485e96d12c")
 	version("1.76.0", commit="935323d8ce1e4bbf41844a1f9b6c946c5a30c673")

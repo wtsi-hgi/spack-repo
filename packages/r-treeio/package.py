@@ -17,9 +17,8 @@ class RTreeio(RPackage):
 	formats."""
 
 	bioc = "treeio"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/treeio_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/treeio/treeio_1.26.0.tar.gz"]
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="393ea7c7df0e5d40df43b63f78f4b889701ed0b359b7d6f9232793c37d6e7fcf")
+	version("1.32.0", commit="3a8ed45ac6c8ac9979ea61f9dd15c7b6df93a43b")
+	version("1.26.0", commit="cce8f0aa896888bd6116897d08ab54e69c814631")
 	version("1.24.0", commit="81425559d71ab87ee683c6a8833f0f165632e416")
 	version("1.22.0", commit="eb24a854806a671e7b37ef36dafc60b4eb9ddaa1")
 	version("1.20.2", commit="ed457d6fd85a50e0993c8c9acbd9b701be01a348")

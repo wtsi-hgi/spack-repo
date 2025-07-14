@@ -12,11 +12,10 @@ class RMinfidata(RPackage):
 	Data from 6 samples across 2 groups from 450k methylation arrays.
 	"""
 	
-	bioc = "minfiData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/minfiData_0.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/minfiData/minfiData_0.48.0.tar.gz"]
+	bioc = "minfiData"
 
-	version("0.54.0", tag="RELEASE_3_21")
-	version("0.48.0", sha256="885fdbb81ab221226fdbf6f807efbb19854cbe46d5fd60f6d177a3f5c7f6908a")
+	version("0.54.0", commit="71d3467bf63394decdd7b421df8b1a8674bee713")
+	version("0.48.0", commit="dc941ff89bceff00e33c88f7af0c0307641b5616")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-minfi@1.21.2:", type=("build", "run"))

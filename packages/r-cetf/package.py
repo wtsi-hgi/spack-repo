@@ -12,11 +12,10 @@ class RCetf(RPackage):
 	This package provides the necessary functions for performing the Partial Correlation coefficient with Information Theory (PCIT) (Reverter and Chan 2008) and Regulatory Impact Factors (RIF) (Reverter et al. 2010) algorithm. The PCIT algorithm identifies meaningful correlations to define edges in a weighted network and can be applied to any correlation-based network including but not limited to gene co-expression networks, while the RIF algorithm identify critical Transcription Factors (TF) from gene expression data. These two algorithms when combined provide a very relevant layer of information for gene expression studies (Microarray, RNA-seq and single-cell RNA-seq data).
 	"""
 	
-	bioc = "CeTF" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CeTF_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CeTF/CeTF_1.14.0.tar.gz"]
+	bioc = "CeTF"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="d250a6de29f0705dc4abee5987615c61173aa8508312c9e54c33b46379ab4087")
+	version("1.20.0", commit="a139e102182b472383b2c40b75cb68427c7770b3")
+	version("1.14.0", commit="a3be90f2765c89fb4442e96e06ab40a254c9c856")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-circlize", type=("build", "run"))

@@ -12,11 +12,10 @@ class RMogsa(RPackage):
 	This package provide a method for doing gene set analysis based on multiple omics data.
 	"""
 	
-	bioc = "mogsa" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mogsa_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mogsa/mogsa_1.36.0.tar.gz"]
+	bioc = "mogsa"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="bc79f32256eeb1ddc74569a7eba23820c49119a23444d321f49968983033d82f")
+	version("1.42.0", commit="9b39a5c845a39fda7e0a2fd94778e564e4730b63")
+	version("1.36.0", commit="2fb08c767830414ef2b62cf201e8bfd00ecd24d5")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-graphite", type=("build", "run"))

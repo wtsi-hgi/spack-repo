@@ -13,11 +13,10 @@ class RCellbarcode(RPackage):
 	"""
 	
 	homepage = "https://wenjie1991.github.io/CellBarcode/"
-	bioc = "CellBarcode" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellBarcode_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellBarcode/CellBarcode_1.8.1.tar.gz"]
+	bioc = "CellBarcode"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.1", sha256="9ba0c45bedd91a219a0e7dc1841b32329a5204ce0cdad95b7a36b296ff879540")
+	version("1.14.0", commit="16cff222de5a2f049b95db0c5cabda04790a94f3")
+	version("1.8.1", commit="a70f2d24e7fb609ed339912e1944ec65490a2971")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

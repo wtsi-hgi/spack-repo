@@ -12,11 +12,10 @@ class RMedipsdata(RPackage):
 	Example data for MEDIPS and QSEA packages, consisting of chromosome 22 MeDIP and control/Input sample data. Additionally, the package contains MeDIP seq data from 3 NSCLC samples and adjacent normal tissue (chr 20-22). All data has been aligned to human genome hg19.
 	"""
 	
-	bioc = "MEDIPSData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MEDIPSData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MEDIPSData/MEDIPSData_1.38.0.tar.gz"]
+	bioc = "MEDIPSData"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="9530469f60440da51e02d1f5afef51d7b019c7bc7e5464afb5b9639777793dd3")
+	version("1.44.0", commit="00ebad4acfd39f94226372f728a7ebb94247af1e")
+	version("1.38.0", commit="055eb8912093646d6db913a94cdeb195ffd9876f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

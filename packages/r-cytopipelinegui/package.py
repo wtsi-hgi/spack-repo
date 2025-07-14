@@ -12,11 +12,10 @@ class RCytopipelinegui(RPackage):
 	This package is the companion of the `CytoPipeline` package. It provides GUI's (shiny apps) for the visualization of flow cytometry data analysis pipelines that are run with `CytoPipeline`. Two shiny applications are provided, i.e. an interactive flow frame assessment and comparison tool and an interactive scale transformations visualization and adjustment tool.
 	"""
 	
-	bioc = "CytoPipelineGUI" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CytoPipelineGUI_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CytoPipelineGUI/CytoPipelineGUI_1.0.0.tar.gz"]
+	bioc = "CytoPipelineGUI"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="18c568b019b283ba117d278606c02db621b389dd5a5494699643f109064ad925")
+	version("1.6.0", commit="8514162a41af6ae9f4fcbf54b9ceff9779ff5ea4")
+	version("1.0.0", commit="3f955711a91ff82a6c3953382e0f2c9503421609")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-cytopipeline", type=("build", "run"))

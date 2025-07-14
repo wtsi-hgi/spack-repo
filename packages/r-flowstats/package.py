@@ -13,11 +13,10 @@ class RFlowstats(RPackage):
 	"""
 	
 	homepage = "http://www.github.com/RGLab/flowStats"
-	bioc = "flowStats" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowStats_4.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowStats/flowStats_4.14.1.tar.gz"]
+	bioc = "flowStats"
 
-	version("4.20.0", tag="RELEASE_3_21")
-	version("4.14.1", sha256="05505ac37e556010c7388a3924c874973d37995b5d62223ae0c060adb23295e0")
+	version("4.20.0", commit="d287cda1dceed5148c43d1b8724e4175b03cd36e")
+	version("4.14.1", commit="3dc62dab63308ff20d82429d711593355da6d84b")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

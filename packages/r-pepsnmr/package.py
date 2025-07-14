@@ -13,11 +13,10 @@ class RPepsnmr(RPackage):
 	"""
 	
 	homepage = "https://github.com/ManonMartin/PepsNMR"
-	bioc = "PepsNMR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PepsNMR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PepsNMR/PepsNMR_1.20.0.tar.gz"]
+	bioc = "PepsNMR"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="9c13ecce9310afae0a65c8b45d2427e4ce902c2e786779eb22f2a07c68e27204")
+	version("1.26.0", commit="5216333c5444a1ef6b18cecd8e234f4f4b3fff68")
+	version("1.20.0", commit="35ef5cdf34f0b6ce599a15c1e40f8bfa6b1683ec")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

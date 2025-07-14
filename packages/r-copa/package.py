@@ -12,10 +12,9 @@ class RCopa(RPackage):
 	COPA is a method to find genes that undergo recurrent fusion in a given cancer type by finding pairs of genes that have mutually exclusive outlier profiles.
 	"""
 	
-	bioc = "copa" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/copa_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/copa/copa_1.70.0.tar.gz"]
+	bioc = "copa"
 
-	version("1.76.0", tag="RELEASE_3_21")
-	version("1.70.0", sha256="4ef205cdb2bf4125dc689664b4ea84acc102b326dfe13b6201a58622741c0614")
+	version("1.76.0", commit="4987a2e43a2df03e05182d5db4ac25b2133d5e8a")
+	version("1.70.0", commit="03fcd667a61f793d8a8cc91bbdb37cf30bf7ba6f")
 
 	depends_on("r-biobase", type=("build", "run"))

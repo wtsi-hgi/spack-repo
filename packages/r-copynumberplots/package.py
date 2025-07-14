@@ -13,11 +13,10 @@ class RCopynumberplots(RPackage):
 	"""
 	
 	homepage = "https://github.com/bernatgel/CopyNumberPlots"
-	bioc = "CopyNumberPlots" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CopyNumberPlots_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CopyNumberPlots/CopyNumberPlots_1.18.0.tar.gz"]
+	bioc = "CopyNumberPlots"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="1a316f7e53d2e09f2105d4b48886c0c0549eacb2899b927fe1fcada379312cea")
+	version("1.24.0", commit="be5b59c5bafdac5772ae1dee4798ff40d7cab366")
+	version("1.18.0", commit="88ca611e759caf58d514ea1d4795edece3b9c94d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-karyoploter", type=("build", "run"))

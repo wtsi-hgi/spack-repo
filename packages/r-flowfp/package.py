@@ -12,11 +12,10 @@ class RFlowfp(RPackage):
 	Fingerprint generation of flow cytometry data, used to facilitate the application of machine learning and datamining tools for flow cytometry.
 	"""
 	
-	bioc = "flowFP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowFP_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowFP/flowFP_1.60.0.tar.gz"]
+	bioc = "flowFP"
 
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="f58cf1d0947a64f04a101b74eedead6dc441d465c6cf4abad1a8831e4711d834")
+	version("1.66.0", commit="5cf0089efd7f7f74beede54c9a75914156c1d787")
+	version("1.60.0", commit="5e8bb56cdbc185070480e1009b09671325294db3")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

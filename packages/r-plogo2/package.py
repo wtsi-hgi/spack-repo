@@ -12,10 +12,9 @@ class RPlogo2(RPackage):
 	Functions for enrichment analysis and plotting gene ontology or KEGG pathway information for multiple data subsets at the same time. It also enables encorporating multiple conditions and abundance data.
 	"""
 	
-	bioc = "PloGO2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PloGO2_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PloGO2/PloGO2_1.14.0.tar.gz"]
+	bioc = "PloGO2"
 
-	version("1.14.0", sha256="d1394125048b187aba656307cd3bff76153c6230bb5c573624fb92e51a721f64", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PloGO2_1.14.0.tar.gz")
+	version("1.14.0", commit="d6bc3c948335d92daa51b11e6d5419df0b0a1e27")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-go-db", type=("build", "run"))

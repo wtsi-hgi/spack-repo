@@ -13,11 +13,10 @@ class RBirewire(RPackage):
 	"""
 	
 	homepage = "http://www.ebi.ac.uk/~iorio/BiRewire"
-	bioc = "BiRewire" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiRewire_3.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiRewire/BiRewire_3.34.0.tar.gz"]
+	bioc = "BiRewire"
 
-	version("3.40.0", tag="RELEASE_3_21")
-	version("3.34.0", sha256="4d7526c04f8ad982f2b122fa91fa069f3cc5800eb33e6bc35ff7a78546abb7c0")
+	version("3.40.0", commit="c29844bac81a6a0519e2b99cec1fae7c7b610b60")
+	version("3.34.0", commit="8e267c641dfdb16de0c342bb3b1618b0a4f92c37")
 
 	depends_on("r-igraph", type=("build", "run"))
 	depends_on("r-slam", type=("build", "run"))

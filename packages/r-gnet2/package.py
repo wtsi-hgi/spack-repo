@@ -13,11 +13,10 @@ class RGnet2(RPackage):
 	"""
 	
 	homepage = "https://github.com/chrischen1/GNET2"
-	bioc = "GNET2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GNET2_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GNET2/GNET2_1.18.0.tar.gz"]
+	bioc = "GNET2"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="36873c17e13e0fc19e2ba28699981969ea32344f8ca6a10dde314de4b857659c", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GNET2_1.18.0.tar.gz")
+	version("1.24.0", commit="9743478572fb195a041921609b29ce9e6f56c6e2")
+	version("1.18.0", commit="49bc07bf09f1eaa6f0de2574a99e2a0f31ba1f2a")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

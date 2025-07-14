@@ -12,10 +12,9 @@ class RMetahdep(RPackage):
 	Tools for meta-analysis in the presence of hierarchical (and/or sampling) dependence, including with gene expression studies
 	"""
 	
-	bioc = "metahdep" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metahdep_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metahdep/metahdep_1.60.0.tar.gz"]
+	bioc = "metahdep"
 
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="fba9b055ecbf7ccc142946adf47634d505ef1baae3a640f89f0db094da0fa941")
+	version("1.66.0", commit="a03807f33ef8c44cc4d696f2d300b74e1a4bbca2")
+	version("1.60.0", commit="187c10d6dec24236234c13fbb62f1452c0d28dbf")
 
 	depends_on("r@2.10:", type=("build", "run"))

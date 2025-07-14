@@ -12,11 +12,10 @@ class RArrays(RPackage):
 	Using Bioconductor for Microarray Analysis workflow
 	"""
 	
-	bioc = "arrays" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/arrays_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/arrays/arrays_1.28.0.tar.gz"]
+	bioc = "arrays"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="b120eca4c4cd349df064f7e37655f6294c4ca312019daff8b237a2e08b2331c3")
+	version("1.34.0", commit="aabda1d228baa37347fc5eb4cef1416f4ea5ca47")
+	version("1.28.0", commit="eabeb85adc289bcebd42be1df2c79dacc1ccd8e6")
 
 	depends_on("r@3:", type=("build", "run"))
 

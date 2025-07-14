@@ -12,11 +12,10 @@ class RRedisparam(RPackage):
 	This package provides a Redis-based back-end for BiocParallel, enabling an alternative mechanism for distributed computation. The The 'manager' distributes tasks to a 'worker' pool through a central Redis server, rather than directly to workers as with other BiocParallel implementations. This means that the worker pool can change dynamically during job evaluation. All features of BiocParallel are supported, including reproducible random number streams, logging to the manager, and alternative 'load balancing' task distributions.
 	"""
 	
-	bioc = "RedisParam" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RedisParam_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RedisParam/RedisParam_1.4.0.tar.gz"]
+	bioc = "RedisParam"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="5ec7a73f0109edf45a41a8922246a6ff183f0fce305156101b56725ab4132041")
+	version("1.10.0", commit="2ef834fca488758fe0c3b1f8b2a43f9067aebfe0")
+	version("1.4.0", commit="2d32ea847832b0125c25f12f6e4b6208877585fd")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocparallel@1.29.12:", type=("build", "run"))

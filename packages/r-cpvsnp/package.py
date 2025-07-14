@@ -12,11 +12,10 @@ class RCpvsnp(RPackage):
 	Gene set analysis methods exist to combine SNP-level association p-values into gene sets, calculating a single association p-value for each gene set. This package implements two such methods that require only the calculated SNP p-values, the gene set(s) of interest, and a correlation matrix (if desired). One method (GLOSSI) requires independent SNPs and the other (VEGAS) can take into account correlation (LD) among the SNPs. Built-in plotting functions are available to help users visualize results.
 	"""
 	
-	bioc = "cpvSNP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cpvSNP_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cpvSNP/cpvSNP_1.34.0.tar.gz"]
+	bioc = "cpvSNP"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="88bc5f5fe035eb9274a1e63f38e6ba90ccdb1ece86b150011137b0abf3416caf")
+	version("1.40.0", commit="a787e1d185edca351660321d220e578317ed871c")
+	version("1.34.0", commit="a9c77736213a03be704557ec8d805a4965139582")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicfeatures", type=("build", "run"))

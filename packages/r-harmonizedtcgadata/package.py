@@ -12,11 +12,10 @@ class RHarmonizedtcgadata(RPackage):
 	This package contains the processed harmonized TCGA data of five cancer types used in "Tianle Ma and Aidong Zhang, Integrate Multi-omic Data Using Affinity Network Fusion (ANF) for Cancer Patient Clustering".
 	"""
 	
-	bioc = "HarmonizedTCGAData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HarmonizedTCGAData_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HarmonizedTCGAData/HarmonizedTCGAData_1.24.0.tar.gz"]
+	bioc = "HarmonizedTCGAData"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="6bacdc65ab3eca9de1edb6be38ca263abb1650d3e69be256387b375eff3ccbe9")
+	version("1.30.0", commit="38e15e3709e479cc70da2d7642933a1ea5cbae91")
+	version("1.24.0", commit="331c38b41dbd0bcb84f2a263093144b9ec98b3d3")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

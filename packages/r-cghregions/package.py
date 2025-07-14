@@ -12,11 +12,10 @@ class RCghregions(RPackage):
 	Dimension Reduction for Array CGH Data with Minimal Information Loss
 	"""
 	
-	bioc = "CGHregions" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CGHregions_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CGHregions/CGHregions_1.60.0.tar.gz"]
+	bioc = "CGHregions"
 
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="cebd9a63726abf5526ed2379866d71342618f7b68716eefb38ececea31539cb5")
+	version("1.66.0", commit="952b8215f7ca2ff9898415760ebb3c57e32d7d5d")
+	version("1.60.0", commit="bab0f30b4dc57d70a30be3c39cd82badb880fff4")
 
 	depends_on("r@2:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

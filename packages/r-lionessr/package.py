@@ -13,11 +13,10 @@ class RLionessr(RPackage):
 	"""
 	
 	homepage = "https://github.com/mararie/lionessR"
-	bioc = "lionessR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lionessR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lionessR/lionessR_1.16.0.tar.gz"]
+	bioc = "lionessR"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="9f081db3505e70b7140d204b04068d87543e00972cd8ee986968ec2f8b95a45e")
+	version("1.22.0", commit="071bb7b53bfff979ce339c3f0dc667024286ea1e")
+	version("1.16.0", commit="215aecff46376e271db5c4ff10fc71a917976351")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

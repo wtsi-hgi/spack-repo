@@ -12,11 +12,10 @@ class RCytofpower(RPackage):
 	This package is a tool to predict the power of CyTOF experiments in the context of differential state analyses. The package provides a shiny app with two options to predict the power of an experiment: i. generation of in-sicilico CyTOF data, using users input ii. browsing in a grid of parameters for which the power was already precomputed.
 	"""
 	
-	bioc = "CyTOFpower" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CyTOFpower_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CyTOFpower/CyTOFpower_1.8.0.tar.gz"]
+	bioc = "CyTOFpower"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="31b1b52ff5a0250363971df7a4829f287e41b1d1d42eea5b9849b9558f216157")
+	version("1.14.0", commit="bcdfa4bc01b9313354fa078ab030c260746935d9")
+	version("1.8.0", commit="d62a254879db407ffcbd98d279e5b9be5d3ced08")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-cytoglmm", type=("build", "run"))

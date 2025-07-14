@@ -13,11 +13,10 @@ class ROmadb(RPackage):
 	"""
 	
 	homepage = "https://github.com/DessimozLab/OmaDB"
-	bioc = "OmaDB" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OmaDB_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OmaDB/OmaDB_2.18.0.tar.gz"]
+	bioc = "OmaDB"
 
-	version("2.24.0", tag="RELEASE_3_21")
-	version("2.18.0", sha256="e7b14fdbd507a7c189fd9a84aa027533fbf10d92bbee2275ef76604b5245fed9")
+	version("2.24.0", commit="810564161ba994b66b864a10f8920760f6615623")
+	version("2.18.0", commit="88c9a3a75ac347e0bf6befa62230a47bf253ddb5")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-httr@1.2.1:", type=("build", "run"))

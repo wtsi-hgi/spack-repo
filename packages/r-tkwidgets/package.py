@@ -12,11 +12,10 @@ class RTkwidgets(RPackage):
 	Widgets to provide user interfaces. tcltk should have been installed for the widgets to run.
 	"""
 	
-	bioc = "tkWidgets" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tkWidgets_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tkWidgets/tkWidgets_1.80.0.tar.gz"]
+	bioc = "tkWidgets"
 
-	version("1.86.0", tag="RELEASE_3_21")
-	version("1.80.0", sha256="3267fca54e0f0e1232365e8bf71b104e7febfc5cb47d5be8304da857a9cb4885")
+	version("1.86.0", commit="eb5e53b6faaf3b85b79cc0e42fe0917887547677")
+	version("1.80.0", commit="7b630839f778bdf5ddf9313edf2035ff0c833c87")
 
 	depends_on("r@2:", type=("build", "run"))
 	depends_on("r-widgettools@1.1.7:", type=("build", "run"))

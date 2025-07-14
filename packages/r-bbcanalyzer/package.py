@@ -12,11 +12,10 @@ class RBbcanalyzer(RPackage):
 	BBCAnalyzer is a package for visualizing the relative or absolute number of bases, deletions and insertions at defined positions in sequence alignment data available as bam files in comparison to the reference bases. Markers for the relative base frequencies, the mean quality of the detected bases, known mutations or polymorphisms and variants called in the data may additionally be included in the plots.
 	"""
 	
-	bioc = "BBCAnalyzer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BBCAnalyzer_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BBCAnalyzer/BBCAnalyzer_1.32.0.tar.gz"]
+	bioc = "BBCAnalyzer"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="c1ffe8657f54dcfe64b1e45bd4ef7fd2b13f2ae20c9ee01119d2c3e2f4631281")
+	version("1.38.0", commit="2a67e491e3f6fd45d1468b5e309c547e41ad0212")
+	version("1.32.0", commit="eb90d95859efcf397a5a43b23dfd5cd4147f79b3")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-variantannotation", type=("build", "run"))

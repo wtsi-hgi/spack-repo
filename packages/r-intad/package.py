@@ -12,11 +12,10 @@ class RIntad(RPackage):
 	The package is focused on the detection of correlation between expressed genes and selected epigenomic signals (i.e. enhancers obtained from ChIP-seq data) either within topologically associated domains (TADs) or between chromatin contact loop anchors. Various parameters can be controlled to investigate the influence of external factors and visualization plots are available for each analysis step.
 	"""
 	
-	bioc = "InTAD" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/InTAD_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/InTAD/InTAD_1.22.0.tar.gz"]
+	bioc = "InTAD"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="56c466237ea97cc3c44cad80e97dc00dfcff23707ea235357fd4bdc7ccde7c07")
+	version("1.28.0", commit="51e37ad5cf5bc5e44b2a4de0a2c8c6af0b1c6b90")
+	version("1.22.0", commit="1bb9d7ad55380e3ff05823980929d5e06d5e2451")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

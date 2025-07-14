@@ -13,10 +13,9 @@ class RGaggle(RPackage):
 	"""
 	
 	homepage = "http://gaggle.systemsbiology.net/docs/geese/r/"
-	bioc = "gaggle" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gaggle_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gaggle/gaggle_1.70.0.tar.gz"]
+	bioc = "gaggle"
 
-	version("1.70.0", sha256="cdfea5b68b86a4a6084277f039352ac294101c917391b693980e393b00954a9a")
+	version("1.70.0", commit="ea1b1b6524e66af2c595556b9b1f5998b2bf56cf")
 
 	depends_on("r@2.3:", type=("build", "run"))
 	depends_on("r-rjava@0.4:", type=("build", "run"))

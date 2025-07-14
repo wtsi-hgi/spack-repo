@@ -13,11 +13,10 @@ class RTcgaworkflowdata(RPackage):
 	"""
 	
 	homepage = "https://f1000research.com/articles/5-1542/v2"
-	bioc = "TCGAWorkflowData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TCGAWorkflowData_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TCGAWorkflowData/TCGAWorkflowData_1.26.0.tar.gz"]
+	bioc = "TCGAWorkflowData"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="a230166e4b53d16a418cbc5a2c54a2c1f93685dc38f4ddd23ee3f0949f8be30e")
+	version("1.32.0", commit="9a3836c2fe3a5bad929377b09e4809c5bca792ad")
+	version("1.26.0", commit="556a0521414e7244b1f2e93b360904050b42d54b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

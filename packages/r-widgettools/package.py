@@ -12,10 +12,9 @@ class RWidgettools(RPackage):
 	This packages contains tools to support the construction of tcltk widgets
 	"""
 	
-	bioc = "widgetTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/widgetTools_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/widgetTools/widgetTools_1.80.0.tar.gz"]
+	bioc = "widgetTools"
 
-	version("1.86.0", tag="RELEASE_3_21")
-	version("1.80.0", sha256="819b299090c78642369dadc1779be4e7cd3e76fc183e7dac5a0b87a5cb116cfe")
+	version("1.86.0", commit="f7c0a637a52dd1b47aae4336bef95d40ccc88bfc")
+	version("1.80.0", commit="ddf3bb3e6f2f5e622ec8a90d17173605a5c7311c")
 
 	depends_on("r@2.4:", type=("build", "run"))

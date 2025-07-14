@@ -13,11 +13,10 @@ class RMast(RPackage):
 	"""
 	
 	homepage = "https://github.com/RGLab/MAST/"
-	bioc = "MAST" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MAST_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MAST/MAST_1.28.0.tar.gz"]
+	bioc = "MAST"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="9792e5c49877d58efaee7ad3bc855fa866fa059c86942054366549737b673e9e")
+	version("1.34.0", commit="61a4f191beb24e5a3175f4b0d2b6e7ebf3b7c670")
+	version("1.28.0", commit="2a0af38010795d6210c40892e4ff43e8838bfcab")
 
 	depends_on("r-singlecellexperiment@1.2:", type=("build", "run"))
 	depends_on("r@3.5:", type=("build", "run"))

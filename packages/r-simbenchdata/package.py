@@ -12,11 +12,10 @@ class RSimbenchdata(RPackage):
 	The SimBenchData package contains a total of 35 single-cell RNA-seq datasets covering a wide range of data characteristics, including major sequencing protocols, multiple tissue types, and both human and mouse sources.
 	"""
 	
-	bioc = "SimBenchData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SimBenchData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SimBenchData/SimBenchData_1.10.0.tar.gz"]
+	bioc = "SimBenchData"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="0d475441f00932e678aa8c3a7c05deca5d9a341c906fc61151598f0e8573bcbc")
+	version("1.16.0", commit="99619305102ea5e05d2a6cf1f68d57600b7e99c5")
+	version("1.10.0", commit="42c7e7a7bd0b29579ff17da115564cebb86f5d1b")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

@@ -12,10 +12,9 @@ class RPolyester(RPackage):
 	This package can be used to simulate RNA-seq reads from differential expression experiments with replicates. The reads can then be aligned and used to perform comparisons of methods for differential expression.
 	"""
 	
-	bioc = "polyester" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/polyester_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/polyester/polyester_1.38.0.tar.gz"]
+	bioc = "polyester"
 
-	version("1.38.0", sha256="8496e16691e36100cbd95b0de061edf50b2699b8d47d479972024209646fccc7")
+	version("1.38.0", commit="d7683461aec16e31bcba31bec70b7fffa926d667")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-biostrings@2.32:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RErssa(RPackage):
 	"""
 	
 	homepage = "https://github.com/zshao1/ERSSA"
-	bioc = "ERSSA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ERSSA_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ERSSA/ERSSA_1.20.0.tar.gz"]
+	bioc = "ERSSA"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="965e2091c4d3049bc12947880545da316caece750459369c9bde924236edffc6")
+	version("1.26.0", commit="b78a59a2e7028aa03730a0eb237b7afb555cc396")
+	version("1.20.0", commit="c2aa6e199c897d4c03bb0d0714f3c3aeaeb4a146")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-edger@3.23.3:", type=("build", "run"))

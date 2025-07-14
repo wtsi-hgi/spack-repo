@@ -13,11 +13,10 @@ class RTargetscore(RPackage):
 	"""
 	
 	homepage = "http://www.cs.utoronto.ca/~yueli/software.html"
-	bioc = "TargetScore" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TargetScore_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TargetScore/TargetScore_1.40.0.tar.gz"]
+	bioc = "TargetScore"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="11933f9b49e95faf18c2ad03a541c1d85920ebac0fba5df3ea30fbe473eb3653")
+	version("1.46.0", commit="6120512ecd47ef66154038e6b0f8aacd5c696b4b")
+	version("1.40.0", commit="9b7c06b49ac7d032c900804e4973a4065aa46676")
 
 	depends_on("r-pracma", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

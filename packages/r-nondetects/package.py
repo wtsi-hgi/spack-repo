@@ -12,11 +12,10 @@ class RNondetects(RPackage):
 	Methods to model and impute non-detects in the results of qPCR experiments.
 	"""
 	
-	bioc = "nondetects" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nondetects_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nondetects/nondetects_2.32.0.tar.gz"]
+	bioc = "nondetects"
 
-	version("2.38.1", tag="RELEASE_3_21")
-	version("2.32.0", sha256="9b99b3c3226cea1f16ea6574ed9b9df4b0a31c258f9b0a73ba7fed75cbab020c")
+	version("2.38.1", commit="f01e6d6679f60333b6784b58326e9e5e59a82019")
+	version("2.32.0", commit="326a610f6125519428dcc67c2378c8b895f20fda")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biobase@2.22:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RLola(RPackage):
 	"""
 	
 	homepage = "http://code.databio.org/LOLA"
-	bioc = "LOLA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LOLA_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LOLA/LOLA_1.32.0.tar.gz"]
+	bioc = "LOLA"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="0ccb4fc00c439dbefdce5ded22d5e2b3df5c89885bae866012c640c6fd0a6c70")
+	version("1.38.0", commit="7bc27064e1478cd0c9e3dd2e6276f8f1ca4cad66")
+	version("1.32.0", commit="148d0c13541d60d23001379c377d726d46e51bae")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

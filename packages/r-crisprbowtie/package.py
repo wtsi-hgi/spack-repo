@@ -13,11 +13,10 @@ class RCrisprbowtie(RPackage):
 	"""
 	
 	homepage = "https://github.com/crisprVerse/crisprBowtie"
-	bioc = "crisprBowtie" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crisprBowtie_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crisprBowtie/crisprBowtie_1.6.0.tar.gz"]
+	bioc = "crisprBowtie"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="cad58133c53a6120272387a1edde6c70360ab182f596d59d4435fbc9122c02e6")
+	version("1.12.0", commit="0ce73a4282909463d937a16c76372dd365738c70")
+	version("1.6.0", commit="8e28fd8b1286d6257315538ee7144319c068551a")
 
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

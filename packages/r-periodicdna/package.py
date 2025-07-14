@@ -13,11 +13,10 @@ class RPeriodicdna(RPackage):
 	"""
 	
 	homepage = "https://github.com/js2264/periodicDNA"
-	bioc = "periodicDNA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/periodicDNA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/periodicDNA/periodicDNA_1.12.0.tar.gz"]
+	bioc = "periodicDNA"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="f83baf3dc7b1dc2c8f69dde0e26daafe1f49ea8b2615d993179985e3b1060e23")
+	version("1.18.0", commit="1ba030b8c42aa66d7304b31df5b63df73eb5da90")
+	version("1.12.0", commit="70bd9f45550be0c7ed144ad48b97b5e640d8d997")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

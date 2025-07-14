@@ -13,11 +13,10 @@ class RBioassayr(RPackage):
 	"""
 	
 	homepage = "https://github.com/girke-lab/bioassayR"
-	bioc = "bioassayR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bioassayR_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bioassayR/bioassayR_1.40.0.tar.gz"]
+	bioc = "bioassayR"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="51bbae60661a3a41e8733255a321c44b933ef1d5ca473f86ab88b2f4dbb7a1d6")
+	version("1.46.0", commit="8997ea60bd91d608a19da2c1f6c9f8df62fe6d15")
+	version("1.40.0", commit="817e51dba3126f8f0e6ad14df371af2512b3f6c4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dbi@0.3.1:", type=("build", "run"))

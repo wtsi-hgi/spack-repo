@@ -13,11 +13,10 @@ class RQdnaseqHg19(RPackage):
 	"""
 	
 	homepage = "https://github.com/tgac-vumc/QDNAseq.hg19"
-	bioc = "QDNAseq.hg19" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/QDNAseq.hg19_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/QDNAseq.hg19/QDNAseq.hg19_1.32.0.tar.gz"]
+	bioc = "QDNAseq.hg19"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="28b7634354f4900b746b8a586ed7b0e9e57a472975816d6007355ee7e75ad605", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/QDNAseq.hg19_1.32.0.tar.gz")
+	version("1.38.0", commit="f1e95f00afdc53b7c37c07a075ad8c2a4e734355")
+	version("1.32.0", commit="6a5bd78e9b68103c2c81f12f7bb9fd7bb388c3df")
 
 	depends_on("r@3.2.1:", type=("build", "run"))
 	depends_on("r-qdnaseq", type=("build", "run"))

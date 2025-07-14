@@ -12,11 +12,10 @@ class RNucler(RPackage):
 	Nucleosome positioning for Tiling Arrays and NGS experiments.
 	"""
 	
-	bioc = "nucleR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nucleR_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nucleR/nucleR_2.34.0.tar.gz"]
+	bioc = "nucleR"
 
-	version("2.40.0", tag="RELEASE_3_21")
-	version("2.34.0", sha256="f700a75fd81257427f21faed3f27fa6bc8015046370a04d7aeac2b3d804e5e8a")
+	version("2.40.0", commit="00e4290c999892d003485b601104bef7db75e40d")
+	version("2.34.0", commit="49b3021545f967d9350ab00b4aa54d83d673bc88")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

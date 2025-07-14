@@ -12,11 +12,10 @@ class RRcyjs(RPackage):
 	Interactive viewing and exploration of graphs, connecting R to Cytoscape.js, using websockets.
 	"""
 	
-	bioc = "RCyjs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCyjs_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RCyjs/RCyjs_2.24.0.tar.gz"]
+	bioc = "RCyjs"
 
-	version("2.30.0", tag="RELEASE_3_21")
-	version("2.24.0", sha256="f1ac9cf724b4fd72a1dacc83164463c7df4c84e58654594616fa55f09f0dbb34")
+	version("2.30.0", commit="4b23fe7000bbbb55fc03cd87dcb63f112d9556cd")
+	version("2.24.0", commit="51a82aaa4c46af97a9a954a9ae335e53db298ef4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-browserviz@2.7.18:", type=("build", "run"))

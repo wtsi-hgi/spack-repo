@@ -13,11 +13,10 @@ class RIterativebma(RPackage):
 	"""
 	
 	homepage = "http://faculty.washington.edu/kayee/research.html"
-	bioc = "iterativeBMA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iterativeBMA_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iterativeBMA/iterativeBMA_1.60.0.tar.gz"]
+	bioc = "iterativeBMA"
 
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="da16e7d1b3f2c98f621613c9e9e44cc75e40bc76809a22264f206e326f755c11")
+	version("1.66.0", commit="ef3a9ec9486f07d49b9f55b7a06206830123663a")
+	version("1.60.0", commit="54234d370e35bbb7144f256ca5c700751c945fbd")
 
 	depends_on("r-bma", type=("build", "run"))
 	depends_on("r-leaps", type=("build", "run"))

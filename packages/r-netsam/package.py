@@ -12,11 +12,10 @@ class RNetsam(RPackage):
 	The NetSAM (Network Seriation and Modularization) package takes an edge-list representation of a weighted or unweighted network as an input, performs network seriation and modularization analysis, and generates as files that can be used as an input for the one-dimensional network visualization tool NetGestalt (http://www.netgestalt.org) or other network analysis. The NetSAM package can also generate correlation network (e.g. co-expression network) based on the input matrix data, perform seriation and modularization analysis for the correlation network and calculate the associations between the sample features and modules or identify the associated GO terms for the modules.
 	"""
 	
-	bioc = "NetSAM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NetSAM_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NetSAM/NetSAM_1.42.0.tar.gz"]
+	bioc = "NetSAM"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="8a22967f7a745e5accc3ca92a6ff7e3e1caa45d6141e82ee2ab78180ef1933f9")
+	version("1.48.0", commit="17ed0e6d8ea9960b9b2fe532c216e64a12addfff")
+	version("1.42.0", commit="bf514af6567334f7b518697bf0da26260874fb03")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-seriation@1.0.6:", type=("build", "run"))

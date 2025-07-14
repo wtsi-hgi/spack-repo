@@ -12,11 +12,10 @@ class RLdblock(RPackage):
 	Define data structures for linkage disequilibrium measures in populations.
 	"""
 	
-	bioc = "ldblock" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ldblock_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ldblock/ldblock_1.32.0.tar.gz"]
+	bioc = "ldblock"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="1730eb16951ce61901bd93c55a5f04d751d4d8b6b57951416242bd9912fb5db1")
+	version("1.38.0", commit="aad2e2a707b276d482a6840937384871eab050e1")
+	version("1.32.0", commit="398acc977660d9addd4ce5f8491af290470442a2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))

@@ -12,11 +12,10 @@ class RSpaniel(RPackage):
 	Spaniel includes a series of tools to aid the quality control and analysis of Spatial Transcriptomics data. Spaniel can import data from either the original Spatial Transcriptomics system or 10X Visium technology. The package contains functions to create a SingleCellExperiment Seurat object and provides a method of loading a histologial image into R. The spanielPlot function allows visualisation of metrics contained within the S4 object overlaid onto the image of the tissue.
 	"""
 	
-	bioc = "Spaniel" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Spaniel_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Spaniel/Spaniel_1.16.0.tar.gz"]
+	bioc = "Spaniel"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="ea37cf8e9dec7efb03e8aaa1796da32b3e44fa7e9aff0549f01bf8a7a9fe0d32")
+	version("1.22.0", commit="8b7334484b318a920d0cb296c3ccfbadab12d67a")
+	version("1.16.0", commit="77e9ee353fde5388f083b08f81148ba0a0e2f0f5")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-seurat", type=("build", "run"))

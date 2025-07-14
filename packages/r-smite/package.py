@@ -13,11 +13,10 @@ class RSmite(RPackage):
 	"""
 	
 	homepage = "https://github.com/GreallyLab/SMITE"
-	bioc = "SMITE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SMITE_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SMITE/SMITE_1.30.0.tar.gz"]
+	bioc = "SMITE"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="4dd237f2511774db0c583430ba205548df21ccf077f3dae0d0810ec29de4e043")
+	version("1.36.0", commit="893b091e2d7d099ece9560b78682a1981e372b61")
+	version("1.30.0", commit="7e7699a694ad0ea8cc4ec2c531160624805b556f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

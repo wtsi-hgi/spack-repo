@@ -13,11 +13,10 @@ class RBiodbchebi(RPackage):
 	"""
 	
 	homepage = "https://github.com/pkrog/biodbChebi"
-	bioc = "biodbChebi" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbChebi_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbChebi/biodbChebi_1.8.0.tar.gz"]
+	bioc = "biodbChebi"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="6b0cb638cbbc36958e1ec912936b14ddaa6788abf2a31e4ac7ba3b40e56d8745")
+	version("1.14.0", commit="b8d718f4c261df352beea23b89477134d024312b")
+	version("1.8.0", commit="664af9c7d996799db030684217c5acc81eb9d3b3")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

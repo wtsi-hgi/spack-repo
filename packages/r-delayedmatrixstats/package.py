@@ -16,15 +16,10 @@ class RDelayedmatrixstats(RPackage):
     for subsetted calculations such that both memory usage and processing
     time is minimized."""
 
-    bioc = "DelayedMatrixStats"
-    urls = [
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DelayedMatrixStats_1.24.0.tar.gz",
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DelayedMatrixStats/DelayedMatrixStats_1.24.0.tar.gz",
-    ]
-    version("1.6.1", commit="4378d1898a403305a94b122c4f36d1215fa7708d")
+    bioc = "DelayedMatrixStats"version("1.6.1", commit="4378d1898a403305a94b122c4f36d1215fa7708d")
     version("1.4.0", commit="eb5b390ef99651fe87a346848f807de95afe8971")
-    version("1.30.0", tag="RELEASE_3_21")
-    version("1.24.0", sha256="617d4814936adc4ad97d0824f0d3581bc94b347e44c1a9d4044c5143bacb25a3")
+    version("1.30.0", commit="8c16925a1eba591e342bf8d404484366e3c1af73")
+    version("1.24.0", commit="8fb9c6e38cda6d9637a1aa662a7c83c0c02928a1")
     version("1.22.0", commit="e820ab9a72963badc539e38fa79dbaeab95b2d2c")
     version("1.20.0", commit="1ed14250e8731e60bccb44946cafad4c2b3ac5b0")
     version("1.2.0", commit="de868e730be6280dfad41a280ab09f4d3083c9ac")

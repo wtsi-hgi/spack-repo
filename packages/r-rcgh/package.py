@@ -13,11 +13,10 @@ class RRcgh(RPackage):
 	"""
 	
 	homepage = "https://github.com/fredcommo/rCGH"
-	bioc = "rCGH" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rCGH_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rCGH/rCGH_1.32.0.tar.gz"]
+	bioc = "rCGH"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="3f785773b658c14ad08909b4d397ab4a1da8cbc9608c294102b84fbec04336ac")
+	version("1.38.0", commit="c26e2d621dafe0f4edc05dd9660ff5b8253784f8")
+	version("1.32.0", commit="f44b331e7f3a5ad56464e137527c0fa533d9b085")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))

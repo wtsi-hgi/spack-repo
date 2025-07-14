@@ -13,11 +13,10 @@ class RHicontacts(RPackage):
 	"""
 	
 	homepage = "https://github.com/js2264/HiContacts"
-	bioc = "HiContacts" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiContacts_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiContacts/HiContacts_1.4.0.tar.gz"]
+	bioc = "HiContacts"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="7efd2cc7f77c82fe4e2b662fc54f093d68ee045c4d89c0f2400a4409bcf5ab29")
+	version("1.10.0", commit="143781ca99fd519507349a1b266efc5a477af08c")
+	version("1.4.0", commit="00956df8a2d0e26b22c3ddda7a1f7d55c2e80cb4")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-hicexperiment", type=("build", "run"))

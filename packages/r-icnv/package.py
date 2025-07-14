@@ -12,11 +12,10 @@ class RIcnv(RPackage):
 	Integrative copy number variation (CNV) detection from multiple platform and experimental design.
 	"""
 	
-	bioc = "iCNV" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iCNV_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iCNV/iCNV_1.22.0.tar.gz"]
+	bioc = "iCNV"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="098e5db84bc200cd6518f02f7bdd7521a6d8fad8fe58c9f7130f730f6cbda085")
+	version("1.28.0", commit="ceaff487dd6c5c53dd62e6af3045e9c6f992efd8")
+	version("1.22.0", commit="7b945291253842a7be96e46eb14b29e4ec53e03d")
 
 	depends_on("r@3.3.1:", type=("build", "run"))
 	depends_on("r-codex", type=("build", "run"))

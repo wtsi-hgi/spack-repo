@@ -12,11 +12,10 @@ class RSeqcombo(RPackage):
 	Provides useful functions for visualizing virus reassortment events.
 	"""
 	
-	bioc = "seqcombo" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqcombo_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqcombo/seqcombo_1.24.0.tar.gz"]
+	bioc = "seqcombo"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="8a780338f42603de0d7d8b517f456d2a65f2291e8764f19b98fb831b21767bf7")
+	version("1.30.0", commit="6e872ecd8530e3b1a5024ec11757a4aaaa301ea0")
+	version("1.24.0", commit="701d045f838d0267b363e8537492d487a2c8ae6c")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

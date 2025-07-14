@@ -13,11 +13,10 @@ class RMirlab(RPackage):
 	"""
 	
 	homepage = "https://github.com/pvvhoang/miRLAB"
-	bioc = "miRLAB" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miRLAB_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miRLAB/miRLAB_1.32.0.tar.gz"]
+	bioc = "miRLAB"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="85b990ad152ec857d1cfe4ef66cfdacb1248746ed8db9757d3b6e730178930a3")
+	version("1.38.0", commit="d0c410404bb8859c64f9a15e824c5830540c9baa")
+	version("1.32.0", commit="10514c47d81e45d309b5ba96e5815ed066f953bf")
 
 	depends_on("r-rcurl", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

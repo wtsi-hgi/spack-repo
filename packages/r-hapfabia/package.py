@@ -13,11 +13,10 @@ class RHapfabia(RPackage):
 	"""
 	
 	homepage = "http://www.bioinf.jku.at/software/hapFabia/hapFabia.html"
-	bioc = "hapFabia" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hapFabia_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hapFabia/hapFabia_1.44.0.tar.gz"]
+	bioc = "hapFabia"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="dff5ca95f9804e6e776aa92ee0b8fffa90ccbe5f3c77adfb910c7d11efe2b756")
+	version("1.50.0", commit="1a17238b44521bae34110eb6be07b525ec7ff677")
+	version("1.44.0", commit="d667a1717da4df4daee628082cec580a78be4130")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

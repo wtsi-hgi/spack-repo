@@ -13,11 +13,10 @@ class RMsstatsqc(RPackage):
 	"""
 	
 	homepage = "http://msstats.org/msstatsqc"
-	bioc = "MSstatsQC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsQC_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsQC/MSstatsQC_2.20.0.tar.gz"]
+	bioc = "MSstatsQC"
 
-	version("2.26.0", tag="RELEASE_3_21")
-	version("2.20.0", sha256="82d854fc7eb8f84e16b372cffe8fb50c05e0c540705f4b0b08553ab28917c151")
+	version("2.26.0", commit="f36559bf9c78b5c3174f257857c50fc3546803e7")
+	version("2.20.0", commit="970a773be096d99852e41545dfde14a020ec2dff")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -12,11 +12,10 @@ class ROmicrexposome(RPackage):
 	omicRexposome systematizes the association evaluation between exposures and omic data, taking advantage of MultiDataSet for coordinated data management, rexposome for exposome data definition and limma for association testing. Also to perform data integration mixing exposome and omic data using multi co-inherent analysis (omicade4) and multi-canonical correlation analysis (PMA).
 	"""
 	
-	bioc = "omicRexposome" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/omicRexposome_1.24.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/omicRexposome/omicRexposome_1.24.3.tar.gz"]
+	bioc = "omicRexposome"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.3", sha256="caab86763588b594a31452278190317f42b18e3d42ae9fbfc4c26d7659c3f75b")
+	version("1.30.0", commit="d563c4f6a495def14d8975c047d72c95e2ce8dd7")
+	version("1.24.3", commit="7937beed04f7fbc1ee28de06500708bdaaddc870")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

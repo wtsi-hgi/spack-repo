@@ -13,11 +13,10 @@ class RCuratedadipoarray(RPackage):
 	"""
 	
 	homepage = "https://github.com/MahShaaban/curatedAdipoArray"
-	bioc = "curatedAdipoArray" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedAdipoArray_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedAdipoArray/curatedAdipoArray_1.14.0.tar.gz"]
+	bioc = "curatedAdipoArray"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="ec73b28430f5d3c99d0d02d0a36f701934dc26e2057a38b222ef19145159ac19")
+	version("1.20.0", commit="34959184a85f2ccf0b3a823383f82c69286eff49")
+	version("1.14.0", commit="78aa4dbacd1f24c00c4bd2a80227c922287aee63")
 
 	depends_on("r@4:", type=("build", "run"))
 

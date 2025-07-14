@@ -12,11 +12,10 @@ class RTfeaChip(RPackage):
 	Package to analize transcription factor enrichment in a gene set using data from ChIP-Seq experiments.
 	"""
 	
-	bioc = "TFEA.ChIP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFEA.ChIP_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFEA.ChIP/TFEA.ChIP_1.22.0.tar.gz"]
+	bioc = "TFEA.ChIP"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="0f1027429fcb626177c7a067c822d894e857d1985b4ca0c83780cf111eca5c39")
+	version("1.28.0", commit="129c11f8dda4688d6bdb23a7bd701193fd7e70c1")
+	version("1.22.0", commit="fdae2554599851cd6873b0b3f0c1017474bd3664")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

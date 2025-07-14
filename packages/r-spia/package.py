@@ -13,11 +13,10 @@ class RSpia(RPackage):
 	"""
 	
 	homepage = "http://bioinformatics.oxfordjournals.org/cgi/reprint/btn577v1"
-	bioc = "SPIA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SPIA_2.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SPIA/SPIA_2.54.0.tar.gz"]
+	bioc = "SPIA"
 
-	version("2.60.0", tag="RELEASE_3_21")
-	version("2.54.0", sha256="a5ea2bedf20f9f538f1705d65265b24df6d9709c98ab14a0e964577df7a33724")
+	version("2.60.0", commit="6378a74a4174124b17e7ea32d844b9b807bfd2b0")
+	version("2.54.0", commit="aa77d2538780141a2c9c068fd483a562a384d10f")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-kegggraph", type=("build", "run"))

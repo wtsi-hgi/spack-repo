@@ -12,11 +12,10 @@ class RNcigraphdata(RPackage):
 	Provides pathways from the NCI Pathways Database as R graph objects
 	"""
 	
-	bioc = "NCIgraphData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/NCIgraphData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/NCIgraphData/NCIgraphData_1.38.0.tar.gz"]
+	bioc = "NCIgraphData"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="0694e4067b93bbbbc9afd0045ce8ac7af0a409fcc45ef04729b06aea8c5051c1")
+	version("1.44.0", commit="38557fbcb0f53408a7b1ae589c93490498f7a4b7")
+	version("1.38.0", commit="b84956a7ad2b981254273256a82864a8c1cbb74d")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

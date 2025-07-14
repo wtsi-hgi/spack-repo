@@ -12,11 +12,10 @@ class RGuitar(RPackage):
 	The package is designed for visualization of RNA-related genomic features with respect to the landmarks of RNA transcripts, i.e., transcription starting site, start codon, stop codon and transcription ending site.
 	"""
 	
-	bioc = "Guitar" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Guitar_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Guitar/Guitar_2.18.0.tar.gz"]
+	bioc = "Guitar"
 
-	version("2.24.0", tag="RELEASE_3_21")
-	version("2.18.0", sha256="cc56ce5145938591837b85e32651787641c0e110250993e04b6dffca1a922626")
+	version("2.24.0", commit="fea0fa1be5282964df9be8adccb4c16541514027")
+	version("2.18.0", commit="836574b623b1eb0146af4903e02c28e089b01e23")
 
 	depends_on("r-genomicfeatures", type=("build", "run"))
 	depends_on("r-rtracklayer", type=("build", "run"))

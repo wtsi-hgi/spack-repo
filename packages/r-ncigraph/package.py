@@ -12,11 +12,10 @@ class RNcigraph(RPackage):
 	Provides various methods to load the pathways from the NCI Pathways Database in R graph objects and to re-format them.
 	"""
 	
-	bioc = "NCIgraph" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NCIgraph_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NCIgraph/NCIgraph_1.50.0.tar.gz"]
+	bioc = "NCIgraph"
 
-	version("1.56.0", tag="RELEASE_3_21")
-	version("1.50.0", sha256="661bebfac48019277075f230d08b25a64ae99f867903faef3e769ba1c0c8698a")
+	version("1.56.0", commit="7a42ff77f66cf5ac9b002557a2e96acd03ffa9a2")
+	version("1.50.0", commit="fc6019c20cc6ab83663fe27a1b2a39eaab286019")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

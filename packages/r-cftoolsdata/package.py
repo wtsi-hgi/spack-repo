@@ -13,11 +13,10 @@ class RCftoolsdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/jasminezhoulab/cfToolsData"
-	bioc = "cfToolsData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/cfToolsData_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/cfToolsData/cfToolsData_1.0.0.tar.gz"]
+	bioc = "cfToolsData"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="890eda9e8afc62f0e4c90af921328b0836afcbb5ae698be2f6f0a58429259945")
+	version("1.6.0", commit="e46e1947d1450c1189bd87c8437019706bc6a8fb")
+	version("1.0.0", commit="62944016dc4ea28f54c48ae990152aedfd64cc1d")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

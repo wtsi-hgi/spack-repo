@@ -12,10 +12,9 @@ class RBloodcancermultiomics2017(RPackage):
 	The package contains data of the Primary Blood Cancer Encyclopedia (PACE) project together with a complete executable transcript of the statistical analysis and reproduces figures presented in the paper "Drug-perturbation-based stratification of blood cancer" by Dietrich S, Oles M, Lu J et al., J. Clin. Invest. (2018) 128(1):427-445. doi:10.1172/JCI93801.
 	"""
 	
-	bioc = "BloodCancerMultiOmics2017" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BloodCancerMultiOmics2017_1.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/BloodCancerMultiOmics2017/BloodCancerMultiOmics2017_1.22.1.tar.gz"]
+	bioc = "BloodCancerMultiOmics2017"
 
-	version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", commit="4ade1ae6a78d971dea81dc3950d195fa2aef8ebd")
 	version("1.22.1", md5="fabac1780c0616a91881b574e61ee31c", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BloodCancerMultiOmics2017_1.22.1.tar.gz")
 	version("1.22.0", md5="d2b2dcb147bf904df505fedca2d1ea9e", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BloodCancerMultiOmics2017_1.22.0.tar.gz")
 

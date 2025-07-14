@@ -12,11 +12,10 @@ class RBorealis(RPackage):
 	Borealis is an R library performing outlier analysis for count-based bisulfite sequencing data. It detectes outlier methylated CpG sites from bisulfite sequencing (BS-seq). The core of Borealis is modeling Beta-Binomial distributions. This can be useful for rare disease diagnoses.
 	"""
 	
-	bioc = "borealis" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/borealis_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/borealis/borealis_1.6.0.tar.gz"]
+	bioc = "borealis"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="44a51762bb980824db6979645d2ade9cb7e2947382e276af5752fb715a766290")
+	version("1.12.0", commit="35b22b9f47d1a5c29f1a55946a7c92b0e276a510")
+	version("1.6.0", commit="701604e1dc93bb9e75be328acdd7168c121e90ab")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

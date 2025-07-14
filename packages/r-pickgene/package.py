@@ -13,10 +13,9 @@ class RPickgene(RPackage):
 	"""
 	
 	homepage = "http://www.stat.wisc.edu/~yandell/statgen"
-	bioc = "pickgene" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pickgene_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pickgene/pickgene_1.74.0.tar.gz"]
+	bioc = "pickgene"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="5da2bf657c69351c8f2b78e8f4da800ccbfb1e4cf6eb686b57beeb648030e836")
+	version("1.80.0", commit="b3dac51572de807dd7112b94b8c923ca6883886f")
+	version("1.74.0", commit="f8683d09218ba03a492460e542dd656959c05a2e")
 
 	depends_on("r-mass", type=("build", "run"))

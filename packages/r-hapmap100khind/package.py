@@ -12,10 +12,9 @@ class RHapmap100khind(RPackage):
 	Sample dataset obtained from http://www.hapmap.org
 	"""
 	
-	bioc = "hapmap100khind" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hapmap100khind_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/hapmap100khind/hapmap100khind_1.44.0.tar.gz"]
+	bioc = "hapmap100khind"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="cb270f7155f0a5615767aea526134445ecc0499fec95def17805b58c1e71fbe3")
+	version("1.50.0", commit="cf1ac792be6e4c2789861039756ccf427d8aac92")
+	version("1.44.0", commit="b17b43fd18098f41c1be8e9b1d6b660f4a6dde3b")
 
 

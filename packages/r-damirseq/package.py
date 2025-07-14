@@ -12,11 +12,10 @@ class RDamirseq(RPackage):
 	The DaMiRseq package offers a tidy pipeline of data mining procedures to identify transcriptional biomarkers and exploit them for both binary and multi-class classification purposes. The package accepts any kind of data presented as a table of raw counts and allows including both continous and factorial variables that occur with the experimental setting. A series of functions enable the user to clean up the data by filtering genomic features and samples, to adjust data by identifying and removing the unwanted source of variation (i.e. batches and confounding factors) and to select the best predictors for modeling. Finally, a "stacking" ensemble learning technique is applied to build a robust classification model. Every step includes a checkpoint that the user may exploit to assess the effects of data management by looking at diagnostic plots, such as clustering and heatmaps, RLE boxplots, MDS or correlation plot.
 	"""
 	
-	bioc = "DaMiRseq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DaMiRseq_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DaMiRseq/DaMiRseq_2.14.0.tar.gz"]
+	bioc = "DaMiRseq"
 
-	version("2.20.0", tag="RELEASE_3_21")
-	version("2.14.0", sha256="68dc5988e17c84f2e1e6e1b56c2735c4e4e804768f6825d56f221d2777a63ad7")
+	version("2.20.0", commit="a1dd1bc0e771460fa9ad387a47af3359210a4d11")
+	version("2.14.0", commit="18c499a4a223e2105ff7fe9c25b097aed18f36f7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

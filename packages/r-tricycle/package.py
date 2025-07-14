@@ -13,11 +13,10 @@ class RTricycle(RPackage):
 	"""
 	
 	homepage = "https://github.com/hansenlab/tricycle"
-	bioc = "tricycle" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tricycle_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tricycle/tricycle_1.10.0.tar.gz"]
+	bioc = "tricycle"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="6de6b8a4a65e034715fd2c49f201cea577c76e7aca8aeb8e83e9df80cc9d5cb5")
+	version("1.16.0", commit="93718bd8eca5e27e133b291a1cfb18928ec3ef6c")
+	version("1.10.0", commit="e1b6ba5f3b23eef680dc11127985860af80d24c4")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

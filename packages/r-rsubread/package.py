@@ -13,11 +13,10 @@ class RRsubread(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org/packages/Rsubread"
-	bioc = "Rsubread" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rsubread_2.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rsubread/Rsubread_2.16.1.tar.gz"]
+	bioc = "Rsubread"
 
-	version("2.22.1", tag="RELEASE_3_21")
-	version("2.16.1", sha256="e8779bc837bcf99a30a2d2a0cfd3e5fab452db96ef3b212f054eb85767a0ee65")
+	version("2.22.1", commit="f06e38b33a12e2403dd467e4c7969596b6126741")
+	version("2.16.1", commit="b1a6ee9328bdad963cd2c1c1bb9e4cac7b02a0c2")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("zlib", type=("build", "link", "run"))

@@ -13,11 +13,10 @@ class RRtrm(RPackage):
 	"""
 	
 	homepage = "https://github.com/ddiez/rTRM"
-	bioc = "rTRM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rTRM_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rTRM/rTRM_1.40.0.tar.gz"]
+	bioc = "rTRM"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="53e12939a7afd5168c738711370f8b6fc99c54f45ca19d60432cbf42372547e3")
+	version("1.46.0", commit="f88021127c7db19d74aff244c8e26efe9ed9778f")
+	version("1.40.0", commit="d1183dd8d57871ba3fee567730d1e7e977ebb4b2")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-igraph@1:", type=("build", "run"))

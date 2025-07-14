@@ -12,11 +12,10 @@ class RBeat(RPackage):
 	Model-based analysis of single-cell methylation data
 	"""
 	
-	bioc = "BEAT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BEAT_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BEAT/BEAT_1.40.0.tar.gz"]
+	bioc = "BEAT"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="ba27bdfeb7bab351b7590e1473a026bee73d93e4e6daf89aef6d5f91e8a5accf")
+	version("1.46.0", commit="e78cc42dd8b7a592f091917ab33ea077a9447c8d")
+	version("1.40.0", commit="27254d06458ea8048189b232a40ef2070c3e62ec")
 
 	depends_on("r@2.13:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

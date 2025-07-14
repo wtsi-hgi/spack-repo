@@ -12,14 +12,8 @@ class RDropletutils(RPackage):
     Provides a number of utility functions for handling single-cell (RNA-seq) data from droplet technologies such as 10X Genomics. This includes data loading from count matrices or molecule information files, identification of cells from empty droplets, removal of barcode-swapped pseudo-cells, and downsampling of the count matrix.
     """
 
-    bioc = "DropletUtils"
-    urls = [
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DropletUtils_1.22.0.tar.gz",
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DropletUtils/DropletUtils_1.22.0.tar.gz",
-    ]
-
-    version("1.28.0", tag="RELEASE_3_21")
-    version("1.22.0", sha256="c67152c06c1cd8388895265f30f945ad12f6d389ff4bcfb125f079a0c499dd2e")
+    bioc = "DropletUtils"version("1.28.0", commit="8b6b3534a81a1da183cdd7e3d5b62c235fb06178")
+    version("1.22.0", commit="56d3ce8838af84d080aeee6016feaa472373dff9")
 
     depends_on("r-singlecellexperiment", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))

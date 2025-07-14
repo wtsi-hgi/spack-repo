@@ -12,11 +12,10 @@ class REximir(RPackage):
 	This package contains functions for reading raw data in ImaGene TXT format obtained from Exiqon miRCURY LNA arrays, annotating them with appropriate GAL files, and normalizing them using a spike-in probe-based method. Other platforms and data formats are also supported.
 	"""
 	
-	bioc = "ExiMiR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExiMiR_2.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExiMiR/ExiMiR_2.44.0.tar.gz"]
+	bioc = "ExiMiR"
 
-	version("2.50.0", tag="RELEASE_3_21")
-	version("2.44.0", sha256="102d61cbd14f0bc6bd7ef8f20821396b56e0d878c74de02a59209521c2e76672")
+	version("2.50.0", commit="08eba458eb9328b7692462d170efd93843e91c8f")
+	version("2.44.0", commit="45c5a7fabda25772323cc8c549ed559707e8161c")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

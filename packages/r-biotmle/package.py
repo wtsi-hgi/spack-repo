@@ -13,11 +13,10 @@ class RBiotmle(RPackage):
 	"""
 	
 	homepage = "https://code.nimahejazi.org/biotmle"
-	bioc = "biotmle" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biotmle_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biotmle/biotmle_1.26.0.tar.gz"]
+	bioc = "biotmle"
 
-	version("1.32.1", tag="RELEASE_3_21")
-	version("1.26.0", sha256="deedd95e7451ea67870c9b8e716bcc8729b5d77055cd886aea7cbbb3bb36e940")
+	version("1.32.1", commit="377fd0d9cd8e630699392fd120db7c9520e145f6")
+	version("1.26.0", commit="e95f9b03124c7ff8fa5ae43ba006477681e8ffd0")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

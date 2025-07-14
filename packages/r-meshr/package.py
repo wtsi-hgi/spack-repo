@@ -12,11 +12,10 @@ class RMeshr(RPackage):
 	A set of annotation maps describing the entire MeSH assembled using data from MeSH.
 	"""
 	
-	bioc = "meshr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/meshr_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/meshr/meshr_2.8.0.tar.gz"]
+	bioc = "meshr"
 
-	version("2.14.0", tag="RELEASE_3_21")
-	version("2.8.0", sha256="d4e8efbab57fdbf690544eae575b2d2d78e8f8e79a8a20069631f2ee9b0f5a83")
+	version("2.14.0", commit="7e4fb6bcd3e0017f18a67a50fd6509b88f3c1566")
+	version("2.8.0", commit="4fc2782e367bf57742ae459edf7847964906b11f")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-markdown", type=("build", "run"))

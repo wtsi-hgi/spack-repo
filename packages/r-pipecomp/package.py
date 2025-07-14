@@ -13,11 +13,10 @@ class RPipecomp(RPackage):
 	"""
 	
 	homepage = "https://doi.org/10.1186/s13059-020-02136-7"
-	bioc = "pipeComp" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pipeComp_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pipeComp/pipeComp_1.12.0.tar.gz"]
+	bioc = "pipeComp"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="d9382d3d90aeeb39d6d655b19fcde34926b3f379a7c4741b97860e9409dfc271")
+	version("1.18.0", commit="151589a454e199a31a5cacabaa9c3804ac50a835")
+	version("1.12.0", commit="b567066af753cfdee122178bc822bf0af9f68b82")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

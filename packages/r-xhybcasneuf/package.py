@@ -12,11 +12,10 @@ class RXhybcasneuf(RPackage):
 	Cross-hybridisation study on the ATH1 Affymetrix GeneChip
 	"""
 	
-	bioc = "XhybCasneuf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/XhybCasneuf_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/XhybCasneuf/XhybCasneuf_1.40.0.tar.gz"]
+	bioc = "XhybCasneuf"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="ae7b0802264a50867e6599d908dfef01071ee747f05f04c24024f86471d5ebe3")
+	version("1.46.0", commit="abef7e00e7b0b5cc48570d02f6eebeb026eeac5c")
+	version("1.40.0", commit="f5dabde89023e3bba8704c84f59d9f87651cf10a")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

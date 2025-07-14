@@ -12,11 +12,10 @@ class RClipper(RPackage):
 	Implements topological gene set analysis using a two-step empirical approach. It exploits graph decomposition theory to create a junction tree and reconstruct the most relevant signal path. In the first step clipper selects significant pathways according to statistical tests on the means and the concentration matrices of the graphs derived from pathway topologies. Then, it "clips" the whole pathway identifying the signal paths having the greatest association with a specific phenotype.
 	"""
 	
-	bioc = "clipper" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clipper_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clipper/clipper_1.42.0.tar.gz"]
+	bioc = "clipper"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="14a3ee393b5cbb184e8387394a1616eedb68cadb052a22154d869ead81df1016")
+	version("1.48.0", commit="473204fa92150dd55d0929b983d9949af842be75")
+	version("1.42.0", commit="f54f1b2bd731749d05e7d30dd0769e00b7d5bd47")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

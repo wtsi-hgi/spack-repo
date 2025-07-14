@@ -12,11 +12,10 @@ class RTinesath1probe(RPackage):
 	This package was automatically created by package matchprobes version 1.4.0. The probe sequence data was obtained from http://www.affymetrix.com.
 	"""
 	
-	bioc = "tinesath1probe" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tinesath1probe_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tinesath1probe/tinesath1probe_1.40.0.tar.gz"]
+	bioc = "tinesath1probe"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="29931479e7a68eff177d7b7a42c2ec4eb893792ea84b37f402380ff0e74f21e8")
+	version("1.46.0", commit="cac3c98c93d03872ef288d0a24634c4096765be6")
+	version("1.40.0", commit="a6bf28861fc8795d1e6f8a57e440769331cb669d")
 
 	depends_on("r@1.6:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.11.9:", type=("build", "run"))

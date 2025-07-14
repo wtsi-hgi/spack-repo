@@ -13,11 +13,10 @@ class RPathrender(RPackage):
 	"""
 	
 	homepage = "http://www.bioconductor.org"
-	bioc = "pathRender" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pathRender_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pathRender/pathRender_1.70.0.tar.gz"]
+	bioc = "pathRender"
 
-	version("1.76.0", tag="RELEASE_3_21")
-	version("1.70.0", sha256="1f5291482f1b0cd1722b62b3f10ac4a44b28419b793f86e6c7447ebb934b3212")
+	version("1.76.0", commit="c7cec6a231c00eb9d3bd5a02f3cbff445924abec")
+	version("1.70.0", commit="1fa46b59693d2716c7ee74ddbccc892884e7828c")
 
 	depends_on("r-graph", type=("build", "run"))
 	depends_on("r-rgraphviz", type=("build", "run"))

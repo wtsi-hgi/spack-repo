@@ -12,11 +12,10 @@ class RMinionsummarydata(RPackage):
 	Summarised MinION sequencing data for Salmonella Typhi published by Ashton et al. in 2015. Three replicate runs are each provided as Fast5Summary objects.
 	"""
 	
-	bioc = "minionSummaryData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/minionSummaryData_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/minionSummaryData/minionSummaryData_1.32.0.tar.gz"]
+	bioc = "minionSummaryData"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="da4513dec9b2aa8fb1cc48570fcb889116682787ac8f782cf626c55ee2396fde")
+	version("1.38.0", commit="01f179b8f51fad196254ecfb1580fb35b9e60300")
+	version("1.32.0", commit="c5efcc288603153f51d2bdb15073cb8cfd205302")
 
 	depends_on("r@3.2:", type=("build", "run"))
 

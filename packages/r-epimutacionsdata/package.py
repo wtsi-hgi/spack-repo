@@ -13,11 +13,10 @@ class REpimutacionsdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/LeireAbarrategui/epimutacionsData"
-	bioc = "epimutacionsData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/epimutacionsData_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/epimutacionsData/epimutacionsData_1.6.0.tar.gz"]
+	bioc = "epimutacionsData"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="d013481954019fd8d7e089af8a9f08783b45fba285e75d6df6b5e1099a0a70bd")
+	version("1.12.0", commit="c7a24c473a8cb006355daac7462160d4cd257580")
+	version("1.6.0", commit="9f31975df07ee17f91e87b8cd52bbaff4393c3b3")
 
 	depends_on("r@4.2:", type=("build", "run"))
 

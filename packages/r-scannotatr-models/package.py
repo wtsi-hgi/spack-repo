@@ -12,11 +12,10 @@ class RScannotatrModels(RPackage):
 	Pretrained models for scAnnotatR package. These models can be used to automatically classify several (immune) cell types in human scRNA-seq data.
 	"""
 	
-	bioc = "scAnnotatR.models" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/scAnnotatR.models_0.99.10.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/scAnnotatR.models/scAnnotatR.models_0.99.10.tar.gz"]
+	bioc = "scAnnotatR.models"
 
-	version("0.99.10", tag="RELEASE_3_21")
-	version("0.99.10", sha256="843e7c6de9132ebd91f2e8ba3fd3ec4caa6362366651b489d6abf4a9bc1c42d6")
+	version("0.99.10", commit="71d030bfbce79487db762cffff13bafb7e22e4d9")
+	version("0.99.10", commit="71d030bfbce79487db762cffff13bafb7e22e4d9")
 
 	depends_on("r@4.1:", type=("build", "run"))
 

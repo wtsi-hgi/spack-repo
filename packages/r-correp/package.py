@@ -12,9 +12,8 @@ class RCorrep(RPackage):
 	Multivariate correlation estimation and statistical inference. See package vignette.
 	"""
 	
-	bioc = "CORREP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CORREP_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CORREP/CORREP_1.68.0.tar.gz"]
+	bioc = "CORREP"
 
-	version("1.68.0", sha256="36668e24e1ee105fc9d727fa16d79fd27ed01e72cd7872ac8f25cf751f30aac5")
+	version("1.68.0", commit="fc3535492b893027b457a5fa7e93dbea87a82db4")
 
 	depends_on("r-e1071", type=("build", "run"))

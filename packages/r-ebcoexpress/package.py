@@ -12,11 +12,10 @@ class REbcoexpress(RPackage):
 	An Empirical Bayesian Approach to Differential Co-Expression Analysis at the Gene-Pair Level
 	"""
 	
-	bioc = "EBcoexpress" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EBcoexpress_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EBcoexpress/EBcoexpress_1.46.0.tar.gz"]
+	bioc = "EBcoexpress"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="19efec1bc5219b0658ea7aa78d96a3acb931176e86f27584891fbdcb470a1e35")
+	version("1.52.0", commit="6fb84d4083c31f8686372959235b04ffd4f1b45e")
+	version("1.46.0", commit="85b8c647f4308c4be5f9af3f9ef802199cc0b47a")
 
 	depends_on("r-ebarrays", type=("build", "run"))
 	depends_on("r-mclust", type=("build", "run"))

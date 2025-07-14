@@ -12,10 +12,9 @@ class RGenomationdata(RPackage):
 	The package contains Chip Seq, Methylation and Cage data, downloaded from Encode
 	"""
 	
-	bioc = "genomationData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/genomationData_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/genomationData/genomationData_1.34.0.tar.gz"]
+	bioc = "genomationData"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="07fffca3c15ccb949db91dc715e37da76f5dc1f4e6bccb5fa76434b65a009810")
+	version("1.40.0", commit="cbaf8648bb999705aff5c29e0ef737de03062211")
+	version("1.34.0", commit="3cd09f29a801c8063eb17894016020d9ecf0d5c3")
 
 

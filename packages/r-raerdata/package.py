@@ -13,11 +13,10 @@ class RRaerdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/rnabioco/raerdata"
-	bioc = "raerdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/raerdata_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/raerdata/raerdata_1.0.0.tar.gz"]
+	bioc = "raerdata"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="11822b42c75b6d8bd3d99660c39508070b30460a4149f1f2e48039128e4a1339")
+	version("1.6.0", commit="c3157b105fa579931c108581cc279fbe78b96143")
+	version("1.0.0", commit="4d039edbd32453be16a6a1f3ed101a504d1da2f0")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))

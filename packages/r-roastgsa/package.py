@@ -12,11 +12,10 @@ class RRoastgsa(RPackage):
 	This package implements a variety of functions useful for gene set analysis using rotations to approximate the null distribution. It contributes with the implementation of seven test statistic scores that can be used with different goals and interpretations. Several functions are available to complement the statistical results with graphical representations.
 	"""
 	
-	bioc = "roastgsa" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/roastgsa_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/roastgsa/roastgsa_1.0.0.tar.gz"]
+	bioc = "roastgsa"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="705d83610754235e57d8eddd828caa1eb7296029d963507a68d0d2073b5861b6")
+	version("1.6.0", commit="ee4fda3dd7eaa255db0ed0a3c6336c7a1ece989a")
+	version("1.0.0", commit="aa86dfc576a31a177ab99f1794e419776f1898dd")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

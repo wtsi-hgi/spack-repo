@@ -12,11 +12,10 @@ class RImman(RPackage):
 	Reconstructing Interlog Protein Network (IPN) integrated from several Protein protein Interaction Networks (PPINs). Using this package, overlaying different PPINs to mine conserved common networks between diverse species will be applicable.
 	"""
 	
-	bioc = "IMMAN" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IMMAN_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IMMAN/IMMAN_1.22.0.tar.gz"]
+	bioc = "IMMAN"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="5a5369e6c2d1a6a07017db76993dd625bd2568c6112388af1dd535bd19245b73")
+	version("1.28.0", commit="64beff68a13f145c2c1b232fc44dfa752ef06d57")
+	version("1.22.0", commit="561195579065e60624167f72f60f235b3bd06b55")
 
 	depends_on("r-stringdb", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

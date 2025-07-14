@@ -13,11 +13,10 @@ class RMetaboannotation(RPackage):
 	"""
 	
 	homepage = "https://github.com/RforMassSpectrometry/MetaboAnnotation"
-	bioc = "MetaboAnnotation" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetaboAnnotation_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetaboAnnotation/MetaboAnnotation_1.6.1.tar.gz"]
+	bioc = "MetaboAnnotation"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.1", sha256="7ba37b6a82c6725fc79de69ab7f37ab6af7e17b4dee4973c9ed5fc073eaa54bd")
+	version("1.12.0", commit="0bf0161410d691490af86ce7d640b91c2f030c2e")
+	version("1.6.1", commit="7983e3efdac78f229d0e65a44a1a04ba8100f387")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

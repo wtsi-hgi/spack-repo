@@ -13,11 +13,10 @@ class RBgeecall(RPackage):
 	"""
 	
 	homepage = "https://github.com/BgeeDB/BgeeCall"
-	bioc = "BgeeCall" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BgeeCall_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BgeeCall/BgeeCall_1.18.1.tar.gz"]
+	bioc = "BgeeCall"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.1", sha256="d3e3f426c28e2e03dff284bb974b6549a67fa26eff01ca2354d574ecfcbcfec6")
+	version("1.24.0", commit="b597e297416edf2b8e31c3953dcf1e701a6e9023")
+	version("1.18.1", commit="4677681140d55015c83dfd32fb9fb248bbee7969")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-genomicfeatures", type=("build", "run"))

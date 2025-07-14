@@ -12,10 +12,9 @@ class RCancer(RPackage):
 	The package is user friendly interface based on the cgdsr and other modeling packages to explore, compare, and analyse all available Cancer Data (Clinical data, Gene Mutation, Gene Methylation, Gene Expression, Protein Phosphorylation, Copy Number Alteration) hosted by the Computational Biology Center at Memorial-Sloan-Kettering Cancer Center (MSKCC).
 	"""
 	
-	bioc = "canceR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/canceR_1.36.7.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/canceR/canceR_1.36.7.tar.gz"]
+	bioc = "canceR"
 
-	version("1.42.0", tag="RELEASE_3_21")
+	version("1.42.0", commit="1a4b486b20ede9f182cd46fca8686713367a6ef6")
 	version("1.36.7", md5="02d656dd772b36d0ef1fb08e1357ce2a")
 	version("1.36.3", md5="2e044cafedb167227aa757d494a7cb1f")
 

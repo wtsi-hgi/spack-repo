@@ -12,11 +12,10 @@ class RMeb(RPackage):
 	This package provides a method to identify differential expression genes in the same or different species. Given that non-DE genes have some similarities in features, a scaling-free minimum enclosing ball (SFMEB) model is built to cover those non-DE genes in feature space, then those DE genes, which are enormously different from non-DE genes, being regarded as outliers and rejected outside the ball. The method on this package is described in the article 'A minimum enclosing ball method to detect differential expression genes for RNA-seq data'. The SFMEB method is extended to the scMEB method that considering two or more potential types of cells or unknown labels scRNA-seq dataset DEGs identification.
 	"""
 	
-	bioc = "MEB" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MEB_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MEB/MEB_1.16.0.tar.gz"]
+	bioc = "MEB"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="0f69b4e7b47586c6bd8f5202ee1b982db39cc1168f283d4b52a7d1c23d1b6ea3")
+	version("1.22.0", commit="91fe1c1c12fbef0674ac9723c1234b76020e3772")
+	version("1.16.0", commit="7cf03dbe2b744346295813e381852ed20e12026a")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-e1071", type=("build", "run"))

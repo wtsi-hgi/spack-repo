@@ -13,11 +13,10 @@ class ROrfik(RPackage):
 	"""
 	
 	homepage = "https://github.com/Roleren/ORFik"
-	bioc = "ORFik" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ORFik_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ORFik/ORFik_1.22.2.tar.gz"]
+	bioc = "ORFik"
 
-	version("1.28.2", tag="RELEASE_3_21")
-	version("1.22.2", sha256="fe00c50c039695f803e23cfbf65f67154d77523391627bbd22c6ab953063af73")
+	version("1.28.2", commit="87fcbbfdf7216621fc63b88f51d07d9d31ae4dd8")
+	version("1.22.2", commit="38d47486f2a2e45f29306b5af1ed21a7be42dc0d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-iranges@2.17.1:", type=("build", "run"))

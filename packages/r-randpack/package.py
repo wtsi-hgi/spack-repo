@@ -12,10 +12,9 @@ class RRandpack(RPackage):
 	A suite of classes and functions for randomizing patients in clinical trials.
 	"""
 	
-	bioc = "randPack" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/randPack_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/randPack/randPack_1.48.0.tar.gz"]
+	bioc = "randPack"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="d3610cdc9225f9fe70c93a75a08b6472f33ece9fcbe24fd1fb19d9222842c1e1")
+	version("1.54.0", commit="a37f28326b3e21355783b9bfb73d41d4c14edee9")
+	version("1.48.0", commit="d88939bb143e4d37fc9fdeb24431269221583dce")
 
 	depends_on("r-biobase", type=("build", "run"))

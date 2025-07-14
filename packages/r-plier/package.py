@@ -12,11 +12,10 @@ class RPlier(RPackage):
 	The PLIER (Probe Logarithmic Error Intensity Estimate) method produces an improved signal by accounting for experimentally observed patterns in probe behavior and handling error at the appropriately at low and high signal values.
 	"""
 	
-	bioc = "plier" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/plier_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/plier/plier_1.72.0.tar.gz"]
+	bioc = "plier"
 
-	version("1.78.0", tag="RELEASE_3_21")
-	version("1.72.0", sha256="615828bb3a8809f07922e3ac82b0c90ca97fc83fcf4d5e206cdf2f13ed599aa8")
+	version("1.78.0", commit="67fd95db6056806b32feaae5c5d61a7c5c0632a4")
+	version("1.72.0", commit="a0a4265620a7c569ad4cb8cf0cd294ba28666a5f")
 
 	depends_on("r@2:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

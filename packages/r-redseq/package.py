@@ -12,11 +12,10 @@ class RRedseq(RPackage):
 	The package includes functions to build restriction enzyme cut site (RECS) map, distribute mapped sequences on the map with five different approaches, find enriched/depleted RECSs for a sample, and identify differentially enriched/depleted RECSs between samples.
 	"""
 	
-	bioc = "REDseq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/REDseq_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/REDseq/REDseq_1.48.0.tar.gz"]
+	bioc = "REDseq"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="e9ee17ee2694bab149d453d885db55fcc3261d3e4035dcb7b39ca37b6b6264d9")
+	version("1.54.0", commit="a2bb79a699399624a6ba225b89c3521472474bf5")
+	version("1.48.0", commit="883d05fc0c2f96603dd038adcf7b6aab6a51f49f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

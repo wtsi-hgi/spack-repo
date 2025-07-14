@@ -12,11 +12,10 @@ class RCogaps(RPackage):
 	Coordinated Gene Activity in Pattern Sets (CoGAPS) implements a Bayesian MCMC matrix factorization algorithm, GAPS, and links it to gene set statistic methods to infer biological process activity.  It can be used to perform sparse matrix factorization on any data, and when this data represents biomolecules, to do gene set analysis.
 	"""
 	
-	bioc = "CoGAPS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CoGAPS_3.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CoGAPS/CoGAPS_3.22.0.tar.gz"]
+	bioc = "CoGAPS"
 
-	version("3.28.0", tag="RELEASE_3_21")
-	version("3.22.0", sha256="256548f4a70afa26e70fe1903532bd585a361fdc956da858a1f659ce15a7517f")
+	version("3.28.0", commit="0a5f395bd62e353b19d57c8ac1dafd9ea0742263")
+	version("3.22.0", commit="4118fd66c028954ddddce9455c0aaa25e2e58968")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

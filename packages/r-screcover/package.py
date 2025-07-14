@@ -13,11 +13,10 @@ class RScrecover(RPackage):
 	"""
 	
 	homepage = "https://miaozhun.github.io/scRecover"
-	bioc = "scRecover" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scRecover_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scRecover/scRecover_1.18.0.tar.gz"]
+	bioc = "scRecover"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="34f408553ef04a692a7ff3cf49da56995825d56688433044ef43478edbb1589f")
+	version("1.24.0", commit="48612ddea5d0319de903121435d9d5e83c777f54")
+	version("1.18.0", commit="75e8fa3a7fb326375338498b1cbfc87faacd2ec8")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

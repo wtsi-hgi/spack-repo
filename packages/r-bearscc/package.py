@@ -12,11 +12,10 @@ class RBearscc(RPackage):
 	BEARscc is a noise estimation and injection tool that is designed to assess putative single-cell RNA-seq clusters in the context of experimental noise estimated by ERCC spike-in controls.
 	"""
 	
-	bioc = "BEARscc" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BEARscc_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BEARscc/BEARscc_1.22.0.tar.gz"]
+	bioc = "BEARscc"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="68ff48d568b37593cb77ff6694ba6b4a6fae51ee96747c2bf4bbcd6db1abb653")
+	version("1.28.0", commit="070291e94f8f5f9e4a81a9b9310a80b1b7544c5d")
+	version("1.22.0", commit="243e1c2f2ec9b9d3e9e9e279c0a5da9ee4a40fb0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

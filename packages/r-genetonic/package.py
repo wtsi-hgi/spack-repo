@@ -13,11 +13,10 @@ class RGenetonic(RPackage):
 	"""
 	
 	homepage = "https://github.com/federicomarini/GeneTonic"
-	bioc = "GeneTonic" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneTonic_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneTonic/GeneTonic_2.6.0.tar.gz"]
+	bioc = "GeneTonic"
 
-	version("3.2.0", tag="RELEASE_3_21")
-	version("2.6.0", sha256="b478348ef94ad43d684924e3befeead0fc791b345af2d8c170bd893315d2b0d5")
+	version("3.2.0", commit="b49ba54aad19f2123ab870d7873a1802f4fb2d4c")
+	version("2.6.0", commit="c3f777878e4416b9ebcd8aceedd3403c49a2bc11")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -12,11 +12,10 @@ class RSnadata(RPackage):
 	Data from Wasserman & Faust (1999) "Social Network Analysis"
 	"""
 	
-	bioc = "SNAData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SNAData_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SNAData/SNAData_1.48.0.tar.gz"]
+	bioc = "SNAData"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="ce6f562783bb0c95c122d81d476ceffa8de03f8e897e78082c5ef2f0de43a461")
+	version("1.54.0", commit="42d9de1932440064b20a486a11390e8724c73cc8")
+	version("1.48.0", commit="20c46b8cb5535969cd902b1a624fca6f1c58fb80")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

@@ -13,11 +13,10 @@ class RCellmixs(RPackage):
 	"""
 	
 	homepage = "https://github.com/almutlue/CellMixS"
-	bioc = "CellMixS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellMixS_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellMixS/CellMixS_1.18.0.tar.gz"]
+	bioc = "CellMixS"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="e416a21a70a23da7cca4d67f2e594037b26cee69ef5e51a2ce9f9a3421ec3536")
+	version("1.24.0", commit="c53e6c455ca3745e69f160bb89fbc8285d326aba")
+	version("1.18.0", commit="f781a7ccd8d7d8ee2a248591a3f0a68a2deb31e1")
 
 	depends_on("r-ksamples", type=("build", "run"))
 	depends_on("r@4:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RRfpred(RPackage):
 	Based on external numerous data files where rfPred scores are pre-calculated on all genomic positions of the human exome, the package gives rfPred scores to missense variants identified by the chromosome, the position (hg19 version), the referent and alternative nucleotids and the uniprot identifier of the protein. Note that for using the package, the user has to download the TabixFile and index (approximately 3.3 Go).
 	"""
 	
-	bioc = "rfPred" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rfPred_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rfPred/rfPred_1.40.0.tar.gz"]
+	bioc = "rfPred"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="f05c94016236898d5964884f978edb831ce6e28ec34e5d91c6f7f226b9fb9482")
+	version("1.46.0", commit="b39656868e339fee434c2c7183e4155191e345dc")
+	version("1.40.0", commit="c6c0d16770444b70dfc30198b31f3b5aa26bf79c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomeinfodb", type=("build", "run"))

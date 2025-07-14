@@ -13,11 +13,10 @@ class RMoonlightr(RPackage):
 	"""
 	
 	homepage = "https://github.com/ELELAB/MoonlightR"
-	bioc = "MoonlightR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MoonlightR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MoonlightR/MoonlightR_1.28.0.tar.gz"]
+	bioc = "MoonlightR"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="f973bf40393e5d45b3476feb520c958ecd71cd06bedd7341e1aecef3a2ecb5fe")
+	version("1.34.0", commit="187e024cb0e35209895f85d7cbfdb75a5a5b0273")
+	version("1.28.0", commit="7dada821b7081101769f27b8a7f10021583b8ece")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

@@ -12,11 +12,10 @@ class RAsurat(RPackage):
 	ASURAT is a software for single-cell data analysis. Using ASURAT, one can simultaneously perform unsupervised clustering and biological interpretation in terms of cell type, disease, biological process, and signaling pathway activity. Inputting a single-cell RNA-seq data and knowledge-based databases, such as Cell Ontology, Gene Ontology, KEGG, etc., ASURAT transforms gene expression tables into original multivariate tables, termed sign-by-sample matrices (SSMs).
 	"""
 	
-	bioc = "ASURAT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASURAT_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASURAT/ASURAT_1.6.0.tar.gz"]
+	bioc = "ASURAT"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="679770fe6e667a30ffb4a3dfe1426b780cb7c4059771017337d6683f1f3fb453")
+	version("1.12.0", commit="d0c624a0a074759fabe8e930c6a1c88bf631ab6e")
+	version("1.6.0", commit="b1581b20530ff4655cbe02e18fdea47558e1b17f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

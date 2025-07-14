@@ -13,11 +13,10 @@ class RSc3(RPackage):
 	"""
 	
 	homepage = "https://github.com/hemberg-lab/SC3"
-	bioc = "SC3" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SC3_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SC3/SC3_1.30.0.tar.gz"]
+	bioc = "SC3"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="cf002839ce5fb3240d887d94dd81b8c6f88dcd94e31e7692720faaee8734b014", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SC3_1.30.0.tar.gz")
+	version("1.36.0", commit="0e1700dade00e3d555e0225b6aa3bc38f94e02b1")
+	version("1.30.0", commit="9bcd7ee6f9f48b9d60412e5907d29fb1cea4e4ab")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-e1071", type=("build", "run"))

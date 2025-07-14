@@ -13,13 +13,12 @@ class RAneufinderdata(RPackage):
 	the AneuFinder package."""
 
 	bioc = "AneuFinderData"
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/AneuFinderData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/AneuFinderData/AneuFinderData_1.30.0.tar.gz"]
 
-	version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", commit="a2b8d1bf121eac85dd3e5077a62e9177964d009f")
 	version("1.8.0", commit="4f00f8d5f2e968fea667a7feafc0a4607d6e0c6e")
 	version("1.6.0", commit="8fe5b221619aab75fe84c9094708d240dd1e6730")
 	version("1.4.0", commit="55c8807ee4a37a2eb6d0defafaf843f980b22c40")
-	version("1.30.0", sha256="e0f122c274133a783936285d19600ca34a3c10b48fabbfe881970b8f2746770e")
+	version("1.30.0", commit="573710c04570ea62746a161cb8083c6690be95d6")
 	version("1.28.0", commit="d04255e60173ce478d31b1e1e5c73e6ed9e3b20c")
 	version("1.26.0", commit="4b810599b62a3fb39239bfd98ed960c93989e86b")
 	version("1.24.0", commit="cf6f3852702aab28e3170fc56b695d00b7389666")

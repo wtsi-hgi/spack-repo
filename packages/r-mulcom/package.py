@@ -12,11 +12,10 @@ class RMulcom(RPackage):
 	Identification of differentially expressed genes and false discovery rate (FDR) calculation by Multiple Comparison test.
 	"""
 	
-	bioc = "Mulcom" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Mulcom_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Mulcom/Mulcom_1.52.0.tar.gz"]
+	bioc = "Mulcom"
 
-	version("1.58.0", tag="RELEASE_3_21")
-	version("1.52.0", sha256="450e19d117074b6e9a0690cefc6b2dda42f31a8cabf264d86d90e4a250705b97")
+	version("1.58.0", commit="ffdd56f5c4e3416e523335f8739634770447aa8a")
+	version("1.52.0", commit="3a9c5e5bdd3043bca94526e13681aa00847188a6")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

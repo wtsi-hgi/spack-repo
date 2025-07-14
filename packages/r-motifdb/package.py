@@ -12,11 +12,10 @@ class RMotifdb(RPackage):
 	More than 9900 annotated position frequency matrices from 14 public sources, for multiple organisms.
 	"""
 	
-	bioc = "MotifDb" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MotifDb_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MotifDb/MotifDb_1.44.0.tar.gz"]
+	bioc = "MotifDb"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="b90fed332c52bcceed296b824867ab944ebab291863926bf994a403d5c71e2fc")
+	version("1.50.0", commit="9b7c5d1b558f4b834b9ec99c88e9a6d4d58c91e1")
+	version("1.44.0", commit="12d072e99ac0642cd334b3512abca7f2578ff553")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

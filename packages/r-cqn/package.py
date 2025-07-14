@@ -12,11 +12,10 @@ class RCqn(RPackage):
 	A normalization tool for RNA-Seq data, implementing the conditional quantile normalization method.
 	"""
 	
-	bioc = "cqn" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cqn_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cqn/cqn_1.48.0.tar.gz"]
+	bioc = "cqn"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="c8f951f85b5397d631e55a87c07a672fc50fdd6474b544484631463f5471b660")
+	version("1.54.0", commit="8c4a46a4b6e55fc646cfb51174b745d59aa7f564")
+	version("1.48.0", commit="0d28c4372fcc7b25c3cc7cc6596001273bee9735")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-mclust", type=("build", "run"))

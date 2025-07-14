@@ -12,11 +12,10 @@ class RFis(RPackage):
 	Data set containing two complete lists of identified functional interaction partners in Human. Data are derived from Reactome and BioGRID databases.
 	"""
 	
-	bioc = "FIs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FIs_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FIs/FIs_1.30.0.tar.gz"]
+	bioc = "FIs"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="64adfbe1a4b1cea71071ed4573126b7b2d25f4d162bcb08e0239e464c505dc5e")
+	version("1.36.0", commit="7fcfae89bb061af6633c0c3f5cabe2d9df5340ae")
+	version("1.30.0", commit="6ebc57f7cc1ffbc3f986eb96d1baf4a1b44bd3a7")
 
 	depends_on("r@3.3:", type=("build", "run"))
 

@@ -12,11 +12,10 @@ class RDnabarcodecompatibility(RPackage):
 	The package allows one to obtain optimised combinations of DNA barcodes to be used for multiplex sequencing. In each barcode combination, barcodes are pooled with respect to Illumina chemistry constraints. Combinations can be filtered to keep those that are robust against substitution and insertion/deletion errors thereby facilitating the demultiplexing step. In addition, the package provides an optimiser function to further favor the selection of barcode combinations with least heterogeneity in barcode usage.
 	"""
 	
-	bioc = "DNABarcodeCompatibility" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DNABarcodeCompatibility_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DNABarcodeCompatibility/DNABarcodeCompatibility_1.18.0.tar.gz"]
+	bioc = "DNABarcodeCompatibility"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="e7a521473450540a8d9dc8f6f4e81cf8063b3081f7f53b9726f7fe4383684532")
+	version("1.24.0", commit="62cb6b6b20ca536794281d197c803fc9ca0d6d08")
+	version("1.18.0", commit="44ca03d0ae42e36984687ed1b0903a653070baac")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

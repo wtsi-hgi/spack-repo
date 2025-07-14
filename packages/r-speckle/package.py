@@ -12,11 +12,10 @@ class RSpeckle(RPackage):
 	The speckle package contains functions for the analysis of single cell RNA-seq data. The speckle package currently contains functions to analyse differences in cell type proportions. There are also functions to estimate the parameters of the Beta distribution based on a given counts matrix, and a function to normalise a counts matrix to the median library size. There are plotting functions to visualise cell type proportions and the mean-variance relationship in cell type proportions and counts. As our research into specialised analyses of single cell data continues we anticipate that the package will be updated with new functions.
 	"""
 	
-	bioc = "speckle" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/speckle_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/speckle/speckle_1.2.0.tar.gz"]
+	bioc = "speckle"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="7ab4b4cc704042e0f505c3545bc1add88aabec7a63abd947350fd896f593b7df")
+	version("1.8.0", commit="8b8d884e63c575d96d8ee95ce542a85248ec5c0f")
+	version("1.2.0", commit="fde77d22a2568dcd1086d9265ed521b9946635da")
 	version("0.0.3", git="https://github.com/Oshlack/speckle.git", commit="9347bf07b5cdc49ecedc0042d3a007742db01691")
 
 	depends_on("r@4.2:", type=("build", "run"), when="@1.2.0:")

@@ -13,11 +13,10 @@ class RTreg(RPackage):
 	"""
 	
 	homepage = "https://github.com/LieberInstitute/TREG"
-	bioc = "TREG" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TREG_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TREG/TREG_1.6.0.tar.gz"]
+	bioc = "TREG"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="e56b07ec0a89fd774846e4c5f600efc221bec508f60905f6694909cab9c5ab7f")
+	version("1.12.0", commit="cd017799ee7b937fa6d15141f0a26bb0162852ec")
+	version("1.6.0", commit="fcf0640b15a5306f59c2899bac852e4c8f371c7d")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -12,11 +12,10 @@ class RPairkat(RPackage):
 	PaIRKAT is model framework for assessing statistical relationships between networks of metabolites (pathways) and an outcome of interest (phenotype). PaIRKAT queries the KEGG database to determine interactions between metabolites from which network connectivity is constructed. This model framework improves testing power on high dimensional data by including graph topography in the kernel machine regression setting. Studies on high dimensional data can struggle to include the complex relationships between variables. The semi-parametric kernel machine regression model is a powerful tool for capturing these types of relationships. They provide a framework for testing for relationships between outcomes of interest and high dimensional data such as metabolomic, genomic, or proteomic pathways. PaIRKAT uses known biological connections between high dimensional variables by representing them as edges of ‘graphs’ or ‘networks.’ It is common for nodes (e.g. metabolites) to be disconnected from all others within the graph, which leads to meaningful decreases in testing power whether or not the graph information is included. We include a graph regularization or ‘smoothing’ approach for managing this issue.
 	"""
 	
-	bioc = "pairkat" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pairkat_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pairkat/pairkat_1.8.0.tar.gz"]
+	bioc = "pairkat"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="ba1f9d954ffd3efe1f71ae7d10b8ddaadc3b07b9a2301620f60895d4dc686a93")
+	version("1.14.0", commit="36f2dab292c2ba50da3e8ecfd83c7bf9e20bea69")
+	version("1.8.0", commit="e5e7317c82202927f923c968886a2f81033ab5e1")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

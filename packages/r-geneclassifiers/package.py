@@ -13,11 +13,10 @@ class RGeneclassifiers(RPackage):
 	"""
 	
 	homepage = "https://doi.org/doi:10.18129/B9.bioc.geneClassifiers"
-	bioc = "geneClassifiers" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geneClassifiers_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geneClassifiers/geneClassifiers_1.26.0.tar.gz"]
+	bioc = "geneClassifiers"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="f5a45f5b24da69f0879075ae5aae2f469c2e220d13bb47fa2eb95f8516fb7f1f")
+	version("1.32.0", commit="28dc73df5e84b7447d767691010d10de3b6011cb")
+	version("1.26.0", commit="b3a557d748a64b9927f4ce547c15c7d887012cce")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

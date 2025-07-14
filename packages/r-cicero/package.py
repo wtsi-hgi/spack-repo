@@ -12,11 +12,10 @@ class RCicero(RPackage):
 	Cicero computes putative cis-regulatory maps from single-cell chromatin accessibility data. It also extends monocle 2 for use in chromatin accessibility data.
 	"""
 	
-	bioc = "cicero" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cicero_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cicero/cicero_1.20.0.tar.gz"]
+	bioc = "cicero"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="c59b4a1cb65a373646d2ffc3574f390f87afc36ac5de540bbe856472781876a7")
+	version("1.26.0", commit="f346fbabb5191b54d9e5b9e456afed0ba50d770d")
+	version("1.20.0", commit="5f59985644855d1bf1ca2b59b5fdbd71fbd86ae1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-monocle", type=("build", "run"))

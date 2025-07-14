@@ -13,10 +13,9 @@ class RMeebodata(RPackage):
 	"""
 	
 	homepage = "http://alizadehlab.stanford.edu/"
-	bioc = "MEEBOdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MEEBOdata_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MEEBOdata/MEEBOdata_1.40.0.tar.gz"]
+	bioc = "MEEBOdata"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="67a8e144fc8c0d684a2b5f84a8511801df7d8710dfae272d1a15022b2d12295a")
+	version("1.46.0", commit="02b916dd7639020afa14f942b9318e87a2359cdf")
+	version("1.40.0", commit="c102a18406ea90088a44d66084961875e8b436f7")
 
 

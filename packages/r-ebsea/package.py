@@ -12,11 +12,10 @@ class REbsea(RPackage):
 	Calculates differential expression of genes based on exon counts of genes obtained from RNA-seq sequencing data.
 	"""
 	
-	bioc = "EBSEA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EBSEA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EBSEA/EBSEA_1.30.0.tar.gz"]
+	bioc = "EBSEA"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="a373d8d37c857a9058d250398fc9dede7b0f7c4add523ba0807ba3def1675af9")
+	version("1.36.0", commit="f86728394a13cb70879a84f255566a3636370cb8")
+	version("1.30.0", commit="3f6476a6b87cbae1a78bebe043cd3e1e435da2de")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-deseq2", type=("build", "run"))

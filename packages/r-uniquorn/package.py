@@ -12,11 +12,10 @@ class RUniquorn(RPackage):
 	'Uniquorn' enables users to identify cancer cell lines. Cancer cell line misidentification and cross-contamination reprents a significant challenge for cancer researchers. The identification is vital and in the frame of this package based on the locations/ loci of somatic and germline mutations/ variations. The input format is vcf/ vcf.gz and the files have to contain a single cancer cell line sample (i.e. a single member/genotype/gt column in the vcf file).
 	"""
 	
-	bioc = "Uniquorn" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Uniquorn_2.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Uniquorn/Uniquorn_2.22.0.tar.gz"]
+	bioc = "Uniquorn"
 
-	version("2.28.0", tag="RELEASE_3_21")
-	version("2.22.0", sha256="97bf1d7d247e48e1d1a606edad4d5d78d9f16b62f6b847b586553017cf94a0e5")
+	version("2.28.0", commit="5c491bdea6031e3566a4787828bd3a73f639aa47")
+	version("2.22.0", commit="207ec1c98530f1576fc47a6371cde0e8fd64add6")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))

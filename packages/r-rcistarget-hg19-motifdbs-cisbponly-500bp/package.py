@@ -13,11 +13,10 @@ class RRcistargetHg19MotifdbsCisbponly500bp(RPackage):
 	"""
 	
 	homepage = "http://scenic.aertslab.org"
-	bioc = "RcisTarget.hg19.motifDBs.cisbpOnly.500bp" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RcisTarget.hg19.motifDBs.cisbpOnly.500bp_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RcisTarget.hg19.motifDBs.cisbpOnly.500bp/RcisTarget.hg19.motifDBs.cisbpOnly.500bp_1.22.0.tar.gz"]
+	bioc = "RcisTarget.hg19.motifDBs.cisbpOnly.500bp"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="d7cdcfe7bf1a42345d695db134e93f9678d91438cb32c78f9a295d20f3a30a7a")
+	version("1.28.0", commit="6030af7438e5defced8abf1b8d5cfdfb56685f06")
+	version("1.22.0", commit="524a41d9f53c033668274e7cb1d6730c0febc234")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

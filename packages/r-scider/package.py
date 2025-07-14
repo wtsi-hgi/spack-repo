@@ -13,11 +13,10 @@ class RScider(RPackage):
 	"""
 	
 	homepage = "https://github.com/ChenLaboratory/scider"
-	bioc = "scider" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scider_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scider/scider_1.0.0.tar.gz"]
+	bioc = "scider"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="0b54660caa2f18fa624319f51f8971d29e067b56546f4bfd50cfb4dd5f8187e6")
+	version("1.6.0", commit="f53c7b3fa501160ca4c89fe6f80c7950da9c0f85")
+	version("1.0.0", commit="aa4483ad95c0cb72335980d755f94d9e80713a37")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-spatialexperiment", type=("build", "run"))

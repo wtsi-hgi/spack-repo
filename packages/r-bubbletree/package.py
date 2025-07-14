@@ -12,11 +12,10 @@ class RBubbletree(RPackage):
 	CNV analysis in groups of tumor samples.
 	"""
 	
-	bioc = "BubbleTree" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BubbleTree_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BubbleTree/BubbleTree_2.32.0.tar.gz"]
+	bioc = "BubbleTree"
 
-	version("2.38.0", tag="RELEASE_3_21")
-	version("2.32.0", sha256="f872892095464d12c8f74d623af818b262a869719342dad23470bbfe21b39228")
+	version("2.38.0", commit="bffc259a63c0dc81ba8e1f50786aebfc4cff1beb")
+	version("2.32.0", commit="eea5b5e9689af909dbae309648bb3fe7f6f07b56")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

@@ -14,10 +14,9 @@ class RAffydata(RPackage):
 	affy."""
 
 	bioc = "affydata"
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/affydata_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/affydata/affydata_1.50.0.tar.gz"]
 
-	version("1.56.0", tag="RELEASE_3_21")
-	version("1.50.0", sha256="3340311ac13fe8f150acd279941fd1d8e04cf34c205aa589837c2adbd1c62fdd")
+	version("1.56.0", commit="f72e43136101d8cb3665dcc0916c77406815f902")
+	version("1.50.0", commit="203e040f737bdeb65d8cd2123dc76036f23e4e3a")
 	version("1.48.0", commit="037b86c86c114761ff1bcca64ab4e0bcd68063d3")
 	version("1.46.0", commit="870745b886df9f1fbbd6130d266c0ef96f3afa66")
 	version("1.44.0", commit="f18304a356cee8cd7297bab362b13c40e50439df")

@@ -12,11 +12,10 @@ class RPadog(RPackage):
 	This package implements a general purpose gene set analysis method called PADOG that downplays the importance of genes that apear often accross the sets of genes to be analyzed. The package provides also a benchmark for gene set analysis methods in terms of sensitivity and ranking using 24 public datasets from KEGGdzPathwaysGEO package.
 	"""
 	
-	bioc = "PADOG" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PADOG_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PADOG/PADOG_1.44.0.tar.gz"]
+	bioc = "PADOG"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="c72876d6cb9ab80aedce60510f5a3d6b6e75dc31ca8d980c7b805657a650cc7b")
+	version("1.50.0", commit="4f7fb8c75739c7abacaf8276824d9c46e0e1d6d7")
+	version("1.44.0", commit="da280c71f1370b8f3913d100a0d2fbcce47444e8")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-keggdzpathwaysgeo", type=("build", "run"))

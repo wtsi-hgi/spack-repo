@@ -13,11 +13,10 @@ class RMsbackendmgf(RPackage):
 	"""
 	
 	homepage = "https://github.com/RforMassSpectrometry/MsBackendMgf"
-	bioc = "MsBackendMgf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsBackendMgf_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsBackendMgf/MsBackendMgf_1.10.0.tar.gz"]
+	bioc = "MsBackendMgf"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="d4e30e91104bbc46b0afa052110d60278eb8ff73ce5e1812f60bc873b272fd7b")
+	version("1.16.0", commit="680dc1348a9d74c15166624d38f15a13b4351a8d")
+	version("1.10.0", commit="afaba38297fcc781753e803b56a961ab894d7f44")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-spectra@1.5.14:", type=("build", "run"))

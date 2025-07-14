@@ -13,11 +13,10 @@ class RMsfeatures(RPackage):
 	"""
 	
 	homepage = "https://github.com/RforMassSpectrometry/MsFeatures"
-	bioc = "MsFeatures" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsFeatures_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsFeatures/MsFeatures_1.10.0.tar.gz"]
+	bioc = "MsFeatures"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="9a0d9468afd146512b16980ed7d1256d7b03888fe804b5b8b1530b69e261fa6e")
+	version("1.16.0", commit="467deed5ecee7a09dc79f5172f6c9299d8a84005")
+	version("1.10.0", commit="206e190bb7e032bd9235db5a3beaef6a40ef88fc")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-protgenerics@1.23.5:", type=("build", "run"))

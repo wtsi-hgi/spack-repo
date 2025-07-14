@@ -12,11 +12,10 @@ class RGmapr(RPackage):
 	GSNAP and GMAP are a pair of tools to align short-read data written by Tom Wu.  This package provides convenience methods to work with GMAP and GSNAP from within R. In addition, it provides methods to tally alignment results on a per-nucleotide basis using the bam_tally tool.
 	"""
 	
-	bioc = "gmapR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gmapR_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gmapR/gmapR_1.44.0.tar.gz"]
+	bioc = "gmapR"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="9a4170ff62a8a5482a5f77187ec9b3791896546c1eb1038545eb7f90cf488022")
+	version("1.50.0", commit="0b5ffd173a80210a53b122a8fe2587fa7d26e325")
+	version("1.44.0", commit="5a7a72619365b0a02cdc93a45acb934cc0069706")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-genomeinfodb@1.1.3:", type=("build", "run"))

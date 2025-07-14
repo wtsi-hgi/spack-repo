@@ -13,11 +13,10 @@ class RRcx(RPackage):
 	"""
 	
 	homepage = "https://github.com/frankkramer-lab/RCX"
-	bioc = "RCX" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCX_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RCX/RCX_1.6.0.tar.gz"]
+	bioc = "RCX"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="be3648d49d22400d2241ef354ba652c4a0814b803a0fabde4b0430b268860037")
+	version("1.12.0", commit="546c3dfd1b95377a4aa47c333234c6498ca3634e")
+	version("1.6.0", commit="9be752830dca5fec6da69452d3ea1e28ccd9be63")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

@@ -12,11 +12,10 @@ class RMousefm(RPackage):
 	This package provides methods for genetic finemapping in inbred mice by taking advantage of their very high homozygosity rate (>95%).
 	"""
 	
-	bioc = "MouseFM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MouseFM_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MouseFM/MouseFM_1.12.0.tar.gz"]
+	bioc = "MouseFM"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="a080d0e6bac984813cd660ed21c96d9e6b4d3eabc3c60fba16c72c0d53ad20d7")
+	version("1.18.0", commit="ed448dba333613d4b6159e8e95b65258ed6dcc02")
+	version("1.12.0", commit="63817e314f28ad9d02d7465f73627cf7318c5fca")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

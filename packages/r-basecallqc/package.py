@@ -12,11 +12,10 @@ class RBasecallqc(RPackage):
 	The basecallQC package provides tools to work with Illumina bcl2Fastq (versions >= 2.1.7) software.Prior to basecalling and demultiplexing using the bcl2Fastq software, basecallQC functions allow the user to update Illumina sample sheets from versions <= 1.8.9 to >= 2.1.7 standards, clean sample sheets of common problems such as invalid sample names and IDs, create read and index basemasks and the bcl2Fastq command. Following the generation of basecalled and demultiplexed data, the basecallQC packages allows the user to generate HTML tables, plots and a self contained report of summary metrics from Illumina XML output files.
 	"""
 	
-	bioc = "basecallQC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/basecallQC_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/basecallQC/basecallQC_1.26.0.tar.gz"]
+	bioc = "basecallQC"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="fae6a98de6fb1d5bdc0d017a0b053584d247eb8791aa723a22ffabf5f3ca652a")
+	version("1.32.0", commit="fa063d63d9d7989f2a279f985cae7503656dbaa2")
+	version("1.26.0", commit="39cd7e8fa64ff457d961cceb7145027eba9d1074")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-rmarkdown", type=("build", "run"))

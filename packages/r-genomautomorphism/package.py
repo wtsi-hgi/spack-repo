@@ -13,11 +13,10 @@ class RGenomautomorphism(RPackage):
 	"""
 	
 	homepage = "https://github.com/genomaths/GenomAutomorphism"
-	bioc = "GenomAutomorphism" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomAutomorphism_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomAutomorphism/GenomAutomorphism_1.4.0.tar.gz"]
+	bioc = "GenomAutomorphism"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="98f116ad3fb31d5d7216407585a0b0db7eebd28d01d79f2f5eefd24f2b67f142")
+	version("1.10.0", commit="bf02d1b62468ff07cb2964b9ed8ede9542044dab")
+	version("1.4.0", commit="2c0069e117e47c389b695456e5590ad86488c123")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

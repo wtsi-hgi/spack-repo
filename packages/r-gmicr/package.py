@@ -12,11 +12,10 @@ class RGmicr(RPackage):
 	This package uses bayesian network learning to detect relationships between Gene Modules detected by WGCNA and immune cell signatures defined by xCell. It is a hypothesis generating tool.
 	"""
 	
-	bioc = "GmicR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GmicR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GmicR/GmicR_1.16.0.tar.gz"]
+	bioc = "GmicR"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="ffb77c2e240742d592e0910eb4094e337401def46599252f36993beecd8cf4a9")
+	version("1.22.0", commit="a0ecac94125f59f362a9c3bbd07c31a30bb79142")
+	version("1.16.0", commit="def961ebdd0b4695f41463a830eea7a36fcd49d1")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

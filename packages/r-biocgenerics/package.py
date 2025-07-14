@@ -11,14 +11,8 @@ class RBiocgenerics(RPackage):
 
     The package defines S4 generic functions used in Bioconductor."""
 
-    bioc = "BiocGenerics"
-    urls = [
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocGenerics_0.48.1.tar.gz",
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocGenerics/BiocGenerics_0.48.1.tar.gz",
-    ]
-
-    version("0.54.0", tag="RELEASE_3_21")
-    version("0.48.1", sha256="13e126709da888420f320353d6ea52da12a8cbd086f2e29b9cc3039a6411652b")
+    bioc = "BiocGenerics"version("0.54.0", commit="75c48153ee2c28f84cd0625ed3ca1aaf8eb74211")
+    version("0.48.1", commit="5fd6dfe93786292484dc53023ec681391f4559e0")
     version("0.46.0", commit="a90f0c5976a24417e47e009ba602fc98515ac9ab")
     version("0.44.0", commit="d7cd9c19958bd8d4573d980494188fa15ab16e45")
     version("0.42.0", commit="3582d47b836387afc08157f3d6a5013fd64334ed")

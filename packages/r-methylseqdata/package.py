@@ -12,11 +12,10 @@ class RMethylseqdata(RPackage):
 	Base-level (i.e. cytosine-level) counts for a collection of public bisulfite-seq datasets (e.g., WGBS and RRBS), provided as SummarizedExperiment objects with sample- and base-level metadata.
 	"""
 	
-	bioc = "MethylSeqData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MethylSeqData_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MethylSeqData/MethylSeqData_1.12.0.tar.gz"]
+	bioc = "MethylSeqData"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="cc48d7096cf1f006aade41f8aa33d78dfaaf41df382dd152f8d61ad51428842f")
+	version("1.18.0", commit="bc68b97f2d458d252e600dfc41df3a946258a179")
+	version("1.12.0", commit="61b5e505edb06b3f64d9340c4b78f78f4d8fbfc4")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

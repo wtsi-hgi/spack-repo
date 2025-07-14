@@ -13,10 +13,9 @@ class RLpe(RPackage):
 	"""
 	
 	homepage = "http://www.r-project.org"
-	bioc = "LPE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LPE_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LPE/LPE_1.76.0.tar.gz"]
+	bioc = "LPE"
 
-	version("1.82.0", tag="RELEASE_3_21")
-	version("1.76.0", sha256="09b7b5f563be2cd30d15f8e40a8d6660401609bd6e09bdc04060fed1abf21a46")
+	version("1.82.0", commit="69514d4417ad7fdbf6dbe96f4a837a206fd29aef")
+	version("1.76.0", commit="97f628d79571be34b21459179d734db21a59a583")
 
 	depends_on("r@2.10:", type=("build", "run"))

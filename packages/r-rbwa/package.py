@@ -13,14 +13,8 @@ class RRbwa(RPackage):
 	"""
 
 	homepage = "https://github.com/crisprVerse/Rbwa"
-	bioc = "Rbwa"
-	urls = [
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rbwa_1.6.0.tar.gz",
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rbwa/Rbwa_1.6.0.tar.gz",
-	]
-
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="797e5ba373240a25af5201dfa69be6bed3ab5d6f1a48f4a8a2e96e35ca3e6772")
+	bioc = "Rbwa"version("1.12.0", commit="56399602f2aa80d906033a8112684db860d9a0b5")
+	version("1.6.0", commit="dee50585f3c834c6fc8341066444d60d1bc09122")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("zlib-api", type=("build", "run", "link"))

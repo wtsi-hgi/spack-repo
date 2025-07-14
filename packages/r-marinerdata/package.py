@@ -12,11 +12,10 @@ class RMarinerdata(RPackage):
 	Subsampled Hi-C in HEK cells expressing the NHA9 fusion with an F to S mutated IDR ("FS") or without any mutations to the IDR ("Wildtype" or "WT"). These files are used for testing mariner functions and some examples.
 	"""
 	
-	bioc = "marinerData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/marinerData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/marinerData/marinerData_1.2.0.tar.gz"]
+	bioc = "marinerData"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="409193a16e446a6aac69760421b40e0ad5f6ac562740839a49787a28a3c9a102")
+	version("1.8.0", commit="5cadf8a7bb8d439d9943acbaf73b778b74e88d61")
+	version("1.2.0", commit="2607746f1f2412ef2ff92623f582ccf6af441781")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 

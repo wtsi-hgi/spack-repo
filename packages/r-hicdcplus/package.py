@@ -12,11 +12,10 @@ class RHicdcplus(RPackage):
 	Systematic 3D interaction calls and differential analysis for Hi-C and HiChIP. The HiC-DC+ (Hi-C/HiChIP direct caller plus) package enables principled statistical analysis of Hi-C and HiChIP data sets – including calling significant interactions within a single experiment and performing differential analysis between conditions given replicate experiments – to facilitate global integrative studies. HiC-DC+ estimates significant interactions in a Hi-C or HiChIP experiment directly from the raw contact matrix for each chromosome up to a specified genomic distance, binned by uniform genomic intervals or restriction enzyme fragments, by training a background model to account for random polymer ligation and systematic sources of read count variation.
 	"""
 	
-	bioc = "HiCDCPlus" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiCDCPlus_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiCDCPlus/HiCDCPlus_1.10.0.tar.gz"]
+	bioc = "HiCDCPlus"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="27cf53579d296cb9eb3207eceb6dba5db6620c72b55a60f8f2cac44089bdc50a")
+	version("1.16.0", commit="6bd0e86e1d82e33084f6052cb7d454420d99e052")
+	version("1.10.0", commit="6ebd031d166da3dc1a2144a8f8dbcfb910da4e23")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-interactionset", type=("build", "run"))

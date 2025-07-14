@@ -13,11 +13,10 @@ class RChetah(RPackage):
 	"""
 	
 	homepage = "https://github.com/jdekanter/CHETAH"
-	bioc = "CHETAH" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CHETAH_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CHETAH/CHETAH_1.18.0.tar.gz"]
+	bioc = "CHETAH"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="46970b6775d218fdd2e1248f24ae8f24e9f18703c768461c123c4a7dc27ce678")
+	version("1.24.0", commit="333e23a0be527b8f34ddddf230ed1a2d20f8665c")
+	version("1.18.0", commit="8f59c4daf36bea2ec452070ca2ac61d46cb02861")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

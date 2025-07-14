@@ -13,11 +13,10 @@ class RCircrnaprofiler(RPackage):
 	"""
 	
 	homepage = "https://github.com/Aufiero/circRNAprofiler"
-	bioc = "circRNAprofiler" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/circRNAprofiler_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/circRNAprofiler/circRNAprofiler_1.16.0.tar.gz"]
+	bioc = "circRNAprofiler"
 
-	version("1.22.1", tag="RELEASE_3_21")
-	version("1.16.0", sha256="c3e46196b2004face816959f320d347185a7459250fe6409b4acc0fb755e0e25")
+	version("1.22.1", commit="9355431c62a3d744662829afcb5135e3547bb7a6")
+	version("1.16.0", commit="39fe35bd7843b92d87386819084d694f0b15c53b")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -12,11 +12,10 @@ class RTenxplore(RPackage):
 	Perform ontological exploration of scRNA-seq of 1.3 million mouse neurons from 10x genomics.
 	"""
 	
-	bioc = "tenXplore" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tenXplore_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tenXplore/tenXplore_1.24.0.tar.gz"]
+	bioc = "tenXplore"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="95b76b3e0c0e54d261395aa9f50c78a807273504811b0ccfa778f69a77ef68ea")
+	version("1.30.0", commit="3cd7a55f2758f345294c5a3d1f562c391112d335")
+	version("1.24.0", commit="9c4165ae8f44246ef6779facd6ae853bb27a2748")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

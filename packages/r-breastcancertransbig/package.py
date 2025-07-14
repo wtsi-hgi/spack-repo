@@ -13,11 +13,10 @@ class RBreastcancertransbig(RPackage):
 	"""
 	
 	homepage = "http://compbio.dfci.harvard.edu/"
-	bioc = "breastCancerTRANSBIG" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/breastCancerTRANSBIG_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/breastCancerTRANSBIG/breastCancerTRANSBIG_1.40.0.tar.gz"]
+	bioc = "breastCancerTRANSBIG"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="4dd9e78b4032967ffc46be7dec0ccbb8d0d3f9f78533588e50e8deb858f2090f")
+	version("1.46.0", commit="9d994b70be911209dc1e0775d1f0ef79490402ae")
+	version("1.40.0", commit="cd416ca135e47e5f554fd739f98d55520de45647")
 
 	depends_on("r@2.5:", type=("build", "run"))
 

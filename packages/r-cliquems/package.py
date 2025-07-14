@@ -13,11 +13,10 @@ class RCliquems(RPackage):
 	"""
 	
 	homepage = "http://cliquems.seeslab.net"
-	bioc = "cliqueMS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cliqueMS_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cliqueMS/cliqueMS_1.16.0.tar.gz"]
+	bioc = "cliqueMS"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="aae2fade85a79d90b76d54ee5815d2e283d9cf82caf4b356dc1ed38bb78949a0")
+	version("1.22.0", commit="c7c28736b9f8d51e37b6cb19ced9989506897a33")
+	version("1.16.0", commit="18f44830ad8d3dbdaf19228351a6caa710205b43")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

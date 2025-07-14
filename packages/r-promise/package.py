@@ -12,11 +12,10 @@ class RPromise(RPackage):
 	A general tool to identify genomic features with a specific biologically interesting pattern of associations with multiple endpoint variables as described in Pounds et. al. (2009) Bioinformatics 25: 2013-2019
 	"""
 	
-	bioc = "PROMISE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PROMISE_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PROMISE/PROMISE_1.54.0.tar.gz"]
+	bioc = "PROMISE"
 
-	version("1.60.0", tag="RELEASE_3_21")
-	version("1.54.0", sha256="97a4c9f4ee8b5f5aef2900d890cbeebdab9f7ee0326840935787cc0ad0ac4c43")
+	version("1.60.0", commit="1bf44aa3418ed14ff8b3b51619834eb1a27e3e79")
+	version("1.54.0", commit="1fbb7d79fd07e960139aaaeadd59d99d69ebb18a")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

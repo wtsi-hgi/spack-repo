@@ -13,11 +13,10 @@ class RTriplex(RPackage):
 	"""
 	
 	homepage = "http://www.fi.muni.cz/~lexa/triplex/"
-	bioc = "triplex" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/triplex_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/triplex/triplex_1.42.0.tar.gz"]
+	bioc = "triplex"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="f00330462ca6962bbc9c9816c27a0f425a35928f5006297129187ec05dd2fce5")
+	version("1.48.0", commit="8434ffd1ba01de2107a22d7c0aebf86bf08aa980")
+	version("1.42.0", commit="440178d58131fd16e015a5b15533f45734a767b6")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

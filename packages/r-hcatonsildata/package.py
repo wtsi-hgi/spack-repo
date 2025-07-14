@@ -13,11 +13,10 @@ class RHcatonsildata(RPackage):
 	"""
 	
 	homepage = "https://github.com/massonix/HCATonsilData"
-	bioc = "HCATonsilData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HCATonsilData_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HCATonsilData/HCATonsilData_1.0.0.tar.gz"]
+	bioc = "HCATonsilData"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="5702dca8ccf421d9c00c9f0a788867d74205d3cf43ac550a62387a48b5cbb0c0")
+	version("1.6.0", commit="a4e7b4b8ac75300adf1c8791949f17ed1c8e165a")
+	version("1.0.0", commit="6f017074b3525f74ca49e83bfcf43e96af7015ad")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

@@ -13,11 +13,10 @@ class RChipexoqual(RPackage):
 	"""
 	
 	homepage = "https:github.com/keleslab/ChIPexoQual"
-	bioc = "ChIPexoQual" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPexoQual_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPexoQual/ChIPexoQual_1.26.0.tar.gz"]
+	bioc = "ChIPexoQual"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="92603a21f7fd4b45e67fb0e631f4ebe7707603369f84e0121bfd20cc509db011")
+	version("1.32.0", commit="1b97d57dca541b287aedcc7351c98b88b50ced5a")
+	version("1.26.0", commit="fb1b0847bc43ce1707bcff6e61987ce7b005ca1b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicalignments@1.0.1:", type=("build", "run"))

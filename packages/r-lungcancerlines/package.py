@@ -12,11 +12,10 @@ class RLungcancerlines(RPackage):
 	Reads from an RNA-seq experiment between two lung cancer cell lines: H1993 (met) and H2073 (primary). The reads are stored as Fastq files and are meant for use with the TP53Genome object in the gmapR package.
 	"""
 	
-	bioc = "LungCancerLines" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/LungCancerLines_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/LungCancerLines/LungCancerLines_0.40.0.tar.gz"]
+	bioc = "LungCancerLines"
 
-	version("0.46.0", tag="RELEASE_3_21")
-	version("0.40.0", sha256="86688a5c0915c1522fb1792accd37c36c3a8c5524dc3a4cda77c5a62d2a1277b")
+	version("0.46.0", commit="12aa3f2af1b1b28ba53f30103e86fcaf3ab37b30")
+	version("0.40.0", commit="58601300279232e0cdff1c65ec38a7a59d0906df")
 
 	depends_on("r-rsamtools", type=("build", "run"))
 

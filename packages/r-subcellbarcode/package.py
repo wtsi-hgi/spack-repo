@@ -12,11 +12,10 @@ class RSubcellbarcode(RPackage):
 	Mass-Spectrometry based spatial proteomics have enabled the proteome-wide mapping of protein subcellular localization (Orre et al. 2019, Molecular Cell). SubCellBarCode R package robustly classifies proteins into corresponding subcellular localization.
 	"""
 	
-	bioc = "SubCellBarCode" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SubCellBarCode_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SubCellBarCode/SubCellBarCode_1.18.0.tar.gz"]
+	bioc = "SubCellBarCode"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="83bb76a17d7e3844f00e0a78b1ae47decb8092997553b062c9b6d6d68faa4089")
+	version("1.24.0", commit="fd4fea39bbfbdd2b4f467f925621f34c3b16cf43")
+	version("1.18.0", commit="dc1e986ef333fe818b2a734b1e79acf8685d2222")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rtsne", type=("build", "run"))

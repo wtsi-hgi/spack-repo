@@ -13,11 +13,10 @@ class RCompspot(RPackage):
 	"""
 	
 	homepage = "https://github.com/sydney-grant/compSPOT"
-	bioc = "compSPOT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/compSPOT_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/compSPOT/compSPOT_1.0.0.tar.gz"]
+	bioc = "compSPOT"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="6b11254933cfd20fc3aae611e9d38d7c6ef10e0a7251f06847b9cb48e4c61a8f")
+	version("1.6.0", commit="a664e3ca3f02db7e9c97597ebdabb422cb2ee840")
+	version("1.0.0", commit="d769f5fcf923047e178263a1fa6629d77a5105c2")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

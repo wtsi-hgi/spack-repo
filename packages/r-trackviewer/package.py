@@ -12,11 +12,10 @@ class RTrackviewer(RPackage):
 	Visualize mapped reads along with annotation as track layers for NGS dataset such as ChIP-seq, RNA-seq, miRNA-seq, DNA-seq, SNPs and methylation data.
 	"""
 	
-	bioc = "trackViewer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/trackViewer_1.38.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/trackViewer/trackViewer_1.38.2.tar.gz"]
+	bioc = "trackViewer"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.2", sha256="4603c218d99f42083e32fa7ff8ae1cc24fc6f5954e5d6bcde4c4bee9cdb9fdfd")
+	version("1.44.0", commit="df30c4bbab113a785acf6119339bf0ad5a5b4ab7")
+	version("1.38.2", commit="9e62dddda6311011bd3cd72c2cc37c5ad9b48cc9")
 	version("1.38.1", md5="c0004e0bdb49b5d051e486f73a79a245")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RGladiatox(RPackage):
 	GladiaTOX R package is an open-source, flexible solution to high-content screening data processing and reporting in biomedical research. GladiaTOX takes advantage of the tcpl core functionalities and provides a number of extensions: it provides a web-service solution to fetch raw data; it computes severity scores and exports ToxPi formatted files; furthermore it contains a suite of functionalities to generate pdf reports for quality control and data processing.
 	"""
 	
-	bioc = "GladiaTOX" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GladiaTOX_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GladiaTOX/GladiaTOX_1.18.0.tar.gz"]
+	bioc = "GladiaTOX"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="564c1662530f9d677157ee093bf81768e01f18550a49e7448fa9c44b64100b06")
+	version("1.24.0", commit="fe7e628ac38999057c4d7b2d080f0c038fd3d197")
+	version("1.18.0", commit="d95f57c643b28bd61af9763eddded2ba9f69e7e8")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-data-table@1.9.4:", type=("build", "run"))

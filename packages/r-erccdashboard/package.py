@@ -13,11 +13,10 @@ class RErccdashboard(RPackage):
 	"""
 	
 	homepage = "https://github.com/munrosa/erccdashboard"
-	bioc = "erccdashboard" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/erccdashboard_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/erccdashboard/erccdashboard_1.36.0.tar.gz"]
+	bioc = "erccdashboard"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="57e02c6535898650bae2abf59ec283c1a16f8f5755c350702eb2a26880b5558b")
+	version("1.42.0", commit="1164513c353349995ffdbb1646deeaa54c21b66f")
+	version("1.36.0", commit="ec57f0e6a8d61d845cdbdd3f2e17fd77d7fe25b3")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-ggplot2@2.1:", type=("build", "run"))

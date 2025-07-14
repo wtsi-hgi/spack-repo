@@ -12,9 +12,8 @@ class RMinfi(RPackage):
 	Tools to analyze & visualize Illumina Infinium methylation arrays."""
 
 	bioc = "minfi"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/minfi_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/minfi/minfi_1.48.0.tar.gz"]
-	version("1.54.1", tag="RELEASE_3_21")
-	version("1.48.0", sha256="1d2871388bbdd7b40185a660a683523b2ec856775944576eaeb56e64e46f948e")
+	version("1.54.1", commit="ff9879929ffa8f41dad741714049aba4d2bb8d65")
+	version("1.48.0", commit="aef0cdeef0af25bff51024613e8435a132f50dfa")
 	version("1.46.0", commit="1d063178fb27d577c260f8b7626b982c9a6585cc")
 	version("1.44.0", commit="7c89fefc2e174d43ed9891b3f30b51ee19e916a6")
 	version("1.42.0", commit="30fc7059460a9ec0be734fc26e608426ca9f5614")

@@ -13,11 +13,10 @@ class RRprimer(RPackage):
 	"""
 	
 	homepage = "https://github.com/sofpn/rprimer"
-	bioc = "rprimer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rprimer_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rprimer/rprimer_1.6.0.tar.gz"]
+	bioc = "rprimer"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="6326c6c1e9f2eec7725781d170151289802bdda4eb237372c480c46f546787c0")
+	version("1.12.0", commit="ca7d0f044efcc191fbcb7077278600a91a1a245b")
+	version("1.6.0", commit="19ceddc3ad62b89e4af9724a2ccd3cb6dcf74ccd")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

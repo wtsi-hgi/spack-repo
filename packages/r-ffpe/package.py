@@ -12,11 +12,10 @@ class RFfpe(RPackage):
 	Identify low-quality data using metrics developed for expression data derived from Formalin-Fixed, Paraffin-Embedded (FFPE) data.  Also a function for making Concordance at the Top plots (CAT-plots).
 	"""
 	
-	bioc = "ffpe" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ffpe_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ffpe/ffpe_1.46.0.tar.gz"]
+	bioc = "ffpe"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="0e3670912a7844c23ac57f948f3ba0bb733eb6a6dcc127269e5d36daf711abda")
+	version("1.52.0", commit="d4e86a251c5c2f42e7ab2a234a60dae0a1904b2c")
+	version("1.46.0", commit="1c71bd5caa34694db6c01079219c500d071a9cce")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-ttr", type=("build", "run"))

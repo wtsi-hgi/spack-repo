@@ -12,11 +12,10 @@ class RDart(RPackage):
 	Denoising Algorithm based on Relevance network Topology (DART) is an algorithm designed to evaluate the consistency of prior information molecular signatures (e.g in-vitro perturbation expression signatures) in independent molecular data (e.g gene expression data sets). If consistent, a pruning network strategy is then used to infer the activation status of the molecular signature in individual samples.
 	"""
 	
-	bioc = "DART" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DART_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DART/DART_1.50.0.tar.gz"]
+	bioc = "DART"
 
-	version("1.56.0", tag="RELEASE_3_21")
-	version("1.50.0", sha256="ee212c94aa67da9c4b05062367d3fab5c54ab08e08898b687e0efab887c2601c")
+	version("1.56.0", commit="f10aa76e3d6fda995869957c9faf7122a9dd26b6")
+	version("1.50.0", commit="e186a7cd98ebb891136bf9dc58293a98c69628f5")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-igraph@0.6:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RCrisprdesign(RPackage):
 	"""
 	
 	homepage = "https://github.com/crisprVerse/crisprDesign"
-	bioc = "crisprDesign" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crisprDesign_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crisprDesign/crisprDesign_1.4.0.tar.gz"]
+	bioc = "crisprDesign"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="920560e476b136d25f48c90a3cf2e08026d91c86669588c7ed97d1f85e64c4a0")
+	version("1.10.0", commit="30df11a48f5a1647b94d563793d8f39ae354faef")
+	version("1.4.0", commit="47405b3ceddea0d2bd1854a8f5d27c737ff40c8b")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-crisprbase@1.1.3:", type=("build", "run"))

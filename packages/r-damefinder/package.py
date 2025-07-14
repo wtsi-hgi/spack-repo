@@ -12,11 +12,10 @@ class RDamefinder(RPackage):
 	'DAMEfinder' offers functionality for taking methtuple or bismark outputs to calculate ASM scores and compute DAMEs. It also offers nice visualization of methyl-circle plots.
 	"""
 	
-	bioc = "DAMEfinder" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DAMEfinder_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DAMEfinder/DAMEfinder_1.14.0.tar.gz"]
+	bioc = "DAMEfinder"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="555a74e1ca1c4038106f21d825726dbda1204de221e3e1b8230b8cda08427555")
+	version("1.20.0", commit="6bbac82583460bba8d3925439829a2b32dfaae51")
+	version("1.14.0", commit="622c379a3cc02212baa656b151f053e692c963c7")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomeinfodb", type=("build", "run"))

@@ -12,11 +12,10 @@ class RRtopper(RPackage):
 	the RTopper package is designed to perform and integrate gene set enrichment results across multiple genomic platforms.
 	"""
 	
-	bioc = "RTopper" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RTopper_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RTopper/RTopper_1.48.0.tar.gz"]
+	bioc = "RTopper"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="a6ab357c6469ad1ae52e178287ae71106923cc044dc29292310d0bf527eb594a")
+	version("1.54.0", commit="d3232c0973d5423bbaf51f5e75c0facbfd808b9a")
+	version("1.48.0", commit="7abb24c911fe01875d99d2891a1e6d5ae7f859ac")
 
 	depends_on("r@2.12:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

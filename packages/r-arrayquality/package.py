@@ -13,11 +13,10 @@ class RArrayquality(RPackage):
 	"""
 	
 	homepage = "http://arrays.ucsf.edu/"
-	bioc = "arrayQuality" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/arrayQuality_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/arrayQuality/arrayQuality_1.80.0.tar.gz"]
+	bioc = "arrayQuality"
 
-	version("1.86.0", tag="RELEASE_3_21")
-	version("1.80.0", sha256="3fb865babf7e0c400638556ddd475a05d0a7c6960a2f445073270656dc37a4ae")
+	version("1.86.0", commit="d6ef47d7c3f6fe2d54ceaa9b5e32d4477a78aab6")
+	version("1.80.0", commit="0c752d234118005baf28fbd062eb8aea83bf09c5")
 
 	depends_on("r@2.2:", type=("build", "run"))
 	depends_on("r-gridbase", type=("build", "run"))

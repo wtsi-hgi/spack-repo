@@ -12,11 +12,10 @@ class RHicbricks(RPackage):
 	HiCBricks is a library designed for handling large high-resolution Hi-C datasets. Over the years, the Hi-C field has experienced a rapid increase in the size and complexity of datasets. HiCBricks is meant to overcome the challenges related to the analysis of such large datasets within the R environment. HiCBricks offers user-friendly and efficient solutions for handling large high-resolution Hi-C datasets. The package provides an R/Bioconductor framework with the bricks to build more complex data analysis pipelines and algorithms. HiCBricks already incorporates example algorithms for calling domain boundaries and functions for high quality data visualization.
 	"""
 	
-	bioc = "HiCBricks" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiCBricks_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiCBricks/HiCBricks_1.20.0.tar.gz"]
+	bioc = "HiCBricks"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="efffffa51ff278b92110f1d3afe0bd56c34a84bfb44a52a42b2bf0aa398c2015")
+	version("1.26.0", commit="773bb6b930a4004ec59795713f410763d3b8171a")
+	version("1.20.0", commit="011eda13b66c219cb996898f4798d7b7f47d66d6")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-curl", type=("build", "run"))

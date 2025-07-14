@@ -12,11 +12,10 @@ class RMicrorna(RPackage):
 	Different data resources for microRNAs and some functions for manipulating them.
 	"""
 	
-	bioc = "microRNA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/microRNA_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/microRNA/microRNA_1.60.0.tar.gz"]
+	bioc = "microRNA"
 
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="fb8725d7247f4f08233138dcc38a683ae346afa3d5ef1a85dd276fe94b52c86a")
+	version("1.66.0", commit="c486774aca9020ac0c5dd008b3ed55bbf78083cb")
+	version("1.60.0", commit="37b8a8fd7d842f789c5f35d77fcfd7be57b3cfe9")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biostrings@2.11.32:", type=("build", "run"))

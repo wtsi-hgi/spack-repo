@@ -12,10 +12,9 @@ class RIlluminadatatestfiles(RPackage):
 	Example data for Illumina microarray output files, for testing purposes
 	"""
 	
-	bioc = "IlluminaDataTestFiles" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/IlluminaDataTestFiles_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/IlluminaDataTestFiles/IlluminaDataTestFiles_1.40.0.tar.gz"]
+	bioc = "IlluminaDataTestFiles"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="d1eb2baa08b869a10056c5d1582063d03a2dc468cc9075332d6a4ac9bd3acb21")
+	version("1.46.0", commit="66584047cddb5279525acde0d935235df0ba8bb7")
+	version("1.40.0", commit="3aa73775367c60d6648a6c821177df44ba1889c3")
 
 

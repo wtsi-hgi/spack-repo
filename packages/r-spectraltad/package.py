@@ -13,11 +13,10 @@ class RSpectraltad(RPackage):
 	"""
 	
 	homepage = "https://github.com/dozmorovlab/SpectralTAD"
-	bioc = "SpectralTAD" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpectralTAD_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpectralTAD/SpectralTAD_1.18.0.tar.gz"]
+	bioc = "SpectralTAD"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="7810bba38b494ac35662d4a32894fa787ca334f4a408687500edfd3f2c914238")
+	version("1.24.0", commit="d81c6a1e69b2d6ff4981f75700c2d4c11e0fc768")
+	version("1.18.0", commit="380dfcd9f98c269bcac6f6226da54e6d21b27cfd")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

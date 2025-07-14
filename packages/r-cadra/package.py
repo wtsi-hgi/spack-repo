@@ -13,11 +13,10 @@ class RCadra(RPackage):
 	"""
 	
 	homepage = "https://github.com/montilab/CaDrA/"
-	bioc = "CaDrA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CaDrA_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CaDrA/CaDrA_1.0.2.tar.gz"]
+	bioc = "CaDrA"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.2", sha256="80106d5ba6ec7e9783de4a7c634323206106f65d432defeaa85f52b4acec0078")
+	version("1.6.0", commit="a5fb63c7b9a6d8fa381661f6eeb26116dee2d251")
+	version("1.0.2", commit="134a61ee08549dcb8f37a020f09852b3693d5f4b")
 	version("1.0.1", md5="9ac2bc6afe6632e5fbd00c687ca19bba")
 
 	depends_on("r@4.3:", type=("build", "run"))

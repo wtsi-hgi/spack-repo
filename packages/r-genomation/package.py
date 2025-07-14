@@ -13,11 +13,10 @@ class RGenomation(RPackage):
 	"""
 	
 	homepage = "http://bioinformatics.mdc-berlin.de/genomation/"
-	bioc = "genomation" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genomation_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genomation/genomation_1.34.0.tar.gz"]
+	bioc = "genomation"
 
-	version("1.40.1", tag="RELEASE_3_21")
-	version("1.34.0", sha256="6c7e40caee1115a28617c2a0a0837c92701dbce7511277c078a5957a50e877ed")
+	version("1.40.1", commit="63054f53d677b7f52cab6c78a0ca488d0fd9ba5f")
+	version("1.34.0", commit="accaf9c834df96d200030ae089ac1853a55df134")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biostrings@2.47.6:", type=("build", "run"))

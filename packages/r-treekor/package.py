@@ -12,11 +12,10 @@ class RTreekor(RPackage):
 	treekoR is a novel framework that aims to utilise the hierarchical nature of single cell cytometry data to find robust and interpretable associations between cell subsets and patient clinical end points. These associations are aimed to recapitulate the nested proportions prevalent in workflows inovlving manual gating, which are often overlooked in workflows using automatic clustering to identify cell populations. We developed treekoR to: Derive a hierarchical tree structure of cell clusters; quantify a cell types as a proportion relative to all cells in a sample (%total), and, as the proportion relative to a parent population (%parent); perform significance testing using the calculated proportions; and provide an interactive html visualisation to help highlight key results.
 	"""
 	
-	bioc = "treekoR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/treekoR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/treekoR/treekoR_1.10.0.tar.gz"]
+	bioc = "treekoR"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="c8822818438a3909a3d73677d9c96a2eadf515a4a111377dbd42dd9b91ce2a15")
+	version("1.16.0", commit="d8a669af6b77a6041014d12c8d047ef6ec8b16ab")
+	version("1.10.0", commit="cd2ce9f536768b277936a8bc92c71975b1ea9554")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))

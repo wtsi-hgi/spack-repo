@@ -12,11 +12,10 @@ class RDesousa2013(RPackage):
 	This package reproduces the main pipeline to analyze the AMC-AJCCII-90 microarray data set in De Sousa et al. accepted by Nature Medicine in 2013.
 	"""
 	
-	bioc = "DeSousa2013" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DeSousa2013_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DeSousa2013/DeSousa2013_1.38.0.tar.gz"]
+	bioc = "DeSousa2013"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="0999445a79d92bc0ed2125ca8f78730cc2e41a1ff0f255b64e35b08cf27c5ef6", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DeSousa2013_1.38.0.tar.gz")
+	version("1.44.0", commit="bbc47d28f8e76eb652303b4df2b189cee761ed80")
+	version("1.38.0", commit="ee32611263d0aaf3f59dfd0185a8c7ae68100a54")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

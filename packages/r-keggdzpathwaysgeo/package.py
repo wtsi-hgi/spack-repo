@@ -12,11 +12,10 @@ class RKeggdzpathwaysgeo(RPackage):
 	This is a collection of 24 data sets for which the phenotype is a disease with a corresponding pathway in the KEGG database.This collection of datasets were used as gold standard in comparing gene set analysis methods by the PADOG package.
 	"""
 	
-	bioc = "KEGGdzPathwaysGEO" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/KEGGdzPathwaysGEO_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/KEGGdzPathwaysGEO/KEGGdzPathwaysGEO_1.40.0.tar.gz"]
+	bioc = "KEGGdzPathwaysGEO"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="8ba16875cb804f3283e2b745c1c7416d2b697d941d16ac68e289377604664617")
+	version("1.46.0", commit="3b4f21ae7c25d978853d6eb87fa99c630f7cbe9d")
+	version("1.40.0", commit="578b101e1d645910b878e9f263b25206ff7dce0a")
 
 	depends_on("r@2.13:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

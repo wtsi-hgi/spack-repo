@@ -17,9 +17,8 @@ class RTximportdata(RPackage):
 	as an offset for different expression of gene-level counts."""
 
 	bioc = "tximportData"
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tximportData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tximportData/tximportData_1.30.0.tar.gz"]
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="0f8218398e976c5930ecebf45663feba4af8b8f165d47f01f91f4fbade78554f")
+	version("1.36.0", commit="5545492c01d917cdab87bff1b4e56037c399d24d")
+	version("1.30.0", commit="57f359c17272bee8dc78eb36f6a178fee5f76b60")
 	version("1.28.0", commit="7de494ba12168e2766baffdd177d9cecc0642820")
 	version("1.26.0", commit="8f6ef3e3ae54e6eb99fe915364f5174c4f50a986")
 	version("1.24.0", commit="646f366fb25be359c95dc97c9369961c8d5ed942")

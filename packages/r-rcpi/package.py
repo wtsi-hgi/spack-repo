@@ -13,11 +13,10 @@ class RRcpi(RPackage):
 	"""
 	
 	homepage = "https://nanx.me/Rcpi/"
-	bioc = "Rcpi" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rcpi_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rcpi/Rcpi_1.38.0.tar.gz"]
+	bioc = "Rcpi"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="5a085bf6ee3b958a53a807ae558c8004f29adde466437edd92bc7984b7e0cbf2")
+	version("1.44.0", commit="a5056bad8d7bc4bf2fb6640d1dc6ecdaf8ad6f75")
+	version("1.38.0", commit="e0262bfaaae14b9dca2b94dbbb308250109edb64")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

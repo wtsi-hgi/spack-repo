@@ -12,11 +12,10 @@ class REatonetalchipseq(RPackage):
 	ChIP-seq analysis subset from "Conserved nucleosome positioning defines replication origins" (PMID 20351051)
 	"""
 	
-	bioc = "EatonEtAlChIPseq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/EatonEtAlChIPseq_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/EatonEtAlChIPseq/EatonEtAlChIPseq_0.40.0.tar.gz"]
+	bioc = "EatonEtAlChIPseq"
 
-	version("0.46.0", tag="RELEASE_3_21")
-	version("0.40.0", sha256="244d15eb344642f273c9f69d0750c528e1a383e21571210b758431223455bf1a")
+	version("0.46.0", commit="01a07b961581a730e55322f4407d804c7f41fc8b")
+	version("0.40.0", commit="9750f419ef3efca6812644ef6ac5e759fda28b14")
 
 	depends_on("r-genomicranges@1.5.42:", type=("build", "run"))
 	depends_on("r-shortread", type=("build", "run"))

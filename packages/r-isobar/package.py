@@ -13,11 +13,10 @@ class RIsobar(RPackage):
 	"""
 	
 	homepage = "https://github.com/fbreitwieser/isobar"
-	bioc = "isobar" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/isobar_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/isobar/isobar_1.48.0.tar.gz"]
+	bioc = "isobar"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="c70547e79b09b5fe6f7728e0082d5d8c0fd85fe4b292b7b03a1d593b7051638d")
+	version("1.54.0", commit="538264fd5630b6705f1afbd8196eb23bd6493af6")
+	version("1.48.0", commit="b67e33aeead47c05fd4cff7f147eeb47cb664d75")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

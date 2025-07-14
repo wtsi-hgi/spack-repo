@@ -12,10 +12,9 @@ class RProtgenerics(RPackage):
 	S4 generic functions needed by Bioconductor proteomics packages."""
 
 	bioc = "ProtGenerics"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ProtGenerics_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ProtGenerics/ProtGenerics_1.34.0.tar.gz"]
-	version("1.40.0", tag="RELEASE_3_21")
+	version("1.40.0", commit="048a08d18210f58aed787bb07977051d960ecf99")
 	version("1.8.0", commit="b2b3bb0938e20f58fca905f6870de7dbc9dfd7a3")
-	version("1.34.0", sha256="35a042777fdebf518d0b6223739aac8e6b78f01acac3c4eaff36a96ecd515bbe")
+	version("1.34.0", commit="50328a21b23f1a5955b5a87ff5fada82eae2f5b3")
 	version("1.32.0", commit="30c6458568c43fc7d769b0aef855d6e90b314eaa")
 	version("1.30.0", commit="fcd566bf04034cf52db3338b5d6de7447443cf77")
 	version("1.28.0", commit="cfcd0a9ebd642515764ba70c5c4e9c2a0f2f07ac")

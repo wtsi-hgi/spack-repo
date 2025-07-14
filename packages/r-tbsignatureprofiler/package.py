@@ -13,11 +13,10 @@ class RTbsignatureprofiler(RPackage):
 	"""
 	
 	homepage = "https://github.com/compbiomed/TBSignatureProfiler"
-	bioc = "TBSignatureProfiler" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TBSignatureProfiler_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TBSignatureProfiler/TBSignatureProfiler_1.14.0.tar.gz"]
+	bioc = "TBSignatureProfiler"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="d62e9168b8f199c7e4f02d82b686f4396d49f51ec665f7812ccd9dabb9533d32")
+	version("1.20.0", commit="8aaba5a59d9bcfde043cdd443850479548492191")
+	version("1.14.0", commit="373e8f159a71f7c90c9b46d0556e8e8b1f68c718")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-assign@1.23.1:", type=("build", "run"))

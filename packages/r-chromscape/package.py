@@ -13,11 +13,10 @@ class RChromscape(RPackage):
 	"""
 	
 	homepage = "https://github.com/vallotlab/ChromSCape"
-	bioc = "ChromSCape" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChromSCape_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChromSCape/ChromSCape_1.12.0.tar.gz"]
+	bioc = "ChromSCape"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="74e00d0ef885ae9bad35823b8158c821714cfe362e4ad6112c20740af518f8b1")
+	version("1.18.0", commit="8c6e7b9117be48d9b2ffc36f92d7b6e019f4e1b3")
+	version("1.12.0", commit="8311c305432f1770d16b59ce0c1b18a317c298d0")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

@@ -13,11 +13,10 @@ class RMethylgsa(RPackage):
 	"""
 	
 	homepage = "https://github.com/reese3928/methylGSA"
-	bioc = "methylGSA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylGSA_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylGSA/methylGSA_1.20.0.tar.gz"]
+	bioc = "methylGSA"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="f109c75db81b1b73cd29e541aeeca382ff48cefd6dcee36b765822b51b73fc0c")
+	version("1.26.0", commit="afef6528037e21f03695df3f416b64fafb87309e")
+	version("1.20.0", commit="8cb9bb1a13c363aa40d3b331003690de76e31aa9")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-robustrankaggreg", type=("build", "run"))

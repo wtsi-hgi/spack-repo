@@ -12,11 +12,10 @@ class RDune(RPackage):
 	Given a set of clustering labels, Dune merges pairs of clusters to increase mean ARI between labels, improving replicability.
 	"""
 	
-	bioc = "Dune" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Dune_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Dune/Dune_1.14.0.tar.gz"]
+	bioc = "Dune"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="0485adfe2acd245824e1c7eaa356338cbecdad24fa53585b29b46ab4b5b914cc")
+	version("1.20.0", commit="f38fdd92221e0a397d2718572a15cf038a79dabd")
+	version("1.14.0", commit="b34c4dbc2d97d11877062bc872565a0fb91aeff5")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

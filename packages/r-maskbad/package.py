@@ -12,11 +12,10 @@ class RMaskbad(RPackage):
 	Package includes functions to analyze and mask microarray expression data.
 	"""
 	
-	bioc = "maskBAD" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maskBAD_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maskBAD/maskBAD_1.46.0.tar.gz"]
+	bioc = "maskBAD"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="bef451a8de2f5fbece91b4dd03dfeeba6fb62bf5a71c539d7e4c8b14a9227986")
+	version("1.52.0", commit="55b30996eee1866fd559ce9d1694d63b08dd085e")
+	version("1.46.0", commit="b0b9d7e357ca460c6350dca3c530beecf605c17c")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-gcrma@2.27.1:", type=("build", "run"))

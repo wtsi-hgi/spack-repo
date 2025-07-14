@@ -12,11 +12,10 @@ class RChicago(RPackage):
 	A pipeline for analysing Capture Hi-C data.
 	"""
 	
-	bioc = "Chicago" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Chicago_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Chicago/Chicago_1.30.0.tar.gz"]
+	bioc = "Chicago"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="685874023acbc6499d1bd4beb743fba55c3e3a24c33504a066123c55d0e997d5")
+	version("1.36.0", commit="ad00daa5680093fc40264b38718b8aa6c792fcdd")
+	version("1.30.0", commit="febaf7c95cfaedb19f5f958e2da0a6815447c064")
 
 	depends_on("r@3.3.1:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

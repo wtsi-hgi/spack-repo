@@ -12,11 +12,10 @@ class RBiocworkflowtools(RPackage):
 	Provides functions to ease the transition between Rmarkdown and LaTeX documents when authoring a Bioconductor Workflow.
 	"""
 	
-	bioc = "BiocWorkflowTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocWorkflowTools_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocWorkflowTools/BiocWorkflowTools_1.28.0.tar.gz"]
+	bioc = "BiocWorkflowTools"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="a512296cd5c5ed6a3d8874378f7f5b4cd620c35e17ada1ad2918ea7ca3a60756")
+	version("1.34.0", commit="f7341bd964d66e7fafd8cb99305fde2086ce6e99")
+	version("1.28.0", commit="5c8fc6ef22a7e33098aa98086f6a712e5f935904")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biocstyle", type=("build", "run"))

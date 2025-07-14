@@ -13,11 +13,10 @@ class RGatom(RPackage):
 	"""
 	
 	homepage = "https://github.com/ctlab/gatom/"
-	bioc = "gatom" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gatom_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gatom/gatom_1.0.0.tar.gz"]
+	bioc = "gatom"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="c8e20a8af4e009f71531a0fddda1dc083e3ee2b2f57170acd8b71664d743887a")
+	version("1.6.0", commit="dfc3a3d5b93a96b50b9e3529cb63a1c6c3d00159")
+	version("1.0.0", commit="c6257d1c1bc5c6e05ba673ee3165d12b4a37053b")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

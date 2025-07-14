@@ -13,11 +13,10 @@ class RCtsge(RPackage):
 	"""
 	
 	homepage = "https://github.com/michalsharabi/ctsGE"
-	bioc = "ctsGE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ctsGE_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ctsGE/ctsGE_1.28.0.tar.gz"]
+	bioc = "ctsGE"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="278942630487033bb67b94525e97240ab2f5f17b6833d654a69e521cef4135bc")
+	version("1.34.0", commit="4a612dac8e1820624253a208f85707f2d963d6fa")
+	version("1.28.0", commit="18cd56ef2dfb1ef059b33e163781d2cc407a221d")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-ccapp", type=("build", "run"))

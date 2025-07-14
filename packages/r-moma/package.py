@@ -12,11 +12,10 @@ class RMoma(RPackage):
 	This package implements the inference of candidate master regulator proteins from multi-omics' data (MOMA) algorithm, as well as ancillary analysis and visualization functions.
 	"""
 	
-	bioc = "MOMA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MOMA_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MOMA/MOMA_1.14.0.tar.gz"]
+	bioc = "MOMA"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="cc25564401dae250bc7cf7abb36dcd72843aef4c203ae0996decdebf661450cf")
+	version("1.20.0", commit="ee54dc10294b1aae33efad26646a64184b3bf611")
+	version("1.14.0", commit="44545822dccfc0ddf058156b22126fc193052214")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-circlize", type=("build", "run"))

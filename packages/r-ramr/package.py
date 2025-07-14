@@ -13,11 +13,10 @@ class RRamr(RPackage):
 	"""
 	
 	homepage = "https://github.com/BBCG/ramr"
-	bioc = "ramr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ramr_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ramr/ramr_1.10.0.tar.gz"]
+	bioc = "ramr"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="c4a3f4ca2f02bda18390a1294569618b84be3feef3d4a67260919ff3cb9362c8")
+	version("1.16.0", commit="a19305bc3061062ece0985747cb04d87001ff433")
+	version("1.10.0", commit="4a632c193c27d7ec9b206cc2eb34fbde9bf3e6b9")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

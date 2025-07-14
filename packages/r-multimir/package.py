@@ -13,11 +13,10 @@ class RMultimir(RPackage):
 	"""
 	
 	homepage = "https://github.com/KechrisLab/multiMiR"
-	bioc = "multiMiR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/multiMiR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/multiMiR/multiMiR_1.24.0.tar.gz"]
+	bioc = "multiMiR"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="2574a7991c9552c84c8cd9c39ba4f5508d6e21870a0126da1ff855e96c82b157")
+	version("1.30.0", commit="a96569135e08414c747cdea0184f55156326df97")
+	version("1.24.0", commit="65060e91a3919182cc4708a9611c37f5da6dad09")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-xml", type=("build", "run"))

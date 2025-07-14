@@ -13,11 +13,10 @@ class RSpicyworkflow(RPackage):
 	"""
 	
 	homepage = "https://github.com/SydneyBioX/spicyWorkflow"
-	bioc = "spicyWorkflow" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/spicyWorkflow_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/spicyWorkflow/spicyWorkflow_1.2.1.tar.gz"]
+	bioc = "spicyWorkflow"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.1", sha256="9e3448c1b3ca87021a61cbaa312ec0d85cfa8581f139c4e8e2f16ed066dba71c")
+	version("1.8.0", commit="2acaa1cee8e058037bdbc1af0fd0ff43646e6aa2")
+	version("1.2.1", commit="9c22e3fc16eed182be288ddc659fd5f0aa03e7f8")
 
 	depends_on("r@4.3:", type=("build", "run"))
 

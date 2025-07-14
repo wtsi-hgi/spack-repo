@@ -13,11 +13,10 @@ class RGenefu(RPackage):
 	"""
 	
 	homepage = "http://www.pmgenomics.ca/bhklab/software/genefu"
-	bioc = "genefu" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genefu_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genefu/genefu_2.34.0.tar.gz"]
+	bioc = "genefu"
 
-	version("2.40.0", tag="RELEASE_3_21")
-	version("2.34.0", sha256="bb55478c0af19fc6ec9cd750423e94e63a9a6ec56c0ce838ef9784632ce2d663")
+	version("2.40.0", commit="2523636d3a19ebb10300e4e7185364d5a359dd4c")
+	version("2.34.0", commit="6911d3c6fc20fbe15374a977b393c839d179b709")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-survcomp", type=("build", "run"))

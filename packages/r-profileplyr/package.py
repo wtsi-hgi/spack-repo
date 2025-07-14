@@ -12,11 +12,10 @@ class RProfileplyr(RPackage):
 	Quick and straightforward visualization of read signal over genomic intervals is key for generating hypotheses from sequencing data sets (e.g. ChIP-seq, ATAC-seq, bisulfite/methyl-seq). Many tools both inside and outside of R and Bioconductor are available to explore these types of data, and they typically start with a bigWig or BAM file and end with some representation of the signal (e.g. heatmap). profileplyr leverages many Bioconductor tools to allow for both flexibility and additional functionality in workflows that end with visualization of the read signal.
 	"""
 	
-	bioc = "profileplyr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/profileplyr_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/profileplyr/profileplyr_1.18.0.tar.gz"]
+	bioc = "profileplyr"
 
-	version("1.24.1", tag="RELEASE_3_21")
-	version("1.18.0", sha256="db9efeae6afec2121e6cec9152aaccd047a0d31d3abed3711cddd5b00a25cfb2")
+	version("1.24.1", commit="879cd322468269c967c8192e67b18120122d2b12")
+	version("1.18.0", commit="5470b483599a79c0251165a49d62201849d935c7")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

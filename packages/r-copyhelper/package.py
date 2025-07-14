@@ -12,11 +12,10 @@ class RCopyhelper(RPackage):
 	This package contains the helper files that are required to run the Bioconductor package CopywriteR. It contains pre-assembled 1kb bin GC-content and mappability files for the reference genomes hg18, hg19, hg38, mm9 and mm10. In addition, it contains a blacklist filter to remove regions that display CNV. Files are stored as GRanges objects from the GenomicRanges Bioconductor package.
 	"""
 	
-	bioc = "CopyhelpeR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CopyhelpeR_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CopyhelpeR/CopyhelpeR_1.34.0.tar.gz"]
+	bioc = "CopyhelpeR"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="305c890df69d08425b48b02467b723abd1becf7dced083961bc9525a4cecdafd")
+	version("1.40.0", commit="881df9035b3b6527fe02387c5ea635eb330751c4")
+	version("1.34.0", commit="9857e4b53b40f228d61c0d2f349dd2d8aa1190c0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

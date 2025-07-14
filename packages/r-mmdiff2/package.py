@@ -12,11 +12,10 @@ class RMmdiff2(RPackage):
 	This package detects statistically significant differences between read enrichment profiles in different ChIP-Seq samples. To take advantage of shape differences it uses Kernel methods (Maximum Mean Discrepancy, MMD).
 	"""
 	
-	bioc = "MMDiff2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MMDiff2_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MMDiff2/MMDiff2_1.30.0.tar.gz"]
+	bioc = "MMDiff2"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="d073c7f2df78aea61a74dada203a7ee0c45ee566a464a69573a7d06904e25551", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MMDiff2_1.30.0.tar.gz")
+	version("1.36.0", commit="646e11072ac02031108c5199db3562c4551151fc")
+	version("1.30.0", commit="59a5822deddfe16d333a0c2334eeb80624ac5cc9")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))

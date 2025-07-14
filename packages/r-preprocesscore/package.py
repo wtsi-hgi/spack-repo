@@ -12,9 +12,8 @@ class RPreprocesscore(RPackage):
 	A library of core preprocessing routines."""
 
 	bioc = "preprocessCore"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/preprocessCore_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/preprocessCore/preprocessCore_1.64.0.tar.gz"]
-	version("1.70.0", tag="RELEASE_3_21")
-	version("1.64.0", sha256="3e74536992d1ef1c8f371d850a18d2b1b9397ddbbef30567e6d97469f91ede95")
+	version("1.70.0", commit="e1bb66460cd9c6413133bece4b3d8cf39d433a34")
+	version("1.64.0", commit="887abd3889707a5d066038b1373c85ead5b0a051")
 	version("1.62.0", commit="a6e3d339bc8204d15db4e750bd98f0313490b658")
 	version("1.60.0", commit="7f62a7d54776a21ab6c2d3df4668382d531d1ee8")
 	version("1.58.0", commit="2995e3e1a8f428a80aee200db42ee44743d893f6")

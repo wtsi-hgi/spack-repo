@@ -13,11 +13,10 @@ class RPcatools(RPackage):
 	"""
 	
 	homepage = "https://github.com/kevinblighe/PCAtools"
-	bioc = "PCAtools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PCAtools_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PCAtools/PCAtools_2.14.0.tar.gz"]
+	bioc = "PCAtools"
 
-	version("2.20.0", tag="RELEASE_3_21")
-	version("2.14.0", sha256="3a0cd8599344ad44787db090b559351e8a17afbef9dff4f717b5ca4627d93fa3")
+	version("2.20.0", commit="c1da7440deb15cc9d4e9d8ad41aabeeafad25afa")
+	version("2.14.0", commit="42f92cfde165e41babb3a88e1fc70225b767610b")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-ggrepel", type=("build", "run"))

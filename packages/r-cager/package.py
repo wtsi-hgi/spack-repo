@@ -12,11 +12,10 @@ class RCager(RPackage):
 	Preprocessing of CAGE sequencing data, identification and normalization of transcription start sites and downstream analysis of transcription start sites clusters (promoters).
 	"""
 	
-	bioc = "CAGEr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CAGEr_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CAGEr/CAGEr_2.8.0.tar.gz"]
+	bioc = "CAGEr"
 
-	version("2.14.0", tag="RELEASE_3_21")
-	version("2.8.0", sha256="78f0d302723f0fd6bb7ab86aaf545857576767359a45215e457c4fe65a5a2a8c")
+	version("2.14.0", commit="446e1cab6a7c21f6bac2b7b3b94c8418d3ff90d4")
+	version("2.8.0", commit="6ad953bfa404154e6cc51b7a0ba042f849415fcd")
 
 	depends_on("r-multiassayexperiment", type=("build", "run"))
 	depends_on("r@4.1:", type=("build", "run"))

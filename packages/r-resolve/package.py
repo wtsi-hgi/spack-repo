@@ -13,11 +13,10 @@ class RResolve(RPackage):
 	"""
 	
 	homepage = "https://github.com/danro9685/RESOLVE"
-	bioc = "RESOLVE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RESOLVE_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RESOLVE/RESOLVE_1.4.0.tar.gz"]
+	bioc = "RESOLVE"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="3fe1a6d0171af5d2ecd111a4bdb690e466081a16d930587eedacba7fb16af3d7")
+	version("1.10.0", commit="a607a9318d6993d454b0d30fca45b408e0cf7e55")
+	version("1.4.0", commit="52f4592a3c3a71f97ea9dbcbbd2c043453cf2d22")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

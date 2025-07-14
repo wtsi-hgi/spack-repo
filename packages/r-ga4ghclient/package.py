@@ -13,11 +13,10 @@ class RGa4ghclient(RPackage):
 	"""
 	
 	homepage = "https://github.com/labbcb/GA4GHclient"
-	bioc = "GA4GHclient" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GA4GHclient_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GA4GHclient/GA4GHclient_1.26.0.tar.gz"]
+	bioc = "GA4GHclient"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="d2988238c2f405239da981d91a9daf7300a08d083cc83a7485966c40460d0d68")
+	version("1.32.0", commit="f71ff21fa5c7a8cee8bed9950d085766e2b2431f")
+	version("1.26.0", commit="6356ce0eb70f03a8478e262b6a35c8d085692497")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

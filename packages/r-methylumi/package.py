@@ -19,9 +19,8 @@ class RMethylumi(RPackage):
 	Infinium, and Infinium HD arrays are also included."""
 
 	bioc = "methylumi"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylumi_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylumi/methylumi_2.48.0.tar.gz"]
-	version("2.54.0", tag="RELEASE_3_21")
-	version("2.48.0", sha256="16dc08f2e8dfeb2565ff1fd8ab69705f3405bb6abdc59a181c739ae277662aef")
+	version("2.54.0", commit="7384001cefe8871255eefb1d0b85e9e44544d446")
+	version("2.48.0", commit="ce4c6e47960e9d8e86c3076c04b895f4abdbffec")
 	version("2.46.0", commit="eb09e6508f1619c789d6b3091a8065cb6571cdac")
 	version("2.44.0", commit="8f1f1f944993800da2776cb3240b4482c09429ad")
 	version("2.42.0", commit="73e9c7fe1252c4ca20dc7b4e58decf04bf22d5e0")

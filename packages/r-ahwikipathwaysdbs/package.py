@@ -13,11 +13,10 @@ class RAhwikipathwaysdbs(RPackage):
 	"""
 	
 	homepage = "https://github.com/kozo2/AHWikipathwaysDbs"
-	bioc = "AHWikipathwaysDbs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AHWikipathwaysDbs_0.99.4.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/AHWikipathwaysDbs/AHWikipathwaysDbs_0.99.4.tar.gz"]
+	bioc = "AHWikipathwaysDbs"
 
-	version("0.99.4", tag="RELEASE_3_21")
-	version("0.99.4", sha256="04036684f888d233250b583ee8c5be23e045e781ce019c13fd7c99d175bae36f")
+	version("0.99.4", commit="04edc62328d2a94c8b345bac188df41a8f04c199")
+	version("0.99.4", commit="04edc62328d2a94c8b345bac188df41a8f04c199")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationhub@2.23:", type=("build", "run"))

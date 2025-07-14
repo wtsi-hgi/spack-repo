@@ -13,11 +13,10 @@ class RBioimagedbs(RPackage):
 	"""
 	
 	homepage = "https://kumes.github.io/BioImageDbs/"
-	bioc = "BioImageDbs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BioImageDbs_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/BioImageDbs/BioImageDbs_1.10.0.tar.gz"]
+	bioc = "BioImageDbs"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="db26a55a0d2c489e371183c8b9bfc11351b95a798cc8a7a959f9b818804df5f5")
+	version("1.16.0", commit="ab06d69d1949117bb8e9a3c6bb0f93a3cd812271")
+	version("1.10.0", commit="636f74e30dff1422ea6db203e06d3d3597c8b9dd")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

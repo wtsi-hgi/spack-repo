@@ -12,11 +12,10 @@ class RTrna(RPackage):
 	The tRNA package allows tRNA sequences and structures to be accessed and used for subsetting. In addition, it provides visualization tools to compare feature parameters of multiple tRNA sets and correlate them to additional data. The tRNA package uses GRanges objects as inputs requiring only few additional column data sets.
 	"""
 	
-	bioc = "tRNA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tRNA_1.20.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tRNA/tRNA_1.20.1.tar.gz"]
+	bioc = "tRNA"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.1", sha256="09d9bbfa3c6af3a191fe38b58702022052c498671e7bf7cc14fc05f707c59755")
+	version("1.26.0", commit="019440eb345ded9ea54f5c380f0e755824c92f87")
+	version("1.20.1", commit="72864e7a9cde2d7b608f38d645e7be251f37304d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

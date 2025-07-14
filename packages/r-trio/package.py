@@ -12,11 +12,10 @@ class RTrio(RPackage):
 	Testing SNPs and SNP interactions with a genotypic TDT. This package furthermore contains functions for computing pairwise values of LD measures and for identifying LD blocks, as well as functions for setting up matched case pseudo-control genotype data for case-parent trios in order to run trio logic regression, for imputing missing genotypes in trios, for simulating case-parent trios with disease risk dependent on SNP interaction, and for power and sample size calculation in trio data.
 	"""
 	
-	bioc = "trio" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/trio_3.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/trio/trio_3.40.0.tar.gz"]
+	bioc = "trio"
 
-	version("3.46.0", tag="RELEASE_3_21")
-	version("3.40.0", sha256="1bb69d82f53432e83f108eaaee530bcc6a73191d0e31fed22eb13d2dcf740342")
+	version("3.46.0", commit="db20b0d0ebb4bb6271412ea654de1b05b892ce43")
+	version("3.40.0", commit="ac9d1724dcc5701a1fba033e8aaa94882719880a")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

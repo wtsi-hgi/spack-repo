@@ -12,11 +12,10 @@ class RRibor(RPackage):
 	The ribor package provides an R Interface for .ribo files. It provides functionality to read the .ribo file, which is of HDF5 format, and performs common analyses on its contents.
 	"""
 	
-	bioc = "ribor" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ribor_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ribor/ribor_1.14.0.tar.gz"]
+	bioc = "ribor"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="ead3ebec63a4529c83a0717530f7e9ef9f84f10bc6d8d2f604d39ce30bcf168a")
+	version("1.20.0", commit="834b57608c548d1b9577e0fbf9bcc74ee899d30f")
+	version("1.14.0", commit="f006392b141d190c735460aaa6ed8f20bedd0b2c")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

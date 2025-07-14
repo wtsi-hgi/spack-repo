@@ -12,11 +12,10 @@ class RMbkmeans(RPackage):
 	Implements the mini-batch k-means algorithm for large datasets, including support for on-disk data representation.
 	"""
 	
-	bioc = "mbkmeans" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mbkmeans_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mbkmeans/mbkmeans_1.18.0.tar.gz"]
+	bioc = "mbkmeans"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="341183753aff71b14282463244617c5d12c8dfb5302d40b8f81109ed64fceaf4")
+	version("1.24.0", commit="bffcc1ef0b0091e089cc70ac7f98bb1ab4df3510")
+	version("1.18.0", commit="276ec395cc8f59b384d1faa0becf4bd411e8a969")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-delayedarray", type=("build", "run"))

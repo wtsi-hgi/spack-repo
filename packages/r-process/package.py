@@ -12,10 +12,9 @@ class RProcess(RPackage):
 	A package for processing protein mass spectrometry data.
 	"""
 	
-	bioc = "PROcess" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PROcess_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PROcess/PROcess_1.78.0.tar.gz"]
+	bioc = "PROcess"
 
-	version("1.84.0", tag="RELEASE_3_21")
-	version("1.78.0", sha256="f2ee603d4d072a2fab0fac819981a00f3dbcb2751813e264fd8f738bcb9f9043")
+	version("1.84.0", commit="73a3e7a666571afa565157ce0ff0bb124b7dd6fa")
+	version("1.78.0", commit="62ebe36ba35611b99d32abf7f140f66003205f7e")
 
 	depends_on("r-icens", type=("build", "run"))

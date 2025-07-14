@@ -12,11 +12,10 @@ class RCnviz(RPackage):
 	CNViz takes probe, gene, and segment-level log2 copy number ratios and launches a Shiny app to visualize your sample's copy number profile. You can also integrate loss of heterozygosity (LOH) and single nucleotide variant (SNV) data.
 	"""
 	
-	bioc = "CNViz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNViz_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNViz/CNViz_1.10.0.tar.gz"]
+	bioc = "CNViz"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="9ab6730e19ed9dc39488e4fb8f1446e4168413efd45bde77e1794b2aebddaa73")
+	version("1.16.0", commit="f7897dcc9a110766fa7463153216c1de5c7804a6")
+	version("1.10.0", commit="eb85b67525b1c3762daca962e0b74330b53d560f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-shiny@1.5:", type=("build", "run"))

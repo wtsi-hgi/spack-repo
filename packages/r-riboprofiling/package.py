@@ -12,11 +12,10 @@ class RRiboprofiling(RPackage):
 	Starting with a BAM file, this package provides the necessary functions for quality assessment, read start position recalibration, the counting of reads on CDS, 3'UTR, and 5'UTR, plotting of count data: pairs, log fold-change, codon frequency and coverage assessment, principal component analysis on codon coverage.
 	"""
 	
-	bioc = "RiboProfiling" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RiboProfiling_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RiboProfiling/RiboProfiling_1.32.0.tar.gz"]
+	bioc = "RiboProfiling"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="c3ab88dc2bdcd9a020559e86376f59a9341b13833014242e493749ddaf3fa3ad")
+	version("1.38.0", commit="11b44e26eae5d757ba3d842740d86080bc87c4e3")
+	version("1.32.0", commit="8cec7bfdb5bd227c6485ba85b566c47d71db5557")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

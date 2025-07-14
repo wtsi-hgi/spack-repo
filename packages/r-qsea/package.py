@@ -12,11 +12,10 @@ class RQsea(RPackage):
 	qsea (quantitative sequencing enrichment analysis) was developed as the successor of the MEDIPS package for analyzing data derived from methylated DNA immunoprecipitation (MeDIP) experiments followed by sequencing (MeDIP-seq). However, qsea provides several functionalities for the analysis of other kinds of quantitative sequencing data (e.g. ChIP-seq, MBD-seq, CMS-seq and others) including calculation of differential enrichment between groups of samples.
 	"""
 	
-	bioc = "qsea" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qsea_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qsea/qsea_1.28.0.tar.gz"]
+	bioc = "qsea"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="271bdac73677d877dae94b0436fece33a96c0242d538cf57010c5bac1515e147")
+	version("1.34.0", commit="d6318f9fe3eb85cc3b6218c56db27c20f4ff80f4")
+	version("1.28.0", commit="f1623a1ea7c8049e97ce4bd577d56491dea2be69")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

@@ -12,11 +12,10 @@ class RFantom3and4cage(RPackage):
 	CAGE (Cap Analysis Gene Expression) data from FANTOM3 and FANTOM4 projects produced by RIKEN Omics Science Center.
 	"""
 	
-	bioc = "FANTOM3and4CAGE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FANTOM3and4CAGE_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FANTOM3and4CAGE/FANTOM3and4CAGE_1.38.0.tar.gz"]
+	bioc = "FANTOM3and4CAGE"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="25c0a7e415f5b672df064a88badb810b5dc335a6ed484b9e3f8f702670201f07")
+	version("1.44.0", commit="06600b6208aecad6a5b53d82a653f63cdb781efe")
+	version("1.38.0", commit="f282f93ce7576950026434347b0772a165e9f9a7")
 
 	depends_on("r@2.15:", type=("build", "run"))
 

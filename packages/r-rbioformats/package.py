@@ -13,11 +13,10 @@ class RRbioformats(RPackage):
 	"""
 	
 	homepage = "https://github.com/aoles/RBioFormats"
-	bioc = "RBioFormats" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RBioFormats_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RBioFormats/RBioFormats_1.2.0.tar.gz"]
+	bioc = "RBioFormats"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="f586ebf1520e3c05269ba8c1e38ae6a3e1ef99cd7fc5ce86c3d85b96d8acc35b")
+	version("1.8.0", commit="572dde8042e9aae2159a34b04e41cfd90201ca4a")
+	version("1.2.0", commit="85f35c53616eb7647be16b26fd8235bd596820bf")
 
 	depends_on("r-ebimage", type=("build", "run"))
 	depends_on("r-rjava@0.9.6:", type=("build", "run"))

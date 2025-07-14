@@ -12,11 +12,10 @@ class RPhenotest(RPackage):
 	Tools to test correlation between gene expression and phenotype in a way that is efficient, structured, fast and scalable. GSEA is also provided.
 	"""
 	
-	bioc = "phenoTest" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phenoTest_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phenoTest/phenoTest_1.50.0.tar.gz"]
+	bioc = "phenoTest"
 
-	version("1.56.0", tag="RELEASE_3_21")
-	version("1.50.0", sha256="058e8c210a1dd8f218895a358a5157e4c34bae2d1c916418675a1766955c3543")
+	version("1.56.0", commit="499800e2e071dfedab68d264a071559664d6f174")
+	version("1.50.0", commit="b499bc217237de6cd77db561e58a56549065d4eb")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

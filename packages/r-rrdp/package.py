@@ -12,11 +12,10 @@ class RRrdp(RPackage):
 	Seamlessly interfaces RDP classifier (version 2.9).
 	"""
 	
-	bioc = "rRDP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rRDP_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rRDP/rRDP_1.36.0.tar.gz"]
+	bioc = "rRDP"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="2c57d6b282c48d92b0362ab6f8e35293532ca3733ba1b679a2c33aac3126f478")
+	version("1.42.0", commit="d6635ee1bf1892588f90c15c778abbfa6e0bee3d")
+	version("1.36.0", commit="b269f9e2e286d76aee8a89c0d72a5cea40671f67")
 
 	depends_on("r-biostrings@2.26.2:", type=("build", "run"))
 	depends_on("openjdk@1.4:", type=("build", "link", "run"))

@@ -12,11 +12,10 @@ class RVanillaice(RPackage):
 	Hidden Markov Models for characterizing chromosomal alteration in high throughput SNP arrays.
 	"""
 	
-	bioc = "VanillaICE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VanillaICE_1.64.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VanillaICE/VanillaICE_1.64.1.tar.gz"]
+	bioc = "VanillaICE"
 
-	version("1.70.1", tag="RELEASE_3_21")
-	version("1.64.1", sha256="518b2006091b3b1c6edeb3617c9c66fb682b760295f6fd58207e8f20c79d4d84")
+	version("1.70.1", commit="874022b76ff940dc6e1185d640b1d1ea6cb3e043")
+	version("1.64.1", commit="ecd1e242bcd53654864863b6ecad8ca9e13cc3b6")
 	version("1.64.0", md5="557131c410cc7474d15a4cc9a7d940de")
 
 	depends_on("r@3.5:", type=("build", "run"))

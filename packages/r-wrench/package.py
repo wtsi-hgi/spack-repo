@@ -13,11 +13,10 @@ class RWrench(RPackage):
 	"""
 	
 	homepage = "https://github.com/HCBravoLab/Wrench"
-	bioc = "Wrench" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Wrench_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Wrench/Wrench_1.20.0.tar.gz"]
+	bioc = "Wrench"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="2dcdf1f0d1ebe8feeeaf4aec752c22f744b3e1f28c697d527094c2128650e685")
+	version("1.26.0", commit="369d5b183ca7a5f58c654b0ef492e10eb3d91cd5")
+	version("1.20.0", commit="b8512e20b95e3ce2c85fa473e0fb334572fbae4b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

@@ -12,11 +12,10 @@ class RDialignr(RPackage):
 	To obtain unbiased proteome coverage from a biological sample, mass-spectrometer is operated in Data Independent Acquisition (DIA) mode. Alignment of these DIA runs establishes consistency and less missing values in complete data-matrix. This package implements dynamic programming with affine gap penalty based approach for pair-wise alignment of analytes. A hybrid approach of global alignment (through MS2 features) and local alignment (with MS2 chromatograms) is implemented in this tool.
 	"""
 	
-	bioc = "DIAlignR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DIAlignR_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DIAlignR/DIAlignR_2.10.0.tar.gz"]
+	bioc = "DIAlignR"
 
-	version("2.16.0", tag="RELEASE_3_21")
-	version("2.10.0", sha256="787573650f6a1cd7cd10f4ca465264071d50e52efd9d9fbbe3f9988a969e1ef7")
+	version("2.16.0", commit="38519bfbd25fb4148c2427819420741490bad843")
+	version("2.10.0", commit="d616e54c8eee2498bb41b3ffe04bb4c42c09e491")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-zoo@1.8.3:", type=("build", "run"))

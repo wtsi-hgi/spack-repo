@@ -13,11 +13,10 @@ class RRbiopaxparser(RPackage):
 	"""
 	
 	homepage = "https://github.com/frankkramer-lab/rBiopaxParser"
-	bioc = "rBiopaxParser" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rBiopaxParser_2.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rBiopaxParser/rBiopaxParser_2.42.0.tar.gz"]
+	bioc = "rBiopaxParser"
 
-	version("2.48.0", tag="RELEASE_3_21")
-	version("2.42.0", sha256="275cb296a6e9d262a2c853d85c0954fcf72a87197b482adfbb4c8e045346caff")
+	version("2.48.0", commit="af5ebe62eae4d30e1b4eb0bbbf8e249fb4741afe")
+	version("2.42.0", commit="a4d31651ca1194afaea5a0191fa60489ef093af0")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

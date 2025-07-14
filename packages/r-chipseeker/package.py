@@ -13,11 +13,10 @@ class RChipseeker(RPackage):
 	"""
 	
 	homepage = "https://onlinelibrary.wiley.com/share/author/GYJGUBYCTRMYJFN2JFZZ?target=10.1002/cpz1.585"
-	bioc = "ChIPseeker" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPseeker_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPseeker/ChIPseeker_1.38.0.tar.gz"]
+	bioc = "ChIPseeker"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="a0d4710fccda620b750f933916acac6d12999a077e1c17632d8823848a2fa82f")
+	version("1.44.0", commit="e1805e043602cc8029412a8a4555b125087181f0")
+	version("1.38.0", commit="7da66e2aca18c3342bbde2c88aaa6c4b134697c3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

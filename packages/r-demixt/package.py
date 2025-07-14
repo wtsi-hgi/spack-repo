@@ -12,11 +12,10 @@ class RDemixt(RPackage):
 	DeMixT is a software package that performs deconvolution on transcriptome data from a mixture of two or three components.
 	"""
 	
-	bioc = "DeMixT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DeMixT_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DeMixT/DeMixT_1.18.0.tar.gz"]
+	bioc = "DeMixT"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="76ed6d6c3513d72200743277cd55a986506438788d0321aec3a57ed2c754f629")
+	version("1.24.0", commit="e25636b21480789f17f0c7fb339dc66d0fde65c3")
+	version("1.18.0", commit="27c62df4672bd06b688fb69a1399d2cfd3bf188d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -12,11 +12,10 @@ class RWavcluster(RPackage):
 	The package provides an integrated pipeline for the analysis of PAR-CLIP data. PAR-CLIP-induced transitions are first discriminated from sequencing errors, SNPs and additional non-experimental sources by a non- parametric mixture model. The protein binding sites (clusters) are then resolved at high resolution and cluster statistics are estimated using a rigorous Bayesian framework. Post-processing of the results, data export for UCSC genome browser visualization and motif search analysis are provided. In addition, the package allows to integrate RNA-Seq data to estimate the False Discovery Rate of cluster detection. Key functions support parallel multicore computing. Note: while wavClusteR was designed for PAR-CLIP data analysis, it can be applied to the analysis of other NGS data obtained from experimental procedures that induce nucleotide substitutions (e.g. BisSeq).
 	"""
 	
-	bioc = "wavClusteR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/wavClusteR_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/wavClusteR/wavClusteR_2.36.0.tar.gz"]
+	bioc = "wavClusteR"
 
-	version("2.42.0", tag="RELEASE_3_21")
-	version("2.36.0", sha256="b28cb19ca9787746506016338ddb64049533014b5454d55e1787024567984bf8")
+	version("2.42.0", commit="fbb85b2bc7753a1a30d4d32cad885aacf5b14d33")
+	version("2.36.0", commit="bec165394e95fb3ee904d54de1ee7a8bfab5c3de")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-genomicranges@1.31.8:", type=("build", "run"))

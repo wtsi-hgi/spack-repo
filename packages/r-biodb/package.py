@@ -13,11 +13,10 @@ class RBiodb(RPackage):
 	"""
 	
 	homepage = "https://github.com/pkrog/biodb"
-	bioc = "biodb" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodb_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodb/biodb_1.10.0.tar.gz"]
+	bioc = "biodb"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="73a5965ebaa6831b752ccc46abe4e8a200028d8de9a8a40cd5b1710eb43080a3")
+	version("1.16.0", commit="2dd6d3349cc33aaea0de890bd0193da57288414e")
+	version("1.10.0", commit="462dbea41ddd7e6af9f29c39ccfa4791a048db71")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))

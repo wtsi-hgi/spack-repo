@@ -12,11 +12,10 @@ class RChipxpress(RPackage):
 	ChIPXpress takes as input predicted TF bound genes from ChIPx data and uses a corresponding database of gene expression profiles downloaded from NCBI GEO to rank the TF bound targets in order of which gene is most likely to be functional TF target.
 	"""
 	
-	bioc = "ChIPXpress" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPXpress_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPXpress/ChIPXpress_1.46.0.tar.gz"]
+	bioc = "ChIPXpress"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="4560c4c1e2dfabd4264bba5a2b083feeefc32a9a7e1152efc9ec12f2b7615210")
+	version("1.52.0", commit="d962449697f7e1d0e0c6444c6546ba31afec57d3")
+	version("1.46.0", commit="c6e8f131d96cb7dccdaa4197f1893f84d8af05af")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-chipxpressdata", type=("build", "run"))

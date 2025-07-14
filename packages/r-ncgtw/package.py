@@ -12,11 +12,10 @@ class RNcgtw(RPackage):
 	The purpose of ncGTW is to help XCMS for LC-MS data alignment. Currently, ncGTW can detect the misaligned feature groups by XCMS, and the user can choose to realign these feature groups by ncGTW or not.
 	"""
 	
-	bioc = "ncGTW" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ncGTW_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ncGTW/ncGTW_1.16.0.tar.gz"]
+	bioc = "ncGTW"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="3ee4693e73c3900c3e2e9d6918fb4183e820ad27f932351a8c3e7939fb6f8eb6")
+	version("1.22.0", commit="2b9fd345f4694a4b6b28655a12069a2a5bd59ff9")
+	version("1.16.0", commit="0d9b8cc2d419f697681cebbdffb1a1c57f6b74e3")
 
 	depends_on("r-biocparallel", type=("build", "run"))
 	depends_on("r-xcms", type=("build", "run"))

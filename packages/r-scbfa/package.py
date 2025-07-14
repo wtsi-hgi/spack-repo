@@ -13,11 +13,10 @@ class RScbfa(RPackage):
 	"""
 	
 	homepage = "https://github.com/ucdavis/quon-titative-biology/BFA"
-	bioc = "scBFA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scBFA_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scBFA/scBFA_1.16.0.tar.gz"]
+	bioc = "scBFA"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="a3c5c70ce0740f931db630a73ac86bf78b9fb31788a15e7be188f814d8dc6481")
+	version("1.22.0", commit="e5e8469640dadb0a59057154a43b818036ec88b3")
+	version("1.16.0", commit="fe1096092585cf917ad3c4459fa3d67e5dc3e188")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

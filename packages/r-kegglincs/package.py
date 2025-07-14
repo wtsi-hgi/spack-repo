@@ -12,11 +12,10 @@ class RKegglincs(RPackage):
 	See what is going on 'under the hood' of KEGG pathways by explicitly re-creating the pathway maps from information obtained from KGML files.
 	"""
 	
-	bioc = "KEGGlincs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/KEGGlincs_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/KEGGlincs/KEGGlincs_1.28.0.tar.gz"]
+	bioc = "KEGGlincs"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="b16070bf4c90a79e949db4b1b8f664f5eb28932f2e581d4d461c868704ae2f1b")
+	version("1.34.0", commit="13512bb9afae0e47149c239597c22c0cead0ac6c")
+	version("1.28.0", commit="ec7403375ad9cb40d7727b373800ad43098e173c")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-kodata", type=("build", "run"))

@@ -12,11 +12,10 @@ class RBallgown(RPackage):
 	Tools for statistical analysis of assembled transcriptomes, including flexible differential expression analysis, visualization of transcript structures, and matching of assembled transcripts to annotation.
 	"""
 	
-	bioc = "ballgown" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ballgown_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ballgown/ballgown_2.34.0.tar.gz"]
+	bioc = "ballgown"
 
-	version("2.40.0", tag="RELEASE_3_21")
-	version("2.34.0", sha256="658426a92661774c79ea1c80ab8a378682cf0c0c9a8acdb83e17fe93bcf978e4")
+	version("2.40.0", commit="7f6c5c9043c6e4c30c96cfc7d1b4f57c8e0eb215")
+	version("2.34.0", commit="a7bfd55d8314722a69aedf38508b7be0de4ee65c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges@1.17.25:", type=("build", "run"))

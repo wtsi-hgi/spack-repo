@@ -12,9 +12,8 @@ class RRoc(RPackage):
 	Provide utilities for ROC, with microarray focus."""
 
 	bioc = "ROC"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ROC_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ROC/ROC_1.78.0.tar.gz"]
-	version("1.84.0", tag="RELEASE_3_21")
-	version("1.78.0", sha256="956c21bde8c5fb194acb9af12e9d8a9a2299c598e15020a654a4b33db561ba8a")
+	version("1.84.0", commit="9577c49d7f9faeec1e2da2b0ee834ccf27fe1c79")
+	version("1.78.0", commit="b05c6553847d9624d8ce474e4cc51a5351e2fcfd")
 	version("1.76.0", commit="905ee01be734ed0a5674a4ce2cdc0cdea9d01cb9")
 	version("1.74.0", commit="982ad4d3606b19b8460e8a8af7cfe7c30b83f9b9")
 	version("1.72.0", commit="c5d083b01314280dd43eb4cddd8a7fde8b5dce18")

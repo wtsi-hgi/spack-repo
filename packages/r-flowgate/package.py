@@ -12,11 +12,10 @@ class RFlowgate(RPackage):
 	flowGate adds an interactive Shiny app to allow manual GUI-based gating of flow cytometry data in R. Using flowGate, you can draw 1D and 2D span/rectangle gates, quadrant gates, and polygon gates on flow cytometry data by interactively drawing the gates on a plot of your data, rather than by specifying gate coordinates. This package is especially geared toward wet-lab cytometerists looking to take advantage of R for cytometry analysis, without necessarily having a lot of R experience.
 	"""
 	
-	bioc = "flowGate" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowGate_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowGate/flowGate_1.2.0.tar.gz"]
+	bioc = "flowGate"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="3519876952d4b09dfd4231d7d0114b055cb15758a48ad4744c1d34adbd433c52")
+	version("1.8.0", commit="61921ff6ef13c96b039e2e5d76e35e53a078326e")
+	version("1.2.0", commit="c5234942843555ea03677c2a0e3d15050aac1a2a")
 
 	depends_on("r-flowworkspace@4.0.6:", type=("build", "run"))
 	depends_on("r-ggcyto@1.16:", type=("build", "run"))

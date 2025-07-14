@@ -12,11 +12,10 @@ class RPrince(RPackage):
 	PrInCE (Predicting Interactomes from Co-Elution) uses a naive Bayes classifier trained on dataset-derived features to recover protein-protein interactions from co-elution chromatogram profiles. This package contains the R implementation of PrInCE.
 	"""
 	
-	bioc = "PrInCE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PrInCE_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PrInCE/PrInCE_1.18.0.tar.gz"]
+	bioc = "PrInCE"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="a6629b7d0779ac899df81d5a7db12b32c6955f9a3734e2e8f481f3366ccdfa63")
+	version("1.24.0", commit="1d1ba2225ecbc5ef812f28a84dcdf1be77bc42bf")
+	version("1.18.0", commit="9b7f847e4aac6c3b5791b31fd78adb95f3f87b72")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-purrr@0.2.4:", type=("build", "run"))

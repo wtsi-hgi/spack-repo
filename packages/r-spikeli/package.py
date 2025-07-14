@@ -12,9 +12,8 @@ class RSpikeli(RPackage):
 	SpikeLI is a package that performs the analysis of the Affymetrix spike-in data using the Langmuir Isotherm. The aim of this package is to show the advantages of a physical-chemistry based analysis of the Affymetrix microarray data compared to the traditional methods. The spike-in (or Latin square) data for the HGU95 and HGU133 chipsets have been downloaded from the Affymetrix web site. The model used in the spikeLI package is described in details in E. Carlon and T. Heim, Physica A 362, 433 (2006).
 	"""
 	
-	bioc = "spikeLI" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spikeLI_2.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spikeLI/spikeLI_2.62.0.tar.gz"]
+	bioc = "spikeLI"
 
-	version("2.68.0", tag="RELEASE_3_21")
-	version("2.62.0", sha256="7639c41797ac59aaa7d22500efcc1fae51fed6c10ed56f4f65692f11ab247530")
+	version("2.68.0", commit="87d027ed256f88ebca387a7bdb87c93f7cb2ab6e")
+	version("2.62.0", commit="95a6445c0d67af0221ea4e8da4f97545784a8744")
 

@@ -12,11 +12,10 @@ class RDiggit(RPackage):
 	Inference of Genetic Variants Driving Cellullar Phenotypes by the DIGGIT algorithm
 	"""
 	
-	bioc = "diggit" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/diggit_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/diggit/diggit_1.34.0.tar.gz"]
+	bioc = "diggit"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="f075891536f7f1ad63a89bd67b973b08542b2ba2e86c7e6134eaf49c1aabc495")
+	version("1.40.0", commit="da51ac60ea1e82c003ec977500f8bdf23211b748")
+	version("1.34.0", commit="ad5750736d70b04401f0f28963bb851f99735f40")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

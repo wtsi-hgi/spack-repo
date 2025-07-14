@@ -12,11 +12,10 @@ class RSeqtools(RPackage):
 	Analyze read length, phred scores and alphabet frequency and DNA k-mers on uncompressed and compressed fastq files.
 	"""
 	
-	bioc = "seqTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqTools_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqTools/seqTools_1.36.0.tar.gz"]
+	bioc = "seqTools"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="559031059a9315d8b0912d5334c91cb5176427e09586df400b3eeff58b9a1584")
+	version("1.42.0", commit="66c35359c1c5181406d3b757ee6f995e278f24b4")
+	version("1.36.0", commit="0485f6c74a935df0a7926bb76bbe9edc06bf81a6")
 
 	depends_on("r-zlibbioc", type=("build", "run"))
 	depends_on("zlib", type=("build", "link", "run"))

@@ -13,11 +13,10 @@ class RRecountworkflow(RPackage):
 	"""
 	
 	homepage = "https://github.com/LieberInstitute/recountWorkflow"
-	bioc = "recountWorkflow" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/recountWorkflow_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/recountWorkflow/recountWorkflow_1.26.0.tar.gz"]
+	bioc = "recountWorkflow"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="2a1546ad31685e789e0ad235b8ebc26524291bd112dc071883389b0330932799")
+	version("1.32.0", commit="5301614e52e8ffac26d3a4a268f2fcd7f7774580")
+	version("1.26.0", commit="7291d20db3b0e8c61242abdfe5a8a3cc866c2086")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-recount", type=("build", "run"))

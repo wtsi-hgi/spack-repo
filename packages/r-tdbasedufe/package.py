@@ -13,11 +13,10 @@ class RTdbasedufe(RPackage):
 	"""
 	
 	homepage = "https://github.com/tagtag/TDbasedUFE"
-	bioc = "TDbasedUFE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TDbasedUFE_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TDbasedUFE/TDbasedUFE_1.2.0.tar.gz"]
+	bioc = "TDbasedUFE"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="66ed99fd2677d840b52079fd72eaaea8c67e0be06a87e8eba26848e6629514d8")
+	version("1.8.0", commit="018bf377247ad106894ea8cc358a4b886c706e22")
+	version("1.2.0", commit="7f51f6bb5106627d3db30a472d421bf6cf9a1128")
 
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-rtensor", type=("build", "run"))

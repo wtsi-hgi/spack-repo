@@ -12,11 +12,10 @@ class RTraser(RPackage):
 	traseR performs GWAS trait-associated SNP enrichment analyses in genomic intervals using different hypothesis testing approaches, also provides various functionalities to explore and visualize the results.
 	"""
 	
-	bioc = "traseR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/traseR_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/traseR/traseR_1.32.0.tar.gz"]
+	bioc = "traseR"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="38a4fa6f092e86671a646dcdc9c46cd077fafab3a9f37c86856aa3ff5800b117")
+	version("1.38.0", commit="6f24513677ced75d145904bcf8b033c388ddb4a7")
+	version("1.32.0", commit="27f15937a4d96ac319f7c3ddf6dc48a51381747a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

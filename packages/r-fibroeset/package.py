@@ -12,11 +12,10 @@ class RFibroeset(RPackage):
 	exprSet for Karaman et al. (2003) human, bonobo and gorilla fibroblasts data
 	"""
 	
-	bioc = "fibroEset" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/fibroEset_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/fibroEset/fibroEset_1.44.0.tar.gz"]
+	bioc = "fibroEset"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="86a4364b0615e992820a78056b6f70798544f471368e492fdf563f279fb9bf9d")
+	version("1.50.0", commit="f60d51e31c147049d38de665348da2735f1696cb")
+	version("1.44.0", commit="1ebe9653cb77365e7ffee2b904cbab032908ed21")
 
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))
 

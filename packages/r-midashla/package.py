@@ -12,11 +12,10 @@ class RMidashla(RPackage):
 	MiDAS is a R package for immunogenetics data transformation and statistical analysis. MiDAS accepts input data in the form of HLA alleles and KIR types, and can transform it into biologically meaningful variables, enabling HLA amino acid fine mapping, analyses of HLA evolutionary divergence, KIR gene presence, as well as validated HLA-KIR interactions. Further, it allows comprehensive statistical association analysis workflows with phenotypes of diverse measurement scales. MiDAS closes a gap between the inference of immunogenetic variation and its efficient utilization to make relevant discoveries related to T cell, Natural Killer cell, and disease biology.
 	"""
 	
-	bioc = "midasHLA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/midasHLA_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/midasHLA/midasHLA_1.10.0.tar.gz"]
+	bioc = "midasHLA"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="47e04642f640caa363d83809e675df26239efa43cc17e5cca6cfabfe990e2709")
+	version("1.16.0", commit="d683f983858826f31b280991420cf6fc47604d03")
+	version("1.10.0", commit="a67beb53a9c1868da7799d69e759d8b60905effa")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-multiassayexperiment@1.8.3:", type=("build", "run"))

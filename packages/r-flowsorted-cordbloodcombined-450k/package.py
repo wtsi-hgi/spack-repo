@@ -13,11 +13,10 @@ class RFlowsortedCordbloodcombined450k(RPackage):
 	"""
 	
 	homepage = "https://github.com/immunomethylomics/FlowSorted.CordBloodCombined.450k"
-	bioc = "FlowSorted.CordBloodCombined.450k" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FlowSorted.CordBloodCombined.450k_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FlowSorted.CordBloodCombined.450k/FlowSorted.CordBloodCombined.450k_1.18.0.tar.gz"]
+	bioc = "FlowSorted.CordBloodCombined.450k"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="146a872d02789fb45da741e9da735c6f8d07b7c03fb840d50933b6a5206f803e")
+	version("1.24.0", commit="0a7848a8ecb4305fbeedff8897bfe8ff07762e06")
+	version("1.18.0", commit="5a2e2554206a1b10d92a6b57d5d725aa55d76e14")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-minfi@1.21.2:", type=("build", "run"))

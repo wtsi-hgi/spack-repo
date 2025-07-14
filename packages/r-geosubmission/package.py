@@ -12,11 +12,10 @@ class RGeosubmission(RPackage):
 	Helps to easily submit a microarray dataset and the associated sample information to GEO by preparing a single file for upload (direct deposit).
 	"""
 	
-	bioc = "GEOsubmission" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEOsubmission_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEOsubmission/GEOsubmission_1.54.0.tar.gz"]
+	bioc = "GEOsubmission"
 
-	version("1.60.0", tag="RELEASE_3_21")
-	version("1.54.0", sha256="1c5354f541ec5a0e12f56d9c7a1ab24fd908f14560dae54588740266a7c72c0e")
+	version("1.60.0", commit="aa7e9e2ea5a180402e42bec596dba1f8d37d2176")
+	version("1.54.0", commit="29171b7b3bb7bcee73ad8f2025be49aef35a0983")
 
 	depends_on("r-affy", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

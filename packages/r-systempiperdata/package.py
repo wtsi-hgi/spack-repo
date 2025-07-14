@@ -13,11 +13,10 @@ class RSystempiperdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/tgirke/systemPipeRdata"
-	bioc = "systemPipeRdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/systemPipeRdata_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/systemPipeRdata/systemPipeRdata_2.6.0.tar.gz"]
+	bioc = "systemPipeRdata"
 
-	version("2.12.2", tag="RELEASE_3_21")
-	version("2.6.0", sha256="0ea66cc404368e3456118d2ed696c8bc8a3a679ecaf14a1c0918260bf7939a00")
+	version("2.12.2", commit="9ad596e0bce84257a43cb66dc8d66f6286fa7f62")
+	version("2.6.0", commit="b3365d5421e5d83d521b4172f6af2655f7d7a95a")
 
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

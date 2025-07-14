@@ -12,11 +12,10 @@ class RSclcbam(RPackage):
 	Whole-exome sequencing data from a murine small-cell lung tumor; only contains data of chromosome 4.
 	"""
 	
-	bioc = "SCLCBam" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SCLCBam_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SCLCBam/SCLCBam_1.34.0.tar.gz"]
+	bioc = "SCLCBam"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="fe49f37029c0b0b2dd16362ba5f0b55b2d112c32efd3970032abb4d5307ad74a")
+	version("1.40.0", commit="465c2abe16141879396fa235eb3851d26f85721e")
+	version("1.34.0", commit="bd1780127d9bbc786f834e5c7715a0b8c0d7a429")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

@@ -13,11 +13,10 @@ class RRjmcmcnucleosomes(RPackage):
 	"""
 	
 	homepage = "https://github.com/ArnaudDroitLab/RJMCMCNucleosomes"
-	bioc = "RJMCMCNucleosomes" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RJMCMCNucleosomes_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RJMCMCNucleosomes/RJMCMCNucleosomes_1.26.0.tar.gz"]
+	bioc = "RJMCMCNucleosomes"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="2aa019181071f42a36f4bb455cf000d1414ba5927f7176db2b8e20cc01c63a01")
+	version("1.32.0", commit="6b4d501481c76a6e6b2f0935fb25054bdfcbf151")
+	version("1.26.0", commit="a52bffdf089130e2f3f82ceb682f1ae60c8a14c8")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

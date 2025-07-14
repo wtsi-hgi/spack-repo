@@ -12,11 +12,10 @@ class RTcgacrcmirna(RPackage):
 	colorectal cancer miRNA profile provided by TCGA
 	"""
 	
-	bioc = "TCGAcrcmiRNA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TCGAcrcmiRNA_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TCGAcrcmiRNA/TCGAcrcmiRNA_1.22.0.tar.gz"]
+	bioc = "TCGAcrcmiRNA"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="5550127c27200fc2b2209b7c6fb19792cde3c4f2dc5e7f1d6fbca1b2aa902c63")
+	version("1.28.0", commit="6b2fec99d5870600741443c6808b7e5fb779b833")
+	version("1.22.0", commit="4ba030de8ac10055e337ff3c604e40464d051f58")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

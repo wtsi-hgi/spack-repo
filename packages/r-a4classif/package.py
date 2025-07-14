@@ -14,10 +14,9 @@ class RA4classif(RPackage):
 	packages."""
 
 	bioc = "a4Classif"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/a4Classif_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/a4Classif/a4Classif_1.50.0.tar.gz"]
 
-	version("1.56.0", tag="RELEASE_3_21")
-	version("1.50.0", sha256="11eed6423093009dcb8b0ac68000bb92fbab5a024d47552701b28e053df6b3f3")
+	version("1.56.0", commit="3c2da3d28a0e830081d402eec88c2c5b51645ef1")
+	version("1.50.0", commit="1a416537c532a37a46a2719aa591e244cca6e779")
 	version("1.48.0", commit="1e2ff90d5af6332beac630395a7494c8fd30aff4")
 	version("1.46.0", commit="96794183a76ab7da7a1863ccd421640254447af5")
 	version("1.44.0", commit="df0fce781f9bc480a1159d958c9a63c314a9ed01")

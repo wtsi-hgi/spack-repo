@@ -23,8 +23,7 @@ class REnsembldb(RPackage):
 	between genomic, transcript and protein coordinates."""
 
 	bioc = "ensembldb"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ensembldb_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ensembldb/ensembldb_2.26.0.tar.gz"]
-	version("2.32.0", tag="RELEASE_3_21")
+	version("2.32.0", commit="28aabc4f6e849877832b225fa07ab520d52330f1")
 	version("2.8.1", commit="a4d8d89c143dca86b364d59dff8e46cc81c41ac0")
 	version("2.6.8", commit="c2c4f41b4ecc81d5328ce1d380065dfcb5e0c54c")
 	version("2.4.1", commit="b5b6b94826a2f46a4faecb9dde750ecd3bfaf327")

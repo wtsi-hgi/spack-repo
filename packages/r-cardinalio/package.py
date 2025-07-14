@@ -13,11 +13,10 @@ class RCardinalio(RPackage):
 	"""
 	
 	homepage = "http://www.cardinalmsi.org"
-	bioc = "CardinalIO" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CardinalIO_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CardinalIO/CardinalIO_1.0.0.tar.gz"]
+	bioc = "CardinalIO"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="c6569a101b121b1445c785f7cb17214a55d1630ac0a774e7e5e32ca199293d4f")
+	version("1.6.0", commit="01525c5ae72d6bf4ccfd1fb1734ba98e518946e3")
+	version("1.0.0", commit="161a24aa0ec1ec0ce344aec033dcd998fd668708")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-matter", type=("build", "run"))

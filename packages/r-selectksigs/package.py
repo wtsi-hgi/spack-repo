@@ -13,11 +13,10 @@ class RSelectksigs(RPackage):
 	"""
 	
 	homepage = "https://github.com/USCbiostats/selectKSigs"
-	bioc = "selectKSigs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/selectKSigs_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/selectKSigs/selectKSigs_1.14.0.tar.gz"]
+	bioc = "selectKSigs"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="eb18c059c3171d4d4b75cc00d4ae72971f3d1bd1ee3bca564afa69e7c0e02217")
+	version("1.20.0", commit="674fc2ba038bd69fe2d251974c52d3550bcea2b1")
+	version("1.14.0", commit="d94052166954e29b8ed55bd30d0b22faa8637149")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-hilda", type=("build", "run"))

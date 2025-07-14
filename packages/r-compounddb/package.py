@@ -13,11 +13,10 @@ class RCompounddb(RPackage):
 	"""
 	
 	homepage = "https://github.com/RforMassSpectrometry/CompoundDb"
-	bioc = "CompoundDb" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CompoundDb_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CompoundDb/CompoundDb_1.6.0.tar.gz"]
+	bioc = "CompoundDb"
 
-	version("1.12.1", tag="RELEASE_3_21")
-	version("1.6.0", sha256="a3bc52352f715319129225eefbb2581ba1426a7ec8c057582a276a983b0f70b9")
+	version("1.12.1", commit="7fffee6fbfe7cffcd63748ac8b693d56c4cbf5ac")
+	version("1.6.0", commit="288e0ba28d25f24a8eafdbe2370765babb2be59c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationfilter", type=("build", "run"))

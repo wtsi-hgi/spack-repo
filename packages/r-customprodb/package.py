@@ -12,11 +12,10 @@ class RCustomprodb(RPackage):
 	Database search is the most widely used approach for peptide and protein identification in mass spectrometry-based proteomics studies. Our previous study showed that sample-specific protein databases derived from RNA-Seq data can better approximate the real protein pools in the samples and thus improve protein identification. More importantly, single nucleotide variations, short insertion and deletions and novel junctions identified from RNA-Seq data make protein database more complete and sample-specific. Here, we report an R package customProDB that enables the easy generation of customized databases from RNA-Seq data for proteomics search. This work bridges genomics and proteomics studies and facilitates cross-omics data integration.
 	"""
 	
-	bioc = "customProDB" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/customProDB_1.42.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/customProDB/customProDB_1.42.1.tar.gz"]
+	bioc = "customProDB"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.1", sha256="28be9c341aa2bc3e2c89560f041c5c3c23e6018de4591949f91a22043b3b51fc")
+	version("1.48.0", commit="ee2960521d55331b9edc61c196388343a7236baa")
+	version("1.42.1", commit="c592a7999ad56d038eb9b2f5b32155d33a539910")
 	version("1.41.0", md5="08f0eb20ac48a7b8f1e27b45522dd029")
 
 	depends_on("r@3.5:", type=("build", "run"))

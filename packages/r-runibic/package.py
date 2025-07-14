@@ -13,11 +13,10 @@ class RRunibic(RPackage):
 	"""
 	
 	homepage = "http://github.com/athril/runibic"
-	bioc = "runibic" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/runibic_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/runibic/runibic_1.24.0.tar.gz"]
+	bioc = "runibic"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="0db39adb3aebc4a0f26ac8fa38ac04addcadb56ad7b68ab4023ed6374d957766")
+	version("1.30.0", commit="55577129ab9e62d67ee6250dce6de4891b2dda09")
+	version("1.24.0", commit="3d745bf03021be64a42957121e7656aa1133de6a")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biclust", type=("build", "run"))

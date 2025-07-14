@@ -12,11 +12,10 @@ class RGaga(RPackage):
 	Implements the GaGa model for high-throughput data analysis, including differential expression analysis, supervised gene clustering and classification. Additionally, it performs sequential sample size calculations using the GaGa and LNNGV models (the latter from EBarrays package).
 	"""
 	
-	bioc = "gaga" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gaga_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gaga/gaga_2.48.0.tar.gz"]
+	bioc = "gaga"
 
-	version("2.54.0", tag="RELEASE_3_21")
-	version("2.48.0", sha256="2cf887e3a142f4d7e5c2fb697d69378af06f3b79a17d34d00fa1fc54dcfa10bb")
+	version("2.54.0", commit="3916ba92c2c1cd83e8bf5f1f8a5cda75f0547e65")
+	version("2.48.0", commit="b7dc29ea93b811649e115a84c7d8f78c911e22f3")
 
 	depends_on("r@2.8:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

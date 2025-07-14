@@ -12,11 +12,10 @@ class RHireewas(RPackage):
 	In epigenome-wide association studies, the measured signals for each sample are a mixture of methylation profiles from different cell types. The current approaches to the association detection only claim whether a cytosine-phosphate-guanine (CpG) site is associated with the phenotype or not, but they cannot determine the cell type in which the risk-CpG site is affected by the phenotype. We propose a solid statistical method, HIgh REsolution (HIRE), which not only substantially improves the power of association detection at the aggregated level as compared to the existing methods but also enables the detection of risk-CpG sites for individual cell types. The "HIREewas" R package is to implement HIRE model in R.
 	"""
 	
-	bioc = "HIREewas" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HIREewas_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HIREewas/HIREewas_1.20.0.tar.gz"]
+	bioc = "HIREewas"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="dc0b1d30912f6e3478d49c480362c327558267b942cb1de011d888ef1b8609ef")
+	version("1.26.0", commit="b6b4c73f91467965b56c3250d0fba920a883c863")
+	version("1.20.0", commit="f0e22366e1e5eae955465952c3e65499fc43af57")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-quadprog", type=("build", "run"))

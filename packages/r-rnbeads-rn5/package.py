@@ -12,11 +12,10 @@ class RRnbeadsRn5(RPackage):
 	Automatically generated RnBeads annotation package for the assembly rn5.
 	"""
 	
-	bioc = "RnBeads.rn5" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RnBeads.rn5_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RnBeads.rn5/RnBeads.rn5_1.34.0.tar.gz"]
+	bioc = "RnBeads.rn5"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="1ad1e5a37a018e6e53e7d7f84333dda5ceae3368c2e44076c9e4ef66a26b57a0", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RnBeads.rn5_1.34.0.tar.gz")
+	version("1.40.0", commit="2533d7f953bd771a360b8857fb659fdeec270007")
+	version("1.34.0", commit="a7291fe77e510fe82111c556df539aceec51e2f2")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

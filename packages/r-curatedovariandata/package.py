@@ -13,11 +13,10 @@ class RCuratedovariandata(RPackage):
 	"""
 	
 	homepage = "http://bcb.dfci.harvard.edu/ovariancancer"
-	bioc = "curatedOvarianData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedOvarianData_1.40.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedOvarianData/curatedOvarianData_1.40.1.tar.gz"]
+	bioc = "curatedOvarianData"
 
-	version("1.46.2", tag="RELEASE_3_21")
-	version("1.40.1", sha256="4ab9aed6d1f643f266c5b3b57c36ba74a8d8ab1e24fc87451504bcf1001d26a0")
+	version("1.46.2", commit="c01486700ce1b56393ad4ec4fa89e1d8987dc42c")
+	version("1.40.1", commit="c16d8042894dbb54e6050b890c6e1c6b8aeac865")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

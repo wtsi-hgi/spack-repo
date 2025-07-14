@@ -12,11 +12,10 @@ class RLogicfs(RPackage):
 	Identification of interactions between binary variables using Logic Regression. Can, e.g., be used to find interesting SNP interactions. Contains also a bagging version of logic regression for classification.
 	"""
 	
-	bioc = "logicFS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/logicFS_2.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/logicFS/logicFS_2.22.0.tar.gz"]
+	bioc = "logicFS"
 
-	version("2.28.0", tag="RELEASE_3_21")
-	version("2.22.0", sha256="783731537784c6cd55a5b192b35040d3a7978d3fb80228a9380dea0ab1001c8d")
+	version("2.28.0", commit="21132df49df7e1384473cff3f1c67470ea1978ee")
+	version("2.22.0", commit="c976e6430d38fb464fcd63a013c531bc823dcdd3")
 
 	depends_on("r-logicreg", type=("build", "run"))
 	depends_on("r-mcbiopi", type=("build", "run"))

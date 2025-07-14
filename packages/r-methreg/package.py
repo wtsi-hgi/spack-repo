@@ -12,11 +12,10 @@ class RMethreg(RPackage):
 	Epigenome-wide association studies (EWAS) detects a large number of DNA methylation differences, often hundreds of differentially methylated regions and thousands of CpGs, that are significantly associated with a disease, many are located in non-coding regions. Therefore, there is a critical need to better understand the functional impact of these CpG methylations and to further prioritize the significant changes. MethReg is an R package for integrative modeling of DNA methylation, target gene expression and transcription factor binding sites data, to systematically identify and rank functional CpG methylations. MethReg evaluates, prioritizes and annotates CpG sites with high regulatory potential using matched methylation and gene expression data, along with external TF-target interaction databases based on manually curation, ChIP-seq experiments or gene regulatory network analysis.
 	"""
 	
-	bioc = "MethReg" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MethReg_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MethReg/MethReg_1.12.0.tar.gz"]
+	bioc = "MethReg"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="56d0158f27fca8c25a26aceeffb3de7ffcdb98aade3ffb8748eee44d5b1114c3")
+	version("1.18.0", commit="cc9ab7e7906c9fe738b5c4598cc83b5e81555f47")
+	version("1.12.0", commit="30684d3e60b9641328238ba88870d62bc2fadb08")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

@@ -12,11 +12,10 @@ class RChromheatmap(RPackage):
 	The ChromHeatMap package can be used to plot genome-wide data (e.g. expression, CGH, SNP) along each strand of a given chromosome as a heat map. The generated heat map can be used to interactively identify probes and genes of interest.
 	"""
 	
-	bioc = "ChromHeatMap" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChromHeatMap_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChromHeatMap/ChromHeatMap_1.56.0.tar.gz"]
+	bioc = "ChromHeatMap"
 
-	version("1.62.0", tag="RELEASE_3_21")
-	version("1.56.0", sha256="7cb1aaa6405265ac4bee7ee5335fd3ba6600bc2c618c403aa3c6bedb19f1777d")
+	version("1.62.0", commit="fdfff1bf9a14475fefb10998b502cbf26e52d732")
+	version("1.56.0", commit="453e6887c78235a8aadda63d50fbf972fda8916a")
 
 	depends_on("r@2.9:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.3.2:", type=("build", "run"))

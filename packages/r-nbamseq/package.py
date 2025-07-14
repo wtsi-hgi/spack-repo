@@ -13,11 +13,10 @@ class RNbamseq(RPackage):
 	"""
 	
 	homepage = "https://github.com/reese3928/NBAMSeq"
-	bioc = "NBAMSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NBAMSeq_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NBAMSeq/NBAMSeq_1.18.0.tar.gz"]
+	bioc = "NBAMSeq"
 
-	version("1.24.1", tag="RELEASE_3_21")
-	version("1.18.0", sha256="597142f74149e45735a3508b8ea0e2019715a09b2156d768c0c904522f1c5357")
+	version("1.24.1", commit="4cf2748c1831d7a4d9e863db2aa5ed738645e717")
+	version("1.18.0", commit="56721c1c7b49de56844d5049d1de2d4f36ad7bd5")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

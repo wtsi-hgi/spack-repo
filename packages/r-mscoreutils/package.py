@@ -18,11 +18,10 @@ class RMscoreutils(RPackage):
 	structure within the R for Mass Spectrometry packages."""
 
 	bioc = "MsCoreUtils"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsCoreUtils_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsCoreUtils/MsCoreUtils_1.14.1.tar.gz"]
-	version("1.20.0", tag="RELEASE_3_21")
+	version("1.20.0", commit="eaf50b3076161929f6145ecb94a7d6ed4332c8fb")
 	version("1.8.0", commit="8b7e2c31009276aad0b418ba5cdfc94d03e1973e")
 	version("1.6.0", commit="9ed95b2d20dacaa83567fadd04349c81db9127ef")
-	version("1.14.1", sha256="5fe7604847d3e6936009f1d20d2c1a75afe7a2da70125fecd0ed26f4ee6cd950")
+	version("1.14.1", commit="3f5f1d51bfd7397755a902ea1a392c3ed67f9235")
 	version("1.12.0", commit="14a3fdb2fecca41ef0acb67bc8356227a1491c56")
 	version("1.10.0", commit="742c0c7143b1c32f75cc96b555e9f8cd265096c9")
 

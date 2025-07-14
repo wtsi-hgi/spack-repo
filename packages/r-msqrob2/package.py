@@ -13,11 +13,10 @@ class RMsqrob2(RPackage):
 	"""
 	
 	homepage = "https://github.com/statOmics/msqrob2"
-	bioc = "msqrob2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msqrob2_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msqrob2/msqrob2_1.10.0.tar.gz"]
+	bioc = "msqrob2"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="c58925c604da7c6986e518617f21a5096f4479c04de40c3a94cb55d959004abc", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msqrob2_1.10.0.tar.gz")
+	version("1.16.0", commit="0477b1b229076ab5adeb218633c52b1dc793e014")
+	version("1.10.0", commit="6bf2b78d17f11a3f7c956f5a24fb7747c96a913f")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-qfeatures@1.1.2:", type=("build", "run"))

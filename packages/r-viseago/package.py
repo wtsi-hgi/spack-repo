@@ -13,11 +13,10 @@ class RViseago(RPackage):
 	"""
 	
 	homepage = "https://www.bioconductor.org/packages/release/bioc/html/ViSEAGO.html"
-	bioc = "ViSEAGO" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ViSEAGO_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ViSEAGO/ViSEAGO_1.16.0.tar.gz"]
+	bioc = "ViSEAGO"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="64f61c598826d906575fbbf16abfff0f9a9d6b3faad8bcf44d860262f29a40b0")
+	version("1.22.0", commit="7d2965b8251c44be9bc21933eaa654ecb0662369")
+	version("1.16.0", commit="21e6693b42d99aa321d9ebd068e0b30288c7933b")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

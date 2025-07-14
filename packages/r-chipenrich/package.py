@@ -12,11 +12,10 @@ class RChipenrich(RPackage):
 	ChIP-Enrich and Poly-Enrich perform gene set enrichment testing using peaks called from a ChIP-seq experiment. The method empirically corrects for confounding factors such as the length of genes, and the mappability of the sequence surrounding genes.
 	"""
 	
-	bioc = "chipenrich" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chipenrich_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chipenrich/chipenrich_2.26.0.tar.gz"]
+	bioc = "chipenrich"
 
-	version("2.32.0", tag="RELEASE_3_21")
-	version("2.26.0", sha256="a301e2e7653f599c1a0954ce4302f191432b08bb8677cdb27a16a13e4cda7586")
+	version("2.32.0", commit="28602b9471c14667541b05c67bf0e3a96fb807d9")
+	version("2.26.0", commit="8330eab5ddf71561ec30de856c824890b5f6feb2")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

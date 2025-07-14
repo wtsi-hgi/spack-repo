@@ -13,11 +13,10 @@ class RChromstar(RPackage):
 	"""
 	
 	homepage = "https://github.com/ataudt/chromstaR"
-	bioc = "chromstaR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chromstaR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chromstaR/chromstaR_1.28.0.tar.gz"]
+	bioc = "chromstaR"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="a68b7767d8ae6961414a41786c8684cf5e508ba0ae19f824f1eb78743b66d3fb")
+	version("1.34.0", commit="097ad42688d609469d702de94018d78c648bf50c")
+	version("1.28.0", commit="b61ea88e0edf1d48f863228e8f54df089cea5d24")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

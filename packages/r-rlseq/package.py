@@ -13,8 +13,7 @@ class RRlseq(RPackage):
 	"""
 	
 	homepage = "https://github.com/Bishop-Laboratory/RLSeq"
-	bioc = "RLSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RLSeq_1.5.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RLSeq/RLSeq_1.5.2.tar.gz"]
+	bioc = "RLSeq"
 
 	version("1.5.2", sha256="38e8d3f29c7c6a3a29d1ddb49a1674073a0beb9a7844de38bc66af17c4b8115a")
 

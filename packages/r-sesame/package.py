@@ -13,11 +13,10 @@ class RSesame(RPackage):
 	"""
 	
 	homepage = "https://github.com/zwdzwd/sesame"
-	bioc = "sesame" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sesame_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sesame/sesame_1.20.0.tar.gz"]
+	bioc = "sesame"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="b96ef69f13c55590d950ae1d2feb05ba478ed96595b782f39410df2175ae047a")
+	version("1.26.0", commit="bc933e082dc3ae4f9b4d08e94f2538f43dfd6683")
+	version("1.20.0", commit="a98099516325570762b68edc43e12c2052162745")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-sesamedata", type=("build", "run"))

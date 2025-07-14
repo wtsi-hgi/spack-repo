@@ -13,11 +13,10 @@ class RSpasim(RPackage):
 	"""
 	
 	homepage = "https://trigosteam.github.io/spaSim/"
-	bioc = "spaSim" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spaSim_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spaSim/spaSim_1.4.0.tar.gz"]
+	bioc = "spaSim"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="73fd96426fae25af657f6585746132fcf83798b59c8fd9ff620d9b852ace4638")
+	version("1.10.0", commit="270e295d8b0526f5eef722e412c67c7235579d99")
+	version("1.4.0", commit="185b59d3788d6230a3be8b290b78f1c09c2730a7")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

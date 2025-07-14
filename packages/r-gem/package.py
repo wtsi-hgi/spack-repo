@@ -12,11 +12,10 @@ class RGem(RPackage):
 	Tools for analyzing EWAS, methQTL and GxE genome widely.
 	"""
 	
-	bioc = "GEM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEM_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEM/GEM_1.28.0.tar.gz"]
+	bioc = "GEM"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="efbefb501dba47569251bb643ea4f8707c1e88f93e49500b80489934f095f0c3")
+	version("1.34.0", commit="eaa8b95c440ed581800ed53f832fbc2d5bc60569")
+	version("1.28.0", commit="fe6542f5f16d1b86483ea3ed615116199b647999")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

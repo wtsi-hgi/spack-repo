@@ -12,11 +12,10 @@ class RIcheck(RPackage):
 	QC pipeline and data analysis tools for high-dimensional Illumina mRNA expression data.
 	"""
 	
-	bioc = "iCheck" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iCheck_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iCheck/iCheck_1.32.0.tar.gz"]
+	bioc = "iCheck"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="d8f3313ea9acf0ff834f3cff568ccaf8f5c224055bbd913025543ecd142f8ef4")
+	version("1.38.0", commit="09ca7e4fde482e5fa660520b4d311fde4460d5d7")
+	version("1.32.0", commit="17bf4a8f67b5267555733384b3124c391b7d0638")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

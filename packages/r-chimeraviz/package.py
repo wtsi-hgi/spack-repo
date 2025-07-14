@@ -13,11 +13,10 @@ class RChimeraviz(RPackage):
 	"""
 	
 	homepage = "https://github.com/stianlagstad/chimeraviz"
-	bioc = "chimeraviz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chimeraviz_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chimeraviz/chimeraviz_1.28.0.tar.gz"]
+	bioc = "chimeraviz"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="df21e0145499d05aa135cf57561230b800f24a7210c1e91f6b7b6eda426b8323")
+	version("1.34.0", commit="ab42b3e90ff8817b2646a34502a946c3333c63fe")
+	version("1.28.0", commit="2a2ebf38cb430ff624cda5465b77985339ca1f07")
 
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

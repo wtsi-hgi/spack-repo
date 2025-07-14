@@ -12,11 +12,10 @@ class RSsrch(RPackage):
 	Demonstrate tokenization and a search gadget for collections of CSV files.
 	"""
 	
-	bioc = "ssrch" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ssrch_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ssrch/ssrch_1.18.0.tar.gz"]
+	bioc = "ssrch"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="69d652102ffb68ee3641a3589b6844c7337f086cdeec4578d133590aa7ba4368")
+	version("1.24.0", commit="afe43f7a2a4ed04dc19c8dd4bd9bc77e9037c92c")
+	version("1.18.0", commit="98161e142282cdd943e66164f10ab9347ac19583")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

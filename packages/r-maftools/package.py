@@ -13,11 +13,10 @@ class RMaftools(RPackage):
 	"""
 	
 	homepage = "https://github.com/PoisonAlien/maftools"
-	bioc = "maftools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maftools_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maftools/maftools_2.18.0.tar.gz"]
+	bioc = "maftools"
 
-	version("2.24.0", tag="RELEASE_3_21")
-	version("2.18.0", sha256="ea8d5c1d97a0d1b7d5ab172ee93b89c234918874b98ae3b2ff8d8ed02da6bc08")
+	version("2.24.0", commit="e3a5f178a41bb04e7cbece5660541a41ac89c1aa")
+	version("2.18.0", commit="b1f86254fd4309c7434087ad497a26e763b4cc4d")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

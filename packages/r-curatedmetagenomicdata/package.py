@@ -13,11 +13,10 @@ class RCuratedmetagenomicdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/waldronlab/curatedMetagenomicData"
-	bioc = "curatedMetagenomicData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedMetagenomicData_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedMetagenomicData/curatedMetagenomicData_3.10.0.tar.gz"]
+	bioc = "curatedMetagenomicData"
 
-	version("3.16.1", tag="RELEASE_3_21")
-	version("3.10.0", sha256="8b413dc8b792d6f02f3ec77ec237b84abfccff1761c50528aa141d1458bffb39")
+	version("3.16.1", commit="5e19c62dc2a0b7c0c035ae321e5589dbeefa265c")
+	version("3.10.0", commit="e64df949957ab3ed84a176ceecc6a2590fb7b07f")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

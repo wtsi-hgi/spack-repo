@@ -13,11 +13,10 @@ class RCytomapper(RPackage):
 	"""
 	
 	homepage = "https://github.com/BodenmillerGroup/cytomapper"
-	bioc = "cytomapper" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cytomapper_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cytomapper/cytomapper_1.14.0.tar.gz"]
+	bioc = "cytomapper"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="e95ea205532162727bf4a3e54bdc0a7d7978966d0364fe33f46875e8a1e4e13b")
+	version("1.20.0", commit="0c864671927224767009665ac3d47ad022f52865")
+	version("1.14.0", commit="2e891afa3693d7013f4ce0349e27c68d4fc17b4c")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ebimage", type=("build", "run"))

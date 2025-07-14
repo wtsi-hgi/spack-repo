@@ -13,11 +13,10 @@ class RRgreat(RPackage):
 	"""
 	
 	homepage = "https://github.com/jokergoo/rGREAT"
-	bioc = "rGREAT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rGREAT_2.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rGREAT/rGREAT_2.4.0.tar.gz"]
+	bioc = "rGREAT"
 
-	version("2.10.0", tag="RELEASE_3_21")
-	version("2.4.0", sha256="22281d1420cb3068c06e27e4f1535fd10160052da804a9fae28eabada2abdb25")
+	version("2.10.0", commit="6fb09c268c9bc9cd515bd1cf70b4d6c60ca91a5e")
+	version("2.4.0", commit="b3e45d8d0b076a540fdea57ad3c570df904277cb")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

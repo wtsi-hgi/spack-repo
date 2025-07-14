@@ -12,11 +12,10 @@ class RConsica(RPackage):
 	consICA implements a data-driven deconvolution method – consensus independent component analysis (ICA) to decompose heterogeneous omics data and extract features suitable for patient diagnostics and prognostics. The method separates biologically relevant transcriptional signals from technical effects and provides information about the cellular composition and biological processes. The implementation of parallel computing in the package ensures efficient analysis of modern multicore systems.
 	"""
 	
-	bioc = "consICA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/consICA_2.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/consICA/consICA_2.0.0.tar.gz"]
+	bioc = "consICA"
 
-	version("2.6.0", tag="RELEASE_3_21")
-	version("2.0.0", sha256="a060585fce661c118a243d23b36fd0530dd9b6b74ecca7cc4235c09d380f2276")
+	version("2.6.0", commit="97d984a90823de13d3344f73845ca63857a6fa0e")
+	version("2.0.0", commit="d7fa01ed04549e6ea695fa1c0e109fedc8c0f2a3")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-fastica@1.2.1:", type=("build", "run"))

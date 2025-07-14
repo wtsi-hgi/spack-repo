@@ -13,11 +13,10 @@ class RMbpcr(RPackage):
 	"""
 	
 	homepage = "http://www.idsia.ch/~paola/mBPCR"
-	bioc = "mBPCR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mBPCR_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mBPCR/mBPCR_1.56.0.tar.gz"]
+	bioc = "mBPCR"
 
-	version("1.62.0", tag="RELEASE_3_21")
-	version("1.56.0", sha256="10834ebe12812383aadca6ebb4e9523debc4d0b917229868ce29cc0d65e7010e")
+	version("1.62.0", commit="4a6953f248a93d0bfd313f61b579651afcb68bf5")
+	version("1.56.0", commit="e983807897a64230cc0407f0739ab24af74f328e")
 
 	depends_on("r-oligoclasses", type=("build", "run"))
 	depends_on("r-gwastools", type=("build", "run"))

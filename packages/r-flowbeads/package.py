@@ -12,11 +12,10 @@ class RFlowbeads(RPackage):
 	This package extends flowCore to provide functionality specific to bead data. One of the goals of this package is to automate analysis of bead data for the purpose of normalisation.
 	"""
 	
-	bioc = "flowBeads" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowBeads_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowBeads/flowBeads_1.40.0.tar.gz"]
+	bioc = "flowBeads"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="d43c07bdde49b40fa27d1f4431824299cd4d8fc6aa1eab6fb12d8582e9310b43")
+	version("1.46.0", commit="6ceaa6aea927eaae257aaa9f7ae504cfe964fc4e")
+	version("1.40.0", commit="9631ea04e3cd393a68343ebeb117f1910185f6d8")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

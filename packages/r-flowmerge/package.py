@@ -12,11 +12,10 @@ class RFlowmerge(RPackage):
 	Merging of mixture components for model-based automated gating of flow cytometry data using the flowClust framework. Note: users should have a working copy of flowClust 2.0 installed.
 	"""
 	
-	bioc = "flowMerge" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowMerge_2.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowMerge/flowMerge_2.50.0.tar.gz"]
+	bioc = "flowMerge"
 
-	version("2.56.0", tag="RELEASE_3_21")
-	version("2.50.0", sha256="cbd7a2e4ffdac86fb0fe36fa1f9b5adb277fd882a8fb3ea793031546f1dd6701")
+	version("2.56.0", commit="6dabf909ea01aedea2cf60def0680f1a7973be7b")
+	version("2.50.0", commit="dec533083d0af8850c527b8533da8dacd37b4071")
 
 	depends_on("r-graph", type=("build", "run"))
 	depends_on("r-feature", type=("build", "run"))

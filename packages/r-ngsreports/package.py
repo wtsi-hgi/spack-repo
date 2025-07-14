@@ -13,11 +13,10 @@ class RNgsreports(RPackage):
 	"""
 	
 	homepage = "https://github.com/smped/ngsReports"
-	bioc = "ngsReports" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ngsReports_2.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ngsReports/ngsReports_2.4.0.tar.gz"]
+	bioc = "ngsReports"
 
-	version("2.10.0", tag="RELEASE_3_21")
-	version("2.4.0", sha256="abc115a8dd01244ce57952cfbee1d09b675d40c8141d53c4fc33b4adb1a9145e")
+	version("2.10.0", commit="33b9e0318fc1bc3a4a85832bbeb10315ec1d0081")
+	version("2.4.0", commit="bdb00bd82d2261825c2d88dad865bb26d4777e42")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

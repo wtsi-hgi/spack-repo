@@ -13,11 +13,10 @@ class RPrimirtss(RPackage):
 	"""
 	
 	homepage = "https://github.com/ipumin/primirTSS"
-	bioc = "primirTSS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/primirTSS_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/primirTSS/primirTSS_1.20.0.tar.gz"]
+	bioc = "primirTSS"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="b8afe18484fa4f5913359ba1715c50dadb6f91d350336013db06c30b23e3fabf")
+	version("1.26.0", commit="63d93c515ebf81fa49e8765475639339c71e08cc")
+	version("1.20.0", commit="8fd698e09c8a75ce759d56e677bc27bea53de53e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges@1.32.2:", type=("build", "run"))

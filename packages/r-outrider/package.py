@@ -13,11 +13,10 @@ class ROutrider(RPackage):
 	"""
 	
 	homepage = "https://github.com/gagneurlab/OUTRIDER"
-	bioc = "OUTRIDER" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OUTRIDER_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OUTRIDER/OUTRIDER_1.20.0.tar.gz"]
+	bioc = "OUTRIDER"
 
-	version("1.26.2", tag="RELEASE_3_21")
-	version("1.20.0", sha256="cc932fd6bfa5007137d832ccd8ff5dc0be00cd420c34cec728c033adf0f43afb")
+	version("1.26.2", commit="b8e0813b9ce00408ef4196a1ca00809ed491c2c1")
+	version("1.20.0", commit="0528b44b783794d4855757b849ac344f82212899")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

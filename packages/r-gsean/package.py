@@ -12,11 +12,10 @@ class RGsean(RPackage):
 	Biological molecules in a living organism seldom work individually. They usually interact each other in a cooperative way. Biological process is too complicated to understand without considering such interactions. Thus, network-based procedures can be seen as powerful methods for studying complex process. However, many methods are devised for analyzing individual genes. It is said that techniques based on biological networks such as gene co-expression are more precise ways to represent information than those using lists of genes only. This package is aimed to integrate the gene expression and biological network. A biological network is constructed from gene expression data and it is used for Gene Set Enrichment Analysis.
 	"""
 	
-	bioc = "gsean" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gsean_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gsean/gsean_1.22.0.tar.gz"]
+	bioc = "gsean"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="b9b49e8f0ef56781444a117e8f02e6b93e5a01e2467d4d9a523d3f98ddcb2a97")
+	version("1.28.0", commit="32e4cd38dc1e66bde70217ed2741303e02006806")
+	version("1.22.0", commit="c195cedb2890aaab5f0b4f951cc964735980ca23")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-fgsea", type=("build", "run"))

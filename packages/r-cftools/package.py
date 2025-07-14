@@ -13,11 +13,10 @@ class RCftools(RPackage):
 	"""
 	
 	homepage = "https://github.com/jasminezhoulab/cfTools"
-	bioc = "cfTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cfTools_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cfTools/cfTools_1.2.0.tar.gz"]
+	bioc = "cfTools"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="dfb158f7b21ca00f6455d11c7eae6f690a5587b29a8b4142d026f78ec533d286")
+	version("1.8.0", commit="c1e77351ce88a1cd81b93953995a8ea9582c4dbd")
+	version("1.2.0", commit="c33a0cc4da4a29cdb1e130ef447483712f10cc58")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

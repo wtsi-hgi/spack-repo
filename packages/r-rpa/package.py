@@ -13,11 +13,10 @@ class RRpa(RPackage):
 	"""
 	
 	homepage = "https://github.com/antagomir/RPA"
-	bioc = "RPA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RPA_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RPA/RPA_1.58.0.tar.gz"]
+	bioc = "RPA"
 
-	version("1.64.0", tag="RELEASE_3_21")
-	version("1.58.0", sha256="d48b0880d1601a18ae8e69104e4059321a533d9b3617ebec9cab117e02cb5250")
+	version("1.64.0", commit="7a8fc60f441f18fd44f3b8f2b3435f9fb64210a9")
+	version("1.58.0", commit="8684bc98c30cecb8efb2bc02178a4e7d7e3378d1")
 
 	depends_on("r@3.1.1:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

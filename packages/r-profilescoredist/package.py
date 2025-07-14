@@ -12,11 +12,10 @@ class RProfilescoredist(RPackage):
 	Regularization and score distributions for position count matrices.
 	"""
 	
-	bioc = "profileScoreDist" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/profileScoreDist_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/profileScoreDist/profileScoreDist_1.30.0.tar.gz"]
+	bioc = "profileScoreDist"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="9a57ec2bb91b13a477087119eb7f541d97d4d7d0027e73b10deb977616ae64f4")
+	version("1.36.0", commit="4ad0ca770bbf18e58e1db1007a47f2bdc2747d19")
+	version("1.30.0", commit="d8bfff1199ba20c2d98806c8292288784cae9b0b")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

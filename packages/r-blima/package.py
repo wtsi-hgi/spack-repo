@@ -13,11 +13,10 @@ class RBlima(RPackage):
 	"""
 	
 	homepage = "https://bitbucket.org/kulvait/blima"
-	bioc = "blima" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/blima_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/blima/blima_1.36.0.tar.gz"]
+	bioc = "blima"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="71d0a28e7762cff920a3889fc256d922ce99383b0015657708b006a7453ae296")
+	version("1.42.0", commit="9ab86a5530c07a3c78e31efdc04b28ef15e03ea6")
+	version("1.36.0", commit="21da661384b9762bf4e41e4ea91a6236a84a710a")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-beadarray@2:", type=("build", "run"))

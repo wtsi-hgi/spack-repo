@@ -15,7 +15,7 @@ class RMirbaseconverter(RPackage):
 	homepage = "https://github.com/taoshengxu/miRBaseConverter"
 	bioc = "miRBaseConverter" 
 
-	version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", commit="f17fb82093464f17fe8213146a9d3004970a388e")
 	version("1.26.0", commit="e937593b9b1ae94ce13df50614a764c2970bbba1")
 
 	depends_on("r@3.4:", type=("build", "run"))

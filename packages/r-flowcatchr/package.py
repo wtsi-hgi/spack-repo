@@ -13,11 +13,10 @@ class RFlowcatchr(RPackage):
 	"""
 	
 	homepage = "https://github.com/federicomarini/flowcatchR"
-	bioc = "flowcatchR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowcatchR_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowcatchR/flowcatchR_1.36.0.tar.gz"]
+	bioc = "flowcatchR"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="c6579e5baa75944b20b4ca2e8e0a78ebc3c14b3feefed944b1119450585ce47a")
+	version("1.42.0", commit="ae71a9b98965eebfae58cf1fa99560b06dcf143e")
+	version("1.36.0", commit="70bab3aef55ad7680a3df811b451d6251c340fa1")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-ebimage", type=("build", "run"))

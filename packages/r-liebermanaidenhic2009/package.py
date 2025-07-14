@@ -12,11 +12,10 @@ class RLiebermanaidenhic2009(RPackage):
 	This package provides data that were presented in the article "Comprehensive mapping of long-range interactions reveals folding principles of the human genome", Science 2009 Oct 9;326(5950):289-93. PMID: 19815776
 	"""
 	
-	bioc = "LiebermanAidenHiC2009" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/LiebermanAidenHiC2009_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/LiebermanAidenHiC2009/LiebermanAidenHiC2009_0.40.0.tar.gz"]
+	bioc = "LiebermanAidenHiC2009"
 
-	version("0.46.0", tag="RELEASE_3_21")
-	version("0.40.0", sha256="69f799ef55ae40fd2f06ecbfe1c53980802297ecbfb9b9c50de5cbaee476111b", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/LiebermanAidenHiC2009_0.40.0.tar.gz")
+	version("0.46.0", commit="e2a53b6c70c1dd6003bd30258e3128dee62e29de")
+	version("0.40.0", commit="b1733c6cbd1baa0d4cf76672cee78e58b1197309")
 
 	depends_on("r-kernsmooth", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

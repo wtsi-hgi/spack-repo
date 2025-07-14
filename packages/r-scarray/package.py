@@ -13,11 +13,10 @@ class RScarray(RPackage):
 	"""
 	
 	homepage = "https://github.com/AbbVie-ComputationalGenomics/SCArray"
-	bioc = "SCArray" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCArray_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCArray/SCArray_1.10.0.tar.gz"]
+	bioc = "SCArray"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="4b253cb237ecaa244d8116ae4998b3f70d25c37e121e3e7fd45a5b2902679fa4")
+	version("1.16.0", commit="2581ee7f5f1c9f3bddf9c2ce871bdc73dcc03e2e")
+	version("1.10.0", commit="076182529d37e365f90fc561e79e975438994680")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-gdsfmt@1.36:", type=("build", "run"))

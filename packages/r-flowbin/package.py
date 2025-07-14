@@ -12,11 +12,10 @@ class RFlowbin(RPackage):
 	Software to combine flow cytometry data that has been multiplexed into multiple tubes with common markers between them, by establishing common bins across tubes in terms of the common markers, then determining expression within each tube for each bin in terms of the tube-specific markers.
 	"""
 	
-	bioc = "flowBin" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowBin_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowBin/flowBin_1.38.0.tar.gz"]
+	bioc = "flowBin"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="2509d06d853a3662fef97189994ce402794b0cd431f966862abd7c030000e032")
+	version("1.44.0", commit="49acac2105f788495d5a53faed41ba1ed5143351")
+	version("1.38.0", commit="2b7343da3d603e3f45cc3c6dab81b25c737769fe")
 
 	depends_on("r-flowcore", type=("build", "run"))
 	depends_on("r-flowfp", type=("build", "run"))

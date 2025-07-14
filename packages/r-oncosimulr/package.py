@@ -13,11 +13,10 @@ class ROncosimulr(RPackage):
 	"""
 	
 	homepage = "https://github.com/rdiaz02/OncoSimul"
-	bioc = "OncoSimulR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OncoSimulR_4.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OncoSimulR/OncoSimulR_4.4.0.tar.gz"]
+	bioc = "OncoSimulR"
 
-	version("4.10.0", tag="RELEASE_3_21")
-	version("4.4.0", sha256="733f67a98d20adc406d8f41b8f872fb87493f5048c6e2f22002eba7365593b9b")
+	version("4.10.0", commit="165d213a528650622e941e243a4d5e5baa12999a")
+	version("4.4.0", commit="c736f65ce9373e8d9cba8eb4122d1075ac752eed")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -13,11 +13,10 @@ class RMspurity(RPackage):
 	"""
 	
 	homepage = "https://github.com/computational-metabolomics/msPurity/"
-	bioc = "msPurity" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msPurity_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msPurity/msPurity_1.28.0.tar.gz"]
+	bioc = "msPurity"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="fc8d983718934cc47d134536629fbbd9e51bf9e430bd8980f522a118effc7492")
+	version("1.34.0", commit="4edf5e537a1173bb04a26eb8dee4d03e96a083d2")
+	version("1.28.0", commit="be8638dad3b0d86069518737ca35a19b5f2af0e1")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))

@@ -12,11 +12,10 @@ class ROmada(RPackage):
 	Symptomatic heterogeneity in complex diseases reveals differences in molecular states that need to be investigated. However, selecting the numerous parameters of an exploratory clustering analysis in RNA profiling studies requires deep understanding of machine learning and extensive computational experimentation. Tools that assist with such decisions without prior field knowledge are nonexistent and further gene association analyses need to be performed independently. We have developed a suite of tools to automate these processes and make robust unsupervised clustering of transcriptomic data more accessible through automated machine learning based functions. The efficiency of each tool was tested with four datasets characterised by different expression signal strengths. Our toolkit’s decisions reflected the real number of stable partitions in datasets where the subgroups are discernible. Even in datasets with less clear biological distinctions, stable subgroups with different expression profiles and clinical associations were found.
 	"""
 	
-	bioc = "omada" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/omada_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/omada/omada_1.4.0.tar.gz"]
+	bioc = "omada"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="dd15848708994f18842116b7ffaa47d0be82f7419f3775081183938aa6ce665a")
+	version("1.10.0", commit="c410cb94464c40a8ff3ba0c4bf73a4ccbeb0822a")
+	version("1.4.0", commit="8e2e5fa5939f1d9d8ef84fb8022f72694c2e7d75")
 
 	depends_on("r-pdfcluster@1.0.3:", type=("build", "run"))
 	depends_on("r-kernlab@0.9.29:", type=("build", "run"))

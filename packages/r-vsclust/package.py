@@ -12,11 +12,10 @@ class RVsclust(RPackage):
 	Feature-based variance-sensitive clustering of omics data. Optimizes cluster assignment by taking into account individual feature variance. Includes several modules for statistical testing, clustering and enrichment analysis.
 	"""
 	
-	bioc = "vsclust" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vsclust_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vsclust/vsclust_1.4.0.tar.gz"]
+	bioc = "vsclust"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="3438992407e27098a9304721bbb07d30fb85d3c238bdda0d96a5cca9d0e9748d")
+	version("1.10.0", commit="635720b3fe4a852a82fdcbb81b405186ccf9e6a0")
+	version("1.4.0", commit="c49bf51093e571710ac2b7c680881f0e4e431c83")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-matrixstats", type=("build", "run"))

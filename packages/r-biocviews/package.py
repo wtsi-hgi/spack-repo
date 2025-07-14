@@ -13,11 +13,10 @@ class RBiocviews(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org/packages/biocViews"
-	bioc = "biocViews" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biocViews_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biocViews/biocViews_1.70.0.tar.gz"]
+	bioc = "biocViews"
 
-	version("1.76.0", tag="RELEASE_3_21")
-	version("1.70.0", sha256="0b5500ff5b7d6b5a2eda6478c0a26a069074f62fee1430035bac67a80f51f33a")
+	version("1.76.0", commit="75071f65ab775a60de1486471f5be97dfc45b7ba")
+	version("1.70.0", commit="9435aa4806cdb618a59e857339f6cbd80140e0ad")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

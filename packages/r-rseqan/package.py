@@ -12,10 +12,9 @@ class RRseqan(RPackage):
 	Headers and some wrapper functions from the SeqAn C++ library for ease of usage in R.
 	"""
 	
-	bioc = "RSeqAn" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RSeqAn_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RSeqAn/RSeqAn_1.22.0.tar.gz"]
+	bioc = "RSeqAn"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="24ff6104f19069b26e2c34f9ba0455610ba36a961ead1e9db3a89d01ba918873")
+	version("1.28.0", commit="e61edd0ee3f93a2599ba35a8d3856e6a934a919c")
+	version("1.22.0", commit="79a530856d89a908c97f2e603ce4b4f62b99bd2f")
 
 	depends_on("r-rcpp", type=("build", "run"))

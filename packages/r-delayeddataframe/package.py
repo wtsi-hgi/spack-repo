@@ -13,11 +13,10 @@ class RDelayeddataframe(RPackage):
 	"""
 	
 	homepage = "https://github.com/Bioconductor/DelayedDataFrame"
-	bioc = "DelayedDataFrame" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DelayedDataFrame_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DelayedDataFrame/DelayedDataFrame_1.18.0.tar.gz"]
+	bioc = "DelayedDataFrame"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="cb76488971d7e26d6df500669504ec70757fee265d0f258d42c0e33ea4b8e143")
+	version("1.24.0", commit="e034adb829131548fe65a7c13139804ef855b190")
+	version("1.18.0", commit="d8b9a40056c7da2ec8ef3efff12c0e019b2ec4c7")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-s4vectors@0.23.19:", type=("build", "run"))

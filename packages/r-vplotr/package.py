@@ -13,11 +13,10 @@ class RVplotr(RPackage):
 	"""
 	
 	homepage = "https://github.com/js2264/VplotR"
-	bioc = "VplotR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VplotR_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VplotR/VplotR_1.12.1.tar.gz"]
+	bioc = "VplotR"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.1", sha256="fb40bd7ceedf8e733a3a8105a6d69dff1ed19190c9688d590f49edc7676ccc74")
+	version("1.18.0", commit="2fddd4784c8d56aecd98e47adfe6302b163cf659")
+	version("1.12.1", commit="3f96ff515792657644dce8fe3ea5d42bdfd49da4")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

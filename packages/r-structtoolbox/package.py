@@ -13,11 +13,10 @@ class RStructtoolbox(RPackage):
 	"""
 	
 	homepage = "https://github.com/computational-metabolomics/structToolbox"
-	bioc = "structToolbox" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/structToolbox_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/structToolbox/structToolbox_1.14.0.tar.gz"]
+	bioc = "structToolbox"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="b9e1312788fe9d9043d6e58c2996fd08b6c5a314504f53783d17eafbfdd696df")
+	version("1.20.0", commit="166843836d3ec6af93a2ad473638acb9e221c277")
+	version("1.14.0", commit="f3b802f403417bdd60ab274de12380385c138345")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-struct@1.5.1:", type=("build", "run"))

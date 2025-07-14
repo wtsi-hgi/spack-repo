@@ -12,11 +12,10 @@ class RCrimage(RPackage):
 	CRImage provides functionality to process and analyze images, in particular to classify cells in biological images. Furthermore, in the context of tumor images, it provides functionality to calculate tumour cellularity.
 	"""
 	
-	bioc = "CRImage" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CRImage_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CRImage/CRImage_1.50.0.tar.gz"]
+	bioc = "CRImage"
 
-	version("1.56.0", tag="RELEASE_3_21")
-	version("1.50.0", sha256="2c76f9b6442da822ce054f6fb86f032644974e7d420aa4512c5e1b6a163d747b")
+	version("1.56.0", commit="78b37d2daa1c95ed5c7349391ca8985eb5b0eb7b")
+	version("1.50.0", commit="8d8e44fd93e5199dc1620b15f0b33c50f57913c5")
 
 	depends_on("r-ebimage", type=("build", "run"))
 	depends_on("r-dnacopy", type=("build", "run"))

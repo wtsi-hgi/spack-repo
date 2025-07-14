@@ -13,11 +13,10 @@ class RPaa(RPackage):
 	"""
 	
 	homepage = "http://www.ruhr-uni-bochum.de/mpc/software/PAA/"
-	bioc = "PAA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PAA_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PAA/PAA_1.36.0.tar.gz"]
+	bioc = "PAA"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="a2000b7af80f2550756668074c8ebd503bb423d9f94f5a69b8e802c3ef9bdb49")
+	version("1.42.0", commit="0f1a222db3d4baf8f6752299dd525657b038f1e4")
+	version("1.36.0", commit="a526b6a2be5871d0591e6d15241cebc5890293c1")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

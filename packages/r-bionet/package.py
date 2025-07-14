@@ -13,11 +13,10 @@ class RBionet(RPackage):
 	"""
 	
 	homepage = "http://bionet.bioapps.biozentrum.uni-wuerzburg.de/"
-	bioc = "BioNet" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioNet_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioNet/BioNet_1.62.0.tar.gz"]
+	bioc = "BioNet"
 
-	version("1.68.0", tag="RELEASE_3_21")
-	version("1.62.0", sha256="78012ebdb0dc4acfbb179a1030b76a835617129b2bfb0ef34a3849f2b2915988")
+	version("1.68.0", commit="72d088120c9b76be0b5907b3a1174e7ee71a361b")
+	version("1.62.0", commit="760e83de5d9df18e899f4f2a24f6ded39d63e6ba")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

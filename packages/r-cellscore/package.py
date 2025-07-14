@@ -12,11 +12,10 @@ class RCellscore(RPackage):
 	The CellScore package contains functions to evaluate the cell identity of a test sample, given a cell transition defined with a starting (donor) cell type and a desired target cell type. The evaluation is based upon a scoring system, which uses a set of standard samples of known cell types, as the reference set. The functions have been carried out on a large set of microarray data from one platform (Affymetrix Human Genome U133 Plus 2.0). In principle, the method could be applied to any expression dataset, provided that there are a sufficient number of standard samples and that the data are normalized.
 	"""
 	
-	bioc = "CellScore" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellScore_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellScore/CellScore_1.22.0.tar.gz"]
+	bioc = "CellScore"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="500fca2a0296c684f92bb1f5eededade31bcee140a6e9a28df7687b31f00506a")
+	version("1.28.0", commit="9ca9b34ba16638b20b53f294cece83b92b06353f")
+	version("1.22.0", commit="41884526e0daf8f46aac006de75bde2c86e986ab")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-biobase@2.39.1:", type=("build", "run"))

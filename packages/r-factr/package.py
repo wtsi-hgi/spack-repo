@@ -13,11 +13,10 @@ class RFactr(RPackage):
 	"""
 	
 	homepage = "https://fursham-h.github.io/factR/"
-	bioc = "factR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/factR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/factR/factR_1.4.0.tar.gz"]
+	bioc = "factR"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="bb37f5dfd3ff46d37ff4ae979b5cb6753d953372522fac7e740f3869313e99e4")
+	version("1.10.0", commit="6f144a8ba18dd8fcb52bfce6066fbe58acb65926")
+	version("1.4.0", commit="6338c66debb09c16c7e390b025426a3128ba2041")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.46:", type=("build", "run"))

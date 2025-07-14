@@ -12,10 +12,9 @@ class RSlqpcr(RPackage):
 	Functions for analysis of real-time quantitative PCR data at SIRS-Lab GmbH
 	"""
 	
-	bioc = "SLqPCR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SLqPCR_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SLqPCR/SLqPCR_1.68.0.tar.gz"]
+	bioc = "SLqPCR"
 
-	version("1.74.0", tag="RELEASE_3_21")
-	version("1.68.0", sha256="d7c950fe53bac9aa677475c81ef2a9b854078eb5c9ab14d99aefe01e2289cedc")
+	version("1.74.0", commit="5dc208f3e9056bd18553817934a05e2d577e5df9")
+	version("1.68.0", commit="1007225ca8aaf936f2676401b69da5c29cef0e24")
 
 	depends_on("r@2.4:", type=("build", "run"))

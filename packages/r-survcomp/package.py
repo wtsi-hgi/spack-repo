@@ -13,11 +13,10 @@ class RSurvcomp(RPackage):
 	"""
 	
 	homepage = "http://www.pmgenomics.ca/bhklab/"
-	bioc = "survcomp" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/survcomp_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/survcomp/survcomp_1.52.0.tar.gz"]
+	bioc = "survcomp"
 
-	version("1.58.0", tag="RELEASE_3_21")
-	version("1.52.0", sha256="364e6d7e35b0d2ac2a91e4afb7cd0cf977c29ce08616df6676437684f60e48a1")
+	version("1.58.0", commit="1692ec8bc70e308881acd2b4dd404650b75eadab")
+	version("1.52.0", commit="6e3bbe21cd5a2dff6bc6e5cf6b4a810f7f121ffc")
 
 	depends_on("r-survival", type=("build", "run"))
 	depends_on("r-prodlim", type=("build", "run"))

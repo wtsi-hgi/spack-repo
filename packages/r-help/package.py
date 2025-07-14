@@ -12,11 +12,10 @@ class RHelp(RPackage):
 	The package contains a modular pipeline for analysis of HELP microarray data, and includes graphical and mathematical tools with more general applications.
 	"""
 	
-	bioc = "HELP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HELP_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HELP/HELP_1.60.0.tar.gz"]
+	bioc = "HELP"
 
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="3fb232600983542245885ecc5d3b5623e0ef3d28b314a16ae104e4fc6cbea560")
+	version("1.66.0", commit="5578865648ba093910aa2949a9e1cba78f25d059")
+	version("1.60.0", commit="26db6a6564825650c0461cbb240bbe7da4e5e48b")
 
 	depends_on("r@2.8:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -13,11 +13,10 @@ class RAmpaffyexample(RPackage):
 	"""
 	
 	homepage = "https://bioconductor.org/packages/AmpAffyExample"
-	bioc = "AmpAffyExample" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/AmpAffyExample_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/AmpAffyExample/AmpAffyExample_1.42.0.tar.gz"]
+	bioc = "AmpAffyExample"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="66b12fbb7879999cd961da52c698924c7a0606ae17036851ad3b9959ee380409")
+	version("1.48.0", commit="f8a3c2ddd3831dcf0b8bd2e8e5fcd82d0948d46e")
+	version("1.42.0", commit="62d3a82843d25c52379b81bc92d79a5b7cbaf079")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-affy@1.23.4:", type=("build", "run"))

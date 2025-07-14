@@ -12,11 +12,10 @@ class RDescan2(RPackage):
 	Integrated peak and differential caller, specifically designed for broad epigenomic signals.
 	"""
 	
-	bioc = "DEScan2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEScan2_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEScan2/DEScan2_1.22.0.tar.gz"]
+	bioc = "DEScan2"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="52e518534169cdd8dc0895c50732215c1e4905ef40d72bc76b607fb60779f55b", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEScan2_1.22.0.tar.gz")
+	version("1.28.0", commit="2c7d7199330a64968676bb03be0938693a8e887c")
+	version("1.22.0", commit="9abfdf1769b8d5f0fdfcc23934da8ab85a110344")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

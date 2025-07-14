@@ -12,11 +12,10 @@ class RRegionalst(RPackage):
 	This package analyze spatial transcriptomics data through cross-regional analysis. It selects regions of interest (ROIs) and identifys cross-regional cell type-specific differential signals. The ROIs can be selected using automatic algorithm or through manual selection. It facilitates manual selection of ROIs using a shiny application.
 	"""
 	
-	bioc = "RegionalST" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RegionalST_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RegionalST/RegionalST_1.0.1.tar.gz"]
+	bioc = "RegionalST"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.1", sha256="9b832b2a0632be30a2b81f92ded3305df89abb9f4a2aacecdad8935ddd52a4a1")
+	version("1.6.0", commit="a0c7eb36fbb0c27bba14badf7ccb71801815074f")
+	version("1.0.1", commit="2544b3ccac74777ac02652a17a37014af0a923dc")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

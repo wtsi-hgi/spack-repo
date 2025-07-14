@@ -13,11 +13,10 @@ class RRwikipathways(RPackage):
 	"""
 	
 	homepage = "https://github.com/wikipathways/rwikipathways"
-	bioc = "rWikiPathways" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rWikiPathways_1.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rWikiPathways/rWikiPathways_1.22.1.tar.gz"]
+	bioc = "rWikiPathways"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.1", sha256="97df3b0b2fdcbedf237a4d1f87707694d473055b62f46a784a7e4ea7709393b4")
+	version("1.28.0", commit="c25414cfcd0a00cdb808b253ca411683db7a3c5c")
+	version("1.22.1", commit="f5482646731cb2d97e547d3917253882d1f17bb7")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-xml", type=("build", "run"))

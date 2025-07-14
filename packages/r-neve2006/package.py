@@ -12,11 +12,10 @@ class RNeve2006(RPackage):
 	Experimental organization of combined expression and CGH data
 	"""
 	
-	bioc = "Neve2006" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Neve2006_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Neve2006/Neve2006_0.40.0.tar.gz"]
+	bioc = "Neve2006"
 
-	version("0.46.0", tag="RELEASE_3_21")
-	version("0.40.0", sha256="0585cbf7720327a8e175f66544571ff7a7076324b67cd07e7c195ff14f3cc72a", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Neve2006_0.40.0.tar.gz")
+	version("0.46.0", commit="90d2c68f50cc971d53c38993691aa81633a1bb73")
+	version("0.40.0", commit="3cfc0a9e8b7db4fa889129c19b07fe8286632931")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-biobase@1.14:", type=("build", "run"))

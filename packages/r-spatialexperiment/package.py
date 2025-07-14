@@ -13,11 +13,10 @@ class RSpatialexperiment(RPackage):
 	"""
 	
 	homepage = "https://github.com/drighelli/SpatialExperiment"
-	bioc = "SpatialExperiment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpatialExperiment_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpatialExperiment/SpatialExperiment_1.12.0.tar.gz"]
+	bioc = "SpatialExperiment"
 
-	version("1.18.1", tag="RELEASE_3_21")
-	version("1.12.0", sha256="c49efa705e32d385b9bdcf3f8d205bf4e55cb1016ed59f0614c6b892f09782e8")
+	version("1.18.1", commit="a7ee918d268f620311f4434fc4bb1e73d33dcf37")
+	version("1.12.0", commit="46a1748b1cbe0317202077b018781c0f19355740")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-rjson", type=("build", "run"))

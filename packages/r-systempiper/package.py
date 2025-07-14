@@ -13,11 +13,10 @@ class RSystempiper(RPackage):
 	"""
 	
 	homepage = "https://systempipe.org/"
-	bioc = "systemPipeR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/systemPipeR_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/systemPipeR/systemPipeR_2.8.0.tar.gz"]
+	bioc = "systemPipeR"
 
-	version("2.14.2", tag="RELEASE_3_21")
-	version("2.8.0", sha256="ead9681978cbfd512ecffc2d77f8b8fe0ba4b5a63b127f7b0a2e439556c45505")
+	version("2.14.2", commit="8f2eb62b695f5d35e041410ecfa6c67458f69e9a")
+	version("2.8.0", commit="7cfd2370ff93a6034fa626356df04b8079929671")
 
 	depends_on("r-rsamtools@1.31.2:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

@@ -13,11 +13,10 @@ class RChihaya(RPackage):
 	"""
 	
 	homepage = "https://github.com/ArtifactDB/chihaya-R"
-	bioc = "chihaya" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chihaya_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chihaya/chihaya_1.2.0.tar.gz"]
+	bioc = "chihaya"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="f193f2c53109a931b6a44f8931e6ba6dc463ae180c452d1b6d137d32e13de255")
+	version("1.8.0", commit="f3454e1ab4e0460d316dc64b1269987a232f1615")
+	version("1.2.0", commit="180da647fe1bac5f3a3dfe79d056ebbe526005a5")
 
 	depends_on("r-delayedarray", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

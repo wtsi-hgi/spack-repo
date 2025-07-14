@@ -13,11 +13,10 @@ class RMixomics(RPackage):
 	"""
 	
 	homepage = "http://www.mixOmics.org"
-	bioc = "mixOmics" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mixOmics_6.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mixOmics/mixOmics_6.26.0.tar.gz"]
+	bioc = "mixOmics"
 
-	version("6.32.0", tag="RELEASE_3_21")
-	version("6.26.0", sha256="ec1ad9959f3c290fb3b4c37c1b9719f10bac0d5d59ef6b99a56b86607442d145")
+	version("6.32.0", commit="36d4efc32957353b63502e67e09051b2bed13be9")
+	version("6.26.0", commit="6800c8c59d726593bd6f7966093af8dd6be32dfd")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

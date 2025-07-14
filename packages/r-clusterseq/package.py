@@ -12,11 +12,10 @@ class RClusterseq(RPackage):
 	Identification of clusters of co-expressed genes based on their expression across multiple (replicated) biological samples.
 	"""
 	
-	bioc = "clusterSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clusterSeq_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clusterSeq/clusterSeq_1.26.0.tar.gz"]
+	bioc = "clusterSeq"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="6ed3a2ae16abd36fc8dc17e6877ab39ded1193e7cebe83fb836f65101af3893a")
+	version("1.32.0", commit="d7e95f9a4dce8e3d72ef759cd393869a5144dee7")
+	version("1.26.0", commit="61fea32b5c12b26c29293efbecfa1ca8ead0a8d3")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

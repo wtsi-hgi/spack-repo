@@ -12,11 +12,10 @@ class RSummix(RPackage):
 	This package contains the Summix method for estimating and adjusting for ancestry in genetic summary allele frequency data. The function summix estimates reference ancestry proportions using a mixture model. The adjAF function produces ancestry adjusted allele frequencies for an observed sample with ancestry proportions matching a target person or sample.
 	"""
 	
-	bioc = "Summix" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Summix_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Summix/Summix_2.8.0.tar.gz"]
+	bioc = "Summix"
 
-	version("2.14.0", tag="RELEASE_3_21")
-	version("2.8.0", sha256="776e29e4eaf7fa3d24180bb656f9543a6fabd83095adfa109279425af8827125")
+	version("2.14.0", commit="9a2ca603ee3d62321f157543d8a22d40d26f843f")
+	version("2.8.0", commit="1bae552a19d3a567eb41c02dff1b80be54e7df8c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-nloptr", type=("build", "run"))

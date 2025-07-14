@@ -13,11 +13,10 @@ class RSitadela(RPackage):
 	"""
 	
 	homepage = "https://github.com/pmoulos/sitadela"
-	bioc = "sitadela" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sitadela_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sitadela/sitadela_1.10.0.tar.gz"]
+	bioc = "sitadela"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="4ec4a2554df9ad47efbba6278684e63db4eda244aeff84f0f3b6f0c8f008d765")
+	version("1.16.0", commit="03f26697f519f0b0af2f3293fa6e5abc0782f7e5")
+	version("1.10.0", commit="5322f131e0827e3772f6244918265c17774c133e")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

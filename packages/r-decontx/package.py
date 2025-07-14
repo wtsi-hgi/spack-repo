@@ -12,11 +12,10 @@ class RDecontx(RPackage):
 	This package contains implementation of DecontX (Yang et al. 2020), a decontamination algorithm for single-cell RNA-seq, and DecontPro (Yin et al. 2023), a decontamination algorithm for single cell protein expression data. DecontX is a novel Bayesian method to computationally estimate and remove RNA contamination in individual cells without empty droplet information. DecontPro is a Bayesian method that estimates the level of contamination from ambient and background sources in CITE-seq ADT dataset and decontaminate the dataset.
 	"""
 	
-	bioc = "decontX" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/decontX_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/decontX/decontX_1.0.0.tar.gz"]
+	bioc = "decontX"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="688151c203ef4607d02c2fd27e1dccae5204128cbc98c1ba9ef087082d9fe598")
+	version("1.6.0", commit="7f0b63f36195e59c6af8f323d1000ea04c9e44fa")
+	version("1.0.0", commit="980f09be2ef0a737a09df2ffa4fcb86fd5aecfca")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-celda", type=("build", "run"))

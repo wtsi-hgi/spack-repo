@@ -13,11 +13,10 @@ class RFlowgraph(RPackage):
 	"""
 	
 	homepage = "https://github.com/aya49/flowGraph"
-	bioc = "flowGraph" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowGraph_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowGraph/flowGraph_1.10.0.tar.gz"]
+	bioc = "flowGraph"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="df22e8d5cc64deaad2ad5ce74032ff9b05ecba187ee8570a817efc8d4bc856ea")
+	version("1.16.0", commit="faf553074d6753df9a539f8d47dc0662500d115b")
+	version("1.10.0", commit="9b8a39edb823af3a660478d7d51c081032de4eb0")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-effsize", type=("build", "run"))

@@ -13,10 +13,9 @@ class RHeatplus(RPackage):
 	"""
 	
 	homepage = "https://github.com/alexploner/Heatplus"
-	bioc = "Heatplus" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Heatplus_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Heatplus/Heatplus_3.10.0.tar.gz"]
+	bioc = "Heatplus"
 
-	version("3.16.0", tag="RELEASE_3_21")
-	version("3.10.0", sha256="b89798ba15dd6c6c32f3ffe92336b99c070a45960b8011b9882e6fc11ae947ef")
+	version("3.16.0", commit="2bba861c6e17d8f78b014514df5c33c4281f23c2")
+	version("3.10.0", commit="2b3a0fc54ccecc4b60188df349378bd9e8f83dc8")
 
 	depends_on("r-rcolorbrewer", type=("build", "run"))

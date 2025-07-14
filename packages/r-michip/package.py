@@ -12,11 +12,10 @@ class RMichip(RPackage):
 	This package takes the MiChip miRNA microarray .grp scanner output files and parses these out, providing summary and plotting functions to analyse MiChip hybridizations. A set of hybridizations is packaged into an ExpressionSet allowing it to be used by other BioConductor packages.
 	"""
 	
-	bioc = "MiChip" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MiChip_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MiChip/MiChip_1.56.0.tar.gz"]
+	bioc = "MiChip"
 
-	version("1.62.0", tag="RELEASE_3_21")
-	version("1.56.0", sha256="5697123140850b6fc6f2e5a1e6276c1b3c86409ca6977afa5eeacab7dc61e545")
+	version("1.62.0", commit="f99b7482b5d6ca83f76e969b997389b70c9b120d")
+	version("1.56.0", commit="b3be377398a95dc6e82b5db560a70a1cc206effe")
 
 	depends_on("r@2.3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

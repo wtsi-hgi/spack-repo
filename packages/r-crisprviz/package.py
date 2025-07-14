@@ -13,11 +13,10 @@ class RCrisprviz(RPackage):
 	"""
 	
 	homepage = "https://github.com/crisprVerse/crisprViz"
-	bioc = "crisprViz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crisprViz_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crisprViz/crisprViz_1.4.0.tar.gz"]
+	bioc = "crisprViz"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="c78fc7039ff22dc3dfcb5be63f27e4ba79a289a45e161f90531cc9b24455939e")
+	version("1.10.0", commit="66db0277734265516846663cbe63a012d0b72968")
+	version("1.4.0", commit="1275317fad8d09a9b75d73cf0e1b5d61f4eee75d")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-crisprbase@0.99.15:", type=("build", "run"))

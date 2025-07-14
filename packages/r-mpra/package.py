@@ -13,11 +13,10 @@ class RMpra(RPackage):
 	"""
 	
 	homepage = "https://github.com/hansenlab/mpra"
-	bioc = "mpra" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mpra_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mpra/mpra_1.24.0.tar.gz"]
+	bioc = "mpra"
 
-	version("1.30.1", tag="RELEASE_3_21")
-	version("1.24.0", sha256="78cdb3a36b182af6ac187fb65e88b0d0321b3b33da19b3463a40723da9a24d7d")
+	version("1.30.1", commit="3ee57c997a2b0c4ce7f048bf4bd7480891dfae30")
+	version("1.24.0", commit="3d39300ca09f693580f4ed60064cecc42ab927cf")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

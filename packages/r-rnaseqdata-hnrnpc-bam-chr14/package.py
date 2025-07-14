@@ -13,10 +13,9 @@ class RRnaseqdataHnrnpcBamChr14(RPackage):
 	"""
 	
 	homepage = "http://www.ebi.ac.uk/arrayexpress/experiments/E-MTAB-1147/"
-	bioc = "RNAseqData.HNRNPC.bam.chr14" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RNAseqData.HNRNPC.bam.chr14_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RNAseqData.HNRNPC.bam.chr14/RNAseqData.HNRNPC.bam.chr14_0.40.0.tar.gz"]
+	bioc = "RNAseqData.HNRNPC.bam.chr14"
 
-	version("0.46.0", tag="RELEASE_3_21")
-	version("0.40.0", sha256="ee88ed18b7f6d6ebbf827c91102a0fa6c2ad67e6eb090ce311692c2be7d2bcbd", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RNAseqData.HNRNPC.bam.chr14_0.40.0.tar.gz")
+	version("0.46.0", commit="0282a216072ee0e8f0f7fe627f01ca4d1ec53d50")
+	version("0.40.0", commit="5e39e1e7b19d3f4b1beeaf44a9fa9af832ed85b6")
 
 

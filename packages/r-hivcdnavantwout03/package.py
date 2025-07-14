@@ -13,10 +13,9 @@ class RHivcdnavantwout03(RPackage):
 	"""
 	
 	homepage = "http://expression.microslu.washington.edu/expression/vantwoutjvi2002.html"
-	bioc = "HIVcDNAvantWout03" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HIVcDNAvantWout03_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HIVcDNAvantWout03/HIVcDNAvantWout03_1.42.0.tar.gz"]
+	bioc = "HIVcDNAvantWout03"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="8037e372f7855f0268752149c072e3f9875b2d1699618f0b6185356718a4cb4f", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HIVcDNAvantWout03_1.42.0.tar.gz")
+	version("1.48.0", commit="d317f0a7a4d93ccc2c04802800d80e018eadf862")
+	version("1.42.0", commit="f5b3146d82fba742a8d9bc2f27c7ee0625b5a70f")
 
 

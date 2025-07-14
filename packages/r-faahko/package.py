@@ -13,11 +13,10 @@ class RFaahko(RPackage):
 	"""
 	
 	homepage = "http://dx.doi.org/10.1021/bi0480335"
-	bioc = "faahKO" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/faahKO_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/faahKO/faahKO_1.42.0.tar.gz"]
+	bioc = "faahKO"
 
-	version("1.48.1", tag="RELEASE_3_21")
-	version("1.42.0", sha256="a7cb6b435a1402727432f82ca4e6130540742901f06758e8e2c39025d0487554")
+	version("1.48.1", commit="15e744f7078123765cc577317e027c46fb0dc6bc")
+	version("1.42.0", commit="8b35271dab083b47415df0c874eec3bcc610fc8b")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-xcms@3.4:", type=("build", "run"))

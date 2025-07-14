@@ -13,11 +13,10 @@ class RAtsnp(RPackage):
 	"""
 	
 	homepage = "https://github.com/sunyoungshin/atSNP"
-	bioc = "atSNP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/atSNP_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/atSNP/atSNP_1.18.0.tar.gz"]
+	bioc = "atSNP"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="bba25bb557a54f8f099ed506a46b30f5e4d5de884be56de75526b34095e97ada")
+	version("1.24.0", commit="d0675231a443b7fa51a10ecf932fa57e0ae92ce0")
+	version("1.18.0", commit="a1ce82dcbe30d07ba7afe17531e34ca7057c6ae7")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))

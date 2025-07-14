@@ -13,11 +13,10 @@ class RNetsmooth(RPackage):
 	"""
 	
 	homepage = "https://github.com/BIMSBbioinfo/netSmooth"
-	bioc = "netSmooth" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/netSmooth_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/netSmooth/netSmooth_1.22.0.tar.gz"]
+	bioc = "netSmooth"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="945bef784c08479b7bdf08f55c0e4b6f112355e0f900d767313c709566bf72f2")
+	version("1.28.0", commit="2f84662df9cfa5dbcadfabcdf99c5ce1924aaa60")
+	version("1.22.0", commit="d9163f41536535addacdf4b7df80f10386c457f4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-scater@1.15.11:", type=("build", "run"))

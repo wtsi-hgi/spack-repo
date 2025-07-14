@@ -12,10 +12,9 @@ class RMonocle(RPackage):
 	Monocle performs differential expression and time-series analysis for single-cell expression experiments. It orders individual cells according to progress through a biological process, without knowing ahead of time which genes define progress through that process. Monocle also performs differential expression analysis, clustering, visualization, and other useful tasks on single cell expression data.  It is designed to work with RNA-Seq and qPCR data, but could be used with other types as well.
 	"""
 	
-	bioc = "monocle" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/monocle_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/monocle/monocle_2.30.0.tar.gz"]
+	bioc = "monocle"
 
-	version("2.36.0", tag="RELEASE_3_21")
+	version("2.36.0", commit="c159ad6f979a18b99a09930b71c2795bfb53ee39")
 	version("2.30.0", md5="8b3a3d5cd2698b4cef4396c388250658")
 
 	depends_on("r@2.10:", type=("build", "run"))

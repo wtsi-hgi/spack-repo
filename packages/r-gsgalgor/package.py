@@ -13,11 +13,10 @@ class RGsgalgor(RPackage):
 	"""
 	
 	homepage = "https://github.com/harpomaxx/GSgalgoR"
-	bioc = "GSgalgoR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSgalgoR_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSgalgoR/GSgalgoR_1.12.0.tar.gz"]
+	bioc = "GSgalgoR"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="11d00c41b31dedec0e9a99b1d0bcc880adad46d0a06ecbfac8be32236643fdfb")
+	version("1.18.0", commit="326c6fcf22931232ff0a6d3e61a736d913cf9de0")
+	version("1.12.0", commit="b3a122751610f1b7dbce5476845b7ecaf676e27a")
 
 	depends_on("r-cluster", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

@@ -13,11 +13,10 @@ class ROpweight(RPackage):
 	"""
 	
 	homepage = "https://github.com/mshasan/OPWeight"
-	bioc = "OPWeight" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OPWeight_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OPWeight/OPWeight_1.24.0.tar.gz"]
+	bioc = "OPWeight"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="9aad60d90c305d7458575420478f55ee08564df2398e3d02ec200538348f90bd")
+	version("1.30.0", commit="635986d42da38f5781687ea28c4b18f7c9d145b7")
+	version("1.24.0", commit="d777e9dc96a0a49a573c4562a49768e32bc6a876")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-qvalue", type=("build", "run"))

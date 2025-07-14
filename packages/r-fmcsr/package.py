@@ -13,11 +13,10 @@ class RFmcsr(RPackage):
 	"""
 	
 	homepage = "https://github.com/girke-lab/fmcsR"
-	bioc = "fmcsR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fmcsR_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fmcsR/fmcsR_1.44.0.tar.gz"]
+	bioc = "fmcsR"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="cd42c4ab473a52595dc8b32a57b83c06f3d0a5029f0615c921f4a918624d349e")
+	version("1.50.0", commit="ee2ed1cb0a1f4640ed4b667b5ae448eee7002e5f")
+	version("1.44.0", commit="08956ef324ebb1e5054f391521600938d8ead0e9")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-chemminer", type=("build", "run"))

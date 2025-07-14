@@ -13,11 +13,10 @@ class RMicrobiomeprofiler(RPackage):
 	"""
 	
 	homepage = "https://github.com/YuLab-SMU/MicrobiomeProfiler/"
-	bioc = "MicrobiomeProfiler" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MicrobiomeProfiler_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MicrobiomeProfiler/MicrobiomeProfiler_1.8.0.tar.gz"]
+	bioc = "MicrobiomeProfiler"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="4dd11f1551f9e1b5db19a28cda1e41c563efd8a34e0d81db43c63d99509f81f6")
+	version("1.14.0", commit="e2042a0d7410dbbf9adc0a8b36c9ba770504ca50")
+	version("1.8.0", commit="4aff8e768d990b8b2784b112de8fc0060775b607")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-clusterprofiler@4.5.2:", type=("build", "run"))

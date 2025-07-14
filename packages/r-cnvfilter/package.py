@@ -13,11 +13,10 @@ class RCnvfilter(RPackage):
 	"""
 	
 	homepage = "https://github.com/jpuntomarcos/CNVfilteR"
-	bioc = "CNVfilteR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNVfilteR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNVfilteR/CNVfilteR_1.16.0.tar.gz"]
+	bioc = "CNVfilteR"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="6aa5f05b81106265824094f7446baddd4365268a818b870929c7f08068f1fabd")
+	version("1.22.0", commit="efef6b477c4fdd965b123f0329d7ab91e2850378")
+	version("1.16.0", commit="b3a6913f647b6b64adfa9a148cb915c87ddd1e4c")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

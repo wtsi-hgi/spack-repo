@@ -13,11 +13,10 @@ class ROnlinefdr(RPackage):
 	"""
 	
 	homepage = "https://dsrobertson.github.io/onlineFDR/index.html"
-	bioc = "onlineFDR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/onlineFDR_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/onlineFDR/onlineFDR_2.10.0.tar.gz"]
+	bioc = "onlineFDR"
 
-	version("2.16.0", tag="RELEASE_3_21")
-	version("2.10.0", sha256="f5f14f3b7ec8b936778cdbfd505b01248be0b786d9ff8c3afd1c5605f93db80d")
+	version("2.16.0", commit="62cfe20b535b068801ec4fc7e856400ce3acbeb5")
+	version("2.10.0", commit="c52a623040d5bf2492a2c24af794388492510302")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-progress", type=("build", "run"))

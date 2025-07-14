@@ -12,11 +12,10 @@ class RHsmmsinglecell(RPackage):
 	Skeletal myoblasts undergo a well-characterized sequence of morphological and transcriptional changes during differentiation. In this experiment, primary human skeletal muscle myoblasts (HSMM) were expanded under high mitogen conditions (GM) and then differentiated by switching to low-mitogen media (DM).  RNA-Seq libraries were sequenced from each of several hundred cells taken over a time-course of serum-induced differentiation. Between 49 and 77 cells were captured at each of four time points (0, 24, 48, 72 hours) following serum switch using the Fluidigm C1 microfluidic system. RNA from each cell was isolated and used to construct mRNA-Seq libraries, which were then sequenced to a depth of ~4 million reads per library, resulting in a complete gene expression profile for each cell.
 	"""
 	
-	bioc = "HSMMSingleCell" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HSMMSingleCell_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HSMMSingleCell/HSMMSingleCell_1.22.0.tar.gz"]
+	bioc = "HSMMSingleCell"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="1160af600b7bf7ec054be481350e4e12f6836062b2d0063e670a0fbfa596c6d9")
+	version("1.28.0", commit="cdf07e9b9f572ee781186bcac377c71682f4f74a")
+	version("1.22.0", commit="2e54e3df8c6761fb53896b46c1f6dd3f42abb990")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

@@ -12,11 +12,10 @@ class RFlagme(RPackage):
 	Fragment-level analysis of gas chromatography-massspectrometry metabolomics data.
 	"""
 	
-	bioc = "flagme" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flagme_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flagme/flagme_1.58.0.tar.gz"]
+	bioc = "flagme"
 
-	version("1.64.0", tag="RELEASE_3_21")
-	version("1.58.0", sha256="4818fe34e1b9edc1cacffbccb34ba3cff7c3f633e3a852cc9504ec7c136d38be")
+	version("1.64.0", commit="a8ea6b3f27e4e5bc56ff614e4549802e912db127")
+	version("1.58.0", commit="257f890b64b34e6497cfde3ba694d6133805810c")
 
 	depends_on("r-gcspikelite", type=("build", "run"))
 	depends_on("r-xcms", type=("build", "run"))

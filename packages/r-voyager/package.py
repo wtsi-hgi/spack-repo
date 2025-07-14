@@ -13,11 +13,10 @@ class RVoyager(RPackage):
 	"""
 	
 	homepage = "https://github.com/pachterlab/voyager"
-	bioc = "Voyager" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Voyager_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Voyager/Voyager_1.4.0.tar.gz"]
+	bioc = "Voyager"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="e04a6570a1b15319841d68946f59a9f9296b52c0776200a68663313ff447f538")
+	version("1.10.0", commit="27b5859dce642086b45936f5e30b5fd4ae250837")
+	version("1.4.0", commit="27aa232ee0b5cabd89ba1c253e34fc49fecdf607")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

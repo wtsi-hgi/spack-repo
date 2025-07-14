@@ -12,11 +12,10 @@ class RKodata(RPackage):
 	Contains consensus genomic signatures (CGS) for experimental cell-line specific gene knock-outs as well as baseline gene expression data for a subset of experimental cell-lines. Intended for use with package KEGGlincs.
 	"""
 	
-	bioc = "KOdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/KOdata_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/KOdata/KOdata_1.28.0.tar.gz"]
+	bioc = "KOdata"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="8a4aa27165cf43268fa9e9a1aed2cf18659558459d130d8c864ab0f3ddd6d4b5")
+	version("1.34.0", commit="3119d163ef78f3b8704841017e18063705978f4e")
+	version("1.28.0", commit="414127279bfdd53838dd0a8eb22840ef94f095b1")
 
 	depends_on("r@3.3:", type=("build", "run"))
 

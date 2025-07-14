@@ -12,11 +12,10 @@ class RMait(RPackage):
 	The MAIT package contains functions to perform end-to-end statistical analysis of LC/MS Metabolomic Data. Special emphasis is put on peak annotation and in modular function design of the functions.
 	"""
 	
-	bioc = "MAIT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MAIT_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MAIT/MAIT_1.36.0.tar.gz"]
+	bioc = "MAIT"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="cfc0d04449641e29cd782659b47f23ae4148e37f6a4a5cc64aadb65f41e192ce")
+	version("1.42.0", commit="5dc55b0cc753263d24dbb662c951917cb6951dba")
+	version("1.36.0", commit="6387895ce872c818d37bab9ac3b6b5d05f282b58")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-camera", type=("build", "run"))

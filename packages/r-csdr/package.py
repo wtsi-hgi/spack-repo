@@ -13,11 +13,10 @@ class RCsdr(RPackage):
 	"""
 	
 	homepage = "https://almaaslab.github.io/csdR"
-	bioc = "csdR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/csdR_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/csdR/csdR_1.8.0.tar.gz"]
+	bioc = "csdR"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="704fc3b7d90557f3dd5c13c72d20f99956a6e4757a9b53a9f0bbdf7aa403e4e6")
+	version("1.14.0", commit="d0d0179964504405199f89797bab40015547a2f6")
+	version("1.8.0", commit="799118b3309e35a2eefb9e60565a05b1c89570a4")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-wgcna", type=("build", "run"))

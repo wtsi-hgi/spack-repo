@@ -13,11 +13,10 @@ class RDino(RPackage):
 	"""
 	
 	homepage = "https://github.com/JBrownBiostat/Dino"
-	bioc = "Dino" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Dino_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Dino/Dino_1.8.0.tar.gz"]
+	bioc = "Dino"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="ce278f24eade2de93026f784dfabb62eea0adaa860ca596d10f7dcc13354a8df")
+	version("1.14.0", commit="aa7993ca237fbcc0218e076d64f51394047685b9")
+	version("1.8.0", commit="6057572fd06608a3f54cf68a04629e6704110483")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

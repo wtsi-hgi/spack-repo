@@ -13,11 +13,10 @@ class RGetdee2(RPackage):
 	"""
 	
 	homepage = "https://github.com/markziemann/getDEE2"
-	bioc = "getDEE2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/getDEE2_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/getDEE2/getDEE2_1.12.0.tar.gz"]
+	bioc = "getDEE2"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="68ce963e1902e5e73c4108c58e27c3e99b8f2b476eab66c43e59679bfe1e83c0", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/getDEE2_1.12.0.tar.gz")
+	version("1.18.0", commit="6c16afc1a841a3b81dbcca9c046d605f1740d0dd")
+	version("1.12.0", commit="6f1e88cc08b8869b64e2185e03cf4567e7a47258")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -13,11 +13,10 @@ class ROmicsviewer(RPackage):
 	"""
 	
 	homepage = "https://github.com/mengchen18/omicsViewer"
-	bioc = "omicsViewer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/omicsViewer_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/omicsViewer/omicsViewer_1.6.0.tar.gz"]
+	bioc = "omicsViewer"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="e5a3f73a0ab5cac65eb8b341aae0ba77910aefd9c7e64042634e9b37748a4dd5")
+	version("1.12.0", commit="14dd3bd12818893e833647fa4ee767ccc8e8615b")
+	version("1.6.0", commit="7940f98529f1429aefe4dd0cac97a3de16fa5df8")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-survminer", type=("build", "run"))

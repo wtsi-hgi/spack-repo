@@ -13,11 +13,10 @@ class RIntramirexplorer(RPackage):
 	"""
 	
 	homepage = "https://github.com/VilainLab/IntramiRExploreR"
-	bioc = "IntramiRExploreR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IntramiRExploreR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IntramiRExploreR/IntramiRExploreR_1.24.0.tar.gz"]
+	bioc = "IntramiRExploreR"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="47def66d0b9d7fcc6ca4545503ee3873e5877d3c75e16d3e3eff77cd86fa66c2")
+	version("1.30.0", commit="ea62cbd36d703936cd9c9b133d57facd1ebba4a0")
+	version("1.24.0", commit="72598bd0cbc119da9f47d2ad4b5a40ffbec5ba1c")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-igraph@1.0.1:", type=("build", "run"))

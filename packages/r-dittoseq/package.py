@@ -12,11 +12,10 @@ class RDittoseq(RPackage):
 	A universal, user friendly, single-cell and bulk RNA sequencing visualization toolkit that allows highly customizable creation of color blindness friendly, publication-quality figures. dittoSeq accepts both SingleCellExperiment (SCE) and Seurat objects, as well as the import and usage, via conversion to an SCE, of SummarizedExperiment or DGEList bulk data. Visualizations include dimensionality reduction plots, heatmaps, scatterplots, percent composition or expression across groups, and more. Customizations range from size and title adjustments to automatic generation of annotations for heatmaps, overlay of trajectory analysis onto any dimensionality reduciton plot, hidden data overlay upon cursor hovering via ggplotly conversion, and many more. All with simple, discrete inputs. Color blindness friendliness is powered by legend adjustments (enlarged keys), and by allowing the use of shapes or letter-overlay in addition to the carefully selected dittoColors().
 	"""
 	
-	bioc = "dittoSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dittoSeq_1.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dittoSeq/dittoSeq_1.14.3.tar.gz"]
+	bioc = "dittoSeq"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.3", sha256="f1073442f682f982be0d93c37349bdcec905f938cf848aeeba25c0ffa46c2e05")
+	version("1.20.0", commit="6baca1cb7484351efb7930ea15bdc416a85a6873")
+	version("1.14.3", commit="34da86479c9f5d8c60f193f088bc12bd0de2b7ff")
 	version("1.14.2", md5="8cd8305d970fdd3e20c3db17aeb62502")
 
 	depends_on("r-ggplot2", type=("build", "run"))

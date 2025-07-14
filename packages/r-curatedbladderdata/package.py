@@ -13,11 +13,10 @@ class RCuratedbladderdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/lima1/curatedBladderData"
-	bioc = "curatedBladderData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedBladderData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedBladderData/curatedBladderData_1.38.0.tar.gz"]
+	bioc = "curatedBladderData"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="82ae82a5ae6820b09e43f32e6b77d48bc2a3afcc473de9bf4bc025f8505d30c5")
+	version("1.44.0", commit="1a9065cbede6713565257eb6eb5c64163d6bacb6")
+	version("1.38.0", commit="4d4c2f7f568a524b649c5e81e4c8458d7cb4434c")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

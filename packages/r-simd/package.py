@@ -12,11 +12,10 @@ class RSimd(RPackage):
 	This package provides a inferential analysis method for detecting differentially expressed CpG sites in MeDIP-seq data. It uses statistical framework and EM algorithm, to identify differentially expressed CpG sites. The methods on this package are described in the article 'Methylation-level Inferences and Detection of Differential Methylation with Medip-seq Data' by Yan Zhou, Jiadi Zhu, Mingtao Zhao, Baoxue Zhang, Chunfu Jiang and Xiyan Yang (2018, pending publication).
 	"""
 	
-	bioc = "SIMD" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SIMD_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SIMD/SIMD_1.20.0.tar.gz"]
+	bioc = "SIMD"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="924fbe6d2bb750f10bf5c75a9227866c215cb70b80469f0be3d6a82a6699a12a")
+	version("1.26.0", commit="81299e397404f00ab574c60227c2db4a4d71e28f")
+	version("1.20.0", commit="997f3aa84790fa1508c91674da71df24c03a4afa")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-edger", type=("build", "run"))

@@ -12,11 +12,10 @@ class RSgseq(RPackage):
 	SGSeq is a software package for analyzing splice events from RNA-seq data. Input data are RNA-seq reads mapped to a reference genome in BAM format. Genes are represented as a splice graph, which can be obtained from existing annotation or predicted from the mapped sequence reads. Splice events are identified from the graph and are quantified locally using structurally compatible reads at the start or end of each splice variant. The software includes functions for splice event prediction, quantification, visualization and interpretation.
 	"""
 	
-	bioc = "SGSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SGSeq_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SGSeq/SGSeq_1.36.0.tar.gz"]
+	bioc = "SGSeq"
 
-	version("1.42.1", tag="RELEASE_3_21")
-	version("1.36.0", sha256="8c8c007b87f67c62a167493e324cadef81239e8b6914856dd2a4f09c1dc884c0")
+	version("1.42.1", commit="76f26cb2c511208a372352dc9d98ed38588b14c3")
+	version("1.36.0", commit="be443cf22401c4197f086ed993269e0fe82ac577")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-iranges@2.13.15:", type=("build", "run"))

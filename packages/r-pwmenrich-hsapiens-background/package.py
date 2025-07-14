@@ -12,11 +12,10 @@ class RPwmenrichHsapiensBackground(RPackage):
 	PWMEnrich pre-compiled background objects for H. sapiens (human) and MotifDb H. sapiens motifs.
 	"""
 	
-	bioc = "PWMEnrich.Hsapiens.background" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PWMEnrich.Hsapiens.background_4.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PWMEnrich.Hsapiens.background/PWMEnrich.Hsapiens.background_4.36.0.tar.gz"]
+	bioc = "PWMEnrich.Hsapiens.background"
 
-	version("4.42.0", tag="RELEASE_3_21")
-	version("4.36.0", sha256="5ca247a8975146e4b5bb0a56db233b128dadda30c3f92bebd51da5596039273b")
+	version("4.42.0", commit="b8d9eb1b947d68f904d79c0feb1c39172852dfaa")
+	version("4.36.0", commit="6cee4b80de345f36b384de47983dd6d0971a29c0")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-pwmenrich", type=("build", "run"))

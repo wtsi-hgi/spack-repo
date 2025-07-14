@@ -12,11 +12,10 @@ class RPvac(RPackage):
 	The package contains the function for filtering genes by the proportion of variation accounted for by the first principal component (PVAC).
 	"""
 	
-	bioc = "pvac" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pvac_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pvac/pvac_1.50.0.tar.gz"]
+	bioc = "pvac"
 
-	version("1.56.0", tag="RELEASE_3_21")
-	version("1.50.0", sha256="ad45217fa2fde5716abdbcd55fde000348b74ed8c76ebf58570f4f911a816a1c")
+	version("1.56.0", commit="c1db05d1306dfed3a4ae3140e1c38de5744e8a4e")
+	version("1.50.0", commit="66f569fd60dde19666a27a23a20d61f3300986b5")
 
 	depends_on("r@2.8:", type=("build", "run"))
 	depends_on("r-affy@1.20:", type=("build", "run"))

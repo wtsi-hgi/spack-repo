@@ -12,11 +12,10 @@ class RLeukemiaseset(RPackage):
 	Expressionset containing gene expresion data from 60 bone marrow samples of patients with one of the four main types of leukemia (ALL, AML, CLL, CML) or non-leukemia.
 	"""
 	
-	bioc = "leukemiasEset" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/leukemiasEset_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/leukemiasEset/leukemiasEset_1.38.0.tar.gz"]
+	bioc = "leukemiasEset"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="0bed1f20576d7184ab22184673fe05be2398e5c5d6bda4e6d43089e4f5b03ceb")
+	version("1.44.0", commit="15ff27bc27278e2861503c74e4343ce9a2f48c92")
+	version("1.38.0", commit="a520d9fe24845854d74ecc4c2114bf5be263e394")
 
 	depends_on("r@2.10.1:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RMethylaiddata(RPackage):
 	A data package containing summarized Illumina 450k array data on 2800 samples and summarized EPIC data for 2620 samples. The data can be use as a background data set in the interactive application.
 	"""
 	
-	bioc = "MethylAidData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MethylAidData_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MethylAidData/MethylAidData_1.34.0.tar.gz"]
+	bioc = "MethylAidData"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="29074e549e544d9a7f89ca8801bee66ad98af14951f9c1451c8c14193507c24e")
+	version("1.40.0", commit="dfcde38a787426b6ef2daa41efcef6780e3f2647")
+	version("1.34.0", commit="e56febae0340bba37d870704c27052aacb0cf18e")
 
 	depends_on("r-methylaid", type=("build", "run"))
 	depends_on("r@3.2:", type=("build", "run"))

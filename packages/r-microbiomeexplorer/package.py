@@ -12,11 +12,10 @@ class RMicrobiomeexplorer(RPackage):
 	The MicrobiomeExplorer R package is designed to facilitate the analysis and visualization of marker-gene survey feature data. It allows a user to perform and visualize typical microbiome analytical workflows either through the command line or an interactive Shiny application included with the package. In addition to applying common analytical workflows the application enables automated analysis report generation.
 	"""
 	
-	bioc = "microbiomeExplorer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/microbiomeExplorer_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/microbiomeExplorer/microbiomeExplorer_1.12.0.tar.gz"]
+	bioc = "microbiomeExplorer"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="4d67a8092e65ffdba95504ae38e41b586039755c0f2c683bb51c6ee84a26de2f")
+	version("1.18.0", commit="d14da9619fd44e7e0f794f6af422254895535a9e")
+	version("1.12.0", commit="83cb13161b057827c8f44cdb999c0aede136d9a6")
 
 	depends_on("r-shiny", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

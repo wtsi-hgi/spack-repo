@@ -13,11 +13,10 @@ class RRgmql(RPackage):
 	"""
 	
 	homepage = "http://www.bioinformatics.deib.polimi.it/genomic_computing/GMQL/"
-	bioc = "RGMQL" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RGMQL_1.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RGMQL/RGMQL_1.22.1.tar.gz"]
+	bioc = "RGMQL"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.1", sha256="4704a42a4f68b8e2d54433c7f739b0be0637362ee62afe173a02f1901e27d3fa")
+	version("1.28.0", commit="f04e6759baf49e751acf867bda2f3d0ca3c9b5af")
+	version("1.22.1", commit="5419d1f57dd740abee96dc3020eb70467fc679f3")
 	version("1.22.0", md5="78de1ecefadf0a7729bf7b62b50a2c1b")
 
 	depends_on("r@3.4.2:", type=("build", "run"))

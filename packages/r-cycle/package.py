@@ -13,11 +13,10 @@ class RCycle(RPackage):
 	"""
 	
 	homepage = "http://cycle.sysbiolab.eu"
-	bioc = "cycle" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cycle_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cycle/cycle_1.56.0.tar.gz"]
+	bioc = "cycle"
 
-	version("1.62.0", tag="RELEASE_3_21")
-	version("1.56.0", sha256="d68f89b313184c357646456748c7643868e31a5e2e7e2eee23a05ffec45e6040")
+	version("1.62.0", commit="06788b1c201f151e73e6181503cd0244288ef304")
+	version("1.56.0", commit="366b8d57ce089ba85457dd825583fd9dd720812c")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-mfuzz", type=("build", "run"))

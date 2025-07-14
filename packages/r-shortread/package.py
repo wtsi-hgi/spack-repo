@@ -17,9 +17,8 @@ class RShortread(RPackage):
 	ungapped alignment formats."""
 
 	bioc = "ShortRead"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ShortRead_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ShortRead/ShortRead_1.60.0.tar.gz"]
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="3594b9a975879a355418d634d874714e98aec7d024de67ddbdf4425cd6d7f139")
+	version("1.66.0", commit="2363c083d3435760f7228bc49c931bc801675480")
+	version("1.60.0", commit="4304db40717b0b7c46f7f7a4b78796ae916c1485")
 	version("1.58.0", commit="433d18266b141ddcc9dc590f5244163a04efebe3")
 	version("1.56.0", commit="df25d0872d52aac3610998abda0d7bfd37298726")
 	version("1.54.0", commit="a1082a335120860d019aa0065a975d41890351f7")

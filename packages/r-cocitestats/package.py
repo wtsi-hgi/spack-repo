@@ -12,11 +12,10 @@ class RCocitestats(RPackage):
 	A collection of software tools for dealing with co-citation data.
 	"""
 	
-	bioc = "CoCiteStats" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CoCiteStats_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CoCiteStats/CoCiteStats_1.74.0.tar.gz"]
+	bioc = "CoCiteStats"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="74a07a73abfc430e7a03986651e130afc32d5440e2a0c0b6e5969b203bc7ada1")
+	version("1.80.0", commit="7dbecb041af8e6f528320dab4824590b5d301c42")
+	version("1.74.0", commit="5b7366fbfee85d04c6bbc0ea1f0076ac00ec0d5a")
 
 	depends_on("r@2:", type=("build", "run"))
 	depends_on("r-org-hs-eg-db", type=("build", "run"))

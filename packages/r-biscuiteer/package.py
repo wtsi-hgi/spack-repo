@@ -13,11 +13,10 @@ class RBiscuiteer(RPackage):
 	"""
 	
 	homepage = "https://github.com/trichelab/biscuiteer"
-	bioc = "biscuiteer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biscuiteer_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biscuiteer/biscuiteer_1.16.0.tar.gz"]
+	bioc = "biscuiteer"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="f177fd484cee8ed17889d637759e343626e1cb41b8f3bd98f9f4168949b820e1")
+	version("1.22.0", commit="44c7542f20e2f94986c5692d0e04a69eea578d1c")
+	version("1.16.0", commit="ebfa0bfe511eb9c176c1c99d8c515228ec9da8e4")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biscuiteerdata", type=("build", "run"))

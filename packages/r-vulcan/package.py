@@ -12,11 +12,10 @@ class RVulcan(RPackage):
 	Vulcan (VirtUaL ChIP-Seq Analysis through Networks) is a package that interrogates gene regulatory networks to infer cofactors significantly enriched in a differential binding signature coming from ChIP-Seq data. In order to do so, our package combines strategies from different BioConductor packages: DESeq for data normalization, ChIPpeakAnno and DiffBind for annotation and definition of ChIP-Seq genomic peaks, csaw to define optimal peak width and viper for applying a regulatory network over a differential binding signature.
 	"""
 	
-	bioc = "vulcan" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vulcan_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vulcan/vulcan_1.24.0.tar.gz"]
+	bioc = "vulcan"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="bfd2125e94f0e99590c572ab503d409c536180fd1ffc662bb1f9f66e2a4b4c7f")
+	version("1.30.0", commit="e42168d0de43dc8260db64c58596c59cf5f390b9")
+	version("1.24.0", commit="d5a737d68c934baecb9919d5469c5dd06a899c02")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-chippeakanno", type=("build", "run"))

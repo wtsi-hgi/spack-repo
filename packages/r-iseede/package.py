@@ -13,11 +13,10 @@ class RIseede(RPackage):
 	"""
 	
 	homepage = "https://github.com/iSEE/iSEEde"
-	bioc = "iSEEde" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEEde_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEEde/iSEEde_1.0.0.tar.gz"]
+	bioc = "iSEEde"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="9cc20577ff9d5a98e2116dc0981f02885c0a620fd5ce3b887299c52c68332295")
+	version("1.6.0", commit="da8514d103d95f0afa4a0ca705a3a10848eee3e9")
+	version("1.0.0", commit="bfb3b22aa6dd57a4c2830ba1b5eef1f3dcdee188")
 
 	depends_on("r-isee", type=("build", "run"))
 	depends_on("r-deseq2", type=("build", "run"))

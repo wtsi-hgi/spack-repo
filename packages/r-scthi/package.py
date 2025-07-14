@@ -12,11 +12,10 @@ class RScthi(RPackage):
 	scTHI is an R package to identify active pairs of ligand-receptors from single cells in order to study,among others, tumor-host interactions. scTHI contains a set of signatures to classify cells from the tumor microenvironment.
 	"""
 	
-	bioc = "scTHI" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scTHI_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scTHI/scTHI_1.14.0.tar.gz"]
+	bioc = "scTHI"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="1db7bf0ba9fc9a32bce57156aa0ce44500d3b8ed1ec133c0a06099aecd3a7ac6")
+	version("1.20.0", commit="3a40e88ce4bf2cacd7e58068dc8ab4595ad4814a")
+	version("1.14.0", commit="3402b2b4c905d74ec9b1f002a47d946df01648f2")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

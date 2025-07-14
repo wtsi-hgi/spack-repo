@@ -12,11 +12,10 @@ class RHtsfilter(RPackage):
 	This package implements a filtering procedure for replicated transcriptome sequencing data based on a global Jaccard similarity index in order to identify genes with low, constant levels of expression across one or more experimental conditions.
 	"""
 	
-	bioc = "HTSFilter" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HTSFilter_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HTSFilter/HTSFilter_1.42.0.tar.gz"]
+	bioc = "HTSFilter"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="d4d019e3cc6a4b55d6b71c374869daa776216f7f791410f3b08726663e117ad8")
+	version("1.48.0", commit="9bcd7006d6b269a158510ac613c3da8a2c7a954b")
+	version("1.42.0", commit="ca57c533f877adcf4e3fb94341cdb1dc28ff6c14")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-edger", type=("build", "run"))

@@ -13,11 +13,10 @@ class RMetaseqr2(RPackage):
 	"""
 	
 	homepage = "http://www.fleming.gr"
-	bioc = "metaseqR2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metaseqR2_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metaseqR2/metaseqR2_1.14.0.tar.gz"]
+	bioc = "metaseqR2"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="c590809d04fdcd8b7f3de13f531cfbc60b2aa47ab697926b1fcfc8683652e9e9", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metaseqR2_1.14.0.tar.gz")
+	version("1.20.0", commit="8b21f7669e78a058c80a0b8f8260ba82b2c698f3")
+	version("1.14.0", commit="c5496b0ecc8cbc651c783bf2c15008f0e82533b4")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-deseq2", type=("build", "run"))

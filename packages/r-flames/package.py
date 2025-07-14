@@ -13,11 +13,10 @@ class RFlames(RPackage):
 	"""
 	
 	homepage = "https://github.com/OliverVoogd/FLAMES"
-	bioc = "FLAMES" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FLAMES_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FLAMES/FLAMES_1.8.0.tar.gz"]
+	bioc = "FLAMES"
 
-	version("2.2.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="da12030c47ad7d766a7a76ed97e5fb089af15fd1c78846afba7b11089efa6724")
+	version("2.2.0", commit="273f0f6ad02fdc1e43104b86f4bafec178532d33")
+	version("1.8.0", commit="8b72098cccdb2f38faa9a1125bdc93d307a9c487")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-basilisk", type=("build", "run"))

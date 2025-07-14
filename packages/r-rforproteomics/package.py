@@ -13,11 +13,10 @@ class RRforproteomics(RPackage):
 	"""
 	
 	homepage = "http://lgatto.github.com/RforProteomics/"
-	bioc = "RforProteomics" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RforProteomics_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RforProteomics/RforProteomics_1.40.0.tar.gz"]
+	bioc = "RforProteomics"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="bd594566d574d592604245bfd226e14a7d452b26f6640e1c7520133037a49285")
+	version("1.46.0", commit="7cbb19edf88ff243abaf2622fcb3e160310ad501")
+	version("1.40.0", commit="8b92b5a9d126807b1c83ff09e25b6db12004b918")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-msnbase@2.5.3:", type=("build", "run"))

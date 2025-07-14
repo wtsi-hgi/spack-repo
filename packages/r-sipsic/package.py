@@ -13,11 +13,10 @@ class RSipsic(RPackage):
 	"""
 	
 	homepage = "https://doi.org/10.1101/2023.03.27.534310"
-	bioc = "SiPSiC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SiPSiC_1.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SiPSiC/SiPSiC_1.2.2.tar.gz"]
+	bioc = "SiPSiC"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.2", sha256="a7c2051db654860c74d8ddaaa8b36503e2d9966baf7e304fb5f95c68ebd5b755")
+	version("1.8.0", commit="a8af161556639aa2613cfcf04c0df35a54d6528d")
+	version("1.2.2", commit="a0cbf4302834ee3f8c90900d708e5f66aeb739c5")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

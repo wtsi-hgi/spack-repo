@@ -13,11 +13,10 @@ class RSpqn(RPackage):
 	"""
 	
 	homepage = "https://github.com/hansenlab/spqn"
-	bioc = "spqn" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spqn_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spqn/spqn_1.14.0.tar.gz"]
+	bioc = "spqn"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="0b09efbc6cf24160cd6d661a13751f3b0e545180d5260a75dbce762a2ff0d01e")
+	version("1.20.0", commit="a541d3e1f21cd14a82631ac81c9036c4a4d6607a")
+	version("1.14.0", commit="cbe77193c726f42d19a23cb1d14f67b4fdb0a479")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

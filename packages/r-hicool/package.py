@@ -13,11 +13,10 @@ class RHicool(RPackage):
 	"""
 	
 	homepage = "https://github.com/js2264/HiCool"
-	bioc = "HiCool" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiCool_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiCool/HiCool_1.2.0.tar.gz"]
+	bioc = "HiCool"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="d2d6aaa5b81a1cd04b808b2b5544b62a92f75dd6f6e5492b1c559ecb85be9546")
+	version("1.8.0", commit="59a6b9c0828cdde5aca661a28e2954c7a04da2ae")
+	version("1.2.0", commit="7fe5520c59574095b80341d4db3113cece0a2fec")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-hicexperiment", type=("build", "run"))

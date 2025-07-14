@@ -13,11 +13,10 @@ class RWebbioc(RPackage):
 	"""
 	
 	homepage = "http://www.bioconductor.org/"
-	bioc = "webbioc" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/webbioc_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/webbioc/webbioc_1.74.0.tar.gz"]
+	bioc = "webbioc"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="feddd843ecc46717a51d6055e0209764026237bd72e1c1f644d7f80e0f0e44b1")
+	version("1.80.0", commit="90371e15ab56cbbc3acd6b016bb9680c62c42264")
+	version("1.74.0", commit="631bc8f638f294ae471154a35406b2f666941627")
 
 	depends_on("r@1.8:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

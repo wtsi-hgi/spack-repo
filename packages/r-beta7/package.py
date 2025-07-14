@@ -12,11 +12,10 @@ class RBeta7(RPackage):
 	Data from 6 gpr files aims to identify differential expressed genes between the beta 7+ and beta 7- memory T helper cells.
 	"""
 	
-	bioc = "beta7" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/beta7_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/beta7/beta7_1.40.0.tar.gz"]
+	bioc = "beta7"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="1b8cfbc530abe06a37f9db899c3e843748e68a2a24d6062a04d1732b77bde7e0", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/beta7_1.40.0.tar.gz")
+	version("1.46.0", commit="d1fcd5b674b4d2c8756adda43997a21bbd815e80")
+	version("1.40.0", commit="ba9f40ce4a3208b188caa64a0bc0db1b9984d0d5")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-marray", type=("build", "run"))

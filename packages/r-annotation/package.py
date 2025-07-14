@@ -13,11 +13,10 @@ class RAnnotation(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org/packages/annotation"
-	bioc = "annotation" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/annotation_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/annotation/annotation_1.26.0.tar.gz"]
+	bioc = "annotation"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="fb617eafcc2f7af9f51911eb51cb99ecd763ef66b62fa3da215850718987c17f")
+	version("1.32.0", commit="05a0ccf03f3362a8e8dd4b6dd7c16437a12e6590")
+	version("1.26.0", commit="02f76c2a64e88c3f1532541e216d6abffa271c5a")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-variantannotation", type=("build", "run"))

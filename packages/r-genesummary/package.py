@@ -13,11 +13,10 @@ class RGenesummary(RPackage):
 	"""
 	
 	homepage = "https://github.com/jokergoo/GeneSummary"
-	bioc = "GeneSummary" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/GeneSummary_0.99.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/GeneSummary/GeneSummary_0.99.6.tar.gz"]
+	bioc = "GeneSummary"
 
-	version("0.99.6", tag="RELEASE_3_21")
-	version("0.99.6", sha256="e5d6ead968d2cd401c510ac0ee30b9dff1caceed54f36a38cb4e01b06476ca40")
+	version("0.99.6", commit="4ac4046ed6d9e91edff6361dfdae046c0ab7e9ed")
+	version("0.99.6", commit="4ac4046ed6d9e91edff6361dfdae046c0ab7e9ed")
 
 	depends_on("r@4:", type=("build", "run"))
 

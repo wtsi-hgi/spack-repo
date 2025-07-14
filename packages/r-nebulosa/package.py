@@ -13,11 +13,10 @@ class RNebulosa(RPackage):
 	"""
 	
 	homepage = "https://github.com/powellgenomicslab/Nebulosa"
-	bioc = "Nebulosa" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Nebulosa_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Nebulosa/Nebulosa_1.12.1.tar.gz"]
+	bioc = "Nebulosa"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.1", sha256="fa427b6d3d6f4f37ae530f70e06f5c448ed150c60a3f2d5b58106a7604359687")
+	version("1.18.0", commit="f80b748037caf6e9133d9a1a02cf06f0d64e3ffe")
+	version("1.12.1", commit="a0f8110d4aa757a4a34d40ae253312e3159ee6c1")
 	version("1.12.0", md5="e71c21bbda87365578a49f21dd915fa4")
 
 	depends_on("r@4:", type=("build", "run"))

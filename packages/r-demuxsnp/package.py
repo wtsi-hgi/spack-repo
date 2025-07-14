@@ -13,11 +13,10 @@ class RDemuxsnp(RPackage):
 	"""
 	
 	homepage = "https://github.com/michaelplynch/demuxSNP"
-	bioc = "demuxSNP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/demuxSNP_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/demuxSNP/demuxSNP_1.0.0.tar.gz"]
+	bioc = "demuxSNP"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="8cd8919bec139b2d6f0dd33cc4b806617e41483f645f70bf2e85cbff4a447aa0")
+	version("1.6.0", commit="294315c20918b455e92ae9881792b03e6c3a28f8")
+	version("1.0.0", commit="1af04e30f2b6fe4264a28fea374305294a2d8bff")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

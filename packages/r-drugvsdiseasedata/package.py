@@ -12,11 +12,10 @@ class RDrugvsdiseasedata(RPackage):
 	Data package which provides default disease expression profiles, clusters and annotation information for use with the DrugVsDisease package.
 	"""
 	
-	bioc = "DrugVsDiseasedata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DrugVsDiseasedata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DrugVsDiseasedata/DrugVsDiseasedata_1.38.0.tar.gz"]
+	bioc = "DrugVsDiseasedata"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="b1d9719fe34b792236ac2b378362712e37f3ac00bc40ab456669a745a3d7e60d")
+	version("1.44.0", commit="54c086dc23a4c371626eb1ca0f5d439925f7a55a")
+	version("1.38.0", commit="c3617920a4ea4199e9a07b2f59fe9bb5edcf8c9f")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

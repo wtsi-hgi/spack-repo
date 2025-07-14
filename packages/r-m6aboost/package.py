@@ -13,11 +13,10 @@ class RM6aboost(RPackage):
 	"""
 	
 	homepage = "https://github.com/ZarnackGroup/m6Aboost"
-	bioc = "m6Aboost" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/m6Aboost_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/m6Aboost/m6Aboost_1.8.0.tar.gz"]
+	bioc = "m6Aboost"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="f35449fd7465847ab539f62f8c56affc53007465531a079d8ac45a79cf705a6b")
+	version("1.14.0", commit="29c076f6b89d720e57031fd5b54a5f7227fa8694")
+	version("1.8.0", commit="c64f738387585494b97adbd06e359c191b214e9f")
 
 	depends_on("r-s4vectors", type=("build", "run"))
 	depends_on("r-adabag", type=("build", "run"))

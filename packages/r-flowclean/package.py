@@ -12,11 +12,10 @@ class RFlowclean(RPackage):
 	A quality control tool for flow cytometry data based on compositional data analysis.
 	"""
 	
-	bioc = "flowClean" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowClean_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowClean/flowClean_1.40.0.tar.gz"]
+	bioc = "flowClean"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="0a0029fd76fd2f9dd2ba7bd5ccabeeebb53438a947143e6bae79d96c55a00325")
+	version("1.46.0", commit="15ad65db0c98e4a7524a05245edc9c5599843c17")
+	version("1.40.0", commit="aa2d962d0ca0d2f08a98b351761616eb53d956c6")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

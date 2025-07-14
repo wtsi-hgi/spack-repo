@@ -13,11 +13,10 @@ class ROrthogene(RPackage):
 	"""
 	
 	homepage = "https://github.com/neurogenomics/orthogene"
-	bioc = "orthogene" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/orthogene_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/orthogene/orthogene_1.8.0.tar.gz"]
+	bioc = "orthogene"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="2872b0c24173b02dca976253f58310fe26bd5f3ad4bae2e02be19914405b824f")
+	version("1.14.0", commit="7b066896d609d8335e349830b4dac44a87f2ea8b")
+	version("1.8.0", commit="3af59000b3ec00485bfdc3280aeb5a99940f12a7")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

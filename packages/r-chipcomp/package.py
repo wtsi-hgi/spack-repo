@@ -12,11 +12,10 @@ class RChipcomp(RPackage):
 	ChIPComp detects differentially bound sharp binding sites across multiple conditions considering matching control.
 	"""
 	
-	bioc = "ChIPComp" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPComp_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPComp/ChIPComp_1.32.0.tar.gz"]
+	bioc = "ChIPComp"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="c9cb36b4d36da2be479fcbe91362eb6da8b4140951a7e09869cab39cc3172d18")
+	version("1.38.0", commit="6acca5eabbd23cd283bcbf3b789774ea74d395be")
+	version("1.32.0", commit="46346bb6c97bcc175c153bc5862f5ce3ec9595c6")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

@@ -13,11 +13,10 @@ class RMofa2(RPackage):
 	"""
 	
 	homepage = "https://biofam.github.io/MOFA2/index.html"
-	bioc = "MOFA2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MOFA2_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MOFA2/MOFA2_1.12.1.tar.gz"]
+	bioc = "MOFA2"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.1", sha256="7746c0f8bae20441763220559e01a446ca61c1f392bc2b5a1d0cb01985743eef", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MOFA2_1.12.1.tar.gz")
+	version("1.18.0", commit="bfe45bd657358d94bab7a7e9177142fff7c9b6aa")
+	version("1.12.1", commit="6fdef2fc16703578a85c220ab4851574cc539eb5")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rhdf5", type=("build", "run"))

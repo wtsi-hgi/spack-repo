@@ -13,11 +13,10 @@ class RHicexperiment(RPackage):
 	"""
 	
 	homepage = "https://github.com/js2264/HiCExperiment"
-	bioc = "HiCExperiment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiCExperiment_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiCExperiment/HiCExperiment_1.2.0.tar.gz"]
+	bioc = "HiCExperiment"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="b19a1abe213aa4721ca77e9a7752e90d5095fe5a2b12c1d6d0e935e2bc71f18a")
+	version("1.8.0", commit="d884cd3ce859e4e185cf72aa1fe5b58b9211304a")
+	version("1.2.0", commit="ee18f17762a1fdb8ea57a18ff20f2387c33e8f5f")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-interactionset", type=("build", "run"))

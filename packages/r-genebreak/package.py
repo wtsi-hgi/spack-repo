@@ -13,11 +13,10 @@ class RGenebreak(RPackage):
 	"""
 	
 	homepage = "https://github.com/stefvanlieshout/GeneBreak"
-	bioc = "GeneBreak" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneBreak_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneBreak/GeneBreak_1.32.0.tar.gz"]
+	bioc = "GeneBreak"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="96175010901d8f63140a327cc74f4e388620ad38ffb5a0e2630008b2424253ef")
+	version("1.38.0", commit="092168b7506807b0757df0f23e9dbc633da12aa8")
+	version("1.32.0", commit="a5e80580c9883ae1405af7db338dff3319655377")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-qdnaseq", type=("build", "run"))

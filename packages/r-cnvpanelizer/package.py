@@ -12,11 +12,10 @@ class RCnvpanelizer(RPackage):
 	A method that allows for the use of a collection of non-matched normal tissue samples. Our approach uses a non-parametric bootstrap subsampling of the available reference samples to estimate the distribution of read counts from targeted sequencing. As inspired by random forest, this is combined with a procedure that subsamples the amplicons associated with each of the targeted genes. The obtained information allows us to reliably classify the copy number aberrations on the gene level.
 	"""
 	
-	bioc = "CNVPanelizer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNVPanelizer_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNVPanelizer/CNVPanelizer_1.34.0.tar.gz"]
+	bioc = "CNVPanelizer"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="b6d97880f6c4c22cc6171206758dd1f5ebc3cdd0a360327d5cda3c73dfbc0896")
+	version("1.40.0", commit="48b552ebebb4ab28253c341f22ae363bee5c82bf")
+	version("1.34.0", commit="ca119f65085113614fb6c1d82c8d6f51a365037a")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

@@ -13,11 +13,10 @@ class RTapseq(RPackage):
 	"""
 	
 	homepage = "https://github.com/argschwind/TAPseq"
-	bioc = "TAPseq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TAPseq_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TAPseq/TAPseq_1.14.1.tar.gz"]
+	bioc = "TAPseq"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.1", sha256="ef5d0f6dee6fd2fb6a2b2eafd862fdbe7ae1098b9d16ced9a707513a2e17ae91")
+	version("1.20.0", commit="a6a1f4363ecb75b086a32fc7906517b47145563a")
+	version("1.14.1", commit="bc862df8ae415442f86b138c365e69d7e0f23743")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicalignments", type=("build", "run"))

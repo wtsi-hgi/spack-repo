@@ -12,11 +12,10 @@ class REnmcb(RPackage):
 	Creation of the correlated blocks using DNA methylation profiles. Machine learning models can be constructed to predict differentially methylated blocks and disease progression.
 	"""
 	
-	bioc = "EnMCB" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EnMCB_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EnMCB/EnMCB_1.14.0.tar.gz"]
+	bioc = "EnMCB"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="2757794e4c6b52c6836f5a0c0abedec590eba44a983564ddcbfeeb930749aba3")
+	version("1.20.0", commit="318fb87d4406d74c84cdce984138156093970c8c")
+	version("1.14.0", commit="124b1759d29e047f8111b8f107acfccbcedf6099")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-survivalroc", type=("build", "run"))

@@ -12,11 +12,10 @@ class RGeneplastData(RPackage):
 	The package geneplast.data provides datasets from different sources via AnnotationHub to use in geneplast pipelines. The datasets have species, phylogenetic trees, and orthology relationships among eukaryotes from different orthologs databases.
 	"""
 	
-	bioc = "geneplast.data" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/geneplast.data_0.99.9.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/geneplast.data/geneplast.data_0.99.9.tar.gz"]
+	bioc = "geneplast.data"
 
-	version("0.99.9", tag="RELEASE_3_21")
-	version("0.99.9", sha256="1192673d63a98841285605a89bc75687a057378d77d0a48b49cf4d36499f61c4")
+	version("0.99.9", commit="847b6b266d262c322d1a85ee6708001de01946b0")
+	version("0.99.9", commit="847b6b266d262c322d1a85ee6708001de01946b0")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ape", type=("build", "run"))

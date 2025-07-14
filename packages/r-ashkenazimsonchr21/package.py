@@ -12,10 +12,9 @@ class RAshkenazimsonchr21(RPackage):
 	SonVariantsChr21 is a dataset of annotated genomic variants coming from Complete Genomics whole genome sequencing. Data comes from GIAB project, Ashkenazim Trio, sample HG002 run 1. Both vcf and annotated data frame are provided.
 	"""
 	
-	bioc = "AshkenazimSonChr21" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/AshkenazimSonChr21_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/AshkenazimSonChr21/AshkenazimSonChr21_1.32.0.tar.gz"]
+	bioc = "AshkenazimSonChr21"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="5dae3d05f92ce47c939b37533d871f62c90978614a98d58d327041b90c26367a", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/AshkenazimSonChr21_1.32.0.tar.gz")
+	version("1.38.0", commit="8d96b53ac12de6e98aa48f51cfa9777836426c8a")
+	version("1.32.0", commit="798ba4155c9398f4faed449579fe2f43cb47414f")
 
 

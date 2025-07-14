@@ -13,11 +13,10 @@ class RScddboost(RPackage):
 	"""
 	
 	homepage = "https://github.com/wiscstatman/scDDboost"
-	bioc = "scDDboost" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDDboost_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scDDboost/scDDboost_1.4.0.tar.gz"]
+	bioc = "scDDboost"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="e92ba350e3f9b73a22f634c8e81dd52b8666f905092bfbb0f264dc2863b76f87")
+	version("1.10.0", commit="434ff6a80ec341721ae00d938ea724895d67e939")
+	version("1.4.0", commit="e1f3247a86c6b28b5f5d261c2dc5e4ab3f236d0f")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

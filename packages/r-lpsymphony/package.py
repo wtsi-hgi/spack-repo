@@ -13,10 +13,9 @@ class RLpsymphony(RPackage):
 	"""
 	
 	homepage = "http://R-Forge.R-project.org/projects/rsymphony"
-	bioc = "lpsymphony" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lpsymphony_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lpsymphony/lpsymphony_1.30.0.tar.gz"]
+	bioc = "lpsymphony"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="ef2c03a596981da910697dab15672bce91a267a459e89c526bddef9f38e586a4")
+	version("1.36.0", commit="3811466d004118637d20e538cd2330e68d2a1090")
+	version("1.30.0", commit="99258031e97ce12eb8d31bfb673b86a4786984a2")
 
 	depends_on("r@3:", type=("build", "run"))

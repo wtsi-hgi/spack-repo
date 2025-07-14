@@ -12,11 +12,10 @@ class RScpdata(RPackage):
 	The package disseminates mass spectrometry (MS)-based single-cell proteomics (SCP) datasets. The data were collected from published work and formatted using the `scp` data structure. The data sets contain quantitative information at spectrum, peptide and/or protein level for single cells or minute sample amounts.
 	"""
 	
-	bioc = "scpdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scpdata_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scpdata/scpdata_1.10.0.tar.gz"]
+	bioc = "scpdata"
 
-	version("1.16.1", tag="RELEASE_3_21")
-	version("1.10.0", sha256="b9ab4d398c253c11bd5dbcf4995671e40be05e42f284f2e19fdb28a1355e9c7f")
+	version("1.16.1", commit="229186a3fdd7aeeb4f2476940a2667abeb261947")
+	version("1.10.0", commit="5495c420fc0273ff006e964b1e3f41be9b2530b4")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-qfeatures", type=("build", "run"))

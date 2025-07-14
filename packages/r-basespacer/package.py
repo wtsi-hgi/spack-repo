@@ -12,11 +12,10 @@ class RBasespacer(RPackage):
 	A rich R interface to Illumina's BaseSpace cloud computing environment, enabling the fast development of data analysis and visualisation tools.
 	"""
 	
-	bioc = "BaseSpaceR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BaseSpaceR_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BaseSpaceR/BaseSpaceR_1.46.0.tar.gz"]
+	bioc = "BaseSpaceR"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="8fc8225e9258c4611c1a6760b8044bd74e79553044f37a6447d586d5617ebad1")
+	version("1.52.0", commit="57aab245d83348f1fd62a52a4319880274a0caf2")
+	version("1.46.0", commit="517fb8f188aa9c918dfa84318e1612c4adc825c2")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-rcurl", type=("build", "run"))

@@ -13,11 +13,10 @@ class RPanviz(RPackage):
 	"""
 	
 	homepage = "https://github.com/LucaAnholt/PanViz"
-	bioc = "PanViz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PanViz_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PanViz/PanViz_1.4.0.tar.gz"]
+	bioc = "PanViz"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="a05161ea6299e1426430c604c4e6ce050aa4b528b8d32c32f5fe43d8522b52a5")
+	version("1.10.0", commit="f780984f8901108642a0825e21887eafa73cce6a")
+	version("1.4.0", commit="2214a656ad7add20564b72e01e37aee791d261b1")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))

@@ -13,11 +13,10 @@ class RGgmsa(RPackage):
 	"""
 	
 	homepage = "https://doi.org/10.1093/bib/bbac222(paper)"
-	bioc = "ggmsa" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggmsa_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggmsa/ggmsa_1.8.0.tar.gz"]
+	bioc = "ggmsa"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="5143a62bbd6e45b736d8dbeb223b5e87bde066b52b3e340b66a8a39799b23fab")
+	version("1.14.0", commit="7531c01ddd15e7f479f779f95d191f12e98a66d4")
+	version("1.8.0", commit="b6f7dd990c2f5dd2528110abcf3d6f1f1a23f92d")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

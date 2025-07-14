@@ -13,10 +13,9 @@ class REmpiricalbrownsmethod(RPackage):
 	"""
 	
 	homepage = "https://github.com/IlyaLab/CombiningDependentPvaluesUsingEBM.git"
-	bioc = "EmpiricalBrownsMethod" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EmpiricalBrownsMethod_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EmpiricalBrownsMethod/EmpiricalBrownsMethod_1.30.0.tar.gz"]
+	bioc = "EmpiricalBrownsMethod"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="ef6c792f67abc45ca4ad4bf3bc1e7c3dfa7dd4368a33ddc3ae32635243043a0f")
+	version("1.36.0", commit="2a598f8048f99de6cd53d6874c6d8d501381f9c9")
+	version("1.30.0", commit="7d9465f2445e8f15009afad0888603f222ed2f0a")
 
 	depends_on("r@3.2:", type=("build", "run"))

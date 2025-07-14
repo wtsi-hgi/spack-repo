@@ -12,11 +12,10 @@ class RCellmapperdata(RPackage):
 	Experiment data package. Contains microarray data from several large expression compendia that have been pre-processed for use with the CellMapper package. This pre-processed data is recommended for routine searches using the CellMapper package.
 	"""
 	
-	bioc = "CellMapperData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CellMapperData_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CellMapperData/CellMapperData_1.28.0.tar.gz"]
+	bioc = "CellMapperData"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="bd25205761affe6b34b45f3c96aa16eaee3d59442dc3fad5453e944a490dbd8a")
+	version("1.34.0", commit="e0581fb367d53a7462e387aba5b625477e52df1a")
+	version("1.28.0", commit="7a0e00b0d6772d8d887eaff04e09a5576c9a485f")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-cellmapper", type=("build", "run"))

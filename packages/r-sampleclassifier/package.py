@@ -12,11 +12,10 @@ class RSampleclassifier(RPackage):
 	The package is designed to classify microarray RNA-seq gene expression profiles.
 	"""
 	
-	bioc = "sampleClassifier" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sampleClassifier_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sampleClassifier/sampleClassifier_1.26.0.tar.gz"]
+	bioc = "sampleClassifier"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="e737bb5c078477ca0f38ba75b756c3c4f6db5ce39825687f7c6e4b074a46e061")
+	version("1.32.0", commit="bfa7ffd2a86a77e07c86afb19998018cd29b3ce9")
+	version("1.26.0", commit="eeda7c97001376edab5b0247df39d4caac4761f8")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-mgfm", type=("build", "run"))

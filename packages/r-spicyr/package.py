@@ -13,11 +13,10 @@ class RSpicyr(RPackage):
 	"""
 	
 	homepage = "https://ellispatrick.github.io/spicyR/"
-	bioc = "spicyR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spicyR_1.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spicyR/spicyR_1.14.3.tar.gz"]
+	bioc = "spicyR"
 
-	version("1.20.2", tag="RELEASE_3_21")
-	version("1.14.3", sha256="b5ed5e9cdd7b8667b855ddab24e662a638844c65415d8ea280d46aba1e3f7ac1")
+	version("1.20.2", commit="8c240b7ef122eb15ec68dc4a78f084c8eeac8114")
+	version("1.14.3", commit="79d608c02b7d2cce602e7821b0a28da2e473626d")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

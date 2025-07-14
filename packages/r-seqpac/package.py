@@ -13,11 +13,10 @@ class RSeqpac(RPackage):
 	"""
 	
 	homepage = "https://github.com/Danis102/seqpac"
-	bioc = "seqpac" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/seqpac_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/seqpac/seqpac_1.2.0.tar.gz"]
+	bioc = "seqpac"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="c4618b8fdbbd888fca08aa3c1cf3e2d9d56802ac584b654a8bb5e7fd4a9b30e8")
+	version("1.8.0", commit="062cfbc17f44ff9021446745063b2e8d28046bf9")
+	version("1.2.0", commit="fffef1de0409de2c3b725b871d4eb80708a69c59")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biostrings@2.46:", type=("build", "run"))

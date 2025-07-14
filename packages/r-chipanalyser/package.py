@@ -12,11 +12,10 @@ class RChipanalyser(RPackage):
 	ChIPanalyser is a package to predict and understand TF binding by utilizing a statistical thermodynamic model. The model incorporates 4 main factors thought to drive TF binding: Chromatin State, Binding energy, Number of bound molecules and a scaling factor modulating TF binding affinity. Taken together, ChIPanalyser produces ChIP-like profiles that closely mimic the patterns seens in real ChIP-seq data.
 	"""
 	
-	bioc = "ChIPanalyser" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPanalyser_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPanalyser/ChIPanalyser_1.24.0.tar.gz"]
+	bioc = "ChIPanalyser"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="1b11a1a7aef3df7693f4a00d44995e08fed16987d581301392d9df50985b56c9")
+	version("1.30.0", commit="ffb291be895d88514fca4ecde85f53a8fe4227a0")
+	version("1.24.0", commit="c88afcb3c61d1c8359b50cae9d3c3f67f07c5a9c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

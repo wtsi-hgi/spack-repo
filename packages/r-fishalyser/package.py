@@ -12,11 +12,10 @@ class RFishalyser(RPackage):
 	FISHalyseR provides functionality to process and analyse digital cell culture images, in particular to quantify FISH probes within nuclei. Furthermore, it extract the spatial location of each nucleus as well as each probe enabling spatial co-localisation analysis.
 	"""
 	
-	bioc = "FISHalyseR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FISHalyseR_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FISHalyseR/FISHalyseR_1.36.0.tar.gz"]
+	bioc = "FISHalyseR"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="271adc3348ccc0dced6129bb11e82095378d6fe73df46c6145897d09dad30ff9")
+	version("1.42.0", commit="a208ea1483a8f57b01a2c11acadf23df35ad1bef")
+	version("1.36.0", commit="8e8cce0f2a1f93558a24b620bbd30489b508abfd")
 
 	depends_on("r-ebimage", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))

@@ -12,11 +12,10 @@ class RMvoutdata(RPackage):
 	affy and illumina raw data for assessing outlier detector performance
 	"""
 	
-	bioc = "mvoutData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mvoutData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mvoutData/mvoutData_1.38.0.tar.gz"]
+	bioc = "mvoutData"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="7c44c64f508a2ac72864910c2af77f828efcdca84b3d38f37cbfa1cd53582b9f")
+	version("1.44.0", commit="808472247ea7887262f8fceb249b7594e165d0db")
+	version("1.38.0", commit="c69f487be220b54807c16ee0b8519ab2a8aa9997")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

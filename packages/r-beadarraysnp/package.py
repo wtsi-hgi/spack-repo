@@ -12,10 +12,9 @@ class RBeadarraysnp(RPackage):
 	Importing data from Illumina SNP experiments and performing copy number calculations and reports.
 	"""
 	
-	bioc = "beadarraySNP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/beadarraySNP_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/beadarraySNP/beadarraySNP_1.68.0.tar.gz"]
+	bioc = "beadarraySNP"
 
-	version("1.68.0", sha256="fafee5b78dc49205f8d252cb65aa91324897e1851d83389fe061ffeb0efc31ef")
+	version("1.68.0", commit="569504fd9f04efa802b2d340053886ec5645feab")
 
 	depends_on("r-biobase@2.14:", type=("build", "run"))
 	depends_on("r-quantsmooth", type=("build", "run"))

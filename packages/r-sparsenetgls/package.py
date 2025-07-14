@@ -12,11 +12,10 @@ class RSparsenetgls(RPackage):
 	The package provides methods of combining the graph structure learning and generalized least squares regression to improve the regression estimation. The main function sparsenetgls() provides solutions for multivariate regression with Gaussian distributed dependant variables and explanatory variables utlizing multiple well-known graph structure learning approaches to estimating the precision matrix, and uses a penalized variance covariance matrix with a distance tuning parameter of the graph structure in deriving the sandwich estimators in generalized least squares (gls) regression. This package also provides functions for assessing a Gaussian graphical model which uses the penalized approach. It uses Receiver Operative Characteristics curve as a visualization tool in the assessment.
 	"""
 	
-	bioc = "sparsenetgls" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sparsenetgls_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sparsenetgls/sparsenetgls_1.20.0.tar.gz"]
+	bioc = "sparsenetgls"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="b5f0f2fd12c48386213553e55d1bb130cfeb5bcc30d77228787cefd8126090f2")
+	version("1.26.0", commit="f5f70533dd3ef6548d234c9f04f60a79c53fcece")
+	version("1.20.0", commit="a2416938f5e531403700f3211686c2b62c8807b5")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

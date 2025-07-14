@@ -12,11 +12,10 @@ class RScmeth(RPackage):
 	Functions to analyze methylation data can be found here. Some functions are relevant for single cell methylation data but most other functions can be used for any methylation data. Highlight of this workflow is the comprehensive quality control report.
 	"""
 	
-	bioc = "scmeth" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scmeth_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scmeth/scmeth_1.22.0.tar.gz"]
+	bioc = "scmeth"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="17d8c5d1c4276be5790d4e7e7f1da5f07c3ca8c239512ec08b74db4d836d610b")
+	version("1.28.0", commit="3d3725996adb7948e3523ec007cc25cbd578b0e8")
+	version("1.22.0", commit="39a201a9a80b01c87bf294ebc088a869b8e8654e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-knitr", type=("build", "run"))

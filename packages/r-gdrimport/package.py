@@ -12,11 +12,10 @@ class RGdrimport(RPackage):
 	The package is a part of the gDR suite. It helps to prepare raw drug response data for downstream processing. It mainly contains helper functions for importing/loading/validating dose-response data provided in different file formats.
 	"""
 	
-	bioc = "gDRimport" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gDRimport_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gDRimport/gDRimport_1.0.0.tar.gz"]
+	bioc = "gDRimport"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="469a7e74c8478d9f5d7a79ca0365f3554d9a784d09b4e6ca73e3a9c10cb29ed3")
+	version("1.6.0", commit="ec46ae06fd032754c75ae5a1aa80aac3863af9cd")
+	version("1.0.0", commit="bc9e88fbaa80145a4c490920e0558cb6f2749739")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

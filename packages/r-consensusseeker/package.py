@@ -13,11 +13,10 @@ class RConsensusseeker(RPackage):
 	"""
 	
 	homepage = "https://github.com/ArnaudDroitLab/consensusSeekeR"
-	bioc = "consensusSeekeR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/consensusSeekeR_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/consensusSeekeR/consensusSeekeR_1.30.0.tar.gz"]
+	bioc = "consensusSeekeR"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="cea26f56c9937bea8bd40cb9cf619a8621c4f7aaeda37df9f49b4bb2782ebb35")
+	version("1.36.0", commit="198f2a0a0dca701400a2416d0ea8acfc6eab022d")
+	version("1.30.0", commit="6922cd906fafc3bd970ec6722c7a2a30c6106dc0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

@@ -13,11 +13,10 @@ class RTronco(RPackage):
 	"""
 	
 	homepage = "https://sites.google.com/site/troncopackage/"
-	bioc = "TRONCO" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TRONCO_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TRONCO/TRONCO_2.34.0.tar.gz"]
+	bioc = "TRONCO"
 
-	version("2.40.0", tag="RELEASE_3_21")
-	version("2.34.0", sha256="0c2aaa699415c01628ed9e7f8d1d48c77c8bab21e083ec5dd13698422f878834")
+	version("2.40.0", commit="543c8798c87d491a3c726ad9042900059a4b2dc5")
+	version("2.34.0", commit="74dffd8ba864fa55759395d4932330853dde6ac4")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-bnlearn", type=("build", "run"))

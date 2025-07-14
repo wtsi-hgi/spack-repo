@@ -13,11 +13,10 @@ class RMadseq(RPackage):
 	"""
 	
 	homepage = "https://github.com/ykong2/MADSEQ"
-	bioc = "MADSEQ" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MADSEQ_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MADSEQ/MADSEQ_1.28.0.tar.gz"]
+	bioc = "MADSEQ"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="dd23424c3391e22bbc11136e19240c9ff7e49f4d4f35887eb589021a7e926f81")
+	version("1.34.0", commit="2ba7c5f729f7847a8e3c34fe3c8a44e201436e95")
+	version("1.28.0", commit="24480264d8dcf71e5a9f9eb73dd01c838c31018c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rjags@4.6:", type=("build", "run"))

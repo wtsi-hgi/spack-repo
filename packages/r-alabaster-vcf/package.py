@@ -12,11 +12,10 @@ class RAlabasterVcf(RPackage):
 	Save variant calling SummarizedExperiment to file and load them back as VCF objects. This is a more portable alternative to serialization of such objects into RDS files. Each artifact is associated with metadata for further interpretation; downstream applications can enrich this metadata with context-specific properties.
 	"""
 	
-	bioc = "alabaster.vcf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.vcf_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.vcf/alabaster.vcf_1.2.0.tar.gz"]
+	bioc = "alabaster.vcf"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="29326985006669d777daaf9e2134149754a9e99cb6f2f0d0afe32e118265fc77")
+	version("1.8.0", commit="7d5156694a726b174f3d15aa1f7ab27e52185a87")
+	version("1.2.0", commit="1a436b8dcaa1301c1dd368b43aec7c49bfdf322b")
 
 	depends_on("r-alabaster-base", type=("build", "run"))
 	depends_on("r-variantannotation", type=("build", "run"))

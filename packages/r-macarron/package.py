@@ -13,11 +13,10 @@ class RMacarron(RPackage):
 	"""
 	
 	homepage = "http://huttenhower.sph.harvard.edu/macarron"
-	bioc = "Macarron" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Macarron_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Macarron/Macarron_1.6.0.tar.gz"]
+	bioc = "Macarron"
 
-	version("1.12.2", tag="RELEASE_3_21")
-	version("1.6.0", sha256="67a57809afc80049d12d83c82fdfed73d7cd1cf077da735a543f3dd38c46f6a7")
+	version("1.12.2", commit="33ab0482144846393361eed1c632f87409feb07b")
+	version("1.6.0", commit="3120897e1898a0577b9d6aa1cba44616384ab42e")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

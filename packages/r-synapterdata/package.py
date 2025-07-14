@@ -12,11 +12,10 @@ class RSynapterdata(RPackage):
 	Data independant acquisition of UPS1 protein mix in an E. coli background obtained on a Waters Synapt G2 instrument.
 	"""
 	
-	bioc = "synapterdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/synapterdata_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/synapterdata/synapterdata_1.40.0.tar.gz"]
+	bioc = "synapterdata"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="192b7fb110ecb83793fc896829d2308391d5506282f7cc3b87bb885db5c983c2")
+	version("1.46.0", commit="cff53dbe27247cbaa00d0b5323800f1b3c60628d")
+	version("1.40.0", commit="6e59823d965f520b7a1dca597aa517182bbbbc18")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-synapter@1.99.2:", type=("build", "run"))

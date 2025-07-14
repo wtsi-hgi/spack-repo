@@ -12,11 +12,10 @@ class RTsar(RPackage):
 	This package automates analysis workflow for Thermal Shift Analysis (TSAS) data. Processing, analyzing, and visualizing data through both shiny applications and command lines. Package aims to simplify data analysis and offer front to end workflow, from raw data to multiple trial analysis.
 	"""
 	
-	bioc = "TSAR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TSAR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TSAR/TSAR_1.0.0.tar.gz"]
+	bioc = "TSAR"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="bc75e3ad29377425c1da1b43cef760445d71ea47d8fc0a0390705d3778b9f0cd")
+	version("1.6.0", commit="501baadeca0c0b1c99f0c278039d9f050901e243")
+	version("1.0.0", commit="071c367747df21ca2dc19ef405954bcdb141d9ba")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-dplyr@1.0.7:", type=("build", "run"))

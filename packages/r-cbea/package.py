@@ -13,11 +13,10 @@ class RCbea(RPackage):
 	"""
 	
 	homepage = "https://github.com/qpmnguyen/CBEA"
-	bioc = "CBEA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CBEA_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CBEA/CBEA_1.2.0.tar.gz"]
+	bioc = "CBEA"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="2bed418b6ab50f544301fee54b840522cdd47354951923b3f38d3428c55de670")
+	version("1.8.0", commit="661b58e6453d770b7a39c18917f1a5b63260c578")
+	version("1.2.0", commit="486c9d05bc1c6a0547cd4c87ca27dfca7fd023f2")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

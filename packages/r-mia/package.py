@@ -13,11 +13,10 @@ class RMia(RPackage):
 	"""
 	
 	homepage = "https://github.com/microbiome/mia"
-	bioc = "mia" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mia_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mia/mia_1.10.0.tar.gz"]
+	bioc = "mia"
 
-	version("1.16.1", tag="RELEASE_3_21")
-	version("1.10.0", sha256="b7b3c20dd45e2a376fe90b62a77f01af323f1b676324009795b11fa7bbbb9a10")
+	version("1.16.1", commit="84616b92e83c70f10b57fea75eb8b7fc791b976d")
+	version("1.10.0", commit="9214397974f0029d46719fba538ee79822c53caf")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

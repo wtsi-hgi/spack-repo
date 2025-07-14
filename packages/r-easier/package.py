@@ -12,11 +12,10 @@ class REasier(RPackage):
 	This package provides a workflow for the use of EaSIeR tool, developed to assess patients' likelihood to respond to ICB therapies providing just the patients' RNA-seq data as input. We integrate RNA-seq data with different types of prior knowledge to extract quantitative descriptors of the tumor microenvironment from several points of view, including composition of the immune repertoire, and activity of intra- and extra-cellular communications. Then, we use multi-task machine learning trained in TCGA data to identify how these descriptors can simultaneously predict several state-of-the-art hallmarks of anti-cancer immune response. In this way we derive cancer-specific models and identify cancer-specific systems biomarkers of immune response. These biomarkers have been experimentally validated in the literature and the performance of EaSIeR predictions has been validated using independent datasets form four different cancer types with patients treated with anti-PD1 or anti-PDL1 therapy.
 	"""
 	
-	bioc = "easier" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/easier_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/easier/easier_1.8.0.tar.gz"]
+	bioc = "easier"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="61cf117669aefd4b1369fde5444717f870b96320701339b86a2336b5617a8f52")
+	version("1.14.0", commit="39b3b1ac9c4db7bc1693fe49e3596de2f80dcdca")
+	version("1.8.0", commit="04c06f2fd7bfb4b13eb27bd1edbc6cf8e0a4cdd5")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-progeny", type=("build", "run"))

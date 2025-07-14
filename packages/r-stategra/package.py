@@ -12,11 +12,10 @@ class RStategra(RPackage):
 	Classes and tools for multi-omics data integration.
 	"""
 	
-	bioc = "STATegRa" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/STATegRa_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/STATegRa/STATegRa_1.38.0.tar.gz"]
+	bioc = "STATegRa"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="b3051c59994ed4fbeb47d030adcc56124c892d49c12c3d74164b7d67f032505c")
+	version("1.44.0", commit="8763e591d2b4374d5921ca3a4115d82ede93be3b")
+	version("1.38.0", commit="fe2962b7c4098361fc0a0847957581bfc0bdb733")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

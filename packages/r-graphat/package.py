@@ -12,11 +12,10 @@ class RGraphat(RPackage):
 	Functions and data used in Balasubramanian, et al. (2004)
 	"""
 	
-	bioc = "GraphAT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GraphAT_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GraphAT/GraphAT_1.74.0.tar.gz"]
+	bioc = "GraphAT"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="0e5d6488d4b833cf51f1554989f69dc3ae8eee55efd3b8b232895926b8f9b2e4")
+	version("1.80.0", commit="0f312c7e904a518df5e06c1868504e5e80a76cc1")
+	version("1.74.0", commit="e1b7615382e33547a1aa7e52d9a5d0182e359760")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

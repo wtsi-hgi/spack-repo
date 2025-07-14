@@ -12,11 +12,10 @@ class RUlarcirc(RPackage):
 	Ularcirc reads in STAR aligned splice junction files and provides visualisation and analysis tools for splicing analysis. Users can assess backsplice junctions and forward canonical junctions.
 	"""
 	
-	bioc = "Ularcirc" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Ularcirc_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Ularcirc/Ularcirc_1.20.0.tar.gz"]
+	bioc = "Ularcirc"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="1126a68f1fb88d4d2cccbb056d6caa0344ae24fe93f0961b562d6cdd6b669bb8")
+	version("1.26.0", commit="e5a5938dc2c7da51e4068de6fe29447d08a4f19b")
+	version("1.20.0", commit="65fe0811ce6a580c873a6c1f53810e32daa855e0")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

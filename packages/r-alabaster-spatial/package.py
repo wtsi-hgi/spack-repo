@@ -12,11 +12,10 @@ class RAlabasterSpatial(RPackage):
 	Save SpatialExperiment objects and their images into file artifacts, and load them back into memory. This is a more portable alternative to serialization of such objects into RDS files. Each artifact is associated with metadata for further interpretation; downstream applications can enrich this metadata with context-specific properties.
 	"""
 	
-	bioc = "alabaster.spatial" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.spatial_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.spatial/alabaster.spatial_1.2.0.tar.gz"]
+	bioc = "alabaster.spatial"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="dd98cfef50b21f37f6f6874c26ab89e65f18fca9dad0648cbaff297d3d8eb0c9")
+	version("1.8.0", commit="72f53213c94b6941436833e27cfae37742ded559")
+	version("1.2.0", commit="ec0ca0a01d55296916d66b481ffd476676e70fb2")
 
 	depends_on("r-spatialexperiment", type=("build", "run"))
 	depends_on("r-alabaster-base", type=("build", "run"))

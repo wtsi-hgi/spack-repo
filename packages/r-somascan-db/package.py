@@ -13,11 +13,10 @@ class RSomascanDb(RPackage):
 	"""
 	
 	homepage = "https://somalogic.com"
-	bioc = "SomaScan.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/SomaScan.db_0.99.7.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/SomaScan.db/SomaScan.db_0.99.7.tar.gz"]
+	bioc = "SomaScan.db"
 
-	version("0.99.10", tag="RELEASE_3_21")
-	version("0.99.7", sha256="399d5f5f24154bb8a064daf84c125e74b6ebdafc55e110c208b4cd9ae0055b04")
+	version("0.99.10", commit="7eac7312a74f75e3a28b4a10f79c24d16ffa6739")
+	version("0.99.7", commit="4e8e055328c0e1280e11263ec81529f6186b833e")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.56.2:", type=("build", "run"))

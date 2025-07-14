@@ -12,11 +12,10 @@ class RProbamr(RPackage):
 	Mapping PSMs back to genome. The package builds SAM file from shotgun proteomics data The package also provides function to prepare annotation from GTF file.
 	"""
 	
-	bioc = "proBAMr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/proBAMr_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/proBAMr/proBAMr_1.36.0.tar.gz"]
+	bioc = "proBAMr"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="3984b967cc0b8e5a853b7a2029fc6a996ac7fb55edae5569f4d33b8bc866c04a")
+	version("1.42.0", commit="fb3cc99008b04e88b87a647cc21e986f5464a6af")
+	version("1.36.0", commit="49db4d211f085c1cb4b7a4c1600647aaf97c2617")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

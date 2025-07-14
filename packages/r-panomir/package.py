@@ -13,11 +13,10 @@ class RPanomir(RPackage):
 	"""
 	
 	homepage = "https://github.com/pouryany/PanomiR"
-	bioc = "PanomiR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PanomiR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PanomiR/PanomiR_1.6.0.tar.gz"]
+	bioc = "PanomiR"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="683caee92d63498c49b5edcc84ec95490cd5f42a6b9d846b1113bb174cc57575")
+	version("1.12.0", commit="8fb70faa8a28f4552dabb4c96972bb5989cc9491")
+	version("1.6.0", commit="dc6f6e3baf6b90222a02995df6051ed3dcb16d5f")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-clusterprofiler", type=("build", "run"))

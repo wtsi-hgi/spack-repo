@@ -13,11 +13,10 @@ class RComethdmr(RPackage):
 	"""
 	
 	homepage = "https://github.com/TransBioInfoLab/coMethDMR"
-	bioc = "coMethDMR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/coMethDMR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/coMethDMR/coMethDMR_1.6.0.tar.gz"]
+	bioc = "coMethDMR"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="a5d26df311e9e10344634d51e8382c5cc2a6cc11a645087fed6ffb880287bade")
+	version("1.12.0", commit="0d1b6aed09b776481c9336feaa3ed50f4ae1aa2f")
+	version("1.6.0", commit="aa833341f32a091d904d5018fb1f4dae96cf451e")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

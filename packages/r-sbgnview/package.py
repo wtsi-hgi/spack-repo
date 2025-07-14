@@ -13,11 +13,10 @@ class RSbgnview(RPackage):
 	"""
 	
 	homepage = "https://github.com/datapplab/SBGNview"
-	bioc = "SBGNview" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SBGNview_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SBGNview/SBGNview_1.16.0.tar.gz"]
+	bioc = "SBGNview"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="7a7f385cf8ac8142d426f02c37adcd7de31ea2390bdd8bec334ffa83f6d74d05")
+	version("1.22.0", commit="3200f662a3c26d9d83998d934e12fe709a498dc4")
+	version("1.16.0", commit="035330e77bb5f55132182fb463c6f48060b31a0d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-pathview", type=("build", "run"))

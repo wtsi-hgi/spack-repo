@@ -13,10 +13,9 @@ class RMuscle(RPackage):
 	"""
 	
 	homepage = "http://www.drive5.com/muscle/"
-	bioc = "muscle" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/muscle_3.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/muscle/muscle_3.44.0.tar.gz"]
+	bioc = "muscle"
 
-	version("3.50.0", tag="RELEASE_3_21")
-	version("3.44.0", sha256="bd98b350ad010b727c8c993b5056db2b0aca3349dbf2452e3d8e9acce502b272")
+	version("3.50.0", commit="165f68e45fd4c28e452867faab01491e11ce4b78")
+	version("3.44.0", commit="bebb424785add0eb586cec9ad56a14031f5bcf86")
 
 	depends_on("r-biostrings", type=("build", "run"))

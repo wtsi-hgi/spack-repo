@@ -12,11 +12,10 @@ class RFfpeexampledata(RPackage):
 	A subset of GSE17565 (April et al. 2009) containing 32 FFPE samples of Burkitts Lymphoma and Breast Adenocarcinoma, with a dilution series in technical duplicate.
 	"""
 	
-	bioc = "ffpeExampleData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ffpeExampleData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ffpeExampleData/ffpeExampleData_1.40.0.tar.gz"]
+	bioc = "ffpeExampleData"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="d977b80375a09d65d1950871bb166b7ec29cefe3e1a06a1cfdf01c0bbab87d99")
+	version("1.46.0", commit="5301acfd139bdf892b0b666c19195439043775f2")
+	version("1.40.0", commit="50a7db785db872f21f020bc1e5e39bfd329a13fc")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-lumi", type=("build", "run"))

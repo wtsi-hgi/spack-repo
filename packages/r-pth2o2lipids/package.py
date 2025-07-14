@@ -13,11 +13,10 @@ class RPth2o2lipids(RPackage):
 	"""
 	
 	homepage = "http://dx.doi.org/10.1038/ismej.2014.136"
-	bioc = "PtH2O2lipids" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PtH2O2lipids_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PtH2O2lipids/PtH2O2lipids_1.28.0.tar.gz"]
+	bioc = "PtH2O2lipids"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="adacffc77cd64901661bf1e6d400140607b6bc3598014f4e03229e6fcbd3a0e7")
+	version("1.34.0", commit="aff5d442be45f74b67c8a1a94f08e06bb5fe017e")
+	version("1.28.0", commit="395bc4c10397526c74536fe31ce7564ca7ed18ba")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-xcms", type=("build", "run"))

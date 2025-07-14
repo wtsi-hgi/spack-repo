@@ -13,11 +13,10 @@ class RMbqn(RPackage):
 	"""
 	
 	homepage = "https://github.com/arianeschad/mbqn"
-	bioc = "MBQN" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MBQN_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MBQN/MBQN_2.14.0.tar.gz"]
+	bioc = "MBQN"
 
-	version("2.20.0", tag="RELEASE_3_21")
-	version("2.14.0", sha256="a213de3bcc0021cdead31da732236962433e347e7e0066343ed91589c34a1e6a")
+	version("2.20.0", commit="e37dde65b375f36d8916354715659e52e4114bda")
+	version("2.14.0", commit="33f251535c64f9e58aac9e9e7ec330bb5ffcc284")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-limma@3.30.13:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RClustifyr(RPackage):
 	"""
 	
 	homepage = "https://github.com/rnabioco/clustifyr"
-	bioc = "clustifyr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clustifyr_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clustifyr/clustifyr_1.14.0.tar.gz"]
+	bioc = "clustifyr"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="f6ea4930a9179e9ea79423361d2841b027c58785a84c7ee2e29a9da51497d731")
+	version("1.20.0", commit="88a6a556cc3ceb56fc3372568cf641f5a05d882d")
+	version("1.14.0", commit="de3d2dfed201cc75efd128682ba8ce8906bc30f0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))

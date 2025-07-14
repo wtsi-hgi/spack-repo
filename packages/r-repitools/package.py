@@ -12,11 +12,10 @@ class RRepitools(RPackage):
 	Tools for the analysis of enrichment-based epigenomic data.  Features include summarization and visualization of epigenomic data across promoters according to gene expression context, finding regions of differential methylation/binding, BayMeth for quantifying methylation etc.
 	"""
 	
-	bioc = "Repitools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Repitools_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Repitools/Repitools_1.48.0.tar.gz"]
+	bioc = "Repitools"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="c0af0fc2131a0e27448ec71ef75ba6716c94e3d74dca501dacd09c9adf2d725e")
+	version("1.54.0", commit="5f0efc78e7686651a675edb50af94cba59017010")
+	version("1.48.0", commit="2513661d6304ae55f7cac6e8ed2352d9d37effbc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.8:", type=("build", "run"))

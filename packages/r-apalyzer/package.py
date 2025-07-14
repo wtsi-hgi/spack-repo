@@ -13,11 +13,10 @@ class RApalyzer(RPackage):
 	"""
 	
 	homepage = "https://github.com/RJWANGbioinfo/APAlyzer/"
-	bioc = "APAlyzer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/APAlyzer_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/APAlyzer/APAlyzer_1.16.0.tar.gz"]
+	bioc = "APAlyzer"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="ec57a22a705b48cd5f2dd2c5a47fb1161567b87b28d38429b8ddcc19c911f4cb")
+	version("1.22.0", commit="a1ea9dfbabf37b7f70671f6e651234415732a672")
+	version("1.16.0", commit="9a02db164423269fe717204b9dc9ce62b5141d12")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

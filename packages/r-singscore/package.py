@@ -13,11 +13,10 @@ class RSingscore(RPackage):
 	"""
 	
 	homepage = "https://davislaboratory.github.io/singscore"
-	bioc = "singscore" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/singscore_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/singscore/singscore_1.22.0.tar.gz"]
+	bioc = "singscore"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="04c44af1fc2ceb7da701d4a8fc32d4825ee4ebb7764b1daf0825ccb8e0fa4e41")
+	version("1.28.0", commit="9f4d8bac8062f1b27770fac46a877ab3c6357423")
+	version("1.22.0", commit="1941ad87ec156b1e3ad45aad0d0f147e8a1e4ff6")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

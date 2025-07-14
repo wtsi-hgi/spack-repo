@@ -12,11 +12,10 @@ class RGigsea(RPackage):
 	We presented the Genotype-imputed Gene Set Enrichment Analysis (GIGSEA), a novel method that uses GWAS-and-eQTL-imputed trait-associated differential gene expression to interrogate gene set enrichment for the trait-associated SNPs. By incorporating eQTL from large gene expression studies, e.g. GTEx, GIGSEA appropriately addresses such challenges for SNP enrichment as gene size, gene boundary, SNP distal regulation, and multiple-marker regulation. The weighted linear regression model, taking as weights both imputation accuracy and model completeness, was used to perform the enrichment test, properly adjusting the bias due to redundancy in different gene sets. The permutation test, furthermore, is used to evaluate the significance of enrichment, whose efficiency can be largely elevated by expressing the computational intensive part in terms of large matrix operation. We have shown the appropriate type I error rates for GIGSEA (<5%), and the preliminary results also demonstrate its good performance to uncover the real signal.
 	"""
 	
-	bioc = "GIGSEA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GIGSEA_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GIGSEA/GIGSEA_1.20.0.tar.gz"]
+	bioc = "GIGSEA"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="d731266a66eddc466f1cb998cf4bab96631fb810dd94170719b8cb82994c0320")
+	version("1.26.0", commit="4ba260c93c171e546f11abf368097e39181761dc")
+	version("1.20.0", commit="bed750298de97f680393f45eaa93c1787810eecd")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

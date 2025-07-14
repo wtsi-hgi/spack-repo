@@ -12,11 +12,10 @@ class RGigseadata(RPackage):
 	The gene set collection used for the GIGSEA package.
 	"""
 	
-	bioc = "GIGSEAdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GIGSEAdata_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GIGSEAdata/GIGSEAdata_1.20.0.tar.gz"]
+	bioc = "GIGSEAdata"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="bf7597cd68872e42abe02d52483dcbc4761ed61a314ffa9cf0e9c99507893a62")
+	version("1.26.0", commit="4e9bfb3d6c83ab288bb2fc6620d198d9774bdcc0")
+	version("1.20.0", commit="bd836c5f46115adc735686162b4cde785b1b8ad8")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

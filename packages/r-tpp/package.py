@@ -12,11 +12,10 @@ class RTpp(RPackage):
 	Analyze thermal proteome profiling (TPP) experiments with varying temperatures (TR) or compound concentrations (CCR).
 	"""
 	
-	bioc = "TPP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TPP_3.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TPP/TPP_3.30.0.tar.gz"]
+	bioc = "TPP"
 
-	version("3.36.0", tag="RELEASE_3_21")
-	version("3.30.0", sha256="66c208dc17ba494dd100c918aa32c9f854f9b9f213f2d3755db7e15c45db8e82")
+	version("3.36.0", commit="a098c488e239d0196030330b04094b0f808ab9b4")
+	version("3.30.0", commit="ad52ee3406a434b3dd3c297a1131d8a1c7bbbf09")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

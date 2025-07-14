@@ -13,11 +13,10 @@ class RUniprotWs(RPackage):
 	"""
 	
 	homepage = "https://github.com/Bioconductor/UniProt.ws"
-	bioc = "UniProt.ws" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/UniProt.ws_2.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/UniProt.ws/UniProt.ws_2.42.0.tar.gz"]
+	bioc = "UniProt.ws"
 
-	version("2.48.0", tag="RELEASE_3_21")
-	version("2.42.0", sha256="6da82cd0d769795609bc76d3ccd79114a580437edb228586a395d2024e36f762")
+	version("2.48.0", commit="d0e016bd675d4667f311e1d0fc7ac5c9b0963742")
+	version("2.42.0", commit="72fb35bf5226adce5e2867fda7be01323f6f959c")
 
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-rsqlite", type=("build", "run"))

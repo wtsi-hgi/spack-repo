@@ -12,11 +12,10 @@ class RMinimumdistance(RPackage):
 	Analysis of de novo copy number variants in trios from high-dimensional genotyping platforms.
 	"""
 	
-	bioc = "MinimumDistance" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MinimumDistance_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MinimumDistance/MinimumDistance_1.46.0.tar.gz"]
+	bioc = "MinimumDistance"
 
-	version("1.52.1", tag="RELEASE_3_21")
-	version("1.46.0", sha256="3fee8e9245cf5264a9dc5582197b11381198bb13be565441a8019fd90b967bbd")
+	version("1.52.1", commit="3c4f502542d7ce53c1e43bca9297de2f07ce3adc")
+	version("1.46.0", commit="b1328d88c2df0166c458dc4b41f3bf7d1072cb20")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-vanillaice@1.47.1:", type=("build", "run"))

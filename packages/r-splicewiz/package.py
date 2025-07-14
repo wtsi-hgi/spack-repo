@@ -13,11 +13,10 @@ class RSplicewiz(RPackage):
 	"""
 	
 	homepage = "https://github.com/alexchwong/SpliceWiz"
-	bioc = "SpliceWiz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpliceWiz_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpliceWiz/SpliceWiz_1.4.1.tar.gz"]
+	bioc = "SpliceWiz"
 
-	version("1.10.1", tag="RELEASE_3_21")
-	version("1.4.1", sha256="5764567bca0af28f4f56eb3afdbdd4015f3c3022195fe0b0d51cdb1339f07442")
+	version("1.10.1", commit="2568ef4483bb5abcd147e4ab1174ab2ea180a5c6")
+	version("1.4.1", commit="e98216c7e98a46cf9656a098f522940ce0851ce3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-nxtirfdata", type=("build", "run"))

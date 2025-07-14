@@ -12,11 +12,10 @@ class ROtubase(RPackage):
 	Provides a platform for Operational Taxonomic Unit based analysis
 	"""
 	
-	bioc = "OTUbase" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OTUbase_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OTUbase/OTUbase_1.52.0.tar.gz"]
+	bioc = "OTUbase"
 
-	version("1.58.0", tag="RELEASE_3_21")
-	version("1.52.0", sha256="ef5ffdd7217da0bdf08cf058ccb22fd1108e30571b45115dcd76cfeaf4e66848")
+	version("1.58.0", commit="364a17dc7e73c6dae2cf622db8931a2559a0cef7")
+	version("1.52.0", commit="e02b2a4debdeae65bc6372571ee697d38df2b4be")
 
 	depends_on("r@2.9:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

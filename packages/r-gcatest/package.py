@@ -13,11 +13,10 @@ class RGcatest(RPackage):
 	"""
 	
 	homepage = "https://github.com/StoreyLab/gcatest"
-	bioc = "gcatest" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gcatest_2.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gcatest/gcatest_2.2.0.tar.gz"]
+	bioc = "gcatest"
 
-	version("2.8.0", tag="RELEASE_3_21")
-	version("2.2.0", sha256="7bbe749ec6948355ccfadc31ba00c8c42a037c18ed67d25ca95319249dc1cf42")
+	version("2.8.0", commit="4861b9e6f6e8c549e32179b381c1619eb8dcf451")
+	version("2.2.0", commit="f3875f759286fefeadaf30531806e7b52482b151")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-lfa", type=("build", "run"))

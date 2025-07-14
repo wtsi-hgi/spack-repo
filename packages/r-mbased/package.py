@@ -12,11 +12,10 @@ class RMbased(RPackage):
 	The package implements MBASED algorithm for detecting allele-specific gene expression from RNA count data, where allele counts at individual loci (SNVs) are integrated into a gene-specific measure of ASE, and utilizes simulations to appropriately assess the statistical significance of observed ASE.
 	"""
 	
-	bioc = "MBASED" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MBASED_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MBASED/MBASED_1.36.0.tar.gz"]
+	bioc = "MBASED"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="1df50969cabc1825ebf43538b4db0b472bdb21f0f6d5b163fe7ef1f0d0bdb23d")
+	version("1.42.0", commit="554cac3ed7c47229a55997ad02e35e89dd31a5a9")
+	version("1.36.0", commit="59c9e157f75de8a816c2d5b05d61a08c9b0fa57e")
 
 	depends_on("r-runit", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

@@ -12,11 +12,10 @@ class RAspli(RPackage):
 	Integrative pipeline for the analysis of alternative splicing using RNAseq.
 	"""
 	
-	bioc = "ASpli" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASpli_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASpli/ASpli_2.12.0.tar.gz"]
+	bioc = "ASpli"
 
-	version("2.18.0", tag="RELEASE_3_21")
-	version("2.12.0", sha256="5e9ec698127d453cde27310b815b047da4114e0c89a00032104c38b7f7004166")
+	version("2.18.0", commit="8646ccc554727478af6552f892ceca6807a4e22b")
+	version("2.12.0", commit="bf94d057deaae124c225ef308543b6844e1175b3")
 
 	depends_on("r-edger", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

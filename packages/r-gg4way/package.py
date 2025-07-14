@@ -13,11 +13,10 @@ class RGg4way(RPackage):
 	"""
 	
 	homepage = "https://github.com/ben-laufer/gg4way"
-	bioc = "gg4way" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gg4way_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gg4way/gg4way_1.0.2.tar.gz"]
+	bioc = "gg4way"
 
-	version("1.6.1", tag="RELEASE_3_21")
-	version("1.0.2", sha256="2fde1b6de0c9ff57d2f926b153d908f65ecf9021daf7b36ee852bf4dc59ac0b7")
+	version("1.6.1", commit="8035a2cb9a602c700e30ff91eaa35c420485d97f")
+	version("1.0.2", commit="a882d4b05045ba24c5fbeede5a6d9135ebb3d7dc")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

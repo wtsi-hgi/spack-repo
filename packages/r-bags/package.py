@@ -12,11 +12,10 @@ class RBags(RPackage):
 	R package providing functions to perform geneset significance analysis over simple cross-sectional data between 2 and 5 phenotypes of interest.
 	"""
 	
-	bioc = "BAGS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BAGS_2.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BAGS/BAGS_2.42.0.tar.gz"]
+	bioc = "BAGS"
 
-	version("2.48.0", tag="RELEASE_3_21")
-	version("2.42.0", sha256="b0f1661bd0d03c9405f8625f5daedb1bb335ac0e4962e63d22b951769fcaa60c")
+	version("2.48.0", commit="4f8a29d54828061e99c746a8d6ddfea9da06c38b")
+	version("2.42.0", commit="934252537dacd0e1997645a99d087569fc1be308")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-breastcancervdx", type=("build", "run"))

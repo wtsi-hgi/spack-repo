@@ -12,11 +12,10 @@ class RDmrcatedata(RPackage):
 	This package contains 9 data objects supporting functionality and examples of the Bioconductor package DMRcate.
 	"""
 	
-	bioc = "DMRcatedata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DMRcatedata_2.20.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DMRcatedata/DMRcatedata_2.20.3.tar.gz"]
+	bioc = "DMRcatedata"
 
-	version("2.26.0", tag="RELEASE_3_21")
-	version("2.20.3", sha256="0ae00b8a0127f920c51ea964034bd05ebe0d543e478c31e01ec968606438133a")
+	version("2.26.0", commit="383a0a9dbea52af8700aea29a1a8133d4569bac2")
+	version("2.20.3", commit="8575f6cef7ba7c928c84de5bf71e2d5d84453dfe")
 	version("2.20.2", md5="0cd6e9693ca761425b661cd4a512d797")
 
 	depends_on("r@4:", type=("build", "run"))

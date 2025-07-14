@@ -13,11 +13,10 @@ class RSimona(RPackage):
 	"""
 	
 	homepage = "https://github.com/jokergoo/simona"
-	bioc = "simona" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/simona_1.0.10.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/simona/simona_1.0.10.tar.gz"]
+	bioc = "simona"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.10", sha256="bd149c1909877b03d79442f1f363ae3c05487605a7344d95b7976a9093f47eab")
+	version("1.6.0", commit="f2dc5df511ce31ea7b6667cb0903452a6e5fb81e")
+	version("1.0.10", commit="536fbcefc8042ae48eebd17d28aeb750cf95f572")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

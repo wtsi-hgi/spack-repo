@@ -13,11 +13,10 @@ class RBiosigner(RPackage):
 	"""
 	
 	homepage = "http://dx.doi.org/10.3389/fmolb.2016.00026"
-	bioc = "biosigner" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biosigner_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biosigner/biosigner_1.30.0.tar.gz"]
+	bioc = "biosigner"
 
-	version("1.36.4", tag="RELEASE_3_21")
-	version("1.30.0", sha256="c801767a58f46d6c2f96ad550e38f3e9220b232558543e9a69ff1a05379e7cc8")
+	version("1.36.4", commit="a7716fa2757736d3812f8a038a4dad65df9eac69")
+	version("1.30.0", commit="8e7b0e2387cf9d9de838d6eb414604dbaad3e135")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-e1071", type=("build", "run"))

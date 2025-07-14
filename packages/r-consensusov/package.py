@@ -13,11 +13,10 @@ class RConsensusov(RPackage):
 	"""
 	
 	homepage = "http://www.pmgenomics.ca/bhklab/software/consensusOV"
-	bioc = "consensusOV" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/consensusOV_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/consensusOV/consensusOV_1.24.0.tar.gz"]
+	bioc = "consensusOV"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="83faf25d57fd7418b2b22a43c14c3abd11c67c07b2b9f74ca76abc8862ef5d37")
+	version("1.30.0", commit="d5fa0596b7ddfa3d85c1661f8ee942b42bd97368")
+	version("1.24.0", commit="d805368d9d0916b329d0167d3d3e7eed2a2e65d0")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

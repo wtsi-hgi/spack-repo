@@ -12,11 +12,10 @@ class RChromplot(RPackage):
 	Package designed to visualize genomic data along the chromosomes, where the vertical chromosomes are sorted by number, with sex chromosomes at the end.
 	"""
 	
-	bioc = "chromPlot" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chromPlot_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chromPlot/chromPlot_1.30.0.tar.gz"]
+	bioc = "chromPlot"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="fee0aa9c4fa3ff8c82d06192897a9928491f45157056583d2f19bf98028d18f7")
+	version("1.36.0", commit="3c429c93631077d295db35b18858cf8cbe53c5a6")
+	version("1.30.0", commit="7747c745e9fbdc249e166b9ed89b598cfdede997")
 
 	depends_on("r-biomart", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

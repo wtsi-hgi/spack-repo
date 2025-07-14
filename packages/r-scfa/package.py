@@ -13,11 +13,10 @@ class RScfa(RPackage):
 	"""
 	
 	homepage = "https://github.com/duct317/SCFA"
-	bioc = "SCFA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCFA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCFA/SCFA_1.12.0.tar.gz"]
+	bioc = "SCFA"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="e8501c609382cb4946ed7ac64c0ae1e7f5df40d58771aa6c663c75f6aeaf779d")
+	version("1.18.0", commit="82dca55a37da09b23cec90e451ae17da88825bb6")
+	version("1.12.0", commit="512730d1b35c34a54911299967c65d2a8ccd1cb7")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-matrixstats", type=("build", "run"))

@@ -12,11 +12,10 @@ class RCnvranger(RPackage):
 	The CNVRanger package implements a comprehensive tool suite for CNV analysis. This includes functionality for summarizing individual CNV calls across a population, assessing overlap with functional genomic regions, and association analysis with gene expression and quantitative phenotypes.
 	"""
 	
-	bioc = "CNVRanger" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNVRanger_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNVRanger/CNVRanger_1.18.1.tar.gz"]
+	bioc = "CNVRanger"
 
-	version("1.24.2", tag="RELEASE_3_21")
-	version("1.18.1", sha256="62525db41e24dfad543649cd135c84a80f21068fa66f2ca1687533654d1838f3")
+	version("1.24.2", commit="eead3b8771f01bc48c4a795e21af94a8079059e9")
+	version("1.18.1", commit="bccc3062ce7281e1bb4341b2dcc36a6e43d7ce6d")
 	version("1.18.0", md5="3e68952c47447dfad311d1adf7b971d1")
 
 	depends_on("r-genomicranges", type=("build", "run"))

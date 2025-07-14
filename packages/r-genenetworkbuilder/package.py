@@ -12,11 +12,10 @@ class RGenenetworkbuilder(RPackage):
 	Appliation for discovering direct or indirect targets of transcription factors using ChIP-chip or ChIP-seq, and microarray or RNA-seq gene expression data. Inputting a list of genes of potential targets of one TF from ChIP-chip or ChIP-seq, and the gene expression results, GeneNetworkBuilder generates a regulatory network of the TF.
 	"""
 	
-	bioc = "GeneNetworkBuilder" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneNetworkBuilder_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneNetworkBuilder/GeneNetworkBuilder_1.44.0.tar.gz"]
+	bioc = "GeneNetworkBuilder"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="1b7ce3b355694fdfcf4186e05bc245cd0c52fc5e572e56c754f66a5c6ca5e73f")
+	version("1.50.0", commit="97920bfd6242d65a1c731ec80a3c9404b23bab04")
+	version("1.44.0", commit="e57b56880705dc3fd6cca34ca3779caf80cf754b")
 
 	depends_on("r@2.15.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

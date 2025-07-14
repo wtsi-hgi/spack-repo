@@ -12,10 +12,9 @@ class RMvcclass(RPackage):
 	Creates classes used in model-view-controller (MVC) design
 	"""
 	
-	bioc = "MVCClass" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MVCClass_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MVCClass/MVCClass_1.76.0.tar.gz"]
+	bioc = "MVCClass"
 
-	version("1.82.0", tag="RELEASE_3_21")
-	version("1.76.0", sha256="5d5d37965e01b685cb666a0e487723ed685faebb70862d70e9c62684cdb5d199")
+	version("1.82.0", commit="eb7e11b7dea4c8b2fe9a64432471fbfc80dddb8e")
+	version("1.76.0", commit="35611dec85669863dd8ad92c86278f4871e02b9f")
 
 	depends_on("r@2.1:", type=("build", "run"))

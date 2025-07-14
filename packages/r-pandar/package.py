@@ -12,11 +12,10 @@ class RPandar(RPackage):
 	Runs PANDA, an algorithm for discovering novel network structure by combining information from multiple complementary data sources.
 	"""
 	
-	bioc = "pandaR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pandaR_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pandaR/pandaR_1.34.0.tar.gz"]
+	bioc = "pandaR"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="dce63a6685d1ae7eeb25fb612ba5f0980814324be72072910d066688d26ec294")
+	version("1.40.0", commit="76a2972f1e02a9f42baae8e1d1cc9878d546d653")
+	version("1.34.0", commit="2c60e4285e02781819d80c85b399eda0647b05f8")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

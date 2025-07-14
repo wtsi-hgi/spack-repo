@@ -13,11 +13,10 @@ class RSemdist(RPackage):
 	"""
 	
 	homepage = "http://github.com/iangonzalez/SemDist"
-	bioc = "SemDist" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SemDist_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SemDist/SemDist_1.36.0.tar.gz"]
+	bioc = "SemDist"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="3f86cfea1d6de9f097c4a764edf40923a820ba2dd57a8bd17a32c31192711f98")
+	version("1.42.0", commit="97a85b0d1d5fcb331a32b663fb08abf46652126d")
+	version("1.36.0", commit="bf8559da3fbb57afdfe3bcecbd1ddfac354e2466")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
