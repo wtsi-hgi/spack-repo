@@ -15,7 +15,7 @@ class RPhosr(RPackage):
 	bioc = "PhosR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PhosR_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PhosR/PhosR_1.12.0.tar.gz"]
 
-    version("1.18.1", tag="RELEASE_3_21")
+	version("1.18.1", tag="RELEASE_3_21")
 	version("1.12.0", sha256="eb6c62944a7f9393b63aff148dd2bc8750f75cec5b7528fe6f7c0a03226056f2")
 
 	depends_on("r@4.2:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RTrigger(RPackage):
 	bioc = "trigger" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/trigger_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/trigger/trigger_1.48.0.tar.gz"]
 
-    version("1.54.0", tag="RELEASE_3_21")
+	version("1.54.0", tag="RELEASE_3_21")
 	version("1.48.0", sha256="d1f42cc1269d5c6559722779921697a3a7321ab10643d606ef27eb59cfd5922f")
 
 	depends_on("r@2.14:", type=("build", "run"))

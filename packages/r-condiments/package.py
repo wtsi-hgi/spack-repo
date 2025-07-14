@@ -16,7 +16,7 @@ class RCondiments(RPackage):
 	bioc = "condiments" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/condiments_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/condiments/condiments_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="a066fc087874182d73b298e2e916fbdf47b9fee17757552347ecb25bbc7ba3cb")
 
 	depends_on("r@4:", type=("build", "run"))

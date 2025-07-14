@@ -15,7 +15,7 @@ class RMsmstests(RPackage):
 	bioc = "msmsTests" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msmsTests_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msmsTests/msmsTests_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="c9bc06dce29caa101c42d9bf45d1162e10b75852bdc02babb2d9c154b7272e36")
 
 	depends_on("r@3.0.1:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RRiboprofiling(RPackage):
 	bioc = "RiboProfiling" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RiboProfiling_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RiboProfiling/RiboProfiling_1.32.0.tar.gz"]
 
-    version("1.38.0", tag="RELEASE_3_21")
+	version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="c3ab88dc2bdcd9a020559e86376f59a9341b13833014242e493749ddaf3fa3ad")
 
 	depends_on("r@3.5:", type=("build", "run"))

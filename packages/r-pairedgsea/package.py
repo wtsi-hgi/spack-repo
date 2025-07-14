@@ -16,7 +16,7 @@ class RPairedgsea(RPackage):
 	bioc = "pairedGSEA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pairedGSEA_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pairedGSEA/pairedGSEA_1.2.0.tar.gz"]
 
-    version("1.8.0", tag="RELEASE_3_21")
+	version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="bead1ecc8d1cc2f4e370ec6062bc0a873a5b2cce3818937c5c6a1bb7e02b97d1")
 
 	depends_on("r@4.3:", type=("build", "run"))

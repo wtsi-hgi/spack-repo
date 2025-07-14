@@ -16,7 +16,7 @@ class RMsqrob2(RPackage):
 	bioc = "msqrob2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msqrob2_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msqrob2/msqrob2_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="c58925c604da7c6986e518617f21a5096f4479c04de40c3a94cb55d959004abc", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msqrob2_1.10.0.tar.gz")
 
 	depends_on("r@4.1:", type=("build", "run"))

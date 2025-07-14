@@ -16,7 +16,7 @@ class RDrawproteins(RPackage):
 	bioc = "drawProteins" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/drawProteins_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/drawProteins/drawProteins_1.22.2.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.2", sha256="7112a4924a43d9a0bb27ace07566dfbb97b30c44784d3553f3157e9d489088d5")
 	version("1.22.0", md5="67cbf634b37851946e9cc3885cdda6c5")
 

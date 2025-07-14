@@ -15,7 +15,7 @@ class RCelaref(RPackage):
 	bioc = "celaref" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/celaref_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/celaref/celaref_1.20.0.tar.gz"]
 
-    version("1.26.0", tag="RELEASE_3_21")
+	version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="baa17c4a46d107ea995f074ae1708d6988501a42c9a597b87a4458e251825ef2")
 
 	depends_on("r@3.5:", type=("build", "run"))

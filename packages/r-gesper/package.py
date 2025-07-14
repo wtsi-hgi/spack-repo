@@ -16,7 +16,7 @@ class RGesper(RPackage):
 	bioc = "gespeR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gespeR_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gespeR/gespeR_1.34.0.tar.gz"]
 
-    version("1.40.0", tag="RELEASE_3_21")
+	version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="4ab88430573c331e671c94059749d8c5689423ee1bffcb95aa4428e843b2f1b2")
 
 	depends_on("r-ggplot2", type=("build", "run"))

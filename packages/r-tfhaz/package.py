@@ -15,7 +15,7 @@ class RTfhaz(RPackage):
 	bioc = "TFHAZ" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFHAZ_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFHAZ/TFHAZ_1.24.0.tar.gz"]
 
-    version("1.30.0", tag="RELEASE_3_21")
+	version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="91e2a2e09124bc2b0a67f2e328cd639c785e5e77fcc46d8a17599b67548b0401")
 
 	depends_on("r@3.5:", type=("build", "run"))

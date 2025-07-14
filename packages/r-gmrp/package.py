@@ -15,7 +15,7 @@ class RGmrp(RPackage):
 	bioc = "GMRP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GMRP_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GMRP/GMRP_1.30.0.tar.gz"]
 
-    version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="a97f451eaf5e2f79c6655710e55cc057a3b209b103d18eaf4757b54d45f6a495")
 
 	depends_on("r@3.3:", type=("build", "run"))

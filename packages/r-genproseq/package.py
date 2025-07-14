@@ -15,7 +15,7 @@ class RGenproseq(RPackage):
 	bioc = "GenProSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenProSeq_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenProSeq/GenProSeq_1.6.0.tar.gz"]
 
-    version("1.12.0", tag="RELEASE_3_21")
+	version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="464647444f3f6d5547d16c95b96fb83d6c3c7e821a5e4462e4b3029b26c9389f")
 
 	depends_on("r-keras", type=("build", "run"))

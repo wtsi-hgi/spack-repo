@@ -15,7 +15,7 @@ class RDivergence(RPackage):
 	bioc = "divergence" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/divergence_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/divergence/divergence_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="9d8302f86a72ccdf6dbfdff93b08b2857c2d6d6d4422f6077174fb398a80d558")
 
 	depends_on("r@3.6:", type=("build", "run"))

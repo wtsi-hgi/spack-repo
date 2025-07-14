@@ -16,7 +16,7 @@ class RSpotclean(RPackage):
 	bioc = "SpotClean" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpotClean_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpotClean/SpotClean_1.4.1.tar.gz"]
 
-    version("1.10.0", tag="RELEASE_3_21")
+	version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.1", sha256="64b09ee1226b18db386581e2a73b7557780711583f2d83f03b4ea7f51734ca1a")
 
 	depends_on("r@4.2:", type=("build", "run"))

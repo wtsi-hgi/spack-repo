@@ -16,7 +16,7 @@ class RPpcseq(RPackage):
 	bioc = "ppcseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ppcseq_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ppcseq/ppcseq_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="b60e366828d56b33735e5b37aad4a643b8b69e65c35202d6ac319c39f53ae605")
 
 	depends_on("r@4.1:", type=("build", "run"))

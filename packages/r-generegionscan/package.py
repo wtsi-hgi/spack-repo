@@ -15,7 +15,7 @@ class RGeneregionscan(RPackage):
 	bioc = "GeneRegionScan" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneRegionScan_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneRegionScan/GeneRegionScan_1.58.0.tar.gz"]
 
-    version("1.64.0", tag="RELEASE_3_21")
+	version("1.64.0", tag="RELEASE_3_21")
 	version("1.58.0", sha256="468eabcd0bb1925a9204b3a89a6184b40e6bad266464ea106a97eb80ae7d09ff")
 
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

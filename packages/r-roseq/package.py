@@ -16,7 +16,7 @@ class RRoseq(RPackage):
 	bioc = "ROSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ROSeq_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ROSeq/ROSeq_1.14.0.tar.gz"]
 
-    version("1.20.0", tag="RELEASE_3_21")
+	version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="de1c0f4792b14ca7ee479a4ba4807d95f25bd0b29d028921b029127e05431293")
 
 	depends_on("r@4:", type=("build", "run"))

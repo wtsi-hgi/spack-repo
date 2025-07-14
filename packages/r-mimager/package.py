@@ -16,7 +16,7 @@ class RMimager(RPackage):
 	bioc = "mimager" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mimager_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mimager/mimager_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="107645249ccea58eacc26c90cfa8a4405889d81d720edb60f89abfbc5e991c03")
 
 	depends_on("r-biobase", type=("build", "run"))

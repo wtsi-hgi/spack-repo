@@ -16,7 +16,7 @@ class RDcanr(RPackage):
 	bioc = "dcanr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dcanr_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dcanr/dcanr_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="dc738f961797895c18d996a5e1e6471b829d8c94906f2014faf9ff8dc95d5a0b")
 
 	depends_on("r@3.6:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RCllmethylation(RPackage):
 	bioc = "CLLmethylation" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CLLmethylation_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CLLmethylation/CLLmethylation_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="ba8b439b299767f9ed7ffb732642671f48f6a18e6fcf239045fa0b89d22b609a")
 
 	depends_on("r@3.5:", type=("build", "run"))

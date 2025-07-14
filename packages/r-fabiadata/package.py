@@ -16,7 +16,7 @@ class RFabiadata(RPackage):
 	bioc = "fabiaData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/fabiaData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/fabiaData/fabiaData_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="bb517c14c8596f0d02ccdbfd0156274b72a49c32f20420e48dd9c87d6608902a")
 
 	depends_on("r@2.10:", type=("build", "run"))

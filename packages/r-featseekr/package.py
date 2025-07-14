@@ -16,7 +16,7 @@ class RFeatseekr(RPackage):
 	bioc = "FeatSeekR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FeatSeekR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FeatSeekR/FeatSeekR_1.2.0.tar.gz"]
 
-    version("1.8.0", tag="RELEASE_3_21")
+	version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="4ead7a2139aca1f50d5d583edba32826ff1e19b1f4c0efa9c583dca58349b75b")
 
 	depends_on("r-pheatmap", type=("build", "run"))

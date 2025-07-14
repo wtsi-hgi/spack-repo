@@ -16,7 +16,7 @@ class RTenxbusdata(RPackage):
 	bioc = "TENxBUSData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TENxBUSData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TENxBUSData/TENxBUSData_1.16.0.tar.gz"]
 
-    version("1.22.0", tag="RELEASE_3_21")
+	version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="f6a0de55b9409f4efedd2139bb507a79551874ae991a4a0c337afdad005e381c")
 
 	depends_on("r-experimenthub", type=("build", "run"))

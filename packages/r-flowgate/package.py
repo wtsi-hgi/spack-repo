@@ -15,7 +15,7 @@ class RFlowgate(RPackage):
 	bioc = "flowGate" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowGate_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowGate/flowGate_1.2.0.tar.gz"]
 
-    version("1.8.0", tag="RELEASE_3_21")
+	version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="3519876952d4b09dfd4231d7d0114b055cb15758a48ad4744c1d34adbd433c52")
 
 	depends_on("r-flowworkspace@4.0.6:", type=("build", "run"))

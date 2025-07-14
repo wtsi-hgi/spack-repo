@@ -15,7 +15,7 @@ class RCuratedbreastdata(RPackage):
 	bioc = "curatedBreastData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedBreastData_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedBreastData/curatedBreastData_2.30.0.tar.gz"]
 
-    version("2.36.0", tag="RELEASE_3_21")
+	version("2.36.0", tag="RELEASE_3_21")
 	version("2.30.0", sha256="5933489ede1176761ddcf1b42c4af49dbf3988ce20d3d4d9395f51b17094f388")
 
 	depends_on("r@3:", type=("build", "run"))

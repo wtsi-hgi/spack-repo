@@ -16,7 +16,7 @@ class RScmap(RPackage):
 	bioc = "scmap" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scmap_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scmap/scmap_1.24.0.tar.gz"]
 
-    version("1.30.0", tag="RELEASE_3_21")
+	version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="a8996956338a658e66ee047e389faacc52e0022da05c72c3c5382e87748fa5e9")
 
 	depends_on("r@3.4:", type=("build", "run"))

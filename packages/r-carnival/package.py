@@ -16,7 +16,7 @@ class RCarnival(RPackage):
 	bioc = "CARNIVAL" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CARNIVAL_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CARNIVAL/CARNIVAL_2.12.0.tar.gz"]
 
-    version("2.18.0", tag="RELEASE_3_21")
+	version("2.18.0", tag="RELEASE_3_21")
 	version("2.12.0", sha256="9b6c24aa0832e1eae7a2d6e112bcd89025b0c2f288c724ce459e0b5f58b40a7b")
 
 	depends_on("r@4:", type=("build", "run"))

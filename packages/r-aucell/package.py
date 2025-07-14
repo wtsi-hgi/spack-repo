@@ -16,7 +16,7 @@ class RAucell(RPackage):
 	bioc = "AUCell" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AUCell_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AUCell/AUCell_1.24.0.tar.gz"]
 
-    version("1.30.1", tag="RELEASE_3_21")
+	version("1.30.1", tag="RELEASE_3_21")
 	version("1.24.0", sha256="202ecaf0f3c1ab6ce11bb73ccb69e85f1dbd4126f6a64d0fd3bc9e88f06231b4")
 
 	depends_on("r-delayedarray", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMousefm(RPackage):
 	bioc = "MouseFM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MouseFM_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MouseFM/MouseFM_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="a080d0e6bac984813cd660ed21c96d9e6b4d3eabc3c60fba16c72c0d53ad20d7")
 
 	depends_on("r@4:", type=("build", "run"))

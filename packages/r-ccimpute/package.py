@@ -15,7 +15,7 @@ class RCcimpute(RPackage):
 	bioc = "ccImpute" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ccImpute_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ccImpute/ccImpute_1.4.0.tar.gz"]
 
-    version("1.10.0", tag="RELEASE_3_21")
+	version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="12728b12c2f470112c7a3108a6f999d798d67e07f892c75f08571c6462f2476c")
 
 	depends_on("r-rcpp", type=("build", "run"))

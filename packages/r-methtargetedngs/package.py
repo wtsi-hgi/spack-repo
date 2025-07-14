@@ -15,7 +15,7 @@ class RMethtargetedngs(RPackage):
 	bioc = "MethTargetedNGS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MethTargetedNGS_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MethTargetedNGS/MethTargetedNGS_1.34.0.tar.gz"]
 
-    version("1.40.0", tag="RELEASE_3_21")
+	version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="8cef3643e99f5f79706f68d542e73be6a964649f7b382c66e9b8f08be3fd4817")
 
 	depends_on("r@3.1.2:", type=("build", "run"))

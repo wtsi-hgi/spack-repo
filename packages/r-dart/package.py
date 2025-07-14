@@ -15,7 +15,7 @@ class RDart(RPackage):
 	bioc = "DART" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DART_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DART/DART_1.50.0.tar.gz"]
 
-    version("1.56.0", tag="RELEASE_3_21")
+	version("1.56.0", tag="RELEASE_3_21")
 	version("1.50.0", sha256="ee212c94aa67da9c4b05062367d3fab5c54ab08e08898b687e0efab887c2601c")
 
 	depends_on("r@2.10:", type=("build", "run"))

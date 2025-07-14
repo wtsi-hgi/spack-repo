@@ -16,7 +16,7 @@ class RPareg(RPackage):
 	bioc = "pareg" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pareg_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pareg/pareg_1.6.0.tar.gz"]
 
-    version("1.12.0", tag="RELEASE_3_21")
+	version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="f60a1ae8a132d32763c39ae05bbb2364b16ed8446826cf62106d6080ba447233")
 
 	depends_on("r@4.2:", type=("build", "run"))

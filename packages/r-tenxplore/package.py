@@ -15,7 +15,7 @@ class RTenxplore(RPackage):
 	bioc = "tenXplore" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tenXplore_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tenXplore/tenXplore_1.24.0.tar.gz"]
 
-    version("1.30.0", tag="RELEASE_3_21")
+	version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="95b76b3e0c0e54d261395aa9f50c78a807273504811b0ccfa778f69a77ef68ea")
 
 	depends_on("r@4:", type=("build", "run"))

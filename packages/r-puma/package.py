@@ -16,7 +16,7 @@ class RPuma(RPackage):
 	bioc = "puma" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/puma_3.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/puma/puma_3.44.0.tar.gz"]
 
-    version("3.50.0", tag="RELEASE_3_21")
+	version("3.50.0", tag="RELEASE_3_21")
 	version("3.44.0", sha256="b33de21f8d1bde7e16c2dff3347d67ebb03861423713c4d00de0e94b887ba0e8")
 
 	depends_on("r@3.2:", type=("build", "run"))

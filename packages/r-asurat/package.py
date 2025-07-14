@@ -15,7 +15,7 @@ class RAsurat(RPackage):
 	bioc = "ASURAT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASURAT_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASURAT/ASURAT_1.6.0.tar.gz"]
 
-    version("1.12.0", tag="RELEASE_3_21")
+	version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="679770fe6e667a30ffb4a3dfe1426b780cb7c4059771017337d6683f1f3fb453")
 
 	depends_on("r@4:", type=("build", "run"))

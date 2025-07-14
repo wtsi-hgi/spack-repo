@@ -16,7 +16,7 @@ class RRbowtie(RPackage):
 	bioc = "Rbowtie" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rbowtie_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rbowtie/Rbowtie_1.42.0.tar.gz"]
 
-    version("1.48.0", tag="RELEASE_3_21")
+	version("1.48.0", tag="RELEASE_3_21")
 	version("1.42.0", sha256="88a2aaa3bbbc451aae708d5ba88e39a2ddbee9709029daf94aaf301d1fca3cab")
 
 	depends_on("zlib", type=("build", "link", "run"))

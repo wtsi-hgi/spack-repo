@@ -16,7 +16,7 @@ class RSplicinggraphs(RPackage):
 	bioc = "SplicingGraphs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SplicingGraphs_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SplicingGraphs/SplicingGraphs_1.42.0.tar.gz"]
 
-    version("1.48.0", tag="RELEASE_3_21")
+	version("1.48.0", tag="RELEASE_3_21")
 	version("1.42.0", sha256="645c7406148182200352240d554df82b1fdf24a4a69a092a26b8357589695ed9")
 
 	depends_on("r-genomicfeatures", type=("build", "run"))

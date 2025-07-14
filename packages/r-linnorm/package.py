@@ -16,7 +16,7 @@ class RLinnorm(RPackage):
 	bioc = "Linnorm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Linnorm_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Linnorm/Linnorm_2.26.0.tar.gz"]
 
-    version("2.32.0", tag="RELEASE_3_21")
+	version("2.32.0", tag="RELEASE_3_21")
 	version("2.26.0", sha256="42ef2b3dd295e28ff6c39fe354f01f4083a8c8a4d0a326fbab807fe457fda5ab")
 
 	depends_on("r@4.1:", type=("build", "run"))

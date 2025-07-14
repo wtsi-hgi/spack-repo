@@ -15,7 +15,7 @@ class RGdrtestdata(RPackage):
 	bioc = "gDRtestData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/gDRtestData_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/gDRtestData/gDRtestData_1.0.0.tar.gz"]
 
-    version("1.6.0", tag="RELEASE_3_21")
+	version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="19b06102d2720e5d2b423a98b7075fecf22b7769314ed64c6379c3c0f6f5995f")
 
 	depends_on("r@4.2:", type=("build", "run"))

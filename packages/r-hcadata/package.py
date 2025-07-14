@@ -16,7 +16,7 @@ class RHcadata(RPackage):
 	bioc = "HCAData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HCAData_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HCAData/HCAData_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="81385a929f9d709f4baf86138b06f2d6dc73019102c22ade4db69d8754c6a1e5")
 
 	depends_on("r@3.6:", type=("build", "run"))

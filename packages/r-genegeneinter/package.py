@@ -15,7 +15,7 @@ class RGenegeneinter(RPackage):
 	bioc = "GeneGeneInteR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneGeneInteR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneGeneInteR/GeneGeneInteR_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="fe6fea77a026faa323539d5e485cd7d2e4b07247d2b6b1bc6d0dd8c5503cdfad")
 
 	depends_on("r@4:", type=("build", "run"))

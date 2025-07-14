@@ -15,7 +15,7 @@ class RCfassay(RPackage):
 	bioc = "CFAssay" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CFAssay_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CFAssay/CFAssay_1.36.0.tar.gz"]
 
-    version("1.42.0", tag="RELEASE_3_21")
+	version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="44a819139501cf2bee863a9d0a0e624f19c9a3e0a2cc6755f2020a7e886e133a")
 
 	depends_on("r@2.10:", type=("build", "run"))

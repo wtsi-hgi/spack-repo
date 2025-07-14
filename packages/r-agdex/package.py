@@ -15,7 +15,7 @@ class RAgdex(RPackage):
 	bioc = "AGDEX"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AGDEX_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AGDEX/AGDEX_1.50.0.tar.gz"]
 
-    version("1.56.0", tag="RELEASE_3_21")
+	version("1.56.0", tag="RELEASE_3_21")
 	version("1.50.0", sha256="3a88e42ed2896d24138b8cbbd79ddb8db938f08cdedfcc6d43797038c725e71b")
 	version("1.48.0", commit="917920b397493b0ea40093044ebe36fff7c389ad")
 	version("1.46.0", commit="d7c38e8bdcaa7b0261117c605e7f61e2b07e8316")

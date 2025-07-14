@@ -16,7 +16,7 @@ class RBreakpointrdata(RPackage):
 	bioc = "breakpointRdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/breakpointRdata_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/breakpointRdata/breakpointRdata_1.20.0.tar.gz"]
 
-    version("1.26.0", tag="RELEASE_3_21")
+	version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="b297da45e4a070b3dc7bf4467f779eca0b36ccf9d3640db9b7772a33c8dd898f")
 
 	depends_on("r@3.5:", type=("build", "run"))

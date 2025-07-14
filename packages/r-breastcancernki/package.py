@@ -16,7 +16,7 @@ class RBreastcancernki(RPackage):
 	bioc = "breastCancerNKI" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/breastCancerNKI_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/breastCancerNKI/breastCancerNKI_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="3aaac0225fdaa6ad01f064be4efceb4d46d01300bf9a8484b783cb4308de7460")
 
 	depends_on("r@2.5:", type=("build", "run"))

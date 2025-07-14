@@ -15,7 +15,7 @@ class RGuideseq(RPackage):
 	bioc = "GUIDEseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GUIDEseq_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GUIDEseq/GUIDEseq_1.32.0.tar.gz"]
 
-    version("1.38.0", tag="RELEASE_3_21")
+	version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="d5b01e733baf6c8a602501fb0e0e616fb041852f343a596e93bfdbc418277988")
 
 	depends_on("r@3.5:", type=("build", "run"))

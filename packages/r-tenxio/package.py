@@ -16,7 +16,7 @@ class RTenxio(RPackage):
 	bioc = "TENxIO" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TENxIO_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TENxIO/TENxIO_1.4.0.tar.gz"]
 
-    version("1.10.2", tag="RELEASE_3_21")
+	version("1.10.2", tag="RELEASE_3_21")
 	version("1.4.0", sha256="beece47e217747bf8279d3665963df727e2b685c6912414dbd1f639b0ceb2185")
 
 	depends_on("r@4.2:", type=("build", "run"))

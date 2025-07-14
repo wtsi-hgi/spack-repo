@@ -15,7 +15,7 @@ class RExcluster(RPackage):
 	bioc = "ExCluster" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExCluster_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExCluster/ExCluster_1.20.0.tar.gz"]
 
-    version("1.26.0", tag="RELEASE_3_21")
+	version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="b4f55b114ab2462ae9481f6c6919a474376d59545d9ac3474adbc0bd0875de71")
 
 	depends_on("r-rsubread", type=("build", "run"))

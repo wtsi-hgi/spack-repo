@@ -15,7 +15,7 @@ class RMelissa(RPackage):
 	bioc = "Melissa" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Melissa_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Melissa/Melissa_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="66e8b0c98a16936859eacd5d21c42fad7443a59412f3edb487e5a2e35c3be27f")
 
 	depends_on("r@3.5:", type=("build", "run"))

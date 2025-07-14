@@ -16,7 +16,7 @@ class RGsva(RPackage):
 	bioc = "GSVA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSVA_1.50.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSVA/GSVA_1.50.1.tar.gz"]
 
-    version("2.2.0", tag="RELEASE_3_21")
+	version("2.2.0", tag="RELEASE_3_21")
 	version("1.50.1", md5="6412f61594abfb970a54869bfd48a9a0")
 	version("1.50.0", md5="e21af1ab9dabfa5801fb978b50f992e2")
 

@@ -16,7 +16,7 @@ class RDoppelgangr(RPackage):
 	bioc = "doppelgangR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/doppelgangR_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/doppelgangR/doppelgangR_1.30.0.tar.gz"]
 
-    version("1.36.1", tag="RELEASE_3_21")
+	version("1.36.1", tag="RELEASE_3_21")
 	version("1.30.0", sha256="0dc650ade00fb36488627cac599121314fde0d8931c37943fababbc38acc5041")
 
 	depends_on("r@3.5:", type=("build", "run"))

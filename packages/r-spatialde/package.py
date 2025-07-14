@@ -16,7 +16,7 @@ class RSpatialde(RPackage):
 	bioc = "spatialDE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spatialDE_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spatialDE/spatialDE_1.8.1.tar.gz"]
 
-    version("1.14.1", tag="RELEASE_3_21")
+	version("1.14.1", tag="RELEASE_3_21")
 	version("1.8.1", sha256="0404fb4c953aeaea27adc0ac8802982be51b0fbc5172491297402d8e2ed8f2ac")
 
 	depends_on("r@4.3:", type=("build", "run"))

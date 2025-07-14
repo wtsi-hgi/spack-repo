@@ -15,7 +15,7 @@ class RQckitfastq(RPackage):
 	bioc = "qckitfastq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qckitfastq_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qckitfastq/qckitfastq_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="211a464555f33c445beadd2d0a5b0b4db853f70fc89669f50890e96ad1634939")
 
 	depends_on("r-magrittr", type=("build", "run"))

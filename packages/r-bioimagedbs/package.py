@@ -16,7 +16,7 @@ class RBioimagedbs(RPackage):
 	bioc = "BioImageDbs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BioImageDbs_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/BioImageDbs/BioImageDbs_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="db26a55a0d2c489e371183c8b9bfc11351b95a798cc8a7a959f9b818804df5f5")
 
 	depends_on("r@4.1:", type=("build", "run"))

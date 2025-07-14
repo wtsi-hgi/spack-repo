@@ -15,7 +15,7 @@ class RRaggedexperiment(RPackage):
 	bioc = "RaggedExperiment" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RaggedExperiment_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RaggedExperiment/RaggedExperiment_1.26.0.tar.gz"]
 
-    version("1.32.2", tag="RELEASE_3_21")
+	version("1.32.2", tag="RELEASE_3_21")
 	version("1.26.0", sha256="6693a3bc4efdd5ae687848a2916014f367f353b237757678d02dbfbe59149d1f")
 
 	depends_on("r@4.2:", type=("build", "run"))

@@ -19,7 +19,7 @@ class RRhdf5(RPackage):
 
 	bioc = "rhdf5"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rhdf5_2.46.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rhdf5/rhdf5_2.46.1.tar.gz"]
-    version("2.52.1", tag="RELEASE_3_21")
+	version("2.52.1", tag="RELEASE_3_21")
 	version("2.46.1", sha256="b68f4960bf8498e83984467b07ed8fa10b3ef68fb5abbc776d6b7dee9307de79", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rhdf5_2.46.1.tar.gz")
 	version("2.44.0", commit="0f6e367ca9e97c37c683cd0f97c06732a67146f0")
 	version("2.42.0", commit="fa26027d57b5b6d1c297446d9bbed74d5710c5d2")

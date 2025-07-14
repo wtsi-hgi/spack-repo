@@ -16,7 +16,7 @@ class RPqsfinder(RPackage):
 	bioc = "pqsfinder" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pqsfinder_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pqsfinder/pqsfinder_2.18.0.tar.gz"]
 
-    version("2.24.0", tag="RELEASE_3_21")
+	version("2.24.0", tag="RELEASE_3_21")
 	version("2.18.0", sha256="cb30161be92db68615306dcef78c2c872765a5ccc21c5947443ecdddcccda42e")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RGraper(RPackage):
 	bioc = "graper" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/graper_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/graper/graper_1.18.0.tar.gz"]
 
-    version("1.24.2", tag="RELEASE_3_21")
+	version("1.24.2", tag="RELEASE_3_21")
 	version("1.18.0", sha256="eb08791f3163d93ecfd2a3663c6324b5f0f140849afd4a258469c7535d2b193e")
 
 	depends_on("r@3.6:", type=("build", "run"))

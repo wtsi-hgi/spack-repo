@@ -16,7 +16,7 @@ class RSignifinder(RPackage):
 	bioc = "signifinder" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/signifinder_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/signifinder/signifinder_1.4.0.tar.gz"]
 
-    version("1.10.0", tag="RELEASE_3_21")
+	version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="330b2ae04fd1b4d02053dfecc4698efe3543c7ea42e430e0df2598915c2464fa")
 
 	depends_on("r@4.3:", type=("build", "run"))

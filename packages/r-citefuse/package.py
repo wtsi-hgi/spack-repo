@@ -15,7 +15,7 @@ class RCitefuse(RPackage):
 	bioc = "CiteFuse" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CiteFuse_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CiteFuse/CiteFuse_1.14.0.tar.gz"]
 
-    version("1.20.0", tag="RELEASE_3_21")
+	version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="2d8e3dac5941788205fcc08b7b8cd188252d8772b3d8693028eb80403364d5cb")
 
 	depends_on("r@4:", type=("build", "run"))

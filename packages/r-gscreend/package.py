@@ -16,7 +16,7 @@ class RGscreend(RPackage):
 	bioc = "gscreend" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gscreend_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gscreend/gscreend_1.16.1.tar.gz"]
 
-    version("1.22.0", tag="RELEASE_3_21")
+	version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.1", sha256="b0189af623197a0c5691e6378dcf002242eb6dfcf11b83ca01fd663594d80dbe")
 	version("1.16.0", commit="b3333031ccee5ec81e3c05a62d40cee335f100dc")
 

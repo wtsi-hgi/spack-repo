@@ -16,7 +16,7 @@ class RRpx(RPackage):
 	bioc = "rpx" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rpx_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rpx/rpx_2.10.0.tar.gz"]
 
-    version("2.16.0", tag="RELEASE_3_21")
+	version("2.16.0", tag="RELEASE_3_21")
 	version("2.10.0", sha256="48c592e7362b3d55724ca020fabc30de7d734f24a5bc2c2abb1a32fc0ade1d0e")
 
 	depends_on("r@3.5:", type=("build", "run"))

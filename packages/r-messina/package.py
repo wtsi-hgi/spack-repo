@@ -15,7 +15,7 @@ class RMessina(RPackage):
 	bioc = "messina" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/messina_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/messina/messina_1.38.0.tar.gz"]
 
-    version("1.44.0", tag="RELEASE_3_21")
+	version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="4e3826cb5c1575afb615a5fd6de8a69278be092673d47369513f261d7b968525")
 
 	depends_on("r@3.1:", type=("build", "run"))

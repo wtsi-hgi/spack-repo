@@ -15,7 +15,7 @@ class RBasespacer(RPackage):
 	bioc = "BaseSpaceR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BaseSpaceR_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BaseSpaceR/BaseSpaceR_1.46.0.tar.gz"]
 
-    version("1.52.0", tag="RELEASE_3_21")
+	version("1.52.0", tag="RELEASE_3_21")
 	version("1.46.0", sha256="8fc8225e9258c4611c1a6760b8044bd74e79553044f37a6447d586d5617ebad1")
 
 	depends_on("r@2.15:", type=("build", "run"))

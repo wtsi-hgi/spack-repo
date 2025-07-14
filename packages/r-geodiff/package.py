@@ -16,7 +16,7 @@ class RGeodiff(RPackage):
 	bioc = "GeoDiff" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeoDiff_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeoDiff/GeoDiff_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="3ea80adcace6efbffeb749825d1960170956cb0daec3aa3c2779162a59477dfc")
 
 	depends_on("r@4.1:", type=("build", "run"))

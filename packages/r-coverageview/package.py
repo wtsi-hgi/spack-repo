@@ -15,7 +15,7 @@ class RCoverageview(RPackage):
 	bioc = "CoverageView" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CoverageView_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CoverageView/CoverageView_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="eed2354ad19f145fbf629bf13538fb64fe1f44fde7d65ae07c7e694b50de41ea")
 
 	depends_on("r@2.10:", type=("build", "run"))

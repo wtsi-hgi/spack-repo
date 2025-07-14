@@ -15,7 +15,7 @@ class RChippeakanno(RPackage):
 	bioc = "ChIPpeakAnno" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPpeakAnno_3.36.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPpeakAnno/ChIPpeakAnno_3.36.1.tar.gz"]
 
-    version("3.42.0", tag="RELEASE_3_21")
+	version("3.42.0", tag="RELEASE_3_21")
 	version("3.36.1", sha256="74a309929f41e74b5d8ea0366b233185ea0d982542fe78ebd8292ab45149afca")
 
 	depends_on("r@3.5:", type=("build", "run"))

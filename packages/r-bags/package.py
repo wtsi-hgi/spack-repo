@@ -15,7 +15,7 @@ class RBags(RPackage):
 	bioc = "BAGS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BAGS_2.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BAGS/BAGS_2.42.0.tar.gz"]
 
-    version("2.48.0", tag="RELEASE_3_21")
+	version("2.48.0", tag="RELEASE_3_21")
 	version("2.42.0", sha256="b0f1661bd0d03c9405f8625f5daedb1bb335ac0e4962e63d22b951769fcaa60c")
 
 	depends_on("r@2.10:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RShinymethyl(RPackage):
 	bioc = "shinyMethyl" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/shinyMethyl_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/shinyMethyl/shinyMethyl_1.38.0.tar.gz"]
 
-    version("1.44.0", tag="RELEASE_3_21")
+	version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="864b844c5a5faf60e970cc63cd099ea0ef3d0598f38dabd76f7af71c700972be")
 
 	depends_on("r-biobase", type=("build", "run"))

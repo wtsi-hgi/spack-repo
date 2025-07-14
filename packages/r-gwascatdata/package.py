@@ -15,7 +15,7 @@ class RGwascatdata(RPackage):
 	bioc = "gwascatData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/gwascatData_0.99.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/gwascatData/gwascatData_0.99.6.tar.gz"]
 
-    version("0.99.6", tag="RELEASE_3_21")
+	version("0.99.6", tag="RELEASE_3_21")
 	version("0.99.6", sha256="ea3d16210eb7c7ea22916568279fe4c750bc091b181818404778c76d00fd15f6")
 
 	depends_on("r-data-table", type=("build", "run"))

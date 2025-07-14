@@ -16,7 +16,7 @@ class RMosaicsexample(RPackage):
 	bioc = "mosaicsExample" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mosaicsExample_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mosaicsExample/mosaicsExample_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="99ccc8a960cca6e2ab2c74869e81979c843e58a5b713cd7b506cd0a2cf3ca90b")
 
 	depends_on("r@2.11.1:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RRarevariantvis(RPackage):
 	bioc = "RareVariantVis" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RareVariantVis_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RareVariantVis/RareVariantVis_2.30.0.tar.gz"]
 
-    version("2.36.0", tag="RELEASE_3_21")
+	version("2.36.0", tag="RELEASE_3_21")
 	version("2.30.0", sha256="59d6a9c447ad649d107635413ba1df64dd7cfe578e605834183fd0461b61e257")
 
 	depends_on("r-biocgenerics", type=("build", "run"))

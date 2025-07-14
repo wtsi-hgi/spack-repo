@@ -15,7 +15,7 @@ class RPcan(RPackage):
 	bioc = "PCAN" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PCAN_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PCAN/PCAN_1.30.0.tar.gz"]
 
-    version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="d373d9113210170bb5eabfc1216cbf2c596be9d78847db4438ba016fbbf05d43")
 
 	depends_on("r@3.3:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RRtcga(RPackage):
 	bioc = "RTCGA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RTCGA_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RTCGA/RTCGA_1.32.0.tar.gz"]
 
-    version("1.38.0", tag="RELEASE_3_21")
+	version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="e1653920e1b931e46e7d76dd897e1f9c272958a094743ebae741feade3e4edd3")
 
 	depends_on("r@3.3:", type=("build", "run"))

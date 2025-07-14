@@ -16,7 +16,7 @@ class RIggeneusage(RPackage):
 	bioc = "IgGeneUsage" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IgGeneUsage_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IgGeneUsage/IgGeneUsage_1.16.0.tar.gz"]
 
-    version("1.22.0", tag="RELEASE_3_21")
+	version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="4c665f2875ee6f74b2e660cd9929b65a537557aff0e806d00f33a21df81e1e23")
 
 	depends_on("r@4.2:", type=("build", "run"))

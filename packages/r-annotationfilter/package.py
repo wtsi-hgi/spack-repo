@@ -16,7 +16,7 @@ class RAnnotationfilter(RPackage):
 	bioc = "AnnotationFilter"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnnotationFilter_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnnotationFilter/AnnotationFilter_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.8.0", commit="9bf70ead899e32e84e2908f2b29cd38250d2d1ed")
 	version("1.6.0", commit="fa40a7e17e93fac9e85091ff93f256adf145dec3")
 	version("1.4.0", commit="acbd3309f478843a7899bd9773af5f19f986b829")

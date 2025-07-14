@@ -15,7 +15,7 @@ class RAlabasterMatrix(RPackage):
 	bioc = "alabaster.matrix" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.matrix_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.matrix/alabaster.matrix_1.2.0.tar.gz"]
 
-    version("1.8.0", tag="RELEASE_3_21")
+	version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="a5efd5c13416ef9eca8bc57d0161052ff259c75f962d14c7279e18ed37f90f3e")
 
 	depends_on("r-biocgenerics", type=("build", "run"))

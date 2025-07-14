@@ -16,7 +16,7 @@ class RAlpsnmr(RPackage):
 	bioc = "AlpsNMR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AlpsNMR_4.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AlpsNMR/AlpsNMR_4.4.0.tar.gz"]
 
-    version("4.10.0", tag="RELEASE_3_21")
+	version("4.10.0", tag="RELEASE_3_21")
 	version("4.4.0", sha256="f833c77e1c7980ac6238ee9d1981292a9b43ef0241888ca746b502d1bd9a8104")
 
 	depends_on("r@4.2:", type=("build", "run"))

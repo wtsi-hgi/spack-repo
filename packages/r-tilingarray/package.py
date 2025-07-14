@@ -15,7 +15,7 @@ class RTilingarray(RPackage):
 	bioc = "tilingArray" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tilingArray_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tilingArray/tilingArray_1.80.0.tar.gz"]
 
-    version("1.86.0", tag="RELEASE_3_21")
+	version("1.86.0", tag="RELEASE_3_21")
 	version("1.80.0", sha256="a85c3bc2a8d7704903591cc4c407e9273874bcebc151252ef434bb5681e44406")
 
 	depends_on("r@2.11:", type=("build", "run"))

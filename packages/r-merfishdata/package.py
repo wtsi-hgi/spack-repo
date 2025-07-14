@@ -16,7 +16,7 @@ class RMerfishdata(RPackage):
 	bioc = "MerfishData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MerfishData_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MerfishData/MerfishData_1.4.1.tar.gz"]
 
-    version("1.10.0", tag="RELEASE_3_21")
+	version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.1", sha256="53a99bf7d66d3be0b8c6377b82cde0720a5b202daed0384544db739441adbc14")
 
 	depends_on("r@4.2:", type=("build", "run"))

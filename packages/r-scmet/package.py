@@ -15,7 +15,7 @@ class RScmet(RPackage):
 	bioc = "scMET" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scMET_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scMET/scMET_1.4.0.tar.gz"]
 
-    version("1.10.0", tag="RELEASE_3_21")
+	version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="b4908e98a14b2a3ed26b52648a5ae025711676d8d06ad30a16bbfd0cc5007f2a")
 
 	depends_on("r@4.2:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RProtgear(RPackage):
 	bioc = "protGear" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/protGear_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/protGear/protGear_1.6.0.tar.gz"]
 
-    version("1.12.0", tag="RELEASE_3_21")
+	version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="bb5b47b1b5d12faba813f71e962a7e9fe80ae6807aa7dca8cceacbbec5681565")
 
 	depends_on("r@4.2:", type=("build", "run"))

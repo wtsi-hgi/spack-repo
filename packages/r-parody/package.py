@@ -15,7 +15,7 @@ class RParody(RPackage):
 	bioc = "parody" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/parody_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/parody/parody_1.60.0.tar.gz"]
 
-    version("1.66.1", tag="RELEASE_3_21")
+	version("1.66.1", tag="RELEASE_3_21")
 	version("1.60.0", sha256="5292c5217200bf13e60f8712f14c049fc494f38dfbba337ae54b24e8e15cb016")
 
 	depends_on("r@3.5:", type=("build", "run"))

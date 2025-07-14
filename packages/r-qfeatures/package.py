@@ -16,7 +16,7 @@ class RQfeatures(RPackage):
 	bioc = "QFeatures" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QFeatures_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QFeatures/QFeatures_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="bd9e0a2ce5c3a17acf49d8b3620fc366739e12129b68b9e402c93cb3ae23e4bc")
 
 	depends_on("r@4:", type=("build", "run"))

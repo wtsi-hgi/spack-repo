@@ -15,7 +15,7 @@ class RRrdp(RPackage):
 	bioc = "rRDP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rRDP_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rRDP/rRDP_1.36.0.tar.gz"]
 
-    version("1.42.0", tag="RELEASE_3_21")
+	version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="2c57d6b282c48d92b0362ab6f8e35293532ca3733ba1b679a2c33aac3126f478")
 
 	depends_on("r-biostrings@2.26.2:", type=("build", "run"))

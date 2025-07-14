@@ -16,7 +16,7 @@ class RGranulator(RPackage):
 	bioc = "granulator" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/granulator_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/granulator/granulator_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="01226099d1d2a13013135583a03f3b12ec2f5b5eeacd541e70c3ab8e75c9686b")
 
 	depends_on("r@4.1:", type=("build", "run"))

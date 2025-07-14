@@ -16,7 +16,7 @@ class RBiobroom(RPackage):
 	bioc = "biobroom" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biobroom_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biobroom/biobroom_1.34.0.tar.gz"]
 
-    version("1.40.0", tag="RELEASE_3_21")
+	version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="ae7a64554a7703208072d6788b1480a732ea30cbf80277ba42ee45e16fa46cc7")
 
 	depends_on("r@3:", type=("build", "run"))

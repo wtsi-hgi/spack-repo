@@ -15,6 +15,6 @@ class RDyndoc(RPackage):
 	bioc = "DynDoc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DynDoc_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DynDoc/DynDoc_1.80.0.tar.gz"]
 
-    version("1.86.0", tag="RELEASE_3_21")
+	version("1.86.0", tag="RELEASE_3_21")
 	version("1.80.0", sha256="c115174fcf50197ccb7b57d90f48b7a354707e687093e70f89371fffb5ea4a34")
 

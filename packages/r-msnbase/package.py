@@ -15,7 +15,7 @@ class RMsnbase(RPackage):
 
 	bioc = "MSnbase"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSnbase_2.28.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSnbase/MSnbase_2.28.1.tar.gz"]
-    version("2.34.1", tag="RELEASE_3_21")
+	version("2.34.1", tag="RELEASE_3_21")
 	version("2.8.3", commit="ef883752c5e92d445647bc5b5d23d5df320db415")
 	version("2.6.4", commit="46836860ce0281eef135303f2e2948303d67f68c")
 	version("2.4.2", commit="c045d65daa730c7837852e6343a05cae9644ab5e")

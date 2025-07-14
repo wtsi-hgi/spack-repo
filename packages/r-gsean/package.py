@@ -15,7 +15,7 @@ class RGsean(RPackage):
 	bioc = "gsean" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gsean_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gsean/gsean_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="b9b49e8f0ef56781444a117e8f02e6b93e5a01e2467d4d9a523d3f98ddcb2a97")
 
 	depends_on("r@3.5:", type=("build", "run"))

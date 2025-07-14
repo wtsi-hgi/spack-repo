@@ -15,7 +15,7 @@ class RFlowfp(RPackage):
 	bioc = "flowFP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowFP_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowFP/flowFP_1.60.0.tar.gz"]
 
-    version("1.66.0", tag="RELEASE_3_21")
+	version("1.66.0", tag="RELEASE_3_21")
 	version("1.60.0", sha256="f58cf1d0947a64f04a101b74eedead6dc441d465c6cf4abad1a8831e4711d834")
 
 	depends_on("r@2.10:", type=("build", "run"))

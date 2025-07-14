@@ -16,7 +16,7 @@ class RAmpaffyexample(RPackage):
 	bioc = "AmpAffyExample" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/AmpAffyExample_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/AmpAffyExample/AmpAffyExample_1.42.0.tar.gz"]
 
-    version("1.48.0", tag="RELEASE_3_21")
+	version("1.48.0", tag="RELEASE_3_21")
 	version("1.42.0", sha256="66b12fbb7879999cd961da52c698924c7a0606ae17036851ad3b9959ee380409")
 
 	depends_on("r@2.4:", type=("build", "run"))

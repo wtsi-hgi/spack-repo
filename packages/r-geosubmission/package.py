@@ -15,7 +15,7 @@ class RGeosubmission(RPackage):
 	bioc = "GEOsubmission" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEOsubmission_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEOsubmission/GEOsubmission_1.54.0.tar.gz"]
 
-    version("1.60.0", tag="RELEASE_3_21")
+	version("1.60.0", tag="RELEASE_3_21")
 	version("1.54.0", sha256="1c5354f541ec5a0e12f56d9c7a1ab24fd908f14560dae54588740266a7c72c0e")
 
 	depends_on("r-affy", type=("build", "run"))

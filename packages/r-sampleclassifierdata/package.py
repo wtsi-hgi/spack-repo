@@ -15,7 +15,7 @@ class RSampleclassifierdata(RPackage):
 	bioc = "sampleClassifierData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/sampleClassifierData_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/sampleClassifierData/sampleClassifierData_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="f75cf45ae9c2b603211e4dd154a5b6f3531d6aa604b67807813d61cc360b2247")
 
 	depends_on("r@3.5:", type=("build", "run"))

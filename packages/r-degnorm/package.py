@@ -15,7 +15,7 @@ class RDegnorm(RPackage):
 	bioc = "DegNorm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DegNorm_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DegNorm/DegNorm_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="dfde2d06f0dfd30f748f20a400390aa7dfd07407b90cc68a082445f21d6b57b4")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RPartcnv(RPackage):
 	bioc = "partCNV" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/partCNV_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/partCNV/partCNV_1.0.0.tar.gz"]
 
-    version("1.6.0", tag="RELEASE_3_21")
+	version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="4a948e65fe1f20118f9f5642e23fa35b92bfae680b5da1762084e88e187d8a95")
 
 	depends_on("r@3.5:", type=("build", "run"))

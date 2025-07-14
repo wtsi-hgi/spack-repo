@@ -16,7 +16,7 @@ class RPrecisetad(RPackage):
 	bioc = "preciseTAD" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/preciseTAD_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/preciseTAD/preciseTAD_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="7aa060c26c715e0b5f4767c6f92dbb3fab7c50c9ae036dd1c1113e9e4a0fc7ed")
 
 	depends_on("r@4.1:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RTransformgampoi(RPackage):
 	bioc = "transformGamPoi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/transformGamPoi_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/transformGamPoi/transformGamPoi_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="3d28f9317d5b826507beebb481befab6f7310f22277d0d39ec526b30b5874775")
 
 	depends_on("r-glmgampoi", type=("build", "run"))

@@ -15,7 +15,7 @@ class RTissueenrich(RPackage):
 	bioc = "TissueEnrich" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TissueEnrich_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TissueEnrich/TissueEnrich_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="d258d871cd7463b80af875d214dfa7a76abc9bb13c7f13604ffe04bf0dbc8c8f")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RHgu133plus2cellscore(RPackage):
 	bioc = "hgu133plus2CellScore" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hgu133plus2CellScore_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/hgu133plus2CellScore/hgu133plus2CellScore_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="f17eb5dedeffa52884a5a705e107ca1d9ce792455f1b8f8d84e418577fb9a621")
 
 	depends_on("r@3.5:", type=("build", "run"))

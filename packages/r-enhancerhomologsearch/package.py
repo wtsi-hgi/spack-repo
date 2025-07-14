@@ -16,7 +16,7 @@ class REnhancerhomologsearch(RPackage):
 	bioc = "enhancerHomologSearch" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/enhancerHomologSearch_1.8.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/enhancerHomologSearch/enhancerHomologSearch_1.8.3.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.3", sha256="827c545a6bb9a0102b2e23332ead594af7aad6edb34251b7daaaed0c10c588d3")
 
 	depends_on("r@4.1:", type=("build", "run"))

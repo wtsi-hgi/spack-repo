@@ -15,7 +15,7 @@ class RAhlrbasedbs(RPackage):
 	bioc = "AHLRBaseDbs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AHLRBaseDbs_1.7.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/AHLRBaseDbs/AHLRBaseDbs_1.7.0.tar.gz"]
 
-    version("1.8.0", tag="RELEASE_3_21")
+	version("1.8.0", tag="RELEASE_3_21")
 	version("1.7.0", sha256="cf51e69b0c9177480a9745c5f08718dafb891c2bace18da3a5d0dbc1c2c66fd9")
 
 	depends_on("r@4.1:", type=("build", "run"))

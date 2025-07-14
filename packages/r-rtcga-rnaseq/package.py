@@ -15,7 +15,7 @@ class RRtcgaRnaseq(RPackage):
 	bioc = "RTCGA.rnaseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.rnaseq_20151101.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.rnaseq/RTCGA.rnaseq_20151101.32.0.tar.gz"]
 
-    version("20151101.38.0", tag="RELEASE_3_21")
+	version("20151101.38.0", tag="RELEASE_3_21")
 	version("20151101.32.0", sha256="4c4ff26f6039065c4a6195f6a3fda316e91a3647967233caf9ba4d73714bb6da")
 
 	depends_on("r@3.2:", type=("build", "run"))

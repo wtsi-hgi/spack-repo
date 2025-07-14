@@ -16,7 +16,7 @@ class RSpatialdatasets(RPackage):
 	bioc = "SpatialDatasets" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SpatialDatasets_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SpatialDatasets/SpatialDatasets_1.0.0.tar.gz"]
 
-    version("1.6.3", tag="RELEASE_3_21")
+	version("1.6.3", tag="RELEASE_3_21")
 	version("1.0.0", sha256="febdafeb1b405ba97eadf6f2de0dc4e82f796667fdd51249e6ba805efd7bfaeb")
 
 	depends_on("r-experimenthub", type=("build", "run"))

@@ -16,7 +16,7 @@ class RIsee(RPackage):
 	bioc = "iSEE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEE_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEE/iSEE_2.14.0.tar.gz"]
 
-    version("2.20.0", tag="RELEASE_3_21")
+	version("2.20.0", tag="RELEASE_3_21")
 	version("2.14.0", sha256="44b2ecfea6f47e414b372c04e68be5384e873336c7caffb6b07a206905d71e4e")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))

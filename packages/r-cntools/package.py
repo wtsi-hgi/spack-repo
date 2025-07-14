@@ -15,7 +15,7 @@ class RCntools(RPackage):
 	bioc = "CNTools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNTools_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNTools/CNTools_1.58.0.tar.gz"]
 
-    version("1.64.0", tag="RELEASE_3_21")
+	version("1.64.0", tag="RELEASE_3_21")
 	version("1.58.0", sha256="e41de37c231a5688e3b0e65b48a7caaa452d06e44bdf82cd325f48bcf23664cb")
 
 	depends_on("r@2.10:", type=("build", "run"))

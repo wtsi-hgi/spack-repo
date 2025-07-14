@@ -15,7 +15,7 @@ class RIpath(RPackage):
 	bioc = "iPath" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iPath_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iPath/iPath_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="53c8c92e77d5a26987fbc2d0eafb479d02f0fd563b6e72a4fb00ffc749a05326")
 
 	depends_on("r@4.1:", type=("build", "run"))

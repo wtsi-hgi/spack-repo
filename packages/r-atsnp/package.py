@@ -16,7 +16,7 @@ class RAtsnp(RPackage):
 	bioc = "atSNP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/atSNP_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/atSNP/atSNP_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="bba25bb557a54f8f099ed506a46b30f5e4d5de884be56de75526b34095e97ada")
 
 	depends_on("r@3.6:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RCgen(RPackage):
 	bioc = "CGEN" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CGEN_3.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CGEN/CGEN_3.38.0.tar.gz"]
 
-    version("3.44.0", tag="RELEASE_3_21")
+	version("3.44.0", tag="RELEASE_3_21")
 	version("3.38.0", sha256="3609d6ff835c871cbcc497f1e846c6aede3e2d916fe7c6eb14701a313fef5e14")
 
 	depends_on("r@4:", type=("build", "run"))

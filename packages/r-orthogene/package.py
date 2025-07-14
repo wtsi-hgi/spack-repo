@@ -16,7 +16,7 @@ class ROrthogene(RPackage):
 	bioc = "orthogene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/orthogene_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/orthogene/orthogene_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="2872b0c24173b02dca976253f58310fe26bd5f3ad4bae2e02be19914405b824f")
 
 	depends_on("r@4.1:", type=("build", "run"))

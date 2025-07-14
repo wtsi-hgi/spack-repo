@@ -15,7 +15,7 @@ class RKissde(RPackage):
 	bioc = "kissDE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/kissDE_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/kissDE/kissDE_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="2114ecbba1a9ad67709fe03adc30f99d32d4c07949f8c561c736230228e5007f")
 
 	depends_on("r-aods3", type=("build", "run"))

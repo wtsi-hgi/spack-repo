@@ -16,7 +16,7 @@ class RBgeecall(RPackage):
 	bioc = "BgeeCall" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BgeeCall_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BgeeCall/BgeeCall_1.18.1.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.1", sha256="d3e3f426c28e2e03dff284bb974b6549a67fa26eff01ca2354d574ecfcbcfec6")
 
 	depends_on("r@3.6:", type=("build", "run"))

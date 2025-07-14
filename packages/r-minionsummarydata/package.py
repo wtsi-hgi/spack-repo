@@ -15,7 +15,7 @@ class RMinionsummarydata(RPackage):
 	bioc = "minionSummaryData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/minionSummaryData_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/minionSummaryData/minionSummaryData_1.32.0.tar.gz"]
 
-    version("1.38.0", tag="RELEASE_3_21")
+	version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="da4513dec9b2aa8fb1cc48570fcb889116682787ac8f782cf626c55ee2396fde")
 
 	depends_on("r@3.2:", type=("build", "run"))

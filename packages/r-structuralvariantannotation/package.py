@@ -15,7 +15,7 @@ class RStructuralvariantannotation(RPackage):
 	bioc = "StructuralVariantAnnotation" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/StructuralVariantAnnotation_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/StructuralVariantAnnotation/StructuralVariantAnnotation_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="8256e4613dc6c226a8410fe42c1afce7bc0291d9e27c0c68135c38de571f74c0")
 
 	depends_on("r-genomicranges", type=("build", "run"))

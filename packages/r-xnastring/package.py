@@ -15,7 +15,7 @@ class RXnastring(RPackage):
 	bioc = "XNAString" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/XNAString_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/XNAString/XNAString_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="c44309572ddb39a3ee070c747fcb7ce08acd226e133c8bc3e9f9eefb5673873c")
 
 	depends_on("r@4.1:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMultibac(RPackage):
 	bioc = "MultiBaC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MultiBaC_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MultiBaC/MultiBaC_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="92b07e52109c23b058761cd8bb806646fb837fc5182f714a1efaf53cd58a8ed7")
 
 	depends_on("r-matrix", type=("build", "run"))

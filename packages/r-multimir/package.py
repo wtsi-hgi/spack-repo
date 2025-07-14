@@ -16,7 +16,7 @@ class RMultimir(RPackage):
 	bioc = "multiMiR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/multiMiR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/multiMiR/multiMiR_1.24.0.tar.gz"]
 
-    version("1.30.0", tag="RELEASE_3_21")
+	version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="2574a7991c9552c84c8cd9c39ba4f5508d6e21870a0126da1ff855e96c82b157")
 
 	depends_on("r@3.4:", type=("build", "run"))

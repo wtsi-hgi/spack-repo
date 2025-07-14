@@ -15,7 +15,7 @@ class RHumanstemcell(RPackage):
 	bioc = "humanStemCell" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/humanStemCell_0.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/humanStemCell/humanStemCell_0.42.0.tar.gz"]
 
-    version("0.48.0", tag="RELEASE_3_21")
+	version("0.48.0", tag="RELEASE_3_21")
 	version("0.42.0", sha256="e052b836a968eeead75523c365d2a73420121475c8f0b5386bef84379f62dc2f")
 
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

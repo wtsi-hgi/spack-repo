@@ -15,7 +15,7 @@ class RSpeckle(RPackage):
 	bioc = "speckle" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/speckle_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/speckle/speckle_1.2.0.tar.gz"]
 
-    version("1.8.0", tag="RELEASE_3_21")
+	version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="7ab4b4cc704042e0f505c3545bc1add88aabec7a63abd947350fd896f593b7df")
 	version("0.0.3", git="https://github.com/Oshlack/speckle.git", commit="9347bf07b5cdc49ecedc0042d3a007742db01691")
 

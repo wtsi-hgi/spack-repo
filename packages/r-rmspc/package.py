@@ -16,7 +16,7 @@ class RRmspc(RPackage):
 	bioc = "rmspc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rmspc_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rmspc/rmspc_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="f8bd30cefcfbd997f962e6f35161386212c6ae156d0043fecdbbd83c867f713a")
 
 	depends_on("r-processx", type=("build", "run"))

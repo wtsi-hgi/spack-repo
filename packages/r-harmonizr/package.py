@@ -15,7 +15,7 @@ class RHarmonizr(RPackage):
 	bioc = "HarmonizR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HarmonizR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HarmonizR/HarmonizR_1.0.0.tar.gz"]
 
-    version("1.6.0", tag="RELEASE_3_21")
+	version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="9226855ffafdcbdedb160b454e31faa2d368646d90b6c8975ae19ac973c44fbf")
 
 	depends_on("r@4.2:", type=("build", "run"))

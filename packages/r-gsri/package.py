@@ -15,7 +15,7 @@ class RGsri(RPackage):
 	bioc = "GSRI" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSRI_2.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSRI/GSRI_2.50.0.tar.gz"]
 
-    version("2.56.0", tag="RELEASE_3_21")
+	version("2.56.0", tag="RELEASE_3_21")
 	version("2.50.0", sha256="348d3871642db3828a508af2a0e34750876a25c55703a54a35e6f4b179af2c79")
 
 	depends_on("r@2.14.2:", type=("build", "run"))

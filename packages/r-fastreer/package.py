@@ -16,7 +16,7 @@ class RFastreer(RPackage):
 	bioc = "fastreeR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fastreeR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fastreeR/fastreeR_1.6.0.tar.gz"]
 
-    version("1.12.2", tag="RELEASE_3_21")
+	version("1.12.2", tag="RELEASE_3_21")
 	version("1.6.0", sha256="a58936234b0519a96b05a8f37539d567adda56b21d33599121895b6d58c06cdb")
 
 	depends_on("r@4.2:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMeal(RPackage):
 	bioc = "MEAL" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MEAL_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MEAL/MEAL_1.32.0.tar.gz"]
 
-    version("1.38.0", tag="RELEASE_3_21")
+	version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="57408de21e8deb3ed72b6ef0d5b27d5a1748c1f541929c581151c3f3141f8b6f")
 
 	depends_on("r@3.6:", type=("build", "run"))

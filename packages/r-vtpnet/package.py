@@ -15,7 +15,7 @@ class RVtpnet(RPackage):
 	bioc = "vtpnet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vtpnet_0.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vtpnet/vtpnet_0.42.0.tar.gz"]
 
-    version("0.48.0", tag="RELEASE_3_21")
+	version("0.48.0", tag="RELEASE_3_21")
 	version("0.42.0", sha256="4f2520efa3c0bb0cc9272d63d3a20d72b8bbe50cf1dcc34d588ab1353edea014")
 
 	depends_on("r@3:", type=("build", "run"))

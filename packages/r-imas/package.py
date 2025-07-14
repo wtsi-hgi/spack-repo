@@ -15,7 +15,7 @@ class RImas(RPackage):
 	bioc = "IMAS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IMAS_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IMAS/IMAS_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="4abd93a4526831a5181b329a0aa7823dce6085f2469f8e79b2cc4a072ef23331")
 
 	depends_on("r@3:", type=("build", "run"))

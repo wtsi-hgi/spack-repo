@@ -15,7 +15,7 @@ class RPpinfer(RPackage):
 	bioc = "PPInfer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PPInfer_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PPInfer/PPInfer_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="55231d806926496a83367175d971cf180e73b242d9e7b8144d0689421f603090")
 
 	depends_on("r-biomart", type=("build", "run"))

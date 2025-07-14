@@ -15,7 +15,7 @@ class RCocitestats(RPackage):
 	bioc = "CoCiteStats" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CoCiteStats_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CoCiteStats/CoCiteStats_1.74.0.tar.gz"]
 
-    version("1.80.0", tag="RELEASE_3_21")
+	version("1.80.0", tag="RELEASE_3_21")
 	version("1.74.0", sha256="74a07a73abfc430e7a03986651e130afc32d5440e2a0c0b6e5969b203bc7ada1")
 
 	depends_on("r@2:", type=("build", "run"))

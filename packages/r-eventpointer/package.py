@@ -15,7 +15,7 @@ class REventpointer(RPackage):
 	bioc = "EventPointer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EventPointer_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EventPointer/EventPointer_3.10.0.tar.gz"]
 
-    version("3.16.0", tag="RELEASE_3_21")
+	version("3.16.0", tag="RELEASE_3_21")
 	version("3.10.0", sha256="e49e6dc9ae689350b776fc122a90700bd4531b659c3d7d3d1cc36b4ad76a6297")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RCopyneutralima(RPackage):
 	bioc = "CopyNeutralIMA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CopyNeutralIMA_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CopyNeutralIMA/CopyNeutralIMA_1.20.0.tar.gz"]
 
-    version("1.26.0", tag="RELEASE_3_21")
+	version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="5eb7c0a5b41557cc4b2f92665675866586c0297b12e7ba83c623a0082d498986")
 
 	depends_on("r@3.5:", type=("build", "run"))

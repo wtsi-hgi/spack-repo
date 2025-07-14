@@ -13,7 +13,7 @@ class RGeneplotter(RPackage):
 
 	bioc = "geneplotter"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geneplotter_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geneplotter/geneplotter_1.80.0.tar.gz"]
-    version("1.86.0", tag="RELEASE_3_21")
+	version("1.86.0", tag="RELEASE_3_21")
 	version("1.80.0", sha256="33d09be9a90407592df85b6ca0e9ed198f3236969d78cf7713b96e4d25416b7f")
 	version("1.78.0", commit="a105c51d2f7a097ea33c3aad8f2345e9a51406d3")
 	version("1.76.0", commit="4eb6a787d0c66110ec9a7d34fc76b64030fbde5d")

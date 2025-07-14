@@ -15,7 +15,7 @@ class RCnvranger(RPackage):
 	bioc = "CNVRanger" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNVRanger_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNVRanger/CNVRanger_1.18.1.tar.gz"]
 
-    version("1.24.2", tag="RELEASE_3_21")
+	version("1.24.2", tag="RELEASE_3_21")
 	version("1.18.1", sha256="62525db41e24dfad543649cd135c84a80f21068fa66f2ca1687533654d1838f3")
 	version("1.18.0", md5="3e68952c47447dfad311d1adf7b971d1")
 

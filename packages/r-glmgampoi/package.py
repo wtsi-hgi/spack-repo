@@ -16,7 +16,7 @@ class RGlmgampoi(RPackage):
 
 	bioc = "glmGamPoi"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/glmGamPoi_1.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/glmGamPoi/glmGamPoi_1.14.3.tar.gz"]
-    version("1.20.0", tag="RELEASE_3_21")
+	version("1.20.0", tag="RELEASE_3_21")
 	version("1.8.0", commit="b723d61e05c1ad50a3cf6a6393ec3d97adc7edb4")
 	version("1.6.0", sha256="55e292e994ff4e51062e2eb63b3e9c79cb0c03440fcb4fc5e78a81903cfbcef9", url="https://bioconductor.org/packages/3.14/bioc/src/contrib/glmGamPoi_1.6.0.tar.gz")
 	version("1.14.3", md5="a713a5c0adddd2e5f4d30e02af38d309")

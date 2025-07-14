@@ -15,7 +15,7 @@ class RGenerxcluster(RPackage):
 	bioc = "geneRxCluster" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geneRxCluster_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geneRxCluster/geneRxCluster_1.38.0.tar.gz"]
 
-    version("1.44.0", tag="RELEASE_3_21")
+	version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="8c5ad437433997d5efecfce88563943092fa4e2df858a954292287b761e2d122")
 
 	depends_on("r-genomicranges", type=("build", "run"))

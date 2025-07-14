@@ -15,7 +15,7 @@ class RFlowviz(RPackage):
 	bioc = "flowViz" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowViz_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowViz/flowViz_1.66.0.tar.gz"]
 
-    version("1.72.0", tag="RELEASE_3_21")
+	version("1.72.0", tag="RELEASE_3_21")
 	version("1.66.0", sha256="2810dbb437fd99ce4f2da068f6d2ecf5f5c496c24879faf1210a08216e10c0c2")
 
 	depends_on("r@2.7:", type=("build", "run"))

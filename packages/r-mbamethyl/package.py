@@ -15,7 +15,7 @@ class RMbamethyl(RPackage):
 	bioc = "MBAmethyl" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MBAmethyl_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MBAmethyl/MBAmethyl_1.36.0.tar.gz"]
 
-    version("1.42.0", tag="RELEASE_3_21")
+	version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="87b0b81aec31c0b902ad24e2c2c7f5b281d9afb7f5019459b69be7df36155c08")
 
 	depends_on("r@2.15:", type=("build", "run"))

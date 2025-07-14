@@ -16,7 +16,7 @@ class RRjmcmcnucleosomes(RPackage):
 	bioc = "RJMCMCNucleosomes" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RJMCMCNucleosomes_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RJMCMCNucleosomes/RJMCMCNucleosomes_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="2aa019181071f42a36f4bb455cf000d1414ba5927f7176db2b8e20cc01c63a01")
 
 	depends_on("r@3.5:", type=("build", "run"))

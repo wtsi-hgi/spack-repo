@@ -15,7 +15,7 @@ class RHummingbird(RPackage):
 	bioc = "hummingbird" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hummingbird_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hummingbird/hummingbird_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="108e6b1ac9a742a941e15d1894d2706f1312138fc40f7c2d6ed7d2ea5b6debc2")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RFlames(RPackage):
 	bioc = "FLAMES" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FLAMES_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FLAMES/FLAMES_1.8.0.tar.gz"]
 
-    version("2.2.0", tag="RELEASE_3_21")
+	version("2.2.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="da12030c47ad7d766a7a76ed97e5fb089af15fd1c78846afba7b11089efa6724")
 
 	depends_on("r@2.10:", type=("build", "run"))

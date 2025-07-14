@@ -16,7 +16,7 @@ class RMetams(RPackage):
 	bioc = "metaMS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metaMS_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metaMS/metaMS_1.38.0.tar.gz"]
 
-    version("1.44.0", tag="RELEASE_3_21")
+	version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="59c0c6cc015c23bc6ecc783600d97029330fbef2bacc11e1da489d731f896e50")
 
 	depends_on("r@4:", type=("build", "run"))

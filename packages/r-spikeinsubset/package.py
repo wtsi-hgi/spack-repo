@@ -16,7 +16,7 @@ class RSpikeinsubset(RPackage):
 	bioc = "SpikeInSubset" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SpikeInSubset_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SpikeInSubset/SpikeInSubset_1.42.0.tar.gz"]
 
-    version("1.48.0", tag="RELEASE_3_21")
+	version("1.48.0", tag="RELEASE_3_21")
 	version("1.42.0", sha256="397e37d064cefe90e3869c79cb1cd6c243b07a96e26217797a35580bac798493")
 
 	depends_on("r@2.4:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RMsa2dist(RPackage):
 	bioc = "MSA2dist" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSA2dist_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSA2dist/MSA2dist_1.6.0.tar.gz"]
 
-    version("1.12.0", tag="RELEASE_3_21")
+	version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="3a2cb8cfd1af85866df1ff9b8d8f33a0b691600353e5201853a9b3956e362df8")
 
 	depends_on("r@4.2:", type=("build", "run"))

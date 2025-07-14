@@ -15,7 +15,7 @@ class RKinswingr(RPackage):
 	bioc = "KinSwingR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/KinSwingR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/KinSwingR/KinSwingR_1.20.0.tar.gz"]
 
-    version("1.26.0", tag="RELEASE_3_21")
+	version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="e5bebe8bde72a0dc89fdca1d742e6f2786f3b5af7949e47604437d4654437e13")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RSnm(RPackage):
 	bioc = "snm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/snm_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/snm/snm_1.50.0.tar.gz"]
 
-    version("1.56.0", tag="RELEASE_3_21")
+	version("1.56.0", tag="RELEASE_3_21")
 	version("1.50.0", sha256="532b8c188fde0b9b0d1503c80dfaa9c446acdf4a7cc52197d8014a2fea0df5ed")
 
 	depends_on("r@2.12:", type=("build", "run"))

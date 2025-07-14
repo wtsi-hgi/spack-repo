@@ -16,7 +16,7 @@ class ROmnipathr(RPackage):
 	bioc = "OmnipathR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OmnipathR_3.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OmnipathR/OmnipathR_3.10.1.tar.gz"]
 
-    version("3.16.0", tag="RELEASE_3_21")
+	version("3.16.0", tag="RELEASE_3_21")
 	version("3.10.1", sha256="99c3976d8f1e48dc00f5208ee100e8f24e97138cbfef917bdcfaaf0327597ff1")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RAhmassbank(RPackage):
 	bioc = "AHMassBank" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AHMassBank_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AHMassBank/AHMassBank_1.2.1.tar.gz"]
 
-    version("1.8.0", tag="RELEASE_3_21")
+	version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.1", sha256="ee39ffa85223b6be20e811783d8716c41998ce5fb72ebc45bed2dbc7e7377bd2")
 
 	depends_on("r@4.2:", type=("build", "run"))

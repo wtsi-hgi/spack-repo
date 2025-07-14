@@ -15,7 +15,7 @@ class RIpac(RPackage):
 	bioc = "iPAC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iPAC_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iPAC/iPAC_1.46.0.tar.gz"]
 
-    version("1.52.0", tag="RELEASE_3_21")
+	version("1.52.0", tag="RELEASE_3_21")
 	version("1.46.0", sha256="c85865312b7451d61f317e5696ef8890d03415668d39106cf268dc6a9ea3c72e")
 
 	depends_on("r@2.15:", type=("build", "run"))

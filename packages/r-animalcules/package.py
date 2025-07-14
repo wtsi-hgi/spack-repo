@@ -16,7 +16,7 @@ class RAnimalcules(RPackage):
 	bioc = "animalcules" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/animalcules_1.18.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/animalcules/animalcules_1.18.3.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.3", sha256="880d7df2338331d116879a934d0c8f68da8383f14b987df85b40689359510e49")
 
 	depends_on("r@4.3:", type=("build", "run"))

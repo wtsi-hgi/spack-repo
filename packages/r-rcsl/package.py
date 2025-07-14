@@ -15,7 +15,7 @@ class RRcsl(RPackage):
 	homepage = "https://github.com/QinglinMei/RCSL"
 	bioc = "RCSL" 
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", commit="ef869351106e5a8df0ea523858c665b1a78674e6")
 
 	depends_on("r@4.1:", type=("build", "run"))

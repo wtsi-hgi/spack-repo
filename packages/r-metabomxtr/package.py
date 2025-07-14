@@ -15,7 +15,7 @@ class RMetabomxtr(RPackage):
 	bioc = "metabomxtr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metabomxtr_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metabomxtr/metabomxtr_1.36.0.tar.gz"]
 
-    version("1.42.0", tag="RELEASE_3_21")
+	version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="9c44079a40b6daa172df1e4fa58c524460328eac1ea5694bb8fc5d7632821f8c")
 
 	depends_on("r-biobase", type=("build", "run"))

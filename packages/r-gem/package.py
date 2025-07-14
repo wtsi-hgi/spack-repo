@@ -15,7 +15,7 @@ class RGem(RPackage):
 	bioc = "GEM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEM_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEM/GEM_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="efbefb501dba47569251bb643ea4f8707c1e88f93e49500b80489934f095f0c3")
 
 	depends_on("r@3.3:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMusicatk(RPackage):
 	bioc = "musicatk" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/musicatk_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/musicatk/musicatk_1.12.0.tar.gz"]
 
-    version("2.2.0", tag="RELEASE_3_21")
+	version("2.2.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="6c5eab00f55c2b0df30cae952daaf1ff1fd407137b242e92411c918058a78862")
 
 	depends_on("r@4:", type=("build", "run"))

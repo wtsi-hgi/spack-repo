@@ -15,7 +15,7 @@ class RCnviz(RPackage):
 	bioc = "CNViz" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNViz_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNViz/CNViz_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="9ab6730e19ed9dc39488e4fb8f1446e4168413efd45bde77e1794b2aebddaa73")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -20,7 +20,7 @@ class RMethylumi(RPackage):
 
 	bioc = "methylumi"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylumi_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylumi/methylumi_2.48.0.tar.gz"]
-    version("2.54.0", tag="RELEASE_3_21")
+	version("2.54.0", tag="RELEASE_3_21")
 	version("2.48.0", sha256="16dc08f2e8dfeb2565ff1fd8ab69705f3405bb6abdc59a181c739ae277662aef")
 	version("2.46.0", commit="eb09e6508f1619c789d6b3091a8065cb6571cdac")
 	version("2.44.0", commit="8f1f1f944993800da2776cb3240b4482c09429ad")

@@ -15,7 +15,7 @@ class RBrgedata(RPackage):
 	bioc = "brgedata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/brgedata_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/brgedata/brgedata_1.24.0.tar.gz"]
 
-    version("1.30.0", tag="RELEASE_3_21")
+	version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="11fcabf7a57259809dfbe089ccb6aba648ef137406b11a00580d16526781f45a")
 
 	depends_on("r@3.5:", type=("build", "run"))

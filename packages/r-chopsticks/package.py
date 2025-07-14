@@ -16,7 +16,7 @@ class RChopsticks(RPackage):
 	bioc = "chopsticks" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chopsticks_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chopsticks/chopsticks_1.68.0.tar.gz"]
 
-    version("1.74.0", tag="RELEASE_3_21")
+	version("1.74.0", tag="RELEASE_3_21")
 	version("1.68.0", sha256="5fe024c809302807edf170ad1108e25519b240415c25a7a2efb8584e91e0880b")
 
 	depends_on("r-survival", type=("build", "run"))

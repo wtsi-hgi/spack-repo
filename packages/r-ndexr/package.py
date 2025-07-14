@@ -16,7 +16,7 @@ class RNdexr(RPackage):
 	bioc = "ndexr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ndexr_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ndexr/ndexr_1.24.0.tar.gz"]
 
-    version("1.30.0", tag="RELEASE_3_21")
+	version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="728b4cd6496bb33609336185b8d3f052476fd1632768df6b5e6dd78b2592a7ea")
 
 	depends_on("r-rcx", type=("build", "run"))

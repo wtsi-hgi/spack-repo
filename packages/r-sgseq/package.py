@@ -15,7 +15,7 @@ class RSgseq(RPackage):
 	bioc = "SGSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SGSeq_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SGSeq/SGSeq_1.36.0.tar.gz"]
 
-    version("1.42.1", tag="RELEASE_3_21")
+	version("1.42.1", tag="RELEASE_3_21")
 	version("1.36.0", sha256="8c8c007b87f67c62a167493e324cadef81239e8b6914856dd2a4f09c1dc884c0")
 
 	depends_on("r@4:", type=("build", "run"))

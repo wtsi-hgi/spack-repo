@@ -16,7 +16,7 @@ class RMnem(RPackage):
 	bioc = "mnem" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mnem_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mnem/mnem_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="07b0131ea1d879205800cec6ef521a6e239ffbf881b0bf90e93eb1412550cddc")
 
 	depends_on("r@4.1:", type=("build", "run"))

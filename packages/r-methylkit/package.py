@@ -16,7 +16,7 @@ class RMethylkit(RPackage):
 	bioc = "methylKit" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylKit_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylKit/methylKit_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="3b363dd0daca050d736ce36b683d959a0ce6fc5e7e536fc71395ae5988e28578")
 
 	depends_on("r@3.5:", type=("build", "run"))

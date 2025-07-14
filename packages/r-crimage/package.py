@@ -15,7 +15,7 @@ class RCrimage(RPackage):
 	bioc = "CRImage" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CRImage_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CRImage/CRImage_1.50.0.tar.gz"]
 
-    version("1.56.0", tag="RELEASE_3_21")
+	version("1.56.0", tag="RELEASE_3_21")
 	version("1.50.0", sha256="2c76f9b6442da822ce054f6fb86f032644974e7d420aa4512c5e1b6a163d747b")
 
 	depends_on("r-ebimage", type=("build", "run"))

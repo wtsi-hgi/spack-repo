@@ -22,7 +22,7 @@ class RBiomformat(RPackage):
 	bioc = "biomformat"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biomformat_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biomformat/biomformat_1.30.0.tar.gz"]
 
-    version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", tag="RELEASE_3_21")
 	version("1.8.0", commit="acd207377b24e4d8310eaff06c16dcfe6c04509a")
 	version("1.6.0", commit="61fb8c7b34ad561c3c46cacc0dd1957be56da85e")
 	version("1.4.0", commit="83b4b1883bc56ea93a0a6ca90fc1b18712ef0f1a")

@@ -15,7 +15,7 @@ class RHubpub(RPackage):
 	bioc = "HubPub" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HubPub_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HubPub/HubPub_1.10.1.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.1", sha256="563ac56babdca6ecaea0109d1542284bfa57e546a23d3d4f0c4594b470dde3a8")
 
 	depends_on("r-available", type=("build", "run"))

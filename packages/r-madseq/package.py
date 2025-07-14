@@ -16,7 +16,7 @@ class RMadseq(RPackage):
 	bioc = "MADSEQ" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MADSEQ_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MADSEQ/MADSEQ_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="dd23424c3391e22bbc11136e19240c9ff7e49f4d4f35887eb589021a7e926f81")
 
 	depends_on("r@3.5:", type=("build", "run"))

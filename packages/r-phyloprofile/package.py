@@ -16,7 +16,7 @@ class RPhyloprofile(RPackage):
 	bioc = "PhyloProfile" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PhyloProfile_1.16.4.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PhyloProfile/PhyloProfile_1.16.4.tar.gz"]
 
-    version("2.0.6", tag="RELEASE_3_21")
+	version("2.0.6", tag="RELEASE_3_21")
 	version("1.16.4", md5="e8c11595842347bd6ace0bdb57426311")
 	version("1.16.3", md5="be94ebf678031506ed0e3a5168ea17d9")
 

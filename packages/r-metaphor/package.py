@@ -15,7 +15,7 @@ class RMetaphor(RPackage):
 	bioc = "MetaPhOR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetaPhOR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetaPhOR/MetaPhOR_1.4.0.tar.gz"]
 
-    version("1.10.0", tag="RELEASE_3_21")
+	version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="e5c5b633e28ee4089d7e193e23d5e015eabd5d9b6ac4b08c307f95a19984fcdb")
 
 	depends_on("r@4.2:", type=("build", "run"))

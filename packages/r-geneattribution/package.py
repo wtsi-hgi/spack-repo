@@ -15,7 +15,7 @@ class RGeneattribution(RPackage):
 	bioc = "geneAttribution" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geneAttribution_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geneAttribution/geneAttribution_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="c06ebb5b9019aba4029f56ad5ab6c47feebf74a5bd4f2803750a9417c7ef6b4e")
 
 	depends_on("r-genomicranges", type=("build", "run"))

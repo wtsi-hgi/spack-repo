@@ -16,7 +16,7 @@ class RChamp(RPackage):
 
 	bioc = "ChAMP"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChAMP_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChAMP/ChAMP_2.32.0.tar.gz"]
-    version("2.38.0", tag="RELEASE_3_21")
+	version("2.38.0", tag="RELEASE_3_21")
 	version("2.32.0", sha256="674ab945c0d294e925cfae6cc892a4a33f2bfde99894019969cef545466facbd")
 	version("2.30.0", commit="b6ff6670d239c2517aa57144a793ea93da3c7b42")
 	version("2.28.0", commit="3d27ac67a738afea8cc9ece6ea1301120e4b48f7")

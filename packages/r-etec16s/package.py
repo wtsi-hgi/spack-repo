@@ -15,7 +15,7 @@ class REtec16s(RPackage):
 	bioc = "etec16s" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/etec16s_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/etec16s/etec16s_1.30.0.tar.gz"]
 
-    version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="83047da9de03b0cd7f25faa06802f6a562a8ce0319a8c009dcce3b7228acb0aa")
 
 	depends_on("r@3.3:", type=("build", "run"))

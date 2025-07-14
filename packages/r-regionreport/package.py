@@ -16,7 +16,7 @@ class RRegionreport(RPackage):
 	bioc = "regionReport" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/regionReport_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/regionReport/regionReport_1.36.0.tar.gz"]
 
-    version("1.42.0", tag="RELEASE_3_21")
+	version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="676e65645afe51b9d5c639529fc0f5d1f16ee90ef3c4fd5322e76c67cc4c71da")
 
 	depends_on("r@3.2:", type=("build", "run"))

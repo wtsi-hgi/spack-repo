@@ -15,7 +15,7 @@ class RArrays(RPackage):
 	bioc = "arrays" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/arrays_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/arrays/arrays_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="b120eca4c4cd349df064f7e37655f6294c4ca312019daff8b237a2e08b2331c3")
 
 	depends_on("r@3:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RRnaseq123(RPackage):
 	bioc = "RNAseq123" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/RNAseq123_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/RNAseq123/RNAseq123_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="09cd986a0f450de693133e5235fb82d2142ac023b2207cc7eaf7db46c789c5f6", url="https://www.bioconductor.org/packages/3.18/workflows/src/contrib/RNAseq123_1.26.0.tar.gz")
 
 	depends_on("r@3.3:", type=("build", "run"))

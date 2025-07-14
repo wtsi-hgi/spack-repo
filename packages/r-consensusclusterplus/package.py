@@ -15,7 +15,7 @@ class RConsensusclusterplus(RPackage):
 	bioc = "ConsensusClusterPlus" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ConsensusClusterPlus_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ConsensusClusterPlus/ConsensusClusterPlus_1.66.0.tar.gz"]
 
-    version("1.72.0", tag="RELEASE_3_21")
+	version("1.72.0", tag="RELEASE_3_21")
 	version("1.66.0", sha256="bae72341fbc941456a94d67b890139fa98a8de645b38c4d0b771bc4a56faac87")
 
 	depends_on("r-biobase", type=("build", "run"))

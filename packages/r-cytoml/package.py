@@ -16,7 +16,7 @@ class RCytoml(RPackage):
 	bioc = "CytoML" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CytoML_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CytoML/CytoML_2.14.0.tar.gz"]
 
-    version("2.20.0", tag="RELEASE_3_21")
+	version("2.20.0", tag="RELEASE_3_21")
 	version("2.14.0", sha256="c93916697fcea60331518c8afdeef4b38c48f93e592abb1097821aadac7a0973")
 
 	depends_on("r@3.5:", type=("build", "run"))

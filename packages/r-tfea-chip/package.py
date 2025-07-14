@@ -15,7 +15,7 @@ class RTfeaChip(RPackage):
 	bioc = "TFEA.ChIP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFEA.ChIP_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFEA.ChIP/TFEA.ChIP_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="0f1027429fcb626177c7a067c822d894e857d1985b4ca0c83780cf111eca5c39")
 
 	depends_on("r@3.5:", type=("build", "run"))

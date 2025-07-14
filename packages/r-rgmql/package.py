@@ -16,7 +16,7 @@ class RRgmql(RPackage):
 	bioc = "RGMQL" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RGMQL_1.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RGMQL/RGMQL_1.22.1.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.1", sha256="4704a42a4f68b8e2d54433c7f739b0be0637362ee62afe173a02f1901e27d3fa")
 	version("1.22.0", md5="78de1ecefadf0a7729bf7b62b50a2c1b")
 

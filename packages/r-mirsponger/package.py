@@ -15,7 +15,7 @@ class RMirsponger(RPackage):
 	homepage = "<https://github.com/zhangjunpeng411/miRspongeR>"
 	bioc = "miRspongeR" 
 
-    version("2.12.0", tag="RELEASE_3_21")
+	version("2.12.0", tag="RELEASE_3_21")
 	version("2.6.0", commit="3a9398baefed6c5745b8338df2d91b6f213e4d2b")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RMetacyto(RPackage):
 	bioc = "MetaCyto" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetaCyto_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetaCyto/MetaCyto_1.24.0.tar.gz"]
 
-    version("1.30.0", tag="RELEASE_3_21")
+	version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="2620c71f14b3a7ebc71b4b68da19ea2a7428cbfe0242bf32a93aed74fb6fdc9d")
 
 	depends_on("r@3.4:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RMofa2(RPackage):
 	bioc = "MOFA2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MOFA2_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MOFA2/MOFA2_1.12.1.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.1", sha256="7746c0f8bae20441763220559e01a446ca61c1f392bc2b5a1d0cb01985743eef", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MOFA2_1.12.1.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))

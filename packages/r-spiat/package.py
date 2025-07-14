@@ -16,7 +16,7 @@ class RSpiat(RPackage):
 	bioc = "SPIAT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SPIAT_1.4.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SPIAT/SPIAT_1.4.2.tar.gz"]
 
-    version("1.10.0", tag="RELEASE_3_21")
+	version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.2", sha256="f23473c8b33b483e020b874cd1a8a1cc3149304d6b1cc7f15fdb0ae7bbdf3fbb")
 	version("1.4.1", md5="45342ea9b5cbfbc01e38d6c7b7866852")
 

@@ -15,7 +15,7 @@ class RCcmap(RPackage):
 	bioc = "ccmap" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ccmap_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ccmap/ccmap_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="91b2b953fad2afb411740e526db95be6b2d3b1d373eac1f51102725c532bab3a")
 
 	depends_on("r-annotationdbi@1.36.2:", type=("build", "run"))

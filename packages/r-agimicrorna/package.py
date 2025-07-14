@@ -15,7 +15,7 @@ class RAgimicrorna(RPackage):
 	bioc = "AgiMicroRna"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AgiMicroRna_2.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AgiMicroRna/AgiMicroRna_2.52.0.tar.gz"]
 
-    version("2.58.0", tag="RELEASE_3_21")
+	version("2.58.0", tag="RELEASE_3_21")
 	version("2.52.0", sha256="6538ef345d74d29f7a1901c9631823e1f9d213c6de562c70aeb57cad80893532")
 	version("2.50.0", commit="a812b0f4f215b093ca685889b65de60c6701b695")
 	version("2.48.0", commit="4c163b1b730150a3a60a3815bd8c08fa04d71fc1")

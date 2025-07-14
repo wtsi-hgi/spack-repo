@@ -15,7 +15,7 @@ class RMatrixqcvis(RPackage):
 	bioc = "MatrixQCvis" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MatrixQCvis_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MatrixQCvis/MatrixQCvis_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="694b2e673fc5c2ab99e6be1a2d378799f412e10977ca1c343da7ee1c2c903737")
 
 	depends_on("r-summarizedexperiment@1.20:", type=("build", "run"))

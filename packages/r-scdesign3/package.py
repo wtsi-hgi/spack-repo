@@ -16,7 +16,7 @@ class RScdesign3(RPackage):
 	bioc = "scDesign3" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDesign3_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scDesign3/scDesign3_1.0.1.tar.gz"]
 
-    version("1.6.0", tag="RELEASE_3_21")
+	version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.1", sha256="6cdc356c3ddb772f4683bd4cd524c13ae6841768e6f5e4b630f87868c7629208", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDesign3_1.0.1.tar.gz")
 
 	depends_on("r@4.2:", type=("build", "run"))

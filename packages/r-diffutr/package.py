@@ -15,7 +15,7 @@ class RDiffutr(RPackage):
 	bioc = "diffUTR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/diffUTR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/diffUTR/diffUTR_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="929c164ac14bc0418e76e7ae05eedd6e5d1312153344b2b0e7f25e6e4c86c67d")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RPharmacogx(RPackage):
 	bioc = "PharmacoGx" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PharmacoGx_3.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PharmacoGx/PharmacoGx_3.6.0.tar.gz"]
 
-    version("3.12.2", tag="RELEASE_3_21")
+	version("3.12.2", tag="RELEASE_3_21")
 	version("3.6.0", sha256="b71c8d7dbee66270d2d44456e74771b2713b6566c892c06e106f55c96c461bda")
 
 	depends_on("r@3.6:", type=("build", "run"))

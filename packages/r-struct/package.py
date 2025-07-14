@@ -15,7 +15,7 @@ class RStruct(RPackage):
 	bioc = "struct" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/struct_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/struct/struct_1.14.1.tar.gz"]
 
-    version("1.20.1", tag="RELEASE_3_21")
+	version("1.20.1", tag="RELEASE_3_21")
 	version("1.14.1", sha256="602cb5c2b1c507958fc344ada92c24d5e6933da2a2f6331e519c346b5b70f77e")
 
 	depends_on("r@4:", type=("build", "run"))

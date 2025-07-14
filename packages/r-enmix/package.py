@@ -16,7 +16,7 @@ class REnmix(RPackage):
 	bioc = "ENmix" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ENmix_1.38.01.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ENmix/ENmix_1.38.01.tar.gz"]
 
-    version("1.44.3", tag="RELEASE_3_21")
+	version("1.44.3", tag="RELEASE_3_21")
 	version("1.38.01", sha256="03b0aaba5716e78f7a8da53c555b1a1dbf74cf17a6182b180169dc9662a609f2")
 
 	depends_on("r-doparallel", type=("build", "run"))

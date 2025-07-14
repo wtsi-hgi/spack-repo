@@ -16,7 +16,7 @@ class RSpecl(RPackage):
 	bioc = "specL" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/specL_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/specL/specL_1.36.0.tar.gz"]
 
-    version("1.42.0", tag="RELEASE_3_21")
+	version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="aae46a535b29ae3601c5ef7aafe91167358113dfc256ee22f1a422547ef6a8f9")
 
 	depends_on("r@4.1:", type=("build", "run"))

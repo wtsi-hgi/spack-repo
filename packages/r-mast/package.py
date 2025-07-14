@@ -16,7 +16,7 @@ class RMast(RPackage):
 	bioc = "MAST" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MAST_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MAST/MAST_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="9792e5c49877d58efaee7ad3bc855fa866fa059c86942054366549737b673e9e")
 
 	depends_on("r-singlecellexperiment@1.2:", type=("build", "run"))

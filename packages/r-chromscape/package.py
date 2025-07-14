@@ -16,7 +16,7 @@ class RChromscape(RPackage):
 	bioc = "ChromSCape" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChromSCape_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChromSCape/ChromSCape_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="74e00d0ef885ae9bad35823b8158c821714cfe362e4ad6112c20740af518f8b1")
 
 	depends_on("r@4.1:", type=("build", "run"))

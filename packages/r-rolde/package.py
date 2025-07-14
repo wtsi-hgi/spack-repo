@@ -16,7 +16,7 @@ class RRolde(RPackage):
 	bioc = "RolDE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RolDE_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RolDE/RolDE_1.6.0.tar.gz"]
 
-    version("1.12.0", tag="RELEASE_3_21")
+	version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="08b694f03c455a1a7e78612ac69b9a806cdc214145f3b434b3943375c793dc3c")
 
 	depends_on("r@4.2:", type=("build", "run"))

@@ -18,7 +18,7 @@ class RDss(RPackage):
 
 	bioc = "DSS"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DSS_2.50.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DSS/DSS_2.50.1.tar.gz"]
-    version("2.56.0", tag="RELEASE_3_21")
+	version("2.56.0", tag="RELEASE_3_21")
 	version("2.50.1", sha256="4051ad59f9e44636a1f02ccb10127403543b7d88038e3015b1838b3f91204df2")
 	version("2.48.0", commit="03ceee2656e57b717e4fd7f22ff389f118421ae1")
 	version("2.46.0", commit="debfbac4bc741961ba57915d4f2d98534f02cc21")

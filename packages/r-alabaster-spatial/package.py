@@ -15,7 +15,7 @@ class RAlabasterSpatial(RPackage):
 	bioc = "alabaster.spatial" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.spatial_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.spatial/alabaster.spatial_1.2.0.tar.gz"]
 
-    version("1.8.0", tag="RELEASE_3_21")
+	version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="dd98cfef50b21f37f6f6874c26ab89e65f18fca9dad0648cbaff297d3d8eb0c9")
 
 	depends_on("r-spatialexperiment", type=("build", "run"))

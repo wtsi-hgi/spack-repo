@@ -16,7 +16,7 @@ class RFlowsom(RPackage):
 	bioc = "FlowSOM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FlowSOM_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FlowSOM/FlowSOM_2.10.0.tar.gz"]
 
-    version("2.16.0", tag="RELEASE_3_21")
+	version("2.16.0", tag="RELEASE_3_21")
 	version("2.10.0", sha256="74d4f46e6b3928affca83628d030f9b5cd8624993b7d9723be5dbb49d6f81d9c")
 
 	depends_on("r@4:", type=("build", "run"))

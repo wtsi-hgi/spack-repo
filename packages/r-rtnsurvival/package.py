@@ -15,7 +15,7 @@ class RRtnsurvival(RPackage):
 	bioc = "RTNsurvival" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RTNsurvival_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RTNsurvival/RTNsurvival_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="6d1a827cf5c645e68bf1b58082d78d547555bbc6a269afca9cc5913127e210ec")
 
 	depends_on("r@3.6.3:", type=("build", "run"))

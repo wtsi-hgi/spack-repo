@@ -16,7 +16,7 @@ class RRnaseqgene(RPackage):
 	bioc = "rnaseqGene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/rnaseqGene_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/rnaseqGene/rnaseqGene_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="613ec95c657958f8cf40133ec9dd3c27d8d648b59a12627c9234b3b1da30bdb6")
 
 	depends_on("r@3.3:", type=("build", "run"))

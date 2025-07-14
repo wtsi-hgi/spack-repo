@@ -16,7 +16,7 @@ class ROncoscore(RPackage):
 	bioc = "OncoScore" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OncoScore_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OncoScore/OncoScore_1.30.0.tar.gz"]
 
-    version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="335b957999e1a565b0a7ba5d13a1db7247a0d28e0caf3cf883385c3d4d42ddec")
 
 	depends_on("r@4.1:", type=("build", "run"))

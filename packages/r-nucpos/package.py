@@ -15,7 +15,7 @@ class RNucpos(RPackage):
 	bioc = "nuCpos" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nuCpos_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nuCpos/nuCpos_1.20.0.tar.gz"]
 
-    version("1.26.0", tag="RELEASE_3_21")
+	version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="b8443fd84bb07a4734a987aa279b41b373f6a5009ad8781be100aaa568afd5e2")
 
 	depends_on("r@4.2:", type=("build", "run"))

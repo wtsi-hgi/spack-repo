@@ -16,7 +16,7 @@ class RMethylclock(RPackage):
 	bioc = "methylclock" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylclock_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylclock/methylclock_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="813248b3f4cabf05919de15147630e8290984f0bdce177de4445ed6683a85eda")
 
 	depends_on("r@4.1:", type=("build", "run"))

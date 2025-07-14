@@ -17,7 +17,7 @@ class RScran(RPackage):
 
 	bioc = "scran"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scran_1.30.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scran/scran_1.30.2.tar.gz"]
-    version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.2", sha256="7adf3d32a8dabecc4ebe08bc076604d98a372a5330b8cef5eac8a2d63c296419")
 	version("1.28.0", commit="2e542b929b231fb5bb8c40af0f6ccea97f79234d")
 	version("1.26.0", commit="df66576d6958a088c38bd45e1cad9c16cbb52991")

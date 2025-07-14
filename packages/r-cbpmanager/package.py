@@ -16,7 +16,7 @@ class RCbpmanager(RPackage):
 	bioc = "cbpManager" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cbpManager_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cbpManager/cbpManager_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="eae8cba70f474680fc076773ed7bc142512824c9997a326e185ce3ecb17aa784")
 
 	depends_on("r-shiny", type=("build", "run"))

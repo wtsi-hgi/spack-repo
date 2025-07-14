@@ -15,7 +15,7 @@ class REasyrnaseq(RPackage):
 	bioc = "easyRNASeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/easyRNASeq_2.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/easyRNASeq/easyRNASeq_2.38.0.tar.gz"]
 
-    version("2.44.0", tag="RELEASE_3_21")
+	version("2.44.0", tag="RELEASE_3_21")
 	version("2.38.0", sha256="ff0a8a4472bfd493ea80d8013d367e35c9d8a2042637658adb2fe089925c3942")
 
 	depends_on("r-biobase@2.50:", type=("build", "run"))

@@ -18,7 +18,7 @@ class RTfbstools(RPackage):
 
 	bioc = "TFBSTools"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFBSTools_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFBSTools/TFBSTools_1.40.0.tar.gz"]
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="98efdb17ec1979679951020697e89cea2794f64aac4bcd070bf3799b10cabaa2")
 	version("1.38.0", commit="2ce17166b6f73b5093acec2a3dde33b6bcfa56bc")
 	version("1.36.0", commit="3358c89227a4d2e237ee5f8c532f468460a16ee2")

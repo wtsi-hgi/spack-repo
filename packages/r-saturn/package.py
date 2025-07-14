@@ -16,7 +16,7 @@ class RSaturn(RPackage):
 	bioc = "satuRn" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/satuRn_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/satuRn/satuRn_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="0ebf83be684ca95c9418c1952b9949ca69be108d15cb11f955685ccb80dc7189")
 
 	depends_on("r@4.1:", type=("build", "run"))

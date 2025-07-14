@@ -15,7 +15,7 @@ class RCellid(RPackage):
 	bioc = "CelliD" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CelliD_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CelliD/CelliD_1.10.1.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.1", sha256="3bb41e8bac869def13016f2555554dea2a606239f971d4901d1019711bec1c8e")
 
 	depends_on("r@4.1:", type=("build", "run"))

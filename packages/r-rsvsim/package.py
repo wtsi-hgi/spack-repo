@@ -15,7 +15,7 @@ class RRsvsim(RPackage):
 	bioc = "RSVSim" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RSVSim_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RSVSim/RSVSim_1.42.0.tar.gz"]
 
-    version("1.48.0", tag="RELEASE_3_21")
+	version("1.48.0", tag="RELEASE_3_21")
 	version("1.42.0", sha256="d4e84df70b3de7e9b33d22c71ae97831f86cb08ed391e4a1d6028e36b49f317f")
 
 	depends_on("r@3.5:", type=("build", "run"))

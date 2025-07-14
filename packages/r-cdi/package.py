@@ -16,7 +16,7 @@ class RCdi(RPackage):
 	bioc = "CDI" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CDI_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CDI/CDI_1.0.2.tar.gz"]
 
-    version("1.6.0", tag="RELEASE_3_21")
+	version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.2", sha256="af5759f330b6c78eff2752ec42ebae884b30eaa1a193d773b0d23f86e1a6ae7f")
 
 	depends_on("r@3.6:", type=("build", "run"))

@@ -15,7 +15,7 @@ class RRfastp(RPackage):
 	bioc = "Rfastp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rfastp_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rfastp/Rfastp_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="9860cd9efda99b73d7efc412538704938b90d4cc26e9d9305c7db692aa65cf5e")
 
 	depends_on("r-rcpp", type=("build", "run"))

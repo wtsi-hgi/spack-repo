@@ -15,7 +15,7 @@ class RRtcgaCnv(RPackage):
 	bioc = "RTCGA.CNV" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.CNV_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.CNV/RTCGA.CNV_1.30.0.tar.gz"]
 
-    version("1.36.0", tag="RELEASE_3_21")
+	version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="8c10121e07c6181644f62dc2275a3eae5415a980a4f61704cff9c3399f8b6e2a")
 
 	depends_on("r@3.3:", type=("build", "run"))

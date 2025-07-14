@@ -16,7 +16,7 @@ class RMsexperiment(RPackage):
 	bioc = "MsExperiment" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsExperiment_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsExperiment/MsExperiment_1.4.0.tar.gz"]
 
-    version("1.10.1", tag="RELEASE_3_21")
+	version("1.10.1", tag="RELEASE_3_21")
 	version("1.4.0", sha256="cf79cbb2db2cd679285cdd5407a46bbf8f816804f736f375c5b20ff88189a01a")
 
 	depends_on("r@4.2:", type=("build", "run"))

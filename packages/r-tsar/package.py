@@ -15,7 +15,7 @@ class RTsar(RPackage):
 	bioc = "TSAR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TSAR_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TSAR/TSAR_1.0.0.tar.gz"]
 
-    version("1.6.0", tag="RELEASE_3_21")
+	version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="bc75e3ad29377425c1da1b43cef760445d71ea47d8fc0a0390705d3778b9f0cd")
 
 	depends_on("r@4.3:", type=("build", "run"))

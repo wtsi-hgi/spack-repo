@@ -15,7 +15,7 @@ class RSpacepac(RPackage):
 	bioc = "SpacePAC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpacePAC_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpacePAC/SpacePAC_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="a251d26c5f48982a1f719df261c8ed4fc03682a572188bf0692c812cc3be2f2d")
 
 	depends_on("r@2.15:", type=("build", "run"))

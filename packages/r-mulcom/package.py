@@ -15,7 +15,7 @@ class RMulcom(RPackage):
 	bioc = "Mulcom" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Mulcom_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Mulcom/Mulcom_1.52.0.tar.gz"]
 
-    version("1.58.0", tag="RELEASE_3_21")
+	version("1.58.0", tag="RELEASE_3_21")
 	version("1.52.0", sha256="450e19d117074b6e9a0690cefc6b2dda42f31a8cabf264d86d90e4a250705b97")
 
 	depends_on("r@2.10:", type=("build", "run"))

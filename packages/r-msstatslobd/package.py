@@ -15,7 +15,7 @@ class RMsstatslobd(RPackage):
 	bioc = "MSstatsLOBD" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsLOBD_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsLOBD/MSstatsLOBD_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="d827e524edf1ae7a6e6d514eb49b69e8e13fe98b3623ca6760799b53c7dd77df")
 
 	depends_on("r@4:", type=("build", "run"))

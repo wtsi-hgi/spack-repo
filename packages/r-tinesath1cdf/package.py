@@ -15,7 +15,7 @@ class RTinesath1cdf(RPackage):
 	bioc = "tinesath1cdf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tinesath1cdf_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tinesath1cdf/tinesath1cdf_1.40.0.tar.gz"]
 
-    version("1.46.0", tag="RELEASE_3_21")
+	version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="9ac0104f108085dfe489d50874c29541d4cfca85c31dfcbae8f256ed0c2fab89")
 
 

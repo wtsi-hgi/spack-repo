@@ -16,7 +16,7 @@ class REasylift(RPackage):
 	bioc = "easylift" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/easylift_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/easylift/easylift_1.0.0.tar.gz"]
 
-    version("1.6.0", tag="RELEASE_3_21")
+	version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="364089242d0087631ba2fc1226a3fbce8af84f876c7c6176051e0e876e47abf5")
 
 	depends_on("r-genomicranges", type=("build", "run"))

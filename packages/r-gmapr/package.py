@@ -15,7 +15,7 @@ class RGmapr(RPackage):
 	bioc = "gmapR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gmapR_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gmapR/gmapR_1.44.0.tar.gz"]
 
-    version("1.50.0", tag="RELEASE_3_21")
+	version("1.50.0", tag="RELEASE_3_21")
 	version("1.44.0", sha256="9a4170ff62a8a5482a5f77187ec9b3791896546c1eb1038545eb7f90cf488022")
 
 	depends_on("r@2.15:", type=("build", "run"))

@@ -16,7 +16,7 @@ class RMpra(RPackage):
 	bioc = "mpra" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mpra_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mpra/mpra_1.24.0.tar.gz"]
 
-    version("1.30.1", tag="RELEASE_3_21")
+	version("1.30.1", tag="RELEASE_3_21")
 	version("1.24.0", sha256="78cdb3a36b182af6ac187fb65e88b0d0321b3b33da19b3463a40723da9a24d7d")
 
 	depends_on("r@3.5:", type=("build", "run"))

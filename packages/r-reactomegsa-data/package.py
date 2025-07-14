@@ -16,7 +16,7 @@ class RReactomegsaData(RPackage):
 	bioc = "ReactomeGSA.data" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ReactomeGSA.data_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ReactomeGSA.data/ReactomeGSA.data_1.16.1.tar.gz"]
 
-    version("1.22.0", tag="RELEASE_3_21")
+	version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.1", sha256="23aef32a3c97e44dcf88463efec0255e341ffe655f5238ccdee6bf452dd4c4a2")
 
 	depends_on("r@3.6:", type=("build", "run"))

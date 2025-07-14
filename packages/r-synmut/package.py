@@ -16,7 +16,7 @@ class RSynmut(RPackage):
 	bioc = "SynMut" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SynMut_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SynMut/SynMut_1.18.0.tar.gz"]
 
-    version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="d57552777b348b49c8e6232bc48ba574b5728c9fdf33629e00c18351775cb70a")
 
 	depends_on("r-seqinr", type=("build", "run"))

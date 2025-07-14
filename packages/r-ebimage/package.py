@@ -16,7 +16,7 @@ class REbimage(RPackage):
 	bioc = "EBImage" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EBImage_4.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EBImage/EBImage_4.44.0.tar.gz"]
 
-    version("4.50.0", tag="RELEASE_3_21")
+	version("4.50.0", tag="RELEASE_3_21")
 	version("4.44.0", sha256="1ebeda2a0a718a8655613e672b6cbaa5592d0cf0dad0b1fa2094964d2c2bb149")
 
 	depends_on("r-biocgenerics@0.7.1:", type=("build", "run"))

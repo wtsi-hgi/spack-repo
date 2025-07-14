@@ -15,7 +15,7 @@ class RFuntoonorm(RPackage):
 	bioc = "funtooNorm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/funtooNorm_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/funtooNorm/funtooNorm_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="fe016d48aa1d1f565d2b783ee20a4068a123548c393ef3c7bea582608d92ddbc")
 
 	depends_on("r@3.4:", type=("build", "run"))

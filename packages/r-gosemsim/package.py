@@ -19,7 +19,7 @@ class RGosemsim(RPackage):
 
 	bioc = "GOSemSim"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOSemSim_2.28.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOSemSim/GOSemSim_2.28.1.tar.gz"]
-    version("2.34.0", tag="RELEASE_3_21")
+	version("2.34.0", tag="RELEASE_3_21")
 	version("2.8.0", commit="c8c985b2a814cc2365c7f05b2509205e1b6b7f58")
 	version("2.6.2", commit="2ffe78e89276e804306554965fc0799318ec56ed")
 	version("2.4.1", commit="0656e845860d14e054670ffc246a1c53f699299c")

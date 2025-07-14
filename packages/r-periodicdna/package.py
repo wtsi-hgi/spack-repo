@@ -16,7 +16,7 @@ class RPeriodicdna(RPackage):
 	bioc = "periodicDNA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/periodicDNA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/periodicDNA/periodicDNA_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="f83baf3dc7b1dc2c8f69dde0e26daafe1f49ea8b2615d993179985e3b1060e23")
 
 	depends_on("r@4:", type=("build", "run"))

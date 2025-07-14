@@ -15,7 +15,7 @@ class RGeomxtools(RPackage):
 	bioc = "GeomxTools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeomxTools_3.6.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeomxTools/GeomxTools_3.6.2.tar.gz"]
 
-    version("3.12.0", tag="RELEASE_3_21")
+	version("3.12.0", tag="RELEASE_3_21")
 	version("3.6.2", sha256="d256eb7048fc5b24ba097459561d86882d846a8d359499c6d6fc70129bea9106")
 
 	depends_on("r@3.6:", type=("build", "run"))

@@ -14,7 +14,7 @@ class RAnnotate(RPackage):
 	bioc = "annotate"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/annotate_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/annotate/annotate_1.80.0.tar.gz"]
 
-    version("1.86.1", tag="RELEASE_3_21")
+	version("1.86.1", tag="RELEASE_3_21")
 	version("1.80.0", sha256="4dab9615498f6c58d1e6ecc1ecd0052187e46bdf971b18d73149b6bddea2ad82")
 	version("1.78.0", commit="ca6415a463ec682f340ba5d1dc6246a92e836143")
 	version("1.76.0", commit="0181d5c41d594e36be06adb6a02302db0ad2c507")

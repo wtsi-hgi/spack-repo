@@ -15,7 +15,7 @@ class RPowertcr(RPackage):
 	bioc = "powerTCR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/powerTCR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/powerTCR/powerTCR_1.22.0.tar.gz"]
 
-    version("1.28.0", tag="RELEASE_3_21")
+	version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="71d870a755c7bba4e75fad1df901857bdc25150f105554f75af296841bbcd519")
 
 	depends_on("r-cubature", type=("build", "run"))

@@ -15,7 +15,7 @@ class RBanocc(RPackage):
 	bioc = "banocc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/banocc_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/banocc/banocc_1.26.0.tar.gz"]
 
-    version("1.32.0", tag="RELEASE_3_21")
+	version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="f7c1d389eb39421a23df556e097bee3d6a800fc2a3bc6288e9428fbee68fd578")
 
 	depends_on("r@3.5.1:", type=("build", "run"))

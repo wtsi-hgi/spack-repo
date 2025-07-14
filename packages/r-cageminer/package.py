@@ -16,7 +16,7 @@ class RCageminer(RPackage):
 	bioc = "cageminer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cageminer_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cageminer/cageminer_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="dc7f034cbc9e9b9f5080b74e94fb40ff0beab366d28eb70c92185dde391da1ad")
 
 	depends_on("r@4.1:", type=("build", "run"))

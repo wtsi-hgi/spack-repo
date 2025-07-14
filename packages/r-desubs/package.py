@@ -15,7 +15,7 @@ class RDesubs(RPackage):
 	bioc = "DEsubs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEsubs_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEsubs/DEsubs_1.28.0.tar.gz"]
 
-    version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="0817f89af04ca5ccce6b031c7127a695f52009608a7613582f38f187974bbbad")
 
 	depends_on("r@3.3:", type=("build", "run"))

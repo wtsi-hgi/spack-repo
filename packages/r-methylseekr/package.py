@@ -15,7 +15,7 @@ class RMethylseekr(RPackage):
 	bioc = "MethylSeekR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MethylSeekR_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MethylSeekR/MethylSeekR_1.42.0.tar.gz"]
 
-    version("1.48.0", tag="RELEASE_3_21")
+	version("1.48.0", tag="RELEASE_3_21")
 	version("1.42.0", sha256="eeb5fe4f96fecae75a0197044c8ee1ea493efd0ab68dfa15236971753e56517f")
 
 	depends_on("r-rtracklayer@1.16.3:", type=("build", "run"))

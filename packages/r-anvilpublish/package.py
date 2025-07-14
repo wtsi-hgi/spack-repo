@@ -15,7 +15,7 @@ class RAnvilpublish(RPackage):
 	bioc = "AnVILPublish" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnVILPublish_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnVILPublish/AnVILPublish_1.12.0.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="25a53ff66d7b3b21874b1a08d165e16fc6682e34d2b9ab4a3aa8c06110d9657a")
 
 	depends_on("r-anvil", type=("build", "run"))

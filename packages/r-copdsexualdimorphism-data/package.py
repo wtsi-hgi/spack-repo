@@ -15,7 +15,7 @@ class RCopdsexualdimorphismData(RPackage):
 	bioc = "COPDSexualDimorphism.data" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/COPDSexualDimorphism.data_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/COPDSexualDimorphism.data/COPDSexualDimorphism.data_1.38.0.tar.gz"]
 
-    version("1.44.0", tag="RELEASE_3_21")
+	version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="6ea73e5a85cad49f08ea04bc1694f80dba69e4b36df14c1d0bf3a87e4e717dd6")
 
 

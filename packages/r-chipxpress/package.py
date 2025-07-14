@@ -15,7 +15,7 @@ class RChipxpress(RPackage):
 	bioc = "ChIPXpress" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPXpress_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPXpress/ChIPXpress_1.46.0.tar.gz"]
 
-    version("1.52.0", tag="RELEASE_3_21")
+	version("1.52.0", tag="RELEASE_3_21")
 	version("1.46.0", sha256="4560c4c1e2dfabd4264bba5a2b083feeefc32a9a7e1152efc9ec12f2b7615210")
 
 	depends_on("r@2.10:", type=("build", "run"))

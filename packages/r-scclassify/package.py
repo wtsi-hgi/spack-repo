@@ -15,7 +15,7 @@ class RScclassify(RPackage):
 	bioc = "scClassify" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scClassify_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scClassify/scClassify_1.14.0.tar.gz"]
 
-    version("1.20.0", tag="RELEASE_3_21")
+	version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="6ed52ca8d4839c48a9812b752350865ba0c793382b44289e04a26037b22b84c6")
 
 	depends_on("r@4:", type=("build", "run"))

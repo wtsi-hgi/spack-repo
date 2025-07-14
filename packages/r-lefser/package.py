@@ -16,7 +16,7 @@ class RLefser(RPackage):
 	bioc = "lefser" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lefser_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lefser/lefser_1.12.1.tar.gz"]
 
-    version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.1", sha256="157dbfc094dc414ae49baa7b55a3ff48d857a6bb0f189c45509c73726de4dc2b")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))

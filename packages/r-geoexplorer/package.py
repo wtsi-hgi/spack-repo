@@ -16,7 +16,7 @@ class RGeoexplorer(RPackage):
 	bioc = "GEOexplorer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEOexplorer_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEOexplorer/GEOexplorer_1.8.0.tar.gz"]
 
-    version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="fce2f86eb58a9ba5892e33f9d4c31d6b05a129c16096e2ba021d8ab6b0d412ca")
 
 	depends_on("r-shiny", type=("build", "run"))

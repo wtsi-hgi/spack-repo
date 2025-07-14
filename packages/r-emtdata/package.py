@@ -16,7 +16,7 @@ class REmtdata(RPackage):
 	bioc = "emtdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/emtdata_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/emtdata/emtdata_1.10.0.tar.gz"]
 
-    version("1.16.0", tag="RELEASE_3_21")
+	version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="bcb5b9ce1bc2348f20e27048ad04d7e878aa7b3622370a16d834b0c3d3ab583a")
 
 	depends_on("r@4.1:", type=("build", "run"))

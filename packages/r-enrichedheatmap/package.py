@@ -16,7 +16,7 @@ class REnrichedheatmap(RPackage):
 	bioc = "EnrichedHeatmap" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EnrichedHeatmap_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EnrichedHeatmap/EnrichedHeatmap_1.32.0.tar.gz"]
 
-    version("1.38.0", tag="RELEASE_3_21")
+	version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="f7a3bde456f4877491ebd4a9f1494e9837bad20b758530e2235dd7888de80749")
 
 	depends_on("r@3.6:", type=("build", "run"))

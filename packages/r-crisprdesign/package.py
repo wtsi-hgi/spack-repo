@@ -16,7 +16,7 @@ class RCrisprdesign(RPackage):
 	bioc = "crisprDesign" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crisprDesign_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crisprDesign/crisprDesign_1.4.0.tar.gz"]
 
-    version("1.10.0", tag="RELEASE_3_21")
+	version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="920560e476b136d25f48c90a3cf2e08026d91c86669588c7ed97d1f85e64c4a0")
 
 	depends_on("r@4.2:", type=("build", "run"))
