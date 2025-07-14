@@ -15,6 +15,7 @@ class RGenestructuretools(RPackage):
 	bioc = "GeneStructureTools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneStructureTools_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneStructureTools/GeneStructureTools_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="c32fcc0e2fb7a514e9ce5a4c34736f6048f093618ab48cea220df7060538831e")
 
 	depends_on("r-biostrings", type=("build", "run"))

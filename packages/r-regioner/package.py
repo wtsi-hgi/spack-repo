@@ -15,6 +15,7 @@ class RRegioner(RPackage):
 	bioc = "regioneR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/regioneR_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/regioneR/regioneR_1.34.0.tar.gz"]
 
+    version("1.40.1", tag="RELEASE_3_21")
 	version("1.34.0", sha256="32fa22d1ef19db168a017578178a61b38c4e82b4572595eed0cf3ad18e5c8fe1")
 
 	depends_on("r-genomicranges", type=("build", "run"))

@@ -16,6 +16,7 @@ class RDama(RPackage):
 	bioc = "daMA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/daMA_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/daMA/daMA_1.74.0.tar.gz"]
 
+    version("1.80.0", tag="RELEASE_3_21")
 	version("1.74.0", sha256="668c9830927a9bb44df8f84565e9731ae6bc77aa9e04b80cee8afaa60c4473b2")
 
 	depends_on("r-mass", type=("build", "run"))

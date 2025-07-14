@@ -16,6 +16,7 @@ class RWebbioc(RPackage):
 	bioc = "webbioc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/webbioc_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/webbioc/webbioc_1.74.0.tar.gz"]
 
+    version("1.80.0", tag="RELEASE_3_21")
 	version("1.74.0", sha256="feddd843ecc46717a51d6055e0209764026237bd72e1c1f644d7f80e0f0e44b1")
 
 	depends_on("r@1.8:", type=("build", "run"))

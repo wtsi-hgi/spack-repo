@@ -16,6 +16,7 @@ class RMsbackendmgf(RPackage):
 	bioc = "MsBackendMgf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsBackendMgf_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsBackendMgf/MsBackendMgf_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="d4e30e91104bbc46b0afa052110d60278eb8ff73ce5e1812f60bc873b272fd7b")
 
 	depends_on("r@4:", type=("build", "run"))

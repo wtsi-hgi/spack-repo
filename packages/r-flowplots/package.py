@@ -15,6 +15,7 @@ class RFlowplots(RPackage):
 	bioc = "flowPlots" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowPlots_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowPlots/flowPlots_1.50.0.tar.gz"]
 
+    version("1.56.0", tag="RELEASE_3_21")
 	version("1.50.0", sha256="9ac84c0a3af3071a4dd2dbc70883105eced78c1996f1f282002dd0ccea7cb8d1")
 
 	depends_on("r@2.13:", type=("build", "run"))

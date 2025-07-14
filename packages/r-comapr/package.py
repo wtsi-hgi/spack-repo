@@ -15,6 +15,7 @@ class RComapr(RPackage):
 	bioc = "comapr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/comapr_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/comapr/comapr_1.6.1.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.1", sha256="ac101714233d406338b6ac5022d3547b6ba65939806bad7bae4744948952718e")
 
 	depends_on("r@4.1:", type=("build", "run"))

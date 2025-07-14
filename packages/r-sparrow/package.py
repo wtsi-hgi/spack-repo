@@ -16,6 +16,7 @@ class RSparrow(RPackage):
 	bioc = "sparrow" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sparrow_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sparrow/sparrow_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="6a0dded80b7c8552091d6a81b46d3bd3288920db89a962c31e8d7e749e32166f")
 
 	depends_on("r@4:", type=("build", "run"))

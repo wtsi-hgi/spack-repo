@@ -19,6 +19,7 @@ class RMsa(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msa/msa_1.34.0.tar.gz",
     ]
 
+    version("1.40.0", tag="RELEASE_3_21")
     version("1.34.0", sha256="05a3ff0e96ba9ff466f2cd1bc7936294d1bbcc4123376bdb34d9e54e8c444ab3")
 
     depends_on("r@3.3:", type=("build", "run"))

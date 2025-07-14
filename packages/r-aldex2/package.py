@@ -26,6 +26,7 @@ class RAldex2(RPackage):
 	license("GPL-3.0-only")
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ALDEx2_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ALDEx2/ALDEx2_1.34.0.tar.gz"]
 
+    version("1.40.0", tag="RELEASE_3_21")
 	version("1.8.0", commit="24104824ca2402ad4f54fbf1ed9cee7fac2aaaf1")
 	version("1.34.0", sha256="1f361260ceb52bcc6e30bcc5d51990627703faf5464023f8dc87e7db12a79071", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ALDEx2_1.34.0.tar.gz")
 	version("1.32.0", commit="ba32b9a9b6a8f42906ea094318f00116f15e42eb")

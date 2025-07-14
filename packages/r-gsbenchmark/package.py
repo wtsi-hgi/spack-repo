@@ -15,6 +15,7 @@ class RGsbenchmark(RPackage):
 	bioc = "GSBenchMark" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GSBenchMark_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GSBenchMark/GSBenchMark_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="eb89db2991aa2c7f9945ea5e0f19325fe97060220e74c09dbb2082990cbb8c0d")
 
 	depends_on("r@2.13.1:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RMetabolomicsworkbenchr(RPackage):
 	bioc = "metabolomicsWorkbenchR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metabolomicsWorkbenchR_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metabolomicsWorkbenchR/metabolomicsWorkbenchR_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="63113b093e79341a6ce74410a9a348fc4ad7d895911d12a70c7b5f78858fecb9")
 
 	depends_on("r@4:", type=("build", "run"))

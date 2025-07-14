@@ -15,6 +15,7 @@ class RMulticlust(RPackage):
 	bioc = "multiClust" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/multiClust_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/multiClust/multiClust_1.32.0.tar.gz"]
 
+    version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="15024ebf68929aa23fdf49b0593793be9e092776213e462728f3b76206acb652")
 
 	depends_on("r-mclust", type=("build", "run"))

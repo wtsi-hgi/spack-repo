@@ -15,6 +15,7 @@ class RAffyhgu133aexpr(RPackage):
 	bioc = "Affyhgu133aExpr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Affyhgu133aExpr_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Affyhgu133aExpr/Affyhgu133aExpr_1.40.0.tar.gz"]
 
+    version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="4e1d08c9eee030971ddacffba4c3ef8da49f1705156372f958b20c2d661ab7cd")
 
 	depends_on("r@2.10:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RBronchialil13(RPackage):
 	bioc = "bronchialIL13" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/bronchialIL13_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/bronchialIL13/bronchialIL13_1.40.0.tar.gz"]
 
+    version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="fc033e083b118d852d44340e8e3b66d109d2e34a252225056bea5f0b57480784", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/bronchialIL13_1.40.0.tar.gz")
 
 	depends_on("r@2.10:", type=("build", "run"))

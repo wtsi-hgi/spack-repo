@@ -15,6 +15,7 @@ class RNcgtw(RPackage):
 	bioc = "ncGTW" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ncGTW_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ncGTW/ncGTW_1.16.0.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="3ee4693e73c3900c3e2e9d6918fb4183e820ad27f932351a8c3e7939fb6f8eb6")
 
 	depends_on("r-biocparallel", type=("build", "run"))

@@ -15,6 +15,7 @@ class RCuratedtcgadata(RPackage):
 	bioc = "curatedTCGAData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedTCGAData_1.24.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedTCGAData/curatedTCGAData_1.24.1.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.1", sha256="02fc923472c319b25f866ef3038c8ab613e2a515ad77f6a376df9242d1352643")
 
 	depends_on("r@4.2:", type=("build", "run"))

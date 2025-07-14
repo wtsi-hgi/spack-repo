@@ -16,6 +16,7 @@ class RImcrtools(RPackage):
 	bioc = "imcRtools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/imcRtools_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/imcRtools/imcRtools_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="8223ce73d95c99634bf3515bc6662b21f5db1dbfc7c7c545be2f6213f3510c1a")
 
 	depends_on("r@4.1:", type=("build", "run"))

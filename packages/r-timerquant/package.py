@@ -15,6 +15,7 @@ class RTimerquant(RPackage):
 	bioc = "TimerQuant" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TimerQuant_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TimerQuant/TimerQuant_1.32.0.tar.gz"]
 
+    version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="9bf0b0b20f8d50043e3eee745a92005f53801df149f1297224953bee531754a2")
 
 	depends_on("r-shiny", type=("build", "run"))

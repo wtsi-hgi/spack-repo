@@ -18,6 +18,7 @@ class RTmixclust(RPackage):
 
 	bioc = "TMixClust"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TMixClust_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TMixClust/TMixClust_1.24.0.tar.gz"]
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.6.0", commit="9f5f78e52538d15f402c8f6e4c60f7212c7bc548")
 	version("1.4.0", commit="a52fcae6e7a5dd41e7afbe128f35397e8bc8cb12")
 	version("1.24.0", sha256="a266fe58bae43a5023fb7d6d2cec1ed8ebf8d83af03805fe43a4fbb3eba88d61")

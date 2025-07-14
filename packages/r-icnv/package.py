@@ -15,6 +15,7 @@ class RIcnv(RPackage):
 	bioc = "iCNV" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iCNV_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iCNV/iCNV_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="098e5db84bc200cd6518f02f7bdd7521a6d8fad8fe58c9f7130f730f6cbda085")
 
 	depends_on("r@3.3.1:", type=("build", "run"))

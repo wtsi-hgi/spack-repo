@@ -15,6 +15,7 @@ class RMethreg(RPackage):
 	bioc = "MethReg" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MethReg_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MethReg/MethReg_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="56d0158f27fca8c25a26aceeffb3de7ffcdb98aade3ffb8748eee44d5b1114c3")
 
 	depends_on("r@4:", type=("build", "run"))

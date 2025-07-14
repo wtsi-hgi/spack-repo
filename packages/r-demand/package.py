@@ -15,6 +15,7 @@ class RDemand(RPackage):
 	bioc = "DeMAND" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DeMAND_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DeMAND/DeMAND_1.32.0.tar.gz"]
 
+    version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="0c0a0e866c909678c956551c7c6b35c5f52378a82f1ed88756eb4ef5ddfeec16")
 
 	depends_on("r@2.14:", type=("build", "run"))

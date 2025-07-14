@@ -15,6 +15,7 @@ class RRcistarget(RPackage):
 	homepage = "http://scenic.aertslab.org"
 	bioc = "RcisTarget" 
 
+    version("1.28.1", tag="RELEASE_3_21")
 	version("1.22.0", commit="49974d11c68185406c0f66637d9a9981408f0919")
 
 	depends_on("r@3.5:", type=("build", "run"))

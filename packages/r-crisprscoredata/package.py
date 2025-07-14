@@ -16,6 +16,7 @@ class RCrisprscoredata(RPackage):
 	bioc = "crisprScoreData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/crisprScoreData_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/crisprScoreData/crisprScoreData_1.6.0.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="d1c2eaf4fb4361738ea092da8b7e144ab9f327379aa2ec7c42e3a38aaed33c67")
 
 	depends_on("r-experimenthub", type=("build", "run"))

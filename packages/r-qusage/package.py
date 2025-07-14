@@ -16,6 +16,7 @@ class RQusage(RPackage):
 	bioc = "qusage" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qusage_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qusage/qusage_2.36.0.tar.gz"]
 
+    version("2.42.0", tag="RELEASE_3_21")
 	version("2.36.0", sha256="bc298a26d8edd29f9263f8dcbe0933e858bfa45d6ada5c5726520cec44921ae3")
 
 	depends_on("r@2.10:", type=("build", "run"))

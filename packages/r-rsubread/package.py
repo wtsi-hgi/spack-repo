@@ -16,6 +16,7 @@ class RRsubread(RPackage):
 	bioc = "Rsubread" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rsubread_2.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rsubread/Rsubread_2.16.1.tar.gz"]
 
+    version("2.22.1", tag="RELEASE_3_21")
 	version("2.16.1", sha256="e8779bc837bcf99a30a2d2a0cfd3e5fab452db96ef3b212f054eb85767a0ee65")
 
 	depends_on("r-matrix", type=("build", "run"))

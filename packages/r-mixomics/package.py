@@ -16,6 +16,7 @@ class RMixomics(RPackage):
 	bioc = "mixOmics" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mixOmics_6.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mixOmics/mixOmics_6.26.0.tar.gz"]
 
+    version("6.32.0", tag="RELEASE_3_21")
 	version("6.26.0", sha256="ec1ad9959f3c290fb3b4c37c1b9719f10bac0d5d59ef6b99a56b86607442d145")
 
 	depends_on("r@3.5:", type=("build", "run"))

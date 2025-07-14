@@ -16,6 +16,7 @@ class RSarks(RPackage):
 	bioc = "sarks" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sarks_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sarks/sarks_1.14.0.tar.gz"]
 
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="44505679b8e74c320cdf3518130525991eb86abc4e9c419bf9f5cfd32600f80f")
 
 	depends_on("r@4:", type=("build", "run"))

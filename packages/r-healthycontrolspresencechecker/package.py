@@ -16,6 +16,7 @@ class RHealthycontrolspresencechecker(RPackage):
 	bioc = "healthyControlsPresenceChecker" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/healthyControlsPresenceChecker_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/healthyControlsPresenceChecker/healthyControlsPresenceChecker_1.6.0.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="55c47ef108b255911cd60dd92f4efe2c276a0dd755e6e1114bbd01873907f788")
 
 	depends_on("r@4:", type=("build", "run"))

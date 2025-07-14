@@ -15,6 +15,7 @@ class RCbaf(RPackage):
 	bioc = "cbaf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cbaf_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cbaf/cbaf_1.24.0.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="119afd78a65b81bc4a5788ccf5878e9a737b950f4f6ecb70ee690931d08ec8fc")
 
 	depends_on("r@4.1:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RBearscc(RPackage):
 	bioc = "BEARscc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BEARscc_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BEARscc/BEARscc_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="68ff48d568b37593cb77ff6694ba6b4a6fae51ee96747c2bf4bbcd6db1abb653")
 
 	depends_on("r@3.5:", type=("build", "run"))

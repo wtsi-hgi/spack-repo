@@ -16,6 +16,7 @@ class RSimat(RPackage):
 	bioc = "SIMAT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SIMAT_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SIMAT/SIMAT_1.34.0.tar.gz"]
 
+    version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="3d21223855349c651f2524ae3115ca7d35149a2a120fce0358d98dfe59f326d9")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RAshkenazimsonchr21(RPackage):
 	bioc = "AshkenazimSonChr21" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/AshkenazimSonChr21_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/AshkenazimSonChr21/AshkenazimSonChr21_1.32.0.tar.gz"]
 
+    version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="5dae3d05f92ce47c939b37533d871f62c90978614a98d58d327041b90c26367a", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/AshkenazimSonChr21_1.32.0.tar.gz")
 
 

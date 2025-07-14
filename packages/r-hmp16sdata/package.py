@@ -16,6 +16,7 @@ class RHmp16sdata(RPackage):
 	bioc = "HMP16SData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HMP16SData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HMP16SData/HMP16SData_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="0d0c0a796a793924ff62431acbc29af311b26aff397375109f39230eb8f747db")
 
 	depends_on("r@4.1:", type=("build", "run"))

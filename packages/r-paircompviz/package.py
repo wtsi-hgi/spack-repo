@@ -15,6 +15,7 @@ class RPaircompviz(RPackage):
 	bioc = "paircompviz" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/paircompviz_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/paircompviz/paircompviz_1.40.0.tar.gz"]
 
+    version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="64f51d7bd764d77341ecd641c9edc2844299789baaeee7cb75044d12e31e29f2")
 
 	depends_on("r@2.10:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RFluentgenomics(RPackage):
 	bioc = "fluentGenomics" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/fluentGenomics_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/fluentGenomics/fluentGenomics_1.14.0.tar.gz"]
 
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="7a24e41c62bc49ec9b376c18d7306dae99519ffbaddc3e63740a9c81d0b5fa1f")
 
 	depends_on("r@4:", type=("build", "run"))

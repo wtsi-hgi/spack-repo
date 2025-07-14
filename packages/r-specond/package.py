@@ -15,6 +15,7 @@ class RSpecond(RPackage):
 	bioc = "SpeCond" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpeCond_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpeCond/SpeCond_1.56.0.tar.gz"]
 
+    version("1.62.0", tag="RELEASE_3_21")
 	version("1.56.0", sha256="18912073851a4e4f6d76982fbe06a3dac4a9332e50608f918d124fdb299678bc")
 
 	depends_on("r@2.10:", type=("build", "run"))

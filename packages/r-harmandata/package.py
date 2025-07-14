@@ -16,6 +16,7 @@ class RHarmandata(RPackage):
 	bioc = "HarmanData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HarmanData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HarmanData/HarmanData_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="0f6b354ea2304c1a6013f048f69e048a3c411835798c52260aab2a21a9391b57")
 
 	depends_on("r@3.5:", type=("build", "run"))

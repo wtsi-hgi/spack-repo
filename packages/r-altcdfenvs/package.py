@@ -14,6 +14,7 @@ class RAltcdfenvs(RPackage):
 	bioc = "altcdfenvs"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/altcdfenvs_2.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/altcdfenvs/altcdfenvs_2.64.0.tar.gz"]
 
+    version("2.70.0", tag="RELEASE_3_21")
 	version("2.64.0", sha256="56e3224edd6dcfd88e860a79a1db6a9e489d3ae5c5949a2539d7ad56148e6f9e")
 	version("2.62.0", commit="aedf0e9f98639d60b327e50957e504cf24b64bbb")
 	version("2.60.0", commit="0bc0b4493b8e9fe2eb47fb8e9377123ce8f472bb")

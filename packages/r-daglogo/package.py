@@ -15,6 +15,7 @@ class RDaglogo(RPackage):
 	bioc = "dagLogo" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dagLogo_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dagLogo/dagLogo_1.40.0.tar.gz"]
 
+    version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="63161742ae285beff886b064a4dacbd8086c708549b44a52d4d173fbb59b38dd")
 
 	depends_on("r@3.0.1:", type=("build", "run"))

@@ -16,6 +16,7 @@ class REdaseq(RPackage):
 	bioc = "EDASeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EDASeq_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EDASeq/EDASeq_2.36.0.tar.gz"]
 
+    version("2.42.0", tag="RELEASE_3_21")
 	version("2.36.0", sha256="08e4183209febbb6625c673449f5e7f1860b7dedcf4c61173936b8697d2d7177")
 
 	depends_on("r-biobase@2.15.1:", type=("build", "run"))

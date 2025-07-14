@@ -15,6 +15,7 @@ class RAbarray(RPackage):
 	bioc = "ABarray" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ABarray_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ABarray/ABarray_1.70.0.tar.gz"]
 
+    version("1.76.0", tag="RELEASE_3_21")
 	version("1.70.0", sha256="7b94f046cdcca58dbfb8a9e2c083cb8651874991102e0705272d58634d17385d")
 
 	depends_on("r-biobase", type=("build", "run"))

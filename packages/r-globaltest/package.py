@@ -18,6 +18,7 @@ class RGlobaltest(RPackage):
 
 	bioc = "globaltest"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/globaltest_5.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/globaltest/globaltest_5.56.0.tar.gz"]
+    version("5.62.0", tag="RELEASE_3_21")
 	version("5.56.0", sha256="b9dcd63668b914e2cb28e7268090c49ed8eef62f0b1f836574805aff42d76c92")
 	version("5.54.0", commit="bb8bc5f757c8b7c020da31b6a3f500075715ab8e")
 	version("5.52.0", commit="a1fc3ad206454d1151bcc940644fd8a5c4164d63")

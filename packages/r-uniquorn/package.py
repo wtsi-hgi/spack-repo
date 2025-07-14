@@ -15,6 +15,7 @@ class RUniquorn(RPackage):
 	bioc = "Uniquorn" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Uniquorn_2.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Uniquorn/Uniquorn_2.22.0.tar.gz"]
 
+    version("2.28.0", tag="RELEASE_3_21")
 	version("2.22.0", sha256="97bf1d7d247e48e1d1a606edad4d5d78d9f16b62f6b847b586553017cf94a0e5")
 
 	depends_on("r@3.5:", type=("build", "run"))

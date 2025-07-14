@@ -16,6 +16,7 @@ class RSpotlight(RPackage):
 	bioc = "SPOTlight" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SPOTlight_1.6.7.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SPOTlight/SPOTlight_1.6.7.tar.gz"]
 
+    version("1.12.1", tag="RELEASE_3_21")
 	version("1.6.7", sha256="58f1dc14f94d2009952543306c5cb9da86ca2b98729941af93c1975d836e7af6")
 
 	depends_on("r@4.1:", type=("build", "run"))

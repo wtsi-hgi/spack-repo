@@ -16,6 +16,7 @@ class RLace(RPackage):
 	bioc = "LACE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LACE_2.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LACE/LACE_2.6.1.tar.gz"]
 
+    version("2.12.0", tag="RELEASE_3_21")
 	version("2.6.1", sha256="b82af6d6f2e2581e43a0ede116ab886840f5e34edc59e37a6def9b8f2870bd0b")
 	version("2.6.0", md5="d11f64211d10d293c2931b49765b5d61")
 

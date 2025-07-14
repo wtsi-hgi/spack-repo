@@ -16,6 +16,7 @@ class RGenomicdistributions(RPackage):
 	bioc = "GenomicDistributions" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicDistributions_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicDistributions/GenomicDistributions_1.10.0.tar.gz"]
 
+    version("1.16.1", tag="RELEASE_3_21")
 	version("1.10.0", sha256="3dbff59d525a89e8707bc0e11c9a129db570c64c104a43812dc17155aa55d270")
 
 	depends_on("r@4:", type=("build", "run"))

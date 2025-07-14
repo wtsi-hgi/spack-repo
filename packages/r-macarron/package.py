@@ -16,6 +16,7 @@ class RMacarron(RPackage):
 	bioc = "Macarron" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Macarron_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Macarron/Macarron_1.6.0.tar.gz"]
 
+    version("1.12.2", tag="RELEASE_3_21")
 	version("1.6.0", sha256="67a57809afc80049d12d83c82fdfed73d7cd1cf077da735a543f3dd38c46f6a7")
 
 	depends_on("r@4.2:", type=("build", "run"))

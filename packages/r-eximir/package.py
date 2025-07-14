@@ -15,6 +15,7 @@ class REximir(RPackage):
 	bioc = "ExiMiR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExiMiR_2.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExiMiR/ExiMiR_2.44.0.tar.gz"]
 
+    version("2.50.0", tag="RELEASE_3_21")
 	version("2.44.0", sha256="102d61cbd14f0bc6bd7ef8f20821396b56e0d878c74de02a59209521c2e76672")
 
 	depends_on("r@2.10:", type=("build", "run"))

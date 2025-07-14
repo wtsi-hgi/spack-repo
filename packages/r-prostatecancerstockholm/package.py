@@ -15,6 +15,7 @@ class RProstatecancerstockholm(RPackage):
 	bioc = "prostateCancerStockholm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/prostateCancerStockholm_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/prostateCancerStockholm/prostateCancerStockholm_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="49250bdbe02e2c9bd5fcd78290719da3207fdd57512ae8bccc4cf29c57e8b3a5")
 
 	depends_on("r-biobase", type=("build", "run"))

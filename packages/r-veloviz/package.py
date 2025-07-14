@@ -15,6 +15,7 @@ class RVeloviz(RPackage):
 	bioc = "veloviz" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/veloviz_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/veloviz/veloviz_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="5f6f26e29f060419668bf968491c96cbba1eb470a16ae4d0885731fc19909987")
 
 	depends_on("r@4.1:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RMethylcc(RPackage):
 	bioc = "methylCC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylCC_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylCC/methylCC_1.16.0.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="1caeea2cbf70dbfd73a4a4f1a67d5fe2b690dfc45c84f7e54085c43750332bbf")
 
 	depends_on("r@3.6:", type=("build", "run"))

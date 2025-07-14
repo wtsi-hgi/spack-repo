@@ -16,6 +16,7 @@ class RComethdmr(RPackage):
 	bioc = "coMethDMR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/coMethDMR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/coMethDMR/coMethDMR_1.6.0.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="a5d26df311e9e10344634d51e8382c5cc2a6cc11a645087fed6ffb880287bade")
 
 	depends_on("r@4.1:", type=("build", "run"))

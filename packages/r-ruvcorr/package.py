@@ -15,6 +15,7 @@ class RRuvcorr(RPackage):
 	bioc = "RUVcorr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RUVcorr_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RUVcorr/RUVcorr_1.34.0.tar.gz"]
 
+    version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="f8509e425fe47c6ea62b192c56f1046a9272e7787480858990d4ada1b7d2fed7")
 
 	depends_on("r-corrplot", type=("build", "run"))

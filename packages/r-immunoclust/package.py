@@ -15,6 +15,7 @@ class RImmunoclust(RPackage):
 	bioc = "immunoClust" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/immunoClust_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/immunoClust/immunoClust_1.34.0.tar.gz"]
 
+    version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="bf616e931882e308f87abcf79cc558c75f83a181b98a14a3283ff0e2fe14a6d2")
 
 	depends_on("r@3.6:", type=("build", "run"))

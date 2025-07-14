@@ -15,6 +15,7 @@ class RLiquidassociation(RPackage):
 	bioc = "LiquidAssociation" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LiquidAssociation_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LiquidAssociation/LiquidAssociation_1.56.0.tar.gz"]
 
+    version("1.62.0", tag="RELEASE_3_21")
 	version("1.56.0", sha256="eb8f1f63a53bcfb14143f6c0760304eadf6ec249ae4914a2fc9c14ce04056202")
 
 	depends_on("r-geepack", type=("build", "run"))

@@ -15,6 +15,7 @@ class RArraymvout(RPackage):
 	bioc = "arrayMvout" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/arrayMvout_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/arrayMvout/arrayMvout_1.60.0.tar.gz"]
 
+    version("1.66.0", tag="RELEASE_3_21")
 	version("1.60.0", sha256="1ffebe64d66f20ebb221ab344f546f2c5338d1e94def83a32a56bde841d7737c")
 
 	depends_on("r@2.6:", type=("build", "run"))

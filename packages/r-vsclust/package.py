@@ -15,6 +15,7 @@ class RVsclust(RPackage):
 	bioc = "vsclust" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vsclust_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vsclust/vsclust_1.4.0.tar.gz"]
 
+    version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="3438992407e27098a9304721bbb07d30fb85d3c238bdda0d96a5cca9d0e9748d")
 
 	depends_on("r@4.2:", type=("build", "run"))

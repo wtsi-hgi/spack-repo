@@ -15,6 +15,7 @@ class RSplots(RPackage):
 	bioc = "splots" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/splots_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/splots/splots_1.68.0.tar.gz"]
 
+    version("1.74.0", tag="RELEASE_3_21")
 	version("1.68.0", sha256="96c076fe3ff474e1ea63aa0dc8d98818992e30125ea2b161fecb26e0210ce598")
 
 	depends_on("r-rcolorbrewer", type=("build", "run"))

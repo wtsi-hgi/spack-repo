@@ -16,6 +16,7 @@ class RIcetea(RPackage):
 	bioc = "icetea" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/icetea_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/icetea/icetea_1.20.0.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="19fe4cbe29265e0348dcda442e14817a9817867d398310eb2fd9795c5b052e53")
 
 	depends_on("r@4:", type=("build", "run"))

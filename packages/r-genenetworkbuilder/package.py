@@ -15,6 +15,7 @@ class RGenenetworkbuilder(RPackage):
 	bioc = "GeneNetworkBuilder" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneNetworkBuilder_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneNetworkBuilder/GeneNetworkBuilder_1.44.0.tar.gz"]
 
+    version("1.50.0", tag="RELEASE_3_21")
 	version("1.44.0", sha256="1b7ce3b355694fdfcf4186e05bc245cd0c52fc5e572e56c754f66a5c6ca5e73f")
 
 	depends_on("r@2.15.1:", type=("build", "run"))

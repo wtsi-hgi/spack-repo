@@ -15,6 +15,7 @@ class RBiobase(RPackage):
 	bioc = "Biobase"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Biobase_2.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Biobase/Biobase_2.62.0.tar.gz"]
 
+    version("2.68.0", tag="RELEASE_3_21")
 	version("2.62.0", sha256="ef753acc499c2504e226bf76e0acc08b7aa370fc60cc369bb8ebc1913f57d37e")
 	version("2.60.0", commit="8dc10d2d26dc0847740ff2b4f16cc1ae2e936464")
 	version("2.58.0", commit="767f2f33f158f233616178e12ce08cdb03d2a5a2")

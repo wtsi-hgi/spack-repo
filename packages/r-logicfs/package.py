@@ -15,6 +15,7 @@ class RLogicfs(RPackage):
 	bioc = "logicFS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/logicFS_2.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/logicFS/logicFS_2.22.0.tar.gz"]
 
+    version("2.28.0", tag="RELEASE_3_21")
 	version("2.22.0", sha256="783731537784c6cd55a5b192b35040d3a7978d3fb80228a9380dea0ab1001c8d")
 
 	depends_on("r-logicreg", type=("build", "run"))

@@ -23,6 +23,7 @@ class RHdf5array(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HDF5Array_1.30.1.tar.gz",
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HDF5Array/HDF5Array_1.30.1.tar.gz",
     ]
+    version("1.36.0", tag="RELEASE_3_21")
     version("1.8.1", commit="3c9aa23d117bf489b6341708dc80c943bd1af11a")
     version("1.6.0", commit="95f2f8d3648143abe9dc77c76340c5edf4114c82")
     version("1.4.8", commit="79ab96d123c8da8f8ead81f678fe714c0958ff45")

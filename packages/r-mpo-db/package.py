@@ -16,6 +16,7 @@ class RMpoDb(RPackage):
 	bioc = "MPO.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MPO.db_0.99.7.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/MPO.db/MPO.db_0.99.7.tar.gz"]
 
+    version("0.99.8", tag="RELEASE_3_21")
 	version("0.99.7", sha256="74b3e8f0a3b5b896b5d0c944e3334c750a4404b800fa70da9a2aa1f066643974")
 
 	depends_on("r@4.3:", type=("build", "run"))

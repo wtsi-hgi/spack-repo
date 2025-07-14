@@ -15,6 +15,7 @@ class RNormalize450k(RPackage):
 	bioc = "normalize450K" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/normalize450K_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/normalize450K/normalize450K_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="3c3eabd9899040d0129368f1aee0c9d1f0c87fcf863bfc3f2f58153aea0df208")
 
 	depends_on("r@3.3:", type=("build", "run"))

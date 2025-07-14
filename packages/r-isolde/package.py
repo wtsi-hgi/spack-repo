@@ -16,6 +16,7 @@ class RIsolde(RPackage):
 	bioc = "ISoLDE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ISoLDE_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ISoLDE/ISoLDE_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="edbace394f931c0257a5c4e500be696a13183c30c1fa2383130808dd7ccb1dad")
 
 	depends_on("r@3.3:", type=("build", "run"))

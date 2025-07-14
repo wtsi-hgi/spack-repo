@@ -15,6 +15,7 @@ class RChipqc(RPackage):
 	bioc = "ChIPQC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPQC_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPQC/ChIPQC_1.38.0.tar.gz"]
 
+    version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="123e3c006c30aa0e6327d3bfc58729c8cc3f9d7274825282011a7b28b4e89328")
 
 	depends_on("r@3.5:", type=("build", "run"))

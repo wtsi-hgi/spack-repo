@@ -16,6 +16,7 @@ class RGeotcgadata(RPackage):
 	bioc = "GeoTcgaData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeoTcgaData_2.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeoTcgaData/GeoTcgaData_2.2.0.tar.gz"]
 
+    version("2.8.0", tag="RELEASE_3_21")
 	version("2.2.0", sha256="077c28251e23d51c4471b9259dd1246bb26dbaccb3249a67e31356311c8a8bd6")
 
 	depends_on("r@4.2:", type=("build", "run"))

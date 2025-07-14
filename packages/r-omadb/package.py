@@ -16,6 +16,7 @@ class ROmadb(RPackage):
 	bioc = "OmaDB" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OmaDB_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OmaDB/OmaDB_2.18.0.tar.gz"]
 
+    version("2.24.0", tag="RELEASE_3_21")
 	version("2.18.0", sha256="e7b14fdbd507a7c189fd9a84aa027533fbf10d92bbee2275ef76604b5245fed9")
 
 	depends_on("r@3.5:", type=("build", "run"))

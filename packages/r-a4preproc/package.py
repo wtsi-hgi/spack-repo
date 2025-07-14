@@ -15,6 +15,7 @@ class RA4preproc(RPackage):
 	bioc = "a4Preproc"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/a4Preproc_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/a4Preproc/a4Preproc_1.50.0.tar.gz"]
 
+    version("1.56.0", tag="RELEASE_3_21")
 	version("1.50.0", sha256="c0c8ea1e82e336fc1125bf851c69e081cfa00ed16b38505cec91b707d81acea6")
 	version("1.48.0", commit="d3bf8b82d7cabd2ef77253bb9a741dcde3ca3a41")
 	version("1.46.0", commit="8463958692c73fd655a6dfec39ea99c915513719")

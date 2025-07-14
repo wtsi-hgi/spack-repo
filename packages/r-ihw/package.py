@@ -15,6 +15,7 @@ class RIhw(RPackage):
 	bioc = "IHW" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IHW_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IHW/IHW_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="0b31c7b5794414c546ca255d1e2d0ddc4f56ad8b1a41189b04dceaf4281a3dde")
 
 	depends_on("r@3.3:", type=("build", "run"))

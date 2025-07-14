@@ -15,6 +15,7 @@ class RRibosomeprofilingqc(RPackage):
 	bioc = "ribosomeProfilingQC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ribosomeProfilingQC_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ribosomeProfilingQC/ribosomeProfilingQC_1.14.1.tar.gz"]
 
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.1", sha256="c7460cca1cc4a2a730670ba59f6a05659deef401075e0bc74aed98f3cf03214d")
 
 	depends_on("r@4:", type=("build", "run"))

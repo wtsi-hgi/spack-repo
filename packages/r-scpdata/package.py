@@ -15,6 +15,7 @@ class RScpdata(RPackage):
 	bioc = "scpdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scpdata_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scpdata/scpdata_1.10.0.tar.gz"]
 
+    version("1.16.1", tag="RELEASE_3_21")
 	version("1.10.0", sha256="b9ab4d398c253c11bd5dbcf4995671e40be05e42f284f2e19fdb28a1355e9c7f")
 
 	depends_on("r@4.2:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RRqt(RPackage):
 	bioc = "rqt" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rqt_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rqt/rqt_1.28.0.tar.gz"]
 
+    version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="5071d7c52b74741377dc307cf3e498786af90baedcc140140fbd0386cce5db0b")
 
 	depends_on("r@3.4:", type=("build", "run"))

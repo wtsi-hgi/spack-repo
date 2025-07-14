@@ -15,6 +15,7 @@ class RIvas(RPackage):
 	bioc = "IVAS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IVAS_2.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IVAS/IVAS_2.22.0.tar.gz"]
 
+    version("2.28.0", tag="RELEASE_3_21")
 	version("2.22.0", sha256="77506b6d8a16e0aa043079c1227d8d688077efb382285808cb9af8073c7e82eb")
 
 	depends_on("r@3:", type=("build", "run"))

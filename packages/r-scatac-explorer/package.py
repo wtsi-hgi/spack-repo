@@ -15,6 +15,7 @@ class RScatacExplorer(RPackage):
 	bioc = "scATAC.Explorer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scATAC.Explorer_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scATAC.Explorer/scATAC.Explorer_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="c83d5b3cdd281d073db17c058b9ee01d1a939d56538183bd0b0fe001f3654ae2")
 
 	depends_on("r@4.1:", type=("build", "run"))

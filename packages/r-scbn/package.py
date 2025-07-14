@@ -15,6 +15,7 @@ class RScbn(RPackage):
 	bioc = "SCBN" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SCBN_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SCBN/SCBN_1.20.0.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="88f45e15c205d85120424cb816fa910e7d1c8593994ffd1aef9d856f2b06b5eb")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RQuartpac(RPackage):
 	bioc = "QuartPAC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QuartPAC_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QuartPAC/QuartPAC_1.34.0.tar.gz"]
 
+    version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="c4f882efe5099b332ddb35308bc729a4265f88b0aa53380102223f2bc1084e21")
 
 	depends_on("r-ipac", type=("build", "run"))

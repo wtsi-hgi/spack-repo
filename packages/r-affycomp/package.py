@@ -15,6 +15,7 @@ class RAffycomp(RPackage):
 	bioc = "affycomp"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affycomp_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affycomp/affycomp_1.78.0.tar.gz"]
 
+    version("1.84.0", tag="RELEASE_3_21")
 	version("1.78.0", sha256="d7bd30b0225a8ebd07026e522b5fe7c0731bc2ac3b73450fb71f266ff9ab2820")
 	version("1.76.0", commit="8bfc628de26a739c5e0cb47aa22bfda7c8d0a922")
 	version("1.74.0", commit="1160d6395f23085456938ba2bd38fb45597fc92f")

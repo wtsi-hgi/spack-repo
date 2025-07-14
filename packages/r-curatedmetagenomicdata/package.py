@@ -16,6 +16,7 @@ class RCuratedmetagenomicdata(RPackage):
 	bioc = "curatedMetagenomicData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedMetagenomicData_3.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedMetagenomicData/curatedMetagenomicData_3.10.0.tar.gz"]
 
+    version("3.16.1", tag="RELEASE_3_21")
 	version("3.10.0", sha256="8b413dc8b792d6f02f3ec77ec237b84abfccff1761c50528aa141d1458bffb39")
 
 	depends_on("r@4.1:", type=("build", "run"))

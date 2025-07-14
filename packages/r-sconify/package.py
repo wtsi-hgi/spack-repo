@@ -15,6 +15,7 @@ class RSconify(RPackage):
 	bioc = "Sconify" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Sconify_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Sconify/Sconify_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="7ecedf9160b53ba54470b784243ae1ff56b6e34092dcaab92f5fedbdf08b6fdd")
 
 	depends_on("r@3.5:", type=("build", "run"))

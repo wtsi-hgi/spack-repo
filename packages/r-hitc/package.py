@@ -15,6 +15,7 @@ class RHitc(RPackage):
 	bioc = "HiTC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiTC_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiTC/HiTC_1.46.0.tar.gz"]
 
+    version("1.52.0", tag="RELEASE_3_21")
 	version("1.46.0", sha256="009d583930635dc2faaa41769fd1dd5655628aeb9e9a9d681eb4a7ea92c05b9b")
 
 	depends_on("r@2.15:", type=("build", "run"))

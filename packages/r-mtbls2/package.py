@@ -16,6 +16,7 @@ class RMtbls2(RPackage):
 	bioc = "mtbls2" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mtbls2_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mtbls2/mtbls2_1.32.0.tar.gz"]
 
+    version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="ccc076f28795609392b8dfa11d2b4b53ba9432f1cf73a69f59024c37fd2a96fc", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mtbls2_1.32.0.tar.gz")
 
 	depends_on("r@2.10:", type=("build", "run"))

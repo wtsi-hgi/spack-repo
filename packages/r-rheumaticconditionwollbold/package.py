@@ -16,6 +16,7 @@ class RRheumaticconditionwollbold(RPackage):
 	bioc = "rheumaticConditionWOLLBOLD" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/rheumaticConditionWOLLBOLD_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/rheumaticConditionWOLLBOLD/rheumaticConditionWOLLBOLD_1.40.0.tar.gz"]
 
+    version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="ee85b1b45fefe1d0b3022b57bc7093d4327229f525ce2306f096cf302cec5d61")
 
 	depends_on("r@2.10:", type=("build", "run"))

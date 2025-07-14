@@ -15,6 +15,7 @@ class RConsensus(RPackage):
 	bioc = "consensus" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/consensus_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/consensus/consensus_1.20.0.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="747571ae61b5ad640d267843ca0d97f6a971a8f2fbab1876d18160b9e12b95bd")
 
 	depends_on("r@3.5:", type=("build", "run"))

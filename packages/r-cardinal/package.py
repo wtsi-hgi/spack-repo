@@ -16,6 +16,7 @@ class RCardinal(RPackage):
 	bioc = "Cardinal" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Cardinal_3.4.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Cardinal/Cardinal_3.4.3.tar.gz"]
 
+    version("3.10.0", tag="RELEASE_3_21")
 	version("3.4.3", sha256="e14668ea2cd59cb757524ce0b222a1edb71d0cb5da1c8f8b39b4936a9356c07e")
 
 	depends_on("r-protgenerics", type=("build", "run"))

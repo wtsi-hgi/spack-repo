@@ -15,6 +15,7 @@ class RSvaretro(RPackage):
 	bioc = "svaRetro" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/svaRetro_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/svaRetro/svaRetro_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="65f939fa049f406c728e27fbba2969872f4130811d54861d4fa9a68c1b8992d6")
 
 	depends_on("r-genomicranges", type=("build", "run"))

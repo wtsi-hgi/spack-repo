@@ -15,6 +15,7 @@ class RHpar(RPackage):
 	bioc = "hpar" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hpar_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hpar/hpar_1.44.0.tar.gz"]
 
+    version("1.50.0", tag="RELEASE_3_21")
 	version("1.44.0", sha256="087c44020b4f79cd6fea3eb8ed9d29cae784adf796e22f3b2d342b3a30f04da6")
 
 	depends_on("r@3.5:", type=("build", "run"))

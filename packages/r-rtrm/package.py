@@ -16,6 +16,7 @@ class RRtrm(RPackage):
 	bioc = "rTRM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rTRM_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rTRM/rTRM_1.40.0.tar.gz"]
 
+    version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="53e12939a7afd5168c738711370f8b6fc99c54f45ca19d60432cbf42372547e3")
 
 	depends_on("r@2.10:", type=("build", "run"))

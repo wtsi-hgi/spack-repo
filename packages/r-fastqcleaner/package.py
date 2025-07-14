@@ -15,6 +15,7 @@ class RFastqcleaner(RPackage):
 	bioc = "FastqCleaner" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FastqCleaner_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FastqCleaner/FastqCleaner_1.20.0.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="84fe332d6b8a0687a2df0845d8e804ba0bf364b60b878e48e33fa472c016c76c")
 
 	depends_on("r-shiny", type=("build", "run"))

@@ -15,6 +15,7 @@ class RAlabasterString(RPackage):
 	bioc = "alabaster.string" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.string_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.string/alabaster.string_1.2.0.tar.gz"]
 
+    version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="b53e974b288b2a924bfa636ff1287cbe2a38405b4a9da11ff22bb85f4da9f7be")
 
 	depends_on("r-biostrings", type=("build", "run"))

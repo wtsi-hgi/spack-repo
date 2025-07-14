@@ -15,6 +15,7 @@ class RRebook(RPackage):
 	bioc = "rebook" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rebook_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rebook/rebook_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="64813afa59ca48e1e44ef1c78a53662120f1b7194e17822758b99138e9346d79")
 
 	depends_on("r-knitr@1.32:", type=("build", "run"))

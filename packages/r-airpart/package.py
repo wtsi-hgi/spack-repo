@@ -16,6 +16,7 @@ class RAirpart(RPackage):
 	bioc = "airpart" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/airpart_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/airpart/airpart_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="0b4ff1b2325b5f30d3869faad1330384540ae99b8b053fec5af1528b0e78b4ad")
 
 	depends_on("r@4.1:", type=("build", "run"))

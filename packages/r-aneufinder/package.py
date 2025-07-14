@@ -16,6 +16,7 @@ class RAneufinder(RPackage):
 	bioc = "AneuFinder"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AneuFinder_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AneuFinder/AneuFinder_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.8.0", commit="36a729d244add5aafbe21c37a1baaea6a50354d3")
 	version("1.6.0", commit="0cfbdd1951fb4df5622e002260cfa86294d65d1d")
 	version("1.4.0", commit="e5bdf4d5e4f84ee5680986826ffed636ed853b8e")

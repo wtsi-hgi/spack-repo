@@ -15,6 +15,7 @@ class RBionar(RPackage):
 	bioc = "BioNAR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioNAR_1.4.4.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioNAR/BioNAR_1.4.4.tar.gz"]
 
+    version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.4", sha256="4dfa5a4cfe10b5dd63b7a63b6be43c6ae87cbb2098e5165d3ec7e92d6979dabe")
 	version("1.4.1", md5="cce2273d564095b70d5b18aa6d134612")
 

@@ -15,6 +15,7 @@ class RLrcelltypemarkers(RPackage):
 	bioc = "LRcellTypeMarkers" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/LRcellTypeMarkers_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/LRcellTypeMarkers/LRcellTypeMarkers_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="4c20c86955b7a8b2ca6fb3a9bcc0ccb4811a26585a474221a237b977193a4df1")
 
 	depends_on("r@4.1:", type=("build", "run"))

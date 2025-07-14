@@ -15,6 +15,7 @@ class RBenchdamic(RPackage):
 	bioc = "benchdamic" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/benchdamic_1.8.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/benchdamic/benchdamic_1.8.2.tar.gz"]
 
+    version("1.14.2", tag="RELEASE_3_21")
 	version("1.8.2", sha256="64656dce4654fdfad869e646da2fc59eca362b9c4e9a9f4bea32062bf548c50c")
 	version("1.8.1", md5="ca158383ebf87138c91438c7946fe567")
 

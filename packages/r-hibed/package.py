@@ -16,6 +16,7 @@ class RHibed(RPackage):
 	bioc = "HiBED" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HiBED_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HiBED/HiBED_1.0.0.tar.gz"]
 
+    version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="7c035a50659cd7b55b701c8b86945ba937531ef4ee3a60375beb970bdf954cb1")
 
 	depends_on("r@3.5:", type=("build", "run"))

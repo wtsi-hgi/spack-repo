@@ -18,6 +18,7 @@ class RSictools(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SICtools/SICtools_1.32.0.tar.gz",
     ]
 
+    version("1.38.0", tag="RELEASE_3_21")
     version("1.32.0", sha256="181c95f0c81db489aed9e26d39e5a9ab573bd4b1b42319db42b97635b7948a2d")
 
     depends_on("r@3:", type=("build", "run"))

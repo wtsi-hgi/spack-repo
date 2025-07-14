@@ -16,6 +16,7 @@ class RDespace(RPackage):
 	bioc = "DESpace" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DESpace_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DESpace/DESpace_1.2.1.tar.gz"]
 
+    version("2.0.0", tag="RELEASE_3_21")
 	version("1.2.1", sha256="7fe53766494088b99b29a6e94bd4ea1ae1f125e4720b3cce8fbe2ecd8fe5278d")
 
 	depends_on("r@4.3:", type=("build", "run"))

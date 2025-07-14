@@ -16,6 +16,7 @@ class RLimmagui(RPackage):
 	bioc = "limmaGUI" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/limmaGUI_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/limmaGUI/limmaGUI_1.78.0.tar.gz"]
 
+    version("1.84.0", tag="RELEASE_3_21")
 	version("1.78.0", sha256="06a92cf6e3e39f242e033a136fbd85f9042d151fc14c736de0d00c2b07395ddf")
 
 	depends_on("r-limma", type=("build", "run"))

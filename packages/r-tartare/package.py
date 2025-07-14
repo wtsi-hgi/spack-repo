@@ -16,6 +16,7 @@ class RTartare(RPackage):
 	bioc = "tartare" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tartare_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tartare/tartare_1.16.0.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="868269d6bae15d5d4717c762b8513816594f5d2d2d526455679b30a14d391ff1")
 
 	depends_on("r@4.1:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RMassir(RPackage):
 	bioc = "massiR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/massiR_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/massiR/massiR_1.38.0.tar.gz"]
 
+    version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="b43cb1cd4099fa7363a0bdd694077363255b6078d554f170274a55669b77609b")
 
 	depends_on("r-cluster", type=("build", "run"))

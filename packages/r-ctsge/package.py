@@ -16,6 +16,7 @@ class RCtsge(RPackage):
 	bioc = "ctsGE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ctsGE_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ctsGE/ctsGE_1.28.0.tar.gz"]
 
+    version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="278942630487033bb67b94525e97240ab2f5f17b6833d654a69e521cef4135bc")
 
 	depends_on("r@3.2:", type=("build", "run"))

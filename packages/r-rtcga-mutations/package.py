@@ -15,6 +15,7 @@ class RRtcgaMutations(RPackage):
 	bioc = "RTCGA.mutations" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.mutations_20151101.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.mutations/RTCGA.mutations_20151101.32.0.tar.gz"]
 
+    version("20151101.38.0", tag="RELEASE_3_21")
 	version("20151101.32.0", sha256="23f477e1d0132cda135b18a04e567212dadaf7b628f9c7680e89e49c662f46d8")
 
 	depends_on("r@3.2:", type=("build", "run"))

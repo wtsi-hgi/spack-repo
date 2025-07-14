@@ -15,6 +15,7 @@ class ROmicrexposome(RPackage):
 	bioc = "omicRexposome" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/omicRexposome_1.24.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/omicRexposome/omicRexposome_1.24.3.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.3", sha256="caab86763588b594a31452278190317f42b18e3d42ae9fbfc4c26d7659c3f75b")
 
 	depends_on("r@3.5:", type=("build", "run"))

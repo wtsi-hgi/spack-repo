@@ -15,6 +15,7 @@ class RNadfinder(RPackage):
 	bioc = "NADfinder" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NADfinder_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NADfinder/NADfinder_1.26.0.tar.gz"]
 
+    version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="b8f71e6e168bc500b9d8af3a49b0183edb6f04904b8dd6e5036b70ce0c3ee2c5")
 
 	depends_on("r@3.5:", type=("build", "run"))

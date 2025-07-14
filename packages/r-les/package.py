@@ -15,6 +15,7 @@ class RLes(RPackage):
 	bioc = "les" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/les_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/les/les_1.52.0.tar.gz"]
 
+    version("1.58.0", tag="RELEASE_3_21")
 	version("1.52.0", sha256="c695f41ae46bae294369f763f0542b358d8ba2f1c7977aff4a05e24fc3f1aa03")
 
 	depends_on("r@2.13.2:", type=("build", "run"))

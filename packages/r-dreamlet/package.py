@@ -16,6 +16,7 @@ class RDreamlet(RPackage):
 	bioc = "dreamlet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dreamlet_1.0.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dreamlet/dreamlet_1.0.3.tar.gz"]
 
+    version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.3", sha256="35a1ca7eb522e0cdc0cddf0eed0bd408ee4bdcddefce46e2bbe7df77e6620e07")
 	version("1.0.0", md5="34ea1ec9e44c635699ed9cf8deed29cd")
 

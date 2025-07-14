@@ -16,6 +16,7 @@ class REpitxdbHsHg38(RPackage):
 	bioc = "EpiTxDb.Hs.hg38" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EpiTxDb.Hs.hg38_0.99.7.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/EpiTxDb.Hs.hg38/EpiTxDb.Hs.hg38_0.99.7.tar.gz"]
 
+    version("0.99.7", tag="RELEASE_3_21")
 	version("0.99.7", sha256="cedbed7a0e76b95e77ebdedfca0af4c48ed207d013a2db97a5980b90301151ef", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EpiTxDb.Hs.hg38_0.99.7.tar.gz")
 
 	depends_on("r@4:", type=("build", "run"))

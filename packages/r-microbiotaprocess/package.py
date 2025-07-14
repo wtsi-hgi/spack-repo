@@ -16,6 +16,7 @@ class RMicrobiotaprocess(RPackage):
 	bioc = "MicrobiotaProcess" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MicrobiotaProcess_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MicrobiotaProcess/MicrobiotaProcess_1.14.1.tar.gz"]
 
+    version("1.20.1", tag="RELEASE_3_21")
 	version("1.14.1", sha256="8e3537e691a59674957820d965cf7ec952593f606315b133bed3cc7128a9319e")
 	version("1.14.0", md5="104b99004b64b664131ddea6462cbabc")
 

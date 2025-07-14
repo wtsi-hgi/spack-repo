@@ -16,6 +16,7 @@ class RTekrabber(RPackage):
 	bioc = "TEKRABber" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TEKRABber_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TEKRABber/TEKRABber_1.6.0.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="7495840995103b2303fb7d0f12440aa43e5d6d2e6e72e8fb9983c9f3da891950")
 
 	depends_on("r@4.3:", type=("build", "run"))

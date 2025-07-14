@@ -16,6 +16,7 @@ class RClustersignificance(RPackage):
 	bioc = "ClusterSignificance" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ClusterSignificance_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ClusterSignificance/ClusterSignificance_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="2401e2c5911cdf942c2f1d771257ef8536875d2c074781dad67fff54cd12dccb")
 
 	depends_on("r@3.3:", type=("build", "run"))

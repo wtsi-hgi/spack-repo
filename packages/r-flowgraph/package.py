@@ -16,6 +16,7 @@ class RFlowgraph(RPackage):
 	bioc = "flowGraph" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowGraph_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowGraph/flowGraph_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="df22e8d5cc64deaad2ad5ce74032ff9b05ecba187ee8570a817efc8d4bc856ea")
 
 	depends_on("r@4.1:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RAffycoretools(RPackage):
 	bioc = "affycoretools"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affycoretools_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affycoretools/affycoretools_1.74.0.tar.gz"]
 
+    version("1.80.0", tag="RELEASE_3_21")
 	version("1.74.0", sha256="9edf5d44533bfa7d2734d35c8bc0963336fc4b11ce67f7c521da22078f42fb2d")
 	version("1.72.0", commit="229ae09efc1a66e64ea395019c32d16387bf81ac")
 	version("1.70.0", commit="f09a788aa83e1e052a7c5f148a451a99fe9c9c96")

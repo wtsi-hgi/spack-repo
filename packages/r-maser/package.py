@@ -16,6 +16,7 @@ class RMaser(RPackage):
 	bioc = "maser" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maser_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maser/maser_1.20.0.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="85400e5bd64d1197093ade93ddd91418952f23a676359f38184cdaedbc0bfd40")
 
 	depends_on("r@3.5:", type=("build", "run"))

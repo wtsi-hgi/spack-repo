@@ -16,6 +16,7 @@ class RViseago(RPackage):
 	bioc = "ViSEAGO" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ViSEAGO_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ViSEAGO/ViSEAGO_1.16.0.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="64f61c598826d906575fbbf16abfff0f9a9d6b3faad8bcf44d860262f29a40b0")
 
 	depends_on("r@3.6:", type=("build", "run"))

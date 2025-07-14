@@ -15,6 +15,7 @@ class RCnordt(RPackage):
 	bioc = "CNORdt" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNORdt_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNORdt/CNORdt_1.44.0.tar.gz"]
 
+    version("1.50.0", tag="RELEASE_3_21")
 	version("1.44.0", sha256="8cf75ea86f19439106457e816c02cb48de79b5e0ee05f672cc2d0914e5016c0e")
 
 	depends_on("r@1.8:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RMsqc1(RPackage):
 	bioc = "msqc1" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/msqc1_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/msqc1/msqc1_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="2f472a5c156d89d644388683fdd94df50fbef51a75e1a829faf818ad7375dce8", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/msqc1_1.30.0.tar.gz")
 
 	depends_on("r@3.6:", type=("build", "run"))

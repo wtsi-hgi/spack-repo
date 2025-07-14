@@ -15,6 +15,7 @@ class RDep(RPackage):
 	bioc = "DEP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEP_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEP/DEP_1.24.0.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="65916c8479a9aafdd420cd509358c5b53871a75b975852cbb5f1e1177890bdb0")
 
 	depends_on("r@3.5:", type=("build", "run"))

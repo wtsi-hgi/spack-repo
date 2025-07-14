@@ -16,6 +16,7 @@ class RFgga(RPackage):
 	bioc = "fgga" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fgga_1.10.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fgga/fgga_1.10.2.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.2", sha256="d7356dea18ec53ffac06f2e2231a814ec054f786b21cb1a4ab2410a1d71b6db1")
 
 	depends_on("r@4.3:", type=("build", "run"))

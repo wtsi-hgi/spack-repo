@@ -16,6 +16,7 @@ class RGeneclassifiers(RPackage):
 	bioc = "geneClassifiers" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geneClassifiers_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geneClassifiers/geneClassifiers_1.26.0.tar.gz"]
 
+    version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="f5a45f5b24da69f0879075ae5aae2f469c2e220d13bb47fa2eb95f8516fb7f1f")
 
 	depends_on("r@3.6:", type=("build", "run"))

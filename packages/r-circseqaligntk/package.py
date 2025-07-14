@@ -16,6 +16,7 @@ class RCircseqaligntk(RPackage):
 	bioc = "CircSeqAlignTk" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CircSeqAlignTk_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CircSeqAlignTk/CircSeqAlignTk_1.4.0.tar.gz"]
 
+    version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="3513314a68cd06f3ba4f83ba7b3b32d6ecc00bbbcb79cd22549d2ca8b54d225c")
 
 	depends_on("r@4.2:", type=("build", "run"))

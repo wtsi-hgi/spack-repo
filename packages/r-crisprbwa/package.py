@@ -16,6 +16,7 @@ class RCrisprbwa(RPackage):
 	bioc = "crisprBwa" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crisprBwa_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crisprBwa/crisprBwa_1.6.0.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="4948366cf1e7a648e4bb2767f52d78a6ba9c503d679bae0b02ba563f867889a5")
 
 	depends_on("r-biocgenerics", type=("build", "run"))

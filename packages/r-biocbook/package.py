@@ -16,6 +16,7 @@ class RBiocbook(RPackage):
 	bioc = "BiocBook" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocBook_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocBook/BiocBook_1.0.0.tar.gz"]
 
+    version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="346a97c17c56714ba81f3ba9c78df95e3ed5fa599099e7559cbd60844bcd6452")
 
 	depends_on("r@4.3:", type=("build", "run"))

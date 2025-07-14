@@ -15,6 +15,7 @@ class RRmassbank(RPackage):
 	bioc = "RMassBank" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RMassBank_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RMassBank/RMassBank_3.12.0.tar.gz"]
 
+    version("3.18.0", tag="RELEASE_3_21")
 	version("3.12.0", sha256="a76c9c4f833736a40b2fc5455734cea6a6cf39405b008333068adebf0b49c97d")
 
 	depends_on("r-rcpp", type=("build", "run"))

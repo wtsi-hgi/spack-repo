@@ -15,6 +15,7 @@ class RRnaseqsamplesizedata(RPackage):
 	bioc = "RnaSeqSampleSizeData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RnaSeqSampleSizeData_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RnaSeqSampleSizeData/RnaSeqSampleSizeData_1.34.0.tar.gz"]
 
+    version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="4e6668968830e4954653ca47c74c74925a5b9d38af0f023d495d0162e13d585c")
 
 	depends_on("r-edger", type=("build", "run"))

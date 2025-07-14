@@ -16,6 +16,7 @@ class RHicdoc(RPackage):
 	bioc = "HiCDOC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiCDOC_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiCDOC/HiCDOC_1.4.1.tar.gz"]
 
+    version("1.10.1", tag="RELEASE_3_21")
 	version("1.4.1", sha256="c4464693066728157213072862195133888b311100d830116e69540b1ccd06df")
 
 	depends_on("r-interactionset", type=("build", "run"))

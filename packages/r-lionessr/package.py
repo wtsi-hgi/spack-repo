@@ -16,6 +16,7 @@ class RLionessr(RPackage):
 	bioc = "lionessR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lionessR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lionessR/lionessR_1.16.0.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="9f081db3505e70b7140d204b04068d87543e00972cd8ee986968ec2f8b95a45e")
 
 	depends_on("r@3.6:", type=("build", "run"))

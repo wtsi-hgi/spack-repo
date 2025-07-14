@@ -14,6 +14,7 @@ class RRegenrich(RPackage):
 	
 	bioc = "RegEnrich" 
 
+    version("1.18.1", tag="RELEASE_3_21")
 	version("1.12.0", commit="0524ae661d5e148d84abf9ab6c3052ff97defbf0")
 
 	depends_on("r@4:", type=("build", "run"))

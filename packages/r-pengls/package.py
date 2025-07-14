@@ -15,6 +15,7 @@ class RPengls(RPackage):
 	bioc = "pengls" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pengls_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pengls/pengls_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="7032facda977ed4ea831d1c1a0128a6c8bae0a4ff90c4d323698925ff08abdac")
 
 	depends_on("r@4.2:", type=("build", "run"))

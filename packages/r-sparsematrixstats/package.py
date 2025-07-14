@@ -17,6 +17,7 @@ class RSparsematrixstats(RPackage):
 
 	bioc = "sparseMatrixStats"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sparseMatrixStats_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sparseMatrixStats/sparseMatrixStats_1.14.0.tar.gz"]
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.8.0", commit="4f1e2213e5b0d6b3d817c2c9129b7566288916f6")
 	version("1.6.0", commit="78627a842790af42b6634893087b2bb1f4ac0392")
 	version("1.2.1", commit="9726f3d5e0f03b50c332d85d5e4c339c18b0494c")

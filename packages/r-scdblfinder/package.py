@@ -19,6 +19,7 @@ class RScdblfinder(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDblFinder_1.16.0.tar.gz",
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scDblFinder/scDblFinder_1.16.0.tar.gz",
     ]
+    version("1.22.0", tag="RELEASE_3_21")
     version("1.16.0", sha256="48d905de681d1731f926962eb2ba8b2249ad43999f52292a2f2675e94c0d76b8")
     version("1.14.0", commit="6191ed09b87d7c54809a721d1d6c50c0027cf0a9")
     version("1.12.0", commit="65a88be3a4ca98ccad0a1829a19652df1a3c94fd")

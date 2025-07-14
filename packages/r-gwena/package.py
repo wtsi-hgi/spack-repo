@@ -15,6 +15,7 @@ class RGwena(RPackage):
 	bioc = "GWENA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GWENA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GWENA/GWENA_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="0d168b8f0ceb4aece493cbea2e9c04676db118e0cd97625e15a825afdbc45456")
 
 	depends_on("r@4.1:", type=("build", "run"))

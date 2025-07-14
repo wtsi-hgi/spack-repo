@@ -16,6 +16,7 @@ class RPsichomics(RPackage):
 	bioc = "psichomics" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/psichomics_1.28.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/psichomics/psichomics_1.28.1.tar.gz"]
 
+    version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.1", sha256="ec00f9ba9cb85ddbc9006ec31b51d1f22315b63209fe19a6e39fccd13bc052cd")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RNestlink(RPackage):
 	bioc = "NestLink" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/NestLink_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/NestLink/NestLink_1.18.0.tar.gz"]
 
+    version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="c13f6abdbd9e5e07693c630f5cbc70d5f8636d63a38372864998b495696b27db")
 
 	depends_on("r@3.6:", type=("build", "run"))

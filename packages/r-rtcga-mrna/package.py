@@ -15,6 +15,7 @@ class RRtcgaMrna(RPackage):
 	bioc = "RTCGA.mRNA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.mRNA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.mRNA/RTCGA.mRNA_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="e8708748f5ed034e34d3555c1fd81e939ceff3526cc1a42e8c0f0fd57bcfc5f1")
 
 	depends_on("r@3.3:", type=("build", "run"))

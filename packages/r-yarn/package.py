@@ -18,6 +18,7 @@ class RYarn(RPackage):
 
 	bioc = "yarn"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/yarn_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/yarn/yarn_1.28.0.tar.gz"]
+    version("1.34.0", tag="RELEASE_3_21")
 	version("1.8.1", commit="ee0723d4dbf082b4469ca9c22cce4f1a2ac81c04")
 	version("1.6.0", commit="19d1b2ef275f294bd318b86e0d237c271880117d")
 	version("1.4.0", commit="36100f40b9e520c072d0d5ebf963723b813f7db0")

@@ -15,6 +15,7 @@ class RAppreci8r(RPackage):
 	bioc = "appreci8R" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/appreci8R_1.20.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/appreci8R/appreci8R_1.20.2.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.2", sha256="52003d9e9f3180678d3b09ee28358d42a4834d9128024d63f20b49a2cd332a63")
 
 	depends_on("r-shiny", type=("build", "run"))

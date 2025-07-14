@@ -16,6 +16,7 @@ class RRaresim(RPackage):
 	bioc = "RAREsim" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RAREsim_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RAREsim/RAREsim_1.6.0.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="8fb2a823bf1b18ea70eb886ed8726c47896ac240156499e90943fd36f1de213f")
 
 	depends_on("r@4.1:", type=("build", "run"))

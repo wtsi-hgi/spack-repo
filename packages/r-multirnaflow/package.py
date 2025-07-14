@@ -16,6 +16,7 @@ class RMultirnaflow(RPackage):
 	bioc = "MultiRNAflow" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MultiRNAflow_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MultiRNAflow/MultiRNAflow_1.0.0.tar.gz"]
 
+    version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="5e7e81f1e25b61abd3f2cdee0e39527ccd0b92a2029b3d88a148d905478378ed")
 
 	depends_on("r-mfuzz@2.58:", type=("build", "run"))

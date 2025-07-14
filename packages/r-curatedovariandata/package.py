@@ -16,6 +16,7 @@ class RCuratedovariandata(RPackage):
 	bioc = "curatedOvarianData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedOvarianData_1.40.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedOvarianData/curatedOvarianData_1.40.1.tar.gz"]
 
+    version("1.46.2", tag="RELEASE_3_21")
 	version("1.40.1", sha256="4ab9aed6d1f643f266c5b3b57c36ba74a8d8ab1e24fc87451504bcf1001d26a0")
 
 	depends_on("r@3:", type=("build", "run"))

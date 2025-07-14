@@ -15,6 +15,7 @@ class RAllmll(RPackage):
 	bioc = "ALLMLL" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ALLMLL_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ALLMLL/ALLMLL_1.42.0.tar.gz"]
 
+    version("1.48.0", tag="RELEASE_3_21")
 	version("1.42.0", sha256="7571970a65b09ddb0bda5eb3d83dfecf3e6362b7a6594c3145a6a1831f9102eb")
 
 	depends_on("r@2.10:", type=("build", "run"))

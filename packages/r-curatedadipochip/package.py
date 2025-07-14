@@ -16,6 +16,7 @@ class RCuratedadipochip(RPackage):
 	bioc = "curatedAdipoChIP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedAdipoChIP_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedAdipoChIP/curatedAdipoChIP_1.18.0.tar.gz"]
 
+    version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="d3f01aff2649adf0186abbfbd0c91454d26e3b3df57b30645a20a1b89998e899")
 
 	depends_on("r@3.6:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RFgnet(RPackage):
 	bioc = "FGNet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FGNet_3.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FGNet/FGNet_3.36.0.tar.gz"]
 
+    version("3.42.0", tag="RELEASE_3_21")
 	version("3.36.0", sha256="17ce061d62aa29e345854d2431aa4e72b63c2fd827c03b1ef29286fc6b2212e9")
 
 	depends_on("r@4.2:", type=("build", "run"))

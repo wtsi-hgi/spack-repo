@@ -16,6 +16,7 @@ class RRdisop(RPackage):
 	bioc = "Rdisop" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rdisop_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rdisop/Rdisop_1.62.0.tar.gz"]
 
+    version("1.68.0", tag="RELEASE_3_21")
 	version("1.62.0", sha256="0600d03ab393b592604865b2ac42e11aa6c09fb2d3978b3ac679e5ace130e0cb")
 
 	depends_on("r@2:", type=("build", "run"))

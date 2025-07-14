@@ -16,6 +16,7 @@ class RNebulosa(RPackage):
 	bioc = "Nebulosa" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Nebulosa_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Nebulosa/Nebulosa_1.12.1.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.1", sha256="fa427b6d3d6f4f37ae530f70e06f5c448ed150c60a3f2d5b58106a7604359687")
 	version("1.12.0", md5="e71c21bbda87365578a49f21dd915fa4")
 

@@ -16,6 +16,7 @@ class ROpossom(RPackage):
 	bioc = "oposSOM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oposSOM_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oposSOM/oposSOM_2.20.0.tar.gz"]
 
+    version("2.26.0", tag="RELEASE_3_21")
 	version("2.20.0", sha256="b2bb49c5cd340377d736cade144786bcc08290edff4f09dea4f847b2810a0c41")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RVasp(RPackage):
 	bioc = "VaSP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VaSP_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VaSP/VaSP_1.14.0.tar.gz"]
 
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="de5d23ffd35c79a03de7f4c3c712aae69b1d49e26cdbad10618252c19b61b378")
 
 	depends_on("r@4:", type=("build", "run"))

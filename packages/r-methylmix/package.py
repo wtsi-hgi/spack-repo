@@ -15,6 +15,7 @@ class RMethylmix(RPackage):
 	bioc = "MethylMix" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MethylMix_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MethylMix/MethylMix_2.32.0.tar.gz"]
 
+    version("2.38.0", tag="RELEASE_3_21")
 	version("2.32.0", sha256="d96199b5bbb72c5890ade75eb0128f83e29d1d53ec7a1e8957e121e54d321093")
 
 	depends_on("r@3.2:", type=("build", "run"))

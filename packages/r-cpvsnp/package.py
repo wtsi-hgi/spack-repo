@@ -15,6 +15,7 @@ class RCpvsnp(RPackage):
 	bioc = "cpvSNP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cpvSNP_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cpvSNP/cpvSNP_1.34.0.tar.gz"]
 
+    version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="88bc5f5fe035eb9274a1e63f38e6ba90ccdb1ece86b150011137b0abf3416caf")
 
 	depends_on("r@3.5:", type=("build", "run"))

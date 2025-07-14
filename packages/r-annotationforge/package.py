@@ -15,6 +15,7 @@ class RAnnotationforge(RPackage):
 	bioc = "AnnotationForge"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnnotationForge_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnnotationForge/AnnotationForge_1.44.0.tar.gz"]
 
+    version("1.50.0", tag="RELEASE_3_21")
 	version("1.44.0", sha256="89655718145d114fe509554ce1cfd52b7cf095e200c9d280d8cd86b939786b35")
 	version("1.42.0", commit="2eac005012b11317c33c8b0062b968b2ac378308")
 	version("1.40.0", commit="f77d3a942eb6b18c18888b7af3f0e652596cf19f")

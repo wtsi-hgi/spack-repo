@@ -15,6 +15,7 @@ class RToxicogx(RPackage):
 	bioc = "ToxicoGx" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ToxicoGx_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ToxicoGx/ToxicoGx_2.6.0.tar.gz"]
 
+    version("2.12.0", tag="RELEASE_3_21")
 	version("2.6.0", sha256="b88afaaa37cd354ed2901604c7e6105fd14324f1c0beda61d8a8d2a0a0708f33")
 
 	depends_on("r@4.1:", type=("build", "run"))

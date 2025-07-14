@@ -15,6 +15,7 @@ class RProstatecancervarambally(RPackage):
 	bioc = "prostateCancerVarambally" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/prostateCancerVarambally_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/prostateCancerVarambally/prostateCancerVarambally_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="95a087be948fdf2acba6d8ed7180d1053ca66880324710860641ba575ebf3982")
 
 	depends_on("r-biobase", type=("build", "run"))

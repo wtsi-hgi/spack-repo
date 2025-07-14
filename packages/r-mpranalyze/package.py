@@ -16,6 +16,7 @@ class RMpranalyze(RPackage):
 	bioc = "MPRAnalyze" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MPRAnalyze_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MPRAnalyze/MPRAnalyze_1.20.0.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="493cf3a0e2c2e81f638cdfb4775a2f4bdf29a9f782d86c3590b76371efa5631b")
 
 	depends_on("r-biocparallel", type=("build", "run"))

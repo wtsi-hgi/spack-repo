@@ -15,6 +15,7 @@ class RDonapllp2013(RPackage):
 	bioc = "DonaPLLP2013" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DonaPLLP2013_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DonaPLLP2013/DonaPLLP2013_1.40.0.tar.gz"]
 
+    version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="006f01ffccf41dbf3ccc445c011d2481ecbf49a88bee1a8eec4ebd36b379bd5f", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DonaPLLP2013_1.40.0.tar.gz")
 
 	depends_on("r-ebimage", type=("build", "run"))

@@ -15,6 +15,7 @@ class RSpatialcpie(RPackage):
 	bioc = "SpatialCPie" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpatialCPie_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpatialCPie/SpatialCPie_1.18.0.tar.gz"]
 
+    version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="0545ba0c1a905914cb8b9e262f86f368f29f09b14d6e4246b1819f105496d783")
 
 	depends_on("r@3.6:", type=("build", "run"))

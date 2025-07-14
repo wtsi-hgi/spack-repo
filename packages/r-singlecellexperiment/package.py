@@ -16,6 +16,7 @@ class RSinglecellexperiment(RPackage):
 
 	bioc = "SingleCellExperiment"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SingleCellExperiment_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SingleCellExperiment/SingleCellExperiment_1.24.0.tar.gz"]
+    version("1.30.1", tag="RELEASE_3_21")
 	version("1.6.0", commit="baa51d77a8dacd2a22e7293095a8cffaaa3293b4")
 	version("1.4.1", commit="b1efcb338e9176ae6829bb897957aa37e74d4870")
 	version("1.24.0", sha256="c4670774e28468028bc62971a78f2576a10fb90c4b832c0a6c34785a4fb28460")

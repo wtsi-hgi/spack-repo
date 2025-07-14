@@ -16,6 +16,7 @@ class ROrfik(RPackage):
 	bioc = "ORFik" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ORFik_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ORFik/ORFik_1.22.2.tar.gz"]
 
+    version("1.28.2", tag="RELEASE_3_21")
 	version("1.22.2", sha256="fe00c50c039695f803e23cfbf65f67154d77523391627bbd22c6ab953063af73")
 
 	depends_on("r@3.6:", type=("build", "run"))

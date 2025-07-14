@@ -16,6 +16,7 @@ class RGeva(RPackage):
 	bioc = "geva" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geva_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geva/geva_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="79e4b022912805ba0ad47840f3ac072dd6e7d288fd704eba0557f608fff5683e")
 
 	depends_on("r@4.1:", type=("build", "run"))

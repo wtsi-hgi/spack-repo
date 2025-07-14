@@ -15,6 +15,7 @@ class RHmmcopy(RPackage):
 	bioc = "HMMcopy" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HMMcopy_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HMMcopy/HMMcopy_1.44.0.tar.gz"]
 
+    version("1.50.0", tag="RELEASE_3_21")
 	version("1.44.0", sha256="4c3415657f69de3202a46b049a111edb28ffa4ff18869bdcd1ec976bf64215da")
 
 	depends_on("r@2.10:", type=("build", "run"))

@@ -16,6 +16,7 @@ class REpistack(RPackage):
 	bioc = "epistack" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epistack_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epistack/epistack_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="738b2cf0a8c23ad732af1703448778c4ff5bfe671facc9cd22dffd8a7b0bf254")
 
 	depends_on("r@4.1:", type=("build", "run"))

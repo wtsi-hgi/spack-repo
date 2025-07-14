@@ -15,6 +15,7 @@ class RPfamanalyzer(RPackage):
 	bioc = "pfamAnalyzeR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pfamAnalyzeR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pfamAnalyzeR/pfamAnalyzeR_1.2.0.tar.gz"]
 
+    version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="c7f89b30e3613df2a814fcfbd64c69d1d786da228cbf1a0ec1692deee6b9bd63")
 
 	depends_on("r@4.3:", type=("build", "run"))

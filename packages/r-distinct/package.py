@@ -16,6 +16,7 @@ class RDistinct(RPackage):
 	bioc = "distinct" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/distinct_1.14.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/distinct/distinct_1.14.5.tar.gz"]
 
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.5", sha256="024351f81a26bef315770d5a45066932212a580b74cdc72547d90060f01e7892")
 
 	depends_on("r@4.3:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RSigfeature(RPackage):
 	bioc = "sigFeature" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sigFeature_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sigFeature/sigFeature_1.20.0.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="ff0f705b6895c901657d800a5dd2cc4ac504ecec111982f556e31bdb005efd8a")
 
 	depends_on("r@3.5:", type=("build", "run"))

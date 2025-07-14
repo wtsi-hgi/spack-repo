@@ -15,6 +15,7 @@ class REudysbiome(RPackage):
 	bioc = "eudysbiome" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/eudysbiome_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/eudysbiome/eudysbiome_1.32.0.tar.gz"]
 
+    version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="7dd2d5b295bc72b7f3ab339d61e66b5e5f548654e7ffa6042cc427250519de2a")
 
 	depends_on("r@3.1:", type=("build", "run"))

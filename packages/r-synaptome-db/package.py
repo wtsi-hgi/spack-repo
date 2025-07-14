@@ -15,6 +15,7 @@ class RSynaptomeDb(RPackage):
 	bioc = "synaptome.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/synaptome.db_0.99.15.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/synaptome.db/synaptome.db_0.99.15.tar.gz"]
 
+    version("0.99.16", tag="RELEASE_3_21")
 	version("0.99.15", sha256="031e8033d09d9d12404abf74e6e64af3a9121e1de621ec401d13384485793984")
 
 	depends_on("r@3.5:", type=("build", "run"))

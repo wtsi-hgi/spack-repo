@@ -16,6 +16,7 @@ class RDewseq(RPackage):
 	bioc = "DEWSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEWSeq_1.16.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEWSeq/DEWSeq_1.16.2.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.2", sha256="c1b358c4b1ff2a05de1c8d6d9b236a03b435fdb1ff0774cc13c726534d301f62")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RPast(RPackage):
 	bioc = "PAST" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PAST_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PAST/PAST_1.18.0.tar.gz"]
 
+    version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="c508e50e452bc76d670935ed22829632e6b87c365769ebb734b40693827c6b87")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RPadma(RPackage):
 	bioc = "padma" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/padma_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/padma/padma_1.12.0.tar.gz"]
 
+    version("1.18.1", tag="RELEASE_3_21")
 	version("1.12.0", sha256="ad1f233509d53b24af8344f0ec0f196633b0b5d9b0dd4cb9572986a095fa660d")
 
 	depends_on("r@4.1:", type=("build", "run"))

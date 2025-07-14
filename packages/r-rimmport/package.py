@@ -16,6 +16,7 @@ class RRimmport(RPackage):
 	bioc = "RImmPort" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RImmPort_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RImmPort/RImmPort_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="509080e001fe767be0d76d7d211a6309b1854622da12324adf2c07f5432fbd73")
 
 	depends_on("r-plyr", type=("build", "run"))

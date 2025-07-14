@@ -16,6 +16,7 @@ class RFedup(RPackage):
 	bioc = "fedup" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fedup_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fedup/fedup_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="264618bb45915382bc88306e9c4df0e66bc4b88331d03e347dc84a9ff077f902")
 
 	depends_on("r@4.1:", type=("build", "run"))

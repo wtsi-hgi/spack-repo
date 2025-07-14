@@ -15,6 +15,7 @@ class RTfutils(RPackage):
 	bioc = "TFutils" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFutils_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFutils/TFutils_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="2ffe353d6fee1e87480cce7367cc774154267b51f88353edf7db692c668d3938")
 
 	depends_on("r@4.1:", type=("build", "run"))

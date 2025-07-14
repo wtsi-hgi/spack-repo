@@ -16,6 +16,7 @@ class RDemuxmix(RPackage):
 	bioc = "demuxmix" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/demuxmix_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/demuxmix/demuxmix_1.4.0.tar.gz"]
 
+    version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="7c75413797bcd86cb1c83372f02c3361666d47930ba3a52da5498e0bb52d8a83")
 
 	depends_on("r@4:", type=("build", "run"))

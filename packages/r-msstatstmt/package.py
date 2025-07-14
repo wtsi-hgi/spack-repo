@@ -16,6 +16,7 @@ class RMsstatstmt(RPackage):
 	bioc = "MSstatsTMT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsTMT_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsTMT/MSstatsTMT_2.10.0.tar.gz"]
 
+    version("2.16.0", tag="RELEASE_3_21")
 	version("2.10.0", sha256="e4eff0f7d684c8aefd1d3d2efa87f4b902029dbdae318a23ffba84cebf7dd303")
 
 	depends_on("r@4.2:", type=("build", "run"))

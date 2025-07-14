@@ -16,6 +16,7 @@ class RMicrobiomeprofiler(RPackage):
 	bioc = "MicrobiomeProfiler" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MicrobiomeProfiler_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MicrobiomeProfiler/MicrobiomeProfiler_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="4dd11f1551f9e1b5db19a28cda1e41c563efd8a34e0d81db43c63d99509f81f6")
 
 	depends_on("r@4.2:", type=("build", "run"))

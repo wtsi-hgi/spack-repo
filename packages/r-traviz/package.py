@@ -15,6 +15,7 @@ class RTraviz(RPackage):
 	bioc = "traviz" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/traviz_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/traviz/traviz_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="6682a3ace8eab64755f34a77a399ca677f1c87acbcc4c3d77e9d03408656c079")
 
 	depends_on("r@4:", type=("build", "run"))

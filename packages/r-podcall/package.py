@@ -15,6 +15,7 @@ class RPodcall(RPackage):
 	bioc = "PoDCall" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PoDCall_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PoDCall/PoDCall_1.10.1.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.1", sha256="ed63dda461b056a25840032977c2d3986c159b9d53a30d751970fd014d58b624")
 
 	depends_on("r@4.3:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RGenetclassifier(RPackage):
 	bioc = "geNetClassifier" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geNetClassifier_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geNetClassifier/geNetClassifier_1.42.0.tar.gz"]
 
+    version("1.48.0", tag="RELEASE_3_21")
 	version("1.42.0", sha256="0d67da334b237d15900ef72117ce86461891e5dfdf540c7770b50374d454c1cc")
 
 	depends_on("r@2.10.1:", type=("build", "run"))

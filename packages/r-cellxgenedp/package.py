@@ -16,6 +16,7 @@ class RCellxgenedp(RPackage):
 	bioc = "cellxgenedp" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cellxgenedp_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cellxgenedp/cellxgenedp_1.6.1.tar.gz"]
 
+    version("1.12.1", tag="RELEASE_3_21")
 	version("1.6.1", md5="dc1730a545f49b0b8c14991289f29a6b")
 
 	depends_on("r-dplyr", type=("build", "run"))

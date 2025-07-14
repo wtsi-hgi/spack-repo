@@ -17,6 +17,7 @@ class RDmrcate(RPackage):
 
 	bioc = "DMRcate"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DMRcate_2.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DMRcate/DMRcate_2.16.1.tar.gz"]
+    version("3.4.0", tag="RELEASE_3_21")
 	version("2.8.5", commit="c65dc79a33a047c10932a98b3383709a6bcb8903")
 	version("2.4.1", commit="bc6242a0291a9b997872f575a4417d38550c9550")
 	version("2.16.1", sha256="7c5033b7455c81cb24b7a96002664e11d6cd3c908e4ae9c3a162a32765bdbda5")

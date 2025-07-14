@@ -15,6 +15,7 @@ class RPanelcnMops(RPackage):
 	bioc = "panelcn.mops" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/panelcn.mops_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/panelcn.mops/panelcn.mops_1.24.0.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="9b056750fffb54366e1c649a16dd96eb5c74022ba7ff71ab072233b0ec5b06ad")
 
 	depends_on("r@3.5:", type=("build", "run"))

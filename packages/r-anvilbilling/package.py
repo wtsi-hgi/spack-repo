@@ -15,6 +15,7 @@ class RAnvilbilling(RPackage):
 	bioc = "AnVILBilling" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnVILBilling_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnVILBilling/AnVILBilling_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="9a40d74703b1dc399883cd4d2e2de71e5f33c758e9989c72c0bf1ab7adc120ad")
 
 	depends_on("r@4.1:", type=("build", "run"))

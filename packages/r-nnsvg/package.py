@@ -16,6 +16,7 @@ class RNnsvg(RPackage):
 	bioc = "nnSVG" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nnSVG_1.6.4.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nnSVG/nnSVG_1.6.4.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.4", sha256="cbac2cec4d3313413718865d3728f7c1b147e25607c2711f9ee96fffd520a00b")
 	version("1.6.0", md5="4af169b12d944eff8ee9d9e3063ff5ea")
 

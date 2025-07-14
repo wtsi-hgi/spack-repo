@@ -15,6 +15,7 @@ class RClusterexperiment(RPackage):
 	bioc = "clusterExperiment" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clusterExperiment_2.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clusterExperiment/clusterExperiment_2.22.0.tar.gz"]
 
+    version("2.28.1", tag="RELEASE_3_21")
 	version("2.22.0", sha256="04c2d47113872ce2d325cd1e187e7ca2d011c88b8a4346b020a396736fcbdde2")
 
 	depends_on("r@3.6:", type=("build", "run"))

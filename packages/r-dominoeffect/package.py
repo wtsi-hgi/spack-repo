@@ -15,6 +15,7 @@ class RDominoeffect(RPackage):
 	bioc = "DominoEffect" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DominoEffect_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DominoEffect/DominoEffect_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="f06fecfec8481f8eb6a049e4f28a23a49e957c362ecc55ac1166de8007cb4701")
 
 	depends_on("r@3.5:", type=("build", "run"))

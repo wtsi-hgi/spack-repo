@@ -16,6 +16,7 @@ class RBumpymatrix(RPackage):
 	bioc = "BumpyMatrix" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BumpyMatrix_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BumpyMatrix/BumpyMatrix_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="59d0ffa888891010b4a42ede246bada833f8c634eb27a07db5692cdea53b8845")
 
 	depends_on("r-matrix", type=("build", "run"))

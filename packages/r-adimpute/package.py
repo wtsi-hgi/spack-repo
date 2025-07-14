@@ -15,6 +15,7 @@ class RAdimpute(RPackage):
 	bioc = "ADImpute" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ADImpute_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ADImpute/ADImpute_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="e1a05cce0d16c805370fff40cf3f950c19ac6bcfd570b1da39054961a3f72909")
 
 	depends_on("r@4:", type=("build", "run"))

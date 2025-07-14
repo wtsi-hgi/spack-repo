@@ -15,6 +15,7 @@ class RDialignr(RPackage):
 	bioc = "DIAlignR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DIAlignR_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DIAlignR/DIAlignR_2.10.0.tar.gz"]
 
+    version("2.16.0", tag="RELEASE_3_21")
 	version("2.10.0", sha256="787573650f6a1cd7cd10f4ca465264071d50e52efd9d9fbbe3f9988a969e1ef7")
 
 	depends_on("r@4:", type=("build", "run"))

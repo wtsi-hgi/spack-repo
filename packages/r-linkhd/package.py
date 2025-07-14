@@ -15,6 +15,7 @@ class RLinkhd(RPackage):
 	bioc = "LinkHD" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LinkHD_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LinkHD/LinkHD_1.16.0.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="8e1cbeb2208d40330ffb2a8492523929b04611ff3ac0d901ee9d89bbaadf81c5")
 
 	depends_on("r@3.6:", type=("build", "run"))

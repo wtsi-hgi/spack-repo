@@ -15,6 +15,7 @@ class RIchip(RPackage):
 	bioc = "iChip" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iChip_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iChip/iChip_1.56.0.tar.gz"]
 
+    version("1.62.0", tag="RELEASE_3_21")
 	version("1.56.0", sha256="fef7eb975b3d6ae17f73246b50c03f35aea19be394906eadd4b526e41da3e51f")
 
 	depends_on("r@2.10:", type=("build", "run"))

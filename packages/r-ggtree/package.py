@@ -19,6 +19,7 @@ class RGgtree(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggtree_3.10.1.tar.gz",
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggtree/ggtree_3.10.1.tar.gz",
     ]
+    version("3.16.2", tag="RELEASE_3_21")
     version("3.8.0", commit="e7c989085d0848e4d5f82aa8000422c71458a9a8")
     version("3.6.2", commit="431ec37bc0f0159b08a7990ce1d9374e160b9f44")
     version("3.4.4", commit="8e48d3e2ea445b6c2213f0471462108a7a72b333")

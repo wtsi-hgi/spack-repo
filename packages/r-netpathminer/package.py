@@ -16,6 +16,7 @@ class RNetpathminer(RPackage):
 	bioc = "NetPathMiner" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NetPathMiner_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NetPathMiner/NetPathMiner_1.38.0.tar.gz"]
 
+    version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="d01e442a522f92932f23c9ebb4f0de35e4300764df0bcda0540fa3b63b97f7da")
 
 	depends_on("r@3.0.2:", type=("build", "run"))

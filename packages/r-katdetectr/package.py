@@ -16,6 +16,7 @@ class RKatdetectr(RPackage):
 	bioc = "katdetectr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/katdetectr_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/katdetectr/katdetectr_1.4.0.tar.gz"]
 
+    version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="3f5d04a60a2d8ff0d9db9ebcbc52347dc046ac25f2327eed5c98421bd7c12a44")
 
 	depends_on("r@4.2:", type=("build", "run"))

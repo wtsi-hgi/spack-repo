@@ -15,6 +15,7 @@ class REsetvis(RPackage):
 	bioc = "esetVis" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/esetVis_1.28.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/esetVis/esetVis_1.28.2.tar.gz"]
 
+    version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.2", sha256="74a834d41fe5171446f6d231f14d6b1c276e4c3b9cbf485e20349b02f0f860f9")
 
 	depends_on("r-mpm", type=("build", "run"))

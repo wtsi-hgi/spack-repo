@@ -15,6 +15,7 @@ class RMethylaiddata(RPackage):
 	bioc = "MethylAidData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MethylAidData_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MethylAidData/MethylAidData_1.34.0.tar.gz"]
 
+    version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="29074e549e544d9a7f89ca8801bee66ad98af14951f9c1451c8c14193507c24e")
 
 	depends_on("r-methylaid", type=("build", "run"))

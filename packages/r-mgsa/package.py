@@ -16,6 +16,7 @@ class RMgsa(RPackage):
 	bioc = "mgsa" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mgsa_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mgsa/mgsa_1.50.0.tar.gz"]
 
+    version("1.56.0", tag="RELEASE_3_21")
 	version("1.50.0", sha256="69a1e9cfb91e52a022dad737d1ca173aaddaf0523a7e3e233e66a253cd1c0d8c")
 
 	depends_on("r@2.14:", type=("build", "run"))

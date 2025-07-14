@@ -15,6 +15,7 @@ class RBloodcancermultiomics2017(RPackage):
 	bioc = "BloodCancerMultiOmics2017" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BloodCancerMultiOmics2017_1.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/BloodCancerMultiOmics2017/BloodCancerMultiOmics2017_1.22.1.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.1", md5="fabac1780c0616a91881b574e61ee31c", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BloodCancerMultiOmics2017_1.22.1.tar.gz")
 	version("1.22.0", md5="d2b2dcb147bf904df505fedca2d1ea9e", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BloodCancerMultiOmics2017_1.22.0.tar.gz")
 

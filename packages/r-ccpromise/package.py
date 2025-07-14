@@ -15,6 +15,7 @@ class RCcpromise(RPackage):
 	bioc = "CCPROMISE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CCPROMISE_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CCPROMISE/CCPROMISE_1.28.0.tar.gz"]
 
+    version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="bac4116c6c0f08cca419ec433470da24b9f9b0ba770728b31bba8507b16dd489")
 
 	depends_on("r@3.3:", type=("build", "run"))

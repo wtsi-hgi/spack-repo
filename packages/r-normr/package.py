@@ -16,6 +16,7 @@ class RNormr(RPackage):
 	bioc = "normr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/normr_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/normr/normr_1.28.0.tar.gz"]
 
+    version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="13555d784529738b6f4accb4b176999c2f90de3cd852c4aa6973d4d2cac3b417")
 
 	depends_on("r@3.3:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RSimd(RPackage):
 	bioc = "SIMD" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SIMD_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SIMD/SIMD_1.20.0.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="924fbe6d2bb750f10bf5c75a9227866c215cb70b80469f0be3d6a82a6699a12a")
 
 	depends_on("r@3.5:", type=("build", "run"))

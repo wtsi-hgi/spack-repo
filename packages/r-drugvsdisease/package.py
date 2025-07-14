@@ -15,6 +15,7 @@ class RDrugvsdisease(RPackage):
 	bioc = "DrugVsDisease" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DrugVsDisease_2.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DrugVsDisease/DrugVsDisease_2.44.0.tar.gz"]
 
+    version("2.50.0", tag="RELEASE_3_21")
 	version("2.44.0", sha256="59a9037358682f38a49c0ec00978607deb6016d9b274bccf9c01efbe4a4e31bd")
 
 	depends_on("r@2.10:", type=("build", "run"))

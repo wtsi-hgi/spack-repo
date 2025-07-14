@@ -18,6 +18,7 @@ class RScater(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scater_1.30.1.tar.gz",
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scater/scater_1.30.1.tar.gz",
     ]
+    version("1.36.0", tag="RELEASE_3_21")
     version("1.8.4", commit="d560a9a378541d53d17990d2aa2cd28874df3dcd")
     version("1.6.3", commit="964effb4e883102d7c8cae627dbac4ba5d216a75")
     version("1.4.0", commit="90a2eab66ff82ba6dd7fbb33e41cd0ded20fa218")

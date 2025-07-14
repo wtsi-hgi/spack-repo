@@ -16,6 +16,7 @@ class RSitepath(RPackage):
 	bioc = "sitePath" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sitePath_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sitePath/sitePath_1.18.0.tar.gz"]
 
+    version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="0436d1d9e105cfe74447db0c55a63e76ff1a47a4e49d1c89a5537b73d376b89d")
 
 	depends_on("r@4.1:", type=("build", "run"))

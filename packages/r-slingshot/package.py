@@ -15,6 +15,7 @@ class RSlingshot(RPackage):
 	bioc = "slingshot" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/slingshot_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/slingshot/slingshot_2.10.0.tar.gz"]
 
+    version("2.16.0", tag="RELEASE_3_21")
 	version("2.10.0", sha256="2d30c816b11d7f32ed87afcdf3a30cb9e130a1abac28d8c792d556c2ae047260")
 
 	depends_on("r@4:", type=("build", "run"))

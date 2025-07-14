@@ -15,6 +15,7 @@ class ROppar(RPackage):
 	bioc = "oppar" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oppar_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oppar/oppar_1.30.0.tar.gz"]
 
+    version("1.36.1", tag="RELEASE_3_21")
 	version("1.30.0", sha256="e296c1fe2803bd68f7d0dc2529fb2e55f5ec5a6226a63be2895b723ad983d028")
 
 	depends_on("r@3.3:", type=("build", "run"))

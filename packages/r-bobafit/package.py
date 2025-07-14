@@ -16,6 +16,7 @@ class RBobafit(RPackage):
 	bioc = "BOBaFIT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BOBaFIT_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BOBaFIT/BOBaFIT_1.6.0.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="111aff16b4d9615fca6db51253ebb997ec54c98e5edec2ab5a8bbe309c033ac1")
 
 	depends_on("r@2.10:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RKebabs(RPackage):
 	bioc = "kebabs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/kebabs_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/kebabs/kebabs_1.36.0.tar.gz"]
 
+    version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="a39c12d8400d668497ef1f2ec4a7bea66542b0a091d4b3b4dce8370c48a6919e")
 
 	depends_on("r@3.3:", type=("build", "run"))

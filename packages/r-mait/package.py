@@ -15,6 +15,7 @@ class RMait(RPackage):
 	bioc = "MAIT" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MAIT_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MAIT/MAIT_1.36.0.tar.gz"]
 
+    version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="cfc0d04449641e29cd782659b47f23ae4148e37f6a4a5cc64aadb65f41e192ce")
 
 	depends_on("r@2.10:", type=("build", "run"))

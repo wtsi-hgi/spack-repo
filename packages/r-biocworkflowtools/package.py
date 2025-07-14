@@ -15,6 +15,7 @@ class RBiocworkflowtools(RPackage):
 	bioc = "BiocWorkflowTools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocWorkflowTools_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocWorkflowTools/BiocWorkflowTools_1.28.0.tar.gz"]
 
+    version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="a512296cd5c5ed6a3d8874378f7f5b4cd620c35e17ada1ad2918ea7ca3a60756")
 
 	depends_on("r@3.4:", type=("build", "run"))

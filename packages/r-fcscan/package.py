@@ -15,6 +15,7 @@ class RFcscan(RPackage):
 	bioc = "fcScan" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fcScan_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fcScan/fcScan_1.16.0.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="f9e080e31d5d10004e880e6cab4ef6e7f8b661c3878bebd0f7400ef2766a0a42")
 
 	depends_on("r-plyr", type=("build", "run"))

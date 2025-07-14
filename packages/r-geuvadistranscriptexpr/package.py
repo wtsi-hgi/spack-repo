@@ -15,6 +15,7 @@ class RGeuvadistranscriptexpr(RPackage):
 	bioc = "GeuvadisTranscriptExpr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GeuvadisTranscriptExpr_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GeuvadisTranscriptExpr/GeuvadisTranscriptExpr_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="660975c8070db0a3b2efe51a39e6173c18e48875af4da9023b7863c7ec1d4588")
 
 	depends_on("r@3.5:", type=("build", "run"))

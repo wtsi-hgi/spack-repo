@@ -15,6 +15,7 @@ class RMonocle(RPackage):
 	bioc = "monocle" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/monocle_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/monocle/monocle_2.30.0.tar.gz"]
 
+    version("2.36.0", tag="RELEASE_3_21")
 	version("2.30.0", md5="8b3a3d5cd2698b4cef4396c388250658")
 
 	depends_on("r@2.10:", type=("build", "run"))

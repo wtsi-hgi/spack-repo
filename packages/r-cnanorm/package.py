@@ -16,6 +16,7 @@ class RCnanorm(RPackage):
 	bioc = "CNAnorm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNAnorm_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNAnorm/CNAnorm_1.48.0.tar.gz"]
 
+    version("1.54.0", tag="RELEASE_3_21")
 	version("1.48.0", sha256="050233377f5128c1713c2fc2be812069e1a7e593afac3a95c01b18a3a42fb905")
 
 	depends_on("r@2.10.1:", type=("build", "run"))

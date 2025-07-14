@@ -16,6 +16,7 @@ class RTumourmethdata(RPackage):
 	bioc = "TumourMethData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TumourMethData_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TumourMethData/TumourMethData_1.0.0.tar.gz"]
 
+    version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="ad26c904292e57f951cb6b4f9808d0f9719b9c9faa267eb1468465510ae11380")
 
 	depends_on("r@4.2:", type=("build", "run"))

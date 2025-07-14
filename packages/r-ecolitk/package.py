@@ -15,6 +15,7 @@ class REcolitk(RPackage):
 	bioc = "ecolitk" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ecolitk_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ecolitk/ecolitk_1.74.0.tar.gz"]
 
+    version("1.80.0", tag="RELEASE_3_21")
 	version("1.74.0", sha256="a3f0d59fd409127b6b8abc6a4654f9aa4f4bf5d52293eb14cbfb5393912ab8cd")
 
 	depends_on("r@2.10:", type=("build", "run"))

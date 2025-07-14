@@ -16,6 +16,7 @@ class RSimplifyenrichment(RPackage):
 	bioc = "simplifyEnrichment" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/simplifyEnrichment_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/simplifyEnrichment/simplifyEnrichment_1.12.0.tar.gz"]
 
+    version("2.2.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="fc86227bb20671fbb242983e9a6b1c9509b70003817860c116b106841ca41962")
 
 	depends_on("r@3.6:", type=("build", "run"))

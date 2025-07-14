@@ -16,6 +16,7 @@ class RCliprofiler(RPackage):
 	bioc = "cliProfiler" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cliProfiler_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cliProfiler/cliProfiler_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="d4a72146a377bf0b36dd9b9891eb15fe5d111134dbd8c36a640990dd58f1677f")
 
 	depends_on("r-s4vectors", type=("build", "run"))

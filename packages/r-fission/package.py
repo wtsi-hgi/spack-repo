@@ -15,6 +15,7 @@ class RFission(RPackage):
 	bioc = "fission" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/fission_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/fission/fission_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="1649e9d58760cd0076bd4ee22ac80cbb56e4dd93b1cf7ed2c8d5191e8bfc0778")
 
 	depends_on("r@2.10:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RSeq2pathway(RPackage):
 	bioc = "seq2pathway" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seq2pathway_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seq2pathway/seq2pathway_1.34.0.tar.gz"]
 
+    version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="3dff3859cba0e61c46a9176193616ea6a55c07a3c1c959a1e815ccd633d47ab4")
 
 	depends_on("r@3.6.2:", type=("build", "run"))

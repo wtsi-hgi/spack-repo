@@ -16,6 +16,7 @@ class RGsalightning(RPackage):
 	bioc = "GSALightning" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSALightning_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSALightning/GSALightning_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="5fe9613d3acaebd43c1c678351d6d719007bd89d81201a2906401d4b2428c9c1")
 
 	depends_on("r@3.3:", type=("build", "run"))

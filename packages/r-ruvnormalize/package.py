@@ -15,6 +15,7 @@ class RRuvnormalize(RPackage):
 	bioc = "RUVnormalize" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RUVnormalize_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RUVnormalize/RUVnormalize_1.36.0.tar.gz"]
 
+    version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="89123363aaac11558e7126333f241a8f63e78b5ce7bea4c5f0f600b4e2fcaa2a")
 
 	depends_on("r@2.10:", type=("build", "run"))

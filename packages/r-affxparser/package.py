@@ -21,6 +21,7 @@ class RAffxparser(RPackage):
 	bioc = "affxparser"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affxparser_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affxparser/affxparser_1.74.0.tar.gz"]
 
+    version("1.80.0", tag="RELEASE_3_21")
 	version("1.74.0", sha256="29ef2e64d3b395a4ab95c30c7b63934b2763ddb93d2e4d98d81cb63a9f6e12a3")
 	version("1.72.0", commit="6e976af32f77835143f6b4e0c01c6016dc1b331c")
 	version("1.70.0", commit="28f94cd3477e9500942be89cbcb5cad1bbb369fe")

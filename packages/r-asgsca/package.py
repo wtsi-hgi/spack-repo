@@ -15,6 +15,7 @@ class RAsgsca(RPackage):
 	bioc = "ASGSCA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASGSCA_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASGSCA/ASGSCA_1.36.0.tar.gz"]
 
+    version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="eed8974e16d09d1f938c59fe28d83fccab406ff35cbea203ede066c6720ad38e")
 
 	depends_on("r-matrix", type=("build", "run"))

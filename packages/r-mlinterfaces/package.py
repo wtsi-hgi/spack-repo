@@ -15,6 +15,7 @@ class RMlinterfaces(RPackage):
 
 	bioc = "MLInterfaces"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MLInterfaces_1.82.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MLInterfaces/MLInterfaces_1.82.0.tar.gz"]
+    version("1.88.1", tag="RELEASE_3_21")
 	version("1.82.0", sha256="8147d937e7543ca8ca8890944285d863059f22f6a7466113b83db4d2613fea29")
 	version("1.80.0", commit="275f8d39f05c46ab3ab7096d1e0539a33bab3a54")
 	version("1.78.0", commit="0988b95d282a6bffe56b7df4da2e23485e96d12c")

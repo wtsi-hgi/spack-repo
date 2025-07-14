@@ -15,6 +15,7 @@ class RTrajectorygeometry(RPackage):
 	bioc = "TrajectoryGeometry" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TrajectoryGeometry_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TrajectoryGeometry/TrajectoryGeometry_1.10.1.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.1", sha256="4d6fd3d359e7073b69b24d8c6674fa91e8bd3d1910362016ed725d039d638f86")
 	version("1.10.0", md5="a955410c20ec9cbae97e2d60a8c9b46f")
 

@@ -16,6 +16,7 @@ class RIseede(RPackage):
 	bioc = "iSEEde" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEEde_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEEde/iSEEde_1.0.0.tar.gz"]
 
+    version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="9cc20577ff9d5a98e2116dc0981f02885c0a620fd5ce3b887299c52c68332295")
 
 	depends_on("r-isee", type=("build", "run"))

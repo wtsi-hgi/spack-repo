@@ -16,6 +16,7 @@ class RTransite(RPackage):
 	bioc = "transite" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/transite_1.20.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/transite/transite_1.20.1.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.1", sha256="550352e6ae6fe1831a2fca8c479f7d5a688969a1adb4ceb0de0c45ce770a3621")
 
 	depends_on("r@3.5:", type=("build", "run"))

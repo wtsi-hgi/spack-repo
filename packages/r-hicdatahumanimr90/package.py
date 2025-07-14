@@ -15,6 +15,7 @@ class RHicdatahumanimr90(RPackage):
 	bioc = "HiCDataHumanIMR90" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HiCDataHumanIMR90_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HiCDataHumanIMR90/HiCDataHumanIMR90_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="3df6a6c98f3d83c9079ab913bf6c0e1fa069248674c7e1fd1071b68df085c5cb", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HiCDataHumanIMR90_1.22.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))

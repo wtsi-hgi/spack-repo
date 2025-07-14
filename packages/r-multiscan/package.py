@@ -15,6 +15,7 @@ class RMultiscan(RPackage):
 	bioc = "multiscan" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/multiscan_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/multiscan/multiscan_1.62.0.tar.gz"]
 
+    version("1.68.0", tag="RELEASE_3_21")
 	version("1.62.0", sha256="9193d18c5ecf8465b44edddac53008b509a0bba4cce6a5e1d8050975e1d05027")
 
 	depends_on("r@2.3:", type=("build", "run"))

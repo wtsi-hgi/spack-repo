@@ -13,6 +13,7 @@ class RDecipher(RPackage):
 
 	bioc = "DECIPHER"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DECIPHER_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DECIPHER/DECIPHER_2.30.0.tar.gz"]
+    version("3.4.0", tag="RELEASE_3_21")
 	version("2.8.1", commit="35aa66f48e06b93a98d1060c90c44d34ce05ccd9")
 	version("2.6.0", commit="ed9acaa35c8774cb0ea01cd7cc2e46d063d8c70e")
 	version("2.4.0", commit="1a57b8e4c7d7dec1c233f79c9a88d3705e0ad432")

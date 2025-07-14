@@ -15,6 +15,7 @@ class RRtcgaRppa(RPackage):
 	bioc = "RTCGA.RPPA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.RPPA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.RPPA/RTCGA.RPPA_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="0401c54f74c00a011efecccd33d82af5b3b9454d97b30d94ea530b770dd8c4d2")
 
 	depends_on("r@3.3:", type=("build", "run"))

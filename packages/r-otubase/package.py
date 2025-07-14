@@ -15,6 +15,7 @@ class ROtubase(RPackage):
 	bioc = "OTUbase" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OTUbase_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OTUbase/OTUbase_1.52.0.tar.gz"]
 
+    version("1.58.0", tag="RELEASE_3_21")
 	version("1.52.0", sha256="ef5ffdd7217da0bdf08cf058ccb22fd1108e30571b45115dcd76cfeaf4e66848")
 
 	depends_on("r@2.9:", type=("build", "run"))

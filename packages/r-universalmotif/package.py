@@ -16,6 +16,7 @@ class RUniversalmotif(RPackage):
 	bioc = "universalmotif" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/universalmotif_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/universalmotif/universalmotif_1.20.0.tar.gz"]
 
+    version("1.26.2", tag="RELEASE_3_21")
 	version("1.20.0", sha256="0afa0eea7a6bba5fb3ab958b7f5677c3c85e560783022c39d938caebe9fdc773")
 
 	depends_on("r@3.5:", type=("build", "run"))

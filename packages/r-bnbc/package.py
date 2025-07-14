@@ -16,6 +16,7 @@ class RBnbc(RPackage):
 	bioc = "bnbc" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bnbc_1.24.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bnbc/bnbc_1.24.2.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.2", sha256="fb19ad8721cb36a57d5bf7949c12d309a5ebc314ada4b95fd2abf833f650683b")
 
 	depends_on("r@3.5:", type=("build", "run"))

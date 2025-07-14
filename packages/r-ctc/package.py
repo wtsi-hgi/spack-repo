@@ -14,6 +14,7 @@ class RCtc(RPackage):
 
 	bioc = "ctc"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ctc_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ctc/ctc_1.76.0.tar.gz"]
+    version("1.82.0", tag="RELEASE_3_21")
 	version("1.76.0", sha256="a3c661080f046b936bbced906f1046d4760892f1c0fa45376cdf420c721e4881")
 	version("1.74.0", commit="00be85633de7d71ca3dc6fe6c634cf0bde6188fd")
 	version("1.72.0", commit="0a4b464e1768e6407c1c2ce64ec4ae5a4577be65")

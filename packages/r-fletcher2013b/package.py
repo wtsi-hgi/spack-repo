@@ -16,6 +16,7 @@ class RFletcher2013b(RPackage):
 	bioc = "Fletcher2013b" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Fletcher2013b_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Fletcher2013b/Fletcher2013b_1.38.0.tar.gz"]
 
+    version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="f65a489acc386628258ac16f1b42260c0c636a98fe0894df619cce159de2e7fe")
 
 	depends_on("r@2.15:", type=("build", "run"))
