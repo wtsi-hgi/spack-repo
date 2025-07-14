@@ -16,6 +16,7 @@ class RGdnainrnaseqdata(RPackage):
 	bioc = "gDNAinRNAseqData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/gDNAinRNAseqData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/gDNAinRNAseqData/gDNAinRNAseqData_1.2.0.tar.gz"]
 
+    version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="887fb03e45da8cbb10d1924c34e8cccc4e2815ae0a815f58bfb386c56123618f")
 
 	depends_on("r@4.3:", type=("build", "run"))

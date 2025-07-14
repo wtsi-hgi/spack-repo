@@ -15,6 +15,7 @@ class RFlagme(RPackage):
 	bioc = "flagme" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flagme_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flagme/flagme_1.58.0.tar.gz"]
 
+    version("1.64.0", tag="RELEASE_3_21")
 	version("1.58.0", sha256="4818fe34e1b9edc1cacffbccb34ba3cff7c3f633e3a852cc9504ec7c136d38be")
 
 	depends_on("r-gcspikelite", type=("build", "run"))

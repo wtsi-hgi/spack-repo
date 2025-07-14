@@ -16,6 +16,7 @@ class RShinyepico(RPackage):
 	bioc = "shinyepico" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/shinyepico_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/shinyepico/shinyepico_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="09136d49bc8d92ccfd348de50150b663963548e2c0918471847880f9b6618e9a")
 
 	depends_on("r@4.3:", type=("build", "run"))

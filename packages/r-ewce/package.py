@@ -16,6 +16,7 @@ class REwce(RPackage):
 	bioc = "EWCE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EWCE_1.10.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EWCE/EWCE_1.10.2.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.2", sha256="c75a4f86ac89a8861748ece3fa46c412d436518ad961cfa84cbc45545cc2d53e")
 
 	depends_on("r@4.2:", type=("build", "run"))

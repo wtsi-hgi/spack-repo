@@ -16,6 +16,7 @@ class RAbseqr(RPackage):
 	bioc = "abseqR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/abseqR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/abseqR/abseqR_1.20.0.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="8865dd4178a451436acd87c3cc76ae5d0b392195b379b9adf00bd407952d0669")
 
 	depends_on("r@3.5:", type=("build", "run"))

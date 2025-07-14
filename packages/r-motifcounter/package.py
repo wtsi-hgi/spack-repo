@@ -15,6 +15,7 @@ class RMotifcounter(RPackage):
 	bioc = "motifcounter" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/motifcounter_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/motifcounter/motifcounter_1.26.0.tar.gz"]
 
+    version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="c75ffe58a934b30f194fe93dc498751d0c3776af4958e9a152a2423dde40e259")
 
 	depends_on("r@3:", type=("build", "run"))

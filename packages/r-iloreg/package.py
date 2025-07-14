@@ -16,6 +16,7 @@ class RIloreg(RPackage):
 	bioc = "ILoReg" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ILoReg_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ILoReg/ILoReg_1.12.1.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.1", sha256="ed5ac78d1139c9aa3d97795b257b0f517804678266eca928e80f463779f6d878")
 
 	depends_on("r@4:", type=("build", "run"))

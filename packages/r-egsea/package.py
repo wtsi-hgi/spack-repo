@@ -15,6 +15,7 @@ class REgsea(RPackage):
 	bioc = "EGSEA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EGSEA_1.30.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EGSEA/EGSEA_1.30.1.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.1", sha256="4bcdcd55c151e995bbfbcc4ec9bdd1cbcbe4c8111edeeb8fa468e4e57a2872f3")
 
 	depends_on("r@4.3:", type=("build", "run"))

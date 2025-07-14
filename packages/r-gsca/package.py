@@ -15,6 +15,7 @@ class RGsca(RPackage):
 	bioc = "GSCA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSCA_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSCA/GSCA_2.32.0.tar.gz"]
 
+    version("2.38.0", tag="RELEASE_3_21")
 	version("2.32.0", sha256="4bf850c901a8a519cf45143e7d1236d0359310cf5eaad460cfd829f933c91f19")
 
 	depends_on("r-shiny", type=("build", "run"))

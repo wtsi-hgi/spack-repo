@@ -23,6 +23,7 @@ class RQvalue(RPackage):
 
 	bioc = "qvalue"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qvalue_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qvalue/qvalue_2.34.0.tar.gz"]
+    version("2.40.0", tag="RELEASE_3_21")
 	version("2.8.0", commit="c7bf3315619d42d800f57a36670c25a7495ded72")
 	version("2.34.0", sha256="d16fd855856b479bd8a0812bbfc2e2d918929c28fe83411a41ca059d2d9c6583")
 	version("2.32.0", commit="a6272dc68f9d91de63e04fae28476e4ec016ee89")

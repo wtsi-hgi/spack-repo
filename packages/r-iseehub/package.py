@@ -16,6 +16,7 @@ class RIseehub(RPackage):
 	bioc = "iSEEhub" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEEhub_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEEhub/iSEEhub_1.4.0.tar.gz"]
 
+    version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="fcdfb6869261ce9571414904286a4b46f4a0be6df3770c75d7a22dd9d84e0899")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))

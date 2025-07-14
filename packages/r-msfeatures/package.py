@@ -16,6 +16,7 @@ class RMsfeatures(RPackage):
 	bioc = "MsFeatures" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsFeatures_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsFeatures/MsFeatures_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="9a0d9468afd146512b16980ed7d1256d7b03888fe804b5b8b1530b69e261fa6e")
 
 	depends_on("r@4.1:", type=("build", "run"))

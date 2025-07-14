@@ -16,6 +16,7 @@ class RConvert(RPackage):
 	bioc = "convert" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/convert_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/convert/convert_1.78.0.tar.gz"]
 
+    version("1.84.0", tag="RELEASE_3_21")
 	version("1.78.0", sha256="923562f0f9d9cf0dfb9c4d7348b1601fc33e68d8d326642241545d1bf958a4eb")
 
 	depends_on("r@2.6:", type=("build", "run"))

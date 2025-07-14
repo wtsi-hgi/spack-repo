@@ -13,6 +13,7 @@ class RGcrma(RPackage):
 
 	bioc = "gcrma"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gcrma_2.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gcrma/gcrma_2.74.0.tar.gz"]
+    version("2.80.0", tag="RELEASE_3_21")
 	version("2.74.0", sha256="cf1b786c4c10f87eeed374a411e9db0fa45d2f175114b2051a75958b3852361e")
 	version("2.72.0", commit="5cfccc7c684283dc3a82830bad75aad254efcb01")
 	version("2.70.0", commit="095f38914525d8812524a3cb38db8075382f8121")

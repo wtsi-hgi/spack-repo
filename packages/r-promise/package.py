@@ -15,6 +15,7 @@ class RPromise(RPackage):
 	bioc = "PROMISE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PROMISE_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PROMISE/PROMISE_1.54.0.tar.gz"]
 
+    version("1.60.0", tag="RELEASE_3_21")
 	version("1.54.0", sha256="97a4c9f4ee8b5f5aef2900d890cbeebdab9f7ee0326840935787cc0ad0ac4c43")
 
 	depends_on("r@3.1:", type=("build", "run"))

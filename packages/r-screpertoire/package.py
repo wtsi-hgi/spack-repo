@@ -15,6 +15,7 @@ class RScrepertoire(RPackage):
 	bioc = "scRepertoire" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scRepertoire_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scRepertoire/scRepertoire_1.12.0.tar.gz"]
 
+    version("2.4.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="818aec659cc0f055dfe1cb454667bc6223fc82e6851be4238b02d15f7643faf1")
 
 	depends_on("r-ggplot2", type=("build", "run"))

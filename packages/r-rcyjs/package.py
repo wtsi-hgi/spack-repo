@@ -15,6 +15,7 @@ class RRcyjs(RPackage):
 	bioc = "RCyjs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCyjs_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RCyjs/RCyjs_2.24.0.tar.gz"]
 
+    version("2.30.0", tag="RELEASE_3_21")
 	version("2.24.0", sha256="f1ac9cf724b4fd72a1dacc83164463c7df4c84e58654594616fa55f09f0dbb34")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RMygene(RPackage):
 	bioc = "mygene" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mygene_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mygene/mygene_1.38.0.tar.gz"]
 
+    version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="556e0ef8b75df9dff6ff496280a5dd50a5b5ceb7dab5f247f71e9d7c158312a8")
 
 	depends_on("r@3.2.1:", type=("build", "run"))

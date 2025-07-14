@@ -16,6 +16,7 @@ class RRecoup(RPackage):
 	bioc = "recoup" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/recoup_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/recoup/recoup_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="7c26314ff1d0f12edab6f8773e6c0f30c98afd46bbd7d080ae3c74b517be53b0")
 
 	depends_on("r@4:", type=("build", "run"))

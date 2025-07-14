@@ -19,6 +19,7 @@ class RRgoslin(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rgoslin/rgoslin_1.6.0.tar.gz",
     ]
 
+    version("1.12.0", tag="RELEASE_3_21")
     version("1.6.0", sha256="dcec98ede96b91f27b1c583df51e565c35b086cab0cc381c04b7cafc45c1311b")
 
     depends_on("r-rcpp", type=("build", "run"))

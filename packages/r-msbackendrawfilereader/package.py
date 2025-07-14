@@ -16,6 +16,7 @@ class RMsbackendrawfilereader(RPackage):
 	bioc = "MsBackendRawFileReader" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsBackendRawFileReader_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsBackendRawFileReader/MsBackendRawFileReader_1.8.1.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.1", sha256="6034696b2b131b8b2b55f8dca44a488adefd7daf41a6b00a452a95361820074e")
 
 	depends_on("r@4.1:", type=("build", "run"))

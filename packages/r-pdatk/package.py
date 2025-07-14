@@ -15,6 +15,7 @@ class RPdatk(RPackage):
 	bioc = "PDATK" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PDATK_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PDATK/PDATK_1.10.0.tar.gz"]
 
+    version("1.16.1", tag="RELEASE_3_21")
 	version("1.10.0", sha256="aa2cbd3d470d65cbfa6061ef9b8a2e76f3da2c002230ff40b97f5ecee580aa4b")
 
 	depends_on("r@4.1:", type=("build", "run"))

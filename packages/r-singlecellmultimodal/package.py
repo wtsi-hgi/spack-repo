@@ -15,6 +15,7 @@ class RSinglecellmultimodal(RPackage):
 	bioc = "SingleCellMultiModal" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SingleCellMultiModal_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SingleCellMultiModal/SingleCellMultiModal_1.14.0.tar.gz"]
 
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="2580aaa5be63c3338159620ce29380611ab5e834f97b17713ece9e8dad708e4f")
 
 	depends_on("r@4.2:", type=("build", "run"))

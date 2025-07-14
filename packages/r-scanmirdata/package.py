@@ -15,6 +15,7 @@ class RScanmirdata(RPackage):
 	bioc = "scanMiRData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scanMiRData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scanMiRData/scanMiRData_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="a7a4f7942b6c1ddc668979a9d2173459b9d71c201642289bd2543c9c1125db84")
 
 	depends_on("r@4:", type=("build", "run"))

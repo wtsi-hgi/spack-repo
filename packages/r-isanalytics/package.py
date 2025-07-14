@@ -16,6 +16,7 @@ class RIsanalytics(RPackage):
 	bioc = "ISAnalytics" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ISAnalytics_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ISAnalytics/ISAnalytics_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="6ddea338fbbe7152cb0bacb91f895db6f6fcb854592cc2bf875afd59471b1579")
 
 	depends_on("r@4.3:", type=("build", "run"))

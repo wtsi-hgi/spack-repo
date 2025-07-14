@@ -16,6 +16,7 @@ class RSelex(RPackage):
 	bioc = "SELEX" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SELEX_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SELEX/SELEX_1.34.0.tar.gz"]
 
+    version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="d2f6545f17a5e9c3ebee4cd1623b27a5ffa4425ba5f79607bb9dfba007808a54")
 
 	depends_on("r-rjava@0.5.0:", type=("build", "run"))

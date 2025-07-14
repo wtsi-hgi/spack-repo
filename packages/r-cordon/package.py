@@ -16,6 +16,7 @@ class RCordon(RPackage):
 	bioc = "coRdon" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/coRdon_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/coRdon/coRdon_1.20.0.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="0b3ccdf6e515ec452ef4284d96d5beb7c6f96cd6f3f23d3a3653b9e57a4f03a3")
 
 	depends_on("r@3.5:", type=("build", "run"))

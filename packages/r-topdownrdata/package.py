@@ -16,6 +16,7 @@ class RTopdownrdata(RPackage):
 	bioc = "topdownrdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/topdownrdata_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/topdownrdata/topdownrdata_1.24.0.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="22a5321300a668ac67bb395ba6df963e078e82fe0b981f8e2a56f983306f9d07")
 
 	depends_on("r-topdownr", type=("build", "run"))

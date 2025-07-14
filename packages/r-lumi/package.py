@@ -19,6 +19,7 @@ class RLumi(RPackage):
 
 	bioc = "lumi"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lumi_2.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lumi/lumi_2.54.0.tar.gz"]
+    version("2.60.0", tag="RELEASE_3_21")
 	version("2.54.0", sha256="856bdac12a34564ed143fad28d63838cc2940e04dd352607384c074ed0539347")
 	version("2.52.0", commit="c6aa992a622dbaba4dae1b54c61835a37cce8e95")
 	version("2.50.0", commit="8711b77a1b5b0a58770d25d3d079ad02208704f5")

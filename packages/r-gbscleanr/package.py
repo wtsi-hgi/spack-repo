@@ -16,6 +16,7 @@ class RGbscleanr(RPackage):
 	bioc = "GBScleanR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GBScleanR_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GBScleanR/GBScleanR_1.6.0.tar.gz"]
 
+    version("2.2.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="c74244d165f7bda53f0adc0ae5a128b22d8f5574eb900e0e0b0180861ce163a7")
 
 	depends_on("r-seqarray", type=("build", "run"))

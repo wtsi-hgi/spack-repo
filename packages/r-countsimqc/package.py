@@ -16,6 +16,7 @@ class RCountsimqc(RPackage):
 	bioc = "countsimQC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/countsimQC_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/countsimQC/countsimQC_1.20.0.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="6bf0eaa22a5a28726a970bf93914a0e3a0add01831edbd81cdbebdf615e49a0a")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RBirewire(RPackage):
 	bioc = "BiRewire" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiRewire_3.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiRewire/BiRewire_3.34.0.tar.gz"]
 
+    version("3.40.0", tag="RELEASE_3_21")
 	version("3.34.0", sha256="4d7526c04f8ad982f2b122fa91fa069f3cc5800eb33e6bc35ff7a78546abb7c0")
 
 	depends_on("r-igraph", type=("build", "run"))

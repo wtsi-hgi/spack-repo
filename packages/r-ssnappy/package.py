@@ -16,6 +16,7 @@ class RSsnappy(RPackage):
 	bioc = "sSNAPPY" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sSNAPPY_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sSNAPPY/sSNAPPY_1.6.1.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.1", md5="15f7a550e110c069710c3f6572a06e83")
 
 	depends_on("r@4.3:", type=("build", "run"))

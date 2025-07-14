@@ -15,6 +15,7 @@ class RAnnotationhubdata(RPackage):
 	bioc = "AnnotationHubData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnnotationHubData_1.32.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnnotationHubData/AnnotationHubData_1.32.1.tar.gz"]
 
+    version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.1", sha256="b59ea2632ce440ef7a3ae7ac1c219b5f10a897b0d2397973147253319cb4a227")
 
 	depends_on("r@3.2.2:", type=("build", "run"))

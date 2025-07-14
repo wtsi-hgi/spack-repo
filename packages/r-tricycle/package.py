@@ -16,6 +16,7 @@ class RTricycle(RPackage):
 	bioc = "tricycle" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tricycle_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tricycle/tricycle_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="6de6b8a4a65e034715fd2c49f201cea577c76e7aca8aeb8e83e9df80cc9d5cb5")
 
 	depends_on("r@4:", type=("build", "run"))

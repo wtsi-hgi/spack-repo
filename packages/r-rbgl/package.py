@@ -14,6 +14,7 @@ class RRbgl(RPackage):
 
 	bioc = "RBGL"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RBGL_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RBGL/RBGL_1.78.0.tar.gz"]
+    version("1.84.0", tag="RELEASE_3_21")
 	version("1.78.0", sha256="241188ff70c1a1eb447ef3bd1f9d9d57a84537c2cd1d5f782923366c68a0b043")
 	version("1.76.0", commit="18b7cc5f002435aa83e8b693e7bf269fc0b096a5")
 	version("1.74.0", commit="e698db897b719992a8c0747138735c0e7d9dfb21")

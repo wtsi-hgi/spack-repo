@@ -15,6 +15,7 @@ class RDrimseq(RPackage):
 	bioc = "DRIMSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DRIMSeq_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DRIMSeq/DRIMSeq_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="261a7955082a57f44371e07721c53f48edaaee5d3d2050e9b38e7bec1821c0d9")
 
 	depends_on("r@3.4:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RLeebamviews(RPackage):
 	bioc = "leeBamViews" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/leeBamViews_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/leeBamViews/leeBamViews_1.38.0.tar.gz"]
 
+    version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="8b9c36f3957885160730561d18a3fe4a3dd0688243842fdc363f95c5a82ef848")
 
 	depends_on("r@2.15:", type=("build", "run"))

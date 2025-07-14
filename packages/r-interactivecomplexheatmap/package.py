@@ -16,6 +16,7 @@ class RInteractivecomplexheatmap(RPackage):
 	bioc = "InteractiveComplexHeatmap" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/InteractiveComplexHeatmap_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/InteractiveComplexHeatmap/InteractiveComplexHeatmap_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="774e59f097827c840e4b3455928b2e2cd7f08289d4f1ee51bb9d48fab5c11e92")
 
 	depends_on("r@4:", type=("build", "run"))

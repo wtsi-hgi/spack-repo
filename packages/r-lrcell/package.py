@@ -15,6 +15,7 @@ class RLrcell(RPackage):
 	bioc = "LRcell" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LRcell_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LRcell/LRcell_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="d7997324e6012eed9c39193d8adea5992a554fd59e2af304b806c39035dfe5a6")
 
 	depends_on("r@4.1:", type=("build", "run"))

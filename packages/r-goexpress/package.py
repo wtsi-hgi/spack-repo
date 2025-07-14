@@ -16,6 +16,7 @@ class RGoexpress(RPackage):
 	bioc = "GOexpress" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOexpress_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOexpress/GOexpress_1.36.0.tar.gz"]
 
+    version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="8bfbce80732c2f5177067391bb8191d45619fdcc6fd7c8d49cd127862e85ec9f")
 
 	depends_on("r@3.4:", type=("build", "run"))

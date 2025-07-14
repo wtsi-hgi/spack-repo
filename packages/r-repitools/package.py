@@ -15,6 +15,7 @@ class RRepitools(RPackage):
 	bioc = "Repitools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Repitools_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Repitools/Repitools_1.48.0.tar.gz"]
 
+    version("1.54.0", tag="RELEASE_3_21")
 	version("1.48.0", sha256="c0af0fc2131a0e27448ec71ef75ba6716c94e3d74dca501dacd09c9adf2d725e")
 
 	depends_on("r@3.5:", type=("build", "run"))

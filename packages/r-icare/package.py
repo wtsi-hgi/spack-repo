@@ -15,6 +15,7 @@ class RIcare(RPackage):
 	bioc = "iCARE" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iCARE_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iCARE/iCARE_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="47e80ea396d8632601bb79caba8df0397df6564d84c6a51a43d1eb3fb91e0662")
 
 	depends_on("r@3.3:", type=("build", "run"))

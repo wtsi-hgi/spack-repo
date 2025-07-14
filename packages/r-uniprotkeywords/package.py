@@ -16,6 +16,7 @@ class RUniprotkeywords(RPackage):
 	bioc = "UniProtKeywords" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/UniProtKeywords_0.99.7.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/UniProtKeywords/UniProtKeywords_0.99.7.tar.gz"]
 
+    version("0.99.7", tag="RELEASE_3_21")
 	version("0.99.7", sha256="f84bd81163f7ed48af39199f213a2a0cc7093f2af312728f578cad2a26152d82")
 
 	depends_on("r@4:", type=("build", "run"))

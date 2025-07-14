@@ -15,6 +15,7 @@ class RCompass(RPackage):
 	bioc = "COMPASS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/COMPASS_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/COMPASS/COMPASS_1.40.0.tar.gz"]
 
+    version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="81be032b5a0ebb3f975d538fbb80c6b272fc2cd4cdada96b22ff6472b534eea8")
 
 	depends_on("r@3.0.3:", type=("build", "run"))

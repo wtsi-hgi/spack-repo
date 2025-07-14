@@ -16,6 +16,7 @@ class RMsquality(RPackage):
 	bioc = "MsQuality" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsQuality_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsQuality/MsQuality_1.2.1.tar.gz"]
 
+    version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.1", sha256="037724c28504409a769d8bdd766106cc4f243cd3d1f6cf6ca2000b7e00b20594")
 	version("1.2.0", md5="1d8e2101f472e8fc93bfa275db511982")
 

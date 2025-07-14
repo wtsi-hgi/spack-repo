@@ -15,6 +15,7 @@ class RTranslatome(RPackage):
 	bioc = "tRanslatome" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tRanslatome_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tRanslatome/tRanslatome_1.40.0.tar.gz"]
 
+    version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="60a6ec88eb787450bf5aafe22ec6d58308eabc9d979aabcd954c5ca75e55cd21")
 
 	depends_on("r@2.15:", type=("build", "run"))

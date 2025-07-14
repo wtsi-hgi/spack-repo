@@ -15,6 +15,7 @@ class RCindex(RPackage):
 	bioc = "CINdex" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CINdex_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CINdex/CINdex_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="778b5d2346f9c4b140abbe331322cc4cccd9c9c6406ae3950bf29b117c85e295")
 
 	depends_on("r@3.3:", type=("build", "run"))

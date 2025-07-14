@@ -16,6 +16,7 @@ class RSimpleseg(RPackage):
 	bioc = "simpleSeg" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/simpleSeg_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/simpleSeg/simpleSeg_1.4.1.tar.gz"]
 
+    version("1.10.1", tag="RELEASE_3_21")
 	version("1.4.1", sha256="8c1c1a13b62eee2b6f68717e9319dfdf1e92753c441745995ce29db29f3939f4")
 
 	depends_on("r@3.5:", type=("build", "run"))

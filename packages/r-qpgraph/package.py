@@ -16,6 +16,7 @@ class RQpgraph(RPackage):
 	bioc = "qpgraph" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qpgraph_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qpgraph/qpgraph_2.36.0.tar.gz"]
 
+    version("2.42.0", tag="RELEASE_3_21")
 	version("2.36.0", sha256="a4c980839915fa614303a856ea510ffeec0c160d978c0fc78b06deb7740d730f")
 
 	depends_on("r@3.5:", type=("build", "run"))

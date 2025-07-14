@@ -15,6 +15,7 @@ class RFrenchfish(RPackage):
 	bioc = "frenchFISH" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/frenchFISH_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/frenchFISH/frenchFISH_1.14.0.tar.gz"]
 
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="09cc83d7bc246a8b8da57c724237793670032c9223a1248765ed3b121a07e603")
 
 	depends_on("r-mcmcpack", type=("build", "run"))

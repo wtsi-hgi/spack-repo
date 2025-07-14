@@ -23,6 +23,7 @@ class RMissmethyl(RPackage):
 
 	bioc = "missMethyl"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/missMethyl_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/missMethyl/missMethyl_1.36.0.tar.gz"]
+    version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="a6206f891973f06a356b930139e1436e5ef279fd724cf54b3d1af4754bcd64db")
 	version("1.34.0", commit="57db57c48ab79c36eb89726afc2833a981cbaf3d")
 	version("1.32.0", commit="969b892e400b9821398099bcea46f2d0431daedf")

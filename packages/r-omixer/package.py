@@ -15,6 +15,7 @@ class ROmixer(RPackage):
 	bioc = "Omixer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Omixer_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Omixer/Omixer_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="1a50dbf98c7f11fe1360f0f5c447b812e7fa325107f58ecde58c764cfac6660a")
 
 	depends_on("r@4:", type=("build", "run"))

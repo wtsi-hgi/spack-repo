@@ -15,5 +15,6 @@ class RSizepower(RPackage):
 	bioc = "sizepower" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sizepower_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sizepower/sizepower_1.72.0.tar.gz"]
 
+    version("1.78.0", tag="RELEASE_3_21")
 	version("1.72.0", sha256="fd3581187bce67e1318864b5b0db3e2cc2030fb6cad66246d4b93f325997840f")
 

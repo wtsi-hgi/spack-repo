@@ -15,6 +15,7 @@ class RIaseq(RPackage):
 	bioc = "iASeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iASeq_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iASeq/iASeq_1.46.0.tar.gz"]
 
+    version("1.52.0", tag="RELEASE_3_21")
 	version("1.46.0", sha256="35f0563d9c1573290e1e726ff16099c580239e11c13577a39632e59634c29478")
 
 	depends_on("r@2.14.1:", type=("build", "run"))

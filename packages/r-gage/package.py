@@ -16,6 +16,7 @@ class RGage(RPackage):
 	bioc = "gage" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gage_2.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gage/gage_2.52.0.tar.gz"]
 
+    version("2.58.0", tag="RELEASE_3_21")
 	version("2.52.0", sha256="c847d26329f0956046a961b6df91a8b8a469adad85f0238a21953536fc86a52e")
 
 	depends_on("r@3.5:", type=("build", "run"))

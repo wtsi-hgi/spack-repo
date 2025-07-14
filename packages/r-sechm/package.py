@@ -15,6 +15,7 @@ class RSechm(RPackage):
 	bioc = "sechm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sechm_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sechm/sechm_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="73cddc4f2399d0021017647608873b82620419c289ef6a833f8deff737360ba7")
 
 	depends_on("r@4:", type=("build", "run"))

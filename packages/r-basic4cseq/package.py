@@ -15,6 +15,7 @@ class RBasic4cseq(RPackage):
 	bioc = "Basic4Cseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Basic4Cseq_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Basic4Cseq/Basic4Cseq_1.38.0.tar.gz"]
 
+    version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="a463cea67c318d6ba1ff19263e57811096949f85088b4a063f871784decc99ee")
 
 	depends_on("r@3.4:", type=("build", "run"))

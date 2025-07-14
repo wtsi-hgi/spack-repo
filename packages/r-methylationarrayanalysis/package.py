@@ -15,6 +15,7 @@ class RMethylationarrayanalysis(RPackage):
 	bioc = "methylationArrayAnalysis" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/methylationArrayAnalysis_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/methylationArrayAnalysis/methylationArrayAnalysis_1.26.0.tar.gz"]
 
+    version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="6a9f9abdc3de8572001de87bd94b9bd690e23033419776708d13244d81b13b30")
 
 	depends_on("r@3.3:", type=("build", "run"))

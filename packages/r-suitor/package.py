@@ -15,6 +15,7 @@ class RSuitor(RPackage):
 	bioc = "SUITOR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SUITOR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SUITOR/SUITOR_1.4.0.tar.gz"]
 
+    version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="dcf836310ea9e773861574bf10dd01f88dc648c9679d59c6d1dcf13f9d46102b")
 
 	depends_on("r@4.2:", type=("build", "run"))

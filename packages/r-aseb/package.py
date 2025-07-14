@@ -15,6 +15,7 @@ class RAseb(RPackage):
 	bioc = "ASEB" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASEB_1.46.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASEB/ASEB_1.46.3.tar.gz"]
 
+    version("1.52.0", tag="RELEASE_3_21")
 	version("1.46.3", sha256="797561ff36b036921e82d824b4b3e7f81917229a361620951eb4141947a346b5")
 
 	depends_on("r@2.8:", type=("build", "run"))

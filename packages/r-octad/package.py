@@ -15,6 +15,7 @@ class ROctad(RPackage):
 	bioc = "octad" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/octad_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/octad/octad_1.4.0.tar.gz"]
 
+    version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="7739df34d37584ae3e68a706fb05845da06dfd172925d383b4195e50fe47d505")
 
 	depends_on("r@4.2:", type=("build", "run"))

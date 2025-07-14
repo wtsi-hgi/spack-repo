@@ -16,6 +16,7 @@ class RCmapr(RPackage):
 	bioc = "cmapR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cmapR_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cmapR/cmapR_1.14.0.tar.gz"]
 
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="95a8e4e03f76331b0b09ad170ee98b8250d79eb90e5c5bd3f9c59cb0feabdc0a")
 
 	depends_on("r@4:", type=("build", "run"))

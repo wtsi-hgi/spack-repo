@@ -15,6 +15,7 @@ class ROnassisjavalibs(RPackage):
 	bioc = "OnassisJavaLibs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/OnassisJavaLibs_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/OnassisJavaLibs/OnassisJavaLibs_1.24.0.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="8c78c89cf5399b9f77cce11ce007e5b3d43d32b3bbe3cd2dec81c5d08805cb7a")
 
 	depends_on("r@3.4:", type=("build", "run"))

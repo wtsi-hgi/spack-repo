@@ -16,6 +16,7 @@ class RSwfdr(RPackage):
 	bioc = "swfdr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/swfdr_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/swfdr/swfdr_1.28.0.tar.gz"]
 
+    version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="e3b56e72ab8e081aa5a7c3426e7c6febc5b2d49d47adb6fd48ebcb6836a0ce76")
 
 	depends_on("r@3.4:", type=("build", "run"))

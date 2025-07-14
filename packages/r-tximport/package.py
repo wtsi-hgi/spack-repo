@@ -19,6 +19,7 @@ class RTximport(RPackage):
 
 	bioc = "tximport"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tximport_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tximport/tximport_1.30.0.tar.gz"]
+    version("1.36.1", tag="RELEASE_3_21")
 	version("1.8.0", commit="cc91b8389ca4c16b0f588bdeb63d051a11e8a705")
 	version("1.6.0", commit="0b1ba6c6622e02b954812c88454c28e8efb75e0b")
 	version("1.4.0", commit="bfbd2436eca21acf212b76a658b49cfb5e116d6b")

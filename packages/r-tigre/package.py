@@ -16,6 +16,7 @@ class RTigre(RPackage):
 	bioc = "tigre" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tigre_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tigre/tigre_1.56.0.tar.gz"]
 
+    version("1.62.0", tag="RELEASE_3_21")
 	version("1.56.0", sha256="5d212c693c1c061976ab79dada6b1c3f373e4c63a9cc0b5fb049f88fe775c6f2")
 
 	depends_on("r@2.11:", type=("build", "run"))

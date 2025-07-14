@@ -15,6 +15,7 @@ class RPdAtdschipTiling(RPackage):
 	bioc = "pd.atdschip.tiling" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/pd.atdschip.tiling_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/pd.atdschip.tiling/pd.atdschip.tiling_0.40.0.tar.gz"]
 
+    version("0.46.0", tag="RELEASE_3_21")
 	version("0.40.0", sha256="dc389eaee4017c5facbe34089f26aff0e09af559834fee3623d5d6467efadb0f")
 
 	depends_on("r@3.5:", type=("build", "run"))

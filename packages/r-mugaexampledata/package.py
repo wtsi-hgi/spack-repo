@@ -15,6 +15,7 @@ class RMugaexampledata(RPackage):
 	bioc = "MUGAExampleData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MUGAExampleData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MUGAExampleData/MUGAExampleData_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="388388e93786ebea27da4ac2005026f85379e7c7fea05d6bad3e92c02ec60be1")
 
 	depends_on("r@2.10:", type=("build", "run"))

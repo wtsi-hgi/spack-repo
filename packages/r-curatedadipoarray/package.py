@@ -16,6 +16,7 @@ class RCuratedadipoarray(RPackage):
 	bioc = "curatedAdipoArray" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedAdipoArray_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedAdipoArray/curatedAdipoArray_1.14.0.tar.gz"]
 
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="ec73b28430f5d3c99d0d02d0a36f701934dc26e2057a38b222ef19145159ac19")
 
 	depends_on("r@4:", type=("build", "run"))

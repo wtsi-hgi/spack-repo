@@ -13,6 +13,7 @@ class RRoc(RPackage):
 
 	bioc = "ROC"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ROC_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ROC/ROC_1.78.0.tar.gz"]
+    version("1.84.0", tag="RELEASE_3_21")
 	version("1.78.0", sha256="956c21bde8c5fb194acb9af12e9d8a9a2299c598e15020a654a4b33db561ba8a")
 	version("1.76.0", commit="905ee01be734ed0a5674a4ce2cdc0cdea9d01cb9")
 	version("1.74.0", commit="982ad4d3606b19b8460e8a8af7cfe7c30b83f9b9")

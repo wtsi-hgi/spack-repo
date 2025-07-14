@@ -16,6 +16,7 @@ class RAggregatebiovar(RPackage):
 	bioc = "aggregateBioVar" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/aggregateBioVar_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/aggregateBioVar/aggregateBioVar_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="8a165cd344f00c7b07bf45090679f853fdb351b3d33f30ce9590a6cf2c8404c4")
 
 	depends_on("r@4:", type=("build", "run"))

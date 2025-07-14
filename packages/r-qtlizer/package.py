@@ -15,6 +15,7 @@ class RQtlizer(RPackage):
 	bioc = "Qtlizer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Qtlizer_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Qtlizer/Qtlizer_1.16.0.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="f495e677887845f38c37abbf7e36f8d35f791b33a1300d01eb568817df559b3d")
 
 	depends_on("r@3.6:", type=("build", "run"))

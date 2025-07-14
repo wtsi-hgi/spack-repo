@@ -16,6 +16,7 @@ class RClumsid(RPackage):
 	bioc = "CluMSID" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CluMSID_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CluMSID/CluMSID_1.18.0.tar.gz"]
 
+    version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="fee61fb688e5e4dad9a42d75a81d14e6b1ee0757107c13162aef71be191bc547")
 
 	depends_on("r@3.6:", type=("build", "run"))

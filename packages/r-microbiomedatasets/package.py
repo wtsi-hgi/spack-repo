@@ -15,6 +15,7 @@ class RMicrobiomedatasets(RPackage):
 	bioc = "microbiomeDataSets" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/microbiomeDataSets_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/microbiomeDataSets/microbiomeDataSets_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="c94a286312b40f14dd9aae05a61bc0b3f698e1b783863ae0295e60c7414621c4")
 
 	depends_on("r@4.1:", type=("build", "run"))

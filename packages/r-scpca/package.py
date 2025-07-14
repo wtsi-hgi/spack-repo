@@ -16,6 +16,7 @@ class RScpca(RPackage):
 	bioc = "scPCA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scPCA_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scPCA/scPCA_1.16.0.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="c27df5020915ff86c23b0faa81782b65c5eaff1285b66e17405004e469d37c1b")
 
 	depends_on("r@4:", type=("build", "run"))

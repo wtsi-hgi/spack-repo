@@ -15,6 +15,7 @@ class RClipper(RPackage):
 	bioc = "clipper" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clipper_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clipper/clipper_1.42.0.tar.gz"]
 
+    version("1.48.0", tag="RELEASE_3_21")
 	version("1.42.0", sha256="14a3ee393b5cbb184e8387394a1616eedb68cadb052a22154d869ead81df1016")
 
 	depends_on("r@2.15:", type=("build", "run"))

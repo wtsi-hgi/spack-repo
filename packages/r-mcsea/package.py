@@ -15,6 +15,7 @@ class RMcsea(RPackage):
 	bioc = "mCSEA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mCSEA_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mCSEA/mCSEA_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="6ca20c7e87e8314259ac0326069de7f2c3e37aa4e69c813910e4c28ff6699bc5")
 
 	depends_on("r@3.5:", type=("build", "run"))

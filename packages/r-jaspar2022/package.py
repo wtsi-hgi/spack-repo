@@ -16,6 +16,7 @@ class RJaspar2022(RPackage):
 	bioc = "JASPAR2022" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/JASPAR2022_0.99.7.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/JASPAR2022/JASPAR2022_0.99.7.tar.gz"]
 
+    version("0.99.8", tag="RELEASE_3_21")
 	version("0.99.7", sha256="ea2e2a3337c53160a4cb43cf9e229e50c51b009bd5491d67e34bb3af74575e69", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/JASPAR2022_0.99.7.tar.gz")
 
 	depends_on("r@4.1:", type=("build", "run"))

@@ -16,6 +16,7 @@ class ROlingui(RPackage):
 	bioc = "OLINgui" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OLINgui_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OLINgui/OLINgui_1.76.0.tar.gz"]
 
+    version("1.82.0", tag="RELEASE_3_21")
 	version("1.76.0", sha256="e7985a59139df623f1dcaa338eaa6f94f407ba31d98fd4eb31361ca2dc6b3b1e")
 
 	depends_on("r@2:", type=("build", "run"))

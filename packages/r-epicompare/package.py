@@ -16,6 +16,7 @@ class REpicompare(RPackage):
 	bioc = "EpiCompare" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EpiCompare_1.6.7.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EpiCompare/EpiCompare_1.6.7.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.7", sha256="ecb9cfa242c9a573a186882f6f0c466c372cc5d2c7358034b225d6ed66ec5ded")
 	version("1.6.5", md5="27be81e1f3112ca55bab8460e2f191b7")
 

@@ -16,6 +16,7 @@ class RVectrapolarisdata(RPackage):
 	bioc = "VectraPolarisData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/VectraPolarisData_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/VectraPolarisData/VectraPolarisData_1.6.0.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="1ca3951634ce5cf0b10dd9718adafa66fbbe7eaa5a7ecf8ed7c50ce91f26297f")
 
 	depends_on("r-experimenthub", type=("build", "run"))

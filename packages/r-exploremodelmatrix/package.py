@@ -16,6 +16,7 @@ class RExploremodelmatrix(RPackage):
 	bioc = "ExploreModelMatrix" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExploreModelMatrix_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExploreModelMatrix/ExploreModelMatrix_1.14.0.tar.gz"]
 
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="2393bf9173e461093926df28a315d5b9eb067395bbbde1e3bf4774338160318c")
 
 	depends_on("r-shiny@1.5:", type=("build", "run"))

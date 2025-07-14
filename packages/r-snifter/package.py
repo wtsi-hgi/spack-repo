@@ -16,6 +16,7 @@ class RSnifter(RPackage):
 	bioc = "snifter" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/snifter_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/snifter/snifter_1.12.0.tar.gz"]
 
+    version("1.18.1", tag="RELEASE_3_21")
 	version("1.12.0", sha256="2205ceb73a1cb1980b9d91be6c1dc61a91bc11b04f7e5cf974621d664025d2f8")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RMouse4302barcodevecs(RPackage):
 	bioc = "mouse4302barcodevecs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mouse4302barcodevecs_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mouse4302barcodevecs/mouse4302barcodevecs_1.40.0.tar.gz"]
 
+    version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="264f1e7b8a41debe52049d160a3f24456d2487321981f6f2a447f8ae71a74bd0")
 
 	depends_on("r@2.10:", type=("build", "run"))

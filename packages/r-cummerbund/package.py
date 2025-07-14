@@ -15,6 +15,7 @@ class RCummerbund(RPackage):
 	bioc = "cummeRbund" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cummeRbund_2.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cummeRbund/cummeRbund_2.44.0.tar.gz"]
 
+    version("2.50.0", tag="RELEASE_3_21")
 	version("2.44.0", sha256="ba000f61445b3b4319994a621c04055900af34d17985e90b1a2ab4a7be1cbda8")
 
 	depends_on("r@2.7:", type=("build", "run"))

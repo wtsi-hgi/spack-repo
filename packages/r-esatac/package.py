@@ -16,6 +16,7 @@ class REsatac(RPackage):
 	bioc = "esATAC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/esATAC_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/esATAC/esATAC_1.24.0.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="a1b070ea22314c92de649ea008428fabd74b8f2a0a9a938b4c39e13fe6eb42a4")
 
 	depends_on("r@4:", type=("build", "run"))

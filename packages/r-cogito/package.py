@@ -15,6 +15,7 @@ class RCogito(RPackage):
 	bioc = "Cogito" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Cogito_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Cogito/Cogito_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="ad0509f0a8f2265e2fdbd7564d5b08306b41a17a33402337511b6b068133a7b0")
 
 	depends_on("r@4.1:", type=("build", "run"))

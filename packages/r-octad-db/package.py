@@ -15,6 +15,7 @@ class ROctadDb(RPackage):
 	bioc = "octad.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/octad.db_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/octad.db/octad.db_1.4.0.tar.gz"]
 
+    version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="c98a46efe801cd8b14f97e7a1b07c2a178afdbc502259d68185285c39881b10d")
 
 	depends_on("r@4.2:", type=("build", "run"))

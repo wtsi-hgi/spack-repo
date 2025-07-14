@@ -15,6 +15,7 @@ class RA4base(RPackage):
 	bioc = "a4Base"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/a4Base_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/a4Base/a4Base_1.50.0.tar.gz"]
 
+    version("1.56.0", tag="RELEASE_3_21")
 	version("1.50.0", sha256="2233decf2dd9ff2e8f5808c46cce5e090f3c513b7e40290c529d1dc52f2d3642")
 	version("1.48.0", commit="26d5793de3163091125feeed1de82e5406777b60")
 	version("1.46.0", commit="be70ae723bb6031cdf9540d62dc6113761074e88")

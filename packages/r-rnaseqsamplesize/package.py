@@ -15,6 +15,7 @@ class RRnaseqsamplesize(RPackage):
 	bioc = "RnaSeqSampleSize" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RnaSeqSampleSize_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RnaSeqSampleSize/RnaSeqSampleSize_2.12.0.tar.gz"]
 
+    version("2.18.0", tag="RELEASE_3_21")
 	version("2.12.0", sha256="f87cc4422898866c086e35a5629d70c97bde1d4e82c8823421f00b00b0e607b0")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RSpatzie(RPackage):
 	bioc = "spatzie" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spatzie_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spatzie/spatzie_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="a885695eb6d9fd7be41b8adffb204a8a54e60ecd5224c26d6bf68ba36a663edb")
 
 	depends_on("r@4.3:", type=("build", "run"))

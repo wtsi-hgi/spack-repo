@@ -15,6 +15,7 @@ class REbseq(RPackage):
 	bioc = "EBSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EBSeq_2.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EBSeq/EBSeq_2.0.0.tar.gz"]
 
+    version("2.6.0", tag="RELEASE_3_21")
 	version("2.0.0", sha256="9c5818ed988a1b3e416f3300ad56d4ae778485deb3b51eb6ee31bea91074a91f")
 
 	depends_on("r-blockmodeling", type=("build", "run"))

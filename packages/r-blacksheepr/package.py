@@ -15,6 +15,7 @@ class RBlacksheepr(RPackage):
 	bioc = "blacksheepr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/blacksheepr_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/blacksheepr/blacksheepr_1.16.0.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="39928e4710c758a30b51e4cdee75ab9a93b87bcdeb87793beaad4ea127b74281")
 
 	depends_on("r@3.6:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RAtacseqqc(RPackage):
 	bioc = "ATACseqQC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ATACseqQC_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ATACseqQC/ATACseqQC_1.26.0.tar.gz"]
 
+    version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="428466a20404dd5563eb37ecc527533e74c63cf170c067d52ed05bece1cca3ac")
 
 	depends_on("r@3.5:", type=("build", "run"))

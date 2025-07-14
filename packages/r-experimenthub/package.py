@@ -18,6 +18,7 @@ class RExperimenthub(RPackage):
 
 	bioc = "ExperimentHub"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExperimentHub_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExperimentHub/ExperimentHub_2.10.0.tar.gz"]
+    version("2.16.0", tag="RELEASE_3_21")
 	version("2.8.0", commit="f25c854c51878844098290a05936cb35b235f30e")
 	version("2.6.0", commit="557ba29720bce85902a85445dd0435b7356cdd7f")
 	version("2.4.0", commit="bdce35d3a89e8633cc395f28991e6b5d1eccbe8e")

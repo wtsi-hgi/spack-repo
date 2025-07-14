@@ -16,6 +16,7 @@ class RPeacoqc(RPackage):
 	bioc = "PeacoQC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PeacoQC_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PeacoQC/PeacoQC_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="1c9b1792e532b816d4859bc4769b3e5fdaae3632ed837d7bb9c25f4f53b40884")
 
 	depends_on("r@4:", type=("build", "run"))

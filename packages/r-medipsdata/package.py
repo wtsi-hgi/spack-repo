@@ -15,6 +15,7 @@ class RMedipsdata(RPackage):
 	bioc = "MEDIPSData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MEDIPSData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MEDIPSData/MEDIPSData_1.38.0.tar.gz"]
 
+    version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="9530469f60440da51e02d1f5afef51d7b019c7bc7e5464afb5b9639777793dd3")
 
 	depends_on("r@3.5:", type=("build", "run"))

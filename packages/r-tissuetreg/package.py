@@ -16,6 +16,7 @@ class RTissuetreg(RPackage):
 	bioc = "tissueTreg" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tissueTreg_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tissueTreg/tissueTreg_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="43bbb974ab42a2766ef355769297a80b09526d4b49675c37fc41dd3437ff129e")
 
 	depends_on("r@3.5:", type=("build", "run"))

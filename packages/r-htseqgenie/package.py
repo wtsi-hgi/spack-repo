@@ -15,6 +15,7 @@ class RHtseqgenie(RPackage):
 	bioc = "HTSeqGenie" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HTSeqGenie_4.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HTSeqGenie/HTSeqGenie_4.32.0.tar.gz"]
 
+    version("4.38.0", tag="RELEASE_3_21")
 	version("4.32.0", sha256="fcd9f026d335814cf12c91fba016cab331fa48a0dea504e7efcee4538d9153d8")
 
 	depends_on("r@3.5:", type=("build", "run"))

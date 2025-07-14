@@ -16,5 +16,6 @@ class RGraphalignment(RPackage):
 	bioc = "GraphAlignment" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GraphAlignment_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GraphAlignment/GraphAlignment_1.66.0.tar.gz"]
 
+    version("1.72.0", tag="RELEASE_3_21")
 	version("1.66.0", sha256="1a446d803266504325225dab0657932018e94c954fd2121769abd4baed90513e")
 

@@ -15,6 +15,7 @@ class RHireewas(RPackage):
 	bioc = "HIREewas" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HIREewas_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HIREewas/HIREewas_1.20.0.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="dc0b1d30912f6e3478d49c480362c327558267b942cb1de011d888ef1b8609ef")
 
 	depends_on("r@3.5:", type=("build", "run"))

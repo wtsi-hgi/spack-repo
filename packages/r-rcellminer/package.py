@@ -16,6 +16,7 @@ class RRcellminer(RPackage):
 	bioc = "rcellminer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rcellminer_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rcellminer/rcellminer_2.24.0.tar.gz"]
 
+    version("2.30.1", tag="RELEASE_3_21")
 	version("2.24.0", sha256="5c6e2b6e3c5245b0e35871a4d8a8cbea692e68f159a10e5bad47348596095dc0")
 
 	depends_on("r@3.2:", type=("build", "run"))

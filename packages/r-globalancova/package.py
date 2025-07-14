@@ -15,6 +15,7 @@ class RGlobalancova(RPackage):
 	bioc = "GlobalAncova" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GlobalAncova_4.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GlobalAncova/GlobalAncova_4.20.0.tar.gz"]
 
+    version("4.26.0", tag="RELEASE_3_21")
 	version("4.20.0", sha256="d031048e770b87e999e67039e47d817a70bb438748d71691316e6bf909503548")
 
 	depends_on("r-corpcor", type=("build", "run"))

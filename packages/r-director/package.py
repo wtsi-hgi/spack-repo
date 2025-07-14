@@ -16,6 +16,7 @@ class RDirector(RPackage):
 	bioc = "Director" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Director_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Director/Director_1.28.0.tar.gz"]
 
+    version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="39627e6a4ea438536e0433b3f36eca8d830a1b44b0cdd2b85a524fd90bd06260")
 
 	depends_on("r@4:", type=("build", "run"))

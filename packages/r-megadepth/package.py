@@ -16,6 +16,7 @@ class RMegadepth(RPackage):
 	bioc = "megadepth" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/megadepth_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/megadepth/megadepth_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="83ed546eb617661c69ea8928acfe5f72b9c9085b0fbb12140dda0bb80d262d3d")
 
 	depends_on("r-xfun", type=("build", "run"))

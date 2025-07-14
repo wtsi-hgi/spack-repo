@@ -14,6 +14,7 @@ class RRots(RPackage):
 
 	bioc = "ROTS"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ROTS_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ROTS/ROTS_1.30.0.tar.gz"]
+    version("2.0.0", tag="RELEASE_3_21")
 	version("1.8.0", commit="02e3c6455bb1afe7c4cc59ad6d4d8bae7b01428b")
 	version("1.6.0", commit="3567ac1142ba97770b701ee8e5f9e3e6c781bd56")
 	version("1.4.0", commit="2e656514a4bf5a837ee6e14ce9b28a61dab955e7")

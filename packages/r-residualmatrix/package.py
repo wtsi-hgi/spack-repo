@@ -16,6 +16,7 @@ class RResidualmatrix(RPackage):
 	bioc = "ResidualMatrix" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ResidualMatrix_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ResidualMatrix/ResidualMatrix_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="bbb066105053c04b4d2d5fdbda6b2d2eb708c8e80272354bc1dc3dbf7a38fe1a")
 
 	depends_on("r-matrix", type=("build", "run"))

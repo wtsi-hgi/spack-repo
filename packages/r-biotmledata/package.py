@@ -15,6 +15,7 @@ class RBiotmledata(RPackage):
 	bioc = "biotmleData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/biotmleData_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/biotmleData/biotmleData_1.26.0.tar.gz"]
 
+    version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="fc95a7c370d0e40e28fa63ee7ca09e1175a3223981273002119b4cfd319f961a")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RBiocstyle(RPackage):
 	bioc = "BiocStyle"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocStyle_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocStyle/BiocStyle_2.30.0.tar.gz"]
 
+    version("2.36.0", tag="RELEASE_3_21")
 	version("2.8.2", commit="3210c19ec1e5e0ed8d5a2d31da990aa47b42dbd8")
 	version("2.6.1", commit="5ff52cbb439a45575d0f58c4f7a83195a8b7337b")
 	version("2.4.1", commit="ef10764b68ac23a3a7a8ec3b6a6436187309c138")

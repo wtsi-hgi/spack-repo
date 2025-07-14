@@ -15,6 +15,7 @@ class RSynlet(RPackage):
 	bioc = "synlet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/synlet_2.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/synlet/synlet_2.2.0.tar.gz"]
 
+    version("2.8.0", tag="RELEASE_3_21")
 	version("2.2.0", sha256="2e27d22a1623b18baa0b9d8cd022e5b6e37bc3d02636d3e8d40250df87d00b4e")
 
 	depends_on("r@3.5:", type=("build", "run"))

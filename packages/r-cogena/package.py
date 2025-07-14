@@ -16,6 +16,7 @@ class RCogena(RPackage):
 	bioc = "cogena" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cogena_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cogena/cogena_1.36.0.tar.gz"]
 
+    version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="eec3a1b987c94647dfa5a0feac3928b302ff8ab916703f6acf37cf36307d0b44")
 
 	depends_on("r@3.6:", type=("build", "run"))

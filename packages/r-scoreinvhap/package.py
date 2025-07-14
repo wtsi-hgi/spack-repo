@@ -15,6 +15,7 @@ class RScoreinvhap(RPackage):
 	bioc = "scoreInvHap" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scoreInvHap_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scoreInvHap/scoreInvHap_1.24.0.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="8928178141f3bad318af8d75bb0877a9e38189c24c30fb0304afeace77b02f48")
 
 	depends_on("r@3.6:", type=("build", "run"))

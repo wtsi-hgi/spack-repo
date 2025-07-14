@@ -15,6 +15,7 @@ class RTrackviewer(RPackage):
 	bioc = "trackViewer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/trackViewer_1.38.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/trackViewer/trackViewer_1.38.2.tar.gz"]
 
+    version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.2", sha256="4603c218d99f42083e32fa7ff8ae1cc24fc6f5954e5d6bcde4c4bee9cdb9fdfd")
 	version("1.38.1", md5="c0004e0bdb49b5d051e486f73a79a245")
 

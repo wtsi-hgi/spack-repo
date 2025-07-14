@@ -15,6 +15,7 @@ class RCsar(RPackage):
 	bioc = "CSAR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CSAR_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CSAR/CSAR_1.54.0.tar.gz"]
 
+    version("1.60.0", tag="RELEASE_3_21")
 	version("1.54.0", sha256="16da9a2e86afc9f29ad9a76739aa7dcaf2e51c6d53adc8c8bfe3f416a2b8d5c4")
 
 	depends_on("r@2.15:", type=("build", "run"))

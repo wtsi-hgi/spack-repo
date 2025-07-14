@@ -15,6 +15,7 @@ class RDmcfb(RPackage):
 	bioc = "DMCFB" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DMCFB_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DMCFB/DMCFB_1.16.1.tar.gz"]
 
+    version("1.22.1", tag="RELEASE_3_21")
 	version("1.16.1", sha256="7ca7178b0df7455c2f78818fd7e48d4477e74e4b3be201e971cb2a3096850048")
 
 	depends_on("r@4.3:", type=("build", "run"))

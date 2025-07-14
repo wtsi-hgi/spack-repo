@@ -15,6 +15,7 @@ class RHgu2beta7(RPackage):
 	bioc = "hgu2beta7" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hgu2beta7_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/hgu2beta7/hgu2beta7_1.42.0.tar.gz"]
 
+    version("1.48.0", tag="RELEASE_3_21")
 	version("1.42.0", sha256="d731d63655ec8e2d8ca2af2b2fb4e567791144c3bd3c2578f5c603731a91bcf7", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hgu2beta7_1.42.0.tar.gz")
 
 	depends_on("r@2:", type=("build", "run"))

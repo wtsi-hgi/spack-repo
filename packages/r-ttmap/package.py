@@ -15,6 +15,7 @@ class RTtmap(RPackage):
 	bioc = "TTMap" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TTMap_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TTMap/TTMap_1.24.0.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="9777d42c018c79e4f052a8183b7ffed693215494e36688d16a530bea975052e3")
 
 	depends_on("r-rgl", type=("build", "run"))

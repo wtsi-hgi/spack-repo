@@ -16,6 +16,7 @@ class RSnpediar(RPackage):
 	bioc = "SNPediaR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SNPediaR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SNPediaR/SNPediaR_1.28.0.tar.gz"]
 
+    version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="e14d4a3d4062210d2413212256acd9cf5c37a5b29b81af730e98e0de51c82bde")
 
 	depends_on("r@3:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RNparc(RPackage):
 	bioc = "NPARC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NPARC_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NPARC/NPARC_1.14.0.tar.gz"]
 
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="30f5fb942d09d1f4fa653245c97c49a50acd51c544040c155d113a382bcc9f04")
 
 	depends_on("r@4:", type=("build", "run"))

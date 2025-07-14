@@ -16,6 +16,7 @@ class RScfeatures(RPackage):
 	bioc = "scFeatures" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scFeatures_1.3.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scFeatures/scFeatures_1.3.2.tar.gz"]
 
+    version("1.8.0", tag="RELEASE_3_21")
 	version("1.3.2", sha256="3d9b93b52e965b5f93ac1b9ee9b12fbd88806c8b0ef46560d267a22d927331a4")
 
 	depends_on("r@4.2:", type=("build", "run"))

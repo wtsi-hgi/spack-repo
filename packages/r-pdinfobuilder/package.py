@@ -15,6 +15,7 @@ class RPdinfobuilder(RPackage):
 	bioc = "pdInfoBuilder" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pdInfoBuilder_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pdInfoBuilder/pdInfoBuilder_1.66.0.tar.gz"]
 
+    version("1.72.0", tag="RELEASE_3_21")
 	version("1.66.0", sha256="9a257659795ee6a120d2f3a01aa7ac2458b43f99b962a77c67ad556c9e6995ad")
 
 	depends_on("r@3.2:", type=("build", "run"))

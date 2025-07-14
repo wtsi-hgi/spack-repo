@@ -15,6 +15,7 @@ class RCellscape(RPackage):
 	bioc = "cellscape" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cellscape_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cellscape/cellscape_1.26.0.tar.gz"]
 
+    version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", commit="ee36e5b05c91739b37585d71ae256206abc9e70a")
 
 	depends_on("r@3.3:", type=("build", "run"))

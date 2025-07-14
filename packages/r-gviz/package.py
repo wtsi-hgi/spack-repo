@@ -18,6 +18,7 @@ class RGviz(RPackage):
 
 	bioc = "Gviz"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Gviz_1.46.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Gviz/Gviz_1.46.1.tar.gz"]
+    version("1.52.0", tag="RELEASE_3_21")
 	version("1.46.1", sha256="aeff718054a123e1592d9cc8715e71b48753dd39b857ed76b8e342f14483c82a")
 	version("1.44.0", commit="e70aaa7dd27df8482ee854395475a87ec2121279")
 	version("1.42.0", commit="4eddb688bca3fdeb65fd536d653d7ba7f7976121")

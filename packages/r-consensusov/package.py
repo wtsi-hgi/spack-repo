@@ -16,6 +16,7 @@ class RConsensusov(RPackage):
 	bioc = "consensusOV" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/consensusOV_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/consensusOV/consensusOV_1.24.0.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="83faf25d57fd7418b2b22a43c14c3abd11c67c07b2b9f74ca76abc8862ef5d37")
 
 	depends_on("r@3.6:", type=("build", "run"))

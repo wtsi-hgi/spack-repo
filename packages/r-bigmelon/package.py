@@ -15,6 +15,7 @@ class RBigmelon(RPackage):
 	bioc = "bigmelon" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bigmelon_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bigmelon/bigmelon_1.28.0.tar.gz"]
 
+    version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="1902f23aa5da3a83d98be3ecd820213b34f4c651d18eea9dd143dc34e67100c9")
 
 	depends_on("r@3.3:", type=("build", "run"))

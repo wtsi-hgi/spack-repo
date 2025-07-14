@@ -16,6 +16,7 @@ class RMsd16s(RPackage):
 	bioc = "msd16s" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/msd16s_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/msd16s/msd16s_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="b321b6ae241863d8108ad24b143c8794ace2d78508b9d982c85d78fa3a5beb68")
 
 	depends_on("r@2.10:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RSyntenet(RPackage):
 	bioc = "syntenet" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/syntenet_1.4.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/syntenet/syntenet_1.4.2.tar.gz"]
 
+    version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.2", sha256="3be32fc8253cd2c19feac269413879b9ab698c0571d3cd83b3e17808b2c40d76")
 	version("1.4.0", md5="ab56b637f74d79cfba3dd6aab80b7ac9")
 

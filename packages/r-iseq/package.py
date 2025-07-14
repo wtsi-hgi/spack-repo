@@ -15,6 +15,7 @@ class RIseq(RPackage):
 	bioc = "iSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSeq_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSeq/iSeq_1.54.0.tar.gz"]
 
+    version("1.60.0", tag="RELEASE_3_21")
 	version("1.54.0", sha256="2f0f4845e0e5a25a1cf14c7209b833e85d0541f8f9986978c2946e2f0bed86d5")
 
 	depends_on("r@2.10:", type=("build", "run"))

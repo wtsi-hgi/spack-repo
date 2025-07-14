@@ -15,6 +15,7 @@ class RMotif2site(RPackage):
 	bioc = "Motif2Site" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Motif2Site_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Motif2Site/Motif2Site_1.6.0.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="04c6adcdc516e572a34c2842cb61b3929b1e9b97458cbd39260d047f874bc568")
 
 	depends_on("r@4.1:", type=("build", "run"))

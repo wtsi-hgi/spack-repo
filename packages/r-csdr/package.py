@@ -16,6 +16,7 @@ class RCsdr(RPackage):
 	bioc = "csdR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/csdR_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/csdR/csdR_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="704fc3b7d90557f3dd5c13c72d20f99956a6e4757a9b53a9f0bbdf7aa403e4e6")
 
 	depends_on("r@4.1:", type=("build", "run"))

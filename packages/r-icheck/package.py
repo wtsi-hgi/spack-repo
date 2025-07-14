@@ -15,6 +15,7 @@ class RIcheck(RPackage):
 	bioc = "iCheck" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iCheck_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iCheck/iCheck_1.32.0.tar.gz"]
 
+    version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="d8f3313ea9acf0ff834f3cff568ccaf8f5c224055bbd913025543ecd142f8ef4")
 
 	depends_on("r@3.2:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RPhenopath(RPackage):
 	bioc = "phenopath" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phenopath_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phenopath/phenopath_1.26.0.tar.gz"]
 
+    version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="24e1e4f03ebaf8b946671babd47f872d11f1c8df277780cb957dc7afb5bd9c84")
 
 	depends_on("r-rcpp", type=("build", "run"))

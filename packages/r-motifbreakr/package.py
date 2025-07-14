@@ -15,6 +15,7 @@ class RMotifbreakr(RPackage):
 	bioc = "motifbreakR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/motifbreakR_2.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/motifbreakR/motifbreakR_2.16.0.tar.gz"]
 
+    version("2.22.0", tag="RELEASE_3_21")
 	version("2.16.0", sha256="00065debea32dc360a05bf906b7bc28a957e05e368d7936cfd4b43e8dc84230a")
 
 	depends_on("r@4.3:", type=("build", "run"))

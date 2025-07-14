@@ -18,6 +18,7 @@ class RAbsseq(RPackage):
 	bioc = "ABSSeq"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ABSSeq_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ABSSeq/ABSSeq_1.56.0.tar.gz"]
 
+    version("1.62.0", tag="RELEASE_3_21")
 	version("1.56.0", sha256="d81a470f7eb9f4d056a38ea9bc512eb8cc1685d1cc39f13abf71bfacbc311279")
 	version("1.54.0", commit="5e7de8c2a6532073012660f22243c9f7a5568ef6")
 	version("1.52.0", commit="07038c047775e17d5d29909927d2143efb63e9cb")

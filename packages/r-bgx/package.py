@@ -15,6 +15,7 @@ class RBgx(RPackage):
 	bioc = "bgx" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bgx_1.68.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bgx/bgx_1.68.3.tar.gz"]
 
+    version("1.74.0", tag="RELEASE_3_21")
 	version("1.68.3", sha256="570e86f5a75ab472dda41777d62e5e92b98211f2660934e76dc6f51aa2c070a8")
 
 	depends_on("r@2.0.1:", type=("build", "run"))

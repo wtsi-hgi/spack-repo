@@ -15,6 +15,7 @@ class RTreekor(RPackage):
 	bioc = "treekoR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/treekoR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/treekoR/treekoR_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="c8822818438a3909a3d73677d9c96a2eadf515a4a111377dbd42dd9b91ce2a15")
 
 	depends_on("r@4.1:", type=("build", "run"))

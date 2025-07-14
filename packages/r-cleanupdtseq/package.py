@@ -15,6 +15,7 @@ class RCleanupdtseq(RPackage):
 	bioc = "cleanUpdTSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cleanUpdTSeq_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cleanUpdTSeq/cleanUpdTSeq_1.40.0.tar.gz"]
 
+    version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="495f4286add9ec8022cd0a77ff3cdf682c276d96f9829376a6f18688faff0b7a")
 
 	depends_on("r@3.5:", type=("build", "run"))

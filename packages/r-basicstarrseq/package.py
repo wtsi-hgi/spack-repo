@@ -15,6 +15,7 @@ class RBasicstarrseq(RPackage):
 	bioc = "BasicSTARRseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BasicSTARRseq_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BasicSTARRseq/BasicSTARRseq_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="aa9b5c471652827ce80d830c4b605633e851f7c31a15520705768989c35e86b7")
 
 	depends_on("r-genomicranges", type=("build", "run"))

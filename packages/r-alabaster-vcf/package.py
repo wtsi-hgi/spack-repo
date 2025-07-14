@@ -15,6 +15,7 @@ class RAlabasterVcf(RPackage):
 	bioc = "alabaster.vcf" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.vcf_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.vcf/alabaster.vcf_1.2.0.tar.gz"]
 
+    version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="29326985006669d777daaf9e2134149754a9e99cb6f2f0d0afe32e118265fc77")
 
 	depends_on("r-alabaster-base", type=("build", "run"))

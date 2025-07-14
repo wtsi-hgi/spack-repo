@@ -15,6 +15,7 @@ class ROscope(RPackage):
 	bioc = "Oscope" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Oscope_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Oscope/Oscope_1.32.0.tar.gz"]
 
+    version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="ae6a2354e1828e29883c48fb949d30bb045b5a74fbe3a3002a000bdc6aa222d2")
 
 	depends_on("r-ebseq", type=("build", "run"))

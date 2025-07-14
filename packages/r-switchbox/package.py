@@ -15,6 +15,7 @@ class RSwitchbox(RPackage):
 	bioc = "switchBox" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/switchBox_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/switchBox/switchBox_1.38.0.tar.gz"]
 
+    version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="a576901b33f71ff02647de872a8e57fc1a58c82985742e20862a811a17cb6e37")
 
 	depends_on("r@2.13.1:", type=("build", "run"))

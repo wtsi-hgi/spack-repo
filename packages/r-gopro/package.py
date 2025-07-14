@@ -16,6 +16,7 @@ class RGopro(RPackage):
 	bioc = "GOpro" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOpro_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOpro/GOpro_1.28.0.tar.gz"]
 
+    version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="33ab41e3f553b231298cb287a27503a487a7e31d2ed47e910372961ec9b10fea")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -18,6 +18,7 @@ class RRtracklayer(RPackage):
 
 	bioc = "rtracklayer"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rtracklayer_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rtracklayer/rtracklayer_1.62.0.tar.gz"]
+    version("1.68.0", tag="RELEASE_3_21")
 	version("1.62.0", sha256="c28217936c81248f2576af8327356324ccf7101b04f3358d049f0a839dd8b0cb")
 	version("1.60.0", commit="de35bc03116fc7ad30f0e425b41715c3cb2e783b")
 	version("1.58.0", commit="54a74972c08775fdf1e83e6e22cd0b8fad677fc1")

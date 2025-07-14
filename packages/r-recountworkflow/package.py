@@ -16,6 +16,7 @@ class RRecountworkflow(RPackage):
 	bioc = "recountWorkflow" 
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/recountWorkflow_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/recountWorkflow/recountWorkflow_1.26.0.tar.gz"]
 
+    version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="2a1546ad31685e789e0ad235b8ebc26524291bd112dc071883389b0330932799")
 
 	depends_on("r@3.6:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RKaryoploter(RPackage):
 	bioc = "karyoploteR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/karyoploteR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/karyoploteR/karyoploteR_1.28.0.tar.gz"]
 
+    version("1.34.2", tag="RELEASE_3_21")
 	version("1.28.0", sha256="4118fadaba72b8493da7f38369b347ad416f98597d0302a131206950c4a5294b")
 
 	depends_on("r@3.4:", type=("build", "run"))

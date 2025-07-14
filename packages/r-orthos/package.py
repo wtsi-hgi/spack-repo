@@ -15,6 +15,7 @@ class ROrthos(RPackage):
 	bioc = "orthos" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/orthos_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/orthos/orthos_1.0.1.tar.gz"]
 
+    version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.1", sha256="8b7b30496fe70f7dd55c55a87894b01003cc1628100ed0de5f8b71bdaaa62b6a")
 
 	depends_on("r@4.3:", type=("build", "run"))

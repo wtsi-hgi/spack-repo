@@ -15,6 +15,7 @@ class RHireadsprocessor(RPackage):
 	bioc = "hiReadsProcessor" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hiReadsProcessor_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hiReadsProcessor/hiReadsProcessor_1.38.0.tar.gz"]
 
+    version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="ba8924a92f80f6aefa9f64070d5806428c15bd8430410ffdc94de54130246f36")
 
 	depends_on("r@3.5:", type=("build", "run"))

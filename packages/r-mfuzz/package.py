@@ -16,6 +16,7 @@ class RMfuzz(RPackage):
 	bioc = "Mfuzz" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Mfuzz_2.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Mfuzz/Mfuzz_2.62.0.tar.gz"]
 
+    version("2.68.0", tag="RELEASE_3_21")
 	version("2.62.0", sha256="ee7e7a6134e8c2e945789940588e254f94e97231e22b5395eb348c91a21b546c")
 
 	depends_on("r@2.5:", type=("build", "run"))

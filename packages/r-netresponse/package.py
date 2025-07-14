@@ -16,6 +16,7 @@ class RNetresponse(RPackage):
 	bioc = "netresponse" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/netresponse_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/netresponse/netresponse_1.62.0.tar.gz"]
 
+    version("1.68.0", tag="RELEASE_3_21")
 	version("1.62.0", sha256="e30f8b3c1cd7ab025b2ee23dfd407f1abe85effb247925b5283715a87eeab5e9")
 
 	depends_on("r@2.15.1:", type=("build", "run"))

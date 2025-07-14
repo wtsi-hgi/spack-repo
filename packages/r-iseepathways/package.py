@@ -16,6 +16,7 @@ class RIseepathways(RPackage):
 	bioc = "iSEEpathways" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEEpathways_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEEpathways/iSEEpathways_1.0.0.tar.gz"]
 
+    version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="ee415ded9e44d0ef1eb82419063d80f71d722d1c069fcb010c17f57bc63b712b")
 
 	depends_on("r-isee", type=("build", "run"))

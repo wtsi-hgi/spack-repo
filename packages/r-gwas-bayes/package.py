@@ -15,6 +15,7 @@ class RGwasBayes(RPackage):
 	bioc = "GWAS.BAYES" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GWAS.BAYES_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GWAS.BAYES/GWAS.BAYES_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="4b7b8bd9f541a6dba8ac812683bc160def6b8605d1fca7a86ff5887b2cb97fec")
 
 	depends_on("r@4.2:", type=("build", "run"))

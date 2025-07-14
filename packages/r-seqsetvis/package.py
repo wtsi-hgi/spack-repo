@@ -15,6 +15,7 @@ class RSeqsetvis(RPackage):
 	bioc = "seqsetvis" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqsetvis_1.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqsetvis/seqsetvis_1.22.1.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.1", sha256="b4a2692c890e6419d0a896eebeb5c4c7d90b9cc44f8b4500c7e1ebfaf7457351")
 	version("1.22.0", md5="0119c8a5e2475e3a0d35059b3c35dfd6")
 

@@ -15,6 +15,7 @@ class ROrgMxanthusDb(RPackage):
 	bioc = "org.Mxanthus.db" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Mxanthus.db_1.0.27.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.Mxanthus.db/org.Mxanthus.db_1.0.27.tar.gz"]
 
+    version("1.0.27", tag="RELEASE_3_21")
 	version("1.0.27", sha256="e5f53636b7709b0416811a4eb4686b691c3cc5da8a1a8121e60eb5f065d31ccb")
 
 	depends_on("r@2.7:", type=("build", "run"))

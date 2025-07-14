@@ -15,6 +15,7 @@ class RRexposome(RPackage):
 	bioc = "rexposome" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rexposome_1.24.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rexposome/rexposome_1.24.1.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.1", sha256="44a21ed78978bf201f9152611730bde7fe5529f628afc83a00451fa024837a99")
 
 	depends_on("r@3.5:", type=("build", "run"))

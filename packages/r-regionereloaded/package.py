@@ -16,6 +16,7 @@ class RRegionereloaded(RPackage):
 	bioc = "regioneReloaded" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/regioneReloaded_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/regioneReloaded/regioneReloaded_1.4.0.tar.gz"]
 
+    version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="5403ee99be6a27a97e3def6161f92fda138f14bf30662b56581ad07fd4024c15")
 
 	depends_on("r@4.2:", type=("build", "run"))

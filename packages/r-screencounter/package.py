@@ -19,6 +19,7 @@ class RScreencounter(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/screenCounter/screenCounter_1.2.0.tar.gz",
     ]
 
+    version("1.8.0", tag="RELEASE_3_21")
     version("1.2.0", sha256="a9995014d30f1a8856794a65b2f34a0db6a662e29f11947058359cecce0c68fa")
 
     depends_on("r-s4vectors", type=("build", "run"))

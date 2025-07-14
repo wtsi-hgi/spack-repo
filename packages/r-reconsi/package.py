@@ -15,6 +15,7 @@ class RReconsi(RPackage):
 	bioc = "reconsi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/reconsi_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/reconsi/reconsi_1.14.0.tar.gz"]
 
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="49f9dd0484f66ad706aa32144f200d8207087cea9928e0f8462de245f35a3cea")
 
 	depends_on("r-phyloseq", type=("build", "run"))

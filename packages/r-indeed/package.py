@@ -16,6 +16,7 @@ class RIndeed(RPackage):
 	bioc = "INDEED" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/INDEED_2.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/INDEED/INDEED_2.16.0.tar.gz"]
 
+    version("2.22.0", tag="RELEASE_3_21")
 	version("2.16.0", sha256="b5839cdc60289f2d93a9c3f3947121126101d68f7c3146c2b9726ad88c93680c")
 
 	depends_on("r-glasso@1.8:", type=("build", "run"))

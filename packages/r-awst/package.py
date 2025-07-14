@@ -16,6 +16,7 @@ class RAwst(RPackage):
 	bioc = "awst" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/awst_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/awst/awst_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="72fbf9602ccbd6d45ba99309bb5a6cca239e5c70346a0a3d5f1826b3ad3f3e43")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))

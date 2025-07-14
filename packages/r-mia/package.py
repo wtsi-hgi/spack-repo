@@ -16,6 +16,7 @@ class RMia(RPackage):
 	bioc = "mia" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mia_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mia/mia_1.10.0.tar.gz"]
 
+    version("1.16.1", tag="RELEASE_3_21")
 	version("1.10.0", sha256="b7b3c20dd45e2a376fe90b62a77f01af323f1b676324009795b11fa7bbbb9a10")
 
 	depends_on("r@4:", type=("build", "run"))

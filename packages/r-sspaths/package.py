@@ -15,6 +15,7 @@ class RSspaths(RPackage):
 	bioc = "ssPATHS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ssPATHS_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ssPATHS/ssPATHS_1.16.0.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="845c5fc8b2574efb72b36e4506839bc0a9160cdd9c46e3b2f852219ee4ab502a")
 
 	depends_on("r@3.5:", type=("build", "run"))

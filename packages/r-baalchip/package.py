@@ -15,6 +15,7 @@ class RBaalchip(RPackage):
 	bioc = "BaalChIP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BaalChIP_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BaalChIP/BaalChIP_1.28.0.tar.gz"]
 
+    version("1.34.0", tag="RELEASE_3_21")
 	version("1.28.0", sha256="3b3321a86b09a6b51ee084300b48daef0bcfb82787c4c38f6f98702ac2ad0834")
 
 	depends_on("r@3.3.1:", type=("build", "run"))

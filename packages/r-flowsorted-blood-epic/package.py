@@ -16,6 +16,7 @@ class RFlowsortedBloodEpic(RPackage):
 	bioc = "FlowSorted.Blood.EPIC" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FlowSorted.Blood.EPIC_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FlowSorted.Blood.EPIC/FlowSorted.Blood.EPIC_2.6.0.tar.gz"]
 
+    version("2.12.0", tag="RELEASE_3_21")
 	version("2.6.0", sha256="09d1d9b2c8ec3dbdbce673ef29cdea602f6fbf8e7ade39a705c408e0ef0cdd6d")
 
 	depends_on("r@3.5:", type=("build", "run"))

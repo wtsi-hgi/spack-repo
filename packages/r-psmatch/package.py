@@ -16,6 +16,7 @@ class RPsmatch(RPackage):
 	bioc = "PSMatch" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PSMatch_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PSMatch/PSMatch_1.6.0.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="d2776c4c3fa21073b8f444d8f581fcfadc1ef3832ea74bf948478500e2fa2350")
 
 	depends_on("r-s4vectors", type=("build", "run"))

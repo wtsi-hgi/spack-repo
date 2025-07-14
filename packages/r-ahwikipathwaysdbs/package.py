@@ -16,6 +16,7 @@ class RAhwikipathwaysdbs(RPackage):
 	bioc = "AHWikipathwaysDbs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AHWikipathwaysDbs_0.99.4.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/AHWikipathwaysDbs/AHWikipathwaysDbs_0.99.4.tar.gz"]
 
+    version("0.99.4", tag="RELEASE_3_21")
 	version("0.99.4", sha256="04036684f888d233250b583ee8c5be23e045e781ce019c13fd7c99d175bae36f")
 
 	depends_on("r@4.1:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RRegionalpcs(RPackage):
 	bioc = "regionalpcs" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/regionalpcs_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/regionalpcs/regionalpcs_1.0.0.tar.gz"]
 
+    version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="e16add6355dc7e8f0abf1e64ebf7d630353fbe344029064834c5504ae6e9403d")
 
 	depends_on("r@4.3:", type=("build", "run"))

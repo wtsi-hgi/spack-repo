@@ -16,6 +16,7 @@ class RHilbertvis(RPackage):
 	bioc = "HilbertVis" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HilbertVis_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HilbertVis/HilbertVis_1.60.0.tar.gz"]
 
+    version("1.66.1", tag="RELEASE_3_21")
 	version("1.60.0", sha256="96c7a4dfe42158e45bfb7a1e1a33e2577b23409249402cfa5ae742f2420060d5")
 
 	depends_on("r@2.6:", type=("build", "run"))

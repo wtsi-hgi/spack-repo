@@ -15,6 +15,7 @@ class RMageckflute(RPackage):
 	bioc = "MAGeCKFlute" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MAGeCKFlute_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MAGeCKFlute/MAGeCKFlute_2.6.0.tar.gz"]
 
+    version("2.12.0", tag="RELEASE_3_21")
 	version("2.6.0", sha256="b983ad6742ada71ff4f82a65d9ca00bc1ca2cfe82f633f8e29c914ae5aa75e2e")
 
 	depends_on("r@4.1:", type=("build", "run"))

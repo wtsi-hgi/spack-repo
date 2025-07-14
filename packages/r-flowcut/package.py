@@ -15,6 +15,7 @@ class RFlowcut(RPackage):
 	bioc = "flowCut" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowCut_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowCut/flowCut_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="c05895442138a2df665911c06bb562bc797076aabf6bad402238434f72ccc022")
 
 	depends_on("r@3.4:", type=("build", "run"))

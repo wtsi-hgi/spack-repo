@@ -16,6 +16,7 @@ class RStemhypoxia(RPackage):
 	bioc = "stemHypoxia" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/stemHypoxia_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/stemHypoxia/stemHypoxia_1.38.0.tar.gz"]
 
+    version("1.44.0", tag="RELEASE_3_21")
 	version("1.38.0", sha256="9c2e8be2c815f9862a19a75f0626a1002fe4c9626111122540bba5fa764567aa")
 
 	depends_on("r@2.14.1:", type=("build", "run"))

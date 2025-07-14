@@ -16,6 +16,7 @@ class RCycle(RPackage):
 	bioc = "cycle" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cycle_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cycle/cycle_1.56.0.tar.gz"]
 
+    version("1.62.0", tag="RELEASE_3_21")
 	version("1.56.0", sha256="d68f89b313184c357646456748c7643868e31a5e2e7e2eee23a05ffec45e6040")
 
 	depends_on("r@2.10:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RHarmonizedtcgadata(RPackage):
 	bioc = "HarmonizedTCGAData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HarmonizedTCGAData_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HarmonizedTCGAData/HarmonizedTCGAData_1.24.0.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="6bacdc65ab3eca9de1edb6be38ca263abb1650d3e69be256387b375eff3ccbe9")
 
 	depends_on("r@3.4:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RPaxtoolsr(RPackage):
 	bioc = "paxtoolsr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/paxtoolsr_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/paxtoolsr/paxtoolsr_1.36.0.tar.gz"]
 
+    version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="f050c8aea3cd37c14a8b4d1292bdb7f007f442078a8ef0e5a4286d1387f5331f")
 
 	depends_on("r@3.2:", type=("build", "run"))

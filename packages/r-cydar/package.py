@@ -15,6 +15,7 @@ class RCydar(RPackage):
 	bioc = "cydar" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cydar_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cydar/cydar_1.26.0.tar.gz"]
 
+    version("1.32.1", tag="RELEASE_3_21")
 	version("1.26.0", sha256="da61e1f9a394d64538070bf084fdfceaf4bf43e6ab18389ede54da058f5ee305")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))

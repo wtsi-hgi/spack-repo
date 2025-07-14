@@ -16,6 +16,7 @@ class RBreastcancervdx(RPackage):
 	bioc = "breastCancerVDX" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/breastCancerVDX_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/breastCancerVDX/breastCancerVDX_1.40.0.tar.gz"]
 
+    version("1.46.0", tag="RELEASE_3_21")
 	version("1.40.0", sha256="c03d04aa3e347b6153f0f68cc38218a4f8a93957386ce43b03596b3028fe288b")
 
 	depends_on("r@2.5:", type=("build", "run"))

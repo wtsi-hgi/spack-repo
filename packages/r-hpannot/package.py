@@ -15,6 +15,7 @@ class RHpannot(RPackage):
 	bioc = "hpAnnot" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hpAnnot_1.1.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hpAnnot/hpAnnot_1.1.0.tar.gz"]
 
+    version("1.1.0", tag="RELEASE_3_21")
 	version("1.1.0", sha256="77250c9ffb1adcab948902a800090aa4cd03b87ec82385e0326d1b2c3dafdbe6")
 
 	depends_on("r@3.5:", type=("build", "run"))

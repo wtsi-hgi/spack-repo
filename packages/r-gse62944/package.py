@@ -16,6 +16,7 @@ class RGse62944(RPackage):
 	bioc = "GSE62944" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GSE62944_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GSE62944/GSE62944_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="97f79656ba27c3f3649e0f9ea967deb08e65ced1d8015f2773013af3a4249e0f", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GSE62944_1.30.0.tar.gz")
 
 	depends_on("r-biobase", type=("build", "run"))

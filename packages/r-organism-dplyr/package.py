@@ -15,6 +15,7 @@ class ROrganismDplyr(RPackage):
 	bioc = "Organism.dplyr" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Organism.dplyr_1.30.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Organism.dplyr/Organism.dplyr_1.30.1.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.1", sha256="85e0093b2775950560ec3c0d27b2aea1a1fbd2f6a5423c88b5bfe5fe7074a5e8")
 
 	depends_on("r@3.4:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RMirnapath(RPackage):
 	bioc = "miRNApath" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miRNApath_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miRNApath/miRNApath_1.62.0.tar.gz"]
 
+    version("1.68.0", tag="RELEASE_3_21")
 	version("1.62.0", sha256="a9f84c24b09665616583ea064b2f6d339b40379d856aa6583c66d2b430eab0e6")
 
 	depends_on("r@2.7:", type=("build", "run"))

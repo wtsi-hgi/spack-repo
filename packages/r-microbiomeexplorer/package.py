@@ -15,6 +15,7 @@ class RMicrobiomeexplorer(RPackage):
 	bioc = "microbiomeExplorer" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/microbiomeExplorer_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/microbiomeExplorer/microbiomeExplorer_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="4d67a8092e65ffdba95504ae38e41b586039755c0f2c683bb51c6ee84a26de2f")
 
 	depends_on("r-shiny", type=("build", "run"))

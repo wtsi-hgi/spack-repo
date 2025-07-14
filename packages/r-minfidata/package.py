@@ -15,6 +15,7 @@ class RMinfidata(RPackage):
 	bioc = "minfiData" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/minfiData_0.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/minfiData/minfiData_0.48.0.tar.gz"]
 
+    version("0.54.0", tag="RELEASE_3_21")
 	version("0.48.0", sha256="885fdbb81ab221226fdbf6f807efbb19854cbe46d5fd60f6d177a3f5c7f6908a")
 
 	depends_on("r@3.5:", type=("build", "run"))

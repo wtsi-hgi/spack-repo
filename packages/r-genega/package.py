@@ -16,6 +16,7 @@ class RGenega(RPackage):
 	bioc = "GeneGA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneGA_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneGA/GeneGA_1.52.0.tar.gz"]
 
+    version("1.58.0", tag="RELEASE_3_21")
 	version("1.52.0", sha256="6a46418d2431be590f6901a1226fb65508393df5623a58364738263e8347044d")
 
 	depends_on("r-seqinr", type=("build", "run"))

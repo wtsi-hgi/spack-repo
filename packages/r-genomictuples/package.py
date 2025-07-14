@@ -16,6 +16,7 @@ class RGenomictuples(RPackage):
 	bioc = "GenomicTuples" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicTuples_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicTuples/GenomicTuples_1.36.0.tar.gz"]
 
+    version("1.42.0", tag="RELEASE_3_21")
 	version("1.36.0", sha256="ddc042f31da423bdf352d06ae9dbe712b86cf6f26b73468725fb5cd5519c88af")
 
 	depends_on("r@4:", type=("build", "run"))

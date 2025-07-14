@@ -15,6 +15,7 @@ class RCytofpower(RPackage):
 	bioc = "CyTOFpower" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CyTOFpower_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CyTOFpower/CyTOFpower_1.8.0.tar.gz"]
 
+    version("1.14.0", tag="RELEASE_3_21")
 	version("1.8.0", sha256="31b1b52ff5a0250363971df7a4829f287e41b1d1d42eea5b9849b9558f216157")
 
 	depends_on("r@4.1:", type=("build", "run"))

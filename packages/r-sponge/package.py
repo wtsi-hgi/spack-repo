@@ -14,6 +14,7 @@ class RSponge(RPackage):
 	
 	bioc = "SPONGE" 
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", commit="c6d5f77f8e0fe3a220af7426b65fcb7dc6cea94a")
 
 	depends_on("r@3.6:", type=("build", "run"))

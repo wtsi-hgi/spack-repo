@@ -15,6 +15,7 @@ class RLoomexperiment(RPackage):
 	bioc = "LoomExperiment" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LoomExperiment_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LoomExperiment/LoomExperiment_1.20.0.tar.gz"]
 
+    version("1.26.1", tag="RELEASE_3_21")
 	version("1.20.0", sha256="f3504f85c21760ff83f76c51a5170493add240fd777cd9a4199c165d822b8c57")
 
 	depends_on("r@3.5:", type=("build", "run"))

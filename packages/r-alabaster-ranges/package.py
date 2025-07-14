@@ -15,6 +15,7 @@ class RAlabasterRanges(RPackage):
 	bioc = "alabaster.ranges" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.ranges_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.ranges/alabaster.ranges_1.2.0.tar.gz"]
 
+    version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="6d14edde9d7563eec0846119f922eb4193c5bcccc9439ce82df9fdac34b1c65c")
 
 	depends_on("r-genomicranges", type=("build", "run"))

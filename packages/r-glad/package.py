@@ -19,6 +19,7 @@ class RGlad(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GLAD/GLAD_2.66.0.tar.gz",
     ]
 
+    version("2.72.0", tag="RELEASE_3_21")
     version("2.66.0", sha256="a14c769b423fb99d744d95948f33b7e8ed0dd23d40e25188d2e767668afd9e13")
 
     depends_on("r@2.10:", type=("build", "run"))

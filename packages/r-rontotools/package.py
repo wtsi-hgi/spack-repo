@@ -15,6 +15,7 @@ class RRontotools(RPackage):
 	bioc = "ROntoTools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ROntoTools_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ROntoTools/ROntoTools_2.30.0.tar.gz"]
 
+    version("2.36.0", tag="RELEASE_3_21")
 	version("2.30.0", sha256="b1033239dc62910eb2227b8bd37c86c5fb19a2214c20b8e37079ca970485fbdc")
 
 	depends_on("r-graph", type=("build", "run"))

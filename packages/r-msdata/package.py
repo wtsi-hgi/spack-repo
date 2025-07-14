@@ -15,6 +15,7 @@ class RMsdata(RPackage):
 	bioc = "msdata" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/msdata_0.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/msdata/msdata_0.42.0.tar.gz"]
 
+    version("0.48.0", tag="RELEASE_3_21")
 	version("0.42.0", sha256="f9bb1dc20327d800807abe991ccf9b3b45a39f0b1e4cc039f21bb4f9b1fca1ca")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RMyvariant(RPackage):
 	bioc = "myvariant" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/myvariant_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/myvariant/myvariant_1.32.0.tar.gz"]
 
+    version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="858805145411bfffc7f1fcf714fcf2ed23e7f92ff30f6c77a66076f2e051e72b")
 
 	depends_on("r@3.2.1:", type=("build", "run"))

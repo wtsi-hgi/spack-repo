@@ -15,6 +15,7 @@ class RCalm(RPackage):
 	bioc = "calm" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/calm_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/calm/calm_1.16.0.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="db9d2c3f5b53c0bca13351fae104aac9177c35ccf0c7fc6fcd4f38082342028c")
 
 	depends_on("r-mgcv", type=("build", "run"))

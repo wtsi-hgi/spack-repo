@@ -16,6 +16,7 @@ class RCardelino(RPackage):
 	bioc = "cardelino" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cardelino_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cardelino/cardelino_1.4.0.tar.gz"]
 
+    version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", sha256="f6ed2a646b833f4a63b0641731ce2c1dbc4718d76d7418c0878acb00561b8d78")
 
 	depends_on("r@4.2:", type=("build", "run"))

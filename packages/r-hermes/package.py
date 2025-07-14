@@ -16,6 +16,7 @@ class RHermes(RPackage):
 	bioc = "hermes" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hermes_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hermes/hermes_1.6.1.tar.gz"]
 
+    version("1.12.1", tag="RELEASE_3_21")
 	version("1.6.1", sha256="de9ab023213852777991225695a85d3564ef680cc1945941157b9cf358b1f7a8")
 	version("1.6.0", md5="af1e1dd4bab597cfb7b0bd12a1e9e7dd")
 

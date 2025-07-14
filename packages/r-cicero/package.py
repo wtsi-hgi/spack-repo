@@ -15,6 +15,7 @@ class RCicero(RPackage):
 	bioc = "cicero" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cicero_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cicero/cicero_1.20.0.tar.gz"]
 
+    version("1.26.0", tag="RELEASE_3_21")
 	version("1.20.0", sha256="c59b4a1cb65a373646d2ffc3574f390f87afc36ac5de540bbe856472781876a7")
 
 	depends_on("r@3.5:", type=("build", "run"))

@@ -16,6 +16,7 @@ class RWppi(RPackage):
 	bioc = "wppi" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/wppi_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/wppi/wppi_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="4bd8bb3374f1b25ef727e0cc5d3bae4d84ca297ee0bc3d70459c3fc00a318f13")
 
 	depends_on("r@4.1:", type=("build", "run"))

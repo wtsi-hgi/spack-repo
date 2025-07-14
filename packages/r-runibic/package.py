@@ -16,6 +16,7 @@ class RRunibic(RPackage):
 	bioc = "runibic" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/runibic_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/runibic/runibic_1.24.0.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="0db39adb3aebc4a0f26ac8fa38ac04addcadb56ad7b68ab4023ed6374d957766")
 
 	depends_on("r@3.4:", type=("build", "run"))

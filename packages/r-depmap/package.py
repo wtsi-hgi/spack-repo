@@ -15,6 +15,7 @@ class RDepmap(RPackage):
 	bioc = "depmap" 
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/depmap_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/depmap/depmap_1.16.0.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="b26374b608b6abf6e439224e92a233d546ea698d64e773a197934a91557163ed")
 
 	depends_on("r@3.6:", type=("build", "run"))

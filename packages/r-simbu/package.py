@@ -16,6 +16,7 @@ class RSimbu(RPackage):
 	bioc = "SimBu" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SimBu_1.4.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SimBu/SimBu_1.4.3.tar.gz"]
 
+    version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.3", sha256="c32c0b5cf71b7b8e13b52739e34993c1e7df8bf9d40fc9d3d5e1df4048468bfe")
 
 	depends_on("r-basilisk", type=("build", "run"))

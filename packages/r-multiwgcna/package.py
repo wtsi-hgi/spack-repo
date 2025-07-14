@@ -15,6 +15,7 @@ class RMultiwgcna(RPackage):
 	bioc = "multiWGCNA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/multiWGCNA_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/multiWGCNA/multiWGCNA_1.0.0.tar.gz"]
 
+    version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="c3eebe34ffd6364531b5b768c7b5e87d10f657cd688495a05885d0307855e8ca")
 
 	depends_on("r@4.3:", type=("build", "run"))

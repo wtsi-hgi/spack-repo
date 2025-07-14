@@ -15,6 +15,7 @@ class RDmrseq(RPackage):
 	bioc = "dmrseq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dmrseq_1.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dmrseq/dmrseq_1.22.1.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.1", sha256="777c060e9c769e189564b2d7c04b57ffe34061626f881752bf4d89cbca4cfa82")
 
 	depends_on("r@3.5:", type=("build", "run"))

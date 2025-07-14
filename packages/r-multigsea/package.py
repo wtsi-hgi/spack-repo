@@ -16,6 +16,7 @@ class RMultigsea(RPackage):
 	bioc = "multiGSEA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/multiGSEA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/multiGSEA/multiGSEA_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="a85d3741ca441419734b2ffaed2c916f9fce27950a9dea755b436bbe7c323d5d")
 
 	depends_on("r@4:", type=("build", "run"))

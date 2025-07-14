@@ -16,6 +16,7 @@ class RRetrofit(RPackage):
 	bioc = "retrofit" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/retrofit_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/retrofit/retrofit_1.2.0.tar.gz"]
 
+    version("1.8.0", tag="RELEASE_3_21")
 	version("1.2.0", sha256="ad2208835281053a2a9cdeeb9b19ab76ce27f86320a74bc65ebbfdd5c1915967")
 
 	depends_on("r@4.2:", type=("build", "run"))

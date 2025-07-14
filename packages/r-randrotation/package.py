@@ -16,6 +16,7 @@ class RRandrotation(RPackage):
 	bioc = "randRotation" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/randRotation_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/randRotation/randRotation_1.14.0.tar.gz"]
 
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.0", sha256="597322c27b3c6ab8422dabcd2518d24d65ef691b8b0f25843c01e00f6b125c53")
 
 	depends_on("r-rdpack@0.7:", type=("build", "run"))

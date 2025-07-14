@@ -16,6 +16,7 @@ class RCatalyst(RPackage):
 	bioc = "CATALYST" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CATALYST_1.26.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CATALYST/CATALYST_1.26.1.tar.gz"]
 
+    version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.1", sha256="083cd5f8c7271d0a2dcae29cbcbf072153dc8196f94d84bbde7a0289d022cbfd")
 	version("1.26.0", md5="6ce647576b86ebdf9fe0933fd87b79ce")
 

@@ -16,6 +16,7 @@ class RComet(RPackage):
 	bioc = "coMET" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/coMET_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/coMET/coMET_1.34.0.tar.gz"]
 
+    version("1.40.0", tag="RELEASE_3_21")
 	version("1.34.0", sha256="bfb9106e278fce62abde5a823e3fea42fc9515f174af8511f249aebc99b370de")
 
 	depends_on("r@4.1:", type=("build", "run"))

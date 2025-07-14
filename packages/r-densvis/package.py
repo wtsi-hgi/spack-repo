@@ -33,6 +33,7 @@ class RDensvis(RPackage):
 
 	bioc = "densvis"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/densvis_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/densvis/densvis_1.12.1.tar.gz"]
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.1", sha256="92f73e42d8d65df3037c6f745a2488f9f14f97dadd8d3c2486f74f26b2084185")
 	version("1.10.0", commit="833db1fb7b2a5667575cc2e7c2fefc8360c8d7fb")
 

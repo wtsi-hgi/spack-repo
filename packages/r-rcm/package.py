@@ -16,6 +16,7 @@ class RRcm(RPackage):
 	bioc = "RCM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCM_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RCM/RCM_1.18.0.tar.gz"]
 
+    version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="3b7bfaca7b1e134ee65a09680305f0b4562c8488ad85dfd1d4de94ed2e8ee6f9")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -15,6 +15,7 @@ class ROpenprimer(RPackage):
 	bioc = "openPrimeR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/openPrimeR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/openPrimeR/openPrimeR_1.24.0.tar.gz"]
 
+    version("1.30.0", tag="RELEASE_3_21")
 	version("1.24.0", sha256="8d5069817ea94f2293d7e54bf01a97e5e0896c111f2229c954c7cf932f32f84a")
 
 	depends_on("r@4:", type=("build", "run"))

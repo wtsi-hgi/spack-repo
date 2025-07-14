@@ -18,6 +18,7 @@ class RChromvar(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chromVAR/chromVAR_1.24.0.tar.gz",
     ]
 
+    version("1.30.1", tag="RELEASE_3_21")
     version("1.24.0", sha256="7d076b9f24dc06a75548608c60a3db6daec2278005be695f132bad220c28c6ef")
 
     depends_on("r@3.5:", type=("build", "run"))

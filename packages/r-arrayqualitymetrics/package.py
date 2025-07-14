@@ -15,6 +15,7 @@ class RArrayqualitymetrics(RPackage):
 	bioc = "arrayQualityMetrics" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/arrayQualityMetrics_3.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/arrayQualityMetrics/arrayQualityMetrics_3.58.0.tar.gz"]
 
+    version("3.64.0", tag="RELEASE_3_21")
 	version("3.58.0", sha256="b5155c2a3c09eb361381cc918c1b10e6848a2817b4a59b5346c4c1910f8c00cd")
 
 	depends_on("r-affy", type=("build", "run"))

@@ -16,6 +16,7 @@ class REmpiricalbrownsmethod(RPackage):
 	bioc = "EmpiricalBrownsMethod" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EmpiricalBrownsMethod_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EmpiricalBrownsMethod/EmpiricalBrownsMethod_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="ef6c792f67abc45ca4ad4bf3bc1e7c3dfa7dd4368a33ddc3ae32635243043a0f")
 
 	depends_on("r@3.2:", type=("build", "run"))

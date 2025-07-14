@@ -16,6 +16,7 @@ class RSplicingfactory(RPackage):
 	bioc = "SplicingFactory" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SplicingFactory_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SplicingFactory/SplicingFactory_1.10.0.tar.gz"]
 
+    version("1.16.0", tag="RELEASE_3_21")
 	version("1.10.0", sha256="914bc2ad73f279a36828ed836420faedc8fe4e2cbe2034b5a9d7df048f67626e")
 
 	depends_on("r@4.1:", type=("build", "run"))

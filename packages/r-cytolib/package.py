@@ -15,6 +15,7 @@ class RCytolib(RPackage):
 	bioc = "cytolib" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cytolib_2.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cytolib/cytolib_2.14.1.tar.gz"]
 
+    version("2.20.0", tag="RELEASE_3_21")
 	version("2.14.1", sha256="2e37fafbf76a16720fb9b5df611df77d511420fd1f2f11431d94b536d28c4fcd")
 
 	depends_on("r@3.4:", type=("build", "run"))

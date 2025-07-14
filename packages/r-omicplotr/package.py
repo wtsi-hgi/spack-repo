@@ -15,6 +15,7 @@ class ROmicplotr(RPackage):
 	bioc = "omicplotR" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/omicplotR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/omicplotR/omicplotR_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="6141e03d2d1ba1997b96a579cb302c1213eafb77ab5a48936da69861c8fa1f7f")
 
 	depends_on("r@3.6:", type=("build", "run"))

@@ -15,6 +15,7 @@ class ROntoprocdata(RPackage):
     bioc = "ontoProcData" 
     url = "https://www.bioconductor.org/packages/release/data/annotation/src/contrib/ontoProcData_0.99.9901.tar.gz"
 
+    version("0.99.9904", tag="RELEASE_3_21")
     version("0.99.9901", sha256="33a35841b2ee616dad02e82adc49b64d71bc6895cfe1be834ba8369846819c9b")
     
     depends_on("r@4.2:", type=("build", "run"))

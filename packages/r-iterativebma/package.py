@@ -16,6 +16,7 @@ class RIterativebma(RPackage):
 	bioc = "iterativeBMA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iterativeBMA_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iterativeBMA/iterativeBMA_1.60.0.tar.gz"]
 
+    version("1.66.0", tag="RELEASE_3_21")
 	version("1.60.0", sha256="da16e7d1b3f2c98f621613c9e9e44cc75e40bc76809a22264f206e326f755c11")
 
 	depends_on("r-bma", type=("build", "run"))

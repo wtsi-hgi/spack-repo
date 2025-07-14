@@ -16,6 +16,7 @@ class RCernanetsim(RPackage):
 	bioc = "ceRNAnetsim" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ceRNAnetsim_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ceRNAnetsim/ceRNAnetsim_1.14.1.tar.gz"]
 
+    version("1.20.0", tag="RELEASE_3_21")
 	version("1.14.1", sha256="7af2b34a242b9ea85688fcddf23b19dbcb0e1f45d0132cac30158381034ccf8e")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RGgmanh(RPackage):
 	bioc = "ggmanh" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggmanh_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggmanh/ggmanh_1.6.0.tar.gz"]
 
+    version("1.12.0", tag="RELEASE_3_21")
 	version("1.6.0", sha256="10842e9355ca1984a5204eeb6d2972bb922fb9462964a1b720647c73738958c8")
 
 	depends_on("r-ggplot2", type=("build", "run"))

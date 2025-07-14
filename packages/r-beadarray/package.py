@@ -15,6 +15,7 @@ class RBeadarray(RPackage):
 	bioc = "beadarray" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/beadarray_2.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/beadarray/beadarray_2.52.0.tar.gz"]
 
+    version("2.58.0", tag="RELEASE_3_21")
 	version("2.52.0", sha256="59eab3e4d2fc4595b4ee4c4898bb2f031a45bc6e3fcb0550179bd644ca519363")
 
 	depends_on("r@2.13:", type=("build", "run"))

@@ -15,6 +15,7 @@ class RMcbiclust(RPackage):
 	bioc = "MCbiclust" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MCbiclust_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MCbiclust/MCbiclust_1.26.0.tar.gz"]
 
+    version("1.32.0", tag="RELEASE_3_21")
 	version("1.26.0", sha256="2b378b6293f5cd9bcf95c2ef1a539325415990ba04d64f6b458282d5a7a770c9")
 
 	depends_on("r@3.4:", type=("build", "run"))

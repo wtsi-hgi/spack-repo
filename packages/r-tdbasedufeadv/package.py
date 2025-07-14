@@ -16,6 +16,7 @@ class RTdbasedufeadv(RPackage):
 	bioc = "TDbasedUFEadv" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TDbasedUFEadv_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TDbasedUFEadv/TDbasedUFEadv_1.2.0.tar.gz"]
 
+    version("1.8.1", tag="RELEASE_3_21")
 	version("1.2.0", sha256="a184d00fcc29ccd64252b72a789837e89e412ac873c3cc195495e631f62f241f")
 
 	depends_on("r-tdbasedufe", type=("build", "run"))

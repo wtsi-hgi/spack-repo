@@ -15,6 +15,7 @@ class RAsics(RPackage):
 	bioc = "ASICS" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASICS_2.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASICS/ASICS_2.18.1.tar.gz"]
 
+    version("2.24.0", tag="RELEASE_3_21")
 	version("2.18.1", sha256="ab6b01a6ae684f7ea8335b59c5197706f3519bd0ea23c95075d550209e36316a")
 	version("2.18.0", md5="526bfb1ebf38574a4914a434cd159769")
 

@@ -15,6 +15,7 @@ class RInetgrate(RPackage):
 	bioc = "iNETgrate" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iNETgrate_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iNETgrate/iNETgrate_1.0.0.tar.gz"]
 
+    version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="f786fddd3c6b47a9626578326a84154fd6f6735fd7db789c04644f7522704ffd")
 
 	depends_on("r@4.3:", type=("build", "run"))

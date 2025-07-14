@@ -15,6 +15,7 @@ class RAdam(RPackage):
 	bioc = "ADAM" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ADAM_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ADAM/ADAM_1.18.0.tar.gz"]
 
+    version("1.24.0", tag="RELEASE_3_21")
 	version("1.18.0", sha256="454bda6992ec764869a30c5ccfcfd75d69a32e65df518f003f92e020e7ade33f")
 
 	depends_on("r@3.5:", type=("build", "run"))

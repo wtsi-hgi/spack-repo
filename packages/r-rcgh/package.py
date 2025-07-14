@@ -16,6 +16,7 @@ class RRcgh(RPackage):
 	bioc = "rCGH" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rCGH_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rCGH/rCGH_1.32.0.tar.gz"]
 
+    version("1.38.0", tag="RELEASE_3_21")
 	version("1.32.0", sha256="3f785773b658c14ad08909b4d397ab4a1da8cbc9608c294102b84fbec04336ac")
 
 	depends_on("r@3.4:", type=("build", "run"))

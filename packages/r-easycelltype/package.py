@@ -14,6 +14,7 @@ class REasycelltype(RPackage):
 	
 	bioc = "EasyCellType" 
 
+    version("1.10.0", tag="RELEASE_3_21")
 	version("1.4.0", commit="a2e92b6cd217fb92d6970996932847af7b9eb4fb")
 
 	depends_on("r@4.2:", type=("build", "run"))

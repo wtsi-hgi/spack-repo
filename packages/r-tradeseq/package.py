@@ -16,6 +16,7 @@ class RTradeseq(RPackage):
 	bioc = "tradeSeq" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tradeSeq_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tradeSeq/tradeSeq_1.16.0.tar.gz"]
 
+    version("1.22.0", tag="RELEASE_3_21")
 	version("1.16.0", sha256="7297d01b394cb2552c9705b6081e954d2d1a367aeaad5d18fe075b205694601a")
 
 	depends_on("r@3.6:", type=("build", "run"))

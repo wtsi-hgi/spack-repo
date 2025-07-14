@@ -15,6 +15,7 @@ class RMlp(RPackage):
 	bioc = "MLP" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MLP_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MLP/MLP_1.50.0.tar.gz"]
 
+    version("1.56.0", tag="RELEASE_3_21")
 	version("1.50.0", sha256="9093f4a28a2c7d8dc13000dadf362d0207cb9127cf09175e6cb00582bac00642")
 
 	depends_on("r-annotationdbi", type=("build", "run"))

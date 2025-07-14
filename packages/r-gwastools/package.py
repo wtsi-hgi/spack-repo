@@ -16,6 +16,7 @@ class RGwastools(RPackage):
 	bioc = "GWASTools" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GWASTools_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GWASTools/GWASTools_1.48.0.tar.gz"]
 
+    version("1.54.0", tag="RELEASE_3_21")
 	version("1.48.0", sha256="e8325dbba51b721e946e733bedd600136f0bc4f9aad5e45b79b5fe62386b4fe6")
 
 	depends_on("r-biobase", type=("build", "run"))

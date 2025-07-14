@@ -15,6 +15,7 @@ class RCma(RPackage):
 	bioc = "CMA" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CMA_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CMA/CMA_1.60.0.tar.gz"]
 
+    version("1.66.0", tag="RELEASE_3_21")
 	version("1.60.0", sha256="7b7dbde826c8dadc2d2be945080056306acb89afe766efe09c7fd0da7ac15511")
 
 	depends_on("r@2.10:", type=("build", "run"))

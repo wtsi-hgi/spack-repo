@@ -15,6 +15,7 @@ class RDiffustats(RPackage):
 	bioc = "diffuStats" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/diffuStats_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/diffuStats/diffuStats_1.22.0.tar.gz"]
 
+    version("1.28.0", tag="RELEASE_3_21")
 	version("1.22.0", sha256="3ec742621089d9e8ad6607b9e99741148d978d9b998c31c2949b1d7228bada5f")
 
 	depends_on("r@3.4:", type=("build", "run"))

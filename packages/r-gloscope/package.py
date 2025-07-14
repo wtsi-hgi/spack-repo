@@ -15,6 +15,7 @@ class RGloscope(RPackage):
 	bioc = "GloScope" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GloScope_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GloScope/GloScope_1.0.0.tar.gz"]
 
+    version("1.6.0", tag="RELEASE_3_21")
 	version("1.0.0", sha256="029f7f57db10e1f0fa33ce37227a6ed2f21b1a0cd6cf02fa8e868128e60552fe")
 
 	depends_on("r@4.3:", type=("build", "run"))

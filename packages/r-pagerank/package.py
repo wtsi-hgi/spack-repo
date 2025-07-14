@@ -16,6 +16,7 @@ class RPagerank(RPackage):
 	bioc = "pageRank" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pageRank_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pageRank/pageRank_1.12.0.tar.gz"]
 
+    version("1.18.0", tag="RELEASE_3_21")
 	version("1.12.0", sha256="a1e1f958eb9c7ae6ad9b831d9318ae826f000791f75360c8dc6e4f43235b6c63")
 
 	depends_on("r@4:", type=("build", "run"))

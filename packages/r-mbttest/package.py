@@ -15,6 +15,7 @@ class RMbttest(RPackage):
 	bioc = "MBttest" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MBttest_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MBttest/MBttest_1.30.0.tar.gz"]
 
+    version("1.36.0", tag="RELEASE_3_21")
 	version("1.30.0", sha256="535cda8e098f864edbe5c6a6b24ade3ca3b7c5d962b3d1ad6867ad3952f6ebd4")
 
 	depends_on("r@3.3:", type=("build", "run"))
