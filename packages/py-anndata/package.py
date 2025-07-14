@@ -26,12 +26,14 @@ class PyAnndata(PythonPackage):
     depends_on("py-hatch-vcs", type=("build", "run"))
     # https://github.com/scverse/anndata/issues/1210
     depends_on("py-pandas@:2.1.1,2.1.3:", type=("build", "run"))  # skip 2.1.2
+    depends_on("py-pytoml", type=("build", "run"), when="@:0.7.8")
+    depends_on("py-h5py", type=("build", "run"))
+    depends_on("py-natsort", type=("build", "run"))
+    depends_on("py-scipy", type=("build", "run"))
 
     with when("@:0.9"):
         depends_on("py-flit-core", type="build")
 
     with when("@0.10:"):
         depends_on("python@3.11:", type=("build", "run"))
-        depends_on("py-h5py", type=("build", "run"))
-        depends_on("py-scipy", type=("build", "run"))
-        depends_on("py-natsort", type=("build", "run"))
+
