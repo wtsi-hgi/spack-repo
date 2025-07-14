@@ -13,11 +13,10 @@ class RRcollectl(RPackage):
 	"""
 	
 	homepage = "https://github.com/vjcitn/Rcollectl"
-	bioc = "Rcollectl" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rcollectl_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rcollectl/Rcollectl_1.2.0.tar.gz"]
+	bioc = "Rcollectl"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="15b79b1c63e19a4966b8335849575a17ea5a13d1ed14520812aaa542d60da5ec")
+	version("1.8.0", commit="1b03bdce5279227193bb733a5b3427c1afdce96a")
+	version("1.2.0", commit="5a64468353ababf782302ad003607be0ca7449f3")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-lubridate", type=("build", "run"))

@@ -12,11 +12,10 @@ class RNanostringdiff(RPackage):
 	This Package utilizes a generalized linear model(GLM) of the negative binomial family to characterize count data and allows for multi-factor design. NanoStrongDiff incorporate size factors, calculated from positive controls and housekeeping controls, and background level, obtained from negative controls, in the model framework so that all the normalization information provided by NanoString nCounter Analyzer is fully utilized.
 	"""
 	
-	bioc = "NanoStringDiff" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NanoStringDiff_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NanoStringDiff/NanoStringDiff_1.32.0.tar.gz"]
+	bioc = "NanoStringDiff"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="db74a3378723bcbf09272932ca5cc93390b2a0e6fcfc9e1a2d421cf5a23fb823")
+	version("1.38.0", commit="c2d837227c454a0b4234d989ccd5d47732c23db7")
+	version("1.32.0", commit="4afdd7f06cdf5b685b7a2b40ec11eeda038dc493")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-matrixstats", type=("build", "run"))

@@ -12,11 +12,10 @@ class RCrisprseek(RPackage):
 	The package includes functions to find potential guide RNAs for the CRISPR editing system including Base Editors and the Prime Editor for input target sequences, optionally filter guide RNAs without restriction enzyme cut site, or without paired guide RNAs, genome-wide search for off-targets, score, rank, fetch flank sequence and indicate whether the target and off-targets are located in exon region or not. Potential guide RNAs are annotated with total score of the top5 and topN off-targets, detailed topN mismatch sites, restriction enzyme cut sites, and paired guide RNAs. The package also output indels and their frequencies for Cas9 targeted sites.
 	"""
 	
-	bioc = "CRISPRseek" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CRISPRseek_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CRISPRseek/CRISPRseek_1.42.0.tar.gz"]
+	bioc = "CRISPRseek"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="7b8d8646f35dc00d7c8f18d84b8f030c4a9a116fd352590a6af7294135968c36")
+	version("1.48.0", commit="d7b7729951d334f0078429b299d43a6dbbafedac")
+	version("1.42.0", commit="bd578a555ca828b380718e15ec7c7b0866cf1022")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

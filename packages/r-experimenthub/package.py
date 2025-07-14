@@ -17,13 +17,12 @@ class RExperimenthub(RPackage):
 	reproducible access."""
 
 	bioc = "ExperimentHub"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExperimentHub_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExperimentHub/ExperimentHub_2.10.0.tar.gz"]
-	version("2.16.0", tag="RELEASE_3_21")
+	version("2.16.0", commit="4dedb5cd0283ae32c6c48952b526b0b72a6f4169")
 	version("2.8.0", commit="f25c854c51878844098290a05936cb35b235f30e")
 	version("2.6.0", commit="557ba29720bce85902a85445dd0435b7356cdd7f")
 	version("2.4.0", commit="bdce35d3a89e8633cc395f28991e6b5d1eccbe8e")
 	version("2.2.1", commit="4e10686fa72baefef5d2990f41a7c44c527a7a7d")
-	version("2.10.0", sha256="dc8c442e81514a0986b40260a970179b8b1777ee2a8e5f4a1024d0f2341134df")
+	version("2.10.0", commit="f9cb6a0518ece8ff2b5d0708861ad5e5b47b2903")
 	version("1.16.1", commit="61d51b7ca968d6cc1befe299e0784d9a19ca51f6")
 
 	depends_on("r-biocgenerics@0.15.10:", type=("build", "run"))

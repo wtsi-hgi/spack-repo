@@ -12,11 +12,10 @@ class RYeastrnaseq(RPackage):
 	A selection of RNA-Seq data from a yeast transcriptome experiment.
 	"""
 	
-	bioc = "yeastRNASeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/yeastRNASeq_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/yeastRNASeq/yeastRNASeq_0.40.0.tar.gz"]
+	bioc = "yeastRNASeq"
 
-	version("0.46.0", tag="RELEASE_3_21")
-	version("0.40.0", sha256="f56ab47df663d826fb57003bae2f47740cd23a3e2bb54a2e269d1af8fd6aebac")
+	version("0.46.0", commit="e03e84954c1a53caf365f8df822fc0d3d0cd8ccf")
+	version("0.40.0", commit="57c93a0ad3c9a60c84572d094d30e026b75f1391")
 
 	depends_on("r@2.4:", type=("build", "run"))
 

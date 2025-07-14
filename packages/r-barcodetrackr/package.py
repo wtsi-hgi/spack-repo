@@ -13,11 +13,10 @@ class RBarcodetrackr(RPackage):
 	"""
 	
 	homepage = "https://github.com/dunbarlabNIH/barcodetrackR"
-	bioc = "barcodetrackR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/barcodetrackR_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/barcodetrackR/barcodetrackR_1.10.0.tar.gz"]
+	bioc = "barcodetrackR"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="096ac951ed4c2259c9bdd60e9d7308955b88418dad6b5cfd116fb8a77033b7f0")
+	version("1.16.0", commit="313d1868907fee11715cd8d2cd9787b373bd6e56")
+	version("1.10.0", commit="e53b7a6b5146963b7afee7364963320cc5f1f04b")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))

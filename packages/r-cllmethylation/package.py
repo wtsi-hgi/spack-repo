@@ -12,11 +12,10 @@ class RCllmethylation(RPackage):
 	The package includes DNA methylation data for the primary Chronic Lymphocytic Leukemia samples included in the Primary Blood Cancer Encyclopedia (PACE) project. Raw data from the 450k DNA methylation arrays is stored in the European Genome-Phenome Archive (EGA) under accession number EGAS0000100174. For more information concerning the project please refer to the paper "Drug-perturbation-based stratification of blood cancer" by Dietrich S, Oles M, Lu J et al., J. Clin. Invest. (2018) and R/Bioconductor package BloodCancerMultiOmics2017.
 	"""
 	
-	bioc = "CLLmethylation" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CLLmethylation_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CLLmethylation/CLLmethylation_1.22.0.tar.gz"]
+	bioc = "CLLmethylation"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="ba8b439b299767f9ed7ffb732642671f48f6a18e6fcf239045fa0b89d22b609a")
+	version("1.28.0", commit="45a78a3f0f58415a2e528fcc62e64fb608472c71")
+	version("1.22.0", commit="78ee55ddb4a2ebb50f517567a8bb014ef794b122")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

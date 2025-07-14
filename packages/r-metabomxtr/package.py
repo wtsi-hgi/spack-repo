@@ -12,11 +12,10 @@ class RMetabomxtr(RPackage):
 	The functions in this package return optimized parameter estimates and log likelihoods for mixture models of truncated data with normal or lognormal distributions.
 	"""
 	
-	bioc = "metabomxtr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metabomxtr_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metabomxtr/metabomxtr_1.36.0.tar.gz"]
+	bioc = "metabomxtr"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="9c44079a40b6daa172df1e4fa58c524460328eac1ea5694bb8fc5d7632821f8c")
+	version("1.42.0", commit="261703f6eaa72a5c846e568c2863e0a25e5bd992")
+	version("1.36.0", commit="1e127d0137ba394dab424d8b603dfd9b16d9a3e8")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-optimx", type=("build", "run"))

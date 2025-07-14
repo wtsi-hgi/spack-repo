@@ -13,11 +13,10 @@ class RRqt(RPackage):
 	"""
 	
 	homepage = "https://github.com/izhbannikov/rqt"
-	bioc = "rqt" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rqt_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rqt/rqt_1.28.0.tar.gz"]
+	bioc = "rqt"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="5071d7c52b74741377dc307cf3e498786af90baedcc140140fbd0386cce5db0b")
+	version("1.34.0", commit="b39a5795911eeef305d11909dab8b4554554cf1d")
+	version("1.28.0", commit="de2062f7c634c45abe3ab24658f1373f76e10c2b")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

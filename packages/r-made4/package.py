@@ -13,11 +13,10 @@ class RMade4(RPackage):
 	"""
 	
 	homepage = "http://www.hsph.harvard.edu/aedin-culhane/"
-	bioc = "made4" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/made4_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/made4/made4_1.76.0.tar.gz"]
+	bioc = "made4"
 
-	version("1.82.0", tag="RELEASE_3_21")
-	version("1.76.0", sha256="8f0137af7c5e0947d80959056056cb92dd997221eede37feb608ca4abf8ed00d", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/made4_1.76.0.tar.gz")
+	version("1.82.0", commit="af8e708e74dff93eee6e67c9c2d73e7941be783f")
+	version("1.76.0", commit="4fa62322cf560d2720055f48c1dcf46f5bc5d745")
 
 	depends_on("r-rcolorbrewer", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

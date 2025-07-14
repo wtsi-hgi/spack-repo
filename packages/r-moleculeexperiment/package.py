@@ -13,11 +13,10 @@ class RMoleculeexperiment(RPackage):
 	"""
 	
 	homepage = "https://github.com/SydneyBioX/MoleculeExperiment"
-	bioc = "MoleculeExperiment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MoleculeExperiment_1.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MoleculeExperiment/MoleculeExperiment_1.2.2.tar.gz"]
+	bioc = "MoleculeExperiment"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.2", sha256="4ba8ae30eb0943ef480142611f1053883c32195f74f4966d3bb8c8f36272c3a0")
+	version("1.8.0", commit="605c1392dd59c56fce5f2230a0ebff34ad2823af")
+	version("1.2.2", commit="22b0d71f49b6cfab8ad986307e44a89f4336bff2")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-spatialexperiment", type=("build", "run"))

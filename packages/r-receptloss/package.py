@@ -12,11 +12,10 @@ class RReceptloss(RPackage):
 	receptLoss identifies genes whose expression is lost in subsets of tumors relative to normal tissue. It is particularly well-suited in cases where the number of normal tissue samples is small, as the distribution of gene expression in normal tissue samples is approximated by a Gaussian. Originally designed for identifying nuclear hormone receptor expression loss but can be applied transcriptome wide as well.
 	"""
 	
-	bioc = "receptLoss" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/receptLoss_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/receptLoss/receptLoss_1.14.0.tar.gz"]
+	bioc = "receptLoss"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="4cb2d7a3090bd0cd3fb867ef91c73bf867d39bca92cc55b63cb43b868abcaa65")
+	version("1.20.0", commit="9296b0aa4822e4ae2d599df789d54a2434ef4e9d")
+	version("1.14.0", commit="1f5588dc635c432cc769e1c1e05b2388e0194ee4")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

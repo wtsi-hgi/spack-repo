@@ -12,11 +12,10 @@ class RChronos(RPackage):
 	A package used for efficient unraveling of the inherent dynamic properties of pathways. MicroRNA-mediated subpathway topologies are extracted and evaluated by exploiting the temporal transition and the fold change activity of the linked genes/microRNAs.
 	"""
 	
-	bioc = "CHRONOS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CHRONOS_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CHRONOS/CHRONOS_1.30.0.tar.gz"]
+	bioc = "CHRONOS"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="dfd560fffba39c4452518e4b570faca20a2efaa6931ca1146a3c53fb7c02249b")
+	version("1.36.0", commit="6e103dd9360aa815326d1c004291eb257266c263")
+	version("1.30.0", commit="553c13131e040763c5f104070764cecdb4db628e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-xml", type=("build", "run"))

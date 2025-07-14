@@ -12,11 +12,10 @@ class RCnorode(RPackage):
 	Logic based ordinary differential equation (ODE) add-on to CellNOptR.
 	"""
 	
-	bioc = "CNORode" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNORode_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNORode/CNORode_1.44.0.tar.gz"]
+	bioc = "CNORode"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="876e053a8d3510a7be608c206c1ca2be789784539072aa25e4d05bb17785bd36")
+	version("1.50.0", commit="f85ceaf085ea80238d7a42a071e735a4674dc8b4")
+	version("1.44.0", commit="ffe0ce3536d5acb68c73883a3fbb02730ad6f40c")
 
 	depends_on("r-cellnoptr", type=("build", "run"))
 	depends_on("r-genalg", type=("build", "run"))

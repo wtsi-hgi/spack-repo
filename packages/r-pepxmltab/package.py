@@ -12,11 +12,10 @@ class RPepxmltab(RPackage):
 	Parsing pepXML files based one XML package. The package tries to handle pepXML files generated from different softwares. The output will be a peptide-spectrum-matching tabular file. The package also provide function to filter the PSMs based on FDR.
 	"""
 	
-	bioc = "pepXMLTab" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pepXMLTab_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pepXMLTab/pepXMLTab_1.36.0.tar.gz"]
+	bioc = "pepXMLTab"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="441a1a4c73d083e10cc95f4f80209f02f523af9085079d9857bd61effa1116b4")
+	version("1.42.0", commit="3712347bb7cf9b6f3e46bd4bfbaaa1fd8e5659d3")
+	version("1.36.0", commit="fc6d53bb6d626ab96032b222b1ebe2b3d14bcf5d")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-xml@3.98.1.1:", type=("build", "run"))

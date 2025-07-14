@@ -12,10 +12,9 @@ class ROccugene(RPackage):
 	Statistical tools for building random mutagenesis libraries for prokaryotes. The package has functions for handling the occupancy distribution for a multinomial and for estimating the number of essential genes in random transposon mutagenesis libraries.
 	"""
 	
-	bioc = "occugene" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/occugene_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/occugene/occugene_1.62.0.tar.gz"]
+	bioc = "occugene"
 
-	version("1.68.0", tag="RELEASE_3_21")
-	version("1.62.0", sha256="f69690ae4471106051a75fbe607f41d462b8fceeeb84411f4b12ddc98b395c11")
+	version("1.68.0", commit="0dd2822b271db44dbe05ccad2f0c2390317ba15b")
+	version("1.62.0", commit="194ce6a6c735fb18e66a6fe0bd20fd2afd93dd64")
 
 	depends_on("r@2:", type=("build", "run"))

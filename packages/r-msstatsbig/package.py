@@ -12,10 +12,9 @@ class RMsstatsbig(RPackage):
 	MSstats package provide tools for preprocessing, summarization and differential analysis of mass spectrometry (MS) proteomics data. Recently, some MS protocols enable acquisition of data sets that result in larger than memory quantitative data. MSstats functions are not able to process such data. MSstatsBig package provides additional converter functions that enable processing larger than memory data sets.
 	"""
 	
-	bioc = "MSstatsBig" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsBig_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsBig/MSstatsBig_1.0.0.tar.gz"]
+	bioc = "MSstatsBig"
 
-	version("1.6.0", tag="RELEASE_3_21")
+	version("1.6.0", commit="c5abd1d2750d5134918ba8b0bf5fd860578877c9")
 	version("1.0.0", md5="a53de589b47964296160c6fb8aaeb3b4")
 
 	depends_on("r-arrow", type=("build", "run"))

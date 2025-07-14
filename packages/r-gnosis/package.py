@@ -13,11 +13,10 @@ class RGnosis(RPackage):
 	"""
 	
 	homepage = "https://github.com/Lydia-King/GNOSIS/"
-	bioc = "GNOSIS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GNOSIS_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GNOSIS/GNOSIS_1.0.0.tar.gz"]
+	bioc = "GNOSIS"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="ae75596cfc64be63f8c782b447c35bd8d1977c646374c861a4e32d65ff8c6037")
+	version("1.6.0", commit="0ac8093383d4ac286e4f39928f6e906ecc8c1311")
+	version("1.0.0", commit="e38823a29d5bdf2d7072ec7b866ddc29189d8d34")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

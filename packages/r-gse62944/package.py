@@ -13,11 +13,10 @@ class RGse62944(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org/packages/release/bioc/html/GSE62944.html"
-	bioc = "GSE62944" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GSE62944_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GSE62944/GSE62944_1.30.0.tar.gz"]
+	bioc = "GSE62944"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="97f79656ba27c3f3649e0f9ea967deb08e65ced1d8015f2773013af3a4249e0f", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GSE62944_1.30.0.tar.gz")
+	version("1.36.0", commit="010e94ebeecd67ff4203efd95824d1aa250a91cf")
+	version("1.30.0", commit="e575c133f7a2a556eae2d90c6c9a4b5fec5ce34c")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-geoquery", type=("build", "run"))

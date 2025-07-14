@@ -12,11 +12,10 @@ class RFlowvs(RPackage):
 	Per-channel variance stabilization from a collection of flow cytometry samples by Bertlett test for homogeneity of variances. The approach is applicable to microarrays data as well.
 	"""
 	
-	bioc = "flowVS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowVS_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowVS/flowVS_1.34.0.tar.gz"]
+	bioc = "flowVS"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="1ab7defff0cbebf8f71dee48ae95426546f31277ed929022ab36b9283bbf54a6")
+	version("1.40.0", commit="19ad735f350c7e6eade574c26568daea6572554f")
+	version("1.34.0", commit="3548b61f2e46a14a3ff3cefdb4daf6c2fd4bb4a4")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

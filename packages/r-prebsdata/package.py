@@ -12,11 +12,10 @@ class RPrebsdata(RPackage):
 	This package contains data required to run examples in 'prebs' package. The data files include: 1) Small sample bam files for demonstration purposes 2) Probe sequence mappings for Custom CDF (taken from http://brainarray.mbni.med.umich.edu/brainarray/Database/CustomCDF/genomic_curated_CDF.asp) 3) Probe sequence mappings for manufacturer's CDF (manually created using bowtie)
 	"""
 	
-	bioc = "prebsdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/prebsdata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/prebsdata/prebsdata_1.38.0.tar.gz"]
+	bioc = "prebsdata"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="dbbab4f454a2838db25095143f2f01cff17e5920de7d8208d0d401ac0b7c5fcb")
+	version("1.44.0", commit="562e2ca07a522bad317d59761b2652696e2c8355")
+	version("1.38.0", commit="893ae5e88f1bef96908b1cefc79932f6c9c933dd")
 
 	depends_on("r@2.14:", type=("build", "run"))
 

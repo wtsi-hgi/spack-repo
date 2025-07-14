@@ -12,10 +12,9 @@ class RMsstatslip(RPackage):
 	Tools for LiP peptide and protein significance analysis. Provides functions for summarization, estimation of LiP peptide abundance, and detection of changes across conditions. Utilizes functionality across the MSstats family of packages.
 	"""
 	
-	bioc = "MSstatsLiP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsLiP_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsLiP/MSstatsLiP_1.8.1.tar.gz"]
+	bioc = "MSstatsLiP"
 
-	version("1.14.1", tag="RELEASE_3_21")
+	version("1.14.1", commit="0915f7892d1a86c867d183a8e3d098952c7b94c5")
 	version("1.8.1", md5="677e775b1c84f40715703064cd74faff")
 
 	depends_on("r@4.1:", type=("build", "run"))

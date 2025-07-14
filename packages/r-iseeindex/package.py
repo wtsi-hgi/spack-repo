@@ -13,11 +13,10 @@ class RIseeindex(RPackage):
 	"""
 	
 	homepage = "https://github.com/iSEE/iSEEindex"
-	bioc = "iSEEindex" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEEindex_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEEindex/iSEEindex_1.0.0.tar.gz"]
+	bioc = "iSEEindex"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="2ddc239f24412bd695a254396c007da20143db112374f988cb0e0860bbb5e3e2")
+	version("1.6.0", commit="9b30694e857736350287215ed4af60246851ae39")
+	version("1.0.0", commit="44fee6f8268e0abdfcb34c2f15421b74b55301dd")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

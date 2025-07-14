@@ -12,11 +12,10 @@ class RMcseadata(RPackage):
 	Data objects necessary to some mCSEA package functions. There are also example data objects to illustrate mCSEA package functionality.
 	"""
 	
-	bioc = "mCSEAdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mCSEAdata_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mCSEAdata/mCSEAdata_1.22.0.tar.gz"]
+	bioc = "mCSEAdata"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="710ab0282a8cc131dee739d5471f9d5287be86005619f82acac0a549d0304851")
+	version("1.28.0", commit="479e3886a064f24fe06ba4d6ca3c90032b82c2d2")
+	version("1.22.0", commit="93aea4c24ced94e1223ad0da4644449592c9c02c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

@@ -13,11 +13,10 @@ class RCnMops(RPackage):
 	"""
 	
 	homepage = "http://www.bioinf.jku.at/software/cnmops/cnmops.html"
-	bioc = "cn.mops" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cn.mops_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cn.mops/cn.mops_1.48.0.tar.gz"]
+	bioc = "cn.mops"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="ce4e146ed262caffeca197c5541f146b6aef1bcf927d7eb9c1153a3a69dfff79")
+	version("1.54.0", commit="e09a8be4b32b30b024c9b2c4c05981698e288330")
+	version("1.48.0", commit="f3cf243d115c4eda23f4396a3093d9d8cd9f5a9d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

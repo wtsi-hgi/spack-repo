@@ -12,11 +12,10 @@ class RHumanstemcell(RPackage):
 	Affymetrix time course experiment on human stem cells (two time points: undifferentiated and differentiated).
 	"""
 	
-	bioc = "humanStemCell" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/humanStemCell_0.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/humanStemCell/humanStemCell_0.42.0.tar.gz"]
+	bioc = "humanStemCell"
 
-	version("0.48.0", tag="RELEASE_3_21")
-	version("0.42.0", sha256="e052b836a968eeead75523c365d2a73420121475c8f0b5386bef84379f62dc2f")
+	version("0.48.0", commit="8f4deadb5b277111b26c13ee38dd95870efb5c42")
+	version("0.42.0", commit="9c65ba53b1dee0523b67a155b4dc1131edc1f9f4")
 
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))
 	depends_on("r-hgu133plus2-db", type=("build", "run"))

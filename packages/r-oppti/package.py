@@ -13,11 +13,10 @@ class ROppti(RPackage):
 	"""
 	
 	homepage = "https://github.com/Huang-lab/oppti"
-	bioc = "oppti" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oppti_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oppti/oppti_1.16.0.tar.gz"]
+	bioc = "oppti"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="9376ee34b3e5af8255790e1631c8b88caf517a479b4447fd3c502a79c3bec732")
+	version("1.22.0", commit="99f68b48655a35c9a6a8126b53eaa69236652087")
+	version("1.16.0", commit="7684319d2c7150c1ef258eefd7879c7554f612d4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

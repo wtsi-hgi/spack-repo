@@ -13,11 +13,10 @@ class RHmp16sdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/waldronlab/HMP16SData"
-	bioc = "HMP16SData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HMP16SData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HMP16SData/HMP16SData_1.22.0.tar.gz"]
+	bioc = "HMP16SData"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="0d0c0a796a793924ff62431acbc29af311b26aff397375109f39230eb8f747db")
+	version("1.28.0", commit="a58e99bb5263e78dc9a3c0bb437fbfe548b542ad")
+	version("1.22.0", commit="1437bc5d9d4d41e1e14af5b7a30f78b5b4b04c01")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

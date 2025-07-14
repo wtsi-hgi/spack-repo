@@ -12,11 +12,10 @@ class RDcats(RPackage):
 	Methods to detect the differential composition abundances between conditions in singel-cell RNA-seq experiments, with or without replicates. It aims to correct bias introduced by missclaisification and enable controlling of confounding covariates. To avoid the influence of proportion change from big cell types, DCATS can use either total cell number or specific reference group as normalization term.
 	"""
 	
-	bioc = "DCATS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DCATS_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DCATS/DCATS_1.0.0.tar.gz"]
+	bioc = "DCATS"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="0080089950dc945aae8c42f745232beac40899054fc8dfd9ebfb6ca23a78e754")
+	version("1.6.0", commit="297c738449d0e393c3265920d1358c883e69839b")
+	version("1.0.0", commit="70f83be6ac82b72972c722eefa6604d0464ef9de")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-mcmcpack", type=("build", "run"))

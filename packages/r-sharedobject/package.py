@@ -12,11 +12,10 @@ class RSharedobject(RPackage):
 	This package is developed for facilitating parallel computing in R. It is capable to create an R object in the shared memory space and share the data across multiple R processes. It avoids the overhead of memory dulplication and data transfer, which make sharing big data object across many clusters possible.
 	"""
 	
-	bioc = "SharedObject" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SharedObject_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SharedObject/SharedObject_1.16.0.tar.gz"]
+	bioc = "SharedObject"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="77fd00f492f1dd9fbb6821c9f01172aa271c7f7440c4a787627810794098fc21")
+	version("1.22.0", commit="4beeb17fdf8e8e50fc2c16e83be162f79e8ad11b")
+	version("1.16.0", commit="bfa7f71040ef41df18e4ede0d692df5eff5687cd")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

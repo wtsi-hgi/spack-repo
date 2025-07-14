@@ -13,11 +13,10 @@ class RCellbench(RPackage):
 	"""
 	
 	homepage = "https://github.com/shians/cellbench"
-	bioc = "CellBench" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellBench_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellBench/CellBench_1.18.0.tar.gz"]
+	bioc = "CellBench"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="f64606c81060f3964f3397ba5707ed45c1547e457e7d07fd46a4951998c700a3")
+	version("1.24.0", commit="821152f1bab06903704476f8ec5728f87ab83d54")
+	version("1.18.0", commit="4f073b8a11d4f8df16ebf5ddd25d5f882755a2f8")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

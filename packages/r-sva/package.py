@@ -29,9 +29,8 @@ class RSva(RPackage):
 	Genetics)."""
 
 	bioc = "sva"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sva_3.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sva/sva_3.50.0.tar.gz"]
-	version("3.56.0", tag="RELEASE_3_21")
-	version("3.50.0", sha256="a11f635fc70f43c8c01613d8402eb6161608fc85bb4a633b56769778037f9f5c")
+	version("3.56.0", commit="b128ddd1b8276d2cd1c19c77ac45ca1597be53b2")
+	version("3.50.0", commit="caeb0082a3ec289518c0cae73d2cde8621c49c5a")
 	version("3.48.0", commit="f1657af586d402598df71ade10dfeb28aa28b5c4")
 	version("3.46.0", commit="4aac49cf806f05bb98e08a6be539adebbecbfdb2")
 	version("3.44.0", commit="45ab2c1d6643bcda4de2d95a81b9b28d33a1a8a1")

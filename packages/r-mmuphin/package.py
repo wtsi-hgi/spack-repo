@@ -12,11 +12,10 @@ class RMmuphin(RPackage):
 	MMUPHin is an R package for meta-analysis tasks of microbiome cohorts. It has function interfaces for: a) covariate-controlled batch- and cohort effect adjustment, b) meta-analysis differential abundance testing, c) meta-analysis unsupervised discrete structure (clustering) discovery, and d) meta-analysis unsupervised continuous structure discovery.
 	"""
 	
-	bioc = "MMUPHin" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MMUPHin_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MMUPHin/MMUPHin_1.16.0.tar.gz"]
+	bioc = "MMUPHin"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="cd54f608cb11e8995ac6f34aba7fb6e3c0e118da1a1804472b106fe94bd71b52")
+	version("1.22.0", commit="6dd5463d5a65305034da9d3d4d3b3bdd5ad2ebb8")
+	version("1.16.0", commit="61bc5dc476d68ccea15e666b3756e87c6ee6d27b")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-maaslin2", type=("build", "run"))

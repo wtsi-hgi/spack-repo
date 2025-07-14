@@ -12,10 +12,9 @@ class ROct4(RPackage):
 	This package provides the output of running Salmon on a set of 12 RNA-seq samples from King & Klose, "The pioneer factor OCT4 requires the chromatin remodeller BRG1 to support gene regulatory element function in mouse embryonic stem cells", published in eLIFE, March 2017. For details on version numbers and how the samples were processed see the package vignette.
 	"""
 	
-	bioc = "oct4" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/oct4_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/oct4/oct4_1.18.0.tar.gz"]
+	bioc = "oct4"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="72a41a2bc6fbc0030d56d9f6599c83b408770f971d8e8482066a6ca5c5287bcd", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/oct4_1.18.0.tar.gz")
+	version("1.24.0", commit="e82b7a8c2848af2edb64ea5d98297f64d3d96aba")
+	version("1.18.0", commit="1c599c776db91c9093bfa4248b0371c12633f08b")
 
 

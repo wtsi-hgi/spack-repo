@@ -13,10 +13,9 @@ class RA4reporting(RPackage):
 	Array Analysis Reporting set of packages."""
 
 	bioc = "a4Reporting"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/a4Reporting_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/a4Reporting/a4Reporting_1.50.0.tar.gz"]
 
-	version("1.56.0", tag="RELEASE_3_21")
-	version("1.50.0", sha256="c63ed4ea5373f0a340fd0b7671fe9fda8c0bb10a190e8654eae75cfe345f8f9a")
+	version("1.56.0", commit="18fb78d4c48962eb6bf9fbee41925b90ea6e2b2f")
+	version("1.50.0", commit="5facc73ff067e1c1fa0e07d20e4151bcefad9b36")
 	version("1.48.0", commit="de8c4b76f6b7ef502d77d55289df0d64fe70447c")
 	version("1.46.0", commit="00b82d25bef4d518ae92f615d3a6f7931c0618dc")
 	version("1.44.0", commit="bfe83507daf53e2e327474ea3012f0dc920efac1")

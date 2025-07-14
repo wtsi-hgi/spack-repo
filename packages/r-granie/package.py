@@ -13,11 +13,10 @@ class RGranie(RPackage):
 	"""
 	
 	homepage = "https://grp-zaugg.embl-community.io/GRaNIE"
-	bioc = "GRaNIE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GRaNIE_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GRaNIE/GRaNIE_1.6.1.tar.gz"]
+	bioc = "GRaNIE"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.1", sha256="681f6cd397a1861871fedcbc84b69e5cfe86db7bb5493bd69d9eb1e2b43d37ed")
+	version("1.12.0", commit="21e7fc431bd4391b317838d769272495f26ae1c4")
+	version("1.6.1", commit="35f2aa92a5d6668e1a04745fe8e1b3dbc95d9051")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-futile-logger", type=("build", "run"))

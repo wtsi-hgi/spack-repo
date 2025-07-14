@@ -15,14 +15,13 @@ class RBiocfilecache(RPackage):
 	resources, and data files used across sessions."""
 
 	bioc = "BiocFileCache"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocFileCache_2.10.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocFileCache/BiocFileCache_2.10.2.tar.gz"]
 
-	version("2.16.0", tag="RELEASE_3_21")
+	version("2.16.0", commit="021ad4e09d692db1ffcda5762f144b02e9ea64f4")
 	version("2.8.0", commit="d088b3224bcee4661d954c77fe38ba8c45ecc51a")
 	version("2.6.0", commit="f5b8368c1402b15e8db8eab59217f1176e902e6f")
 	version("2.4.0", commit="2c00eee40d95fddad223f115f959b09e1a14f75d")
 	version("2.2.1", commit="cc912123408803193bf37395f4d18baa8dcd6f47")
-	version("2.10.2", sha256="3f0cfc6dc10aaeae9f5856da1c1a4d31493222fe8be01ee0b6725fef09b3f601")
+	version("2.10.2", commit="c95edcc03bdf09e28d86af2284a6580264595de7")
 	version("2.10.1", md5="80f9b9c7ef6f3fcb9aaff7125b409137")
 	version("1.8.0", commit="0e3542b6aae849b01240d8055a48da1b267bd5a0")
 	version("1.6.0", commit="c2de6c1cdef6294e5d0adea31e4ebf25865742ba")

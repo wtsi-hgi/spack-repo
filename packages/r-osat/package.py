@@ -13,9 +13,8 @@ class ROsat(RPackage):
 	"""
 	
 	homepage = "http://www.biomedcentral.com/1471-2164/13/689"
-	bioc = "OSAT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OSAT_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OSAT/OSAT_1.50.0.tar.gz"]
+	bioc = "OSAT"
 
-	version("1.56.0", tag="RELEASE_3_21")
-	version("1.50.0", sha256="a1f61d1ffe6db8d5193bb42e490cd0fed1d9881274bb374962c2faf18d01ea4d")
+	version("1.56.0", commit="2a6f05f1e91f5331848c8070100fa32771124838")
+	version("1.50.0", commit="24ffc7d05ef9b7e5295342519bdfc13df9c2ffa8")
 

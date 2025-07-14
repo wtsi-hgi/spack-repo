@@ -12,11 +12,10 @@ class RCoveb(RPackage):
 	Using bayesian methods to estimate correlation matrices assuming that they can be written and estimated as block diagonal matrices. These block diagonal matrices are determined using shrinkage parameters that values below this parameter to zero.
 	"""
 	
-	bioc = "covEB" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/covEB_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/covEB/covEB_1.28.0.tar.gz"]
+	bioc = "covEB"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="d3f16a0d1b4ff63d493e1a82b5a53419d9feb28bd983a1f4ff1ae3b6fa800428")
+	version("1.34.0", commit="29ae1f85603c987b8070c0dcbdf399a4a32273a7")
+	version("1.28.0", commit="61481b7f64fe49b9b580b3d6c24a48a19b15ba63")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))

@@ -12,11 +12,10 @@ class RMetabolomicsworkbenchr(RPackage):
 	This package provides functions for interfacing with the Metabolomics Workbench RESTful API. Study, compound, protein and gene information can be searched for using the API. Methods to obtain study data in common Bioconductor formats such as SummarizedExperiment and MultiAssayExperiment are also included.
 	"""
 	
-	bioc = "metabolomicsWorkbenchR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metabolomicsWorkbenchR_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metabolomicsWorkbenchR/metabolomicsWorkbenchR_1.12.0.tar.gz"]
+	bioc = "metabolomicsWorkbenchR"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="63113b093e79341a6ce74410a9a348fc4ad7d895911d12a70c7b5f78858fecb9")
+	version("1.18.0", commit="31c7bb2b01504d45592036fb8726c490e45e8d75")
+	version("1.12.0", commit="262a317025c65ed521ac977978cff7bd76c4b722")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

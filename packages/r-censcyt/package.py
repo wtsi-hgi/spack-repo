@@ -13,11 +13,10 @@ class RCenscyt(RPackage):
 	"""
 	
 	homepage = "https://github.com/retogerber/censcyt"
-	bioc = "censcyt" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/censcyt_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/censcyt/censcyt_1.10.0.tar.gz"]
+	bioc = "censcyt"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="4052c76b9cf8433f657d6d7ae62037659d01e764af9e326b33f3a3b9efdddd71")
+	version("1.16.0", commit="813f6ec517135de3cb8ae94e361f3fe5a7d5f3cd")
+	version("1.10.0", commit="b09fb06dd904796af06c0c404f99dcbf581df0ec")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-diffcyt", type=("build", "run"))

@@ -12,11 +12,10 @@ class ROrthos(RPackage):
 	`orthos` decomposes RNA-seq contrasts, for example obtained from a gene knock-out or compound treatment experiment, into unspecific and experiment-specific components. Original and decomposed contrasts can be efficiently queried against a large database of contrasts (derived from ARCHS4, https://maayanlab.cloud/archs4/) to identify similar experiments. `orthos` furthermore provides plotting functions to visualize the results of such a search for similar contrasts.
 	"""
 	
-	bioc = "orthos" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/orthos_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/orthos/orthos_1.0.1.tar.gz"]
+	bioc = "orthos"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.1", sha256="8b7b30496fe70f7dd55c55a87894b01003cc1628100ed0de5f8b71bdaaa62b6a")
+	version("1.6.0", commit="9656fce0d89fed74cba7fc7b4b842c3ddf166c4b")
+	version("1.0.1", commit="84d1a583305a5e40a0195efa94159d1aa709bda1")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

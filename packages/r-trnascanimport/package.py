@@ -13,11 +13,10 @@ class RTrnascanimport(RPackage):
 	"""
 	
 	homepage = "https://github.com/FelixErnst/tRNAscanImport"
-	bioc = "tRNAscanImport" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tRNAscanImport_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tRNAscanImport/tRNAscanImport_1.22.0.tar.gz"]
+	bioc = "tRNAscanImport"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="f6cf1809194c84d198e032182796abbd9c25847c9201b7193e89fc97eb30d7a3")
+	version("1.28.0", commit="4039806a8e0e0bcc115023ad75a6488051c7879a")
+	version("1.22.0", commit="2f69582c03e699405774b272ca0f320603bac87a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

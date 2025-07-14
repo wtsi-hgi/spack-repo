@@ -13,11 +13,10 @@ class RMsbackendmsp(RPackage):
 	"""
 	
 	homepage = "https://github.com/RforMassSpectrometry/MsBackendMsp"
-	bioc = "MsBackendMsp" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MsBackendMsp_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MsBackendMsp/MsBackendMsp_1.6.0.tar.gz"]
+	bioc = "MsBackendMsp"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="9e748bd8066416c0c2b9f8ba39cd3253ce755c0e45f6af6ae5eb095b9fa666fc")
+	version("1.12.0", commit="5d6dc9b824ced524dce09a61c172508d5a329ac4")
+	version("1.6.0", commit="08ab2178dd77a0e6d4a57232d5813ccf56869990")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-spectra@1.5.14:", type=("build", "run"))

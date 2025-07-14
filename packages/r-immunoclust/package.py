@@ -12,11 +12,10 @@ class RImmunoclust(RPackage):
 	immunoClust is a model based clustering approach for Flow Cytometry samples. The cell-events of single Flow Cytometry samples are modelled by a mixture of multinominal normal- or t-distributions. The cell-event clusters of several samples are modelled by a mixture of multinominal normal-distributions aiming stable co-clusters across these samples.
 	"""
 	
-	bioc = "immunoClust" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/immunoClust_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/immunoClust/immunoClust_1.34.0.tar.gz"]
+	bioc = "immunoClust"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="bf616e931882e308f87abcf79cc558c75f83a181b98a14a3283ff0e2fe14a6d2")
+	version("1.40.0", commit="c20d14fe8c95c248beda7effb19ca0cf8e269714")
+	version("1.34.0", commit="6c8b7f4f36fa7306e784e117c217c1c48bf8276e")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

@@ -13,11 +13,10 @@ class RMartini(RPackage):
 	"""
 	
 	homepage = "https://github.com/hclimente/martini"
-	bioc = "martini" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/martini_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/martini/martini_1.22.0.tar.gz"]
+	bioc = "martini"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="c4873ebed264bc4b396acfe9d54700769a8cdf06d1fd07ea202f5239925dd739")
+	version("1.28.0", commit="0445ae3a9ed74cc0937224ba4c19fd376b94b43b")
+	version("1.22.0", commit="1304224c0b2c6a311072df0dfe139fe7c1cdcbf7")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-igraph@1.0.1:", type=("build", "run"))

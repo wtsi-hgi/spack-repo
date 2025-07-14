@@ -12,11 +12,10 @@ class RSpqndata(RPackage):
 	Bulk RNA-seq from GTEx on 4,000 randomly selected, expressed genes. Data has been processed for co-expression analysis.
 	"""
 	
-	bioc = "spqnData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/spqnData_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/spqnData/spqnData_1.14.0.tar.gz"]
+	bioc = "spqnData"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="9385ec0f87300c878e1119df81cf133d86168a4cb2e14928f487051ece9f764f")
+	version("1.20.0", commit="8598ef66adb7e32a1375e910ad19fa2f1c29e3b2")
+	version("1.14.0", commit="123e5e91725cabeabb352621805f6e21ace7932b")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

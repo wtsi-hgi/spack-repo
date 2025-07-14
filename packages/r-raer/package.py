@@ -13,11 +13,10 @@ class RRaer(RPackage):
 	"""
 	
 	homepage = "https://rnabioco.github.io/raer"
-	bioc = "raer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/raer_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/raer/raer_1.0.2.tar.gz"]
+	bioc = "raer"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.2", sha256="23506fd79e77bbf8f0f29696c3a8d4049da6c6556801a0e7b51de60af685024a")
+	version("1.6.0", commit="9c382c203647b84ff0209c7de8b544ac82a59837")
+	version("1.0.2", commit="852cee5e58b4d2f1010a2c862f69572ed0bcc788")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

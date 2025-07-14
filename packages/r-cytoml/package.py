@@ -13,11 +13,10 @@ class RCytoml(RPackage):
 	"""
 	
 	homepage = "https://github.com/RGLab/CytoML"
-	bioc = "CytoML" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CytoML_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CytoML/CytoML_2.14.0.tar.gz"]
+	bioc = "CytoML"
 
-	version("2.20.0", tag="RELEASE_3_21")
-	version("2.14.0", sha256="c93916697fcea60331518c8afdeef4b38c48f93e592abb1097821aadac7a0973")
+	version("2.20.0", commit="f8765f5131abf4f80057c27c232396726f7b1b0c")
+	version("2.14.0", commit="47100567ec21fd53b5f5752e629432478eb32729")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-cytolib", type=("build", "run"))

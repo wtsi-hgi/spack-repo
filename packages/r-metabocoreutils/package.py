@@ -13,11 +13,10 @@ class RMetabocoreutils(RPackage):
 	"""
 	
 	homepage = "https://github.com/RforMassSpectrometry/MetaboCoreUtils"
-	bioc = "MetaboCoreUtils" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetaboCoreUtils_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetaboCoreUtils/MetaboCoreUtils_1.10.0.tar.gz"]
+	bioc = "MetaboCoreUtils"
 
-	version("1.16.1", tag="RELEASE_3_21")
-	version("1.10.0", sha256="b491e54bac78a8edbb84158748e503d8847d6828bac930c4d511558a7923422f")
+	version("1.16.1", commit="4c476925497886ed1b44e0bd250be71c1deb972a")
+	version("1.10.0", commit="4c181cc74f8e456551ef74debcc25bbb6095d23d")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-mscoreutils", type=("build", "run"))

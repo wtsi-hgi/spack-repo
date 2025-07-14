@@ -12,11 +12,10 @@ class RAbarray(RPackage):
 	Automated pipline to perform gene expression analysis for Applied Biosystems Genome Survey Microarray (AB1700) data format. Functions include data preprocessing, filtering, control probe analysis, statistical analysis in one single function. A GUI interface is also provided. The raw data, processed data, graphics output and statistical results are organized into folders according to the analysis settings used.
 	"""
 	
-	bioc = "ABarray" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ABarray_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ABarray/ABarray_1.70.0.tar.gz"]
+	bioc = "ABarray"
 
-	version("1.76.0", tag="RELEASE_3_21")
-	version("1.70.0", sha256="7b94f046cdcca58dbfb8a9e2c083cb8651874991102e0705272d58634d17385d")
+	version("1.76.0", commit="c9f2673188a8d710bb44dbaf3b226fc8a6529f11")
+	version("1.70.0", commit="fdda0b24c0b81a0b7fecacacae412b2bf94508d6")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-multtest", type=("build", "run"))

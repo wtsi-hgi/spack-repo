@@ -12,11 +12,10 @@ class RColonca(RPackage):
 	exprSet for Alon et al. (1999) colon cancer data
 	"""
 	
-	bioc = "colonCA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/colonCA_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/colonCA/colonCA_1.44.0.tar.gz"]
+	bioc = "colonCA"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="d65d990200d937fef1722289b017c6a47a2b6f3f55e1530c978ec302fdaa7262")
+	version("1.50.0", commit="92f8afdcdfd3354e258e6b3dbbb5d67ec254559c")
+	version("1.44.0", commit="70ea91ad7c86822e8af8ee22ee90f80a8189889e")
 
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))
 

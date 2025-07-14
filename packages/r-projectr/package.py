@@ -13,11 +13,10 @@ class RProjectr(RPackage):
 	"""
 	
 	homepage = "https://github.com/genesofeve/projectR/"
-	bioc = "projectR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/projectR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/projectR/projectR_1.18.0.tar.gz"]
+	bioc = "projectR"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="68062e5d221126a6980162472971aaaf1495a3d2c940927874827504e7b4e8c9")
+	version("1.24.0", commit="f6b54fafe0812a45655c8d55f99a406d27cf8e75")
+	version("1.18.0", commit="91ca9bda369a363ff779c5f584e9299c1b5de25e")
 
 	depends_on("r@4.0.1:", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))

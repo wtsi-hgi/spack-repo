@@ -13,11 +13,10 @@ class RGeoexplorer(RPackage):
 	"""
 	
 	homepage = "https://github.com/guypwhunt/GEOexplorer/"
-	bioc = "GEOexplorer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEOexplorer_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEOexplorer/GEOexplorer_1.8.0.tar.gz"]
+	bioc = "GEOexplorer"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="fce2f86eb58a9ba5892e33f9d4c31d6b05a129c16096e2ba021d8ab6b0d412ca")
+	version("1.14.0", commit="715a905653ca516721f0cfc7800f15e97db70454")
+	version("1.8.0", commit="b53ee6cf7efd3609fdfb2e812ac4cd14793c32b1")
 
 	depends_on("r-shiny", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

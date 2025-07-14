@@ -12,11 +12,10 @@ class RSim(RPackage):
 	Finds associations between two human genomic datasets.
 	"""
 	
-	bioc = "SIM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SIM_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SIM/SIM_1.72.0.tar.gz"]
+	bioc = "SIM"
 
-	version("1.78.0", tag="RELEASE_3_21")
-	version("1.72.0", sha256="d36d0744e2f24b175ee4f479b1deca86dc80d67eb1ea87c722e2723f563fec79")
+	version("1.78.0", commit="7db6f1681543932e552dffd53045dc5543fe4b6a")
+	version("1.72.0", commit="33f72d9b41b1e969f35ee838e30419724c23ccf4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-quantreg", type=("build", "run"))

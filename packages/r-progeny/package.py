@@ -13,11 +13,10 @@ class RProgeny(RPackage):
 	"""
 	
 	homepage = "https://github.com/saezlab/progeny"
-	bioc = "progeny" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/progeny_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/progeny/progeny_1.24.0.tar.gz"]
+	bioc = "progeny"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="14b3f8e2ff46459f5c5bccc962edd38e2068b1fbff62878881ebf4ea44e48fde")
+	version("1.30.0", commit="6c29774474f22cb8c3425fca978a5c526e473b6f")
+	version("1.24.0", commit="590eaf5d16abfe43f46e410aa08b26ab17c8ae72")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

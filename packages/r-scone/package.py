@@ -12,11 +12,10 @@ class RScone(RPackage):
 	SCONE is an R package for comparing and ranking the performance of different normalization schemes for single-cell RNA-seq and other high-throughput analyses.
 	"""
 	
-	bioc = "scone" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scone_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scone/scone_1.26.0.tar.gz"]
+	bioc = "scone"
 
-	version("1.32.1", tag="RELEASE_3_21")
-	version("1.26.0", sha256="978a707c82d74972e47201d957f8fbc4cfefb0b2e2ef2a130466c17220a40bf8")
+	version("1.32.1", commit="52efae739f2ddcb86129156d82a28147c6c0cf6a")
+	version("1.26.0", commit="a7873ee3596d238ef12792c59a630bc009ee6e3b")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -12,11 +12,10 @@ class RSangeranalyser(RPackage):
 	This package builds on sangerseqR to allow users to create contigs from collections of Sanger sequencing reads. It provides a wide range of options for a number of commonly-performed actions including read trimming, detecting secondary peaks, and detecting indels using a reference sequence. All parameters can be adjusted interactively either in R or in the associated Shiny applications. There is extensive online documentation, and the package can outputs detailed HTML reports, including chromatograms.
 	"""
 	
-	bioc = "sangeranalyseR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sangeranalyseR_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sangeranalyseR/sangeranalyseR_1.12.0.tar.gz"]
+	bioc = "sangeranalyseR"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="25b8ef1292d325dcc71805340ae5b0a628a843b6905307f9e3d101ee9d356935")
+	version("1.18.0", commit="b617df01367d2db44cd1c072f00b552256bc9548")
+	version("1.12.0", commit="dd9c501dcda9da145e0028062104167ed819a4dd")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))

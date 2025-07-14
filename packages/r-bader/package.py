@@ -12,9 +12,8 @@ class RBader(RPackage):
 	For RNA sequencing count data, BADER fits a Bayesian hierarchical model. The algorithm returns the posterior probability of differential expression for each gene between two groups A and B. The joint posterior distribution of the variables in the model can be returned in the form of posterior samples, which can be used for further down-stream analyses such as gene set enrichment.
 	"""
 	
-	bioc = "BADER" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BADER_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BADER/BADER_1.40.0.tar.gz"]
+	bioc = "BADER"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="d597dfa44e9c0dffc8bae73cced5b21bfeea76fb7523f2d84bd36a4e8f3aae7e")
+	version("1.46.0", commit="74b73591f21fd33ea77f807849398315a991a7d3")
+	version("1.40.0", commit="a9aada30b45fe055764acd2ab414f947afcb6aba")
 

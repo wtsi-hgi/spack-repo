@@ -13,11 +13,10 @@ class RHilbertcurve(RPackage):
 	"""
 	
 	homepage = "https://github.com/jokergoo/HilbertCurve"
-	bioc = "HilbertCurve" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HilbertCurve_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HilbertCurve/HilbertCurve_1.32.0.tar.gz"]
+	bioc = "HilbertCurve"
 
-	version("2.2.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="c8a23721389fc2d1bd308316740aba1ae546733a3a47c3ecb9f61305c92ea710")
+	version("2.2.0", commit="9b25d2c9e95fe058e6a86d0a75976747bac48ec8")
+	version("1.32.0", commit="19651e36dab1f82fec219386290b79e6a6a373de")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-hilbertvis", type=("build", "run"))

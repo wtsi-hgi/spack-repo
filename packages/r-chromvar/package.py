@@ -12,14 +12,8 @@ class RChromvar(RPackage):
 	Determine variation in chromatin accessibility across sets of annotations or peaks. Designed primarily for single-cell or sparse chromatin accessibility data, e.g. from scATAC-seq or sparse bulk ATAC or DNAse-seq experiments.
 	"""
 
-	bioc = "chromVAR"
-	urls = [
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chromVAR_1.24.0.tar.gz",
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chromVAR/chromVAR_1.24.0.tar.gz",
-	]
-
-	version("1.30.1", tag="RELEASE_3_21")
-	version("1.24.0", sha256="7d076b9f24dc06a75548608c60a3db6daec2278005be695f132bad220c28c6ef")
+	bioc = "chromVAR"version("1.30.1", commit="c6c5a2cd718fb0bf95b928800133a072c275e8b7")
+	version("1.24.0", commit="e2d61b06f8582c97ea83f351757aca9770638a2a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

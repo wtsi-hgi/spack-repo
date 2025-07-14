@@ -13,11 +13,10 @@ class RSnapcount(RPackage):
 	"""
 	
 	homepage = "https://github.com/langmead-lab/snapcount"
-	bioc = "snapcount" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/snapcount_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/snapcount/snapcount_1.14.0.tar.gz"]
+	bioc = "snapcount"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="0cf9207d607210d18ce0c8240ba0f040cde8c044fb11d673e3435c3f6466227a")
+	version("1.20.0", commit="6887f2cbf787f1b000d258ee50eeadb37e72edf4")
+	version("1.14.0", commit="4cafac13ed8c91e3366818bbb7ffa5889e0e12ab")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

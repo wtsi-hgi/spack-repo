@@ -12,11 +12,10 @@ class RZinbwave(RPackage):
 	Implements a general and flexible zero-inflated negative binomial model that can be used to provide a low-dimensional representations of single-cell RNA-seq data. The model accounts for zero inflation (dropouts), over-dispersion, and the count nature of the data. The model also accounts for the difference in library sizes and optionally for batch effects and/or other covariates, avoiding the need for pre-normalize the data.
 	"""
 	
-	bioc = "zinbwave" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/zinbwave_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/zinbwave/zinbwave_1.24.0.tar.gz"]
+	bioc = "zinbwave"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="310c8758283aa31b017606514d6f4b0f81336b21cc1f1fd357f300965feae8d2")
+	version("1.30.0", commit="e7936299e04c25e0f478269d66183a924ed8445f")
+	version("1.24.0", commit="84ae0eaf848045da5921d8a2d9555b7197dfc8af")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

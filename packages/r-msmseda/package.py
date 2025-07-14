@@ -12,11 +12,10 @@ class RMsmseda(RPackage):
 	Exploratory data analysis to assess the quality of a set of LC-MS/MS experiments, and visualize de influence of the involved factors.
 	"""
 	
-	bioc = "msmsEDA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msmsEDA_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msmsEDA/msmsEDA_1.40.0.tar.gz"]
+	bioc = "msmsEDA"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="4cd47b24baf22fe8be7b42bc442be95eeb0d1f4b40352f70309614d3479eb277")
+	version("1.46.0", commit="f2d10a2ad7fec19d56561401b4aa030ed75d1eda")
+	version("1.40.0", commit="4137b239a1003d6e4b7ff0904c54defc85b190a5")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-msnbase", type=("build", "run"))

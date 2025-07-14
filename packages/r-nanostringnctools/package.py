@@ -12,10 +12,9 @@ class RNanostringnctools(RPackage):
 	Tools for NanoString Technologies nCounter Technology. Provides support for reading RCC files into an ExpressionSet derived object.  Also includes methods for QC and normalizaztion of NanoString data.
 	"""
 	
-	bioc = "NanoStringNCTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NanoStringNCTools_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NanoStringNCTools/NanoStringNCTools_1.10.0.tar.gz"]
+	bioc = "NanoStringNCTools"
 
-	version("1.16.1", tag="RELEASE_3_21")
+	version("1.16.1", commit="fa899ec908179b7619aadeb1ed6904c8cef1bcd6")
 	version("1.10.0", md5="97985a577c04cc2d7c19d00f2bd8e1d1")
 
 	depends_on("r@3.6:", type=("build", "run"))

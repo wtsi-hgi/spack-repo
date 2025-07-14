@@ -12,11 +12,10 @@ class RArrayexpress(RPackage):
 	Access the ArrayExpress Collection at EMBL-EBI Biostudies and build Bioconductor data structures: ExpressionSet, AffyBatch, NChannelSet.
 	"""
 	
-	bioc = "ArrayExpress" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ArrayExpress_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ArrayExpress/ArrayExpress_1.62.0.tar.gz"]
+	bioc = "ArrayExpress"
 
-	version("1.68.0", tag="RELEASE_3_21")
-	version("1.62.0", sha256="5992297a2d64cfc580a42b7afb0d85597090e1ab412931e0c5e52f9c4d36cb32")
+	version("1.68.0", commit="291c677792b4919752f5855a1a50e3c368106d40")
+	version("1.62.0", commit="52f3e7caae1845336819875b1f3214f93ea0f3bf")
 
 	depends_on("r@2.9:", type=("build", "run"))
 	depends_on("r-biobase@2.4:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RSechm(RPackage):
 	sechm provides a simple interface between SummarizedExperiment objects and the ComplexHeatmap package. It enables plotting annotated heatmaps from SE objects, with easy access to rowData and colData columns, and implements a number of features to make the generation of heatmaps easier and more flexible. These functionalities used to be part of the SEtools package.
 	"""
 	
-	bioc = "sechm" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sechm_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sechm/sechm_1.10.0.tar.gz"]
+	bioc = "sechm"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="73cddc4f2399d0021017647608873b82620419c289ef6a833f8deff737360ba7")
+	version("1.16.0", commit="e0ed11f96bb45bb0bcd75625476ea73ccbe88755")
+	version("1.10.0", commit="576eb76d2e6e41870b8e399d70ee2ae86acc5a4e")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

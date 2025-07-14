@@ -13,11 +13,10 @@ class RFlowploidy(RPackage):
 	"""
 	
 	homepage = "https://github.com/plantarum/flowPloidy"
-	bioc = "flowPloidy" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowPloidy_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowPloidy/flowPloidy_1.28.0.tar.gz"]
+	bioc = "flowPloidy"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="3078a349c1c365eb2d2cebcd1e947b5c554104396e84a3dc34e98aeb7456f5e6")
+	version("1.34.0", commit="7ba67516cb797af7691fa4724b9e5e915a56a91f")
+	version("1.28.0", commit="36f0e2b063d6f78e2f5f812d65ee39089133ffe1")
 
 	depends_on("r-flowcore", type=("build", "run"))
 	depends_on("r-car", type=("build", "run"))

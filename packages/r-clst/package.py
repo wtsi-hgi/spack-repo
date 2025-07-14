@@ -12,11 +12,10 @@ class RClst(RPackage):
 	Package for modified nearest-neighbor classification based on calculation of a similarity threshold distinguishing within-group from between-group comparisons.
 	"""
 	
-	bioc = "clst" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clst_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clst/clst_1.50.0.tar.gz"]
+	bioc = "clst"
 
-	version("1.56.0", tag="RELEASE_3_21")
-	version("1.50.0", sha256="824809724263d7dfbe27e8c153d4e2dee7b02bd8428090a712d0fcacd9947251")
+	version("1.56.0", commit="f51c525286f64afe0239137018b3f98157333b78")
+	version("1.50.0", commit="203089bc3ad9756e4e188ade216f00166f686dc1")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-roc", type=("build", "run"))

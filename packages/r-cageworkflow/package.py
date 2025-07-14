@@ -12,11 +12,10 @@ class RCageworkflow(RPackage):
 	Workflow for analyzing Cap Analysis of Gene Expression (CAGE) data using R/Bioconductor.
 	"""
 	
-	bioc = "CAGEWorkflow" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/CAGEWorkflow_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/CAGEWorkflow/CAGEWorkflow_1.18.0.tar.gz"]
+	bioc = "CAGEWorkflow"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="2606c63dded520df16002092fcbd35431ebf93e27461045f8950b74b02dca600")
+	version("1.24.0", commit="0819ec30e380d5dcaabca667aed87a2a4b634fed")
+	version("1.18.0", commit="e4cca1f6532706dcc353aee3aa1bc3671cdda765")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-cagefightr", type=("build", "run"))

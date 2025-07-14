@@ -12,11 +12,10 @@ class REasyrnaseq(RPackage):
 	Calculates the coverage of high-throughput short-reads against a genome of reference and summarizes it per feature of interest (e.g. exon, gene, transcript). The data can be normalized as 'RPKM' or by the 'DESeq' or 'edgeR' package.
 	"""
 	
-	bioc = "easyRNASeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/easyRNASeq_2.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/easyRNASeq/easyRNASeq_2.38.0.tar.gz"]
+	bioc = "easyRNASeq"
 
-	version("2.44.0", tag="RELEASE_3_21")
-	version("2.38.0", sha256="ff0a8a4472bfd493ea80d8013d367e35c9d8a2042637658adb2fe089925c3942")
+	version("2.44.0", commit="8c15d8f4a77449eb23010648d0708bb0a38f6b3d")
+	version("2.38.0", commit="e7d99c2cdf49653ef0c483bb69d47b2a8ce18d0b")
 
 	depends_on("r-biobase@2.50:", type=("build", "run"))
 	depends_on("r-biocfilecache@1.14:", type=("build", "run"))

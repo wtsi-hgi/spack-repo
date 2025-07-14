@@ -12,11 +12,10 @@ class RCuratedtcgadata(RPackage):
 	This package provides publicly available data from The Cancer Genome Atlas (TCGA) as MultiAssayExperiment objects. MultiAssayExperiment integrates multiple assays (e.g., RNA-seq, copy number, mutation, microRNA, protein, and others) with clinical / pathological data. It also links assay barcodes with patient identifiers, enabling harmonized subsetting of rows (features) and columns (patients / samples) across the entire multi-'omics experiment.
 	"""
 	
-	bioc = "curatedTCGAData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedTCGAData_1.24.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedTCGAData/curatedTCGAData_1.24.1.tar.gz"]
+	bioc = "curatedTCGAData"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.1", sha256="02fc923472c319b25f866ef3038c8ab613e2a515ad77f6a376df9242d1352643")
+	version("1.30.0", commit="2bb3b337490dd0044e72e2cc4b4d4d3a83a5e2ee")
+	version("1.24.1", commit="535c81a182aff87dc4430d0e3ce402da97e1c226")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-multiassayexperiment", type=("build", "run"))

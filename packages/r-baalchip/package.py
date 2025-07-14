@@ -12,11 +12,10 @@ class RBaalchip(RPackage):
 	The package offers functions to process multiple ChIP-seq BAM files and detect allele-specific events. Computes allele counts at individual variants (SNPs/SNVs), implements extensive QC steps to remove problematic variants, and utilizes a bayesian framework to identify statistically significant allele- specific events. BaalChIP is able to account for copy number differences between the two alleles, a known phenotypical feature of cancer samples.
 	"""
 	
-	bioc = "BaalChIP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BaalChIP_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BaalChIP/BaalChIP_1.28.0.tar.gz"]
+	bioc = "BaalChIP"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="3b3321a86b09a6b51ee084300b48daef0bcfb82787c4c38f6f98702ac2ad0834")
+	version("1.34.0", commit="2ae8ed69501572ff99436076344b1721c2e91cc5")
+	version("1.28.0", commit="7efb03671084ce45ee37b5f2c740e5ad45615bd6")
 
 	depends_on("r@3.3.1:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

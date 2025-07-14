@@ -13,11 +13,10 @@ class RLemur(RPackage):
 	"""
 	
 	homepage = "https://github.com/const-ae/lemur"
-	bioc = "lemur" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lemur_1.0.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lemur/lemur_1.0.5.tar.gz"]
+	bioc = "lemur"
 
-	version("1.6.1", tag="RELEASE_3_21")
-	version("1.0.5", sha256="404872c1445449b5bc268054627e456a1d074f3c05f3cacf78da2572ead1e980")
+	version("1.6.1", commit="126bb86b9a156002c05e7b367a15c77b1a10a114")
+	version("1.0.5", commit="001ae9fc6bb6c79107f58553220b8e7e7c52f956")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-irlba", type=("build", "run"))

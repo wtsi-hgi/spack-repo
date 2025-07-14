@@ -12,11 +12,10 @@ class RBloodgen3module(RPackage):
 	The BloodGen3Module package provides functions for R user performing module repertoire analyses and generating fingerprint representations. Functions can perform group comparison or individual sample analysis and visualization by fingerprint grid plot or fingerprint heatmap. Module repertoire analyses typically involve determining the percentage of the constitutive genes for each module that are significantly increased or decreased. As we describe in details;https://www.biorxiv.org/content/10.1101/525709v2 and https://pubmed.ncbi.nlm.nih.gov/33624743/, the results of module repertoire analyses can be represented in a fingerprint format, where red and blue spots indicate increases or decreases in module activity. These spots are subsequently represented either on a grid, with each position being assigned to a given module, or in a heatmap where the samples are arranged in columns and the modules in rows.
 	"""
 	
-	bioc = "BloodGen3Module" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BloodGen3Module_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BloodGen3Module/BloodGen3Module_1.10.0.tar.gz"]
+	bioc = "BloodGen3Module"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="6cd56e6aa6a311a08c0fcbfd3cd77199cb403ec9f7712b63c61b7cd9dec5ef5b")
+	version("1.16.0", commit="c6e21edb36d2c094b15b10523f6e8a84fe7a57f0")
+	version("1.10.0", commit="388b9c68897889d0e7c8355ce6c160a6f71609dc")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

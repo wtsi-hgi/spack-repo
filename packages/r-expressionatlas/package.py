@@ -12,11 +12,10 @@ class RExpressionatlas(RPackage):
 	This package is for searching for datasets in EMBL-EBI Expression Atlas, and downloading them into R for further analysis. Each Expression Atlas dataset is represented as a SimpleList object with one element per platform. Sequencing data is contained in a SummarizedExperiment object, while microarray data is contained in an ExpressionSet or MAList object.
 	"""
 	
-	bioc = "ExpressionAtlas" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExpressionAtlas_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExpressionAtlas/ExpressionAtlas_1.30.0.tar.gz"]
+	bioc = "ExpressionAtlas"
 
-	version("2.0.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="106a8ed704ad1cb29c6f30b8d8a39c7419c560349d19094eab5c355a2af93fe7")
+	version("2.0.0", commit="ba47133d21353651cf7de3dd7526e8278cc94fed")
+	version("1.30.0", commit="62d01eee1576fd093c5aeb52997523c8539ddf66")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -13,11 +13,10 @@ class RCuratedtbdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/compbiomed/curatedTBData"
-	bioc = "curatedTBData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedTBData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedTBData/curatedTBData_1.8.0.tar.gz"]
+	bioc = "curatedTBData"
 
-	version("2.4.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="1a675f4a41186e1144bb83134b84e1a521772eeaa01b31228db1197e8399cc84")
+	version("2.4.0", commit="01d2f0d038d278e19ffc896eb8298e217735fe48")
+	version("1.8.0", commit="7433b35ea15e79aff906c8672a0aeea2f7631e67")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

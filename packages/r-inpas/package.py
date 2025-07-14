@@ -12,11 +12,10 @@ class RInpas(RPackage):
 	Alternative polyadenylation (APA) is one of the important post- transcriptional regulation mechanisms which occurs in most human genes. InPAS facilitates the discovery of novel APA sites and the differential usage of APA sites from RNA-Seq data. It leverages cleanUpdTSeq to fine tune identified APA sites by removing false sites.
 	"""
 	
-	bioc = "InPAS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/InPAS_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/InPAS/InPAS_2.10.0.tar.gz"]
+	bioc = "InPAS"
 
-	version("2.16.0", tag="RELEASE_3_21")
-	version("2.10.0", sha256="3e4a8db2ee1472e21f8ed71598a0e795acc80c321d14fef5d99e2d5f3aa64519")
+	version("2.16.0", commit="fe2aa021400e0505f0f2b82cca727e380e018e28")
+	version("2.10.0", commit="a2f35385912897ce38e93e2376fd5a09d0d87f98")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

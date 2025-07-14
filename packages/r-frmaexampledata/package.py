@@ -12,11 +12,10 @@ class RFrmaexampledata(RPackage):
 	Data files used by the examples in frma and frmaTools packages
 	"""
 	
-	bioc = "frmaExampleData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/frmaExampleData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/frmaExampleData/frmaExampleData_1.38.0.tar.gz"]
+	bioc = "frmaExampleData"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="5b735bb44b490613a7eaef45b6be51b08169f26473fb76c0ec24da3b6504b069")
+	version("1.44.0", commit="aefb4d929a9d08e52d92b4a6d2b684af0e82b446")
+	version("1.38.0", commit="5077fc6ca76f3b49ed7f0a0d89125a232d700ef9")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

@@ -13,11 +13,10 @@ class RSccomp(RPackage):
 	"""
 	
 	homepage = "https://github.com/stemangiola/sccomp"
-	bioc = "sccomp" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sccomp_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sccomp/sccomp_1.6.0.tar.gz"]
+	bioc = "sccomp"
 
-	version("2.0.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="d1f4216eb85d47ff8a2f6403ab7a483b09cade88df5387ed5e9fca7f5c7c97a5")
+	version("2.0.0", commit="a4668822705280dfc67d029e9b1faadfe504ca00")
+	version("1.6.0", commit="a9c2d70e1b06c86d053e7a700be224fa91d27c01")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rcpp@0.12:", type=("build", "run"))

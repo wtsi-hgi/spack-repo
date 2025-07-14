@@ -12,11 +12,10 @@ class RAsicsdata(RPackage):
 	1D NMR example spectra and additional data for use with the ASICS package. Raw 1D Bruker spectral data files were found in the MetaboLights database (https://www.ebi.ac.uk/metabolights/, study MTBLS1).
 	"""
 	
-	bioc = "ASICSdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ASICSdata_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ASICSdata/ASICSdata_1.22.0.tar.gz"]
+	bioc = "ASICSdata"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="c8b8d4df88e867d25a515212e3debde68728f51a3b35f2f1c5fb0c96e411b507")
+	version("1.28.0", commit="71150d9c8b87ee6672f9fa97b44d2733f3e57d50")
+	version("1.22.0", commit="4ba8a30d96797324574b16fae994fe2582f7ae53")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

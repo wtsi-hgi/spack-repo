@@ -15,10 +15,9 @@ class REnrichplot(RPackage):
 	graphics."""
 
 	bioc = "enrichplot"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/enrichplot_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/enrichplot/enrichplot_1.22.0.tar.gz"]
-	version("1.28.2", tag="RELEASE_3_21")
+	version("1.28.2", commit="b89d6d4b69b782458d73c2cd30d4c1446e080450")
 	version("1.4.0", commit="6ffe5d9c5dbe5cbea29f2e0941595475bbbcea0e")
-	version("1.22.0", sha256="9d52274b4a0b2e31c448a343f35dcd54426660a89f3a5c414490d8d59449fa16")
+	version("1.22.0", commit="6277b76898e14b6cde758186bb3870632132ab16")
 	version("1.20.0", commit="ae72efe5f2ded561958f95bc8b1b41c0fc79840e")
 	version("1.2.0", commit="2eeaafb571d35a106eba8ae7df014f3201066e8b")
 	version("1.18.0", commit="61ea941784a1ed6cc604af1c1cc4532b8b5fcea7")

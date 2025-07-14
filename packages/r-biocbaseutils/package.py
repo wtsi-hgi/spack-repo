@@ -12,10 +12,9 @@ class RBiocbaseutils(RPackage):
 	The package provides utility functions related to package development. These include functions that replace slots, and selectors for show methods. It aims to coalesce the various helper functions often re-used throughout the Bioconductor ecosystem.
 	"""
 	
-	bioc = "BiocBaseUtils" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocBaseUtils_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocBaseUtils/BiocBaseUtils_1.4.0.tar.gz"]
+	bioc = "BiocBaseUtils"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="e588788262936ed9cc83ab198ec4a0e3b95f92af6cd443a66d1b6c9827fa32a1")
+	version("1.10.0", commit="af524da83589d37e1455ee1194efdfc3cafca0e5")
+	version("1.4.0", commit="441d95a4e83f0d5eb6f016cd355bcc155ec69369")
 
 	depends_on("r@4.2:", type=("build", "run"))

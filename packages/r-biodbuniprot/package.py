@@ -13,11 +13,10 @@ class RBiodbuniprot(RPackage):
 	"""
 	
 	homepage = "https://github.com/pkrog/biodbUniprot"
-	bioc = "biodbUniprot" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbUniprot_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbUniprot/biodbUniprot_1.8.0.tar.gz"]
+	bioc = "biodbUniprot"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="e10d901ee93fed805d225c5f5b1cce4eb6644a4bfd17cd3bb7fc42a1870658a6")
+	version("1.14.0", commit="9bc6bb0d5a1e140c037238663f369ecf221e8930")
+	version("1.8.0", commit="7b6e6b7960f233adfc836c807c0c44b25acaa013")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

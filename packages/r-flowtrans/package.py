@@ -12,11 +12,10 @@ class RFlowtrans(RPackage):
 	Profile maximum likelihood estimation of parameters for flow cytometry data transformations.
 	"""
 	
-	bioc = "flowTrans" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowTrans_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowTrans/flowTrans_1.54.0.tar.gz"]
+	bioc = "flowTrans"
 
-	version("1.60.0", tag="RELEASE_3_21")
-	version("1.54.0", sha256="ffc70e970ae8174e7068d812fce924e53496ea55a448d57fe129a4eedf58db61")
+	version("1.60.0", commit="0a9dedb16e582d27a1c5e74322f49be137d86048")
+	version("1.54.0", commit="364b62432f2668d55ce9206b838cbd33d3be77c2")
 
 	depends_on("r@2.11:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

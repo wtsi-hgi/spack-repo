@@ -13,11 +13,10 @@ class RGwasurvivr(RPackage):
 	"""
 	
 	homepage = "https://github.com/suchestoncampbelllab/gwasurvivr"
-	bioc = "gwasurvivr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gwasurvivr_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gwasurvivr/gwasurvivr_1.20.0.tar.gz"]
+	bioc = "gwasurvivr"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="8d7d4f100fb128c80105d8341d1eaa063dc5d22d109ae005735c45e0f62fb771")
+	version("1.26.0", commit="5478a68a557d4ecc47ee9564b63f1900db34aa62")
+	version("1.20.0", commit="34fb4cb8db6edaab5c99a3fd8d66406bb6918c53")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-gwastools", type=("build", "run"))

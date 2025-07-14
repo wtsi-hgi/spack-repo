@@ -13,11 +13,10 @@ class RHicvenndiagram(RPackage):
 	"""
 	
 	homepage = "https://github.com/jianhong/hicVennDiagram"
-	bioc = "hicVennDiagram" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hicVennDiagram_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hicVennDiagram/hicVennDiagram_1.0.2.tar.gz"]
+	bioc = "hicVennDiagram"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.2", sha256="da30c0910f01f2682fb924625ccc3590db17318a160adbe13755802b32282f1b")
+	version("1.6.0", commit="30f55ec86b3cfa328a10f2d8bd32296dd70e887d")
+	version("1.0.2", commit="eaa5d4d93a60b52b7e68339b59e1b0feb8470bb4")
 	version("1.0.0", md5="11577b64cc67b69e4b9d712a76cd3310")
 
 	depends_on("r@4.3:", type=("build", "run"))

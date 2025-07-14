@@ -12,11 +12,10 @@ class RCmap2data(RPackage):
 	Data package which provides default drug profiles for the DrugVsDisease package as well as associated gene lists and data clusters used by the DrugVsDisease package.
 	"""
 	
-	bioc = "cMap2data" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/cMap2data_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/cMap2data/cMap2data_1.38.0.tar.gz"]
+	bioc = "cMap2data"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="8d3b9a65860f5efad950e8619c02d47c173f715b5209601c282bf0815fda5eb4")
+	version("1.44.0", commit="ab401ed513864172e14c508ca54e90eb6862b385")
+	version("1.38.0", commit="39393da6a237dd70abd087419bd255e99ff2679b")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

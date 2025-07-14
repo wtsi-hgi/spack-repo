@@ -12,11 +12,10 @@ class RCghmcr(RPackage):
 	This package provides functions to identify genomic regions of interests based on segmented copy number data from multiple samples.
 	"""
 	
-	bioc = "cghMCR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cghMCR_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cghMCR/cghMCR_1.60.0.tar.gz"]
+	bioc = "cghMCR"
 
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="f99cb0d0e4337d6a5656b955c73c877e80fb2d49583b546928e748d59fa64b47")
+	version("1.66.0", commit="5c037e56e40d494bbee947b4e1b18d0e7bf166e0")
+	version("1.60.0", commit="f965259ceb59d5f7b3104ced7782cd546987e9cf")
 
 	depends_on("r-dnacopy", type=("build", "run"))
 	depends_on("r-cntools", type=("build", "run"))

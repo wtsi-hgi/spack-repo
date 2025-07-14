@@ -12,11 +12,10 @@ class RPartcnv(RPackage):
 	This package uses a statistical framework for rapid and accurate detection of aneuploid cells with local copy number deletion or amplification. Our method uses an EM algorithm with mixtures of Poisson distributions while incorporating cytogenetics information (e.g., regional deletion or amplification) to guide the classification (partCNV). When applicable, we further improve the accuracy by integrating a Hidden Markov Model for feature selection (partCNVH).
 	"""
 	
-	bioc = "partCNV" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/partCNV_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/partCNV/partCNV_1.0.0.tar.gz"]
+	bioc = "partCNV"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="4a948e65fe1f20118f9f5642e23fa35b92bfae680b5da1762084e88e187d8a95")
+	version("1.6.0", commit="6d45f26189a92520ea1c2d77424263a87fc2b4a8")
+	version("1.0.0", commit="4075147c471b72fdf0f6c3c7b716e1773d5d82de")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

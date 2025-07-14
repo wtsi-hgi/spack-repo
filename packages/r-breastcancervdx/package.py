@@ -13,11 +13,10 @@ class RBreastcancervdx(RPackage):
 	"""
 	
 	homepage = "http://compbio.dfci.harvard.edu/"
-	bioc = "breastCancerVDX" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/breastCancerVDX_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/breastCancerVDX/breastCancerVDX_1.40.0.tar.gz"]
+	bioc = "breastCancerVDX"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="c03d04aa3e347b6153f0f68cc38218a4f8a93957386ce43b03596b3028fe288b")
+	version("1.46.0", commit="fd1a1eeaeeb53e9b6e036cd7f98e777341c8dc5c")
+	version("1.40.0", commit="cee47a68981fb6f90610fc8b45392d1c000af29f")
 
 	depends_on("r@2.5:", type=("build", "run"))
 

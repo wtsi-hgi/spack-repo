@@ -12,11 +12,10 @@ class RMetacyto(RPackage):
 	This package provides functions for preprocessing, automated gating and meta-analysis of cytometry data. It also provides functions that facilitate the collection of cytometry data from the ImmPort database.
 	"""
 	
-	bioc = "MetaCyto" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetaCyto_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetaCyto/MetaCyto_1.24.0.tar.gz"]
+	bioc = "MetaCyto"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="2620c71f14b3a7ebc71b4b68da19ea2a7428cbfe0242bf32a93aed74fb6fdc9d")
+	version("1.30.0", commit="d025804d8dfb487dbe31706cba0231440a6b51bc")
+	version("1.24.0", commit="26465dc6c12dad9574da2fb6662173b76c8dc953")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-flowcore@1.4:", type=("build", "run"))

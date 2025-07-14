@@ -15,9 +15,8 @@ class RZlibbioc(RPackage):
 	for this package). See the vignette for instructions on use."""
 
 	bioc = "zlibbioc"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/zlibbioc_1.48.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/zlibbioc/zlibbioc_1.48.2.tar.gz"]
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.2", sha256="0de1bcc5b175f69216a68a721d70f3df7e02e7864c72908f7816b0cf7d0c1b1d")
+	version("1.54.0", commit="cbbff222e091226cc0917e4632374c1afd8ea0cc")
+	version("1.48.2", commit="260bc44878b77150eccf29caecac356c8f2f9275")
 	version("1.48.0", md5="babdaf77bc9e9e8218fa07d643f31730")
 	version("1.46.0", commit="f475457ece2c2b5fc9e6a91a3084dcba2345ab0a")
 	version("1.44.0", commit="d39f0b02fa108ab907b4042c00a114569430a333")

@@ -18,9 +18,8 @@ class REdger(RPackage):
 	Bisulfite-seq, SAGE and CAGE."""
 
 	bioc = "edgeR"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/edgeR_4.0.16.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/edgeR/edgeR_4.0.16.tar.gz"]
-	version("4.6.3", tag="RELEASE_3_21")
-	version("4.0.16", sha256="d145e4f8423632dbea1cf1c2e53ae72ea05a937924090f3c4aff6bcd035cd449")
+	version("4.6.3", commit="0dc836a7c8e53633bb7817d55b27128ceb898ac9")
+	version("4.0.16", commit="1e37a9b4c0660174016925d6294221e9ac9d5ea2")
 	version("3.42.0", commit="197b9a8ccc27016611b262c2c31ca22f991661c5")
 	version("3.40.0", commit="0b25adcc6b3cb0a8c641964d1274536ee07ee162")
 	version("3.38.4", commit="f5a3bb568a23b34146ac66329a95ee4785093536")

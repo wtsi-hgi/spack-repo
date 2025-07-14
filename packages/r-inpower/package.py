@@ -12,11 +12,10 @@ class RInpower(RPackage):
 	An R package for computing the number of susceptibility SNPs and power of future studies
 	"""
 	
-	bioc = "INPower" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/INPower_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/INPower/INPower_1.38.0.tar.gz"]
+	bioc = "INPower"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="09a0f32decdf2ac1d3cc72ff14d8526e08dae530ed156de0c064644dc1a76656")
+	version("1.44.0", commit="e45ad402604da3acf3aaafcb78876c1fbdbeda38")
+	version("1.38.0", commit="61d11e30173162a13941ecedc9b7a67a83067958")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))

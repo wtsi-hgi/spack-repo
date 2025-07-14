@@ -13,11 +13,10 @@ class RCmapr(RPackage):
 	"""
 	
 	homepage = "https://github.com/cmap/cmapR"
-	bioc = "cmapR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cmapR_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cmapR/cmapR_1.14.0.tar.gz"]
+	bioc = "cmapR"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="95a8e4e03f76331b0b09ad170ee98b8250d79eb90e5c5bd3f9c59cb0feabdc0a")
+	version("1.20.0", commit="9b120614372b497c8c663cb0ccb450ab2a4965d8")
+	version("1.14.0", commit="34c94ada3dc345694a818f3c1fcbf07be8804263")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rhdf5", type=("build", "run"))

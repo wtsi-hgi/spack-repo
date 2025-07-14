@@ -12,11 +12,10 @@ class RHpoDb(RPackage):
 	Human Phenotype Ontology (HPO) was developed to create a consistent description of gene products with disease perspectives, and is essential for supporting functional genomics in disease context. Accurate disease descriptions can discover new relationships between genes and disease, and new functions for previous uncharacteried genes and alleles.We have developed the [DOSE](https://bioconductor.org/packages/DOSE/) package for semantic similarity analysis and disease enrichment analysis, and `DOSE` import an Bioconductor package 'DO.db' to get the relationship(such as parent and child) between MPO terms. But `DO.db` hasn't been updated for years, and a lot of semantic information is [missing](https://github.com/YuLab-SMU/DOSE/issues/57). So we developed the new package `HPO.db` for Human Human Phenotype Ontology annotation.
 	"""
 	
-	bioc = "HPO.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/HPO.db_0.99.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/HPO.db/HPO.db_0.99.2.tar.gz"]
+	bioc = "HPO.db"
 
-	version("0.99.2", tag="RELEASE_3_21")
-	version("0.99.2", sha256="5a71c0bd81f238de1fdfc5c49ee2ed3dc27c69996f18a3103407faed94cd3faf")
+	version("0.99.2", commit="72ed6ba215b80f77daa372b28b07f92080bf2ac8")
+	version("0.99.2", commit="72ed6ba215b80f77daa372b28b07f92080bf2ac8")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

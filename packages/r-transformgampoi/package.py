@@ -13,11 +13,10 @@ class RTransformgampoi(RPackage):
 	"""
 	
 	homepage = "https://github.com/const-ae/transformGamPoi"
-	bioc = "transformGamPoi" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/transformGamPoi_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/transformGamPoi/transformGamPoi_1.8.0.tar.gz"]
+	bioc = "transformGamPoi"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="3d28f9317d5b826507beebb481befab6f7310f22277d0d39ec526b30b5874775")
+	version("1.14.0", commit="0138fed7890f6607960b67593fcc139ed026f79b")
+	version("1.8.0", commit="141258957cd00e3b64f87b09279949797dd6f07b")
 
 	depends_on("r-glmgampoi", type=("build", "run"))
 	depends_on("r-delayedarray", type=("build", "run"))

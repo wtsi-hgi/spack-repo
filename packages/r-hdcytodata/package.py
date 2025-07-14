@@ -13,11 +13,10 @@ class RHdcytodata(RPackage):
 	"""
 	
 	homepage = "https://github.com/lmweber/HDCytoData"
-	bioc = "HDCytoData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HDCytoData_1.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HDCytoData/HDCytoData_1.22.1.tar.gz"]
+	bioc = "HDCytoData"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.1", sha256="3916417f231ce6bde3dd52ce2cee87bf0d428aef4e7be0613c45707dfdeb8880")
+	version("1.28.0", commit="81e385d7be3dc1be7fb4d5e4ca2bcdb760f29bfa")
+	version("1.22.1", commit="45af5843f7234e63f4b5660fea4896d600cf2f3c")
 	version("1.22.0", md5="8f962c6124539fea7a4a02a30e776de8")
 
 	depends_on("r-experimenthub", type=("build", "run"))

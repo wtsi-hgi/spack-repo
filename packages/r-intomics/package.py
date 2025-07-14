@@ -13,8 +13,7 @@ class RIntomics(RPackage):
 	"""
 	
 	homepage = "https://github.com/anna-pacinkova/IntOMICS"
-	bioc = "IntOMICS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IntOMICS_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IntOMICS/IntOMICS_1.2.0.tar.gz"]
+	bioc = "IntOMICS"
 
 	version("1.2.0", sha256="f0e70d50c624b6092c81456dd2da3e2b37a6666f59a644e2d7e9aa8f2e8a16e2")
 

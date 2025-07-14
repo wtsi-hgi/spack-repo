@@ -13,11 +13,10 @@ class RMerfishdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/ccb-hms/MerfishData"
-	bioc = "MerfishData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MerfishData_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MerfishData/MerfishData_1.4.1.tar.gz"]
+	bioc = "MerfishData"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.1", sha256="53a99bf7d66d3be0b8c6377b82cde0720a5b202daed0384544db739441adbc14")
+	version("1.10.0", commit="1f488b22cbd4a5142e83609354710599b0300c8e")
+	version("1.4.1", commit="a2aa1914bb1d0465900c84f2e91e1fed4bdf6487")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-ebimage", type=("build", "run"))

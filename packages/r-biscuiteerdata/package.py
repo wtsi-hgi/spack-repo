@@ -12,11 +12,10 @@ class RBiscuiteerdata(RPackage):
 	Contains default datasets used by the Bioconductor package biscuiteer.
 	"""
 	
-	bioc = "biscuiteerData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/biscuiteerData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/biscuiteerData/biscuiteerData_1.16.0.tar.gz"]
+	bioc = "biscuiteerData"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="3df0258dfabdb50444a8f8f34c6cd4cea3014d2d609a807c7256df9448900df3")
+	version("1.22.0", commit="1c146768a24dc68887c13f8876f7c8dcca6c5378")
+	version("1.16.0", commit="470718ce1ca01b900394010ae04338ebb782bcde")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

@@ -13,11 +13,10 @@ class RFraser(RPackage):
 	"""
 	
 	homepage = "https://github.com/gagneurlab/FRASER"
-	bioc = "FRASER" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FRASER_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FRASER/FRASER_1.14.1.tar.gz"]
+	bioc = "FRASER"
 
-	version("2.4.3", tag="RELEASE_3_21")
-	version("1.14.1", sha256="3cc9a84cbe1ddfcc0a7c09df54e01b364a435940d825814bf564b90135bf438f")
+	version("2.4.3", commit="92981686ce39f12c5ffa25be8e5db528f6e6c7e9")
+	version("1.14.1", commit="0a7204b7347b1d86d194dc5b4c2579e82786e1a9")
 
 	depends_on("r-biocparallel", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

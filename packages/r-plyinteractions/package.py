@@ -13,11 +13,10 @@ class RPlyinteractions(RPackage):
 	"""
 	
 	homepage = "https://github.com/js2264/plyinteractions"
-	bioc = "plyinteractions" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/plyinteractions_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/plyinteractions/plyinteractions_1.0.0.tar.gz"]
+	bioc = "plyinteractions"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="26c741611517bc92e1a09cacf650b64b5beef28ee3e4eabf9d21efe995ad21b8")
+	version("1.6.0", commit="430eacd68cf77c5c9ce8f206f14b90854ea56d4a")
+	version("1.0.0", commit="ee766a19912132c8fdb9a52c248e88d2bf0c84e9")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-interactionset", type=("build", "run"))

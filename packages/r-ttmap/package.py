@@ -12,11 +12,10 @@ class RTtmap(RPackage):
 	TTMap is a clustering method that groups together samples with the same deviation in comparison to a control group. It is specially useful when the data is small. It is parameter free.
 	"""
 	
-	bioc = "TTMap" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TTMap_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TTMap/TTMap_1.24.0.tar.gz"]
+	bioc = "TTMap"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="9777d42c018c79e4f052a8183b7ffed693215494e36688d16a530bea975052e3")
+	version("1.30.0", commit="2d14c4976802a7cdeb2cabbc2a3efc444a77fa5c")
+	version("1.24.0", commit="86fdbd0443b1b9f4bc0aa347d738e518b6475d57")
 
 	depends_on("r-rgl", type=("build", "run"))
 	depends_on("r-colorramps", type=("build", "run"))

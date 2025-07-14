@@ -12,11 +12,10 @@ class RMultidataset(RPackage):
 	Implementation of the BRGE's (Bioinformatic Research Group in Epidemiology from Center for Research in Environmental Epidemiology) MultiDataSet and ResultSet. MultiDataSet is designed for integrating multi omics data sets and ResultSet is a container for omics results. This package contains base classes for MEAL and rexposome packages.
 	"""
 	
-	bioc = "MultiDataSet" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MultiDataSet_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MultiDataSet/MultiDataSet_1.30.0.tar.gz"]
+	bioc = "MultiDataSet"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="538bb2f976ae8d750d08e7b53ae468612e52a548db5ffcb6a4139624ff5d27d8")
+	version("1.36.0", commit="40d0a0a4d929db94edf80b813d131ea70e1acefe")
+	version("1.30.0", commit="862a4bc9c2cc611988b1f15fdae34c9bc88cf52a")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -13,11 +13,10 @@ class RBiochail(RPackage):
 	"""
 	
 	homepage = "https://github.com/vjcitn/BiocHail"
-	bioc = "BiocHail" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocHail_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocHail/BiocHail_1.2.0.tar.gz"]
+	bioc = "BiocHail"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="d56801f227b645e29814530e326c1820e35d5c78aaf6e4afa181f6bc3ad0ba09")
+	version("1.8.0", commit="747e24e4b71d2ae81c955941aa4e2b946acca96b")
+	version("1.2.0", commit="791b18075325cc220d11070277b2290e1f9dcd54")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-reticulate", type=("build", "run"))

@@ -12,11 +12,10 @@ class RLrcelltypemarkers(RPackage):
 	This is an external ExperimentData package for LRcell. This data package contains the gene enrichment scores calculated from scRNA-seq dataset which indicates the gene enrichment of each cell type in certain brain region. LRcell package is used to identify specific sub-cell types that drives the changes observed in a bulk RNA-seq differential gene expression experiment. For more details, please visit: https://github.com/marvinquiet/LRcell.
 	"""
 	
-	bioc = "LRcellTypeMarkers" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/LRcellTypeMarkers_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/LRcellTypeMarkers/LRcellTypeMarkers_1.10.0.tar.gz"]
+	bioc = "LRcellTypeMarkers"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="4c20c86955b7a8b2ca6fb3a9bcc0ccb4811a26585a474221a237b977193a4df1")
+	version("1.16.0", commit="e72248999b7d29cd382fc2e8304a12a1b5636583")
+	version("1.10.0", commit="cede01cf22393aa3416be74c82bad4950004637d")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

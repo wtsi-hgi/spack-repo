@@ -12,11 +12,10 @@ class RSeq2pathway(RPackage):
 	Seq2pathway is a novel tool for functional gene-set (or termed as pathway) analysis of next-generation sequencing data, consisting of "seq2gene" and "gene2path" components. The seq2gene links sequence-level measurements of genomic regions (including SNPs or point mutation coordinates) to gene-level scores, and the gene2pathway summarizes gene scores to pathway-scores for each sample. The seq2gene has the feasibility to assign both coding and non-exon regions to a broader range of neighboring genes than only the nearest one, thus facilitating the study of functional non-coding regions. The gene2pathway takes into account the quantity of significance for gene members within a pathway compared those outside a pathway. The output of seq2pathway is a general structure of quantitative pathway-level scores, thus allowing one to functional interpret such datasets as RNA-seq, ChIP-seq, GWAS, and derived from other next generational sequencing experiments.
 	"""
 	
-	bioc = "seq2pathway" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seq2pathway_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seq2pathway/seq2pathway_1.34.0.tar.gz"]
+	bioc = "seq2pathway"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="3dff3859cba0e61c46a9176193616ea6a55c07a3c1c959a1e815ccd633d47ab4")
+	version("1.40.0", commit="4365c42cdb3be9660c7c2d2bf3ff075bddb9012c")
+	version("1.34.0", commit="40cf0fbcbd65ab7dd9497c7c0f129216ae106cc6")
 
 	depends_on("r@3.6.2:", type=("build", "run"))
 	depends_on("r-nnet", type=("build", "run"))

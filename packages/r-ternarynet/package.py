@@ -12,11 +12,10 @@ class RTernarynet(RPackage):
 	Gene-regulatory network (GRN) modeling seeks to infer dependencies between genes and thereby provide insight into the regulatory relationships that exist within a cell. This package provides a computational Bayesian approach to GRN estimation from perturbation experiments using a ternary network model, in which gene expression is discretized into one of 3 states: up, unchanged, or down). The ternarynet package includes a parallel implementation of the replica exchange Monte Carlo algorithm for fitting network models, using MPI.
 	"""
 	
-	bioc = "ternarynet" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ternarynet_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ternarynet/ternarynet_1.46.0.tar.gz"]
+	bioc = "ternarynet"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="18582b1ca3c378f452de68d3016d2083d01b74ad19082c61303cf86871e76ef8")
+	version("1.52.0", commit="dc372eea4e0a8b37845c14791da556e2945ceb46")
+	version("1.46.0", commit="8dd30d9d9324da2f0e19230cbb4d6ed44798cf97")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

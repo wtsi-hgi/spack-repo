@@ -13,11 +13,10 @@ class RDrugtargetinteractions(RPackage):
 	"""
 	
 	homepage = "https://github.com/girke-lab/drugTargetInteractions"
-	bioc = "drugTargetInteractions" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/drugTargetInteractions_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/drugTargetInteractions/drugTargetInteractions_1.10.1.tar.gz"]
+	bioc = "drugTargetInteractions"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.1", sha256="5aa4b61ef391d2e907557b363b3fe41a0e9b0203459b299ffcb89e247649af0c")
+	version("1.16.0", commit="cecbd83d6cbf7cb678493d764d5eec163f3780a3")
+	version("1.10.1", commit="3727ee5c938b04607c7d76555e890ad4d02408fa")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rsqlite", type=("build", "run"))

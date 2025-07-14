@@ -13,11 +13,10 @@ class RIbbig(RPackage):
 	"""
 	
 	homepage = "http://bcb.dfci.harvard.edu/~aedin/publications/"
-	bioc = "iBBiG" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iBBiG_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iBBiG/iBBiG_1.46.0.tar.gz"]
+	bioc = "iBBiG"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="5aaa1252ef2969ac5c9fb1f14be2049baf1938c165a432dee20b0f8abc1ba896")
+	version("1.52.0", commit="bf5f1f165e0a69a2451efc6eef7af995185d47b8")
+	version("1.46.0", commit="53ef42ea2a3ac9d5c7fd84ea31b673e18879f405")
 
 	depends_on("r-biclust", type=("build", "run"))
 	depends_on("r-xtable", type=("build", "run"))

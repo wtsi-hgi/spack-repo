@@ -13,11 +13,10 @@ class RHpaanalyze(RPackage):
 	"""
 	
 	homepage = "https://github.com/anhtr/HPAanalyze"
-	bioc = "HPAanalyze" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HPAanalyze_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HPAanalyze/HPAanalyze_1.20.0.tar.gz"]
+	bioc = "HPAanalyze"
 
-	version("1.26.1", tag="RELEASE_3_21")
-	version("1.20.0", sha256="1f36584e878c2fc704d4e143df33e38061b3c2a5073eef4eb5db51b774b254f7")
+	version("1.26.1", commit="a412daaa6259ed7bc328f632f03bd1e1b5787d4a")
+	version("1.20.0", commit="d0249905867ca73bd370a5993836a326f1bcc63e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

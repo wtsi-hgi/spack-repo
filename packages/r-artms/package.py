@@ -13,11 +13,10 @@ class RArtms(RPackage):
 	"""
 	
 	homepage = "http://artms.org"
-	bioc = "artMS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/artMS_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/artMS/artMS_1.20.0.tar.gz"]
+	bioc = "artMS"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="077716eee47b83f6198a8d2d5c305a0730f12b4052e629b40d60e27bc605eda7")
+	version("1.26.0", commit="54c3c61a13ca6d6514993fa09c8d2e40c9337b6e")
+	version("1.20.0", commit="cc581a09e16f97c1cbb1a85d105097f58c8c798c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

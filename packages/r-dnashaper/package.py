@@ -12,11 +12,10 @@ class RDnashaper(RPackage):
 	DNAhapeR is an R/BioConductor package for ultra-fast, high-throughput predictions of DNA shape features. The package allows to predict, visualize and encode DNA shape features for statistical learning.
 	"""
 	
-	bioc = "DNAshapeR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DNAshapeR_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DNAshapeR/DNAshapeR_1.30.0.tar.gz"]
+	bioc = "DNAshapeR"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="d3d60db2d307ff6f5345f0ec3f7c46c41f17959056e51235ae1e0e6505fe8e4a")
+	version("1.36.0", commit="b6ee88ffb138d3b8ddd212311bb19275ec4a22f8")
+	version("1.30.0", commit="651bca96f9499c492c233886264121738f9a57d2")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

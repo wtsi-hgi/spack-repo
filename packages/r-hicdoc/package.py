@@ -13,11 +13,10 @@ class RHicdoc(RPackage):
 	"""
 	
 	homepage = "https://github.com/mzytnicki/HiCDOC"
-	bioc = "HiCDOC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiCDOC_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiCDOC/HiCDOC_1.4.1.tar.gz"]
+	bioc = "HiCDOC"
 
-	version("1.10.1", tag="RELEASE_3_21")
-	version("1.4.1", sha256="c4464693066728157213072862195133888b311100d830116e69540b1ccd06df")
+	version("1.10.1", commit="01782022030d3f9ee4fbd003c193a920626e2ae2")
+	version("1.4.1", commit="08dd5c583eb699767d031cec2fedc2286bf78bd3")
 
 	depends_on("r-interactionset", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

@@ -12,11 +12,10 @@ class RPpinfer(RPackage):
 	Interactions between proteins occur in many, if not most, biological processes. Most proteins perform their functions in networks associated with other proteins and other biomolecules. This fact has motivated the development of a variety of experimental methods for the identification of protein interactions. This variety has in turn ushered in the development of numerous different computational approaches for modeling and predicting protein interactions. Sometimes an experiment is aimed at identifying proteins closely related to some interesting proteins. A network based statistical learning method is used to infer the putative functions of proteins from the known functions of its neighboring proteins on a PPI network. This package identifies such proteins often involved in the same or similar biological functions.
 	"""
 	
-	bioc = "PPInfer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PPInfer_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PPInfer/PPInfer_1.28.0.tar.gz"]
+	bioc = "PPInfer"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="55231d806926496a83367175d971cf180e73b242d9e7b8144d0689421f603090")
+	version("1.34.0", commit="b01d803a4dc559db9f2dec5b24d5405e4e0a7704")
+	version("1.28.0", commit="8fc42656f409f435d0bbb80ccb9c80aecdf33dd8")
 
 	depends_on("r-biomart", type=("build", "run"))
 	depends_on("r-fgsea", type=("build", "run"))

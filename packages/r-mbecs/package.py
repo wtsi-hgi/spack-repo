@@ -13,11 +13,10 @@ class RMbecs(RPackage):
 	"""
 	
 	homepage = "https://github.com/rmolbrich/MBECS"
-	bioc = "MBECS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MBECS_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MBECS/MBECS_1.6.0.tar.gz"]
+	bioc = "MBECS"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="818a8e43937b8b07c98354a570de272fa4ee4529df4134a72bce3a618d58fbc8")
+	version("1.12.0", commit="6f746d2610be803ea9fec0fca86bb26a5efcc972")
+	version("1.6.0", commit="e2b724f431e67d151f68c605e12c82aa8d7a6076")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

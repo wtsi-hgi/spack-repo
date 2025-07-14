@@ -12,11 +12,10 @@ class RHubpub(RPackage):
 	HubPub provides users with functionality to help with the Bioconductor Hub structures. The package provides the ability to create a skeleton of a Hub style package that the user can then populate with the necessary information. There are also functions to help add resources to the Hub package metadata files as well as publish data to the Bioconductor S3 bucket.
 	"""
 	
-	bioc = "HubPub" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HubPub_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HubPub/HubPub_1.10.1.tar.gz"]
+	bioc = "HubPub"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.1", sha256="563ac56babdca6ecaea0109d1542284bfa57e546a23d3d4f0c4594b470dde3a8")
+	version("1.16.0", commit="820b44e023b5a8dc02fce13ba88c03ea31429e5d")
+	version("1.10.1", commit="e33d5ec36faff8a0db786e409c092264c77de880")
 
 	depends_on("r-available", type=("build", "run"))
 	depends_on("r-usethis", type=("build", "run"))

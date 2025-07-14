@@ -13,11 +13,10 @@ class RAssign(RPackage):
 	"""
 	
 	homepage = "https://compbiomed.github.io/ASSIGN/"
-	bioc = "ASSIGN" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASSIGN_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASSIGN/ASSIGN_1.38.0.tar.gz"]
+	bioc = "ASSIGN"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="fc406467d2628eda174342fc7fca1be9cb7a3f1c5c1c164e20c84695a2fb7995")
+	version("1.44.0", commit="771df376daac189ca4dcb8be53abc20ddd9d0bc8")
+	version("1.38.0", commit="06d2e1bccc24f7ed0718872ba564c02cf4e0c444")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

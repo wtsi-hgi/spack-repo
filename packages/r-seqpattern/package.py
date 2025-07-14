@@ -12,11 +12,10 @@ class RSeqpattern(RPackage):
 	Visualising oligonucleotide patterns and sequence motifs occurrences across a large set of sequences centred at a common reference point and sorted by a user defined feature.
 	"""
 	
-	bioc = "seqPattern" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqPattern_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqPattern/seqPattern_1.34.0.tar.gz"]
+	bioc = "seqPattern"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="6037d3685bab94e2d1f6046bdc19369a786a595ef421e6ce7d8a34408a6f4967")
+	version("1.40.0", commit="ed8c9708fad3427d0a899234341a3111b41c673a")
+	version("1.34.0", commit="0441ed0424d43c666274eecf5256c5ace816a15b")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

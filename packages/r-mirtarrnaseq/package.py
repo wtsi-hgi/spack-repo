@@ -12,11 +12,10 @@ class RMirtarrnaseq(RPackage):
 	mirTarRnaSeq R package can be used for interactive mRNA miRNA sequencing statistical analysis. This package utilizes expression or differential expression mRNA and miRNA sequencing results and performs interactive correlation and various GLMs (Regular GLM, Multivariate GLM, and Interaction GLMs ) analysis between mRNA and miRNA expriments. These experiments can be time point experiments, and or condition expriments.
 	"""
 	
-	bioc = "mirTarRnaSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mirTarRnaSeq_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mirTarRnaSeq/mirTarRnaSeq_1.10.0.tar.gz"]
+	bioc = "mirTarRnaSeq"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="947b4a660e6c01424e033bd22a2dcbd60cce916f4e1726beacdb2664ee0edd51")
+	version("1.16.0", commit="560893be73c6eb2260b60bb295cdb53e684d6ed6")
+	version("1.10.0", commit="582cbaaa192128900f26bd6be287926165ddc4ae")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

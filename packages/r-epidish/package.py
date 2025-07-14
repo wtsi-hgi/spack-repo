@@ -13,11 +13,10 @@ class REpidish(RPackage):
 	"""
 	
 	homepage = "https://github.com/sjczheng/EpiDISH"
-	bioc = "EpiDISH" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EpiDISH_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EpiDISH/EpiDISH_2.18.0.tar.gz"]
+	bioc = "EpiDISH"
 
-	version("2.24.0", tag="RELEASE_3_21")
-	version("2.18.0", sha256="461ff4669ef8b6f837930c99b20eea3df310dfb6be3cf1e1eb33b467fca81e9c")
+	version("2.24.0", commit="9473c127d4d3aa8f877acedec8f55988cbf3e0d8")
+	version("2.18.0", commit="99c055e33b433aeafd5208428b39c9163104ae12")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

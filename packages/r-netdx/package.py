@@ -13,11 +13,10 @@ class RNetdx(RPackage):
 	"""
 	
 	homepage = "http://netdx.org"
-	bioc = "netDx" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/netDx_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/netDx/netDx_1.14.0.tar.gz"]
+	bioc = "netDx"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="fc6625ef76c8136dc672e919cd71c9a2d4c8ae73cb5dae4dccec4967be23985e")
+	version("1.20.0", commit="ba098e1ee2fbb58c3e26310012764dfb58795fc9")
+	version("1.14.0", commit="6e24937dac854aed3a60ab911e6f96b30e290761")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rocr", type=("build", "run"))

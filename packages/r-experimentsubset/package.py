@@ -12,11 +12,10 @@ class RExperimentsubset(RPackage):
 	Experiment objects such as the SummarizedExperiment or SingleCellExperiment are data containers for one or more matrix-like assays along with the associated row and column data. Often only a subset of the original data is needed for down-stream analysis. For example, filtering out poor quality samples will require excluding some columns before analysis. The ExperimentSubset object is a container to efficiently manage different subsets of the same data without having to make separate objects for each new subset.
 	"""
 	
-	bioc = "ExperimentSubset" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExperimentSubset_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExperimentSubset/ExperimentSubset_1.12.0.tar.gz"]
+	bioc = "ExperimentSubset"
 
-	version("1.18.1", tag="RELEASE_3_21")
-	version("1.12.0", sha256="1c6adbf93a28d61ec16f57cdcd2d1c34e9e0a5ccc52049f628cf794097b7cd2a")
+	version("1.18.1", commit="15c4278344605234bd6388fcb531603164294936")
+	version("1.12.0", commit="a43cdbf3db54c4e9e17e322bfa42d1de999881ec")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

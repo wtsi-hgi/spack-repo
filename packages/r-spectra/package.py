@@ -13,11 +13,10 @@ class RSpectra(RPackage):
 	"""
 	
 	homepage = "https://github.com/RforMassSpectrometry/Spectra"
-	bioc = "Spectra" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Spectra_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Spectra/Spectra_1.12.0.tar.gz"]
+	bioc = "Spectra"
 
-	version("1.18.2", tag="RELEASE_3_21")
-	version("1.12.0", sha256="1e0f13135f9f24e06f485a839355c0b5453fc6d649f4c2248bfcf7ef4a4ffa1f")
+	version("1.18.2", commit="4d6a810f0236b47b528e2e6d784fded9082d24bf")
+	version("1.12.0", commit="f0abdfab5e4742026a1b3f6c91d49fe3717ee546")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

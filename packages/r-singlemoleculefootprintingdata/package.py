@@ -12,11 +12,10 @@ class RSinglemoleculefootprintingdata(RPackage):
 	This Data package contains data objcets relevanat for the SingleMoleculeFootprinting package. More specifically, it contains one example of aligned sequencing data (.bam & .bai) necessary to run the SingleMoleculeFootprinting vignette. Additionally, we provide data that are essential for some functions to work correctly such as BaitCapture() and SampleCorrelation().
 	"""
 	
-	bioc = "SingleMoleculeFootprintingData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SingleMoleculeFootprintingData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SingleMoleculeFootprintingData/SingleMoleculeFootprintingData_1.10.0.tar.gz"]
+	bioc = "SingleMoleculeFootprintingData"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="039c4c9dd29362af9931c6478b49748ac8d9cba237ced8f7043c6ae6d18c14b2")
+	version("1.16.0", commit="8409153374d2a2dd5e10278732aaa40d56e5ae62")
+	version("1.10.0", commit="9d50ed387eab62cc25d370d809a6cd2ec79e9f74")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 

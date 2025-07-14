@@ -13,11 +13,10 @@ class RScry(RPackage):
 	"""
 	
 	homepage = "https://bioconductor.org/packages/scry.html"
-	bioc = "scry" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scry_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scry/scry_1.14.0.tar.gz"]
+	bioc = "scry"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="434aad5a4e3a6ec9bdcfd7cf5902b5e7db4516077d174f456e804a60b5d46d41")
+	version("1.20.0", commit="c6878b3f714b5e87953ab8a1a5f05ae4c6cc3ab6")
+	version("1.14.0", commit="d43e3ffc3f47d57eadb98a181314cdc99c7fe6e8")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-delayedarray", type=("build", "run"))

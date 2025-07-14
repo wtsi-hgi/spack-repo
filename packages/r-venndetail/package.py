@@ -13,11 +13,10 @@ class RVenndetail(RPackage):
 	"""
 	
 	homepage = "https://github.com/guokai8/VennDetail"
-	bioc = "VennDetail" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VennDetail_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VennDetail/VennDetail_1.18.0.tar.gz"]
+	bioc = "VennDetail"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="b9eb5781c29e9d24a539dcf671b4f79aba8952538762612a911252711b888327")
+	version("1.24.0", commit="268e6cda5418261d85aeaacc796bb22547780f83")
+	version("1.18.0", commit="3b6133fb2702c71436b5eb1c39658b6c39f0ad8b")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-purrr", type=("build", "run"))

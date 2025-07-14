@@ -12,11 +12,10 @@ class REpigenomix(RPackage):
 	A package for the integrative analysis of RNA-seq or microarray based gene transcription and histone modification data obtained by ChIP-seq. The package provides methods for data preprocessing and matching as well as methods for fitting bayesian mixture models in order to detect genes with differences in both data types.
 	"""
 	
-	bioc = "epigenomix" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epigenomix_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epigenomix/epigenomix_1.42.0.tar.gz"]
+	bioc = "epigenomix"
 
-	version("1.48.1", tag="RELEASE_3_21")
-	version("1.42.0", sha256="4b1d55e93fd0b64daa8d6dae2c1c4136c6948b4a7447dd7e4be6139e173e0523")
+	version("1.48.1", commit="0d6f5eb8d69e98b0d79edda7a4ae4e8066181918")
+	version("1.42.0", commit="060951e21fbb823769f02c7edf4902bbb5deef35")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

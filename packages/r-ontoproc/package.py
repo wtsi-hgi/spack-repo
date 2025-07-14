@@ -13,11 +13,10 @@ class ROntoproc(RPackage):
 	"""
 	
 	homepage = "https://github.com/vjcitn/ontoProc"
-	bioc = "ontoProc" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ontoProc_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ontoProc/ontoProc_1.24.0.tar.gz"]
+	bioc = "ontoProc"
 
-	version("2.2.1", tag="RELEASE_3_21")
-	version("1.24.0", sha256="38d15039df3acb8c3391592547143fa4f85b94005c9bfdaf98466e27a4bcbf95")
+	version("2.2.1", commit="3b9f7e222faf4111b91c0e2ffa35869f6895b2cf")
+	version("1.24.0", commit="5718db114aea7fd3dadb83e096f87004aa69ddd2")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ontologyindex", type=("build", "run"))

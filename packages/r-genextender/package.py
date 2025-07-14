@@ -13,11 +13,10 @@ class RGenextender(RPackage):
 	"""
 	
 	homepage = "https://github.com/Bohdan-Khomtchouk/geneXtendeR"
-	bioc = "geneXtendeR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geneXtendeR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geneXtendeR/geneXtendeR_1.28.0.tar.gz"]
+	bioc = "geneXtendeR"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="c818968234a6d010b1ce7b1ba385267c535c6d133cc809b2982e29956875362e")
+	version("1.34.0", commit="3c384e5462c30381c26775d5ec0ec1787904e6b0")
+	version("1.28.0", commit="c8e88150a7a2a2c0125b7dd07f0df7ab6c4daea5")
 
 	depends_on("r-rtracklayer", type=("build", "run"))
 	depends_on("r-go-db", type=("build", "run"))

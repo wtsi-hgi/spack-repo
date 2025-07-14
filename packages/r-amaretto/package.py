@@ -12,11 +12,10 @@ class RAmaretto(RPackage):
 	Integrating an increasing number of available multi-omics cancer data remains one of the main challenges to improve our understanding of cancer. One of the main challenges is using multi-omics data for identifying novel cancer driver genes. We have developed an algorithm, called AMARETTO, that integrates copy number, DNA methylation and gene expression data to identify a set of driver genes by analyzing cancer samples and connects them to clusters of co-expressed genes, which we define as modules. We applied AMARETTO in a pancancer setting to identify cancer driver genes and their modules on multiple cancer sites. AMARETTO captures modules enriched in angiogenesis, cell cycle and EMT, and modules that accurately predict survival and molecular subtypes. This allows AMARETTO to identify novel cancer driver genes directing canonical cancer pathways.
 	"""
 	
-	bioc = "AMARETTO" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AMARETTO_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AMARETTO/AMARETTO_1.18.0.tar.gz"]
+	bioc = "AMARETTO"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="3a9d4f819cd2157e480d46aa397edef2bd513c24f355a8196ca58ba9b4880cc0")
+	version("1.24.0", commit="4466608e7faa9f18a083b5edbbb04260577e3d41")
+	version("1.18.0", commit="3b428a946683e855388f734b207c06b4b0bb2548")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-impute", type=("build", "run"))

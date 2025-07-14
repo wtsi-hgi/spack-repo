@@ -12,11 +12,10 @@ class RCelltrails(RPackage):
 	CellTrails is an unsupervised algorithm for the de novo chronological ordering, visualization and analysis of single-cell expression data. CellTrails makes use of a geometrically motivated concept of lower-dimensional manifold learning, which exhibits a multitude of virtues that counteract intrinsic noise of single cell data caused by drop-outs, technical variance, and redundancy of predictive variables. CellTrails enables the reconstruction of branching trajectories and provides an intuitive graphical representation of expression patterns along all branches simultaneously. It allows the user to define and infer the expression dynamics of individual and multiple pathways towards distinct phenotypes.
 	"""
 	
-	bioc = "CellTrails" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CellTrails_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CellTrails/CellTrails_1.20.0.tar.gz"]
+	bioc = "CellTrails"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="b5c6bba11190daf11fe4a6667d4877e3c1aeb55250a421996ac2d636d77e58dd")
+	version("1.26.0", commit="b49d66cd015647b989d5a14ac03f9ea0391f17a5")
+	version("1.20.0", commit="3e1f87c9bd52161511ad0af801297e331cd8ae28")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

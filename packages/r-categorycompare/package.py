@@ -13,11 +13,10 @@ class RCategorycompare(RPackage):
 	"""
 	
 	homepage = "https://github.com/rmflight/categoryCompare"
-	bioc = "categoryCompare" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/categoryCompare_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/categoryCompare/categoryCompare_1.46.0.tar.gz"]
+	bioc = "categoryCompare"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="043df1a80bfce24b3a62b0dc2f01509c8801f8c60751b0337adc118e2750aa0d")
+	version("1.52.0", commit="de35cc2f7e761abc59def4c9feab1b2073e63bcf")
+	version("1.46.0", commit="8d64d139e0a7608e38d4262759a5db78d7c4f37a")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

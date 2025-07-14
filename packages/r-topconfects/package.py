@@ -13,11 +13,10 @@ class RTopconfects(RPackage):
 	"""
 	
 	homepage = "https://github.com/pfh/topconfects"
-	bioc = "topconfects" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/topconfects_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/topconfects/topconfects_1.18.0.tar.gz"]
+	bioc = "topconfects"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="d3d5da5a4127bac933e6daad3670d676b604f05eced49879cc1aabdae04bd90d")
+	version("1.24.0", commit="8d72f5588ce59514e5eacefa775c4eabd1660b76")
+	version("1.18.0", commit="b70aef24efd13521f872f9251cad3d061f54e18e")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

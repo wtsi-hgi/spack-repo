@@ -13,10 +13,9 @@ class RNanotator(RPackage):
 	"""
 	
 	homepage = "https://github.com/VilainLab/nanotatoR"
-	bioc = "nanotatoR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nanotatoR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nanotatoR/nanotatoR_1.18.0.tar.gz"]
+	bioc = "nanotatoR"
 
-	version("1.18.0", sha256="eb8200b0f4818ad032af934179ba779b1b9869d7a2e42b44bad5ccb3c823d0da")
+	version("1.18.0", commit="9ad2203c12b6507f4194e63fb61c1751676636af")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-hash@2.2.6:", type=("build", "run"))

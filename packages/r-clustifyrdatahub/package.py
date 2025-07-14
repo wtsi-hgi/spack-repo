@@ -13,11 +13,10 @@ class RClustifyrdatahub(RPackage):
 	"""
 	
 	homepage = "https://rnabioco.github.io/clustifyrdatahub/"
-	bioc = "clustifyrdatahub" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/clustifyrdatahub_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/clustifyrdatahub/clustifyrdatahub_1.12.0.tar.gz"]
+	bioc = "clustifyrdatahub"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="a45fd426aa4f27597e4d99d2652aab2a45f50f24f723467b8cddab1392368f00")
+	version("1.18.0", commit="cb13c46a1efbfc5d9aab984e4b695b64307b3a50")
+	version("1.12.0", commit="f55a9d9a06e85eac5632052973e6175491975b21")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

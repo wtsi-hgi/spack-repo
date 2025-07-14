@@ -13,11 +13,10 @@ class REpitxdbHsHg38(RPackage):
 	"""
 	
 	homepage = "https://github.com/FelixErnst/EpiTxDb.Hs.hg38"
-	bioc = "EpiTxDb.Hs.hg38" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EpiTxDb.Hs.hg38_0.99.7.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/EpiTxDb.Hs.hg38/EpiTxDb.Hs.hg38_0.99.7.tar.gz"]
+	bioc = "EpiTxDb.Hs.hg38"
 
-	version("0.99.7", tag="RELEASE_3_21")
-	version("0.99.7", sha256="cedbed7a0e76b95e77ebdedfca0af4c48ed207d013a2db97a5980b90301151ef", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EpiTxDb.Hs.hg38_0.99.7.tar.gz")
+	version("0.99.7", commit="135951cd4723a6ac6b21b56b1445622d005e8dad")
+	version("0.99.7", commit="135951cd4723a6ac6b21b56b1445622d005e8dad")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

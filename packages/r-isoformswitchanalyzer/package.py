@@ -13,11 +13,10 @@ class RIsoformswitchanalyzer(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org/packages/IsoformSwitchAnalyzeR/"
-	bioc = "IsoformSwitchAnalyzeR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IsoformSwitchAnalyzeR_2.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IsoformSwitchAnalyzeR/IsoformSwitchAnalyzeR_2.2.0.tar.gz"]
+	bioc = "IsoformSwitchAnalyzeR"
 
-	version("2.8.0", tag="RELEASE_3_21")
-	version("2.2.0", sha256="10d13c671b01e4a75951f6dfd83dff3f7c494266d21bdcd4cf723c03b61436fa")
+	version("2.8.0", commit="b2397a013063c49427410413507ea3b851873937")
+	version("2.2.0", commit="172bcd11235943c418a894b1107fb650818f5a10")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

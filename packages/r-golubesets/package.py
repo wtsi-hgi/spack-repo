@@ -12,11 +12,10 @@ class RGolubesets(RPackage):
 	representation of public golub data with some covariate data of provenance unknown to the maintainer at present; now employs ExpressionSet format
 	"""
 	
-	bioc = "golubEsets" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/golubEsets_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/golubEsets/golubEsets_1.44.0.tar.gz"]
+	bioc = "golubEsets"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="ca8f1c15c37dc052d8411e14407821453589cd6241b60eb9011188cf115990e7")
+	version("1.50.0", commit="9ab1c6bfa1cd19c6eb5ccfada4fa33f88266b948")
+	version("1.44.0", commit="0c2ab6b2e23bdf9bb7b2a411f7a591514c7e60f2")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

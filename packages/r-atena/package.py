@@ -13,11 +13,10 @@ class RAtena(RPackage):
 	"""
 	
 	homepage = "https://github.com/functionalgenomics/atena"
-	bioc = "atena" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/atena_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/atena/atena_1.8.0.tar.gz"]
+	bioc = "atena"
 
-	version("1.14.1", tag="RELEASE_3_21")
-	version("1.8.0", sha256="cffe3ee62e8564012ec6cfa5e514a37eab1d2c10ce07eec4e80b16d3ccf1cfe1")
+	version("1.14.1", commit="9b1f68fc3ef67b8860439f4ffd3a06fae42eb3c5")
+	version("1.8.0", commit="634a46974205fe83e7e83c1d6900ae070efd71fc")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

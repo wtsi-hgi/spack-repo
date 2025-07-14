@@ -13,11 +13,10 @@ class RCnanorm(RPackage):
 	"""
 	
 	homepage = "http://www.r-project.org"
-	bioc = "CNAnorm" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNAnorm_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNAnorm/CNAnorm_1.48.0.tar.gz"]
+	bioc = "CNAnorm"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="050233377f5128c1713c2fc2be812069e1a7e593afac3a95c01b18a3a42fb905")
+	version("1.54.0", commit="25c46fba8ccf2270093090d58eee72543f3a2dac")
+	version("1.48.0", commit="9243081606131ef0d6c96e59745df710e3a17a95")
 
 	depends_on("r@2.10.1:", type=("build", "run"))
 	depends_on("r-dnacopy", type=("build", "run"))

@@ -12,11 +12,10 @@ class RTreesummarizedexperiment(RPackage):
 	TreeSummarizedExperiment has extended SingleCellExperiment to include hierarchical information on the rows or columns of the rectangular data.
 	"""
 	
-	bioc = "TreeSummarizedExperiment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TreeSummarizedExperiment_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TreeSummarizedExperiment/TreeSummarizedExperiment_2.10.0.tar.gz"]
+	bioc = "TreeSummarizedExperiment"
 
-	version("2.16.1", tag="RELEASE_3_21")
-	version("2.10.0", sha256="cf7cd38f3199dc9324b6dbedd40ce2fae4c910abd0b11c41d7eaaa1d698f78fb")
+	version("2.16.1", commit="f3efa55a10d78c40211ec3bbc94dfd463018a407")
+	version("2.10.0", commit="71a273a9d46a3e62be26d62b25ca822eccb3aad8")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

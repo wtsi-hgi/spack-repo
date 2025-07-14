@@ -13,11 +13,10 @@ class RRscudo(RPackage):
 	"""
 	
 	homepage = "https://github.com/Matteo-Ciciani/scudo"
-	bioc = "rScudo" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rScudo_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rScudo/rScudo_1.18.1.tar.gz"]
+	bioc = "rScudo"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.1", sha256="841088d66fece79c975bae81c109dd68a7e91f58659287db3e9df691f684f398")
+	version("1.24.0", commit="3ea6f0e0e074a9ee3b573ad9d92a125f06699f7c")
+	version("1.18.1", commit="e13e994bf7300b2035777ae0a825536c0c42f0a6")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

@@ -13,11 +13,10 @@ class RBiocpkgtools(RPackage):
 	"""
 	
 	homepage = "https://github.com/seandavi/BiocPkgTools"
-	bioc = "BiocPkgTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocPkgTools_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocPkgTools/BiocPkgTools_1.20.0.tar.gz"]
+	bioc = "BiocPkgTools"
 
-	version("1.26.2", tag="RELEASE_3_21")
-	version("1.20.0", sha256="24acf9eacba1c0fec20d7a208d10e380b61d01fc8e09d62ceb61e8a66237916b")
+	version("1.26.2", commit="c5f81824c37094750ede1a898882f91284d4ce97")
+	version("1.20.0", commit="d7d15a34ef0826ec18de63da68d82e312d1f8f51")
 
 	depends_on("r-htmlwidgets", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))

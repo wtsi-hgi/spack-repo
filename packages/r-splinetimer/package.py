@@ -12,11 +12,10 @@ class RSplinetimer(RPackage):
 	This package provides functions for differential gene expression analysis of gene expression time-course data. Natural cubic spline regression models are used. Identified genes may further be used for pathway enrichment analysis and/or the reconstruction of time dependent gene regulatory association networks.
 	"""
 	
-	bioc = "splineTimeR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/splineTimeR_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/splineTimeR/splineTimeR_1.30.0.tar.gz"]
+	bioc = "splineTimeR"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="0f390dc5a1f0c42c6ded619effebd775ae57160b7f5410242d9d6222a35914b3")
+	version("1.36.0", commit="7f6e92c49b7845867b9c7a323ec87c5d70812ee3")
+	version("1.30.0", commit="be96536a1875992ca8bdb8ffcbc57e811b084bc1")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

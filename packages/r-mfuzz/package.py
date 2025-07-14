@@ -13,11 +13,10 @@ class RMfuzz(RPackage):
 	"""
 	
 	homepage = "http://mfuzz.sysbiolab.eu/"
-	bioc = "Mfuzz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Mfuzz_2.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Mfuzz/Mfuzz_2.62.0.tar.gz"]
+	bioc = "Mfuzz"
 
-	version("2.68.0", tag="RELEASE_3_21")
-	version("2.62.0", sha256="ee7e7a6134e8c2e945789940588e254f94e97231e22b5395eb348c91a21b546c")
+	version("2.68.0", commit="a1937d8a94400453fc0ca3eacbe2b44ea54c679f")
+	version("2.62.0", commit="b17f5af839c2a98feefaa31439f33702f340578a")
 
 	depends_on("r@2.5:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

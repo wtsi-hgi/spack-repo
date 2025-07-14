@@ -12,10 +12,9 @@ class RGraph(RPackage):
 	A package that implements some simple graph handling capabilities."""
 
 	bioc = "graph"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/graph_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/graph/graph_1.80.0.tar.gz"]
 
-	version("1.86.0", tag="RELEASE_3_21")
-	version("1.80.0", sha256="017446e90386aba89d2326d30006db14d191bc9b4ce916e0d0ebd979a73fef5c")
+	version("1.86.0", commit="5e339a3baf01d0cba82b4be98683952c7155d498")
+	version("1.80.0", commit="d6b871a992c6001823b04cd52a656f083a5bcf1e")
 	version("1.78.0", commit="9df68e8f74e2b807b033f991d21142edfd1bc090")
 	version("1.76.0", commit="e3efc108716e98bd3363621d17a6f9c3ef975d19")
 	version("1.74.0", commit="4af608a5d9e1de33fda6ae28fb73bff9272ee296")

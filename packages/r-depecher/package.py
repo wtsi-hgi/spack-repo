@@ -12,11 +12,10 @@ class RDepecher(RPackage):
 	The purpose of this package is to identify traits in a dataset that can separate groups. This is done on two levels. First, clustering is performed, using an implementation of sparse K-means. Secondly, the generated clusters are used to predict outcomes of groups of individuals based on their distribution of observations in the different clusters. As certain clusters with separating information will be identified, and these clusters are defined by a sparse number of variables, this method can reduce the complexity of data, to only emphasize the data that actually matters.
 	"""
 	
-	bioc = "DepecheR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DepecheR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DepecheR/DepecheR_1.18.0.tar.gz"]
+	bioc = "DepecheR"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="5ce001eb0e4037d2cfc6f90d5f5ee81b5c6d8d344253c9da2210da5e1e0f6cac")
+	version("1.24.0", commit="b4010877830b9da9723606ce67bcb6758f922463")
+	version("1.18.0", commit="14db2295189951d35cf83d4b2f474651580c31b6")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2@3.1:", type=("build", "run"))

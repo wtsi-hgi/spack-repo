@@ -15,13 +15,12 @@ class RScuttle(RPackage):
 	packages."""
 
 	bioc = "scuttle"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scuttle_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scuttle/scuttle_1.12.0.tar.gz"]
-	version("1.18.0", tag="RELEASE_3_21")
+	version("1.18.0", commit="922bf84476d932b2a311ecd39291cfe2dd132ea2")
 	version("1.8.0", commit="dabf6b95e478d599557ebbed03edd44031fd6b78")
 	version("1.6.3", commit="df23680da9fa4d685df77e4561467f491c850b50")
 	version("1.6.2", commit="afdfc555151d84cc332757b4ec0b97cb7f39d2d5")
 	version("1.4.0", commit="b335263dd56bb859b5dd3ea27ee00dffa0215313")
-	version("1.12.0", sha256="f863f0c3bf4766fb26f74ec13a873f69e127e422bf6360dee90968c794cb0a24")
+	version("1.12.0", commit="94dd0660eb6c217abd130c25a0e14cdb97a30103")
 	version("1.10.0", commit="02e864cb80414f71bb312cdf6d68e0036326e10b")
 	version("1.0.4", commit="a827e2759d80e6c3510e2f8fd4bd680274206d9f")
 

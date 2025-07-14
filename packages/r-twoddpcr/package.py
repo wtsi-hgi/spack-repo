@@ -13,11 +13,10 @@ class RTwoddpcr(RPackage):
 	"""
 	
 	homepage = "http://github.com/CRUKMI-ComputationalBiology/twoddpcr/"
-	bioc = "twoddpcr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/twoddpcr_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/twoddpcr/twoddpcr_1.26.0.tar.gz"]
+	bioc = "twoddpcr"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="1a502a55c6ae49ef3708d24762454a8ce74116a9959e8f0c0ce11ae624ad58fa")
+	version("1.32.0", commit="33954ebc43cfbabfe5e1df8bab10afea0d7eff2c")
+	version("1.26.0", commit="900be64dd14094d8c927f4370f6f711b1f168599")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-class", type=("build", "run"))

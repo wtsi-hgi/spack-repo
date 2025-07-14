@@ -12,11 +12,10 @@ class RSvm2crmdata(RPackage):
 	An example dataset for use with the SVM2CRM package.
 	"""
 	
-	bioc = "SVM2CRMdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SVM2CRMdata_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SVM2CRMdata/SVM2CRMdata_1.34.0.tar.gz"]
+	bioc = "SVM2CRMdata"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="0ed46f3c6bc459d098f5a95555003f1192b4604a0734d077370863d6a792eccc")
+	version("1.40.0", commit="38a5ebd202ce4fa041677970b25d4484be6449a2")
+	version("1.34.0", commit="ea82b46060159e673d93d98d7b365ea22aee86e3")
 
 	depends_on("r@3.2:", type=("build", "run"))
 

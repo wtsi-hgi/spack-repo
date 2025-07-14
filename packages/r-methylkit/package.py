@@ -13,11 +13,10 @@ class RMethylkit(RPackage):
 	"""
 	
 	homepage = "https://github.com/al2na/methylKit"
-	bioc = "methylKit" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylKit_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylKit/methylKit_1.28.0.tar.gz"]
+	bioc = "methylKit"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="3b363dd0daca050d736ce36b683d959a0ce6fc5e7e536fc71395ae5988e28578")
+	version("1.34.0", commit="3610aafff0aff8231731ffcf552c985ad648403f")
+	version("1.28.0", commit="42a6cbf2e1f0f85709c9ca0cf7b0ce597883a305")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges@1.18.1:", type=("build", "run"))

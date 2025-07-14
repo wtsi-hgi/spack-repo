@@ -13,11 +13,10 @@ class RBiocthis(RPackage):
 	"""
 	
 	homepage = "https://github.com/lcolladotor/biocthis"
-	bioc = "biocthis" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biocthis_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biocthis/biocthis_1.12.0.tar.gz"]
+	bioc = "biocthis"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="e8ad317d1599295e196f4274f08c84ad8947da4634c438eedc1cad080ed7ac53")
+	version("1.18.0", commit="e21a75aea3ecddc7910c892ba672a62abb4db59a")
+	version("1.12.0", commit="7a2bcb519c1d4f1c6a61a5ac4c6a9dde5287cbbe")
 
 	depends_on("r-biocmanager", type=("build", "run"))
 	depends_on("r-fs", type=("build", "run"))

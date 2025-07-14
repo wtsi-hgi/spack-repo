@@ -13,10 +13,9 @@ class RMonalisa(RPackage):
 	"""
 	
 	homepage = "https://github.com/fmicompbio/monaLisa"
-	bioc = "monaLisa" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/monaLisa_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/monaLisa/monaLisa_1.8.0.tar.gz"]
+	bioc = "monaLisa"
 
-	version("1.14.0", tag="RELEASE_3_21")
+	version("1.14.0", commit="995ea7d65751e36ba3842c46c0861ccb05f5ff0a")
 	version("1.8.0", md5="fc86eb3743fc47252a4420cd850ead9e")
 
 	depends_on("r@4.1:", type=("build", "run"))

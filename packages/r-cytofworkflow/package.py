@@ -13,11 +13,10 @@ class RCytofworkflow(RPackage):
 	"""
 	
 	homepage = "https://github.com/markrobinsonuzh/cytofWorkflow"
-	bioc = "cytofWorkflow" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/cytofWorkflow_1.26.1.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/cytofWorkflow/cytofWorkflow_1.26.1.tar.gz"]
+	bioc = "cytofWorkflow"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.1", sha256="01a4f451c56e7da6b8a65c6c4c6d8d89ac354bb1a37a2b88bb4c1c8e3cbfb108")
+	version("1.32.0", commit="37be41802acddc75da5af1329ca100f74c275bcb")
+	version("1.26.1", commit="a4b1c2158f26674a06651fb99be9723cd504ecf7")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biocstyle", type=("build", "run"))

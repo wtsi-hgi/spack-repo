@@ -12,9 +12,8 @@ class RDyndoc(RPackage):
 	A set of functions to create and interact with dynamic documents and vignettes.
 	"""
 	
-	bioc = "DynDoc" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DynDoc_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DynDoc/DynDoc_1.80.0.tar.gz"]
+	bioc = "DynDoc"
 
-	version("1.86.0", tag="RELEASE_3_21")
-	version("1.80.0", sha256="c115174fcf50197ccb7b57d90f48b7a354707e687093e70f89371fffb5ea4a34")
+	version("1.86.0", commit="287ac9abf1e7ce2ce2197e723e54166b164ed33a")
+	version("1.80.0", commit="74e583928ff09de9f8cf5401a3a0dc80315b6774")
 

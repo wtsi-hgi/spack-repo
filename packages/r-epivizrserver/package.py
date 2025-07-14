@@ -13,11 +13,10 @@ class REpivizrserver(RPackage):
 	"""
 	
 	homepage = "https://epiviz.github.io"
-	bioc = "epivizrServer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epivizrServer_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epivizrServer/epivizrServer_1.30.0.tar.gz"]
+	bioc = "epivizrServer"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="3e3b740cf6ab6d609d12236bf97e607f95af68375ecaf562f13b0ded627cb50d")
+	version("1.36.0", commit="b74c0989b2f9606b9e33d246d710858df3746305")
+	version("1.30.0", commit="c71d56a1985605545f922ef828f5ef57a88e8387")
 
 	depends_on("r@3.2.3:", type=("build", "run"))
 	depends_on("r-httpuv@1.3:", type=("build", "run"))

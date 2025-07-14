@@ -12,11 +12,10 @@ class RMusicatk(RPackage):
 	Mutational signatures are carcinogenic exposures or aberrant cellular processes that can cause alterations to the genome. We created musicatk (MUtational SIgnature Comprehensive Analysis ToolKit) to address shortcomings in versatility and ease of use in other pre-existing computational tools. Although many different types of mutational data have been generated, current software packages do not have a flexible framework to allow users to mix and match different types of mutations in the mutational signature inference process. Musicatk enables users to count and combine multiple mutation types, including SBS, DBS, and indels. Musicatk calculates replication strand, transcription strand and combinations of these features along with discovery from unique and proprietary genomic feature associated with any mutation type. Musicatk also implements several methods for discovery of new signatures as well as methods to infer exposure given an existing set of signatures. Musicatk provides functions for visualization and downstream exploratory analysis including the ability to compare signatures between cohorts and find matching signatures in COSMIC V2 or COSMIC V3.
 	"""
 	
-	bioc = "musicatk" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/musicatk_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/musicatk/musicatk_1.12.0.tar.gz"]
+	bioc = "musicatk"
 
-	version("2.2.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="6c5eab00f55c2b0df30cae952daaf1ff1fd407137b242e92411c918058a78862")
+	version("2.2.0", commit="030212fffc8061f7d3287f5255f391b19f948baa")
+	version("1.12.0", commit="69a345ec9819eb8ffec5913cae1cbccc97cdfaf5")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-nmf", type=("build", "run"))

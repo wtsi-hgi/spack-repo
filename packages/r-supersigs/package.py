@@ -13,11 +13,10 @@ class RSupersigs(RPackage):
 	"""
 	
 	homepage = "https://tomasettilab.github.io/supersigs/"
-	bioc = "supersigs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/supersigs_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/supersigs/supersigs_1.10.0.tar.gz"]
+	bioc = "supersigs"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="a100e02bc138bb2322b6645f95907cd171dd059bc9c0063c4ac0116df811a9d3")
+	version("1.16.0", commit="0d4ba4ae1a79f9c978f8606b7bf290fcfc72b442")
+	version("1.10.0", commit="51c1733745a86263128339c2bd923e445e374b0c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

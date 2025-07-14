@@ -12,11 +12,10 @@ class RRnbeads(RPackage):
 	RnBeads facilitates comprehensive analysis of various types of DNA methylation data at the genome scale.
 	"""
 	
-	bioc = "RnBeads" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RnBeads_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RnBeads/RnBeads_2.20.0.tar.gz"]
+	bioc = "RnBeads"
 
-	version("2.26.0", tag="RELEASE_3_21")
-	version("2.20.0", sha256="1797f32b209a122fac0b416cc98dd52e0fc7ed11f4849342ed01f85b2da1e797")
+	version("2.26.0", commit="9d24193bbcad0395d51b28db38395f439849d2d4")
+	version("2.20.0", commit="26222aa384e0ff18b60ca10e85ee35bb62d2e9d5")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

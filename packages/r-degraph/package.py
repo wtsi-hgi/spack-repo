@@ -12,11 +12,10 @@ class RDegraph(RPackage):
 	DEGraph implements recent hypothesis testing methods which directly assess whether a particular gene network is differentially expressed between two conditions. This is to be contrasted with the more classical two-step approaches which first test individual genes, then test gene sets for enrichment in differentially expressed genes. These recent methods take into account the topology of the network to yield more powerful detection procedures. DEGraph provides methods to easily test all KEGG pathways for differential expression on any gene expression data set and tools to visualize the results.
 	"""
 	
-	bioc = "DEGraph" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEGraph_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEGraph/DEGraph_1.54.0.tar.gz"]
+	bioc = "DEGraph"
 
-	version("1.60.0", tag="RELEASE_3_21")
-	version("1.54.0", sha256="a7b8e58330a19cd537d142feecba5930af37c7ef770f3377708407a77b82beb3")
+	version("1.60.0", commit="a0bf62f0f4c2f4fb7ba91aa08122e64400154e53")
+	version("1.54.0", commit="a2666333712b95f98322afd032084a912d9f4b48")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-r-utils", type=("build", "run"))

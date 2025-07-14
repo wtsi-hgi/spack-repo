@@ -13,11 +13,10 @@ class RFlowsortedBloodEpic(RPackage):
 	"""
 	
 	homepage = "https://github.com/immunomethylomics/FlowSorted.Blood.EPIC"
-	bioc = "FlowSorted.Blood.EPIC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FlowSorted.Blood.EPIC_2.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FlowSorted.Blood.EPIC/FlowSorted.Blood.EPIC_2.6.0.tar.gz"]
+	bioc = "FlowSorted.Blood.EPIC"
 
-	version("2.12.0", tag="RELEASE_3_21")
-	version("2.6.0", sha256="09d1d9b2c8ec3dbdbce673ef29cdea602f6fbf8e7ade39a705c408e0ef0cdd6d")
+	version("2.12.0", commit="c6e7560f1c827c854a3562cde4447900711f641c")
+	version("2.6.0", commit="6d7e2bb4898dfcfb5898bce9b7cb5fdb31b52f7f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-minfi@1.21.2:", type=("build", "run"))

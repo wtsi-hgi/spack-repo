@@ -13,11 +13,10 @@ class RBufferedmatrixmethods(RPackage):
 	"""
 	
 	homepage = "https://github.bom/bmbolstad/BufferedMatrixMethods"
-	bioc = "BufferedMatrixMethods" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BufferedMatrixMethods_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BufferedMatrixMethods/BufferedMatrixMethods_1.66.0.tar.gz"]
+	bioc = "BufferedMatrixMethods"
 
-	version("1.72.0", tag="RELEASE_3_21")
-	version("1.66.0", sha256="890f62b4e61927b1cb48252c69c23557a1fc32c7bcf71f76ab7d4fa507bb6b08")
+	version("1.72.0", commit="62ad483cd00aae3b9b2ef5da19ee58e3e9e4f1cd")
+	version("1.66.0", commit="be08e2eac4147aea3d8206fc85f0f29cff795738")
 
 	depends_on("r@2.6:", type=("build", "run"))
 	depends_on("r-bufferedmatrix", type=("build", "run"))

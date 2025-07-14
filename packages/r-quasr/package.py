@@ -12,11 +12,10 @@ class RQuasr(RPackage):
 	This package provides a framework for the quantification and analysis of Short Reads. It covers a complete workflow starting from raw sequence reads, over creation of alignments and quality control plots, to the quantification of genomic regions of interest.
 	"""
 	
-	bioc = "QuasR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QuasR_1.42.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QuasR/QuasR_1.42.1.tar.gz"]
+	bioc = "QuasR"
 
-	version("1.48.1", tag="RELEASE_3_21")
-	version("1.42.1", sha256="d66ef1bbf95ae60bb5b7cf87dea6dae6adcc92229ef69984b1589073b7bc2519")
+	version("1.48.1", commit="412e16217aa669996ca19b272e0680c410768a60")
+	version("1.42.1", commit="04c840632eaa0ecc8b7e14dc349cf57a69992280")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

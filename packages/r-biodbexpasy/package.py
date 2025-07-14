@@ -12,10 +12,9 @@ class RBiodbexpasy(RPackage):
 	The biodbExpasy library provides access to Expasy ENZYME database, using biodb package framework.  It allows to retrieve entries by their accession number. Web services can be accessed for searching the database by name or comments.
 	"""
 	
-	bioc = "biodbExpasy" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbExpasy_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbExpasy/biodbExpasy_1.6.0.tar.gz"]
+	bioc = "biodbExpasy"
 
-	version("1.6.0", sha256="c1d30717bb6389db733bfe0416600da97b8441acd52bc338eb9ce5387c0c0ef9")
+	version("1.6.0", commit="abe7f9279fc51574bbe723e837ee669d44e5c425")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biodb@1.3.1:", type=("build", "run"))

@@ -12,10 +12,9 @@ class RPsea(RPackage):
 	Deconvolution of gene expression data by Population-Specific Expression Analysis (PSEA).
 	"""
 	
-	bioc = "PSEA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PSEA_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PSEA/PSEA_1.36.0.tar.gz"]
+	bioc = "PSEA"
 
-	version("1.36.0", sha256="5ee830e1b1f6b11afa00ee2394405c0a79d4ae69d3124fe622e7ff6b99eaf609")
+	version("1.36.0", commit="11e95fde4a6ea40858fda70cce20a9450543d67a")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

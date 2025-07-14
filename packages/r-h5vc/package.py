@@ -12,11 +12,10 @@ class RH5vc(RPackage):
 	This package contains functions to interact with tally data from NGS experiments that is stored in HDF5 files.
 	"""
 	
-	bioc = "h5vc" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/h5vc_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/h5vc/h5vc_2.36.0.tar.gz"]
+	bioc = "h5vc"
 
-	version("2.42.0", tag="RELEASE_3_21")
-	version("2.36.0", sha256="dfa0e6f0e4fa3b36b857a11ab671ad55fbd4afa2a79b2f71f7b9291faa737b40")
+	version("2.42.0", commit="4cf033444350fece5694e5bc58f53a320d4e662c")
+	version("2.36.0", commit="7284b89b991a48dc31a311af336964dae79ff523")
 
 	depends_on("r-gridextra", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

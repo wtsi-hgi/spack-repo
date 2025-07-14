@@ -12,11 +12,10 @@ class RDrimseq(RPackage):
 	The package provides two frameworks. One for the differential transcript usage analysis between different conditions and one for the tuQTL analysis. Both are based on modeling the counts of genomic features (i.e., transcripts) with the Dirichlet-multinomial distribution. The package also makes available functions for visualization and exploration of the data and results.
 	"""
 	
-	bioc = "DRIMSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DRIMSeq_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DRIMSeq/DRIMSeq_1.30.0.tar.gz"]
+	bioc = "DRIMSeq"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="261a7955082a57f44371e07721c53f48edaaee5d3d2050e9b38e7bec1821c0d9")
+	version("1.36.0", commit="9b68f783ddf6656a10431f9775cd0fb790e44d77")
+	version("1.30.0", commit="dca4feabd7c7155cf4e58e4b095fdde65fa928ec")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

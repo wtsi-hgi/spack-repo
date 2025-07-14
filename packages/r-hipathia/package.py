@@ -12,11 +12,10 @@ class RHipathia(RPackage):
 	Hipathia is a method for the computation of signal transduction along signaling pathways from transcriptomic data. The method is based on an iterative algorithm which is able to compute the signal intensity passing through the nodes of a network by taking into account the level of expression of each gene and the intensity of the signal arriving to it. It also provides a new approach to functional analysis allowing to compute the signal arriving to the functions annotated to each pathway.
 	"""
 	
-	bioc = "hipathia" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hipathia_3.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hipathia/hipathia_3.2.0.tar.gz"]
+	bioc = "hipathia"
 
-	version("3.8.0", tag="RELEASE_3_21")
-	version("3.2.0", sha256="7d21fa87aa5f277c4740db53df8789a7c0f02c21aeab3f054595bd2d39eb00d3")
+	version("3.8.0", commit="8d6aea7db2eb9542ed5478a90a53613b7ccaaecf")
+	version("3.2.0", commit="251de342cc6c9f36c0676e7b6539266e221fd687")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-igraph@1.0.1:", type=("build", "run"))

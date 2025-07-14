@@ -12,11 +12,10 @@ class RSetools(RPackage):
 	This includes a set of convenience functions for working with the SummarizedExperiment class. Note that plotting functions historically in this package have been moved to the sechm package (see vignette for details).
 	"""
 	
-	bioc = "SEtools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SEtools_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SEtools/SEtools_1.16.0.tar.gz"]
+	bioc = "SEtools"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="84e982064c51e2a3ed5c424208e6d7825d92f74498a4f0618d36d52fb0b17907")
+	version("1.22.0", commit="eaa5616d7b56c880d18e6485f6219846a3eda76e")
+	version("1.16.0", commit="e4c14651b9682b55de4e64cb6afebec63fa94cda")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

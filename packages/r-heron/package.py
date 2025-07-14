@@ -13,11 +13,10 @@ class RHeron(RPackage):
 	"""
 	
 	homepage = "https://github.com/Ong-Research/HERON"
-	bioc = "HERON" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HERON_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HERON/HERON_1.0.0.tar.gz"]
+	bioc = "HERON"
 
-	version("1.6.1", tag="RELEASE_3_21")
-	version("1.0.0", sha256="b1a365540c32dac743dc87e5428e26692fd7174ec8a76f014d19e727ab60e34b")
+	version("1.6.1", commit="f768175593549dcad06d2f6f17e3cdbf5f7a88c3")
+	version("1.0.0", commit="233a914e949f9aa18bc290436b366a52d0dc75ee")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-summarizedexperiment@1.1.6:", type=("build", "run"))

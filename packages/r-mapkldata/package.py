@@ -12,10 +12,9 @@ class RMapkldata(RPackage):
 	Gene expression data from a breast cancer study published by Turashvili et al. in 2007, provided as an eSet.
 	"""
 	
-	bioc = "mAPKLData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mAPKLData_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mAPKLData/mAPKLData_1.34.0.tar.gz"]
+	bioc = "mAPKLData"
 
-	version("1.34.0", sha256="6f905b562a247cee01e97189772f57a32416471c986182d71eed70cf4fd41e6e")
+	version("1.34.0", commit="6620a67509196e84b79ecb1af246e24da2001454")
 
 	depends_on("r@3.2:", type=("build", "run"))
 

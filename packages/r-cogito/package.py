@@ -12,11 +12,10 @@ class RCogito(RPackage):
 	Biological studies often consist of multiple conditions which are examined with different laboratory set ups like RNA-sequencing or ChIP-sequencing. To get an overview about the whole resulting data set, Cogito provides an automated, complete, reproducible and clear report about all samples and basic comparisons between all different samples. This report can be used as documentation about the data set or as starting point for further custom analysis.
 	"""
 	
-	bioc = "Cogito" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Cogito_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Cogito/Cogito_1.8.0.tar.gz"]
+	bioc = "Cogito"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="ad0509f0a8f2265e2fdbd7564d5b08306b41a17a33402337511b6b068133a7b0")
+	version("1.14.0", commit="4c28c7ded88b2bb1800478afdf67ad0c3c235cae")
+	version("1.8.0", commit="22931f7401e1fb5ef7d25f7ef83db7fe543e9227")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

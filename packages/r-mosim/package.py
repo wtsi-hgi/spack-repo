@@ -13,11 +13,10 @@ class RMosim(RPackage):
 	"""
 	
 	homepage = "https://github.com/ConesaLab/MOSim"
-	bioc = "MOSim" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MOSim_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MOSim/MOSim_1.16.0.tar.gz"]
+	bioc = "MOSim"
 
-	version("2.4.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="49152fdac7d284e3a2c5c8fc19960e813157fb78911a71bb20a118bee69c9d5f")
+	version("2.4.0", commit="bd1f062d99c713187122928efca6b490bb6a7441")
+	version("1.16.0", commit="4c2e0b98dfe08638bf16d6a5fb2f4d3b441bc1e9")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-hiddenmarkov", type=("build", "run"))

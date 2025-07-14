@@ -12,11 +12,10 @@ class RDeconrnaseq(RPackage):
 	DeconSeq is an R package for deconvolution of heterogeneous tissues based on mRNA-Seq data. It modeled expression levels from heterogeneous cell populations in mRNA-Seq as the weighted average of expression from different constituting cell types and predicted cell type proportions of single expression profiles.
 	"""
 	
-	bioc = "DeconRNASeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DeconRNASeq_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DeconRNASeq/DeconRNASeq_1.44.0.tar.gz"]
+	bioc = "DeconRNASeq"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="6f8f7237e2acbe2e5b2248da61484ed289efb1769eab2fb793e0257e52cfbdcc")
+	version("1.50.0", commit="20915cdb7bbb4070959db2a1ce7ef6e6c1fbfdce")
+	version("1.44.0", commit="b74d94cfb15a475cad1ef919a2f37a21985f66ab")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-limsolve", type=("build", "run"))

@@ -13,10 +13,9 @@ class RBufferedmatrix(RPackage):
 	"""
 	
 	homepage = "https://github.com/bmbolstad/BufferedMatrix"
-	bioc = "BufferedMatrix" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BufferedMatrix_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BufferedMatrix/BufferedMatrix_1.66.0.tar.gz"]
+	bioc = "BufferedMatrix"
 
-	version("1.72.0", tag="RELEASE_3_21")
-	version("1.66.0", sha256="195ab4d499e811f6e70ce9b28cc3f1c4355298e1a15e8be1364a92ea45cf72a8")
+	version("1.72.0", commit="aa9e63439f425c098785232e98902633849e098b")
+	version("1.66.0", commit="1feca4469540f3c0a15f75715f2e69b93310c451")
 
 	depends_on("r@2.6:", type=("build", "run"))

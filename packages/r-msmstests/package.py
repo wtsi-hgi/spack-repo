@@ -12,11 +12,10 @@ class RMsmstests(RPackage):
 	Statistical tests for label-free LC-MS/MS data by spectral counts, to discover differentially expressed proteins between two biological conditions. Three tests are available: Poisson GLM regression, quasi-likelihood GLM regression, and the negative binomial of the edgeR package.The three models admit blocking factors to control for nuissance variables.To assure a good level of reproducibility a post-test filter is available, where we may set the minimum effect size considered biologicaly relevant, and the minimum expression of the most abundant condition.
 	"""
 	
-	bioc = "msmsTests" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msmsTests_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msmsTests/msmsTests_1.40.0.tar.gz"]
+	bioc = "msmsTests"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="c9bc06dce29caa101c42d9bf45d1162e10b75852bdc02babb2d9c154b7272e36")
+	version("1.46.0", commit="675b876be34a1c52ab64ca54a2f32670d45d1651")
+	version("1.40.0", commit="f5a9e4e71118b232647c5bd212b54cde518482f3")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-msnbase", type=("build", "run"))

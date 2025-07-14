@@ -12,11 +12,10 @@ class RWeitrix(RPackage):
 	Data type and tools for working with matrices having precision weights and missing data. This package provides a common representation and tools that can be used with many types of high-throughput data. The meaning of the weights is compatible with usage in the base R function "lm" and the package "limma". Calibrate weights to account for known predictors of precision. Find rows with excess variability. Perform differential testing and find rows with the largest confident differences. Find PCA-like components of variation even with many missing values, rotated so that individual components may be meaningfully interpreted. DelayedArray matrices and BiocParallel are supported.
 	"""
 	
-	bioc = "weitrix" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/weitrix_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/weitrix/weitrix_1.14.0.tar.gz"]
+	bioc = "weitrix"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="bbafa161c07fa8696d7f3d24182dc4f64309381cf63a3d019b39bd85be6dc366")
+	version("1.20.0", commit="1269ffd7c60aa296ab27e28f8f821b2e3096e8c6")
+	version("1.14.0", commit="263312072f9ae115cf7c24c4b946b733ee5f5306")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

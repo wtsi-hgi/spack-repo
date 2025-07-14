@@ -12,11 +12,10 @@ class RBiotmledata(RPackage):
 	Microarray data (from the Illumina Ref-8 BeadChips platform) and phenotype-level data from an epidemiological investigation of benzene exposure, packaged using "SummarizedExperiemnt", for use as an example with the "biotmle" R package.
 	"""
 	
-	bioc = "biotmleData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/biotmleData_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/biotmleData/biotmleData_1.26.0.tar.gz"]
+	bioc = "biotmleData"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="fc95a7c370d0e40e28fa63ee7ca09e1175a3223981273002119b4cfd319f961a")
+	version("1.32.0", commit="cf91e5fbf217f56813932507db4b697509784117")
+	version("1.26.0", commit="f8c220ee4059590a70645adcf2a62619a493052d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

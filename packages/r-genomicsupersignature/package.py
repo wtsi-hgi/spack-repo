@@ -13,11 +13,10 @@ class RGenomicsupersignature(RPackage):
 	"""
 	
 	homepage = "https://github.com/shbrief/GenomicSuperSignature"
-	bioc = "GenomicSuperSignature" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicSuperSignature_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicSuperSignature/GenomicSuperSignature_1.10.0.tar.gz"]
+	bioc = "GenomicSuperSignature"
 
-	version("1.16.1", tag="RELEASE_3_21")
-	version("1.10.0", sha256="c0deb6a2ceb4e8e4a725716b1803969d35ef5fc15b47943eb91c34ac5248062b")
+	version("1.16.1", commit="08fd55fc2ba1f088f9fa61d00008b55986cfd5d3")
+	version("1.10.0", commit="4f4ff12bcaaf76aa51fd05ddeb02ab3fa1e9e57e")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

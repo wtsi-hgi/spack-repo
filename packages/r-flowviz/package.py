@@ -12,11 +12,10 @@ class RFlowviz(RPackage):
 	Provides visualization tools for flow cytometry data.
 	"""
 	
-	bioc = "flowViz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowViz_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowViz/flowViz_1.66.0.tar.gz"]
+	bioc = "flowViz"
 
-	version("1.72.0", tag="RELEASE_3_21")
-	version("1.66.0", sha256="2810dbb437fd99ce4f2da068f6d2ecf5f5c496c24879faf1210a08216e10c0c2")
+	version("1.72.0", commit="072bea418844fb6ff2a18c8bbe0befc305c23b31")
+	version("1.66.0", commit="a2a15f661889c6c2122496c156a479c43811df63")
 
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

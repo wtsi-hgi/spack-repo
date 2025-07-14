@@ -13,11 +13,10 @@ class RFluentgenomics(RPackage):
 	"""
 	
 	homepage = "https://github.com/sa-lee/fluentGenomics"
-	bioc = "fluentGenomics" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/fluentGenomics_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/fluentGenomics/fluentGenomics_1.14.0.tar.gz"]
+	bioc = "fluentGenomics"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="7a24e41c62bc49ec9b376c18d7306dae99519ffbaddc3e63740a9c81d0b5fa1f")
+	version("1.20.0", commit="c883bf51030eacb3317c31a8c6e295d651952cf7")
+	version("1.14.0", commit="5141dcc7409acfda1d98efd32a8b63ae57f3a54c")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-plyranges@1.7.7:", type=("build", "run"))

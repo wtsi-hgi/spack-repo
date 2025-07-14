@@ -12,11 +12,10 @@ class RComapr(RPackage):
 	comapr detects crossover intervals for single gametes from their haplotype states sequences and stores the crossovers in GRanges object. The genetic distances can then be calculated via the mapping functions using estimated crossover rates for maker intervals. Visualisation functions for plotting interval-based genetic map or cumulative genetic distances are implemented, which help reveal the variation of crossovers landscapes across the genome and across individuals.
 	"""
 	
-	bioc = "comapr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/comapr_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/comapr/comapr_1.6.1.tar.gz"]
+	bioc = "comapr"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.1", sha256="ac101714233d406338b6ac5022d3547b6ba65939806bad7bae4744948952718e")
+	version("1.12.0", commit="03182688b0ea1defad09cc0046418f19c7d4b5ec")
+	version("1.6.1", commit="fe014190c9c5c120f9dfe199b018c38ea522c218")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

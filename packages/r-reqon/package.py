@@ -12,10 +12,9 @@ class RReqon(RPackage):
 	Algorithm for recalibrating the base quality scores for aligned sequencing data in BAM format.
 	"""
 	
-	bioc = "ReQON" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ReQON_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ReQON/ReQON_1.48.0.tar.gz"]
+	bioc = "ReQON"
 
-	version("1.48.0", sha256="0ff05500cc57f2765346816f068faf216d627e90b2d42623d41965a4ea584870")
+	version("1.48.0", commit="9a9023213ccdeb6c70fd1d1d0b4ca968dda8a6ac")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))

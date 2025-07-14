@@ -13,11 +13,10 @@ class RTranscriptogramer(RPackage):
 	"""
 	
 	homepage = "https://github.com/arthurvinx/transcriptogramer"
-	bioc = "transcriptogramer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/transcriptogramer_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/transcriptogramer/transcriptogramer_1.24.0.tar.gz"]
+	bioc = "transcriptogramer"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="540713671b8c77e9f789e7e4f7553f668a5a73f225d1d4f2ca4fc4603b0b5e9e")
+	version("1.30.0", commit="0f183b214350a0606436c172f78814c30737f146")
+	version("1.24.0", commit="f288ab4889aca103db694b203433dcacdf9c5818")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biomart", type=("build", "run"))

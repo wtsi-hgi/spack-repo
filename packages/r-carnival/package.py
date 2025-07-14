@@ -13,11 +13,10 @@ class RCarnival(RPackage):
 	"""
 	
 	homepage = "https://github.com/saezlab/CARNIVAL"
-	bioc = "CARNIVAL" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CARNIVAL_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CARNIVAL/CARNIVAL_2.12.0.tar.gz"]
+	bioc = "CARNIVAL"
 
-	version("2.18.0", tag="RELEASE_3_21")
-	version("2.12.0", sha256="9b6c24aa0832e1eae7a2d6e112bcd89025b0c2f288c724ce459e0b5f58b40a7b")
+	version("2.18.0", commit="f97de91aad701e1c82074ed80bb2fbba632507a7")
+	version("2.12.0", commit="564b0ac03f3b25aae01599493413ec528dc315e2")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-readr", type=("build", "run"))

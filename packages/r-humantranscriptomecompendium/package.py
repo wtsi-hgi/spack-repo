@@ -12,8 +12,7 @@ class RHumantranscriptomecompendium(RPackage):
 	Provide tools for working with a compendium of human transcriptome sequences (originally htxcomp).
 	"""
 	
-	bioc = "HumanTranscriptomeCompendium" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HumanTranscriptomeCompendium_1.17.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HumanTranscriptomeCompendium/HumanTranscriptomeCompendium_1.17.0.tar.gz"]
+	bioc = "HumanTranscriptomeCompendium"
 
 	version("1.17.0", sha256="5ba92aca4d359d78bd5252836a979503080e45163549d0abee23c409c1ef7404")
 

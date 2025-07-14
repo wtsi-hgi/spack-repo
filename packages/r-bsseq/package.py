@@ -13,10 +13,9 @@ class RBsseq(RPackage):
 	data."""
 
 	bioc = "bsseq"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bsseq_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bsseq/bsseq_1.38.0.tar.gz"]
 
-	version("1.44.1", tag="RELEASE_3_21")
-	version("1.38.0", sha256="e0bdc6810757910674d493238d78f5079d048c718deb94df594ab82a4afed729")
+	version("1.44.1", commit="03b21fff8e23194372991eee4eec42911c4d1493")
+	version("1.38.0", commit="392e22cb833dba561669a201b5378c6eab093599")
 	version("1.36.0", commit="5dd72c5a84e1fcc3389ab2a74f8ca14c399ac128")
 	version("1.34.0", commit="98239c07d74e1362c7ba2a3bf4f6119830fc95dc")
 	version("1.32.0", commit="a0c1eacbc479c57bd836e885e162c28bbe08e115")

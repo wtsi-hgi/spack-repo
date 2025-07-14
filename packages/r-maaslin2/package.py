@@ -13,11 +13,10 @@ class RMaaslin2(RPackage):
 	"""
 	
 	homepage = "http://huttenhower.sph.harvard.edu/maaslin2"
-	bioc = "Maaslin2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Maaslin2_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Maaslin2/Maaslin2_1.16.0.tar.gz"]
+	bioc = "Maaslin2"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="38261a85db7dce552590110eed241e679307f5e6c0b67f1667d68c65c86e25b5", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Maaslin2_1.16.0.tar.gz")
+	version("1.22.0", commit="fcec85e6f166949ed20d57875113c6404293c02f")
+	version("1.16.0", commit="0ab531d6648aef776042bd155f6f52b22fedb9fc")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-robustbase", type=("build", "run"))

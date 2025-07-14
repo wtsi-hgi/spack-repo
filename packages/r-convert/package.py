@@ -13,11 +13,10 @@ class RConvert(RPackage):
 	"""
 	
 	homepage = "http://bioinf.wehi.edu.au/limma/convert.html"
-	bioc = "convert" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/convert_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/convert/convert_1.78.0.tar.gz"]
+	bioc = "convert"
 
-	version("1.84.0", tag="RELEASE_3_21")
-	version("1.78.0", sha256="923562f0f9d9cf0dfb9c4d7348b1601fc33e68d8d326642241545d1bf958a4eb")
+	version("1.84.0", commit="801274c62baa5a572619a86ee338b0db54b63c14")
+	version("1.78.0", commit="398d7e4cccda0c90d963117cac574032f8874e7c")
 
 	depends_on("r@2.6:", type=("build", "run"))
 	depends_on("r-biobase@1.15.33:", type=("build", "run"))

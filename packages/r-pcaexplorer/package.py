@@ -13,11 +13,10 @@ class RPcaexplorer(RPackage):
 	"""
 	
 	homepage = "https://github.com/federicomarini/pcaExplorer"
-	bioc = "pcaExplorer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pcaExplorer_2.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pcaExplorer/pcaExplorer_2.28.0.tar.gz"]
+	bioc = "pcaExplorer"
 
-	version("3.2.0", tag="RELEASE_3_21")
-	version("2.28.0", sha256="07b0796b684a0801fc38f3a922464acb8e935c739f75f6dc25d4022fb14c0c46")
+	version("3.2.0", commit="c394b92262f05d27bf83d3ff28eacec9c0b9efd1")
+	version("2.28.0", commit="bc5fa86250a1d7842586cd9e22d4b591bbcb2359")
 
 	depends_on("r-deseq2", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

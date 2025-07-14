@@ -12,11 +12,10 @@ class RProps(RPackage):
 	This package calculates probabilistic pathway scores using gene expression data. Gene expression values are aggregated into pathway-based scores using Bayesian network representations of biological pathways.
 	"""
 	
-	bioc = "PROPS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PROPS_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PROPS/PROPS_1.24.0.tar.gz"]
+	bioc = "PROPS"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="e3a480e8867843c33c84a8d21ffe84ae6d27ebbaf12db4278326d4edf57082cd")
+	version("1.30.0", commit="8111b33c6507619c75ff2f143d7068ed4db8c490")
+	version("1.24.0", commit="542f64cd079294e67c71a98e49024d5419faac08")
 
 	depends_on("r-bnlearn", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))

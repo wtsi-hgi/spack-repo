@@ -12,11 +12,10 @@ class RBiocset(RPackage):
 	BiocSet displays different biological sets in a triple tibble format. These three tibbles are `element`, `set`, and `elementset`. The user has the abilty to activate one of these three tibbles to perform common functions from the dplyr package. Mapping functionality and accessing web references for elements/sets are also available in BiocSet.
 	"""
 	
-	bioc = "BiocSet" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocSet_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocSet/BiocSet_1.16.1.tar.gz"]
+	bioc = "BiocSet"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.1", sha256="0d1ba2b9632f7bf7b2cc9249843316ed3c3cbcef9af6c57a3cf2bb0cc132b1e2")
+	version("1.22.0", commit="86ebeee9ff436f81c5219661e3db9dd56c9fa9b8")
+	version("1.16.1", commit="39ae572fd941e0fcc76632ae5bccd629eab4a532")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

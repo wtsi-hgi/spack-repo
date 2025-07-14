@@ -12,11 +12,10 @@ class RMgfr(RPackage):
 	The package is designed to detect marker genes from RNA-seq data.
 	"""
 	
-	bioc = "MGFR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MGFR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MGFR/MGFR_1.28.0.tar.gz"]
+	bioc = "MGFR"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="0a2cb5e298934c3542725d9b6bb65198090aa7f1a9982a5af84205c881566122")
+	version("1.34.0", commit="c71ad8b8c27ce237b3202dcca107078cee2e2f7b")
+	version("1.28.0", commit="22ee4944ecd34350f08a3b9238eb070d7ec6ac0b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biomart", type=("build", "run"))

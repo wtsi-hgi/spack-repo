@@ -13,11 +13,10 @@ class RMethylclock(RPackage):
 	"""
 	
 	homepage = "https://github.com/isglobal-brge/methylclock"
-	bioc = "methylclock" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylclock_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylclock/methylclock_1.8.0.tar.gz"]
+	bioc = "methylclock"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="813248b3f4cabf05919de15147630e8290984f0bdce177de4445ed6683a85eda")
+	version("1.14.0", commit="d6eec3a41839f52f12b0295b8524667c337793c9")
+	version("1.8.0", commit="bcf254819eacd5878f8f800c6d4817df833aec1b")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-methylclockdata", type=("build", "run"))

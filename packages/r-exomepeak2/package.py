@@ -12,10 +12,9 @@ class RExomepeak2(RPackage):
 	exomePeak2 provides peak detection and differential methylation for Methylated RNA Immunoprecipitation Sequencing (MeRIP-Seq) data. MeRIP-Seq is a commonly applied sequencing assay that measures the location and abundance of RNA modification sites under specific cellular conditions. The technique is sensitive to PCR amplification biases commonly found in NGS data. In addition, the efficiency of immunoprecipitation often varies between different IP samples. exomePeak2 can perform peak calling and differential analysis independent of GC content bias and IP efficiency changes.
 	"""
 	
-	bioc = "exomePeak2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/exomePeak2_1.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/exomePeak2/exomePeak2_1.14.3.tar.gz"]
+	bioc = "exomePeak2"
 
-	version("1.14.3", sha256="f0d28b69ffc32ffdbb445e605c18a865692fa8debfd35619d84bd24d210a7fc3", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/exomePeak2_1.14.3.tar.gz")
+	version("1.14.3", commit="8d265ea9c590c6e8e5bb10bee891467c40604d6f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

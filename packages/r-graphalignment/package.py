@@ -13,9 +13,8 @@ class RGraphalignment(RPackage):
 	"""
 	
 	homepage = "http://www.thp.uni-koeln.de/~berg/GraphAlignment/"
-	bioc = "GraphAlignment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GraphAlignment_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GraphAlignment/GraphAlignment_1.66.0.tar.gz"]
+	bioc = "GraphAlignment"
 
-	version("1.72.0", tag="RELEASE_3_21")
-	version("1.66.0", sha256="1a446d803266504325225dab0657932018e94c954fd2121769abd4baed90513e")
+	version("1.72.0", commit="04a86774d47dc6bb7561cd417466e8ed212611cb")
+	version("1.66.0", commit="913ea0cfab9dfd08ff27fa6fb36c604bb4cbebd7")
 

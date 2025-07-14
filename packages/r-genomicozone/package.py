@@ -12,11 +12,10 @@ class RGenomicozone(RPackage):
 	The package clusters gene activity along chromosome into zones, detects differential zones as outstanding, and visualizes maps of outstanding zones across the genome. It enables characterization of effects on multiple genes within adaptive genomic neighborhoods, which could arise from genome reorganization, structural variation, or epigenome alteration. It guarantees cluster optimality, linear runtime to sample size, and reproducibility. One can apply it on genome-wide activity measurements such as copy number, transcriptomic, proteomic, and methylation data.
 	"""
 	
-	bioc = "GenomicOZone" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicOZone_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicOZone/GenomicOZone_1.16.0.tar.gz"]
+	bioc = "GenomicOZone"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="68700fac97a1141544b9c9666b33ea905e9eb337f84c0f6cfa984ccb390621b7")
+	version("1.22.0", commit="5664c07570d701a6312f71607eb1552dd309ddbd")
+	version("1.16.0", commit="7e7361a1075bef1e58c94747ca64a88b7255df8d")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ckmeans-1d-dp@4.3:", type=("build", "run"))

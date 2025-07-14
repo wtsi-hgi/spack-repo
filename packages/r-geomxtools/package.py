@@ -12,11 +12,10 @@ class RGeomxtools(RPackage):
 	Tools for NanoString Technologies GeoMx Technology. Package provides functions for reading in DCC and PKC files based on an ExpressionSet derived object.  Normalization and QC functions are also included.
 	"""
 	
-	bioc = "GeomxTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeomxTools_3.6.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeomxTools/GeomxTools_3.6.2.tar.gz"]
+	bioc = "GeomxTools"
 
-	version("3.12.0", tag="RELEASE_3_21")
-	version("3.6.2", sha256="d256eb7048fc5b24ba097459561d86882d846a8d359499c6d6fc70129bea9106")
+	version("3.12.0", commit="3a6397fb500595118064370266bdcee22188d1a6")
+	version("3.6.2", commit="fb595869b23c9589da29d5f7e0f02afbc79e6b25")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

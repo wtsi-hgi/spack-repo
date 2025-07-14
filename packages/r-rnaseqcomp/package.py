@@ -13,11 +13,10 @@ class RRnaseqcomp(RPackage):
 	"""
 	
 	homepage = "https://github.com/tengmx/rnaseqcomp"
-	bioc = "rnaseqcomp" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rnaseqcomp_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rnaseqcomp/rnaseqcomp_1.32.0.tar.gz"]
+	bioc = "rnaseqcomp"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="be01564bef64eda55c7334a3c37adbea403b4e686f1f2db3576185d207bdd47a")
+	version("1.38.0", commit="b51afcd3b766aaa6ceee4cd389c18c9443a21e18")
+	version("1.32.0", commit="05f2020b991c7cd2358f79b50d0271621d73a4c3")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

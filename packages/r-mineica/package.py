@@ -12,11 +12,10 @@ class RMineica(RPackage):
 	The goal of MineICA is to perform Independent Component Analysis (ICA) on multiple transcriptome datasets, integrating additional data (e.g molecular, clinical and pathological). This Integrative ICA helps the biological interpretation of the components by studying their association with variables (e.g sample annotations) and gene sets, and enables the comparison of components from different datasets using correlation-based graph.
 	"""
 	
-	bioc = "MineICA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MineICA_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MineICA/MineICA_1.42.0.tar.gz"]
+	bioc = "MineICA"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="657058c780494768d860988cd6c24e875f55bd9f1718282c61d133d24e85eab3")
+	version("1.48.0", commit="4c7d2f72c9dc34793d5d0e670a35ff6ce818fe6b")
+	version("1.42.0", commit="c4e24ac906b42aa4796933cc364dfdf6c17cb050")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.13.8:", type=("build", "run"))

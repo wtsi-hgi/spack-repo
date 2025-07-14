@@ -13,11 +13,10 @@ class ROncoscore(RPackage):
 	"""
 	
 	homepage = "https://github.com/danro9685/OncoScore"
-	bioc = "OncoScore" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OncoScore_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OncoScore/OncoScore_1.30.0.tar.gz"]
+	bioc = "OncoScore"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="335b957999e1a565b0a7ba5d13a1db7247a0d28e0caf3cf883385c3d4d42ddec")
+	version("1.36.0", commit="b83a0ddd141f21fad7fc51e81dc39a38f70c28fc")
+	version("1.30.0", commit="8bbdd2a168209777954f811262b74c99fc44ffde")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biomart", type=("build", "run"))

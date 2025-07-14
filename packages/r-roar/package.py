@@ -13,11 +13,10 @@ class RRoar(RPackage):
 	"""
 	
 	homepage = "https://github.com/vodkatad/roar/"
-	bioc = "roar" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/roar_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/roar/roar_1.38.0.tar.gz"]
+	bioc = "roar"
 
-	version("1.44.1", tag="RELEASE_3_21")
-	version("1.38.0", sha256="b94dc3af199b1ffc6377d7cacaf3316f51b3496ab7a4657b067551dcbe992b5e")
+	version("1.44.1", commit="d2ea95a130a9ddca7b902c2ff5ead27b4cc5f5a0")
+	version("1.38.0", commit="f1f9d9cc93c59eb5df5c18aa91276ba08eb216ad")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

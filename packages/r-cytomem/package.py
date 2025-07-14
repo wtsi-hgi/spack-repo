@@ -13,11 +13,10 @@ class RCytomem(RPackage):
 	"""
 	
 	homepage = "https://github.com/cytolab/cytoMEM"
-	bioc = "cytoMEM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cytoMEM_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cytoMEM/cytoMEM_1.6.0.tar.gz"]
+	bioc = "cytoMEM"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="bebc3ea4a8e378788446553b2a7d2e1572c1420d59b44596beb48a9ca5e4083b")
+	version("1.12.0", commit="e4cb9522fe64dbbe62e2c8f088962efcfa4ef9a5")
+	version("1.6.0", commit="0556dc38733c9e5813485ad84a7c36baba6d9ccc")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

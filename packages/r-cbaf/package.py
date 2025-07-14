@@ -12,11 +12,10 @@ class RCbaf(RPackage):
 	This package contains functions that allow analysing and comparing omic data across various cancers/cancer subgroups easily. So far, it is compatible with RNA-seq, microRNA-seq, microarray and methylation datasets that are stored on cbioportal.org.
 	"""
 	
-	bioc = "cbaf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cbaf_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cbaf/cbaf_1.24.0.tar.gz"]
+	bioc = "cbaf"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="119afd78a65b81bc4a5788ccf5878e9a737b950f4f6ecb70ee690931d08ec8fc")
+	version("1.30.0", commit="cfa9978e77cd36969d35c2c5da309d86e9d1ab7f")
+	version("1.24.0", commit="e7d2904355c751af6a888ada06cc5630483468ee")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))

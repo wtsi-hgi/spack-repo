@@ -13,11 +13,10 @@ class RTransview(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org/packages/release/bioc/html/TransView.html"
-	bioc = "TransView" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TransView_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TransView/TransView_1.46.0.tar.gz"]
+	bioc = "TransView"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="d5a48714c5fa0ef6ac55fc78dd302f6c12334fed5f90ae3a533fe3477b36cd4e")
+	version("1.52.0", commit="6404ded573dd6aef3dc7b98d3db2a9ec14275c04")
+	version("1.46.0", commit="2a55784aa940fc26b6ccb9a4ae47469af6593387")
 
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

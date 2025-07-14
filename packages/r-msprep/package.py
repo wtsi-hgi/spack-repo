@@ -13,11 +13,10 @@ class RMsprep(RPackage):
 	"""
 	
 	homepage = "https://github.com/KechrisLab/MSPrep"
-	bioc = "MSPrep" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSPrep_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSPrep/MSPrep_1.12.0.tar.gz"]
+	bioc = "MSPrep"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="11cae88a6c87effa217ae1c1cf6ca12b4ba9df07b3c694b51e6ad6a0b3de76b9")
+	version("1.18.0", commit="556b08ab0844d8240f7eb03d00aba3fa1c0ee7d7")
+	version("1.12.0", commit="511dcda3ad4399e69a9c3d46a50e9749f320e6b2")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

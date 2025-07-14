@@ -12,11 +12,10 @@ class RMethylseekr(RPackage):
 	This is a package for the discovery of regulatory regions from Bis-seq data
 	"""
 	
-	bioc = "MethylSeekR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MethylSeekR_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MethylSeekR/MethylSeekR_1.42.0.tar.gz"]
+	bioc = "MethylSeekR"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="eeb5fe4f96fecae75a0197044c8ee1ea493efd0ab68dfa15236971753e56517f")
+	version("1.48.0", commit="6e4e7fe7584f8775064b5c80d1afd938ed8f460c")
+	version("1.42.0", commit="40b73b2d40378fc5e1111e348f24092457d4e1bc")
 
 	depends_on("r-rtracklayer@1.16.3:", type=("build", "run"))
 	depends_on("r-mhsmm@0.4.4:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RPlotgardenerdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/PhanstielLab/plotgardenerData"
-	bioc = "plotgardenerData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/plotgardenerData_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/plotgardenerData/plotgardenerData_1.8.0.tar.gz"]
+	bioc = "plotgardenerData"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="23d344e1aba587ac4a1ee22c9143a8f3b088e9eea7f4c37ca6a1e359260100b1")
+	version("1.14.0", commit="df1f4e9780ff2f6c9eaf7cfc42bd093fb0216136")
+	version("1.8.0", commit="d513787280ad3ca35ed33d30f6dd8e7a0869ee19")
 
 	depends_on("r@4.1:", type=("build", "run"))
 

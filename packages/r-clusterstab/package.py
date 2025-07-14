@@ -12,11 +12,10 @@ class RClusterstab(RPackage):
 	This package can be used to estimate the number of clusters in a set of microarray data, as well as test the stability of these clusters.
 	"""
 	
-	bioc = "clusterStab" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clusterStab_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clusterStab/clusterStab_1.74.0.tar.gz"]
+	bioc = "clusterStab"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="48dd977347cf111ec261d0ca0293a052b048fe212117b9b41656c14f8a49b383")
+	version("1.80.0", commit="02b8d48882fb6892fedcc89ebf597f0524f2fe8d")
+	version("1.74.0", commit="6bbc33b67f359ba1c2bc686d29b7152ccb7cd8a4")
 
 	depends_on("r-biobase@1.4.22:", type=("build", "run"))
 	depends_on("r@1.9:", type=("build", "run"))

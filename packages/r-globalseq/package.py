@@ -13,10 +13,9 @@ class RGlobalseq(RPackage):
 	"""
 	
 	homepage = "https://github.com/rauschenberger/globalSeq"
-	bioc = "globalSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/globalSeq_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/globalSeq/globalSeq_1.30.0.tar.gz"]
+	bioc = "globalSeq"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="e71a151ac910673542fbb47fd6c453cc00c6f21630fde9cf645ba39a399318ac")
+	version("1.36.0", commit="c07d19fd4b362f4d60f8c6382d421a0aff905c96")
+	version("1.30.0", commit="3915a871dd80d5d896bb479209aabcbe15f30c9e")
 
 	depends_on("r@3:", type=("build", "run"))

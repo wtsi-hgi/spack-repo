@@ -12,11 +12,10 @@ class RRaggedexperiment(RPackage):
 	This package provides a flexible representation of copy number, mutation, and other data that fit into the ragged array schema for genomic location data. The basic representation of such data provides a rectangular flat table interface to the user with range information in the rows and samples/specimen in the columns. The RaggedExperiment class derives from a GRangesList representation and provides a semblance of a rectangular dataset.
 	"""
 	
-	bioc = "RaggedExperiment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RaggedExperiment_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RaggedExperiment/RaggedExperiment_1.26.0.tar.gz"]
+	bioc = "RaggedExperiment"
 
-	version("1.32.2", tag="RELEASE_3_21")
-	version("1.26.0", sha256="6693a3bc4efdd5ae687848a2916014f367f353b237757678d02dbfbe59149d1f")
+	version("1.32.2", commit="96ccbb9284b73b4907680cb9ae575becd619e673")
+	version("1.26.0", commit="1da7790d0d1bdcfe85d87c864d7aefe6da5d58d1")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-genomicranges@1.37.17:", type=("build", "run"))

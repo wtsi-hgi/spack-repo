@@ -12,11 +12,10 @@ class RMethylpipe(RPackage):
 	Memory efficient analysis of base resolution DNA methylation data in both the CpG and non-CpG sequence context. Integration of DNA methylation data derived from any methodology providing base- or low-resolution data.
 	"""
 	
-	bioc = "methylPipe" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylPipe_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylPipe/methylPipe_1.36.0.tar.gz"]
+	bioc = "methylPipe"
 
-	version("1.42.1", tag="RELEASE_3_21")
-	version("1.36.0", sha256="002150c0d490ad15fad6efacb9cce108a26af198470d69c2a4a265099c34deab")
+	version("1.42.1", commit="9671cbf10b4cb456d22d2e8eee2fc4c025844a28")
+	version("1.36.0", commit="eac279037142111c23ce24dfaa2145552c95d30e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

@@ -13,11 +13,10 @@ class RHibed(RPackage):
 	"""
 	
 	homepage = "https://github.com/SalasLab/HiBED"
-	bioc = "HiBED" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HiBED_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HiBED/HiBED_1.0.0.tar.gz"]
+	bioc = "HiBED"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="7c035a50659cd7b55b701c8b86945ba937531ef4ee3a60375beb970bdf954cb1")
+	version("1.6.0", commit="f53309ba691caf7665c3660a647b6dac3ffcd24a")
+	version("1.0.0", commit="d40c2bc42a832e14ce6d951cb56d7bff5bbc98f3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

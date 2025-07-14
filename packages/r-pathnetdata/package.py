@@ -12,11 +12,10 @@ class RPathnetdata(RPackage):
 	This package contains the data employed in the vignette of the PathNet package. These data belong to the following publication: PathNet: A tool for pathway analysis using topological information. Dutta B, Wallqvist A, and Reifman J., Source Code for Biology and Medicine 2012 Sep 24;7(1):10.
 	"""
 	
-	bioc = "PathNetData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PathNetData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PathNetData/PathNetData_1.38.0.tar.gz"]
+	bioc = "PathNetData"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="7880d5e2d2ee60353b1dc089395b366f6293e7fd80e22ca6af3fc3684431981f")
+	version("1.44.0", commit="cb2ce662fbbbb878448514b4093056aa8ae8c4c7")
+	version("1.38.0", commit="165b1290c3dc13a468d9df74261ac5981fc236ef")
 
 	depends_on("r@1.14:", type=("build", "run"))
 

@@ -12,11 +12,10 @@ class RVeloviz(RPackage):
 	VeloViz uses each cell’s current observed and predicted future transcriptional states inferred from RNA velocity analysis to build a nearest neighbor graph between cells in the population. Edges are then pruned based on a cosine correlation threshold and/or a distance threshold and the resulting graph is visualized using a force-directed graph layout algorithm. VeloViz can help ensure that relationships between cell states are reflected in the 2D embedding, allowing for more reliable representation of underlying cellular trajectories.
 	"""
 	
-	bioc = "veloviz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/veloviz_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/veloviz/veloviz_1.8.0.tar.gz"]
+	bioc = "veloviz"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="5f6f26e29f060419668bf968491c96cbba1eb470a16ae4d0885731fc19909987")
+	version("1.14.0", commit="24284741d46e7d75d4d77c759475ffeff24583e3")
+	version("1.8.0", commit="e9aec2c2f7ed4bc3404d2ce7d27329ab0f123c37")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

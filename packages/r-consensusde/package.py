@@ -12,11 +12,10 @@ class RConsensusde(RPackage):
 	This package allows users to perform DE analysis using multiple algorithms. It seeks consensus from multiple methods. Currently it supports "Voom", "EdgeR" and "DESeq". It uses RUV-seq (optional) to remove unwanted sources of variation.
 	"""
 	
-	bioc = "consensusDE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/consensusDE_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/consensusDE/consensusDE_1.20.0.tar.gz"]
+	bioc = "consensusDE"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="e4652fb90e8c81e03f02c0b03fc90904c306a365cfa8af641f1265a87f8cc503")
+	version("1.26.0", commit="f72325da8d340286072339463e5e034e0a6c28cd")
+	version("1.20.0", commit="8cccaad4dbc9f6538242f2f2b43cf2e4be2823f6")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

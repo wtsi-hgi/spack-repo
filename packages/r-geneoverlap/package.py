@@ -13,11 +13,10 @@ class RGeneoverlap(RPackage):
 	"""
 	
 	homepage = "http://shenlab-sinai.github.io/shenlab-sinai/"
-	bioc = "GeneOverlap" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneOverlap_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneOverlap/GeneOverlap_1.38.0.tar.gz"]
+	bioc = "GeneOverlap"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="fc7e3b2fef8a07b78a9a4ad2f45ccac6bf9cd2054ac74865ef086af46d1c8d1c")
+	version("1.44.0", commit="f5c96e4e116d33d4d5d1898fda020e3b8f74219d")
+	version("1.38.0", commit="016133771631f7a2c128a2245d5c62e0b7adf32b")
 
 	depends_on("r-rcolorbrewer", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

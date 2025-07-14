@@ -12,11 +12,10 @@ class RNestlink(RPackage):
 	Provides next-generation sequencing (NGS) and mass spectrometry (MS) sample data, code snippets and replication material used for developing NestLink. The NestLink approach is a protein binder selection and identification technology able to biophysically characterize thousands of library members at once without handling individual clones at any stage of the process. Data were acquired on NGS and MS platforms at the Functional Genomics Center Zurich.
 	"""
 	
-	bioc = "NestLink" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/NestLink_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/NestLink/NestLink_1.18.0.tar.gz"]
+	bioc = "NestLink"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="c13f6abdbd9e5e07693c630f5cbc70d5f8636d63a38372864998b495696b27db")
+	version("1.24.0", commit="886f69b0100fffe1832df82ccfaf4fd65f33f677")
+	version("1.18.0", commit="23c3c6e97a9407eec4e96b10c2fe9e992f11a551")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-annotationhub@2.15:", type=("build", "run"))

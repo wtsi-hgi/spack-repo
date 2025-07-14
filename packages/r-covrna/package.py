@@ -12,11 +12,10 @@ class RCovrna(RPackage):
 	This package provides the analysis methods fourthcorner and RLQ analysis for large-scale transcriptomic data.
 	"""
 	
-	bioc = "covRNA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/covRNA_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/covRNA/covRNA_1.28.0.tar.gz"]
+	bioc = "covRNA"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="04f091c52bb51de5423f0934b5fb6dbd8647b9b9e18aaee4c48a3783225174e6")
+	version("1.34.0", commit="591c0e3ad69e314b34491c91d7dd63479c98f080")
+	version("1.28.0", commit="db3b68e5b1363f1826f774b7d98ed2802ab6737e")
 
 	depends_on("r-ade4", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

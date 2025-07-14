@@ -12,11 +12,10 @@ class RMethylscaper(RPackage):
 	methylscaper is an R package for processing and visualizing data jointly profiling methylation and chromatin accessibility (MAPit, NOMe-seq, scNMT-seq, nanoNOMe, etc.). The package supports both single-cell and single-molecule data, and a common interface for jointly visualizing both data types through the generation of ordered representational methylation-state matrices. The Shiny app allows for an interactive seriation process of refinement and re-weighting that optimally orders the cells or DNA molecules to discover methylation patterns and nucleosome positioning.
 	"""
 	
-	bioc = "methylscaper" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylscaper_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylscaper/methylscaper_1.10.0.tar.gz"]
+	bioc = "methylscaper"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="9c36f81e61918bdf02a6cf7c807d5e50d76d93793805010eb6ad83393a7f71aa")
+	version("1.16.0", commit="2bc3c44d1fff414fc31f3544a71f6ba9ffc641ef")
+	version("1.10.0", commit="e2d8ace362666efa39a7efc0ba8bd0ba05b5af60")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

@@ -13,11 +13,10 @@ class RQmtools(RPackage):
 	"""
 	
 	homepage = "https://github.com/HimesGroup/qmtools"
-	bioc = "qmtools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qmtools_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qmtools/qmtools_1.6.0.tar.gz"]
+	bioc = "qmtools"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="05e034d0f53c71d3e6681d5b712ff1722847b98b62fffd65168a21aa7929245c")
+	version("1.12.0", commit="eb7de24e30b96c5b8331c8507a569ea0f9a16a99")
+	version("1.6.0", commit="48d7be44d279c110be0c1477aeedc9a2ec6d7b92")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

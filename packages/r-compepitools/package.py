@@ -12,11 +12,10 @@ class RCompepitools(RPackage):
 	Tools for computational epigenomics developed for the analysis, integration and simultaneous visualization of various (epi)genomics data types across multiple genomic regions in multiple samples.
 	"""
 	
-	bioc = "compEpiTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/compEpiTools_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/compEpiTools/compEpiTools_1.36.0.tar.gz"]
+	bioc = "compEpiTools"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="4e24c1334f10851a375f14c10be9ede2e8c0d747e1110803873c93c5f05dbba5")
+	version("1.42.0", commit="2d085fdebd4dce893c57bffc9f1a083c943b4c00")
+	version("1.36.0", commit="a66a83688cb74142ae7b6ef2dac00317efa6a9e4")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-topgo", type=("build", "run"))

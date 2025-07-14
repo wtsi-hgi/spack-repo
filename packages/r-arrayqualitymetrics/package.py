@@ -12,11 +12,10 @@ class RArrayqualitymetrics(RPackage):
 	This package generates microarray quality metrics reports for data in Bioconductor microarray data containers (ExpressionSet, NChannelSet, AffyBatch). One and two color array platforms are supported.
 	"""
 	
-	bioc = "arrayQualityMetrics" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/arrayQualityMetrics_3.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/arrayQualityMetrics/arrayQualityMetrics_3.58.0.tar.gz"]
+	bioc = "arrayQualityMetrics"
 
-	version("3.64.0", tag="RELEASE_3_21")
-	version("3.58.0", sha256="b5155c2a3c09eb361381cc918c1b10e6848a2817b4a59b5346c4c1910f8c00cd")
+	version("3.64.0", commit="4a2f65754ea9865da9036f362248be30f38dd20e")
+	version("3.58.0", commit="bfaad3b7ed788a49e35e20d2be9796c9b0c8f066")
 
 	depends_on("r-affy", type=("build", "run"))
 	depends_on("r-affyplm@1.27.3:", type=("build", "run"))

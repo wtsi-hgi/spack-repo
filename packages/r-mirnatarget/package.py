@@ -12,11 +12,10 @@ class RMirnatarget(RPackage):
 	gene target tabale of miRNA for human/mouse used for MiRaGE package
 	"""
 	
-	bioc = "miRNATarget" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/miRNATarget_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/miRNATarget/miRNATarget_1.40.0.tar.gz"]
+	bioc = "miRNATarget"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="1ef4bf4e9f7e75417c7e3aa818d379ff6f421cfaf36201d70391a7aceafd8a62")
+	version("1.46.0", commit="cf3a85a06b24089ecb4d55c375a25dbcbba1ba45")
+	version("1.40.0", commit="f29b74050b61c41b5ede0e0600fd132fb6c81731")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

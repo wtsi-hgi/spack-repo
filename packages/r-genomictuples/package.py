@@ -13,11 +13,10 @@ class RGenomictuples(RPackage):
 	"""
 	
 	homepage = "www.github.com/PeteHaitch/GenomicTuples"
-	bioc = "GenomicTuples" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicTuples_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicTuples/GenomicTuples_1.36.0.tar.gz"]
+	bioc = "GenomicTuples"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="ddc042f31da423bdf352d06ae9dbe712b86cf6f26b73468725fb5cd5519c88af")
+	version("1.42.0", commit="1c0aea79be7ad1fc79708ce48344f63ce05c881e")
+	version("1.36.0", commit="736a13aa2765ae2c4dc970a170d080e4cb587168")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges@1.37.4:", type=("build", "run"))

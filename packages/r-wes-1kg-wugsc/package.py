@@ -12,10 +12,9 @@ class RWes1kgWugsc(RPackage):
 	The assembled .bam files of whole exome sequencing data from the 1000 Genomes Project. 46 samples sequenced by the Washington University Genome Sequencing Center are included.
 	"""
 	
-	bioc = "WES.1KG.WUGSC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/WES.1KG.WUGSC_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/WES.1KG.WUGSC/WES.1KG.WUGSC_1.34.0.tar.gz"]
+	bioc = "WES.1KG.WUGSC"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="545af75217502ede37421b2fa794a411d960d51b3eba88cea590d0a2c3251fdd")
+	version("1.40.0", commit="2a03e4e2108d3f10826fd5f079e658011f757c93")
+	version("1.34.0", commit="5add20b7572f98290185d654865604932d3f6f4c")
 
 

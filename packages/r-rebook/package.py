@@ -12,11 +12,10 @@ class RRebook(RPackage):
 	Provides utilities to re-use content across chapters of a Bioconductor book. This is mostly based on functionality developed while writing the OSCA book, but generalized for potential use in other large books with heavy compute. Also contains some functions to assist book deployment.
 	"""
 	
-	bioc = "rebook" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rebook_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rebook/rebook_1.12.0.tar.gz"]
+	bioc = "rebook"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="64813afa59ca48e1e44ef1c78a53662120f1b7194e17822758b99138e9346d79")
+	version("1.18.0", commit="0f0347f9959475c0b6c9f80cf5e112606b901c3d")
+	version("1.12.0", commit="bfb9a3ff451244963cb77e523ecfbbc9ece3ea2a")
 
 	depends_on("r-knitr@1.32:", type=("build", "run"))
 	depends_on("r-rmarkdown", type=("build", "run"))

@@ -12,11 +12,10 @@ class RMethylationarrayanalysis(RPackage):
 	Methylation in the human genome is known to be associated with development and disease. The Illumina Infinium methylation arrays are by far the most common way to interrogate methylation across the human genome. This Bioconductor workflow uses multiple packages for the analysis of methylation array data. Specifically, we demonstrate the steps involved in a typical differential methylation analysis pipeline including: quality control, filtering, normalization, data exploration and statistical testing for probe-wise differential methylation. We further outline other analyses such as differential methylation of regions, differential variability analysis, estimating cell type composition and gene ontology testing. Finally, we provide some examples of how to visualise methylation array data.
 	"""
 	
-	bioc = "methylationArrayAnalysis" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/methylationArrayAnalysis_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/methylationArrayAnalysis/methylationArrayAnalysis_1.26.0.tar.gz"]
+	bioc = "methylationArrayAnalysis"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="6a9f9abdc3de8572001de87bd94b9bd690e23033419776708d13244d81b13b30")
+	version("1.32.0", commit="793d64214c64d09410703cf8acc3ac79e89270f9")
+	version("1.26.0", commit="60b2530a2be8efc171297df8cd15a5006132ae6c")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-knitr", type=("build", "run"))

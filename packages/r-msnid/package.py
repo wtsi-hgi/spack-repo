@@ -12,11 +12,10 @@ class RMsnid(RPackage):
 	Extracts MS/MS ID data from mzIdentML (leveraging mzID package) or text files. After collating the search results from multiple datasets it assesses their identification quality and optimize filtering criteria to achieve the maximum number of identifications while not exceeding a specified false discovery rate. Also contains a number of utilities to explore the MS/MS results and assess missed and irregular enzymatic cleavages, mass measurement accuracy, etc.
 	"""
 	
-	bioc = "MSnID" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSnID_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSnID/MSnID_1.36.0.tar.gz"]
+	bioc = "MSnID"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="2bedeb78cb5fb24cd544c8e3c96b1faeba3a399636402e7a20a7957bf681aec2")
+	version("1.42.0", commit="6adbfffa8076e7e7380d7ff1472d0c58423d6485")
+	version("1.36.0", commit="605438ebf11bfc0edc9ca2fc64ae5549e14a2eea")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

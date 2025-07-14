@@ -13,11 +13,10 @@ class RBicare(RPackage):
 	"""
 	
 	homepage = "http://bioinfo.curie.fr"
-	bioc = "BicARE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BicARE_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BicARE/BicARE_1.60.0.tar.gz"]
+	bioc = "BicARE"
 
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="30fd6ff9fef0df03a78578b9ae3dcb59f7cf8b9c9cf13300ba6d561668e73682")
+	version("1.66.0", commit="cb2560664eff0620ac24c5e2dc9d9c7f073581e8")
+	version("1.60.0", commit="be7cb92fa2926e99f1e0a27ee6e3cefe8947bb07")
 
 	depends_on("r@1.8:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

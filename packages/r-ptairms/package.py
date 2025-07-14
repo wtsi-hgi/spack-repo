@@ -12,11 +12,10 @@ class RPtairms(RPackage):
 	This package implements a suite of methods to preprocess data from PTR-TOF-MS instruments (HDF5 format) and generates the 'sample by features' table of peak intensities in addition to the sample and feature metadata (as a singl<e ExpressionSet object for subsequent statistical analysis). This package also permit usefull tools for cohorts management as analyzing data progressively, visualization tools and quality control. The steps include calibration, expiration detection, peak detection and quantification, feature alignment, missing value imputation and feature annotation. Applications to exhaled air and cell culture in headspace are described in the vignettes and examples. This package was used for data analysis of Gassin Delyle study on adults undergoing invasive mechanical ventilation in the intensive care unit due to severe COVID-19 or non-COVID-19 acute respiratory distress syndrome (ARDS), and permit to identfy four potentiel biomarquers of the infection.
 	"""
 	
-	bioc = "ptairMS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ptairMS_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ptairMS/ptairMS_1.10.0.tar.gz"]
+	bioc = "ptairMS"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="1fa231c1c9aa28ac336710e12eed0611a23b0a1ed09e98e38246b61d525f5662")
+	version("1.16.0", commit="573dd5c415d0c99e2ac95f37cc96414c73ec20f0")
+	version("1.10.0", commit="4b718cee742d065d74de64f03a82f366655a0754")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-bit64", type=("build", "run"))

@@ -12,11 +12,10 @@ class RDoser(RPackage):
 	doseR package is a next generation sequencing package for sex chromosome dosage compensation which can be applied broadly to detect shifts in gene expression among an arbitrary number of pre-defined groups of loci. doseR is a differential gene expression package for count data, that detects directional shifts in expression for multiple, specific subsets of genes, broad utility in systems biology research. doseR has been prepared to manage the nature of the data and the desired set of inferences. doseR uses S4 classes to store count data from sequencing experiment. It contains functions to normalize and filter count data, as well as to plot and calculate statistics of count data. It contains a framework for linear modeling of count data. The package has been tested using real and simulated data.
 	"""
 	
-	bioc = "doseR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/doseR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/doseR/doseR_1.18.0.tar.gz"]
+	bioc = "doseR"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="16ed134686a27c1684c7ae3b13d2b44b9d51b6424ed965b35f0ba81d15fc9523")
+	version("1.24.0", commit="2bb45a822d662ab41703de6376a2143afff4a78d")
+	version("1.18.0", commit="4384034bb0c823ece018fedc1507f82aa937fe6d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-edger", type=("build", "run"))

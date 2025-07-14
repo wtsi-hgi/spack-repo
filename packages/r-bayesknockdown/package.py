@@ -12,11 +12,10 @@ class RBayesknockdown(RPackage):
 	A simple, fast Bayesian method for computing posterior probabilities for relationships between a single predictor variable and multiple potential outcome variables, incorporating prior probabilities of relationships. In the context of knockdown experiments, the predictor variable is the knocked-down gene, while the other genes are potential targets. Can also be used for differential expression/2-class data.
 	"""
 	
-	bioc = "BayesKnockdown" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BayesKnockdown_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BayesKnockdown/BayesKnockdown_1.28.0.tar.gz"]
+	bioc = "BayesKnockdown"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="88869bc99b67d947642bcf38110e2ab13e65ea9965bdbb37585e34ea1e692fab")
+	version("1.34.0", commit="fdb454f12068d1cb06d69a1eba27259e86598687")
+	version("1.28.0", commit="d7fa80dc52a2f4523e578e976c869e99b29c408b")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

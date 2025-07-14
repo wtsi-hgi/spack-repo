@@ -12,11 +12,10 @@ class RGeneregionscan(RPackage):
 	A package with focus on analysis of discrete regions of the genome. This package is useful for investigation of one or a few genes using Affymetrix data, since it will extract probe level data using the Affymetrix Power Tools application and wrap these data into a ProbeLevelSet. A ProbeLevelSet directly extends the expressionSet, but includes additional information about the sequence of each probe and the probe set it is derived from. The package includes a number of functions used for plotting these probe level data as a function of location along sequences of mRNA-strands. This can be used for analysis of variable splicing, and is especially well suited for use with exon-array data.
 	"""
 	
-	bioc = "GeneRegionScan" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneRegionScan_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneRegionScan/GeneRegionScan_1.58.0.tar.gz"]
+	bioc = "GeneRegionScan"
 
-	version("1.64.0", tag="RELEASE_3_21")
-	version("1.58.0", sha256="468eabcd0bb1925a9204b3a89a6184b40e6bad266464ea106a97eb80ae7d09ff")
+	version("1.64.0", commit="ef423c8413bda19e474c3bc1e223031836df294c")
+	version("1.58.0", commit="e25ed80ee7807e5d85abddd31a1b25986440439c")
 
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

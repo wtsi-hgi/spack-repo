@@ -13,11 +13,10 @@ class RNucleosim(RPackage):
 	"""
 	
 	homepage = "https://github.com/arnauddroitlab/nucleoSim"
-	bioc = "nucleoSim" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nucleoSim_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nucleoSim/nucleoSim_1.30.0.tar.gz"]
+	bioc = "nucleoSim"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="efb92f4d9fa84cbedcca21cca593cdbb6008663701707aad76cf197c52b70ea8")
+	version("1.36.0", commit="126daee3937c27b2a1b4c6525c12e7fbe31710d4")
+	version("1.30.0", commit="6455637f40fdbc911fed7f285329b4ef7e835cac")
 
 	depends_on("r-iranges", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

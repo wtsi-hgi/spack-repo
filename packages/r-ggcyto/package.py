@@ -13,11 +13,10 @@ class RGgcyto(RPackage):
 	"""
 	
 	homepage = "https://github.com/RGLab/ggcyto/issues"
-	bioc = "ggcyto" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggcyto_1.30.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggcyto/ggcyto_1.30.2.tar.gz"]
+	bioc = "ggcyto"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.2", sha256="f63c3019a2702a94f8d34e5169093aa24a6f08b7a5e1d87b2ee3faabcc1ae245")
+	version("1.36.0", commit="e022e6cbd6bcf4f9e4e14a5f7fc94c1dd2fb4199")
+	version("1.30.2", commit="ea5c74d4c2733713963eaddb6d789b972cabf9a5")
 	version("1.30.0", md5="f50828f54e40b73d30aa3ac0ef06de21")
 
 	depends_on("r-ggplot2@3.5:", type=("build", "run"))

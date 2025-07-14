@@ -12,11 +12,10 @@ class RAnvilworkflow(RPackage):
 	The AnVIL is a cloud computing resource developed in part by the National Human Genome Research Institute. The main cloud-based genomics platform deported by the AnVIL project is Terra. The AnVILWorkflow package allows remote access to Terra implemented workflows, enabling end-user to utilize Terra/ AnVIL provided resources - such as data, workflows, and flexible/scalble computing resources - through the conventional R functions.
 	"""
 	
-	bioc = "AnVILWorkflow" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnVILWorkflow_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnVILWorkflow/AnVILWorkflow_1.2.0.tar.gz"]
+	bioc = "AnVILWorkflow"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="b170a2d4b3389a7f5726135596ace4382cf4886cb0c735c20603c4386fbddb97")
+	version("1.8.0", commit="aa6e807fa31f6d0933ad35a63e3e890e019e319b")
+	version("1.2.0", commit="9f58777ec7baa67debab48b84d52c900245aa2d5")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-anvil", type=("build", "run"))

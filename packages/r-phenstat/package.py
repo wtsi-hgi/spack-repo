@@ -12,11 +12,10 @@ class RPhenstat(RPackage):
 	Package contains methods for statistical analysis of phenotypic data.
 	"""
 	
-	bioc = "PhenStat" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PhenStat_2.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PhenStat/PhenStat_2.38.0.tar.gz"]
+	bioc = "PhenStat"
 
-	version("2.44.0", tag="RELEASE_3_21")
-	version("2.38.0", sha256="fcd4fc532d2adfc008024af5d82d4cb78777c1fc0e8d69b75bf0e4702b26f099")
+	version("2.44.0", commit="2aa17ff94e259afc2de5aa937dcb66f4aa57171c")
+	version("2.38.0", commit="806485eb5ff94c5cd26415d3d561099f837fc11b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-smoothwin", type=("build", "run"))

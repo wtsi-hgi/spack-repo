@@ -13,11 +13,10 @@ class RSimbu(RPackage):
 	"""
 	
 	homepage = "https://github.com/omnideconv/SimBu"
-	bioc = "SimBu" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SimBu_1.4.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SimBu/SimBu_1.4.3.tar.gz"]
+	bioc = "SimBu"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.3", sha256="c32c0b5cf71b7b8e13b52739e34993c1e7df8bf9d40fc9d3d5e1df4048468bfe")
+	version("1.10.0", commit="f3e56811ea6d9d09b4a2a55ccf40e55aa8f112eb")
+	version("1.4.3", commit="0c37a0dd31f6e57e8e394ad408e1426f15a235e9")
 
 	depends_on("r-basilisk", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

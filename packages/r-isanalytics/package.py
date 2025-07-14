@@ -13,11 +13,10 @@ class RIsanalytics(RPackage):
 	"""
 	
 	homepage = "https://calabrialab.github.io/ISAnalytics"
-	bioc = "ISAnalytics" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ISAnalytics_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ISAnalytics/ISAnalytics_1.12.0.tar.gz"]
+	bioc = "ISAnalytics"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="6ddea338fbbe7152cb0bacb91f895db6f6fcb854592cc2bf875afd59471b1579")
+	version("1.18.0", commit="6c722167d420ab695d31721510fcd5f0cb9abc24")
+	version("1.12.0", commit="9486ad04aa4c56b642e301e84481787cf987d63d")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

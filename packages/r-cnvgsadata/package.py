@@ -12,11 +12,10 @@ class RCnvgsadata(RPackage):
 	This package contains the data used in the vignette of the cnvGSA package.
 	"""
 	
-	bioc = "cnvGSAdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/cnvGSAdata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/cnvGSAdata/cnvGSAdata_1.38.0.tar.gz"]
+	bioc = "cnvGSAdata"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="422d159ba3c4665196528a620853ce55663075b0265c7185e1589cd499995aa9")
+	version("1.44.0", commit="ea3968fb3064babb899c52c1794d03e4ba205e91")
+	version("1.38.0", commit="bdd5076dc6a7d889c62332407bbdb7c36253a7f2")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-cnvgsa", type=("build", "run"))

@@ -13,11 +13,10 @@ class RMungesumstats(RPackage):
 	"""
 	
 	homepage = "https://github.com/neurogenomics/MungeSumstats"
-	bioc = "MungeSumstats" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MungeSumstats_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MungeSumstats/MungeSumstats_1.10.1.tar.gz"]
+	bioc = "MungeSumstats"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.1", sha256="d3b1a86d512a0ec9e946444b2515250c11957937ca362268d0f1ad107b77f160")
+	version("1.16.0", commit="e05f8e8ee1dc4d357d529daae7d20c7ed2c00201")
+	version("1.10.1", commit="83ed5fbc5082f01ac19ad3a3d56e0b8061bd5ac9")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-magrittr", type=("build", "run"))

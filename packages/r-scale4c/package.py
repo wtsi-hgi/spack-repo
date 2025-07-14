@@ -12,11 +12,10 @@ class RScale4c(RPackage):
 	Scale4C is an R/Bioconductor package for scale-space transformation and visualization of 4C-seq data. The scale-space transformation is a multi-scale visualization technique to transform a 2D signal (e.g. 4C-seq reads on a genomic interval of choice) into a tesselation in the scale space (2D, genomic position x scale factor) by applying different smoothing kernels (Gauss, with increasing sigma). This transformation allows for explorative analysis and comparisons of the data's structure with other samples.
 	"""
 	
-	bioc = "Scale4C" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Scale4C_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Scale4C/Scale4C_1.24.0.tar.gz"]
+	bioc = "Scale4C"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="79f62ebf3360618b191ea07a3c2d7fb8494924d90cc36fc22867ee5001f45466")
+	version("1.30.0", commit="d8edccd43e051ca34062d9995a44341bc78f5405")
+	version("1.24.0", commit="3e54c078a7ed283497e0aaaf116ef3eb621b4dc4")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-smoothie", type=("build", "run"))

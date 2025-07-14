@@ -13,11 +13,10 @@ class RTadar(RPackage):
 	"""
 	
 	homepage = "https://github.com/baerlachlan/tadar"
-	bioc = "tadar" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tadar_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tadar/tadar_1.0.0.tar.gz"]
+	bioc = "tadar"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="e5ca296ed8db6cae9aa93322f2b3f77fac41c0caa56ec90efe540011077f69ec")
+	version("1.6.0", commit="fa8aa7e5d1526342368ea2739d1afce71e05cd13")
+	version("1.0.0", commit="fdabf0fdad04b22f1fbebf0502e4319a5b67972b")
 
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

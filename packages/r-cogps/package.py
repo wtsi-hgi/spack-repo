@@ -12,10 +12,9 @@ class RCogps(RPackage):
 	Gene Set Enrichment Analysis of P-value based statistics for outlier gene detection in dataset merged from multiple studies
 	"""
 	
-	bioc = "coGPS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/coGPS_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/coGPS/coGPS_1.46.0.tar.gz"]
+	bioc = "coGPS"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="a7d77ed813ee2901ad1504856720f0735aabf19e76b95edf99a3da6c911a1752")
+	version("1.52.0", commit="52bacfab891e4b003e194ba2678d81d08553bafe")
+	version("1.46.0", commit="d38d342310f857fd01549fc4dd7c21cffd4506fb")
 
 	depends_on("r@2.13:", type=("build", "run"))

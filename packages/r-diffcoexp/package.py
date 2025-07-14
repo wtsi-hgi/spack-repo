@@ -13,11 +13,10 @@ class RDiffcoexp(RPackage):
 	"""
 	
 	homepage = "https://github.com/hidelab/diffcoexp"
-	bioc = "diffcoexp" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/diffcoexp_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/diffcoexp/diffcoexp_1.22.0.tar.gz"]
+	bioc = "diffcoexp"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="83bc24bc3489d7bd542806fdb8ab331734db9603335a235809032c505037ee41")
+	version("1.28.0", commit="32abc42a2dddadc2c1d8e4daffe692c66be3b98f")
+	version("1.22.0", commit="d903fab0c59c7b9818b7c42f75cb21a874b54aa3")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-wgcna", type=("build", "run"))

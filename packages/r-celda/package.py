@@ -12,10 +12,9 @@ class RCelda(RPackage):
 	Celda is a suite of Bayesian hierarchical models for clustering single-cell RNA-sequencing (scRNA-seq) data. It is able to perform "bi-clustering" and simultaneously cluster genes into gene modules and cells into cell subpopulations. It also contains DecontX, a novel Bayesian method to computationally estimate and remove RNA contamination in individual cells without empty droplet information. A variety of scRNA-seq data visualization functions is also included.
 	"""
 	
-	bioc = "celda" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/celda_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/celda/celda_1.18.1.tar.gz"]
+	bioc = "celda"
 
-	version("1.24.0", tag="RELEASE_3_21")
+	version("1.24.0", commit="141d97696c69861c8ad6d0e7934172e40a2a3b7b")
 	version("1.18.1", md5="5b60cdee9ee9cbb13f4af0a40abdd177")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RMsstatsptm(RPackage):
 	MSstatsPTM provides general statistical methods for quantitative characterization of post-translational modifications (PTMs). Supports DDA, DIA, SRM, and tandem mass tag (TMT) labeling. Typically, the analysis involves the quantification of PTM sites (i.e., modified residues) and their corresponding proteins, as well as the integration of the quantification results. MSstatsPTM provides functions for summarization, estimation of PTM site abundance, and detection of changes in PTMs across experimental conditions.
 	"""
 	
-	bioc = "MSstatsPTM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MSstatsPTM_2.4.4.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MSstatsPTM/MSstatsPTM_2.4.4.tar.gz"]
+	bioc = "MSstatsPTM"
 
-	version("2.10.0", tag="RELEASE_3_21")
-	version("2.4.4", sha256="35a2d7ab290a721c3c0f91feefa5b04179c6ade868b307d014617d8383226bec")
+	version("2.10.0", commit="117151952bef2c280938afd2f7138be0e7f71c5b")
+	version("2.4.4", commit="3844acac4e136212b04ed082335a431f9f4a30c4")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

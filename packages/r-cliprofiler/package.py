@@ -13,11 +13,10 @@ class RCliprofiler(RPackage):
 	"""
 	
 	homepage = "https://github.com/Codezy99/cliProfiler"
-	bioc = "cliProfiler" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cliProfiler_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cliProfiler/cliProfiler_1.8.0.tar.gz"]
+	bioc = "cliProfiler"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="d4a72146a377bf0b36dd9b9891eb15fe5d111134dbd8c36a640990dd58f1677f")
+	version("1.14.0", commit="f65f4202031a5c8264b4588b678ed085b2f541e3")
+	version("1.8.0", commit="0b11936fa1b7a543a06bf67174f286277131a875")
 
 	depends_on("r-s4vectors", type=("build", "run"))
 	depends_on("r@4.1:", type=("build", "run"))

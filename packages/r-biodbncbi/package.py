@@ -13,11 +13,10 @@ class RBiodbncbi(RPackage):
 	"""
 	
 	homepage = "https://github.com/pkrog/biodbNcbi"
-	bioc = "biodbNcbi" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbNcbi_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbNcbi/biodbNcbi_1.6.0.tar.gz"]
+	bioc = "biodbNcbi"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="859de0395db8acf97e2495cf269d7fece95054005ba3a3dcc69f1b19d0bc6ce2")
+	version("1.12.0", commit="eff8ab9de075facaa3d96abfa9bd11cb22a25e1a")
+	version("1.6.0", commit="ef9afdca79598f6b5e44939921cf15e7762f73cd")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biodb@1.3.2:", type=("build", "run"))

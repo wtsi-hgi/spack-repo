@@ -12,11 +12,10 @@ class RRfastp(RPackage):
 	Rfastp is an R wrapper of fastp developed in c++. fastp performs quality control for fastq files. including low quality bases trimming, polyX trimming, adapter auto-detection and trimming, paired-end reads merging, UMI sequence/id handling. Rfastp can concatenate multiple files into one file (like shell command cat) and accept multiple files as input.
 	"""
 	
-	bioc = "Rfastp" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rfastp_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rfastp/Rfastp_1.12.0.tar.gz"]
+	bioc = "Rfastp"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="9860cd9efda99b73d7efc412538704938b90d4cc26e9d9305c7db692aa65cf5e")
+	version("1.18.0", commit="4e7fd6f6d62281b490ecd3879ca0d2a53295047e")
+	version("1.12.0", commit="16a614b38967d3addc875bafd1520aa8241dbd8c")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-rjson", type=("build", "run"))

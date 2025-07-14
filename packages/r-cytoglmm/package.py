@@ -13,11 +13,10 @@ class RCytoglmm(RPackage):
 	"""
 	
 	homepage = "https://christofseiler.github.io/CytoGLMM"
-	bioc = "CytoGLMM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CytoGLMM_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CytoGLMM/CytoGLMM_1.10.0.tar.gz"]
+	bioc = "CytoGLMM"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="b9617da7bdcfc0ca2a9908085cedb2f143ce3c2f670fdd2c579894221894923b")
+	version("1.16.0", commit="f19e7306c17cb251e032abd1900cec6bd48cd7b5")
+	version("1.10.0", commit="a55c7a7d045a24dca8f3bbdfd765a2e553a3b54c")
 
 	depends_on("r-biocparallel", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

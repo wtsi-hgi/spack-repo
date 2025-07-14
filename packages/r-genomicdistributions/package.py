@@ -13,11 +13,10 @@ class RGenomicdistributions(RPackage):
 	"""
 	
 	homepage = "http://code.databio.org/GenomicDistributions"
-	bioc = "GenomicDistributions" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicDistributions_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicDistributions/GenomicDistributions_1.10.0.tar.gz"]
+	bioc = "GenomicDistributions"
 
-	version("1.16.1", tag="RELEASE_3_21")
-	version("1.10.0", sha256="3dbff59d525a89e8707bc0e11c9a129db570c64c104a43812dc17155aa55d270")
+	version("1.16.1", commit="2f86fb9f41323f2a5a15f2530ef68f6c6d8d0626")
+	version("1.10.0", commit="1b03a0239da68172e00f97ea7c33d6fb00d33b1f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

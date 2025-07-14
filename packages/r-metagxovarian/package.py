@@ -12,11 +12,10 @@ class RMetagxovarian(RPackage):
 	A collection of Ovarian Cancer Transcriptomic Datasets that are part of the MetaGxData package compendium.
 	"""
 	
-	bioc = "MetaGxOvarian" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MetaGxOvarian_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MetaGxOvarian/MetaGxOvarian_1.22.0.tar.gz"]
+	bioc = "MetaGxOvarian"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="d378503e92717d8cadf28485ebeea445ccef2999ee0a1735cd81a518a223244c")
+	version("1.28.0", commit="0aa7c5c4360dc79ec9f8f84cacbc23bf50c8e323")
+	version("1.22.0", commit="77bbd05732b91b46ea46c5166eb650a4dba852c3")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

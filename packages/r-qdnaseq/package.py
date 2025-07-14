@@ -13,11 +13,10 @@ class RQdnaseq(RPackage):
 	"""
 	
 	homepage = "https://github.com/ccagc/QDNAseq"
-	bioc = "QDNAseq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QDNAseq_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QDNAseq/QDNAseq_1.38.0.tar.gz"]
+	bioc = "QDNAseq"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="7a5681d90baeeb8dc5878163b5692b8851cdd1bb564fa67dd80e0e8ef1b358d8")
+	version("1.44.0", commit="9c070eb407aa17fff3fc21989b672d6e8fae1238")
+	version("1.38.0", commit="4ba69322e1331b06eccb6fc601f8af30c6d4254a")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-biobase@2.18:", type=("build", "run"))

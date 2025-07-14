@@ -12,11 +12,10 @@ class RMircomp(RPackage):
 	Based on a large miRNA dilution study, this package provides tools to read in the raw amplification data and use these data to assess the performance of methods that estimate expression from the amplification curves.
 	"""
 	
-	bioc = "miRcomp" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miRcomp_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miRcomp/miRcomp_1.32.0.tar.gz"]
+	bioc = "miRcomp"
 
-	version("1.38.1", tag="RELEASE_3_21")
-	version("1.32.0", sha256="f54ee2b806f3da5ba09a1e0951ef2596ac22553a7717be8f7907ba7264af1713")
+	version("1.38.1", commit="146ec0ce2e56eb63fe3ca1f5adef587a29525fa1")
+	version("1.32.0", commit="a13561f6395d31d22719d6681e8727843ef5cbf6")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biobase@2.22:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RGdrstyle(RPackage):
 	Package fills a helper package role for whole gDR suite. It helps to support good development practices by keeping style requirements and style tests for other packages. It also contains build helpers to make all package requirements met.
 	"""
 	
-	bioc = "gDRstyle" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gDRstyle_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gDRstyle/gDRstyle_1.0.0.tar.gz"]
+	bioc = "gDRstyle"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="f53cb21a5b145f43d12a5a9d872151221d85775a22e96b0300ba96c0c131499f")
+	version("1.6.0", commit="7f7f59c263f6f0fc221fe140079f1e5cf42f4efd")
+	version("1.0.0", commit="8507b17c6758cd43c8a753ed1df26afa6ad77bcf")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-bioccheck", type=("build", "run"))

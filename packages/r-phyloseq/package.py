@@ -13,9 +13,8 @@ class RPhyloseq(RPackage):
 	storage, analysis, and graphical display of microbiome census data."""
 
 	bioc = "phyloseq"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phyloseq_1.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phyloseq/phyloseq_1.46.0.tar.gz"]
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.0", sha256="96caebbb2021c6b3a51b7c343c73b236550eac1db427d84589a8e26899bcf619")
+	version("1.52.0", commit="753032a077e6d1dd9a368d8efac3c1ea2760cb61")
+	version("1.46.0", commit="73201334be21630253f51253171ab5d785986b53")
 	version("1.44.0", commit="03b74f7d7aa866f5f9a84c7368da57b7a168967e")
 	version("1.42.0", commit="de6be71fe9902bdfe7791163acb7b67d238424dc")
 	version("1.40.0", commit="20bb27d5e6e0d4368978a15671b829990b1f4568")

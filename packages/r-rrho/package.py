@@ -12,11 +12,10 @@ class RRrho(RPackage):
 	The package is aimed at inference on the amount of agreement in two sorted lists using the Rank-Rank Hypergeometric Overlap test.
 	"""
 	
-	bioc = "RRHO" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RRHO_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RRHO/RRHO_1.42.0.tar.gz"]
+	bioc = "RRHO"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="8412b60c3944fabc5c57cfdb77e6420153f87549d1e860256a4f487abe796324")
+	version("1.48.0", commit="5c177e46b8ce083618c841dfcb338f764bd8e6bc")
+	version("1.42.0", commit="47c86bfeb2a58474bad7eb69f0bb3766f935efa5")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-venndiagram", type=("build", "run"))

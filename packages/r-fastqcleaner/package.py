@@ -12,11 +12,10 @@ class RFastqcleaner(RPackage):
 	An interactive web application for quality control, filtering and trimming of FASTQ files. This user-friendly tool combines a pipeline for data processing based on Biostrings and ShortRead infrastructure, with a cutting-edge visual environment. Single-Read and Paired-End files can be locally processed. Diagnostic interactive plots (CG content, per-base sequence quality, etc.) are provided for both the input and output files.
 	"""
 	
-	bioc = "FastqCleaner" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FastqCleaner_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FastqCleaner/FastqCleaner_1.20.0.tar.gz"]
+	bioc = "FastqCleaner"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="84fe332d6b8a0687a2df0845d8e804ba0bf364b60b878e48e33fa472c016c76c")
+	version("1.26.0", commit="0b9d150ca5f0613176f267a36738ecf6eb050b48")
+	version("1.20.0", commit="358c1ad98b3386017503d38bb80de0597ececde9")
 
 	depends_on("r-shiny", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

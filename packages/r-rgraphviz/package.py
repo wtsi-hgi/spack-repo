@@ -13,9 +13,8 @@ class RRgraphviz(RPackage):
 	objects from the graph package."""
 
 	bioc = "Rgraphviz"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rgraphviz_2.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rgraphviz/Rgraphviz_2.46.0.tar.gz"]
-	version("2.52.0", tag="RELEASE_3_21")
-	version("2.46.0", sha256="5e87fa40363e7ccc294946436b25cbdc3fa7b080e081e0777464db684ef6860e")
+	version("2.52.0", commit="56c24049e5d125d3166b7b1db659d4757b882189")
+	version("2.46.0", commit="b38423c95f990c10fac2a36f146905eb6b75d2cb")
 	version("2.44.0", commit="1a1540d66afa0b5a693eee2acac8ad96cfc0a2e6")
 	version("2.42.0", commit="f6877441ab256876ef6a62c2e6faf980c2190b20")
 	version("2.40.0", commit="d864c9741c9177bc627cca1198673be2b1bfbc3e")

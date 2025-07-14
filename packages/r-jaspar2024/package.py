@@ -13,11 +13,10 @@ class RJaspar2024(RPackage):
 	"""
 	
 	homepage = "https://testjaspar.uio.no//"
-	bioc = "JASPAR2024" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/JASPAR2024_0.99.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/JASPAR2024/JASPAR2024_0.99.6.tar.gz"]
+	bioc = "JASPAR2024"
 
-	version("0.99.7", tag="RELEASE_3_21")
-	version("0.99.6", sha256="ee3238c56942aff87243595c111e1b6f5b21f0730285ef8ef998faeaf94c26d0", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/JASPAR2024_0.99.6.tar.gz")
+	version("0.99.7", commit="3a1e18a12f28c16539d88930ffaa41e71824e2da")
+	version("0.99.6", commit="524c83eca1433fafb0c8100744e78a72c72516ca")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))

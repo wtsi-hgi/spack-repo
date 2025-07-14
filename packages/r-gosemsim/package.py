@@ -18,12 +18,11 @@ class RGosemsim(RPackage):
 	Lin and Wang respectively."""
 
 	bioc = "GOSemSim"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOSemSim_2.28.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOSemSim/GOSemSim_2.28.1.tar.gz"]
-	version("2.34.0", tag="RELEASE_3_21")
+	version("2.34.0", commit="21ee19119d651303bf695f8963ebeacf3b66af46")
 	version("2.8.0", commit="c8c985b2a814cc2365c7f05b2509205e1b6b7f58")
 	version("2.6.2", commit="2ffe78e89276e804306554965fc0799318ec56ed")
 	version("2.4.1", commit="0656e845860d14e054670ffc246a1c53f699299c")
-	version("2.28.1", sha256="bd27320fdadd709002a19f80e7b230b1411a4413f32a74430d6645a22232035d")
+	version("2.28.1", commit="84618af13a19afc4c6cd3caa8a12d889f2ff9df3")
 	version("2.27.3", commit="cc359afaaf2db1edd67fd1ad2ce17126ef2710af")
 	version("2.26.0", commit="ef3d5a7fb37b43603de4f43aa4fecadaa47f93e0")
 	version("2.24.0", commit="ed7334f3cf3ac7ce5be76003934c29b598089f4d")

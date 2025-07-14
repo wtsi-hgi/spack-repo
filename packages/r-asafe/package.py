@@ -12,10 +12,9 @@ class RAsafe(RPackage):
 	Given admixed individuals' bi-allelic SNP genotypes and ancestry pairs (where each ancestry can take one of three values) for multiple SNPs, perform an EM algorithm to deal with the fact that SNP genotypes are unphased with respect to ancestry pairs, in order to estimate ancestry-specific allele frequencies for all SNPs.
 	"""
 	
-	bioc = "ASAFE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASAFE_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASAFE/ASAFE_1.28.0.tar.gz"]
+	bioc = "ASAFE"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="6859900cccb93fc9f2b0e130213095c63b84db513a4d2d18a4e85e9b8a16f68e")
+	version("1.34.0", commit="82f37decb3fa3da78dc45cc4b1d56f92ff6b16d0")
+	version("1.28.0", commit="6436f199f6e398a61be6c34258b15e5da4d7973b")
 
 	depends_on("r@3.2:", type=("build", "run"))

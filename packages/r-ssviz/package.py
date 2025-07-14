@@ -12,11 +12,10 @@ class RSsviz(RPackage):
 	Small RNA sequencing viewer
 	"""
 	
-	bioc = "ssviz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ssviz_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ssviz/ssviz_1.36.0.tar.gz"]
+	bioc = "ssviz"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="4bcd7117b5bd33b92945e2fbbc66ee62ce66c264745ff5216bc391e4aa79ad0b")
+	version("1.42.0", commit="44a6677242e7dca29b3f03c504c753c8558a656a")
+	version("1.36.0", commit="18260e5f4a9c10971f15c01a9d60678ffd8f5e28")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))

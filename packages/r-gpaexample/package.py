@@ -13,11 +13,10 @@ class RGpaexample(RPackage):
 	"""
 	
 	homepage = "http://dongjunchung.github.io/GPA/"
-	bioc = "gpaExample" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/gpaExample_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/gpaExample/gpaExample_1.14.0.tar.gz"]
+	bioc = "gpaExample"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="0995e0892f028ffee5ed68f897f4bbb973db55d3c7b12b0c4a9b629978775635")
+	version("1.20.0", commit="bf1e5acf04dd7cbe22b87ba0e14cd859e772e79b")
+	version("1.14.0", commit="1379847fa94bb7af84f1b336a4f147494ddb62b9")
 
 	depends_on("r@4:", type=("build", "run"))
 

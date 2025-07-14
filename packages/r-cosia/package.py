@@ -13,11 +13,10 @@ class RCosia(RPackage):
 	"""
 	
 	homepage = "https://www.lasseigne.org/"
-	bioc = "CoSIA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CoSIA_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CoSIA/CoSIA_1.2.0.tar.gz"]
+	bioc = "CoSIA"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="11cdc5e047708b2c2a37cea00fcce76a61c73d158ef8241d81931b3210a2a791")
+	version("1.8.0", commit="962958ba0c4e9e56018881673ec9ef17f55c18b1")
+	version("1.2.0", commit="d957b0a3f669ced26700040e072d86d6a57758b1")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-experimenthub@2.7:", type=("build", "run"))

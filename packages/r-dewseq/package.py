@@ -13,11 +13,10 @@ class RDewseq(RPackage):
 	"""
 	
 	homepage = "https://github.com/EMBL-Hentze-group/DEWSeq/"
-	bioc = "DEWSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEWSeq_1.16.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEWSeq/DEWSeq_1.16.2.tar.gz"]
+	bioc = "DEWSeq"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.2", sha256="c1b358c4b1ff2a05de1c8d6d9b236a03b435fdb1ff0774cc13c726534d301f62")
+	version("1.22.0", commit="ea2b195ec23c78356d76c7310c157a44552b5349")
+	version("1.16.2", commit="9459b1393dabe6799322b44d8ed48a96cc784ef8")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-r-utils", type=("build", "run"))

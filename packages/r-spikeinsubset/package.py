@@ -13,11 +13,10 @@ class RSpikeinsubset(RPackage):
 	"""
 	
 	homepage = "https://bioconductor.org/packages/SpikeInSubset"
-	bioc = "SpikeInSubset" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SpikeInSubset_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SpikeInSubset/SpikeInSubset_1.42.0.tar.gz"]
+	bioc = "SpikeInSubset"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="397e37d064cefe90e3869c79cb1cd6c243b07a96e26217797a35580bac798493")
+	version("1.48.0", commit="2413a3c0db1ac3be744e1758535d90b08c7dd832")
+	version("1.42.0", commit="346a7b010a356762666aa4a0b7b9e5ac186518b9")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

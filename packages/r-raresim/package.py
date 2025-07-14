@@ -13,11 +13,10 @@ class RRaresim(RPackage):
 	"""
 	
 	homepage = "https://github.com/meganmichelle/RAREsim"
-	bioc = "RAREsim" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RAREsim_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RAREsim/RAREsim_1.6.0.tar.gz"]
+	bioc = "RAREsim"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="8fb2a823bf1b18ea70eb886ed8726c47896ac240156499e90943fd36f1de213f")
+	version("1.12.0", commit="ade75ecbdf4b55424b39885c5a43a244389b03c1")
+	version("1.6.0", commit="7e18d5764e1846ec7d3abddcf5d7600ac191083d")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-nloptr", type=("build", "run"))

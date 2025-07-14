@@ -13,11 +13,10 @@ class RProlocgui(RPackage):
 	"""
 	
 	homepage = "https://github.com/lgatto/pRolocGUI"
-	bioc = "pRolocGUI" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pRolocGUI_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pRolocGUI/pRolocGUI_2.12.0.tar.gz"]
+	bioc = "pRolocGUI"
 
-	version("2.18.0", tag="RELEASE_3_21")
-	version("2.12.0", sha256="fd152a06b8a47d9129d073b5fc6dddace2046203d6be925e3c58117b441e8954")
+	version("2.18.0", commit="de8e2e19d834ba6c44e2a3a9475b10cdd14898cf")
+	version("2.12.0", commit="8622a9d43e7044717199497948b74c0b1ac05e4e")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-proloc@1.27.6:", type=("build", "run"))

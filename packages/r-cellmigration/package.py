@@ -13,11 +13,10 @@ class RCellmigration(RPackage):
 	"""
 	
 	homepage = "https://github.com/ocbe-uio/cellmigRation/"
-	bioc = "cellmigRation" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cellmigRation_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cellmigRation/cellmigRation_1.10.0.tar.gz"]
+	bioc = "cellmigRation"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="95ed98dbe3a561397a434f6304d3fc40d1ec270f4e449ddc10d7c9152ce3ea50")
+	version("1.16.0", commit="526a2a8d67316c9328044587ad5d653734482159")
+	version("1.10.0", commit="b06828ec780a09105a70b015da82b96d10cbd7e9")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-foreach", type=("build", "run"))

@@ -12,11 +12,10 @@ class REbarrays(RPackage):
 	EBarrays provides tools for the analysis of replicated/unreplicated microarray data.
 	"""
 	
-	bioc = "EBarrays" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EBarrays_2.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EBarrays/EBarrays_2.66.0.tar.gz"]
+	bioc = "EBarrays"
 
-	version("2.72.0", tag="RELEASE_3_21")
-	version("2.66.0", sha256="f810ddcd8f363086be0df36bebe739785fb228f527822965b9a8a65e69f00dd5")
+	version("2.72.0", commit="cb4b847b9b683a9ce88ee3fae29e6727b9ab1ff0")
+	version("2.66.0", commit="8f2e6be7b512d374449bb187c5ec86922eb5a920")
 
 	depends_on("r@1.8:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

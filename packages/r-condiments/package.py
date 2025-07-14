@@ -13,11 +13,10 @@ class RCondiments(RPackage):
 	"""
 	
 	homepage = "https://hectorrdb.github.io/condiments/index.html"
-	bioc = "condiments" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/condiments_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/condiments/condiments_1.10.0.tar.gz"]
+	bioc = "condiments"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="a066fc087874182d73b298e2e916fbdf47b9fee17757552347ecb25bbc7ba3cb")
+	version("1.16.0", commit="7cbdad44cb2ec4da6d71c8960256cb49a195fc66")
+	version("1.10.0", commit="d7f032b005bd7dfcb374b411667c9f624b9972ae")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-slingshot@1.9:", type=("build", "run"))

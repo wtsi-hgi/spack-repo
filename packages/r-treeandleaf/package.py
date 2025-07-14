@@ -12,11 +12,10 @@ class RTreeandleaf(RPackage):
 	The TreeAndLeaf package combines unrooted and force-directed graph algorithms in order to layout binary trees, aiming to represent multiple layers of information onto dendrogram leaves.
 	"""
 	
-	bioc = "TreeAndLeaf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TreeAndLeaf_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TreeAndLeaf/TreeAndLeaf_1.14.0.tar.gz"]
+	bioc = "TreeAndLeaf"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="61dda9ec394afa8d83e99895d73201b9dcd1f9ce2437f8ca05b651f96c5e368c")
+	version("1.20.0", commit="3a797ab3dc7a05552d323228d7349f7d46d9cbec")
+	version("1.14.0", commit="f57a9339c970aad701318549b34dd13482da55f0")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-reder@1.40.4:", type=("build", "run"))

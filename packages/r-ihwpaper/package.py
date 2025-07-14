@@ -12,11 +12,10 @@ class RIhwpaper(RPackage):
 	This package conveniently wraps all functions needed to reproduce the figures in the IHW paper (https://www.nature.com/articles/nmeth.3885) and the data analysis in https://rss.onlinelibrary.wiley.com/doi/10.1111/rssb.12411, cf. the arXiv preprint (http://arxiv.org/abs/1701.05179). Thus it is a companion package to the Bioconductor IHW package.
 	"""
 	
-	bioc = "IHWpaper" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/IHWpaper_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/IHWpaper/IHWpaper_1.30.0.tar.gz"]
+	bioc = "IHWpaper"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="b2e6d8674910ccf6b7406ae1ad88effb62430e6a6f348a3b61128328b0650b1b")
+	version("1.36.0", commit="5a3820c9899ddbeab37b8c6068eb572de9219fd9")
+	version("1.30.0", commit="bba1a512fed891b2bdb7ec360a89bbaf96a796a9")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-ihw", type=("build", "run"))

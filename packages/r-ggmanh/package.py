@@ -12,11 +12,10 @@ class RGgmanh(RPackage):
 	Manhattan plot and QQ Plot are commonly used to visualize the end result of Genome Wide Association Study. The "ggmanh" package aims to keep the generation of these plots simple while maintaining customizability. Main functions include manhattan_plot, qqunif, and thinPoints.
 	"""
 	
-	bioc = "ggmanh" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggmanh_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggmanh/ggmanh_1.6.0.tar.gz"]
+	bioc = "ggmanh"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="10842e9355ca1984a5204eeb6d2972bb922fb9462964a1b720647c73738958c8")
+	version("1.12.0", commit="a314ecb9a01273b3bf8152317299b8e8efbf2537")
+	version("1.6.0", commit="48558701e5fe97fcf245931f8257529bcf0d6fb2")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-gdsfmt", type=("build", "run"))

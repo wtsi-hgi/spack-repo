@@ -13,11 +13,10 @@ class RDdpcrclust(RPackage):
 	"""
 	
 	homepage = "https://github.com/bgbrink/ddPCRclust"
-	bioc = "ddPCRclust" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ddPCRclust_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ddPCRclust/ddPCRclust_1.22.0.tar.gz"]
+	bioc = "ddPCRclust"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="4c745a4fbe80d7827e24e9ccfbb911a61aa636fba5a46aadf6de862667f1cd31")
+	version("1.28.0", commit="509b1e6dd2dd3e2404126b7e937e410651a68fc6")
+	version("1.22.0", commit="e79460dbf931c9c8184f050cee247c979f4e75e5")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-plotrix", type=("build", "run"))

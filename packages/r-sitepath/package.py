@@ -13,11 +13,10 @@ class RSitepath(RPackage):
 	"""
 	
 	homepage = "https://wuaipinglab.github.io/sitePath/"
-	bioc = "sitePath" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sitePath_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sitePath/sitePath_1.18.0.tar.gz"]
+	bioc = "sitePath"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="0436d1d9e105cfe74447db0c55a63e76ff1a47a4e49d1c89a5537b73d376b89d")
+	version("1.24.0", commit="c308da0aafb4453310f696e5b5e033de26949946")
+	version("1.18.0", commit="b07adeea85cc7665b877cfee058586d316952fb8")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

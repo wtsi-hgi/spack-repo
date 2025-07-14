@@ -14,10 +14,9 @@ class RAffyio(RPackage):
 	formats."""
 
 	bioc = "affyio"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affyio_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affyio/affyio_1.72.0.tar.gz"]
 
-	version("1.78.0", tag="RELEASE_3_21")
-	version("1.72.0", sha256="e98fc0f5acba44885b9b7962d2b3d85e8972e8675ab7d9adf7653133d2d95007")
+	version("1.78.0", commit="9132e132d38ec0c5d0f9bbd6878d9a13ee0af739")
+	version("1.72.0", commit="2f97a7e3710e44886b0b732d1c0dbb3165e9b84c")
 	version("1.70.0", commit="95560567e27088863c64e868a8e5069fc725b8d7")
 	version("1.68.0", commit="33080c5eeb14c0ca40f0d231706af4e0c2c1ef8b")
 	version("1.66.0", commit="3a0b90704fc46cddd99a72b985a6bdb348f69b50")

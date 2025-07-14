@@ -12,11 +12,10 @@ class RSeqcat(RPackage):
 	The seqCAT package uses variant calling data (in the form of VCF files) from high throughput sequencing technologies to authenticate and validate the source, function and characteristics of biological samples used in scientific endeavours.
 	"""
 	
-	bioc = "seqCAT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqCAT_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqCAT/seqCAT_1.24.0.tar.gz"]
+	bioc = "seqCAT"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="88e0bedc957df1778d5a47834124f7df6485238059214a17f75103eb4f5f78ca")
+	version("1.30.0", commit="5a3cc853a29d5746c7c472f9d49e34712bb71504")
+	version("1.24.0", commit="2a592c3fbde66bd34ed9369d3e6730d3dc933f58")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-genomicranges@1.26.4:", type=("build", "run"))

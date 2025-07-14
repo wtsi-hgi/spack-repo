@@ -15,9 +15,8 @@ class ROrganismdbi(RPackage):
 	fact that each of these packages implements a select methods."""
 
 	bioc = "OrganismDbi"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OrganismDbi_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OrganismDbi/OrganismDbi_1.44.0.tar.gz"]
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="f2d4fb455d0666583a36c699c317a4309bdc9fb83fa56e91809a574c83f0e53c")
+	version("1.50.0", commit="2c7a32e334905fb47e5e2dac353f848fc1afb438")
+	version("1.44.0", commit="aece52c93d3465342a75541daeee14e17b30b3bf")
 	version("1.42.0", commit="29fcd5c47f8c479edac630a8e2a05ec5facb1328")
 	version("1.40.0", commit="fac971dabef3b6d2473d2061bc1723e3de59c9d7")
 	version("1.38.1", commit="fa8da4dd42ab15e1d21fd9f8286440596d50b1ec")

@@ -12,11 +12,10 @@ class RDeltagseg(RPackage):
 	Identifying distinct subpopulations through multiscale time series analysis
 	"""
 	
-	bioc = "deltaGseg" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/deltaGseg_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/deltaGseg/deltaGseg_1.42.0.tar.gz"]
+	bioc = "deltaGseg"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="ae5990a978668b59fd31849ef395fedca1c6b641a7acf22b51440253195a0217")
+	version("1.48.0", commit="109f214f39f9fe8967b1d720a64a2bbc9e9033f8")
+	version("1.42.0", commit="fbbf10824efb4ef1fe8045f5cdf133d8f5198f75")
 
 	depends_on("r@2.15.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

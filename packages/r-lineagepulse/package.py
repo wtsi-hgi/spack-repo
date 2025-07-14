@@ -12,8 +12,7 @@ class RLineagepulse(RPackage):
 	LineagePulse is a differential expression and expression model fitting package tailored to single-cell RNA-seq data (scRNA-seq). LineagePulse accounts for batch effects, drop-out and variable sequencing depth. One can use LineagePulse to perform longitudinal differential expression analysis across pseudotime as a continuous coordinate or between discrete groups of cells (e.g. pre-defined clusters or experimental conditions). Expression model fits can be directly extracted from LineagePulse.
 	"""
 	
-	bioc = "LineagePulse" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LineagePulse_1.21.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LineagePulse/LineagePulse_1.21.0.tar.gz"]
+	bioc = "LineagePulse"
 
 	version("1.21.0", sha256="0fd7a5a7620e3da6fd2120a23981545c7bf8ddcb66b22f6f1b0e6b4ff589a127")
 

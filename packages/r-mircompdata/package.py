@@ -12,11 +12,10 @@ class RMircompdata(RPackage):
 	Raw amplification data from a large microRNA mixture / dilution study. These data are used by the miRcomp package to assess the performance of methods that estimate expression from the amplification curves.
 	"""
 	
-	bioc = "miRcompData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/miRcompData_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/miRcompData/miRcompData_1.32.0.tar.gz"]
+	bioc = "miRcompData"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="e61d11cd0352745d221517f0f85654ad6e5923d2670eeff0069797db1bdd8897")
+	version("1.38.0", commit="c1dd5a49278f54ee466e13010a655c225dbeea9a")
+	version("1.32.0", commit="ca4e514ed7bd9f0dcec21b2fc499f69b2d12de65")
 
 	depends_on("r@3.2:", type=("build", "run"))
 

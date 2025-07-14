@@ -15,10 +15,9 @@ class RGlmgampoi(RPackage):
 	RNA-seq experiments."""
 
 	bioc = "glmGamPoi"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/glmGamPoi_1.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/glmGamPoi/glmGamPoi_1.14.3.tar.gz"]
-	version("1.20.0", tag="RELEASE_3_21")
+	version("1.20.0", commit="6fb5b42e9869bc8a92f720a4a24e2f6afab37711")
 	version("1.8.0", commit="b723d61e05c1ad50a3cf6a6393ec3d97adc7edb4")
-	version("1.6.0", sha256="55e292e994ff4e51062e2eb63b3e9c79cb0c03440fcb4fc5e78a81903cfbcef9", url="https://bioconductor.org/packages/3.14/bioc/src/contrib/glmGamPoi_1.6.0.tar.gz")
+	version("1.6.0", commit="03df1e116df7ed6997401470bfc52619874641a1")
 	version("1.14.3", md5="a713a5c0adddd2e5f4d30e02af38d309")
 	version("1.12.0", commit="5fdfa5ca1a56b19e51bc6e307ca6015cc56109a0")
 	version("1.10.0", commit="048e17384209fc07031e09875ec6eea35e90ef46")

@@ -12,11 +12,10 @@ class RCssq(RPackage):
 	This package is desgined to perform statistical analysis to identify statistically significant differentially bound regions between multiple groups of ChIP-seq dataset.
 	"""
 	
-	bioc = "CSSQ" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CSSQ_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CSSQ/CSSQ_1.14.0.tar.gz"]
+	bioc = "CSSQ"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="368e4a8824a979be1acfd4f8a0747289e5e443290e40dd3b8e47049d5ec88a58")
+	version("1.20.0", commit="1eeb773a6fcdf885d447e4b66dd5cf95f8c2e039")
+	version("1.14.0", commit="169f2fd89ff6ba2a95782a1dcd4e7835bd50ad9d")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

@@ -12,11 +12,10 @@ class RRepviz(RPackage):
 	RepViz enables the view of a genomic region in a simple and efficient way. RepViz allows simultaneous viewing of both intra- and intergroup variation in sequencing counts of the studied conditions, as well as their comparison to the output features (e.g. identified peaks) from user selected data analysis methods.The RepViz tool is primarily designed for chromatin data such as ChIP-seq and ATAC-seq, but can also be used with other sequencing data such as RNA-seq, or combinations of different types of genomic data.
 	"""
 	
-	bioc = "RepViz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RepViz_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RepViz/RepViz_1.18.0.tar.gz"]
+	bioc = "RepViz"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="9c8b56f9003054b004db2d92ac10b90dd56365620cb0be94535beac73adcbae1")
+	version("1.24.0", commit="79c9d6af94512aed228744e1691be4bbd2e09b91")
+	version("1.18.0", commit="4732c6b5e1a6bc45fe8e55cf2c04afcf2fa78452")
 
 	depends_on("r@3.5.1:", type=("build", "run"))
 	depends_on("r-genomicranges@1.30:", type=("build", "run"))

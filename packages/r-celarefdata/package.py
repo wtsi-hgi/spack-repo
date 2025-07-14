@@ -12,11 +12,10 @@ class RCelarefdata(RPackage):
 	This experiment data contains some processed data used in the celaref package vignette. These are publically available datasets, that have been processed by celaref package, and can be manipulated further with it.
 	"""
 	
-	bioc = "celarefData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/celarefData_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/celarefData/celarefData_1.20.0.tar.gz"]
+	bioc = "celarefData"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="48a454acc006d0de730c264e04c7b82c4f52dcf0f063b45ef7df69b92a2c7d87")
+	version("1.26.0", commit="f6ab93a6e99c635fc02701f0d88c0f107bb92bee")
+	version("1.20.0", commit="e61d116a47baf4ea2c18f7f852dd4280b263b20a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

@@ -12,11 +12,10 @@ class RRarevariantvis(RPackage):
 	Second version of RareVariantVis package aims to provide comprehensive information about rare variants for your genome data. It annotates, filters and presents genomic variants (especially rare ones) in a global, per chromosome way. For discovered rare variants CRISPR guide RNAs are designed, so the user can plan further functional studies. Large structural variants, including copy number variants are also supported. Package accepts variants directly from variant caller - for example GATK or Speedseq. Output of package are lists of variants together with adequate visualization. Visualization of variants is performed in two ways - standard that outputs png figures and interactive that uses JavaScript d3 package. Interactive visualization allows to analyze trio/family data, for example in search for causative variants in rare Mendelian diseases, in point-and-click interface. The package includes homozygous region caller and allows to analyse whole human genomes in less than 30 minutes on a desktop computer. RareVariantVis disclosed novel causes of several rare monogenic disorders, including one with non-coding causative variant - keratolythic winter erythema.
 	"""
 	
-	bioc = "RareVariantVis" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RareVariantVis_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RareVariantVis/RareVariantVis_2.30.0.tar.gz"]
+	bioc = "RareVariantVis"
 
-	version("2.36.0", tag="RELEASE_3_21")
-	version("2.30.0", sha256="59d6a9c447ad649d107635413ba1df64dd7cfe578e605834183fd0461b61e257")
+	version("2.36.0", commit="c016332c1424acaea554039727ce3c83a99a4b0f")
+	version("2.30.0", commit="3234d00b5bd68dfbf9beba064f20d89cc7767510")
 
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-variantannotation", type=("build", "run"))

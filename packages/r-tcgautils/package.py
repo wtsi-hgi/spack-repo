@@ -12,11 +12,10 @@ class RTcgautils(RPackage):
 	A suite of helper functions for checking and manipulating TCGA data including data obtained from the curatedTCGAData experiment package. These functions aim to simplify and make working with TCGA data more manageable. Exported functions include those that import data from flat files into Bioconductor objects, convert row annotations, and identifier translation via the GDC API.
 	"""
 	
-	bioc = "TCGAutils" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TCGAutils_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TCGAutils/TCGAutils_1.22.2.tar.gz"]
+	bioc = "TCGAutils"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.2", sha256="431da846f86182834f96ef3f7ca33cd7b18e29e57e5ab6caf21a74eb45f9ec9a")
+	version("1.28.0", commit="3240a5b1ff19c09dc0797090ac45f36d22f15c8f")
+	version("1.22.2", commit="653217e0ef94e886b50c62a6bc1c819d0189d661")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

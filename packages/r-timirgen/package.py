@@ -13,8 +13,7 @@ class RTimirgen(RPackage):
 	"""
 	
 	homepage = "https://github.com/Krutik6/TimiRGeN/"
-	bioc = "TimiRGeN" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TimiRGeN_1.11.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TimiRGeN/TimiRGeN_1.11.0.tar.gz"]
+	bioc = "TimiRGeN"
 
 	version("1.11.0", sha256="22bf75a246dcb1dc85830bdeb9300b00647ae91fe5647d37a6d3d5405b1e9280")
 

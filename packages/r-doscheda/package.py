@@ -12,11 +12,10 @@ class RDoscheda(RPackage):
 	Doscheda focuses on quantitative chemoproteomics used to determine protein interaction profiles of small molecules from whole cell or tissue lysates using Mass Spectrometry data. The package provides a shiny application to run the pipeline, several visualisations and a downloadable report of an experiment.
 	"""
 	
-	bioc = "Doscheda" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Doscheda_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Doscheda/Doscheda_1.24.0.tar.gz"]
+	bioc = "Doscheda"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="817e2b35423b020959fca253b2986b0ac0a9c4de9ad42fb882a764921781b8c1")
+	version("1.30.0", commit="c8edeec536de94afffa710d9dee2be1b4ca4c05e")
+	version("1.24.0", commit="a15eefbf800db214054608b14230f642629bb664")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-drc", type=("build", "run"))

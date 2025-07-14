@@ -13,11 +13,10 @@ class RDmrscan(RPackage):
 	"""
 	
 	homepage = "https://github.com/christpa/DMRScan"
-	bioc = "DMRScan" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DMRScan_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DMRScan/DMRScan_1.24.0.tar.gz"]
+	bioc = "DMRScan"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="6d5560d4f9a1ae49c16cbf5a0be33d9dc04ff710d726aa342015f6fbfa028313")
+	version("1.30.0", commit="b3a7b1490d8c3335d8988a6e0dbe0fa1e1102a68")
+	version("1.24.0", commit="fded05824b2276a3f73c9d49ad27426c4fc77abb")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

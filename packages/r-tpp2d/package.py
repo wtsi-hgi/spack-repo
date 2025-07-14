@@ -13,11 +13,10 @@ class RTpp2d(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org/packages/TPP2D"
-	bioc = "TPP2D" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TPP2D_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TPP2D/TPP2D_1.18.0.tar.gz"]
+	bioc = "TPP2D"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="cea550884f057280a2f965b51c305d78d877cfbfeb79d2ed6a6fa5343f194e45")
+	version("1.24.0", commit="7f0e386df9727e1d2bad8f0813535112aeff89ba")
+	version("1.18.0", commit="f78c9fc90ca003fa6849393b86108d17594ba398")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

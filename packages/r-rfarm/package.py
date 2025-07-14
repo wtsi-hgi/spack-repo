@@ -12,11 +12,10 @@ class RRfarm(RPackage):
 	rfaRm provides a client interface to the Rfam database of RNA families. Data that can be retrieved include RNA families, secondary structure images, covariance models, sequences within each family, alignments leading to the identification of a family and secondary structures in the dot-bracket format.
 	"""
 	
-	bioc = "rfaRm" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rfaRm_1.14.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rfaRm/rfaRm_1.14.2.tar.gz"]
+	bioc = "rfaRm"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.2", sha256="6b953d538843e8e4b4d0cc8b324b844096be065265277c279b51876ae2f1395e")
+	version("1.20.0", commit="c82a20c7a6674397782ca89907156d84a7ef9bb3")
+	version("1.14.2", commit="2714b9d8937ae602c94fd702720cb536e39413ff")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-stringi", type=("build", "run"))

@@ -12,10 +12,9 @@ class RAseb(RPackage):
 	ASEB is an R package to predict lysine sites that can be acetylated by a specific KAT-family.
 	"""
 	
-	bioc = "ASEB" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASEB_1.46.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASEB/ASEB_1.46.3.tar.gz"]
+	bioc = "ASEB"
 
-	version("1.52.0", tag="RELEASE_3_21")
-	version("1.46.3", sha256="797561ff36b036921e82d824b4b3e7f81917229a361620951eb4141947a346b5")
+	version("1.52.0", commit="fa6f28a9a2fc571547eccb2c329931cd49e23123")
+	version("1.46.3", commit="99edb08fe5b0f390f7a0d77c5fcea0e5dcc31275")
 
 	depends_on("r@2.8:", type=("build", "run"))

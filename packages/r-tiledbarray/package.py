@@ -13,11 +13,10 @@ class RTiledbarray(RPackage):
 	"""
 	
 	homepage = "https://github.com/LTLA/TileDBArray"
-	bioc = "TileDBArray" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TileDBArray_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TileDBArray/TileDBArray_1.12.0.tar.gz"]
+	bioc = "TileDBArray"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="920703cc68b3dbad43aaac626efb3d8a1e5c7f18fbdf95f9ade80ef878ada1d7")
+	version("1.18.0", commit="24d61dd61fffba2b2b6f8b05df35ca9b4004dd00")
+	version("1.12.0", commit="c9a0eaf0cb6e9ca579f2e40bdcbe8c556a32d754")
 
 	depends_on("r-delayedarray@0.27.2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

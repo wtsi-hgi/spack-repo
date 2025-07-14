@@ -13,9 +13,8 @@ class RChampdata(RPackage):
 	controls for CNA analysis."""
 
 	bioc = "ChAMPdata"
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ChAMPdata_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ChAMPdata/ChAMPdata_2.34.0.tar.gz"]
-	version("2.40.0", tag="RELEASE_3_21")
-	version("2.34.0", sha256="df392019cfdd99dd4949e89d855477ec603970519541d67273e814b8c4d3bb9c")
+	version("2.40.0", commit="2e76a6eec80cb42c6a0d50db3ad946f44a5c8ed2")
+	version("2.34.0", commit="debac652f0e001883c3c26b2f66efcea42ef633d")
 	version("2.32.0", commit="98a94978001b6a28543257e72a036c43d61e67ef")
 	version("2.30.0", commit="6e05b8f7b004b1a5185ec4b387c32725e8bd95cb")
 	version("2.28.0", commit="601555bf599828b6cfa125beffa51aebccdc8503")

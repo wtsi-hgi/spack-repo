@@ -13,11 +13,10 @@ class RGrmetrics(RPackage):
 	"""
 	
 	homepage = "https://github.com/uc-bd2k/GRmetrics"
-	bioc = "GRmetrics" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GRmetrics_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GRmetrics/GRmetrics_1.28.0.tar.gz"]
+	bioc = "GRmetrics"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="2936848c2fe210ba6ce82cddcd7f7462e1bd0336150283066cda108a265fbc64")
+	version("1.34.0", commit="a780f6bd8bf1d5b86264b11842853b621cd749ce")
+	version("1.28.0", commit="90c38dd21ba83bbb24f817a467b619cafaee0601")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

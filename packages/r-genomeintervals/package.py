@@ -12,11 +12,10 @@ class RGenomeintervals(RPackage):
 	This package defines classes for representing genomic intervals and provides functions and methods for working with these. Note: The package provides the basic infrastructure for and is enhanced by the package 'girafe'.
 	"""
 	
-	bioc = "genomeIntervals" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genomeIntervals_1.58.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genomeIntervals/genomeIntervals_1.58.0.tar.gz"]
+	bioc = "genomeIntervals"
 
-	version("1.64.0", tag="RELEASE_3_21")
-	version("1.58.0", sha256="1915392190e53c5028c90a0d5b3d11637bef0c3f6ddf79581a7233bde6282d09")
+	version("1.64.0", commit="ad522e8ef81695723b46917cf237458cd70bb2d1")
+	version("1.58.0", commit="3b05a4b22c99e25c7cec16f5256104decdf9e809")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-intervals@0.14:", type=("build", "run"))

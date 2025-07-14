@@ -12,11 +12,10 @@ class RCasper(RPackage):
 	Infer alternative splicing from paired-end RNA-seq data. The model is based on counting paths across exons, rather than pairwise exon connections, and estimates the fragment size and start distributions non-parametrically, which improves estimation precision.
 	"""
 	
-	bioc = "casper" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/casper_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/casper/casper_2.36.0.tar.gz"]
+	bioc = "casper"
 
-	version("2.42.0", tag="RELEASE_3_21")
-	version("2.36.0", sha256="011813460d5eabc2e85b92a68a57d4bf0695f0102b8b4cbfd61f2e4c3a325033")
+	version("2.42.0", commit="8d20bffb2ab7e7826fb87a6a6a8881abedd39c93")
+	version("2.36.0", commit="10bb58568406f6149e4dc043ee04b9c23a335d5e")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

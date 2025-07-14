@@ -12,11 +12,10 @@ class RProper(RPackage):
 	This package provide simulation based methods for evaluating the statistical power in differential expression analysis from RNA-seq data.
 	"""
 	
-	bioc = "PROPER" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PROPER_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PROPER/PROPER_1.34.0.tar.gz"]
+	bioc = "PROPER"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="c2c44584b2173ace3b0f9e8defd735c65ef0ab75fc3f800888247799d333b2ba")
+	version("1.40.0", commit="a99e0a6477e9693bc16bd0ca07d41938e9dc89fc")
+	version("1.34.0", commit="c294c33f35ac8d4125ec4dc365bec61791a967be")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-edger", type=("build", "run"))

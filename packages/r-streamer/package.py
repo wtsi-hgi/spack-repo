@@ -12,11 +12,10 @@ class RStreamer(RPackage):
 	Large data files can be difficult to work with in R, where data generally resides in memory. This package encourages a style of programming where data is 'streamed' from disk into R via a `producer' and through a series of `consumers' that, typically reduce the original data to a manageable size. The package provides useful Producer and Consumer stream components for operations such as data input, sampling, indexing, and transformation; see package?Streamer for details.
 	"""
 	
-	bioc = "Streamer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Streamer_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Streamer/Streamer_1.48.0.tar.gz"]
+	bioc = "Streamer"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="ab764572ff2c71f9a15554a3b575599e5adb4978dff15d0ea53d20e356ea3262")
+	version("1.54.0", commit="6736770163ea762572222b45dcc01e983476e509")
+	version("1.48.0", commit="3e1a31458b3a42d47feb2ffc6bbdf8d8fae89b82")
 
 	depends_on("r-graph", type=("build", "run"))
 	depends_on("r-rbgl", type=("build", "run"))

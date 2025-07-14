@@ -12,11 +12,10 @@ class RMedips(RPackage):
 	MEDIPS was developed for analyzing data derived from methylated DNA immunoprecipitation (MeDIP) experiments followed by sequencing (MeDIP-seq). However, MEDIPS provides functionalities for the analysis of any kind of quantitative sequencing data (e.g. ChIP-seq, MBD-seq, CMS-seq and others) including calculation of differential coverage between groups of samples and saturation and correlation analysis.
 	"""
 	
-	bioc = "MEDIPS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MEDIPS_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MEDIPS/MEDIPS_1.54.0.tar.gz"]
+	bioc = "MEDIPS"
 
-	version("1.60.0", tag="RELEASE_3_21")
-	version("1.54.0", sha256="085e41e65045f11702f5c7bf5e5c6b523c7dac3baff55527efd52c86fdcbf19d")
+	version("1.60.0", commit="31eb178c3e25753a2e409698478aa0ee9c2c085b")
+	version("1.54.0", commit="a174f2a0428e3141fa27f7429c6fc9064c24d215")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))

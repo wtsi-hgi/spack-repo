@@ -13,11 +13,10 @@ class RTweedeseqcountdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/isglobal-brge/tweeDEseqCountData/"
-	bioc = "tweeDEseqCountData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tweeDEseqCountData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tweeDEseqCountData/tweeDEseqCountData_1.40.0.tar.gz"]
+	bioc = "tweeDEseqCountData"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="db14f527829f488876baed853758cb299462bf4a6d66ea8929b8518c4e0907e8")
+	version("1.46.0", commit="bf1977be57c34be5df134c571b8103bb36541476")
+	version("1.40.0", commit="8fcf8beb5b15b728311b10bc6ea34161454a8df7")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r@4.3:", type=("build", "run"))

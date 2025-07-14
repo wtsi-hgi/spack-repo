@@ -12,11 +12,10 @@ class RGuideseq(RPackage):
 	The package implements GUIDE-seq and PEtag-seq analysis workflow including functions for filtering UMI and reads with low coverage, obtaining unique insertion sites (proxy of cleavage sites), estimating the locations of the insertion sites, aka, peaks, merging estimated insertion sites from plus and minus strand, and performing off target search of the extended regions around insertion sites with mismatches and indels.
 	"""
 	
-	bioc = "GUIDEseq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GUIDEseq_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GUIDEseq/GUIDEseq_1.32.0.tar.gz"]
+	bioc = "GUIDEseq"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="d5b01e733baf6c8a602501fb0e0e616fb041852f343a596e93bfdbc418277988")
+	version("1.38.0", commit="55716c1df4b67a050920a584dc78439f2bf1752a")
+	version("1.32.0", commit="d675d441d52064691685dc972df9cbeeb420e2f0")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

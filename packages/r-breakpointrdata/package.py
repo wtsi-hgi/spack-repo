@@ -13,11 +13,10 @@ class RBreakpointrdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/daewoooo/breakpointRdata"
-	bioc = "breakpointRdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/breakpointRdata_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/breakpointRdata/breakpointRdata_1.20.0.tar.gz"]
+	bioc = "breakpointRdata"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="b297da45e4a070b3dc7bf4467f779eca0b36ccf9d3640db9b7772a33c8dd898f")
+	version("1.26.0", commit="c5e399631086f47af4938445b8d00bcbb1846833")
+	version("1.20.0", commit="5b19cbcb5f46629f45219f1808a83a7d7f73c5ab")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

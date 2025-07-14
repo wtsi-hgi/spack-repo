@@ -13,11 +13,10 @@ class RIsocorrector(RPackage):
 	"""
 	
 	homepage = "https://genomics.ur.de/files/IsoCorrectoR/"
-	bioc = "IsoCorrectoR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IsoCorrectoR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IsoCorrectoR/IsoCorrectoR_1.20.0.tar.gz"]
+	bioc = "IsoCorrectoR"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="e593a50e815cc4df727eb43c416194143fc8612a75729f0d471fa1a890ec2460")
+	version("1.26.0", commit="96af901c292ee8819185394ddff0d788ffc30a67")
+	version("1.20.0", commit="3178d35c93c7c00a4b0c3d104d0c8e09b7160a91")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

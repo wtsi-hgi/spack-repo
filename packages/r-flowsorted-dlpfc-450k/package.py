@@ -12,11 +12,10 @@ class RFlowsortedDlpfc450k(RPackage):
 	Raw data objects for the Illumina 450k DNA methylation microarrays.
 	"""
 	
-	bioc = "FlowSorted.DLPFC.450k" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FlowSorted.DLPFC.450k_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FlowSorted.DLPFC.450k/FlowSorted.DLPFC.450k_1.38.0.tar.gz"]
+	bioc = "FlowSorted.DLPFC.450k"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="0a5aa49499e0cd1f7523cf94de82e7d7edb97e5e597b08238da0b98a3e7b4036")
+	version("1.44.0", commit="b6d17ffc54eebf0f4ec5cc2523caac7405217503")
+	version("1.38.0", commit="b5b90bb3d4be912181d46caf138b03cc2dfac83a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-minfi@1.21.2:", type=("build", "run"))

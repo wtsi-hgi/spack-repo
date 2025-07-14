@@ -12,11 +12,10 @@ class RSystempipetools(RPackage):
 	systemPipeTools package extends the widely used systemPipeR (SPR) workflow environment with an enhanced toolkit for data visualization, including utilities to automate the data visualizaton for analysis of differentially expressed genes (DEGs). systemPipeTools provides data transformation and data exploration functions via scatterplots, hierarchical clustering heatMaps, principal component analysis, multidimensional scaling, generalized principal components, t-Distributed Stochastic Neighbor embedding (t-SNE), and MA and volcano plots. All these utilities can be integrated with the modular design of the systemPipeR environment that allows users to easily substitute any of these features and/or custom with alternatives.
 	"""
 	
-	bioc = "systemPipeTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/systemPipeTools_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/systemPipeTools/systemPipeTools_1.10.0.tar.gz"]
+	bioc = "systemPipeTools"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="2d731b23115037425d1ad1ddf87fd08d4d27c98573d92f54be67e98a6bd145bb")
+	version("1.16.0", commit="b73e58c3afc7f1d8ae9f3894531512290a65914b")
+	version("1.10.0", commit="41d021a31b356de23c8b566176d3fb3ae629e8c4")
 
 	depends_on("r-deseq2", type=("build", "run"))
 	depends_on("r-ggally", type=("build", "run"))

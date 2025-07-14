@@ -12,11 +12,10 @@ class RTranslatome(RPackage):
 	Detection of differentially expressed genes (DEGs) from the comparison of two biological conditions (treated vs. untreated, diseased vs. normal, mutant vs. wild-type) among different levels of gene expression (transcriptome ,translatome, proteome), using several statistical methods: Rank Product, Translational Efficiency, t-test, Limma, ANOTA, DESeq, edgeR. Possibility to plot the results with scatterplots, histograms, MA plots, standard deviation (SD) plots, coefficient of variation (CV) plots. Detection of significantly enriched post-transcriptional regulatory factors (RBPs, miRNAs, etc) and Gene Ontology terms in the lists of DEGs previously identified for the two expression levels. Comparison of GO terms enriched only in one of the levels or in both. Calculation of the semantic similarity score between the lists of enriched GO terms coming from the two expression levels. Visual examination and comparison of the enriched terms with heatmaps, radar plots and barplots.
 	"""
 	
-	bioc = "tRanslatome" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tRanslatome_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tRanslatome/tRanslatome_1.40.0.tar.gz"]
+	bioc = "tRanslatome"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="60a6ec88eb787450bf5aafe22ec6d58308eabc9d979aabcd954c5ca75e55cd21")
+	version("1.46.0", commit="0750343da6866d52b73d8f57a8d9d83c4cebc9b9")
+	version("1.40.0", commit="cc9f72ee787314688cd92f2fc355ab6c3b5f4c15")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

@@ -12,11 +12,10 @@ class RChipseqr(RPackage):
 	ChIPseqR identifies protein binding sites from ChIP-seq and nucleosome positioning experiments. The model used to describe binding events was developed to locate nucleosomes but should flexible enough to handle other types of experiments as well.
 	"""
 	
-	bioc = "ChIPseqR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPseqR_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPseqR/ChIPseqR_1.56.0.tar.gz"]
+	bioc = "ChIPseqR"
 
-	version("1.62.0", tag="RELEASE_3_21")
-	version("1.56.0", sha256="1672238b11a32e9b4b15e83b17a6f5de918b1cf153785e0ab5d8d6cfc5163dd4")
+	version("1.62.0", commit="089a66d6574c8c36ada3c2d076ecfb693a407899")
+	version("1.56.0", commit="b474bac0e805ee7c715151a368349bffb4f182d8")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

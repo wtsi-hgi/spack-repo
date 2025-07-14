@@ -13,10 +13,9 @@ class RRisa(RPackage):
 	"""
 	
 	homepage = "http://www.isa-tools.org/"
-	bioc = "Risa" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Risa_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Risa/Risa_1.44.0.tar.gz"]
+	bioc = "Risa"
 
-	version("1.44.0", sha256="58b0cbf8382040a2cc9842c870019e59285a3ee8f0784edf75ae1eaa49271890")
+	version("1.44.0", commit="447ce5a1bbe4f6d046df0b9b951fa10ca97ee665")
 
 	depends_on("r@2.0.9:", type=("build", "run"))
 	depends_on("r-biobase@2.4:", type=("build", "run"))

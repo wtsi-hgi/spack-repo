@@ -12,11 +12,10 @@ class RTracktables(RPackage):
 	Methods to create complex IGV genome browser sessions and dynamic IGV reports in HTML pages.
 	"""
 	
-	bioc = "tracktables" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tracktables_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tracktables/tracktables_1.36.0.tar.gz"]
+	bioc = "tracktables"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="04c330873c2053308384485c8b3acede4433eb945e3e1243718fd2ab1a964445")
+	version("1.42.0", commit="81185d0d59f7d3cb86195bfb6b8fe446d68e2302")
+	version("1.36.0", commit="8291a0a6aea9a55b4443a704fec74e323d265abb")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

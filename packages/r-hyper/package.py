@@ -13,11 +13,10 @@ class RHyper(RPackage):
 	"""
 	
 	homepage = "https://github.com/montilab/hypeR"
-	bioc = "hypeR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hypeR_2.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hypeR/hypeR_2.0.0.tar.gz"]
+	bioc = "hypeR"
 
-	version("2.6.0", tag="RELEASE_3_21")
-	version("2.0.0", sha256="1fd5c05c33c455c5530ef4d8e9f5b809cea52b07b1623186132f09b93099b32b")
+	version("2.6.0", commit="b431837964c916fa670aac653f94bf1043e71f94")
+	version("2.0.0", commit="cc8ec82448503fee7612448724318b1a95a777a1")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

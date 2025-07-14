@@ -12,11 +12,10 @@ class RGenestructuretools(RPackage):
 	GeneStructureTools can be used to create in silico alternative splicing events, and analyse potential effects this has on functional gene products.
 	"""
 	
-	bioc = "GeneStructureTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneStructureTools_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneStructureTools/GeneStructureTools_1.22.0.tar.gz"]
+	bioc = "GeneStructureTools"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="c32fcc0e2fb7a514e9ce5a4c34736f6048f093618ab48cea220df7060538831e")
+	version("1.28.0", commit="f23a47c17e99f3ae0f5a94dbbe405754ed11596e")
+	version("1.22.0", commit="81b9c5ec56162e53894144abf25b951b78df1c43")
 
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

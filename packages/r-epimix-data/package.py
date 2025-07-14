@@ -12,11 +12,10 @@ class REpimixData(RPackage):
 	Supporting data for the EpiMix R package. It include: - HM450_lncRNA_probes.rda - HM450_miRNA_probes.rda - EPIC_lncRNA_probes.rda - EPIC_miRNA_probes.rda - EpigenomeMap.rda - LUAD.sample.annotation - TCGA_BatchData - MET.data - mRNA.data - microRNA.data - lncRNA.data - Sample_EpiMixResults_lncRNA - Sample_EpiMixResults_miRNA - Sample_EpiMixResults_Regular - Sample_EpiMixResults_Enhancer - lncRNA expression data of tumors from TCGA that are stored in the ExperimentHub.
 	"""
 	
-	bioc = "EpiMix.data" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/EpiMix.data_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/EpiMix.data/EpiMix.data_1.4.0.tar.gz"]
+	bioc = "EpiMix.data"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="a591facc097ee811e82d574f3b37ed7bafca8c9c14c9fc75b76499bda4440c97")
+	version("1.10.0", commit="14ef6c9a4c7b15eca04f82b9c7d86c7a9484fad5")
+	version("1.4.0", commit="6c2b70c286d8d95fbf9edea769230cc59e2b4ab8")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-experimenthub@0.99.6:", type=("build", "run"))

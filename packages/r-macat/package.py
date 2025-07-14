@@ -12,10 +12,9 @@ class RMacat(RPackage):
 	This library contains functions to investigate links between differential gene expression and the chromosomal localization of the genes. MACAT is motivated by the common observation of phenomena involving large chromosomal regions in tumor cells. MACAT is the implementation of a statistical approach for identifying significantly differentially expressed chromosome regions. The functions have been tested on a publicly available data set about acute lymphoblastic leukemia (Yeoh et al.Cancer Cell 2002), which is provided in the library 'stjudem'.
 	"""
 	
-	bioc = "macat" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/macat_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/macat/macat_1.76.0.tar.gz"]
+	bioc = "macat"
 
-	version("1.76.0", sha256="c87f4864a94ba24961c33b670a24d95ad046c1ff1ee61ae517b72b685780b4f6")
+	version("1.76.0", commit="eb279b231e54459efd7e8ab1dd9be1cd035e3b56")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-annotate", type=("build", "run"))

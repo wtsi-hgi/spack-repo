@@ -13,11 +13,10 @@ class RWeberdivechalcdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/lmweber/WeberDivechaLCdata"
-	bioc = "WeberDivechaLCdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/WeberDivechaLCdata_1.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/WeberDivechaLCdata/WeberDivechaLCdata_1.4.1.tar.gz"]
+	bioc = "WeberDivechaLCdata"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.1", sha256="5cbbd9d9d9adb9110ca54d4950b2838ec5dd4c5da640359889dc3a0df5219a03")
+	version("1.10.0", commit="8133353967ea7b2bcfd996fe367c392ade76141c")
+	version("1.4.1", commit="45c40fdcdc6aa99df5338296d12f89cd3bc48a59")
 	version("1.4.0", md5="3b75c693f86ed228e2b7816872cfe4b7")
 
 	depends_on("r-experimenthub", type=("build", "run"))

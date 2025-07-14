@@ -13,11 +13,10 @@ class RExtrachips(RPackage):
 	"""
 	
 	homepage = "https://github.com/smped/extraChIPs"
-	bioc = "extraChIPs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/extraChIPs_1.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/extraChIPs/extraChIPs_1.6.1.tar.gz"]
+	bioc = "extraChIPs"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.1", sha256="9a66fcd6c22f231a27d3f341b102e7355faaba892304ba13bce10ea430a86e99")
+	version("1.12.0", commit="73770eea0d1832812235f5f5fbd35f3c04430f18")
+	version("1.6.1", commit="fb27d0b4aeac210ee5a27865e339567211b65250")
 
 	depends_on("r-biocparallel", type=("build", "run"))
 	depends_on("r@4.2:", type=("build", "run"))

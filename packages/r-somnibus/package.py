@@ -13,11 +13,10 @@ class RSomnibus(RPackage):
 	"""
 	
 	homepage = "https://github.com/kaiqiong/SOMNiBUS"
-	bioc = "SOMNiBUS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SOMNiBUS_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SOMNiBUS/SOMNiBUS_1.10.0.tar.gz"]
+	bioc = "SOMNiBUS"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="4f464b57f1b26664210e3b43072969ec4eb77f6f1c7b0b15149692994318ba89")
+	version("1.16.0", commit="711d6d7795e0cf945e5a36760c1eff1248f41991")
+	version("1.10.0", commit="c51922bb810382cb16cb8458216a7189843534f2")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

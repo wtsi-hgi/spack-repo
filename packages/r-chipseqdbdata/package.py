@@ -12,11 +12,10 @@ class RChipseqdbdata(RPackage):
 	Sorted and indexed BAM files for ChIP-seq libraries, for use in the chipseqDB workflow. BAM indices are also included.
 	"""
 	
-	bioc = "chipseqDBData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/chipseqDBData_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/chipseqDBData/chipseqDBData_1.18.0.tar.gz"]
+	bioc = "chipseqDBData"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="80188eb109bbfdefb6c05aeb9811c4af41cec47a029a378cb817ad665c218684")
+	version("1.24.0", commit="67266988cdf0e1d5a5a1f2e613c053b80a09ee36")
+	version("1.18.0", commit="97dccfe92359c6254faac81e5cfd2d3ea6ec14e7")
 
 	depends_on("r-annotationhub", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

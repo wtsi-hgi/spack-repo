@@ -12,10 +12,9 @@ class RYeastgsdata(RPackage):
 	A collection of so-called gold (and other) standard data sets
 	"""
 	
-	bioc = "yeastGSData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/yeastGSData_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/yeastGSData/yeastGSData_0.40.0.tar.gz"]
+	bioc = "yeastGSData"
 
-	version("0.46.0", tag="RELEASE_3_21")
-	version("0.40.0", sha256="2cbc2f1a96eb5616208b4db04c7ab8330a91e52b8c761a7962ddacbe28576e44")
+	version("0.46.0", commit="10ec2b76145ad725a7b6b2d81cd6f567227a553f")
+	version("0.40.0", commit="748ef20b868cc075342bd9ca06033ac25a25bdbd")
 
 

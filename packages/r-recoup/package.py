@@ -13,11 +13,10 @@ class RRecoup(RPackage):
 	"""
 	
 	homepage = "https://github.com/pmoulos/recoup"
-	bioc = "recoup" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/recoup_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/recoup/recoup_1.30.0.tar.gz"]
+	bioc = "recoup"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="7c26314ff1d0f12edab6f8773e6c0f30c98afd46bbd7d080ae3c74b517be53b0")
+	version("1.36.0", commit="8a4864d75a5c45ca3c0b55ce4f2d3b0f1b76c384")
+	version("1.30.0", commit="0d1e96b2feff097c41268ec5190e0337b2d4ce9f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

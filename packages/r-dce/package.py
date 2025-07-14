@@ -13,11 +13,10 @@ class RDce(RPackage):
 	"""
 	
 	homepage = "https://github.com/cbg-ethz/dce"
-	bioc = "dce" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dce_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dce/dce_1.10.0.tar.gz"]
+	bioc = "dce"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="2ce61401088157306407c4c7e8c4c4bb07b7eccc9e884cf30f30b04b8409d077")
+	version("1.16.0", commit="35a88441b1012d01122daa61d5e16e3a2902b312")
+	version("1.10.0", commit="fc013c62c32c8b601117440d2da9b62065202e0c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

@@ -13,11 +13,10 @@ class RVcfarray(RPackage):
 	"""
 	
 	homepage = "https://github.com/Liubuntu/VCFArray"
-	bioc = "VCFArray" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VCFArray_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VCFArray/VCFArray_1.18.0.tar.gz"]
+	bioc = "VCFArray"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="10a87023dd74fe794e8445f4727d230738cdb0df757f9166be73479b32b44d2c")
+	version("1.24.0", commit="b36ef193d108f41c3c5dc031d6e36913b11240b3")
+	version("1.18.0", commit="83c4b58b7b18d128953ff0eeb43b41d5aef54fa2")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

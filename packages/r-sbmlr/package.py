@@ -13,11 +13,10 @@ class RSbmlr(RPackage):
 	"""
 	
 	homepage = "http://epbi-radivot.cwru.edu/SBMLR/SBMLR.html"
-	bioc = "SBMLR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SBMLR_1.98.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SBMLR/SBMLR_1.98.0.tar.gz"]
+	bioc = "SBMLR"
 
-	version("2.4.0", tag="RELEASE_3_21")
-	version("1.98.0", sha256="2abcd86c8baac8cea1698a321cb996dea62909b7407cadc793343bfef2cf90b2")
+	version("2.4.0", commit="ac2b6a556a842d12677b89ac75b06250a7450ed1")
+	version("1.98.0", commit="f2c95a07de1f01b2e3541a90fc7e4bd88497818a")
 
 	depends_on("r-xml", type=("build", "run"))
 	depends_on("r-desolve", type=("build", "run"))

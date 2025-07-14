@@ -12,11 +12,10 @@ class RIoniser(RPackage):
 	IONiseR provides tools for the quality assessment of Oxford Nanopore MinION data. It extracts summary statistics from a set of fast5 files and can be used either before or after base calling.  In addition to standard summaries of the read-types produced, it provides a number of plots for visualising metrics relative to experiment run time or spatially over the surface of a flowcell.
 	"""
 	
-	bioc = "IONiseR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IONiseR_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IONiseR/IONiseR_2.26.0.tar.gz"]
+	bioc = "IONiseR"
 
-	version("2.32.0", tag="RELEASE_3_21")
-	version("2.26.0", sha256="3fbf3b807cbe71b635f1e917f370cc398bf6ec704b7372ae56fa4e40302ca9f8")
+	version("2.32.0", commit="75acd1753d1588d8fcd82136b404adc69840cb3f")
+	version("2.26.0", commit="44d1bbb56f6d56665ec9747421f8f4cabcf47c60")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-rhdf5", type=("build", "run"))

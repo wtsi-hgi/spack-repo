@@ -12,11 +12,10 @@ class RGgtreedendro(RPackage):
 	Offers a set of 'autoplot' methods to visualize tree-like structures (e.g., hierarchical clustering and classification/regression trees) using 'ggtree'. You can adjust graphical parameters using grammar of graphic syntax and integrate external data to the tree.
 	"""
 	
-	bioc = "ggtreeDendro" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggtreeDendro_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggtreeDendro/ggtreeDendro_1.4.0.tar.gz"]
+	bioc = "ggtreeDendro"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="ace77cc34d998168e516ef377b563d49d9d8895135fdc6cdb9359544f6b2df3e")
+	version("1.10.0", commit="aac65c04319be43d5b5c3c83c40f0cfec417d3f6")
+	version("1.4.0", commit="32d96cd6f0924d4a786b035eddc9a9ef914ce7bd")
 
 	depends_on("r-ggtree@3.5.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

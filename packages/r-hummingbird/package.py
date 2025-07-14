@@ -12,11 +12,10 @@ class RHummingbird(RPackage):
 	A package for detecting differential methylation. It exploits a Bayesian hidden Markov model that incorporates location dependence among genomic loci, unlike most existing methods that assume independence among observations. Bayesian priors are applied to permit information sharing across an entire chromosome for improved power of detection. The direct output of our software package is the best sequence of methylation states, eliminating the use of a subjective, and most of the time an arbitrary, threshold of p-value for determining significance. At last, our methodology does not require replication in either or both of the two comparison groups.
 	"""
 	
-	bioc = "hummingbird" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hummingbird_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hummingbird/hummingbird_1.12.0.tar.gz"]
+	bioc = "hummingbird"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="108e6b1ac9a742a941e15d1894d2706f1312138fc40f7c2d6ed7d2ea5b6debc2")
+	version("1.18.0", commit="4455f7fc59522df1b2fef52f0cabd07c4125ad29")
+	version("1.12.0", commit="8ba9af263469003d090e9d746eb24a893dabf59a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

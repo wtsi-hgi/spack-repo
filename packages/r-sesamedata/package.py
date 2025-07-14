@@ -12,11 +12,10 @@ class RSesamedata(RPackage):
 	Provides supporting annotation and test data for SeSAMe package. This includes chip tango addresses, mapping information, performance annotation, and trained predictor for Infinium array data. This package provides user access to essential annotation data for working with many generations of the Infinium DNA methylation array. Current we support human array (HM27, HM450, EPIC), mouse array (MM285) and the HorvathMethylChip40 (Mammal40) array.
 	"""
 	
-	bioc = "sesameData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/sesameData_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/sesameData/sesameData_1.20.0.tar.gz"]
+	bioc = "sesameData"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="5cbed033562b8394ae6f5a7c22935ae46cec51f1765c349dea31716a1b64bd28")
+	version("1.26.0", commit="e4c750cb34eef5779fb62b09cadb4260ba944ecc")
+	version("1.20.0", commit="ff46e9d52373588a354043bc4a9427b582809884")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

@@ -13,11 +13,10 @@ class RDapardata(RPackage):
 	"""
 	
 	homepage = "http://www.prostar-proteomics.org/"
-	bioc = "DAPARdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DAPARdata_1.32.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DAPARdata/DAPARdata_1.32.1.tar.gz"]
+	bioc = "DAPARdata"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.1", sha256="27436b254cf9817c7c0653dc7e6e0fe939b6b358b4437bc76d595b197ec191c7")
+	version("1.38.0", commit="aa19b73988a16f5934ee816d001b017256815b70")
+	version("1.32.1", commit="90e20222480e4fee1ad2c2123aac0b7209449573")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-msnbase", type=("build", "run"))

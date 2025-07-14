@@ -13,11 +13,10 @@ class RSinglecelltk(RPackage):
 	"""
 	
 	homepage = "https://www.camplab.net/sctk/"
-	bioc = "singleCellTK" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/singleCellTK_2.12.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/singleCellTK/singleCellTK_2.12.2.tar.gz"]
+	bioc = "singleCellTK"
 
-	version("2.18.1", tag="RELEASE_3_21")
-	version("2.12.2", sha256="0ed13ac32f0ed8a776b13d33192ade4c692d18e0fcfb8461ce75c463ea1187fb")
+	version("2.18.1", commit="f519d00e660f29bc03c4c9ba576bfdeacfb21e12")
+	version("2.12.2", commit="14c92130471e0b7acca579708ab3f32cba20dbca")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

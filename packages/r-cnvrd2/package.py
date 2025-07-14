@@ -13,11 +13,10 @@ class RCnvrd2(RPackage):
 	"""
 	
 	homepage = "https://github.com/hoangtn/CNVrd2"
-	bioc = "CNVrd2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNVrd2_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNVrd2/CNVrd2_1.40.0.tar.gz"]
+	bioc = "CNVrd2"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="d6de0bbf8af5576776e83739a74a0fa38732b983267e194ea61f64c59ecdc728", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNVrd2_1.40.0.tar.gz")
+	version("1.46.0", commit="a9e11c47d973d7007a502c23bebbaa34542f59ff")
+	version("1.40.0", commit="497de63b2ef1328821b2d5873fb62f99cdabe1cc")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-variantannotation", type=("build", "run"))

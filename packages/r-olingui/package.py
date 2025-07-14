@@ -13,11 +13,10 @@ class ROlingui(RPackage):
 	"""
 	
 	homepage = "http://olin.sysbiolab.eu"
-	bioc = "OLINgui" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OLINgui_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OLINgui/OLINgui_1.76.0.tar.gz"]
+	bioc = "OLINgui"
 
-	version("1.82.0", tag="RELEASE_3_21")
-	version("1.76.0", sha256="e7985a59139df623f1dcaa338eaa6f94f407ba31d98fd4eb31361ca2dc6b3b1e")
+	version("1.82.0", commit="6d53023c0e790449453c369b7d6ac481dc5e5b62")
+	version("1.76.0", commit="f7be69d829b748bb52dac3c310b552a543cae18e")
 
 	depends_on("r@2:", type=("build", "run"))
 	depends_on("r-olin", type=("build", "run"))

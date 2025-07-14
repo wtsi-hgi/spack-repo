@@ -12,11 +12,10 @@ class RSangerseqr(RPackage):
 	This package contains several tools for analyzing Sanger Sequencing data files in R, including reading .scf and .ab1 files, making basecalls and plotting chromatograms.
 	"""
 	
-	bioc = "sangerseqR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sangerseqR_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sangerseqR/sangerseqR_1.38.0.tar.gz"]
+	bioc = "sangerseqR"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="234243afead70c7d9b4424b0484c8825ac38a1e24278e53c7ba2d6eafa96efed")
+	version("1.44.0", commit="64db9d2b0d841c5d8dd0336329ceedc91f975d96")
+	version("1.38.0", commit="c460464a3f73eefd77a5ffc44e3d58d4204443c1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

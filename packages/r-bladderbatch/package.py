@@ -12,11 +12,10 @@ class RBladderbatch(RPackage):
 	This package contains microarray gene expression data on 57 bladder samples from 5 batches. The data are used as an illustrative example for the sva package.
 	"""
 	
-	bioc = "bladderbatch" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/bladderbatch_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/bladderbatch/bladderbatch_1.40.0.tar.gz"]
+	bioc = "bladderbatch"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="74e7a300c2d2835f0dc82d70f9e90af55e7a5d248e7364a80b9e6bdd57dbafa5")
+	version("1.46.0", commit="4545572d00e852e1cd33c71c71e511e3e12b561e")
+	version("1.40.0", commit="ac1635f99901b02a8c832fe98facb0a687845196")
 
 	depends_on("r-biobase", type=("build", "run"))
 

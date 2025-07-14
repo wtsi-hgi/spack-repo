@@ -12,11 +12,10 @@ class RGeneselectmmd(RPackage):
 	Gene selection based on a mixture of marginal distributions.
 	"""
 	
-	bioc = "GeneSelectMMD" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneSelectMMD_2.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneSelectMMD/GeneSelectMMD_2.46.0.tar.gz"]
+	bioc = "GeneSelectMMD"
 
-	version("2.52.0", tag="RELEASE_3_21")
-	version("2.46.0", sha256="2ab522ca336f948b56e8811640eeb0f67ef12dc79bf924083408b755906fa925")
+	version("2.52.0", commit="8fd2d0b42414555270680b6ea29ef433c8159eae")
+	version("2.46.0", commit="1000d0f9dc9841498a1281f4975df956af19eb69")
 
 	depends_on("r@2.13.2:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

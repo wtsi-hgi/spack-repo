@@ -12,11 +12,10 @@ class RPviz(RPackage):
 	Pviz adapts the Gviz package for protein sequences and data.
 	"""
 	
-	bioc = "Pviz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Pviz_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Pviz/Pviz_1.36.0.tar.gz"]
+	bioc = "Pviz"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="8aa64a7d7253553b2d66c8754f62c51b0e3005553a9c7384f2b70ac4bc7e4f9d")
+	version("1.42.0", commit="2ae4e5b5aa56575be531024ea272189c7623a56f")
+	version("1.36.0", commit="a1df6d9ad15e41a24dc8717a9d89ef69f755a551")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-gviz@1.7.10:", type=("build", "run"))

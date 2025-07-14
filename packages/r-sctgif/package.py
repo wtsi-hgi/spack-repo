@@ -12,11 +12,10 @@ class RSctgif(RPackage):
 	scTGIF connects the cells and the related gene functions without cell type label.
 	"""
 	
-	bioc = "scTGIF" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scTGIF_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scTGIF/scTGIF_1.16.0.tar.gz"]
+	bioc = "scTGIF"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="202714ff5a7bf32b0993a7e88ed2f9c81b107acc3bb743bb0fe2f5f786c6bfe7")
+	version("1.22.0", commit="94d51daa579479de906d2f4746c314fdfe86939b")
+	version("1.16.0", commit="f916671c7ab8cc4362b8a0de15c27f30fd1f768d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-gseabase", type=("build", "run"))

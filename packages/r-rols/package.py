@@ -13,11 +13,10 @@ class RRols(RPackage):
 	"""
 	
 	homepage = "http://lgatto.github.io/rols/"
-	bioc = "rols" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rols_2.30.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rols/rols_2.30.2.tar.gz"]
+	bioc = "rols"
 
-	version("3.4.0", tag="RELEASE_3_21")
-	version("2.30.2", sha256="4b00441519faf003030c2deec30f4c1a6299a58e79a4ebc47a485cacc39519ba")
+	version("3.4.0", commit="c420652788760b5781c4eeffcb45f1e672c40dd7")
+	version("2.30.2", commit="8b7efefc3038c430adba2c56a2e21227b3da5d3d")
 
 	depends_on("r-httr2", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

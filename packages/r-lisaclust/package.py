@@ -13,11 +13,10 @@ class RLisaclust(RPackage):
 	"""
 	
 	homepage = "https://ellispatrick.github.io/lisaClust/"
-	bioc = "lisaClust" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lisaClust_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lisaClust/lisaClust_1.10.1.tar.gz"]
+	bioc = "lisaClust"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.1", sha256="f3d511fa8af7260b76849c13a2e1d7c495548f1bf003d202588638b0a8deb8b2")
+	version("1.16.0", commit="5a5e9b120b75ada5942bfaba15ecb60c95682704")
+	version("1.10.1", commit="9353dfac6d905685981539389f805bde99ddfe8a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

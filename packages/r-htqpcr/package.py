@@ -13,11 +13,10 @@ class RHtqpcr(RPackage):
 	"""
 	
 	homepage = "http://www.ebi.ac.uk/bertone/software"
-	bioc = "HTqPCR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HTqPCR_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HTqPCR/HTqPCR_1.56.0.tar.gz"]
+	bioc = "HTqPCR"
 
-	version("1.62.0", tag="RELEASE_3_21")
-	version("1.56.0", sha256="15d0b88089ef92129a0c6834fbd66535cab4f5ef17c61f7b6910af19cd708e91")
+	version("1.62.0", commit="d2e6479663aea1a32c1b56e9f9cee1ba95d7006d")
+	version("1.56.0", commit="cba77c7a16425bb6a0e239807af9bb817d00e492")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

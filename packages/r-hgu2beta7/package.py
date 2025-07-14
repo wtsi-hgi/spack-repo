@@ -12,11 +12,10 @@ class RHgu2beta7(RPackage):
 	Annotation data file for hgu2beta7 assembled using data from public data repositories
 	"""
 	
-	bioc = "hgu2beta7" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hgu2beta7_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/hgu2beta7/hgu2beta7_1.42.0.tar.gz"]
+	bioc = "hgu2beta7"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="d731d63655ec8e2d8ca2af2b2fb4e567791144c3bd3c2578f5c603731a91bcf7", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hgu2beta7_1.42.0.tar.gz")
+	version("1.48.0", commit="7525d2410fe379c5fad89e6c1619d8dd4a416772")
+	version("1.42.0", commit="04e83dd3985a5cc7244fc88c6ab47a3138e00439")
 
 	depends_on("r@2:", type=("build", "run"))
 

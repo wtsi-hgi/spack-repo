@@ -12,11 +12,10 @@ class RRmmquant(RPackage):
 	RNA-Seq is currently used routinely, and it provides accurate information on gene transcription. However, the method cannot accurately estimate duplicated genes expression. Several strategies have been previously used, but all of them provide biased results. With Rmmquant, if a read maps at different positions, the tool detects that the corresponding genes are duplicated; it merges the genes and creates a merged gene. The counts of ambiguous reads is then based on the input genes and the merged genes. Rmmquant is a drop-in replacement of the widely used tools findOverlaps and featureCounts that handles multi-mapping reads in an unabiased way.
 	"""
 	
-	bioc = "Rmmquant" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rmmquant_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rmmquant/Rmmquant_1.20.0.tar.gz"]
+	bioc = "Rmmquant"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="84c19278b030bcdc0bc00be68bfddc8e2a603e738e2e41b6a1ff512fe29223a3")
+	version("1.26.0", commit="7b3d5f846a1d2a3695251562cad5981ec4fd6a24")
+	version("1.20.0", commit="89552c3bce1ef822ce28e043628a639ea6b5d3f1")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

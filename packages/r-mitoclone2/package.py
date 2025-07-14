@@ -13,11 +13,10 @@ class RMitoclone2(RPackage):
 	"""
 	
 	homepage = "https://github.com/benstory/mitoClone2"
-	bioc = "mitoClone2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mitoClone2_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mitoClone2/mitoClone2_1.8.1.tar.gz"]
+	bioc = "mitoClone2"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.1", sha256="26a3d2bc8dc6d3800476cd7ce6915f2a375b8eec82f58911ece4a604be75f3a3", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mitoClone2_1.8.1.tar.gz")
+	version("1.14.0", commit="9f9dee682be0aaaf22e2e5ed47cc1936a3d898fa")
+	version("1.8.1", commit="e22b9da48dcaeeeb2d55a3631ca32521c8d705bc")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))

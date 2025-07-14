@@ -13,11 +13,10 @@ class RTargetsearch(RPackage):
 	"""
 	
 	homepage = "https://github.com/acinostroza/TargetSearch"
-	bioc = "TargetSearch" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TargetSearch_2.4.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TargetSearch/TargetSearch_2.4.2.tar.gz"]
+	bioc = "TargetSearch"
 
-	version("2.10.0", tag="RELEASE_3_21")
-	version("2.4.2", sha256="98f972d087dde9165f21e276ae3c8ca5beb713cbb9ca29ded742b8f5a4e1cdb8")
+	version("2.10.0", commit="1a62936a14741b0d7956a83ad4b7c4e7488b6f84")
+	version("2.4.2", commit="61967f1d3332665524e6d03d6158aeeb35f97a1e")
 
 	depends_on("r-ncdf4", type=("build", "run"))
 	depends_on("r-assertthat", type=("build", "run"))

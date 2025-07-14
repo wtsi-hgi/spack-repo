@@ -12,11 +12,10 @@ class RSegmenter(RPackage):
 	Chromatin segmentation analysis transforms ChIP-seq data into signals over the genome. The latter represents the observed states in a multivariate Markov model to predict the chromatin's underlying states. ChromHMM, written in Java, integrates histone modification datasets to learn the chromatin states de-novo. The goal of this package is to call chromHMM from within R, capture the output files in an S4 object and interface to other relevant Bioconductor analysis tools. In addition, segmenter provides functions to test, select and visualize the output of the segmentation.
 	"""
 	
-	bioc = "segmenter" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/segmenter_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/segmenter/segmenter_1.8.0.tar.gz"]
+	bioc = "segmenter"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="6135278b542439c565bb6b9cc57013838507b28c389872d6f694c1979112eda7")
+	version("1.14.0", commit="0d67a6b5ec9c6e63930fc7aa3ee8c2b7a0815507")
+	version("1.8.0", commit="92d1bc19d1abe15c99875b3e7f923147bb87aaa1")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-chipseeker", type=("build", "run"))

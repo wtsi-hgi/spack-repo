@@ -13,11 +13,10 @@ class RMosaics(RPackage):
 	"""
 	
 	homepage = "http://groups.google.com/group/mosaics_user_group"
-	bioc = "mosaics" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mosaics_2.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mosaics/mosaics_2.40.0.tar.gz"]
+	bioc = "mosaics"
 
-	version("2.46.0", tag="RELEASE_3_21")
-	version("2.40.0", sha256="059be9cc10690f42bd5031aa17f05a9db0f6d0f1163e6eaf76b63979787225ea")
+	version("2.46.0", commit="536558b9ea33ec274213a3715110316ace0a9ac1")
+	version("2.40.0", commit="b660aa1b0bd99645166ff38313615835ca8db03f")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

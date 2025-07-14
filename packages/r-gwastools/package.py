@@ -13,11 +13,10 @@ class RGwastools(RPackage):
 	"""
 	
 	homepage = "https://github.com/smgogarten/GWASTools"
-	bioc = "GWASTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GWASTools_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GWASTools/GWASTools_1.48.0.tar.gz"]
+	bioc = "GWASTools"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="e8325dbba51b721e946e733bedd600136f0bc4f9aad5e45b79b5fe62386b4fe6")
+	version("1.54.0", commit="9cd2d2d89ad9f4f03cb948a7734696bf5a2d9bb3")
+	version("1.48.0", commit="1eb1398d6183146549c28732ea28ce54beec0bc8")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-gdsfmt", type=("build", "run"))

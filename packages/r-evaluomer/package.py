@@ -13,11 +13,10 @@ class REvaluomer(RPackage):
 	"""
 	
 	homepage = "https://github.com/neobernad/evaluomeR"
-	bioc = "evaluomeR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/evaluomeR_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/evaluomeR/evaluomeR_1.18.0.tar.gz"]
+	bioc = "evaluomeR"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="9100de9cb7bede66d46c94e2415d6e4fa66ab1df7b3431b32b77276fd488d91a")
+	version("1.24.0", commit="8466b97cb0d0711b15d86b2b0e5a0dd31c1e7709")
+	version("1.18.0", commit="183fda4973066a2d42f80812ce6e7023006ee759")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

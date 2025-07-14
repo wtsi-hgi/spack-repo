@@ -12,11 +12,10 @@ class RQplexdata(RPackage):
 	qPLEX-RIME and Full proteome TMT mass spectrometry datasets.
 	"""
 	
-	bioc = "qPLEXdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/qPLEXdata_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/qPLEXdata/qPLEXdata_1.20.0.tar.gz"]
+	bioc = "qPLEXdata"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="aa1fbc8cadbf3831ca182a25c8f8cb07676a5c3b305408244abf548d217fca50")
+	version("1.26.0", commit="d03cb23c5a7dd56aa6f95a45f90241bc78fcd2a5")
+	version("1.20.0", commit="a5d56e2e3bf3f45daa042023e84a7dac0e4c22fd")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-qplexanalyzer", type=("build", "run"))

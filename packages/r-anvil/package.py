@@ -12,10 +12,9 @@ class RAnvil(RPackage):
 	The AnVIL is a cloud computing resource developed in part by the National Human Genome Research Institute. The AnVIL package provides end-user and developer functionality. For the end-user, AnVIL provides fast binary package installation, utitlities for working with Terra / AnVIL table and data resources, and convenient functions for file movement to and from Google cloud storage. For developers, AnVIL provides programatic access to the Terra, Leonardo, Rawls, and Dockstore RESTful programming interface, including helper functions to transform JSON responses to formats more amenable to manipulation in R.
 	"""
 	
-	bioc = "AnVIL" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnVIL_1.14.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnVIL/AnVIL_1.14.2.tar.gz"]
+	bioc = "AnVIL"
 
-	version("1.20.1", tag="RELEASE_3_21")
+	version("1.20.1", commit="4f6556a68a0f9b866824574fd5a1077ff45acc7e")
 	version("1.14.2", sha256="e7be458aaf2e112e0a8ad5e7fef7f11844aeb2699ab8e6a0ea75ece0ab8fd9ed")
 
 	depends_on("r@3.6:", type=("build", "run"))

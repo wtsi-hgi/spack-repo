@@ -12,11 +12,10 @@ class RCrisprvariants(RPackage):
 	CrispRVariants provides tools for analysing the results of a CRISPR-Cas9 mutagenesis sequencing experiment, or other sequencing experiments where variants within a given region are of interest. These tools allow users to localize variant allele combinations with respect to any genomic location (e.g. the Cas9 cut site), plot allele combinations and calculate mutation rates with flexible filtering of unrelated variants.
 	"""
 	
-	bioc = "CrispRVariants" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CrispRVariants_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CrispRVariants/CrispRVariants_1.30.0.tar.gz"]
+	bioc = "CrispRVariants"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="dcb582097d31d008ba1c744e8087723b5d035b50a88ae1776b2e3b6135a05baf")
+	version("1.36.0", commit="f45817dcb6140fbb440fa4f043f0ecc2a77d3b10")
+	version("1.30.0", commit="871c97928733b7676c0c285db0fe07abc18e1cb0")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ggplot2@2.2:", type=("build", "run"))

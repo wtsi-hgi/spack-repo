@@ -12,10 +12,9 @@ class RTnbcCms(RPackage):
 	This package implements a machine learning-based classifier for the assignment of consensus molecular subtypes to TNBC samples. It also provides functions to summarize genomic and clinical characteristics.
 	"""
 	
-	bioc = "TNBC.CMS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TNBC.CMS_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TNBC.CMS/TNBC.CMS_1.18.0.tar.gz"]
+	bioc = "TNBC.CMS"
 
-	version("1.18.0", sha256="20a9190da76166a11e72b4225fff0e7c8d77f44b788658975c2c96bc127edeeb")
+	version("1.18.0", commit="7ce7eb8a112f957b4a3b24bb7873414e12c2613a")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-e1071", type=("build", "run"))

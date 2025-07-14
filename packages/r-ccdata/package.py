@@ -12,11 +12,10 @@ class RCcdata(RPackage):
 	This package contains microarray gene expression data generated from the Connectivity Map build 02 and LINCS l1000. The data are used by the ccmap package to find drugs and drug combinations to mimic or reverse a gene expression signature.
 	"""
 	
-	bioc = "ccdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ccdata_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ccdata/ccdata_1.28.0.tar.gz"]
+	bioc = "ccdata"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="128da39bb276ad0e2da648263afe7ca398a7a6dbf42336557d0e0f0b16e653ef")
+	version("1.34.0", commit="21cb7c92e05765158bf56effb61cfee04abc40f0")
+	version("1.28.0", commit="93125e53e8ae9370742c2c1aaab74fbeac60ce1c")
 
 	depends_on("r@3.3:", type=("build", "run"))
 

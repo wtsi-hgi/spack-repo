@@ -13,11 +13,10 @@ class RHealthycontrolspresencechecker(RPackage):
 	"""
 	
 	homepage = "https://github.com/davidechicco/healthyControlsPresenceChecker"
-	bioc = "healthyControlsPresenceChecker" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/healthyControlsPresenceChecker_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/healthyControlsPresenceChecker/healthyControlsPresenceChecker_1.6.0.tar.gz"]
+	bioc = "healthyControlsPresenceChecker"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="55c47ef108b255911cd60dd92f4efe2c276a0dd755e6e1114bbd01873907f788")
+	version("1.12.0", commit="2d1173ce0c5e9bd5f23ac1a27e9a7dfd2cc256d4")
+	version("1.6.0", commit="741c13127528186748fef1b9dec7c4f0ac2087cd")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))

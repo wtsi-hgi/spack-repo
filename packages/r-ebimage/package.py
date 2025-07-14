@@ -13,11 +13,10 @@ class REbimage(RPackage):
 	"""
 	
 	homepage = "https://github.com/aoles/EBImage"
-	bioc = "EBImage" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EBImage_4.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EBImage/EBImage_4.44.0.tar.gz"]
+	bioc = "EBImage"
 
-	version("4.50.0", tag="RELEASE_3_21")
-	version("4.44.0", sha256="1ebeda2a0a718a8655613e672b6cbaa5592d0cf0dad0b1fa2094964d2c2bb149")
+	version("4.50.0", commit="a01be1545e1d1bc90c331a12670b94446a45a1e0")
+	version("4.44.0", commit="768d8e844308c60bae634fba4ddd5aa4af5fdf19")
 
 	depends_on("r-biocgenerics@0.7.1:", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))

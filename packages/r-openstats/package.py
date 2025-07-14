@@ -13,11 +13,10 @@ class ROpenstats(RPackage):
 	"""
 	
 	homepage = "https://git.io/Jv5w0"
-	bioc = "OpenStats" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OpenStats_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OpenStats/OpenStats_1.14.0.tar.gz"]
+	bioc = "OpenStats"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="fb01b12df339d2fede39a87952557c1df711d9aa3f35710d36de50f1111babf4")
+	version("1.20.0", commit="7b82fcf8180fc870df373a6a848f0b4a2e071d5f")
+	version("1.14.0", commit="3c449fc8bd425bf77b1d770bc93c50e92d15df07")
 
 	depends_on("r-nlme", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

@@ -13,10 +13,9 @@ class RSpidermir(RPackage):
 	"""
 	
 	homepage = "https://github.com/claudiacava/SpidermiR"
-	bioc = "SpidermiR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpidermiR_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpidermiR/SpidermiR_1.32.0.tar.gz"]
+	bioc = "SpidermiR"
 
-	version("1.32.0", sha256="3d3071428cfb05fe9e035fcb51eb27546e1abc4381a9943ae21c6a855810441f")
+	version("1.32.0", commit="02f4a520fef736f5fcc037a6af87c018f2e7a69a")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

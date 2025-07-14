@@ -13,11 +13,10 @@ class RTargetdecoy(RPackage):
 	"""
 	
 	homepage = "https://www.bioconductor.org/packages/TargetDecoy"
-	bioc = "TargetDecoy" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TargetDecoy_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TargetDecoy/TargetDecoy_1.8.0.tar.gz"]
+	bioc = "TargetDecoy"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="4b8227607d39b7e98fd69726f47ab10cfda5c08af21b94359b47fa3583d0c40f")
+	version("1.14.0", commit="1834960b071df999c80a33d4e46a3b7978c92eaf")
+	version("1.8.0", commit="bfb3135b874caa8d88338b9f3d4652bf81ca8ee7")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

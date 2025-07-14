@@ -13,11 +13,10 @@ class RProteodisco(RPackage):
 	"""
 	
 	homepage = "https://github.com/ErasmusMC-CCBC/ProteoDisco"
-	bioc = "ProteoDisco" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ProteoDisco_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ProteoDisco/ProteoDisco_1.8.0.tar.gz"]
+	bioc = "ProteoDisco"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="86b39e65d28ae87a906a56fa79c5396518c3e547378717e84e910d32eb39a409")
+	version("1.14.0", commit="b2805908a85cfde8491d59e193bc1672679d44be")
+	version("1.8.0", commit="678154ab1e7e9865ebc965f9f222a00bff8ce8a2")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.38:", type=("build", "run"))

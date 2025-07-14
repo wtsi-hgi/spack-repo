@@ -12,9 +12,8 @@ class RAlabasterSchemas(RPackage):
 	Stores all schemas required by various alabaster.* packages. No computation should be performed by this package, as that is handled by alabaster.base. We use a separate package instead of storing the schemas in alabaster.base itself, to avoid conflating management of the schemas with code maintenence.
 	"""
 	
-	bioc = "alabaster.schemas" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.schemas_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.schemas/alabaster.schemas_1.2.0.tar.gz"]
+	bioc = "alabaster.schemas"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="c1d74a8560654dcc4bf1254b39bc0e15938387038be9eec91daf1cd72569976b")
+	version("1.8.0", commit="b2fba458dff22406b4ee6588419babfdf01f71c9")
+	version("1.2.0", commit="d2128b2f4ca724d4e2dce2956618d185f0ffa0a0")
 

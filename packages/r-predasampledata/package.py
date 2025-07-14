@@ -12,11 +12,10 @@ class RPredasampledata(RPackage):
 	Sample data for PREDA package. (annotations objects synchronized with GeneAnnot custom CDFs version 2.2.0)
 	"""
 	
-	bioc = "PREDAsampledata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PREDAsampledata_0.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PREDAsampledata/PREDAsampledata_0.42.0.tar.gz"]
+	bioc = "PREDAsampledata"
 
-	version("0.48.0", tag="RELEASE_3_21")
-	version("0.42.0", sha256="4a72f8827f9cc1cabfee9e81c3dc8dfd58fb2cebd4039421ec7a170d1eaa48df")
+	version("0.48.0", commit="dca0d312a2c734671780ebf40498f832edf5a198")
+	version("0.42.0", commit="cab6a54cce6c6bb0ac275a722816d47d32d8bf40")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-preda", type=("build", "run"))

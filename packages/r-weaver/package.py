@@ -12,11 +12,10 @@ class RWeaver(RPackage):
 	This package provides enhancements on the Sweave() function in the base package.  In particular a facility for caching code chunk results is included.
 	"""
 	
-	bioc = "weaver" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/weaver_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/weaver/weaver_1.68.0.tar.gz"]
+	bioc = "weaver"
 
-	version("1.74.0", tag="RELEASE_3_21")
-	version("1.68.0", sha256="f9c2548dcad9d23a952dd8e9650fd690679a3f7f37ec20ca04cfa35d99cf7ff8")
+	version("1.74.0", commit="6dea8b3bb9574a6319a3e33235cb9679ba539e40")
+	version("1.68.0", commit="707e64336ddc7f7d7af0df1550e923bb74bf2770")
 
 	depends_on("r@2.5:", type=("build", "run"))
 	depends_on("r-digest", type=("build", "run"))

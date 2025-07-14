@@ -12,11 +12,10 @@ class RLoomexperiment(RPackage):
 	The LoomExperiment package provide a means to easily convert the Bioconductor "Experiment" classes to loom files and vice versa.
 	"""
 	
-	bioc = "LoomExperiment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LoomExperiment_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LoomExperiment/LoomExperiment_1.20.0.tar.gz"]
+	bioc = "LoomExperiment"
 
-	version("1.26.1", tag="RELEASE_3_21")
-	version("1.20.0", sha256="f3504f85c21760ff83f76c51a5170493add240fd777cd9a4199c165d822b8c57")
+	version("1.26.1", commit="f276ae5ceee6f920a7691545444c64771f4690cd")
+	version("1.20.0", commit="92027674d01f74c0f5ab0b6357ca2c02c2183503")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

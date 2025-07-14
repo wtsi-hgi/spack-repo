@@ -12,11 +12,10 @@ class RMetaseq(RPackage):
 	The probabilities by one-sided NOISeq are combined by Fisher's method or Stouffer's method
 	"""
 	
-	bioc = "metaSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metaSeq_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metaSeq/metaSeq_1.42.0.tar.gz"]
+	bioc = "metaSeq"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="16d0efef162c0ca1dab0448c6d58d52b8594740175cfc1c69a1e3439d0f374f7")
+	version("1.48.0", commit="b01670074d52c0cdbcc9a5154ba716e034161065")
+	version("1.42.0", commit="4b13ebc5a8e5008124f86dd8cd379f1d683a77cf")
 
 	depends_on("r@2.13:", type=("build", "run"))
 	depends_on("r-noiseq", type=("build", "run"))

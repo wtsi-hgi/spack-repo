@@ -12,11 +12,10 @@ class RLintind(RPackage):
 	When we combine gene-editing technology and sequencing technology, we need to reconstruct a lineage tree from alleles generated and calculate the similarity between each pair of groups. FindIndel() and IndelForm() function will help you align each read to reference sequence and generate scar form strings respectively. IndelIdents() function will help you to define a scar form for each cell or read. IndelPlot() function will help you to visualize the distribution of deletion and insertion. TagProcess() function will help you to extract indels for each cell or read. TagDist() function will help you to calculate the similarity between each pair of groups across the indwells they contain. BuildTree() function will help you to reconstruct a tree. PlotTree() function will help you to visualize the tree.
 	"""
 	
-	bioc = "LinTInd" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LinTInd_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LinTInd/LinTInd_1.6.0.tar.gz"]
+	bioc = "LinTInd"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="aaa51af68083825fd6dfc1e43442883a51eb80685b068bf41da166d403a2672e")
+	version("1.12.0", commit="6f017ede6ad55bf75709d111d3d66d5558efd0d3")
+	version("1.6.0", commit="cf761b6c73a965eefac662df46284e5d168926d2")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

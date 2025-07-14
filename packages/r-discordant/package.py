@@ -13,11 +13,10 @@ class RDiscordant(RPackage):
 	"""
 	
 	homepage = "https://github.com/siskac/discordant"
-	bioc = "discordant" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/discordant_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/discordant/discordant_1.26.0.tar.gz"]
+	bioc = "discordant"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="32c0b5f7d6eafa8de9dabd1dcb64aaa166dd81f1e0a360e6d7acba94889d0a12")
+	version("1.32.0", commit="1f073f523ced2b40431b26d48fca0c58c7bb35da")
+	version("1.26.0", commit="d10110d1fcfef5633556c671afa8b5f4d224631b")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

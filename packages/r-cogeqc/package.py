@@ -13,11 +13,10 @@ class RCogeqc(RPackage):
 	"""
 	
 	homepage = "https://github.com/almeidasilvaf/cogeqc"
-	bioc = "cogeqc" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cogeqc_1.6.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cogeqc/cogeqc_1.6.2.tar.gz"]
+	bioc = "cogeqc"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.2", sha256="bd72bf775a4836f7f596390739af8a0a94a02a78aede49721e803f6ecfd51e86")
+	version("1.12.0", commit="3865eea8a57cddecf5331d6994c02b6bfe31bad6")
+	version("1.6.2", commit="173a2b46dff1832cfdf1eae6f9db898e1b6f5fc8")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))

@@ -13,11 +13,10 @@ class RReder(RPackage):
 	"""
 	
 	homepage = "http://genomebiology.com/2012/13/4/R29"
-	bioc = "RedeR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RedeR_2.6.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RedeR/RedeR_2.6.1.tar.gz"]
+	bioc = "RedeR"
 
-	version("3.4.0", tag="RELEASE_3_21")
-	version("2.6.1", sha256="e76f580867e8bedd189d4a06cca48c61f023615863e4f59c6227d2a01f27a8df")
+	version("3.4.0", commit="7a6a9f585de70267e54c9a73df6712ac9f03d0c3")
+	version("2.6.1", commit="0a91264d8282983b97f2ef2beec444b59dc76ad8")
 	version("2.6.0", md5="033b5763d95dc222256a4ef85b7e3a99")
 
 	depends_on("r@4:", type=("build", "run"))

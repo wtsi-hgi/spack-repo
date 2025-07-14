@@ -12,11 +12,10 @@ class RMedme(RPackage):
 	MEDME allows the prediction of absolute and relative methylation levels based on measures obtained by MeDIP-microarray experiments
 	"""
 	
-	bioc = "MEDME" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MEDME_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MEDME/MEDME_1.62.0.tar.gz"]
+	bioc = "MEDME"
 
-	version("1.68.0", tag="RELEASE_3_21")
-	version("1.62.0", sha256="505e7cb16c95d825bae0f69d781dfee8f87885ec4c2449c1c2e2bb7abacbde05")
+	version("1.68.0", commit="3f2d1d9cfe25ed78de81caaaab165ae4004e2d61")
+	version("1.62.0", commit="4158041f39ae364c45319599f4d9bddb91daf889")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

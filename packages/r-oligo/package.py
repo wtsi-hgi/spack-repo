@@ -12,11 +12,10 @@ class ROligo(RPackage):
 	A package to analyze oligonucleotide arrays (expression/SNP/tiling/exon) at probe-level. It currently supports Affymetrix (CEL files) and NimbleGen arrays (XYS files).
 	"""
 	
-	bioc = "oligo" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/oligo_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/oligo/oligo_1.66.0.tar.gz"]
+	bioc = "oligo"
 
-	version("1.72.0", tag="RELEASE_3_21")
-	version("1.66.0", sha256="e6d2b6395e2d73094095fcac6b6271fd48a3c291dc4e5e86e8d45b4f352e165f")
+	version("1.72.0", commit="bced0213e184e46e77e8ef639f334435ded5f8f2")
+	version("1.66.0", commit="e6e72834cb549bc519cdf0a8c6cb3de13e8ec851")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.13.11:", type=("build", "run"))

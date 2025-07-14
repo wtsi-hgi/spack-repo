@@ -12,11 +12,10 @@ class ROmicspca(RPackage):
 	OMICsPCA is an analysis pipeline designed to integrate multi OMICs experiments done on various subjects (e.g. Cell lines, individuals), treatments (e.g. disease/control) or time points and to analyse such integrated data from various various angles and perspectives. In it's core OMICsPCA uses Principal Component Analysis (PCA) to integrate multiomics experiments from various sources and thus has ability to over data insufficiency issues by using the ingegrated data as representatives. OMICsPCA can be used in various application including analysis of overall distribution of OMICs assays across various samples /individuals /time points; grouping assays by user-defined conditions; identification of source of variation, similarity/dissimilarity between assays, variables or individuals.
 	"""
 	
-	bioc = "OMICsPCA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OMICsPCA_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OMICsPCA/OMICsPCA_1.20.0.tar.gz"]
+	bioc = "OMICsPCA"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="3ac2e544374700f86f8e4e37bb73f9dcb25fc4177e245098cfbc5b0066d9b836")
+	version("1.26.0", commit="51d6d49eb8fabe2355d0e27f57e70b7b2684510c")
+	version("1.20.0", commit="fbf1917f41c69e5e6aa16a2690546b5f96d811ef")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-omicspcadata", type=("build", "run"))

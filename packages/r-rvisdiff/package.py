@@ -13,11 +13,10 @@ class RRvisdiff(RPackage):
 	"""
 	
 	homepage = "https://github.com/BioinfoUSAL/Rvisdiff/"
-	bioc = "Rvisdiff" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rvisdiff_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rvisdiff/Rvisdiff_1.0.0.tar.gz"]
+	bioc = "Rvisdiff"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="76a2afecab601bcbfbc0764f6ffaea20593a3cffadc2151d4846482caffd24ea")
+	version("1.6.0", commit="46b3bf79c54bd619bd48c4ff40847366e1eb2b4a")
+	version("1.0.0", commit="31b3d7a5d2cb41bd3d4541b8d75168e32e6d8582")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-edger", type=("build", "run"))

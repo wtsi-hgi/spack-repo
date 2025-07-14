@@ -13,10 +13,9 @@ class RMinet(RPackage):
 	"""
 	
 	homepage = "http://minet.meyerp.com"
-	bioc = "minet" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/minet_3.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/minet/minet_3.60.0.tar.gz"]
+	bioc = "minet"
 
-	version("3.66.0", tag="RELEASE_3_21")
-	version("3.60.0", sha256="85470b4428fcd0f4f37db91efedb35274d3c03f5778cafdd07901ceed9e9629f")
+	version("3.66.0", commit="902efa9808a437c93dc642f9278c2038df52618b")
+	version("3.60.0", commit="3cf4b451b6d96befa967e91eade33d61a37b003e")
 
 	depends_on("r-infotheo", type=("build", "run"))

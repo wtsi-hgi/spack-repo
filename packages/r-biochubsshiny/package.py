@@ -13,11 +13,10 @@ class RBiochubsshiny(RPackage):
 	"""
 	
 	homepage = "https://github.com/Bioconductor/BiocHubsShiny"
-	bioc = "BiocHubsShiny" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocHubsShiny_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocHubsShiny/BiocHubsShiny_1.2.0.tar.gz"]
+	bioc = "BiocHubsShiny"
 
-	version("1.8.1", tag="RELEASE_3_21")
-	version("1.2.0", sha256="72cab04c7ce6742eec96fadf32449a05cead64506d949b16d19eedbbb73ee2eb")
+	version("1.8.1", commit="166f61d62100219c80d9345a8ab9c8032d2b82b2")
+	version("1.2.0", commit="ed13c4354f719102e2718b2a9179e40e32d716d7")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-shiny", type=("build", "run"))

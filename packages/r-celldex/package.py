@@ -13,11 +13,10 @@ class RCelldex(RPackage):
 	"""
 	
 	homepage = "https://github.com/LTLA/celldex"
-	bioc = "celldex" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/celldex_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/celldex/celldex_1.12.0.tar.gz"]
+	bioc = "celldex"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="94db251d15b86c1ff26be9a285640811cfb1abda6d7819b96e3cbcc4636d72b2")
+	version("1.18.0", commit="0a661782b975e8cd96f471e46c7a2037cfd3f9a4")
+	version("1.12.0", commit="7567a3154fa2e919349032e954f9a0d295f453c5")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

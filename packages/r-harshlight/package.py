@@ -13,11 +13,10 @@ class RHarshlight(RPackage):
 	"""
 	
 	homepage = "http://asterion.rockefeller.edu/Harshlight/"
-	bioc = "Harshlight" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Harshlight_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Harshlight/Harshlight_1.74.0.tar.gz"]
+	bioc = "Harshlight"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="a7e33673fae6d158a9b8e837ef631656afdfab837fcab318ce782c0268495ab6")
+	version("1.80.0", commit="9a7ef7428d64ac6573744fd4b67acf339442b372")
+	version("1.74.0", commit="c397a39aa9779f7343c700208572a512ad06c4a4")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

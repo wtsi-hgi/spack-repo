@@ -12,11 +12,10 @@ class RTin(RPackage):
 	The TIN package implements a set of tools for transcriptome instability analysis based on exon expression profiles. Deviating exon usage is studied in the context of splicing factors to analyse to what degree transcriptome instability is correlated to splicing factor expression. In the transcriptome instability correlation analysis, the data is compared to both random permutations of alternative splicing scores and expression of random gene sets.
 	"""
 	
-	bioc = "TIN" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TIN_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TIN/TIN_1.34.0.tar.gz"]
+	bioc = "TIN"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="6b59d43b9d8642160c476b607ee07b25228da37646dc6599e54670d3fb27f36a")
+	version("1.40.0", commit="d31829d20d61582f9ef6c2f0ebae9eefdb245313")
+	version("1.34.0", commit="d6f3adfb8bf178049f1d2c5bcc9c9cb7ab8601cf")
 
 	depends_on("r@2.12:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

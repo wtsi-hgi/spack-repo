@@ -13,11 +13,10 @@ class RFlowsortedCordbloodnorway450k(RPackage):
 	"""
 	
 	homepage = "https://bitbucket.com/kasperdanielhansen/Illumina_CordBlood"
-	bioc = "FlowSorted.CordBloodNorway.450k" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FlowSorted.CordBloodNorway.450k_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FlowSorted.CordBloodNorway.450k/FlowSorted.CordBloodNorway.450k_1.28.0.tar.gz"]
+	bioc = "FlowSorted.CordBloodNorway.450k"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="22661f01c4f2990f619ecee211818017712e23cf1eac57bca311c2aea682199a")
+	version("1.34.0", commit="95eacd1d4dc0a7f633e0cf717fb06ffaf6454a31")
+	version("1.28.0", commit="b9cee45738ff5a791eeef53146d97179f5cf4339")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-minfi@1.21.2:", type=("build", "run"))

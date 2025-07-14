@@ -12,11 +12,10 @@ class RCompran(RPackage):
 	This package is for analysis of SILAC labeled complexome profiling data. It uses peptide table in tab-delimited format as an input and produces ready-to-use tables and plots.
 	"""
 	
-	bioc = "ComPrAn" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ComPrAn_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ComPrAn/ComPrAn_1.10.0.tar.gz"]
+	bioc = "ComPrAn"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="b314d05828ddfbbf17adf9d02e7aa992de05a6318e9c88a156cadcd7b7c68a1b")
+	version("1.16.0", commit="0067bec9e550e97e9645c3d652d2a8a34808f54b")
+	version("1.10.0", commit="d8e8396ba7b2b49ade96dce0b4b100d70edf262b")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

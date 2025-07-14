@@ -13,11 +13,10 @@ class RHerper(RPackage):
 	"""
 	
 	homepage = "https://github.com/RockefellerUniversity/Herper"
-	bioc = "Herper" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Herper_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Herper/Herper_1.12.0.tar.gz"]
+	bioc = "Herper"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="04db137ebec9c03d9d196fc56943e96a04be91bbfb31313a6d18abbf84bb5e0a")
+	version("1.18.0", commit="87b587bdc7d10cb026ba6c837c8ae3998efd0439")
+	version("1.12.0", commit="c18423e50a7ff9c8f4d8da366ea897d101f8ff1f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-reticulate", type=("build", "run"))

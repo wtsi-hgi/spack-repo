@@ -12,11 +12,10 @@ class RGothic(RPackage):
 	This is a Hi-C analysis package using a cumulative binomial test to detect interactions between distal genomic loci that have significantly more reads than expected by chance in Hi-C experiments. It takes mapped paired NGS reads as input and gives back the list of significant interactions for a given bin size in the genome.
 	"""
 	
-	bioc = "GOTHiC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOTHiC_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOTHiC/GOTHiC_1.38.0.tar.gz"]
+	bioc = "GOTHiC"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="c04df3530f83651a0e86ae28079967ce0cfb808cc10de5e5ee3985bb435fcbb1")
+	version("1.44.0", commit="56a80df7eed48d8af5ea1ebd6b339c16efbec207")
+	version("1.38.0", commit="809ce7cbbbf60ce8bc4d1d0d73f7777bd585ced8")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

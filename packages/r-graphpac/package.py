@@ -12,11 +12,10 @@ class RGraphpac(RPackage):
 	Identifies mutational clusters of amino acids in a protein while utilizing the proteins tertiary structure via a graph theoretical model.
 	"""
 	
-	bioc = "GraphPAC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GraphPAC_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GraphPAC/GraphPAC_1.44.0.tar.gz"]
+	bioc = "GraphPAC"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="aa6c81bcb15b6d34115783fb8e00cad4e6b1247724789135455cda82fc46e8b7")
+	version("1.50.0", commit="2e43ebc5f3aadf54704d10bd8459cfb383d1fd9e")
+	version("1.44.0", commit="f5c501d5ead7c1140981de8d82d60a85b0e21ccb")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-ipac", type=("build", "run"))

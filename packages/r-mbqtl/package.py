@@ -13,11 +13,10 @@ class RMbqtl(RPackage):
 	"""
 	
 	homepage = "https://github.com/Mercedeh66/mbQTL"
-	bioc = "mbQTL" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mbQTL_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mbQTL/mbQTL_1.2.0.tar.gz"]
+	bioc = "mbQTL"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="501e5ac9d5faa96cef0efa5469e679fd5fbb04e608a8940adab7b8d764ae4706")
+	version("1.8.0", commit="226f80d5ec98dfe3674a217b054dcb3e5a770a91")
+	version("1.2.0", commit="c8ee64bd0b86af0adba9330c52590b74fed7996e")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-matrixeqtl", type=("build", "run"))

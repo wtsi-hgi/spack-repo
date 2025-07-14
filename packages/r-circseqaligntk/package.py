@@ -13,11 +13,10 @@ class RCircseqaligntk(RPackage):
 	"""
 	
 	homepage = "https://github.com/jsun/CircSeqAlignTk"
-	bioc = "CircSeqAlignTk" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CircSeqAlignTk_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CircSeqAlignTk/CircSeqAlignTk_1.4.0.tar.gz"]
+	bioc = "CircSeqAlignTk"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="3513314a68cd06f3ba4f83ba7b3b32d6ecc00bbbcb79cd22549d2ca8b54d225c")
+	version("1.10.0", commit="a2168788cc892aca3a5a467972c9da0c57959284")
+	version("1.4.0", commit="958204b04d4e70d948f11ed567cb39426f99860e")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

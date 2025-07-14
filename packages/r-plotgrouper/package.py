@@ -13,11 +13,10 @@ class RPlotgrouper(RPackage):
 	"""
 	
 	homepage = "https://jdgagnon.github.io/plotGrouper/"
-	bioc = "plotGrouper" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/plotGrouper_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/plotGrouper/plotGrouper_1.20.0.tar.gz"]
+	bioc = "plotGrouper"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="0d1d93e8b6ab5ff85aef2cf8347c4641b56b910cd63bdcbacbc2f43acdb67b38")
+	version("1.26.0", commit="8ddd36872a0c81c46678c6d1a50fd1bff5b8fee0")
+	version("1.20.0", commit="f2b941bc903fbe092129b45e6b438aa2afb5e9bf")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2@3:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RFourdndata(RPackage):
 	"""
 	
 	homepage = "https://github.com/js2264/fourDNData"
-	bioc = "fourDNData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/fourDNData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/fourDNData/fourDNData_1.2.0.tar.gz"]
+	bioc = "fourDNData"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="e0a778f11f46e0ac915a178a01e4eff37a9f34fdae56e1af49c39be24ea9bf19")
+	version("1.8.0", commit="79cb8b4ca5ea55b0f24b216496c6549e4f9f69d7")
+	version("1.2.0", commit="89ed36401615142ff8be7fdbf887e27dd914499f")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))

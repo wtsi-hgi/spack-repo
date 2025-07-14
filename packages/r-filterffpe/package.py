@@ -12,11 +12,10 @@ class RFilterffpe(RPackage):
 	This package finds and filters artificial chimeric reads specifically generated in next-generation sequencing (NGS) process of formalin-fixed paraffin-embedded (FFPE) tissues. These artificial chimeric reads can lead to a large number of false positive structural variation (SV) calls. The required input is an indexed BAM file of a FFPE sample.
 	"""
 	
-	bioc = "FilterFFPE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FilterFFPE_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FilterFFPE/FilterFFPE_1.12.0.tar.gz"]
+	bioc = "FilterFFPE"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="d081df7ebde6917dde17c99cf1546360a732c23134f10fc6ef87b4626412a563")
+	version("1.18.0", commit="fe0b6cd1aaca4e5571ce3d2f41f055f8b6fbac38")
+	version("1.12.0", commit="d78f5187baee0e0e29bcda1fc43d005cbc3e26c6")
 
 	depends_on("r-foreach", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

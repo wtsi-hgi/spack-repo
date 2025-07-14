@@ -13,11 +13,10 @@ class RLimmagui(RPackage):
 	"""
 	
 	homepage = "http://bioinf.wehi.edu.au/limmaGUI/"
-	bioc = "limmaGUI" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/limmaGUI_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/limmaGUI/limmaGUI_1.78.0.tar.gz"]
+	bioc = "limmaGUI"
 
-	version("1.84.0", tag="RELEASE_3_21")
-	version("1.78.0", sha256="06a92cf6e3e39f242e033a136fbd85f9042d151fc14c736de0d00c2b07395ddf")
+	version("1.84.0", commit="0b791cd628035470acf1e3e701f432ae9cb71498")
+	version("1.78.0", commit="76731c44df19fee093d55939cd599cf412618d5f")
 
 	depends_on("r-limma", type=("build", "run"))
 	depends_on("r-r2html", type=("build", "run"))

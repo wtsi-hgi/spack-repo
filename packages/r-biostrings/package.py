@@ -14,10 +14,9 @@ class RBiostrings(RPackage):
 	sets of sequences."""
 
 	bioc = "Biostrings"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Biostrings_2.70.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Biostrings/Biostrings_2.70.3.tar.gz"]
 
-	version("2.76.0", tag="RELEASE_3_21")
-	version("2.70.3", sha256="451c1e0a3d50f2f85a2d2b5b9688d878c5253d8959f04aa32e9e6bda8875049c")
+	version("2.76.0", commit="2e04124cda03d509d857df228153a45c89840284")
+	version("2.70.3", commit="c213e3561e1ad6b390329d32a543b7e9cd324181")
 	version("2.70.2", md5="05f7ef342dc92d017e36f61bfce48330")
 	version("2.68.0", commit="f28b7838fb8321a9956506b3d2f4af2740bca124")
 	version("2.66.0", commit="3470ca7da798971e2c3a595d8dc8d0d86f14dc53")

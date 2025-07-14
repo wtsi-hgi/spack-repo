@@ -13,11 +13,10 @@ class RLefser(RPackage):
 	"""
 	
 	homepage = "https://github.com/waldronlab/lefser"
-	bioc = "lefser" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/lefser_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/lefser/lefser_1.12.1.tar.gz"]
+	bioc = "lefser"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.1", sha256="157dbfc094dc414ae49baa7b55a3ff48d857a6bb0f189c45509c73726de4dc2b")
+	version("1.18.0", commit="6f4a41256d3be73b6d04bdad660aee21ba212cb1")
+	version("1.12.1", commit="cfb59f8cc993f2b8ea774a9d7d3f95d023983d80")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r@4:", type=("build", "run"))

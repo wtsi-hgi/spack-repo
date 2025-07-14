@@ -12,10 +12,9 @@ class RBayseq(RPackage):
 	This package identifies differential expression in high-throughput 'count' data, such as that derived from next-generation sequencing machines, calculating estimated posterior likelihoods of differential expression (or more complex hypotheses) via empirical Bayesian methods.
 	"""
 	
-	bioc = "baySeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/baySeq_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/baySeq/baySeq_2.36.0.tar.gz"]
+	bioc = "baySeq"
 
-	version("2.42.0", tag="RELEASE_3_21")
+	version("2.42.0", commit="13f566e1cc1f6cb4c18aaf81b93e82da0c9750fc")
 	version("2.36.0", md5="f46b63ebca2bda7c124133149aa7e552")
 
 	depends_on("r@2.3:", type=("build", "run"))

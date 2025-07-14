@@ -13,11 +13,10 @@ class RSwitchde(RPackage):
 	"""
 	
 	homepage = "https://github.com/kieranrcampbell/switchde"
-	bioc = "switchde" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/switchde_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/switchde/switchde_1.28.0.tar.gz"]
+	bioc = "switchde"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="72ffe24b6d2eaac3bea44d205f8e9a862e18eac2f3ac6ccfbf816d7dba245370")
+	version("1.34.0", commit="351dacea10abc18ad50c74bc4a01d26fd35bf283")
+	version("1.28.0", commit="61db86f5c6637db1640b9bc793321600a31cad25")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

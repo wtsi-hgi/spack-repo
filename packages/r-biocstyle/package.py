@@ -13,13 +13,12 @@ class RBiocstyle(RPackage):
 	documents. Package vignettes illustrate use and functionality."""
 
 	bioc = "BiocStyle"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocStyle_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocStyle/BiocStyle_2.30.0.tar.gz"]
 
-	version("2.36.0", tag="RELEASE_3_21")
+	version("2.36.0", commit="6db70853edd81ba798bc5a4667fc67c9ceca49fd")
 	version("2.8.2", commit="3210c19ec1e5e0ed8d5a2d31da990aa47b42dbd8")
 	version("2.6.1", commit="5ff52cbb439a45575d0f58c4f7a83195a8b7337b")
 	version("2.4.1", commit="ef10764b68ac23a3a7a8ec3b6a6436187309c138")
-	version("2.30.0", sha256="9cbae3a879d4ed1e3692111d802193d8facf0a89e0bffa6de05718bb476cf39e")
+	version("2.30.0", commit="48deba5c4d84ea9d236256a673a58ab3f1d6c2cf")
 	version("2.28.0", commit="b358aa5d3f9c68629e9abf50ffceccbf77226ea8")
 	version("2.26.0", commit="add035498bdce76d71a0afa22a063c2d8e5588bc")
 	version("2.24.0", commit="53095b534b7e6c80a33a67b5f2db0db8f00db902")

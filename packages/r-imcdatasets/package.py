@@ -13,11 +13,10 @@ class RImcdatasets(RPackage):
 	"""
 	
 	homepage = "https://github.com/BodenmillerGroup/imcdatasets"
-	bioc = "imcdatasets" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/imcdatasets_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/imcdatasets/imcdatasets_1.10.0.tar.gz"]
+	bioc = "imcdatasets"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="faf6b82b47daca4c6661668a6fdee0dbe864db19ff962f62724bf5d7318a717b")
+	version("1.16.0", commit="829ab88993c8e2d74acba67722062411c7efd139")
+	version("1.10.0", commit="6a4d152857514ecea6a96b70f4f5fc80bb0bd5bf")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

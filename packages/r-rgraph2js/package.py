@@ -12,11 +12,10 @@ class RRgraph2js(RPackage):
 	Generator of web pages which display interactive network/graph visualizations with D3js, jQuery and Raphael.
 	"""
 	
-	bioc = "RGraph2js" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RGraph2js_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RGraph2js/RGraph2js_1.30.0.tar.gz"]
+	bioc = "RGraph2js"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="8c8d1f5d86d5057f2e0206c1b744a858939d6a19d5cea3f01d7d69785d760d30")
+	version("1.36.0", commit="f545d33d24b322aa3869f310bbfe6edbd5ae4c26")
+	version("1.30.0", commit="361a0e921c883d77aff35c3c13a54f13d84a858e")
 
 	depends_on("r-whisker", type=("build", "run"))
 	depends_on("r-rjson", type=("build", "run"))

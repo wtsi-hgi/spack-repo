@@ -13,11 +13,10 @@ class RSubseq(RPackage):
 	"""
 	
 	homepage = "http://github.com/StoreyLab/subSeq"
-	bioc = "subSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/subSeq_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/subSeq/subSeq_1.32.0.tar.gz"]
+	bioc = "subSeq"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="02c0f0531375c2dadf3b1c86859886eb469bb7595f7e8deb5e5ea5c355cf0878")
+	version("1.38.0", commit="e7d552794fd72a4310d5fd1e4ff221d152c8d246")
+	version("1.32.0", commit="ada9c5be8d3068e1de56eeaf4132c204cdc1e9e1")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

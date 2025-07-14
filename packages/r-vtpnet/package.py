@@ -12,11 +12,10 @@ class RVtpnet(RPackage):
 	variant-transcription factor-phenotype networks, inspired by Maurano et al., Science (2012), PMID 22955828
 	"""
 	
-	bioc = "vtpnet" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vtpnet_0.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vtpnet/vtpnet_0.42.0.tar.gz"]
+	bioc = "vtpnet"
 
-	version("0.48.0", tag="RELEASE_3_21")
-	version("0.42.0", sha256="4f2520efa3c0bb0cc9272d63d3a20d72b8bbe50cf1dcc34d588ab1353edea014")
+	version("0.48.0", commit="2c9d36f770981e3f86218f91b3a1bc57a3fef81f")
+	version("0.42.0", commit="6460d61018317841870d6acbfec5320263d5a12b")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

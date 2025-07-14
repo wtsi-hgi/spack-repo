@@ -13,11 +13,10 @@ class RScbubbletree(RPackage):
 	"""
 	
 	homepage = "https://github.com/snaketron/scBubbletree"
-	bioc = "scBubbletree" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scBubbletree_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scBubbletree/scBubbletree_1.4.0.tar.gz"]
+	bioc = "scBubbletree"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="52ec5264b10e4b8df9e56a31f654adc102e99c66455fb9bbce4c3ab51ae79533")
+	version("1.10.0", commit="1263d9441eec4e1acc1166bdbcb6ad60a043c172")
+	version("1.4.0", commit="67e4507625a55a0598da3da0104be6b20cd43d93")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-reshape2", type=("build", "run"))

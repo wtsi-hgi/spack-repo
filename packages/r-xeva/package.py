@@ -12,11 +12,10 @@ class RXeva(RPackage):
 	The Xeva package provides efficient and powerful functions for patient-drived xenograft (PDX) based pharmacogenomic data analysis. This package contains a set of functions to perform analysis of patient-derived xenograft data. This package was developed by the BHKLab, for further information please see our documentation.
 	"""
 	
-	bioc = "Xeva" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Xeva_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Xeva/Xeva_1.18.0.tar.gz"]
+	bioc = "Xeva"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="d6fdf4df11282c232ad5ad9b9f41ca8440786cd386f35c0dd3c00de3140bd9e3")
+	version("1.24.0", commit="fd3bc64fdf78a0a242a41fa69f86a51e5a4e679b")
+	version("1.18.0", commit="203e568c8acc54c347fb2f386c5d653d33400c28")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-bbmisc", type=("build", "run"))

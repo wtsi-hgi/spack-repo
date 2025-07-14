@@ -12,11 +12,10 @@ class RRtcgaMutations(RPackage):
 	Package provides mutations datasets from The Cancer Genome Atlas Project for all cohorts types from http://gdac.broadinstitute.org/. Mutations data format is explained here https://wiki.nci.nih.gov/display/TCGA/Mutation+Annotation+Format+(MAF)+Specification. There is extra one column with patients' barcodes. Data from 2015-11-01 snapshot.
 	"""
 	
-	bioc = "RTCGA.mutations" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.mutations_20151101.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.mutations/RTCGA.mutations_20151101.32.0.tar.gz"]
+	bioc = "RTCGA.mutations"
 
-	version("20151101.38.0", tag="RELEASE_3_21")
-	version("20151101.32.0", sha256="23f477e1d0132cda135b18a04e567212dadaf7b628f9c7680e89e49c662f46d8")
+	version("20151101.38.0", commit="1d21fef8cb07410d6b82f3e5d7badb4ff3fc767a")
+	version("20151101.32.0", commit="33cfd4eac108e61346b5a433b8c413ea625e0391")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-rtcga", type=("build", "run"))

@@ -13,11 +13,10 @@ class RTarget(RPackage):
 	"""
 	
 	homepage = "https://github.com/MahShaaban/target"
-	bioc = "target" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/target_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/target/target_1.16.0.tar.gz"]
+	bioc = "target"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="ee135894447e1fd4a1198e1f5dfceb8bd5bafc4f1af4ef9a8df77adc1b3f0a4b")
+	version("1.22.0", commit="b5712348e8f1bb7228eca1823ea626d302c7ca65")
+	version("1.16.0", commit="8bae5270938218eecb41f1db74bbfdcb4087eb88")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

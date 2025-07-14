@@ -12,11 +12,10 @@ class RKnowseq(RPackage):
 	KnowSeq proposes a novel methodology that comprises the most relevant steps in the Transcriptomic gene expression analysis. KnowSeq expects to serve as an integrative tool that allows to process and extract relevant biomarkers, as well as to assess them through a Machine Learning approaches. Finally, the last objective of KnowSeq is the biological knowledge extraction from the biomarkers (Gene Ontology enrichment, Pathway listing and Visualization and Evidences related to the addressed disease). Although the package allows analyzing all the data manually, the main strenght of KnowSeq is the possibilty of carrying out an automatic and intelligent HTML report that collect all the involved steps in one document. It is important to highligh that the pipeline is totally modular and flexible, hence it can be started from whichever of the different steps. KnowSeq expects to serve as a novel tool to help to the experts in the field to acquire robust knowledge and conclusions for the data and diseases to study.
 	"""
 	
-	bioc = "KnowSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/KnowSeq_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/KnowSeq/KnowSeq_1.16.0.tar.gz"]
+	bioc = "KnowSeq"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="eb2f9ca53b3d8f21b11ba786ace6077a8eb67e147d8af7f03e104e8d2ae7c518")
+	version("1.22.0", commit="1e76e4cc9b05afbb7d1a7737ec89acfd0b064535")
+	version("1.16.0", commit="fedf99099b73fccb1a89541451116d66a37e515b")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-cqn@1.28.1:", type=("build", "run"))

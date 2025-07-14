@@ -13,11 +13,10 @@ class RIdr2d(RPackage):
 	"""
 	
 	homepage = "https://idr2d.mit.edu"
-	bioc = "idr2d" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/idr2d_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/idr2d/idr2d_1.16.0.tar.gz"]
+	bioc = "idr2d"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="c0a66142299ca9ae8ed82270008f46bde1c0b67f7f60a6439d7f9c0852617b1b")
+	version("1.22.0", commit="fd9d6dd804d8f50bc4a9fa7b73d6f4f7ab651689")
+	version("1.16.0", commit="4d9a966f5e6a95a183d48c4648342d6821b70a04")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr@0.7.6:", type=("build", "run"))

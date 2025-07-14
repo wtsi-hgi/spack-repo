@@ -13,11 +13,10 @@ class RNormalyzerde(RPackage):
 	"""
 	
 	homepage = "https://github.com/ComputationalProteomics/NormalyzerDE"
-	bioc = "NormalyzerDE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/NormalyzerDE_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/NormalyzerDE/NormalyzerDE_1.20.0.tar.gz"]
+	bioc = "NormalyzerDE"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="425b8f99063610e9a2d1d9f362921359a5ca50244c410d6ae83d58bb634cf5b1")
+	version("1.26.0", commit="db221b0af4d37da8615b7364eef5e59096c1eb18")
+	version("1.20.0", commit="663e7cd2547c367938975e329c03c70b1fb65638")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-vsn", type=("build", "run"))

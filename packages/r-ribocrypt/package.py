@@ -13,11 +13,10 @@ class RRibocrypt(RPackage):
 	"""
 	
 	homepage = "https://github.com/m-swirski/RiboCrypt"
-	bioc = "RiboCrypt" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RiboCrypt_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RiboCrypt/RiboCrypt_1.8.0.tar.gz"]
+	bioc = "RiboCrypt"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="6f3312bced7bee7c18ab262b715b9a9babc1b67280592170ff85892454d412a5")
+	version("1.14.0", commit="1ecf9fe0ab3129f37ba5249c7576f057a1381dc9")
+	version("1.8.0", commit="f2d42178d09ee884180d4482e10756bf98b95bef")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-orfik@1.13.12:", type=("build", "run"))

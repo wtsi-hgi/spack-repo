@@ -12,11 +12,10 @@ class RGenegeneinter(RPackage):
 	The aim of this package is to propose several methods for testing gene-gene interaction in case-control association studies. Such a test can be done by aggregating SNP-SNP interaction tests performed at the SNP level (SSI) or by using gene-gene multidimensionnal methods (GGI) methods. The package also proposes tools for a graphic display of the results. <doi:10.18637/jss.v095.i12>.
 	"""
 	
-	bioc = "GeneGeneInteR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeneGeneInteR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeneGeneInteR/GeneGeneInteR_1.28.0.tar.gz"]
+	bioc = "GeneGeneInteR"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="fe6fea77a026faa323539d5e485cd7d2e4b07247d2b6b1bc6d0dd8c5503cdfad")
+	version("1.34.0", commit="9b29d5f9f317947e6569a0d66f973827e922695b")
+	version("1.28.0", commit="5961a9fa0c9df843d1e719de1702239ed4473dd1")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-snpstats", type=("build", "run"))

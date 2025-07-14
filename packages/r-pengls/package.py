@@ -12,11 +12,10 @@ class RPengls(RPackage):
 	Combine generalised least squares methodology from the nlme package for dealing with autocorrelation with penalised least squares methods from the glmnet package to deal with high dimensionality. This pengls packages glues them together through an iterative loop. The resulting method is applicable to high dimensional datasets that exhibit autocorrelation, such as spatial or temporal data.
 	"""
 	
-	bioc = "pengls" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pengls_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pengls/pengls_1.8.0.tar.gz"]
+	bioc = "pengls"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="7032facda977ed4ea831d1c1a0128a6c8bae0a4ff90c4d323698925ff08abdac")
+	version("1.14.0", commit="784f036837f04fc7e8b88dd962da608aeff00e97")
+	version("1.8.0", commit="b111185045124625445c889de6bda1d46ac031b3")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))

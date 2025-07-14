@@ -13,11 +13,10 @@ class RProcoil(RPackage):
 	"""
 	
 	homepage = "http://www.bioinf.jku.at/software/procoil/"
-	bioc = "procoil" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/procoil_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/procoil/procoil_2.30.0.tar.gz"]
+	bioc = "procoil"
 
-	version("2.36.0", tag="RELEASE_3_21")
-	version("2.30.0", sha256="c12e4cddd0bf40648d0bc19b94e8fc7c22d6753e8deebdca62630ca9c7901a08")
+	version("2.36.0", commit="b467c3a3a7b622bb50957bed4439592c3323adb0")
+	version("2.30.0", commit="304b01d3299fb1d06eaa262275eb168ea1b55d4c")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-kebabs", type=("build", "run"))

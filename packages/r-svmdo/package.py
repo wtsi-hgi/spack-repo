@@ -12,11 +12,10 @@ class RSvmdo(RPackage):
 	It is an easy-to-use GUI using disease information for detecting tumor/normal sample discriminating gene sets from differentially expressed genes. Our approach is based on an iterative algorithm filtering genes with disease ontology enrichment analysis and wilk and wilk’s lambda criterion connected to SVM classification model construction. Along with gene set extraction, SVMDO also provides individual prognostic marker detection. The algorithm is designed for FPKM and RPKM normalized RNA-Seq transcriptome datasets.
 	"""
 	
-	bioc = "SVMDO" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SVMDO_1.2.8.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SVMDO/SVMDO_1.2.8.tar.gz"]
+	bioc = "SVMDO"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.8", sha256="128e27afa062cd585b4cac2438c490c63d232806ea35462696b327130169e2de")
+	version("1.8.0", commit="8259124aae225da692728cde2f15559358d9f169")
+	version("1.2.8", commit="e42b83dba5e05da78e0af4404f1e26a1ea4bd45b")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-shiny@1.7.4:", type=("build", "run"))

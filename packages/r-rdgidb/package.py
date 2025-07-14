@@ -12,10 +12,9 @@ class RRdgidb(RPackage):
 	The rDGIdb package provides a wrapper for the Drug Gene Interaction Database (DGIdb). For simplicity, the wrapper query function and output resembles the user interface and results format provided on the DGIdb website (https://www.dgidb.org/).
 	"""
 	
-	bioc = "rDGIdb" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rDGIdb_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rDGIdb/rDGIdb_1.28.0.tar.gz"]
+	bioc = "rDGIdb"
 
-	version("1.28.0", sha256="8c5957cbc6911c143f826dc14ed5d0ac2e6cdccd1cec214782ec791e84b38bbc")
+	version("1.28.0", commit="40237f4fa83e4dd6ab8b377a751e7c7720e0f162")
 
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

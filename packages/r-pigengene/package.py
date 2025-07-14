@@ -12,11 +12,10 @@ class RPigengene(RPackage):
 	Pigengene package provides an efficient way to infer biological signatures from gene expression profiles. The signatures are independent from the underlying platform, e.g., the input can be microarray or RNA Seq data. It can even infer the signatures using data from one platform, and evaluate them on the other. Pigengene identifies the modules (clusters) of highly coexpressed genes using coexpression network analysis, summarizes the biological information of each module in an eigengene, learns a Bayesian network that models the probabilistic dependencies between modules, and builds a decision tree based on the expression of eigengenes.
 	"""
 	
-	bioc = "Pigengene" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Pigengene_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Pigengene/Pigengene_1.28.0.tar.gz"]
+	bioc = "Pigengene"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="7375a0be2eb648a6442ecbc6f29795c6fbce303402c0dd2e6c8f79d2b1c1096a")
+	version("1.34.0", commit="04213d712a71d1e35058ee85ad4de4040e686126")
+	version("1.28.0", commit="0294afcd3acc239cc362adb42d821749d346d319")
 
 	depends_on("r@4.0.3:", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

@@ -12,11 +12,10 @@ class RMgfm(RPackage):
 	The package is designed to detect marker genes from Microarray gene expression data sets
 	"""
 	
-	bioc = "MGFM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MGFM_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MGFM/MGFM_1.36.0.tar.gz"]
+	bioc = "MGFM"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="59b0aa7e48246bd7ba63595fd99ef7ce2477f0be9b37004e071a10946ae14109")
+	version("1.42.0", commit="86e6d46bebd07414dc91f4426f90f4b63d87376d")
+	version("1.36.0", commit="8240478c1760217b4961a3ac596d9c2925d242b5")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-annotate", type=("build", "run"))

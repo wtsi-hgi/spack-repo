@@ -12,11 +12,10 @@ class RMina(RPackage):
 	An increasing number of microbiome datasets have been generated and analyzed with the help of rapidly developing sequencing technologies. At present, analysis of taxonomic profiling data is mainly conducted using composition-based methods, which ignores interactions between community members. Besides this, a lack of efficient ways to compare microbial interaction networks limited the study of community dynamics. To better understand how community diversity is affected by complex interactions between its members, we developed a framework (Microbial community dIversity and Network Analysis, mina), a comprehensive framework for microbial community diversity analysis and network comparison. By defining and integrating network-derived community features, we greatly reduce noise-to-signal ratio for diversity analyses. A bootstrap and permutation-based method was implemented to assess community network dissimilarities and extract discriminative features in a statistically principled way.
 	"""
 	
-	bioc = "mina" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mina_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mina/mina_1.10.0.tar.gz"]
+	bioc = "mina"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="8802480f322d82a3619d4166155040df3c031e57de8f9b193a44b34cbe5cf61f")
+	version("1.16.0", commit="5640360ff45563b8205a10a8234c6d7e0d8585cb")
+	version("1.10.0", commit="f0e35638fb19642e4b04446ba8415bc03766083a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

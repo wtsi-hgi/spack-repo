@@ -12,10 +12,9 @@ class RRnainteract(RPackage):
 	RNAinteract estimates genetic interactions from multi-dimensional read-outs like features extracted from images. The screen is assumed to be performed in multi-well plates or similar designs. Starting from a list of features (e.g. cell number, area, fluorescence intensity) per well, genetic interactions are estimated. The packages provides functions for reporting interacting gene pairs, plotting heatmaps and double RNAi plots. An HTML report can be written for quality control and analysis.
 	"""
 	
-	bioc = "RNAinteract" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNAinteract_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNAinteract/RNAinteract_1.50.0.tar.gz"]
+	bioc = "RNAinteract"
 
-	version("1.50.0", sha256="74d9aadb4a6cfbb7690bf7d5a895a4a5d28fea9521a6ac37d5a6af1e8e6ecd76")
+	version("1.50.0", commit="395930dc6ad862ebc5a52ad77f8b4e649641e9bc")
 
 	depends_on("r@2.12:", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

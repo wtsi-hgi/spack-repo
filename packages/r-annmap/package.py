@@ -13,11 +13,10 @@ class RAnnmap(RPackage):
 	"""
 	
 	homepage = "https://github.com/cruk-mi/annmap"
-	bioc = "annmap" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/annmap_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/annmap/annmap_1.44.0.tar.gz"]
+	bioc = "annmap"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="485692771e81e88e01dba70d450fca651204fa2709ba6396594f462261c3c0bd")
+	version("1.50.0", commit="625179d81efeb59adac285a36e303c2f729e2c13")
+	version("1.44.0", commit="039a9a237a1cd3650754bcac805c627c2e1f3126")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

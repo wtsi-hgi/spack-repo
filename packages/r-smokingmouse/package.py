@@ -13,10 +13,9 @@ class RSmokingmouse(RPackage):
 	"""
 	
 	homepage = "https://github.com/LieberInstitute/smokingMouse"
-	bioc = "smokingMouse" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/smokingMouse_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/smokingMouse/smokingMouse_1.0.0.tar.gz"]
+	bioc = "smokingMouse"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="c62d422537d42534592ef15780862e0bbf343edd1c26012beb022073fd51a476")
+	version("1.6.0", commit="ca897b9f5e08acbca31e02d0113e3a85b7ef9023")
+	version("1.0.0", commit="cb8ad94632c5bd4520ff0992612208408959b196")
 
 

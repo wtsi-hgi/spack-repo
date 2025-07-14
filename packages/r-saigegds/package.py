@@ -13,11 +13,10 @@ class RSaigegds(RPackage):
 	"""
 	
 	homepage = "https://github.com/AbbVie-ComputationalGenomics/SAIGEgds"
-	bioc = "SAIGEgds" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SAIGEgds_2.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SAIGEgds/SAIGEgds_2.2.1.tar.gz"]
+	bioc = "SAIGEgds"
 
-	version("2.8.0", tag="RELEASE_3_21")
-	version("2.2.1", sha256="b93be6a3844f2589c87ef5f07df77f4e712671cc14994ac651164e78bdccc800")
+	version("2.8.0", commit="27c4ea46904ab7ddf55d01acd9a91fafc76508f5")
+	version("2.2.1", commit="511d2b86a95f5d0ca0c5e2c05b997136a379f887")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-gdsfmt@1.28:", type=("build", "run"))

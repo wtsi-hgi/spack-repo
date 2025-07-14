@@ -12,11 +12,10 @@ class RAsset(RPackage):
 	An R package for subset-based analysis of heterogeneous traits and disease subtypes. The package allows the user to search through all possible subsets of z-scores to identify the subset of traits giving the best meta-analyzed z-score. Further, it returns a p-value adjusting for the multiple-testing involved in the search. It also allows for searching for the best combination of disease subtypes associated with each variant.
 	"""
 	
-	bioc = "ASSET" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASSET_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASSET/ASSET_2.20.0.tar.gz"]
+	bioc = "ASSET"
 
-	version("2.26.0", tag="RELEASE_3_21")
-	version("2.20.0", sha256="acbbae5b669c3c11f2a8ff8ec62102781a3596b21d8426e047dfea9d4a2ca156")
+	version("2.26.0", commit="88219400cd2158bc7c8584547a2594931471d07d")
+	version("2.20.0", commit="8cd3b9df3b9c5ce8ad1d02af51ba158a2bf53573")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

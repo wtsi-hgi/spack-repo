@@ -13,11 +13,10 @@ class RTenxvisiumdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/helenalc/TENxVisiumData"
-	bioc = "TENxVisiumData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TENxVisiumData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TENxVisiumData/TENxVisiumData_1.10.0.tar.gz"]
+	bioc = "TENxVisiumData"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="c4156251246fb86e96d5a22e3180b5b33159d7f38fa18080be60a5aa5a57277a")
+	version("1.16.0", commit="e01f84e4a8179e086a537573316830f480d6cc7e")
+	version("1.10.0", commit="6b160c1cd37b539724a70821d57617a14a8afd97")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-spatialexperiment", type=("build", "run"))

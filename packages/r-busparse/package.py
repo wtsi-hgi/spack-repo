@@ -13,11 +13,10 @@ class RBusparse(RPackage):
 	"""
 	
 	homepage = "https://github.com/BUStools/BUSpaRse"
-	bioc = "BUSpaRse" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BUSpaRse_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BUSpaRse/BUSpaRse_1.16.1.tar.gz"]
+	bioc = "BUSpaRse"
 
-	version("1.22.1", tag="RELEASE_3_21")
-	version("1.16.1", sha256="4b27e5cf3c45fa99f04e63b6079c402977b9f6e143c473075266b6c136100cf3")
+	version("1.22.1", commit="e25c15f4c79aef517dbd4bf642809658d119d33c")
+	version("1.16.1", commit="c1a1ce50c042e086adac9f180d3cf348715c3cd0")
 	version("1.16.0", md5="7d2decd570fd518ad9a06c10a5ecffb3")
 
 	depends_on("r@3.6:", type=("build", "run"))

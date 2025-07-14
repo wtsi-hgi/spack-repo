@@ -12,11 +12,10 @@ class RRcas(RPackage):
 	RCAS is an R/Bioconductor package designed as a generic reporting tool for the functional analysis of transcriptome-wide regions of interest detected by high-throughput experiments. Such transcriptomic regions could be, for instance, signal peaks detected by CLIP-Seq analysis for protein-RNA interaction sites, RNA modification sites (alias the epitranscriptome), CAGE-tag locations, or any other collection of query regions at the level of the transcriptome. RCAS produces in-depth annotation summaries and coverage profiles based on the distribution of the query regions with respect to transcript features (exons, introns, 5'/3' UTR regions, exon-intron boundaries, promoter regions). Moreover, RCAS can carry out functional enrichment analyses and discriminative motif discovery.
 	"""
 	
-	bioc = "RCAS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RCAS_1.28.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RCAS/RCAS_1.28.3.tar.gz"]
+	bioc = "RCAS"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.3", sha256="edd687d017c58b2a1bf6c8a52b9820e3baf074e71946b44c7db5f17e426631b5")
+	version("1.34.0", commit="a086294a351068741693fbfaaad496589422e44f")
+	version("1.28.3", commit="f3b904779937a2ddf9691ad9560281f6252c3af1")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-plotly@4.5.2:", type=("build", "run"))

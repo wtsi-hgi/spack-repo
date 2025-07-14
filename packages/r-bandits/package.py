@@ -13,11 +13,10 @@ class RBandits(RPackage):
 	"""
 	
 	homepage = "https://github.com/SimoneTiberi/BANDITS"
-	bioc = "BANDITS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BANDITS_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BANDITS/BANDITS_1.18.1.tar.gz"]
+	bioc = "BANDITS"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.1", sha256="3fb8c5dd7bf7dc16a0bbe5a5173ab104a0c9c531ab5477135737c7c2cea80179")
+	version("1.24.0", commit="6d2c7e379356e5c19b8b487434850c38268560cc")
+	version("1.18.1", commit="686c3a220842092ee64ffda99aa6eddd9c66b426")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

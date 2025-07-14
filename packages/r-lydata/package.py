@@ -12,10 +12,9 @@ class RLydata(RPackage):
 	Raw data downloaded from GEO for the compound LY294002. Raw data is from multiple platforms from Affymetrix and Illumina. This data is used to illustrate the cross-platform meta-analysis of microarray data using the crossmeta package.
 	"""
 	
-	bioc = "lydata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/lydata_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/lydata/lydata_1.28.0.tar.gz"]
+	bioc = "lydata"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="19475d674a72fa35c4fabbc5d524add1a6f90db4b87a3846e96e066c028e8a3f")
+	version("1.34.0", commit="f000890c4682661f07e569d6557da7df467dc9eb")
+	version("1.28.0", commit="477654a24d3e3887a1baf8ce91e93835f6252822")
 
 

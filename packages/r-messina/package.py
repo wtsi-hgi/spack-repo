@@ -12,11 +12,10 @@ class RMessina(RPackage):
 	Messina is a collection of algorithms for constructing optimally robust single-gene classifiers, and for identifying differential expression in the presence of outliers or unknown sample subgroups.  The methods have application in identifying lead features to develop into clinical tests (both diagnostic and prognostic), and in identifying differential expression when a fraction of samples show unusual patterns of expression.
 	"""
 	
-	bioc = "messina" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/messina_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/messina/messina_1.38.0.tar.gz"]
+	bioc = "messina"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="4e3826cb5c1575afb615a5fd6de8a69278be092673d47369513f261d7b968525")
+	version("1.44.0", commit="e73d1fcadd812ae7c6e43258604900f0a9f1b598")
+	version("1.38.0", commit="5aa8308f67f0007bf359746c13d65e141bf4c7ea")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-survival@2.37.4:", type=("build", "run"))

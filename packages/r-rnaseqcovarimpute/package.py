@@ -13,11 +13,10 @@ class RRnaseqcovarimpute(RPackage):
 	"""
 	
 	homepage = "https://github.com/brennanhilton/RNAseqCovarImpute"
-	bioc = "RNAseqCovarImpute" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNAseqCovarImpute_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNAseqCovarImpute/RNAseqCovarImpute_1.0.2.tar.gz"]
+	bioc = "RNAseqCovarImpute"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.2", sha256="f163be9e6155e9d27b2f06c8326b3c0691ad05525d2598ad1187e6925310d65e")
+	version("1.6.0", commit="5e7ab8c705c1e54f346d60d200eb2af3f79240f2")
+	version("1.0.2", commit="d82f00bd5ef6deb7005385dd7f1a6a0065bd5d9e")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

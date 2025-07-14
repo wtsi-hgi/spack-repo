@@ -12,11 +12,10 @@ class RScoreinvhap(RPackage):
 	scoreInvHap can get the samples' inversion status of known inversions. scoreInvHap uses SNP data as input and requires the following information about the inversion: genotype frequencies in the different haplotypes, R2 between the region SNPs and inversion status and heterozygote genotypes in the reference. The package include this data for 21 inversions.
 	"""
 	
-	bioc = "scoreInvHap" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scoreInvHap_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scoreInvHap/scoreInvHap_1.24.0.tar.gz"]
+	bioc = "scoreInvHap"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="8928178141f3bad318af8d75bb0877a9e38189c24c30fb0304afeace77b02f48")
+	version("1.30.0", commit="6877ed19c1b2435ea3690ba96d5f80fb34f05fda")
+	version("1.24.0", commit="644e352b1b0670b0861ea5238d5bde9f0ed6f519")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

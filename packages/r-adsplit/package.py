@@ -15,10 +15,9 @@ class RAdsplit(RPackage):
 	of the supporting gene set is determined."""
 
 	bioc = "adSplit"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/adSplit_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/adSplit/adSplit_1.72.0.tar.gz"]
 
-	version("1.78.0", tag="RELEASE_3_21")
-	version("1.72.0", sha256="ca83eee5eae74fa6efbf5c89466637b8f98bb71ee121808a65089d4ca29c602b")
+	version("1.78.0", commit="06061378227c6e7e5c9444eb6519834468d5fde5")
+	version("1.72.0", commit="194ddb23b683bc8633c9522456acc49c85b369b5")
 	version("1.70.0", commit="a08a994215a459b856eae051c778e2b9144f52d9")
 	version("1.68.0", commit="705977b5e1cb7dd69793cc673fa215baaba42af5")
 	version("1.66.0", commit="64580a6f7a9bc6b16334267c90df48fbb839cc16")

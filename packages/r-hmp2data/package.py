@@ -13,11 +13,10 @@ class RHmp2data(RPackage):
 	"""
 	
 	homepage = "https://github.com/jstansfield0/HMP2Data"
-	bioc = "HMP2Data" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HMP2Data_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HMP2Data/HMP2Data_1.16.0.tar.gz"]
+	bioc = "HMP2Data"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="1387360284fee89e63b3e1784aba8f1a82f6bbcc359ac9b6fcc1ffe535d53bf7")
+	version("1.22.0", commit="f0685e3f63cfacb19c3d13f93d2e639c3f5e5c8c")
+	version("1.16.0", commit="dcdd7d81a8b2fb9b7b94ba8e55adc322fe67956d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

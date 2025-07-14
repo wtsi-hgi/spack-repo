@@ -12,11 +12,10 @@ class RRibosomeprofilingqc(RPackage):
 	Ribo-Seq (also named ribosome profiling or footprinting) measures translatome (unlike RNA-Seq, which sequences the transcriptome) by direct quantification of the ribosome-protected fragments (RPFs). This package provides the tools for quality assessment of ribosome profiling. In addition, it can preprocess Ribo-Seq data for subsequent differential analysis.
 	"""
 	
-	bioc = "ribosomeProfilingQC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ribosomeProfilingQC_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ribosomeProfilingQC/ribosomeProfilingQC_1.14.1.tar.gz"]
+	bioc = "ribosomeProfilingQC"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.1", sha256="c7460cca1cc4a2a730670ba59f6a05659deef401075e0bc74aed98f3cf03214d")
+	version("1.20.0", commit="b9c10b1efd3b20cdc8324ad7f231a1e8dccb3b71")
+	version("1.14.1", commit="9286a0a8c6edbe8432c15b408057a1d677edefe8")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

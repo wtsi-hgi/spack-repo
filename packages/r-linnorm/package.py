@@ -13,11 +13,10 @@ class RLinnorm(RPackage):
 	"""
 	
 	homepage = "https://doi.org/10.1093/nar/gkx828"
-	bioc = "Linnorm" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Linnorm_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Linnorm/Linnorm_2.26.0.tar.gz"]
+	bioc = "Linnorm"
 
-	version("2.32.0", tag="RELEASE_3_21")
-	version("2.26.0", sha256="42ef2b3dd295e28ff6c39fe354f01f4083a8c8a4d0a326fbab807fe457fda5ab")
+	version("2.32.0", commit="88fa90d18a7231d21e6ab3f209629a4ca7ed54f0")
+	version("2.26.0", commit="20a223a2bf4261ba3ef51f482acc59aed69b23aa")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

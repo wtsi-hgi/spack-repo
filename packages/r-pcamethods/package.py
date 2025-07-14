@@ -20,9 +20,8 @@ class RPcamethods(RPackage):
 	Golm, Germany."""
 
 	bioc = "pcaMethods"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pcaMethods_1.94.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pcaMethods/pcaMethods_1.94.0.tar.gz"]
-	version("2.0.0", tag="RELEASE_3_21")
-	version("1.94.0", sha256="e0babf4e0bae227ca3e4ef74968eb942ebe48bdd5d27297644a9fee6542455ab")
+	version("2.0.0", commit="2eec50b6727520b3d1e123da2ff635788dfbe49e")
+	version("1.94.0", commit="5bb47fc169023e40b199b45b3a7c3f6e76d6bf0b")
 	version("1.92.0", commit="ecbbc5b96b8fa79342611af8f798dd43c36d6699")
 	version("1.90.0", commit="52474bc6d125122e89834328a1a780988349756f")
 	version("1.88.0", commit="02fb58d6fe35579b86fb2ebd2eaf92e6b53444d2")

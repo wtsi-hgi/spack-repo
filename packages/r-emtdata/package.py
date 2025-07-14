@@ -13,11 +13,10 @@ class REmtdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/DavisLaboratory/emtdata"
-	bioc = "emtdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/emtdata_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/emtdata/emtdata_1.10.0.tar.gz"]
+	bioc = "emtdata"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="bcb5b9ce1bc2348f20e27048ad04d7e878aa7b3622370a16d834b0c3d3ab583a")
+	version("1.16.0", commit="908e7f5d577f65c14a7120c33d34cf97671dafc6")
+	version("1.10.0", commit="630cb376ff52801dd6a47e6fc4c9092e754b8db4")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-edger", type=("build", "run"))

@@ -13,11 +13,10 @@ class RPsichomics(RPackage):
 	"""
 	
 	homepage = "https://nuno-agostinho.github.io/psichomics/"
-	bioc = "psichomics" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/psichomics_1.28.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/psichomics/psichomics_1.28.1.tar.gz"]
+	bioc = "psichomics"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.1", sha256="ec00f9ba9cb85ddbc9006ec31b51d1f22315b63209fe19a6e39fccd13bc052cd")
+	version("1.34.0", commit="1e06f3036d6716c242aeef6d9f903867d4e63b72")
+	version("1.28.1", commit="444a86ac473148761a60ed3828e20d06134a7b6a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-shiny@1.7:", type=("build", "run"))

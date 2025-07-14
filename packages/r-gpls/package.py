@@ -12,9 +12,8 @@ class RGpls(RPackage):
 	Classification using generalized partial least squares for two-group and multi-group (more than 2 group) classification.
 	"""
 	
-	bioc = "gpls" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gpls_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gpls/gpls_1.74.0.tar.gz"]
+	bioc = "gpls"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="406afeee1ab2ebcc3a5ec952acf0143e558d130668a48e36147e612e196ed5fc")
+	version("1.80.0", commit="2abfe1c9d00191e3133589982251be2df35bfde8")
+	version("1.74.0", commit="85e2138d0e5debecc473cd2879a2fe01bf08126c")
 

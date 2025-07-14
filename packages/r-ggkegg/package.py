@@ -13,11 +13,10 @@ class RGgkegg(RPackage):
 	"""
 	
 	homepage = "https://github.com/noriakis/ggkegg"
-	bioc = "ggkegg" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggkegg_1.0.13.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggkegg/ggkegg_1.0.13.tar.gz"]
+	bioc = "ggkegg"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.13", sha256="cd4918999725bb2a2df6416f9cc02a8c7ab82d3e3592d695caff4595d719a42e")
+	version("1.6.0", commit="369ed875c5c320a19c02f7c115647b409ea30d62")
+	version("1.0.13", commit="8d6e75930cb3989fae04bbd42794636c87f7028d")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

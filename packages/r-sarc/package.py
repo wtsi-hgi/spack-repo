@@ -13,11 +13,10 @@ class RSarc(RPackage):
 	"""
 	
 	homepage = "https://github.com/Krutik6/SARC/"
-	bioc = "SARC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SARC_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SARC/SARC_1.0.0.tar.gz"]
+	bioc = "SARC"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="5f032cedb91ca13f975da592479c83ff79c87c3ba5dd4472c1c7df0b9cec7a10")
+	version("1.6.0", commit="fcf3fdca589b5e03813d0abed159856f7e09a196")
+	version("1.0.0", commit="e7094c986abdc062fb40e9ce9e8c693d1b4242ad")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-raggedexperiment", type=("build", "run"))

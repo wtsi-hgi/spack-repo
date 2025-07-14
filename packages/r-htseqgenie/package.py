@@ -12,11 +12,10 @@ class RHtseqgenie(RPackage):
 	Libraries to perform NGS analysis.
 	"""
 	
-	bioc = "HTSeqGenie" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HTSeqGenie_4.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HTSeqGenie/HTSeqGenie_4.32.0.tar.gz"]
+	bioc = "HTSeqGenie"
 
-	version("4.38.0", tag="RELEASE_3_21")
-	version("4.32.0", sha256="fcd9f026d335814cf12c91fba016cab331fa48a0dea504e7efcee4538d9153d8")
+	version("4.38.0", commit="1638d9f96a469fbe25232d1f2ab8c869f6b7ddb1")
+	version("4.32.0", commit="9a84f3dd4f2e12b916b09292c59ecec8fa78715b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-gmapr@1.8:", type=("build", "run"))

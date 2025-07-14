@@ -13,11 +13,10 @@ class RScrnaseqapp(RPackage):
 	"""
 	
 	homepage = "https://github.com/jianhong/scRNAseqApp"
-	bioc = "scRNAseqApp" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scRNAseqApp_1.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scRNAseqApp/scRNAseqApp_1.2.2.tar.gz"]
+	bioc = "scRNAseqApp"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.2", sha256="4946c8bc3f9cfb78550ced2e8cd24056b2490b1956ef6ab143b491cb6203e8a0")
+	version("1.8.0", commit="2c1da567c04cb5a6691c1692f511a65b7843cf25")
+	version("1.2.2", commit="b79269170aecbcea9614ecc43a6906b1fbc32eb7")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-bibtex", type=("build", "run"))

@@ -12,11 +12,10 @@ class RPasillatranscriptexpr(RPackage):
 	Provides kallisto workflow and transcript expression of RNA-Seq data from Brooks et al.
 	"""
 	
-	bioc = "PasillaTranscriptExpr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PasillaTranscriptExpr_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PasillaTranscriptExpr/PasillaTranscriptExpr_1.30.0.tar.gz"]
+	bioc = "PasillaTranscriptExpr"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="598f8067bc2d258617b55a7ed35c26f68d7a99e3cdcdedc635eced86af17889c")
+	version("1.36.0", commit="a074b672661e032a09ec5b59d05b6a8b2ca98eef")
+	version("1.30.0", commit="7260020be3e0e6e3bc414e36a23559abb7404eca")
 
 	depends_on("r@3.3:", type=("build", "run"))
 

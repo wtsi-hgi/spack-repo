@@ -12,11 +12,10 @@ class RScanmir(RPackage):
 	A set of tools for working with miRNA affinity models (KdModels), efficiently scanning for miRNA binding sites, and predicting target repression. It supports scanning using miRNA seeds, full miRNA sequences (enabling 3' alignment) and KdModels, and includes the prediction of slicing and TDMD sites. Finally, it includes utility and plotting functions (e.g. for the visual representation of miRNA-target alignment).
 	"""
 	
-	bioc = "scanMiR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scanMiR_1.8.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scanMiR/scanMiR_1.8.2.tar.gz"]
+	bioc = "scanMiR"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.2", sha256="8bdedaff1b02a44d93076c7543e74c42c6b74982714fcf56372f0cb342e39f81")
+	version("1.14.0", commit="806c98f0c815a83fd18f256e9cc2b178e35127f6")
+	version("1.8.2", commit="6400e75d52957b3ce4c9963bbcf47818f7e7ee9e")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

@@ -13,11 +13,10 @@ class RAntiprofiles(RPackage):
 	"""
 	
 	homepage = "https://github.com/HCBravoLab/antiProfiles"
-	bioc = "antiProfiles" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/antiProfiles_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/antiProfiles/antiProfiles_1.42.0.tar.gz"]
+	bioc = "antiProfiles"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="04905d3f407cd1968678937aef63859f37f03528102bde53caa9da8700f69f92")
+	version("1.48.0", commit="949bbab685ed0ccbc3e0867364044cada0de937d")
+	version("1.42.0", commit="cad816f3b23c95fc4bc950d5733bc767b6b8167d")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-matrixstats@0.50:", type=("build", "run"))

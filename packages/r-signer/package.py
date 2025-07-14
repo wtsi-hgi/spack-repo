@@ -13,11 +13,10 @@ class RSigner(RPackage):
 	"""
 	
 	homepage = "https://github.com/TojalLab/signeR"
-	bioc = "signeR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/signeR_2.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/signeR/signeR_2.4.0.tar.gz"]
+	bioc = "signeR"
 
-	version("2.10.0", tag="RELEASE_3_21")
-	version("2.4.0", sha256="6fbe442415ea2441ab33aecaa1a6eff239ef3b823bd622b3f6c422cbf3d620a1")
+	version("2.10.0", commit="b6cdbe3b4fa4d4a54b6e4eb5710998eb9a67e853")
+	version("2.4.0", commit="546498609430c59ce2ae8d766afbb8b43eaaafc2")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-variantannotation", type=("build", "run"))

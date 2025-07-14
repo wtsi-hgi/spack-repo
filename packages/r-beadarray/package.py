@@ -12,11 +12,10 @@ class RBeadarray(RPackage):
 	The package is able to read bead-level data (raw TIFFs and text files) output by BeadScan as well as bead-summary data from BeadStudio. Methods for quality assessment and low-level analysis are provided.
 	"""
 	
-	bioc = "beadarray" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/beadarray_2.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/beadarray/beadarray_2.52.0.tar.gz"]
+	bioc = "beadarray"
 
-	version("2.58.0", tag="RELEASE_3_21")
-	version("2.52.0", sha256="59eab3e4d2fc4595b4ee4c4898bb2f031a45bc6e3fcb0550179bd644ca519363")
+	version("2.58.0", commit="20636bc2acb7b71aa659cae60825b1d25ee80b9c")
+	version("2.52.0", commit="3a4da33dabcd816596e95b6a1fea94d2c2f50212")
 
 	depends_on("r@2.13:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.3.2:", type=("build", "run"))

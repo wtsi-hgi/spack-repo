@@ -13,11 +13,10 @@ class RCleaver(RPackage):
 	"""
 	
 	homepage = "https://github.com/sgibb/cleaver/"
-	bioc = "cleaver" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cleaver_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cleaver/cleaver_1.40.0.tar.gz"]
+	bioc = "cleaver"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="53417e207e8bb617d31f8385cc68849e8a3c2494e3c31790ac2edbce6c062a64")
+	version("1.46.0", commit="cea8ee3779600f3bc9546cdebed61966e98a2876")
+	version("1.40.0", commit="180eed41e3aa4abcc18ee542ba153e4ba195604e")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-biostrings@1.29.8:", type=("build", "run"))

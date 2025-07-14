@@ -13,11 +13,10 @@ class RGeneregulation(RPackage):
 	"""
 	
 	homepage = "https://www.bioconductor.org/help/workflows/generegulation/"
-	bioc = "generegulation" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/generegulation_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/generegulation/generegulation_1.26.0.tar.gz"]
+	bioc = "generegulation"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="fb7f2bb75ec3523958c6acb4d55151f0e877119a6ada651956b8aadab2c03424")
+	version("1.32.0", commit="21165666799ab11381dbf4f7976cdb0c71cb22db")
+	version("1.26.0", commit="be3ee59ced827082714860ad9377bc2dcf059f35")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-bsgenome-scerevisiae-ucsc-saccer3", type=("build", "run"))

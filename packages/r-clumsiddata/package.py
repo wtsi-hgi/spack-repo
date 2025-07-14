@@ -12,11 +12,10 @@ class RClumsiddata(RPackage):
 	This package contains various LC-MS/MS and GC-MS data that is used in vignettes and examples in the CluMSID package.
 	"""
 	
-	bioc = "CluMSIDdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/CluMSIDdata_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/CluMSIDdata/CluMSIDdata_1.18.0.tar.gz"]
+	bioc = "CluMSIDdata"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="1aaa23ff5b521f175a91eaeb3c605ec3e81823853b2062deeb87a18528f05075")
+	version("1.24.0", commit="0ce1ec45230d04a0cde60066ad18f314a3b9ca26")
+	version("1.18.0", commit="d77fe253b8baa46d0d2c56423915c2709fbe28f8")
 
 	depends_on("r@3.6:", type=("build", "run"))
 

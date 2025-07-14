@@ -12,11 +12,10 @@ class RRificomparative(RPackage):
 	'rifiComparative' is a continuation of rifi package. It compares two conditions output of rifi using half-life and mRNA at time 0 segments. As an input for the segmentation, the difference between half-life of both condtions and log2FC of the mRNA at time 0 are used. The package provides segmentation, statistics, summary table, fragments visualization and some additional useful plots for further anaylsis.
 	"""
 	
-	bioc = "rifiComparative" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rifiComparative_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rifiComparative/rifiComparative_1.2.0.tar.gz"]
+	bioc = "rifiComparative"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="3175cb710dd786c8c2d3d9f2067c86f253d8023548c6e2664393a656308e7e99")
+	version("1.8.0", commit="9976f28e2d9d22dae621c5534b6832b6a66b0855")
+	version("1.2.0", commit="a1ac42baf035c719a4b5e4639f88997336974575")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))

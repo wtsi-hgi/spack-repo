@@ -12,11 +12,10 @@ class RGeneattribution(RPackage):
 	Identification of the most likely gene or genes through which variation at a given genomic locus in the human genome acts. The most basic functionality assumes that the closer gene is to the input locus, the more likely the gene is to be causative. Additionally, any empirical data that links genomic regions to genes (e.g. eQTL or genome conformation data) can be used if it is supplied in the UCSC .BED file format.
 	"""
 	
-	bioc = "geneAttribution" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/geneAttribution_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/geneAttribution/geneAttribution_1.28.0.tar.gz"]
+	bioc = "geneAttribution"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="c06ebb5b9019aba4029f56ad5ab6c47feebf74a5bd4f2803750a9417c7ef6b4e")
+	version("1.34.0", commit="4530c7dcba50961563cbdd88009e429ba0ebf5f6")
+	version("1.28.0", commit="2d84296eac068ac39adf77d888ae62873932cede")
 
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-org-hs-eg-db", type=("build", "run"))

@@ -13,11 +13,10 @@ class RPaxtoolsr(RPackage):
 	"""
 	
 	homepage = "https://github.com/BioPAX/paxtoolsr"
-	bioc = "paxtoolsr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/paxtoolsr_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/paxtoolsr/paxtoolsr_1.36.0.tar.gz"]
+	bioc = "paxtoolsr"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="f050c8aea3cd37c14a8b4d1292bdb7f007f442078a8ef0e5a4286d1387f5331f")
+	version("1.42.0", commit="ad23f4be5d89462559d72115af4acb901f718271")
+	version("1.36.0", commit="efd04f22df892b622765187c508d3712fdd40670")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-rjava@0.9.8:", type=("build", "run"))

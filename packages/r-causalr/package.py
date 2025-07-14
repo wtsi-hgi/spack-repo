@@ -12,11 +12,10 @@ class RCausalr(RPackage):
 	Causal network analysis methods for regulator prediction and network reconstruction from genome scale data.
 	"""
 	
-	bioc = "CausalR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CausalR_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CausalR/CausalR_1.34.0.tar.gz"]
+	bioc = "CausalR"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="7b24791be6d6605439fbcc09bb9c1edae6b50e85ad88e65d125ef5c565fae4a1")
+	version("1.40.0", commit="7e4e67b884f5d0cbe7f785866b6ad3aa72f8ebbd")
+	version("1.34.0", commit="e713478406d99d6bf49e6dedd13c48254e64b45e")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

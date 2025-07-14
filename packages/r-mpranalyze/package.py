@@ -13,11 +13,10 @@ class RMpranalyze(RPackage):
 	"""
 	
 	homepage = "https://github.com/YosefLab/MPRAnalyze"
-	bioc = "MPRAnalyze" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MPRAnalyze_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MPRAnalyze/MPRAnalyze_1.20.0.tar.gz"]
+	bioc = "MPRAnalyze"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="493cf3a0e2c2e81f638cdfb4775a2f4bdf29a9f782d86c3590b76371efa5631b")
+	version("1.26.0", commit="97c52b070b1182dac2e3927b08b77b642a1e2fb3")
+	version("1.20.0", commit="dcb9ac427e152f6e1e9716c45d1b242463ddbc44")
 
 	depends_on("r-biocparallel", type=("build", "run"))
 	depends_on("r-progress", type=("build", "run"))

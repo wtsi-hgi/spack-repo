@@ -13,11 +13,10 @@ class REdaseq(RPackage):
 	"""
 	
 	homepage = "https://github.com/drisso/EDASeq"
-	bioc = "EDASeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EDASeq_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EDASeq/EDASeq_2.36.0.tar.gz"]
+	bioc = "EDASeq"
 
-	version("2.42.0", tag="RELEASE_3_21")
-	version("2.36.0", sha256="08e4183209febbb6625c673449f5e7f1860b7dedcf4c61173936b8697d2d7177")
+	version("2.42.0", commit="f1c06e51772984fa854ac3f76911104b486a766b")
+	version("2.36.0", commit="af70dab8dba85d9bf8d9c1e08bf0984ac7cd0fd3")
 
 	depends_on("r-biobase@2.15.1:", type=("build", "run"))
 	depends_on("r-shortread@1.11.42:", type=("build", "run"))

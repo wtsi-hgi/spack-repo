@@ -12,11 +12,10 @@ class RTomoseqr(RPackage):
 	`tomoseqr` is an R package for analyzing Tomo-seq data. Tomo-seq is a genome-wide RNA tomography method that combines combining high-throughput RNA sequencing with cryosectioning for spatially resolved transcriptomics. `tomoseqr` reconstructs 3D expression patterns from tomo-seq data and visualizes the reconstructed 3D expression patterns.
 	"""
 	
-	bioc = "tomoseqr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tomoseqr_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tomoseqr/tomoseqr_1.6.0.tar.gz"]
+	bioc = "tomoseqr"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="7c574a2561e393693a8a8b2d09121826efc3b9721c2616f64480d4b9c4ffdc1f")
+	version("1.12.0", commit="780e41dc76b6a7363046a406d999ac9e0a3a16f2")
+	version("1.6.0", commit="8db4ab01b6fb30a533b23a2b47541dbe34b656df")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-animation", type=("build", "run"))

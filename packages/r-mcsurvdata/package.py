@@ -13,11 +13,10 @@ class RMcsurvdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/adricaba/mcsurvdata"
-	bioc = "mcsurvdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mcsurvdata_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mcsurvdata/mcsurvdata_1.20.0.tar.gz"]
+	bioc = "mcsurvdata"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="c8e423d4c1010a02e7d7153ec1aec98597b2255369981e76b70ab11d3700651a")
+	version("1.26.0", commit="ee330c92c22a25d459c5a15eede92b138d85b0df")
+	version("1.20.0", commit="54ba7d63bd76b0d1d09347bdc76bcde516171e63")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

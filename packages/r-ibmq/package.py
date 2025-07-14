@@ -13,11 +13,10 @@ class RIbmq(RPackage):
 	"""
 	
 	homepage = "http://www.rglab.org"
-	bioc = "iBMQ" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iBMQ_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iBMQ/iBMQ_1.42.0.tar.gz"]
+	bioc = "iBMQ"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="38a2847aece0a7ed4c7308d37b642e95b68c2635e44b7d0de9c0a285529c86c1")
+	version("1.48.0", commit="a3a62fb0903ec43b6beb8cf3c8d838f06a3d0e80")
+	version("1.42.0", commit="53c04e432c4af59b2482ea71f912e101fb240ac2")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-biobase@2.16:", type=("build", "run"))

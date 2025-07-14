@@ -12,11 +12,10 @@ class RLungexpression(RPackage):
 	Data from three large lung cancer studies provided as ExpressionSets
 	"""
 	
-	bioc = "lungExpression" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/lungExpression_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/lungExpression/lungExpression_0.40.0.tar.gz"]
+	bioc = "lungExpression"
 
-	version("0.46.0", tag="RELEASE_3_21")
-	version("0.40.0", sha256="0c0b95295e7a81fb36574756d86827a9d1f38b74baf49fec8c00ea443545eecf")
+	version("0.46.0", commit="5d64936b1b4889d3a01ec9b495acd1d4a75d8904")
+	version("0.40.0", commit="f877a43062bf8bee4c18ba6c58d11f9ea6c41068")
 
 	depends_on("r@2.4:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

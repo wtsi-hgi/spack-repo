@@ -12,11 +12,10 @@ class RAsgsca(RPackage):
 	The package provides tools to model and test the association between multiple genotypes and multiple traits, taking into account the prior biological knowledge. Genes, and clinical pathways are incorporated in the model as latent variables. The method is based on Generalized Structured Component Analysis (GSCA).
 	"""
 	
-	bioc = "ASGSCA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ASGSCA_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ASGSCA/ASGSCA_1.36.0.tar.gz"]
+	bioc = "ASGSCA"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="eed8974e16d09d1f938c59fe28d83fccab406ff35cbea203ede066c6720ad38e")
+	version("1.42.0", commit="3220f6ae1adef3504e7a0490549f31f2e4bf45d2")
+	version("1.36.0", commit="e11a7118ad56777d0bdbb4dc450903137fe39a26")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

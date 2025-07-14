@@ -13,10 +13,9 @@ class RImmunespacer(RPackage):
 	"""
 	
 	homepage = "https://github.com/RGLab/ImmuneSpaceR"
-	bioc = "ImmuneSpaceR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ImmuneSpaceR_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ImmuneSpaceR/ImmuneSpaceR_1.30.0.tar.gz"]
+	bioc = "ImmuneSpaceR"
 
-	version("1.30.0", sha256="c7225c047d735e5f2169e6902c288961a54a297866916ef16681fb4e60a61152")
+	version("1.30.0", commit="597653fd4a9d28d9d3c232f5b3018938ce0bf09a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

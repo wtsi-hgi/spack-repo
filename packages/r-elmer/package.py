@@ -12,11 +12,10 @@ class RElmer(RPackage):
 	ELMER is designed to use DNA methylation and gene expression from a large number of samples to infere regulatory element landscape and transcription factor network in primary tissue.
 	"""
 	
-	bioc = "ELMER" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ELMER_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ELMER/ELMER_2.26.0.tar.gz"]
+	bioc = "ELMER"
 
-	version("2.32.0", tag="RELEASE_3_21")
-	version("2.26.0", sha256="9033fe29dbc988e21b80c66a9febc2258e4b14d120b9a742496f09290984a277")
+	version("2.32.0", commit="b1c7e3b8ca491cab5d9597f2e88ea37c6d4ddafc")
+	version("2.26.0", commit="ceacb6a96053e969b690c811b042707317d38c65")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-elmer-data@2.9.3:", type=("build", "run"))

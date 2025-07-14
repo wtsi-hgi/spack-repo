@@ -13,11 +13,10 @@ class RDyebiasexamples(RPackage):
 	"""
 	
 	homepage = "http://www.holstegelab.nl/publications/margaritis_lijnzaad"
-	bioc = "dyebiasexamples" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/dyebiasexamples_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/dyebiasexamples/dyebiasexamples_1.42.0.tar.gz"]
+	bioc = "dyebiasexamples"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="b282e7ab71e8404bd2064e0fd9c51503b01dbc2e4603931e417cc0abbb23571b")
+	version("1.48.0", commit="4661605f7c7d3fe5e0717f2dfc79c87fc7e37ba2")
+	version("1.42.0", commit="9929f423be5706a9e86a2d9ee920be2b519afd90")
 
 	depends_on("r@1.4.1:", type=("build", "run"))
 	depends_on("r-marray", type=("build", "run"))

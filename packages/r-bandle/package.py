@@ -13,11 +13,10 @@ class RBandle(RPackage):
 	"""
 	
 	homepage = "http://github.com/ococrook/bandle"
-	bioc = "bandle" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bandle_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bandle/bandle_1.6.0.tar.gz"]
+	bioc = "bandle"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="4b2cd2fc88afad6b4b9fc729d9cb168f0df05d08f1c8f7c7ab0176354eab5fc3")
+	version("1.12.0", commit="763fda50f9806cf0056f96007f1c58f19fe0de8c")
+	version("1.6.0", commit="94e6ac6d93563ecc5ad445ad3ca0268e306d0b87")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

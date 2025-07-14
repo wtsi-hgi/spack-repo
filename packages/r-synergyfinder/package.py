@@ -13,11 +13,10 @@ class RSynergyfinder(RPackage):
 	"""
 	
 	homepage = "http://www.synergyfinder.org"
-	bioc = "synergyfinder" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/synergyfinder_3.10.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/synergyfinder/synergyfinder_3.10.3.tar.gz"]
+	bioc = "synergyfinder"
 
-	version("3.16.0", tag="RELEASE_3_21")
-	version("3.10.3", sha256="fd93d020454777ad36289b7af2f5add57fef2ff41a3b48694d2fc00ab2e777eb")
+	version("3.16.0", commit="ba995e744d0522595205a53451c293658dc29492")
+	version("3.10.3", commit="90ba7b94c23d0560e8759dde2e7c3e2fd81bbb7c")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-drc@3.0.1:", type=("build", "run"))

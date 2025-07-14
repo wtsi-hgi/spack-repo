@@ -12,11 +12,10 @@ class RGloscope(RPackage):
 	This package aims at representing and summarizing the entire single-cell profile of a sample. It allows researchers to perform important bioinformatic analyses at the sample-level such as visualization and quality control. The main functions Estimate sample distribution and calculate statistical divergence among samples, and visualize the distance matrix through MDS plots.
 	"""
 	
-	bioc = "GloScope" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GloScope_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GloScope/GloScope_1.0.0.tar.gz"]
+	bioc = "GloScope"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="029f7f57db10e1f0fa33ce37227a6ed2f21b1a0cd6cf02fa8e868128e60552fe")
+	version("1.6.0", commit="055663039c2d1f340a7c23c500de695b66c6657e")
+	version("1.0.0", commit="2e528517256d510e3ed60c4e6e83d4f169b8432f")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

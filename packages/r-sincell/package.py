@@ -13,11 +13,10 @@ class RSincell(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org/"
-	bioc = "sincell" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sincell_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sincell/sincell_1.34.0.tar.gz"]
+	bioc = "sincell"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="460c0fdd8f97dd266bac81b80af04f8605c14290cd939db90a7f242d3bd3a02a")
+	version("1.40.0", commit="9774a70426d351db4ea0fc51c4c54ff05012bdf7")
+	version("1.34.0", commit="b3180da29ccee819b61833e2a2fc1694ecdeb8f1")
 
 	depends_on("r@3.0.2:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

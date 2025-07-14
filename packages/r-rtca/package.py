@@ -13,11 +13,10 @@ class RRtca(RPackage):
 	"""
 	
 	homepage = "http://code.google.com/p/xcelligence/"
-	bioc = "RTCA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RTCA_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RTCA/RTCA_1.54.0.tar.gz"]
+	bioc = "RTCA"
 
-	version("1.60.0", tag="RELEASE_3_21")
-	version("1.54.0", sha256="7f8c010d92dc423dd6d0d40385e4bffd57e5256dfbe11ffa5e2fd763e9466fc5")
+	version("1.60.0", commit="915ae56eba0622f2744c10cd6fdcaf0b70e45de0")
+	version("1.54.0", commit="50f168ecd3652ab5f415e8bb243ced777aaa75bd")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

@@ -13,11 +13,10 @@ class RBcseq(RPackage):
 	"""
 	
 	homepage = "https://github.com/jl354/bcSeq"
-	bioc = "bcSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bcSeq_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bcSeq/bcSeq_1.24.0.tar.gz"]
+	bioc = "bcSeq"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="338514ad92f5db3bcfecd825ef75a3fed1b503f2821ad3cc9c94236563821914")
+	version("1.30.0", commit="d62b2d789b48079f8bda5a0b549be1a907b672a5")
+	version("1.24.0", commit="7dfa27ed35df2fa4bd92fb1aced6d9512bd34e39")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

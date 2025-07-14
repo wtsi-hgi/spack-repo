@@ -12,11 +12,10 @@ class RBenchmarkfdrdata2019(RPackage):
 	Benchmarking results for experimental and simulated data sets used in Korthauer and Kimes et al. (2019) to compare methods for controlling the false discovery rate.
 	"""
 	
-	bioc = "benchmarkfdrData2019" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/benchmarkfdrData2019_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/benchmarkfdrData2019/benchmarkfdrData2019_1.16.0.tar.gz"]
+	bioc = "benchmarkfdrData2019"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="263d2c87c6667e03e5993cdcc93325afe035fbcfbc5853ca0fa8f785000b84dc", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/benchmarkfdrData2019_1.16.0.tar.gz")
+	version("1.22.0", commit="0cda7109ce9a59aadd34a02aaf432dd3dfefd4b9")
+	version("1.16.0", commit="80fb82d1cc023e2827c2cde61c98405bc5f6959c")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

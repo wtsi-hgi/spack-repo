@@ -12,11 +12,10 @@ class RMousethymusageing(RPackage):
 	This package provides data access to counts matrices and meta-data for single-cell RNA sequencing data of thymic epithlial cells across mouse ageing using SMARTseq2 and 10X Genommics chemistries. Access is provided as a data package via ExperimentHub. It is designed to facilitate the re-use of data from Baran-Gale _et al._ in a consistent format that includes relevant and informative meta-data.
 	"""
 	
-	bioc = "MouseThymusAgeing" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MouseThymusAgeing_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MouseThymusAgeing/MouseThymusAgeing_1.10.0.tar.gz"]
+	bioc = "MouseThymusAgeing"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="1eccd42a2b8fccbd00d4c6ecc53dd01af3277e412bd2198028df17532650e7a6")
+	version("1.16.0", commit="77e41d13433028ae42c6654dcf08b801b8c3bc21")
+	version("1.10.0", commit="278aba6e63511fa1560f4a85447d49296c407f4b")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

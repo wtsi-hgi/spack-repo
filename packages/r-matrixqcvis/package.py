@@ -12,11 +12,10 @@ class RMatrixqcvis(RPackage):
 	Data quality assessment is an integral part of preparatory data analysis to ensure sound biological information retrieval. We present here the MatrixQCvis package, which provides shiny-based interactive visualization of data quality metrics at the per-sample and per-feature level. It is broadly applicable to quantitative omics data types that come in matrix-like format (features x samples). It enables the detection of low-quality samples, drifts, outliers and batch effects in data sets. Visualizations include amongst others bar- and violin plots of the (count/intensity) values, mean vs standard deviation plots, MA plots, empirical cumulative distribution function (ECDF) plots, visualizations of the distances between samples, and multiple types of dimension reduction plots. Furthermore, MatrixQCvis allows for differential expression analysis based on the limma (moderated t-tests) and proDA (Wald tests) packages. MatrixQCvis builds upon the popular Bioconductor SummarizedExperiment S4 class and enables thus the facile integration into existing workflows. The package is especially tailored towards metabolomics and proteomics mass spectrometry data, but also allows to assess the data quality of other data types that can be represented in a SummarizedExperiment object.
 	"""
 	
-	bioc = "MatrixQCvis" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MatrixQCvis_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MatrixQCvis/MatrixQCvis_1.10.0.tar.gz"]
+	bioc = "MatrixQCvis"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="694b2e673fc5c2ab99e6be1a2d378799f412e10977ca1c343da7ee1c2c903737")
+	version("1.16.0", commit="0abd04184843495db6b4def5b5fce7fefccac3fb")
+	version("1.10.0", commit="912411298ae15c05f88cb5e108388380dd145972")
 
 	depends_on("r-summarizedexperiment@1.20:", type=("build", "run"))
 	depends_on("r-plotly@4.9.3:", type=("build", "run"))

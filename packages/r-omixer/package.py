@@ -12,11 +12,10 @@ class ROmixer(RPackage):
 	Omixer - an Bioconductor package for multivariate and reproducible sample randomization, which ensures optimal sample distribution across batches with well-documented methods. It outputs lab-friendly sample layouts, reducing the risk of sample mixups when manually pipetting randomized samples.
 	"""
 	
-	bioc = "Omixer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Omixer_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Omixer/Omixer_1.12.0.tar.gz"]
+	bioc = "Omixer"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="1a50dbf98c7f11fe1360f0f5c447b812e7fa325107f58ecde58c764cfac6660a")
+	version("1.18.0", commit="d7f439175fdc9237e95880374dc19216522cf57d")
+	version("1.12.0", commit="4356e126018bde6923a01148da1fafd1a8e1a448")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

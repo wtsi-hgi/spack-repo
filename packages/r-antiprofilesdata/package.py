@@ -12,11 +12,10 @@ class RAntiprofilesdata(RPackage):
 	Colon normal tissue and cancer samples used in Corrada Bravo, et al. gene expression anti-profiles paper: BMC Bioinformatics 2012, 13:272 doi:10.1186/1471-2105-13-272. Measurements are z-scores obtained from the GeneExpression Barcode in the 'frma' package
 	"""
 	
-	bioc = "antiProfilesData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/antiProfilesData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/antiProfilesData/antiProfilesData_1.38.0.tar.gz"]
+	bioc = "antiProfilesData"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="0be4952b30882ee6d3e883ba39d19b886cac6c195daf5c81bc3bc968f8196f59")
+	version("1.44.0", commit="56cc43476bef726e35fedf38567a829665216f7a")
+	version("1.38.0", commit="c6c3ef5ae1cbf5e51df8ffae7e820d4a79bd72f4")
 
 	depends_on("r-biobase", type=("build", "run"))
 

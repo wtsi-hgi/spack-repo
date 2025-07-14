@@ -13,14 +13,8 @@ class RMsa(RPackage):
 	"""
 
 	homepage = "http://www.bioinf.jku.at/software/msa/"
-	bioc = "msa"
-	urls = [
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msa_1.34.0.tar.gz",
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msa/msa_1.34.0.tar.gz",
-	]
-
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="05a3ff0e96ba9ff466f2cd1bc7936294d1bbcc4123376bdb34d9e54e8c444ab3")
+	bioc = "msa"version("1.40.0", commit="c8c6e34433f7fd703741663b91dc83084c7df1cb")
+	version("1.34.0", commit="2df795c165c32e2d53abbb6c62b306f41080ec50")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-biostrings@2.40:", type=("build", "run"))

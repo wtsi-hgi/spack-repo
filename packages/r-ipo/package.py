@@ -13,11 +13,10 @@ class RIpo(RPackage):
 	"""
 	
 	homepage = "https://github.com/rietho/IPO"
-	bioc = "IPO" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IPO_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IPO/IPO_1.28.0.tar.gz"]
+	bioc = "IPO"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="af2504a1f58829770425519e0e3758f3e533a579f880b0561f05bc3a64fb3171")
+	version("1.34.0", commit="648044388933b50ecf7ed0466b1a9f869cca7468")
+	version("1.28.0", commit="b8fc7118a98be165d482a7a2d059ee76f6c6c61a")
 
 	depends_on("r-xcms@1.50:", type=("build", "run"))
 	depends_on("r-rsm", type=("build", "run"))

@@ -13,11 +13,10 @@ class RGeodiff(RPackage):
 	"""
 	
 	homepage = "https://github.com/Nanostring-Biostats/GeoDiff"
-	bioc = "GeoDiff" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GeoDiff_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GeoDiff/GeoDiff_1.8.0.tar.gz"]
+	bioc = "GeoDiff"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="3ea80adcace6efbffeb749825d1960170956cb0daec3aa3c2779162a59477dfc")
+	version("1.14.0", commit="3d5ed1ffec01ff92901c7972e0cc9f3f1d4df501")
+	version("1.8.0", commit="924bdccad07b0fc8b7794ff2adc2cd032c0d4e8f")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

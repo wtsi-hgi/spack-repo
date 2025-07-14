@@ -12,11 +12,10 @@ class RSigfuge(RPackage):
 	Algorithm for testing significance of clustering in RNA-seq data.
 	"""
 	
-	bioc = "SigFuge" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SigFuge_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SigFuge/SigFuge_1.40.0.tar.gz"]
+	bioc = "SigFuge"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="b22a059afc5d48faf753e37bbeb6b0e116b370983b0150356a1d076f7e521504")
+	version("1.46.0", commit="c969487f6a547f6bb0dbcb9d3c47a4b7d7315ef9")
+	version("1.40.0", commit="bcbafbccd76a561043bc0b822e3c0012e2f8c149")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

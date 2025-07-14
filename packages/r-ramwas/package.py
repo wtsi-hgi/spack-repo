@@ -13,11 +13,10 @@ class RRamwas(RPackage):
 	"""
 	
 	homepage = "https://bioconductor.org/packages/ramwas/"
-	bioc = "ramwas" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ramwas_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ramwas/ramwas_1.26.0.tar.gz"]
+	bioc = "ramwas"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="4b42c49acc8c02c73d12719aa4eb89dc23ea669e95edcfa80320ca48068d8d5a")
+	version("1.32.0", commit="eff59d653d717eb76de47bd9667e3111caa6c524")
+	version("1.26.0", commit="cb4c07218c8c025f27984b69fc4651fdd9d6a466")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-filematrix", type=("build", "run"))

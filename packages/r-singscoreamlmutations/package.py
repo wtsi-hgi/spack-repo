@@ -13,11 +13,10 @@ class RSingscoreamlmutations(RPackage):
 	"""
 	
 	homepage = "https://github.com/DavisLaboratory/SingscoreAMLMutations"
-	bioc = "SingscoreAMLMutations" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/SingscoreAMLMutations_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/SingscoreAMLMutations/SingscoreAMLMutations_1.18.0.tar.gz"]
+	bioc = "SingscoreAMLMutations"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="63f275fe251ff76c9cf456de646e6d42f52b18b3a68a4ee321c308f44fcf3c0f")
+	version("1.24.0", commit="e554f1e8cf5f93e3c9fce3debb06c38e331ea66e")
+	version("1.18.0", commit="ba92d18f3b49a02f27ed438b6096545b499611c6")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dcanr", type=("build", "run"))

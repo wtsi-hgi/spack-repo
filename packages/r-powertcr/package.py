@@ -12,11 +12,10 @@ class RPowertcr(RPackage):
 	This package provides a model for the clone size distribution of the TCR repertoire. Further, it permits comparative analysis of TCR repertoire libraries based on theoretical model fits.
 	"""
 	
-	bioc = "powerTCR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/powerTCR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/powerTCR/powerTCR_1.22.0.tar.gz"]
+	bioc = "powerTCR"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="71d870a755c7bba4e75fad1df901857bdc25150f105554f75af296841bbcd519")
+	version("1.28.0", commit="9e40023a48c11fb5e2d94314ad9bf1daef71a40a")
+	version("1.22.0", commit="78a217ebb807b10b08b214da429e2f5c3edd980f")
 
 	depends_on("r-cubature", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

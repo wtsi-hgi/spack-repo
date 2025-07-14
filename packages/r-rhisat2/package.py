@@ -13,13 +13,7 @@ class RRhisat2(RPackage):
 	"""
 
 	homepage = "https://github.com/fmicompbio/Rhisat2"
-	bioc = "Rhisat2"
-	urls = [
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rhisat2_1.18.0.tar.gz",
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rhisat2/Rhisat2_1.18.0.tar.gz",
-	]
-
-	version("1.24.0", tag="RELEASE_3_21")
+	bioc = "Rhisat2"version("1.24.0", commit="bc315416860a2f7d43d13f5664025c6d38c3c7d7")
 	version(
 	    "1.18.0",
 	    md5="bcfb03ad1e10fa471b46f2b214ddbb2a",

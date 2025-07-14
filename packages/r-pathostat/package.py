@@ -13,11 +13,10 @@ class RPathostat(RPackage):
 	"""
 	
 	homepage = "https://github.com/mani2012/PathoStat"
-	bioc = "PathoStat" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PathoStat_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PathoStat/PathoStat_1.28.0.tar.gz"]
+	bioc = "PathoStat"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="b3abfbf299ed4b268a47d199bd1f5e33ec7b53aca0652fbaab39a0ed66238599")
+	version("1.34.0", commit="1a2cb3a17b968d60fe5ab1d1bc6786e7800ee452")
+	version("1.28.0", commit="e517c5e2e60b5a5565cbb2159b0d5790b6664cca")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

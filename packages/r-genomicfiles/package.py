@@ -12,11 +12,10 @@ class RGenomicfiles(RPackage):
 	This package provides infrastructure for parallel computations distributed 'by file' or 'by range'. User defined MAPPER and REDUCER functions provide added flexibility for data combination and manipulation.
 	"""
 	
-	bioc = "GenomicFiles" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicFiles_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicFiles/GenomicFiles_1.38.0.tar.gz"]
+	bioc = "GenomicFiles"
 
-	version("1.44.1", tag="RELEASE_3_21")
-	version("1.38.0", sha256="959bdb955c859bfd520a0a64f4541484c981237bceaa26b76c162c0881d17ecf")
+	version("1.44.1", commit="eec05b9ada07d887bfdabaf9af4cff93120139dc")
+	version("1.38.0", commit="ddc9a88b9ae4c06d66d77495bf0844b61de296ab")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.11.2:", type=("build", "run"))

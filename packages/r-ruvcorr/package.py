@@ -12,11 +12,10 @@ class RRuvcorr(RPackage):
 	RUVcorr allows to apply global removal of unwanted variation (ridged version of RUV) to real and simulated gene expression data.
 	"""
 	
-	bioc = "RUVcorr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RUVcorr_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RUVcorr/RUVcorr_1.34.0.tar.gz"]
+	bioc = "RUVcorr"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="f8509e425fe47c6ea62b192c56f1046a9272e7787480858990d4ada1b7d2fed7")
+	version("1.40.0", commit="a8b9e538c16576fb82326a9964ddcc59c9004d70")
+	version("1.34.0", commit="15ab0609a5a305edc97b25c040d31985ca75fd24")
 
 	depends_on("r-corrplot", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

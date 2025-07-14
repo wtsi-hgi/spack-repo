@@ -13,11 +13,10 @@ class RPepstat(RPackage):
 	"""
 	
 	homepage = "https://github.com/RGLab/pepStat"
-	bioc = "pepStat" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pepStat_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pepStat/pepStat_1.36.0.tar.gz"]
+	bioc = "pepStat"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="74447adfd8a1ce88b756445c97de9c17cb24b4ff1d8dcef48bf5836b25ffa165")
+	version("1.42.0", commit="59eae09101f2c1af0951c71bbebba8db5aa4f014")
+	version("1.36.0", commit="d5c36a6d90d55618c08b469e58848424968b1b2f")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

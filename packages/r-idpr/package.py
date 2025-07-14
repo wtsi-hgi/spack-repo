@@ -12,11 +12,10 @@ class RIdpr(RPackage):
 	‘idpr’ aims to integrate tools for the computational analysis of intrinsically disordered proteins (IDPs) within R. This package is used to identify known characteristics of IDPs for a sequence of interest with easily reported and dynamic results. Additionally, this package includes tools for IDP-based sequence analysis to be used in conjunction with other R packages. Described in McFadden WM & Yanowitz JL (2022). "idpr: A package for profiling and analyzing Intrinsically Disordered Proteins in R." PloS one, 17(4), e0266929. <https://doi.org/10.1371/journal.pone.0266929>.
 	"""
 	
-	bioc = "idpr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/idpr_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/idpr/idpr_1.12.0.tar.gz"]
+	bioc = "idpr"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="aa0e92b2c321f2fc33c94fc3149d6f2198cbbd018fc13ca651e5e0a4cf99fb60")
+	version("1.18.0", commit="4ea9cd7cd7a0c20ae7c4002bce1a637793795e37")
+	version("1.12.0", commit="1bbdb6b3f2a04e06590955cad35ec1f43daedf4c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2@3.3:", type=("build", "run"))

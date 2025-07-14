@@ -16,9 +16,8 @@ class RGenomeinfodb(RPackage):
 	their natural, rather than lexicographic, order."""
 
 	bioc = "GenomeInfoDb"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomeInfoDb_1.38.8.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomeInfoDb/GenomeInfoDb_1.38.8.tar.gz"]
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.8", sha256="1cedab42e51451589616b8fc85a599dcad52fd4de09881a3bc6dc0448ac0d888")
+	version("1.44.0", commit="280cf61771adbc97565c93383d617ab2fd129084")
+	version("1.38.8", commit="21c97fc89681ed5af46dcaae23ad7efc1e2910eb")
 	version("1.38.6", md5="b739753a88d5a331b38744b1ad14f416")
 	version("1.36.0", commit="c380bb93a5480b48e0efbf6d107cefc10d574438")
 	version("1.34.3", commit="ea6f131f1d1ee61535d6733ce76fabf3c62185fc")

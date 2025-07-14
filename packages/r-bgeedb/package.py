@@ -13,11 +13,10 @@ class RBgeedb(RPackage):
 	"""
 	
 	homepage = "https://github.com/BgeeDB/BgeeDB_R"
-	bioc = "BgeeDB" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BgeeDB_2.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BgeeDB/BgeeDB_2.28.0.tar.gz"]
+	bioc = "BgeeDB"
 
-	version("2.34.0", tag="RELEASE_3_21")
-	version("2.28.0", sha256="d6e62249a3d00f6f288ea6ddf4e1100433d1be67417980a14f8fc3c883b811aa")
+	version("2.34.0", commit="081a44d4f51c8c2685b96ace0cdf7293176bd600")
+	version("2.28.0", commit="d331dd78c21b09d357ab6b13da57d48e28af56e4")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-topgo", type=("build", "run"))

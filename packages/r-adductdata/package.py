@@ -12,11 +12,10 @@ class RAdductdata(RPackage):
 	mzXML files from Grigoryan et al 2016 (Anal Chem).
 	"""
 	
-	bioc = "adductData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/adductData_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/adductData/adductData_1.18.0.tar.gz"]
+	bioc = "adductData"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="a551c63fe130120370b5ce4ce70b43d186ea566c00c1dbe9f399dc523c4f8799")
+	version("1.24.0", commit="525af6152dcf5ac91c10a88b0b78bafb7b80e32f")
+	version("1.18.0", commit="b94004e21edf65fb22a7e80459d4a0e4fcae296d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-experimenthub@1.9:", type=("build", "run"))

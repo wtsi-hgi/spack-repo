@@ -12,11 +12,10 @@ class RPhipdata(RPackage):
 	PhIPData defines an S4 class for phage-immunoprecipitation sequencing (PhIP-seq) experiments. Buliding upon the RangedSummarizedExperiment class, PhIPData enables users to coordinate metadata with experimental data in analyses. Additionally, PhIPData provides specialized methods to subset and identify beads-only samples, subset objects using virus aliases, and use existing peptide libraries to populate object parameters.
 	"""
 	
-	bioc = "PhIPData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PhIPData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PhIPData/PhIPData_1.10.0.tar.gz"]
+	bioc = "PhIPData"
 
-	version("1.16.1", tag="RELEASE_3_21")
-	version("1.10.0", sha256="8fc30e49ba8dcf8f474ac6f68019da846c971f0be9a1a31692ef6a65f6c2a892")
+	version("1.16.1", commit="c2bad37b5341ada725c79d7bc707c3b8266bb035")
+	version("1.10.0", commit="463fdc6461af0f0f3dd7a6080d3ef0c628b3ca27")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-summarizedexperiment@1.3.81:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RDroplettestfiles(RPackage):
 	Assorted files generated from droplet-based single-cell protocols, to be used for testing functions in DropletUtils. Primarily intended for storing files that directly come out of processing pipelines like 10X Genomics' CellRanger software, prior to the formation of a SingleCellExperiment object. Unlike other packages, this is not designed to provide objects that are immediately ready for analysis.
 	"""
 	
-	bioc = "DropletTestFiles" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DropletTestFiles_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DropletTestFiles/DropletTestFiles_1.12.0.tar.gz"]
+	bioc = "DropletTestFiles"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="037c706507058f22f6194efa14783b5746505886753216f4086a203d53ebc828")
+	version("1.18.0", commit="1a3668cab6e275407730d73ad2d62435e60774ef")
+	version("1.12.0", commit="2ca3a3890371bfe5231f115fcc015c05454a71e6")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

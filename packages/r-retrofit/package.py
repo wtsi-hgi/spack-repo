@@ -13,11 +13,10 @@ class RRetrofit(RPackage):
 	"""
 	
 	homepage = "https://github.com/qunhualilab/retrofit"
-	bioc = "retrofit" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/retrofit_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/retrofit/retrofit_1.2.0.tar.gz"]
+	bioc = "retrofit"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="ad2208835281053a2a9cdeeb9b19ab76ce27f86320a74bc65ebbfdd5c1915967")
+	version("1.8.0", commit="906eef6fbef821cb2b1cc365367644792a1ad1ca")
+	version("1.2.0", commit="4e64c2f48688f56de64a32a674a7d4c62323c467")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

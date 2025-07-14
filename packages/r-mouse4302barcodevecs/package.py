@@ -12,11 +12,10 @@ class RMouse4302barcodevecs(RPackage):
 	Data used by the barcode package for microarrays of type mouse4302.
 	"""
 	
-	bioc = "mouse4302barcodevecs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mouse4302barcodevecs_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/mouse4302barcodevecs/mouse4302barcodevecs_1.40.0.tar.gz"]
+	bioc = "mouse4302barcodevecs"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="264f1e7b8a41debe52049d160a3f24456d2487321981f6f2a447f8ae71a74bd0")
+	version("1.46.0", commit="5371a746c6ce42b659b35ee382e5cfe9c1f12f5b")
+	version("1.40.0", commit="f3973934570d818014c41af86f2a65a069901536")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

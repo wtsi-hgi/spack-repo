@@ -12,11 +12,10 @@ class RExperimenthubdata(RPackage):
 	Functions to add metadata to ExperimentHub db and resource files to AWS S3 buckets.
 	"""
 	
-	bioc = "ExperimentHubData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ExperimentHubData_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ExperimentHubData/ExperimentHubData_1.28.0.tar.gz"]
+	bioc = "ExperimentHubData"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="56a65d22781a8040f62697f790fb311f124f60fa2b55dd08e3fbdef02f1f4f57")
+	version("1.34.0", commit="2e8746ac8b2d7da7a9b05bfa6ed3d912621b45bc")
+	version("1.28.0", commit="ac4c327cc05effc76f406c8339da8972133bf48d")
 
 	depends_on("r-biocgenerics@0.15.10:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

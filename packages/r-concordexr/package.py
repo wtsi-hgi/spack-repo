@@ -13,11 +13,10 @@ class RConcordexr(RPackage):
 	"""
 	
 	homepage = "https://github.com/pachterlab/concordexR"
-	bioc = "concordexR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/concordexR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/concordexR/concordexR_1.2.0.tar.gz"]
+	bioc = "concordexR"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="bc69c64f07d6813f337c65ce8edf8db066c3eaeb4c9a89b75cf9523a0926d71b")
+	version("1.8.0", commit="0f8144d56fb76bbf83b183095a4f5f27f35e7a3d")
+	version("1.2.0", commit="adee426af98a433751daed4acf88a6aaacbfbb79")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

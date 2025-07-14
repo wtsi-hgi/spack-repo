@@ -13,11 +13,10 @@ class RSparrow(RPackage):
 	"""
 	
 	homepage = "https://github.com/lianos/sparrow"
-	bioc = "sparrow" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sparrow_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sparrow/sparrow_1.8.0.tar.gz"]
+	bioc = "sparrow"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="6a0dded80b7c8552091d6a81b46d3bd3288920db89a962c31e8d7e749e32166f")
+	version("1.14.0", commit="faf172b573e1dba391dfde7f93733a4702272886")
+	version("1.8.0", commit="115a98fb42462058dccae5c54ae9a9a6abb6b14e")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-babelgene@21.4:", type=("build", "run"))

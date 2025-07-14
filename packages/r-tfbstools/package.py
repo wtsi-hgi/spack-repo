@@ -17,9 +17,8 @@ class RTfbstools(RPackage):
 	de novo motif discovery software."""
 
 	bioc = "TFBSTools"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFBSTools_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFBSTools/TFBSTools_1.40.0.tar.gz"]
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="98efdb17ec1979679951020697e89cea2794f64aac4bcd070bf3799b10cabaa2")
+	version("1.46.0", commit="0b138b3f17e6e5a020cee6cbe85eec3cafb5bd35")
+	version("1.40.0", commit="c3a176b05a8950f538feb8187b5757540511803b")
 	version("1.38.0", commit="2ce17166b6f73b5093acec2a3dde33b6bcfa56bc")
 	version("1.36.0", commit="3358c89227a4d2e237ee5f8c532f468460a16ee2")
 	version("1.34.0", commit="7f8d0cb58a527a5d7ba94a773279f13aedca6ec7")

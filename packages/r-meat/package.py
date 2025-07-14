@@ -13,11 +13,10 @@ class RMeat(RPackage):
 	"""
 	
 	homepage = "https://github.com/sarah-voisin/MEAT"
-	bioc = "MEAT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MEAT_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MEAT/MEAT_1.14.0.tar.gz"]
+	bioc = "MEAT"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="a071ad563a70ebe4672102a8cac71a1b489362de1c6d639b822e76b7cff6a141")
+	version("1.20.0", commit="24062c09b043e540b6aee63c51275eecd654b174")
+	version("1.14.0", commit="d898e4399b0e4454bec4517dc886c7d9802d5d65")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-impute@1.58:", type=("build", "run"))

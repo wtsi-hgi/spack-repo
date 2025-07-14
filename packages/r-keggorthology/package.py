@@ -12,11 +12,10 @@ class RKeggorthology(RPackage):
 	graphical representation of the Feb 2010 KEGG Orthology. The KEGG orthology is a set of pathway IDs that are not to be confused with the KEGG ortholog IDs.
 	"""
 	
-	bioc = "keggorthology" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/keggorthology_2.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/keggorthology/keggorthology_2.54.0.tar.gz"]
+	bioc = "keggorthology"
 
-	version("2.60.0", tag="RELEASE_3_21")
-	version("2.54.0", sha256="49d419f2a8d206ef7443aeaf1508735e6df18a5d1c376985966e7d8828c16659")
+	version("2.60.0", commit="550c8bd8272bb385958bc3ff9d018b772fb7e4b4")
+	version("2.54.0", commit="86332c3747bcc4b724ddf88bf9979fdc02b599c3")
 
 	depends_on("r@2.5:", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

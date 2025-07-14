@@ -13,11 +13,10 @@ class RBrendadb(RPackage):
 	"""
 	
 	homepage = "https://github.com/y1zhou/brendaDb"
-	bioc = "brendaDb" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/brendaDb_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/brendaDb/brendaDb_1.16.0.tar.gz"]
+	bioc = "brendaDb"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="1ea1ce49d64ab74770811353e97585d59e4664afa88c21c8272fbbf1b9314dc3")
+	version("1.22.0", commit="3aab39b2bc47c101b80dd7b626d795d833778aa4")
+	version("1.16.0", commit="b1861ff58a4601d5806fd5f0af950caa688c7aa8")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

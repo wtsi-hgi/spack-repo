@@ -13,11 +13,10 @@ class RInteractivecomplexheatmap(RPackage):
 	"""
 	
 	homepage = "https://github.com/jokergoo/InteractiveComplexHeatmap"
-	bioc = "InteractiveComplexHeatmap" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/InteractiveComplexHeatmap_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/InteractiveComplexHeatmap/InteractiveComplexHeatmap_1.10.0.tar.gz"]
+	bioc = "InteractiveComplexHeatmap"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="774e59f097827c840e4b3455928b2e2cd7f08289d4f1ee51bb9d48fab5c11e92")
+	version("1.16.0", commit="3c271570bd71e76b211cd651c5f466ae781ad20c")
+	version("1.10.0", commit="020c73a65ebbb4aa5827e03786f67a3b2fd4a6fa")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-complexheatmap@2.11:", type=("build", "run"))

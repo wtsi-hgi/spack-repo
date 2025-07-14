@@ -13,11 +13,10 @@ class RScdesign3(RPackage):
 	"""
 	
 	homepage = "https://github.com/SONGDONGYUAN1994/scDesign3"
-	bioc = "scDesign3" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDesign3_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scDesign3/scDesign3_1.0.1.tar.gz"]
+	bioc = "scDesign3"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.1", sha256="6cdc356c3ddb772f4683bd4cd524c13ae6841768e6f5e4b630f87868c7629208", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDesign3_1.0.1.tar.gz")
+	version("1.6.0", commit="39a5184584635bd04181bdfed6be8257a96d8f8a")
+	version("1.0.1", commit="462115d448293163f86198d24bc517b4760839c7")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

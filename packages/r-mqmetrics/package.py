@@ -12,10 +12,9 @@ class RMqmetrics(RPackage):
 	The package MQmetrics (MaxQuant metrics) provides a workflow to analyze the quality and reproducibility of your proteomics mass spectrometry analysis from MaxQuant.Input data are extracted from several MaxQuant output tables and produces a pdf report. It includes several visualization tools to check numerous parameters regarding the quality of the runs. It also includes two functions to visualize the iRT peptides from Biognosys in case they were spiked in the samples.
 	"""
 	
-	bioc = "MQmetrics" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MQmetrics_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MQmetrics/MQmetrics_1.10.0.tar.gz"]
+	bioc = "MQmetrics"
 
-	version("1.10.0", sha256="58c78c557937edd084a3868ea0c5036388fa3b59c78b31e2da08962964ab5396")
+	version("1.10.0", commit="86b96435866214f4b9d91790fac56cf402b31ffe")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-readr", type=("build", "run"))

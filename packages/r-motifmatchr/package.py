@@ -12,11 +12,10 @@ class RMotifmatchr(RPackage):
 	Quickly find motif matches for many motifs and many sequences. Wraps C++ code from the MOODS motif calling library, which was developed by Pasi Rastas, Janne Korhonen, and Petri Martinmäki.
 	"""
 	
-	bioc = "motifmatchr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/motifmatchr_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/motifmatchr/motifmatchr_1.24.0.tar.gz"]
+	bioc = "motifmatchr"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="d2848ba2227bfe914e57157fbbb22c44a13848bb26b9f295bef86d7f7b7a738e")
+	version("1.30.0", commit="662d8246ff8502055206fe10fac0b99f45092e0b")
+	version("1.24.0", commit="40511431be263ede54e0151e578bfe5f35ed98e9")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

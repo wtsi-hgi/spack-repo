@@ -13,11 +13,10 @@ class RTcgabiolinksguiData(RPackage):
 	"""
 	
 	homepage = "https://github.com/BioinformaticsFMRP/TCGAbiolinksGUI.data"
-	bioc = "TCGAbiolinksGUI.data" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TCGAbiolinksGUI.data_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TCGAbiolinksGUI.data/TCGAbiolinksGUI.data_1.22.0.tar.gz"]
+	bioc = "TCGAbiolinksGUI.data"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="cad5d078da2d9df521a4bc5398324849caf4d73c6d3c46dda362e59214b6d511")
+	version("1.28.0", commit="487076b31481187a8518c74fc36c853f42c675bd")
+	version("1.22.0", commit="c3631f00ce5e737c22562f8e341c01f86f377660")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

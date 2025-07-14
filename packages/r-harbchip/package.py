@@ -12,11 +12,10 @@ class RHarbchip(RPackage):
 	data from a yeast ChIP-chip experiment
 	"""
 	
-	bioc = "harbChIP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/harbChIP_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/harbChIP/harbChIP_1.40.0.tar.gz"]
+	bioc = "harbChIP"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="6268dc43784c0515f4ca104c3c1d504caca5548d05a624189ad13a67e0286575")
+	version("1.46.0", commit="8aa02dca7ee126d5a80e855af7b5afba721bf7cb")
+	version("1.40.0", commit="8611d179015e38dc49897a5951ddc897f5567e99")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

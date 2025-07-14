@@ -12,11 +12,10 @@ class ROpencyto(RPackage):
 	This package is designed to facilitate the automated gating methods in sequential way to mimic the manual gating strategy.
 	"""
 	
-	bioc = "openCyto" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/openCyto_2.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/openCyto/openCyto_2.14.0.tar.gz"]
+	bioc = "openCyto"
 
-	version("2.20.0", tag="RELEASE_3_21")
-	version("2.14.0", sha256="9aaed21343ce39883ea90540b2fba4899f8b0d9084fae6666b9febf78b516489")
+	version("2.20.0", commit="6355a6622c77ecbca93411da2490ce16007d0336")
+	version("2.14.0", commit="4b6c714c27cb6bd9053912d4acb5c417b75cea89")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

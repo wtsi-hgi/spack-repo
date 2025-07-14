@@ -12,11 +12,10 @@ class RCydar(RPackage):
 	Identifies differentially abundant populations between samples and groups in mass cytometry data. Provides methods for counting cells into hyperspheres, controlling the spatial false discovery rate, and visualizing changes in abundance in the high-dimensional marker space.
 	"""
 	
-	bioc = "cydar" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cydar_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cydar/cydar_1.26.0.tar.gz"]
+	bioc = "cydar"
 
-	version("1.32.1", tag="RELEASE_3_21")
-	version("1.26.0", sha256="da61e1f9a394d64538070bf084fdfceaf4bf43e6ab18389ede54da058f5ee305")
+	version("1.32.1", commit="7c6a4c8df2956dbcb6893eb5518895c54d6f8fa6")
+	version("1.26.0", commit="0191ed4f866cf42f61574df80c26cd5c66f2da37")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-viridis", type=("build", "run"))

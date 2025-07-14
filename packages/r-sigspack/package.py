@@ -13,11 +13,10 @@ class RSigspack(RPackage):
 	"""
 	
 	homepage = "https://github.com/bihealth/SigsPack"
-	bioc = "SigsPack" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SigsPack_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SigsPack/SigsPack_1.16.0.tar.gz"]
+	bioc = "SigsPack"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="f5473843a7af8f8490c067c27c125822653b5b4994dc6c663ffd76c0027bb2e9")
+	version("1.22.0", commit="55a66b0ee860f3887a1ab4ca5a3c4ffc5c6a52c7")
+	version("1.16.0", commit="bbf57096ede9a2766a84c63294a0df9a03f048ba")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-quadprog@1.5.5:", type=("build", "run"))

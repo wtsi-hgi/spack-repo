@@ -12,11 +12,10 @@ class RChipqc(RPackage):
 	Quality metrics for ChIPseq data.
 	"""
 	
-	bioc = "ChIPQC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChIPQC_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChIPQC/ChIPQC_1.38.0.tar.gz"]
+	bioc = "ChIPQC"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="123e3c006c30aa0e6327d3bfc58729c8cc3f9d7274825282011a7b28b4e89328")
+	version("1.44.0", commit="0aab1b519f4e2eece18db678c08e7eba4a3a3c5d")
+	version("1.38.0", commit="850e458eabbe145d79dc467c6fc26150b5a4fea9")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

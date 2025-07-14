@@ -13,11 +13,10 @@ class RTissuetreg(RPackage):
 	"""
 	
 	homepage = "https://github.com/cimbusch/tissueTreg"
-	bioc = "tissueTreg" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tissueTreg_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tissueTreg/tissueTreg_1.22.0.tar.gz"]
+	bioc = "tissueTreg"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="43bbb974ab42a2766ef355769297a80b09526d4b49675c37fc41dd3437ff129e")
+	version("1.28.0", commit="290bbb85cb806353cca63f85bc0a9ae1acba9eb4")
+	version("1.22.0", commit="6b37bb058d93c8de73255d8b2845d5e12ed488fd")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

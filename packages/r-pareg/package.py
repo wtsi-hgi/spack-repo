@@ -13,11 +13,10 @@ class RPareg(RPackage):
 	"""
 	
 	homepage = "https://github.com/cbg-ethz/pareg"
-	bioc = "pareg" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pareg_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pareg/pareg_1.6.0.tar.gz"]
+	bioc = "pareg"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="f60a1ae8a132d32763c39ae05bbb2364b16ed8446826cf62106d6080ba447233")
+	version("1.12.0", commit="b5600109ec52b94a5131ad57de8de7d0fe1da44c")
+	version("1.6.0", commit="cedc38757b77d612e39e17da417e2be1de4b78b6")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-tensorflow@2.2:", type=("build", "run"))

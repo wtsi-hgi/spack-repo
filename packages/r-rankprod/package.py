@@ -12,11 +12,10 @@ class RRankprod(RPackage):
 	Non-parametric method for identifying differentially expressed (up- or down- regulated) genes based on the estimated percentage of false predictions (pfp). The method can combine data sets from different origins (meta-analysis) to increase the power of the identification.
 	"""
 	
-	bioc = "RankProd" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RankProd_3.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RankProd/RankProd_3.28.0.tar.gz"]
+	bioc = "RankProd"
 
-	version("3.34.0", tag="RELEASE_3_21")
-	version("3.28.0", sha256="a4c6439655b559cdd4e89534e65e347c95c7ba0ddac1f34ba301af4ab84a388d")
+	version("3.34.0", commit="2ff298b818661afb707947427e61b7fb41cbfc3d")
+	version("3.28.0", commit="bb5556493c31600e8b861154d9fbf322eaea6190")
 
 	depends_on("r@3.2.1:", type=("build", "run"))
 	depends_on("r-rmpfr", type=("build", "run"))

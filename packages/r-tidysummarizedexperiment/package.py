@@ -13,11 +13,10 @@ class RTidysummarizedexperiment(RPackage):
 	"""
 	
 	homepage = "https://github.com/stemangiola/tidySummarizedExperiment"
-	bioc = "tidySummarizedExperiment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tidySummarizedExperiment_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tidySummarizedExperiment/tidySummarizedExperiment_1.12.0.tar.gz"]
+	bioc = "tidySummarizedExperiment"
 
-	version("1.18.1", tag="RELEASE_3_21")
-	version("1.12.0", sha256="8e445887d4ee8e69591ef7e311bf8500937086151069efabac5bbfb7cb103a6f")
+	version("1.18.1", commit="310dab9e36511c15e33f93920a8349da1658a113")
+	version("1.12.0", commit="b3e0e326319fcc38d46ae5cf57abe8ed70716bdc")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

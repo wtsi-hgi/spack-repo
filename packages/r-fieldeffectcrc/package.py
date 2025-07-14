@@ -13,11 +13,10 @@ class RFieldeffectcrc(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org/packages/release/bioc/html/FieldEffectCrc.html"
-	bioc = "FieldEffectCrc" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/FieldEffectCrc_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/FieldEffectCrc/FieldEffectCrc_1.12.0.tar.gz"]
+	bioc = "FieldEffectCrc"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="46ddc3ac201ad37bceb86af48ad9036d9e77f359855867fd1cabec92f2f5bf8f")
+	version("1.18.0", commit="b4955ead949a62748243cb25ce506166052fa68c")
+	version("1.12.0", commit="7724df8a9bb198a0e20bfbf44fde525d39ad16c9")
 
 	depends_on("r-biocstyle", type=("build", "run"))
 	depends_on("r-runit", type=("build", "run"))

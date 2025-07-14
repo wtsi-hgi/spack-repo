@@ -13,11 +13,10 @@ class RTenxbusdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/BUStools/TENxBUSData"
-	bioc = "TENxBUSData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TENxBUSData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TENxBUSData/TENxBUSData_1.16.0.tar.gz"]
+	bioc = "TENxBUSData"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="f6a0de55b9409f4efedd2139bb507a79551874ae991a4a0c337afdad005e381c")
+	version("1.22.0", commit="285e716647aa5078a79f5d2bd7cff18888d0f421")
+	version("1.16.0", commit="8f20078a9fe469631cdc10604fc9d9726e3f0a2d")
 
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

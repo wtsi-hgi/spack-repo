@@ -13,9 +13,8 @@ class RWatermelon(RPackage):
 	objects produced by methylumi and minfi packages."""
 
 	bioc = "wateRmelon"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/wateRmelon_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/wateRmelon/wateRmelon_2.8.0.tar.gz"]
-	version("2.14.0", tag="RELEASE_3_21")
-	version("2.8.0", sha256="34a5441688298f8b710b607a89fd52f9a5b50d89fda7a744f196a5683f0e42e5")
+	version("2.14.0", commit="f9a417bb4a2ddff58d1235d437483e2f1748f095")
+	version("2.8.0", commit="6cb9c13511e818acd6dbbed0d96480b87e644ea2")
 	version("2.6.0", commit="a46541ffcc08efebf08ea29cb214a45f51f5cb72")
 	version("2.4.0", commit="31c15255511940b8b83d039c42ec89e43ceb0885")
 	version("2.2.0", commit="6ec49efe98aef31d0789b31ab048eb46edec762c")

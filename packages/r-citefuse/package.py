@@ -12,11 +12,10 @@ class RCitefuse(RPackage):
 	CiteFuse pacakage implements a suite of methods and tools for CITE-seq data from pre-processing to integrative analytics, including doublet detection, network-based modality integration, cell type clustering, differential RNA and protein expression analysis, ADT evaluation, ligand-receptor interaction analysis, and interactive web-based visualisation of the analyses.
 	"""
 	
-	bioc = "CiteFuse" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CiteFuse_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CiteFuse/CiteFuse_1.14.0.tar.gz"]
+	bioc = "CiteFuse"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="2d8e3dac5941788205fcc08b7b8cd188252d8772b3d8693028eb80403364d5cb")
+	version("1.20.0", commit="051ba244d75a1f2741b82091b1d54d35349815b5")
+	version("1.14.0", commit="154770ff14d2aeac044563e32b072946e1899dcc")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-singlecellexperiment@1.8:", type=("build", "run"))

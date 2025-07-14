@@ -13,11 +13,10 @@ class REscher(RPackage):
 	"""
 	
 	homepage = "https://github.com/boyiguo1/escheR"
-	bioc = "escheR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/escheR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/escheR/escheR_1.2.0.tar.gz"]
+	bioc = "escheR"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="d997b24d8123ce01826c65f7aa09dacd50869d5d3597679dbffc1416da9c6141")
+	version("1.8.0", commit="8df0b7ee9f2326337a80acee492a0081728c09e3")
+	version("1.2.0", commit="5db76f506a044daf9f1a1828a9836526b8279dc8")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r@4.3:", type=("build", "run"))

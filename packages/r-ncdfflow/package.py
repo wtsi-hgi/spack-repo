@@ -12,11 +12,10 @@ class RNcdfflow(RPackage):
 	Provides HDF5 storage based methods and functions for manipulation of flow cytometry data.
 	"""
 	
-	bioc = "ncdfFlow" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ncdfFlow_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ncdfFlow/ncdfFlow_2.48.0.tar.gz"]
+	bioc = "ncdfFlow"
 
-	version("2.54.0", tag="RELEASE_3_21")
-	version("2.48.0", sha256="40a55019a80bde5e65ea68162b3cc24ac87366ee2ac621f6433826b3517b3b7d")
+	version("2.54.0", commit="c78def5d63c2ed22ef7c774760624bc8b10ab68e")
+	version("2.48.0", commit="8367dea8a78012d734bc51630ac95a7a73e48ff5")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

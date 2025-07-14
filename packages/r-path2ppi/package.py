@@ -13,11 +13,10 @@ class RPath2ppi(RPackage):
 	"""
 	
 	homepage = "http://www.bioinformatik.uni-frankfurt.de/"
-	bioc = "Path2PPI" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Path2PPI_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Path2PPI/Path2PPI_1.32.0.tar.gz"]
+	bioc = "Path2PPI"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="09d58196321ae53dc8f815a4c4dd95aee82aad045e4d0ead2343db18d20555de")
+	version("1.38.0", commit="4ab829873dca98b3fe51a2cbf86701ff3bb12c8a")
+	version("1.32.0", commit="417e067a6d2f71af3a1f7fc5481592357a3e341a")
 
 	depends_on("r@3.2.1:", type=("build", "run"))
 	depends_on("r-igraph@1.0.1:", type=("build", "run"))

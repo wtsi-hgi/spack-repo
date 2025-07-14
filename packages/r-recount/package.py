@@ -13,11 +13,10 @@ class RRecount(RPackage):
 	"""
 	
 	homepage = "https://github.com/leekgroup/recount"
-	bioc = "recount" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/recount_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/recount/recount_1.28.0.tar.gz"]
+	bioc = "recount"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="ef6037f3fccee7a3b5e823202753b3d490173ea4e401e0668af364e64976c2da")
+	version("1.34.0", commit="d3a87e13af36f63b4f8561c85370e4cbb3511138")
+	version("1.28.0", commit="59168725fc3a40d82bc9c4fa29b86b798e0e3c45")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

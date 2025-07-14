@@ -12,10 +12,9 @@ class RMacsdata(RPackage):
 	Test datasets from the MACS3 test examples are use in the examples of the `MACSr` package. All 9 datasets are uploaded to the `ExperimentHub`. The original data can be found at: https://github.com/macs3-project/MACS/.
 	"""
 	
-	bioc = "MACSdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MACSdata_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MACSdata/MACSdata_1.10.0.tar.gz"]
+	bioc = "MACSdata"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="416657b159ac1f4a72546671d21787df759d75e3a54fc6f887e2249bd3f0f284")
+	version("1.16.0", commit="894683e454856ee89f187613a20aa678ed0bc81c")
+	version("1.10.0", commit="43b7147cb5d716e487843e7b4d6d41ad8497e712")
 
 

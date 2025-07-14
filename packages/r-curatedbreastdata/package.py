@@ -12,11 +12,10 @@ class RCuratedbreastdata(RPackage):
 	Curated human breast cancer tissue S4 ExpresionSet datasets from over 16 clinical trials comprising over 2,000 patients. All datasets contain at least one type of outcomes variable and treatment information (minimum level: whether they had chemotherapy and whether they had hormonal therapy). Includes code to post-process these datasets.
 	"""
 	
-	bioc = "curatedBreastData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/curatedBreastData_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/curatedBreastData/curatedBreastData_2.30.0.tar.gz"]
+	bioc = "curatedBreastData"
 
-	version("2.36.0", tag="RELEASE_3_21")
-	version("2.30.0", sha256="5933489ede1176761ddcf1b42c4af49dbf3988ce20d3d4d9395f51b17094f388")
+	version("2.36.0", commit="51e57331b309c4a8b05fd4608365a99434cfd1a1")
+	version("2.30.0", commit="252ba232b853fb8b5fc214fd5f29637897ad6d97")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-xml", type=("build", "run"))

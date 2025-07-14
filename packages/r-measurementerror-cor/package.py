@@ -12,9 +12,8 @@ class RMeasurementerrorCor(RPackage):
 	Two-stage measurement error model for correlation estimation with smaller bias than the usual sample correlation
 	"""
 	
-	bioc = "MeasurementError.cor" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MeasurementError.cor_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MeasurementError.cor/MeasurementError.cor_1.74.0.tar.gz"]
+	bioc = "MeasurementError.cor"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="2e7631fb9bbf651651d983066173f235aa668638ab882f1e983df16b0468ec42")
+	version("1.80.0", commit="bd585eb03cd521b5506f7a6374a365b42ca1ce79")
+	version("1.74.0", commit="54fec2b2ec35cf2b2f6a67ddf9b2a22e38140418")
 

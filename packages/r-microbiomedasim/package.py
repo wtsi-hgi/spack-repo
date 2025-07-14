@@ -13,11 +13,10 @@ class RMicrobiomedasim(RPackage):
 	"""
 	
 	homepage = "https://github.com/williazo/microbiomeDASim"
-	bioc = "microbiomeDASim" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/microbiomeDASim_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/microbiomeDASim/microbiomeDASim_1.16.0.tar.gz"]
+	bioc = "microbiomeDASim"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="f3821d42237e287e64dd80c97743f4edde3b63a78df76b5a6f7f1f583d2c81f1")
+	version("1.22.0", commit="c48d3dd38c21c64d4685e43f5269b080f8dddfbc")
+	version("1.16.0", commit="f2a85227e1f17438733aabe357ce412b7f2b5d97")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

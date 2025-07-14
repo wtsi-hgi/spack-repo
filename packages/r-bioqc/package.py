@@ -13,11 +13,10 @@ class RBioqc(RPackage):
 	"""
 	
 	homepage = "https://accio.github.io/BioQC"
-	bioc = "BioQC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioQC_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioQC/BioQC_1.30.0.tar.gz"]
+	bioc = "BioQC"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="8a4e7c5e2e5e245274a87c920909536d1652aec0cc9a35a81730152140787596")
+	version("1.36.0", commit="2e46294e16a07d5eff00921608a969eaef0035eb")
+	version("1.30.0", commit="e232c7781b9d035a19c9176cc1b9582263fe0032")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

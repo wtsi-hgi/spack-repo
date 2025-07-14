@@ -13,11 +13,10 @@ class RMira(RPackage):
 	"""
 	
 	homepage = "http://databio.org/mira"
-	bioc = "MIRA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MIRA_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MIRA/MIRA_1.24.0.tar.gz"]
+	bioc = "MIRA"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="a2cfe8b713b4fd2d0bd235fe8e2f8f1806de9a9e7b80bdf6ed859e3c4269590f")
+	version("1.30.0", commit="12fa618919952ff264bfc362b4287855751c3949")
+	version("1.24.0", commit="a6d3f7cdc3e9bd6668b622c74538e300eb62203d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

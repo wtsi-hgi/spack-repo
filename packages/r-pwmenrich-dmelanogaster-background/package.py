@@ -12,11 +12,10 @@ class RPwmenrichDmelanogasterBackground(RPackage):
 	PWMEnrich pre-compiled background objects for Drosophila melanogaster and MotifDb D. melanogaster motifs.
 	"""
 	
-	bioc = "PWMEnrich.Dmelanogaster.background" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PWMEnrich.Dmelanogaster.background_4.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PWMEnrich.Dmelanogaster.background/PWMEnrich.Dmelanogaster.background_4.36.0.tar.gz"]
+	bioc = "PWMEnrich.Dmelanogaster.background"
 
-	version("4.42.0", tag="RELEASE_3_21")
-	version("4.36.0", sha256="2f9e6be913ecc4d5f5c6f7d30139710f1ba232d342aa57e2c3280bb3b0f05109")
+	version("4.42.0", commit="cad267fb1b18d3871f5b73967545732a836c76cc")
+	version("4.36.0", commit="22c7fe3170e802778bd03ad00359c9875ac76216")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-pwmenrich", type=("build", "run"))

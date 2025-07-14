@@ -12,11 +12,10 @@ class RCgen(RPackage):
 	This is a package for analysis of case-control data in genetic epidemiology. It provides a set of statistical methods for evaluating gene-environment (or gene-genes) interactions under multiplicative and additive risk models, with or without assuming gene-environment (or gene-gene) independence in the underlying population.
 	"""
 	
-	bioc = "CGEN" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CGEN_3.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CGEN/CGEN_3.38.0.tar.gz"]
+	bioc = "CGEN"
 
-	version("3.44.0", tag="RELEASE_3_21")
-	version("3.38.0", sha256="3609d6ff835c871cbcc497f1e846c6aede3e2d916fe7c6eb14701a313fef5e14")
+	version("3.44.0", commit="941049d1cecac6168056235eb41897a1eba72579")
+	version("3.38.0", commit="f9588ed20eb4a6f2d559ea5ca37d8463803cff9e")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))

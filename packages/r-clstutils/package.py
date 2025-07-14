@@ -12,11 +12,10 @@ class RClstutils(RPackage):
 	Tools for performing taxonomic assignment based on phylogeny using pplacer and clst.
 	"""
 	
-	bioc = "clstutils" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clstutils_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clstutils/clstutils_1.50.0.tar.gz"]
+	bioc = "clstutils"
 
-	version("1.56.0", tag="RELEASE_3_21")
-	version("1.50.0", sha256="c618db94a7359eec52c5a336b092b1524d22c29dc9677a8818fbc80a87d08172")
+	version("1.56.0", commit="9c5813f495a87f19460b5ea93dbe5b98856ed75a")
+	version("1.50.0", commit="51194cc00de93fa546d766e2bddc2702d417cd04")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-clst", type=("build", "run"))

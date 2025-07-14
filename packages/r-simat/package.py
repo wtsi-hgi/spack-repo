@@ -13,11 +13,10 @@ class RSimat(RPackage):
 	"""
 	
 	homepage = "http://omics.georgetown.edu/SIMAT.html"
-	bioc = "SIMAT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SIMAT_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SIMAT/SIMAT_1.34.0.tar.gz"]
+	bioc = "SIMAT"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="3d21223855349c651f2524ae3115ca7d35149a2a120fce0358d98dfe59f326d9")
+	version("1.40.0", commit="a1040c6f2b3853c301e76c22be95429f90fc08ea")
+	version("1.34.0", commit="6811bf1a0da1ab18289eb35090f5e47fa05741ff")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp@0.11.3:", type=("build", "run"))

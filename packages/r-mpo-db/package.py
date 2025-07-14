@@ -13,11 +13,10 @@ class RMpoDb(RPackage):
 	"""
 	
 	homepage = "https://github.com/YuLab-SMU/MPO.db"
-	bioc = "MPO.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/MPO.db_0.99.7.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/MPO.db/MPO.db_0.99.7.tar.gz"]
+	bioc = "MPO.db"
 
-	version("0.99.8", tag="RELEASE_3_21")
-	version("0.99.7", sha256="74b3e8f0a3b5b896b5d0c944e3334c750a4404b800fa70da9a2aa1f066643974")
+	version("0.99.8", commit="653dfe088df4ac66d6f56d751a485b0c4edcf70c")
+	version("0.99.7", commit="76f7a15a7a3de6f43bec30588cbc17b769c7d30b")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

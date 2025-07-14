@@ -13,10 +13,9 @@ class RChipseqdb(RPackage):
 	"""
 	
 	homepage = "https://www.bioconductor.org/help/workflows/chipseqDB/"
-	bioc = "chipseqDB" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/chipseqDB_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/chipseqDB/chipseqDB_1.26.0.tar.gz"]
+	bioc = "chipseqDB"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="19bfb0317f12d8a73f8d41d1dd7b83bb411fab579716d3a57c95d9bf3333c8a9")
+	version("1.32.0", commit="882fa98ab28aa858b1aaae450384a5a2b5f08cd3")
+	version("1.26.0", commit="c28b9482ddc391ff5f3891c71aee99be748cf043")
 
 

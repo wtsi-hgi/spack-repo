@@ -13,11 +13,10 @@ class RMethinheritsim(RPackage):
 	"""
 	
 	homepage = "https://github.com/belleau/methInheritSim"
-	bioc = "methInheritSim" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methInheritSim_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methInheritSim/methInheritSim_1.24.0.tar.gz"]
+	bioc = "methInheritSim"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="1c71c13b023b3806790ed1982761488db186c9d49c973f3a27b401d64ae04f87")
+	version("1.30.0", commit="8055b10bfcbea0a6023f6e3fccd40b8d51915afa")
+	version("1.24.0", commit="fd8596a82dfc655cc488eca1f7ae41a7759b7ad5")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-methylkit", type=("build", "run"))

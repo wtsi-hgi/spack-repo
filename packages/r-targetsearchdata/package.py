@@ -13,10 +13,9 @@ class RTargetsearchdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/acinostroza/TargetSearchData"
-	bioc = "TargetSearchData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TargetSearchData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TargetSearchData/TargetSearchData_1.40.0.tar.gz"]
+	bioc = "TargetSearchData"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="ce7d56847deafdbfdc201a8d25637a3deffb0a66c1c1f22a6de99cc82b10e88b")
+	version("1.46.0", commit="44972fe46d4bd4ca7b420db1c894117f66c9f376")
+	version("1.40.0", commit="7c06ae3d8d8fdbae8b06a52f0cfc133d4b3e57ec")
 
 

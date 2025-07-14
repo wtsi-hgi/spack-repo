@@ -12,11 +12,10 @@ class RChipenrichData(RPackage):
 	Supporting data for the chipenrich package. Includes pre-defined gene sets, gene locus definitions, and mappability estimates.
 	"""
 	
-	bioc = "chipenrich.data" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/chipenrich.data_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/chipenrich.data/chipenrich.data_2.26.0.tar.gz"]
+	bioc = "chipenrich.data"
 
-	version("2.32.0", tag="RELEASE_3_21")
-	version("2.26.0", sha256="2300819ed2dfe67ab81001036778f38398f49465a36fce760ba07cb8fed2d141")
+	version("2.32.0", commit="17e3e4acc5c5133e37f0dd6e499de3e380e58ed2")
+	version("2.26.0", commit="18414bb55b4009f92ff01824e3884a77d80925bd")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

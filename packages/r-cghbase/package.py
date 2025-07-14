@@ -13,11 +13,10 @@ class RCghbase(RPackage):
 	"""
 	
 	homepage = "https://github.com/tgac-vumc/CGHbase"
-	bioc = "CGHbase" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CGHbase_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CGHbase/CGHbase_1.62.0.tar.gz"]
+	bioc = "CGHbase"
 
-	version("1.68.0", tag="RELEASE_3_21")
-	version("1.62.0", sha256="6496bbc196f6bbf9864b4f69d6974b099e986842834f008d4ab6ee19f01b80c7")
+	version("1.68.0", commit="ae87494b4cdc16d104ad83bd998d8ae24481ba91")
+	version("1.62.0", commit="536388705123a3efd35481d70538eb11e6bf8963")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

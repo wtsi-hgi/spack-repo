@@ -13,11 +13,10 @@ class RPipeframe(RPackage):
 	"""
 	
 	homepage = "https://github.com/wzthu/pipeFrame"
-	bioc = "pipeFrame" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pipeFrame_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pipeFrame/pipeFrame_1.18.0.tar.gz"]
+	bioc = "pipeFrame"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="c972d8613581a03de083d3e894c260b5047fb7579aa6417d023ee40fc1927def")
+	version("1.24.0", commit="3d58e7454f54227165a95201a819c2e207b4fad4")
+	version("1.18.0", commit="a212a9ed398273ddf9b3e6867fb2f0f8f93dd252")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))

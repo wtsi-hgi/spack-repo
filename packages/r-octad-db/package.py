@@ -12,11 +12,10 @@ class ROctadDb(RPackage):
 	Open Cancer TherApeutic Discovery (OCTAD) package implies sRGES approach for the drug discovery. The essential idea is to identify drugs that reverse the gene expression signature of a disease by tamping down over-expressed genes and stimulating weakly expressed ones. The following package contains all required precomputed data for whole OCTAD pipeline computation.
 	"""
 	
-	bioc = "octad.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/octad.db_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/octad.db/octad.db_1.4.0.tar.gz"]
+	bioc = "octad.db"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="c98a46efe801cd8b14f97e7a1b07c2a178afdbc502259d68185285c39881b10d")
+	version("1.10.0", commit="8d8ae172291782d358ad116d19544dcdcc9e520c")
+	version("1.4.0", commit="be738ab6db0a21919d799cefd6d72d9b87fa4d3d")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

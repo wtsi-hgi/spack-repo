@@ -13,11 +13,10 @@ class RCustomcmpdb(RPackage):
 	"""
 	
 	homepage = "https://github.com/yduan004/customCMPdb/"
-	bioc = "customCMPdb" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/customCMPdb_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/customCMPdb/customCMPdb_1.12.0.tar.gz"]
+	bioc = "customCMPdb"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="47f7d8b794bec9cc70004be50e6149210928cb58c408cffc321f805f3812b395")
+	version("1.18.0", commit="170349fc14b753fbb1f6823187e2b5229cb0bcf2")
+	version("1.12.0", commit="b93db2fc13d04c50a11f152973c99d8c0cfdfb1f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

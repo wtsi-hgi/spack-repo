@@ -13,11 +13,10 @@ class RSnageedata(RPackage):
 	"""
 	
 	homepage = "http://fleming.ulb.ac.be/SNAGEE"
-	bioc = "SNAGEEdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SNAGEEdata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SNAGEEdata/SNAGEEdata_1.38.0.tar.gz"]
+	bioc = "SNAGEEdata"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="76ded9fe3edf46e0f928499e701a7a11581a97dcf39479e5f7794aaa3b718b9f")
+	version("1.44.0", commit="27e11a7a31da530c4c505382aa5cc8e7b1d4e5fe")
+	version("1.38.0", commit="79ebb8d74a6c45ec8839a5c36ac4b31203c10275")
 
 	depends_on("r@2.6:", type=("build", "run"))
 

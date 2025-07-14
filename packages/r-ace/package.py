@@ -13,11 +13,10 @@ class RAce(RPackage):
 	"""
 	
 	homepage = "https://github.com/tgac-vumc/ACE"
-	bioc = "ACE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ACE_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ACE/ACE_1.20.0.tar.gz"]
+	bioc = "ACE"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="28453ea6e1ed7e8a5105f9caaa0602d4c145042f37fbba6391ee5bf3f5a48052")
+	version("1.26.0", commit="def9090148ca6996cdf0daacf021897d8653d8df")
+	version("1.20.0", commit="1b2f96b83a1017c5a4ede76379311245d330eb3f")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

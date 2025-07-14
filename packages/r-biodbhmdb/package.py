@@ -13,11 +13,10 @@ class RBiodbhmdb(RPackage):
 	"""
 	
 	homepage = "https://github.com/pkrog/biodbHmdb"
-	bioc = "biodbHmdb" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biodbHmdb_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biodbHmdb/biodbHmdb_1.8.0.tar.gz"]
+	bioc = "biodbHmdb"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="9ed3b15f82965366f8277ef7ad0be09c30f5a643df51b8f77c23ec3f4decd5cf")
+	version("1.14.0", commit="a7f0a0f2cfdd2dbddbb598d7fafd909bf0951dfe")
+	version("1.8.0", commit="0efcfbf27d91da65c98a87040d16b22d10a665fe")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))

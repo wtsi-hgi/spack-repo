@@ -12,11 +12,10 @@ class RSinglemoleculefootprinting(RPackage):
 	SingleMoleculeFootprinting is an R package providing functions to analyze Single Molecule Footprinting (SMF) data. Following the workflow exemplified in its vignette, the user will be able to perform basic data analysis of SMF data with minimal coding effort. Starting from an aligned bam file, we show how to perform quality controls over sequencing libraries, extract methylation information at the single molecule level accounting for the two possible kind of SMF experiments (single enzyme or double enzyme), classify single molecules based on their patterns of molecular occupancy, plot SMF information at a given genomic location
 	"""
 	
-	bioc = "SingleMoleculeFootprinting" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SingleMoleculeFootprinting_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SingleMoleculeFootprinting/SingleMoleculeFootprinting_1.10.0.tar.gz"]
+	bioc = "SingleMoleculeFootprinting"
 
-	version("2.2.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="25f5df0e2eb836bc0fc80be1bfab0bb501f24d416199da14c6007b5a458eb096")
+	version("2.2.0", commit="a14d84c9a8894f96a75a11feb6ac5bd1140e77f5")
+	version("1.10.0", commit="44ae1a2b41153bb1391d228eecec53e29e0bdcb7")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

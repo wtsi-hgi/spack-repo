@@ -12,11 +12,10 @@ class RAllmll(RPackage):
 	This package provides probe-level data for 20 HGU133A and 20 HGU133B arrays which are a subset of arrays from a large ALL study. The data is for the MLL arrays. This data was published in Mary E. Ross, Xiaodong Zhou, Guangchun Song, Sheila A. Shurtleff, Kevin Girtman, W. Kent Williams, Hsi-Che Liu, Rami Mahfouz, Susana C. Raimondi, Noel Lenny, Anami Patel, and James R. Downing (2003) Classification of pediatric acute lymphoblastic leukemia by gene expression profiling Blood 102: 2951-2959
 	"""
 	
-	bioc = "ALLMLL" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ALLMLL_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ALLMLL/ALLMLL_1.42.0.tar.gz"]
+	bioc = "ALLMLL"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="7571970a65b09ddb0bda5eb3d83dfecf3e6362b7a6594c3145a6a1831f9102eb")
+	version("1.48.0", commit="f145b664df8fef608c4896f27603a86b706a88cf")
+	version("1.42.0", commit="681f5669b912350f7c443356d7279d0f9c84a5c0")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-affy@1.23.4:", type=("build", "run"))

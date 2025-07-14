@@ -13,10 +13,9 @@ class RCotan(RPackage):
 	"""
 	
 	homepage = "https://github.com/seriph78/COTAN"
-	bioc = "COTAN" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/COTAN_2.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/COTAN/COTAN_2.2.3.tar.gz"]
+	bioc = "COTAN"
 
-	version("2.8.4", tag="RELEASE_3_21")
+	version("2.8.4", commit="de5ef3b8e1c42c0c4473e8f40ee597f4d44a2281")
 	version("2.2.3", md5="a3d6f259a1ad5ac8203558ca7e61a91b")
 
 	depends_on("r@4.2:", type=("build", "run"))

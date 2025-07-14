@@ -13,11 +13,10 @@ class RKidpack(RPackage):
 	"""
 	
 	homepage = "http://www.dkfz.de/mga"
-	bioc = "kidpack" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/kidpack_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/kidpack/kidpack_1.44.0.tar.gz"]
+	bioc = "kidpack"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="335500d961efce7f9f4b23bd4e901264b305d392f35a6541baf82a7933548795")
+	version("1.50.0", commit="ebde15c57ead87bab522f29478ea71bf7359e8a4")
+	version("1.44.0", commit="3144e6cf67eb61358782428ecf2ccbd89490d06f")
 
 	depends_on("r@2.6:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

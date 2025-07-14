@@ -13,9 +13,8 @@ class RHypergraph(RPackage):
 	manipulating hypergraphs."""
 
 	bioc = "hypergraph"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hypergraph_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hypergraph/hypergraph_1.74.0.tar.gz"]
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="b13eade58013768c012f27c52728b5143f174ab14cf0cfbdc64e36cbbe937299")
+	version("1.80.0", commit="b29086d03e3ea84686546e9f0496cfa32746e987")
+	version("1.74.0", commit="af3bfda9cdd5d7344bca3194314fa6c80a7ec023")
 	version("1.72.0", commit="1b619b8dfeaf13dca7857013495d52dcfe4276b4")
 	version("1.70.0", commit="a5ffeafa8b999b5e7e77f93f4e6284abafc81621")
 	version("1.68.0", commit="7d53b5050f4ebe0a7007c02b76e93498195da3a4")

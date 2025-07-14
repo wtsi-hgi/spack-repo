@@ -12,11 +12,10 @@ class RMosbi(RPackage):
 	This package is a implementation of biclustering ensemble method MoSBi (Molecular signature Identification from Biclustering). MoSBi provides standardized interfaces for biclustering results and can combine their results with a multi-algorithm ensemble approach to compute robust ensemble biclusters on molecular omics data. This is done by computing similarity networks of biclusters and filtering for overlaps using a custom error model. After that, the louvain modularity it used to extract bicluster communities from the similarity network, which can then be converted to ensemble biclusters. Additionally, MoSBi includes several network visualization methods to give an intuitive and scalable overview of the results. MoSBi comes with several biclustering algorithms, but can be easily extended to new biclustering algorithms.
 	"""
 	
-	bioc = "mosbi" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mosbi_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mosbi/mosbi_1.8.0.tar.gz"]
+	bioc = "mosbi"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="cc07566f150101d20d02078f42331612a9e778f16e8c001555f496c1089bf3ee")
+	version("1.14.0", commit="536a484edb5efd939527a6f3547bee62751ea5c9")
+	version("1.8.0", commit="adf6bad0ea6996f5a9046b495a34814eb10a963a")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

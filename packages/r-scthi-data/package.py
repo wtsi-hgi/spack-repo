@@ -12,11 +12,10 @@ class RScthiData(RPackage):
 	Data for the vignette and tutorial of the package scTHI.
 	"""
 	
-	bioc = "scTHI.data" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scTHI.data_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scTHI.data/scTHI.data_1.14.0.tar.gz"]
+	bioc = "scTHI.data"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="88f0ad5cbcc14775be616a9ab2a08fd2a5ff6893d53f48ee4a9676c11be548f8")
+	version("1.20.0", commit="9e16ff05d724d4ade702df2314966a61479ca459")
+	version("1.14.0", commit="b66b93fdc141b8e3d6cc5dafbe6ec832c982ac2b")
 
 	depends_on("r@4:", type=("build", "run"))
 

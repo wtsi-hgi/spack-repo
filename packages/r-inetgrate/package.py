@@ -12,11 +12,10 @@ class RInetgrate(RPackage):
 	The iNETgrate package provides functions to build a correlation network in which nodes are genes. DNA methylation and gene expression data are integrated to define the connections between genes. This network is used to identify modules (clusters) of genes. The biological information in each of the resulting modules is represented by an eigengene. These biological signatures can be used as features e.g., for classification of patients into risk categories. The resulting biological signatures are very robust and give a holistic view of the underlying molecular changes.
 	"""
 	
-	bioc = "iNETgrate" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iNETgrate_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iNETgrate/iNETgrate_1.0.0.tar.gz"]
+	bioc = "iNETgrate"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="f786fddd3c6b47a9626578326a84154fd6f6735fd7db789c04644f7522704ffd")
+	version("1.6.0", commit="299831c72559623986945f77c71f6d43a938c00f")
+	version("1.0.0", commit="d17858613410d05c52aa6e6122b18ca7f0504f5b")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-biocstyle@2.18.1:", type=("build", "run"))

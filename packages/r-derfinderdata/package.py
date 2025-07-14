@@ -13,11 +13,10 @@ class RDerfinderdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/leekgroup/derfinderData"
-	bioc = "derfinderData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/derfinderData_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/derfinderData/derfinderData_2.20.0.tar.gz"]
+	bioc = "derfinderData"
 
-	version("2.26.0", tag="RELEASE_3_21")
-	version("2.20.0", sha256="f4e432648968879d898570b57e9d18dc9fd3d686b122d511d554cc6e2ba219c1")
+	version("2.26.0", commit="1b44e6b7cad938e4e0d79f538019b5088bb8eddd")
+	version("2.20.0", commit="4fdeff7e9ef1ae00708b19cc3f28e733755a286e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

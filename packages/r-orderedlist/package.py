@@ -13,11 +13,10 @@ class ROrderedlist(RPackage):
 	"""
 	
 	homepage = "http://compdiag.molgen.mpg.de/software/OrderedList.shtml"
-	bioc = "OrderedList" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OrderedList_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OrderedList/OrderedList_1.74.0.tar.gz"]
+	bioc = "OrderedList"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="ea42c6eb35123196f913938f10e2ccdbf56caaafa4738a536391af0dee3ae25e")
+	version("1.80.0", commit="1b3538f17a07e07c0770c76b987ed17302d00437")
+	version("1.74.0", commit="4ec2d2359a8f2e9c4f3f628a4bb27f072f3db02d")
 
 	depends_on("r@3.6.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

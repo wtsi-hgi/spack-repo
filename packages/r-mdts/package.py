@@ -12,11 +12,10 @@ class RMdts(RPackage):
 	A package for the detection of de novo copy number deletions in targeted sequencing of trios with high sensitivity and positive predictive value.
 	"""
 	
-	bioc = "MDTS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MDTS_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MDTS/MDTS_1.22.0.tar.gz"]
+	bioc = "MDTS"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="12de3a0a77d09681a233b2905222cc3cf0e3c03d5bb5673ca4c156c9634709b5")
+	version("1.28.0", commit="2078f3e79273dab1abd3b589656957addcf32692")
+	version("1.22.0", commit="7791f1ee8761f37ff6fc6adf26c990c024a6c7db")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicalignments", type=("build", "run"))

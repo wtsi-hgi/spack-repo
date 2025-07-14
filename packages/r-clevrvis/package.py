@@ -13,11 +13,10 @@ class RClevrvis(RPackage):
 	"""
 	
 	homepage = "https://github.com/sandmanns/clevRvis"
-	bioc = "clevRvis" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clevRvis_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clevRvis/clevRvis_1.2.0.tar.gz"]
+	bioc = "clevRvis"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="b40c4fe95a6b56bd73ccdaa87e5075600158db4399a3374665b1e220183cf55c")
+	version("1.8.0", commit="a07e7f9f5829b4c8f5756b628bdb0ef661f4c903")
+	version("1.2.0", commit="5390295c8833a5a778673b913fd5495fcd02c772")
 
 	depends_on("r-shiny", type=("build", "run"))
 	depends_on("r-ggraph", type=("build", "run"))

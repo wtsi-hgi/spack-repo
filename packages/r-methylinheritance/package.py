@@ -13,11 +13,10 @@ class RMethylinheritance(RPackage):
 	"""
 	
 	homepage = "https://github.com/adeschen/methylInheritance"
-	bioc = "methylInheritance" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methylInheritance_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methylInheritance/methylInheritance_1.26.0.tar.gz"]
+	bioc = "methylInheritance"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="3e8673f05113426819c27b397ff5b166347348bade6318a77dbb3c273c4b3b2a")
+	version("1.32.0", commit="9a4cf5875bcefa132af30812e8a87a7d7ee5af65")
+	version("1.26.0", commit="a5e1dc01e79910846846a2219c23b8dca75b778a")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-methylkit", type=("build", "run"))

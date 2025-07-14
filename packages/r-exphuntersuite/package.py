@@ -12,11 +12,10 @@ class RExphuntersuite(RPackage):
 	The ExpHunterSuite implements a comprehensive protocol for the analysis of transcriptional data using established *R* packages and combining their results. It covers all key steps in DEG detection, CEG detection and functional analysis for RNA-seq data. It has been implemented as an R package containing functions that can be run interactively. In addition, it also contains scripts that wrap the functions and can be run directly from the command line.
 	"""
 	
-	bioc = "ExpHunterSuite" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/ExpHunterSuite_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/ExpHunterSuite/ExpHunterSuite_1.10.0.tar.gz"]
+	bioc = "ExpHunterSuite"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="f9a35e306d31656aedf511b917074f9f8118ced99e26b2ee3c04881b1bd1ed26")
+	version("1.16.0", commit="f098f27f38dd170d4f34beba04f3934c5b7d5433")
+	version("1.10.0", commit="9b804b24363ac8a0a91487ecbebe79c3ef78a057")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-reactomepa", type=("build", "run"))

@@ -12,11 +12,10 @@ class REcolitk(RPackage):
 	Meta-data and tools to work with E. coli. The tools are mostly plotting functions to work with circular genomes. They can used with other genomes/plasmids.
 	"""
 	
-	bioc = "ecolitk" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ecolitk_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ecolitk/ecolitk_1.74.0.tar.gz"]
+	bioc = "ecolitk"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="a3f0d59fd409127b6b8abc6a4654f9aa4f4bf5d52293eb14cbfb5393912ab8cd")
+	version("1.80.0", commit="46c4636daff2490302ab5ee58357af77908165d6")
+	version("1.74.0", commit="acc30290adf909d3a094818195ae03262ca0ff73")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

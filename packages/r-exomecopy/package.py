@@ -16,8 +16,7 @@ class RExomecopy(RPackage):
 	regions of constant copy count."""
 
 	bioc = "exomeCopy"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/exomeCopy_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/exomeCopy/exomeCopy_1.48.0.tar.gz"]
-	version("1.48.0", sha256="21dc40cbd1b53a34bfb5869c4b008092df33305811130fa41bd4225c409e78b4")
+	version("1.48.0", commit="c418319e721b440272b551be91b965e928b8af65")
 	version("1.46.0", commit="b282adb17fb05e1a940d068d27bfd9d4549a53e7")
 	version("1.44.0", commit="2dd6598d5fb14d49f7a42e597284c7a929c0cd62")
 	version("1.42.0", commit="ba0979cf5fbdefed841022f2dc0604941315c1b8")

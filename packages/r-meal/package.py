@@ -12,11 +12,10 @@ class RMeal(RPackage):
 	Package to integrate methylation and expression data. It can also perform methylation or expression analysis alone. Several plotting functionalities are included as well as a new region analysis based on redundancy analysis. Effect of SNPs on a region can also be estimated.
 	"""
 	
-	bioc = "MEAL" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MEAL_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MEAL/MEAL_1.32.0.tar.gz"]
+	bioc = "MEAL"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="57408de21e8deb3ed72b6ef0d5b27d5a1748c1f541929c581151c3f3141f8b6f")
+	version("1.38.0", commit="e7b1934033bf4d95e284903f2019766379da49e0")
+	version("1.32.0", commit="4d6f89b3cf4cee339137cbe9c5ef163b8ae63c8f")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

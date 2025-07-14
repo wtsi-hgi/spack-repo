@@ -12,11 +12,10 @@ class RUndo(RPackage):
 	UNDO is an R package for unsupervised deconvolution of tumor and stromal mixed expression data. It detects marker genes and deconvolutes the mixing expression data without any prior knowledge.
 	"""
 	
-	bioc = "UNDO" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/UNDO_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/UNDO/UNDO_1.44.0.tar.gz"]
+	bioc = "UNDO"
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="d145f6aa55e1a8c1ffd29533573a8ffbd404caebd156e2ea782151c71cf14852")
+	version("1.50.0", commit="9c7de72f524f7a8b1ed2b556cc2f5982fd60ec81")
+	version("1.44.0", commit="77b9f60ad951b592dc1c9d4932ef0d374fd51354")
 
 	depends_on("r@2.15.2:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

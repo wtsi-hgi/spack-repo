@@ -12,11 +12,10 @@ class RToast(RPackage):
 	This package is devoted to analyzing high-throughput data (e.g. gene expression microarray, DNA methylation microarray, RNA-seq) from complex tissues. Current functionalities include 1. detect cell-type specific or cross-cell type differential signals 2. tree-based differential analysis 3. improve variable selection in reference-free deconvolution 4. partial reference-free deconvolution with prior knowledge.
 	"""
 	
-	bioc = "TOAST" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TOAST_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TOAST/TOAST_1.16.0.tar.gz"]
+	bioc = "TOAST"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="c1d7a51c3b31fdc55f7a7c63336283b5a0fd7a82a59a5b7b82f9e5f6857e9703")
+	version("1.22.0", commit="d37b279d7a29eba9ee0e2e4d2fe84fb2fa5fbfd2")
+	version("1.16.0", commit="404044b976b2bc4c9ff05b4249f4fce3720528dd")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-epidish", type=("build", "run"))

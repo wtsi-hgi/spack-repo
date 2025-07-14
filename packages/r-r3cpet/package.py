@@ -12,11 +12,10 @@ class RR3cpet(RPackage):
 	The package provides a method to infer the set of proteins that are more probably to work together to maintain chormatin interaction given a ChIA-PET experiment results.
 	"""
 	
-	bioc = "R3CPET" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/R3CPET_1.34.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/R3CPET/R3CPET_1.34.1.tar.gz"]
+	bioc = "R3CPET"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.1", sha256="4861a3e236229212150e1b17bc75239783250986cef4759ae64e7b63b4d9192c")
+	version("1.40.0", commit="36fe80f2fbda926ad5724de3c4ed34437a385384")
+	version("1.34.1", commit="5578c0641ed1ef8d4cf631cac6545fe3c9c53cf0")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -16,11 +16,10 @@ class RAims(RPackage):
 	data."""
 
 	bioc = "AIMS"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AIMS_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AIMS/AIMS_1.34.0.tar.gz"]
 
-	version("1.40.0", tag="RELEASE_3_21")
+	version("1.40.0", commit="d16271768a80316f83b14f0c5b3e4323845b4b45")
 	version("1.8.0", commit="86b866c20e191047492c51b43e3f73082c3f8357")
-	version("1.34.0", sha256="cc384ce176a0042fac8817c7077552048a907b0d8123e570538e5dbf51f3bf3a")
+	version("1.34.0", commit="61910444b05ce6e438467177202a93046c700e32")
 	version("1.32.0", commit="019415a6362e805465d43c157606e1774aed9e51")
 	version("1.30.0", commit="2ab61159c5aa0902cc33fc1502f7853b66912cce")
 	version("1.28.0", commit="84608df638b5694c08158ed77ad2c8a64c4e594b")

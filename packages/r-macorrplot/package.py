@@ -13,10 +13,9 @@ class RMacorrplot(RPackage):
 	"""
 	
 	homepage = "http://www.pubmedcentral.gov/articlerender.fcgi?tool=pubmed&pubmedid=15799785"
-	bioc = "maCorrPlot" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/maCorrPlot_1.72.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/maCorrPlot/maCorrPlot_1.72.0.tar.gz"]
+	bioc = "maCorrPlot"
 
-	version("1.78.0", tag="RELEASE_3_21")
-	version("1.72.0", sha256="eb8ecf43408aca3669ffdb109f4d4bedf3962cb08760ff27a68d6ceb5226f23e")
+	version("1.78.0", commit="4a710eb320eb48a96907f963f645caaa796fbadc")
+	version("1.72.0", commit="84bc62191c6b1e901d1df8c548600738296a9e60")
 
 	depends_on("r-lattice", type=("build", "run"))

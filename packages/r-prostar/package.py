@@ -13,10 +13,9 @@ class RProstar(RPackage):
 	"""
 	
 	homepage = "http://www.prostar-proteomics.org/"
-	bioc = "Prostar" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Prostar_1.34.6.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Prostar/Prostar_1.34.6.tar.gz"]
+	bioc = "Prostar"
 
-	version("1.40.0", tag="RELEASE_3_21")
+	version("1.40.0", commit="5455e070ad3003e659b0817564f569e93883cf37")
 	version("1.34.6", sha256="241e6acfb6ba16c944fc579a7c7041fd3447684dffc9c20f21268b02eaab658a")
 
 	depends_on("r@4.3:", type=("build", "run"))

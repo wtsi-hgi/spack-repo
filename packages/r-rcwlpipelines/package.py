@@ -12,11 +12,10 @@ class RRcwlpipelines(RPackage):
 	A collection of Bioinformatics tools and pipelines based on R and the Common Workflow Language.
 	"""
 	
-	bioc = "RcwlPipelines" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RcwlPipelines_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RcwlPipelines/RcwlPipelines_1.18.1.tar.gz"]
+	bioc = "RcwlPipelines"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.1", sha256="65b033a94322587a67742cf1426e69356d330e9578cc70cf342a655f6141c9d9")
+	version("1.24.0", commit="9368b160d98a35f7b2e114de8dc9f7dd4a13909a")
+	version("1.18.1", commit="0d1c0a0fb1cdc99b777acbf633e4896792bb00ca")
 	version("1.18.0", md5="5ff1c2848694b09cc639a56009392cf3")
 
 	depends_on("r@3.6:", type=("build", "run"))

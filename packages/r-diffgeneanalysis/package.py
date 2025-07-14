@@ -12,10 +12,9 @@ class RDiffgeneanalysis(RPackage):
 	Analyze microarray data
 	"""
 	
-	bioc = "diffGeneAnalysis" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/diffGeneAnalysis_1.84.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/diffGeneAnalysis/diffGeneAnalysis_1.84.0.tar.gz"]
+	bioc = "diffGeneAnalysis"
 
-	version("1.90.0", tag="RELEASE_3_21")
-	version("1.84.0", sha256="6021d33ab50d0682484571238dc5c1672462deef44e6259102bcf68b54d14d9d")
+	version("1.90.0", commit="3b65b8b1edd695e92b522a9fafc8863ad3d026c8")
+	version("1.84.0", commit="0f01211b49fa5f15c6f3442af76d0a44b5ef2100")
 
 	depends_on("r-minpack-lm@1.0.4:", type=("build", "run"))

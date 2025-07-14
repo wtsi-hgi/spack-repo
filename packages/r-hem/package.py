@@ -13,11 +13,10 @@ class RHem(RPackage):
 	"""
 	
 	homepage = "http://www.healthsystem.virginia.edu/internet/hes/biostat/bioinformatics/"
-	bioc = "HEM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HEM_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HEM/HEM_1.74.0.tar.gz"]
+	bioc = "HEM"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="58cba3031e2454c122bacbcf3e20fd215bb2650bea46c3eb0941900fe31131fe")
+	version("1.80.0", commit="0c872b23bbe3423ffdde54fd2fdfc1dea36525dc")
+	version("1.74.0", commit="dba767f812504381eafd5c129425436a4a377bd2")
 
 	depends_on("r@2.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

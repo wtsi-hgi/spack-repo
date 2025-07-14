@@ -13,11 +13,10 @@ class RSgcp(RPackage):
 	"""
 	
 	homepage = "https://github.com/na396/SGCP"
-	bioc = "SGCP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SGCP_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SGCP/SGCP_1.2.0.tar.gz"]
+	bioc = "SGCP"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="4a6a5196e9cd4bba67b5488740cfacb2c1b8e013762c96a31d679dc3615e80b1")
+	version("1.8.0", commit="8c385820a6e44165ea5c343ace9f3c0e98b2ea16")
+	version("1.2.0", commit="6900ac03966b7808cd75ee1af63ad5ec099a5c89")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

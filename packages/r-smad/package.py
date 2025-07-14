@@ -12,11 +12,10 @@ class RSmad(RPackage):
 	Assigning probability scores to protein interactions captured in affinity purification mass spectrometry (AP-MS) expriments to infer protein-protein interactions. The output would facilitate non-specific background removal as contaminants are commonly found in AP-MS data.
 	"""
 	
-	bioc = "SMAD" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SMAD_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SMAD/SMAD_1.18.0.tar.gz"]
+	bioc = "SMAD"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="877957cd9b9a582e60dfab8cad3814d034aff16f6f16bfe8cf2c610136e6f098")
+	version("1.24.0", commit="a2e2c91dbbd40c8cf2224d6e070413aeb6bfb30d")
+	version("1.18.0", commit="2b2f6344438667f408f70623aea68e541bc9d869")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcppalgos", type=("build", "run"))

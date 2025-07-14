@@ -12,11 +12,10 @@ class RElmerData(RPackage):
 	Supporting data for the ELMER package. It includes: - elmer.data.example.promoter: mae.promoter - elmer.data.example: data - EPIC.hg38.manifest - EPIC.hg19.manifest - hm450.hg38.manifest - hm450.hg19.manifest - hocomoco.table - human.TF - LUSC_meth_refined: Meth - LUSC_RNA_refined: GeneExp - Probes.motif.hg19.450K - Probes.motif.hg19.EPIC - Probes.motif.hg38.450K - Probes.motif.hg38.EPIC - TF.family - TF.subfamily - Human_genes__GRCh37_p13 - Human_genes__GRCh38_p12 - Human_genes__GRCh37_p13__tss - Human_genes__GRCh38_p12__tss
 	"""
 	
-	bioc = "ELMER.data" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ELMER.data_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ELMER.data/ELMER.data_2.26.0.tar.gz"]
+	bioc = "ELMER.data"
 
-	version("2.32.0", tag="RELEASE_3_21")
-	version("2.26.0", sha256="24292dd2cd1834e23ef1b21e3b8fdb3b8795356a047972181f16e87651929f6f")
+	version("2.32.0", commit="6f55fad292bd830c84017d9b5bfbdd7ca6cc0e81")
+	version("2.26.0", commit="bb8f4d3b64708603c643d71fcba31ba4ca996fb7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

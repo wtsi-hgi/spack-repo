@@ -13,11 +13,10 @@ class RCtsv(RPackage):
 	"""
 	
 	homepage = "https://github.com/jingeyu/CTSV"
-	bioc = "CTSV" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CTSV_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CTSV/CTSV_1.4.0.tar.gz"]
+	bioc = "CTSV"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="c9ab303473fa093de52c3a25dc2e46413399cef5284aa2c177299c03e61fcc02")
+	version("1.10.0", commit="5b5092c8ef63aa3fee82cc12d9f838be9a43440f")
+	version("1.4.0", commit="c5da80cf8a3397d1978d3552a03caaa3730d4f7a")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-pscl", type=("build", "run"))

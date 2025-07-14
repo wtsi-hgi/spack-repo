@@ -13,11 +13,10 @@ class RCcfindr(RPackage):
 	"""
 	
 	homepage = "http://dx.doi.org/10.26508/lsa.201900443"
-	bioc = "ccfindR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ccfindR_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ccfindR/ccfindR_1.22.0.tar.gz"]
+	bioc = "ccfindR"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="015895b6ab7ae0faf8c48040f957e4bb29051ae8223a95aa1e8f29d8b3be4fe3")
+	version("1.28.0", commit="9ada3b2d5477549346e3ba7d3436bc9916a66135")
+	version("1.22.0", commit="ac6bcb17112b1911edc75328c50fad48a6905447")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

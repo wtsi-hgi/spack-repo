@@ -12,10 +12,9 @@ class RIseq(RPackage):
 	Bayesian hidden Ising models are implemented to identify IP-enriched genomic regions from ChIP-seq data. They can be used to analyze ChIP-seq data with and without controls and replicates.
 	"""
 	
-	bioc = "iSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSeq_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSeq/iSeq_1.54.0.tar.gz"]
+	bioc = "iSeq"
 
-	version("1.60.0", tag="RELEASE_3_21")
-	version("1.54.0", sha256="2f0f4845e0e5a25a1cf14c7209b833e85d0541f8f9986978c2946e2f0bed86d5")
+	version("1.60.0", commit="8f28a55ee4ef712cd62edd3b93e7736459acb41b")
+	version("1.54.0", commit="631770a387b50687030a5aa833d9e65d2144d447")
 
 	depends_on("r@2.10:", type=("build", "run"))

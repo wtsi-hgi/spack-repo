@@ -13,11 +13,10 @@ class ROmpbam(RPackage):
 	"""
 	
 	homepage = "https://github.com/alexchwong/ompBAM"
-	bioc = "ompBAM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ompBAM_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ompBAM/ompBAM_1.6.0.tar.gz"]
+	bioc = "ompBAM"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="999a53255a63c874ff040cf9d168c19749e710f556c331ea635fcbc6efe0bbfc")
+	version("1.12.0", commit="a51bfde1a191b60c04c581415590f28194b9603d")
+	version("1.6.0", commit="e27fbbb3817e29967b8f8cc0b76990c040907611")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-zlibbioc", type=("build", "run"))

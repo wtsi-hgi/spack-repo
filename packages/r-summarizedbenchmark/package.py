@@ -13,10 +13,9 @@ class RSummarizedbenchmark(RPackage):
 	"""
 	
 	homepage = "https://github.com/areyesq89/SummarizedBenchmark"
-	bioc = "SummarizedBenchmark" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SummarizedBenchmark_2.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SummarizedBenchmark/SummarizedBenchmark_2.20.0.tar.gz"]
+	bioc = "SummarizedBenchmark"
 
-	version("2.20.0", sha256="0f04739892c4819d36787ee3f754ddb16a8360d72790c90c69cc99e3fca4ff99")
+	version("2.20.0", commit="e8083a707d0a93aa4de95937ed2d60593fc94273")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))

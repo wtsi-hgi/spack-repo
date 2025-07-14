@@ -12,9 +12,8 @@ class RRnaseqpower(RPackage):
 	RNA-seq, sample size
 	"""
 	
-	bioc = "RNASeqPower" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNASeqPower_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNASeqPower/RNASeqPower_1.42.0.tar.gz"]
+	bioc = "RNASeqPower"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="24a9f4de36a5885161ea16b3316d7e7eacbbfdd395f4b3037fcf89f1eeeb1126")
+	version("1.48.0", commit="8c40b86e3f29fcc752858a10dd192105787e3134")
+	version("1.42.0", commit="f0b73085c9f6697c0b8ffd34e33280949f5d3abb")
 

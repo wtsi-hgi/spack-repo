@@ -12,11 +12,10 @@ class RArrmdata(RPackage):
 	Raw Beta values from 36 samples across 3 groups from Illumina 450k methylation arrays
 	"""
 	
-	bioc = "ARRmData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/ARRmData_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/ARRmData/ARRmData_1.38.0.tar.gz"]
+	bioc = "ARRmData"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="4793554365ad2319db8b96314d4cbf3b725c0e09edd9f8975dc126bee7619042")
+	version("1.44.0", commit="6c8d3a4af2421f3363aa624978181ba069375640")
+	version("1.38.0", commit="81fb27786c6731fc078ddaa9a4cfab18308a4292")
 
 	depends_on("r@3:", type=("build", "run"))
 

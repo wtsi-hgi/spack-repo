@@ -13,11 +13,10 @@ class RCytopipeline(RPackage):
 	"""
 	
 	homepage = "https://uclouvain-cbio.github.io/CytoPipeline"
-	bioc = "CytoPipeline" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CytoPipeline_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CytoPipeline/CytoPipeline_1.2.0.tar.gz"]
+	bioc = "CytoPipeline"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="80c2f67b5629c4f8049346f324308d20707e65f5db189a73d3a5e9c4e8a35692")
+	version("1.8.0", commit="ce2b0d669a55b67ee25c52a445e0b98f179b219e")
+	version("1.2.0", commit="1d1d23800ef13fb1437e40a7cb4a0a44a5501b3f")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-withr", type=("build", "run"))

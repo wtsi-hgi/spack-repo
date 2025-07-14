@@ -13,11 +13,10 @@ class RPhantasus(RPackage):
 	"""
 	
 	homepage = "https://genome.ifmo.ru/phantasus"
-	bioc = "phantasus" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phantasus_1.22.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phantasus/phantasus_1.22.2.tar.gz"]
+	bioc = "phantasus"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.2", sha256="d6490abd7e41769582081f2b5dd0cbea65f5ebc37d92c8a0a93dc8bf56e8dcfa")
+	version("1.28.0", commit="1172d41ffee56d07c114756e7a6775c82db35589")
+	version("1.22.2", commit="64188e73f174a708a6fc9612f819a128d98600ea")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

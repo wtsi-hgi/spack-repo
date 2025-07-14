@@ -13,10 +13,9 @@ class RLea(RPackage):
 	"""
 	
 	homepage = "http://membres-timc.imag.fr/Olivier.Francois/lea.html"
-	bioc = "LEA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LEA_3.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LEA/LEA_3.14.0.tar.gz"]
+	bioc = "LEA"
 
-	version("3.20.0", tag="RELEASE_3_21")
-	version("3.14.0", sha256="611918debc6f25f2cc7277f77979a3e8352c517b63bea56626c6fd9c2ecb14e6")
+	version("3.20.0", commit="4a4f03640c97f92b58d79d6d68ca7f4d80621ab6")
+	version("3.14.0", commit="1765faca802583da16c69ba831ae8544076b8cfc")
 
 	depends_on("r@3.3:", type=("build", "run"))

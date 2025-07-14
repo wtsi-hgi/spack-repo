@@ -12,10 +12,9 @@ class RPcxndata(RPackage):
 	PCxN database contains correlation coefficients and p values between pre-defined gene sets within MSigDB H hallmark gene sets, MSigDB C2 CP (Canonical pathways), MSigDB C5 GO BP gene sets and Pathprint respectively, as well as adjusted pathway correlations to account for the shared genes between pathway pairs.
 	"""
 	
-	bioc = "pcxnData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/pcxnData_2.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/pcxnData/pcxnData_2.24.0.tar.gz"]
+	bioc = "pcxnData"
 
-	version("2.24.0", sha256="124c63d4ed955a4d161351041adf5a4e9e8f23db78c04494159d5982627c1856")
+	version("2.24.0", commit="a61d0af46aab4b07f6b2f0d819ed5553f8b3443e")
 
 	depends_on("r@3.4:", type=("build", "run"))
 

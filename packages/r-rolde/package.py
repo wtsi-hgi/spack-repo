@@ -13,11 +13,10 @@ class RRolde(RPackage):
 	"""
 	
 	homepage = "https://github.com/elolab/RolDE"
-	bioc = "RolDE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RolDE_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RolDE/RolDE_1.6.0.tar.gz"]
+	bioc = "RolDE"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="08b694f03c455a1a7e78612ac69b9a806cdc214145f3b434b3943375c793dc3c")
+	version("1.12.0", commit="c6fcae4060abad6eeaba8e2b741ea923f42ddb63")
+	version("1.6.0", commit="29ff0998f8f5b35d97ae9a7a6e1fa519857759a8")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-rots", type=("build", "run"))

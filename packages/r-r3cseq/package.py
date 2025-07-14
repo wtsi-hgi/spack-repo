@@ -13,11 +13,10 @@ class RR3cseq(RPackage):
 	"""
 	
 	homepage = "http://r3cseq.genereg.net"
-	bioc = "r3Cseq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/r3Cseq_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/r3Cseq/r3Cseq_1.48.0.tar.gz"]
+	bioc = "r3Cseq"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="c8081fc10e77cdf73b0f3ca6f5a376bd1b2beebb550e70c6490cc0113c7393d2")
+	version("1.54.0", commit="3dc2e20bf43bab28241c16dc6ace45b93e6e2b77")
+	version("1.48.0", commit="d9ef32a30102360add6ebc6ff347cb1564a39eb3")
 
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))

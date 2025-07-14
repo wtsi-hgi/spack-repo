@@ -12,11 +12,10 @@ class REpivizrstandalone(RPackage):
 	This package imports the epiviz visualization JavaScript app for genomic data interactive visualization. The 'epivizrServer' package is used to provide a web server running completely within R. This standalone version allows to browse arbitrary genomes through genome annotations provided by Bioconductor packages.
 	"""
 	
-	bioc = "epivizrStandalone" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epivizrStandalone_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epivizrStandalone/epivizrStandalone_1.30.0.tar.gz"]
+	bioc = "epivizrStandalone"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="e3bb330626d357158de693acb779b74a5067b927e531e926bf0939389f1afa4c")
+	version("1.36.0", commit="a323878dfed4a7e981d8dece78cb3864ba4e434e")
+	version("1.30.0", commit="85a36387f7e1dbeed3f8f9e958faffa12d393e50")
 
 	depends_on("r@3.2.3:", type=("build", "run"))
 	depends_on("r-epivizr@2.3.6:", type=("build", "run"))

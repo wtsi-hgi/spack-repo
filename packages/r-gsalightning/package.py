@@ -13,11 +13,10 @@ class RGsalightning(RPackage):
 	"""
 	
 	homepage = "https://github.com/billyhw/GSALightning"
-	bioc = "GSALightning" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GSALightning_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GSALightning/GSALightning_1.30.0.tar.gz"]
+	bioc = "GSALightning"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="5fe9613d3acaebd43c1c678351d6d719007bd89d81201a2906401d4b2428c9c1")
+	version("1.36.0", commit="f35992dad54471a3553c7eba653fa846c3c22000")
+	version("1.30.0", commit="df599d9071a13cc11ae113086a36b731603502fa")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

@@ -13,11 +13,10 @@ class RRtcga(RPackage):
 	"""
 	
 	homepage = "https://rtcga.github.io/RTCGA"
-	bioc = "RTCGA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RTCGA_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RTCGA/RTCGA_1.32.0.tar.gz"]
+	bioc = "RTCGA"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="e1653920e1b931e46e7d76dd897e1f9c272958a094743ebae741feade3e4edd3")
+	version("1.38.0", commit="9d18abaf0bfac8f3274ca6238e3d78b6bca08eef")
+	version("1.32.0", commit="dc5aa8c3b424f45e45d10e7e755378c6ed6b11dc")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-xml", type=("build", "run"))

@@ -13,14 +13,8 @@ class RChemmineob(RPackage):
 	"""
 
 	homepage = "https://github.com/girke-lab/ChemmineOB"
-	bioc = "ChemmineOB"
-	urls = [
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ChemmineOB_1.40.0.tar.gz",
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ChemmineOB/ChemmineOB_1.40.0.tar.gz",
-	]
-
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="b147d9e00df464d13b1c6d876b0a49e158510ff725da599e51b936faf997ca55")
+	bioc = "ChemmineOB"version("1.46.0", commit="3c9cfd857a4b858afa48a74b612b4532b0281f13")
+	version("1.40.0", commit="56dd1da900279e1dc39d9ac5136635b0236ab141")
 
 	depends_on("r@2.15.1:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

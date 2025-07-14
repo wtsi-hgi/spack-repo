@@ -13,11 +13,10 @@ class RRopls(RPackage):
 	"""
 	
 	homepage = "https://doi.org/10.1021/acs.jproteome.5b00354"
-	bioc = "ropls" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ropls_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ropls/ropls_1.34.0.tar.gz"]
+	bioc = "ropls"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="fbdcde1abdf5169f549c645362c5f7fd2072a796f1913d320613ffab160b72cc")
+	version("1.40.0", commit="4c98856d048ae6e10ee55f21cf41b1a44c839477")
+	version("1.34.0", commit="415d359e77e6de80d23c57bfbd5ff86e9f439338")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -12,11 +12,10 @@ class RBenchdamic(RPackage):
 	Starting from a microbiome dataset (16S or WMS with absolute count values) it is possible to perform several analysis to assess the performances of many differential abundance detection methods. A basic and standardized version of the main differential abundance analysis methods is supplied but the user can also add his method to the benchmark. The analyses focus on 4 main aspects: i) the goodness of fit of each method's distributional assumptions on the observed count data, ii) the ability to control the false discovery rate, iii) the within and between method concordances, iv) the truthfulness of the findings if any apriori knowledge is given. Several graphical functions are available for result visualization.
 	"""
 	
-	bioc = "benchdamic" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/benchdamic_1.8.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/benchdamic/benchdamic_1.8.2.tar.gz"]
+	bioc = "benchdamic"
 
-	version("1.14.2", tag="RELEASE_3_21")
-	version("1.8.2", sha256="64656dce4654fdfad869e646da2fc59eca362b9c4e9a9f4bea32062bf548c50c")
+	version("1.14.2", commit="9ea0f3adc92ea88f5d0ff7225899a068bbc0c3ff")
+	version("1.8.2", commit="c22b1934ea56333035188a8124dd37a2b3ac3c2d")
 	version("1.8.1", md5="ca158383ebf87138c91438c7946fe567")
 
 	depends_on("r@4.3:", type=("build", "run"))

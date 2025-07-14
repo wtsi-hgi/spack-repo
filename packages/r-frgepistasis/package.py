@@ -12,11 +12,10 @@ class RFrgepistasis(RPackage):
 	A Tool for Epistasis Analysis Based on Functional Regression Model
 	"""
 	
-	bioc = "FRGEpistasis" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FRGEpistasis_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FRGEpistasis/FRGEpistasis_1.38.0.tar.gz"]
+	bioc = "FRGEpistasis"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="e23082e26cd4be31092f65682eccca383f16ff9d84b231051bbd6c135248b9e6")
+	version("1.44.0", commit="394010dabe707e5e7d82317381e70270f5b86998")
+	version("1.38.0", commit="eada0a325aac32256b67a1e2573c9e645269978a")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-mass", type=("build", "run"))

@@ -13,11 +13,10 @@ class RScatterhatch(RPackage):
 	"""
 	
 	homepage = "https://github.com/FertigLab/scatterHatch"
-	bioc = "scatterHatch" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scatterHatch_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scatterHatch/scatterHatch_1.8.0.tar.gz"]
+	bioc = "scatterHatch"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="54b981df62a8e97c2a7aecd6d89a873ce4910cb9db495a3136abf516cd4674ea")
+	version("1.14.0", commit="33bfff1ff70478f062153b6a6aa7560bf81128d4")
+	version("1.8.0", commit="4464fd035e2765e1fbe61ad089c6188ca4802740")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

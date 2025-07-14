@@ -13,10 +13,9 @@ class RCellhts2(RPackage):
 	"""
 	
 	homepage = "http://www.dkfz.de/signaling"
-	bioc = "cellHTS2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cellHTS2_2.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cellHTS2/cellHTS2_2.66.0.tar.gz"]
+	bioc = "cellHTS2"
 
-	version("2.66.0", sha256="72ab8845ac7b9283065389c2ef7da4b91e70a1333a2937bd924cba632e9889b3", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cellHTS2_2.66.0.tar.gz")
+	version("2.66.0", commit="3fe8e7d83a448c4d8df27447ac581268ba577d85")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))

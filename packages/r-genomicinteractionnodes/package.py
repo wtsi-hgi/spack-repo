@@ -13,11 +13,10 @@ class RGenomicinteractionnodes(RPackage):
 	"""
 	
 	homepage = "https://github.com/jianhong/GenomicInteractionNodes"
-	bioc = "GenomicInteractionNodes" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicInteractionNodes_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicInteractionNodes/GenomicInteractionNodes_1.6.0.tar.gz"]
+	bioc = "GenomicInteractionNodes"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="4c06511ba207d07b071317972fcfb9bc0c45d5d7958b8b1be9c03113a7ecc004")
+	version("1.12.0", commit="a109a3c3c22cc1ee925c5f430b8d5d6790ced24c")
+	version("1.6.0", commit="eb1f8b056f9d3313661b980ca64b4304ba813e03")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

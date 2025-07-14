@@ -12,11 +12,10 @@ class RGosorensen(RPackage):
 	This package implements inferential methods to compare gene lists in terms of their biological meaning as expressed in the GO. The compared gene lists are characterized by cross-tabulation frequency tables of enriched GO items. Dissimilarity between gene lists is evaluated using the Sorensen-Dice index. The fundamental guiding principle is that two gene lists are taken as similar if they share a great proportion of common enriched GO items.
 	"""
 	
-	bioc = "goSorensen" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/goSorensen_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/goSorensen/goSorensen_1.4.0.tar.gz"]
+	bioc = "goSorensen"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="bd11519691515013723337c1533467731ffe7b727cc5221bc19f65707cd6d1e0")
+	version("1.10.0", commit="b1b685df623b0e288873e7eff1fd27728403c040")
+	version("1.4.0", commit="397b1486355ea87f583331074118959b37e80f86")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-go-db", type=("build", "run"))

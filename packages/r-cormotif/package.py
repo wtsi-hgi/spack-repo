@@ -12,11 +12,10 @@ class RCormotif(RPackage):
 	It fits correlation motif model to multiple studies to detect study specific differential expression patterns.
 	"""
 	
-	bioc = "Cormotif" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Cormotif_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Cormotif/Cormotif_1.48.0.tar.gz"]
+	bioc = "Cormotif"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="9bab217df749bc5e40446baef4b1ce9814d27dc55e99d807b581c20f82c87ea9")
+	version("1.54.0", commit="0fc2c06e10f4a70af16b176504f0022f8ebcbc11")
+	version("1.48.0", commit="ed355f194acd6f7b2a2344834a0b21bc757a1e36")
 
 	depends_on("r@2.12:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

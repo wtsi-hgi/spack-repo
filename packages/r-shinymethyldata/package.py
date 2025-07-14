@@ -12,11 +12,10 @@ class RShinymethyldata(RPackage):
 	Extracted data from 369 TCGA Head and Neck Cancer DNA methylation samples. The extracted data serve as an example dataset for the package shinyMethyl. Original samples are from 450k methylation arrays, and were obtained from The Cancer Genome Atlas (TCGA). 310 samples are from tumor, 50 are matched normals and 9 are technical replicates of a control cell line.
 	"""
 	
-	bioc = "shinyMethylData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/shinyMethylData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/shinyMethylData/shinyMethylData_1.22.0.tar.gz"]
+	bioc = "shinyMethylData"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="306060c3ba13b0d69b912bfecf8e14db0f11f7d9874668cd9bf7c974e273cec4")
+	version("1.28.0", commit="c70f362f6288bcb5383c3875d4c05ea96eadb18e")
+	version("1.22.0", commit="05737b55d25d0844a76f2f37cf3744925f34f026")
 
 	depends_on("r@3:", type=("build", "run"))
 

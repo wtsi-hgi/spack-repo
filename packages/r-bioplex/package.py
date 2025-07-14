@@ -13,11 +13,10 @@ class RBioplex(RPackage):
 	"""
 	
 	homepage = "https://github.com/ccb-hms/BioPlex"
-	bioc = "BioPlex" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/BioPlex_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/BioPlex/BioPlex_1.8.0.tar.gz"]
+	bioc = "BioPlex"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="a71ed0676534038f421a82f1fd901640992d1fcbb22caeb772c7443fc95e9a73")
+	version("1.14.0", commit="b4d955d57546b5b6e490d5c5f5cdfc8814848a7e")
+	version("1.8.0", commit="0fe8113b2e56e9fa8e55a3ff95128162e9902aea")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

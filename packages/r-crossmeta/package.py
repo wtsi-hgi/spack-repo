@@ -13,11 +13,10 @@ class RCrossmeta(RPackage):
 	"""
 	
 	homepage = "https://github.com/alexvpickering/crossmeta"
-	bioc = "crossmeta" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crossmeta_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crossmeta/crossmeta_1.28.0.tar.gz"]
+	bioc = "crossmeta"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="bd7e53eb0e20b6b7b51b4959c07bf1d00851ee1b2f277e6001adc20e17d806a3")
+	version("1.34.0", commit="7a516d8d7ba24fead04ea8f235f8c5c6cf1f29b3")
+	version("1.28.0", commit="3ae7537f2e0273b735334bc774cf41e15bf6b071")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-affy@1.52:", type=("build", "run"))

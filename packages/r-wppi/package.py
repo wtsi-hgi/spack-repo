@@ -13,11 +13,10 @@ class RWppi(RPackage):
 	"""
 	
 	homepage = "https://github.com/AnaGalhoz37/wppi"
-	bioc = "wppi" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/wppi_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/wppi/wppi_1.10.0.tar.gz"]
+	bioc = "wppi"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="4bd8bb3374f1b25ef727e0cc5d3bae4d84ca297ee0bc3d70459c3fc00a318f13")
+	version("1.16.0", commit="c49fef64b5af933f13b143c17e652dd624dc402f")
+	version("1.10.0", commit="dc6b662d50cc33b31444fd1818957610447f79e9")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

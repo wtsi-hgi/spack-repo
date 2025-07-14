@@ -13,11 +13,10 @@ class RCdi(RPackage):
 	"""
 	
 	homepage = "https://github.com/jichunxie/CDI"
-	bioc = "CDI" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CDI_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CDI/CDI_1.0.2.tar.gz"]
+	bioc = "CDI"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.2", sha256="af5759f330b6c78eff2752ec42ebae884b30eaa1a193d773b0d23f86e1a6ae7f")
+	version("1.6.0", commit="6c5ec2fe3b44262c9e6f6f54a786069c63e338e8")
+	version("1.0.2", commit="38c9ab6ad5b9d015031a43acbd6f05d348441bce")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-matrixstats", type=("build", "run"))

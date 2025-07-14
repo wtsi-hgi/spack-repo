@@ -12,11 +12,10 @@ class RSurvtype(RPackage):
 	Subtypes are defined as groups of samples that have distinct molecular and clinical features. Genomic data can be analyzed for discovering patient subtypes, associated with clinical data, especially for survival information. This package is aimed to identify subtypes that are both clinically relevant and biologically meaningful.
 	"""
 	
-	bioc = "survtype" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/survtype_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/survtype/survtype_1.18.0.tar.gz"]
+	bioc = "survtype"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="2682b175c3596c2f5a08bc15236dbe3711b59d6920fc9cacd9d451a18b0f842c")
+	version("1.24.0", commit="b2280c90820641111d05da23c4d7009d7998cfd2")
+	version("1.18.0", commit="e5693695f628d13a9073e0fd85da7069f64ec28f")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-pheatmap", type=("build", "run"))

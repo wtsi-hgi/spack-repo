@@ -12,11 +12,10 @@ class RGenomicdistributionsdata(RPackage):
 	This package provides ready to use reference data for GenomicDistributions package. Raw data was obtained from ensembldb and processed with helper functions. Data files are available for the following genome assemblies: hg19, hg38, mm9 and mm10.
 	"""
 	
-	bioc = "GenomicDistributionsData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/GenomicDistributionsData_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/GenomicDistributionsData/GenomicDistributionsData_1.10.0.tar.gz"]
+	bioc = "GenomicDistributionsData"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="8449600cfb5dc96275185dc7298ffd732cdeba3172d0a5ff07a85e6b5bc537b1")
+	version("1.16.0", commit="d73e4b4910aa9a2b76574105d33a0765ad3d087b")
+	version("1.10.0", commit="62e25bec926508f8516b5187517fee986dbc0222")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-experimenthub@1.14:", type=("build", "run"))

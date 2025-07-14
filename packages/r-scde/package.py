@@ -13,11 +13,10 @@ class RScde(RPackage):
 	"""
 	
 	homepage = "http://pklab.med.harvard.edu/scde"
-	bioc = "scde" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scde_2.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scde/scde_2.30.0.tar.gz"]
+	bioc = "scde"
 
-	version("2.36.0", tag="RELEASE_3_21")
-	version("2.30.0", sha256="1a9e402aad906008cbdfd2e40c5acf68e27d0fb284f5679b04f8ba692476fa50")
+	version("2.36.0", commit="7cdd70a855f49813026ddcd5f06ab32e101d5e99")
+	version("2.30.0", commit="4a9f09221a914de8ed2796e2dd1c6b8bab2ca350")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-flexmix", type=("build", "run"))

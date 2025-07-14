@@ -12,10 +12,9 @@ class RProteinprofiles(RPackage):
 	Significance assessment for distance measures of time-course protein profiles
 	"""
 	
-	bioc = "proteinProfiles" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/proteinProfiles_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/proteinProfiles/proteinProfiles_1.42.0.tar.gz"]
+	bioc = "proteinProfiles"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="81a9c27835eddd7c31155031dc19488487f3ca869ad07e069407ff4b6ada5694")
+	version("1.48.0", commit="76098c8a8b51c9512f8b1e2abc3ed1c214efbb57")
+	version("1.42.0", commit="7b9a480648bd0121fec40628268f56287effd651")
 
 	depends_on("r@2.15.2:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RAlabasterString(RPackage):
 	Save Biostrings objects to file artifacts, and load them back into memory. This is a more portable alternative to serialization of such objects into RDS files. Each artifact is associated with metadata for further interpretation; downstream applications can enrich this metadata with context-specific properties.
 	"""
 	
-	bioc = "alabaster.string" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.string_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.string/alabaster.string_1.2.0.tar.gz"]
+	bioc = "alabaster.string"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="b53e974b288b2a924bfa636ff1287cbe2a38405b4a9da11ff22bb85f4da9f7be")
+	version("1.8.0", commit="cdede3f44e9632a68902e401219f09c6db773a0a")
+	version("1.2.0", commit="51fce8086e5ac447f0e74fd0ee0c71cb7f97b3f1")
 
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-alabaster-base", type=("build", "run"))

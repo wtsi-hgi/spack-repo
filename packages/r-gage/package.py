@@ -13,11 +13,10 @@ class RGage(RPackage):
 	"""
 	
 	homepage = "https://github.com/datapplab/gage"
-	bioc = "gage" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gage_2.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gage/gage_2.52.0.tar.gz"]
+	bioc = "gage"
 
-	version("2.58.0", tag="RELEASE_3_21")
-	version("2.52.0", sha256="c847d26329f0956046a961b6df91a8b8a469adad85f0238a21953536fc86a52e")
+	version("2.58.0", commit="a5f163f25570e94e236636273bd388c4071c7dfc")
+	version("2.52.0", commit="29b7ace8266822c309e518250d04e83cfedf53bc")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-graph", type=("build", "run"))

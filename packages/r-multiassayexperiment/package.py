@@ -13,11 +13,10 @@ class RMultiassayexperiment(RPackage):
 	"""
 	
 	homepage = "http://waldronlab.io/MultiAssayExperiment/"
-	bioc = "MultiAssayExperiment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MultiAssayExperiment_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MultiAssayExperiment/MultiAssayExperiment_1.28.0.tar.gz"]
+	bioc = "MultiAssayExperiment"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="904dd6bb32d22d92c71de1ade4d1fd0c88e7973d01b97699a4150004abc7b036")
+	version("1.34.0", commit="3ccef4a13c492143fe170327811f6ad40bd06b72")
+	version("1.28.0", commit="819acdfed5898c637eb670abd63250851743b3aa")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-summarizedexperiment@1.3.81:", type=("build", "run"))

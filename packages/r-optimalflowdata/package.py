@@ -12,11 +12,10 @@ class ROptimalflowdata(RPackage):
 	Data files used as examples and for testing of the software provided in the optimalFlow package.
 	"""
 	
-	bioc = "optimalFlowData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/optimalFlowData_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/optimalFlowData/optimalFlowData_1.14.0.tar.gz"]
+	bioc = "optimalFlowData"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="983f078b48e97424add5558ca7ad5c00e1f3a7259659defa983f6c0de956ea29")
+	version("1.20.0", commit="ba14c0977491be3bdff7a0c7cb7eaad2e85e801e")
+	version("1.14.0", commit="11b8946134d1717a947e12550365e26dd979f3f5")
 
 	depends_on("r@4:", type=("build", "run"))
 

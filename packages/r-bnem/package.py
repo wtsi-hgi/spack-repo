@@ -13,11 +13,10 @@ class RBnem(RPackage):
 	"""
 	
 	homepage = "https://github.com/MartinFXP/bnem/"
-	bioc = "bnem" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bnem_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bnem/bnem_1.10.0.tar.gz"]
+	bioc = "bnem"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="ba3014cf2a72af41a66cc61a1cb35c7b755bf3c69205d866b0258cd697c98572")
+	version("1.16.0", commit="479b48741e5ba25472b0954786bbb7bad1baab91")
+	version("1.10.0", commit="ba0965c4212bcfd8f8f1dc1fee1cd7d45a728ccf")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-cellnoptr", type=("build", "run"))

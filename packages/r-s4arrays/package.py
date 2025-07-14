@@ -13,14 +13,8 @@ class RS4arrays(RPackage):
     """
 
     homepage = "https://bioconductor.org/packages/S4Arrays"
-    bioc = "S4Arrays"
-    urls = [
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/S4Arrays_1.2.1.tar.gz",
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/S4Arrays/S4Arrays_1.2.1.tar.gz",
-    ]
-
-    version("1.8.0", tag="RELEASE_3_21")
-    version("1.2.1", sha256="ed2ac5ecf714408069fd61c217e0bb1c661a17645bd72d40a6fabbb2e463d3fc")
+    bioc = "S4Arrays"version("1.8.0", commit="3ccac7337984c08cf086caedbef48d3d8d94b165")
+    version("1.2.1", commit="59b8f4e28d2273145411f0d5429d1f31f6b79e12")
     version("1.2.0", md5="c77474b839251d19d31708831de3c1bf")
     version("1.1.1", commit="6074deee3b0edd47bfde20fa4151c54268e93d63")
     version("0.4.1", commit="09d02b41fbf2a514f176e740ee7ab7bbe2b60151")

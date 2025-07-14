@@ -21,9 +21,8 @@ class RCodex(RPackage):
 	sequencing data."""
 
 	bioc = "CODEX"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CODEX_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CODEX/CODEX_1.34.0.tar.gz"]
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="5db84031718c0ba32510b272631bdfdc2d8eb951ac7bf76e5ac740dd45c5913e")
+	version("1.40.0", commit="b97c060bebd2e7e7098c044f997711ac86230a03")
+	version("1.34.0", commit="f59d9cf447d746cd6bef1f1895e0cd645d4a4151")
 	version("1.32.0", commit="83926238fb49b0e95d989612a98356d20e7caf57")
 	version("1.30.0", commit="0694f11be9e0b02ab15047d01db2afce943f92d8")
 	version("1.28.0", commit="c707497bd93aa4a0516fcf3671a64997c28c9f67")

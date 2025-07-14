@@ -12,11 +12,10 @@ class RIntansv(RPackage):
 	This package provides efficient tools to read and integrate structural variations predicted by popular softwares. Annotation and visulation of structural variations are also implemented in the package.
 	"""
 	
-	bioc = "intansv" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/intansv_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/intansv/intansv_1.42.0.tar.gz"]
+	bioc = "intansv"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="e13c11ea33934d497c7b47f6c3cd344b6d894c4cd73a55f0b6f7ae28ef13a444")
+	version("1.48.0", commit="0595695c47d22e3ac947ac9adea02a6a520af651")
+	version("1.42.0", commit="7e3a7251c49ca69a4c7a13b8804bd2d83e292b68")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-plyr", type=("build", "run"))

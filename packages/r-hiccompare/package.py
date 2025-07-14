@@ -13,11 +13,10 @@ class RHiccompare(RPackage):
 	"""
 	
 	homepage = "https://github.com/dozmorovlab/HiCcompare"
-	bioc = "HiCcompare" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HiCcompare_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HiCcompare/HiCcompare_1.24.0.tar.gz"]
+	bioc = "HiCcompare"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="4dbca074754c4aea7f95e1a4483943d955fa7584b69d37865a90ffde7edb68ac")
+	version("1.30.0", commit="9a075bb9f7e3e75b51b9e499d7f57a7879f21a41")
+	version("1.24.0", commit="07ca8751f248d3ccfef3f3359d604f67b5716daa")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

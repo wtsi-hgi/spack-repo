@@ -13,11 +13,10 @@ class RMumosa(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org/packages/mumosa"
-	bioc = "mumosa" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mumosa_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mumosa/mumosa_1.10.0.tar.gz"]
+	bioc = "mumosa"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="fb51a8233aac14fcfad80b69550ea265695090186f25feb600cd07489177b0d6")
+	version("1.16.0", commit="31f2c64fc9d2b16952d2cede8742a01a968137d8")
+	version("1.10.0", commit="f52c95ab75ac0af2b52f6cf9ea38928e727e48e6")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

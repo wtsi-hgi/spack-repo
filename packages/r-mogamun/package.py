@@ -13,11 +13,10 @@ class RMogamun(RPackage):
 	"""
 	
 	homepage = "https://github.com/elvanov/MOGAMUN"
-	bioc = "MOGAMUN" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MOGAMUN_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MOGAMUN/MOGAMUN_1.12.0.tar.gz"]
+	bioc = "MOGAMUN"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="5b51e64f55440860de7d285938afb84e669106859d7478999c1e9e565557fc74")
+	version("1.18.0", commit="fadcb6bcdb2f8e17c8fd2242f5686721b83e48fe")
+	version("1.12.0", commit="4adf61f20460fe7c64356c0aa6e0061ecec4d82b")
 
 	depends_on("r-rcy3", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))

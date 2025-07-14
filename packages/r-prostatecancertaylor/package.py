@@ -12,11 +12,10 @@ class RProstatecancertaylor(RPackage):
 	A Bioconductor data package for the Taylor et al (2010) dataset.
 	"""
 	
-	bioc = "prostateCancerTaylor" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/prostateCancerTaylor_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/prostateCancerTaylor/prostateCancerTaylor_1.30.0.tar.gz"]
+	bioc = "prostateCancerTaylor"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="7c0afc3b5055dcab296f6c730feb59ef2a6bb3fe91592f2f955ed9ccdd608c55")
+	version("1.36.0", commit="2597f83d9a4ee25028c97de3a7ca08e6f4fcf504")
+	version("1.30.0", commit="095c4c39cad347668045dfff47b1095cf3632649")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r@3.3:", type=("build", "run"))

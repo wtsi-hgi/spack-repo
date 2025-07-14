@@ -12,11 +12,10 @@ class RCma(RPackage):
 	This package provides a comprehensive collection of various microarray-based classification algorithms both from Machine Learning and Statistics. Variable Selection, Hyperparameter tuning, Evaluation and Comparison can be performed combined or stepwise in a user-friendly environment.
 	"""
 	
-	bioc = "CMA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CMA_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CMA/CMA_1.60.0.tar.gz"]
+	bioc = "CMA"
 
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="7b7dbde826c8dadc2d2be945080056306acb89afe766efe09c7fd0da7ac15511")
+	version("1.66.0", commit="59b96f7758d5d13a7cb8b415879d5b4e55e54686")
+	version("1.60.0", commit="21f98b08c39cc81e3dfa98cc68b25a06607edde1")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

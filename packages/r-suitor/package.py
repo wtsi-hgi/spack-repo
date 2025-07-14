@@ -12,11 +12,10 @@ class RSuitor(RPackage):
 	An unsupervised cross-validation method to select the optimal number of mutational signatures. A data set of mutational counts is split into training and validation data.Signatures are estimated in the training data and then used to predict the mutations in the validation data.
 	"""
 	
-	bioc = "SUITOR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SUITOR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SUITOR/SUITOR_1.4.0.tar.gz"]
+	bioc = "SUITOR"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="dcf836310ea9e773861574bf10dd01f88dc648c9679d59c6d1dcf13f9d46102b")
+	version("1.10.0", commit="283c6e28cf0f986d0d228a67517c723f850596b2")
+	version("1.4.0", commit="f2a596a57810e7845a7e85bcb1beaaa041a0e4e5")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

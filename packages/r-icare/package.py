@@ -12,11 +12,10 @@ class RIcare(RPackage):
 	An R package to compute Individualized Coherent Absolute Risk Estimators.
 	"""
 	
-	bioc = "iCARE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iCARE_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iCARE/iCARE_1.30.0.tar.gz"]
+	bioc = "iCARE"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="47e80ea396d8632601bb79caba8df0397df6564d84c6a51a43d1eb3fb91e0662")
+	version("1.36.0", commit="94da641c3e1cb2bde4a36f98aeaadb1a146bae0b")
+	version("1.30.0", commit="4a58d84f51a45df07a226baeb063b9ae70dfc1b7")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-plotrix", type=("build", "run"))

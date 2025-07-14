@@ -13,11 +13,10 @@ class RMousegastrulationdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/MarioniLab/MouseGastrulationData"
-	bioc = "MouseGastrulationData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MouseGastrulationData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MouseGastrulationData/MouseGastrulationData_1.16.0.tar.gz"]
+	bioc = "MouseGastrulationData"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="20369acb93d3ae208773d6394888d95930f6d24292495933609e42f770e60354")
+	version("1.22.0", commit="04b78226dbffa08aa80bdeed9e59451062b6f250")
+	version("1.16.0", commit="982a77683268507c2be5506f81bd0a4e5f990074")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

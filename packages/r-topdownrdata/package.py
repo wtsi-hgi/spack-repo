@@ -13,11 +13,10 @@ class RTopdownrdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/sgibb/topdownrdata/"
-	bioc = "topdownrdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/topdownrdata_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/topdownrdata/topdownrdata_1.24.0.tar.gz"]
+	bioc = "topdownrdata"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="22a5321300a668ac67bb395ba6df963e078e82fe0b981f8e2a56f983306f9d07")
+	version("1.30.0", commit="b78a03a9bc295eeafb47c6cb45a117a11439188a")
+	version("1.24.0", commit="b6233105fb260cca95d72641043b84ee9b51a4e2")
 
 	depends_on("r-topdownr", type=("build", "run"))
 

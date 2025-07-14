@@ -13,11 +13,10 @@ class RRdisop(RPackage):
 	"""
 	
 	homepage = "https://github.com/sneumann/Rdisop"
-	bioc = "Rdisop" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rdisop_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rdisop/Rdisop_1.62.0.tar.gz"]
+	bioc = "Rdisop"
 
-	version("1.68.0", tag="RELEASE_3_21")
-	version("1.62.0", sha256="0600d03ab393b592604865b2ac42e11aa6c09fb2d3978b3ac679e5ace130e0cb")
+	version("1.68.0", commit="c9082bf8c8a8f7588344c77d6dd9e8a74febd713")
+	version("1.62.0", commit="ad6fa139d9215fdcebf7acac07a154490a0fcefa")
 
 	depends_on("r@2:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -14,9 +14,8 @@ class RIllumina450probevariantsDb(RPackage):
 	of the four populations (Asian, American, African and European)."""
 
 	bioc = "Illumina450ProbeVariants.db"
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Illumina450ProbeVariants.db_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Illumina450ProbeVariants.db/Illumina450ProbeVariants.db_1.38.0.tar.gz"]
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="4b943ad15236b6d7190d3572aec4b26386756f423c441e8b2f5d88e66b6318c0")
+	version("1.44.0", commit="569a40c64ccdbcdf31f9dc69627a37f95aa47fa6")
+	version("1.38.0", commit="c0871033cdb7d4770446d9da8b903f1eacd1764f")
 	version("1.36.0", commit="aaa4254cebb352730779677cef7a7c99c1447e7a")
 	version("1.34.0", commit="6c0f0b4d2bcf13da852b2f132a8ce1229fa5269e")
 	version("1.32.0", commit="a15602253e675a104303627957653a08876d8d7c")

@@ -13,11 +13,10 @@ class RNetprior(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org/packages/netprioR"
-	bioc = "netprioR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/netprioR_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/netprioR/netprioR_1.28.0.tar.gz"]
+	bioc = "netprioR"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="913b56763c125c2729a51c0a550b5533ad511a4bdd310f9ff4c52f7abb4c0b0a")
+	version("1.34.0", commit="472209fca240773cb7173b1d726e0d6fa32aa274")
+	version("1.28.0", commit="5bc3fbba3887d0884ceb545079ef5adddb29d5ea")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

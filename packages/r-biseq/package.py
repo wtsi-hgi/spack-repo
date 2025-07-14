@@ -12,11 +12,10 @@ class RBiseq(RPackage):
 	The BiSeq package provides useful classes and functions to handle and analyze targeted bisulfite sequencing (BS) data such as reduced-representation bisulfite sequencing (RRBS) data. In particular, it implements an algorithm to detect differentially methylated regions (DMRs). The package takes already aligned BS data from one or multiple samples.
 	"""
 	
-	bioc = "BiSeq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiSeq_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiSeq/BiSeq_1.42.0.tar.gz"]
+	bioc = "BiSeq"
 
-	version("1.48.1", tag="RELEASE_3_21")
-	version("1.42.0", sha256="4faab2f1afc2d6852bb814e3533c429e9a91b55d8b920bce8ccc8c6ed7385d2a")
+	version("1.48.1", commit="840407efdb7249a98e4de32a9c75647cf6899db3")
+	version("1.42.0", commit="7dce55a0d2ac6349b5f03b57f37832443393180e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

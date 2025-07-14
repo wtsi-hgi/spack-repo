@@ -12,11 +12,10 @@ class RBatchelor(RPackage):
 	Implements a variety of methods for batch correction of single-cell (RNA sequencing) data. This includes methods based on detecting mutually nearest neighbors, as well as several efficient variants of linear regression of the log-expression values. Functions are also provided to perform global rescaling to remove differences in depth between batches, and to perform a principal components analysis that is robust to differences in the numbers of cells across batches.
 	"""
 	
-	bioc = "batchelor" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/batchelor_1.18.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/batchelor/batchelor_1.18.1.tar.gz"]
+	bioc = "batchelor"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.1", sha256="a58590880cf00dd2ff7c9fc75ee611e4d4cc5bae98246a1878f8d7d1da6c8dfc")
+	version("1.24.0", commit="8f5a7905a6845844711a252248010bfbf9202ef2")
+	version("1.18.1", commit="c4278931713410b5d42f0e7654c7df4828d2894d")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

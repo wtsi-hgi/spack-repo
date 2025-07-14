@@ -13,11 +13,10 @@ class RSpatialfeatureexperiment(RPackage):
 	"""
 	
 	homepage = "https://github.com/pachterlab/SpatialFeatureExperiment"
-	bioc = "SpatialFeatureExperiment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpatialFeatureExperiment_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpatialFeatureExperiment/SpatialFeatureExperiment_1.4.0.tar.gz"]
+	bioc = "SpatialFeatureExperiment"
 
-	version("1.10.1", tag="RELEASE_3_21")
-	version("1.4.0", sha256="a67f7c39bd846a69fbd661a6b3f72648cd4e6ac553e75d925fec6256d5cc47fb")
+	version("1.10.1", commit="0098d4373b2fa1b5315157d621250092543fe211")
+	version("1.4.0", commit="13f2a6b4db97e177e789cf75fd995c7d3a324057")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

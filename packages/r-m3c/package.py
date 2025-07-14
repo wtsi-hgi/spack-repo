@@ -12,11 +12,10 @@ class RM3c(RPackage):
 	M3C is a consensus clustering algorithm that uses a Monte Carlo simulation to eliminate overestimation of K and can reject the null hypothesis K=1.
 	"""
 	
-	bioc = "M3C" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/M3C_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/M3C/M3C_1.24.0.tar.gz"]
+	bioc = "M3C"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="61d22fd4c7e81c3e36cce452b7991d8f97bb6608f1822352fdb0d2770bbbd660")
+	version("1.30.0", commit="8d3fa5026aff7b3b90a3973aadcad3f65e86b3b8")
+	version("1.24.0", commit="995cac9475ecd7ade255e4ff3fb77efa9712514f")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

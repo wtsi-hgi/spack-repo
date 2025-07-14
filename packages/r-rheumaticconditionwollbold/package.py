@@ -13,11 +13,10 @@ class RRheumaticconditionwollbold(RPackage):
 	"""
 	
 	homepage = "http://compbio.dfci.harvard.edu/"
-	bioc = "rheumaticConditionWOLLBOLD" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/rheumaticConditionWOLLBOLD_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/rheumaticConditionWOLLBOLD/rheumaticConditionWOLLBOLD_1.40.0.tar.gz"]
+	bioc = "rheumaticConditionWOLLBOLD"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="ee85b1b45fefe1d0b3022b57bc7093d4327229f525ce2306f096cf302cec5d61")
+	version("1.46.0", commit="56fba5ff5cca9a54edcde2a21091e2a8a281dc28")
+	version("1.40.0", commit="f646b035a6f6e3439dd0b1ea6e38c51abd36d41f")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

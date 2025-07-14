@@ -14,10 +14,9 @@ class RAffy(RPackage):
 	functions. 'affy' is fully functional without it."""
 
 	bioc = "affy"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/affy_1.80.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/affy/affy_1.80.0.tar.gz"]
 
-	version("1.86.0", tag="RELEASE_3_21")
-	version("1.80.0", sha256="d37f74f991ef3567d44a72b1b0776625245b14215b64d08481bae66bcf665b53")
+	version("1.86.0", commit="263e70742f3085699839b7762b99f7dfe734a573")
+	version("1.80.0", commit="a0d64dfdadfff1a1d7a4c39ba73e843e5e3fc6da")
 	version("1.78.0", commit="cc7eac358b6e10ee86a7a93d2e436758f6fbd9b5")
 	version("1.76.0", commit="3bb309388d5d6402c356d4a5270ee83c5b88942f")
 	version("1.74.0", commit="2266c4a46eda7e5b64f7f3e17e8b61e7b85579ff")

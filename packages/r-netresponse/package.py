@@ -13,11 +13,10 @@ class RNetresponse(RPackage):
 	"""
 	
 	homepage = "https://github.com/antagomir/netresponse"
-	bioc = "netresponse" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/netresponse_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/netresponse/netresponse_1.62.0.tar.gz"]
+	bioc = "netresponse"
 
-	version("1.68.0", tag="RELEASE_3_21")
-	version("1.62.0", sha256="e30f8b3c1cd7ab025b2ee23dfd407f1abe85effb247925b5283715a87eeab5e9")
+	version("1.68.0", commit="6b0d93083d65a39c26cef1c5769c3c5daef76c01")
+	version("1.62.0", commit="b3dff344051a071aa99b90f00bd4729eacb9844e")
 
 	depends_on("r@2.15.1:", type=("build", "run"))
 	depends_on("r-biocstyle", type=("build", "run"))

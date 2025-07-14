@@ -12,11 +12,10 @@ class RScgps(RPackage):
 	The package implements two main algorithms to answer two key questions: a SCORE (Stable Clustering at Optimal REsolution) to find subpopulations, followed by scGPS to investigate the relationships between subpopulations.
 	"""
 	
-	bioc = "scGPS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scGPS_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scGPS/scGPS_1.16.0.tar.gz"]
+	bioc = "scGPS"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="3a30413a462684cd657530d996dc35dfdb79361d1fc7eb41900e868bfc1ae4f6")
+	version("1.22.0", commit="9caa79f765b62b5b9eb2741f3ee95563dacf152c")
+	version("1.16.0", commit="a8db94bc4eafb457c196ca9a7496fbaf4d44515e")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

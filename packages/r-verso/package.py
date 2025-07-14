@@ -13,11 +13,10 @@ class RVerso(RPackage):
 	"""
 	
 	homepage = "https://github.com/BIMIB-DISCo/VERSO"
-	bioc = "VERSO" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VERSO_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VERSO/VERSO_1.12.0.tar.gz"]
+	bioc = "VERSO"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="f2c5932e51dcde52fa4e2cd969d1f7fc8e5adf17e0d1d0fef164f30af7feadf1")
+	version("1.18.0", commit="8ef3b0838db0be295a9ddeea9df80bcf40ad0bda")
+	version("1.12.0", commit="7bc4393ef4367f6ed91aa907e00746eaf1a14294")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-data-tree", type=("build", "run"))

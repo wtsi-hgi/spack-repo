@@ -13,11 +13,10 @@ class RBnbc(RPackage):
 	"""
 	
 	homepage = "https://github.com/hansenlab/bnbc"
-	bioc = "bnbc" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/bnbc_1.24.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/bnbc/bnbc_1.24.2.tar.gz"]
+	bioc = "bnbc"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.2", sha256="fb19ad8721cb36a57d5bf7949c12d309a5ebc314ada4b95fd2abf833f650683b")
+	version("1.30.0", commit="f992cfe9f8f570361dc9d580f6b761dd7f07c370")
+	version("1.24.2", commit="c80ab47a13fa20977ee2803eb6ba129f3f12525e")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

@@ -13,11 +13,10 @@ class RDerfinderplot(RPackage):
 	"""
 	
 	homepage = "https://github.com/leekgroup/derfinderPlot"
-	bioc = "derfinderPlot" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/derfinderPlot_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/derfinderPlot/derfinderPlot_1.36.0.tar.gz"]
+	bioc = "derfinderPlot"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="8f29517009458968811b9f619a3ec9e11fe2e26c5e4f17abf7efb120fb6ef6cf")
+	version("1.42.0", commit="dc229b968b32590e29e67edb6b6f6270362b6587")
+	version("1.36.0", commit="23673dafb9bbab42e495c7eaa60c902c1d6ad4df")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-derfinder@1.1:", type=("build", "run"))

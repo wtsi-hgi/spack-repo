@@ -12,11 +12,10 @@ class RAffixcan(RPackage):
 	Impute a GReX (Genetically Regulated Expression) for a set of genes in a sample of individuals, using a method based on the Total Binding Affinity (TBA). Statistical models to impute GReX can be trained with a training dataset where the real total expression values are known.
 	"""
 	
-	bioc = "AffiXcan" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AffiXcan_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AffiXcan/AffiXcan_1.20.0.tar.gz"]
+	bioc = "AffiXcan"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="5930e4d789838200d4ee3d046b61178fea080915cdb32aeeaeb5ea5dbe46a0b8")
+	version("1.26.0", commit="80538fc7269b1ce9515fb76342e4bd04cca24ea4")
+	version("1.20.0", commit="26a1df70634d281287a41122c7dfdd873d79dd9d")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

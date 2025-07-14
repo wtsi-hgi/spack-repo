@@ -12,11 +12,10 @@ class RHmdbquery(RPackage):
 	Define utilities for exploration of human metabolome database, including functions to retrieve specific metabolite entries and data snapshots with pairwise associations (metabolite-gene,-protein,-disease).
 	"""
 	
-	bioc = "hmdbQuery" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hmdbQuery_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hmdbQuery/hmdbQuery_1.22.0.tar.gz"]
+	bioc = "hmdbQuery"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="a9d6e783eda8abcf4bcecd29b1944354b566b6634b1609c890cfe77622a9a074")
+	version("1.28.0", commit="8324ee507d28027ec2dd5c5525b8bfe213b26667")
+	version("1.22.0", commit="8e16e9493abfe8c2026156a9eeb052fff7079adb")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-xml", type=("build", "run"))

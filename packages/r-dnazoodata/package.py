@@ -13,11 +13,10 @@ class RDnazoodata(RPackage):
 	"""
 	
 	homepage = "https://github.com/js2264/DNAZooData"
-	bioc = "DNAZooData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DNAZooData_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DNAZooData/DNAZooData_1.2.0.tar.gz"]
+	bioc = "DNAZooData"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="88c27591277a3b1d76fc3e86b0ae25d1587001cfe1c5aa14154883819631a434")
+	version("1.8.0", commit="8cb7246984b9c3a63dd90e092e19837664b6e4af")
+	version("1.2.0", commit="226f0349b7d16d189bdb6e180bbd7b3b14d05fae")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-hicexperiment", type=("build", "run"))

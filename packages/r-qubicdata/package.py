@@ -13,11 +13,10 @@ class RQubicdata(RPackage):
 	"""
 	
 	homepage = "http://github.com/zy26/QUBICdata"
-	bioc = "QUBICdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/QUBICdata_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/QUBICdata/QUBICdata_1.30.0.tar.gz"]
+	bioc = "QUBICdata"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="0a2a34966c4a2a08ae0374dd79f6b921d7d1c3c0a690bf79a52eb74c75b3eb2a")
+	version("1.36.0", commit="6de85a4563d3398061765e09f095dc529750a547")
+	version("1.30.0", commit="6da9024c40e947dbffb971966dbebbce6e6eaa6b")
 
 	depends_on("r@3.1:", type=("build", "run"))
 

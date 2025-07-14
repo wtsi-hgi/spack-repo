@@ -12,11 +12,10 @@ class RImpcdata(RPackage):
 	Package contains methods for data retrieval from IMPC Database.
 	"""
 	
-	bioc = "IMPCdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IMPCdata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IMPCdata/IMPCdata_1.38.0.tar.gz"]
+	bioc = "IMPCdata"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="d56bd3aa0e47be147b6160f7b69737a711da6c4ef0075c539aff1b125d499872")
+	version("1.44.0", commit="fd8c39d0876630d187429341469cb6771c00df8f")
+	version("1.38.0", commit="8fa0d84f3c9a534427eb952c48e19e331a83039b")
 
 	depends_on("r@2.3:", type=("build", "run"))
 	depends_on("r-rjson", type=("build", "run"))

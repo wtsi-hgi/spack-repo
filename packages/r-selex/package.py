@@ -13,11 +13,10 @@ class RSelex(RPackage):
 	"""
 	
 	homepage = "https://bussemakerlab.org/site/software/"
-	bioc = "SELEX" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SELEX_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SELEX/SELEX_1.34.0.tar.gz"]
+	bioc = "SELEX"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="d2f6545f17a5e9c3ebee4cd1623b27a5ffa4425ba5f79607bb9dfba007808a54")
+	version("1.40.0", commit="2536d7bf1bc3b13f654aa7382aa4108e3eb8da90")
+	version("1.34.0", commit="bbfab0a8aba1480e4ac68511d844079659c7d5ad")
 
 	depends_on("r-rjava@0.5.0:", type=("build", "run"))
 	depends_on("r-biostrings@2.26:", type=("build", "run"))

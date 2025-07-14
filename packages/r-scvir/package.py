@@ -13,11 +13,10 @@ class RScvir(RPackage):
 	"""
 	
 	homepage = "https://github.com/vjcitn/scviR"
-	bioc = "scviR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scviR_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scviR/scviR_1.2.0.tar.gz"]
+	bioc = "scviR"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="0a15def9dcf1483c867cf45a795b14da37ac97aa686a29e50d2fda5b55475fd9")
+	version("1.8.0", commit="a4f406f3cc15772762e7567b838c0a460c86f0d1")
+	version("1.2.0", commit="2a594ba204f383827cf14203038fcebb6184db6b")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-basilisk", type=("build", "run"))

@@ -13,11 +13,10 @@ class RAggregatebiovar(RPackage):
 	"""
 	
 	homepage = "https://github.com/jasonratcliff/aggregateBioVar"
-	bioc = "aggregateBioVar" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/aggregateBioVar_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/aggregateBioVar/aggregateBioVar_1.12.0.tar.gz"]
+	bioc = "aggregateBioVar"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="8a165cd344f00c7b07bf45090679f853fdb351b3d33f30ce9590a6cf2c8404c4")
+	version("1.18.0", commit="7f3c6cff3ca2e2b524944a6856adf68de2119ab9")
+	version("1.12.0", commit="2cefc8aee70f55912895783eb9572096e93b235a")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

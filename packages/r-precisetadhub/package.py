@@ -13,11 +13,10 @@ class RPrecisetadhub(RPackage):
 	"""
 	
 	homepage = "https://github.com/dozmorovlab/preciseTADhub"
-	bioc = "preciseTADhub" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/preciseTADhub_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/preciseTADhub/preciseTADhub_1.10.0.tar.gz"]
+	bioc = "preciseTADhub"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="2d8ae69f264e8502492a423bfb644135f855f408336fdb89f572989dcf6ad300")
+	version("1.16.0", commit="139271c5c2ad7c5c4259143e7fd90ccabf7b84de")
+	version("1.10.0", commit="e239e2a1488293b8b1631dedebadff94ab78347b")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

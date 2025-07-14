@@ -12,11 +12,10 @@ class RDvddata(RPackage):
 	Data package which provides default drug and disease expression profiles for the DvD package.
 	"""
 	
-	bioc = "DvDdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DvDdata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DvDdata/DvDdata_1.38.0.tar.gz"]
+	bioc = "DvDdata"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="c36cca1c305bc0e67da88ca0a239b6c34e6993c6a93fb70096ba7c4506146598")
+	version("1.44.0", commit="ba2be704908627e4375b1f937774fd6d6c22ebeb")
+	version("1.38.0", commit="191d798d58657fff7458d538c3eb666449ea52ee")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

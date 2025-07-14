@@ -13,11 +13,10 @@ class RIterativebmasurv(RPackage):
 	"""
 	
 	homepage = "http://expression.washington.edu/ibmasurv/protected"
-	bioc = "iterativeBMAsurv" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iterativeBMAsurv_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iterativeBMAsurv/iterativeBMAsurv_1.60.0.tar.gz"]
+	bioc = "iterativeBMAsurv"
 
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="09e9a010a303c25c85540bc32e768173f4dda11980b3ae5ff9347e2a10fa93c4")
+	version("1.66.0", commit="3d0cf1debcb082ba204ab590e50f1b1b7f94cc67")
+	version("1.60.0", commit="16fba544a44503317cdf160738ac18ea38735e17")
 
 	depends_on("r-bma", type=("build", "run"))
 	depends_on("r-leaps", type=("build", "run"))

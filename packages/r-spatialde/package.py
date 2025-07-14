@@ -13,11 +13,10 @@ class RSpatialde(RPackage):
 	"""
 	
 	homepage = "https://github.com/sales-lab/spatialDE"
-	bioc = "spatialDE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spatialDE_1.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spatialDE/spatialDE_1.8.1.tar.gz"]
+	bioc = "spatialDE"
 
-	version("1.14.1", tag="RELEASE_3_21")
-	version("1.8.1", sha256="0404fb4c953aeaea27adc0ac8802982be51b0fbc5172491297402d8e2ed8f2ac")
+	version("1.14.1", commit="205de11bc541782b4561b84b837449ae54a20fee")
+	version("1.8.1", commit="2f7926f5e1d6b9d8b53efe92fbc779694a70f9d5")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-reticulate", type=("build", "run"))

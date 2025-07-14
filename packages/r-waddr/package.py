@@ -13,11 +13,10 @@ class RWaddr(RPackage):
 	"""
 	
 	homepage = "https://github.com/goncalves-lab/waddR.git"
-	bioc = "waddR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/waddR_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/waddR/waddR_1.16.0.tar.gz"]
+	bioc = "waddR"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="675e24e4135651c3b0618452334769d5388f21a45979acd82fd1f6b84bbf451d")
+	version("1.22.0", commit="9307e86ff6536891696ab63846837165d8b3d7da")
+	version("1.16.0", commit="f52f28ee77e557b25d4fb1d85faa1832bfb4ad46")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

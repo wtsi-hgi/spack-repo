@@ -13,11 +13,10 @@ class RCageminer(RPackage):
 	"""
 	
 	homepage = "https://github.com/almeidasilvaf/cageminer"
-	bioc = "cageminer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cageminer_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cageminer/cageminer_1.8.0.tar.gz"]
+	bioc = "cageminer"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="dc7f034cbc9e9b9f5080b74e94fb40ff0beab366d28eb70c92185dde391da1ad")
+	version("1.14.0", commit="a1a4142f621fc64eeffef390f6b53bb3468221c4")
+	version("1.8.0", commit="31e3906297dde98dc3121fc9ddd5d12b79c0b44c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

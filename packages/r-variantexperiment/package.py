@@ -13,11 +13,10 @@ class RVariantexperiment(RPackage):
 	"""
 	
 	homepage = "https://github.com/Bioconductor/VariantExperiment"
-	bioc = "VariantExperiment" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VariantExperiment_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VariantExperiment/VariantExperiment_1.16.0.tar.gz"]
+	bioc = "VariantExperiment"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="8b53170a3040548bf59d33e0257f8d5b3850954a5acc923cb1b9a5a53e167cc5")
+	version("1.22.0", commit="7470f43a557d5d276fc23b159f85895f347a8a42")
+	version("1.16.0", commit="1e2834f96c4bb815871d118043d01bceaa4a1cbd")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-s4vectors@0.21.24:", type=("build", "run"))

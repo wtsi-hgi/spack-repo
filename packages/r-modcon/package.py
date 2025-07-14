@@ -13,11 +13,10 @@ class RModcon(RPackage):
 	"""
 	
 	homepage = "https://github.com/caggtaagtat/ModCon"
-	bioc = "ModCon" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ModCon_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ModCon/ModCon_1.10.0.tar.gz"]
+	bioc = "ModCon"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="5c22734c752cc7998326b4be8eb5041e782d9c15fdc51c2168f4ce0d6f413f9d")
+	version("1.16.0", commit="2ead6d76c213099399d26eebd48153d747ae3e64")
+	version("1.10.0", commit="05c979f6af16458ca6ed9dbc67bcd0933e6b9ccf")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r@4.1:", type=("build", "run"))

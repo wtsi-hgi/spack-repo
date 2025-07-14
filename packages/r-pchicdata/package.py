@@ -12,11 +12,10 @@ class RPchicdata(RPackage):
 	Subsets of Promoter Capture Hi-C data conveniently packaged for Chicago users. Data includes interactions detected for chromosomes 20 and 21 in GM12878 cells and for chromosomes 18 and 19 in mESC.
 	"""
 	
-	bioc = "PCHiCdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PCHiCdata_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PCHiCdata/PCHiCdata_1.30.0.tar.gz"]
+	bioc = "PCHiCdata"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="5d02e3bba4bb8a1dab821409f949317c01f2d7e78fb97c4df06458f754b0bfa7")
+	version("1.36.0", commit="169ac7b84a498ef4d57d5fe009593dfcc8d29b1d")
+	version("1.30.0", commit="95d1911bf586e67a38c33c42565ac667d93cac00")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-chicago", type=("build", "run"))

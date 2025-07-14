@@ -12,11 +12,10 @@ class RSeqsetvis(RPackage):
 	seqsetvis enables the visualization and analysis of sets of genomic sites in next gen sequencing data. Although seqsetvis was designed for the comparison of mulitple ChIP-seq samples, this package is domain-agnostic and allows the processing of multiple genomic coordinate files (bed-like files) and signal files (bigwig files pileups from bam file).
 	"""
 	
-	bioc = "seqsetvis" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/seqsetvis_1.22.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/seqsetvis/seqsetvis_1.22.1.tar.gz"]
+	bioc = "seqsetvis"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.1", sha256="b4a2692c890e6419d0a896eebeb5c4c7d90b9cc44f8b4500c7e1ebfaf7457351")
+	version("1.28.0", commit="28d6e95987b10f61b03136869913b8cf5ece3b81")
+	version("1.22.1", commit="6084d0e9ee94c63381617a24bf1068ebd74ee8df")
 	version("1.22.0", md5="0119c8a5e2475e3a0d35059b3c35dfd6")
 
 	depends_on("r@3.6:", type=("build", "run"))

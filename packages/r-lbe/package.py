@@ -12,9 +12,8 @@ class RLbe(RPackage):
 	LBE is an efficient procedure for estimating the proportion of true null hypotheses, the false discovery rate (and so the q-values) in the framework of estimating procedures based on the marginal distribution of the p-values without assumption for the alternative hypothesis.
 	"""
 	
-	bioc = "LBE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LBE_1.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LBE/LBE_1.70.0.tar.gz"]
+	bioc = "LBE"
 
-	version("1.76.0", tag="RELEASE_3_21")
-	version("1.70.0", sha256="99990d21cff0a2b427afbade12547c637c5aeb63a494f956b6d6f0d97a7e723b")
+	version("1.76.0", commit="8c748257219c6eccd974e034a6d892d8e325b2a5")
+	version("1.70.0", commit="e846862e6cc922deba089a84ffb59603adc52b22")
 

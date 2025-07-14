@@ -13,11 +13,10 @@ class RCatalyst(RPackage):
 	"""
 	
 	homepage = "https://github.com/HelenaLC/CATALYST"
-	bioc = "CATALYST" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CATALYST_1.26.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CATALYST/CATALYST_1.26.1.tar.gz"]
+	bioc = "CATALYST"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.1", sha256="083cd5f8c7271d0a2dcae29cbcbf072153dc8196f94d84bbde7a0289d022cbfd")
+	version("1.32.0", commit="e5841ae98fb9e5fb78fa3c3adb03a044c224b0aa")
+	version("1.26.1", commit="bca4eb0e11ff9761b8c1d3bb5f3b4da2c660d9cb")
 	version("1.26.0", md5="6ce647576b86ebdf9fe0933fd87b79ce")
 
 	depends_on("r@4.2:", type=("build", "run"))

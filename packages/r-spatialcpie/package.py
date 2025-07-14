@@ -12,11 +12,10 @@ class RSpatialcpie(RPackage):
 	SpatialCPie is an R package designed to facilitate cluster evaluation for spatial transcriptomics data by providing intuitive visualizations that display the relationships between clusters in order to guide the user during cluster identification and other downstream applications. The package is built around a shiny "gadget" to allow the exploration of the data with multiple plots in parallel and an interactive UI. The user can easily toggle between different cluster resolutions in order to choose the most appropriate visual cues.
 	"""
 	
-	bioc = "SpatialCPie" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SpatialCPie_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SpatialCPie/SpatialCPie_1.18.0.tar.gz"]
+	bioc = "SpatialCPie"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="0545ba0c1a905914cb8b9e262f86f368f29f09b14d6e4246b1819f105496d783")
+	version("1.24.0", commit="8858b53318174816f91d2138e3a2636a75b0266d")
+	version("1.18.0", commit="bac8748e9586397acc4db53b97938d3e0b7ac4f2")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-colorspace@1.3.2:", type=("build", "run"))

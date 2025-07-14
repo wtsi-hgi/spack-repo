@@ -13,10 +13,9 @@ class RFenr(RPackage):
 	"""
 	
 	homepage = "https://github.com/bartongroup/fenr"
-	bioc = "fenr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fenr_1.0.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fenr/fenr_1.0.5.tar.gz"]
+	bioc = "fenr"
 
-	version("1.6.1", tag="RELEASE_3_21")
+	version("1.6.1", commit="d8099fa043a2270711d06d82bf8c90c6a79a61e0")
 	version("1.0.5", sha256="bb1e875ce7dfb033d9a45c4bf45f5866860a9d543b983d31efe1550db3a59219")
 
 	depends_on("r@4.3:", type=("build", "run"))

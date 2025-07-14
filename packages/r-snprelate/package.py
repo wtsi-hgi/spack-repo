@@ -28,9 +28,8 @@ class RSnprelate(RPackage):
 	structural variation calls."""
 
 	bioc = "SNPRelate"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SNPRelate_1.36.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SNPRelate/SNPRelate_1.36.1.tar.gz"]
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.1", sha256="36dee0da73d8f151dfe42aecc1c51d6b9a22a1e9a4cfa874aa2667cef1c92534")
+	version("1.42.0", commit="9bc59fde58e0cd6d9c6ea10e895d57dc9e8e55d2")
+	version("1.36.1", commit="edb77b3b839edf2ec94662a1ec1a2204f6abd4b9")
 	version("1.36.0", md5="f4e5095c6b99014e02d770e7f4bd5617")
 	version("1.34.0", commit="27a7c9658b974f9887f48a4a3ed1a7621b141488")
 	version("1.32.0", commit="2e8cc807baa74fca5137148b672f3945c36689b2")

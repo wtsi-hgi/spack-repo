@@ -12,11 +12,10 @@ class RFlowworkspace(RPackage):
 	This package is designed to facilitate comparison of automated gating methods against manual gating done in flowJo. This package allows you to import basic flowJo workspaces into BioConductor and replicate the gating from flowJo using the flowCore functionality. Gating hierarchies, groups of samples, compensation, and transformation are performed so that the output matches the flowJo analysis.
 	"""
 	
-	bioc = "flowWorkspace" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowWorkspace_4.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowWorkspace/flowWorkspace_4.14.3.tar.gz"]
+	bioc = "flowWorkspace"
 
-	version("4.20.0", tag="RELEASE_3_21")
-	version("4.14.3", sha256="9c8fdf2ced1db2e64f1673d6796618a3b1c813b9b92d358b2c82181dfffe161e")
+	version("4.20.0", commit="6963021e1e103806dc28557ccdec6f396b33d859")
+	version("4.14.3", commit="7447e9ee630374f0878879532354892b72b3a093")
 	version("4.14.2", md5="8c13b6aa80732d54f36bb544adba5a6c")
 
 	depends_on("r@3.5:", type=("build", "run"))

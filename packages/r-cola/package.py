@@ -13,11 +13,10 @@ class RCola(RPackage):
 	"""
 	
 	homepage = "https://github.com/jokergoo/cola"
-	bioc = "cola" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cola_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cola/cola_2.8.0.tar.gz"]
+	bioc = "cola"
 
-	version("2.14.0", tag="RELEASE_3_21")
-	version("2.8.0", sha256="c4c3220dfdcc29df2d0da530bcefb0ffecf4ef3ecf258022176734100d303073")
+	version("2.14.0", commit="545c0fec7c2fe1a48e21cc15dbb3651aae8fae72")
+	version("2.8.0", commit="3c447b4a72dad72e275455dd1321bf1fa36ee2d1")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-complexheatmap@2.5.4:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RRegionalpcs(RPackage):
 	"""
 	
 	homepage = "https://github.com/tyeulalio/regionalpcs"
-	bioc = "regionalpcs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/regionalpcs_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/regionalpcs/regionalpcs_1.0.0.tar.gz"]
+	bioc = "regionalpcs"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="e16add6355dc7e8f0abf1e64ebf7d630353fbe344029064834c5504ae6e9403d")
+	version("1.6.0", commit="bdc7e3aaf9edac51c59044b3e9b8ecba2830e9c3")
+	version("1.0.0", commit="00bdaf515039325fa9ace39a428d199df4fe50e1")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

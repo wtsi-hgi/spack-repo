@@ -13,11 +13,10 @@ class RRiver(RPackage):
 	"""
 	
 	homepage = "https://github.com/ipw012/RIVER"
-	bioc = "RIVER" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RIVER_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RIVER/RIVER_1.26.0.tar.gz"]
+	bioc = "RIVER"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="e8a5bdd1ea8d5badd9fedbc9b596548ae8f24a4a215f8d6727ca3dc6b8779fcd")
+	version("1.32.0", commit="e278e1e2c4b0ffaf2bed05a92a880fd0df5463b1")
+	version("1.26.0", commit="44ad7c632922288a0a7d3932ddb4921873a575b5")
 
 	depends_on("r@3.3.2:", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))

@@ -13,11 +13,10 @@ class RTcgaworkflow(RPackage):
 	"""
 	
 	homepage = "https://f1000research.com/articles/5-1542/v2"
-	bioc = "TCGAWorkflow" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/TCGAWorkflow_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/TCGAWorkflow/TCGAWorkflow_1.26.0.tar.gz"]
+	bioc = "TCGAWorkflow"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="e729d681b8d53cf9b7e3273942b21acfe5131f1438d9bb834436cb1cc8562656")
+	version("1.32.0", commit="d3a7608a14d6394b64dfb1a2a2c3d32ab7bad975")
+	version("1.26.0", commit="6eb33d4b0e5881fe717ee272fce9f0bb4e13a897")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))

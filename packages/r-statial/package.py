@@ -13,11 +13,10 @@ class RStatial(RPackage):
 	"""
 	
 	homepage = "https://sydneybiox.github.io/Statial"
-	bioc = "Statial" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Statial_1.4.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Statial/Statial_1.4.5.tar.gz"]
+	bioc = "Statial"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.5", sha256="b89442b4b517f18f08c3fc7052c16d17473a4b0c771bc3faba7787f6989d32c3")
+	version("1.10.0", commit="3b3c23d0f5f93fb25dd0bdfedcc22b4206e00ea8")
+	version("1.4.5", commit="e0fe1204a076b4072ea68877705287d627c900c7")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

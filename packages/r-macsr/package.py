@@ -12,11 +12,10 @@ class RMacsr(RPackage):
 	The Model-based Analysis of ChIP-Seq (MACS) is a widely used toolkit for identifying transcript factor binding sites. This package is an R wrapper of the lastest MACS3.
 	"""
 	
-	bioc = "MACSr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MACSr_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MACSr/MACSr_1.10.0.tar.gz"]
+	bioc = "MACSr"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="971c557f96ff27220b70c995a1850ae34e528a9b5aefab732b8a21f82aeccbd6")
+	version("1.16.0", commit="309d4f6ec70270334fd721b63917e0daf7485b95")
+	version("1.10.0", commit="640c4c3ea3076d184b97516a678203020c858cd6")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-reticulate", type=("build", "run"))

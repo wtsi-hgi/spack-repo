@@ -13,11 +13,10 @@ class RIntercellar(RPackage):
 	"""
 	
 	homepage = "https://github.com/martaint/InterCellar"
-	bioc = "InterCellar" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/InterCellar_2.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/InterCellar/InterCellar_2.8.0.tar.gz"]
+	bioc = "InterCellar"
 
-	version("2.14.0", tag="RELEASE_3_21")
-	version("2.8.0", sha256="3249feed8815c5cba98a3c36b0d991539b4c60909c6505162569b57bbcdc79f5")
+	version("2.14.0", commit="8766774475788dc7037762ec53730945c46b13bd")
+	version("2.8.0", commit="f47528abbb9804aa7663f031e054f752dfadc5f7")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-config", type=("build", "run"))

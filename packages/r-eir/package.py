@@ -13,11 +13,10 @@ class REir(RPackage):
 	"""
 	
 	homepage = "https://github.com/girke-lab/eiR"
-	bioc = "eiR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/eiR_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/eiR/eiR_1.42.0.tar.gz"]
+	bioc = "eiR"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="53c2812540a22b06579982e97f96894b6fd3b2a8abc8d1119572a0161b68e443")
+	version("1.48.0", commit="4f09eda4415832e538964684f53fb69bf05ef668")
+	version("1.42.0", commit="b7149c13eb11abaf3694047a7db8032f80390692")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-chemminer", type=("build", "run"))

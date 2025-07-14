@@ -13,11 +13,10 @@ class RStdeconvolve(RPackage):
 	"""
 	
 	homepage = "https://jef.works/STdeconvolve/"
-	bioc = "STdeconvolve" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/STdeconvolve_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/STdeconvolve/STdeconvolve_1.6.0.tar.gz"]
+	bioc = "STdeconvolve"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="172c5e0ed57d279eaebc7496e7be51af4d460aa2902495abbc5a6aee91077c9b")
+	version("1.12.0", commit="ae34af0cf73d5fa3c6ae20536d66ce59cee1f2fc")
+	version("1.6.0", commit="9cc625d4202755387ee6c851e689f0d868c4bce7")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-topicmodels", type=("build", "run"))

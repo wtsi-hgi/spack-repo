@@ -13,11 +13,10 @@ class RCardinal(RPackage):
 	"""
 	
 	homepage = "http://www.cardinalmsi.org"
-	bioc = "Cardinal" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Cardinal_3.4.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Cardinal/Cardinal_3.4.3.tar.gz"]
+	bioc = "Cardinal"
 
-	version("3.10.0", tag="RELEASE_3_21")
-	version("3.4.3", sha256="e14668ea2cd59cb757524ce0b222a1edb71d0cb5da1c8f8b39b4936a9356c07e")
+	version("3.10.0", commit="07d927350c2bdd5b852bcf2fbf3c7cdd9131ab22")
+	version("3.4.3", commit="eacb164cd82306a03e763ea7da00575a32f4fffd")
 
 	depends_on("r-protgenerics", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

@@ -12,11 +12,10 @@ class RGwena(RPackage):
 	The development of high-throughput sequencing led to increased use of co-expression analysis to go beyong single feature (i.e. gene) focus. We propose GWENA (Gene Whole co-Expression Network Analysis) , a tool designed to perform gene co-expression network analysis and explore the results in a single pipeline. It includes functional enrichment of modules of co-expressed genes, phenotypcal association, topological analysis and comparison of networks configuration between conditions.
 	"""
 	
-	bioc = "GWENA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GWENA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GWENA/GWENA_1.12.0.tar.gz"]
+	bioc = "GWENA"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="0d168b8f0ceb4aece493cbea2e9c04676db118e0cd97625e15a825afdbc45456")
+	version("1.18.0", commit="078fff0b7717c481757bafd3a79b9d868d9264f7")
+	version("1.12.0", commit="76d08ee5cd0887ee8370290b6b93a0bfb599413f")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-wgcna@1.67:", type=("build", "run"))

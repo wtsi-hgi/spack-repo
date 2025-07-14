@@ -12,11 +12,10 @@ class RSdams(RPackage):
 	This Package utilizes a Semi-parametric Differential Abundance/expression analysis (SDA) method for metabolomics and proteomics data from mass spectrometry as well as single-cell RNA sequencing data. SDA is able to robustly handle non-normally distributed data and provides a clear quantification of the effect size.
 	"""
 	
-	bioc = "SDAMS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SDAMS_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SDAMS/SDAMS_1.22.0.tar.gz"]
+	bioc = "SDAMS"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="dec80a4e2c92f8062ced8e1fa9b773cbfda56eeb1393bc0ff137034f698eb252")
+	version("1.28.0", commit="55e1c3947d09f1a96417d5b5b0e81ed847dd1082")
+	version("1.22.0", commit="45ec40e10f142a5c4b134fe0e274c5e9acc83025")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -12,11 +12,10 @@ class RMicrobiomedatasets(RPackage):
 	microbiomeDataSets is a collection of microbiome datasets loaded from Bioconductor'S ExperimentHub infrastructure. The datasets serve as reference for workflows and vignettes published adjacent to the microbiome analysis tools on Bioconductor. Additional datasets can be added overtime and additions from authors are welcome.
 	"""
 	
-	bioc = "microbiomeDataSets" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/microbiomeDataSets_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/microbiomeDataSets/microbiomeDataSets_1.10.0.tar.gz"]
+	bioc = "microbiomeDataSets"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="c94a286312b40f14dd9aae05a61bc0b3f698e1b783863ae0295e60c7414621c4")
+	version("1.16.0", commit="5c73287cf4c40638db06eb588ad4bb8112266e1a")
+	version("1.10.0", commit="d02a75a50583e539f05dd34c8128cf456b8b5744")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

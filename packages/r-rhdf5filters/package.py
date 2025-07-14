@@ -12,12 +12,11 @@ class RRhdf5filters(RPackage):
 	Provides a collection of compression filters for use with HDF5 datasets."""
 
 	bioc = "rhdf5filters"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rhdf5filters_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rhdf5filters/rhdf5filters_1.14.1.tar.gz"]
-	version("1.20.0", tag="RELEASE_3_21")
+	version("1.20.0", commit="3a5ed04b4966a7a5a250fa519d431c1ea8fb28fc")
 	version("1.8.0", commit="b0b588b71a5595b30f4e698a50b84310dc19745d")
 	version("1.6.0", commit="5f7f3a5b7dabd6e7d0c50cda70290e2472ff4f53")
 	version("1.2.0", commit="25af0180f926b4b3ea11b30ec9277d26ad3d56b3")
-	version("1.14.1", sha256="6636612d28ea6f2e658400cbd186066926fe3d4b8d07261ad7a49299c23c0e33")
+	version("1.14.1", commit="2a2e71e8016592cc2d7b50d0faee4ac6dd1594ec")
 	version("1.12.0", commit="4deabdef71c0349c4eaf7e5604cb7f389809f006")
 	version("1.10.0", commit="6131538e2c5896dca0af33882bc2da961d79e49a")
 

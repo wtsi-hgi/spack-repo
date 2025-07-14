@@ -12,11 +12,10 @@ class RCsar(RPackage):
 	Statistical tools for ChIP-seq data analysis. The package includes the statistical method described in Kaufmann et al. (2009) PLoS Biology: 7(4):e1000090. Briefly, Taking the average DNA fragment size subjected to sequencing into account, the software calculates genomic single-nucleotide read-enrichment values. After normalization, sample and control are compared using a test based on the Poisson distribution. Test statistic thresholds to control the false discovery rate are obtained through random permutation.
 	"""
 	
-	bioc = "CSAR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CSAR_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CSAR/CSAR_1.54.0.tar.gz"]
+	bioc = "CSAR"
 
-	version("1.60.0", tag="RELEASE_3_21")
-	version("1.54.0", sha256="16da9a2e86afc9f29ad9a76739aa7dcaf2e51c6d53adc8c8bfe3f416a2b8d5c4")
+	version("1.60.0", commit="104d0ff6629333cd249c9c8860cc124306b2a843")
+	version("1.54.0", commit="e73960078e8b261a4bd7ee0bb356a7ef9a2d4345")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))

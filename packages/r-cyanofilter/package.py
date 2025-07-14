@@ -13,11 +13,10 @@ class RCyanofilter(RPackage):
 	"""
 	
 	homepage = "https://github.com/fomotis/cyanoFilter"
-	bioc = "cyanoFilter" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cyanoFilter_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cyanoFilter/cyanoFilter_1.10.0.tar.gz"]
+	bioc = "cyanoFilter"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="3e0588f4903aae934b653dbdd2d036a0bde4a42e97d399743b40dde539139d22")
+	version("1.16.0", commit="b0e1a35488445a821bf7ba997ad482280423b2be")
+	version("1.10.0", commit="ccfe34009b92ad7d96a0de614b2d9d90cbaa9151")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

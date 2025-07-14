@@ -12,11 +12,10 @@ class RTrnadbimport(RPackage):
 	tRNAdbImport imports the entries of the tRNAdb and mtRNAdb (http://trna.bioinf.uni-leipzig.de) as GRanges object.
 	"""
 	
-	bioc = "tRNAdbImport" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tRNAdbImport_1.20.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tRNAdbImport/tRNAdbImport_1.20.1.tar.gz"]
+	bioc = "tRNAdbImport"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.1", sha256="d15a0fd1e9fb300b8e884c9971e9cc0299391f289ff311b4979184d4ab8e55c4")
+	version("1.26.0", commit="2c327ce9d57fad5d7a76576a9809502de6057e87")
+	version("1.20.1", commit="c5a12a3b92b5f59a307f5cd522e2c64821541b98")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

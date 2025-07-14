@@ -13,11 +13,10 @@ class RMethrix(RPackage):
 	"""
 	
 	homepage = "https://github.com/CompEpigen/methrix"
-	bioc = "methrix" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/methrix_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/methrix/methrix_1.16.0.tar.gz"]
+	bioc = "methrix"
 
-	version("1.22.1", tag="RELEASE_3_21")
-	version("1.16.0", sha256="c2ceb7bbdf73d9ff37440cc00cbf8978cb191c0a6064578bf0767515c7adcdfb")
+	version("1.22.1", commit="4c85392595197f32d552b4471a8120ad3b71429d")
+	version("1.16.0", commit="6ed523366f554fafc7830084093b08a26591c219")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-data-table@1.12.4:", type=("build", "run"))

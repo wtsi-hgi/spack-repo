@@ -12,10 +12,9 @@ class RGosim(RPackage):
 	This package implements several functions useful for computing similarities between GO terms and gene products based on their GO annotation. Moreover it allows for computing a GO enrichment analysis
 	"""
 	
-	bioc = "GOSim" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GOSim_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GOSim/GOSim_1.40.0.tar.gz"]
+	bioc = "GOSim"
 
-	version("1.40.0", sha256="61af6af473c9525fec92119d5c0e9e07c2e1d61ff31fefacb80c87488796fac7")
+	version("1.40.0", commit="564fdb31fa5a986d0ad7fd5012afc05ce9f49269")
 
 	depends_on("r-go-db", type=("build", "run"))
 	depends_on("r-annotate", type=("build", "run"))

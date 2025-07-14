@@ -13,11 +13,10 @@ class RIpddb(RPackage):
 	"""
 	
 	homepage = "https://github.com/DKMS-LSL/ipdDb"
-	bioc = "ipdDb" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ipdDb_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ipdDb/ipdDb_1.20.0.tar.gz"]
+	bioc = "ipdDb"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="5585cff787a7fb7ce37aba97aa052ef074b2723e5176d289e4d2284e2310a096")
+	version("1.26.0", commit="2c0158285b7196f2b0e9a9668c339f91922eab14")
+	version("1.20.0", commit="91c41ad259a2d808ca2f5a17e335e31c3d920c4b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.43.1:", type=("build", "run"))

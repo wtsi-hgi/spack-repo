@@ -12,11 +12,10 @@ class RAhensdbs(RPackage):
 	Supplies AnnotationHub with EnsDb Ensembl-based annotation databases for all species. EnsDb SQLite databases are generated separately from Ensembl MySQL databases using functions from the ensembldb package employing the Ensembl Perl API.
 	"""
 	
-	bioc = "AHEnsDbs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AHEnsDbs_1.1.11.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/AHEnsDbs/AHEnsDbs_1.1.11.tar.gz"]
+	bioc = "AHEnsDbs"
 
-	version("1.7.0", tag="RELEASE_3_21")
-	version("1.1.11", sha256="1afc474ca376b90a3fe0fd6ce2605987b7c12a1e6384b64c53ce2844a25408d6")
+	version("1.7.0", commit="2cef9f0b74c7f617665788875b2f36205083b181")
+	version("1.1.11", commit="c46268659af7e572fded8298ba87ba29189a594a")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-ensembldb@1.99.10:", type=("build", "run"))

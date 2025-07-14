@@ -13,11 +13,10 @@ class RDistinct(RPackage):
 	"""
 	
 	homepage = "https://github.com/SimoneTiberi/distinct"
-	bioc = "distinct" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/distinct_1.14.5.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/distinct/distinct_1.14.5.tar.gz"]
+	bioc = "distinct"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.5", sha256="024351f81a26bef315770d5a45066932212a580b74cdc72547d90060f01e7892")
+	version("1.20.0", commit="40c0b985a96a439d596a44d3b0ac758c1bf5dcec")
+	version("1.14.5", commit="31c71744359eb2b226b7b82bca897ef6bb3270d1")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

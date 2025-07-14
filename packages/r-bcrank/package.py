@@ -12,10 +12,9 @@ class RBcrank(RPackage):
 	Functions and classes for de novo prediction of transcription factor binding consensus by heuristic search
 	"""
 	
-	bioc = "BCRANK" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BCRANK_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BCRANK/BCRANK_1.64.0.tar.gz"]
+	bioc = "BCRANK"
 
-	version("1.70.0", tag="RELEASE_3_21")
-	version("1.64.0", sha256="496795e97de56be075d8dba2d51a19c7a83b834df68c06ee971c399f99622cd4")
+	version("1.70.0", commit="6712d80246422a20a6f8ae46cf65a34bf62792c3")
+	version("1.64.0", commit="e80fdd5ec2c7d33b971f7f4528b3837ad8dd3fd3")
 
 	depends_on("r-biostrings", type=("build", "run"))

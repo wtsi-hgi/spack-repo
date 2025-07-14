@@ -26,8 +26,8 @@ class RRhtslib(RPackage):
 	#			 Please, commit your changes or stash them before you can switch
 	#			 branches.
 	#			 Aborting
-	version("3.4.0", tag="RELEASE_3_21")
-	version("2.4.1", sha256="0c34b951a0f15c26222a3dfd96700a0905c16c4cbe59db36374cf1ceab2a2b21")
+	version("3.4.0", commit="2779f264713fa4bb06811a220fb00bda155d9dc1")
+	version("2.4.1", commit="33bf5d13817274d2fe2bf9183f94523cb99de459")
 	version("2.0.0", commit="1757333eb88625158505e5fa47840081110cf8a4")
 	version("1.8.0", commit="3b5493473bed42958614091c58c739932ffcfa79")
 	version("1.28.0", branch="RELEASE_3_15")
@@ -39,7 +39,6 @@ class RRhtslib(RPackage):
 	version("1.12.1", commit="e3487b1355995d09b28fde5d0a7504a3e79a7203")
 	version("1.10.0", commit="53dcf7dfe35d735283956c77c011a97ca3f4eb26")
 	# version("1.28.0", commit='214fde2218bdbca89f1e12a30d2e081e76915aef')
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rhtslib_2.4.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rhtslib/Rhtslib_2.4.1.tar.gz"]
 
 	depends_on("r-zlibbioc", type=("build", "run"))
 	depends_on("bzip2", type=("build", "link", "run"))

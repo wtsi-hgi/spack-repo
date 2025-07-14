@@ -12,9 +12,8 @@ class RBeaddatapackr(RPackage):
 	Provides functionality for the compression and decompression of raw bead-level data from the Illumina BeadArray platform.
 	"""
 	
-	bioc = "BeadDataPackR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BeadDataPackR_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BeadDataPackR/BeadDataPackR_1.54.0.tar.gz"]
+	bioc = "BeadDataPackR"
 
-	version("1.60.0", tag="RELEASE_3_21")
-	version("1.54.0", sha256="bf8334ad6e6b7a7df914ceb0e4331fac47f65ee0a9ffa9d3face616cf86dd769")
+	version("1.60.0", commit="32bd38e6f7f6029d943d29001dd3818e2a562ed1")
+	version("1.54.0", commit="71799576f19c9e15024f274d1289d3d386c265d4")
 

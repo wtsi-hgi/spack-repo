@@ -12,11 +12,10 @@ class RDegnorm(RPackage):
 	This package performs degradation normalization in bulk RNA-seq data to improve differential expression analysis accuracy.
 	"""
 	
-	bioc = "DegNorm" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DegNorm_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DegNorm/DegNorm_1.12.0.tar.gz"]
+	bioc = "DegNorm"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="dfde2d06f0dfd30f748f20a400390aa7dfd07407b90cc68a082445f21d6b57b4")
+	version("1.18.0", commit="0d4cbd394552c87e76519e4a834f18d43a5ed9c5")
+	version("1.12.0", commit="405e5cbde57005915a61b65daa5c2e85f794e67d")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

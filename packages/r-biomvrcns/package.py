@@ -12,11 +12,10 @@ class RBiomvrcns(RPackage):
 	In this package, a Hidden Semi Markov Model (HSMM) and one homogeneous segmentation model are designed and implemented for segmentation genomic data, with the aim of assisting in transcripts detection using high throughput technology like RNA-seq or tiling array, and copy number analysis using aCGH or sequencing.
 	"""
 	
-	bioc = "biomvRCNS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biomvRCNS_1.42.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biomvRCNS/biomvRCNS_1.42.2.tar.gz"]
+	bioc = "biomvRCNS"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.2", sha256="0343513d8ee2046ddc8716e8ddffcacd609e9304149381051fc57d79298ab6c6")
+	version("1.48.0", commit="977442e0470cc33ec22f653f68ff5467466e51ac")
+	version("1.42.2", commit="b3a0be77c391c71283515e38a9b822d11a0de40d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

@@ -12,11 +12,10 @@ class RGoprofiles(RPackage):
 	The package implements methods to compare lists of genes based on comparing the corresponding 'functional profiles'.
 	"""
 	
-	bioc = "goProfiles" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/goProfiles_1.64.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/goProfiles/goProfiles_1.64.0.tar.gz"]
+	bioc = "goProfiles"
 
-	version("1.70.0", tag="RELEASE_3_21")
-	version("1.64.0", sha256="7c0a40b2af85298dab153b462266388f6c4e945c2009b7ab8e1d5d5c3abc0892")
+	version("1.70.0", commit="57a92ca0f41ea58cb6d4a973a0d49271c07368b7")
+	version("1.64.0", commit="a8fb44d5ba3e15648cd75ebe34bb06ea104acea5")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

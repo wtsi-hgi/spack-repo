@@ -13,11 +13,10 @@ class RClippda(RPackage):
 	"""
 	
 	homepage = "http://www.cancerstudies.bham.ac.uk/crctu/CLIPPDA.shtml"
-	bioc = "clippda" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/clippda_1.52.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/clippda/clippda_1.52.0.tar.gz"]
+	bioc = "clippda"
 
-	version("1.58.0", tag="RELEASE_3_21")
-	version("1.52.0", sha256="8fab641f40a4e8d5187c6a5fe0ae800b5f33379bb2ee8f01647efb78b5aefd86")
+	version("1.58.0", commit="ee8b6589708ec3219d317650c040c06131289202")
+	version("1.52.0", commit="8f0ec8afe32cecb14c04cb29a356bc6a4f81d85e")
 
 	depends_on("r@2.13.1:", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

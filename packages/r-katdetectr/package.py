@@ -13,11 +13,10 @@ class RKatdetectr(RPackage):
 	"""
 	
 	homepage = "https://doi.org/doi:10.18129/B9.bioc.katdetectr"
-	bioc = "katdetectr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/katdetectr_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/katdetectr/katdetectr_1.4.0.tar.gz"]
+	bioc = "katdetectr"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="3f5d04a60a2d8ff0d9db9ebcbc52347dc046ac25f2327eed5c98421bd7c12a44")
+	version("1.10.0", commit="539f580fd6cf8e9a316fb41dbf7fac1380349cb8")
+	version("1.4.0", commit="579e2f83ec2d983d255283275fdfb8aca75b517b")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocparallel@1.26.2:", type=("build", "run"))

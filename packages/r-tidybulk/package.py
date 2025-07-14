@@ -13,11 +13,10 @@ class RTidybulk(RPackage):
 	"""
 	
 	homepage = "https://github.com/stemangiola/tidybulk"
-	bioc = "tidybulk" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/tidybulk_1.14.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/tidybulk/tidybulk_1.14.3.tar.gz"]
+	bioc = "tidybulk"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.3", sha256="d29378f88a36325ec2510dd8b44c6255736d377e8fade277cf3c82d3b7e9ec36")
+	version("1.20.0", commit="101515a42cb5b13a9a94158aee1460679e6cff09")
+	version("1.14.3", commit="8e3cb1dd76293038bffdc539ff7823be8b0b5eb7")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-ttservice@0.3.6:", type=("build", "run"))

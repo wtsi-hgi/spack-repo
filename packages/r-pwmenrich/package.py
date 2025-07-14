@@ -12,11 +12,10 @@ class RPwmenrich(RPackage):
 	A toolkit of high-level functions for DNA motif scanning and enrichment analysis built upon Biostrings. The main functionality is PWM enrichment analysis of already known PWMs (e.g. from databases such as MotifDb), but the package also implements high-level functions for PWM scanning and visualisation. The package does not perform "de novo" motif discovery, but is instead focused on using motifs that are either experimentally derived or computationally constructed by other tools.
 	"""
 	
-	bioc = "PWMEnrich" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PWMEnrich_4.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PWMEnrich/PWMEnrich_4.38.0.tar.gz"]
+	bioc = "PWMEnrich"
 
-	version("4.44.0", tag="RELEASE_3_21")
-	version("4.38.0", sha256="0ef65699faf01b31361fc88efa4e8aba72cbd7471f0d11a987703bbd35de10e8")
+	version("4.44.0", commit="9eb39703a7559e8061d8f8a62177187778dee098")
+	version("4.38.0", commit="5c2bd63df7d00930f6e1c587e879af0b6ffa31e7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

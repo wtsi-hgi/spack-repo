@@ -13,11 +13,10 @@ class RMicrobiotaprocess(RPackage):
 	"""
 	
 	homepage = "https://github.com/YuLab-SMU/MicrobiotaProcess/"
-	bioc = "MicrobiotaProcess" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MicrobiotaProcess_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MicrobiotaProcess/MicrobiotaProcess_1.14.1.tar.gz"]
+	bioc = "MicrobiotaProcess"
 
-	version("1.20.1", tag="RELEASE_3_21")
-	version("1.14.1", sha256="8e3537e691a59674957820d965cf7ec952593f606315b133bed3cc7128a9319e")
+	version("1.20.1", commit="c6d9972ebce9b72454bb33605f1eea5872aaec95")
+	version("1.14.1", commit="9fc267f6d1f60cd3d8bc7a38efc7fddb5f84278a")
 	version("1.14.0", md5="104b99004b64b664131ddea6462cbabc")
 
 	depends_on("r@4:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RDaglogo(RPackage):
 	Visualize significant conserved amino acid sequence pattern in groups based on probability theory.
 	"""
 	
-	bioc = "dagLogo" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/dagLogo_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/dagLogo/dagLogo_1.40.0.tar.gz"]
+	bioc = "dagLogo"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="63161742ae285beff886b064a4dacbd8086c708549b44a52d4d173fbb59b38dd")
+	version("1.46.0", commit="c43e8c31056316e32a46792642b721e1879d2228")
+	version("1.40.0", commit="5fd07790c2f8bb9783767bb080be4e9c65c2550a")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-pheatmap", type=("build", "run"))

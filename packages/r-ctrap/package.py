@@ -13,11 +13,10 @@ class RCtrap(RPackage):
 	"""
 	
 	homepage = "https://nuno-agostinho.github.io/cTRAP"
-	bioc = "cTRAP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cTRAP_1.20.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cTRAP/cTRAP_1.20.1.tar.gz"]
+	bioc = "cTRAP"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.1", sha256="5a1bb2f97ddbe1d7db7925a49cb70690894ebc7633fb0034b2977e0bf0e84433")
+	version("1.26.0", commit="ecadc4768fc498b42f7a6a31d5bf70645d52645a")
+	version("1.20.1", commit="5b1482190809953077523b1c5d41b94f36cc69fd")
 	version("1.20.0", md5="049de878508ce8d8031d7d93f6a1fd01")
 
 	depends_on("r@4:", type=("build", "run"))

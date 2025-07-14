@@ -12,11 +12,10 @@ class RAffyhgu133aexpr(RPackage):
 	Contains pre-built human (GPL96) database of gene expression profiles. The gene expression data was downloaded from NCBI GEO, preprocessed and normalized consistently. The biological context of each sample was recorded and manually verified based on the sample description in GEO.
 	"""
 	
-	bioc = "Affyhgu133aExpr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Affyhgu133aExpr_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/Affyhgu133aExpr/Affyhgu133aExpr_1.40.0.tar.gz"]
+	bioc = "Affyhgu133aExpr"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="4e1d08c9eee030971ddacffba4c3ef8da49f1705156372f958b20c2d661ab7cd")
+	version("1.46.0", commit="50eda27682cb98293e6576208be478c4bb80ea8a")
+	version("1.40.0", commit="9f25e5a3cb70a657402a611c18c0210136e8af21")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

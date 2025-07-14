@@ -13,10 +13,9 @@ class RConstand(RPackage):
 	"""
 	
 	homepage = "qcquan.net/constand"
-	bioc = "CONSTANd" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CONSTANd_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CONSTANd/CONSTANd_1.10.0.tar.gz"]
+	bioc = "CONSTANd"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="d95083be200baac9f56d8d8f7cba928393cb088a556aee24b4b2a9f6e2d41e60")
+	version("1.16.0", commit="09b0c6a175e61be80e49c5f52d6ef71864fd5959")
+	version("1.10.0", commit="151d7a9447fde6e4073343004bcd8d5aed04c73e")
 
 	depends_on("r@4.1:", type=("build", "run"))

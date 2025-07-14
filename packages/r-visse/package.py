@@ -13,11 +13,10 @@ class RVisse(RPackage):
 	"""
 	
 	homepage = "https://davislaboratory.github.io/vissE"
-	bioc = "vissE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/vissE_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/vissE/vissE_1.10.0.tar.gz"]
+	bioc = "vissE"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="041e87a10788ef79fa273d2f1896c24d51fd09dc050fdfd083256670f8e0f0bf")
+	version("1.16.0", commit="a90700e2459ba3faf0fe07eb3c8da30a27210365")
+	version("1.10.0", commit="07bab2390503e4165ef2f30b2a1f3f4f52ace035")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

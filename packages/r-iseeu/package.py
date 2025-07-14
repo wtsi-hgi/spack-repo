@@ -13,11 +13,10 @@ class RIseeu(RPackage):
 	"""
 	
 	homepage = "https://github.com/iSEE/iSEEu"
-	bioc = "iSEEu" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEEu_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEEu/iSEEu_1.14.0.tar.gz"]
+	bioc = "iSEEu"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="e06ca9a8331d3f22997067891d0879023bc9bda058d6bf24ac4cc97e595ae675")
+	version("1.20.0", commit="313560b16c1f599974d5c67177c1f3e6e0c46120")
+	version("1.14.0", commit="61cbb7adeb0b8fd456c6af14801efef6a852d65b")
 
 	depends_on("r-isee", type=("build", "run"))
 	depends_on("r-iseehex", type=("build", "run"))

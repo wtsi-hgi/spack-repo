@@ -12,11 +12,10 @@ class RConsensusclusterplus(RPackage):
 	algorithm for determining cluster count and membership by stability evidence in unsupervised analysis
 	"""
 	
-	bioc = "ConsensusClusterPlus" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ConsensusClusterPlus_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ConsensusClusterPlus/ConsensusClusterPlus_1.66.0.tar.gz"]
+	bioc = "ConsensusClusterPlus"
 
-	version("1.72.0", tag="RELEASE_3_21")
-	version("1.66.0", sha256="bae72341fbc941456a94d67b890139fa98a8de645b38c4d0b771bc4a56faac87")
+	version("1.72.0", commit="901e95d24f94d020d84931cfec8189934890646e")
+	version("1.66.0", commit="aa15b11bd487008bf4637c1aee14a618a8c091b6")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-all", type=("build", "run"))

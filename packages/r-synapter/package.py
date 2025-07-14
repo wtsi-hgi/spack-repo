@@ -13,11 +13,10 @@ class RSynapter(RPackage):
 	"""
 	
 	homepage = "https://lgatto.github.io/synapter/"
-	bioc = "synapter" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/synapter_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/synapter/synapter_2.26.0.tar.gz"]
+	bioc = "synapter"
 
-	version("2.32.0", tag="RELEASE_3_21")
-	version("2.26.0", sha256="03cd1fb5c89df4c1bcb5f6937086fa07a76d04a89023854bf42344ab95379f31")
+	version("2.32.0", commit="0048d2da7a8daa66dca54cb03f51a0e9361ee8ab")
+	version("2.26.0", commit="3c6c08401803209eba8de2fe1af391d7568e9eba")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-msnbase@2.1.2:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RRexposome(RPackage):
 	Package that allows to explore the exposome and to perform association analyses between exposures and health outcomes.
 	"""
 	
-	bioc = "rexposome" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rexposome_1.24.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rexposome/rexposome_1.24.1.tar.gz"]
+	bioc = "rexposome"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.1", sha256="44a21ed78978bf201f9152611730bde7fe5529f628afc83a00451fa024837a99")
+	version("1.30.0", commit="7b965f856bd29e8252b7affc764b1552db0cc574")
+	version("1.24.1", commit="05e3856399772662c8b2d60c50f3de17fea6ae27")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

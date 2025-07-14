@@ -13,11 +13,10 @@ class RMeshes(RPackage):
 	"""
 	
 	homepage = "https://yulab-smu.top/biomedical-knowledge-mining-book/"
-	bioc = "meshes" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/meshes_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/meshes/meshes_1.28.0.tar.gz"]
+	bioc = "meshes"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="72c41248c61988c85665380659bdbdc7f45055fcb466831a8ac55d89d3313450")
+	version("1.34.0", commit="1bdb588e1e35b15005a0098f950f0eac3b851c85")
+	version("1.28.0", commit="227153bbb404e3711b4c0c0e4e20c3d8c0fc2f45")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

@@ -12,9 +12,8 @@ class RSmap(RPackage):
 	Functions and classes for DNA copy number profiling of array-CGH data
 	"""
 	
-	bioc = "SMAP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SMAP_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SMAP/SMAP_1.66.0.tar.gz"]
+	bioc = "SMAP"
 
-	version("1.66.0", sha256="b68c532cdbffdde5789ebd823eaceda95ae3d4d041e687363363da2bc7dad254")
+	version("1.66.0", commit="1ecee675bf4432ff11b909bd2b112fe28984aaf3")
 
 	depends_on("r@2.10:", type=("build", "run"))

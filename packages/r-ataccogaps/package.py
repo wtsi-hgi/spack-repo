@@ -12,10 +12,9 @@ class RAtaccogaps(RPackage):
 	Provides tools for running the CoGAPS algorithm (Fertig et al, 2010) on single-cell ATAC sequencing data and analysis of the results. Can be used to perform analyses at the level of genes, motifs, TFs, or pathways. Additionally provides tools for transfer learning and data integration with single-cell RNA sequencing data.
 	"""
 	
-	bioc = "ATACCoGAPS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ATACCoGAPS_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ATACCoGAPS/ATACCoGAPS_1.4.0.tar.gz"]
+	bioc = "ATACCoGAPS"
 
-	version("1.4.0", sha256="caaeb2de0ecf051edce19095d387547617d7d500ed606205293b029d364c2aed")
+	version("1.4.0", commit="1e974804aac600ddc1bd8497be154da244d1d9eb")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-cogaps@3.5.13:", type=("build", "run"))

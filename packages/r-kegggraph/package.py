@@ -17,9 +17,8 @@ class RKegggraph(RPackage):
 	etc."""
 
 	bioc = "KEGGgraph"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/KEGGgraph_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/KEGGgraph/KEGGgraph_1.62.0.tar.gz"]
-	version("1.68.0", tag="RELEASE_3_21")
-	version("1.62.0", sha256="7412ccf6f30faf1cd5ef6081c5eef7ce933ed0507c74b9660630e27a50c63145")
+	version("1.68.0", commit="a47d1dbd74c66a91d27beb34ba4de66d475c79e2")
+	version("1.62.0", commit="4ef50f73cea66897376c77c88c519bae3c440547")
 	version("1.60.0", commit="9fc1e371309193e7ff47b0e9d9937cbeed830a1c")
 	version("1.58.0", commit="7c3f148b57903b8df517f94824f07f38bbd3b591")
 	version("1.56.0", commit="e95cbf9f8a095d59b78a053463191b89c00d5ded")

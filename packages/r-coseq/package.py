@@ -12,11 +12,10 @@ class RCoseq(RPackage):
 	Co-expression analysis for expression profiles arising from high-throughput sequencing data. Feature (e.g., gene) profiles are clustered using adapted transformations and mixture models or a K-means algorithm, and model selection criteria (to choose an appropriate number of clusters) are provided.
 	"""
 	
-	bioc = "coseq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/coseq_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/coseq/coseq_1.26.0.tar.gz"]
+	bioc = "coseq"
 
-	version("1.32.1", tag="RELEASE_3_21")
-	version("1.26.0", sha256="a83d149e511b5aa3303cd49e5eb37175862828e5c0a376db1facbfe9ff0205b9")
+	version("1.32.1", commit="e039f79be3260a457c4716639f74d749f8f007dd")
+	version("1.26.0", commit="985d20a051646174a8be7cd900de200a1c6ee0cb")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

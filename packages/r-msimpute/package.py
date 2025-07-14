@@ -12,11 +12,10 @@ class RMsimpute(RPackage):
 	MsImpute is a package for imputation of peptide intensity in proteomics experiments. It additionally contains tools for MAR/MNAR diagnosis and assessment of distortions to the probability distribution of the data post imputation.  The missing values are imputed by low-rank approximation of the underlying data matrix if they are MAR (method = "v2"), by Barycenter approach if missingness is MNAR ("v2-mnar"), or by Peptide Identity Propagation (PIP).
 	"""
 	
-	bioc = "msImpute" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msImpute_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msImpute/msImpute_1.12.0.tar.gz"]
+	bioc = "msImpute"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="60dd7f34b448b15ee1764ce0e1732f4d3203046fc1de27f04b46878926b279aa")
+	version("1.18.0", commit="c088efa2e4b2c0b65670c2440a5d6c69ee982cba")
+	version("1.12.0", commit="01032d5dffa951191fa3bf34b958eee1474975dd")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-softimpute", type=("build", "run"))

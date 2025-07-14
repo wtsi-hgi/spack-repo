@@ -13,11 +13,10 @@ class RCbnplot(RPackage):
 	"""
 	
 	homepage = "https://github.com/noriakis/CBNplot"
-	bioc = "CBNplot" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CBNplot_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CBNplot/CBNplot_1.2.1.tar.gz"]
+	bioc = "CBNplot"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.1", sha256="edb1e60c29f389a2f8270359df25a986c2e7d363e0292d163dd2dd881e9dbc38")
+	version("1.8.0", commit="a9f143fc4fe06ef52525ef64384a799c8a7e3be8")
+	version("1.2.1", commit="ccccb660046347027bcf447da671f620e759ecad")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

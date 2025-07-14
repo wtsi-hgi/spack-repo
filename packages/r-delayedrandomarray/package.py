@@ -13,11 +13,10 @@ class RDelayedrandomarray(RPackage):
 	"""
 	
 	homepage = "https://github.com/LTLA/DelayedRandomArray"
-	bioc = "DelayedRandomArray" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DelayedRandomArray_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DelayedRandomArray/DelayedRandomArray_1.10.0.tar.gz"]
+	bioc = "DelayedRandomArray"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="df2c9d8d3acec7813e052755104e1d6c7e38f27f3d0728737f1f224f28314453")
+	version("1.16.0", commit="7030e8b5ac6fb6a7ca2e23f08faae25f3b2a1559")
+	version("1.10.0", commit="828b10a93a01b9c21294db19b35211659910fa83")
 
 	depends_on("r-delayedarray@0.27.2:", type=("build", "run"))
 	depends_on("r-dqrng", type=("build", "run"))

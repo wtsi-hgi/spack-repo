@@ -16,13 +16,12 @@ class RAnaquin(RPackage):
 	spike-in controls."""
 
 	bioc = "Anaquin"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Anaquin_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Anaquin/Anaquin_2.26.0.tar.gz"]
 
-	version("2.32.0", tag="RELEASE_3_21")
+	version("2.32.0", commit="e056dc190ce02d5690eb08064a33eee73c616080")
 	version("2.8.0", commit="f591d420740b77881ae0a4c16b208c63d460c601")
 	version("2.6.1", commit="22b6c71697fe1e2db8f6d18f77728d0fd96fa6d6")
 	version("2.4.0", commit="0d6ae80ff622151a782e4774ca274f06024a71d2")
-	version("2.26.0", sha256="8d0a505c9877752d13ce81b7712a78f89c7aa9ca5ae25dc72047079a62705db8")
+	version("2.26.0", commit="ca9494432f5e2acbd32a74fff6ad271c05f9e4d9")
 	version("2.24.0", commit="0eefabdc4036b98505032c460d08375839b1fc3e")
 	version("2.22.0", commit="d848a9bd7bf9d1d62202cc477300bf1a65b3e36c")
 	version("2.20.0", commit="61598dd3430b09b57f31d7d550ea95126a2d73c8")

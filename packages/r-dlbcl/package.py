@@ -13,11 +13,10 @@ class RDlbcl(RPackage):
 	"""
 	
 	homepage = "http://bionet.bioapps.biozentrum.uni-wuerzburg.de/"
-	bioc = "DLBCL" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DLBCL_1.42.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DLBCL/DLBCL_1.42.2.tar.gz"]
+	bioc = "DLBCL"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.2", sha256="4158ad04add57c96125eccfa9c4b9d0543f50bcd460c2a3bff3755f0fd92a41b")
+	version("1.48.0", commit="11233bcea5bfa1eae9a15ef77bdb515678d6ca12")
+	version("1.42.2", commit="d6f5ff0b99910cc0b5fd6ba726cb099e8eac36c8")
 
 	depends_on("r@2.11:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

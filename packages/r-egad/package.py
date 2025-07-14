@@ -12,11 +12,10 @@ class REgad(RPackage):
 	The package implements a series of highly efficient tools to calculate functional properties of networks based on guilt by association methods.
 	"""
 	
-	bioc = "EGAD" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EGAD_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EGAD/EGAD_1.30.0.tar.gz"]
+	bioc = "EGAD"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="a53893dd4859052a7a2124f6a07da5e0961ee2bd35a20511dde1e59a10813b49")
+	version("1.36.0", commit="8b636bb83b80b18b14e19f691b68fe0482bc4758")
+	version("1.30.0", commit="d5292778e97fefc422c58c5d9c05b653b4a9897c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-gplots", type=("build", "run"))

@@ -13,11 +13,10 @@ class RIsobayes(RPackage):
 	"""
 	
 	homepage = "https://github.com/SimoneTiberi/IsoBayes"
-	bioc = "IsoBayes" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IsoBayes_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IsoBayes/IsoBayes_1.0.1.tar.gz"]
+	bioc = "IsoBayes"
 
-	version("1.6.1", tag="RELEASE_3_21")
-	version("1.0.1", sha256="8b33a8b610bbb746e01055d5358e8cf780ccc2bf058af4309aa6b41f9065968c")
+	version("1.6.1", commit="6c4ba7eaa0f2e273957ed9df1715cd20936311ed")
+	version("1.0.1", commit="0abca1bcf630d5394befde38ed7d9cc87c8efc18")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

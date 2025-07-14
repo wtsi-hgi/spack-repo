@@ -13,11 +13,10 @@ class RInformeasure(RPackage):
 	"""
 	
 	homepage = "https://github.com/chupan1218/Informeasure"
-	bioc = "Informeasure" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Informeasure_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Informeasure/Informeasure_1.12.1.tar.gz"]
+	bioc = "Informeasure"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.1", sha256="c8813645fad7333bb27b17ced2c5dfae1208ac55b0b1fca2075f8bfd2835f17b")
+	version("1.18.0", commit="7df4c919c3e1b0f4d8f95fdb7798a1736c244880")
+	version("1.12.1", commit="7e10f65378e90f8698e9922ee6dff080fe0af9e7")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-entropy", type=("build", "run"))

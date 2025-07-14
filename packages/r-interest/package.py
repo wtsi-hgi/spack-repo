@@ -12,11 +12,10 @@ class RInterest(RPackage):
 	This package performs Intron-Exon Retention analysis on RNA-seq data (.bam files).
 	"""
 	
-	bioc = "IntEREst" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/IntEREst_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/IntEREst/IntEREst_1.26.0.tar.gz"]
+	bioc = "IntEREst"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="ee1f9d05316744a28bd404f2041c0e63438e8453e5456e783781e9f9235b473f")
+	version("1.32.0", commit="c32f5ba2b56f88c5b873df093a6af829e87a0bdc")
+	version("1.26.0", commit="759bac6d413e727ba518e7a33f2e136a3dfae2fb")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

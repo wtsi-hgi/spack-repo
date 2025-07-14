@@ -13,11 +13,10 @@ class RPurecn(RPackage):
 	"""
 	
 	homepage = "https://github.com/lima1/PureCN"
-	bioc = "PureCN" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PureCN_2.8.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PureCN/PureCN_2.8.1.tar.gz"]
+	bioc = "PureCN"
 
-	version("2.14.1", tag="RELEASE_3_21")
-	version("2.8.1", sha256="f2ac2ee30b8da345f3170f964ef79c61b19ca85948fc6bdcb374d32e64702142")
+	version("2.14.1", commit="d2327b22482d5a46c645665a91f8cf5385564769")
+	version("2.8.1", commit="43f6a4918387cc94d59d12a1e272249ce55b238b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-dnacopy", type=("build", "run"))

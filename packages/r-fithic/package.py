@@ -12,11 +12,10 @@ class RFithic(RPackage):
 	Fit-Hi-C is a tool for assigning statistical confidence estimates to intra-chromosomal contact maps produced by genome-wide genome architecture assays such as Hi-C.
 	"""
 	
-	bioc = "FitHiC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FitHiC_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FitHiC/FitHiC_1.28.0.tar.gz"]
+	bioc = "FitHiC"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="4735e9da30d910750f391c8cfacd7299805247666914ab7dd55c9712fbc0ec79")
+	version("1.34.0", commit="8f40efd3bb7f6a366b533d3caece67c00173fcf1")
+	version("1.28.0", commit="55ba684eaf402d02a41a369960577443468be358")
 
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-fdrtool", type=("build", "run"))

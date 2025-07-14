@@ -13,11 +13,10 @@ class REnhancedvolcano(RPackage):
 	"""
 	
 	homepage = "https://github.com/kevinblighe/EnhancedVolcano"
-	bioc = "EnhancedVolcano" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EnhancedVolcano_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EnhancedVolcano/EnhancedVolcano_1.20.0.tar.gz"]
+	bioc = "EnhancedVolcano"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="022045337d389d76118b942efc27f078d4d7eea98175e4e300f5907a4a1afc24")
+	version("1.26.0", commit="e2756f5de3a4af4b5cbee11912879fd94795b3ca")
+	version("1.20.0", commit="f0abfa52c086dc1804b4c720ef5af6dd674532ba")
 
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-ggrepel", type=("build", "run"))

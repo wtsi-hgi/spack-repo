@@ -12,11 +12,10 @@ class RSinglecellmultimodal(RPackage):
 	SingleCellMultiModal is an ExperimentHub package that serves multiple datasets obtained from GEO and other sources and represents them as MultiAssayExperiment objects. We provide several multi-modal datasets including scNMT, 10X Multiome, seqFISH, CITEseq, SCoPE2, and others. The scope of the package is is to provide data for benchmarking and analysis.
 	"""
 	
-	bioc = "SingleCellMultiModal" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/SingleCellMultiModal_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/SingleCellMultiModal/SingleCellMultiModal_1.14.0.tar.gz"]
+	bioc = "SingleCellMultiModal"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="2580aaa5be63c3338159620ce29380611ab5e834f97b17713ece9e8dad708e4f")
+	version("1.20.0", commit="32afbd3bbfa5f98d9069d6590cfb3698ef690c37")
+	version("1.14.0", commit="6a4d037da8efb9848d7be20d2b71fe2e59215ac2")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-multiassayexperiment", type=("build", "run"))

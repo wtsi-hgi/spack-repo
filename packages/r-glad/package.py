@@ -13,14 +13,8 @@ class RGlad(RPackage):
 	"""
 
 	homepage = "http://bioinfo.curie.fr"
-	bioc = "GLAD"
-	urls = [
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GLAD_2.66.0.tar.gz",
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GLAD/GLAD_2.66.0.tar.gz",
-	]
-
-	version("2.72.0", tag="RELEASE_3_21")
-	version("2.66.0", sha256="a14c769b423fb99d744d95948f33b7e8ed0dd23d40e25188d2e767668afd9e13")
+	bioc = "GLAD"version("2.72.0", commit="3e7d1d18e9eed0e300504d7d19ad5cf751e937e8")
+	version("2.66.0", commit="1d3593ce441d35029c0688610a87dbb62789fe38")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-aws", type=("build", "run"))

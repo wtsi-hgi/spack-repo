@@ -13,11 +13,10 @@ class RSevenbridges(RPackage):
 	"""
 	
 	homepage = "https://www.sevenbridges.com"
-	bioc = "sevenbridges" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sevenbridges_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sevenbridges/sevenbridges_1.32.0.tar.gz"]
+	bioc = "sevenbridges"
 
-	version("1.38.0", tag="RELEASE_3_21")
-	version("1.32.0", sha256="2b27742601283e8422386ff8566b9b04222579984375ddaf965112a34ed61211")
+	version("1.38.0", commit="7e22d1c7757c770b98a93691a8cd7f161c5ee4a3")
+	version("1.32.0", commit="bd309cce2719e2074733ca5926e496439cb61faa")
 
 	depends_on("r-httr", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))

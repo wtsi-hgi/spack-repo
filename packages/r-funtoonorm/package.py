@@ -12,11 +12,10 @@ class RFuntoonorm(RPackage):
 	Provides a function to normalize Illumina Infinium Human Methylation 450 BeadChip (Illumina 450K), correcting for tissue and/or cell type.
 	"""
 	
-	bioc = "funtooNorm" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/funtooNorm_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/funtooNorm/funtooNorm_1.26.0.tar.gz"]
+	bioc = "funtooNorm"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="fe016d48aa1d1f565d2b783ee20a4068a123548c393ef3c7bea582608d92ddbc")
+	version("1.32.0", commit="f0d035d0c242085accff66cf425a434808c7c301")
+	version("1.26.0", commit="097b881169c2734f6fdc55811b88124d6a171c9c")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-pls", type=("build", "run"))

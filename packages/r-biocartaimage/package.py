@@ -13,11 +13,10 @@ class RBiocartaimage(RPackage):
 	"""
 	
 	homepage = "https://github.com/jokergoo/BioCartaImage"
-	bioc = "BioCartaImage" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioCartaImage_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioCartaImage/BioCartaImage_1.0.0.tar.gz"]
+	bioc = "BioCartaImage"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="69b3c5c40dd8d896714b644630bb8b579ec08c61f2114bfc7049c047b7fde076")
+	version("1.6.0", commit="ab2381c65619f078ca82a21bb22b446757816d62")
+	version("1.0.0", commit="1de111256540c98619bc6d10c9d680f21e58ec0a")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-magick", type=("build", "run"))

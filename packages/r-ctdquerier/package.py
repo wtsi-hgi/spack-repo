@@ -12,11 +12,10 @@ class RCtdquerier(RPackage):
 	Package to retrieve and visualize data from the Comparative Toxicogenomics Database (http://ctdbase.org/). The downloaded data is formated as DataFrames for further downstream analyses.
 	"""
 	
-	bioc = "CTDquerier" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CTDquerier_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CTDquerier/CTDquerier_2.10.0.tar.gz"]
+	bioc = "CTDquerier"
 
-	version("2.16.0", tag="RELEASE_3_21")
-	version("2.10.0", sha256="3856ed5957e3a6ea859b0aa4232fef15e3b05ed1e4721f7ab80ec938656f00dc")
+	version("2.16.0", commit="7cc8a9b59d0a3442271ffba78abaac1ef7a44358")
+	version("2.10.0", commit="27da512c0485c7b570225b63374c106569463262")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-rcurl", type=("build", "run"))

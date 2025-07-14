@@ -12,11 +12,10 @@ class RLeebamviews(RPackage):
 	data from PMID 19096707; prototype for managing multiple NGS samples
 	"""
 	
-	bioc = "leeBamViews" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/leeBamViews_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/leeBamViews/leeBamViews_1.38.0.tar.gz"]
+	bioc = "leeBamViews"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="8b9c36f3957885160730561d18a3fe4a3dd0688243842fdc363f95c5a82ef848")
+	version("1.44.0", commit="1a0f16fc9d7aa0fb1948c77942e941a1f841f332")
+	version("1.38.0", commit="98ea87d892a5e586bcf19e24ac105e4f8f962cf0")
 
 	depends_on("r@2.15:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

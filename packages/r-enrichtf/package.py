@@ -13,10 +13,9 @@ class REnrichtf(RPackage):
 	"""
 	
 	homepage = "https://github.com/wzthu/enrichTF"
-	bioc = "enrichTF" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/enrichTF_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/enrichTF/enrichTF_1.18.0.tar.gz"]
+	bioc = "enrichTF"
 
-	version("1.18.0", sha256="c99724a45b4b0b8ba9758075c11d47c2bdfe71d945d4a7043767dd7a78a71552")
+	version("1.18.0", commit="fab8b473530ad3f04299193b793684b205dca38b")
 
 	depends_on("r-pipeframe", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))

@@ -12,11 +12,10 @@ class RCompass(RPackage):
 	COMPASS is a statistical framework that enables unbiased analysis of antigen-specific T-cell subsets. COMPASS uses a Bayesian hierarchical framework to model all observed cell-subsets and select the most likely to be antigen-specific while regularizing the small cell counts that often arise in multi-parameter space. The model provides a posterior probability of specificity for each cell subset and each sample, which can be used to profile a subject's immune response to external stimuli such as infection or vaccination.
 	"""
 	
-	bioc = "COMPASS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/COMPASS_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/COMPASS/COMPASS_1.40.0.tar.gz"]
+	bioc = "COMPASS"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="81be032b5a0ebb3f975d538fbb80c6b272fc2cd4cdada96b22ff6472b534eea8")
+	version("1.46.0", commit="a60809cd947e29f288f84ddf1a8e15787a8025c0")
+	version("1.40.0", commit="3f7c45a28845e979f2caa56c9ff6719b3218f92a")
 
 	depends_on("r@3.0.3:", type=("build", "run"))
 	depends_on("r-rcpp@0.11:", type=("build", "run"))

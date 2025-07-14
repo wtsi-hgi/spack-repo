@@ -13,11 +13,10 @@ class RBiotip(RPackage):
 	"""
 	
 	homepage = "https://github.com/xyang2uchicago/BioTIP"
-	bioc = "BioTIP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BioTIP_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BioTIP/BioTIP_1.16.0.tar.gz"]
+	bioc = "BioTIP"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="1e4c5b5b38e0d617662d4b7e202b3d42bb6ab6bab1e403d1a41d88b8c67672ad")
+	version("1.22.0", commit="83de1273e39d8825a9fd44719ffc61d175098d4a")
+	version("1.16.0", commit="910489bb12b68e14589da043708edfdbed9358af")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

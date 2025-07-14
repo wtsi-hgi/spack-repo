@@ -13,11 +13,10 @@ class RQcmetrics(RPackage):
 	"""
 	
 	homepage = "http://lgatto.github.io/qcmetrics/articles/qcmetrics.html"
-	bioc = "qcmetrics" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qcmetrics_1.40.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qcmetrics/qcmetrics_1.40.1.tar.gz"]
+	bioc = "qcmetrics"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.1", sha256="93bef8a9ec601a0e9169dbc1defec443736f7eec2e9356393dd60f5a7b90e327")
+	version("1.46.0", commit="ba43f30593db4353cfad6da044a4c2b6642539a2")
+	version("1.40.1", commit="ef898de6d318ae553f0f756445ac3ac06592bcdf")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

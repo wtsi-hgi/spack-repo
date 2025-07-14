@@ -13,11 +13,10 @@ class REds(RPackage):
 	"""
 	
 	homepage = "https://github.com/mikelove/eds"
-	bioc = "eds" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/eds_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/eds/eds_1.4.0.tar.gz"]
+	bioc = "eds"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="ca0320971186f9086c5dae9401eef84a8b856ad4b49f11493974172db6beb175")
+	version("1.10.0", commit="6b77a2e9eeb4296d92900a16ba274284d3b43944")
+	version("1.4.0", commit="0cfd0366b2fb2ab55ef926054126f6835a79b873")
 
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -15,9 +15,8 @@ class RGeoquery(RPackage):
 	GEOquery is the bridge between GEO and BioConductor."""
 
 	bioc = "GEOquery"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GEOquery_2.70.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GEOquery/GEOquery_2.70.0.tar.gz"]
-	version("2.76.0", tag="RELEASE_3_21")
-	version("2.70.0", sha256="076d0e6727ff02a1f927f9fc363cfcd620a5a5caaadd60e6fcdc31d169824ef6")
+	version("2.76.0", commit="f434b7916b519541fca906a2998dc63d4647f463")
+	version("2.70.0", commit="3f4687930fba296d8075ed56aab1db50e7a3a5da")
 	version("2.68.0", commit="7995c579b068f98ebf3f1cd2cfd0575c3d73530c")
 	version("2.66.0", commit="00a954e9f8223607b43cf112943ab575d03a0eb6")
 	version("2.64.2", commit="e9b7f075a4a6a952660443ca93ed392d7a4fd6d7")

@@ -13,11 +13,10 @@ class RPics(RPackage):
 	"""
 	
 	homepage = "https://github.com/SRenan/PICS"
-	bioc = "PICS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PICS_2.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PICS/PICS_2.46.0.tar.gz"]
+	bioc = "PICS"
 
-	version("2.52.0", tag="RELEASE_3_21")
-	version("2.46.0", sha256="cbfe9cc744144aa0087d360eba98c4adb103307e162193c32d1f265a348aed66")
+	version("2.52.0", commit="604d4b852085b6587a8aecd82d592aef9a450552")
+	version("2.46.0", commit="1638a3ecc20c421e29c3ff2684c8b0ec202f1246")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))

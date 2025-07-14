@@ -12,10 +12,9 @@ class RFlowplots(RPackage):
 	Graphical displays with embedded statistical tests for gated ICS flow cytometry data, and a data class which stores "stacked" data and has methods for computing summary measures on stacked data, such as marginal and polyfunctional degree data.
 	"""
 	
-	bioc = "flowPlots" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowPlots_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowPlots/flowPlots_1.50.0.tar.gz"]
+	bioc = "flowPlots"
 
-	version("1.56.0", tag="RELEASE_3_21")
-	version("1.50.0", sha256="9ac84c0a3af3071a4dd2dbc70883105eced78c1996f1f282002dd0ccea7cb8d1")
+	version("1.56.0", commit="3433082bf19443212230fb3dfa94a0400ec74e12")
+	version("1.50.0", commit="18405d0fc4dc6a19e93904cdc48bb25e7baff798")
 
 	depends_on("r@2.13:", type=("build", "run"))

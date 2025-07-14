@@ -12,11 +12,10 @@ class RCnorfeeder(RPackage):
 	This package integrates literature-constrained and data-driven methods to infer signalling networks from perturbation experiments. It permits to extends a given network with links derived from the data via various inference methods and uses information on physical interactions of proteins to guide and validate the integration of links.
 	"""
 	
-	bioc = "CNORfeeder" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNORfeeder_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNORfeeder/CNORfeeder_1.42.0.tar.gz"]
+	bioc = "CNORfeeder"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="61b9e0013947a0e9f87604abf030fc10dc3c964e9aac7e751bb1b6e97de7e161")
+	version("1.48.0", commit="8b86d80191f8a72738b6b319c861db86a5d5b9bf")
+	version("1.42.0", commit="6d3004ebcebd239bdb2139fb6f5da77b486290cd")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-cellnoptr@1.4:", type=("build", "run"))

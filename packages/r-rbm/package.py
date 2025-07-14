@@ -12,11 +12,10 @@ class RRbm(RPackage):
 	Use A Resampling-Based Empirical Bayes Approach to Assess Differential Expression in Two-Color Microarrays and RNA-Seq data sets.
 	"""
 	
-	bioc = "RBM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RBM_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RBM/RBM_1.34.0.tar.gz"]
+	bioc = "RBM"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="8bc08e618f8a4c5f0d7e236219fde6dfe56e440230aeb9e5be64cfea1da37c7a")
+	version("1.40.0", commit="3afa95c1d0c4f07d23fbe9c515a4eea6daa28250")
+	version("1.34.0", commit="3913399b2c91d9f5d2dd98875ab59ad0b624ad69")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

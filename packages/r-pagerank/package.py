@@ -13,11 +13,10 @@ class RPagerank(RPackage):
 	"""
 	
 	homepage = "https://github.com/hd2326/pageRank"
-	bioc = "pageRank" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/pageRank_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/pageRank/pageRank_1.12.0.tar.gz"]
+	bioc = "pageRank"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="a1e1f958eb9c7ae6ad9b831d9318ae826f000791f75360c8dc6e4f43235b6c63")
+	version("1.18.0", commit="c16175855fa9255fc1ad9eabbc6c55a8ce6e3f87")
+	version("1.12.0", commit="0fb8df7c3a79bf2a991aa2f538331bc736729043")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

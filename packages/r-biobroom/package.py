@@ -13,11 +13,10 @@ class RBiobroom(RPackage):
 	"""
 	
 	homepage = "https://github.com/StoreyLab/biobroom"
-	bioc = "biobroom" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biobroom_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biobroom/biobroom_1.34.0.tar.gz"]
+	bioc = "biobroom"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="ae7a64554a7703208072d6788b1480a732ea30cbf80277ba42ee45e16fa46cc7")
+	version("1.40.0", commit="e9b0a5ea581dc8083c84ef1405656445d7e5e565")
+	version("1.34.0", commit="cd67b426b51963848fbad5e1b4cbe27c91edb694")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))

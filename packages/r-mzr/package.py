@@ -18,9 +18,8 @@ class RMzr(RPackage):
 	reading code has previously been used in XCMS."""
 
 	bioc = "mzR"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mzR_2.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mzR/mzR_2.36.0.tar.gz"]
-	version("2.42.0", tag="RELEASE_3_21")
-	version("2.36.0", sha256="084e6874232c940492135186262ce1232b2a664ac3126b2efc2d7b9dcc9dcc7c")
+	version("2.42.0", commit="c26e78aff73ffbc337b19c0de506af43f719fb98")
+	version("2.36.0", commit="1764563bfca644544b0cacf6b2cd855c6c295192")
 	version("2.34.0", commit="14ccc37ab3efd4b6003442a0268668258ccb7df9")
 	version("2.32.0", commit="ef57d59205398558898a748ba9c8de66b0bddb81")
 	version("2.30.0", commit="563ae755cfc7de1ac8862247779182b7b3aebdcc")

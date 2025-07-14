@@ -12,11 +12,10 @@ class RRtcgaMethylation(RPackage):
 	Package provides methylation (humanmethylation27) datasets from The Cancer Genome Atlas Project for all available cohorts types from http://gdac.broadinstitute.org/. Data format is explained here https://wiki.nci.nih.gov/display/TCGA/DNA+methylation Data from 2015-11-01 snapshot.
 	"""
 	
-	bioc = "RTCGA.methylation" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RTCGA.methylation_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RTCGA.methylation/RTCGA.methylation_1.30.0.tar.gz"]
+	bioc = "RTCGA.methylation"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="3219d26bc1faec0d9394c88fb421ae41e53752cd879dae92f26f9472991ea4bc")
+	version("1.36.0", commit="5fa177aaca1268b5017ae6d4b818970a35a63ae2")
+	version("1.30.0", commit="af4156677b72d68ca3892db8e9801245ca7314e2")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rtcga", type=("build", "run"))

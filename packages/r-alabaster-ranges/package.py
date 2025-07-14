@@ -12,11 +12,10 @@ class RAlabasterRanges(RPackage):
 	Save GenomicRanges, IRanges and related data structures into file artifacts, and load them back into memory. This is a more portable alternative to serialization of such objects into RDS files. Each artifact is associated with metadata for further interpretation; downstream applications can enrich this metadata with context-specific properties.
 	"""
 	
-	bioc = "alabaster.ranges" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.ranges_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.ranges/alabaster.ranges_1.2.0.tar.gz"]
+	bioc = "alabaster.ranges"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="6d14edde9d7563eec0846119f922eb4193c5bcccc9439ce82df9fdac34b1c65c")
+	version("1.8.0", commit="62d3a4fc945f76548c9c8107c44f2a980f8abd01")
+	version("1.2.0", commit="c7a063d3d93bafdda4994d67f80949e986ebc3ec")
 
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-alabaster-base", type=("build", "run"))

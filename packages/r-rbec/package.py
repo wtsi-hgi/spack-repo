@@ -12,11 +12,10 @@ class RRbec(RPackage):
 	Rbec is a adapted version of DADA2 for analyzing amplicon sequencing data from synthetic communities (SynComs), where the reference sequences for each strain exists. Rbec can not only accurately profile the microbial compositions in SynComs, but also predict the contaminants in SynCom samples.
 	"""
 	
-	bioc = "Rbec" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rbec_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rbec/Rbec_1.10.0.tar.gz"]
+	bioc = "Rbec"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="c364ed6bca9c1117ac3ce10da92bd907ced22234a77c39420dd5c8e2c11e51c2")
+	version("1.16.0", commit="1cdfeb49ba1a761b26888b69ef68f8ed847ef1e0")
+	version("1.10.0", commit="fa01a45bd8d1827000de7268fbccb1716974c032")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-dada2", type=("build", "run"))

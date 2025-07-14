@@ -12,11 +12,10 @@ class RQtlizer(RPackage):
 	This R package provides access to the Qtlizer web server. Qtlizer annotates lists of common small variants (mainly SNPs) and genes in humans with associated changes in gene expression using the most comprehensive database of published quantitative trait loci (QTLs).
 	"""
 	
-	bioc = "Qtlizer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Qtlizer_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Qtlizer/Qtlizer_1.16.0.tar.gz"]
+	bioc = "Qtlizer"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="f495e677887845f38c37abbf7e36f8d35f791b33a1300d01eb568817df559b3d")
+	version("1.22.0", commit="736158f0360206c03ef8b06d82c47f41a52ffe71")
+	version("1.16.0", commit="89c3ba564a369281652cc8e0e28b00183a521601")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

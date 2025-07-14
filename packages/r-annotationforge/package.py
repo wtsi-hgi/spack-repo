@@ -13,10 +13,9 @@ class RAnnotationforge(RPackage):
 	Packages produced are intended to be used with AnnotationDbi."""
 
 	bioc = "AnnotationForge"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AnnotationForge_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AnnotationForge/AnnotationForge_1.44.0.tar.gz"]
 
-	version("1.50.0", tag="RELEASE_3_21")
-	version("1.44.0", sha256="89655718145d114fe509554ce1cfd52b7cf095e200c9d280d8cd86b939786b35")
+	version("1.50.0", commit="74bd0cc17da8d4c66f13a611d4fe9c13d96e4a28")
+	version("1.44.0", commit="1a9bb5fb6d66be5002b00b5abf5023ce81755b33")
 	version("1.42.0", commit="2eac005012b11317c33c8b0062b968b2ac378308")
 	version("1.40.0", commit="f77d3a942eb6b18c18888b7af3f0e652596cf19f")
 	version("1.38.1", commit="2dcedf353bc57bf80818e6adb1f7129c21886f6b")

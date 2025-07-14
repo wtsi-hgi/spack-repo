@@ -13,11 +13,10 @@ class RZfpkm(RPackage):
 	"""
 	
 	homepage = "https://github.com/ronammar/zFPKM/"
-	bioc = "zFPKM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/zFPKM_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/zFPKM/zFPKM_1.24.0.tar.gz"]
+	bioc = "zFPKM"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="84a079537a04b4f8c33986ee8f2d0e891eff461e886e05edf5819e1c0afbf6a2")
+	version("1.30.0", commit="8e64f8cc6f79ea411a1aa4b2af4edb4e7435da2d")
+	version("1.24.0", commit="631a60f975d89479a64b8b348f56258a70971f64")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-checkmate", type=("build", "run"))

@@ -13,11 +13,10 @@ class RProda(RPackage):
 	"""
 	
 	homepage = "https://github.com/const-ae/proDA"
-	bioc = "proDA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/proDA_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/proDA/proDA_1.16.0.tar.gz"]
+	bioc = "proDA"
 
-	version("1.22.1", tag="RELEASE_3_21")
-	version("1.16.0", sha256="7787a07fa4c1a70c4770ed7764b879e053076812d0469577b41e277c1505fa23")
+	version("1.22.1", commit="69546666bb788a9ec3a03fe32c4c278793072b89")
+	version("1.16.0", commit="1b39f4f98a266be69adea7b58345cbfa519a875b")
 
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

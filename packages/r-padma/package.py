@@ -13,11 +13,10 @@ class RPadma(RPackage):
 	"""
 	
 	homepage = "https://github.com/andreamrau/padma"
-	bioc = "padma" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/padma_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/padma/padma_1.12.0.tar.gz"]
+	bioc = "padma"
 
-	version("1.18.1", tag="RELEASE_3_21")
-	version("1.12.0", sha256="ad1f233509d53b24af8344f0ec0f196633b0b5d9b0dd4cb9572986a095fa660d")
+	version("1.18.1", commit="be1bb74a22f483afb3058f734c74496977cd18c8")
+	version("1.12.0", commit="d925ab16867c93dde2de9200d47a4c1064c931ce")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

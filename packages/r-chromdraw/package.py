@@ -13,11 +13,10 @@ class RChromdraw(RPackage):
 	"""
 	
 	homepage = "www.plantcytogenomics.org/chromDraw"
-	bioc = "chromDraw" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chromDraw_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chromDraw/chromDraw_2.32.0.tar.gz"]
+	bioc = "chromDraw"
 
-	version("2.38.0", tag="RELEASE_3_21")
-	version("2.32.0", sha256="6edc1f49efed7c3715e0fff60fd215dd4dce74edcc09b20a96e9d817c03bc998")
+	version("2.38.0", commit="09256c9c36021f0cc40bcc3795196fa6d7367e27")
+	version("2.32.0", commit="73b2d9db8b30df5237a88bec4aef96eee1b96244")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

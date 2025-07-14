@@ -12,11 +12,10 @@ class RDonapllp2013(RPackage):
 	An experiment data package associated with the publication Dona et al. (2013). Package contains runnable vignettes showing an example image segmentation for one posterior lateral line primordium, and also the data table and code used to analyze tissue-scale lifetime-ratio statistics.
 	"""
 	
-	bioc = "DonaPLLP2013" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DonaPLLP2013_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/DonaPLLP2013/DonaPLLP2013_1.40.0.tar.gz"]
+	bioc = "DonaPLLP2013"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="006f01ffccf41dbf3ccc445c011d2481ecbf49a88bee1a8eec4ebd36b379bd5f", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/DonaPLLP2013_1.40.0.tar.gz")
+	version("1.46.0", commit="204b76c2335c7dad92a60b328d6eddb4a3cdf8ef")
+	version("1.40.0", commit="08b364f4facac29b103fd5b0331c54cfea0c5fb6")
 
 	depends_on("r-ebimage", type=("build", "run"))
 

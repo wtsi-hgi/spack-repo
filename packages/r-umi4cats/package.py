@@ -13,11 +13,10 @@ class RUmi4cats(RPackage):
 	"""
 	
 	homepage = "https://github.com/Pasquali-lab/UMI4Cats"
-	bioc = "UMI4Cats" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/UMI4Cats_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/UMI4Cats/UMI4Cats_1.12.0.tar.gz"]
+	bioc = "UMI4Cats"
 
-	version("1.18.1", tag="RELEASE_3_21")
-	version("1.12.0", sha256="811b8fe3198b491c3765c1339b38b778b619328d0cf8b42c5c51fcb77fb3bac6")
+	version("1.18.1", commit="c30aa1b3f6d918104e1653d815651609efbc160c")
+	version("1.12.0", commit="e9eed0e832bc86eeb3a26f9eb5970ea824fdc616")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

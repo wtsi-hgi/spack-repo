@@ -12,10 +12,9 @@ class RIcens(RPackage):
 	Many functions for computing the NPMLE for censored and truncated data.
 	"""
 	
-	bioc = "Icens" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Icens_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Icens/Icens_1.74.0.tar.gz"]
+	bioc = "Icens"
 
-	version("1.80.0", tag="RELEASE_3_21")
-	version("1.74.0", sha256="5c5d26401cf01ac83b05e59516e911efb8116f6e4807bdd4fb321007d932e63b")
+	version("1.80.0", commit="b90c8140297ff259cc45d8d277705d8ebf2caa8e")
+	version("1.74.0", commit="2bca0b3dc24d49baeef3a0bad3a03653ed5667b5")
 
 	depends_on("r-survival", type=("build", "run"))

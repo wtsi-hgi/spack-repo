@@ -12,9 +12,8 @@ class RPathnet(RPackage):
 	PathNet uses topological information present in pathways and differential expression levels of genes (obtained from microarray experiment) to identify pathways that are 1) significantly enriched and 2) associated with each other in the context of differential expression. The algorithm is described in: PathNet: A tool for pathway analysis using topological information. Dutta B, Wallqvist A, and Reifman J. Source Code for Biology and Medicine 2012 Sep 24;7(1):10.
 	"""
 	
-	bioc = "PathNet" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PathNet_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PathNet/PathNet_1.42.0.tar.gz"]
+	bioc = "PathNet"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="fcba50e6df41aeaef25c5fbf4609e6d503114b322d6443838e1fb7149cc87ec7")
+	version("1.48.0", commit="772b0c230a6395cc052d8904dcdb7295b804d09b")
+	version("1.42.0", commit="f524fe672e9ab71f0c0e0228cfb3e7e5ac6af9d5")
 

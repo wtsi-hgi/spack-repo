@@ -12,11 +12,10 @@ class ROdseq(RPackage):
 	Performs outlier detection of sequences in a multiple sequence alignment using bootstrap of predefined distance metrics. Outlier sequences can make downstream analyses unreliable or make the alignments less accurate while they are being constructed. This package implements the OD-seq algorithm proposed by Jehl et al (doi 10.1186/s12859-015-0702-1) for aligned sequences and a variant using string kernels for unaligned sequences.
 	"""
 	
-	bioc = "odseq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/odseq_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/odseq/odseq_1.30.0.tar.gz"]
+	bioc = "odseq"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="2dae113510f5e0f5663d49da684dcb1c4dc0601489b0e1ab00918fa29300671e")
+	version("1.36.0", commit="65737a9da38714aeeb3b6992f82d70edeb4d457c")
+	version("1.30.0", commit="228cd04f49250f4e4fa5f0453434391081c87ec5")
 
 	depends_on("r@3.2.3:", type=("build", "run"))
 	depends_on("r-msa@1.2.1:", type=("build", "run"))

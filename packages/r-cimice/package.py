@@ -13,11 +13,10 @@ class RCimice(RPackage):
 	"""
 	
 	homepage = "https://github.com/redsnic/CIMICE"
-	bioc = "CIMICE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CIMICE_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CIMICE/CIMICE_1.10.0.tar.gz"]
+	bioc = "CIMICE"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="b36e7c273a36cdb9a966808543cd21836d02099ad8ec04cc1274dfc7b1974b58")
+	version("1.16.0", commit="b122b6f2112e72884616ec108755cae0c7de773f")
+	version("1.10.0", commit="ff02f0ed1f5bbac0545d9cae69fe22dfbbc61903")
 
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

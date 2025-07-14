@@ -13,14 +13,8 @@ class RSparsearray(RPackage):
     """
 
     homepage = "https://bioconductor.org/packages/SparseArray"
-    bioc = "SparseArray"
-    urls = [
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SparseArray_1.2.4.tar.gz",
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SparseArray/SparseArray_1.2.4.tar.gz",
-    ]
-
-    version("1.8.0", tag="RELEASE_3_21")
-    version("1.2.4", sha256="7113ab296a0603a39b21caf6bef9c8eaf598719230b75822427701011e92e13f")
+    bioc = "SparseArray"version("1.8.0", commit="ea36777cc56c1e3b515f936d4adf866dad0a8ced")
+    version("1.2.4", commit="5ece9d3ea94373d08f703197c3308e364c56872b")
 
     depends_on("r@4.3:", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))

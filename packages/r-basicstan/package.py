@@ -13,11 +13,10 @@ class RBasicstan(RPackage):
 	"""
 	
 	homepage = "https://github.com/Alanocallaghan/BASiCStan"
-	bioc = "BASiCStan" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BASiCStan_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BASiCStan/BASiCStan_1.4.0.tar.gz"]
+	bioc = "BASiCStan"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="3176517994f10d6a9dd9571ae1d51d87e9ef2d5aed81da215b5a195ba516ea06")
+	version("1.10.0", commit="3867fd1d39a9b04c40039044c24538665bacc515")
+	version("1.4.0", commit="5172b1599d9d23c63a3d7d1793fcff98f9a75c26")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-basics", type=("build", "run"))

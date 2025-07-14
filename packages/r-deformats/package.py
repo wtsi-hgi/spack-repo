@@ -13,11 +13,10 @@ class RDeformats(RPackage):
 	"""
 	
 	homepage = "https://github.com/aoles/DEFormats"
-	bioc = "DEFormats" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DEFormats_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DEFormats/DEFormats_1.30.0.tar.gz"]
+	bioc = "DEFormats"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="4eb81b570e74d367718570be2b24c097dab1589e1b52db07cf67ba6ae665138d")
+	version("1.36.0", commit="d2171c8176a62cc6bed2dee84983b8ced704ee53")
+	version("1.30.0", commit="aeab5ae4cb639ad2f9db9d1d1192eaf56acf520c")
 
 	depends_on("r-checkmate", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

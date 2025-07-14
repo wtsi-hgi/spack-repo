@@ -12,11 +12,10 @@ class RAlabasterSe(RPackage):
 	Save SummarizedExperiments into file artifacts, and load them back into memory. This is a more portable alternative to serialization of such objects into RDS files. Each artifact is associated with metadata for further interpretation; downstream applications can enrich this metadata with context-specific properties.
 	"""
 	
-	bioc = "alabaster.se" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.se_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.se/alabaster.se_1.2.0.tar.gz"]
+	bioc = "alabaster.se"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="9d37f71146259c376c7d080c99e18cf7c9daf3d6cea26007189385459a6f3b93")
+	version("1.8.0", commit="504580a05bbbad7de8678dd64dd293aa18c4a2b7")
+	version("1.2.0", commit="d1222d4bf0de42896832424f1e476478716c3e3f")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-alabaster-base", type=("build", "run"))

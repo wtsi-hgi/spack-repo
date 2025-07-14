@@ -12,9 +12,8 @@ class RGenefilter(RPackage):
 	Some basic functions for filtering genes."""
 
 	bioc = "genefilter"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genefilter_1.84.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genefilter/genefilter_1.84.0.tar.gz"]
-	version("1.90.0", tag="RELEASE_3_21")
-	version("1.84.0", sha256="5c629c6477b77177e423b76a8d49ffc5415df7ef7894958c97e18f260efa0061")
+	version("1.90.0", commit="2a266924cd16799afefb7d26b50f34593a1f40d4")
+	version("1.84.0", commit="94eca03db3d721035df17e32ff369e6a28a9394a")
 	version("1.82.0", commit="1ee4bdc65b0144853211354f8fabf8b497d9a565")
 	version("1.80.0", commit="14fbc2d776916e572583e3c268ea9ba60ed60a9a")
 	version("1.78.0", commit="2f574388971641d3a71858f5c34606c04fcd2ba2")

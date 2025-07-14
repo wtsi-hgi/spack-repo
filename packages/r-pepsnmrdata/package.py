@@ -12,11 +12,10 @@ class RPepsnmrdata(RPackage):
 	This package contains all the datasets used in the PepsNMR package.
 	"""
 	
-	bioc = "PepsNMRData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PepsNMRData_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PepsNMRData/PepsNMRData_1.20.0.tar.gz"]
+	bioc = "PepsNMRData"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="ac94ca39bb77784f15bd5dc645df43a6329e49f2296bb98016347f2b9a2fc0f7")
+	version("1.26.0", commit="25fc7f25cf9342e4997a3dbd2bf90221e86b15a4")
+	version("1.20.0", commit="9f8300f1fbcc53864b8aa32db4eb1b2f2c38a282")
 
 	depends_on("r@3.5:", type=("build", "run"))
 

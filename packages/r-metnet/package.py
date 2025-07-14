@@ -12,11 +12,10 @@ class RMetnet(RPackage):
 	MetNet contains functionality to infer metabolic network topologies from quantitative data and high-resolution mass/charge information. Using statistical models (including correlation, mutual information, regression and Bayes statistics) and quantitative data (intensity values of features) adjacency matrices are inferred that can be combined to a consensus matrix. Mass differences calculated between mass/charge values of features will be matched against a data frame of supplied mass/charge differences referring to transformations of enzymatic activities. In a third step, the two levels of information are combined to form a adjacency matrix inferred from both quantitative and structure information.
 	"""
 	
-	bioc = "MetNet" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MetNet_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MetNet/MetNet_1.20.0.tar.gz"]
+	bioc = "MetNet"
 
-	version("1.26.1", tag="RELEASE_3_21")
-	version("1.20.0", sha256="84e09d3a9c1c8b6c96e4f175ea099eb9c6d525bbee67481d2d97b55f7a33089c")
+	version("1.26.1", commit="8db1dc30bdadd0e575f15ddac85962033362b0a1")
+	version("1.20.0", commit="b628a7d0b8d519bb5b71974a7c7b84b74fecd928")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-s4vectors@0.28.1:", type=("build", "run"))

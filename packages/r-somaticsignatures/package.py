@@ -15,9 +15,8 @@ class RSomaticsignatures(RPackage):
 	the matrix decomposition algorithms."""
 
 	bioc = "SomaticSignatures"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SomaticSignatures_2.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SomaticSignatures/SomaticSignatures_2.38.0.tar.gz"]
-	version("2.44.0", tag="RELEASE_3_21")
-	version("2.38.0", sha256="cbf3e38683c1a9324327fd7955c6429251c664f588b32d992f45111ba0943369")
+	version("2.44.0", commit="f1774bb0db39d8b39b699ba7c044ae10332a25e4")
+	version("2.38.0", commit="7578824f038f6213130d90398afc8ca5646c7765")
 	version("2.36.0", commit="26ce72c1fc771f711796eccee0a24c1070d33066")
 	version("2.34.0", commit="249b1ef7cef3c94cfb96cc8aa2a16e00c2bd5d1f")
 	version("2.32.0", commit="444d37661d147618f6830fd5de01a83ddf2a694d")

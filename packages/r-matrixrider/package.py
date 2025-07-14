@@ -12,11 +12,10 @@ class RMatrixrider(RPackage):
 	Calculates a single number for a whole sequence that reflects the propensity of a DNA binding protein to interact with it. The DNA binding protein has to be described with a PFM matrix, for example gotten from Jaspar.
 	"""
 	
-	bioc = "MatrixRider" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MatrixRider_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MatrixRider/MatrixRider_1.34.0.tar.gz"]
+	bioc = "MatrixRider"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="43461e624d1375b0fc7102955ef4d18b8a4568a5a23f02d79000ccfd47303f08")
+	version("1.40.0", commit="e6f4c01153a4e8125d461bd8912f435b0443f9ff")
+	version("1.34.0", commit="c7873f6766d2007f223a37df040f7f5552912dec")
 
 	depends_on("r@3.1.2:", type=("build", "run"))
 	depends_on("r-tfbstools", type=("build", "run"))

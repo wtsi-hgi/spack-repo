@@ -12,11 +12,10 @@ class RProstatecancervarambally(RPackage):
 	A Bioconductor data package for the Varambally dataset
 	"""
 	
-	bioc = "prostateCancerVarambally" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/prostateCancerVarambally_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/prostateCancerVarambally/prostateCancerVarambally_1.30.0.tar.gz"]
+	bioc = "prostateCancerVarambally"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="95a087be948fdf2acba6d8ed7180d1053ca66880324710860641ba575ebf3982")
+	version("1.36.0", commit="73f630d7e7602f9a26191b44a4d79ef8bc248ce5")
+	version("1.30.0", commit="3c16ae46c24c5c2b493deda60c0a8a30a6c3b1d5")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r@3.3:", type=("build", "run"))

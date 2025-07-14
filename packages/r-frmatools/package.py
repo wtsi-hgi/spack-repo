@@ -13,11 +13,10 @@ class RFrmatools(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org"
-	bioc = "frmaTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/frmaTools_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/frmaTools/frmaTools_1.54.0.tar.gz"]
+	bioc = "frmaTools"
 
-	version("1.60.0", tag="RELEASE_3_21")
-	version("1.54.0", sha256="fddae3f2e3f52d31ababe1e76d6ed3530e0329f91300a6c256f683df9623917f")
+	version("1.60.0", commit="dee6348c28d5bfd9a81764ce71614c2710ac25b4")
+	version("1.54.0", commit="ef06a14c7f5454256f4f5b23fb1c37888045d2d8")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-affy", type=("build", "run"))

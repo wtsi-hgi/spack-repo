@@ -13,11 +13,10 @@ class RMemes(RPackage):
 	"""
 	
 	homepage = "https://snystrom.github.io/memes/"
-	bioc = "memes" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/memes_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/memes/memes_1.10.0.tar.gz"]
+	bioc = "memes"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="4564b1c0dfbf51d903c8986166bd41293fe41f91a94faec01e2ff7f774d58785")
+	version("1.16.0", commit="970981b83e11afb58d58fe680e62619d64924f57")
+	version("1.10.0", commit="8fc7c1ffe236cf943e315bfbd6e4419a76f2c495")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

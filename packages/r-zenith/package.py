@@ -13,11 +13,10 @@ class RZenith(RPackage):
 	"""
 	
 	homepage = "https://DiseaseNeuroGenomics.github.io/zenith"
-	bioc = "zenith" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/zenith_1.4.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/zenith/zenith_1.4.2.tar.gz"]
+	bioc = "zenith"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.2", sha256="e4125d970e64108ee099b916fa4013b9f732ba4198d9ad838c50a27b93d9c373")
+	version("1.10.0", commit="4167305d9fd4dd4e453b53c3dc2c7330fc27f495")
+	version("1.4.2", commit="cd2b22f46e19b8745cbd402d2f1ec196617d1acc")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))

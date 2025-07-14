@@ -13,11 +13,10 @@ class RFastseg(RPackage):
 	"""
 	
 	homepage = "http://www.bioinf.jku.at/software/fastseg/index.html"
-	bioc = "fastseg" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fastseg_1.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fastseg/fastseg_1.48.0.tar.gz"]
+	bioc = "fastseg"
 
-	version("1.54.0", tag="RELEASE_3_21")
-	version("1.48.0", sha256="66887a292000ab12e6097fdca19765575d5ac684e5bd32c312bf7d7b60abe981")
+	version("1.54.0", commit="a724a7734d6ad413ed58083fabbf9c76eca3704f")
+	version("1.48.0", commit="fc54ac5a74f17bc065c24aca4ef58143249788e2")
 
 	depends_on("r@2.13:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

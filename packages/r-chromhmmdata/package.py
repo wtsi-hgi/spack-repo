@@ -12,11 +12,10 @@ class RChromhmmdata(RPackage):
 	Annotation files of the formatted genomic annotation for ChromHMM. Three types of text files are included the chromosome sizes, region coordinates and anchors specifying the transcription start and end sites. The package includes data for two versions of the genome of humans and mice.
 	"""
 	
-	bioc = "chromhmmData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/chromhmmData_0.99.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/chromhmmData/chromhmmData_0.99.2.tar.gz"]
+	bioc = "chromhmmData"
 
-	version("0.99.2", tag="RELEASE_3_21")
-	version("0.99.2", sha256="f23b04ecd03c29a7fbf1c01f461101f9d1f8f443fa9aeccfc6e9cffae9e9e68d")
+	version("0.99.2", commit="8df27c4e8c8fb85c65bf8e7722396f3cb44dc0ba")
+	version("0.99.2", commit="8df27c4e8c8fb85c65bf8e7722396f3cb44dc0ba")
 
 	depends_on("r@4.1:", type=("build", "run"))
 

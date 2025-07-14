@@ -13,11 +13,10 @@ class RShinyepico(RPackage):
 	"""
 	
 	homepage = "https://github.com/omorante/shiny_epico"
-	bioc = "shinyepico" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/shinyepico_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/shinyepico/shinyepico_1.10.0.tar.gz"]
+	bioc = "shinyepico"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="09136d49bc8d92ccfd348de50150b663963548e2c0918471847880f9b6618e9a")
+	version("1.16.0", commit="81e52f451c3befd336f219ed871b09271fe52ed6")
+	version("1.10.0", commit="1ddbe37a580db7c309236e15f9594ed0eb01df41")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-dt@0.15:", type=("build", "run"))

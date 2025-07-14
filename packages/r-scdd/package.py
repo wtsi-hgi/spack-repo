@@ -13,11 +13,10 @@ class RScdd(RPackage):
 	"""
 	
 	homepage = "https://github.com/kdkorthauer/scDD"
-	bioc = "scDD" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scDD_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scDD/scDD_1.26.0.tar.gz"]
+	bioc = "scDD"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="78bd6f02f2a1e7acca0be327f635abd5c79071527182f119431bf1c910d61f96")
+	version("1.32.0", commit="1e76275e4928ed494d88c5cc2ad58d6d7725e5c5")
+	version("1.26.0", commit="6a08730f5e23c5620187627c479821f9b4e431c9")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-fields", type=("build", "run"))

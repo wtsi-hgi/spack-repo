@@ -13,11 +13,10 @@ class RSpecl(RPackage):
 	"""
 	
 	homepage = "http://bioconductor.org/packages/specL/"
-	bioc = "specL" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/specL_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/specL/specL_1.36.0.tar.gz"]
+	bioc = "specL"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="aae46a535b29ae3601c5ef7aafe91167358113dfc256ee22f1a422547ef6a8f9")
+	version("1.42.0", commit="803d372d9587ab07f1b0ce4303a6b552e4daf325")
+	version("1.36.0", commit="10a96640df01e063f46eac3d462377e20f5f6706")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dbi@0.5:", type=("build", "run"))

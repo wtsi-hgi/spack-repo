@@ -12,10 +12,9 @@ class RFunchip(RPackage):
 	Preprocessing and smoothing of ChIP-Seq peaks and efficient implementation of the k-mean alignment algorithm to classify them.
 	"""
 	
-	bioc = "FunChIP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FunChIP_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FunChIP/FunChIP_1.28.0.tar.gz"]
+	bioc = "FunChIP"
 
-	version("1.28.0", sha256="c19d48699810948b7bc177178811937f33abc1d1d828dafaab58be7dea521ce2")
+	version("1.28.0", commit="ee9b6c9825a4c9497dd097b74f2f46795ea78140")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

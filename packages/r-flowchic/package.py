@@ -13,11 +13,10 @@ class RFlowchic(RPackage):
 	"""
 	
 	homepage = "http://www.ufz.de/index.php?en=16773"
-	bioc = "flowCHIC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/flowCHIC_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/flowCHIC/flowCHIC_1.36.0.tar.gz"]
+	bioc = "flowCHIC"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="e558421e260c2464482852ecada34e2c9972cf7afcf7f9be1f9e48069a0ccb69")
+	version("1.42.0", commit="6fc189bda7981c622dc2b43df8d1f0b92fc430c2")
+	version("1.36.0", commit="2a131a453cc60c27af5ddc36fc63b89421dd0b91")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-flowcore", type=("build", "run"))

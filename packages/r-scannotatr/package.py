@@ -13,11 +13,10 @@ class RScannotatr(RPackage):
 	"""
 	
 	homepage = "https://github.com/grisslab/scAnnotatR"
-	bioc = "scAnnotatR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scAnnotatR_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scAnnotatR/scAnnotatR_1.8.0.tar.gz"]
+	bioc = "scAnnotatR"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="f7943bd6a7292593e6e486a3f1107f162f52e6f453f59d1c88cfc2cb5bef998f")
+	version("1.14.0", commit="b0258982191f244909c1f404d6a8870fdc975326")
+	version("1.8.0", commit="5367b845b65291ed78d4bfb643cf4194d441b1f4")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-seurat", type=("build", "run"))

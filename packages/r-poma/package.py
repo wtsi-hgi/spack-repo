@@ -13,11 +13,10 @@ class RPoma(RPackage):
 	"""
 	
 	homepage = "https://github.com/pcastellanoescuder/POMA"
-	bioc = "POMA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/POMA_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/POMA/POMA_1.12.0.tar.gz"]
+	bioc = "POMA"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="83f550759c222e7aa4a640a6bdb0ce8e66445d5389d96f7487d8ac624b7db921")
+	version("1.18.0", commit="beb9b3611f5738fe80141238dfdac5be18882cf3")
+	version("1.12.0", commit="6e2f5bc80b706b51310bc44a394f31a401d57734")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))

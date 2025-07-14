@@ -12,11 +12,10 @@ class RRsvsim(RPackage):
 	RSVSim is a package for the simulation of deletions, insertions, inversion, tandem-duplications and translocations of various sizes in any genome available as FASTA-file or BSgenome data package. SV breakpoints can be placed uniformly accross the whole genome, with a bias towards repeat regions and regions of high homology (for hg19) or at user-supplied coordinates.
 	"""
 	
-	bioc = "RSVSim" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RSVSim_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RSVSim/RSVSim_1.42.0.tar.gz"]
+	bioc = "RSVSim"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="d4e84df70b3de7e9b33d22c71ae97831f86cb08ed391e4a1d6028e36b49f317f")
+	version("1.48.0", commit="d157a0cb41d8ce432b408d914de70581697a4599")
+	version("1.42.0", commit="3cc9f3d05279a0fff47a336659cac5ce8afdd84d")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

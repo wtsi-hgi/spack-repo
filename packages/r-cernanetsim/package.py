@@ -13,11 +13,10 @@ class RCernanetsim(RPackage):
 	"""
 	
 	homepage = "https://github.com/selcenari/ceRNAnetsim"
-	bioc = "ceRNAnetsim" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ceRNAnetsim_1.14.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ceRNAnetsim/ceRNAnetsim_1.14.1.tar.gz"]
+	bioc = "ceRNAnetsim"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.1", sha256="7af2b34a242b9ea85688fcddf23b19dbcb0e1f45d0132cac30158381034ccf8e")
+	version("1.20.0", commit="0a1a1d8d564e9af87c1493831151b7b73aa1bed1")
+	version("1.14.1", commit="4130999bc4b9a743fbae6c42731a3026ace5cd2b")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

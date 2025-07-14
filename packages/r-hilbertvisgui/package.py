@@ -13,14 +13,8 @@ class RHilbertvisgui(RPackage):
 	"""
 
 	homepage = "http://www.ebi.ac.uk/~anders/hilbert"
-	bioc = "HilbertVisGUI"
-	urls = [
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HilbertVisGUI_1.60.0.tar.gz",
-	    "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HilbertVisGUI/HilbertVisGUI_1.60.0.tar.gz",
-	]
-
-	version("1.66.1", tag="RELEASE_3_21")
-	version("1.60.0", sha256="8295dfdff3c658b56c39cbd732255e0770016457aec83acce13df51e37f13224")
+	bioc = "HilbertVisGUI"version("1.66.1", commit="5ca9b88b68cdd80e02a81dbabb6e52e611a632a5")
+	version("1.60.0", commit="6e421a53a3bd38314648c0c766b8119b192918da")
 
 	depends_on("r@2.6:", type=("build", "run"))
 	depends_on("r-hilbertvis@1.1.6:", type=("build", "run"))

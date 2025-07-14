@@ -12,11 +12,10 @@ class RRlassocox(RPackage):
 	RLassoCox is a package that implements the RLasso-Cox model proposed by Wei Liu. The RLasso-Cox model integrates gene interaction information into the Lasso-Cox model for accurate survival prediction and survival biomarker discovery. It is based on the hypothesis that topologically important genes in the gene interaction network tend to have stable expression changes. The RLasso-Cox model uses random walk to evaluate the topological weight of genes, and then highlights topologically important genes to improve the generalization ability of the Lasso-Cox model. The RLasso-Cox model has the advantage of identifying small gene sets with high prognostic performance on independent datasets, which may play an important role in identifying robust survival biomarkers for various cancer types.
 	"""
 	
-	bioc = "RLassoCox" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RLassoCox_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RLassoCox/RLassoCox_1.10.0.tar.gz"]
+	bioc = "RLassoCox"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="9034bff68c6e8d2d576902731fe97d04a12158a795860c1edc6a0d10d610493e")
+	version("1.16.0", commit="b2b4b8f9de5ccb239ecf16b992bab95b278d2157")
+	version("1.10.0", commit="9fb04d641f4e10df9396d648f6f665ae5cf80029")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-glmnet", type=("build", "run"))

@@ -13,11 +13,10 @@ class REasylift(RPackage):
 	"""
 	
 	homepage = "https://github.com/nahid18/easylift"
-	bioc = "easylift" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/easylift_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/easylift/easylift_1.0.0.tar.gz"]
+	bioc = "easylift"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.0", sha256="364089242d0087631ba2fc1226a3fbce8af84f876c7c6176051e0e876e47abf5")
+	version("1.6.0", commit="ea18a53d44a9c4828cdf2fd14c7a3a81c478bc9f")
+	version("1.0.0", commit="189965ac77e47a2d32b79265890559d582726397")
 
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))

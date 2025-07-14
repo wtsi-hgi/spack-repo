@@ -12,11 +12,10 @@ class RRifi(RPackage):
 	'rifi' analyses data from rifampicin time series created by microarray or RNAseq. 'rifi' is a transcriptome data analysis tool for the holistic identification of transcription and decay associated processes. The decay constants and the delay of the onset of decay is fitted for each probe/bin. Subsequently, probes/bins of equal properties are combined into segments by dynamic programming, independent of a existing genome annotation. This allows to detect transcript segments of different stability or transcriptional events within one annotated gene. In addition to the classic decay constant/half-life analysis, 'rifi' detects processing sites, transcription pausing sites, internal transcription start sites in operons, sites of partial transcription termination in operons, identifies areas of likely transcriptional interference by the collision mechanism and gives an estimate of the transcription velocity. All data are integrated to give an estimate of continous transcriptional units, i.e. operons. Comprehensive output tables and visualizations of the full genome result and the individual fits for all probes/bins are produced.
 	"""
 	
-	bioc = "rifi" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rifi_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rifi/rifi_1.6.0.tar.gz"]
+	bioc = "rifi"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="82ea553367f6850b21ce41e9e1e791f269f1ed5c782a1ded795a69633ee71634")
+	version("1.12.0", commit="b02f67cb9a65375e95cac46eca567777a3342c5a")
+	version("1.6.0", commit="8a639a07b958f0da67d153c79170b70a099dcea3")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-car", type=("build", "run"))

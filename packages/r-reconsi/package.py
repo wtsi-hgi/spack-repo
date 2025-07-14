@@ -12,11 +12,10 @@ class RReconsi(RPackage):
 	Improves simultaneous inference under dependence of tests by estimating a collapsed null distribution through resampling. Accounting for the dependence between tests increases the power while reducing the variability of the false discovery proportion. This dependence is common in genomics applications, e.g. when combining flow cytometry measurements with microbiome sequence counts.
 	"""
 	
-	bioc = "reconsi" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/reconsi_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/reconsi/reconsi_1.14.0.tar.gz"]
+	bioc = "reconsi"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="49f9dd0484f66ad706aa32144f200d8207087cea9928e0f8462de245f35a3cea")
+	version("1.20.0", commit="d0ba92fb12885dd88605cacd430fb082b705e0ed")
+	version("1.14.0", commit="92e22ca4d7cf9c3c37de4ad05aa8cc7246cffa61")
 
 	depends_on("r-phyloseq", type=("build", "run"))
 	depends_on("r-ks", type=("build", "run"))

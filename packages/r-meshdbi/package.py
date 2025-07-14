@@ -12,11 +12,10 @@ class RMeshdbi(RPackage):
 	The package is unified implementation of MeSH.db, MeSH.AOR.db, and MeSH.PCR.db and also is interface to construct Gene-MeSH package (MeSH.XXX.eg.db). loadMeSHDbiPkg import sqlite file and generate MeSH.XXX.eg.db.
 	"""
 	
-	bioc = "MeSHDbi" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MeSHDbi_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MeSHDbi/MeSHDbi_1.38.0.tar.gz"]
+	bioc = "MeSHDbi"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="284be71bb511be9796a85e54f6f2f2bbaea91d8f6bebf9b7dab169395dae548c")
+	version("1.44.0", commit="41619a445ce617e27c52b1ea7adb5af109dc8986")
+	version("1.38.0", commit="7abf210085a5c22ce89137841fcef7c09b05062e")
 
 	depends_on("r@3.0.1:", type=("build", "run"))
 	depends_on("r-annotationdbi@1.31.19:", type=("build", "run"))

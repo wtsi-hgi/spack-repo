@@ -13,11 +13,10 @@ class RSchex(RPackage):
 	"""
 	
 	homepage = "https://github.com/SaskiaFreytag/schex"
-	bioc = "schex" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/schex_1.16.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/schex/schex_1.16.1.tar.gz"]
+	bioc = "schex"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.1", sha256="635951df732186ae83134cf55cab7be75a7d9c8d2e353b5b9cc023d38006caad")
+	version("1.22.0", commit="5ca539aa61e2b0237916a1353fed3014efa99235")
+	version("1.16.1", commit="f3bdf546223bd626b9c7b0ab30db9e9db6912101")
 
 	depends_on("r-singlecellexperiment@1.7.4:", type=("build", "run"))
 	depends_on("r-ggplot2@3.2.1:", type=("build", "run"))

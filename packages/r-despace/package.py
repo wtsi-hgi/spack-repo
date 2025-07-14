@@ -13,11 +13,10 @@ class RDespace(RPackage):
 	"""
 	
 	homepage = "https://github.com/peicai/DESpace"
-	bioc = "DESpace" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DESpace_1.2.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DESpace/DESpace_1.2.1.tar.gz"]
+	bioc = "DESpace"
 
-	version("2.0.0", tag="RELEASE_3_21")
-	version("1.2.1", sha256="7fe53766494088b99b29a6e94bd4ea1ae1f125e4720b3cce8fbe2ecd8fe5278d")
+	version("2.0.0", commit="705171eb3d698ffefadbfdc850e23944756be9cd")
+	version("1.2.1", commit="ad6d77d5b954b31fe40e11e3a42ee25f5a2a907c")
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-edger", type=("build", "run"))

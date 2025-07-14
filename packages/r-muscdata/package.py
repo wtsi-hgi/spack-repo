@@ -13,11 +13,10 @@ class RMuscdata(RPackage):
 	"""
 	
 	homepage = "https://github.com/HelenaLC/muscData"
-	bioc = "muscData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/muscData_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/muscData/muscData_1.16.0.tar.gz"]
+	bioc = "muscData"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="aaf36d5799af4ec978eae1635b0966a6e0951a8f69738292b7d391f953695506")
+	version("1.22.0", commit="497deeba5758db04f26113873b3c6cb97a041b62")
+	version("1.16.0", commit="30ae3fc37dadb46f34adf98f8ccf00ed520cb307")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-experimenthub", type=("build", "run"))

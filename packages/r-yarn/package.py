@@ -17,12 +17,11 @@ class RYarn(RPackage):
 	sparsity found in very large RNA-seq experiments."""
 
 	bioc = "yarn"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/yarn_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/yarn/yarn_1.28.0.tar.gz"]
-	version("1.34.0", tag="RELEASE_3_21")
+	version("1.34.0", commit="376fdc8e0ff802bb440a6d3fd16d8623507e59e0")
 	version("1.8.1", commit="ee0723d4dbf082b4469ca9c22cce4f1a2ac81c04")
 	version("1.6.0", commit="19d1b2ef275f294bd318b86e0d237c271880117d")
 	version("1.4.0", commit="36100f40b9e520c072d0d5ebf963723b813f7db0")
-	version("1.28.0", sha256="3227510507bc3788c5bde23e230a23fa6ddc81ed973cdbf7ea45cfe8af01a889")
+	version("1.28.0", commit="740391c4e8cfc598be4b6850c5e186fe573e74d8")
 	version("1.26.0", commit="54dac4a6afe6b036bac60482cf268aa0cf28cec4")
 	version("1.24.0", commit="d3a9c5cc1f97bff111dc9332f32ded676e3709d3")
 	version("1.22.0", commit="0d94152eee4224bf1ca467fad7f2b35c2e1df6b2")

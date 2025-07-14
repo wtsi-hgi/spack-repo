@@ -12,11 +12,10 @@ class RConumee(RPackage):
 	This package contains a set of processing and plotting methods for performing copy-number variation (CNV) analysis using Illumina 450k or EPIC methylation arrays.
 	"""
 	
-	bioc = "conumee" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/conumee_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/conumee/conumee_1.36.0.tar.gz"]
+	bioc = "conumee"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="e75a0aff3bcd1246d15841de749e211fbbe9be12d50e2012e8bb5e3e8a00c8f2")
+	version("1.42.0", commit="85f58e7415b9db6f605e203f8489a3fafd4b0b2d")
+	version("1.36.0", commit="417410ba36ce442ca7bba890f4492efab3c29d4b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-minfi", type=("build", "run"))

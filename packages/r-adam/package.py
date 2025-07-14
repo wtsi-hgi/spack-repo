@@ -12,11 +12,10 @@ class RAdam(RPackage):
 	ADAM is a GSEA R package created to group a set of genes from comparative samples (control versus experiment) belonging to different species according to their respective functions (Gene Ontology and KEGG pathways as default) and show their significance by calculating p-values referring togene diversity and activity. Each group of genes is called GFAG (Group of Functionally Associated Genes).
 	"""
 	
-	bioc = "ADAM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ADAM_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ADAM/ADAM_1.18.0.tar.gz"]
+	bioc = "ADAM"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="454bda6992ec764869a30c5ccfcfd75d69a32e65df518f003f92e020e7ade33f")
+	version("1.24.0", commit="3ef81c3dc58710d31ae220e0cad984005aff8946")
+	version("1.18.0", commit="165282340e088f6a39bc8c5f321a467fbcbcfa9c")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))

@@ -12,10 +12,9 @@ class RTinesath1cdf(RPackage):
 	A package containing an environment represeting the newcdf/tinesATH1.cdf.cdf file.
 	"""
 	
-	bioc = "tinesath1cdf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tinesath1cdf_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tinesath1cdf/tinesath1cdf_1.40.0.tar.gz"]
+	bioc = "tinesath1cdf"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="9ac0104f108085dfe489d50874c29541d4cfca85c31dfcbae8f256ed0c2fab89")
+	version("1.46.0", commit="d78c7a8e33b2b45603f0b061ba4badbaa72c4abd")
+	version("1.40.0", commit="79fdbd5ab144ea2e631817d03f3d998244465e03")
 
 

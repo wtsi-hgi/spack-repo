@@ -12,11 +12,10 @@ class RScrnaseq(RPackage):
 	Gene-level counts for a collection of public scRNA-seq datasets, provided as SingleCellExperiment objects with cell- and gene-level metadata.
 	"""
 	
-	bioc = "scRNAseq" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/scRNAseq_2.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/scRNAseq/scRNAseq_2.16.0.tar.gz"]
+	bioc = "scRNAseq"
 
-	version("2.22.0", tag="RELEASE_3_21")
-	version("2.16.0", sha256="5c2144291969ee9b4c23eb450d0f23c71bbbdc79b868ba8f6b73d283b11e7035")
+	version("2.22.0", commit="62a2b70785fd41f290ba5fd2b52072cb2e33ebb3")
+	version("2.16.0", commit="0bc6ab5602069dd57643d84d4536fba0426fbc65")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

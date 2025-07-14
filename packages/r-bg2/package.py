@@ -12,11 +12,10 @@ class RBg2(RPackage):
 	This package is built to perform GWAS analysis for non-Gaussian data using BG2. The BG2 method uses penalized quasi-likelihood along with nonlocal priors in a two step manner to identify SNPs in GWAS analysis. The research related to this package was supported in part by National Science Foundation awards DMS 1853549 and DMS 2054173.
 	"""
 	
-	bioc = "BG2" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BG2_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BG2/BG2_1.2.0.tar.gz"]
+	bioc = "BG2"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="dce89bb9648069770c0968a10488f17bd93a8456bd2cb66c05e670791fde98e4", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BG2_1.2.0.tar.gz")
+	version("1.8.0", commit="af323f1c13848743db42c8466bfc6762bf45918e")
+	version("1.2.0", commit="78232ec76f150df82ddb89e40362a287c23e3f76")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-ga@3.2:", type=("build", "run"))

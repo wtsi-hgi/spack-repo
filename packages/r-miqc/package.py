@@ -13,11 +13,10 @@ class RMiqc(RPackage):
 	"""
 	
 	homepage = "https://github.com/greenelab/miQC"
-	bioc = "miQC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miQC_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miQC/miQC_1.10.0.tar.gz"]
+	bioc = "miQC"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="e089a0972b890bff36cd46d2f02198ddd99911e60bc9a804e964893327b5378c")
+	version("1.16.0", commit="d0813fb5c00d72e58bf5c1a7300aef146c047a82")
+	version("1.10.0", commit="f96ad1f7259806e48b4da8d9378c6ed577cfe8d7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

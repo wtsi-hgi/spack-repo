@@ -13,11 +13,10 @@ class RDifflogo(RPackage):
 	"""
 	
 	homepage = "https://github.com/mgledi/DiffLogo/"
-	bioc = "DiffLogo" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DiffLogo_2.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DiffLogo/DiffLogo_2.26.0.tar.gz"]
+	bioc = "DiffLogo"
 
-	version("2.32.0", tag="RELEASE_3_21")
-	version("2.26.0", sha256="33da8346c4c056021a42eb5b1d22f7bf2752ff375ee54f2c5066a5e9ec3486c6")
+	version("2.32.0", commit="e640352b944e281f723299aec38abab5bafb27da")
+	version("2.26.0", commit="cf17c71365444827dcee1b98010cabff205d9c3c")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-cba", type=("build", "run"))

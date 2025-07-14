@@ -13,11 +13,10 @@ class RIloreg(RPackage):
 	"""
 	
 	homepage = "https://github.com/elolab/ILoReg"
-	bioc = "ILoReg" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ILoReg_1.12.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ILoReg/ILoReg_1.12.1.tar.gz"]
+	bioc = "ILoReg"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.1", sha256="ed5ac78d1139c9aa3d97795b257b0f517804678266eca928e80f463779f6d878")
+	version("1.18.0", commit="9ed83b0ae6bca86cd129ae67421a0106d7b1f1bb")
+	version("1.12.1", commit="edbe18f6a45a6ba5c961faf18d0af4d79868fa3b")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))

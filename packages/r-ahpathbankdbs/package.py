@@ -13,11 +13,10 @@ class RAhpathbankdbs(RPackage):
 	"""
 	
 	homepage = "https://github.com/kozo2/AHPathbankDbs"
-	bioc = "AHPathbankDbs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/AHPathbankDbs_0.99.5.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/AHPathbankDbs/AHPathbankDbs_0.99.5.tar.gz"]
+	bioc = "AHPathbankDbs"
 
-	version("0.99.5", tag="RELEASE_3_21")
-	version("0.99.5", sha256="09dd1c5be5712a64a07d1b1cfcc19f37bc2dd76c69b0bf5c663d8852e9cb8c83")
+	version("0.99.5", commit="a90bfd481733291c747d8f3a40f3440462cc317c")
+	version("0.99.5", commit="a90bfd481733291c747d8f3a40f3440462cc317c")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationhub@2.23:", type=("build", "run"))

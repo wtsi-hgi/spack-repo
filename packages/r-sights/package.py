@@ -13,11 +13,10 @@ class RSights(RPackage):
 	"""
 	
 	homepage = "https://eg-r.github.io/sights/"
-	bioc = "sights" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/sights_1.28.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/sights/sights_1.28.0.tar.gz"]
+	bioc = "sights"
 
-	version("1.34.0", tag="RELEASE_3_21")
-	version("1.28.0", sha256="1997ca79956d3d07ddab78e092b87ff7e78149b54abc0d792e0abe9d19ecb8c4")
+	version("1.34.0", commit="d793230a68664ea90faf5343d1b4e4abf863de4a")
+	version("1.28.0", commit="f63300148c35dc95d9ba8ca61dd781ed1015b7e1")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-mass@7.3:", type=("build", "run"))

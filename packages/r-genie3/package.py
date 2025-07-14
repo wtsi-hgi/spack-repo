@@ -13,9 +13,8 @@ class RGenie3(RPackage):
 	regulatory networks from expression data."""
 
 	bioc = "GENIE3"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GENIE3_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GENIE3/GENIE3_1.24.0.tar.gz"]
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="13188afc7c87e60c6b2b10617ea28f9bd47f452a62890c1fa6ea6106316a512f", url="https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GENIE3_1.24.0.tar.gz")
+	version("1.30.0", commit="c344793164174ec1af99b2d1114364c7c1938317")
+	version("1.24.0", commit="cc5a692739f3d415d1c97a926adcf02c7fa9bc2a")
 	version("1.22.0", commit="e0b7f23a1ac5b01c937a351bb530b2dc6b76711f")
 	version("1.20.0", commit="aea2e686a262f30b16c068241938d04f21251a0d")
 	version("1.18.0", commit="f16b25ef50978a4a497eb2f911e21f2e839fa33c")

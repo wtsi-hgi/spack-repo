@@ -12,11 +12,10 @@ class RLiquidassociation(RPackage):
 	The package contains functions for calculate direct and model-based estimators for liquid association. It also provides functions for testing the existence of liquid association given a gene triplet data.
 	"""
 	
-	bioc = "LiquidAssociation" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/LiquidAssociation_1.56.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/LiquidAssociation/LiquidAssociation_1.56.0.tar.gz"]
+	bioc = "LiquidAssociation"
 
-	version("1.62.0", tag="RELEASE_3_21")
-	version("1.56.0", sha256="eb8f1f63a53bcfb14143f6c0760304eadf6ec249ae4914a2fc9c14ce04056202")
+	version("1.62.0", commit="a39c6740a26b5782c596584f01e9cace2e231f6a")
+	version("1.56.0", commit="66e5dfc6190e54da5fca061a77bec0ad89f869c3")
 
 	depends_on("r-geepack", type=("build", "run"))
 	depends_on("r-yeastcc", type=("build", "run"))

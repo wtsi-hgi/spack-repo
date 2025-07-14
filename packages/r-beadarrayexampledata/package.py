@@ -12,11 +12,10 @@ class RBeadarrayexampledata(RPackage):
 	An small dataset that can be used to run examples from the beadarray vignette and examples
 	"""
 	
-	bioc = "beadarrayExampleData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/beadarrayExampleData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/beadarrayExampleData/beadarrayExampleData_1.40.0.tar.gz"]
+	bioc = "beadarrayExampleData"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="e8169ee6f9de4af29ab7ee890e2c2d6ba2dd17ef19e8e380ac2e39486e1068d5")
+	version("1.46.0", commit="2eda6493838b25af3366a200a9b1ae65f8e9babd")
+	version("1.40.0", commit="b19df3c2deebd5622a7ecb3df9a4b81437f639da")
 
 	depends_on("r@2.13:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

@@ -13,11 +13,10 @@ class RFamat(RPackage):
 	"""
 	
 	homepage = "https://github.com/emiliesecherre/famat"
-	bioc = "famat" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/famat_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/famat/famat_1.12.0.tar.gz"]
+	bioc = "famat"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="d2da9308e980817f3e8a85a7d5f09cc90df857ffb3b059b6687d2f359929f706")
+	version("1.18.0", commit="a2f61ccbfdf0ddef7f9c70d3cffd97d33a15ed82")
+	version("1.12.0", commit="718547e2e4c698fff99b93d721ed3d54d29c3ff2")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-keggrest", type=("build", "run"))

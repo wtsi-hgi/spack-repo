@@ -12,11 +12,10 @@ class RGreylistchip(RPackage):
 	Identify regions of ChIP experiments with high signal in the input, that lead to spurious peaks during peak calling. Remove reads aligning to these regions prior to peak calling, for cleaner ChIP analysis.
 	"""
 	
-	bioc = "GreyListChIP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GreyListChIP_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GreyListChIP/GreyListChIP_1.34.0.tar.gz"]
+	bioc = "GreyListChIP"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="d945de29328d081f2354ceb892d918ee8abd06418a8a79ac7388cee5362327cd")
+	version("1.40.0", commit="9700ac4c5ff2c8eb751105e4fb7ce35e968fdfba")
+	version("1.34.0", commit="75f5a62e750daa9565d72cc26ea20c76545adeb6")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))

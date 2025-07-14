@@ -13,11 +13,10 @@ class RAbseqr(RPackage):
 	"""
 	
 	homepage = "https://github.com/malhamdoosh/abseqR"
-	bioc = "abseqR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/abseqR_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/abseqR/abseqR_1.20.0.tar.gz"]
+	bioc = "abseqR"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="8865dd4178a451436acd87c3cc76ae5d0b392195b379b9adf00bd407952d0669")
+	version("1.26.0", commit="d426a605ad2576b3ccef509b7d62fe8d38616f39")
+	version("1.20.0", commit="6511111881fec1f3bc1cc584f7ba00f2ffe4b106")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

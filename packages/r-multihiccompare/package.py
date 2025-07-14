@@ -13,11 +13,10 @@ class RMultihiccompare(RPackage):
 	"""
 	
 	homepage = "https://github.com/dozmorovlab/multiHiCcompare"
-	bioc = "multiHiCcompare" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/multiHiCcompare_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/multiHiCcompare/multiHiCcompare_1.20.0.tar.gz"]
+	bioc = "multiHiCcompare"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="6b4cf113ae308b818ff7f695b80a1fa6025f95d394dafb855754e4409c305094")
+	version("1.26.0", commit="9cc6638ba9b2290341e020a8acd512478ad5a85f")
+	version("1.20.0", commit="2767324b310b481afc33b34bada091d0d167eaff")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

@@ -12,11 +12,10 @@ class RCytodx(RPackage):
 	This package provides functions that predict clinical outcomes using single cell data (such as flow cytometry data, RNA single cell sequencing data) without the requirement of cell gating or clustering.
 	"""
 	
-	bioc = "CytoDx" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CytoDx_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CytoDx/CytoDx_1.22.0.tar.gz"]
+	bioc = "CytoDx"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="0debb1b6a4d9961e48fb2b7b4679d291d6d078c7e849ab0fd5c6b7dba43c4ba3")
+	version("1.28.0", commit="589ff8726b4f30f59b8335f3c9dc92ca5a29a06b")
+	version("1.22.0", commit="72994ad2a690e4b29434ac70295113378113d9f5")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

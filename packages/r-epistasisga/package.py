@@ -13,11 +13,10 @@ class REpistasisga(RPackage):
 	"""
 	
 	homepage = "https://github.com/mnodzenski/epistasisGA"
-	bioc = "epistasisGA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epistasisGA_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epistasisGA/epistasisGA_1.4.0.tar.gz"]
+	bioc = "epistasisGA"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="214867cd3357037f6c094be7ef2dda4c7fb5653a84fd86b2c8354b06882ad836")
+	version("1.10.0", commit="6b37aae79a9f3ba65384d676881d70eb900a20b2")
+	version("1.4.0", commit="a4f5fdc19b42da472d4fd1d163e78c28c69794f5")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))

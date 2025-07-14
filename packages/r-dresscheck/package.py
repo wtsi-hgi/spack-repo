@@ -12,11 +12,10 @@ class RDresscheck(RPackage):
 	data and software for checking Dressman JCO 25(5) 2007
 	"""
 	
-	bioc = "dressCheck" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/dressCheck_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/dressCheck/dressCheck_0.40.0.tar.gz"]
+	bioc = "dressCheck"
 
-	version("0.46.0", tag="RELEASE_3_21")
-	version("0.40.0", sha256="e3a7d8e5611aff83fb416d003e8a8c32e2d7d4661f7ec69b3c2b07e37c6566d5")
+	version("0.46.0", commit="36b4f9711cf0578886c150c7940623d8081d613c")
+	version("0.40.0", commit="b1b3b5264d0dbd907e134e0e692f5ebbf84bf52b")
 
 	depends_on("r@2.10.1:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

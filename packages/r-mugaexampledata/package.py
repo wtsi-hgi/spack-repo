@@ -12,11 +12,10 @@ class RMugaexampledata(RPackage):
 	This package contains example data for the MUGA array that is used by the R package DOQTL.
 	"""
 	
-	bioc = "MUGAExampleData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/MUGAExampleData_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/MUGAExampleData/MUGAExampleData_1.22.0.tar.gz"]
+	bioc = "MUGAExampleData"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="388388e93786ebea27da4ac2005026f85379e7c7fea05d6bad3e92c02ec60be1")
+	version("1.28.0", commit="89efdba2bc2c0c77e438e1b3dcc02f4cf2c1e470")
+	version("1.22.0", commit="3414f294576a5255e91a04855e75ea370f44a0d7")
 
 	depends_on("r@2.10:", type=("build", "run"))
 

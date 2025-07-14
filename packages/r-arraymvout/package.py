@@ -12,11 +12,10 @@ class RArraymvout(RPackage):
 	This package supports the application of diverse quality metrics to AffyBatch instances, summarizing these metrics via PCA, and then performing parametric outlier detection on the PCs to identify aberrant arrays with a fixed Type I error rate
 	"""
 	
-	bioc = "arrayMvout" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/arrayMvout_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/arrayMvout/arrayMvout_1.60.0.tar.gz"]
+	bioc = "arrayMvout"
 
-	version("1.66.0", tag="RELEASE_3_21")
-	version("1.60.0", sha256="1ffebe64d66f20ebb221ab344f546f2c5338d1e94def83a32a56bde841d7737c")
+	version("1.66.0", commit="2099184584bc0bb730e236f7b65ea4d37c7bc4d0")
+	version("1.60.0", commit="f24566a929ab83f086cc062d2a785230ab930cc9")
 
 	depends_on("r@2.6:", type=("build", "run"))
 	depends_on("r-parody", type=("build", "run"))

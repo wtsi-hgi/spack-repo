@@ -12,11 +12,10 @@ class ROcplus(RPackage):
 	This package allows to characterize the operating characteristics of a microarray experiment, i.e. the trade-off between false discovery rate and the power to detect truly regulated genes. The package includes tools both for planned experiments (for sample size assessment) and for already collected data (identification of differentially expressed genes).
 	"""
 	
-	bioc = "OCplus" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OCplus_1.76.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OCplus/OCplus_1.76.0.tar.gz"]
+	bioc = "OCplus"
 
-	version("1.82.0", tag="RELEASE_3_21")
-	version("1.76.0", sha256="372345e32f524a9dd287016acdb0e9385ce62e4c6e0045620f0a76c417c3ec9a")
+	version("1.82.0", commit="abf71aa13a261623c46830a7085f54ab89e8e38a")
+	version("1.76.0", commit="54692974caea38221dfb655641f05791e8b98fbc")
 
 	depends_on("r@2.1:", type=("build", "run"))
 	depends_on("r-multtest@1.7.3:", type=("build", "run"))

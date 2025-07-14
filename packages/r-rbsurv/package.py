@@ -13,11 +13,10 @@ class RRbsurv(RPackage):
 	"""
 	
 	homepage = "http://www.korea.ac.kr/~stat2242/"
-	bioc = "rbsurv" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rbsurv_2.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rbsurv/rbsurv_2.60.0.tar.gz"]
+	bioc = "rbsurv"
 
-	version("2.66.0", tag="RELEASE_3_21")
-	version("2.60.0", sha256="90a9b4d776c70ec276addfd9bd6af67d9ab4080dd7262974142a23f961ab7a06")
+	version("2.66.0", commit="1faecb8faba37fad2dad80b979947a0d8bcf86a6")
+	version("2.60.0", commit="b2479b0f576a54092c4bb0548e9afb847f1974b6")
 
 	depends_on("r@2.5:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

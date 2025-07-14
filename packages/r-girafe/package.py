@@ -12,11 +12,10 @@ class RGirafe(RPackage):
 	The package 'girafe' deals with the genome-level representation of aligned reads from next-generation sequencing data. It contains an object class for enabling a detailed description of genome intervals with aligned reads and functions for comparing, visualising, exporting and working with such intervals and the aligned reads. As such, the package interacts with and provides a link between the packages ShortRead, IRanges and genomeIntervals.
 	"""
 	
-	bioc = "girafe" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/girafe_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/girafe/girafe_1.54.0.tar.gz"]
+	bioc = "girafe"
 
-	version("1.60.0", tag="RELEASE_3_21")
-	version("1.54.0", sha256="446659992e64ae2ee3d263fb3c25d91a421c6cfffa7f6df009f26787b7e94a27")
+	version("1.60.0", commit="1e8b0ed80903b3d7c036cdb145fadcc4a75b8c7b")
+	version("1.54.0", commit="15a75307f41799f6a75b05d8aec996653093339f")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.13.8:", type=("build", "run"))

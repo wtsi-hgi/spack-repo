@@ -13,11 +13,10 @@ class REgsea123(RPackage):
 	"""
 	
 	homepage = "https://f1000research.com/articles/6-2010"
-	bioc = "EGSEA123" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/EGSEA123_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/EGSEA123/EGSEA123_1.26.0.tar.gz"]
+	bioc = "EGSEA123"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="f69e506130e595781295a6f15e07dba7f8d2844486af215bace9b44ebfa02784", url="https://www.bioconductor.org/packages/3.18/workflows/src/contrib/EGSEA123_1.26.0.tar.gz")
+	version("1.32.0", commit="0dd39f9414a8446405b4bf524c146ef5eb88cb8f")
+	version("1.26.0", commit="fc25b6aa532bd4e0e65bda8978eea427e4bb2787")
 
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-egsea@1.5.2:", type=("build", "run"))

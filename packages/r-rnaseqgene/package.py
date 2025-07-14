@@ -13,11 +13,10 @@ class RRnaseqgene(RPackage):
 	"""
 	
 	homepage = "https://github.com/thelovelove/rnaseqGene/"
-	bioc = "rnaseqGene" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/rnaseqGene_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/rnaseqGene/rnaseqGene_1.26.0.tar.gz"]
+	bioc = "rnaseqGene"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="613ec95c657958f8cf40133ec9dd3c27d8d648b59a12627c9234b3b1da30bdb6")
+	version("1.32.0", commit="f09044c2f535e228b3ddd88a06385f92e3bf5f07")
+	version("1.26.0", commit="eb0ccb5c755d0d06f5fffa7c6d70ff39a16ef348")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-biocstyle", type=("build", "run"))

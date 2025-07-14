@@ -12,11 +12,10 @@ class RHca(RPackage):
 	This package provides users with the ability to query the Human Cell Atlas data repository for single-cell experiment data. The `projects()`, `files()`, `samples()` and `bundles()` functions retrieve summary information on each of these indexes; corresponding `*_details()` are available for individual entries of each index. File-based resources can be downloaded using `files_download()`. Advanced use of the package allows the user to page through large result sets, and to flexibly query the 'list-of-lists' structure representing query responses.
 	"""
 	
-	bioc = "hca" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hca_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hca/hca_1.10.1.tar.gz"]
+	bioc = "hca"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.1", sha256="c713fb9dd52d7f71f01327deb0737be2f74fad811d97f95ff7f2cbae1ba46775")
+	version("1.16.0", commit="3c99355091b42e7934830832c617303a1749c15a")
+	version("1.10.1", commit="7189c1b574529be1dce8b488bb43ba8896282d2d")
 	version("1.10.0", md5="8a1c812efb51ab7e30a7d419bdf918a3")
 
 	depends_on("r@4.1:", type=("build", "run"))

@@ -12,11 +12,10 @@ class RTfutils(RPackage):
 	This package helps users to work with TF metadata from various sources. Significant catalogs of TFs and classifications thereof are made available. Tools for working with motif scans are also provided.
 	"""
 	
-	bioc = "TFutils" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFutils_1.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFutils/TFutils_1.22.0.tar.gz"]
+	bioc = "TFutils"
 
-	version("1.28.0", tag="RELEASE_3_21")
-	version("1.22.0", sha256="2ffe353d6fee1e87480cce7367cc774154267b51f88353edf7db692c668d3938")
+	version("1.28.0", commit="54278ccbeec2fc2c8548583697a036dac1b4e596")
+	version("1.22.0", commit="29d5e5cd984d738114a3b54674da5d2feb009b1f")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

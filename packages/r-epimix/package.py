@@ -12,11 +12,10 @@ class REpimix(RPackage):
 	EpiMix is a comprehensive tool for the integrative analysis of high-throughput DNA methylation data and gene expression data. EpiMix enables automated data downloading (from TCGA or GEO), preprocessing, methylation modeling, interactive visualization and functional annotation.To identify hypo- or hypermethylated CpG sites across physiological or pathological conditions, EpiMix uses a beta mixture modeling to identify the methylation states of each CpG probe and compares the methylation of the experimental group to the control group.The output from EpiMix is the functional DNA methylation that is predictive of gene expression. EpiMix incorporates specialized algorithms to identify functional DNA methylation at various genetic elements, including proximal cis-regulatory elements of protein-coding genes, distal enhancers, and genes encoding microRNAs and lncRNAs.
 	"""
 	
-	bioc = "EpiMix" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/EpiMix_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/EpiMix/EpiMix_1.4.0.tar.gz"]
+	bioc = "EpiMix"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="014364e942b93938904a3ff958f1540d0e52364ad7bbde9a652a97342d6130fb")
+	version("1.10.0", commit="d6d994dc4498164815553ef33acdb18ef29586b2")
+	version("1.4.0", commit="dd3578df09afa15cd05e3d90b66545e8daf84898")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-epimix-data@1.2.2:", type=("build", "run"))

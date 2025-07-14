@@ -13,11 +13,10 @@ class RPlpe(RPackage):
 	"""
 	
 	homepage = "http://www.korea.ac.kr/~stat2242/"
-	bioc = "PLPE" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PLPE_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PLPE/PLPE_1.62.0.tar.gz"]
+	bioc = "PLPE"
 
-	version("1.68.0", tag="RELEASE_3_21")
-	version("1.62.0", sha256="614f11be46858c8269ede6ccc5f5db513e78fb13d43ccbfef4008e43b932f079")
+	version("1.68.0", commit="5db6e6e3029096913e5db34bfd8931b2289340e7")
+	version("1.62.0", commit="19a299c6e6da9ef7cd4a4a02db78158dfd720bf3")
 
 	depends_on("r@2.6.2:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

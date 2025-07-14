@@ -12,11 +12,10 @@ class REpivizr(RPackage):
 	This package provides connections to the epiviz web app (http://epiviz.cbcb.umd.edu) for interactive visualization of genomic data. Objects in R/bioc interactive sessions can be displayed in genome browser tracks or plots to be explored by navigation through genomic regions. Fundamental Bioconductor data structures are supported (e.g., GenomicRanges and RangedSummarizedExperiment objects), while providing an easy mechanism to support other data structures (through package epivizrData). Visualizations (using d3.js) can be easily added to the web app as well.
 	"""
 	
-	bioc = "epivizr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/epivizr_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/epivizr/epivizr_2.32.0.tar.gz"]
+	bioc = "epivizr"
 
-	version("2.38.0", tag="RELEASE_3_21")
-	version("2.32.0", sha256="3217a45762f882999006c05e21a3a3fe444c19cbfaea447f90c5db7180347124")
+	version("2.38.0", commit="ca37411e3379d8c89152697c26b92c05cd21c0d9")
+	version("2.32.0", commit="1337101d175f7ee4d66af569e4f4b6b434c785c7")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-epivizrserver@1.1.1:", type=("build", "run"))

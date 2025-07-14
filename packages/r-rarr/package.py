@@ -13,11 +13,10 @@ class RRarr(RPackage):
 	"""
 	
 	homepage = "https://github.com/grimbough/Rarr"
-	bioc = "Rarr" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rarr_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rarr/Rarr_1.2.0.tar.gz"]
+	bioc = "Rarr"
 
-	version("1.8.0", tag="RELEASE_3_21")
-	version("1.2.0", sha256="997592c52d8d0aa11680d0f40df11765d57e65a1f9c5e61671ff4513d31d4cfb")
+	version("1.8.0", commit="37eea8ddd387afacb81e62f8a763763ea8c78679")
+	version("1.2.0", commit="e9d1a91253d3639d6429daebe86162255d76df07")
 
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-httr", type=("build", "run"))

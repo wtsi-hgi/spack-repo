@@ -12,11 +12,10 @@ class RTransomics2cytoscape(RPackage):
 	transomics2cytoscape generates a file for 3D transomics visualization by providing input that specifies the IDs of multiple KEGG pathway layers, their corresponding Z-axis heights, and an input that represents the edges between the pathway layers. The edges are used, for example, to describe the relationships between kinase on a pathway and enzyme on another pathway. This package automates creation of a transomics network as shown in the figure in Yugi.2014 (https://doi.org/10.1016/j.celrep.2014.07.021) using Cytoscape automation (https://doi.org/10.1186/s13059-019-1758-4).
 	"""
 	
-	bioc = "transomics2cytoscape" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/transomics2cytoscape_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/transomics2cytoscape/transomics2cytoscape_1.12.0.tar.gz"]
+	bioc = "transomics2cytoscape"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="27e0b3b716c7b76d84df0e0a9c6cacfa45e6638dc8766e1929e87413555a9169")
+	version("1.18.0", commit="1756878f4a5281605b287c22f80776654731b3e7")
+	version("1.12.0", commit="29a2d4e74806cd5bbcc5e124335188873183a4cd")
 
 	depends_on("r-rcy3", type=("build", "run"))
 	depends_on("r-keggrest", type=("build", "run"))

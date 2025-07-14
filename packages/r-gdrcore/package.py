@@ -12,11 +12,10 @@ class RGdrcore(RPackage):
 	This package contains core functions to process and analyze drug response data. The package provides tools for normalizing, averaging, and calculation of gDR metrics data. All core functions are wrapped into the pipeline function allowing analyzing the data in a straightforward way.
 	"""
 	
-	bioc = "gDRcore" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gDRcore_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gDRcore/gDRcore_1.0.1.tar.gz"]
+	bioc = "gDRcore"
 
-	version("1.6.0", tag="RELEASE_3_21")
-	version("1.0.1", sha256="8c4660fe598c52ce80f16f0aae4e3751ccef6cec0802a2c3bef2acba6000fa25")
+	version("1.6.0", commit="3a5ff784771716dc47882287bb0282848d95ecf5")
+	version("1.0.1", commit="0405d87306112789640731baf7364ccae7a24cae")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-bumpymatrix", type=("build", "run"))

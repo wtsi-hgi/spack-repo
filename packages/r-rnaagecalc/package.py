@@ -13,11 +13,10 @@ class RRnaagecalc(RPackage):
 	"""
 	
 	homepage = "https://github.com/reese3928/RNAAgeCalc"
-	bioc = "RNAAgeCalc" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNAAgeCalc_1.14.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNAAgeCalc/RNAAgeCalc_1.14.0.tar.gz"]
+	bioc = "RNAAgeCalc"
 
-	version("1.20.0", tag="RELEASE_3_21")
-	version("1.14.0", sha256="72ca209df31c620727903c7538cd7215ca4070550d413e5a604f03e6bb2328b3")
+	version("1.20.0", commit="83db03e2d30055bb6f3437ba950cd233fb951e94")
+	version("1.14.0", commit="da4cd15faa206d67b5e88b16d91166326ab817ac")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))

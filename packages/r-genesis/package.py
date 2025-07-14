@@ -13,11 +13,10 @@ class RGenesis(RPackage):
 	"""
 	
 	homepage = "https://github.com/UW-GAC/GENESIS"
-	bioc = "GENESIS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GENESIS_2.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GENESIS/GENESIS_2.32.0.tar.gz"]
+	bioc = "GENESIS"
 
-	version("2.38.0", tag="RELEASE_3_21")
-	version("2.32.0", sha256="891680387ea63682d977b08d2d5706892efea4c26cee855104489f2354a09db1")
+	version("2.38.0", commit="0b20554a04d46c423091d69553b5b8dc7185819f")
+	version("2.32.0", commit="81fe6b193a3d96cfe4449b94a04652c8643e7e31")
 
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))

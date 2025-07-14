@@ -13,11 +13,10 @@ class RSeqvartools(RPackage):
 	"""
 	
 	homepage = "https://github.com/smgogarten/SeqVarTools"
-	bioc = "SeqVarTools" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SeqVarTools_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SeqVarTools/SeqVarTools_1.40.0.tar.gz"]
+	bioc = "SeqVarTools"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="2b30fe117d2ef1423d0e5177da06ea08004dcdf4459894e10b486aaf5a99c2a5")
+	version("1.46.0", commit="30f2bb3234f21beb9934a9bccf67e7035f2d7981")
+	version("1.40.0", commit="1b6957a9fe47a7a971b0410a77108d9f8daa9f46")
 
 	depends_on("r-seqarray", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

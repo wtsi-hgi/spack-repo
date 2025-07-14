@@ -13,11 +13,10 @@ class RCrisprscore(RPackage):
 	"""
 	
 	homepage = "https://github.com/crisprVerse/crisprScore/issues"
-	bioc = "crisprScore" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crisprScore_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crisprScore/crisprScore_1.6.0.tar.gz"]
+	bioc = "crisprScore"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="dea74cc8cc0cbe2ac8d0280230b114e426356694b5845764a1adc8e49f6c3828")
+	version("1.12.0", commit="d0373b51dabe8c7f0bb51a79354baedebae90043")
+	version("1.6.0", commit="d5de5425a7b27e39a12d3e155ab303cfbba74beb")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-crisprscoredata@1.1.3:", type=("build", "run"))

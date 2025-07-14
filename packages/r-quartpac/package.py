@@ -12,11 +12,10 @@ class RQuartpac(RPackage):
 	Identifies clustering of somatic mutations in proteins over the entire quaternary structure.
 	"""
 	
-	bioc = "QuartPAC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/QuartPAC_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/QuartPAC/QuartPAC_1.34.0.tar.gz"]
+	bioc = "QuartPAC"
 
-	version("1.40.0", tag="RELEASE_3_21")
-	version("1.34.0", sha256="c4f882efe5099b332ddb35308bc729a4265f88b0aa53380102223f2bc1084e21")
+	version("1.40.0", commit="d81b6b0839e1b77bfc9ef6e9ed7db17c163764b1")
+	version("1.34.0", commit="53f4553885babcc0a047027987e5fdd56267895c")
 
 	depends_on("r-ipac", type=("build", "run"))
 	depends_on("r-graphpac", type=("build", "run"))

@@ -12,11 +12,10 @@ class RBlma(RPackage):
 	Suit of tools for bi-level meta-analysis. The package can be used in a wide range of applications, including general hypothesis testings, differential expression analysis, functional analysis, and pathway analysis.
 	"""
 	
-	bioc = "BLMA" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BLMA_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BLMA/BLMA_1.26.0.tar.gz"]
+	bioc = "BLMA"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="6266555a3692e93f261ef3fac295917349759c8b5629ff79a7d3d4f6fa6c71ab")
+	version("1.32.0", commit="37134c51fc30c9a1133ef00d2cb6c5a635ead535")
+	version("1.26.0", commit="c63d0ef5dba53bbe5639ab60a96916045b71a42b")
 
 	depends_on("r-rontotools", type=("build", "run"))
 	depends_on("r-gsa", type=("build", "run"))

@@ -12,11 +12,10 @@ class ROpenprimer(RPackage):
 	An implementation of methods for designing, evaluating, and comparing primer sets for multiplex PCR. Primers are designed by solving a set cover problem such that the number of covered template sequences is maximized with the smallest possible set of primers. To guarantee that high-quality primers are generated, only primers fulfilling constraints on their physicochemical properties are selected. A Shiny app providing a user interface for the functionalities of this package is provided by the 'openPrimeRui' package.
 	"""
 	
-	bioc = "openPrimeR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/openPrimeR_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/openPrimeR/openPrimeR_1.24.0.tar.gz"]
+	bioc = "openPrimeR"
 
-	version("1.30.0", tag="RELEASE_3_21")
-	version("1.24.0", sha256="8d5069817ea94f2293d7e54bf01a97e5e0896c111f2229c954c7cf932f32f84a")
+	version("1.30.0", commit="bbd319dc70d3fb186a5e2ba633fa480e78d75cee")
+	version("1.24.0", commit="f7bca2fd9bdc1f1f23cef55065ab33e6475acbb1")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biostrings@2.38.4:", type=("build", "run"))

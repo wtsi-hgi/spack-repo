@@ -13,11 +13,10 @@ class RRegparallel(RPackage):
 	"""
 	
 	homepage = "https://github.com/kevinblighe/RegParallel"
-	bioc = "RegParallel" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RegParallel_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RegParallel/RegParallel_1.20.0.tar.gz"]
+	bioc = "RegParallel"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="3100ffbd28a325db2a44904ef8f300c6dca27c6b451d43aa14b8e9b78bfcbb3b")
+	version("1.26.0", commit="a5a99503333497758ce67411965b8a6ce1e9d7be")
+	version("1.20.0", commit="45cf27acd1b19dc4538859cefb8a5fa01b634602")
 
 	depends_on("r-doparallel", type=("build", "run"))
 	depends_on("r-foreach", type=("build", "run"))

@@ -12,11 +12,10 @@ class RIsomirs(RPackage):
 	Characterization of miRNAs and isomiRs, clustering and differential expression.
 	"""
 	
-	bioc = "isomiRs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/isomiRs_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/isomiRs/isomiRs_1.30.0.tar.gz"]
+	bioc = "isomiRs"
 
-	version("1.36.1", tag="RELEASE_3_21")
-	version("1.30.0", sha256="88483aa9d9509faac83a0365993bcc9c38b4df4861bdb4ed1818d80cea51e2d4")
+	version("1.36.1", commit="f20b655847fce2e3bebd425874d76f3abb2fa357")
+	version("1.30.0", commit="ac97130b032cb64c0a6ff06df1e2a780e7afe34f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

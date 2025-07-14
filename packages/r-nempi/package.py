@@ -13,11 +13,10 @@ class RNempi(RPackage):
 	"""
 	
 	homepage = "https://github.com/cbg-ethz/nempi/"
-	bioc = "nempi" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/nempi_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/nempi/nempi_1.10.0.tar.gz"]
+	bioc = "nempi"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="ce8f21989af615e9790e60d2da865af0a5d1484874130f0b7eacc218139f227c")
+	version("1.16.0", commit="8a4a6684b6479d1a8c16c21c215fd7aea1b1aab0")
+	version("1.10.0", commit="f954b96993089370ba1e87369013cd440cfd96ab")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-mnem", type=("build", "run"))

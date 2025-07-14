@@ -13,11 +13,10 @@ class RPsmatch(RPackage):
 	"""
 	
 	homepage = "https://github.com/RforMassSpectrometry/PSM"
-	bioc = "PSMatch" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PSMatch_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PSMatch/PSMatch_1.6.0.tar.gz"]
+	bioc = "PSMatch"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="d2776c4c3fa21073b8f444d8f581fcfadc1ef3832ea74bf948478500e2fa2350")
+	version("1.12.0", commit="18c18133b9d3223898cb645a86efdc67562c24af")
+	version("1.6.0", commit="f3d59df4c1b2b26c0d92792d4fffa22650b86ebc")
 
 	depends_on("r-s4vectors", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

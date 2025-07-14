@@ -13,11 +13,10 @@ class RHpip(RPackage):
 	"""
 	
 	homepage = "https://github.com/mrbakhsh/HPiP"
-	bioc = "HPiP" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HPiP_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HPiP/HPiP_1.8.0.tar.gz"]
+	bioc = "HPiP"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="8ea9dc4eb955e7de42b6bec2d36b95fa63dbd3c41369eee98bcaf10fbf975677")
+	version("1.14.0", commit="e2435b77fcf3b01ba08ede8e3c374c20350696ba")
+	version("1.8.0", commit="677208a56902bf6502e45d524c8814f06eb64468")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-dplyr@1.0.6:", type=("build", "run"))

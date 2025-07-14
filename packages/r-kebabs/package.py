@@ -13,11 +13,10 @@ class RKebabs(RPackage):
 	"""
 	
 	homepage = "http://www.bioinf.jku.at/software/kebabs/"
-	bioc = "kebabs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/kebabs_1.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/kebabs/kebabs_1.36.0.tar.gz"]
+	bioc = "kebabs"
 
-	version("1.42.0", tag="RELEASE_3_21")
-	version("1.36.0", sha256="a39c12d8400d668497ef1f2ec4a7bea66542b0a091d4b3b4dce8370c48a6919e")
+	version("1.42.0", commit="b65d0fb0597ae1e5795506bc5fdf5c5b457d2f0b")
+	version("1.36.0", commit="79c8b1b1e8940aaead24c5711ad9d2da34167f56")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))

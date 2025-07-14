@@ -13,11 +13,10 @@ class RIseehub(RPackage):
 	"""
 	
 	homepage = "https://github.com/iSEE/iSEEhub"
-	bioc = "iSEEhub" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/iSEEhub_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/iSEEhub/iSEEhub_1.4.0.tar.gz"]
+	bioc = "iSEEhub"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="fcdfb6869261ce9571414904286a4b46f4a0be6df3770c75d7a22dd9d84e0899")
+	version("1.10.0", commit="ab10e39692cc0e74c3ad32f1fb54d17d1c04fe2f")
+	version("1.4.0", commit="a3ff71ccc3b1a783134d16697c3001effca24ab1")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))

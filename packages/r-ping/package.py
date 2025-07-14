@@ -12,11 +12,10 @@ class RPing(RPackage):
 	Probabilistic inference of ChIP-Seq using an empirical Bayes mixture model approach.
 	"""
 	
-	bioc = "PING" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/PING_2.46.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/PING/PING_2.46.0.tar.gz"]
+	bioc = "PING"
 
-	version("2.52.0", tag="RELEASE_3_21")
-	version("2.46.0", sha256="83cba3a927998ace0fbd016d7a4a9bdc12d745bc2c8be3f983774c46af64bbc4")
+	version("2.52.0", commit="04103582e3591cfb3b2c684b211b90cd09623ae4")
+	version("2.46.0", commit="49706e2598a1302821781f71c9386742510e02ea")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-pics", type=("build", "run"))

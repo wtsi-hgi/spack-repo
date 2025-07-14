@@ -13,11 +13,10 @@ class RGaschyhs(RPackage):
 	"""
 	
 	homepage = "http://genome-www.stanford.edu/yeast_stress/data/rawdata/complete_dataset.txt"
-	bioc = "gaschYHS" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/gaschYHS_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/gaschYHS/gaschYHS_1.40.0.tar.gz"]
+	bioc = "gaschYHS"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="755e3f955f2f7352d373410a9b52b8d8875471bfd4412cafb98d6ae689a8af21")
+	version("1.46.0", commit="940087669a0f6b60dde17ebeb133c034135fb971")
+	version("1.40.0", commit="3d9da0e0e594fdcd60f87ae86e524b50f4f86466")
 
 	depends_on("r@2.14:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))

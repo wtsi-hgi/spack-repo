@@ -12,11 +12,10 @@ class RTofsimsdata(RPackage):
 	This packages contains data to be used with the 'tofsims' package.
 	"""
 	
-	bioc = "tofsimsData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/tofsimsData_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/tofsimsData/tofsimsData_1.30.0.tar.gz"]
+	bioc = "tofsimsData"
 
-	version("1.36.0", tag="RELEASE_3_21")
-	version("1.30.0", sha256="8dfe97fc644d125882393ad9722a9569d88435d457ead0e11daf06b6f214d6a1")
+	version("1.36.0", commit="6433badf6aba1319a2ae0c67399310ec0af2e271")
+	version("1.30.0", commit="cb3768dc1177ffcb5345642acd30437b84eb6721")
 
 	depends_on("r@3.2:", type=("build", "run"))
 

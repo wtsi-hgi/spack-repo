@@ -13,11 +13,10 @@ class RAucell(RPackage):
 	"""
 	
 	homepage = "http://scenic.aertslab.org"
-	bioc = "AUCell" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AUCell_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AUCell/AUCell_1.24.0.tar.gz"]
+	bioc = "AUCell"
 
-	version("1.30.1", tag="RELEASE_3_21")
-	version("1.24.0", sha256="202ecaf0f3c1ab6ce11bb73ccb69e85f1dbd4126f6a64d0fd3bc9e88f06231b4")
+	version("1.30.1", commit="3094f3be3851730528560acae29d9d70297ca5b3")
+	version("1.24.0", commit="8c22389d634c31bb2ee797ef572de80efbd3a0d3")
 
 	depends_on("r-delayedarray", type=("build", "run"))
 	depends_on("r-delayedmatrixstats", type=("build", "run"))

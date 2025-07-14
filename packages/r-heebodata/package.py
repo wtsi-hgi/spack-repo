@@ -13,10 +13,9 @@ class RHeebodata(RPackage):
 	"""
 	
 	homepage = "http://alizadehlab.stanford.edu/"
-	bioc = "HEEBOdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HEEBOdata_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HEEBOdata/HEEBOdata_1.40.0.tar.gz"]
+	bioc = "HEEBOdata"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="b080c3ff5a90428dd8c6a11a6f605acca315c44075bef09bc721852b46cd32f6")
+	version("1.46.0", commit="66e21551cab1eed7e28c9a3441d8c14ad5fd4a11")
+	version("1.40.0", commit="e636e71d8b2c306e97a21a0ded1f39da1f813040")
 
 

@@ -13,11 +13,10 @@ class RHibag(RPackage):
 	"""
 	
 	homepage = "https://github.com/zhengxwen/HIBAG"
-	bioc = "HIBAG" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/HIBAG_1.38.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/HIBAG/HIBAG_1.38.2.tar.gz"]
+	bioc = "HIBAG"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.2", sha256="acefd5ad4d9ba6f1e2c1ed369331149e98e9240cfd42d810e263d0112946bd24")
+	version("1.44.0", commit="73c8efa23abfe9082d3ee163d6fc1259a6b70c92")
+	version("1.38.2", commit="a1b52dd203ec52b59b1973507e602591d15d018d")
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-rcppparallel@5:", type=("build", "run"))

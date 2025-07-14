@@ -12,11 +12,10 @@ class RTscan(RPackage):
 	Provides methods to perform trajectory analysis based on a minimum spanning tree constructed from cluster centroids. Computes pseudotemporal cell orderings by mapping cells in each cluster (or new cells) to the closest edge in the tree. Uses linear modelling to identify differentially expressed genes along each path through the tree. Several plotting and interactive visualization functions are also implemented.
 	"""
 	
-	bioc = "TSCAN" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TSCAN_1.40.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TSCAN/TSCAN_1.40.1.tar.gz"]
+	bioc = "TSCAN"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.1", sha256="9ab3418fbc3b0eb4e285d027595b90c2532863588a31a66108525a5f30c4ee35")
+	version("1.46.0", commit="8ccc82fda282e0a3e2c86728d46115c1aa929a65")
+	version("1.40.1", commit="ba0fff8703a7a0a7d5093efc336af5f0d96c6233")
 
 	depends_on("r-singlecellexperiment", type=("build", "run"))
 	depends_on("r-trajectoryutils", type=("build", "run"))

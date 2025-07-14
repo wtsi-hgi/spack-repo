@@ -22,10 +22,9 @@ class RQvalue(RPackage):
 	astrophysics, and data mining."""
 
 	bioc = "qvalue"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qvalue_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qvalue/qvalue_2.34.0.tar.gz"]
-	version("2.40.0", tag="RELEASE_3_21")
+	version("2.40.0", commit="09da9f467ca4d8bddd2dbe82ba12401fcbbb2a65")
 	version("2.8.0", commit="c7bf3315619d42d800f57a36670c25a7495ded72")
-	version("2.34.0", sha256="d16fd855856b479bd8a0812bbfc2e2d918929c28fe83411a41ca059d2d9c6583")
+	version("2.34.0", commit="92e1f558e765c9de7992c5180bcb8605efdb481b")
 	version("2.32.0", commit="a6272dc68f9d91de63e04fae28476e4ec016ee89")
 	version("2.30.0", commit="e8a4c22d035f860ee730aa7c5a4dbc7460afcedc")
 	version("2.28.0", commit="aaa62d5ab5a960e0a626928abaf5b3a5c5f73374")

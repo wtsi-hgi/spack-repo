@@ -13,11 +13,10 @@ class RClumsid(RPackage):
 	"""
 	
 	homepage = "https://github.com/tdepke/CluMSID"
-	bioc = "CluMSID" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CluMSID_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CluMSID/CluMSID_1.18.0.tar.gz"]
+	bioc = "CluMSID"
 
-	version("1.24.0", tag="RELEASE_3_21")
-	version("1.18.0", sha256="fee61fb688e5e4dad9a42d75a81d14e6b1ee0757107c13162aef71be191bc547")
+	version("1.24.0", commit="4ebdb548a408fdabd88de20fbc8d5594d20d3ca7")
+	version("1.18.0", commit="ce1d21e9582ad94315bd43f38b8ce8a66e8eec0c")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-mzr", type=("build", "run"))

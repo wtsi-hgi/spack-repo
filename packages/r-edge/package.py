@@ -13,11 +13,10 @@ class REdge(RPackage):
 	"""
 	
 	homepage = "https://github.com/jdstorey/edge"
-	bioc = "edge" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/edge_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/edge/edge_2.34.0.tar.gz"]
+	bioc = "edge"
 
-	version("2.40.0", tag="RELEASE_3_21")
-	version("2.34.0", sha256="ab6384378f978d0a52f7e26361f57bc30c465f7a2c6190654d4d799d645e8eea")
+	version("2.40.0", commit="8281a3b167a754869bc4027d71bb86400b2722e7")
+	version("2.34.0", commit="07c69be24cff5b3da15bf194fd4e3544b26df2d4")
 
 	depends_on("r@3.1:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

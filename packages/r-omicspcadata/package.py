@@ -12,11 +12,10 @@ class ROmicspcadata(RPackage):
 	Supporting data for package OMICsPCA
 	"""
 	
-	bioc = "OMICsPCAdata" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/OMICsPCAdata_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/OMICsPCAdata/OMICsPCAdata_1.20.0.tar.gz"]
+	bioc = "OMICsPCAdata"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="5b875a36accbb187164c3418f32dffba449e848d0fa0c9bdb19e5ce971f76dc9")
+	version("1.26.0", commit="d235e9c380d108deffde61af43b2613bbd3cf0ac")
+	version("1.20.0", commit="8b2188edf2bcc1d78845e561397d7e625315eb29")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-multiassayexperiment", type=("build", "run"))

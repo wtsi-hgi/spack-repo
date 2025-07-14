@@ -12,11 +12,10 @@ class RScruff(RPackage):
 	A pipeline which processes single cell RNA-seq (scRNA-seq) reads from CEL-seq and CEL-seq2 protocols. Demultiplex scRNA-seq FASTQ files, align reads to reference genome using Rsubread, and generate UMI filtered count matrix. Also provide visualizations of read alignments and pre- and post-alignment QC metrics.
 	"""
 	
-	bioc = "scruff" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scruff_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scruff/scruff_1.20.0.tar.gz"]
+	bioc = "scruff"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="c610f6759a02b0cf21bb8ab5d016aaaa9081a02b058f7bfed13a8b7687bbc47e")
+	version("1.26.0", commit="1eb7a0fceee40508a93f32e0ea03ec8fe302fbd9")
+	version("1.20.0", commit="9c5a5729296796989a0dab58b643af38038241cb")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))

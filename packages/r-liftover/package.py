@@ -13,11 +13,10 @@ class RLiftover(RPackage):
 	"""
 	
 	homepage = "https://www.bioconductor.org/help/workflows/liftOver/"
-	bioc = "liftOver" 
-	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/liftOver_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/liftOver/liftOver_1.26.0.tar.gz"]
+	bioc = "liftOver"
 
-	version("1.32.0", tag="RELEASE_3_21")
-	version("1.26.0", sha256="c62150ea41127dbbe93df2b6ab0da9aad388198563ae523a1b048dcaeab3d4dd")
+	version("1.32.0", commit="70337fff5ba1ae1df05f1e7221bba64bf00cf539")
+	version("1.26.0", commit="9f987c73a66c70c81185c9db1d12dd7dd54d1aed")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-gwascat", type=("build", "run"))

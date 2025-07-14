@@ -12,10 +12,9 @@ class RH5vcdata(RPackage):
 	This package contains the data used in the vignettes and examples of the 'h5vc' package
 	"""
 	
-	bioc = "h5vcData" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/h5vcData_2.22.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/h5vcData/h5vcData_2.22.0.tar.gz"]
+	bioc = "h5vcData"
 
-	version("2.28.0", tag="RELEASE_3_21")
-	version("2.22.0", sha256="ff015754b692f4057063e947d01e76a1bfa6c9715f71b4123f3c2a6f1eced45d")
+	version("2.28.0", commit="6b82461b6bb939ed833c20cde66be8b38416f6f5")
+	version("2.22.0", commit="33c458b2a7f2687afbf050b8f211905f70cadf4e")
 
 

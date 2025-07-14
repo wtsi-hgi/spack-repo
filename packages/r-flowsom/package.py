@@ -13,11 +13,10 @@ class RFlowsom(RPackage):
 	"""
 	
 	homepage = "http://www.r-project.org"
-	bioc = "FlowSOM" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/FlowSOM_2.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/FlowSOM/FlowSOM_2.10.0.tar.gz"]
+	bioc = "FlowSOM"
 
-	version("2.16.0", tag="RELEASE_3_21")
-	version("2.10.0", sha256="74d4f46e6b3928affca83628d030f9b5cd8624993b7d9723be5dbb49d6f81d9c")
+	version("2.16.0", commit="4bdaa3ded9834e3ea56aed37a733d2bc21f1406e")
+	version("2.10.0", commit="36b3305e489f3de773df7a73e618384dddcccd75")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))

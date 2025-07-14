@@ -13,11 +13,10 @@ class RRmspc(RPackage):
 	"""
 	
 	homepage = "https://genometric.github.io/MSPC/"
-	bioc = "rmspc" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rmspc_1.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rmspc/rmspc_1.8.0.tar.gz"]
+	bioc = "rmspc"
 
-	version("1.14.0", tag="RELEASE_3_21")
-	version("1.8.0", sha256="f8bd30cefcfbd997f962e6f35161386212c6ae156d0043fecdbbd83c867f713a")
+	version("1.14.0", commit="7ecf48e2a05843f8b3ec8a23d7fe5268f32dd0e7")
+	version("1.8.0", commit="4214dd6f31c70055887834222692f481dd1fd5dc")
 
 	depends_on("r-processx", type=("build", "run"))
 	depends_on("r-biocmanager", type=("build", "run"))

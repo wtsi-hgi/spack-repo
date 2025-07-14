@@ -13,11 +13,10 @@ class RRtrmui(RPackage):
 	"""
 	
 	homepage = "https://github.com/ddiez/rTRMui"
-	bioc = "rTRMui" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rTRMui_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rTRMui/rTRMui_1.40.0.tar.gz"]
+	bioc = "rTRMui"
 
-	version("1.46.0", tag="RELEASE_3_21")
-	version("1.40.0", sha256="b5df627bc08009197727a4d5e176636a001a9536436bf8be68199a852b3fe2ce")
+	version("1.46.0", commit="718b5bc955440e91b7c7d635a67bef576da13377")
+	version("1.40.0", commit="ef7cd27504e1f6c6c183a6762ea08e44d63f0eed")
 
 	depends_on("r-shiny@0.9:", type=("build", "run"))
 	depends_on("r-rtrm", type=("build", "run"))

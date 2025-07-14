@@ -13,10 +13,9 @@ class RChopsticks(RPackage):
 	"""
 	
 	homepage = "http://outmodedbonsai.sourceforge.net/"
-	bioc = "chopsticks" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/chopsticks_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/chopsticks/chopsticks_1.68.0.tar.gz"]
+	bioc = "chopsticks"
 
-	version("1.74.0", tag="RELEASE_3_21")
-	version("1.68.0", sha256="5fe024c809302807edf170ad1108e25519b240415c25a7a2efb8584e91e0880b")
+	version("1.74.0", commit="df8f088dad25f8cdb75cd815dbc6badd490535d0")
+	version("1.68.0", commit="dfe5d1274f7c70dfb79e5eb48e99aa74d009487c")
 
 	depends_on("r-survival", type=("build", "run"))

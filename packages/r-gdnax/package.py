@@ -13,11 +13,10 @@ class RGdnax(RPackage):
 	"""
 	
 	homepage = "https://github.com/functionalgenomics/gDNAx"
-	bioc = "gDNAx" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gDNAx_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gDNAx/gDNAx_1.0.2.tar.gz"]
+	bioc = "gDNAx"
 
-	version("1.6.1", tag="RELEASE_3_21")
-	version("1.0.2", sha256="ffa34273cb6e1896f898474d15b51a86be4d886adf6027b0f1b6f48faf009ab0")
+	version("1.6.1", commit="a0f4a5f064d9bf0d318a4a584530727bf8f1e394")
+	version("1.0.2", commit="0fb296997c1f49537fbca39ec7f690ebb890dda5")
 	version("1.0.1", md5="4f51a23263fff85c936d0319a2c0e1de")
 
 	depends_on("r@4.3:", type=("build", "run"))

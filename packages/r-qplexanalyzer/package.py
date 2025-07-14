@@ -12,11 +12,10 @@ class RQplexanalyzer(RPackage):
 	Tools for TMT based quantitative proteomics data analysis.
 	"""
 	
-	bioc = "qPLEXanalyzer" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/qPLEXanalyzer_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/qPLEXanalyzer/qPLEXanalyzer_1.20.0.tar.gz"]
+	bioc = "qPLEXanalyzer"
 
-	version("1.26.0", tag="RELEASE_3_21")
-	version("1.20.0", sha256="86e4e9d78e3ac8fc8a9d69e827b3b75b7837a4d83d52eb25c636ee45ad69c4c7")
+	version("1.26.0", commit="a88b504099c634739a598cc6feb3e1e5ab10f916")
+	version("1.20.0", commit="18ccb64100b41d44d75c7a73ab4545136bef8f91")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -13,11 +13,10 @@ class RPhenomis(RPackage):
 	"""
 	
 	homepage = "https://doi.org/10.1038/s41597-021-01095-3"
-	bioc = "phenomis" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/phenomis_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/phenomis/phenomis_1.4.0.tar.gz"]
+	bioc = "phenomis"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="2f002955d854868a2fd87bcea8902662a4f7089f07d83b490403d00034e1d9fd")
+	version("1.10.0", commit="37082f9bda3c2d41ea4b541e738423466b51e0cd")
+	version("1.4.0", commit="94d5929b551494b0cfcc6698066534d42825c574")
 
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))

@@ -16,12 +16,11 @@ class RGlimma(RPackage):
 	information."""
 
 	bioc = "Glimma"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Glimma_2.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Glimma/Glimma_2.12.0.tar.gz"]
-	version("2.18.0", tag="RELEASE_3_21")
+	version("2.18.0", commit="aa1dad97c09714d7ae502803afd3eb5ab80850c5")
 	version("2.8.0", commit="09cec82e9af9c6775192570f8c28f050c0df08ac")
 	version("2.6.0", commit="23220d9b90476059aab035b5de11b7ce04b331c8")
 	version("2.4.0", commit="caa270e44ec6994035d2e915c0f68a14ccbb58db")
-	version("2.12.0", sha256="315ec5ea631efedceeb7181dce33e92531ffc4e2df27d20ebe032d296509705e")
+	version("2.12.0", commit="9ca869e84061bafcdbaeb331453b632e4d88d6db")
 	version("2.10.0", commit="ea1257614c5fca0cedf5805d5b9a21e8b7d15d18")
 	version("2.0.0", commit="40bebaa79e8c87c5686cff7285def4461c11bca9")
 	version("1.8.2", commit="7696aca2c023f74d244b6c908a6e7ba52bfcb34b")

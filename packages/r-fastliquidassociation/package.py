@@ -12,11 +12,10 @@ class RFastliquidassociation(RPackage):
 	This package extends the function of the LiquidAssociation package for genome-wide application. It integrates a screening method into the LA analysis to reduce the number of triplets to be examined for a high LA value and provides code for use in subsequent significance analyses.
 	"""
 	
-	bioc = "fastLiquidAssociation" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fastLiquidAssociation_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fastLiquidAssociation/fastLiquidAssociation_1.38.0.tar.gz"]
+	bioc = "fastLiquidAssociation"
 
-	version("1.44.0", tag="RELEASE_3_21")
-	version("1.38.0", sha256="baf4c40980f7bc791365eec43d7312b7db065a879f61ee271b32f02635d82ed0")
+	version("1.44.0", commit="1a4a255d9f154eaa51dbf08a7f975f7bfbf72a70")
+	version("1.38.0", commit="664f7f2c296c2f4a9ea7fec532a3a97cd272dced")
 
 	depends_on("r-liquidassociation", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))

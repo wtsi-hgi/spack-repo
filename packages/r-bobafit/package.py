@@ -13,11 +13,10 @@ class RBobafit(RPackage):
 	"""
 	
 	homepage = "https://github.com/andrea-poletti-unibo/BOBaFIT"
-	bioc = "BOBaFIT" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BOBaFIT_1.6.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BOBaFIT/BOBaFIT_1.6.0.tar.gz"]
+	bioc = "BOBaFIT"
 
-	version("1.12.0", tag="RELEASE_3_21")
-	version("1.6.0", sha256="111aff16b4d9615fca6db51253ebb997ec54c98e5edec2ab5a8bbe309c033ac1")
+	version("1.12.0", commit="4245ca046e5f5f662b06b05c51873a7773d27e1d")
+	version("1.6.0", commit="2bac67f37e4ea8f30c43cb5447c950a5e21adb5e")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))

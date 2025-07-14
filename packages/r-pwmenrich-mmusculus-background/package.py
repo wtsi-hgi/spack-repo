@@ -12,11 +12,10 @@ class RPwmenrichMmusculusBackground(RPackage):
 	PWMEnrich pre-compiled background objects for M.musculus (mouse) and MotifDb M. musculus motifs.
 	"""
 	
-	bioc = "PWMEnrich.Mmusculus.background" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/PWMEnrich.Mmusculus.background_4.36.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/PWMEnrich.Mmusculus.background/PWMEnrich.Mmusculus.background_4.36.0.tar.gz"]
+	bioc = "PWMEnrich.Mmusculus.background"
 
-	version("4.42.0", tag="RELEASE_3_21")
-	version("4.36.0", sha256="bc617782ba277a50590acab3840a6e958a5131d6c2b9dc4db98fea193d8d95bf")
+	version("4.42.0", commit="e4310d9cd31b9b5ed4e55f1a3bd741dae8f7140b")
+	version("4.36.0", commit="793d412ff52d7c087a44e2d8d366ed81e5a82568")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-pwmenrich", type=("build", "run"))

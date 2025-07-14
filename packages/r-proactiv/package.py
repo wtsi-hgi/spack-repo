@@ -13,11 +13,10 @@ class RProactiv(RPackage):
 	"""
 	
 	homepage = "https://github.com/GoekeLab/proActiv"
-	bioc = "proActiv" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/proActiv_1.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/proActiv/proActiv_1.12.0.tar.gz"]
+	bioc = "proActiv"
 
-	version("1.18.0", tag="RELEASE_3_21")
-	version("1.12.0", sha256="12727aa216c2884a461a63222e9503bec5930536e0cddc836c3966f6604a9501")
+	version("1.18.0", commit="6e9d41c9f8a9cff765494756c255fb5a09f1cf1f")
+	version("1.12.0", commit="a55e732ed8d6ffca83700d68eb80dff6af87b8bb")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))

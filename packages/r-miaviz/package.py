@@ -12,11 +12,10 @@ class RMiaviz(RPackage):
 	The miaViz package implements functions to visualize TreeSummarizedExperiment objects especially in the context of microbiome analysis. Part of the mia family of R/Bioconductor packages.
 	"""
 	
-	bioc = "miaViz" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/miaViz_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/miaViz/miaViz_1.10.0.tar.gz"]
+	bioc = "miaViz"
 
-	version("1.16.0", tag="RELEASE_3_21")
-	version("1.10.0", sha256="574f8ca9a3035231188d8944beebe6dfd1a79fffb0827938038f8e914d87d1c4")
+	version("1.16.0", commit="b1ea3a893e4103141955b1a1c069329398a053ea")
+	version("1.10.0", commit="09da1eb2de9c0cafdcb248ec43fa5c99fd341d9f")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))

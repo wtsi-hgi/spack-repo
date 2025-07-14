@@ -14,9 +14,8 @@ class RXde(RPackage):
 	expression."""
 
 	bioc = "XDE"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/XDE_2.48.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/XDE/XDE_2.48.0.tar.gz"]
-	version("2.54.0", tag="RELEASE_3_21")
-	version("2.48.0", sha256="89badb65f5a0549992ac2dca2ad20b5c98bac0b958035d712b9d39d5b25fdd76")
+	version("2.54.0", commit="2e9ed735efd7cab64edaf29d70fdd0189af5bc11")
+	version("2.48.0", commit="5973e516e93f80ee3a19e17ee08221e36153a98f")
 	version("2.46.0", commit="f94324fba1ad6dca129d86e61abc219f766321e8")
 	version("2.44.0", commit="a6ddedb91afe381f223e52ae49c6704f8f046916")
 	version("2.42.0", commit="298e83eff7fc5f72a2bb76b559c5115c6cd3ee84")

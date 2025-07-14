@@ -12,11 +12,10 @@ class RAlphabeta(RPackage):
 	AlphaBeta is a computational method for estimating epimutation rates and spectra from high-throughput DNA methylation data in plants. The method has been specifically designed to: 1. analyze 'germline' epimutations in the context of multi-generational mutation accumulation lines (MA-lines). 2. analyze 'somatic' epimutations in the context of plant development and aging.
 	"""
 	
-	bioc = "AlphaBeta" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/AlphaBeta_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/AlphaBeta/AlphaBeta_1.16.0.tar.gz"]
+	bioc = "AlphaBeta"
 
-	version("1.22.0", tag="RELEASE_3_21")
-	version("1.16.0", sha256="783bbcf382dd385a41825ff9488cfe85b8cb1323bde16de69e9202ae7d454a7e")
+	version("1.22.0", commit="af38811b93b19d0956ec40adc7ca544f61cd3e12")
+	version("1.16.0", commit="f045eef05b59e50e3b12df2501510285ee3c2806")
 
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-dplyr@0.7:", type=("build", "run"))

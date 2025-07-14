@@ -12,11 +12,10 @@ class RGwascat(RPackage):
 	Represent and model data in the EMBL-EBI GWAS catalog.
 	"""
 	
-	bioc = "gwascat" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gwascat_2.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gwascat/gwascat_2.34.0.tar.gz"]
+	bioc = "gwascat"
 
-	version("2.40.0", tag="RELEASE_3_21")
-	version("2.34.0", sha256="fe291f03cee6f376939a320b9594e98b85e915a2986a9e74c121cf77c3461609")
+	version("2.40.0", commit="65b07e3b0d6af6d27f0e2b9a59aefcd989f8ebbf")
+	version("2.34.0", commit="9252d332d4d7c62d9fe923c7164eb0d1fa69723b")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-s4vectors@0.9.25:", type=("build", "run"))

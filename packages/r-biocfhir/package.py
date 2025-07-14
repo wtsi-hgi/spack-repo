@@ -13,11 +13,10 @@ class RBiocfhir(RPackage):
 	"""
 	
 	homepage = "https://github.com/vjcitn/BiocFHIR"
-	bioc = "BiocFHIR" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocFHIR_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocFHIR/BiocFHIR_1.4.0.tar.gz"]
+	bioc = "BiocFHIR"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="7c181c170fc085c884ec4b1bc4a53cd402e18c2a99691a2ce5feb7799827d7eb")
+	version("1.10.0", commit="6ea9bf3625e1ed8909fe9053a6a8ad9c81d0ec95")
+	version("1.4.0", commit="f169868a75ba4d8592a3be3b6b68161135a4e793")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-dt", type=("build", "run"))

@@ -13,11 +13,10 @@ class RSplicinggraphs(RPackage):
 	"""
 	
 	homepage = "https://bioconductor.org/packages/SplicingGraphs"
-	bioc = "SplicingGraphs" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SplicingGraphs_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SplicingGraphs/SplicingGraphs_1.42.0.tar.gz"]
+	bioc = "SplicingGraphs"
 
-	version("1.48.0", tag="RELEASE_3_21")
-	version("1.42.0", sha256="645c7406148182200352240d554df82b1fdf24a4a69a092a26b8357589695ed9")
+	version("1.48.0", commit="49da9323d872aa3b24971afa8ce7a51c8cc48582")
+	version("1.42.0", commit="ed0e2f68d9ba026e75b524550277a181f4b4b141")
 
 	depends_on("r-genomicfeatures", type=("build", "run"))
 	depends_on("r-genomicalignments", type=("build", "run"))

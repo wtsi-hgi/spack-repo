@@ -13,11 +13,10 @@ class RHopach(RPackage):
 	"""
 	
 	homepage = "http://www.stat.berkeley.edu/~laan/"
-	bioc = "hopach" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/hopach_2.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/hopach/hopach_2.62.0.tar.gz"]
+	bioc = "hopach"
 
-	version("2.68.0", tag="RELEASE_3_21")
-	version("2.62.0", sha256="9a84cf8bdb414ec7a188ee4c4bb4ceed9a47ef6d0534ecabd2889e72cec419ec")
+	version("2.68.0", commit="cff618aa7a4fd79ddc7ecee571ac7819882b8b0c")
+	version("2.62.0", commit="f0c6ddc9bf7fe20a412cb9e330a8aadf0fb9523b")
 
 	depends_on("r@2.11:", type=("build", "run"))
 	depends_on("r-cluster", type=("build", "run"))

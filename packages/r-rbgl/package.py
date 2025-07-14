@@ -13,9 +13,8 @@ class RRbgl(RPackage):
 	contained in the BOOST library."""
 
 	bioc = "RBGL"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RBGL_1.78.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RBGL/RBGL_1.78.0.tar.gz"]
-	version("1.84.0", tag="RELEASE_3_21")
-	version("1.78.0", sha256="241188ff70c1a1eb447ef3bd1f9d9d57a84537c2cd1d5f782923366c68a0b043")
+	version("1.84.0", commit="ea308c51840c54763fd715e09e201fd63129457f")
+	version("1.78.0", commit="2e7e330cb69b6eb1796ad830bac38661105a4f5f")
 	version("1.76.0", commit="18b7cc5f002435aa83e8b693e7bf269fc0b096a5")
 	version("1.74.0", commit="e698db897b719992a8c0747138735c0e7d9dfb21")
 	version("1.72.0", commit="a86f3102f2795e1ffb530bb061247e3a42ca22f7")

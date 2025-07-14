@@ -12,11 +12,10 @@ class RRgntx(RPackage):
 	RgnTX allows the integration of transcriptome annotations so as to model the complex alternative splicing patterns. It supports the testing of transcriptome elements without clear isoform association, which is often the real scenario due to technical limitations. It involves functions that do permutaion test for evaluating association between features and transcriptome regions.
 	"""
 	
-	bioc = "RgnTX" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RgnTX_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RgnTX/RgnTX_1.4.0.tar.gz"]
+	bioc = "RgnTX"
 
-	version("1.10.0", tag="RELEASE_3_21")
-	version("1.4.0", sha256="2dc47372b3ad28a48fcdd38c206a153f1bbe95d282008d9c7c183de79a900176")
+	version("1.10.0", commit="682feeb20d2c39e006ecccbd6f21093c77f6f5c4")
+	version("1.4.0", commit="0a29f5fc74efac8137fb1ec7ad48fee333541e25")
 
 	depends_on("r@4.2:", type=("build", "run"))
 	depends_on("r-genomeinfodb", type=("build", "run"))

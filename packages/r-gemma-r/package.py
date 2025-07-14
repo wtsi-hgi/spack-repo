@@ -13,11 +13,10 @@ class RGemmaR(RPackage):
 	"""
 	
 	homepage = "https://pavlidislab.github.io/gemma.R/"
-	bioc = "gemma.R" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/gemma.R_2.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/gemma.R/gemma.R_2.0.0.tar.gz"]
+	bioc = "gemma.R"
 
-	version("3.4.5", tag="RELEASE_3_21")
-	version("2.0.0", sha256="0524f520b5b6f63438b35157be3eb35b981d4c431e54081070d3cdfd57d095cd")
+	version("3.4.5", commit="c585b181ddc8555bd24c0e724bc7162c32fc3235")
+	version("2.0.0", commit="1f1901418d53e5866ea6a43a82d28c76900116c7")
 
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
