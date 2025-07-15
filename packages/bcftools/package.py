@@ -61,7 +61,7 @@ class Bcftools(AutotoolsPackage):
     depends_on("perl", when="@1.8:+perl-filters", type=("build", "run"))
     depends_on("zlib-api")
 
-    depends_on("htslib@1.22", when="@1.22")
+    depends_on("htslib@1.22.1", when="@1.22")
     depends_on("htslib@1.21", when="@1.21")
     depends_on("htslib@1.20", when="@1.20")
     depends_on("htslib@1.19", when="@1.19")
