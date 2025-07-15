@@ -125,3 +125,4 @@ class PyExcellxgene(PythonPackage):
 	version("2.9.6", sha256="d3e8c29ac85e32d2c7fcafad3bbebc81fa1732d5541638b6d4040fb0dbb03a9d")
 
 	depends_on("py-setuptools", type=("build"))
+	depends_on("py-numpy", type=("build", "run"))
