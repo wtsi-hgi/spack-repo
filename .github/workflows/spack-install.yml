@@ -10,6 +10,7 @@ on:
 jobs:
   test-packages:
     runs-on: self-hosted
+    timeout-minutes: 1440
     
     steps:
       - name: Checkout repository
