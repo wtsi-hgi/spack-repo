@@ -7,28 +7,28 @@ from spack.package import *
 
 
 class RTadcompare(RPackage):
-	"""TADCompare: Identification and characterization of differential TADs
+    """TADCompare: Identification and characterization of differential TADs
 
-	TADCompare is an R package designed to identify and characterize differential Topologically Associated Domains (TADs) between multiple Hi-C contact matrices. It contains functions for finding differential TADs between two datasets, finding differential TADs over time and identifying consensus TADs across multiple matrices. It takes all of the main types of HiC input and returns simple, comprehensive, easy to analyze results.
-	"""
-	
-	homepage = "https://github.com/dozmorovlab/TADCompare"
-	bioc = "TADCompare"
+    TADCompare is an R package designed to identify and characterize differential Topologically Associated Domains (TADs) between multiple Hi-C contact matrices. It contains functions for finding differential TADs between two datasets, finding differential TADs over time and identifying consensus TADs across multiple matrices. It takes all of the main types of HiC input and returns simple, comprehensive, easy to analyze results.
+    """
 
-	version("1.18.0", commit="5868ee6d173671e138c06ee00c57e5d72af9c388")
-	version("1.12.1", commit="81d1913e8ca34aa0b71ee90c0ffcd780a5251941")
-	version("1.12.0", md5="92966a38a0c202cfe7dbd09bb83b23b1")
+    homepage = "https://github.com/dozmorovlab/TADCompare"
+    bioc = "TADCompare"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-primme", type=("build", "run"))
-	depends_on("r-cluster", type=("build", "run"))
-	depends_on("r-matrix", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-hiccompare", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-tidyr", type=("build", "run"))
-	depends_on("r-ggpubr", type=("build", "run"))
-	depends_on("r-rcolorbrewer", type=("build", "run"))
-	depends_on("r-reshape2", type=("build", "run"))
-	depends_on("r-cowplot", type=("build", "run"))
+    version("1.18.0", commit="5868ee6d173671e138c06ee00c57e5d72af9c388")
+    version("1.12.1", commit="81d1913e8ca34aa0b71ee90c0ffcd780a5251941")
+    version("1.12.0", md5="92966a38a0c202cfe7dbd09bb83b23b1")
+
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-primme", type=("build", "run"))
+    depends_on("r-cluster", type=("build", "run"))
+    depends_on("r-matrix", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))
+    depends_on("r-hiccompare", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-tidyr", type=("build", "run"))
+    depends_on("r-ggpubr", type=("build", "run"))
+    depends_on("r-rcolorbrewer", type=("build", "run"))
+    depends_on("r-reshape2", type=("build", "run"))
+    depends_on("r-cowplot", type=("build", "run"))

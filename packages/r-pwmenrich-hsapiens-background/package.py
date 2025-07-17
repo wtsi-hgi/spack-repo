@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RPwmenrichHsapiensBackground(RPackage):
-	"""H. sapiens background for PWMEnrich
+    """H. sapiens background for PWMEnrich
 
-	PWMEnrich pre-compiled background objects for H. sapiens (human) and MotifDb H. sapiens motifs.
-	"""
-	
-	bioc = "PWMEnrich.Hsapiens.background"
+    PWMEnrich pre-compiled background objects for H. sapiens (human) and MotifDb H. sapiens motifs.
+    """
 
-	version("4.42.0", commit="b8d9eb1b947d68f904d79c0feb1c39172852dfaa")
-	version("4.36.0", commit="6cee4b80de345f36b384de47983dd6d0971a29c0")
+    bioc = "PWMEnrich.Hsapiens.background"
 
-	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-pwmenrich", type=("build", "run"))
+    version("4.42.0", commit="b8d9eb1b947d68f904d79c0feb1c39172852dfaa")
+    version("4.36.0", commit="6cee4b80de345f36b384de47983dd6d0971a29c0")
 
+    depends_on("r@2.10:", type=("build", "run"))
+    depends_on("r-pwmenrich", type=("build", "run"))

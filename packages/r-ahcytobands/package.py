@@ -7,15 +7,14 @@ from spack.package import *
 
 
 class RAhcytobands(RPackage):
-	"""CytoBands for AnnotationHub
+    """CytoBands for AnnotationHub
 
-	Supplies AnnotationHub with CytoBand information from UCSC. There is a track for each major organism. Giemsa-stained bands are commonly used to decorate chromosomal overviews in visualizations of genomic data.
-	"""
-	
-	bioc = "AHCytoBands"
+    Supplies AnnotationHub with CytoBand information from UCSC. There is a track for each major organism. Giemsa-stained bands are commonly used to decorate chromosomal overviews in visualizations of genomic data.
+    """
 
-	version("0.99.1", commit="821428ca2c99127167ddb9c733f571a5f21a1bf6")
-	version("0.99.1", commit="821428ca2c99127167ddb9c733f571a5f21a1bf6")
+    bioc = "AHCytoBands"
 
-	depends_on("r@3.2.2:", type=("build", "run"))
+    version("0.99.1", commit="821428ca2c99127167ddb9c733f571a5f21a1bf6")
+    version("0.99.1", commit="821428ca2c99127167ddb9c733f571a5f21a1bf6")
 
+    depends_on("r@3.2.2:", type=("build", "run"))

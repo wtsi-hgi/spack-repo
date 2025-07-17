@@ -7,19 +7,19 @@ from spack.package import *
 
 
 class RRoastgsa(RPackage):
-	"""Rotation based gene set analysis
+    """Rotation based gene set analysis
 
-	This package implements a variety of functions useful for gene set analysis using rotations to approximate the null distribution. It contributes with the implementation of seven test statistic scores that can be used with different goals and interpretations. Several functions are available to complement the statistical results with graphical representations.
-	"""
-	
-	bioc = "roastgsa"
+    This package implements a variety of functions useful for gene set analysis using rotations to approximate the null distribution. It contributes with the implementation of seven test statistic scores that can be used with different goals and interpretations. Several functions are available to complement the statistical results with graphical representations.
+    """
 
-	version("1.6.0", commit="ee4fda3dd7eaa255db0ed0a3c6336c7a1ece989a")
-	version("1.0.0", commit="aa86dfc576a31a177ab99f1794e419776f1898dd")
+    bioc = "roastgsa"
 
-	depends_on("r@4.3:", type=("build", "run"))
-	depends_on("r-rcolorbrewer", type=("build", "run"))
-	depends_on("r-gplots", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-limma", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
+    version("1.6.0", commit="ee4fda3dd7eaa255db0ed0a3c6336c7a1ece989a")
+    version("1.0.0", commit="aa86dfc576a31a177ab99f1794e419776f1898dd")
+
+    depends_on("r@4.3:", type=("build", "run"))
+    depends_on("r-rcolorbrewer", type=("build", "run"))
+    depends_on("r-gplots", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-limma", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))

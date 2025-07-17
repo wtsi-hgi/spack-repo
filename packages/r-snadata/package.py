@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RSnadata(RPackage):
-	"""Social Networks Analysis Data Examples
+    """Social Networks Analysis Data Examples
 
-	Data from Wasserman & Faust (1999) "Social Network Analysis"
-	"""
-	
-	bioc = "SNAData"
+    Data from Wasserman & Faust (1999) "Social Network Analysis"
+    """
 
-	version("1.54.0", commit="42d9de1932440064b20a486a11390e8724c73cc8")
-	version("1.48.0", commit="20c46b8cb5535969cd902b1a624fca6f1c58fb80")
+    bioc = "SNAData"
 
-	depends_on("r@2.4:", type=("build", "run"))
-	depends_on("r-graph", type=("build", "run"))
+    version("1.54.0", commit="42d9de1932440064b20a486a11390e8724c73cc8")
+    version("1.48.0", commit="20c46b8cb5535969cd902b1a624fca6f1c58fb80")
 
+    depends_on("r@2.4:", type=("build", "run"))
+    depends_on("r-graph", type=("build", "run"))

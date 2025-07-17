@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class RGsar(RPackage):
-	"""Gene Set Analysis in R
+    """Gene Set Analysis in R
 
-	Gene set analysis using specific alternative hypotheses. Tests for differential expression, scale and net correlation structure.
-	"""
-	
-	bioc = "GSAR"
+    Gene set analysis using specific alternative hypotheses. Tests for differential expression, scale and net correlation structure.
+    """
 
-	version("1.42.0", commit="5d9c73406bdef611b045e5057776e951d12edc8d")
-	version("1.36.0", commit="56af0c29e43aeced604e8c6323a2555abb20a281")
+    bioc = "GSAR"
 
-	depends_on("r@3.0.1:", type=("build", "run"))
-	depends_on("r-igraph@0.7.1:", type=("build", "run"))
+    version("1.42.0", commit="5d9c73406bdef611b045e5057776e951d12edc8d")
+    version("1.36.0", commit="56af0c29e43aeced604e8c6323a2555abb20a281")
+
+    depends_on("r@3.0.1:", type=("build", "run"))
+    depends_on("r-igraph@0.7.1:", type=("build", "run"))

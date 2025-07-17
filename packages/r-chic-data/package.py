@@ -7,17 +7,16 @@ from spack.package import *
 
 
 class RChicData(RPackage):
-	"""ChIC package data
+    """ChIC package data
 
-	This package contains annotation and metagene profile data for the ChIC package.
-	"""
-	
-	bioc = "ChIC.data"
+    This package contains annotation and metagene profile data for the ChIC package.
+    """
 
-	version("1.22.0", commit="0cc523ec20c165a06313c9aace1628f51faea696")
+    bioc = "ChIC.data"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-genomeintervals", type=("build", "run"))
-	depends_on("r-randomforest", type=("build", "run"))
-	depends_on("r-caret@6.0.78:", type=("build", "run"))
+    version("1.22.0", commit="0cc523ec20c165a06313c9aace1628f51faea696")
 
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-genomeintervals", type=("build", "run"))
+    depends_on("r-randomforest", type=("build", "run"))
+    depends_on("r-caret@6.0.78:", type=("build", "run"))

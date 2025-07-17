@@ -7,27 +7,27 @@ from spack.package import *
 
 
 class RAnnotatr(RPackage):
-	"""Annotation of Genomic Regions to Genomic Annotations
+    """Annotation of Genomic Regions to Genomic Annotations
 
-	Given a set of genomic sites/regions (e.g. ChIP-seq peaks, CpGs, differentially methylated CpGs or regions, SNPs, etc.) it is often of interest to investigate the intersecting genomic annotations. Such annotations include those relating to gene models (promoters, 5'UTRs, exons, introns, and 3'UTRs), CpGs (CpG islands, CpG shores, CpG shelves), or regulatory sequences such as enhancers. The annotatr package provides an easy way to summarize and visualize the intersection of genomic sites/regions with genomic annotations.
-	"""
-	
-	bioc = "annotatr"
+    Given a set of genomic sites/regions (e.g. ChIP-seq peaks, CpGs, differentially methylated CpGs or regions, SNPs, etc.) it is often of interest to investigate the intersecting genomic annotations. Such annotations include those relating to gene models (promoters, 5'UTRs, exons, introns, and 3'UTRs), CpGs (CpG islands, CpG shores, CpG shelves), or regulatory sequences such as enhancers. The annotatr package provides an easy way to summarize and visualize the intersection of genomic sites/regions with genomic annotations.
+    """
 
-	version("1.34.0", commit="a16eedeb8ff0b345a0217e9d6c23200963f79ce4")
-	version("1.28.0", commit="8a1960824cf5a8828d3a2d4228db428595a90f4b")
+    bioc = "annotatr"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-annotationhub", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-genomicfeatures", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-genomeinfodb@1.10.3:", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-readr", type=("build", "run"))
-	depends_on("r-regioner", type=("build", "run"))
-	depends_on("r-reshape2", type=("build", "run"))
-	depends_on("r-rtracklayer", type=("build", "run"))
-	depends_on("r-s4vectors@0.23.10:", type=("build", "run"))
+    version("1.34.0", commit="a16eedeb8ff0b345a0217e9d6c23200963f79ce4")
+    version("1.28.0", commit="8a1960824cf5a8828d3a2d4228db428595a90f4b")
+
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-annotationhub", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-genomicfeatures", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-genomeinfodb@1.10.3:", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-readr", type=("build", "run"))
+    depends_on("r-regioner", type=("build", "run"))
+    depends_on("r-reshape2", type=("build", "run"))
+    depends_on("r-rtracklayer", type=("build", "run"))
+    depends_on("r-s4vectors@0.23.10:", type=("build", "run"))

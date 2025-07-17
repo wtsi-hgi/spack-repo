@@ -7,17 +7,17 @@ from spack.package import *
 
 
 class RChipsim(RPackage):
-	"""Simulation of ChIP-seq experiments
+    """Simulation of ChIP-seq experiments
 
-	A general framework for the simulation of ChIP-seq data. Although currently focused on nucleosome positioning the package is designed to support different types of experiments.
-	"""
-	
-	bioc = "ChIPsim"
+    A general framework for the simulation of ChIP-seq data. Although currently focused on nucleosome positioning the package is designed to support different types of experiments.
+    """
 
-	version("1.62.0", commit="d3799438d7200d7e738828a72c9a60f143959fb9")
-	version("1.56.0", commit="c3ecaa6d3f4907d9014a07b2240824dbb958aaa7")
+    bioc = "ChIPsim"
 
-	depends_on("r-biostrings", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-xvector", type=("build", "run"))
-	depends_on("r-shortread", type=("build", "run"))
+    version("1.62.0", commit="d3799438d7200d7e738828a72c9a60f143959fb9")
+    version("1.56.0", commit="c3ecaa6d3f4907d9014a07b2240824dbb958aaa7")
+
+    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-xvector", type=("build", "run"))
+    depends_on("r-shortread", type=("build", "run"))

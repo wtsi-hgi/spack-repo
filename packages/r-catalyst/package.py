@@ -7,41 +7,41 @@ from spack.package import *
 
 
 class RCatalyst(RPackage):
-	"""Cytometry dATa anALYSis Tools
+    """Cytometry dATa anALYSis Tools
 
-	CATALYST provides tools for preprocessing of and differential discovery in cytometry data such as FACS, CyTOF, and IMC. Preprocessing includes i) normalization using bead standards, ii) single-cell deconvolution, and iii) bead-based compensation. For differential discovery, the package provides a number of convenient functions for data processing (e.g., clustering, dimension reduction), as well as a suite of visualizations for exploratory data analysis and exploration of results from differential abundance (DA) and state (DS) analysis in order to identify differences in composition and expression profiles at the subpopulation-level, respectively.
-	"""
-	
-	homepage = "https://github.com/HelenaLC/CATALYST"
-	bioc = "CATALYST"
+    CATALYST provides tools for preprocessing of and differential discovery in cytometry data such as FACS, CyTOF, and IMC. Preprocessing includes i) normalization using bead standards, ii) single-cell deconvolution, and iii) bead-based compensation. For differential discovery, the package provides a number of convenient functions for data processing (e.g., clustering, dimension reduction), as well as a suite of visualizations for exploratory data analysis and exploration of results from differential abundance (DA) and state (DS) analysis in order to identify differences in composition and expression profiles at the subpopulation-level, respectively.
+    """
 
-	version("1.32.0", commit="e5841ae98fb9e5fb78fa3c3adb03a044c224b0aa")
-	version("1.26.1", commit="bca4eb0e11ff9761b8c1d3bb5f3b4da2c660d9cb")
-	version("1.26.0", md5="6ce647576b86ebdf9fe0933fd87b79ce")
+    homepage = "https://github.com/HelenaLC/CATALYST"
+    bioc = "CATALYST"
 
-	depends_on("r@4.2:", type=("build", "run"))
-	depends_on("r-singlecellexperiment", type=("build", "run"))
-	depends_on("r-circlize", type=("build", "run"))
-	depends_on("r-complexheatmap", type=("build", "run"))
-	depends_on("r-consensusclusterplus", type=("build", "run"))
-	depends_on("r-cowplot", type=("build", "run"))
-	depends_on("r-data-table", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-drc", type=("build", "run"))
-	depends_on("r-flowcore", type=("build", "run"))
-	depends_on("r-flowsom", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-ggrepel", type=("build", "run"))
-	depends_on("r-ggridges", type=("build", "run"))
-	depends_on("r-gridextra", type=("build", "run"))
-	depends_on("r-matrix", type=("build", "run"))
-	depends_on("r-matrixstats", type=("build", "run"))
-	depends_on("r-nnls", type=("build", "run"))
-	depends_on("r-purrr", type=("build", "run"))
-	depends_on("r-rcolorbrewer", type=("build", "run"))
-	depends_on("r-reshape2", type=("build", "run"))
-	depends_on("r-rtsne", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-scales", type=("build", "run"))
-	depends_on("r-scater", type=("build", "run"))
+    version("1.32.0", commit="e5841ae98fb9e5fb78fa3c3adb03a044c224b0aa")
+    version("1.26.1", commit="bca4eb0e11ff9761b8c1d3bb5f3b4da2c660d9cb")
+    version("1.26.0", md5="6ce647576b86ebdf9fe0933fd87b79ce")
+
+    depends_on("r@4.2:", type=("build", "run"))
+    depends_on("r-singlecellexperiment", type=("build", "run"))
+    depends_on("r-circlize", type=("build", "run"))
+    depends_on("r-complexheatmap", type=("build", "run"))
+    depends_on("r-consensusclusterplus", type=("build", "run"))
+    depends_on("r-cowplot", type=("build", "run"))
+    depends_on("r-data-table", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-drc", type=("build", "run"))
+    depends_on("r-flowcore", type=("build", "run"))
+    depends_on("r-flowsom", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-ggrepel", type=("build", "run"))
+    depends_on("r-ggridges", type=("build", "run"))
+    depends_on("r-gridextra", type=("build", "run"))
+    depends_on("r-matrix", type=("build", "run"))
+    depends_on("r-matrixstats", type=("build", "run"))
+    depends_on("r-nnls", type=("build", "run"))
+    depends_on("r-purrr", type=("build", "run"))
+    depends_on("r-rcolorbrewer", type=("build", "run"))
+    depends_on("r-reshape2", type=("build", "run"))
+    depends_on("r-rtsne", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-scales", type=("build", "run"))
+    depends_on("r-scater", type=("build", "run"))

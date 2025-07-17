@@ -7,40 +7,44 @@ from spack.package import *
 
 
 class RVariancepartition(RPackage):
-	"""Quantify and interpret drivers of variation in multilevel gene expression experiments
+    """Quantify and interpret drivers of variation in multilevel gene expression experiments
 
-	Quantify and interpret multiple sources of biological and technical variation in gene expression experiments. Uses a linear mixed model to quantify variation in gene expression attributable to individual, tissue, time point, or technical variables.  Includes dream differential expression analysis for repeated measures.
-	"""
-	
-	homepage = "http://bioconductor.org/packages/variancePartition"
-	bioc = "variancePartition"
+    Quantify and interpret multiple sources of biological and technical variation in gene expression experiments. Uses a linear mixed model to quantify variation in gene expression attributable to individual, tissue, time point, or technical variables.  Includes dream differential expression analysis for repeated measures.
+    """
 
-	version("1.38.0", commit="83803a62590edcd9cd3ffe95e67e7c48b1b9859a")
-	version("1.32.5", md5="cd02e6e3024f4f5bbb5d8c1dcb471d15")
-	version("1.24.1", md5="922a5518ac302be34b1e416772190db5", url="https://www.bioconductor.org/packages/3.14/bioc/src/contrib/variancePartition_1.24.1.tar.gz")
+    homepage = "http://bioconductor.org/packages/variancePartition"
+    bioc = "variancePartition"
 
-	depends_on("r@4.3:", type=("build", "run"), when="@1.32.5:")
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-limma", type=("build", "run"))
-	depends_on("r-biocparallel", type=("build", "run"))
-	depends_on("r-mass", type=("build", "run"))
-	depends_on("r-pbkrtest@0.4.4:", type=("build", "run"))
-	depends_on("r-lmertest", type=("build", "run"))
-	depends_on("r-matrix@1.4:", type=("build", "run"))
-	depends_on("r-iterators", type=("build", "run"))
-	depends_on("r-gplots", type=("build", "run"))
-	depends_on("r-corpcor", type=("build", "run"), when="@1.32.5:")
-	depends_on("r-matrixstats", type=("build", "run"), when="@1.32.5:")
-	depends_on("r-rhpcblasctl", type=("build", "run"))
-	depends_on("r-reshape2", type=("build", "run"))
-	depends_on("r-remacor@0.0.15:", type=("build", "run"), when="@1.32.5:")
-	depends_on("r-fancova", type=("build", "run"), when="@1.32.5:")
-	depends_on("r-aod", type=("build", "run"))
-	depends_on("r-scales", type=("build", "run"))
-	depends_on("r-rdpack", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
-	depends_on("r-lme4@1.1.33:", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-foreach", type=("build", "run"), when="@:1.30")
-	depends_on("r-doparallel", type=("build", "run"), when="@:1.30")
-	depends_on("r-progress", type=("build", "run"), when="@:1.30")
+    version("1.38.0", commit="83803a62590edcd9cd3ffe95e67e7c48b1b9859a")
+    version("1.32.5", md5="cd02e6e3024f4f5bbb5d8c1dcb471d15")
+    version(
+        "1.24.1",
+        md5="922a5518ac302be34b1e416772190db5",
+        url="https://www.bioconductor.org/packages/3.14/bioc/src/contrib/variancePartition_1.24.1.tar.gz",
+    )
+
+    depends_on("r@4.3:", type=("build", "run"), when="@1.32.5:")
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-limma", type=("build", "run"))
+    depends_on("r-biocparallel", type=("build", "run"))
+    depends_on("r-mass", type=("build", "run"))
+    depends_on("r-pbkrtest@0.4.4:", type=("build", "run"))
+    depends_on("r-lmertest", type=("build", "run"))
+    depends_on("r-matrix@1.4:", type=("build", "run"))
+    depends_on("r-iterators", type=("build", "run"))
+    depends_on("r-gplots", type=("build", "run"))
+    depends_on("r-corpcor", type=("build", "run"), when="@1.32.5:")
+    depends_on("r-matrixstats", type=("build", "run"), when="@1.32.5:")
+    depends_on("r-rhpcblasctl", type=("build", "run"))
+    depends_on("r-reshape2", type=("build", "run"))
+    depends_on("r-remacor@0.0.15:", type=("build", "run"), when="@1.32.5:")
+    depends_on("r-fancova", type=("build", "run"), when="@1.32.5:")
+    depends_on("r-aod", type=("build", "run"))
+    depends_on("r-scales", type=("build", "run"))
+    depends_on("r-rdpack", type=("build", "run"))
+    depends_on("r-rlang", type=("build", "run"))
+    depends_on("r-lme4@1.1.33:", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-foreach", type=("build", "run"), when="@:1.30")
+    depends_on("r-doparallel", type=("build", "run"), when="@:1.30")
+    depends_on("r-progress", type=("build", "run"), when="@:1.30")

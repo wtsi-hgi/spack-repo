@@ -7,39 +7,39 @@ from spack.package import *
 
 
 class RSpatialheatmap(RPackage):
-	"""spatialHeatmap
+    """spatialHeatmap
 
-	The spatialHeatmap package offers the primary functionality for visualizing cell-, tissue- and organ-specific assay data in spatial anatomical images. Additionally, it provides extended functionalities for large-scale data mining routines and co-visualizing bulk and single-cell data.
-	"""
-	
-	homepage = "https://github.com/jianhaizhang/spatialHeatmap"
-	bioc = "spatialHeatmap"
+    The spatialHeatmap package offers the primary functionality for visualizing cell-, tissue- and organ-specific assay data in spatial anatomical images. Additionally, it provides extended functionalities for large-scale data mining routines and co-visualizing bulk and single-cell data.
+    """
 
-	version("2.14.1", commit="ef32f47806614a7d84a5f48aa527694dd106080c")
-	version("2.8.5", commit="649defc470d24050e6e3ba80027c294a8f05d742")
+    homepage = "https://github.com/jianhaizhang/spatialHeatmap"
+    bioc = "spatialHeatmap"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-data-table", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-edger", type=("build", "run"))
-	depends_on("r-genefilter", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-grimport", type=("build", "run"))
-	depends_on("r-gridextra", type=("build", "run"))
-	depends_on("r-gplots", type=("build", "run"))
-	depends_on("r-igraph", type=("build", "run"))
-	depends_on("r-matrix", type=("build", "run"))
-	depends_on("r-rsvg", type=("build", "run"))
-	depends_on("r-shiny", type=("build", "run"))
-	depends_on("r-ggplotify", type=("build", "run"))
-	depends_on("r-reshape2", type=("build", "run"))
-	depends_on("r-scater", type=("build", "run"))
-	depends_on("r-scuttle", type=("build", "run"))
-	depends_on("r-scran", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-singlecellexperiment", type=("build", "run"))
-	depends_on("r-shinydashboard", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-spscomps@0.3.3:", type=("build", "run"))
-	depends_on("r-tibble", type=("build", "run"))
-	depends_on("r-xml2", type=("build", "run"))
+    version("2.14.1", commit="ef32f47806614a7d84a5f48aa527694dd106080c")
+    version("2.8.5", commit="649defc470d24050e6e3ba80027c294a8f05d742")
+
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-data-table", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-edger", type=("build", "run"))
+    depends_on("r-genefilter", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-grimport", type=("build", "run"))
+    depends_on("r-gridextra", type=("build", "run"))
+    depends_on("r-gplots", type=("build", "run"))
+    depends_on("r-igraph", type=("build", "run"))
+    depends_on("r-matrix", type=("build", "run"))
+    depends_on("r-rsvg", type=("build", "run"))
+    depends_on("r-shiny", type=("build", "run"))
+    depends_on("r-ggplotify", type=("build", "run"))
+    depends_on("r-reshape2", type=("build", "run"))
+    depends_on("r-scater", type=("build", "run"))
+    depends_on("r-scuttle", type=("build", "run"))
+    depends_on("r-scran", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-singlecellexperiment", type=("build", "run"))
+    depends_on("r-shinydashboard", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-spscomps@0.3.3:", type=("build", "run"))
+    depends_on("r-tibble", type=("build", "run"))
+    depends_on("r-xml2", type=("build", "run"))

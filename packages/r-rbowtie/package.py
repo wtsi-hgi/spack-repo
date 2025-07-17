@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class RRbowtie(RPackage):
-	"""R bowtie wrapper
+    """R bowtie wrapper
 
-	This package provides an R wrapper around the popular bowtie short read aligner and around SpliceMap, a de novo splice junction discovery and alignment tool. The package is used by the QuasR bioconductor package. We recommend to use the QuasR package instead of using Rbowtie directly.
-	"""
-	
-	homepage = "https://github.com/fmicompbio/Rbowtie"
-	bioc = "Rbowtie"
+    This package provides an R wrapper around the popular bowtie short read aligner and around SpliceMap, a de novo splice junction discovery and alignment tool. The package is used by the QuasR bioconductor package. We recommend to use the QuasR package instead of using Rbowtie directly.
+    """
 
-	version("1.48.0", commit="3e162af88b4acc0a89bcf9b3309569b02dc840c6")
-	version("1.42.0", commit="bd0120f019e17bd52306046e58447a8398af2476")
+    homepage = "https://github.com/fmicompbio/Rbowtie"
+    bioc = "Rbowtie"
 
-	depends_on("zlib", type=("build", "link", "run"))
+    version("1.48.0", commit="3e162af88b4acc0a89bcf9b3309569b02dc840c6")
+    version("1.42.0", commit="bd0120f019e17bd52306046e58447a8398af2476")
+
+    depends_on("zlib", type=("build", "link", "run"))

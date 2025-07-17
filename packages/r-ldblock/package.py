@@ -7,18 +7,18 @@ from spack.package import *
 
 
 class RLdblock(RPackage):
-	"""data structures for linkage disequilibrium measures in populations
+    """data structures for linkage disequilibrium measures in populations
 
-	Define data structures for linkage disequilibrium measures in populations.
-	"""
-	
-	bioc = "ldblock"
+    Define data structures for linkage disequilibrium measures in populations.
+    """
 
-	version("1.38.0", commit="aad2e2a707b276d482a6840937384871eab050e1")
-	version("1.32.0", commit="398acc977660d9addd4ce5f8491af290470442a2")
+    bioc = "ldblock"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
-	depends_on("r-biocgenerics@0.25.1:", type=("build", "run"))
-	depends_on("r-httr", type=("build", "run"))
-	depends_on("r-matrix", type=("build", "run"))
+    version("1.38.0", commit="aad2e2a707b276d482a6840937384871eab050e1")
+    version("1.32.0", commit="398acc977660d9addd4ce5f8491af290470442a2")
+
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-rlang", type=("build", "run"))
+    depends_on("r-biocgenerics@0.25.1:", type=("build", "run"))
+    depends_on("r-httr", type=("build", "run"))
+    depends_on("r-matrix", type=("build", "run"))

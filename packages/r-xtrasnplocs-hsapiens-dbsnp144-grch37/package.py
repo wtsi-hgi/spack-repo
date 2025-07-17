@@ -7,21 +7,27 @@ from spack.package import *
 
 
 class RXtrasnplocsHsapiensDbsnp144Grch37(RPackage):
-	"""Extra SNP locations for Homo sapiens (dbSNP Build 144)
+    """Extra SNP locations for Homo sapiens (dbSNP Build 144)
 
-	Extra SNP locations and alleles for Homo sapiens extracted from NCBI dbSNP Build 144. The source data files used for this package were created by NCBI on May 29-30, 2015, and contain SNPs mapped to reference genome GRCh37.p13 (a patched version of GRCh37 that doesn't alter chromosomes 1-22, X, Y, MT). While the SNPlocs.Hsapiens.dbSNP144.GRCh37 package contains only molecular variations of class "snp", this package contains molecular variations of other classes (in-del, heterozygous, microsatellite, named-locus, no-variation, mixed, and multinucleotide-polymorphism).
-	"""
-	
-	bioc = "XtraSNPlocs.Hsapiens.dbSNP144.GRCh37" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/XtraSNPlocs.Hsapiens.dbSNP144.GRCh37_0.99.12.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/XtraSNPlocs.Hsapiens.dbSNP144.GRCh37/XtraSNPlocs.Hsapiens.dbSNP144.GRCh37_0.99.12.tar.gz"]
+    Extra SNP locations and alleles for Homo sapiens extracted from NCBI dbSNP Build 144. The source data files used for this package were created by NCBI on May 29-30, 2015, and contain SNPs mapped to reference genome GRCh37.p13 (a patched version of GRCh37 that doesn't alter chromosomes 1-22, X, Y, MT). While the SNPlocs.Hsapiens.dbSNP144.GRCh37 package contains only molecular variations of class "snp", this package contains molecular variations of other classes (in-del, heterozygous, microsatellite, named-locus, no-variation, mixed, and multinucleotide-polymorphism).
+    """
 
-	version("0.99.12", sha256="cb3d78d07a7fc00aee25b48728a6a568d72e8dca9e9f7a48abb35589b71b024d", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/XtraSNPlocs.Hsapiens.dbSNP144.GRCh37_0.99.12.tar.gz")
+    bioc = "XtraSNPlocs.Hsapiens.dbSNP144.GRCh37"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/XtraSNPlocs.Hsapiens.dbSNP144.GRCh37_0.99.12.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/XtraSNPlocs.Hsapiens.dbSNP144.GRCh37/XtraSNPlocs.Hsapiens.dbSNP144.GRCh37_0.99.12.tar.gz",
+    ]
 
-	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-bsgenome", type=("build", "run"))
-	depends_on("r-biocgenerics", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-genomeinfodb", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
+    version(
+        "0.99.12",
+        sha256="cb3d78d07a7fc00aee25b48728a6a568d72e8dca9e9f7a48abb35589b71b024d",
+        url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/XtraSNPlocs.Hsapiens.dbSNP144.GRCh37_0.99.12.tar.gz",
+    )
 
+    depends_on("r@2.10:", type=("build", "run"))
+    depends_on("r-bsgenome", type=("build", "run"))
+    depends_on("r-biocgenerics", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-genomeinfodb", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))

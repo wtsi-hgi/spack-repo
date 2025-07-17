@@ -13,7 +13,9 @@ class RS4arrays(RPackage):
     """
 
     homepage = "https://bioconductor.org/packages/S4Arrays"
-    bioc = "S4Arrays"version("1.8.0", commit="3ccac7337984c08cf086caedbef48d3d8d94b165")
+    bioc = "S4Arrays"
+
+    version("1.8.0", commit="3ccac7337984c08cf086caedbef48d3d8d94b165")
     version("1.2.1", commit="59b8f4e28d2273145411f0d5429d1f31f6b79e12")
     version("1.2.0", md5="c77474b839251d19d31708831de3c1bf")
     version("1.1.1", commit="6074deee3b0edd47bfde20fa4151c54268e93d63")

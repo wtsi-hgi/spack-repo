@@ -7,17 +7,22 @@ from spack.package import *
 
 
 class RRnagilentdesign028282Db(RPackage):
-	"""Agilent Chips that use Agilent design number 028282 annotation data (chip RnAgilentDesign028282)
+    """Agilent Chips that use Agilent design number 028282 annotation data (chip RnAgilentDesign028282)
 
-	Agilent Chips that use Agilent design number 028282 annotation data (chip RnAgilentDesign028282) assembled using data from public repositories
-	"""
-	
-	bioc = "RnAgilentDesign028282.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/RnAgilentDesign028282.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/RnAgilentDesign028282.db/RnAgilentDesign028282.db_3.2.3.tar.gz"]
+    Agilent Chips that use Agilent design number 028282 annotation data (chip RnAgilentDesign028282) assembled using data from public repositories
+    """
 
-	version("3.2.3", sha256="4e9197128f432239b25b653a2552092b094227e8948599e7a9feaeabc9891903")
+    bioc = "RnAgilentDesign028282.db"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/RnAgilentDesign028282.db_3.2.3.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/RnAgilentDesign028282.db/RnAgilentDesign028282.db_3.2.3.tar.gz",
+    ]
 
-	depends_on("r@2.7:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-org-rn-eg-db@3.3:", type=("build", "run"))
+    version(
+        "3.2.3",
+        sha256="4e9197128f432239b25b653a2552092b094227e8948599e7a9feaeabc9891903",
+    )
 
+    depends_on("r@2.7:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-org-rn-eg-db@3.3:", type=("build", "run"))

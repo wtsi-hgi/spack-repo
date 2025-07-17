@@ -7,14 +7,14 @@ from spack.package import *
 
 
 class RRseqan(RPackage):
-	"""R SeqAn
+    """R SeqAn
 
-	Headers and some wrapper functions from the SeqAn C++ library for ease of usage in R.
-	"""
-	
-	bioc = "RSeqAn"
+    Headers and some wrapper functions from the SeqAn C++ library for ease of usage in R.
+    """
 
-	version("1.28.0", commit="e61edd0ee3f93a2599ba35a8d3856e6a934a919c")
-	version("1.22.0", commit="79a530856d89a908c97f2e603ce4b4f62b99bd2f")
+    bioc = "RSeqAn"
 
-	depends_on("r-rcpp", type=("build", "run"))
+    version("1.28.0", commit="e61edd0ee3f93a2599ba35a8d3856e6a934a919c")
+    version("1.22.0", commit="79a530856d89a908c97f2e603ce4b4f62b99bd2f")
+
+    depends_on("r-rcpp", type=("build", "run"))

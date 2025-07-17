@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class RMgfm(RPackage):
-	"""Marker Gene Finder in Microarray gene expression data
+    """Marker Gene Finder in Microarray gene expression data
 
-	The package is designed to detect marker genes from Microarray gene expression data sets
-	"""
-	
-	bioc = "MGFM"
+    The package is designed to detect marker genes from Microarray gene expression data sets
+    """
 
-	version("1.42.0", commit="86e6d46bebd07414dc91f4426f90f4b63d87376d")
-	version("1.36.0", commit="8240478c1760217b4961a3ac596d9c2925d242b5")
+    bioc = "MGFM"
 
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-annotate", type=("build", "run"))
+    version("1.42.0", commit="86e6d46bebd07414dc91f4426f90f4b63d87376d")
+    version("1.36.0", commit="8240478c1760217b4961a3ac596d9c2925d242b5")
+
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-annotate", type=("build", "run"))

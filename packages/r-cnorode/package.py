@@ -7,16 +7,16 @@ from spack.package import *
 
 
 class RCnorode(RPackage):
-	"""ODE add-on to CellNOptR
+    """ODE add-on to CellNOptR
 
-	Logic based ordinary differential equation (ODE) add-on to CellNOptR.
-	"""
-	
-	bioc = "CNORode"
+    Logic based ordinary differential equation (ODE) add-on to CellNOptR.
+    """
 
-	version("1.50.0", commit="f85ceaf085ea80238d7a42a071e735a4674dc8b4")
-	version("1.44.0", commit="ffe0ce3536d5acb68c73883a3fbb02730ad6f40c")
+    bioc = "CNORode"
 
-	depends_on("r-cellnoptr", type=("build", "run"))
-	depends_on("r-genalg", type=("build", "run"))
-	depends_on("r-knitr", type=("build", "run"))
+    version("1.50.0", commit="f85ceaf085ea80238d7a42a071e735a4674dc8b4")
+    version("1.44.0", commit="ffe0ce3536d5acb68c73883a3fbb02730ad6f40c")
+
+    depends_on("r-cellnoptr", type=("build", "run"))
+    depends_on("r-genalg", type=("build", "run"))
+    depends_on("r-knitr", type=("build", "run"))

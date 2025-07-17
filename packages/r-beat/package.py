@@ -7,18 +7,18 @@ from spack.package import *
 
 
 class RBeat(RPackage):
-	"""BEAT - BS-Seq Epimutation Analysis Toolkit
+    """BEAT - BS-Seq Epimutation Analysis Toolkit
 
-	Model-based analysis of single-cell methylation data
-	"""
-	
-	bioc = "BEAT"
+    Model-based analysis of single-cell methylation data
+    """
 
-	version("1.46.0", commit="e78cc42dd8b7a592f091917ab33ea077a9447c8d")
-	version("1.40.0", commit="27254d06458ea8048189b232a40ef2070c3e62ec")
+    bioc = "BEAT"
 
-	depends_on("r@2.13:", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-shortread", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
-	depends_on("r-bsgenome", type=("build", "run"))
+    version("1.46.0", commit="e78cc42dd8b7a592f091917ab33ea077a9447c8d")
+    version("1.40.0", commit="27254d06458ea8048189b232a40ef2070c3e62ec")
+
+    depends_on("r@2.13:", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-shortread", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-bsgenome", type=("build", "run"))

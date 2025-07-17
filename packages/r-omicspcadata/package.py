@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class ROmicspcadata(RPackage):
-	"""Supporting data for package OMICsPCA
+    """Supporting data for package OMICsPCA
 
-	Supporting data for package OMICsPCA
-	"""
-	
-	bioc = "OMICsPCAdata"
+    Supporting data for package OMICsPCA
+    """
 
-	version("1.26.0", commit="d235e9c380d108deffde61af43b2613bbd3cf0ac")
-	version("1.20.0", commit="8b2188edf2bcc1d78845e561397d7e625315eb29")
+    bioc = "OMICsPCAdata"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-multiassayexperiment", type=("build", "run"))
+    version("1.26.0", commit="d235e9c380d108deffde61af43b2613bbd3cf0ac")
+    version("1.20.0", commit="8b2188edf2bcc1d78845e561397d7e625315eb29")
 
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-multiassayexperiment", type=("build", "run"))

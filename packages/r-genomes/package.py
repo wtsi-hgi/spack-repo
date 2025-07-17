@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class RGenomes(RPackage):
-	"""Genome sequencing project metadata
+    """Genome sequencing project metadata
 
-	Download genome and assembly reports from NCBI
-	"""
-	
-	bioc = "genomes"
+    Download genome and assembly reports from NCBI
+    """
 
-	version("3.38.0", commit="c404ec9f6e885d500a7c4f79b5dbcda7162dbbac")
-	version("3.32.0", commit="9bcaa80ba14957a6e6289480ab8547afa4967ea7")
+    bioc = "genomes"
 
-	depends_on("r-readr", type=("build", "run"))
-	depends_on("r-curl", type=("build", "run"))
+    version("3.38.0", commit="c404ec9f6e885d500a7c4f79b5dbcda7162dbbac")
+    version("3.32.0", commit="9bcaa80ba14957a6e6289480ab8547afa4967ea7")
+
+    depends_on("r-readr", type=("build", "run"))
+    depends_on("r-curl", type=("build", "run"))

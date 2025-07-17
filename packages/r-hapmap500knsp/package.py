@@ -7,14 +7,12 @@ from spack.package import *
 
 
 class RHapmap500knsp(RPackage):
-	"""Sample data - Hapmap 500K NSP Affymetrix
+    """Sample data - Hapmap 500K NSP Affymetrix
 
-	Sample dataset obtained from http://www.hapmap.org
-	"""
-	
-	bioc = "hapmap500knsp"
+    Sample dataset obtained from http://www.hapmap.org
+    """
 
-	version("1.50.0", commit="4db326e73355eb1b76f04088d838bc06d808e89c")
-	version("1.44.0", commit="1ee33b5ac12f3e2d8e53cb1fbb5f607c05f6635d")
+    bioc = "hapmap500knsp"
 
-
+    version("1.50.0", commit="4db326e73355eb1b76f04088d838bc06d808e89c")
+    version("1.44.0", commit="1ee33b5ac12f3e2d8e53cb1fbb5f607c05f6635d")

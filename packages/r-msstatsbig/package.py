@@ -7,20 +7,20 @@ from spack.package import *
 
 
 class RMsstatsbig(RPackage):
-	"""MSstats Preprocessing for Larger than Memory Data
+    """MSstats Preprocessing for Larger than Memory Data
 
-	MSstats package provide tools for preprocessing, summarization and differential analysis of mass spectrometry (MS) proteomics data. Recently, some MS protocols enable acquisition of data sets that result in larger than memory quantitative data. MSstats functions are not able to process such data. MSstatsBig package provides additional converter functions that enable processing larger than memory data sets.
-	"""
-	
-	bioc = "MSstatsBig"
+    MSstats package provide tools for preprocessing, summarization and differential analysis of mass spectrometry (MS) proteomics data. Recently, some MS protocols enable acquisition of data sets that result in larger than memory quantitative data. MSstats functions are not able to process such data. MSstatsBig package provides additional converter functions that enable processing larger than memory data sets.
+    """
 
-	version("1.6.0", commit="c5abd1d2750d5134918ba8b0bf5fd860578877c9")
-	version("1.0.0", md5="a53de589b47964296160c6fb8aaeb3b4")
+    bioc = "MSstatsBig"
 
-	depends_on("r-arrow", type=("build", "run"))
-	depends_on("r-dbi", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-msstats", type=("build", "run"))
-	depends_on("r-msstatsconvert", type=("build", "run"))
-	depends_on("r-readr", type=("build", "run"))
-	depends_on("r-sparklyr", type=("build", "run"))
+    version("1.6.0", commit="c5abd1d2750d5134918ba8b0bf5fd860578877c9")
+    version("1.0.0", md5="a53de589b47964296160c6fb8aaeb3b4")
+
+    depends_on("r-arrow", type=("build", "run"))
+    depends_on("r-dbi", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-msstats", type=("build", "run"))
+    depends_on("r-msstatsconvert", type=("build", "run"))
+    depends_on("r-readr", type=("build", "run"))
+    depends_on("r-sparklyr", type=("build", "run"))

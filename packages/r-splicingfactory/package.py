@@ -7,16 +7,16 @@ from spack.package import *
 
 
 class RSplicingfactory(RPackage):
-	"""Splicing Diversity Analysis for Transcriptome Data
+    """Splicing Diversity Analysis for Transcriptome Data
 
-	The SplicingFactory R package uses transcript-level expression values to analyze splicing diversity based on various statistical measures, like Shannon entropy or the Gini index. These measures can quantify transcript isoform diversity within samples or between conditions. Additionally, the package analyzes the isoform diversity data, looking for significant changes between conditions.
-	"""
-	
-	homepage = "https://github.com/esebesty/SplicingFactory"
-	bioc = "SplicingFactory"
+    The SplicingFactory R package uses transcript-level expression values to analyze splicing diversity based on various statistical measures, like Shannon entropy or the Gini index. These measures can quantify transcript isoform diversity within samples or between conditions. Additionally, the package analyzes the isoform diversity data, looking for significant changes between conditions.
+    """
 
-	version("1.16.0", commit="e61e5e72a5959b66109fa637341ae11b4efbb9f7")
-	version("1.10.0", commit="83e7e19bf422add246869ce781af5115d5bd2acc")
+    homepage = "https://github.com/esebesty/SplicingFactory"
+    bioc = "SplicingFactory"
 
-	depends_on("r@4.1:", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
+    version("1.16.0", commit="e61e5e72a5959b66109fa637341ae11b4efbb9f7")
+    version("1.10.0", commit="83e7e19bf422add246869ce781af5115d5bd2acc")
+
+    depends_on("r@4.1:", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))

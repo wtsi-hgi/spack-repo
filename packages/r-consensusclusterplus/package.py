@@ -7,16 +7,16 @@ from spack.package import *
 
 
 class RConsensusclusterplus(RPackage):
-	"""ConsensusClusterPlus
+    """ConsensusClusterPlus
 
-	algorithm for determining cluster count and membership by stability evidence in unsupervised analysis
-	"""
-	
-	bioc = "ConsensusClusterPlus"
+    algorithm for determining cluster count and membership by stability evidence in unsupervised analysis
+    """
 
-	version("1.72.0", commit="901e95d24f94d020d84931cfec8189934890646e")
-	version("1.66.0", commit="aa15b11bd487008bf4637c1aee14a618a8c091b6")
+    bioc = "ConsensusClusterPlus"
 
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-all", type=("build", "run"))
-	depends_on("r-cluster", type=("build", "run"))
+    version("1.72.0", commit="901e95d24f94d020d84931cfec8189934890646e")
+    version("1.66.0", commit="aa15b11bd487008bf4637c1aee14a618a8c091b6")
+
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-all", type=("build", "run"))
+    depends_on("r-cluster", type=("build", "run"))

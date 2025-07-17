@@ -7,17 +7,17 @@ from spack.package import *
 
 
 class RRbsurv(RPackage):
-	"""Robust likelihood-based survival modeling with microarray data
+    """Robust likelihood-based survival modeling with microarray data
 
-	This package selects genes associated with survival.
-	"""
-	
-	homepage = "http://www.korea.ac.kr/~stat2242/"
-	bioc = "rbsurv"
+    This package selects genes associated with survival.
+    """
 
-	version("2.66.0", commit="1faecb8faba37fad2dad80b979947a0d8bcf86a6")
-	version("2.60.0", commit="b2479b0f576a54092c4bb0548e9afb847f1974b6")
+    homepage = "http://www.korea.ac.kr/~stat2242/"
+    bioc = "rbsurv"
 
-	depends_on("r@2.5:", type=("build", "run"))
-	depends_on("r-biobase@2.5.5:", type=("build", "run"))
-	depends_on("r-survival", type=("build", "run"))
+    version("2.66.0", commit="1faecb8faba37fad2dad80b979947a0d8bcf86a6")
+    version("2.60.0", commit="b2479b0f576a54092c4bb0548e9afb847f1974b6")
+
+    depends_on("r@2.5:", type=("build", "run"))
+    depends_on("r-biobase@2.5.5:", type=("build", "run"))
+    depends_on("r-survival", type=("build", "run"))

@@ -7,16 +7,21 @@ from spack.package import *
 
 
 class RRgu34bprobe(RPackage):
-	"""Probe sequence data for microarrays of type rgu34b
+    """Probe sequence data for microarrays of type rgu34b
 
-	This package was automatically created by package AnnotationForge version 1.11.21. The probe sequence data was obtained from http://www.affymetrix.com. The file name was RG-U34B_probe_tab.
-	"""
-	
-	bioc = "rgu34bprobe" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rgu34bprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rgu34bprobe/rgu34bprobe_2.18.0.tar.gz"]
+    This package was automatically created by package AnnotationForge version 1.11.21. The probe sequence data was obtained from http://www.affymetrix.com. The file name was RG-U34B_probe_tab.
+    """
 
-	version("2.18.0", sha256="383eeaaa838a484a88f2b2de00bd4af52735aff5cce61bcd2ac02e475202f824")
+    bioc = "rgu34bprobe"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rgu34bprobe_2.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rgu34bprobe/rgu34bprobe_2.18.0.tar.gz",
+    ]
 
-	depends_on("r@1.6:", type=("build", "run"))
-	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))
+    version(
+        "2.18.0",
+        sha256="383eeaaa838a484a88f2b2de00bd4af52735aff5cce61bcd2ac02e475202f824",
+    )
 
+    depends_on("r@1.6:", type=("build", "run"))
+    depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

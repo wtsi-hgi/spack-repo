@@ -7,15 +7,14 @@ from spack.package import *
 
 
 class RGigseadata(RPackage):
-	"""Gene set collections for the GIGSEA package
+    """Gene set collections for the GIGSEA package
 
-	The gene set collection used for the GIGSEA package.
-	"""
-	
-	bioc = "GIGSEAdata"
+    The gene set collection used for the GIGSEA package.
+    """
 
-	version("1.26.0", commit="4e9bfb3d6c83ab288bb2fc6620d198d9774bdcc0")
-	version("1.20.0", commit="bd836c5f46115adc735686162b4cde785b1b8ad8")
+    bioc = "GIGSEAdata"
 
-	depends_on("r@3.5:", type=("build", "run"))
+    version("1.26.0", commit="4e9bfb3d6c83ab288bb2fc6620d198d9774bdcc0")
+    version("1.20.0", commit="bd836c5f46115adc735686162b4cde785b1b8ad8")
 
+    depends_on("r@3.5:", type=("build", "run"))

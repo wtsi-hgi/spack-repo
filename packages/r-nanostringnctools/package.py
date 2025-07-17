@@ -7,25 +7,25 @@ from spack.package import *
 
 
 class RNanostringnctools(RPackage):
-	"""NanoString nCounter Tools
+    """NanoString nCounter Tools
 
-	Tools for NanoString Technologies nCounter Technology. Provides support for reading RCC files into an ExpressionSet derived object.  Also includes methods for QC and normalizaztion of NanoString data.
-	"""
-	
-	bioc = "NanoStringNCTools"
+    Tools for NanoString Technologies nCounter Technology. Provides support for reading RCC files into an ExpressionSet derived object.  Also includes methods for QC and normalizaztion of NanoString data.
+    """
 
-	version("1.16.1", commit="fa899ec908179b7619aadeb1ed6904c8cef1bcd6")
-	version("1.10.0", md5="97985a577c04cc2d7c19d00f2bd8e1d1")
+    bioc = "NanoStringNCTools"
 
-	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-biocgenerics", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
-	depends_on("r-ggbeeswarm", type=("build", "run"))
-	depends_on("r-ggiraph", type=("build", "run"))
-	depends_on("r-ggthemes", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-pheatmap", type=("build", "run"))
-	depends_on("r-rcolorbrewer", type=("build", "run"))
+    version("1.16.1", commit="fa899ec908179b7619aadeb1ed6904c8cef1bcd6")
+    version("1.10.0", md5="97985a577c04cc2d7c19d00f2bd8e1d1")
+
+    depends_on("r@3.6:", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-biocgenerics", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-ggbeeswarm", type=("build", "run"))
+    depends_on("r-ggiraph", type=("build", "run"))
+    depends_on("r-ggthemes", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-pheatmap", type=("build", "run"))
+    depends_on("r-rcolorbrewer", type=("build", "run"))

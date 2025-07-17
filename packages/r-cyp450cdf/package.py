@@ -7,15 +7,20 @@ from spack.package import *
 
 
 class RCyp450cdf(RPackage):
-	"""cyp450cdf
+    """cyp450cdf
 
-	A package containing an environment representing the CYP450.CDF file.
-	"""
-	
-	bioc = "cyp450cdf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cyp450cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/cyp450cdf/cyp450cdf_2.18.0.tar.gz"]
+    A package containing an environment representing the CYP450.CDF file.
+    """
 
-	version("2.18.0", sha256="c061143e44e18b5d790e96bf18124e7bda2d491cb34dbff504ac6b4052b278d5")
+    bioc = "cyp450cdf"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cyp450cdf_2.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/cyp450cdf/cyp450cdf_2.18.0.tar.gz",
+    ]
 
-	depends_on("r-annotationdbi", type=("build", "run"))
+    version(
+        "2.18.0",
+        sha256="c061143e44e18b5d790e96bf18124e7bda2d491cb34dbff504ac6b4052b278d5",
+    )
 
+    depends_on("r-annotationdbi", type=("build", "run"))

@@ -7,14 +7,12 @@ from spack.package import *
 
 
 class RDiffloopdata(RPackage):
-	"""Example ChIA-PET Datasets for the diffloop Package
+    """Example ChIA-PET Datasets for the diffloop Package
 
-	ChIA-PET example datasets and additional data for use with the diffloop package.
-	"""
-	
-	bioc = "diffloopdata"
+    ChIA-PET example datasets and additional data for use with the diffloop package.
+    """
 
-	version("1.36.0", commit="a0b0834a9886d6fc3f0aa046fb2e177f0a9cb8cb")
-	version("1.30.0", commit="b7371d193bffef7ce62bb7a360c670b29282f9b6")
+    bioc = "diffloopdata"
 
-
+    version("1.36.0", commit="a0b0834a9886d6fc3f0aa046fb2e177f0a9cb8cb")
+    version("1.30.0", commit="b7371d193bffef7ce62bb7a360c670b29282f9b6")

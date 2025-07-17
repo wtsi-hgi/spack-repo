@@ -7,20 +7,20 @@ from spack.package import *
 
 
 class ROtubase(RPackage):
-	"""Provides structure and functions for the analysis of OTU data
+    """Provides structure and functions for the analysis of OTU data
 
-	Provides a platform for Operational Taxonomic Unit based analysis
-	"""
-	
-	bioc = "OTUbase"
+    Provides a platform for Operational Taxonomic Unit based analysis
+    """
 
-	version("1.58.0", commit="364a17dc7e73c6dae2cf622db8931a2559a0cef7")
-	version("1.52.0", commit="e02b2a4debdeae65bc6372571ee697d38df2b4be")
+    bioc = "OTUbase"
 
-	depends_on("r@2.9:", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-shortread@1.23.15:", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-vegan", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
+    version("1.58.0", commit="364a17dc7e73c6dae2cf622db8931a2559a0cef7")
+    version("1.52.0", commit="e02b2a4debdeae65bc6372571ee697d38df2b4be")
+
+    depends_on("r@2.9:", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-shortread@1.23.15:", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-vegan", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))

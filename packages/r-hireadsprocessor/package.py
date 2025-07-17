@@ -7,23 +7,23 @@ from spack.package import *
 
 
 class RHireadsprocessor(RPackage):
-	"""Functions to process LM-PCR reads from 454/Illumina data
+    """Functions to process LM-PCR reads from 454/Illumina data
 
-	hiReadsProcessor contains set of functions which allow users to process LM-PCR products sequenced using any platform. Given an excel/txt file containing parameters for demultiplexing and sample metadata, the functions automate trimming of adaptors and identification of the genomic product. Genomic products are further processed for QC and abundance quantification.
-	"""
-	
-	bioc = "hiReadsProcessor"
+    hiReadsProcessor contains set of functions which allow users to process LM-PCR products sequenced using any platform. Given an excel/txt file containing parameters for demultiplexing and sample metadata, the functions automate trimming of adaptors and identification of the genomic product. Genomic products are further processed for QC and abundance quantification.
+    """
 
-	version("1.44.0", commit="2a9fd2b5bad3c155d4d8b0b594395dace500f103")
-	version("1.38.0", commit="d60e18c105c5b00f207341c2352b37a423547552")
+    bioc = "hiReadsProcessor"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
-	depends_on("r-genomicalignments", type=("build", "run"))
-	depends_on("r-biocparallel", type=("build", "run"))
-	depends_on("r-hiannotator", type=("build", "run"))
-	depends_on("r-soniclength", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-biocgenerics", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-readxl", type=("build", "run"))
+    version("1.44.0", commit="2a9fd2b5bad3c155d4d8b0b594395dace500f103")
+    version("1.38.0", commit="d60e18c105c5b00f207341c2352b37a423547552")
+
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-genomicalignments", type=("build", "run"))
+    depends_on("r-biocparallel", type=("build", "run"))
+    depends_on("r-hiannotator", type=("build", "run"))
+    depends_on("r-soniclength", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-biocgenerics", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-readxl", type=("build", "run"))

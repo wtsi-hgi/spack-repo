@@ -7,24 +7,27 @@ from spack.package import *
 
 
 class RMultigsea(RPackage):
-	"""Combining GSEA-based pathway enrichment with multi omics data integration
+    """Combining GSEA-based pathway enrichment with multi omics data integration
 
-	Extracted features from pathways derived from 8 different databases (KEGG, Reactome, Biocarta, etc.) can be used on transcriptomic, proteomic, and/or metabolomic level to calculate a combined GSEA-based enrichment score.
-	"""
-	
-	homepage = "https://github.com/yigbt/multiGSEA"
-	bioc = "multiGSEA"
+    Extracted features from pathways derived from 8 different databases (KEGG, Reactome, Biocarta, etc.) can be used on transcriptomic, proteomic, and/or metabolomic level to calculate a combined GSEA-based enrichment score.
+    """
 
-	version("1.18.0", commit="7b0fb21576457be5d64200398d256dbdfdd719ec")
-	version("1.12.0", sha256="a85d3741ca441419734b2ffaed2c916f9fce27950a9dea755b436bbe7c323d5d")
+    homepage = "https://github.com/yigbt/multiGSEA"
+    bioc = "multiGSEA"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-graphite", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-metaboliteidmapping", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-fgsea", type=("build", "run"))
-	depends_on("r-metap", type=("build", "run"))
-	depends_on("r-rappdirs", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
+    version("1.18.0", commit="7b0fb21576457be5d64200398d256dbdfdd719ec")
+    version(
+        "1.12.0",
+        sha256="a85d3741ca441419734b2ffaed2c916f9fce27950a9dea755b436bbe7c323d5d",
+    )
+
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))
+    depends_on("r-graphite", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-metaboliteidmapping", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-fgsea", type=("build", "run"))
+    depends_on("r-metap", type=("build", "run"))
+    depends_on("r-rappdirs", type=("build", "run"))
+    depends_on("r-rlang", type=("build", "run"))

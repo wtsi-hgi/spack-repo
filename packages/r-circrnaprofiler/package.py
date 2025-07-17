@@ -7,38 +7,38 @@ from spack.package import *
 
 
 class RCircrnaprofiler(RPackage):
-	"""circRNAprofiler: An R-Based Computational Framework for the Downstream Analysis of Circular RNAs
+    """circRNAprofiler: An R-Based Computational Framework for the Downstream Analysis of Circular RNAs
 
-	R-based computational framework for a comprehensive in silico analysis of circRNAs. This computational framework allows to combine and analyze circRNAs previously detected by multiple publicly available annotation-based circRNA detection tools. It covers different aspects of circRNAs analysis from differential expression analysis, evolutionary conservation, biogenesis to functional analysis.
-	"""
-	
-	homepage = "https://github.com/Aufiero/circRNAprofiler"
-	bioc = "circRNAprofiler"
+    R-based computational framework for a comprehensive in silico analysis of circRNAs. This computational framework allows to combine and analyze circRNAs previously detected by multiple publicly available annotation-based circRNA detection tools. It covers different aspects of circRNAs analysis from differential expression analysis, evolutionary conservation, biogenesis to functional analysis.
+    """
 
-	version("1.22.1", commit="9355431c62a3d744662829afcb5135e3547bb7a6")
-	version("1.16.0", commit="39fe35bd7843b92d87386819084d694f0b15c53b")
+    homepage = "https://github.com/Aufiero/circRNAprofiler"
+    bioc = "circRNAprofiler"
 
-	depends_on("r@4.3:", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-readr", type=("build", "run"))
-	depends_on("r-rtracklayer", type=("build", "run"))
-	depends_on("r-stringr", type=("build", "run"))
-	depends_on("r-stringi", type=("build", "run"))
-	depends_on("r-deseq2", type=("build", "run"))
-	depends_on("r-edger", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-seqinr", type=("build", "run"))
-	depends_on("r-r-utils", type=("build", "run"))
-	depends_on("r-reshape2", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-genomeinfodb", type=("build", "run"))
-	depends_on("r-universalmotif", type=("build", "run"))
-	depends_on("r-annotationhub", type=("build", "run"))
-	depends_on("r-bsgenome-hsapiens-ucsc-hg19", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
-	depends_on("r-gwascat", type=("build", "run"))
-	depends_on("r-bsgenome", type=("build", "run"))
+    version("1.22.1", commit="9355431c62a3d744662829afcb5135e3547bb7a6")
+    version("1.16.0", commit="39fe35bd7843b92d87386819084d694f0b15c53b")
+
+    depends_on("r@4.3:", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))
+    depends_on("r-readr", type=("build", "run"))
+    depends_on("r-rtracklayer", type=("build", "run"))
+    depends_on("r-stringr", type=("build", "run"))
+    depends_on("r-stringi", type=("build", "run"))
+    depends_on("r-deseq2", type=("build", "run"))
+    depends_on("r-edger", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-seqinr", type=("build", "run"))
+    depends_on("r-r-utils", type=("build", "run"))
+    depends_on("r-reshape2", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-rlang", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-genomeinfodb", type=("build", "run"))
+    depends_on("r-universalmotif", type=("build", "run"))
+    depends_on("r-annotationhub", type=("build", "run"))
+    depends_on("r-bsgenome-hsapiens-ucsc-hg19", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-gwascat", type=("build", "run"))
+    depends_on("r-bsgenome", type=("build", "run"))

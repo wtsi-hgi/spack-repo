@@ -7,15 +7,14 @@ from spack.package import *
 
 
 class RMinionsummarydata(RPackage):
-	"""Summarised MinION sequencing data published by Ashton et al. 2015
+    """Summarised MinION sequencing data published by Ashton et al. 2015
 
-	Summarised MinION sequencing data for Salmonella Typhi published by Ashton et al. in 2015. Three replicate runs are each provided as Fast5Summary objects.
-	"""
-	
-	bioc = "minionSummaryData"
+    Summarised MinION sequencing data for Salmonella Typhi published by Ashton et al. in 2015. Three replicate runs are each provided as Fast5Summary objects.
+    """
 
-	version("1.38.0", commit="01f179b8f51fad196254ecfb1580fb35b9e60300")
-	version("1.32.0", commit="c5efcc288603153f51d2bdb15073cb8cfd205302")
+    bioc = "minionSummaryData"
 
-	depends_on("r@3.2:", type=("build", "run"))
+    version("1.38.0", commit="01f179b8f51fad196254ecfb1580fb35b9e60300")
+    version("1.32.0", commit="c5efcc288603153f51d2bdb15073cb8cfd205302")
 
+    depends_on("r@3.2:", type=("build", "run"))

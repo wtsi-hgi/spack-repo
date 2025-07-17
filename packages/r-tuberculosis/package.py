@@ -7,27 +7,26 @@ from spack.package import *
 
 
 class RTuberculosis(RPackage):
-	"""Tuberculosis Gene Expression Data for Machine Learning
+    """Tuberculosis Gene Expression Data for Machine Learning
 
-	The tuberculosis R/Bioconductor package features tuberculosis gene expression data for machine learning. All human samples from GEO that did not come from cell lines, were not taken postmortem, and did not feature recombination have been included. The package has more than 10,000 samples from both microarray and sequencing studies that have been processed from raw data through a hyper-standardized, reproducible pipeline.
-	"""
-	
-	homepage = "https://github.com/schifferl/tuberculosis"
-	bioc = "tuberculosis"
+    The tuberculosis R/Bioconductor package features tuberculosis gene expression data for machine learning. All human samples from GEO that did not come from cell lines, were not taken postmortem, and did not feature recombination have been included. The package has more than 10,000 samples from both microarray and sequencing studies that have been processed from raw data through a hyper-standardized, reproducible pipeline.
+    """
 
-	version("1.14.0", commit="22d6906e26d4d9b47ad75b46b82d82b51acc964d")
-	version("1.8.0", commit="b7606999fac375e8515d80e603d76f3f1247ae87")
+    homepage = "https://github.com/schifferl/tuberculosis"
+    bioc = "tuberculosis"
 
-	depends_on("r@4.1:", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-annotationhub", type=("build", "run"))
-	depends_on("r-experimenthub", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-purrr", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
-	depends_on("r-stringr", type=("build", "run"))
-	depends_on("r-tibble", type=("build", "run"))
-	depends_on("r-tidyr", type=("build", "run"))
+    version("1.14.0", commit="22d6906e26d4d9b47ad75b46b82d82b51acc964d")
+    version("1.8.0", commit="b7606999fac375e8515d80e603d76f3f1247ae87")
 
+    depends_on("r@4.1:", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-annotationhub", type=("build", "run"))
+    depends_on("r-experimenthub", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))
+    depends_on("r-purrr", type=("build", "run"))
+    depends_on("r-rlang", type=("build", "run"))
+    depends_on("r-stringr", type=("build", "run"))
+    depends_on("r-tibble", type=("build", "run"))
+    depends_on("r-tidyr", type=("build", "run"))

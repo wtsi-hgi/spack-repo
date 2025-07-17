@@ -7,17 +7,22 @@ from spack.package import *
 
 
 class RMogene10stprobesetDb(RPackage):
-	"""Affymetrix mogene10 annotation data (chip mogene10stprobeset)
+    """Affymetrix mogene10 annotation data (chip mogene10stprobeset)
 
-	Affymetrix mogene10 annotation data (chip mogene10stprobeset) assembled using data from public repositories
-	"""
-	
-	bioc = "mogene10stprobeset.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mogene10stprobeset.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mogene10stprobeset.db/mogene10stprobeset.db_8.8.0.tar.gz"]
+    Affymetrix mogene10 annotation data (chip mogene10stprobeset) assembled using data from public repositories
+    """
 
-	version("8.8.0", sha256="35c9eefb8790769b1ae805c0fde6aca3a7fdc38ebb7d832c4c1e091cdf570f43")
+    bioc = "mogene10stprobeset.db"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mogene10stprobeset.db_8.8.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mogene10stprobeset.db/mogene10stprobeset.db_8.8.0.tar.gz",
+    ]
 
-	depends_on("r@2.7:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-org-mm-eg-db@3.13:", type=("build", "run"))
+    version(
+        "8.8.0",
+        sha256="35c9eefb8790769b1ae805c0fde6aca3a7fdc38ebb7d832c4c1e091cdf570f43",
+    )
 
+    depends_on("r@2.7:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-org-mm-eg-db@3.13:", type=("build", "run"))

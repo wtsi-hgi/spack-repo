@@ -7,17 +7,17 @@ from spack.package import *
 
 
 class RCytolib(RPackage):
-	"""C++ infrastructure for representing and interacting with the gated cytometry data
+    """C++ infrastructure for representing and interacting with the gated cytometry data
 
-	This package provides the core data structure and API to represent and interact with the gated cytometry data.
-	"""
-	
-	bioc = "cytolib"
+    This package provides the core data structure and API to represent and interact with the gated cytometry data.
+    """
 
-	version("2.20.0", commit="262eb4a0cba2ec58795468963f0f948b97662788")
-	version("2.14.1", commit="4e456ea7bc236eefd6c5f48f33f64729c8c08857")
+    bioc = "cytolib"
 
-	depends_on("r@3.4:", type=("build", "run"))
-	depends_on("r-rprotobuflib@2.13.1:", type=("build", "run"))
-	depends_on("r-bh@1.84:", type=("build", "run"))
-	depends_on("r-rhdf5lib", type=("build", "run"))
+    version("2.20.0", commit="262eb4a0cba2ec58795468963f0f948b97662788")
+    version("2.14.1", commit="4e456ea7bc236eefd6c5f48f33f64729c8c08857")
+
+    depends_on("r@3.4:", type=("build", "run"))
+    depends_on("r-rprotobuflib@2.13.1:", type=("build", "run"))
+    depends_on("r-bh@1.84:", type=("build", "run"))
+    depends_on("r-rhdf5lib", type=("build", "run"))

@@ -7,15 +7,21 @@ from spack.package import *
 
 
 class RBsgenomeAlyrataJgiV1(RPackage):
-	"""Arabidopsis lyrata full genome (JGI version V1.0)
+    """Arabidopsis lyrata full genome (JGI version V1.0)
 
-	Arabidopsis lyrata 8x Release [project ID 4002920] as provided by JGI ( snapshot from March 24, 2011) and stored in Biostrings objects.
-	"""
-	
-	bioc = "BSgenome.Alyrata.JGI.v1" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Alyrata.JGI.v1_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Alyrata.JGI.v1/BSgenome.Alyrata.JGI.v1_1.0.1.tar.gz"]
+    Arabidopsis lyrata 8x Release [project ID 4002920] as provided by JGI ( snapshot from March 24, 2011) and stored in Biostrings objects.
+    """
 
-	version("1.0.1", md5="64878499c633de66ccf4c5abc32c0aeb", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Alyrata.JGI.v1_1.0.1.tar.gz")
+    bioc = "BSgenome.Alyrata.JGI.v1"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Alyrata.JGI.v1_1.0.1.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Alyrata.JGI.v1/BSgenome.Alyrata.JGI.v1_1.0.1.tar.gz",
+    ]
 
-	depends_on("r-bsgenome", type=("build", "run"))
+    version(
+        "1.0.1",
+        md5="64878499c633de66ccf4c5abc32c0aeb",
+        url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Alyrata.JGI.v1_1.0.1.tar.gz",
+    )
 
+    depends_on("r-bsgenome", type=("build", "run"))

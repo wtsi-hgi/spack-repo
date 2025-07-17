@@ -7,18 +7,17 @@ from spack.package import *
 
 
 class REpitxdbScSaccer3(RPackage):
-	"""Annotation package for EpiTxDb objects
+    """Annotation package for EpiTxDb objects
 
-	Exposes an annotation databases generated from several sources by exposing these as EpiTxDb object. Generated for Saccharomyces cerevisiae/sacCer3.
-	"""
-	
-	homepage = "https://github.com/FelixErnst/EpiTxDb.Sc.sacCer3"
-	bioc = "EpiTxDb.Sc.sacCer3"
+    Exposes an annotation databases generated from several sources by exposing these as EpiTxDb object. Generated for Saccharomyces cerevisiae/sacCer3.
+    """
 
-	version("0.99.5", commit="bf65d31fcb72328a561ef75674612c0ce1e73395")
-	version("0.99.5", commit="bf65d31fcb72328a561ef75674612c0ce1e73395")
+    homepage = "https://github.com/FelixErnst/EpiTxDb.Sc.sacCer3"
+    bioc = "EpiTxDb.Sc.sacCer3"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-annotationhub", type=("build", "run"))
-	depends_on("r-epitxdb", type=("build", "run"))
+    version("0.99.5", commit="bf65d31fcb72328a561ef75674612c0ce1e73395")
+    version("0.99.5", commit="bf65d31fcb72328a561ef75674612c0ce1e73395")
 
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-annotationhub", type=("build", "run"))
+    depends_on("r-epitxdb", type=("build", "run"))

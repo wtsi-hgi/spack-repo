@@ -7,14 +7,14 @@ from spack.package import *
 
 
 class RAseb(RPackage):
-	"""Predict Acetylated Lysine Sites
+    """Predict Acetylated Lysine Sites
 
-	ASEB is an R package to predict lysine sites that can be acetylated by a specific KAT-family.
-	"""
-	
-	bioc = "ASEB"
+    ASEB is an R package to predict lysine sites that can be acetylated by a specific KAT-family.
+    """
 
-	version("1.52.0", commit="fa6f28a9a2fc571547eccb2c329931cd49e23123")
-	version("1.46.3", commit="99edb08fe5b0f390f7a0d77c5fcea0e5dcc31275")
+    bioc = "ASEB"
 
-	depends_on("r@2.8:", type=("build", "run"))
+    version("1.52.0", commit="fa6f28a9a2fc571547eccb2c329931cd49e23123")
+    version("1.46.3", commit="99edb08fe5b0f390f7a0d77c5fcea0e5dcc31275")
+
+    depends_on("r@2.8:", type=("build", "run"))

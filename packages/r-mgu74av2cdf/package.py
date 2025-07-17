@@ -7,15 +7,20 @@ from spack.package import *
 
 
 class RMgu74av2cdf(RPackage):
-	"""mgu74av2cdf
+    """mgu74av2cdf
 
-	A package containing an environment representing the MG_U74Av2.CDF file.
-	"""
-	
-	bioc = "mgu74av2cdf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mgu74av2cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mgu74av2cdf/mgu74av2cdf_2.18.0.tar.gz"]
+    A package containing an environment representing the MG_U74Av2.CDF file.
+    """
 
-	version("2.18.0", sha256="960c5e544e2f4ae02870fe08a7f52a45c034e26c188ddd1b7800b53a37c285b3")
+    bioc = "mgu74av2cdf"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mgu74av2cdf_2.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mgu74av2cdf/mgu74av2cdf_2.18.0.tar.gz",
+    ]
 
-	depends_on("r-annotationdbi", type=("build", "run"))
+    version(
+        "2.18.0",
+        sha256="960c5e544e2f4ae02870fe08a7f52a45c034e26c188ddd1b7800b53a37c285b3",
+    )
 
+    depends_on("r-annotationdbi", type=("build", "run"))

@@ -16,7 +16,10 @@ class RBioconcotk(RPackage):
     urls = [
         "https://bioconductor.org/packages/release/bioc/src/contrib/BiocOncoTK_1.24.0.tar.gz",
     ]
-    version("1.24.0", sha256="a3ae5bb9a251ee9122de9a14fb770e206f5d8e73470724db3cddaf9ae9c98c40")
+    version(
+        "1.24.0",
+        sha256="a3ae5bb9a251ee9122de9a14fb770e206f5d8e73470724db3cddaf9ae9c98c40",
+    )
 
     depends_on("r@3.6:", type=("build", "run"))
     depends_on("r-complexheatmap", type=("build", "run"))

@@ -7,17 +7,17 @@ from spack.package import *
 
 
 class RIgc(RPackage):
-	"""An integrated analysis package of Gene expression and Copy number alteration
+    """An integrated analysis package of Gene expression and Copy number alteration
 
-	This package is intended to identify differentially expressed genes driven by Copy Number Alterations from samples with both gene expression and CNA data.
-	"""
-	
-	homepage = "http://github.com/ccwang002/iGC"
-	bioc = "iGC"
+    This package is intended to identify differentially expressed genes driven by Copy Number Alterations from samples with both gene expression and CNA data.
+    """
 
-	version("1.38.0", commit="0b6c595d9a450e18c0d29ef114f0f5c0626a08bc")
-	version("1.32.0", commit="18e7fd25f3b3037861243b76930d03933daa5ef8")
+    homepage = "http://github.com/ccwang002/iGC"
+    bioc = "iGC"
 
-	depends_on("r@3.2:", type=("build", "run"))
-	depends_on("r-plyr", type=("build", "run"))
-	depends_on("r-data-table", type=("build", "run"))
+    version("1.38.0", commit="0b6c595d9a450e18c0d29ef114f0f5c0626a08bc")
+    version("1.32.0", commit="18e7fd25f3b3037861243b76930d03933daa5ef8")
+
+    depends_on("r@3.2:", type=("build", "run"))
+    depends_on("r-plyr", type=("build", "run"))
+    depends_on("r-data-table", type=("build", "run"))

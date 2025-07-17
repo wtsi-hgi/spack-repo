@@ -7,37 +7,37 @@ from spack.package import *
 
 
 class RMethreg(RPackage):
-	"""Assessing the regulatory potential of DNA methylation regions or sites on gene transcription
+    """Assessing the regulatory potential of DNA methylation regions or sites on gene transcription
 
-	Epigenome-wide association studies (EWAS) detects a large number of DNA methylation differences, often hundreds of differentially methylated regions and thousands of CpGs, that are significantly associated with a disease, many are located in non-coding regions. Therefore, there is a critical need to better understand the functional impact of these CpG methylations and to further prioritize the significant changes. MethReg is an R package for integrative modeling of DNA methylation, target gene expression and transcription factor binding sites data, to systematically identify and rank functional CpG methylations. MethReg evaluates, prioritizes and annotates CpG sites with high regulatory potential using matched methylation and gene expression data, along with external TF-target interaction databases based on manually curation, ChIP-seq experiments or gene regulatory network analysis.
-	"""
-	
-	bioc = "MethReg"
+    Epigenome-wide association studies (EWAS) detects a large number of DNA methylation differences, often hundreds of differentially methylated regions and thousands of CpGs, that are significantly associated with a disease, many are located in non-coding regions. Therefore, there is a critical need to better understand the functional impact of these CpG methylations and to further prioritize the significant changes. MethReg is an R package for integrative modeling of DNA methylation, target gene expression and transcription factor binding sites data, to systematically identify and rank functional CpG methylations. MethReg evaluates, prioritizes and annotates CpG sites with high regulatory potential using matched methylation and gene expression data, along with external TF-target interaction databases based on manually curation, ChIP-seq experiments or gene regulatory network analysis.
+    """
 
-	version("1.18.0", commit="cc9ab7e7906c9fe738b5c4598cc83b5e81555f47")
-	version("1.12.0", commit="30684d3e60b9641328238ba88870d62bc2fadb08")
+    bioc = "MethReg"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-plyr", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-delayedarray", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-ggpubr", type=("build", "run"))
-	depends_on("r-tibble", type=("build", "run"))
-	depends_on("r-tidyr", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-sesamedata", type=("build", "run"))
-	depends_on("r-sesame", type=("build", "run"))
-	depends_on("r-annotationhub", type=("build", "run"))
-	depends_on("r-experimenthub", type=("build", "run"))
-	depends_on("r-stringr", type=("build", "run"))
-	depends_on("r-readr", type=("build", "run"))
-	depends_on("r-matrix", type=("build", "run"))
-	depends_on("r-mass", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
-	depends_on("r-pscl", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-sfsmisc", type=("build", "run"))
-	depends_on("r-progress", type=("build", "run"))
+    version("1.18.0", commit="cc9ab7e7906c9fe738b5c4598cc83b5e81555f47")
+    version("1.12.0", commit="30684d3e60b9641328238ba88870d62bc2fadb08")
+
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-plyr", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-delayedarray", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-ggpubr", type=("build", "run"))
+    depends_on("r-tibble", type=("build", "run"))
+    depends_on("r-tidyr", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-sesamedata", type=("build", "run"))
+    depends_on("r-sesame", type=("build", "run"))
+    depends_on("r-annotationhub", type=("build", "run"))
+    depends_on("r-experimenthub", type=("build", "run"))
+    depends_on("r-stringr", type=("build", "run"))
+    depends_on("r-readr", type=("build", "run"))
+    depends_on("r-matrix", type=("build", "run"))
+    depends_on("r-mass", type=("build", "run"))
+    depends_on("r-rlang", type=("build", "run"))
+    depends_on("r-pscl", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-sfsmisc", type=("build", "run"))
+    depends_on("r-progress", type=("build", "run"))

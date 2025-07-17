@@ -7,16 +7,21 @@ from spack.package import *
 
 
 class RMedicagoprobe(RPackage):
-	"""Probe sequence data for microarrays of type medicago
+    """Probe sequence data for microarrays of type medicago
 
-	This package was automatically created by package AnnotationForge version 1.11.21. The probe sequence data was obtained from http://www.affymetrix.com. The file name was Medicago_probe_tab.
-	"""
-	
-	bioc = "medicagoprobe" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/medicagoprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/medicagoprobe/medicagoprobe_2.18.0.tar.gz"]
+    This package was automatically created by package AnnotationForge version 1.11.21. The probe sequence data was obtained from http://www.affymetrix.com. The file name was Medicago_probe_tab.
+    """
 
-	version("2.18.0", sha256="85b2c499195d883eebc712248013831d5bee057651deac11bb76ac3ddd0dd270")
+    bioc = "medicagoprobe"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/medicagoprobe_2.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/medicagoprobe/medicagoprobe_2.18.0.tar.gz",
+    ]
 
-	depends_on("r@1.6:", type=("build", "run"))
-	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))
+    version(
+        "2.18.0",
+        sha256="85b2c499195d883eebc712248013831d5bee057651deac11bb76ac3ddd0dd270",
+    )
 
+    depends_on("r@1.6:", type=("build", "run"))
+    depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

@@ -7,17 +7,22 @@ from spack.package import *
 
 
 class RLumimouseidmapping(RPackage):
-	"""Illumina Identifier mapping for Mouse
+    """Illumina Identifier mapping for Mouse
 
-	This package includes mappings information between different types of Illumina IDs of Illumina Mouse chips and nuIDs. It also includes mappings of all nuIDs included in Illumina Mouse chips to RefSeq IDs with mapping qualities information.
-	"""
-	
-	bioc = "lumiMouseIDMapping" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/lumiMouseIDMapping_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/lumiMouseIDMapping/lumiMouseIDMapping_1.10.0.tar.gz"]
+    This package includes mappings information between different types of Illumina IDs of Illumina Mouse chips and nuIDs. It also includes mappings of all nuIDs included in Illumina Mouse chips to RefSeq IDs with mapping qualities information.
+    """
 
-	version("1.10.0", sha256="a9c6a67caf09509bee78288c49135e156a708aa48f287585b6a35c71f93eaca2")
+    bioc = "lumiMouseIDMapping"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/lumiMouseIDMapping_1.10.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/lumiMouseIDMapping/lumiMouseIDMapping_1.10.0.tar.gz",
+    ]
 
-	depends_on("r@2.7:", type=("build", "run"))
-	depends_on("r-lumi@1.7.14:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
+    version(
+        "1.10.0",
+        sha256="a9c6a67caf09509bee78288c49135e156a708aa48f287585b6a35c71f93eaca2",
+    )
 
+    depends_on("r@2.7:", type=("build", "run"))
+    depends_on("r-lumi@1.7.14:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))

@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RCardinalworkflows(RPackage):
-	"""Datasets and workflows for the Cardinal mass spectrometry imaging package
+    """Datasets and workflows for the Cardinal mass spectrometry imaging package
 
-	Datasets and workflows for Cardinal: DESI and MALDI examples including pig fetus, cardinal painting, and human RCC.
-	"""
-	
-	bioc = "CardinalWorkflows"
+    Datasets and workflows for Cardinal: DESI and MALDI examples including pig fetus, cardinal painting, and human RCC.
+    """
 
-	version("1.40.0", commit="10794a4eeaefd195ec84616c67b44d00fb70e736")
-	version("1.34.0", commit="0a85b419bdd32cda5bd195577159544f875c56e1")
+    bioc = "CardinalWorkflows"
 
-	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-cardinal", type=("build", "run"))
+    version("1.40.0", commit="10794a4eeaefd195ec84616c67b44d00fb70e736")
+    version("1.34.0", commit="0a85b419bdd32cda5bd195577159544f875c56e1")
 
+    depends_on("r@2.10:", type=("build", "run"))
+    depends_on("r-cardinal", type=("build", "run"))

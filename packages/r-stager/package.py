@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class RStager(RPackage):
-	"""stageR: stage-wise analysis of high throughput gene expression data in R
+    """stageR: stage-wise analysis of high throughput gene expression data in R
 
-	The stageR package allows automated stage-wise analysis of high-throughput gene expression data. The method is published in Genome Biology at https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1277-0
-	"""
-	
-	bioc = "stageR"
+    The stageR package allows automated stage-wise analysis of high-throughput gene expression data. The method is published in Genome Biology at https://genomebiology.biomedcentral.com/articles/10.1186/s13059-017-1277-0
+    """
 
-	version("1.30.1", commit="15759603f4c36ebe013715e7f55135dff65dadfb")
-	version("1.24.0", commit="c4ff87efeaa83f4aa941bc88e8e4f5bceaee0cb7")
+    bioc = "stageR"
 
-	depends_on("r@3.4:", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
+    version("1.30.1", commit="15759603f4c36ebe013715e7f55135dff65dadfb")
+    version("1.24.0", commit="c4ff87efeaa83f4aa941bc88e8e4f5bceaee0cb7")
+
+    depends_on("r@3.4:", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))

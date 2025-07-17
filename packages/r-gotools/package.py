@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class RGotools(RPackage):
-	"""Functions for Gene Ontology database
+    """Functions for Gene Ontology database
 
-	Wraper functions for description/comparison of oligo ID list using Gene Ontology database
-	"""
-	
-	bioc = "goTools"
+    Wraper functions for description/comparison of oligo ID list using Gene Ontology database
+    """
 
-	version("1.82.0", commit="7c93e7d83c0b44ccdfb933d365b8212c9b1e1b24")
-	version("1.76.0", commit="d860fb70826460519254e0987ad6d34b894bd8f6")
+    bioc = "goTools"
 
-	depends_on("r-go-db", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
+    version("1.82.0", commit="7c93e7d83c0b44ccdfb933d365b8212c9b1e1b24")
+    version("1.76.0", commit="d860fb70826460519254e0987ad6d34b894bd8f6")
+
+    depends_on("r-go-db", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))

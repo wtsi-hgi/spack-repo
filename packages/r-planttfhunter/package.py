@@ -7,18 +7,18 @@ from spack.package import *
 
 
 class RPlanttfhunter(RPackage):
-	"""Identification and classification of plant transcription factors
+    """Identification and classification of plant transcription factors
 
-	planttfhunter is used to identify plant transcription factors (TFs) from protein sequence data and classify them into families and subfamilies using the classification scheme implemented in PlantTFDB. TFs are identified using pre-built hidden Markov model profiles for DNA-binding domains. Then, auxiliary and forbidden domains are used with DNA-binding domains to classify TFs into families and subfamilies (when applicable). Currently, TFs can be classified in 58 different TF families/subfamilies.
-	"""
-	
-	homepage = "https://github.com/almeidasilvaf/planttfhunter"
-	bioc = "planttfhunter"
+    planttfhunter is used to identify plant transcription factors (TFs) from protein sequence data and classify them into families and subfamilies using the classification scheme implemented in PlantTFDB. TFs are identified using pre-built hidden Markov model profiles for DNA-binding domains. Then, auxiliary and forbidden domains are used with DNA-binding domains to classify TFs into families and subfamilies (when applicable). Currently, TFs can be classified in 58 different TF families/subfamilies.
+    """
 
-	version("1.8.0", commit="946fd3868150039b43a4d36bb2a44d42f0894a3d")
-	version("1.2.0", commit="1c8427c1ecfb1564f135c15f3dc7fbf14bf48f31")
+    homepage = "https://github.com/almeidasilvaf/planttfhunter"
+    bioc = "planttfhunter"
 
-	depends_on("r@4.2:", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("hmmer", type=("build", "link", "run"))
+    version("1.8.0", commit="946fd3868150039b43a4d36bb2a44d42f0894a3d")
+    version("1.2.0", commit="1c8427c1ecfb1564f135c15f3dc7fbf14bf48f31")
+
+    depends_on("r@4.2:", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("hmmer", type=("build", "link", "run"))

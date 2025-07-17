@@ -7,39 +7,39 @@ from spack.package import *
 
 
 class REgsea(RPackage):
-	"""Ensemble of Gene Set Enrichment Analyses
+    """Ensemble of Gene Set Enrichment Analyses
 
-	This package implements the Ensemble of Gene Set Enrichment Analyses (EGSEA) method for gene set testing. EGSEA algorithm utilizes the analysis results of twelve prominent GSE algorithms in the literature to calculate collective significance scores for each gene set.
-	"""
-	
-	bioc = "EGSEA"
+    This package implements the Ensemble of Gene Set Enrichment Analyses (EGSEA) method for gene set testing. EGSEA algorithm utilizes the analysis results of twelve prominent GSE algorithms in the literature to calculate collective significance scores for each gene set.
+    """
 
-	version("1.36.0", commit="824df9e6f36f6b1f454dae290041422168fa496d")
-	version("1.30.1", commit="8e57e0385006a5a8314e66c1805e234f9e1b5115")
+    bioc = "EGSEA"
 
-	depends_on("r@4.3:", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-gage@2.14.4:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-topgo@2.16:", type=("build", "run"))
-	depends_on("r-pathview@1.4.2:", type=("build", "run"))
-	depends_on("r-padog@1.6:", type=("build", "run"))
-	depends_on("r-gsva@1.12:", type=("build", "run"))
-	depends_on("r-globaltest@5.18:", type=("build", "run"))
-	depends_on("r-limma@3.20.9:", type=("build", "run"))
-	depends_on("r-edger@3.6.8:", type=("build", "run"))
-	depends_on("r-htmlutils@0.1.5:", type=("build", "run"))
-	depends_on("r-hwriter@1.2.2:", type=("build", "run"))
-	depends_on("r-gplots@2.14.2:", type=("build", "run"))
-	depends_on("r-ggplot2@1:", type=("build", "run"))
-	depends_on("r-safe@3.4:", type=("build", "run"))
-	depends_on("r-stringi@0.5:", type=("build", "run"))
-	depends_on("r-metap", type=("build", "run"))
-	depends_on("r-org-hs-eg-db", type=("build", "run"))
-	depends_on("r-org-mm-eg-db", type=("build", "run"))
-	depends_on("r-org-rn-eg-db", type=("build", "run"))
-	depends_on("r-rcolorbrewer", type=("build", "run"))
-	depends_on("r-egseadata@1.3.1:", type=("build", "run"))
-	depends_on("r-htmlwidgets", type=("build", "run"))
-	depends_on("r-plotly", type=("build", "run"))
-	depends_on("r-dt", type=("build", "run"))
+    version("1.36.0", commit="824df9e6f36f6b1f454dae290041422168fa496d")
+    version("1.30.1", commit="8e57e0385006a5a8314e66c1805e234f9e1b5115")
+
+    depends_on("r@4.3:", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-gage@2.14.4:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-topgo@2.16:", type=("build", "run"))
+    depends_on("r-pathview@1.4.2:", type=("build", "run"))
+    depends_on("r-padog@1.6:", type=("build", "run"))
+    depends_on("r-gsva@1.12:", type=("build", "run"))
+    depends_on("r-globaltest@5.18:", type=("build", "run"))
+    depends_on("r-limma@3.20.9:", type=("build", "run"))
+    depends_on("r-edger@3.6.8:", type=("build", "run"))
+    depends_on("r-htmlutils@0.1.5:", type=("build", "run"))
+    depends_on("r-hwriter@1.2.2:", type=("build", "run"))
+    depends_on("r-gplots@2.14.2:", type=("build", "run"))
+    depends_on("r-ggplot2@1:", type=("build", "run"))
+    depends_on("r-safe@3.4:", type=("build", "run"))
+    depends_on("r-stringi@0.5:", type=("build", "run"))
+    depends_on("r-metap", type=("build", "run"))
+    depends_on("r-org-hs-eg-db", type=("build", "run"))
+    depends_on("r-org-mm-eg-db", type=("build", "run"))
+    depends_on("r-org-rn-eg-db", type=("build", "run"))
+    depends_on("r-rcolorbrewer", type=("build", "run"))
+    depends_on("r-egseadata@1.3.1:", type=("build", "run"))
+    depends_on("r-htmlwidgets", type=("build", "run"))
+    depends_on("r-plotly", type=("build", "run"))
+    depends_on("r-dt", type=("build", "run"))

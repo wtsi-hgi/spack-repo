@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RTimecoursedata(RPackage):
-	"""A data package for timecourse RNA-seq and microarray gene expression data sets
+    """A data package for timecourse RNA-seq and microarray gene expression data sets
 
-	This data package contains timecourse gene expression data sets. The first dataset, from Shoemaker et al, consists of microarray samples from lung tissue of mice exposed to different influenzy strains from 14 timepoints. The two other datasets are leaf and root samples from sorghum crops exposed to pre- and post-flowering drought stress and a control condition, sampled across the plants lifetime.
-	"""
-	
-	bioc = "timecoursedata"
+    This data package contains timecourse gene expression data sets. The first dataset, from Shoemaker et al, consists of microarray samples from lung tissue of mice exposed to different influenzy strains from 14 timepoints. The two other datasets are leaf and root samples from sorghum crops exposed to pre- and post-flowering drought stress and a control condition, sampled across the plants lifetime.
+    """
 
-	version("1.18.0", commit="321d66ea997cbd3a048353cfbe3e6e88a31d33b1")
-	version("1.12.0", commit="bf6bcb962b5dd82a4ee858ed7a5c6c569c73d3f2")
+    bioc = "timecoursedata"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
+    version("1.18.0", commit="321d66ea997cbd3a048353cfbe3e6e88a31d33b1")
+    version("1.12.0", commit="bf6bcb962b5dd82a4ee858ed7a5c6c569c73d3f2")
 
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))

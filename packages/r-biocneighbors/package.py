@@ -20,7 +20,9 @@ class RBiocneighbors(RPackage):
     within a given distance."""
 
     bioc = "BiocNeighbors"
-    git = "https://git.bioconductor.org/packages/BiocNeighbors"version("1.8.2", commit="889bc91f8cb45d210b47ae5c0b9cfb86fb071ca2")
+    git = "https://git.bioconductor.org/packages/BiocNeighbors"
+
+    version("1.8.2", commit="889bc91f8cb45d210b47ae5c0b9cfb86fb071ca2")
     version("2.2.0", commit="526077304882ecd6a28138d9f06c5b501947addb")
     version("1.20.2", commit="f792beec27e6fa75064b6a39a541f5d15dada54d")
     version("1.2.0", commit="f754c6300f835142536a4594ddf750481e0fe273")

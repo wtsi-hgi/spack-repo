@@ -18,7 +18,9 @@ class RS4vectors(RPackage):
     more are implemented in the IRanges package and in other Bioconductor
     infrastructure packages)."""
 
-    bioc = "S4Vectors"version("0.46.0", commit="f4a665d66e3d84099b551ae03840c727a374c178")
+    bioc = "S4Vectors"
+
+    version("0.46.0", commit="f4a665d66e3d84099b551ae03840c727a374c178")
     version("0.40.2", commit="8cd5cb3cbd469be6a8c9621461e0e16a314506c6")
     version("0.38.0", commit="e80c24e1481033741147a0677fb42ce455e7da74")
     version("0.36.0", commit="af58701957ffdd9209031dd6a8dee3acdc58e999")

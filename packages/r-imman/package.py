@@ -7,17 +7,17 @@ from spack.package import *
 
 
 class RImman(RPackage):
-	"""Interlog protein network reconstruction by Mapping and Mining ANalysis
+    """Interlog protein network reconstruction by Mapping and Mining ANalysis
 
-	Reconstructing Interlog Protein Network (IPN) integrated from several Protein protein Interaction Networks (PPINs). Using this package, overlaying different PPINs to mine conserved common networks between diverse species will be applicable.
-	"""
-	
-	bioc = "IMMAN"
+    Reconstructing Interlog Protein Network (IPN) integrated from several Protein protein Interaction Networks (PPINs). Using this package, overlaying different PPINs to mine conserved common networks between diverse species will be applicable.
+    """
 
-	version("1.28.0", commit="64beff68a13f145c2c1b232fc44dfa752ef06d57")
-	version("1.22.0", commit="561195579065e60624167f72f60f235b3bd06b55")
+    bioc = "IMMAN"
 
-	depends_on("r-stringdb", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
-	depends_on("r-igraph", type=("build", "run"))
-	depends_on("r-seqinr", type=("build", "run"))
+    version("1.28.0", commit="64beff68a13f145c2c1b232fc44dfa752ef06d57")
+    version("1.22.0", commit="561195579065e60624167f72f60f235b3bd06b55")
+
+    depends_on("r-stringdb", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-igraph", type=("build", "run"))
+    depends_on("r-seqinr", type=("build", "run"))

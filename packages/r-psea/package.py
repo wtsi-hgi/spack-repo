@@ -7,14 +7,14 @@ from spack.package import *
 
 
 class RPsea(RPackage):
-	"""Population-Specific Expression Analysis.
+    """Population-Specific Expression Analysis.
 
-	Deconvolution of gene expression data by Population-Specific Expression Analysis (PSEA).
-	"""
-	
-	bioc = "PSEA"
+    Deconvolution of gene expression data by Population-Specific Expression Analysis (PSEA).
+    """
 
-	version("1.36.0", commit="11e95fde4a6ea40858fda70cce20a9450543d67a")
+    bioc = "PSEA"
 
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-mass", type=("build", "run"))
+    version("1.36.0", commit="11e95fde4a6ea40858fda70cce20a9450543d67a")
+
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-mass", type=("build", "run"))

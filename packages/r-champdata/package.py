@@ -7,21 +7,20 @@ from spack.package import *
 
 
 class RChampdata(RPackage):
-	"""Packages for ChAMP package.
+    """Packages for ChAMP package.
 
-	Provides datasets needed for ChAMP including a test dataset and blood
-	controls for CNA analysis."""
+    Provides datasets needed for ChAMP including a test dataset and blood
+    controls for CNA analysis."""
 
-	bioc = "ChAMPdata"
-	version("2.40.0", commit="2e76a6eec80cb42c6a0d50db3ad946f44a5c8ed2")
-	version("2.34.0", commit="debac652f0e001883c3c26b2f66efcea42ef633d")
-	version("2.32.0", commit="98a94978001b6a28543257e72a036c43d61e67ef")
-	version("2.30.0", commit="6e05b8f7b004b1a5185ec4b387c32725e8bd95cb")
-	version("2.28.0", commit="601555bf599828b6cfa125beffa51aebccdc8503")
-	version("2.26.0", commit="ea7882707921af33eefab5133a1ccd4a409f045d")
-	version("2.22.0", commit="eeedd4c477fac79f00743da8ff7da064221c5f3d")
+    bioc = "ChAMPdata"
+    version("2.40.0", commit="2e76a6eec80cb42c6a0d50db3ad946f44a5c8ed2")
+    version("2.34.0", commit="debac652f0e001883c3c26b2f66efcea42ef633d")
+    version("2.32.0", commit="98a94978001b6a28543257e72a036c43d61e67ef")
+    version("2.30.0", commit="6e05b8f7b004b1a5185ec4b387c32725e8bd95cb")
+    version("2.28.0", commit="601555bf599828b6cfa125beffa51aebccdc8503")
+    version("2.26.0", commit="ea7882707921af33eefab5133a1ccd4a409f045d")
+    version("2.22.0", commit="eeedd4c477fac79f00743da8ff7da064221c5f3d")
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-genomicranges@1.22.4:", type=("build", "run"))
-	depends_on("r-biocgenerics@0.16.1:", type=("build", "run"))
-
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-genomicranges@1.22.4:", type=("build", "run"))
+    depends_on("r-biocgenerics@0.16.1:", type=("build", "run"))

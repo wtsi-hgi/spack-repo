@@ -7,17 +7,22 @@ from spack.package import *
 
 
 class RMpedbarrayDb(RPackage):
-	"""FHCRC Nelson Lab mpedbarray Annotation Data (mpedbarray)
+    """FHCRC Nelson Lab mpedbarray Annotation Data (mpedbarray)
 
-	FHCRC Nelson Lab mpedbarray Annotation Data (mpedbarray) assembled using data from public repositories
-	"""
-	
-	bioc = "mpedbarray.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mpedbarray.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mpedbarray.db/mpedbarray.db_3.2.3.tar.gz"]
+    FHCRC Nelson Lab mpedbarray Annotation Data (mpedbarray) assembled using data from public repositories
+    """
 
-	version("3.2.3", sha256="91ec9e23dde36eb5de74e14654d46e2f27422db02a656c2d5729acbf2364fc12")
+    bioc = "mpedbarray.db"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mpedbarray.db_3.2.3.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mpedbarray.db/mpedbarray.db_3.2.3.tar.gz",
+    ]
 
-	depends_on("r@2.7:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-org-mm-eg-db@3.3:", type=("build", "run"))
+    version(
+        "3.2.3",
+        sha256="91ec9e23dde36eb5de74e14654d46e2f27422db02a656c2d5729acbf2364fc12",
+    )
 
+    depends_on("r@2.7:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-org-mm-eg-db@3.3:", type=("build", "run"))

@@ -7,16 +7,16 @@ from spack.package import *
 
 
 class RMgsa(RPackage):
-	"""Model-based gene set analysis
+    """Model-based gene set analysis
 
-	Model-based Gene Set Analysis (MGSA) is a Bayesian modeling approach for gene set enrichment. The package mgsa implements MGSA and tools to use MGSA together with the Gene Ontology.
-	"""
-	
-	homepage = "https://github.com/sba1/mgsa-bioc"
-	bioc = "mgsa"
+    Model-based Gene Set Analysis (MGSA) is a Bayesian modeling approach for gene set enrichment. The package mgsa implements MGSA and tools to use MGSA together with the Gene Ontology.
+    """
 
-	version("1.56.0", commit="d41a5d21c593781b09f7d9d221e46c7971aab06b")
-	version("1.50.0", commit="9aaf4281d60ab4fd30142410eb33c1c0b027bd36")
+    homepage = "https://github.com/sba1/mgsa-bioc"
+    bioc = "mgsa"
 
-	depends_on("r@2.14:", type=("build", "run"))
-	depends_on("r-gplots", type=("build", "run"))
+    version("1.56.0", commit="d41a5d21c593781b09f7d9d221e46c7971aab06b")
+    version("1.50.0", commit="9aaf4281d60ab4fd30142410eb33c1c0b027bd36")
+
+    depends_on("r@2.14:", type=("build", "run"))
+    depends_on("r-gplots", type=("build", "run"))

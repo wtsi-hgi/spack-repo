@@ -7,21 +7,27 @@ from spack.package import *
 
 
 class RPdFeinbergMm8MeHx1(RPackage):
-	"""Platform Design Info for NimbleGen feinberg_mm8_me_hx1
+    """Platform Design Info for NimbleGen feinberg_mm8_me_hx1
 
-	Platform Design Info for NimbleGen feinberg_mm8_me_hx1
-	"""
-	
-	bioc = "pd.feinberg.mm8.me.hx1" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.feinberg.mm8.me.hx1_0.99.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.feinberg.mm8.me.hx1/pd.feinberg.mm8.me.hx1_0.99.3.tar.gz"]
+    Platform Design Info for NimbleGen feinberg_mm8_me_hx1
+    """
 
-	version("0.99.3", sha256="554be14d10329310a65dfd4c9752995fcc751ef3f4d3c765e43541d96fcd64f6", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.feinberg.mm8.me.hx1_0.99.3.tar.gz")
+    bioc = "pd.feinberg.mm8.me.hx1"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.feinberg.mm8.me.hx1_0.99.3.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.feinberg.mm8.me.hx1/pd.feinberg.mm8.me.hx1_0.99.3.tar.gz",
+    ]
 
-	depends_on("r@2.11:", type=("build", "run"))
-	depends_on("r-rsqlite@0.7.1:", type=("build", "run"))
-	depends_on("r-oligoclasses@1.9.30:", type=("build", "run"))
-	depends_on("r-oligo@1.11.18:", type=("build", "run"))
-	depends_on("r-dbi", type=("build", "run"))
-	depends_on("r-biostrings@2.13.50:", type=("build", "run"))
-	depends_on("r-iranges@1.3.89:", type=("build", "run"))
+    version(
+        "0.99.3",
+        sha256="554be14d10329310a65dfd4c9752995fcc751ef3f4d3c765e43541d96fcd64f6",
+        url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.feinberg.mm8.me.hx1_0.99.3.tar.gz",
+    )
 
+    depends_on("r@2.11:", type=("build", "run"))
+    depends_on("r-rsqlite@0.7.1:", type=("build", "run"))
+    depends_on("r-oligoclasses@1.9.30:", type=("build", "run"))
+    depends_on("r-oligo@1.11.18:", type=("build", "run"))
+    depends_on("r-dbi", type=("build", "run"))
+    depends_on("r-biostrings@2.13.50:", type=("build", "run"))
+    depends_on("r-iranges@1.3.89:", type=("build", "run"))

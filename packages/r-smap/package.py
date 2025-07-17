@@ -7,13 +7,13 @@ from spack.package import *
 
 
 class RSmap(RPackage):
-	"""A Segmental Maximum A Posteriori Approach to Array-CGH Copy Number Profiling
+    """A Segmental Maximum A Posteriori Approach to Array-CGH Copy Number Profiling
 
-	Functions and classes for DNA copy number profiling of array-CGH data
-	"""
-	
-	bioc = "SMAP"
+    Functions and classes for DNA copy number profiling of array-CGH data
+    """
 
-	version("1.66.0", commit="1ecee675bf4432ff11b909bd2b112fe28984aaf3")
+    bioc = "SMAP"
 
-	depends_on("r@2.10:", type=("build", "run"))
+    version("1.66.0", commit="1ecee675bf4432ff11b909bd2b112fe28984aaf3")
+
+    depends_on("r@2.10:", type=("build", "run"))

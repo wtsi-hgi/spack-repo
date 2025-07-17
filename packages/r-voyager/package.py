@@ -7,35 +7,35 @@ from spack.package import *
 
 
 class RVoyager(RPackage):
-	"""From geospatial to spatial omics
+    """From geospatial to spatial omics
 
-	SpatialFeatureExperiment (SFE) is a new S4 class for working with spatial single-cell genomics data. The voyager package implements basic exploratory spatial data analysis (ESDA) methods for SFE. Univariate methods include univariate global spatial ESDA methods such as Moran's I, permutation testing for Moran's I, and correlograms. Bivariate methods include Lee's L and cross variogram. Multivariate methods include MULTISPATI PCA and multivariate local Geary's C recently developed by Anselin. The Voyager package also implements plotting functions to plot SFE data and ESDA results.
-	"""
-	
-	homepage = "https://github.com/pachterlab/voyager"
-	bioc = "Voyager"
+    SpatialFeatureExperiment (SFE) is a new S4 class for working with spatial single-cell genomics data. The voyager package implements basic exploratory spatial data analysis (ESDA) methods for SFE. Univariate methods include univariate global spatial ESDA methods such as Moran's I, permutation testing for Moran's I, and correlograms. Bivariate methods include Lee's L and cross variogram. Multivariate methods include MULTISPATI PCA and multivariate local Geary's C recently developed by Anselin. The Voyager package also implements plotting functions to plot SFE data and ESDA results.
+    """
 
-	version("1.10.0", commit="27b5859dce642086b45936f5e30b5fd4ae250837")
-	version("1.4.0", commit="27aa232ee0b5cabd89ba1c253e34fc49fecdf607")
+    homepage = "https://github.com/pachterlab/voyager"
+    bioc = "Voyager"
 
-	depends_on("r@4.2:", type=("build", "run"))
-	depends_on("r-biocparallel", type=("build", "run"))
-	depends_on("r-bluster", type=("build", "run"))
-	depends_on("r-ggnewscale", type=("build", "run"))
-	depends_on("r-ggplot2@3.4:", type=("build", "run"))
-	depends_on("r-lifecycle", type=("build", "run"))
-	depends_on("r-matrix", type=("build", "run"))
-	depends_on("r-matrixstats", type=("build", "run"))
-	depends_on("r-patchwork", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
-	depends_on("r-rspectra", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-scales", type=("build", "run"))
-	depends_on("r-scico", type=("build", "run"))
-	depends_on("r-sf", type=("build", "run"))
-	depends_on("r-singlecellexperiment", type=("build", "run"))
-	depends_on("r-spatialexperiment", type=("build", "run"))
-	depends_on("r-spatialfeatureexperiment@1.2.1:", type=("build", "run"))
-	depends_on("r-spdep", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-terra", type=("build", "run"))
+    version("1.10.0", commit="27b5859dce642086b45936f5e30b5fd4ae250837")
+    version("1.4.0", commit="27aa232ee0b5cabd89ba1c253e34fc49fecdf607")
+
+    depends_on("r@4.2:", type=("build", "run"))
+    depends_on("r-biocparallel", type=("build", "run"))
+    depends_on("r-bluster", type=("build", "run"))
+    depends_on("r-ggnewscale", type=("build", "run"))
+    depends_on("r-ggplot2@3.4:", type=("build", "run"))
+    depends_on("r-lifecycle", type=("build", "run"))
+    depends_on("r-matrix", type=("build", "run"))
+    depends_on("r-matrixstats", type=("build", "run"))
+    depends_on("r-patchwork", type=("build", "run"))
+    depends_on("r-rlang", type=("build", "run"))
+    depends_on("r-rspectra", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-scales", type=("build", "run"))
+    depends_on("r-scico", type=("build", "run"))
+    depends_on("r-sf", type=("build", "run"))
+    depends_on("r-singlecellexperiment", type=("build", "run"))
+    depends_on("r-spatialexperiment", type=("build", "run"))
+    depends_on("r-spatialfeatureexperiment@1.2.1:", type=("build", "run"))
+    depends_on("r-spdep", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-terra", type=("build", "run"))

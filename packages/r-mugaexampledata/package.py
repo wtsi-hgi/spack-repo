@@ -7,15 +7,14 @@ from spack.package import *
 
 
 class RMugaexampledata(RPackage):
-	"""Example {M}ouse {U}niversal {G}enotyping {A}rray data for genome reconstruction and quantitative trait locus mapping.
+    """Example {M}ouse {U}niversal {G}enotyping {A}rray data for genome reconstruction and quantitative trait locus mapping.
 
-	This package contains example data for the MUGA array that is used by the R package DOQTL.
-	"""
-	
-	bioc = "MUGAExampleData"
+    This package contains example data for the MUGA array that is used by the R package DOQTL.
+    """
 
-	version("1.28.0", commit="89efdba2bc2c0c77e438e1b3dcc02f4cf2c1e470")
-	version("1.22.0", commit="3414f294576a5255e91a04855e75ea370f44a0d7")
+    bioc = "MUGAExampleData"
 
-	depends_on("r@2.10:", type=("build", "run"))
+    version("1.28.0", commit="89efdba2bc2c0c77e438e1b3dcc02f4cf2c1e470")
+    version("1.22.0", commit="3414f294576a5255e91a04855e75ea370f44a0d7")
 
+    depends_on("r@2.10:", type=("build", "run"))

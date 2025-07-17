@@ -7,22 +7,22 @@ from spack.package import *
 
 
 class RFastreer(RPackage):
-	"""Phylogenetic, Distance and Other Calculations on VCF and Fasta Files
+    """Phylogenetic, Distance and Other Calculations on VCF and Fasta Files
 
-	Calculate distances, build phylogenetic trees or perform hierarchical clustering between the samples of a VCF or FASTA file. Functions are implemented in Java and called via rJava. Parallel implementation that operates directly on the VCF or FASTA file for fast execution.
-	"""
-	
-	homepage = "https://github.com/gkanogiannis/fastreeR"
-	bioc = "fastreeR"
+    Calculate distances, build phylogenetic trees or perform hierarchical clustering between the samples of a VCF or FASTA file. Functions are implemented in Java and called via rJava. Parallel implementation that operates directly on the VCF or FASTA file for fast execution.
+    """
 
-	version("1.12.2", commit="f1db503680fb4d4507786ea2170b0e938f274d88")
-	version("1.6.0", commit="776d4ceb4f5be3113532d279420d3ae088f6ba8a")
+    homepage = "https://github.com/gkanogiannis/fastreeR"
+    bioc = "fastreeR"
 
-	depends_on("r@4.2:", type=("build", "run"))
-	depends_on("r-ape", type=("build", "run"))
-	depends_on("r-data-table", type=("build", "run"))
-	depends_on("r-dynamictreecut", type=("build", "run"))
-	depends_on("r-r-utils", type=("build", "run"))
-	depends_on("r-rjava", type=("build", "run"))
-	depends_on("r-stringr", type=("build", "run"))
-	depends_on("openjdk@8:", type=("build", "link", "run"))
+    version("1.12.2", commit="f1db503680fb4d4507786ea2170b0e938f274d88")
+    version("1.6.0", commit="776d4ceb4f5be3113532d279420d3ae088f6ba8a")
+
+    depends_on("r@4.2:", type=("build", "run"))
+    depends_on("r-ape", type=("build", "run"))
+    depends_on("r-data-table", type=("build", "run"))
+    depends_on("r-dynamictreecut", type=("build", "run"))
+    depends_on("r-r-utils", type=("build", "run"))
+    depends_on("r-rjava", type=("build", "run"))
+    depends_on("r-stringr", type=("build", "run"))
+    depends_on("openjdk@8:", type=("build", "link", "run"))

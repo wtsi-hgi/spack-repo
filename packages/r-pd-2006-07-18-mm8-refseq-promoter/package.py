@@ -7,21 +7,26 @@ from spack.package import *
 
 
 class RPd20060718Mm8RefseqPromoter(RPackage):
-	"""Platform Design Info for NimbleGen 2006-07-18_mm8_refseq_promoter
+    """Platform Design Info for NimbleGen 2006-07-18_mm8_refseq_promoter
 
-	Platform Design Info for NimbleGen 2006-07-18_mm8_refseq_promoter
-	"""
-	
-	bioc = "pd.2006.07.18.mm8.refseq.promoter" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.2006.07.18.mm8.refseq.promoter_0.99.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.2006.07.18.mm8.refseq.promoter/pd.2006.07.18.mm8.refseq.promoter_0.99.3.tar.gz"]
+    Platform Design Info for NimbleGen 2006-07-18_mm8_refseq_promoter
+    """
 
-	version("0.99.3", sha256="16abe39493c1f2c942022f28ee625a932d25373fe27df5452d53e7e3c33f9591")
+    bioc = "pd.2006.07.18.mm8.refseq.promoter"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.2006.07.18.mm8.refseq.promoter_0.99.3.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.2006.07.18.mm8.refseq.promoter/pd.2006.07.18.mm8.refseq.promoter_0.99.3.tar.gz",
+    ]
 
-	depends_on("r@2.11:", type=("build", "run"))
-	depends_on("r-rsqlite@0.7.1:", type=("build", "run"))
-	depends_on("r-oligoclasses@1.9.30:", type=("build", "run"))
-	depends_on("r-oligo@1.11.18:", type=("build", "run"))
-	depends_on("r-dbi", type=("build", "run"))
-	depends_on("r-biostrings@2.13.50:", type=("build", "run"))
-	depends_on("r-iranges@1.3.89:", type=("build", "run"))
+    version(
+        "0.99.3",
+        sha256="16abe39493c1f2c942022f28ee625a932d25373fe27df5452d53e7e3c33f9591",
+    )
 
+    depends_on("r@2.11:", type=("build", "run"))
+    depends_on("r-rsqlite@0.7.1:", type=("build", "run"))
+    depends_on("r-oligoclasses@1.9.30:", type=("build", "run"))
+    depends_on("r-oligo@1.11.18:", type=("build", "run"))
+    depends_on("r-dbi", type=("build", "run"))
+    depends_on("r-biostrings@2.13.50:", type=("build", "run"))
+    depends_on("r-iranges@1.3.89:", type=("build", "run"))

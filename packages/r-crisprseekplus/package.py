@@ -7,25 +7,25 @@ from spack.package import *
 
 
 class RCrisprseekplus(RPackage):
-	"""crisprseekplus
+    """crisprseekplus
 
-	Bioinformatics platform containing interface to work with offTargetAnalysis and compare2Sequences in the CRISPRseek package, and GUIDEseqAnalysis.
-	"""
-	
-	homepage = "https://github.com/UMMS-Biocore/crisprseekplus"
-	bioc = "crisprseekplus" 
+    Bioinformatics platform containing interface to work with offTargetAnalysis and compare2Sequences in the CRISPRseek package, and GUIDEseqAnalysis.
+    """
 
-	version("1.28.0", commit="8338d72d8b6a58c6a9dcceec3fdf3888de66e59e")
+    homepage = "https://github.com/UMMS-Biocore/crisprseekplus"
+    bioc = "crisprseekplus"
 
-	depends_on("r@3.3:", type=("build", "run"))
-	depends_on("r-shiny", type=("build", "run"))
-	depends_on("r-shinyjs", type=("build", "run"))
-	depends_on("r-crisprseek", type=("build", "run"))
-	depends_on("r-dt", type=("build", "run"))
-	depends_on("r-guideseq", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-genomicfeatures", type=("build", "run"))
-	depends_on("r-biocmanager", type=("build", "run"))
-	depends_on("r-bsgenome", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-hash", type=("build", "run"))
+    version("1.28.0", commit="8338d72d8b6a58c6a9dcceec3fdf3888de66e59e")
+
+    depends_on("r@3.3:", type=("build", "run"))
+    depends_on("r-shiny", type=("build", "run"))
+    depends_on("r-shinyjs", type=("build", "run"))
+    depends_on("r-crisprseek", type=("build", "run"))
+    depends_on("r-dt", type=("build", "run"))
+    depends_on("r-guideseq", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-genomicfeatures", type=("build", "run"))
+    depends_on("r-biocmanager", type=("build", "run"))
+    depends_on("r-bsgenome", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-hash", type=("build", "run"))

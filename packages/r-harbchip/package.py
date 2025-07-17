@@ -7,18 +7,17 @@ from spack.package import *
 
 
 class RHarbchip(RPackage):
-	"""Experimental Data Package: harbChIP
+    """Experimental Data Package: harbChIP
 
-	data from a yeast ChIP-chip experiment
-	"""
-	
-	bioc = "harbChIP"
+    data from a yeast ChIP-chip experiment
+    """
 
-	version("1.46.0", commit="8aa02dca7ee126d5a80e855af7b5afba721bf7cb")
-	version("1.40.0", commit="8611d179015e38dc49897a5951ddc897f5567e99")
+    bioc = "harbChIP"
 
-	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-biobase@2.5.5:", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
+    version("1.46.0", commit="8aa02dca7ee126d5a80e855af7b5afba721bf7cb")
+    version("1.40.0", commit="8611d179015e38dc49897a5951ddc897f5567e99")
 
+    depends_on("r@2.10:", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-biobase@2.5.5:", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))

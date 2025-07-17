@@ -7,41 +7,41 @@ from spack.package import *
 
 
 class RSignifinder(RPackage):
-	"""Implementations of transcriptional cancer signatures
+    """Implementations of transcriptional cancer signatures
 
-	signifinder is an R package for computing and exploring a compendium of tumor signatures. It allows to compute a variety of signatures, based on gene expression values, and return single-sample scores. Currently, signifinder contains 46 distinct signatures collected from the literature, relating to multiple tumors and multiple cancer processes.
-	"""
-	
-	homepage = "https://github.com/CaluraLab/signifinder"
-	bioc = "signifinder"
+    signifinder is an R package for computing and exploring a compendium of tumor signatures. It allows to compute a variety of signatures, based on gene expression values, and return single-sample scores. Currently, signifinder contains 46 distinct signatures collected from the literature, relating to multiple tumors and multiple cancer processes.
+    """
 
-	version("1.10.0", commit="efe5447ab986028f98dcb9e2e6afbc46e1c886cd")
-	version("1.4.0", commit="b8e4f6d484977c87c534e13acbe8b72dcd578897")
+    homepage = "https://github.com/CaluraLab/signifinder"
+    bioc = "signifinder"
 
-	depends_on("r@4.3:", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-org-hs-eg-db", type=("build", "run"))
-	depends_on("r-patchwork", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-biocgenerics", type=("build", "run"))
-	depends_on("r-complexheatmap", type=("build", "run"))
-	depends_on("r-cowplot", type=("build", "run"))
-	depends_on("r-dgeobj-utils", type=("build", "run"))
-	depends_on("r-gsva", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-consensusov", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-ensembldb", type=("build", "run"))
-	depends_on("r-ggridges", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-matrixstats", type=("build", "run"))
-	depends_on("r-maxstat", type=("build", "run"))
-	depends_on("r-openair", type=("build", "run"))
-	depends_on("r-rcolorbrewer", type=("build", "run"))
-	depends_on("r-txdb-hsapiens-ucsc-hg19-knowngene", type=("build", "run"))
-	depends_on("r-txdb-hsapiens-ucsc-hg38-knowngene", type=("build", "run"))
-	depends_on("r-survival", type=("build", "run"))
-	depends_on("r-survminer", type=("build", "run"))
-	depends_on("r-viridis", type=("build", "run"))
-	depends_on("r-spatialexperiment", type=("build", "run"))
+    version("1.10.0", commit="efe5447ab986028f98dcb9e2e6afbc46e1c886cd")
+    version("1.4.0", commit="b8e4f6d484977c87c534e13acbe8b72dcd578897")
+
+    depends_on("r@4.3:", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-org-hs-eg-db", type=("build", "run"))
+    depends_on("r-patchwork", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-biocgenerics", type=("build", "run"))
+    depends_on("r-complexheatmap", type=("build", "run"))
+    depends_on("r-cowplot", type=("build", "run"))
+    depends_on("r-dgeobj-utils", type=("build", "run"))
+    depends_on("r-gsva", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-consensusov", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-ensembldb", type=("build", "run"))
+    depends_on("r-ggridges", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))
+    depends_on("r-matrixstats", type=("build", "run"))
+    depends_on("r-maxstat", type=("build", "run"))
+    depends_on("r-openair", type=("build", "run"))
+    depends_on("r-rcolorbrewer", type=("build", "run"))
+    depends_on("r-txdb-hsapiens-ucsc-hg19-knowngene", type=("build", "run"))
+    depends_on("r-txdb-hsapiens-ucsc-hg38-knowngene", type=("build", "run"))
+    depends_on("r-survival", type=("build", "run"))
+    depends_on("r-survminer", type=("build", "run"))
+    depends_on("r-viridis", type=("build", "run"))
+    depends_on("r-spatialexperiment", type=("build", "run"))

@@ -7,15 +7,14 @@ from spack.package import *
 
 
 class RClumsiddata(RPackage):
-	"""Data for the CluMSID package
+    """Data for the CluMSID package
 
-	This package contains various LC-MS/MS and GC-MS data that is used in vignettes and examples in the CluMSID package.
-	"""
-	
-	bioc = "CluMSIDdata"
+    This package contains various LC-MS/MS and GC-MS data that is used in vignettes and examples in the CluMSID package.
+    """
 
-	version("1.24.0", commit="0ce1ec45230d04a0cde60066ad18f314a3b9ca26")
-	version("1.18.0", commit="d77fe253b8baa46d0d2c56423915c2709fbe28f8")
+    bioc = "CluMSIDdata"
 
-	depends_on("r@3.6:", type=("build", "run"))
+    version("1.24.0", commit="0ce1ec45230d04a0cde60066ad18f314a3b9ca26")
+    version("1.18.0", commit="d77fe253b8baa46d0d2c56423915c2709fbe28f8")
 
+    depends_on("r@3.6:", type=("build", "run"))

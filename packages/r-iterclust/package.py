@@ -7,16 +7,16 @@ from spack.package import *
 
 
 class RIterclust(RPackage):
-	"""Iterative Clustering
+    """Iterative Clustering
 
-	A framework for performing clustering analysis iteratively.
-	"""
-	
-	homepage = "https://github.com/hd2326/iterClust"
-	bioc = "iterClust"
+    A framework for performing clustering analysis iteratively.
+    """
 
-	version("1.24.0", commit="a81011d0755baf6a82a9fe7f3392664d007cdce4")
+    homepage = "https://github.com/hd2326/iterClust"
+    bioc = "iterClust"
 
-	depends_on("r@3.4.1:", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-cluster", type=("build", "run"))
+    version("1.24.0", commit="a81011d0755baf6a82a9fe7f3392664d007cdce4")
+
+    depends_on("r@3.4.1:", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-cluster", type=("build", "run"))

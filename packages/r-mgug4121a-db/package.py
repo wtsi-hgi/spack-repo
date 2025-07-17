@@ -7,17 +7,22 @@ from spack.package import *
 
 
 class RMgug4121aDb(RPackage):
-	"""Agilent Mouse annotation data (chip mgug4121a)
+    """Agilent Mouse annotation data (chip mgug4121a)
 
-	Agilent Mouse annotation data (chip mgug4121a) assembled using data from public repositories
-	"""
-	
-	bioc = "mgug4121a.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mgug4121a.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mgug4121a.db/mgug4121a.db_3.2.3.tar.gz"]
+    Agilent Mouse annotation data (chip mgug4121a) assembled using data from public repositories
+    """
 
-	version("3.2.3", sha256="e533d3e5cb4898a1642a2edd857668100b7facca569dcfdf5f445a3465668724")
+    bioc = "mgug4121a.db"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mgug4121a.db_3.2.3.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mgug4121a.db/mgug4121a.db_3.2.3.tar.gz",
+    ]
 
-	depends_on("r@2.7:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-org-mm-eg-db@3.3:", type=("build", "run"))
+    version(
+        "3.2.3",
+        sha256="e533d3e5cb4898a1642a2edd857668100b7facca569dcfdf5f445a3465668724",
+    )
 
+    depends_on("r@2.7:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-org-mm-eg-db@3.3:", type=("build", "run"))

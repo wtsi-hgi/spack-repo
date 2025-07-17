@@ -7,24 +7,23 @@ from spack.package import *
 
 
 class RDmrcatedata(RPackage):
-	"""Data Package for DMRcate
+    """Data Package for DMRcate
 
-	This package contains 9 data objects supporting functionality and examples of the Bioconductor package DMRcate.
-	"""
-	
-	bioc = "DMRcatedata"
+    This package contains 9 data objects supporting functionality and examples of the Bioconductor package DMRcate.
+    """
 
-	version("2.26.0", commit="383a0a9dbea52af8700aea29a1a8133d4569bac2")
-	version("2.20.3", commit="8575f6cef7ba7c928c84de5bf71e2d5d84453dfe")
-	version("2.20.2", md5="0cd6e9693ca761425b661cd4a512d797")
+    bioc = "DMRcatedata"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-experimenthub", type=("build", "run"))
-	depends_on("r-genomicfeatures", type=("build", "run"))
-	depends_on("r-gviz", type=("build", "run"))
-	depends_on("r-readxl", type=("build", "run"))
-	depends_on("r-plyr", type=("build", "run"))
-	depends_on("r-rtracklayer", type=("build", "run"))
-	depends_on("r-illuminahumanmethylation450kanno-ilmn12-hg19", type=("build", "run"))
-	depends_on("r-illuminahumanmethylationepicanno-ilm10b4-hg19", type=("build", "run"))
+    version("2.26.0", commit="383a0a9dbea52af8700aea29a1a8133d4569bac2")
+    version("2.20.3", commit="8575f6cef7ba7c928c84de5bf71e2d5d84453dfe")
+    version("2.20.2", md5="0cd6e9693ca761425b661cd4a512d797")
 
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-experimenthub", type=("build", "run"))
+    depends_on("r-genomicfeatures", type=("build", "run"))
+    depends_on("r-gviz", type=("build", "run"))
+    depends_on("r-readxl", type=("build", "run"))
+    depends_on("r-plyr", type=("build", "run"))
+    depends_on("r-rtracklayer", type=("build", "run"))
+    depends_on("r-illuminahumanmethylation450kanno-ilmn12-hg19", type=("build", "run"))
+    depends_on("r-illuminahumanmethylationepicanno-ilm10b4-hg19", type=("build", "run"))

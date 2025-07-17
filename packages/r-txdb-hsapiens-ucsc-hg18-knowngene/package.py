@@ -7,17 +7,22 @@ from spack.package import *
 
 
 class RTxdbHsapiensUcscHg18Knowngene(RPackage):
-	"""Annotation package for TxDb object(s).
+    """Annotation package for TxDb object(s).
 
-	Exposes an annotation databases generated from UCSC by exposing these as
-	TxDb objects"""
+    Exposes an annotation databases generated from UCSC by exposing these as
+    TxDb objects"""
 
-	# This is a bioconductor package but ther is no available git repo
-	bioc = "TxDb.Hsapiens.UCSC.hg18.knownGene"
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg18.knownGene_3.2.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Hsapiens.UCSC.hg18.knownGene/TxDb.Hsapiens.UCSC.hg18.knownGene_3.2.2.tar.gz"]
-	
-	version("3.2.2", sha256="bc9ca40b4eab87f5ca64a4b876d42502b9b8e9f5983d745bfe0ee349d97b69fa")
+    # This is a bioconductor package but ther is no available git repo
+    bioc = "TxDb.Hsapiens.UCSC.hg18.knownGene"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/TxDb.Hsapiens.UCSC.hg18.knownGene_3.2.2.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/TxDb.Hsapiens.UCSC.hg18.knownGene/TxDb.Hsapiens.UCSC.hg18.knownGene_3.2.2.tar.gz",
+    ]
 
-	depends_on("r-genomicfeatures@1.21.30:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
+    version(
+        "3.2.2",
+        sha256="bc9ca40b4eab87f5ca64a4b876d42502b9b8e9f5983d745bfe0ee349d97b69fa",
+    )
 
+    depends_on("r-genomicfeatures@1.21.30:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))

@@ -7,18 +7,18 @@ from spack.package import *
 
 
 class RRontotools(RPackage):
-	"""R Onto-Tools suite
+    """R Onto-Tools suite
 
-	Suite of tools for functional analysis.
-	"""
-	
-	bioc = "ROntoTools"
+    Suite of tools for functional analysis.
+    """
 
-	version("2.36.0", commit="911f5f88580cd31047832935be65d6bb496308f7")
-	version("2.30.0", commit="35292096b3058ff4154b8646bbc0c92dc1fed862")
+    bioc = "ROntoTools"
 
-	depends_on("r-graph", type=("build", "run"))
-	depends_on("r-boot", type=("build", "run"))
-	depends_on("r-keggrest", type=("build", "run"))
-	depends_on("r-kegggraph", type=("build", "run"))
-	depends_on("r-rgraphviz", type=("build", "run"))
+    version("2.36.0", commit="911f5f88580cd31047832935be65d6bb496308f7")
+    version("2.30.0", commit="35292096b3058ff4154b8646bbc0c92dc1fed862")
+
+    depends_on("r-graph", type=("build", "run"))
+    depends_on("r-boot", type=("build", "run"))
+    depends_on("r-keggrest", type=("build", "run"))
+    depends_on("r-kegggraph", type=("build", "run"))
+    depends_on("r-rgraphviz", type=("build", "run"))

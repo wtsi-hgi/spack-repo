@@ -7,26 +7,26 @@ from spack.package import *
 
 
 class RIseeindex(RPackage):
-	"""iSEE extension for a landing page to a custom collection of data sets
+    """iSEE extension for a landing page to a custom collection of data sets
 
-	This package provides an interface to any collection of data sets within a single iSEE web-application. The main functionality of this package is to define a custom landing page allowing app maintainers to list a custom collection of data sets that users can selected from and directly load objects into an iSEE web-application.
-	"""
-	
-	homepage = "https://github.com/iSEE/iSEEindex"
-	bioc = "iSEEindex"
+    This package provides an interface to any collection of data sets within a single iSEE web-application. The main functionality of this package is to define a custom landing page allowing app maintainers to list a custom collection of data sets that users can selected from and directly load objects into an iSEE web-application.
+    """
 
-	version("1.6.0", commit="9b30694e857736350287215ed4af60246851ae39")
-	version("1.0.0", commit="44fee6f8268e0abdfcb34c2f15421b74b55301dd")
+    homepage = "https://github.com/iSEE/iSEEindex"
+    bioc = "iSEEindex"
 
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-singlecellexperiment", type=("build", "run"))
-	depends_on("r-biocfilecache", type=("build", "run"))
-	depends_on("r-dt", type=("build", "run"))
-	depends_on("r-isee", type=("build", "run"))
-	depends_on("r-paws-storage", type=("build", "run"))
-	depends_on("r-rintrojs", type=("build", "run"))
-	depends_on("r-shiny", type=("build", "run"))
-	depends_on("r-shinydashboard", type=("build", "run"))
-	depends_on("r-shinyjs", type=("build", "run"))
-	depends_on("r-stringr", type=("build", "run"))
-	depends_on("r-urltools", type=("build", "run"))
+    version("1.6.0", commit="9b30694e857736350287215ed4af60246851ae39")
+    version("1.0.0", commit="44fee6f8268e0abdfcb34c2f15421b74b55301dd")
+
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-singlecellexperiment", type=("build", "run"))
+    depends_on("r-biocfilecache", type=("build", "run"))
+    depends_on("r-dt", type=("build", "run"))
+    depends_on("r-isee", type=("build", "run"))
+    depends_on("r-paws-storage", type=("build", "run"))
+    depends_on("r-rintrojs", type=("build", "run"))
+    depends_on("r-shiny", type=("build", "run"))
+    depends_on("r-shinydashboard", type=("build", "run"))
+    depends_on("r-shinyjs", type=("build", "run"))
+    depends_on("r-stringr", type=("build", "run"))
+    depends_on("r-urltools", type=("build", "run"))

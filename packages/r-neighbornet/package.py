@@ -7,13 +7,13 @@ from spack.package import *
 
 
 class RNeighbornet(RPackage):
-	"""Neighbor_net analysis
+    """Neighbor_net analysis
 
-	Identify the putative mechanism explaining the active interactions between genes in the investigated phenotype.
-	"""
-	
-	bioc = "NeighborNet" 
+    Identify the putative mechanism explaining the active interactions between genes in the investigated phenotype.
+    """
 
-	version("1.20.0", commit="3f5d90e33dd47c32296042433b482d6c50c3e7a1")
+    bioc = "NeighborNet"
 
-	depends_on("r-graph", type=("build", "run"))
+    version("1.20.0", commit="3f5d90e33dd47c32296042433b482d6c50c3e7a1")
+
+    depends_on("r-graph", type=("build", "run"))

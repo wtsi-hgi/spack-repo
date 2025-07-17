@@ -13,7 +13,9 @@ class RSingler(RPackage):
     """
 
     homepage = "https://github.com/LTLA/SingleR"
-    bioc = "SingleR"version("2.10.0", commit="2c586f6c4e5de5c8bf8fdac1bbeca9d4d090e6c8")
+    bioc = "SingleR"
+
+    version("2.10.0", commit="2c586f6c4e5de5c8bf8fdac1bbeca9d4d090e6c8")
     version("2.4.1", commit="fab56fd58ebfbecd9c97158aebd40ea46000ffb6")
 
     depends_on("r-summarizedexperiment", type=("build", "run"))

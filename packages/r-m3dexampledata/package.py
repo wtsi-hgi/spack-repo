@@ -7,15 +7,14 @@ from spack.package import *
 
 
 class RM3dexampledata(RPackage):
-	"""M3Drop Example Data
+    """M3Drop Example Data
 
-	Example data for M3Drop package.
-	"""
-	
-	bioc = "M3DExampleData"
+    Example data for M3Drop package.
+    """
 
-	version("1.34.0", commit="46aef0fbb76f1e71be8d4c462363641a55246fbd")
-	version("1.28.0", commit="0cf50a6bc14b6dc229bfd41f5555b9895acd4968")
+    bioc = "M3DExampleData"
 
-	depends_on("r@3.3:", type=("build", "run"))
+    version("1.34.0", commit="46aef0fbb76f1e71be8d4c462363641a55246fbd")
+    version("1.28.0", commit="0cf50a6bc14b6dc229bfd41f5555b9895acd4968")
 
+    depends_on("r@3.3:", type=("build", "run"))

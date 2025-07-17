@@ -13,7 +13,9 @@ class RSparsearray(RPackage):
     """
 
     homepage = "https://bioconductor.org/packages/SparseArray"
-    bioc = "SparseArray"version("1.8.0", commit="ea36777cc56c1e3b515f936d4adf866dad0a8ced")
+    bioc = "SparseArray"
+
+    version("1.8.0", commit="ea36777cc56c1e3b515f936d4adf866dad0a8ced")
     version("1.2.4", commit="5ece9d3ea94373d08f703197c3308e364c56872b")
 
     depends_on("r@4.3:", type=("build", "run"))

@@ -7,17 +7,20 @@ from spack.package import *
 
 
 class RHumantranscriptomecompendium(RPackage):
-	"""Tools to work with a Compendium of 181000 human transcriptome sequencing studies
+    """Tools to work with a Compendium of 181000 human transcriptome sequencing studies
 
-	Provide tools for working with a compendium of human transcriptome sequences (originally htxcomp).
-	"""
-	
-	bioc = "HumanTranscriptomeCompendium"
+    Provide tools for working with a compendium of human transcriptome sequences (originally htxcomp).
+    """
 
-	version("1.17.0", sha256="5ba92aca4d359d78bd5252836a979503080e45163549d0abee23c409c1ef7404")
+    bioc = "HumanTranscriptomeCompendium"
 
-	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-shiny", type=("build", "run"))
-	depends_on("r-ssrch", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
+    version(
+        "1.17.0",
+        sha256="5ba92aca4d359d78bd5252836a979503080e45163549d0abee23c409c1ef7404",
+    )
+
+    depends_on("r@3.6:", type=("build", "run"))
+    depends_on("r-shiny", type=("build", "run"))
+    depends_on("r-ssrch", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))

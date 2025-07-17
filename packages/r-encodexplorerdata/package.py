@@ -7,18 +7,17 @@ from spack.package import *
 
 
 class REncodexplorerdata(RPackage):
-	"""A compilation of ENCODE metadata
+    """A compilation of ENCODE metadata
 
-	This package allows user to quickly access ENCODE project files metadata and give access to helper functions to query the ENCODE rest api, download ENCODE datasets and save the database in SQLite format.
-	"""
-	
-	bioc = "ENCODExplorerData"
+    This package allows user to quickly access ENCODE project files metadata and give access to helper functions to query the ENCODE rest api, download ENCODE datasets and save the database in SQLite format.
+    """
 
-	version("0.99.5", commit="c69d7b99ec8cfe1fdb85f520877ed68ce7453074")
-	version("0.99.5", commit="c69d7b99ec8cfe1fdb85f520877ed68ce7453074")
+    bioc = "ENCODExplorerData"
 
-	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-jsonlite", type=("build", "run"))
-	depends_on("r-rcurl", type=("build", "run"))
-	depends_on("r-data-table", type=("build", "run"))
+    version("0.99.5", commit="c69d7b99ec8cfe1fdb85f520877ed68ce7453074")
+    version("0.99.5", commit="c69d7b99ec8cfe1fdb85f520877ed68ce7453074")
 
+    depends_on("r@3.6:", type=("build", "run"))
+    depends_on("r-jsonlite", type=("build", "run"))
+    depends_on("r-rcurl", type=("build", "run"))
+    depends_on("r-data-table", type=("build", "run"))

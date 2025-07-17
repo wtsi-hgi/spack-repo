@@ -7,37 +7,37 @@ from spack.package import *
 
 
 class RPoma(RPackage):
-	"""Tools for Omics Data Analysis
+    """Tools for Omics Data Analysis
 
-	A reproducible and easy-to-use toolkit for visualization, pre-processing, exploration, and statistical analysis of omics datasets. The main aim of POMA is to enable a flexible data cleaning and statistical analysis processes in one comprehensible and user-friendly R package. This package has a Shiny app version called POMAShiny that implements all POMA functions. See https://github.com/pcastellanoescuder/POMAShiny. See Castellano-Escuder P, González-Domínguez R, Carmona-Pontaque F, et al. (2021) <doi:10.1371/journal.pcbi.1009148> for more details.
-	"""
-	
-	homepage = "https://github.com/pcastellanoescuder/POMA"
-	bioc = "POMA"
+    A reproducible and easy-to-use toolkit for visualization, pre-processing, exploration, and statistical analysis of omics datasets. The main aim of POMA is to enable a flexible data cleaning and statistical analysis processes in one comprehensible and user-friendly R package. This package has a Shiny app version called POMAShiny that implements all POMA functions. See https://github.com/pcastellanoescuder/POMAShiny. See Castellano-Escuder P, González-Domínguez R, Carmona-Pontaque F, et al. (2021) <doi:10.1371/journal.pcbi.1009148> for more details.
+    """
 
-	version("1.18.0", commit="beb9b3611f5738fe80141238dfdac5be18882cf3")
-	version("1.12.0", commit="6e2f5bc80b706b51310bc44a394f31a401d57734")
+    homepage = "https://github.com/pcastellanoescuder/POMA"
+    bioc = "POMA"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-broom", type=("build", "run"))
-	depends_on("r-caret", type=("build", "run"))
-	depends_on("r-complexheatmap", type=("build", "run"))
-	depends_on("r-dbscan", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-deseq2", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-ggrepel", type=("build", "run"))
-	depends_on("r-glasso@1.11:", type=("build", "run"))
-	depends_on("r-glmnet", type=("build", "run"))
-	depends_on("r-impute", type=("build", "run"))
-	depends_on("r-limma", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-mixomics", type=("build", "run"))
-	depends_on("r-randomforest", type=("build", "run"))
-	depends_on("r-rankprod@3.14:", type=("build", "run"))
-	depends_on("r-rmarkdown", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-tibble", type=("build", "run"))
-	depends_on("r-tidyr", type=("build", "run"))
-	depends_on("r-uwot", type=("build", "run"))
-	depends_on("r-vegan", type=("build", "run"))
+    version("1.18.0", commit="beb9b3611f5738fe80141238dfdac5be18882cf3")
+    version("1.12.0", commit="6e2f5bc80b706b51310bc44a394f31a401d57734")
+
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-broom", type=("build", "run"))
+    depends_on("r-caret", type=("build", "run"))
+    depends_on("r-complexheatmap", type=("build", "run"))
+    depends_on("r-dbscan", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-deseq2", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-ggrepel", type=("build", "run"))
+    depends_on("r-glasso@1.11:", type=("build", "run"))
+    depends_on("r-glmnet", type=("build", "run"))
+    depends_on("r-impute", type=("build", "run"))
+    depends_on("r-limma", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))
+    depends_on("r-mixomics", type=("build", "run"))
+    depends_on("r-randomforest", type=("build", "run"))
+    depends_on("r-rankprod@3.14:", type=("build", "run"))
+    depends_on("r-rmarkdown", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-tibble", type=("build", "run"))
+    depends_on("r-tidyr", type=("build", "run"))
+    depends_on("r-uwot", type=("build", "run"))
+    depends_on("r-vegan", type=("build", "run"))

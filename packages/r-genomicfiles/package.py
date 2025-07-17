@@ -7,26 +7,26 @@ from spack.package import *
 
 
 class RGenomicfiles(RPackage):
-	"""Distributed computing by file or by range
+    """Distributed computing by file or by range
 
-	This package provides infrastructure for parallel computations distributed 'by file' or 'by range'. User defined MAPPER and REDUCER functions provide added flexibility for data combination and manipulation.
-	"""
-	
-	bioc = "GenomicFiles"
+    This package provides infrastructure for parallel computations distributed 'by file' or 'by range'. User defined MAPPER and REDUCER functions provide added flexibility for data combination and manipulation.
+    """
 
-	version("1.44.1", commit="eec05b9ada07d887bfdabaf9af4cff93120139dc")
-	version("1.38.0", commit="ddc9a88b9ae4c06d66d77495bf0844b61de296ab")
+    bioc = "GenomicFiles"
 
-	depends_on("r@3.1:", type=("build", "run"))
-	depends_on("r-biocgenerics@0.11.2:", type=("build", "run"))
-	depends_on("r-matrixgenerics", type=("build", "run"))
-	depends_on("r-genomicranges@1.31.16:", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-biocparallel@1.1:", type=("build", "run"))
-	depends_on("r-rsamtools@1.17.29:", type=("build", "run"))
-	depends_on("r-rtracklayer@1.25.3:", type=("build", "run"))
-	depends_on("r-genomicalignments@1.7.7:", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-s4vectors@0.9.25:", type=("build", "run"))
-	depends_on("r-variantannotation@1.27.9:", type=("build", "run"))
-	depends_on("r-genomeinfodb", type=("build", "run"))
+    version("1.44.1", commit="eec05b9ada07d887bfdabaf9af4cff93120139dc")
+    version("1.38.0", commit="ddc9a88b9ae4c06d66d77495bf0844b61de296ab")
+
+    depends_on("r@3.1:", type=("build", "run"))
+    depends_on("r-biocgenerics@0.11.2:", type=("build", "run"))
+    depends_on("r-matrixgenerics", type=("build", "run"))
+    depends_on("r-genomicranges@1.31.16:", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-biocparallel@1.1:", type=("build", "run"))
+    depends_on("r-rsamtools@1.17.29:", type=("build", "run"))
+    depends_on("r-rtracklayer@1.25.3:", type=("build", "run"))
+    depends_on("r-genomicalignments@1.7.7:", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-s4vectors@0.9.25:", type=("build", "run"))
+    depends_on("r-variantannotation@1.27.9:", type=("build", "run"))
+    depends_on("r-genomeinfodb", type=("build", "run"))

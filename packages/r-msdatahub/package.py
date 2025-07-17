@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class RMsdatahub(RPackage):
-	"""Mass Spectrometry Data on ExperimentHub
+    """Mass Spectrometry Data on ExperimentHub
 
-	The MsDataHub package uses the ExperimentHub infrastructure to distribute raw mass spectrometry data files, peptide spectrum matches or quantitative data from proteomics and metabolomics experiments.
-	"""
-	
-	homepage = "https://rformassspectrometry.github.io/MsDataHub"
-	bioc = "MsDataHub"
+    The MsDataHub package uses the ExperimentHub infrastructure to distribute raw mass spectrometry data files, peptide spectrum matches or quantitative data from proteomics and metabolomics experiments.
+    """
 
-	version("1.8.0", commit="a7636afa9b132a87c3af5123416c04aba3f8ce53")
-	version("1.2.0", commit="5e1428493de47020c35318e25a37c4de88b8a80e")
+    homepage = "https://rformassspectrometry.github.io/MsDataHub"
+    bioc = "MsDataHub"
 
-	depends_on("r-experimenthub", type=("build", "run"))
+    version("1.8.0", commit="a7636afa9b132a87c3af5123416c04aba3f8ce53")
+    version("1.2.0", commit="5e1428493de47020c35318e25a37c4de88b8a80e")
+
+    depends_on("r-experimenthub", type=("build", "run"))

@@ -7,14 +7,14 @@ from spack.package import *
 
 
 class RRbioinf(RPackage):
-	"""RBioinf
+    """RBioinf
 
-	Functions and datasets and examples to accompany the monograph R For Bioinformatics.
-	"""
-	
-	bioc = "RBioinf"
+    Functions and datasets and examples to accompany the monograph R For Bioinformatics.
+    """
 
-	version("1.68.0", commit="4812408628b8d859e20ac82adfa06ff77dda5699")
-	version("1.62.0", commit="af88008375506663bca4844a8c3360f0f3d7b76f")
+    bioc = "RBioinf"
 
-	depends_on("r-graph", type=("build", "run"))
+    version("1.68.0", commit="4812408628b8d859e20ac82adfa06ff77dda5699")
+    version("1.62.0", commit="af88008375506663bca4844a8c3360f0f3d7b76f")
+
+    depends_on("r-graph", type=("build", "run"))

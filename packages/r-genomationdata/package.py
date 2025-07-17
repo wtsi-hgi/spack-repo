@@ -7,14 +7,12 @@ from spack.package import *
 
 
 class RGenomationdata(RPackage):
-	"""Experimental data for showing functionalities of the genomation package
+    """Experimental data for showing functionalities of the genomation package
 
-	The package contains Chip Seq, Methylation and Cage data, downloaded from Encode
-	"""
-	
-	bioc = "genomationData"
+    The package contains Chip Seq, Methylation and Cage data, downloaded from Encode
+    """
 
-	version("1.40.0", commit="cbaf8648bb999705aff5c29e0ef737de03062211")
-	version("1.34.0", commit="3cd09f29a801c8063eb17894016020d9ecf0d5c3")
+    bioc = "genomationData"
 
-
+    version("1.40.0", commit="cbaf8648bb999705aff5c29e0ef737de03062211")
+    version("1.34.0", commit="3cd09f29a801c8063eb17894016020d9ecf0d5c3")

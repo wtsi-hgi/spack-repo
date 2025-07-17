@@ -7,17 +7,22 @@ from spack.package import *
 
 
 class RRgu34cDb(RPackage):
-	"""Affymetrix Affymetrix RG_U34C Array annotation data (chip rgu34c)
+    """Affymetrix Affymetrix RG_U34C Array annotation data (chip rgu34c)
 
-	Affymetrix Affymetrix RG_U34C Array annotation data (chip rgu34c) assembled using data from public repositories
-	"""
-	
-	bioc = "rgu34c.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rgu34c.db_3.13.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rgu34c.db/rgu34c.db_3.13.0.tar.gz"]
+    Affymetrix Affymetrix RG_U34C Array annotation data (chip rgu34c) assembled using data from public repositories
+    """
 
-	version("3.13.0", sha256="6208c3f85651de9324510b37bd6c57095edec6e5cea9e3a2b7f1c0cf3316cf49")
+    bioc = "rgu34c.db"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rgu34c.db_3.13.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rgu34c.db/rgu34c.db_3.13.0.tar.gz",
+    ]
 
-	depends_on("r@2.7:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-org-rn-eg-db@3.13:", type=("build", "run"))
+    version(
+        "3.13.0",
+        sha256="6208c3f85651de9324510b37bd6c57095edec6e5cea9e3a2b7f1c0cf3316cf49",
+    )
 
+    depends_on("r@2.7:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-org-rn-eg-db@3.13:", type=("build", "run"))

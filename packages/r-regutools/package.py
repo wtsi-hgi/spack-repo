@@ -7,26 +7,26 @@ from spack.package import *
 
 
 class RRegutools(RPackage):
-	"""regutools: an R package for data extraction from RegulonDB
+    """regutools: an R package for data extraction from RegulonDB
 
-	RegulonDB has collected, harmonized and centralized data from hundreds of experiments for nearly two decades and is considered a point of reference for transcriptional regulation in Escherichia coli K12. Here, we present the regutools R package to facilitate programmatic access to RegulonDB data in computational biology. regutools provides researchers with the possibility of writing reproducible workflows with automated queries to RegulonDB. The regutools package serves as a bridge between RegulonDB data and the Bioconductor ecosystem by reusing the data structures and statistical methods powered by other Bioconductor packages. We demonstrate the integration of regutools with Bioconductor by analyzing transcription factor DNA binding sites and transcriptional regulatory networks from RegulonDB. We anticipate that regutools will serve as a useful building block in our progress to further our understanding of gene regulatory networks.
-	"""
-	
-	homepage = "https://github.com/ComunidadBioInfo/regutools"
-	bioc = "regutools"
+    RegulonDB has collected, harmonized and centralized data from hundreds of experiments for nearly two decades and is considered a point of reference for transcriptional regulation in Escherichia coli K12. Here, we present the regutools R package to facilitate programmatic access to RegulonDB data in computational biology. regutools provides researchers with the possibility of writing reproducible workflows with automated queries to RegulonDB. The regutools package serves as a bridge between RegulonDB data and the Bioconductor ecosystem by reusing the data structures and statistical methods powered by other Bioconductor packages. We demonstrate the integration of regutools with Bioconductor by analyzing transcription factor DNA binding sites and transcriptional regulatory networks from RegulonDB. We anticipate that regutools will serve as a useful building block in our progress to further our understanding of gene regulatory networks.
+    """
 
-	version("1.20.0", commit="a041a7b3c0c981c0a6c6d5a3248f85e1281928b5")
-	version("1.14.0", commit="5db6548bd391e67aee667e33b616cea513cd1fe1")
+    homepage = "https://github.com/ComunidadBioInfo/regutools"
+    bioc = "regutools"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-annotationhub", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
-	depends_on("r-dbi", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-gviz", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-rcy3", type=("build", "run"))
-	depends_on("r-rsqlite", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-biocfilecache", type=("build", "run"))
+    version("1.20.0", commit="a041a7b3c0c981c0a6c6d5a3248f85e1281928b5")
+    version("1.14.0", commit="5db6548bd391e67aee667e33b616cea513cd1fe1")
+
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-annotationhub", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-dbi", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-gviz", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-rcy3", type=("build", "run"))
+    depends_on("r-rsqlite", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-biocfilecache", type=("build", "run"))

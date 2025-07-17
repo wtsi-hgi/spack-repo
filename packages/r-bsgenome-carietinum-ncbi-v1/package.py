@@ -7,15 +7,21 @@ from spack.package import *
 
 
 class RBsgenomeCarietinumNcbiV1(RPackage):
-	"""Cicer arietinum (Chickpea) full genome (NCBI version ASM33114v1)
+    """Cicer arietinum (Chickpea) full genome (NCBI version ASM33114v1)
 
-	Full genome sequences for Cicer arietinum (Chickpea) as provided by NCBI (ASM33114v1, Jan. 2013) and stored in Biostrings objects.
-	"""
-	
-	bioc = "BSgenome.Carietinum.NCBI.v1" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Carietinum.NCBI.v1_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Carietinum.NCBI.v1/BSgenome.Carietinum.NCBI.v1_1.0.0.tar.gz"]
+    Full genome sequences for Cicer arietinum (Chickpea) as provided by NCBI (ASM33114v1, Jan. 2013) and stored in Biostrings objects.
+    """
 
-	version("1.0.0", md5="eef018ecce6d32852aa18ac39cf377c6", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Carietinum.NCBI.v1_1.0.0.tar.gz")
+    bioc = "BSgenome.Carietinum.NCBI.v1"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Carietinum.NCBI.v1_1.0.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Carietinum.NCBI.v1/BSgenome.Carietinum.NCBI.v1_1.0.0.tar.gz",
+    ]
 
-	depends_on("r-bsgenome", type=("build", "run"))
+    version(
+        "1.0.0",
+        md5="eef018ecce6d32852aa18ac39cf377c6",
+        url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Carietinum.NCBI.v1_1.0.0.tar.gz",
+    )
 
+    depends_on("r-bsgenome", type=("build", "run"))

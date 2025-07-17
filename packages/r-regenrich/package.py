@@ -7,29 +7,29 @@ from spack.package import *
 
 
 class RRegenrich(RPackage):
-	"""Gene regulator enrichment analysis
+    """Gene regulator enrichment analysis
 
-	This package is a pipeline to identify the key gene regulators in a biological process, for example in cell differentiation and in cell development after stimulation. There are four major steps in this pipeline: (1) differential expression analysis; (2) regulator-target network inference; (3) enrichment analysis; and (4) regulators scoring and ranking.
-	"""
-	
-	bioc = "RegEnrich" 
+    This package is a pipeline to identify the key gene regulators in a biological process, for example in cell differentiation and in cell development after stimulation. There are four major steps in this pipeline: (1) differential expression analysis; (2) regulator-target network inference; (3) enrichment analysis; and (4) regulators scoring and ranking.
+    """
 
-	version("1.18.1", commit="66428e9ff32218e7900089928b9e4f0d8f1db8e0")
-	version("1.12.0", commit="0524ae661d5e148d84abf9ab6c3052ff97defbf0")
+    bioc = "RegEnrich"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-tibble", type=("build", "run"))
-	depends_on("r-biocset", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-randomforest", type=("build", "run"))
-	depends_on("r-fgsea", type=("build", "run"))
-	depends_on("r-dose", type=("build", "run"))
-	depends_on("r-biocparallel", type=("build", "run"))
-	depends_on("r-deseq2", type=("build", "run"))
-	depends_on("r-limma", type=("build", "run"))
-	depends_on("r-wgcna", type=("build", "run"))
-	depends_on("r-ggplot2@2.2:", type=("build", "run"))
-	depends_on("r-reshape2", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
+    version("1.18.1", commit="66428e9ff32218e7900089928b9e4f0d8f1db8e0")
+    version("1.12.0", commit="0524ae661d5e148d84abf9ab6c3052ff97defbf0")
+
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-tibble", type=("build", "run"))
+    depends_on("r-biocset", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-randomforest", type=("build", "run"))
+    depends_on("r-fgsea", type=("build", "run"))
+    depends_on("r-dose", type=("build", "run"))
+    depends_on("r-biocparallel", type=("build", "run"))
+    depends_on("r-deseq2", type=("build", "run"))
+    depends_on("r-limma", type=("build", "run"))
+    depends_on("r-wgcna", type=("build", "run"))
+    depends_on("r-ggplot2@2.2:", type=("build", "run"))
+    depends_on("r-reshape2", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))

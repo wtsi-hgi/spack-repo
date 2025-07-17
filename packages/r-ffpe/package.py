@@ -7,21 +7,21 @@ from spack.package import *
 
 
 class RFfpe(RPackage):
-	"""Quality assessment and control for FFPE microarray expression data
+    """Quality assessment and control for FFPE microarray expression data
 
-	Identify low-quality data using metrics developed for expression data derived from Formalin-Fixed, Paraffin-Embedded (FFPE) data.  Also a function for making Concordance at the Top plots (CAT-plots).
-	"""
-	
-	bioc = "ffpe"
+    Identify low-quality data using metrics developed for expression data derived from Formalin-Fixed, Paraffin-Embedded (FFPE) data.  Also a function for making Concordance at the Top plots (CAT-plots).
+    """
 
-	version("1.52.0", commit="d4e86a251c5c2f42e7ab2a234a60dae0a1904b2c")
-	version("1.46.0", commit="1c71bd5caa34694db6c01079219c500d071a9cce")
+    bioc = "ffpe"
 
-	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-ttr", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-biocgenerics", type=("build", "run"))
-	depends_on("r-affy", type=("build", "run"))
-	depends_on("r-lumi", type=("build", "run"))
-	depends_on("r-methylumi", type=("build", "run"))
-	depends_on("r-sfsmisc", type=("build", "run"))
+    version("1.52.0", commit="d4e86a251c5c2f42e7ab2a234a60dae0a1904b2c")
+    version("1.46.0", commit="1c71bd5caa34694db6c01079219c500d071a9cce")
+
+    depends_on("r@2.10:", type=("build", "run"))
+    depends_on("r-ttr", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-biocgenerics", type=("build", "run"))
+    depends_on("r-affy", type=("build", "run"))
+    depends_on("r-lumi", type=("build", "run"))
+    depends_on("r-methylumi", type=("build", "run"))
+    depends_on("r-sfsmisc", type=("build", "run"))

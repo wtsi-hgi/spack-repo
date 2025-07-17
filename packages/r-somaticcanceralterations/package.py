@@ -7,18 +7,17 @@ from spack.package import *
 
 
 class RSomaticcanceralterations(RPackage):
-	"""Somatic Cancer Alterations
+    """Somatic Cancer Alterations
 
-	Collection of somatic cancer alteration datasets
-	"""
-	
-	bioc = "SomaticCancerAlterations"
+    Collection of somatic cancer alteration datasets
+    """
 
-	version("1.44.0", commit="4c474daeb55ae17512d9ecb01cd966692f7839c8")
-	version("1.38.0", commit="37a1303a4c638e070094f40098db4b7922688f8b")
+    bioc = "SomaticCancerAlterations"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
+    version("1.44.0", commit="4c474daeb55ae17512d9ecb01cd966692f7839c8")
+    version("1.38.0", commit="37a1303a4c638e070094f40098db4b7922688f8b")
 
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))

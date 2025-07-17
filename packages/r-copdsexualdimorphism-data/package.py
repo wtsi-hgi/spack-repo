@@ -7,14 +7,12 @@ from spack.package import *
 
 
 class RCopdsexualdimorphismData(RPackage):
-	"""Data to support sexually dimorphic and COPD differential analysis for gene expression and methylation.
+    """Data to support sexually dimorphic and COPD differential analysis for gene expression and methylation.
 
-	Datasets to support COPDSexaulDimorphism Package.
-	"""
-	
-	bioc = "COPDSexualDimorphism.data"
+    Datasets to support COPDSexaulDimorphism Package.
+    """
 
-	version("1.44.0", commit="e6e8eabf02848bada04e950a11c2a76853228163")
-	version("1.38.0", commit="7ca6bba8795310c24c381f0a05fc937522fcce51")
+    bioc = "COPDSexualDimorphism.data"
 
-
+    version("1.44.0", commit="e6e8eabf02848bada04e950a11c2a76853228163")
+    version("1.38.0", commit="7ca6bba8795310c24c381f0a05fc937522fcce51")
