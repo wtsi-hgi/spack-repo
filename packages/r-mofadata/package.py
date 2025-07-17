@@ -7,15 +7,14 @@ from spack.package import *
 
 
 class RMofadata(RPackage):
-	"""Data package for Multi-Omics Factor Analysis (MOFA)
+    """Data package for Multi-Omics Factor Analysis (MOFA)
 
-	A collection of datasets to accompany the R package MOFA and illustrate running and analysing MOFA models.
-	"""
-	
-	bioc = "MOFAdata"
+    A collection of datasets to accompany the R package MOFA and illustrate running and analysing MOFA models.
+    """
 
-	version("1.24.0", commit="65717db0de077d3f4b0e995355ca15fa32b1ab6f")
-	version("1.18.0", commit="f0c52b30320688b8e08abcd6cd532b914007cc4a")
+    bioc = "MOFAdata"
 
-	depends_on("r@3.5:", type=("build", "run"))
+    version("1.24.0", commit="65717db0de077d3f4b0e995355ca15fa32b1ab6f")
+    version("1.18.0", commit="f0c52b30320688b8e08abcd6cd532b914007cc4a")
 
+    depends_on("r@3.5:", type=("build", "run"))

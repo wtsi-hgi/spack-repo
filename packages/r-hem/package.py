@@ -7,16 +7,18 @@ from spack.package import *
 
 
 class RHem(RPackage):
-	"""Heterogeneous error model for identification of differentially expressed genes under multiple conditions
+    """Heterogeneous error model for identification of differentially expressed genes under multiple conditions
 
-	This package fits heterogeneous error models for analysis of microarray data
-	"""
-	
-	homepage = "http://www.healthsystem.virginia.edu/internet/hes/biostat/bioinformatics/"
-	bioc = "HEM"
+    This package fits heterogeneous error models for analysis of microarray data
+    """
 
-	version("1.80.0", commit="0c872b23bbe3423ffdde54fd2fdfc1dea36525dc")
-	version("1.74.0", commit="dba767f812504381eafd5c129425436a4a377bd2")
+    homepage = (
+        "http://www.healthsystem.virginia.edu/internet/hes/biostat/bioinformatics/"
+    )
+    bioc = "HEM"
 
-	depends_on("r@2.1:", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
+    version("1.80.0", commit="0c872b23bbe3423ffdde54fd2fdfc1dea36525dc")
+    version("1.74.0", commit="dba767f812504381eafd5c129425436a4a377bd2")
+
+    depends_on("r@2.1:", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))

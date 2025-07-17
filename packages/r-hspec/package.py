@@ -7,16 +7,21 @@ from spack.package import *
 
 
 class RHspec(RPackage):
-	"""Hspec
+    """Hspec
 
-	A package containing an environment representing the HGU133Plus2_Hs_Hspec.cdf file.
-	"""
-	
-	bioc = "Hspec" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Hspec_0.99.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Hspec/Hspec_0.99.1.tar.gz"]
+    A package containing an environment representing the HGU133Plus2_Hs_Hspec.cdf file.
+    """
 
-	version("0.99.1", sha256="ab9efed4e74db04fa104ff080ab55dcd962271e70240ff0f3bcf9c1468eceaa2")
+    bioc = "Hspec"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Hspec_0.99.1.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/Hspec/Hspec_0.99.1.tar.gz",
+    ]
 
-	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
+    version(
+        "0.99.1",
+        sha256="ab9efed4e74db04fa104ff080ab55dcd962271e70240ff0f3bcf9c1468eceaa2",
+    )
 
+    depends_on("r@2.10:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))

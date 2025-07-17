@@ -7,36 +7,36 @@ from spack.package import *
 
 
 class RChipqc(RPackage):
-	"""Quality metrics for ChIPseq data
+    """Quality metrics for ChIPseq data
 
-	Quality metrics for ChIPseq data.
-	"""
-	
-	bioc = "ChIPQC"
+    Quality metrics for ChIPseq data.
+    """
 
-	version("1.44.0", commit="0aab1b519f4e2eece18db678c08e7eba4a3a3c5d")
-	version("1.38.0", commit="850e458eabbe145d79dc467c6fc26150b5a4fea9")
+    bioc = "ChIPQC"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-diffbind", type=("build", "run"))
-	depends_on("r-genomicranges@1.17.19:", type=("build", "run"))
-	depends_on("r-biocparallel", type=("build", "run"))
-	depends_on("r-biocgenerics@0.11.3:", type=("build", "run"))
-	depends_on("r-s4vectors@0.1:", type=("build", "run"))
-	depends_on("r-iranges@1.99.17:", type=("build", "run"))
-	depends_on("r-rsamtools@1.17.28:", type=("build", "run"))
-	depends_on("r-genomicalignments@1.1.16:", type=("build", "run"))
-	depends_on("r-chipseq@1.12:", type=("build", "run"))
-	depends_on("r-gtools", type=("build", "run"))
-	depends_on("r-reshape2", type=("build", "run"))
-	depends_on("r-nozzle-r1", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-genomicfeatures", type=("build", "run"))
-	depends_on("r-txdb-hsapiens-ucsc-hg19-knowngene", type=("build", "run"))
-	depends_on("r-txdb-hsapiens-ucsc-hg18-knowngene", type=("build", "run"))
-	depends_on("r-txdb-mmusculus-ucsc-mm10-knowngene", type=("build", "run"))
-	depends_on("r-txdb-mmusculus-ucsc-mm9-knowngene", type=("build", "run"))
-	depends_on("r-txdb-rnorvegicus-ucsc-rn4-ensgene", type=("build", "run"))
-	depends_on("r-txdb-celegans-ucsc-ce6-ensgene", type=("build", "run"))
-	depends_on("r-txdb-dmelanogaster-ucsc-dm3-ensgene", type=("build", "run"))
+    version("1.44.0", commit="0aab1b519f4e2eece18db678c08e7eba4a3a3c5d")
+    version("1.38.0", commit="850e458eabbe145d79dc467c6fc26150b5a4fea9")
+
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-diffbind", type=("build", "run"))
+    depends_on("r-genomicranges@1.17.19:", type=("build", "run"))
+    depends_on("r-biocparallel", type=("build", "run"))
+    depends_on("r-biocgenerics@0.11.3:", type=("build", "run"))
+    depends_on("r-s4vectors@0.1:", type=("build", "run"))
+    depends_on("r-iranges@1.99.17:", type=("build", "run"))
+    depends_on("r-rsamtools@1.17.28:", type=("build", "run"))
+    depends_on("r-genomicalignments@1.1.16:", type=("build", "run"))
+    depends_on("r-chipseq@1.12:", type=("build", "run"))
+    depends_on("r-gtools", type=("build", "run"))
+    depends_on("r-reshape2", type=("build", "run"))
+    depends_on("r-nozzle-r1", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-genomicfeatures", type=("build", "run"))
+    depends_on("r-txdb-hsapiens-ucsc-hg19-knowngene", type=("build", "run"))
+    depends_on("r-txdb-hsapiens-ucsc-hg18-knowngene", type=("build", "run"))
+    depends_on("r-txdb-mmusculus-ucsc-mm10-knowngene", type=("build", "run"))
+    depends_on("r-txdb-mmusculus-ucsc-mm9-knowngene", type=("build", "run"))
+    depends_on("r-txdb-rnorvegicus-ucsc-rn4-ensgene", type=("build", "run"))
+    depends_on("r-txdb-celegans-ucsc-ce6-ensgene", type=("build", "run"))
+    depends_on("r-txdb-dmelanogaster-ucsc-dm3-ensgene", type=("build", "run"))

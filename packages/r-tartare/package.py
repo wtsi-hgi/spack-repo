@@ -7,18 +7,17 @@ from spack.package import *
 
 
 class RTartare(RPackage):
-	"""Raw ground spectra recorded on Thermo Fisher Scientific mass spectrometers
+    """Raw ground spectra recorded on Thermo Fisher Scientific mass spectrometers
 
-	Provides raw files recorded on different Liquid Chromatography Mass Spectrometry (LC-MS) instruments. All included MS instruments are manufactured by Thermo Fisher Scientific and belong to the Orbitrap Tribrid or Q Exactive Orbitrap family of instruments. Despite their common origin and shared hardware components, e.g., Orbitrap mass analyser, the above instruments tend to write data in different "dialects" in a shared binary file format (.raw). The intention behind tartare is to provide complex but slim real-world files that can be used to make code robust with respect to this diversity. In other words, it is intended for enhanced unit testing. The package is considered to be used with the rawrr package and the Spectra MsBackends.
-	"""
-	
-	homepage = "https://github.com/cpanse/tartare"
-	bioc = "tartare"
+    Provides raw files recorded on different Liquid Chromatography Mass Spectrometry (LC-MS) instruments. All included MS instruments are manufactured by Thermo Fisher Scientific and belong to the Orbitrap Tribrid or Q Exactive Orbitrap family of instruments. Despite their common origin and shared hardware components, e.g., Orbitrap mass analyser, the above instruments tend to write data in different "dialects" in a shared binary file format (.raw). The intention behind tartare is to provide complex but slim real-world files that can be used to make code robust with respect to this diversity. In other words, it is intended for enhanced unit testing. The package is considered to be used with the rawrr package and the Spectra MsBackends.
+    """
 
-	version("1.22.0", commit="73e34e7d4811f97fe99231bd8ae3fe9c524ae601")
-	version("1.16.0", commit="decd44daac17dbed12af5beb6a5bdc472d66cc2a")
+    homepage = "https://github.com/cpanse/tartare"
+    bioc = "tartare"
 
-	depends_on("r@4.1:", type=("build", "run"))
-	depends_on("r-annotationhub@2.16:", type=("build", "run"))
-	depends_on("r-experimenthub@1:", type=("build", "run"))
+    version("1.22.0", commit="73e34e7d4811f97fe99231bd8ae3fe9c524ae601")
+    version("1.16.0", commit="decd44daac17dbed12af5beb6a5bdc472d66cc2a")
 
+    depends_on("r@4.1:", type=("build", "run"))
+    depends_on("r-annotationhub@2.16:", type=("build", "run"))
+    depends_on("r-experimenthub@1:", type=("build", "run"))

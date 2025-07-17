@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RAracneNetworks(RPackage):
-	"""ARACNe-inferred gene networks from TCGA tumor datasets
+    """ARACNe-inferred gene networks from TCGA tumor datasets
 
-	This package contains ARACNe-inferred networks from TCGA tumor datasets. It also contains a function to export them into plain-text format.
-	"""
-	
-	bioc = "aracne.networks"
+    This package contains ARACNe-inferred networks from TCGA tumor datasets. It also contains a function to export them into plain-text format.
+    """
 
-	version("1.34.0", commit="8adad99734fc829ad0c8cb26a1603772ee918429")
-	version("1.28.0", commit="3c3a4fb1e3768c8b865b99ab1bae9027968a129c")
+    bioc = "aracne.networks"
 
-	depends_on("r@3.3:", type=("build", "run"))
-	depends_on("r-viper", type=("build", "run"))
+    version("1.34.0", commit="8adad99734fc829ad0c8cb26a1603772ee918429")
+    version("1.28.0", commit="3c3a4fb1e3768c8b865b99ab1bae9027968a129c")
 
+    depends_on("r@3.3:", type=("build", "run"))
+    depends_on("r-viper", type=("build", "run"))

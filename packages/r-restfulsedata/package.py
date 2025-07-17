@@ -7,18 +7,17 @@ from spack.package import *
 
 
 class RRestfulsedata(RPackage):
-	"""Example metadata for the "restfulSE" R package
+    """Example metadata for the "restfulSE" R package
 
-	Metadata RangedSummarizedExperiment shell for use with restfulSE.
-	"""
-	
-	bioc = "restfulSEData"
+    Metadata RangedSummarizedExperiment shell for use with restfulSE.
+    """
 
-	version("1.24.0", commit="2e6df54780ea3331a7a41b39c2284a3c6982564a")
+    bioc = "restfulSEData"
 
-	depends_on("r@3.4:", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-experimenthub", type=("build", "run"))
-	depends_on("r-delayedarray@0.21.2:", type=("build", "run"))
-	depends_on("r-hdf5array@1.23.2:", type=("build", "run"))
+    version("1.24.0", commit="2e6df54780ea3331a7a41b39c2284a3c6982564a")
 
+    depends_on("r@3.4:", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-experimenthub", type=("build", "run"))
+    depends_on("r-delayedarray@0.21.2:", type=("build", "run"))
+    depends_on("r-hdf5array@1.23.2:", type=("build", "run"))

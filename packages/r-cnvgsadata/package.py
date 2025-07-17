@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RCnvgsadata(RPackage):
-	"""Data used in the vignette of the cnvGSA package
+    """Data used in the vignette of the cnvGSA package
 
-	This package contains the data used in the vignette of the cnvGSA package.
-	"""
-	
-	bioc = "cnvGSAdata"
+    This package contains the data used in the vignette of the cnvGSA package.
+    """
 
-	version("1.44.0", commit="ea3968fb3064babb899c52c1794d03e4ba205e91")
-	version("1.38.0", commit="bdd5076dc6a7d889c62332407bbdb7c36253a7f2")
+    bioc = "cnvGSAdata"
 
-	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-cnvgsa", type=("build", "run"))
+    version("1.44.0", commit="ea3968fb3064babb899c52c1794d03e4ba205e91")
+    version("1.38.0", commit="bdd5076dc6a7d889c62332407bbdb7c36253a7f2")
 
+    depends_on("r@2.10:", type=("build", "run"))
+    depends_on("r-cnvgsa", type=("build", "run"))

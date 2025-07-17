@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class RDama(RPackage):
-	"""Efficient design and analysis of factorial two-colour microarray data
+    """Efficient design and analysis of factorial two-colour microarray data
 
-	This package contains functions for the efficient design of factorial two-colour microarray experiments and for the statistical analysis of factorial microarray data. Statistical details are described in Bretz et al. (2003, submitted)
-	"""
-	
-	homepage = "http://www.microarrays.med.uni-goettingen.de"
-	bioc = "daMA"
+    This package contains functions for the efficient design of factorial two-colour microarray experiments and for the statistical analysis of factorial microarray data. Statistical details are described in Bretz et al. (2003, submitted)
+    """
 
-	version("1.80.0", commit="bcf9b55eb06fd45c952b0967eb1d4fb5ad6c8182")
-	version("1.74.0", commit="9d614e80dc613978e404267f431a712f8d62897b")
+    homepage = "http://www.microarrays.med.uni-goettingen.de"
+    bioc = "daMA"
 
-	depends_on("r-mass", type=("build", "run"))
+    version("1.80.0", commit="bcf9b55eb06fd45c952b0967eb1d4fb5ad6c8182")
+    version("1.74.0", commit="9d614e80dc613978e404267f431a712f8d62897b")
+
+    depends_on("r-mass", type=("build", "run"))

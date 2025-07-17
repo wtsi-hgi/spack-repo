@@ -7,17 +7,16 @@ from spack.package import *
 
 
 class RFlowsortedCordbloodnorway450k(RPackage):
-	"""Illumina HumanMethylation data on sorted cord blood cell populations
+    """Illumina HumanMethylation data on sorted cord blood cell populations
 
-	Raw data objects for the Illumina 450k DNA methylation microarrays, for cell type composition estimation.
-	"""
-	
-	homepage = "https://bitbucket.com/kasperdanielhansen/Illumina_CordBlood"
-	bioc = "FlowSorted.CordBloodNorway.450k"
+    Raw data objects for the Illumina 450k DNA methylation microarrays, for cell type composition estimation.
+    """
 
-	version("1.34.0", commit="95eacd1d4dc0a7f633e0cf717fb06ffaf6454a31")
-	version("1.28.0", commit="b9cee45738ff5a791eeef53146d97179f5cf4339")
+    homepage = "https://bitbucket.com/kasperdanielhansen/Illumina_CordBlood"
+    bioc = "FlowSorted.CordBloodNorway.450k"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-minfi@1.21.2:", type=("build", "run"))
+    version("1.34.0", commit="95eacd1d4dc0a7f633e0cf717fb06ffaf6454a31")
+    version("1.28.0", commit="b9cee45738ff5a791eeef53146d97179f5cf4339")
 
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-minfi@1.21.2:", type=("build", "run"))

@@ -7,14 +7,14 @@ from spack.package import *
 
 
 class RMetahdep(RPackage):
-	"""Hierarchical Dependence in Meta-Analysis
+    """Hierarchical Dependence in Meta-Analysis
 
-	Tools for meta-analysis in the presence of hierarchical (and/or sampling) dependence, including with gene expression studies
-	"""
-	
-	bioc = "metahdep"
+    Tools for meta-analysis in the presence of hierarchical (and/or sampling) dependence, including with gene expression studies
+    """
 
-	version("1.66.0", commit="a03807f33ef8c44cc4d696f2d300b74e1a4bbca2")
-	version("1.60.0", commit="187c10d6dec24236234c13fbb62f1452c0d28dbf")
+    bioc = "metahdep"
 
-	depends_on("r@2.10:", type=("build", "run"))
+    version("1.66.0", commit="a03807f33ef8c44cc4d696f2d300b74e1a4bbca2")
+    version("1.60.0", commit="187c10d6dec24236234c13fbb62f1452c0d28dbf")
+
+    depends_on("r@2.10:", type=("build", "run"))

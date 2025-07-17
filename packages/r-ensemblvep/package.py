@@ -7,19 +7,19 @@ from spack.package import *
 
 
 class REnsemblvep(RPackage):
-	"""R Interface to Ensembl Variant Effect Predictor
+    """R Interface to Ensembl Variant Effect Predictor
 
-	Query the Ensembl Variant Effect Predictor via the perl API.
-	"""
-	
-	bioc = "ensemblVEP"
+    Query the Ensembl Variant Effect Predictor via the perl API.
+    """
 
-	version("1.44.0", commit="58d05c04229d388316c20835de134fe12820ad03")
+    bioc = "ensemblVEP"
 
-	depends_on("r-biocgenerics", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-variantannotation", type=("build", "run"))
-	depends_on("r-s4vectors@0.9.25:", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-genomeinfodb", type=("build", "run"))
+    version("1.44.0", commit="58d05c04229d388316c20835de134fe12820ad03")
+
+    depends_on("r-biocgenerics", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-variantannotation", type=("build", "run"))
+    depends_on("r-s4vectors@0.9.25:", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-genomeinfodb", type=("build", "run"))

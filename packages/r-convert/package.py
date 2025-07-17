@@ -7,18 +7,18 @@ from spack.package import *
 
 
 class RConvert(RPackage):
-	"""Convert Microarray Data Objects
+    """Convert Microarray Data Objects
 
-	Define coerce methods for microarray data objects.
-	"""
-	
-	homepage = "http://bioinf.wehi.edu.au/limma/convert.html"
-	bioc = "convert"
+    Define coerce methods for microarray data objects.
+    """
 
-	version("1.84.0", commit="801274c62baa5a572619a86ee338b0db54b63c14")
-	version("1.78.0", commit="398d7e4cccda0c90d963117cac574032f8874e7c")
+    homepage = "http://bioinf.wehi.edu.au/limma/convert.html"
+    bioc = "convert"
 
-	depends_on("r@2.6:", type=("build", "run"))
-	depends_on("r-biobase@1.15.33:", type=("build", "run"))
-	depends_on("r-limma@1.7:", type=("build", "run"))
-	depends_on("r-marray", type=("build", "run"))
+    version("1.84.0", commit="801274c62baa5a572619a86ee338b0db54b63c14")
+    version("1.78.0", commit="398d7e4cccda0c90d963117cac574032f8874e7c")
+
+    depends_on("r@2.6:", type=("build", "run"))
+    depends_on("r-biobase@1.15.33:", type=("build", "run"))
+    depends_on("r-limma@1.7:", type=("build", "run"))
+    depends_on("r-marray", type=("build", "run"))

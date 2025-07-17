@@ -7,32 +7,32 @@ from spack.package import *
 
 
 class RBnem(RPackage):
-	"""Training of logical models from indirect measurements of perturbation experiments
+    """Training of logical models from indirect measurements of perturbation experiments
 
-	bnem combines the use of indirect measurements of Nested Effects Models (package mnem) with the Boolean networks of CellNOptR. Perturbation experiments of signalling nodes in cells are analysed for their effect on the global gene expression profile. Those profiles give evidence for the Boolean regulation of down-stream nodes in the network, e.g., whether two parents activate their child independently (OR-gate) or jointly (AND-gate).
-	"""
-	
-	homepage = "https://github.com/MartinFXP/bnem/"
-	bioc = "bnem"
+    bnem combines the use of indirect measurements of Nested Effects Models (package mnem) with the Boolean networks of CellNOptR. Perturbation experiments of signalling nodes in cells are analysed for their effect on the global gene expression profile. Those profiles give evidence for the Boolean regulation of down-stream nodes in the network, e.g., whether two parents activate their child independently (OR-gate) or jointly (AND-gate).
+    """
 
-	version("1.16.0", commit="479b48741e5ba25472b0954786bbb7bad1baab91")
-	version("1.10.0", commit="ba0965c4212bcfd8f8f1dc1fee1cd7d45a728ccf")
+    homepage = "https://github.com/MartinFXP/bnem/"
+    bioc = "bnem"
 
-	depends_on("r@4.1:", type=("build", "run"))
-	depends_on("r-cellnoptr", type=("build", "run"))
-	depends_on("r-matrixstats", type=("build", "run"))
-	depends_on("r-snowfall", type=("build", "run"))
-	depends_on("r-rgraphviz", type=("build", "run"))
-	depends_on("r-cluster", type=("build", "run"))
-	depends_on("r-flexclust", type=("build", "run"))
-	depends_on("r-rcolorbrewer", type=("build", "run"))
-	depends_on("r-epinem", type=("build", "run"))
-	depends_on("r-mnem", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-graph", type=("build", "run"))
-	depends_on("r-affy", type=("build", "run"))
-	depends_on("r-binom", type=("build", "run"))
-	depends_on("r-limma", type=("build", "run"))
-	depends_on("r-sva", type=("build", "run"))
-	depends_on("r-vsn", type=("build", "run"))
-	depends_on("r-rmarkdown", type=("build", "run"))
+    version("1.16.0", commit="479b48741e5ba25472b0954786bbb7bad1baab91")
+    version("1.10.0", commit="ba0965c4212bcfd8f8f1dc1fee1cd7d45a728ccf")
+
+    depends_on("r@4.1:", type=("build", "run"))
+    depends_on("r-cellnoptr", type=("build", "run"))
+    depends_on("r-matrixstats", type=("build", "run"))
+    depends_on("r-snowfall", type=("build", "run"))
+    depends_on("r-rgraphviz", type=("build", "run"))
+    depends_on("r-cluster", type=("build", "run"))
+    depends_on("r-flexclust", type=("build", "run"))
+    depends_on("r-rcolorbrewer", type=("build", "run"))
+    depends_on("r-epinem", type=("build", "run"))
+    depends_on("r-mnem", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-graph", type=("build", "run"))
+    depends_on("r-affy", type=("build", "run"))
+    depends_on("r-binom", type=("build", "run"))
+    depends_on("r-limma", type=("build", "run"))
+    depends_on("r-sva", type=("build", "run"))
+    depends_on("r-vsn", type=("build", "run"))
+    depends_on("r-rmarkdown", type=("build", "run"))

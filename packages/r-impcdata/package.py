@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class RImpcdata(RPackage):
-	"""Retrieves data from IMPC database
+    """Retrieves data from IMPC database
 
-	Package contains methods for data retrieval from IMPC Database.
-	"""
-	
-	bioc = "IMPCdata"
+    Package contains methods for data retrieval from IMPC Database.
+    """
 
-	version("1.44.0", commit="fd8c39d0876630d187429341469cb6771c00df8f")
-	version("1.38.0", commit="8fa0d84f3c9a534427eb952c48e19e331a83039b")
+    bioc = "IMPCdata"
 
-	depends_on("r@2.3:", type=("build", "run"))
-	depends_on("r-rjson", type=("build", "run"))
+    version("1.44.0", commit="fd8c39d0876630d187429341469cb6771c00df8f")
+    version("1.38.0", commit="8fa0d84f3c9a534427eb952c48e19e331a83039b")
+
+    depends_on("r@2.3:", type=("build", "run"))
+    depends_on("r-rjson", type=("build", "run"))

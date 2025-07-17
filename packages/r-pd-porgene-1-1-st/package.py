@@ -7,22 +7,27 @@ from spack.package import *
 
 
 class RPdPorgene11St(RPackage):
-	"""Platform Design Info for Affymetrix PorGene-1_1-st
+    """Platform Design Info for Affymetrix PorGene-1_1-st
 
-	Platform Design Info for Affymetrix PorGene-1_1-st
-	"""
-	
-	bioc = "pd.porgene.1.1.st" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.porgene.1.1.st_3.12.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.porgene.1.1.st/pd.porgene.1.1.st_3.12.0.tar.gz"]
+    Platform Design Info for Affymetrix PorGene-1_1-st
+    """
 
-	version("3.12.0", sha256="b39118722d9354d2788059c6959e609e4932b775572b5b3ae10b953e19e51f0d")
+    bioc = "pd.porgene.1.1.st"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pd.porgene.1.1.st_3.12.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pd.porgene.1.1.st/pd.porgene.1.1.st_3.12.0.tar.gz",
+    ]
 
-	depends_on("r@3.2:", type=("build", "run"))
-	depends_on("r-biostrings@2.35.12:", type=("build", "run"))
-	depends_on("r-rsqlite@1:", type=("build", "run"))
-	depends_on("r-oligoclasses@1.29.6:", type=("build", "run"))
-	depends_on("r-oligo@1.31.5:", type=("build", "run"))
-	depends_on("r-dbi@0.3.1:", type=("build", "run"))
-	depends_on("r-iranges@2.1.43:", type=("build", "run"))
-	depends_on("r-s4vectors@0.5.22:", type=("build", "run"))
+    version(
+        "3.12.0",
+        sha256="b39118722d9354d2788059c6959e609e4932b775572b5b3ae10b953e19e51f0d",
+    )
 
+    depends_on("r@3.2:", type=("build", "run"))
+    depends_on("r-biostrings@2.35.12:", type=("build", "run"))
+    depends_on("r-rsqlite@1:", type=("build", "run"))
+    depends_on("r-oligoclasses@1.29.6:", type=("build", "run"))
+    depends_on("r-oligo@1.31.5:", type=("build", "run"))
+    depends_on("r-dbi@0.3.1:", type=("build", "run"))
+    depends_on("r-iranges@2.1.43:", type=("build", "run"))
+    depends_on("r-s4vectors@0.5.22:", type=("build", "run"))

@@ -7,16 +7,16 @@ from spack.package import *
 
 
 class RTargetsearch(RPackage):
-	"""A package for the analysis of GC-MS metabolite profiling data
+    """A package for the analysis of GC-MS metabolite profiling data
 
-	This packages provides a flexible, fast and accurate method for targeted pre-processing of GC-MS data. The user provides a (often very large) set of GC chromatograms and a metabolite library of targets. The package will automatically search those targets in the chromatograms resulting in a data matrix that can be used for further data analysis.
-	"""
-	
-	homepage = "https://github.com/acinostroza/TargetSearch"
-	bioc = "TargetSearch"
+    This packages provides a flexible, fast and accurate method for targeted pre-processing of GC-MS data. The user provides a (often very large) set of GC chromatograms and a metabolite library of targets. The package will automatically search those targets in the chromatograms resulting in a data matrix that can be used for further data analysis.
+    """
 
-	version("2.10.0", commit="1a62936a14741b0d7956a83ad4b7c4e7488b6f84")
-	version("2.4.2", commit="61967f1d3332665524e6d03d6158aeeb35f97a1e")
+    homepage = "https://github.com/acinostroza/TargetSearch"
+    bioc = "TargetSearch"
 
-	depends_on("r-ncdf4", type=("build", "run"))
-	depends_on("r-assertthat", type=("build", "run"))
+    version("2.10.0", commit="1a62936a14741b0d7956a83ad4b7c4e7488b6f84")
+    version("2.4.2", commit="61967f1d3332665524e6d03d6158aeeb35f97a1e")
+
+    depends_on("r-ncdf4", type=("build", "run"))
+    depends_on("r-assertthat", type=("build", "run"))

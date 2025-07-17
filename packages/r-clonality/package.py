@@ -7,14 +7,14 @@ from spack.package import *
 
 
 class RClonality(RPackage):
-	"""Clonality testing
+    """Clonality testing
 
-	Statistical tests for clonality versus independence of tumors from the same patient based on their LOH or genomewide copy number profiles
-	"""
-	
-	bioc = "Clonality" 
+    Statistical tests for clonality versus independence of tumors from the same patient based on their LOH or genomewide copy number profiles
+    """
 
-	version("1.50.0", commit="63d4ea324bbb444a66929137e224ad3c2a5040aa")
+    bioc = "Clonality"
 
-	depends_on("r@2.12.2:", type=("build", "run"))
-	depends_on("r-dnacopy", type=("build", "run"))
+    version("1.50.0", commit="63d4ea324bbb444a66929137e224ad3c2a5040aa")
+
+    depends_on("r@2.12.2:", type=("build", "run"))
+    depends_on("r-dnacopy", type=("build", "run"))

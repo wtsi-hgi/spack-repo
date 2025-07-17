@@ -7,15 +7,20 @@ from spack.package import *
 
 
 class RHgu219cdf(RPackage):
-	"""hgu219cdf
+    """hgu219cdf
 
-	A package containing an environment representing the HG-U219.cdf file.
-	"""
-	
-	bioc = "hgu219cdf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu219cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu219cdf/hgu219cdf_2.18.0.tar.gz"]
+    A package containing an environment representing the HG-U219.cdf file.
+    """
 
-	version("2.18.0", sha256="0d7c4b57ab3de6a70e6fa20687496d958c47ffd1ee22dab5dee44282f2b16b92")
+    bioc = "hgu219cdf"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu219cdf_2.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgu219cdf/hgu219cdf_2.18.0.tar.gz",
+    ]
 
-	depends_on("r-annotationdbi", type=("build", "run"))
+    version(
+        "2.18.0",
+        sha256="0d7c4b57ab3de6a70e6fa20687496d958c47ffd1ee22dab5dee44282f2b16b92",
+    )
 
+    depends_on("r-annotationdbi", type=("build", "run"))

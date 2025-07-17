@@ -7,17 +7,17 @@ from spack.package import *
 
 
 class RTreeandleaf(RPackage):
-	"""Displaying binary trees with focus on dendrogram leaves
+    """Displaying binary trees with focus on dendrogram leaves
 
-	The TreeAndLeaf package combines unrooted and force-directed graph algorithms in order to layout binary trees, aiming to represent multiple layers of information onto dendrogram leaves.
-	"""
-	
-	bioc = "TreeAndLeaf"
+    The TreeAndLeaf package combines unrooted and force-directed graph algorithms in order to layout binary trees, aiming to represent multiple layers of information onto dendrogram leaves.
+    """
 
-	version("1.20.0", commit="3a797ab3dc7a05552d323228d7349f7d46d9cbec")
-	version("1.14.0", commit="f57a9339c970aad701318549b34dd13482da55f0")
+    bioc = "TreeAndLeaf"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-reder@1.40.4:", type=("build", "run"))
-	depends_on("r-igraph", type=("build", "run"))
-	depends_on("r-ape", type=("build", "run"))
+    version("1.20.0", commit="3a797ab3dc7a05552d323228d7349f7d46d9cbec")
+    version("1.14.0", commit="f57a9339c970aad701318549b34dd13482da55f0")
+
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-reder@1.40.4:", type=("build", "run"))
+    depends_on("r-igraph", type=("build", "run"))
+    depends_on("r-ape", type=("build", "run"))

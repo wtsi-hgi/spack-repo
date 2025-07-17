@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class RMinet(RPackage):
-	"""Mutual Information NETworks
+    """Mutual Information NETworks
 
-	This package implements various algorithms for inferring mutual information networks from data.
-	"""
-	
-	homepage = "http://minet.meyerp.com"
-	bioc = "minet"
+    This package implements various algorithms for inferring mutual information networks from data.
+    """
 
-	version("3.66.0", commit="902efa9808a437c93dc642f9278c2038df52618b")
-	version("3.60.0", commit="3cf4b451b6d96befa967e91eade33d61a37b003e")
+    homepage = "http://minet.meyerp.com"
+    bioc = "minet"
 
-	depends_on("r-infotheo", type=("build", "run"))
+    version("3.66.0", commit="902efa9808a437c93dc642f9278c2038df52618b")
+    version("3.60.0", commit="3cf4b451b6d96befa967e91eade33d61a37b003e")
+
+    depends_on("r-infotheo", type=("build", "run"))

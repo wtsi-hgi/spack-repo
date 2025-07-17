@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RUniprotkeywords(RPackage):
-	"""Keywords from UniProt Database
+    """Keywords from UniProt Database
 
-	UniProt database provides a list of controlled vocabulary represented as keywords for genes or proteins. This is useful for summarizing gene functions in a compact way. This package provides data of keywords hierarchy and gene-keyword relations.
-	"""
-	
-	homepage = "https://github.com/jokergoo/UniProtKeywords"
-	bioc = "UniProtKeywords"
+    UniProt database provides a list of controlled vocabulary represented as keywords for genes or proteins. This is useful for summarizing gene functions in a compact way. This package provides data of keywords hierarchy and gene-keyword relations.
+    """
 
-	version("0.99.7", commit="342c7c1a1f28692ae7a11beb98489c6c0cc34e64")
-	version("0.99.7", commit="342c7c1a1f28692ae7a11beb98489c6c0cc34e64")
+    homepage = "https://github.com/jokergoo/UniProtKeywords"
+    bioc = "UniProtKeywords"
 
-	depends_on("r@4:", type=("build", "run"))
+    version("0.99.7", commit="342c7c1a1f28692ae7a11beb98489c6c0cc34e64")
+    version("0.99.7", commit="342c7c1a1f28692ae7a11beb98489c6c0cc34e64")
 
+    depends_on("r@4:", type=("build", "run"))

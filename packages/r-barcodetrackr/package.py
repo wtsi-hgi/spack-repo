@@ -7,34 +7,34 @@ from spack.package import *
 
 
 class RBarcodetrackr(RPackage):
-	"""Functions for Analyzing Cellular Barcoding Data
+    """Functions for Analyzing Cellular Barcoding Data
 
-	barcodetrackR is an R package developed for the analysis and visualization of clonal tracking data. Data required is samples and tag abundances in matrix form. Usually from cellular barcoding experiments, integration site retrieval analyses, or similar technologies.
-	"""
-	
-	homepage = "https://github.com/dunbarlabNIH/barcodetrackR"
-	bioc = "barcodetrackR"
+    barcodetrackR is an R package developed for the analysis and visualization of clonal tracking data. Data required is samples and tag abundances in matrix form. Usually from cellular barcoding experiments, integration site retrieval analyses, or similar technologies.
+    """
 
-	version("1.16.0", commit="313d1868907fee11715cd8d2cd9787b373bd6e56")
-	version("1.10.0", commit="e53b7a6b5146963b7afee7364963320cc5f1f04b")
+    homepage = "https://github.com/dunbarlabNIH/barcodetrackR"
+    bioc = "barcodetrackR"
 
-	depends_on("r@4.1:", type=("build", "run"))
-	depends_on("r-cowplot", type=("build", "run"))
-	depends_on("r-circlize", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-ggdendro", type=("build", "run"))
-	depends_on("r-ggridges", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-plyr", type=("build", "run"))
-	depends_on("r-proxy", type=("build", "run"))
-	depends_on("r-rcolorbrewer", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
-	depends_on("r-scales", type=("build", "run"))
-	depends_on("r-shiny", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-tibble", type=("build", "run"))
-	depends_on("r-tidyr", type=("build", "run"))
-	depends_on("r-vegan", type=("build", "run"))
-	depends_on("r-viridis", type=("build", "run"))
+    version("1.16.0", commit="313d1868907fee11715cd8d2cd9787b373bd6e56")
+    version("1.10.0", commit="e53b7a6b5146963b7afee7364963320cc5f1f04b")
+
+    depends_on("r@4.1:", type=("build", "run"))
+    depends_on("r-cowplot", type=("build", "run"))
+    depends_on("r-circlize", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-ggdendro", type=("build", "run"))
+    depends_on("r-ggridges", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))
+    depends_on("r-plyr", type=("build", "run"))
+    depends_on("r-proxy", type=("build", "run"))
+    depends_on("r-rcolorbrewer", type=("build", "run"))
+    depends_on("r-rlang", type=("build", "run"))
+    depends_on("r-scales", type=("build", "run"))
+    depends_on("r-shiny", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-tibble", type=("build", "run"))
+    depends_on("r-tidyr", type=("build", "run"))
+    depends_on("r-vegan", type=("build", "run"))
+    depends_on("r-viridis", type=("build", "run"))

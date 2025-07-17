@@ -7,15 +7,20 @@ from spack.package import *
 
 
 class RMu19ksubacdf(RPackage):
-	"""mu19ksubacdf
+    """mu19ksubacdf
 
-	A package containing an environment representing the Mu19KsubA.CDF file.
-	"""
-	
-	bioc = "mu19ksubacdf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mu19ksubacdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mu19ksubacdf/mu19ksubacdf_2.18.0.tar.gz"]
+    A package containing an environment representing the Mu19KsubA.CDF file.
+    """
 
-	version("2.18.0", sha256="095c2a372a84ba667d9587db1ed6393a1b140dad4c44964d3d60236bed863630")
+    bioc = "mu19ksubacdf"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mu19ksubacdf_2.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mu19ksubacdf/mu19ksubacdf_2.18.0.tar.gz",
+    ]
 
-	depends_on("r-annotationdbi", type=("build", "run"))
+    version(
+        "2.18.0",
+        sha256="095c2a372a84ba667d9587db1ed6393a1b140dad4c44964d3d60236bed863630",
+    )
 
+    depends_on("r-annotationdbi", type=("build", "run"))

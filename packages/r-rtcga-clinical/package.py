@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RRtcgaClinical(RPackage):
-	"""Clinical datasets from The Cancer Genome Atlas Project
+    """Clinical datasets from The Cancer Genome Atlas Project
 
-	Package provides clinical datasets from The Cancer Genome Atlas Project for all cohorts types from http://gdac.broadinstitute.org/. Clinical data format is explained here https://wiki.nci.nih.gov/display/TCGA/Clinical+Data+Overview. Data from 2015-11-01 snapshot.
-	"""
-	
-	bioc = "RTCGA.clinical"
+    Package provides clinical datasets from The Cancer Genome Atlas Project for all cohorts types from http://gdac.broadinstitute.org/. Clinical data format is explained here https://wiki.nci.nih.gov/display/TCGA/Clinical+Data+Overview. Data from 2015-11-01 snapshot.
+    """
 
-	version("20151101.38.0", commit="39abc65737ce6716fd7a4dec8be0abbe35cd5684")
-	version("20151101.32.0", commit="c3e3be40eb56177d7ac38c193013aa326a3940be")
+    bioc = "RTCGA.clinical"
 
-	depends_on("r@3.2:", type=("build", "run"))
-	depends_on("r-rtcga", type=("build", "run"))
+    version("20151101.38.0", commit="39abc65737ce6716fd7a4dec8be0abbe35cd5684")
+    version("20151101.32.0", commit="c3e3be40eb56177d7ac38c193013aa326a3940be")
 
+    depends_on("r@3.2:", type=("build", "run"))
+    depends_on("r-rtcga", type=("build", "run"))

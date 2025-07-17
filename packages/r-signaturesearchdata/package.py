@@ -7,23 +7,22 @@ from spack.package import *
 
 
 class RSignaturesearchdata(RPackage):
-	"""Datasets for signatureSearch package
+    """Datasets for signatureSearch package
 
-	CMAP/LINCS hdf5 databases and other annotations used for signatureSearch software package.
-	"""
-	
-	bioc = "signatureSearchData"
+    CMAP/LINCS hdf5 databases and other annotations used for signatureSearch software package.
+    """
 
-	version("1.22.0", commit="79c1dd950973b1c28ca99a1a3260cc0f0d8b0d6d")
-	version("1.16.0", commit="71ab882146add47ce103eacfd085540cd9da5225")
+    bioc = "signatureSearchData"
 
-	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-experimenthub", type=("build", "run"))
-	depends_on("r-affy", type=("build", "run"))
-	depends_on("r-limma", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-r-utils", type=("build", "run"))
-	depends_on("r-rhdf5", type=("build", "run"))
+    version("1.22.0", commit="79c1dd950973b1c28ca99a1a3260cc0f0d8b0d6d")
+    version("1.16.0", commit="71ab882146add47ce103eacfd085540cd9da5225")
 
+    depends_on("r@3.6:", type=("build", "run"))
+    depends_on("r-experimenthub", type=("build", "run"))
+    depends_on("r-affy", type=("build", "run"))
+    depends_on("r-limma", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-r-utils", type=("build", "run"))
+    depends_on("r-rhdf5", type=("build", "run"))

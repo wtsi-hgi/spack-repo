@@ -7,14 +7,12 @@ from spack.package import *
 
 
 class RMetamsdata(RPackage):
-	"""Example CDF data for the metaMS package
+    """Example CDF data for the metaMS package
 
-	Example CDF data for the metaMS package
-	"""
-	
-	bioc = "metaMSdata"
+    Example CDF data for the metaMS package
+    """
 
-	version("1.44.0", commit="9ba3cd2715e8a547a5dcf7d881bd2c8aaa0bdf60")
-	version("1.38.0", commit="cdf4625580bc71c1cce2064917f65b4d30699eb3")
+    bioc = "metaMSdata"
 
-
+    version("1.44.0", commit="9ba3cd2715e8a547a5dcf7d881bd2c8aaa0bdf60")
+    version("1.38.0", commit="cdf4625580bc71c1cce2064917f65b4d30699eb3")

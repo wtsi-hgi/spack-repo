@@ -7,23 +7,23 @@ from spack.package import *
 
 
 class RChipseqr(RPackage):
-	"""Identifying Protein Binding Sites in High-Throughput Sequencing Data
+    """Identifying Protein Binding Sites in High-Throughput Sequencing Data
 
-	ChIPseqR identifies protein binding sites from ChIP-seq and nucleosome positioning experiments. The model used to describe binding events was developed to locate nucleosomes but should flexible enough to handle other types of experiments as well.
-	"""
-	
-	bioc = "ChIPseqR"
+    ChIPseqR identifies protein binding sites from ChIP-seq and nucleosome positioning experiments. The model used to describe binding events was developed to locate nucleosomes but should flexible enough to handle other types of experiments as well.
+    """
 
-	version("1.62.0", commit="089a66d6574c8c36ada3c2d076ecfb693a407899")
-	version("1.56.0", commit="b474bac0e805ee7c715151a368349bffb4f182d8")
+    bioc = "ChIPseqR"
 
-	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-biocgenerics", type=("build", "run"))
-	depends_on("r-s4vectors@0.9.25:", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
-	depends_on("r-fbasics", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-iranges@2.5.14:", type=("build", "run"))
-	depends_on("r-hilbertvis", type=("build", "run"))
-	depends_on("r-shortread", type=("build", "run"))
-	depends_on("r-timsac", type=("build", "run"))
+    version("1.62.0", commit="089a66d6574c8c36ada3c2d076ecfb693a407899")
+    version("1.56.0", commit="b474bac0e805ee7c715151a368349bffb4f182d8")
+
+    depends_on("r@2.10:", type=("build", "run"))
+    depends_on("r-biocgenerics", type=("build", "run"))
+    depends_on("r-s4vectors@0.9.25:", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-fbasics", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-iranges@2.5.14:", type=("build", "run"))
+    depends_on("r-hilbertvis", type=("build", "run"))
+    depends_on("r-shortread", type=("build", "run"))
+    depends_on("r-timsac", type=("build", "run"))

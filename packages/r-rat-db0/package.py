@@ -7,16 +7,22 @@ from spack.package import *
 
 
 class RRatDb0(RPackage):
-	"""Base Level Annotation databases for rat
+    """Base Level Annotation databases for rat
 
-	Base annotation databases for rat, intended ONLY to be used by AnnotationDbi to produce regular annotation packages.
-	"""
-	
-	bioc = "rat.db0" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rat.db0_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rat.db0/rat.db0_3.18.0.tar.gz"]
+    Base annotation databases for rat, intended ONLY to be used by AnnotationDbi to produce regular annotation packages.
+    """
 
-	version("3.18.0", sha256="4c81e68b55f371206c8fbfc1f0f02f49d89e4a53a45d862b3c2e2cce017e02bc", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rat.db0_3.18.0.tar.gz")
+    bioc = "rat.db0"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rat.db0_3.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/rat.db0/rat.db0_3.18.0.tar.gz",
+    ]
 
-	depends_on("r@2.7:", type=("build", "run"))
-	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))
+    version(
+        "3.18.0",
+        sha256="4c81e68b55f371206c8fbfc1f0f02f49d89e4a53a45d862b3c2e2cce017e02bc",
+        url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/rat.db0_3.18.0.tar.gz",
+    )
 
+    depends_on("r@2.7:", type=("build", "run"))
+    depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))

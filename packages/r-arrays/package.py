@@ -7,15 +7,14 @@ from spack.package import *
 
 
 class RArrays(RPackage):
-	"""Using Bioconductor for Microarray Analysis
+    """Using Bioconductor for Microarray Analysis
 
-	Using Bioconductor for Microarray Analysis workflow
-	"""
-	
-	bioc = "arrays"
+    Using Bioconductor for Microarray Analysis workflow
+    """
 
-	version("1.34.0", commit="aabda1d228baa37347fc5eb4cef1416f4ea5ca47")
-	version("1.28.0", commit="eabeb85adc289bcebd42be1df2c79dacc1ccd8e6")
+    bioc = "arrays"
 
-	depends_on("r@3:", type=("build", "run"))
+    version("1.34.0", commit="aabda1d228baa37347fc5eb4cef1416f4ea5ca47")
+    version("1.28.0", commit="eabeb85adc289bcebd42be1df2c79dacc1ccd8e6")
 
+    depends_on("r@3:", type=("build", "run"))

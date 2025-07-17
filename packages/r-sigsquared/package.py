@@ -7,16 +7,16 @@ from spack.package import *
 
 
 class RSigsquared(RPackage):
-	"""Gene signature generation for functionally validated signaling pathways
+    """Gene signature generation for functionally validated signaling pathways
 
-	By leveraging statistical properties (log-rank test for survival) of patient cohorts defined by binary thresholds, poor-prognosis patients are identified by the sigsquared package via optimization over a cost function reducing type I and II error.
-	"""
-	
-	bioc = "sigsquared"
+    By leveraging statistical properties (log-rank test for survival) of patient cohorts defined by binary thresholds, poor-prognosis patients are identified by the sigsquared package via optimization over a cost function reducing type I and II error.
+    """
 
-	version("1.40.0", commit="b787191b90181ee40fb13c4d45a9252b9ab764a8")
-	version("1.34.0", commit="ca8d23e9f1ff91e4a35977720ac0e2c608064adc")
+    bioc = "sigsquared"
 
-	depends_on("r@3.2:", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-survival", type=("build", "run"))
+    version("1.40.0", commit="b787191b90181ee40fb13c4d45a9252b9ab764a8")
+    version("1.34.0", commit="ca8d23e9f1ff91e4a35977720ac0e2c608064adc")
+
+    depends_on("r@3.2:", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-survival", type=("build", "run"))

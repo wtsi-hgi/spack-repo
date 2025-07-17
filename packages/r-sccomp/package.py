@@ -7,41 +7,41 @@ from spack.package import *
 
 
 class RSccomp(RPackage):
-	"""Robust Outlier-aware Estimation of Composition and Heterogeneity for Single-cell Data
+    """Robust Outlier-aware Estimation of Composition and Heterogeneity for Single-cell Data
 
-	A robust and outlier-aware method for testing differential tissue composition from single-cell data. This model can infer changes in tissue composition and heterogeneity, and can produce realistic data simulations based on any existing dataset. This model can also transfer knowledge from a large set of integrated datasets to increase accuracy further.
-	"""
-	
-	homepage = "https://github.com/stemangiola/sccomp"
-	bioc = "sccomp"
+    A robust and outlier-aware method for testing differential tissue composition from single-cell data. This model can infer changes in tissue composition and heterogeneity, and can produce realistic data simulations based on any existing dataset. This model can also transfer knowledge from a large set of integrated datasets to increase accuracy further.
+    """
 
-	version("2.0.0", commit="a4668822705280dfc67d029e9b1faadfe504ca00")
-	version("1.6.0", commit="a9c2d70e1b06c86d053e7a700be224fa91d27c01")
+    homepage = "https://github.com/stemangiola/sccomp"
+    bioc = "sccomp"
 
-	depends_on("r@4.2:", type=("build", "run"))
-	depends_on("r-rcpp@0.12:", type=("build", "run"))
-	depends_on("r-rcppparallel@5.0.1:", type=("build", "run"))
-	depends_on("r-rstantools@2.1.1:", type=("build", "run"))
-	depends_on("r-rstan@2.26:", type=("build", "run"))
-	depends_on("r-seuratobject", type=("build", "run"))
-	depends_on("r-singlecellexperiment", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-tidyr", type=("build", "run"))
-	depends_on("r-purrr", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
-	depends_on("r-tibble", type=("build", "run"))
-	depends_on("r-boot", type=("build", "run"))
-	depends_on("r-lifecycle", type=("build", "run"))
-	depends_on("r-tidyselect", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-ggrepel", type=("build", "run"))
-	depends_on("r-patchwork", type=("build", "run"))
-	depends_on("r-forcats", type=("build", "run"))
-	depends_on("r-readr", type=("build", "run"))
-	depends_on("r-scales", type=("build", "run"))
-	depends_on("r-stringr", type=("build", "run"))
-	depends_on("r-glue", type=("build", "run"))
-	depends_on("r-bh@1.66:", type=("build", "run"))
-	depends_on("r-rcppeigen@0.3.3.3:", type=("build", "run"))
-	depends_on("r-stanheaders@2.26:", type=("build", "run"))
+    version("2.0.0", commit="a4668822705280dfc67d029e9b1faadfe504ca00")
+    version("1.6.0", commit="a9c2d70e1b06c86d053e7a700be224fa91d27c01")
+
+    depends_on("r@4.2:", type=("build", "run"))
+    depends_on("r-rcpp@0.12:", type=("build", "run"))
+    depends_on("r-rcppparallel@5.0.1:", type=("build", "run"))
+    depends_on("r-rstantools@2.1.1:", type=("build", "run"))
+    depends_on("r-rstan@2.26:", type=("build", "run"))
+    depends_on("r-seuratobject", type=("build", "run"))
+    depends_on("r-singlecellexperiment", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-tidyr", type=("build", "run"))
+    depends_on("r-purrr", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))
+    depends_on("r-rlang", type=("build", "run"))
+    depends_on("r-tibble", type=("build", "run"))
+    depends_on("r-boot", type=("build", "run"))
+    depends_on("r-lifecycle", type=("build", "run"))
+    depends_on("r-tidyselect", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-ggrepel", type=("build", "run"))
+    depends_on("r-patchwork", type=("build", "run"))
+    depends_on("r-forcats", type=("build", "run"))
+    depends_on("r-readr", type=("build", "run"))
+    depends_on("r-scales", type=("build", "run"))
+    depends_on("r-stringr", type=("build", "run"))
+    depends_on("r-glue", type=("build", "run"))
+    depends_on("r-bh@1.66:", type=("build", "run"))
+    depends_on("r-rcppeigen@0.3.3.3:", type=("build", "run"))
+    depends_on("r-stanheaders@2.26:", type=("build", "run"))

@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RCellmapperdata(RPackage):
-	"""Pre-processed data for use with the CellMapper package
+    """Pre-processed data for use with the CellMapper package
 
-	Experiment data package. Contains microarray data from several large expression compendia that have been pre-processed for use with the CellMapper package. This pre-processed data is recommended for routine searches using the CellMapper package.
-	"""
-	
-	bioc = "CellMapperData"
+    Experiment data package. Contains microarray data from several large expression compendia that have been pre-processed for use with the CellMapper package. This pre-processed data is recommended for routine searches using the CellMapper package.
+    """
 
-	version("1.34.0", commit="e0581fb367d53a7462e387aba5b625477e52df1a")
-	version("1.28.0", commit="7a0e00b0d6772d8d887eaff04e09a5576c9a485f")
+    bioc = "CellMapperData"
 
-	depends_on("r-experimenthub", type=("build", "run"))
-	depends_on("r-cellmapper", type=("build", "run"))
+    version("1.34.0", commit="e0581fb367d53a7462e387aba5b625477e52df1a")
+    version("1.28.0", commit="7a0e00b0d6772d8d887eaff04e09a5576c9a485f")
 
+    depends_on("r-experimenthub", type=("build", "run"))
+    depends_on("r-cellmapper", type=("build", "run"))

@@ -7,21 +7,21 @@ from spack.package import *
 
 
 class RMarr(RPackage):
-	"""Maximum rank reproducibility
+    """Maximum rank reproducibility
 
-	marr (Maximum Rank Reproducibility) is a nonparametric approach that detects reproducible signals using a maximal rank statistic for high-dimensional biological data. In this R package, we implement functions that measures the reproducibility of features per sample pair and sample pairs per feature in high-dimensional biological replicate experiments. The user-friendly plot functions in this package also plot histograms of the reproducibility of features per sample pair and sample pairs per feature. Furthermore, our approach also allows the users to select optimal filtering threshold values for the identification of reproducible features and sample pairs based on output visualization checks (histograms). This package also provides the subset of data filtered by reproducible features and/or sample pairs.
-	"""
-	
-	bioc = "marr"
+    marr (Maximum Rank Reproducibility) is a nonparametric approach that detects reproducible signals using a maximal rank statistic for high-dimensional biological data. In this R package, we implement functions that measures the reproducibility of features per sample pair and sample pairs per feature in high-dimensional biological replicate experiments. The user-friendly plot functions in this package also plot histograms of the reproducibility of features per sample pair and sample pairs per feature. Furthermore, our approach also allows the users to select optimal filtering threshold values for the identification of reproducible features and sample pairs based on output visualization checks (histograms). This package also provides the subset of data filtered by reproducible features and/or sample pairs.
+    """
 
-	version("1.18.0", commit="4ac198085df0d9381f289b7d1df310b357a43fd2")
-	version("1.12.0", commit="dc3af6c5e1c899fe8f621b2af1ede5c261825467")
+    bioc = "marr"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-rcpp", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
+    version("1.18.0", commit="4ac198085df0d9381f289b7d1df310b357a43fd2")
+    version("1.12.0", commit="dc3af6c5e1c899fe8f621b2af1ede5c261825467")
+
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-rcpp", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))
+    depends_on("r-rlang", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))

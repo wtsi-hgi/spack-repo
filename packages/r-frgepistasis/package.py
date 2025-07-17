@@ -7,16 +7,16 @@ from spack.package import *
 
 
 class RFrgepistasis(RPackage):
-	"""Epistasis Analysis for Quantitative Traits by Functional Regression Model
+    """Epistasis Analysis for Quantitative Traits by Functional Regression Model
 
-	A Tool for Epistasis Analysis Based on Functional Regression Model
-	"""
-	
-	bioc = "FRGEpistasis"
+    A Tool for Epistasis Analysis Based on Functional Regression Model
+    """
 
-	version("1.44.0", commit="394010dabe707e5e7d82317381e70270f5b86998")
-	version("1.38.0", commit="eada0a325aac32256b67a1e2573c9e645269978a")
+    bioc = "FRGEpistasis"
 
-	depends_on("r@2.15:", type=("build", "run"))
-	depends_on("r-mass", type=("build", "run"))
-	depends_on("r-fda", type=("build", "run"))
+    version("1.44.0", commit="394010dabe707e5e7d82317381e70270f5b86998")
+    version("1.38.0", commit="eada0a325aac32256b67a1e2573c9e645269978a")
+
+    depends_on("r@2.15:", type=("build", "run"))
+    depends_on("r-mass", type=("build", "run"))
+    depends_on("r-fda", type=("build", "run"))

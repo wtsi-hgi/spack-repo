@@ -7,17 +7,16 @@ from spack.package import *
 
 
 class RPrecisetadhub(RPackage):
-	"""Pre-trained random forest models obtained using preciseTAD
+    """Pre-trained random forest models obtained using preciseTAD
 
-	An experimentdata package to supplement the preciseTAD package containing pre-trained models and the variable importances of each genomic annotation used to build the model parsed into list objects and available in ExperimentHub. In total, preciseTADhub provides access to n=84 random forest classification models optimized to predict TAD/chromatin loop boundary regions and stored as .RDS files. The value, n, comes from the fact that we considered l=2 cell lines {GM12878, K562}, g=2 ground truth boundaries {Arrowhead, Peakachu}, and c=21 autosomal chromosomes {CHR1, CHR2, ..., CHR22} (omitting CHR9). Furthermore, each object is itself a two-item list containing: (1) the model object, and (2) the variable importances for CTCF, RAD21, SMC3, and ZNF143 used to predict boundary regions. Each model is trained via a "holdout" strategy, in which data from chromosomes {CHR1, CHR2, ..., CHRi-1, CHRi+1, ..., CHR22} were used to build the model and the ith chromosome was reserved for testing. See https://doi.org/10.1101/2020.09.03.282186 for more detail on the model building strategy.
-	"""
-	
-	homepage = "https://github.com/dozmorovlab/preciseTADhub"
-	bioc = "preciseTADhub"
+    An experimentdata package to supplement the preciseTAD package containing pre-trained models and the variable importances of each genomic annotation used to build the model parsed into list objects and available in ExperimentHub. In total, preciseTADhub provides access to n=84 random forest classification models optimized to predict TAD/chromatin loop boundary regions and stored as .RDS files. The value, n, comes from the fact that we considered l=2 cell lines {GM12878, K562}, g=2 ground truth boundaries {Arrowhead, Peakachu}, and c=21 autosomal chromosomes {CHR1, CHR2, ..., CHR22} (omitting CHR9). Furthermore, each object is itself a two-item list containing: (1) the model object, and (2) the variable importances for CTCF, RAD21, SMC3, and ZNF143 used to predict boundary regions. Each model is trained via a "holdout" strategy, in which data from chromosomes {CHR1, CHR2, ..., CHRi-1, CHRi+1, ..., CHR22} were used to build the model and the ith chromosome was reserved for testing. See https://doi.org/10.1101/2020.09.03.282186 for more detail on the model building strategy.
+    """
 
-	version("1.16.0", commit="139271c5c2ad7c5c4259143e7fd90ccabf7b84de")
-	version("1.10.0", commit="e239e2a1488293b8b1631dedebadff94ab78347b")
+    homepage = "https://github.com/dozmorovlab/preciseTADhub"
+    bioc = "preciseTADhub"
 
-	depends_on("r@4.1:", type=("build", "run"))
-	depends_on("r-experimenthub", type=("build", "run"))
+    version("1.16.0", commit="139271c5c2ad7c5c4259143e7fd90ccabf7b84de")
+    version("1.10.0", commit="e239e2a1488293b8b1631dedebadff94ab78347b")
 
+    depends_on("r@4.1:", type=("build", "run"))
+    depends_on("r-experimenthub", type=("build", "run"))

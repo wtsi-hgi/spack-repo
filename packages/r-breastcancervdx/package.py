@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RBreastcancervdx(RPackage):
-	"""Gene expression datasets published by Wang et al. [2005] and Minn et al. [2007] (VDX).
+    """Gene expression datasets published by Wang et al. [2005] and Minn et al. [2007] (VDX).
 
-	Gene expression data from a breast cancer study published by Wang et al. in 2005 and Minn et al. in 2007, provided as an eSet.
-	"""
-	
-	homepage = "http://compbio.dfci.harvard.edu/"
-	bioc = "breastCancerVDX"
+    Gene expression data from a breast cancer study published by Wang et al. in 2005 and Minn et al. in 2007, provided as an eSet.
+    """
 
-	version("1.46.0", commit="fd1a1eeaeeb53e9b6e036cd7f98e777341c8dc5c")
-	version("1.40.0", commit="cee47a68981fb6f90610fc8b45392d1c000af29f")
+    homepage = "http://compbio.dfci.harvard.edu/"
+    bioc = "breastCancerVDX"
 
-	depends_on("r@2.5:", type=("build", "run"))
+    version("1.46.0", commit="fd1a1eeaeeb53e9b6e036cd7f98e777341c8dc5c")
+    version("1.40.0", commit="cee47a68981fb6f90610fc8b45392d1c000af29f")
 
+    depends_on("r@2.5:", type=("build", "run"))

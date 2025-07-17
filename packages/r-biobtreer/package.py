@@ -7,18 +7,18 @@ from spack.package import *
 
 
 class RBiobtreer(RPackage):
-	"""Using biobtree tool from R
+    """Using biobtree tool from R
 
-	The biobtreeR package provides an interface to [biobtree](https://github.com/tamerh/biobtree) tool which covers large set of bioinformatics datasets and allows search and chain mappings functionalities.
-	"""
-	
-	homepage = "https://github.com/tamerh/biobtreeR"
-	bioc = "biobtreeR"
+    The biobtreeR package provides an interface to [biobtree](https://github.com/tamerh/biobtree) tool which covers large set of bioinformatics datasets and allows search and chain mappings functionalities.
+    """
 
-	version("1.20.0", commit="36f5c12dd0af25614720c458c2416206a176f68a")
-	version("1.14.0", commit="b97b0147a3b88a3109bd13cf1ed9c280925b5d4a")
+    homepage = "https://github.com/tamerh/biobtreeR"
+    bioc = "biobtreeR"
 
-	depends_on("r-httr", type=("build", "run"))
-	depends_on("r-httpuv", type=("build", "run"))
-	depends_on("r-stringi", type=("build", "run"))
-	depends_on("r-jsonlite", type=("build", "run"))
+    version("1.20.0", commit="36f5c12dd0af25614720c458c2416206a176f68a")
+    version("1.14.0", commit="b97b0147a3b88a3109bd13cf1ed9c280925b5d4a")
+
+    depends_on("r-httr", type=("build", "run"))
+    depends_on("r-httpuv", type=("build", "run"))
+    depends_on("r-stringi", type=("build", "run"))
+    depends_on("r-jsonlite", type=("build", "run"))

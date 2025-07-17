@@ -7,15 +7,20 @@ from spack.package import *
 
 
 class RCottoncdf(RPackage):
-	"""cottoncdf
+    """cottoncdf
 
-	A package containing an environment representing the Cotton.cdf file.
-	"""
-	
-	bioc = "cottoncdf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cottoncdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/cottoncdf/cottoncdf_2.18.0.tar.gz"]
+    A package containing an environment representing the Cotton.cdf file.
+    """
 
-	version("2.18.0", sha256="e5fa3f2ed7a3e9ec7961f3b0ac532118c186b2ba3fbee95bebcb059214e5dc75")
+    bioc = "cottoncdf"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/cottoncdf_2.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/cottoncdf/cottoncdf_2.18.0.tar.gz",
+    ]
 
-	depends_on("r-annotationdbi", type=("build", "run"))
+    version(
+        "2.18.0",
+        sha256="e5fa3f2ed7a3e9ec7961f3b0ac532118c186b2ba3fbee95bebcb059214e5dc75",
+    )
 
+    depends_on("r-annotationdbi", type=("build", "run"))

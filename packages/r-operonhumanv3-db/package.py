@@ -7,17 +7,22 @@ from spack.package import *
 
 
 class ROperonhumanv3Db(RPackage):
-	"""FHCRC Nelson Lab OperonHumanV3 Annotation Data (OperonHumanV3)
+    """FHCRC Nelson Lab OperonHumanV3 Annotation Data (OperonHumanV3)
 
-	FHCRC Nelson Lab OperonHumanV3 Annotation Data (OperonHumanV3) assembled using data from public repositories
-	"""
-	
-	bioc = "OperonHumanV3.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/OperonHumanV3.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/OperonHumanV3.db/OperonHumanV3.db_3.2.3.tar.gz"]
+    FHCRC Nelson Lab OperonHumanV3 Annotation Data (OperonHumanV3) assembled using data from public repositories
+    """
 
-	version("3.2.3", sha256="1198d0f69b2ec110582bdccccdf0a34c31f55e8f2b3d8441b962728690734f20")
+    bioc = "OperonHumanV3.db"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/OperonHumanV3.db_3.2.3.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/OperonHumanV3.db/OperonHumanV3.db_3.2.3.tar.gz",
+    ]
 
-	depends_on("r@2.7:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-org-hs-eg-db@3.3:", type=("build", "run"))
+    version(
+        "3.2.3",
+        sha256="1198d0f69b2ec110582bdccccdf0a34c31f55e8f2b3d8441b962728690734f20",
+    )
 
+    depends_on("r@2.7:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-org-hs-eg-db@3.3:", type=("build", "run"))

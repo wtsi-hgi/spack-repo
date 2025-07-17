@@ -7,19 +7,19 @@ from spack.package import *
 
 
 class RNondetects(RPackage):
-	"""Non-detects in qPCR data
+    """Non-detects in qPCR data
 
-	Methods to model and impute non-detects in the results of qPCR experiments.
-	"""
-	
-	bioc = "nondetects"
+    Methods to model and impute non-detects in the results of qPCR experiments.
+    """
 
-	version("2.38.1", commit="f01e6d6679f60333b6784b58326e9e5e59a82019")
-	version("2.32.0", commit="326a610f6125519428dcc67c2378c8b895f20fda")
+    bioc = "nondetects"
 
-	depends_on("r@3.2:", type=("build", "run"))
-	depends_on("r-biobase@2.22:", type=("build", "run"))
-	depends_on("r-limma", type=("build", "run"))
-	depends_on("r-mvtnorm", type=("build", "run"))
-	depends_on("r-arm", type=("build", "run"))
-	depends_on("r-htqpcr@1.16:", type=("build", "run"))
+    version("2.38.1", commit="f01e6d6679f60333b6784b58326e9e5e59a82019")
+    version("2.32.0", commit="326a610f6125519428dcc67c2378c8b895f20fda")
+
+    depends_on("r@3.2:", type=("build", "run"))
+    depends_on("r-biobase@2.22:", type=("build", "run"))
+    depends_on("r-limma", type=("build", "run"))
+    depends_on("r-mvtnorm", type=("build", "run"))
+    depends_on("r-arm", type=("build", "run"))
+    depends_on("r-htqpcr@1.16:", type=("build", "run"))

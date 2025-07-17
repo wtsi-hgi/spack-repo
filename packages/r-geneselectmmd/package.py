@@ -7,17 +7,17 @@ from spack.package import *
 
 
 class RGeneselectmmd(RPackage):
-	"""Gene selection based on the marginal distributions of gene profiles that characterized by a mixture of three-component multivariate distributions
+    """Gene selection based on the marginal distributions of gene profiles that characterized by a mixture of three-component multivariate distributions
 
-	Gene selection based on a mixture of marginal distributions.
-	"""
-	
-	bioc = "GeneSelectMMD"
+    Gene selection based on a mixture of marginal distributions.
+    """
 
-	version("2.52.0", commit="8fd2d0b42414555270680b6ea29ef433c8159eae")
-	version("2.46.0", commit="1000d0f9dc9841498a1281f4975df956af19eb69")
+    bioc = "GeneSelectMMD"
 
-	depends_on("r@2.13.2:", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-mass", type=("build", "run"))
-	depends_on("r-limma", type=("build", "run"))
+    version("2.52.0", commit="8fd2d0b42414555270680b6ea29ef433c8159eae")
+    version("2.46.0", commit="1000d0f9dc9841498a1281f4975df956af19eb69")
+
+    depends_on("r@2.13.2:", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-mass", type=("build", "run"))
+    depends_on("r-limma", type=("build", "run"))

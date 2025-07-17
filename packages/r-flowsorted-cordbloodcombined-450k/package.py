@@ -7,22 +7,23 @@ from spack.package import *
 
 
 class RFlowsortedCordbloodcombined450k(RPackage):
-	"""Illumina 450k/EPIC data on FACS and MACS umbilical blood cells
+    """Illumina 450k/EPIC data on FACS and MACS umbilical blood cells
 
-	Raw data objects to be used for umbilical cord blood cell proportion estimation in minfi and similar packages. The FlowSorted.CordBloodCombined.450k object is based in samples assayed by Bakulski et al, Gervin et al., de Goede et al., and Lin et al.
-	"""
-	
-	homepage = "https://github.com/immunomethylomics/FlowSorted.CordBloodCombined.450k"
-	bioc = "FlowSorted.CordBloodCombined.450k"
+    Raw data objects to be used for umbilical cord blood cell proportion estimation in minfi and similar packages. The FlowSorted.CordBloodCombined.450k object is based in samples assayed by Bakulski et al, Gervin et al., de Goede et al., and Lin et al.
+    """
 
-	version("1.24.0", commit="0a7848a8ecb4305fbeedff8897bfe8ff07762e06")
-	version("1.18.0", commit="5a2e2554206a1b10d92a6b57d5d725aa55d76e14")
+    homepage = "https://github.com/immunomethylomics/FlowSorted.CordBloodCombined.450k"
+    bioc = "FlowSorted.CordBloodCombined.450k"
 
-	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-minfi@1.21.2:", type=("build", "run"))
-	depends_on("r-experimenthub@1.9.1:", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-illuminahumanmethylation450kanno-ilmn12-hg19@0.2.1:", type=("build", "run"))
-	depends_on("r-illuminahumanmethylationepicanno-ilm10b4-hg19", type=("build", "run"))
-	depends_on("r-annotationhub", type=("build", "run"))
+    version("1.24.0", commit="0a7848a8ecb4305fbeedff8897bfe8ff07762e06")
+    version("1.18.0", commit="5a2e2554206a1b10d92a6b57d5d725aa55d76e14")
 
+    depends_on("r@3.6:", type=("build", "run"))
+    depends_on("r-minfi@1.21.2:", type=("build", "run"))
+    depends_on("r-experimenthub@1.9.1:", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on(
+        "r-illuminahumanmethylation450kanno-ilmn12-hg19@0.2.1:", type=("build", "run")
+    )
+    depends_on("r-illuminahumanmethylationepicanno-ilm10b4-hg19", type=("build", "run"))
+    depends_on("r-annotationhub", type=("build", "run"))

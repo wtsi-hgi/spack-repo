@@ -7,16 +7,22 @@ from spack.package import *
 
 
 class RPigDb0(RPackage):
-	"""Base Level Annotation databases for pig
+    """Base Level Annotation databases for pig
 
-	Base annotation databases for pig, intended ONLY to be used by AnnotationDbi to produce regular annotation packages.
-	"""
-	
-	bioc = "pig.db0" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pig.db0_3.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pig.db0/pig.db0_3.18.0.tar.gz"]
+    Base annotation databases for pig, intended ONLY to be used by AnnotationDbi to produce regular annotation packages.
+    """
 
-	version("3.18.0", sha256="7f133fed5104b626456ddac1c1cca84db27357812ce17b498baf00e1186f8d16", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pig.db0_3.18.0.tar.gz")
+    bioc = "pig.db0"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pig.db0_3.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pig.db0/pig.db0_3.18.0.tar.gz",
+    ]
 
-	depends_on("r@2.7:", type=("build", "run"))
-	depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))
+    version(
+        "3.18.0",
+        sha256="7f133fed5104b626456ddac1c1cca84db27357812ce17b498baf00e1186f8d16",
+        url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pig.db0_3.18.0.tar.gz",
+    )
 
+    depends_on("r@2.7:", type=("build", "run"))
+    depends_on("r-annotationdbi@1.63.2:", type=("build", "run"))

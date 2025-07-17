@@ -7,21 +7,21 @@ from spack.package import *
 
 
 class RTenxplore(RPackage):
-	"""ontological exploration of scRNA-seq of 1.3 million mouse neurons from 10x genomics
+    """ontological exploration of scRNA-seq of 1.3 million mouse neurons from 10x genomics
 
-	Perform ontological exploration of scRNA-seq of 1.3 million mouse neurons from 10x genomics.
-	"""
-	
-	bioc = "tenXplore"
+    Perform ontological exploration of scRNA-seq of 1.3 million mouse neurons from 10x genomics.
+    """
 
-	version("1.30.0", commit="3cd7a55f2758f345294c5a3d1f562c391112d335")
-	version("1.24.0", commit="9c4165ae8f44246ef6779facd6ae853bb27a2748")
+    bioc = "tenXplore"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-shiny", type=("build", "run"))
-	depends_on("r-restfulse@0.99.12:", type=("build", "run"))
-	depends_on("r-ontoproc@0.99.7:", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-matrixstats", type=("build", "run"))
-	depends_on("r-org-mm-eg-db", type=("build", "run"))
+    version("1.30.0", commit="3cd7a55f2758f345294c5a3d1f562c391112d335")
+    version("1.24.0", commit="9c4165ae8f44246ef6779facd6ae853bb27a2748")
+
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-shiny", type=("build", "run"))
+    depends_on("r-restfulse@0.99.12:", type=("build", "run"))
+    depends_on("r-ontoproc@0.99.7:", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-matrixstats", type=("build", "run"))
+    depends_on("r-org-mm-eg-db", type=("build", "run"))

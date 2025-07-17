@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RPhastcons30wayUcscHg38(RPackage):
-	"""phastCons30way.UCSC.hg38 AnnotationHub Resource Metadata
+    """phastCons30way.UCSC.hg38 AnnotationHub Resource Metadata
 
-	Store phastCons30way.UCSC.hg38 AnnotationHub Resource Metadata.
-	"""
-	
-	bioc = "phastCons30way.UCSC.hg38"
+    Store phastCons30way.UCSC.hg38 AnnotationHub Resource Metadata.
+    """
 
-	version("3.13.0", commit="c114273a4a0fd01bfd5d6760e720e311a9f5219c")
-	version("3.13.0", commit="c114273a4a0fd01bfd5d6760e720e311a9f5219c")
+    bioc = "phastCons30way.UCSC.hg38"
 
-	depends_on("r-genomicscores", type=("build", "run"))
-	depends_on("r-annotationhub", type=("build", "run"))
+    version("3.13.0", commit="c114273a4a0fd01bfd5d6760e720e311a9f5219c")
+    version("3.13.0", commit="c114273a4a0fd01bfd5d6760e720e311a9f5219c")
 
+    depends_on("r-genomicscores", type=("build", "run"))
+    depends_on("r-annotationhub", type=("build", "run"))

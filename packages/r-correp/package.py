@@ -7,13 +7,13 @@ from spack.package import *
 
 
 class RCorrep(RPackage):
-	"""Multivariate Correlation Estimator and Statistical Inference Procedures.
+    """Multivariate Correlation Estimator and Statistical Inference Procedures.
 
-	Multivariate correlation estimation and statistical inference. See package vignette.
-	"""
-	
-	bioc = "CORREP"
+    Multivariate correlation estimation and statistical inference. See package vignette.
+    """
 
-	version("1.68.0", commit="fc3535492b893027b457a5fa7e93dbea87a82db4")
+    bioc = "CORREP"
 
-	depends_on("r-e1071", type=("build", "run"))
+    version("1.68.0", commit="fc3535492b893027b457a5fa7e93dbea87a82db4")
+
+    depends_on("r-e1071", type=("build", "run"))

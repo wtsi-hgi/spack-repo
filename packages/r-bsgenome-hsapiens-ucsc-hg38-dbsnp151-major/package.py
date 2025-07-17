@@ -7,16 +7,21 @@ from spack.package import *
 
 
 class RBsgenomeHsapiensUcscHg38Dbsnp151Major(RPackage):
-	"""Full genome sequences for Homo sapiens (UCSC version hg38, based on GRCh38.p12) with injected major alleles (dbSNP151)
+    """Full genome sequences for Homo sapiens (UCSC version hg38, based on GRCh38.p12) with injected major alleles (dbSNP151)
 
-	Full genome sequences for Homo sapiens (Human) as provided by UCSC (hg38, based on GRCh38.p12) with major allele injected from dbSNP151, and stored in Biostrings objects. Only single nucleotide variants (SNVs) were considered. At each SNV, the most frequent allele was chosen at the major allele to be injected into the reference genome.
-	"""
-	
-	bioc = "BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major_0.0.9999.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major/BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major_0.0.9999.tar.gz"]
+    Full genome sequences for Homo sapiens (Human) as provided by UCSC (hg38, based on GRCh38.p12) with major allele injected from dbSNP151, and stored in Biostrings objects. Only single nucleotide variants (SNVs) were considered. At each SNV, the most frequent allele was chosen at the major allele to be injected into the reference genome.
+    """
 
-	version("0.0.9999", sha256="469c3c2ab5cfbf5582362d48edd56e00baa9f153d8536b600d8bd12dcf742009")
+    bioc = "BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major_0.0.9999.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major/BSgenome.Hsapiens.UCSC.hg38.dbSNP151.major_0.0.9999.tar.gz",
+    ]
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-bsgenome@1.56:", type=("build", "run"))
+    version(
+        "0.0.9999",
+        sha256="469c3c2ab5cfbf5582362d48edd56e00baa9f153d8536b600d8bd12dcf742009",
+    )
 
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-bsgenome@1.56:", type=("build", "run"))

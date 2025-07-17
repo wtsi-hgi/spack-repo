@@ -7,15 +7,14 @@ from spack.package import *
 
 
 class RSerumstimulation(RPackage):
-	"""serumStimulation is a data package which is used by examples in package pcaGoPromoter
+    """serumStimulation is a data package which is used by examples in package pcaGoPromoter
 
-	Contains 13 micro array data results from a serum stimulation experiment
-	"""
-	
-	bioc = "serumStimulation"
+    Contains 13 micro array data results from a serum stimulation experiment
+    """
 
-	version("1.44.0", commit="df629e271f9b6d5345aec94f91daacd85950e239")
-	version("1.38.0", commit="22299f557735d94027449d8f119a9c01fb50fdcd")
+    bioc = "serumStimulation"
 
-	depends_on("r@2.10:", type=("build", "run"))
+    version("1.44.0", commit="df629e271f9b6d5345aec94f91daacd85950e239")
+    version("1.38.0", commit="22299f557735d94027449d8f119a9c01fb50fdcd")
 
+    depends_on("r@2.10:", type=("build", "run"))

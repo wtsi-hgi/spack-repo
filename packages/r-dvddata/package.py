@@ -7,15 +7,14 @@ from spack.package import *
 
 
 class RDvddata(RPackage):
-	"""Drug versus Disease Data
+    """Drug versus Disease Data
 
-	Data package which provides default drug and disease expression profiles for the DvD package.
-	"""
-	
-	bioc = "DvDdata"
+    Data package which provides default drug and disease expression profiles for the DvD package.
+    """
 
-	version("1.44.0", commit="ba2be704908627e4375b1f937774fd6d6c22ebeb")
-	version("1.38.0", commit="191d798d58657fff7458d538c3eb666449ea52ee")
+    bioc = "DvDdata"
 
-	depends_on("r@2.10:", type=("build", "run"))
+    version("1.44.0", commit="ba2be704908627e4375b1f937774fd6d6c22ebeb")
+    version("1.38.0", commit="191d798d58657fff7458d538c3eb666449ea52ee")
 
+    depends_on("r@2.10:", type=("build", "run"))

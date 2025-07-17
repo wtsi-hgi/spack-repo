@@ -7,18 +7,18 @@ from spack.package import *
 
 
 class RGoprofiles(RPackage):
-	"""goProfiles: an R package for the statistical analysis of functional profiles
+    """goProfiles: an R package for the statistical analysis of functional profiles
 
-	The package implements methods to compare lists of genes based on comparing the corresponding 'functional profiles'.
-	"""
-	
-	bioc = "goProfiles"
+    The package implements methods to compare lists of genes based on comparing the corresponding 'functional profiles'.
+    """
 
-	version("1.70.0", commit="57a92ca0f41ea58cb6d4a973a0d49271c07368b7")
-	version("1.64.0", commit="a8fb44d5ba3e15648cd75ebe34bb06ea104acea5")
+    bioc = "goProfiles"
 
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-go-db", type=("build", "run"))
-	depends_on("r-compquadform", type=("build", "run"))
-	depends_on("r-stringr", type=("build", "run"))
+    version("1.70.0", commit="57a92ca0f41ea58cb6d4a973a0d49271c07368b7")
+    version("1.64.0", commit="a8fb44d5ba3e15648cd75ebe34bb06ea104acea5")
+
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-go-db", type=("build", "run"))
+    depends_on("r-compquadform", type=("build", "run"))
+    depends_on("r-stringr", type=("build", "run"))

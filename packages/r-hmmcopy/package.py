@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class RHmmcopy(RPackage):
-	"""Copy number prediction with correction for GC and mappability bias for HTS data
+    """Copy number prediction with correction for GC and mappability bias for HTS data
 
-	Corrects GC and mappability biases for readcounts (i.e. coverage) in non-overlapping windows of fixed length for single whole genome samples, yielding a rough estimate of copy number for furthur analysis.  Designed for rapid correction of high coverage whole genome tumour and normal samples.
-	"""
-	
-	bioc = "HMMcopy"
+    Corrects GC and mappability biases for readcounts (i.e. coverage) in non-overlapping windows of fixed length for single whole genome samples, yielding a rough estimate of copy number for furthur analysis.  Designed for rapid correction of high coverage whole genome tumour and normal samples.
+    """
 
-	version("1.50.0", commit="f70c9b0ff7852b905f50d81f54dcc2a3d0718b9a")
-	version("1.44.0", commit="65d3f904f8e55dbe606eac0761e8f2d6476d4ed8")
+    bioc = "HMMcopy"
 
-	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-data-table@1.11.8:", type=("build", "run"))
+    version("1.50.0", commit="f70c9b0ff7852b905f50d81f54dcc2a3d0718b9a")
+    version("1.44.0", commit="65d3f904f8e55dbe606eac0761e8f2d6476d4ed8")
+
+    depends_on("r@2.10:", type=("build", "run"))
+    depends_on("r-data-table@1.11.8:", type=("build", "run"))

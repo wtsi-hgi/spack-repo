@@ -7,14 +7,14 @@ from spack.package import *
 
 
 class RRandpack(RPackage):
-	"""Randomization routines for Clinical Trials
+    """Randomization routines for Clinical Trials
 
-	A suite of classes and functions for randomizing patients in clinical trials.
-	"""
-	
-	bioc = "randPack"
+    A suite of classes and functions for randomizing patients in clinical trials.
+    """
 
-	version("1.54.0", commit="a37f28326b3e21355783b9bfb73d41d4c14edee9")
-	version("1.48.0", commit="d88939bb143e4d37fc9fdeb24431269221583dce")
+    bioc = "randPack"
 
-	depends_on("r-biobase", type=("build", "run"))
+    version("1.54.0", commit="a37f28326b3e21355783b9bfb73d41d4c14edee9")
+    version("1.48.0", commit="d88939bb143e4d37fc9fdeb24431269221583dce")
+
+    depends_on("r-biobase", type=("build", "run"))

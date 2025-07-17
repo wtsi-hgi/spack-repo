@@ -7,17 +7,17 @@ from spack.package import *
 
 
 class RBayseq(RPackage):
-	"""Empirical Bayesian analysis of patterns of differential expression in count data
+    """Empirical Bayesian analysis of patterns of differential expression in count data
 
-	This package identifies differential expression in high-throughput 'count' data, such as that derived from next-generation sequencing machines, calculating estimated posterior likelihoods of differential expression (or more complex hypotheses) via empirical Bayesian methods.
-	"""
-	
-	bioc = "baySeq"
+    This package identifies differential expression in high-throughput 'count' data, such as that derived from next-generation sequencing machines, calculating estimated posterior likelihoods of differential expression (or more complex hypotheses) via empirical Bayesian methods.
+    """
 
-	version("2.42.0", commit="13f566e1cc1f6cb4c18aaf81b93e82da0c9750fc")
-	version("2.36.0", md5="f46b63ebca2bda7c124133149aa7e552")
+    bioc = "baySeq"
 
-	depends_on("r@2.3:", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-abind", type=("build", "run"))
-	depends_on("r-edger", type=("build", "run"))
+    version("2.42.0", commit="13f566e1cc1f6cb4c18aaf81b93e82da0c9750fc")
+    version("2.36.0", md5="f46b63ebca2bda7c124133149aa7e552")
+
+    depends_on("r@2.3:", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-abind", type=("build", "run"))
+    depends_on("r-edger", type=("build", "run"))

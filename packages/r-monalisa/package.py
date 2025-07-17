@@ -7,31 +7,31 @@ from spack.package import *
 
 
 class RMonalisa(RPackage):
-	"""Binned Motif Enrichment Analysis and Visualization
+    """Binned Motif Enrichment Analysis and Visualization
 
-	Useful functions to work with sequence motifs in the analysis of genomics data. These include methods to annotate genomic regions or sequences with predicted motif hits and to identify motifs that drive observed changes in accessibility or expression. Functions to produce informative visualizations of the obtained results are also provided.
-	"""
-	
-	homepage = "https://github.com/fmicompbio/monaLisa"
-	bioc = "monaLisa"
+    Useful functions to work with sequence motifs in the analysis of genomics data. These include methods to annotate genomic regions or sequences with predicted motif hits and to identify motifs that drive observed changes in accessibility or expression. Functions to produce informative visualizations of the obtained results are also provided.
+    """
 
-	version("1.14.0", commit="995ea7d65751e36ba3842c46c0861ccb05f5ff0a")
-	version("1.8.0", md5="fc86eb3743fc47252a4420cd850ead9e")
+    homepage = "https://github.com/fmicompbio/monaLisa"
+    bioc = "monaLisa"
 
-	depends_on("r@4.1:", type=("build", "run"))
-	depends_on("r-biocgenerics", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-tfbstools", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-stabs", type=("build", "run"))
-	depends_on("r-bsgenome", type=("build", "run"))
-	depends_on("r-glmnet", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-biocparallel", type=("build", "run"))
-	depends_on("r-circlize", type=("build", "run"))
-	depends_on("r-complexheatmap@2.11.1:", type=("build", "run"))
-	depends_on("r-xvector", type=("build", "run"))
-	depends_on("r-genomeinfodb", type=("build", "run"))
-	depends_on("r-vioplot", type=("build", "run"))
+    version("1.14.0", commit="995ea7d65751e36ba3842c46c0861ccb05f5ff0a")
+    version("1.8.0", md5="fc86eb3743fc47252a4420cd850ead9e")
+
+    depends_on("r@4.1:", type=("build", "run"))
+    depends_on("r-biocgenerics", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-tfbstools", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-stabs", type=("build", "run"))
+    depends_on("r-bsgenome", type=("build", "run"))
+    depends_on("r-glmnet", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-biocparallel", type=("build", "run"))
+    depends_on("r-circlize", type=("build", "run"))
+    depends_on("r-complexheatmap@2.11.1:", type=("build", "run"))
+    depends_on("r-xvector", type=("build", "run"))
+    depends_on("r-genomeinfodb", type=("build", "run"))
+    depends_on("r-vioplot", type=("build", "run"))

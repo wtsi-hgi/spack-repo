@@ -7,40 +7,40 @@ from spack.package import *
 
 
 class RGuideseq(RPackage):
-	"""GUIDE-seq and PEtag-seq analysis pipeline
+    """GUIDE-seq and PEtag-seq analysis pipeline
 
-	The package implements GUIDE-seq and PEtag-seq analysis workflow including functions for filtering UMI and reads with low coverage, obtaining unique insertion sites (proxy of cleavage sites), estimating the locations of the insertion sites, aka, peaks, merging estimated insertion sites from plus and minus strand, and performing off target search of the extended regions around insertion sites with mismatches and indels.
-	"""
-	
-	bioc = "GUIDEseq"
+    The package implements GUIDE-seq and PEtag-seq analysis workflow including functions for filtering UMI and reads with low coverage, obtaining unique insertion sites (proxy of cleavage sites), estimating the locations of the insertion sites, aka, peaks, merging estimated insertion sites from plus and minus strand, and performing off target search of the extended regions around insertion sites with mismatches and indels.
+    """
 
-	version("1.38.0", commit="55716c1df4b67a050920a584dc78439f2bf1752a")
-	version("1.32.0", commit="d675d441d52064691685dc972df9cbeeb420e2f0")
+    bioc = "GUIDEseq"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-biocgenerics", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
-	depends_on("r-crisprseek", type=("build", "run"))
-	depends_on("r-chippeakanno", type=("build", "run"))
-	depends_on("r-data-table", type=("build", "run"))
-	depends_on("r-matrixstats", type=("build", "run"))
-	depends_on("r-bsgenome", type=("build", "run"))
-	depends_on("r-iranges@2.5.5:", type=("build", "run"))
-	depends_on("r-s4vectors@0.9.6:", type=("build", "run"))
-	depends_on("r-stringr", type=("build", "run"))
-	depends_on("r-multtest", type=("build", "run"))
-	depends_on("r-genomicalignments@1.7.3:", type=("build", "run"))
-	depends_on("r-genomeinfodb", type=("build", "run"))
-	depends_on("r-rsamtools", type=("build", "run"))
-	depends_on("r-hash", type=("build", "run"))
-	depends_on("r-limma", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-genomicfeatures", type=("build", "run"))
-	depends_on("r-rio", type=("build", "run"))
-	depends_on("r-tidyr", type=("build", "run"))
-	depends_on("r-purrr", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-openxlsx", type=("build", "run"))
-	depends_on("r-patchwork", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
+    version("1.38.0", commit="55716c1df4b67a050920a584dc78439f2bf1752a")
+    version("1.32.0", commit="d675d441d52064691685dc972df9cbeeb420e2f0")
+
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-biocgenerics", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-crisprseek", type=("build", "run"))
+    depends_on("r-chippeakanno", type=("build", "run"))
+    depends_on("r-data-table", type=("build", "run"))
+    depends_on("r-matrixstats", type=("build", "run"))
+    depends_on("r-bsgenome", type=("build", "run"))
+    depends_on("r-iranges@2.5.5:", type=("build", "run"))
+    depends_on("r-s4vectors@0.9.6:", type=("build", "run"))
+    depends_on("r-stringr", type=("build", "run"))
+    depends_on("r-multtest", type=("build", "run"))
+    depends_on("r-genomicalignments@1.7.3:", type=("build", "run"))
+    depends_on("r-genomeinfodb", type=("build", "run"))
+    depends_on("r-rsamtools", type=("build", "run"))
+    depends_on("r-hash", type=("build", "run"))
+    depends_on("r-limma", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-genomicfeatures", type=("build", "run"))
+    depends_on("r-rio", type=("build", "run"))
+    depends_on("r-tidyr", type=("build", "run"))
+    depends_on("r-purrr", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-openxlsx", type=("build", "run"))
+    depends_on("r-patchwork", type=("build", "run"))
+    depends_on("r-rlang", type=("build", "run"))

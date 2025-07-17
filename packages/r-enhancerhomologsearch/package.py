@@ -7,30 +7,30 @@ from spack.package import *
 
 
 class REnhancerhomologsearch(RPackage):
-	"""Identification of putative mammalian orthologs to given enhancer
+    """Identification of putative mammalian orthologs to given enhancer
 
-	Get ENCODE data of enhancer region via H3K4me1 peaks and search homolog regions for given sequences. The candidates of enhancer homolog regions can be filtered by distance to target TSS. The top candidates from human and mouse will be aligned to each other and then exported as multiple alignments with given enhancer.
-	"""
-	
-	homepage = "https://jianhong.github.io/enhancerHomologSearch"
-	bioc = "enhancerHomologSearch"
+    Get ENCODE data of enhancer region via H3K4me1 peaks and search homolog regions for given sequences. The candidates of enhancer homolog regions can be filtered by distance to target TSS. The top candidates from human and mouse will be aligned to each other and then exported as multiple alignments with given enhancer.
+    """
 
-	version("1.14.0", commit="8e1b94298b9f71eb246d5021ed271be3a740b798")
-	version("1.8.3", commit="f2f7a74954f9aece00ece8f475b8b1a17918c62c")
+    homepage = "https://jianhong.github.io/enhancerHomologSearch"
+    bioc = "enhancerHomologSearch"
 
-	depends_on("r@4.1:", type=("build", "run"))
-	depends_on("r-biocgenerics", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
-	depends_on("r-bsgenome", type=("build", "run"))
-	depends_on("r-biocparallel", type=("build", "run"))
-	depends_on("r-biocfilecache", type=("build", "run"))
-	depends_on("r-genomeinfodb", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-httr", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-jsonlite", type=("build", "run"))
-	depends_on("r-motifmatchr", type=("build", "run"))
-	depends_on("r-matrix", type=("build", "run"))
-	depends_on("r-rtracklayer", type=("build", "run"))
-	depends_on("r-rcpp", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
+    version("1.14.0", commit="8e1b94298b9f71eb246d5021ed271be3a740b798")
+    version("1.8.3", commit="f2f7a74954f9aece00ece8f475b8b1a17918c62c")
+
+    depends_on("r@4.1:", type=("build", "run"))
+    depends_on("r-biocgenerics", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-bsgenome", type=("build", "run"))
+    depends_on("r-biocparallel", type=("build", "run"))
+    depends_on("r-biocfilecache", type=("build", "run"))
+    depends_on("r-genomeinfodb", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-httr", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-jsonlite", type=("build", "run"))
+    depends_on("r-motifmatchr", type=("build", "run"))
+    depends_on("r-matrix", type=("build", "run"))
+    depends_on("r-rtracklayer", type=("build", "run"))
+    depends_on("r-rcpp", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))

@@ -7,16 +7,16 @@ from spack.package import *
 
 
 class RRankprod(RPackage):
-	"""Rank Product method for identifying differentially expressed genes with application in meta-analysis
+    """Rank Product method for identifying differentially expressed genes with application in meta-analysis
 
-	Non-parametric method for identifying differentially expressed (up- or down- regulated) genes based on the estimated percentage of false predictions (pfp). The method can combine data sets from different origins (meta-analysis) to increase the power of the identification.
-	"""
-	
-	bioc = "RankProd"
+    Non-parametric method for identifying differentially expressed (up- or down- regulated) genes based on the estimated percentage of false predictions (pfp). The method can combine data sets from different origins (meta-analysis) to increase the power of the identification.
+    """
 
-	version("3.34.0", commit="2ff298b818661afb707947427e61b7fb41cbfc3d")
-	version("3.28.0", commit="bb5556493c31600e8b861154d9fbf322eaea6190")
+    bioc = "RankProd"
 
-	depends_on("r@3.2.1:", type=("build", "run"))
-	depends_on("r-rmpfr", type=("build", "run"))
-	depends_on("r-gmp", type=("build", "run"))
+    version("3.34.0", commit="2ff298b818661afb707947427e61b7fb41cbfc3d")
+    version("3.28.0", commit="bb5556493c31600e8b861154d9fbf322eaea6190")
+
+    depends_on("r@3.2.1:", type=("build", "run"))
+    depends_on("r-rmpfr", type=("build", "run"))
+    depends_on("r-gmp", type=("build", "run"))

@@ -7,18 +7,17 @@ from spack.package import *
 
 
 class REpitxdbMmMm10(RPackage):
-	"""Annotation package for EpiTxDb objects
+    """Annotation package for EpiTxDb objects
 
-	Exposes an annotation databases generated from several sources by exposing these as EpiTxDb object. Generated for Mus musculus/mm10.
-	"""
-	
-	homepage = "https://github.com/FelixErnst/EpiTxDb.Mm.mm10"
-	bioc = "EpiTxDb.Mm.mm10"
+    Exposes an annotation databases generated from several sources by exposing these as EpiTxDb object. Generated for Mus musculus/mm10.
+    """
 
-	version("0.99.6", commit="26d976c02cbdf47f0ee489fb118c07e892712722")
-	version("0.99.6", commit="26d976c02cbdf47f0ee489fb118c07e892712722")
+    homepage = "https://github.com/FelixErnst/EpiTxDb.Mm.mm10"
+    bioc = "EpiTxDb.Mm.mm10"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-annotationhub", type=("build", "run"))
-	depends_on("r-epitxdb", type=("build", "run"))
+    version("0.99.6", commit="26d976c02cbdf47f0ee489fb118c07e892712722")
+    version("0.99.6", commit="26d976c02cbdf47f0ee489fb118c07e892712722")
 
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-annotationhub", type=("build", "run"))
+    depends_on("r-epitxdb", type=("build", "run"))

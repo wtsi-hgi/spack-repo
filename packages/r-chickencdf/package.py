@@ -7,15 +7,20 @@ from spack.package import *
 
 
 class RChickencdf(RPackage):
-	"""chickencdf
+    """chickencdf
 
-	A package containing an environment representing the Chicken.cdf file.
-	"""
-	
-	bioc = "chickencdf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/chickencdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/chickencdf/chickencdf_2.18.0.tar.gz"]
+    A package containing an environment representing the Chicken.cdf file.
+    """
 
-	version("2.18.0", sha256="e1d3be18cefe3b5884a6628b9c81adc2535cdcd6c1c25c96b047f6a44b8d1026")
+    bioc = "chickencdf"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/chickencdf_2.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/chickencdf/chickencdf_2.18.0.tar.gz",
+    ]
 
-	depends_on("r-annotationdbi", type=("build", "run"))
+    version(
+        "2.18.0",
+        sha256="e1d3be18cefe3b5884a6628b9c81adc2535cdcd6c1c25c96b047f6a44b8d1026",
+    )
 
+    depends_on("r-annotationdbi", type=("build", "run"))

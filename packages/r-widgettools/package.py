@@ -7,14 +7,14 @@ from spack.package import *
 
 
 class RWidgettools(RPackage):
-	"""Creates an interactive tcltk widget
+    """Creates an interactive tcltk widget
 
-	This packages contains tools to support the construction of tcltk widgets
-	"""
-	
-	bioc = "widgetTools"
+    This packages contains tools to support the construction of tcltk widgets
+    """
 
-	version("1.86.0", commit="f7c0a637a52dd1b47aae4336bef95d40ccc88bfc")
-	version("1.80.0", commit="ddf3bb3e6f2f5e622ec8a90d17173605a5c7311c")
+    bioc = "widgetTools"
 
-	depends_on("r@2.4:", type=("build", "run"))
+    version("1.86.0", commit="f7c0a637a52dd1b47aae4336bef95d40ccc88bfc")
+    version("1.80.0", commit="ddf3bb3e6f2f5e622ec8a90d17173605a5c7311c")
+
+    depends_on("r@2.4:", type=("build", "run"))

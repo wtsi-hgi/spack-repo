@@ -7,15 +7,14 @@ from spack.package import *
 
 
 class RZebrafishrnaseq(RPackage):
-	"""Zebrafish RNA-Seq Experimental Data from Ferreira et al. (2014)
+    """Zebrafish RNA-Seq Experimental Data from Ferreira et al. (2014)
 
-	Gene-level read counts from RNA-Seq for gallein-treated and control zebrafish.
-	"""
-	
-	bioc = "zebrafishRNASeq"
+    Gene-level read counts from RNA-Seq for gallein-treated and control zebrafish.
+    """
 
-	version("1.28.0", commit="572433216119f1d7bda8f678cdb05f04a9b7cdc8")
-	version("1.22.0", commit="15abb4d799b8b64807cb2ab2bdb3406ebd9ca7df")
+    bioc = "zebrafishRNASeq"
 
-	depends_on("r@2.10:", type=("build", "run"))
+    version("1.28.0", commit="572433216119f1d7bda8f678cdb05f04a9b7cdc8")
+    version("1.22.0", commit="15abb4d799b8b64807cb2ab2bdb3406ebd9ca7df")
 
+    depends_on("r@2.10:", type=("build", "run"))

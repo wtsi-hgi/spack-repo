@@ -7,21 +7,21 @@ from spack.package import *
 
 
 class RGwasurvivr(RPackage):
-	"""gwasurvivr: an R package for genome wide survival analysis
+    """gwasurvivr: an R package for genome wide survival analysis
 
-	gwasurvivr is a package to perform survival analysis using Cox proportional hazard models on imputed genetic data.
-	"""
-	
-	homepage = "https://github.com/suchestoncampbelllab/gwasurvivr"
-	bioc = "gwasurvivr"
+    gwasurvivr is a package to perform survival analysis using Cox proportional hazard models on imputed genetic data.
+    """
 
-	version("1.26.0", commit="5478a68a557d4ecc47ee9564b63f1900db34aa62")
-	version("1.20.0", commit="34fb4cb8db6edaab5c99a3fd8d66406bb6918c53")
+    homepage = "https://github.com/suchestoncampbelllab/gwasurvivr"
+    bioc = "gwasurvivr"
 
-	depends_on("r@3.4:", type=("build", "run"))
-	depends_on("r-gwastools", type=("build", "run"))
-	depends_on("r-survival", type=("build", "run"))
-	depends_on("r-variantannotation", type=("build", "run"))
-	depends_on("r-matrixstats", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-snprelate", type=("build", "run"))
+    version("1.26.0", commit="5478a68a557d4ecc47ee9564b63f1900db34aa62")
+    version("1.20.0", commit="34fb4cb8db6edaab5c99a3fd8d66406bb6918c53")
+
+    depends_on("r@3.4:", type=("build", "run"))
+    depends_on("r-gwastools", type=("build", "run"))
+    depends_on("r-survival", type=("build", "run"))
+    depends_on("r-variantannotation", type=("build", "run"))
+    depends_on("r-matrixstats", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-snprelate", type=("build", "run"))

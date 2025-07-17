@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RTopdownrdata(RPackage):
-	"""Example Files for the topdownr R Package
+    """Example Files for the topdownr R Package
 
-	Example data for the topdownr package generated on a Thermo Orbitrap Fusion Lumos MS device.
-	"""
-	
-	homepage = "https://github.com/sgibb/topdownrdata/"
-	bioc = "topdownrdata"
+    Example data for the topdownr package generated on a Thermo Orbitrap Fusion Lumos MS device.
+    """
 
-	version("1.30.0", commit="b78a03a9bc295eeafb47c6cb45a117a11439188a")
-	version("1.24.0", commit="b6233105fb260cca95d72641043b84ee9b51a4e2")
+    homepage = "https://github.com/sgibb/topdownrdata/"
+    bioc = "topdownrdata"
 
-	depends_on("r-topdownr", type=("build", "run"))
+    version("1.30.0", commit="b78a03a9bc295eeafb47c6cb45a117a11439188a")
+    version("1.24.0", commit="b6233105fb260cca95d72641043b84ee9b51a4e2")
 
+    depends_on("r-topdownr", type=("build", "run"))

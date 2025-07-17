@@ -18,7 +18,9 @@ class RDelayedarray(RPackage):
     on in-memory array-like objects like DataFrame objects (typically with
     Rle columns), Matrix objects, and ordinary arrays and data frames."""
 
-    bioc = "DelayedArray"version("0.8.0", commit="7c23cf46558de9dbe7a42fba516a9bb660a0f19f")
+    bioc = "DelayedArray"
+
+    version("0.8.0", commit="7c23cf46558de9dbe7a42fba516a9bb660a0f19f")
     version("0.6.6", commit="bdb0ac0eee71edd40ccca4808f618fa77f595a64")
     version("0.4.1", commit="ffe932ef8c255614340e4856fc6e0b44128a27a1")
     version("0.34.1", commit="93033ab216a0503fb48d948e1dae9c8943fab8ea")

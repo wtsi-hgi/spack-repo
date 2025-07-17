@@ -7,15 +7,20 @@ from spack.package import *
 
 
 class RDrosgenome1cdf(RPackage):
-	"""drosgenome1cdf
+    """drosgenome1cdf
 
-	A package containing an environment representing the DrosGenome1.CDF file.
-	"""
-	
-	bioc = "drosgenome1cdf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/drosgenome1cdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/drosgenome1cdf/drosgenome1cdf_2.18.0.tar.gz"]
+    A package containing an environment representing the DrosGenome1.CDF file.
+    """
 
-	version("2.18.0", sha256="3ebc8e1e2820c1a9ad09cd4ece7b91469ae1297335cb597e53a37bf52d9ba60b")
+    bioc = "drosgenome1cdf"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/drosgenome1cdf_2.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/drosgenome1cdf/drosgenome1cdf_2.18.0.tar.gz",
+    ]
 
-	depends_on("r-annotationdbi", type=("build", "run"))
+    version(
+        "2.18.0",
+        sha256="3ebc8e1e2820c1a9ad09cd4ece7b91469ae1297335cb597e53a37bf52d9ba60b",
+    )
 
+    depends_on("r-annotationdbi", type=("build", "run"))

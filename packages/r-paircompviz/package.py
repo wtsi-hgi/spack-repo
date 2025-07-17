@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class RPaircompviz(RPackage):
-	"""Multiple comparison test visualization
+    """Multiple comparison test visualization
 
-	This package provides visualization of the results from the multiple (i.e. pairwise) comparison tests such as pairwise.t.test, pairwise.prop.test or pairwise.wilcox.test. The groups being compared are visualized as nodes in Hasse diagram. Such approach enables very clear and vivid depiction of which group is significantly greater than which others, especially if comparing a large number of groups.
-	"""
-	
-	bioc = "paircompviz"
+    This package provides visualization of the results from the multiple (i.e. pairwise) comparison tests such as pairwise.t.test, pairwise.prop.test or pairwise.wilcox.test. The groups being compared are visualized as nodes in Hasse diagram. Such approach enables very clear and vivid depiction of which group is significantly greater than which others, especially if comparing a large number of groups.
+    """
 
-	version("1.46.0", commit="67812e13916146cdca796fee2eed1c999e7b8eba")
-	version("1.40.0", commit="636a6b854b037f049829b0c58dbf3d2c36817703")
+    bioc = "paircompviz"
 
-	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-rgraphviz", type=("build", "run"))
+    version("1.46.0", commit="67812e13916146cdca796fee2eed1c999e7b8eba")
+    version("1.40.0", commit="636a6b854b037f049829b0c58dbf3d2c36817703")
+
+    depends_on("r@2.10:", type=("build", "run"))
+    depends_on("r-rgraphviz", type=("build", "run"))

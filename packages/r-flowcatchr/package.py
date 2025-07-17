@@ -7,22 +7,22 @@ from spack.package import *
 
 
 class RFlowcatchr(RPackage):
-	"""Tools to analyze in vivo microscopy imaging data focused on tracking flowing blood cells
+    """Tools to analyze in vivo microscopy imaging data focused on tracking flowing blood cells
 
-	flowcatchR is a set of tools to analyze in vivo microscopy imaging data, focused on tracking flowing blood cells. It guides the steps from segmentation to calculation of features, filtering out particles not of interest, providing also a set of utilities to help checking the quality of the performed operations (e.g. how good the segmentation was). It allows investigating the issue of tracking flowing cells such as in blood vessels, to categorize the particles in flowing, rolling and adherent. This classification is applied in the study of phenomena such as hemostasis and study of thrombosis development. Moreover, flowcatchR presents an integrated workflow solution, based on the integration with a Shiny App and Jupyter notebooks, which is delivered alongside the package, and can enable fully reproducible bioimage analysis in the R environment.
-	"""
-	
-	homepage = "https://github.com/federicomarini/flowcatchR"
-	bioc = "flowcatchR"
+    flowcatchR is a set of tools to analyze in vivo microscopy imaging data, focused on tracking flowing blood cells. It guides the steps from segmentation to calculation of features, filtering out particles not of interest, providing also a set of utilities to help checking the quality of the performed operations (e.g. how good the segmentation was). It allows investigating the issue of tracking flowing cells such as in blood vessels, to categorize the particles in flowing, rolling and adherent. This classification is applied in the study of phenomena such as hemostasis and study of thrombosis development. Moreover, flowcatchR presents an integrated workflow solution, based on the integration with a Shiny App and Jupyter notebooks, which is delivered alongside the package, and can enable fully reproducible bioimage analysis in the R environment.
+    """
 
-	version("1.42.0", commit="ae71a9b98965eebfae58cf1fa99560b06dcf143e")
-	version("1.36.0", commit="70bab3aef55ad7680a3df811b451d6251c340fa1")
+    homepage = "https://github.com/federicomarini/flowcatchR"
+    bioc = "flowcatchR"
 
-	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-ebimage", type=("build", "run"))
-	depends_on("r-colorramps", type=("build", "run"))
-	depends_on("r-abind", type=("build", "run"))
-	depends_on("r-biocparallel", type=("build", "run"))
-	depends_on("r-plotly", type=("build", "run"))
-	depends_on("r-shiny", type=("build", "run"))
-	depends_on("imagemagick", type=("build", "link", "run"))
+    version("1.42.0", commit="ae71a9b98965eebfae58cf1fa99560b06dcf143e")
+    version("1.36.0", commit="70bab3aef55ad7680a3df811b451d6251c340fa1")
+
+    depends_on("r@2.10:", type=("build", "run"))
+    depends_on("r-ebimage", type=("build", "run"))
+    depends_on("r-colorramps", type=("build", "run"))
+    depends_on("r-abind", type=("build", "run"))
+    depends_on("r-biocparallel", type=("build", "run"))
+    depends_on("r-plotly", type=("build", "run"))
+    depends_on("r-shiny", type=("build", "run"))
+    depends_on("imagemagick", type=("build", "link", "run"))

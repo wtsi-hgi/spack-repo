@@ -7,21 +7,20 @@ from spack.package import *
 
 
 class RMetagxbreast(RPackage):
-	"""Transcriptomic Breast Cancer Datasets
+    """Transcriptomic Breast Cancer Datasets
 
-	A collection of Breast Cancer Transcriptomic Datasets that are part of the MetaGxData package compendium.
-	"""
-	
-	bioc = "MetaGxBreast"
+    A collection of Breast Cancer Transcriptomic Datasets that are part of the MetaGxData package compendium.
+    """
 
-	version("1.28.0", commit="9e95d03f4548094c27aba4161439e72a26e336b9")
-	version("1.22.0", commit="a3c220a01c313909d895bdd8f434be6c4f2a09fd")
+    bioc = "MetaGxBreast"
 
-	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-annotationhub", type=("build", "run"))
-	depends_on("r-experimenthub", type=("build", "run"))
-	depends_on("r-lattice", type=("build", "run"))
-	depends_on("r-impute", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
+    version("1.28.0", commit="9e95d03f4548094c27aba4161439e72a26e336b9")
+    version("1.22.0", commit="a3c220a01c313909d895bdd8f434be6c4f2a09fd")
 
+    depends_on("r@3.6:", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-annotationhub", type=("build", "run"))
+    depends_on("r-experimenthub", type=("build", "run"))
+    depends_on("r-lattice", type=("build", "run"))
+    depends_on("r-impute", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))

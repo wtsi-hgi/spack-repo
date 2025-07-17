@@ -7,18 +7,20 @@ from spack.package import *
 
 
 class RMipp(RPackage):
-	"""Misclassification Penalized Posterior Classification
+    """Misclassification Penalized Posterior Classification
 
-	This package finds optimal sets of genes that seperate samples into two or more classes.
-	"""
-	
-	homepage = "http://www.healthsystem.virginia.edu/internet/hes/biostat/bioinformatics/"
-	bioc = "MiPP"
+    This package finds optimal sets of genes that seperate samples into two or more classes.
+    """
 
-	version("1.80.0", commit="39b272558073d9f04aab4e0f9c9c04952d54dd01")
-	version("1.74.0", commit="6d11cd847ae8850b382ca3f116acfb54da478ff9")
+    homepage = (
+        "http://www.healthsystem.virginia.edu/internet/hes/biostat/bioinformatics/"
+    )
+    bioc = "MiPP"
 
-	depends_on("r@2.4:", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-e1071", type=("build", "run"))
-	depends_on("r-mass", type=("build", "run"))
+    version("1.80.0", commit="39b272558073d9f04aab4e0f9c9c04952d54dd01")
+    version("1.74.0", commit="6d11cd847ae8850b382ca3f116acfb54da478ff9")
+
+    depends_on("r@2.4:", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-e1071", type=("build", "run"))
+    depends_on("r-mass", type=("build", "run"))

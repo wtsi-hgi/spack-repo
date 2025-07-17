@@ -7,23 +7,23 @@ from spack.package import *
 
 
 class REnrichedheatmap(RPackage):
-	"""Making Enriched Heatmaps
+    """Making Enriched Heatmaps
 
-	Enriched heatmap is a special type of heatmap which visualizes the enrichment of genomic signals on specific target regions. Here we implement enriched heatmap by ComplexHeatmap package. Since this type of heatmap is just a normal heatmap but with some special settings, with the functionality of ComplexHeatmap, it would be much easier to customize the heatmap as well as concatenating to a list of heatmaps to show correspondance between different data sources.
-	"""
-	
-	homepage = "https://github.com/jokergoo/EnrichedHeatmap"
-	bioc = "EnrichedHeatmap"
+    Enriched heatmap is a special type of heatmap which visualizes the enrichment of genomic signals on specific target regions. Here we implement enriched heatmap by ComplexHeatmap package. Since this type of heatmap is just a normal heatmap but with some special settings, with the functionality of ComplexHeatmap, it would be much easier to customize the heatmap as well as concatenating to a list of heatmaps to show correspondance between different data sources.
+    """
 
-	version("1.38.0", commit="53101deb24743cac3f95baca6991e4c4845fc675")
-	version("1.32.0", commit="42e8bf65a2376a1449589ea2d649a322d02b6c2c")
+    homepage = "https://github.com/jokergoo/EnrichedHeatmap"
+    bioc = "EnrichedHeatmap"
 
-	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-complexheatmap@2.11:", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-matrixstats", type=("build", "run"))
-	depends_on("r-getoptlong", type=("build", "run"))
-	depends_on("r-rcpp", type=("build", "run"))
-	depends_on("r-locfit", type=("build", "run"))
-	depends_on("r-circlize@0.4.5:", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
+    version("1.38.0", commit="53101deb24743cac3f95baca6991e4c4845fc675")
+    version("1.32.0", commit="42e8bf65a2376a1449589ea2d649a322d02b6c2c")
+
+    depends_on("r@3.6:", type=("build", "run"))
+    depends_on("r-complexheatmap@2.11:", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-matrixstats", type=("build", "run"))
+    depends_on("r-getoptlong", type=("build", "run"))
+    depends_on("r-rcpp", type=("build", "run"))
+    depends_on("r-locfit", type=("build", "run"))
+    depends_on("r-circlize@0.4.5:", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))

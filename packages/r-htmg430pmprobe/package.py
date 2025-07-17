@@ -7,16 +7,21 @@ from spack.package import *
 
 
 class RHtmg430pmprobe(RPackage):
-	"""Probe sequence data for microarrays of type htmg430pm
+    """Probe sequence data for microarrays of type htmg430pm
 
-	This package was automatically created by package AnnotationForge version 1.11.21. The probe sequence data was obtained from http://www.affymetrix.com. The file name was HT_MG-430_PM_probe_tab.
-	"""
-	
-	bioc = "htmg430pmprobe" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/htmg430pmprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/htmg430pmprobe/htmg430pmprobe_2.18.0.tar.gz"]
+    This package was automatically created by package AnnotationForge version 1.11.21. The probe sequence data was obtained from http://www.affymetrix.com. The file name was HT_MG-430_PM_probe_tab.
+    """
 
-	version("2.18.0", sha256="25128aaf4faecb850eebe58a3306499a8372e2529c0a77547ecb0e6b9d088f09")
+    bioc = "htmg430pmprobe"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/htmg430pmprobe_2.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/htmg430pmprobe/htmg430pmprobe_2.18.0.tar.gz",
+    ]
 
-	depends_on("r@1.6:", type=("build", "run"))
-	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))
+    version(
+        "2.18.0",
+        sha256="25128aaf4faecb850eebe58a3306499a8372e2529c0a77547ecb0e6b9d088f09",
+    )
 
+    depends_on("r@1.6:", type=("build", "run"))
+    depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

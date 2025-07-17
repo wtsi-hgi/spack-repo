@@ -7,42 +7,42 @@ from spack.package import *
 
 
 class RArtms(RPackage):
-	"""Analytical R tools for Mass Spectrometry
+    """Analytical R tools for Mass Spectrometry
 
-	artMS provides a set of tools for the analysis of proteomics label-free datasets. It takes as input the MaxQuant search result output (evidence.txt file) and performs quality control, relative quantification using MSstats, downstream analysis and integration. artMS also provides a set of functions to re-format and make it compatible with other analytical tools, including, SAINTq, SAINTexpress, Phosfate, and PHOTON. Check [http://artms.org](http://artms.org) for details.
-	"""
-	
-	homepage = "http://artms.org"
-	bioc = "artMS"
+    artMS provides a set of tools for the analysis of proteomics label-free datasets. It takes as input the MaxQuant search result output (evidence.txt file) and performs quality control, relative quantification using MSstats, downstream analysis and integration. artMS also provides a set of functions to re-format and make it compatible with other analytical tools, including, SAINTq, SAINTexpress, Phosfate, and PHOTON. Check [http://artms.org](http://artms.org) for details.
+    """
 
-	version("1.26.0", commit="54c3c61a13ca6d6514993fa09c8d2e40c9337b6e")
-	version("1.20.0", commit="cc581a09e16f97c1cbb1a85d105097f58c8c798c")
+    homepage = "http://artms.org"
+    bioc = "artMS"
 
-	depends_on("r@4.1:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-bit64", type=("build", "run"))
-	depends_on("r-circlize", type=("build", "run"))
-	depends_on("r-cluster", type=("build", "run"))
-	depends_on("r-corrplot", type=("build", "run"))
-	depends_on("r-data-table", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-getopt", type=("build", "run"))
-	depends_on("r-ggdendro", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-gplots", type=("build", "run"))
-	depends_on("r-ggrepel", type=("build", "run"))
-	depends_on("r-limma", type=("build", "run"))
-	depends_on("r-msstats", type=("build", "run"))
-	depends_on("r-openxlsx", type=("build", "run"))
-	depends_on("r-org-hs-eg-db", type=("build", "run"))
-	depends_on("r-pheatmap", type=("build", "run"))
-	depends_on("r-plotly", type=("build", "run"))
-	depends_on("r-plyr", type=("build", "run"))
-	depends_on("r-rcolorbrewer", type=("build", "run"))
-	depends_on("r-scales", type=("build", "run"))
-	depends_on("r-seqinr", type=("build", "run"))
-	depends_on("r-stringr", type=("build", "run"))
-	depends_on("r-tidyr", type=("build", "run"))
-	depends_on("r-upsetr", type=("build", "run"))
-	depends_on("r-venndiagram", type=("build", "run"))
-	depends_on("r-yaml", type=("build", "run"))
+    version("1.26.0", commit="54c3c61a13ca6d6514993fa09c8d2e40c9337b6e")
+    version("1.20.0", commit="cc581a09e16f97c1cbb1a85d105097f58c8c798c")
+
+    depends_on("r@4.1:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-bit64", type=("build", "run"))
+    depends_on("r-circlize", type=("build", "run"))
+    depends_on("r-cluster", type=("build", "run"))
+    depends_on("r-corrplot", type=("build", "run"))
+    depends_on("r-data-table", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-getopt", type=("build", "run"))
+    depends_on("r-ggdendro", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-gplots", type=("build", "run"))
+    depends_on("r-ggrepel", type=("build", "run"))
+    depends_on("r-limma", type=("build", "run"))
+    depends_on("r-msstats", type=("build", "run"))
+    depends_on("r-openxlsx", type=("build", "run"))
+    depends_on("r-org-hs-eg-db", type=("build", "run"))
+    depends_on("r-pheatmap", type=("build", "run"))
+    depends_on("r-plotly", type=("build", "run"))
+    depends_on("r-plyr", type=("build", "run"))
+    depends_on("r-rcolorbrewer", type=("build", "run"))
+    depends_on("r-scales", type=("build", "run"))
+    depends_on("r-seqinr", type=("build", "run"))
+    depends_on("r-stringr", type=("build", "run"))
+    depends_on("r-tidyr", type=("build", "run"))
+    depends_on("r-upsetr", type=("build", "run"))
+    depends_on("r-venndiagram", type=("build", "run"))
+    depends_on("r-yaml", type=("build", "run"))

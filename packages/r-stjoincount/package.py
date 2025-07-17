@@ -7,25 +7,25 @@ from spack.package import *
 
 
 class RStjoincount(RPackage):
-	"""stJoincount - Join count statistic for quantifying spatial correlation between clusters
+    """stJoincount - Join count statistic for quantifying spatial correlation between clusters
 
-	stJoincount facilitates the application of join count analysis to spatial transcriptomic data generated from the 10x Genomics Visium platform. This tool first converts a labeled spatial tissue map into a raster object, in which each spatial feature is represented by a pixel coded by label assignment. This process includes automatic calculation of optimal raster resolution and extent for the sample. A neighbors list is then created from the rasterized sample, in which adjacent and diagonal neighbors for each pixel are identified. After adding binary spatial weights to the neighbors list, a multi-categorical join count analysis is performed to tabulate "joins" between all possible combinations of label pairs. The function returns the observed join counts, the expected count under conditions of spatial randomness, and the variance calculated under non-free sampling. The z-score is then calculated as the difference between observed and expected counts, divided by the square root of the variance.
-	"""
-	
-	homepage = "https://github.com/Nina-Song/stJoincount"
-	bioc = "stJoincount"
+    stJoincount facilitates the application of join count analysis to spatial transcriptomic data generated from the 10x Genomics Visium platform. This tool first converts a labeled spatial tissue map into a raster object, in which each spatial feature is represented by a pixel coded by label assignment. This process includes automatic calculation of optimal raster resolution and extent for the sample. A neighbors list is then created from the rasterized sample, in which adjacent and diagonal neighbors for each pixel are identified. After adding binary spatial weights to the neighbors list, a multi-categorical join count analysis is performed to tabulate "joins" between all possible combinations of label pairs. The function returns the observed join counts, the expected count under conditions of spatial randomness, and the variance calculated under non-free sampling. The z-score is then calculated as the difference between observed and expected counts, divided by the square root of the variance.
+    """
 
-	version("1.10.0", commit="b8f2c341a618a23c0f40f34a5bf613c084d16b7f")
-	version("1.4.0", commit="5c5b810ce0bb661f71d1e4ef6952f38d5c0d535d")
+    homepage = "https://github.com/Nina-Song/stJoincount"
+    bioc = "stJoincount"
 
-	depends_on("r@4.2:", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-sp", type=("build", "run"))
-	depends_on("r-raster", type=("build", "run"))
-	depends_on("r-spdep", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-pheatmap", type=("build", "run"))
-	depends_on("r-seurat", type=("build", "run"))
-	depends_on("r-spatialexperiment", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
+    version("1.10.0", commit="b8f2c341a618a23c0f40f34a5bf613c084d16b7f")
+    version("1.4.0", commit="5c5b810ce0bb661f71d1e4ef6952f38d5c0d535d")
+
+    depends_on("r@4.2:", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))
+    depends_on("r-sp", type=("build", "run"))
+    depends_on("r-raster", type=("build", "run"))
+    depends_on("r-spdep", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-pheatmap", type=("build", "run"))
+    depends_on("r-seurat", type=("build", "run"))
+    depends_on("r-spatialexperiment", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))

@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RRrdpdata(RPackage):
-	"""Database for the Default RDP Classifier
+    """Database for the Default RDP Classifier
 
-	Database used by the default RDP Classifier
-	"""
-	
-	bioc = "rRDPData"
+    Database used by the default RDP Classifier
+    """
 
-	version("1.28.0", commit="b06d16c7467e5692b37b7717d1917bb3adb890ae")
-	version("1.22.0", commit="1b0000d5f65e2f128b946d96cae342bb2be6c336")
+    bioc = "rRDPData"
 
-	depends_on("r-rrdp", type=("build", "run"))
-	depends_on("openjdk", type=("build", "link", "run"))
+    version("1.28.0", commit="b06d16c7467e5692b37b7717d1917bb3adb890ae")
+    version("1.22.0", commit="1b0000d5f65e2f128b946d96cae342bb2be6c336")
 
+    depends_on("r-rrdp", type=("build", "run"))
+    depends_on("openjdk", type=("build", "link", "run"))

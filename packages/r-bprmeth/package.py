@@ -7,35 +7,35 @@ from spack.package import *
 
 
 class RBprmeth(RPackage):
-	"""Model higher-order methylation profiles
+    """Model higher-order methylation profiles
 
-	The BPRMeth package is a probabilistic method to quantify explicit features of methylation profiles, in a way that would make it easier to formally use such profiles in downstream modelling efforts, such as predicting gene expression levels or clustering genomic regions or cells according to their methylation profiles.
-	"""
-	
-	bioc = "BPRMeth"
+    The BPRMeth package is a probabilistic method to quantify explicit features of methylation profiles, in a way that would make it easier to formally use such profiles in downstream modelling efforts, such as predicting gene expression levels or clustering genomic regions or cells according to their methylation profiles.
+    """
 
-	version("1.34.0", commit="fcbf18e7f9a764c4afc2400388fe380bfc3998b5")
-	version("1.28.0", commit="d365b41830b142863398b81cb1802a300e52f3e7")
+    bioc = "BPRMeth"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-assertthat", type=("build", "run"))
-	depends_on("r-mass", type=("build", "run"))
-	depends_on("r-doparallel", type=("build", "run"))
-	depends_on("r-e1071", type=("build", "run"))
-	depends_on("r-earth", type=("build", "run"))
-	depends_on("r-foreach", type=("build", "run"))
-	depends_on("r-randomforest", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-data-table", type=("build", "run"))
-	depends_on("r-truncnorm", type=("build", "run"))
-	depends_on("r-mvtnorm", type=("build", "run"))
-	depends_on("r-rcpp", type=("build", "run"))
-	depends_on("r-matrixcalc", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-kernlab", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-cowplot", type=("build", "run"))
-	depends_on("r-biocstyle", type=("build", "run"))
-	depends_on("r-rcpparmadillo", type=("build", "run"))
+    version("1.34.0", commit="fcbf18e7f9a764c4afc2400388fe380bfc3998b5")
+    version("1.28.0", commit="d365b41830b142863398b81cb1802a300e52f3e7")
+
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-assertthat", type=("build", "run"))
+    depends_on("r-mass", type=("build", "run"))
+    depends_on("r-doparallel", type=("build", "run"))
+    depends_on("r-e1071", type=("build", "run"))
+    depends_on("r-earth", type=("build", "run"))
+    depends_on("r-foreach", type=("build", "run"))
+    depends_on("r-randomforest", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-data-table", type=("build", "run"))
+    depends_on("r-truncnorm", type=("build", "run"))
+    depends_on("r-mvtnorm", type=("build", "run"))
+    depends_on("r-rcpp", type=("build", "run"))
+    depends_on("r-matrixcalc", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))
+    depends_on("r-kernlab", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-cowplot", type=("build", "run"))
+    depends_on("r-biocstyle", type=("build", "run"))
+    depends_on("r-rcpparmadillo", type=("build", "run"))

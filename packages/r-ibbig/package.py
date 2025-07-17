@@ -7,17 +7,17 @@ from spack.package import *
 
 
 class RIbbig(RPackage):
-	"""Iterative Binary Biclustering of Genesets
+    """Iterative Binary Biclustering of Genesets
 
-	iBBiG is a bi-clustering algorithm which is optimizes for binary data analysis. We apply it to meta-gene set analysis of large numbers of gene expression datasets. The iterative algorithm extracts groups of phenotypes from multiple studies that are associated with similar gene sets. iBBiG does not require prior knowledge of the number or scale of clusters and allows discovery of clusters with diverse sizes
-	"""
-	
-	homepage = "http://bcb.dfci.harvard.edu/~aedin/publications/"
-	bioc = "iBBiG"
+    iBBiG is a bi-clustering algorithm which is optimizes for binary data analysis. We apply it to meta-gene set analysis of large numbers of gene expression datasets. The iterative algorithm extracts groups of phenotypes from multiple studies that are associated with similar gene sets. iBBiG does not require prior knowledge of the number or scale of clusters and allows discovery of clusters with diverse sizes
+    """
 
-	version("1.52.0", commit="bf5f1f165e0a69a2451efc6eef7af995185d47b8")
-	version("1.46.0", commit="53ef42ea2a3ac9d5c7fd84ea31b673e18879f405")
+    homepage = "http://bcb.dfci.harvard.edu/~aedin/publications/"
+    bioc = "iBBiG"
 
-	depends_on("r-biclust", type=("build", "run"))
-	depends_on("r-xtable", type=("build", "run"))
-	depends_on("r-ade4", type=("build", "run"))
+    version("1.52.0", commit="bf5f1f165e0a69a2451efc6eef7af995185d47b8")
+    version("1.46.0", commit="53ef42ea2a3ac9d5c7fd84ea31b673e18879f405")
+
+    depends_on("r-biclust", type=("build", "run"))
+    depends_on("r-xtable", type=("build", "run"))
+    depends_on("r-ade4", type=("build", "run"))

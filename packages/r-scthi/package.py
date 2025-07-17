@@ -7,16 +7,16 @@ from spack.package import *
 
 
 class RScthi(RPackage):
-	"""Indentification of significantly activated ligand-receptor interactions across clusters of cells from single-cell RNA sequencing data
+    """Indentification of significantly activated ligand-receptor interactions across clusters of cells from single-cell RNA sequencing data
 
-	scTHI is an R package to identify active pairs of ligand-receptors from single cells in order to study,among others, tumor-host interactions. scTHI contains a set of signatures to classify cells from the tumor microenvironment.
-	"""
-	
-	bioc = "scTHI"
+    scTHI is an R package to identify active pairs of ligand-receptors from single cells in order to study,among others, tumor-host interactions. scTHI contains a set of signatures to classify cells from the tumor microenvironment.
+    """
 
-	version("1.20.0", commit="3a40e88ce4bf2cacd7e58068dc8ab4595ad4814a")
-	version("1.14.0", commit="3402b2b4c905d74ec9b1f002a47d946df01648f2")
+    bioc = "scTHI"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-biocparallel", type=("build", "run"))
-	depends_on("r-rtsne", type=("build", "run"))
+    version("1.20.0", commit="3a40e88ce4bf2cacd7e58068dc8ab4595ad4814a")
+    version("1.14.0", commit="3402b2b4c905d74ec9b1f002a47d946df01648f2")
+
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-biocparallel", type=("build", "run"))
+    depends_on("r-rtsne", type=("build", "run"))

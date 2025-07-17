@@ -7,22 +7,21 @@ from spack.package import *
 
 
 class RCelldex(RPackage):
-	"""Reference Index for Cell Types
+    """Reference Index for Cell Types
 
-	Provides a collection of reference expression datasets with curated cell type labels, for use in procedures like automated annotation of single-cell data or deconvolution of bulk RNA-seq.
-	"""
-	
-	homepage = "https://github.com/LTLA/celldex"
-	bioc = "celldex"
+    Provides a collection of reference expression datasets with curated cell type labels, for use in procedures like automated annotation of single-cell data or deconvolution of bulk RNA-seq.
+    """
 
-	version("1.18.0", commit="0a661782b975e8cd96f471e46c7a2037cfd3f9a4")
-	version("1.12.0", commit="7567a3154fa2e919349032e954f9a0d295f453c5")
+    homepage = "https://github.com/LTLA/celldex"
+    bioc = "celldex"
 
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-experimenthub", type=("build", "run"))
-	depends_on("r-annotationhub", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-delayedarray", type=("build", "run"))
-	depends_on("r-delayedmatrixstats", type=("build", "run"))
+    version("1.18.0", commit="0a661782b975e8cd96f471e46c7a2037cfd3f9a4")
+    version("1.12.0", commit="7567a3154fa2e919349032e954f9a0d295f453c5")
 
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-experimenthub", type=("build", "run"))
+    depends_on("r-annotationhub", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-delayedarray", type=("build", "run"))
+    depends_on("r-delayedmatrixstats", type=("build", "run"))

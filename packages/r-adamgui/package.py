@@ -7,35 +7,35 @@ from spack.package import *
 
 
 class RAdamgui(RPackage):
-	"""Activity and Diversity Analysis Module Graphical User Interface
+    """Activity and Diversity Analysis Module Graphical User Interface
 
-	ADAMgui is a Graphical User Interface for the ADAM package. The ADAMgui package provides 2 shiny-based applications that allows the user to study the output of the ADAM package files through different plots. It's possible, for example, to choose a specific GFAG and observe the gene expression behavior with the plots created with the GFAGtargetUi function. Features such as differential expression and foldchange can be easily seen with aid of the plots made with GFAGpathUi function.
-	"""
-	
-	homepage = "TBA"
-	bioc = "ADAMgui"
+    ADAMgui is a Graphical User Interface for the ADAM package. The ADAMgui package provides 2 shiny-based applications that allows the user to study the output of the ADAM package files through different plots. It's possible, for example, to choose a specific GFAG and observe the gene expression behavior with the plots created with the GFAGtargetUi function. Features such as differential expression and foldchange can be easily seen with aid of the plots made with GFAGpathUi function.
+    """
 
-	version("1.24.0", commit="9396557a3c3d86f10d01bf493b30a03db2de0c79")
-	version("1.18.0", commit="604f8c470e4cc53b13f6d24a37626d282db25f18")
+    homepage = "TBA"
+    bioc = "ADAMgui"
 
-	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-adam", type=("build", "run"))
-	depends_on("r-go-db@3.5:", type=("build", "run"))
-	depends_on("r-dplyr@0.7.6:", type=("build", "run"))
-	depends_on("r-shiny@1.1:", type=("build", "run"))
-	depends_on("r-stringr@1.3.1:", type=("build", "run"))
-	depends_on("r-stringi@1.2.4:", type=("build", "run"))
-	depends_on("r-varhandle@2.0.3:", type=("build", "run"))
-	depends_on("r-ggplot2@3:", type=("build", "run"))
-	depends_on("r-ggrepel@0.8:", type=("build", "run"))
-	depends_on("r-ggpubr@0.1.8:", type=("build", "run"))
-	depends_on("r-ggsignif@0.4:", type=("build", "run"))
-	depends_on("r-reshape2@1.4.3:", type=("build", "run"))
-	depends_on("r-rcolorbrewer@1.1.2:", type=("build", "run"))
-	depends_on("r-colorramps@2.3:", type=("build", "run"))
-	depends_on("r-dt@0.4:", type=("build", "run"))
-	depends_on("r-data-table@1.11.4:", type=("build", "run"))
-	depends_on("r-gridextra@2.3:", type=("build", "run"))
-	depends_on("r-shinyjs@1:", type=("build", "run"))
-	depends_on("r-knitr", type=("build", "run"))
-	depends_on("r-testthat", type=("build", "run"))
+    version("1.24.0", commit="9396557a3c3d86f10d01bf493b30a03db2de0c79")
+    version("1.18.0", commit="604f8c470e4cc53b13f6d24a37626d282db25f18")
+
+    depends_on("r@3.6:", type=("build", "run"))
+    depends_on("r-adam", type=("build", "run"))
+    depends_on("r-go-db@3.5:", type=("build", "run"))
+    depends_on("r-dplyr@0.7.6:", type=("build", "run"))
+    depends_on("r-shiny@1.1:", type=("build", "run"))
+    depends_on("r-stringr@1.3.1:", type=("build", "run"))
+    depends_on("r-stringi@1.2.4:", type=("build", "run"))
+    depends_on("r-varhandle@2.0.3:", type=("build", "run"))
+    depends_on("r-ggplot2@3:", type=("build", "run"))
+    depends_on("r-ggrepel@0.8:", type=("build", "run"))
+    depends_on("r-ggpubr@0.1.8:", type=("build", "run"))
+    depends_on("r-ggsignif@0.4:", type=("build", "run"))
+    depends_on("r-reshape2@1.4.3:", type=("build", "run"))
+    depends_on("r-rcolorbrewer@1.1.2:", type=("build", "run"))
+    depends_on("r-colorramps@2.3:", type=("build", "run"))
+    depends_on("r-dt@0.4:", type=("build", "run"))
+    depends_on("r-data-table@1.11.4:", type=("build", "run"))
+    depends_on("r-gridextra@2.3:", type=("build", "run"))
+    depends_on("r-shinyjs@1:", type=("build", "run"))
+    depends_on("r-knitr", type=("build", "run"))
+    depends_on("r-testthat", type=("build", "run"))

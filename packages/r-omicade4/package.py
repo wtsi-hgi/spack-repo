@@ -7,17 +7,17 @@ from spack.package import *
 
 
 class ROmicade4(RPackage):
-	"""Multiple co-inertia analysis of omics datasets
+    """Multiple co-inertia analysis of omics datasets
 
-	This package performes multiple co-inertia analysis of omics datasets.
-	"""
-	
-	bioc = "omicade4"
+    This package performes multiple co-inertia analysis of omics datasets.
+    """
 
-	version("1.48.0", commit="1677af8d101b9ebb649879476f8583c0452f1d7d")
-	version("1.42.0", commit="53ca069cda60845888830431aab065cfcc1e8e6c")
+    bioc = "omicade4"
 
-	depends_on("r@3:", type=("build", "run"))
-	depends_on("r-ade4", type=("build", "run"))
-	depends_on("r-made4", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
+    version("1.48.0", commit="1677af8d101b9ebb649879476f8583c0452f1d7d")
+    version("1.42.0", commit="53ca069cda60845888830431aab065cfcc1e8e6c")
+
+    depends_on("r@3:", type=("build", "run"))
+    depends_on("r-ade4", type=("build", "run"))
+    depends_on("r-made4", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))

@@ -7,52 +7,52 @@ from spack.package import *
 
 
 class RFraser(RPackage):
-	"""Find RAre Splicing Events in RNA-Seq Data
+    """Find RAre Splicing Events in RNA-Seq Data
 
-	Detection of rare aberrant splicing events in transcriptome profiles. Read count ratio expectations are modeled by an autoencoder to control for confounding factors in the data. Given these expectations, the ratios are assumed to follow a beta-binomial distribution with a junction specific dispersion. Outlier events are then identified as read-count ratios that deviate significantly from this distribution. FRASER is able to detect alternative splicing, but also intron retention. The package aims to support diagnostics in the field of rare diseases where RNA-seq is performed to identify aberrant splicing defects.
-	"""
-	
-	homepage = "https://github.com/gagneurlab/FRASER"
-	bioc = "FRASER"
+    Detection of rare aberrant splicing events in transcriptome profiles. Read count ratio expectations are modeled by an autoencoder to control for confounding factors in the data. Given these expectations, the ratios are assumed to follow a beta-binomial distribution with a junction specific dispersion. Outlier events are then identified as read-count ratios that deviate significantly from this distribution. FRASER is able to detect alternative splicing, but also intron retention. The package aims to support diagnostics in the field of rare diseases where RNA-seq is performed to identify aberrant splicing defects.
+    """
 
-	version("2.4.3", commit="92981686ce39f12c5ffa25be8e5db528f6e6c7e9")
-	version("1.14.1", commit="0a7204b7347b1d86d194dc5b4c2579e82786e1a9")
+    homepage = "https://github.com/gagneurlab/FRASER"
+    bioc = "FRASER"
 
-	depends_on("r-biocparallel", type=("build", "run"))
-	depends_on("r-data-table", type=("build", "run"))
-	depends_on("r-rsamtools", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-bbmisc", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-biocgenerics", type=("build", "run"))
-	depends_on("r-biomart", type=("build", "run"))
-	depends_on("r-bsgenome", type=("build", "run"))
-	depends_on("r-cowplot", type=("build", "run"))
-	depends_on("r-delayedarray@0.5.11:", type=("build", "run"))
-	depends_on("r-delayedmatrixstats", type=("build", "run"))
-	depends_on("r-extradistr", type=("build", "run"))
-	depends_on("r-generics", type=("build", "run"))
-	depends_on("r-genomeinfodb", type=("build", "run"))
-	depends_on("r-genomicalignments", type=("build", "run"))
-	depends_on("r-genomicfeatures", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-ggrepel", type=("build", "run"))
-	depends_on("r-hdf5array", type=("build", "run"))
-	depends_on("r-matrixstats", type=("build", "run"))
-	depends_on("r-outrider", type=("build", "run"))
-	depends_on("r-pcamethods", type=("build", "run"))
-	depends_on("r-pheatmap", type=("build", "run"))
-	depends_on("r-plotly", type=("build", "run"))
-	depends_on("r-prroc", type=("build", "run"))
-	depends_on("r-rcolorbrewer", type=("build", "run"))
-	depends_on("r-rhdf5", type=("build", "run"))
-	depends_on("r-rsubread", type=("build", "run"))
-	depends_on("r-r-utils", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-tibble", type=("build", "run"))
-	depends_on("r-vgam", type=("build", "run"))
-	depends_on("r-rcpp", type=("build", "run"))
-	depends_on("r-rcpparmadillo", type=("build", "run"))
+    version("2.4.3", commit="92981686ce39f12c5ffa25be8e5db528f6e6c7e9")
+    version("1.14.1", commit="0a7204b7347b1d86d194dc5b4c2579e82786e1a9")
+
+    depends_on("r-biocparallel", type=("build", "run"))
+    depends_on("r-data-table", type=("build", "run"))
+    depends_on("r-rsamtools", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-bbmisc", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-biocgenerics", type=("build", "run"))
+    depends_on("r-biomart", type=("build", "run"))
+    depends_on("r-bsgenome", type=("build", "run"))
+    depends_on("r-cowplot", type=("build", "run"))
+    depends_on("r-delayedarray@0.5.11:", type=("build", "run"))
+    depends_on("r-delayedmatrixstats", type=("build", "run"))
+    depends_on("r-extradistr", type=("build", "run"))
+    depends_on("r-generics", type=("build", "run"))
+    depends_on("r-genomeinfodb", type=("build", "run"))
+    depends_on("r-genomicalignments", type=("build", "run"))
+    depends_on("r-genomicfeatures", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-ggrepel", type=("build", "run"))
+    depends_on("r-hdf5array", type=("build", "run"))
+    depends_on("r-matrixstats", type=("build", "run"))
+    depends_on("r-outrider", type=("build", "run"))
+    depends_on("r-pcamethods", type=("build", "run"))
+    depends_on("r-pheatmap", type=("build", "run"))
+    depends_on("r-plotly", type=("build", "run"))
+    depends_on("r-prroc", type=("build", "run"))
+    depends_on("r-rcolorbrewer", type=("build", "run"))
+    depends_on("r-rhdf5", type=("build", "run"))
+    depends_on("r-rsubread", type=("build", "run"))
+    depends_on("r-r-utils", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-tibble", type=("build", "run"))
+    depends_on("r-vgam", type=("build", "run"))
+    depends_on("r-rcpp", type=("build", "run"))
+    depends_on("r-rcpparmadillo", type=("build", "run"))

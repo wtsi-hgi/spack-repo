@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RBreastcancertransbig(RPackage):
-	"""Gene expression dataset published by Desmedt et al. [2007] (TRANSBIG).
+    """Gene expression dataset published by Desmedt et al. [2007] (TRANSBIG).
 
-	Gene expression data from a breast cancer study published by Desmedt et al. in 2007, provided as an eSet.
-	"""
-	
-	homepage = "http://compbio.dfci.harvard.edu/"
-	bioc = "breastCancerTRANSBIG"
+    Gene expression data from a breast cancer study published by Desmedt et al. in 2007, provided as an eSet.
+    """
 
-	version("1.46.0", commit="9d994b70be911209dc1e0775d1f0ef79490402ae")
-	version("1.40.0", commit="cd416ca135e47e5f554fd739f98d55520de45647")
+    homepage = "http://compbio.dfci.harvard.edu/"
+    bioc = "breastCancerTRANSBIG"
 
-	depends_on("r@2.5:", type=("build", "run"))
+    version("1.46.0", commit="9d994b70be911209dc1e0775d1f0ef79490402ae")
+    version("1.40.0", commit="cd416ca135e47e5f554fd739f98d55520de45647")
 
+    depends_on("r@2.5:", type=("build", "run"))

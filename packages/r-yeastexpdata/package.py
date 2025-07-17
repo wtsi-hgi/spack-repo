@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RYeastexpdata(RPackage):
-	"""Yeast Experimental Data
+    """Yeast Experimental Data
 
-	A collection of different sets of experimental data from yeast.
-	"""
-	
-	bioc = "yeastExpData"
+    A collection of different sets of experimental data from yeast.
+    """
 
-	version("0.54.0", commit="b7cdb14dff4099e4a19f3abf744e047b9fabe613")
-	version("0.48.0", commit="41b3502c9c24e0be145ba323fced4b811a21680f")
+    bioc = "yeastExpData"
 
-	depends_on("r@2.4:", type=("build", "run"))
-	depends_on("r-graph@1.9.26:", type=("build", "run"))
+    version("0.54.0", commit="b7cdb14dff4099e4a19f3abf744e047b9fabe613")
+    version("0.48.0", commit="41b3502c9c24e0be145ba323fced4b811a21680f")
 
+    depends_on("r@2.4:", type=("build", "run"))
+    depends_on("r-graph@1.9.26:", type=("build", "run"))

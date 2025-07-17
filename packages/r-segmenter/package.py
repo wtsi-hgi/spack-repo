@@ -7,22 +7,22 @@ from spack.package import *
 
 
 class RSegmenter(RPackage):
-	"""Perform Chromatin Segmentation Analysis in R by Calling ChromHMM
+    """Perform Chromatin Segmentation Analysis in R by Calling ChromHMM
 
-	Chromatin segmentation analysis transforms ChIP-seq data into signals over the genome. The latter represents the observed states in a multivariate Markov model to predict the chromatin's underlying states. ChromHMM, written in Java, integrates histone modification datasets to learn the chromatin states de-novo. The goal of this package is to call chromHMM from within R, capture the output files in an S4 object and interface to other relevant Bioconductor analysis tools. In addition, segmenter provides functions to test, select and visualize the output of the segmentation.
-	"""
-	
-	bioc = "segmenter"
+    Chromatin segmentation analysis transforms ChIP-seq data into signals over the genome. The latter represents the observed states in a multivariate Markov model to predict the chromatin's underlying states. ChromHMM, written in Java, integrates histone modification datasets to learn the chromatin states de-novo. The goal of this package is to call chromHMM from within R, capture the output files in an S4 object and interface to other relevant Bioconductor analysis tools. In addition, segmenter provides functions to test, select and visualize the output of the segmentation.
+    """
 
-	version("1.14.0", commit="0d67a6b5ec9c6e63930fc7aa3ee8c2b7a0815507")
-	version("1.8.0", commit="92d1bc19d1abe15c99875b3e7f923147bb87aaa1")
+    bioc = "segmenter"
 
-	depends_on("r@4.1:", type=("build", "run"))
-	depends_on("r-chipseeker", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-bamsignals", type=("build", "run"))
-	depends_on("r-complexheatmap", type=("build", "run"))
-	depends_on("r-chromhmmdata", type=("build", "run"))
+    version("1.14.0", commit="0d67a6b5ec9c6e63930fc7aa3ee8c2b7a0815507")
+    version("1.8.0", commit="92d1bc19d1abe15c99875b3e7f923147bb87aaa1")
+
+    depends_on("r@4.1:", type=("build", "run"))
+    depends_on("r-chipseeker", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-bamsignals", type=("build", "run"))
+    depends_on("r-complexheatmap", type=("build", "run"))
+    depends_on("r-chromhmmdata", type=("build", "run"))

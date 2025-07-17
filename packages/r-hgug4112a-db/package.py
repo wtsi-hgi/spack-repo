@@ -7,17 +7,22 @@ from spack.package import *
 
 
 class RHgug4112aDb(RPackage):
-	"""Agilent "Human Genome, Whole" annotation data (chip hgug4112a)
+    """Agilent "Human Genome, Whole" annotation data (chip hgug4112a)
 
-	Agilent "Human Genome, Whole" annotation data (chip hgug4112a) assembled using data from public repositories
-	"""
-	
-	bioc = "hgug4112a.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgug4112a.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgug4112a.db/hgug4112a.db_3.2.3.tar.gz"]
+    Agilent "Human Genome, Whole" annotation data (chip hgug4112a) assembled using data from public repositories
+    """
 
-	version("3.2.3", sha256="a3967e32b0507e1e25a5850fe734c45fd1429a595a6dac0bddf71050e9ba0051")
+    bioc = "hgug4112a.db"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgug4112a.db_3.2.3.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hgug4112a.db/hgug4112a.db_3.2.3.tar.gz",
+    ]
 
-	depends_on("r@2.7:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-org-hs-eg-db@3.3:", type=("build", "run"))
+    version(
+        "3.2.3",
+        sha256="a3967e32b0507e1e25a5850fe734c45fd1429a595a6dac0bddf71050e9ba0051",
+    )
 
+    depends_on("r@2.7:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-org-hs-eg-db@3.3:", type=("build", "run"))

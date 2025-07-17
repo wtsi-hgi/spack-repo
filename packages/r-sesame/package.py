@@ -7,33 +7,33 @@ from spack.package import *
 
 
 class RSesame(RPackage):
-	"""SEnsible Step-wise Analysis of DNA MEthylation BeadChips
+    """SEnsible Step-wise Analysis of DNA MEthylation BeadChips
 
-	Tools For analyzing Illumina Infinium DNA methylation arrays. SeSAMe provides utilities to support analyses of multiple generations of Infinium DNA methylation BeadChips, including preprocessing, quality control, visualization and inference. SeSAMe features accurate detection calling, intelligent inference of ethnicity, sex and advanced quality control routines.
-	"""
-	
-	homepage = "https://github.com/zwdzwd/sesame"
-	bioc = "sesame"
+    Tools For analyzing Illumina Infinium DNA methylation arrays. SeSAMe provides utilities to support analyses of multiple generations of Infinium DNA methylation BeadChips, including preprocessing, quality control, visualization and inference. SeSAMe features accurate detection calling, intelligent inference of ethnicity, sex and advanced quality control routines.
+    """
 
-	version("1.26.0", commit="bc933e082dc3ae4f9b4d08e94f2538f43dfd6683")
-	version("1.20.0", commit="a98099516325570762b68edc43e12c2052162745")
+    homepage = "https://github.com/zwdzwd/sesame"
+    bioc = "sesame"
 
-	depends_on("r@4.3:", type=("build", "run"))
-	depends_on("r-sesamedata", type=("build", "run"))
-	depends_on("r-biocparallel", type=("build", "run"))
-	depends_on("r-stringr", type=("build", "run"))
-	depends_on("r-readr", type=("build", "run"))
-	depends_on("r-tibble", type=("build", "run"))
-	depends_on("r-illuminaio", type=("build", "run"))
-	depends_on("r-mass", type=("build", "run"))
-	depends_on("r-wheatmap@0.2:", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-preprocesscore", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-biocfilecache", type=("build", "run"))
-	depends_on("r-genomeinfodb", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-reshape2", type=("build", "run"))
+    version("1.26.0", commit="bc933e082dc3ae4f9b4d08e94f2538f43dfd6683")
+    version("1.20.0", commit="a98099516325570762b68edc43e12c2052162745")
+
+    depends_on("r@4.3:", type=("build", "run"))
+    depends_on("r-sesamedata", type=("build", "run"))
+    depends_on("r-biocparallel", type=("build", "run"))
+    depends_on("r-stringr", type=("build", "run"))
+    depends_on("r-readr", type=("build", "run"))
+    depends_on("r-tibble", type=("build", "run"))
+    depends_on("r-illuminaio", type=("build", "run"))
+    depends_on("r-mass", type=("build", "run"))
+    depends_on("r-wheatmap@0.2:", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-preprocesscore", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-biocfilecache", type=("build", "run"))
+    depends_on("r-genomeinfodb", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-reshape2", type=("build", "run"))

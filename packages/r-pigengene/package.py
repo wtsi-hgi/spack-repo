@@ -7,35 +7,35 @@ from spack.package import *
 
 
 class RPigengene(RPackage):
-	"""Infers biological signatures from gene expression data
+    """Infers biological signatures from gene expression data
 
-	Pigengene package provides an efficient way to infer biological signatures from gene expression profiles. The signatures are independent from the underlying platform, e.g., the input can be microarray or RNA Seq data. It can even infer the signatures using data from one platform, and evaluate them on the other. Pigengene identifies the modules (clusters) of highly coexpressed genes using coexpression network analysis, summarizes the biological information of each module in an eigengene, learns a Bayesian network that models the probabilistic dependencies between modules, and builds a decision tree based on the expression of eigengenes.
-	"""
-	
-	bioc = "Pigengene"
+    Pigengene package provides an efficient way to infer biological signatures from gene expression profiles. The signatures are independent from the underlying platform, e.g., the input can be microarray or RNA Seq data. It can even infer the signatures using data from one platform, and evaluate them on the other. Pigengene identifies the modules (clusters) of highly coexpressed genes using coexpression network analysis, summarizes the biological information of each module in an eigengene, learns a Bayesian network that models the probabilistic dependencies between modules, and builds a decision tree based on the expression of eigengenes.
+    """
 
-	version("1.34.0", commit="04213d712a71d1e35058ee85ad4de4040e686126")
-	version("1.28.0", commit="0294afcd3acc239cc362adb42d821749d346d319")
+    bioc = "Pigengene"
 
-	depends_on("r@4.0.3:", type=("build", "run"))
-	depends_on("r-graph", type=("build", "run"))
-	depends_on("r-biocstyle@2.28:", type=("build", "run"))
-	depends_on("r-bnlearn@4.7:", type=("build", "run"))
-	depends_on("r-c50@0.1.2:", type=("build", "run"))
-	depends_on("r-mass", type=("build", "run"))
-	depends_on("r-matrixstats", type=("build", "run"))
-	depends_on("r-partykit", type=("build", "run"))
-	depends_on("r-rgraphviz", type=("build", "run"))
-	depends_on("r-wgcna", type=("build", "run"))
-	depends_on("r-go-db", type=("build", "run"))
-	depends_on("r-impute", type=("build", "run"))
-	depends_on("r-preprocesscore", type=("build", "run"))
-	depends_on("r-pheatmap@1.0.8:", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-gdata", type=("build", "run"))
-	depends_on("r-clusterprofiler", type=("build", "run"))
-	depends_on("r-reactomepa", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-openxlsx", type=("build", "run"))
-	depends_on("r-dbi", type=("build", "run"))
-	depends_on("r-dose", type=("build", "run"))
+    version("1.34.0", commit="04213d712a71d1e35058ee85ad4de4040e686126")
+    version("1.28.0", commit="0294afcd3acc239cc362adb42d821749d346d319")
+
+    depends_on("r@4.0.3:", type=("build", "run"))
+    depends_on("r-graph", type=("build", "run"))
+    depends_on("r-biocstyle@2.28:", type=("build", "run"))
+    depends_on("r-bnlearn@4.7:", type=("build", "run"))
+    depends_on("r-c50@0.1.2:", type=("build", "run"))
+    depends_on("r-mass", type=("build", "run"))
+    depends_on("r-matrixstats", type=("build", "run"))
+    depends_on("r-partykit", type=("build", "run"))
+    depends_on("r-rgraphviz", type=("build", "run"))
+    depends_on("r-wgcna", type=("build", "run"))
+    depends_on("r-go-db", type=("build", "run"))
+    depends_on("r-impute", type=("build", "run"))
+    depends_on("r-preprocesscore", type=("build", "run"))
+    depends_on("r-pheatmap@1.0.8:", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-gdata", type=("build", "run"))
+    depends_on("r-clusterprofiler", type=("build", "run"))
+    depends_on("r-reactomepa", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-openxlsx", type=("build", "run"))
+    depends_on("r-dbi", type=("build", "run"))
+    depends_on("r-dose", type=("build", "run"))

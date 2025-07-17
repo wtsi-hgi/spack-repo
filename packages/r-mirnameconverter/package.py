@@ -7,17 +7,17 @@ from spack.package import *
 
 
 class RMirnameconverter(RPackage):
-	"""Convert miRNA Names to Different miRBase Versions
+    """Convert miRNA Names to Different miRBase Versions
 
-	Translating mature miRNA names to different miRBase versions, sequence retrieval, checking names for validity and detecting miRBase version of a given set of names (data from http://www.mirbase.org/).
-	"""
-	
-	bioc = "miRNAmeConverter"
+    Translating mature miRNA names to different miRBase versions, sequence retrieval, checking names for validity and detecting miRBase version of a given set of names (data from http://www.mirbase.org/).
+    """
 
-	version("1.36.0", commit="a3c5a5ddfc0d3e0f71f44631a6f84ca95575d901")
-	version("1.30.0", commit="40e10f7d2f304ff06ea0435608d9dd468f8a07bf")
+    bioc = "miRNAmeConverter"
 
-	depends_on("r-mirbaseversions-db", type=("build", "run"))
-	depends_on("r-dbi", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-reshape2", type=("build", "run"))
+    version("1.36.0", commit="a3c5a5ddfc0d3e0f71f44631a6f84ca95575d901")
+    version("1.30.0", commit="40e10f7d2f304ff06ea0435608d9dd468f8a07bf")
+
+    depends_on("r-mirbaseversions-db", type=("build", "run"))
+    depends_on("r-dbi", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-reshape2", type=("build", "run"))

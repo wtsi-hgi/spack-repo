@@ -7,17 +7,22 @@ from spack.package import *
 
 
 class RHugene21sttranscriptclusterDb(RPackage):
-	"""Affymetrix hugene21 annotation data (chip hugene21sttranscriptcluster)
+    """Affymetrix hugene21 annotation data (chip hugene21sttranscriptcluster)
 
-	Affymetrix hugene21 annotation data (chip hugene21sttranscriptcluster) assembled using data from public repositories
-	"""
-	
-	bioc = "hugene21sttranscriptcluster.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hugene21sttranscriptcluster.db_8.8.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hugene21sttranscriptcluster.db/hugene21sttranscriptcluster.db_8.8.0.tar.gz"]
+    Affymetrix hugene21 annotation data (chip hugene21sttranscriptcluster) assembled using data from public repositories
+    """
 
-	version("8.8.0", sha256="543dee49c4698fc324cf9cd55cda67d360e4f5919a4bbdd96e136e93d476febc")
+    bioc = "hugene21sttranscriptcluster.db"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hugene21sttranscriptcluster.db_8.8.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hugene21sttranscriptcluster.db/hugene21sttranscriptcluster.db_8.8.0.tar.gz",
+    ]
 
-	depends_on("r@2.7:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-org-hs-eg-db@3.13:", type=("build", "run"))
+    version(
+        "8.8.0",
+        sha256="543dee49c4698fc324cf9cd55cda67d360e4f5919a4bbdd96e136e93d476febc",
+    )
 
+    depends_on("r@2.7:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-org-hs-eg-db@3.13:", type=("build", "run"))

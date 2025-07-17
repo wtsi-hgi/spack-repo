@@ -7,16 +7,16 @@ from spack.package import *
 
 
 class RHireewas(RPackage):
-	"""Detection of cell-type-specific risk-CpG sites in epigenome-wide association studies
+    """Detection of cell-type-specific risk-CpG sites in epigenome-wide association studies
 
-	In epigenome-wide association studies, the measured signals for each sample are a mixture of methylation profiles from different cell types. The current approaches to the association detection only claim whether a cytosine-phosphate-guanine (CpG) site is associated with the phenotype or not, but they cannot determine the cell type in which the risk-CpG site is affected by the phenotype. We propose a solid statistical method, HIgh REsolution (HIRE), which not only substantially improves the power of association detection at the aggregated level as compared to the existing methods but also enables the detection of risk-CpG sites for individual cell types. The "HIREewas" R package is to implement HIRE model in R.
-	"""
-	
-	bioc = "HIREewas"
+    In epigenome-wide association studies, the measured signals for each sample are a mixture of methylation profiles from different cell types. The current approaches to the association detection only claim whether a cytosine-phosphate-guanine (CpG) site is associated with the phenotype or not, but they cannot determine the cell type in which the risk-CpG site is affected by the phenotype. We propose a solid statistical method, HIgh REsolution (HIRE), which not only substantially improves the power of association detection at the aggregated level as compared to the existing methods but also enables the detection of risk-CpG sites for individual cell types. The "HIREewas" R package is to implement HIRE model in R.
+    """
 
-	version("1.26.0", commit="b6b4c73f91467965b56c3250d0fba920a883c863")
-	version("1.20.0", commit="f0e22366e1e5eae955465952c3e65499fc43af57")
+    bioc = "HIREewas"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-quadprog", type=("build", "run"))
-	depends_on("r-gplots", type=("build", "run"))
+    version("1.26.0", commit="b6b4c73f91467965b56c3250d0fba920a883c863")
+    version("1.20.0", commit="f0e22366e1e5eae955465952c3e65499fc43af57")
+
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-quadprog", type=("build", "run"))
+    depends_on("r-gplots", type=("build", "run"))

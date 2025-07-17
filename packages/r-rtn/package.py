@@ -7,29 +7,29 @@ from spack.package import *
 
 
 class RRtn(RPackage):
-	"""RTN: Reconstruction of Transcriptional regulatory Networks and analysis of regulons
+    """RTN: Reconstruction of Transcriptional regulatory Networks and analysis of regulons
 
-	A transcriptional regulatory network (TRN) consists of a collection of transcription factors (TFs) and the regulated target genes. TFs are regulators that recognize specific DNA sequences and guide the expression of the genome, either activating or repressing the expression the target genes. The set of genes controlled by the same TF forms a regulon. This package provides classes and methods for the reconstruction of TRNs and analysis of regulons.
-	"""
-	
-	homepage = "http://dx.doi.org/10.1038/ncomms3464"
-	bioc = "RTN"
+    A transcriptional regulatory network (TRN) consists of a collection of transcription factors (TFs) and the regulated target genes. TFs are regulators that recognize specific DNA sequences and guide the expression of the genome, either activating or repressing the expression the target genes. The set of genes controlled by the same TF forms a regulon. This package provides classes and methods for the reconstruction of TRNs and analysis of regulons.
+    """
 
-	version("2.32.0", commit="395d859fa11708c33449fa6e4093b4e04e097d94")
-	version("2.26.0", commit="f63f74863062d40d856bed2ab968a37b2f13a494")
+    homepage = "http://dx.doi.org/10.1038/ncomms3464"
+    bioc = "RTN"
 
-	depends_on("r@3.6.3:", type=("build", "run"))
-	depends_on("r-reder", type=("build", "run"))
-	depends_on("r-minet", type=("build", "run"))
-	depends_on("r-viper", type=("build", "run"))
-	depends_on("r-mixtools", type=("build", "run"))
-	depends_on("r-snow", type=("build", "run"))
-	depends_on("r-limma", type=("build", "run"))
-	depends_on("r-data-table", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-igraph", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-car", type=("build", "run"))
-	depends_on("r-pwr", type=("build", "run"))
-	depends_on("r-pheatmap", type=("build", "run"))
+    version("2.32.0", commit="395d859fa11708c33449fa6e4093b4e04e097d94")
+    version("2.26.0", commit="f63f74863062d40d856bed2ab968a37b2f13a494")
+
+    depends_on("r@3.6.3:", type=("build", "run"))
+    depends_on("r-reder", type=("build", "run"))
+    depends_on("r-minet", type=("build", "run"))
+    depends_on("r-viper", type=("build", "run"))
+    depends_on("r-mixtools", type=("build", "run"))
+    depends_on("r-snow", type=("build", "run"))
+    depends_on("r-limma", type=("build", "run"))
+    depends_on("r-data-table", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-igraph", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-car", type=("build", "run"))
+    depends_on("r-pwr", type=("build", "run"))
+    depends_on("r-pheatmap", type=("build", "run"))

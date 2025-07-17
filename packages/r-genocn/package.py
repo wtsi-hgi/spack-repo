@@ -7,13 +7,12 @@ from spack.package import *
 
 
 class RGenocn(RPackage):
-	"""genotyping and copy number study tools
+    """genotyping and copy number study tools
 
-	Simultaneous identification of copy number states and genotype calls for regions of either copy number variations or copy number aberrations
-	"""
-	
-	bioc = "genoCN"
+    Simultaneous identification of copy number states and genotype calls for regions of either copy number variations or copy number aberrations
+    """
 
-	version("1.60.0", commit="d875c71eb4c04137e24dbdeb0edb55ed0dcd7735")
-	version("1.54.0", commit="98243384501c57e00e793fdb9f9148920c74ca5e")
+    bioc = "genoCN"
 
+    version("1.60.0", commit="d875c71eb4c04137e24dbdeb0edb55ed0dcd7735")
+    version("1.54.0", commit="98243384501c57e00e793fdb9f9148920c74ca5e")

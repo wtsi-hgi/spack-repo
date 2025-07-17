@@ -7,17 +7,22 @@ from spack.package import *
 
 
 class RMgug4104aDb(RPackage):
-	"""Agilent annotation data (chip mgug4104a)
+    """Agilent annotation data (chip mgug4104a)
 
-	Agilent annotation data (chip mgug4104a) assembled using data from public repositories
-	"""
-	
-	bioc = "mgug4104a.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mgug4104a.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mgug4104a.db/mgug4104a.db_3.2.3.tar.gz"]
+    Agilent annotation data (chip mgug4104a) assembled using data from public repositories
+    """
 
-	version("3.2.3", sha256="e8b671514d2f0dfe722bf16ab2989c5ca37a5df72c51d7c40b78384707491aab")
+    bioc = "mgug4104a.db"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/mgug4104a.db_3.2.3.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/mgug4104a.db/mgug4104a.db_3.2.3.tar.gz",
+    ]
 
-	depends_on("r@2.7:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-org-mm-eg-db@3.3:", type=("build", "run"))
+    version(
+        "3.2.3",
+        sha256="e8b671514d2f0dfe722bf16ab2989c5ca37a5df72c51d7c40b78384707491aab",
+    )
 
+    depends_on("r@2.7:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-org-mm-eg-db@3.3:", type=("build", "run"))

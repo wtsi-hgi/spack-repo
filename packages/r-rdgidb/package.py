@@ -7,14 +7,14 @@ from spack.package import *
 
 
 class RRdgidb(RPackage):
-	"""R Wrapper for DGIdb
+    """R Wrapper for DGIdb
 
-	The rDGIdb package provides a wrapper for the Drug Gene Interaction Database (DGIdb). For simplicity, the wrapper query function and output resembles the user interface and results format provided on the DGIdb website (https://www.dgidb.org/).
-	"""
-	
-	bioc = "rDGIdb"
+    The rDGIdb package provides a wrapper for the Drug Gene Interaction Database (DGIdb). For simplicity, the wrapper query function and output resembles the user interface and results format provided on the DGIdb website (https://www.dgidb.org/).
+    """
 
-	version("1.28.0", commit="40237f4fa83e4dd6ab8b377a751e7c7720e0f162")
+    bioc = "rDGIdb"
 
-	depends_on("r-jsonlite", type=("build", "run"))
-	depends_on("r-httr", type=("build", "run"))
+    version("1.28.0", commit="40237f4fa83e4dd6ab8b377a751e7c7720e0f162")
+
+    depends_on("r-jsonlite", type=("build", "run"))
+    depends_on("r-httr", type=("build", "run"))

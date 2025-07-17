@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class ROmiccircos(RPackage):
-	"""High-quality circular visualization of omics data
+    """High-quality circular visualization of omics data
 
-	OmicCircos is an R application and package for generating high-quality circular plots for omics data.
-	"""
-	
-	bioc = "OmicCircos"
+    OmicCircos is an R application and package for generating high-quality circular plots for omics data.
+    """
 
-	version("1.46.0", commit="2e20fe3b6b0159138288862af7ebc462e8e5e3dc")
-	version("1.40.0", commit="9e358a5c8c0c54828830a3e66fafc9d60facea30")
+    bioc = "OmicCircos"
 
-	depends_on("r@2.14:", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
+    version("1.46.0", commit="2e20fe3b6b0159138288862af7ebc462e8e5e3dc")
+    version("1.40.0", commit="9e358a5c8c0c54828830a3e66fafc9d60facea30")
+
+    depends_on("r@2.14:", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))

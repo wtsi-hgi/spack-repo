@@ -7,15 +7,20 @@ from spack.package import *
 
 
 class RRatchrloc(RPackage):
-	"""A data package containing annotation data for ratCHRLOC
+    """A data package containing annotation data for ratCHRLOC
 
-	Annotation data file for ratCHRLOC assembled using data from public data repositories
-	"""
-	
-	bioc = "ratCHRLOC" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ratCHRLOC_2.1.6.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ratCHRLOC/ratCHRLOC_2.1.6.tar.gz"]
+    Annotation data file for ratCHRLOC assembled using data from public data repositories
+    """
 
-	version("2.1.6", sha256="4b5b0cc170320c97565ef5191f53c79b74ebacc101874ca0fc92b7bd3935f355")
+    bioc = "ratCHRLOC"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/ratCHRLOC_2.1.6.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/ratCHRLOC/ratCHRLOC_2.1.6.tar.gz",
+    ]
 
-	depends_on("r@2.7:", type=("build", "run"))
+    version(
+        "2.1.6",
+        sha256="4b5b0cc170320c97565ef5191f53c79b74ebacc101874ca0fc92b7bd3935f355",
+    )
 
+    depends_on("r@2.7:", type=("build", "run"))

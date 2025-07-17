@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class RMuscle(RPackage):
-	"""Multiple Sequence Alignment with MUSCLE
+    """Multiple Sequence Alignment with MUSCLE
 
-	MUSCLE performs multiple sequence alignments of nucleotide or amino acid sequences.
-	"""
-	
-	homepage = "http://www.drive5.com/muscle/"
-	bioc = "muscle"
+    MUSCLE performs multiple sequence alignments of nucleotide or amino acid sequences.
+    """
 
-	version("3.50.0", commit="165f68e45fd4c28e452867faab01491e11ce4b78")
-	version("3.44.0", commit="bebb424785add0eb586cec9ad56a14031f5bcf86")
+    homepage = "http://www.drive5.com/muscle/"
+    bioc = "muscle"
 
-	depends_on("r-biostrings", type=("build", "run"))
+    version("3.50.0", commit="165f68e45fd4c28e452867faab01491e11ce4b78")
+    version("3.44.0", commit="bebb424785add0eb586cec9ad56a14031f5bcf86")
+
+    depends_on("r-biostrings", type=("build", "run"))

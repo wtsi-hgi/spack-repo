@@ -7,17 +7,16 @@ from spack.package import *
 
 
 class RClustifyrdatahub(RPackage):
-	"""External data sets for clustifyr in ExperimentHub
+    """External data sets for clustifyr in ExperimentHub
 
-	References made from external single-cell mRNA sequencing data sets, stored as average gene expression matrices. For use with clustifyr <https://bioconductor.org/packages/clustifyr> to assign cell type identities.
-	"""
-	
-	homepage = "https://rnabioco.github.io/clustifyrdatahub/"
-	bioc = "clustifyrdatahub"
+    References made from external single-cell mRNA sequencing data sets, stored as average gene expression matrices. For use with clustifyr <https://bioconductor.org/packages/clustifyr> to assign cell type identities.
+    """
 
-	version("1.18.0", commit="cb13c46a1efbfc5d9aab984e4b695b64307b3a50")
-	version("1.12.0", commit="f55a9d9a06e85eac5632052973e6175491975b21")
+    homepage = "https://rnabioco.github.io/clustifyrdatahub/"
+    bioc = "clustifyrdatahub"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-experimenthub", type=("build", "run"))
+    version("1.18.0", commit="cb13c46a1efbfc5d9aab984e4b695b64307b3a50")
+    version("1.12.0", commit="f55a9d9a06e85eac5632052973e6175491975b21")
 
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-experimenthub", type=("build", "run"))

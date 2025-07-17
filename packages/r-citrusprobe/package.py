@@ -7,16 +7,21 @@ from spack.package import *
 
 
 class RCitrusprobe(RPackage):
-	"""Probe sequence data for microarrays of type citrus
+    """Probe sequence data for microarrays of type citrus
 
-	This package was automatically created by package AnnotationForge version 1.11.21. The probe sequence data was obtained from http://www.affymetrix.com. The file name was Citrus_probe_tab.
-	"""
-	
-	bioc = "citrusprobe" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/citrusprobe_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/citrusprobe/citrusprobe_2.18.0.tar.gz"]
+    This package was automatically created by package AnnotationForge version 1.11.21. The probe sequence data was obtained from http://www.affymetrix.com. The file name was Citrus_probe_tab.
+    """
 
-	version("2.18.0", sha256="07ad0cd13bbe36fb2336efc3c025c8db5badb0d77c0449f4e39d991158e4c12d")
+    bioc = "citrusprobe"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/citrusprobe_2.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/citrusprobe/citrusprobe_2.18.0.tar.gz",
+    ]
 
-	depends_on("r@1.6:", type=("build", "run"))
-	depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))
+    version(
+        "2.18.0",
+        sha256="07ad0cd13bbe36fb2336efc3c025c8db5badb0d77c0449f4e39d991158e4c12d",
+    )
 
+    depends_on("r@1.6:", type=("build", "run"))
+    depends_on("r-annotationdbi@1.11.21:", type=("build", "run"))

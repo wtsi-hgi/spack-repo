@@ -7,15 +7,14 @@ from spack.package import *
 
 
 class RTofsimsdata(RPackage):
-	"""Import, process and analysis of ToF-SIMS imaging data
+    """Import, process and analysis of ToF-SIMS imaging data
 
-	This packages contains data to be used with the 'tofsims' package.
-	"""
-	
-	bioc = "tofsimsData"
+    This packages contains data to be used with the 'tofsims' package.
+    """
 
-	version("1.36.0", commit="6433badf6aba1319a2ae0c67399310ec0af2e271")
-	version("1.30.0", commit="cb3768dc1177ffcb5345642acd30437b84eb6721")
+    bioc = "tofsimsData"
 
-	depends_on("r@3.2:", type=("build", "run"))
+    version("1.36.0", commit="6433badf6aba1319a2ae0c67399310ec0af2e271")
+    version("1.30.0", commit="cb3768dc1177ffcb5345642acd30437b84eb6721")
 
+    depends_on("r@3.2:", type=("build", "run"))

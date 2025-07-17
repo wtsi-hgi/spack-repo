@@ -7,14 +7,13 @@ from spack.package import *
 
 
 class RSeqcnaAnnot(RPackage):
-	"""Annotation for the copy number analysis of deep sequencing cancer data with seqCNA
+    """Annotation for the copy number analysis of deep sequencing cancer data with seqCNA
 
-	Provides annotation on GC content, mappability and genomic features for various genomes
-	"""
-	
-	bioc = "seqCNA.annot"
+    Provides annotation on GC content, mappability and genomic features for various genomes
+    """
 
-	version("1.38.0", commit="d8179ef4ea93e1dc2d8b868c77bf105789d8e5a4")
+    bioc = "seqCNA.annot"
 
-	depends_on("r@2.10:", type=("build", "run"))
+    version("1.38.0", commit="d8179ef4ea93e1dc2d8b868c77bf105789d8e5a4")
 
+    depends_on("r@2.10:", type=("build", "run"))

@@ -7,21 +7,21 @@ from spack.package import *
 
 
 class RChihaya(RPackage):
-	"""Save Delayed Operations to a HDF5 File
+    """Save Delayed Operations to a HDF5 File
 
-	Saves the delayed operations of a DelayedArray to a HDF5 file. This enables efficient recovery of the DelayedArray's contents in other languages and analysis frameworks.
-	"""
-	
-	homepage = "https://github.com/ArtifactDB/chihaya-R"
-	bioc = "chihaya"
+    Saves the delayed operations of a DelayedArray to a HDF5 file. This enables efficient recovery of the DelayedArray's contents in other languages and analysis frameworks.
+    """
 
-	version("1.8.0", commit="f3454e1ab4e0460d316dc64b1269987a232f1615")
-	version("1.2.0", commit="180da647fe1bac5f3a3dfe79d056ebbe526005a5")
+    homepage = "https://github.com/ArtifactDB/chihaya-R"
+    bioc = "chihaya"
 
-	depends_on("r-delayedarray", type=("build", "run"))
-	depends_on("r-matrix", type=("build", "run"))
-	depends_on("r-rhdf5", type=("build", "run"))
-	depends_on("r-rcpp", type=("build", "run"))
-	depends_on("r-hdf5array", type=("build", "run"))
-	depends_on("r-rhdf5lib", type=("build", "run"))
-	depends_on("zlib", type=("build", "link", "run"))
+    version("1.8.0", commit="f3454e1ab4e0460d316dc64b1269987a232f1615")
+    version("1.2.0", commit="180da647fe1bac5f3a3dfe79d056ebbe526005a5")
+
+    depends_on("r-delayedarray", type=("build", "run"))
+    depends_on("r-matrix", type=("build", "run"))
+    depends_on("r-rhdf5", type=("build", "run"))
+    depends_on("r-rcpp", type=("build", "run"))
+    depends_on("r-hdf5array", type=("build", "run"))
+    depends_on("r-rhdf5lib", type=("build", "run"))
+    depends_on("zlib", type=("build", "link", "run"))

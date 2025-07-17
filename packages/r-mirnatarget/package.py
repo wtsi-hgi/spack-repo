@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RMirnatarget(RPackage):
-	"""gene target tabale of miRNA for human/mouse used for MiRaGE package
+    """gene target tabale of miRNA for human/mouse used for MiRaGE package
 
-	gene target tabale of miRNA for human/mouse used for MiRaGE package
-	"""
-	
-	bioc = "miRNATarget"
+    gene target tabale of miRNA for human/mouse used for MiRaGE package
+    """
 
-	version("1.46.0", commit="cf3a85a06b24089ecb4d55c375a25dbcbba1ba45")
-	version("1.40.0", commit="f29b74050b61c41b5ede0e0600fd132fb6c81731")
+    bioc = "miRNATarget"
 
-	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
+    version("1.46.0", commit="cf3a85a06b24089ecb4d55c375a25dbcbba1ba45")
+    version("1.40.0", commit="f29b74050b61c41b5ede0e0600fd132fb6c81731")
 
+    depends_on("r@2.10:", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))

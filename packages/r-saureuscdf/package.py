@@ -7,15 +7,20 @@ from spack.package import *
 
 
 class RSaureuscdf(RPackage):
-	"""saureuscdf
+    """saureuscdf
 
-	A package containing an environment representing the S_aureus.cdf file.
-	"""
-	
-	bioc = "saureuscdf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/saureuscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/saureuscdf/saureuscdf_2.18.0.tar.gz"]
+    A package containing an environment representing the S_aureus.cdf file.
+    """
 
-	version("2.18.0", sha256="3209ab583be2be7e7eaf286a0b577b41bb31c172042a21b0aaff3710bc1bb56e")
+    bioc = "saureuscdf"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/saureuscdf_2.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/saureuscdf/saureuscdf_2.18.0.tar.gz",
+    ]
 
-	depends_on("r-annotationdbi", type=("build", "run"))
+    version(
+        "2.18.0",
+        sha256="3209ab583be2be7e7eaf286a0b577b41bb31c172042a21b0aaff3710bc1bb56e",
+    )
 
+    depends_on("r-annotationdbi", type=("build", "run"))

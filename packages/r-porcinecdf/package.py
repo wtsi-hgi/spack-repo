@@ -7,15 +7,20 @@ from spack.package import *
 
 
 class RPorcinecdf(RPackage):
-	"""porcinecdf
+    """porcinecdf
 
-	A package containing an environment representing the Porcine.cdf file.
-	"""
-	
-	bioc = "porcinecdf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/porcinecdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/porcinecdf/porcinecdf_2.18.0.tar.gz"]
+    A package containing an environment representing the Porcine.cdf file.
+    """
 
-	version("2.18.0", sha256="5b3364ee3c4db2d06da14ce98acfdca926097cde75ad0a2b506b8d690b7c8bfb")
+    bioc = "porcinecdf"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/porcinecdf_2.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/porcinecdf/porcinecdf_2.18.0.tar.gz",
+    ]
 
-	depends_on("r-annotationdbi", type=("build", "run"))
+    version(
+        "2.18.0",
+        sha256="5b3364ee3c4db2d06da14ce98acfdca926097cde75ad0a2b506b8d690b7c8bfb",
+    )
 
+    depends_on("r-annotationdbi", type=("build", "run"))

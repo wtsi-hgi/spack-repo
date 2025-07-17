@@ -7,27 +7,27 @@ from spack.package import *
 
 
 class RRecount(RPackage):
-	"""Explore and download data from the recount project
+    """Explore and download data from the recount project
 
-	Explore and download data from the recount project available at https://jhubiostatistics.shinyapps.io/recount/. Using the recount package you can download RangedSummarizedExperiment objects at the gene, exon or exon-exon junctions level, the raw counts, the phenotype metadata used, the urls to the sample coverage bigWig files or the mean coverage bigWig file for a particular study. The RangedSummarizedExperiment objects can be used by different packages for performing differential expression analysis. Using http://bioconductor.org/packages/derfinder you can perform annotation-agnostic differential expression analyses with the data from the recount project as described at http://www.nature.com/nbt/journal/v35/n4/full/nbt.3838.html.
-	"""
-	
-	homepage = "https://github.com/leekgroup/recount"
-	bioc = "recount"
+    Explore and download data from the recount project available at https://jhubiostatistics.shinyapps.io/recount/. Using the recount package you can download RangedSummarizedExperiment objects at the gene, exon or exon-exon junctions level, the raw counts, the phenotype metadata used, the urls to the sample coverage bigWig files or the mean coverage bigWig file for a particular study. The RangedSummarizedExperiment objects can be used by different packages for performing differential expression analysis. Using http://bioconductor.org/packages/derfinder you can perform annotation-agnostic differential expression analyses with the data from the recount project as described at http://www.nature.com/nbt/journal/v35/n4/full/nbt.3838.html.
+    """
 
-	version("1.34.0", commit="d3a87e13af36f63b4f8561c85370e4cbb3511138")
-	version("1.28.0", commit="59168725fc3a40d82bc9c4fa29b86b798e0e3c45")
+    homepage = "https://github.com/leekgroup/recount"
+    bioc = "recount"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-biocparallel", type=("build", "run"))
-	depends_on("r-derfinder", type=("build", "run"))
-	depends_on("r-downloader", type=("build", "run"))
-	depends_on("r-geoquery", type=("build", "run"))
-	depends_on("r-genomeinfodb", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-rcurl", type=("build", "run"))
-	depends_on("r-rentrez", type=("build", "run"))
-	depends_on("r-rtracklayer@1.35.3:", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
+    version("1.34.0", commit="d3a87e13af36f63b4f8561c85370e4cbb3511138")
+    version("1.28.0", commit="59168725fc3a40d82bc9c4fa29b86b798e0e3c45")
+
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-biocparallel", type=("build", "run"))
+    depends_on("r-derfinder", type=("build", "run"))
+    depends_on("r-downloader", type=("build", "run"))
+    depends_on("r-geoquery", type=("build", "run"))
+    depends_on("r-genomeinfodb", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-rcurl", type=("build", "run"))
+    depends_on("r-rentrez", type=("build", "run"))
+    depends_on("r-rtracklayer@1.35.3:", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))

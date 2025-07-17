@@ -7,15 +7,21 @@ from spack.package import *
 
 
 class RBsgenomeVviniferaUrgiIggp12xv0(RPackage):
-	"""Full reference nuclear genome sequences for Vitis vinifera subsp. vinifera PN40024 (IGGP version 12Xv0)
+    """Full reference nuclear genome sequences for Vitis vinifera subsp. vinifera PN40024 (IGGP version 12Xv0)
 
-	Full reference nuclear genome sequences for Vitis vinifera subsp. vinifera PN40024 (derived from Pinot Noir and close to homozygosity after 6-9 rounds of selfing) as assembled by the IGGP (version 12Xv0) and available at the URGI (INRA)
-	"""
-	
-	bioc = "BSgenome.Vvinifera.URGI.IGGP12Xv0" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Vvinifera.URGI.IGGP12Xv0_0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Vvinifera.URGI.IGGP12Xv0/BSgenome.Vvinifera.URGI.IGGP12Xv0_0.1.tar.gz"]
+    Full reference nuclear genome sequences for Vitis vinifera subsp. vinifera PN40024 (derived from Pinot Noir and close to homozygosity after 6-9 rounds of selfing) as assembled by the IGGP (version 12Xv0) and available at the URGI (INRA)
+    """
 
-	version("0.1", sha256="ae7b0087caa3a7bb274f6d489371217edeee85f3eea2c5180c491c8de3c415d5", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Vvinifera.URGI.IGGP12Xv0_0.1.tar.gz")
+    bioc = "BSgenome.Vvinifera.URGI.IGGP12Xv0"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Vvinifera.URGI.IGGP12Xv0_0.1.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/BSgenome.Vvinifera.URGI.IGGP12Xv0/BSgenome.Vvinifera.URGI.IGGP12Xv0_0.1.tar.gz",
+    ]
 
-	depends_on("r-bsgenome", type=("build", "run"))
+    version(
+        "0.1",
+        sha256="ae7b0087caa3a7bb274f6d489371217edeee85f3eea2c5180c491c8de3c415d5",
+        url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Vvinifera.URGI.IGGP12Xv0_0.1.tar.gz",
+    )
 
+    depends_on("r-bsgenome", type=("build", "run"))

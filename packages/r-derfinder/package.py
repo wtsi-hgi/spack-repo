@@ -7,31 +7,31 @@ from spack.package import *
 
 
 class RDerfinder(RPackage):
-	"""Annotation-agnostic differential expression analysis of RNA-seq data at base-pair resolution via the DER Finder approach
+    """Annotation-agnostic differential expression analysis of RNA-seq data at base-pair resolution via the DER Finder approach
 
-	This package provides functions for annotation-agnostic differential expression analysis of RNA-seq data. Two implementations of the DER Finder approach are included in this package: (1) single base-level F-statistics and (2) DER identification at the expressed regions-level. The DER Finder approach can also be used to identify differentially bounded ChIP-seq peaks.
-	"""
-	
-	homepage = "https://github.com/lcolladotor/derfinder"
-	bioc = "derfinder"
+    This package provides functions for annotation-agnostic differential expression analysis of RNA-seq data. Two implementations of the DER Finder approach are included in this package: (1) single base-level F-statistics and (2) DER identification at the expressed regions-level. The DER Finder approach can also be used to identify differentially bounded ChIP-seq peaks.
+    """
 
-	version("1.42.0", commit="141c644f22da3945ef001cbbd2b58d0beac3202f")
-	version("1.36.0", commit="9bc4cd5a296ffa23cd28984d1bab10caa0a1fd03")
+    homepage = "https://github.com/lcolladotor/derfinder"
+    bioc = "derfinder"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-biocgenerics@0.25.1:", type=("build", "run"))
-	depends_on("r-annotationdbi@1.27.9:", type=("build", "run"))
-	depends_on("r-biocparallel@1.15.15:", type=("build", "run"))
-	depends_on("r-bumphunter@1.9.2:", type=("build", "run"))
-	depends_on("r-derfinderhelper@1.1:", type=("build", "run"))
-	depends_on("r-genomeinfodb@1.3.3:", type=("build", "run"))
-	depends_on("r-genomicalignments", type=("build", "run"))
-	depends_on("r-genomicfeatures", type=("build", "run"))
-	depends_on("r-genomicfiles", type=("build", "run"))
-	depends_on("r-genomicranges@1.17.40:", type=("build", "run"))
-	depends_on("r-hmisc", type=("build", "run"))
-	depends_on("r-iranges@2.3.23:", type=("build", "run"))
-	depends_on("r-qvalue@1.99:", type=("build", "run"))
-	depends_on("r-rsamtools@1.25:", type=("build", "run"))
-	depends_on("r-rtracklayer", type=("build", "run"))
-	depends_on("r-s4vectors@0.23.19:", type=("build", "run"))
+    version("1.42.0", commit="141c644f22da3945ef001cbbd2b58d0beac3202f")
+    version("1.36.0", commit="9bc4cd5a296ffa23cd28984d1bab10caa0a1fd03")
+
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-biocgenerics@0.25.1:", type=("build", "run"))
+    depends_on("r-annotationdbi@1.27.9:", type=("build", "run"))
+    depends_on("r-biocparallel@1.15.15:", type=("build", "run"))
+    depends_on("r-bumphunter@1.9.2:", type=("build", "run"))
+    depends_on("r-derfinderhelper@1.1:", type=("build", "run"))
+    depends_on("r-genomeinfodb@1.3.3:", type=("build", "run"))
+    depends_on("r-genomicalignments", type=("build", "run"))
+    depends_on("r-genomicfeatures", type=("build", "run"))
+    depends_on("r-genomicfiles", type=("build", "run"))
+    depends_on("r-genomicranges@1.17.40:", type=("build", "run"))
+    depends_on("r-hmisc", type=("build", "run"))
+    depends_on("r-iranges@2.3.23:", type=("build", "run"))
+    depends_on("r-qvalue@1.99:", type=("build", "run"))
+    depends_on("r-rsamtools@1.25:", type=("build", "run"))
+    depends_on("r-rtracklayer", type=("build", "run"))
+    depends_on("r-s4vectors@0.23.19:", type=("build", "run"))

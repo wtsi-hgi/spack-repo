@@ -7,15 +7,20 @@ from spack.package import *
 
 
 class RBsubtiliscdf(RPackage):
-	"""bsubtiliscdf
+    """bsubtiliscdf
 
-	A package containing an environment representing the Bsubtilis.CDF file.
-	"""
-	
-	bioc = "bsubtiliscdf" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/bsubtiliscdf_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/bsubtiliscdf/bsubtiliscdf_2.18.0.tar.gz"]
+    A package containing an environment representing the Bsubtilis.CDF file.
+    """
 
-	version("2.18.0", sha256="d4c7c19981cf2e5803090c53dc53ccf898ab917add928c614e649d51a3cc30e6")
+    bioc = "bsubtiliscdf"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/bsubtiliscdf_2.18.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/bsubtiliscdf/bsubtiliscdf_2.18.0.tar.gz",
+    ]
 
-	depends_on("r-annotationdbi", type=("build", "run"))
+    version(
+        "2.18.0",
+        sha256="d4c7c19981cf2e5803090c53dc53ccf898ab917add928c614e649d51a3cc30e6",
+    )
 
+    depends_on("r-annotationdbi", type=("build", "run"))

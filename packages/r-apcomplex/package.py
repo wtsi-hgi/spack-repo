@@ -7,18 +7,18 @@ from spack.package import *
 
 
 class RApcomplex(RPackage):
-	"""Estimate protein complex membership using AP-MS protein data
+    """Estimate protein complex membership using AP-MS protein data
 
-	Functions to estimate a bipartite graph of protein complex membership using AP-MS data.
-	"""
-	
-	bioc = "apComplex"
+    Functions to estimate a bipartite graph of protein complex membership using AP-MS data.
+    """
 
-	version("2.74.0", commit="9807e96c621ee1ba58d62e744eceb00028e58607")
-	version("2.68.0", commit="f64e085ff88f473c03ed09a69299b61b3a0902a4")
+    bioc = "apComplex"
 
-	depends_on("r@2.10:", type=("build", "run"))
-	depends_on("r-graph", type=("build", "run"))
-	depends_on("r-rbgl", type=("build", "run"))
-	depends_on("r-rgraphviz", type=("build", "run"))
-	depends_on("r-org-sc-sgd-db", type=("build", "run"))
+    version("2.74.0", commit="9807e96c621ee1ba58d62e744eceb00028e58607")
+    version("2.68.0", commit="f64e085ff88f473c03ed09a69299b61b3a0902a4")
+
+    depends_on("r@2.10:", type=("build", "run"))
+    depends_on("r-graph", type=("build", "run"))
+    depends_on("r-rbgl", type=("build", "run"))
+    depends_on("r-rgraphviz", type=("build", "run"))
+    depends_on("r-org-sc-sgd-db", type=("build", "run"))

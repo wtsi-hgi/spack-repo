@@ -7,26 +7,26 @@ from spack.package import *
 
 
 class RCfdnakit(RPackage):
-	"""Fragmen-length analysis package from high-throughput sequencing of cell-free DNA (cfDNA)
+    """Fragmen-length analysis package from high-throughput sequencing of cell-free DNA (cfDNA)
 
-	This package provides basic functions for analyzing shallow whole-genome sequencing (~0.3X or more) of cell-free DNA (cfDNA). The package basically extracts the length of cfDNA fragments and aids the vistualization of fragment-length information. The package also extract fragment-length information per non-overlapping fixed-sized bins and used it for calculating ctDNA estimation score (CES).
-	"""
-	
-	bioc = "cfdnakit"
+    This package provides basic functions for analyzing shallow whole-genome sequencing (~0.3X or more) of cell-free DNA (cfDNA). The package basically extracts the length of cfDNA fragments and aids the vistualization of fragment-length information. The package also extract fragment-length information per non-overlapping fixed-sized bins and used it for calculating ctDNA estimation score (CES).
+    """
 
-	version("1.6.0", commit="043fb3219bd7cc35ab12f8e30bfa7c41647c0656")
-	version("1.0.0", md5="967a84e96d20af4a0256e117afe272b7")
+    bioc = "cfdnakit"
 
-	depends_on("r@4.3:", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-genomeinfodb", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-magrittr", type=("build", "run"))
-	depends_on("r-pscbs", type=("build", "run"))
-	depends_on("r-qdnaseq", type=("build", "run"))
-	depends_on("r-rsamtools", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
+    version("1.6.0", commit="043fb3219bd7cc35ab12f8e30bfa7c41647c0656")
+    version("1.0.0", md5="967a84e96d20af4a0256e117afe272b7")
+
+    depends_on("r@4.3:", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-genomeinfodb", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))
+    depends_on("r-pscbs", type=("build", "run"))
+    depends_on("r-qdnaseq", type=("build", "run"))
+    depends_on("r-rsamtools", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-rlang", type=("build", "run"))

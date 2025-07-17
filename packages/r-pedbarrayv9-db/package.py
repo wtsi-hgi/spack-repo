@@ -7,17 +7,22 @@ from spack.package import *
 
 
 class RPedbarrayv9Db(RPackage):
-	"""FHCRC Nelson Lab pedbarrayv9 Annotation Data (pedbarrayv9)
+    """FHCRC Nelson Lab pedbarrayv9 Annotation Data (pedbarrayv9)
 
-	FHCRC Nelson Lab pedbarrayv9 Annotation Data (pedbarrayv9) assembled using data from public repositories
-	"""
-	
-	bioc = "pedbarrayv9.db" 
-	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pedbarrayv9.db_3.2.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pedbarrayv9.db/pedbarrayv9.db_3.2.3.tar.gz"]
+    FHCRC Nelson Lab pedbarrayv9 Annotation Data (pedbarrayv9) assembled using data from public repositories
+    """
 
-	version("3.2.3", sha256="97caba47e4ba80ce005881120235e09749ca1dad5b11228a040cb66a494d3575")
+    bioc = "pedbarrayv9.db"
+    urls = [
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/pedbarrayv9.db_3.2.3.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/pedbarrayv9.db/pedbarrayv9.db_3.2.3.tar.gz",
+    ]
 
-	depends_on("r@2.7:", type=("build", "run"))
-	depends_on("r-annotationdbi", type=("build", "run"))
-	depends_on("r-org-hs-eg-db@3.3:", type=("build", "run"))
+    version(
+        "3.2.3",
+        sha256="97caba47e4ba80ce005881120235e09749ca1dad5b11228a040cb66a494d3575",
+    )
 
+    depends_on("r@2.7:", type=("build", "run"))
+    depends_on("r-annotationdbi", type=("build", "run"))
+    depends_on("r-org-hs-eg-db@3.3:", type=("build", "run"))

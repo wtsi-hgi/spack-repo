@@ -7,15 +7,14 @@ from spack.package import *
 
 
 class RCmap2data(RPackage):
-	"""Connectivity Map (version 2) Data
+    """Connectivity Map (version 2) Data
 
-	Data package which provides default drug profiles for the DrugVsDisease package as well as associated gene lists and data clusters used by the DrugVsDisease package.
-	"""
-	
-	bioc = "cMap2data"
+    Data package which provides default drug profiles for the DrugVsDisease package as well as associated gene lists and data clusters used by the DrugVsDisease package.
+    """
 
-	version("1.44.0", commit="ab401ed513864172e14c508ca54e90eb6862b385")
-	version("1.38.0", commit="39393da6a237dd70abd087419bd255e99ff2679b")
+    bioc = "cMap2data"
 
-	depends_on("r@2.10:", type=("build", "run"))
+    version("1.44.0", commit="ab401ed513864172e14c508ca54e90eb6862b385")
+    version("1.38.0", commit="39393da6a237dd70abd087419bd255e99ff2679b")
 
+    depends_on("r@2.10:", type=("build", "run"))

@@ -7,16 +7,16 @@ from spack.package import *
 
 
 class RBus(RPackage):
-	"""Gene network reconstruction
+    """Gene network reconstruction
 
-	This package can be used to compute associations among genes (gene-networks) or between genes and some external traits (i.e. clinical).
-	"""
-	
-	bioc = "BUS"
+    This package can be used to compute associations among genes (gene-networks) or between genes and some external traits (i.e. clinical).
+    """
 
-	version("1.64.0", commit="bdf79c3a9a27bd6ad0011e2dbf4fd4dee3703eb8")
-	version("1.58.0", commit="9dcf16ab8b98421d17fc83d6bb9499932adbf04f")
+    bioc = "BUS"
 
-	depends_on("r@2.3:", type=("build", "run"))
-	depends_on("r-minet", type=("build", "run"))
-	depends_on("r-infotheo", type=("build", "run"))
+    version("1.64.0", commit="bdf79c3a9a27bd6ad0011e2dbf4fd4dee3703eb8")
+    version("1.58.0", commit="9dcf16ab8b98421d17fc83d6bb9499932adbf04f")
+
+    depends_on("r@2.3:", type=("build", "run"))
+    depends_on("r-minet", type=("build", "run"))
+    depends_on("r-infotheo", type=("build", "run"))

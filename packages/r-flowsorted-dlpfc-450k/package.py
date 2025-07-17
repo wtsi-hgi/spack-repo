@@ -7,16 +7,15 @@ from spack.package import *
 
 
 class RFlowsortedDlpfc450k(RPackage):
-	"""Illumina HumanMethylation data on sorted frontal cortex cell populations
+    """Illumina HumanMethylation data on sorted frontal cortex cell populations
 
-	Raw data objects for the Illumina 450k DNA methylation microarrays.
-	"""
-	
-	bioc = "FlowSorted.DLPFC.450k"
+    Raw data objects for the Illumina 450k DNA methylation microarrays.
+    """
 
-	version("1.44.0", commit="b6d17ffc54eebf0f4ec5cc2523caac7405217503")
-	version("1.38.0", commit="b5b90bb3d4be912181d46caf138b03cc2dfac83a")
+    bioc = "FlowSorted.DLPFC.450k"
 
-	depends_on("r@3.5:", type=("build", "run"))
-	depends_on("r-minfi@1.21.2:", type=("build", "run"))
+    version("1.44.0", commit="b6d17ffc54eebf0f4ec5cc2523caac7405217503")
+    version("1.38.0", commit="b5b90bb3d4be912181d46caf138b03cc2dfac83a")
 
+    depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-minfi@1.21.2:", type=("build", "run"))

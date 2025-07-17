@@ -7,26 +7,26 @@ from spack.package import *
 
 
 class RIseehub(RPackage):
-	"""iSEE for the Bioconductor ExperimentHub
+    """iSEE for the Bioconductor ExperimentHub
 
-	This package defines a custom landing page for an iSEE app interfacing with the Bioconductor ExperimentHub. The landing page allows users to browse the ExperimentHub, select a data set, download and cache it, and import it directly into a Bioconductor iSEE app.
-	"""
-	
-	homepage = "https://github.com/iSEE/iSEEhub"
-	bioc = "iSEEhub"
+    This package defines a custom landing page for an iSEE app interfacing with the Bioconductor ExperimentHub. The landing page allows users to browse the ExperimentHub, select a data set, download and cache it, and import it directly into a Bioconductor iSEE app.
+    """
 
-	version("1.10.0", commit="ab10e39692cc0e74c3ad32f1fb54d17d1c04fe2f")
-	version("1.4.0", commit="a3ff71ccc3b1a783134d16697c3001effca24ab1")
+    homepage = "https://github.com/iSEE/iSEEhub"
+    bioc = "iSEEhub"
 
-	depends_on("r-summarizedexperiment", type=("build", "run"))
-	depends_on("r-singlecellexperiment", type=("build", "run"))
-	depends_on("r-experimenthub", type=("build", "run"))
-	depends_on("r-annotationhub", type=("build", "run"))
-	depends_on("r-biocmanager", type=("build", "run"))
-	depends_on("r-dt", type=("build", "run"))
-	depends_on("r-isee", type=("build", "run"))
-	depends_on("r-rintrojs", type=("build", "run"))
-	depends_on("r-s4vectors", type=("build", "run"))
-	depends_on("r-shiny", type=("build", "run"))
-	depends_on("r-shinydashboard", type=("build", "run"))
-	depends_on("r-shinyjs", type=("build", "run"))
+    version("1.10.0", commit="ab10e39692cc0e74c3ad32f1fb54d17d1c04fe2f")
+    version("1.4.0", commit="a3ff71ccc3b1a783134d16697c3001effca24ab1")
+
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-singlecellexperiment", type=("build", "run"))
+    depends_on("r-experimenthub", type=("build", "run"))
+    depends_on("r-annotationhub", type=("build", "run"))
+    depends_on("r-biocmanager", type=("build", "run"))
+    depends_on("r-dt", type=("build", "run"))
+    depends_on("r-isee", type=("build", "run"))
+    depends_on("r-rintrojs", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-shiny", type=("build", "run"))
+    depends_on("r-shinydashboard", type=("build", "run"))
+    depends_on("r-shinyjs", type=("build", "run"))

@@ -7,15 +7,15 @@ from spack.package import *
 
 
 class RMultiscan(RPackage):
-	"""R package for combining multiple scans
+    """R package for combining multiple scans
 
-	Estimates gene expressions from several laser scans of the same microarray
-	"""
-	
-	bioc = "multiscan"
+    Estimates gene expressions from several laser scans of the same microarray
+    """
 
-	version("1.68.0", commit="3e3032f5934871ce9db7044de62c28ed6a39ae20")
-	version("1.62.0", commit="d7898040e578f1184715741dec5a7bedb4c6c9c1")
+    bioc = "multiscan"
 
-	depends_on("r@2.3:", type=("build", "run"))
-	depends_on("r-biobase", type=("build", "run"))
+    version("1.68.0", commit="3e3032f5934871ce9db7044de62c28ed6a39ae20")
+    version("1.62.0", commit="d7898040e578f1184715741dec5a7bedb4c6c9c1")
+
+    depends_on("r@2.3:", type=("build", "run"))
+    depends_on("r-biobase", type=("build", "run"))
