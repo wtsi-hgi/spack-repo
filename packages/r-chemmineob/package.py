@@ -13,7 +13,8 @@ class RChemmineob(RPackage):
 	"""
 
 	homepage = "https://github.com/girke-lab/ChemmineOB"
-	bioc = "ChemmineOB"version("1.46.0", commit="3c9cfd857a4b858afa48a74b612b4532b0281f13")
+	bioc = "ChemmineOB"
+    version("1.46.0", commit="3c9cfd857a4b858afa48a74b612b4532b0281f13")
 	version("1.40.0", commit="56dd1da900279e1dc39d9ac5136635b0236ab141")
 
 	depends_on("r@2.15.1:", type=("build", "run"))
