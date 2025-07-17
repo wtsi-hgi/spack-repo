@@ -16,7 +16,8 @@ class RBeachmat(RPackage):
     matrices are handled by DelayedArray block processing."""
 
     bioc = "beachmat"
-    git = "https://git.bioconductor.org/packages/beachmat"version("2.6.4", commit="7d9dc6379017d723dda3e8dc9fd1f6de7fd33cdb")
+    git = "https://git.bioconductor.org/packages/beachmat"
+    version("2.6.4", commit="7d9dc6379017d723dda3e8dc9fd1f6de7fd33cdb")
     version("2.24.0", commit="171ce0e4181f4b312746d8f7b1952fa0afa782dc")
     version("2.18.1", commit="39ef12f2aa1bbc2d057aa90c1964e67e8c5c5715")
     version("2.16.0", commit="4cc8e50dcae767a2ef84ffc7a581ea182f05f300")

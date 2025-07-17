@@ -11,7 +11,8 @@ class RBiocgenerics(RPackage):
 
     The package defines S4 generic functions used in Bioconductor."""
 
-    bioc = "BiocGenerics"version("0.54.0", commit="75c48153ee2c28f84cd0625ed3ca1aaf8eb74211")
+    bioc = "BiocGenerics"
+    version("0.54.0", commit="75c48153ee2c28f84cd0625ed3ca1aaf8eb74211")
     version("0.48.1", commit="5fd6dfe93786292484dc53023ec681391f4559e0")
     version("0.46.0", commit="a90f0c5976a24417e47e009ba602fc98515ac9ab")
     version("0.44.0", commit="d7cd9c19958bd8d4573d980494188fa15ab16e45")
