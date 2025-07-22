@@ -4,7 +4,8 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 from spack.package import *
-
+import os
+import shutil
 
 class RCytolib(RPackage):
     """C++ infrastructure for representing and interacting with the gated cytometry data
@@ -23,30 +24,7 @@ class RCytolib(RPackage):
     depends_on("r-rhdf5lib", type=("build", "run"))
     depends_on("boost@1.72.0:+filesystem+system", type=("build", "link", "run"))
 
-    def setup_build_environment(self, env):
-        env.set("CPATH", self.spec["boost"].prefix.include)
-        env.set("CXXFLAGS", "-I" + self.spec["boost"].prefix.include)
-        env.set("PKG_CXXFLAGS", "-I" + self.spec["boost"].prefix.include)
-        env.set("PKG_LIBS", "-L" + self.spec["boost"].prefix.lib + " -lboost_filesystem -lboost_system")
-
     def patch(self):
-        # Create a Makevars file to include Boost headers and libraries
-        makevars_content = f"""
-PKG_CXXFLAGS = -I{self.spec['boost'].prefix.include}
-PKG_LIBS = -L{self.spec['boost'].prefix.lib} -lboost_filesystem -lboost_system
-"""
-        with open("src/Makevars", "w") as f:
-            f.write(makevars_content)
-        
-        # Also create a Makevars.win file for Windows compatibility
-        with open("src/Makevars.win", "w") as f:
-            f.write(makevars_content)
-
-        # Disable bundled Boost filesystem to use system Boost instead
-        import os
-        import shutil
-        
-        # Remove the bundled Boost filesystem source files to force use of system Boost
         bundled_boost_dir = "src/boost"
         if os.path.exists(bundled_boost_dir):
             shutil.rmtree(bundled_boost_dir)
