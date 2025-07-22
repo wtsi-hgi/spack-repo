@@ -12,6 +12,7 @@ class RBiocversion(RPackage):
     This package provides repository information for the appropriate
     version of Bioconductor."""
 
+	version("3.21.1", commit="1e5e5afe88e423e3923ab9a527f62a760278052e")
     version("3.18.1", commit="70680b8e1f121361244f4755e5c3ec384b5a6a3a")
     version("3.17.1", commit="a2d0c4c489be1cafdb51bf8d205161429b09ac7f")
     version("3.16.0", commit="c681e06fe30ea6815f958c1a3c74c090863680ba")
@@ -19,6 +20,8 @@ class RBiocversion(RPackage):
     version("3.14.0", commit="aa56d93d0ea5dcdbf301f120502981740fd91e1e")
     version("3.12.0", commit="23b971963c6b73550a7e330dab5a046d58ce0223")
 
-    bioc = "BiocVersion"
+	bioc = "BiocVersion"
 
-    depends_on("r@4.3:", type=("build", "run"))
+
+	depends_on("r@4.3:", type=("build", "run"))
+	depends_on("r@4.5:", type=("build", "run"), when="@3.21:")

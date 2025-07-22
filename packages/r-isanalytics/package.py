@@ -15,9 +15,11 @@ class RIsanalytics(RPackage):
     homepage = "https://calabrialab.github.io/ISAnalytics"
     bioc = "ISAnalytics"
 
+    version("1.18.0", commit="6c722167d420ab695d31721510fcd5f0cb9abc24")
     version("1.12.0", commit="9486ad04aa4c56b642e301e84481787cf987d63d")
 
-    depends_on("r@4.3:", type=("build", "run"))
+    depends_on("r@4.5:", type=("build", "run"), when="@1.18:")
+    depends_on("r@4.3:", type=("build", "run"), when="@1.12:")
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-readr", type=("build", "run"))
     depends_on("r-tidyr", type=("build", "run"))
