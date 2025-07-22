@@ -29,3 +29,4 @@ class RM3drop(RPackage):
     depends_on("r-irlba", type=("build", "run"))
     depends_on("r-reldist", type=("build", "run"))
     depends_on("r-hmisc", type=("build", "run"))
+    depends_on("r-scater", type=("build", "run"))
