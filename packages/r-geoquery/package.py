@@ -38,3 +38,8 @@ class RGeoquery(RPackage):
     depends_on("r-limma", type=("build", "run"))
     depends_on("r-curl", type=("build", "run"))
     depends_on("r-r-utils", type=("build", "run"))
+    depends_on("r-rentrez", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-rvest", type=("build", "run"))
+    depends_on("r-httr2", type=("build", "run"))

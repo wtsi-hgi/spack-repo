@@ -28,3 +28,4 @@ class RMaftools(RPackage):
     depends_on("curl", type=("build", "link", "run"))
     depends_on("bzip2", type=("build", "link", "run"))
     depends_on("xz", type=("build", "link", "run"))
+    depends_on("r-pheatmap", type=("build", "run"))

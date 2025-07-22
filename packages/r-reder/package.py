@@ -21,4 +21,5 @@ class RReder(RPackage):
 
     depends_on("r@4:", type=("build", "run"))
     depends_on("r-igraph", type=("build", "run"))
+    depends_on("r-scales", type=("build", "run"))
     depends_on("openjdk@11:", type=("build", "link", "run"))

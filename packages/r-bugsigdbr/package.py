@@ -21,3 +21,4 @@ class RBugsigdbr(RPackage):
 
     depends_on("r@4.1:", type=("build", "run"))
     depends_on("r-biocfilecache", type=("build", "run"))
+    depends_on("r-vroom", type=("build", "run"))

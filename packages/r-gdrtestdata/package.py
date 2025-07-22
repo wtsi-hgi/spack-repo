@@ -19,3 +19,4 @@ class RGdrtestdata(RPackage):
 
     depends_on("r@4.2:", type=("build", "run"))
     depends_on("r-checkmate", type=("build", "run"))
+    depends_on("r-data-table", type=("build", "run"))

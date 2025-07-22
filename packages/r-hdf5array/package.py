@@ -20,7 +20,7 @@ class RHdf5array(RPackage):
 
     bioc = "HDF5Array"
 
-    version("1.36.0", commit="1e32d9f9fc78bddffd1600aee8e46d76fa296b71")
+    # version("1.36.0", commit="1e32d9f9fc78bddffd1600aee8e46d76fa296b71") # Requires R >= 4.5
     version("1.8.1", commit="3c9aa23d117bf489b6341708dc80c943bd1af11a")
     version("1.6.0", commit="95f2f8d3648143abe9dc77c76340c5edf4114c82")
     version("1.4.8", commit="79ab96d123c8da8f8ead81f678fe714c0958ff45")
@@ -58,3 +58,4 @@ class RHdf5array(RPackage):
     depends_on("r-s4arrays@1.0.1:", type=("build", "run"), when="@1.26:")
     depends_on("r-rhdf5lib", type=("build", "run"))
     depends_on("zlib", type=("build", "link", "run"))
+    # depends_on("r-h5mread", type=("build", "run"))  # Requires R >= 4.5

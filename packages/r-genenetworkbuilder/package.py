@@ -25,3 +25,4 @@ class RGenenetworkbuilder(RPackage):
     depends_on("r-rgraphviz", type=("build", "run"))
     depends_on("r-rjson", type=("build", "run"))
     depends_on("r-xml", type=("build", "run"))
+    depends_on("r-rcy3", type=("build", "run"))

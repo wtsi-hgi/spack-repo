@@ -35,3 +35,5 @@ class RAnvil(RPackage):
     depends_on("r-miniui", type=("build", "run"))
     depends_on("r-htmltools", type=("build", "run"))
     depends_on("r-biocmanager", type=("build", "run"))
+    depends_on("r-anvilbase", type=("build", "run"))
+    depends_on("r-biocbaseutils", type=("build", "run"))

@@ -16,3 +16,9 @@ class RBiocmetaworkflow(RPackage):
 
     version("1.30.0", commit="cfcf8668b2a9c871942b62b478244b0527e826bc")
     version("1.24.0", commit="e955a084143b9a157790a722a31029d269f49096")
+
+    # Some Bioconductor workflow/documentation packages lack a NAMESPACE file, which is required for R CMD INSTALL.
+    # This patch creates a minimal NAMESPACE to allow installation via Spack.
+    def patch(self):
+        with open("NAMESPACE", "w") as f:
+            f.write('exportPattern( "." )')

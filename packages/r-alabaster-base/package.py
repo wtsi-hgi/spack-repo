@@ -24,5 +24,6 @@ class RAlabasterBase(RPackage):
     depends_on("r-jsonvalidate", type=("build", "run"))
     depends_on("r-rcpp", type=("build", "run"))
     depends_on("r-rhdf5lib", type=("build", "run"))
+    depends_on("r-assorthead", type=("build", "run"))
     depends_on("zlib", type=("build", "link", "run"))
     depends_on("gzip", type=("build", "link", "run"))

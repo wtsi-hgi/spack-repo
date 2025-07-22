@@ -22,3 +22,4 @@ class RRvs(RPackage):
     depends_on("r-grain", type=("build", "run"))
     depends_on("r-snpstats", type=("build", "run"))
     depends_on("r-kinship2", type=("build", "run"))
+    depends_on("r-r-utils", type=("build", "run"))

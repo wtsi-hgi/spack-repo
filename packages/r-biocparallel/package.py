@@ -34,4 +34,5 @@ class RBiocparallel(RPackage):
     depends_on("r-snow", type=("build", "run"))
     depends_on("r-codetools", type=("build", "run"))
     depends_on("r-bh", type=("build", "run"))
+    depends_on("r-bh@1.87:", type=("build", "run"), when="@1.42.1:")
     depends_on("r-cpp11", type=("build", "run"))

@@ -31,3 +31,4 @@ class REpinem(RPackage):
     depends_on("r-graph", type=("build", "run"))
     depends_on("r-mnem", type=("build", "run"))
     depends_on("r-latex2exp", type=("build", "run"))
+    depends_on("r-boutroslab-plotting-general", type=("build", "run"))

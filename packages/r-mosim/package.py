@@ -35,3 +35,8 @@ class RMosim(RPackage):
     depends_on("r-biobase", type=("build", "run"))
     depends_on("r-iranges", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-scran", type=("build", "run"))
+    depends_on("r-seurat", type=("build", "run"))
+    depends_on("r-signac", type=("build", "run"))
+    depends_on("r-edger", type=("build", "run"))
+    depends_on("r-rcpp", type=("build", "run"))

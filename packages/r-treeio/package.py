@@ -33,3 +33,4 @@ class RTreeio(RPackage):
     depends_on("r-rlang", type=("build", "run"))
     depends_on("r-tibble", type=("build", "run"))
     depends_on("r-tidytree@0.4.5:", type=("build", "run"))
+    depends_on("r-yulab-utils@0.1.6:", type=("build", "run"))

@@ -22,3 +22,5 @@ class RIntact(RPackage):
     depends_on("r-squarem", type=("build", "run"))
     depends_on("r-bdsmatrix", type=("build", "run"))
     depends_on("r-numderiv", type=("build", "run"))
+    depends_on("r-tidyr", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))

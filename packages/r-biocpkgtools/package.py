@@ -39,3 +39,4 @@ class RBiocpkgtools(RPackage):
     depends_on("r-rbgl", type=("build", "run"))
     depends_on("r-graph", type=("build", "run"))
     depends_on("r-rorcid", type=("build", "run"))
+    depends_on("r-lubridate", type=("build", "run"))
