@@ -19,6 +19,9 @@ class RProjectr(RPackage):
     version("1.18.0", commit="91ca9bda369a363ff779c5f584e9299c1b5de25e")
 
     depends_on("r@4.0.1:", type=("build", "run"))
+    depends_on("r-singlecellexperiment", type=("build", "run"))
+    depends_on("r-fgsea", type=("build", "run"))
+    depends_on("r-msigdbr", type=("build", "run"))
     depends_on("r-cluster", type=("build", "run"))
     depends_on("r-limma", type=("build", "run"))
     depends_on("r-nmf", type=("build", "run"))

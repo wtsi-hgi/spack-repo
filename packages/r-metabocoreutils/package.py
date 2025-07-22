@@ -19,4 +19,5 @@ class RMetabocoreutils(RPackage):
     version("1.10.0", commit="4c181cc74f8e456551ef74debcc25bbb6095d23d")
 
     depends_on("r@4:", type=("build", "run"))
+    depends_on("r-biocparallel", type=("build", "run"))
     depends_on("r-mscoreutils", type=("build", "run"))

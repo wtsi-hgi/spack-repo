@@ -18,6 +18,10 @@ class RReactomegsa(RPackage):
     version("1.22.0", commit="6e8adbb35bacb6c881b0826b364d39ea1a54f19b")
     version("1.16.1", commit="6785d7ec3c1a32e1b08f84032a285c362c211b4f")
 
+    depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-biocsingular", type=("build", "run"))
+    depends_on("r-igraph", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-jsonlite", type=("build", "run"))
     depends_on("r-httr", type=("build", "run"))
     depends_on("r-progress", type=("build", "run"))
