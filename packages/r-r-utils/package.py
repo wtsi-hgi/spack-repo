@@ -12,6 +12,7 @@ class RRUtils(RPackage):
 	Utility functions useful when programming and developing R packages."""
 
 	cran = "R.utils"
+	version("2.13.0", sha256="ab2043c34e129928ff85a037ce7a3f7791f245f49a55ee9a95bd7df0813bcf25")
 	version("2.9.0", sha256="b2aacc5a55d3ea86c41ac576d2583e446af145f4cb1103ad7b6f95b09ab09ff0")
 	version("2.5.0", sha256="1ae1a0f0c6a4972bb2369a2dbccd29ade87d747255ff9cb5a0bd784a5be1039f")
 	version("2.12.3", md5="c76bb7365b00306ed536d8151d380594")
