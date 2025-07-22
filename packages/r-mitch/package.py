@@ -15,7 +15,6 @@ class RMitch(RPackage):
     homepage = "https://github.com/markziemann/mitch"
     bioc = "mitch"
 
-    version("1.20.0", commit="a03db6759597107e9d3c32a0b476c1d75bdfcafa")
     version("1.14.0", commit="2f0452fc5b2d503e24dfd0e87474060526ec619b")
 
     depends_on("r@4:", type=("build", "run"))

@@ -15,7 +15,6 @@ class RFastreer(RPackage):
     homepage = "https://github.com/gkanogiannis/fastreeR"
     bioc = "fastreeR"
 
-    version("1.12.2", commit="f1db503680fb4d4507786ea2170b0e938f274d88")
     version("1.6.0", commit="776d4ceb4f5be3113532d279420d3ae088f6ba8a")
 
     depends_on("r@4.2:", type=("build", "run"))

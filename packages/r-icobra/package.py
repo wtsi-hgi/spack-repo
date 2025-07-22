@@ -15,7 +15,6 @@ class RIcobra(RPackage):
     homepage = "https://github.com/csoneson/iCOBRA"
     bioc = "iCOBRA"
 
-    version("1.36.0", commit="1be9ea5db5afb2fbae93b290e1e5371ea7a3dc3a")
     version("1.30.0", commit="e89626692bc0409ec98db32722c1a58c7e50b6c4")
 
     depends_on("r@4:", type=("build", "run"))

@@ -15,7 +15,6 @@ class RBioccheck(RPackage):
     homepage = "https://github.com/Bioconductor/BiocCheck"
     bioc = "BiocCheck"
 
-    version("1.44.2", commit="c9bf2e865c393138acf2881870ebbc5aa678d3b9")
     version("1.38.2", commit="043a804d64a7c273df5d1f850d74d823a96ad7bd")
 
     depends_on("r@4.3:", type=("build", "run"))
