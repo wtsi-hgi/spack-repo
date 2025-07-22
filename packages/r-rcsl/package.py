@@ -19,6 +19,8 @@ class RRcsl(RPackage):
     version("1.10.0", commit="ef869351106e5a8df0ea523858c665b1a78674e6")
 
     depends_on("r@4.1:", type=("build", "run"))
+    depends_on("r-matrixgenerics", type=("build", "run"))
+    depends_on("r-singlecellexperiment", type=("build", "run"))
     depends_on("r-rcppannoy", type=("build", "run"))
     depends_on("r-igraph", type=("build", "run"))
     depends_on("r-nbclust", type=("build", "run"))

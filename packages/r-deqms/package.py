@@ -18,6 +18,7 @@ class RDeqms(RPackage):
     version("1.20.0", commit="4050c406d92192ff758312c67ec7cb4ba21e1b3c")
 
     depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-matrixstats", type=("build", "run"))
     depends_on("r-limma@3.34:", type=("build", "run"))

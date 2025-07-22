@@ -18,4 +18,8 @@ class RRsweep(RPackage):
     version("1.14.0", commit="606d584fbd8157680c42fab96aaa37d36962049d")
 
     depends_on("r@4:", type=("build", "run"))
+    depends_on("r-foreach", type=("build", "run"))
+    depends_on("r-doparallel", type=("build", "run"))
+    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-stringi", type=("build", "run"))
     depends_on("r-pracma", type=("build", "run"))

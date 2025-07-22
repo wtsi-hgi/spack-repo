@@ -22,6 +22,8 @@ class RDecoupler(RPackage):
     )
 
     depends_on("r@4:", type=("build", "run"))
+    depends_on("r-biocparallel", type=("build", "run"))
+    depends_on("r-parallelly", type=("build", "run"))
     depends_on("r-broom", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-magrittr", type=("build", "run"))

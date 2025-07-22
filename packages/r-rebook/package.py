@@ -19,6 +19,7 @@ class RRebook(RPackage):
 
     depends_on("r-knitr@1.32:", type=("build", "run"))
     depends_on("r-rmarkdown", type=("build", "run"))
+    depends_on("r-codedepends", type=("build", "run"))
     depends_on("r-dir-expiry", type=("build", "run"))
     depends_on("r-filelock", type=("build", "run"))
     depends_on("r-biocstyle", type=("build", "run"))

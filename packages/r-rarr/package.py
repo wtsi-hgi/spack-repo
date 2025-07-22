@@ -18,6 +18,8 @@ class RRarr(RPackage):
     version("1.8.0", commit="37eea8ddd387afacb81e62f8a763763ea8c78679")
     version("1.2.0", commit="e9d1a91253d3639d6429daebe86162255d76df07")
 
+    depends_on("r-delayedarray", type=("build", "run"))
+    depends_on("r-biocgenerics", type=("build", "run"))
     depends_on("r-jsonlite", type=("build", "run"))
     depends_on("r-httr", type=("build", "run"))
     depends_on("r-stringr", type=("build", "run"))
