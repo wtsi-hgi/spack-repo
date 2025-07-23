@@ -34,10 +34,10 @@ class PyEnrich2(PythonPackage):
     def bin_install(self):
         mkdir(self.prefix.bin)
         with open(self.prefix.bin.enrich_cmd, "w") as f:
-            f.write("#!/bin/bash\necho -e \"from enrich2.main import main_cmd\\nimport sys\\nsys.exit(main_cmd())\" | LD_LIBRARY_PATH=\"" + self.spec["gcc"].prefix.lib64 + ":" + self.spec["freetype"].prefix.lib + "\" python - \"$@\"")
+            f.write("#!/bin/bash\necho -e \"from enrich2.main import main_cmd\\nimport sys\\nsys.exit(main_cmd())\" | LD_LIBRARY_PATH=\"" + self.spec["gcc"].prefix.lib64 + ":" + self.spec["freetype"].prefix.lib + ":$LD_LIBRARY_PATH" + "\" python - \"$@\"")
 
         with open(prefix.bin.enrich_gui, "w") as f:
-            f.write("#!/bin/bash\necho -e \"from enrich2.main import main_gui\\nimport sys\\nsys.exit(main_gui())\" | LD_LIBRARY_PATH=\"" + self.spec["gcc"].prefix.lib64 + ":" + self.spec["freetype"].prefix.lib + "\" python - \"$@\"")
+            f.write("#!/bin/bash\necho -e \"from enrich2.main import main_gui\\nimport sys\\nsys.exit(main_gui())\" | LD_LIBRARY_PATH=\"" + self.spec["gcc"].prefix.lib64 + ":" + self.spec["freetype"].prefix.lib + ":$LD_LIBRARY_PATH" + "\" python - \"$@\"")
 
         os.chmod(self.prefix.bin.enrich_cmd, 0o755)
         os.chmod(self.prefix.bin.enrich_gui, 0o755)
