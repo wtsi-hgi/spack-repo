@@ -16,9 +16,10 @@ class PyEnrich2(PythonPackage):
 
     depends_on("python@2.7.18+tkinter", type=("build", "run"))
 
-    depends_on("py-numpy@1.10.4:1.15.0", type=("build", "run"))
-    depends_on("py-scipy@0.16.0:1.2.1", type=("build", "run"))
-    depends_on("py-pandas@0.18.0:0.25.0", type=("build", "run"))
+    # Python 2.7 compatible dependencies
+    depends_on("py-numpy@1.16.6", type=("build", "run"))
+    depends_on("py-scipy@1.2.3", type=("build", "run"))
+    depends_on("py-pandas@0.24.2", type=("build", "run"))
     depends_on("py-tables@3.2.0:3.6.1", type=("build", "run"))
     depends_on("py-statsmodels@0.6.1:0.10.1", type=("build", "run"))
     depends_on("py-matplotlib@1.4.3:2.0.2", type=("build", "run"))
@@ -36,7 +37,7 @@ class PyEnrich2(PythonPackage):
         with open(self.prefix.bin.enrich_cmd, "w") as f:
             f.write("#!/bin/bash\necho -e \"from enrich2.main import main_cmd\\nimport sys\\nsys.exit(main_cmd())\" | LD_LIBRARY_PATH=\"" + self.spec["gcc"].prefix.lib64 + ":" + self.spec["freetype"].prefix.lib + ":$LD_LIBRARY_PATH" + "\" python - \"$@\"")
 
-        with open(prefix.bin.enrich_gui, "w") as f:
+        with open(self.prefix.bin.enrich_gui, "w") as f:
             f.write("#!/bin/bash\necho -e \"from enrich2.main import main_gui\\nimport sys\\nsys.exit(main_gui())\" | LD_LIBRARY_PATH=\"" + self.spec["gcc"].prefix.lib64 + ":" + self.spec["freetype"].prefix.lib + ":$LD_LIBRARY_PATH" + "\" python - \"$@\"")
 
         os.chmod(self.prefix.bin.enrich_cmd, 0o755)

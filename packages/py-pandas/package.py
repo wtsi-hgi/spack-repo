@@ -67,6 +67,7 @@ class PyPandas(PythonPackage):
     version("1.0.0", sha256="3ea6cc86931f57f18b1240572216f09922d91b19ab8a01cf24734394a3db3bec")
     version("0.25.3", sha256="52da74df8a9c9a103af0a72c9d5fdc8e0183a90884278db7f386b5692a2220a4")
     version("0.25.2", sha256="ca91a19d1f0a280874a24dca44aadce42da7f3a7edb7e9ab7c7baad8febee2be")
+    version("0.24.2", sha256="4f919f409c433577a501e023943e582c57355d50a724c589e78bc1d551a535a2")
 
     # depends_on("c", type="build")
 
@@ -81,6 +82,7 @@ class PyPandas(PythonPackage):
     depends_on("python@:3.10", when="@1.3.3:1.3", type=("build", "run"))
     depends_on("python@:3.9", when="@1.1.3:1.3.2", type=("build", "run"))
     depends_on("python@:3.8", when="@0.25.2:1.1.2", type=("build", "run"))
+    depends_on("python@:3.7", when="@0.24.2:0.25.1", type=("build", "run"))
 
     depends_on("py-meson-python@0.13.1:", when="@2.1:", type="build")
     depends_on("meson@1.2.1:", when="@2.1.1:", type="build")
