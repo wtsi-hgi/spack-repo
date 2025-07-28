@@ -36,3 +36,31 @@ class RMsa(RPackage):
             "src/gc-8.2.2/configure",
             string=True,
         )
+        
+        # Fix C++ standard conflict in ClustalOmega Makefile
+        filter_file(
+            """-std=c++98""",
+            """-std=c++11""",
+            "src/ClustalOmega/msaMakefile",
+            string=True,
+        )
+        
+        # Fix isnan/isinf namespace issues in hhalign code
+        filter_file(
+            """isnan(""",
+            """std::isnan(""",
+            "src/ClustalOmega/src/hhalign/hhhit-C.h",
+            string=True,
+        )
+        filter_file(
+            """isinf(""",
+            """std::isinf(""",
+            "src/ClustalOmega/src/hhalign/hhhit-C.h",
+            string=True,
+        )
+        filter_file(
+            """isnan(""",
+            """std::isnan(""",
+            "src/ClustalOmega/src/hhalign/hhalign.cpp",
+            string=True,
+        )
