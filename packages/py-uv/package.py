@@ -207,6 +207,6 @@ class PyUv(PythonPackage):
     depends_on("py-setuptools", type=("build"))
     depends_on("python@3.8:", type=("build", "run"))
     depends_on("py-maturin", type="build")
-    depends_on("rust@1.85:", type="build", when="0.6:")
-    depends_on("rust@1.86:", type="build", when="0.7:")
+    depends_on("rust@1.85:", type="build")
+    depends_on("rust@1.86:", type="build", when="@0.7:")
 
