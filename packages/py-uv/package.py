@@ -217,9 +217,18 @@ class PyUv(PythonPackage):
         os.system('git config --global http.postBuffer 524288000')
         os.system('git config --global core.compression 0')
 
-        clone_dir = '/tmp/reqwest-middleware'
-        os.system(f"git clone https://github.com/astral-sh/reqwest-middleware {clone_dir}")
-        os.system(f"cd {clone_dir} && git checkout ad8b9d332d1773fde8b4cd008486de5973e0a3f8")
+        # Clone all required git dependencies
+        deps = [
+            ('reqwest-middleware', 'https://github.com/astral-sh/reqwest-middleware', 'ad8b9d332d1773fde8b4cd008486de5973e0a3f8'),
+            ('rs-async-zip', 'https://github.com/astral-sh/rs-async-zip', 'c909fda63fcafe4af496a07bfda28a5aae97e58d'),
+            ('pubgrub', 'https://github.com/astral-sh/pubgrub', '06ec5a5f59ffaeb6cf5079c6cb184467da06c9db'),
+            ('tl', 'https://github.com/astral-sh/tl.git', '6e25b2ee2513d75385101a8ff9f591ef51f314ec')
+        ]
+
+        for dep_name, repo_url, commit in deps:
+            clone_dir = f'/tmp/{dep_name}'
+            os.system(f"git clone {repo_url} {clone_dir}")
+            os.system(f"cd {clone_dir} && git checkout {commit}")
 
         cargo_toml = os.path.join(self.stage.source_path, 'Cargo.toml')
         with open(cargo_toml, 'r') as f:
@@ -241,6 +250,30 @@ class PyUv(PythonPackage):
         content = content.replace(
             'reqwest-retry = { git = \"https://github.com/astral-sh/reqwest-middleware\", rev = \"ad8b9d332d1773fde8b4cd008486de5973e0a3f8\" }',
             'reqwest-retry = { path = \"/tmp/reqwest-middleware/reqwest-retry\" }'
+        )
+
+        # Patch async_zip
+        content = content.replace(
+            'async_zip = { git = \"https://github.com/astral-sh/rs-async-zip\", rev = \"c909fda63fcafe4af496a07bfda28a5aae97e58d\", features = [\"bzip2\", \"deflate\", \"lzma\", \"tokio\", \"xz\", \"zstd\"] }',
+            'async_zip = { path = \"/tmp/rs-async-zip\", features = [\"bzip2\", \"deflate\", \"lzma\", \"tokio\", \"xz\", \"zstd\"] }'
+        )
+
+        # Patch pubgrub
+        content = content.replace(
+            'pubgrub = { git = \"https://github.com/astral-sh/pubgrub\", rev = \"06ec5a5f59ffaeb6cf5079c6cb184467da06c9db\" }',
+            'pubgrub = { path = \"/tmp/pubgrub\" }'
+        )
+
+        # Patch version-ranges
+        content = content.replace(
+            'version-ranges = { git = \"https://github.com/astral-sh/pubgrub\", rev = \"06ec5a5f59ffaeb6cf5079c6cb184467da06c9db\" }',
+            'version-ranges = { path = \"/tmp/pubgrub/version-ranges\" }'
+        )
+
+        # Patch tl
+        content = content.replace(
+            'tl = { git = \"https://github.com/astral-sh/tl.git\", rev = \"6e25b2ee2513d75385101a8ff9f591ef51f314ec\" }',
+            'tl = { path = \"/tmp/tl\" }'
         )
 
         with open(cargo_toml, 'w') as f:
