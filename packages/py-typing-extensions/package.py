@@ -45,3 +45,13 @@ class PyTypingExtensions(PythonPackage):
 
     # Historical dependencies
     depends_on("py-setuptools", when="@:3", type="build")
+
+    def install(self, spec, prefix):
+        """Fix license field format in pyproject.toml for newer versions."""
+        if self.spec.satisfies("@4.13:"):
+            filter_file(
+                'license = "PSF-2.0"',
+                'license = {text = "PSF-2.0"}',
+                "pyproject.toml"
+            )
+        super().install(spec, prefix)
