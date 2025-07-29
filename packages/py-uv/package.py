@@ -210,3 +210,41 @@ class PyUv(PythonPackage):
     depends_on("rust@1.85:", type="build")
     depends_on("rust@1.86:", type="build", when="@0.7:")
 
+    def install(self, spec, prefix):
+        import os
+        rust_bin = self.spec['rust'].prefix.bin
+        os.environ['PATH'] = f"{rust_bin}:{os.environ.get('PATH', '')}"
+        os.system('git config --global http.postBuffer 524288000')
+        os.system('git config --global core.compression 0')
+
+        clone_dir = '/tmp/reqwest-middleware'
+        os.system(f"git clone https://github.com/astral-sh/reqwest-middleware {clone_dir}")
+        os.system(f"cd {clone_dir} && git checkout ad8b9d332d1773fde8b4cd008486de5973e0a3f8")
+
+        cargo_toml = os.path.join(self.stage.source_path, 'Cargo.toml')
+        with open(cargo_toml, 'r') as f:
+            content = f.read()
+
+        # Patch reqwest-middleware with features
+        content = content.replace(
+            'reqwest-middleware = { git = \"https://github.com/astral-sh/reqwest-middleware\", rev = \"ad8b9d332d1773fde8b4cd008486de5973e0a3f8\", features = [\"multipart\"] }',
+            'reqwest-middleware = { path = \"/tmp/reqwest-middleware/reqwest-middleware\", features = [\"multipart\"] }'
+        )
+
+        # Patch reqwest-middleware without features
+        content = content.replace(
+            'reqwest-middleware = { git = \"https://github.com/astral-sh/reqwest-middleware\", rev = \"ad8b9d332d1773fde8b4cd008486de5973e0a3f8\" }',
+            'reqwest-middleware = { path = \"/tmp/reqwest-middleware/reqwest-middleware\" }'
+        )
+
+        # Patch reqwest-retry
+        content = content.replace(
+            'reqwest-retry = { git = \"https://github.com/astral-sh/reqwest-middleware\", rev = \"ad8b9d332d1773fde8b4cd008486de5973e0a3f8\" }',
+            'reqwest-retry = { path = \"/tmp/reqwest-middleware/reqwest-retry\" }'
+        )
+
+        with open(cargo_toml, 'w') as f:
+            f.write(content)
+
+        super().install(spec, prefix)
+
