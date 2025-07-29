@@ -1,6 +1,5 @@
 ---
-description: 
-globs: 
+description: for debugging, installing, validating packages
 alwaysApply: false
 ---
 First you should check if a recipe for it already exists in packages/ (for python or r package you need to add py-/r- prefix). If the prompt asks for a specific version, check that version in the recipe too.

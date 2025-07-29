@@ -15,6 +15,15 @@ class PyTypingExtensions(PythonPackage):
     homepage = "https://github.com/python/typing_extensions"
     pypi = "typing_extensions/typing_extensions-3.7.4.tar.gz"
 
+    version("4.14.1", sha256="38b39f4aeeab64884ce9f74c94263ef78f3c22467c8724005483154c26648d36")
+    version("4.14.0", sha256="8676b788e32f02ab42d9e7c61324048ae4c6d844a399eebace3d4979d75ceef4")
+    version("4.13.2", sha256="e6c81219bd689f51865d9e372991c540bda33a0379d5573cddb9a3a23f7caaef")
+    version("4.13.1", sha256="98795af00fb9640edec5b8e31fc647597b4691f099ad75f469a2616be1a76dff")
+    version("4.13.0", sha256="0a4ac55a5820789d87e297727d229866c9650f6521b64206413c4fbada24d95b")
+    version("4.12.2", sha256="1a7ead55c7e559dd4dee8856e3a88b41225abfe1ce8df57b7c13915fe121ffb8")
+    version("4.12.1", sha256="915f5e35ff76f56588223f15fdd5938f9a1cf9195c0de25130c627e4d597f6d1")
+    version("4.12.0", sha256="8cbcdc8606ebcb0d95453ad7dc5065e6237b6aa230a31e81d0f440c30fed5fd8")
+    version("4.11.0", sha256="83f085bd5ca59c80295fc2a82ab5dac679cbe02b9f33f7d83af68e241bea51b0")
     version("4.10.0", sha256="b0abd7c89e8fb96f98db18d86106ff1d90ab692004eb746cf6eda2682f91b3cb")
     version("4.8.0", sha256="df8e4339e9cb77357558cbdbceca33c303714cf861d1eef15e1070055ae8b7ef")
     version("4.6.3", sha256="d91d5919357fe7f681a9f2b5b4cb2a5f1ef0a1e9f59c4d8ff0d3491e05c0ffd5")

@@ -34,7 +34,7 @@ class PyBioemu(PythonPackage):
     depends_on("python@3.10:", type=("build", "run"))
     depends_on("py-mdtraj", type=("build", "run"))
     depends_on("py-torch-geometric", type=("build", "run"))
-    depends_on("py-torch", type=("build", "run"))
+    depends_on("py-torch+cuda", type=("build", "run"))
     depends_on("py-modelcif", type=("build", "run"))
     depends_on("py-bio", type=("build", "run"))
     depends_on("py-fire", type=("build", "run"))
