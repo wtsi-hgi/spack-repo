@@ -66,4 +66,10 @@ class PyGemmi(PythonPackage):
     version("0.7.3", sha256="32069b111216aad58a9724640fb23a31309c15a1aaf16164b4c9addc3677fadb")
 
     depends_on("py-setuptools", type=("build"))
+    depends_on("py-scikit-build-core", type=("build"))
+    depends_on("py-nanobind@2.4:", type=("build"))
+    depends_on("py-typing-extensions@4.0:", type=("build"), when="^python@:3.10")
     depends_on("python@3.8:", type=("build", "run"))
+
+    # Patch to fix pyproject.toml build.verbose issue
+    patch('pyproject_toml_fix.patch', when='@0.7.3')
