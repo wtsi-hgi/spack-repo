@@ -46,6 +46,12 @@ class Kallisto(CMakePackage):
     patch("limits.patch", when="@:0.46")
     patch("htslib_configure.patch", when="@0.44.0:0.48.0^autoconf@2.70:")
 
+    def setup_build_environment(self, env):
+        # Set compiler flags to ensure compatibility with older CPU architectures
+        # This prevents "Illegal instruction" errors on compute nodes
+        env.set('CFLAGS', '-march=x86-64 -mtune=generic -mno-avx -mno-avx2 -mno-fma')
+        env.set('CXXFLAGS', '-march=x86-64 -mtune=generic -mno-avx -mno-avx2 -mno-fma')
+
     @run_before("cmake")
     def autoreconf(self):
         # Versions of autoconf greater than 2.69 need config.guess and
@@ -66,5 +72,8 @@ class Kallisto(CMakePackage):
             self.define_from_variant("USE_HDF5", "hdf5"),
             self.define_from_variant("USE_BAM", "bam"),
             self.define("MAX_KMER_SIZE", 64),
+            self.define("ENABLE_AVX2", "OFF"),
+            self.define("COMPILATION_ARCH", "OFF"),
         ]
+
         return args
