@@ -45,3 +45,6 @@ class RDeseq2(RPackage):
 	depends_on("r-rcpparmadillo", type=("build", "run"))
 	depends_on("r-genefilter", type=("build", "run"), when="@:1.42")
 	depends_on("r-geneplotter", type=("build", "run"), when="@:1.42")
+	
+	# Version 1.36.0 has compatibility issues with R 4.4+
+	depends_on("r@:4.3", when="@:1.36.0")
