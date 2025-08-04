@@ -12,7 +12,8 @@ class Dnacomb(Package):
     url = "https://github.com/allydunham/dnacomb/archive/refs/tags/v0.2.0.tar.gz"
 
     version("0.2.0", sha256="63e75e9f099c0975818b0327d0019761b60c73fe142ba68e437c7caa6a6eb526")
-
+    version("0.1.0", sha256="25310c46ee0da65f05de7dfc97fabd5fbfbd2646c49477897a4487d530a9dc8f")
+    
     depends_on("rust", type="build")
 
     def install(self, spec, prefix):
