@@ -15,9 +15,10 @@ class RScmap(RPackage):
 	homepage = "https://github.com/hemberg-lab/scmap"
 	bioc = "scmap" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scmap_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scmap/scmap_1.24.0.tar.gz"]
-
+	
+	version("1.30.0", commit="d098bf3898aefd2e693e01562d662acf58595681")
 	version("1.24.0", md5="de159d16de109a02a1c7cb3c85418b58")
-
+	
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))
 	depends_on("r-singlecellexperiment", type=("build", "run"))
