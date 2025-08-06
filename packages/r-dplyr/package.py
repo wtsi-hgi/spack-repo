@@ -12,6 +12,7 @@ class RDplyr(RPackage):
 	A fast, consistent tool for working with data frame like objects, both in
 	memory and out of memory."""
 
+
 	cran = "dplyr"
 	version("1.1.4", md5="29bdf98592722336f0d07484baf2a959")
 	version("1.1.2", sha256="c220c38a3a44977c43eeae3d9aef90e8bb297150cad0993ea8d3cc13150096e3")
