@@ -28,6 +28,7 @@ class RAnimalcules(RPackage):
     depends_on("r-dt", type=("build", "run"))
     depends_on("r-forcats", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-ggforce", type=("build", "run"))
     depends_on("r-gunifrac", type=("build", "run"))
     depends_on("r-lattice", type=("build", "run"))
     depends_on("r-limma", type=("build", "run"))
