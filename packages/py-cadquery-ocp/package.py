@@ -41,6 +41,8 @@ class PyCadqueryOcp(PythonPackage):
     version("7.7.2-py39", sha256="9f6c601d1db66353f0ef7c63fde70411573e917c16fb4c7cb5d92ed85b72f154", expand=False, url="https://files.pythonhosted.org/packages/ea/f8/7350acdffdfb437045caab9c3b7c4a73f85b8c7cfe95f39ca6656fe5ca68/cadquery_ocp-7.7.2-cp39-cp39-manylinux_2_35_x86_64.whl")
     version("7.7.2.2b2-py310", sha256="2408fe9c7ca1e0d094b0a553e65ad7255863476de3ff12c2290582713bd484b8", expand=False, url="https://files.pythonhosted.org/packages/23/d0/32ad904b01aaef0684d02e344368ffcbd17e2a3ffa64e673a8bc1ba74ba1/cadquery_ocp-7.7.2.2b2-cp310-cp310-manylinux_2_31_x86_64.whl")
     version("7.7.2.2b2-py311", sha256="d6b4be2ed2fbd4546d833dd2edd9014e937d8a5f942047efbd128483c1c9d5fe", expand=False, url="https://files.pythonhosted.org/packages/66/2b/ad373fd20a56992b8cd0c85383582c5791ac121c64012c72b018e9955d29/cadquery_ocp-7.7.2.2b2-cp311-cp311-manylinux_2_31_x86_64.whl")
+    # Known-good wheel for Python 3.10
+    version("7.8.1.1.post1-py310", sha256="b843adfff9014011c32ec68028055e558023a1d567a3b27bcd19d2e97f35ac73", expand=False, url="https://files.pythonhosted.org/packages/2e/0d/14f9254c1a821e77affe2426b2b0cca99b9437362840578bd8f2a4fb651b/cadquery_ocp-7.8.1.1.post1-cp310-cp310-manylinux_2_31_x86_64.whl")
 
     depends_on("py-setuptools", type="build")
     depends_on("python@3.10:3.14", type=("build", "run"))
@@ -82,9 +84,12 @@ class PyCadqueryOcp(PythonPackage):
     depends_on("python@3.8", when="@7.7.2-py38", type=("build", "run"))
     depends_on("python@3.9", when="@7.7.2-py39", type=("build", "run"))
     # Ensure ABI-compatible VTK for OCP 7.7.* (expects 9.2.x)
-    depends_on("py-vtk@9.2.4:9.2.6", when="@7.7:", type=("run"))
+    depends_on("py-vtk@9.2.4:9.2.6", when="@7.7.0:7.7.999", type=("run"))
+    # OCP 7.8.1.1.post1 for py310 expects VTK 9.3.1
+    depends_on("py-vtk@9.3.1", when="@7.8.1.1.post1-py310", type=("run"))
     depends_on("python@3.10", when="@7.7.2.2b2-py310", type=("build", "run"))
     depends_on("python@3.11", when="@7.7.2.2b2-py311", type=("build", "run"))
+    depends_on("python@3.10", when="@7.8.1.1.post1-py310", type=("build", "run"))
 
     def setup_run_environment(self, env):
             # Ensure py-vtk shared libs are discoverable at runtime

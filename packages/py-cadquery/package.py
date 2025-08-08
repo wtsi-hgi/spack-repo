@@ -48,7 +48,9 @@ class PyCadquery(PythonPackage):
     depends_on("python@3.9:3.11", type=("build", "run"))
 
     # Core runtime dependencies
-    depends_on("py-cadquery-ocp@7.7:", type=("build", "run"))
+    # Prefer the known-good OCP/VTK combo for py310; fall back to 7.7 for others
+    depends_on("py-cadquery-ocp@7.8.1.1.post1-py310", when="^python@3.10", type=("build", "run"))
+    depends_on("py-cadquery-ocp@7.7:", when="^python@:3.9,3.11:", type=("build", "run"))
     depends_on("py-multimethod@1.11:", type=("build", "run"))
     depends_on("py-typish", type=("build", "run"))
     depends_on("py-path", type=("build", "run"))
