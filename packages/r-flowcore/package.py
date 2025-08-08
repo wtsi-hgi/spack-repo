@@ -45,10 +45,14 @@ class RFlowcore(RPackage):
             boost_lib64dir = getattr(self.spec["boost"].prefix, "lib64", None)
             if boost_lib64dir and os.path.isdir(boost_lib64dir):
                 rpath_flags += f" -Wl,-rpath,{boost_lib64dir}"
+            # Prevent the linker from dropping Boost libs referenced from static cytolib
+            no_as_needed = "-Wl,--no-as-needed"
             env.append_flags("LDFLAGS", boost_ldflags)
             env.append_flags("LDFLAGS", rpath_flags)
+            env.append_flags("LDFLAGS", no_as_needed)
             env.append_flags("PKG_LIBS", boost_ldflags)
             env.append_flags("PKG_LIBS", rpath_flags)
+            env.append_flags("PKG_LIBS", no_as_needed)
             # Ensure runtime finds the Spack Boost libs (avoid picking system Boost)
             boost_lib = self.spec["boost"].prefix.lib
             env.prepend_path("LD_LIBRARY_PATH", boost_lib)
@@ -76,4 +80,6 @@ class RFlowcore(RPackage):
                     boost_lib64dir = getattr(self.spec["boost"].prefix, "lib64", None)
                     if boost_lib64dir and os.path.isdir(boost_lib64dir):
                         f.write("PKG_LIBS += -Wl,-rpath,{}\n".format(boost_lib64dir))
+                    # Ensure Boost libs are not dropped by --as-needed
+                    f.write("PKG_LIBS += -Wl,--no-as-needed\n")
                 break

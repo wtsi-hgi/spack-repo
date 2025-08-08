@@ -37,3 +37,5 @@ class RScdesign3(RPackage):
     depends_on("r-biocparallel", type=("build", "run"))
     depends_on("r-matrixstats", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))
+    depends_on("r-sparsemvn", type=("build", "run"))
+    depends_on("r-coop", type=("build", "run"))

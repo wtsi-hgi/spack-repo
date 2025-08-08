@@ -17,5 +17,16 @@ class RSummix(RPackage):
     version("2.14.0", commit="9a2ca603ee3d62321f157543d8a22d40d26f843f")
     version("2.8.0", commit="1bae552a19d3a567eb41c02dff1b80be54e7df8c")
 
-    depends_on("r@4.1:", type=("build", "run"))
+    # R version as declared in DESCRIPTION (R >= 4.3)
+    depends_on("r@4.3:", type=("build", "run"))
+
+    # Imports from DESCRIPTION
+    depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-nloptr", type=("build", "run"))
+    depends_on("r-magrittr", type=("build", "run"))
+    depends_on("r-tibble", type=("build", "run"))
+    depends_on("r-tidyselect", type=("build", "run"))
+    depends_on("r-bedassle", type=("build", "run"))
+    depends_on("r-scales", type=("build", "run"))
+    depends_on("r-visnetwork", type=("build", "run"))
+    depends_on("r-randomcolor", type=("build", "run"))

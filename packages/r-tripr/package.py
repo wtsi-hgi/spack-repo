@@ -34,3 +34,4 @@ class RTripr(RPackage):
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-config@0.3.1:", type=("build", "run"))
     depends_on("r-golem@0.3.1:", type=("build", "run"))
+    depends_on("r-vegan", type=("build", "run"))

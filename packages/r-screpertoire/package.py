@@ -35,3 +35,9 @@ class RScrepertoire(RPackage):
     depends_on("r-ggraph", type=("build", "run"))
     depends_on("r-tidygraph", type=("build", "run"))
     depends_on("r-seuratobject", type=("build", "run"))
+    # Additional CRAN dependencies required at install time
+    depends_on("r-assertthat", type=("build", "run"))
+    depends_on("r-ggdendro", type=("build", "run"))
+    depends_on("r-inext", type=("build", "run"))
+    depends_on("r-quantreg", type=("build", "run"))
+    depends_on("r-rjson", type=("build", "run"))

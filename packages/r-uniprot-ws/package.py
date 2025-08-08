@@ -24,6 +24,9 @@ class RUniprotWs(RPackage):
     depends_on("r-biocfilecache", type=("build", "run"))
     depends_on("r-biocbaseutils", type=("build", "run"))
     depends_on("r-httr", type=("build", "run"))
+    # UniProt.ws (>= 2.48.0) uses httr2 and AnVILBase
+    depends_on("r-httr2", type=("build", "run"))
+    depends_on("r-anvilbase", type=("build", "run"))
     depends_on("r-httpcache", type=("build", "run"))
     depends_on("r-jsonlite", type=("build", "run"))
     depends_on("r-progress", type=("build", "run"))

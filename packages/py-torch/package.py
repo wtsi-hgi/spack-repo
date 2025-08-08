@@ -178,6 +178,8 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         depends_on("py-typing-extensions@4.8:", when="@2.2:")
         depends_on("py-typing-extensions@3.6.2.1:", when="@1.7:")
         depends_on("py-setuptools")
+        # Newer setuptools vendored distutils breaks 1.x setup helpers
+        depends_on("py-setuptools@:58", when="@:1.12")
         depends_on("py-sympy@1.13.3:", when="@2.7:")
         depends_on("py-sympy@1.13.1", when="@2.5:2.6")
         depends_on("py-sympy", when="@2:")
@@ -630,6 +632,11 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
 
         # Spack logs have trouble handling colored output
         env.set("COLORIZE_OUTPUT", "OFF")
+
+        # Ensure old build systems relying on distutils work with modern setuptools
+        # PyTorch <=1.x setup helpers import distutils.version.LooseVersion.
+        # Newer setuptools shims can break this unless we force stdlib distutils.
+        env.set("SETUPTOOLS_USE_DISTUTILS", "stdlib")
 
         enable_or_disable("test", keyword="BUILD")
         enable_or_disable("caffe2", keyword="BUILD")

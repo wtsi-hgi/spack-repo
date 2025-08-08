@@ -45,3 +45,9 @@ class RPhantasus(RPackage):
     depends_on("r-deseq2", type=("build", "run"))
     depends_on("r-data-table", type=("build", "run"))
     depends_on("r-curl", type=("build", "run"))
+    # Missing dependencies discovered during install
+    depends_on("r-apeglm", type=("build", "run"))
+    depends_on("r-config", type=("build", "run"))
+    depends_on("r-rhdf5client", type=("build", "run"))
+    depends_on("r-fs", type=("build", "run"))
+    depends_on("r-phantasuslite", type=("build", "run"))

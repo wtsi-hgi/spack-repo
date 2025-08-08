@@ -26,3 +26,5 @@ class RPsmatch(RPackage):
     depends_on("r-protgenerics@1.27.1:", type=("build", "run"))
     depends_on("r-qfeatures", type=("build", "run"))
     depends_on("r-mscoreutils", type=("build", "run"))
+    # Missing in recipe but required by DESCRIPTION
+    depends_on("r-spectra", type=("build", "run"))

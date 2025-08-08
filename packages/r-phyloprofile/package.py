@@ -20,6 +20,7 @@ class RPhyloprofile(RPackage):
     version("1.16.3", md5="be94ebf678031506ed0e3a5168ea17d9")
 
     depends_on("r@4.3:", type=("build", "run"))
+    depends_on("r@4.5:", when="@2.0.6:", type=("build", "run"))
     depends_on("r-ape", type=("build", "run"))
     depends_on("r-biodist", type=("build", "run"))
     depends_on("r-biocstyle", type=("build", "run"))

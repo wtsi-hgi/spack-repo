@@ -26,6 +26,7 @@ class RSeqarray(RPackage):
     depends_on("r-genomeinfodb", type=("build", "run"))
     depends_on("r-biostrings", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-digest", type=("build", "run"))
 
     def patch(self):
         filter_file(

@@ -31,3 +31,4 @@ class RRcistarget(RPackage):
     depends_on("r-r-utils", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-zoo", type=("build", "run"))

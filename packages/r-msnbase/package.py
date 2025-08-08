@@ -50,3 +50,5 @@ class RMsnbase(RPackage):
     depends_on("r-scales", type=("build", "run"))
     depends_on("r-mass", type=("build", "run"))
     depends_on("r-rcpp", type=("build", "run"))
+    # Additional Bioconductor dependency required by MSnbase 2.34.1
+    depends_on("r-psmatch", type=("build", "run"))

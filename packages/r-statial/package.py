@@ -26,6 +26,8 @@ class RStatial(RPackage):
     depends_on("r-spatstat-explore", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-tidyr", type=("build", "run"))
+    depends_on("r-cluster", type=("build", "run"))
+    depends_on("r-treekor", type=("build", "run"))
     depends_on("r-singlecellexperiment", type=("build", "run"))
     depends_on("r-tibble", type=("build", "run"))
     depends_on("r-stringr", type=("build", "run"))

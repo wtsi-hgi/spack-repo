@@ -36,3 +36,7 @@ class RGemmaR(RPackage):
     depends_on("r-bit64", type=("build", "run"))
     depends_on("r-assertthat", type=("build", "run"))
     depends_on("r-digest", type=("build", "run"))
+    # Additional imports declared in DESCRIPTION
+    depends_on("r-r-utils", type=("build", "run"))
+    depends_on("r-kableextra", type=("build", "run"))
+    depends_on("r-base64enc", type=("build", "run"))
