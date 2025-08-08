@@ -109,20 +109,7 @@ class PyVtk(PythonPackage):
     depends_on("libxext", type="run")
     depends_on("libxrender", type="run")
 
-    def setup_run_environment(self, env):
-        py_version_short = self.spec["python"].version.up_to(2)
-        # Ensure VTK wheel .so files inside site-packages are discoverable
-        for libdir in ("lib", "lib64"):
-            site_dir = os.path.join(self.prefix, libdir, f"python{py_version_short}", "site-packages")
-            env.prepend_path("LD_LIBRARY_PATH", site_dir)
-
-        # Also surface X11 libs required by the wheels
-        for dep_name in ("libxrender", "libx11", "libxext"):
-            if dep_name in self.spec:
-                dep = self.spec[dep_name]
-                for libdir in ("lib", "lib64"):
-                    candidate = os.path.join(dep.prefix, libdir)
-                    env.prepend_path("LD_LIBRARY_PATH", candidate)
+    
     depends_on("python@2.7", when="@8.1.0-py27", type=("build", "run"))
     depends_on("python@3.4", when="@8.1.0-py34", type=("build", "run"))
     depends_on("python@3.5", when="@8.1.0-py35", type=("build", "run"))
@@ -211,5 +198,22 @@ class PyVtk(PythonPackage):
     depends_on("python@3.13", when="@9.5.0-py313", type=("build", "run"))
     depends_on("python@3.8", when="@9.5.0-py38", type=("build", "run"))
     depends_on("python@3.9", when="@9.5.0-py39", type=("build", "run"))
+
+    def setup_run_environment(self, env):
+        py_version_short = self.spec["python"].version.up_to(2)
+        # Ensure VTK wheel .so files inside site-packages are discoverable
+        for libdir in ("lib", "lib64"):
+            site_dir = os.path.join(
+                self.prefix, libdir, f"python{py_version_short}", "site-packages"
+            )
+            env.prepend_path("LD_LIBRARY_PATH", site_dir)
+
+        # Also surface X11 libs required by the wheels
+        for dep_name in ("libxrender", "libx11", "libxext"):
+            if dep_name in self.spec:
+                dep = self.spec[dep_name]
+                for libdir in ("lib", "lib64"):
+                    candidate = os.path.join(dep.prefix, libdir)
+                    env.prepend_path("LD_LIBRARY_PATH", candidate)
 
 # {"numpy(>=1.9);extra=='numpy'": ['9.0.1-py36', '9.0.1-py37', '9.0.1-py38', '9.0.2-py36', '9.0.2-py37', '9.0.2-py38', '9.0.2-py39', '9.0.3-py36', '9.0.3-py37', '9.0.3-py38', '9.0.3-py39', '9.1.0-py36', '9.1.0-py37', '9.1.0-py38', '9.1.0-py39', '9.2.2-py310', '9.2.2-py36', '9.2.2-py37', '9.2.2-py38', '9.2.2-py39', '9.2.4-py310', '9.2.4-py311', '9.2.4-py36', '9.2.4-py37', '9.2.4-py38', '9.2.4-py39', '9.2.5-py310', '9.2.5-py311', '9.2.5-py36', '9.2.5-py37', '9.2.5-py38', '9.2.5-py39', '9.2.6-py310', '9.2.6-py311', '9.2.6-py36', '9.2.6-py37', '9.2.6-py38', '9.2.6-py39', '9.3.0-py36', '9.3.1-py36'], 'wslink(>=0.1.3)': ['9.0.2-py36', '9.0.2-py37', '9.0.2-py38', '9.0.2-py39', '9.0.3-py36', '9.0.3-py37', '9.0.3-py38', '9.0.3-py39'], 'Twisted(>=17.5.0)': ['9.0.2-py36', '9.0.2-py37', '9.0.2-py38', '9.0.2-py39', '9.0.3-py36', '9.0.3-py37', '9.0.3-py38', '9.0.3-py39'], 'autobahn(>=17.7.1)': ['9.0.2-py36', '9.0.2-py37', '9.0.2-py38', '9.0.2-py39', '9.0.3-py36', '9.0.3-py37', '9.0.3-py38', '9.0.3-py39'], 'matplotlib(>=2.0.0)': ['9.0.2-py36', '9.0.2-py37', '9.0.2-py38', '9.0.2-py39', '9.0.3-py36', '9.0.3-py37', '9.0.3-py38', '9.0.3-py39', '9.1.0-py36', '9.1.0-py37', '9.1.0-py38', '9.1.0-py39', '9.2.2-py310', '9.2.2-py36', '9.2.2-py37', '9.2.2-py38', '9.2.2-py39', '9.2.4-py310', '9.2.4-py311', '9.2.4-py36', '9.2.4-py37', '9.2.4-py38', '9.2.4-py39', '9.2.5-py310', '9.2.5-py311', '9.2.5-py36', '9.2.5-py37', '9.2.5-py38', '9.2.5-py39', '9.2.6-py310', '9.2.6-py311', '9.2.6-py36', '9.2.6-py37', '9.2.6-py38', '9.2.6-py39', '9.3.0-py36', '9.3.1-py36'], 'wslink(>=1.0.4)': ['9.1.0-py36', '9.1.0-py37', '9.1.0-py38', '9.1.0-py39', '9.2.2-py310', '9.2.2-py36', '9.2.2-py37', '9.2.2-py38', '9.2.2-py39'], "wslink(>=1.0.4);extra=='web'": ['9.2.4-py310', '9.2.4-py311', '9.2.4-py36', '9.2.4-py37', '9.2.4-py38', '9.2.4-py39', '9.2.5-py310', '9.2.5-py311', '9.2.5-py36', '9.2.5-py37', '9.2.5-py38', '9.2.5-py39', '9.2.6-py310', '9.2.6-py311', '9.2.6-py36', '9.2.6-py37', '9.2.6-py38', '9.2.6-py39', '9.3.0-py36', '9.3.1-py36'], 'matplotlib>=2.0.0': ['9.3.0-py310', '9.3.0-py311', '9.3.0-py312', '9.3.0-py37', '9.3.0-py38', '9.3.0-py39', '9.3.1-py310', '9.3.1-py311', '9.3.1-py312', '9.3.1-py37', '9.3.1-py38', '9.3.1-py39', '9.4.0-py310', '9.4.0-py311', '9.4.0-py312', '9.4.0-py313', '9.4.0-py38', '9.4.0-py39', '9.4.1-py310', '9.4.1-py311', '9.4.1-py312', '9.4.1-py313', '9.4.1-py38', '9.4.1-py39', '9.4.2-py310', '9.4.2-py311', '9.4.2-py312', '9.4.2-py313', '9.4.2-py38', '9.4.2-py39', '9.5.0-py310', '9.5.0-py311', '9.5.0-py312', '9.5.0-py313', '9.5.0-py38', '9.5.0-py39'], "numpy>=1.9;extra=='numpy'": ['9.3.0-py310', '9.3.0-py311', '9.3.0-py312', '9.3.0-py37', '9.3.0-py38', '9.3.0-py39', '9.3.1-py310', '9.3.1-py311', '9.3.1-py312', '9.3.1-py37', '9.3.1-py38', '9.3.1-py39'], "wslink>=1.0.4;extra=='web'": ['9.3.0-py310', '9.3.0-py311', '9.3.0-py312', '9.3.0-py37', '9.3.0-py38', '9.3.0-py39', '9.3.1-py310', '9.3.1-py311', '9.3.1-py312', '9.3.1-py37', '9.3.1-py38', '9.3.1-py39'], 'numpy>=1.9;extra=="numpy"': ['9.4.0-py310', '9.4.0-py311', '9.4.0-py312', '9.4.0-py313', '9.4.0-py38', '9.4.0-py39', '9.4.1-py310', '9.4.1-py311', '9.4.1-py312', '9.4.1-py313', '9.4.1-py38', '9.4.1-py39', '9.4.2-py310', '9.4.2-py311', '9.4.2-py312', '9.4.2-py313', '9.4.2-py38', '9.4.2-py39', '9.5.0-py310', '9.5.0-py311', '9.5.0-py312', '9.5.0-py313', '9.5.0-py38', '9.5.0-py39'], 'wslink>=1.0.4;extra=="web"': ['9.4.0-py310', '9.4.0-py311', '9.4.0-py312', '9.4.0-py313', '9.4.0-py38', '9.4.0-py39', '9.4.1-py310', '9.4.1-py311', '9.4.1-py312', '9.4.1-py313', '9.4.1-py38', '9.4.1-py39', '9.4.2-py310', '9.4.2-py311', '9.4.2-py312', '9.4.2-py313', '9.4.2-py38', '9.4.2-py39', '9.5.0-py310', '9.5.0-py311', '9.5.0-py312', '9.5.0-py313', '9.5.0-py38', '9.5.0-py39']}
