@@ -3,7 +3,9 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-from spack.package import *
+import os
+
+from spack.package import PythonPackage, depends_on, version
 
 
 class PyVtk(PythonPackage):
@@ -107,6 +109,21 @@ class PyVtk(PythonPackage):
     depends_on("libx11", type="run")
     depends_on("libxext", type="run")
     depends_on("libxrender", type="run")
+
+    def setup_run_environment(self, env):
+        py_version_short = self.spec["python"].version.up_to(2)
+        # Ensure VTK wheel .so files inside site-packages are discoverable
+        for libdir in ("lib", "lib64"):
+            site_dir = os.path.join(self.prefix, libdir, f"python{py_version_short}", "site-packages")
+            env.prepend_path("LD_LIBRARY_PATH", site_dir)
+
+        # Also surface X11 libs required by the wheels
+        for dep_name in ("libxrender", "libx11", "libxext"):
+            if dep_name in self.spec:
+                dep = self.spec[dep_name]
+                for libdir in ("lib", "lib64"):
+                    candidate = os.path.join(dep.prefix, libdir)
+                    env.prepend_path("LD_LIBRARY_PATH", candidate)
     depends_on("python@2.7", when="@8.1.0-py27", type=("build", "run"))
     depends_on("python@3.4", when="@8.1.0-py34", type=("build", "run"))
     depends_on("python@3.5", when="@8.1.0-py35", type=("build", "run"))
