@@ -49,8 +49,6 @@ class PyCadquery(PythonPackage):
 
     # Core runtime dependencies
     depends_on("py-cadquery-ocp@7.7:", type=("build", "run"))
-    # Ensure VTK runtime libs are available when OCP imports
-    depends_on("py-vtk@9.3.1", type=("run"))
     depends_on("py-multimethod@1.11:", type=("build", "run"))
     depends_on("py-typish", type=("build", "run"))
     depends_on("py-path", type=("build", "run"))
@@ -60,21 +58,5 @@ class PyCadquery(PythonPackage):
     depends_on("py-nlopt@2.9:", type=("build", "run"))
     depends_on("py-casadi@3.6:", type=("build", "run"))
     depends_on("py-ezdxf", type=("build", "run"))
-
-    def setup_run_environment(self, env):
-        # Propagate VTK runtime paths so that OCP finds libvtkWrappingPythonCore*
-        if "py-vtk" in self.spec:
-            pyvtk = self.spec["py-vtk"].prefix
-            for libdir in ("lib", "lib64"):
-                env.prepend_path("LD_LIBRARY_PATH", os.path.join(pyvtk, libdir))
-            py_version_short = self.spec["python"].version.up_to(2)
-            vtk_site = os.path.join(
-                pyvtk,
-                "lib",
-                f"python{py_version_short}",
-                "site-packages",
-                "vtkmodules",
-            )
-            env.prepend_path("LD_LIBRARY_PATH", vtk_site)
 
 # {'pyparsing': ['1.2.1', '1.2.2', '1.2.4', '1.2.5'], 'cadquery-ocp(<7.8,>=7.7.0a0)': ['2.2.0', '2.3.1'], 'ezdxf': ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.1', '2.4.0', '2.5.2'], 'multimethod(<2.0,>=1.7)': ['2.2.0', '2.2.0b1', '2.2.0b2', '2.3.1'], 'nlopt': ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.1', '2.4.0'], 'nptyping(==2.0.1)': ['2.2.0', '2.2.0b1', '2.2.0b2', '2.3.1'], 'typish': ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.1', '2.4.0', '2.5.2'], 'casadi': ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.1', '2.4.0', '2.5.2'], 'path': ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.1', '2.4.0', '2.5.2'], "docutils;extra=='dev'": ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.0', '2.3.1', '2.4.0'], "ipython;extra=='dev'": ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.0', '2.3.1', '2.4.0'], "pytest;extra=='dev'": ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.0', '2.3.1', '2.4.0'], "black(==19.10b0);extra=='dev'": ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.0', '2.3.1'], "click(==8.0.4);extra=='dev'": ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.0', '2.3.1'], "ipython;extra=='ipython'": ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.0', '2.3.1', '2.4.0'], 'cadquery-ocp': ['2.2.0b0', '2.2.0b1'], 'multimethod': ['2.2.0b0'], 'nptyping(>=2)': ['2.2.0b0'], 'cadquery-ocp(<7.7,>=7.6)': ['2.2.0b2'], 'cadquery-ocp<7.8,>=7.7.0a0': ['2.4.0'], 'multimethod==1.9.1': ['2.4.0'], 'nptyping==2.0.1': ['2.4.0'], "black==19.10b0;extra=='dev'": ['2.4.0'], "click==8.0.4;extra=='dev'": ['2.4.0'], 'cadquery-ocp<7.8,>=7.7.0': ['2.5.2'], 'multimethod<2.0,>=1.11': ['2.5.2'], 'nlopt<3.0,>=2.9.0': ['2.5.2'], 'docutils;extra=="dev"': ['2.5.2'], 'ipython;extra=="dev"': ['2.5.2'], 'pytest;extra=="dev"': ['2.5.2'], 'ipython;extra=="ipython"': ['2.5.2']}
