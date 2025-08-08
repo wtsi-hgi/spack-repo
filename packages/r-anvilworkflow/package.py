@@ -17,7 +17,18 @@ class RAnvilworkflow(RPackage):
     version("1.8.0", commit="aa6e807fa31f6d0933ad35a63e3e890e019e319b")
     version("1.2.0", commit="9f58777ec7baa67debab48b84d52c900245aa2d5")
 
-    depends_on("r@4.2:", type=("build", "run"))
-    depends_on("r-anvil", type=("build", "run"))
+    # R version per DESCRIPTION (R >= 4.4.0)
+    depends_on("r@4.4:", type=("build", "run"))
+
+    # Depends and Imports from DESCRIPTION
+    depends_on("r-anvilgcp", type=("build", "run"))
+    depends_on("r-anvilbase", type=("build", "run"))
     depends_on("r-httr", type=("build", "run"))
+    depends_on("r-anvil", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-jsonlite", type=("build", "run"))
+    depends_on("r-rlang", type=("build", "run"))
+    depends_on("r-tibble", type=("build", "run"))
+    depends_on("r-tidyr", type=("build", "run"))
+    depends_on("r-plyr", type=("build", "run"))
+    depends_on("r-stringr", type=("build", "run"))

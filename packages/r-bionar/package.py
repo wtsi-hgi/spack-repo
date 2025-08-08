@@ -31,7 +31,7 @@ class RBionar(RPackage):
     depends_on("r-annotationdbi", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-go-db", type=("build", "run"))
-    depends_on("r-org-hs-eg-db", type=("build", "run"))
+    depends_on("r-org-hs-eg-db@3.19.1:", type=("build", "run"))
     depends_on("r-rspectral", type=("build", "run"))
     depends_on("r-wgcna", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))

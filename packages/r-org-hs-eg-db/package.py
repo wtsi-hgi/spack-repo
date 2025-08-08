@@ -17,6 +17,11 @@ class ROrgHsEgDb(RPackage):
         "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/org.Hs.eg.db_3.18.0.tar.gz",
         "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/org.Hs.eg.db/org.Hs.eg.db_3.18.0.tar.gz",
     ]
+    version(
+        "3.19.1",
+        url="https://www.bioconductor.org/packages/3.19/data/annotation/src/contrib/org.Hs.eg.db_3.19.1.tar.gz",
+        sha256="1932eff4d5d46c1ab219565dfff6706c93cfddc6bcbc65223832cc583f702bf7",
+    )
     version("3.18.0", md5="e1f74b9d0c541b5678a0d88f6a8ec847")
     version(
         "3.17.0",

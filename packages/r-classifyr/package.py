@@ -34,3 +34,4 @@ class RClassifyr(RPackage):
     depends_on("r-ggpubr", type=("build", "run"))
     depends_on("r-reshape2", type=("build", "run"))
     depends_on("r-ggupset", type=("build", "run"))
+    depends_on("r-dcanr", type=("build", "run"))

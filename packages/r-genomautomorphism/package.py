@@ -31,3 +31,4 @@ class RGenomautomorphism(RPackage):
     depends_on("r-foreach", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-numbers", type=("build", "run"))
+    depends_on("r-matrixstats", type=("build", "run"))
