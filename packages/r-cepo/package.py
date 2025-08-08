@@ -27,6 +27,7 @@ class RCepo(RPackage):
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-rlang", type=("build", "run"))
+    depends_on("r-purrr", type=("build", "run"))
     depends_on("r-patchwork", type=("build", "run"))
     depends_on("r-reshape2", type=("build", "run"))
     depends_on("r-biocparallel", type=("build", "run"))

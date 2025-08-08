@@ -22,3 +22,8 @@ class RCcimpute(RPackage):
     depends_on("r-simlr", type=("build", "run"))
     depends_on("r-biocparallel", type=("build", "run"))
     depends_on("r-rcppeigen", type=("build", "run"))
+    # Additional dependencies required by ccImpute per DESCRIPTION
+    depends_on("r-sparsematrixstats", type=("build", "run"))
+    depends_on("r-irlba", type=("build", "run"))
+    depends_on("r-singlecellexperiment", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))

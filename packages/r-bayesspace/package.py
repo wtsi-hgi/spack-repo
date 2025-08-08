@@ -41,3 +41,6 @@ class RBayesspace(RPackage):
     depends_on("r-rcpparmadillo", type=("build", "run"))
     depends_on("r-rcppdist", type=("build", "run"))
     depends_on("r-rcppprogress", type=("build", "run"))
+    depends_on("r-arrow", type=("build", "run"))
+    depends_on("r-rjson", type=("build", "run"))
+    depends_on("r-microbenchmark", type=("build", "run"))

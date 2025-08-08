@@ -20,8 +20,9 @@ class RGenomicfeatures(RPackage):
 
     bioc = "GenomicFeatures"
     version("1.60.0", commit="51aeeb376081784d3e5b447d0e7308740f451cf7")
-    version("1.54.4", commit="0d0ab32d823bbe236ddd2a970fae6bf202583026")
-    version("1.54.3", md5="ff1db6c7968d616ad62d011206144975")
+    # Explicit source tarballs for BioC 3.18 line
+    version("1.54.4", sha256="e3fa9c9fee19be43ebfc1b0c8018384d11b9847ef52a4a95b887628132d94e3c", url="https://bioconductor.org/packages/3.18/bioc/src/contrib/GenomicFeatures_1.54.4.tar.gz")
+    version("1.54.3", commit="0d0ab32d823bbe236ddd2a970fae6bf202583026")
     version("1.52.0", commit="207ff08b38421f0394a8f6450e00fb8713ab463c")
     version("1.50.2", commit="4fc9120ceed9ff59f390c8bbdbd79b212ee35b84")
     version("1.48.4", commit="06e37dc1847d49d91391264caec877ed33abf359")
@@ -49,5 +50,6 @@ class RGenomicfeatures(RPackage):
     depends_on("r-biostrings@2.47.6:", type=("build", "run"))
     depends_on("r-biocio", type=("build", "run"))
     depends_on("r-rtracklayer@1.51.5:", type=("build", "run"))
+    depends_on("r-httr2", type=("build", "run"))
     depends_on("r-biomart@2.58.2:", type=("build", "run"))
     depends_on("r-biobase@2.15.1:", type=("build", "run"))

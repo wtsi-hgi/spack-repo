@@ -78,8 +78,6 @@ class RRstan(RPackage):
     depends_on("r-rcppeigen@0.3.4:", type=("build", "run"), when="@2.32:")
     depends_on("r-bh@1.75.0.0:", type=("build", "run"))
     depends_on("pandoc", type=("build", "link", "run"))
-    # for compiling Stan models
-    depends_on("gcc+binutils", type=("build", "link", "run"))
-    depends_on("gmake", type=("build", "link", "run"))
+    # Use system toolchain; avoid pulling a full GCC toolchain
 
     conflicts("%gcc@:4.9", when="@2.18:")

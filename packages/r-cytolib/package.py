@@ -22,7 +22,7 @@ class RCytolib(RPackage):
     depends_on("r-rprotobuflib@2.13.1:", type=("build", "run"))
     depends_on("r-bh@1.84:", type=("build", "run"))
     depends_on("r-rhdf5lib", type=("build", "run"))
-    depends_on("boost@1.72.0:+filesystem+system", type=("build", "link", "run"))
+    depends_on("boost@1.72.0:+filesystem+system cxxstd=17", type=("build", "link", "run"))
 
     def patch(self):
         bundled_boost_dir = "src/boost"

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+import os
 from spack.package import *
 
 
@@ -42,3 +43,18 @@ class RDigest(RPackage):
 	version("0.6.11", sha256="edab2ca2a38bd7ee19482c9d2531cd169d5123cde4aa2a3dd65c0bcf3d1d5209")
 
 	depends_on("r@3.3:", type=("build", "run"))
+
+	def patch(self):
+		# Add legacy allocation fallbacks for R >= 4.5 builds
+		raes = join_path(self.stage.source_path, "src", "raes.c")
+		if os.path.exists(raes):
+			header = (
+				"#include <stdlib.h>\n"
+				"#ifndef Calloc\n"
+				"#define Calloc(n,t) (t *) calloc((size_t)(n), sizeof(t))\n"
+				"#endif\n"
+				"#ifndef Free\n"
+				"#define Free(p) free(p)\n"
+				"#endif\n"
+			)
+			filter_file(r'(#include\s+"aes.h")', header + r"\1", raes)

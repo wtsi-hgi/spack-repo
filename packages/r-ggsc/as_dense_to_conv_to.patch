@@ -1,0 +1,12 @@
+diff --git a/src/kde.cpp b/src/kde.cpp
+index 9b2f2a1..0000000 100644
+--- a/src/kde.cpp
++++ b/src/kde.cpp
+@@ -103,7 +103,7 @@ struct CalWkde : public Worker{
+   void operator()(std::size_t begin, std::size_t end){
+     for (uword i = begin; i < end; i++){
+-        result.col(i) = Kde2dWeightedCpp(x, w.row(i).as_dense(), ax, ay, H, indx, indy);
++        result.col(i) = Kde2dWeightedCpp(x, arma::conv_to<arma::rowvec>::from(w.row(i)), ax, ay, H, indx, indy);
+     }
+   }
+ };

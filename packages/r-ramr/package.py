@@ -27,7 +27,20 @@ class RRamr(RPackage):
     depends_on("r-biocgenerics", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-reshape2", type=("build", "run"))
+    depends_on("r-data-table", type=("build", "run"))
+    depends_on("r-rcpp", type=("build", "run"))
     depends_on("r-envstats", type=("build", "run"))
     depends_on("r-extdist", type=("build", "run"))
     depends_on("r-matrixstats", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
+
+    def patch(self):
+        # Ensure we link against Rcpp shared library. Upstream Makevars overrides PKG_LIBS
+        # and omits Rcpp's linker flags, which leads to undefined symbols at load time.
+        # Replace literal assignment to include Rcpp LdFlags
+        filter_file(
+            "PKG_LIBS = $(SHLIB_OPENMP_CXXFLAGS)",
+            'PKG_LIBS = $(SHLIB_OPENMP_CXXFLAGS) $(shell "$(R_HOME)"/bin/Rscript -e "Rcpp:::LdFlags()")',
+            "src/Makevars",
+            string=True,
+        )

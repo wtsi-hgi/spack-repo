@@ -24,6 +24,9 @@ class RGdrstyle(RPackage):
     depends_on("r-git2r", type=("build", "run"))
     depends_on("r-lintr@3:", type=("build", "run"))
     depends_on("r-rcmdcheck", type=("build", "run"))
+    # From DESCRIPTION: missing runtime deps required at install time
+    depends_on("r-biocstyle", type=("build", "run"))
+    depends_on("r-checkmate", type=("build", "run"))
     depends_on("r-remotes", type=("build", "run"))
     depends_on("r-yaml", type=("build", "run"))
     depends_on("r-rjson", type=("build", "run"))

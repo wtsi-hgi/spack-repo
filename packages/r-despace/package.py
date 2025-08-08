@@ -18,7 +18,8 @@ class RDespace(RPackage):
     version("2.0.0", commit="705171eb3d698ffefadbfdc850e23944756be9cd")
     version("1.2.1", commit="ad6d77d5b954b31fe40e11e3a42ee25f5a2a907c")
 
-    depends_on("r@4.3:", type=("build", "run"))
+    # DESCRIPTION: Depends: R (>= 4.5.0)
+    depends_on("r@4.5:", type=("build", "run"))
     depends_on("r-edger", type=("build", "run"))
     depends_on("r-limma", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
@@ -37,3 +38,10 @@ class RDespace(RPackage):
     depends_on("r-ggnewscale", type=("build", "run"))
     depends_on("r-patchwork", type=("build", "run"))
     depends_on("r-biocparallel", type=("build", "run"))
+
+    # Additional Imports from DESCRIPTION for 2.0.0
+    depends_on("r-terra", type=("build", "run"))
+    depends_on("r-sf", type=("build", "run"))
+    depends_on("r-spatstat-explore", type=("build", "run"))
+    depends_on("r-spatstat-geom", type=("build", "run"))
+    depends_on("r-scuttle", type=("build", "run"))

@@ -33,3 +33,6 @@ class ROntoproc(RPackage):
     depends_on("r-igraph", type=("build", "run"))
     depends_on("r-annotationhub", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-reticulate", type=("build", "run"))
+    depends_on("r-r-utils", type=("build", "run"))
+    depends_on("r-basilisk", type=("build", "run"))

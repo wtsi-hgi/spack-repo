@@ -44,3 +44,8 @@ class RCotan(RPackage):
     depends_on("r-zeallot", type=("build", "run"))
     depends_on("r-assertthat", type=("build", "run"))
     depends_on("r-withr", type=("build", "run"))
+    # Additional dependencies required by COTAN 2.8.4
+    depends_on("r-gghalves", type=("build", "run"))
+    depends_on("r-singlecellexperiment", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-proxy", type=("build", "run"))

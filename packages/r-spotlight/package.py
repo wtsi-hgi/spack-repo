@@ -20,6 +20,8 @@ class RSpotlight(RPackage):
 
     depends_on("r@4.1:", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-rcpp", type=("build", "run"))
+    depends_on("r-rcppeigen", type=("build", "run"))
     depends_on("r-nmf", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))
     depends_on("r-matrixstats", type=("build", "run"))

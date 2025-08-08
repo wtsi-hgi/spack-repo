@@ -27,6 +27,7 @@ class RQfeatures(RPackage):
     depends_on("r-protgenerics@1.27.1:", type=("build", "run"))
     depends_on("r-annotationfilter", type=("build", "run"))
     depends_on("r-lazyeval", type=("build", "run"))
+    depends_on("r-reshape2", type=("build", "run"))
     depends_on("r-biobase", type=("build", "run"))
     depends_on("r-mscoreutils@1.7.2:", type=("build", "run"))
     depends_on("r-igraph", type=("build", "run"))

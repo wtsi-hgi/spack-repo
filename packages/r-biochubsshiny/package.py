@@ -29,3 +29,4 @@ class RBiochubsshiny(RPackage):
     depends_on("r-shinyjs", type=("build", "run"))
     depends_on("r-shinythemes", type=("build", "run"))
     depends_on("r-shinytoastr", type=("build", "run"))
+    depends_on("r-rclipboard", type=("build", "run"))

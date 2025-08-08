@@ -32,3 +32,7 @@ class RSracipe(RPackage):
     depends_on("r-htmlwidgets", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-biocgenerics", type=("build", "run"))
+    depends_on("r-dofuture", type=("build", "run"))
+    depends_on("r-dorng", type=("build", "run"))
+    depends_on("r-future", type=("build", "run"))
+    depends_on("r-foreach", type=("build", "run"))

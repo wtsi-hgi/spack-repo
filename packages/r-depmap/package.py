@@ -21,3 +21,4 @@ class RDepmap(RPackage):
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-experimenthub", type=("build", "run"))
     depends_on("r-annotationhub", type=("build", "run"))
+    depends_on("r-httr2", type=("build", "run"))

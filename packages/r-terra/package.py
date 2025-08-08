@@ -34,3 +34,14 @@ class RTerra(RPackage):
 	depends_on("geos@3.4.0:", type=("build", "link", "run"))
 	depends_on("proj@4.9.3:", type=("build", "link", "run"))
 	depends_on("sqlite@3:", type=("build", "link", "run"))
+
+	def setup_build_environment(self, env):
+		"""Ensure package configure checks can find R headers.
+
+		R 4.4 adds `-include R_ext/Memory.h` to default flags, which requires
+		explicit inclusion of R's headers during configure-time tests.
+		"""
+		r_include = join_path(self.spec["r"].prefix, "rlib", "R", "include")
+		env.append_flags("CPPFLAGS", f"-I{r_include}")
+		env.append_flags("PKG_CPPFLAGS", f"-I{r_include}")
+		env.append_flags("CFLAGS", f"-I{r_include}")

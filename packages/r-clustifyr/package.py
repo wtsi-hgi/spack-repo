@@ -36,3 +36,4 @@ class RClustifyr(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-proxy", type=("build", "run"))
     depends_on("r-httr", type=("build", "run"))
+    depends_on("r-seuratobject", type=("build", "run"))

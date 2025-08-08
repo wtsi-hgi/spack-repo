@@ -55,3 +55,22 @@ class RMilor(RPackage):
     depends_on("r-ggbeeswarm", type=("build", "run"))
     depends_on("r-rcolorbrewer", type=("build", "run"))
     depends_on("r-numderiv", type=("build", "run"), when="@2.0.0:")
+    # Additional dependencies required by DESCRIPTION for newer releases
+    depends_on("r-pracma", type=("build", "run"))
+    depends_on("r-rcppml", type=("build", "run"))
+
+    def patch(self):
+        # Avoid conflicting RcppEigen wrapper definitions between RcppML and RcppEigen
+        # by disabling direct inclusion of RcppEigen.h in solveQP.cpp
+        import os
+        src = os.path.join('src', 'solveQP.cpp')
+        if os.path.exists(src):
+            with open(src, 'r', encoding='utf-8') as f:
+                contents = f.read()
+            new = contents.replace(
+                '#include <RcppEigen.h>',
+                '// #include <RcppEigen.h> // disabled by Spack to avoid RcppML clash'
+            )
+            if new != contents:
+                with open(src, 'w', encoding='utf-8') as f:
+                    f.write(new)

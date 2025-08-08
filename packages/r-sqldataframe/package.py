@@ -27,3 +27,6 @@ class RSqldataframe(RPackage):
     depends_on("r-biocgenerics", type=("build", "run"))
     depends_on("r-rsqlite", type=("build", "run"))
     depends_on("r-tibble", type=("build", "run"))
+    # Missing runtime deps discovered during install
+    depends_on("r-delayedarray", type=("build", "run"))
+    depends_on("r-duckdb", type=("build", "run"))

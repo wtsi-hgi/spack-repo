@@ -30,3 +30,7 @@ class RBgeedb(RPackage):
     depends_on("r-rsqlite", type=("build", "run"))
     depends_on("r-graph", type=("build", "run"))
     depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-zellkonverter", type=("build", "run"))
+    depends_on("r-anndata", type=("build", "run"))
+    depends_on("r-hdf5array", type=("build", "run"))
+    depends_on("r-bread", type=("build", "run"))

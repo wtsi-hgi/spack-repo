@@ -42,6 +42,10 @@ class RRtracklayer(RPackage):
     depends_on("r-biostrings@2.47.6:", type=("build", "run"))
     depends_on("r-zlibbioc", type=("build", "run"))
     depends_on("r-rcurl@1.4.2:", type=("build", "run"))
+    depends_on("r-curl", type=("build", "run"))
+    depends_on("r-httr", type=("build", "run"))
+    # C code includes <curl/curl.h>, requires system libcurl
+    depends_on("curl", type=("build", "link", "run"))
     depends_on("r-rsamtools@1.31.2:", type=("build", "run"))
     depends_on("r-genomicalignments@1.15.6:", type=("build", "run"))
     depends_on("r-biocio", type=("build", "run"))

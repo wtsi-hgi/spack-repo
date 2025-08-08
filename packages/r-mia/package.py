@@ -38,6 +38,7 @@ class RMia(RPackage):
     depends_on("r-scuttle", type=("build", "run"))
     depends_on("r-scater", type=("build", "run"))
     depends_on("r-dirichletmultinomial", type=("build", "run"))
+    depends_on("r-rbiom", type=("build", "run"))
     depends_on("r-rlang", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-tibble", type=("build", "run"))

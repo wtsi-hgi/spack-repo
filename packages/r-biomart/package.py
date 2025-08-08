@@ -42,6 +42,8 @@ class RBiomart(RPackage):
     depends_on("r-progress", type=("build", "run"))
     depends_on("r-stringr", type=("build", "run"))
     depends_on("r-httr", type=("build", "run"))
+    # Newer biomaRt releases use httr2 instead of/alongside httr
+    depends_on("r-httr2", type=("build", "run"))
     depends_on("r-digest", type=("build", "run"))
     depends_on("r-biocfilecache", type=("build", "run"))
     depends_on("r-rappdirs", type=("build", "run"))

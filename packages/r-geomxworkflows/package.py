@@ -39,3 +39,4 @@ class RGeomxworkflows(RPackage):
     depends_on("r-rtsne", type=("build", "run"))
     depends_on("r-pheatmap", type=("build", "run"))
     depends_on("r-biocstyle", type=("build", "run"))
+    depends_on("r-networkd3", type=("build", "run"))

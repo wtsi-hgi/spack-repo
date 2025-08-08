@@ -19,5 +19,6 @@ class RGsvadata(RPackage):
 
     depends_on("r@3.5:", type=("build", "run"))
     depends_on("r-biobase", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-gseabase", type=("build", "run"))
     depends_on("r-hgu95a-db", type=("build", "run"))

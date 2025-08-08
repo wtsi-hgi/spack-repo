@@ -35,6 +35,7 @@ class RGenomicalignments(RPackage):
     depends_on("r-iranges", type=("build", "run"))
     depends_on("r-genomeinfodb@1.13.1:", type=("build", "run"))
     depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-genomicranges@1.55.3:", type=("build", "run"), when="@1.44.0:")
     depends_on("r-summarizedexperiment@1.9.13:", type=("build", "run"))
     depends_on("r-biostrings", type=("build", "run"))
     depends_on("r-rsamtools", type=("build", "run"))

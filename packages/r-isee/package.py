@@ -31,6 +31,7 @@ class RIsee(RPackage):
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-ggrepel", type=("build", "run"))
     depends_on("r-colourpicker", type=("build", "run"))
+    depends_on("r-listviewer", type=("build", "run"))
     depends_on("r-igraph", type=("build", "run"))
     depends_on("r-vipor", type=("build", "run"))
     depends_on("r-mgcv", type=("build", "run"))

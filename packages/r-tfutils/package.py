@@ -31,3 +31,6 @@ class RTfutils(RPackage):
     depends_on("r-readxl", type=("build", "run"))
     depends_on("r-annotationdbi", type=("build", "run"))
     depends_on("r-org-hs-eg-db", type=("build", "run"))
+    # Missing runtime dependencies from DESCRIPTION
+    depends_on("r-genomicfiles", type=("build", "run"))
+    depends_on("r-summarizedexperiment", type=("build", "run"))

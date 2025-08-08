@@ -27,5 +27,7 @@ class RMsbackendsql(RPackage):
     depends_on("r-mscoreutils", type=("build", "run"))
     depends_on("r-iranges", type=("build", "run"))
     depends_on("r-data-table", type=("build", "run"))
+    depends_on("r-stringi", type=("build", "run"))
+    depends_on("r-fastmatch", type=("build", "run"))
     depends_on("r-progress", type=("build", "run"))
     depends_on("r-biocgenerics", type=("build", "run"))

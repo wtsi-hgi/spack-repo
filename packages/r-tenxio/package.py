@@ -28,6 +28,10 @@ class RTenxio(RPackage):
     depends_on("r-genomicranges", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))
     depends_on("r-matrixgenerics", type=("build", "run"))
+    # Required but missing before; installation failed with
+    # "dependencies 'HDF5Array', 'rhdf5' are not available"
+    depends_on("r-hdf5array", type=("build", "run"))
+    depends_on("r-rhdf5", type=("build", "run"))
     depends_on("r-rcurl", type=("build", "run"))
     depends_on("r-readr", type=("build", "run"))
     depends_on("r-r-utils", type=("build", "run"))

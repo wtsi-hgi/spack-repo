@@ -24,3 +24,4 @@ class RGgspavis(RPackage):
     depends_on("r-singlecellexperiment", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-ggside", type=("build", "run"))
+    depends_on("r-ggrepel", type=("build", "run"))

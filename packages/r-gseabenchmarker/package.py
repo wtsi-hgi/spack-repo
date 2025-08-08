@@ -18,6 +18,8 @@ class RGseabenchmarker(RPackage):
     version("1.28.1", commit="b2a9d81828e569fc2938298609cdf924f91a1123")
     version("1.22.0", commit="40d5688aea6f16b951b73999d6bf0de92f6c75db")
 
+    # GSEABenchmarkeR 1.28.x requires R >= 4.5.0
+    depends_on("r@4.5:", type=("build", "run"), when="@1.28:")
     depends_on("r@3.5:", type=("build", "run"))
     depends_on("r-biobase", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))

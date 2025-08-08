@@ -21,3 +21,4 @@ class RTrio(RPackage):
     depends_on("r-survival", type=("build", "run"))
     depends_on("r-siggenes", type=("build", "run"))
     depends_on("r-logicreg@1.6.1:", type=("build", "run"))
+    depends_on("r-data-table", type=("build", "run"))

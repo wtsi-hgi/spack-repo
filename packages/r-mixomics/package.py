@@ -34,3 +34,5 @@ class RMixomics(RPackage):
     depends_on("r-gridextra", type=("build", "run"))
     depends_on("r-ggrepel", type=("build", "run"))
     depends_on("r-biocparallel", type=("build", "run"))
+    depends_on("r-gsignal", type=("build", "run"))
+    depends_on("r-rgl", type=("build", "run"))

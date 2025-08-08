@@ -33,3 +33,12 @@ class RGgsc(RPackage):
     depends_on("r-tibble", type=("build", "run"))
     depends_on("r-yulab-utils", type=("build", "run"))
     depends_on("r-rcpparmadillo", type=("build", "run"))
+
+    def patch(self):
+        # Fix build with newer Armadillo: replace as_dense() on SpSubview_row
+        filter_file(
+            "w.row(i).as_dense()",
+            "arma::conv_to<arma::rowvec>::from(arma::mat(w.row(i)))",
+            "src/kde.cpp",
+            string=True,
+        )

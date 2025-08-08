@@ -28,6 +28,7 @@ class RGsva(RPackage):
     depends_on("r-matrix@1.5.0:", type=("build", "run"))
     depends_on("r-biocparallel", type=("build", "run"))
     depends_on("r-singlecellexperiment", type=("build", "run"))
+    depends_on("r-spatialexperiment", type=("build", "run"))
     depends_on("r-sparsematrixstats", type=("build", "run"))
     depends_on("r-delayedarray", type=("build", "run"))
     depends_on("r-delayedmatrixstats", type=("build", "run"))

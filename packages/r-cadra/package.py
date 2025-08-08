@@ -31,3 +31,4 @@ class RCadra(RPackage):
     depends_on("r-r-cache", type=("build", "run"))
     depends_on("r-reshape2", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r-knnmi", type=("build", "run"))
