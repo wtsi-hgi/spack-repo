@@ -18,4 +18,5 @@ class RRrdp(RPackage):
     version("1.36.0", commit="b269f9e2e286d76aee8a89c0d72a5cea40671f67")
 
     depends_on("r-biostrings@2.26.2:", type=("build", "run"))
+    depends_on("r-rjava", type=("build", "run"))
     depends_on("openjdk@1.4:", type=("build", "link", "run"))

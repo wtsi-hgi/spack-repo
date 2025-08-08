@@ -7,16 +7,18 @@ from spack.package import *
 
 
 class RTtservice(RPackage):
-	"""A Service for Tidy Transcriptomics Software Suite
+    """A Service for Tidy Transcriptomics Software Suite
 
-	It provides generic methods that are used by more than one package, avoiding conflicts. This package will be imported by 'tidySingleCellExperiment' and 'tidyseurat'. 
-	"""
-	
-	cran = "ttservice" 
+    It provides generic methods that are used by more than one package, avoiding
+    conflicts. This package will be imported by 'tidySingleCellExperiment' and
+    'tidyseurat'.
+    """
 
-	version("0.4.0", md5="89800fb63ee455786036bb5652070ea6")
+    cran = "ttservice"
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-matrix", type=("build", "run"))
-	depends_on("r-plotly", type=("build", "run"))
+    version("0.4.0", sha256="d7a1070c9a27e249602ef398616f1f3dd2b7b5d0d27ce23f17a7af74f3360ee3")
+
+    depends_on("r@4:", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-matrix", type=("build", "run"))
+    depends_on("r-plotly", type=("build", "run"))

@@ -24,9 +24,22 @@ class RRjava(RPackage):
 	depends_on("xz", type=("build", "link", "run"))
 	depends_on("bzip2", type=("build", "link", "run"))
 	depends_on("zlib", type=("build", "link", "run"))
+	depends_on("zstd", type=("build", "link", "run"))
+	depends_on("libtirpc", type=("build", "link", "run"))
 	depends_on("icu4c", type=("build", "link", "run"))
 	depends_on("libiconv", type=("build", "link", "run"))
 
 	def setup_build_environment(self, env):
 		spec = self.spec
-		env.append_flags("JAVAH", "{0}/javah".format(join_path(spec["java"].prefix.bin)))
+		# Ensure JRI subconfigure sees R headers and libs
+		r_include_dir = join_path(spec["r"].prefix, "rlib", "R", "include")
+		r_lib_dir = join_path(spec["r"].prefix, "rlib", "R", "lib")
+		env.append_flags("CPPFLAGS", f"-I{r_include_dir}")
+		env.append_flags("CFLAGS", f"-I{r_include_dir}")
+		env.append_flags("CXXFLAGS", f"-I{r_include_dir}")
+		# Add dependent libs to link flags for JRI link step
+		zstd_lib_dir = join_path(spec["zstd"].prefix, "lib")
+		tirpc_lib_dir = join_path(spec["libtirpc"].prefix, "lib")
+		env.append_flags("LDFLAGS", f"-L{r_lib_dir} -Wl,-rpath,{r_lib_dir} -L{zstd_lib_dir} -Wl,-rpath,{zstd_lib_dir} -L{tirpc_lib_dir} -Wl,-rpath,{tirpc_lib_dir}")
+		# Set JAVA_HOME for configure; do not force legacy 'javah'
+		env.set("JAVA_HOME", str(spec["openjdk"].prefix))
