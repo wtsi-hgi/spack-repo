@@ -3,6 +3,10 @@
   "version": "1.14.0",
   "succeeded": true,
   "recipe_change_needed": true,
-  "committed": false,
-  "timestamp": "2025-08-08T14:15:00Z"
+  "committed": true,
+  "timestamp": "2025-08-08T14:17:30Z",
+  "notes": [
+    "Added missing dependency r-zellkonverter to r-scatac-explorer recipe to resolve install error.",
+    "Validated in Singularity: library(scATAC.Explorer); packageVersion('scATAC.Explorer') == 1.14.0"
+  ]
 }
