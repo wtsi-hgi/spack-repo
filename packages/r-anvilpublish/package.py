@@ -24,3 +24,4 @@ class RAnvilpublish(RPackage):
     depends_on("r-yaml", type=("build", "run"))
     depends_on("r-readr", type=("build", "run"))
     depends_on("r-whisker", type=("build", "run"))
+    depends_on("r-anvilgcp", type=("build", "run"))

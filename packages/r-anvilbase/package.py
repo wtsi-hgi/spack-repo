@@ -21,5 +21,8 @@ class RAnvilbase(RPackage):
     depends_on("r-iranges", type=("build", "run"))
     depends_on("r-genomeinfodb", type=("build", "run"))
     depends_on("r-httr2", type=("build", "run"))
+    # AnVILBase DESCRIPTION lists these legacy dependencies explicitly
+    depends_on("r-httr", type=("build", "run"))
+    depends_on("r-jsonlite", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-tibble", type=("build", "run")) 
