@@ -25,3 +25,4 @@ class RPartcnv(RPackage):
     depends_on("r-annotationhub", type=("build", "run"))
     depends_on("r-magrittr", type=("build", "run"))
     depends_on("r-genomicranges", type=("build", "run"))
+    depends_on("r-biocstyle", type=("build", "run"))

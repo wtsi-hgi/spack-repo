@@ -24,3 +24,36 @@ class RWk(RPackage):
 	version("0.4.1", sha256="daa7351af0bd657740972016906c686f335b8fa922ba10250e5000ddc2bb8950")
 
 	depends_on("r@2.10:", type=("build", "run"))
+
+	# Some C sources in wk use the non-standard PI macro.
+	# Ensure it is defined consistently across compilers.
+	def setup_build_environment(self, env):
+		# Define PI if not provided by headers to fix build with newer R toolchains
+		env.append_flags("CPPFLAGS", "-DPI=3.14159265358979323846")
+
+	def patch(self):
+		# Inject PI definition directly into problematic C source if missing
+		import os
+		c_path = os.path.join('src', 'handle-crc.c')
+		if os.path.exists(c_path):
+			with open(c_path, 'r', encoding='utf-8') as f:
+				content = f.read()
+			injection = (
+				"\n#ifndef PI\n"
+				"#define PI 3.14159265358979323846\n"
+				"#endif\n"
+			)
+			if 'PI 3.14159265358979323846' not in content:
+				# Place after includes if possible
+				parts = content.split('\n')
+				insert_idx = 0
+				for idx, line in enumerate(parts[:50]):
+					if line.startswith('#include'):
+						insert_idx = idx + 1
+					else:
+						# stop moving once out of include block
+						if insert_idx and not line.startswith('#include'):
+							break
+				new_content = '\n'.join(parts[:insert_idx]) + injection + '\n'.join(parts[insert_idx:])
+				with open(c_path, 'w', encoding='utf-8') as f:
+					f.write(new_content)

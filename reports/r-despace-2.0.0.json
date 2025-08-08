@@ -1,0 +1,12 @@
+{
+  "package": "r-despace",
+  "version": "2.0.0",
+  "succeeded": true,
+  "recipe_changes": true,
+  "committed": true,
+  "timestamp": "2025-08-08T11:55:00Z",
+  "notes": [
+    "Fixed builds of transitive dependencies: r-wk (PI macro), r-spatstat-explore (PI macro), r-data-table (Calloc/Realloc/Free macros), r-sf (R include path).",
+    "Validated in Singularity: library(DESpace); packageVersion('DESpace') == 2.0.0"
+  ]
+}

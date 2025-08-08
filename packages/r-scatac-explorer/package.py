@@ -23,3 +23,5 @@ class RScatacExplorer(RPackage):
     depends_on("r-data-table", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))
+    # Required by the R package at install time
+    depends_on("r-zellkonverter", type=("build", "run"))

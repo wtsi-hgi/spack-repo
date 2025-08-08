@@ -37,3 +37,7 @@ class REvaluomer(RPackage):
     depends_on("r-prabclus", type=("build", "run"))
     depends_on("r-mclust", type=("build", "run"))
     depends_on("r-kableextra", type=("build", "run"))
+    # Missing runtime deps required by upstream DESCRIPTION
+    depends_on("r-rskc", type=("build", "run"))
+    depends_on("r-sparcl", type=("build", "run"))
+    depends_on("r-dendextend", type=("build", "run"))

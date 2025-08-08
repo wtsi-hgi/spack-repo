@@ -39,3 +39,32 @@ class RSpatstatExplore(RPackage):
 	depends_on("r-goftest@1.2-2:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-abind", type=("build", "run"))
+
+	def setup_build_environment(self, env):
+		# Some C files use PI constant directly
+		env.append_flags("CPPFLAGS", "-DPI=3.14159265358979323846")
+
+	def patch(self):
+		# Ensure PI is defined in C sources where used
+		import os
+		c_path = os.path.join('src', 'sphevol.c')
+		if os.path.exists(c_path):
+			with open(c_path, 'r', encoding='utf-8') as f:
+				content = f.read()
+			injection = (
+				"\n#ifndef PI\n"
+				"#define PI 3.14159265358979323846\n"
+				"#endif\n"
+			)
+			if 'PI 3.14159265358979323846' not in content:
+				parts = content.split('\n')
+				insert_idx = 0
+				for idx, line in enumerate(parts[:50]):
+					if line.startswith('#include'):
+						insert_idx = idx + 1
+					else:
+						if insert_idx and not line.startswith('#include'):
+							break
+				new_content = '\n'.join(parts[:insert_idx]) + injection + '\n'.join(parts[insert_idx:])
+				with open(c_path, 'w', encoding='utf-8') as f:
+					f.write(new_content)

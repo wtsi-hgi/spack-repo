@@ -39,3 +39,9 @@ class RSf(RPackage):
 	depends_on("geos@3.4.0:", type=("build", "link", "run"))
 	depends_on("proj@4.8.0:", type=("build", "link", "run"))
 	depends_on("sqlite@3:", type=("build", "link", "run"))
+
+	def setup_build_environment(self, env):
+		# Ensure R headers are on the include path for configure tests
+		r_include = join_path(self.spec['r'].prefix, 'rlib', 'R', 'include')
+		env.append_flags('CPPFLAGS', f"-I{r_include}")
+		env.append_flags('CFLAGS', f"-I{r_include}")
