@@ -1,7 +1,5 @@
 ---
-description: 
-globs: 
-alwaysApply: false
+alwaysApply: true
 ---
 First you should check if a recipe for it already exists in packages/ (for python or r package you need to add py-/r- prefix). If the prompt asks for a specific version, check that version in the recipe too.
 
@@ -23,7 +21,7 @@ If it does not have tags or releases, just clone the repo into a scratch locatio
 
 When generate recipes, don't use variants, just set all optional dependencies to true.
 
-Then install the package using spack:
+Then install the package using spack, do not run concretization before installing, as it is waste of time:
 `spack install {pkg}`
 If there is build error, read the logs and fix it and install again, until it succeeds.
 
@@ -34,5 +32,5 @@ script for python is more complicated, usually it is `python -c \\"import {pkg}\
 script for other packages would need to be found on the webpage as well.
 If the error message suggests any errors such as missing package, uninstall the package (`spack uninstall -y --all --dependents {pkg}`), fix the recipe and install it again.
 
-In the end, when it is validated, generate an appropriate commit message and commit the appropriate files in the packages/ folder and git push.
+In the end, when it is validated, generate an appropriate commit message and commit the appropriate files in the packages/ folder but do not git push.
 
