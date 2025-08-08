@@ -58,24 +58,15 @@ class PyCadqueryOcp(PythonPackage):
     depends_on("python@3.10:3.14", type=("build", "run"))
     # Use Python VTK wheels to satisfy libvtkWrappingPythonCore at runtime
     depends_on("py-vtk@9.3.1", type=("run"))
+    # X/GL runtime libraries required by the wheel at import time
+    depends_on("libx11", type=("run"))
+    depends_on("libxrender", type=("run"))
+    depends_on("libxcb", type=("run"))
+    depends_on("libxau", type=("run"))
+    depends_on("libxdmcp", type=("run"))
+    depends_on("mesa", type=("run"))
 
-    def setup_run_environment(self, env):
-        # Ensure py-vtk shared libs are discoverable at runtime
-        if "py-vtk" in self.spec:
-            pyvtk = self.spec["py-vtk"].prefix
-            # Add standard lib dirs
-            for libdir in ("lib", "lib64"):
-                env.prepend_path("LD_LIBRARY_PATH", os.path.join(pyvtk, libdir))
-            # Also add wheel .so location under site-packages/vtkmodules
-            py_version_short = self.spec["python"].version.up_to(2)
-            vtk_site = os.path.join(
-                pyvtk,
-                "lib",
-                f"python{py_version_short}",
-                "site-packages",
-                "vtkmodules",
-            )
-            env.prepend_path("LD_LIBRARY_PATH", vtk_site)
+    
     depends_on("python@3.10", when="@7.5.3.0-py310", type=("build", "run"))
     depends_on("python@3.8", when="@7.5.3.0-py38", type=("build", "run"))
     depends_on("python@3.9", when="@7.5.3.0-py39", type=("build", "run"))
@@ -117,4 +108,26 @@ class PyCadqueryOcp(PythonPackage):
     depends_on("python@3.12", when="@7.8.1.1.post1-py312", type=("build", "run"))
     depends_on("python@3.13", when="@7.8.1.1.post1-py313", type=("build", "run"))
 
+    def setup_run_environment(self, env):
+            # Ensure py-vtk shared libs are discoverable at runtime
+            if "py-vtk" in self.spec:
+                pyvtk = self.spec["py-vtk"].prefix
+                # Add standard lib dirs
+                for libdir in ("lib", "lib64"):
+                    env.prepend_path("LD_LIBRARY_PATH", os.path.join(pyvtk, libdir))
+                # Also add wheel .so location under site-packages/vtkmodules
+                py_version_short = self.spec["python"].version.up_to(2)
+                vtk_site = os.path.join(
+                    pyvtk,
+                    "lib",
+                    f"python{py_version_short}",
+                    "site-packages",
+                    "vtkmodules",
+                )
+                env.prepend_path("LD_LIBRARY_PATH", vtk_site)
+            # Add X11 and GL libraries needed by OCP's OpenGL bindings
+            for dep in ("libx11", "libxrender", "libxcb", "libxau", "libxdmcp", "mesa"):
+                if dep in self.spec:
+                    for libdir in ("lib", "lib64"):
+                        env.prepend_path("LD_LIBRARY_PATH", os.path.join(self.spec[dep].prefix, libdir))
 # {'vtk==9.2.6': ['7.7.2.2b2-py310', '7.7.2.2b2-py311'], 'vtk==9.3.1': ['7.8.1.0-py310', '7.8.1.0-py311', '7.8.1.0-py312', '7.8.1.1-py310', '7.8.1.1-py311', '7.8.1.1-py312', '7.8.1.1.post1-py310', '7.8.1.1.post1-py311', '7.8.1.1.post1-py312'], 'cadquery_vtk==9.3.1': ['7.8.1.0-py313', '7.8.1.1-py313', '7.8.1.1.post1-py313']}
