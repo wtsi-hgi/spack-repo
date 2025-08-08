@@ -59,16 +59,6 @@ class PyCadquery(PythonPackage):
     depends_on("py-casadi@3.6:", type=("build", "run"))
     depends_on("py-ezdxf", type=("build", "run"))
 
-    def install(self, spec, prefix):
-        super(PyCadquery, self).install(spec, prefix)
-        py_version_short = spec["python"].version.up_to(2)
-        init_file = join_path(prefix, "lib", f"python{py_version_short}", "site-packages", "cadquery", "__init__.py")
-        # Only disable top-level exporters import when ezdxf is not available
-        if os.path.exists(init_file) and "py-ezdxf" not in spec:
-            filter_file(
-                r"^from \.occ_impl import exporters",
-                "# exporters import disabled to avoid optional ezdxf runtime",
-                init_file,
-            )
+    # No post-install filtering needed; `py-ezdxf` is a hard dependency
 
 # {'pyparsing': ['1.2.1', '1.2.2', '1.2.4', '1.2.5'], 'cadquery-ocp(<7.8,>=7.7.0a0)': ['2.2.0', '2.3.1'], 'ezdxf': ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.1', '2.4.0', '2.5.2'], 'multimethod(<2.0,>=1.7)': ['2.2.0', '2.2.0b1', '2.2.0b2', '2.3.1'], 'nlopt': ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.1', '2.4.0'], 'nptyping(==2.0.1)': ['2.2.0', '2.2.0b1', '2.2.0b2', '2.3.1'], 'typish': ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.1', '2.4.0', '2.5.2'], 'casadi': ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.1', '2.4.0', '2.5.2'], 'path': ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.1', '2.4.0', '2.5.2'], "docutils;extra=='dev'": ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.0', '2.3.1', '2.4.0'], "ipython;extra=='dev'": ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.0', '2.3.1', '2.4.0'], "pytest;extra=='dev'": ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.0', '2.3.1', '2.4.0'], "black(==19.10b0);extra=='dev'": ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.0', '2.3.1'], "click(==8.0.4);extra=='dev'": ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.0', '2.3.1'], "ipython;extra=='ipython'": ['2.2.0', '2.2.0b0', '2.2.0b1', '2.2.0b2', '2.3.0', '2.3.1', '2.4.0'], 'cadquery-ocp': ['2.2.0b0', '2.2.0b1'], 'multimethod': ['2.2.0b0'], 'nptyping(>=2)': ['2.2.0b0'], 'cadquery-ocp(<7.7,>=7.6)': ['2.2.0b2'], 'cadquery-ocp<7.8,>=7.7.0a0': ['2.4.0'], 'multimethod==1.9.1': ['2.4.0'], 'nptyping==2.0.1': ['2.4.0'], "black==19.10b0;extra=='dev'": ['2.4.0'], "click==8.0.4;extra=='dev'": ['2.4.0'], 'cadquery-ocp<7.8,>=7.7.0': ['2.5.2'], 'multimethod<2.0,>=1.11': ['2.5.2'], 'nlopt<3.0,>=2.9.0': ['2.5.2'], 'docutils;extra=="dev"': ['2.5.2'], 'ipython;extra=="dev"': ['2.5.2'], 'pytest;extra=="dev"': ['2.5.2'], 'ipython;extra=="ipython"': ['2.5.2']}
