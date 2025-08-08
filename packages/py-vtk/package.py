@@ -3,9 +3,8 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack.package import *
 import os
-
-from spack.package import PythonPackage, depends_on, version
 
 
 class PyVtk(PythonPackage):
