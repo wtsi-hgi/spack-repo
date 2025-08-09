@@ -18,7 +18,9 @@ class RSesame(RPackage):
     version("1.26.0", commit="bc933e082dc3ae4f9b4d08e94f2538f43dfd6683")
     version("1.20.0", commit="a98099516325570762b68edc43e12c2052162745")
 
-    depends_on("r@4.3:", type=("build", "run"))
+    # Bioconductor 3.21 (sesame 1.26.x) requires R >= 4.5
+    depends_on("r@4.5:", type=("build", "run"), when="@1.26:")
+    depends_on("r@4.3:", type=("build", "run"), when="@:1.25")
     depends_on("r-sesamedata", type=("build", "run"))
     depends_on("r-biocparallel", type=("build", "run"))
     depends_on("r-stringr", type=("build", "run"))

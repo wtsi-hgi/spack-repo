@@ -12,13 +12,13 @@ class RSccomp(RPackage):
     A robust and outlier-aware method for testing differential tissue composition from single-cell data. This model can infer changes in tissue composition and heterogeneity, and can produce realistic data simulations based on any existing dataset. This model can also transfer knowledge from a large set of integrated datasets to increase accuracy further.
     """
 
-    homepage = "https://github.com/stemangiola/sccomp"
-    bioc = "sccomp"
+    homepage = "https://github.com/MangiolaLaboratory/sccomp"
+    git = "https://github.com/MangiolaLaboratory/sccomp.git"
 
     version("2.0.0", commit="a4668822705280dfc67d029e9b1faadfe504ca00")
-    version("1.6.0", commit="a9c2d70e1b06c86d053e7a700be224fa91d27c01")
 
     depends_on("r@4.2:", type=("build", "run"))
+    depends_on("r-instantiate@0.2.3:", type=("build", "run"))
     depends_on("r-rcpp@0.12:", type=("build", "run"))
     depends_on("r-rcppparallel@5.0.1:", type=("build", "run"))
     depends_on("r-rstantools@2.1.1:", type=("build", "run"))

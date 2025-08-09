@@ -49,3 +49,6 @@ class RCelda(RPackage):
     depends_on("r-complexheatmap", type=("build", "run"))
     depends_on("r-gridextra", type=("build", "run"))
     depends_on("r-circlize", type=("build", "run"))
+    depends_on("r-dendextend", type=("build", "run"))
+    depends_on("r-ggdendro", type=("build", "run"))
+    depends_on("r-proc", type=("build", "run"))

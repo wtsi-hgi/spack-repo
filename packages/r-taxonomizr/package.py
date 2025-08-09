@@ -14,7 +14,7 @@ class RTaxonomizr(RPackage):
 	
 	cran = "taxonomizr" 
 
-	version("0.10.6", md5="58acae0ed99c42b404cd54c098128b74")
+	version("0.10.6", sha256="f245be5861d1fccff89461ee320f26f66767caf316ac725007cec0c4be2099bc")
 
 	depends_on("r@3:", type=("build", "run"))
 	depends_on("r-rsqlite", type=("build", "run"))

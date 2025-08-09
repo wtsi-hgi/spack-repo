@@ -19,7 +19,7 @@ class RBold(RPackage):
 	homepage = "https://docs.ropensci.org/bold/"
 	cran = "bold" 
 
-	version("1.3.0", md5="bcc5a3631fabe5f26fc8e243fd7d7eec")
+	version("1.3.0", sha256="4920fbebd22fb1d0f1a31ccc09c98aec446bb6cb5f65a2610437e405c0512c68")
 
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-xml2", type=("build", "run"))

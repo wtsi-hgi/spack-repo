@@ -59,3 +59,6 @@ class RSaige(RPackage):
 
     def patch(self):
         filter_file("-llapack", "-lmkl_intel_lp64 -lmkl_sequential -lmkl_core -lm", "src/Makevars", string=True)
+        # Ensure C++14 is used to satisfy modern BH/Boost headers
+        filter_file("# CXX_STD = CXX11", "CXX_STD = CXX14", "src/Makevars", string=True)
+        filter_file("CXX_STD = CXX11", "CXX_STD = CXX14", "src/Makevars", string=True)

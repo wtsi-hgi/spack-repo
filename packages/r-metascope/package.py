@@ -35,5 +35,6 @@ class RMetascope(RPackage):
     depends_on("r-stringr", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-taxize", type=("build", "run"))
+    depends_on("r-taxonomizr", type=("build", "run"))
     depends_on("r-tidyr", type=("build", "run"))
     depends_on("r-qlcmatrix", type=("build", "run"))

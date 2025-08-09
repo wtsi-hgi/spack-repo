@@ -19,6 +19,13 @@ class RSpatialfeatureexperiment(RPackage):
     version("1.4.0", commit="13f2a6b4db97e177e789cf75fd995c7d3a324057")
 
     depends_on("r@4.2:", type=("build", "run"))
+    # Additional runtime dependencies surfaced during install on R 4.4
+    depends_on("r-data-table", type=("build", "run"))
+    depends_on("r-dropletutils", type=("build", "run"))
+    depends_on("r-ebimage", type=("build", "run"))
+    depends_on("r-sfheaders", type=("build", "run"))
+    depends_on("r-spatialreg", type=("build", "run"))
+    depends_on("r-zeallot", type=("build", "run"))
     depends_on("r-biocgenerics", type=("build", "run"))
     depends_on("r-biocneighbors", type=("build", "run"))
     depends_on("r-biocparallel", type=("build", "run"))
