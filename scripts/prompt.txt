@@ -1,0 +1,1 @@
+Do not give up. Although the rules tell you to check the packages and creating them first, in this case just try starting the installation directly since the packages with their versions should already in be spack-repo.

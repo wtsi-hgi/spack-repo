@@ -130,4 +130,6 @@ dmypy.json
 
 # VSCode
 *.code-workspace
-reports/
+
+# Automation logs
+iterative_runs/

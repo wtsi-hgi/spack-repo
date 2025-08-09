@@ -7,6 +7,9 @@ IFS=$'\n\t'
 ERRORS_FILE=${1:-/home/ubuntu/spack-repo/errors.txt}
 BATCH_SIZE=${2:-1} # 1 package per batch
 SLEEP_SECONDS=${3:-300} # 5 minutes
+# read the prompt from the file
+PROMPT_FILE=${4:-/home/ubuntu/spack-repo/scripts/prompt.txt}
+PROMPT=$(cat "$PROMPT_FILE")
 
 # Resolve absolute path for logs base
 LOG_BASE_DIR=${LOG_BASE_DIR:-/home/ubuntu/spack-repo/cursor_logs}
@@ -71,7 +74,7 @@ while (( index < TOTAL )); do
       echo "    cmd: cursor-agent -p \"try installing ${pkg} and debug the errors\" --model \"gpt-5\" " >&2
     else
       nohup bash -c \
-        "cursor-agent -p \"try installing and validating ${pkg} and debug the errors iteratively, until it succeeds. Do not give up.\" --model \"gpt-5\" --output-format text" \
+        "cursor-agent -p \"try installing and validating ${pkg} and debug the errors iteratively, until it succeeds. ${PROMPT}\" --model \"gpt-5\" --output-format text" \
         >"$log_out" 2>"$log_err" &
     fi
   done

@@ -5,14 +5,13 @@ IFS=$'\n\t'
 
 # Defaults (can be overridden by flags)
 ERRORS_FILE="/home/ubuntu/spack-repo/errors.txt"
-BATCH_SIZE=2
+BATCH_SIZE=1
 SLEEP_SECONDS=300         # delay between launches inside run_cursor_batches
-ROUND_WAIT_SECONDS=1800   # wait after a round before checking installs
 MAX_ROUNDS=10
 
 SCRIPT_DIR="/home/ubuntu/spack-repo/scripts"
-RUN_BATCHES_SH="/home/ubuntu/spack-repo/run_cursor_batches.sh"
-CHECK_SCRIPT="$SCRIPT_DIR/check_spack_installed.py"
+RUN_BATCHES_SH="/home/ubuntu/spack-repo/scripts/run_cursor_batches.sh"
+CHECK_SCRIPT="$SCRIPT_DIR/check_spack_installed.sh"
 OUT_BASE="/home/ubuntu/spack-repo/iterative_runs"
 
 print_usage() {
@@ -23,13 +22,12 @@ Options:
   --errors FILE           Path to initial errors file (default: $ERRORS_FILE)
   --batch-size N          Batch size per run (default: $BATCH_SIZE)
   --sleep-seconds S       Sleep between launches inside a run (default: $SLEEP_SECONDS)
-  --round-wait S          Wait after each run before re-checking installs (default: $ROUND_WAIT_SECONDS)
   --max-rounds N          Maximum number of iterations (default: $MAX_ROUNDS)
   --dry-run               Set DRY_RUN for run_cursor_batches (no jobs launched)
   -h, --help              Show this help
 
 This orchestrates iterative runs of run_cursor_batches and filters the failing
-packages after each round using check_spack_installed.py, until no progress or
+packages after each round using check_spack_installed.sh, until no progress or
 no failures remain. Outputs are saved under $OUT_BASE/<timestamp>/
 EOF
 }
@@ -43,8 +41,6 @@ while [[ $# -gt 0 ]]; do
       BATCH_SIZE="$2"; shift 2;;
     --sleep-seconds)
       SLEEP_SECONDS="$2"; shift 2;;
-    --round-wait)
-      ROUND_WAIT_SECONDS="$2"; shift 2;;
     --max-rounds)
       MAX_ROUNDS="$2"; shift 2;;
     --dry-run)
@@ -59,7 +55,7 @@ done
 # Checks
 command -v jq >/dev/null 2>&1 || { echo "Error: jq is required" >&2; exit 1; }
 [[ -x "$RUN_BATCHES_SH" ]] || { echo "Error: $RUN_BATCHES_SH not executable" >&2; exit 1; }
-[[ -f "$CHECK_SCRIPT" ]] || { echo "Error: $CHECK_SCRIPT not found" >&2; exit 1; }
+[[ -x "$CHECK_SCRIPT" ]] || { echo "Error: $CHECK_SCRIPT not executable" >&2; exit 1; }
 [[ -f "$ERRORS_FILE" ]] || { echo "Error: errors file not found: $ERRORS_FILE" >&2; exit 1; }
 
 timestamp=$(date +%Y%m%d_%H%M%S)
@@ -67,7 +63,7 @@ RUN_DIR="$OUT_BASE/$timestamp"
 mkdir -p "$RUN_DIR"
 
 echo "Starting iterative orchestration at $(date -Is)" | tee "$RUN_DIR/summary.log"
-echo "Inputs: errors=$ERRORS_FILE batch_size=$BATCH_SIZE sleep_seconds=$SLEEP_SECONDS round_wait=$ROUND_WAIT_SECONDS max_rounds=$MAX_ROUNDS dry_run=${DRY_RUN_FLAG:+yes}" | tee -a "$RUN_DIR/summary.log"
+echo "Inputs: errors=$ERRORS_FILE batch_size=$BATCH_SIZE sleep_seconds=$SLEEP_SECONDS max_rounds=$MAX_ROUNDS dry_run=${DRY_RUN_FLAG:+yes}" | tee -a "$RUN_DIR/summary.log"
 
 prev_errors="$ERRORS_FILE"
 prev_count=$(grep -vE '^\s*#' "$prev_errors" | sed -e 's/\r$//' | sed -e 's/^[[:space:]]*//' -e 's/[[:space:]]*$//' | grep -vE '^\s*$' | wc -l | awk '{print $1}')
@@ -84,12 +80,10 @@ for (( round=1; round<=MAX_ROUNDS; round++ )); do
     "$RUN_BATCHES_SH" "$prev_errors" "$BATCH_SIZE" "$SLEEP_SECONDS" | tee "$round_dir/run_cursor_batches.log"
   fi
 
-  echo "Waiting $ROUND_WAIT_SECONDS seconds to allow installs/debugging..." | tee -a "$RUN_DIR/summary.log"
-  sleep "$ROUND_WAIT_SECONDS"
 
   report_json="$round_dir/report.json"
   echo "Checking installed status for this round's list..." | tee -a "$RUN_DIR/summary.log"
-  python3 "$CHECK_SCRIPT" "$prev_errors" > "$report_json"
+  "$CHECK_SCRIPT" "$prev_errors" > "$report_json"
 
   # Create next errors file from failing ones
   next_errors="$round_dir/errors-next.txt"
