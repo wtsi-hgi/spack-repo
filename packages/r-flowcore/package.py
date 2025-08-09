@@ -36,8 +36,14 @@ class RFlowcore(RPackage):
 
     def setup_build_environment(self, env):
         # Ensure Boost libraries are linked when building shared object
-        # so that symbols from Boost.Filesystem/System are resolved.
+        # so that symbols from Boost.Filesystem/System are resolved, and that
+        # the linker does not drop them due to --as-needed defaults.
         if "+filesystem" in self.spec["boost"]:
+            # Prefer Spack Boost headers/libs over any system installs
+            boost_inc = self.spec["boost"].prefix.include
+            env.append_flags("CPPFLAGS", f"-I{boost_inc}")
+            env.append_flags("CXXFLAGS", f"-I{boost_inc}")
+            env.append_flags("PKG_CPPFLAGS", f"-I{boost_inc}")
             boost_ldflags = self.spec["boost"].libs.ld_flags
             # rpath flags to ensure the built shared object can find Boost at runtime
             boost_libdir = self.spec["boost"].prefix.lib
@@ -45,14 +51,13 @@ class RFlowcore(RPackage):
             boost_lib64dir = getattr(self.spec["boost"].prefix, "lib64", None)
             if boost_lib64dir and os.path.isdir(boost_lib64dir):
                 rpath_flags += f" -Wl,-rpath,{boost_lib64dir}"
-            # Prevent the linker from dropping Boost libs referenced from static cytolib
-            no_as_needed = "-Wl,--no-as-needed"
-            env.append_flags("LDFLAGS", boost_ldflags)
-            env.append_flags("LDFLAGS", rpath_flags)
-            env.append_flags("LDFLAGS", no_as_needed)
-            env.append_flags("PKG_LIBS", boost_ldflags)
-            env.append_flags("PKG_LIBS", rpath_flags)
-            env.append_flags("PKG_LIBS", no_as_needed)
+            # Place --no-as-needed BEFORE the boost -l flags so they are retained
+            # Explicitly link the non-suffixed Boost libs first; Spack's
+            # Boost provides both, but avoid accidental -mt preference
+            # that may be encoded in upstream Makevars.
+            pkglibs_prefix = f"-Wl,--no-as-needed {boost_ldflags} {rpath_flags}"
+            env.append_flags("PKG_LIBS", pkglibs_prefix)
+            env.append_flags("LDFLAGS", pkglibs_prefix)
             # Ensure runtime finds the Spack Boost libs (avoid picking system Boost)
             boost_lib = self.spec["boost"].prefix.lib
             env.prepend_path("LD_LIBRARY_PATH", boost_lib)
@@ -72,14 +77,28 @@ class RFlowcore(RPackage):
         boost_ldflags = self.spec["boost"].libs.ld_flags
         for mv in makevars_paths:
             if os.path.exists(mv):
-                with open(mv, "a", encoding="utf-8") as f:
-                    # Link with Boost and embed rpath to Spack's Boost
-                    f.write("\nPKG_LIBS += {}\n".format(boost_ldflags))
-                    boost_libdir = self.spec["boost"].prefix.lib
-                    f.write("PKG_LIBS += -Wl,-rpath,{}\n".format(boost_libdir))
-                    boost_lib64dir = getattr(self.spec["boost"].prefix, "lib64", None)
-                    if boost_lib64dir and os.path.isdir(boost_lib64dir):
-                        f.write("PKG_LIBS += -Wl,-rpath,{}\n".format(boost_lib64dir))
-                    # Ensure Boost libs are not dropped by --as-needed
-                    f.write("PKG_LIBS += -Wl,--no-as-needed\n")
+                # Read existing
+                with open(mv, "r", encoding="utf-8") as fh:
+                    content = fh.read()
+                lines = content.splitlines()
+                new_lines = []
+                inserted_prefix = False
+                for line in lines:
+                    new_lines.append(line)
+                    if not inserted_prefix and line.strip().startswith("PKG_LIBS") and "=" in line:
+                        # Prepend --no-as-needed so subsequent -l flags are retained
+                        new_lines.append("PKG_LIBS := -Wl,--no-as-needed $(PKG_LIBS)")
+                        inserted_prefix = True
+                # Append our Boost and rpath flags
+                boost_libdir = self.spec["boost"].prefix.lib
+                new_lines.append(f"PKG_LIBS += {boost_ldflags}")
+                new_lines.append(f"PKG_LIBS += -Wl,-rpath,{boost_libdir}")
+                # Also ensure we prefer non -mt names where present
+                new_lines.append("PKG_LIBS := $(patsubst -lboost_filesystem-mt,-lboost_filesystem,$(PKG_LIBS))")
+                new_lines.append("PKG_LIBS := $(patsubst -lboost_system-mt,-lboost_system,$(PKG_LIBS))")
+                boost_lib64dir = getattr(self.spec["boost"].prefix, "lib64", None)
+                if boost_lib64dir and os.path.isdir(boost_lib64dir):
+                    new_lines.append(f"PKG_LIBS += -Wl,-rpath,{boost_lib64dir}")
+                with open(mv, "w", encoding="utf-8") as fh:
+                    fh.write("\n".join(new_lines) + "\n")
                 break

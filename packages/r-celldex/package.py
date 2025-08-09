@@ -25,3 +25,7 @@ class RCelldex(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-delayedarray", type=("build", "run"))
     depends_on("r-delayedmatrixstats", type=("build", "run"))
+    depends_on("r-gypsum", type=("build", "run"))
+    depends_on("r-alabaster-base", type=("build", "run"))
+    depends_on("r-alabaster-matrix", type=("build", "run"))
+    depends_on("r-alabaster-se", type=("build", "run"))

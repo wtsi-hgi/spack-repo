@@ -24,6 +24,19 @@ class RCytolib(RPackage):
     depends_on("r-rhdf5lib", type=("build", "run"))
     depends_on("boost@1.72.0:+filesystem+system cxxstd=17", type=("build", "link", "run"))
 
+    def setup_build_environment(self, env):
+        # Force cytolib to link against the Spack-provided Boost libraries
+        # and avoid autodetected system Boost with legacy -mt suffix.
+        boost = self.spec["boost"]
+        env.set("BOOST_CPPFLAGS", f"-I{boost.prefix.include}")
+        env.set("BOOST_LDFLAGS", boost.libs.ld_flags)
+        env.set("BOOST_LIBS", boost.libs.ld_flags)
+        # Help the dynamic loader find Spack Boost at runtime
+        env.prepend_path("LD_LIBRARY_PATH", boost.prefix.lib)
+        lib64 = getattr(boost.prefix, "lib64", None)
+        if lib64 and os.path.isdir(lib64):
+            env.prepend_path("LD_LIBRARY_PATH", lib64)
+
     def patch(self):
         bundled_boost_dir = "src/boost"
         if os.path.exists(bundled_boost_dir):

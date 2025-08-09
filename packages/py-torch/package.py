@@ -594,6 +594,18 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
                 string=True,
             )
 
+        # GCC 11 provides _mm_storeu_si32(void*, __m128i) already. The vendored
+        # XNNPACK in 1.9.x defines it with a const void* parameter, causing a
+        # conflicting types error. Harmonize the signature to match GCC's
+        # intrinsic prototype for 1.9 releases.
+        if self.spec.satisfies("@1.9"):
+            filter_file(
+                "void _mm_storeu_si32(const void* address, __m128i v)",
+                "void _mm_storeu_si32(void* address, __m128i v)",
+                "third_party/XNNPACK/src/xnnpack/intrinsics-polyfill.h",
+                string=True,
+            )
+
     def setup_build_environment(self, env):
         """Set environment variables used to control the build.
 

@@ -27,6 +27,7 @@ class RMultirnaflow(RPackage):
     depends_on("r-factominer@2.6:", type=("build", "run"))
     depends_on("r-ggalluvial@0.12.3:", type=("build", "run"))
     depends_on("r-ggplot2@3.4:", type=("build", "run"))
+    depends_on("r-ggplotify", type=("build", "run"))
     depends_on("r-ggrepel@0.9.2:", type=("build", "run"))
     depends_on("r-ggsci@2.9:", type=("build", "run"))
     depends_on("r-gprofiler2@0.2.1:", type=("build", "run"))
