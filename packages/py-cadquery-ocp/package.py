@@ -5,7 +5,6 @@
 
 from spack.package import *
 import os
-import subprocess
 
 
 class PyCadqueryOcp(PythonPackage):
@@ -91,31 +90,6 @@ class PyCadqueryOcp(PythonPackage):
     depends_on("python@3.10", when="@7.7.2.2b2-py310", type=("build", "run"))
     depends_on("python@3.11", when="@7.7.2.2b2-py311", type=("build", "run"))
     depends_on("python@3.10", when="@7.8.1.1.post1-py310", type=("build", "run"))
-
-    def install(self, spec, prefix):
-        # Standard wheel install
-        super(PyCadqueryOcp, self).install(spec, prefix)
-
-        # Protect OCP extension modules from post-install strip steps
-        # that may be applied by container builders. Stripping these
-        # .so files can corrupt section alignment, causing runtime
-        # ImportError: ELF load command address/offset not page-aligned.
-        py_version_short = spec["python"].version.up_to(2)
-        ocp_dir = join_path(prefix, "lib", f"python{py_version_short}", "site-packages", "OCP")
-        if os.path.isdir(ocp_dir):
-            for root, _, files in os.walk(ocp_dir):
-                for fname in files:
-                    if fname.endswith(".so"):
-                        so_path = join_path(root, fname)
-                        # Try to make the file immutable; if that fails, at least drop write perms.
-                        try:
-                            subprocess.run(["chattr", "+i", so_path], check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-                        except Exception:
-                            pass
-                        try:
-                            os.chmod(so_path, 0o444)
-                        except Exception:
-                            pass
 
     def setup_run_environment(self, env):
             # Ensure py-vtk shared libs are discoverable at runtime
