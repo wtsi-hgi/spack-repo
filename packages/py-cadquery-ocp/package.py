@@ -105,6 +105,8 @@ class PyCadqueryOcp(PythonPackage):
                 py_version_short = spec["python"].version.up_to(2)
                 site_dir = join_path(prefix, "lib", f"python{py_version_short}", "site-packages")
                 ocp_src = join_path(site_dir, "OCP")
+                ocp_libs_src = join_path(site_dir, "cadquery_ocp.libs")
+                vtkmodules_src = join_path(site_dir, "vtkmodules")
                 shadow_root = join_path(prefix, "lib", f"python{py_version_short}", "ocp_unstripped")
                 ocp_shadow = join_path(shadow_root, "OCP")
                 if os.path.isdir(ocp_src):
@@ -122,22 +124,6 @@ class PyCadqueryOcp(PythonPackage):
                                 shutil.copy2(real_src, dst_path)
 
                     copy_dereference_tree(ocp_src, ocp_shadow)
-                    # Ensure a deterministic import precedence regardless of
-                    # sys.path defaults by inserting our shadow root first.
-                    pth_path = os.path.join(site_dir, "zz-ocp-shadow-first.pth")
-                    with open(pth_path, "w", encoding="utf-8") as f:
-                        f.write(f"import sys; sys.path.insert(0, {shadow_root!r})\n")
-
-                    # Also drop a .pth file into the container view site-packages
-                    # so that Python in the container prefers the shadow path.
-                    view_site = join_path("/opt/view", "lib", f"python{py_version_short}", "site-packages")
-                    try:
-                        mkdirp(view_site)
-                        pth_view = os.path.join(view_site, "zz-ocp-shadow-first.pth")
-                        with open(pth_view, "w", encoding="utf-8") as f:
-                            f.write(f"import sys; sys.path.insert(0, {shadow_root!r})\n")
-                    except Exception:
-                        pass
 
                     # Additionally, place real files into the container view path
                     # (not symlinks) and make .so immutable to avoid post-strip.
@@ -163,8 +149,14 @@ class PyCadqueryOcp(PythonPackage):
                     # the Spack install tree, then force Python to prefer it.
                     safe_site = join_path("/opt/ocp-safe", f"python{py_version_short}", "site-packages")
                     safe_ocp = join_path(safe_site, "OCP")
+                    safe_ocp_libs = join_path(safe_site, "cadquery_ocp.libs")
+                    safe_vtkmodules = join_path(safe_site, "vtkmodules")
                     try:
                         copy_dereference_tree(ocp_src, safe_ocp)
+                        if os.path.isdir(ocp_libs_src):
+                            copy_dereference_tree(ocp_libs_src, safe_ocp_libs)
+                        if os.path.isdir(vtkmodules_src):
+                            copy_dereference_tree(vtkmodules_src, safe_vtkmodules)
                         # Make .so files read-only/immutable as a precaution
                         for root, _, files in os.walk(safe_ocp):
                             for fname in files:
@@ -190,13 +182,16 @@ class PyCadqueryOcp(PythonPackage):
                 pass
 
     def setup_run_environment(self, env):
-            # At runtime, force Python to prefer the safe external site over /opt/view
+            # At runtime, force Python to prefer the safe external site (contains
+            # dereferenced real files for OCP, cadquery_ocp.libs, vtkmodules)
             py_version_short = self.spec["python"].version.up_to(2)
             safe_site = os.path.join("/opt/ocp-safe", f"python{py_version_short}", "site-packages")
             env.prepend_path("PYTHONPATH", safe_site)
             # Ensure dependent OCCT shared libraries in OCP/ are discoverable
             safe_ocp_dir = os.path.join(safe_site, "OCP")
             env.prepend_path("LD_LIBRARY_PATH", safe_ocp_dir)
+            # VTK Python shlibs live under vtkmodules in the wheel layout
+            env.prepend_path("LD_LIBRARY_PATH", os.path.join(safe_site, "vtkmodules"))
 
             # Ensure py-vtk shared libs are discoverable at runtime
             if "py-vtk" in self.spec:
