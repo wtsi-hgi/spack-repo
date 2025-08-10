@@ -19,7 +19,7 @@ class RDespace(RPackage):
     version("1.2.1", commit="ad6d77d5b954b31fe40e11e3a42ee25f5a2a907c")
 
     # DESCRIPTION: Depends: R (>= 4.5.0)
-    depends_on("r@4.5:", type=("build", "run"))
+    depends_on("r@4.5:", type=("build", "run"), when="@2.0.0:")
     depends_on("r-edger", type=("build", "run"))
     depends_on("r-limma", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))

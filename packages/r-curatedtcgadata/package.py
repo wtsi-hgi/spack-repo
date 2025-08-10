@@ -17,7 +17,7 @@ class RCuratedtcgadata(RPackage):
     version("1.30.0", commit="2bb3b337490dd0044e72e2cc4b4d4d3a83a5e2ee")
     version("1.24.1", commit="535c81a182aff87dc4430d0e3ce402da97e1c226")
 
-    depends_on("r@4.5:", type=("build", "run"))
+    depends_on("r@4.5:", type=("build", "run"), when="@1.30:")
     depends_on("r-multiassayexperiment", type=("build", "run"))
     depends_on("r-annotationhub", type=("build", "run"))
     depends_on("r-experimenthub", type=("build", "run"))
