@@ -5,18 +5,19 @@ from spack.package import *
 
 
 class RPwalign(RPackage):
-    """Pairwise alignment utilities.
+    """Optimal pairwise alignment interfaces and distances.
 
-    R wrapper/utilities providing pairwise sequence alignment functionality
-    used by MethTargetedNGS.
+    Provides pairwiseAlignment() and stringDist() utilities via Biostrings.
     """
 
-    cran = "pwalign"
-    # Use CRAN Archive for removed packages
-    url = "https://cran.r-project.org/src/contrib/Archive/pwalign/pwalign_0.2-4.tar.gz"
-    list_url = "https://cran.r-project.org/src/contrib/Archive/pwalign"
+    # Source from Bioconductor (CRAN archive URL is 404 now)
+    bioc = "pwalign"
 
-    version("0.2-4", sha256="80ac577d2dc10f4cce6bdb1b5677172cb7e4716eddfb585630e99fe0450e6ee1")
+    # Bioconductor release tarball and commit for 3.21
+    version("1.4.0", commit="9842dde8e5eb474c5d04dc4f1061a9cef758c744")
 
-    depends_on("r@3.0:", type=("build", "run"))
-    depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r@4.4:", type=("build", "run"))
+    depends_on("r-biocgenerics", type=("build", "run"))
+    depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r-iranges", type=("build", "run"))
+    depends_on("r-biostrings@2.71.5:", type=("build", "run"))
