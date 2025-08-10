@@ -44,8 +44,8 @@ class Libsbml(CMakePackage):
     version("5.19.5", sha256="6c0ec766e76bc6ad0c8626f3d208b4d9e826b36c816dff0c55e228206c82cb36")
     version("5.19.2", sha256="5b4d7a34e3d516877525041334ee9bcdd79a3dd6334d9e1a61e0687ed9751e78")
     version("5.19.0", sha256="127a44cc8352f998943bb0b91aaf4961604662541b701c993e0efd9bece5dfa8")
-    # Use Git tag for 5.18.0 to avoid archive fetch issues
-    version("5.18.0", tag="v5.18.0")
+    # Use released source archive for 5.18.0
+    version("5.18.0", sha256="6c01be2306ec0c9656b59cb082eb7b90176c39506dd0f912b02e08298a553360")
 
     # Core dependencies
     depends_on("cmake@3.16:", type="build")

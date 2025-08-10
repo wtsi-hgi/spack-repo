@@ -19,5 +19,6 @@ class RSangerseqr(RPackage):
 
     depends_on("r@3.5:", type=("build", "run"))
     depends_on("r-biostrings", type=("build", "run"))
+    depends_on("r-pwalign", type=("build", "run"))
     depends_on("r-stringr", type=("build", "run"))
     depends_on("r-shiny", type=("build", "run"))

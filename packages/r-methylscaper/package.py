@@ -28,3 +28,23 @@ class RMethylscaper(RPackage):
     depends_on("r-shinyfiles", type=("build", "run"))
     depends_on("r-data-table", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
+
+    def patch(self):
+        # Drop 'pwalign' from DESCRIPTION Imports to avoid removed CRAN dep
+        filter_file(r"^\s*pwalign,\s*\n", "", "DESCRIPTION")
+
+        # Ensure BiocGenerics is listed in Imports (needed for 'score' generic)
+        filter_file(
+            r"^(\s*Biostrings,\s*\n)",
+            "\\1  BiocGenerics,\n",
+            "DESCRIPTION",
+        )
+
+        # Switch NAMESPACE imports from pwalign -> Biostrings for alignment helpers
+        filter_file(r"importFrom\(pwalign,", r"importFrom(Biostrings,", "NAMESPACE")
+        # But import 'score' from BiocGenerics, not Biostrings
+        filter_file(
+            r"importFrom\(Biostrings,\s*score\)",
+            r"importFrom(BiocGenerics, score)",
+            "NAMESPACE",
+        )

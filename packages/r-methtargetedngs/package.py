@@ -23,3 +23,40 @@ class RMethtargetedngs(RPackage):
     depends_on("r-gplots", type=("build", "run"))
     depends_on("r-biostrings", type=("build", "run"))
     depends_on("hmmer@3:", type=("build", "link", "run"))
+
+    def patch(self):
+        # Some Bioconductor releases referenced the removed CRAN package
+        # 'pwalign'. Replace it with Biostrings which provides the needed
+        # pairwise alignment functionality.
+        # These edits are tolerant if upstream already removed pwalign.
+
+        # Remove 'pwalign' from DESCRIPTION Depends/Imports lines
+        filter_file(
+            r"(^\s*(?:Imports|Depends):[\s\S]*?)\bpwalign,?\s*",
+            r"\\1",
+            "DESCRIPTION",
+        )
+
+        # Switch NAMESPACE importFrom(pwalign, ...) -> Biostrings
+        filter_file(
+            r"importFrom\(pwalign,",
+            r"importFrom(Biostrings,",
+            "NAMESPACE",
+        )
+
+        # Replace explicit namespace qualifiers in R source files
+        for r_file in find("R", "*.R"):
+            filter_file(r"pwalign::", r"Biostrings::", r_file)
+
+        # Fix malformed DESCRIPTION combining Depends and Imports on one line,
+        # which leads R to look for a package literally named 'Imports'.
+        filter_file(
+            r"^Depends:(.*),\s*Imports:\s*(.*)$",
+            r"Depends:\1\nImports: \2",
+            "DESCRIPTION",
+        )
+
+        # If the previous substitution produced a literal "\\n", convert it to
+        # a real newline. Also handle any lingering ", Imports:" occurrences.
+        filter_file(r",\s*Imports:\s*", "\nImports: ", "DESCRIPTION")
+        filter_file(r"\\nImports:\s*", "\nImports: ", "DESCRIPTION")

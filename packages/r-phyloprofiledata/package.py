@@ -18,7 +18,8 @@ class RPhyloprofiledata(RPackage):
     version("1.22.3", commit="4b50e3eccb5645ae1c42a6b1b1fb562b7d56897d")
     version("1.16.0", commit="a7660cf16daa3b3e6c8639c3d09c595f6aaff63a")
 
-    depends_on("r@4.1:", type=("build", "run"))
+    # PhyloProfileData 1.22.3 requires R >= 4.5 (fails with 4.4.x)
+    depends_on("r@4.5:", type=("build", "run"))
     depends_on("r-experimenthub", type=("build", "run"))
     depends_on("r-biostrings", type=("build", "run"))
     depends_on("r-biocstyle", type=("build", "run"))

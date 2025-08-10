@@ -22,3 +22,5 @@ class RQsutils(RPackage):
     depends_on("r-biocgenerics", type=("build", "run"))
     depends_on("r-ape", type=("build", "run"))
     depends_on("r-psych", type=("build", "run"))
+    # CRAN dependency required by QSutils
+    depends_on("r-pwalign", type=("build", "run"))

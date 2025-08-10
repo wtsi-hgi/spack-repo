@@ -22,3 +22,28 @@ class RIpac(RPackage):
     depends_on("r-scatterplot3d", type=("build", "run"))
     depends_on("r-biostrings", type=("build", "run"))
     depends_on("r-multtest", type=("build", "run"))
+    # Upstream DESCRIPTION lists pwalign, but we vendor a patch to use
+    # Biostrings::pairwiseAlignment instead to avoid the removed CRAN dep.
+    # Apply edits in the patch() method below.
+
+    def patch(self):
+        # Drop pwalign from DESCRIPTION Depends
+        filter_file(
+            r"(Depends:.*)pwalign,\s*",
+            r"\\1",
+            "DESCRIPTION",
+        )
+
+        # Switch import to Biostrings::pairwiseAlignment in NAMESPACE
+        filter_file(
+            r"importFrom\(pwalign,\s*pairwiseAlignment\)",
+            r"importFrom(Biostrings, pairwiseAlignment)",
+            "NAMESPACE",
+        )
+
+        # Remove pwalign from vignette depends if present
+        filter_file(
+            r"pwalign,\s*",
+            r"",
+            join_path("vignettes", "iPAC.Rnw"),
+        )

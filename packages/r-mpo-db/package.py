@@ -19,6 +19,9 @@ class RMpoDb(RPackage):
     version("0.99.7", commit="76f7a15a7a3de6f43bec30588cbc17b769c7d30b")
 
     depends_on("r@4.3:", type=("build", "run"))
+    # Ensure a recent Bioconductor snapshot so required AnnotationHub
+    # resources (added 2024-08-01) are available during install/load
+    depends_on("r-biocversion@3.21:", type=("build", "run"))
     depends_on("r-annotationdbi", type=("build", "run"))
     depends_on("r-annotationhub", type=("build", "run"))
     depends_on("r-biocfilecache", type=("build", "run"))

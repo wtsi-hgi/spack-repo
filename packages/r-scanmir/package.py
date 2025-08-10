@@ -30,3 +30,49 @@ class RScanmir(RPackage):
     depends_on("r-seqlogo", type=("build", "run"))
     depends_on("r-cowplot", type=("build", "run"))
     depends_on("r-ggseqlogo", type=("build", "link", "run"))
+
+    # Upstream historically imported the removed CRAN package 'pwalign'.
+    # We avoid that unavailable dependency by switching references to
+    # Biostrings, which provides the required pairwiseAlignment utilities.
+    # The edits are tolerant in case upstream already dropped 'pwalign'.
+    def patch(self):
+        # Remove 'pwalign' from DESCRIPTION Depends/Imports lines (robust)
+        # Generic removal anywhere in the file to be safe
+        filter_file(r"\bpwalign\b,?\s*", "", "DESCRIPTION")
+
+        # Convert any accidental literal "\n" sequences to real newlines
+        filter_file(r"\\n", "\n", "DESCRIPTION")
+
+        # Remove duplicate standalone 'BiocGenerics,' lines to avoid dupes
+        filter_file(r"(?m)^\s*BiocGenerics,\s*$\n?", "", "DESCRIPTION")
+
+        # If Imports: is an empty line, seed it with BiocGenerics
+        filter_file(r"(?m)^Imports:\s*$", "Imports:\n    BiocGenerics,", "DESCRIPTION")
+
+        # Switch NAMESPACE importFrom(pwalign, ...) -> Biostrings
+        filter_file(
+            r"importFrom\(pwalign,",
+            r"importFrom(Biostrings,",
+            "NAMESPACE",
+        )
+
+        # Ensure imports for matching helpers are correct with current Bioc:
+        # - 'subject' generic lives in IRanges
+        # - 'pattern' remains in Biostrings
+        filter_file(
+            r"importFrom\((?:Biostrings|BiocGenerics),\s*subject\)",
+            r"importFrom(IRanges, subject)",
+            "NAMESPACE",
+        )
+        filter_file(
+            r"importFrom\(BiocGenerics,\s*pattern\)",
+            r"importFrom(Biostrings, pattern)",
+            "NAMESPACE",
+        )
+
+        # 'type' is not an exported Biostrings symbol; drop such imports
+        filter_file(r"^importFrom\(Biostrings,\s*type\)\s*$", "", "NAMESPACE")
+
+        # Replace explicit namespace qualifiers in R source files
+        for r_file in find("R", "*.R"):
+            filter_file(r"pwalign::", r"Biostrings::", r_file)

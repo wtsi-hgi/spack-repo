@@ -32,7 +32,8 @@ class RFlowcore(RPackage):
 
     # Required at link time because flowCore links against cytolib's static
     # library which depends on Boost filesystem/system symbols.
-    depends_on("boost@1.72:+filesystem+system cxxstd=17", type=("link"))
+    # Use Boost >=1.84 to match newer BH headers (1.87) and avoid ABI mismatch.
+    depends_on("boost@1.84:+filesystem+system cxxstd=17", type=("link"))
 
     def setup_build_environment(self, env):
         # Ensure Boost libraries are linked when building shared object

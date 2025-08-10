@@ -26,3 +26,14 @@ class RRhdf5lib(RPackage):
 
     depends_on("r@4.2:", type=("build", "run"), when="@1.22:")
     depends_on("zlib", type=("build", "link", "run"))
+
+    def setup_build_environment(self, env):
+        """Ensure R headers are available during configure/build.
+
+        Some Bioconductor packages (including Rhdf5lib) fail configure tests
+        because global R build flags inject `-include R_ext/Memory.h` without
+        adding R's include path. Provide it explicitly here.
+        """
+        r_include_dir = join_path(self.spec["r"].prefix, "rlib", "R", "include")
+        env.append_flags("CPPFLAGS", f"-I{r_include_dir}")
+        env.append_flags("PKG_CPPFLAGS", f"-I{r_include_dir}")

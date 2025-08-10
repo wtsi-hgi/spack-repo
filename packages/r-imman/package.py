@@ -21,3 +21,28 @@ class RImman(RPackage):
     depends_on("r-biostrings", type=("build", "run"))
     depends_on("r-igraph", type=("build", "run"))
     depends_on("r-seqinr", type=("build", "run"))
+
+    def patch(self):
+        # Some Bioconductor releases of IMMAN list the removed CRAN package
+        # 'pwalign' in DESCRIPTION/NAMESPACE. Since IMMAN only needs
+        # Biostrings::pairwiseAlignment, we drop the pwalign requirement and
+        # redirect imports/usages to Biostrings.
+        # - Tolerate absence of these entries if upstream already fixed them.
+
+        # Remove 'pwalign' from DESCRIPTION Depends/Imports lines
+        filter_file(
+            r"(^\s*(?:Imports|Depends):[\s\S]*?)\bpwalign,?\s*",
+            r"\1",
+            "DESCRIPTION",
+        )
+
+        # Switch NAMESPACE importFrom(pwalign, ...) -> Biostrings
+        filter_file(
+            r"importFrom\(pwalign,",
+            r"importFrom(Biostrings,",
+            "NAMESPACE",
+        )
+
+        # Replace explicit namespace qualifiers in R source files
+        for r_file in find("R", "*.R"):
+            filter_file(r"pwalign::", r"Biostrings::", r_file)
