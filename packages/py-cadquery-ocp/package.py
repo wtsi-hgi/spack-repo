@@ -5,6 +5,7 @@
 
 from spack.package import *
 import os
+import shutil
 import subprocess
 
 
@@ -107,8 +108,20 @@ class PyCadqueryOcp(PythonPackage):
                 shadow_root = join_path(prefix, "lib", f"python{py_version_short}", "ocp_unstripped")
                 ocp_shadow = join_path(shadow_root, "OCP")
                 if os.path.isdir(ocp_src):
-                    mkdirp(shadow_root)
-                    install_tree(ocp_src, ocp_shadow)
+                    def copy_dereference_tree(src_root, dst_root):
+                        mkdirp(dst_root)
+                        for current_dir, dirnames, filenames in os.walk(src_root):
+                            rel_dir = os.path.relpath(current_dir, src_root)
+                            target_dir = join_path(dst_root, rel_dir) if rel_dir != "." else dst_root
+                            mkdirp(target_dir)
+                            for filename in filenames:
+                                src_path = join_path(current_dir, filename)
+                                dst_path = join_path(target_dir, filename)
+                                # Always dereference symlinks
+                                real_src = os.path.realpath(src_path)
+                                shutil.copy2(real_src, dst_path)
+
+                    copy_dereference_tree(ocp_src, ocp_shadow)
                     # Ensure a deterministic import precedence regardless of
                     # sys.path defaults by inserting our shadow root first.
                     pth_path = os.path.join(site_dir, "zz-ocp-shadow-first.pth")
@@ -130,8 +143,7 @@ class PyCadqueryOcp(PythonPackage):
                     # (not symlinks) and make .so immutable to avoid post-strip.
                     view_ocp = join_path("/opt/view", "lib", f"python{py_version_short}", "site-packages", "OCP")
                     try:
-                        mkdirp(view_ocp)
-                        install_tree(ocp_src, view_ocp)
+                        copy_dereference_tree(ocp_src, view_ocp)
                         for root, _, files in os.walk(view_ocp):
                             for fname in files:
                                 if fname.endswith(".so"):
