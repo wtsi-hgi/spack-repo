@@ -158,16 +158,42 @@ class PyCadqueryOcp(PythonPackage):
                                         pass
                     except Exception:
                         pass
+
+                    # Install a completely safe copy outside of both /opt/view and
+                    # the Spack install tree, then force Python to prefer it.
+                    safe_site = join_path("/opt/ocp-safe", f"python{py_version_short}", "site-packages")
+                    safe_ocp = join_path(safe_site, "OCP")
+                    try:
+                        copy_dereference_tree(ocp_src, safe_ocp)
+                        # Make .so files read-only/immutable as a precaution
+                        for root, _, files in os.walk(safe_ocp):
+                            for fname in files:
+                                if fname.endswith(".so"):
+                                    so_path = os.path.join(root, fname)
+                                    try:
+                                        subprocess.run(["chattr", "+i", so_path], check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                                    except Exception:
+                                        pass
+                                    try:
+                                        os.chmod(so_path, 0o444)
+                                    except Exception:
+                                        pass
+                        # Drop a .pth into the view to always prepend the safe site
+                        view_site = join_path("/opt/view", "lib", f"python{py_version_short}", "site-packages")
+                        mkdirp(view_site)
+                        with open(os.path.join(view_site, "zz-ocp-safe-first.pth"), "w", encoding="utf-8") as f:
+                            f.write(f"import sys; sys.path.insert(0, {safe_site!r})\n")
+                    except Exception:
+                        pass
             except Exception:
                 # Best-effort: if anything fails, leave default layout
                 pass
 
     def setup_run_environment(self, env):
-            # Prepend the package's own site-packages so Python imports prefer the
-            # unstripped extensions from the Spack prefix over the stripped view.
+            # At runtime, force Python to prefer the safe external site over /opt/view
             py_version_short = self.spec["python"].version.up_to(2)
-            own_site = os.path.join(self.prefix, "lib", f"python{py_version_short}", "site-packages")
-            env.prepend_path("PYTHONPATH", own_site)
+            safe_site = os.path.join("/opt/ocp-safe", f"python{py_version_short}", "site-packages")
+            env.prepend_path("PYTHONPATH", safe_site)
 
             # Ensure py-vtk shared libs are discoverable at runtime
             if "py-vtk" in self.spec:
