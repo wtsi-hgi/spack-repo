@@ -5,7 +5,6 @@
 
 from spack.package import *
 import os
-import shutil
 
 
 class PyCadqueryOcp(PythonPackage):
@@ -91,6 +90,32 @@ class PyCadqueryOcp(PythonPackage):
     depends_on("python@3.10", when="@7.7.2.2b2-py310", type=("build", "run"))
     depends_on("python@3.11", when="@7.7.2.2b2-py311", type=("build", "run"))
     depends_on("python@3.10", when="@7.8.1.1.post1-py310", type=("build", "run"))
+
+    def install(self, spec, prefix):
+            # Standard wheel install
+            super(PyCadqueryOcp, self).install(spec, prefix)
+
+            # Create a shadow copy of the OCP package that will not be
+            # traversed by the /opt/view symlink tree during container build,
+            # so its .so files remain unstripped. Then, drop a .pth file into
+            # site-packages to force Python to prefer the shadow path.
+            try:
+                py_version_short = spec["python"].version.up_to(2)
+                site_dir = join_path(prefix, "lib", f"python{py_version_short}", "site-packages")
+                ocp_src = join_path(site_dir, "OCP")
+                shadow_root = join_path(prefix, "lib", f"python{py_version_short}", "ocp_unstripped")
+                ocp_shadow = join_path(shadow_root, "OCP")
+                if os.path.isdir(ocp_src):
+                    mkdirp(shadow_root)
+                    install_tree(ocp_src, ocp_shadow)
+                    # Ensure a deterministic import precedence regardless of
+                    # sys.path defaults by inserting our shadow root first.
+                    pth_path = os.path.join(site_dir, "zz-ocp-shadow-first.pth")
+                    with open(pth_path, "w", encoding="utf-8") as f:
+                        f.write(f"import sys; sys.path.insert(0, {shadow_root!r})\n")
+            except Exception:
+                # Best-effort: if anything fails, leave default layout
+                pass
 
     def setup_run_environment(self, env):
             # Prepend the package's own site-packages so Python imports prefer the
