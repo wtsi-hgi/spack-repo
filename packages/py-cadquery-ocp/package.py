@@ -5,6 +5,7 @@
 
 from spack.package import *
 import os
+import subprocess
 
 
 class PyCadqueryOcp(PythonPackage):
@@ -122,6 +123,27 @@ class PyCadqueryOcp(PythonPackage):
                         pth_view = os.path.join(view_site, "zz-ocp-shadow-first.pth")
                         with open(pth_view, "w", encoding="utf-8") as f:
                             f.write(f"import sys; sys.path.insert(0, {shadow_root!r})\n")
+                    except Exception:
+                        pass
+
+                    # Additionally, place real files into the container view path
+                    # (not symlinks) and make .so immutable to avoid post-strip.
+                    view_ocp = join_path("/opt/view", "lib", f"python{py_version_short}", "site-packages", "OCP")
+                    try:
+                        mkdirp(view_ocp)
+                        install_tree(ocp_src, view_ocp)
+                        for root, _, files in os.walk(view_ocp):
+                            for fname in files:
+                                if fname.endswith(".so"):
+                                    so_path = os.path.join(root, fname)
+                                    try:
+                                        subprocess.run(["chattr", "+i", so_path], check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+                                    except Exception:
+                                        pass
+                                    try:
+                                        os.chmod(so_path, 0o444)
+                                    except Exception:
+                                        pass
                     except Exception:
                         pass
             except Exception:
