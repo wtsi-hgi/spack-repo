@@ -113,6 +113,17 @@ class PyCadqueryOcp(PythonPackage):
                     pth_path = os.path.join(site_dir, "zz-ocp-shadow-first.pth")
                     with open(pth_path, "w", encoding="utf-8") as f:
                         f.write(f"import sys; sys.path.insert(0, {shadow_root!r})\n")
+
+                    # Also drop a .pth file into the container view site-packages
+                    # so that Python in the container prefers the shadow path.
+                    view_site = join_path("/opt/view", "lib", f"python{py_version_short}", "site-packages")
+                    try:
+                        mkdirp(view_site)
+                        pth_view = os.path.join(view_site, "zz-ocp-shadow-first.pth")
+                        with open(pth_view, "w", encoding="utf-8") as f:
+                            f.write(f"import sys; sys.path.insert(0, {shadow_root!r})\n")
+                    except Exception:
+                        pass
             except Exception:
                 # Best-effort: if anything fails, leave default layout
                 pass
