@@ -5,6 +5,7 @@
 
 from spack.package import *
 import os
+import shutil
 
 
 class PyCadqueryOcp(PythonPackage):
@@ -90,6 +91,26 @@ class PyCadqueryOcp(PythonPackage):
     depends_on("python@3.10", when="@7.7.2.2b2-py310", type=("build", "run"))
     depends_on("python@3.11", when="@7.7.2.2b2-py311", type=("build", "run"))
     depends_on("python@3.10", when="@7.8.1.1.post1-py310", type=("build", "run"))
+
+    def install(self, spec, prefix):
+        # Install the wheel into the standard Spack prefix first
+        super(PyCadqueryOcp, self).install(spec, prefix)
+
+        # Also copy the installed OCP package into the final view path used inside
+        # our containers so imports resolve to non-stripped binaries.
+        # Example target seen in working container:
+        #   /opt/view/lib/python3.10/site-packages/OCP
+        try:
+            py_version_short = spec["python"].version.up_to(2)
+            ocp_src = join_path(prefix, "lib", f"python{py_version_short}", "site-packages", "OCP")
+            if os.path.isdir(ocp_src):
+                ocp_dst = join_path("/opt/view", "lib", f"python{py_version_short}", "site-packages", "OCP")
+                os.makedirs(ocp_dst, exist_ok=True)
+                # Copy tree contents while allowing destination to pre-exist
+                shutil.copytree(ocp_src, ocp_dst, dirs_exist_ok=True)
+        except Exception:
+            # Best-effort copy; ignore failures outside container builds
+            pass
 
     def setup_run_environment(self, env):
             # Ensure py-vtk shared libs are discoverable at runtime
