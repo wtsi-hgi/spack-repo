@@ -194,6 +194,9 @@ class PyCadqueryOcp(PythonPackage):
             py_version_short = self.spec["python"].version.up_to(2)
             safe_site = os.path.join("/opt/ocp-safe", f"python{py_version_short}", "site-packages")
             env.prepend_path("PYTHONPATH", safe_site)
+            # Ensure dependent OCCT shared libraries in OCP/ are discoverable
+            safe_ocp_dir = os.path.join(safe_site, "OCP")
+            env.prepend_path("LD_LIBRARY_PATH", safe_ocp_dir)
 
             # Ensure py-vtk shared libs are discoverable at runtime
             if "py-vtk" in self.spec:
