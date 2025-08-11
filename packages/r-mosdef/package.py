@@ -10,6 +10,7 @@ class RMosdef(RPackage):
     version("1.5.1", commit="0964a99d45fa4a5bccac056ae78e61a0f3906a2c")
 
     depends_on("r@4.4:", type=("build", "run"))
+    depends_on("r-deseq2", type=("build", "run"))
     depends_on("r-dt", type=("build", "run"))
     depends_on("r-ggplot2@3.5.0:", type=("build", "run"))
     depends_on("r-ggforce", type=("build", "run"))
