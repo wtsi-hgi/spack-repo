@@ -3,15 +3,6 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-"""
-Example rationale: Typical Python package fetched from PyPI with standard build deps.
-
-What this teaches:
-- Set pypi to the source tarball path and declare version() with sha256.
-- Declare license() to document upstream licensing.
-- Prefer sha256 over md5 for modern sources.
-- Use depends_on("pkg", type=("build", "run")) to scope dependency roles.
-"""
 from spack.package import *
 
 

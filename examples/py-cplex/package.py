@@ -3,16 +3,6 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-"""
-Example rationale: Shows conditional dependencies via when= spec selectors.
-
-What this teaches:
-- Use url= for tarball releases outside PyPI/CRAN.
-- Multiple version() entries demonstrate pinning and reproducibility.
-- Prefer sha256 over md5 for modern sources.
-- Use depends_on("pkg", type=("build", "run")) to scope dependency roles.
-- Use when= selectors (e.g., when="@1.0:") for conditional constraints.
-"""
 from spack.package import *
 
 class PyCplex(PythonPackage):

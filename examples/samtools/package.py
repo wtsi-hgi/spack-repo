@@ -3,17 +3,6 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-"""
-Example rationale: Concise example illustrating basic Spack recipe structure.
-
-What this teaches:
-- Use url= for tarball releases outside PyPI/CRAN.
-- Declare license() to document upstream licensing.
-- Add maintainers(...) for ownership and review routing.
-- Multiple version() entries demonstrate pinning and reproducibility.
-- Prefer sha256 over md5 for modern sources.
-- Use depends_on("pkg", type=("build", "run")) to scope dependency roles.
-"""
 from spack.package import *
 
 

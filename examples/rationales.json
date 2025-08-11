@@ -1,0 +1,110 @@
+{
+  "py-agate": {
+    "rationale": "Typical Python package fetched from PyPI with standard build deps.",
+    "tips": [
+      "Set pypi to the source tarball path and declare version() with sha256.",
+      "Declare license() to document upstream licensing.",
+      "Prefer sha256 over md5 for modern sources.",
+      "Use depends_on(\"pkg\", type=(\"build\", \"run\")) to scope dependency roles."
+    ]
+  },
+  "py-cplex": {
+    "rationale": "Shows conditional dependencies via when= spec selectors.",
+    "tips": [
+      "Use url= for tarball releases outside PyPI/CRAN.",
+      "Multiple version() entries demonstrate pinning and reproducibility.",
+      "Prefer sha256 over md5 for modern sources.",
+      "Use depends_on(\"pkg\", type=(\"build\", \"run\")) to scope dependency roles.",
+      "Use when= selectors (e.g., when=\"@1.0:\") for conditional constraints."
+    ]
+  },
+  "py-deltalake": {
+    "rationale": "Demonstrates non-C toolchains (Rust/LLVM) as build dependencies.",
+    "tips": [
+      "Set pypi to the source tarball path and declare version() with sha256.",
+      "Prefer sha256 over md5 for modern sources.",
+      "Use depends_on(\"pkg\", type=(\"build\", \"run\")) to scope dependency roles.",
+      "Include non-C toolchains (rust/llvm) when upstream uses them."
+    ]
+  },
+  "py-functools32": {
+    "rationale": "Shows patch() using filter_file for inline source tweaks.",
+    "tips": [
+      "Set pypi to the source tarball path and declare version() with sha256.",
+      "Prefer sha256 over md5 for modern sources.",
+      "Use depends_on(\"pkg\", type=(\"build\", \"run\")) to scope dependency roles.",
+      "Use patch() + filter_file for simple text edits over external patch files."
+    ]
+  },
+  "py-popcorn": {
+    "rationale": "Git-sourced package pinned to a commit.",
+    "tips": [
+      "Use git= and version(..., commit=\"...\") for non-release sources.",
+      "Declare license() to document upstream licensing.",
+      "Use depends_on(\"pkg\", type=(\"build\", \"run\")) to scope dependency roles."
+    ]
+  },
+  "r-archr": {
+    "rationale": "Git-sourced package pinned to a commit.",
+    "tips": [
+      "Use git= and version(..., commit=\"...\") for non-release sources.",
+      "Use url= for tarball releases outside PyPI/CRAN.",
+      "Add maintainers(...) for ownership and review routing.",
+      "Prefer sha256 over md5 for modern sources.",
+      "Use depends_on(\"pkg\", type=(\"build\", \"run\")) to scope dependency roles.",
+      "Rcpp family deps show linking to compiled C++ code in R packages."
+    ]
+  },
+  "r-genabel-data": {
+    "rationale": "Typical R package fetched from CRAN with standard R deps.",
+    "tips": [
+      "Set cran to the CRAN package name; version() may use md5 from CRAN.",
+      "Prefer sha256 over md5 for modern sources."
+    ]
+  },
+  "r-plotlistr": {
+    "rationale": "Git-sourced package pinned to a commit.",
+    "tips": [
+      "Use git= and version(..., commit=\"...\") for non-release sources.",
+      "Declare license() to document upstream licensing.",
+      "Use depends_on(\"pkg\", type=(\"build\", \"run\")) to scope dependency roles."
+    ]
+  },
+  "r-rcppensmallen": {
+    "rationale": "Shows compiled R extensions via Rcpp/Eigen/Armadillo.",
+    "tips": [
+      "Set cran to the CRAN package name; version() may use md5 from CRAN.",
+      "Multiple version() entries demonstrate pinning and reproducibility.",
+      "Use depends_on(\"pkg\", type=(\"build\", \"run\")) to scope dependency roles.",
+      "Rcpp family deps show linking to compiled C++ code in R packages."
+    ]
+  },
+  "r-salso": {
+    "rationale": "Typical R package fetched from CRAN with standard R deps.",
+    "tips": [
+      "Set cran to the CRAN package name; version() may use md5 from CRAN.",
+      "Use depends_on(\"pkg\", type=(\"build\", \"run\")) to scope dependency roles.",
+      "Include non-C toolchains (rust/llvm) when upstream uses them.",
+      "Use patch() + filter_file for simple text edits over external patch files."
+    ]
+  },
+  "r-tok": {
+    "rationale": "Typical R package fetched from CRAN with standard R deps.",
+    "tips": [
+      "Set cran to the CRAN package name; version() may use md5 from CRAN.",
+      "Use depends_on(\"pkg\", type=(\"build\", \"run\")) to scope dependency roles.",
+      "Include non-C toolchains (rust/llvm) when upstream uses them."
+    ]
+  },
+  "samtools": {
+    "rationale": "Concise example illustrating basic Spack recipe structure.",
+    "tips": [
+      "Use url= for tarball releases outside PyPI/CRAN.",
+      "Declare license() to document upstream licensing.",
+      "Add maintainers(...) for ownership and review routing.",
+      "Multiple version() entries demonstrate pinning and reproducibility.",
+      "Prefer sha256 over md5 for modern sources.",
+      "Use depends_on(\"pkg\", type=(\"build\", \"run\")) to scope dependency roles."
+    ]
+  }
+}

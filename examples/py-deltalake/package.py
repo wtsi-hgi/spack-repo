@@ -3,15 +3,6 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-"""
-Example rationale: Demonstrates non-C toolchains (Rust/LLVM) as build dependencies.
-
-What this teaches:
-- Set pypi to the source tarball path and declare version() with sha256.
-- Prefer sha256 over md5 for modern sources.
-- Use depends_on("pkg", type=("build", "run")) to scope dependency roles.
-- Include non-C toolchains (rust/llvm) when upstream uses them.
-"""
 from spack.package import *
 
 class PyDeltalake(PythonPackage):

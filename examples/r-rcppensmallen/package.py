@@ -3,15 +3,6 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-"""
-Example rationale: Shows compiled R extensions via Rcpp/Eigen/Armadillo.
-
-What this teaches:
-- Set cran to the CRAN package name; version() may use md5 from CRAN.
-- Multiple version() entries demonstrate pinning and reproducibility.
-- Use depends_on("pkg", type=("build", "run")) to scope dependency roles.
-- Rcpp family deps show linking to compiled C++ code in R packages.
-"""
 from spack.package import *
 
 

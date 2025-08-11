@@ -3,13 +3,6 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-"""
-Example rationale: Typical R package fetched from CRAN with standard R deps.
-
-What this teaches:
-- Set cran to the CRAN package name; version() may use md5 from CRAN.
-- Prefer sha256 over md5 for modern sources.
-"""
 from spack.package import *
 
 class RGenabelData(RPackage):

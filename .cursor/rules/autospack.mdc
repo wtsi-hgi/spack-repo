@@ -20,7 +20,7 @@ If it doesn't exist there, the prompt would usually contain a url. Go to that pa
 
 If it does not have tags or releases, just clone the repo into a scratch location and get its latest commit SHA, and add a line like `version("20250411", commit="82a307f19fb8188373fdd6838be92d457bf65e06")` in the recipe using the commit date as the version id. You can find an example in `examples/py-popcorn`
 
-When generate recipes, don't use variants, just set all optional dependencies to true.
+When generate recipes, don't use variants, just set all optional dependencies to false.
 
 Then install the package using spack:
 `spack install {pkg}`

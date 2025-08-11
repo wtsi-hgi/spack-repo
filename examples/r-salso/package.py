@@ -3,15 +3,6 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-"""
-Example rationale: Typical R package fetched from CRAN with standard R deps.
-
-What this teaches:
-- Set cran to the CRAN package name; version() may use md5 from CRAN.
-- Use depends_on("pkg", type=("build", "run")) to scope dependency roles.
-- Include non-C toolchains (rust/llvm) when upstream uses them.
-- Use patch() + filter_file for simple text edits over external patch files.
-"""
 from spack.package import *
 
 

@@ -3,15 +3,6 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-"""
-Example rationale: Shows patch() using filter_file for inline source tweaks.
-
-What this teaches:
-- Set pypi to the source tarball path and declare version() with sha256.
-- Prefer sha256 over md5 for modern sources.
-- Use depends_on("pkg", type=("build", "run")) to scope dependency roles.
-- Use patch() + filter_file for simple text edits over external patch files.
-"""
 from spack.package import *
 
 class PyFunctools32(PythonPackage):
