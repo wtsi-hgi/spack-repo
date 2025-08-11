@@ -214,4 +214,50 @@ class PyCadqueryOcp(PythonPackage):
                 if dep in self.spec:
                     for libdir in ("lib", "lib64"):
                         env.prepend_path("LD_LIBRARY_PATH", os.path.join(self.spec[dep].prefix, libdir))
+
+    # Ensure real files (not symlinks) are placed into the view for OCP and
+    # its sibling wheels, so later container steps don't strip underlying
+    # symlink targets and break ELF alignment.
+    def add_files_to_view(self, view, merge_map):
+        # Let the default behavior populate the view first
+        super(PyCadqueryOcp, self).add_files_to_view(view, merge_map)
+
+        try:
+            py_version_short = self.spec["python"].version.up_to(2)
+            site_dir = join_path(self.prefix, "lib", f"python{py_version_short}", "site-packages")
+            ocp_src = join_path(site_dir, "OCP")
+            ocp_libs_src = join_path(site_dir, "cadquery_ocp.libs")
+            vtkmodules_src = join_path(site_dir, "vtkmodules")
+
+            view_site = join_path(view.root, "lib", f"python{py_version_short}", "site-packages")
+            ocp_dst = join_path(view_site, "OCP")
+            ocp_libs_dst = join_path(view_site, "cadquery_ocp.libs")
+            vtkmodules_dst = join_path(view_site, "vtkmodules")
+
+            def copy_deref_tree(src_root, dst_root):
+                if not os.path.isdir(src_root):
+                    return
+                mkdirp(dst_root)
+                for current_dir, dirnames, filenames in os.walk(src_root):
+                    rel_dir = os.path.relpath(current_dir, src_root)
+                    target_dir = join_path(dst_root, rel_dir) if rel_dir != "." else dst_root
+                    mkdirp(target_dir)
+                    for filename in filenames:
+                        src_path = join_path(current_dir, filename)
+                        dst_path = join_path(target_dir, filename)
+                        real_src = os.path.realpath(src_path)
+                        # Replace any pre-existing link/file
+                        if os.path.islink(dst_path) or os.path.exists(dst_path):
+                            try:
+                                os.remove(dst_path)
+                            except Exception:
+                                pass
+                        shutil.copy2(real_src, dst_path)
+
+            copy_deref_tree(ocp_src, ocp_dst)
+            copy_deref_tree(ocp_libs_src, ocp_libs_dst)
+            copy_deref_tree(vtkmodules_src, vtkmodules_dst)
+        except Exception:
+            # Best-effort only; fall back to default symlinks if this fails
+            pass
 # {'vtk==9.2.6': ['7.7.2.2b2-py310', '7.7.2.2b2-py311'], 'vtk==9.3.1': ['7.8.1.0-py310', '7.8.1.0-py311', '7.8.1.0-py312', '7.8.1.1-py310', '7.8.1.1-py311', '7.8.1.1-py312', '7.8.1.1.post1-py310', '7.8.1.1.post1-py311', '7.8.1.1.post1-py312'], 'cadquery_vtk==9.3.1': ['7.8.1.0-py313', '7.8.1.1-py313', '7.8.1.1.post1-py313']}
