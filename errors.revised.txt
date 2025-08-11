@@ -1,0 +1,9 @@
+r-celldex-1.18.0
+r-flowcore-2.20.0
+r-genetonic-3.2.0
+r-openprimer-1.30.0
+r-qsutils-1.26.0
+r-ramr-1.16.0
+r-sangerseqr-1.44.0
+sbml-5.18.0
+augustus-3.3.2
