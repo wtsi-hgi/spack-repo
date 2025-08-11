@@ -7,6 +7,7 @@ from spack.package import *
 import os
 import shutil
 import subprocess
+import spack.filesystem_view as sview
 
 
 class PyCadqueryOcp(PythonPackage):
@@ -94,105 +95,10 @@ class PyCadqueryOcp(PythonPackage):
     depends_on("python@3.10", when="@7.8.1.1.post1-py310", type=("build", "run"))
 
     def install(self, spec, prefix):
-            # Standard wheel install
+            # Standard wheel install; avoid writing to container paths here.
             super(PyCadqueryOcp, self).install(spec, prefix)
 
-            # Create a shadow copy of the OCP package that will not be
-            # traversed by the /opt/view symlink tree during container build,
-            # so its .so files remain unstripped. Then, drop a .pth file into
-            # site-packages to force Python to prefer the shadow path.
-            try:
-                py_version_short = spec["python"].version.up_to(2)
-                site_dir = join_path(prefix, "lib", f"python{py_version_short}", "site-packages")
-                ocp_src = join_path(site_dir, "OCP")
-                ocp_libs_src = join_path(site_dir, "cadquery_ocp.libs")
-                vtkmodules_src = join_path(site_dir, "vtkmodules")
-                shadow_root = join_path(prefix, "lib", f"python{py_version_short}", "ocp_unstripped")
-                ocp_shadow = join_path(shadow_root, "OCP")
-                if os.path.isdir(ocp_src):
-                    def copy_dereference_tree(src_root, dst_root):
-                        mkdirp(dst_root)
-                        for current_dir, dirnames, filenames in os.walk(src_root):
-                            rel_dir = os.path.relpath(current_dir, src_root)
-                            target_dir = join_path(dst_root, rel_dir) if rel_dir != "." else dst_root
-                            mkdirp(target_dir)
-                            for filename in filenames:
-                                src_path = join_path(current_dir, filename)
-                                dst_path = join_path(target_dir, filename)
-                                # Always dereference symlinks
-                                real_src = os.path.realpath(src_path)
-                                shutil.copy2(real_src, dst_path)
-
-                    copy_dereference_tree(ocp_src, ocp_shadow)
-
-                    # Additionally, place real files into the container view path
-                    # (not symlinks) and make .so immutable to avoid post-strip.
-                    view_ocp = join_path("/opt/view", "lib", f"python{py_version_short}", "site-packages", "OCP")
-                    try:
-                        copy_dereference_tree(ocp_src, view_ocp)
-                        for root, _, files in os.walk(view_ocp):
-                            for fname in files:
-                                if fname.endswith(".so"):
-                                    so_path = os.path.join(root, fname)
-                                    try:
-                                        subprocess.run(["chattr", "+i", so_path], check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-                                    except Exception:
-                                        pass
-                                    try:
-                                        os.chmod(so_path, 0o444)
-                                    except Exception:
-                                        pass
-                    except Exception:
-                        pass
-
-                    # Install a completely safe copy outside of both /opt/view and
-                    # the Spack install tree, then force Python to prefer it.
-                    safe_site = join_path("/opt/ocp-safe", f"python{py_version_short}", "site-packages")
-                    safe_ocp = join_path(safe_site, "OCP")
-                    safe_ocp_libs = join_path(safe_site, "cadquery_ocp.libs")
-                    safe_vtkmodules = join_path(safe_site, "vtkmodules")
-                    try:
-                        copy_dereference_tree(ocp_src, safe_ocp)
-                        if os.path.isdir(ocp_libs_src):
-                            copy_dereference_tree(ocp_libs_src, safe_ocp_libs)
-                        if os.path.isdir(vtkmodules_src):
-                            copy_dereference_tree(vtkmodules_src, safe_vtkmodules)
-                        # Make .so files read-only/immutable as a precaution
-                        for root, _, files in os.walk(safe_ocp):
-                            for fname in files:
-                                if fname.endswith(".so"):
-                                    so_path = os.path.join(root, fname)
-                                    try:
-                                        subprocess.run(["chattr", "+i", so_path], check=False, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
-                                    except Exception:
-                                        pass
-                                    try:
-                                        os.chmod(so_path, 0o444)
-                                    except Exception:
-                                        pass
-                        # Drop a .pth into the view to always prepend the safe site
-                        view_site = join_path("/opt/view", "lib", f"python{py_version_short}", "site-packages")
-                        mkdirp(view_site)
-                        with open(os.path.join(view_site, "zz-ocp-safe-first.pth"), "w", encoding="utf-8") as f:
-                            f.write(f"import sys; sys.path.insert(0, {safe_site!r})\n")
-                    except Exception:
-                        pass
-            except Exception:
-                # Best-effort: if anything fails, leave default layout
-                pass
-
     def setup_run_environment(self, env):
-            # At runtime, force Python to prefer the safe external site (contains
-            # dereferenced real files for OCP, cadquery_ocp.libs, vtkmodules)
-            py_version_short = self.spec["python"].version.up_to(2)
-            safe_site = os.path.join("/opt/ocp-safe", f"python{py_version_short}", "site-packages")
-            env.prepend_path("PYTHONPATH", safe_site)
-            # Ensure dependent OCCT shared libraries in OCP/ are discoverable
-            safe_ocp_dir = os.path.join(safe_site, "OCP")
-            env.prepend_path("LD_LIBRARY_PATH", safe_ocp_dir)
-            # VTK Python shlibs live under vtkmodules in the wheel layout
-            env.prepend_path("LD_LIBRARY_PATH", os.path.join(safe_site, "vtkmodules"))
-
             # Ensure py-vtk shared libs are discoverable at runtime
             if "py-vtk" in self.spec:
                 pyvtk = self.spec["py-vtk"].prefix
@@ -218,46 +124,27 @@ class PyCadqueryOcp(PythonPackage):
     # Ensure real files (not symlinks) are placed into the view for OCP and
     # its sibling wheels, so later container steps don't strip underlying
     # symlink targets and break ELF alignment.
-    def add_files_to_view(self, view, merge_map):
-        # Let the default behavior populate the view first
-        super(PyCadqueryOcp, self).add_files_to_view(view, merge_map)
+    def add_files_to_view(self, view, merge_map, skip_if_exists=True):
+        # Partition: force copy for wheel runtime dirs, otherwise defer to base
+        tokens = [
+            f"{os.sep}site-packages{os.sep}OCP{os.sep}",
+            f"{os.sep}site-packages{os.sep}cadquery_ocp.libs{os.sep}",
+            f"{os.sep}site-packages{os.sep}vtkmodules{os.sep}",
+        ]
+        targeted = {}
+        others = {}
+        for src, dst in merge_map.items():
+            if any(t in src for t in tokens):
+                targeted[src] = dst
+            else:
+                others[src] = dst
 
-        try:
-            py_version_short = self.spec["python"].version.up_to(2)
-            site_dir = join_path(self.prefix, "lib", f"python{py_version_short}", "site-packages")
-            ocp_src = join_path(site_dir, "OCP")
-            ocp_libs_src = join_path(site_dir, "cadquery_ocp.libs")
-            vtkmodules_src = join_path(site_dir, "vtkmodules")
+        if others:
+            super(PyCadqueryOcp, self).add_files_to_view(view, others, skip_if_exists)
 
-            view_site = join_path(view.root, "lib", f"python{py_version_short}", "site-packages")
-            ocp_dst = join_path(view_site, "OCP")
-            ocp_libs_dst = join_path(view_site, "cadquery_ocp.libs")
-            vtkmodules_dst = join_path(view_site, "vtkmodules")
-
-            def copy_deref_tree(src_root, dst_root):
-                if not os.path.isdir(src_root):
-                    return
-                mkdirp(dst_root)
-                for current_dir, dirnames, filenames in os.walk(src_root):
-                    rel_dir = os.path.relpath(current_dir, src_root)
-                    target_dir = join_path(dst_root, rel_dir) if rel_dir != "." else dst_root
-                    mkdirp(target_dir)
-                    for filename in filenames:
-                        src_path = join_path(current_dir, filename)
-                        dst_path = join_path(target_dir, filename)
-                        real_src = os.path.realpath(src_path)
-                        # Replace any pre-existing link/file
-                        if os.path.islink(dst_path) or os.path.exists(dst_path):
-                            try:
-                                os.remove(dst_path)
-                            except Exception:
-                                pass
-                        shutil.copy2(real_src, dst_path)
-
-            copy_deref_tree(ocp_src, ocp_dst)
-            copy_deref_tree(ocp_libs_src, ocp_libs_dst)
-            copy_deref_tree(vtkmodules_src, vtkmodules_dst)
-        except Exception:
-            # Best-effort only; fall back to default symlinks if this fails
-            pass
+        for src, dst in targeted.items():
+            if skip_if_exists and os.path.lexists(dst):
+                continue
+            mkdirp(os.path.dirname(dst))
+            sview.view_copy(os.path.realpath(src), dst, view=view, spec=self.spec)
 # {'vtk==9.2.6': ['7.7.2.2b2-py310', '7.7.2.2b2-py311'], 'vtk==9.3.1': ['7.8.1.0-py310', '7.8.1.0-py311', '7.8.1.0-py312', '7.8.1.1-py310', '7.8.1.1-py311', '7.8.1.1-py312', '7.8.1.1.post1-py310', '7.8.1.1.post1-py311', '7.8.1.1.post1-py312'], 'cadquery_vtk==9.3.1': ['7.8.1.0-py313', '7.8.1.1-py313', '7.8.1.1.post1-py313']}
