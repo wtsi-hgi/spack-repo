@@ -98,7 +98,67 @@ class PyCadqueryOcp(PythonPackage):
             # Standard wheel install; avoid writing to container paths here.
             super(PyCadqueryOcp, self).install(spec, prefix)
 
+            # Create a safe, unstripped copy of the wheel runtime under
+            # /opt/spack-environment so it is included in the final image and
+            # not processed by the strip step that targets /opt/view.
+            try:
+                py_version_short = spec["python"].version.up_to(2)
+                site_dir = join_path(prefix, "lib", f"python{py_version_short}", "site-packages")
+                ocp_src = join_path(site_dir, "OCP")
+                ocp_libs_src = join_path(site_dir, "cadquery_ocp.libs")
+                vtkmodules_src = join_path(site_dir, "vtkmodules")
+
+                safe_site = join_path("/opt/spack-environment", "ocp-safe", f"python{py_version_short}", "site-packages")
+                safe_ocp = join_path(safe_site, "OCP")
+                safe_ocp_libs = join_path(safe_site, "cadquery_ocp.libs")
+                safe_vtkmodules = join_path(safe_site, "vtkmodules")
+
+                def copy_deref_tree(src_root, dst_root):
+                    if not os.path.isdir(src_root):
+                        return
+                    mkdirp(dst_root)
+                    for current_dir, _, filenames in os.walk(src_root):
+                        rel_dir = os.path.relpath(current_dir, src_root)
+                        target_dir = join_path(dst_root, rel_dir) if rel_dir != "." else dst_root
+                        mkdirp(target_dir)
+                        for filename in filenames:
+                            src_path = join_path(current_dir, filename)
+                            dst_path = join_path(target_dir, filename)
+                            real_src = os.path.realpath(src_path)
+                            if os.path.islink(dst_path) or os.path.exists(dst_path):
+                                try:
+                                    os.remove(dst_path)
+                                except Exception:
+                                    pass
+                            shutil.copy2(real_src, dst_path)
+
+                # Populate safe site with dereferenced copies
+                copy_deref_tree(ocp_src, safe_ocp)
+                if os.path.isdir(ocp_libs_src):
+                    copy_deref_tree(ocp_libs_src, safe_ocp_libs)
+                if os.path.isdir(vtkmodules_src):
+                    copy_deref_tree(vtkmodules_src, safe_vtkmodules)
+
+                # Drop a .pth file into our own site-packages so Python inserts the
+                # safe site at sys.path[0] on interpreter startup.
+                try:
+                    pth_path = os.path.join(site_dir, "zz-ocp-safe-first.pth")
+                    with open(pth_path, "w", encoding="utf-8") as f:
+                        f.write(f"import sys; sys.path.insert(0, {safe_site!r})\n")
+                except Exception:
+                    pass
+            except Exception:
+                # Best-effort: if anything fails, leave default layout
+                pass
+
     def setup_run_environment(self, env):
+            # Prefer the safe site that contains dereferenced, unstripped files
+            py_version_short = self.spec["python"].version.up_to(2)
+            safe_site = os.path.join("/opt/spack-environment", "ocp-safe", f"python{py_version_short}", "site-packages")
+            env.prepend_path("PYTHONPATH", safe_site)
+            env.prepend_path("LD_LIBRARY_PATH", os.path.join(safe_site, "OCP"))
+            env.prepend_path("LD_LIBRARY_PATH", os.path.join(safe_site, "vtkmodules"))
+
             # Ensure py-vtk shared libs are discoverable at runtime
             if "py-vtk" in self.spec:
                 pyvtk = self.spec["py-vtk"].prefix
