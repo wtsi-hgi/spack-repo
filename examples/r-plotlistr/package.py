@@ -20,6 +20,14 @@
 # See the Spack documentation for more information on packaging.
 # ----------------------------------------------------------------------------
 
+"""
+Example rationale: Git-sourced package pinned to a commit.
+
+What this teaches:
+- Use git= and version(..., commit="...") for non-release sources.
+- Declare license() to document upstream licensing.
+- Use depends_on("pkg", type=("build", "run")) to scope dependency roles.
+"""
 from spack.package import *
 
 

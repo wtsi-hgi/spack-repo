@@ -3,6 +3,14 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+"""
+Example rationale: Git-sourced package pinned to a commit.
+
+What this teaches:
+- Use git= and version(..., commit="...") for non-release sources.
+- Declare license() to document upstream licensing.
+- Use depends_on("pkg", type=("build", "run")) to scope dependency roles.
+"""
 from spack.package import *
 
 
@@ -25,3 +33,4 @@ class PyPopcorn(PythonPackage):
     depends_on("py-statsmodels@0.8.0:")
     depends_on("py-matplotlib@1.5.1:")
     depends_on("r", type="run")  # Required for h2weight.R script
+

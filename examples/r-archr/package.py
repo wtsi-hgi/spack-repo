@@ -3,6 +3,17 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+"""
+Example rationale: Git-sourced package pinned to a commit.
+
+What this teaches:
+- Use git= and version(..., commit="...") for non-release sources.
+- Use url= for tarball releases outside PyPI/CRAN.
+- Add maintainers(...) for ownership and review routing.
+- Prefer sha256 over md5 for modern sources.
+- Use depends_on("pkg", type=("build", "run")) to scope dependency roles.
+- Rcpp family deps show linking to compiled C++ code in R packages.
+"""
 from spack.package import *
 
 
