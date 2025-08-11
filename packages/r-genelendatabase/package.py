@@ -29,3 +29,4 @@ class RGenelendatabase(RPackage):
     depends_on("r@2.11:", type=("build", "run"))
     depends_on("r-rtracklayer", type=("build", "run"))
     depends_on("r-genomicfeatures@1.3.15:", type=("build", "run"))
+    depends_on("r-txdbmaker", type=("build", "run"))

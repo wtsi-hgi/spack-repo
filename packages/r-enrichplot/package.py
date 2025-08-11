@@ -46,3 +46,5 @@ class REnrichplot(RPackage):
     depends_on("r-magrittr", type=("build", "run"))
     depends_on("r-ggtree", type=("build", "run"))
     depends_on("r-yulab-utils@0.0.8:", type=("build", "run"))
+
+    depends_on("r-ggtangle@0.0.5:", type=("build", "run"))

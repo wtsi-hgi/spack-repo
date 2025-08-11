@@ -56,3 +56,4 @@ class RGenetonic(RPackage):
     depends_on("r-tippy", type=("build", "run"))
     depends_on("r-viridis", type=("build", "run"))
     depends_on("r-visnetwork", type=("build", "run"))
+    depends_on("r-mosdef@1.1.0:", type=("build", "run"))

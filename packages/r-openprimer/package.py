@@ -45,6 +45,10 @@ class ROpenprimer(RPackage):
     depends_on("r-fitdistrplus@1.0.7:", type=("build", "run"))
     depends_on("r-uniqtag@1:", type=("build", "run"))
     depends_on("r-openxlsx@4.0.17:", type=("build", "run"))
+    # openPrimeR imports pairwiseAlignment helpers via Bioconductor 'pwalign'
+    depends_on("r-pwalign", type=("build", "run"))
     depends_on("mafft@7.305:", type=("build", "link", "run"))
-    depends_on("viennarna@2.4.1:", type=("build", "link", "run"))
+    # Disable ViennaRNA's Python interface to avoid build failures with Python 3.11
+    # The R package uses ViennaRNA binaries/libraries, not its Python bindings
+    depends_on("viennarna@2.4.1:~python", type=("build", "link", "run"))
     depends_on("pandoc@1.12.3:", type=("build", "link", "run"))
