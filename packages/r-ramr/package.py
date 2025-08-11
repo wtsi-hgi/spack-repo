@@ -38,9 +38,30 @@ class RRamr(RPackage):
         # Ensure we link against Rcpp shared library. Upstream Makevars overrides PKG_LIBS
         # and omits Rcpp's linker flags, which leads to undefined symbols at load time.
         # Replace literal assignment to include Rcpp LdFlags
+        # Rcpp:::LdFlags() can be NULL on newer Rcpp, so compute explicit flags
+        # that link against and runtime-load the Rcpp shared library.
+        # We query the Rcpp libs directory from R and add -L, -l and rpath.
         filter_file(
             "PKG_LIBS = $(SHLIB_OPENMP_CXXFLAGS)",
-            'PKG_LIBS = $(SHLIB_OPENMP_CXXFLAGS) $(shell "$(R_HOME)"/bin/Rscript -e "Rcpp:::LdFlags()")',
+            "PKG_LIBS = $(SHLIB_OPENMP_CXXFLAGS) $(shell \"$(R_HOME)\"/bin/Rscript -e 'lib<-system.file(\"libs\", package=\"Rcpp\"); if (nzchar(lib)) cat(paste0(\"-Wl,-rpath,\",lib,\" \", file.path(lib, \"Rcpp.so\")))')",
             "src/Makevars",
             string=True,
         )
+
+        # Workaround for missing instantiation of Rcpp::standard_delete_finalizer<std::vector<double>>
+        # Force the template to be instantiated in this package's shared library.
+        inst_src = join_path(self.stage.source_path, "src", "rcpp_instantiations.cpp")
+        with open(inst_src, "w") as f:
+            f.write(
+                "#include <Rcpp.h>\n"
+                "#include <vector>\n"
+                "template void Rcpp::standard_delete_finalizer<std::vector<double>>(std::vector<double>*);\n"
+                "template void Rcpp::standard_delete_finalizer<std::vector<unsigned int>>(std::vector<unsigned int>*);\n"
+            )
+
+    def setup_build_environment(self, env):
+        # Ensure the Rcpp shared library is discoverable at link and run time
+        rcpp_prefix = self.spec["r-rcpp"].prefix
+        rcpp_libs_dir = join_path(rcpp_prefix, "rlib", "R", "library", "Rcpp", "libs")
+        # Add rpath and -L/-l for Rcpp as an extra safeguard
+        env.append_flags("LDFLAGS", f"-Wl,-rpath,{rcpp_libs_dir} -L{rcpp_libs_dir} -lRcpp")
