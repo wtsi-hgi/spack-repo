@@ -17,7 +17,7 @@ if it doesn't exist in pypi, or if it is not a python package, then you should c
 
 If it doesn't exist there, the prompt would usually contain a url. Go to that page and create the recipe according to it. It is usually hosted on github, and you can get the tags and its corresponding source package file from the page `<url>/releases` or `<url>/tags`, for example for `https://github.com/theislab/scarches` it will be `https://github.com/theislab/scarches/archive/refs/tags/v0.5.1.tar.gz`. Create the recipe using `spack create --skip-editor -b` followed by the previous tar.gz url. there are several example recipes in the `examples/` folder in this repo. (py-agate for python, r-archr and r-plotlistr for r, samtools for others), follow these examples to modify the rest of the recipe.
 
-If it does not have tags or releases, just clone the repo into a scratch location and get its latest commit SHA, and add a line like `version("20250411", commit="82a307f19fb8188373fdd6838be92d457bf65e06")` in the recipe using the commit date as the version id. You can find an example in `examples/py-popcorn`
+If it does not have tags or releases, just clone the repo into a scratch location and get its latest commit SHA, and add a line like `version("20250411", commit="82a307f19fb8188373fdd6838be92d457bf65e06")` in the recipe using the commit date as the version id. You can find an example in `examples/py-popcorn`. Except for bioconductor packages, they should use the version described in the `DESCRIPTION` file with the commit of their latest bionconductor tag.
 
 When generate recipes, don't use variants, just set all optional dependencies to true.
 
