@@ -15,7 +15,7 @@ It also provides several functions for comparing trees to one another."""
 
     cran = "dendextend"
 
-    version("1.18.1", sha256="8e3a0d0311d7a61f6073e7c75805b1db0d2aebf21374138c0b5279f1825da385")
+    version("1.18.1", sha256="9d87a293a73e9399210cad62a4afc24ef4ce71e80bff05d5e74315428dd5a517")
     version("1.17.1", sha256="f131c9f3336c8b5a2426d0a4b7a444ec6e3e77f8c9f2313c9fa846e7d09bd562")
 
     depends_on("r@3.6:", type=("build", "run"))
