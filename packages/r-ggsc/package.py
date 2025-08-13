@@ -13,9 +13,10 @@ class RGgsc(RPackage):
     """
 
     homepage = "https://github.com/YuLab-SMU/ggsc"
-    bioc = "ggsc"
+    url = "https://bioconductor.org/packages/release/bioc/src/contrib/ggsc_1.6.1.tar.gz"
+    list_url = "https://bioconductor.org/packages/release/bioc/src/contrib/Archive/ggsc"
 
-    version("1.6.1", commit="e41de82b2da93ea3e4fccd143fedca8103d3add2")
+    version("1.6.1", sha256="238c23bcd36ae5fb2ee2001969c895a2fc4ce78af5372a13bfd9ea339689762b")
     version("1.0.2", commit="67f887190e24b7e641c801a82ee5a1c9fd19e778")
 
     depends_on("r-rcpp", type=("build", "run"))
