@@ -23,5 +23,4 @@ class RBiocversion(RPackage):
     bioc = "BiocVersion"
 
     depends_on("r@4.3:", type=("build", "run"))
-    # Relax R requirement for Bioconductor 3.21 to work with R 4.4.x
-    depends_on("r@4.4:", type=("build", "run"), when="@3.21:")
+    depends_on("r@4.5:", type=("build", "run"), when="@3.21:")
