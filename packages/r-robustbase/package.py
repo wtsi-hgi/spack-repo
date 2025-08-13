@@ -28,39 +28,33 @@ class RRobustbase(RPackage):
     depends_on("r@3.5:", type=("build", "run"))
     depends_on("r-deoptimr", type=("build", "run"))
 
-    # Add compatibility macros for R >= 4.5 where Calloc/Free are no longer
-    # provided via legacy headers.
+    # Add compatibility macros for R >= 4.5 where Calloc/Free macros
+    # were removed from legacy headers. Inject lightweight shims.
     def patch(self):
         insertion = (
-            "#include <R_ext/Memory.h>\n"
+            "#include <R_ext/RS.h>\n"
             "#ifndef Calloc\n"
-            "#define Calloc(n, t) (t*) R_Calloc((size_t)(n), sizeof(t))\n"
+            "#define Calloc(n, t) R_Calloc(n, t)\n"
             "#endif\n"
             "#ifndef Realloc\n"
-            "#define Realloc(p, n, t) (t*) R_Realloc((p), (size_t)(n), sizeof(t))\n"
+            "#define Realloc(p, n, t) R_Realloc(p, n, t)\n"
             "#endif\n"
             "#ifndef Free\n"
             "#define Free(p) R_Free(p)\n"
             "#endif\n"
         )
 
-        # robustbase uses several C sources; ensure macros are visible early.
-        candidates = [
-            "src/lmrob.c",
-            "src/qn_sn.c",
-            "src/robustbase_init.c",
-        ]
+        def inject_into(path):
+            did = filter_file(r"^#include <R.h>\s*$", "#include <R.h>\n" + insertion, path)
+            if did == 0:
+                did = filter_file(
+                    r"^#include <Rinternals.h>\s$|^#include <Rinternals.h>\s*$",
+                    "#include <Rinternals.h>\n" + insertion,
+                    path,
+                )
+            if did == 0:
+                # Prepend once at the start of the file
+                filter_file(r"\A", insertion, path)
 
-        for relpath in candidates:
-            filter_file(
-                r"(^#include <R.h>\s*$)",
-                r"\\1\n" + insertion,
-                relpath,
-                string=True,
-            )
-            filter_file(
-                r"(^#include <Rdefines.h>\s*$)",
-                r"\\1\n" + insertion,
-                relpath,
-                string=True,
-            )
+        for relpath in ("src/robustbase.h", "src/lmrob.c"):
+            inject_into(relpath)
