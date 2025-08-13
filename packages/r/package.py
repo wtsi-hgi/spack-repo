@@ -374,15 +374,6 @@ class R(AutotoolsPackage):
         env.set("R_LIBS_USER", "")
         env.set("R_MAKEVARS_SITE", join_path(self.etcdir, "Makeconf.spack"))
 
-        # Ensure legacy S compatibility macros (e.g., Calloc/Free) remain available
-        # for older CRAN packages under R 4.5+ that may be compiled with
-        # STRICT_R_HEADERS by default. Force-include the header that defines
-        # these macros to support legacy packages like 'bit' and 'digest'.
-        # Keep legacy macros available for C/C++ compilation as well
-        env.append_flags("PKG_CPPFLAGS", "-USTRICT_R_HEADERS -include R_ext/Memory.h")
-        env.append_flags("CFLAGS", "-USTRICT_R_HEADERS -include R_ext/Memory.h")
-        env.append_flags("CXXFLAGS", "-USTRICT_R_HEADERS -include R_ext/Memory.h")
-
         # Use the number of make_jobs set in spack. The make program will
         # determine how many jobs can actually be started.
         env.set("MAKEFLAGS", "-j{0}".format(make_jobs))
