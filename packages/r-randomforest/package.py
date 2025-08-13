@@ -21,9 +21,21 @@ class RRandomforest(RPackage):
 
 
 	# R 4.5 removed legacy Calloc/Free macros from public headers.
-	# Replace legacy macros with new API and include proper header.
+	# Inject portable compatibility macros so the C sources continue to build.
 	def patch(self):
-		insertion = "#include <R_ext/Memory.h>\n"
+		insertion = (
+			"#include <R_ext/RS.h>\n"
+			"#include <R_ext/Memory.h>\n"
+			"#ifndef Calloc\n"
+			"#define Calloc(n, t) R_Calloc((n), t)\n"
+			"#endif\n"
+			"#ifndef Realloc\n"
+			"#define Realloc(p, n, t) R_Realloc((p), (n), t)\n"
+			"#endif\n"
+			"#ifndef Free\n"
+			"#define Free(p) R_Free(p)\n"
+			"#endif\n"
+		)
 
 		files = [
 			"src/classTree.c",
@@ -33,21 +45,30 @@ class RRandomforest(RPackage):
 		]
 
 		for relpath in files:
-			# Replace legacy macros with the new API names
-			filter_file(r"\\bCalloc\\(", "R_Calloc(", relpath, string=True)
-			filter_file(r"\\bFree\\(", "R_Free(", relpath, string=True)
-			# Ensure we include the new memory header once
-			inserted = filter_file(
-				r"(^#include <R.h>\\s*$)",
-				r"\\1\n" + insertion,
-				relpath,
-				string=True,
-			)
-			if inserted == 0:
-				# Fallback: inject after Rinternals.h if R.h pattern did not match
+			# Prepend the compatibility block if it's not already present
+			with open(relpath, "r", encoding="utf-8") as f:
+				content = f.read()
+			if "#define Calloc" not in content:
+				with open(relpath, "w", encoding="utf-8") as f:
+					f.write(insertion + content)
+			else:
+				# Fix previously-inserted incorrect macros to forward to R_* forms
 				filter_file(
-					r"(^#include <Rinternals.h>\\s*$)",
-					r"\\1\n" + insertion,
+					r"^#define\s+Calloc\(n,\s*t\)\s*\(t\*\)\s*R_Calloc\(\(size_t\)\(n\),\s*sizeof\(t\)\)\s*$",
+					r"#define Calloc(n, t) R_Calloc((n), t)",
+					relpath,
+					string=True,
+				)
+				filter_file(
+					r"^#define\s+Realloc\(p,\s*n,\s*t\)\s*\(t\*\)\s*R_Realloc\(\(p\),\s*\(size_t\)\(n\),\s*sizeof\(t\)\)\s*$",
+					r"#define Realloc(p, n, t) R_Realloc((p), (n), t)",
+					relpath,
+					string=True,
+				)
+				# Ensure RS.h include is present (needed for R_Calloc/R_Realloc)
+				filter_file(
+					r"(?m)^#include <R_ext/Memory.h>$",
+					r"#include <R_ext/RS.h>\n#include <R_ext/Memory.h>",
 					relpath,
 					string=True,
 				)
