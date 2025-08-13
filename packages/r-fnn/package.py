@@ -26,3 +26,35 @@ class RFnn(RPackage):
 	version("0.6-2", sha256="f1fc410c341175bdb11a75b063c8c987e15b632378b56148d3566b91fca53a31")
 
 	depends_on("r@4:", type=("build", "run"))
+
+	# R 4.4/4.5 tightened headers; some older FNN sources
+	# reference Calloc/Free without including R headers explicitly.
+	# Ensure the translation unit sees R memory macros.
+	def patch(self):
+		try:
+			path = join_path('src', 'KNN_cover_tree.cpp')
+			with open(path, 'r') as fh:
+				contents = fh.read()
+			# Only inject once
+			injections = []
+			if '#include <R.h>' not in contents:
+				injections.append('#include <R.h>')
+			if '#include <R_ext/Memory.h>' not in contents:
+				injections.append('#include <R_ext/Memory.h>')
+			if '#include <cstdlib>' not in contents:
+				injections.append('#include <cstdlib>')
+			macro_block = (
+				"#ifndef Calloc\n"
+				"#define Calloc(n, t) (t*)std::calloc((size_t)(n), sizeof(t))\n"
+				"#endif\n"
+				"#ifndef Free\n"
+				"#define Free(p) std::free((void*)(p))\n"
+				"#endif\n"
+			)
+			if injections or 'define Calloc' not in contents:
+				injection_text = "\n".join(injections) + "\n" + macro_block + "\n"
+				with open(path, 'w') as fh:
+					fh.write(injection_text + contents)
+		except FileNotFoundError:
+			# Some versions may not have this file/name; ignore gracefully
+			pass
