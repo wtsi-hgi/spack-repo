@@ -74,7 +74,7 @@ while (( index < TOTAL )); do
       echo "    cmd: cursor-agent -p \"try installing ${pkg} and debug the errors\" --model \"gpt-5\" " >&2
     else
       nohup bash -c \
-        "cursor-agent -p \"try installing and validating ${pkg} and debug the errors iteratively, until it succeeds. ${PROMPT}\" --model \"gpt-5\" --output-format text" \
+        "cursor-agent -p \"Following the autospack instructions, try installing and validating ${pkg} and debug the errors iteratively, until it succeeds. ${PROMPT}\" --model \"gpt-5\" --output-format text -f" \
         >"$log_out" 2>"$log_err" &
     fi
   done
