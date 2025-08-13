@@ -1,0 +1,24 @@
+--- a/src/optimal.c
++++ b/src/optimal.c
+@@
+ #include <R.h>
+ #include <Rinternals.h>
++#include <R_ext/Memory.h>
++#ifndef Calloc
++#define Calloc(n, T) (T*) R_Calloc((n), T)
++#endif
++#ifndef Free
++#define Free R_Free
++#endif
+--- a/src/stress.c
++++ b/src/stress.c
+@@
+ #include <R.h>
+ #include <Rinternals.h>
++#include <R_ext/Memory.h>
++#ifndef Calloc
++#define Calloc(n, T) (T*) R_Calloc((n), T)
++#endif
++#ifndef Free
++#define Free R_Free
++#endif

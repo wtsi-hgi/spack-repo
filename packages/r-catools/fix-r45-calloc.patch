@@ -1,0 +1,19 @@
+*** Begin Patch
+*** Update File: src/runfunc.c
+@@
+-#else
+-  #include <R.h>
+-  #include <Rinternals.h>
+-#endif
++#else
++  #include <R.h>
++  #include <Rinternals.h>
++  #include <R_ext/Memory.h>
++  #ifndef Calloc
++  #define Calloc(b, t)  (t*) R_Calloc((b), t)
++  #endif
++  #ifndef Free
++  #define Free R_Free
++  #endif
++#endif
+*** End Patch

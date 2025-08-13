@@ -1,0 +1,20 @@
+--- a/src/runfunc.c
++++ b/src/runfunc.c
+@@ -45,9 +45,16 @@
+   #define Free free
+   #define PRINT(x) { if ((x)==(x)) printf("%04.1f ",x); else printf("NaN "); }
+ #else
+-  #include <R.h>
+-  #include <Rinternals.h>
+-#endif
++  #include <R.h>
++  #include <Rinternals.h>
++  #include <R_ext/Memory.h>
++  /* R >= 4.5 removed Calloc/Free macros; map to new API if missing */
++  #ifndef Calloc
++  #define Calloc(b, t)  (t*) R_Calloc((b), t)
++  #endif
++  #ifndef Free
++  #define Free R_Free
++  #endif
++#endif
