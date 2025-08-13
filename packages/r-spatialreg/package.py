@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 from spack.package import *
+import os
 
 
 class RSpatialreg(RPackage):
@@ -51,3 +52,50 @@ class RSpatialreg(RPackage):
 	depends_on("r-learnbayes", type=("build", "run"))
 	depends_on("r-nlme", type=("build", "run"))
 	depends_on("r-multcomp", type=("build", "run"))
+
+	# R 4.4+ requires explicitly including R_ext/Memory.h for Calloc/Free macros.
+	# spatialreg 1.3-2 uses Calloc/Free with a type argument (macro form).
+	# Ensure headers are included to avoid compile errors against newer R.
+	def patch(self):
+		if self.spec.satisfies("@1.3-2"):
+			src_dir = join_path(self.stage.source_path, "src")
+			if os.path.isdir(src_dir):
+				for filename in os.listdir(src_dir):
+					if not filename.endswith(".c"):
+						continue
+					path = join_path(src_dir, filename)
+					# Insert Memory.h after R.h includes when present
+					# Ensure Memory.h is included with a real newline after R.h
+					filter_file(
+						# Match either <R.h> or "R.h"
+						 r"(#include\s+[<\"]R.h[>\"])",
+						 "\\1\n#include <R_ext/Memory.h>",
+						 path,
+					)
+					# Fix any accidental literal "\n" sequences from prior edits
+					filter_file(
+						 r"(<R.h>)\\n#include <R_ext/Memory.h>",
+						 "\\1\n#include <R_ext/Memory.h>",
+						 path,
+					)
+				# Also ensure the package header includes Memory.h, as sources include it
+				header_path = join_path(src_dir, "spatialreg.h")
+				if os.path.exists(header_path):
+					# Prepend RS.h/Memory.h early to ensure Calloc/Free macros
+					filter_file(
+						 r"(^#ifndef USE_FC_LEN_T)",
+						 "#include <R_ext/RS.h>\n#include <R_ext/Memory.h>\n\\1",
+						 header_path,
+					)
+					# Fix any accidental literal "\n" sequences from prior edits
+					filter_file(
+						 r"#include <R_ext/RS.h>\\n#include <R_ext/Memory.h>\\n#ifndef",
+						 "#include <R_ext/RS.h>\n#include <R_ext/Memory.h>\n#ifndef",
+						 header_path,
+					)
+					# Map legacy Calloc/Free macros to modern R_Calloc/R_Free
+					filter_file(
+						 r"(#include\s+<R_ext/Memory.h>)",
+						 "\\1\n#ifndef Calloc\n#define Calloc(n,t) R_Calloc(n,t)\n#endif\n#ifndef Free\n#define Free(p) R_Free(p)\n#endif",
+						 header_path,
+					)
