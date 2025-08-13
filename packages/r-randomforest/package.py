@@ -18,3 +18,36 @@ class RRandomforest(RPackage):
 	version("4.6-12", sha256="6e512f8f88a51c01a918360acba61f1f39432f6e690bc231b7864218558b83c4")
 
 	depends_on("r@4.1:", type=("build", "run"))
+
+
+	# R 4.5 removed legacy Calloc/Free macros from public headers.
+	# Replace legacy macros with new API and include proper header.
+	def patch(self):
+		insertion = "#include <R_ext/Memory.h>\n"
+
+		files = [
+			"src/classTree.c",
+			"src/regTree.c",
+			"src/rfutils.c",
+			"src/regrf.c",
+		]
+
+		for relpath in files:
+			# Replace legacy macros with the new API names
+			filter_file(r"\\bCalloc\\(", "R_Calloc(", relpath, string=True)
+			filter_file(r"\\bFree\\(", "R_Free(", relpath, string=True)
+			# Ensure we include the new memory header once
+			inserted = filter_file(
+				r"(^#include <R.h>\\s*$)",
+				r"\\1\n" + insertion,
+				relpath,
+				string=True,
+			)
+			if inserted == 0:
+				# Fallback: inject after Rinternals.h if R.h pattern did not match
+				filter_file(
+					r"(^#include <Rinternals.h>\\s*$)",
+					r"\\1\n" + insertion,
+					relpath,
+					string=True,
+				)

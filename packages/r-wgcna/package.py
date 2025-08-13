@@ -41,3 +41,21 @@ class RWgcna(RPackage):
 	depends_on("r-go-db", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
+
+	# R 4.5 enforces stricter header inclusion. Some WGCNA C sources
+	# expect Calloc/Free without explicitly including the right headers.
+	# Ensure the legacy alloc macros are available during compilation.
+	def setup_build_environment(self, env):
+		if self.spec.satisfies('^r@4.5:'):
+			# Map deprecated Calloc/Free to supported R_Calloc/R_Free and ensure headers.
+			flags = ' '.join([
+				'-USTRICT_R_HEADERS',
+				'-include R.h',
+				'-include R_ext/RS.h',
+				'-include R_ext/Memory.h',
+				'-include stdbool.h',
+				'-DCalloc=R_Calloc',
+				'-DFree=R_Free',
+			])
+			env.append_flags('PKG_CPPFLAGS', flags)
+			env.append_flags('PKG_CFLAGS', flags)

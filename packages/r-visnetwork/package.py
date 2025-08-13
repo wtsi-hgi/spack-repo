@@ -15,7 +15,7 @@ class RVisnetwork(RPackage):
 
 	cran = "visNetwork"
 
-	version("2.1.2", md5="e087fe1968b31a861c2b464ba3b5c4af")
+	version("2.1.2", sha256="47c99d42fc89e6ae929257b2648d998c5ffed60dff97ad7e47613f5a0c1ddc84")
 	version("2.1.0", sha256="f6f0cc0f0f131a32159ff8fefccea4b4ea9b45af21fd431a8d75dcc712f5168a")
 
 	depends_on("r@3.0:", type=("build", "run"))

@@ -21,3 +21,20 @@ class RJpeg(RPackage):
 
 	depends_on("r@2.9:", type=("build", "run"))
 	depends_on("libjpeg", type=("build", "link", "run"))
+
+	# R 4.5 stopped implicitly including <stdbool.h> in its
+	# public headers. Older CRAN releases of 'jpeg' expect 'bool'
+	# to be available via R headers and fail to compile.
+	# Force-include stdbool to maintain compatibility.
+	def setup_build_environment(self, env):
+		# Limit to R >= 4.5 for minimal surface area
+		try:
+			from spack.version import Version
+			if self.spec.satisfies('^r@4.5:'):
+				# R packages honor PKG_CPPFLAGS/PKG_CFLAGS during compilation
+				env.append_flags('PKG_CPPFLAGS', '-include stdbool.h')
+				env.append_flags('PKG_CFLAGS', '-include stdbool.h')
+		except Exception:
+			# If anything goes wrong, still attempt to add flags
+			env.append_flags('PKG_CPPFLAGS', '-include stdbool.h')
+			env.append_flags('PKG_CFLAGS', '-include stdbool.h')

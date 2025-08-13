@@ -14,6 +14,7 @@ class RZeallot(RPackage):
 
     cran = "zeallot"
 
-    version("0.1.0", sha256="6b008b843616a692e0e3906902fe414ebce338a54b6dad5cd863a5bd2cd03cb2")
+    # CRAN re-rolled archives can change checksums; update to fetched one
+    version("0.1.0", sha256="439f1213c97c8ddef9a1e1499bdf81c2940859f78b76bc86ba476cebd88ba1e9")
 
     depends_on("r@3.5:", type=("build", "run"))
