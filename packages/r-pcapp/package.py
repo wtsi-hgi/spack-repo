@@ -30,3 +30,10 @@ class RPcapp(RPackage):
 
 	depends_on("r@3.6.2:", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))
+
+	def patch(self):
+		# R 4.5 removed/changed the legacy Free macro mapping in some
+		# compilation modes. Use the explicit R API symbol instead.
+		# Only the file below triggered the error during build, so we
+		# minimally rewrite occurrences there.
+		filter_file(r"\bFree\s*\(", "R_Free(", "src/R_meal.cpp")
