@@ -33,3 +33,32 @@ class RDesctools(RPackage):
 	depends_on("r-withr", type=("build", "run"))
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-bh", type=("build", "run"))
+
+	def patch(self):
+		# Fix deprecated Calloc/Free usage for R >= 4.5 in src/ks.c
+		# Inject R_ext/Memory.h and compatibility macros after including R headers
+		insertion = (
+			"#include <R.h>\n"
+			"#include <Rinternals.h>\n"
+			"#include <R_ext/Memory.h>\n"
+			"#ifndef Calloc\n"
+			"#define Calloc(n, T) (T*) R_Calloc((n), T)\n"
+			"#endif\n"
+			"#ifndef Free\n"
+			"#define Free R_Free\n"
+			"#endif\n"
+		)
+		# If file exists, replace bare R.h include with the extended block
+		filter_file(r"#include <R.h>", insertion, "src/ks.c", string=True)
+
+		# Fix missing PI macro in src/pointinpolygon.c for newer R toolchains
+		pp_insertion = (
+			"#include <R.h>\n"
+			"#include <Rinternals.h>\n"
+			"#include <R_ext/Memory.h>\n"
+			"#include <math.h>\n"
+			"#ifndef PI\n"
+			"#define PI 3.14159265358979323846\n"
+			"#endif\n"
+		)
+		filter_file(r"#include <R.h>", pp_insertion, "src/pointinpolygon.c", string=True)

@@ -46,4 +46,5 @@ class RCner(RPackage):
     depends_on("r-go-db@3.3:", type=("build", "run"))
     depends_on("r-r-utils@2.3:", type=("build", "run"))
     depends_on("r-keggrest@1.14:", type=("build", "run"))
+    depends_on("r-pwalign", type=("build", "run"))
     depends_on("zlib", type=("build", "link", "run"))
