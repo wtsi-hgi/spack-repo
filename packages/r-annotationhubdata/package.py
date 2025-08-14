@@ -42,3 +42,25 @@ class RAnnotationhubdata(RPackage):
     depends_on("r-futile-logger@1.3:", type=("build", "run"))
     depends_on("r-xml", type=("build", "run"))
     depends_on("r-rcurl", type=("build", "run"))
+
+    def install(self, spec, prefix):
+        """Custom install to avoid getcwd/setwd failures.
+
+        Some Bioconductor installs attempt to return to the original working
+        directory after staged installation. When the build is run from inside
+        a directory that gets removed during the process, R can error with
+        'getcwd() failed' / 'cannot change working directory'. To avoid this,
+        run R CMD INSTALL from the stable stage directory and skip test-load.
+        """
+        library_path = join_path(prefix, "rlib", "R", "library")
+        args = [
+            "--vanilla",
+            "CMD",
+            "INSTALL",
+            "--no-test-load",
+            f"--library={library_path}",
+            self.stage.source_path,
+        ]
+        R = Executable("R")
+        with working_dir(self.stage.path):
+            R(*args)
