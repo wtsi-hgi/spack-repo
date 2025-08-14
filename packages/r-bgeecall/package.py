@@ -30,4 +30,6 @@ class RBgeecall(RPackage):
     depends_on("r-sjmisc", type=("build", "run"))
     depends_on("r-rslurm", type=("build", "run"))
     depends_on("r-rhdf5", type=("build", "run"))
+    # Required by BgeeCall per DESCRIPTION (Imports)
+    depends_on("r-txdbmaker", type=("build", "run"))
     depends_on("kallisto", type=("build", "link", "run"))
