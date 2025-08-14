@@ -43,3 +43,7 @@ class RChippeakanno(RPackage):
     depends_on("r-multtest", type=("build", "run"))
     depends_on("r-regioner", type=("build", "run"))
     depends_on("r-rtracklayer", type=("build", "run"))
+    # Missing dependencies discovered during build
+    depends_on("r-pwalign", type=("build", "run"))
+    depends_on("r-universalmotif", type=("build", "run"))
+    depends_on("r-data-table", type=("build", "run"))
