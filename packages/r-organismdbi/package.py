@@ -41,3 +41,5 @@ class ROrganismdbi(RPackage):
     depends_on("r-rbgl", type=("build", "run"))
     depends_on("r-dbi", type=("build", "run"))
     depends_on("r-s4vectors@0.9.25:", type=("build", "run"))
+    # Newer OrganismDbi depends on Bioconductor 'txdbmaker'
+    depends_on("r-txdbmaker", type=("build", "run"))

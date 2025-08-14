@@ -53,3 +53,21 @@ class RTxdbmaker(RPackage):
             ns = ns.replace("import(Seqinfo)", "import(GenomeInfoDb)")
             with open(ns_path, "w", encoding="utf-8") as f:
                 f.write(ns)
+
+    def install(self, spec, prefix):
+        # Avoid running R CMD INSTALL from within the source directory since
+        # some Bioconductor helpers remove it during staged install, which can
+        # cause setwd(startdir) failures on exit. Run from a stable directory
+        # and skip test-load to prevent post-install getcwd errors.
+        library_path = join_path(prefix, "rlib", "R", "library")
+        args = [
+            "--vanilla",
+            "CMD",
+            "INSTALL",
+            "--no-test-load",
+            f"--library={library_path}",
+            self.stage.source_path,
+        ]
+        R = Executable("R")
+        with working_dir(self.stage.path):
+            R(*args)
