@@ -30,6 +30,8 @@ class RAspli(RPackage):
     depends_on("r-rsamtools", type=("build", "run"))
     depends_on("r-biocstyle", type=("build", "run"))
     depends_on("r-igraph", type=("build", "run"))
+    # Required at runtime by ASpli (Bioconductor) to build TxDb objects
+    depends_on("r-txdbmaker", type=("build", "run"))
     depends_on("r-htmltools", type=("build", "run"))
     depends_on("r-data-table", type=("build", "run"))
     depends_on("r-upsetr", type=("build", "run"))
