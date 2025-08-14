@@ -41,3 +41,5 @@ class RAmplican(RPackage):
     depends_on("r-rmarkdown@1.6:", type=("build", "run"))
     depends_on("r-knitr@1.16:", type=("build", "run"))
     depends_on("r-cluster@2.1.4:", type=("build", "run"))
+    # Upstream DESCRIPTION lists 'pwalign'; provide it explicitly so R can resolve it
+    depends_on("r-pwalign", type=("build", "run"))
