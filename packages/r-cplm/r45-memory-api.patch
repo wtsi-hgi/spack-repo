@@ -1,0 +1,15 @@
+--- a/cplm/src/common.h
++++ b/cplm/src/common.h
+@@
+-#include <R.h>
+-#include <Rinternals.h>
++#include <R.h>
++#include <Rinternals.h>
++#include <R_ext/Memory.h>
++/* R >= 4.5 deprecates Calloc/Free. Map to new API when missing. */
++#ifndef Calloc
++#define Calloc(n, T) (T*) R_Calloc((n), T)
++#endif
++#ifndef Free
++#define Free R_Free
++#endif

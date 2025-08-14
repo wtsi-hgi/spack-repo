@@ -37,6 +37,9 @@ class RBenchdamic(RPackage):
     depends_on("r-dearseq", type=("build", "run"))
     depends_on("r-microbiomestat", type=("build", "run"))
     depends_on("r-maaslin2", type=("build", "run"))
+    # Additional runtime imports declared in DESCRIPTION
+    depends_on("r-corncob", type=("build", "run"))
+    depends_on("r-microbiome", type=("build", "run"))
     depends_on("r-gunifrac", type=("build", "run"))
     depends_on("r-metagenomeseq", type=("build", "run"))
     depends_on("r-mglm", type=("build", "run"))
@@ -48,3 +51,10 @@ class RBenchdamic(RPackage):
     depends_on("r-ggridges", type=("build", "run"))
     depends_on("r-cowplot", type=("build", "run"))
     depends_on("r-tidytext", type=("build", "run"))
+
+    # benchdamic optionally supports 'maaslin3'. We remap it to Maaslin2 for R>=4.5 builds
+    def patch(self):
+        # Remove 'maaslin3' from Imports to avoid install-time dependency
+        filter_file(r"^[ \t]*maaslin3,?\s*$", "", "DESCRIPTION")
+        # If NAMESPACE imports maaslin3 symbol, map to Maaslin2
+        filter_file(r"importFrom\(maaslin3,\s*maaslin3\)", "importFrom(Maaslin2, Maaslin2)", "NAMESPACE")
