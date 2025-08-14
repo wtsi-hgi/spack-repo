@@ -25,3 +25,5 @@ class RMsexperiment(RPackage):
     depends_on("r-spectra", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-qfeatures", type=("build", "run"))
+    # Missing runtime dependency reported by install logs
+    depends_on("r-dbi", type=("build", "run"))
