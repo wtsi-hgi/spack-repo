@@ -20,3 +20,11 @@ class RSna(RPackage):
 	depends_on("r@2:", type=("build", "run"))
 	depends_on("r-statnet-common", type=("build", "run"))
 	depends_on("r-network", type=("build", "run"))
+
+	# R 4.5 tightened headers; some C sources in sna
+	# rely on PI macro without defining it. Define PI via CFLAGS
+	# to avoid build failures on modern R toolchains.
+	def setup_build_environment(self, env):
+		# Ensure the macro is visible to the C preprocessor used by R
+		env.append_flags('PKG_CPPFLAGS', '-DPI=3.14159265358979323846')
+		env.append_flags('CPPFLAGS', '-DPI=3.14159265358979323846')
