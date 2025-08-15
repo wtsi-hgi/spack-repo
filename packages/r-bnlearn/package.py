@@ -31,4 +31,24 @@ Inference
 	version("4.9.2", md5="9bb72beab67578e9190e50b135fd36ca")
 	version("4.9.1", md5="635e44be0c40c2e924118674ef1e9ec6")
 
+	# R 4.5 removed legacy Calloc/Free unless including R_ext/Memory.h
+	# Ensure compatibility by injecting the required include and macros for 4.9.3.
+	def patch(self):
+		# Apply only to the version that needs it
+		if not self.spec.satisfies("@4.9.3"):
+			return
+		# Inject R 4.5 memory API compatibility into central header
+		filter_file(
+			r'^#include <R_ext/Utils.h>$',
+			'#include <R_ext/Utils.h>\n'
+			'#include <R_ext/Memory.h>\n'
+			'#ifndef Calloc\n'
+			'#define Calloc(n, T) (T*) R_Calloc((n), T)\n'
+			'#endif\n'
+			'#ifndef Free\n'
+			'#define Free R_Free\n'
+			'#endif',
+			'src/include/rcore.h',
+		)
+
 	depends_on("r@4.3:", type=("build", "run"))
