@@ -34,3 +34,17 @@ class RRrcov(RPackage):
 	depends_on("r-mvtnorm", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))
 	depends_on("r-pcapp", type=("build", "run"))
+
+	def patch(self):
+		"""Adapt sources for R >= 4.5 where Calloc/Free were removed.
+
+		Replace deprecated Calloc/Free macros with R_Calloc/R_Free and ensure
+		R_ext/RS.h is included in all C sources under src/.
+		"""
+		import glob
+		for c_file in glob.glob("src/*.c"):
+			# Replace memory allocation macros
+			filter_file(r"\bCalloc\(", "R_Calloc(", c_file)
+			filter_file(r"\bFree\(", "R_Free(", c_file)
+			# Ensure the proper header for R_Calloc/R_Free is available
+			filter_file(r"#\s*include\s*<R.h>", "#include <R.h>\n#include <R_ext/RS.h>", c_file)
