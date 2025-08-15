@@ -22,6 +22,8 @@ class Gridss(Package):
     depends_on("java@8:", type=("build", "run"))
     depends_on("bwa", type="run")
     depends_on("samtools", type="run")
+    depends_on("libdeflate", type="run")
+    depends_on("openssl", type="run")
     
     # R dependencies for GRIDSS scripts
     # depends_on("r@3.5:", type="run")
