@@ -90,7 +90,7 @@ class Gridss(MavenPackage):
         
         # Create wrapper scripts for main tools
         self._create_wrapper_script(prefix, "gridss", jar_name, "gridss.CallVariants")
-        self._create_wrapper_script(prefix, "virusbreakend", jar_name, "gridss.VirusBreakend")
+        self._create_wrapper_script(prefix, "virusbreakend", jar_name, "gridss.VirusBreakendFilter")
         
         # Create R script wrappers
         # self._create_r_wrapper(prefix, "gridss_somatic_filter")
