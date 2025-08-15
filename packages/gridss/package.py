@@ -30,15 +30,40 @@ class Gridss(MavenPackage):
     depends_on("java@8:", type=("build", "run"))
     depends_on("bwa", type="run")
     depends_on("samtools", type="run")
+    
+    # R dependencies for GRIDSS scripts
+    # depends_on("r@3.5:", type="run")
+    # depends_on("r-biocgenerics", type="run")
+    # depends_on("r-s4vectors", type="run")
+    # depends_on("r-iranges", type="run")
+    # depends_on("r-matrixstats", type="run")
+    # depends_on("r-delayedarray", type="run")
+    # depends_on("r-xvector", type="run")
+    # depends_on("r-biostrings", type="run")
+    # depends_on("r-biobase", type="run")
+    # depends_on("r-variantannotation", type="run")
+    # depends_on("r-rtracklayer", type="run")
+    # depends_on("r-structuralvariantannotation", type="run")
+    # depends_on("r-tidyverse", type="run")
+    # depends_on("r-stringr", type="run")
+    # depends_on("r-testthat", type="run")
+    # depends_on("r-stringdist", type="run")
+    # depends_on("r-argparser", type="run")
+    # depends_on("r-readr", type="run")
+    # depends_on("r-ggplot2", type="run")
 
     def install(self, spec, prefix):
         # Build the JAR file
         mvn = which("mvn")
         mvn("clean", "package", "-DskipTests")
         
-        # Create bin and lib directories
+        # Create bin, lib, and share directories
         mkdir(prefix.bin)
         mkdir(prefix.lib)
+        mkdir(prefix.share)
+        mkdir(join_path(prefix.share, "gridss"))
+        mkdir(join_path(prefix.share, "gridss", "scripts"))
+        mkdir(join_path(prefix.share, "gridss", "R"))
         
         # Find the built JAR file
         jar_pattern = "target/gridss-*-gridss-jar-with-dependencies.jar"
@@ -52,14 +77,57 @@ class Gridss(MavenPackage):
         # Install the JAR file with its proper name
         install(jar_file, join_path(prefix.lib, jar_name))
         
-        # Create wrapper script
-        script_path = join_path(prefix.bin, "gridss")
+        # Install scripts
+        scripts_dir = "scripts"
+        if os.path.exists(scripts_dir):
+            for script_file in os.listdir(scripts_dir):
+                script_path = join_path(scripts_dir, script_file)
+                if os.path.isfile(script_path):
+                    # Make scripts executable
+                    os.chmod(script_path, 0o755)
+                    # Install to share/gridss/scripts
+                    install(script_path, join_path(prefix.share, "gridss", "scripts"))
+        
+        # Create wrapper scripts for main tools
+        self._create_wrapper_script(prefix, "gridss", jar_name, "gridss.CallVariants")
+        self._create_wrapper_script(prefix, "virusbreakend", jar_name, "gridss.VirusBreakend")
+        
+        # Create R script wrappers
+        # self._create_r_wrapper(prefix, "gridss_somatic_filter")
+        # self._create_r_wrapper(prefix, "gridss_annotate_vcf_kraken2")
+        # self._create_r_wrapper(prefix, "gridss_annotate_vcf_repeatmasker")
+        # self._create_r_wrapper(prefix, "gridss_extract_overlapping_fragments")
+        
+        # Install R configuration files
+        r_config_files = ["gridss.config.R", "libgridss.R"]
+        for r_file in r_config_files:
+            r_path = join_path(scripts_dir, r_file)
+            if os.path.exists(r_path):
+                install(r_path, join_path(prefix.share, "gridss", "R"))
+
+    def _create_wrapper_script(self, prefix, script_name, jar_name, main_class):
+        """Create a wrapper script for Java-based tools"""
+        script_path = join_path(prefix.bin, script_name)
         with open(script_path, "w") as fh:
             fh.write("#!/bin/bash\n")
             fh.write("JAR=\"{}/lib/{}\"\n".format(prefix, jar_name))
             fh.write("if [[ ! -f \"$JAR\" ]]; then echo 'GRIDSS jar not found: $JAR'; exit 1; fi\n")
-            fh.write("exec java -cp \"$JAR\" gridss.CallVariants \"$@\"\n")
+            fh.write("exec java -cp \"$JAR\" {} \"$@\"\n".format(main_class))
+        os.chmod(script_path, 0o755)
+
+    def _create_r_wrapper(self, prefix, script_name):
+        """Create a wrapper script for R-based tools"""
+        script_path = join_path(prefix.bin, script_name)
+        with open(script_path, "w") as fh:
+            fh.write("#!/bin/bash\n")
+            fh.write("SCRIPT=\"{}/share/gridss/scripts/{}\"\n".format(prefix, script_name))
+            fh.write("if [[ ! -f \"$SCRIPT\" ]]; then echo 'GRIDSS script not found: $SCRIPT'; exit 1; fi\n")
+            fh.write("export GRIDSS_SCRIPT_DIR=\"{}/share/gridss/scripts\"\n".format(prefix))
+            fh.write("export GRIDSS_R_DIR=\"{}/share/gridss/R\"\n".format(prefix))
+            fh.write("exec Rscript \"$SCRIPT\" \"$@\"\n")
         os.chmod(script_path, 0o755)
 
     def setup_run_environment(self, env):
-        env.prepend_path("PATH", self.prefix.bin) 
+        env.prepend_path("PATH", self.prefix.bin)
+        env.set("GRIDSS_SCRIPT_DIR", join_path(self.prefix.share, "gridss", "scripts"))
+        env.set("GRIDSS_R_DIR", join_path(self.prefix.share, "gridss", "R")) 
