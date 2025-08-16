@@ -1,0 +1,32 @@
+--- a/src/mapget.c
++++ b/src/mapget.c
+@@
+-#include "R.h"
+-#include "map.h"
++#include "R.h"
++#include <R_ext/RS.h>
++#include "map.h"
+@@
+-  lines = Calloc(nline, int);
++  lines = R_Calloc(nline, int);
+@@
+-  lengths = Calloc(nline, int);
++  lengths = R_Calloc(nline, int);
+@@
+-  X = Calloc(npair, double);
+-  Y = Calloc(npair, double);
++  X = R_Calloc(npair, double);
++  Y = R_Calloc(npair, double);
+@@
+-  Free(lines);
+-  Free(lengths);
++  R_Free(lines);
++  R_Free(lengths);
+@@
+-  rh = Calloc(npoly, struct region_h);
++  rh = R_Calloc(npoly, struct region_h);
+@@
+-      Free(X);
+-      Free(Y);
++      R_Free(X);
++      R_Free(Y);

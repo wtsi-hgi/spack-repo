@@ -13,7 +13,7 @@ class RMaps(RPackage):
 	('mapproj' and 'mapdata')."""
 
 	cran = "maps"
-	version("3.4.2", md5="78e2f51ccf17274313305b0916edee7b")
+	version("3.4.2", sha256="53e57b889f1779cfd4a116a8ed3eded7ed29a73a1b9506248772a389c8404b0c")
 	version("3.4.1", sha256="e693a5218ed8122e92d73a98a475d9016f2293c7852c8048677daa7649086400")
 	version("3.4.0", sha256="7918ccb2393ca19589d4c4e77d9ebe863dc6317ebfc1ff41869dbfaf439f5747")
 	version("3.3.0", sha256="199afe19a4edcef966ae79ef802f5dcc15a022f9c357fcb8cae8925fe8bd2216")
@@ -21,3 +21,15 @@ class RMaps(RPackage):
 	version("3.1.1", sha256="972260e5ce9519ecc09b18e5d7a28e01bed313fadbccd7b06c571af349cb4d2a")
 
 	depends_on("r@3.5:", type=("build", "run"))
+
+
+	def patch(self):
+		# Make sources compatible with R >= 4.5 which removed Calloc/Realloc/Free
+		if self.spec.satisfies("^r@4.5:"):
+			mapget = join_path('src', 'mapget.c')
+			# Ensure RS.h is included for R_Calloc/R_Realloc/R_Free symbols
+			filter_file(r'^#include\s+"R.h"', '#include "R.h"\n#include <R_ext/RS.h>', mapget)
+			# Update memory API calls
+			filter_file(r'\bCalloc\(', 'R_Calloc(', mapget)
+			filter_file(r'\bRealloc\(', 'R_Realloc(', mapget)
+			filter_file(r'\bFree\(', 'R_Free(', mapget)

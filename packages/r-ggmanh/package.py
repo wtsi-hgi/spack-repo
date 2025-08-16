@@ -24,3 +24,8 @@ class RGgmanh(RPackage):
     depends_on("r-rlang", type=("build", "run"))
     depends_on("r-scales", type=("build", "run"))
     depends_on("r-seqarray@1.32:", type=("build", "run"))
+    # Additional dependencies required by ggmanh
+    depends_on("r-paletteer", type=("build", "run"))
+    depends_on("r-tidyr", type=("build", "run"))
+    depends_on("r-dplyr", type=("build", "run"))
+    depends_on("r-pals", type=("build", "run"))
