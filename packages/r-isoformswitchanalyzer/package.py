@@ -25,6 +25,8 @@ class RIsoformswitchanalyzer(RPackage):
     depends_on("r-sva", type=("build", "run"))
     depends_on("r-ggplot2@3.3.5:", type=("build", "run"))
     depends_on("r-pfamanalyzer", type=("build", "run"))
+    # Required by upstream DESCRIPTION; ensures availability on R>=4.5
+    depends_on("r-pwalign", type=("build", "run"))
     depends_on("r-bsgenome", type=("build", "run"))
     depends_on("r-plyr", type=("build", "run"))
     depends_on("r-reshape2", type=("build", "run"))

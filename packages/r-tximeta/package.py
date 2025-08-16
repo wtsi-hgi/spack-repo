@@ -33,3 +33,5 @@ class RTximeta(RPackage):
     depends_on("r-tibble", type=("build", "run"))
     depends_on("r-genomeinfodb", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))
+    # Required by upstream DESCRIPTION; missing caused install failure
+    depends_on("r-txdbmaker", type=("build", "run"))
