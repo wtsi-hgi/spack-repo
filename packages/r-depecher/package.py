@@ -36,3 +36,4 @@ class RDepecher(RPackage):
     depends_on("r-gmodels@2.18.1:", type=("build", "run"))
     depends_on("r-collapse@1.9.2:", type=("build", "run"))
     depends_on("r-rcppeigen", type=("build", "run"))
+    depends_on("r-clusterr", type=("build", "run"))

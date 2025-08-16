@@ -28,8 +28,12 @@ class RCollapse(RPackage):
 	homepage = "https://sebkrantz.github.io/collapse/"
 	cran = "collapse" 
 
-	version("2.0.12", md5="60bc3337a1ce502f6f06e92eb62a7faf")
-	version("2.0.10", md5="921badb522df6ac83f39085cd52ebb78")
+	# Prefer sha256 checksums and include latest releases
+	version("2.1.2", sha256="38620139595ffaaf253be429532ffd8cf2f2d9617a4ff981a4da0ff89fc1ce61")
+	version("2.1.1", sha256="e4c3ef6f387c4b3bd0f037d3f3cd65a8d137f1127790f5ae206d6294d30982ba")
+	version("2.1.0", sha256="b13197b9e06d7ded81466fbe2560cfff9ba30281e19f5dfd01d9fa5451808209")
+	version("2.0.12", sha256="671477422b98259e1c7f7794134b9d170b31758217e23c3fe04e614aa476f436")
+	version("2.0.10", sha256="21bb1cf55b25eb684606aca43db3062042600c2e537fbe7e1c0bce49fbf05975")
 
 	depends_on("r@3.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
