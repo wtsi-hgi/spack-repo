@@ -58,6 +58,8 @@ class RMetaseqr2(RPackage):
     depends_on("r-rsamtools", type=("build", "run"))
     depends_on("r-rsqlite", type=("build", "run"))
     depends_on("r-rtracklayer", type=("build", "run"))
+    # Required at runtime; CRAN/Bioc dependency
+    depends_on("r-txdbmaker", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-stringr", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
