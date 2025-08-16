@@ -31,3 +31,4 @@ class RDemuxsnp(RPackage):
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-demuxmix", type=("build", "run"))
     depends_on("r-combinat", type=("build", "run"))
+    depends_on("r-kernelknn", type=("build", "run"))
