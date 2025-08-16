@@ -16,3 +16,11 @@ class RPoibin(RPackage):
 
 	version("1.5", md5="ccb27983b15b6670ae4b454bea9bd0a1")
 
+
+	def setup_build_environment(self, env):
+		# Define PI to satisfy code using bare PI macro
+		pi_define = '-DPI=3.141592653589793238462643383279502884197'
+		env.append_flags('CPPFLAGS', pi_define)
+		env.append_flags('PKG_CPPFLAGS', pi_define)
+		env.append_flags('CFLAGS', pi_define)
+
