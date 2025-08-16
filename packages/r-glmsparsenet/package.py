@@ -36,3 +36,6 @@ class RGlmsparsenet(RPackage):
     depends_on("r-stringr", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-survminer", type=("build", "run"))
+    # Missing deps discovered during R CMD INSTALL
+    depends_on("r-checkmate", type=("build", "run"))
+    depends_on("r-tcgautils", type=("build", "run"))
