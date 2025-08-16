@@ -23,3 +23,25 @@ class RQtl(RPackage):
 	version("1.44-9", sha256="315063f0c3fbb95cd2169eb4109ade0339e8f3c28670b38c3167214b9bdf950e")
 
 	depends_on("r@2.14:", type=("build", "run"))
+
+	# Inject R >= 4.5 memory API shims directly into util.h
+	def patch(self):
+		# Only needed when building against R >= 4.5
+		if self.spec.satisfies("^r@4.5:"):
+			filter_file(
+				r"^#ifdef __cplusplus$",
+				(
+					"#include <R_ext/Memory.h>\n"
+					"#ifndef Calloc\n"
+					"#define Calloc(n, T) (T*) R_Calloc((n), T)\n"
+					"#endif\n"
+					"#ifndef Realloc\n"
+					"#define Realloc(ptr, n, T) (T*) R_Realloc((ptr), (n), T)\n"
+					"#endif\n"
+					"#ifndef Free\n"
+					"#define Free R_Free\n"
+					"#endif\n"
+					"#ifdef __cplusplus"
+				),
+				"src/util.h",
+			)
