@@ -21,8 +21,13 @@ class RMsm(RPackage):
 	homepage = "https://github.com/chjackson/msm"
 	cran = "msm" 
 
-	version("1.7.1", md5="8aa592740ac775876b23cb0eb28b36d6")
+	# Newer releases needed for R >= 4.5 compatibility
+	version("1.8.2", sha256="5b97353978b54d7315bc9690dbfdea0062cc2823d001dbcc035c3420df1ebe26")
+	version("1.7.1", sha256="d134782b966eed33742819595119ab1a61bec4416cc3fa7630a0f34c4e7f785b")
 
 	depends_on("r-survival", type=("build", "run"))
 	depends_on("r-mvtnorm", type=("build", "run"))
 	depends_on("r-expm", type=("build", "run"))
+	# Additional CRAN dependencies introduced in >=1.8
+	depends_on("r-generics", type=("build", "run"), when="@1.8:")
+	depends_on("r-tibble", type=("build", "run"), when="@1.8:")
