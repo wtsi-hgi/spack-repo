@@ -27,6 +27,8 @@ class RPlotgardener(RPackage):
     depends_on("r-genomicranges", type=("build", "run"))
     depends_on("r-ggplotify", type=("build", "run"))
     depends_on("r-iranges", type=("build", "run"))
+    # Required for reading HDF5-based formats used by plotgardener
+    depends_on("r-rhdf5", type=("build", "run"))
     depends_on("r-plyranges", type=("build", "run"))
     depends_on("r-purrr", type=("build", "run"))
     depends_on("r-rcpp", type=("build", "run"))
