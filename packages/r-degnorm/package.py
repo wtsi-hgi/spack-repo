@@ -34,3 +34,5 @@ class RDegnorm(RPackage):
     depends_on("r-plotly", type=("build", "run"))
     depends_on("r-viridis", type=("build", "run"))
     depends_on("r-rcpparmadillo", type=("build", "run"))
+    # Missing runtime dependency discovered at install time
+    depends_on("r-txdbmaker", type=("build", "run"))
