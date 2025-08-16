@@ -35,3 +35,9 @@ class RCrisprseek(RPackage):
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-keras", type=("build", "run"))
     depends_on("r-mltools", type=("build", "run"))
+    # Missing runtime dependencies reported by R CMD INSTALL
+    depends_on("r-genomicfeatures", type=("build", "run"))
+    depends_on("r-gtools", type=("build", "run"))
+    depends_on("r-openxlsx", type=("build", "run"))
+    depends_on("r-rio", type=("build", "run"))
+    depends_on("r-stringr", type=("build", "run"))
