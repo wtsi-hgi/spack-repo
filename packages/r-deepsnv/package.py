@@ -25,3 +25,8 @@ class RDeepsnv(RPackage):
     depends_on("r-vgam", type=("build", "run"))
     depends_on("r-variantannotation@1.27.6:", type=("build", "run"))
     depends_on("r-rhtslib@1.13.1:", type=("build", "run"))
+    # Link-time requirements pulled in via static libhts from Rhtslib
+    depends_on("curl", type=("build", "link"))
+    depends_on("bzip2", type=("build", "link"))
+    depends_on("xz", type=("build", "link"))  # provides liblzma
+    depends_on("zlib-api", type=("build", "link"))
