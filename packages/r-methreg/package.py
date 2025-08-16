@@ -41,3 +41,7 @@ class RMethreg(RPackage):
     depends_on("r-iranges", type=("build", "run"))
     depends_on("r-sfsmisc", type=("build", "run"))
     depends_on("r-progress", type=("build", "run"))
+    # Missing runtime dependencies observed during R CMD INSTALL
+    depends_on("r-openxlsx", type=("build", "run"))
+    depends_on("r-jaspar2024", type=("build", "run"))
+    depends_on("r-tfbstools", type=("build", "run"))
