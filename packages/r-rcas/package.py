@@ -44,5 +44,7 @@ class RRcas(RPackage):
     depends_on("r-seqlogo", type=("build", "run"))
     depends_on("r-ranger", type=("build", "run"))
     depends_on("r-gprofiler2", type=("build", "run"))
+    # RCAS imports/uses txdbmaker; ensure it is present
+    depends_on("r-txdbmaker", type=("build", "run"))
     depends_on("pandoc@1.12.3:", type=("build", "link", "run"))
     depends_on("r-ggseqlogo", type=("build", "link", "run"))
