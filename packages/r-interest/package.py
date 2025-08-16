@@ -30,9 +30,13 @@ class RInterest(RPackage):
     depends_on("r-iranges", type=("build", "run"))
     depends_on("r-seqinr", type=("build", "run"))
     depends_on("r-dbi", type=("build", "run"))
+    # Upstream DESCRIPTION lists RMariaDB; keep RMySQL for legacy compatibility
+    depends_on("r-rmariadb", type=("build", "run"))
     depends_on("r-rmysql", type=("build", "run"))
     depends_on("r-genomicalignments", type=("build", "run"))
     depends_on("r-biocparallel", type=("build", "run"))
     depends_on("r-biocgenerics", type=("build", "run"))
     depends_on("r-dexseq", type=("build", "run"))
     depends_on("r-deseq2", type=("build", "run"))
+    # Bioconductor 'txdbmaker' is required by IntEREst
+    depends_on("r-txdbmaker", type=("build", "run"))

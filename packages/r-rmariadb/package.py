@@ -34,7 +34,8 @@ class RRmariadb(RPackage):
 	# Set the library explicitly to prevent configure from finding a system
 	# mysql-client
 	def configure_vars(self):
-		lib_dir = self.spec["mariadb-client"].prefix.lib.mariadb
-		inc_dir = self.spec["mariadb-client"].prefix.include.mariadb
+		# The dependency is named 'mariadb-c-client' in Spack
+		lib_dir = self.spec["mariadb-c-client"].prefix.lib.mariadb
+		inc_dir = self.spec["mariadb-c-client"].prefix.include.mariadb
 		args = ["LIB_DIR={0}".format(lib_dir), "INCLUDE_DIR={0}".format(inc_dir)]
 		return args
