@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 from spack.package import *
+import os
 
 
 class RCoxme(RPackage):
@@ -27,3 +28,30 @@ class RCoxme(RPackage):
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-nlme", type=("build", "run"))
 	depends_on("r-matrix@1:", type=("build", "run"))
+
+	# R >= 4.4 tightened memory API; ensure legacy Calloc/Free compile
+	def patch(self):
+		src_dir = join_path(self.stage.source_path, "src")
+		if os.path.isdir(src_dir):
+			for filename in os.listdir(src_dir):
+				if not filename.endswith(".c"):
+					continue
+				path = join_path(src_dir, filename)
+				# Ensure Memory.h is available after R.h
+				filter_file(
+					r"(#include\s+[<\"]R.h[>\"])",
+					"\\1\n#include <R_ext/Memory.h>",
+					path,
+				)
+				# Provide Calloc/Free macros if missing
+				filter_file(
+					r"(#include\s+<R_ext/Memory.h>)",
+					"\\1\n#ifndef Calloc\n#define Calloc(n, T) (T*) R_Calloc((n), T)\n#endif\n#ifndef Free\n#define Free(p) R_Free(p)\n#endif",
+					path,
+				)
+				# If R.h is not directly included in this file, inject after bdsmatrix.h
+				filter_file(
+					r"(#include\s+[<\"]bdsmatrix.h[>\"])",
+					"\\1\n#include <R.h>\n#include <R_ext/Memory.h>\n#ifndef Calloc\n#define Calloc(n, T) (T*) R_Calloc((n), T)\n#endif\n#ifndef Free\n#define Free(p) R_Free(p)\n#endif",
+					path,
+				)

@@ -41,3 +41,9 @@ class RSpicyr(RPackage):
     depends_on("r-ggforce", type=("build", "run"))
     depends_on("r-classifyr", type=("build", "run"))
     depends_on("r-tibble", type=("build", "run"))
+    # Missing runtime deps required by DESCRIPTION
+    depends_on("r-ggthemes", type=("build", "run"))
+    depends_on("r-ggh4x", type=("build", "run"))
+    depends_on("r-coxme", type=("build", "run"))
+    depends_on("r-ggnewscale", type=("build", "run"))
+    depends_on("r-simpleseg", type=("build", "run"))
