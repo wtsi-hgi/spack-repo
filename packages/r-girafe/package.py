@@ -27,3 +27,5 @@ class RGirafe(RPackage):
     depends_on("r-biobase", type=("build", "run"))
     depends_on("r-biostrings@2.47.6:", type=("build", "run"))
     depends_on("r-iranges@2.13.12:", type=("build", "run"))
+    # Added missing dependency required by recent Bioconductor releases
+    depends_on("r-pwalign", type=("build", "run"))
