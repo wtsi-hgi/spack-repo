@@ -22,6 +22,8 @@ class RGenomicstate(RPackage):
     depends_on("r-genomicfeatures", type=("build", "run"))
     depends_on("r-genomeinfodb", type=("build", "run"))
     depends_on("r-rtracklayer", type=("build", "run"))
+    # Required by DESCRIPTION/NAMESPACE for building TxDb objects
+    depends_on("r-txdbmaker", type=("build", "run"))
     depends_on("r-bumphunter", type=("build", "run"))
     depends_on("r-derfinder@1.21.7:", type=("build", "run"))
     depends_on("r-annotationdbi", type=("build", "run"))
