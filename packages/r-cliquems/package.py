@@ -27,3 +27,5 @@ class RCliquems(RPackage):
     depends_on("r-bh", type=("build", "run"))
     depends_on("r-rcpparmadillo", type=("build", "run"))
     depends_on("r-qlcmatrix", type=("build", "link", "run"))
+    # Missing runtime dependency discovered during install
+    depends_on("r-coop", type=("build", "run"))
