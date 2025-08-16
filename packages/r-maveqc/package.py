@@ -23,7 +23,7 @@ class RMaveqc(RPackage):
 
     depends_on("pandoc", type=("build", "run"))
 
-    depends_on("r+X@4.3", type=("build", "run"))
+    depends_on("r+X@4.3:", type=("build", "run"))
     depends_on("r+X@4.3.2:", type=("build", "run"), when="@0.2.6:")
     depends_on("r-optparse@1.7.3", type=("build", "run"))
 
