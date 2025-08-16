@@ -42,6 +42,7 @@ class RPcaexplorer(RPackage):
     depends_on("r-dt", type=("build", "run"))
     depends_on("r-shinyace", type=("build", "run"))
     depends_on("r-threejs", type=("build", "run"))
+    depends_on("r-mosdef", type=("build", "run"))
     depends_on("r-biomart", type=("build", "run"))
     depends_on("r-pheatmap", type=("build", "run"))
     depends_on("r-knitr", type=("build", "run"))
