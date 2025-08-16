@@ -18,6 +18,12 @@ class REscape(RPackage):
     version("1.12.0", commit="51adca6cb0e3144ca415e5e49212f6a2181accfb")
 
     depends_on("r@4.1:", type=("build", "run"))
+    # Additional imports required by DESCRIPTION
+    depends_on("r-aucell", type=("build", "run"))
+    depends_on("r-ggdist", type=("build", "run"))
+    depends_on("r-ggpointdensity", type=("build", "run"))
+    depends_on("r-msigdb", type=("build", "run"))
+    depends_on("r-seuratobject", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-gseabase", type=("build", "run"))
