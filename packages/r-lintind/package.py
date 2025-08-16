@@ -32,6 +32,7 @@ class RLintind(RPackage):
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-rlist", type=("build", "run"))
     depends_on("r-pheatmap", type=("build", "run"))
+    depends_on("r-pwalign", type=("build", "run"))
     depends_on("r-biostrings", type=("build", "run"))
     depends_on("r-iranges", type=("build", "run"))
     depends_on("r-biocgenerics@0.36.1:", type=("build", "run"))
