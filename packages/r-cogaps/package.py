@@ -34,3 +34,32 @@ class RCogaps(RPackage):
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-msigdbr", type=("build", "run"))
     depends_on("r-bh", type=("build", "run"))
+    # Needed because 'testthat' appears in LinkingTo in DESCRIPTION
+    depends_on("r-testthat", type=("build",))
+
+    # Inline edit performed in patch() to ensure R 4.5 + testthat compatibility
+
+    def configure_args(self):
+        # Disable building C++ unit tests which pull in testthat headers
+        # that are currently incompatible with R 4.5 macros
+        return ["--enable-cpp-tests=no"]
+
+    def patch(self):
+        # Ensure R 4.5 compatibility with testthat headers in test-runner.cpp
+        import os
+        runner = os.path.join('src', 'test-runner.cpp')
+        if os.path.exists(runner):
+            with open(runner, 'r', encoding='utf-8') as f:
+                content = f.read()
+            injection = (
+                "\n// Injected by Spack: compatibility with R >= 4.5\n"
+                "#include <Rinternals.h>\n"
+                "#ifndef ScalarLogical\n"
+                "#define ScalarLogical Rf_ScalarLogical\n"
+                "#endif\n"
+            )
+            if 'Rf_ScalarLogical' not in content:
+                # Insert right after the Rcpp include
+                new_content = content.replace('#include <Rcpp.h>\n', '#include <Rcpp.h>\n' + injection, 1)
+                with open(runner, 'w', encoding='utf-8') as f:
+                    f.write(new_content)
