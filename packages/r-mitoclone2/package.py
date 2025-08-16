@@ -26,7 +26,6 @@ class RMitoclone2(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-rhtslib@1.13.1:", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
-    depends_on("phiscs", type=("build", "link", "run"))
     depends_on("zlib", type=("build", "link", "run"))
     depends_on("curl", type=("build", "link", "run"))
     depends_on("xz", type=("build", "link", "run"))
