@@ -37,3 +37,5 @@ class RCustomprodb(RPackage):
     depends_on("r-rtracklayer", type=("build", "run"))
     depends_on("r-rsqlite", type=("build", "run"))
     depends_on("r-ahocorasicktrie", type=("build", "run"))
+    # Required since Bioconductor 3.20+; missing caused R install failure
+    depends_on("r-txdbmaker", type=("build", "run"), when="@1.48.0:")
