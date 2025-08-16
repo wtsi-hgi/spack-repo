@@ -26,6 +26,10 @@ class RFlames(RPackage):
     depends_on("r-circlize", type=("build", "run"))
     depends_on("r-complexheatmap", type=("build", "run"))
     depends_on("r-cowplot", type=("build", "run"))
+    # Required dependencies discovered from install error
+    depends_on("r-magick", type=("build", "run"))
+    depends_on("r-spatialexperiment", type=("build", "run"))
+    depends_on("r-scatterpie", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-dropletutils", type=("build", "run"))
     depends_on("r-genomicranges", type=("build", "run"))
