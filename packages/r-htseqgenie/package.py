@@ -37,3 +37,5 @@ class RHtseqgenie(RPackage):
     depends_on("r-varianttools@1.7.7:", type=("build", "run"))
     depends_on("r-genomeinfodb", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
+    # Missing runtime dependency discovered during R CMD INSTALL
+    depends_on("r-pwalign", type=("build", "run"))
