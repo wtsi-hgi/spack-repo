@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 from spack.package import *
+import glob
 
 
 class RMsa(RPackage):
@@ -26,10 +27,11 @@ class RMsa(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
 
     def patch(self):
-        filter_file(
-            """#include <pthread.h>""",
-            """#define _GNU_SOURCE 1
+        for configure_path in glob.glob("src/gc-*/configure"):
+            filter_file(
+                """#include <pthread.h>""",
+                """#define _GNU_SOURCE 1
 #include <pthread.h>""",
-            "src/gc-8.2.2/configure",
-            string=True,
-        )
+                configure_path,
+                string=True,
+            )
