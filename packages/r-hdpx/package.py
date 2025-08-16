@@ -81,3 +81,29 @@ class RHdpx(RPackage):
     depends_on("r-rcolorbrewer", type=("build", "run"))
     depends_on("r-biocstyle", type=("build", "run"))
     depends_on("r-devtools", type=("build", "run"))
+
+    # R >= 4.5 removed legacy Calloc/Realloc/Free macros from default headers.
+    # Ensure sources include the modern memory API and provide compatibility
+    # shims so symbols like Free do not remain unresolved at load time.
+    def patch(self):
+        headers = [
+            "src/R-utils.h",
+        ]
+        for header in headers:
+            filter_file(
+                r"#include <Rinternals.h>",
+                (
+                    "#include <Rinternals.h>\n"
+                    "#include <R_ext/Memory.h>\n"
+                    "#ifndef Calloc\n"
+                    "#define Calloc(n, T) (T*) R_Calloc((n), T)\n"
+                    "#endif\n"
+                    "#ifndef Realloc\n"
+                    "#define Realloc(p, n, T) (T*) R_Realloc((p), (n), T)\n"
+                    "#endif\n"
+                    "#ifndef Free\n"
+                    "#define Free R_Free\n"
+                    "#endif\n"
+                ),
+                header,
+            )
