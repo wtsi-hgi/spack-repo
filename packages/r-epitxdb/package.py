@@ -24,6 +24,9 @@ class REpitxdb(RPackage):
     depends_on("r-httr", type=("build", "run"))
     depends_on("r-xml2", type=("build", "run"))
     depends_on("r-curl", type=("build", "run"))
+    # Required CRAN/Bioc dependencies missing from original recipe
+    depends_on("r-rex", type=("build", "run"))
+    depends_on("r-txdbmaker", type=("build", "run"))
     depends_on("r-genomicfeatures", type=("build", "run"))
     depends_on("r-genomicranges", type=("build", "run"))
     depends_on("r-genomeinfodb", type=("build", "run"))
