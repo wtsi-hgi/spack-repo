@@ -36,3 +36,5 @@ class RMagar(RPackage):
     depends_on("r-argparse", type=("build", "run"))
     depends_on("r-impute", type=("build", "run"))
     depends_on("r-rnbeads-hg19", type=("build", "run"))
+    # MAGAR requires hg19 and hg38 annotation packages at runtime
+    depends_on("r-rnbeads-hg38", type=("build", "run"))
