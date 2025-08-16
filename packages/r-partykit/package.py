@@ -37,3 +37,21 @@ class RPartykit(RPackage):
 	depends_on("r-formula@1.2.1:", type=("build", "run"))
 	depends_on("r-inum@1.0.0:", type=("build", "run"))
 	depends_on("r-rpart@4.1.11:", type=("build", "run"))
+
+	# R >= 4.5 removed Calloc/Free macros. Align to new API.
+	def patch(self):
+		# Inject Memory API include and compatibility macros into header used by rfweights.c
+		filter_file(
+			r"#include <Rdefines.h>",
+			(
+				"#include <Rdefines.h>\n"
+				"#include <R_ext/Memory.h>\n"
+				"#ifndef Calloc\n"
+				"#define Calloc(b, T) (T*) R_Calloc((b), T)\n"
+				"#endif\n"
+				"#ifndef Free\n"
+				"#define Free R_Free\n"
+				"#endif\n"
+			),
+			"src/rfweights.h",
+		)
