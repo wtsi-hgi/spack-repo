@@ -27,3 +27,5 @@ class RHireadsprocessor(RPackage):
     depends_on("r-biocgenerics", type=("build", "run"))
     depends_on("r-genomicranges", type=("build", "run"))
     depends_on("r-readxl", type=("build", "run"))
+    # Required at runtime and build time per DESCRIPTION
+    depends_on("r-pwalign", type=("build", "run"))
