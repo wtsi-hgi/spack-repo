@@ -21,6 +21,8 @@ class RDominoeffect(RPackage):
     depends_on("r-biomart", type=("build", "run"))
     depends_on("r-data-table", type=("build", "run"))
     depends_on("r-biostrings", type=("build", "run"))
+    # Upstream DESCRIPTION lists 'pwalign'; ensure it is available
+    depends_on("r-pwalign", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-variantannotation", type=("build", "run"))
     depends_on("r-annotationdbi", type=("build", "run"))
