@@ -42,3 +42,5 @@ class RMiaviz(RPackage):
     depends_on("r-dirichletmultinomial", type=("build", "run"))
     depends_on("r-ggrepel", type=("build", "run"))
     depends_on("r-singlecellexperiment", type=("build", "run"))
+    # Required by upstream DESCRIPTION but missing in recipe
+    depends_on("r-tidytext", type=("build", "run"))
