@@ -32,3 +32,10 @@ class RCircseqaligntk(RPackage):
     depends_on("r-rsamtools", type=("build", "run"))
     depends_on("r-rbowtie2", type=("build", "run"))
     depends_on("r-rhisat2", type=("build", "run"))
+    # GUI and utilities required by upstream DESCRIPTION
+    depends_on("r-r-utils", type=("build", "run"))
+    depends_on("r-shiny", type=("build", "run"))
+    depends_on("r-shinyfiles", type=("build", "run"))
+    depends_on("r-shinyjs", type=("build", "run"))
+    depends_on("r-plotly", type=("build", "run"))
+    depends_on("r-htmltools", type=("build", "run"))

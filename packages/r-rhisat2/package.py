@@ -26,6 +26,8 @@ class RRhisat2(RPackage):
     depends_on("r-genomicfeatures", type=("build", "run"))
     depends_on("r-sgseq", type=("build", "run"))
     depends_on("r-genomicranges", type=("build", "run"))
+    # Required by upstream DESCRIPTION
+    depends_on("r-txdbmaker", type=("build", "run"))
 
     def setup_build_environment(self, env):
         # the build does not work when conducted in parallel
