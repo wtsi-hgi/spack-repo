@@ -56,6 +56,7 @@ class RMusicatk(RPackage):
     depends_on("r-factoextra", type=("build", "run"))
     depends_on("r-cluster", type=("build", "run"))
     depends_on("r-complexheatmap", type=("build", "run"))
+    depends_on("r-conclust", type=("build", "run"))
     depends_on("r-philentropy", type=("build", "run"))
     depends_on("r-maftools", type=("build", "run"))
     depends_on("r-shiny", type=("build", "run"))
