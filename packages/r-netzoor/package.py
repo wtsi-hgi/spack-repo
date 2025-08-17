@@ -49,3 +49,10 @@ class RNetzoor(RPackage):
     depends_on("r-assertthat", type=("build", "run"))
     depends_on("r-tidyr", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
+    # Missing runtime/build dependencies discovered during R CMD INSTALL
+    depends_on("r-cmdstanr", type=("build", "run"))
+    depends_on("r-matrixtests", type=("build", "run"))
+    depends_on("r-genenet", type=("build", "run"))
+    depends_on("r-loo", type=("build", "run"))
+    depends_on("r-rarpack", type=("build", "run"))
+    depends_on("r-corpcor", type=("build", "run"))
