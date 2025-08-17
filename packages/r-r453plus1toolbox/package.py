@@ -34,3 +34,5 @@ class RR453plus1toolbox(RPackage):
     depends_on("r-bsgenome@1.47.3:", type=("build", "run"))
     depends_on("r-rsamtools", type=("build", "run"))
     depends_on("r-shortread@1.37.1:", type=("build", "run"))
+    # Required by upstream DESCRIPTION but missing in recipe
+    depends_on("r-pwalign", type=("build", "run"))
