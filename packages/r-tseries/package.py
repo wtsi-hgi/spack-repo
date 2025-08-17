@@ -25,3 +25,26 @@ class RTseries(RPackage):
 	depends_on("r-zoo", type=("build", "run"))
 	depends_on("r-quantmod@0.4.9:", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))
+
+	def patch(self):
+		# R >= 4.5 moved Calloc/Realloc/Free behind R_ext/Memory.h.
+		# Ensure sources include the header and provide safe fallbacks.
+		for source_path in [
+			"src/garch.c",
+			"src/bdstest.c",
+		]:
+			# Insert Memory.h include after R.h if present
+			filter_file(
+				"#include <R.h>",
+				"#include <R.h>\n#include <R_ext/Memory.h>",
+				source_path,
+			)
+			# If exact include line exists, append macro guards for older toolchains
+			filter_file(
+				r"^#include <R_ext/Memory.h>$",
+				"#include <R_ext/Memory.h>\n"
+				"#ifndef Calloc\n#define Calloc(n,t) R_Calloc((n), t)\n#endif\n"
+				"#ifndef Realloc\n#define Realloc(p,n,t) R_Realloc((p),(n), t)\n#endif\n"
+				"#ifndef Free\n#define Free(p) R_Free((p))\n#endif",
+				source_path,
+			)
