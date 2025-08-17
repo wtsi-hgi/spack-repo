@@ -35,3 +35,7 @@ class RMotifbreakr(RPackage):
     depends_on("r-matrixstats", type=("build", "run"))
     depends_on("r-tfmpvalue", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
+    # Required CRAN UI dependencies referenced by the package
+    depends_on("r-dt", type=("build", "run"))
+    depends_on("r-bsicons", type=("build", "run"))
+    depends_on("r-shiny", type=("build", "run"))
