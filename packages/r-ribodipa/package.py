@@ -20,6 +20,8 @@ class RRibodipa(RPackage):
     depends_on("r@4.1:", type=("build", "run"))
     depends_on("r-rsamtools", type=("build", "run"))
     depends_on("r-genomicfeatures", type=("build", "run"))
+    # Required for building TxDb objects used by RiboDiPA
+    depends_on("r-txdbmaker", type=("build", "run"))
     depends_on("r-genomicalignments", type=("build", "run"))
     depends_on("r-rcpp", type=("build", "run"))
     depends_on("r-data-table", type=("build", "run"))
