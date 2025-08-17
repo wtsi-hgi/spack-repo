@@ -28,3 +28,13 @@ class RSinglemoleculefootprinting(RPackage):
     depends_on("r-iranges", type=("build", "run"))
     depends_on("r-rcolorbrewer", type=("build", "run"))
     depends_on("r-quasr", type=("build", "run"))
+    # Additional CRAN/Bioconductor runtime dependencies inferred from DESCRIPTION
+    depends_on("r-cluster", type=("build", "run"))
+    depends_on("r-ggpointdensity", type=("build", "run"))
+    depends_on("r-ggplot2", type=("build", "run"))
+    depends_on("r-ggrepel", type=("build", "run"))
+    depends_on("r-misctools", type=("build", "run"))
+    depends_on("r-paralleldist", type=("build", "run"))
+    depends_on("r-patchwork", type=("build", "run"))
+    depends_on("r-plyranges", type=("build", "run"))
+    depends_on("r-viridis", type=("build", "run"))
