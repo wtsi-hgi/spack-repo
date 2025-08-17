@@ -36,3 +36,4 @@ class RSimplifyenrichment(RPackage):
     depends_on("r-cluster@1.14.2:", type=("build", "run"))
     depends_on("r-colorspace", type=("build", "run"))
     depends_on("r-globaloptions@0.1:", type=("build", "run"))
+    depends_on("r-simona", type=("build", "run"))
