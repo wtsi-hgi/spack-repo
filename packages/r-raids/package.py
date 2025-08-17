@@ -34,3 +34,5 @@ class RRaids(RPackage):
     depends_on("r-rlang", type=("build", "run"))
     depends_on("r-variantannotation", type=("build", "run"))
     depends_on("r-matrixgenerics", type=("build", "run"))
+    # Needed for plotting functions used by RAIDS
+    depends_on("r-ggplot2", type=("build", "run"))
