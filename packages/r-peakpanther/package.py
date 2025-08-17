@@ -23,6 +23,8 @@ class RPeakpanther(RPackage):
     depends_on("r-foreach@1.4.4:", type=("build", "run"))
     depends_on("r-doparallel@1.0.11:", type=("build", "run"))
     depends_on("r-ggplot2@3.5:", type=("build", "run"))
+    # Required for SVG plotting backend used by peakPantheR
+    depends_on("r-svglite", type=("build", "run"))
     depends_on("r-gridextra@2.3:", type=("build", "run"))
     depends_on("r-msnbase@2.4:", type=("build", "run"))
     depends_on("r-mzr@2.12:", type=("build", "run"))
