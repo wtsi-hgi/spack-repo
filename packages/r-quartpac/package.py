@@ -21,3 +21,5 @@ class RQuartpac(RPackage):
     depends_on("r-graphpac", type=("build", "run"))
     depends_on("r-spacepac", type=("build", "run"))
     depends_on("r-data-table", type=("build", "run"))
+    # Upstream DESCRIPTION lists 'pwalign'
+    depends_on("r-pwalign", type=("build", "run"))
