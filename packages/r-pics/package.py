@@ -24,3 +24,33 @@ class RPics(RPackage):
     depends_on("r-rsamtools", type=("build", "run"))
     depends_on("r-genomicalignments", type=("build", "run"))
     depends_on("gsl", type=("build", "link", "run"))
+
+    # R >= 4.5 removes legacy Calloc/Realloc/Free macros from default headers.
+    # Older PICS sources use these macros with a type argument, e.g. Calloc(n, int).
+    # Provide compatibility by replacing them with R_Calloc/R_Realloc/R_Free and
+    # ensuring the proper memory header is included during compilation.
+    def patch(self):
+        from glob import glob
+
+        source_files = []
+        for pattern in ("src/*.c", "src/*.h"):
+            source_files.extend(glob(pattern))
+
+        for src in source_files:
+            # Ensure the modern memory API header is available
+            filter_file(
+                "#include <R.h>",
+                "#include <R.h>\n#include <R_ext/Memory.h>",
+                src,
+            )
+            # Fallback: if <R.h> include not present, prepend Memory.h
+            filter_file(
+                r"^(.*)$",
+                "#include <R_ext/Memory.h>\n\\1",
+                src,
+                string=True,
+            )
+            # Replace deprecated alloc/free macros with their R_ equivalents
+            filter_file(r"\bCalloc\(", "R_Calloc(", src)
+            filter_file(r"\bRealloc\(", "R_Realloc(", src)
+            filter_file(r"\bFree\(", "R_Free(", src)
