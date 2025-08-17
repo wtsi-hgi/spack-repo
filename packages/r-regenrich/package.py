@@ -33,3 +33,5 @@ class RRegenrich(RPackage):
     depends_on("r-ggplot2@2.2:", type=("build", "run"))
     depends_on("r-reshape2", type=("build", "run"))
     depends_on("r-magrittr", type=("build", "run"))
+    # Imported by the package (required at build and runtime)
+    depends_on("r-biocstyle", type=("build", "run"))
