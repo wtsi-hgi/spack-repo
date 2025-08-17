@@ -15,10 +15,16 @@ class RTransport(RPackage):
 	homepage = "https://dschuhm1.pages.gwdg.de/software"
 	cran = "transport" 
 
-	version("0.15-0", md5="e2c2d35aeef8e940b30c6b4e270363da")
-	version("0.14-7", md5="b33b68547bf84921b3824b0e1d0af30a")
+	# R 4.5 compatibility requires R_* alloc macros
+	version("0.15-4", sha256="4e9342f6fd65dc39c9dfed20cb0312d34899b9cb0648aa5a67516ce7711c20cf")
+	version("0.15-2", sha256="8a67e22e3b2ee7a10ce26c1212cba763a272bd4327f9082fa70a382cd4a7c05d")
+	version("0.15-0", sha256="8aa9d5daec455586fe6fab3db5b1bfa85d1157ff55af98d936bc654c20f33829")
+	version("0.14-7", sha256="c01ed03509dee22b58b39da176a6427c2026efd901e9b0fb9f42ab022fd58716")
 
-	depends_on("r@3:", type=("build", "run"))
+	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-rcppeigen", type=("build", "run"))
+
+	# Apply R 4.5 compatibility edits for legacy sources
+	patch("r-transport-r45-compat.patch", when="@:0.15-2")

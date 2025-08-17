@@ -1,0 +1,280 @@
+--- a/src/aha.c
++++ b/src/aha.c
+@@
+-#include <R.h>
++#include <R.h>
++#include <R_ext/RS.h>
+@@
+-    double *cluster_x = Calloc(*n0*sizeof(double),double);
+-    double *cluster_y = Calloc(*n0*sizeof(double),double);
+-    double *cluster_m = Calloc(*n0*sizeof(double),double);
++    double *cluster_x = R_Calloc(*n0, double);
++    double *cluster_y = R_Calloc(*n0, double);
++    double *cluster_m = R_Calloc(*n0, double);
+@@
+-    Free(cluster_x);
+-    Free(cluster_y);
+-    Free(cluster_m);
++    R_Free(cluster_x);
++    R_Free(cluster_y);
++    R_Free(cluster_m);
+@@
+-    aha_x = Calloc(((aha_n+1)*(aha_m+1)+8)*sizeof(double),double);
+-    aha_y = Calloc(((aha_n+1)*(aha_m+1)+8)*sizeof(double),double);
+-    aha_ixmin = Calloc(aha_n*sizeof(int),int);
+-    aha_ixmax = Calloc(aha_n*sizeof(int),int);
+-    aha_edge_pixel = Calloc(aha_n*aha_m*sizeof(int),int);
+-    aha_area = Calloc(aha_n*aha_m*sizeof(double),double);
++    aha_x = R_Calloc(((aha_n+1)*(aha_m+1)+8), double);
++    aha_y = R_Calloc(((aha_n+1)*(aha_m+1)+8), double);
++    aha_ixmin = R_Calloc(aha_n, int);
++    aha_ixmax = R_Calloc(aha_n, int);
++    aha_edge_pixel = R_Calloc(aha_n*aha_m, int);
++    aha_area = R_Calloc(aha_n*aha_m, double);
+@@
+-    aha_dphi_val = Calloc(aha_npoints*sizeof(double),double);
+-    aha_transport_from = Calloc(AHA_TRANSPORT_MEMORY*sizeof(double),double);
+-    aha_transport_to = Calloc(AHA_TRANSPORT_MEMORY*sizeof(double),double);
+-    aha_transport_mass = Calloc(AHA_TRANSPORT_MEMORY*sizeof(double),double);
++    aha_dphi_val = R_Calloc(aha_npoints, double);
++    aha_transport_from = R_Calloc(AHA_TRANSPORT_MEMORY, double);
++    aha_transport_to = R_Calloc(AHA_TRANSPORT_MEMORY, double);
++    aha_transport_mass = R_Calloc(AHA_TRANSPORT_MEMORY, double);
+@@
+-    Free(aha_x);
+-    Free(aha_y);
+-    Free(aha_ixmin);
+-    Free(aha_ixmax);
+-    Free(aha_edge_pixel);
+-    Free(aha_area);
+-    Free(aha_dphi_val);
+-    Free(aha_transport_from);
+-    Free(aha_transport_to);
+-    Free(aha_transport_mass);
++    R_Free(aha_x);
++    R_Free(aha_y);
++    R_Free(aha_ixmin);
++    R_Free(aha_ixmax);
++    R_Free(aha_edge_pixel);
++    R_Free(aha_area);
++    R_Free(aha_dphi_val);
++    R_Free(aha_transport_from);
++    R_Free(aha_transport_to);
++    R_Free(aha_transport_mass);
+@@
+-    double *cx = Calloc((*n+4)*sizeof(double),double);
+-    double *cy = Calloc((*n+4)*sizeof(double),double);
++    double *cx = R_Calloc((*n+4), double);
++    double *cy = R_Calloc((*n+4), double);
+@@
+-    pd_x = Calloc(memory*PD_DEFAULT_MEMSIZE*sizeof(double),double);
+-    pd_y = Calloc(memory*PD_DEFAULT_MEMSIZE*sizeof(double),double);
++    pd_x = R_Calloc(memory*PD_DEFAULT_MEMSIZE, double);
++    pd_y = R_Calloc(memory*PD_DEFAULT_MEMSIZE, double);
+@@
+-            pd_x = Realloc(pd_x, (++memory)*PD_DEFAULT_MEMSIZE*sizeof(double),double);
+-            pd_y = Realloc(pd_y, (++memory)*PD_DEFAULT_MEMSIZE*sizeof(double),double);
++            pd_x = R_Realloc(pd_x, (++memory)*PD_DEFAULT_MEMSIZE, double);
++            pd_y = R_Realloc(pd_y, (++memory)*PD_DEFAULT_MEMSIZE, double);
+@@
+-    Free(cx);
+-    Free(cy);
++    R_Free(cx);
++    R_Free(cy);
+@@
+-    Free(pd_x);
+-    Free(pd_y);
++    R_Free(pd_x);
++    R_Free(pd_y);
+--- a/src/shortsimplex.c
++++ b/src/shortsimplex.c
+@@
+-#include <R.h>
++#include <R.h>
++#include <R_ext/RS.h>
+@@
+-  costfromrow = (double *) Calloc((long) n, double);
+-  indfromrow = (int *) Calloc((long) n, int);
++  costfromrow = (double *) R_Calloc((long) n, double);
++  indfromrow = (int *) R_Calloc((long) n, int);
+@@
+-  Free(costfromrow);
+-  Free(indfromrow);
++  R_Free(costfromrow);
++  R_Free(indfromrow);
+@@
+-  aleft = (int *) Calloc((long) m, int);
+-  bleft = (int *) Calloc((long) n, int);
+-  adone = (int *) Calloc((long) m, int);
+-  bdone = (int *) Calloc((long) n, int);
++  aleft = (int *) R_Calloc((long) m, int);
++  bleft = (int *) R_Calloc((long) n, int);
++  adone = (int *) R_Calloc((long) m, int);
++  bdone = (int *) R_Calloc((long) n, int);
+@@
+-  Free(aleft);
+-  Free(bleft);
+-  Free(adone);
+-  Free(bdone);
++  R_Free(aleft);
++  R_Free(bleft);
++  R_Free(adone);
++  R_Free(bdone);
+--- a/src/revsimplex.c
++++ b/src/revsimplex.c
+@@
+-#include <R.h>
++#include <R.h>
++#include <R_ext/RS.h>
+@@
+-  aleft = (int *) Calloc((long) m, int);
+-  bleft = (int *) Calloc((long) n, int);
+-  aisleft = (int *) Calloc((long) m, int);
+-  bisleft = (int *) Calloc((long) n, int);
+-  degenisj = (int *) Calloc((long) n, int);
++  aleft = (int *) R_Calloc((long) m, int);
++  bleft = (int *) R_Calloc((long) n, int);
++  aisleft = (int *) R_Calloc((long) m, int);
++  bisleft = (int *) R_Calloc((long) n, int);
++  degenisj = (int *) R_Calloc((long) n, int);
+@@
+-  Free(aleft);
+-  Free(bleft);
+-  Free(aisleft);
+-  Free(bisleft);
+-  Free(degenisj);
++  R_Free(aleft);
++  R_Free(bleft);
++  R_Free(aisleft);
++  R_Free(bisleft);
++  R_Free(degenisj);
+--- a/src/OT_SparseSimplex/sparsesimplex.c
++++ b/src/OT_SparseSimplex/sparsesimplex.c
+@@
+-  a2 = (int *) Calloc((long) m2, int);
+-  b2 = (int *) Calloc((long) n2, int);
+-  costm2 = (double *) Calloc((long) (m2 * n2), double);
+-  channels_byrow_over2 = (int *) Calloc((long) m2, int);
+-  channels_byrow2 = (int **) Calloc((long) m2, int *);
+-  assignment2 = (int *) Calloc((long) (m2 * n2), int);
+-  basis2 = (int *) Calloc((long) (m2 * n2), int);
+-  u2 = (double *) Calloc((long) m2, double);
+-  v2 = (double *) Calloc((long) n2, double);
++  a2 = (int *) R_Calloc((long) m2, int);
++  b2 = (int *) R_Calloc((long) n2, int);
++  costm2 = (double *) R_Calloc((long) (m2 * n2), double);
++  channels_byrow_over2 = (int *) R_Calloc((long) m2, int);
++  channels_byrow2 = (int **) R_Calloc((long) m2, int *);
++  assignment2 = (int *) R_Calloc((long) (m2 * n2), int);
++  basis2 = (int *) R_Calloc((long) (m2 * n2), int);
++  u2 = (double *) R_Calloc((long) m2, double);
++  v2 = (double *) R_Calloc((long) n2, double);
+@@
+-    channels_byrow2[i] = (int *) Calloc(state->channels_byrow_over[i]+1, int);      
++    channels_byrow2[i] = (int *) R_Calloc(state->channels_byrow_over[i]+1, int);      
+@@
+-  channels_byrow2[state->m] = (int *) Calloc(n2, int);
++  channels_byrow2[state->m] = (int *) R_Calloc(n2, int);
+@@
+-  Free(a2);
+-  Free(b2);
+-  Free(costm2);
+-  Free(channels_byrow_over2);
++  R_Free(a2);
++  R_Free(b2);
++  R_Free(costm2);
++  R_Free(channels_byrow_over2);
+@@
+-    Free(channels_byrow2[i]);
++    R_Free(channels_byrow2[i]);
+@@
+-  Free(channels_byrow2);
+-  Free(assignment2);
+-  Free(basis2);
+-  Free(u2);
+-  Free(v2); 
++  R_Free(channels_byrow2);
++  R_Free(assignment2);
++  R_Free(basis2);
++  R_Free(u2);
++  R_Free(v2); 
+@@
+-  aleft = (int *) Calloc((long) m, int);
+-  bleft = (int *) Calloc((long) n, int);
+-  aisleft = (int *) Calloc((long) m, int);
+-  bisleft = (int *) Calloc((long) n, int);
+-  degenisj = (int *) Calloc((long) n, int);
++  aleft = (int *) R_Calloc((long) m, int);
++  bleft = (int *) R_Calloc((long) n, int);
++  aisleft = (int *) R_Calloc((long) m, int);
++  bisleft = (int *) R_Calloc((long) n, int);
++  degenisj = (int *) R_Calloc((long) n, int);
+@@
+-  Free(aleft);
+-  Free(bleft);
+-  Free(aisleft);
+-  Free(bisleft);
+-  Free(degenisj);
++  R_Free(aleft);
++  R_Free(bleft);
++  R_Free(aisleft);
++  R_Free(bisleft);
++  R_Free(degenisj);
+--- a/src/OT_SparseSimplex/sparsebasicfeasible.c
++++ b/src/OT_SparseSimplex/sparsebasicfeasible.c
+@@
+-  rowblock = (int *) Calloc((long) m, int);
+-  colblock = (int *) Calloc((long) n, int);
++  rowblock = (int *) R_Calloc((long) m, int);
++  colblock = (int *) R_Calloc((long) n, int);
+@@
+-  gchannels = (int *) Calloc(nbl * nbl, int);   // between which blocks is transport possible
+-  gwhichrows = (int *) Calloc(nbl * nbl, int);  // if transport is possible between pair of blocks, from which source to which target
+-  gwhichcols = (int *) Calloc(nbl * nbl, int);  // from which source (...rows) to which target (...cols)
+-  chainlist = (int *) Calloc(nbl, int);         // in which order do we chain blocks to 0-block (first entry 0)
++  gchannels = (int *) R_Calloc(nbl * nbl, int);   // between which blocks is transport possible
++  gwhichrows = (int *) R_Calloc(nbl * nbl, int);  // if transport is possible between pair of blocks, from which source to which target
++  gwhichcols = (int *) R_Calloc(nbl * nbl, int);  // from which source (...rows) to which target (...cols)
++  chainlist = (int *) R_Calloc(nbl, int);         // in which order do we chain blocks to 0-block (first entry 0)
+@@
+-  Free(gchannels);
+-  Free(gwhichrows);
+-  Free(gwhichcols);
+-  Free(chainlist);
++  R_Free(gchannels);
++  R_Free(gwhichrows);
++  R_Free(gwhichcols);
++  R_Free(chainlist);
+@@
+-  Free(rowblock);
+-  Free(colblock);
++  R_Free(rowblock);
++  R_Free(colblock);
+@@
+-  rows2go = (int *) Calloc(m, int);
+-  rowlist = (int *) Calloc(m, int);
+-  cols2go = (int *) Calloc(n, int);
+-  collist = (int *) Calloc(n, int);
++  rows2go = (int *) R_Calloc(m, int);
++  rowlist = (int *) R_Calloc(m, int);
++  cols2go = (int *) R_Calloc(n, int);
++  collist = (int *) R_Calloc(n, int);
+@@
+-  Free(rows2go);
+-  Free(rowlist);
+-  Free(cols2go);
+-  Free(collist);
++  R_Free(rows2go);
++  R_Free(rowlist);
++  R_Free(cols2go);
++  R_Free(collist);
+--- a/src/power_diagram.h
++++ b/src/power_diagram.h
+@@
+-#define MALLOC(size,t) Calloc(size * sizeof(t),t)
+-#define REALLOC(p,size,t) Realloc(p, size * sizeof(t),t)
+-#define FREE(p) Free(p)
++#include <R_ext/RS.h>
++#define MALLOC(size,t) R_Calloc(size, t)
++#define REALLOC(p,size,t) R_Realloc(p, size, t)
++#define FREE(p) R_Free(p)
