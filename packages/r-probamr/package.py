@@ -24,3 +24,5 @@ class RProbamr(RPackage):
     depends_on("r-biostrings", type=("build", "run"))
     depends_on("r-genomicfeatures", type=("build", "run"))
     depends_on("r-rtracklayer", type=("build", "run"))
+    # Required by DESCRIPTION: txdbmaker (Bioconductor) -> r-txdbmaker in Spack
+    depends_on("r-txdbmaker", type=("build", "run"))
