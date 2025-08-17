@@ -48,7 +48,8 @@ class Thrift(CMakePackage, AutotoolsPackage):
     variant("nodejs", default=False, description="Build NodeJS library")
     variant("python", default=True, description="Build support for python")
 
-    build_system("cmake", "autotools", default="autotools")
+    # Prefer CMake to avoid fragile autotools option handling
+    build_system("cmake", "autotools", default="cmake")
 
     with default_args(type="build"):
         # depends_on("c")
@@ -69,6 +70,8 @@ class Thrift(CMakePackage, AutotoolsPackage):
             depends_on("libtool")
 
     depends_on("glib@2:", when="+c_glib")
+    # Thrift C++ library requires Boost; ensure it's available when +cpp
+    depends_on("boost@1.56:", when="+cpp")
     depends_on("openssl", when="+openssl")
     depends_on("libevent@2:", when="+libevent")
     depends_on("qt@5", when="+qt5")
@@ -125,7 +128,7 @@ class AutotoolsBuilder(AutotoolsBuilder):
         env.set("JAVA_PREFIX", self.prefix)
 
     def configure_args(self):
-        return [
+            args = [
             *self.enable_or_disable("shared"),
             "--enable-tests=no",
             *self.with_or_without("cpp"),
@@ -133,7 +136,6 @@ class AutotoolsBuilder(AutotoolsBuilder):
             *self.with_or_without("zlib"),
             *self.with_or_without("qt5"),
             *self.with_or_without("c_glib"),
-            *self.with_or_without("openssl", "prefix"),
             *self.with_or_without("java"),
             "--without-kotlin",
             "--without-erlang",
@@ -154,4 +156,12 @@ class AutotoolsBuilder(AutotoolsBuilder):
             "--without-haxe",
             "--without-netstd",
             "--without-d",
-        ]
+            ]
+
+            # Control OpenSSL explicitly to avoid auto-detection mishaps
+            if "+openssl" in self.spec:
+                args.append("--with-openssl={0}".format(self.spec["openssl"].prefix))
+            else:
+                args.append("--with-openssl=no")
+
+            return args
