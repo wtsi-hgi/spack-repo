@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 from spack.package import *
+import os
 
 
 class RCytoml(RPackage):
@@ -39,3 +40,22 @@ class RCytoml(RPackage):
     depends_on("r-rprotobuflib", type=("build", "run"))
     depends_on("r-rhdf5lib", type=("build", "run"))
     depends_on("libxml2", type=("build", "link", "run"))
+    # CytoML uses Boost filesystem via BH headers; ensure we link against
+    # Spack Boost libraries to satisfy symbols at load time and align with
+    # RCytolib's Boost settings to avoid ABI mismatches.
+    depends_on("boost@1.84:+filesystem+system cxxstd=17", type=("build", "link", "run"))
+
+    def setup_build_environment(self, env):
+        boost = self.spec["boost"]
+        # Help the package discover and link the Spack-provided Boost
+        env.set("BOOST_CPPFLAGS", f"-I{boost.prefix.include}")
+        env.set("BOOST_LDFLAGS", boost.libs.ld_flags)
+        env.set("BOOST_LIBS", boost.libs.ld_flags)
+        # Ensure configure's @PKG_LIBS@ includes Boost by populating
+        # CYTOLIBML_LIBS which is concatenated into PKG_LIBS in configure.ac
+        env.append_flags("CYTOLIBML_LIBS", boost.libs.ld_flags)
+        # Make runtime linker find Boost
+        env.prepend_path("LD_LIBRARY_PATH", boost.prefix.lib)
+        lib64 = getattr(boost.prefix, "lib64", None)
+        if lib64 and os.path.isdir(lib64):
+            env.prepend_path("LD_LIBRARY_PATH", lib64)
