@@ -53,3 +53,6 @@ class RSpatiallibd(RPackage):
     depends_on("r-edger", type=("build", "run"))
     depends_on("r-limma", type=("build", "run"))
     depends_on("r-statmod", type=("build", "run"))
+    # Required at runtime for visualization and heatmap functionality
+    depends_on("r-complexheatmap", type=("build", "run"))
+    depends_on("r-circlize", type=("build", "run"))
