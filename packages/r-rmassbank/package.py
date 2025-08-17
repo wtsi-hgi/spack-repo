@@ -28,6 +28,9 @@ class RRmassbank(RPackage):
     depends_on("r-biobase", type=("build", "run"))
     depends_on("r-msnbase", type=("build", "run"))
     depends_on("r-httr", type=("build", "run"))
+    # RMassBank >= 3.x requires modern HTTP and data reading helpers
+    depends_on("r-httr2", type=("build", "run"))
+    depends_on("r-readr", type=("build", "run"))
     depends_on("r-envipat", type=("build", "run"))
     depends_on("r-assertthat", type=("build", "run"))
     depends_on("r-logger", type=("build", "run"))
