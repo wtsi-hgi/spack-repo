@@ -40,3 +40,6 @@ class RRibosomeprofilingqc(RPackage):
     depends_on("r-scales", type=("build", "run"))
     depends_on("r-ggrepel", type=("build", "run"))
     depends_on("r-cluster", type=("build", "run"))
+    # Additional runtime requirements from DESCRIPTION
+    depends_on("r-txdbmaker", type=("build", "run"))
+    depends_on("r-ggextra", type=("build", "run"))
