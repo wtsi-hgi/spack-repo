@@ -18,7 +18,7 @@ class RTorch(RPackage):
 	homepage = "https://torch.mlverse.org/docs"
 	cran = "torch" 
 
-	version("0.12.0", md5="1e182d06b2a6ddecf95b9ee57b8df0af")
+	version("0.12.0", sha256="786d7afec80d28194c3d4a1ee0c4e5727d55d7e8d2005268fe42f5f1be468c08")
 
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))
