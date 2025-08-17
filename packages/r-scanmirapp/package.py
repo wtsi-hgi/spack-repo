@@ -41,6 +41,8 @@ class RScanmirapp(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-scanmir", type=("build", "run"))
     depends_on("r-scanmirdata", type=("build", "run"))
+    # Required by the package but previously missing from the recipe
+    depends_on("r-txdbmaker", type=("build", "run"))
     depends_on("r-shiny", type=("build", "run"))
     depends_on("r-shinycssloaders", type=("build", "run"))
     depends_on("r-shinydashboard", type=("build", "run"))
