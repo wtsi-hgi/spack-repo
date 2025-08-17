@@ -35,3 +35,4 @@ class RMonalisa(RPackage):
     depends_on("r-xvector", type=("build", "run"))
     depends_on("r-genomeinfodb", type=("build", "run"))
     depends_on("r-vioplot", type=("build", "run"))
+    depends_on("r-tidyr", type=("build", "run"))
