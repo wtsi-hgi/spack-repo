@@ -34,3 +34,8 @@ class RScifer(RPackage):
     depends_on("r-scales", type=("build", "run"))
     depends_on("r-rlang", type=("build", "run"))
     depends_on("r-flowcore", type=("build", "run"))
+    # Imports listed in DESCRIPTION but missing here
+    depends_on("r-basilisk", type=("build", "run"))
+    depends_on("r-reticulate", type=("build", "run"))
+    depends_on("r-here", type=("build", "run"))
+    depends_on("r-basilisk-utils", type=("build", "run"))
