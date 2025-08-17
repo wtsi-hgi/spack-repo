@@ -20,3 +20,18 @@ class RDistrex(RPackage):
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-distr@2.8:", type=("build", "run"))
 	depends_on("r-startupmsg", type=("build", "run"))
+
+	def patch(self):
+		# R 4.5 tightened math header requirements; ensure PI is defined
+		# in C sources that use it without including a definition.
+		filter_file(
+			r"\A",
+			"\n".join([
+				"#include <math.h>",
+				"#ifndef PI",
+				"#define PI 3.141592653589793238462643383279502884197",
+				"#endif",
+				"",
+			]),
+			"src/GLaw.c",
+		)
