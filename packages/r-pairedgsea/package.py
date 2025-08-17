@@ -29,3 +29,6 @@ class RPairedgsea(RPackage):
     depends_on("r-biocparallel", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-aggregation", type=("build", "run"))
+    # Additional CRAN dependencies required by the package
+    depends_on("r-msigdbr", type=("build", "run"))
+    depends_on("r-showtext", type=("build", "run"))
