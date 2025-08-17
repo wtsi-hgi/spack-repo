@@ -28,3 +28,8 @@ class RScp(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-magrittr", type=("build", "run"))
+    # Missing runtime dependencies discovered during install
+    depends_on("r-ihw", type=("build", "run"))
+    depends_on("r-ggrepel", type=("build", "run"))
+    depends_on("r-metapod", type=("build", "run"))
+    depends_on("r-nipals", type=("build", "run"))
