@@ -31,3 +31,5 @@ class RSparsesignatures(RPackage):
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-gridextra", type=("build", "run"))
     depends_on("r-reshape2", type=("build", "run"))
+    # Missing runtime dependency required by SparseSignatures
+    depends_on("r-rhpcblasctl", type=("build", "run"))
