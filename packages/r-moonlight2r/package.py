@@ -47,5 +47,7 @@ class RMoonlight2r(RPackage):
     depends_on("r-tidyheatmap", type=("build", "run"))
     depends_on("r-tidyr", type=("build", "run"))
     depends_on("r-annotationhub", type=("build", "run"))
+    depends_on("r-experimenthub", type=("build", "run"))
     depends_on("r-easypubmed", type=("build", "run"))
     depends_on("r-org-hs-eg-db", type=("build", "run"))
+    depends_on("r-epimix", type=("build", "run"))
