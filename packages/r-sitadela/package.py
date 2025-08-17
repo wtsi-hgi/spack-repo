@@ -31,3 +31,5 @@ class RSitadela(RPackage):
     depends_on("r-rsqlite", type=("build", "run"))
     depends_on("r-rtracklayer", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
+    # Missing runtime dependency reported by build logs
+    depends_on("r-txdbmaker", type=("build", "run"))
