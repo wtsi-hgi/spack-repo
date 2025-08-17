@@ -40,3 +40,5 @@ class ROctad(RPackage):
     depends_on("r-htmlwidgets", type=("build", "run"))
     depends_on("r-plotly", type=("build", "run"))
     depends_on("r-reshape2", type=("build", "run"))
+    # Required by OCTAD for PDF utilities
+    depends_on("r-qpdf", type=("build", "run"))
