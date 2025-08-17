@@ -25,3 +25,6 @@ class RSaigegds(RPackage):
     depends_on("r-matrix", type=("build", "run"))
     depends_on("r-rcppparallel@5:", type=("build", "run"))
     depends_on("r-rcpparmadillo", type=("build", "run"))
+    # Additional CRAN dependencies required by the R package
+    depends_on("r-compquadform", type=("build", "run"))
+    depends_on("r-survey", type=("build", "run"))
