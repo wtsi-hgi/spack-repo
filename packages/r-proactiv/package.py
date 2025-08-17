@@ -34,5 +34,7 @@ class RProactiv(RPackage):
     depends_on("r-rlang", type=("build", "run"))
     depends_on("r-scales", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
+    # Required for building TxDb objects used by proActiv
+    depends_on("r-txdbmaker", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-tibble", type=("build", "run"))
