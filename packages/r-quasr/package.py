@@ -31,6 +31,8 @@ class RQuasr(RPackage):
     depends_on("r-shortread", type=("build", "run"))
     depends_on("r-biocparallel", type=("build", "run"))
     depends_on("r-genomeinfodb", type=("build", "run"))
+    # QuasR DESCRIPTION started requiring TxDbMaker in newer Bioc releases
+    depends_on("r-txdbmaker", type=("build", "run"))
     depends_on("r-rtracklayer", type=("build", "run"))
     depends_on("r-genomicfiles", type=("build", "run"))
     depends_on("r-annotationdbi", type=("build", "run"))
