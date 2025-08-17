@@ -39,3 +39,5 @@ class RRnamodr(RPackage):
     depends_on("r-gviz@1.31:", type=("build", "run"))
     depends_on("r-reshape2", type=("build", "run"))
     depends_on("r-rocr", type=("build", "run"))
+    # Missing runtime dependency detected during install
+    depends_on("r-txdbmaker", type=("build", "run"))
