@@ -51,3 +51,5 @@ class ROrfik(RPackage):
     depends_on("r-xml", type=("build", "run"))
     depends_on("r-xml2@1.2:", type=("build", "run"))
     depends_on("r-withr", type=("build", "run"))
+    # ORFik imports txdbmaker at runtime for TxDb creation utilities
+    depends_on("r-txdbmaker", type=("build", "run"))
