@@ -47,6 +47,8 @@ class RSplicewiz(RPackage):
     depends_on("r-plotly", type=("build", "run"))
     depends_on("r-r-utils", type=("build", "run"))
     depends_on("r-rhdf5", type=("build", "run"))
+    # New runtime dependency introduced upstream; required for R >=4.4
+    depends_on("r-h5mread", type=("build", "run"), when="@1.10.1:")
     depends_on("r-rtracklayer", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
