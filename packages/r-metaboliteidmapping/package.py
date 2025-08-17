@@ -19,7 +19,18 @@ class RMetaboliteidmapping(RPackage):
     version(
         "1.0.0",
         sha256="148fd847cf4609086d1e9a175712645182d9a7e4bc28a99e88c8f2a1e8bed459",
+        url="https://www.bioconductor.org/packages/3.21/data/annotation/src/contrib/metaboliteIDmapping_1.0.0.tar.gz",
     )
 
     depends_on("r@4:", type=("build", "run"))
     depends_on("r-annotationhub", type=("build", "run"))
+
+    def url_for_version(self, version):
+        """Construct Bioconductor source URL for this package.
+
+        Use the release path; older versions will be served from Archive by
+        Bioconductor's redirect logic.
+        """
+        return "https://bioconductor.org/packages/release/bioc/src/contrib/{0}_{1}.tar.gz".format(
+            self.bioc, version
+        )
