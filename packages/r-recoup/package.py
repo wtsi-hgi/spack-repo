@@ -36,3 +36,5 @@ class RRecoup(RPackage):
     depends_on("r-rtracklayer", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-stringr", type=("build", "run"))
+    # Required by recoup per DESCRIPTION for TxDb creation utilities
+    depends_on("r-txdbmaker", type=("build", "run"))
