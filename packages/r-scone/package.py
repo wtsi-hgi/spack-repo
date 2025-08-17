@@ -31,6 +31,9 @@ class RScone(RPackage):
     depends_on("r-hexbin", type=("build", "run"))
     depends_on("r-limma", type=("build", "run"))
     depends_on("r-matrixstats", type=("build", "run"))
+    # Required for operations on DelayedMatrix and sparse matrices
+    depends_on("r-delayedmatrixstats", type=("build", "run"))
+    depends_on("r-sparsematrixstats", type=("build", "run"))
     depends_on("r-mixtools", type=("build", "run"))
     depends_on("r-rcolorbrewer", type=("build", "run"))
     depends_on("r-boot", type=("build", "run"))
