@@ -29,4 +29,5 @@ class RScbubbletree(RPackage):
     depends_on("r-ggtree", type=("build", "run"))
     depends_on("r-patchwork", type=("build", "run"))
     depends_on("r-proxy", type=("build", "run"))
+    depends_on("r-biocparallel", type=("build", "run"))
     depends_on("python@3.6:", type=("build", "link", "run"))
