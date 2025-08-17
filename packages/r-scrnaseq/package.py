@@ -27,3 +27,9 @@ class RScrnaseq(RPackage):
     depends_on("r-annotationdbi", type=("build", "run"))
     depends_on("r-ensembldb", type=("build", "run"))
     depends_on("r-genomicfeatures", type=("build", "run"))
+    # Additional dependencies required by newer releases of scRNAseq
+    # Ensure these are available at build/run time
+    depends_on("r-alabaster-base", type=("build", "run"))
+    depends_on("r-alabaster-matrix", type=("build", "run"))
+    depends_on("r-alabaster-sce", type=("build", "run"))
+    depends_on("r-gypsum", type=("build", "run"))
