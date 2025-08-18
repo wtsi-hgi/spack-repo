@@ -27,3 +27,5 @@ class RTxcutr(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-rtracklayer", type=("build", "run"))
     depends_on("r-biocparallel", type=("build", "run"))
+    # txcutr imports and uses txdbmaker at runtime
+    depends_on("r-txdbmaker", type=("build", "run"))
