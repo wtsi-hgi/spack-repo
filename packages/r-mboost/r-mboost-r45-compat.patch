@@ -1,0 +1,18 @@
+--- a/src/mboost.c
++++ b/src/mboost.c
+@@ -5,6 +5,15 @@
+ #include <Rdefines.h>
+ // #include <R_ext/Applic.h> /* for dgemm */
+ #include <R_ext/BLAS.h> /* for dgemm */
++#include <R_ext/RS.h>
++#include <R_ext/Memory.h>
++
++#ifndef Calloc
++#define Calloc(n, t) (t *) R_alloc((n), sizeof(t))
++#endif
++#ifndef Free
++#define Free(p) ((void)0)
++#endif
+ 
+ 
+ /**
