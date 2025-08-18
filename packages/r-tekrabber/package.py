@@ -26,3 +26,7 @@ class RTekrabber(RPackage):
     depends_on("r-magrittr", type=("build", "run"))
     depends_on("r-rcpp", type=("build", "run"))
     depends_on("r-scbn", type=("build", "run"))
+    # Missing runtime dependencies discovered during installation
+    depends_on("r-doparallel", type=("build", "run"))
+    depends_on("r-foreach", type=("build", "run"))
+    depends_on("r-rtracklayer", type=("build", "run"))
