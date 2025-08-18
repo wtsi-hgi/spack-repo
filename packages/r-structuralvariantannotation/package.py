@@ -32,3 +32,6 @@ class RStructuralvariantannotation(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-genomeinfodb", type=("build", "run"))
+    # Required at runtime by the R package; without this the install fails
+    # with: ERROR: dependency 'pwalign' is not available for package
+    depends_on("r-pwalign", type=("build", "run"))
