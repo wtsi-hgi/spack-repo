@@ -26,6 +26,7 @@ class RVoyager(RPackage):
     depends_on("r-lifecycle", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))
     depends_on("r-matrixstats", type=("build", "run"))
+    depends_on("r-memuse", type=("build", "run"))
     depends_on("r-patchwork", type=("build", "run"))
     depends_on("r-rlang", type=("build", "run"))
     depends_on("r-rspectra", type=("build", "run"))
