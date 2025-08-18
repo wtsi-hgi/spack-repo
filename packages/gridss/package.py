@@ -93,3 +93,20 @@ class Gridss(Package):
         # Add library paths for shared libraries required by gridsstools
         env.prepend_path("LD_LIBRARY_PATH", self.spec["libdeflate"].libs.directories[0])
         env.prepend_path("LD_LIBRARY_PATH", self.spec["openssl"].libs.directories[0])
+        
+        # Handle OpenSSL compatibility for gridsstools
+        # gridsstools expects libcrypto.so.1.1 but OpenSSL 3.x provides libcrypto.so.3
+        # Create a compatibility symlink if needed
+        openssl_lib_dir = self.spec["openssl"].libs.directories[0]
+        libcrypto_3 = join_path(openssl_lib_dir, "libcrypto.so.3")
+        libcrypto_1_1 = join_path(openssl_lib_dir, "libcrypto.so.1.1")
+        
+        # Create compatibility symlink if libcrypto.so.3 exists but libcrypto.so.1.1 doesn't
+        if os.path.exists(libcrypto_3) and not os.path.exists(libcrypto_1_1):
+            try:
+                os.symlink(libcrypto_3, libcrypto_1_1)
+            except (OSError, FileExistsError):
+                pass  # Symlink already exists or cannot be created
+        
+        # Set environment variable to help with compatibility
+        env.set("OPENSSL_COMPATIBILITY_MODE", "1")
