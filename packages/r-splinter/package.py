@@ -32,5 +32,7 @@ class RSplinter(RPackage):
     depends_on("r-genomeinfodb", type=("build", "run"))
     depends_on("r-plyr", type=("build", "run"))
     depends_on("r-stringr", type=("build", "run"))
+    # Missing runtime dependency required by SPLINTER's DESCRIPTION
+    depends_on("r-pwalign", type=("build", "run"))
     depends_on("r-bsgenome-mmusculus-ucsc-mm9", type=("build", "run"))
     depends_on("r-googlevis", type=("build", "run"))
