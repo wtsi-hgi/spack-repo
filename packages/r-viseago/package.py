@@ -34,6 +34,9 @@ class RViseago(RPackage):
     depends_on("r-heatmaply", type=("build", "run"))
     depends_on("r-htmlwidgets", type=("build", "run"))
     depends_on("r-igraph", type=("build", "run"))
+    # Required for heatmap visualizations used by ViSEAGO
+    depends_on("r-complexheatmap", type=("build", "run"))
+    depends_on("r-circlize", type=("build", "run"))
     depends_on("r-plotly", type=("build", "run"))
     depends_on("r-processx", type=("build", "run"))
     depends_on("r-topgo", type=("build", "run"))
