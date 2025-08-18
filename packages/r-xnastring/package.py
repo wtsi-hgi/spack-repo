@@ -29,3 +29,5 @@ class RXnastring(RPackage):
     depends_on("r-future-apply", type=("build", "run"))
     depends_on("r-stringr", type=("build", "run"))
     depends_on("r-formattable", type=("build", "run"))
+    # Added: XNAString imports/uses pwalign (Bioconductor)
+    depends_on("r-pwalign", type=("build", "run"))
