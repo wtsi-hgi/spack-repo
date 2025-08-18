@@ -29,3 +29,5 @@ class RTerratcgadata(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-tidyr", type=("build", "run"))
     depends_on("r-tcgautils", type=("build", "run"))
+    # Required by upstream DESCRIPTION (AnVILGCP)
+    depends_on("r-anvilgcp", type=("build", "run"))
