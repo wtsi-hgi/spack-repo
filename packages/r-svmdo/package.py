@@ -36,3 +36,5 @@ class RSvmdo(RPackage):
     depends_on("r-org-hs-eg-db@3.16:", type=("build", "run"))
     depends_on("r-dplyr@1.0.10:", type=("build", "run"))
     depends_on("r-summarizedexperiment@1.28:", type=("build", "run"))
+    # Required for the Shiny UI data tables
+    depends_on("r-dt", type=("build", "run"))
