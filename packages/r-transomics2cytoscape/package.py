@@ -23,4 +23,8 @@ class RTransomics2cytoscape(RPackage):
     depends_on("r-purrr", type=("build", "run"))
     depends_on("r-tibble", type=("build", "run"))
     depends_on("r-pbapply", type=("build", "run"))
-    depends_on("cytoscape@3.10.0:", type=("build", "link", "run"))
+    # Cytoscape is required at runtime for full functionality via r-rcy3,
+    # but it is not packaged in this repository. Avoid a hard dependency
+    # so that the R package can still be installed and loaded.
+    # Users should install Cytoscape separately if they intend to use
+    # the Cytoscape automation features.
