@@ -33,6 +33,10 @@ class RTbsignatureprofiler(RPackage):
     depends_on("r-reshape2", type=("build", "run"))
     depends_on("r-rlang", type=("build", "run"))
     depends_on("r-rocit", type=("build", "run"))
+    # Additional dependencies required at build time by upstream package
+    depends_on("r-glmnet", type=("build", "run"))
+    depends_on("r-hgnchelper", type=("build", "run"))
+    depends_on("r-proc", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-singscore", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
