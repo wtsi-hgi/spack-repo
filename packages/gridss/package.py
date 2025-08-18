@@ -25,8 +25,8 @@ class Gridss(Package):
     depends_on("bcftools", type="run")
     depends_on("kraken2", type="run")
     depends_on("repeatmasker", type="run")
-    depends_on("libdeflate", type="run")
-    depends_on("openssl", type="run")
+    depends_on("libdeflate", type=("run", "link"))
+    depends_on("openssl", type=("run", "link"))
     
     # R dependencies for GRIDSS scripts
     depends_on("r@3.5:", type="run")
@@ -89,3 +89,7 @@ class Gridss(Package):
         jar_name = "gridss-{}-gridss-jar-with-dependencies.jar".format(self.version)
         env.set("GRIDSS_JAR", join_path(self.prefix.share, "gridss", jar_name))
         env.prepend_path("PATH", self.prefix.bin)
+        
+        # Add library paths for shared libraries required by gridsstools
+        env.prepend_path("LD_LIBRARY_PATH", self.spec["libdeflate"].libs.directories[0])
+        env.prepend_path("LD_LIBRARY_PATH", self.spec["openssl"].libs.directories[0])
