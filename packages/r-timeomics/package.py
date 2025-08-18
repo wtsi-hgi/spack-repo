@@ -29,3 +29,5 @@ class RTimeomics(RPackage):
     depends_on("r-ggrepel", type=("build", "run"))
     depends_on("r-lmtest", type=("build", "run"))
     depends_on("r-plyr", type=("build", "run"))
+    # Required at runtime; missing caused installation failure
+    depends_on("r-checkmate", type=("build", "run"))
