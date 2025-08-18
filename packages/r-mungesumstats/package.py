@@ -35,3 +35,5 @@ class RMungesumstats(RPackage):
     depends_on("r-jsonlite", type=("build", "run"))
     depends_on("r-rtracklayer@1.59.1:", type=("build", "run"))
     depends_on("r-rcurl", type=("build", "run"))
+    # Not declared upstream in older recipes but required at runtime
+    depends_on("r-ieugwasr@1.0.1:", type=("build", "run"))

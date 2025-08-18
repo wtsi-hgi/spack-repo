@@ -35,3 +35,5 @@ class RCrisprdesign(RPackage):
     depends_on("r-rtracklayer", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-variantannotation", type=("build", "run"))
+    # Imported in DESCRIPTION but missing from the Spack recipe
+    depends_on("r-txdbmaker", type=("build", "run"))

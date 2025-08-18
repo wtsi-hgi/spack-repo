@@ -41,6 +41,13 @@ class RMissmethyl(RPackage):
     depends_on("r-go-db", type=("build", "run"))
     depends_on("r-illuminahumanmethylation450kmanifest", type=("build", "run"))
     depends_on("r-illuminahumanmethylationepicmanifest", type=("build", "run"))
+    # EPIC v2 support for newer releases only
+    depends_on(
+        "r-illuminahumanmethylationepicv2manifest", when="@1.42.0:", type=("build", "run")
+    )
+    depends_on(
+        "r-illuminahumanmethylationepicv2anno-20a1-hg38", when="@1.42.0:", type=("build", "run")
+    )
     depends_on("r-iranges", type=("build", "run"))
     depends_on("r-limma", type=("build", "run"))
     depends_on("r-methylumi", type=("build", "run"))
@@ -51,3 +58,11 @@ class RMissmethyl(RPackage):
     depends_on("r-statmod", type=("build", "run"))
     depends_on("r-stringr", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
+
+    def install_args(self, spec, prefix):
+        """Speed up R installs by skipping heavy docs/vignettes."""
+        return [
+            "--no-byte-compile",
+            "--no-build-vignettes",
+            "--no-manual",
+        ]

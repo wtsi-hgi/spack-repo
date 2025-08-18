@@ -1,0 +1,31 @@
+Fix build with newer compilers/R by aligning prototypes with definitions in AlgDesign C sources. Only signature mismatches are corrected; no logic changes.
+
+--- a/src/FederovOpt.c
++++ b/src/FederovOpt.c
+@@
+-void BacksolveT(double *matrixXY,int nColumns,bool scaled);
++void BacksolveT(double *matrixXY,int nColumns,int scaled);
+@@
+-void ProgDealloc(double *U,double *V,double *B,double *BU,double        *T,double *Ti,
+-    double	*Tip,double  *W,double *maxmin,dType *d,double  *vec,bool *designFlag,bool *ttrows,int *trows);
++void ProgDealloc(double *U,double *V,double *B,double *BU,double        *T,double *Ti,
++    double	*Tip,double  *W,double *maxmin,dType *d,double  *vec,int *designFlag,int *ttrows,int *trows);
+@@
+-int FederovOptimize(double *X,double *B,double *BU,double *proportions,bool RandomStart,int Nullify,
++int FederovOptimize(double *X,double *B,double *BU,double *proportions,bool RandomStart,int Nullify,
+     int	criterion,bool evaluateI,bool doSpace,
+     int augment,double *D,double *A,double *I,double *G,double *U,double *V,double *T,double *Ti,double *Tip,
+-    double *W,double *maxmin,dType *d,double *vec,int *designFlag,int *ttrows,int *rows,
+-		    int	*trows,int N,int n,int k,int maxIteration,int nRepeats,double DFrac,double  CFrac,bool *error);
++    double *W,double *maxmin,dType *d,double *vec,int *designFlag,int *ttrows,int *rows,
++		    int	*trows,int N,int n,int k,int maxIteration,int nRepeats,double DFrac,double  CFrac,int *error);
+
+--- a/src/OptBlock.c
++++ b/src/OptBlock.c
+@@
+-int ProgAllocate(int **B,double **blockMeans,double **tBlockMeans,int **BlockArray,double **tX,double **T,
+-    double **Tip,double **W,double **vec,double **Sc,int **rows,int N,int k,int Nxb,int nB,
+-    bool criterion,int *blocksize);
++int ProgAllocate(int **B,double **blockMeans,double **tBlockMeans,int **BlockArray,double **tX,double **T,
++    double **Tip,double **W,double **vec,double **Sc,int **rows,int N,int k,int Nxb,int nB,
++    int criterion,int *blocksize);

@@ -39,3 +39,11 @@ class RDmrcate(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-biomart", type=("build", "run"))
+
+    def install_args(self, spec, prefix):
+        """Speed up R installs by skipping heavy docs/vignettes."""
+        return [
+            "--no-byte-compile",
+            "--no-build-vignettes",
+            "--no-manual",
+        ]

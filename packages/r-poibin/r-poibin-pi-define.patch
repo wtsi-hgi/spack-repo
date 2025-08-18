@@ -1,0 +1,19 @@
+--- a/src/dftcf.c	2020-01-01 00:00:00.000000000 +0000
++++ b/src/dftcf.c	2025-08-16 00:00:00.000000000 +0000
+@@ -1,6 +1,10 @@
+ #include <R.h>
+ #include <stdlib.h> /* for abs */
+ #include <math.h>
+ #include <Rmath.h> /* for imax2(.),..*/
+ #include <R_ext/Applic.h>
+ 
++/* Define PI if not provided by headers */
++#ifndef PI
++#define PI 3.141592653589793238462643383279502884197
++#endif
++
+ 
+ 
+ static void fftmx(double *a, double *b, int ntot, int n, int nspan, int isn,
+ 		  int m, int kt, double *at, double *ck, double *bt, double *sk,
+ 		  int *np, int *nfac)

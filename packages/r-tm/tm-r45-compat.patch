@@ -1,0 +1,23 @@
+--- a/src/scan.c
++++ b/src/scan.c
+@@
+-#include <R.h>
+-#include <Rdefines.h>
++#include <R.h>
++#include <Rdefines.h>
++#include <R_ext/RS.h>
+@@
+-    beg = Calloc(size, int);
+-    end = Calloc(size, int);
++    beg = R_Calloc(size, int);
++    end = R_Calloc(size, int);
+@@
+-                beg = Realloc(beg, size, int);
+-                end = Realloc(end, size, int);
++                beg = R_Realloc(beg, size, int);
++                end = R_Realloc(end, size, int);
+@@
+-    Free(beg);
+-    Free(end);
++    R_Free(beg);
++    R_Free(end);

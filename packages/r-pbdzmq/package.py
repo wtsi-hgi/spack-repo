@@ -31,3 +31,23 @@ class RPbdzmq(RPackage):
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("libzmq@4.0.7:", type=("build", "link", "run"))
+
+	# R >= 4.5 removed deprecated Calloc/Free macros from public headers.
+	# Inject compatibility shims so older pbdZMQ releases build with new R.
+	def patch(self):
+		# Add R_ext/Memory.h and define Calloc/Free shims in a common header
+		# so all translation units pick it up.
+		filter_file(
+			 r"#include <Rinternals.h>",
+			 (
+				"#include <Rinternals.h>\n"
+				"#include <R_ext/Memory.h>\n"
+				"#ifndef Calloc\n"
+				"#define Calloc(b, T) (T*) R_Calloc((b), T)\n"
+				"#endif\n"
+				"#ifndef Free\n"
+				"#define Free R_Free\n"
+				"#endif\n"
+			 ),
+			"src/R_zmq.h",
+		)

@@ -39,3 +39,5 @@ class RTrackviewer(RPackage):
     depends_on("r-graph", type=("build", "run"))
     depends_on("r-rhdf5", type=("build", "run"))
     depends_on("r-strawr", type=("build", "run"))
+    # Required by recent Bioconductor releases; missing dep caused install failure
+    depends_on("r-txdbmaker", type=("build", "run"))

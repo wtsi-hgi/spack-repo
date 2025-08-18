@@ -29,3 +29,6 @@ class RZygositypredictor(RPackage):
     depends_on("r-purrr", type=("build", "run"))
     depends_on("r-tibble", type=("build", "run"))
     depends_on("r-igraph", type=("build", "run"))
+    # Additional runtime imports detected during installation
+    depends_on("r-readr", type=("build", "run"))
+    depends_on("r-knitr", type=("build", "run"))

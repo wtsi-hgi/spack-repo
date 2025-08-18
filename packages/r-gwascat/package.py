@@ -30,3 +30,5 @@ class RGwascat(RPackage):
     depends_on("r-snpstats", type=("build", "run"))
     depends_on("r-variantannotation", type=("build", "run"))
     depends_on("r-annotationhub", type=("build", "run"))
+    # Missing runtime dependency discovered during installation
+    depends_on("r-data-table", type=("build", "run"))

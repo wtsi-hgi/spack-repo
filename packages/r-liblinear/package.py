@@ -31,3 +31,36 @@ class RLiblinear(RPackage):
 
 	version("2.10-23", md5="d273f6ac41fba1e7a32e3938f26c433d")
 
+
+	def patch(self):
+		# R >=4.5: Calloc/Realloc/Free moved behind R_ext/Memory.h
+		# Ensure the header is included in all native sources.
+		for source_path in [
+			"src/predictLinear.c",
+			"src/trainLinear.c",
+			"src/linear.cpp",
+		]:
+			# First, try to insert after an exact '#include <R.h>'
+			filter_file(
+				"#include <R.h>",
+				"#include <R.h>\n#include <R_ext/Memory.h>",
+				source_path,
+			)
+			# If that did not hit (e.g., uses quotes or different include order),
+			# prepend the include at the top as a fallback.
+			filter_file(
+				r"^(.*)$",
+				"#include <R_ext/Memory.h>\n\\1",
+				source_path,
+				string=True,
+			)
+			# Ensure fallbacks if Calloc/Free/Realloc still undefined under R >= 4.5
+			filter_file(
+				r"^#include <R_ext/Memory.h>$",
+				"#include <R_ext/Memory.h>\n#ifndef Calloc\n#define Calloc(n,t) R_Calloc((n), t)\n#endif\n#ifndef Realloc\n#define Realloc(p,n,t) R_Realloc((p),(n), t)\n#endif\n#ifndef Free\n#define Free(p) R_Free((p))\n#endif",
+				source_path,
+			)
+			# Fix any previously injected incorrect macro definitions
+			filter_file(r"#define Calloc\(n,t\) \(t\*\) R_Calloc\(\(n\), sizeof\(t\)\)", "#define Calloc(n,t) R_Calloc((n), t)", source_path)
+			filter_file(r"#define Realloc\(p,n,t\) \(t\*\) R_Realloc\(\(p\),\(n\), sizeof\(t\)\)", "#define Realloc(p,n,t) R_Realloc((p),(n), t)", source_path)
+

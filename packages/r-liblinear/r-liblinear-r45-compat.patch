@@ -1,0 +1,20 @@
+--- a/src/predictLinear.c
++++ b/src/predictLinear.c
+@@
+-#include <R.h>
++#include <R.h>
++#include <R_ext/Memory.h>
+ 
+--- a/src/trainLinear.c
++++ b/src/trainLinear.c
+@@
+-#include <R.h>
++#include <R.h>
++#include <R_ext/Memory.h>
+ 
+--- a/src/linear.cpp
++++ b/src/linear.cpp
+@@
+-#include <R.h>
++#include <R.h>
++#include <R_ext/Memory.h>

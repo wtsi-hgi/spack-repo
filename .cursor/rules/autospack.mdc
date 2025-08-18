@@ -19,11 +19,14 @@ If it doesn't exist there, the prompt would usually contain a url. Go to that pa
 
 If it does not have tags or releases, just clone the repo into a scratch location and get its latest commit SHA, and add a line like `version("20250411", commit="82a307f19fb8188373fdd6838be92d457bf65e06")` in the recipe using the commit date as the version id. You can find an example in `examples/py-popcorn`. Except for bioconductor packages, they should use the version described in the `DESCRIPTION` file with the commit of their latest bionconductor tag.
 
-When generate recipes, don't use variants, just set all optional dependencies to true. For dependency that is only needed for a newer or an older version, add version restrains such as `when="@X:" in the depends_on string.
+When generate recipes, don't use variants, just set all optional dependencies to true. 
+
+For dependency that is only needed for a newer or an older version, add version restrains such as `when="@X:"` in the depends_on string. Similar to patch that is only needed because of a certain version - use `when` argument or decorator. This is important to make recipes compatiabile with all versions.
 
 Then install the package using spack, do not run concretization before installing, as it is waste of time:
 `spack install {pkg}`
 If there is build error, read the logs and fix it and install again, until it succeeds.
+When testing the installation, never stop other Spack or orchestrator processes if there is a DB lock. You should either wait; or if the wait is too long, just time out and exit.
 
 when something installs successfully, always validate it by:
 `singularity exec --bind /mnt/data /home/ubuntu/spack.sif bash -c "source <(/opt/spack/bin/spack load --sh {pkg}); {script}"`

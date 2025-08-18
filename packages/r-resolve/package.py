@@ -34,3 +34,5 @@ class RResolve(RPackage):
     depends_on("r-nnls", type=("build", "run"))
     depends_on("r-reshape2", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
+    # Required at runtime to control BLAS threads; referenced in package
+    depends_on("r-rhpcblasctl", type=("build", "run"))

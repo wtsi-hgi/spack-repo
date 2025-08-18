@@ -35,3 +35,11 @@ class RMeal(RPackage):
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-smartsva", type=("build", "run"))
     depends_on("r-matrixstats", type=("build", "run"))
+
+    def install_args(self, spec, prefix):
+        """Speed up installation by skipping vignettes, manual, and test-load."""
+        return [
+            "--no-build-vignettes",
+            "--no-manual",
+            "--no-test-load",
+        ]
