@@ -8,7 +8,7 @@ from spack.package import *
 class PyCrispresso2(PythonPackage):
     """CRISPResso2 is a software pipeline designed to enable rapid and intuitive interpretation of genome editing experiments."""
 
-    homepage = "https://www.example.com"
+    homepage = "https://github.com/pinellolab/CRISPResso2"
     url = "https://github.com/pinellolab/CRISPResso2/archive/refs/tags/v2.3.1.tar.gz"
 
     version("2.3.1", sha256="e1f3f87e392529d441f0b3b6983600d643fbcdf40cde621eb24f40b3f7195fa4")
