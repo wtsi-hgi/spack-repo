@@ -26,3 +26,4 @@ class PyCrispresso2(PythonPackage):
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-seaborn", type=("build", "run"))
+    depends_on("py-jinja2", type=("build", "run"))
