@@ -26,7 +26,7 @@ class Gridss(Package):
     depends_on("kraken2", type="run")
     depends_on("repeatmasker", type="run")
     depends_on("libdeflate", type=("run", "link"))
-    depends_on("openssl", type=("run", "link"))
+    depends_on("openssl@:1.1", type=("run", "link"))
     
     # R dependencies for GRIDSS scripts
     depends_on("r@3.5:", type="run")
