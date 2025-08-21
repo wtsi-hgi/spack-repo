@@ -2,7 +2,7 @@
 description: for debugging, installing, validating packages
 alwaysApply: false
 ---
-First you should check if a recipe for it already exists in packages/ (for python or r package you need to add py-/r- prefix). If the prompt asks for a specific version, check that version in the recipe too.
+For adding a new recipe, first you should check if a recipe for it already exists in packages/ (for python or r package you need to add py-/r- prefix). If the prompt asks for a specific version, check that version in the recipe too.
 
 If it is only a version not exist, you can use `spack versions` command to get more versions and add that in the recipe. You may run `spack checksum -b` to get the SHA256 number. Modify the recipe with the added new versions.
 
@@ -21,6 +21,8 @@ If it doesn't exist there, the prompt would usually contain a url. Go to that pa
 If it does not have tags or releases, just clone the repo into a scratch location and get its latest commit SHA, and add a line like `version("20250411", commit="82a307f19fb8188373fdd6838be92d457bf65e06")` in the recipe using the commit date as the version id. You can find an example in `examples/py-popcorn`
 
 When generate recipes, don't use variants, just set all optional dependencies to false.
+
+For diagnosing a failed build of a Softpack environment, you should run the `download_spack_logs` function on the given url for the failed environment and inspect the downloaded logs.
 
 Then install the package using spack:
 `spack install {pkg}`

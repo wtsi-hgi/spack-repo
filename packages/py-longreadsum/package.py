@@ -83,20 +83,6 @@ class PyLongreadsum(PythonPackage):
             with open(lib_lrst_py, 'w') as f:
                 f.write('from _lrst import *\n')
 
-        # Provide a top-level 'longreadsum' package shim so 'import longreadsum' works
-        lrs_pkg_dir = os.path.join(site_root, 'longreadsum')
-        os.makedirs(lrs_pkg_dir, exist_ok=True)
-        lrs_init = os.path.join(lrs_pkg_dir, '__init__.py')
-        if not os.path.exists(lrs_init):
-            with open(lrs_init, 'w') as f:
-                f.write('try:\n    from src import cli as cli\nexcept Exception:\n    cli = None\n')
-
-        # Also support `python -m longreadsum` by delegating to src.cli:main
-        lrs_main = os.path.join(lrs_pkg_dir, '__main__.py')
-        if not os.path.exists(lrs_main):
-            with open(lrs_main, 'w') as f:
-                f.write('from src.cli import main\nif __name__ == "__main__":\n    main()\n')
-
     def setup_build_environment(self, env):
         hts = self.spec["htslib"]
         hdf5 = self.spec["hdf5"]
