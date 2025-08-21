@@ -54,7 +54,7 @@ class PyPyega3(PythonPackage):
     depends_on("python@3.6:", type=("build", "run"))
 
     # Runtime requirements from upstream sdist (setup.py install_requires)
-    depends_on("py-requests@2.26.0", type=("build", "run"))
+    depends_on("py-requests", type=("build", "run"))
     depends_on("py-tqdm", type=("build", "run"))
     depends_on("py-psutil", type=("build", "run"))
     depends_on("py-urllib3", type=("build", "run"))
