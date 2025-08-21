@@ -31,7 +31,6 @@ class Openssl(Package):  # Uses Fake Autotools, should subclass Package
     version("3.2.4", sha256="b23ad7fd9f73e43ad1767e636040e88ba7c9e5775bfa5618436a0dd2c17c3716")
     version("3.1.8", sha256="d319da6aecde3aa6f426b44bbf997406d95275c5c59ab6f6ef53caaa079f456f")
     version("3.0.16", sha256="57e03c50feab5d31b152af2b764f10379aecd8ee92f16c985983ce4a99f7ef86")
-    version("3.4.0", sha256="e15dda82fe2fe8139dc2ac21a36d4ca01d5313c75f99f46c4e8a27709b7294bf")
     version("3.3.1", sha256="777cd596284c883375a2a7a11bf5d2786fc5413255efab20c50d6ffe6d020b7e")
     version("3.3.2", sha256="2e8a40b01979afe8be0bbfb3de5dc1c6709fedb46d6c89c10da114ab5fc3d281")
     version("3.3.0", sha256="53e66b043322a606abf0087e7699a0e033a37fa13feb9742df35c3a33b18fb02")
