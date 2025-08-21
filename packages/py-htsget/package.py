@@ -10,8 +10,8 @@ class PyHtsget(PythonPackage):
     """Python API and command line interface for the GA4GH htsget API."""
     
     homepage = "http://pypi.python.org/pypi/htsget"
-    # Prefer sdists to avoid wheel expansion issues
-    pypi = "htsget/htsget-0.2.6.tar.gz" 
+    # Prefer wheels where available
+    pypi = "htsget/htsget-0.2.6-py2.py3-none-any.whl" 
 
     version("0.1.0", sha256="de13f881033b67e5c0effc9ef995e65370c9de5afe5f844f4614dfd0453585b7")
     version("0.1.0a1", sha256="47a4597ec016e1b08ca8d7daaf32f91002b2d28c335b9cf68177ec6c1d8d5f31")
