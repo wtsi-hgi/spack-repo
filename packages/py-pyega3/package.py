@@ -52,3 +52,11 @@ class PyPyega3(PythonPackage):
 
     depends_on("py-setuptools", type=("build"))
     depends_on("python@3.6:", type=("build", "run"))
+
+    # Runtime requirements from upstream sdist (setup.py install_requires)
+    depends_on("py-requests@2.26.0", type=("build", "run"))
+    depends_on("py-tqdm", type=("build", "run"))
+    depends_on("py-psutil", type=("build", "run"))
+    depends_on("py-urllib3", type=("build", "run"))
+    # Not in builtin Spack as of now; will be provided in this repo if missing
+    depends_on("py-htsget@0.2.5", type=("build", "run"))
