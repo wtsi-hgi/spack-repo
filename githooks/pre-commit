@@ -1,0 +1,51 @@
+#!/usr/bin/env bash
+set -euo pipefail
+
+# Ensure spack is available
+if ! command -v spack >/dev/null 2>&1; then
+  echo "pre-commit: 'spack' command not found in PATH. Install/activate Spack first." >&2
+  exit 1
+fi
+
+# Get staged files (Added, Copied, Modified, Renamed)
+staged_files=$(git diff --cached --name-only --diff-filter=ACMR)
+
+# Extract unique package names under packages/<pkg-name>/...
+changed_pkgs=$(echo "$staged_files" | awk -F/ '/^packages\// {print $2}' | sort -u | tr '\n' ' ')
+
+# If no packages changed, allow commit
+if [ -z "${changed_pkgs// }" ]; then
+  exit 0
+fi
+
+echo "pre-commit: validating changed packages with 'spack find'..."
+
+failed=0
+errors=""
+
+for pkg in $changed_pkgs; do
+  [ -z "$pkg" ] && continue
+  echo "  - spack find ${pkg}"
+  if ! output=$(spack find "$pkg" 2>&1); then
+    failed=1
+    errors="${errors}\n- spack find ${pkg} failed:\n${output}"
+    continue
+  fi
+
+  if echo "$output" | grep -qE '==> 0 installed packages|No package matches'; then
+    failed=1
+    errors="${errors}\n- spack find ${pkg} found no installed packages:\n${output}"
+  fi
+done
+
+if [ "$failed" -ne 0 ]; then
+  echo "pre-commit: one or more package checks failed:" >&2
+  # shellcheck disable=SC2059
+  printf "%b\n" "$errors" >&2
+  echo "Fix the issues above (ensure the package is recognized/installed) and try again." >&2
+  exit 1
+fi
+
+exit 0
+
+
