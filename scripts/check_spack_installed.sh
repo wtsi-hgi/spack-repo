@@ -2,29 +2,33 @@
 
 set -euo pipefail
 
-# Bash version of scripts/check_spack_installed.py
-# Produces identical JSON schema to the Python script.
+# Simple script to check if packages are installed using spack find and exit codes
+# Usage: ./check_spack_installed.sh [package_list_file] [extra_spec] [max_jobs] [output_file]
+# Runs spack find commands in parallel (default max 50 jobs)
+# Outputs list of NOT installed packages to specified output file
 
-# Do not use host /opt/spack/bin/spack. Prefer PATH via login shell, or Singularity spack.
-run_spack_find_json() {
-  local out_json="$1"
+run_spack_find() {
+  local spec="$1"
   if command -v spack >/dev/null 2>&1; then
     # Use login shell to resolve functions/aliases/environment
-    bash -lc 'spack find --json' >"$out_json"
+    bash -lc "spack find $spec" >/dev/null 2>&1
     return $?
   fi
-  if command -v singularity >/dev/null 2>&1 && [[ -f "/home/ubuntu/spack.sif" ]]; then
-    singularity exec --bind /mnt/data /home/ubuntu/spack.sif bash -lc 'spack find --json' >"$out_json"
-    return $?
-  fi
-  echo "Spack not found in PATH and Singularity image not available" >&2
+  echo "Spack not found in PATH" >&2
   return 1
 }
 
-require_jq() {
-  if ! command -v jq >/dev/null 2>&1; then
-    echo "Error: 'jq' is required. Please install jq and re-run." >&2
-    exit 1
+check_package_parallel() {
+  local package="$1"
+  local extra_spec="$2"
+  local spec="${package}${extra_spec}"
+  
+  if run_spack_find "$spec"; then
+    echo "✓ $spec - INSTALLED"
+    return 0
+  else
+    echo "✗ $spec - NOT INSTALLED"
+    return 1
   fi
 }
 
@@ -37,158 +41,102 @@ read_package_list() {
       # Trim leading/trailing whitespace including CRLF using POSIX classes
       gsub(/^[[:space:]]+|[[:space:]]+$/, "", raw)
       if (raw == "" || raw ~ /^#/) next
-      # Split on last '-'
-      if (index(raw, "-") == 0) {
-        name=raw; version=""
-      } else {
-        # Extract name before last '-'
-        name=raw
-        sub(/-[^-]*$/, "", name)
-        # Extract version after last '-'
-        version=raw
-        sub(/^.*-/, "", version)
-      }
-      printf "%s\t%s\t%s\n", raw, name, version
+      print raw
     }
   ' "$list_file"
 }
 
-main() {
-  require_jq
+wait_for_jobs() {
+  local max_jobs="$1"
+  while [[ $(jobs -r | wc -l) -ge $max_jobs ]]; do
+    wait -n
+  done
+}
 
+main() {
   local default_list="/home/ubuntu/spack-repo/errors.txt"
   local list_path="${1:-$default_list}"
+  local extra_spec="${2:-}"
+  local max_jobs="${3:-50}"
+  local output_file="${4:-}"
+  
   if [[ ! -f "$list_path" ]]; then
     echo "Package list not found: $list_path" >&2
     exit 1
   fi
-
-  local spack_source="PATH"
-
-  # Fetch spack find JSON once
-  local spack_json
-  spack_json="$(mktemp)"
-  if ! run_spack_find_json "$spack_json" 2>"$spack_json.err"; then
-    echo "Failed to run spack find --json: $(head -n1 "$spack_json.err" 2>/dev/null)" >&2
-    rm -f "$spack_json" "$spack_json.err"
-    exit 1
+  
+  # Set default output file if not provided
+  if [[ -z "$output_file" ]]; then
+    if [[ "$list_path" == *.txt ]]; then
+      output_file="${list_path%.txt}.revised.txt"
+    else
+      output_file="${list_path}.revised"
+    fi
   fi
-  rm -f "$spack_json.err" || true
 
-  # Normalize the JSON to a flat array of objects with stable fields
-  local all_norm
-  all_norm="$(mktemp)"
-  jq -c '
-    def name_of(m):
-      if m.name? then m.name
-      elif (m.spec? and m.spec.name?) then m.spec.name
-      elif (m.nodes? and (m.nodes|length)>0 and m.nodes[0].name?) then m.nodes[0].name
-      elif (m.short_spec? and (m.short_spec|contains("@"))) then (m.short_spec|split("@")[0])
-      elif (m.long_spec? and (m.long_spec|contains("@"))) then (m.long_spec|split("@")[0])
-      else (m.short_spec // m.long_spec // "") end;
+  echo "Checking packages from: $list_path"
+  if [[ -n "$extra_spec" ]]; then
+    echo "Extra spec: $extra_spec"
+  fi
+  echo "---"
 
-    def ver_of(m):
-      if m.version? then (m.version|tostring)
-      elif (m.spec? and m.spec.version?) then (m.spec.version|tostring)
-      elif (m.short_spec? and (m.short_spec|contains("@"))) then ((m.short_spec|split("@")[1]|split(" ")[0]))
-      elif (m.long_spec? and (m.long_spec|contains("@"))) then ((m.long_spec|split("@")[1]|split(" ")[0]))
-      else "" end;
+  local total=0
+  local installed=0
+  local not_installed=0
+  local results_file
+  local not_installed_file
+  results_file=$(mktemp)
+  not_installed_file=$(mktemp)
 
-    def norm(m): {
-      name: name_of(m),
-      version: ver_of(m),
-      hash: (m.hash // (m.spec.hash? // null) // ((m.nodes[0]? // {})|.hash // null)),
-      full_hash: (m.full_hash // (m.spec.full_hash? // null) // ((m.nodes[0]? // {})|.full_hash // null)),
-      arch: (m.arch // (m.spec.arch? // null) // ((m.nodes[0]? // {})|.arch // null)),
-      compiler: (m.compiler // (m.spec.compiler? // null) // ((m.nodes[0]? // {})|.compiler // null)),
-      prefix: (m.prefix // m.path // (m.spec.prefix? // null) // ((m.nodes[0]? // {})|.prefix // null)),
-      short_spec: (m.short_spec // ""),
-      long_spec: (m.long_spec // "")
-    };
-
-    if type=="object" and .results? then .results[]?.matches[]? | norm(.)
-    elif type=="array" then .[]? | norm(.)
-    else empty end
-  ' "$spack_json" | jq -s '.' >"$all_norm"
-
-  # Build results array
-  # We'll collect entries line-by-line and combine at the end to avoid jq --argjson pitfalls
-  local results_items
-  results_items="$(mktemp)"
-
-  local total_requested=0
-  while IFS=$'\t' read -r raw name version; do
-    total_requested=$((total_requested + 1))
-
-    # Installed versions for this name
-    local installed_versions
-    installed_versions=$(jq -c --arg name "$name" '[ .[] | select(.name==$name and (.version|length)>0) | .version ] | unique | sort' "$all_norm")
-
-    # Details filtered
-    local details
-    if [[ -n "$version" ]]; then
-      details=$(jq -c --arg name "$name" --arg version "$version" '[ .[] | select(.name==$name and .version==$version) ]' "$all_norm")
-    else
-      details=$(jq -c --arg name "$name" '[ .[] | select(.name==$name) ]' "$all_norm")
-    fi
-
-    local matches_count installed
-    matches_count=$(echo "$details" | jq 'length')
-    if [[ "$matches_count" -gt 0 ]]; then
-      installed=true
-    else
-      installed=false
-    fi
-
-    local spec_requested
-    if [[ -n "$version" ]]; then
-      spec_requested="${name}@${version}"
-    else
-      spec_requested="$name"
-    fi
-
-    # Construct entry JSON
-    local entry
-    entry=$(jq -c -n \
-      --arg raw "$raw" \
-      --arg name "$name" \
-      --arg version_requested "$version" \
-      --arg spec_requested "$spec_requested" \
-      --argjson details "$details" \
-      --argjson installed_versions "$installed_versions" \
-      --argjson matches_count "$matches_count" \
-      --arg installed "$installed" \
-      '{
-        raw: $raw,
-        name: $name,
-        version_requested: $version_requested,
-        spec_requested: $spec_requested,
-        installed: ($installed=="true"),
-        matches_count: $matches_count,
-        installed_versions_for_name: $installed_versions,
-        details: $details
-      }')
-    echo "$entry" >> "$results_items"
+  # Process packages in parallel
+  while IFS= read -r package; do
+    total=$((total + 1))
+    
+    # Wait if we've reached max jobs
+    wait_for_jobs "$max_jobs"
+    
+    # Start background job
+    (
+      if check_package_parallel "$package" "$extra_spec"; then
+        echo "INSTALLED" >> "$results_file"
+      else
+        echo "NOT_INSTALLED" >> "$results_file"
+        echo "$package" >> "$not_installed_file"
+      fi
+    ) &
   done < <(read_package_list "$list_path")
 
-  # Emit final report JSON
-  local results
-  results=$(jq -s -c '.' "$results_items")
-  jq -n \
-    --arg source_file "$list_path" \
-    --arg spack "$spack_source" \
-    --argjson total_requested "$total_requested" \
-    --arg generated_by "check_spack_installed.sh" \
-    --argjson results "$results" \
-    '{
-      source_file: $source_file,
-      spack: $spack,
-      total_requested: $total_requested,
-      generated_by: $generated_by,
-      results: $results
-    }'
+  # Wait for all background jobs to complete
+  wait
 
-  rm -f "$spack_json" "$all_norm" "$results_items"
+  # Count results
+  if [[ -f "$results_file" ]]; then
+    installed=$(grep -c "INSTALLED" "$results_file" || echo "0")
+    not_installed=$(grep -c "NOT_INSTALLED" "$results_file" || echo "0")
+    rm -f "$results_file"
+  fi
+
+  # Save not installed packages to output file
+  if [[ -f "$not_installed_file" ]]; then
+    mv "$not_installed_file" "$output_file"
+    echo "Not installed packages saved to: $output_file"
+  else
+    # Create empty file if all packages are installed
+    touch "$output_file"
+    echo "All packages installed. Empty file created: $output_file"
+  fi
+
+  echo "---"
+  echo "Summary:"
+  echo "Total packages checked: $total"
+  echo "Installed: $installed"
+  echo "Not installed: $not_installed"
+  echo "Output file: $output_file"
+  
+  # Exit with error code if any packages are not installed
+  if [[ $not_installed -gt 0 ]]; then
+    exit 1
+  fi
 }
 
 main "$@"

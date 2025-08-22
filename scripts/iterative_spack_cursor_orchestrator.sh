@@ -53,7 +53,6 @@ while [[ $# -gt 0 ]]; do
 done
 
 # Checks
-command -v jq >/dev/null 2>&1 || { echo "Error: jq is required" >&2; exit 1; }
 [[ -x "$RUN_BATCHES_SH" ]] || { echo "Error: $RUN_BATCHES_SH not executable" >&2; exit 1; }
 [[ -x "$CHECK_SCRIPT" ]] || { echo "Error: $CHECK_SCRIPT not executable" >&2; exit 1; }
 [[ -f "$ERRORS_FILE" ]] || { echo "Error: errors file not found: $ERRORS_FILE" >&2; exit 1; }
@@ -80,31 +79,27 @@ for (( round=1; round<=MAX_ROUNDS; round++ )); do
     "$RUN_BATCHES_SH" "$prev_errors" "$BATCH_SIZE" "$SLEEP_SECONDS" | tee "$round_dir/run_cursor_batches.log"
   fi
 
+  # Sleep for another 2*SLEEP_SECONDS to wait for the cursor jobs to finish
+  sleep $((2 * SLEEP_SECONDS))
 
-  report_json="$round_dir/report.json"
-  echo "Checking installed status for this round's list..." | tee -a "$RUN_DIR/summary.log"
-  "$CHECK_SCRIPT" "$prev_errors" > "$report_json"
-
-  # Create next errors file from failing ones
   next_errors="$round_dir/errors-next.txt"
-  jq -r '.results[] | select(.installed==false) | .raw' "$report_json" > "$next_errors"
+  echo "Checking installed status for this round's list..." | tee -a "$RUN_DIR/summary.log"
+  "$CHECK_SCRIPT" "$prev_errors" "" "" "$next_errors" > "$round_dir/check_output.log"
   next_count=$(wc -l "$next_errors" | awk '{print $1}')
 
-  success_count=$(jq '[.results[] | select(.installed)] | length' "$report_json")
+  success_count=$((prev_count - next_count))
   echo "Round $round: success=$success_count, remaining_failures=$next_count (was $prev_count)" | tee -a "$RUN_DIR/summary.log"
 
   # Stop conditions
   if (( next_count == 0 )); then
     echo "All packages succeeded by round $round." | tee -a "$RUN_DIR/summary.log"
     ln -sf "$(realpath -e "$next_errors")" "$RUN_DIR/final_errors.txt" || true
-    ln -sf "$(realpath -e "$report_json")" "$RUN_DIR/final_report.json" || true
     break
   fi
 
   if (( next_count >= prev_count )); then
     echo "No further progress (remaining $next_count, previous $prev_count). Stopping." | tee -a "$RUN_DIR/summary.log"
     ln -sf "$(realpath -e "$next_errors")" "$RUN_DIR/final_errors.txt" || true
-    ln -sf "$(realpath -e "$report_json")" "$RUN_DIR/final_report.json" || true
     break
   fi
 
