@@ -133,3 +133,5 @@ dmypy.json
 
 # Automation logs
 iterative_runs/
+cursor_logs/
+install_logs/
