@@ -22,7 +22,9 @@ class PyPanel(PythonPackage):
     depends_on("py-requests", type=("build", "run"))
     depends_on("py-bleach", type=("build", "run"))
     depends_on("py-packaging", type="build")
-    depends_on("py-tqdm@4.48:", type=("build", "run"))
+    # tqdm 4.66.1 is broken under our Python 3.9 toolchain (installs only dist-info)
+    # Constrain to <=4.65 to ensure module files are present during build
+    depends_on("py-tqdm@4.48:4.65", type=("build", "run"))
     depends_on("py-markdown", type=("build", "run"))
     depends_on("py-typing-extensions", type=("build", "run"))
     depends_on("node-js@14:", type=("build", "run"))
