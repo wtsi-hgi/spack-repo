@@ -42,6 +42,8 @@ class PyMultiqc(PythonPackage):
     depends_on("py-pyyaml", type=("build", "run"))
     depends_on("py-jsonschema", type=("build", "run"), when="@1.30:")
     depends_on("py-python-dotenv", type=("build", "run"), when="@1.30:")
+    depends_on("py-natsort", type=("build", "run"), when="@1.30:")
+    depends_on("py-polars", type=("build", "run"), when="@1.30:")
     # MultiQC uses environment variable expansion in YAML via pyyaml-env-tag
     depends_on("py-pyyaml-env-tag", type=("build", "run"), when="@1.18:")
 
