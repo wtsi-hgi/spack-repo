@@ -1,11 +1,16 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
+# Allow overriding the spack invocation via environment variable.
+# Example: SPACK_CMD="singularity run --bind /usr/bin/zsh --bind /mnt/data /home/ubuntu/spack.sif"
+SPACK_CMD=${SPACK_CMD:-spack}
+
 # Validate that changed packages under packages/<pkg-name> have an installed match in Spack
 # Usage: spack-validate-changed-packages.sh [files...]
 
-if ! command -v spack >/dev/null 2>&1; then
-  echo "pre-commit: 'spack' command not found in PATH." >&2
+# Verify that Spack is available in this non-interactive environment.
+if ! ${SPACK_CMD} --version >/dev/null 2>&1; then
+  echo "pre-commit: 'spack' is not available. Set SPACK_CMD to your system spack invocation." >&2
   exit 1
 fi
 
@@ -30,7 +35,7 @@ errors=""
 for pkg in $changed_pkgs; do
   [ -z "$pkg" ] && continue
   echo "  - spack find ${pkg}"
-  if ! output=$(spack find "$pkg" 2>&1); then
+  if ! output=$(${SPACK_CMD} find "$pkg" 2>&1); then
     failed=1
     errors="${errors}\n- spack find ${pkg} failed:\n${output}"
     continue
