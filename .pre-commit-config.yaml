@@ -8,7 +8,5 @@ repos:
         files: ^packages/
         pass_filenames: true
         stages: [pre-commit]
-        env:
-          SPACK_CMD: "singularity run --bind /usr/bin/zsh --bind /mnt/data /home/ubuntu/spack.sif"
 
 

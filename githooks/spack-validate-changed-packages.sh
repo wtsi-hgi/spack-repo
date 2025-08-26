@@ -1,9 +1,8 @@
 #!/usr/bin/env bash
 set -euo pipefail
 
-# Allow overriding the spack invocation via environment variable.
-# Example: SPACK_CMD="singularity run --bind /usr/bin/zsh --bind /mnt/data /home/ubuntu/spack.sif"
-SPACK_CMD=${SPACK_CMD:-spack}
+
+SPACK_CMD="singularity run --bind /usr/bin/zsh --bind /mnt/data /home/ubuntu/spack.sif"
 
 # Validate that changed packages under packages/<pkg-name> have an installed match in Spack
 # Usage: spack-validate-changed-packages.sh [files...]
