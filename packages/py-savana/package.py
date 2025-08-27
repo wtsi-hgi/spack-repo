@@ -6,11 +6,11 @@ class PySavana(PythonPackage):
 
     homepage = "https://github.com/cortes-ciriano-lab/savana"
     git = "https://github.com/cortes-ciriano-lab/savana.git"
+    url = "https://github.com/cortes-ciriano-lab/savana/archive/refs/tags/1.3.5.tar.gz"
 
     license("Apache-2.0")
 
-    # Use full commit hash for the tagged release
-    version("1.3.5", commit="83c915e9ed97d5c75f391663e2d2e314685f709b")
+    version("1.3.5", sha256="149067ec4806729e35707ed07d740aa0d2a188d2bf24be5d3a3c615112060904")
 
     # Python build system
     depends_on("py-setuptools", type="build")
