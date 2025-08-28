@@ -23,7 +23,15 @@ class PyCrispresso2(PythonPackage):
     version("2.2.7", sha256="2942348983a96d7493ead55f296163cad26f5d66038bcada8f5c8770f347e495")
 
     depends_on("py-setuptools", type="build")
-    depends_on("py-numpy", type=("build", "run"))
+    # CRISPResso2 C extensions are not compatible with NumPy 2.x
+    # Pin to <2 until upstream adds support
+    depends_on("py-numpy@:1", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-seaborn", type=("build", "run"))
     depends_on("py-jinja2", type=("build", "run"))
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            # Basic import test to verify installation
+            python("-c", "import CRISPResso2")
