@@ -2,6 +2,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+import os
 
 from spack.package import *
 
@@ -129,6 +130,26 @@ class Arrow(CMakePackage, CudaPackage):
             r"(include_directories\()SYSTEM ", r"\1", "cpp/cmake_modules/ThirdpartyToolchain.cmake"
         )
 
+        # Arrow's FindThrift.cmake attempts to read a generated header
+        # (thrift/config.h) to extract the version. Newer releases may
+        # not ship this header or the module may be absent. If the module is
+        # present, make the extractor a no-op when THRIFT_VERSION is provided.
+        thrift_cmake = join_path("cpp", "cmake_modules", "FindThrift.cmake")
+        if os.path.exists(thrift_cmake):
+            filter_file(
+                r"function\(EXTRACT_THRIFT_VERSION\)",
+                "function(EXTRACT_THRIFT_VERSION)\n  if(DEFINED THRIFT_VERSION)\n    return()\n  endif()",
+                thrift_cmake,
+                string=True,
+            )
+            # Also avoid calling the extractor when THRIFT_VERSION is provided
+            filter_file(
+                r"[^#]extract_thrift_version\(\)",
+                "if(NOT DEFINED THRIFT_VERSION)\n  extract_thrift_version()\nendif()",
+                thrift_cmake,
+                string=True,
+            )
+
         if self.spec.satisfies("@:2.0.0"):
             filter_file(
                 r'set\(ARROW_LLVM_VERSIONS "10" "9" "8" "7"\)',
@@ -181,6 +202,40 @@ class Arrow(CMakePackage, CudaPackage):
         if not self.spec.dependencies("utf8proc"):
             args.append(self.define("ARROW_WITH_UTF8PROC", False))
 
+        # Help CMake locate Thrift when Parquet is enabled. Some environments
+        # lack a pkg-config file for Thrift, which can cause Arrow's
+        # FindThrift.cmake to fail to discover the library even though Spack
+        # provides it in CMAKE_PREFIX_PATH. Supplying explicit include/library
+        # hints makes detection robust across layouts.
+        if self.spec.satisfies("+parquet"):
+            thrift_spec = self.spec["thrift"]
+            # Arrow's newer CMake modules use ThriftAlt and honor Thrift_ROOT.
+            # Provide both legacy and new-style hints for broader coverage.
+            args.append(self.define("Thrift_ROOT", thrift_spec.prefix))
+            args.append(self.define("THRIFT_HOME", thrift_spec.prefix))
+            args.append(self.define("THRIFT_ROOT", thrift_spec.prefix))
+            # Some Arrow CMake modules try to read thrift/config.h to extract
+            # the version. Newer Thrift releases may not provide that header,
+            # so provide the version explicitly to avoid file checks.
+            args.append(self.define("THRIFT_VERSION", str(thrift_spec.version)))
+            # Prefer headers property if available, fall back to prefix.include
+            try:
+                thrift_includes = thrift_spec.headers.directories
+            except Exception:
+                thrift_includes = []
+            include_dir = (
+                thrift_includes[0] if thrift_includes else join_path(thrift_spec.prefix, "include")
+            )
+            args.append(self.define("THRIFT_INCLUDE_DIR", include_dir))
+            args.append(self.define("THRIFT_INCLUDE_DIRS", include_dir))
+            # Some thrift builds may not provide discoverable libraries until
+            # after installation or build variants may omit C++ libs; only set
+            # THRIFT_LIBRARIES when Spack can resolve them.
+            try:
+                args.append(self.define("THRIFT_LIBRARIES", thrift_spec.libs.joined()))
+            except Exception:
+                pass
+
         if self.spec.satisfies("@:8"):
             args.extend(
                 [
@@ -196,3 +251,21 @@ class Arrow(CMakePackage, CudaPackage):
                 args.append(self.define("SNAPPY_HOME", self.spec["snappy"].prefix))
 
         return args
+
+    @run_after("install")
+    def install_test(self):
+        # Minimal post-install test: verify CMake package files are present
+        # which indicates libraries and config were installed.
+        with working_dir("spack-test", create=True):
+            cmake_dir = join_path(self.prefix, "lib", "cmake", "arrow")
+            if not os.path.isdir(cmake_dir):
+                # Some platforms use lib64
+                cmake_dir = join_path(self.prefix, "lib64", "cmake", "arrow")
+            with open("CMakeLists.txt", "w") as f:
+                f.write(
+                    "cmake_minimum_required(VERSION 3.16)\n"
+                    "project(arrow_check LANGUAGES CXX)\n"
+                    "find_package(Arrow CONFIG REQUIRED)\n"
+                    "message(STATUS \"Arrow OK\")\n"
+                )
+            cmake("-S", ".", "-B", "build", f"-DCMAKE_PREFIX_PATH={self.prefix}")
