@@ -6,7 +6,7 @@
 from spack.package import *
 
 
-class PyPyAnanse(PythonPackage):
+class PyAnanse(PythonPackage):
     """ANANSE: Prediction of key transcription factors in cell fate
     determination using enhancer networks."""
 
