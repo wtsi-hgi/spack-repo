@@ -22,7 +22,8 @@ class RSeuratwrappers(RPackage):
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-remotes", type=("build", "run"))
 	depends_on("r-rsvd", type=("build", "run"))
-	depends_on("r-seurat@4.2.0:", type=("build", "run"), when="@2023-04-18:")
+	# Allow compatibility with environments pinning Seurat 4.1.x
+	depends_on("r-seurat@4.1.0:", type=("build", "run"), when="@2023-04-18:")
 	depends_on("r-seurat@5.0.0:", type=("build", "run"), when="@2024-01-29:")
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-r-utils", type=("build", "run"))
