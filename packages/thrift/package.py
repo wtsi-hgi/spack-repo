@@ -35,7 +35,7 @@ class Thrift(CMakePackage, AutotoolsPackage):
     version("0.10.0", sha256="2289d02de6e8db04cbbabb921aeb62bfe3098c4c83f36eec6c31194301efa10b")
     version("0.9.3", sha256="b0740a070ac09adde04d43e852ce4c320564a292f26521c46b78e0641564969e")
 
-    variant("openssl", default=False, description="Build with OpenSSL")
+    variant("openssl", default=True, description="Build with OpenSSL")
     variant("cpp", default=True, description="Build C++ library")
     with when("+cpp"):
         variant("shared", default=True, description="Build shared libraries")
@@ -73,6 +73,12 @@ class Thrift(CMakePackage, AutotoolsPackage):
     depends_on("libevent@2:", when="+libevent")
     depends_on("qt@5", when="+qt5")
     depends_on("zlib-api@1.2.3:", when="+zlib")
+    # Thrift C++ library requires Boost headers (>=1.56)
+    depends_on("boost@1.56:", when="+cpp")
+
+    # Autotools Thrift unconditionally compiles SSL sources in lib/cpp and
+    # relies on OPENSSL_* flags; building without OpenSSL headers fails.
+    conflicts("~openssl", when="build_system=autotools", msg="Autotools build requires OpenSSL headers; use +openssl or switch to cmake")
 
     with when("+java"):
         depends_on("ant@1.8:", type="build")
@@ -125,7 +131,7 @@ class AutotoolsBuilder(AutotoolsBuilder):
         env.set("JAVA_PREFIX", self.prefix)
 
     def configure_args(self):
-        return [
+        args = [
             *self.enable_or_disable("shared"),
             "--enable-tests=no",
             *self.with_or_without("cpp"),
@@ -133,7 +139,6 @@ class AutotoolsBuilder(AutotoolsBuilder):
             *self.with_or_without("zlib"),
             *self.with_or_without("qt5"),
             *self.with_or_without("c_glib"),
-            *self.with_or_without("openssl", "prefix"),
             *self.with_or_without("java"),
             "--without-kotlin",
             "--without-erlang",
@@ -155,3 +160,13 @@ class AutotoolsBuilder(AutotoolsBuilder):
             "--without-netstd",
             "--without-d",
         ]
+
+        # Thrift 0.21's configure (AX_CHECK_OPENSSL) only accepts
+        #   --with-openssl=DIR
+        # and treats both --with-openssl=no and --without-openssl as invalid.
+        # When +openssl, pass the dependency prefix; when ~openssl, pass nothing
+        # and let the optional check fall back to pkg-config/defaults without error.
+        if "+openssl" in self.spec:
+            args.append(f"--with-openssl={self.spec['openssl'].prefix}")
+
+        return args
