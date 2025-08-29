@@ -127,7 +127,7 @@ class AutotoolsBuilder(AutotoolsBuilder):
         env.set("JAVA_PREFIX", self.prefix)
 
     def configure_args(self):
-        return [
+        args = [
             *self.enable_or_disable("shared"),
             "--enable-tests=no",
             *self.with_or_without("cpp"),
@@ -135,7 +135,6 @@ class AutotoolsBuilder(AutotoolsBuilder):
             *self.with_or_without("zlib"),
             *self.with_or_without("qt5"),
             *self.with_or_without("c_glib"),
-            *self.with_or_without("openssl", "prefix"),
             *self.with_or_without("java"),
             "--without-kotlin",
             "--without-erlang",
@@ -157,3 +156,9 @@ class AutotoolsBuilder(AutotoolsBuilder):
             "--without-netstd",
             "--without-d",
         ]
+
+        # Thrift's configure expects --with-openssl to be "yes" or "no",
+        # not a prefix path. Passing a path triggers: "Invalid --with-openssl value".
+        args.append("--with-openssl=yes" if "+openssl" in self.spec else "--with-openssl=no")
+
+        return args
