@@ -136,18 +136,32 @@ class Arrow(CMakePackage, CudaPackage):
         # present, make the extractor a no-op when THRIFT_VERSION is provided.
         thrift_cmake = join_path("cpp", "cmake_modules", "FindThrift.cmake")
         if os.path.exists(thrift_cmake):
+            # Make the extractor a no-op when THRIFT_VERSION is provided
             filter_file(
                 r"function\(EXTRACT_THRIFT_VERSION\)",
-                "function(EXTRACT_THRIFT_VERSION)\n  if(DEFINED THRIFT_VERSION)\n    return()\n  endif()",
+                (
+                    "function(EXTRACT_THRIFT_VERSION)\n"
+                    "  if(DEFINED THRIFT_VERSION)\n"
+                    "    set(Thrift_VERSION \"${THRIFT_VERSION}\")\n"
+                    "    set(Thrift_VERSION \"${THRIFT_VERSION}\" PARENT_SCOPE)\n"
+                    "    return()\n"
+                    "  endif()"
+                ),
                 thrift_cmake,
-                string=True,
             )
-            # Also avoid calling the extractor when THRIFT_VERSION is provided
+            # Remove any stray top-level THRIFT_VERSION block that may cause
+            # scope warnings if present outside the function.
             filter_file(
-                r"[^#]extract_thrift_version\(\)",
-                "if(NOT DEFINED THRIFT_VERSION)\n  extract_thrift_version()\nendif()",
+                r"endfunction\(EXTRACT_THRIFT_VERSION\)[\s\S]*?\n\s*if\(DEFINED THRIFT_VERSION\)\n(?:\s*set\(Thrift_VERSION[^\n]*\)\n)+\s*return\(\)\n\s*endif\(\)\n",
+                "endfunction(EXTRACT_THRIFT_VERSION)\n",
                 thrift_cmake,
-                string=True,
+            )
+            # Ensure the extractor is still called so it sets Thrift_VERSION;
+            # our modified function will early-return when THRIFT_VERSION is set.
+            filter_file(
+                r"if\(NOT DEFINED THRIFT_VERSION\)\n\s*extract_thrift_version\(\)\n\s*endif\(\)",
+                "extract_thrift_version()",
+                thrift_cmake,
             )
 
         # Apply the same safeguard for the ThriftAlt module used by newer Arrow
