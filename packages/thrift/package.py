@@ -35,7 +35,7 @@ class Thrift(CMakePackage, AutotoolsPackage):
     version("0.10.0", sha256="2289d02de6e8db04cbbabb921aeb62bfe3098c4c83f36eec6c31194301efa10b")
     version("0.9.3", sha256="b0740a070ac09adde04d43e852ce4c320564a292f26521c46b78e0641564969e")
 
-    variant("openssl", default=False, description="Build with OpenSSL")
+    variant("openssl", default=True, description="Build with OpenSSL")
     variant("cpp", default=True, description="Build C++ library")
     with when("+cpp"):
         variant("shared", default=True, description="Build shared libraries")
@@ -75,6 +75,10 @@ class Thrift(CMakePackage, AutotoolsPackage):
     depends_on("zlib-api@1.2.3:", when="+zlib")
     # Thrift C++ library requires Boost headers (>=1.56)
     depends_on("boost@1.56:", when="+cpp")
+
+    # Autotools Thrift unconditionally compiles SSL sources in lib/cpp and
+    # relies on OPENSSL_* flags; building without OpenSSL headers fails.
+    conflicts("~openssl", when="build_system=autotools", msg="Autotools build requires OpenSSL headers; use +openssl or switch to cmake")
 
     with when("+java"):
         depends_on("ant@1.8:", type="build")
