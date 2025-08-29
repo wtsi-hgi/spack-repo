@@ -157,8 +157,8 @@ class AutotoolsBuilder(AutotoolsBuilder):
             "--without-d",
         ]
 
-        # Thrift's configure expects --with-openssl to be "yes" or "no",
-        # not a prefix path. Passing a path triggers: "Invalid --with-openssl value".
-        args.append("--with-openssl=yes" if "+openssl" in self.spec else "--with-openssl=no")
+        # Thrift's configure expects either --with-openssl (no value) or
+        # --without-openssl. Using "=no" triggers: "Invalid --with-openssl value".
+        args.append("--with-openssl" if "+openssl" in self.spec else "--without-openssl")
 
         return args
