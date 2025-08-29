@@ -592,6 +592,35 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
                 string=True,
             )
 
+        # Newer setuptools removed/relocated stdlib distutils in a way that
+        # breaks references like `distutils.version.LooseVersion` used by
+        # older PyTorch build helpers. Use setuptools' vendored distutils
+        # explicitly to remain compatible across Python/setuptools versions.
+        # See build failures like: AttributeError: module 'distutils' has no attribute 'version'
+        if self.spec.satisfies("@:1.13"):
+            # Ensure we're using setuptools' vendored distutils, which
+            # provides the expected `version.LooseVersion` API.
+            filter_file(
+                "from setuptools import distutils",
+                "import setuptools._distutils as distutils\nimport distutils.version",
+                "tools/setup_helpers/cmake.py",
+                string=True,
+            )
+            # Normalize any fully-qualified references back to the local alias
+            filter_file(
+                "setuptools._distutils.version.LooseVersion",
+                "distutils.version.LooseVersion",
+                "tools/setup_helpers/cmake.py",
+                string=True,
+            )
+            # Avoid redefining _mm_storeu_si32 with GCC 11+ in XNNPACK polyfill
+            filter_file(
+                "(defined(__GNUC__) && !defined(__clang__) && !defined(__INTEL_COMPILER))",
+                "(defined(__GNUC__) && !defined(__clang__) && !defined(__INTEL_COMPILER) && (__GNUC__ < 11))",
+                "third_party/XNNPACK/src/xnnpack/intrinsics-polyfill.h",
+                string=True,
+            )
+
     def setup_build_environment(self, env):
         """Set environment variables used to control the build.
 
@@ -708,6 +737,11 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         enable_or_disable("qnnpack", var="PYTORCH_QNNPACK")
         enable_or_disable("valgrind")
         enable_or_disable("xnnpack")
+        # GCC 11+ provides _mm_storeu_si32 which conflicts with XNNPACK's
+        # intrinsics polyfill in older PyTorch releases. Disable XNNPACK to
+        # avoid redefinition errors when building with newer GCC.
+        if self.spec.satisfies("@:1.13 %gcc@11:"):
+            env.set("USE_XNNPACK", "OFF")
         enable_or_disable("mkldnn")
         enable_or_disable("distributed")
         enable_or_disable("mpi")
