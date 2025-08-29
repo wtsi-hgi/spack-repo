@@ -157,8 +157,12 @@ class AutotoolsBuilder(AutotoolsBuilder):
             "--without-d",
         ]
 
-        # Thrift's configure expects either --with-openssl (no value) or
-        # --without-openssl. Using "=no" triggers: "Invalid --with-openssl value".
-        args.append("--with-openssl" if "+openssl" in self.spec else "--without-openssl")
+        # Thrift 0.21's configure (AX_CHECK_OPENSSL) only accepts
+        #   --with-openssl=DIR
+        # and treats both --with-openssl=no and --without-openssl as invalid.
+        # When +openssl, pass the dependency prefix; when ~openssl, pass nothing
+        # and let the optional check fall back to pkg-config/defaults without error.
+        if "+openssl" in self.spec:
+            args.append(f"--with-openssl={self.spec['openssl'].prefix}")
 
         return args
