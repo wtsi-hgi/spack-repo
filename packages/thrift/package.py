@@ -73,6 +73,8 @@ class Thrift(CMakePackage, AutotoolsPackage):
     depends_on("libevent@2:", when="+libevent")
     depends_on("qt@5", when="+qt5")
     depends_on("zlib-api@1.2.3:", when="+zlib")
+    # Thrift C++ library requires Boost headers (>=1.56)
+    depends_on("boost@1.56:", when="+cpp")
 
     with when("+java"):
         depends_on("ant@1.8:", type="build")

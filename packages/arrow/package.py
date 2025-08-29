@@ -150,6 +150,36 @@ class Arrow(CMakePackage, CudaPackage):
                 string=True,
             )
 
+        # Apply the same safeguard for the ThriftAlt module used by newer Arrow
+        thriftalt_cmake = join_path("cpp", "cmake_modules", "FindThriftAlt.cmake")
+        if os.path.exists(thriftalt_cmake):
+            filter_file(
+                r"function\(EXTRACT_THRIFT_VERSION\)",
+                "function(EXTRACT_THRIFT_VERSION)\n  if(DEFINED ThriftAlt_VERSION OR DEFINED THRIFT_VERSION)\n    return()\n  endif()",
+                thriftalt_cmake,
+            )
+            filter_file(
+                r"function\(extract_thrift_version\)",
+                "function(extract_thrift_version)\n  if(DEFINED ThriftAlt_VERSION OR DEFINED THRIFT_VERSION)\n    return()\n  endif()",
+                thriftalt_cmake,
+            )
+            filter_file(
+                r"[^#]extract_thrift_version\(\)",
+                "if(NOT DEFINED ThriftAlt_VERSION AND NOT DEFINED THRIFT_VERSION)\n  extract_thrift_version()\nendif()",
+                thriftalt_cmake,
+            )
+            # Ensure lib64 is searched when locating Thrift libraries
+            filter_file(
+                r'PATH_SUFFIXES "lib/\$\{CMAKE_LIBRARY_ARCHITECTURE\}" "lib"\)',
+                'PATH_SUFFIXES "lib/${CMAKE_LIBRARY_ARCHITECTURE}" "lib" "lib64")',
+                thriftalt_cmake,
+            )
+            filter_file(
+                r'PATH_SUFFIXES "lib/\$\{CMAKE_LIBRARY_ARCHITECTURE\}" "lib"\n\s*\)\n',
+                'PATH_SUFFIXES "lib/${CMAKE_LIBRARY_ARCHITECTURE}" "lib" "lib64"\n)\n',
+                thriftalt_cmake,
+            )
+
         if self.spec.satisfies("@:2.0.0"):
             filter_file(
                 r'set\(ARROW_LLVM_VERSIONS "10" "9" "8" "7"\)',
@@ -214,10 +244,14 @@ class Arrow(CMakePackage, CudaPackage):
             args.append(self.define("Thrift_ROOT", thrift_spec.prefix))
             args.append(self.define("THRIFT_HOME", thrift_spec.prefix))
             args.append(self.define("THRIFT_ROOT", thrift_spec.prefix))
+            # Also provide hints for the ThriftAlt find-module used by Arrow
+            args.append(self.define("ThriftAlt_ROOT", thrift_spec.prefix))
+            args.append(self.define("ThriftAlt_HOME", thrift_spec.prefix))
             # Some Arrow CMake modules try to read thrift/config.h to extract
             # the version. Newer Thrift releases may not provide that header,
             # so provide the version explicitly to avoid file checks.
             args.append(self.define("THRIFT_VERSION", str(thrift_spec.version)))
+            args.append(self.define("ThriftAlt_VERSION", str(thrift_spec.version)))
             # Prefer headers property if available, fall back to prefix.include
             try:
                 thrift_includes = thrift_spec.headers.directories
@@ -228,11 +262,18 @@ class Arrow(CMakePackage, CudaPackage):
             )
             args.append(self.define("THRIFT_INCLUDE_DIR", include_dir))
             args.append(self.define("THRIFT_INCLUDE_DIRS", include_dir))
+            # Mirror include hints for ThriftAlt
+            args.append(self.define("ThriftAlt_INCLUDE_DIR", include_dir))
+            args.append(self.define("ThriftAlt_INCLUDE_DIRS", include_dir))
             # Some thrift builds may not provide discoverable libraries until
             # after installation or build variants may omit C++ libs; only set
-            # THRIFT_LIBRARIES when Spack can resolve them.
+            # library variables when Spack can resolve them.
             try:
-                args.append(self.define("THRIFT_LIBRARIES", thrift_spec.libs.joined()))
+                # Join absolute library paths with ';' so CMake treats them as a list
+                thrift_libs = ";".join(list(thrift_spec.libs))
+                args.append(self.define("THRIFT_LIBRARIES", thrift_libs))
+                # Provide equivalent hints for ThriftAlt
+                args.append(self.define("ThriftAlt_LIBRARIES", thrift_libs))
             except Exception:
                 pass
 
