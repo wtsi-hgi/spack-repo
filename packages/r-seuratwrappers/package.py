@@ -12,8 +12,10 @@ class RSeuratwrappers(RPackage):
 	homepage = "https://github.com/satijalab/seurat-wrappers"
 	git = "https://github.com/satijalab/seurat-wrappers.git"
 
-	version("2024-01-29", commit="d9594f67a9eab4f917390010a1c106b5422b102e")
-	version("2023-04-18", commit="f647ce440a017f9f836eef5dac88f4c414370e94")
+	# Prefer the most recent snapshot to avoid version unification conflicts
+	version("2024-01-29", commit="d9594f67a9eab4f917390010a1c106b5422b102e", preferred=True)
+	# Keep older snapshot but mark as deprecated so it is not chosen by default
+	version("2023-04-18", commit="f647ce440a017f9f836eef5dac88f4c414370e94", deprecated=True)
 
 	depends_on("r-biocmanager", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))
