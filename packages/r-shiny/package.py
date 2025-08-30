@@ -47,3 +47,15 @@ class RShiny(RPackage):
 	depends_on("r-cachem", type=("build", "run"))
 	depends_on("r-lifecycle@0.2:", type=("build", "run"))
 	depends_on("r-ellipsis", type=("build", "run"))
+
+	# Guard against known incompatibility with R >= 4.4
+	# Older Shiny (<=1.7.4) calls numeric_version() with a numeric in .onLoad,
+	# which fails on newer R. Shiny 1.8.0+ contains the upstream fix.
+	conflicts(
+		"@:1.7.4",
+		when="^r@4.4:",
+		msg=(
+			"r-shiny <=1.7.4 is incompatible with R >= 4.4 due to a "
+			"numeric_version() error during .onLoad"
+		),
+	)
