@@ -592,6 +592,38 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
                 string=True,
             )
 
+        # Fix build of older releases with newer GCC/libstdc++
+        # fbgemm sources use std::runtime_error/logic_error without explicitly
+        # including <stdexcept>, which fails to compile with stricter headers.
+        # Safely inject the missing include in affected files for old trees.
+        if self.spec.satisfies("@:1.4.1"):
+            files_to_fix = [
+                "third_party/fbgemm/include/fbgemm/ConvUtils.h",
+                "third_party/fbgemm/include/fbgemm/FbgemmFP16.h",
+                "third_party/fbgemm/src/FbgemmConv.cc",
+            ]
+            for path in files_to_fix:
+                # Prefer to place after pragma once when present
+                filter_file(
+                    r"(#pragma once)",
+                    r"\1\n#include <stdexcept>",
+                    path,
+                    string=True,
+                )
+                # Fallback: insert after a common include directive
+                filter_file(
+                    r"(#include[ \t]+[<\"]string[>\"])",
+                    r"\1\n#include <stdexcept>",
+                    path,
+                    string=True,
+                )
+                filter_file(
+                    r"(#include[ \t]+[<\"]vector[>\"])",
+                    r"\1\n#include <stdexcept>",
+                    path,
+                    string=True,
+                )
+
         # Newer setuptools removed/relocated stdlib distutils in a way that
         # breaks references like `distutils.version.LooseVersion` used by
         # older PyTorch build helpers. Use setuptools' vendored distutils
@@ -659,6 +691,12 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
 
         # Spack logs have trouble handling colored output
         env.set("COLORIZE_OUTPUT", "OFF")
+
+        # Older releases (<=1.4.1) include fbgemm sources that use
+        # std::runtime_error/logic_error without including <stdexcept>.
+        # Force-include the header to satisfy modern libstdc++.
+        if self.spec.satisfies("@:1.4.1"):
+            env.append_flags("CXXFLAGS", "-include stdexcept -include limits -include algorithm")
 
         enable_or_disable("test", keyword="BUILD")
         enable_or_disable("caffe2", keyword="BUILD")
@@ -743,6 +781,10 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         if self.spec.satisfies("@:1.13 %gcc@11:"):
             env.set("USE_XNNPACK", "OFF")
         enable_or_disable("mkldnn")
+        # Old releases (e.g., 1.4.1) are incompatible with modern oneDNN.
+        # Force-disable MKLDNN to avoid unresolved symbol issues at import.
+        if self.spec.satisfies("@:1.4.1"):
+            env.set("USE_MKLDNN", "OFF")
         enable_or_disable("distributed")
         enable_or_disable("mpi")
         enable_or_disable("ucc")
