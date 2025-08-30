@@ -12,10 +12,8 @@ class RSeuratwrappers(RPackage):
 	homepage = "https://github.com/satijalab/seurat-wrappers"
 	git = "https://github.com/satijalab/seurat-wrappers.git"
 
-	# Prefer the most recent snapshot to avoid version unification conflicts
+	# Use a single, recent snapshot to avoid version unification conflicts
 	version("2024-01-29", commit="d9594f67a9eab4f917390010a1c106b5422b102e", preferred=True)
-	# Keep older snapshot but mark as deprecated so it is not chosen by default
-	version("2023-04-18", commit="f647ce440a017f9f836eef5dac88f4c414370e94", deprecated=True)
 
 	depends_on("r-biocmanager", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))
@@ -24,7 +22,7 @@ class RSeuratwrappers(RPackage):
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-remotes", type=("build", "run"))
 	depends_on("r-rsvd", type=("build", "run"))
-	# SeuratWrappers requires Seurat >= 5 for current snapshots
-	depends_on("r-seurat@5:", type=("build", "run"), when="@2023-04-18:")
+	# SeuratWrappers requires Seurat >= 5 for current snapshot
+	depends_on("r-seurat@5:", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-r-utils", type=("build", "run"))
