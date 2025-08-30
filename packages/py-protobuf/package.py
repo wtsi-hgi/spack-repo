@@ -64,6 +64,8 @@ class PyProtobuf(PythonPackage):
 
     depends_on("python", type=("build", "link", "run"))
     depends_on("py-setuptools", type="build")
+    # Older releases require distutils 2to3 support removed in setuptools 58+
+    depends_on("py-setuptools@:57", when="@:3.6.1", type="build")
     # in newer pip versions --install-option does not exist
     depends_on("py-pip@:23.0", when="+cpp", type=("build", "run"))
     depends_on("py-six@1.9:", when="@3.0:3.17", type=("build", "run"))
@@ -81,12 +83,16 @@ class PyProtobuf(PythonPackage):
         # Older releases used distutils' 2to3 support which has been removed
         # from modern setuptools. Replace build_py_2to3 with build_py.
         if self.spec.satisfies("@:3.6.1"):
-            filter_file(
-                "from distutils.command.build_py import build_py_2to3 as _build_py",
-                "from distutils.command.build_py import build_py as _build_py",
-                "setup.py",
-                string=True,
-            )
+            import os
+            # Patch any reference to build_py_2to3 in setup scripts
+            for candidate in ("setup.py", os.path.join("python", "setup.py")):
+                if os.path.exists(candidate):
+                    filter_file(
+                        "build_py_2to3",
+                        "build_py",
+                        candidate,
+                        string=True,
+                    )
 
     @property
     def build_directory(self):
