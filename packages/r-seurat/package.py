@@ -34,7 +34,9 @@ class RSeurat(RPackage):
 	version("2.0.1", sha256="6aa33aa3afb29a8be364ab083c7071cfbc56ad042a019bcf6f939e0c8c7744f0")
 
 	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-seuratobject@5:", type=("build", "run"))
+	# Seurat depends on different SeuratObject majors across versions
+	depends_on("r-seuratobject@4:", type=("build", "run"), when="@4:")
+	depends_on("r-seuratobject@5:", type=("build", "run"), when="@5:")
 	depends_on("r-cluster", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))
 	depends_on("r-fastdummies", type=("build", "run"))
