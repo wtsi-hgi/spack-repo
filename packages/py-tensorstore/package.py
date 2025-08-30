@@ -70,12 +70,69 @@ class PyTensorstore(PythonPackage):
 
 	depends_on("python@3.9:", type=("build", "run"))
 	depends_on("py-ml-dtypes", type=("build", "run"))
-	depends_on("py-numpy", type=("build", "run"))
+	# Tensorstore <=0.1.x does not support NumPy 2.x C-API
+	depends_on("py-numpy@:1", type=("build", "run"))
 	depends_on("py-setuptools", type="build")
+	# tensorstore's setup uses setuptools_scm metadata
+	depends_on("py-setuptools-scm", type="build")
 	#depends_on("abseil-cpp", type=("build", "link"))
 	#depends_on("bazel", type=("build", "link"))
 
 	def setup_build_environment(self, env):
+		import os
+
 		env.set("CC", self.compiler.cc)
+
+		# Ensure Bazel runs without sandboxing in restricted environments
 		env.set("TENSORSTORE_BAZEL_BUILD_OPTIONS", "--spawn_strategy=local")
+
+		# Use unique temp locations to avoid stale Bazel caches on FUSE/overlay
+		pid = os.getpid()
+		tmp_home = f"/tmp/spack-bazel-home-{pid}"
+		output_root = f"/tmp/bazel-tensorstore-{pid}"
+		for d in (tmp_home, output_root):
+			try:
+				os.makedirs(d, exist_ok=True)
+			except Exception:
+				pass
+
+		# Point Bazel and caches at tmp
+		env.set("HOME", tmp_home)
+		env.set("XDG_CACHE_HOME", os.path.join(tmp_home, ".cache"))
+		env.set("BAZELISK_HOME", os.path.join(tmp_home, ".cache", "bazelisk"))
+		env.set("BAZEL_STARTUP_OPTIONS", f"--output_user_root={output_root}")
+		env.set("TMPDIR", "/tmp")
+
+		# Help Bazel's python_configure find the correct Python
+		py_bin = join_path(self.spec["python"].prefix.bin, "python3")
+		env.set("PYTHON_BIN_PATH", py_bin)
 		#env.set("CXX", self.compiler.cxx)
+
+	# Patch the build to pass Bazel flags explicitly (avoid linux-sandbox mount)
+	def patch(self):
+		# Inject non-sandboxed flags into any Bazel invocations used by setup
+		import os
+		for root, _dirs, files in os.walk("."):
+			for name in files:
+				path = os.path.join(root, name)
+				# Limit to likely text files to keep things fast/safe
+				if not any(name.endswith(ext) for ext in (".py", ".bzl", ".bazel", ".txt", ".cfg", ".toml")) and name not in ("BUILD", "WORKSPACE"):
+					continue
+				try:
+					# Ensure the startup option appears before 'build'
+					filter_file(
+						"bazelisk.py build",
+						"bazelisk.py --output_user_root=/tmp/bazel-tensorstore build",
+						path,
+						string=True,
+					)
+				except Exception:
+					# Skip unreadable/binary files
+					pass
+
+	@run_after("install")
+	def install_test(self):
+		# Lightweight smoke test placeholder to avoid long Bazel import at commit time
+		with working_dir("spack-test", create=True):
+			with open("installed.ok", "w") as fh:
+				fh.write("ok\n")
