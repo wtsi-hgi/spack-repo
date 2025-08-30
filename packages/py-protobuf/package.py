@@ -77,6 +77,17 @@ class PyProtobuf(PythonPackage):
 
     conflicts("+cpp", when="^python@3.11:")
 
+    def patch(self):
+        # Older releases used distutils' 2to3 support which has been removed
+        # from modern setuptools. Replace build_py_2to3 with build_py.
+        if self.spec.satisfies("@:3.6.1"):
+            filter_file(
+                "from distutils.command.build_py import build_py_2to3 as _build_py",
+                "from distutils.command.build_py import build_py as _build_py",
+                "setup.py",
+                string=True,
+            )
+
     @property
     def build_directory(self):
         if self.spec.satisfies("@3.1.0"):
