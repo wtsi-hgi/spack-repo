@@ -19,11 +19,13 @@ class PyOsServiceTypes(PythonPackage):
     version("1.7.0", sha256="31800299a82239363995b91f1ebf9106ac7758542a1e4ef6dc737a5932878c6c")
 
     depends_on("python@2.7:2.8,3.5:", type=("build", "run"))
-    depends_on("py-pbr@2.0.0:2.0,2.1.1:", type="build")
+    depends_on("py-pbr@2.0.0:2.0,2.1.1:", type=("build", "run"))
     # Newer setuptools versions removed the 'bdist_wininst' command, which causes
     # old pbr/setup.cfg setups to fail during wheel builds. Constrain to a
     # compatible setuptools to build from source successfully.
     depends_on("py-setuptools@:57.4", type="build")
+    # pbr uses pkg_resources at runtime
+    depends_on("py-setuptools@:57.4", type="run")
 
     def patch(self):
         # Old setuptools removed 'bdist_wininst'. Some legacy setup flows still
@@ -35,6 +37,7 @@ class PyOsServiceTypes(PythonPackage):
                 "import setuptools\n"
                 "from setuptools import Command\n"
                 "import sys, types\n"
+                "import distutils.command\n"
                 "# Provide a dummy distutils.command.bdist_wininst module\n"
                 "bdist_wininst_mod = types.ModuleType('distutils.command.bdist_wininst')\n"
                 "class bdist_wininst(Command):\n"
@@ -43,8 +46,6 @@ class PyOsServiceTypes(PythonPackage):
                 "    def finalize_options(self): pass\n"
                 "    def run(self): pass\n"
                 "bdist_wininst_mod.bdist_wininst = bdist_wininst\n"
-                "sys.modules.setdefault('distutils', types.ModuleType('distutils'))\n"
-                "sys.modules.setdefault('distutils.command', types.ModuleType('distutils.command'))\n"
                 "sys.modules['distutils.command.bdist_wininst'] = bdist_wininst_mod\n"
             ),
             "setup.py",
