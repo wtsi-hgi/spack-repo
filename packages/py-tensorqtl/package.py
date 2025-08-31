@@ -17,7 +17,11 @@ class PyTensorqtl(PythonPackage):
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-pandas-plink", type=("build", "run"))
     depends_on("py-pgenlib", type=("build", "run"))
-    depends_on("py-pyarrow+parquet", type=("build", "run"))
+    # Optional heavy IO dependency
+    variant("pyarrow", default=False, description="Enable PyArrow/Parquet support")
+    depends_on("py-pyarrow+parquet", when="+pyarrow", type=("build", "run"))
     depends_on("py-qtl", type=("build", "run"))
     depends_on("py-scipy", type=("build", "run"))
-    depends_on("py-torch", type=("build", "run"))
+    # Optional GPU acceleration via PyTorch
+    variant("torch", default=False, description="Enable PyTorch backend")
+    depends_on("py-torch@2:", when="+torch", type=("build", "run"))
