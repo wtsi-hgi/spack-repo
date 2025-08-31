@@ -568,7 +568,97 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             "caffe2/CMakeLists.txt",
         )
 
+        if self.spec.satisfies("@2.1:2.7+rocm"):
+            filter_file(
+                "${ROCM_INCLUDE_DIRS}/rocm-core/rocm_version.h",
+                "{0}/include/rocm-core/rocm_version.h".format(self.spec["rocm-core"].prefix),
+                "cmake/public/LoadHIP.cmake",
+                string=True,
+            )
+            filter_file(
+                "-DINCLUDE_DIRECTORIES=${ROCM_INCLUDE_DIRS}",
+                "-DINCLUDE_DIRECTORIES={0}/include/rocm-core".format(
+                    self.spec["rocm-core"].prefix
+                ),
+                "cmake/public/LoadHIP.cmake",
+                string=True,
+            )
+        if self.spec.satisfies("@1.5:2.2+rocm"):
+            filter_file(
+                "/opt/rocm/hcc/include",
+                "$ENV{THRUST_PATH}/include $ENV{ROCPRIM_PATH}/include $ENV{HIPCUB_PATH}/include \
+                    $ENV{ROCRAND_PATH}/include",
+                "caffe2/CMakeLists.txt",
+                string=True,
+            )
+        if self.spec.satisfies("@2.1:2.2+rocm"):
+            filter_file(
+                "__HIP_PLATFORM_HCC__",
+                "__HIP_PLATFORM_AMD__",
+                "caffe2/CMakeLists.txt",
+                string=True,
+            )
+            
+        # Fix build of older releases with newer GCC/libstdc++
+        # fbgemm sources use std::runtime_error/logic_error without explicitly
+        # including <stdexcept>, which fails to compile with stricter headers.
+        # Safely inject the missing include in affected files for old trees.
+        if self.spec.satisfies("@:1.4.1"):
+            files_to_fix = [
+                "third_party/fbgemm/include/fbgemm/ConvUtils.h",
+                "third_party/fbgemm/include/fbgemm/FbgemmFP16.h",
+                "third_party/fbgemm/src/FbgemmConv.cc",
+            ]
+            for path in files_to_fix:
+                # Prefer to place after pragma once when present
+                filter_file(
+                    r"(#pragma once)",
+                    r"\1\n#include <stdexcept>",
+                    path,
+                    string=True,
+                )
+                # Fallback: insert after a common include directive
+                filter_file(
+                    r"(#include[ \t]+[<\"]string[>\"])",
+                    r"\1\n#include <stdexcept>",
+                    path,
+                    string=True,
+                )
+                filter_file(
+                    r"(#include[ \t]+[<\"]vector[>\"])",
+                    r"\1\n#include <stdexcept>",
+                    path,
+                    string=True,
+                )
 
+        # Newer setuptools removed/relocated stdlib distutils in a way that
+        # breaks references like `distutils.version.LooseVersion` used by
+        # older PyTorch build helpers. Use setuptools' vendored distutils
+        # explicitly to remain compatible across Python/setuptools versions.
+        # See build failures like: AttributeError: module 'distutils' has no attribute 'version'
+        if self.spec.satisfies("@:1.13"):
+            # Ensure we're using setuptools' vendored distutils, which
+            # provides the expected `version.LooseVersion` API.
+            filter_file(
+                "from setuptools import distutils",
+                "import setuptools._distutils as distutils\nimport distutils.version",
+                "tools/setup_helpers/cmake.py",
+                string=True,
+            )
+            # Normalize any fully-qualified references back to the local alias
+            filter_file(
+                "setuptools._distutils.version.LooseVersion",
+                "distutils.version.LooseVersion",
+                "tools/setup_helpers/cmake.py",
+                string=True,
+            )
+            # Avoid redefining _mm_storeu_si32 with GCC 11+ in XNNPACK polyfill
+            filter_file(
+                "(defined(__GNUC__) && !defined(__clang__) && !defined(__INTEL_COMPILER))",
+                "(defined(__GNUC__) && !defined(__clang__) && !defined(__INTEL_COMPILER) && (__GNUC__ < 11))",
+                "third_party/XNNPACK/src/xnnpack/intrinsics-polyfill.h",
+                string=True,
+            )
 
     def setup_build_environment(self, env):
         """Set environment variables used to control the build.
