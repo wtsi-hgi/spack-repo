@@ -91,6 +91,9 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         when="@1.12: platform=darwin",
     )
     variant("nccl", default=True, description="Use NCCL", when="+cuda platform=linux")
+    # Enable/disable CUDA cuFile (GPUDirect Storage) support explicitly.
+    # Many systems don't provide CUDA::cuFile, so default to disabled.
+    variant("cufile", default=False, description="Use CUDA cuFile (GPUDirect Storage)", when="+cuda")
     variant("nccl", default=True, description="Use NCCL", when="+rocm platform=linux")
     # Requires AVX2: https://discuss.pytorch.org/t/107518
     variant("nnpack", default=True, description="Use NNPACK", when="target=x86_64_v3:")
@@ -103,6 +106,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     variant("mkldnn", default=True, description="Use MKLDNN")
     variant("distributed", default=True, description="Use distributed")
     variant("mpi", default=True, description="Use MPI for Caffe2", when="+distributed")
+    variant("ucc", default=False, description="Use UCC", when="@1.13: +distributed")
     variant("gloo", default=True, description="Use Gloo", when="+distributed")
     variant("tensorpipe", default=True, description="Use TensorPipe", when="@1.6: +distributed")
     variant(
@@ -314,6 +318,8 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         depends_on("composable-kernel@:6.3.2", when="@2.5")
         depends_on("composable-kernel@6.3.2:", when="@2.6:")
     depends_on("mpi", when="+mpi")
+    depends_on("ucc", when="+ucc")
+    depends_on("ucx", when="+ucc")
     depends_on("mkl", when="+mkldnn")
 
     # Test dependencies
@@ -561,6 +567,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             "torch_global_deps PROPERTIES LINKER_LANGUAGE CXX",
             "caffe2/CMakeLists.txt",
         )
+
         if self.spec.satisfies("@2.1:2.7+rocm"):
             filter_file(
                 "${ROCM_INCLUDE_DIRS}/rocm-core/rocm_version.h",
@@ -591,7 +598,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
                 "caffe2/CMakeLists.txt",
                 string=True,
             )
-
+            
         # Fix build of older releases with newer GCC/libstdc++
         # fbgemm sources use std::runtime_error/logic_error without explicitly
         # including <stdexcept>, which fails to compile with stricter headers.
@@ -739,6 +746,10 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
                 env.set("AOTRITON_INSTALLED_PREFIX", self.spec["aotriton"].prefix)
             if self.spec.satisfies("^hip@5.2.0:"):
                 env.set("CMAKE_MODULE_PATH", self.spec["hip"].prefix.lib.cmake.hip)
+
+        # Explicitly control cuFile support to avoid configure-time failures
+        # when CUDA::cuFile is unavailable
+        enable_or_disable("cufile", var="CUFILE")
 
         enable_or_disable("cudnn")
         if "+cudnn" in self.spec:
