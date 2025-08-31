@@ -983,6 +983,44 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
         filter_file("build:opt --copt=-march=native", "", ".tf_configure.bazelrc")
         filter_file("build:opt --host_copt=-march=native", "", ".tf_configure.bazelrc")
 
+        # For TF 2.2, ensure Abseil's graphcycles.cc includes <limits> to fix GCC 11 builds
+        if spec.satisfies("@2.2"):
+            patch_path = join_path(
+                self.stage.source_path,
+                "third_party/com_google_absl_fix_mac_and_nvcc_build.patch",
+            )
+            if os.path.exists(patch_path):
+                with open(patch_path, "a") as f:
+                    f.write("\n")
+                    f.write("--- ./absl/synchronization/internal/graphcycles.cc\n")
+                    f.write("+++ ./absl/synchronization/internal/graphcycles.cc\n")
+                    f.write("@@\n")
+                    f.write("-#include <algorithm>\n")
+                    f.write("-#include <array>\n")
+                    f.write("+#include <algorithm>\n")
+                    f.write("+#include <array>\n")
+                    f.write("+#include <limits>\n")
+            else:
+                tty.warn("Expected absl patch file not found to append limits fix")
+
+            # Also patch TensorFlow lite ruy block_map.cc missing <limits>
+            ruy_block_map = join_path(
+                self.stage.source_path,
+                "tensorflow/lite/experimental/ruy/block_map.cc",
+            )
+            if os.path.exists(ruy_block_map):
+                with open(ruy_block_map, "r+") as f:
+                    content = f.read()
+                    if "#include <limits>" not in content:
+                        content = content.replace(
+                            "#include <cstdint>",
+                            "#include <cstdint>\n#include <limits>",
+                            1,
+                        )
+                        f.seek(0)
+                        f.write(content)
+                        f.truncate()
+
     def build(self, spec, prefix):
         # Bazel needs the directory to exist on install
         mkdirp(python_platlib)
@@ -1054,11 +1092,61 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
 
         args.append("--config=v2")
 
+        # Abseil limits fix handled via in-place patch above for TF 2.2
+
         # https://github.com/tensorflow/tensorflow/issues/63298
         if self.spec.satisfies("@2.17:"):
             args.append("//tensorflow/tools/pip_package:wheel")
         else:
             args.append("//tensorflow/tools/pip_package:build_pip_package")
+
+        # For TF 2.2, ensure absl graphcycles.cc includes <limits> by patching
+        # the external repository after fetch but before full build.
+        if spec.satisfies("@2.2"):
+            # Query Bazel output base so we can locate external repos
+            info_args = [
+                "--nohome_rc",
+                "--nosystem_rc",
+                "--output_user_root=" + tmp_path,
+                "info",
+                "output_base",
+            ]
+            output_base = Executable("bazel")(*info_args, output=str).strip()
+
+            # Fetch absl first so external tree exists
+            fetch_args = [
+                "--nohome_rc",
+                "--nosystem_rc",
+                "--output_user_root=" + tmp_path,
+                "fetch",
+                "@com_google_absl//:all",
+            ]
+            Executable("bazel")(*fetch_args)
+
+            # Patch the file in place if needed
+            absl_graphcycles = join_path(
+                output_base,
+                "external",
+                "com_google_absl",
+                "absl",
+                "synchronization",
+                "internal",
+                "graphcycles.cc",
+            )
+            if os.path.exists(absl_graphcycles):
+                with open(absl_graphcycles, "r+") as f:
+                    content = f.read()
+                    if "#include <limits>" not in content:
+                        content = content.replace(
+                            "#include <array>", "#include <array>\n#include <limits>", 1
+                        )
+                    # Extra guard: in case <limits> is still not honored, avoid using it.
+                    content = content.replace(
+                        "std::numeric_limits<uint32_t>::max()", "0xffffffffu"
+                    )
+                    f.seek(0)
+                    f.write(content)
+                    f.truncate()
 
         bazel(*args)
 
