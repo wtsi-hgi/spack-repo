@@ -47,6 +47,10 @@ class PyOsServiceTypes(PythonPackage):
                 "    def run(self): pass\n"
                 "bdist_wininst_mod.bdist_wininst = bdist_wininst\n"
                 "sys.modules['distutils.command.bdist_wininst'] = bdist_wininst_mod\n"
+                "# Also provide setuptools.command.bdist_wininst to satisfy setuptools entrypoint\n"
+                "setuptools_bdist_wininst = types.ModuleType('setuptools.command.bdist_wininst')\n"
+                "setattr(setuptools_bdist_wininst, 'bdist_wininst', bdist_wininst)\n"
+                "sys.modules['setuptools.command.bdist_wininst'] = setuptools_bdist_wininst\n"
             ),
             "setup.py",
             string=True,
