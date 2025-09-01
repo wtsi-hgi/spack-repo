@@ -64,10 +64,11 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
 
     # Backends
     # See https://docs.dgl.ai/install/index.html#working-with-different-backends
-    depends_on("py-torch+cuda@2:", when="@2: backend=pytorch", type="run")
-    depends_on("py-torch+cuda@1.12.0:1", when="@1 backend=pytorch", type="run")
-    depends_on("py-torch+cuda@1.2.0:1", when="@0.4.3:1 backend=pytorch", type="run")
-    depends_on("py-torch+cuda@0.4.1:", when="backend=pytorch", type="run")
+    # Avoid CUDA cuFile (GDS) which often lacks a proper CMake target
+    depends_on("py-torch+cuda~cufile@2:", when="@2: backend=pytorch", type="run")
+    depends_on("py-torch+cuda~cufile@1.12.0:1", when="@1 backend=pytorch", type="run")
+    depends_on("py-torch+cuda~cufile@1.2.0:1", when="@0.4.3:1 backend=pytorch", type="run")
+    depends_on("py-torch+cuda~cufile@0.4.1:", when="backend=pytorch", type="run")
     depends_on("mxnet@1.6.0:", when="@1.0.1: backend=mxnet", type="run")
     depends_on("mxnet@1.5.1:", when="@0.4.3: backend=mxnet", type="run")
     depends_on("mxnet@1.5.0:", when="backend=mxnet", type="run")

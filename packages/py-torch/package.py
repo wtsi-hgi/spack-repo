@@ -747,9 +747,21 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             if self.spec.satisfies("^hip@5.2.0:"):
                 env.set("CMAKE_MODULE_PATH", self.spec["hip"].prefix.lib.cmake.hip)
 
-        # Explicitly control cuFile support to avoid configure-time failures
-        # when CUDA::cuFile is unavailable
+        # Explicitly control cuFile (GPUDirect Storage) support to avoid
+        # configure-time failures when CMake cannot provide CUDA::cuFile.
+        # Some CMake/Toolkit combos don't export this target even when libcufile
+        # exists, so force the expected toggles that PyTorch recognizes.
         enable_or_disable("cufile", var="CUFILE")
+        if "+cuda" in self.spec:
+            if "+cufile" in self.spec:
+                # PyTorch checks these in various release series
+                env.set("USE_GDS", "ON")
+                env.set("USE_CUDA_CUFILE", "ON")
+                env.set("USE_CUFILE", "ON")
+            else:
+                env.set("USE_GDS", "OFF")
+                env.set("USE_CUDA_CUFILE", "OFF")
+                env.set("USE_CUFILE", "OFF")
 
         enable_or_disable("cudnn")
         if "+cudnn" in self.spec:
