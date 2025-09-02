@@ -14,6 +14,7 @@ class RDoubletfinder(RPackage):
 
     # Latest commit as of recipe creation
     version("20250321", commit="1b244d8f0d54b4b1cb4365639931bbb16f01e1cd")
+    version("2023.-08-18", commit="1b1d4e2d7f893a3552d9f8f791ab868ee4c782e6")
 
     license("CC0-1.0")
 
