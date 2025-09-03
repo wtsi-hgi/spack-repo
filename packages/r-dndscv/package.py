@@ -19,6 +19,7 @@ class RDndscv(RPackage):
 
     # Latest commit-based version (use commit date as version per guidelines)
     version("20250515", commit="69007c2bbd2d6dae003a30dcfe5dda3df722b2f8")
+    version("2023-09-29", commit="ae10c765ecb6b3a6ff06cd5a50aadc317dab2289")
 
     # Base R requirement (DESCRIPTION does not specify an R version)
     depends_on("r", type=("build", "run"))
