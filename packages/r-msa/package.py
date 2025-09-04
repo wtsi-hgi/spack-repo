@@ -14,9 +14,12 @@ class RMsa(RPackage):
 
     homepage = "http://www.bioinf.jku.at/software/msa/"
     bioc = "msa"
+    # Prefer a responsive Bioconductor mirror first; keep upstream/Archive as fallbacks
     urls = [
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msa_1.34.0.tar.gz",
+        "https://bioconductor.statistik.tu-dortmund.de/packages/3.18/bioc/src/contrib/msa_1.34.0.tar.gz",
+        "https://bioconductor.riken.jp/packages/3.18/bioc/src/contrib/msa_1.34.0.tar.gz",
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/msa/msa_1.34.0.tar.gz",
+        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/msa_1.34.0.tar.gz",
     ]
 
     version("1.34.0", md5="78eba41452ffe497e1a7c72116335b3e")
