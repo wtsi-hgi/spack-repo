@@ -11,7 +11,7 @@ class PyLuca(PythonPackage):
 
     homepage = "https://github.com/cancerit/LUCA"
 
-    # Source releases are on GitHub tags (PyPI name 'luca' is a different project)
+    # Source releases are on GitHub tags
     version(
         "1.0.2",
         sha256="7562eff9e59096f3c48247367bcd882a7936ec7ade51be2b1fd1ef0663247729",
@@ -35,14 +35,14 @@ class PyLuca(PythonPackage):
     depends_on("python@3.11:", type=("build", "run"))
 
     # Runtime dependencies from pyproject.toml
-    depends_on("py-charset-normalizer", type=("build", "run"))
-    depends_on("py-click", type=("build", "run"))
-    depends_on("py-click-option-group", type=("build", "run"))
-    depends_on("py-numpy@1.24:", type=("build", "run"))
-    depends_on("py-pydantic@2:", type=("build", "run"))
-    depends_on("py-pysam", type=("build", "run"))
-    depends_on("py-python-magic", type=("build", "run"))
-    depends_on("py-pyyaml", type=("build", "run"))
+    depends_on("py-charset-normalizer@3.3.0:", type=("build", "run"))
+    depends_on("py-click@8.1.7:", type=("build", "run"))
+    depends_on("py-click-option-group@0.5.4:", type=("build", "run"))
+    depends_on("py-numpy@2.0:", type=("build", "run"))
+    depends_on("py-pydantic@2.10.1:", type=("build", "run"))
+    depends_on("py-pysam@0.22.1:", type=("build", "run"))
+    depends_on("py-python-magic@0.4.24:", type=("build", "run"))
+    depends_on("py-pyyaml@6.0:", type=("build", "run"))
 
     # Optional test dependencies
     variant("test", default=False, description="Enable test dependencies")
@@ -52,8 +52,11 @@ class PyLuca(PythonPackage):
 
     @run_after("install")
     def install_test(self):
-        # Basic import test to verify installation
+        # Basic CLI and import tests to verify installation
         with working_dir("spack-test", create=True):
+            # CLI should be available
+            luca = Executable(join_path(self.prefix.bin, "luca"))
+            luca("--help")
+            # Module import should succeed
             python = which("python")
             python("-c", "import luca")
-
