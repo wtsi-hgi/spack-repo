@@ -6,11 +6,12 @@
 from spack.package import *
 
 class Dnacomb(Package):
-    """CLI tool for counting structured single and paired end sequencing reads and comparing them to an expected library. It compares each read to a canonical form defined in a library specification using one of four approaches:"""
+    """CLI tool for flexibly parsing structured sequence reads into count tables and comparing them to expected libraries"""
 
     homepage = "https://github.com/allydunham/dnacomb"
     git = "https://github.com/allydunham/dnacomb.git"
 
+    version("0.3.0", commit="5a0f4a916d2f862148bfd1b27b7967d6f5b399cb")
     version("0.2.2", commit="ac90aa97b3e7492612675fba9851fb489b5468c1")
     version("0.2.1", commit="bea1a3b19ede4bf6d5e45d38febd57721b329c91")
     version("0.2.0", commit="6c6b08fbd143867ffc270509988c747137d718b2")
