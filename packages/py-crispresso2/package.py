@@ -29,6 +29,10 @@ class PyCrispresso2(PythonPackage):
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-seaborn", type=("build", "run"))
     depends_on("py-jinja2", type=("build", "run"))
+    # Additional dependencies for CRISPResso2
+    depends_on("bowtie2", type="run")
+    depends_on("samtools", type="run")
+    depends_on("fastp", type="run")
 
     @run_after("install")
     def install_test(self):
