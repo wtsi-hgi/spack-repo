@@ -8,7 +8,7 @@ If it is only a version not exist, you can use `spack versions` command to get m
 Before going to the next steps, if the prompt contains a url for the package, always read the url and add the contents into your content window.
 
 if the recipe for the package does not exist, and it is a python package, you should first check pypi using our internal tool:
-`cd ~/r-spack-recipe-builder && ./PyPackageCreator.py -f {pkg}`
+`cd ~/r-spack-recipe-builder && ./py-package-uv-creator -f {pkg}`
 when it succeeds, copy the recipes here:
 `del_empty && mv ~/r-spack-recipe-builder/packages/py-* ~/spack-repo/packages`
 

@@ -16,3 +16,5 @@ downstream tools will not consider the soft-masked bases in further analysis."""
     pypi = "cigar/cigar-0.1.3.tar.gz"
 
     version("0.1.3", sha256="5847f5e8968035b3a5b04dcfa879fb6c14dd3a42dce8994864806dcda8a4fcf2")
+
+    depends_on("py-setuptools", type="build")

@@ -20,3 +20,5 @@ class PyNorns(PythonPackage):
 	version("0.1.6", sha256="1f3c6ccbe79b2cb3076f66a352cd76462593adbabe9ebb262f879a9d0a6634e4")
 
 	depends_on("py-setuptools", type=("build"))
+	with default_args(type=("build", "run")):
+		depends_on("py-pyyaml")

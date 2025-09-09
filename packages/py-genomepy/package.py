@@ -129,6 +129,8 @@ class PyGenomepy(PythonPackage):
         depends_on("python@3.7:")
         depends_on("py-appdirs")
         depends_on("py-biopython")
+        depends_on("py-numpy")
+        depends_on("py-pandas")
         depends_on("py-bucketcache")
         depends_on("py-click")
         depends_on("py-colorama")

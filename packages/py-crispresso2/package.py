@@ -8,7 +8,7 @@ from spack.package import *
 class PyCrispresso2(PythonPackage):
     """CRISPResso2 is a software pipeline designed to enable rapid and intuitive interpretation of genome editing experiments."""
 
-    homepage = "https://www.example.com"
+    homepage = "https://github.com/pinellolab/CRISPResso2"
     url = "https://github.com/pinellolab/CRISPResso2/archive/refs/tags/v2.3.1.tar.gz"
 
     version("2.3.1", sha256="e1f3f87e392529d441f0b3b6983600d643fbcdf40cde621eb24f40b3f7195fa4")
@@ -23,6 +23,19 @@ class PyCrispresso2(PythonPackage):
     version("2.2.7", sha256="2942348983a96d7493ead55f296163cad26f5d66038bcada8f5c8770f347e495")
 
     depends_on("py-setuptools", type="build")
-    depends_on("py-numpy", type=("build", "run"))
+    # CRISPResso2 C extensions are not compatible with NumPy 2.x
+    # Pin to <2 until upstream adds support
+    depends_on("py-numpy@:1", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-seaborn", type=("build", "run"))
+    depends_on("py-jinja2", type=("build", "run"))
+    # Additional dependencies for CRISPResso2
+    depends_on("bowtie2", type="run")
+    depends_on("samtools", type="run")
+    depends_on("fastp", type="run")
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            # Basic import test to verify installation
+            python("-c", "import CRISPResso2")

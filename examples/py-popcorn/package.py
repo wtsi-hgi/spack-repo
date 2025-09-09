@@ -25,3 +25,4 @@ class PyPopcorn(PythonPackage):
     depends_on("py-statsmodels@0.8.0:")
     depends_on("py-matplotlib@1.5.1:")
     depends_on("r", type="run")  # Required for h2weight.R script
+

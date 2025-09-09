@@ -12,8 +12,12 @@ class RSeuratwrappers(RPackage):
 	homepage = "https://github.com/satijalab/seurat-wrappers"
 	git = "https://github.com/satijalab/seurat-wrappers.git"
 
-	version("2024-01-29", commit="d9594f67a9eab4f917390010a1c106b5422b102e")
-	version("2023-04-18", commit="f647ce440a017f9f836eef5dac88f4c414370e94")
+	# Recent snapshot (compatible with Seurat 5)
+	version("2024-01-29", commit="d9594f67a9eab4f917390010a1c106b5422b102e", preferred=True)
+	# Older snapshot; still requires Seurat 5
+	version("2023-07-20", commit="91c5c3ffb0aa951e73108a53b36260019f2c10d8")
+	# Legacy snapshot compatible with Seurat 3/4
+	version("2020-09-29", commit="79fe9001d8bba43d10caf7c98fb0b2784b6f1dce")
 
 	depends_on("r-biocmanager", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))
@@ -22,7 +26,9 @@ class RSeuratwrappers(RPackage):
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-remotes", type=("build", "run"))
 	depends_on("r-rsvd", type=("build", "run"))
-	depends_on("r-seurat@4.2.0:", type=("build", "run"), when="@2023-04-18:")
-	depends_on("r-seurat@5.0.0:", type=("build", "run"), when="@2024-01-29:")
+	# Match Seurat major versions across snapshots
+	depends_on("r-seurat@5:", type=("build", "run"), when="@2024-01-29")
+	depends_on("r-seurat@5:", type=("build", "run"), when="@2023-07-20")
+	depends_on("r-seurat@3:", type=("build", "run"), when="@2020-09-29")
 	depends_on("r-rlang", type=("build", "run"))
 	depends_on("r-r-utils", type=("build", "run"))

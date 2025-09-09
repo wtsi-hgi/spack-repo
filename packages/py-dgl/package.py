@@ -64,10 +64,11 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
 
     # Backends
     # See https://docs.dgl.ai/install/index.html#working-with-different-backends
-    depends_on("py-torch+cuda@2:", when="@2: backend=pytorch", type="run")
-    depends_on("py-torch+cuda@1.12.0:1", when="@1 backend=pytorch", type="run")
-    depends_on("py-torch+cuda@1.2.0:1", when="@0.4.3:1 backend=pytorch", type="run")
-    depends_on("py-torch+cuda@0.4.1:", when="backend=pytorch", type="run")
+    # Avoid CUDA cuFile (GDS) which often lacks a proper CMake target
+    depends_on("py-torch+cuda~cufile@2:", when="@2: backend=pytorch", type="run")
+    depends_on("py-torch+cuda~cufile@1.12.0:1", when="@1 backend=pytorch", type="run")
+    depends_on("py-torch+cuda~cufile@1.2.0:1", when="@0.4.3:1 backend=pytorch", type="run")
+    depends_on("py-torch+cuda~cufile@0.4.1:", when="backend=pytorch", type="run")
     depends_on("mxnet@1.6.0:", when="@1.0.1: backend=mxnet", type="run")
     depends_on("mxnet@1.5.1:", when="@0.4.3: backend=mxnet", type="run")
     depends_on("mxnet@1.5.0:", when="backend=mxnet", type="run")
@@ -94,8 +95,21 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
     build_directory = "build"
 
     def setup_build_environment(self, env):
-        if self.spec.satisfies("@2: +cuda"):  # match our cluster
-            env.set("TORCH_CUDA_ARCH_LIST", "7.0 7.2 7.5 8.0 8.6 8.7 8.9 9.0")
+        # Ensure CUDA architectures used are compatible with the CUDA toolkit
+        if self.spec.satisfies("@2: +cuda"):
+            # Start with a broad set; prune based on CUDA version support
+            archs_int = ["70", "72", "75", "80", "86", "87", "89", "90"]
+
+            # CUDA 11.8 is the first to support sm_89 and sm_90 (Ada/Hopper)
+            if self.spec.satisfies("^cuda@:11.7"):
+                archs_int = [a for a in archs_int if a not in ("89", "90")]
+
+            # Torch expects space-separated list with decimals; CMake expects semicolons without
+            torch_archs = " ".join([f"{a[0]}.{a[1]}" for a in archs_int])
+            cmake_archs = ";".join(archs_int)
+
+            env.set("TORCH_CUDA_ARCH_LIST", torch_archs)
+            env.set("CMAKE_CUDA_ARCHITECTURES", cmake_archs)
 
     def patch(self):
         # fix the numeric_limits import
@@ -108,18 +122,48 @@ class PyDgl(CMakePackage, PythonExtension, CudaPackage):
             "src/array/cuda/functor.cuh",
             string=True,
         )
+        # Allow disabling HugeCTR GPU cache when CUDA toolkit is too old
+        filter_file(
+            "if(USE_CUDA)",
+            "if(USE_CUDA AND NOT DISABLE_HUGECTR_CACHE)",
+            "CMakeLists.txt",
+            string=True,
+        )
+        # Allow disabling the optional dgl_sparse target explicitly
+        filter_file(
+            "if(BUILD_SPARSE)",
+            "if(BUILD_SPARSE AND NOT DISABLE_DGL_SPARSE)",
+            "CMakeLists.txt",
+            string=True,
+        )
 
     # https://docs.dgl.ai/install/index.html#install-from-source
     def cmake_args(self):
         args = []
 
+        # Avoid building optional components relying on PyTorch's CMake.
+        args.append("-DBUILD_TORCH=OFF")
+
         if "+cuda" in self.spec:
             args.append("-DUSE_CUDA=ON")
             # Prevent defaulting to old compute_ and sm_ despite defining cuda_arch
             args.append("-DCUDA_ARCH_NAME=Manual")
-            cuda_arch_list = "70,72,75,80,86,87,89"  # match our cluster
-            args.append("-DCUDA_ARCH_BIN={0}".format(cuda_arch_list))
-            args.append("_DCUDA_ARCH_PTX={0}".format(cuda_arch_list))
+            # Mirror the environment computation so both build systems agree
+            archs_int = ["70", "72", "75", "80", "86", "87", "89", "90"]
+            if self.spec.satisfies("^cuda@:11.7"):
+                archs_int = [a for a in archs_int if a not in ("89", "90")]
+            cuda_arch_list_commas = ",".join(archs_int)
+            cuda_arch_list_semis = ";".join(archs_int)
+            # DGL CMake uses these, while GraphBolt (subproject) respects CMAKE_CUDA_ARCHITECTURES
+            args.append(f"-DCUDA_ARCH_BIN={cuda_arch_list_commas}")
+            args.append(f"-DCUDA_ARCH_PTX={cuda_arch_list_commas}")
+            args.append(f"-DCMAKE_CUDA_ARCHITECTURES={cuda_arch_list_semis}")
+
+            # GraphBolt's HugeCTR GPU cache requires CUDA 12+ (cuda_fp8.h)
+            if self.spec.satisfies("^cuda@:11.7"):
+                args.append("-DBUILD_GRAPHBOLT=OFF")
+                args.append("-DDISABLE_HUGECTR_CACHE=ON")
+                args.append("-DDISABLE_DGL_SPARSE=ON")
         else:
             args.append("-DUSE_CUDA=OFF")
 

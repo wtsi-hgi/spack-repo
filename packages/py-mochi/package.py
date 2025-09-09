@@ -33,10 +33,10 @@ class PyMochi(PythonPackage):
     def bin_install(self):
         #mkdir(self.prefix.bin)
         with open(self.prefix.bin + "/run_mochi.py", "w") as f:
-            f.write("#!/bin/bash\necho -e \"from pymochi import main\\nimport sys\\nsys.exit(main.main())\" | LD_LIBRARY_PATH=\"" + self.spec["gcc"].prefix.lib64 + ":" + self.spec["freetype"].prefix.lib + "\" python3.9 - \"$@\"")
+            f.write("#!/bin/bash\necho -e \"from pymochi import main\\nimport sys\\nsys.exit(main.main())\" | LD_LIBRARY_PATH=\"" + self.spec["gcc"].prefix.lib64 + ":" + self.spec["freetype"].prefix.lib + ":$LD_LIBRARY_PATH" + "\" python3.9 - \"$@\"")
 
         with open(self.prefix.bin + "/demo_mochi.py", "w") as f:
-            f.write("#!/bin/bash\necho -e \"from pymochi import main\\nimport sys\\nsys.exit(main.main(demo_mode = True))\" | LD_LIBRARY_PATH=\"" + self.spec["gcc"].prefix.lib64 + ":" + self.spec["freetype"].prefix.lib + "\" python3.9 - \"$@\"")
+            f.write("#!/bin/bash\necho -e \"from pymochi import main\\nimport sys\\nsys.exit(main.main(demo_mode = True))\" | LD_LIBRARY_PATH=\"" + self.spec["gcc"].prefix.lib64 + ":" + self.spec["freetype"].prefix.lib + ":$LD_LIBRARY_PATH" + "\" python3.9 - \"$@\"")
 
         os.chmod(self.prefix.bin + "/run_mochi.py", 0o755)
         os.chmod(self.prefix.bin + "/demo_mochi.py", 0o755)

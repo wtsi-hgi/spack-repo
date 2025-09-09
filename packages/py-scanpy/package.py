@@ -25,7 +25,11 @@ class PyScanpy(PythonPackage):
     version("1.9.3", sha256="dfe65f9acd9f4c1740079a099f89fa6a44b6f0ef75ecaf85247ad4af859144d7")
     version("1.9.1", sha256="00c9a83b649da7e0171c91e9a08cff632102faa760614fd05cd4d1dbba4eb541")
 
-    depends_on("python@3.10:", type=("build", "run"), when="@1.10:")
+    # Python requirements differ within the 1.10 series:
+    # - 1.10.1 supports Python >=3.9 on PyPI
+    # - 1.10.4 requires Python >=3.10
+    depends_on("python@3.10:", type=("build", "run"), when="@1.10.4")
+    depends_on("python@3.9:", type=("build", "run"), when="@1.10.1")
     depends_on("py-anndata@0.8:", type=("build", "run"), when="@1.10:")
     depends_on("python@3.7:", type=("build", "run"))
     depends_on("py-setuptools-scm", type="build")

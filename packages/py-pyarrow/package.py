@@ -51,6 +51,8 @@ class PyPyarrow(PythonPackage, CudaPackage):
 
     depends_on("py-numpy@1.14:", type=("build", "run"), when="@0.15.0:")
     depends_on("py-numpy@1.16.6:", type=("build", "run"), when="@3.0.0:")
+    # NumPy 2.x breaks older PyArrow C-API expectations; cap to NumPy 1.x
+    depends_on("py-numpy@:1", type=("build", "run"), when="@:10.0.1")
 
     arrow_versions = (
         "@0.9.0",

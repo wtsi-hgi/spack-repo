@@ -91,6 +91,9 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         when="@1.12: platform=darwin",
     )
     variant("nccl", default=True, description="Use NCCL", when="+cuda platform=linux")
+    # Enable/disable CUDA cuFile (GPUDirect Storage) support explicitly.
+    # Many systems don't provide CUDA::cuFile, so default to disabled.
+    variant("cufile", default=False, description="Use CUDA cuFile (GPUDirect Storage)", when="+cuda")
     variant("nccl", default=True, description="Use NCCL", when="+rocm platform=linux")
     # Requires AVX2: https://discuss.pytorch.org/t/107518
     variant("nnpack", default=True, description="Use NNPACK", when="target=x86_64_v3:")
@@ -103,6 +106,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     variant("mkldnn", default=True, description="Use MKLDNN")
     variant("distributed", default=True, description="Use distributed")
     variant("mpi", default=True, description="Use MPI for Caffe2", when="+distributed")
+    variant("ucc", default=False, description="Use UCC", when="@1.13: +distributed")
     variant("gloo", default=True, description="Use Gloo", when="+distributed")
     variant("tensorpipe", default=True, description="Use TensorPipe", when="@1.6: +distributed")
     variant(
@@ -316,6 +320,8 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         depends_on("composable-kernel@:6.3.2", when="@2.5")
         depends_on("composable-kernel@6.3.2:", when="@2.6:")
     depends_on("mpi", when="+mpi")
+    depends_on("ucc", when="+ucc")
+    depends_on("ucx", when="+ucc")
     depends_on("mkl", when="+mkldnn")
 
     # Test dependencies
@@ -563,6 +569,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             "torch_global_deps PROPERTIES LINKER_LANGUAGE CXX",
             "caffe2/CMakeLists.txt",
         )
+
         if self.spec.satisfies("@2.1:2.7+rocm"):
             filter_file(
                 "${ROCM_INCLUDE_DIRS}/rocm-core/rocm_version.h",
@@ -591,6 +598,67 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
                 "__HIP_PLATFORM_HCC__",
                 "__HIP_PLATFORM_AMD__",
                 "caffe2/CMakeLists.txt",
+                string=True,
+            )
+            
+        # Fix build of older releases with newer GCC/libstdc++
+        # fbgemm sources use std::runtime_error/logic_error without explicitly
+        # including <stdexcept>, which fails to compile with stricter headers.
+        # Safely inject the missing include in affected files for old trees.
+        if self.spec.satisfies("@:1.4.1"):
+            files_to_fix = [
+                "third_party/fbgemm/include/fbgemm/ConvUtils.h",
+                "third_party/fbgemm/include/fbgemm/FbgemmFP16.h",
+                "third_party/fbgemm/src/FbgemmConv.cc",
+            ]
+            for path in files_to_fix:
+                # Prefer to place after pragma once when present
+                filter_file(
+                    r"(#pragma once)",
+                    r"\1\n#include <stdexcept>",
+                    path,
+                    string=True,
+                )
+                # Fallback: insert after a common include directive
+                filter_file(
+                    r"(#include[ \t]+[<\"]string[>\"])",
+                    r"\1\n#include <stdexcept>",
+                    path,
+                    string=True,
+                )
+                filter_file(
+                    r"(#include[ \t]+[<\"]vector[>\"])",
+                    r"\1\n#include <stdexcept>",
+                    path,
+                    string=True,
+                )
+
+        # Newer setuptools removed/relocated stdlib distutils in a way that
+        # breaks references like `distutils.version.LooseVersion` used by
+        # older PyTorch build helpers. Use setuptools' vendored distutils
+        # explicitly to remain compatible across Python/setuptools versions.
+        # See build failures like: AttributeError: module 'distutils' has no attribute 'version'
+        if self.spec.satisfies("@:1.13"):
+            # Ensure we're using setuptools' vendored distutils, which
+            # provides the expected `version.LooseVersion` API.
+            filter_file(
+                "from setuptools import distutils",
+                "import setuptools._distutils as distutils\nimport distutils.version",
+                "tools/setup_helpers/cmake.py",
+                string=True,
+            )
+            # Normalize any fully-qualified references back to the local alias
+            filter_file(
+                "setuptools._distutils.version.LooseVersion",
+                "distutils.version.LooseVersion",
+                "tools/setup_helpers/cmake.py",
+                string=True,
+            )
+            # Avoid redefining _mm_storeu_si32 with GCC 11+ in XNNPACK polyfill
+            filter_file(
+                "(defined(__GNUC__) && !defined(__clang__) && !defined(__INTEL_COMPILER))",
+                "(defined(__GNUC__) && !defined(__clang__) && !defined(__INTEL_COMPILER) && (__GNUC__ < 11))",
+                "third_party/XNNPACK/src/xnnpack/intrinsics-polyfill.h",
                 string=True,
             )
 
@@ -692,6 +760,22 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             if self.spec.satisfies("^hip@5.2.0:"):
                 env.set("CMAKE_MODULE_PATH", self.spec["hip"].prefix.lib.cmake.hip)
 
+        # Explicitly control cuFile (GPUDirect Storage) support to avoid
+        # configure-time failures when CMake cannot provide CUDA::cuFile.
+        # Some CMake/Toolkit combos don't export this target even when libcufile
+        # exists, so force the expected toggles that PyTorch recognizes.
+        enable_or_disable("cufile", var="CUFILE")
+        if "+cuda" in self.spec:
+            if "+cufile" in self.spec:
+                # PyTorch checks these in various release series
+                env.set("USE_GDS", "ON")
+                env.set("USE_CUDA_CUFILE", "ON")
+                env.set("USE_CUFILE", "ON")
+            else:
+                env.set("USE_GDS", "OFF")
+                env.set("USE_CUDA_CUFILE", "OFF")
+                env.set("USE_CUFILE", "OFF")
+
         enable_or_disable("cudnn")
         if "+cudnn" in self.spec:
             # cmake/Modules_CUDA_fix/FindCUDNN.cmake
@@ -727,7 +811,16 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         enable_or_disable("qnnpack", var="PYTORCH_QNNPACK")
         enable_or_disable("valgrind")
         enable_or_disable("xnnpack")
+        # GCC 11+ provides _mm_storeu_si32 which conflicts with XNNPACK's
+        # intrinsics polyfill in older PyTorch releases. Disable XNNPACK to
+        # avoid redefinition errors when building with newer GCC.
+        if self.spec.satisfies("@:1.13 %gcc@11:"):
+            env.set("USE_XNNPACK", "OFF")
         enable_or_disable("mkldnn")
+        # Old releases (e.g., 1.4.1) are incompatible with modern oneDNN.
+        # Force-disable MKLDNN to avoid unresolved symbol issues at import.
+        if self.spec.satisfies("@:1.4.1"):
+            env.set("USE_MKLDNN", "OFF")
         enable_or_disable("distributed")
         enable_or_disable("mpi")
         enable_or_disable("ucc")

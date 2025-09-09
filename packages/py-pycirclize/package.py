@@ -10,7 +10,7 @@ class PyPycirclize(PythonPackage):
 	"""Circular visualization in Python"""
 	
 	homepage = "https://moshi4.github.io/pyCirclize/"
-	pypi = "pycirclize/pycirclize-1.9.1-py3-none-any.whl" 
+	pypi = "pyCirclize/pycirclize-1.9.1-py3-none-any.whl" 
 
 	version("0.0.1", sha256="294db16eb1bc89eccd4fb2d2b620e82e4c6d14e6dd7ac052d0c6a6178dc6e9af", expand=False, url="https://files.pythonhosted.org/packages/90/eb/de16bb03dd968d76d8c1e16b5a91b46340c5caf7d2dc846c23cec34e837b/pyCirclize-0.0.1-py3-none-any.whl")
 	version("0.0.2", sha256="ed93a39c39fc56923373ec1e1f42e3d093f9b29373924be7690ad523f512f4db", expand=False, url="https://files.pythonhosted.org/packages/fc/f1/39b12d737e222f2c9ba0ad6dd13b03790ab3f3952433c8bf15ee918fe367/pyCirclize-0.0.2-py3-none-any.whl")
@@ -42,8 +42,8 @@ class PyPycirclize(PythonPackage):
 
 	depends_on("py-setuptools", type=("build"))
 	depends_on("python@3.9:", type=("build", "run"))
-	depends_on("py-matplotlib", type=("build", "run"))
 	depends_on("py-biopython", type=("build", "run"))
+	depends_on("py-matplotlib", type=("build", "run"))
 	depends_on("py-numpy", type=("build", "run"))
 	depends_on("py-pandas", type=("build", "run"))
 
