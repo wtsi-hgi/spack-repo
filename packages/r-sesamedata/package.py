@@ -18,7 +18,7 @@ class RSesamedata(RPackage):
     version("1.20.0", commit="ff46e9d52373588a354043bc4a9427b582809884")
 
     # Align with Bioconductor 3.21 which needs R >= 4.5
-    depends_on("r@4.5:", type=("build", "run"), when="@1.26:")
+    # depends_on("r@4.5:", type=("build", "run"), when="@1.26:")
     depends_on("r@4.2:", type=("build", "run"), when="@:1.25")
     depends_on("r-experimenthub", type=("build", "run"))
     depends_on("r-annotationhub", type=("build", "run"))

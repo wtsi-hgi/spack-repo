@@ -17,7 +17,7 @@ class RPodcall(RPackage):
     version("1.16.0", commit="2502146738906bc5aa2b4f17d7feba6e07e7d818")
     version("1.10.1", commit="e26a93b0e1c73693e6b64dd10cdd870eb0a5804f")
 
-    depends_on("r@4.5:", type=("build", "run"), when="@1.16:")
+    # depends_on("r@4.5:", type=("build", "run"), when="@1.16:")
     depends_on("r@4.3:", type=("build", "run"), when="@1.10:")
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-gridextra", type=("build", "run"))

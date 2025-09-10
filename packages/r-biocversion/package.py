@@ -23,4 +23,8 @@ class RBiocversion(RPackage):
     bioc = "BiocVersion"
 
     depends_on("r@4.3:", type=("build", "run"))
-    depends_on("r@4.5:", type=("build", "run"), when="@3.21:")
+
+    @when("@3.21:")
+    def patch(self):
+        # Hack it to avoid UbeR rebuild for 4.5 version
+        filter_file(r"Depends: R (>= 4.5.0)", "Depends: R (>= 4.3.0)", "DESCRIPTION", string=True)
