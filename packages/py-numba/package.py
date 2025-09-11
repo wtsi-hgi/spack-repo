@@ -43,7 +43,9 @@ class PyNumba(PythonPackage):
     depends_on("python@3.6:3.9", when="@0.53", type=("build", "run"))
     depends_on("python@3.6:3.8", when="@0.52", type=("build", "run"))
     depends_on("python@3.6:3.8", when="@0.48:0.51", type=("build", "run"))
-    depends_on("py-numpy@1.22:1.26", when="@0.58.1:", type=("build", "run"))
+    depends_on("py-numpy@1.22:1.26", when="@0.58.1:0.59", type=("build", "run"))
+    # Numba 0.60+ supports NumPy 2.x
+    depends_on("py-numpy@1.22:", when="@0.60:", type=("build", "run"))
     depends_on("py-numpy@1.21:1.25", when="@0.58.0", type=("build", "run"))
     depends_on("py-numpy@1.21:1.24", when="@0.57", type=("build", "run"))
     depends_on("py-numpy@1.18:1.23", when="@0.56.1:0.56.4", type=("build", "run"))
