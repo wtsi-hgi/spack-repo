@@ -23,8 +23,12 @@ class PyCrispresso2(PythonPackage):
     version("2.2.7", sha256="2942348983a96d7493ead55f296163cad26f5d66038bcada8f5c8770f347e495")
 
     depends_on("py-setuptools", type="build")
-    # Allow NumPy 2.x; if build issues arise, patch sources accordingly
-    depends_on("py-numpy@1.20:", type=("build", "run"))
+    # CRISPResso2 (<=2.3.1) is incompatible with NumPy 2.x due to removed C-API
+    # attributes (e.g. PyArray_Descr.subarray). Constrain to NumPy <2 for these
+    # versions to avoid build failures; relax for future releases when verified.
+    depends_on("py-numpy@1.20:1", when="@:2.3.1", type=("build", "run"))
+    # Placeholder for future compatibility once upstream supports NumPy 2+
+    depends_on("py-numpy@1.20:", when="@2.3.2:", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-seaborn", type=("build", "run"))
     depends_on("py-jinja2", type=("build", "run"))
