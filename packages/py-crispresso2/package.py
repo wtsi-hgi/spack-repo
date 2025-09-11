@@ -11,6 +11,7 @@ class PyCrispresso2(PythonPackage):
     homepage = "https://github.com/pinellolab/CRISPResso2"
     url = "https://github.com/pinellolab/CRISPResso2/archive/refs/tags/v2.3.1.tar.gz"
 
+    version("2.3.3", sha256="9570bfb9257677b7581a6b1ec59ddb57fb53aca438c916f29b0a3332854e09db")
     version("2.3.1", sha256="e1f3f87e392529d441f0b3b6983600d643fbcdf40cde621eb24f40b3f7195fa4")
     version("2.3.0", sha256="ccbb1c8e27139a10562d154c510149d833841f92370755914020d71e49bcfa33")
     version("2.2.14", sha256="ec9c5ff4069a651601dd980ef20c60bf14467ec97324c92673f6dcd698b9f844")
@@ -23,8 +24,9 @@ class PyCrispresso2(PythonPackage):
     version("2.2.7", sha256="2942348983a96d7493ead55f296163cad26f5d66038bcada8f5c8770f347e495")
 
     depends_on("py-setuptools", type="build")
-    # Allow NumPy 2.x; if build issues arise, patch sources accordingly
-    depends_on("py-numpy@1.20:", type=("build", "run"))
+    # NumPy bounds: old versions require NumPy 1.x; 2.3.3+ supports NumPy 2.x
+    depends_on("py-numpy@1.20:1", when="@:2.3.1", type=("build", "run"))
+    depends_on("py-numpy@1.20:", when="@2.3.3:", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-seaborn", type=("build", "run"))
     depends_on("py-jinja2", type=("build", "run"))
