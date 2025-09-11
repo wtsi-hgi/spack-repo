@@ -19,6 +19,7 @@ class GithubCli(MakefilePackage):
 
     # Build dependencies
     depends_on("go@1.21:", type="build")
+    depends_on("git", type=("build", "run"))
 
     # The upstream Makefile honors `prefix`/`bindir`/`datadir`/`mandir` variables
     # and generates manpages + shell completions.
