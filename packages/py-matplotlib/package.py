@@ -141,7 +141,8 @@ class PyMatplotlib(PythonPackage):
     depends_on("py-fonttools@4.22:", when="@3.5:", type=("build", "run"))
     depends_on("py-kiwisolver@1.3.1:", when="@3.8.1:", type=("build", "run"))
     depends_on("py-kiwisolver@1.0.1:", when="@2.2:", type=("build", "run"))
-    depends_on("py-numpy@1.21:1", when="@3.8:", type=("build", "link", "run"))
+    # Matplotlib 3.8+ is compatible with NumPy 2.x; allow >=1.21
+    depends_on("py-numpy@1.21:", when="@3.8:", type=("build", "link", "run"))
     depends_on("py-numpy@1.20:", when="@3.7:", type=("build", "link", "run"))
     depends_on("py-numpy@1.19:", when="@3.6:", type=("build", "link", "run"))
     depends_on("py-numpy@1.17:", when="@3.5:", type=("build", "link", "run"))
