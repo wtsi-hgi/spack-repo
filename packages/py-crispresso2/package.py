@@ -23,7 +23,9 @@ class PyCrispresso2(PythonPackage):
     version("2.2.7", sha256="2942348983a96d7493ead55f296163cad26f5d66038bcada8f5c8770f347e495")
 
     depends_on("py-setuptools", type="build")
-    # Allow NumPy 2.x; if build issues arise, patch sources accordingly
+    # Build with Cython to regenerate extensions compatible with NumPy 2.x
+    depends_on("py-cython@3:", type="build")
+    # Allow NumPy 2.x (rely on Cython 3 regeneration)
     depends_on("py-numpy@1.20:", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-seaborn", type=("build", "run"))
@@ -32,6 +34,35 @@ class PyCrispresso2(PythonPackage):
     depends_on("bowtie2", type="run")
     depends_on("samtools", type="run")
     depends_on("fastp", type="run")
+
+    # Force use of Cython and .pyx sources to rebuild extensions
+    def patch(self):
+        # Always treat Cython as available and build from .pyx
+        filter_file(
+            "has_cython = False",
+            "has_cython = True",
+            "setup.py",
+            string=True,
+        )
+        filter_file(
+            "ext = '.pyx' if has_cython else '.c'",
+            "ext = '.pyx'",
+            "setup.py",
+            string=True,
+        )
+        # NumPy 2 removed np.int_t/np.uint_t aliases; use pointer-sized ints
+        filter_file(
+            "np.int_t",
+            "np.intp_t",
+            "CRISPResso2/CRISPResso2Align.pyx",
+            string=True,
+        )
+        filter_file(
+            "np.uint_t",
+            "np.uintp_t",
+            "CRISPResso2/CRISPResso2Align.pyx",
+            string=True,
+        )
 
     @run_after("install")
     def install_test(self):
