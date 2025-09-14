@@ -35,7 +35,10 @@ class RMsa2dist(RPackage):
     depends_on("r-tidyr", type=("build", "run"))
     depends_on("r-rcppthread", type=("build", "run"))
     depends_on("r@4.4.0:", when="@1.12.0:", type=("build", "run"))
+    # Use r-pwalign for newer releases that declare it upstream
+    depends_on("r-pwalign", when="@1.12.0:", type=("build", "run"))
 
+    @when("@:1.11")
     def patch(self):
         # Some releases reference the removed CRAN package 'pwalign'.
         # Drop that dependency and redirect any imports/usages to Biostrings,
@@ -78,8 +81,13 @@ class RMsa2dist(RPackage):
             ),
             join_path("R", "makePostalignedSeqs.R"),
         )
-        # Drop the now-stale continuation line
-        filter_file(r"envir=asNamespace\('pwalign'\), inherits=FALSE\)", "", join_path("R", "makePostalignedSeqs.R"))
+        # Drop any now-stale continuation line that referenced an internal getter
+        # Handle either original 'pwalign' or post-rewrite 'Biostrings'
+        filter_file(
+            r"^\s*envir=asNamespace\('[^']+'\),\s*inherits=FALSE\)\s*$",
+            "",
+            join_path("R", "makePostalignedSeqs.R"),
+        )
 
         # Load substitution matrices from Biostrings instead of pwalign
         filter_file(
