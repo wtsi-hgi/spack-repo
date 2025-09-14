@@ -63,3 +63,4 @@ class RMusicatk(RPackage):
     depends_on("r-stringi", type=("build", "run"))
     depends_on("r-tidyverse", type=("build", "run"))
     depends_on("r-ggpubr", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@2.2.0:", type=("build", "run"))

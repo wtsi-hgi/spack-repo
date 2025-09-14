@@ -23,3 +23,4 @@ class RGosorensen(RPackage):
     depends_on("r-goprofiles", type=("build", "run"))
     depends_on("r-clusterprofiler", type=("build", "run"))
     depends_on("r-stringr", type=("build", "run"))
+    depends_on("r@4.4:", when="@1.10.0:", type=("build", "run"))

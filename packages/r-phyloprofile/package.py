@@ -54,3 +54,4 @@ class RPhyloprofile(RPackage):
     depends_on("r-xml2", type=("build", "run"))
     depends_on("r-zoo", type=("build", "run"))
     depends_on("r-yaml", type=("build", "run"))
+    depends_on("r@4.5.0:", when="@2.0.6:", type=("build", "run"))

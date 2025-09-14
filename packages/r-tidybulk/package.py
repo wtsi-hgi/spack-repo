@@ -38,3 +38,4 @@ class RTidybulk(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-crayon", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@1.20.0:", type=("build", "run"))

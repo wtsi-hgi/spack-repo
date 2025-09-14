@@ -34,3 +34,4 @@ class RConcordexr(RPackage):
     depends_on("r-sparsematrixstats", type=("build", "run"))
     depends_on("r-spatialexperiment", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@1.8.0:", type=("build", "run"))

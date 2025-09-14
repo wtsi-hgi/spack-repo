@@ -27,3 +27,4 @@ class RGloscope(RPackage):
     depends_on("r-mvnfast", type=("build", "run"))
     depends_on("r-singlecellexperiment", type=("build", "run"))
     depends_on("r-rlang", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@1.6.0:", type=("build", "run"))

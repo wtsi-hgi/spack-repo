@@ -32,3 +32,4 @@ class RMirsponger(RPackage):
     depends_on("r-org-hs-eg-db", type=("build", "run"))
     depends_on("r-foreach", type=("build", "run"))
     depends_on("r-doparallel", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@2.12.0:", type=("build", "run"))

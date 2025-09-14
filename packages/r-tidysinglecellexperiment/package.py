@@ -41,3 +41,4 @@ class RTidysinglecellexperiment(RPackage):
     depends_on("r-cli", type=("build", "run"))
     depends_on("r-fansi", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@1.18.1:", type=("build", "run"))

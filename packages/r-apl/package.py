@@ -35,3 +35,4 @@ class RApl(RPackage):
     depends_on("python", type=("build", "link", "run"))
     depends_on("py-torch", type=("build", "link", "run"))
     depends_on("py-numpy", type=("build", "link", "run"))
+    depends_on("r@4.4.0:", when="@1.12.0:", type=("build", "run"))

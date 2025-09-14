@@ -30,3 +30,4 @@ class RPodcall(RPackage):
     depends_on("r-purrr", type=("build", "run"))
     depends_on("r-shinyjs", type=("build", "run"))
     depends_on("r-readr", type=("build", "run"))
+    depends_on("r@4.5:", when="@1.16.0:", type=("build", "run"))

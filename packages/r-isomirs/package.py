@@ -45,3 +45,4 @@ class RIsomirs(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-tidyr", type=("build", "run"))
     depends_on("r-tibble", type=("build", "run"))
+    depends_on("r@4.4:", when="@1.36.1:", type=("build", "run"))

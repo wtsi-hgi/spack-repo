@@ -26,3 +26,4 @@ class RMetcirc(RPackage):
     depends_on("r-ggplot2@3.2.1:", type=("build", "run"))
     depends_on("r-mscoreutils@1.9.2:", type=("build", "run"))
     depends_on("r-s4vectors@0.22:", type=("build", "run"))
+    depends_on("r@4.4:", when="@1.38.0:", type=("build", "run"))

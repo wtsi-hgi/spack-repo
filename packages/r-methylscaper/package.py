@@ -28,6 +28,7 @@ class RMethylscaper(RPackage):
     depends_on("r-shinyfiles", type=("build", "run"))
     depends_on("r-data-table", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@1.16.0:", type=("build", "run"))
 
     def patch(self):
         # Drop 'pwalign' from DESCRIPTION Imports to avoid removed CRAN dep

@@ -39,3 +39,4 @@ class RSesame(RPackage):
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-reshape2", type=("build", "run"))
+    depends_on("r@4.5.0:", when="@1.26.0:", type=("build", "run"))

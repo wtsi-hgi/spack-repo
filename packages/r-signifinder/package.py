@@ -45,3 +45,4 @@ class RSignifinder(RPackage):
     depends_on("r-survminer", type=("build", "run"))
     depends_on("r-viridis", type=("build", "run"))
     depends_on("r-spatialexperiment", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@1.10.0:", type=("build", "run"))

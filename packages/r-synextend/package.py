@@ -22,3 +22,4 @@ class RSynextend(RPackage):
     depends_on("r-biostrings", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-iranges", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@1.20.2:", type=("build", "run"))

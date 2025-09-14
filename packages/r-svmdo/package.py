@@ -38,3 +38,4 @@ class RSvmdo(RPackage):
     depends_on("r-summarizedexperiment@1.28:", type=("build", "run"))
     # Required for the Shiny UI data tables
     depends_on("r-dt", type=("build", "run"))
+    depends_on("r@4.4:", when="@1.8.0:", type=("build", "run"))

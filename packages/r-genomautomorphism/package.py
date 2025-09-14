@@ -32,3 +32,4 @@ class RGenomautomorphism(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-numbers", type=("build", "run"))
     depends_on("r-matrixstats", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@1.10.0:", type=("build", "run"))

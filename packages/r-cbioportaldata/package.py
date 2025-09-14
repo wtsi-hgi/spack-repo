@@ -35,3 +35,4 @@ class RCbioportaldata(RPackage):
     depends_on("r-tibble", type=("build", "run"))
     depends_on("r-tidyr", type=("build", "run"))
     depends_on("r-tcgautils@1.9.4:", type=("build", "run"))
+    depends_on("r@4.5.0:", when="@2.20.0:", type=("build", "run"))

@@ -39,3 +39,4 @@ class RAncombc(RPackage):
     depends_on("r-lmertest", type=("build", "run"))
     depends_on("r-multcomp", type=("build", "run"))
     depends_on("r-nloptr", type=("build", "run"))
+    depends_on("r@4.5.0:", when="@2.10.1:", type=("build", "run"))

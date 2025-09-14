@@ -40,3 +40,4 @@ class RIsanalytics(RPackage):
     depends_on("r-datamods", type=("build", "run"))
     depends_on("r-bslib", type=("build", "run"))
     depends_on("r-dt", type=("build", "run"))
+    depends_on("r@4.5:", when="@1.18.0:", type=("build", "run"))

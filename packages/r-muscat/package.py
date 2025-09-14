@@ -44,3 +44,4 @@ class RMuscat(RPackage):
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-variancepartition", type=("build", "run"))
     depends_on("r-viridis", type=("build", "run"))
+    depends_on("r@4.4:", when="@1.22.0:", type=("build", "run"))

@@ -51,3 +51,4 @@ class RMoonlight2r(RPackage):
     depends_on("r-easypubmed", type=("build", "run"))
     depends_on("r-org-hs-eg-db", type=("build", "run"))
     depends_on("r-epimix", type=("build", "run"))
+    depends_on("r@4.4:", when="@1.6.0:", type=("build", "run"))

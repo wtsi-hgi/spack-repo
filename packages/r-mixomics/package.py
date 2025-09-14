@@ -36,3 +36,4 @@ class RMixomics(RPackage):
     depends_on("r-biocparallel", type=("build", "run"))
     depends_on("r-gsignal", type=("build", "run"))
     depends_on("r-rgl", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@6.32.0:", type=("build", "run"))

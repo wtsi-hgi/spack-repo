@@ -30,3 +30,4 @@ class RMitoclone2(RPackage):
     depends_on("curl", type=("build", "link", "run"))
     depends_on("xz", type=("build", "link", "run"))
     depends_on("bzip2", type=("build", "link", "run"))
+    depends_on("r@4.4.0:", when="@1.14.0:", type=("build", "run"))

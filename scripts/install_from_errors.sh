@@ -52,9 +52,9 @@ while IFS= read -r raw_line || [[ -n "$raw_line" ]]; do
   fi
 
   if [[ -z "$version" ]]; then
-    spec="${name} ^r@4.5:"
+    spec="${name} ^r@4.3.1"
   else
-    spec="${name}@${version} ^r@4.5:"
+    spec="${name}@${version} ^r@4.3.1"
   fi
 
   echo "\n==> [$total] Installing $spec" | tee -a "$INSTALL_LOG_FILE"
@@ -64,6 +64,11 @@ while IFS= read -r raw_line || [[ -n "$raw_line" ]]; do
   echo "==== $(date -u +"%Y-%m-%dT%H:%M:%SZ") Installing $spec ====" > "$package_log_file"
   echo "Command: $SPACK_BIN install -y --reuse $spec" >> "$package_log_file"
   echo "" >> "$package_log_file"
+
+  # First uninstall the package if it is already installed
+  if "$SPACK_BIN" find "$spec" >/dev/null 2>&1; then
+    "$SPACK_BIN" uninstall --all --dependents -y "$spec"
+  fi
 
   # Attempt install; capture output to both main log and individual log
   if "$SPACK_BIN" install -y --reuse "$spec" 2>&1 | tee -a "$package_log_file" "$INSTALL_LOG_FILE"; then

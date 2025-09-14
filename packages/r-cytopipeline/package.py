@@ -31,3 +31,4 @@ class RCytopipeline(RPackage):
     depends_on("r-diagram", type=("build", "run"))
     depends_on("r-jsonlite", type=("build", "run"))
     depends_on("r-scales", type=("build", "run"))
+    depends_on("r@4.4:", when="@1.8.0:", type=("build", "run"))

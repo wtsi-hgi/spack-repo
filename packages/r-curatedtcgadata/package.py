@@ -24,3 +24,4 @@ class RCuratedtcgadata(RPackage):
     depends_on("r-hdf5array", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-summarizedexperiment", type=("build", "run"))
+    depends_on("r@4.5.0:", when="@1.30.0:", type=("build", "run"))

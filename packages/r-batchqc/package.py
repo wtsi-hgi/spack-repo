@@ -48,3 +48,4 @@ class RBatchqc(RPackage):
     depends_on("r-summarizedexperiment", type=("build", "run"))
     depends_on("r-tidyverse", type=("build", "run"))
     depends_on("r-umap", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@2.4.0:", type=("build", "run"))

@@ -26,3 +26,4 @@ class RImcdatasets(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-delayedarray", type=("build", "run"))
     depends_on("r-hdf5array", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@1.16.0:", type=("build", "run"))

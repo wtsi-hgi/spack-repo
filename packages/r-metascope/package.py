@@ -38,3 +38,4 @@ class RMetascope(RPackage):
     depends_on("r-taxonomizr", type=("build", "run"))
     depends_on("r-tidyr", type=("build", "run"))
     depends_on("r-qlcmatrix", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@1.8.1:", type=("build", "run"))

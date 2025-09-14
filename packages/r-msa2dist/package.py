@@ -34,6 +34,7 @@ class RMsa2dist(RPackage):
     depends_on("r-tibble", type=("build", "run"))
     depends_on("r-tidyr", type=("build", "run"))
     depends_on("r-rcppthread", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@1.12.0:", type=("build", "run"))
 
     def patch(self):
         # Some releases reference the removed CRAN package 'pwalign'.

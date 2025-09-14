@@ -45,3 +45,4 @@ class RDespace(RPackage):
     depends_on("r-spatstat-explore", type=("build", "run"))
     depends_on("r-spatstat-geom", type=("build", "run"))
     depends_on("r-scuttle", type=("build", "run"))
+    depends_on("r@4.5.0:", when="@2.0.0:", type=("build", "run"))

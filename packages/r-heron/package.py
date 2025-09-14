@@ -31,3 +31,4 @@ class RHeron(RPackage):
     depends_on("r-spdep", type=("build", "run"))
     depends_on("r-matrix", type=("build", "run"))
     depends_on("r-limma", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@1.6.1:", type=("build", "run"))

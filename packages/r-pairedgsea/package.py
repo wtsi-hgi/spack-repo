@@ -32,3 +32,4 @@ class RPairedgsea(RPackage):
     # Additional CRAN dependencies required by the package
     depends_on("r-msigdbr", type=("build", "run"))
     depends_on("r-showtext", type=("build", "run"))
+    depends_on("r@4.4.0:", when="@1.8.0:", type=("build", "run"))

@@ -33,3 +33,4 @@ class RGseabenchmarker(RPackage):
     depends_on("r-keggandmetacoredzpathwaysgeo", type=("build", "run"))
     depends_on("r-keggdzpathwaysgeo", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))
+    depends_on("r@4.5.0:", when="@1.28.1:", type=("build", "run"))

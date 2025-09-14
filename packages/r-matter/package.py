@@ -27,3 +27,4 @@ class RMatter(RPackage):
     depends_on("r-digest", type=("build", "run"))
     depends_on("r-irlba", type=("build", "run"))
     depends_on("r-biglm", type=("build", "run"))
+    depends_on("r@4.4:", when="@2.10.0:", type=("build", "run"))

@@ -45,3 +45,4 @@ class RCatalyst(RPackage):
     depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-scales", type=("build", "run"))
     depends_on("r-scater", type=("build", "run"))
+    depends_on("r@4.4:", when="@1.32.0:", type=("build", "run"))
