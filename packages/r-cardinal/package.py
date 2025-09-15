@@ -18,6 +18,7 @@ class RCardinal(RPackage):
     version("3.10.0", commit="07d927350c2bdd5b852bcf2fbf3c7cdd9131ab22")
     version("3.4.3", commit="eacb164cd82306a03e763ea7da00575a32f4fffd")
 
+    depends_on("r@4.4:", when="@3.10.0:", type=("build", "run"))
     depends_on("r-protgenerics", type=("build", "run"))
     depends_on("r-biocgenerics", type=("build", "run"))
     depends_on("r-biocparallel", type=("build", "run"))
