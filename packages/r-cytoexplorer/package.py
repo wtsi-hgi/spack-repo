@@ -28,7 +28,7 @@ class RCytoexplorer(RPackage):
     with default_args(type=("build", "run")):
         depends_on("r-flowcore@2.3:")
         depends_on("r-flowworkspace@4.3.1:")
-        depends_on("r-opencyto@1.25.2:")
+        depends_on("r-opencyto@20250826")
 
         depends_on("r-biocgenerics")
         depends_on("r-bslib")
