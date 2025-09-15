@@ -17,8 +17,6 @@ class RCytoexplorer(RPackage):
     homepage = "https://github.com/DillonHammill/CytoExploreR"
     git = "https://github.com/DillonHammill/CytoExploreR.git"
 
-    maintainers("softpack-bot")
-
     license("GPL-2.0-only")
 
     # Pin to latest commit on the 'refine' branch, named as 2.0.15
@@ -30,7 +28,7 @@ class RCytoexplorer(RPackage):
     with default_args(type=("build", "run")):
         depends_on("r-flowcore@2.3:")
         depends_on("r-flowworkspace@4.3.1:")
-        depends_on("r-opencyto@1.25.2:")
+        depends_on("r-opencyto@20250826")
 
         depends_on("r-biocgenerics")
         depends_on("r-bslib")
