@@ -6,7 +6,7 @@
 from spack.package import *
 
 
-class RLici(RPackage):
+class RLisi(RPackage):
     """Local Inverse Simpson Index (LISI) for scRNAseq data.
 
     This method assesses how well cells with different labels are mixed in
