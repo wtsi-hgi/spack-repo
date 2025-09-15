@@ -16,10 +16,7 @@ class RProstar(RPackage):
     bioc = "Prostar"
 
     version("1.40.0", commit="5455e070ad3003e659b0817564f569e93883cf37")
-    version(
-        "1.34.6",
-        sha256="241e6acfb6ba16c944fc579a7c7041fd3447684dffc9c20f21268b02eaab658a",
-    )
+    version("1.34.6", commit="8d40dcee8d768e7f0020e0fdf7c070621babd7ca")
 
     depends_on("r@4.3:", type=("build", "run"))
     depends_on("r@4.4:", when="@1.40.0:", type=("build", "run"))
