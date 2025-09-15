@@ -23,7 +23,7 @@ class RDoubletrouble(RPackage):
     depends_on("r-genomicranges", type=("build", "run"))
     depends_on("r-biostrings", type=("build", "run"))
     depends_on("r-mclust", type=("build", "run"))
-    depends_on("r-msa2dist@1.1.5:", type=("build", "run"))
+    depends_on("r-msa2dist@1.12.0:", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-rlang", type=("build", "run"))
     depends_on("r-annotationdbi", type=("build", "run"))
