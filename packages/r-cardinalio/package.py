@@ -19,6 +19,7 @@ class RCardinalio(RPackage):
     version("1.0.0", commit="161a24aa0ec1ec0ce344aec033dcd998fd668708")
 
     depends_on("r@4.3:", type=("build", "run"))
+    depends_on("r@4.4:", when="@1.6.0:", type=("build", "run"))
     depends_on("r-matter", type=("build", "run"))
     depends_on("r-ontologyindex", type=("build", "run"))
     depends_on("r-s4vectors", type=("build", "run"))

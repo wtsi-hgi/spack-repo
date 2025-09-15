@@ -16,8 +16,9 @@ class RPhyloprofile(RPackage):
     bioc = "PhyloProfile"
 
     version("2.0.6", commit="a0b5fbc6d3585a00b4ebb38e6fc23107cb053db0")
-    version("1.16.4", md5="e8c11595842347bd6ace0bdb57426311")
-    version("1.16.3", md5="be94ebf678031506ed0e3a5168ea17d9")
+    # Use Bioconductor Git commits for stable releases
+    version("1.16.4", commit="544564658251f5a4327b6492546193906ab50580")
+    version("1.16.3", commit="17dee2d2e2d39183bcb9112041acf1502ae246a7")
 
     depends_on("r@4.3:", type=("build", "run"))
     # depends_on("r@4.5:", when="@2.0.6:", type=("build", "run"))

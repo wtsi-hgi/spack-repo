@@ -18,6 +18,7 @@ class RCytopipelinegui(RPackage):
     version("1.0.0", commit="3f955711a91ff82a6c3953382e0f2c9503421609")
 
     depends_on("r@4.3:", type=("build", "run"))
+    depends_on("r@4.4:", when="@1.6.0:", type=("build", "run"))
     depends_on("r-cytopipeline", type=("build", "run"))
     depends_on("r-shiny", type=("build", "run"))
     depends_on("r-plotly", type=("build", "run"))

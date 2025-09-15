@@ -26,3 +26,22 @@ class RGrohmm(RPackage):
     depends_on("r-genomicranges@1.31.8:", type=("build", "run"))
     depends_on("r-genomicalignments@1.15.6:", type=("build", "run"))
     depends_on("r-rtracklayer@1.39.7:", type=("build", "run"))
+
+    def patch(self):
+        # Fix build with newer compilers: avoid bare 'false' in C sources
+        # Replace with defined integer constant and (add stdbool include as fallback)
+        if self.spec.satisfies("@1.42.0"):
+            # Prefer using an existing constant false_value=0
+            filter_file(
+                r"currentlyInRegion=false;",
+                r"currentlyInRegion=false_value;",
+                "src/DecayAlgorithm.c",
+                string=True,
+            )
+            # Also try to add stdbool include in case future code uses true/false
+            filter_file(
+                r"(#include <Rmath.h>)",
+                r"\\1\n#include <stdbool.h>",
+                "src/DecayAlgorithm.c",
+                string=True,
+            )

@@ -19,6 +19,7 @@ class RMirsm(RPackage):
     version("1.20.0", commit="cfc3faaf7714fbd3f176bd415a5c3110b2da8e2a")
 
     depends_on("r@3.5:", type=("build", "run"))
+    depends_on("r@4.4:", when="@2.4.0:", type=("build", "run"))
     depends_on("r-wgcna", type=("build", "run"))
     depends_on("r-flashclust", type=("build", "run"))
     depends_on("r-dynamictreecut", type=("build", "run"))

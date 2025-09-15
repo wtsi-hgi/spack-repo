@@ -40,34 +40,7 @@ class RMsa2dist(RPackage):
 
     @when("@:1.11")
     def patch(self):
-        # Some releases reference the removed CRAN package 'pwalign'.
-        # Drop that dependency and redirect any imports/usages to Biostrings,
-        # which provides pairwiseAlignment and related helpers.
-        # These edits are tolerant if upstream already removed pwalign.
-
-        # Remove 'pwalign' from DESCRIPTION Depends/Imports lines
-        filter_file(
-            r"(^\s*(?:Imports|Depends):[\s\S]*?)\bpwalign,?\s*",
-            r"\1",
-            "DESCRIPTION",
-        )
-        # Fallback: in case the DESCRIPTION formatting is unusual, do a
-        # conservative token drop anywhere in the file for 'pwalign'
-        filter_file(r"\bpwalign,?\s*", "", "DESCRIPTION")
-
-        # Switch NAMESPACE importFrom(pwalign, ...) -> Biostrings
-        filter_file(
-            r"importFrom\(pwalign,",
-            r"importFrom(Biostrings,",
-            "NAMESPACE",
-        )
-
-        # Replace explicit namespace qualifiers in R source files
-        for r_file in find("R", "*.R"):
-            filter_file(r"pwalign::", r"Biostrings::", r_file)
-
-        # Redirect internal helper acquisition from pwalign -> Biostrings
-        # makePostalignedSeqs is a thin alias to an internal helper; prefer Biostrings
+        # Redirect internal helper acquisition from Biostrings
         # Replace the dynamic getter with a lightweight implementation that
         # wraps the PairwiseAlignments object into an AAStringSet
         filter_file(
@@ -82,18 +55,9 @@ class RMsa2dist(RPackage):
             join_path("R", "makePostalignedSeqs.R"),
         )
         # Drop any now-stale continuation line that referenced an internal getter
-        # Handle either original 'pwalign' or post-rewrite 'Biostrings'
         filter_file(
             r"^\s*envir=asNamespace\('[^']+'\),\s*inherits=FALSE\)\s*$",
             "",
             join_path("R", "makePostalignedSeqs.R"),
         )
 
-        # Load substitution matrices from Biostrings instead of pwalign
-        filter_file(
-            r"package=\"pwalign\"",
-            r"package=\"Biostrings\"",
-            join_path("R", "aa2selfscore.R"),
-        )
-        # Fix any accidental backslash-escaped quotes introduced by regexes
-        filter_file(r"\\\"Biostrings\\\"", r'"Biostrings"', join_path("R", "aa2selfscore.R"))

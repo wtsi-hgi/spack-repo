@@ -22,6 +22,7 @@ class RProstar(RPackage):
     )
 
     depends_on("r@4.3:", type=("build", "run"))
+    depends_on("r@4.4:", when="@1.40.0:", type=("build", "run"))
     depends_on("r-dapar@1.34.6:", type=("build", "run"))
     depends_on("r-dapardata@1.27.3:", type=("build", "run"))
     depends_on("r-rhandsontable", type=("build", "run"))
