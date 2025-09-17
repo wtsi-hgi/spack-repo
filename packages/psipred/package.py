@@ -17,7 +17,7 @@ class Psipred(Package):
     # Scripts are shell/perl/tcsh; ensure tcsh and BLAST+ present at runtime
     depends_on("perl", type=("run"))
     depends_on("tcsh", type=("run"))
-    depends_on("blast-plus~python", type=("run"))
+    depends_on("blast-plus", type=("run"))
 
     def patch(self):
         filter_file("../bin", self.prefix.bin, "src/Makefile", string=True)
