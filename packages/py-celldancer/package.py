@@ -25,9 +25,8 @@ class PyCelldancer(PythonPackage):
 
     # Python
     depends_on("python@3.7:", type=("build", "run"))
-    depends_on("py-setuptools@:66", type="build")  # Use older setuptools to avoid deprecation warnings
+    depends_on("py-setuptools", type="build")
     depends_on("py-setuptools-scm", type="build")
-    depends_on("py-wheel", type="build")
 
     # Core runtime dependencies (relaxed from PyPI pins)
     depends_on("py-numpy", type=("build", "run"))
@@ -46,25 +45,11 @@ class PyCelldancer(PythonPackage):
     depends_on("py-bezier", type=("build", "run"))
     depends_on("py-torch", type=("build", "run"))
     depends_on("py-pytorch-lightning", type=("build", "run"))
+    depends_on("py-h5py", type=("build", "run"))
 
     # Optional Jupyter integration
     variant("jupyter", default=False, description="Enable JupyterLab dependency")
     depends_on("py-jupyterlab", when="+jupyter", type=("run"))
-
-    def build_args(self, spec, prefix):
-        """Arguments to pass to setup.py build."""
-        args = []
-        # Use legacy build system to avoid setuptools deprecation warnings
-        args.append("--build-lib=build/lib")
-        return args
-
-    def install_args(self, spec, prefix):
-        """Arguments to pass to setup.py install."""
-        args = []
-        # Use legacy install to avoid setuptools deprecation warnings
-        args.append("--single-version-externally-managed")
-        args.append("--root=/")
-        return args
 
     @run_after("install")
     def install_test(self):
