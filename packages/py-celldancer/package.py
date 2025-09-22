@@ -46,10 +46,8 @@ class PyCelldancer(PythonPackage):
     depends_on("py-torch", type=("build", "run"))
     depends_on("py-pytorch-lightning", type=("build", "run"))
     depends_on("py-h5py", type=("build", "run"))
+    depends_on("py-natsort", type=("build", "run"))
 
-    # Optional Jupyter integration
-    variant("jupyter", default=False, description="Enable JupyterLab dependency")
-    depends_on("py-jupyterlab", when="+jupyter", type=("run"))
 
     @run_after("install")
     def install_test(self):
