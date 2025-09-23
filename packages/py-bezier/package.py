@@ -13,6 +13,8 @@ class PyBezier(PythonPackage):
     version("2021.2.12", sha256="d0f752aeb420057ab761f962259c7ca00d925750e324c9bb729f2f10ad39529a")
 
     # Build/run deps
+    # Upstream 2024.6.20 declares support only for Python 3.10–3.12
+    depends_on("python@3.10:", when="@2024.6.20:", type=("build", "run"))
     depends_on("python@3.7:", type=("build", "run"))
     depends_on("py-setuptools", type="build")
     depends_on("py-wheel", type="build")
