@@ -6,7 +6,7 @@
 from spack.package import *
 
 
-class Stracode(Package):
+class Starcode(Package):
     """Starcode: sequence clustering based on all-pairs search.
 
     This package builds the Starcode binary from the 1.3 GitHub release.
