@@ -19,7 +19,10 @@ class PyBezier(PythonPackage):
     depends_on("py-numpy", type=("build", "run"))
 
     # Python compatibility
-    depends_on("python@3.8:", when="@2023.7.28:", type=("build", "run"))
+    # Upstream 2024.6.20 requires Python >=3.10 (per upstream metadata/runtime check)
+    depends_on("python@3.10:", when="@2024.6.20:", type=("build", "run"))
+    # 2023.7.28 supported older 3.8+ interpreters
+    depends_on("python@3.8:", when="@2023.7.28", type=("build", "run"))
     depends_on("python@3.7:", when="@2021.2.12", type=("build", "run"))
 
     # Upstream's sdist attempts to build a C extension that links to a
