@@ -42,7 +42,10 @@ class PyCelldancer(PythonPackage):
     depends_on("py-anndata", type=("build", "run"))
     depends_on("py-tqdm", type=("build", "run"))
     depends_on("py-datashader", type=("build", "run"))
+    # bezier >=2023.7.28 requires Python >=3.8. On Python 3.7 environments,
+    # constrain to the last known compatible release.
     depends_on("py-bezier", type=("build", "run"))
+    depends_on("py-bezier@:2021.2.12", when="^python@:3.7", type=("build", "run"))
     depends_on("py-torch", type=("build", "run"))
     depends_on("py-pytorch-lightning", type=("build", "run"))
     depends_on("py-h5py", type=("build", "run"))
