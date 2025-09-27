@@ -62,15 +62,10 @@ class PyScvelo(PythonPackage):
     depends_on("py-scipy@1.4.1:", type=("build", "run"))
     depends_on("py-scikit-learn@0.21.2:", type=("build", "run"))
     depends_on("py-matplotlib@3.3.0:", type=("build", "run"))
-
-    # Optional extras as variants (default off)
-    variant("louvain", default=True, description="Enable Louvain community detection support")
-    variant("hnswlib", default=True, description="Enable HNSWLIB acceleration support")
-
-    depends_on("py-igraph", when="+louvain", type=("build", "run"))
-    depends_on("py-python-louvain", when="+louvain", type=("build", "run"))
-    # Only add hnswlib dependency when requested; package may not exist in all Spack trees
-    depends_on("py-hnswlib", when="+hnswlib", type=("build", "run"))
+    depends_on("py-pillow", type=("build", "run"))
+    depends_on("py-igraph", type=("build", "run"))
+    depends_on("py-python-louvain", type=("build", "run"))
+    depends_on("py-hnswlib", type=("build", "run"))
 
     @run_after("install")
     def install_test(self):
