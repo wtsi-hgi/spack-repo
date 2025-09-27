@@ -182,6 +182,9 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         depends_on("py-typing-extensions@4.8:", when="@2.2:")
         depends_on("py-typing-extensions@3.6.2.1:", when="@1.7:")
         depends_on("py-setuptools")
+        # Old torch setup uses distutils.version; newer setuptools removed distutils shim
+        # Constrain setuptools for older torch to avoid metadata-generation failure
+        depends_on("py-setuptools@:65", when="@:1.13", type="build")
         depends_on("py-sympy@1.13.3:", when="@2.7:")
         depends_on("py-sympy@1.13.1", when="@2.5:2.6")
         depends_on("py-sympy", when="@2:")
@@ -568,6 +571,40 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             "caffe2/CMakeLists.txt",
         )
 
+        if self.spec.satisfies("@1.10.0"):
+            filter_file(
+                "it->first.thread_id() != key.thread_id()",
+                "!(it->first.thread_id() == key.thread_id())",
+                "third_party/ideep/mkl-dnn/src/common/primitive_cache.cpp",
+                string=True,
+            )
+            # Ensure stdlib distutils is used, not setuptools' shim
+            filter_file(
+                r"from setuptools import distutils",
+                r"import distutils",
+                "tools/setup_helpers/cmake.py",
+                string=True,
+            )
+            # Avoid distutils entirely: compare CMake versions as integer tuples
+            filter_file(
+                "return distutils.version.LooseVersion(line.strip().split(' ')[2])",
+                "return tuple(int(x) for x in line.strip().split(' ')[2].split('.'))",
+                "tools/setup_helpers/cmake.py",
+                string=True,
+            )
+            filter_file(
+                "CMake._get_version(cmake3) >= distutils.version.LooseVersion(\"3.10.0\")",
+                "CMake._get_version(cmake3) >= (3, 10, 0)",
+                "tools/setup_helpers/cmake.py",
+                string=True,
+            )
+            filter_file(
+                "CMake._get_version(cmake) >= distutils.version.LooseVersion(\"3.10.0\")",
+                "CMake._get_version(cmake) >= (3, 10, 0)",
+                "tools/setup_helpers/cmake.py",
+                string=True,
+            )
+
         if self.spec.satisfies("@2.1:2.7+rocm"):
             filter_file(
                 "${ROCM_INCLUDE_DIRS}/rocm-core/rocm_version.h",
@@ -692,6 +729,11 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         # https://github.com/pytorch/pytorch/issues/151592
         if self.spec.satisfies("@:2.6"):
             env.set("PACKAGE_TYPE", "conda")
+
+        # Ensure stdlib distutils is used for projects that still import it
+        # Fixes AttributeError: module 'distutils' has no attribute 'version'
+        if self.spec.satisfies("@:1.13"):
+            env.set("SETUPTOOLS_USE_DISTUTILS", "stdlib")
 
         # Build in parallel to speed up build times
         env.set("MAX_JOBS", str(make_jobs))
