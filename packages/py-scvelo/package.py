@@ -63,9 +63,9 @@ class PyScvelo(PythonPackage):
     depends_on("py-scikit-learn@0.21.2:", type=("build", "run"))
     depends_on("py-matplotlib@3.3.0:", type=("build", "run"))
 
-    # Optional extras as variants (default off per repo guidelines)
-    variant("louvain", default=False, description="Enable Louvain community detection support")
-    variant("hnswlib", default=False, description="Enable HNSWLIB acceleration support")
+    # Optional extras as variants (default off)
+    variant("louvain", default=True, description="Enable Louvain community detection support")
+    variant("hnswlib", default=True, description="Enable HNSWLIB acceleration support")
 
     depends_on("py-igraph", when="+louvain", type=("build", "run"))
     depends_on("py-python-louvain", when="+louvain", type=("build", "run"))
