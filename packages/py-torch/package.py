@@ -5,7 +5,6 @@
 import os
 import sys
 
-
 from spack.operating_systems.mac_os import macos_version
 from spack.package import *
 
@@ -27,7 +26,6 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     tags = ["e4s"]
 
     version("main", branch="main")
-    version("2.7.1", tag="v2.7.1", commit="e2d141dbde55c2a4370fac5165b0561b6af4798b")
     version("2.7.0", tag="v2.7.0", commit="134179474539648ba7dee1317959529fbd0e7f89")
     version("2.6.0", tag="v2.6.0", commit="1eba9b3aa3c43f86f4a2c807ac8e12c4a7767340")
     version("2.5.1", tag="v2.5.1", commit="a8d6afb511a69687bbb2b7e88a3cf67917e1697e")
@@ -58,11 +56,21 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     version("1.8.1", tag="v1.8.1", commit="56b43f4fec1f76953f15a627694d4bba34588969")
     version("1.8.0", tag="v1.8.0", commit="37c1f4a7fef115d719104e871d0cf39434aa9d56")
     version("1.7.1", tag="v1.7.1", commit="57bffc3a8e4fee0cce31e1ff1f662ccf7b16db57")
-    version("1.7.0", tag="v1.7.0", commit="e85d494707b835c12165976b8442af54b9afcb26")
-    version("1.6.0", tag="v1.6.0", commit="b31f58de6fa8bbda5353b3c77d9be4914399724d")
-    version("1.5.1", tag="v1.5.1", commit="3c31d73c875d9a4a6ea8a843b9a0d1b19fbe36f3")
-    version("1.5.0", tag="v1.5.0", commit="4ff3872a2099993bf7e8c588f7182f3df777205b")
-    version("1.4.1", tag="v1.4.1", commit="74044638f755cd8667bedc73da4dbda4aa64c948")
+    version(
+        "1.7.0", tag="v1.7.0", commit="e85d494707b835c12165976b8442af54b9afcb26", deprecated=True
+    )
+    version(
+        "1.6.0", tag="v1.6.0", commit="b31f58de6fa8bbda5353b3c77d9be4914399724d", deprecated=True
+    )
+    version(
+        "1.5.1", tag="v1.5.1", commit="3c31d73c875d9a4a6ea8a843b9a0d1b19fbe36f3", deprecated=True
+    )
+    version(
+        "1.5.0", tag="v1.5.0", commit="4ff3872a2099993bf7e8c588f7182f3df777205b", deprecated=True
+    )
+    version(
+        "1.4.1", tag="v1.4.1", commit="74044638f755cd8667bedc73da4dbda4aa64c948", deprecated=True
+    )
 
     is_darwin = sys.platform == "darwin"
 
@@ -72,12 +80,6 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     variant("caffe2", default=False, description="Build Caffe2", when="@1.7:")
     variant("test", default=False, description="Build C++ test binaries")
     variant("cuda", default=not is_darwin, description="Use CUDA")
-    variant(
-        "cuda_arch",
-        default="70,72,75,80,86,87,89,90",
-        description="CUDA architecture that is available on the farm",
-        multi=True,
-    )
     variant("rocm", default=False, description="Use ROCm")
     variant("cudnn", default=not is_darwin, description="Use cuDNN", when="+cuda")
     variant("fbgemm", default=True, description="Use FBGEMM (quantized 8-bit server operators)")
@@ -91,9 +93,6 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         when="@1.12: platform=darwin",
     )
     variant("nccl", default=True, description="Use NCCL", when="+cuda platform=linux")
-    # Enable/disable CUDA cuFile (GPUDirect Storage) support explicitly.
-    # Many systems don't provide CUDA::cuFile, so default to disabled.
-    variant("cufile", default=False, description="Use CUDA cuFile (GPUDirect Storage)", when="+cuda")
     variant("nccl", default=True, description="Use NCCL", when="+rocm platform=linux")
     # Requires AVX2: https://discuss.pytorch.org/t/107518
     variant("nnpack", default=True, description="Use NNPACK", when="target=x86_64_v3:")
@@ -127,9 +126,6 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     variant("custom-protobuf", default=False, description="Use vendored protobuf")
 
     conflicts("+cuda+rocm")
-    conflicts("+gloo+rocm")
-    conflicts("+rocm", when="@2.3", msg="Rocm doesn't support py-torch 2.3 release")
-    conflicts("+rocm", when="@2.4", msg="Rocm doesn't support py-torch 2.4 release")
     conflicts("+tensorpipe", when="+rocm ^hip@:5.1", msg="TensorPipe not supported until ROCm 5.2")
     conflicts("+breakpad", when="target=ppc64:")
     conflicts("+breakpad", when="target=ppc64le:")
@@ -182,6 +178,9 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         depends_on("py-typing-extensions@4.8:", when="@2.2:")
         depends_on("py-typing-extensions@3.6.2.1:", when="@1.7:")
         depends_on("py-setuptools")
+        # Old torch setup uses distutils.version; newer setuptools removed distutils shim
+        # Constrain setuptools for older torch to avoid metadata-generation failure
+        depends_on("py-setuptools@:65", when="@:1.13", type="build")
         depends_on("py-sympy@1.13.3:", when="@2.7:")
         depends_on("py-sympy@1.13.1", when="@2.5:2.6")
         depends_on("py-sympy", when="@2:")
@@ -308,15 +307,10 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         depends_on("rocrand")
         depends_on("hipsparse")
         depends_on("hipfft")
-        depends_on("hiprand")
-        depends_on("hipsolver")
-        depends_on("rocm-core")
         depends_on("rocfft")
         depends_on("rocblas")
         depends_on("miopen-hip")
         depends_on("rocminfo")
-        depends_on("composable-kernel@:6.3.2", when="@2.5")
-        depends_on("composable-kernel@6.3.2:", when="@2.6:")
     depends_on("mpi", when="+mpi")
     depends_on("ucc", when="+ucc")
     depends_on("ucx", when="+ucc")
@@ -403,22 +397,6 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
     # Fixes build error when ROCm is enabled for pytorch-1.5 release
     patch("rocm.patch", when="@1.5+rocm")
 
-    # PR 152569 is to set ROCM_INCLUDE_DIRS the include path
-    # of required rocm packages in LoadHIP.cmake.
-    # https://github.com/pytorch/pytorch/pull/152569
-    patch("PR152569-Update-spack-includes-2.5.patch", when="@2.5+rocm")
-    patch("PR152569-Update-spack-includes-2.6.patch", when="@2.6+rocm")
-    patch("PR152569-Update-spack-includes-2.7.patch", when="@2.7+rocm")
-
-    # https://github.com/pytorch/pytorch/pull/147993
-    # prevents pytorch from potentially using system version of config.h
-    # and instead prioritize the CK submodule's version
-    patch(
-        "https://github.com/pytorch/pytorch/commit/38e81a53324146d445a81eb8f80bccebe623eb35.patch?full_index=1",
-        sha256="ef05dfff1502963b87679295c07d5f2bd452879708f7124274cc549ed67cd587",
-        when="@2.6:2.7+rocm",
-    )
-
     # Fixes compilation with Clang 9.0.0 and Apple Clang 11.0.3
     # https://github.com/pytorch/pytorch/pull/37086
     patch(
@@ -426,12 +404,8 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         sha256="0f3ad037a95af9d34b1d085050c1e7771fd00f0b89e5b3a276097b7c9f4fabf8",
         when="@:1.5",
     )
-    # Fixes build failure from py-torch version 1.5 to 2.2 with rocm
-    patch(
-        "https://github.com/ROCm/pytorch/commit/bac5378c734e74b5d58b8e82f9dbaa1454cfa5bd.patch?full_index=1",
-        sha256="f0a64e6347e67ec84286994f1ac5e77dba7fa6992c5f083e70a4e2765a86c0c6",
-        when="@1.5:2.2 +rocm",
-    )
+
+    # Fixes 'FindOpenMP.cmake'
     # to detect openmp settings used by Fujitsu compiler.
     patch("detect_omp_of_fujitsu_compiler.patch", when="%fj")
 
@@ -568,99 +542,53 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             "caffe2/CMakeLists.txt",
         )
 
-        if self.spec.satisfies("@2.1:2.7+rocm"):
+        # Fix GCC 11 build error in vendored oneDNN (MKL-DNN) primitive cache
+        # seen in 1.10.0 on Ubuntu 22.04:
+        # error: no match for 'operator!=' (operand types are 'const std::thread::id' ...)
+        # Replace the inequality with a negated equality comparison to avoid
+        # unresolved operator overload resolution on some toolchains.
+        if self.spec.satisfies("@1.10.0"):
             filter_file(
-                "${ROCM_INCLUDE_DIRS}/rocm-core/rocm_version.h",
-                "{0}/include/rocm-core/rocm_version.h".format(self.spec["rocm-core"].prefix),
-                "cmake/public/LoadHIP.cmake",
+                "it->first.thread_id() != key.thread_id()",
+                "!(it->first.thread_id() == key.thread_id())",
+                "third_party/ideep/mkl-dnn/src/common/primitive_cache.cpp",
                 string=True,
             )
+            # Ensure stdlib distutils is used, not setuptools' shim
             filter_file(
-                "-DINCLUDE_DIRECTORIES=${ROCM_INCLUDE_DIRS}",
-                "-DINCLUDE_DIRECTORIES={0}/include/rocm-core".format(
-                    self.spec["rocm-core"].prefix
-                ),
-                "cmake/public/LoadHIP.cmake",
-                string=True,
-            )
-        if self.spec.satisfies("@1.5:2.2+rocm"):
-            filter_file(
-                "/opt/rocm/hcc/include",
-                "$ENV{THRUST_PATH}/include $ENV{ROCPRIM_PATH}/include $ENV{HIPCUB_PATH}/include \
-                    $ENV{ROCRAND_PATH}/include",
-                "caffe2/CMakeLists.txt",
-                string=True,
-            )
-        if self.spec.satisfies("@2.1:2.2+rocm"):
-            filter_file(
-                "__HIP_PLATFORM_HCC__",
-                "__HIP_PLATFORM_AMD__",
-                "caffe2/CMakeLists.txt",
-                string=True,
-            )
-            
-        # Fix build of older releases with newer GCC/libstdc++
-        # fbgemm sources use std::runtime_error/logic_error without explicitly
-        # including <stdexcept>, which fails to compile with stricter headers.
-        # Safely inject the missing include in affected files for old trees.
-        if self.spec.satisfies("@:1.4.1"):
-            files_to_fix = [
-                "third_party/fbgemm/include/fbgemm/ConvUtils.h",
-                "third_party/fbgemm/include/fbgemm/FbgemmFP16.h",
-                "third_party/fbgemm/src/FbgemmConv.cc",
-            ]
-            for path in files_to_fix:
-                # Prefer to place after pragma once when present
-                filter_file(
-                    r"(#pragma once)",
-                    r"\1\n#include <stdexcept>",
-                    path,
-                    string=True,
-                )
-                # Fallback: insert after a common include directive
-                filter_file(
-                    r"(#include[ \t]+[<\"]string[>\"])",
-                    r"\1\n#include <stdexcept>",
-                    path,
-                    string=True,
-                )
-                filter_file(
-                    r"(#include[ \t]+[<\"]vector[>\"])",
-                    r"\1\n#include <stdexcept>",
-                    path,
-                    string=True,
-                )
-
-        # Newer setuptools removed/relocated stdlib distutils in a way that
-        # breaks references like `distutils.version.LooseVersion` used by
-        # older PyTorch build helpers. Use setuptools' vendored distutils
-        # explicitly to remain compatible across Python/setuptools versions.
-        # See build failures like: AttributeError: module 'distutils' has no attribute 'version'
-        if self.spec.satisfies("@:1.13"):
-            # Ensure we're using setuptools' vendored distutils, which
-            # provides the expected `version.LooseVersion` API.
-            filter_file(
-                "from setuptools import distutils",
-                "import setuptools._distutils as distutils\nimport distutils.version",
+                r"from setuptools import distutils",
+                r"import distutils",
                 "tools/setup_helpers/cmake.py",
                 string=True,
             )
-            # Normalize any fully-qualified references back to the local alias
+            # Avoid distutils entirely: compare CMake versions as integer tuples
             filter_file(
-                "setuptools._distutils.version.LooseVersion",
-                "distutils.version.LooseVersion",
+                "return distutils.version.LooseVersion(line.strip().split(' ')[2])",
+                "return tuple(int(x) for x in line.strip().split(' ')[2].split('.'))",
                 "tools/setup_helpers/cmake.py",
                 string=True,
             )
-            # Avoid redefining _mm_storeu_si32 with GCC 11+ in XNNPACK polyfill
             filter_file(
-                "(defined(__GNUC__) && !defined(__clang__) && !defined(__INTEL_COMPILER))",
-                "(defined(__GNUC__) && !defined(__clang__) && !defined(__INTEL_COMPILER) && (__GNUC__ < 11))",
-                "third_party/XNNPACK/src/xnnpack/intrinsics-polyfill.h",
+                "CMake._get_version(cmake3) >= distutils.version.LooseVersion(\"3.10.0\")",
+                "CMake._get_version(cmake3) >= (3, 10, 0)",
+                "tools/setup_helpers/cmake.py",
+                string=True,
+            )
+            filter_file(
+                "CMake._get_version(cmake) >= distutils.version.LooseVersion(\"3.10.0\")",
+                "CMake._get_version(cmake) >= (3, 10, 0)",
+                "tools/setup_helpers/cmake.py",
                 string=True,
             )
 
-    def setup_build_environment(self, env):
+    def torch_cuda_arch_list(self, env):
+        if "+cuda" in self.spec:
+            torch_cuda_arch = CudaPackage.compute_capabilities(
+                self.spec.variants["cuda_arch"].value
+            )
+            env.set("TORCH_CUDA_ARCH_LIST", ";".join(torch_cuda_arch))
+
+    def setup_build_environment(self, env) -> None:
         """Set environment variables used to control the build.
 
         PyTorch's ``setup.py`` is a thin wrapper around ``cmake``.
@@ -693,17 +621,16 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         if self.spec.satisfies("@:2.6"):
             env.set("PACKAGE_TYPE", "conda")
 
+        # Ensure stdlib distutils is used for projects that still import it
+        # Fixes AttributeError: module 'distutils' has no attribute 'version'
+        if self.spec.satisfies("@:1.13"):
+            env.set("SETUPTOOLS_USE_DISTUTILS", "stdlib")
+
         # Build in parallel to speed up build times
         env.set("MAX_JOBS", str(make_jobs))
 
         # Spack logs have trouble handling colored output
         env.set("COLORIZE_OUTPUT", "OFF")
-
-        # Older releases (<=1.4.1) include fbgemm sources that use
-        # std::runtime_error/logic_error without including <stdexcept>.
-        # Force-include the header to satisfy modern libstdc++.
-        if self.spec.satisfies("@:1.4.1"):
-            env.append_flags("CXXFLAGS", "-include stdexcept -include limits -include algorithm")
 
         enable_or_disable("test", keyword="BUILD")
         enable_or_disable("caffe2", keyword="BUILD")
@@ -713,10 +640,8 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             env.set("CUDA_TOOLKIT_ROOT_DIR", self.spec["cuda"].prefix)  # Linux/macOS
             env.set("CUDA_HOME", self.spec["cuda"].prefix)  # Linux/macOS
             env.set("CUDA_PATH", self.spec["cuda"].prefix)  # Windows
-            torch_cuda_arch = ";".join(
-                "{0:.1f}".format(float(arch) / 10.0) for arch in self.spec.variants["cuda_arch"].value
-            )
-            env.set("TORCH_CUDA_ARCH_LIST", torch_cuda_arch)
+            self.torch_cuda_arch_list(env)
+
             if self.spec.satisfies("%clang"):
                 for flag in self.spec.compiler_flags["cxxflags"]:
                     if "gcc-toolchain" in flag:
@@ -731,37 +656,17 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             env.set("HIPFFT_PATH", self.spec["hipfft"].prefix)
             env.set("HIPSPARSE_PATH", self.spec["hipsparse"].prefix)
             env.set("HIP_PATH", self.spec["hip"].prefix)
-            env.set("HIPRAND_PATH", self.spec["hiprand"].prefix)
+            env.set("HIPRAND_PATH", self.spec["rocrand"].prefix)
             env.set("ROCRAND_PATH", self.spec["rocrand"].prefix)
             env.set("MIOPEN_PATH", self.spec["miopen-hip"].prefix)
             if "+nccl" in self.spec:
                 env.set("RCCL_PATH", self.spec["rccl"].prefix)
             env.set("ROCPRIM_PATH", self.spec["rocprim"].prefix)
             env.set("HIPCUB_PATH", self.spec["hipcub"].prefix)
-            env.set("THRUST_PATH", self.spec["rocthrust"].prefix)
+            env.set("ROCTHRUST_PATH", self.spec["rocthrust"].prefix)
             env.set("ROCTRACER_PATH", self.spec["roctracer-dev"].prefix)
-            env.set("ROCTRACER_INCLUDE_DIR", self.spec["roctracer-dev"].prefix.include.roctracer)
-            if self.spec.satisfies("@2.5:"):
-                env.set("TORCHINDUCTOR_CK_DIR", self.spec["composable-kernel"].prefix)
-                env.set("AOTRITON_INSTALLED_PREFIX", self.spec["aotriton"].prefix)
             if self.spec.satisfies("^hip@5.2.0:"):
                 env.set("CMAKE_MODULE_PATH", self.spec["hip"].prefix.lib.cmake.hip)
-
-        # Explicitly control cuFile (GPUDirect Storage) support to avoid
-        # configure-time failures when CMake cannot provide CUDA::cuFile.
-        # Some CMake/Toolkit combos don't export this target even when libcufile
-        # exists, so force the expected toggles that PyTorch recognizes.
-        enable_or_disable("cufile", var="CUFILE")
-        if "+cuda" in self.spec:
-            if "+cufile" in self.spec:
-                # PyTorch checks these in various release series
-                env.set("USE_GDS", "ON")
-                env.set("USE_CUDA_CUFILE", "ON")
-                env.set("USE_CUFILE", "ON")
-            else:
-                env.set("USE_GDS", "OFF")
-                env.set("USE_CUDA_CUFILE", "OFF")
-                env.set("USE_CUFILE", "OFF")
 
         enable_or_disable("cudnn")
         if "+cudnn" in self.spec:
@@ -798,16 +703,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         enable_or_disable("qnnpack", var="PYTORCH_QNNPACK")
         enable_or_disable("valgrind")
         enable_or_disable("xnnpack")
-        # GCC 11+ provides _mm_storeu_si32 which conflicts with XNNPACK's
-        # intrinsics polyfill in older PyTorch releases. Disable XNNPACK to
-        # avoid redefinition errors when building with newer GCC.
-        if self.spec.satisfies("@:1.13 %gcc@11:"):
-            env.set("USE_XNNPACK", "OFF")
         enable_or_disable("mkldnn")
-        # Old releases (e.g., 1.4.1) are incompatible with modern oneDNN.
-        # Force-disable MKLDNN to avoid unresolved symbol issues at import.
-        if self.spec.satisfies("@:1.4.1"):
-            env.set("USE_MKLDNN", "OFF")
         enable_or_disable("distributed")
         enable_or_disable("mpi")
         enable_or_disable("ucc")
@@ -882,6 +778,8 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         else:
             env.set("BUILD_CUSTOM_PROTOBUF", "OFF")
 
+    def setup_run_environment(self, env) -> None:
+        self.torch_cuda_arch_list(env)
 
     @run_before("install")
     def build_amd(self):
