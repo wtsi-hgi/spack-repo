@@ -33,25 +33,25 @@ class RSingler(RPackage):
     depends_on("r-biocsingular", type=("build", "run"))
     depends_on("r-biocsingular@1.24.0:", type=("build", "run"), when="@2.10:")
     depends_on("r-rcpp", type=("build", "run"))
-    # beachmat >=2.24 relies on header-only libraries provided by assorthead.
-    # Older SingleR releases (e.g. 2.4.x) did not list assorthead in LinkingTo,
-    # causing missing headers like tatami_r/parallelize.hpp during compilation
-    # when used with newer beachmat. We depend on assorthead and patch the
-    # DESCRIPTION to include it in LinkingTo for affected versions.
+    # For newer releases, beachmat >=2.24 relies on assorthead-provided headers.
+    # Older SingleR (2.4.x, Bioconductor 3.18) expects the older beachmat/neighbor stack.
     depends_on("r-assorthead", type=("build", "run"), when="@2.10:")
-    depends_on("r-assorthead", type=("build", "run"), when="@2.4.1")
+
     depends_on("r-beachmat", type=("build", "run"))
     depends_on("r-beachmat@2.23.5:", type=("build", "run"), when="@2.10:")
+    # Pin compatible beachmat for 2.4.1 to avoid Rtatami/assorthead headers.
+    depends_on("r-beachmat@2.18.1", type=("build", "run"), when="@2.4.1")
+
     depends_on("r-biocneighbors", type=("build", "run"))
     depends_on("r-biocneighbors@2.2.0:", type=("build", "run"), when="@2.10:")
+    # Pin compatible BiocNeighbors for 2.4.1 (Bioconductor 3.18).
+    depends_on("r-biocneighbors@1.20.2", type=("build", "run"), when="@2.4.1")
+    # Pin BiocSingular compatible with Bioc 3.18.
+    depends_on("r-biocsingular@1.18.0", type=("build", "run"), when="@2.4.1")
 
     def patch(self):
-        # Ensure assorthead is included in LinkingTo for SingleR 2.4.1 where
-        # it was not declared upstream but is required for newer beachmat.
-        if self.spec.satisfies("@2.4.1"):
-            filter_file(
-                r"^(LinkingTo:\s*)(.*)$",
-                r"\\1\\2, assorthead",
-                "DESCRIPTION",
-                string=True,
-            )
+        # Only add assorthead to LinkingTo when building against newer beachmat
+        # (>=2.24) that expects header-only libraries from assorthead.
+        if self.spec.satisfies("@2.4.1") and \
+           "r-beachmat" in self.spec and self.spec["r-beachmat"].satisfies("@2.24:"):
+            filter_file(r"^(LinkingTo:\s*)(.*)$", r"\1\2, assorthead", "DESCRIPTION")

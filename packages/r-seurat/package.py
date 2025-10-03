@@ -43,6 +43,8 @@ class RSeurat(RPackage):
 	depends_on("r-fitdistrplus", type=("build", "run"))
 	depends_on("r-future", type=("build", "run"))
 	depends_on("r-future-apply", type=("build", "run"))
+	# Seurat imports foreach for parallel processing constructs
+	depends_on("r-foreach", type=("build", "run"))
 	depends_on("r-generics@0.1.3:", type=("build", "run"))
 	depends_on("r-ggplot2@3.3:", type=("build", "run"))
 	depends_on("r-ggrepel", type=("build", "run"))
