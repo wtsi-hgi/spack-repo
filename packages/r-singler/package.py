@@ -33,8 +33,25 @@ class RSingler(RPackage):
     depends_on("r-biocsingular", type=("build", "run"))
     depends_on("r-biocsingular@1.24.0:", type=("build", "run"), when="@2.10:")
     depends_on("r-rcpp", type=("build", "run"))
+    # beachmat >=2.24 relies on header-only libraries provided by assorthead.
+    # Older SingleR releases (e.g. 2.4.x) did not list assorthead in LinkingTo,
+    # causing missing headers like tatami_r/parallelize.hpp during compilation
+    # when used with newer beachmat. We depend on assorthead and patch the
+    # DESCRIPTION to include it in LinkingTo for affected versions.
     depends_on("r-assorthead", type=("build", "run"), when="@2.10:")
+    depends_on("r-assorthead", type=("build", "run"), when="@2.4.1")
     depends_on("r-beachmat", type=("build", "run"))
     depends_on("r-beachmat@2.23.5:", type=("build", "run"), when="@2.10:")
     depends_on("r-biocneighbors", type=("build", "run"))
     depends_on("r-biocneighbors@2.2.0:", type=("build", "run"), when="@2.10:")
+
+    def patch(self):
+        # Ensure assorthead is included in LinkingTo for SingleR 2.4.1 where
+        # it was not declared upstream but is required for newer beachmat.
+        if self.spec.satisfies("@2.4.1"):
+            filter_file(
+                r"^(LinkingTo:\s*)(.*)$",
+                r"\\1\\2, assorthead",
+                "DESCRIPTION",
+                string=True,
+            )
