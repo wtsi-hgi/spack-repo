@@ -35,15 +35,6 @@ class RSaige(RPackage):
     version("1.0.1", sha256="7bf0bc07929eab047e042604283dc696d80e1a11e69faa8e6b0f16d85bcfaac9")
     version("1.0.0", sha256="e5870bb08ce96bf01d97fbee4887242e471f5622d0d58e7e8f0e8916d32b91fc")
 
-    # Additional resources required for 1.5 and above
-    resource(
-        name="plink-ng",
-        when="@1.5:",
-        url="https://github.com/chrchang/plink-ng/archive/refs/tags/v2.0.0-a.6.16.tar.gz",
-        sha256="eb2a15ae9cd9106d233850912255bfec4e5d5c32a2fb24e34db265ccf9fb9f52",
-        placement="plink-ng",
-    )
-
     resource(
         name="savvy",
         when="@1.5:",
@@ -91,6 +82,8 @@ class RSaige(RPackage):
     depends_on("libdeflate", when="@1.5:")
     depends_on("zlib", when="@1.5:")
     depends_on("superlu", when="@1.5:")
+    # For 1.5, use Spack's plink2 instead of building embedded copy
+    depends_on("plink2@2.00a4.3:", when="@1.5:", type=("build", "link", "run"))
 
     def patch(self):
         # Ensure LAPACK/BLAS linkage uses Spack-provided libs with full paths
@@ -103,73 +96,41 @@ class RSaige(RPackage):
             string=True,
         )
 
-        # For 1.5+, replace pixi include path with savvy/zstd/libdeflate includes
+        # For 1.5+, replace pixi and plink-ng include paths with
+        # savvy/zstd/libdeflate and Spack plink2 includes; also adjust libs.
         if self.spec.satisfies("@1.5:"):
             savvy_inc = join_path(self.stage.source_path, "savvy", "include")
             shrink_inc = join_path(self.stage.source_path, "shrinkwrap", "include")
             zstd_inc = self.spec["zstd"].prefix.include
             ldef_inc = self.spec["libdeflate"].prefix.include
+            p2_inc = self.spec["plink2"].prefix.include
+            zstd_lib = self.spec["zstd"].prefix.lib
+            ldef_lib = self.spec["libdeflate"].prefix.lib
+            # Replace pixi include path with our vendored + spack include dirs
             filter_file(
-                r"-I\.\./\.pixi/envs/default/include",
+                "-I../.pixi/envs/default/include",
                 f"-I{savvy_inc} -I{shrink_inc} -I{zstd_inc} -I{ldef_inc}",
                 "src/Makevars",
                 string=True,
             )
-
-    @run_before("install")
-    def build_plink2_includes(self):
-        # For 1.5+, build a shared library from plink-ng headers (mimic Dockerfile)
-        if not self.spec.satisfies("@1.5:"):
-            return
-
-        from glob import glob
-        cxx = which(self.compiler.cxx)
-        # Construct include and library flags
-        savvy_inc = str(join_path(self.stage.source_path, "savvy", "include"))
-        shrink_inc = str(join_path(self.stage.source_path, "shrinkwrap", "include"))
-        # plink-ng resource extracts to 'plink-ng/2.0', not nested with version dir
-        p2_inc = str(join_path(self.stage.source_path, "plink-ng", "2.0", "include"))
-        zstd = self.spec["zstd"].prefix
-        ldef = self.spec["libdeflate"].prefix
-        zlib = self.spec["zlib"].prefix
-
-        with working_dir(self.stage.source_path):
-            # Build a static archive from plink-ng sources to avoid runtime deps
-            cc_files = glob(join_path(p2_inc, "*.cc"))
-            obj_files = []
-            for src in cc_files:
-                obj = src.replace(".cc", ".o")
-                cxx(
-                    "-std=c++14",
-                    "-fPIC",
-                    "-O3",
-                    "-I" + str(savvy_inc),
-                    "-I" + str(p2_inc),
-                    "-I" + str(shrink_inc),
-                    "-I" + str(zstd.include),
-                    "-I" + str(ldef.include),
-                    "-I" + str(zlib.include),
-                    "-c",
-                    src,
-                    "-o",
-                    obj,
-                )
-                obj_files.append(obj)
-
-            ar = which("ar")
-            if obj_files:
-                ar("rcs", "plink2_includes.a", *obj_files)
-
-            # Ensure SAIGE compilation can find savvy/zstd/libdeflate headers by augmenting PKG_CPPFLAGS
-            mkv = join_path(self.stage.source_path, "src", "Makevars")
-            with open(mkv, "a") as fh:
-                fh.write("\n# Injected by Spack: add system includes for SAIGE 1.5\n")
-                fh.write(f"PKG_CPPFLAGS += -I{savvy_inc} -I{shrink_inc} -I{str(zstd.include)} -I{str(ldef.include)}\n")
-                fh.write(f"PKG_LIBS += -L{str(zstd.lib)} -L{str(ldef.lib)} -lzstd -ldeflate -lz -lpthread -lm\n")
-            # Replace plink2 link flags to link archive directly
+            # Replace plink-ng include with Spack plink2 include dir
             filter_file(
-                r"PKG_LIBS \+= -L\.\. -l:plink2_includes\.a",
-                "PKG_LIBS += ../plink2_includes.a",
-                mkv,
+                "-I../plink-ng/2.0/include",
+                f"-I{p2_inc}",
+                "src/Makevars",
                 string=True,
             )
+            # Link against plink2's pgenlib archive from our plink2 package
+            p2_lib = self.spec["plink2"].prefix.lib
+            filter_file(
+                "PKG_LIBS += -L.. -l:plink2_includes.a",
+                f"PKG_LIBS += -L{p2_lib} -l:plink2_includes.a -l:plink2lib.a -l:pgenlib.a",
+                "src/Makevars",
+                string=True,
+            )
+            # Ensure required link flags for libdeflate/zstd are present
+            with open(join_path(self.stage.source_path, "src", "Makevars"), "a") as fh:
+                fh.write(
+                    f"\n# Injected by Spack for SAIGE 1.5: add lib paths and libs for pgenlib\n"
+                )
+                fh.write(f"PKG_LIBS += -L{zstd_lib} -L{ldef_lib} -ldeflate -lz -lpthread -lm\n")
