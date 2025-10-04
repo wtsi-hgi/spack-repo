@@ -91,6 +91,9 @@ class RSaige(RPackage):
     depends_on("libdeflate", when="@1.5:")
     depends_on("zlib", when="@1.5:")
     depends_on("superlu", when="@1.5:")
+    # Use Spack's plink2 binary at runtime for SAIGE 1.5+ (headers are still
+    # provided via the plink-ng resource above for building pgenlib linkage).
+    depends_on("plink2", type="run", when="@1.5:")
 
     def patch(self):
         # Ensure LAPACK/BLAS linkage uses Spack-provided libs with full paths
