@@ -25,3 +25,10 @@ class RDeepsnv(RPackage):
 	depends_on("r-vgam", type=("build", "run"))
 	depends_on("r-variantannotation@1.27.6:", type=("build", "run"))
 	depends_on("r-rhtslib@1.13.1:", type=("build", "run"))
+
+	# Link-time requirements pulled in by static htslib from Rhtslib
+	# deepSNV links with -lcurl -lbz2 -llzma -lz; ensure they are discoverable
+	depends_on("curl", type="link")
+	depends_on("bzip2", type="link")
+	depends_on("xz", type="link")
+	depends_on("zlib", type="link")
