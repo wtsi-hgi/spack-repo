@@ -12,6 +12,7 @@ class RDimsum(RPackage):
     homepage = "https://github.com/lehner-lab/DiMSum"
     git = "https://github.com/lehner-lab/DiMSum"
 
+    version("1.4", tag="v1.4")
     version("1.3.2", tag="v1.3.2")
     version("1.3.1", tag="v1.3.1")
 
