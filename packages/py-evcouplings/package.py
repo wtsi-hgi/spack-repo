@@ -29,6 +29,7 @@ class PyEvcouplings(PythonPackage):
     
 
     depends_on("py-setuptools", type=("build"))
+    depends_on("py-hatchling", type=("build"))
     depends_on("py-billiard", type=("build", "run"))
     depends_on("py-biopython", type=("build", "run"))
     depends_on("py-bokeh", type=("build", "run"))
