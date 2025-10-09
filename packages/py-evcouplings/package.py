@@ -11,6 +11,7 @@ class PyEvcouplings(PythonPackage):
 
     homepage = "https://github.com/debbiemarkslab/EVcouplings"
     pypi = "evcouplings/evcouplings-0.2.1-py2.py3-none-any.whl"
+    git = "https://github.com/debbiemarkslab/EVcouplings.git"
 
     version("0.0.1", sha256="c16eed4c0137be5a2c7406b9250fa1f292d2067fa79e24745c6052a599b9892a")
     version("0.0.2", sha256="c4a6d2c6e33a5e8b1d1b6b9987b8d673470ccf761295022e52a136bb97ff654a")
@@ -24,12 +25,7 @@ class PyEvcouplings(PythonPackage):
         expand=False,
         url="https://files.pythonhosted.org/packages/c8/01/f57cd1c1481daa17937aed967e391b5aea0f0d4f4b76e87c7a9f143e46f3/evcouplings-0.2.1-py2.py3-none-any.whl",
     )
-    version(
-        "20251004",
-        commit="c4ac882351efdcb6227252947b71ce48304b81c3",
-        git="https://github.com/debbiemarkslab/EVcouplings.git",
-        branch="pdb-loading-fixes",
-    )
+    version("20251004", commit="c4ac882351efdcb6227252947b71ce48304b81c3")
     
 
     depends_on("py-setuptools", type=("build"))
@@ -46,11 +42,10 @@ class PyEvcouplings(PythonPackage):
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-psutil", type=("build", "run"))
     depends_on("py-requests", type=("build", "run"))
-    depends_on("py-ruamel-yaml", type=("build", "run"))
+    depends_on("py-ruamel-yaml@:0.17", type=("build", "run"))
     depends_on("py-scikit-learn", type=("build", "run"))
     depends_on("py-scipy", type=("build", "run"))
     depends_on("py-seaborn", type=("build", "run"))
-    depends_on("py-setuptools", type=("build", "run"))
     depends_on("cns-solve", type=("build", "run"))
     depends_on("maxcluster", type=("build", "run"))
     depends_on("psipred", type=("build", "run"))
