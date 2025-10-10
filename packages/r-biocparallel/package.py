@@ -29,7 +29,11 @@ class RBiocparallel(RPackage):
 	version("1.12.0", commit="2143a9addceed0151a27b95c70aadd2add5cbace")
 	version("1.10.1", commit="a76c58cf99fd585ba5ea33065649e68f1afe0a7d")
 
+	# Base requirement; tightened for newer Bioconductor releases below
 	depends_on("r@3.5:", type=("build", "run"))
+	# BiocParallel 1.28+ uses R 4.1+ lambda syntax (\( ) ... ) which fails on R<4.1
+	# Require newer R for those releases so concretization selects a compatible version
+	depends_on("r@4.1:", when="@1.28:", type=("build", "run"))
 	depends_on("r-futile-logger", type=("build", "run"))
 	depends_on("r-snow", type=("build", "run"))
 	depends_on("r-codetools", type=("build", "run"))
