@@ -2,7 +2,7 @@ from spack.package import *
 
 
 class Prscs(Package):
-    """PRS-CS: Polygenic prediction via Bayesian regression and continuous
+    """PRScs: Polygenic prediction via Bayesian regression and continuous
     shrinkage priors. Command-line tool implemented in Python.
 
     Source repository: https://github.com/getian107/PRScs
