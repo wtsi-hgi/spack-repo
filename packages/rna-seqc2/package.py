@@ -3,7 +3,7 @@ from spack.package import *
 
 class RnaSeqc2(Package):
     """
-    RNA-SeQC computes a series of quality control metrics for RNA-Seq data.
+    rna-seqc2 computes a series of quality control metrics for RNA-Seq data.
     This package installs the prebuilt static Linux binary for v2.4.2.
     """
 
