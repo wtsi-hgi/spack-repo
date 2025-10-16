@@ -18,6 +18,7 @@ class RSeurat(RPackage):
 	et al (2019) <doi:10.1016/j.cell.2019.05.031> for more details."""
 
 	cran = "Seurat"
+	version("5.3.0", sha256="12abaf6cea4aa30f73028387e74ecb405b17acbae414d43522e764f3179908a7")
 	version("5.0.3", md5="2112a71f0ea07db422650c86aacc5d25")
 	version("5.0.1", md5="3965b1ee0bdc7f005d250a3dd429bcc3")
 	version("4.4.0", sha256="0f17df9597642cfc1db4d8718f0b59ebab9fbed328b1f885f42ee85ea0dcb4dd")
@@ -37,6 +38,7 @@ class RSeurat(RPackage):
 	# Seurat depends on different SeuratObject majors across versions
 	depends_on("r-seuratobject@4:", type=("build", "run"), when="@4:")
 	depends_on("r-seuratobject@5:", type=("build", "run"), when="@5:")
+	depends_on("r-seuratobject@5.0.2:", type=("build", "run"), when="@5.3.0:")
 	depends_on("r-cluster", type=("build", "run"))
 	depends_on("r-cowplot", type=("build", "run"))
 	depends_on("r-fastdummies", type=("build", "run"))
@@ -89,3 +91,4 @@ class RSeurat(RPackage):
 	depends_on("r-rcppeigen", type=("build", "run"))
 	depends_on("r-rcppprogress", type=("build", "run"))
 	depends_on("r-spatstat-core", type=("build", "run"), when="@:4.1.1")
+	depends_on("r-leidenbase", type=("build", "run"), when="@5.3.0:")

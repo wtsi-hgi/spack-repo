@@ -19,6 +19,7 @@ class RSeuratobject(RPackage):
 	details."""
 
 	cran = "SeuratObject"
+	version("5.2.0", sha256="285cad1503914230f58f33be76c5d939fc192f373ecb239794d6e3b9ebfd162b")
 	version("5.0.1", md5="a1b6b337accbe962c59bd0f9cdf957e4")
 	version("4.1.3", sha256="585d2754f6165a367f0f458523f0a25d4d4160c929c931b27c5603cc6bd986d3")
 	version("4.1.2", sha256="6a5945f501b573dbe44a15e7d969e63fd5be0c4f8e9d716b71ca29f695236d0d")
