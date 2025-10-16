@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+import os
 from spack.package import *
 
 
@@ -25,4 +26,24 @@ class PyPrimer3Py(PythonPackage):
     depends_on("python@3:", type=("build", "run"))
     depends_on("py-setuptools", type="build")
     depends_on("py-setuptools@67:", type="build", when="@2:")
+    # primer3 C library used by this Python wrapper
     depends_on("primer3", type=("build", "run"))
+
+    # primer3-py 2.x ships Cython sources and excludes generated C files,
+    # so we must provide Cython at build time. Use a broad lower bound that
+    # works across Python 3 and recent Cython releases.
+    depends_on("py-cython@0.29:", type="build", when="@2:")
+
+    # Cython 3 no longer recognizes Python2's 'long' name; patch occurrences
+    # of "(int, long)" to just "int" in the Cython sources for 2.x releases.
+    def patch(self):
+        if self.spec.satisfies("@2:"):
+            # Only thermoanalysis.pyx is present in 2.x sdist; guard existence.
+            if os.path.exists("primer3/thermoanalysis.pyx"):
+                filter_file("(int, long)", "int", "primer3/thermoanalysis.pyx", string=True)
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            # No CLI provided; verify import works
+            python("-c", "import primer3")
