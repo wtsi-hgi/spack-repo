@@ -13,6 +13,8 @@ class PyNumexpr(PythonPackage):
     url = "https://github.com/pydata/numexpr/archive/v2.7.0.tar.gz"
 
     version("2.10.2", sha256="7e61a8aa4dacb15787b31c31bd7edf90c026d5e6dbe727844c238726e8464592")
+    version("2.10.1", sha256="e499bd19a7fd9803d5ec1b2cff2e0a11a2f01a109d5326e5a09eff590448c793")
+    version("2.10.0", sha256="23722ec36d8e86e053a9a8419347d14808036bfdb6e651a8148ed9065c913c18")
     version("2.9.0", sha256="4df4163fcab20030137e8f2aa23e88e1e42e6fe702387cfd95d7675e1d84645e")
     version("2.8.8", sha256="10b377c6ec6d9c01349d00e16dd82e6a6f4439c8c2b1945e490df1436c1825f5")
     version("2.8.4", sha256="0e21addd25db5f62d60d97e4380339d9c1fb2de72c88b070c279776ee6455d10")
@@ -32,6 +34,8 @@ class PyNumexpr(PythonPackage):
 
     depends_on("py-numpy@2:", when="@2.10.2:", type="build")
     depends_on("py-numpy@1.23:", when="@2.10.2:", type="run")
+    # 2.10.0 and 2.10.1 support NumPy 1.x including 1.26
+    depends_on("py-numpy@1.23:", when="@2.10.0:2.10.1", type=("build", "run"))
     depends_on("py-numpy@1.13.3:1.25", type=("build", "run"), when="@2.8.3:2.9")
     # https://github.com/pydata/numexpr/issues/397
     depends_on("py-numpy@1.7:1.22", type=("build", "run"), when="@:2.7")
