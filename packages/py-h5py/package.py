@@ -71,7 +71,8 @@ class PyH5py(PythonPackage):
     depends_on("py-setuptools", type="build")
 
     # Build and runtime dependencies
-    depends_on("py-numpy@2", type=("build", "run"), when="@3.11: ^python@3.9:")
+    # Allow NumPy 1.x with h5py >=3.11 to support environments pinned to NumPy 1.26
+    depends_on("py-numpy@1.19.3:", type=("build", "run"), when="@3.11: ^python@3.9:")
 
     # https://github.com/h5py/h5py/pull/2556
     depends_on("py-numpy@2:2.2", when="@3.11:3.12", type="build")
