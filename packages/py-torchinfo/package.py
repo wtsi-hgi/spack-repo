@@ -23,11 +23,7 @@ class PyTorchinfo(PythonPackage):
     @run_after("install")
     def install_test(self):
         with working_dir("spack-test", create=True):
-            # Use a lightweight presence check to avoid importing heavy deps
             python(
                 "-c",
-                (
-                    "import importlib.util,sys;"
-                    "sys.exit(0 if importlib.util.find_spec('torchinfo') else 1)"
-                ),
+                "import torchinfo"
             )
