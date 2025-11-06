@@ -34,7 +34,7 @@ class Rust(Package):
     version("nightly")
 
     # Stable versions.
-    version("1.86.0", sha256="022a27286df67900a044d227d9db69d4732ec3d833e4ffc259c4425ed71eed80")
+    version("1.88.0", sha256="3a97544434848ae3d193d1d6bc83d6f24cb85c261ad95f955fde47ec64cfcfbe")
     version("1.85.0", sha256="2f4f3142ffb7c8402139cfa0796e24baaac8b9fd3f96b2deec3b94b4045c6a8a")
     version("1.83.0", sha256="722d773bd4eab2d828d7dd35b59f0b017ddf9a97ee2b46c1b7f7fac5c8841c6e")
     version("1.81.0", sha256="872448febdff32e50c3c90a7e15f9bb2db131d13c588fe9071b0ed88837ccfa7")
@@ -83,7 +83,7 @@ class Rust(Package):
     depends_on("rust-bootstrap@nightly", type="build", when="@nightly")
 
     # Stable version dependencies
-    depends_on("rust-bootstrap@1.85:1.86", type="build", when="@1.86")
+    depends_on("rust-bootstrap@1.87:1.88", type="build", when="@1.88")
     depends_on("rust-bootstrap@1.84:1.85", type="build", when="@1.85")
     depends_on("rust-bootstrap@1.82:1.83", type="build", when="@1.83")
     depends_on("rust-bootstrap@1.80:1.81", type="build", when="@1.81")
@@ -104,27 +104,41 @@ class Rust(Package):
     conflicts("%oneapi", msg="Rust not compatible with Intel oneAPI compilers")
 
     extendable = True
-    executables = ["^rustc$", "^cargo$"]
+    executables = [r"^rustc(-[\d.]*)?$", r"^cargo(-[\d.]*)?$"]
 
     phases = ["configure", "build", "install"]
 
     @classmethod
-    def determine_spec_details(cls, prefix, exes_in_prefix):
-        rustc_candidates = [x for x in exes_in_prefix if os.path.basename(x) == "rustc"]
-        cargo_candidates = [x for x in exes_in_prefix if os.path.basename(x) == "cargo"]
-        # Both rustc and cargo must be present
-        if not (rustc_candidates and cargo_candidates):
-            return
-        output = Executable(rustc_candidates[0])("--version", output=str, error=str)
-        match = re.match(r"rustc (\S+)", output)
-        if match:
-            version_str = match.group(1)
-            return Spec.from_detection(f"rust@{version_str}", external_path=prefix)
+    def determine_version(csl, exe):
+        output = Executable(exe)("--version", output=str, error=str)
+        match = re.match(r"(rustc|cargo) (\S+)", output)
+        return match.group(2) if match else None
+
+    @classmethod
+    def determine_variants(cls, exes, version_str):
+        rustc_candidates = [x for x in exes if "rustc" in os.path.basename(x)]
+        cargo_candidates = [x for x in exes if "cargo" in os.path.basename(x)]
+        extra_attributes = {}
+        if rustc_candidates:
+            extra_attributes.setdefault("compilers", {})["rust"] = rustc_candidates[0]
+
+        if cargo_candidates:
+            extra_attributes["cargo"] = cargo_candidates[0]
+
+        return "", extra_attributes
+
+    @classmethod
+    def validate_detected_spec(cls, spec, extra_attributes):
+        if "cargo" not in extra_attributes:
+            raise RuntimeError(f"discarding {spec} since 'cargo' is missing")
+
+        if not extra_attributes.get("compilers", {}).get("rust"):
+            raise RuntimeError(f"discarding {spec} since 'rustc' is missing")
 
     def setup_dependent_package(self, module, dependent_spec):
         module.cargo = Executable(os.path.join(self.spec.prefix.bin, "cargo"))
 
-    def setup_build_environment(self, env):
+    def setup_build_environment(self, env) -> None:
         # Manually instruct Cargo dependency libssh2-sys to build with
         # the Spack installed libssh2 package. For more info see
         # https://github.com/alexcrichton/ssh2-rs/issues/173
