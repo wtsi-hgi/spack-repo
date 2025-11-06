@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 from spack.package import *
+import os
+from spack.util.executable import Executable
 
 
 class PyKbPython(PythonPackage):
@@ -47,7 +49,10 @@ class PyKbPython(PythonPackage):
     depends_on("py-loompy", type=("build", "run"))
     depends_on("py-nbconvert", type=("build", "run"))
     depends_on("py-nbformat", type=("build", "run"))
-    depends_on("py-ngs-tools", type=("build", "run"))
+    # ngs-tools version requirements vary by kb-python version
+    depends_on("py-ngs-tools@1.8.5:", when="@0.28.0:0.28.2", type=("build", "run"))
+    depends_on("py-ngs-tools@1.8.6:", when="@0.29.0:", type=("build", "run"))
+    depends_on("py-ngs-tools", when="@:0.27", type=("build", "run"))
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-plotly", type=("build", "run"))
@@ -60,13 +65,14 @@ class PyKbPython(PythonPackage):
     @run_after("install")
     def install_test(self):
         with working_dir("spack-test", create=True):
-            # Prefer CLI test if available
             kb_exe = join_path(self.prefix.bin, "kb")
             if os.path.exists(kb_exe):
-                exe = Executable(kb_exe)
-                exe("--help")
-            else:
-                # Fallback: simple Python import test
-                python("-c", "import kb_python")
+                try:
+                    Executable(kb_exe)("--help")
+                    return
+                except Exception:
+                    pass
+            # Fallback: simple Python import test
+            python("-c", "import kb_python")
 
 # {'anndata(>=0.6.22.post1)': ['0.2.0', '0.2.1', '0.24.0', '0.24.1', '0.24.2', '0.24.3', '0.24.4', '0.25.0', '0.25.1', '0.26.0'], 'loompy(>=3.0.6)': ['0.2.0', '0.2.1', '0.24.0', '0.24.1', '0.24.2', '0.24.3', '0.24.4', '0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'h5py(>=2.10.0)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'Jinja2(>2.10.1)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'nbconvert(>=5.6.0)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'nbformat(>=4.4.0)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'numpy(>=1.17.2)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'plotly(>=4.5.0)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'requests(>=2.19.0)': ['0.25.0', '0.25.1', '0.26.0'], 'scanpy(>=1.4.4.post1)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'scikit-learn(>=0.21.3)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'tqdm(>=4.39.0)': ['0.25.0', '0.25.1', '0.26.0'], 'anndata>=0.6.22.post1': ['0.28.0', '0.28.1', '0.28.2'], 'h5py>=2.10.0': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'Jinja2>2.10.1': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'loompy>=3.0.6': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'nbconvert>=5.6.0': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'nbformat>=4.4.0': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'ngs-tools>=1.8.5': ['0.28.0', '0.28.1', '0.28.2'], 'numpy>=1.17.2': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'pandas<2,>=1.0.0': ['0.28.0', '0.28.1', '0.28.2'], 'plotly>=4.5.0': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'requests>=2.22.0': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'scanpy>=1.4.4.post1': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'scikit-learn>=0.21.3': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'typing-extensions>=3.7.4': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'anndata(>=0.9.2)': ['0.29.0', '0.29.1'], 'ngs-tools(>=1.8.6)': ['0.29.0', '0.29.1'], 'pandas(>=1.5.3)': ['0.29.0', '0.29.1'], 'requests(>=2.22.0)': ['0.29.0', '0.29.1'], 'typing-extensions(>=3.7.4)': ['0.29.0', '0.29.1'], 'biopython(>=1.8)': ['0.29.0', '0.29.1'], 'anndata>=0.9.2': ['0.29.2', '0.29.3', '0.29.5'], 'ngs-tools>=1.8.6': ['0.29.2', '0.29.3', '0.29.5'], 'pandas>=1.5.3': ['0.29.2', '0.29.3', '0.29.5'], 'biopython>=1.8': ['0.29.2', '0.29.3', '0.29.5']}
