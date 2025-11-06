@@ -23,12 +23,19 @@ class ROlinkanalyze(RPackage):
 	homepage = "https://olink.com/"
 	cran = "OlinkAnalyze" 
 
+	# Latest CRAN release
+	version("4.3.2", sha256="0a54035ae36382cc26e9f4021067ff7f766ad642bc6a5c226a0744891ae20084")
+	# Older version retained for compatibility
 	version("3.7.0", md5="53bd38935a24a7f5aa208c41321ec6ee")
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-broom", type=("build", "run"))
 	depends_on("r-car", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
+	# CRAN >= 4.3.2 requires dplyr >= 1.1.1
+	depends_on("r-dplyr@1.1.1:", type=("build", "run"))
+	# New in 4.3.2
+	depends_on("r-cli@3.6.2:", when="@4.3.2:", type=("build", "run"))
+	depends_on("r-data-table", when="@4.3.2:", type=("build", "run"))
 	depends_on("r-emmeans", type=("build", "run"))
 	depends_on("r-forcats", type=("build", "run"))
 	depends_on("r-generics", type=("build", "run"))
@@ -45,4 +52,5 @@ class ROlinkanalyze(RPackage):
 	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-tidyselect", type=("build", "run"))
+	# zip is only a Suggests in 4.3.2 but keeping as a dependency is harmless
 	depends_on("r-zip", type=("build", "run"))
