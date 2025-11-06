@@ -61,4 +61,4 @@ class FastLmm(Package):
         # Basic CLI presence and help check
         with working_dir("spack-test", create=True):
             exe = Executable(join_path(self.prefix.bin, "fastlmmc"))
-            exe("-h", fail_on_error=False)
+            exe("-h")
