@@ -56,7 +56,7 @@ class PySuppa(PythonPackage):
 
         # Write a thin wrapper to invoke the CLI with an augmented PYTHONPATH
         mkdirp(self.prefix.bin)
-        wrapper = join_path(self.prefix.bin, "suppa")
+        wrapper = join_path(self.prefix.bin, "suppa.py")
         with open(wrapper, "w") as f:
             f.write("#!/bin/bash\n")
             f.write("export PYTHONPATH=\"{0}:$PYTHONPATH\"\n".format(libexec_dir))
@@ -68,5 +68,5 @@ class PySuppa(PythonPackage):
     def install_test(self):
         # Basic CLI test: show help
         with working_dir("spack-test", create=True):
-            suppa = Executable(join_path(self.prefix.bin, "suppa"))
+            suppa = Executable(join_path(self.prefix.bin, "suppa.py"))
             suppa("--help")
