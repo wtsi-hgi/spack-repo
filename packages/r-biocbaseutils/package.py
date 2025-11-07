@@ -17,4 +17,5 @@ class RBiocbaseutils(RPackage):
 
 	version("1.4.0", md5="23ed1406ff70165a763ca2040c46353e")
 
-	depends_on("r@4.2:", type=("build", "run"))
+	# Relax R lower bound to support environments pinning r@4.1.3
+	depends_on("r@4.1:", type=("build", "run"))
