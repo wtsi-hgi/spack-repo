@@ -10,13 +10,18 @@ class FastLmm(Package):
     Microsoft Research for Linux."""
 
     homepage = "https://www.microsoft.com/en-us/download/details.aspx?id=52559"
-    url = (
-        "https://download.microsoft.com/download/b/0/9/"
-        "b095c9a0-c08b-41f7-9c7e-76097e875235/FaSTLMM.207.zip"
-    )
+    # Note: Microsoft uses a filename without a dot in the minor component
+    # ("FaSTLMM.207.zip"). If Spack tries to infer URLs from a pattern it
+    # may incorrectly construct "FaSTLMM.2.07.zip" and 404. To prevent this,
+    # pin the exact URL on the version declaration.
+    url = "https://download.microsoft.com/download/b/0/9/b095c9a0-c08b-41f7-9c7e-76097e875235/FaSTLMM.207.zip"
 
     # Last published on the Microsoft Download Center as v2.07
-    version("2.07", sha256="63ffb9bd6ce4b3b270c4f4b674dd8f9ac352547f2b69b8b333e43fbdccdc6606")
+    version(
+        "2.07",
+        sha256="63ffb9bd6ce4b3b270c4f4b674dd8f9ac352547f2b69b8b333e43fbdccdc6606",
+        url="https://download.microsoft.com/download/b/0/9/b095c9a0-c08b-41f7-9c7e-76097e875235/FaSTLMM.207.zip",
+    )
 
     # No build toolchain: we just install the Linux binary from the archive
 
