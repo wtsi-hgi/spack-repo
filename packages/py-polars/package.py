@@ -40,8 +40,8 @@ class PyPolars(PythonPackage):
     # pyproject.toml
     depends_on("py-maturin@1.3.2:", type="build")
 
-    # README.md
-    depends_on("rust@1.85:", when="@1.25.2:", type="build")
+    # README.md / build logs show crates requiring Rust 1.88+
+    depends_on("rust@1.88:", when="@1.25.2:", type="build")
     depends_on("rust@1.81:", when="@1:", type="build")
     depends_on("rust@1.71:", type="build")
     depends_on("cmake", type="build")
@@ -73,3 +73,8 @@ class PyPolars(PythonPackage):
     def setup_build_environment(self, env):
         env.set("CARGO_NET_GIT_FETCH_WITH_CLI", "true")
         # env.set("MATURIN_PEP517_ARGS", "--no-default-features --features lazy")
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python("-c", "import polars as pl; print(pl.__version__)")
