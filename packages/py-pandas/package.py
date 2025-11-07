@@ -125,7 +125,8 @@ class PyPandas(PythonPackage):
         depends_on("py-bottleneck@1.2.1:", when="@0.25:", type="run")
         depends_on("py-numba@0.55.2:", when="@2.1:", type="run")
         depends_on("py-numba@0.53.1:", when="@2.0:", type="run")
-        depends_on("py-numexpr@2.8.0:", when="@2.1:", type="run")
+        # Cap numexpr to <=2.10.1 to avoid requiring NumPy 2.x in this env
+        depends_on("py-numexpr@2.8.0:2.10.1", when="@2.1:", type="run")
         depends_on("py-numexpr@2.7.3:", when="@1.5:", type="run")
         depends_on("py-numexpr@2.7.1:", when="@1.4:", type="run")
         depends_on("py-numexpr@2.7.0:", when="@1.3:", type="run")
