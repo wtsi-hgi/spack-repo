@@ -47,7 +47,9 @@ class PyPolars(PythonPackage):
     depends_on("cmake", type="build")
 
     def patch(self):
-        remove("Cargo.lock")
+        # Keep upstream's Cargo.lock to preserve pinned crate versions
+        # for this release. Removing it can cause Cargo to resolve to
+        # newer crates that may require a newer Rust toolchain.
         if self.spec.satisfies("@1.25.2:"):
             filter_file(
                 """#![cfg_attr(feature = "nightly", feature(select_unpredictable))] """,
@@ -73,3 +75,8 @@ class PyPolars(PythonPackage):
     def setup_build_environment(self, env):
         env.set("CARGO_NET_GIT_FETCH_WITH_CLI", "true")
         # env.set("MATURIN_PEP517_ARGS", "--no-default-features --features lazy")
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python("-c", "import polars")
