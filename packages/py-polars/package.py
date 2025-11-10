@@ -47,7 +47,7 @@ class PyPolars(PythonPackage):
     depends_on("cmake", type="build")
 
     def patch(self):
-        remove("Cargo.lock")
+        # Keep upstream Cargo.lock to pin compatible Rust crates
         if self.spec.satisfies("@1.25.2:"):
             filter_file(
                 """#![cfg_attr(feature = "nightly", feature(select_unpredictable))] """,

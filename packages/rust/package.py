@@ -30,11 +30,13 @@ class Rust(Package):
     #
     #     $ spack install -n rust@pre-release-version
     #
-    version("master", branch="master", submodules=True)
-    version("nightly")
+    # Prefer stable releases over pre-release branches
+    version("master", branch="master", submodules=True, preferred=False)
+    version("nightly", preferred=False)
 
     # Stable versions.
-    version("1.86.0", sha256="022a27286df67900a044d227d9db69d4732ec3d833e4ffc259c4425ed71eed80")
+    # Mark latest stable as preferred so Spack won't choose nightly by default
+    version("1.86.0", sha256="022a27286df67900a044d227d9db69d4732ec3d833e4ffc259c4425ed71eed80", preferred=True)
     version("1.85.0", sha256="2f4f3142ffb7c8402139cfa0796e24baaac8b9fd3f96b2deec3b94b4045c6a8a")
     version("1.83.0", sha256="722d773bd4eab2d828d7dd35b59f0b017ddf9a97ee2b46c1b7f7fac5c8841c6e")
     version("1.81.0", sha256="872448febdff32e50c3c90a7e15f9bb2db131d13c588fe9071b0ed88837ccfa7")
