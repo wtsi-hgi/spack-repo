@@ -50,7 +50,8 @@ class PySnapatac2(PythonPackage):
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-plotly", type=("build", "run"))
-    depends_on("py-polars", type=("build", "run"))
+    # Newer polars releases may require nightly-only Rust features; use a stable release
+    depends_on("py-polars@0.20.5", type=("build", "run"))
     depends_on("py-pooch", type=("build", "run"))
     depends_on("py-igraph", type=("build", "run"))
     depends_on("py-pyarrow", type=("build", "run"))
@@ -62,3 +63,8 @@ class PySnapatac2(PythonPackage):
     depends_on("py-typeguard", type=("build", "run"))
     depends_on("py-maturin", type=("build", "run"))
     depends_on("py-h5py", type=("build", "run"))
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python("-c", "import snapatac2 as sa; print(sa.__version__)")
