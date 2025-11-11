@@ -12,6 +12,9 @@ class PyDeeplocrna(PythonPackage):
     Note: The published PyPI artifacts for DeepLocRNA are wheel-only and act
     as a meta-package (no importable modules). We install from the wheel and
     rely on Spack to provide the declared runtime dependencies.
+
+    Note: Version 0.0.4 requires TensorFlow 2.4.1, which only supports
+    Python 3.6-3.8. Full functionality testing requires Python 3.8 or earlier.
     """
 
     homepage = "https://github.com/TerminatorJ/DeepLocRNA"
@@ -33,27 +36,28 @@ class PyDeeplocrna(PythonPackage):
 
     # Build requirements provided by the python_pip builder via PythonPackage
     depends_on("py-setuptools", type=("build",))
+    # Force a Python 3.8 interpreter for TF 2.4/Keras 2.2.x compatibility
+    depends_on("python@3.8:3.8", type=("build", "run"))
 
     # Runtime requirements (based on PyPI metadata). Keep unpinned to allow
     # Spack to resolve compatible versions; gate version-specific extras.
-    depends_on("py-captum", type=("build", "run"))
-    depends_on("py-gin-config", type=("build", "run"))
-    depends_on("py-h5py", type=("build", "run"))
-    depends_on("py-keras", type=("build", "run"))
-    depends_on("py-logomaker", type=("build", "run"))
-    depends_on("py-numpy", type=("build", "run"))
-    depends_on("py-pandas", type=("build", "run"))
-    depends_on("py-pillow", type=("build", "run"))
-    depends_on("py-pytorch-lightning", type=("build", "run"))
-    depends_on("py-scikit-learn", type=("build", "run"))
-    depends_on("py-torch", type=("build", "run"))
-    depends_on("py-torchinfo", type=("build", "run"))
-    depends_on("py-torchsummary", type=("build", "run"))
-    depends_on("py-torchvision", type=("build", "run"))
-    depends_on("py-wandb", type=("build", "run"))
-    depends_on("py-matplotlib", type=("build", "run"))
-    depends_on("py-typing-extensions", when="@0.0.4:", type=("build", "run"))
-    depends_on("py-tensorflow", when="@0.0.4:", type=("build", "run"))
+    depends_on("py-gin-config@0.5.0", type=("build", "run"))
+    depends_on("py-h5py@2.10.0", type=("build", "run"))
+    depends_on("py-keras@2.2.4", type=("build", "run"))
+    depends_on("py-logomaker@0.8", type=("build", "run"))
+    depends_on("py-numpy@1.19.5", type=("build", "run"))
+    depends_on("py-pillow@9.4.0", type=("build", "run"))
+    depends_on("py-pytorch-lightning@1.5.8", type=("build", "run"))
+    depends_on("py-scikit-learn@1.0.2", type=("build", "run"))
+    depends_on("py-torch@1.13.1", type=("build", "run"))
+    depends_on("py-torchinfo@1.8.0", type=("build", "run"))
+    depends_on("py-torchsummary@1.5.1", type=("build", "run"))
+    depends_on("py-torchvision@0.14.1", type=("build", "run"))
+    depends_on("py-matplotlib@3.6.3", type=("build", "run"))
+    # TensorFlow 2.4.1 (needs Python <=3.8 and typing-extensions 3.7.x)
+    depends_on("py-tensorflow@2.4.1", type=("build", "run"))
+    # ParNet module required to load PanRBPNet checkpoint
+    depends_on("py-parnet", type=("build", "run"))
 
     @run_after("install")
     def install_test(self):
