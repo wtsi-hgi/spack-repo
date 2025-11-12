@@ -22,8 +22,33 @@ class Rstudio(CMakePackage):
     version("1.4.1743", sha256="f046b2e91d4b27794d989e9bb2d7ad951b913ae86ed485364fc5b7fccba9c927")
     version("1.4.1717", sha256="3af234180fd7cef451aef40faac2c7b52860f14a322244c1c7aede029814d261")
 
-    resource(when="@2024.04.0+server", name="quarto", url="https://github.com/quarto-dev/quarto/archive/3bd070a1ffabd0b2dc80c67f5d9fa9a2d8bee896/quarto-3bd070a1ffabd0b2dc80c67f5d9fa9a2d8bee896.tar.gz", sha256="75935003a7fa920db3b3ec22a5b65d350fb962095857a2048a9b798591940603", destination="src/gwt/lib", placement="quarto")
-    resource(when="@2024.04.0+server", name="quarto-nm", url="https://src.fedoraproject.org/repo/pkgs/rstudio/panmirror-0.0.0-nm.tgz/sha512/a9c36a0713683c34b2f735c4b9832afe52769fac9bf4470ec7f2291fa62d07cd0964b54632cb5d008f037444856d69626d0ad3258c42b927e5b463b44021dd05/panmirror-0.0.0-nm.tgz", sha256="575617c7804921ff29c241a74354f70f730c5c45e3c13f26382fd2b4194af1c9", destination="src/gwt/lib/quarto", placement="node_modules")
+    resource(
+        when="@2024.04.0+server",
+        name="quarto",
+        url="https://github.com/quarto-dev/quarto/archive/3bd070a1ffabd0b2dc80c67f5d9fa9a2d8bee896/quarto-3bd070a1ffabd0b2dc80c67f5d9fa9a2d8bee896.tar.gz",
+        sha256="75935003a7fa920db3b3ec22a5b65d350fb962095857a2048a9b798591940603",
+        destination="src/gwt/lib",
+        placement="quarto",
+    )
+    resource(
+        when="@2024.04.0+server",
+        name="quarto-nm",
+        url="https://src.fedoraproject.org/repo/pkgs/rstudio/panmirror-0.0.0-nm.tgz/sha512/a9c36a0713683c34b2f735c4b9832afe52769fac9bf4470ec7f2291fa62d07cd0964b54632cb5d008f037444856d69626d0ad3258c42b927e5b463b44021dd05/panmirror-0.0.0-nm.tgz",
+        sha256="575617c7804921ff29c241a74354f70f730c5c45e3c13f26382fd2b4194af1c9",
+        destination="src/gwt/lib/quarto",
+        placement="node_modules",
+    )
+
+    # Provide panmirror node_modules for older desktop builds that still build panmirror
+    # This avoids network npm/yarn during build and satisfies 'fuse-box/sparky' requires
+    resource(
+        when="@2022.12.0",
+        name="panmirror-nm",
+        url="https://src.fedoraproject.org/repo/pkgs/rstudio/panmirror-0.0.0-nm.tgz/sha512/a9c36a0713683c34b2f735c4b9832afe52769fac9bf4470ec7f2291fa62d07cd0964b54632cb5d008f037444856d69626d0ad3258c42b927e5b463b44021dd05/panmirror-0.0.0-nm.tgz",
+        sha256="575617c7804921ff29c241a74354f70f730c5c45e3c13f26382fd2b4194af1c9",
+        destination="src/gwt/panmirror",
+        placement="node_modules",
+    )
 
     variant("notebook", default=False, description="Enable notebook support.")
     variant("server", default=False, description="Build the server.")
