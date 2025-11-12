@@ -44,6 +44,10 @@ class PyAnarci(Package):
             hmm_p = glob(join_path(self.prefix, "lib", "python*", "site-packages", "anarci", "dat", "HMMs", "ALL.hmm.h3p"))
             assert hmm_p and os.path.isfile(hmm_p[0])
 
+            # Verify Python import works
+            python = which("python3")
+            python("-c", "import anarci")
+
     def install(self, spec, prefix):
         # Patch setup.py to disable the upstream CustomInstallCommand that would
         # write outside the prefix and perform network I/O during install.
