@@ -55,6 +55,8 @@ class PyDeeplocrna(PythonPackage):
     depends_on("py-torchvision@0.14.1", type=("build", "run"))
     depends_on("py-matplotlib@3.6.3", type=("build", "run"))
     depends_on("py-tqdm@4.62:", type=("build", "run"))
+    # TensorFlow 2.4.1 (needs Python <=3.8 and typing-extensions 3.7.x)
+    depends_on("py-tensorflow@2.4.1", type=("build", "run"))
     # ParNet module required to load PanRBPNet checkpoint
     depends_on("py-parnet", type=("build", "run"))
 

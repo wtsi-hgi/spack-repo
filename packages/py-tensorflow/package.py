@@ -984,6 +984,7 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
         filter_file("build:opt --host_copt=-march=native", "", ".tf_configure.bazelrc")
 
         # For TF 2.2, ensure Abseil's graphcycles.cc includes <limits> to fix GCC 11 builds
+        # (TF 2.4.1 is handled in build() method via direct file patching)
         if spec.satisfies("@2.2"):
             patch_path = join_path(
                 self.stage.source_path,
@@ -1100,9 +1101,9 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
         else:
             args.append("//tensorflow/tools/pip_package:build_pip_package")
 
-        # For TF 2.2, ensure absl graphcycles.cc includes <limits> by patching
+        # For TF 2.2 and 2.4.1, ensure absl graphcycles.cc includes <limits> by patching
         # the external repository after fetch but before full build.
-        if spec.satisfies("@2.2"):
+        if spec.satisfies("@2.2") or spec.satisfies("@2.4.1"):
             # Query Bazel output base so we can locate external repos
             info_args = [
                 "--nohome_rc",
@@ -1113,7 +1114,7 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
             ]
             output_base = Executable("bazel")(*info_args, output=str).strip()
 
-            # Fetch absl first so external tree exists
+            # Fetch absl and ruy first so external tree exists
             fetch_args = [
                 "--nohome_rc",
                 "--nosystem_rc",
@@ -1122,6 +1123,17 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
                 "@com_google_absl//:all",
             ]
             Executable("bazel")(*fetch_args)
+            
+            # Also fetch ruy for TF 2.4.1
+            if spec.satisfies("@2.4.1"):
+                ruy_fetch_args = [
+                    "--nohome_rc",
+                    "--nosystem_rc",
+                    "--output_user_root=" + tmp_path,
+                    "fetch",
+                    "@ruy//:all",
+                ]
+                Executable("bazel")(*ruy_fetch_args)
 
             # Patch the file in place if needed
             absl_graphcycles = join_path(
@@ -1147,6 +1159,36 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
                     f.seek(0)
                     f.write(content)
                     f.truncate()
+
+            # Also patch external ruy block_map.cc for TF 2.4.1 (missing <limits>)
+            if spec.satisfies("@2.4.1"):
+                ruy_block_map = join_path(
+                    output_base,
+                    "external",
+                    "ruy",
+                    "ruy",
+                    "block_map.cc",
+                )
+                if os.path.exists(ruy_block_map):
+                    with open(ruy_block_map, "r+") as f:
+                        content = f.read()
+                        if "#include <limits>" not in content:
+                            # Try to add after common includes
+                            if "#include <cstdint>" in content:
+                                content = content.replace(
+                                    "#include <cstdint>",
+                                    "#include <cstdint>\n#include <limits>",
+                                    1,
+                                )
+                            elif "#include <algorithm>" in content:
+                                content = content.replace(
+                                    "#include <algorithm>",
+                                    "#include <algorithm>\n#include <limits>",
+                                    1,
+                                )
+                        f.seek(0)
+                        f.write(content)
+                        f.truncate()
 
         bazel(*args)
 
