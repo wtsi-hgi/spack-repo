@@ -1,30 +1,3 @@
-# Copyright 2013-2024 Lawrence Livermore National Security, LLC and other
-# Spack Project Developers. See the top-level COPYRIGHT file for details.
-#
-# SPDX-License-Identifier: (Apache-2.0 OR MIT)
-
-from spack.package import *
-
-
-# Extend the builtin py-grpcio with a small patch for GCC 11 builds
-try:
-    from spack.pkg.builtin.py_grpcio import PyGrpcio as BuiltinPyGrpcio
-except ImportError:
-    BuiltinPyGrpcio = PythonPackage
-
-
-class PyGrpcio(BuiltinPyGrpcio):  # type: ignore[misc,valid-type]
-    """Override to patch abseil graphcycles header includes for GCC 11."""
-
-    def patch(self):
-        # Fix missing <limits> include causing std::numeric_limits errors
-        target = "third_party/abseil-cpp/absl/synchronization/internal/graphcycles.cc"
-        filter_file(
-            r"#include <algorithm>",
-            "#include <algorithm>\n#include <limits>",
-            target,
-            string=True,
-        )
 # Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
 # Spack Project Developers. See the top-level COPYRIGHT file for details.
 #
