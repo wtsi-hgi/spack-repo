@@ -44,3 +44,8 @@ class PyMber(PythonPackage):
     def install_test(self):
         # Basic import test; core package should import without optional ML deps
         python("-c", "import mber")
+
+        # Add test to check mber-vhh binary exists and runs
+        mber_vhh = join_path(self.prefix.bin, "mber-vhh")
+        bash = which("bash")
+        bash(mber_vhh, "--help")
