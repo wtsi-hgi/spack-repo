@@ -73,7 +73,7 @@ class PyImmunebuilder(PythonPackage):
         url="https://files.pythonhosted.org/packages/5b/62/c90966963cfe975012a477b77393d89ff2e1e0ea1ed99085b154de7ab254/ImmuneBuilder-0.0.1.tar.gz",
     )
 
-    depends_on("python@3.9:3.9", type=("build", "run"))
+    depends_on("python@3.9:", type=("build", "run"))
     depends_on("py-setuptools", type="build")
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-requests", type=("build", "run"))
