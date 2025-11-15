@@ -59,7 +59,10 @@ class PyGrpcio(PythonPackage):
             env.prepend_path("CPATH", query.headers.directories[0])
 
     def patch(self):
-        if self.spec.satisfies("@1.34.1"):
+        # Fix missing <limits> include for GCC 11 builds (affects 1.32.0 and 1.34.1)
+        if self.spec.satisfies("@1.32.0"):
+            filter_file("#include <algorithm>", "#include <algorithm>\n#include <limits>", "third_party/abseil-cpp/absl/synchronization/internal/graphcycles.cc", string=True)
+        elif self.spec.satisfies("@1.34.1"):
             filter_file("#include <array>", "#include <array>\n#include <limits>", "third_party/abseil-cpp/absl/synchronization/internal/graphcycles.cc", string=True)
 
         filter_file("-std=gnu99", "", "setup.py")
