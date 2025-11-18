@@ -23,6 +23,8 @@ class RDelayedarray(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/DelayedArray_0.28.0.tar.gz",
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/DelayedArray/DelayedArray_0.28.0.tar.gz",
     ]
+
+    version("0.36.0", md5="57b2fd485d73f5dc5fcb65ec23e16429", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/DelayedArray_0.36.0.tar.gz")
     version("0.8.0", commit="7c23cf46558de9dbe7a42fba516a9bb660a0f19f")
     version("0.6.6", commit="bdb0ac0eee71edd40ccca4808f618fa77f595a64")
     version("0.4.1", commit="ffe932ef8c255614340e4856fc6e0b44128a27a1")
@@ -50,3 +52,5 @@ class RDelayedarray(RPackage):
     # SparseArray is required already for 0.27.x (was missing for 0.27.10)
     depends_on("r-sparsearray@1.1.10:", type=("build", "run"), when="@0.27.9:")
     depends_on("r-sparsearray@1.7.5:", type=("build", "run"), when="@0.34.1:")
+    depends_on("r-s4vectors@0.47.6", type=("build", "run"), when="@0.36.0:")
+    depends_on("r-s4arrays@1.9.3:", type=("build", "run"), when="@0.36.0:")

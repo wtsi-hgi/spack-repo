@@ -17,6 +17,7 @@ class RSummarizedexperiment(RPackage):
 	bioc = "SummarizedExperiment"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SummarizedExperiment_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SummarizedExperiment/SummarizedExperiment_1.32.0.tar.gz"]
 
+	version("1.40.0", md5="f983c78496375a418ccd4853f966d9a8", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/SummarizedExperiment_1.40.0.tar.gz")
 	version("1.38.1", md5="f63078c3d30a23757f3fd660baf29755", url="https://bioconductor.org/packages/3.21/bioc/src/contrib/SummarizedExperiment_1.38.1.tar.gz")
 	version("1.8.1", commit="9d8a29aa9c78bbc7dcc6472537e13fc0d11dc1f7")
 	version("1.6.5", commit="ec69cd5cfbccaef148a9f6abdfb3e22e888695d0")
@@ -41,6 +42,8 @@ class RSummarizedexperiment(RPackage):
 	depends_on("r-iranges@2.23.9:", type=("build", "run"))
 	depends_on("r-genomeinfodb@1.13.1:", type=("build", "run"))
 	depends_on("r-s4arrays@1.1.1:", type=("build", "run"), when="@1.30:")
+	depends_on("r-biocgenerics@0.51.3:", type=("build", "run"), when="@1.40:")
+	depends_on("r-delayedarray@0.31.2:", type=("build", "run"), when="@1.40:")
 	depends_on("r-delayedarray@0.27.1:", type=("build", "run"), when="@1.32:")
 	depends_on("r-delayedarray@0.26.3:", type=("build", "run"), when="@1.30:")
 	depends_on("r-delayedarray@0.15.10:", type=("build", "run"), when="@1.28:")
