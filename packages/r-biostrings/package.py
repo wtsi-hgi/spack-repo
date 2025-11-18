@@ -16,6 +16,7 @@ class RBiostrings(RPackage):
 	bioc = "Biostrings"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Biostrings_2.70.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Biostrings/Biostrings_2.70.3.tar.gz"]
 
+	version("2.78.0", md5="b4ec1bf212646114ef729393f6ff3855", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/Biostrings_2.78.0.tar.gz")
 	version("2.70.3", md5="26220e6e7fe79bb5cc8b8b4ac9ec9d9d")
 	version("2.70.2", md5="05f7ef342dc92d017e36f61bfce48330")
 	version("2.68.0", commit="f28b7838fb8321a9956506b3d2f4af2740bca124")

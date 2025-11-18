@@ -23,6 +23,7 @@ class RS4vectors(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/S4Vectors_0.40.2.tar.gz",
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/S4Vectors/S4Vectors_0.40.2.tar.gz",
     ]
+    version("0.48.0", tag="RELEASE_3_22")
     version("0.46.0", tag="RELEASE_3_21")
     version("0.40.2", md5="ee94f4f6c25dcaf7a50f5814495310e3")
     version("0.38.0", commit="e80c24e1481033741147a0677fb42ce455e7da74")

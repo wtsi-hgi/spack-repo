@@ -20,6 +20,7 @@ class RGenomicfeatures(RPackage):
 
 	bioc = "GenomicFeatures"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicFeatures_1.54.4.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicFeatures/GenomicFeatures_1.54.4.tar.gz"]
+	version("1.62.0", md5="a4be7ce617184bbdb12b57928b481c30", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/GenomicFeatures_1.62.0.tar.gz")
 	version("1.54.4", md5="9b4b6dcc5a7ad626796f3aad34539d29")
 	version("1.54.3", md5="ff1db6c7968d616ad62d011206144975")
 	version("1.52.0", commit="207ff08b38421f0394a8f6450e00fb8713ab463c")
