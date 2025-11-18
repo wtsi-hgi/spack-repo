@@ -54,7 +54,7 @@ class PyDeeplocrna(PythonPackage):
     depends_on("py-torchsummary@1.5.1", type=("build", "run"))
     depends_on("py-torchvision@0.14.1", type=("build", "run"))
     depends_on("py-matplotlib@3.6.3", type=("build", "run"))
-    depends_on("py-tqdm@4.62:", type=("build", "run"))
+    depends_on("py-tqdm@4.62:4.65", type=("build", "run"))
     # TensorFlow 2.4.1 (needs Python <=3.8 and typing-extensions 3.7.x)
     depends_on("py-tensorflow@2.4.1", type=("build", "run"))
     # Keras 2.2.4 requires keras-applications but it's not in the wheel deps
