@@ -17,6 +17,7 @@ class RRsamtools(RPackage):
 
 	bioc = "Rsamtools"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Rsamtools_2.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Rsamtools/Rsamtools_2.18.0.tar.gz"]
+	version("2.26.0", md5="49e2932a8f1cb9515ef3cd8a79754c11", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/Rsamtools_2.26.0.tar.gz")
 	version("2.6.0", commit="f2aea061517c5a55e314c039251ece9831c7fad2")
 	version("2.2.1", commit="f10084658b4c9744961fcacd79c0ae9a7a40cd30")
 	version("2.18.0", md5="63af2a7dd2513e992fd78b26ca2b3775")
@@ -47,3 +48,8 @@ class RRsamtools(RPackage):
 	depends_on("xz", type=("build", "link", "run"))
 	depends_on("zlib", type=("build", "link", "run"))
 	depends_on("curl", type=("build", "link", "run"))
+	depends_on("r-s4vectors@0.17.25:", type=("build", "run"), when="@2.26.0:")
+	depends_on("r-iranges@2.12.12:", type=("build", "run"), when="@2.26.0:")
+	depends_on("r-xvector@0.19.7:", type=("build", "run"), when="@2.26.0:")
+	depends_on("r-genomicranges@1.61.1:", type=("build", "run"), when="@2.26.0:")
+	depends_on("r-rhtslib@3.3.1:", type=("build", "run"), when="@2.26.0:")

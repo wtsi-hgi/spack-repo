@@ -16,6 +16,7 @@ class RCrisprdesign(RPackage):
 	bioc = "crisprDesign" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/crisprDesign_1.4.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/crisprDesign/crisprDesign_1.4.0.tar.gz"]
 
+	version("1.12.0", md5="f7e6019c5062a4a78d2f4c97de1aefa1", url="https://www.bioconductor.org/packages/3.22/bioc/src/contrib/crisprDesign_1.12.0.tar.gz")
 	version("1.4.0", md5="f4efe77ba4d8f440af21a1e80f0e1f5d")
 
 	depends_on("r@4.2:", type=("build", "run"))
@@ -35,3 +36,12 @@ class RCrisprdesign(RPackage):
 	depends_on("r-rtracklayer", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
 	depends_on("r-variantannotation", type=("build", "run"))
+	depends_on("r-biostrings@2.77.2:", type=("build", "run"), when="@1.12:")
+	depends_on("r-bsgenome@1.77.1:", type=("build", "run"), when="@1.12:")
+	depends_on("r-genomeinfodb@1.45.7:", type=("build", "run"), when="@1.12:")
+	depends_on("r-genomicfeatures@1.61.4:", type=("build", "run"), when="@1.12:")
+	depends_on("r-genomicranges@1.61.1:", type=("build", "run"), when="@1.12:")
+	depends_on("r-rtracklayer@1.69.1:", type=("build", "run"), when="@1.12:")
+	depends_on("r-variantannotation@1.55.1:", type=("build", "run"), when="@1.12:")
+	depends_on("r-seqinfo", type=("build", "run"), when="@1.12:")
+	depends_on("r-txdbmaker@1.5.6:", type=("build", "run"), when="@1.12:")

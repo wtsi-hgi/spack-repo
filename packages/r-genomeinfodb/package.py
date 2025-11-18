@@ -17,6 +17,7 @@ class RGenomeinfodb(RPackage):
 
 	bioc = "GenomeInfoDb"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomeInfoDb_1.38.8.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomeInfoDb/GenomeInfoDb_1.38.8.tar.gz"]
+	version("1.46.0", md5="a8294ee538627cf2b3f74a3a0deb9f1c", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/GenomeInfoDb_1.46.0.tar.gz")
 	version("1.38.8", md5="af0949e2aa2f19dbb1eed4d8487d9928")
 	version("1.38.6", md5="b739753a88d5a331b38744b1ad14f416")
 	version("1.36.0", commit="c380bb93a5480b48e0efbf6d107cefc10d574438")
@@ -37,3 +38,6 @@ class RGenomeinfodb(RPackage):
 	depends_on("r-iranges@2.13.12:", type=("build", "run"))
 	depends_on("r-rcurl", type=("build", "run"))
 	depends_on("r-genomeinfodbdata", type=("build", "run"))
+	depends_on("r-seqinfo@0.99.2:", type=("build", "run"))
+	depends_on("r-ucsc-utils", type=("build", "run"))
+	depends_on("r-iranges@2.41.1:", type=("build", "run"), when="@1.46:")

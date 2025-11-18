@@ -15,6 +15,7 @@ class RBsgenome(RPackage):
 	bioc = "BSgenome"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BSgenome_1.70.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BSgenome/BSgenome_1.70.2.tar.gz"]
 
+	version("1.78.0", md5="cd45c3077014361f118fc82733205c10", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/BSgenome_1.78.0.tar.gz")
 	version("1.70.2", md5="6a77e5c7815ff39c5942a4d34c05a105")
 	version("1.68.0", commit="c546020750e900377fbdeae015a01a96d5962d09")
 	version("1.66.1", commit="d1efdfa8e7242bc0f54cc1c3a9583ea555c924f6")
