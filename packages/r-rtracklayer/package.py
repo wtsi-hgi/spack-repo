@@ -49,3 +49,5 @@ class RRtracklayer(RPackage):
 	depends_on("r-restfulr@0.0.13:", type=("build", "run"))
 	depends_on("zlib", type=("build", "link", "run"))
 	depends_on("curl", type=("build", "link", "run"), when="@1.70.0:")
+	depends_on("r-httr", type=("build", "link", "run"), when="@1.70.0:")
+	depends_on("r-seqinfo", type=("build", "link", "run"), when="@1.70.0:")

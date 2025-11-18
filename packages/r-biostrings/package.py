@@ -38,3 +38,4 @@ class RBiostrings(RPackage):
 	depends_on("r-xvector", type=("build", "run"))
 	depends_on("r-genomeinfodb", type=("build", "run"))
 	depends_on("r-crayon", type=("build", "run"))
+	depends_on("r-seqinfo", type=("build", "run"), when="@2.78.0:")
