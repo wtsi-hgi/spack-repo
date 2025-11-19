@@ -24,7 +24,8 @@ class PyCaptum(PythonPackage):
 	version("0.8.0", sha256="b0465431f5cbc666d86c14ee853ee6155e97460369238f85bd10a241b87eea47", expand=False, url="https://files.pythonhosted.org/packages/7d/2d/57138b29a53d1fd267c8093989f6ec64ef55d3c6bd336fac475239c61b97/captum-0.8.0-py3-none-any.whl")
 
 	depends_on("py-setuptools", type=("build"))
-	depends_on("python@3.9:", type=("build", "run"))
+	depends_on("python@3.9:", type=("build", "run"), when="@0.8.0:")
+	depends_on("python@3.6:", type=("build", "run"))
 	depends_on("py-torch@1.10:", type=("build", "run"))
 	depends_on("py-numpy", type=("build", "run"))
 	depends_on("py-tqdm", type=("build", "run"))
