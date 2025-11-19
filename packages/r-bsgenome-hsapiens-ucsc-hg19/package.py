@@ -28,5 +28,5 @@ class RBsgenomeHsapiensUcscHg19(RPackage):
         sha256="88f515e5c27dd11d10654250e3a0a9389e4dfeb0b1c2d43419aa7086e6c516f8",
     )
 
-    depends_on("r-bsgenome@1.33.5:", type=("build", "run"))
-    depends_on("r-bsgenome@1.54.0:", type=("build", "run"), when="@1.4.3:")
+    depends_on("r-bsgenome@1.33.5:1.77", type=("build", "run"))
+    depends_on("r-bsgenome@1.54.0:1.77", type=("build", "run"), when="@1.4.3:")
