@@ -36,3 +36,4 @@ class RIranges(RPackage):
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.39.2:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
+	depends_on("r-s4vectors@0.47.6:", type=("build", "run"), when="@2.44.0:")
