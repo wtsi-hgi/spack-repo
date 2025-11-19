@@ -40,5 +40,7 @@ class RBsgenome(RPackage):
 	depends_on("r-matrixstats", type=("build", "run"))
 	depends_on("r-xvector", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))
+	depends_on("r-rsamtools@:2.25.0", type=("build", "run"), when="@:1.77")
+	depends_on("r-rsamtools@2.25.1:", type=("build", "run"), when="@1.78.0:")
 	depends_on("r-seqinfo", type=("build", "run"), when="@1.78.0:")
 	depends_on("r-rtracklayer@1.69:", type=("build", "run"), when="@1.78.0:")
