@@ -39,7 +39,7 @@ class RGenomeinfodb(RPackage):
 	depends_on("r-rcurl", type=("build", "run"))
 	depends_on("r-genomeinfodbdata", type=("build", "run"))
 	depends_on("r-seqinfo@0.99.2:", type=("build", "run"), when="@1.46.0:")
-	depends_on("r-ucsc-utils", type=("build", "run"))
+	depends_on("r-ucsc-utils", type=("build", "run"), when="@1.46.0:")
 	depends_on("r-iranges@2.41.1:", type=("build", "run"), when="@1.46.0:")
 	depends_on("r-s4vectors@0.47.6:", type=("build", "run"), when="@1.46.0:")
 	depends_on("r-iranges@2.41.1:", type=("build", "run"), when="@1.46.0:")
