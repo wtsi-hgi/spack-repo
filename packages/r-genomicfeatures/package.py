@@ -52,3 +52,4 @@ class RGenomicfeatures(RPackage):
 	depends_on("r-rtracklayer@1.51.5:", type=("build", "run"))
 	depends_on("r-biomart@2.58.2:", type=("build", "run"))
 	depends_on("r-biobase@2.15.1:", type=("build", "run"))
+	depends_on("r-rtracklayer@1.69.1:", type=("build", "run"), when="@1.62:")
