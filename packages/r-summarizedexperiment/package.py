@@ -50,4 +50,4 @@ class RSummarizedexperiment(RPackage):
 	depends_on("r-delayedarray@0.15.10:", type=("build", "run"), when="@1.20:")
 	depends_on("r-delayedarray@0.3.20:", type=("build", "run"), when="@1.8.0:")
 	depends_on("r-delayedarray@0.1.9:", type=("build", "run"), when="@1.6.0:")
-	depends_on("r-seqinfo", type=("build", "run"), when="@1.6.0:")
+	depends_on("r-seqinfo", type=("build", "run"), when="@1.40.0:")
