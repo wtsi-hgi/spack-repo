@@ -52,5 +52,5 @@ class RDelayedarray(RPackage):
     # SparseArray is required already for 0.27.x (was missing for 0.27.10)
     depends_on("r-sparsearray@1.1.10:", type=("build", "run"), when="@0.27.9:")
     depends_on("r-sparsearray@1.7.5:", type=("build", "run"), when="@0.34.1:")
-    depends_on("r-s4vectors@0.47.6", type=("build", "run"), when="@0.36.0:")
+    depends_on("r-s4vectors@0.47.6:", type=("build", "run"), when="@0.36.0:")
     depends_on("r-s4arrays@1.9.3:", type=("build", "run"), when="@0.36.0:")
