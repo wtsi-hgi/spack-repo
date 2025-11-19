@@ -41,6 +41,7 @@ class PyDeeplocrna(PythonPackage):
 
     # Runtime requirements (based on PyPI metadata). Keep unpinned to allow
     # Spack to resolve compatible versions; gate version-specific extras.
+    depends_on("py-captum@0.6.0", type=("build", "run"))
     depends_on("py-gin-config@0.5.0", type=("build", "run"))
     depends_on("py-h5py@2.10.0", type=("build", "run"))
     depends_on("py-keras@2.2.4", type=("build", "run"))
