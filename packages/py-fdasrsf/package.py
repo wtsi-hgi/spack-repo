@@ -9,7 +9,7 @@ from spack.package import *
 class PyFdasrsf(PythonPackage):
 	"""functional data analysis using the square root slope framework"""
 	
-	homepage = "http://research.tetonedge.net"
+	homepage = "https://github.com/jdtuck/fdasrsf_python"
 	pypi = "fdasrsf/fdasrsf-2.6.5.tar.gz" 
 
 	version("1.0.0", sha256="de60340ae203656e20d1e6348e14e63bc60839f4c46c32222ac64f4ccc429f5f")
