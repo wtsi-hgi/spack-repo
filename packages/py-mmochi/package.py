@@ -28,7 +28,6 @@ class PyMmochi(PythonPackage):
     depends_on("py-pydot@1.4.2:", type=("build", "run"))
     depends_on("py-tqdm@4.64.0:", type=("build", "run"))
     depends_on("py-scikit-fda@0.5:", type=("build", "run"))
-    depends_on("py-scikit-fda@0.5:", type=("build", "run"))
     depends_on("py-seaborn@0.12.2:", type=("build", "run"))
     depends_on("py-ipython@8.4.0:", type=("build", "run"))
     depends_on("py-ipykernel@6.18.0:", type=("build", "run"))
