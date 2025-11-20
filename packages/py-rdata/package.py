@@ -31,7 +31,8 @@ class PyRdata(PythonPackage):
 	version("0.9.1", sha256="c510aa4b8b1c48b43e77198cdc80c36a1f5f989a24d24e202803395158d06b22", expand=False, url="https://files.pythonhosted.org/packages/9a/01/d4170fcd7bc4302a447d57aaef0e35774fac446cb7ac9335a10a2796e00e/rdata-0.9.1-py3-none-any.whl")
 	version("1.0.0", sha256="b671e31676e158dc215297595d5085aee1674b91be3c26e38638ca056167d402", expand=False, url="https://files.pythonhosted.org/packages/29/b6/aec7624eb1db90e58b7fa34ab6491ee06385020bbb9598d4b8a28051da81/rdata-1.0.0-py3-none-any.whl")
 
-	depends_on("python@3.11:", type=("build", "run"))
+	depends_on("python@3.9:", type=("build", "run"))
+	depends_on("python@3.11:", type=("build", "run"), when="@1.0.0:")
 	depends_on("py-numpy", type=("build", "run"))
 	depends_on("py-xarray", type=("build", "run"))
 	depends_on("py-pandas", type=("build", "run"))
