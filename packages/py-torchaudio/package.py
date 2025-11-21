@@ -127,6 +127,11 @@ class PyTorchaudio(PythonPackage):
 
     def patch(self):
         # Add missing rpaths, which requires patching due to hardcoded cmake_args
+        prefix = ""
+
+        if self.spec.satisfies("@:0.11"):
+            prefix = "build_"
+
         if self.spec.satisfies("@0.8:"):
             rpaths = [f"{python_platlib}/torchaudio/lib", f"{python_platlib}/torio/lib"]
             cmake_args = [
@@ -137,7 +142,7 @@ class PyTorchaudio(PythonPackage):
             filter_file(
                 "cmake_args = [",
                 f"cmake_args = [{cmake_str},",
-                "tools/setup_helpers/extension.py",
+                prefix+"tools/setup_helpers/extension.py",
                 string=True,
             )
 
