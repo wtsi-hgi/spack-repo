@@ -13,7 +13,9 @@ class RUcscUtils(RPackage):
     bioc = "UCSC.utils"
 
     version("1.6.0", sha256="3ec811f3bddb736f762db888cc26dcf98b0d21659a939580490551bd46238b7a")
+    version("1.4.0", sha256="db2680cf8a94a2119783905487b5a9711006c295641f415cf4e79235c83d1a26", url="https://bioconductor.org/packages/3.21/bioc/src/contrib/UCSC.utils_1.4.0.tar.gz")
 
     depends_on("r-httr", type=("build", "run"))
     depends_on("r-jsonlite", type=("build", "run"))
-    depends_on("r-s4vectors@0.47.6:", type=("build", "run"))
+    depends_on("r-s4vectors@:0.47.5", type=("build", "run"), when="@:1.5")
+    depends_on("r-s4vectors@0.47.6:", type=("build", "run"), when="@1.6.0:")

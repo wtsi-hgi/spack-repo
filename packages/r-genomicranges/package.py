@@ -23,6 +23,7 @@ class RGenomicranges(RPackage):
 	bioc = "GenomicRanges"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicRanges_1.54.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicRanges/GenomicRanges_1.54.1.tar.gz"]
 	version("1.62.0", md5="a092719dd4b8e30d756ea0471325d0e0", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/GenomicRanges_1.62.0.tar.gz")
+	version("1.60.0", md5="2d23aae0eb9d1bacef038d3c07b6e547", url="https://www.bioconductor.org/packages/3.21/bioc/src/contrib/GenomicRanges_1.60.0.tar.gz")
 	version("1.54.1", md5="19fe37133cae70c1c3a1a164e6c8eaed")
 	version("1.52.0", commit="883f125ea593099293dc808ec2188be3cbdbd3a7")
 	version("1.50.1", commit="6b3fb388ec038fb43f3cd26684ce778ee0e80e81")
@@ -41,4 +42,5 @@ class RGenomicranges(RPackage):
 	depends_on("r-iranges", type=("build", "run"))
 	depends_on("r-genomeinfodb@1.15.2:", type=("build", "run"))
 	depends_on("r-xvector@0.29.2:", type=("build", "run"))
+	depends_on("r-genomeinfodb@1.43.1:", type=("build", "run"), when="@1.60.0:")
 	depends_on("r-seqinfo", type=("build", "run"), when="@1.62.0:")

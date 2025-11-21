@@ -26,7 +26,8 @@ class RRhtslib(RPackage):
 	#			 Please, commit your changes or stash them before you can switch
 	#			 branches.
 	#			 Aborting
-	version("3.3.1", md5="e832528219ddfe8adb8c0f0ac4ba29bc", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/Rhtslib_3.6.0.tar.gz")
+	version("3.6.0", md5="e832528219ddfe8adb8c0f0ac4ba29bc", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/Rhtslib_3.6.0.tar.gz")
+	version("3.4.0", md5="5f9e5b7a15bb67e60351b5896254cfec", url="https://bioconductor.org/packages/3.21/bioc/src/contrib/Rhtslib_3.4.0.tar.gz")
 	version("2.4.1", md5="b7d295a694e865f4f4060c94c4bca446")
 	version("2.0.0", commit="1757333eb88625158505e5fa47840081110cf8a4")
 	version("1.8.0", commit="3b5493473bed42958614091c58c739932ffcfa79")

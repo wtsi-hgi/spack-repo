@@ -21,6 +21,7 @@ class RGenomicfeatures(RPackage):
 	bioc = "GenomicFeatures"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicFeatures_1.54.4.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicFeatures/GenomicFeatures_1.54.4.tar.gz"]
 	version("1.62.0", md5="a4be7ce617184bbdb12b57928b481c30", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/GenomicFeatures_1.62.0.tar.gz")
+	version("1.60.0", md5="32c5edbeb6a77626d6c0dce5922e1b4a", url="https://bioconductor.org/packages/3.21/bioc/src/contrib/GenomicFeatures_1.60.0.tar.gz")
 	version("1.54.4", md5="9b4b6dcc5a7ad626796f3aad34539d29")
 	version("1.54.3", md5="ff1db6c7968d616ad62d011206144975")
 	version("1.52.0", commit="207ff08b38421f0394a8f6450e00fb8713ab463c")
@@ -52,4 +53,7 @@ class RGenomicfeatures(RPackage):
 	depends_on("r-rtracklayer@1.51.5:", type=("build", "run"))
 	depends_on("r-biomart@2.58.2:", type=("build", "run"))
 	depends_on("r-biobase@2.15.1:", type=("build", "run"))
+	depends_on("r-biocgenerics@0.51.2:", type=("build", "run"), when="@1.60:")
+	depends_on("r-iranges@2.37.1:", type=("build", "run"), when="@1.60:")
+	depends_on("r-genomicranges@1.55.2:", type=("build", "run"), when="@1.60:")
 	depends_on("r-rtracklayer@1.69.1:", type=("build", "run"), when="@1.62:")
