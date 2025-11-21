@@ -16,6 +16,7 @@ class RMungesumstats(RPackage):
 	bioc = "MungeSumstats" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MungeSumstats_1.10.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MungeSumstats/MungeSumstats_1.10.1.tar.gz"]
 
+	version("1.16.0", md5="4a67d67e8cfb43cb9a231d53610b1f4d", url="https://www.bioconductor.org/packages/3.21/bioc/src/contrib/MungeSumstats_1.16.0.tar.gz")
 	version("1.10.1", md5="9164f3e5c8e7612c387b35bff82dc4cc")
 
 	depends_on("r@4.1:", type=("build", "run"))
@@ -35,3 +36,4 @@ class RMungesumstats(RPackage):
 	depends_on("r-jsonlite", type=("build", "run"))
 	depends_on("r-rtracklayer@1.59.1:", type=("build", "run"))
 	depends_on("r-rcurl", type=("build", "run"))
+	depends_on("r-ieugwasr@1.01:", type=("build", "run"), when="@1.16:")
