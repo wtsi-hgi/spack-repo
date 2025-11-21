@@ -15,6 +15,7 @@ class RVariantannotation(RPackage):
 	bioc = "VariantAnnotation"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/VariantAnnotation_1.48.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/VariantAnnotation/VariantAnnotation_1.48.1.tar.gz"]
 	version("1.56.0", md5="d775bb0b91c65a871bcf107844e0da9f", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/VariantAnnotation_1.56.0.tar.gz")
+	version("1.54.1", md5="fa87a1d665f6cc10417b53bf4f289b89", url="https://bioconductor.org/packages/3.21/bioc/src/contrib/VariantAnnotation_1.54.1.tar.gz")
 	version("1.48.1", md5="39b6f4907fe37495a903c338e6d4cc73")
 	version("1.46.0", commit="80d43e024bead5afd48cb86910ba4670d8d37424")
 	version("1.44.0", commit="2e7e0a3b7c1918c0d64170dc7c173a636d3764f4")
@@ -50,4 +51,5 @@ class RVariantannotation(RPackage):
 	depends_on("curl", type=("build", "link", "run"))
 	depends_on("bzip2", type=("build", "link", "run"))
 	depends_on("xz", type=("build", "link", "run"))
+	depends_on("r-rhtslib@2.99.3:", type=("build", "run"), when="@1.54:")
 	depends_on("r-summarizedexperiment@1.39.1:", type=("build", "run"), when="@1.56.0:")

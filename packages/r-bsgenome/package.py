@@ -36,7 +36,7 @@ class RBsgenome(RPackage):
 	depends_on("r-genomicranges@1.31.10:1.61.0", type=("build", "run"))
 	depends_on("r-biostrings@2.47.6:2.77.0", type=("build", "run"))
 	depends_on("r-biocio", type=("build", "run"))
-	depends_on("r-rtracklayer@1.39.7:1.68", type=("build", "run"), when="@:1.78.0")
+	depends_on("r-rtracklayer@1.39.7:1.68", type=("build", "run"), when="@:1.77")
 	depends_on("r-matrixstats", type=("build", "run"))
 	depends_on("r-xvector", type=("build", "run"))
 	depends_on("r-rsamtools", type=("build", "run"))

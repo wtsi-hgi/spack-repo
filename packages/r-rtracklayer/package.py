@@ -19,6 +19,7 @@ class RRtracklayer(RPackage):
 	bioc = "rtracklayer"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rtracklayer_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rtracklayer/rtracklayer_1.62.0.tar.gz"]
 	version("1.70.0", md5="0a9a0883305a887f70a1afe8d1a51544", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/rtracklayer_1.70.0.tar.gz")
+	version("1.68.0", md5="5ab268c04d5423c6ad4c27ddc671c90d", url="https://bioconductor.org/packages/3.21/bioc/src/contrib/rtracklayer_1.68.0.tar.gz")
 	version("1.62.0", md5="a16a9ca02e49808b38823899860abdb6")
 	version("1.60.0", commit="de35bc03116fc7ad30f0e425b41715c3cb2e783b")
 	version("1.58.0", commit="54a74972c08775fdf1e83e6e22cd0b8fad677fc1")
@@ -48,6 +49,6 @@ class RRtracklayer(RPackage):
 	depends_on("r-biocio", type=("build", "run"))
 	depends_on("r-restfulr@0.0.13:", type=("build", "run"))
 	depends_on("zlib", type=("build", "link", "run"))
-	depends_on("curl", type=("build", "link", "run"), when="@1.70.0:")
+	depends_on("curl", type=("build", "link", "run"))
 	depends_on("r-httr", type=("build", "link", "run"), when="@1.70.0:")
 	depends_on("r-seqinfo", type=("build", "link", "run"), when="@1.70.0:")
