@@ -24,6 +24,7 @@ class PyMatplotlib(PythonPackage):
         "mpl_toolkits.mplot3d.tests",
     ]
 
+    version("3.10.7", sha256="a06ba7e2a2ef9131c79c49e63dad355d2d878413a0376c1727c8b9335ff731c7")
     version("3.8.4", sha256="8aac397d5e9ec158960e31c381c5ffc52ddd52bd9a47717e2a694038167dffea")
     version("3.8.2", sha256="01a978b871b881ee76017152f1f1a0cbf6bd5f7b8ff8c96df0df1bd57d8755a1")
     version("3.8.1", sha256="044df81c1f6f3a8e52d70c4cfcb44e77ea9632a10929932870dfaa90de94365d")
@@ -133,6 +134,7 @@ class PyMatplotlib(PythonPackage):
     # https://matplotlib.org/stable/devel/dependencies.html
     # Runtime dependencies
     # Mandatory dependencies
+    depends_on("python@3.10:", when="@3.10:", type=("build", "link", "run"))
     depends_on("python@3.9:", when="@3.8:", type=("build", "link", "run"))
     depends_on("python@3.8:", when="@3.6:", type=("build", "link", "run"))
     depends_on("python", type=("build", "link", "run"))
@@ -141,7 +143,9 @@ class PyMatplotlib(PythonPackage):
     depends_on("py-fonttools@4.22:", when="@3.5:", type=("build", "run"))
     depends_on("py-kiwisolver@1.3.1:", when="@3.8.1:", type=("build", "run"))
     depends_on("py-kiwisolver@1.0.1:", when="@2.2:", type=("build", "run"))
-    # Matplotlib 3.8+ is compatible with NumPy 2.x; allow >=1.21
+    # Matplotlib 3.10+ requires newer NumPy releases, earlier 3.8+ builds remain
+    # compatible with NumPy 2.x as long as >=1.21 is provided.
+    depends_on("py-numpy@1.23:", when="@3.10:", type=("build", "link", "run"))
     depends_on("py-numpy@1.21:", when="@3.8:", type=("build", "link", "run"))
     depends_on("py-numpy@1.20:", when="@3.7:", type=("build", "link", "run"))
     depends_on("py-numpy@1.19:", when="@3.6:", type=("build", "link", "run"))
@@ -153,6 +157,7 @@ class PyMatplotlib(PythonPackage):
     depends_on("py-packaging", when="@3.5:", type=("build", "run"))
     depends_on("pil@8:", when="@3.8.1:", type=("build", "run"))
     depends_on("pil@6.2:", when="@3.3:", type=("build", "run"))
+    depends_on("py-pyparsing@3:", when="@3.10:", type=("build", "run"))
     depends_on("py-pyparsing@2.3.1:3.0", when="@3.7.2", type=("build", "run"))
     depends_on("py-pyparsing@2.3.1:", when="@3.7:", type=("build", "run"))
     depends_on("py-pyparsing@2.2.1:", when="@3.4:", type=("build", "run"))
@@ -228,7 +233,11 @@ class PyMatplotlib(PythonPackage):
     # Setup dependencies
     depends_on("py-certifi@2020.6.20:", when="@3.3.1:", type="build")
     depends_on("py-numpy@1.25:", when="@3.8:", type="build")
-    depends_on("py-pybind11@2.6:", when="@3.7:", type="build")
+    depends_on(
+        "py-pybind11@2.13.2:2.13.2,2.13.4:", when="@3.10:", type="build"
+    )
+    depends_on("py-pybind11@2.6:", when="@3.7:3.9", type="build")
+    depends_on("py-meson-python@0.13.1:0.16", when="@3.10:", type="build")
     depends_on("py-setuptools@64:", when="@3.8.1:", type="build")
     depends_on("py-setuptools@42:", when="@3.8:", type="build")
     depends_on("py-setuptools@42:", when="@3.7.2:3.7", type="build")
