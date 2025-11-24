@@ -55,7 +55,7 @@ class PyStatsmodels(PythonPackage):
     depends_on("py-numpy@1.15:", when="@0.12.1:", type=("build", "link", "run"))
     depends_on("py-numpy@1.11:", when="@0.10.1:", type=("build", "link", "run"))
     # https://github.com/statsmodels/statsmodels/issues/9194
-    depends_on("py-numpy@:1", when="@:0.14.1", type=("build", "link", "run"))
+    depends_on("py-numpy@:1", when="@:0.13.5", type=("build", "link", "run"))
     depends_on("py-scipy@1.4:", when="@0.13.5:", type=("build", "run"))
     conflicts("^py-scipy@1.9.2")
     depends_on("py-scipy@1.3:", when="@0.13:", type=("build", "run"))
@@ -71,6 +71,21 @@ class PyStatsmodels(PythonPackage):
     depends_on("py-packaging@21.3:", when="@0.13.2:", type=("build", "run"))
 
     depends_on("py-pytest", type="test")
+
+    def patch(self):
+        # NumPy 2 removed np.int_t aliases; use explicit 64-bit ints instead.
+        if self.spec.satisfies("@:0.14.1"):
+            filter_file(
+                "ctypedef np.int_t INT",
+                "ctypedef np.int64_t INT",
+                "statsmodels/nonparametric/linbin.pyx",
+                string=True,
+            )
+
+    def setup_build_environment(self, env):
+        super().setup_build_environment(env)
+        if self.spec.satisfies("@:0.14.1 ^py-numpy@2:"):
+            env.append_flags("CFLAGS", "-DCYTHON_CCOMPLEX=0")
 
     @run_before("install")
     def remove_generated_sources(self):
