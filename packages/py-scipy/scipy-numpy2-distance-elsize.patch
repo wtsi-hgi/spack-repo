@@ -1,0 +1,20 @@
+--- a/scipy/spatial/src/distance_wrap.c
++++ b/scipy/spatial/src/distance_wrap.c
+@@ -637,7 +637,7 @@
+   }
+   NPY_BEGIN_ALLOW_THREADS;
+   n = PyArray_DIMS(M_)[0];
+-  elsize = PyArray_DESCR(M_)->elsize;
++  elsize = PyDataType_ELSIZE(PyArray_DESCR(M_));
+   if (elsize == 8) {
+     dist_to_squareform_from_vector_double(
+         (double*)PyArray_DATA(M_), (const double*)PyArray_DATA(v_), n);
+@@ -665,7 +665,7 @@
+     M = (const char*)PyArray_DATA(M_);
+     v = (char*)PyArray_DATA(v_);
+     n = PyArray_DIMS(M_)[0];
+-    s = PyArray_DESCR(M_)->elsize;
++    s = PyDataType_ELSIZE(PyArray_DESCR(M_));
+     dist_to_vector_from_squareform(M, v, n, s);
+     NPY_END_ALLOW_THREADS;
+   }

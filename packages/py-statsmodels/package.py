@@ -6,6 +6,7 @@
 import glob
 import os
 
+from llnl.util.filesystem import filter_file
 from spack.package import *
 
 
@@ -54,11 +55,23 @@ class PyStatsmodels(PythonPackage):
     depends_on("py-numpy@1.17:", when="@0.13:", type=("build", "link", "run"))
     depends_on("py-numpy@1.15:", when="@0.12.1:", type=("build", "link", "run"))
     depends_on("py-numpy@1.11:", when="@0.10.1:", type=("build", "link", "run"))
-    # https://github.com/statsmodels/statsmodels/issues/9194
-    depends_on("py-numpy@:1", when="@:0.14.1", type=("build", "link", "run"))
     depends_on("py-scipy@1.4:", when="@0.13.5:", type=("build", "run"))
     conflicts("^py-scipy@1.9.2")
     depends_on("py-scipy@1.3:", when="@0.13:", type=("build", "run"))
+
+    def patch(self):
+        if self.spec.satisfies("@0.14.0"):
+            filter_file(
+                "np.int_t",
+                "np.intp_t",
+                "statsmodels/nonparametric/linbin.pyx",
+                string=True,
+            )
+
+    def setup_build_environment(self, env):
+        if self.spec.satisfies("@0.14.0"):
+            env.append_flags("CFLAGS", "-DCYTHON_CCOMPLEX=0")
+            env.append_flags("CPPFLAGS", "-DCYTHON_CCOMPLEX=0")
     depends_on("py-scipy@1.2:", when="@0.12:", type=("build", "run"))
     depends_on("py-scipy@0.18:", when="@0.10.1:", type=("build", "run"))
     depends_on("py-pandas@1:", when="@0.14:", type=("build", "run"))

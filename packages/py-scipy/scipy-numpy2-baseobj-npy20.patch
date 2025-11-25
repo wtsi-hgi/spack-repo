@@ -1,0 +1,12 @@
+--- a/scipy/io/matlab/numpy_rephrasing.h
++++ b/scipy/io/matlab/numpy_rephrasing.h
+@@ -1,5 +1,9 @@
+ #include <numpy/arrayobject.h>
++#if NPY_ABI_VERSION < 0x02000000
+ #define PyArray_Set_BASE(arr, obj) PyArray_BASE(arr) = obj
++#else
++#define PyArray_Set_BASE PyArray_SetBaseObject
++#endif
+ #define PyArray_PyANewFromDescr(descr, nd, dims, data, parent)                 \
+         PyArray_NewFromDescr(&PyArray_Type, descr, nd, dims,                  \
+                              NULL, data, 0, parent)

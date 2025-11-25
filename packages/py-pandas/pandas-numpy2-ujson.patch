@@ -1,0 +1,12 @@
+--- a/pandas/_libs/src/vendored/ujson/python/objToJSON.c
++++ b/pandas/_libs/src/vendored/ujson/python/objToJSON.c
+@@ -407,7 +407,8 @@
+   }
+ 
+   npyarr->array = (PyObject *)obj;
+-  npyarr->getitem = (PyArray_GetItemFunc *)PyArray_DESCR(obj)->f->getitem;
++  npyarr->getitem =
++      (PyArray_GetItemFunc *)PyDataType_GetArrFuncs(PyArray_DESCR(obj))->getitem;
+   npyarr->dataptr = PyArray_DATA(obj);
+   npyarr->ndim = PyArray_NDIM(obj) - 1;
+   npyarr->curdim = 0;

@@ -3,6 +3,7 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 
+from llnl.util.filesystem import filter_file
 from spack.package import *
 
 
@@ -110,7 +111,7 @@ class PyScipy(PythonPackage):
         depends_on("py-numpy@1.23.5:2.4", when="@1.15:")
         depends_on("py-numpy@1.23.5:2.2", when="@1.14")
         depends_on("py-numpy@1.22.4:2.2", when="@1.13")
-        depends_on("py-numpy@1.22.4:1.28", when="@1.12")
+        depends_on("py-numpy@1.22.4:", when="@1.12")
         depends_on("py-numpy@1.21.6:1.27", when="@1.11")
         depends_on("py-numpy@1.19.5:1.26", when="@1.10")
         depends_on("py-numpy@1.18.5:1.25", when="@1.9")
@@ -196,6 +197,8 @@ class PyScipy(PythonPackage):
         sha256="37209324c6c2d9bf9284bf4726ec3ea7ecafabf736c7a72cf6789af97aebd30b",
         when="@1.8.0:1.14.0",
     )
+    patch("scipy-numpy2-baseobj-npy20.patch", when="@1.12")
+    patch("scipy-numpy2-distance-elsize.patch", when="@1.12")
 
     @property
     def archive_files(self):
@@ -216,6 +219,28 @@ class PyScipy(PythonPackage):
                 with open("setup.cfg", "w") as f:
                     f.write("[config_fc]\n")
                     f.write("fcompiler = intelem\n")
+
+    def patch(self):
+        if self.spec.satisfies("@1.12.0"):
+            replacements = [
+                (
+                    "PyArray_DESCR(curx->ao)->f->copyswap",
+                    "PyDataType_GetArrFuncs(PyArray_DESCR(curx->ao))->copyswap",
+                    "scipy/signal/_correlate_nd.c.in",
+                ),
+                (
+                    "PyArray_DESCR((PyArrayObject *)x)->f->copyswap",
+                    "PyDataType_GetArrFuncs(PyArray_DESCR((PyArrayObject *)x))->copyswap",
+                    "scipy/signal/_lfilter.c.in",
+                ),
+                (
+                    "PyArray_DESCR(ret)->f->copyswap",
+                    "PyDataType_GetArrFuncs(PyArray_DESCR(ret))->copyswap",
+                    "scipy/signal/_sigtoolsmodule.c",
+                ),
+            ]
+            for old, new, relpath in replacements:
+                filter_file(old, new, relpath, string=True)
 
     def setup_build_environment(self, env) -> None:
         # https://github.com/scipy/scipy/issues/9080

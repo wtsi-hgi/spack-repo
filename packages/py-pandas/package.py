@@ -4,6 +4,7 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 
+from llnl.util.filesystem import filter_file
 from spack.package import *
 
 
@@ -69,6 +70,8 @@ class PyPandas(PythonPackage):
     version("0.25.2", sha256="ca91a19d1f0a280874a24dca44aadce42da7f3a7edb7e9ab7c7baad8febee2be")
     version("0.24.2", sha256="4f919f409c433577a501e023943e582c57355d50a724c589e78bc1d551a535a2")
 
+    patch("pandas-numpy2-ujson.patch", when="@2.2.0:2.2.1")
+
     # depends_on("c", type="build")
 
     variant("performance", default=True, description="Build recommended performance dependencies")
@@ -106,8 +109,6 @@ class PyPandas(PythonPackage):
     depends_on("py-numpy@1.13.3:", when="@1.0", type=("build", "run"))
     # 'NUMPY_IMPORT_ARRAY_RETVAL' was removed in numpy@1.19
     depends_on("py-numpy@1.13.3:1.18", when="@0.25", type=("build", "run"))
-    # https://github.com/pandas-dev/pandas/issues/55519
-    depends_on("py-numpy@:1", when="@:2.2.1", type=("build", "run"))
     depends_on("py-python-dateutil@2.8.2:", when="@2:", type=("build", "run"))
     depends_on("py-python-dateutil@2.8.1:", when="@1.4:", type=("build", "run"))
     depends_on("py-python-dateutil@2.7.3:", when="@1.1:", type=("build", "run"))
@@ -158,3 +159,21 @@ class PyPandas(PythonPackage):
     depends_on("py-setuptools@51:", when="@1.3.2:1", type="build")
     depends_on("py-setuptools@38.6:", when="@1.3.0:1.3.1", type="build")
     depends_on("py-setuptools@24.2:", when="@:1.2", type="build")
+
+    def patch(self):
+        if self.spec.satisfies("@2.2.0:2.2.1"):
+            filter_file(
+                "  return (((PyArray_DatetimeDTypeMetaData *)dtype->c_metadata)->meta);\n",
+                """#if NPY_ABI_VERSION >= 0x02000000
+#define PANDAS_PyDataType_C_METADATA(dtype) ((_PyArray_LegacyDescr *)(dtype))->c_metadata
+#else
+#define PANDAS_PyDataType_C_METADATA(dtype) ((dtype)->c_metadata)
+#endif
+  PyArray_DatetimeMetaData meta =
+      ((PyArray_DatetimeDTypeMetaData *)PANDAS_PyDataType_C_METADATA(dtype))->meta;
+#undef PANDAS_PyDataType_C_METADATA
+  return meta;
+""",
+                "pandas/_libs/src/vendored/numpy/datetime/np_datetime.c",
+                string=True,
+            )
