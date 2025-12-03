@@ -17,7 +17,7 @@ class RGenomeinfodb(RPackage):
 
 	bioc = "GenomeInfoDb"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomeInfoDb_1.38.8.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomeInfoDb/GenomeInfoDb_1.38.8.tar.gz"]
-	version("1.46.0", md5="a8294ee538627cf2b3f74a3a0deb9f1c", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/GenomeInfoDb_1.46.0.tar.gz")
+	version("1.46.0", md5="a8294ee538627cf2b3f74a3a0deb9f1c", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/GenomeInfoDb/GenomeInfoDb_1.46.0.tar.gz")
 	version("1.44.1", md5="4e6239a6ac445252b5dbfe26856c1461", url="https://bioconductor.org/packages/3.21/bioc/src/contrib/GenomeInfoDb_1.44.3.tar.gz")
 	version("1.38.8", md5="af0949e2aa2f19dbb1eed4d8487d9928")
 	version("1.38.6", md5="b739753a88d5a331b38744b1ad14f416")
