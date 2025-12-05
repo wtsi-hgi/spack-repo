@@ -18,9 +18,10 @@ class PyBlosc2(PythonPackage):
     version("2.2.8", sha256="59065aac5e9b01b0e9f3825d8e7f69f64b59bbfab148a47c54e4115f62a97474")
     version("2.0.0", sha256="f19b0b3674f6c825b490f00d8264b0c540c2cdc11ec7e81178d38b83c57790a1")
 
-    depends_on("python@3.9.18:3", when="@2.6:", type=("build", "link", "run"))
-    depends_on("python@3.9:3", when="@2.2:", type=("build", "link", "run"))
-    depends_on("python@3.8:3", when="@2.0", type=("build", "link", "run"))
+    # upstream metadata requires >=3.10 for 2.6.x, >=3.9 for 2.2.x, >=3.8 for 2.0.x
+    depends_on("python@3.10:", when="@2.6:", type=("build", "link", "run"))
+    depends_on("python@3.9:", when="@2.2:2.5", type=("build", "link", "run"))
+    depends_on("python@3.8:", when="@2.0", type=("build", "link", "run"))
     depends_on("py-setuptools", type="build")
     depends_on("py-scikit-build", type="build")
     depends_on("py-cython", type="build")
@@ -29,6 +30,7 @@ class PyBlosc2(PythonPackage):
     depends_on("py-numpy@1.20.3:", type=("build", "link", "run"))
     depends_on("py-ndindex@1.4:", when="@2.2:", type=("build", "run"))
     depends_on("py-msgpack", type=("build", "run"))
+    depends_on("py-numexpr", type=("build", "run"))
     depends_on("py-py-cpuinfo", when="@2.2:", type=("build", "run"))
     depends_on("c-blosc2", type="link")
 

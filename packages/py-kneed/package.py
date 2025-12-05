@@ -16,6 +16,5 @@ class PyKneed(PythonPackage):
     version("0.8.5", sha256="a4847ac4f1d04852fea278d5de7aa8bfdc3beb7fbca4a182fec0f0efee43f4b1")
 
     depends_on("py-setuptools", type="build")
-    depends_on("python@3.9", type=("build", "run"))
-
+    depends_on("python@3.5:", type=("build", "run"))
     depends_on("py-hatchling", type=("build", "run"))

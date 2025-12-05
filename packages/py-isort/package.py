@@ -21,8 +21,9 @@ class PyIsort(PythonPackage):
 
     variant("colors", default=False, description="Install colorama for --color support")
 
-    depends_on("python@3.6.1:3", type=("build", "run"), when="@5:")
-    depends_on("python@2.7:2.8,3.4:", type=("build", "run"), when="@4.3:")
-    depends_on("python@2.6:2.8,3.3:", type=("build", "run"))
+    depends_on("python@3.8:", type=("build", "run"), when="@5.12:")
+    depends_on("python@3.6.1:", type=("build", "run"), when="@5:5.11")
+    depends_on("python@2.7:2.8,3.4:", type=("build", "run"), when="@4.3:4")
+    depends_on("python@2.6:2.8,3.3:", type=("build", "run"), when="@:4.2")
     depends_on("py-poetry-core@1:", type="build")
     depends_on("py-colorama@0.4.3:0.4", type=("build", "run"), when="+colors")
