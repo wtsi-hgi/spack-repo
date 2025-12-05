@@ -22,11 +22,24 @@ class PyPyreadr(PythonPackage):
     version("0.4.5", sha256="d2981c10be4266d852f65b75f5be0527212c0979e4d6c376eaa987674cedf406")
     version("0.4.4", sha256="690a6d87f25b6b211bad0d73fe0c9be87718e62329b142d835eadd951982c6ad")
 
-    depends_on("python@3.9.9")
+    depends_on("python@3.6:", type=("build", "run"))
 
+    depends_on("bzip2")
+    depends_on("xz")
+    depends_on("zlib")
     depends_on("py-setuptools", type="build")
+    depends_on("py-pandas@0.24.2:", type=("build", "run"))
     depends_on("py-cython@3.0.0:", type="build", when="@0.5.0:")
     depends_on("py-cython@0.29.36", type="build", when="@:0.4.99")
     depends_on("py-wheel", type="build")
     # depends_on("py-flit-core", type="build")
     # depends_on("py-poetry-core", type="build")
+
+    def setup_build_environment(self, env):
+        for dep in ("bzip2", "xz", "zlib"):
+            headers = self.spec[dep].headers
+            libs = self.spec[dep].libs
+            if headers:
+                env.append_flags("CPPFLAGS", headers.cpp_flags)
+            if libs:
+                env.append_flags("LDFLAGS", libs.ld_flags)
