@@ -11,6 +11,7 @@ class PyRecaptchaClient(PythonPackage):
 
     homepage = "https://pypi.org/project/recaptcha-client/"
     pypi = "recaptcha-client/recaptcha-client-1.0.6.tar.gz"
+    license = "MIT"
 
     import_modules = ["recaptcha.client.captcha"]
 
@@ -21,6 +22,7 @@ class PyRecaptchaClient(PythonPackage):
     version("1.0.5", sha256="f3801b62f9c1d083164bc0e1e52c847adebd423c5cbb170f2ff40d681ef3a86e")
     version("1.0.6", sha256="28c6853c1d13d365b7dc71a6b05e5ffb56471f70a850de318af50d3d7c0dea2f")
 
+    depends_on("python@3:", type=("build", "run"))
     depends_on("py-setuptools", type="build")
 
     def patch(self):
