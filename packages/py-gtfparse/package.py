@@ -10,7 +10,7 @@ class PyGtfparse(PythonPackage):
 	"""Parsing library for extracting data frames of genomic features from GTF files"""
 	
 	homepage = "https://github.com/openvax/gtfparse"
-	pypi = "gtfparse/gtfparse-1.3.0.tar.gz" 
+	pypi = "gtfparse/gtfparse-2.5.0-py3-none-any.whl" 
 
 	version("0.0.1", sha256="9a6746d9a3668745e0e4bc2a0040de97500f751089c671d42aff9dcf6cb8a4d8")
 	version("0.0.2", sha256="e56ab27ebbfcdd5ee51a83b94a46e3c2cf92c7efecfecc88ad92f0278e2d2e0b")
