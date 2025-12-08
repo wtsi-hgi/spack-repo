@@ -13,6 +13,10 @@ class PyGlimixCore(PythonPackage):
 
     version("3.1.13", sha256="a382a0f6de89c96b474f4ede9a8549539c9b65d2f1b6877dca4f0738d2d4055d")
 
+    def patch(self):
+        # Upstream metadata unnecessarily blocks Python 3.11+ even though the package works.
+        filter_file('python = ">=3.8,<3.11"', 'python = ">=3.8"', "pyproject.toml", string=True)
+
     depends_on("python@3.8:3.12", type=("build", "run"))
     depends_on("py-brent-search", type=("build", "run"))
     depends_on("py-liknorm@1.2.8:", type=("build", "run"))
@@ -24,3 +28,9 @@ class PyGlimixCore(PythonPackage):
     depends_on("py-pytest-doctestplus", type=("build", "run"))
     depends_on("py-scipy", type=("build", "run"))
     depends_on("py-tqdm", type=("build", "run"))
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python = self.spec["python"].command
+            python("-c", "import glimix_core")
