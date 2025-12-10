@@ -201,6 +201,29 @@ class PyScipy(PythonPackage):
     def archive_files(self):
         return [join_path(self.stage.source_path, "build", "meson-logs", "meson-log.txt")]
 
+    def patch(self):
+        if self.spec.satisfies("@1.13:"):
+            compat_file = join_path("scipy", "linalg", "_special_matrices.py")
+            filter_file(
+                " 'convolution_matrix']",
+                " 'convolution_matrix', 'tril', 'triu']",
+                compat_file,
+                string=True,
+            )
+            filter_file(
+                r"^def toeplitz",
+                "def tril(m, k=0):\n"
+                '    """Return the lower triangle of a matrix using numpy.tril."""\n'
+                "    return np.tril(m, k)\n"
+                "\n"
+                "def triu(m, k=0):\n"
+                '    """Return the upper triangle of a matrix using numpy.triu."""\n'
+                "    return np.triu(m, k)\n"
+                "\n"
+                "def toeplitz",
+                compat_file,
+            )
+
     @run_before("install")
     def set_fortran_compiler(self):
         if self.spec.satisfies("%fj"):
