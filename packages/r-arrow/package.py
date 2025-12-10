@@ -7,30 +7,51 @@ from spack.package import *
 
 
 class RArrow(RPackage):
-	"""Integration to 'Apache' 'Arrow'
+    """Integration to 'Apache' 'Arrow'
 
-	'Apache' 'Arrow' <https://arrow.apache.org/> is a cross-language
+    'Apache' 'Arrow' <https://arrow.apache.org/> is a cross-language
     development platform for in-memory data. It specifies a standardized
     language-independent columnar memory format for flat and hierarchical data,
     organized for efficient analytic operations on modern hardware. This
     package provides an interface to the 'Arrow C++' library.
-	"""
-	
-	homepage = "https://github.com/apache/arrow/"
-	cran = "arrow" 
+    """
 
-	version("15.0.1", md5="f5e2d244a409b3272d5539f77c40f2c3")
-	version("14.0.0.2", md5="84cefe34da6af43984b308ca2a57d7bd")
+    homepage = "https://github.com/apache/arrow/"
+    cran = "arrow"
 
-	depends_on("r@3.4:", type=("build", "run"))
-	depends_on("r-assertthat", type=("build", "run"))
-	depends_on("r-bit64@0.9.7:", type=("build", "run"))
-	depends_on("r-glue", type=("build", "run"))
-	depends_on("r-purrr", type=("build", "run"))
-	depends_on("r-r6", type=("build", "run"))
-	depends_on("r-rlang@1:", type=("build", "run"))
-	depends_on("r-tidyselect@1:", type=("build", "run"))
-	depends_on("r-vctrs", type=("build", "run"))
-	depends_on("r-cpp11@0.4.2:", type=("build", "run"))
-	depends_on("curl", type=("build", "link", "run"))
-	depends_on("cmake", type=("build", "link", "run"))
+    version(
+        "22.0.0",
+        sha256="8a95e6c7b9bec2bc0058feb73efe38ad6cfd49a0c7094db29b37ecaa8ab16051",
+        url="https://github.com/apache/arrow/archive/refs/tags/apache-arrow-22.0.0.tar.gz",
+    )
+    version("15.0.1", md5="f5e2d244a409b3272d5539f77c40f2c3")
+    version("14.0.0.2", md5="84cefe34da6af43984b308ca2a57d7bd")
+
+    depends_on("r@4.1:", when="@22:", type=("build", "run"))
+    depends_on("r@3.4:", type=("build", "run"))
+    depends_on("r-assertthat", type=("build", "run"))
+    depends_on("r-bit64@0.9.7:", type=("build", "run"))
+    depends_on("r-glue", type=("build", "run"))
+    depends_on("r-purrr", type=("build", "run"))
+    depends_on("r-r6", type=("build", "run"))
+    depends_on("r-rlang@1:", type=("build", "run"))
+    depends_on("r-tidyselect@1:", type=("build", "run"))
+    depends_on("r-vctrs", type=("build", "run"))
+    depends_on("r-cpp11@0.4.2:", type=("build", "run"))
+    depends_on("curl", type=("build", "link", "run"))
+    depends_on("cmake", type="build")
+    depends_on("cmake@3.26:", when="@22:", type="build")
+
+    def install(self, spec, prefix):
+        source_path = self.stage.source_path
+        if spec.satisfies("@22:"):
+            source_path = join_path(source_path, "r")
+
+        args = [
+            "--vanilla",
+            "CMD",
+            "INSTALL",
+            "--library={0}".format(self.module.r_lib_dir),
+            source_path,
+        ]
+        R(*args)
