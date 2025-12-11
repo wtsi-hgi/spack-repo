@@ -21,7 +21,7 @@ class RCuratedmetagenomicdataanalyses(RPackage):
     license("CC-BY-4.0")
 
     version(
-        "0.3.0",
+        "3.0",
         sha256="6597cfe1d02205287522b8d27490fa9a198feddbac3277f94165a871d7641221",
         url="https://github.com/waldronlab/curatedMetagenomicDataAnalyses/archive/refs/tags/v3.0.tar.gz",
     )
