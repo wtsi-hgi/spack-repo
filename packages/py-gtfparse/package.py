@@ -36,7 +36,11 @@ class PyGtfparse(PythonPackage):
 	version("1.1.2", sha256="c7ce355e79c2b9f81d2c7da048c4d9d1516023fa1781212ebeefb21e470d5076")
 	version("1.2.0", sha256="2f27aa2b87eb43d613edabf27f9c11147dc595c8683b440ac1d88e9acdb85873")
 	version("1.2.1", sha256="559d4d36b0bd5d4494f925cab3c00cd969783ebb6408fa025df92663965834b8")
-	version("1.3.0", sha256="d957f18e5f70413f89a28ef83068c461b6407eb38fd30e99b8da3d69143527b1")
+	version(
+		"1.3.0",
+		sha256="d957f18e5f70413f89a28ef83068c461b6407eb38fd30e99b8da3d69143527b1",
+		url="https://files.pythonhosted.org/packages/f5/bb/f97d06b60f32e30b7ba25336f0886c24b13855d7ca8642200e4d70382a45/gtfparse-1.3.0.tar.gz",
+	)
 	version("2.0.1", sha256="c45439af58cb48120910bebe4625371d8fb5735f12a749e8933c9d6f2b1a558c")
 	version("2.1.0", sha256="7af57445713a53cb830039df1631a95928a204cb30846bd07a955f60afaa8d47", expand=False, url="https://files.pythonhosted.org/packages/d7/f1/2bb211c807a0c3bc59c6e8e97a89a7901ef997ec90d09ecfd9185284255d/gtfparse-2.1.0-py3-none-any.whl")
 	version("2.2.0", sha256="366e66d41d263ca7633f0decc697defcdea5d87079dbbf2ce74da106f0a23549", expand=False, url="https://files.pythonhosted.org/packages/1e/bf/a1fcfdd483ecd82816738260cf44b326b828af1eb893f56db524c64a011b/gtfparse-2.2.0-py3-none-any.whl")
