@@ -22,7 +22,11 @@ class RGenomicranges(RPackage):
 
 	bioc = "GenomicRanges"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicRanges_1.54.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicRanges/GenomicRanges_1.54.1.tar.gz"]
-	version("1.62.0", md5="a092719dd4b8e30d756ea0471325d0e0", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/GenomicRanges_1.62.0.tar.gz")
+	version(
+		"1.62.0",
+		sha256="7bc77ad566b4effb93107a520dd3e4395beb5be1fab3c70e085390c212a14b73",
+		url="https://www.bioconductor.org/packages/3.22/bioc/src/contrib/Archive/GenomicRanges/GenomicRanges_1.62.0.tar.gz",
+	)
 	version("1.60.0", md5="2d23aae0eb9d1bacef038d3c07b6e547", url="https://www.bioconductor.org/packages/3.21/bioc/src/contrib/GenomicRanges_1.60.0.tar.gz")
 	version("1.54.1", md5="19fe37133cae70c1c3a1a164e6c8eaed")
 	version("1.52.0", commit="883f125ea593099293dc808ec2188be3cbdbd3a7")
