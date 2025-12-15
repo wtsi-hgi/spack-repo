@@ -55,3 +55,4 @@ class PyScanpy(PythonPackage):
     depends_on("py-umap-learn@0.3.10:", type=("build", "run"))
     depends_on("py-session-info", type=("build", "run"))
     depends_on("py-scikit-misc", type=("build", "run"))
+    depends_on("py-legacy-api-wrap", type=("build", "run"))
