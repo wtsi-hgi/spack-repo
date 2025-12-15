@@ -19,6 +19,7 @@ class PyPomegranate(PythonPackage):
 
     depends_on("py-setuptools", type="build")
     depends_on("py-cython@0.22.1:0.29", type="build")
+    conflicts("^py-cython@3:", msg="pomegranate 0.12.0 is incompatible with Cython 3.x")
     depends_on("py-numpy@1.8.0:", type=("build", "run"))
     depends_on("py-joblib@0.9.0b4:", type=("build", "run"))
     depends_on("py-networkx@2.0:", type=("build", "run"))
