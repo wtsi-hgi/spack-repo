@@ -18,13 +18,20 @@ class PyPomegranate(PythonPackage):
     # depends_on("c", type="build")  # generated
 
     depends_on("py-setuptools", type="build")
+    depends_on("py-wheel", type="build")
     depends_on("py-cython@0.22.1:0.29", type="build")
     conflicts("^py-cython@3:", msg="pomegranate 0.12.0 is incompatible with Cython 3.x")
-    depends_on("py-numpy@1.8.0:", type=("build", "run"))
+    # NumPy 2.x breaks compilation for this old Cython-based release.
+    depends_on("py-numpy@1.8.0:1", type=("build", "run"))
     depends_on("py-joblib@0.9.0b4:", type=("build", "run"))
     depends_on("py-networkx@2.0:", type=("build", "run"))
     depends_on("py-scipy@0.17.0:", type=("build", "run"))
     depends_on("py-pyyaml", type=("build", "run"))
+
+    def setup_build_environment(self, env):
+        # Ensure we use the pinned Cython (0.29.x), even if other deps (e.g. SciPy)
+        # bring a newer Cython into the build DAG.
+        env.prepend_path("PATH", self.spec["py-cython"].prefix.bin)
 
     @run_after("install")
     def install_test(self):
