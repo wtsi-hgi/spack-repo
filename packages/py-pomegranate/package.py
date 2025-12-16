@@ -30,6 +30,17 @@ class PyPomegranate(PythonPackage):
     depends_on("py-scipy@0.17.0:", type=("build", "run"))
     depends_on("py-pyyaml", type=("build", "run"))
 
+    def patch(self):
+        # setup.py tries to do `__builtins__.__NUMPY_SETUP__ = False`, but under
+        # setuptools' exec() path `__builtins__` can be a *dict* (Python 3),
+        # causing `AttributeError: 'dict' object has no attribute '__NUMPY_SETUP__'`
+        # during metadata generation.
+        filter_file(
+            r"__builtins__\.__NUMPY_SETUP__ = False",
+            "import builtins\n        builtins.__NUMPY_SETUP__ = False",
+            "setup.py",
+        )
+
     def setup_build_environment(self, env):
         # Ensure we use the pinned Cython (0.29.x), even if other deps (e.g. SciPy)
         # bring a newer Cython into the build DAG.
