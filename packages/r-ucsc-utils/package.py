@@ -10,9 +10,14 @@ class RUcscUtils(RPackage):
 
     homepage = "https://bioconductor.org/packages/release/bioc/html/UCSC.utils.html"
     url = "https://bioconductor.org/packages/3.22/bioc/src/contrib/UCSC.utils_1.6.0.tar.gz"
+    list_url = "https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/UCSC.utils"
     bioc = "UCSC.utils"
 
-    version("1.6.0", sha256="3ec811f3bddb736f762db888cc26dcf98b0d21659a939580490551bd46238b7a")
+    version(
+        "1.6.0",
+        sha256="3ec811f3bddb736f762db888cc26dcf98b0d21659a939580490551bd46238b7a",
+        url="https://bioconductor.org/packages/3.22/bioc/src/contrib/Archive/UCSC.utils/UCSC.utils_1.6.0.tar.gz",
+    )
     version("1.4.0", sha256="db2680cf8a94a2119783905487b5a9711006c295641f415cf4e79235c83d1a26", url="https://bioconductor.org/packages/3.21/bioc/src/contrib/UCSC.utils_1.4.0.tar.gz")
 
     depends_on("r-httr", type=("build", "run"))
