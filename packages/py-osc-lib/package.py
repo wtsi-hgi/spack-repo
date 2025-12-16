@@ -10,7 +10,8 @@ class PyOscLib(PythonPackage):
     """OpenStackClient common library."""
 
     homepage = "https://docs.openstack.org/osc-lib/"
-    pypi = "osc-lib/osc-lib-4.2.0.tar.gz"
+    # PyPI sdist is published with an underscore in the filename
+    pypi = "osc-lib/osc_lib-4.2.0.tar.gz"
 
     license("Apache-2.0")
 

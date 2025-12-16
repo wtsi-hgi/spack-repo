@@ -25,6 +25,17 @@ class PyDogpileCache(PythonPackage):
     depends_on("py-stevedore@3:", type=("build", "run"))
     depends_on("py-typing-extensions@4.0.1:", when="^python@:3.10", type=("build", "run"))
 
+    @run_before("install")
+    def fix_pyproject_toml(self):
+        # With older setuptools (e.g. 68.x) dogpile.cache's pyproject.toml
+        # triggers schema validation errors during metadata generation.
+        pyproject = join_path(self.stage.source_path, "pyproject.toml")
+        # Avoid `\s` here (it matches newlines) to keep substitutions single-line.
+        filter_file(r'^license[ \t]*=[ \t]*"MIT"[ \t]*$', 'license = {file = "LICENSE"}', pyproject)
+        # Remove the entire line (including its newline) to avoid creating invalid TOML.
+        filter_file(r"^license-files[ \t]*=[^\n]*\n", "", pyproject)
+        filter_file(r"^license-files[ \t]*=[^\n]*$", "", pyproject)
+
     @run_after("install")
     def install_test(self):
         with working_dir("spack-test", create=True):

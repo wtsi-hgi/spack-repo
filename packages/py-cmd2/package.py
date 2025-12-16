@@ -25,6 +25,20 @@ class PyCmd2(PythonPackage):
     depends_on("py-rich-argparse@1.7.1:", type=("build", "run"))
     depends_on("py-backports-strenum", when="^python@3.10:3.10", type=("build", "run"))
 
+    @run_before("install")
+    def fix_pyproject_metadata(self):
+        # cmd2's pyproject.toml uses the legacy PEP 621 `license = "MIT"` form
+        # which setuptools rejects (expects `license = {text=...}` or `{file=...}`).
+        # Make it unambiguous and remove license-files (setuptools validates it separately).
+        pyproject = join_path(self.stage.source_path, "pyproject.toml")
+        filter_file(r'^[ \t]*license[ \t]*=[ \t]*"MIT"[ \t]*$', 'license = {text = "MIT"}', pyproject)
+        filter_file(r"^license-files[ \t]*=[^\n]*\n", "", pyproject)
+        filter_file(r"^license-files[ \t]*=[^\n]*$", "", pyproject)
+
+        # Also strip future trove classifiers not yet recognized by older tooling.
+        filter_file(r'^[ \t]*"Programming Language :: Python :: 3\.14",[ \t]*$', "", pyproject)
+        filter_file(r'^[ \t]*"Programming Language :: Python :: 3\.15",[ \t]*$', "", pyproject)
+
     @run_after("install")
     def install_test(self):
         with working_dir("spack-test", create=True):

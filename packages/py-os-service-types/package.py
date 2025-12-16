@@ -20,6 +20,8 @@ class PyOsServiceTypes(PythonPackage):
     depends_on("python@3.10:", when="@1.8:", type=("build", "run"))
     depends_on("py-pbr@2.0.0:", type="build")
     depends_on("py-setuptools", type="build")
+    # os_service_types/types.py imports typing_extensions at runtime
+    depends_on("py-typing-extensions", when="@1.8:", type=("build", "run"))
 
     @run_after("install")
     def install_test(self):
