@@ -16,6 +16,7 @@ class PyPolars(PythonPackage):
 
     license("MIT")
 
+    version("1.27.1", sha256="94fcb0216b56cd0594aa777db1760a41ad0dfffed90d2ca446cf9294d2e97f02")
     version("1.25.2", sha256="c6bd9b1b17c86e49bcf8aac44d2238b77e414d7df890afc3924812a5c989a4fe")
     version("1.20.0", sha256="e8e9e3156fae02b58e276e5f2c16a5907a79b38617a9e2d731b533d87798f451")
     version("1.19.0", sha256="b52ada5c43fcdadf64f282522198c5549ee4e46ea57d236a4d7e572643070d9d")
@@ -51,7 +52,8 @@ class PyPolars(PythonPackage):
     depends_on("cmake", type="build")
 
     def patch(self):
-        remove("Cargo.lock")
+        if os.path.exists("Cargo.lock"):
+            remove("Cargo.lock")
         if self.spec.satisfies("@1.25.2:"):
             filter_file(
                 """#![cfg_attr(feature = "nightly", feature(select_unpredictable))] """,
@@ -81,4 +83,5 @@ class PyPolars(PythonPackage):
     @run_after("install")
     def install_test(self):
         with working_dir("spack-test", create=True):
+            python = self.spec["python"].command
             python("-c", "import polars as pl; print(pl.__version__)")
