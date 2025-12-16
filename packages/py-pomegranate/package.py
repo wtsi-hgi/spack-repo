@@ -19,7 +19,9 @@ class PyPomegranate(PythonPackage):
 
     depends_on("py-setuptools", type="build")
     depends_on("py-wheel", type="build")
-    depends_on("py-cython@0.22.1:0.29", type="build")
+    # This legacy Cython-based release fails with Cython 3.x (compiler crash during egg_info).
+    # Pin to a known-good Cython in the 0.29 series.
+    depends_on("py-cython@0.29.36", type="build")
     conflicts("^py-cython@3:", msg="pomegranate 0.12.0 is incompatible with Cython 3.x")
     # NumPy 2.x breaks compilation for this old Cython-based release.
     depends_on("py-numpy@1.8.0:1", type=("build", "run"))
