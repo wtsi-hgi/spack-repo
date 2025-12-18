@@ -12,7 +12,13 @@ class PyBiotite(PythonPackage):
     homepage = "https://www.biotite-python.org"
     pypi = "biotite/biotite-1.5.0.tar.gz"
 
-    # Prefer wheel to avoid hatchling/hatch-vcs build-time plugins
+    # Prefer wheels to avoid hatchling/hatch-vcs build-time plugins
+    version(
+        "1.5.0-py312",
+        sha256="1e1ac1d4aae111fef6a7b716c61730d50ed72df0d7cfd3523d264703dfedb5b8",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/97/d4/be4a00d5f78002ab6d210bbacba4a76d8e2c1ec7fcbd3eb7325e7507d370/biotite-1.5.0-cp312-cp312-manylinux_2_24_x86_64.manylinux_2_28_x86_64.whl",
+    )
     version(
         "1.5.0-py311",
         sha256="b57ea328f87c8b1109d182c34baab3db0f88e975b66d9e4d9b711af6acb1f483",
@@ -25,7 +31,8 @@ class PyBiotite(PythonPackage):
     depends_on("py-hatch-vcs", type=("build"))
 
     # Python requirement from PyPI metadata
-    depends_on("python@3.11:", type=("build", "run"))
+    depends_on("python@3.12:3.12", when="@1.5.0-py312", type=("build", "run"))
+    depends_on("python@3.11:3.11", when="@1.5.0-py311", type=("build", "run"))
 
     # Runtime requirements from PyPI requires_dist
     depends_on("py-biotraj@1:1", type=("build", "run"))
