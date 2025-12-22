@@ -9,9 +9,10 @@ import os
 class PyMochi(PythonPackage):
     """MoCHI: Neural networks to quantify energies, energetic couplings, epistasis and allostery from deep mutational scanning data."""
 
-    homepage = "https://github.com/lehner-lab/MoCHI"
-    git = "https://github.com/lehner-lab/MoCHI"
+    homepage = "https://github.com/wtsi-hgi/MoCHI"
+    git = "https://github.com/wtsi-hgi/MoCHI.git"
 
+    version("20251222", commit="3c4a8da11ec270eacc41dcbe259539ef0e8e7963")
     version("1.1", tag="v1.1")
     version("1.0", tag="v1.0")
 
