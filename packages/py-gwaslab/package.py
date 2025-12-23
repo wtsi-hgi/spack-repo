@@ -41,6 +41,36 @@ class PyGwaslab(PythonPackage):
     depends_on("py-pyarrow", type=("build", "run"))
     depends_on("py-polars@1.27:", type=("build", "run"))
 
+    def patch(self):
+        files_with_optional = [
+            "src/gwaslab/io/io_vcf.py",
+            "src/gwaslab/hm/hm_assign_rsid.py",
+            "src/gwaslab/hm/hm_infer_with_af.py",
+        ]
+
+        for target in files_with_optional:
+            filter_file("str | None", "Optional[str]", target, string=True)
+            filter_file("dict | None", "Optional[dict]", target, string=True)
+
+        filter_file(
+            "from Bio import SeqIO",
+            "from Bio import SeqIO\nfrom typing import Optional",
+            "src/gwaslab/io/io_vcf.py",
+            string=True,
+        )
+        filter_file(
+            "from gwaslab.g_Log import Log",
+            "from typing import Optional\nfrom gwaslab.g_Log import Log",
+            "src/gwaslab/hm/hm_assign_rsid.py",
+            string=True,
+        )
+        filter_file(
+            "from gwaslab.g_Log import Log",
+            "from typing import Optional\nfrom gwaslab.g_Log import Log",
+            "src/gwaslab/hm/hm_infer_with_af.py",
+            string=True,
+        )
+
     @run_after("install")
     def install_test(self):
         with working_dir("spack-test", create=True):
