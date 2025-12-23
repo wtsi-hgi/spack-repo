@@ -2,6 +2,8 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+import os
+
 from spack.package import *
 
 
@@ -86,6 +88,7 @@ class Interproscan(Package):
     depends_on("maven", type="build", when="@5:")
     depends_on("perl@5:", type=("build", "run"))
     depends_on("python@3:", when="@5:", type=("build", "run"))
+    depends_on("hmmer@3:", type="build", when="@5: +databases")
     depends_on("perl-cgi", when="@:4.8", type=("build", "run"))
     depends_on("perl-mailtools", when="@:4.8", type=("build", "run"))
     depends_on("perl-xml-quote", when="@:4.8", type=("build", "run"))
@@ -114,6 +117,20 @@ class Interproscan(Package):
         if spec.satisfies("+databases"):
             remove_directory_contents(prefix.data)
             install_tree(f"interproscan-{self.spec.version}/data", prefix.data)
+
+            # InterProScan expects HMMER "pressed" index files next to AntiFam.hmm.
+            # The upstream interproscan-data archives do not always ship them, and
+            # installed prefixes (and container images built from them) are read-only
+            # at runtime, so generate them at install time.
+            antifam_hmm = join_path(prefix.data, "antifam", "7.0", "AntiFam.hmm")
+            if os.path.exists(antifam_hmm):
+                which("hmmpress")("-f", antifam_hmm)
+            else:
+                tty.warn(
+                    "InterProScan +databases install did not include expected AntiFam HMM: {0}".format(
+                        antifam_hmm
+                    )
+                )
 
         # link the main shell script into the PATH
         symlink(join_path(prefix, "interproscan.sh"), join_path(prefix.bin, "interproscan.sh"))
