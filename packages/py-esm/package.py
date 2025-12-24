@@ -18,7 +18,7 @@ class PyEsm(PythonPackage):
     depends_on("python@3.11:3.11", type=("build", "run"))
     depends_on("py-setuptools", type="build")
 
-    depends_on("py-torch@2.2.0:", type=("build", "run"))
+    depends_on("py-torch-gpu@2.2.0:", type=("build", "run"))
     depends_on("py-torchvision", type=("build", "run"))
     depends_on("py-torchtext", type=("build", "run"))
     depends_on("py-transformers@:4.48.1", type=("build", "run"))
