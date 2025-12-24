@@ -23,3 +23,10 @@ class PyPcangsd(PythonPackage):
     depends_on("py-cython", type=("build", "run"))
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-scipy", type=("build", "run"))
+
+    @run_after("install")
+    def install_test(self):
+        """Exercise the main executable after installing."""
+        pcangsd = Executable(join_path(self.prefix.bin, "pcangsd"))
+        with working_dir("spack-test", create=True):
+            pcangsd("--help")
