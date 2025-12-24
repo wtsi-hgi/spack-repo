@@ -102,6 +102,56 @@ class Interproscan(Package):
     patch("ps_scan.patch", when="@:4.8")
     patch("web-pom.patch", when="@5:")
 
+    def _hmmpress_missing_indexes_from_properties(self, spec, prefix):
+        """InterProScan expects HMMER 'pressed' index files (.h3*) next to each
+        .hmm referenced by interproscan.properties. Generate any missing index
+        files at install time, since runtime environments (e.g. containers) are
+        often read-only.
+        """
+        props = join_path(prefix, "interproscan.properties")
+        if not os.path.exists(props):
+            tty.warn("Missing interproscan.properties; skipping hmmpress step")
+            return
+
+        kv = {}
+        with open(props, encoding="utf-8") as fh:
+            for raw in fh:
+                line = raw.strip()
+                if not line or line.startswith("#") or "=" not in line:
+                    continue
+                key, val = line.split("=", 1)
+                kv[key.strip()] = val.strip()
+
+        data_directory = kv.get("data.directory", "data")
+
+        def expand(val):
+            return val.replace("${data.directory}", data_directory)
+
+        hmmpress = Executable(join_path(spec["hmmer"].prefix.bin, "hmmpress"))
+        seen = set()
+
+        for val in kv.values():
+            if ".hmm" not in val:
+                continue
+            path = expand(val).strip().strip('"').strip("'")
+            # Some values may contain extra tokens; keep just the first path-like chunk.
+            path = path.split()[0]
+            if not path.endswith(".hmm"):
+                continue
+
+            hmm = path if os.path.isabs(path) else join_path(prefix, path)
+            if hmm in seen:
+                continue
+            seen.add(hmm)
+
+            if not os.path.exists(hmm):
+                tty.warn("Expected HMM file referenced by properties not found: {0}".format(hmm))
+                continue
+
+            # hmmpress writes <hmm>.h3{f,i,m,p}
+            if not os.path.exists(hmm + ".h3i"):
+                hmmpress("-f", hmm)
+
     def install(self, spec, prefix):
         with working_dir("core"):
             if self.run_tests:
@@ -117,20 +167,7 @@ class Interproscan(Package):
         if spec.satisfies("+databases"):
             remove_directory_contents(prefix.data)
             install_tree(f"interproscan-{self.spec.version}/data", prefix.data)
-
-            # InterProScan expects HMMER "pressed" index files next to AntiFam.hmm.
-            # The upstream interproscan-data archives do not always ship them, and
-            # installed prefixes (and container images built from them) are read-only
-            # at runtime, so generate them at install time.
-            antifam_hmm = join_path(prefix.data, "antifam", "7.0", "AntiFam.hmm")
-            if os.path.exists(antifam_hmm):
-                which("hmmpress")("-f", antifam_hmm)
-            else:
-                tty.warn(
-                    "InterProScan +databases install did not include expected AntiFam HMM: {0}".format(
-                        antifam_hmm
-                    )
-                )
+            self._hmmpress_missing_indexes_from_properties(spec, prefix)
 
         # link the main shell script into the PATH
         symlink(join_path(prefix, "interproscan.sh"), join_path(prefix.bin, "interproscan.sh"))
