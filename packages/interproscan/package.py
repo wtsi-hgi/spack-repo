@@ -77,7 +77,7 @@ class Interproscan(Package):
 
     variant(
         "databases",
-        default=True,
+        default=False,
         description="Fetch and include databases in the install. Greatly increases install size.",
     )
 
