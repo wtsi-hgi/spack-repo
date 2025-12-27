@@ -17,8 +17,9 @@ class RRtracklayer(RPackage):
 	current viewport."""
 
 	bioc = "rtracklayer"
+	git = "https://git.bioconductor.org/packages/rtracklayer.git"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/rtracklayer_1.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/rtracklayer/rtracklayer_1.62.0.tar.gz"]
-	version("1.70.0", md5="0a9a0883305a887f70a1afe8d1a51544", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/rtracklayer_1.70.0.tar.gz")
+	version("1.70.0", commit="b6dc2ec00e5f450232cad61943779de99fa0817a")
 	version("1.68.0", md5="5ab268c04d5423c6ad4c27ddc671c90d", url="https://bioconductor.org/packages/3.21/bioc/src/contrib/rtracklayer_1.68.0.tar.gz")
 	version("1.62.0", md5="a16a9ca02e49808b38823899860abdb6")
 	version("1.60.0", commit="de35bc03116fc7ad30f0e425b41715c3cb2e783b")
