@@ -88,7 +88,8 @@ class Interproscan(Package):
     depends_on("maven", type="build", when="@5:")
     depends_on("perl@5:", type=("build", "run"))
     depends_on("python@3:", when="@5:", type=("build", "run"))
-    depends_on("hmmer@3:", type="build", when="@5: +databases")
+    # Needed to generate "pressed" HMM indexes (.h3*) at install time.
+    depends_on("hmmer@3:", type="build", when="@5:")
     depends_on("perl-cgi", when="@:4.8", type=("build", "run"))
     depends_on("perl-mailtools", when="@:4.8", type=("build", "run"))
     depends_on("perl-xml-quote", when="@:4.8", type=("build", "run"))
@@ -126,6 +127,10 @@ class Interproscan(Package):
 
         def expand(val):
             return val.replace("${data.directory}", data_directory)
+
+        if "hmmer" not in spec:
+            tty.warn("Missing hmmer dependency; skipping hmmpress step")
+            return
 
         hmmpress = Executable(join_path(spec["hmmer"].prefix.bin, "hmmpress"))
         seen = set()
@@ -167,7 +172,11 @@ class Interproscan(Package):
         if spec.satisfies("+databases"):
             remove_directory_contents(prefix.data)
             install_tree(f"interproscan-{self.spec.version}/data", prefix.data)
-            self._hmmpress_missing_indexes_from_properties(spec, prefix)
+
+        # Ensure required HMMER indexes exist for any HMMs referenced by the
+        # installed configuration, regardless of how the data/ tree was
+        # populated (dist content vs +databases resource).
+        self._hmmpress_missing_indexes_from_properties(spec, prefix)
 
         # link the main shell script into the PATH
         symlink(join_path(prefix, "interproscan.sh"), join_path(prefix.bin, "interproscan.sh"))
