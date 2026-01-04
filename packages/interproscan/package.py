@@ -4,6 +4,8 @@
 
 import os
 
+from llnl.util import tty
+
 from spack.package import *
 
 
@@ -128,7 +130,7 @@ class Interproscan(Package):
         def expand(val):
             return val.replace("${data.directory}", data_directory)
 
-        if "hmmer" not in spec:
+        if not spec.satisfies("^hmmer"):
             tty.warn("Missing hmmer dependency; skipping hmmpress step")
             return
 
@@ -141,7 +143,9 @@ class Interproscan(Package):
             path = expand(val).strip().strip('"').strip("'")
             # Some values may contain extra tokens; keep just the first path-like chunk.
             path = path.split()[0]
-            if not path.endswith(".hmm"):
+            # HMM files may be named with suffixes like ".hmm.lib"; hmmpress works
+            # with any filename, and will create <file>.h3{f,i,m,p}.
+            if ".hmm" not in path:
                 continue
 
             hmm = path if os.path.isabs(path) else join_path(prefix, path)
