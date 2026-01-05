@@ -137,16 +137,18 @@ class Interproscan(Package):
         hmmpress = Executable(join_path(spec["hmmer"].prefix.bin, "hmmpress"))
         seen = set()
 
-        for val in kv.values():
-            if ".hmm" not in val:
+        for key, val in kv.items():
+            # InterProScan's config lists HMM locations via keys like:
+            #   antifam.hmm.path=...
+            #   panther.hmm.path=.../binHmm
+            # The filenames are not guaranteed to contain ".hmm" (e.g. PANTHER's
+            # "binHmm"), so keying off the property name is more reliable.
+            if not key.endswith(".hmm.path"):
                 continue
+
             path = expand(val).strip().strip('"').strip("'")
             # Some values may contain extra tokens; keep just the first path-like chunk.
             path = path.split()[0]
-            # HMM files may be named with suffixes like ".hmm.lib"; hmmpress works
-            # with any filename, and will create <file>.h3{f,i,m,p}.
-            if ".hmm" not in path:
-                continue
 
             hmm = path if os.path.isabs(path) else join_path(prefix, path)
             if hmm in seen:
