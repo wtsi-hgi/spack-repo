@@ -18,6 +18,7 @@ class RCowplot(RPackage):
 	Fundamentals of Data Visualization."""
 
 	cran = "cowplot"
+	version("1.2.0", md5="78d3f716e640c993b3958dab2690bcb6")
 	version("1.1.3", md5="fbfdde59c0b5521ace81bdf96e79f2f6")
 	version("1.1.1", sha256="c7dce625b456dffc59ba100c816e16226048d12fdd29a7335dc1f6f6e12eed48")
 	version("1.0.0", sha256="70f9a7c46d10f409d1599f1afc9fd3c947051cf2b430f01d903c64ef1e6c98a5")
@@ -28,6 +29,7 @@ class RCowplot(RPackage):
 	version("0.8.0", sha256="a617fde25030fe764f20967fb753a953d73b47745a2146c97c2565eb4d06700d")
 
 	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r-ggplot2@3.5.2:", type=("build", "run"), when="@1.2.0:")
 	depends_on("r-ggplot2@3.4:", type=("build", "run"))
 	depends_on("r-gtable", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
