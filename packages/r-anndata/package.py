@@ -24,3 +24,4 @@ class RAnndata(RPackage):
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-r6", type=("build", "run"))
 	depends_on("r-reticulate@1.17:", type=("build", "run"))
+	depends_on("py-anndata", type=("build", "run"))
