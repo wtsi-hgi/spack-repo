@@ -10,9 +10,10 @@ class PyFlitCore(PythonPackage):
     """Distribution-building parts of Flit."""
 
     homepage = "https://github.com/pypa/flit"
-    pypi = "flit-core/flit_core-3.9.0.tar.gz"
+    pypi = "flit-core/flit_core-3.12.0.tar.gz"
     maintainers("takluyver")
 
+    version("3.12.0", sha256="18f63100d6f94385c6ed57a72073443e1a71a4acb4339491615d0f16d6ff01b2")
     version("3.9.0", sha256="72ad266176c4a3fcfab5f2930d76896059851240570ce9a98733b658cb786eba")
     version("3.8.0", sha256="b305b30c99526df5e63d6022dd2310a0a941a187bd3884f4c8ef0418df6c39f3")
     version("3.7.1", sha256="14955af340c43035dbfa96b5ee47407e377ee337f69e70f73064940d27d0a44f")
