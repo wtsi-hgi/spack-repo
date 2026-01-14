@@ -36,7 +36,7 @@ class Plink2(MakefilePackage):
     depends_on("zlib@1.2.12:", when="^[virtuals=zlib-api] zlib")
     depends_on("zstd@1.5.2:")
     depends_on("libdeflate@1.10:")
-    depends_on("blas")
+    depends_on("openblas")
     depends_on("lapack")
 
     build_directory = "2.0/build_dynamic"
