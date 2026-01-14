@@ -61,7 +61,6 @@ class Plink2(MakefilePackage):
 
     def setup_build_environment(self, env):
         env.set("BLASFLAGS", self.spec["blas"].libs.ld_flags)
-        env.set("ZLIB", self.spec["zlib"].libs.ld_flags)
 
     def build(self, spec, prefix):
         with working_dir(self.build_directory):
