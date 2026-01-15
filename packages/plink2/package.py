@@ -58,6 +58,13 @@ class Plink2(MakefilePackage):
                     spec["lapack"].libs.ld_flags, spec["blas"].libs.ld_flags
                 ),
             )
+            makefile.filter(
+                r"^BLASFLAGS64	\?= -llapack -lf77blas -latlas$",
+                "BLASFLAGS64={0} {1}".format(
+                    spec["lapack"].libs.ld_flags, spec["blas"].libs.ld_flags
+                ),
+            )
+            
 
     def setup_build_environment(self, env):
         env.set("BLASFLAGS", self.spec["blas"].libs.ld_flags)
