@@ -52,17 +52,16 @@ class Plink2(MakefilePackage):
             elif "sse4_2" in spec.target:
                 makefile.filter(r"^NO_SSE42 = 1", "NO_SSE42 =")
             makefile.filter(r"^STATIC_ZSTD = 1", "STATIC_ZSTD =")
-            makefile.filter(
-                r"^BLASFLAGS=-llapack -lblas -lcblas -latlas$",
-                "BLASFLAGS={0} {1}".format(
-                    spec["lapack"].libs.ld_flags, spec["blas"].libs.ld_flags
-                ),
+            blas_flags = "{0} {1}".format(
+                spec["lapack"].libs.ld_flags, spec["blas"].libs.ld_flags
             )
             makefile.filter(
-                r"^BLASFLAGS64	\?= -llapack -lf77blas -latlas$",
-                "BLASFLAGS64={0} {1}".format(
-                    spec["lapack"].libs.ld_flags, spec["blas"].libs.ld_flags
-                ),
+                r"^(\s*)BLASFLAGS=-llapack -lblas -lcblas -latlas$",
+                r"\1BLASFLAGS={0}".format(blas_flags),
+            )
+            makefile.filter(
+                r"^(\s*)BLASFLAGS64\s*\?=\s*-llapack -lf77blas -latlas$",
+                r"\1BLASFLAGS64={0}".format(blas_flags),
             )
             
 
