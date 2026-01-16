@@ -72,6 +72,10 @@ class PyStatsmodels(PythonPackage):
 
     depends_on("py-pytest", type="test")
 
+    def setup_build_environment(self, env):
+        # ensure numpy.distutils pulls the stdlib distutils that still ships msvc bits
+        env.set("SETUPTOOLS_USE_DISTUTILS", "stdlib")
+
     @run_before("install")
     def remove_generated_sources(self):
         # Automatic recythonization doesn't work here, because cythonize is called
