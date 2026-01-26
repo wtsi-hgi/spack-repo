@@ -65,3 +65,8 @@ class RBpcells(RPackage):
 
     def setup_dependent_run_environment(self, env, spec):
         env.prepend_path("LD_LIBRARY_PATH", join_path(spec["hdf5"].prefix, "lib"))
+
+    @run_after("install")
+    def install_test(self):
+        rscript = Executable(join_path(self.spec["r"].prefix.bin, "Rscript"))
+        rscript("-e", 'library("BPCells")')
