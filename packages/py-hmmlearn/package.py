@@ -15,3 +15,4 @@ class PyHmmlearn(PythonPackage):
 
     depends_on("py-numpy@1.10:", type=("build", "run"))
     depends_on("py-scikit-learn@0.16:", type=("build", "run"))
+    depends_on("py-setuptools", type="build")
