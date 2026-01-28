@@ -48,8 +48,75 @@ class PyGentropy(PythonPackage):
         expand=False,
         url="https://files.pythonhosted.org/packages/f3/e0/fe15e6f9e731a8d8e86924ff09221c3e2d410de2bf1116f8f7070e7961c6/gentropy-1.4.0-py3-none-any.whl",
     )
+    version(
+        "1.5.0", 
+        sha256="acf47a519900c321f8dfe4dc23585195ac69446e25a07b2e69f62596f9778cbf", 
+        expand=False
+    )
+    version(
+        "1.6.0", 
+        sha256="45434618abb78e9ad39b2a880a462cafade58621b2ed73928e415dd431164944", 
+        expand=False
+    )
+    version(
+        "1.7.0", 
+        sha256="4c9f7eb6ec2ad9be5a701f1b789c4db8839ba6db3ba6d2c61decdc93352976f2", 
+        expand=False
+    )
+    version(
+        "2.0.0", 
+        sha256="2f4ace08eb3f6654517367b0daeeb5931f45e519544d16180b560ec53c6d1106", 
+        expand=False
+    )
+    version(
+        "2.0.1", 
+        sha256="ebc51fc58c5144b2661db5f287710a81a1610bfc869dab54b97738f154bce523", 
+        expand=False
+    )
+    version(
+        "2.1.0", 
+        sha256="5e56ac343b5a46ec7108e266fc5c9187423708953d3ab1c91159ac7d7cc1ffbd", 
+        expand=False
+    )
+    version(
+        "2.2.0", 
+        sha256="0f90ef9acbe0bacac26dcde6d5f655f61d6730fae225a90453db1d9514c7801f", 
+        expand=False
+    )
+    version(
+        "2.3.0", 
+        sha256="6f2561d12c486552a49f0e0a961c19e302864d9eaf26affc1f1d208228e2dfc8", 
+        expand=False
+    )
+    version(
+        "2.4.0", 
+        sha256="c62c5c8d59bbe9dae084b1c3b5e8f14fb0dda6e7d60cf56754491d2bd7162663", 
+        expand=False
+    )
+    version(
+        "2.4.1", 
+        sha256="b41a78bedcbc5b176892be2698af03aeff8fe56310e15e15c2393160b9d3ff76", 
+        expand=False
+    )
+    version(
+        "3.0.0",
+        sha256="1ab4ab8025ca6ab373f67e8b7632ea3ecdbebbfff57e690adf782bdc9c051f66", 
+        expand=False
+    )
+    version(
+        "3.1.0",
+        sha256="f13dc9a411ea192cce0439a27627194f21c436f46a256a31894e988c7b97254e", 
+        expand=False
+    )
+    version(
+        "3.1.1", 
+        sha256="3c394cede6f33fa8f361debbe8935b64a03d702b250da7292bea429be42074b8", 
+        expand=False
+    )
 
-    depends_on("python@3.10", type=("build", "run"))
+
+    depends_on("python@3.11:", type=("build","run"), when="@2.0.0:")
+    depends_on("python@3.10", type=("build", "run"), when="@:2.0.0")
     depends_on("py-xgboost@1.7.3:2", type=("build", "run"))
     depends_on("py-wandb", type=("build", "run"))
     depends_on("py-typing-extensions", type=("build", "run"))
@@ -64,6 +131,8 @@ class PyGentropy(PythonPackage):
     depends_on("py-hail", type=("build", "run"))
     depends_on("py-google-cloud-secret-manager", type=("build", "run"))
     depends_on("py-google", type=("build", "run"))
+    depends_on("py-google-cloud-storage")
+    depends_on("py-pyarrow@1.0.0:")
 
 
 # {'google(>=3.0.0,<4.0.0)': ['1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0', '1.4.0'], 'hail(==0.2.127)': ['1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0', '1.4.0'], 'hydra-core(>=1.3.2,<2.0.0)': ['1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0', '1.4.0'], 'numpy(>=1.26.2,<2.0.0)': ['1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0', '1.4.0'], 'omegaconf(>=2.3.0,<3.0.0)': ['1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0', '1.4.0'], 'pandas(>=2.1.4,<3.0.0)': ['1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0'], 'pyliftover(>=0.4,<0.5)': ['1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0', '1.4.0'], 'pyspark(==3.3.4)': ['1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0', '1.4.0'], 'scikit-learn(>=1.3.2,<2.0.0)': ['1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0', '1.4.0'], 'scipy(>=1.11.4,<2.0.0)': ['1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0', '1.4.0'], 'typing-extensions(>=4.9.0,<5.0.0)': ['1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0', '1.4.0'], 'wandb(>=0.16.2,<0.17.0)': ['1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0'], 'xgboost(>=1.7.3,<2.0.0)': ['1.0.0', '1.1.0', '1.1.1', '1.2.0', '1.3.0', '1.4.0'], 'google-cloud-secret-manager(>=2.20.0,<3.0.0)': ['1.4.0'], 'pandas[gcp,parquet](>=2.2.2,<3.0.0)': ['1.4.0'], 'wandb(>=0.16.2,<0.18.0)': ['1.4.0']}
