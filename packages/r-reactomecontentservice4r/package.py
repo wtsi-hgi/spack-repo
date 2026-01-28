@@ -24,3 +24,45 @@ class RReactomecontentservice4r(RPackage):
 	depends_on("r-data-table", type=("build", "run"))
 	depends_on("r-doparallel", type=("build", "run"))
 	depends_on("r-foreach", type=("build", "run"))
+
+	def patch(self):
+		# Fail gracefully when the Reactome API cannot be contacted during build-time checks.
+		filter_file(
+			'  tryCatch(\n'
+			'    expr = {\n'
+			'      res <- httr::GET(url)\n'
+			'    },\n'
+			'    error = function(e) {\n'
+			'      # catch error of GET\n'
+			'      if (!"ReactomeContentService4R" %in% (.packages())) {\n'
+			'        message("Reactome is not responding. Remember to attach the package.") \n'
+			'      }\n'
+			'      message(e)\n'
+			'    }\n'
+			'  )\n'
+			'  \n'
+			'  # return the data if .checkStatus() passed\n'
+			'  status <- .checkStatus(res, customMsg=customMsg)\n',
+			'  res <- tryCatch(\n'
+			'    expr = {\n'
+			'      httr::GET(url)\n'
+			'    },\n'
+			'    error = function(e) {\n'
+			'      # catch error of GET\n'
+			'      if (!"ReactomeContentService4R" %in% (.packages())) {\n'
+			'        message("Reactome is not responding. Remember to attach the package.") \n'
+			'      }\n'
+			'      message(e)\n'
+			'      NULL\n'
+			'    }\n'
+			'  )\n'
+			'  \n'
+			'  if (is.null(res)) {\n'
+			'    return(NULL)\n'
+			'  }\n'
+			'  \n'
+			'  # return the data if .checkStatus() passed\n'
+			'  status <- .checkStatus(res, customMsg=customMsg)\n',
+			"R/utils.R",
+			string=True,
+		)
