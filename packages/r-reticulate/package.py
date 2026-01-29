@@ -16,6 +16,7 @@ class RReticulate(RPackage):
 	2.7."""
 
 	cran = "reticulate"
+	version("1.44.1", md5="764f9eee4b8ca45461fc53d94b23f0ad")
 	version("1.35.0", md5="16e16602150f6cdf6841b63b6bff1acf")
 	version("1.28", sha256="58a299ed18faaa3ff14936752fcc2b86e64ae18fc9f36befdfd492ccb251516f")
 	version("1.26", sha256="3fd74823bde1b0e094db7c2bf6b40ee2501f8d724b4c35b53da95c3c588c74c5")
@@ -29,6 +30,7 @@ class RReticulate(RPackage):
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-matrix", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("r-rcpp@1.0.7:", type=("build", "run"), when="@1.44.1:")
 	depends_on("r-rcpptoml", type=("build", "run"))
 	depends_on("r-here", type=("build", "run"))
 	depends_on("r-jsonlite", type=("build", "run"))
