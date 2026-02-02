@@ -21,6 +21,7 @@ class Plink2(MakefilePackage):
     version(
         "2.0.0-a.6.32",
         sha256="9d529d6fd5d1cf2893e36920db0b1ff4e6bad96fb9fa60a2ceee7b1e94dd8aab",
+        preferred=True
     )
     version(
         "2.0.0-a.6.9", 
@@ -84,6 +85,10 @@ class Plink2(MakefilePackage):
             makefile.filter(
                 r"^(\s*)BLASFLAGS=-llapack -lblas -lcblas -latlas$",
                 r"\1BLASFLAGS={0}".format(blas_flags),
+            )
+            makefile.filter(
+                r"^BLASFLAGS\s*=\s*-llapacke\s+-llapack\s+-lopenblas$",
+                "BLASFLAGS={0}".format(blas_flags),
             )
             makefile.filter(
                 r"^(\s*)BLASFLAGS64\s*\?=\s*-llapack -lf77blas -latlas$",
