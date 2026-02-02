@@ -23,11 +23,37 @@ class Plink2(MakefilePackage):
         sha256="9d529d6fd5d1cf2893e36920db0b1ff4e6bad96fb9fa60a2ceee7b1e94dd8aab",
     )
     version(
-        "2.0.0-a.6.9", sha256="492fc1e87b60b2209b7c3c1d616a01c1126978424cf795184d013ecf8a47e028"
+        "2.0.0-a.6.9", 
+        sha256="492fc1e87b60b2209b7c3c1d616a01c1126978424cf795184d013ecf8a47e028"
     )
-    version("2.00a5.11", sha256="8b664baa0b603f374123c32818ea2f053272840ba60e998d06cb864f3a6f1c38")
-    version("2.00a5.10", sha256="53d845c6a04f8fc701e6f58f6431654e36cbf6b79bff25099862d169a8199a45")
-    version("2.00a4.3", sha256="3cd1d26ac6dd1c451b42440f479789aa19d2b57642c118aac530a5ff1b0b4ce6")
+    version(
+        "2.00a5.11", 
+        sha256="8b664baa0b603f374123c32818ea2f053272840ba60e998d06cb864f3a6f1c38"
+    )
+    version(
+        "2.00a5.10",
+        sha256="53d845c6a04f8fc701e6f58f6431654e36cbf6b79bff25099862d169a8199a45"
+    )
+    version(
+        "2.00a4.3", 
+        sha256="3cd1d26ac6dd1c451b42440f479789aa19d2b57642c118aac530a5ff1b0b4ce6"
+    )
+
+    version(
+        "master",
+        branch="master",
+        git="https://github.com/chrchang/plink-ng.git",
+    )
+    version(
+        "alpha5_patch",
+        branch="alpha5_patch",
+        git="https://github.com/chrchang/plink-ng.git",
+    )
+    version(
+        "alpha6_patch",
+        branch="alpha6_patch",
+        git="https://github.com/chrchang/plink-ng.git",
+    )
 
     # depends_on("c", type="build")  # generated
     # depends_on("cxx", type="build")  # generated
