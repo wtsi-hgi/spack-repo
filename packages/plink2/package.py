@@ -82,6 +82,10 @@ class Plink2(MakefilePackage):
                 spec["lapack"].libs.ld_flags, spec["blas"].libs.ld_flags
             )
             makefile.filter(
+                r"^BLASFLAGS\s*=\s*-llapacke\s+-llapack\s+-lopenblas$",
+                "BLASFLAGS={0}".format(blas_flags),
+            )
+            makefile.filter(
                 r"^(\s*)BLASFLAGS=-llapack -lblas -lcblas -latlas$",
                 r"\1BLASFLAGS={0}".format(blas_flags),
             )
