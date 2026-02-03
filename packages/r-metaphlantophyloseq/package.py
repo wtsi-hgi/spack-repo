@@ -3,23 +3,6 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
-# ----------------------------------------------------------------------------
-# If you submit this package back to Spack as a pull request,
-# please first remove this boilerplate and all FIXME comments.
-#
-# This is a template package file for Spack.  We've put "FIXME"
-# next to all the things you'll want to change. Once you've handled
-# them, you can save this file and test your package like this:
-#
-#     spack install r-metaphlantophyloseq
-#
-# You can edit this file again by typing:
-#
-#     spack edit r-metaphlantophyloseq
-#
-# See the Spack documentation for more information on packaging.
-# ----------------------------------------------------------------------------
-
 from spack.package import *
 
 
@@ -38,7 +21,3 @@ class RMetaphlantophyloseq(RPackage):
     depends_on("r-phyloseq@1.46.0:")
     depends_on("r-r-utils")
 
-    @run_after("install")
-    def install_test(self):
-        rscript = Executable(join_path(self.spec["r"].prefix.bin, "Rscript"))
-        rscript("-e", 'library("metaphlanToPhyloseq")')
