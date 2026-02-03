@@ -20,5 +20,4 @@ class RMetaphlantophyloseq(RPackage):
     depends_on("r@4.3:")
     depends_on("r-dplyr@1.1.4:")
     depends_on("r-phyloseq@1.46.0:")
-    depends_on("r-r-utils")
 
