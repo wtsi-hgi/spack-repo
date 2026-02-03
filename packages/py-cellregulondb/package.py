@@ -12,7 +12,7 @@ class PyCellregulondb(PythonPackage):
     homepage = "https://github.com/Teichlab/cellregulondb"
     pypi = "cellregulondb/cellregulondb-0.1.0-py3-none-any.whl" 
 
-    version("0.1.0", sha256="ab30550ba1df1c870ddd6540193e514489595b7efb1b6ee585558ea38c8653c0", expand=False, url="https://files.pythonhosted.org/packages/5d/d3/9cb0baa560ca433c9958c726012df0adddf0ea64e55e0ba4382a0b213983/cellregulondb-0.1.0-py3-none-any.whl")
+    version("0.1.0", sha256="ab30550ba1df1c870ddd6540193e514489595b7efb1b6ee585558ea38c8653c0", expand=False)
 
     license("MIT")
 
