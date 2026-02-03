@@ -17,6 +17,7 @@ class RMetaphlantophyloseq(RPackage):
 
     version("0.2.0", sha256="eccf4aa2ff841216f68ec933209f5d702173213f21e984aa563279fb51831592")
 
+    depends_on("r@4.3:")
     depends_on("r-dplyr@1.1.4:")
     depends_on("r-phyloseq@1.46.0:")
     depends_on("r-r-utils")
