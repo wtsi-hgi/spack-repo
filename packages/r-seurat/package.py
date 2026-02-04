@@ -18,6 +18,7 @@ class RSeurat(RPackage):
 	et al (2019) <doi:10.1016/j.cell.2019.05.031> for more details."""
 
 	cran = "Seurat"
+	version("5.4.0", sha256="d200da7cb19a2fa4ead7ea4aa1bb703dbc59c594f01cb91c996ad862ad6f6417")
 	version("5.3.0", sha256="12abaf6cea4aa30f73028387e74ecb405b17acbae414d43522e764f3179908a7")
 	version("5.0.3", md5="2112a71f0ea07db422650c86aacc5d25")
 	version("5.0.1", md5="3965b1ee0bdc7f005d250a3dd429bcc3")
@@ -87,7 +88,8 @@ class RSeurat(RPackage):
 	depends_on("r-spatstat-explore", type=("build", "run"))
 	depends_on("r-spatstat-geom", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
-	depends_on("r-uwot@0.1.10:", type=("build", "run"))
+	depends_on("r-uwot@0.1.10:", type=("build", "run"), when="@:5.3.0")
+	depends_on("r-uwot@0.2.4:", type=("build", "run"), when="@5.4.0:")
 	depends_on("r-rcppeigen", type=("build", "run"))
 	depends_on("r-rcppprogress", type=("build", "run"))
 	depends_on("r-spatstat-core", type=("build", "run"), when="@:4.1.1")
