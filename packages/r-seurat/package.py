@@ -17,10 +17,19 @@ class RSeurat(RPackage):
 	R, et al (2015) <doi:10.1016/j.cell.2015.05.002>, and Stuart T, Butler A,
 	et al (2019) <doi:10.1016/j.cell.2019.05.031> for more details."""
 
+	license("MIT")
+
 	cran = "Seurat"
+	version("5.4.0", sha256="68e0b9506d9e33e710e2776638c55489a660c80ab30cfa5ff1db48a0899a22c1")
+	version("5.3.1", sha256="8854d229b3a443e71d5a36f6bd57c037c4b0e73cd1f562ca52673960aab6180a")
 	version("5.3.0", sha256="12abaf6cea4aa30f73028387e74ecb405b17acbae414d43522e764f3179908a7")
+	version("5.2.1", sha256="a9536d580cfb8967ad3bd1cffddabe43645f974be2b8cc16cfaaeeca53020563")
+	version("5.2.0", sha256="86757387866cee7dfe6ef556b2f4b3f8a785b75ffdcbb9fcd1cd16602748e167")
+	version("5.1.0", sha256="6171ac45a44d5c70fc1409fe9b95298fb7a45342b653620c9fa4dff19837bf30")
 	version("5.0.3", md5="2112a71f0ea07db422650c86aacc5d25")
+	version("5.0.2", sha256="27a3a52759af5762936ffb6a675784eedef65234d198b6fe1a977c871da06761")
 	version("5.0.1", md5="3965b1ee0bdc7f005d250a3dd429bcc3")
+	version("5.0.0", sha256="5c84e3f8f74734994e141de63871790ac2a7a5515c392a6469d52f277e56b1eb")
 	version("4.4.0", sha256="0f17df9597642cfc1db4d8718f0b59ebab9fbed328b1f885f42ee85ea0dcb4dd")
 	version("4.3.0", sha256="7ebacb3b86f74279de60b597f9a6e728f0668719811b0dca3425d21762fff97c")
 	version("4.2.1", sha256="410238b6ca147451b43800a6e49c132fa5f6aacfe6b93b39a1e4d61257a9e35e")

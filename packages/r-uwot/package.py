@@ -21,6 +21,7 @@ class RUwot(RPackage):
 	examples."""
 
 	cran = "uwot"
+	version("0.2.4", sha256="991ba309896ede5a0e29a6d45c01da457a0c177bf5ba6c1e5978a8835bcd0bae")
 	version("0.1.3", sha256="4936e6922444cae8a71735e945b6bb0828a1012232eb94568054f78451c406d7")
 	version("0.1.16", md5="bc3f6277a5ef9c657baa0215964c910d")
 	version("0.1.14", sha256="8016e8192b7e72604ca71840cbe43fa1d2caed8a8ad7cbf20e85cd3b384a9fe0")
@@ -34,3 +35,4 @@ class RUwot(RPackage):
 	depends_on("r-irlba", type=("build", "run"))
 	depends_on("r-rcppprogress", type=("build", "run"))
 	depends_on("r-dqrng", type=("build", "run"))
+	depends_on("r-rspectra", type=("build", "run"), when="@0.2.4:")
