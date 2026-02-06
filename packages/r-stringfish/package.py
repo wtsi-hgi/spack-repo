@@ -35,6 +35,6 @@ class RStringfish(RPackage):
 	version("0.11", sha256="cbb5ff86935da649472a1ecfc7979d5a9c698959e66a940e224e77247b07ab39")
 
 	depends_on("r@3.6.0:", when="@0.17.0:")
-	depends_on("r@3.0.2:", type=("build", "run"))
+	depends_on("r@3.0.2:", type=("build", "run"), when="@:0.17.0")
 	depends_on("r-rcpp@0.12.18.3:", type=("build", "run"))
 	depends_on("r-rcppparallel@5.1.4:", type=("build", "run"))
