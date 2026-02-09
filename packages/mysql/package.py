@@ -4,10 +4,12 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 import os
+import re
 import tempfile
 
 from spack.package import *
 from spack.pkg.builtin.boost import Boost
+from spack.build_environment import InstallError
 
 
 class Mysql(CMakePackage):
@@ -152,6 +154,176 @@ class Mysql(CMakePackage):
 
     patch("fix-no-server-5.5.patch", level=1, when="@5.5.0:5.5")
 
+    def patch(self):
+        if self.spec.satisfies("@:5.7"):
+            file_path = join_path("vio", "viosslfactories.c")
+            old = """  if ((dh=DH_new()))
+  {
+    dh->p=BN_bin2bn(dh2048_p,sizeof(dh2048_p),NULL);
+    dh->g=BN_bin2bn(dh2048_g,sizeof(dh2048_g),NULL);
+    if (! dh->p || ! dh->g)
+    {
+      DH_free(dh);
+      dh=0;
+    }
+  }"""
+            new = """  if ((dh=DH_new()))
+  {
+#if OPENSSL_VERSION_NUMBER < 0x10100000L || defined(LIBRESSL_VERSION_NUMBER)
+    dh->p=BN_bin2bn(dh2048_p,sizeof(dh2048_p),NULL);
+    dh->g=BN_bin2bn(dh2048_g,sizeof(dh2048_g),NULL);
+    if (! dh->p || ! dh->g)
+    {
+      DH_free(dh);
+      dh=0;
+    }
+#else
+    BIGNUM *p = BN_bin2bn(dh2048_p,sizeof(dh2048_p),NULL);
+    BIGNUM *g = BN_bin2bn(dh2048_g,sizeof(dh2048_g),NULL);
+    if (!p || !g || !DH_set0_pqg(dh, p, NULL, g))
+    {
+      BN_free(p);
+      BN_free(g);
+      DH_free(dh);
+      dh=0;
+    }
+#endif
+  }"""
+            with open(file_path, "r", encoding="utf-8") as fh:
+                contents = fh.read()
+            if old not in contents:
+                raise InstallError("Failed to locate Diffie-Hellman initialization block")
+            contents = contents.replace(old, new, 1)
+            with open(file_path, "w", encoding="utf-8") as fh:
+                fh.write(contents)
+
+        if self.spec.satisfies("@:5.7"):
+            aes_file = join_path("mysys_ssl", "my_aes_openssl.cc")
+            with open(aes_file, "r", encoding="utf-8") as fh:
+                contents = fh.read()
+            if "#define MYSQL_EVP_CTX_DECLARE" not in contents:
+                repl = """
+#if OPENSSL_VERSION_NUMBER < 0x10100000L || defined(LIBRESSL_VERSION_NUMBER)
+#define MYSQL_EVP_CTX_DECLARE(name) \\
+  EVP_CIPHER_CTX name;               \\
+  EVP_CIPHER_CTX_init(&(name))
+#define MYSQL_EVP_CTX_PTR(name) (&(name))
+#define MYSQL_EVP_CTX_CLEANUP(name) EVP_CIPHER_CTX_cleanup(&(name))
+#else
+#define MYSQL_EVP_CTX_DECLARE(name)            \\
+  EVP_CIPHER_CTX *name = EVP_CIPHER_CTX_new(); \\
+  if (!(name))                                 \\
+    return MY_AES_BAD_DATA
+#define MYSQL_EVP_CTX_PTR(name) (name)
+#define MYSQL_EVP_CTX_CLEANUP(name) EVP_CIPHER_CTX_free(name)
+#endif
+"""
+                marker = "#include <openssl/err.h>"
+                if marker not in contents:
+                    raise InstallError("Failed to locate OpenSSL includes in my_aes_openssl.cc")
+                contents = contents.replace(marker, marker + repl, 1)
+
+            replacements = {
+                "  EVP_CIPHER_CTX ctx;": "  MYSQL_EVP_CTX_DECLARE(ctx);",
+                "  EVP_CIPHER_CTX_init(&ctx);\n": "",
+                "EVP_EncryptInit(&ctx": "EVP_EncryptInit(MYSQL_EVP_CTX_PTR(ctx)",
+                "EVP_CIPHER_CTX_set_padding(&ctx": "EVP_CIPHER_CTX_set_padding(MYSQL_EVP_CTX_PTR(ctx)",
+                "EVP_EncryptUpdate(&ctx": "EVP_EncryptUpdate(MYSQL_EVP_CTX_PTR(ctx)",
+                "EVP_EncryptFinal(&ctx": "EVP_EncryptFinal(MYSQL_EVP_CTX_PTR(ctx)",
+                "EVP_DecryptInit(&ctx": "EVP_DecryptInit(MYSQL_EVP_CTX_PTR(ctx)",
+                "EVP_DecryptUpdate(&ctx": "EVP_DecryptUpdate(MYSQL_EVP_CTX_PTR(ctx)",
+                "EVP_DecryptFinal_ex(&ctx": "EVP_DecryptFinal_ex(MYSQL_EVP_CTX_PTR(ctx)",
+                "EVP_CIPHER_CTX_cleanup(&ctx)": "MYSQL_EVP_CTX_CLEANUP(ctx)",
+            }
+
+            updated = contents
+            for old, new in replacements.items():
+                updated = updated.replace(old, new)
+
+            with open(aes_file, "w", encoding="utf-8") as fh:
+                fh.write(updated)
+
+            ssl_file = join_path("cmake", "ssl.cmake")
+            with open(ssl_file, "r", encoding="utf-8") as fh:
+                ssl_contents = fh.read()
+            ssl_guard = "LIST(APPEND SSL_LIBRARIES ${ZLIB_LIBRARY})"
+            if ssl_guard not in ssl_contents:
+                ssl_marker = "      SET(SSL_LIBRARIES ${MY_OPENSSL_LIBRARY} ${MY_CRYPTO_LIBRARY})"
+                if ssl_marker not in ssl_contents:
+                    raise InstallError("Failed to locate SSL_LIBRARIES definition")
+                ssl_replacement = (
+                    ssl_marker
+                    + "\n      IF(ZLIB_LIBRARY)\n"
+                    "        LIST(APPEND SSL_LIBRARIES ${ZLIB_LIBRARY})\n"
+                    "      ENDIF()"
+                )
+                ssl_contents = ssl_contents.replace(ssl_marker, ssl_replacement, 1)
+                with open(ssl_file, "w", encoding="utf-8") as fh:
+                    fh.write(ssl_contents)
+
+            univ_file = join_path("storage", "innobase", "include", "univ.i")
+            with open(univ_file, "r", encoding="utf-8") as fh:
+                univ_contents = fh.read()
+            pattern = r"#define\s+byte\s+unsigned char"
+            if not re.search(pattern, univ_contents):
+                raise InstallError("Failed to locate byte definition in univ.i")
+            new = (
+                "#ifndef UNIV_BYTE_DEFINED\n"
+                "#define UNIV_BYTE_DEFINED\n"
+                "#ifdef byte\n"
+                "#undef byte\n"
+                "#endif\n"
+                "typedef unsigned char byte;\n"
+                "#endif"
+            )
+            univ_contents = re.sub(pattern, new, univ_contents, count=1)
+            with open(univ_file, "w", encoding="utf-8") as fh:
+                fh.write(univ_contents)
+
+            page_types = join_path("storage", "innobase", "include", "page0types.h")
+            filter_file("using namespace std;", "", page_types, string=True)
+            filter_file("typedef map<", "typedef std::map<", page_types, string=True)
+
+            page_zip = join_path("storage", "innobase", "page", "page0zip.cc")
+            filter_file("using namespace std;", "", page_zip, string=True)
+
+            row_mysql = join_path("storage", "innobase", "row", "row0mysql.cc")
+            with open(row_mysql, "r", encoding="utf-8") as fh:
+                row_contents = fh.read()
+            if "#include <algorithm>" not in row_contents:
+                row_contents = row_contents.replace(
+                    '#include "row0mysql.h"',
+                    '#include "row0mysql.h"\n#include <algorithm>',
+                    1,
+                )
+            row_contents = row_contents.replace(
+                "srch_key_len = max(srch_key_len,temp_len);",
+                "srch_key_len = std::max(srch_key_len, temp_len);",
+            )
+            with open(row_mysql, "w", encoding="utf-8") as fh:
+                fh.write(row_contents)
+
+            client_auth = join_path("sql-common", "client_authentication.cc")
+            filter_file(
+                "server_public_key_path != '\\0'",
+                "server_public_key_path[0] != '\\0'",
+                client_auth,
+                string=True,
+            )
+
+            mysqld = join_path("sql", "mysqld.cc")
+            with open(mysqld, "r", encoding="utf-8") as fh:
+                mysqld_contents = fh.read()
+            original_call = "#ifndef HAVE_YASSL\n  CRYPTO_malloc_init();\n#endif"
+            replacement_call = (
+                "#ifndef HAVE_YASSL\n#if OPENSSL_VERSION_NUMBER < 0x10100000L\n"
+                "  CRYPTO_malloc_init();\n#endif\n#endif"
+            )
+            if original_call in mysqld_contents:
+                mysqld_contents = mysqld_contents.replace(original_call, replacement_call, 1)
+            with open(mysqld, "w", encoding="utf-8") as fh:
+                fh.write(mysqld_contents)
+
     @property
     def command(self):
         return Executable(self.prefix.bin.mysql_config)
@@ -159,6 +331,12 @@ class Mysql(CMakePackage):
     @property
     def libs(self):
         return find_libraries("libmysqlclient", root=self.prefix, recursive=True)
+
+    @run_after("install")
+    def install_test(self):
+        mysql = Executable(join_path(self.prefix.bin, "mysql"))
+        with working_dir("spack-test", create=True):
+            mysql("--version")
 
     def url_for_version(self, version):
         url = "https://dev.mysql.com/get/Downloads/MySQL-{0}/mysql-{1}.tar.gz"
@@ -172,8 +350,10 @@ class Mysql(CMakePackage):
             self.define("WITH_EDITLINE", "system"),
             self.define("WITH_LIBEVENT", "system"),
             self.define("WITH_LZ4", "system"),
-            self.define("WITH_SSL", spec["openssl"].prefix),
+            self.define("WITH_SSL", "system"),
+            self.define("OPENSSL_ROOT_DIR", spec["openssl"].prefix),
             self.define("WITH_ZLIB", "system"),
+            self.define("OPENSSL_USE_STATIC_LIBS", False),
             self.define_from_variant("WITHOUT_SERVER", "client_only"),
         ]
 
