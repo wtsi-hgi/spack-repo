@@ -152,6 +152,172 @@ class Mysql(CMakePackage):
 
     patch("fix-no-server-5.5.patch", level=1, when="@5.5.0:5.5")
 
+    def patch(self):
+        if not self.spec.satisfies("@:5.7"):
+            return
+
+        openssl_patch = """
+--- a/vio/viosslfactories.c
++++ b/vio/viosslfactories.c
+@@ -68,6 +68,18 @@ static DH *get_dh2048(void)
+   DH *dh;
+   if ((dh=DH_new()))
+   {
++    #if OPENSSL_VERSION_NUMBER < 0x10100000L || defined(LIBRESSL_VERSION_NUMBER)
+     dh->p=BN_bin2bn(dh2048_p,sizeof(dh2048_p),NULL);
+     dh->g=BN_bin2bn(dh2048_g,sizeof(dh2048_g),NULL);
+     if (! dh->p || ! dh->g)
+     {
+       DH_free(dh);
+       dh=0;
+     }
++    #else
++    BIGNUM *p = BN_bin2bn(dh2048_p,sizeof(dh2048_p),NULL);
++    BIGNUM *g = BN_bin2bn(dh2048_g,sizeof(dh2048_g),NULL);
++    if (!p || !g || !DH_set0_pqg(dh, p, NULL, g))
++    {
++      BN_free(p);
++      BN_free(g);
++      DH_free(dh);
++      dh=0;
++    }
++    #endif
+   }
+   return(dh);
+ }
+--- a/mysys_ssl/my_aes_openssl.cc
++++ b/mysys_ssl/my_aes_openssl.cc
+@@ -22,6 +22,30 @@
+ #include <openssl/evp.h>
+ #include <openssl/err.h>
+ 
++#if OPENSSL_VERSION_NUMBER < 0x10100000L || defined(LIBRESSL_VERSION_NUMBER)
++static inline EVP_CIPHER_CTX *mysql_evp_ctx_new(EVP_CIPHER_CTX *ctx)
++{
++  EVP_CIPHER_CTX_init(ctx);
++  return ctx;
++}
++
++static inline void mysql_evp_ctx_free(EVP_CIPHER_CTX *ctx)
++{
++  EVP_CIPHER_CTX_cleanup(ctx);
++}
++#else
++static inline EVP_CIPHER_CTX *mysql_evp_ctx_new(EVP_CIPHER_CTX *ctx)
++{
++  (void)ctx;
++  return EVP_CIPHER_CTX_new();
++}
++
++static inline void mysql_evp_ctx_free(EVP_CIPHER_CTX *ctx)
++{
++  EVP_CIPHER_CTX_free(ctx);
++}
++#endif
++
+@@ -101,14 +125,17 @@ aes_evp_type(const my_aes_opmode mode)
+ int my_aes_encrypt(const unsigned char *source, uint32 source_length,
+                    unsigned char *dest,
+                    const unsigned char *key, uint32 key_length,
+                    enum my_aes_opmode mode, const unsigned char *iv)
+ {
+-  EVP_CIPHER_CTX ctx;
++  EVP_CIPHER_CTX ctx_holder;
++  EVP_CIPHER_CTX *ctx = mysql_evp_ctx_new(&ctx_holder);
+   const EVP_CIPHER *cipher= aes_evp_type(mode);
+   int u_len, f_len;
+   /* The real key to be used for encryption */
+   unsigned char rkey[MAX_AES_KEY_LENGTH / 8];
+   my_aes_create_key(key, key_length, rkey, mode);
+ 
+   if (!cipher || (EVP_CIPHER_iv_length(cipher) > 0 && !iv))
+     return MY_AES_BAD_DATA;
++  if (!ctx)
++    return MY_AES_BAD_DATA;
+ 
+-  if (!EVP_EncryptInit(&ctx, cipher, rkey, iv))
++  if (!EVP_EncryptInit(ctx, cipher, rkey, iv))
+     goto aes_error;                             /* Error */
+-  if (!EVP_CIPHER_CTX_set_padding(&ctx, 1))
++  if (!EVP_CIPHER_CTX_set_padding(ctx, 1))
+     goto aes_error;                             /* Error */
+-  if (!EVP_EncryptUpdate(&ctx, dest, &u_len, source, source_length))
++  if (!EVP_EncryptUpdate(ctx, dest, &u_len, source, source_length))
+     goto aes_error;                             /* Error */
+ 
+-  if (!EVP_EncryptFinal(&ctx, dest + u_len, &f_len))
++  if (!EVP_EncryptFinal(ctx, dest + u_len, &f_len))
+     goto aes_error;                             /* Error */
+ 
+-  EVP_CIPHER_CTX_cleanup(&ctx);
++  mysql_evp_ctx_free(ctx);
+   return u_len + f_len;
+ 
+ aes_error:
+   /* need to explicitly clean up the error if we want to ignore it */
+   ERR_clear_error();
+-  EVP_CIPHER_CTX_cleanup(&ctx);
++  mysql_evp_ctx_free(ctx);
+   return MY_AES_BAD_DATA;
+ }
+@@ -116,25 +143,28 @@ aes_error:
+ int my_aes_decrypt(const unsigned char *source, uint32 source_length,
+                    unsigned char *dest,
+                    const unsigned char *key, uint32 key_length,
+                    enum my_aes_opmode mode, const unsigned char *iv)
+ {
+ 
+-  EVP_CIPHER_CTX ctx;
++  EVP_CIPHER_CTX ctx_holder;
++  EVP_CIPHER_CTX *ctx = mysql_evp_ctx_new(&ctx_holder);
+   const EVP_CIPHER *cipher= aes_evp_type(mode);
+   int u_len, f_len;
+ 
+   /* The real key to be used for decryption */
+   unsigned char rkey[MAX_AES_KEY_LENGTH / 8];
+ 
+   my_aes_create_key(key, key_length, rkey, mode);
+   if (!cipher || (EVP_CIPHER_iv_length(cipher) > 0 && !iv))
+     return MY_AES_BAD_DATA;
+-
+-  EVP_CIPHER_CTX_init(&ctx);
++  if (!ctx)
++    return MY_AES_BAD_DATA;
+ 
+-  if (!EVP_DecryptInit(&ctx, aes_evp_type(mode), rkey, iv))
++  if (!EVP_DecryptInit(ctx, aes_evp_type(mode), rkey, iv))
+     goto aes_error;                             /* Error */
+-  if (!EVP_CIPHER_CTX_set_padding(&ctx, 1))
++  if (!EVP_CIPHER_CTX_set_padding(ctx, 1))
+     goto aes_error;                             /* Error */
+-  if (!EVP_DecryptUpdate(&ctx, dest, &u_len, source, source_length))
++  if (!EVP_DecryptUpdate(ctx, dest, &u_len, source, source_length))
+     goto aes_error;                             /* Error */
+-  if (!EVP_DecryptFinal_ex(&ctx, dest + u_len, &f_len))
++  if (!EVP_DecryptFinal_ex(ctx, dest + u_len, &f_len))
+     goto aes_error;                             /* Error */
+ 
+-  EVP_CIPHER_CTX_cleanup(&ctx);
++  mysql_evp_ctx_free(ctx);
+   return u_len + f_len;
+ 
+ aes_error:
+   /* need to explicitly clean up the error if we want to ignore it */
+   ERR_clear_error();
+-  EVP_CIPHER_CTX_cleanup(&ctx);
++  mysql_evp_ctx_free(ctx);
+   return MY_AES_BAD_DATA;
+ }
++
+"""
+
+
+        patch_exe = which("patch")
+        with tempfile.NamedTemporaryFile("w", delete=False) as patch_file:
+            patch_file.write(openssl_patch)
+            patch_file.flush()
+            with working_dir(self.stage.source_path):
+                patch_exe("-s", "-p1", "-i", patch_file.name)
     @property
     def command(self):
         return Executable(self.prefix.bin.mysql_config)
