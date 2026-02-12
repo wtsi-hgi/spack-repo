@@ -1,0 +1,52 @@
+# Copyright 2013-2024 Lawrence Livermore National Security, LLC
+# and other Spack Project Developers. See the top-level COPYRIGHT file for details.
+#
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)
+
+from spack.package import *
+
+
+class PyAf3score(PythonPackage):
+    """AF3Score provides scripting utilities and C++ extensions for evaluating
+    AlphaFold3 structures."""
+
+    homepage = "https://github.com/Mingchenchen/AF3Score"
+    url = "https://github.com/Mingchenchen/AF3Score/archive/refs/tags/v2.0.0.tar.gz"
+    git = "https://github.com/Mingchenchen/AF3Score.git"
+
+    license("CC-BY-NC-SA-4.0")
+
+    version("2.0.0", sha256="b578ed61cb178b1e6355c8b028c23ec4e3cd51838e57fcd92d0f529c8268464c")
+    version("1.0.0", sha256="16ed5242631d88b6336c811aedc04c3695d15747fd8620bb4419c3dc8fb3ba72")
+
+    def url_for_version(self, version):
+        return f"https://github.com/Mingchenchen/AF3Score/archive/refs/tags/v{version}.tar.gz"
+
+    import_modules = ["alphafold3"]
+
+    depends_on("python@3.11:", type=("build", "run"))
+
+    depends_on("cmake@3.28:", type="build")
+    depends_on("ninja", type="build")
+    depends_on("py-scikit-build-core@0.9:", type="build")
+    depends_on("py-pybind11", type="build")
+    depends_on("py-numpy", type=("build", "run"))
+
+    depends_on("py-absl-py", type=("build", "run"))
+    depends_on("py-chex", type=("build", "run"))
+    depends_on("py-dm-haiku", type=("build", "run"))
+    depends_on("py-dm-tree", type=("build", "run"))
+    depends_on("py-jax@0.4:", type=("build", "run"))
+    depends_on("py-jaxlib@0.4:", type=("build", "run"))
+    depends_on("py-jaxtyping", type=("build", "run"))
+    depends_on("rdkit +python", type=("build", "run"))
+    depends_on("py-tqdm", type=("build", "run"))
+    depends_on("py-typeguard@2.13.3:", type=("build", "run"))
+    depends_on("py-zstandard", type=("build", "run"))
+    depends_on("zlib", type=("build", "link"))
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python = self.spec["python"].command
+            python("-c", "import alphafold3")
