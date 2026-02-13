@@ -49,6 +49,17 @@ class Gridss(Package):
     depends_on("r-readr", type="run")
     depends_on("r-ggplot2", type="run")
 
+    def patch(self):
+        # Convert CRLF sequences in R helper scripts to LF so /usr/bin/env works
+        text_files = [
+            "gridss_somatic_filter",
+            "libgridss.R",
+            "gridss.config.R",
+        ]
+        for script in text_files:
+            if os.path.exists(script):
+                filter_file("\r\n", "\n", script, string=True)
+
     def install(self, spec, prefix):
         # Create installation directories
         mkdir(prefix.bin)
