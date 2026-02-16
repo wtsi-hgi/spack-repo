@@ -14,15 +14,11 @@ class PyAf3score(PythonPackage):
 
     homepage = "https://github.com/Mingchenchen/AF3Score"
     url = "https://github.com/Mingchenchen/AF3Score/archive/refs/tags/v2.0.0.tar.gz"
-    git = "https://github.com/Mingchenchen/AF3Score.git"
 
     license("CC-BY-NC-SA-4.0")
 
     version("2.0.0", sha256="b578ed61cb178b1e6355c8b028c23ec4e3cd51838e57fcd92d0f529c8268464c")
     version("1.0.0", sha256="16ed5242631d88b6336c811aedc04c3695d15747fd8620bb4419c3dc8fb3ba72")
-
-    def url_for_version(self, version):
-        return f"https://github.com/Mingchenchen/AF3Score/archive/refs/tags/v{version}.tar.gz"
 
     import_modules = ["alphafold3"]
 
