@@ -4,6 +4,8 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 from spack.package import *
+import os
+from pathlib import Path
 
 
 class PyAf3score(PythonPackage):
@@ -35,7 +37,7 @@ class PyAf3score(PythonPackage):
     depends_on("py-absl-py", type=("build", "run"))
     depends_on("py-chex", type=("build", "run"))
     depends_on("py-dm-haiku", type=("build", "run"))
-    depends_on("py-dm-tree", type=("build", "run"))
+    depends_on("py-dm-tree@0.1.8", type=("build", "run"))
     depends_on("py-jax@0.4:", type=("build", "run"))
     depends_on("py-jaxlib@0.4:", type=("build", "run"))
     depends_on("py-jaxtyping", type=("build", "run"))
@@ -44,6 +46,32 @@ class PyAf3score(PythonPackage):
     depends_on("py-typeguard@2.13.3:", type=("build", "run"))
     depends_on("py-zstandard", type=("build", "run"))
     depends_on("zlib", type=("build", "link"))
+
+    @run_before("install")
+    def install_script(self):
+
+        def create_bin_file(file_name, old_str="", new_str=""):
+            file_path = f"{self.prefix.bin}/{file_name}"
+
+            with open(f"./{file_name}", 'r') as fh1:
+                data = fh1.read()
+                mkdirp(self.prefix.bin)
+
+                if new_str and old_str:
+                    data = data.replace(old_str, new_str)
+
+                with open(f"{self.prefix.bin}/{file_name}", 'w+') as fh2:
+                    fh2.write(data)
+
+            os.chmod(file_path, 0o755)
+        
+        create_bin_file(
+            "AF3score_pipeline.sh",
+            'PYTHON_EXEC="/lustre/grp/cmclab/share/wangd/env/alphafold3/bin/python"',
+            'PYTHON_EXEC=' + self.spec["python"].prefix.bin.python
+        )
+        create_bin_file("functions.sh")
+        
 
     @run_after("install")
     def install_test(self):
