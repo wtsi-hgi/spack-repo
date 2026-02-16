@@ -17,14 +17,10 @@ class Coordgen(CMakePackage):
 
     version("3.0.2", sha256="f67697434f7fec03bca150a6d84ea0e8409f6ec49d5aab43badc5833098ff4e3")
 
-    variant("maeparser", default=True, description="Use MAE parser")
-    variant("example", default=False, description="Build sample executable")
-    variant("shared", default=True, description="Build as shared library")
-
     # depends_on("cxx", type="build")  # generated
 
-    depends_on("maeparser", when="+maeparser")
-    depends_on("boost", when="+maeparser")
+    depends_on("maeparser")
+    depends_on("boost")
 
     def patch(self):
         for needle in ("cmake_minimum_required(VERSION 2.8)", "cmake_minimum_required(VERSION 3.2)"):
@@ -37,8 +33,7 @@ class Coordgen(CMakePackage):
 
     def cmake_args(self):
         args = [
-            self.define_from_variant("COORDGEN_BUILD_EXAMPLE", "example"),
-            self.define_from_variant("COORDGEN_USE_MAEPARSER", "maeparser"),
-            self.define_from_variant("COORDGEN_BUILD_SHARED_LIBS", "shared"),
+            "COORDGEN_USE_MAEPARSER",
+            "COORDGEN_BUILD_SHARED_LIBS"
         ]
         return args
