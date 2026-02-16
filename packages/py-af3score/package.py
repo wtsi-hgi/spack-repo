@@ -33,7 +33,7 @@ class PyAf3score(PythonPackage):
     depends_on("py-absl-py", type=("build", "run"))
     depends_on("py-chex", type=("build", "run"))
     depends_on("py-dm-haiku", type=("build", "run"))
-    depends_on("py-dm-tree@0.1.8", type=("build", "run"))
+    depends_on("py-dm-tree", type=("build", "run"))
     depends_on("py-jax@0.4:", type=("build", "run"))
     depends_on("py-jaxlib@0.4:", type=("build", "run"))
     depends_on("py-jaxtyping", type=("build", "run"))
@@ -42,6 +42,7 @@ class PyAf3score(PythonPackage):
     depends_on("py-typeguard@2.13.3:", type=("build", "run"))
     depends_on("py-zstandard", type=("build", "run"))
     depends_on("zlib", type=("build", "link"))
+    depends_on("boost", type=('build', 'link'))
 
     @run_before("install")
     def install_script(self):
