@@ -29,7 +29,6 @@ class PyAf3score(PythonPackage):
     depends_on("py-scikit-build-core@0.9:", type="build")
     depends_on("py-pybind11", type="build")
     depends_on("py-numpy", type=("build", "run"))
-
     depends_on("py-absl-py", type=("build", "run"))
     depends_on("py-chex", type=("build", "run"))
     depends_on("py-dm-haiku", type=("build", "run"))
@@ -42,8 +41,8 @@ class PyAf3score(PythonPackage):
     depends_on("py-typeguard@2.13.3:", type=("build", "run"))
     depends_on("py-zstandard", type=("build", "run"))
     depends_on("zlib", type=("build", "link"))
+    depends_on("boost cxxstd=14")
 
-    requires("cxxstd=14")
 
     @run_before("install")
     def install_script(self):
