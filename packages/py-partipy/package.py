@@ -18,6 +18,7 @@ class PyPartipy(PythonPackage):
 
     depends_on("python@3.10:", type=("build", "run"))
     depends_on("py-hatchling", type="build")
+    depends_on("py-hatch-vcs", type="build")
     depends_on("py-scanpy", type=("build", "run"))
     depends_on("py-decoupler@2.0.0:", type=("build", "run"))
     depends_on("py-dcor", type=("build", "run"))
