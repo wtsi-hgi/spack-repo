@@ -10,7 +10,6 @@ class PyHatchling(PythonPackage):
 
     homepage = "https://hatch.pypa.io/latest/"
     pypi = "hatchling/hatchling-1.4.1.tar.gz"
-    git = "https://github.com/pypa/hatch"
 
     license("MIT")
 
