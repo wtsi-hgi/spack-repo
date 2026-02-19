@@ -41,7 +41,7 @@ class PyAf3score(PythonPackage):
     depends_on("py-typeguard@2.13.3:", type=("build", "run"))
     depends_on("py-zstandard", type=("build", "run"))
     depends_on("zlib", type=("build", "link"))
-    depends_on("boost cxxstd=14")
+    depends_on("boost@1.77.0 cxxstd=14")
 
 
     @run_before("install")
