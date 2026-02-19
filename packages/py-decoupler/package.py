@@ -134,3 +134,9 @@ class PyDecoupler(PythonPackage):
                 "",
                 "pyproject.toml",
             )
+
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python("-c", "import decoupler")

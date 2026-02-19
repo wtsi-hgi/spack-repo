@@ -23,3 +23,8 @@ class PyDunamai(PythonPackage):
 
     depends_on("py-packaging@20.9:", type=("build", "run"))
     depends_on("py-importlib-metadata@1.6:", when="^python@:3.7", type=("build", "run"))
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python("-c", "import dunamai")
