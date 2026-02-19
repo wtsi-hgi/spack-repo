@@ -6,7 +6,7 @@
 from spack.package import *
 
 
-class PyParyipy(PythonPackage):
+class PyPartipy(PythonPackage):
     """Pareto Task Inference in Python (ParTIpy)."""
 
     homepage = "https://github.com/saezlab/ParTIpy"
