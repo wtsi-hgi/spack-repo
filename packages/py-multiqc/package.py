@@ -11,13 +11,14 @@ class PyMultiqc(PythonPackage):
     for a large number of common bioinformatics tools."""
 
     homepage = "https://multiqc.info"
-    pypi = "multiqc/multiqc-1.0.tar.gz"
+    pypi = "multiqc/multiqc-1.33.tar.gz"
 
     license("GPL-3.0-only")
     maintainers("ewels", "vladsavelyev")
 
-    version("1.23", sha256="4e84664000fec69a0952a0457a8d780dcc1ce9e36d14680dbdba5610b9766265")
+    version("1.33", sha256="06e2b82fd9bfa458a79d8da869cb7d88260f624c03297120a70446a49ce852ed")
     version("1.30", sha256="4e5e4af10c965b9139c97620bb2174e558143aa4116a7aa969f6065b848183d8")
+    version("1.23", sha256="4e84664000fec69a0952a0457a8d780dcc1ce9e36d14680dbdba5610b9766265")
 
     # dependency defintions move from setup.py to pyproject.toml as of @1.23:
 
@@ -30,7 +31,7 @@ class PyMultiqc(PythonPackage):
     depends_on("py-importlib-metadata", type=("build", "run"), when="@1.16:")
     depends_on("py-jinja2@3.0.0:", type=("build", "run"), when="@1.14:")
     depends_on("py-jinja2@2.9:", type=("build", "run"), when="@:1.13")
-    depends_on("py-kaleido", type=("build", "run"), when="@1.20:")
+    depends_on("py-kaleido@0.2.1", type=("build", "run"), when="@1.20:")
     depends_on("py-markdown", type=("build", "run"), when="@1.3:")
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-packaging", type=("build", "run"), when="@1.16:")
@@ -44,6 +45,7 @@ class PyMultiqc(PythonPackage):
     depends_on("py-python-dotenv", type=("build", "run"), when="@1.30:")
     depends_on("py-natsort", type=("build", "run"), when="@1.30:")
     depends_on("py-polars", type=("build", "run"), when="@1.30:")
+    depends_on("py-pyarrow", type=("build", "run"), when="@1.33:")
     # MultiQC uses environment variable expansion in YAML via pyyaml-env-tag
     depends_on("py-pyyaml-env-tag", type=("build", "run"), when="@1.18:")
 
@@ -68,7 +70,16 @@ class PyMultiqc(PythonPackage):
     depends_on("py-coloredlogs", type=("build", "run"), when="@1.13:")
     depends_on("py-spectra@0.0.10:", type=("build", "run"), when="@1.4:")
     depends_on("py-spectra", type=("build", "run"), when="@1.18:")
-    depends_on("py-pydantic@2.6:", type=("build", "run"), when="@1.23:")
+    depends_on("py-pydantic@2.6:", type=("build", "run"), when="@1.23:1.32")
+    depends_on("py-pydantic@2.7:", type=("build", "run"), when="@1.33:")
     depends_on("py-typing-extensions@4.13:", type=("build", "run"), when="@1.23:")
     depends_on("py-typeguard", type=("build", "run"), when="@1.23:")
     depends_on("py-tqdm", type=("build", "run"), when="@1.23:")
+    depends_on("py-boto3", type=("build", "run"), when="@1.33:")
+    depends_on("py-tiktoken", type=("build", "run"), when="@1.33:")
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            multiqc = Executable(join_path(self.prefix.bin, "multiqc"))
+            multiqc("--help")
