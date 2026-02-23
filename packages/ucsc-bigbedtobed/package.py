@@ -14,6 +14,7 @@ class UcscBigbedtobed(Package):
 
     version("482", sha256="745d0f0a980e9f863373b0b0a6ad7961a1d0f53a9d7c446e92fc28fc4909431a")
 
+    depends_on("cmake@3.6:")
     depends_on("gmake")
     depends_on("libpng")
     depends_on("libuuid")
