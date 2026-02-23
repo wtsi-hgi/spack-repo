@@ -31,7 +31,13 @@ class RPatchwork(RPackage):
 	version("1.0.0", sha256="8bfb59b91775781848f39eedcaaaf92c147e2637f384085fcdd41fc8355b3c63")
 
 	depends_on("r-ggplot2@3.0.0:", type=("build", "run"))
-	depends_on("r-rlang", type=("build", "run"))
-	depends_on("r-cli", type=("build", "run"))
-	depends_on("r-gtable@0.3.6:", type=("build", "run"))
-	depends_on("r-farver", type=("build", "run"))
+
+	depends_on("r-gtable@0.3.6:", type=("build", "run"), when="@1.3.0:")
+	depends_on("r-gtable@:0.3.6", type=("build", "run"), when="@:1.2.0")
+
+	depends_on("r-rlang@1.0.0:", type=("build", "run"), when="@1.3.0:")
+	depends_on("r-rlang", type=("build", "run"), when="@:1.3.0")
+
+	depends_on("r-cli", type=("build", "run"), when="@1.1.3:")
+
+	depends_on("r-farver", type=("build", "run"), when="@1.3.0:")
