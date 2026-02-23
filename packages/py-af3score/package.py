@@ -23,6 +23,7 @@ class PyAf3score(PythonPackage):
     import_modules = ["alphafold3"]
 
     depends_on("python@3.11:", type=("build", "run"))
+    depends_on("py-setuptools", type=("build"))
 
     depends_on("cmake@3.28:", type="build")
     depends_on("ninja", type="build")
