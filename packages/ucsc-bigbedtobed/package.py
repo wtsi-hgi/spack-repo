@@ -23,7 +23,7 @@ class UcscBigbedtobed(Package):
     depends_on("bzip2")
     depends_on("xz")
     depends_on("libiconv")
-    depends_on("mariadb-client")
+    depends_on("mariadb-c-client")
 
     def setup_build_environment(self, env):
         env.set("MYSQLLIBS", "-lmysqlclient")
