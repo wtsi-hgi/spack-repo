@@ -25,7 +25,7 @@ class PyAf3score(PythonPackage):
     depends_on("python@3.11", type=("build", "run"))
     depends_on("py-setuptools", type=("build"))
 
-    depends_on("cmake@3.28:", type="build")
+    depends_on("cmake@3.29:", type="build")
     depends_on("ninja", type="build")
     depends_on("py-scikit-build-core@0.9:", type="build")
     depends_on("py-pybind11", type="build")
