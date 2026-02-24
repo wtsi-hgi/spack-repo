@@ -41,3 +41,37 @@ class RPatchwork(RPackage):
 	depends_on("r-cli", type=("build", "run"), when="@1.1.3:")
 
 	depends_on("r-farver", type=("build", "run"), when="@1.3.0:")
+
+	def patch(self):
+		if self.spec.satisfies("@1.3.2:"):
+			filter_file(
+				"  run_on_load()",
+				"""  run_on_load()
+  ns <- asNamespace("ggplot2")
+  if (exists("is_ggplot", envir = ns, inherits = FALSE)) {
+    is_ggplot <<- get("is_ggplot", envir = ns)
+  } else if (exists("is.ggplot", envir = ns, inherits = FALSE)) {
+    is_ggplot <<- get("is.ggplot", envir = ns)
+  }
+  if (exists("is_theme", envir = ns, inherits = FALSE)) {
+    is_theme <<- get("is_theme", envir = ns)
+  } else if (exists("is.theme", envir = ns, inherits = FALSE)) {
+    is_theme <<- get("is.theme", envir = ns)
+  }
+""",
+				"R/zzz.R",
+				string=True,
+			)
+			filter_file(
+				"importFrom(ggplot2,is_ggplot)\n",
+				"",
+				"NAMESPACE",
+				string=True,
+			)
+			filter_file(
+				"importFrom(ggplot2,is_theme)\n",
+				"",
+				"NAMESPACE",
+				string=True,
+			)
+			force_remove("MD5")
