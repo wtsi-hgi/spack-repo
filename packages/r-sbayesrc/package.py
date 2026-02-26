@@ -16,7 +16,6 @@ class RSbayesrc(RPackage):
 
     homepage = "https://github.com/zhilizheng/SBayesRC"
     url = "https://github.com/zhilizheng/SBayesRC/releases/download/v0.2.6/SBayesRC_0.2.6.tar.gz"
-    list_url = "https://github.com/zhilizheng/SBayesRC/releases"
     license = "GPL-3+"
 
     version("0.2.6", sha256="dc556f1c3b295cfec37b0b2727fd4f043522c97bafe19be21acb049a57b78f49")
