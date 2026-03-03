@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -27,4 +28,3 @@ class RDatetimeutils(RPackage):
 
 	version("0.6-4", md5="db51e1591434d373df4e0b18985b3c5e")
 	version("0.6-3", md5="057ff0476d6a96d6b4c6b090e8e4dc0b")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RBenchden(RPackage):
 	cran = "benchden" 
 
 	version("1.0.8", md5="51a7e22ceb24057b167ec6db0687b81a")
-

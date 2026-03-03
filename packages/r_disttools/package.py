@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RDisttools(RPackage):
 	cran = "disttools" 
 
 	version("0.1.8", md5="fa02762c12f603ed02ab498ddb838d9d")
-

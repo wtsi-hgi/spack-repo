@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ Coefficient
 	cran = "ICC" 
 
 	version("2.4.0", md5="c7d6a7ff7b16b761db590d0cbf52b973")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RRcereal(RPackage):
 	cran = "Rcereal" 
 
 	version("1.2.1.1", md5="25570096366882d600c24fb9e656661a")
-

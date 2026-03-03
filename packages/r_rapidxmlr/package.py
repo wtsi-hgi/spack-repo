@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RRapidxmlr(RPackage):
 	cran = "rapidxmlr" 
 
 	version("0.1.0", md5="9081794bb4717d45e764851bed70d21f")
-

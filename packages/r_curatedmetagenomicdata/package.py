@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -33,4 +34,3 @@ class RCuratedmetagenomicdata(RPackage):
 	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-tidyr", type=("build", "run"))
 	depends_on("r-tidyselect", type=("build", "run"))
-

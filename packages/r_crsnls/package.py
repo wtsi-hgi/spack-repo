@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RCrsnls(RPackage):
 	cran = "crsnls" 
 
 	version("0.2", md5="e8a464288b62c9568ca3a1166dc7ea26")
-

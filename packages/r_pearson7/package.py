@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ with Shape Parameter 3/2
 	cran = "pearson7" 
 
 	version("1.0-3", md5="953962e672e07a14a8484295375c949e", url="https://cran.r-project.org/src/contrib/pearson7_1.0-3.tar.gz")
-

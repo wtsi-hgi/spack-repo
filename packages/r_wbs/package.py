@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RWbs(RPackage):
 	cran = "wbs" 
 
 	version("1.4", md5="2f4daaa84290d4e81002b251f15d8a56")
-

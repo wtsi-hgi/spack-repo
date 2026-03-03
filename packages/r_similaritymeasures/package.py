@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RSimilaritymeasures(RPackage):
 	cran = "SimilarityMeasures" 
 
 	version("1.4", md5="32b53760a59b714ff4ab0b7512dfae7c")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Models
 	cran = "pwr2" 
 
 	version("1.0", md5="69574bc5977e7602d519c6c50896a2c0", url="https://cran.r-project.org/src/contrib/pwr2_1.0.tar.gz")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RParade(RPackage):
 	cran = "parade" 
 
 	version("0.1", md5="7538b8aa2821e650f57f53a2783adf6b")
-

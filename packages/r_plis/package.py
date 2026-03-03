@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RPlis(RPackage):
 	cran = "PLIS" 
 
 	version("1.2", md5="1bc61f76529cf7ca7e35089489a3a9ce")
-

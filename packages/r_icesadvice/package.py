@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RIcesadvice(RPackage):
 	cran = "icesAdvice" 
 
 	version("2.1.1", md5="ee89e6ea2f0b9868a608b9f0a817663a")
-

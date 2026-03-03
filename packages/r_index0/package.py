@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RIndex0(RPackage):
 	cran = "index0" 
 
 	version("0.0.1", md5="c087c52f6248385d233c95fa6291f468", url="https://cran.r-project.org/src/contrib/index0_0.0.1.tar.gz")
-

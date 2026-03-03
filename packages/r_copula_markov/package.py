@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ Serially Correlated Time Series
 	cran = "Copula.Markov" 
 
 	version("2.9", md5="a1887269f423da56d690f55952bc2b2a")
-

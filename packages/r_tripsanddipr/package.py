@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ Data
 	cran = "tripsAndDipR" 
 
 	version("0.1.0", md5="15c96319524597a54e4dd836fd9a0341")
-

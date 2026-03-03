@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAdvancedbasketballstats(RPackage):
 	cran = "AdvancedBasketballStats" 
 
 	version("1.0.1", md5="197a134f51aee66da775663e6ce46bd9")
-

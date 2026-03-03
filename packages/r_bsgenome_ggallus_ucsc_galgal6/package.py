@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomeGgallusUcscGalgal6(RPackage):
 	version("1.4.2", md5="25ef08a5430fb337dbf752ca3378ea3e", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Ggallus.UCSC.galGal6_1.4.2.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

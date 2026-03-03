@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ and Epitrochoids
 	cran = "cycloids" 
 
 	version("1.0.2", md5="61bdfd2937e8fefd8e0f85b5b981d16f")
-

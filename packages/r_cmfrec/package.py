@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -35,4 +36,3 @@ class RCmfrec(RPackage):
 	cran = "cmfrec" 
 
 	version("3.5.1-3", md5="37728809a9076a968e88dcf131c83081")
-

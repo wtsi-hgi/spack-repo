@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class REffsize(RPackage):
 	cran = "effsize" 
 
 	version("0.8.1", md5="83ccdd795b41c2284cdc668dfc5cd0f3")
-

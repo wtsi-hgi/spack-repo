@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCgmanalyzer(RPackage):
 	cran = "CGManalyzer" 
 
 	version("1.3.1", md5="8538567422a3347e1d18160a7d09bf22")
-

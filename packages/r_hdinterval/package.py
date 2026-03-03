@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RHdinterval(RPackage):
 	cran = "HDInterval" 
 
 	version("0.2.4", md5="20e8122b31cc3c110d4a65ce4343ef8a")
-

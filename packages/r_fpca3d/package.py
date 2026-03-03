@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RFpca3d(RPackage):
 	cran = "FPCA3D" 
 
 	version("1.0", md5="896bc6a62b9c13541fe40af526a6e8bc")
-

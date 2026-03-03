@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Series
 	cran = "timetools" 
 
 	version("1.15.3", md5="528bd0d05bc415afb786b24dfedba69a")
-

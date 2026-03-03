@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RSasdates(RPackage):
 	cran = "SASdates" 
 
 	version("0.1.0", md5="d3e0a17430119627f822ce81373e140b")
-

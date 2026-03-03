@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Variables
 	cran = "raters" 
 
 	version("2.0.3", md5="968ad75f6bca7d38bfd8ec965287dfe3")
-

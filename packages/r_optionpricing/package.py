@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class ROptionpricing(RPackage):
 	cran = "OptionPricing" 
 
 	version("0.1.2", md5="d8ff4006d1af03ee538a09b4f87e72c6")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RMouse430a2frmavecs(RPackage):
 	version("1.3.0", md5="3bcb8de9182bbb8de5d560748eafa0cc")
 
 	depends_on("r@2.10:", type=("build", "run"))
-

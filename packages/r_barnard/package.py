@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RBarnard(RPackage):
 	cran = "Barnard" 
 
 	version("1.8", md5="d9e19d6abf70c2fea846f03ec26eef17")
-

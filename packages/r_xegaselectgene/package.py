@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -54,4 +55,3 @@ class RXegaselectgene(RPackage):
 	cran = "xegaSelectGene" 
 
 	version("1.0.0.0", md5="a18ba8d7f2674e4a8a0d0e28b9d10755")
-

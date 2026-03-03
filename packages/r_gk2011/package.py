@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RGk2011(RPackage):
 	cran = "GK2011" 
 
 	version("0.1.3", md5="123e2f88ef6eea234f6daf3d3b83ccb0", url="https://cran.r-project.org/src/contrib/GK2011_0.1.3.tar.gz")
-

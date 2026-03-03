@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ EHR Data
 	cran = "PheNorm" 
 
 	version("0.1.0", md5="139c0a12960913e2cda7ab0ca0b73818")
-

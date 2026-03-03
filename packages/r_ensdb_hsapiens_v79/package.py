@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class REnsdbHsapiensV79(RPackage):
 	version("2.99.0", md5="16b5629805c07649b2aa501d34fcc588", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EnsDb.Hsapiens.v79_2.99.0.tar.gz")
 
 	depends_on("r-ensembldb", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RPlotgardenerdata(RPackage):
 	version("1.8.0", md5="96055b11818bd59c0c91977b34973608")
 
 	depends_on("r@4.1:", type=("build", "run"))
-

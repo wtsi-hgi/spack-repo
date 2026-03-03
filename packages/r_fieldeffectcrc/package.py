@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RFieldeffectcrc(RPackage):
 	depends_on("r-experimenthub@0.99.6:", type=("build", "run"))
 	depends_on("r-annotationhub", type=("build", "run"))
 	depends_on("r-deseq2", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RBetacal(RPackage):
 	cran = "betacal" 
 
 	version("0.1.0", md5="f3afb8308b56d70641d6d6a4621a95c6")
-

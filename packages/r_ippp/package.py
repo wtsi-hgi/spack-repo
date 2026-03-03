@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RIppp(RPackage):
 	cran = "IPPP" 
 
 	version("1.1", md5="653e68256a6a8781e295cc082f9e4607")
-

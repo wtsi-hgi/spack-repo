@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Elliptical Leptokurtic-Normals
 	cran = "leptokurticMixture" 
 
 	version("1.1", md5="7d8933f94350b2ca6548944a4e015348")
-

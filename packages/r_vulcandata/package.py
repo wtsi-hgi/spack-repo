@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,5 +17,4 @@ class RVulcandata(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/vulcandata_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/vulcandata/vulcandata_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="cd95ea7ac7f2b9edfd46c1ffccb7c3c1")
-
 

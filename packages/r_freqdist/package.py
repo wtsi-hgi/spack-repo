@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RFreqdist(RPackage):
 	cran = "freqdist" 
 
 	version("0.1", md5="16350fe918c56f4b7f9d5434a18751d0")
-

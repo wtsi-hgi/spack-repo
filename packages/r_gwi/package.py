@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RGwi(RPackage):
 	cran = "GWI" 
 
 	version("1.0.2", md5="e2e5d67e8b47717c5f632ddacd2250c3")
-

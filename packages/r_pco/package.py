@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RPco(RPackage):
 	cran = "pco" 
 
 	version("1.0.1", md5="e435dff7919b4f4cf55303755fe06cda")
-

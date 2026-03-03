@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RNaturalsort(RPackage):
 	cran = "naturalsort" 
 
 	version("0.1.3", md5="9c705ea6e3033ed186b3d4932e2ae0c1")
-

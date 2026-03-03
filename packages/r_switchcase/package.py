@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RSwitchcase(RPackage):
 	cran = "switchcase" 
 
 	version("0.1.1", md5="3410269ea052a63d424103a592672203")
-

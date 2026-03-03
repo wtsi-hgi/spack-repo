@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -32,4 +33,3 @@ class REventwinratios(RPackage):
 	cran = "EventWinRatios" 
 
 	version("1.0.0", md5="fadba59d53192aa719fff9816ac9b874")
-

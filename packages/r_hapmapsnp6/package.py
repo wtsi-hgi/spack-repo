@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RHapmapsnp6(RPackage):
 	version("1.44.0", md5="2635c012a513343484177db2070209e9", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/hapmapsnp6_1.44.0.tar.gz")
 
 	depends_on("r@2.15:", type=("build", "run"))
-

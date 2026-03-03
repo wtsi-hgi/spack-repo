@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMonteCarloSe(RPackage):
 	cran = "Monte.Carlo.se" 
 
 	version("0.1.1", md5="25ab6721023e7af2ff6d692348ae2309")
-

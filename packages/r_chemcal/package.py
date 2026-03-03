@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RChemcal(RPackage):
 	cran = "chemCal" 
 
 	version("0.2.3", md5="2e09ff875fc01d0219c8d58f54144d9a")
-

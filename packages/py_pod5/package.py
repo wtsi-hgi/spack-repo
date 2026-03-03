@@ -1,3 +1,4 @@
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 
 
@@ -22,5 +23,4 @@ class PyPod5(PythonPackage):
 	depends_on("py-h5py", type=("build", "run"))
 	depends_on("py-vbz-h5py-plugin", type=("build", "run"))
 	depends_on("py-tqdm", type=("build", "run"))
-
 

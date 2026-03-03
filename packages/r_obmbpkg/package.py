@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RObmbpkg(RPackage):
 	cran = "OBMbpkg" 
 
 	version("1.0.0", md5="13a835808ccea8da59ab9aafac083e62")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RFantom3and4cage(RPackage):
 	version("1.38.0", md5="5d964e7a085d6a7b00e2b2215b765861")
 
 	depends_on("r@2.15:", type=("build", "run"))
-

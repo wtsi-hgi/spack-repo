@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RFuel(RPackage):
 	cran = "fuel" 
 
 	version("1.2.0", md5="fec2ab41e6bd3c4f4e8e375e40776af1")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RSkewt(RPackage):
 	cran = "skewt" 
 
 	version("1.0", md5="1f57e45feb639a2445b3342e990f5f41")
-

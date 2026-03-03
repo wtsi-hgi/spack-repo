@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RVhica(RPackage):
 	cran = "vhica" 
 
 	version("0.2.8", md5="379b6100cbe106e4611ef632c168f6ed")
-

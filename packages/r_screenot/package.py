@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Correlated Noise
 	cran = "ScreeNOT" 
 
 	version("0.1.0", md5="d3ddea2451eb0d12f7076ebd5a37b886")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RElist(RPackage):
 	cran = "eList" 
 
 	version("0.2.0", md5="0dca5803ca2b648bf2602837f47c14db")
-

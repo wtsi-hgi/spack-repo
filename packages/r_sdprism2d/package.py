@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSdprism2d(RPackage):
 	cran = "SDPrism2D" 
 
 	version("0.1.1", md5="31f7b9b955aa79dcdf03c491b089a066")
-

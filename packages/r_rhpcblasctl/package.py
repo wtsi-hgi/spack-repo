@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RRhpcblasctl(RPackage):
 	cran = "RhpcBLASctl" 
 
 	version("0.23-42", md5="825ec304404cad180a6bfb5aef5204b7")
-

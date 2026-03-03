@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RRivernet(RPackage):
 	cran = "rivernet" 
 
 	version("1.2.3", md5="4cdc5e7d1f0850930c13c7b079ba6162")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class ROptimalcutpoints(RPackage):
 	cran = "OptimalCutpoints" 
 
 	version("1.1-5", md5="8d4e1973050c9ab5fa43d024fe2c147b")
-

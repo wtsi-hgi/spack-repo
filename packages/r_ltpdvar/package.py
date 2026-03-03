@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Variables
 	cran = "LTPDvar" 
 
 	version("1.2.1", md5="0d91c7886ebe1a38c6a8f3f4c02be823")
-

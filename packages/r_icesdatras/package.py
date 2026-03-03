@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RIcesdatras(RPackage):
 	cran = "icesDatras" 
 
 	version("1.4.1", md5="b7ec22082fe2c9f0e81f4cce2af43d78")
-

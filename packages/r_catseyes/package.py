@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -28,4 +29,3 @@ Means
 	cran = "catseyes" 
 
 	version("0.2.5", md5="3afd053ea310ab126a0c7622a849f41d")
-

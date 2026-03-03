@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMultirng(RPackage):
 	cran = "MultiRNG" 
 
 	version("1.2.4", md5="5c75f0fb4b551176ce2cc3fefa65dee5")
-

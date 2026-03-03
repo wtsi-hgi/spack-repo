@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RGini(RPackage):
 	cran = "Gini" 
 
 	version("0.1.0", md5="5fd0df767cca646e6ad407e6e4b77019")
-

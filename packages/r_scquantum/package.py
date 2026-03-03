@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Sequencing
 	cran = "scquantum" 
 
 	version("1.0.0", md5="429250ddcf4efe0537d2542af73639cc")
-

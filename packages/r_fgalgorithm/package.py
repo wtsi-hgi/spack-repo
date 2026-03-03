@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RFgalgorithm(RPackage):
 	cran = "FGalgorithm" 
 
 	version("1.0", md5="4928629cad8eb6b1e2e36f71e2f43d3e")
-

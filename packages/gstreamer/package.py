@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.meson import MesonPackage
 
 from spack.package import *
 
@@ -22,4 +23,3 @@ class Gstreamer(MesonPackage):
     depends_on("glib")
     depends_on("flex")
     depends_on("bison")
-

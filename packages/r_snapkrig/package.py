@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ Covariance
 	cran = "snapKrig" 
 
 	version("0.0.2", md5="a96eff9633e132d8d247d866557ca840")
-

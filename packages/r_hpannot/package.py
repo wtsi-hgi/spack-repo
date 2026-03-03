@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RHpannot(RPackage):
 	version("1.1.0", md5="fbc94a00b0f33b41bc5ff53fbe060663")
 
 	depends_on("r@3.5:", type=("build", "run"))
-

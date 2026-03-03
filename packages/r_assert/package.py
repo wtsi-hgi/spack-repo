@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RAssert(RPackage):
 	cran = "assert" 
 
 	version("1.0.1", md5="53c5a91624d1c0d03adc69eb6f87fbfe")
-

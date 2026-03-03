@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RBolstad2(RPackage):
 	cran = "Bolstad2" 
 
 	version("1.0-29", md5="cb2522edfb084b64285ffc082d898acf", url="https://cran.r-project.org/src/contrib/Bolstad2_1.0-29.tar.gz")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -42,4 +43,3 @@ class RRnaseqgene(RPackage):
 	depends_on("r-sva", type=("build", "run"))
 	depends_on("r-ruvseq", type=("build", "run"))
 	depends_on("r-fission", type=("build", "run"))
-

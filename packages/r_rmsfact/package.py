@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RRmsfact(RPackage):
 	cran = "rmsfact" 
 
 	version("0.0.3", md5="4d865b2788e4d8af8e7023a09a676087")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RNormalize(RPackage):
 	cran = "normalize" 
 
 	version("0.1.0", md5="6b43e5eba142692f4d23a423946bbcf4")
-

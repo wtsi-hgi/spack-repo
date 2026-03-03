@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Poisson Model
 	cran = "PoiClaClu" 
 
 	version("1.0.2.1", md5="0b6a96b5e02ab7fcad913e7f6c538d12")
-

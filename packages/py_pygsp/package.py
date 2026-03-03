@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class PyPygsp(PythonPackage):
 	version("0.4.2", sha256="6886b7aa1230da3ba425d654eb8bd1c118727a5a6c834dc7eb4cfdce479a9dd0", expand=False, url="https://files.pythonhosted.org/packages/e6/c1/d0780497da02973a0541613e9b2d47e1db7ae15e3b7c35fda23b4be07104/PyGSP-0.4.1-py2.py3-none-any.whl")
 	version("0.5.0", sha256="697368e5ae3f313a42f2ee28f648f2025e22660320e465dcf5c4c99fbf6bd138", expand=False, url="https://files.pythonhosted.org/packages/48/ea/402429ea743ee0e4ca6e65323f0b8d9d1e752d8182107dc401e31e6ffef0/PyGSP-0.5.0-py2.py3-none-any.whl")
 	version("0.5.1", sha256="884765260256f143a92053c420797053fda0f4eba1573471526fb4e62a4c4cde", expand=False, url="https://files.pythonhosted.org/packages/d4/89/2f4aa73cccf12bec5179ac5d52a68b508120c838b7e5d456f5ea0c8beade/PyGSP-0.5.1-py2.py3-none-any.whl")
-

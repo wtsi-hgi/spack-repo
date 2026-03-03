@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RPort4me(RPackage):
 
 	version("0.7.1", md5="010d84686f7f81b31e896730a0168f37")
 	version("0.7.0", md5="a067142a82acdd0b81337a33bc374887")
-

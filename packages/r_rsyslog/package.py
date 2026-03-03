@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RRsyslog(RPackage):
 	cran = "rsyslog" 
 
 	version("1.0.3", md5="a4dd97a4bfbf6de7a30b3566d997bea4")
-

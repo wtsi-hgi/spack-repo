@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RFactor256(RPackage):
 	cran = "factor256" 
 
 	version("0.1.0", md5="a27f04fcbfe765a0da27a0dfcb12be03", url="https://cran.r-project.org/src/contrib/factor256_0.1.0.tar.gz")
-

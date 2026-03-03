@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Processes
 	cran = "mmpp" 
 
 	version("0.6", md5="783e6c481ae9061c53c904b9c0434df5")
-

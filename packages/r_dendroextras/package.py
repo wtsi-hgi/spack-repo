@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RDendroextras(RPackage):
 	cran = "dendroextras" 
 
 	version("0.2.3", md5="1ed7012ca6e1975edc925fd34ae8781f")
-

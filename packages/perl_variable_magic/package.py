@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.perl import PerlPackage
 from spack.package import *
 
 
@@ -76,4 +77,3 @@ class PerlVariableMagic(PerlPackage):
     version("0.03", sha256="ed92eded58a91937e57f7e6c16117da07d176aeb82429b7a4d84366d53b28028")
     version("0.02", sha256="e0a12ea95de0f3a4cce6a03bceafce22e341230c625723d1c71346b53f2f1256")
     version("0.01", sha256="dba1ca85cf04af2e2d5413d45684a715e1a9866d40a7c193dd6d49a3cc978919")
-

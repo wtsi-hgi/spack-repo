@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RAbseil(RPackage):
 	cran = "abseil" 
 
 	version("2023.8.2.1", md5="9b5fade0669c69580d4728a6e5da02e5")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ Generalized Elastic Net
 	cran = "msgps" 
 
 	version("1.3.5", md5="96879aeb565fb24de9bfd14cd333a2cf")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RMetacca(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/metaCCA_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/metaCCA/metaCCA_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="d5be58f253912b275964a681a508234d")
-

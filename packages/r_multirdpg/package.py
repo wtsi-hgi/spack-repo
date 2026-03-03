@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RMultirdpg(RPackage):
 	cran = "multiRDPG" 
 
 	version("1.0.1", md5="d0d5920b7c1d40d063118b5e27cd8f9e")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RRegexpipes(RPackage):
 	cran = "regexPipes" 
 
 	version("0.0.1", md5="db46955fcf0789aa369df6d5a6f4feb8")
-

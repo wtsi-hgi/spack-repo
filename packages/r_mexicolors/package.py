@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RMexicolors(RPackage):
 	cran = "mexicolors" 
 
 	version("0.2.0", md5="80c137f9ea9cd686a3307d27cb5cf4de")
-

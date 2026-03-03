@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RRnaseqpower(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/RNASeqPower_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/RNASeqPower/RNASeqPower_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="38da142eb3ee64f2e7684ead27e4520f")
-

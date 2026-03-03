@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RVimean(RPackage):
 	cran = "VIMean" 
 
 	version("0.1.0", md5="8448a4d05057a8d4e0b2799e005005be")
-

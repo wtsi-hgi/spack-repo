@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RStemhypoxia(RPackage):
 	version("1.38.0", md5="22ec9d76cac05ac7118873f7815225ba")
 
 	depends_on("r@2.14.1:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RPekit(RPackage):
 	cran = "PEkit" 
 
 	version("1.0.0.1000", md5="b3e75f0a6c86c8e8f758146f3ee9c378")
-

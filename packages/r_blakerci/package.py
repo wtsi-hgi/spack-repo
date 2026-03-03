@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RBlakerci(RPackage):
 	cran = "BlakerCI" 
 
 	version("1.0-6", md5="311a954b771207d0c2de95c3ca484d63")
-

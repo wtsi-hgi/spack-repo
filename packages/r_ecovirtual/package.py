@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class REcovirtual(RPackage):
 	cran = "EcoVirtual" 
 
 	version("1.1", md5="c16cb261319f28bd2d16f64059a8ae39")
-

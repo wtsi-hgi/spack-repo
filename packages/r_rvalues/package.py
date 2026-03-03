@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RRvalues(RPackage):
 	cran = "rvalues" 
 
 	version("0.7.1", md5="88715116e6a8da0db0d97bd97bb0ba8f")
-

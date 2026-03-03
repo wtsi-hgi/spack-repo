@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAppnn(RPackage):
 	cran = "appnn" 
 
 	version("1.0-0", md5="f9c48ab688fe59d0e7df9d358710d0a6")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RDataseries(RPackage):
 	cran = "dataseries" 
 
 	version("0.2.0", md5="79eb12da3581a880777aace601ffbb9d")
-

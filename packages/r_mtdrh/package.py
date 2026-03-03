@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMtdrh(RPackage):
 	cran = "MTDrh" 
 
 	version("0.1.0", md5="83e43ac001693e26312eb63a1330b1d2")
-

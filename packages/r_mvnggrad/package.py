@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RMvnggrad(RPackage):
 	cran = "mvngGrAd" 
 
 	version("0.1.6", md5="fdff600a4c8fc1b913963daca64b44fc")
-

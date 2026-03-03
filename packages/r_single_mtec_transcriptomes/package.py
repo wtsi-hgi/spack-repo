@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RSingleMtecTranscriptomes(RPackage):
 	version("1.30.0", md5="574ee45ff1177688d68e6ae8295e67a2")
 
 	depends_on("r@3.5:", type=("build", "run"))
-

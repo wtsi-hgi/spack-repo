@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCodecountr(RPackage):
 	cran = "codecountR" 
 
 	version("0.0.4.0", md5="e4bbf89a9f8eb44fe04e5b7e328d8cd8")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCrwrm(RPackage):
 	cran = "CRWRM" 
 
 	version("0.0.1", md5="61d256b23c7767f0a7f15936e937ba16")
-

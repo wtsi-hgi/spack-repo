@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -28,4 +29,3 @@ Difference Between Two Binomial Proportions
 	cran = "SampleSizeProportions" 
 
 	version("1.1.3", md5="5db665e3c530318ae437aa2a1eb33ac3")
-

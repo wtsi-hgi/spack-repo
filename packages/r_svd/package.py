@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RSvd(RPackage):
 	cran = "svd" 
 
 	version("0.5.5", md5="bee5e3da2a81e49b797763fa5467f895")
-

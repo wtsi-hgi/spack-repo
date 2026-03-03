@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RAhptools(RPackage):
 	cran = "AHPtools" 
 
 	version("0.2.1", md5="49ad1c6e69d448b121e38883d4d19222")
-

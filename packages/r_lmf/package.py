@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ Age-Structured Populations
 	cran = "lmf" 
 
 	version("1.2.1", md5="f950433b9e6597f29cba039fa004a9ab")
-

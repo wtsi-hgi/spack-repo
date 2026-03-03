@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RDwdradar(RPackage):
 	cran = "dwdradar" 
 
 	version("0.2.10", md5="2f9a0db28f022f754ca6688a64bb59d8")
-

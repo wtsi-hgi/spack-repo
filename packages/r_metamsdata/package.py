@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,5 +17,4 @@ class RMetamsdata(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/metaMSdata_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/metaMSdata/metaMSdata_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="aa7ca09c8f43104cb85f69fda0a1fc1a")
-
 

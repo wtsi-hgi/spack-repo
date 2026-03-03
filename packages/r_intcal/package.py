@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RIntcal(RPackage):
 	cran = "IntCal" 
 
 	version("0.3.1", md5="70214ce91097db1385dc54621672acd4")
-

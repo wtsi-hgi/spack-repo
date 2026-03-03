@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RTabusearch(RPackage):
 	cran = "tabuSearch" 
 
 	version("1.1.1", md5="a581afdc609d9e4e6f5f8e1b02381fbe")
-

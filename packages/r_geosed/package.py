@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RGeosed(RPackage):
 	cran = "geosed" 
 
 	version("0.1.1", md5="a0f7fe8b74a25fe41c509acd307c3ce7")
-

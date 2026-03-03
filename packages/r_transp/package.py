@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RTransp(RPackage):
 	cran = "TransP" 
 
 	version("0.1", md5="15fdd5a549940f6518bf489b3a97b5d3")
-

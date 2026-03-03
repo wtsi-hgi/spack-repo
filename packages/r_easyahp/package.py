@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class REasyahp(RPackage):
 	cran = "easyAHP" 
 
 	version("0.1.1", md5="8087051913bcdd47730b0c711261b02a")
-

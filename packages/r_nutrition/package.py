@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RNutrition(RPackage):
 	cran = "nutrition" 
 
 	version("1.1.0", md5="32dafa92cdb00bc30f63bb0fa4d0bacf")
-

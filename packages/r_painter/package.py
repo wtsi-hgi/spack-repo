@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RPainter(RPackage):
 	cran = "painter" 
 
 	version("0.1.0", md5="29d8d68b0ab07bd89bebdf8237fc0290")
-

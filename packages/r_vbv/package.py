@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -27,4 +28,3 @@ class RVbv(RPackage):
 	cran = "VBV" 
 
 	version("0.6.2", md5="956132231e14f04ca378d871acfc9c0c")
-

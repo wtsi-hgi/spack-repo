@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RRimpact(RPackage):
 	cran = "RImpact" 
 
 	version("1.0", md5="0b796064cc770129c813d9024f732ffa")
-

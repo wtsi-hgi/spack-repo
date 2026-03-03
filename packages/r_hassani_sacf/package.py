@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RHassaniSacf(RPackage):
 	cran = "Hassani.SACF" 
 
 	version("2.0", md5="9a950236666732ad49556e2cbd8e9adb")
-

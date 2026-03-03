@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RDisclap(RPackage):
 	cran = "disclap" 
 
 	version("1.5.1", md5="d710cbc8affa55c36c4fdbb000d16f97")
-

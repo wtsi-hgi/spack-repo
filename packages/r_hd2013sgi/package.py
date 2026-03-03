@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -26,4 +27,3 @@ class RHd2013sgi(RPackage):
 	depends_on("r-vcd", type=("build", "run"))
 	depends_on("r-lsd", type=("build", "run"))
 	depends_on("r-ebimage", type=("build", "run"))
-

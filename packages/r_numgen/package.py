@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RNumgen(RPackage):
 	cran = "numGen" 
 
 	version("0.1.1", md5="5fca1e70d24e375c1b51d18e7aad02f4")
-

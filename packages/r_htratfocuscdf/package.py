@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RHtratfocuscdf(RPackage):
 	version("2.18.0", md5="04b4952f7d8b607a7eb0f779c08c57dc")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
-

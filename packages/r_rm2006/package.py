@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RRm2006(RPackage):
 	cran = "RM2006" 
 
 	version("0.1.1", md5="7875adc2fc1f8327c2389a0affb789c8", url="https://cran.r-project.org/src/contrib/RM2006_0.1.1.tar.gz")
-

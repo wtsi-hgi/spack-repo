@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RRobumeta(RPackage):
 	cran = "robumeta" 
 
 	version("2.1", md5="8f80a79fc262c49172df2bcf78e3e1e3")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RNpreg(RPackage):
 
 	version("1.1.0", md5="aaf79ae14844765f05e73f32c6831e94")
 	version("1.0-9", md5="4301c7e5626fe34f97024342169b94dc")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ to nearly diagonal form
 	cran = "ALSCPC" 
 
 	version("1.0", md5="7271926d98bf85adfcb5277d38ff6291")
-

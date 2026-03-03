@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RRprotobuflib(RPackage):
 
 	version("2.14.1", md5="7a648c56be729d182d707f7077e4249c")
 	version("2.14.0", md5="e7351127e6b19daaae94fcecc970292b")
-

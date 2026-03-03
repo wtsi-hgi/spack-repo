@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RTopdownrdata(RPackage):
 	version("1.24.0", md5="28e746b858956bea0967344bfe363e7d")
 
 	depends_on("r-topdownr", type=("build", "run"))
-

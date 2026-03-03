@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMed(RPackage):
 	cran = "MED" 
 
 	version("0.1.0", md5="6dceb744071b8ef19b967c1a595999d2")
-

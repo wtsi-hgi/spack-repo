@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,5 +17,4 @@ class ROct4(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/oct4_1.18.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/oct4/oct4_1.18.0.tar.gz"]
 
 	version("1.18.0", md5="1b6bbc6300c74c038689c7fb5b7d5eb2", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/oct4_1.18.0.tar.gz")
-
 

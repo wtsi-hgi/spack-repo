@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RBootpr(RPackage):
 	cran = "BootPR" 
 
 	version("1.0", md5="48593b6b86d18e972a4f4b5420db1171")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RRgmqllib(RPackage):
 	version("1.22.0", md5="d8ad27b1fe0c5eff6135285db972cab2")
 
 	depends_on("r@3.4.2:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RRceim(RPackage):
 	cran = "RCEIM" 
 
 	version("0.3", md5="a7d8fd7d99fce1798c56d5e683b55032")
-

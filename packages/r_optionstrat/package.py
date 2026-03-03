@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ Strategic Option Analysis and Plot Option Strategies
 	cran = "optionstrat" 
 
 	version("1.4.1", md5="9fc11d88b7928e8b307e11f520b89608")
-

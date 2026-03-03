@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,5 +17,4 @@ class RGenomewidesnp6crlmm(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/genomewidesnp6Crlmm_1.0.7.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/genomewidesnp6Crlmm/genomewidesnp6Crlmm_1.0.7.tar.gz"]
 
 	version("1.0.7", md5="13dd5aef3d814524896f2f3013beb78b")
-
 

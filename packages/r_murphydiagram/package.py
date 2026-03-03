@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RMurphydiagram(RPackage):
 	cran = "murphydiagram" 
 
 	version("0.12.2", md5="fcc8cb152293e3d701bd9eefe3ba7e32")
-

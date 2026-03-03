@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RLibopf(RPackage):
 	cran = "LibOPF" 
 
 	version("2.6.2", md5="ed51117d3b91289f7ce31613862a1e48")
-

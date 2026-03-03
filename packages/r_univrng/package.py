@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RUnivrng(RPackage):
 	cran = "UnivRNG" 
 
 	version("1.2.3", md5="f4b7a70c4b9954588514c7083fe9dbaf")
-

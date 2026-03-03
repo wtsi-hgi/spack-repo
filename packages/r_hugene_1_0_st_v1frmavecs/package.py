@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RHugene10StV1frmavecs(RPackage):
 	version("1.1.0", md5="711a69e6fa6dd3737a90615222416dfc")
 
 	depends_on("r@2.10:", type=("build", "run"))
-

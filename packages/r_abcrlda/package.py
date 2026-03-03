@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ Analysis
 	cran = "abcrlda" 
 
 	version("1.0.3", md5="651e6e18e08916b443aaf011b5a63525")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RHicdatahumanimr90(RPackage):
 	version("1.22.0", md5="02854f68384130b0bcd3d0f84d94b856", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HiCDataHumanIMR90_1.22.0.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
-

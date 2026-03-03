@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RIccSampleSize(RPackage):
 	cran = "ICC.Sample.Size" 
 
 	version("1.0", md5="3ff7f060631c7a8174fb1ba72779bad6")
-

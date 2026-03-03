@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RDeep(RPackage):
 	cran = "deep" 
 
 	version("0.1.0", md5="215eb37be9869aabc00eba5165b43bd3")
-

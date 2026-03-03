@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RHttpproblems(RPackage):
 	cran = "httpproblems" 
 
 	version("1.0.1", md5="344f9e6ffd63dd88cb69d08a15008caa")
-

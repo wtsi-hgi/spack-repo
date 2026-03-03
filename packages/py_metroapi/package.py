@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 import os
 
@@ -68,4 +69,3 @@ class PyMetroapi(PythonPackage):
     # Requires-Dist: anthropic~=0.42.0; extra == "conductor"
     # Requires-Dist: keyring>=24.0.0; extra == "conductor"
     # Requires-Dist: inquirer>=3.1.3; extra == "conductor"
-

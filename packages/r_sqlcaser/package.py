@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RSqlcaser(RPackage):
 	cran = "sqlcaser" 
 
 	version("0.2.0", md5="d812f657526ca9b5bdc96fc2f0a23606")
-

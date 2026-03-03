@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RLibgeos(RPackage):
 	cran = "libgeos" 
 
 	version("3.11.1-2", md5="5052e19978887f74e3b3c6baa9ed6486")
-

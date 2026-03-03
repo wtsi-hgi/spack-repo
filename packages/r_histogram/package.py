@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Options for Automatic Choice of Bins
 	cran = "histogram" 
 
 	version("0.0-25", md5="b37514dd2918e1412bb4ca0798550722")
-

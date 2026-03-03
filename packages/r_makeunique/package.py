@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RMakeunique(RPackage):
 	cran = "makeunique" 
 
 	version("1.0.0", md5="320935e3197127a8deb8859eb9e7fdaf")
-

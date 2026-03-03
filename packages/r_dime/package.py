@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RDime(RPackage):
 	cran = "DIME" 
 
 	version("1.3.0", md5="2e7c06954136030bcb9fe307720b0fc0")
-

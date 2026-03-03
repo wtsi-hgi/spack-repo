@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Attributes
 	cran = "GiniWegNeg" 
 
 	version("1.0.1", md5="34c988d038dccde655de3d991a75187c")
-

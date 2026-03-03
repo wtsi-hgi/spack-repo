@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ for Response Surface Designs
 	cran = "Vdgraph" 
 
 	version("2.2-7", md5="a631fe9101dfb3d36c54401de47290da")
-

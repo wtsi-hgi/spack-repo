@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCbt(RPackage):
 	cran = "CBT" 
 
 	version("1.0", md5="86974758fc06b5da6f02e0d4e7941179")
-

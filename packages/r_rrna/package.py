@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RRrna(RPackage):
 	cran = "RRNA" 
 
 	version("1.0", md5="233a585baedb5925b88a9df5f3809913")
-

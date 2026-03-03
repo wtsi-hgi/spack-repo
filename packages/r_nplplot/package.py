@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RNplplot(RPackage):
 	cran = "nplplot" 
 
 	version("4.7", md5="8221a117a040c03fd3867a0ff7750d77")
-

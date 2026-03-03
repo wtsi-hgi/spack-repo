@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RCusp(RPackage):
 	cran = "cusp" 
 
 	version("2.3.6", md5="792f41d37f47fb44fb828605890309ec")
-

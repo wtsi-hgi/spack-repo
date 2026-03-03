@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Classifiers
 	cran = "AUC" 
 
 	version("0.3.2", md5="4a1e66f9889fc2fe02c734e1e1fd063f")
-

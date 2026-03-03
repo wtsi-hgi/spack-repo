@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RKselection(RPackage):
 	cran = "kselection" 
 
 	version("0.2.1", md5="a26f5f7043301613576b5d95009593d1")
-

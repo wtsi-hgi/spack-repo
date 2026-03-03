@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RIrricc(RPackage):
 	cran = "irrICC" 
 
 	version("1.0", md5="74b7f6370f75362d5cf9d72b53adf4f7")
-

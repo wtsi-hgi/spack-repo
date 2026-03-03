@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RProftools(RPackage):
 	cran = "proftools" 
 
 	version("0.99-3", md5="d37a9164123380f5ad571d73216ff967")
-

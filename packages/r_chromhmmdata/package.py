@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RChromhmmdata(RPackage):
 	version("0.99.2", md5="eec85c20139b3d826f00264c7b28207c")
 
 	depends_on("r@4.1:", type=("build", "run"))
-

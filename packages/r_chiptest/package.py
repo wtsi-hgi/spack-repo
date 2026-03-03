@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Regions with ChIP-Seq Data
 	cran = "ChIPtest" 
 
 	version("1.0", md5="97ae51d6743a3a0da6b10b10d9bbe2b7")
-

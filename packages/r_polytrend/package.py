@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RPolytrend(RPackage):
 	cran = "PolyTrend" 
 
 	version("1.2", md5="d2acf7c599415917d131bd86ea25e04b")
-

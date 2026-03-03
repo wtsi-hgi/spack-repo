@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RBrea(RPackage):
 	cran = "brea" 
 
 	version("0.2.0", md5="d84336e843013cee3a02d935461ff408")
-

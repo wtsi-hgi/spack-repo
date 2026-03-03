@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RCovadap(RPackage):
 	cran = "covadap" 
 
 	version("1.0.1", md5="5aabfe39832f0e10c6d77d6293edd392")
-

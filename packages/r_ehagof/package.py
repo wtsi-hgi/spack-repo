@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class REhagof(RPackage):
 	cran = "ehaGoF" 
 
 	version("0.1.1", md5="4c74bcb8d787d4c3a2e695d372b9b6ab")
-

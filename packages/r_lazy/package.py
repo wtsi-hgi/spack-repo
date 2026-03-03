@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RLazy(RPackage):
 	cran = "lazy" 
 
 	version("1.2-18", md5="65a395896dae9c4ca7020a00bed3293d")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RTariff(RPackage):
 	cran = "Tariff" 
 
 	version("1.0.5", md5="161c1466d1cc217a70ecb46d6b4e076a")
-

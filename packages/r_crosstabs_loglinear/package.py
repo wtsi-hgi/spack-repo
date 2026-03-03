@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class RCrosstabsLoglinear(RPackage):
 	cran = "Crosstabs.Loglinear" 
 
 	version("0.1.1", md5="556276fc772c5c089fdd19a805ae87e3")
-

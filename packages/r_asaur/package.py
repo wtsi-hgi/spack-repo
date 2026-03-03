@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RAsaur(RPackage):
 	cran = "asaur" 
 
 	version("0.50", md5="42960895df4da99f084abc9ab6256269")
-

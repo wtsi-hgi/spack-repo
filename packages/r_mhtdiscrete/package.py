@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RMhtdiscrete(RPackage):
 	cran = "MHTdiscrete" 
 
 	version("1.0.1", md5="98e39e7d004a28f74bc25b2b5aa628c3")
-

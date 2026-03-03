@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class REpanet2toolkit(RPackage):
 	cran = "epanet2toolkit" 
 
 	version("1.0.4", md5="cd19611fea96aaa757a26bbd550f9689")
-

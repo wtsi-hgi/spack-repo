@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class REffecttreat(RPackage):
 	cran = "EffectTreat" 
 
 	version("1.1", md5="bbc74383a1dc43f3aa81a04d2aa8153c")
-

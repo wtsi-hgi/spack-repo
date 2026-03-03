@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RJsuparameters(RPackage):
 	cran = "JSUparameters" 
 
 	version("1.0.0", md5="ea8c849e1769c8a5e808709433461ace")
-

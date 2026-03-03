@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RDoubleTruncation(RPackage):
 	cran = "double.truncation" 
 
 	version("1.7", md5="008ca39668b949c3ff311c623ef01c0a")
-

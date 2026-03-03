@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RYmpes(RPackage):
 	cran = "ympes" 
 
 	version("1.0.0", md5="38ea5b10d0c9301ed1efd7cf17f50ae3")
-

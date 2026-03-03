@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RExcessmass(RPackage):
 	cran = "ExcessMass" 
 
 	version("1.0.1", md5="416088a41ef34832a3b53ec26ab2198c")
-

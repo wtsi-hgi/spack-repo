@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RAreaplot(RPackage):
 	cran = "areaplot" 
 
 	version("2.1.2", md5="08ce729a7818460af7e696d8f09c631d")
-

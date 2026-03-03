@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -28,4 +29,3 @@ System
 	cran = "transform.hazards" 
 
 	version("0.1.1", md5="97a2f37c68fb485e9206a3ac77cdaa30")
-

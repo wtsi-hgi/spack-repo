@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RPassword(RPackage):
 	cran = "password" 
 
 	version("1.0-0", md5="82e957a9b3b3f8c286f4078233ea4b20")
-

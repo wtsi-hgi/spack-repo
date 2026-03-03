@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RPoissonGlmMix(RPackage):
 	cran = "poisson.glm.mix" 
 
 	version("1.4", md5="571b7f19ee5d2cfd2a7f5748dfc592a7")
-

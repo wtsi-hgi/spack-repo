@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RLandmix(RPackage):
 	cran = "landmix" 
 
 	version("1.0", md5="cc6ec438ad575ad2dec288f13636de5e")
-

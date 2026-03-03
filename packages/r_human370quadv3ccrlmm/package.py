@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,5 +17,4 @@ class RHuman370quadv3ccrlmm(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/human370quadv3cCrlmm_1.0.3.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/human370quadv3cCrlmm/human370quadv3cCrlmm_1.0.3.tar.gz"]
 
 	version("1.0.3", md5="33c3ccc3793ed95647418b746a5177f9")
-
 

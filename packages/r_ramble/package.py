@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RRamble(RPackage):
 	cran = "Ramble" 
 
 	version("0.1.1", md5="3d54ea9d8e91ec1609f07edf5676120d")
-

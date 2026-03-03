@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RDisposables(RPackage):
 	cran = "disposables" 
 
 	version("1.0.3", md5="6ba335441aee883ff2d83435132a1791")
-

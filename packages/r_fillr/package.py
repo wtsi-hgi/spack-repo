@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RFillr(RPackage):
 	cran = "fillr" 
 
 	version("1.0.0", md5="c2322d431a9c8dbe28a7ea493592b049")
-

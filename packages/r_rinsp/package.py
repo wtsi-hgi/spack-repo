@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RRinsp(RPackage):
 	cran = "RInSp" 
 
 	version("1.2.5", md5="266ce75504d8e273db69de47665a6268")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class REnsdbMmusculusV79(RPackage):
 	version("2.99.0", md5="28bbab743b0d2d550dbfa0bcd3274fad", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EnsDb.Mmusculus.v79_2.99.0.tar.gz")
 
 	depends_on("r-ensembldb", type=("build", "run"))
-

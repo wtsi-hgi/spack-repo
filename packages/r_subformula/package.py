@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RSubformula(RPackage):
 	cran = "subformula" 
 
 	version("0.1.0", md5="6fe419161107a2f4e109d0e183fa4ac6")
-

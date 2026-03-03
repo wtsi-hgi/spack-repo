@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RUniqtag(RPackage):
 	cran = "uniqtag" 
 
 	version("1.0.1", md5="faea87762dd805d7aef056fdb84eaa24")
-

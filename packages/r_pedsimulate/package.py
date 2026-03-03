@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RPedsimulate(RPackage):
 	cran = "pedSimulate" 
 
 	version("1.4.3", md5="713b2eefe82c09ee5fc9b762d997c4a3")
-

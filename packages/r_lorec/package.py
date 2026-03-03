@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RLorec(RPackage):
 	cran = "lorec" 
 
 	version("0.6.1", md5="21d2945ed160db5033c5225c44aa90f0")
-

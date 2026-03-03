@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RMewavg(RPackage):
 	cran = "mewAvg" 
 
 	version("0.3.1", md5="ae12a4a49d03d21de092d81f14a4ed1d")
-

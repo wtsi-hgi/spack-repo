@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RKerndwd(RPackage):
 	cran = "kerndwd" 
 
 	version("2.0.3", md5="83802dc69f78d4bfcf11410839ca82c2")
-

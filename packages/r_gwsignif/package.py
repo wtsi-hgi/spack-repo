@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Studies, Either Single SNP Tests or Region-Based Tests
 	cran = "GWsignif" 
 
 	version("1.2", md5="d411cea651ed788f24d1c9f8e71f695a")
-

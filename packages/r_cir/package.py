@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCir(RPackage):
 	cran = "cir" 
 
 	version("2.3.1", md5="f8009261e7c39d4304b802b617b25c28")
-

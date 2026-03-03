@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -26,4 +27,3 @@ class RDemokde(RPackage):
 	cran = "demoKde" 
 
 	version("1.0.1", md5="e2e8b55e6388294032d3891b22682fdd")
-

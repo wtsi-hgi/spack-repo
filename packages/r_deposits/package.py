@@ -20,6 +20,7 @@
 # See the Spack documentation for more information on packaging.
 # ----------------------------------------------------------------------------
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -47,5 +48,4 @@ class RDeposits(RPackage):
     depends_on("r-pkgbuild", type=("build", "run"))
     depends_on("r-rmarkdown", type=("build", "run"))
     depends_on("r-testthat", type=("build", "run"))
-
 

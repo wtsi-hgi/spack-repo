@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -26,4 +27,3 @@ class RDark(RPackage):
 	cran = "Dark" 
 
 	version("0.9.8", md5="a917c2d2eeea48cd909dffe8a6060454")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RRandcorr(RPackage):
 	cran = "randcorr" 
 
 	version("1.0", md5="1a54d191746b27b1893b6e8d71b3f762")
-

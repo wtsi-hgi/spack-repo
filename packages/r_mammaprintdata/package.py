@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RMammaprintdata(RPackage):
 	version("1.38.0", md5="08b3249a36d5f165a933bfab5eb05a2a")
 
 	depends_on("r@2.13:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RGetdesigns(RPackage):
 
 	version("1.2.0", md5="c18ca14b0ae95d7106ab310401f1bff6")
 	version("1.1.0", md5="f77d8c791b55830ff70085d3dd96fd48")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RDub(RPackage):
 	cran = "dub" 
 
 	version("0.2.0", md5="f1c555ecfc8f8497e49f0474f0b804d9")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RGmac(RPackage):
 	cran = "GMAC" 
 
 	version("3.1", md5="bc17d531ff898b97279d913064570f3f")
-

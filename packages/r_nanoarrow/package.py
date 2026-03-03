@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RNanoarrow(RPackage):
 
 	version("0.4.0.1", md5="9c1037cd5d73738287a363799e3c23ea")
 	version("0.4.0", md5="d5251d4b4e2fa25bab6c404ad647ec63")
-

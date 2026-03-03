@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RDtaxg(RPackage):
 	cran = "DTAXG" 
 
 	version("0.1.0", md5="3b63050e0b1177141b6e5c0b0cb5dd63")
-

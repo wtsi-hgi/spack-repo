@@ -1,3 +1,4 @@
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RHeatmapr(RPackage):
     version("20230424", commit="05a6e191dcbab0ac89301de93b9f22327fa2e2bf")
 
     depends_on("r@3.5:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RLocfdr(RPackage):
 	cran = "locfdr" 
 
 	version("1.1-8", md5="d4ee3349e9cb39b70bfff94ff665d2aa")
-

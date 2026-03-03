@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RIrrcac(RPackage):
 	cran = "irrCAC" 
 
 	version("1.0", md5="163289021aa54557c3433e5f57401b4f")
-

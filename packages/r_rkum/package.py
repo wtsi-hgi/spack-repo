@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RRkum(RPackage):
 	cran = "RKUM" 
 
 	version("0.1.1.1", md5="2a9e7e95500579e3a870d54e8419a950")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -26,4 +27,3 @@ class REupathdb(RPackage):
 	depends_on("r-annotationhubdata", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))
 	depends_on("r-biocmanager", type=("build", "run"))
-

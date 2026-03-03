@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RMousechrloc(RPackage):
 	version("2.1.6", md5="0b81d7391e628cc355af4de3c5585a5f")
 
 	depends_on("r@2.7:", type=("build", "run"))
-

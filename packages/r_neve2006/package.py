@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RNeve2006(RPackage):
 	depends_on("r-biobase@1.14:", type=("build", "run"))
 	depends_on("r-hgu133a-db", type=("build", "run"))
 	depends_on("r-annotate", type=("build", "run"))
-

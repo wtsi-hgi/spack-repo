@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RMcbackscattering(RPackage):
 	cran = "MCBackscattering" 
 
 	version("0.1.1", md5="e1bc8772d84ff7d049e2146999b592bd")
-

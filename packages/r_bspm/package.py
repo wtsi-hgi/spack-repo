@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RBspm(RPackage):
 	cran = "bspm" 
 
 	version("0.5.5", md5="86d4bc20c4b90d6d61873e554e0a20f4")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomeRnorvegicusUcscRn5(RPackage):
 	version("1.4.0", md5="723b1f3ced395ef638b2d68053b05c86", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Rnorvegicus.UCSC.rn5_1.4.0.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

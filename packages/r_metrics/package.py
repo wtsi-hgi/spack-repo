@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RMetrics(RPackage):
 	cran = "Metrics" 
 
 	version("0.1.4", md5="b2202269b66cd891b834d742cfd937ba")
-

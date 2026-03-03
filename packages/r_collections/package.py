@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RCollections(RPackage):
 	cran = "collections" 
 
 	version("0.3.7", md5="60632d1a34d64e5aa53165950237d1ee")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ Medians
 	cran = "wilcoxmed" 
 
 	version("0.0.1", md5="8e508c4904b66791d17269a07d9ecc80")
-

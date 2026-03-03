@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RKeypress(RPackage):
 	cran = "keypress" 
 
 	version("1.3.1", md5="75986d5cf49909b4b4e4d9143c5a699e")
-

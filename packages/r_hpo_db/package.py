@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RHpoDb(RPackage):
 	depends_on("r-annotationhub", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))
 	depends_on("r-dbi", type=("build", "run"))
-

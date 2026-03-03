@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class ROptimalflowdata(RPackage):
 	version("1.14.0", md5="790ea8af88ecf90abafdef9a7c4abb08")
 
 	depends_on("r@4:", type=("build", "run"))
-

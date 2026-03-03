@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RDiscretelaplace(RPackage):
 	cran = "DiscreteLaplace" 
 
 	version("1.1.1", md5="ffa739ca8eb204ddcdf865f302978ac6")
-

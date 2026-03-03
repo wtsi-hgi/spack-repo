@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RNomordr(RPackage):
 	cran = "nomordR" 
 
 	version("0.1", md5="f4b33150c7df9f55b8ee55f39a8f6974")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RBeadarrayexampledata(RPackage):
 	depends_on("r@2.13:", type=("build", "run"))
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))
 	depends_on("r-beadarray@2:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Processes
 	cran = "fptdApprox" 
 
 	version("2.5", md5="75f4f04a0e2f13f159f80aa463245487")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RGettz(RPackage):
 	cran = "gettz" 
 
 	version("0.0.5", md5="97ec8287ff233fda2ae794f30d681ad3")
-

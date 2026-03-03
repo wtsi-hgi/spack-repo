@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RAllmetrics(RPackage):
 
 	version("0.2.1", md5="83024ea98b0093da5151d1079a2386ac")
 	version("0.2.0", md5="f3dfa360d13c451022ab4c7d936ae83c")
-

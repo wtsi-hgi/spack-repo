@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RPgnorm(RPackage):
 	cran = "pgnorm" 
 
 	version("2.0", md5="5d1f08cd3556a80669ab2732764d9d38")
-

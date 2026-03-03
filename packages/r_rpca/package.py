@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Components
 	cran = "rpca" 
 
 	version("0.2.3", md5="c96bf53cac208210b3bb3db2db76949e")
-

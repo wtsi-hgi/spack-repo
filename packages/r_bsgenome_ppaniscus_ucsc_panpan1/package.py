@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomePpaniscusUcscPanpan1(RPackage):
 	version("1.4.3", md5="186adb59264d468d17c0f6374e2eb1f6", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Ppaniscus.UCSC.panPan1_1.4.3.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

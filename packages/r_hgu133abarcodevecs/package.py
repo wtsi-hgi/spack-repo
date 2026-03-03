@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RHgu133abarcodevecs(RPackage):
 	version("1.40.0", md5="4a6ec67e649f7ca004242fd860f79521")
 
 	depends_on("r@2.10:", type=("build", "run"))
-

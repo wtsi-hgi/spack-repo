@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RDrosgenome1cdf(RPackage):
 	version("2.18.0", md5="e12983f2148c10ef1faa50f810b6eee3")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
-

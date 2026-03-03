@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Multiple Groups
 	cran = "cvequality" 
 
 	version("0.2.0", md5="c1dce46b614eb480e1f638f495ff9bbd")
-

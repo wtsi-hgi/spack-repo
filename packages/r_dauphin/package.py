@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RDauphin(RPackage):
 	cran = "dauphin" 
 
 	version("0.3.1", md5="de3069c5c682e2df0ad49b1c43159570")
-

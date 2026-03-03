@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RTrendsegmentr(RPackage):
 	cran = "trendsegmentR" 
 
 	version("1.3.0", md5="5429458fbccb864273ce8f04cdea557a")
-

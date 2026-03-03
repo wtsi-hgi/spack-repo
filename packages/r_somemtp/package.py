@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSomemtp(RPackage):
 	cran = "someMTP" 
 
 	version("1.4.1.1", md5="cd789b1f635e3eb3b2ca5e46d10d0e2d")
-

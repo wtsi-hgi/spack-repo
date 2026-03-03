@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RPgm2(RPackage):
 	cran = "PGM2" 
 
 	version("1.0-1", md5="9ea75749ec9998da73774138df279544", url="https://cran.r-project.org/src/contrib/PGM2_1.0-1.tar.gz")
-

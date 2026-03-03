@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Optimization
 	cran = "AdequacyModel" 
 
 	version("2.0.0", md5="50848456399fc5f60783f80cb4943ebf")
-

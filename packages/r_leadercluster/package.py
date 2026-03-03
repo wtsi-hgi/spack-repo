@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RLeadercluster(RPackage):
 	cran = "leaderCluster" 
 
 	version("1.5", md5="c2341718cd71ca5c46d663c45fbf5a22")
-

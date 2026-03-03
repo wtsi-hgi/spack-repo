@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RGclm(RPackage):
 	cran = "gclm" 
 
 	version("0.0.1", md5="0bad758c979aa404a90e2eef73d2acc0")
-

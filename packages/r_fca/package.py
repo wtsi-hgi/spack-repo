@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ Accessibility
 	cran = "fca" 
 
 	version("0.1.0", md5="5e3b83c828198ea817e8f2b6ffa821b3")
-

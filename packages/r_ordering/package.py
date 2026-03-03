@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ Vectors
 	cran = "ordering" 
 
 	version("0.7.0", md5="f45197a3fd23d098d94cef49bb68311e")
-

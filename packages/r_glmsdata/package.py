@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RGlmsdata(RPackage):
 	cran = "GLMsData" 
 
 	version("1.4", md5="169e65beb55e576eab79de4815f5412d")
-

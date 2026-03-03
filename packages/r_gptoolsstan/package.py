@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RGptoolsstan(RPackage):
 	cran = "gptoolsStan" 
 
 	version("0.1.0", md5="5a31a86b71d27a4802dbd92acd03a5ef")
-

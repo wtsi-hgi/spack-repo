@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RJjb(RPackage):
 	cran = "jjb" 
 
 	version("0.1.1", md5="0e5459ac4f16276824db3a062579acac")
-

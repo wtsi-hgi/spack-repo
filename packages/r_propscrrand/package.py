@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Trials
 	cran = "PropScrRand" 
 
 	version("1.1.1", md5="1956e836b1b2215ecb0ef20b91be4bf2")
-

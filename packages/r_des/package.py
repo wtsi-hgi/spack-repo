@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RDes(RPackage):
 	cran = "DES" 
 
 	version("1.0.0", md5="b61a17d9696d1f2fc9bc346f9309cc83")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RGenalg(RPackage):
 	cran = "genalg" 
 
 	version("0.2.1", md5="6677e43553558816799b33d10163c09d")
-

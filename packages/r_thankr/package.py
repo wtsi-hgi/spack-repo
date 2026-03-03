@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RThankr(RPackage):
 	cran = "thankr" 
 
 	version("1.0.0", md5="c3b0639c9db5e1a49ae2a3b54461d271")
-

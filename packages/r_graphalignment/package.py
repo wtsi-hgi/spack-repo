@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RGraphalignment(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GraphAlignment_1.66.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GraphAlignment/GraphAlignment_1.66.0.tar.gz"]
 
 	version("1.66.0", md5="0bc71a4722d0771d97671e81103bc8bb")
-

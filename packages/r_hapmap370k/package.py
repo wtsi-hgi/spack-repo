@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,5 +17,4 @@ class RHapmap370k(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hapmap370k_1.0.1.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/hapmap370k/hapmap370k_1.0.1.tar.gz"]
 
 	version("1.0.1", md5="569556341a45da799372aaf1012be72e")
-
 

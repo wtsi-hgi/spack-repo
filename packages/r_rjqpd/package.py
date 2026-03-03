@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RRjqpd(RPackage):
 	cran = "rjqpd" 
 
 	version("0.2.3", md5="9e25dcaa1ea0dcf525066dae10413590")
-

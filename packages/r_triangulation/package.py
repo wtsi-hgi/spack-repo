@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RTriangulation(RPackage):
 	cran = "triangulation" 
 
 	version("0.5.0", md5="c94c0c9ea32d3f174e6aef5855bf9649")
-

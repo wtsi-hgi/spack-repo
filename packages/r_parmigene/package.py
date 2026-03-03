@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ Reconstruction
 	cran = "parmigene" 
 
 	version("1.1.0", md5="b4e0213cf464ca63b6dc51f3133c975a")
-

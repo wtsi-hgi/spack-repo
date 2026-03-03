@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RHiernet(RPackage):
 	cran = "hierNet" 
 
 	version("1.9", md5="b7283e609a7b6f280241c681d32a22bd")
-

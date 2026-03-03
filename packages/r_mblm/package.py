@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RMblm(RPackage):
 	cran = "mblm" 
 
 	version("0.12.1", md5="c3cc076c394b75fd8fc081a3fef4a2fb")
-

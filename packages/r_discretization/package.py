@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RDiscretization(RPackage):
 	cran = "discretization" 
 
 	version("1.0-1.1", md5="dbdc36b0db148ea09bed2a4c91a99c39")
-

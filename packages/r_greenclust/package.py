@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RGreenclust(RPackage):
 	cran = "greenclust" 
 
 	version("1.1.1", md5="0807869923305818d5ca1d924270aed1")
-

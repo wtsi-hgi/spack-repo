@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RIneqjd(RPackage):
 	cran = "ineqJD" 
 
 	version("1.0", md5="448230e3f97e0e6632200699823c210b")
-

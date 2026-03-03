@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RRound(RPackage):
 	cran = "round" 
 
 	version("0.21-0.2", md5="44d20a299505ec805239991d860dcb44")
-

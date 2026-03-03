@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -35,4 +36,3 @@ class RPrepdesigns(RPackage):
 
 	version("1.2.0", md5="be0d96a84cda8e378355f01db3b09307")
 	version("1.1.0", md5="52d34a433fac9db96435cef7107ff4aa")
-

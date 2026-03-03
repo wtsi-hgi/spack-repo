@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RCvgee(RPackage):
 	cran = "cvGEE" 
 
 	version("0.3-0", md5="ef6caf0a66a63e150a25bf44fad1482d")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RCocor(RPackage):
 	cran = "cocor" 
 
 	version("1.1-4", md5="2e5d0b5a82bd9db4d0d1b33201c0f481")
-

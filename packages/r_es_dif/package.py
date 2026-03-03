@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class REsDif(RPackage):
 	cran = "es.dif" 
 
 	version("1.0.2", md5="ac169b229e0bced1ac8fe915a9362302")
-

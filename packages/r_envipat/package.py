@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ Spectrometry
 	cran = "enviPat" 
 
 	version("2.6", md5="b3bf71eccf0c915ddeadd2e0bfbfa3d5")
-

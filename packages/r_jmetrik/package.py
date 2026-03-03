@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RJmetrik(RPackage):
 	cran = "jmetrik" 
 
 	version("1.1", md5="0a9f30bd517c896cfad08f1ed5193a47")
-

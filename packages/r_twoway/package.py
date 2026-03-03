@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RTwoway(RPackage):
 	cran = "twoway" 
 
 	version("0.6.3", md5="f6d57963f6d263e43285a05bc0bf274e")
-

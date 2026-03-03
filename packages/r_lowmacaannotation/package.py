@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RLowmacaannotation(RPackage):
 	version("0.99.3", md5="9e0d3fe7f30fe48aef9c4387eb5bacfa")
 
 	depends_on("r@2.10:", type=("build", "run"))
-

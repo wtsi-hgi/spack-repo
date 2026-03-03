@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -27,4 +28,3 @@ class RSparseindextracking(RPackage):
 	cran = "sparseIndexTracking" 
 
 	version("0.1.1", md5="02f3c310946c5600550fcd3dba15d8c0")
-

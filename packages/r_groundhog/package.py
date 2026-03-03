@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RGroundhog(RPackage):
 	cran = "groundhog" 
 
 	version("3.2.0", md5="c6d774a816c47034675afbe27083b2e7")
-

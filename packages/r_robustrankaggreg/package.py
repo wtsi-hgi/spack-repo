@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RRobustrankaggreg(RPackage):
 	cran = "RobustRankAggreg" 
 
 	version("1.2.1", md5="76c896a3ebc71bcab67a43e87e716ee8")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RTagr(RPackage):
 	cran = "tagr" 
 
 	version("1.0.1", md5="089d5045e566cb02fba6c5fa578d5405")
-

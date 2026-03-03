@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RGlmlep(RPackage):
 	cran = "glmlep" 
 
 	version("0.2", md5="cd03ac622cb11e90bddec88987ab8c5b")
-

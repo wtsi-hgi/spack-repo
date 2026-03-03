@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMultirobust(RPackage):
 	cran = "MultiRobust" 
 
 	version("1.0.5", md5="4d472bf5d377bcb8e55ee55d8c1f7b0f")
-

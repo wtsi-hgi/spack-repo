@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RSpicyworkflow(RPackage):
 	version("1.2.1", md5="dc3f961321f6bc9a2382311929955574")
 
 	depends_on("r@4.3:", type=("build", "run"))
-

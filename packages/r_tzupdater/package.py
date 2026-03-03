@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RTzupdater(RPackage):
 	cran = "tzupdater" 
 
 	version("0.1.5", md5="e85518f6462f91988da1c55465ebcc0f")
-

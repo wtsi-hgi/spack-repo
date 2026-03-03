@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Regularization
 	cran = "glinternet" 
 
 	version("1.0.12", md5="2c1369bdfc0264c9109459726d70c0f3")
-

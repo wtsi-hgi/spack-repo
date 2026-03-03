@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RPipegs(RPackage):
 	cran = "pipeGS" 
 
 	version("0.4", md5="703739ccbdd8e7d6a43a42e993007482")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class PyRadian(PythonPackage):
     depends_on("py-pytest", type=("build", "run"))
     depends_on("py-pexpect", type=("build", "run"))
     depends_on("py-ptyprocess", type=("build", "run"))
-

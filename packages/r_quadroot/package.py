@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RQuadroot(RPackage):
 	cran = "QuadRoot" 
 
 	version("0.2.1", md5="481f39ac63a3a1d869e7981ce3273e3c")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Parameters Using M-Estimation
 	cran = "Mestim" 
 
 	version("0.2.1", md5="05bcee06c2bcf202d1fb4ae76a6118b6")
-

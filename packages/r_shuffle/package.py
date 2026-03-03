@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RShuffle(RPackage):
 	cran = "shuffle" 
 
 	version("1.0.1", md5="4dcce63a83b8be92195c4d27a4e71bb6")
-

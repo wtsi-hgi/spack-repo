@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Imputation for Incomplete Categorical Data
 	cran = "MMDai" 
 
 	version("2.0.0", md5="a29fac5dc3f62ed3937d3ebec178e1a4")
-

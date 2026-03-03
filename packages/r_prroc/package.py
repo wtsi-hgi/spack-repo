@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RPrroc(RPackage):
 	cran = "PRROC" 
 
 	version("1.3.1", md5="a69d2bae6c1c3295b4d87a121b6a9ff4")
-

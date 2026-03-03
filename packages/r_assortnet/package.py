@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Networks
 	cran = "assortnet" 
 
 	version("0.20", md5="032fd8e7c6ce308e373c020ad838c5c5")
-

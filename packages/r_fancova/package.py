@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RFancova(RPackage):
 	cran = "fANCOVA" 
 
 	version("0.6-1", md5="170092ecbafffe6447d3fe583e8a7fa0")
-

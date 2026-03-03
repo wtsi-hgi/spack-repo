@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RHistdat(RPackage):
 	cran = "HistDat" 
 
 	version("0.2.0", md5="b3e0138b1eaf4dd2ad029e33c319a7fa")
-

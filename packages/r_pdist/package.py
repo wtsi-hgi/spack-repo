@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RPdist(RPackage):
 	cran = "pdist" 
 
 	version("1.2.1", md5="f6bd156a9a05bc3b615ce8fc27a78e4d")
-

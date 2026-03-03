@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RMinimax(RPackage):
 	cran = "minimax" 
 
 	version("1.1.1", md5="28e52ad91aa966f7961c355cec40d1f3")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RGgversa(RPackage):
 	cran = "ggversa" 
 
 	version("0.0.1", md5="e6207ea02937f4fb50f83caf4490702f")
-

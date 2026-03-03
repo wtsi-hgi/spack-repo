@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RVarredopt(RPackage):
 	cran = "VarRedOpt" 
 
 	version("0.1.0", md5="9099ed4ca0239a3d81c9d8fd048755a2")
-

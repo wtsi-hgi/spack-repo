@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RScannotatrModels(RPackage):
 	version("0.99.10", md5="77c6e16382645164d6413356c5ab52c5")
 
 	depends_on("r@4.1:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RAtsa(RPackage):
 	cran = "aTSA" 
 
 	version("3.1.2.1", md5="7bee1f397b1605e9754d31463085a0ae")
-

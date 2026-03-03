@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RBezier(RPackage):
 	cran = "bezier" 
 
 	version("1.1.2", md5="ff007027f4c27591f9b47bf43be8aaa1")
-

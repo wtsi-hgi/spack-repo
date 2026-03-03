@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RPathnetdata(RPackage):
 	version("1.38.0", md5="d72e955b33c92f1703ae072ec788c1d9")
 
 	depends_on("r@1.14:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.generic import Package
 from spack.package import *
 
 
@@ -37,4 +38,3 @@ class Mosdepth(Package):
         with working_dir("spack-test", create=True):
             # CLI exists; verify it responds
             Executable(join_path(self.prefix.bin, "mosdepth"))("--help")
-

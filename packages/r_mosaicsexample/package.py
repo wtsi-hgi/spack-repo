@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RMosaicsexample(RPackage):
 	version("1.40.0", md5="8852ad56f152a138367e7630b6b21efb")
 
 	depends_on("r@2.11.1:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -33,4 +34,3 @@ class RMethylationarrayanalysis(RPackage):
 	depends_on("r-dmrcate", type=("build", "run"))
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-flowsorted-blood-450k", type=("build", "run"))
-

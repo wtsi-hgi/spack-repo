@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RRsdne(RPackage):
 	cran = "rsdNE" 
 
 	version("1.1.0", md5="f5be288d184e07713e6fc9ee79237f56")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RRfolding(RPackage):
 	cran = "Rfolding" 
 
 	version("1.0", md5="343caa61c8a3abc7524b6b5743d33b5f")
-

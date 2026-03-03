@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RDraw(RPackage):
 	cran = "draw" 
 
 	version("1.0.0", md5="3f35a9579eeeb650732962f40cdfb03a")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RItsmr(RPackage):
 	cran = "itsmr" 
 
 	version("1.10", md5="cdaa30b4cd28e1d01f39544949f543a3")
-

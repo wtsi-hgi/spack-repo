@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RListarray(RPackage):
 	cran = "listArray" 
 
 	version("0.1.1", md5="f795a7f5c9e988e60c01175a9bace877")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class ROptgs(RPackage):
 	cran = "OptGS" 
 
 	version("1.2", md5="2eae50924ea31a1f15fe465653aaf778")
-

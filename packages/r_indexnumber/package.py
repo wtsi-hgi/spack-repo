@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RIndexnumber(RPackage):
 	cran = "IndexNumber" 
 
 	version("1.3.2", md5="96e0463a099b12042224ee949ee24475")
-

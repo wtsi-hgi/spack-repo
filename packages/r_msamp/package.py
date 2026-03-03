@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ Product Lot
 	cran = "msamp" 
 
 	version("1.0.0", md5="67e357f2592d6807c96b3b86b6aad842")
-

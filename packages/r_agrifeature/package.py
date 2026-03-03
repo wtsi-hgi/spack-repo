@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAgrifeature(RPackage):
 	cran = "agrifeature" 
 
 	version("1.0.3", md5="8535e256591c099a2fa0b0bd83ed493e")
-

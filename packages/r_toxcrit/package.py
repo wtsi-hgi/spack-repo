@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ using Bayes
 	cran = "ToxCrit" 
 
 	version("1.0", md5="debd6fb8416030063deaf457e2e2be77")
-

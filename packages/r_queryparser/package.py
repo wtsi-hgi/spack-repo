@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RQueryparser(RPackage):
 	cran = "queryparser" 
 
 	version("0.3.2", md5="b7c4292f48b1ad48dc2d8aa8b8ce0867")
-

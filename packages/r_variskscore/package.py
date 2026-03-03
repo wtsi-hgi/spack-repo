@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RVariskscore(RPackage):
 	cran = "vaRiskScore" 
 
 	version("1.1.0", md5="0b9e366e7afe15740f6238ff5ba87cc0")
-

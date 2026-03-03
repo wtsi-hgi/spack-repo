@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RSpongebob(RPackage):
 	cran = "spongebob" 
 
 	version("0.4.0", md5="a1975481bc55b6153e1890bb3d106067")
-

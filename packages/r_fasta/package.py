@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RFasta(RPackage):
 	cran = "fasta" 
 
 	version("0.1.0", md5="c522baefc19fd7a1bc1976da2f93fc1d")
-

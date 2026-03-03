@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Proportions in Phase III Clinical Trials
 	cran = "SampleSize4ClinicalTrials" 
 
 	version("0.2.3", md5="2991d78e45b4b38c199729c545b5d130")
-

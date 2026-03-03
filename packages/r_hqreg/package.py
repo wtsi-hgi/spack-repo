@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Loss Regression and Quantile Regression
 	cran = "hqreg" 
 
 	version("1.4", md5="3d76d50a663c156549afde564cd9a92e")
-

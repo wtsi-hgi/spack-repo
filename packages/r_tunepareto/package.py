@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RTunepareto(RPackage):
 	cran = "TunePareto" 
 
 	version("2.5.3", md5="77a5e561d65347c891442ba2f50e2f7d")
-

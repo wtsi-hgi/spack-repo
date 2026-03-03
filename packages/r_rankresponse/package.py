@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ Response Question
 	cran = "RankResponse" 
 
 	version("4.0.0", md5="59345b68f69a64de5dfd100199d32600")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ Theory
 	cran = "RMTstat" 
 
 	version("0.3.1", md5="71e2f2fd478902ab0135522b01d15e95")
-

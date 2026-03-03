@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ and 'as.data.frame()'
 	cran = "hellno" 
 
 	version("0.0.1", md5="eaa5245cf0626cdad1640950e2aeed62")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RClustertend(RPackage):
 	cran = "clustertend" 
 
 	version("1.7", md5="a9f138d997707c0351925fc7ea525439")
-

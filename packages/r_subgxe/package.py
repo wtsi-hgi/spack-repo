@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RSubgxe(RPackage):
 	cran = "subgxe" 
 
 	version("0.9.0", md5="23a2efabe04f35bf6ec2d0f1582b9d7e")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ One-Sided Cross-Validation
 	cran = "DOvalidation" 
 
 	version("1.1.0", md5="3bfb036a775802b5bbd2c2b2ff08ee73")
-

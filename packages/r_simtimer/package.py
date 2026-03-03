@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RSimtimer(RPackage):
 	cran = "simtimer" 
 
 	version("4.0.0", md5="6927d67f0d34cc00942b1dde833eebc9")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -27,4 +28,3 @@ class RGenomicdistributionsdata(RPackage):
 	depends_on("r-genomicfeatures", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))
 	depends_on("r-ensembldb", type=("build", "run"))
-

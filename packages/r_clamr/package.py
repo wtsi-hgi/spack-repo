@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RClamr(RPackage):
 	cran = "ClamR" 
 
 	version("2.1-3", md5="af63eb29200bf316b052aa1b6e4b1fd5")
-

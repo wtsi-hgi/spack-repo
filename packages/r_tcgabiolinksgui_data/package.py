@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RTcgabiolinksguiData(RPackage):
 	version("1.22.0", md5="bd2042c0064583d666364a52ce3be17e")
 
 	depends_on("r@3.5:", type=("build", "run"))
-

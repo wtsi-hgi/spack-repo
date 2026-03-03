@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RBcdating(RPackage):
 	cran = "BCDating" 
 
 	version("0.9.8", md5="41fb5e96da157df77d6f520d01d6bacb")
-

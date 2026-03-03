@@ -20,6 +20,7 @@
 # See the Spack documentation for more information on packaging.
 # ----------------------------------------------------------------------------
 
+from spack_repo.builtin.build_systems.perl import PerlPackage
 from spack.package import *
 from pathlib import Path
 import tempfile

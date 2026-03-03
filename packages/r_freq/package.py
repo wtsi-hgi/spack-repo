@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RFreq(RPackage):
 	cran = "FREQ" 
 
 	version("1.0", md5="c2c000fb15e356b13739aeb71e8a77b1")
-

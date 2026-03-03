@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Outcome
 	cran = "compareC" 
 
 	version("1.3.2", md5="f789213cee4c511160f2776cedd29be6")
-

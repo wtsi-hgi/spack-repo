@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RBatchmeans(RPackage):
 	cran = "batchmeans" 
 
 	version("1.0-4", md5="345f227dc4c2e697efc7e80999635872")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RHk80(RPackage):
 	cran = "HK80" 
 
 	version("0.0.2", md5="71488d2d14b7a82e94b9e6f2602bf0f4", url="https://cran.r-project.org/src/contrib/HK80_0.0.2.tar.gz")
-

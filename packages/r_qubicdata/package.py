@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RQubicdata(RPackage):
 	version("1.30.0", md5="0670dfaee6f8d532cf3506428a5932c1")
 
 	depends_on("r@3.1:", type=("build", "run"))
-

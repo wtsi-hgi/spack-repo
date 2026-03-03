@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RTaxicabca(RPackage):
 	cran = "TaxicabCA" 
 
 	version("0.1.1", md5="c7ddf6a8b67cb67f146d70d616f5396c")
-

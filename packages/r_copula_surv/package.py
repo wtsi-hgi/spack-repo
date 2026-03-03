@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RCopulaSurv(RPackage):
 
 	version("1.4", md5="477604fe702e31f02ee303ae98841319")
 	version("1.2", md5="2d2dfea1c4ea82e2ed72f361c696185d")
-

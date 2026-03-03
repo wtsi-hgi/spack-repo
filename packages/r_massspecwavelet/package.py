@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RMassspecwavelet(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MassSpecWavelet_1.68.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MassSpecWavelet/MassSpecWavelet_1.68.0.tar.gz"]
 
 	version("1.68.0", md5="387636ea7c674fe339c56a8af3458f8a")
-

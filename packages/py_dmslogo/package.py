@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 import os
 
@@ -22,4 +23,3 @@ class PyDmslogo(PythonPackage):
     depends_on("py-pandas@0.23:", type=("build", "run"))
     depends_on("py-matplotlib@3.8:", type=("build", "run"))
     depends_on("py-palettable", type=("build", "run"))
-

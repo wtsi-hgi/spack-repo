@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSokoban(RPackage):
 	cran = "sokoban" 
 
 	version("0.1.0", md5="40b6952bf375ffe16c512534a60a42f6")
-

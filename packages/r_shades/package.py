@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RShades(RPackage):
 	cran = "shades" 
 
 	version("1.4.0", md5="84eb1e60ab7bc6d1fbbd662840230951")
-

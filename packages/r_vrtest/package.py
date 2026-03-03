@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Hypothesis
 	cran = "vrtest" 
 
 	version("1.2", md5="30fee9c9c9b68522bece16d0b123047d")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RCoenocliner(RPackage):
 	cran = "coenocliner" 
 
 	version("0.2-3", md5="e410f8f1f03511d55ab070cceb77d978")
-

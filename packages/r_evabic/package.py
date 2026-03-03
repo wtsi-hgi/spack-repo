@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class REvabic(RPackage):
 	cran = "evabic" 
 
 	version("0.1.1", md5="192a5dd609499246d3b9c303f2ab3a91")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RPhyreg(RPackage):
 	cran = "phyreg" 
 
 	version("1.0.2", md5="24a568d1dc1489b77d369bb2b4ac47f1")
-

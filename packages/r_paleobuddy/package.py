@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RPaleobuddy(RPackage):
 	cran = "paleobuddy" 
 
 	version("1.0.0", md5="4320c49a02933965e95e052d8e7c1ed3")
-

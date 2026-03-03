@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ Related Functionality
 	cran = "longmemo" 
 
 	version("1.1-2", md5="38024ac19d25d74308cef550d2960bd4")
-

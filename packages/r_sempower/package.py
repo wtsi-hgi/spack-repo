@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RSempower(RPackage):
 	cran = "semPower" 
 
 	version("2.1.0", md5="ef38f7e51a0a3b378a26d3c0ad232058")
-

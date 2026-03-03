@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -28,4 +29,3 @@ class RHcatonsildata(RPackage):
 	depends_on("r-htmltools", type=("build", "run"))
 	depends_on("r-rmarkdown", type=("build", "run"))
 	depends_on("r-base64enc", type=("build", "run"))
-

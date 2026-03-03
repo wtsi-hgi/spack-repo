@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RSnowballc(RPackage):
 	cran = "SnowballC" 
 
 	version("0.7.1", md5="c95c904382d30d7256d1fa710f9327f0")
-

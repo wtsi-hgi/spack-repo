@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RTeachnet(RPackage):
 	cran = "TeachNet" 
 
 	version("0.7.1", md5="9055a44fe8c6c2b9d912dfb3957ff1b3")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Equations
 	cran = "bodycomp" 
 
 	version("1.0.0", md5="fb22503aa1fada789ebf4845bbd669b5")
-

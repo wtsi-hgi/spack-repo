@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RAhcytobands(RPackage):
 	version("0.99.1", md5="3dd85d02e7ed3fca4c7898b5e395edeb")
 
 	depends_on("r@3.2.2:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Unmatched Data
 	cran = "rbounds" 
 
 	version("2.2", md5="7f84e0b104d1abb601713aab6a838687")
-

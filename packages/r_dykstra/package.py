@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RDykstra(RPackage):
 	cran = "Dykstra" 
 
 	version("1.0-0", md5="92a70848d9f8a8494041f8868ab650ae")
-

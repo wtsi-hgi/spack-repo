@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RGigseadata(RPackage):
 	version("1.20.0", md5="470cdb6073d9af3d23056b55e6b8c98d")
 
 	depends_on("r@3.5:", type=("build", "run"))
-

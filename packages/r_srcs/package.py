@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ Comparisons
 	cran = "SRCS" 
 
 	version("1.1", md5="835234b194799eeab017888d5004fd27")
-

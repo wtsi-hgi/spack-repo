@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RChicData(RPackage):
 	depends_on("r-genomeintervals", type=("build", "run"))
 	depends_on("r-randomforest", type=("build", "run"))
 	depends_on("r-caret@6.0.78:", type=("build", "run"))
-

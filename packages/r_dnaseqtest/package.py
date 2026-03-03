@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RDnaseqtest(RPackage):
 	cran = "DNAseqtest" 
 
 	version("1.0", md5="b5402e3814e615079187d67096c5e5e1")
-

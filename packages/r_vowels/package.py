@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RVowels(RPackage):
 	cran = "vowels" 
 
 	version("1.2-2", md5="6f72947d18a0e36a504a02f2fbebe747")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RRhnerm(RPackage):
 	cran = "rhnerm" 
 
 	version("1.1", md5="425b8fe7eacb9f29c64ea7b30287ded7")
-

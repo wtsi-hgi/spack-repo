@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RJaspar2016(RPackage):
 	version("1.30.0", md5="2976e4678291944f664396385049180b", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/JASPAR2016_1.30.0.tar.gz")
 
 	depends_on("r@3.2.2:", type=("build", "run"))
-

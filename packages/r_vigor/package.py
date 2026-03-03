@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RVigor(RPackage):
 	cran = "VIGoR" 
 
 	version("1.1.2", md5="9c0da5e00b18879c0dac9afc9f10d7c6")
-

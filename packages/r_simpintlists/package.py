@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,5 +17,4 @@ class RSimpintlists(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/simpIntLists_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/simpIntLists/simpIntLists_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="9dbe0a1f390843a49bb11d05ac5f2e28")
-
 

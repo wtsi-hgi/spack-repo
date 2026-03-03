@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RMtbls2(RPackage):
 	version("1.32.0", md5="820109836c79f398ea5b82f5887b7fea", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/mtbls2_1.32.0.tar.gz")
 
 	depends_on("r@2.10:", type=("build", "run"))
-

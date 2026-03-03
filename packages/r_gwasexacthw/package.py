@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RGwasexacthw(RPackage):
 
 	version("1.2", md5="717c13915dbf0c689722e43f98d25f96")
 	version("1.01", md5="041fc38bed5b43e6f81962b872cbfbe4")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RPrettyb(RPackage):
 	cran = "prettyB" 
 
 	version("0.2.2", md5="3390411da5bb850a17cec25bbca9afce")
-

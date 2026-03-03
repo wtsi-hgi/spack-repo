@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RWeightsvm(RPackage):
 	cran = "WeightSVM" 
 
 	version("1.7-13", md5="da27d3a7f05d764695511928e678a4eb")
-

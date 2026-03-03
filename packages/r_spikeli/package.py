@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RSpikeli(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/spikeLI_2.62.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/spikeLI/spikeLI_2.62.0.tar.gz"]
 
 	version("2.62.0", md5="15e5851707938b83c34b9d5667d62f79")
-

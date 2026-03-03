@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RRkt(RPackage):
 	cran = "rkt" 
 
 	version("1.7", md5="7c40fcb9af310d12f800e70b155b2545")
-

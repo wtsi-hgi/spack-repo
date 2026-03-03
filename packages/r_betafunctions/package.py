@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -38,4 +39,3 @@ Classifications
 
 	version("1.9.0", md5="5e9b7adea2ff11e937eba3d68630cd03")
 	version("1.8.1", md5="05bf901a5303b342478190af741d20bd")
-

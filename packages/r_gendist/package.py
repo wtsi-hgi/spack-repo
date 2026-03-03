@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RGendist(RPackage):
 	cran = "gendist" 
 
 	version("2.0", md5="6f92ae3e87cf64647afcd3ac88a74b32")
-

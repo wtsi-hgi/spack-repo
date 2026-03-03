@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RMultirich(RPackage):
 	cran = "multirich" 
 
 	version("2.1.3", md5="ad532c8710ba007596c5c0676e5d0dbf")
-

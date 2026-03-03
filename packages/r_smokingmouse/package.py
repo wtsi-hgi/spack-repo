@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,5 +18,4 @@ class RSmokingmouse(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/smokingMouse_1.0.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/smokingMouse/smokingMouse_1.0.0.tar.gz"]
 
 	version("1.0.0", md5="0c2fad6bf0e911ae8c140c02bc29150e")
-
 

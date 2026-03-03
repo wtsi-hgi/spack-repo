@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ Statistics
 	cran = "synchrony" 
 
 	version("0.3.8", md5="0224d88b4311c5bba697155c1a07e96b")
-

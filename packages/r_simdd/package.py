@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ Distributions
 	cran = "simdd" 
 
 	version("1.1-2", md5="a6b3a34b224285614e309e99c22b96c9")
-

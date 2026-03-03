@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RBioprobability(RPackage):
 	cran = "BioProbability" 
 
 	version("1.0", md5="0d023e41890ef83da14026238f3b5eb1")
-

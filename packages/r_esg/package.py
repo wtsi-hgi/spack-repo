@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class REsg(RPackage):
 	cran = "ESG" 
 
 	version("1.3", md5="44866bd49557f73a002b09a762f62641")
-

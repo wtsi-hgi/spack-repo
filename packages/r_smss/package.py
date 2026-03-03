@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Social Sciences"
 	cran = "smss" 
 
 	version("1.0-2", md5="968cd2a6b8382a90f04292073559995f")
-

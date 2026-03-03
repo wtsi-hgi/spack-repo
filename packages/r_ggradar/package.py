@@ -1,3 +1,4 @@
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RGgradar(RPackage):
     depends_on("r", type=("build", "run"))
     depends_on("r-ggplot2", type=("build", "run"))
     depends_on("r-forcats", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RProtoclust(RPackage):
 	cran = "protoclust" 
 
 	version("1.6.4", md5="06f3a4d3a917a49789c13bdc57424634")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RRattusNorvegicus(RPackage):
 	depends_on("r-go-db", type=("build", "run"))
 	depends_on("r-org-rn-eg-db", type=("build", "run"))
 	depends_on("r-txdb-rnorvegicus-ucsc-rn5-refgene", type=("build", "run"))
-

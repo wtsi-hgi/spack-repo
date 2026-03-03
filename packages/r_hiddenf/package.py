@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Additivity
 	cran = "hiddenf" 
 
 	version("2.0", md5="463cdff2acfdf55312c2379b50d0db26")
-

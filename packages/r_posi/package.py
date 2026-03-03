@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RPosi(RPackage):
 	cran = "PoSI" 
 
 	version("1.1", md5="84564b524ed3e6390473e44b4fea4aec")
-

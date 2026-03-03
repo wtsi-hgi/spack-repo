@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RDiscreteqvalue(RPackage):
 	cran = "DiscreteQvalue" 
 
 	version("1.1", md5="805364abc4b465b67fdda443dd95f5e8")
-

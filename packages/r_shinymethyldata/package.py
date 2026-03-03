@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RShinymethyldata(RPackage):
 	version("1.22.0", md5="46f32db849aaa1467d09b0a371769374")
 
 	depends_on("r@3:", type=("build", "run"))
-

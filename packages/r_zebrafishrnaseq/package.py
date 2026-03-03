@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RZebrafishrnaseq(RPackage):
 	version("1.22.0", md5="c1fcbadec1b25e4b28483c015f7ab35c")
 
 	depends_on("r@2.10:", type=("build", "run"))
-

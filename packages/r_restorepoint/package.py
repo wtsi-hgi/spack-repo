@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RRestorepoint(RPackage):
 	cran = "restorepoint" 
 
 	version("0.2", md5="ac265f803507c83ea72027130c58d978")
-

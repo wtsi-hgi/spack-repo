@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RMmpa(RPackage):
 	cran = "mMPA" 
 
 	version("1.2.0", md5="d2aca0ddaf5df2fabf8790225aa85cb1")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RLifttest(RPackage):
 	cran = "LiftTest" 
 
 	version("0.2.0", md5="9463c5587f093f40ba15bf0236ec18f2")
-

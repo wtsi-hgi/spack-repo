@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -53,4 +54,3 @@ class RTcgaworkflow(RPackage):
 	depends_on("r-tcgaworkflowdata@1.25.3:", type=("build", "run"))
 	depends_on("r-dt", type=("build", "run"))
 	depends_on("r-gt", type=("build", "run"))
-

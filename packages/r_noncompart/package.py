@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RNoncompart(RPackage):
 	cran = "NonCompart" 
 
 	version("0.7.0", md5="37c61df5b854a134be36f94500121247")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RIc10trainingdata(RPackage):
 	cran = "iC10TrainingData" 
 
 	version("1.3.1", md5="077ad100c88732bdefae178f52d9074a")
-

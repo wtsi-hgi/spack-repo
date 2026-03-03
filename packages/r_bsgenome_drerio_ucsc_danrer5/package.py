@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomeDrerioUcscDanrer5(RPackage):
 	version("1.4.0", md5="b1fee4bcc0d9cebb2bbdec5cb851f00d", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Drerio.UCSC.danRer5_1.4.0.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

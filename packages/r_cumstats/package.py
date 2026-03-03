@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCumstats(RPackage):
 	cran = "cumstats" 
 
 	version("1.0", md5="74943d432fc126e2fabfe4451febd00b")
-

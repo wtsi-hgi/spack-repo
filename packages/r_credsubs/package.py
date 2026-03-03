@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCredsubs(RPackage):
 	cran = "credsubs" 
 
 	version("1.1.1", md5="04bf7399964576260b3521a9839490d3")
-

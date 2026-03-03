@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ Numbers
 	cran = "additivityTests" 
 
 	version("1.1-4.1", md5="0aa55442e90e17042e1fdb78b29c525c")
-

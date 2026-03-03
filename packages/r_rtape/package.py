@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ tape-like files
 	cran = "rtape" 
 
 	version("2.2", md5="18c33bb208b0594a49e41cd53fe18d9b")
-

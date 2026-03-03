@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSeqmon(RPackage):
 	cran = "seqmon" 
 
 	version("2.4", md5="7894ccb88e12f75fd0abc748925b55f4")
-

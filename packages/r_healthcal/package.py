@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RHealthcal(RPackage):
 	cran = "HealthCal" 
 
 	version("0.1.1", md5="aaf76000996a6669e23585c02fe0deda")
-

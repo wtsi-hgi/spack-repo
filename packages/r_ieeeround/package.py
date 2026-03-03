@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RIeeeround(RPackage):
 	cran = "ieeeround" 
 
 	version("0.2-0", md5="42e3eee0d17a8b29604ee1d023a746f5")
-

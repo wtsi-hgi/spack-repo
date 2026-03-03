@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RRtist(RPackage):
 	cran = "rtist" 
 
 	version("1.0.0", md5="ec07816d331e652d1bc18dc9ae6b7145")
-

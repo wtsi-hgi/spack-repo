@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RIntrval(RPackage):
 	cran = "intrval" 
 
 	version("0.1-2", md5="a176656aadcba2b9daf3da0b1bfdf123")
-

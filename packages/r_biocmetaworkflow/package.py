@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,5 +17,4 @@ class RBiocmetaworkflow(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/BiocMetaWorkflow_1.24.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/BiocMetaWorkflow/BiocMetaWorkflow_1.24.0.tar.gz"]
 
 	version("1.24.0", md5="0671030d76d252fe8ff7df69c0effdac")
-
 

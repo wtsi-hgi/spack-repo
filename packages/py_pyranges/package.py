@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 
 class PyPyranges(PythonPackage):
@@ -20,5 +21,4 @@ class PyPyranges(PythonPackage):
     depends_on("py-natsort", type=("build", "run"))
     depends_on("py-setuptools", type="build")
     depends_on("py-cython")
-
 

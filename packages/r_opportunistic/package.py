@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ in an Opportunistic Network
 	cran = "Opportunistic" 
 
 	version("1.2", md5="d38163408aa4e868a3adfb50b9994917")
-

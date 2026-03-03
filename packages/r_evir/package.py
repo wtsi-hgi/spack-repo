@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class REvir(RPackage):
 	cran = "evir" 
 
 	version("1.7-4", md5="7168004b08cbea36e74cde9ee9821bff")
-

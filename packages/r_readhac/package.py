@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RReadhac(RPackage):
 	cran = "readHAC" 
 
 	version("1.0", md5="13816159d5d19b0d4afda0588cadfd89")
-

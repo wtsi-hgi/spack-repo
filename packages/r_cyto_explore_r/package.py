@@ -20,6 +20,7 @@
 # See the Spack documentation for more information on packaging.
 # ----------------------------------------------------------------------------
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -55,5 +56,4 @@ class RCytoExploreR(RPackage):
     depends_on("r-umap", type=("build", "run"))
     depends_on("r-visnetwork", type=("build", "run"))
     depends_on("r-cyto-explore-r-data", type=("build", "run"))
-
 

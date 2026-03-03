@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -28,4 +29,3 @@ class RBasemodels(RPackage):
 	cran = "basemodels" 
 
 	version("1.1.0", md5="83cf4cb237c10ec920cd58bf74ee55ab")
-

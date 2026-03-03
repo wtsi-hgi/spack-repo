@@ -1,3 +1,4 @@
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RPoremeth2(RPackage):
 
     # Base R dependency; package contains compiled code (Fortran)
     depends_on("r@3.5.0:", type=("build", "run"))
-

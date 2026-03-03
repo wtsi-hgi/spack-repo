@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class RT2eq(RPackage):
 	cran = "T2EQ" 
 
 	version("1.1", md5="7c53dca51e8b8e10e3e24e48ad275a81")
-

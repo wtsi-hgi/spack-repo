@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -27,4 +28,3 @@ class ROverdisp(RPackage):
 	cran = "overdisp" 
 
 	version("0.1.2", md5="7ea93f42bfb511caed7dcb60e694991c")
-

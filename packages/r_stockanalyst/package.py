@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RStockanalyst(RPackage):
 	cran = "stockAnalyst" 
 
 	version("1.0.1", md5="cb8a1d6883d4dafe1287b17d79ab0276")
-

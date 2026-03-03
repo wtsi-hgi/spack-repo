@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RPsy(RPackage):
 	cran = "psy" 
 
 	version("1.2", md5="460052abc485f3f33075ce9c04e479af")
-

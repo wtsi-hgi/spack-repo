@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -32,4 +33,3 @@ class RHmp2data(RPackage):
 	depends_on("r-phyloseq", type=("build", "run"))
 	depends_on("r-multiassayexperiment", type=("build", "run"))
 	depends_on("r-data-table", type=("build", "run"))
-

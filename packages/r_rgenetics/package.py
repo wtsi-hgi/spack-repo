@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RRgenetics(RPackage):
 	cran = "RGenetics" 
 
 	version("0.1", md5="7bf0c2f9b476ba6a8628e618a9a46381")
-

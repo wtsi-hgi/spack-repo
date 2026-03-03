@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RCostsensitive(RPackage):
 	cran = "costsensitive" 
 
 	version("0.1.2.10", md5="9a3a52e8e5c56c261838eba6e5a8096a")
-

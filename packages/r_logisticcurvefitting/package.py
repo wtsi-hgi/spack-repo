@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RLogisticcurvefitting(RPackage):
 	cran = "LogisticCurveFitting" 
 
 	version("0.1.0", md5="46d6ca856bc70a1d7b0572021c2a1561")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RAhpathbankdbs(RPackage):
 
 	depends_on("r@4.1:", type=("build", "run"))
 	depends_on("r-annotationhub@2.23:", type=("build", "run"))
-

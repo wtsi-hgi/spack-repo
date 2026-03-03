@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RDistcrete(RPackage):
 	cran = "distcrete" 
 
 	version("1.0.3", md5="09e26b59122d32fc479697c54f3624ec")
-

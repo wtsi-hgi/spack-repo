@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAxisandallies(RPackage):
 	cran = "axisandallies" 
 
 	version("0.1.0", md5="4d309a8e36d0ef4fb3d8c7725f2b0bac")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RRdstreeboot(RPackage):
 	cran = "RDStreeboot" 
 
 	version("1.0", md5="cc253ac87726fe799724af696f7f626c")
-

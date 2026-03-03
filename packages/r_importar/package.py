@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ Creating an Alias for Them
 	cran = "importar" 
 
 	version("0.1.1", md5="6ba75aaeca82ce4a3ae2d20ff2c223e5")
-

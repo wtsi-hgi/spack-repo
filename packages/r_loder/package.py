@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RLoder(RPackage):
 	cran = "loder" 
 
 	version("0.2.1", md5="07ee60b41a730f551f95da3865d23760")
-

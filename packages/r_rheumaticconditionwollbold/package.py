@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RRheumaticconditionwollbold(RPackage):
 	version("1.40.0", md5="8c8a5f56b923fe79c4a4902028d6fc5c")
 
 	depends_on("r@2.10:", type=("build", "run"))
-

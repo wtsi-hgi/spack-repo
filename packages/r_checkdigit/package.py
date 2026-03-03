@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RCheckdigit(RPackage):
 	cran = "CheckDigit" 
 
 	version("1.0.0", md5="fd2fa8b775436fc0af9ca6f89e3a1f6c")
-

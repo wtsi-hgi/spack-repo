@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RFpop(RPackage):
 	cran = "fpop" 
 
 	version("2019.08.26", md5="cc572b4be47407f3fccc74f8f8ce5a5d")
-

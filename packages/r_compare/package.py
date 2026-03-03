@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RCompare(RPackage):
 	cran = "compare" 
 
 	version("0.2-6", md5="6ba67278ca59db4c5a0aff9e13dcaf2e")
-

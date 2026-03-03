@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ Plots
 	cran = "plotwidgets" 
 
 	version("0.5.1", md5="0711568192bcf77eab732aa5c1bc999d")
-

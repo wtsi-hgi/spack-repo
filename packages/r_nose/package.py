@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class RNose(RPackage):
 	cran = "nose" 
 
 	version("1.0", md5="88cd4f2696a9f60bb95d0214790f5f29")
-

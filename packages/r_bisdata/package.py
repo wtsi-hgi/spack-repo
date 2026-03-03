@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RBisdata(RPackage):
 	cran = "BISdata" 
 
 	version("0.2-2", md5="92524c4b2ca545f3142d8a25c35d97af")
-

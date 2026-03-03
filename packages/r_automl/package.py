@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RAutoml(RPackage):
 	cran = "automl" 
 
 	version("1.3.2", md5="eb498dbd5e5622fe53d0e772593937b0")
-

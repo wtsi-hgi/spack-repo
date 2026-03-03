@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RR1magic(RPackage):
 	cran = "R1magic" 
 
 	version("0.3.4", md5="6a066bbb4b542c07913929ef796a7a1c")
-

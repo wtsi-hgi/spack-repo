@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ for Multiple Observers
 	cran = "magree" 
 
 	version("1.2", md5="5d420350fe2be66dbe1b394d5d33c66a")
-

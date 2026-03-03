@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBiotmledata(RPackage):
 	version("1.26.0", md5="8c725d5c496f9bfe7ed4b5d5c538244a")
 
 	depends_on("r@3.5:", type=("build", "run"))
-

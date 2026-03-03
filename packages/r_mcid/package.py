@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RMcid(RPackage):
 	cran = "MCID" 
 
 	version("0.1.0", md5="b0f9bfb2b063c8b8c12be5045f4802f5")
-

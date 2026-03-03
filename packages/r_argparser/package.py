@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RArgparser(RPackage):
 	cran = "argparser" 
 
 	version("0.7.1", md5="0048935b4101aef737e31ba02b9bdddb")
-

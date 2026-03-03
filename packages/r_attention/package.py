@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAttention(RPackage):
 	cran = "attention" 
 
 	version("0.4.0", md5="6920730d0265d2188002c7a25158d8e4")
-

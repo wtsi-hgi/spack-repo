@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RLspline(RPackage):
 	cran = "lspline" 
 
 	version("1.0-0", md5="1dfd7137450c6c39882e765761984dc0")
-

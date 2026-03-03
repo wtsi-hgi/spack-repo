@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Cluster Generation
 	cran = "orclus" 
 
 	version("0.2-6", md5="7d9fba1a90dad56f151a5f2d7bf30c05")
-

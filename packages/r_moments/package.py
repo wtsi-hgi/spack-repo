@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RMoments(RPackage):
 	cran = "moments" 
 
 	version("0.14.1", md5="622afd35702c45ad010c106af2457458")
-

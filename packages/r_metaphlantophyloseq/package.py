@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RMetaphlantophyloseq(RPackage):
     depends_on("r@4.3:")
     depends_on("r-dplyr@1.1.4:")
     depends_on("r-phyloseq@1.46.0:")
-

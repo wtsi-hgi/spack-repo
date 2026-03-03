@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RRkeeldata(RPackage):
 	cran = "RKEELdata" 
 
 	version("1.0.5", md5="8819b422e001ac448607c067992b0afc")
-

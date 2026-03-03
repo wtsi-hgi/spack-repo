@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ Sequences
 	cran = "rDNAse" 
 
 	version("1.1-1", md5="1f3ad40411e53f2d98e5780722cf5d50")
-

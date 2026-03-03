@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RAffymetrixdatatestfiles(RPackage):
 	version("0.40.0", md5="57ecb8e4d3f0d7a9cdcedb2a9648dd1e")
 
 	depends_on("r@2.5:", type=("build", "run"))
-

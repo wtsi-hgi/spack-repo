@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RBursts(RPackage):
 	cran = "bursts" 
 
 	version("1.0-2", md5="fa08e1af93460502d95a28602144909c")
-

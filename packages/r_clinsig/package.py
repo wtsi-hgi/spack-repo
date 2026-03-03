@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RClinsig(RPackage):
 	cran = "clinsig" 
 
 	version("1.2", md5="4e8da6ee9ecc8c7384da310be585cf4f")
-

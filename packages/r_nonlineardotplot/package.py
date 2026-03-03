@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RNonlineardotplot(RPackage):
 	cran = "nonLinearDotPlot" 
 
 	version("0.5.0", md5="18e8b1a0ae1aed15f12e5c1f9fa07bf6")
-

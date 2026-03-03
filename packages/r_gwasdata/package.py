@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RGwasdata(RPackage):
 	version("1.40.0", md5="57fec70f980b9e476f0c59d397797815")
 
 	depends_on("r-gwastools", type=("build", "run"))
-

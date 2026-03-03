@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RMcbiopi(RPackage):
 	cran = "mcbiopi" 
 
 	version("1.1.6", md5="c77adce837eafd4e4bd4a571bdf6fb7c")
-

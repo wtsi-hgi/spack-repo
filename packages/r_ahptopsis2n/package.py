@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAhptopsis2n(RPackage):
 	cran = "ahptopsis2n" 
 
 	version("0.2.0", md5="56277086899567730c5b77757d460845")
-

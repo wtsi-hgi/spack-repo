@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Distribution Element Trees
 	cran = "detpack" 
 
 	version("1.1.3", md5="3fa158608d8cc5ee9cbd26f17954ab88")
-

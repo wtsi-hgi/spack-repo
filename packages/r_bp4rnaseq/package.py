@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -33,4 +34,3 @@ class RBp4rnaseq(RPackage):
 	depends_on("hisat2@2.2.0:", type=("build", "link", "run"))
 	depends_on("stringtie@2.1.1:", type=("build", "link", "run"))
 	depends_on("salmon@1.2.1:", type=("build", "link", "run"))
-

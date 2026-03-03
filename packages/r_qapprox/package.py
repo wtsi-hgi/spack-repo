@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Gaussian Variables
 	cran = "Qapprox" 
 
 	version("0.2.0", md5="670e9fc9da9a8a47128174d491b2ec84")
-

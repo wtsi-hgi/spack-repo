@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RAmerika(RPackage):
 	cran = "amerika" 
 
 	version("0.1.0", md5="393e32753f9cc46e113f4510c36846cf")
-

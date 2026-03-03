@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RNorm(RPackage):
 	cran = "norm" 
 
 	version("1.0-11.1", md5="727b4fa17f06231ab8368630d40d2609")
-

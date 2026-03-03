@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomeDmelanogasterUcscDm6(RPackage):
 	version("1.4.1", md5="f9d6e406b7893a17c08edd4521c2802f", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Dmelanogaster.UCSC.dm6_1.4.1.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

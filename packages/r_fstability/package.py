@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RFstability(RPackage):
 	cran = "Fstability" 
 
 	version("0.1.2", md5="a0f9b4fdb07aef1600c0f7ccd8ffe81f")
-

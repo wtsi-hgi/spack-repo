@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RSearchtrees(RPackage):
 	cran = "SearchTrees" 
 
 	version("0.5.5", md5="5b4281e11849c6e7223ec586b25f3780")
-

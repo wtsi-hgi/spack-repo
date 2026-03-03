@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RMvshapirotest(RPackage):
 	cran = "mvShapiroTest" 
 
 	version("1.0", md5="b0098814d73d98b7d66a3eb3932e30f0")
-

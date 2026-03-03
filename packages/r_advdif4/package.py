@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAdvdif4(RPackage):
 	cran = "AdvDif4" 
 
 	version("0.7.18", md5="80bd16d35e38f761d1898e2d6dcb945e", url="https://cran.r-project.org/src/contrib/AdvDif4_0.7.18.tar.gz")
-

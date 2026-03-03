@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Chain
 	cran = "SCperf" 
 
 	version("1.1.1", md5="09a48b88d0cf832265d29bb1fd72e92c")
-

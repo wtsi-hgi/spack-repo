@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RMdss(RPackage):
 	cran = "MDSS" 
 
 	version("1.0-1", md5="ec23b8e3484c0e08cdc7cd6608f6a96a")
-

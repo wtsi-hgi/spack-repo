@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMsgpackr(RPackage):
 	cran = "msgpackR" 
 
 	version("1.1", md5="4c02160fe3f35499aa6e62e9003c4486")
-

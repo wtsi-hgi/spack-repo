@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RPth2o2lipids(RPackage):
 	depends_on("r-xcms", type=("build", "run"))
 	depends_on("r-camera", type=("build", "run"))
 	depends_on("r-lobstahs", type=("build", "run"))
-

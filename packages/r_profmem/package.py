@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RProfmem(RPackage):
 	cran = "profmem" 
 
 	version("0.6.0", md5="f67828b0287e8ca8d244982cc6c171e4")
-

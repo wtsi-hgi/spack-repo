@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class ROntoprocdata(RPackage):
     version("0.99.9901", sha256="33a35841b2ee616dad02e82adc49b64d71bc6895cfe1be834ba8369846819c9b")
     
     depends_on("r@4.2:", type=("build", "run"))
-

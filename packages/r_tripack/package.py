@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RTripack(RPackage):
 	cran = "tripack" 
 
 	version("1.3-9.1", md5="195a05fcc7c15f8abf800e96c18b30ae")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RLiftover(RPackage):
 	depends_on("r-rtracklayer", type=("build", "run"))
 	depends_on("r-homo-sapiens", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))
-

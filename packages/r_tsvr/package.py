@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RTsvr(RPackage):
 	cran = "tsvr" 
 
 	version("1.0.2", md5="516876551e6b894a82f3483f5355b790")
-

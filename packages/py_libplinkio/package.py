@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class PyLibplinkio(PythonPackage):
         with working_dir("spack-test", create=True):
             # No CLI; perform a basic import test
             python("-c", "import plinkio")
-

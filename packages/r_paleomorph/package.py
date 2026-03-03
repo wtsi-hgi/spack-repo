@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RPaleomorph(RPackage):
 	cran = "paleomorph" 
 
 	version("0.1.4", md5="cbc8feefe5f5010effa3f936ca23594f")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ Category Variables
 	cran = "stddiff" 
 
 	version("3.1", md5="3347f0fbc9f00ce4c84427e48edf76d5")
-

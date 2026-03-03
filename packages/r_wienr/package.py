@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -29,4 +30,3 @@ First-Passage Time Distribution
 	cran = "WienR" 
 
 	version("0.3-15", md5="3db5083a888f688792c125aecf650192")
-

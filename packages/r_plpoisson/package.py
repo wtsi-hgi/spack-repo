@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RPlpoisson(RPackage):
 	cran = "plpoisson" 
 
 	version("0.3.0", md5="f6072a23f17626c37971fbe23dccf5c6")
-

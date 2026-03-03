@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCalacs(RPackage):
 	cran = "calACS" 
 
 	version("2.2.2", md5="8fd36b5458f021949f7894e35abd2a52")
-

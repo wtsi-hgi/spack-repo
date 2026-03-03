@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RPipebind(RPackage):
 	cran = "pipebind" 
 
 	version("0.1.2", md5="a9dd266018593a41d14a8d62bb0585bc")
-

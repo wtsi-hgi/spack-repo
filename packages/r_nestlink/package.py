@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RNestlink(RPackage):
 	depends_on("r-gplots@3:", type=("build", "run"))
 	depends_on("r-protviz@0.4:", type=("build", "run"))
 	depends_on("r-shortread@1.41:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RNpcox(RPackage):
 	cran = "NPCox" 
 
 	version("1.2", md5="281e96c842d7d158e6540c4b5b67eb63")
-

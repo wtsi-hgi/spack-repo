@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RFullroc(RPackage):
 	cran = "fullROC" 
 
 	version("0.1.0", md5="45a6493b92f9daf1b8ef07aa4ec6b313")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RCubicbsplines(RPackage):
 	cran = "cubicBsplines" 
 
 	version("1.0.0", md5="b4c35158e221619d50d06bc8e63c3af5")
-

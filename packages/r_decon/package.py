@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -31,4 +32,3 @@ class RDecon(RPackage):
 	cran = "decon" 
 
 	version("1.3-4", md5="dc6838ea75fd71c6ba00166780b051b1")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RQsimulatr(RPackage):
 	cran = "qsimulatR" 
 
 	version("1.1.1", md5="2a1fd70315bd42c972054b511d2638ca")
-

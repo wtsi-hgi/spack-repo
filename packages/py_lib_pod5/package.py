@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 
 
@@ -23,5 +24,4 @@ class PyLibPod5(PythonPackage):
 	depends_on("py-setuptools", type=("build"))
 	depends_on("python@3.9:3.9", type=("build", "run"))
 	depends_on("py-numpy", type=("build", "run"))
-
 

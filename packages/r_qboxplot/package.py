@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RQboxplot(RPackage):
 	cran = "qboxplot" 
 
 	version("0.2", md5="72387bc7d04dd420d9c342b466ef1a39")
-

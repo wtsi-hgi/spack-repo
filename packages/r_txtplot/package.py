@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RTxtplot(RPackage):
 	cran = "txtplot" 
 
 	version("1.0-4", md5="d7687f760ee5d42ab94ba4c6c13d5572")
-

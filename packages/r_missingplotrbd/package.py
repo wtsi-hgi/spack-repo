@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMissingplotrbd(RPackage):
 	cran = "MissingPlotRBD" 
 
 	version("1.1.0", md5="ddbb3253a33cc27f3bba2af3d37118f6")
-

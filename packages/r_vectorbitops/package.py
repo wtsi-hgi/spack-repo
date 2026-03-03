@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RVectorbitops(RPackage):
 	cran = "vectorbitops" 
 
 	version("1.1.2", md5="40829e5c304a97c9afdc120099190a28")
-

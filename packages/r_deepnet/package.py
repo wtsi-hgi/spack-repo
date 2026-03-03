@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RDeepnet(RPackage):
 	cran = "deepnet" 
 
 	version("0.2.1", md5="90b4237b2c26263d21fd617f3ed73ed1")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RCorrgram(RPackage):
 	cran = "corrgram" 
 
 	version("1.14", md5="a8bf8378b6eecabc911e4d7ca35c573c")
-

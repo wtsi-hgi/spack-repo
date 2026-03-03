@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RJcp(RPackage):
 	cran = "jcp" 
 
 	version("1.2", md5="1e0298b94caac382182824150bf2a4e3")
-

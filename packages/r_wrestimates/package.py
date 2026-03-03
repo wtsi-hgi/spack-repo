@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RWrestimates(RPackage):
 	cran = "WRestimates" 
 
 	version("0.1.0", md5="de99e97780a3b5c3e441df9a18c2b732")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RDoex(RPackage):
 	cran = "doex" 
 
 	version("1.2", md5="40e932ec743ae1bc7934db6b6aa3cdf6")
-

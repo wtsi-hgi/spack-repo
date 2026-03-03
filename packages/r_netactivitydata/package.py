@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RNetactivitydata(RPackage):
 	version("1.4.0", md5="a3805046d14d13afc30a0f082952f200")
 
 	depends_on("r@4.2:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RModelwordcloud(RPackage):
 	cran = "modelwordcloud" 
 
 	version("0.1", md5="838f5ce9f8232b68237428b1a1c621ea")
-

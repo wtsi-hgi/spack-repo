@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ Specification
 	cran = "rapidoc" 
 
 	version("9.3.4", md5="551db0ce8a6bf03adbdd52eb43ccd1bb")
-

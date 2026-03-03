@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomeBtaurusUcscBostau8(RPackage):
 	version("1.4.2", md5="61ababa7b2b5360fceeb06f0bf49b208", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Btaurus.UCSC.bosTau8_1.4.2.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

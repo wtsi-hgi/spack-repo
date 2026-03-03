@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ Counts
 	cran = "lfc" 
 
 	version("0.2.3", md5="fcbef66d12f023b521d7a7ef0f3aea76")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RSpinyreg(RPackage):
 	cran = "spinyReg" 
 
 	version("0.1-0", md5="23248c2adf6604e27da44ccd6b5ef4ba")
-

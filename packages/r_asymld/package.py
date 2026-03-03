@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Data
 	cran = "asymLD" 
 
 	version("0.1", md5="4279e0e43acafa6bed70708fda860c2e")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ Forecasts
 	cran = "Hassani.Silva" 
 
 	version("1.0", md5="e5c4d9186910a3eae0ab0b39af284a6a")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RSpam64(RPackage):
 	cran = "spam64" 
 
 	version("2.10-0", md5="6ce179abd5a4bd34a9ea9b102a88ea74", url="https://cran.r-project.org/src/contrib/spam64_2.10-0.tar.gz")
-

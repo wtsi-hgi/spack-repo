@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RFreshr(RPackage):
 	cran = "freshr" 
 
 	version("1.0.2", md5="9a492d11fa3f8213f4817632000b8a56")
-

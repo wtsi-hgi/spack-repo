@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RExcluderanges(RPackage):
 	version("0.99.8", md5="2ec19df8a51df1900a339f7f505cd5fa")
 
 	depends_on("r-genomicranges", type=("build", "run"))
-

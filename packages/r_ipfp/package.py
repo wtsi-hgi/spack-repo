@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ Procedure in C
 	cran = "ipfp" 
 
 	version("1.0.2", md5="40ddb17abb726b9c3c7f3b50438b65c6")
-

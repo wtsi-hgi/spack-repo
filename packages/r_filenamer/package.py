@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RFilenamer(RPackage):
 	cran = "filenamer" 
 
 	version("0.2.3", md5="405f2a494eabbb2bcc324e76b7f35d2f")
-

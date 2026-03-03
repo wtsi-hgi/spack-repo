@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Test (IAT) Data
 	cran = "IATanalytics" 
 
 	version("0.1.1", md5="eb30e127cd6136ac0e043518b6cadd90")
-

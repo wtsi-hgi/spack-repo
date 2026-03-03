@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMissplot(RPackage):
 	cran = "Missplot" 
 
 	version("0.1.0", md5="238a158f0f6d0400ef8335a1596ad0dc")
-

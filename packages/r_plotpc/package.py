@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RPlotpc(RPackage):
 	cran = "plotpc" 
 
 	version("1.0.4", md5="4eded1a9022c0cdbc69984dae1f35f96")
-

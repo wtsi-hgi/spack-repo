@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RAsynchlong(RPackage):
 	cran = "AsynchLong" 
 
 	version("2.3", md5="577e83599a2ca2fe997855b1c83a2d70")
-

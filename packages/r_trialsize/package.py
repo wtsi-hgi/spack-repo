@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Calculation in Clinical Research
 	cran = "TrialSize" 
 
 	version("1.4", md5="a8eb70718f9685ccda505bd9aa4b4b1d")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RGridbezier(RPackage):
 	cran = "gridBezier" 
 
 	version("1.1-1", md5="bac1bc7044f38d0fa7741d2420a2592d")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RPbmcapply(RPackage):
 	cran = "pbmcapply" 
 
 	version("1.5.1", md5="23eabe886b2305e4790e3425d1f57e3c")
-

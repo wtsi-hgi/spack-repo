@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ without Normality Assumption
 	cran = "ConfIntVariance" 
 
 	version("1.0.2", md5="9c92748bb0e4743570d628964cd19e31")
-

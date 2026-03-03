@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ Frames with Factors
 	cran = "cmahalanobis" 
 
 	version("0.1.0", md5="572ca87f8683171d8639a83895d1cd3d")
-

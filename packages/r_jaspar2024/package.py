@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RJaspar2024(RPackage):
 
 	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))
-

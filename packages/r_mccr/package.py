@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMccr(RPackage):
 	cran = "mccr" 
 
 	version("0.4.4", md5="a6ddb76aa886511378c5ef8209ea0b1b")
-

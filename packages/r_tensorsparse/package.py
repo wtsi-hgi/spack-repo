@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RTensorsparse(RPackage):
 	cran = "tensorsparse" 
 
 	version("3.0", md5="e88b0f0317b9e1b26bcf6440d2c7d3a8")
-

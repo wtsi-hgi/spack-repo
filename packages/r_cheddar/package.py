@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RCheddar(RPackage):
 	cran = "cheddar" 
 
 	version("0.1-638", md5="d7a318899c2d311d8721d856c7c12d71")
-

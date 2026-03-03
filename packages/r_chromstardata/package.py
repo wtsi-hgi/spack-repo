@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RChromstardata(RPackage):
 	version("1.28.0", md5="7f4a965a6b5aa71874a5cca39046cabf")
 
 	depends_on("r@3.3:", type=("build", "run"))
-

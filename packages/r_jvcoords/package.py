@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -26,4 +27,3 @@ class RJvcoords(RPackage):
 	cran = "jvcoords" 
 
 	version("1.0.3", md5="9c10d757249958601e198597afc1a359")
-

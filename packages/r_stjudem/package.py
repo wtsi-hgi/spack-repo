@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RStjudem(RPackage):
 	version("1.42.0", md5="4c6868a60726df51408834a227e551bf")
 
 	depends_on("r@2.10:", type=("build", "run"))
-

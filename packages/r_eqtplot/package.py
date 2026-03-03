@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -39,4 +40,3 @@ class REqtplot(RPackage):
     depends_on("r-ggplotify", type=("build", "run"))
     depends_on("r-ldheatmap", type=("build", "run"))
     depends_on("r-viridislite", type=("build", "run"))
-

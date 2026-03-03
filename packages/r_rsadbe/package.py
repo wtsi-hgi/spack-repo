@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ by Example"
 	cran = "RSADBE" 
 
 	version("1.0", md5="7995e46d06ecd2b48eb0ff242a886e02")
-

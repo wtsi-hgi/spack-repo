@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ Time
 	cran = "fixedTimeEvents" 
 
 	version("1.0.1", md5="9707e4584dd958a80fa5b7d4b5885bbe")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ Curves
 	cran = "titrationCurves" 
 
 	version("0.1.0", md5="42ff3398668d5159b9b0221b5c1d04d9")
-

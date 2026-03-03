@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.generic import Package
 from spack.package import *
 
 class Failpls(Package):
@@ -12,4 +13,3 @@ class Failpls(Package):
     git = "https://github.com/satijalab/azimuth/"
 
     version("0.4.6", tag="v0.4.6")
-

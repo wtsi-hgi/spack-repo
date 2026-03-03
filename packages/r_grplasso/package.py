@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RGrplasso(RPackage):
 	cran = "grplasso" 
 
 	version("0.4-7", md5="7ab430cab104114dc292f217fbc6eddc")
-

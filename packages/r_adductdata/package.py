@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RAdductdata(RPackage):
 	depends_on("r@3.6:", type=("build", "run"))
 	depends_on("r-experimenthub@1.9:", type=("build", "run"))
 	depends_on("r-annotationhub@2.13.10:", type=("build", "run"))
-

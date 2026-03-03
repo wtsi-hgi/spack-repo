@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RKaphom(RPackage):
 	cran = "kaphom" 
 
 	version("0.3", md5="0ddfe6dc73bb7819a645483687668a48")
-

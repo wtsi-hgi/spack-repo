@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class ROsat(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OSAT_1.50.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OSAT/OSAT_1.50.0.tar.gz"]
 
 	version("1.50.0", md5="64bba183cfa8a211960d891cb5ee3ddb")
-

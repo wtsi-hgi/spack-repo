@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RUnnest(RPackage):
 	cran = "unnest" 
 
 	version("0.0.5", md5="5cecb5f63160e9846004fbc38ad662ac")
-

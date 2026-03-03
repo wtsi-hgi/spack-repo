@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCrank(RPackage):
 	cran = "crank" 
 
 	version("1.1-2", md5="f0c8635c47dcae52ee249cdac17dfce8")
-

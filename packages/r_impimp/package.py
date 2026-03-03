@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RImpimp(RPackage):
 	cran = "impimp" 
 
 	version("0.3.1", md5="8422843174f0a6c9c185fb7316216a72")
-

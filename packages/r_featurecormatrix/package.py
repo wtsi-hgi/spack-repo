@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RFeaturecormatrix(RPackage):
 	cran = "featureCorMatrix" 
 
 	version("0.4.0", md5="33c06248a9af71d5cb8f93c783ce2882")
-

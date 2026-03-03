@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Single-Slot and Multi-Slot Base Distributions
 	cran = "RegressionFactory" 
 
 	version("0.7.4", md5="848f1fb550fc72b402c49fe9644f0f55")
-

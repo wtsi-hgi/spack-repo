@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSensitivitycasecontrol(RPackage):
 	cran = "SensitivityCaseControl" 
 
 	version("2.2", md5="940e190aefa9db25cec3ee34e46a4333")
-

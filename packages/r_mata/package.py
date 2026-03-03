@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ Distribution
 	cran = "MATA" 
 
 	version("0.7.1", md5="3cebc514ae0072019afe03831088b0e4")
-

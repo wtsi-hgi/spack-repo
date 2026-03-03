@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCcm(RPackage):
 	cran = "CCM" 
 
 	version("1.2", md5="216dcdb72ed6ccf6db3082d9cd2cc7d6")
-

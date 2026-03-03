@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RRscontract(RPackage):
 	cran = "rscontract" 
 
 	version("0.1.2", md5="34be70ffb559b71dabe91915ab706368")
-

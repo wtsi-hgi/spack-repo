@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RTestdriver(RPackage):
 	cran = "testDriveR" 
 
 	version("0.5.2", md5="d5ab8aa699f3bb3ff537626f54381c34")
-

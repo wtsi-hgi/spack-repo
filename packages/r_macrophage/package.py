@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RMacrophage(RPackage):
 	version("1.18.0", md5="5f83cf12d699a285cd228119b1d95cf0")
 
 	depends_on("r@3.5:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RToscmask(RPackage):
 	cran = "toscmask" 
 
 	version("1.2.3", md5="cdb574fc22e5def897b7c5d5566d1014")
-

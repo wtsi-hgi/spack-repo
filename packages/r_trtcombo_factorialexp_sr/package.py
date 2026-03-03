@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Factorial Experiment
 	cran = "TrtCombo.FactorialExp.SR" 
 
 	version("4.0.4", md5="2b27a449acfee9f888d9f66a86380bf4")
-

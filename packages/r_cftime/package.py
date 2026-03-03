@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class RCftime(RPackage):
 
 	version("1.3.0", md5="1b0fe20341dfc1801c49dd14a35fe6b6")
 	version("1.2.0", md5="b1a54ebaaa86b2757c85f6f3fcaddfee")
-

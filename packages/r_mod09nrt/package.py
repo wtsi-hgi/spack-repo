@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ NRT
 	cran = "mod09nrt" 
 
 	version("0.14", md5="2cd9640e01490c5b4481847a56e81368")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RTapkee(RPackage):
 	cran = "tapkee" 
 
 	version("1.2", md5="6942045145670833ee2c062d6df8fb56")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Linear Dynamical Systems
 	cran = "EMLI" 
 
 	version("0.2.0", md5="eec8a65c49f159c98b6362b712db8aef")
-

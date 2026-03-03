@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RBrq(RPackage):
 	cran = "Brq" 
 
 	version("3.0", md5="9fc79668a2566635ff4c91d5a79eaef2")
-

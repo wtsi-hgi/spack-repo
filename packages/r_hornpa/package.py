@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RHornpa(RPackage):
 	cran = "hornpa" 
 
 	version("1.1.0", md5="b553c4a2800995606fbc4b13ef2910ba")
-

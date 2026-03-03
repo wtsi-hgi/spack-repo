@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCombinatorics(RPackage):
 	cran = "combinatorics" 
 
 	version("0.1.0", md5="0022265fef23a96dfbe4294d38d2b9b9")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RQvcalc(RPackage):
 	cran = "qvcalc" 
 
 	version("1.0.3", md5="2494a818e5a13b2d8b4b7f6c7e3fe8bb")
-

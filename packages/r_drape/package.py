@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RDrape(RPackage):
 	cran = "drape" 
 
 	version("0.0.1", md5="e5a3582435bbd1bdf82e8e7670a3fe3a")
-

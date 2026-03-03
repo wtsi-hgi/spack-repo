@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAstrofns(RPackage):
 	cran = "astroFns" 
 
 	version("4.2-1", md5="830e3cfc12dce69aa8ba245be6df9563")
-

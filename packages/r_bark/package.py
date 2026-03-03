@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -28,4 +29,3 @@ class RBark(RPackage):
 	cran = "bark" 
 
 	version("1.0.4", md5="4a7e5bfc4096b922ada0850bc4cda0ac")
-

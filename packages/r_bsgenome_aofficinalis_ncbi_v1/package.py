@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomeAofficinalisNcbiV1(RPackage):
 	version("1.0.0", md5="3f8fd13e74eee63895a5ef528004b60b", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Aofficinalis.NCBI.V1_1.0.0.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

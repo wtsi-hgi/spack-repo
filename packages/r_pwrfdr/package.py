@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -27,4 +28,3 @@ class RPwrfdr(RPackage):
 	cran = "pwrFDR" 
 
 	version("2.8.9", md5="ee53ddb31d7e02898a733e9fd76c829d")
-

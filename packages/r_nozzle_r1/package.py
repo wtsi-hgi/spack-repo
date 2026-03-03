@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RNozzleR1(RPackage):
 	cran = "Nozzle.R1" 
 
 	version("1.1-1.1", md5="284892dbc261f1e919855a99e20b06ca", url="https://cran.r-project.org/src/contrib/Nozzle.R1_1.1-1.1.tar.gz")
-

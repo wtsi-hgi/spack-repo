@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RPrettygraphs(RPackage):
 	cran = "prettyGraphs" 
 
 	version("2.1.6", md5="b11858ac7131c3fe23fe9760c3b711f0")
-

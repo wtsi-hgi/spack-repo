@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,5 +18,4 @@ class RHivcdnavantwout03(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HIVcDNAvantWout03_1.42.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/HIVcDNAvantWout03/HIVcDNAvantWout03_1.42.0.tar.gz"]
 
 	version("1.42.0", md5="4936f53bb66cdf1983a8bcbcd667a188", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/HIVcDNAvantWout03_1.42.0.tar.gz")
-
 

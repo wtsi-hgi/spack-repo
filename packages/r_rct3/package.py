@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RRct3(RPackage):
 	cran = "rct3" 
 
 	version("1.0.4", md5="f8799e0bcc0173015c5cc8d82b38c45b", url="https://cran.r-project.org/src/contrib/rct3_1.0.4.tar.gz")
-

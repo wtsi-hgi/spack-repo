@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RAlbopictus(RPackage):
 	cran = "albopictus" 
 
 	version("0.5", md5="d0c2cd7889ae7b8d3114d813aebb8605")
-

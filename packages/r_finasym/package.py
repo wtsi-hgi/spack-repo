@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ computes the probability of informed trading
 	cran = "FinAsym" 
 
 	version("1.0", md5="67a27d2bd10bf4dc59d63d88aa09351e")
-

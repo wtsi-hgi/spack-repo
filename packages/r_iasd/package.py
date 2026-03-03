@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RIasd(RPackage):
 	cran = "IASD" 
 
 	version("1.1.1", md5="216cdfe0c10493c9c324dbf7522355dc")
-

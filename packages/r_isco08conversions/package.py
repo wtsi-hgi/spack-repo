@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RIsco08conversions(RPackage):
 	cran = "ISCO08ConveRsions" 
 
 	version("0.2.0", md5="dd6683b65f791bb05759032c846035a8")
-

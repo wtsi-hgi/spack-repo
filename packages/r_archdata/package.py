@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RArchdata(RPackage):
 	cran = "archdata" 
 
 	version("1.2-1", md5="521e8c471b0eab62fc92dd6d500c4de5")
-

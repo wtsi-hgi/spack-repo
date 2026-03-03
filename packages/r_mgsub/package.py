@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RMgsub(RPackage):
 	cran = "mgsub" 
 
 	version("1.7.3", md5="1e204bdcd5b82c12f9cc0ebdd9bc3621")
-

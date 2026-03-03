@@ -1,3 +1,4 @@
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class PyEzdxf(PythonPackage):
     depends_on("py-typing-extensions@4.6:", type=("build", "run"))
     depends_on("py-pyparsing@2.0.1:", type=("build", "run"))
     depends_on("py-fonttools", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomeHsapiensUcscHg18(RPackage):
 	version("1.3.1000", md5="51bb2e1ed4009860bb21aaac32fffd9c", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Hsapiens.UCSC.hg18_1.3.1000.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

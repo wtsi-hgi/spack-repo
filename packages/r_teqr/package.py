@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RTeqr(RPackage):
 	cran = "TEQR" 
 
 	version("6.0-0", md5="0a606cada5c624b3de90c03f39af92fe")
-

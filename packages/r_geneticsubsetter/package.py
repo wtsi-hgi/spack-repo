@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RGeneticsubsetter(RPackage):
 	cran = "GeneticSubsetter" 
 
 	version("0.8", md5="844f7e0587a70c4ae11ea3e4b4a6bc1b")
-

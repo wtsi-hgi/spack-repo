@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RBaseq(RPackage):
 	cran = "baseq" 
 
 	version("0.1.4", md5="b6672ad3c68aab7a5ace2c680f863292")
-

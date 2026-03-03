@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSapevom(RPackage):
 	cran = "sapevom" 
 
 	version("0.2.0", md5="1f09e804018b2746f9c7ec305bf0fce5")
-

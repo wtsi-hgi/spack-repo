@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RDixontest(RPackage):
 	cran = "dixonTest" 
 
 	version("1.0.4", md5="3f0dfa902dc3f22986b729f500f9ac63")
-

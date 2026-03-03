@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ isotonic regression curves
 	cran = "OrdMonReg" 
 
 	version("1.0.3", md5="544320e7e3891f45ddb48d6c11975e2c")
-

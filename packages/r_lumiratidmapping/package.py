@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RLumiratidmapping(RPackage):
 	depends_on("r@2.7:", type=("build", "run"))
 	depends_on("r-lumi@1.7.14:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
-

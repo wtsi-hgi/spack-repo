@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RPortion(RPackage):
 	cran = "portion" 
 
 	version("0.1.0", md5="9f52dce62df09b02db6dad46c6c33e95")
-

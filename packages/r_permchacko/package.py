@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RPermchacko(RPackage):
 	cran = "permChacko" 
 
 	version("0.2.0", md5="621803422e8d6e25f6d35eb8fe561bef")
-

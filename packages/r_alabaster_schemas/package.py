@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RAlabasterSchemas(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/alabaster.schemas_1.2.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/alabaster.schemas/alabaster.schemas_1.2.0.tar.gz"]
 
 	version("1.2.0", md5="308883d85ab416d45eaa55428463d308")
-

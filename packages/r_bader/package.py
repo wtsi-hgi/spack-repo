@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RBader(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BADER_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BADER/BADER_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="10d4e5e231ff178df7922078024f9d89")
-

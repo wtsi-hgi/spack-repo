@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RRefset(RPackage):
 	cran = "refset" 
 
 	version("0.1.1", md5="303c7612b69bf588a3cc9d0d56923494")
-

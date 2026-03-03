@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Composite Quantile Correlation
 	cran = "QCSIS" 
 
 	version("0.1", md5="23d614bef225f6180e4c335a1fc24197")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RDym(RPackage):
 	cran = "DYM" 
 
 	version("0.2", md5="ff50ae8da415bd963d91945456bab687")
-

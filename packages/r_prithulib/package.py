@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RPrithulib(RPackage):
 	cran = "prithulib" 
 
 	version("1.0.2", md5="62087827bc7e7e641d546cd750a9fde0")
-

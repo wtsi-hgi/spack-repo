@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RPipeliner(RPackage):
 	cran = "pipeliner" 
 
 	version("0.1.1", md5="2dd4968610b5aabc4ca3018bff083659")
-

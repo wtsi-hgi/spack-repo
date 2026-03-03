@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RPlasmodiumanophelescdf(RPackage):
 	version("2.18.0", md5="54c5c326977d6358c40cacf34cb2aca2")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
-

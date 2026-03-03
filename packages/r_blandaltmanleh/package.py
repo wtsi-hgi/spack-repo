@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RBlandaltmanleh(RPackage):
 	cran = "BlandAltmanLeh" 
 
 	version("0.3.1", md5="50d200b7bd2d9634112aaa9e49effd2d")
-

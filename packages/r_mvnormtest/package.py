@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RMvnormtest(RPackage):
 
 	version("0.1-9-3", md5="5040046e51bee05b6191e1abff06875d")
 	version("0.1-9", md5="e5960fbfc0e69797eec01c16fe74ecb7")
-

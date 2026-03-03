@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Data
 	cran = "longCatEDA" 
 
 	version("0.31", md5="73427449976bdd3c22dfbf26d0f7e4a7")
-

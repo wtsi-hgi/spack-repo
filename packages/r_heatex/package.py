@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RHeatex(RPackage):
 	cran = "heatex" 
 
 	version("1.0", md5="cee9eb3173af1dd48284d428bacb526d")
-

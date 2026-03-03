@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RNlroot(RPackage):
 	cran = "NLRoot" 
 
 	version("1.0", md5="b904d8b6679fd0917467e46e9cb23f4b")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RCaribou(RPackage):
 	cran = "caribou" 
 
 	version("1.1-1", md5="8e5ab7e4549b1f866c9232e73a8260e8")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RFingerprint(RPackage):
 	cran = "fingerprint" 
 
 	version("3.5.7", md5="9f3ce05294da928bc745ad06e562a709")
-

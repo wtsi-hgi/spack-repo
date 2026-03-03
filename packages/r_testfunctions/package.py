@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ Optimization and Emulation Algorithms
 	cran = "TestFunctions" 
 
 	version("0.2.1", md5="273fbd96aa6d68cf4f151804520bbf87")
-

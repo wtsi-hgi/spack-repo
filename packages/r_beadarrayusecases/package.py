@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RBeadarrayusecases(RPackage):
 	depends_on("r-beadarray@2.3.18:", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))
 	depends_on("r-geoquery", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Sessions
 	cran = "RPMG" 
 
 	version("2.2-7", md5="e2d6622e786f2704235fc960d6efd6f0")
-

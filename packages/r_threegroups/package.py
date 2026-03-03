@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Experiments
 	cran = "ThreeGroups" 
 
 	version("0.21", md5="1a5ac5d24d0d5cbbbd025ca36e0c8ad6")
-

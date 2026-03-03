@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RSeqalloc(RPackage):
 	cran = "SeqAlloc" 
 
 	version("1.0", md5="80a2865cfbaf5e46edcecd0146a724e9")
-

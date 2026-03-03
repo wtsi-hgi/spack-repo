@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMinsample1(RPackage):
 	cran = "minsample1" 
 
 	version("0.1.0", md5="e0b462dcc22ed7fd92d6ef071173fffe", url="https://cran.r-project.org/src/contrib/minsample1_0.1.0.tar.gz")
-

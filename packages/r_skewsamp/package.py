@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ Distributions
 	cran = "skewsamp" 
 
 	version("1.0.0", md5="dbf1f51068a3c4778c8bcf5a33f51570")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Structures
 	cran = "CorBin" 
 
 	version("1.0.0", md5="91150d4d5e81f9fb31fc3ac9d82f611c")
-

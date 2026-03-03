@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMinirand(RPackage):
 	cran = "Minirand" 
 
 	version("0.1.3", md5="2f15e2a62badfa7c76c23ea76b5c8104")
-

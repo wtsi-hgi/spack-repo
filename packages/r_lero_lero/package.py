@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RLeroLero(RPackage):
 	cran = "lero.lero" 
 
 	version("0.2", md5="122700702e30ba3e453be947a07c96cb")
-

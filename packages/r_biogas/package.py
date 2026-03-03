@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RBiogas(RPackage):
 	cran = "biogas" 
 
 	version("1.23.2", md5="a5011e46785ab49f8e99e17b422b7c2c")
-

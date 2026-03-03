@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,5 +17,4 @@ class RWes1kgWugsc(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/WES.1KG.WUGSC_1.34.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/WES.1KG.WUGSC/WES.1KG.WUGSC_1.34.0.tar.gz"]
 
 	version("1.34.0", md5="a0a3d230e27342090638ec4868756e5a")
-
 

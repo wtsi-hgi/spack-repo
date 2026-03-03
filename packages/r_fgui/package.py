@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RFgui(RPackage):
 	cran = "fgui" 
 
 	version("1.0-8", md5="a83dd8acdd54766b070a82001cbf7cae")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RLogofgamma(RPackage):
 	cran = "logOfGamma" 
 
 	version("0.0.1", md5="b80d9222219087be95f98f0506437d04")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RMgl(RPackage):
 	cran = "MGL" 
 
 	version("1.1", md5="be5aa08871551b827779907bb5d5ff8f")
-

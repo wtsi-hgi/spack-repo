@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -26,4 +27,3 @@ class RIbfs(RPackage):
 	cran = "IBFS" 
 
 	version("1.0.0", md5="4316142bf7d5b319696b5b18161871b6")
-

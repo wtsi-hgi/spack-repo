@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Regression
 	cran = "SiER" 
 
 	version("0.1.0", md5="a2908a934b39cb64a2ad50acbe964b1d")
-

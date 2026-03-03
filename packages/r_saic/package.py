@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RSaic(RPackage):
 	cran = "sAIC" 
 
 	version("1.0.1", md5="b215f9d4ee5a035646090f1f2e5fbae1")
-

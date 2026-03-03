@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -35,4 +36,3 @@ class RFrbs(RPackage):
 	cran = "frbs" 
 
 	version("3.2-0", md5="f58f112585984e5ae14d88b568f0a514")
-

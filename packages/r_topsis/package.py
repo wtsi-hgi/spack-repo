@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RTopsis(RPackage):
 	cran = "topsis" 
 
 	version("1.0", md5="07515a51f6f5ca430beca94e75f2ac08")
-

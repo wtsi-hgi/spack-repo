@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCge(RPackage):
 	cran = "CGE" 
 
 	version("0.3.3", md5="259a5531f76f6597d3d23f7fc5fb9555")
-

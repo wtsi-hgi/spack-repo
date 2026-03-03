@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class RLocationgamer(RPackage):
 	cran = "locationgamer" 
 
 	version("0.1.0", md5="be09f0cefda7f83bcb7e67648f03fd80")
-

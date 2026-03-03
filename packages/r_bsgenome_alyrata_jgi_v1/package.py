@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomeAlyrataJgiV1(RPackage):
 	version("1.0.1", md5="64878499c633de66ccf4c5abc32c0aeb", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Alyrata.JGI.v1_1.0.1.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

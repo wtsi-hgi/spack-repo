@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RBiodem(RPackage):
 	cran = "Biodem" 
 
 	version("0.5", md5="e2b27e4db89cd4e3deb32819549581f2")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Formula
 	cran = "kStatistics" 
 
 	version("2.1.1", md5="37496a5f5b6aa734971618635d4f6696")
-

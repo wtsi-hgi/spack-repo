@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RHightr(RPackage):
 	cran = "hightR" 
 
 	version("0.3.0", md5="1338db33a9ec2902d72f511010bc4ffc")
-

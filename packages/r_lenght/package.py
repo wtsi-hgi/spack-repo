@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RLenght(RPackage):
 	cran = "lenght" 
 
 	version("0.1.0", md5="0e7c98e93699640ec8d44de1d1d50ff8")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RBinom(RPackage):
 	cran = "binom" 
 
 	version("1.1-1.1", md5="6d9cbf4fa0fe82414417f2286d1007b5")
-

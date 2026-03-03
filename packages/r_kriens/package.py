@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RKriens(RPackage):
 	cran = "kriens" 
 
 	version("0.1", md5="1a5e86e0b7e0042cf59fe364b09b8d81")
-

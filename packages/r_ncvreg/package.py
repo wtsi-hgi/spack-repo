@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ Models
 	cran = "ncvreg" 
 
 	version("3.14.1", md5="cc1cd8336eb2a48cb59020dcdc459011")
-

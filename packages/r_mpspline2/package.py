@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RMpspline2(RPackage):
 	cran = "mpspline2" 
 
 	version("0.1.6", md5="05e5030238c9201ff4cc5b0826281f7d", url="https://cran.r-project.org/src/contrib/mpspline2_0.1.6.tar.gz")
-

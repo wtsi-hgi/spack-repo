@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RNptest(RPackage):
 	cran = "nptest" 
 
 	version("1.1", md5="3cd3c38a279e6afc5e2cdf51c88584bd")
-

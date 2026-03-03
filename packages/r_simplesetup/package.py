@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RSimplesetup(RPackage):
 	cran = "simpleSetup" 
 
 	version("0.1.0", md5="972c574afd992fbdfb24ea2f11d10193")
-

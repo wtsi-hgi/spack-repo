@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Continuous Data
 	cran = "mix" 
 
 	version("1.0-11", md5="a903261bb37381c9a82efa5754426920")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ Functions
 	cran = "rBeta2009" 
 
 	version("1.0", md5="38000662ab8b2318b24447ca0bfa984b", url="https://cran.r-project.org/src/contrib/rBeta2009_1.0.tar.gz")
-

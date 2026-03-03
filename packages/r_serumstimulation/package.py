@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RSerumstimulation(RPackage):
 	version("1.38.0", md5="4d3f1a4e58f500d7e424eef0b22c05ad")
 
 	depends_on("r@2.10:", type=("build", "run"))
-

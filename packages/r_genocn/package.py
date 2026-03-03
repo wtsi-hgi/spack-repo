@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RGenocn(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/genoCN_1.54.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/genoCN/genoCN_1.54.0.tar.gz"]
 
 	version("1.54.0", md5="ebc7fc5cb3b5c2bcd98718a7bcd95d6a")
-

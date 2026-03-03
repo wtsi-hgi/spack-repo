@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RTitegboin(RPackage):
 	cran = "TITEgBOIN" 
 
 	version("0.3.0", md5="8d0c15a04f7f40393e04cdf650aeb7e4")
-

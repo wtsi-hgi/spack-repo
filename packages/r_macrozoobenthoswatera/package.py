@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMacrozoobenthoswatera(RPackage):
 	cran = "MacroZooBenthosWaterA" 
 
 	version("0.1.0", md5="89c7f8311797a06e4b51de428d6054aa")
-

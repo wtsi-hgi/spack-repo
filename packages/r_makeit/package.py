@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RMakeit(RPackage):
 	cran = "makeit" 
 
 	version("1.0.1", md5="6b0292de41ec1e319ff28db1e93f035c")
-

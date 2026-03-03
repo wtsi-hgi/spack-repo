@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ Selected Variables
 	cran = "wNNSel" 
 
 	version("0.1", md5="423c0f56961d3c42e66ddff055641d83")
-

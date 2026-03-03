@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSupportBws2(RPackage):
 	cran = "support.BWS2" 
 
 	version("0.4-0", md5="f38ebb902bc5cbb304d095d374be5b87", url="https://cran.r-project.org/src/contrib/support.BWS2_0.4-0.tar.gz")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Binary Classifiers
 	cran = "CustomerScoringMetrics" 
 
 	version("1.0.0", md5="20f05ce33402f0f97efb4c46e6b89704")
-

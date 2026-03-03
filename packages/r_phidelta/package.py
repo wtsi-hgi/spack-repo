@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RPhidelta(RPackage):
 	cran = "phiDelta" 
 
 	version("1.0.1", md5="ff26c8035521f826234ee58dbc0602bb")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RHadibds(RPackage):
 	cran = "HadIBDs" 
 
 	version("1.0.0", md5="cd4529191c65e14e779adb5786e16a02")
-

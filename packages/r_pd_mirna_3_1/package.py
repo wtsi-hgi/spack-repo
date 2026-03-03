@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RPdMirna31(RPackage):
 	depends_on("r-dbi", type=("build", "run"))
 	depends_on("r-biostrings@2.25.12:", type=("build", "run"))
 	depends_on("r-iranges@1.15.43:", type=("build", "run"))
-

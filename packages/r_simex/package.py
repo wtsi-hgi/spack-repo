@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RSimex(RPackage):
 	cran = "simex" 
 
 	version("1.8", md5="04b100a1b422e5a25398c117573b2e9f")
-

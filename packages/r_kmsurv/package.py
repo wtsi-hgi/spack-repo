@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RKmsurv(RPackage):
 	cran = "KMsurv" 
 
 	version("0.1-5", md5="4979464e3ee73b03891b66e53231b2be")
-

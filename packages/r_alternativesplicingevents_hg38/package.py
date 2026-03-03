@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RAlternativesplicingeventsHg38(RPackage):
 	version("1.1.0", md5="8d49710eebd62fb15a48cab252ff3eca", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/alternativeSplicingEvents.hg38_1.1.0.tar.gz")
 
 	depends_on("r-annotationhub", type=("build", "run"))
-

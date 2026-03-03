@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RCelarefdata(RPackage):
 	version("1.20.0", md5="6864c27f1d574314fe10612b37f6c433")
 
 	depends_on("r@3.5:", type=("build", "run"))
-

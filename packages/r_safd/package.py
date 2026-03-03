@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RSafd(RPackage):
 	cran = "SAFD" 
 
 	version("2.1", md5="28eb29d11b33de09829a5ba37930364e")
-

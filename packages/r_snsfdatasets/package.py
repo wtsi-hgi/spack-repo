@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RSnsfdatasets(RPackage):
 	cran = "SNSFdatasets" 
 
 	version("0.1.1", md5="0a65d9497567787dd7ff7b5483c644cf")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ A New Functional Approach
 	cran = "DISTRIB" 
 
 	version("1.0", md5="3b752cf4bf2280099ce129648f4a43d0")
-

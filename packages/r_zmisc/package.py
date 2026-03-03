@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RZmisc(RPackage):
 	cran = "zmisc" 
 
 	version("0.2.3", md5="55f1a7179aae849204826de37bb72b83")
-

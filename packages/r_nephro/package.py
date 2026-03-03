@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RNephro(RPackage):
 	cran = "nephro" 
 
 	version("1.4", md5="9988d55bddbadae6313cfd4cc5a50235")
-

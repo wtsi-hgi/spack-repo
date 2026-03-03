@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ Functions, Calculates Extinction Coefficients
 	cran = "RLeafAngle" 
 
 	version("1.0", md5="f35a499eafe696fcbd81898a25e0f367")
-

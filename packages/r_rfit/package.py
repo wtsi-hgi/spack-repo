@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RRfit(RPackage):
 	cran = "Rfit" 
 
 	version("0.24.6", md5="ea52854410d99124abc8b45fae7c5781")
-

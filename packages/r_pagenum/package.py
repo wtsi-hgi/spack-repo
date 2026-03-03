@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RPagenum(RPackage):
 	cran = "pagenum" 
 
 	version("1.2", md5="e7c0f18a397782133a41b9314ce8ca5e")
-

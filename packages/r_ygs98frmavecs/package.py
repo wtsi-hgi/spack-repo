@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RYgs98frmavecs(RPackage):
 	version("1.3.0", md5="e78c8447eb381b91dafb2f9688da39dc")
 
 	depends_on("r@2.10:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RMbend(RPackage):
 	cran = "mbend" 
 
 	version("1.3.1", md5="88b2866e9b1b0bde9e4ad74c404cbfcf")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -26,4 +27,3 @@ networks using Petri Nets
 	cran = "bioPN" 
 
 	version("1.2.0", md5="a6686916274879a55ed249883f08b4ad")
-

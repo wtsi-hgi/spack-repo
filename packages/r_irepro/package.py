@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RIrepro(RPackage):
 	cran = "iRepro" 
 
 	version("1.2", md5="6008c094f230434ca05134b135f3e9c3")
-

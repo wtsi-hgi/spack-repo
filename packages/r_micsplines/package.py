@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Least-Squares Estimates
 	cran = "MICsplines" 
 
 	version("1.0", md5="2163b6d49cae0c921bd426def1049fdc")
-

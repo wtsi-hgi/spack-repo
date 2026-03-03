@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RReadmnist(RPackage):
 	cran = "readmnist" 
 
 	version("1.0.6", md5="bc44e81b322da5e5cfea30b9226a0587")
-

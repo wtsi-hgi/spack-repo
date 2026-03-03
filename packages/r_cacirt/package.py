@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Theory
 	cran = "cacIRT" 
 
 	version("1.4", md5="4013a70aaa23567a4451ca84b8c7b7d1")
-

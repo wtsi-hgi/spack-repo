@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 import os
 
@@ -21,4 +22,3 @@ class PyBinarymap(PythonPackage):
     depends_on("py-pandas@1.2:", type=("build", "run"))
     depends_on("py-scipy@1.1:", type=("build", "run"))
     depends_on("py-natsort@0.8:", type=("build", "run"))
-

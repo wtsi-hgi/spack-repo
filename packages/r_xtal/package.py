@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RXtal(RPackage):
 	cran = "xtal" 
 
 	version("1.15", md5="62d9654238e8ee85b5faa166b09bc3f5")
-

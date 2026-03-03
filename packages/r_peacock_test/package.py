@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RPeacockTest(RPackage):
 	cran = "Peacock.test" 
 
 	version("1.0", md5="18a5351a54dbbe23e0839bc26397d449")
-

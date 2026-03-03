@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -53,4 +54,3 @@ class RSpatiallibd(RPackage):
 	depends_on("r-edger", type=("build", "run"))
 	depends_on("r-limma", type=("build", "run"))
 	depends_on("r-statmod", type=("build", "run"))
-

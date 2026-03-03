@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RGlasso(RPackage):
 	cran = "glasso" 
 
 	version("1.11", md5="f0b42c09df8d4845624821cb2d017f45")
-

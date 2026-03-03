@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ Factors
 	cran = "woeBinning" 
 
 	version("0.1.6", md5="47a521518385cdda07fd3ff42d519c49")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RHiddenmarkov(RPackage):
 	cran = "HiddenMarkov" 
 
 	version("1.8-13", md5="6ee706a6f6a95ef1fab017ff9d1c7f3b")
-

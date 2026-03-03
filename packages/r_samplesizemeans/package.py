@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RSamplesizemeans(RPackage):
 	cran = "SampleSizeMeans" 
 
 	version("1.2.3", md5="eb89cfe03bbcfe550ef34c883403fdee")
-

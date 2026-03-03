@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RMlf(RPackage):
 	cran = "mlf" 
 
 	version("1.2.1", md5="acd7a9f2b2e9e94db0d6347e94dad1cc")
-

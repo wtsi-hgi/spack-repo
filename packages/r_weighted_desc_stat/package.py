@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RWeightedDescStat(RPackage):
 	cran = "Weighted.Desc.Stat" 
 
 	version("1.0", md5="2c4b3bbaca172e1e454e857920bcb82e")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RSamplingbigdata(RPackage):
 	cran = "SamplingBigData" 
 
 	version("1.0.0", md5="1e4d5950613d6023a0c9e9116f027ef0")
-

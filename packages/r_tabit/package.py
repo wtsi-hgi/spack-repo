@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RTabit(RPackage):
 	cran = "tabit" 
 
 	version("0.2.1", md5="242653bd0044a42a225a22e50a2740e9")
-

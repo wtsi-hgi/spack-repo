@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RSparsepp(RPackage):
 	cran = "sparsepp" 
 
 	version("1.22", md5="acae427ddab03835fadfd3e283f18caf")
-

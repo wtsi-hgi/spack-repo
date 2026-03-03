@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RMize(RPackage):
 	cran = "mize" 
 
 	version("0.2.4", md5="12d0e79fc61f6f4a751092f84df0e055")
-

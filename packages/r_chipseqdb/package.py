@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,5 +18,4 @@ class RChipseqdb(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/workflows/src/contrib/chipseqDB_1.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/workflows/src/contrib/Archive/chipseqDB/chipseqDB_1.26.0.tar.gz"]
 
 	version("1.26.0", md5="5337080bfb457f5bb9754b4a5a2a1c88")
-
 

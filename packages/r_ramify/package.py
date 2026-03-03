@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RRamify(RPackage):
 	cran = "ramify" 
 
 	version("0.3.3", md5="f75289f6bb01962acb2fedc7159ba250")
-

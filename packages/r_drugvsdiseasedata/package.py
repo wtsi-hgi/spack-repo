@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RDrugvsdiseasedata(RPackage):
 	version("1.38.0", md5="40b800653aab57e822a18afe5bd1a2e7")
 
 	depends_on("r@2.10:", type=("build", "run"))
-

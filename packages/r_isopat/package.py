@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RIsopat(RPackage):
 	cran = "isopat" 
 
 	version("1.0", md5="d83b7c1cea03eb4dfd2d60664e62d656")
-

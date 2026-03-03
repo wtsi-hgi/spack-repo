@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -30,4 +31,3 @@ class REmmixmfa(RPackage):
 	cran = "EMMIXmfa" 
 
 	version("2.0.14", md5="58cccb97855729864c2b74be475ed848")
-

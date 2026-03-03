@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RHgu95av2(RPackage):
 	version("2.2.0", md5="b92585c0f43e91bd1abd234b9465a6a7", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/hgu95av2_2.2.0.tar.gz")
 
 	depends_on("r@2.4:", type=("build", "run"))
-

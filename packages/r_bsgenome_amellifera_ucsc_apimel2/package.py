@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomeAmelliferaUcscApimel2(RPackage):
 	version("1.4.0", md5="436ddf54868906e7d1135369d41a2ffe", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Amellifera.UCSC.apiMel2_1.4.0.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

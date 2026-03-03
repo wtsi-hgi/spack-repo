@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RSkellam(RPackage):
 
 	version("0.2.3", md5="325675bc249419f55e119f4b431b49b7")
 	version("0.2.0", md5="e345942d5ccbfb718f08a4affe78d93a")
-

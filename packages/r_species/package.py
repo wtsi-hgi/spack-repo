@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSpecies(RPackage):
 	cran = "SPECIES" 
 
 	version("1.1.4", md5="6a267f8dcf705dce05585a14bdee6616")
-

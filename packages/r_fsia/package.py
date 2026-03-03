@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RFsia(RPackage):
 	cran = "fsia" 
 
 	version("1.1.1", md5="d8def48ae54dc31790d0db6392c29f68")
-

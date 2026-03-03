@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -47,4 +48,3 @@ class RMvsusier(RPackage):
     depends_on("r-microbenchmark", type=("build", "run"))
     depends_on("r-knitr", type=("build", "run"))
     depends_on("r-rmarkdown", type=("build", "run"))
-

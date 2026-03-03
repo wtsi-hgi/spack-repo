@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RDunnTest(RPackage):
 	cran = "dunn.test" 
 
 	version("1.3.5", md5="766dd9c2342ce7efadad6da433cbec14")
-

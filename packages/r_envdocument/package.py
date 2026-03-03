@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class REnvdocument(RPackage):
 	cran = "envDocument" 
 
 	version("2.4.1", md5="344d5760dcc650a5d6536fa3bdf9ba1c")
-

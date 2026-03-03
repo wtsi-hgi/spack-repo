@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSlhd(RPackage):
 	cran = "SLHD" 
 
 	version("2.1-1", md5="439b94c763161c56302c730a32cd39af")
-

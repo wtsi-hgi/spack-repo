@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RKrls(RPackage):
 	cran = "KRLS" 
 
 	version("1.0-0", md5="0ba21c2428ae9ef0991d652e260fdc3c")
-

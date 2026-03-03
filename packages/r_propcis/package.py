@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RPropcis(RPackage):
 	cran = "PropCIs" 
 
 	version("0.3-0", md5="4840669d4cf4c3d6a42fa6142d2e1450")
-

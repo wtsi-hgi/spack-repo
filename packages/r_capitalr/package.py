@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Amortization Schedules
 	cran = "capitalR" 
 
 	version("1.3.0", md5="572e9437019ba451beb51b605dfc2a52")
-

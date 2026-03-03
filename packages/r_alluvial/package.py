@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RAlluvial(RPackage):
 	cran = "alluvial" 
 
 	version("0.1-2", md5="7666ad9699dd92f470499b62a70c2c8a")
-

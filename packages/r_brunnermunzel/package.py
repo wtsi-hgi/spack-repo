@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RBrunnermunzel(RPackage):
 	cran = "brunnermunzel" 
 
 	version("2.0", md5="519ce1a742391d9031c4ed61ff1c7737")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ Session
 	cran = "librarysnapshot" 
 
 	version("0.1.2", md5="d2b793e1aa360fc386a87047e54bf0d6")
-

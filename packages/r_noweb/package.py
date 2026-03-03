@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RNoweb(RPackage):
 	cran = "noweb" 
 
 	version("1.1-4", md5="b69ff503cebc0536b012d265205bd5b3")
-

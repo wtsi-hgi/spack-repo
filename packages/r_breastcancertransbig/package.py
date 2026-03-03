@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RBreastcancertransbig(RPackage):
 	version("1.40.0", md5="170d89ddd3e554da50a0b2b5d040a96e")
 
 	depends_on("r@2.5:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RRecords(RPackage):
 	cran = "Records" 
 
 	version("1.0", md5="fab26b8f99b1c97bccf9aebfc91ad3fe")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCoconut(RPackage):
 	cran = "COCONUT" 
 
 	version("1.0.2", md5="14399abc50481cb7309b028cecd8e0f6")
-

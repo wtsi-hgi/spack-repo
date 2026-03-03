@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class PyDemultiplex(PythonPackage):
     depends_on("py-jit-open@1.0.1", type=("build", "run"))
     depends_on("py-fastools@1.1.0", type=("build", "run"))
     depends_on("py-dict-trie@1.0.1", type=("build", "run"))
-

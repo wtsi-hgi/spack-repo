@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class RPdAtdschipTiling(RPackage):
 	depends_on("r-biostrings@2.21.11:", type=("build", "run"))
 	depends_on("r-iranges@1.11.31:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
-

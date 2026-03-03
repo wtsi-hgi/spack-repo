@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RIterator(RPackage):
 	cran = "iteratoR" 
 
 	version("0.1.1", md5="9e1ff3c0eb97471fcb6925e58e6919d3")
-

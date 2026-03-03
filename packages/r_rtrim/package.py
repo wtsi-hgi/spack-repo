@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RRtrim(RPackage):
 	cran = "rtrim" 
 
 	version("2.1.1", md5="432c3e42dd89beb210648986a46c6e4b")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Studies
 	cran = "UBCRM" 
 
 	version("1.0.2", md5="857853001c2804d4a671fdc4c3e8fb50")
-

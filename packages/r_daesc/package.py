@@ -1,3 +1,4 @@
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -29,4 +30,3 @@ class RDaesc(RPackage):
         depends_on("r-aod")
         depends_on("r-statmod")
         depends_on("r-numderiv")
-

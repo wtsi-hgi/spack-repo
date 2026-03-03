@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomeTgondiiToxodb70(RPackage):
 	version("0.99.1", md5="f67644d1a897fe2ff4139832d4ceaf80", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Tgondii.ToxoDB.7.0_0.99.1.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

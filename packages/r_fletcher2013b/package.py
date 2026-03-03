@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RFletcher2013b(RPackage):
 	depends_on("r-reder@1.8.1:", type=("build", "run"))
 	depends_on("r-igraph", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))
-

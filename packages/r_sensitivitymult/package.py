@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Outcomes
 	cran = "sensitivitymult" 
 
 	version("1.0.2", md5="f57c379ef8946e25abc6a9c68cc97db4")
-

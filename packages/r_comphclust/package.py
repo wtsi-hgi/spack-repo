@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RComphclust(RPackage):
 	cran = "compHclust" 
 
 	version("1.0-3", md5="24fcabb4da2e83a88515aa3cf12664e8")
-

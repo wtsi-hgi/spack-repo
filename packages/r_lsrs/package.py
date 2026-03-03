@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RLsrs(RPackage):
 	cran = "LSRS" 
 
 	version("0.2.0", md5="00d6f513bac044761bad39877af7daa6")
-

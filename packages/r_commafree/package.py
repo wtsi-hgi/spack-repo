@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RCommafree(RPackage):
 	cran = "commafree" 
 
 	version("0.1.0", md5="0afb58c8f2448e6823eefd84af873816")
-

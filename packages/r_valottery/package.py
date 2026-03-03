@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RValottery(RPackage):
 	cran = "valottery" 
 
 	version("0.0.1", md5="41dcde66027cc4af384c408981a8475a")
-

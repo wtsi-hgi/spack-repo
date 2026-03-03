@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RCuratedadipoarray(RPackage):
 	version("1.14.0", md5="109be77c099e9d7b6da437577f619a54")
 
 	depends_on("r@4:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RFraction(RPackage):
 	cran = "FRACTION" 
 
 	version("1.1.1", md5="726fbb6fe6e0f3ab4872cbd6037084a4")
-

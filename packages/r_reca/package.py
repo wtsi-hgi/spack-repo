@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ Learning
 	cran = "RECA" 
 
 	version("1.7", md5="63c9a66621d9a94ac7b45fec575c4fe7")
-

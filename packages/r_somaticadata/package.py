@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RSomaticadata(RPackage):
 	version("1.40.0", md5="31d9100d6b5fa5f95c59eda9995f2684")
 
 	depends_on("r@2.14:", type=("build", "run"))
-

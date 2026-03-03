@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ Relational Data
 	cran = "eigenmodel" 
 
 	version("1.11", md5="530e52dd3cad43259c438c6c1d4397d1")
-

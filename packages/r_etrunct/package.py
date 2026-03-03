@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class REtrunct(RPackage):
 	cran = "etrunct" 
 
 	version("0.1", md5="3cbbc3b93874a20f653c2216cbc95030")
-

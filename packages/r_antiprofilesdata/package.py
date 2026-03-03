@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RAntiprofilesdata(RPackage):
 	version("1.38.0", md5="dc40c00fb296b31cf65369e801d6f2f8")
 
 	depends_on("r-biobase", type=("build", "run"))
-

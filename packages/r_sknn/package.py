@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSknn(RPackage):
 	cran = "SKNN" 
 
 	version("3.1", md5="2f863e4d298a47e73f5b47fcfd9abd21")
-

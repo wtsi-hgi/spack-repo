@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Want Them
 	cran = "precisePlacement" 
 
 	version("0.1.0", md5="f1fb419d061e3de2e1af58e7b9f1f04e")
-

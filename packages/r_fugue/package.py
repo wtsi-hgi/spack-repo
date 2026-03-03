@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RFugue(RPackage):
 	cran = "fugue" 
 
 	version("0.1.7", md5="95c4dc949cf918d38b845827214f5036")
-

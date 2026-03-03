@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RModelc(RPackage):
 	cran = "modelc" 
 
 	version("1.0.0.0", md5="e07e02f417849f25fb1ac32475bcc390")
-

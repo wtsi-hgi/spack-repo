@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomeCelegansUcscCe11(RPackage):
 	version("1.4.2", md5="b80e24149a0c6ed323d0c9a6d112ef52", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Celegans.UCSC.ce11_1.4.2.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

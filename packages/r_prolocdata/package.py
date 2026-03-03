@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RProlocdata(RPackage):
 	depends_on("r@3.6.3:", type=("build", "run"))
 	depends_on("r-msnbase", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))
-

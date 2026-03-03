@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RRlt(RPackage):
 	cran = "RLT" 
 
 	version("3.2.6", md5="e2d8a50974e5d250f76b358c39da8077")
-

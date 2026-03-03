@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSemiestimate(RPackage):
 	cran = "SemiEstimate" 
 
 	version("1.1.3", md5="e70e93c120e3d57ebffade1ed7d0503d")
-

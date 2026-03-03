@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ User-Defined Continuous) Copulas
 	cran = "acopula" 
 
 	version("0.9.4", md5="912c850bcba7e3960cf46764467bf0ef")
-

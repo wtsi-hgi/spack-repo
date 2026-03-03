@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RWriteSnns(RPackage):
 	cran = "write.snns" 
 
 	version("0.0-4.2", md5="ab2cdf49956f1dd0e201ff643926c01b")
-

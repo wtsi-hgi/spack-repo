@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RFlagr(RPackage):
 	cran = "flagr" 
 
 	version("0.3.2", md5="63ce686d95373f0230d561d5b17f18fe")
-

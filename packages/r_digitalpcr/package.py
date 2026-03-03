@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RDigitalpcr(RPackage):
 	cran = "digitalPCR" 
 
 	version("1.1.0", md5="857d1d898f8d41e27e06e5a18c2a834e")
-

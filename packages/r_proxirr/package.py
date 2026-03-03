@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RProxirr(RPackage):
 	cran = "proxirr" 
 
 	version("0.4", md5="3e4384b49a4abb5858f69c3b716ec9cb")
-

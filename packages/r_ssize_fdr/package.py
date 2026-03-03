@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSsizeFdr(RPackage):
 	cran = "ssize.fdr" 
 
 	version("1.3", md5="eb75bd49e86ed03412340e4ba51fc89b")
-

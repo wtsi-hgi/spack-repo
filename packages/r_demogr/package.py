@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RDemogr(RPackage):
 	cran = "demogR" 
 
 	version("0.6.0", md5="7b21de430418f7ab6da8d05fa50b28bc")
-

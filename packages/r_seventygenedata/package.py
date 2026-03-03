@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RSeventygenedata(RPackage):
 	version("1.38.2", md5="20fbac8869adfe019eeef340a209da1d")
 
 	depends_on("r@2.13:", type=("build", "run"))
-

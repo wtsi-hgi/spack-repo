@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RBatchscr(RPackage):
 	cran = "batchscr" 
 
 	version("0.1.0", md5="dca74e130eb8826f01ea5bf94c0387d6")
-

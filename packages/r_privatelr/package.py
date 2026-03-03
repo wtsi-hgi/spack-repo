@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RPrivatelr(RPackage):
 	cran = "PrivateLR" 
 
 	version("1.2-22", md5="638f1a8c266bedee42ddfb31423d3bbe")
-

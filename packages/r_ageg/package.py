@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAgeg(RPackage):
 	cran = "ageg" 
 
 	version("1.0.0", md5="44a75ed9b652b3fb9a2aa3e6d19ab874")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RYeastrnaseq(RPackage):
 	version("0.40.0", md5="2344deacf993b96e1709ad96b710471f")
 
 	depends_on("r@2.4:", type=("build", "run"))
-

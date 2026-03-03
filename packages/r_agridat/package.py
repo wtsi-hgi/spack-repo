@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RAgridat(RPackage):
 	cran = "agridat" 
 
 	version("1.23", md5="ecc5d3574494bd1cdc1236f70fcec023")
-

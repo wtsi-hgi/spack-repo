@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Dirichlet-Process Prior
 	cran = "DIRECT" 
 
 	version("1.1.0", md5="3836df0a0a09e09cd9075386b60b75ab")
-

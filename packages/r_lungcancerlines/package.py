@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RLungcancerlines(RPackage):
 	version("0.40.0", md5="17b67ca0eac14ef832832b949972b277")
 
 	depends_on("r-rsamtools", type=("build", "run"))
-

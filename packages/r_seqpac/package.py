@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -39,4 +40,3 @@ class RSeqpac(RPackage):
 	depends_on("r-rtracklayer@1.38.3:", type=("build", "run"))
 	depends_on("r-stringr@1.4:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RDotenv(RPackage):
 	cran = "dotenv" 
 
 	version("1.0.3", md5="dd185743606b11664edf3d8f6f177429")
-

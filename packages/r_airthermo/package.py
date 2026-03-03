@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAirthermo(RPackage):
 	cran = "aiRthermo" 
 
 	version("1.2.1", md5="6f9b62383d4f2d63073d441acdae8c2b")
-

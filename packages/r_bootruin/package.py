@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Risk Process
 	cran = "bootruin" 
 
 	version("1.2-4", md5="a735e6e88b9f400317c90fa0292f9ea3")
-

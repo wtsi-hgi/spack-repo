@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomeVviniferaUrgiIggp8x(RPackage):
 	version("0.1", md5="fccaf60e5c9352b9c454f7a8ecac2a20")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

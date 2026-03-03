@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RInterva4(RPackage):
 	cran = "InterVA4" 
 
 	version("1.7.6", md5="22d90d747e28e12beca450e6ea07bd85", url="https://cran.r-project.org/src/contrib/InterVA4_1.7.6.tar.gz")
-

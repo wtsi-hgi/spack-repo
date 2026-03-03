@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RMpfe(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/MPFE_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/MPFE/MPFE_1.38.0.tar.gz"]
 
 	version("1.38.0", md5="4f86c179f9bc43d1e16295df91c07cb8")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RColorr(RPackage):
 	cran = "colorr" 
 
 	version("1.0.0", md5="6f71aca61cc256dd0ae16af40a144a5d")
-

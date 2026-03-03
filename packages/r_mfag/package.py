@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMfag(RPackage):
 	cran = "MFAg" 
 
 	version("1.9", md5="db8b836d099e3b01dba5688a6d9feae5")
-

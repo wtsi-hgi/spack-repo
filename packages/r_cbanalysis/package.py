@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCbanalysis(RPackage):
 	cran = "cbanalysis" 
 
 	version("0.2.0", md5="39d4e5ef22f184713b622170dc13e80b")
-

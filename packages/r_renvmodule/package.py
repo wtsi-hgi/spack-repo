@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ for Unix
 	cran = "RenvModule" 
 
 	version("1.1", md5="d4914815b90d379595ce624ae4850343")
-

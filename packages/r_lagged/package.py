@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RLagged(RPackage):
 	cran = "lagged" 
 
 	version("0.3.2", md5="92fe0d5243e9159639d690a427d6dbc7")
-

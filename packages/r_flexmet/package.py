@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ Polynomial Item Response Model
 	cran = "flexmet" 
 
 	version("1.1", md5="8f7ab117563d583afe09a3bd148f683d")
-

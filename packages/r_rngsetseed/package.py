@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RRngsetseed(RPackage):
 	cran = "rngSetSeed" 
 
 	version("0.3-3", md5="6710697b4dd1e2a3811264c70c642901")
-

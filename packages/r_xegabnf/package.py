@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -32,4 +33,3 @@ Object
 	cran = "xegaBNF" 
 
 	version("1.0.0.0", md5="a7c0269f9ae8d3d7647c755712cb98b7")
-

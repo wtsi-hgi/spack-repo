@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RComparetests(RPackage):
 	cran = "CompareTests" 
 
 	version("1.2", md5="0a55bc17f788c176428b3f6e0cd3dfed")
-

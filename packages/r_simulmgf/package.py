@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RSimulmgf(RPackage):
 	cran = "simulMGF" 
 
 	version("0.1.1", md5="45fd9577f03d055ccc7b3dd2a60bf4c1")
-

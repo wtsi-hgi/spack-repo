@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Likelihood Estimation
 	cran = "LFDR.MLE" 
 
 	version("1.0.1", md5="0be7b44b2fa2a49e203bb33179b1f5e0")
-

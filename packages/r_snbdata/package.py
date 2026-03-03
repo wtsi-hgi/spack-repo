@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RSnbdata(RPackage):
 	cran = "SNBdata" 
 
 	version("0.2.1", md5="fc24cdd45f5d8086767fbcac8a2d1a02")
-

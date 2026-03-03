@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RDorothea(RPackage):
 	depends_on("r-magrittr", type=("build", "run"))
 	depends_on("r-bcellviper", type=("build", "run"))
 	depends_on("r-decoupler", type=("build", "run"))
-

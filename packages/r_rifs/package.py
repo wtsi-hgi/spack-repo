@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RRifs(RPackage):
 	cran = "RIFS" 
 
 	version("0.1.6", md5="3752d4d83a8da5f120de00ee4d9e36d9")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RFortunes(RPackage):
 	cran = "fortunes" 
 
 	version("1.5-4", md5="6084d3ba4c97ec8ed015231caa369c75")
-

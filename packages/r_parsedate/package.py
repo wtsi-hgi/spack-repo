@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RParsedate(RPackage):
 	cran = "parsedate" 
 
 	version("1.3.1", md5="94e2cf16a36da1786ee0cba3cd4889e3")
-

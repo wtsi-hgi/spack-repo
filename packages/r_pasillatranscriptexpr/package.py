@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RPasillatranscriptexpr(RPackage):
 	version("1.30.0", md5="7d1d8c852fff7d80c11e8ab79dae7487")
 
 	depends_on("r@3.3:", type=("build", "run"))
-

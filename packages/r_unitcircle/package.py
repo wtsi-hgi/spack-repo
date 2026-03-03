@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RUnitcircle(RPackage):
 	cran = "UnitCircle" 
 
 	version("0.1.3", md5="ba4258596d1d172f6b745bef08177aa3")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RBigassertr(RPackage):
 	cran = "bigassertr" 
 
 	version("0.1.6", md5="117e5596df34dc306881809960c2233d")
-

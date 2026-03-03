@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ Angles, Quaternions, and Euler Vectors
 	cran = "RSpincalc" 
 
 	version("1.0.2", md5="46901af3d98dc3e7247b39371d5320bf")
-

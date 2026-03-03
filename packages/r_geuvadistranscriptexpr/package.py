@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RGeuvadistranscriptexpr(RPackage):
 	version("1.30.0", md5="806de22bef0659a3b6f9db122d87a1d6")
 
 	depends_on("r@3.5:", type=("build", "run"))
-

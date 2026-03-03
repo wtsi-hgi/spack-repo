@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RJacpop(RPackage):
 	cran = "jacpop" 
 
 	version("0.6", md5="e7193a66190c39377b7a10b7cbb36240")
-

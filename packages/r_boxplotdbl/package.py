@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RBoxplotdbl(RPackage):
 	cran = "boxplotdbl" 
 
 	version("1.4.0", md5="4c4055fd42d721beebc3952020a8c782")
-

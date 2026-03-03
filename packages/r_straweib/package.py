@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RStraweib(RPackage):
 	cran = "straweib" 
 
 	version("1.1", md5="6e6ffc8e77c20d3bda939e0eb7b2d05e")
-

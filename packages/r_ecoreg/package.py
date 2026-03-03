@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class REcoreg(RPackage):
 	cran = "ecoreg" 
 
 	version("0.2.4", md5="f39cf562d1e6e85a3af109a96695f7fc")
-

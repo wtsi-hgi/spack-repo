@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -28,4 +29,3 @@ Setups
 	cran = "bandsfdp" 
 
 	version("1.1.0", md5="0d12eb774310c1abce9b13228873accd")
-

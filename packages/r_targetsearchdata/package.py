@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,5 +18,4 @@ class RTargetsearchdata(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/TargetSearchData_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/TargetSearchData/TargetSearchData_1.40.0.tar.gz"]
 
 	version("1.40.0", md5="96bbec70706d8adcf4ee321261620d79")
-
 

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMatskew(RPackage):
 	cran = "MatSkew" 
 
 	version("0.1.5", md5="2a1dd20c7904d4641ecb71c29ad0dffe")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RCon2lki(RPackage):
 	cran = "con2lki" 
 
 	version("0.1.0", md5="bd162f7c55b701fb331b20b0802e492b")
-

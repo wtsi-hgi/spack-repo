@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -30,4 +31,3 @@ class RSequencing(RPackage):
 	depends_on("r-annotationhub", type=("build", "run"))
 	depends_on("r-bsgenome-hsapiens-ucsc-hg19", type=("build", "run"))
 	depends_on("r-rnaseqdata-hnrnpc-bam-chr14", type=("build", "run"))
-

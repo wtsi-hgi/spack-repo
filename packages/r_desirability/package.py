@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RDesirability(RPackage):
 	cran = "desirability" 
 
 	version("2.1", md5="6597122db76d97f04c66556d66bbd2d5")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RDgof(RPackage):
 	cran = "dgof" 
 
 	version("1.4", md5="d1fd678118c39e29637a68bf298e6e72")
-

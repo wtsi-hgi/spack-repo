@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RStoichcalc(RPackage):
 	cran = "stoichcalc" 
 
 	version("1.1-5", md5="95bdcac54f7efae8804b9107b951ed8e")
-

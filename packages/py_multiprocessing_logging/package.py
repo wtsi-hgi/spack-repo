@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class PyMultiprocessingLogging(PythonPackage):
 	version("0.3.2", sha256="dac775c8ca423291acd6623d2c72e2dfa7e9e596a22749afdae47eb5176e8616", expand=False, url="https://files.pythonhosted.org/packages/56/0e/0b4fb251e3b509d84a3806a40c57ec31889bae6f3605a369ac9728bab8ce/multiprocessing_logging-0.3.2-py2.py3-none-any.whl")
 	version("0.3.3", sha256="c6f634b288495383597944d53baf6e511afe8cbb34753a9dd177dc2343e2d3ab", expand=False, url="https://files.pythonhosted.org/packages/19/5b/4efe65bcf7a9d0cda56912b4cf12647aad505a99325f0f56698b2d5e747a/multiprocessing_logging-0.3.3-py2.py3-none-any.whl")
 	version("0.3.4", sha256="8a5be02b02edbd6fa6e3e89499af7680db69db9e2d8707fcd28d445fa248f23e", expand=False, url="https://files.pythonhosted.org/packages/9e/fe/32bd864bcb604b0607924a4cf618ed267a0ef21ac9c3e255109256046e1f/multiprocessing_logging-0.3.4-py2.py3-none-any.whl")
-

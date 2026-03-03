@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RProccalibrad(RPackage):
 	cran = "proccalibrad" 
 
 	version("0.14", md5="e1de4baf7bd8c849d0460c90787ecf51")
-

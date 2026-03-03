@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RRandomizebe(RPackage):
 	cran = "randomizeBE" 
 
 	version("0.3-6", md5="86753f5dcd8d0498d44fbb19a32a5353")
-

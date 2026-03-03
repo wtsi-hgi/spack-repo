@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class REnsurer(RPackage):
 	cran = "ensurer" 
 
 	version("1.1", md5="0f3ea28ed5b5276143f126737fb116fa")
-

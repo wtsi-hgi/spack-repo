@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMhda(RPackage):
 	cran = "MHDA" 
 
 	version("1.2", md5="6d6578d9790259b3bbcea47d3f0f5a77")
-

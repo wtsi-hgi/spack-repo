@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RNieve(RPackage):
 	cran = "nieve" 
 
 	version("0.1.3", md5="ec889a6adfc7699e564b67964dcc2843")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RRmargint(RPackage):
 	cran = "rmargint" 
 
 	version("2.0.3", md5="da734fab37bb94d3962ef81bb78bf1ed")
-

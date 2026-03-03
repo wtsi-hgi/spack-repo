@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RIsatabr(RPackage):
 	cran = "isatabr" 
 
 	version("1.0.1", md5="f1f138feac031b5e616590927ad5a607")
-

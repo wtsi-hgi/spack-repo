@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RWrappr(RPackage):
 	cran = "wrappr" 
 
 	version("0.1.0", md5="2f8dfdbf97fb329bd6a32fac274630e0")
-

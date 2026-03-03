@@ -1,3 +1,4 @@
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RAncestrypainter(RPackage):
 
     # DESCRIPTION imports only base 'graphics'; no extra R packages needed.
     depends_on("r@3.5.0:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ Pearson System
 	cran = "PearsonICA" 
 
 	version("1.2-5", md5="12ff994eef4ba7b37170f5de4d9734e1")
-

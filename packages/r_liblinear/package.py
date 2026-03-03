@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -30,4 +31,3 @@ class RLiblinear(RPackage):
 	cran = "LiblineaR" 
 
 	version("2.10-23", md5="d273f6ac41fba1e7a32e3938f26c433d")
-

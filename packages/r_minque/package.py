@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMinque(RPackage):
 	cran = "minque" 
 
 	version("2.0.0", md5="63f874f5aa9cdbd56c840f1259e49bbe")
-

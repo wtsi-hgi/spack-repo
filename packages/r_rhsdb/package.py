@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RRhsdb(RPackage):
 	cran = "RHSDB" 
 
 	version("0.2.0", md5="c58042023a9c835602f985a8c588ee25")
-

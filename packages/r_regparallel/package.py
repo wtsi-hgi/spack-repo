@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class RRegparallel(RPackage):
 	depends_on("r-stringr", type=("build", "run"))
 	depends_on("r-survival", type=("build", "run"))
 	depends_on("r-arm", type=("build", "run"))
-

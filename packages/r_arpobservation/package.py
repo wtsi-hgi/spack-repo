@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ Procedures Based on Alternating Renewal Processes
 	cran = "ARPobservation" 
 
 	version("1.2.2", md5="b1c02e89ef79019904d680909f4236bd")
-

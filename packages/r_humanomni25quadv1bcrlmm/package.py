@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,5 +17,4 @@ class RHumanomni25quadv1bcrlmm(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/humanomni25quadv1bCrlmm_1.0.2.tar.gz", "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/humanomni25quadv1bCrlmm/humanomni25quadv1bCrlmm_1.0.2.tar.gz"]
 
 	version("1.0.2", md5="2ee1fa7bf712d7f81a167079c975d49f")
-
 

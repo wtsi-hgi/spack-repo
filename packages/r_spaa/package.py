@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RSpaa(RPackage):
 	cran = "spaa" 
 
 	version("0.2.2", md5="129371cf0d3212cfc06152660606c5de")
-

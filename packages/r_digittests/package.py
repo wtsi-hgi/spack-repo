@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RDigittests(RPackage):
 	cran = "digitTests" 
 
 	version("0.1.2", md5="042939d50f5a96f5298d77069167d227")
-

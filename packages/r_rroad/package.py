@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RRroad(RPackage):
 	cran = "rroad" 
 
 	version("0.0.5", md5="9cab265438ed1963c879429b1c5bef20")
-

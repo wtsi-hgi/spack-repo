@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RPnwcolors(RPackage):
 	cran = "PNWColors" 
 
 	version("0.1.0", md5="84bb4e680513f39af17d5a9f2e3d9c61")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ Imputation
 	cran = "sbgcop" 
 
 	version("0.980", md5="1bbc7851bf08d8e25737cbcbed0801f9")
-

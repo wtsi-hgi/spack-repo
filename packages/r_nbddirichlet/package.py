@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Research
 	cran = "NBDdirichlet" 
 
 	version("1.4", md5="388e4e4786faf6432e8b76b05c9dfb75")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Algorithm Found in MINPACK, Plus Support for Bounds
 	cran = "minpack.lm" 
 
 	version("1.2-4", md5="f1cda9e2b12e4a6e3ea63c165642797e")
-

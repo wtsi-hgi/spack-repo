@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -28,4 +29,3 @@ Goodness-of-Fit
 	cran = "SetTest" 
 
 	version("0.2.0", md5="0ccf38517ce6270b2e510f081913c39f")
-

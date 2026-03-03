@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ Series
 	cran = "tempdisagg" 
 
 	version("1.1.1", md5="a10c05099510b9a4bb444024dc87e56a")
-

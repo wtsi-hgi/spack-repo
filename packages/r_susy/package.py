@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RSusy(RPackage):
 	cran = "SUSY" 
 
 	version("0.1.0", md5="f31dbd91b4f363feffd95995c63d1bd6")
-

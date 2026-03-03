@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,5 +18,4 @@ class RRnaseqdataHnrnpcBamChr14(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RNAseqData.HNRNPC.bam.chr14_0.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/RNAseqData.HNRNPC.bam.chr14/RNAseqData.HNRNPC.bam.chr14_0.40.0.tar.gz"]
 
 	version("0.40.0", md5="9bfb7faf3c8770b15f3cf15bb670162d", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/RNAseqData.HNRNPC.bam.chr14_0.40.0.tar.gz")
-
 

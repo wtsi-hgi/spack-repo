@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RPmmltransformations(RPackage):
 	cran = "pmmlTransformations" 
 
 	version("1.3.3", md5="f3057df6f847e13c063f8715550ac0e5")
-

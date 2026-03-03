@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RClustercrit(RPackage):
 	cran = "clusterCrit" 
 
 	version("1.3.0", md5="29e3fc066da888a43bfedb048d932e12")
-

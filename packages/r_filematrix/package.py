@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -26,4 +27,3 @@ class RFilematrix(RPackage):
 	cran = "filematrix" 
 
 	version("1.3", md5="cfa4f4793c89ea6d8d4a09792e9ca2fa")
-

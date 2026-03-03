@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RKere(RPackage):
 	cran = "KERE" 
 
 	version("1.0.0", md5="8e8db35bde696d4e8134a3ccfc8e3717")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMsSev(RPackage):
 	cran = "ms.sev" 
 
 	version("1.0.4", md5="8d8d89811ab5ddeac1d7c028e8f0274b")
-

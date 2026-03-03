@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RNic(RPackage):
 	cran = "nic" 
 
 	version("0.0.2", md5="bf73cffa471fb680264d92612bab7ab4")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAllspice(RPackage):
 	cran = "Allspice" 
 
 	version("1.0.7", md5="cc3a0e9b60b5bb8c86b8686a90b44be7")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -29,4 +30,3 @@ Ecosystem Toolbox
 	cran = "gadget2" 
 
 	version("2.3.11", md5="439fbb4050d6be4a57bd4c5f30af0959", url="https://cran.r-project.org/src/contrib/gadget2_2.3.11.tar.gz")
-

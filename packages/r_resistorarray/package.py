@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RResistorarray(RPackage):
 	cran = "ResistorArray" 
 
 	version("1.0-32", md5="493943d684f5627dbbf7898d73b1430c")
-

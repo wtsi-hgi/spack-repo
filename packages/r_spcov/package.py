@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RSpcov(RPackage):
 	cran = "spcov" 
 
 	version("1.3", md5="0648d330faa1164150737f6e1f6fa493")
-

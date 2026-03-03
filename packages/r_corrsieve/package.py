@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RCorrsieve(RPackage):
 	cran = "corrsieve" 
 
 	version("1.6-9", md5="9e8c2a323795f996aff9bb8082b87e17")
-

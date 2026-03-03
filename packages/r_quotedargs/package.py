@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RQuotedargs(RPackage):
 	cran = "quotedargs" 
 
 	version("0.1.3", md5="0d32b9270bf1e6f1e159a5625e6b69c7")
-

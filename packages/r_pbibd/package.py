@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RPbibd(RPackage):
 	cran = "PBIBD" 
 
 	version("1.3", md5="0ccf08310cca5d5143e7f536a9de184e")
-

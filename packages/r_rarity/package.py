@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Species
 	cran = "Rarity" 
 
 	version("1.3-8", md5="cae640452055a28493520c7890abe190")
-

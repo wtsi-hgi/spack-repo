@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RHumanchrloc(RPackage):
 	version("2.1.6", md5="113450c0822000c9b4e8a0141cf4b819")
 
 	depends_on("r@2.7:", type=("build", "run"))
-

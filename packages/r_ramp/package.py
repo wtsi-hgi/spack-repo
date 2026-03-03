@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RRamp(RPackage):
 	cran = "RAMP" 
 
 	version("2.0.2", md5="556708ad09c1a74186497e80467294ca")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ options
 	cran = "OptHedging" 
 
 	version("1.0", md5="306ae095575f2ff37c404da9605e4344")
-

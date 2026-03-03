@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RSamplesize(RPackage):
 	cran = "samplesize" 
 
 	version("0.2-4", md5="677040dd543d2bd107793c5bc21b816c")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RRandgeo(RPackage):
 	cran = "randgeo" 
 
 	version("0.3.0", md5="e12bbdd394b8fcbd65eabf7e89cf17d7")
-

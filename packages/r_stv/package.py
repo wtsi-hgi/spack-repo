@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RStv(RPackage):
 	cran = "STV" 
 
 	version("1.0.2", md5="fcd8b6bc4cba97e63b4e0b9d856e4e56")
-

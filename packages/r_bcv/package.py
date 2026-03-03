@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RBcv(RPackage):
 	cran = "bcv" 
 
 	version("1.0.2", md5="06b9609e2a068f4adb4ab47228df69a6")
-

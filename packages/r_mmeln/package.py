@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RMmeln(RPackage):
 	cran = "mmeln" 
 
 	version("1.5", md5="fa0edb37c943600bed9ac063f536e3dd")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RGwrpvr(RPackage):
 	cran = "gwrpvr" 
 
 	version("1.0", md5="37d72a783f9d10fcc024bcbc42e83ba6")
-

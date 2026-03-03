@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RRmosek(RPackage):
 	cran = "Rmosek" 
 
 	version("1.3.5", md5="f20d7ce06492ceaeadd0053d8eaf8a26")
-

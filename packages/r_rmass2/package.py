@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ for 2 Groups
 	cran = "rmass2" 
 
 	version("0.0.0.2", md5="39a8baa0c6c6f2f2f154243e43bd7044", url="https://cran.r-project.org/src/contrib/rmass2_0.0.0.2.tar.gz")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ Scores
 	cran = "TestScorer" 
 
 	version("1.7.2", md5="79385b608c25b448055897116eed9334")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ with Time-to-Event Endpoints and Fixed Follow-Up
 	cran = "futility" 
 
 	version("0.4", md5="cc28d22ab3c52cad6a4545a18dea3a24")
-

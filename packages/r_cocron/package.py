@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RCocron(RPackage):
 	cran = "cocron" 
 
 	version("1.0-1", md5="035ec48950403bb242c36e59d995eaa0")
-

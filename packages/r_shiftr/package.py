@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RShiftr(RPackage):
 	cran = "shiftR" 
 
 	version("1.5", md5="4f3c7a45ca4b7c38680b9e80ba515319")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Measure
 	cran = "ipsfs" 
 
 	version("1.0.0", md5="2a21d10c43eb429e4a7af3c832fa1491")
-

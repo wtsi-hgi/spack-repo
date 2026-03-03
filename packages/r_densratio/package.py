@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RDensratio(RPackage):
 	cran = "densratio" 
 
 	version("0.2.1", md5="bd9dbf12d23fa35dcce6093ae3174864")
-

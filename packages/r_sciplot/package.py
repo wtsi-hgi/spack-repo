@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RSciplot(RPackage):
 	cran = "sciplot" 
 
 	version("1.2-0", md5="4510ec33ecf0da8d371656de67e2db83")
-

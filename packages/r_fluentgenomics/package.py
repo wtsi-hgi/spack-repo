@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RFluentgenomics(RPackage):
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-readr", type=("build", "run"))
-

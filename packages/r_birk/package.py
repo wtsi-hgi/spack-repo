@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RBirk(RPackage):
 	cran = "birk" 
 
 	version("2.1.2", md5="ed20889a3e63164c12f2f5c689d34839")
-

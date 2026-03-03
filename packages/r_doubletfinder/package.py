@@ -1,3 +1,4 @@
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -30,4 +31,3 @@ class RDoubletfinder(RPackage):
         depends_on("r-rocr")
         depends_on("r-seurat")
         depends_on("r-seuratobject")
-

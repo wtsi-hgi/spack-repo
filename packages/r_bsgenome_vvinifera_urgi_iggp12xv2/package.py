@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomeVviniferaUrgiIggp12xv2(RPackage):
 	version("0.1", md5="95472e574ab46327c19e241c381b26a2", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Vvinifera.URGI.IGGP12Xv2_0.1.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

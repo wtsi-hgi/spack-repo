@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RPoibin(RPackage):
 	cran = "poibin" 
 
 	version("1.5", md5="ccb27983b15b6670ae4b454bea9bd0a1")
-

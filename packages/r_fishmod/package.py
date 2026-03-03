@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Log-Normal Models
 	cran = "fishMod" 
 
 	version("0.29", md5="ac6dc16674f459850e7e19760e8beeee")
-

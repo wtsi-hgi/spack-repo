@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RGeneplastDataStringV91(RPackage):
 	version("0.99.6", md5="86433f8489d9228c5ed73e2b75a55398", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/geneplast.data.string.v91_0.99.6.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))
-

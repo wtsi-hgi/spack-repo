@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class RRprobsup(RPackage):
 	cran = "RProbSup" 
 
 	version("3.0", md5="2de14eb65ee2f54b17a62c9a3522a919")
-

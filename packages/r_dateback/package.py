@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ Dependencies
 	cran = "dateback" 
 
 	version("1.0.3", md5="766bf5e2c47ff30b2a2e8f0a12622e38")
-

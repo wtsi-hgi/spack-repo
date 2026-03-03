@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ Hypotheses
 	cran = "BayesianPower" 
 
 	version("0.2.3", md5="25d056cfe62158ca355da9cfd3c6b5b8")
-

@@ -20,6 +20,7 @@
 # See the Spack documentation for more information on packaging.
 # ----------------------------------------------------------------------------
 
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 
 
@@ -47,4 +48,3 @@ class PyYhaplo(PythonPackage):
     depends_on("py-pysam", type=("build", "run"))
     depends_on("py-matplotlib", type=("build", "run"))
     depends_on("py-pyyaml", type=("build", "run"))
-

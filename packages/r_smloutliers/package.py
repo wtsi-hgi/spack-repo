@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSmloutliers(RPackage):
 	cran = "SMLoutliers" 
 
 	version("0.1", md5="a9be14e88e65836b339c9fb4ab69c5f7")
-

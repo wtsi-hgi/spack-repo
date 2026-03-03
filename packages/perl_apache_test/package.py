@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.perl import PerlPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class PerlApacheTest(PerlPackage):
     version("1.41", sha256="38cf60b9d63156a8043b8fc75b1b41132fa35228910e61089e08bb84869ab018")
     version("1.40", sha256="3cf537f1c81deb549d62be7fd5ee1af439283a9e93f3d13465d01a1d41d4ae40")
     version("1.39", sha256="d8543864ff29e8ac3d4004c5c7014b1fe490b2024104ac4c24683a74bba62089")
-

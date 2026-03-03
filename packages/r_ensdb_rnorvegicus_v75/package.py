@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class REnsdbRnorvegicusV75(RPackage):
 	version("2.99.0", md5="40ff53b41aa6fad0d5bd15f9c6f3bad8", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/EnsDb.Rnorvegicus.v75_2.99.0.tar.gz")
 
 	depends_on("r-ensembldb", type=("build", "run"))
-

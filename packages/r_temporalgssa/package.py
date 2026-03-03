@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -34,4 +35,3 @@ Algorithm Generated Datasets
 	cran = "TemporalGSSA" 
 
 	version("1.0.1", md5="9cfda74a46218096eeaf392533099908")
-

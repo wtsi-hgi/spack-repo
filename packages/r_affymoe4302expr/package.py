@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RAffymoe4302expr(RPackage):
 	version("1.40.0", md5="4dcd432d350cf2f8000f67774d95481c")
 
 	depends_on("r@2.10:", type=("build", "run"))
-

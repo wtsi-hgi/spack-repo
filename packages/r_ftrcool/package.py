@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RFtrcool(RPackage):
 	cran = "ftrCOOL" 
 
 	version("2.0.0", md5="0d0beab1a156fcfee545f0e6faa031e3")
-

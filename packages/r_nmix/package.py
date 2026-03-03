@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RNmix(RPackage):
 	cran = "Nmix" 
 
 	version("2.0.5", md5="9db4635ef69cde350f9d6b18d8b07aeb")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RLowrankqp(RPackage):
 	cran = "LowRankQP" 
 
 	version("1.0.6", md5="719952173d35a5053d8d40a6e58dcbf7")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Environments
 	cran = "pretest" 
 
 	version("0.2", md5="aa46904d7e89385cd1db1ef45121e638")
-

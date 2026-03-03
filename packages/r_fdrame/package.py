@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RFdrame(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/fdrame_1.74.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/fdrame/fdrame_1.74.0.tar.gz"]
 
 	version("1.74.0", md5="d7fafba89f784f421a43b4b4d9a10000")
-

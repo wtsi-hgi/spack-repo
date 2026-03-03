@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAmelie(RPackage):
 	cran = "amelie" 
 
 	version("0.2.1", md5="2647d5d2e2cf4cfcded3c77956a85f1b")
-

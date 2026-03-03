@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RBearishtrader(RPackage):
 	cran = "bearishTrader" 
 
 	version("1.0.2", md5="f72b83830a0bff2324c7f232a01d7f74")
-

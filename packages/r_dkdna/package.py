@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RDkdna(RPackage):
 	cran = "dkDNA" 
 
 	version("0.1.1", md5="ea5a0b6ae7bf37eb1fb1b8ed68c70b74")
-

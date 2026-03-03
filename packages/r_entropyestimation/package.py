@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class REntropyestimation(RPackage):
 	cran = "EntropyEstimation" 
 
 	version("1.2", md5="02763a4615dfdf9f89410f663cdfff68")
-

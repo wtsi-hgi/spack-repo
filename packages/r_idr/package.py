@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RIdr(RPackage):
 	cran = "idr" 
 
 	version("1.3", md5="d3fcfef19b12cd9c0867fd607ab7ca5b")
-

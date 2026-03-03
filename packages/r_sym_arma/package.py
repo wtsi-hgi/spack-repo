@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSymArma(RPackage):
 	cran = "sym.arma" 
 
 	version("1.0", md5="9ae1f65c6d5d27e465182f27f239a62d")
-

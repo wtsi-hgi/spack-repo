@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RRcapture(RPackage):
 	cran = "Rcapture" 
 
 	version("1.4-4", md5="2f1d98af31f28b054c0ab61cd7320c86")
-

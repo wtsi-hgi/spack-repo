@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RHomeric(RPackage):
 	cran = "Homeric" 
 
 	version("0.1-3", md5="094a2c86f77765f9cc20936251987218")
-

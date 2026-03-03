@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 import os
 
@@ -40,4 +41,3 @@ class PyAlignparse(PythonPackage):
     depends_on("py-dna-features-viewer", type=("build", "run"))
     depends_on("minimap2", type=("build", "run"))
     depends_on("py-dms-variants", type=("build", "run"))
-

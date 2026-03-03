@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RDtgiw(RPackage):
 	cran = "dtgiw" 
 
 	version("1.0.0", md5="1c363270095363be49b6175a4fb2c5c2")
-

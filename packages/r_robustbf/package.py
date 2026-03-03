@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RRobustbf(RPackage):
 	cran = "RobustBF" 
 
 	version("0.2.0", md5="67cf249e154b9c94696a18f9456e8c05")
-

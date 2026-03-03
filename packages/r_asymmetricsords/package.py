@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAsymmetricsords(RPackage):
 	cran = "AsymmetricSORDs" 
 
 	version("1.0.0", md5="205e0600ad2c1eda8dad8c76b9eb2a53")
-

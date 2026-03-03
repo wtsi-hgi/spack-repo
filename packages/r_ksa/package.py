@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RKsa(RPackage):
 	cran = "KSA" 
 
 	version("0.1.0", md5="473e3985a38a54e67f349dec8af4c42f")
-

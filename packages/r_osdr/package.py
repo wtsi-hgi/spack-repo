@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class ROsdr(RPackage):
 	cran = "OSDR" 
 
 	version("1.1.4", md5="613354e3cd34be986b1dafe395542546")
-

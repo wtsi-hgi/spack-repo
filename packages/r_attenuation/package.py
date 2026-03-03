@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RAttenuation(RPackage):
 	cran = "attenuation" 
 
 	version("1.0.0", md5="788fcff488577dee88485df508b3ed42")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RUnbalhaar(RPackage):
 	cran = "unbalhaar" 
 
 	version("2.1", md5="4239a628abd65a811d1f0705be4baec5")
-

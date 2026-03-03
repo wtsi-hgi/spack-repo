@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RCgal4h(RPackage):
 	cran = "cgal4h" 
 
 	version("0.1.0", md5="a7fdb8aa1079f8a061334d85b5a4ffb6")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RPcse(RPackage):
 	cran = "pcse" 
 
 	version("1.9.1.1", md5="33ba410d5b3bb3302a995305a05e658a")
-

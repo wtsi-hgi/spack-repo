@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Series of Counts
 	cran = "countHMM" 
 
 	version("0.1.0", md5="4f56ef699d7dcdebbc95a3863b295d75")
-

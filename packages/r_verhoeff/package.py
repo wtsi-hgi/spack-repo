@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RVerhoeff(RPackage):
 	cran = "verhoeff" 
 
 	version("0.4.0", md5="3da49f31341fc29043034d236a9a4507")
-

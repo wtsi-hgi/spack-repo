@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class ROddsConverter(RPackage):
 	cran = "odds.converter" 
 
 	version("1.4.8", md5="edd3262c21e6a0aa709f58137132c03b")
-

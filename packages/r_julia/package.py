@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RJulia(RPackage):
 	cran = "Julia" 
 
 	version("1.3.5", md5="f0ae886ec22fd6ec62df8f072e339695")
-

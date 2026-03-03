@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RBsgenomeHsapiensUcscHg19Masked(RPackage):
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-bsgenome", type=("build", "run"))
 	depends_on("r-bsgenome-hsapiens-ucsc-hg19", type=("build", "run"))
-

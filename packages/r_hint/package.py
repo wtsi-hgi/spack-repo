@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ Intersection Distributions
 	cran = "hint" 
 
 	version("0.1-3", md5="54f1cd0822813aa3d4d9f1cb7310e3ad")
-

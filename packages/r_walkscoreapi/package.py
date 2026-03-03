@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class RWalkscoreapi(RPackage):
 	cran = "walkscoreAPI" 
 
 	version("1.2", md5="dec373aa4bd7a8b2ee8ce37204fadccc")
-

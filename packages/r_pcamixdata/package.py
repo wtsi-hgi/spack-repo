@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RPcamixdata(RPackage):
 	cran = "PCAmixdata" 
 
 	version("3.1", md5="71277d8856c757345a6ede5971c2bdfe")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMkmeans(RPackage):
 	cran = "MKMeans" 
 
 	version("2.1", md5="86a1b5964319f4c41740c84a2b00ff75")
-

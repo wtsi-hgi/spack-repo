@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RConake(RPackage):
 	cran = "Conake" 
 
 	version("1.0.1", md5="8636e613e3a2d13d54d72d0281a654eb")
-

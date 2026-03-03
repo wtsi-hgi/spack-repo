@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RUtc(RPackage):
 	cran = "utc" 
 
 	version("0.1.5", md5="13a532d808283bc93e9dd6b909ee1921")
-

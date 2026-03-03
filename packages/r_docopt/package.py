@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RDocopt(RPackage):
 	cran = "docopt" 
 
 	version("0.7.1", md5="97952edaf3093ed9801bd2eb1c557923")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAstrodatr(RPackage):
 	cran = "astrodatR" 
 
 	version("0.1", md5="97f3d6476816a37e2bb7aa9ffbd49eb0")
-

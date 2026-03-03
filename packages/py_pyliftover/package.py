@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class PyPyliftover(PythonPackage):
 	version("0.3", sha256="8feaa3106e55705291feb70bb82be0861d7ba2306911a3ad42ceed1a2df19299")
 	version("0.4", sha256="72bcfb7de907569b0eb75e86c817840365297d63ba43a961da394187e399da41")
 	version("0.4.1", sha256="49ef8938010d2e934abb483d3ef8073897ed6b88bcd978c486c8f7631c24dbc1", expand=False, url="https://files.pythonhosted.org/packages/b1/61/e3afcf369fe45223cfebfbb8cde46d521e2786889c1b3eed01ee08adb626/pyliftover-0.4.1-py3-none-any.whl")
-

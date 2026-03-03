@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class RExpressionnormalizationworkflow(RPackage):
 	depends_on("r-snm@1.12:", type=("build", "run"))
 	depends_on("r-sva@3.10:", type=("build", "run"))
 	depends_on("r-vsn@3.32:", type=("build", "run"))
-

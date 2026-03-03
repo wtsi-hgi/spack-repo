@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RTestequavar(RPackage):
 	cran = "testequavar" 
 
 	version("0.1.5", md5="00d12ac4889a712be9a3205bfcfbf8cc")
-

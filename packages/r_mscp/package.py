@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Adjustment in Moving Sum Processes
 	cran = "mscp" 
 
 	version("1.0", md5="c9d1fee706e1c7a8b702a19893fb6634")
-

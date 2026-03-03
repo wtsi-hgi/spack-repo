@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RComplexnet(RPackage):
 	cran = "complexNet" 
 
 	version("0.2.0", md5="b1b3d44156e17fd4df63c52cd8d8680b")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RInflection(RPackage):
 	cran = "inflection" 
 
 	version("1.3.6", md5="92802bf228a3ce04bb912cde4b4614c5")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RBucss(RPackage):
 	cran = "BUCSS" 
 
 	version("1.2.1", md5="e841ce9b615051e36bf8f9cc283709f5")
-

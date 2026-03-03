@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RSugarcanecdf(RPackage):
 	version("2.18.0", md5="f66d51868068f83d3693d3cb05be418a")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
-

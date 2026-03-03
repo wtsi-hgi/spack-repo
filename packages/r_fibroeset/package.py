@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RFibroeset(RPackage):
 	version("1.44.0", md5="cbc13cc5c4ac4f6445dc69383ad183ff")
 
 	depends_on("r-biobase@2.5.5:", type=("build", "run"))
-

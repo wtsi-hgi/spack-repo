@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RGigrvg(RPackage):
 	cran = "GIGrvg" 
 
 	version("0.8", md5="83d80c24c95406c55f61c48aea888960")
-

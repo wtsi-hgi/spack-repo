@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RGfa(RPackage):
 	cran = "GFA" 
 
 	version("1.0.5", md5="120596244929ae4a15d1266567bc2b75")
-

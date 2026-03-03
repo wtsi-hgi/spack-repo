@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSnvlfdr(RPackage):
 	cran = "SNVLFDR" 
 
 	version("1.0.1", md5="92ca019e38ecf9e446ebe9835ad955d9")
-

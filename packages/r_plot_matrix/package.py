@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RPlotMatrix(RPackage):
 	cran = "plot.matrix" 
 
 	version("1.6.2", md5="27d432a2efba9fa9311436f28d9254ba")
-

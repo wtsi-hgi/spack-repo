@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RInvgamma(RPackage):
 	cran = "invgamma" 
 
 	version("1.1", md5="d47d0e0a48879a43e135e8e98f10ecee")
-

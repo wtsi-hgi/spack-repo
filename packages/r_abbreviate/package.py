@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RAbbreviate(RPackage):
 	cran = "abbreviate" 
 
 	version("0.1", md5="37285eddefb6b0fce95783bf21b32999")
-

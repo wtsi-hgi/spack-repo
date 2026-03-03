@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RBranching(RPackage):
 	cran = "Branching" 
 
 	version("0.9.7", md5="52c49718b9e3e11673dbfe95707419d6")
-

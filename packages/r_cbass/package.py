@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RCbass(RPackage):
 	cran = "cbass" 
 
 	version("0.1", md5="96a4c81d3879ecb812bd3659903153a0")
-

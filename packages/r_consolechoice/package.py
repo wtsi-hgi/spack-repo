@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ the Console
 	cran = "consolechoice" 
 
 	version("1.1.1", md5="542e44087f7cdd6bcc8893c9f16c2b14")
-

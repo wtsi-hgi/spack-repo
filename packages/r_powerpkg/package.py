@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -27,4 +28,3 @@ class RPowerpkg(RPackage):
 	cran = "powerpkg" 
 
 	version("1.6", md5="b070d189b3aaf1ea9cc078932a6c2e17")
-

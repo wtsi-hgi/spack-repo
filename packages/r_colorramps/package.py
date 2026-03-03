@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RColorramps(RPackage):
 
 	version("2.3.4", md5="5d338c19f816ffd8f1413aebc579236f")
 	version("2.3.1", md5="854cb46c9d7f15cc41890ef817b23f6b")
-

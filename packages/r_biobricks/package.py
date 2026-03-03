@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RBiobricks(RPackage):
 	cran = "biobricks" 
 
 	version("0.2.2", md5="80f50523adfc2c9f0c1b3d7f6b04515f")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RPstat(RPackage):
 	cran = "Pstat" 
 
 	version("1.2", md5="8ecd1d1f3ffa0865b14a97a1e8009b1d")
-

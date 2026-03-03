@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RExteriormatch(RPackage):
 	cran = "exteriorMatch" 
 
 	version("1.0.0", md5="4d39a2e567cf0d67d7fd05b854e5df90")
-

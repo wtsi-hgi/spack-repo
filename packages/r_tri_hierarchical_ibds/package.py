@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Designs)
 	cran = "Tri.Hierarchical.IBDs" 
 
 	version("1.0.0", md5="bc602aef3198a29516416c7ef703981e")
-

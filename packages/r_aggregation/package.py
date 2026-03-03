@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAggregation(RPackage):
 	cran = "aggregation" 
 
 	version("1.0.1", md5="ef514bc6eee647289efd96b46dd26e98")
-

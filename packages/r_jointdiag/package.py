@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class RJointdiag(RPackage):
 	cran = "jointDiag" 
 
 	version("0.4", md5="c29195201c6652ce051141fbbd2d37d1")
-

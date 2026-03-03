@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RAhensdbs(RPackage):
 	depends_on("r@3.4:", type=("build", "run"))
 	depends_on("r-ensembldb@1.99.10:", type=("build", "run"))
 	depends_on("r-annotationhubdata@1.5.24:", type=("build", "run"))
-

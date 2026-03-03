@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RRestfulsedata(RPackage):
 	depends_on("r-experimenthub", type=("build", "run"))
 	depends_on("r-delayedarray@0.21.2:", type=("build", "run"))
 	depends_on("r-hdf5array@1.23.2:", type=("build", "run"))
-

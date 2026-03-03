@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class REcohydmod(RPackage):
 	cran = "Ecohydmod" 
 
 	version("1.0.0", md5="1fd0414065f904101c6bd5a08beaf257")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RMinfidataepic(RPackage):
 	depends_on("r-minfi@1.21.2:", type=("build", "run"))
 	depends_on("r-illuminahumanmethylationepicmanifest", type=("build", "run"))
 	depends_on("r-illuminahumanmethylationepicanno-ilm10b2-hg19", type=("build", "run"))
-

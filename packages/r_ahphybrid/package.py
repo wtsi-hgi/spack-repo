@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RAhphybrid(RPackage):
 	cran = "AHPhybrid" 
 
 	version("0.1.0", md5="e4f763be46e995aa7e56d0570d7785a0")
-

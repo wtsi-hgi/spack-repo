@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Data
 	cran = "NPMLEcmprsk" 
 
 	version("3.0", md5="57c58921d9f1e8e9c0545135b71be4c3")
-

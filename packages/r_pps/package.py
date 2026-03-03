@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RPps(RPackage):
 	cran = "pps" 
 
 	version("1.0", md5="d639aaaa13550a442ba018927b4f763a")
-

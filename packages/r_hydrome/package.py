@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ using Experimental Data
 	cran = "HydroMe" 
 
 	version("2.0-1", md5="3fa42211e60e2a3e34fa3301e776aeef")
-

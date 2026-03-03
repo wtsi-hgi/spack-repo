@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSensitivitymv(RPackage):
 	cran = "sensitivitymv" 
 
 	version("1.4.3", md5="5fb32692468cd508fd6cf12ec8df18b7")
-

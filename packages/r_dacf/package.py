@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RDacf(RPackage):
 	cran = "DACF" 
 
 	version("1.0.0", md5="084c189e89d6ac23bbdc96fa1e504344")
-

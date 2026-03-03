@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RBiocLogs(RPackage):
 	cran = "bioC.logs" 
 
 	version("1.2.1", md5="0966d6c1960f03af1806552945ed1775")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RMlegp(RPackage):
 	cran = "mlegp" 
 
 	version("3.1.9", md5="493ed36146ba964663b73a161a45dce6")
-

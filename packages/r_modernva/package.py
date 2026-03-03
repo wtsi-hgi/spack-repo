@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -31,4 +32,3 @@ Models
 	cran = "modernVA" 
 
 	version("0.1.3", md5="a033f1d5acef1100d0999d432293408b")
-

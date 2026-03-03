@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Algorithm
 	cran = "HDtweedie" 
 
 	version("1.2", md5="f420852f3b59c2ed621088e3d8496fb1")
-

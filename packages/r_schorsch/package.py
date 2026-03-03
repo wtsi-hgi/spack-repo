@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RSchorsch(RPackage):
 	cran = "schoRsch" 
 
 	version("1.10", md5="f4c125c764cb060522f1f419c1832223")
-

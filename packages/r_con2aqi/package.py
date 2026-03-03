@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RCon2aqi(RPackage):
 	cran = "con2aqi" 
 
 	version("0.1.0", md5="26dbf881850a593a12a98c7845e42c64")
-

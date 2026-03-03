@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Frequencies
 	cran = "kldtools" 
 
 	version("1.2", md5="54f3eb67d8e5620b16062256cc65ffd7")
-

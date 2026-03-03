@@ -1,3 +1,4 @@
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -34,4 +35,3 @@ class RSigfit(RPackage):
         depends_on("r-stanheaders@2.18.0:")
         # Suggests
         depends_on("r-markdown")
-

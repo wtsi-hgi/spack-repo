@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ Patients Hospitalized for Chronic Obstructive Pulmonary Disease
 	cran = "codexcopd" 
 
 	version("0.1.0", md5="02f8cd16239fe04d47fae057ff19c71d")
-

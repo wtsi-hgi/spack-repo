@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBullishtrader(RPackage):
 	cran = "bullishTrader" 
 
 	version("1.0.1", md5="7cbfe282e0abba38ff28a889a6dc6a70")
-

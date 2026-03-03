@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ Database
 	cran = "stellaR" 
 
 	version("0.3-4", md5="d71d23dcedb758843a4ad7b6a912c450")
-

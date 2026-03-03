@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSphereoptimize(RPackage):
 	cran = "SphereOptimize" 
 
 	version("0.1.1", md5="33fe46dc2d689cad584c61f79822af10")
-

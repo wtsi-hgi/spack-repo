@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RGenesummary(RPackage):
 	version("0.99.6", md5="9df029a96bf0fa5bb76ee8b8923c458c")
 
 	depends_on("r@4:", type=("build", "run"))
-

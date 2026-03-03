@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RNanotubes(RPackage):
 	version("1.18.0", md5="ff283cb49c319a357c22e17d2df22715")
 
 	depends_on("r@3.6:", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Individuals
 	cran = "PCFAM" 
 
 	version("1.0", md5="bcb12ff9232d920d1cb19f682ac2c33a")
-

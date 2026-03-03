@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RGsafishercombined(RPackage):
 	cran = "GSAfisherCombined" 
 
 	version("1.0", md5="4fa3c1f780fa99604746216528985ad9")
-

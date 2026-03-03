@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RArdec(RPackage):
 	cran = "ArDec" 
 
 	version("2.1-1", md5="b39975b0fd574184c1dd76c4b67ba711")
-

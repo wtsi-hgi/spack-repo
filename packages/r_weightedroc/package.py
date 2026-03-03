@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RWeightedroc(RPackage):
 	cran = "WeightedROC" 
 
 	version("2020.1.31", md5="3aea73ddc286499e26b3ed5f8336bd9c")
-

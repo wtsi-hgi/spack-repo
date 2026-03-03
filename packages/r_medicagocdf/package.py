@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RMedicagocdf(RPackage):
 	version("2.18.0", md5="1fbb2e4c070344d18e65f1b3993867db")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
-

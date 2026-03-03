@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RMinimalrsd(RPackage):
 	cran = "minimalRSD" 
 
 	version("1.0.0", md5="bb01bfdb1bc0ab1bfe5f9324555df661")
-

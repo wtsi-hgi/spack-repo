@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RHydrostats(RPackage):
 	cran = "hydrostats" 
 
 	version("0.2.9", md5="e5af04067cd8a626de9735891ba242b1")
-

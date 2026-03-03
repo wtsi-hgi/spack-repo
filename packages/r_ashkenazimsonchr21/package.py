@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,5 +17,4 @@ class RAshkenazimsonchr21(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/AshkenazimSonChr21_1.32.0.tar.gz", "https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/Archive/AshkenazimSonChr21/AshkenazimSonChr21_1.32.0.tar.gz"]
 
 	version("1.32.0", md5="a4455fab1d47dcf8dc2411fec1066a2c", url="https://www.bioconductor.org/packages/3.18/data/experiment/src/contrib/AshkenazimSonChr21_1.32.0.tar.gz")
-
 

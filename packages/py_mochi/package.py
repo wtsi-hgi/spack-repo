@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.python import PythonPackage
 from spack.package import *
 import os
 
@@ -44,5 +45,4 @@ class PyMochi(PythonPackage):
 
     def setup_run_environment(self, env):
         env.prepend_path("PATH", self.prefix.bin)
-
 

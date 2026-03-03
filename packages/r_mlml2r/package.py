@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ Hydroxymethylation Proportions
 	cran = "MLML2R" 
 
 	version("0.3.3", md5="4aee7829d2963ff272759c980d6cb0bb")
-

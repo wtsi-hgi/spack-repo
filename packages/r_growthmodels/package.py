@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RGrowthmodels(RPackage):
 	cran = "growthmodels" 
 
 	version("1.3.1", md5="366d0a1cd23164b2b44518cc6d8b43fa")
-

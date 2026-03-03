@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RAbasequence(RPackage):
 	cran = "abasequence" 
 
 	version("0.1.0", md5="1392d909eb0f65be94fd4160a371ae21")
-

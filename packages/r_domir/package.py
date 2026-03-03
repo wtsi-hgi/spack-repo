@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RDomir(RPackage):
 	cran = "domir" 
 
 	version("1.1.1", md5="c47f9bc5aba06d00befcba4cba976285")
-

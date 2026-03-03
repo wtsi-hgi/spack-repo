@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RMkendall(RPackage):
 	cran = "MKendall" 
 
 	version("1.5-4", md5="92a0438fc7081bf977b904c08f0ca952")
-

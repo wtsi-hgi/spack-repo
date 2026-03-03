@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBladderbatch(RPackage):
 	version("1.40.0", md5="d59d10a87e8d62c6ba10f7e9c0160a44")
 
 	depends_on("r-biobase", type=("build", "run"))
-

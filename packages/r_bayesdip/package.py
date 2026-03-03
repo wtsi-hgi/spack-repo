@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ Phase II Trials
 	cran = "BayesDIP" 
 
 	version("0.1.1", md5="6659ac9f1d35979b96380dd0103e653f")
-

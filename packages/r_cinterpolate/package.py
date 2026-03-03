@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RCinterpolate(RPackage):
 	cran = "cinterpolate" 
 
 	version("1.0.1", md5="f93b24e85504565308a2bbae0f5a1a88")
-

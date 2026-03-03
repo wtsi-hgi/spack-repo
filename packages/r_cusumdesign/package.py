@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Charts
 	cran = "CUSUMdesign" 
 
 	version("1.1.5", md5="6612245adcdef5148fe1c545477d1ce5")
-

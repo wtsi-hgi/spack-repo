@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ Analysis Framework
 	cran = "teda" 
 
 	version("0.1.1", md5="2b8c922b457b50e3295f86f1f1415269")
-

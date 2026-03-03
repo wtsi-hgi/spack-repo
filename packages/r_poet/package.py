@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RPoet(RPackage):
 	cran = "POET" 
 
 	version("2.0", md5="e6b63d282200f515dd140e17615622b3")
-

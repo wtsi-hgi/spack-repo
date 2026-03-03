@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RFmstable(RPackage):
 	cran = "FMStable" 
 
 	version("0.1-4", md5="3697fa5f8c5cc6acfcf0285ca7819f56")
-

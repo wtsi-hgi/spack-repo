@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RGarfield(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/garfield_1.30.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/garfield/garfield_1.30.0.tar.gz"]
 
 	version("1.30.0", md5="bf1974925a6c10b95ada01ff6d46bf15")
-

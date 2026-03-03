@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RGgroups(RPackage):
 	cran = "ggroups" 
 
 	version("2.1.2", md5="13efc20eff4900f8e5328b34780e7979")
-

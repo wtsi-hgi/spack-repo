@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RTaylorswift(RPackage):
 	cran = "tayloRswift" 
 
 	version("0.1.0", md5="f192b6856b2cff1d4e55fc0f46d3ccea")
-

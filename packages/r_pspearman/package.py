@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RPspearman(RPackage):
 	cran = "pspearman" 
 
 	version("0.3-1", md5="d6a452fcaede228801e565451d986db7")
-

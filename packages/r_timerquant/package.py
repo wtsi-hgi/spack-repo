@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RTimerquant(RPackage):
 	depends_on("r-desolve", type=("build", "run"))
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-locfit", type=("build", "run"))
-

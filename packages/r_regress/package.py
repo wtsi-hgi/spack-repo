@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -28,4 +29,3 @@ class RRegress(RPackage):
 	cran = "regress" 
 
 	version("1.3-21", md5="b460e3107c80b61e4ebad5a8665fdae8")
-

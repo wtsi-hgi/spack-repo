@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class REhelp(RPackage):
 	cran = "ehelp" 
 
 	version("1.2.1", md5="273d2eb201135240117d5a6c4e50daa8")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Binary Responses
 	cran = "survmixer" 
 
 	version("1.3", md5="7110db2125c50112f51c897aa2c3a1a6")
-

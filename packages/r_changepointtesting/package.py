@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RChangepointtesting(RPackage):
 	cran = "ChangepointTesting" 
 
 	version("1.1", md5="1d5d4aed43bb374b1a9b6d271e361e3b")
-

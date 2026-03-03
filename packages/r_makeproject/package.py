@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RMakeproject(RPackage):
 	cran = "makeProject" 
 
 	version("1.0", md5="2f88df5ef0ad114936f83c76e20414f8")
-

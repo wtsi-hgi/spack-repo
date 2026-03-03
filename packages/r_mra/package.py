@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RMra(RPackage):
 	cran = "mra" 
 
 	version("2.16.11", md5="0462486dc4efc549609338b2085a3350")
-

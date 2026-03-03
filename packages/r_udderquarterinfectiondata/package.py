@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RUdderquarterinfectiondata(RPackage):
 	cran = "UdderQuarterInfectionData" 
 
 	version("1.0.0", md5="56fe2a028e9c4ca414411621e40ae659")
-

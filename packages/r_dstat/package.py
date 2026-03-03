@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Studies
 	cran = "dstat" 
 
 	version("1.0.4", md5="50f1b2479ee50eb903c3b5f210861993")
-

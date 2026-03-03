@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RNseval(RPackage):
 	cran = "nseval" 
 
 	version("0.5.1", md5="a5dc81f99bef034d89e14bc80c2bac8b")
-

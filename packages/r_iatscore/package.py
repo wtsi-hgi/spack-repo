@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RIatscore(RPackage):
 	cran = "IATScore" 
 
 	version("0.1.1", md5="1034b3404b6f72ade1aef165a9e25d6c")
-

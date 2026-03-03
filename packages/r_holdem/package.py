@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RHoldem(RPackage):
 	cran = "holdem" 
 
 	version("1.2", md5="25c4169792ddb7cf043429b06eb67af3")
-

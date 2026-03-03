@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RPowernormal(RPackage):
 	cran = "PowerNormal" 
 
 	version("1.2.0", md5="4049f867c844f743ec729fd65673491e")
-

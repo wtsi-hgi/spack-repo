@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Algorithms
 	cran = "ParallelPC" 
 
 	version("1.2", md5="0586bdc681400b49e813ea49a0c57c8a")
-

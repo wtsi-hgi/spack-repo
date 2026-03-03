@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RApproxmatch(RPackage):
 	cran = "approxmatch" 
 
 	version("2.0", md5="07fd8ddb981c7929acc7adbc8bdf6402")
-

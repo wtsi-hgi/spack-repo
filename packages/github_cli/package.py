@@ -1,3 +1,4 @@
+from spack_repo.builtin.build_systems.makefile import MakefilePackage
 from spack.package import *
 
 
@@ -35,4 +36,3 @@ class GithubCli(MakefilePackage):
         with working_dir("spack-test", create=True):
             gh = Executable(join_path(self.prefix.bin, "gh"))
             gh("--version")
-

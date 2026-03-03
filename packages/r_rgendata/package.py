@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -26,4 +27,3 @@ Factors to Retain
 	cran = "RGenData" 
 
 	version("1.0", md5="eb116f8a004b1aa07352833fa894c3d8")
-

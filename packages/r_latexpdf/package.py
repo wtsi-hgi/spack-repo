@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class RLatexpdf(RPackage):
 	cran = "latexpdf" 
 
 	version("0.1.8", md5="d2ab3673953257468988e1c720f1b4c0")
-

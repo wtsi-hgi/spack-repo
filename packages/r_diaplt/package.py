@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RDiaplt(RPackage):
 	cran = "diaplt" 
 
 	version("1.4.0", md5="4a6d10fcae63ab134616933156637949")
-

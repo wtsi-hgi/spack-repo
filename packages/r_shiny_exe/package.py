@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RShinyExe(RPackage):
 	cran = "shiny.exe" 
 
 	version("0.2.0", md5="4439125c5941ae3cb587a337c6e55210")
-

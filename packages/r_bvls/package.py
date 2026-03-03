@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RBvls(RPackage):
 	cran = "bvls" 
 
 	version("1.4", md5="5f8e2016ecd948926fa163f4873dd4bd")
-

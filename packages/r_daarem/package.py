@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ Accelerating EM-Like Monotone Algorithms
 	cran = "daarem" 
 
 	version("0.7", md5="1561826b5177b970a01d64f29b0ef645")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBgmfiles(RPackage):
 	cran = "bgmfiles" 
 
 	version("0.0.6", md5="4ded3c1728dd23a186686d757ff858ab")
-

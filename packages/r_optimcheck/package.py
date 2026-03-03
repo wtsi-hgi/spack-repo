@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class ROptimcheck(RPackage):
 	cran = "optimCheck" 
 
 	version("1.0", md5="542f755528c4f4eb8711a1c79a74110b")
-

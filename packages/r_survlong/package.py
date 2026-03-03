@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ Covariates
 	cran = "SurvLong" 
 
 	version("1.4", md5="b7a5f64b6d025434196df58a23af11e4")
-

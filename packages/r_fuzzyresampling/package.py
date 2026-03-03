@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RFuzzyresampling(RPackage):
 	cran = "FuzzyResampling" 
 
 	version("0.6.3", md5="82ed8f707e14a7b7c414c3720b13f7ef")
-

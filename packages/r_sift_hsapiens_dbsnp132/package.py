@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RSiftHsapiensDbsnp132(RPackage):
 	depends_on("r-variantannotation", type=("build", "run"))
 	depends_on("r-rsqlite@0.11:", type=("build", "run"))
 	depends_on("r-annotationdbi", type=("build", "run"))
-

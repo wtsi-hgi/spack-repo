@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RRtaxometrics(RPackage):
 	cran = "RTaxometrics" 
 
 	version("3.2.1", md5="83c18c99ce0c1b901f0c2b8a9ce17dc5")
-

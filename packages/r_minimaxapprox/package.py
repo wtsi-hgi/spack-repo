@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ Function Approximation
 
 	version("0.4.1", md5="936ba3e989c9966191d5179a979f433a")
 	version("0.3.0", md5="6ce7cd3c0041dc1757dfbb98ad8bc5da")
-

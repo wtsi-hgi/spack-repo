@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Proteomics Data
 	cran = "proteomicsCV" 
 
 	version("0.1.0", md5="3bc7536875d114c1b893eb79b1b21ce4")
-

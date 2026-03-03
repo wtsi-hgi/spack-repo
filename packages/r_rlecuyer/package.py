@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RRlecuyer(RPackage):
 	cran = "rlecuyer" 
 
 	version("0.3-8", md5="62483448f69d36e38a39e3339469478b")
-

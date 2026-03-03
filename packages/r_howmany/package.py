@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class RHowmany(RPackage):
 	cran = "howmany" 
 
 	version("0.3-1", md5="2a734431375a7214f6dc831ca004dc38")
-

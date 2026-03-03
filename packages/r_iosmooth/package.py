@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RIosmooth(RPackage):
 	cran = "iosmooth" 
 
 	version("0.94", md5="5cf641db20c380dd3d3d1201e4ed26ae")
-

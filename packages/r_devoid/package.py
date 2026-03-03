@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RDevoid(RPackage):
 	cran = "devoid" 
 
 	version("0.1.2", md5="3705b573a844d7eb88fe0fff6928c4aa")
-

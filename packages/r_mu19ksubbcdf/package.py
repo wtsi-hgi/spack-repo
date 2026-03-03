@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RMu19ksubbcdf(RPackage):
 	version("2.18.0", md5="35e5ebcb4cb51950a85c1e3622bb39f0")
 
 	depends_on("r-annotationdbi", type=("build", "run"))
-

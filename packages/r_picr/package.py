@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RPicr(RPackage):
 	cran = "picR" 
 
 	version("1.0.0", md5="465260ed213f0749eb8d5b7a22c1e3b3")
-

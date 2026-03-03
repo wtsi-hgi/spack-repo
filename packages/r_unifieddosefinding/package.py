@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RUnifieddosefinding(RPackage):
 	cran = "UnifiedDoseFinding" 
 
 	version("0.1.10", md5="aff3a1d2cd699363d1b5c1434f2c9006")
-

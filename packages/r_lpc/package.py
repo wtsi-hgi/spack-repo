@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Features
 	cran = "lpc" 
 
 	version("1.0.2.1", md5="bf404d97488586fca034027a33ad02cc")
-

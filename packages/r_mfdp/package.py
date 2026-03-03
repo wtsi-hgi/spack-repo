@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RMfdp(RPackage):
 	cran = "mFDP" 
 
 	version("0.1.0", md5="9a4cc025b9d7077194f8ec2342545008")
-

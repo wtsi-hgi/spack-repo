@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -24,4 +25,3 @@ class RYasp(RPackage):
 	cran = "yasp" 
 
 	version("0.2.0", md5="d24fdc1cd5713138487f0886ed086ee8")
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RCopyhelper(RPackage):
 	version("1.34.0", md5="bb8d3e8cba0c27898e43cbdcfcac6c62")
 
 	depends_on("r@3.5:", type=("build", "run"))
-

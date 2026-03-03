@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RBreakpointrdata(RPackage):
 	version("1.20.0", md5="e3f74132513d150cb5d5cc62bfd49586")
 
 	depends_on("r@3.5:", type=("build", "run"))
-

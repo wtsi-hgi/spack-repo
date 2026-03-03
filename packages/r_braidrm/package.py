@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RBraidrm(RPackage):
 	cran = "braidrm" 
 
 	version("0.71", md5="d6e15f0dedfe4c786e4cbef97f444529")
-

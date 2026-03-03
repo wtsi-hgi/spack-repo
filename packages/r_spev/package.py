@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RSpev(RPackage):
 	cran = "SPEV" 
 
 	version("1.0.0", md5="cdcb2e8c0560658843d17170f4bb6855")
-

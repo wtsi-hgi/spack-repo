@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RBsgenomeOsativaMsuMsu7(RPackage):
 	version("0.99.2", md5="80648058756a2f74aa5a246d38ecf576", url="https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/BSgenome.Osativa.MSU.MSU7_0.99.2.tar.gz")
 
 	depends_on("r-bsgenome", type=("build", "run"))
-

@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -21,4 +22,3 @@ class RCuratedcrcdata(RPackage):
 	depends_on("r@2.10:", type=("build", "run"))
 	depends_on("r-nlme", type=("build", "run"))
 	depends_on("r-biocgenerics", type=("build", "run"))
-

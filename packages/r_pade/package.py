@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RPade(RPackage):
 	cran = "Pade" 
 
 	version("1.0.6", md5="93fde3ec93d92790c525ba88b43854e3")
-

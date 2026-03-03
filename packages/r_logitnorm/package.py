@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RLogitnorm(RPackage):
 	cran = "logitnorm" 
 
 	version("0.8.39", md5="1d08b2f259ce83e21ab7542212518eb9")
-

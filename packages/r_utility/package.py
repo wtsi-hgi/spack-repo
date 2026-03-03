@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RUtility(RPackage):
 	cran = "utility" 
 
 	version("1.4.6", md5="ea5aabb0950f492cfc4df459b12846b5")
-

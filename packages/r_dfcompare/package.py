@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RDfcompare(RPackage):
 	cran = "dfCompare" 
 
 	version("1.0.0", md5="a53339a93085aaca540843438d2a3d33")
-

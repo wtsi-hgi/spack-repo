@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RGamer(RPackage):
 	cran = "gameR" 
 
 	version("0.0.5", md5="d312562b72fd732c195ce24009ad1110")
-

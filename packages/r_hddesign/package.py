@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Study
 	cran = "HDDesign" 
 
 	version("1.1", md5="7d7ae91154a06569dd4d4a2202ec0217")
-

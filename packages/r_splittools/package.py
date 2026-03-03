@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -23,4 +24,3 @@ class RSplittools(RPackage):
 	cran = "splitTools" 
 
 	version("1.0.1", md5="04d4df261072a42390d8ff002b21f071")
-

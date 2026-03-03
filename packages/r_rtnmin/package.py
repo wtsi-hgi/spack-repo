@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RRtnmin(RPackage):
 	cran = "Rtnmin" 
 
 	version("2016-7.7", md5="8602bcbd65b7657dc3a4d1387abff472")
-

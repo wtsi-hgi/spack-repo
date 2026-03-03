@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RCnps(RPackage):
 	cran = "CNPS" 
 
 	version("1.0.0", md5="deac071a9387e3a296481d041e6d09ee")
-

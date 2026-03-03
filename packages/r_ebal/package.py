@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class REbal(RPackage):
 	cran = "ebal" 
 
 	version("0.1-8", md5="50283d2406f9943623f8d9dda67b4b77")
-

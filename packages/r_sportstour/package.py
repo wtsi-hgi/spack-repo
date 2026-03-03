@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Techniques
 	cran = "SportsTour" 
 
 	version("0.1.0", md5="dc0e7d3127c591928c713838c8d1593f")
-

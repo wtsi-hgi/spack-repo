@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ Analysis, and Optimal Significance Level Calculation
 	cran = "GRS.test" 
 
 	version("1.2", md5="b94708c58869783ff8fddba7153bfdaf")
-

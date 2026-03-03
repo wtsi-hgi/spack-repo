@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -18,4 +19,3 @@ class RCore(RPackage):
 	cran = "CORE" 
 
 	version("3.2", md5="ccc1ebd995e924f333108dc84fb2a091")
-

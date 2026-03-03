@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -33,4 +34,3 @@ class RSingscoreamlmutations(RPackage):
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-tcgabiolinks", type=("build", "run"))
 	depends_on("r-biocfilecache", type=("build", "run"))
-

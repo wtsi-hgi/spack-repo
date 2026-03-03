@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ class RBrm(RPackage):
 	cran = "brm" 
 
 	version("1.1.1", md5="0a7eae262f3e2b390d8894a3feb890cf")
-

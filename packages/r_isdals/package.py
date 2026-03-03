@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -16,4 +17,3 @@ Life Sciences
 	cran = "isdals" 
 
 	version("3.0.1", md5="d0d2e37d2d3ea205160a8e3a2d304d11")
-

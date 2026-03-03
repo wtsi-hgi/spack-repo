@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -20,4 +21,3 @@ class RRapidatetime(RPackage):
 	cran = "RApiDatetime" 
 
 	version("0.0.9", md5="97291cb2261cfb34855e7e278ea8f7e2")
-

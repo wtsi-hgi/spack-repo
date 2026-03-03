@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -27,4 +28,3 @@ class RFixseqmtp(RPackage):
 	cran = "FixSeqMTP" 
 
 	version("0.1.2", md5="7f98f66bfd0ffd75bf6a629bc9ba0e8f")
-

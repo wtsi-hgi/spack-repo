@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -19,4 +20,3 @@ class RRsmalltelescopes(RPackage):
 	cran = "RSmallTelescopes" 
 
 	version("1.0.4", md5="eff9497485fbfa2624a184b0665d1e9b")
-

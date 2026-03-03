@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -15,4 +16,3 @@ class RConvertbonds(RPackage):
 	cran = "convertbonds" 
 
 	version("0.1.0", md5="4224d72fd518f5d7905a83a8481eec17")
-

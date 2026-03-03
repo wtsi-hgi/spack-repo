@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.generic import Package
 from spack.package import *
 
 
@@ -31,4 +32,3 @@ class QuartoCli(Package):
 
     def setup_dependent_environmen(self):
         prepend_path("PATH", self.prefix + "/package/dist/bin")
-

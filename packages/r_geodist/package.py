@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -25,4 +26,3 @@ class RGeodist(RPackage):
 	cran = "geodist" 
 
 	version("0.0.8", md5="f7c9e6a1f3469e31b5516b5228fc1351")
-

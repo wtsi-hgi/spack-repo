@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -17,4 +18,3 @@ class RConvolutioner(RPackage):
 	cran = "Convolutioner" 
 
 	version("0.1.0", md5="7609d9d9101adeee4f9fbf9066e7b90f")
-

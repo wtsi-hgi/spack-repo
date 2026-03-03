@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+from spack_repo.builtin.build_systems.r import RPackage
 from spack.package import *
 
 
@@ -22,4 +23,3 @@ class RSchumaker(RPackage):
 	cran = "schumaker" 
 
 	version("1.2.1", md5="0895ffd1707ec8ec71a8d7b7d65fe0c7")
-
