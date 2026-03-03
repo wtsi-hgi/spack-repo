@@ -22,6 +22,8 @@ class PyPorechop(PythonPackage):
     version("0.1.0", sha256="f393be9ba32a9f0dc8dd3b2262c9b0f839e364b26f37698d7ef485ed0d9e72fd")
 
     depends_on("py-setuptools", type="build")
+    depends_on("python@3.4:")
+    depends_on("gcc@4.9.1:", type="build")
 
     def setup_build_environment(self, env):
         env.set("CXX", self.compiler.cxx)
