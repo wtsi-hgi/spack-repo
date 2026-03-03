@@ -1,0 +1,1 @@
+2024-11-12 16:50:31	-	cheeky_cori	-	83d4a4ccb61241b9e512a9f37057cacc	c5d14b35-5fbc-40bb-a35e-3907dad7ff13	nextflow run /software/hgi/installs/irods_to_lustre/0.2.2/nf_tower_irods_to_lustre/main.nf -profile lsf,sanger
