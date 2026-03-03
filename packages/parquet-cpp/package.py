@@ -4,7 +4,7 @@
 
 
 from spack.package import *
-from spack.pkg.builtin.boost import Boost
+from spack_repo.builtin.packages.boost.package import Boost
 
 class ParquetCpp(CMakePackage):
     """C++ bindings for the Apache Parquet columnar data format."""

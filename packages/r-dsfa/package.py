@@ -4,8 +4,7 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 from spack.package import *
-from spack.pkg.builtin.boost import Boost
-
+from spack_repo.builtin.packages.boost.package import Boost
 
 class RDsfa(RPackage):
     """Distributional Stochastic Frontier Analysis

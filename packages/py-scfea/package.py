@@ -5,6 +5,9 @@
 
 import os
 
+from spack.package import *
+
+
 class PyScfea(PythonPackage):
     """A graph neural network model to estimate cell-wise metabolic using single cell RNA-seq data."""
 
