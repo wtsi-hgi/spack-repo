@@ -1,0 +1,78 @@
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Spack Project Developers. See the top-level COPYRIGHT file for details.
+#
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)
+
+from spack.package import *
+
+
+class PyTobias(PythonPackage):
+    """Transcription factor Occupancy prediction By Investigation of ATAC-seq Signal"""
+
+    homepage = "https://github.com/loosolab/TOBIAS"
+    pypi = "tobias/tobias-0.9.0.tar.gz"
+
+    version("0.10.1", sha256="03dbd2e31715bb402039222dbf71c3b83405a3fd095c0f8368942c1e39a07536")
+    version("0.11.0", sha256="a7ff697e83d8318878f72310a7176f5fe8f95ef369bbc0066ee8943670ab599a")
+    version("0.11.1", sha256="fe2482a69baf37bd1bf023ae487a5fae5eb5e59f2c531f5e661bb9e32c097f9d")
+    version("0.11.2", sha256="2f818ed0b4d691f8280154ea1556ca28e7f5f8b1f78cc9c1a6b6423c1598890b")
+    version("0.11.3", sha256="761913f2ef9e1ccfbd3c74add4795d642264a268a51df7c76303e0e9cfd885fa")
+    version("0.11.4", sha256="4c7364240274b1cb953d53ca92721b8a4d06bc8a323c76db1e1701545be85f72")
+    version("0.11.5", sha256="e67ab4a8a51becae3258ba01580399972af97b9d318ef582193e42c1ad3ce96a")
+    version("0.11.6", sha256="a72c6517268b464d558119c7b7e040b755674ab06f511f815dd455493d35b452")
+    version("0.11.7", sha256="463b37f5f4f601b8aa9ec4b0c9880bb20eb098dc28d07e29f5ae2d6bfc5857fa")
+    version("0.12.0", sha256="caf7f242b833c28071c6c2470222dd73c2e1c8f2f635005a2722607bbe7ad8fa")
+    version("0.12.1", sha256="bbcc598fba2831d0fce7d5a9728cd73c6911bf34dcb6c4bb0ee1ee926a59c43a")
+    version("0.12.10", sha256="a930a3e5bf24fac18d0bfcec2cc42daba603b0d2301762607eace6d8645e2981")
+    version("0.12.11", sha256="de4e34ceeb5c6a8cd9272501b698e1a1e70b7d7acaba55d4a895755216c9c349")
+    version("0.12.12", sha256="ca599c8af7cee9a9143686ba650e8dee138283daab90c4da346d5c880bb86bf4")
+    version("0.12.2", sha256="c0a44610fc5853b20f93eb23e1a8cdd14af6cc1a931bda832999d8e5f95ff230")
+    version("0.12.3", sha256="a776cb35783ea6b685a1055dbe8d48e5ea6d3f2da21036fc1a07fe81961e8efc")
+    version("0.12.4", sha256="ec1bda4a286b58d89f34140823801513c46dcbb47c1727988c7f76c1dc758d3a")
+    version("0.12.5", sha256="9fcd417bd61f488f8497ce7769e1b2aabe99bdb8d978cbffd99b83455943a32b")
+    version("0.12.6", sha256="cbd6a776f25109a276308d16f71de4bfeb777163c80327dae60d154c8ade8b4b")
+    version("0.12.7", sha256="c365cd9a7d63937be3eab436cc58843d49d254d741aa3bb71d78a1781dbe816d")
+    version("0.12.8", sha256="66f145d3cb3c307f195ede1115736da0852e4bf12461869453b9dc43342b4d29")
+    version("0.12.9", sha256="0b307d94719e0f28e846ddebaf4533383c5129824bca6bcba49b2a531e00b279")
+    version("0.13.0", sha256="1c585bca5d3b863c2e16ab8ea0c698cfc832e3af81a9345d58451a013505bf0f")
+    version("0.13.1", sha256="4f4c4452f74b83fbcfdd139aa40e1d34a39f515b27cb26584c6a323037822ddb")
+    version("0.13.2", sha256="a815c7b97e83ef56baa2acf5d20c8b1cf452fcdc3b071564d612501f51b0cd28")
+    version("0.13.3", sha256="96f95b38f4353179cf1f5c79fdb07ec51f55a2cd3497bb63d6bb78f038c845e2")
+    version("0.14.0", sha256="ac74c35f981d499425147054f82142d22e52858d402d0c63ab7e8481bd156589")
+    version("0.15.0", sha256="53ba7414bf7aa66e919c3b605192d203a3defc08d88a0407fa6161c6635b69ce")
+    version("0.15.1", sha256="751416e72ea9fd0c7b857a586dc32be981370abdd8b8e6a925671041ced3b104")
+    version("0.16.0", sha256="db44f1b06d733882ca8bef1dcc8fcb374230ce2ab720f534811915452e05d25c")
+    version("0.16.1", sha256="c46267c01287be06201b3e6f7a36daad1ad86d6c578f96e878501be7da7fd109")
+    version("0.17.0", sha256="b0965abcbe1cee6a8bf85c01b4ebcf49c678a4cf1f961855e60152d9ade6bd18")
+    version("0.17.1", sha256="371bf5db08a68db1949bfe2d82e67334588ced743e50beb42119ccae5623678a")
+    version("0.3.0", sha256="7c7de1efc97352b6fb7bc21a692c901dc7a8ab270a850445577ae1aa4155d0fc")
+    version("0.4.0", sha256="995d28dfb4d441bf28c009dcd83c28da0084ccc6ea9ff60afadd42d3da54a30c")
+    version("0.5.0", sha256="ae14018c6992c6e8f415e142ee8bbcb3b0932927203fe2061a6ac87169631fef")
+    version("0.5.1", sha256="cba810798019ae3ae0115653edc772538ce29003ea59f3c62bb840f385d246fa")
+    version("0.5.2", sha256="2253b48436a3d13a8089a31909b05e3c953505b7e0f5766031c6f0564cc70f3f")
+    version("0.6.0", sha256="eb29c1782be7ff7fa9a39050ddeb9e531f98ac491c604e42f636d498e7b7800b")
+    version("0.6.1", sha256="2afda6d73bbfab2f1a77ec14a3780e54c5f2b7aa0cb1cb25194a3ece16ddfbf5")
+    version("0.6.4", sha256="6107d978f80e76479f1750291ecc5af470045747208d9f8ce09b3247a8227414")
+    version("0.7.0", sha256="a21b0cb403523ea9522e06cff3dea5b5e0b8be7f83b77c1408d12bbe498d7b52")
+    version("0.8.0", sha256="27f3d51bd7e5f75323450139a0132fc512bf5a4616afb23ce8f2d53345445aaa")
+    version("0.8.1", sha256="d2bf2adb341b8e1903a4c16f17fcbae7c346f2d1f52bdba2718d85fb7a21df0d")
+    version("0.9.0", sha256="addd4c981fdad316be594d3a5814c265fb0f95aa8b829098546738cc7774c0e9")
+
+    depends_on("py-setuptools", type=("build"))
+    depends_on("py-moods-python", type=("build", "run"))
+    depends_on("py-pybigwig", type=("build", "run"))
+    depends_on("py-pysam", type=("build", "run"))
+    depends_on("py-pybedtools", type=("build", "run"))
+    depends_on("py-cython", type=("build", "run"))
+    depends_on("py-matplotlib", type=("build", "run"))
+    depends_on("py-numpy", type=("build", "run"))
+    depends_on("py-scipy", type=("build", "run"))
+    depends_on("py-pypdf2", type=("build", "run"))
+    depends_on("py-scikit-learn", type=("build", "run"))
+    depends_on("py-svist4get", type=("build", "run"))
+    depends_on("py-pyyaml", type=("build", "run"))
+    depends_on("py-boto3", type=("build", "run"))
+    depends_on("py-adjusttext", type=("build", "run"))
+    depends_on("py-sklearn-contrib-lightning", type=("build", "run"))
+    depends_on("py-xlsxwriter", type=("build", "run"))
+    depends_on("py-gimmemotifs", type=("build", "run"))

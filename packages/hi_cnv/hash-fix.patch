@@ -1,0 +1,22 @@
+diff --git a/src/denoise_lrr.cpp b/src/denoise_lrr.cpp
+index 8e59237..dc32156 100644
+--- a/src/denoise_lrr.cpp
++++ b/src/denoise_lrr.cpp
+@@ -32,7 +32,7 @@ char charCrop(float x) {
+   return (char) max(-127, min(127, (int) floor(x+0.5)));
+ }
+ 
+-uint hash(uint x) {
++uint hashme(uint x) {
+   x = ((x >> 16) ^ x) * 0x45d9f3b;
+   x = ((x >> 16) ^ x) * 0x45d9f3b;
+   x = (x >> 16) ^ x;
+@@ -75,7 +75,7 @@ void defineBatches(vector <string> &IDpairsGenoSet, vector <string> &genotypingS
+       genotypingSetNames.push_back(genotypingSetName);
+     }
+     ancHashedIndsPerSet[setNameToInd[genotypingSetName]].
+-      push_back(make_pair((bool) !inUniformAncestrySet, hash(famInd)));
++      push_back(make_pair((bool) !inUniformAncestrySet, hashme(famInd)));
+     famInd++;
+   }
+   fin.close();

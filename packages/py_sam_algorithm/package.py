@@ -1,0 +1,73 @@
+# Copyright 2013-2023 Lawrence Livermore National Security, LLC and other
+# Spack Project Developers. See the top-level COPYRIGHT file for details.
+#
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)
+
+from spack.package import *
+
+
+class PySamAlgorithm(PythonPackage):
+	"""The Self-Assembling-Manifold algorithm"""
+	
+	homepage = "https://github.com/atarashansky/self-assembling-manifold"
+	pypi = "sam-algorithm/sam-algorithm-1.0.2.tar.gz" 
+
+	version("0.1.10", sha256="a6b3a968ef39309c6c6ad7b8b912daa3608ff26176d59458c8842e75420de44b")
+	version("0.1.11", sha256="0a0095ce5e93f2b41c2d02d380a4ce9d9371a22eb1a5b7c15aee461cd189df7d")
+	version("0.1.3", sha256="dac19c06d6bdef1fb995ba5012a8fc347136d8cf4f6258cafbea320c3d381c67")
+	version("0.1.4", sha256="385bdd8e13e588ad29a200887eaa308949f452d7efb874809b9b97b9b48f81fc")
+	version("0.1.6", sha256="f8062dc17aea614a50685284d37b1d7d984d99e761d357099a9a89dee6338cc1")
+	version("0.1.7", sha256="60870a45bdc4d54037059b69e4cda584a48e485e82517ebabcc3590648f39081")
+	version("0.1.8", sha256="a26d93d4b5ac3a5ddf670b4a291165962e7a2b6a5642c6d96795f9a7c49b82fe")
+	version("0.2.0", sha256="931ca541a0d0a8f173e660627248501b482811725358a0e06bac1dc703f9fff7")
+	version("0.2.1", sha256="a4e49f54f6e0f8da7480524f75cb7e0f37c91a7c2a8bf864e79a67cfde631669")
+	version("0.2.2", sha256="7956d19cee8633185d5759420487c7b36a4bf9ee48d50f0cad69ea305364d399")
+	version("0.3.0", sha256="5869e35253fcaeb6dc58dc6fa4b9e8a816be0a7187c1a2e2acb6772c3844b92a")
+	version("0.3.1", sha256="81df063e6e7ab47eaba9915db22fb4fc29207b22e9caab640d161a5b984dd20d")
+	version("0.3.2", sha256="82c5a03faeab18c99ea3040ba86ec4d1df9551694baffa5ae497d95efe72ed07")
+	version("0.3.3", sha256="13d37092e66cd4d3db35eb683f23860c399b308be8ff10e848d99ecc8b6e00a8")
+	version("0.3.5", sha256="751c3691dfa448ea13996552c277a06a23a9c7a1af475350f8938719f1c4b398")
+	version("0.4.2", sha256="0aea7155e68c64ae524953e86ccf5154d96a691e7df62f0fd44337adfb461188")
+	version("0.4.3", sha256="1f17b1862a52f37d4bade8bbfcae2e226e41900fe4e617e07d1b7d0b22b133f5")
+	version("0.4.4", sha256="b7a9d6d61314542aad91c841b22f74f834c319b3166f38fead6b17cd6baa7b5f")
+	version("0.4.9", sha256="039dd819cbd27ee7efdcecd74b45d593489aa7ac884c621752c59f5335bbd6a5")
+	version("0.5.1", sha256="2aaad39b614fdd76cb9d54c6a4718a63b8d018b158229708c12ee0d9e44ed32a")
+	version("0.5.2", sha256="5e4e324adb4c00598582c17097084f2e22574b839ef16fe78370d792f67fd8b8")
+	version("0.6.10", sha256="d63d8306fe2b64644c2e0738d0b7e476d75d86b081647cac87c661d1e4ad46b3")
+	version("0.6.12", sha256="724d84b03063f5dde806b939ea218c6884c522db876eb733cd5973dd024f14a3")
+	version("0.6.13", sha256="72d2cbf20618102ecbb9a4fe39dbbd5223d30e544b0530ec3117ca032a753b30")
+	version("0.6.14", sha256="cbabb6d47a6362c2d7181af1b04b443031d4af82414b0c89979d1c9c7494d1b1")
+	version("0.6.15", sha256="9ba7dae850f1bacba0d560fd408d0945a1715c69bb24b24b12edae57f2949f17")
+	version("0.6.16", sha256="d3e9b742fdcfbe03027314aec31a5ccc5702801521f9e32c1dc57bb1633dc571")
+	version("0.6.17", sha256="d466ef515b2158e5fbba3e5d5d3dad63d52c311c508f5264a6077d8eb552e84a")
+	version("0.6.5", sha256="174bbd4d8654b889ceba70a7f9d2736cb56d929f01edcf8e242d94e7185b3f1e")
+	version("0.6.6", sha256="7581a76e29bc3ea33687367e564fa80eeef5d93762ec3dbad38cc196b2a24b4b")
+	version("0.6.7", sha256="6ee486f9ef2c4083133169ff01a6d42bb6755d7f8a2004f0ec91f3021f08b33e")
+	version("0.6.8", sha256="954923b7ebe9323171f321fd72b1510888000baf78dc059af4070fe65f7e88cc")
+	version("0.6.9", sha256="1b213c0b26a63160243acd16955d185fe456723fc3a1ccc11a374a25a7993f70")
+	version("0.7.0", sha256="fd8f3c8598b783ec70cde526657b5b37143ed493793d56a89decefff0e20d39f")
+	version("0.7.1", sha256="059b3c7536d72aaa9dc61ace298026edf83bcaa8b7744967ee4091e860db63ea")
+	version("0.7.3", sha256="eaaa62d93590a15a1a6598420aa272f391cc35fd8530a556b9a509662c2540e5")
+	version("0.7.4", sha256="dcf571d8fea2f17f633525fde8997679ab2a41a7170607286b90a58379d639e8")
+	version("0.7.5", sha256="77b3a39f2723b3152967c41b9635020c05f991e587d26a5574cb59fbb4b89dd3")
+	version("0.7.6", sha256="07b7eba592316b4cb9863674e587f82bf922ed9d453a845bf8c2cc36563ae715")
+	version("0.7.7", sha256="b80f97b803bb7f4fe01a025f8f9010993e9217c5dd69be9122153e6237c7a0b2")
+	version("0.7.8", sha256="6a7773cadc40f00a38e298b3af1728c5b2eb735602414a735fcc942200f99cea")
+	version("0.7.9", sha256="843e2b604ababc056e7e30bfe6835ad9a26acccb17f171d9217c08f176afe278")
+	version("0.8.0", sha256="d9744b531e54fcfce23f1e8484c33c3b03c5a6b810e605304cc8dfe1e6402dac")
+	version("0.8.1", sha256="a1d61e8769d4fa1613dde7aa240d3e33bae480c76bba81d54a6140ca999be504")
+	version("0.8.2", sha256="107cfc3add414ab9421411e9215069837ed1153accfd7d525af3877229ae7a57")
+	version("0.8.3", sha256="19d006da68d12bec637b8204325367c3b4d3afa0b5aed7c5b4d689cdff7fda39")
+	version("0.8.4", sha256="459a9c58d830704d419e1cf36783387139ac48a710374e61750a842b9c22da61")
+	version("0.8.5", sha256="bee0bce3ea1e6db81cacbe09486f356b58549e195811ad65d73052516b179139")
+	version("0.8.6", sha256="603be2c25e7ddb99224257287782180ca853daf72af15c0dbe687ed78dba5878")
+	version("0.8.7", sha256="d893a762c47228470f79de57921eeb86bea7f4394e82818349091ed7760278e1")
+	version("0.8.8", sha256="7de03c9f2745a5c12ede6c90f38581a66fea621d16d40cb38e4708ea5aa9dd5b")
+	version("0.8.9", sha256="1c1a68f7e884891939fb1f5aedd129cf2ef144ee27dabbf027c74a0c2616f242")
+	version("0.9.0", sha256="85ad4d6eefabd54183278d7d734aa82ae8a128d54cadb53808a41bf8f638d62d")
+	version("1.0.0", sha256="69b50c2ccd9bbdafd889fa1f77ea5ce43b97edc7a4d1f694e9ae43b23479a48c")
+	version("1.0.1", sha256="1c288705a3035a122f2df986f270ae87c2837890be753f2686de2645dd80f557")
+	version("1.0.2", sha256="971793c46af94472729f917d060619d76d167b1fe4fe4625aa0f2bb908baad51")
+
+	depends_on("py-setuptools", type=("build"))
+	depends_on("python@3.6:", type=("build", "run"))

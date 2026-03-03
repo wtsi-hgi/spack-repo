@@ -1,0 +1,13 @@
+diff --git a/INSTALL.pl b/INSTALL.pl
+index 3fb3c2b..dc187ac 100755
+--- a/INSTALL.pl
++++ b/INSTALL.pl
+@@ -865,7 +865,7 @@ END
+   my $msg = '';
+   my $this_os =  $^O;
+ 
+-  if ($this_os ne 'darwin' ) {
++  if (0) {
+  
+     my $default_msg = qq{%s library header(s) not found in /usr/include. Please install it and try again.
+ (or to skip Bio::DB::HTS/htslib install re-run with --NO_HTSLIB)
