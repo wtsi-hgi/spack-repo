@@ -21,7 +21,7 @@ class Seqan(CMakePackage):
 
     # depends_on("cxx", type="build")  # generated
 
-    depends_on("cmake@3.4.0:", type="build")
+    depends_on("cmake@3.12.0:", type="build")
     depends_on("python@2.7.0:", type="build")
     depends_on("py-nose", type="build")
     depends_on("py-sphinx", type="build")
