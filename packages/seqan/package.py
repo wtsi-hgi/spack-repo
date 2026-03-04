@@ -26,21 +26,13 @@ class Seqan(CMakePackage):
     depends_on("py-nose", type="build")
     depends_on("py-sphinx", type="build")
     depends_on("boost+exception+math+serialization+container", type=("build", "link"))
-    depends_on("zlib-api", type=("build", "link"))
+    depends_on("zlib", type=("build", "link"))
     depends_on("bzip2", type=("build", "link"))
 
     conflicts("%intel@:16.0.4")
     conflicts("%gcc@:4.9.4")
     conflicts("%llvm@:3.5.1")
 
-    def patch(self):
-        # zlib-ng no longer defines FAR, but seqan still relies on it.
-        filter_file(
-            "#ifndef OF",
-            "#ifndef FAR\n#  define FAR\n#endif\n\n#ifndef OF",
-            "include/seqan/stream/iostream_zutil.h",
-            string=True,
-        )
 
     @run_after("install")
     def install_test(self):
