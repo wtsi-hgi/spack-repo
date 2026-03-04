@@ -30,7 +30,6 @@ class Seqan(CMakePackage):
     depends_on("bzip2", type=("build", "link"))
 
     depends_on("gcc@13:", type=("build"))
-    depends_on("clang@18:", type=("build"))
     depends_on("llvm@18:", type=("build"))
 
     conflicts("%intel@:16.0.4")
