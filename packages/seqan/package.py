@@ -29,6 +29,10 @@ class Seqan(CMakePackage):
     depends_on("zlib-api", type=("build", "link"))
     depends_on("bzip2", type=("build", "link"))
 
+    depends_on("gcc@13:", type=("build"))
+    depends_on("clang@18:", type=("build"))
+    depends_on("llvm@18:", type=("build"))
+
     conflicts("%intel@:16.0.4")
     conflicts("%gcc@:4.9.4")
     conflicts("%llvm@:3.5.1")
