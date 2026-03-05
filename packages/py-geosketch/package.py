@@ -13,6 +13,8 @@ class PyGeosketch(PythonPackage):
 
     version("1.2", sha256="bbfe97366b91c5927b6076d5a6738d9cfbe094efb5ac1117aab7a30b6081cc4e")
 
+    depends_on("python@3:")
+    depends_on("py-setuptools")
     depends_on("py-fbpca@1.0:", type=("build", "run"))
     depends_on("py-numpy@1.12.0:", type=("build", "run"))
     depends_on("py-scikit-learn@0.24:", type=("build", "run"))
