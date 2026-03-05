@@ -28,4 +28,4 @@ Regulated
 	version("0.99.0", md5="0abb67fdc4832325808f78dd7ea41f72")
 
 	depends_on("r@4.3:", type=("build", "run"))
-	depends_on("r_qvalue", type=("build", "run"))
+	depends_on("r-qvalue", type=("build", "run"))
