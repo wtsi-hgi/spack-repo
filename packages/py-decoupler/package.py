@@ -110,7 +110,7 @@ class PyDecoupler(PythonPackage):
     depends_on("py-docrep", when="@2:", type=("build", "run"))
     depends_on("py-marsilea", when="@2:", type=("build", "run"))
     depends_on("py-requests", when="@2:", type=("build", "run"))
-    depends_on("py-scipy", when="@2:", type=("build", "run"))
+    depends_on("py-scipy", type=("build", "run"))
     depends_on("py-session-info2", when="@2:", type=("build", "run"))
 
     depends_on("py-numba", type=("build", "run"))
