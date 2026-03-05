@@ -11,14 +11,14 @@ class PyDecoupler(PythonPackage):
     """Ensemble of methods to infer biological activities from omics data."""
 
     homepage = "https://decoupler.readthedocs.io/"
-    pypi = "decoupler/decoupler-1.8.0-py3-none-any.whl"
+    git = "https://github.com/scverse/decoupler.git"
 
     license("BSD-3-Clause")
 
     version(
         "2.1.4",
-        sha256="356a6010676c8aa199e9e8286e405544d22f1dd8a14a840779c8734423720048",
-        url="https://files.pythonhosted.org/packages/99/49/c2ebe5e019194095bb24f2285c5a6ce3bffae14c32cbdc4968d33aa2eb05/decoupler-2.1.4.tar.gz",
+        sha256="a732a35fc3a8ac4c847a71b2c975dd640613001af4bcdff6e93a6091a6d2c6e4",
+        url="https://github.com/scverse/decoupler/archive/refs/tags/v2.1.4.tar.gz",
     )
     version(
         "1.8.0",
@@ -106,6 +106,7 @@ class PyDecoupler(PythonPackage):
 
     depends_on("py-adjusttext", when="@2:", type=("build", "run"))
     depends_on("py-anndata", when="@:1.6", type=("build", "run"))
+    depends_on("py-anndata", when="@1.7:1.8", type=("build", "run"))
     depends_on("py-anndata", when="@2:", type=("build", "run"))
     depends_on("py-docrep", when="@2:", type=("build", "run"))
     depends_on("py-marsilea", when="@2:", type=("build", "run"))
@@ -119,7 +120,7 @@ class PyDecoupler(PythonPackage):
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-numpy@1.0:1", when="@1.7:1.8", type=("build", "run"))
 
-    depends_on("py-pandas", type=("build", "run"))
+    depends_on("py-pandas", when="@:1.8", type=("build", "run"))
     depends_on("py-pandas@2.2.2:", when="@1.7:1.8", type=("build", "run"))
 
     depends_on("py-tqdm", type=("build", "run"))
