@@ -4,6 +4,13 @@
 
 import os
 
+from llnl.util import filesystem as fs
+import spack.builder
+from spack.build_systems.python import (
+    PythonPipBuilder as _PythonPipBuilder,
+    _flatten_dict,
+    execute_install_time_tests,
+)
 from spack.package import *
 
 
@@ -72,3 +79,38 @@ class PyFlye(PythonPackage):
             "import flye, flye.six",
             env=env,
         )
+
+
+class PythonPipBuilder(_PythonPipBuilder):
+    """Custom pip builder that forces legacy setuptools installs.
+
+    Flye's ``setup.py`` copies pre-built binaries during ``install``.
+    For newer pip versions the default PEP 517 wheel build places
+    ``install_scripts`` inside ``build/bdist...`` which breaks that copy
+    step.  Force ``pip`` to use the legacy ``setup.py install`` path
+    with ``--no-use-pep517`` so Flye can stage its binaries correctly.
+    """
+
+    def install(self, pkg, spec, prefix):
+        args = _PythonPipBuilder.std_args(pkg) + ["--no-use-pep517", f"--prefix={prefix}"]
+
+        for setting in _flatten_dict(self.config_settings(spec, prefix)):
+            args.append(f"--config-settings={setting}")
+        for option in self.install_options(spec, prefix):
+            args.append(f"--install-option={option}")
+        for option in self.global_options(spec, prefix):
+            args.append(f"--global-option={option}")
+
+        if pkg.stage.archive_file and pkg.stage.archive_file.endswith(".whl"):
+            args.append(pkg.stage.archive_file)
+        else:
+            args.append(".")
+
+        pip = spec["python"].command
+        pip.add_default_env("PYTHONNOUSERSITE", "1")
+        pip.add_default_arg("-m")
+        pip.add_default_arg("pip")
+        with fs.working_dir(self.build_directory):
+            pip(*args)
+
+    spack.builder.run_after("install")(execute_install_time_tests)
