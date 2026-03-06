@@ -18,6 +18,11 @@ class RShortread(RPackage):
 
 	bioc = "ShortRead"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ShortRead_1.60.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ShortRead/ShortRead_1.60.0.tar.gz"]
+	version(
+		"1.68.0",
+		md5="43070d34a1b5f924c71600ad8dcc965b",
+		url="https://www.bioconductor.org/packages/3.22/bioc/src/contrib/ShortRead_1.68.0.tar.gz",
+	)
 	version("1.60.0", md5="480786b1db8f8138a7a4e8c36f9bdfc4")
 	version("1.58.0", commit="433d18266b141ddcc9dc590f5244163a04efebe3")
 	version("1.56.0", commit="df25d0872d52aac3610998abda0d7bfd37298726")
@@ -33,6 +38,7 @@ class RShortread(RPackage):
 	depends_on("r-biocgenerics@0.23.3:", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))
 	depends_on("r-biostrings", type=("build", "run"))
+	depends_on("r-biostrings@2.47.6:", type=("build", "run"), when="@1.68.0:")
 	depends_on("r-rsamtools@1.31.2:", type=("build", "run"))
 	depends_on("r-genomicalignments@1.15.6:", type=("build", "run"))
 	depends_on("r-biobase", type=("build", "run"))
@@ -40,7 +46,9 @@ class RShortread(RPackage):
 	depends_on("r-iranges", type=("build", "run"))
 	depends_on("r-genomeinfodb@1.15.2:", type=("build", "run"))
 	depends_on("r-genomicranges@1.31.8:", type=("build", "run"))
+	depends_on("r-seqinfo", type=("build", "run"), when="@1.68.0:")
 	depends_on("r-hwriter", type=("build", "run"))
+	depends_on("r-pwalign", type=("build", "run"), when="@1.68.0:")
 	depends_on("r-zlibbioc", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))
 	depends_on("r-latticeextra", type=("build", "run"))
