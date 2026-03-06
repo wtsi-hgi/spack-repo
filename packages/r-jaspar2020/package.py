@@ -15,6 +15,7 @@ class RJaspar2020(RPackage):
     homepage = "http://jaspar.genereg.net/"
     bioc = "JASPAR2020"
     urls = [
+        "https://bioconductor.statistik.tu-dortmund.de/packages/3.18/data/annotation/src/contrib/JASPAR2020_0.99.10.tar.gz",
         "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/JASPAR2020_0.99.10.tar.gz",
         "https://www.bioconductor.org/packages/3.18/data/annotation/src/contrib/Archive/JASPAR2020/JASPAR2020_0.99.10.tar.gz",
     ]
