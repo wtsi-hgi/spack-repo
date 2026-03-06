@@ -99,33 +99,44 @@ class PyDecoupler(PythonPackage):
         url="https://files.pythonhosted.org/packages/05/6d/f36d1071a12e13c26a02636061c4d680dd28495718a7b55d0d2e5733d8fe/decoupler-1.0.0-py3-none-any.whl",
     )
 
-    depends_on("python@3.9:", type=("build", "run"))
-    depends_on("python@3.10:", when="@2:", type=("build", "run"))
+    with when("@2.1.0:"):
+        depends_on("py-scipy")
 
-    depends_on("py-hatchling", type="build", when="@2:")
+    with when("@2.1.0:2.1.3"):
+        depends_on("py-scipy@:1.15")
 
-    depends_on("py-adjusttext", when="@2:", type=("build", "run"))
-    depends_on("py-anndata", when="@:1.6", type=("build", "run"))
-    depends_on("py-anndata", when="@2:", type=("build", "run"))
-    depends_on("py-docrep", when="@2:", type=("build", "run"))
-    depends_on("py-marsilea", when="@2:", type=("build", "run"))
-    depends_on("py-requests", when="@2:", type=("build", "run"))
-    depends_on("py-scipy", type=("build", "run"))
-    depends_on("py-session-info2", when="@2:", type=("build", "run"))
+    with when("@2.0.0:"):
+        depends_on("python@3.10:")
+        depends_on("py-adjusttext")
+        depends_on("py-docrep")
+        depends_on("py-marsilea")
+        depends_on("py-requests")
+        depends_on("py-session-info2")
+        depends_on("py-hatchling", type="build")
+        
 
-    depends_on("py-numba", type=("build", "run"))
-    depends_on("py-numba@0.60:0.60", when="@1.7:1.8", type=("build", "run"))
+    with when("@2.0.0:2.0.2"):
+        depends_on("py-seaborn")
+        depends_on("py-igraph")
+        depends_on("py-xgboost")
 
-    depends_on("py-numpy", type=("build", "run"))
-    depends_on("py-numpy@1.0:1", when="@1.7:1.8", type=("build", "run"))
+    with when("@1.9.2"):
+        depends_on("python@3.10:3.11")
+        depends_on("py-tqdm@4.66")
+        depends_on("py-numba@0.61")
+        depends_on("py-pandas@2.2")
 
-    depends_on("py-pandas", type=("build", "run"))
-    depends_on("py-pandas@2.2.2:", when="@1.7:1.8", type=("build", "run"))
+    with when("@:1.9.2"):
+        depends_on("py-typing-extensions@4.12")
+        
+    with when("@1.6:1.9.2"):
+        depends_on("py-poetry-core@1.0.0:", type="build")
+        
+    depends_on("python@3.6:")
+    depends_on("py-numba")
+    depends_on("py-anndata")
+    depends_on("py-tqdm")
 
-    depends_on("py-tqdm", type=("build", "run"))
-    depends_on("py-tqdm@4.66.4:", when="@1.7:", type=("build", "run"))
-
-    depends_on("py-typing-extensions", when="@1.3.1:1.8", type=("build", "run"))
 
     def patch(self):
         if self.spec.satisfies("@2:"):
