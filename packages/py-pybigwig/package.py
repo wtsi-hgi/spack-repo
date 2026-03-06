@@ -3,6 +3,7 @@
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
 from spack.package import *
+from spack.util.executable import ProcessError
 
 
 class PyPybigwig(PythonPackage):
@@ -34,8 +35,22 @@ class PyPybigwig(PythonPackage):
             )
 
     def setup_build_environment(self, env):
-        # Force stdlib distutils when available so numpy.distutils can import msvc stubs
-        if self.spec["python"].satisfies("@:3.11"):
+        """Select the distutils implementation dynamically.
+
+        Some Python builds (including newer ones) no longer ship stdlib
+        ``distutils`` modules, which causes numpy.distutils to fail when it tries
+        to import ``distutils.msvccompiler``.  We probe the build Python and fall
+        back to the vendored setuptools implementation when the stdlib module is
+        missing.
+        """
+
+        python = self.spec["python"].command
+
+        try:
+            python("-c", "import distutils.msvccompiler")
+        except ProcessError:
+            env.set("SETUPTOOLS_USE_DISTUTILS", "local")
+        else:
             env.set("SETUPTOOLS_USE_DISTUTILS", "stdlib")
 
     @run_after("install")
