@@ -26,3 +26,14 @@ class RBasilisk(RPackage):
 	depends_on("r-reticulate", type=("build", "run"))
 	depends_on("r-dir-expiry", type=("build", "run"))
 	depends_on("r-basilisk-utils@1.14.1:", type=("build", "run"))
+
+	def setup_build_environment(self, env):
+		super().setup_build_environment(env)
+		# basilisk downloads several large Conda artifacts during configure()
+		# via basilisk.utils::installConda(). Give download.file() ample time.
+		env.set("R_DEFAULT_INTERNET_TIMEOUT", "3600")
+		# Conda/pip also download sizeable payloads; extend their timeouts so
+		# network hiccups on the build farm do not abort the install.
+		env.set("CONDA_REMOTE_CONNECT_TIMEOUT_SECS", "3600")
+		env.set("CONDA_REMOTE_READ_TIMEOUT_SECS", "3600")
+		env.set("PIP_DEFAULT_TIMEOUT", "3600")
