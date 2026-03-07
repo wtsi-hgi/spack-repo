@@ -41,3 +41,23 @@ class RPatchwork(RPackage):
 	depends_on("r-cli", type=("build", "run"), when="@1.1.3:")
 
 	depends_on("r-farver", type=("build", "run"), when="@1.3.0:")
+
+	def patch(self):
+		"""Make the package compatible with ggplot2 >= 3.5 where is_ggplot was removed."""
+
+		namespace = join_path(self.stage.source_path, "NAMESPACE")
+		filter_file(
+			"importFrom(ggplot2,is_ggplot)",
+			"importFrom(ggplot2,is.ggplot)",
+			namespace,
+			string=True,
+		)
+
+		compat_path = join_path(self.stage.source_path, "R", "spack-compat.R")
+		with open(compat_path, "w", encoding="utf-8") as compat_file:
+			compat_file.write(
+				"# Added by Spack to keep compatibility with ggplot2 >= 3.5\n"
+				"if (!exists(\"is_ggplot\", inherits = FALSE)) {\n"
+				"    is_ggplot <- ggplot2::is.ggplot\n"
+				"}\n"
+			)
