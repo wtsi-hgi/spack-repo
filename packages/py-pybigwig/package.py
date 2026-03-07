@@ -21,6 +21,7 @@ class PyPybigwig(PythonPackage):
 
     depends_on("curl", type=("build", "link", "run"))
     depends_on("py-setuptools", type="build")
+    depends_on("py-setuptools@:59", type="build", when="@:0.3.12")
 
     depends_on("py-numpy", type=("build", "run"), when="+numpy")
 
@@ -34,9 +35,9 @@ class PyPybigwig(PythonPackage):
             )
 
     def setup_build_environment(self, env):
-        # Force stdlib distutils when available so numpy.distutils can import msvc stubs
-        if self.spec["python"].satisfies("@:3.11"):
-            env.set("SETUPTOOLS_USE_DISTUTILS", "stdlib")
+        # numpy.distutils imports distutils.msvccompiler even when unused; force the
+        # stdlib implementation so the module is always present during the build.
+        env.set("SETUPTOOLS_USE_DISTUTILS", "stdlib")
 
     @run_after("install")
     def install_test(self):
