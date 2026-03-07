@@ -113,8 +113,10 @@ class PyDecoupler(PythonPackage):
     depends_on("py-scipy", when="@2:", type=("build", "run"))
     depends_on("py-session-info2", when="@2:", type=("build", "run"))
 
-    depends_on("py-numba", type=("build", "run"))
+    # numba 0.60 removes keyword arguments for np.arange; older decoupler fails to jit.
+    depends_on("py-numba@:0.59", when="@:1.6", type=("build", "run"))
     depends_on("py-numba@0.60:0.60", when="@1.7:1.8", type=("build", "run"))
+    depends_on("py-numba", when="@2:", type=("build", "run"))
 
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-numpy@1.0:1", when="@1.7:1.8", type=("build", "run"))
