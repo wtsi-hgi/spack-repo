@@ -114,7 +114,8 @@ class PyDecoupler(PythonPackage):
     depends_on("py-session-info2", when="@2:", type=("build", "run"))
 
     depends_on("py-numba", type=("build", "run"))
-    depends_on("py-numba@0.60:0.60", when="@1.7:1.8", type=("build", "run"))
+    depends_on("py-numba@:0.59", when="@:1.7", type=("build", "run"))
+    depends_on("py-numba@0.60", when="@1.7:1.8", type=("build", "run"))
 
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-numpy@1.0:1", when="@1.7:1.8", type=("build", "run"))
@@ -123,6 +124,7 @@ class PyDecoupler(PythonPackage):
     depends_on("py-pandas@2.2.2:", when="@1.7:1.8", type=("build", "run"))
 
     depends_on("py-tqdm", type=("build", "run"))
+    depends_on("py-tqdm@:4.66.4", when="@:1.6", type=("build", "run"))
     depends_on("py-tqdm@4.66.4:", when="@1.7:1.8", type=("build", "run"))
 
     depends_on("py-typing-extensions", when="@1.3.1:1.8", type=("build", "run"))
