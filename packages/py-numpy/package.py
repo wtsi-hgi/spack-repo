@@ -22,6 +22,20 @@ class PyNumpy(PythonPackage):
     license("BSD-3-Clause")
 
     version("main", branch="main")
+    version("2.3.5", sha256="784db1dcdab56bf0517743e746dfb0f885fc68d948aba86eeec2cba234bdf1c0")
+    version("2.3.4", sha256="a7d018bfedb375a8d979ac758b120ba846a7fe764911a64465fd87b8729f4a6a")
+    version("2.3.3", sha256="ddc7c39727ba62b80dfdbedf400d1c10ddfa8eefbd7ec8dcb118be8b56d31029")
+    version("2.3.2", sha256="e0486a11ec30cdecb53f184d496d1c6a20786c81e55e41640270130056f8ee48")
+    version("2.3.1", sha256="1ec9ae20a4226da374362cca3c62cd753faf2f951440b0e3b98e93c235441d2b")
+    version("2.3.0", sha256="581f87f9e9e9db2cba2141400e160e9dd644ee248788d6f90636eeb8fd9260a6")
+    version("2.2.6", sha256="e29554e2bef54a90aa5cc07da6ce955accb83f21ab5de01a62c8478897b264fd")
+    version("2.2.5", sha256="a9c0d994680cd991b1cb772e8b297340085466a6fe964bc9d4e80f5e2f43c291")
+    version("2.2.4", sha256="9ba03692a45d3eef66559efe1d1096c4b9b75c0986b5dff5530c378fb8331d4f")
+    version("2.2.3", sha256="dbdc15f0c81611925f382dfa97b3bd0bc2c1ce19d4fe50482cb0ddc12ba30020")
+    version("2.2.2", sha256="ed6906f61834d687738d25988ae117683705636936cc605be0bb208b23df4d8f")
+    version("2.2.1", sha256="45681fd7128c8ad1c379f0ca0776a8b0c6583d2f69889ddac01559dfe4390918")
+    version("2.2.0", sha256="140dd80ff8981a583a60980be1a655068f8adebf7a45a06a6858c873fcdcd4a0")
+    version("2.1.3", sha256="aa08e04e08aaf974d4458def539dece0d28146d866a39da5639596f4921fd761")
     version("2.1.2", sha256="13532a088217fa624c99b843eeb54640de23b3414b14aa66d023805eb731066c")
     version("2.1.1", sha256="d0cf7d55b1051387807405b3898efafa862997b4cba8aa5dbe657be794afeafd")
     version("2.1.0", sha256="7dc90da0081f7e1da49ec4e398ede6a8e9cc4f5ebe5f9e06b443ed889ee9aaa2")
@@ -82,7 +96,9 @@ class PyNumpy(PythonPackage):
 
     # Based on PyPI wheel availability
     with default_args(type=("build", "link", "run")):
-        depends_on("python@3.10:3.13", when="@2.1:")
+        depends_on("python@3.11:3.14", when="@2.3.2:")
+        depends_on("python@3.11:3.13", when="@2.3.0:2.3.1")
+        depends_on("python@3.10:3.13", when="@2.1:2.2")
         depends_on("python@3.9:3.12", when="@1.26:2.0")
         depends_on("python@3.9:3.11", when="@1.25")
         depends_on("python@3.8:3.11", when="@1.23.2:1.24")
