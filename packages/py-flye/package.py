@@ -39,13 +39,18 @@ class PyFlye(PythonPackage):
     conflicts("%apple-clang@:4.9", msg=msg)
 
     def patch(self):
+        """Ensure Flye's custom install step always has a writable scripts dir."""
+
+        replacement = (
+            "install_dir = self.install_scripts or os.path.join(self.install_lib, 'scripts')\n"
+            "        install_dir = os.path.abspath(install_dir)\n"
+            "        if not os.path.isdir(install_dir):\n"
+            "            os.makedirs(install_dir)\n"
+        )
+
         filter_file(
             "install_dir = self.install_scripts",
-            (
-                "install_dir = self.install_scripts\n"
-                "        if not os.path.isdir(install_dir):\n"
-                "            os.makedirs(install_dir)\n"
-            ),
+            replacement,
             "setup.py",
             string=True,
         )
