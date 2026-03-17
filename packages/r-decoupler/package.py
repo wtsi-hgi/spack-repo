@@ -22,6 +22,21 @@ class RDecoupler(RPackage):
         sha256="a4adc855862b31268fbff9f7a3e5e13ec9ad416cc17dd43a5d72c46492fddb5d",
         url="https://github.com/saezlab/decoupleR/archive/refs/tags/v2.9.7.tar.gz",
     )
+	version(
+        "2.9.6",
+        sha256="64af52a6e1a8127e81421ceb3cb680e9680a3d81c3fae8e4140f314e27588044",
+        url="https://github.com/saezlab/decoupleR/archive/refs/tags/v2.9.6.tar.gz",
+    )
+	version(
+        "2.9.5",
+        sha256="9ee0de14c49acad129db097e6f5944b21083dfd42e4fafdcee3226fbf16abb96",
+        url="https://github.com/saezlab/decoupleR/archive/refs/tags/v2.9.5.tar.gz",
+    )
+	version(
+        "2.9.4",
+        sha256="0333cb8f4b4a39dc81a2b721d02d7d1a1d28a6bb681a214350c4d1c4c4d51dfa",
+        url="https://github.com/saezlab/decoupleR/archive/refs/tags/v2.9.4.tar.gz",
+    )
 	version("2.8.0", md5="de2a391693476223ec54521aa77ba121")
 
 
