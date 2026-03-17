@@ -43,7 +43,7 @@ class RDecoupler(RPackage):
 	with default_args(type=("build", "run")): 
 		depends_on("r@4:")
 
-		with when("@2.9.7"):
+		with when("@2.9:"):
 			depends_on("r-biocparallel")
 			depends_on("r-parallelly")
 
