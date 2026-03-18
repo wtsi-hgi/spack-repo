@@ -12,6 +12,8 @@ class PyScarches(PythonPackage):
 	homepage = "https://github.com/theislab/scarches"
 	pypi = "scarches/scArches-0.6.1-py3-none-any.whl" 
 
+	variant("cuda", default=False, description="Enable CUDA support for PyTorch dependencies")
+
 	version("0.1.0", sha256="796c41f94051d4d4a705415c4846b1967dbe01e86fce3b8dec36fab83d653460")
 	version("0.1.1", sha256="ff949be1de7ca9293b792432d90da36b9abe39d824fc5eb8109784e39cf32c23", expand=False, url="https://files.pythonhosted.org/packages/3d/f2/40b8f480ad6073a649447408dd5f302655bb1efd1dbc6add272c5a7e2fba/scArches-0.1.1-py3-none-any.whl")
 	version("0.1.2", sha256="d7747a1743d5925fc6f218372643c38479d7f6ed486c83091355edd374acb9b9", expand=False, url="https://files.pythonhosted.org/packages/f6/a5/8b2923473246e6c672d023b9f3db5232be2541332337dd9200a24653295f/scArches-0.1.2-py3-none-any.whl")
@@ -44,14 +46,24 @@ class PyScarches(PythonPackage):
 	depends_on("py-setuptools", type=("build"))
 	depends_on("py-scanpy", type=("build", "run"))
 	depends_on("py-schpl", type=("build", "run"))
-	depends_on("py-h5py", type=("build", "run"))
-	depends_on("py-torch", type=("build", "run"))
-	depends_on("py-numpy", type=("build", "run"))
-	depends_on("py-scipy@:1.12", type=("build", "run"))
+	depends_on("py-h5py~mpi", type=("build", "run"))
+	depends_on(
+		"py-torch@1.8:+cuda cuda_arch=70,72,75,80,86,87,89,90",
+		type=("build", "run"),
+		when="+cuda",
+	)
+	depends_on(
+		"py-torch@1.8:~cuda~distributed cuda_arch=none",
+		type=("build", "run"),
+		when="~cuda",
+	)
+	depends_on("py-numpy@1.26:1.26", type=("build", "run"))
+	depends_on("py-scipy@1.8:1.11", type=("build", "run"))
 	depends_on("py-scikit-learn", type=("build", "run"))
 	depends_on("py-matplotlib", type=("build", "run"))
 	depends_on("py-pandas", type=("build", "run"))
-	depends_on("py-scvi-tools@0.20.0:", type=("build", "run"))
+	depends_on("py-scvi-tools@0.20.0:+cuda", type=("build", "run"), when="+cuda")
+	depends_on("py-scvi-tools@0.20.0:~cuda", type=("build", "run"), when="~cuda")
 	depends_on("py-tqdm", type=("build", "run"))
 	depends_on("py-requests", type=("build", "run"))
 	depends_on("py-gdown", type=("build", "run"))

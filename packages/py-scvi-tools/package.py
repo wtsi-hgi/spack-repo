@@ -12,6 +12,8 @@ class PyScviTools(PythonPackage):
     homepage = "http://scvi-tools.org/"
     pypi = "scvi-tools/scvi_tools-1.1.2-py3-none-any.whl"
 
+    variant("cuda", default=False, description="Enable CUDA support via PyTorch")
+
     version(
         "0.10.0",
         sha256="f3d13de9656a5105febb16f06e8ac07986907c41700fe9b0a77f9f28cd456808",
@@ -472,21 +474,31 @@ class PyScviTools(PythonPackage):
     depends_on("python@3.9:", type=("build", "run"))
     depends_on("py-tqdm", type=("build", "run"))
     depends_on("py-torchmetrics", type=("build", "run"))
-    depends_on("py-torch@2.2:+cuda cuda_arch=70,72,75,80,86,87,89,90")
-    depends_on("py-scipy@:1.10", type=("build", "run"))
+    depends_on(
+        "py-torch@2.2:+cuda cuda_arch=70,72,75,80,86,87,89,90",
+        when="+cuda",
+        type=("build", "run"),
+    )
+    depends_on(
+        "py-torch@2.2:~cuda~distributed cuda_arch=none",
+        when="~cuda",
+        type=("build", "run"),
+    )
+    depends_on("py-scipy@:1.10", type=("build", "run"), when="@:0.19")
+    depends_on("py-scipy@1.8:1.11", type=("build", "run"), when="@0.20:")
     depends_on("py-scikit-learn", type=("build", "run"))
     depends_on("py-rich", type=("build", "run"))
     depends_on("py-pyro-ppl", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-optax", type=("build", "run"))
     depends_on("py-numpyro", type=("build", "run"))
-    depends_on("py-numpy", type=("build", "run"))
+    depends_on("py-numpy@1.26:1.26", type=("build", "run"))
     depends_on("py-mudata", type=("build", "run"))
     depends_on("py-ml-collections", type=("build", "run"))
     depends_on("py-lightning", type=("build", "run"))
     depends_on("py-jaxlib", type=("build", "run"))
     depends_on("py-jax", type=("build", "run"))
-    depends_on("py-h5py", type=("build", "run"))
+    depends_on("py-h5py~mpi", type=("build", "run"))
     depends_on("py-flax", type=("build", "run"))
     depends_on("py-docrep", type=("build", "run"))
     depends_on("py-anndata@0.8.0:0.10", type=("build", "run"), when="@0.20")
