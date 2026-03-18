@@ -53,7 +53,7 @@ class PyScarches(PythonPackage):
 		depends_on("py-scikit-learn")
 		depends_on("py-matplotlib")
 		depends_on("py-pandas")
-		depends_on("py-scvi-tools@0.20.0:")
+		depends_on("py-scvi-tools")
 		depends_on("py-tqdm")
 		depends_on("py-requests")
 		depends_on("py-gdown")
