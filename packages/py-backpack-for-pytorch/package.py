@@ -39,16 +39,4 @@ class PyBackpackForPytorch(PythonPackage):
     @run_after("install")
     def install_test(self):
         with working_dir("spack-test", create=True):
-            python = self.spec["python"].command
-            pyver = self.spec["python"].version.up_to(2)
-            site_packages = join_path(self.prefix, f"lib/python{pyver}", "site-packages")
-            env = os.environ.copy()
-            pythonpaths = [site_packages]
-            for dependency in self.spec.traverse(order="post", deptype=("build", "run")):
-                candidate = join_path(dependency.prefix, f"lib/python{pyver}", "site-packages")
-                if os.path.isdir(candidate) and candidate not in pythonpaths:
-                    pythonpaths.append(candidate)
-            if env.get("PYTHONPATH"):
-                pythonpaths.append(env["PYTHONPATH"])
-            env["PYTHONPATH"] = os.pathsep.join(pythonpaths)
-            python("-c", "import backpack", env=env)
+            python("-c", "import backpack")
