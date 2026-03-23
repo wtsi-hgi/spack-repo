@@ -12,10 +12,10 @@ class Flare(Package):
     on phased genotype data."""
 
     homepage = "https://github.com/browning-lab/flare"
-    git = "https://github.com/browning-lab/flare.git"
+    url = "https://github.com/browning-lab/flare/archive/refs/tags/v0.6.0.tar.gz"
 
     license("Apache-2.0")
-    version("20251103", commit="d6a6c8fd4479ebdb68529824acd11d2b6bbac4a1")
+    version("0.6.0", sha256="c2e85498e5d8c7e0131d707581096aee0b421b3e9480d3f6bb684653cb579be4")
 
     depends_on("openjdk@11:", type=("build", "run"))
 
