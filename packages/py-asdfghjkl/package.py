@@ -43,20 +43,6 @@ class PyAsdfghjkl(PythonPackage):
             file,
             string=True,
         )
-        filter_file(
-            "        if len(grads) == 0:",
-            "        if op is None:\n"
-            "            reduce_op = getattr(dist, 'ReduceOp', None)\n"
-            "            if reduce_op is None:\n"
-            "                raise RuntimeError(\n"
-            "                    \"torch.distributed ReduceOp is unavailable; build py-torch with\"\n"
-            "                    \" distributed support to use ASDL distributed features.\"\n"
-            "                )\n"
-            "            op = reduce_op.SUM\n"
-            "        if len(grads) == 0:",
-            file,
-            string=True,
-        )
 
     @run_after("install")
     def install_test(self):
