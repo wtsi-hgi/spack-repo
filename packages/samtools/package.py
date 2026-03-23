@@ -17,11 +17,16 @@ class Samtools(Package):
     url = "https://github.com/samtools/samtools/releases/download/1.13/samtools-1.13.tar.bz2"
 
     license("MIT")
+    version("1.23.1", sha256="32266198a4bc6a6df395d8526688c9697d9c8e472f888c749fdde2e08ea88dd2")
+    version("1.23", sha256="f228db57d25b724ea26fe55c1c91529f084ef564888865fb190dd87bd04ee74c")
+    version("1.22.2", sha256="4bab5c0b6ea7708a5b4594587bf0a63a035ca437e8b32f9b076a5b69a53300ce")
     version("1.22.1", sha256="02aa5cd0ba52e06c2080054e059d7d77a885dfe9717c31cd89dfe7a4047eda0e")
     version("1.22", sha256="4911d01720f246cb97855870b410bbe4d2c2fd7fbf823ea0f7daf0f32545819d")
+    version("1.21.1", sha256="11ee02a1de3b2228045c64221e64c32bfa472a4fee982e79d92a439a14c2dbd1")
     version("1.21", sha256="05724b083a6b6f0305fcae5243a056cc36cf826309c3cb9347a6b89ee3fc5ada")
     version("1.20", sha256="c71be865e241613c2ca99679c074f1a0daeb55288af577db945bdabe3eb2cf10")
     version("1.19.2", sha256="71f60499668e4c08e7d745fbff24c15cc8a0977abab1acd5d2bb419bdb065e96")
+    version("1.19.1", sha256="1f94915cc32dcb6095049ed57560d99b409ba9297f4316bab551d05bb57ff355")
     version("1.19", sha256="fa6b3b18e20851b6f3cb55afaf3205d02fcb79dae3b849fcf52e8fc10ff08b83")
     version("1.18", sha256="d686ffa621023ba61822a2a50b70e85d0b18e79371de5adb07828519d3fc06e1")
     version("1.17", sha256="3adf390b628219fd6408f14602a4c4aa90e63e18b395dad722ab519438a2a729")
@@ -57,11 +62,16 @@ class Samtools(Package):
     depends_on("htslib-plugins", when="@1.20:")
 
     # htslib became standalone @1.3.1, must use corresponding version
+    depends_on("htslib@1.23.1", when="@1.23.1")
+    depends_on("htslib@1.23", when="@1.23")
+    depends_on("htslib@1.22.2", when="@1.22.2")
     depends_on("htslib@1.22.1", when="@1.22.1")
     depends_on("htslib@1.22", when="@1.22")
+    depends_on("htslib@1.21.1", when="@1.21.1")
     depends_on("htslib@1.21", when="@1.21")
     depends_on("htslib@1.20", when="@1.20")
     depends_on("htslib@1.19.1", when="@1.19.2")
+    depends_on("htslib@1.19.1", when="@1.19.1")
     depends_on("htslib@1.19", when="@1.19")
     depends_on("htslib@1.18", when="@1.18")
     depends_on("htslib@1.17", when="@1.17")
@@ -120,3 +130,9 @@ class Samtools(Package):
             install("sam.h", prefix.include)
             install("bam.h", prefix.include)
             install("libbam.a", prefix.lib)
+
+    @run_after("install")
+    def install_test(self):
+        samtools = Executable(join_path(self.prefix.bin, "samtools"))
+        with working_dir("spack-test", create=True):
+            samtools("--help")
