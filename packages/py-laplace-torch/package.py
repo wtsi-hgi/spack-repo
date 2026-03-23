@@ -41,7 +41,7 @@ class PyLaplaceTorch(PythonPackage):
     depends_on("py-backpack-for-pytorch", type=("build", "run"))
     depends_on("py-asdfghjkl", type=("build", "run"), when="@:0.1a2")
     depends_on("py-asdfghjkl@0.1a4", type=("build", "run"), when="@0.2.1:")
-    depends_on("py-curvlinops-for-pytorch@3.0.1:", type=("build", "run"), when="@0.2.1:")
+    depends_on("py-curvlinops-for-pytorch@2.0.0:2.0.1", type=("build", "run"), when="@0.2.1:")
     depends_on("py-numpy", type=("build", "run"), when="@0.2.2:")
     depends_on("py-opt-einsum", type=("build", "run"), when="@0.2.1:")
     depends_on("py-torchmetrics", type=("build", "run"), when="@0.2.1:")

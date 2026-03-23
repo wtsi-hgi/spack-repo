@@ -69,14 +69,6 @@ class PyCurvlinopsForPytorch(PythonPackage):
     depends_on("py-linear-operator@0.2:", type=("build", "run"), when="@3:")
     depends_on("py-opt-einsum@3.4:", type=("build", "run"), when="@3.0.1:")
 
-    def patch(self):
-        base_file = join_path("curvlinops", "_base.py")
-        if not os.path.exists(base_file):
-            with open(base_file, "w", encoding="utf-8") as fh:
-                fh.write(
-                    "from ._torch_base import *\n"
-                    "from ._torch_base import PyTorchLinearOperator as _LinearOperator\n"
-                )
 
     @run_after("install")
     def install_test(self):
