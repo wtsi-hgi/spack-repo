@@ -22,6 +22,7 @@ class RBeachmat(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/beachmat/beachmat_2.18.1.tar.gz",
     ]
 
+    version("2.26.0", tag="RELEASE_3_22")
     version("2.6.4", commit="7d9dc6379017d723dda3e8dc9fd1f6de7fd33cdb")
     version("2.24.0", tag="RELEASE_3_21")
     version("2.18.1", md5="37b7abdc24627d4abb87fd0beb5b3930")
@@ -42,3 +43,4 @@ class RBeachmat(RPackage):
     depends_on("r-matrix", type=("build", "run"))
     depends_on("r-rcpp", type=("build", "run"))
     depends_on("r-assorthead", type=("build", "run"), when="@2.24:")
+    depends_on("r-assorthead@1.3.3:", type=("build", "run"), when="@2.26:")
