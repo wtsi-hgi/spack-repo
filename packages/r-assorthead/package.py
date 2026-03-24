@@ -43,6 +43,7 @@ class RAssorthead(RPackage):
 
     license("MIT")
 
+    version("1.4.0", sha256="fd25a7457a5c675a06c284334781c6b9f510fae4b625896359e7dd83a61a517b")
     version("1.3.0", tag="RELEASE_3_21")
     version("1.0.1", sha256="98f535b69165bb2b0c7c5bc67e412ceccb3c78ac19fe7580254a5a97028791d5")
 
