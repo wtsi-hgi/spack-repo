@@ -6,6 +6,7 @@
 import re
 
 from spack.package import *
+from spack.version import Version
 
 
 class Bazel(Package):
@@ -24,6 +25,10 @@ class Bazel(Package):
 
     license("Apache-2.0")
 
+    version(
+        "7.4.1",
+        sha256="83386618bc489f4da36266ef2620ec64a526c686cf07041332caff7c953afaf5",
+    )
     version(
         "7.0.2",
         sha256="dea2b90575d43ef3e41c402f64c2481844ecbf0b40f8548b75a204a4d504e035",
@@ -221,7 +226,8 @@ class Bazel(Package):
     )
 
     # https://bazel.build/install/compile-source#bootstrap-unix-prereq
-    depends_on("openjdk@11", when="@5.3:", type=("build", "run"))
+    depends_on("openjdk@21:", when="@7:", type=("build", "run"))
+    depends_on("openjdk@11", when="@5.3:6", type=("build", "run"))
     depends_on("openjdk@1.8,11", when="@3.3:5.2", type=("build", "run"))
     depends_on("openjdk@1.8", when="@0.6:3.2", type=("build", "run"))
     depends_on("python+pythoncmd", type=("build", "run"))
@@ -238,7 +244,6 @@ class Bazel(Package):
     patch("compile-0.29.patch")
 
     # Disable dependency search
-    patch("cppcompileaction-7.0.0.patch", when="@7: +nodepfail")
     patch("cppcompileaction-0.3.2.patch", when="@:6 +nodepfail")
 
     # https://github.com/bazelbuild/bazel/issues/17956
@@ -316,6 +321,15 @@ class Bazel(Package):
         match = re.search(r"Build label: ([\d.]+)", output)
         return match.group(1) if match else None
 
+    def patch(self):
+        if self.spec.satisfies("@7:") and self.spec.satisfies("+nodepfail"):
+            filter_file(
+                "absolutePathProblems.add(execPathFragment.getPathString());",
+                "// absolutePathProblems.add(execPathFragment.getPathString());",
+                "src/main/java/com/google/devtools/build/lib/rules/cpp/HeaderDiscovery.java",
+                string=True,
+            )
+
     def setup_build_environment(self, env):
         # fix the broken linking (on power9)
         # https://github.com/bazelbuild/bazel/issues/10327
@@ -327,6 +341,8 @@ class Bazel(Package):
         args = "--color=no --define=ABSOLUTE_JAVABASE={0} --verbose_failures --jobs={1}".format(
             self.spec["java"].prefix, make_jobs
         )
+        if self.spec["java"].version >= Version("21"):
+            args += " --tool_java_runtime_version=local_jdk"
 
         resource_stages = self.stage[1:]
         for _resource in resource_stages:
