@@ -22,10 +22,11 @@ class RBiocneighbors(RPackage):
     bioc = "BiocNeighbors"
     git = "https://git.bioconductor.org/packages/BiocNeighbors"
     urls = [
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/BiocNeighbors_1.20.2.tar.gz",
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/BiocNeighbors/BiocNeighbors_1.20.2.tar.gz",
+        "https://www.bioconductor.org/packages/release/bioc/src/contrib/BiocNeighbors_2.4.0.tar.gz",
+        "https://www.bioconductor.org/packages/release/bioc/src/contrib/Archive/BiocNeighbors/BiocNeighbors_2.4.0.tar.gz",
     ]
 
+    version("2.4.0", sha256="7367c7f5ca7c58a3f5b610b3babae2c31f3f310cfde349067da48897494fa0fb")
     version("1.8.2", commit="889bc91f8cb45d210b47ae5c0b9cfb86fb071ca2")
     version("2.2.0", tag="RELEASE_3_21")
     version("1.20.2", md5="60f1ea60fb00cfd92dfa247765da9204")
@@ -36,9 +37,8 @@ class RBiocneighbors(RPackage):
     version("1.12.0", commit="3c8a290f75adc944b408e6e77a36f3a0c1509c4c")
     version("1.0.0", commit="e252fc04b6d22097f2c5f74406e77d85e7060770")
 
+    depends_on("r@4.4:", type=("build", "run"), when="@2.4.0:")
     depends_on("r-rcpp", type=("build", "run"))
-    depends_on("r-s4vectors", type=("build", "run"))
     depends_on("r-biocparallel", type=("build", "run"))
-    depends_on("r-matrix", type=("build", "run"))
-    depends_on("r-rcpphnsw", type=("build", "run"))
-    depends_on("r-assorthead", type=("build", "run"), when="@2.2.0:")
+    depends_on("r-assorthead@1.3.10:", type=("build", "run"), when="@2.4.0:")
+    depends_on("r-assorthead", type=("build", "run"), when="@2.2.0:2.3")
