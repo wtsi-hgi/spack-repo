@@ -37,9 +37,9 @@ class RBiocneighbors(RPackage):
     depends_on("r-rcpp", type=("build", "run"))
     depends_on("r-biocparallel", type=("build", "run"))
     depends_on("r-assorthead@1.3.10:", type=("build", "run"), when="@2.4.0:")
-    depends_on("r-assorthead", type=("build", "run"), when="@2.2.0:2.3")
 
     # Dependencies for versions 2.2 and lower
     depends_on("r-s4vectors", type=("build", "run"), when="@:2.2")
     depends_on("r-matrix", type=("build", "run"), when="@:2.2")
     depends_on("r-rcpphnsw", type=("build", "run"), when="@:2.2")
+    depends_on("r-assorthead@1.3.0", type=("build", "run"), when="@2.2")
