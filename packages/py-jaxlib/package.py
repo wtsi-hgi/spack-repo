@@ -143,6 +143,8 @@ class PyJaxlib(PythonPackage, CudaPackage, ROCmPackage):
         # XLA requires xxd?
         depends_on("xxd-standalone", when="@0.9:")
 
+        depends_on("openjdk")
+
     with default_args(type=("build", "run")):
         # Based on PyPI wheels
         depends_on("python@3.11:", when="@0.7:")
@@ -346,7 +348,6 @@ class PyJaxlib(PythonPackage, CudaPackage, ROCmPackage):
         python(*args)
 
         for whl in glob.glob(join_path("dist", "*.whl")):
-            with working_dir("python"):
-                args = std_pip_args + ["--prefix=" + prefix, wheel]
-                pip(*args)
+            args = std_pip_args + ["--prefix=" + self.prefix, "."]
+            pip(*args)
             # pip(*PythonPipBuilder.std_args(self), f"--prefix={self.prefix}", whl)
