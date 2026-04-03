@@ -22,6 +22,7 @@ class Foldseek(CMakePackage):
     depends_on("openmpi")
     depends_on("rust", type="build")
     depends_on("rust@1.78.0", when="@:9", type="build")
+    depends_on("gcc", type=("build", "run", "link"))  # for libatomic
 
     @run_after("install")
     def install_test(self):
