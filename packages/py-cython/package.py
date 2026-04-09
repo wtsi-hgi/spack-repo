@@ -15,6 +15,20 @@ class PyCython(PythonPackage):
 
     license("Apache-2.0")
 
+    version("3.2.4", sha256="84226ecd313b233da27dc2eb3601b4f222b8209c3a7216d8733b031da1dc64e6")
+    version("3.2.3", sha256="f13832412d633376ffc08d751cc18ed0d7d00a398a4065e2871db505258748a6")
+    version("3.2.2", sha256="c3add3d483acc73129a61d105389344d792c17e7c1cee24863f16416bd071634")
+    version("3.2.1", sha256="2be1e4d0cbdf7f4cd4d9b8284a034e1989b59fd060f6bd4d24bf3729394d2ed8")
+    version("3.2.0", sha256="41fdce8237baee2d961c292ed0386903dfe126f131e450a62de0fd7a5280d4b2")
+    version("3.1.7", sha256="6f78b9053861325a44468fa4b48f11950635cd6d4715e8cd2633c73dd6a75a3d")
+    version("3.1.6", sha256="ff4ccffcf98f30ab5723fc45a39c0548a3f6ab14f01d73930c5bfaea455ff01c")
+    version("3.1.5", sha256="7e73c7e6da755a8dffb9e0e5c4398e364e37671778624188444f1ff0d9458112")
+    version("3.1.4", sha256="9aefefe831331e2d66ab31799814eae4d0f8a2d246cbaaaa14d1be29ef777683")
+    version("3.1.3", sha256="10ee785e42328924b78f75a74f66a813cb956b4a9bc91c44816d089d5934c089")
+    version("3.1.2", sha256="6bbf7a953fa6762dfecdec015e3b054ba51c0121a45ad851fa130f63f5331381")
+    version("3.1.1", sha256="505ccd413669d5132a53834d792c707974248088c4f60c497deb1b416e366397")
+    version("3.1.0", sha256="1097dd60d43ad0fff614a57524bfd531b35c13a907d13bee2cc2ec152e6bf4a1")
+    version("3.0.12", sha256="b988bb297ce76c671e28c97d017b95411010f7c77fa6623dd0bb47eed1aee1bc")
     version("3.0.11", sha256="7146dd2af8682b4ca61331851e6aebce9fe5158e75300343f80c07ca80b1faff")
     version("3.0.10", sha256="dcc96739331fb854dcf503f94607576cfe8488066c61ca50dfd55836f132de99")
     version("3.0.8", sha256="8333423d8fd5765e7cceea3a9985dd1e0a5dfeb2734629e1a2ed2d6233d39de6")
@@ -52,27 +66,33 @@ class PyCython(PythonPackage):
     # depends_on("c", type="build")  # generated
     # depends_on("cxx", type="build")  # generated
 
-    # https://github.com/cython/cython/issues/5751 (distutils not yet dropped)
-    depends_on("python", type=("build", "link", "run"))
+    # Based on PyPI wheel availability
+    with default_args(type=("build", "link", "run")):
+        depends_on("python@:3.14")
+        depends_on("python@:3.13", when="@:3.1.2")
+        depends_on("python@:3.12", when="@:3.0.10")
+        depends_on("python@:3.11", when="@:3.0.3")  # Cythonize still used distutils
+        depends_on("python@:3.10", when="@:0.29.28")
+        depends_on("python@:3.9", when="@:0.29.24")
 
-    depends_on("python@:3.13")
-    depends_on("python@:3.12", when="@:3.0.10")
-    depends_on("python@:3.11", when="@:3.0.3")  # Cythonize still used distutils
-    depends_on("python@:3.10", when="@:0.29.28")
+    # https://github.com/cython/cython/issues/5751
+    # https://github.com/cython/cython/commit/0000fb4c319ef8f7e8eabcc99677f99a8c503cc3
+    depends_on("py-setuptools@66:", when="^python@3.12:", type="run")
 
-    # https://github.com/cython/cython/commit/1cd24026e9cf6d63d539b359f8ba5155fd48ae21
-    # collections.Iterable was removed in Python 3.10
-    depends_on("python@:3.9", when="@:0.29.14", type=("build", "link", "run"))
-
-    # https://github.com/cython/cython/commit/430e2ca220c8fed49604daf578df98aadb33a87d
-    depends_on("python@:3.8", when="@:0.29.13", type=("build", "link", "run"))
-
-    depends_on("py-setuptools", type=("build", "run"))
+    depends_on("py-setuptools", type="build")
     depends_on("gdb@7.2:", type="test")
 
     # Backports CYTHON_FORCE_REGEN environment variable
     patch("5307.patch", when="@0.29:0.29.33")
     patch("5712.patch", when="@0.29")
+
+    def url_for_version(self, version):
+        url = "https://files.pythonhosted.org/packages/source/c/cython/{}-{}.tar.gz"
+        if version >= Version("3.0.11"):
+            name = "cython"
+        else:
+            name = "Cython"
+        return url.format(name, version)
 
     @property
     def command(self):
