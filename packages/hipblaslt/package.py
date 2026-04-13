@@ -155,6 +155,7 @@ class Hipblaslt(CMakePackage):
     depends_on("py-pyyaml+libyaml", when="@7.1:")
     depends_on("py-packaging", when="@7.1:")
     depends_on("py-msgpack", when="@7.1:")
+    depends_on("rocminfo", type="build")
 
     # Sets the proper for clang++ and clang-offload-blunder.
     # Also adds hipblas and msgpack include directories
