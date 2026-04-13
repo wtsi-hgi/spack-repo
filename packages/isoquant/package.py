@@ -14,6 +14,7 @@ class Isoquant(Package):
     homepage = "https://github.com/ablab/IsoQuant"
     url = "https://github.com/ablab/IsoQuant/archive/refs/tags/v3.5.2.tar.gz"
 
+    version("3.12.2", sha256="184d1970694536a24f9214095908fef6b22743a0f8722784adcecd06969d5e8f")
     version("3.7.0", sha256="4f2b8f1c7c37bebec6ce606103419f8aba44b065164700ac6006076dd3f20b4b")
     version("3.6.2", sha256="7d620cdf4055a55132d6c66b45b706172cd5aae71bc91ac48e409311e8cc1530")
     version("3.6.1", sha256="5e55749b0e7694382892929b283979bf513ee30e4c405c8ee9ddc1e40032f7dd")
@@ -27,6 +28,9 @@ class Isoquant(Package):
     version("3.3.0", sha256="5c0e793a33f1b39b9f4888f7bade7f827f68bfb113535e08099906f7ad4689ce")
     version("3.2.0", sha256="8286b9d65bc2d755b742766ca8e0d0b86443ff2246dab6e68c213d54b4ede67c")
     version("3.1.2", sha256="7a0175cfb613485c1ea405457677eb6660a99b6aa794fd2e84fa72ed738cab92")
+
+    depends_on("python@3.8:", type=("build", "run"))
+    depends_on("py-setuptools@64:", type="build")
 
     depends_on("samtools", type="run")
     depends_on("minimap2", type="run")
