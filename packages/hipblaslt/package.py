@@ -293,6 +293,7 @@ class Hipblaslt(CMakePackage):
             self.define("MSGPACK_DIR", self.spec["msgpack-c"].prefix),
             self.define_from_variant("ADDRESS_SANITIZER", "asan"),
             self.define("BUILD_CLIENTS_TESTS", self.run_tests),
+            self.define("CMAKE_CXX_COMPILER_ID", "Clang")
         ]
         if "auto" not in self.spec.variants["amdgpu_target"]:
             if self.spec.satisfies("@7.1:"):
