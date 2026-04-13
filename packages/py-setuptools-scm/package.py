@@ -38,6 +38,7 @@ class PySetuptoolsScm(PythonPackage):
     depends_on("python@2.7:2.8,3.4:", type=("build", "run"))
 
     depends_on("py-packaging@20.0:", when="@6.3:", type=("build", "run"))
+    depends_on("py-packaging@24.2:", when="^py-setuptools@71:", type=("build", "run"))
     depends_on("py-setuptools@61:", when="@8:", type=("build", "run"))
     depends_on("py-setuptools@45:", when="@6:", type=("build", "run"))
     depends_on("py-setuptools@42:", when="@5:", type=("build", "run"))
