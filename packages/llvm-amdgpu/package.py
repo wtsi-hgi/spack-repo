@@ -312,6 +312,7 @@ class LlvmAmdgpu(CMakePackage, LlvmDetection, CompilerPackage):
             self.define("LLVM_AMDGPU_ALLOW_NPI_TARGETS", "ON"),
             self.define("PACKAGE_VENDOR", "AMD"),
             self.define("CLANG_ENABLE_AMDCLANG", "ON"),
+            self.define("USE_DEPRECATED_GCC_INSTALL_PREFIX", "ON")
         ]
 
         if self.spec.satisfies("+openmp"):
