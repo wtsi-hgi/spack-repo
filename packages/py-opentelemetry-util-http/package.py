@@ -19,6 +19,7 @@ class PyOpentelemetryUtilHttp(PythonPackage):
 
     depends_on("py-hatchling", type="build")
     depends_on("python@3.8:", type=("build", "run"))
+    depends_on("py-opentelemetry-semantic-conventions", type=("build", "run"))
 
     def patch(self):
         filter_file(r'^\s*"Framework :: OpenTelemetry",\n', "", "pyproject.toml")
