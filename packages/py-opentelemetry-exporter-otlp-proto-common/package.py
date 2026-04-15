@@ -22,6 +22,10 @@ class PyOpentelemetryExporterOtlpProtoCommon(PythonPackage):
     depends_on("py-opentelemetry-proto@1.27.0", when="@1.27.0", type=("build", "run"))
     depends_on("py-opentelemetry-proto@1.33.0", when="@1.33.0", type=("build", "run"))
 
+
+    def patch(self):
+        filter_file(r'^\s*"Framework :: [^\n]*\n', "", "pyproject.toml")
+
     @run_after("install")
     def install_test(self):
         with working_dir("spack-test", create=True):
