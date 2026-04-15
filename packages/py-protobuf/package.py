@@ -17,6 +17,9 @@ class PyProtobuf(PythonPackage):
     homepage = "https://developers.google.com/protocol-buffers/"
     pypi = "protobuf/protobuf-3.11.0.tar.gz"
 
+    version("7.34.1", sha256="9ce42245e704cc5027be797c1db1eb93184d44d1cdd71811fb2d9b25ad541280")
+    version("6.33.6", sha256="a6768d25248312c297558af96a9f9c929e8c4cee0659cb07e780731095f38135")
+    version("5.29.6", sha256="da9ee6a5424b6b30fd5e45c5ea663aef540ca95f9ad99d1e887e819cdf9b8723")
     version("4.25.2", sha256="fe599e175cb347efc8ee524bcd4b902d11f7262c0e569ececcb89995c15f0a5e")
     version("4.24.3", sha256="12e9ad2ec079b833176d2921be2cb24281fa591f0b119b208b788adc48c2561d")
     version("4.23.3", sha256="7a92beb30600332a52cdadbedb40d33fd7c8a0d7f549c440347bc606fb3fe34b")
@@ -63,6 +66,7 @@ class PyProtobuf(PythonPackage):
     variant("cpp", default=False, when="@:4.21", description="Enable the cpp implementation")
 
     depends_on("python", type=("build", "link", "run"))
+    depends_on("python@3.10:", type=("build", "link", "run"), when="@7.34.1:")
     depends_on("py-setuptools", type="build")
     # Older releases require distutils 2to3 support removed in setuptools 58+
     depends_on("py-setuptools@:57", when="@:3.6.1", type="build")
