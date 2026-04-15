@@ -22,6 +22,8 @@ class PySetuptools(Package, PythonExtension):
     skip_modules = ["setuptools._vendor", "pkg_resources._vendor"]
 
     with default_args(expand=False):
+        version("82.0.1", sha256="a59e362652f08dcd477c78bb6e7bd9d80a7995bc73ce773050228a348ce2e5bb")
+        version("80.9.0", sha256="062d34222ad13e0cc312a4c02d73f059e86a4acbfbdea8f8f76b28c99f306922")
         version("78.1.1", sha256="c3a9c4211ff4c309edb8b8c4f1cbfa7ae324c4ba9f91ff254e3d305b9fd54561")
         version("78.1.0", sha256="3e386e96793c8702ae83d17b853fb93d3e09ef82ec62722e61da5cd22376dcd8")
         version("78.0.2", sha256="4a612c80e1f1d71b80e4906ce730152e8dec23df439f82731d9d0b608d7b700d")
