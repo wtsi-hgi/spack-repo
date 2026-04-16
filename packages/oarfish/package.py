@@ -18,8 +18,7 @@ class Oarfish(Package):
 
     version("0.9.4", sha256="d991443d224edd97d6951b5d99c17bc1c920dc137fb0c606bc3dc5b9f3d25b62")
 
-    depends_on("rust-bootstrap@1.91:", type="build")
-    depends_on("git", type="build")
+    depends_on("rust@1.91:", type="build")
 
     def install(self, spec, prefix):
         cargo = Executable(join_path(spec["rust-bootstrap"].prefix.bin, "cargo"))
