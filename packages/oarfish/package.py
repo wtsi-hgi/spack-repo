@@ -21,7 +21,7 @@ class Oarfish(Package):
     depends_on("rust@1.91:", type="build")
 
     def install(self, spec, prefix):
-        cargo = Executable(join_path(spec["rust-bootstrap"].prefix.bin, "cargo"))
+        cargo = Executable(join_path(spec["rust"].prefix.bin, "cargo"))
         cargo("install", "--locked", "--root", prefix, "--path", ".")
 
     @run_after("install")
