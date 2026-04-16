@@ -14,6 +14,8 @@ class Isoquant(Package):
     homepage = "https://github.com/ablab/IsoQuant"
     url = "https://github.com/ablab/IsoQuant/archive/refs/tags/v3.5.2.tar.gz"
 
+    license("GPL-2.0-only")
+
     version("3.12.2", sha256="184d1970694536a24f9214095908fef6b22743a0f8722784adcecd06969d5e8f")
     version("3.7.0", sha256="4f2b8f1c7c37bebec6ce606103419f8aba44b065164700ac6006076dd3f20b4b")
     version("3.6.2", sha256="7d620cdf4055a55132d6c66b45b706172cd5aae71bc91ac48e409311e8cc1530")
@@ -46,6 +48,11 @@ class Isoquant(Package):
     depends_on("py-numpy@1.18.1:", type="run")
     depends_on("py-scipy@1.4.1:", type="run")
     depends_on("py-seaborn@0.10.0:", type="run")
+
+    with when("@3.12.2:"):
+        depends_on("py-ssw-py@1.0.0:", type=("build", "run"))
+        depends_on("py-editdistance@0.8.1:", type=("build", "run"))
+        depends_on("py-numba@0.58:", type=("build", "run"))
 
     def install(self, spec, prefix):
         mkdir(prefix.opt)
