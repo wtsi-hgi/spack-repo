@@ -44,7 +44,7 @@ class Plink2(MakefilePackage):
         "master",
         branch="master",
         git="https://github.com/chrchang/plink-ng.git",
-        depricated=True
+        deprecated=True
     )
     version(
         "alpha5_patch",
