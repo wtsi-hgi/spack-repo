@@ -95,7 +95,10 @@ class Rocdecode(CMakePackage):
             )
 
     def cmake_args(self):
-        args = ['-D__HIP_PLATFORM_AMD__']
+        args = [
+            self.define("CMAKE_C_FLAGS", "-D__HIP_PLATFORM_AMD__"),
+            self.define("CMAKE_CXX_FLAGS", "-D__HIP_PLATFORM_AMD__")
+        ]
         if "auto" not in self.spec.variants["amdgpu_target"]:
             args.append(self.define_from_variant("AMDGPU_TARGETS", "amdgpu_target"))
         if self.spec.satisfies("@6.3.0:"):
