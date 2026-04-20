@@ -44,6 +44,7 @@ class Plink2(MakefilePackage):
         "master",
         branch="master",
         git="https://github.com/chrchang/plink-ng.git",
+        depricated=True
     )
     version(
         "alpha5_patch",
@@ -79,6 +80,13 @@ class Plink2(MakefilePackage):
             elif "sse4_2" in spec.target:
                 makefile.filter(r"^NO_SSE42 = 1", "NO_SSE42 =")
             makefile.filter(r"^STATIC_ZSTD = 1", "STATIC_ZSTD =")
+
+            with when("@master"):
+                makefile.filter(
+                    r"OBJ = \$\(CSRC:\.c=\.o\) \$\(CCSRC:\.cc=\.o\)",
+                    "OBJ = $(CSRC:.c=.o) $(GCSRC:.c=.o) $(CCSRC:.cc=.o)",
+                )
+
             blas_flags = "{0} {1}".format(
                 spec["lapack"].libs.ld_flags, spec["blas"].libs.ld_flags
             )
