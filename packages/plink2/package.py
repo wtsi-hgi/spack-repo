@@ -42,18 +42,8 @@ class Plink2(MakefilePackage):
 
     version(
         "master",
-        branch="master",
+        commit="8406de63e43ec9f00298215d7ef873adfc424cb5",
         git="https://github.com/chrchang/plink-ng.git"
-    )
-    version(
-        "alpha5_patch",
-        branch="alpha5_patch",
-        git="https://github.com/chrchang/plink-ng.git",
-    )
-    version(
-        "alpha6_patch",
-        branch="alpha6_patch",
-        git="https://github.com/chrchang/plink-ng.git",
     )
 
     # depends_on("c", type="build")  # generated
