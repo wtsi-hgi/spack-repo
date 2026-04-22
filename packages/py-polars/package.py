@@ -46,6 +46,7 @@ class PyPolars(PythonPackage):
 
     # README.md / crate requirements
     # Newer crates used by polars>=1.25.2 (e.g. home@0.5.12) require rustc>=1.88
+    depends_on("rust@:1.88", when="@:1.27.1", type="build")
     depends_on("rust@1.88:", when="@1.25.2:", type="build")
     depends_on("rust@1.81:", when="@1:", type="build")
     depends_on("rust@1.71:", type="build")
