@@ -39,7 +39,12 @@ class PyPolars(PythonPackage):
     version("1.2.1", sha256="a46aba51acce7ecf85151f72d25ef2a3eeb5735d55f4b7cc69ec4a596e9fbefd")
     version("1.1.0", sha256="75fe824243006ada0f2dd30c8aba0ec03595d9087b29c3ca8f106ef1a975b9cb")
     version("1.0.0", sha256="144a63d6d61dc5d675304673c4261ceccf4cfc75277431389d4afe9a5be0f70b")
-    version("0.20.31", sha256="00f62dec6bf43a4e2a5db58b99bf0e79699fe761c80ae665868eaea5168f3bbb")
+    version(
+        "0.20.31",
+        sha256="24b82441f93409e0e8abd6f427b029db102f02b8de328cee9a680f84b84e3736",
+        url="https://files.pythonhosted.org/packages/90/7d/7541e559d7fce232ba34340b0953cac9af2344853d675dc2de01a4d3abc7/polars-0.20.31-cp38-abi3-manylinux_2_17_x86_64.manylinux2014_x86_64.whl",
+        expand=False,
+    )
 
     # pyproject.toml
     depends_on("py-maturin@1.3.2:", type="build")
@@ -53,6 +58,8 @@ class PyPolars(PythonPackage):
     depends_on("cmake", type="build")
 
     def patch(self):
+        if not os.path.exists("py-polars/Cargo.toml"):
+            return
         if os.path.exists("Cargo.lock"):
             remove("Cargo.lock")
         if self.spec.satisfies("@1.25.2:"):
@@ -73,6 +80,12 @@ class PyPolars(PythonPackage):
         filter_file(
             'default = ["all", "nightly"]',
             'default = ["all"]',
+            "py-polars/Cargo.toml",
+            string=True,
+        )
+        filter_file(
+            '  "nightly",\n',
+            "",
             "py-polars/Cargo.toml",
             string=True,
         )

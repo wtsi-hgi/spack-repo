@@ -18,7 +18,7 @@ class PyPsauron(PythonPackage):
 	version("1.0.8", sha256="69883231e93c09c3cd49a1ff33d8be6096cbfbc9ae32d00462c7e334cc75cd28", expand=False, url="https://files.pythonhosted.org/packages/8f/8d/b445ebad813786dd947df601b128e2b5cfe61bf418f6d9110f4424d447bc/psauron-1.0.8-py3-none-any.whl")
 
 	depends_on("python@3.9:3.13", type=("build", "run"))
-	depends_on("py-torch", type=("build", "run"))
+	depends_on("py-torch~mkldnn", type=("build", "run"))
 	depends_on("py-torchvision", type=("build", "run"))
 	depends_on("py-torchaudio", type=("build", "run"))
 	depends_on("py-typing-extensions", type=("build", "run"))
