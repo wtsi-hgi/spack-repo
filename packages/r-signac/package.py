@@ -72,7 +72,7 @@ class RSignac(RPackage):
 		with when("@20260420"):
 			depends_on("r-seuratobject@5.0.2:")
 			depends_on("r-sparsematrixstats")
-			depends_on("r-spectra")
+			depends_on("r-rspectra")
 			depends_on("r-interactionset")
 			depends_on("r-seqinfo")
 
