@@ -19,6 +19,7 @@ class RSignac(RPackage):
 	license("MIT")
 
 	cran = "Signac"
+	version("20260420", commit="5d66cf6c34322309d5b8aece3fa294f5531b8eee", git="https://github.com/stuart-lab/signac.git")
 	version("1.16.0", sha256="71750f98af3b9e40ddcf52a7b665d33e3cefd0d63837f07cc3c54af807e109bf")
 	version("1.15.0", sha256="672d8ba06f4ff06fd00009bf70db5a11817246b24fd002cbd55944fe1bd8ed9a")
 	version("1.14.0", sha256="e0aad9e2c27c148fdd376081c2de1e3db46b1835eac83ef41fe562e08363c59e")
@@ -67,5 +68,13 @@ class RSignac(RPackage):
 		depends_on("r-tidyselect")
 		depends_on("r-vctrs")
 		depends_on("r-lifecycle")
+
+		with when("@20260420"):
+			depends_on("r-seuratobject@5.0.2:")
+			depends_on("r-sparsematrixstats")
+			depends_on("r-spectra")
+			depends_on("r-interactionset")
+			depends_on("r-seqinfo")
+
 	
 	depends_on("zlib", type=("build", "link", "run"))
