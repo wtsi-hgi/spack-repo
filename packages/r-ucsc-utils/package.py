@@ -22,5 +22,5 @@ class RUcscUtils(RPackage):
 
     depends_on("r-httr", type=("build", "run"))
     depends_on("r-jsonlite", type=("build", "run"))
-    depends_on("r-s4vectors@:0.47.5", type=("build", "run"), when="@:1.5")
+    depends_on("r-s4vectors@:0.47.5", type=("build", "run"), when="@:1.5.99")
     depends_on("r-s4vectors@0.47.6:", type=("build", "run"), when="@1.6.0:")
