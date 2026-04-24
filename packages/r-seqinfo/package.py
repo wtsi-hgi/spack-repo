@@ -15,5 +15,5 @@ class RSeqinfo(RPackage):
     version("1.0.0", sha256="d72c95a5593ef0c5e343baa7d935583540abdc30c6f4d4c9178ecc8d89234d82")
 
     depends_on("r-biocgenerics", type=("build", "run"))
-    depends_on("r-s4vectors@0.47.5:", type=("build", "run"))
+    depends_on("r-s4vectors@0.47.6:", type=("build", "run"))
     depends_on("r-iranges", type=("build", "run"))
