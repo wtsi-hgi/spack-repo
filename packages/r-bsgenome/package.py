@@ -30,7 +30,7 @@ class RBsgenome(RPackage):
 
 	depends_on("r@2.8:", type=("build", "run"))
 	depends_on("r-biocgenerics@0.13.8:", type=("build", "run"))
-	depends_on("r-s4vectors@0.17.28:0.47.0", type=("build", "run"))
+	depends_on("r-s4vectors@0.17.28:", type=("build", "run"))
 	depends_on("r-iranges@2.13.16:", type=("build", "run"))
 	depends_on("r-genomeinfodb@1.25.6:", type=("build", "run"))
 	depends_on("r-genomicranges@1.31.10:1.61.0", type=("build", "run"))
