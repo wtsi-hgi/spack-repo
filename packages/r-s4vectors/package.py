@@ -25,6 +25,9 @@ class RS4vectors(RPackage):
     ]
     version("0.48.0", tag="RELEASE_3_22")
     version("0.46.0", tag="RELEASE_3_21")
+    version("0.47.6", commit="819c0a07f187888dc403fe7a216ee2a8403d8e74")
+    version("0.47.5", commit="d414ddbbb1df6cd2ccfe1a4d89b148761cb7eb59")
+    version("0.44.0", tag="RELEASE_3_20")
     version("0.40.2", md5="ee94f4f6c25dcaf7a50f5814495310e3")
     version("0.38.0", commit="e80c24e1481033741147a0677fb42ce455e7da74")
     version("0.36.0", commit="af58701957ffdd9209031dd6a8dee3acdc58e999")
