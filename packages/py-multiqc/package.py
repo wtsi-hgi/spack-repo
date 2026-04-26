@@ -23,7 +23,7 @@ class PyMultiqc(PythonPackage):
     # dependency defintions move from setup.py to pyproject.toml as of @1.23:
 
     # build deps
-    depends_on("py-setuptools", type="build")
+    depends_on("py-setuptools", type=("build", "run"))
 
     # current run deps
     depends_on("py-click", type=("build", "run"))
