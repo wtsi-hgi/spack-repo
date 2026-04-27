@@ -28,8 +28,6 @@ class PyWebsocketClient(PythonPackage):
     depends_on("python@3.8:", when="@1.6.2:", type=("build", "run"))
     depends_on("py-setuptools", type="build")
     depends_on("py-setuptools@:80", when="@:1.6.4", type="build")
-    depends_on("py-setuptools@:80", when="@:1.6.4", type="run")
-
     # Historical dependencies
     depends_on("py-six", type=("build", "run"), when="@:1.2.0")
 
