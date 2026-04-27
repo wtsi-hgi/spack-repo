@@ -27,6 +27,7 @@ class RGenomicranges(RPackage):
 		sha256="7bc77ad566b4effb93107a520dd3e4395beb5be1fab3c70e085390c212a14b73",
 		url="https://www.bioconductor.org/packages/3.22/bioc/src/contrib/Archive/GenomicRanges/GenomicRanges_1.62.0.tar.gz",
 	)
+	version("1.61.8", commit="a9a059c78e40b195af62e7b84c3a5ed1f2a50e20")
 	version("1.60.0", md5="2d23aae0eb9d1bacef038d3c07b6e547", url="https://www.bioconductor.org/packages/3.21/bioc/src/contrib/GenomicRanges_1.60.0.tar.gz")
 	version("1.54.1", md5="19fe37133cae70c1c3a1a164e6c8eaed")
 	version("1.52.0", commit="883f125ea593099293dc808ec2188be3cbdbd3a7")
