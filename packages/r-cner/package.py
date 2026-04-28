@@ -14,6 +14,8 @@ class RCner(RPackage):
 
 	bioc = "CNEr"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNEr_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNEr/CNEr_1.38.0.tar.gz"]
+	version("1.46.0", tag="RELEASE_3_22")
+	version("1.45.2", commit="a5d64f4976bab00d10a5c4fc2dfc563b6dd63551")
 	version("1.38.0", md5="56fdc5f3323b1f3efbb8d85584ff75d2")
 	version("1.36.0", commit="4f2feeb395cfc071ed97ba8b6327425dfd42d6b5")
 	version("1.34.0", commit="878de98d18f6f959ad5e014ecd8165d3105d8b48")
@@ -30,8 +32,8 @@ class RCner(RPackage):
 	depends_on("r-biostrings@2.33.4:", type=("build", "run"))
 	depends_on("r-dbi@0.7:", type=("build", "run"))
 	depends_on("r-rsqlite@0.11.4:", type=("build", "run"))
-	depends_on("r-genomeinfodb@1.34.7:", type=("build", "run"))
-	depends_on("r-genomicranges@1.23.16:1.60", type=("build", "run"))
+	depends_on("r-genomeinfodb@1.1.3:", type=("build", "run"))
+	depends_on("r-genomicranges@1.23.16:", type=("build", "run"))
 	depends_on("r-rtracklayer@1.25.5:", type=("build", "run"))
 	depends_on("r-xvector", type=("build", "run"))
 	depends_on("r-genomicalignments@1.1.9:", type=("build", "run"))
@@ -47,3 +49,4 @@ class RCner(RPackage):
 	depends_on("r-r-utils@2.3:", type=("build", "run"))
 	depends_on("r-keggrest@1.14:", type=("build", "run"))
 	depends_on("zlib", type=("build", "link", "run"))
+	depends_on("r-pwalign", when="@1.39.1:")
