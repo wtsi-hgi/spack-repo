@@ -13,7 +13,8 @@ class RLimma(RPackage):
 	data."""
 
 	bioc = "limma"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/limma_3.58.1.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/limma/limma_3.58.1.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.22/bioc/src/contrib/limma_3.66.0.tar.gz", "https://www.bioconductor.org/packages/3.22/bioc/src/contrib/Archive/limma/limma_3.66.0.tar.gz"]
+	version("3.66.0", md5="2942e95892caca27e60800ec303e3d79")
 	version("3.58.1", md5="f52a816d0d34b01f721654f90a1fb5f5")
 	version("3.56.0", commit="efe857829233edb11ae317ce5d1ad4ea3073cf7f")
 	version("3.54.0", commit="1d1fa843d4fe2f8c94fd843bb1e80b8384d8306e")

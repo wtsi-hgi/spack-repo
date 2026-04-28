@@ -18,7 +18,8 @@ class REdger(RPackage):
 	Bisulfite-seq, SAGE and CAGE."""
 
 	bioc = "edgeR"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/edgeR_4.0.16.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/edgeR/edgeR_4.0.16.tar.gz"]
+	urls = ["https://www.bioconductor.org/packages/3.22/bioc/src/contrib/edgeR_4.8.2.tar.gz", "https://www.bioconductor.org/packages/3.22/bioc/src/contrib/Archive/edgeR/edgeR_4.8.2.tar.gz"]
+	version("4.8.2", md5="5fde3f422aba2f92441e604eefb6cc55")
 	version("4.0.16", md5="8fb1c6c67e29d299c991d16d0f6c5f5b")
 	version("3.42.0", commit="197b9a8ccc27016611b262c2c31ca22f991661c5")
 	version("3.40.0", commit="0b25adcc6b3cb0a8c641964d1274536ee07ee162")
@@ -33,6 +34,7 @@ class REdger(RPackage):
 	version("3.18.1", commit="101106f3fdd9e2c45d4a670c88f64c12e97a0495")
 
 	depends_on("r@3.6:", type=("build", "run"))
-	depends_on("r-limma@3.41.5:", type=("build", "run"))
+	depends_on("r-limma@3.63.6:", when="@4.8.2:", type=("build", "run"))
+	depends_on("r-limma@3.41.5:", when="@:4.0.16", type=("build", "run"))
 	depends_on("r-locfit", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
