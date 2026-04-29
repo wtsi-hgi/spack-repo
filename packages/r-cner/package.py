@@ -16,7 +16,10 @@ class RCner(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/CNEr_1.38.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/CNEr/CNEr_1.38.0.tar.gz"]
 	version("1.46.0", tag="RELEASE_3_22")
 	version("1.45.2", commit="a5d64f4976bab00d10a5c4fc2dfc563b6dd63551")
-	version("1.38.0", md5="56fdc5f3323b1f3efbb8d85584ff75d2")
+	version("1.44.0", tag="RELEASE_3_21")
+	version("1.42.0", tag="RELEASE_3_20")
+	version("1.40.0", tag="RELEASE_3_19")
+	version("1.38.0", tag="RELEASE_3_18")
 	version("1.36.0", commit="4f2feeb395cfc071ed97ba8b6327425dfd42d6b5")
 	version("1.34.0", commit="878de98d18f6f959ad5e014ecd8165d3105d8b48")
 	version("1.32.0", commit="1c92f3d7f3dccf76ab7d54f286117b09bc470b8f")
