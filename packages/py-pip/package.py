@@ -93,14 +93,10 @@ class PyPip(Package, PythonExtension):
         # itself, see:
         # https://discuss.python.org/t/bootstrapping-a-specific-version-of-pip/12306
         whl = self.stage.archive_file
-        if sys.platform == "win32":
-            # On Windows for newer versions of pip, you must bootstrap pip first.
-            # In order to achieve this, use the pip.pyz zipapp version of pip to
-            # bootstrap the pip wheel install.
-            script = os.path.join(self.stage.source_path, "pip.pyz")
-        else:
-            script = os.path.join(whl, "pip")
-        python(script, *PythonPipBuilder.std_args(self), f"--prefix={prefix}", whl)
+        args = [os.path.join(whl, "pip")] + std_pip_args + ["--prefix=" + prefix, whl]
+        python(*args)
 
-    def setup_dependent_package(self, module, dependent_spec: Spec):
-        setattr(module, "pip", python.with_default_args("-m", "pip"))
+    def setup_dependent_package(self, module, dependent_spec):
+        pip = dependent_spec["python"].command
+        pip.add_default_arg("-m", "pip")
+        setattr(module, "pip", pip)
