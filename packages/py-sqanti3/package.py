@@ -100,7 +100,7 @@ class PySqanti3(Package):
             depends_on("py-biopython@1.81")
             depends_on("py-bx-python@0.11:")
             depends_on("gffread@0.12:")
-            depends_on("gfftools@0.9:")
+            depends_on("py-gtftools@0.9:")
             depends_on("namfinder@0.13:")
             depends_on("py-pysam@0.22")
             depends_on("samtools@1.21:")
