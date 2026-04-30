@@ -69,7 +69,6 @@ class PySqanti3(Package):
         depends_on("py-seaborn")
         depends_on("py-scikit-learn")
         depends_on("py-pdf2image")
-        depends_on("py-pybedtools")
         depends_on("py-biopython")
         depends_on("gmap-gsnap")
         depends_on("r-ggplot2")
@@ -96,7 +95,6 @@ class PySqanti3(Package):
             depends_on("py-pip@24:")
 
             depends_on("py-bcbio-gff@0.7:")
-            depends_on("py-pybedtools@2.31:")
             depends_on("py-biopython@1.81")
             depends_on("py-bx-python@0.11:")
             depends_on("gffread@0.12:")
