@@ -127,7 +127,6 @@ class PySqanti3(Package):
             depends_on("r-plotly@4.10:")
             depends_on("r-plyr@1.8:")
             depends_on("r-purrr@1.0:")
-            depends_on("r-rmarkdown@4.7:")
             depends_on("r-reshape@0.8:")
             depends_on("r-readr@2.1:")
             depends_on("r-scales@1.3:")
