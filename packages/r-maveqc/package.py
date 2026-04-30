@@ -14,9 +14,10 @@ class RMaveqc(RPackage):
 
     homepage = "https://gitlab.internal.sanger.ac.uk/sci/MAVEQC"
     git = "https://gitlab.internal.sanger.ac.uk/sci/MAVEQC"
-    url = "https://gitlab.internal.sanger.ac.uk/sci/MAVEQC/-/archive/0.2.9.229/MAVEQC-0.2.9.229.tar.gz"
+    url = "https://gitlab.internal.sanger.ac.uk/sci/MAVEQC/-/archive/0.2.10.229/MAVEQC-0.2.10.229.tar.gz"
 
 
+    version("0.2.10.229", sha256="303e686b0d646f32afc38700832f2ce128a32fd822ffeb1470fb53b0b7558e01")
     version("0.2.9.229", sha256="821eaa65b163c2d2a83231d57c679e1c5de9493e7a084c6511298d5ea2649655")
     version("0.2.8.229", sha256="f596ee6726ce192685f8c7ca8db1a80024a1d93587ee6bd474e4ad861a5597df")
     version("0.2.7", sha256="d3af08fe6865c4a62189c2c67e96b1eae955a255dcf24b15e6ed2650d34905fd")
