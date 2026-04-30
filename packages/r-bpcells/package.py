@@ -18,9 +18,10 @@ class RBpcells(RPackage):
 
     homepage = "https://bnprks.github.io/BPCells"
     git = "https://github.com/bnprks/BPCells"
+    url = "https://api.github.com/repos/bnprks/BPCells/tarball/refs/tags/v0.3.0"
 
     version("0.3.1", tag="v0.3.1", preferred=True)
-    version("2024-04-25", commit="fa6f13e96528979903d1d84a916b81b8a438a3cb")
+    version("2024-04-25", sha256="cd492185b8ca3a928a3f95559bc3a431e515b629aa70606a936759a31a8de134", url="https://api.github.com/repos/bnprks/BPCells/tarball/refs/tags/v0.3.0")
     version("0.1.0", tag="v0.1.0")
 
     depends_on("r@4.0.0:", type=("build", "run"))
@@ -50,7 +51,9 @@ class RBpcells(RPackage):
         if self.spec.satisfies("@0.3.1:"):
             force_remove("DESCRIPTION")
             force_remove("configure")
-            install_tree("r", ".")
+            nested_r_dir = join_path(self.stage.source_path, "r")
+            if os.path.isdir(nested_r_dir):
+                install_tree(nested_r_dir, self.stage.source_path)
 
         makevars = "src/Makevars.in"
         if not os.path.exists(makevars):
