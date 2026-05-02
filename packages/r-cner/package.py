@@ -33,6 +33,7 @@ class RCner(RPackage):
 	depends_on("r-genomeinfodb@1.1.3:", type=("build", "run"))
 	depends_on("r-genomicranges@1.23.16:", type=("build", "run"))
 	depends_on("r-rtracklayer@1.25.5:", type=("build", "run"))
+	depends_on("r-seqinfo", type=("build", "run"))
 	depends_on("r-xvector", type=("build", "run"))
 	depends_on("r-genomicalignments@1.1.9:", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
@@ -47,3 +48,32 @@ class RCner(RPackage):
 	depends_on("r-r-utils@2.3:", type=("build", "run"))
 	depends_on("r-keggrest@1.14:", type=("build", "run"))
 	depends_on("zlib", type=("build", "link", "run"))
+
+	def patch(self):
+		if not self.spec.satisfies("@1.38.0"):
+			return
+
+		filter_file(
+			"        GenomeInfoDb (>= 1.1.3), GenomicRanges (>= 1.23.16),",
+			"        GenomeInfoDb (>= 1.1.3), GenomicRanges (>= 1.23.16), Seqinfo,",
+			"DESCRIPTION",
+			string=True,
+		)
+		filter_file(
+			"importMethodsFrom(GenomeInfoDb,",
+			"importMethodsFrom(Seqinfo,",
+			"NAMESPACE",
+			string=True,
+		)
+		filter_file(
+			"importFrom(GenomeInfoDb, Seqinfo)",
+			"importFrom(Seqinfo, Seqinfo)",
+			"NAMESPACE",
+			string=True,
+		)
+		filter_file(
+			"importMethodsFrom(Biostrings, compareStrings)",
+			"importFrom(Biostrings, compareStrings)",
+			"NAMESPACE",
+			string=True,
+		)
