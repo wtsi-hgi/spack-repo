@@ -45,3 +45,52 @@ class RAzimuth(RPackage):
     depends_on("r-jaspar2020", type=('build', 'run'))
     depends_on("r-tfbstools", type=('build', 'run'))
     depends_on("r-signac", type=('build', 'run'))
+
+    def patch(self):
+        if not self.spec.satisfies("@0.5.0"):
+            return
+
+        filter_file(
+            "importFrom(Signac,CreateChromatinAssay)",
+            "importFrom(Signac,CreateChromatinAssay5)",
+            "NAMESPACE",
+            string=True,
+        )
+        filter_file(
+            "importFrom(Signac,GRangesToString)\n",
+            "",
+            "NAMESPACE",
+            string=True,
+        )
+        filter_file("CreateChromatinAssay(", "CreateChromatinAssay5(", "R/azimuth.R", string=True)
+        filter_file("CreateChromatinAssay(", "CreateChromatinAssay5(", "R/server.R", string=True)
+        filter_file(
+            'inherits(x = query[[assay]], what = "ChromatinAssay")',
+            'inherits(x = query[[assay]], what = c("ChromatinAssay", "ChromatinAssay5"))',
+            "R/azimuth.R",
+            string=True,
+        )
+        filter_file(
+            'inherits(x = atac, what = "ChromatinAssay")',
+            'inherits(x = atac, what = c("ChromatinAssay", "ChromatinAssay5"))',
+            "R/helpers.R",
+            string=True,
+        )
+        filter_file(
+            '!inherits(x = object[[assay]], what = "ChromatinAssay")',
+            '!inherits(x = object[[assay]], what = c("ChromatinAssay", "ChromatinAssay5"))',
+            "R/helpers.R",
+            string=True,
+        )
+        filter_file(
+            "GRangesToString(subject[subjectHits(o_hits)])",
+            "as.character(subject[subjectHits(o_hits)])",
+            "R/helpers.R",
+            string=True,
+        )
+        filter_file(
+            "GRangesToString(grange = subject)",
+            "as.character(subject)",
+            "R/helpers.R",
+            string=True,
+        )

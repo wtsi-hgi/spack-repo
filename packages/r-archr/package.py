@@ -3,6 +3,10 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+import inspect
+import os
+import tarfile
+
 from spack.package import *
 
 
@@ -15,7 +19,7 @@ class RArchr(RPackage):
 
     maintainers("dorton21")
 
-    version("1.0.3", sha256="9e3c5f07b599ff806c6f2a74ec619b0847e69cb3e96dc29fa1304f2a381620e4")
+    version("1.0.3", sha256="9e3c5f07b599ff806c6f2a74ec619b0847e69cb3e96dc29fa1304f2a381620e4", expand=False)
 
     depends_on("r@4.0.0:", type=("build", "run"))
 
@@ -59,3 +63,41 @@ class RArchr(RPackage):
         depends_on("r-cairo")
         depends_on("r-ggrastr")
         depends_on("r-rhandsontable")
+
+    def install(self, spec, prefix):
+        archive = self.stage.archive_file
+        source_root = join_path(self.stage.path, "manual-source")
+        mkdirp(source_root)
+
+        with tarfile.open(archive, "r:gz") as tar:
+            tar.extractall(source_root)
+
+        entries = os.listdir(source_root)
+        if len(entries) != 1:
+            raise InstallError("Expected a single top-level ArchR source directory")
+
+        source_path = join_path(source_root, entries[0])
+        compact_r_libs = join_path(self.stage.path, "compact-r-libs")
+        mkdirp(compact_r_libs)
+        for dep in spec.traverse(root=False):
+            if not dep.name.startswith("r-"):
+                continue
+            dep_lib_root = join_path(dep.prefix, "rlib", "R", "library")
+            if not os.path.isdir(dep_lib_root):
+                continue
+            for entry in os.listdir(dep_lib_root):
+                src = join_path(dep_lib_root, entry)
+                dst = join_path(compact_r_libs, entry)
+                if not os.path.exists(dst):
+                    os.symlink(src, dst)
+
+        args = ["--vanilla", "CMD", "INSTALL", "--library={0}".format(self.module.r_lib_dir), source_path]
+        original_r_libs = os.environ.get("R_LIBS")
+        os.environ["R_LIBS"] = "{0}:{1}".format(compact_r_libs, self.module.r_lib_dir)
+        try:
+            inspect.getmodule(self).R(*args)
+        finally:
+            if original_r_libs is None:
+                os.environ.pop("R_LIBS", None)
+            else:
+                os.environ["R_LIBS"] = original_r_libs

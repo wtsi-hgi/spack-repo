@@ -44,11 +44,60 @@ class RTfbstools(RPackage):
 	depends_on("r-genomicranges@1.20.6:", type=("build", "run"))
 	depends_on("r-gtools@3.5:", type=("build", "run"))
 	depends_on("r-iranges@2.2.7:", type=("build", "run"))
+	depends_on("r-seqinfo", type=("build", "run"), when="@1.40.0:")
 	depends_on("r-dbi@0.6:", type=("build", "run"))
 	depends_on("r-rsqlite@1:", type=("build", "run"))
 	depends_on("r-rtracklayer@1.28.10:", type=("build", "run"))
 	depends_on("r-seqlogo@1.34:", type=("build", "run"), when="@1.8.3:")
 	depends_on("r-s4vectors@0.9.25:", type=("build", "run"))
 	depends_on("r-tfmpvalue@0.0.5:", type=("build", "run"))
+	depends_on("r-pwalign", type=("build", "run"), when="@1.40.0:")
 	depends_on("r-xml@3.98.1.3:", type=("build", "run"))
 	depends_on("r-xvector@0.8:", type=("build", "run"))
+
+	def patch(self):
+		if not self.spec.satisfies("@1.40.0"):
+			return
+
+		filter_file(
+			"Imports: Biobase(>= 2.28), Biostrings(>= 2.36.4), BiocGenerics(>=",
+			"Imports: Biobase(>= 2.28), Biostrings(>= 2.36.4), pwalign, BiocGenerics(>=",
+			"DESCRIPTION",
+			string=True,
+		)
+		filter_file(
+			"        1.10.0), GenomeInfoDb(>= 1.6.1), GenomicRanges(>= 1.20.6),",
+			"        1.10.0), GenomeInfoDb(>= 1.6.1), Seqinfo, GenomicRanges(>= 1.20.6),",
+			"DESCRIPTION",
+			string=True,
+		)
+		filter_file(
+			"importClassesFrom(Biostrings, DNAStringSet, PairwiseAlignments, XStringViews)",
+			"importClassesFrom(Biostrings, DNAStringSet, XStringViews)\nimportClassesFrom(pwalign, PairwiseAlignments)",
+			"NAMESPACE",
+			string=True,
+		)
+		filter_file(
+			"consensusMatrix, PairwiseAlignments, pattern, consensusMatrix",
+			"consensusMatrix, consensusMatrix",
+			"NAMESPACE",
+			string=True,
+		)
+		filter_file(
+			'importMethodsFrom(Biostrings, reverseComplement, matchPWM, maxScore, minScore, \n                  consensusMatrix, consensusMatrix)',
+			'importMethodsFrom(Biostrings, reverseComplement, matchPWM, maxScore, minScore, \n                  consensusMatrix, consensusMatrix)',
+			"NAMESPACE",
+			string=True,
+		)
+		filter_file(
+			"importMethodsFrom(GenomeInfoDb, seqinfo)",
+			"importMethodsFrom(Seqinfo, seqinfo)",
+			"NAMESPACE",
+			string=True,
+		)
+		filter_file(
+			"importFrom(seqLogo, seqLogo, makePWM)",
+			"importFrom(seqLogo, seqLogo, makePWM)\nimportFrom(pwalign, pattern, PairwiseAlignments)",
+			"NAMESPACE",
+			string=True,
+		)
