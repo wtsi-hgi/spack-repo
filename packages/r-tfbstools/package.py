@@ -33,7 +33,7 @@ class RTfbstools(RPackage):
 
 	depends_on("r@3.2.2:", type=("build", "run"))
 	depends_on("r-biobase@2.28:", type=("build", "run"))
-	depends_on("r-biostrings@2.36.4:", type=("build", "run"))
+	depends_on("r-biostrings@2.36.4:2.71", type=("build", "run"))
 	depends_on("r-biocgenerics@0.14:", type=("build", "run"))
 	depends_on("r-biocparallel@1.2.21:", type=("build", "run"))
 	depends_on("r-bsgenome@1.36.3:", type=("build", "run"))
