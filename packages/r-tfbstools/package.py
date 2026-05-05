@@ -18,6 +18,10 @@ class RTfbstools(RPackage):
 
 	bioc = "TFBSTools"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFBSTools_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFBSTools/TFBSTools_1.40.0.tar.gz"]
+	version("1.48.0", md5="72bfbf0b475f92b0d3a22a62062979e1", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/TFBSTools_1.48.0.tar.gz")
+	version("1.46.0", md5="a7e3d73595d1810771ed5709e7510e0e", url="https://bioconductor.org/packages/3.21/bioc/src/contrib/TFBSTools_1.46.0.tar.gz")
+	version("1.44.0", md5="6a911dc2eaa79f199041039488ed7271", url="https://bioconductor.org/packages/3.20/bioc/src/contrib/TFBSTools_1.44.0.tar.gz")
+	version("1.42.0", md5="b62f744c81f20bf3e12091c6456036e5", url="https://bioconductor.org/packages/3.19/bioc/src/contrib/TFBSTools_1.42.0.tar.gz")
 	version("1.40.0", md5="f2395c8153c4820e3cebb53a9eda94d6")
 	version("1.38.0", commit="2ce17166b6f73b5093acec2a3dde33b6bcfa56bc")
 	version("1.36.0", commit="3358c89227a4d2e237ee5f8c532f468460a16ee2")
@@ -33,12 +37,14 @@ class RTfbstools(RPackage):
 
 	depends_on("r@3.2.2:", type=("build", "run"))
 	depends_on("r-biobase@2.28:", type=("build", "run"))
-	depends_on("r-biostrings@2.36.4:2.71", type=("build", "run"))
+	depends_on("r-biostrings@2.36.4:2.71", type=("build", "run"), when="@:1.40.0")
+	depends_on("r-biostrings@2.36.4:", type=("build", "run"), when="@1.42.0:")
 	depends_on("r-biocgenerics@0.14:", type=("build", "run"))
 	depends_on("r-biocparallel@1.2.21:", type=("build", "run"))
 	depends_on("r-bsgenome@1.36.3:", type=("build", "run"))
 	depends_on("r-catools@1.17.1:", type=("build", "run"))
-	depends_on("r-cner@1.4:", type=("build", "run"))
+	depends_on("r-cner@1.4:", type=("build", "run"), when="@:1.46.0")
+	depends_on("r-pwalign", type=("build", "run"), when="@1.42.0:")
 	depends_on("r-dirichletmultinomial@1.10:", type=("build", "run"))
 	depends_on("r-genomeinfodb@1.6.1:", type=("build", "run"))
 	depends_on("r-genomicranges@1.20.6:", type=("build", "run"))
