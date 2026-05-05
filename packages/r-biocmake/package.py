@@ -22,7 +22,11 @@ class RBiocmake(RPackage):
 
     license("MIT")
 
-    version("1.2.0", sha256="cc62588937bf04ed3f3ced2b175d32830c3d16f6f26bcdc6a6dc82d75c5bbdb8")
+    version(
+        "1.2.0",
+        sha256="cc62588937bf04ed3f3ced2b175d32830c3d16f6f26bcdc6a6dc82d75c5bbdb8",
+        url="https://www.bioconductor.org/packages/3.22/bioc/src/contrib/biocmake_1.2.0.tar.gz",
+    )
 
     depends_on("r@4.4:", type=("build", "run"))
     depends_on("r-dir-expiry", type=("build", "run"))
