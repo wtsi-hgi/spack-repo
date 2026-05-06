@@ -14,6 +14,10 @@ class RAzimuth(RPackage):
     version("0.5.0", tag="v0.5.0")
     version("0.4.6", tag="v0.4.6")
 
+    # CreateChromatinAssay was renamed to CreateChromatinAssay5 and sep parameter
+    # removed in Signac >= 1.14.0 dev builds
+    patch("signac-api.patch", when="@0.5.0")
+
     depends_on("r-rlang", type=('build', 'run'))
     depends_on("r-dt", type=('build', 'run'))
     depends_on("r-future", type=('build', 'run'))
