@@ -130,3 +130,6 @@ dmypy.json
 
 # VSCode
 *.code-workspace
+
+# Jetbrains
+.idea

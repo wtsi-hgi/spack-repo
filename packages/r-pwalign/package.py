@@ -15,11 +15,9 @@ class RPwalign(RPackage):
 
 	bioc = "pwalign"
 
-	version(
-		"1.6.0",
-		md5="b6a8497c27e51bda092fcb2f5efe02ba",
-		url="https://www.bioconductor.org/packages/3.22/bioc/src/contrib/pwalign_1.6.0.tar.gz",
-	)
+	version("1.6.0", tag="RELEASE_3_22")
+	version("1.4.0", tag="RELEASE_3_21")
+	version("1.2.0", tag="RELEASE_3_20")
 
 	depends_on("r-biocgenerics", type=("build", "run"))
 	depends_on("r-s4vectors", type=("build", "run"))
