@@ -51,8 +51,8 @@ class PyPyarrow(PythonPackage):
         depends_on("pkgconfig")
 
         # pyproject.toml, setup.py
-        depends_on("py-cython@0.29.31:", when="@14:")
-        depends_on("py-cython@0.29.31:2", when="@12:13")
+        depends_on("py-cython@0.29.31:", when="@15:")
+        depends_on("py-cython@0.29.31:2", when="@12:14")
         depends_on("py-cython@0.29.22:2", when="@8:11")
         depends_on("py-cython@0.29:2", when="@0.15:7")
         depends_on("py-cython@:2", when="@:0.14")
@@ -60,7 +60,7 @@ class PyPyarrow(PythonPackage):
         depends_on("py-setuptools-scm", when="@16")
         depends_on("py-setuptools-scm@:7", when="@0.15:15")
         depends_on("py-setuptools@64:", when="@17:")
-        depends_on("py-setuptools@40.1:", when="@10.0.1:")
+        depends_on("py-setuptools@40.1:71", when="@10.0.1:16")  # pkg_resources removed in setuptools 72+
         depends_on("py-setuptools@38.6:", when="@7:")
         depends_on("py-setuptools")
 

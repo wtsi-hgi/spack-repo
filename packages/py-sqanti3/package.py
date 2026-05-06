@@ -20,7 +20,7 @@ class PySqanti3(Package):
     version("5.3.0", tag="v5.3.0")
 
     with default_args(type=("build", "run")):
-        depends_on("python@3.7:3.11")
+        depends_on("python@3.7:3.10")
         depends_on("py-argcomplete")
         depends_on("py-bcbio-gff")
         depends_on("py-bx-python")
@@ -82,7 +82,8 @@ class PySqanti3(Package):
         depends_on("curl")
 
         with when("@6:"):
-            depends_on("python@3.11")
+            depends_on("python@3.10")
+            depends_on("py-torch~mkldnn")
             depends_on("py-pyyaml@6.0.3")
             depends_on("py-scipy@:1.11")
             depends_on("py-pandas@2.2")
@@ -166,8 +167,16 @@ class PySqanti3(Package):
         env.prepend_path("LD_LIBRARY_PATH", self.spec["curl"].prefix.lib)
 
     def install(self, sepc, prefix):
-        install_tree(".", prefix.bin)
+        install_tree(".", prefix)
+        mkdirp(prefix.bin)
+        for script in ("sqanti3", "sqanti3_qc.py", "sqanti3_filter.py", "sqanti3_reads.py", "sqanti3_rescue.py"):
+            set_executable(join_path(prefix, script))
+            symlink(join_path(prefix, script), join_path(prefix.bin, script))
+
     
     @run_after("install")
     def install_test(self):
-        Executable(join_path(self.prefix.bin, "sqanti3"))()
+        Executable(join_path(self.prefix.bin, "sqanti3"))("-h")
+        with working_dir("spack-test", create=True):
+            for script in ("sqanti3_qc.py", "sqanti3_filter.py", "sqanti3_reads.py", "sqanti3_rescue.py"):
+                python(join_path(self.prefix.bin, script), "--help")

@@ -70,12 +70,85 @@ class PyPolars(PythonPackage):
                 f.write("\n".join(content))
             
 
+        # polars 1.x uses single-line format
         filter_file(
             'default = ["all", "nightly"]',
             'default = ["all"]',
             "py-polars/Cargo.toml",
             string=True,
+            ignore_absent=True,
         )
+        # polars 0.20.x uses multi-line format.
+        # filter_file with string=True uses re.escape() which mangles \n,
+        # so multiline patterns never match; use Python directly instead.
+        try:
+            with open("py-polars/Cargo.toml") as f:
+                content = f.read()
+            new_content = content.replace(
+                'default = [\n  "all",\n  "nightly",\n]',
+                'default = [\n  "all",\n]',
+            )
+            if new_content != content:
+                with open("py-polars/Cargo.toml", "w") as f:
+                    f.write(new_content)
+        except FileNotFoundError:
+            pass
+
+        # polars 0.20.x uses raw_table_mut() from hashbrown, which requires
+        # hashbrown's "raw" feature (gated by #[cfg(feature = "raw")] in 0.14.x).
+        # The workspace Cargo.toml only enables ["rayon", "ahash", "serde"], so
+        # we must add "raw" to avoid E0599 compile errors in polars-core.
+        if self.spec.satisfies("@:0.20"):
+            filter_file(
+                'hashbrown = { version = "0.14", features = ["rayon", "ahash", "serde"] }',
+                'hashbrown = { version = "0.14", features = ["rayon", "ahash", "serde", "raw"] }',
+                "Cargo.toml",
+                string=True,
+                ignore_absent=True,
+            )
+            # Remove unstable feature gate - not guarded by #[cfg(feature = "nightly")]
+            filter_file(
+                "#![feature(vec_into_raw_parts)]",
+                "",
+                "py-polars/src/lib.rs",
+                string=True,
+                ignore_absent=True,
+            )
+            # Replace unstable Vec::into_raw_parts() with stable equivalent
+            try:
+                with open("py-polars/src/dataframe/general.rs") as f:
+                    content = f.read()
+                content = content.replace(
+                    "        let (ptr, len, cap) = cols.into_raw_parts();\n",
+                    "        let len = cols.len();\n"
+                    "        let cap = cols.capacity();\n"
+                    "        let ptr = cols.as_ptr();\n"
+                    "        std::mem::forget(cols);\n",
+                )
+                with open("py-polars/src/dataframe/general.rs", "w") as f:
+                    f.write(content)
+            except FileNotFoundError:
+                pass
+            # Remove Titlecase from PyStringFunction: #[pyclass] enums don't
+            # support #[cfg] on variants, so drop it entirely for stable builds.
+            expr_nodes = "py-polars/src/lazyframe/visitor/expr_nodes.rs"
+            try:
+                with open(expr_nodes) as f:
+                    content = f.read()
+                content = content.replace(
+                    "    Titlecase,\n    Uppercase,",
+                    "    Uppercase,",
+                )
+                content = content.replace(
+                    "                    StringFunction::Titlecase => {\n"
+                    "                        (PyStringFunction::Titlecase.into_py(py),).to_object(py)\n"
+                    "                    },\n",
+                    "",
+                )
+                with open(expr_nodes, "w") as f:
+                    f.write(content)
+            except FileNotFoundError:
+                pass
 
     def setup_build_environment(self, env):
         env.set("CARGO_NET_GIT_FETCH_WITH_CLI", "true")
