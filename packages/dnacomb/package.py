@@ -20,11 +20,17 @@ class Dnacomb(Package):
     version("0.2.1", commit="bea1a3b19ede4bf6d5e45d38febd57721b329c91")
     version("0.2.0", commit="6c6b08fbd143867ffc270509988c747137d718b2")
     version("0.1.0", commit="77440a15ff50c021adc1899ae6b9a33288abd31d")
-    
+
     depends_on("rust", type="build")
+    depends_on("rust@1.85:", when="@0.6.0rc1:", type="build")
 
     def install(self, spec, prefix):
         cargo = which("cargo")
         cargo("build", "--release")
         mkdirp(prefix.bin)
         install("target/release/dnacomb", prefix.bin)
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            self.run_test("dnacomb", ["--help"], purpose="basic CLI check")
