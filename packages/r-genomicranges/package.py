@@ -45,3 +45,19 @@ class RGenomicranges(RPackage):
 	depends_on("r-xvector@0.29.2:", type=("build", "run"))
 	depends_on("r-genomeinfodb@1.43.1:", type=("build", "run"), when="@1.60.0:")
 	depends_on("r-seqinfo", type=("build", "run"), when="@1.61.8:")
+
+	@run_before("install")
+	def fix_description_encoding(self):
+
+		with when("@1.54.1"):
+			# R's parser rejects non-ASCII UTF-8 chars in Authors@R without a
+			# UTF-8 locale; replace accented characters with ASCII equivalents.
+			filter_file("Hervé", "Herve", "DESCRIPTION", string=True)
+			filter_file("Pagès", "Pages", "DESCRIPTION", string=True)
+			# Missing comma after Sonali Arora entry in upstream DESCRIPTION
+			filter_file(
+				'person("Sonali", "Arora", role="ctb")\n',
+				'person("Sonali", "Arora", role="ctb"),\n',
+				"DESCRIPTION",
+				string=True,
+			)
