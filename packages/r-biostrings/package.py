@@ -16,11 +16,12 @@ class RBiostrings(RPackage):
 	bioc = "Biostrings"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Biostrings_2.70.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/Biostrings/Biostrings_2.70.3.tar.gz"]
 
-	version("2.78.0", md5="b4ec1bf212646114ef729393f6ff3855", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/Biostrings_2.78.0.tar.gz")
+	version("2.78.0", tag="RELEASE_3_22")
 	version("2.77.2", commit="1cd36a20062cb98fb697bebc5eeb793064d9330e")
 	version("2.75.4", commit="d6f21ed57f7770aef9bfea83c552fb412aeadd1e")
-	version("2.70.3", md5="26220e6e7fe79bb5cc8b8b4ac9ec9d9d")
-	version("2.70.2", md5="05f7ef342dc92d017e36f61bfce48330")
+	version("2.74.1", tag="RELEASE_3_20")
+	version("2.70.3", tag="RELEASE_3_18")
+	version("2.70.2", commit="bcd44fec627d372ba417f9cb4e485004b5bd3d87")
 	version("2.68.0", commit="f28b7838fb8321a9956506b3d2f4af2740bca124")
 	version("2.66.0", commit="3470ca7da798971e2c3a595d8dc8d0d86f14dc53")
 	version("2.64.1", commit="ffe263e958463bd1edb5d5d9316cfd89905be53c")
