@@ -35,6 +35,7 @@ class PyTensorflowProbability(PythonPackage):
     depends_on("py-dm-tree", type=("build", "run"))
     depends_on("py-tensorflow@2.4:", type=("build", "run"))
 
+    @run_after("install")
     def install_test(self):
         with working_dir("spack-test", create=True):
             python("-c", "import tensorflow_probability")
