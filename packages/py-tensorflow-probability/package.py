@@ -14,6 +14,8 @@ class PyTensorflowProbability(PythonPackage):
     homepage = "https://www.tensorflow.org/probability"
     pypi = "tensorflow-probability/tensorflow_probability-0.12.1-py2.py3-none-any.whl"
 
+    import_modules = ["tensorflow_probability"]
+
     version(
         "0.12.1",
         sha256="f148a876671f132c931275e60156892326dcf148c7a0ea2959e7714776788fb0",
@@ -32,3 +34,8 @@ class PyTensorflowProbability(PythonPackage):
     depends_on("py-gast@0.3.2:", type=("build", "run"))
     depends_on("py-dm-tree", type=("build", "run"))
     depends_on("py-tensorflow@2.4:", type=("build", "run"))
+
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python("-c", "import tensorflow_probability")
+            
