@@ -1,0 +1,114 @@
+# Copyright Spack Project Developers. See COPYRIGHT file for details.
+#
+# SPDX-License-Identifier: (Apache-2.0 OR MIT)
+
+import re
+
+from spack.package import *
+
+
+class RocmCore(CMakePackage):
+    """rocm-core is a utility which can be used to get ROCm release version.
+    It also provides the Lmod modules files for the ROCm release.
+    getROCmVersion function provides the ROCm version."""
+
+    homepage = "https://github.com/ROCm/rocm-core"
+    git = "https://github.com/ROCm/rocm-systems.git"
+
+    tags = ["rocm"]
+    maintainers("srekolam", "renjithravindrankannath", "afzpatel")
+    libraries = ["librocm-core"]
+    license("MIT")
+
+    def url_for_version(self, version):
+        if version <= Version("7.1.1"):
+            url = "https://github.com/ROCm/rocm-core/archive/rocm-{0}.tar.gz"
+        else:
+            url = "https://github.com/ROCm/rocm-systems/archive/rocm-{0}.tar.gz"
+        return url.format(version)
+
+    version("7.2.0", sha256="728ea7e9bf16e6ed217a0fd1a8c9afaba2dae2e7908fa4e27201e67c803c5638")
+    version("7.1.1", sha256="0171b82a4d028d57035d0d57a01a058f50f1a23959d230cdeab14972dcd94da8")
+    version("7.1.0", sha256="3c7e990ff4da60119c8575982660331bf636f63a9c68c6a344d410b2bdfa5d39")
+    version("7.0.2", sha256="2d126d47aa4523d84e5ab026680fa2b1145db332ff5e4aa74b48f8ed0ecd975d")
+    version("7.0.0", sha256="d7741e12d184a6553f6d39b3ff4d113a2e7eeb509d5ec08e06cdaf51dcd26f90")
+    version("6.4.3", sha256="dae6e06739882a3ce7be13ac300c22ab35ce80b4e853a21a1a3237fdc0411eb9")
+    version("6.4.2", sha256="f3af7cfd930e20610736335ea860b9a39fb9bba4153fdc34b46ffe7da86a40ab")
+    version("6.4.1", sha256="ac56938879a550ecd55ef5c00067203a0b3faf5a17a48d649728b1a3c65b040c")
+    version("6.4.0", sha256="058739404c91105c1b34117803f6b48917a23191291ce67020e6b983b45450c1")
+    version("6.3.3", sha256="d2a3900424dea1dcc0e303c288d2c07e1345c2d5348398449998e8007fe7fd44")
+    version("6.3.2", sha256="3243f661e5e995341e81127a6096ac80169b8481826ebadc02e24020f1ff985d")
+    version("6.3.1", sha256="f8196f3aafe03bd93ae2947162f34098fd08ddbad4eb3deaf92acd434b480304")
+    version("6.3.0", sha256="4fa981335426195028dd6b3a05228a2ebe8e601023a1e99130bba1b14bf60178")
+    version("6.2.4", sha256="46dcfb5d20d242cd0ce6d02ba64d92bdd3ea59c103cf47b665c7d7a4ea7dc7f1")
+    version("6.2.1", sha256="35cb5f6dfb1847469930bf0fa0913499b6c3f59b2b573a9f598b0956104ba5e2")
+    version("6.2.0", sha256="9bafaf801721e98b398624c8d2fa78618d297d6800f96113e26c275889205526")
+    version("6.1.2", sha256="ce9cbe12977f2058564ecb4cdcef4fd0d7880f6eff8591630f542441092f4fa3")
+    version("6.1.1", sha256="a27bebdd1ba9d387f33b82a67f64c55cb565b482fe5017d5b5726d68da1ab839")
+    version("6.1.0", sha256="9dfe542d1647c42993b06f594c316dad63ba6d6fb2a7398bd72c5768fd1d7b5b")
+    version("6.0.2", sha256="04f01dca2862f0bf781de8afb74aabefc3c9b1d9f01bc8cadb2eb3d7395119cc")
+    version("6.0.0", sha256="d950ee4b63336f34579b6e1dda2d05966b7afa9c84bcdc13874991d1147dc788")
+    version("5.7.1", sha256="fc4915019ddfd126e8ef6a15006bce3aa7bd5fd11dc8eb04ce2ee6bdf9c6ae7f")
+    version("5.7.0", sha256="722689bfec46c35f5428a41c5aacfc31efec2294fc3b0112861c562f8a71ac93")
+
+    variant("asan", default=False, description="Build with address-sanitizer enabled or disabled")
+
+    conflicts("+asan", when="os=rhel9")
+    conflicts("+asan", when="os=centos7")
+    conflicts("+asan", when="os=centos8")
+
+    # depends_on("cxx", type="build")  # generated
+
+    for ver in [
+        "6.1.0",
+        "6.1.1",
+        "6.1.2",
+        "6.2.0",
+        "6.2.1",
+        "6.2.4",
+        "6.3.0",
+        "6.3.1",
+        "6.3.2",
+        "6.3.3",
+        "6.4.0",
+        "6.4.1",
+        "6.4.2",
+        "6.4.3",
+        "7.0.0",
+        "7.0.2",
+        "7.1.0",
+        "7.1.1",
+        "7.2.0",
+    ]:
+        depends_on("llvm-amdgpu", when=f"@{ver}+asan")
+
+    @classmethod
+    def determine_version(cls, lib):
+        match = re.search(r"lib\S*\.so\.\d+\.\d+\.(\d)(\d\d)(\d\d)", lib)
+        if match:
+            ver = "{0}.{1}.{2}".format(
+                int(match.group(1)), int(match.group(2)), int(match.group(3))
+            )
+        else:
+            ver = None
+        return ver
+
+    @property
+    def root_cmakelists_dir(self):
+        if self.spec.satisfies("@:7.1"):
+            return "."
+        else:
+            return "projects/rocm-core"
+
+    def setup_build_environment(self, env) -> None:
+        if self.spec.satisfies("+asan"):
+            env.set("CC", self.spec["llvm-amdgpu"].prefix + "/bin/clang")
+            env.set("CXX", self.spec["llvm-amdgpu"].prefix + "/bin/clang++")
+            env.set("ASAN_OPTIONS", "detect_leaks=0")
+            env.set("CFLAGS", "-fsanitize=address -shared-libasan")
+            env.set("CXXFLAGS", "-fsanitize=address -shared-libasan")
+            env.set("LDFLAGS", "-fuse-ld=lld")
+
+    def cmake_args(self):
+        args = [self.define("ROCM_VERSION", self.spec.version)]
+        return args
