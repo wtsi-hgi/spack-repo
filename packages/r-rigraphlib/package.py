@@ -18,11 +18,14 @@ class RRigraphlib(RPackage):
         "https://www.bioconductor.org/packages/release/bioc/src/contrib/Rigraphlib_1.2.0.tar.gz",
         "https://www.bioconductor.org/packages/3.22/bioc/src/contrib/Archive/Rigraphlib/Rigraphlib_1.2.0.tar.gz",
     ]
+    git = "https://git.bioconductor.org/packages/Rigraphlib.git"
     bioc = "Rigraphlib"
 
     license("GPL-3")
 
-    version("1.2.0", sha256="a4291fb8e03b16f08130ca74fc9e0d00b9bd90196b48c084202324cfe51310a4")
+    version("1.4.0", tag="RELEASE_3_23")
+    version("1.2.0", tag="RELEASE_3_22")
+    version("1.0.0", tag="RELEASE_3_21")
 
     depends_on("r@4.4:", type=("build", "run"))
     depends_on("r-biocmake", type=("build", "run"))
