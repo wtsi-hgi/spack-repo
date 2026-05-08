@@ -1,15 +1,13 @@
 --- a/R/azimuth.R
 +++ b/R/azimuth.R
-@@ -295,6 +295,12 @@
-     fragments = Fragments(query)
+@@ -244,7 +244,14 @@ RunAzimuthATAC.Seurat <- function(
    }
-   
+
 +  # Signac >= 1.14.0 dev renamed CreateChromatinAssay to CreateChromatinAssay5
 +  if (!exists("CreateChromatinAssay", envir = asNamespace("Signac"), inherits = FALSE)) {
 +    CreateChromatinAssay <- function(counts, sep = NULL, fragments = NULL, annotation = NULL, ...) {
 +      Signac::CreateChromatinAssay5(counts = counts, fragments = fragments, annotation = annotation, ...)
 +    }
 +  }
++
    query_assay <- CreateChromatinAssay(
-     counts = query[[assay]]$counts,
-     sep = c(":", "-"),
