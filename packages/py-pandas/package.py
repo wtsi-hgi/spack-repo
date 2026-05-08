@@ -154,7 +154,8 @@ class PyPandas(PythonPackage):
         depends_on("py-xlsxwriter@1.2.2:", type="run", when="@1.4:")
 
     # Historical dependencies
-    depends_on("py-setuptools@61:", when="@2.0", type="build")
-    depends_on("py-setuptools@51:", when="@1.3.2:1", type="build")
-    depends_on("py-setuptools@38.6:", when="@1.3.0:1.3.1", type="build")
-    depends_on("py-setuptools@24.2:", when="@:1.2", type="build")
+    # pandas <=2.0 imports pkg_resources which was removed in setuptools 71
+    depends_on("py-setuptools@61:70", when="@2.0", type="build")
+    depends_on("py-setuptools@51:70", when="@1.3.2:1", type="build")
+    depends_on("py-setuptools@38.6:70", when="@1.3.0:1.3.1", type="build")
+    depends_on("py-setuptools@24.2:70", when="@:1.2", type="build")
