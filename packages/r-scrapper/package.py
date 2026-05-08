@@ -13,16 +13,13 @@ class RScrapper(RPackage):
     of single-cell workflows, covering functionality such as quality control,
     normalization, clustering, and marker detection."""
 
-    homepage = "https://github.com/LTLA/scrapper"
-    urls = [
-        "https://www.bioconductor.org/packages/release/bioc/src/contrib/scrapper_1.4.0.tar.gz",
-        "https://www.bioconductor.org/packages/3.22/bioc/src/contrib/Archive/scrapper/scrapper_1.4.0.tar.gz",
-    ]
+    homepage = "https://bioconductor.org/packages/release/bioc/html/scrapper.html"
     bioc = "scrapper"
+    git = "https://git.bioconductor.org/packages/scrapper"
 
     license("MIT")
 
-    version("1.4.0", sha256="dffda700a4d8d51397469ba659af38e06ccf75e47d7903a7b7f1a3e4175f9b9a")
+    version("1.4.0", tag="RELEASE_3_22")
 
     depends_on("r@4.4:", type=("build", "run"))
     depends_on("r-rcpp", type=("build", "run"))
