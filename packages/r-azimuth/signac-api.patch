@@ -1,8 +1,9 @@
 --- a/R/azimuth.R
 +++ b/R/azimuth.R
-@@ -244,3 +244,10 @@
+@@ -295,6 +295,13 @@
+     fragments = Fragments(query)
    }
-
+   
 +  # Signac >= 1.14.0 dev renamed CreateChromatinAssay to CreateChromatinAssay5
 +  if (!exists("CreateChromatinAssay", envir = asNamespace("Signac"), inherits = FALSE)) {
 +    CreateChromatinAssay <- function(counts, sep = NULL, fragments = NULL, annotation = NULL, ...) {
@@ -11,3 +12,5 @@
 +  }
 +
    query_assay <- CreateChromatinAssay(
+     counts = query[[assay]]$counts,
+     sep = c(":", "-"),
