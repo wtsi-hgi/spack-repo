@@ -34,7 +34,7 @@ class RAssorthead(RPackage):
     interdependent C++ libraries."""
 
     homepage = "https://github.com/LTLA/assorthead"
-    git = "https://git.bioconductor.org/packages/assorthead"
+    git = "https://git.bioconductor.org/packages/assorthead.git"
     url = "https://bioconductor.org/packages/release/bioc/src/contrib/assorthead_1.0.1.tar.gz"
 
     bioc = "assorthead"
