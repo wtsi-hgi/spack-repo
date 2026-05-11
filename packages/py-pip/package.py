@@ -20,6 +20,16 @@ class PyPip(Package, PythonExtension):
     maintainers("adamjstewart", "pradyunsg")
 
     version(
+        "25.1.1",
+        sha256="2913a38a2abf4ea6b64ab507bd9e967f3b53dc1ede74b01b0931e1ce548751af",
+        expand=False,
+    )
+    version(
+        "24.3.1",
+        sha256="eb38b8f4836cfc8a632c5df6e9135a0b7abbc369048f28e9e5c6b63f7eb7f0b4",
+        expand=False,
+    )
+    version(
         "23.1.2",
         sha256="3ef6ac33239e4027d9a5598a381b9d30880a1477e50039db2eac6e8a8f6d1b18",
         expand=False,
@@ -86,7 +96,8 @@ class PyPip(Package, PythonExtension):
     )
 
     extends("python")
-    depends_on("python@3.7:", when="@22:", type=("build", "run"))
+    depends_on("python@3.9:", when="@24:", type=("build", "run"))
+    depends_on("python@3.7:", when="@22:23", type=("build", "run"))
 
     # Uses collections.MutableMapping
     depends_on("python@:3.9", when="@:19.1", type=("build", "run"))
