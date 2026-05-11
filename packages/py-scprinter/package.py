@@ -11,6 +11,8 @@ class PyScprinter(PythonPackage):
 
     license("MIT")
 
+    import_modules = ["scprinter"]
+
     version("1.2.0", sha256="ceaf033c83b961126698c642ce51e65a5b49571f8e92908be39ad33e41fc7022")
     version("1.1.2", sha256="22ef0544f5338967a3454ce7542030ede6c4a217d2bac7e247d4b7957f800a24")
 
@@ -64,4 +66,4 @@ class PyScprinter(PythonPackage):
     def install_test(self):
         with working_dir("spack-test", create=True):
             python = self.spec["python"].command
-            python("-c", "import importlib.util; assert importlib.util.find_spec('scprinter') is not None")
+            python("-c", "import scprinter")
