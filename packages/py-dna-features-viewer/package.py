@@ -21,5 +21,5 @@ class PyDnaFeaturesViewer(PythonPackage):
     depends_on("py-biopython", type=("build", "run"))
     depends_on("py-packaging", type=("build", "run"))
 
-    depends_on("py-setuptools", type="build")
+    depends_on("py-setuptools@:70", type="build")
 
