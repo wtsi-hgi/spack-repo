@@ -48,3 +48,4 @@ class RAzimuth(RPackage):
     depends_on("r-jaspar2020", type=('build', 'run'))
     depends_on("r-tfbstools", type=('build', 'run'))
     depends_on("r-signac", type=('build', 'run'))
+    depends_on("r-signac@:1.16.0", when="@0.4.6", type=('build', 'run'))
