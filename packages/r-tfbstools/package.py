@@ -18,11 +18,13 @@ class RTfbstools(RPackage):
 
 	bioc = "TFBSTools"
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/TFBSTools_1.40.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/TFBSTools/TFBSTools_1.40.0.tar.gz"]
-	version("1.48.0", md5="72bfbf0b475f92b0d3a22a62062979e1", url="https://bioconductor.org/packages/3.22/bioc/src/contrib/TFBSTools_1.48.0.tar.gz")
-	version("1.46.0", md5="a7e3d73595d1810771ed5709e7510e0e", url="https://bioconductor.org/packages/3.21/bioc/src/contrib/TFBSTools_1.46.0.tar.gz")
-	version("1.44.0", md5="6a911dc2eaa79f199041039488ed7271", url="https://bioconductor.org/packages/3.20/bioc/src/contrib/TFBSTools_1.44.0.tar.gz")
-	version("1.42.0", md5="b62f744c81f20bf3e12091c6456036e5", url="https://bioconductor.org/packages/3.19/bioc/src/contrib/TFBSTools_1.42.0.tar.gz")
-	version("1.40.0", md5="f2395c8153c4820e3cebb53a9eda94d6")
+	git = "https://git.bioconductor.org/packages/TFBSTools.git"
+	
+	version("1.48.0", tag="RELEASE_3_22")
+	version("1.46.0", tag="RELEASE_3_21")
+	version("1.44.0", tag="RELEASE_3_20")
+	version("1.42.0", tag="RELEASE_3_19")
+	version("1.40.0", tag="RELEASE_3_18")
 	version("1.38.0", commit="2ce17166b6f73b5093acec2a3dde33b6bcfa56bc")
 	version("1.36.0", commit="3358c89227a4d2e237ee5f8c532f468460a16ee2")
 	version("1.34.0", commit="7f8d0cb58a527a5d7ba94a773279f13aedca6ec7")
