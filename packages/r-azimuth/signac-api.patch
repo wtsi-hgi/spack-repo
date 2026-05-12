@@ -1,9 +1,25 @@
+--- a/NAMESPACE
++++ b/NAMESPACE
+@@ -113,7 +113,7 @@
+ importFrom(SeuratObject,as.Neighbor)
+ importFrom(Signac,AddMotifs)
+ importFrom(Signac,Annotation)
+-importFrom(Signac,CreateChromatinAssay)
++importFrom(Signac,CreateChromatinAssay5)
+ importFrom(Signac,Extend)
+ importFrom(Signac,FeatureMatrix)
+ importFrom(Signac,FindMotifs)
+@@ -119,7 +119,6 @@
+ importFrom(Signac,FindMotifs)
+ importFrom(Signac,FindTopFeatures)
+ importFrom(Signac,Fragments)
+-importFrom(Signac,GRangesToString)
+ importFrom(Signac,GeneActivity)
+ importFrom(Signac,GetGRangesFromEnsDb)
+ importFrom(Signac,RunChromVAR)
 --- a/R/azimuth.R
 +++ b/R/azimuth.R
-@@ -295,6 +295,13 @@
-     fragments = Fragments(query)
-   }
-   
+@@ -298,6 +298,13 @@
 +  # Signac >= 1.14.0 dev renamed CreateChromatinAssay to CreateChromatinAssay5
 +  if (!exists("CreateChromatinAssay", envir = asNamespace("Signac"), inherits = FALSE)) {
 +    CreateChromatinAssay <- function(counts, sep = NULL, fragments = NULL, annotation = NULL, ...) {
@@ -14,3 +30,36 @@
    query_assay <- CreateChromatinAssay(
      counts = query[[assay]]$counts,
      sep = c(":", "-"),
+     fragments = fragments,
+     annotation = annotation
+   )
+--- a/R/helpers.R
++++ b/R/helpers.R
+@@ -1147,2 +1147,11 @@
+ }
+ 
++# Signac deprecated GRangesToString; provide a local implementation
++if (!exists("GRangesToString", envir = asNamespace("Signac"), inherits = FALSE)) {
++  GRangesToString <- function(grange, sep = c("-", "-")) {
++    paste0(as.character(seqnames(grange)), sep[1],
++           BiocGenerics::start(grange), sep[2],
++           BiocGenerics::end(grange))
++  }
++}
++
+--- a/R/server.R
++++ b/R/server.R
+@@ -56,6 +56,13 @@
+ AzimuthServer <- function(input, output, session) {
+   hide(id = "legend")
+   disable(id = 'metacolor.ref')
++  # Signac >= 1.14.0 dev renamed CreateChromatinAssay to CreateChromatinAssay5
++  if (!exists("CreateChromatinAssay", envir = asNamespace("Signac"), inherits = FALSE)) {
++    CreateChromatinAssay <- function(counts, sep = NULL, fragments = NULL, annotation = NULL, ...) {
++      Signac::CreateChromatinAssay5(counts = counts, fragments = fragments, annotation = annotation, ...)
++    }
++  }
++
+   # hide demo dataset button if required
+   if (is.null(x = getOption(x = 'Azimuth.app.demodataset'))) {
+     hide(id = "demobuttons")
