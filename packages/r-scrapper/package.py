@@ -26,7 +26,7 @@ class RScrapper(RPackage):
     depends_on("r-beachmat@2.25.1:", type=("build", "run"))
     depends_on("r-delayedarray@0.27.2:", type=("build", "run"))
     depends_on("r-biocneighbors@1.99.0:", type=("build", "run"))
-    depends_on("r-rigraphlib@1.2.0", when="@1.4.0", type=("build", "run"))
+    depends_on("r-rigraphlib@1.2.0", type=("build", "run"))
     depends_on("r-assorthead@1.3.10:", type=("build", "run"))
 
     # Suggests
