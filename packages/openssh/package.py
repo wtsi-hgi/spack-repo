@@ -79,6 +79,7 @@ class Openssh(AutotoolsPackage):
     # depends_on("c", type="build")
     # depends_on("cxx", type="build")
 
+
     depends_on("krb5+shared", when="+gssapi")
     depends_on("openssl@:1.0", when="@:7.7p1")
     depends_on("openssl@:1.1", when="@:7.9p1")
@@ -107,7 +108,7 @@ class Openssh(AutotoolsPackage):
     patch(
         "https://raw.githubusercontent.com/Homebrew/patches/1860b0a745f1fe726900974845d1b0dd3c3398d6/openssh/patch-sandbox-darwin.c-apple-sandbox-named-external.diff",
         sha256="d886b98f99fd27e3157b02b5b57f3fb49f43fd33806195970d4567f12be66e71",
-        when="@:9 platform=darwin",
+        when="platform=darwin",
     )
 
     # https://github.com/Homebrew/homebrew-core/blob/7aabdeb30506be9b01708793ae553502c115dfc8/Formula/o/openssh.rb#L48-L52C6
@@ -135,13 +136,12 @@ class Openssh(AutotoolsPackage):
         # #39599: fix configure to parse zlib 1.3's version number to prevent build fail
         filter_file(r"if \(n != 3 && n != 4\)", "if (n < 2)", "configure")
 
-        # Clang-based compilers (known at least 14-17) may randomly mis-compile
-        # openssh according to this thread even when -fzero-call-used-regs=used:
-        # https://www.mail-archive.com/openssh-bugs@mindrot.org/msg17461.html
-        # Therefore, remove -fzero-call-used-regs=all for these compilers:
         spec = self.spec
         if spec.version < Version("9.6p1") and self.compiler.name.endswith(("clang", "oneapi")):
             filter_file("-fzero-call-used-regs=all", "", "configure")
+        # https://github.com/Homebrew/homebrew-core/blob/7aabdeb30506be9b01708793ae553502c115dfc8/Formula/o/openssh.rb#L71-L77
+        if self.spec.target.family == "x86_64" and self.spec.platform == "darwin":
+            filter_file(r"-fzero-call-used-regs=all", "-fzero-call-used-regs=used", "configure")
 
     def configure_args(self):
         # OpenSSH's privilege separation path defaults to /var/empty. At
@@ -169,6 +169,10 @@ class Openssh(AutotoolsPackage):
         # to use the MacOS patches
         if self.spec.platform == "darwin":
             env.append_flags("CPPFLAGS", "-D__APPLE_SANDBOX_NAMED_EXTERNAL__")
+
+        # For "@:7": Newer compilers use -fno-common by default and fail on tun_fwd_ifnames:
+        if self.spec.satisfies("@:7 %gcc@10:") or self.spec.satisfies("@:7 %clang@11:"):
+            env.append_flags("CFLAGS", "-fcommon")
 
     def setup_test_environment(self, env):
         """Configure the regression test suite like Debian's openssh-tests package"""
