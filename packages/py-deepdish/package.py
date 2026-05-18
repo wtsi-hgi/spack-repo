@@ -32,7 +32,7 @@ class PyDeepdish(PythonPackage):
     with default_args(type=("build", "run")):
         depends_on("py-tables", when="@0.3.2:")
         depends_on("py-scipy", when="@0.1.7:")
-        depends_on("py-numpy", when="@.1.1:")
+        depends_on("py-numpy", when="@0.1.1:")
 
         depends_on("py-scikit-image", when="@0.1.4:0.3.0")
         depends_on("py-matplotlib", when="@0.1.4:0.3.0")
