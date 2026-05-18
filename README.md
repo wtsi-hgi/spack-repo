@@ -7,4 +7,4 @@ Repository of Spack packages.
 
 ## Dependencies
 
-- Spack v0.20.0
+- Spack v0.21.1
