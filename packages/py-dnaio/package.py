@@ -13,6 +13,7 @@ class PyDnaio(PythonPackage):
     pypi = "dnaio/dnaio-0.3.tar.gz"
     git = "https://github.com/marcelm/dnaio.git"
 
+    version("1.2.3", sha256="aad456d9f6272339958b2c5af32fd64d77a50aca12e394e7a143b4129d49b0b9")
     version("0.9.1", sha256="a1a14181995b27197b7e2b8897994a3107c649b9fc2dfe263caff3c455b0d0c4")
     version("0.4.2", sha256="fa55a45bfd5d9272409b714158fb3a7de5dceac1034a0af84502c7f503ee84f8")
     version("0.3", sha256="47e4449affad0981978fe986684fc0d9c39736f05a157f6cf80e54dae0a92638")
@@ -20,7 +21,9 @@ class PyDnaio(PythonPackage):
     depends_on("py-setuptools@52:", type="build")
     depends_on("py-setuptools-scm@6.2:", when="@0.4:", type="build")
     # 0.9.1 deps
-    depends_on("python@3.7:", type=("build", "run"), when="@0.9.1:")
+    depends_on("python@3.9:", type=("build", "run"), when="@1.2.3:")
+    depends_on("python@3.7:", type=("build", "run"), when="@0.9.1:0")
+    depends_on("py-cython@0.29.20:", type=("build", "run"), when="@1.2.3:")
     depends_on("py-cython@0.29.20:", type=("build", "run"), when="@0.9.1:")
     depends_on("py-xopen@1.4.0:", type=("build", "run"), when="@0.9.1:")
     # older deps
