@@ -15,6 +15,14 @@ class PyCutadapt(PythonPackage):
     pypi = "cutadapt/cutadapt-1.13.tar.gz"
     git = "https://github.com/marcelm/cutadapt.git"
 
+    version("5.2", sha256="2394deead42ecae5fe0fdf369e35f3e2afed770e14059582272779c2e8295d3c")
+    version("5.1", sha256="6bc76345c0a45f6b680cb1164e48eb1f81815c764ec471284ab6234c6653b937")
+    version("5.0", sha256="cd66872b6635c068cf223f72fb0cc93b2454088a3e807a550bb36f717d25ae29")
+    version("4.9", sha256="da3b45775b07334d2e2580a7b154d19ea7e872f0da813bb1ac2a4da712bfc223")
+    version("4.8", sha256="ac852f6b5f2d1147d0d34bef2eaa5879776f81c69a35dd328a701aae39ec6034")
+    version("4.7", sha256="8738a35b363eaf615665a4e7d1b4beb385cd93fb7ffdcf82cd4ab6457acc879b")
+    version("4.6", sha256="924116f34569248035b16f58e73458ed4c0004e44823b80b07f4ab419272f591")
+    version("4.5", sha256="33e56678bb3ba90fd7045d03184b83e135f61e8a6b9f29aa3db8c63611a08e94")
     version("4.4", sha256="4554157c673022e1c433fcd6e3b803008fef60c8e71c01215e4aa04b0f09fe83")
     version("4.3", sha256="319de860f975977e080ea42d9d255322060693ca39b7be51187831311702fe29")
     version("4.2", sha256="ab0ac450baecc1576cc5ccbc06eab2685be9ee7676763938237d954a644237f1")
@@ -26,13 +34,16 @@ class PyCutadapt(PythonPackage):
     version("1.13", sha256="aa9f2c1f33dc081fe94f42b1250e4382b8fb42cabbf6e70a76ff079f211d5fc0")
 
     # version 4 deps
-    depends_on("py-setuptools@63:", type="build", when="@4.2:")
+    depends_on("py-setuptools@78:", type="build", when="@5:")
+    depends_on("py-setuptools@63:", type="build", when="@4.2:4")
     depends_on("py-setuptools@43:", type="build", when="@:4.1")
     depends_on("py-setuptools-scm@6.2:+toml", type="build", when="@2.0:")
-    depends_on("python@3.7:", type=("build", "run"), when="@4.1:")
+    depends_on("python@3.9:", type=("build", "run"), when="@5:")
+    depends_on("python@3.7:", type=("build", "run"), when="@4.1:4")
     depends_on("python@3.8", type=("build", "run"), when="@2.4")
     depends_on("py-cython@0.29.20:", type="build")
-    depends_on("py-dnaio@0.10:", type=("build", "run"), when="@4.3:")
+    depends_on("py-dnaio@1.2.3:", type=("build", "run"), when="@5:")
+    depends_on("py-dnaio@0.10:", type=("build", "run"), when="@4.3:4")
     depends_on("py-dnaio@0.9.1:", type=("build", "run"), when="@4.2")
     depends_on("py-dnaio@0.7.1:", type=("build", "run"), when="@4.1")
     depends_on("py-xopen@1.6:", type=("build", "run"), when="@4.2:")
@@ -48,3 +59,8 @@ class PyCutadapt(PythonPackage):
     depends_on("py-dnaio@0.4.0:0.4", type=("build", "run"), when="@2.6")
     depends_on("py-dnaio@0.4.1:0.4", type=("build", "run"), when="@2.7:2.9")
     depends_on("py-dnaio@0.4.2:0.4", type=("build", "run"), when="@2.10")
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            self.run_test("cutadapt", ["--help"], purpose="check cutadapt CLI")
