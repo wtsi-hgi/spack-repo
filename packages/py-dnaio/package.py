@@ -25,7 +25,6 @@ class PyDnaio(PythonPackage):
         # 0.9.1 deps
         depends_on("python@3.9:", when="@1.2.3:")
         depends_on("python@3.7:", when="@0.9.1:0")
-        depends_on("py-cython@0.29.20:", when="@1.2.3:")
         depends_on("py-cython@0.29.20:", when="@0.9.1:")
         depends_on("py-xopen@1.4.0:", when="@0.9.1:")
         # older deps
