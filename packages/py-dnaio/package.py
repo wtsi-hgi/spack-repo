@@ -13,6 +13,8 @@ class PyDnaio(PythonPackage):
     pypi = "dnaio/dnaio-0.3.tar.gz"
     git = "https://github.com/marcelm/dnaio.git"
 
+    import_modules = ["dnaio"]
+
     version("1.2.3", sha256="aad456d9f6272339958b2c5af32fd64d77a50aca12e394e7a143b4129d49b0b9")
     version("0.9.1", sha256="a1a14181995b27197b7e2b8897994a3107c649b9fc2dfe263caff3c455b0d0c4")
     version("0.4.2", sha256="fa55a45bfd5d9272409b714158fb3a7de5dceac1034a0af84502c7f503ee84f8")
@@ -31,3 +33,8 @@ class PyDnaio(PythonPackage):
         depends_on("python@3.7", when="@0.3")
         depends_on("py-xopen")
         depends_on("py-xopen@0.8.2:", when="@0.4:")
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python("-c", "import gemmi")
