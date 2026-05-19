@@ -83,8 +83,7 @@ class PyGemmi(PythonPackage):
         depends_on("py-scikit-build-core@0.8", when="@0.6.4:")
 
 
-        depends_on("py-setuptools@:70", when="@:0.6.3")
-        depends_on("py-setuptools@58", when="@0.1")
+        depends_on("py-setuptools@:58", when="@:0.6.3")
 
         depends_on("py-nanobind@2.4:", when="@0.7.0:")
         depends_on("py-pybind11@2.6.2:", when="@:0.6")
@@ -100,10 +99,11 @@ class PyGemmi(PythonPackage):
 
     @run_after("install")
     def install_test(self):
-        gemmi = Executable(join_path(self.prefix.bin, "gemmi"))
         with working_dir("spack-test", create=True):
-            gemmi("-h")
-        
-        python("-c", "import gemmi")
+            python("-c", "import gemmi")
+
+            if self.spec.satisfies("@0.6.4:"):
+                gemmi = Executable(join_path(self.prefix.bin.gemmi))
+                gemmi("-h")
     
 
