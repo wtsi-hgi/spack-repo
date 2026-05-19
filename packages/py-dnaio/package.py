@@ -37,4 +37,4 @@ class PyDnaio(PythonPackage):
     @run_after("install")
     def install_test(self):
         with working_dir("spack-test", create=True):
-            python("-c", "import gemmi")
+            python("-c", "import dnaio")
