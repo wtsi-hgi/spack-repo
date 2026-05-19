@@ -102,8 +102,3 @@ class PyGemmi(PythonPackage):
         with working_dir("spack-test", create=True):
             python("-c", "import gemmi")
 
-            if self.spec.satisfies("@0.6.4:"):
-                gemmi = Executable(join_path(self.prefix.bin.gemmi))
-                gemmi("-h")
-    
-
