@@ -32,7 +32,7 @@ class PyPackaging(PythonPackage):
 
     # Needed to bootstrap Spack correctly on Python 3.6 (rhel8 platform-python)
     depends_on("python@3.7:", when="@22:", type=("build", "run"))
-    depends_on("python@3.8:", when="@24.1", type=("build", "run"))
+    depends_on("python@3.8:", when="@24.1:", type=("build", "run"))
 
     # Historical dependencies
     depends_on("py-setuptools@40.8.0:", when="@20.8:21", type="build")
