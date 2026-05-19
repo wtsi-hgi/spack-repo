@@ -24,13 +24,9 @@ class PyConformationalBiasing(PythonPackage):
     def patch(self):
         mkdirp("conformational_biasing")
         install("utilities/cbutils.py", "conformational_biasing/cbutils.py")
-        touch("conformational_biasing/__init__.py")
-        filter_file(
-            "^$",
-            "from .cbutils import *\n",
-            "conformational_biasing/__init__.py",
-            string=True,
-        )
+        with open("conformational_biasing/__init__.py", "w", encoding="utf-8") as fh:
+            fh.write("from .cbutils import *\n")
+
         with open("setup.py", "w", encoding="utf-8") as fh:
             fh.write(
                 'from setuptools import setup\n'
