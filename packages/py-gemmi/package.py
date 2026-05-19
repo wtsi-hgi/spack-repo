@@ -12,6 +12,8 @@ class PyGemmi(PythonPackage):
     homepage = "https://github.com/project-gemmi/gemmi"
     pypi = "gemmi/gemmi-0.7.3.tar.gz" 
 
+    import_modules = ["gemmi"]
+
     version("0.1.2", sha256="2cf46e879e036f7d3bd656c59d04ffe7f3beee8ba41f2cb4475cc5b2c97154f3")
     version("0.1.3", sha256="238243f3814b9e2ef6aab1448a1080da90190e60e32b1d22a145f5d59b17369f")
     version("0.1.4", sha256="e1fcbb530fc2d17cea010410452db8dfa35d7971e58a5c993e3d3650fd49b2fb")
@@ -65,11 +67,43 @@ class PyGemmi(PythonPackage):
     version("0.7.1", sha256="73bb4a2c574ef7586efdf0161aae22bb75c0301af5e9cc22252877e707facdd2")
     version("0.7.3", sha256="32069b111216aad58a9724640fb23a31309c15a1aaf16164b4c9addc3677fadb")
 
-    depends_on("py-setuptools", type=("build"))
-    depends_on("py-scikit-build-core@0.10:", type=("build"), when="@0.6.4:")
-    depends_on("py-scikit-build-core", type=("build"), when="@:0.6.3")
-    depends_on("py-pybind11@2.6:", type=("build"), when="@:0.6")
-    depends_on("py-nanobind@2.4:", type=("build"), when="@0.7.0:")
-    depends_on("py-typing-extensions@4.0:", type=("build"), when="^python@:3.10")
-    depends_on("python@3.8:", type=("build", "run"))
+    resource(
+        name="pocketfft",
+        git="https://gitlab.mpcdf.mpg.de/mtr/pocketfft.git",
+        commit="3ba3533121269b048920f144239a0e3f051438a1",
+        destination="third_party",
+        placement="pocketfft",
+        when="@0.2.3",
+    )
+
+    with default_args(type="build"):
+        depends_on("py-scikit-build-core@0.11", when="@0.7.1:")
+        depends_on("py-scikit-build-core@0.10.5:0.10", when="@0.6.7:")
+        depends_on("py-scikit-build-core@0.9", when="@0.6.6:")
+        depends_on("py-scikit-build-core@0.8", when="@0.6.4:")
+
+
+        depends_on("py-setuptools@:70", when="@:0.6.3")
+        depends_on("py-setuptools@58", when="@0.1")
+
+        depends_on("py-nanobind@2.4:", when="@0.7.0:")
+        depends_on("py-pybind11@2.6.2:", when="@:0.6")
+        depends_on("py-pybind11@2.4.3", when="@0.3:0.3.6")
+
+        depends_on("py-typing-extensions@4.0:", when="@0.7:")
+    
+
+    depends_on("python@3.8:3.11", when="@0.7:")
+    depends_on("python@3.7:")
+
+    depends_on("py-numpy")
+
+    @run_after("install")
+    def install_test(self):
+        gemmi = Executable(join_path(self.prefix.bin, "gemmi"))
+        with working_dir("spack-test", create=True):
+            gemmi("-h")
+        
+        python("-c", "import gemmi")
+    
 
