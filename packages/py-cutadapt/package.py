@@ -33,32 +33,35 @@ class PyCutadapt(PythonPackage):
     version("2.4", sha256="74307bfa3b4c52b8af8ba651c3fb713a26cb0936d88f8970447366fcfb3e5b6b")
     version("1.13", sha256="aa9f2c1f33dc081fe94f42b1250e4382b8fb42cabbf6e70a76ff079f211d5fc0")
 
-    # version 4 deps
+    # v4 deps
     depends_on("py-setuptools@78:", type="build", when="@5:")
     depends_on("py-setuptools@63:", type="build", when="@4.2:4")
-    depends_on("py-setuptools@43:", type="build", when="@:4.1")
+    depends_on("py-setuptools@43:70", type="build", when="@:4.1")
     depends_on("py-setuptools-scm@6.2:+toml", type="build", when="@2.0:")
-    depends_on("python@3.9:", type=("build", "run"), when="@5:")
-    depends_on("python@3.7:", type=("build", "run"), when="@4.1:4")
-    depends_on("python@3.8", type=("build", "run"), when="@2.4")
+    
     depends_on("py-cython@0.29.20:", type="build")
-    depends_on("py-dnaio@1.2.3:", type=("build", "run"), when="@5:")
-    depends_on("py-dnaio@0.10:", type=("build", "run"), when="@4.3:4")
-    depends_on("py-dnaio@0.9.1:", type=("build", "run"), when="@4.2")
-    depends_on("py-dnaio@0.7.1:", type=("build", "run"), when="@4.1")
-    depends_on("py-xopen@1.6:", type=("build", "run"), when="@4.2:")
-    depends_on("py-xopen@1.1:", type=("build", "run"), when="@4.1")
-    # older version deps
-    depends_on("py-xopen@0.1.1:", type=("build", "run"), when="@1.13")
-    depends_on("py-xopen@0.5.0:", type=("build", "run"), when="@2.0:2.3")
-    depends_on("py-xopen@0.7.3:", type=("build", "run"), when="@2.4")
-    depends_on("py-xopen@0.8.1:0.8", type=("build", "run"), when="@2.5")
-    depends_on("py-xopen@0.8.4:0.8", type=("build", "run"), when="@2.6:2.10")
-    depends_on("py-dnaio@0.3:", type=("build", "run"), when="@2.0:2.4")
-    depends_on("py-dnaio@0.3", type=("build", "run"), when="@2.5")
-    depends_on("py-dnaio@0.4.0:0.4", type=("build", "run"), when="@2.6")
-    depends_on("py-dnaio@0.4.1:0.4", type=("build", "run"), when="@2.7:2.9")
-    depends_on("py-dnaio@0.4.2:0.4", type=("build", "run"), when="@2.10")
+
+    with default_args(type=("build", "run")):
+        depends_on("python@3.9:", when="@5:")
+        depends_on("python@3.7:", when="@4.1:4")
+        depends_on("python@3.6:", when="@:3")
+        depends_on("py-dnaio@1.2.3:", when="@5:")
+        depends_on("py-dnaio@0.10:", when="@4.3:4")
+        depends_on("py-dnaio@0.9.1:", when="@4.2")
+        depends_on("py-dnaio@0.7.1:", when="@4.1")
+        depends_on("py-xopen@1.6:", when="@4.2:")
+        depends_on("py-xopen@1.1:", when="@4.1")
+        # older deps
+        depends_on("py-xopen@0.1.1:", when="@1.13")
+        depends_on("py-xopen@0.5.0:", when="@2.0:2.3")
+        depends_on("py-xopen@0.7.3:", when="@2.4")
+        depends_on("py-xopen@0.8.1:0.8", when="@2.5")
+        depends_on("py-xopen@0.8.4:0.8", when="@2.6:2.10")
+        depends_on("py-dnaio@0.3:", when="@2.0:2.4")
+        depends_on("py-dnaio@0.3", when="@2.5")
+        depends_on("py-dnaio@0.4.0:0.4", when="@2.6")
+        depends_on("py-dnaio@0.4.1:0.4", when="@2.7:2.9")
+        depends_on("py-dnaio@0.4.2:0.4", when="@2.10")
 
     @run_after("install")
     def install_test(self):
