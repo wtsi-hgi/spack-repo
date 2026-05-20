@@ -74,7 +74,16 @@ class PyPyyaml(PythonPackage):
 
         return modules
 
-    @when("^py-pip@23.1:")
+    # 6.0.3 replaced the old --with-libyaml build_ext option with a
+    # pyyaml_build_config config-settings key.
+    @when("@6.0.3: ^py-pip@23.1:")
+    def config_settings(self, spec, prefix):
+        if "+libyaml" in self.spec:
+            return {"pyyaml_build_config": '{"with_libyaml": true}'}
+        else:
+            return {"pyyaml_build_config": '{"with_libyaml": false}'}
+
+    @when("@:6.0.2 ^py-pip@23.1:")
     def config_settings(self, spec, prefix):
         option_flag = "--global-option"
         if self.spec["py-setuptools"].satisfies("@68:"):
