@@ -39,7 +39,7 @@ class PyScprinter(PythonPackage):
     depends_on("py-wandb", type=("build", "run"))
     depends_on("py-logomaker", type=("build", "run"))
     depends_on("py-shap", type=("build", "run"))
-    depends_on("py-tangermeme", type=("build", "run"))
+    depends_on("py-tangermeme@:0.5.1", type=("build", "run"))
     depends_on("py-adjusttext", type=("build", "run"))
     depends_on("py-anndata", type=("build", "run"))
     depends_on("py-pysam", type=("build", "run"))
