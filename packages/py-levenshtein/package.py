@@ -48,7 +48,7 @@ class PyLevenshtein(PythonPackage):
 
 	depends_on("python@3.10:", type=("build", "run"))
 	depends_on("py-rapidfuzz", type=("build", "run"))
-	depends_on("py-scikit-build-core", type="build")
+	depends_on("py-scikit-build-core@0.10: +pyproject", type="build")
 
 	@run_after("install")
 	def install_test(self):
