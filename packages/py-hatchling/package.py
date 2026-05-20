@@ -27,6 +27,9 @@ class PyHatchling(PythonPackage):
     version("1.8.1", sha256="448b04b23faed669b2b565b998ac955af4feea66c5deed3a1212ac9399d2e1cd")
     version("1.4.1", sha256="13461b42876ade4f75ee5d2a2c656b288ca0aab7f048ef66657ef166996b2118")
 
+    def setup_build_environment(self, env) -> None:
+        env.set("HATCH_METADATA_CLASSIFIERS_NO_VERIFY", "1")
+
     def setup_dependent_build_environment(
         self, env, dependent_spec: Spec
     ) -> None:
