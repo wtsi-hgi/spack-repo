@@ -18,17 +18,19 @@ class RSparsearray(RPackage):
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SparseArray_1.2.4.tar.gz",
         "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SparseArray/SparseArray_1.2.4.tar.gz",
     ]
+    git = "https://git.bioconductor.org/packages/SparseArray.git"
 
     version("1.8.0", tag="RELEASE_3_21")
-    version("1.2.4", md5="42ba66c3146b623250558daa44adf389")
+    version("1.2.4", tag="RELEASE_3_18")
 
-    depends_on("r@4.3:", type=("build", "run"))
-    depends_on("r-matrix", type=("build", "run"))
-    depends_on("r-biocgenerics@0.43.1:", type=("build", "run"))
-    depends_on("r-matrixgenerics@1.11.1:", type=("build", "run"))
-    depends_on("r-s4vectors", type=("build", "run"))
-    depends_on("r-s4vectors@0.43.2:", type=("build", "run"), when="@1.8.0:")
-    depends_on("r-s4arrays@1.1.6:", type=("build", "run"))
-    depends_on("r-matrixstats", type=("build", "run"))
-    depends_on("r-iranges", type=("build", "run"))
-    depends_on("r-xvector", type=("build", "run"))
+    with default_args(type=("build", "run")):
+        depends_on("r@4.3:")
+        depends_on("r-matrix")
+        depends_on("r-biocgenerics@0.43.1:")
+        depends_on("r-matrixgenerics@1.11.1:")
+        depends_on("r-s4vectors")
+        depends_on("r-s4vectors@0.43.2:", when="@1.8.0:")
+        depends_on("r-s4arrays@1.5.11:")
+        depends_on("r-matrixstats")
+        depends_on("r-iranges")
+        depends_on("r-xvector")
