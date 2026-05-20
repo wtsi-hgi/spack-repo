@@ -43,9 +43,10 @@ class PyGffutils(PythonPackage):
     version("0.7", sha256="1e03365ed45a1dafb8ff750a562930872dc09cdd86603e3f34c81a4183571546")
     version("0.10.1", sha256="a8fc39006d7aa353147238160640e2210b168f7849cb99896be3fc9441e351cb")
 
-    depends_on("py-setuptools@:68", type="build")
+    depends_on("py-setuptools@:68", type="build", when="@:0.13")
+    depends_on("py-setuptools@77.0.3:", type="build", when="@0.14:")
     depends_on("py-pyfaidx@0.5.5.2:", type=("build", "run"))
-    depends_on("py-six@1.12.0:", type=("build", "run"))
+    depends_on("py-six@1.12.0:", type=("build", "run"), when="@:0.13")
     depends_on("py-argh@0.26.2:", type=("build", "run"))
     depends_on("py-argcomplete@1.9.4:", type=("build", "run"))
     depends_on("py-simplejson", type=("build", "run"))

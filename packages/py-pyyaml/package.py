@@ -41,7 +41,7 @@ class PyPyyaml(PythonPackage):
     depends_on("libyaml", when="+libyaml", type="link")
     # setuptools versions are not documented upstream, the when= constraint
     # should probably be set to a lower version.
-    depends_on("py-setuptools@62:67", type="build", when="@6.0.3:")
+    depends_on("py-setuptools@62:", type="build", when="@6.0.3:")
     depends_on("py-setuptools", type="build")
     depends_on("py-cython", when="@6:+libyaml", type="build")
 
@@ -76,10 +76,14 @@ class PyPyyaml(PythonPackage):
 
     @when("^py-pip@23.1:")
     def config_settings(self, spec, prefix):
+        option_flag = "--global-option"
+        if self.spec["py-setuptools"].satisfies("@68:"):
+            option_flag = "--build-option"
+
         if "+libyaml" in self.spec:
-            return {"--global-option": "--with-libyaml"}
+            return {option_flag: "--with-libyaml"}
         else:
-            return {"--global-option": "--without-libyaml"}
+            return {option_flag: "--without-libyaml"}
 
     @when("^py-pip@:23.0")
     def global_options(self, spec, prefix):
