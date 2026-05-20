@@ -47,6 +47,7 @@ class Openssh(AutotoolsPackage):
         # https://www.cvedetails.com/cve/CVE-2023-48795/
         version("9.5p1", sha256="f026e7b79ba7fb540f75182af96dc8a8f1db395f922bbc9f6ca603672686086b")
         version("9.4p1", sha256="3608fd9088db2163ceb3e600c85ab79d0de3d221e59192ea1923e23263866a85")
+<<<<<<< HEAD
         version("9.3p1", sha256="e9baba7701a76a51f3d85a62c383a3c9dcd97fa900b859bc7db114c1868af8a8")
         version("9.2p1", sha256="3f66dbf1655fb45f50e1c56da62ab01218c228807b21338d634ebcdf9d71cf46")
         version("9.1p1", sha256="19f85009c7e3e23787f0236fbb1578392ab4d4bf9f8ec5fe6bc1cd7e8bfdd288")
@@ -71,6 +72,10 @@ class Openssh(AutotoolsPackage):
         version("6.8p1", sha256="3ff64ce73ee124480b5bf767b9830d7d3c03bbcb6abe716b78f0192c37ce160e")
         version("6.7p1", sha256="b2f8394eae858dabbdef7dac10b99aec00c95462753e80342e530bbb6f725507")
         version("6.6p1", sha256="48c1f0664b4534875038004cc4f3555b8329c2a81c1df48db5c517800de203bb")
+=======
+        # https://www.cvedetails.com/cve/CVE-2023-38408/
+        version("9.3p1", sha256="e9baba7701a76a51f3d85a62c383a3c9dcd97fa900b859bc7db114c1868af8a8")
+>>>>>>> aa3c5d61e (Update openssl and openssh)
 
     variant(
         "gssapi", default=True, description="Enable authentication via Kerberos through GSSAPI"
@@ -79,12 +84,11 @@ class Openssh(AutotoolsPackage):
     # depends_on("c", type="build")
     # depends_on("cxx", type="build")
 
+<<<<<<< HEAD
 
+=======
+>>>>>>> aa3c5d61e (Update openssl and openssh)
     depends_on("krb5+shared", when="+gssapi")
-    depends_on("openssl@:1.0", when="@:7.7p1")
-    depends_on("openssl@:1.1", when="@:7.9p1")
-    # 8.7 and earlier don't support openssl@3.1:
-    depends_on("openssl@:3.0", when="@:8.7p1")
     depends_on("openssl")
     depends_on("libedit")
     depends_on("ncurses")
@@ -108,7 +112,7 @@ class Openssh(AutotoolsPackage):
     patch(
         "https://raw.githubusercontent.com/Homebrew/patches/1860b0a745f1fe726900974845d1b0dd3c3398d6/openssh/patch-sandbox-darwin.c-apple-sandbox-named-external.diff",
         sha256="d886b98f99fd27e3157b02b5b57f3fb49f43fd33806195970d4567f12be66e71",
-        when="platform=darwin",
+        when="@:9 platform=darwin",
     )
 
     # https://github.com/Homebrew/homebrew-core/blob/7aabdeb30506be9b01708793ae553502c115dfc8/Formula/o/openssh.rb#L48-L52C6
@@ -136,12 +140,22 @@ class Openssh(AutotoolsPackage):
         # #39599: fix configure to parse zlib 1.3's version number to prevent build fail
         filter_file(r"if \(n != 3 && n != 4\)", "if (n < 2)", "configure")
 
+<<<<<<< HEAD
         spec = self.spec
         if spec.version < Version("9.6p1") and self.compiler.name.endswith(("clang", "oneapi")):
             filter_file("-fzero-call-used-regs=all", "", "configure")
         # https://github.com/Homebrew/homebrew-core/blob/7aabdeb30506be9b01708793ae553502c115dfc8/Formula/o/openssh.rb#L71-L77
         if self.spec.target.family == "x86_64" and self.spec.platform == "darwin":
             filter_file(r"-fzero-call-used-regs=all", "-fzero-call-used-regs=used", "configure")
+=======
+        # Clang-based compilers (known at least 14-17) may randomly mis-compile
+        # openssh according to this thread even when -fzero-call-used-regs=used:
+        # https://www.mail-archive.com/openssh-bugs@mindrot.org/msg17461.html
+        # Therefore, remove -fzero-call-used-regs=all for these compilers:
+        spec = self.spec
+        if spec.version < Version("9.6p1") and self.compiler.name.endswith(("clang", "oneapi")):
+            filter_file("-fzero-call-used-regs=all", "", "configure")
+>>>>>>> aa3c5d61e (Update openssl and openssh)
 
     def configure_args(self):
         # OpenSSH's privilege separation path defaults to /var/empty. At
