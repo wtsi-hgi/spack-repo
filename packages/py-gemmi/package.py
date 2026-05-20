@@ -60,7 +60,7 @@ class PyGemmi(PythonPackage):
     version("0.6.2", sha256="6d2b161b0b6356f0060fb084f4524d907496eeffde31b8da07204e9fe4cac408")
     version("0.6.3", sha256="50b6cfad0090af6818f45f0bb1a29631cdf62ce6acfa1f5ffc5664e1e7b27e04")
     version("0.6.4", sha256="f7ca738f42fbc4e918e45bcb152658d7e6da006615b13b1c97139a851c0ed106")
-    version("0.6.5", sha256="640361cb8eefadec869493f540d96215797ce7aea40013ae39e8dca8ae2e687b", expand=False, url="https://files.pythonhosted.org/packages/cb/c5/d42852e6e9e2164664b86aab8b26a1f32946b90414e8e0e5d87d10707106/gemmi-0.6.5-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl")
+    version("0.6.5", sha256="3ab331b0982a10512f25ef1d13e58b9b09c059f08ada30adc4d9118e99b75f3d")
     version("0.6.6", sha256="14caf4208a785309fe527871682076c42f41a7eb68d79ef1adeb4203d38dba22")
     version("0.6.7", sha256="5c0809329ba8a9711fdb1655d13c14e226828933e33e8816091a09d3f0ce35ce")
     version("0.7.0", sha256="758604664b20d0ea59e81ff757fd40572f69918e65ac2e6c690709fbd9ebc0c5")
@@ -78,9 +78,10 @@ class PyGemmi(PythonPackage):
 
     with default_args(type="build"):
         depends_on("py-scikit-build-core@0.11", when="@0.7.1:")
-        depends_on("py-scikit-build-core@0.10.5:0.10", when="@0.6.7:")
-        depends_on("py-scikit-build-core@0.9", when="@0.6.6:")
-        depends_on("py-scikit-build-core@0.8", when="@0.6.4:")
+        depends_on("py-scikit-build-core@0.10", when="@0.6.7")
+        depends_on("py-scikit-build-core@0.9", when="@0.6.6")
+        depends_on("py-scikit-build-core@0.8+pyproject", when="@0.6.5")
+        depends_on("py-pybind11-stubgen", when="@0.6.4:")
 
 
         depends_on("py-setuptools@:58", when="@:0.6.3")
