@@ -14,10 +14,6 @@ class RS4arrays(RPackage):
 
     homepage = "https://bioconductor.org/packages/S4Arrays"
     bioc = "S4Arrays"
-    urls = [
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/S4Arrays_1.2.1.tar.gz",
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/S4Arrays/S4Arrays_1.2.1.tar.gz",
-    ]
     git="https://git.bioconductor.org/packages/S4Arrays.git"
 
     version("1.8.0", tag="RELEASE_3_21")

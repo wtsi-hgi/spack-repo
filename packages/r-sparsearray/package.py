@@ -14,10 +14,6 @@ class RSparsearray(RPackage):
 
     homepage = "https://bioconductor.org/packages/SparseArray"
     bioc = "SparseArray"
-    urls = [
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SparseArray_1.2.4.tar.gz",
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SparseArray/SparseArray_1.2.4.tar.gz",
-    ]
     git = "https://git.bioconductor.org/packages/SparseArray.git"
 
     version("1.8.0", tag="RELEASE_3_21")
