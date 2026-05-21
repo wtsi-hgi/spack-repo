@@ -18,11 +18,12 @@ class PyMemelite(PythonPackage):
     version("0.2.0", sha256="6ccb38963e09b938b8412a05cab8244caa87e03e44c9c985af6a913b0d2ef5f0", expand=False, url="https://files.pythonhosted.org/packages/93/84/648dc9326dbb31d2dbcbe30d089f2f126a274f8e0b8a539818b9d1bd6f55/memelite-0.2.0-py3-none-any.whl")
 
     depends_on("py-setuptools", type=("build"))
-    depends_on("py-numpy", type=("build", "run"))
-    depends_on("py-numba", type=("build", "run"))
-    depends_on("py-pandas", type=("build", "run"))
-    depends_on("py-pyfaidx", type=("build", "run"))
-    depends_on("py-tqdm", type=("build", "run"))
+    with default_args(type=("build", "run")):
+        depends_on("py-numpy")
+        depends_on("py-numba")
+        depends_on("py-pandas")
+        depends_on("py-pyfaidx")
+        depends_on("py-tqdm")
 
     @run_after("install")
     def install_test(self):
