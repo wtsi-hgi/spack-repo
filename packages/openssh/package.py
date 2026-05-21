@@ -131,22 +131,16 @@ class Openssh(AutotoolsPackage):
         # #39599: fix configure to parse zlib 1.3's version number to prevent build fail
         filter_file(r"if \(n != 3 && n != 4\)", "if (n < 2)", "configure")
 
-<<<<<<< HEAD
         spec = self.spec
         if spec.version < Version("9.6p1") and self.compiler.name.endswith(("clang", "oneapi")):
             filter_file("-fzero-call-used-regs=all", "", "configure")
         # https://github.com/Homebrew/homebrew-core/blob/7aabdeb30506be9b01708793ae553502c115dfc8/Formula/o/openssh.rb#L71-L77
         if self.spec.target.family == "x86_64" and self.spec.platform == "darwin":
             filter_file(r"-fzero-call-used-regs=all", "-fzero-call-used-regs=used", "configure")
-=======
         # Clang-based compilers (known at least 14-17) may randomly mis-compile
         # openssh according to this thread even when -fzero-call-used-regs=used:
         # https://www.mail-archive.com/openssh-bugs@mindrot.org/msg17461.html
-        # Therefore, remove -fzero-call-used-regs=all for these compilers:
-        spec = self.spec
-        if spec.version < Version("9.6p1") and self.compiler.name.endswith(("clang", "oneapi")):
-            filter_file("-fzero-call-used-regs=all", "", "configure")
->>>>>>> aa3c5d61e (Update openssl and openssh)
+        # Therefore, remove -fzero-call-used-regs=all for these compilers
 
     def configure_args(self):
         # OpenSSH's privilege separation path defaults to /var/empty. At
