@@ -33,21 +33,23 @@ class PyTangermeme(PythonPackage):
     version("1.0.2", sha256="e812f256a9b65825a42a2b0b502ab4eaf3e92186cb1232163451ad9978a18ccd", expand=False, url="https://files.pythonhosted.org/packages/0e/d1/071b5872cb790d9d8af7ea5575f827b2c55e3121b191e8074d712bdd00f7/tangermeme-1.0.2-py3-none-any.whl")
     version("1.0.3", sha256="b7070591d4a04505e38b72d6746d0d2b87271b77a2727a24701c53b649557c2a", expand=False, url="https://files.pythonhosted.org/packages/96/d7/b6dd90e0ef5e2e04281e132d3e77fc8387761578cc10567c6c338cbf7235/tangermeme-1.0.3-py3-none-any.whl")
     version("1.0.4", sha256="c5a6b8e7af7b0871fe7912e3fa72d4b19aba06062be9b2de80b1d566851f992f", expand=False, url="https://files.pythonhosted.org/packages/23/81/1409b61fa74eb974dd4cbe4b614d9458f71e7b9a8bf5d02fad079a1a309b/tangermeme-1.0.4-py3-none-any.whl")
-
-    depends_on("python@3.9:", type=("build", "run"))
+    
     depends_on("py-setuptools", type="build")
-    depends_on("py-numpy", type=("build", "run"))
-    depends_on("py-scipy", type=("build", "run"))
-    depends_on("py-pandas", type=("build", "run"))
-    depends_on("py-torch~cuda~distributed~rocm", type=("build", "run"))
-    depends_on("py-pybigtools", type=("build", "run"))
-    depends_on("py-pyfaidx", type=("build", "run"))
-    depends_on("py-tqdm", type=("build", "run"))
-    depends_on("py-numba", type=("build", "run"))
-    depends_on("py-joblib", type=("build", "run"))
-    depends_on("py-scikit-learn", type=("build", "run"))
-    depends_on("py-matplotlib", type=("build", "run"))
-    depends_on("py-memelite", type=("build", "run"))
+
+    with default_args(type=("build", "run")):
+        depends_on("python@3.9:")
+        depends_on("py-numpy")
+        depends_on("py-scipy")
+        depends_on("py-pandas")
+        depends_on("py-torch~cuda~distributed~rocm")
+        depends_on("py-pybigtools")
+        depends_on("py-pyfaidx")
+        depends_on("py-tqdm")
+        depends_on("py-numba")
+        depends_on("py-joblib")
+        depends_on("py-scikit-learn")
+        depends_on("py-matplotlib")
+        depends_on("py-memelite")
 
     @run_after("install")
     def install_test(self):
