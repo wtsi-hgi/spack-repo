@@ -47,7 +47,6 @@ class Openssh(AutotoolsPackage):
         # https://www.cvedetails.com/cve/CVE-2023-48795/
         version("9.5p1", sha256="f026e7b79ba7fb540f75182af96dc8a8f1db395f922bbc9f6ca603672686086b")
         version("9.4p1", sha256="3608fd9088db2163ceb3e600c85ab79d0de3d221e59192ea1923e23263866a85")
-<<<<<<< HEAD
         version("9.3p1", sha256="e9baba7701a76a51f3d85a62c383a3c9dcd97fa900b859bc7db114c1868af8a8")
         version("9.2p1", sha256="3f66dbf1655fb45f50e1c56da62ab01218c228807b21338d634ebcdf9d71cf46")
         version("9.1p1", sha256="19f85009c7e3e23787f0236fbb1578392ab4d4bf9f8ec5fe6bc1cd7e8bfdd288")
@@ -72,10 +71,6 @@ class Openssh(AutotoolsPackage):
         version("6.8p1", sha256="3ff64ce73ee124480b5bf767b9830d7d3c03bbcb6abe716b78f0192c37ce160e")
         version("6.7p1", sha256="b2f8394eae858dabbdef7dac10b99aec00c95462753e80342e530bbb6f725507")
         version("6.6p1", sha256="48c1f0664b4534875038004cc4f3555b8329c2a81c1df48db5c517800de203bb")
-=======
-        # https://www.cvedetails.com/cve/CVE-2023-38408/
-        version("9.3p1", sha256="e9baba7701a76a51f3d85a62c383a3c9dcd97fa900b859bc7db114c1868af8a8")
->>>>>>> aa3c5d61e (Update openssl and openssh)
 
     variant(
         "gssapi", default=True, description="Enable authentication via Kerberos through GSSAPI"
@@ -84,10 +79,6 @@ class Openssh(AutotoolsPackage):
     # depends_on("c", type="build")
     # depends_on("cxx", type="build")
 
-<<<<<<< HEAD
-
-=======
->>>>>>> aa3c5d61e (Update openssl and openssh)
     depends_on("krb5+shared", when="+gssapi")
     depends_on("openssl")
     depends_on("libedit")
