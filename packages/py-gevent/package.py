@@ -23,7 +23,7 @@ class PyGevent(PythonPackage):
     with default_args(type=("build")):
         depends_on("py-setuptools@40.8:69")
         depends_on("py-cython@3:", when="@20.5.1:")
-        depends_on("py-cython@0.29.14:", when="@1.5:")
+        depends_on("py-cython@0.29.14:2", when="@1.5:20.5.0")
 
     with default_args(type=("build", "run")):
         depends_on("python@3.8:", when="@23.7.0:")
