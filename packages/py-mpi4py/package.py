@@ -16,6 +16,8 @@ class PyMpi4py(PythonPackage):
     pypi = "mpi4py/mpi4py-3.0.3.tar.gz"
     git = "https://github.com/mpi4py/mpi4py.git"
 
+    import_modules = ["mpi4py"]
+
     version("master", branch="master")
     version("3.1.4", sha256="17858f2ebc623220d0120d1fa8d428d033dde749c4bc35b33d81a66ad7f93480")
     version("3.1.3", sha256="f1e9fae1079f43eafdd9f817cdb3fd30d709edc093b5d5dada57a461b2db3008")
@@ -42,3 +44,8 @@ class PyMpi4py(PythonPackage):
     def cythonize(self):
         with working_dir(self.build_directory):
             python(join_path("conf", "cythonize.py"))
+        
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python("-c", "import mpi4py")
