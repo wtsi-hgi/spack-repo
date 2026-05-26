@@ -16,6 +16,17 @@ class PyPyarrow(PythonPackage, CudaPackage):
     pypi = "pyarrow/pyarrow-0.17.1.tar.gz"
     git = "https://github.com/apache/arrow"
 
+    maintainers("thomas-bouvier")
+
+    license("Apache-2.0")
+
+    version("19.0.1", sha256="3bf266b485df66a400f282ac0b6d1b500b9d2ae73314a153dbe97d6d5cc8a99e")
+    version("16.1.0", sha256="15fbb22ea96d11f0b5768504a3f961edab25eaf4197c341720c4a387f6c60315")
+    version("15.0.2", sha256="9c9bc803cb3b7bfacc1e96ffbfd923601065d9d3f911179d81e72d99fd74a3d9")
+    version("14.0.2", sha256="36cef6ba12b499d864d1def3e990f97949e0b79400d08b7cf74504ffbd3eb025")
+    version("13.0.0", sha256="83333726e83ed44b0ac94d8d7a21bbdee4a05029c3b1e8db58a863eec8fd8a33")
+    version("12.0.1", sha256="cce317fc96e5b71107bf1f9f184d5e54e2bd14bbf3f9a3d62819961f0af86fec")
+    version("11.0.0", sha256="5461c57dbdb211a632a48facb9b39bbeb8a7905ec95d768078525283caef5f6d")
     version("10.0.1", sha256="1a14f57a5f472ce8234f2964cd5184cccaa8df7e04568c64edc33b23eb285dd5")
     version("8.0.0", sha256="4a18a211ed888f1ac0b0ebcb99e2d9a3e913a481120ee9b1fe33d3fedb945d4e")
     version("7.0.0", sha256="da656cad3c23a2ebb6a307ab01d35fce22f7850059cffafcb90d12590f8f4f38")
