@@ -38,6 +38,7 @@ class PyPyyaml(PythonPackage):
 
     depends_on("python@2.7,3.5:", type=("build", "link", "run"))
     depends_on("python@3.6:", when="@6:", type=("build", "link", "run"))
+    depends_on("python@3.8:", when="@6.0.3:", type=("build", "link", "run"))
     depends_on("libyaml", when="+libyaml", type="link")
     # setuptools versions are not documented upstream, the when= constraint
     # should probably be set to a lower version.
