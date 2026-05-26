@@ -11,6 +11,7 @@ class Dnacomb(Package):
     homepage = "https://github.com/allydunham/dnacomb"
     git = "https://github.com/allydunham/dnacomb.git"
 
+    version("0.6.0rc3", commit="3310f9cf5948ea652c0254fc1a86850e3fb90eb0")
     version("0.6.0rc2", commit="2da8e839a420be5b1104e2e6907e1d7bbe6973aa")
     version("0.6.0rc1", commit="0807765c8a451e1f0f1291261e38067daca14ece")
     version("0.5.0", commit="b5b69722317cd9760770dc24780a436af7ac39bb")
