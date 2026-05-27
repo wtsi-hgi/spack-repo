@@ -15,11 +15,39 @@ class PyStarrpeaker(PythonPackage):
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-scipy", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
-    depends_on("py-statsmodels@:0.10.2", type=("build", "run"))
+    depends_on("py-statsmodels@0.13:", type=("build", "run"))
     depends_on("py-pysam", type=("build", "run"))
     depends_on("py-pybedtools", type=("build", "run"))
     depends_on("py-pybigwig", type=("build", "run"))
     depends_on("py-scikit-learn", type=("build", "run"))
+
+    def patch(self):
+        modules = [
+            "starrpeaker/starrpeaker.py",
+            "starrpeaker/1_makeBin.py",
+            "starrpeaker/2_procCov.py",
+            "starrpeaker/3_procBam.py",
+            "starrpeaker/4_callPeak.py",
+            "starrpeaker/calcFoldingEnergy.py",
+        ]
+        for module in modules:
+            filter_file(
+                "import core",
+                "from starrpeaker import core",
+                module,
+                string=True,
+            )
+
+    def install(self, spec, prefix):
+        python = self.spec["python"].command
+        with working_dir(self.stage.source_path):
+            python(
+                "setup.py",
+                "install",
+                "--single-version-externally-managed",
+                "--record=install.txt",
+                f"--prefix={prefix}",
+            )
 
     @run_after("install")
     def install_test(self):
