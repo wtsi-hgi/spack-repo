@@ -36,6 +36,7 @@ class PyStatsmodels(PythonPackage):
     depends_on("python@2.7:3.11", when="@0.10.1:0.11", type=("build", "link", "run"))
     depends_on("py-setuptools@59.2:69", when="@0.13.3:", type="build")
     depends_on("py-setuptools@0.6c5:69", type="build")
+    depends_on("py-pip", type="build")
 
     # pyproject.toml
     depends_on("py-cython@0.29.26:2", when="@0.14:", type="build")
@@ -72,12 +73,54 @@ class PyStatsmodels(PythonPackage):
 
     depends_on("py-pytest", type="test")
 
+    def patch(self):
+        if self.spec.satisfies("@:0.12"):
+            filter_file(
+                "import pkg_resources",
+                (
+                    "try:\n"
+                    "    import pkg_resources\n"
+                    "except ImportError:\n"
+                    "    pkg_resources = None\n"
+                ),
+                "setup.py",
+                string=True,
+            )
+            filter_file(
+                "        extra_incl = pkg_resources.resource_filename('numpy', 'core/include')",
+                (
+                    "        if pkg_resources is not None:\n"
+                    "            extra_incl = pkg_resources.resource_filename('numpy', 'core/include')\n"
+                    "        else:\n"
+                    "            import numpy\n"
+                    "            extra_incl = numpy.get_include()\n"
+                ),
+                "setup.py",
+                string=True,
+            )
+
     def setup_build_environment(self, env):
         # ensure numpy.distutils pulls the stdlib distutils that still ships msvc bits
         env.set("SETUPTOOLS_USE_DISTUTILS", "stdlib")
 
+    def install(self, spec, prefix):
+        python = self.spec["python"].command
+        if spec.satisfies("@:0.12"):
+            with working_dir(self.stage.source_path):
+                python(
+                    "setup.py",
+                    "install",
+                    "--single-version-externally-managed",
+                    "--record=install.txt",
+                    f"--prefix={prefix}",
+                )
+        else:
+            super().install(spec, prefix)
+
     @run_before("install")
     def remove_generated_sources(self):
+        if not self.spec.satisfies("@0.13:"):
+            return
         # Automatic recythonization doesn't work here, because cythonize is called
         # with force=False by default, so remove generated C files manually.
         for f in find(".", "*.c"):
