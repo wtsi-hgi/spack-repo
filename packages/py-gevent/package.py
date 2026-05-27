@@ -34,6 +34,7 @@ class PyGevent(PythonPackage):
         depends_on("py-greenlet@2:", when="@22.10.2: ^python@:3.11")
         depends_on("py-greenlet@1.1:1", when="@21.8:21.12.0")
         depends_on("py-greenlet@0.4.17:1", when="@20.12:21.1.2")
+        depends_on("py-greenlet@0.4.14:0", when="@1.5.0")
         depends_on("py-greenlet@0.4.14:")
         depends_on("py-zope-event", when="@20.5.1:")
         depends_on("py-zope-interface", when="@20.5.1:")
