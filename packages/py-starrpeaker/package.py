@@ -9,6 +9,8 @@ class PyStarrpeaker(PythonPackage):
 
     license("GPL-3.0-or-later", "LICENSE")
 
+    import_modules = ["starrpeaker"]
+
     version("1.2", sha256="6ea2b136576645f9e4207df3e2b88ec157a84df356ef51be603c2cc1444ec6b4")
 
     depends_on("py-setuptools", type="build")
@@ -38,3 +40,4 @@ class PyStarrpeaker(PythonPackage):
         python = self.spec["python"].command
         with working_dir("spack-test", create=True):
             python("-c", "import starrpeaker")
+            Executable(join_path(self.prefix.bin, "starrpeaker"))('-h')
