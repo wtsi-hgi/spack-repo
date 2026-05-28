@@ -571,6 +571,9 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             "caffe2/CMakeLists.txt",
         )
 
+        if self.spec.satisfies("@:2.3"):
+            force_remove("pyproject.toml")
+
         if self.spec.satisfies("@1.10.0"):
             filter_file(
                 "it->first.thread_id() != key.thread_id()",
@@ -709,6 +712,10 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         environment variables.
         """
 
+        if self.spec.satisfies("@:2.3"):
+            # pip defaults to the pyproject/PEP517 path which fails for 2.3.x; force legacy setup.py
+            env.set("PIP_USE_PEP517", "0")
+
         def enable_or_disable(variant, keyword="USE", var=None):
             """Set environment variable to enable or disable support for a
             particular variant.
@@ -778,6 +785,7 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             env.set("MIOPEN_PATH", self.spec["miopen-hip"].prefix)
             if "+nccl" in self.spec:
                 env.set("RCCL_PATH", self.spec["rccl"].prefix)
+
             env.set("ROCPRIM_PATH", self.spec["rocprim"].prefix)
             env.set("HIPCUB_PATH", self.spec["hipcub"].prefix)
             env.set("THRUST_PATH", self.spec["rocthrust"].prefix)
@@ -912,7 +920,10 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
         # https://github.com/pytorch/pytorch/issues/60331
         # env.set("USE_SYSTEM_ONNX", "ON")
         env.set("USE_SYSTEM_PSIMD", "ON")
-        env.set("USE_SYSTEM_PTHREADPOOL", "ON")
+        if self.spec.satisfies("@:2.3"):
+            env.set("USE_SYSTEM_PTHREADPOOL", "OFF")
+        else:
+            env.set("USE_SYSTEM_PTHREADPOOL", "ON")
         env.set("USE_SYSTEM_PYBIND11", "ON")
         env.set("USE_SYSTEM_SLEEF", "ON")
         env.set("USE_SYSTEM_UCC", "ON")
@@ -923,7 +934,6 @@ class PyTorch(PythonPackage, CudaPackage, ROCmPackage):
             env.set("BUILD_CUSTOM_PROTOBUF", "ON")
         else:
             env.set("BUILD_CUSTOM_PROTOBUF", "OFF")
-
 
     @run_before("install")
     def build_amd(self):

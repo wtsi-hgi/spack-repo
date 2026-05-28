@@ -33,6 +33,7 @@ class PyLlvmlite(PythonPackage):
     version("0.25.0", sha256="fd64def9a51dd7dc61913a7a08eeba5b9785522740bec5a7c5995b2a90525025")
 
     depends_on("py-setuptools", type="build")
+    depends_on("python@3.9:3.12", when="@0.43:", type=("build", "run"))
     depends_on("python@3.8:3.11", when="@0.40:0.41", type=("build", "run"))
     depends_on("python@:3.10", when="@0.38:0.39", type=("build", "run"))
     depends_on("python@:3.9", when="@0.36:0.37", type=("build", "run"))
@@ -63,7 +64,28 @@ class PyLlvmlite(PythonPackage):
     depends_on("llvm@6.0", when="@0.23:0.26")
     depends_on("binutils", type="build")
 
+    def patch(self):
+        filter_file(
+            "from wheel.bdist_wheel import bdist_wheel",
+            "from setuptools.command.bdist_wheel import bdist_wheel",
+            "setup.py",
+            string=True,
+        )
+        filter_file(
+            "except ImportError:\n    bdist_wheel = None",
+            "except ImportError:\n    try:\n        from wheel.bdist_wheel import bdist_wheel\n    except ImportError:\n        bdist_wheel = None",
+            "setup.py",
+            string=True,
+        )
+        filter_file(
+            "    spawn(cmd, dry_run=dry_run)",
+            "    if dry_run:\n        log.info(\"skipping %s\", \" \".join(cmd))\n    else:\n        spawn(cmd)",
+            "setup.py",
+            string=True,
+        )
+
     def setup_build_environment(self, env):
+        env.set("PIP_USE_PEP517", "0")
         if self.spec.satisfies("%fj"):
             env.set("CXX_FLTO_FLAGS", "{0}".format(self.compiler.cxx_pic_flag))
             env.set("LD_FLTO_FLAGS", "-Wl,--exclude-libs=ALL")

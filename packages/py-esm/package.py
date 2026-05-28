@@ -9,18 +9,18 @@ from spack.package import *
 class PyEsm(PythonPackage):
     """EvolutionaryScale's open model repository with ESM3 and ESM C tooling."""
 
-    homepage = "https://github.com/evolutionaryscale/esm"
-    url = "https://github.com/evolutionaryscale/esm/archive/refs/tags/v3.2.3.tar.gz"
-    license("Cambrian-Open-NonCommercial")
+    homepage = "https://github.com/Biohub/esm"
+    url = "https://github.com/Biohub/esm/archive/refs/tags/v3.2.3.tar.gz"
+    license("MIT")
 
     version("3.2.3", sha256="819fd1a7681c965b6ccc1a00ee766940c5c36e3778f2bab393f1d74eb0250853")
 
-    depends_on("python@3.11:3.11", type=("build", "run"))
+    depends_on("python@3.12:3.12", type=("build", "run"))
     depends_on("py-setuptools", type="build")
 
-    depends_on("py-torch-gpu@2.2.0:", type=("build", "run"))
-    depends_on("py-torchvision", type=("build", "run"))
-    depends_on("py-torchtext", type=("build", "run"))
+    depends_on("py-torch@2.3.0~cuda~rocm~mkldnn", type=("build", "run"))
+    depends_on("py-torchvision@0.18.0", type=("build", "run"))
+    depends_on("py-torchtext@0.18.0", type=("build", "run"))
     depends_on("py-transformers@:4.48.1", type=("build", "run"))
     depends_on("py-ipython", type=("build", "run"))
     depends_on("py-einops", type=("build", "run"))
@@ -41,14 +41,6 @@ class PyEsm(PythonPackage):
     depends_on("py-boto3", type=("build", "run"))
     depends_on("py-pygtrie", type=("build", "run"))
     depends_on("py-dna-features-viewer", type=("build", "run"))
-
-    def patch(self):
-        filter_file(
-            'requires-python = ">=3.12,<3.13"',
-            'requires-python = ">=3.11,<3.13"',
-            "pyproject.toml",
-            string=True,
-        )
 
     @run_after("install")
     def install_test(self):
