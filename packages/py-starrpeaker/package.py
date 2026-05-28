@@ -15,11 +15,23 @@ class PyStarrpeaker(PythonPackage):
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-scipy", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
-    depends_on("py-statsmodels@:0.10.2", type=("build", "run"))
+    depends_on("py-statsmodels@0.13", type=("build", "run"))
     depends_on("py-pysam", type=("build", "run"))
     depends_on("py-pybedtools", type=("build", "run"))
     depends_on("py-pybigwig", type=("build", "run"))
     depends_on("py-scikit-learn", type=("build", "run"))
+
+    def patch(self):
+        files = [
+            "starrpeaker/starrpeaker.py",
+            "starrpeaker/1_makeBin.py",
+            "starrpeaker/2_procCov.py",
+            "starrpeaker/3_procBam.py",
+            "starrpeaker/4_callPeak.py",
+            "starrpeaker/calcFoldingEnergy.py",
+        ]
+        for f in files:
+            filter_file(r"^import core$", "from . import core", f)
 
     @run_after("install")
     def install_test(self):
