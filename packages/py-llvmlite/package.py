@@ -33,6 +33,8 @@ class PyLlvmlite(PythonPackage):
     version("0.25.0", sha256="fd64def9a51dd7dc61913a7a08eeba5b9785522740bec5a7c5995b2a90525025")
 
     depends_on("py-setuptools", type="build")
+    # setuptools 70+ removed dry_run kwarg from spawn() breaking llvmlite's setup.py
+    depends_on("py-setuptools@:69", when="@0.43.0", type="build")
     depends_on("python@3.8:3.11", when="@0.40:0.41", type=("build", "run"))
     depends_on("python@:3.10", when="@0.38:0.39", type=("build", "run"))
     depends_on("python@:3.9", when="@0.36:0.37", type=("build", "run"))
