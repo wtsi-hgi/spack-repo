@@ -29,3 +29,5 @@ class PyGreenlet(PythonPackage):
 
     # PyThreadState.use_tracing was removed in Python 3.10; requires greenlet 1.0+
     conflicts("@:0.4", when="^python@3.10:")
+    # Python 3.12 renamed/removed several PyThreadState members; requires greenlet 3.0+
+    conflicts("@:2", when="^python@3.12:")
