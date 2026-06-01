@@ -25,13 +25,13 @@ from spack.package import *
 
 class IrodsClient(Package):
     """iRODS client libs and headers files as dependency of other Softpack recipes, built by Robert Davies.
-    It builds the iRODS v4.2.7"""
+    It builds the iRODS"""
 
     homepage = "https://gitlab.internal.sanger.ac.uk/hgi-projects/softpack/irods-client-lib"
     git = "https://gitlab.internal.sanger.ac.uk/hgi-projects/softpack/irods-client-lib.git"
 
     # define runtime dependencies
-    depends_on("boost@1.74.0+program_options+filesystem+regex+random+thread+chrono", type=("run"))
+    depends_on("boost@1.74.0:1.75+program_options+filesystem+regex+random+thread+chrono", type=("run"))
     depends_on("jansson", type=("run"))
     depends_on("libbsd", type=("run"))
     depends_on("libsodium", type=("run"))
