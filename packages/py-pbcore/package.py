@@ -37,8 +37,10 @@ class PyPbcore(PythonPackage):
 
     version("2.1.2", sha256="aa156d62b97e3b0e5173487f0c9a95ed75e24e377b65e88929969d3ee0551b29")
 
+    import_modules=["pbcore"]
+
     depends_on("python@3.7:", type=("build", "run"))
     depends_on("py-biopython@1.74:", type=("build", "run"))
-    depends_on("py-numpy@1.17:1.22.4", type=("build", "run"))
+    depends_on("py-numpy@1.17:1", type=("build", "run"))
     depends_on("py-pysam@0.15.1:", type=("build", "run"))
     depends_on("py-setuptools", type=("build", "run"))
