@@ -75,7 +75,7 @@ class Htslib(AutotoolsPackage):
     depends_on("autoconf", when="@1.2")
     depends_on("automake", when="@1.2")
     depends_on("libtool", when="@1.2")
-    depends_on("llvm@18.1.3", when="@1.20:")
+    depends_on("llvm@14:", when="@1.20:")
 
     conflicts("zlib-ng", when="@:1.12")  # https://github.com/samtools/htslib/issues/1257
 
