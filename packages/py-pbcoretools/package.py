@@ -40,8 +40,16 @@ class PyPbcoretools(PythonPackage):
     license("BSD-3-Clause-Clear license")
 
     depends_on("python@3.7:", type=("build", "run"))
-    depends_on("py-numpy@1.17:1.22.4", type=("build", "run"))
+    depends_on("py-numpy@1.17:1", type=("build", "run"))
     depends_on("py-pysam@0.15.1:", type=("build", "run"))
     depends_on("py-pbcore", type=("build", "run"))
     depends_on("py-pbcommand", type=("build", "run"))
     depends_on("py-setuptools", type=("build", "run"))
+
+    @run_after("install")
+    def install_test(self):
+        exes = ["bamsieve", "dataset", "pbtools-gather", "pbvalidate"]
+        with working_dir("spack-test", create=True):
+            for exe in exes:
+                exe = Executable(join_path(self.prefix.bin, "baton"))
+                exe("-h")
