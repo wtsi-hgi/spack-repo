@@ -17,3 +17,7 @@ class PyEdlib(PythonPackage):
     version("1.3.9", sha256="b0fb6e85882cab02208ccd6daa46f80cb9ff1d05764e91bf22920a01d7a6fbfa", url="https://files.pythonhosted.org/packages/0c/dd/caa71ef15b46375e01581812e52ec8e3f4da0686f370e8b9179eb5f748fb/edlib-1.3.9.post1.tar.gz")
 
     depends_on("py-setuptools", type="build")
+
+    @run_after("install")
+    def install_test(self):
+        python("-c", "import edlib")
