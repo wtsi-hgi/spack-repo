@@ -48,8 +48,6 @@ class PyPbcoretools(PythonPackage):
 
     @run_after("install")
     def install_test(self):
-        exes = ["bamsieve", "dataset", "pbtools-gather", "pbvalidate"]
-        with working_dir("spack-test", create=True):
-            for exe in exes:
-                exe = Executable(join_path(self.prefix.bin, "baton"))
-                exe("-h")
+        for exe_name in ["bamsieve", "dataset", "pbtools-gather", "pbvalidate"]:
+            exe = Executable(join_path(self.prefix.bin, exe_name))
+            exe("-h")
