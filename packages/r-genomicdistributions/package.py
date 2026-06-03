@@ -14,19 +14,22 @@ class RGenomicdistributions(RPackage):
 	
 	homepage = "http://code.databio.org/GenomicDistributions"
 	bioc = "GenomicDistributions" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/GenomicDistributions_1.10.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/GenomicDistributions/GenomicDistributions_1.10.0.tar.gz"]
+	git = "https://git.bioconductor.org/packages/GenomicDistributions.git"
 
-	version("1.10.0", md5="0b8c2d9df85f9884bb40e3fcd015c824")
+	version("1.12.0", tag="RELEASE_3_19")
+	version("1.10.0", tag="RELEASE_3_18")
 
-	depends_on("r@4:", type=("build", "run"))
-	depends_on("r-iranges", type=("build", "run"))
-	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-data-table", type=("build", "run"))
-	depends_on("r-ggplot2", type=("build", "run"))
-	depends_on("r-reshape2", type=("build", "run"))
-	depends_on("r-biostrings", type=("build", "run"))
-	depends_on("r-plyr", type=("build", "run"))
-	depends_on("r-dplyr", type=("build", "run"))
-	depends_on("r-scales", type=("build", "run"))
-	depends_on("r-broom", type=("build", "run"))
-	depends_on("r-genomeinfodb", type=("build", "run"))
+	with default_args(type=("build", "run")):
+		depends_on("r@4:")
+		depends_on("r-iranges")
+		depends_on("r-genomicranges")
+		depends_on("r-data-table")
+		depends_on("r-ggplot2")
+		depends_on("r-reshape2")
+		depends_on("r-biostrings@2.70.3:", when="@1.12:")
+		depends_on("r-biostrings")
+		depends_on("r-plyr")
+		depends_on("r-dplyr")
+		depends_on("r-scales")
+		depends_on("r-broom")
+		depends_on("r-genomeinfodb")
