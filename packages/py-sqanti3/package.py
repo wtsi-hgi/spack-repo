@@ -183,12 +183,13 @@ class PySqanti3(Package):
     
     @run_after("install")
     def install_test(self):
-        Executable(join_path(self.prefix.bin, "sqanti3"))("-h")
         
         scripts = ["sqanti3_qc.py", "sqanti3_filter.py", "sqanti3_rescue.py"]
         if self.spec.satisfies("@6:"):
             scripts.append("sqanti3_reads.py")
             scripts.append("sqanti3")
+    
+            Executable(join_path(self.prefix.bin, "sqanti3"))("-h")
         else:
             scripts.append("sqanti_reads.py")
 
