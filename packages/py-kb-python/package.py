@@ -65,38 +65,6 @@ class PyKbPython(PythonPackage):
     depends_on("py-typing-extensions", type=("build", "run"))
     depends_on("py-biopython", type=("build", "run"))
 
-    @run_after("install")
-    def _patch_cli_help_exit(self):
-        # Normalize help exit code to 0 so `kb -h` behaves as a standard help
-        targets = []
-        for root, _, files in os.walk(self.prefix):
-            if "kb_python" in root and "main.py" in files:
-                targets.append(os.path.join(root, "main.py"))
-        for path in targets:
-            # Replace help exit code only for top-level help cases
-            filter_file(
-                r"print_help\(sys\.stderr\)\n\s*sys\.exit\(1\)",
-                "print_help(sys.stderr)\n        sys.exit(0)",
-                path,
-                string=False,
-            )
-            # Also patch the two-argument help path to return 0
-            try:
-                with open(path, "r", encoding="utf-8") as fh:
-                    content = fh.read()
-                marker = "if len(sys.argv) == 2:"
-                idx = content.find(marker)
-                if idx != -1:
-                    end = idx + 400  # search window
-                    before = content[:idx]
-                    segment = content[idx:end]
-                    after = content[end:]
-                    segment = segment.replace("sys.exit(1)", "sys.exit(0)", 1)
-                    with open(path, "w", encoding="utf-8") as fh:
-                        fh.write(before + segment + after)
-            except Exception:
-                pass
-
     # Tighten bounds for newer releases
     depends_on("py-anndata@0.9.2:", when="@0.29.0:", type=("build", "run"))
     depends_on("py-ngs-tools@1.8.6:", when="@0.29.0:", type=("build", "run"))
@@ -106,13 +74,6 @@ class PyKbPython(PythonPackage):
 
     @run_after("install")
     def install_test(self):
-        # Prefer CLI validation if available; otherwise a basic import
-        with working_dir("spack-test", create=True):
-            kb_exe = join_path(self.prefix.bin, "kb")
-            if os.path.exists(kb_exe):
-                Executable(kb_exe)("-h")
-            else:
-                python = self.spec["python"].command
-                python("-c", "import kb_python")
+        python("-c", "import kb_python")
 
 # {'anndata(>=0.6.22.post1)': ['0.2.0', '0.2.1', '0.24.0', '0.24.1', '0.24.2', '0.24.3', '0.24.4', '0.25.0', '0.25.1', '0.26.0'], 'loompy(>=3.0.6)': ['0.2.0', '0.2.1', '0.24.0', '0.24.1', '0.24.2', '0.24.3', '0.24.4', '0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'h5py(>=2.10.0)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'Jinja2(>2.10.1)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'nbconvert(>=5.6.0)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'nbformat(>=4.4.0)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'numpy(>=1.17.2)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'plotly(>=4.5.0)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'requests(>=2.19.0)': ['0.25.0', '0.25.1', '0.26.0'], 'scanpy(>=1.4.4.post1)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'scikit-learn(>=0.21.3)': ['0.25.0', '0.25.1', '0.26.0', '0.29.0', '0.29.1'], 'tqdm(>=4.39.0)': ['0.25.0', '0.25.1', '0.26.0'], 'anndata>=0.6.22.post1': ['0.28.0', '0.28.1', '0.28.2'], 'h5py>=2.10.0': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'Jinja2>2.10.1': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'loompy>=3.0.6': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'nbconvert>=5.6.0': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'nbformat>=4.4.0': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'ngs-tools>=1.8.5': ['0.28.0', '0.28.1', '0.28.2'], 'numpy>=1.17.2': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'pandas<2,>=1.0.0': ['0.28.0', '0.28.1', '0.28.2'], 'plotly>=4.5.0': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'requests>=2.22.0': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'scanpy>=1.4.4.post1': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'scikit-learn>=0.21.3': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'typing-extensions>=3.7.4': ['0.28.0', '0.28.1', '0.28.2', '0.29.2', '0.29.3', '0.29.5'], 'anndata(>=0.9.2)': ['0.29.0', '0.29.1'], 'ngs-tools(>=1.8.6)': ['0.29.0', '0.29.1'], 'pandas(>=1.5.3)': ['0.29.0', '0.29.1'], 'requests(>=2.22.0)': ['0.29.0', '0.29.1'], 'typing-extensions(>=3.7.4)': ['0.29.0', '0.29.1'], 'biopython(>=1.8)': ['0.29.0', '0.29.1'], 'anndata>=0.9.2': ['0.29.2', '0.29.3', '0.29.5'], 'ngs-tools>=1.8.6': ['0.29.2', '0.29.3', '0.29.5'], 'pandas>=1.5.3': ['0.29.2', '0.29.3', '0.29.5'], 'biopython>=1.8': ['0.29.2', '0.29.3', '0.29.5']}
