@@ -171,11 +171,11 @@ class PySqanti3(Package):
         mkdirp(prefix.bin)
 
         scripts = ["sqanti3", "sqanti3_qc.py", "sqanti3_filter.py", "sqanti3_rescue.py"]
-        if spec.satisfies("@6:"):
+        if self.spec.satisfies("@6:"):
             scripts.append("sqanti3_reads.py")
         else:
             scripts.append("sqanti_reads.py")
-            
+
         for script in scripts:
             set_executable(join_path(prefix, script))
             symlink(join_path(prefix, script), join_path(prefix.bin, script))
@@ -185,7 +185,7 @@ class PySqanti3(Package):
         Executable(join_path(self.prefix.bin, "sqanti3"))("-h")
         
         scripts = ["sqanti3", "sqanti3_qc.py", "sqanti3_filter.py", "sqanti3_rescue.py"]
-        if spec.satisfies("@6:"):
+        if self.spec.satisfies("@6:"):
             scripts.append("sqanti3_reads.py")
         else:
             scripts.append("sqanti_reads.py")
