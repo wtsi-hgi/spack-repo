@@ -166,17 +166,19 @@ class PySqanti3(Package):
     def setup_run_environment(self, env):
         env.prepend_path("LD_LIBRARY_PATH", self.spec["curl"].prefix.lib)
 
-    def install(self, sepc, prefix):
+    def install(self, spec, prefix):
         install_tree(".", prefix)
         mkdirp(prefix.bin)
-        for script in ("sqanti3", "sqanti3_qc.py", "sqanti3_filter.py", "sqanti3_reads.py", "sqanti3_rescue.py"):
+        scripts = ["sqanti3_qc.py", "sqanti3_filter.py", "sqanti3_reads.py", "sqanti3_rescue.py"]
+        if spec.satisfies("@6:"):
+            scripts.insert(0, "sqanti3")
+        for script in scripts:
             set_executable(join_path(prefix, script))
             symlink(join_path(prefix, script), join_path(prefix.bin, script))
 
-    
     @run_after("install")
     def install_test(self):
-        Executable(join_path(self.prefix.bin, "sqanti3"))("-h")
-        with working_dir("spack-test", create=True):
-            for script in ("sqanti3_qc.py", "sqanti3_filter.py", "sqanti3_reads.py", "sqanti3_rescue.py"):
-                python(join_path(self.prefix.bin, script), "--help")
+        if self.spec.satisfies("@6:"):
+            Executable(join_path(self.prefix.bin, "sqanti3"))("-h")
+        for script in ("sqanti3_qc.py", "sqanti3_filter.py", "sqanti3_reads.py", "sqanti3_rescue.py"):
+            python(join_path(self.prefix.bin, script), "--help")
