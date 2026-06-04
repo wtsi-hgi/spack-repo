@@ -14,7 +14,7 @@ class PyStarrpeaker(PythonPackage):
     version("1.2", sha256="6ea2b136576645f9e4207df3e2b88ec157a84df356ef51be603c2cc1444ec6b4")
 
     depends_on("py-setuptools", type="build")
-    depends_on("py-numpy", type=("build", "run"))
+    depends_on("py-numpy@:1.23", type=("build", "run"))
     depends_on("py-scipy", type=("build", "run"))
     depends_on("py-pandas", type=("build", "run"))
     depends_on("py-statsmodels@0.13", type=("build", "run"))
