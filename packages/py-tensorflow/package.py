@@ -282,6 +282,10 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
         "2.2.0",
         sha256="69cd836f87b8c53506c4f706f655d423270f5a563b76dc1cfa60fbc3184185a3",
     )
+    version(
+        "1.14.0",
+        sha256="aa2a6a1daafa3af66807cfe0bc77bfe1144a9a53df9a96bab52e3e575b3047ed",
+    )
 
     # depends_on("c", type="build")  # generated
     # depends_on("cxx", type="build")  # generated
@@ -347,6 +351,7 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
         depends_on("bazel@3.7.2:3.99.0", when="@2.5:2.6")
         depends_on("bazel@3.1.0:3.99.0", when="@2.3:2.4")
         depends_on("bazel@2.0.0", when="@2.2")
+        depends_on("bazel@0.25.2", when="@1.14")
 
         # tensorflow/tools/pip_package/build_pip_package.sh
         depends_on("patchelf", when="@2.13: platform=linux")
@@ -416,7 +421,7 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
         depends_on("py-numpy@1.14.5:", when="@2.7")
         depends_on("py-numpy@1.19.2:1.19", when="@2.4:2.6")
         # https://github.com/tensorflow/tensorflow/issues/40688
-        depends_on("py-numpy@1.16.0:1.18", when="@:2.3")
+        depends_on("py-numpy@1.16.0:1.18", when="@2:2.3")
         # https://github.com/tensorflow/tensorflow/issues/67291
         depends_on("py-numpy@:1")
         depends_on("py-opt-einsum@2.3.2:", when="@:2.3,2.7:")
@@ -641,6 +646,15 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
         when="@2.16.1-rocm-enhanced +rocm",
     )
     phases = ["configure", "build", "install"]
+
+    @when("@1.14.0")
+    def patch(self):
+    	filter_file("""define_values = {"tf_api_version": "2"}""", """define_values = {"tf_api_version": "1"}""", "tensorflow/BUILD", string=True)
+    	filter_file("http://pilotfiber.dl.sourceforge.net/project/giflib/giflib-5.1.4.tar.gz", "https://downloads.sourceforge.net/project/giflib/giflib-5.x/giflib-5.1.4.tar.gz", "tensorflow/workspace.bzl", string=True)
+    	filter_file(""""#undef HAVE_SYS_SYSCTL_H": "#define HAVE_SYS_SYSCTL_H 1",""", """"#undef HAVE_SYS_SYSCTL_H": "#undef HAVE_SYS_SYSCTL_H",""", "third_party/hwloc/BUILD.bazel", string=True)
+
+    	with open('.bazelrc', 'a') as f:
+    	    f.write("\nbuild --copt=-std=c++14\nbuild --per_file_copt=external/com_google_absl/.*@-include,limits\n")
 
     # https://www.tensorflow.org/install/source
     def setup_build_environment(self, env):
@@ -1190,6 +1204,7 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
                         f.write(content)
                         f.truncate()
 
+        bazel = Executable(self.spec["bazel"].command.path)
         bazel(*args)
 
         if self.spec.satisfies("@:2.16"):

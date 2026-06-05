@@ -212,6 +212,10 @@ class Bazel(Package):
         "2.0.0",
         sha256="724da3c656f68e787a86ebb9844773aa1c2e3a873cc39462a8f1b336153d6cbb",
     )
+    version(
+        "0.25.2",
+        sha256="7456032199852c043e6c5b3e4c71dd8089c1158f72ec554e6ec1c77007f0ab51",
+    )
 
     variant(
         "nodepfail",
@@ -235,7 +239,7 @@ class Bazel(Package):
     patch("unix_cc_configure-0.15.patch", when="@:2")
 
     # Set CC and CXX
-    patch("compile-0.29.patch")
+    patch("compile-0.29.patch", when="@2:")
 
     # Disable dependency search
     patch("cppcompileaction-7.0.0.patch", when="@7: +nodepfail")
@@ -316,6 +320,12 @@ class Bazel(Package):
         match = re.search(r"Build label: ([\d.]+)", output)
         return match.group(1) if match else None
 
+    def patch(self):
+        if self.spec.satisfies('@0.25.2'):
+            file = 'third_party/grpc/src/core/lib/gpr/log_linux.cc'
+            filter_file('static long gettid(void)', 'static long gpr_gettid(void)', file, string=True)
+            filter_file('return gettid()', 'return gpr_gettid()', file, string=True)
+
     def setup_build_environment(self, env):
         # fix the broken linking (on power9)
         # https://github.com/bazelbuild/bazel/issues/10327
@@ -339,6 +349,9 @@ class Bazel(Package):
                 continue
 
         env.set("EXTRA_BAZEL_ARGS", args)
+
+        if self.spec.satisfies('@0.25.2'):
+            env.append_flags('CXXFLAGS', '-include limits')
 
     @run_before("install")
     def bootstrap(self):
