@@ -216,6 +216,10 @@ class Bazel(Package):
         "0.25.2",
         sha256="7456032199852c043e6c5b3e4c71dd8089c1158f72ec554e6ec1c77007f0ab51",
     )
+    version(
+        "0.24.1",
+        sha256="56ea1b199003ad832813621744178e42b39e6206d34fbae342562c287da0cd54",
+    )
 
     variant(
         "nodepfail",
@@ -232,7 +236,8 @@ class Bazel(Package):
     depends_on("zip", when="platform=linux", type=("build", "run"))
 
     # Pass Spack environment variables to the build
-    patch("bazelruleclassprovider-0.25.patch")
+    patch("bazelruleclassprovider-0.25.patch", when="@0.25:")
+    patch("bazelruleclassprovider-0.24.patch", when="@0.24")
 
     # Inject include paths
     patch("unix_cc_configure-3.0.patch", when="@3:")
@@ -260,7 +265,7 @@ class Bazel(Package):
     patch("unix_cc_configure_fj-5.2.patch", when="@5.2:%fj")
     patch("unix_cc_configure_fj-5.0.patch", when="@5.0:5.1%fj")
     patch("unix_cc_configure_fj-0.29.1.patch", when="@:4%fj")
-    patch("bazelruleclassprovider_fj-0.25.patch", when="%fj")
+    patch("bazelruleclassprovider_fj-0.25.patch", when="@0.25: %fj")
 
     # https://blog.bazel.build/2021/05/21/bazel-4-1.html
     conflicts("platform=darwin target=aarch64:", when="@:4.0")
@@ -321,10 +326,15 @@ class Bazel(Package):
         return match.group(1) if match else None
 
     def patch(self):
-        if self.spec.satisfies('@0.25.2'):
-            file = 'third_party/grpc/src/core/lib/gpr/log_linux.cc'
-            filter_file('static long gettid(void)', 'static long gpr_gettid(void)', file, string=True)
-            filter_file('return gettid()', 'return gpr_gettid()', file, string=True)
+        if self.spec.satisfies("@:0.25.2"):
+            file = "third_party/grpc/src/core/lib/gpr/log_linux.cc"
+            filter_file("static long gettid(void)", "static long gpr_gettid(void)", file, string=True)
+            filter_file("return gettid()", "return gpr_gettid()", file, string=True)
+
+        if self.spec.satisfies("@0.24.1"):
+            file = "tools/jdk/DumpPlatformClassPath.java"
+            filter_file("import java.util.stream.Stream;", "import java.util.stream.Stream;\nimport java.util.stream.Collectors;", file, string=True)
+            filter_file("""try (Stream<Path> stream = Files.walk(fs.getPath\("/"))) {""", """try (Stream<Path> dynamicStream = Files.walk(fs.getPath("/"))) {""", file, string=True)
 
     def setup_build_environment(self, env):
         # fix the broken linking (on power9)
@@ -338,6 +348,10 @@ class Bazel(Package):
             self.spec["java"].prefix, make_jobs
         )
 
+        if self.spec.satisfies('@0.24.1'):
+            args += " --host_javabase=@bazel_tools//tools/jdk:absolute_javabase"
+            args += " --javabase=@bazel_tools//tools/jdk:absolute_javabase"
+
         resource_stages = self.stage[1:]
         for _resource in resource_stages:
             try:
@@ -350,7 +364,7 @@ class Bazel(Package):
 
         env.set("EXTRA_BAZEL_ARGS", args)
 
-        if self.spec.satisfies('@0.25.2'):
+        if self.spec.satisfies('@:0.25.2'):
             env.append_flags('CXXFLAGS', '-include limits')
 
     @run_before("install")

@@ -284,7 +284,9 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
     )
     version(
         "1.14.0",
-        sha256="aa2a6a1daafa3af66807cfe0bc77bfe1144a9a53df9a96bab52e3e575b3047ed",
+        sha256="d982a6fef251ec1358129213385ec027f87ee72246dffe1136ca6109def209f7",
+        url="https://files.pythonhosted.org/packages/f4/28/96efba1a516cdacc2e2d6d081f699c001d414cc8ca3250e6d59ae657eb2b/tensorflow-1.14.0-cp37-cp37m-manylinux1_x86_64.whl",
+        expand=False
     )
 
     # depends_on("c", type="build")  # generated
@@ -351,7 +353,6 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
         depends_on("bazel@3.7.2:3.99.0", when="@2.5:2.6")
         depends_on("bazel@3.1.0:3.99.0", when="@2.3:2.4")
         depends_on("bazel@2.0.0", when="@2.2")
-        depends_on("bazel@0.25.2", when="@1.14")
 
         # tensorflow/tools/pip_package/build_pip_package.sh
         depends_on("patchelf", when="@2.13: platform=linux")
@@ -370,6 +371,7 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
         depends_on("python@:3.10", when="@2.8:2.11")
         depends_on("python@:3.9", when="@2.5:2.7")
         depends_on("python@:3.8", when="@2.2:2.4")
+        depends_on("python@3.7", when="@1.14.0")
 
         # Listed under REQUIRED_PACKAGES in tensorflow/tools/pip_package/setup.py
         depends_on("py-absl-py@1:", when="@2.9:")
@@ -447,6 +449,9 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
         depends_on("py-wrapt@1.11:1.14", when="@2.12,2.14:2.15")
         depends_on("py-wrapt@1.12.1:1.12", when="@2.4:2.6")
         depends_on("py-wrapt@1.11.1:", when="@:2.3")
+        depends_on("py-astor", when="@1.14.0")
+        depends_on("py-keras-applications", when="@1.14.0")
+        depends_on("py-keras-preprocessing", when="@1.14.0")
 
         # TODO: add packages for these dependencies
         # depends_on('py-tensorflow-io-gcs-filesystem@0.23.1:', when='@2.8:')
@@ -606,7 +611,7 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
     )
 
     # needed for protobuf 3.16+
-    patch("example_parsing.patch", when="@:2.7 ^protobuf@3.16:")
+    patch("example_parsing.patch", when="@2.0.0:2.7 ^protobuf@3.16:")
 
     # allow linker to be found in PATH
     # https://github.com/tensorflow/tensorflow/issues/39263
@@ -647,16 +652,8 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
     )
     phases = ["configure", "build", "install"]
 
-    @when("@1.14.0")
-    def patch(self):
-    	filter_file("""define_values = {"tf_api_version": "2"}""", """define_values = {"tf_api_version": "1"}""", "tensorflow/BUILD", string=True)
-    	filter_file("http://pilotfiber.dl.sourceforge.net/project/giflib/giflib-5.1.4.tar.gz", "https://downloads.sourceforge.net/project/giflib/giflib-5.x/giflib-5.1.4.tar.gz", "tensorflow/workspace.bzl", string=True)
-    	filter_file(""""#undef HAVE_SYS_SYSCTL_H": "#define HAVE_SYS_SYSCTL_H 1",""", """"#undef HAVE_SYS_SYSCTL_H": "#undef HAVE_SYS_SYSCTL_H",""", "third_party/hwloc/BUILD.bazel", string=True)
-
-    	with open('.bazelrc', 'a') as f:
-    	    f.write("\nbuild --copt=-std=c++14\nbuild --per_file_copt=external/com_google_absl/.*@-include,limits\n")
-
     # https://www.tensorflow.org/install/source
+    @when("@1.15:")
     def setup_build_environment(self, env):
         spec = self.spec
 
@@ -911,6 +908,8 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
         env.set("TEST_TMPDIR", tmp_path)
 
     def configure(self, spec, prefix):
+        if spec.satisfies("@1.14.0"):
+            return
         # NOTE: configure script is interactive. If you set the appropriate
         # environment variables, this interactivity is skipped. If you don't,
         # Spack hangs during the configure phase. Use `spack build-env` to
@@ -921,6 +920,9 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
     @run_after("configure")
     def post_configure_fixes(self):
         spec = self.spec
+
+        if spec.satisfies("@1.14.0"):
+            return
 
         if spec.satisfies("@2.17:"):
             filter_file(
@@ -1037,6 +1039,9 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
                         f.truncate()
 
     def build(self, spec, prefix):
+        if spec.satisfies("@1.14.0"):
+            return
+
         # Bazel needs the directory to exist on install
         mkdirp(python_platlib)
         tmp_path = env["TEST_TMPDIR"]
@@ -1215,6 +1220,13 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
             build_pip_package("--src", buildpath)
 
     def install(self, spec, prefix):
+        if spec.satisfies("@1.14,9"):
+            args = std_pip_args + ["--prefix=", self.stage.archive_file]
+
+            pip(*args)
+
+            return
+
         tmp_path = env["TEST_TMPDIR"]
         if self.spec.satisfies("@2.17:"):
             buildpath = join_path(
@@ -1232,3 +1244,7 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
                 pip(*args)
 
         remove_linked_tree(tmp_path)
+
+    @run_after("install")
+    def install_test(self):
+        python("-c", "import tensorflow")
