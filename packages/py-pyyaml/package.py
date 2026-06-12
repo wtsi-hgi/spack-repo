@@ -44,6 +44,8 @@ class PyPyyaml(PythonPackage):
     # should probably be set to a lower version.
     depends_on("py-setuptools@62:", type="build", when="@6.0.3:")
     depends_on("py-setuptools", type="build")
+    depends_on("py-pip@:22", type="build", when="^py-setuptools@:63")
+    depends_on("py-pip@23:", type="build", when="^py-setuptools@64:")
     depends_on("py-cython", when="@6:+libyaml", type="build")
 
     # Includes "longintrepr.h" instead of Python.h
@@ -75,14 +77,14 @@ class PyPyyaml(PythonPackage):
 
         return modules
 
-    @when("^py-pip@23.1:")
+    @when("^py-pip@23: ^py-setuptools@64:")
     def config_settings(self, spec, prefix):
         if "+libyaml" in self.spec:
-            return {"--global-option": "--with-libyaml"}
+            return {"--config-settings": "--build-option=--with-libyaml"}
         else:
-            return {"--global-option": "--without-libyaml"}
+            return {"--config-settings": "--build-option=--without-libyaml"}
 
-    @when("^py-pip@:23.0")
+    @when("^py-pip@:22")
     def global_options(self, spec, prefix):
         args = []
 
