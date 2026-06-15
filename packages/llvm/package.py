@@ -274,7 +274,7 @@ class Llvm(CMakePackage, CudaPackage):
         for runtime in ["libunwind", "libcxx", "compiler-rt"]:
             depends_on("cmake@:3.16", type="build", when="{0}=runtime".format(runtime))
         del runtime
-    depends_on("python", when="~python", type="build")
+    depends_on("python@:3.11", when="~python", type="build")
     depends_on("pkgconfig", type="build")
 
     # Universal dependency
