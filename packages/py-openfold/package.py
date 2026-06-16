@@ -12,6 +12,7 @@ class PyOpenfold(PythonPackage):
     homepage = "https://github.com/aqlaboratory/openfold"
     git = "https://github.com/aqlaboratory/openfold"
 
+    version("2.2.0", tag="v2.2.0")
     version("2.0.0", tag="v2.0.0")
     version("1.0.1", commit="4b41059")
 
@@ -20,6 +21,7 @@ class PyOpenfold(PythonPackage):
     depends_on("py-setuptools", type="build")
 
     depends_on("openmm", type=("build", "run"))
+    depends_on("openmm@8.2:", type=("build", "run"), when="@2.2.0:")
     depends_on("py-pdbfixer", type=("build", "run"))
 
     # cuda or cudatoolkit?
@@ -41,6 +43,7 @@ class PyOpenfold(PythonPackage):
 
     # depends_on("py-numpy@1.21.2", type=("build", "run"))
     depends_on("py-numpy", type=("build", "run"))
+    depends_on("py-numpy@2:", type=("build", "run"), when="@2.2.0:")
     depends_on("py-pybind11", type=("build", "run", "link"))
 
     depends_on("py-pyyaml", type=("build", "run"))
@@ -49,6 +52,7 @@ class PyOpenfold(PythonPackage):
     depends_on("py-tqdm", type=("build", "run"))
     depends_on("py-typing-extensions", type=("build", "run"))
     depends_on("py-pytorch-lightning", type=("build", "run"))
+    depends_on("py-pytorch-lightning@2.5:", type=("build", "run"), when="@2.2.0:")
     depends_on("py-wandb", type=("build", "run"))
 
     depends_on("awscli", type=("build", "run"))
