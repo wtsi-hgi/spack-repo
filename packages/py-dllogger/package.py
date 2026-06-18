@@ -15,5 +15,5 @@ class PyDllogger(PythonPackage):
     version("1.0.0", sha256="abae2b2ac73b9e176fa87144bf6c2048ddd3dae8e7002d6d5a270bc7e4da6b4d")
     version("0.1.0", sha256="1506364a4fc0d7174db1389693600023dcfeae4b39a853758c8b690dc70738d9")
 
-    depends_on("python@3.9.9", type=("build", "run"))
+    depends_on("python@3.5:", type=("build", "run"))
     depends_on("py-setuptools", type=("build"))

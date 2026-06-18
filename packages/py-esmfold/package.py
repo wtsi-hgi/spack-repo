@@ -15,10 +15,10 @@ class PyEsmfold(PythonPackage):
     version("2.0.1", commit="2b36991")
 
     # check environment.yml for dependencies
-    depends_on("python@3.9.9", type=("build", "run"))
+    depends_on("python@3.9.9:", type=("build", "run"))
     depends_on("py-setuptools", type="build")
 
-    depends_on("openmm@7.7", type=("build", "run"))
+    depends_on("openmm@7.5:", type=("build", "run"))
     depends_on("py-pdbfixer", type=("build", "run"))
     depends_on("py-einops", type=("build", "run"))
     depends_on("py-fairscale", type=("build", "run"))
@@ -44,10 +44,10 @@ class PyEsmfold(PythonPackage):
 
     depends_on("py-pyyaml@5.4.1", type=("build", "run"))
     depends_on("py-requests@2.26.0", type=("build", "run"))
-    depends_on("py-scipy@1.7.1", type=("build", "run"))
+    depends_on("py-scipy@1.7.1:", type=("build", "run"))
     depends_on("py-tqdm@4.62.3", type=("build", "run"))
-    depends_on("py-typing-extensions@3.10.0.2", type=("build", "run"))
-    depends_on("py-pytorch-lightning@1.5.3", type=("build", "run"))
+    depends_on("py-typing-extensions@3.10.0.2:", type=("build", "run"))
+    depends_on("py-pytorch-lightning@1.5.3:", type=("build", "run"))
     depends_on("py-wandb@0.13.9", type=("build", "run"))
 
     depends_on("py-dllogger", type=("build", "run"))

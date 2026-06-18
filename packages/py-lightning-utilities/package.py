@@ -14,6 +14,7 @@ class PyLightningUtilities(PythonPackage):
 
     maintainers("adamjstewart")
 
+    version("0.15.3", sha256="792ae0204c79f6859721ac7f386c237a33b0ed06ba775009cb894e010a842033", url="https://files.pythonhosted.org/packages/f1/45/7fa8f56b17dc0f0a41ec70dd307ecd6787254483549843bef4c30ab5adce/lightning_utilities-0.15.3.tar.gz")
     version("0.8.0", sha256="8e5d95c7c57f026cdfed7c154303e88c93a7a5e868c9944cb02cf71f1db29720")
     version(
         "0.6.0.post0", sha256="6f02cfe59e6576487e709a0e66e07671563bde9e21b40e1c567918e4d753278c"
@@ -25,6 +26,7 @@ class PyLightningUtilities(PythonPackage):
     version("0.3.0", sha256="d769ab9b76ebdee3243d1051d509aafee57d7947734ddc22977deef8a6427f2f")
 
     # setup.py
+    depends_on("python@:3.11", type=("build", "run"), when="@:0.9")
     depends_on("py-setuptools", type="build")
     depends_on("py-pip@:22", type="build", when="^py-setuptools@:63")
     depends_on("py-pip@23:", type="build", when="^py-setuptools@64:")
