@@ -18,6 +18,7 @@ class PyDeepspeed(PythonPackage):
 
     license("Apache-2.0")
 
+    version("0.19.2", sha256="7e854b6ebe3d2bfa239f82958372927631c74e5324c7f08f17ce7ff5f6b06969")
     version("0.10.0", sha256="afb06a97fde2a33d0cbd60a8357a70087c037b9f647ca48377728330c35eff3e")
 
     # depends_on("cxx", type="build")  # generated
@@ -31,7 +32,8 @@ class PyDeepspeed(PythonPackage):
     depends_on("py-py-cpuinfo", type=("build", "run"))
     depends_on("py-pydantic@:1", type=("build", "run"))
     # https://github.com/microsoft/DeepSpeed/issues/2830
-    depends_on("py-torch -gloo@1.5:1", type=("build", "run"))
+    depends_on("py-torch -gloo@1.5:1", type=("build", "run"), when="@0.10.0")
+    depends_on("py-torch@2:", type=("build", "run"), when="@0.18:")
     depends_on("py-tqdm", type=("build", "run"))
 
     conflicts("gloo")

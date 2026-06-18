@@ -32,6 +32,7 @@ class PyDmTree(PythonPackage):
     depends_on("py-setuptools", type="build")
     depends_on("cmake@3.5:4", when="@0.1.9:", type="build")
     depends_on("cmake@3.12:", when="@0.1.7:", type="build")
+    depends_on("bazel@:5.4", type="build", when="@:0.1.6.1")
     depends_on("py-pybind11@2.10.1:", when="@0.1.8:")
     depends_on("abseil-cpp cxxstd=14", when="@0.1.8:")
     depends_on("py-absl-py@0.6.1:", type=("build", "run"), when="@0.1.9:")

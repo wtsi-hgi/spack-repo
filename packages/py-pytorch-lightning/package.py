@@ -16,6 +16,7 @@ class PyPytorchLightning(PythonPackage):
 
     license("Apache-2.0")
 
+    version("2.6.5", sha256="1c32cefa76a1a9c4c5250338272d961d1e48b180e68396849efe128538ddb28e", url="https://files.pythonhosted.org/packages/52/2c/8e73a3929b4c4bd600cafd38a97aaf7242a8cf518fb9f33d27c274ec898f/pytorch_lightning-2.6.5.tar.gz")
     version("2.0.7", sha256="4e6bc1e1f7b0c69016ea2fe0616b18fa62bd3d8661c7ff02c11d317746cfc5f5")
     version("2.0.0", sha256="632dec9af8036f726904e691c505d7650658ef0f4054a062c9e6a940ca09dfd8")
     version("1.9.4", sha256="188a7f4468acf23512e7f4903253d86fc7929a49f0c09d699872e364162001e8")
@@ -54,6 +55,7 @@ class PyPytorchLightning(PythonPackage):
     # src/pytorch_lightning/__setup__.py
     depends_on("python@3.8:", when="@2:", type=("build", "run"))
     depends_on("python@:3.9", when="@:1.5", type=("build", "run"))
+    depends_on("python@3.10:", when="@2.6.5:", type=("build", "run"))
     # https://github.com/Lightning-AI/pytorch-lightning/pull/20081
     depends_on("py-setuptools", type=("build", "run"))
 
