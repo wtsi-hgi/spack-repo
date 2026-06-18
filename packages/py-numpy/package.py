@@ -426,6 +426,10 @@ class PyNumpy(PythonPackage):
     def set_blas_lapack(self):
         self.blas_lapack_site_cfg()
 
+    @run_before("install")
+    def fix_pyproject_metadata(self):
+        filter_file(r'^[ \t]*license[ \t]*=.*$', 'license = {text = "MIT"}', self.stage.source_path + "/pyproject.toml")
+
     @when("@1.26:")
     def setup_build_environment(self, env):
         if self.spec.satisfies("%apple-clang@15:"):
