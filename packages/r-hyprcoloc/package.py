@@ -16,6 +16,18 @@ class RHyprcoloc(RPackage):
     version("0.0.2", sha256="333303cefce724fdd66f92ba822c75cbb0f463e36f3391e6d162efa69ef2e921")
     version("0.0.1", sha256="00f5a1a5c160e53185b08eb4761a29ed8602804dc9334b291709ded27df19e40")
 
+    depends_on("r@3.6.0:", type=("build", "run"))
+    depends_on("r-iterpc", type=("build", "run"))
+    depends_on("r-rcpp", type=("build", "run", "link"))
+    depends_on("r-rcppeigen", type=("build", "run", "link"))
+    depends_on("r-rmpfr", type=("build", "run"))
+    depends_on("r-matrix", type=("build", "run"))
+    depends_on("r-knitr", type=("build", "run"))
+    depends_on("r-rmarkdown", type=("build", "run"))
+    depends_on("r-pheatmap", type=("build", "run"))
+    depends_on("r-rcolorbrewer", type=("build", "run"))
+
+
     def patch(self):
         """Ensure Eigen receives integral indices when slicing."""
 
@@ -40,14 +52,3 @@ class RHyprcoloc(RPackage):
             "src/regional2.cpp",
             string=True,
         )
-
-    depends_on("r@3.6.0:", type=("build", "run"))
-    depends_on("r-iterpc", type=("build", "run"))
-    depends_on("r-rcpp", type=("build", "run", "link"))
-    depends_on("r-rcppeigen", type=("build", "run", "link"))
-    depends_on("r-rmpfr", type=("build", "run"))
-    depends_on("r-matrix", type=("build", "run"))
-    depends_on("r-knitr", type=("build", "run"))
-    depends_on("r-rmarkdown", type=("build", "run"))
-    depends_on("r-pheatmap", type=("build", "run"))
-    depends_on("r-rcolorbrewer", type=("build", "run"))
