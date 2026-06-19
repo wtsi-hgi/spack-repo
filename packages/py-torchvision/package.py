@@ -128,6 +128,9 @@ class PyTorchvision(PythonPackage):
     # setup.py
     # https://setuptools.pypa.io/en/latest/history.html#v77-0-0
     depends_on("py-setuptools@:76", type="build", when="@:0.21.0")
+    depends_on("py-setuptools@:80", type="build", when="@0.22:")
+    depends_on("py-pip@:22", type="build", when="^py-setuptools@:63")
+    depends_on("py-pip@23:", type="build", when="^py-setuptools@64:")
     depends_on("py-setuptools", type="build")
     depends_on("py-numpy", type=("build", "run"))
     # https://github.com/pytorch/vision/issues/8460
