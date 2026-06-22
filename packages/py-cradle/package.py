@@ -22,6 +22,11 @@ class PyCradle(PythonPackage):
     version("0.27.0", sha256="c14614f1a6b31b5564ad9b986e775bb0d7b7361b77d813681738d79f1c008876")
     version("0.28.0", sha256="2683d6aad3017d0ca901073d29939e92895f242cc771b031c3ba93862044afa1")
     version("0.29.0", sha256="838b5bb19fd4a998057f9252d1ba105576dc7d224e550d631a945276581cfbf1")
+    version(
+        "0.30.1",
+        sha256="d2e3d3eee3d5453dcc702e15b5511702198b4ccce7778a43e8ca76445f6353f5",
+        url="https://github.com/ReddyLab/CRADLE/archive/refs/tags/v0.30.1.tar.gz",
+    )
     version("0.30.0", sha256="f1fba4a23779570e2fc58d9d93a6aacdf83349dac85a3c8d91d24e7de4069499")
 
     depends_on("py-setuptools", type="build")
