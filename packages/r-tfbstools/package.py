@@ -61,3 +61,4 @@ class RTfbstools(RPackage):
 	depends_on("r-tfmpvalue@0.0.5:", type=("build", "run"))
 	depends_on("r-xml@3.98.1.3:", type=("build", "run"))
 	depends_on("r-xvector@0.8:", type=("build", "run"))
+	depends_on("r-seqinfo", type=("build", "run"), when="@1.48.0:")
