@@ -271,13 +271,13 @@ class R(AutotoolsPackage):
             "--with-internal-tzcode",
             "--libdir={0}".format(join_path(prefix, "rlib")),
             "--enable-R-shlib",
-            "--enable-BLAS-shlib",
             "--enable-R-framework=no",
             "--without-recommended-packages",
             "LDFLAGS=-L{0} -Wl,-rpath,{0}".format(join_path(prefix, "rlib", "R", "lib")),
         ]
 
         if "+external-lapack" in spec:
+            config_args.insert(0, "--disable-BLAS-shlib")
             if spec["lapack"].name in INTEL_MATH_LIBRARIES and "gfortran" in self.compiler.fc:
                 mkl_re = re.compile(r"(mkl_)intel(_i?lp64\b)")
                 config_args.extend(
@@ -296,6 +296,8 @@ class R(AutotoolsPackage):
                         "--with-lapack",
                     ]
                 )
+        else:
+            config_args.insert(0, "--enable-BLAS-shlib")
 
         if "+X" in spec:
             config_args.append("--with-cairo")
