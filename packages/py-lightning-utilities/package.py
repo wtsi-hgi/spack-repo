@@ -27,6 +27,7 @@ class PyLightningUtilities(PythonPackage):
 
     # setup.py
     depends_on("python@:3.11", type=("build", "run"), when="@:0.9")
+    depends_on("python@3.10:", type=("build", "run"), when="@0.15.3:")
     depends_on("py-setuptools", type="build")
     depends_on("py-pip@:22", type="build", when="^py-setuptools@:63")
     depends_on("py-pip@23:", type="build", when="^py-setuptools@64:")
