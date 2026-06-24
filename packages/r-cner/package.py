@@ -54,3 +54,4 @@ class RCner(RPackage):
 	depends_on("r-keggrest@1.14:", type=("build", "run"))
 	depends_on("zlib", type=("build", "link", "run"))
 	depends_on("r-pwalign", when="@1.39.1:")
+	depends_on("r-seqinfo@0.99.2:", when="@1.46.0:")
