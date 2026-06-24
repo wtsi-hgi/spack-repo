@@ -152,6 +152,15 @@ class PySetuptools(Package, PythonExtension):
     depends_on("py-pip", type="build")
 
     conflicts(
+        "py-pip@23:",
+        when="@:63"
+    )
+    conflicts(
+        "py-pip@:22",
+        when="@64:"
+    )
+
+    conflicts(
         "^python@:3.9 ^py-pip@25:",
         when="@:75.1.0",
         msg="py-pip@25: vendors pyproject-hooks@1.2. "
