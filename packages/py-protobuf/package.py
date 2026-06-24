@@ -70,6 +70,8 @@ class PyProtobuf(PythonPackage):
     depends_on("py-setuptools", type="build")
     # Older releases require distutils 2to3 support removed in setuptools 58+
     depends_on("py-setuptools@:57", when="@:3.6.1", type="build")
+    # pkg_resources removed from setuptools 72+; needed by setup.py in 3.x series
+    depends_on("py-setuptools@:71", when="@:3.20.3", type="build")
     # in newer pip versions --install-option does not exist
     depends_on("py-pip@:23.0", when="+cpp", type=("build", "run"))
     depends_on("py-six@1.9:", when="@3.0:3.17", type=("build", "run"))
