@@ -15,6 +15,7 @@ class RGgplot2(RPackage):
 	details."""
 
 	cran = "ggplot2"
+	version("4.0.3", sha256="690224bd61642b6222adb109470988e87f786e193cca77a15c0923cf9da73fa5")
 	version("3.5.2", sha256="0a30024a2ff3e569412223c8f14563ed504f3e0851de03e42d1b5f73fe1f06bf")
 	version("3.5.1", md5="f2add92370293ac6078f1963427d6ab2", url="https://cran.r-project.org/src/contrib/ggplot2_3.5.1.tar.gz")
 	version("3.5.0", md5="81c1b4d3661e2b7d2420f1b01235ed60", url="https://cran.r-project.org/src/contrib/ggplot2_3.5.0.tar.gz")
@@ -30,16 +31,22 @@ class RGgplot2(RPackage):
 	version("2.1.0", sha256="f2c323ae855d6c089e3a52138aa7bc25b9fe1429b8df9eae89d28ce3c0dd3969")
 
 	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r@4.1:", type=("build", "run"), when="@4:")
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
 	depends_on("r-gtable@0.1.1:", type=("build", "run"))
+	depends_on("r-gtable@0.3.6:", type=("build", "run"), when="@4:")
 	depends_on("r-isoband", type=("build", "run"))
 	depends_on("r-lifecycle@1.0.1:", type=("build", "run"))
+	depends_on("r-lifecycle@1.0.2:", type=("build", "run"), when="@4:")
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-mgcv", type=("build", "run"))
 	depends_on("r-rlang@1.1:", type=("build", "run"))
 	depends_on("r-scales@1.3:", type=("build", "run"))
+	depends_on("r-scales@1.4:", type=("build", "run"), when="@4:")
 	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-vctrs@0.5:", type=("build", "run"))
+	depends_on("r-vctrs@0.6:", type=("build", "run"), when="@4:")
 	depends_on("r-withr@2.5:", type=("build", "run"))
+	depends_on("r-s7@0.2.2:", type=("build", "run"), when="@4:")
 	depends_on("r-digest", type=("build", "run"), when="@:3.5")
