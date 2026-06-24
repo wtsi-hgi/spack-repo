@@ -21,6 +21,7 @@ S4
 	homepage = "https://github.com/rconsortium/S7/"
 	cran = "S7" 
 
+	version("0.2.2", sha256="6f33245dde05b74265b1c4d379e034bc3a8923d41e7b52e6e75a75ce97d42af7")
 	version("0.1.1", md5="8f90bb3c2b4e8cf6cb8af4e5a01cc4c4", url="https://cran.r-project.org/src/contrib/S7_0.1.1.tar.gz")
 
 	depends_on("r@3.5:", type=("build", "run"))

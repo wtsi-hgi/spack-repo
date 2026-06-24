@@ -13,6 +13,7 @@ class RScales(RPackage):
 	automatically determining breaks and labels for axes and legends."""
 
 	cran = "scales"
+	version("1.4.0", sha256="d55ef5f08c92652d7a95cfa27584024723ab17873f1b2577dd488cb7c883ceee")
 	version("1.3.0", md5="eeaf1b6727eceab473f4c139e99601c8")
 	version("1.2.1", sha256="59453e6dbdafee93dfb101e4d86048a62a12898134259d3ef02d65aeec57ed08")
 	version("1.2.0", sha256="185d50240e6b3e84d36ec7fbca6aef7a85db7c8c1b0dde51d4af28d363ce02df")
@@ -23,6 +24,7 @@ class RScales(RPackage):
 	version("0.4.0", sha256="851ef6136339b361b3f843fb73ea89f9112279b9cc126bdb38acde8d24c1c6a7")
 
 	depends_on("r@3.6:", type=("build", "run"))
+	depends_on("r@4.1:", type=("build", "run"), when="@1.4:")
 	depends_on("r-cli", type=("build", "run"))
 	depends_on("r-farver@2.0.3:", type=("build", "run"))
 	depends_on("r-glue", type=("build", "run"))
@@ -32,4 +34,5 @@ class RScales(RPackage):
 	depends_on("r-r6", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))
 	depends_on("r-rlang@1:", type=("build", "run"))
+	depends_on("r-rlang@1.1:", type=("build", "run"), when="@1.4:")
 	depends_on("r-viridislite", type=("build", "run"))
