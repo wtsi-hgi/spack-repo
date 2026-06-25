@@ -105,12 +105,15 @@ class PyPyarrow(PythonPackage, CudaPackage):
 
     patch("for_aarch64.patch", when="@0 target=aarch64:")
 
+    # Starting with pyarrow 17+, backend support is built if arrow was built with it
+    @when("@:16")
     def setup_build_environment(self, env):
         env.set("PYARROW_WITH_PARQUET", self.spec.satisfies("+parquet"))
         env.set("PYARROW_WITH_CUDA", self.spec.satisfies("+cuda"))
         env.set("PYARROW_WITH_ORC", self.spec.satisfies("+orc"))
         env.set("PYARROW_WITH_DATASET", self.spec.satisfies("+dataset"))
 
+    @when("@:16")
     def install_options(self, spec, prefix):
         args = []
         if spec.satisfies("+parquet"):
