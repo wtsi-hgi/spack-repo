@@ -24,6 +24,13 @@ class Foldseek(CMakePackage):
     depends_on("rust@1.78.0", when="@:9", type="build")
     depends_on("gcc", type=("build", "run", "link"))  # for libatomic
 
+    def setup_build_environment(self, env):
+        # Set compiler flags to ensure compatibility with older CPU architectures
+        # This prevents "Illegal instruction" errors on compute nodes
+        env.set('CFLAGS', '-march=x86-64 -mtune=generic -mno-avx512f')
+        env.set('CXXFLAGS', '-march=x86-64 -mtune=generic -mno-avx512f')
+
+
     @run_after("install")
     def install_test(self):
         """Run the installed CLI to ensure it is functional."""
