@@ -16,7 +16,7 @@ class RScater(RPackage):
     bioc = "scater"
     git = "https://git.bioconductor.org/packages/scater.git"
 
-    version("1.30.1", tag="RELbiocsingularEASE_3_18")
+    version("1.30.1", tag="RELEASE_3_18")
     version("1.28.0", commit="e654498c3fa9f769b794f840f230720333bd9555")
     version("1.26.0", commit="a548ddc8424e185bfb06f48bfc174071e69fc687")
     version("1.24.0", commit="013f0935a1a225139986ca5a3f0e9d08a1558153")
