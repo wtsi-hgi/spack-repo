@@ -15,10 +15,13 @@ class RMixomics(RPackage):
 	homepage = "http://www.mixOmics.org"
 	bioc = "mixOmics" 
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/mixOmics_6.26.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/mixOmics/mixOmics_6.26.0.tar.gz"]
+	git = "https://git.bioconductor.org/packages/mixOmics"
 
-	version("6.26.0", md5="d735d1aec6a3576238256244e87031ff")
+	version("6.34.0", tag="RELEASE_3_22")
+	version("6.26.0", tag="RELEASE_3_18")
 
 	depends_on("r@3.5:", type=("build", "run"))
+	depends_on("r@4.4:", type=("build", "run"), when="@6.30:")
 	depends_on("r-mass", type=("build", "run"))
 	depends_on("r-lattice", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
@@ -34,3 +37,5 @@ class RMixomics(RPackage):
 	depends_on("r-gridextra", type=("build", "run"))
 	depends_on("r-ggrepel", type=("build", "run"))
 	depends_on("r-biocparallel", type=("build", "run"))
+	depends_on("r-gsignal", type=("build", "run"), when="@6.30:")
+	depends_on("r-rgl", type=("build", "run"), when="@6.30:")
