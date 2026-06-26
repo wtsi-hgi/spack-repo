@@ -23,10 +23,10 @@ class RBiomart(RPackage):
 	mining."""
 
 	bioc = "biomaRt"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/biomaRt_2.58.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/biomaRt/biomaRt_2.58.2.tar.gz"]
+	git = "https://git.bioconductor.org/packages/biomaRt.git"
 
-	version("2.64.0", md5="0443f953967c9ed6e4c5c5e8e7c72fb5", url="https://bioconductor.org/packages/3.21/bioc/src/contrib/biomaRt_2.64.0.tar.gz")
-	version("2.58.2", md5="9cd8b1d118761e837a3c037dcfafbfc2")
+	version("2.64.0", tag="RELEASE_3_21")
+	version("2.58.2", tag="RELEASE_3_18")
 	version("2.56.0", commit="91ca89eff52e63c225f7e4eb24b765d08faf3ed9")
 	version("2.54.0", commit="4fb88fb56c684d5678f8288ba05db193e4881758")
 	version("2.52.0", commit="cf4932ac02686da45ea36ff5137fa63cead8860b")
