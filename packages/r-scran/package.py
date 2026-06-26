@@ -16,8 +16,9 @@ class RScran(RPackage):
 	single-cell analysis workflows."""
 
 	bioc = "scran"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/scran_1.30.2.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/scran/scran_1.30.2.tar.gz"]
-	version("1.30.2", md5="36f9f69d4699d050a95d6f6f971d2387")
+	git = "https://git.bioconductor.org/packages/scran.git"
+
+	version("1.30.2", tag="RELEASE_3_18")
 	version("1.28.0", commit="2e542b929b231fb5bb8c40af0f6ccea97f79234d")
 	version("1.26.0", commit="df66576d6958a088c38bd45e1cad9c16cbb52991")
 	version("1.24.1", commit="1a83eb7c948b1dc49253080c23b26cefb3a0f3b9")
