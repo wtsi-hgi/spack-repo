@@ -24,7 +24,7 @@ class RGgally(RPackage):
 	version("1.3.2", sha256="f4143f45254fed794be991180aeffe459f6756bfa08acad963707d8e843cfd0a")
 
 	depends_on("r@3.1:", type=("build", "run"))
-	depends_on("r-ggplot2@3.4.4:", type=("build", "run"))
+	depends_on("r-ggplot2@3.4.4:3.4", type=("build", "run"))
 	depends_on("r-dplyr@1:", type=("build", "run"))
 	depends_on("r-tidyr@1.3:", type=("build", "run"))
 	depends_on("r-ggstats", type=("build", "run"))
