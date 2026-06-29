@@ -11,8 +11,10 @@ class PyEsm(PythonPackage):
 
     homepage = "https://github.com/evolutionaryscale/esm"
     url = "https://github.com/evolutionaryscale/esm/archive/refs/tags/v3.2.3.tar.gz"
+    git = "https://github.com/Biohub/esm.git"
     license("Cambrian-Open-NonCommercial")
 
+    version("2026-06", commit="82ee35553d39169d678f784c8d3f8712ffd7d2c4")
     version("3.2.3", sha256="819fd1a7681c965b6ccc1a00ee766940c5c36e3778f2bab393f1d74eb0250853")
 
     depends_on("python@3.11:3.11", type=("build", "run"))
