@@ -11,7 +11,6 @@ class RMvmr(RPackage):
 
     homepage = "https://github.com/WSpiller/MVMR"
     url = "https://github.com/WSpiller/MVMR/archive/refs/tags/v0.4.6.tar.gz"
-    list_url = "https://github.com/WSpiller/MVMR/releases"
 
     license("GPL-3.0-or-later")
 
