@@ -24,6 +24,21 @@ class Foldseek(CMakePackage):
     depends_on("rust@1.78.0", when="@:9", type="build")
     depends_on("gcc", type=("build", "run", "link"))  # for libatomic
 
+    def patch(self):
+        filter_file(
+            "$ENV{HOME}/.cargo/bin", 
+            f"{self.spec['rust'].prefix}/bin/", 
+            "lib/corrosion/cmake/FindRust.cmake", 
+            string=True
+        )
+
+        filter_file(
+            "default", 
+            "active, default", 
+            "lib/corrosion/cmake/FindRust.cmake", 
+            string=True
+        )
+
     def setup_build_environment(self, env):
         # Set compiler flags to ensure compatibility with older CPU architectures
         # This prevents "Illegal instruction" errors on compute nodes
