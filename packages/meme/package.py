@@ -59,3 +59,7 @@ class Meme(AutotoolsPackage):
         if "~mpi" in self.spec:
             return ["--enable-serial"]
         return []
+
+    def setup_run_environment(self, env):
+        # Installs helper utilities in libexec/meme-<version> instead of bin.
+        env.prepend_path("PATH", join_path(self.prefix.libexec, f"meme-{self.spec.version}"))
