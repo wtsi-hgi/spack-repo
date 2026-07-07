@@ -47,27 +47,6 @@ class RScclrr(RPackage):
     depends_on("r-matrix", type=("build", "run"))
     depends_on("rust", type="build")
 
-    def patch(self):
-        vendor_dir = join_path("src", "rust", "vendor")
-        mkdirp(vendor_dir)
-
-        for name in ("runorm", "ruanndata", "rupca"):
-            src_dir = join_path(self.stage.source_path, f"{name}-src")
-            dst_dir = join_path(vendor_dir, name)
-            if os.path.isdir(src_dir):
-                install_tree(src_dir, dst_dir)
-
-        cargo_toml = join_path("src", "rust", "Cargo.toml")
-        replacements = {
-            'runorm = { git = "https://github.com/cleartools/runorm", features = ["ruanndata"] }': 'runorm = { path = "vendor/runorm", features = ["ruanndata"] }',
-            'rupca = { git = "https://github.com/pachterlab/rupca", features = ["ruanndata"] }': 'rupca = { path = "vendor/rupca", features = ["ruanndata"] }',
-            'ruanndata = { git = "https://github.com/pachterlab/ruanndata" }': 'ruanndata = { path = "vendor/ruanndata" }',
-        }
-        for old, new in replacements.items():
-            filter_file(old, new, cargo_toml, string=True)
-
-        force_remove(join_path("src", "rust", "Cargo.lock"))
-
     @run_after("install")
     def install_test(self):
         rscript = Executable(join_path(self.spec["r"].prefix.bin, "Rscript"))
