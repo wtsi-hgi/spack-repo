@@ -222,35 +222,6 @@ class R(AutotoolsPackage):
     depends_on("readline")
     depends_on("xz")
 
-    @staticmethod
-    def _normalize_store_path(path):
-        """Remove padded path placeholders so the resulting path exists on disk."""
-        placeholders = {"__spack_path_placeholder__", "__spack_path_pla"}
-        fragments = [part for part in path.split(os.sep) if part and part not in placeholders]
-        if path.startswith(os.sep):
-            return os.sep + os.sep.join(fragments)
-        return os.sep.join(fragments)
-
-    def _bzip2_prefix(self):
-        return self._normalize_store_path(str(self.spec["bzip2"].prefix))
-
-    def _bzip2_lib_dirs(self):
-        base = self._bzip2_prefix()
-        candidates = [join_path(base, "lib"), join_path(base, "lib64")]
-        return [path for path in candidates if os.path.isdir(path)]
-
-    def setup_build_environment(self, env):
-        super().setup_build_environment(env)
-
-        bz2_prefix = self._bzip2_prefix()
-        include_dir = join_path(bz2_prefix, "include")
-
-        for lib_dir in self._bzip2_lib_dirs():
-            if os.path.isdir(lib_dir):
-                env.append_flags("LDFLAGS", f"-L{lib_dir}")
-
-        if os.path.isdir(include_dir):
-            env.append_flags("CPPFLAGS", f"-I{include_dir}")
 
     depends_on("which", type=("build", "run"))
     depends_on("zlib-api")
@@ -298,18 +269,13 @@ class R(AutotoolsPackage):
         spec = self.spec
         prefix = self.prefix
 
-        bz2_lib_flags = " ".join(f"-L{path}" for path in self._bzip2_lib_dirs())
-        ldflags = "-L{0} -Wl,-rpath,{0}".format(join_path(prefix, "rlib", "R", "lib"))
-        if bz2_lib_flags:
-            ldflags = "{0} {1}".format(ldflags, bz2_lib_flags)
-
         config_args = [
             "--with-internal-tzcode",
             "--libdir={0}".format(join_path(prefix, "rlib")),
             "--enable-R-shlib",
             "--enable-R-framework=no",
             "--without-recommended-packages",
-            "LDFLAGS={0}".format(ldflags),
+            "LDFLAGS=-L{0} -Wl,-rpath,{0}".format(join_path(prefix, "rlib", "R", "lib")),
         ]
 
         if "+external-lapack" in spec:
