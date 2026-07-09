@@ -35,39 +35,36 @@ jobs:
           
           # Extract package names from packages/* paths
           PACKAGES=$(echo "$MODIFIED_FILES" | grep '^packages/' | cut -d'/' -f2 | sort -u | tr '\n' ' ')
+
+          for package in $PACKAGES; do
+            spack info package
+          done
           
           echo "Modified packages: $PACKAGES"
           echo "packages=$PACKAGES" >> $GITHUB_OUTPUT
+
       
       - name: Backup original repos.yaml
         run: |
-          sudo cp /home/ubuntu/.spack/repos.yaml /home/ubuntu/.spack/repos.yaml.backup
-          echo "Original repos.yaml backed up"
+          mkdir -p "$HOME/.spack"
+
+          if [ -f "$HOME/.spack/repos.yaml" ]; then
+            sudo cp "$HOME/.spack/repos.yaml" "$HOME/.spack/repos.yaml.backup"
+          else
+            echo "No existing repos.yaml (creating fresh one)"
+          fi
       
       - name: Update repos.yaml
         run: |
           # Read current repos.yaml and add this repo at the top
-          sudo tee /home/ubuntu/.spack/repos.yaml > /dev/null <<EOF
+          sudo tee $HOME/.spack/repos.yaml > /dev/null <<EOF
           repos:
           - ${{ github.workspace }}
-          - /home/ubuntu/spack-repo
+          - $HOME/spack-repo
           EOF
           
           echo "Updated repos.yaml:"
-          cat /home/ubuntu/.spack/repos.yaml
-      
-      - name: Check health of local spack server
-        run: |
-          echo "Testing MCP server health endpoint..."
-          RESPONSE=$(curl -s -L --connect-timeout 10 http://localhost:8000/health)
-          echo "Health response: $RESPONSE"
-          
-          # Check if response contains expected values
-          if echo "$RESPONSE" | grep -q '"status".*"healthy"' && echo "$RESPONSE" | grep -q '"service".*"softpack-mcp"'; then
-            echo "✅ Health check passed"
-          else
-            echo "❌ Health check failed or server not available"
-          fi
+          cat $HOME/.spack/repos.yaml
       
       - name: Process packages
         run: |
@@ -86,11 +83,7 @@ jobs:
             ALL_SUCCESS=true
             for package in $PACKAGES; do
               echo "Starting installation check for $package..."
-              RESPONSE=$(curl -s -L -X POST \
-                -H "Content-Type: application/json" \
-                -d "{\"package_name\": \"$package\"}" \
-                http://localhost:8000/spack/install)
-              echo "Package response for $package: $RESPONSE"
+              spack install $PACKAGE
 
               if echo "$RESPONSE" | jq -e '.success == true' > /dev/null; then
                 echo "✅ Package $package installed successfully"
@@ -101,11 +94,11 @@ jobs:
             done
 
             # Exit with error if any package failed
-            if [ "$ALL_SUCCESS" != true ]; then
-              echo "❌ One or more packages failed to install"
+            if [ "$ALL_SUCCESS" == true ]; then
+              echo "✅ All packages installed successfully"
               exit 1
             else
-              echo "✅ All packages installed successfully"
+              echo "❌ One or more packages failed to install"
             fi
             
           else
@@ -115,7 +108,11 @@ jobs:
       - name: Restore repos.yaml
         if: always()
         run: |
-          sudo mv /home/ubuntu/.spack/repos.yaml.backup /home/ubuntu/.spack/repos.yaml
-          echo "repos.yaml restored to original state"
-          echo "Final repos.yaml:"
-          cat /home/ubuntu/.spack/repos.yaml 
+          if [ -f "$HOME/.spack/repos.yaml "]; then
+            sudo mv $HOME/.spack/repos.yaml.backup $HOME/.spack/repos.yaml
+          else
+            echo "No existing repos.yaml (creating fresh one)"
+          fi 
+          # echo "repos.yaml restored to original state"
+          # echo "Final repos.yaml:"
+          # cat $HOME/.spack/repos.yaml 
