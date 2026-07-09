@@ -133,3 +133,5 @@ dmypy.json
 
 # Jetbrains
 .idea
+
+tci.sh
