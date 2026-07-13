@@ -35,4 +35,5 @@ class PyPyabpoa(PythonPackage):
 	version("1.5.2", sha256="be39c83b12e923c9e47073cb8f0abc4c42f609fa2c0ec13d6f6a4f5a0537ee06")
 
 	depends_on("py-setuptools", type="build")
+	depends_on("py-cython", type="build")
 	depends_on("zlib-api")
