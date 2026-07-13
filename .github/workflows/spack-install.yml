@@ -35,10 +35,6 @@ jobs:
           
           # Extract package names from packages/* paths
           PACKAGES=$(echo "$MODIFIED_FILES" | grep '^packages/' | cut -d'/' -f2 | sort -u | tr '\n' ' ')
-
-          for package in $PACKAGES; do
-            spack info package
-          done
           
           echo "Modified packages: $PACKAGES"
           echo "packages=$PACKAGES" >> $GITHUB_OUTPUT
@@ -71,35 +67,7 @@ jobs:
           PACKAGES="${{ steps.get-packages.outputs.packages }}"
           
           if [ -n "$PACKAGES" ]; then
-            echo "Packages to process: $PACKAGES"
-            
-            # For now, just print the list of packages
-            echo "The following packages were modified:"
-            for package in $PACKAGES; do
-              echo "  - $package"
-            done
-            
-            # Install packages sequentially
-            ALL_SUCCESS=true
-            for package in $PACKAGES; do
-              echo "Starting installation check for $package..."
-              spack install $PACKAGE
-
-              if echo "$RESPONSE" | jq -e '.success == true' > /dev/null; then
-                echo "✅ Package $package installed successfully"
-              else
-                echo "❌ Package $package failed to install"
-                ALL_SUCCESS=false
-              fi
-            done
-
-            # Exit with error if any package failed
-            if [ "$ALL_SUCCESS" == true ]; then
-              echo "✅ All packages installed successfully"
-              exit 1
-            else
-              echo "❌ One or more packages failed to install"
-            fi
+            ./tci.sh "$PACKAGES"
             
           else
             echo "No packages were modified in this commit"
@@ -108,11 +76,11 @@ jobs:
       - name: Restore repos.yaml
         if: always()
         run: |
-          if [ -f "$HOME/.spack/repos.yaml "]; then
+          if [ -f "$HOME/.spack/repos.yaml.backup"]; then
             sudo mv $HOME/.spack/repos.yaml.backup $HOME/.spack/repos.yaml
           else
-            echo "No existing repos.yaml (creating fresh one)"
+            echo "No existing repos.yaml backup"
           fi 
-          # echo "repos.yaml restored to original state"
-          # echo "Final repos.yaml:"
-          # cat $HOME/.spack/repos.yaml 
+          echo "repos.yaml restored to original state"
+          echo "Final repos.yaml:"
+          cat $HOME/.spack/repos.yaml 
