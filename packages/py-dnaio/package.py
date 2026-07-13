@@ -22,6 +22,7 @@ class PyDnaio(PythonPackage):
 
     depends_on("py-setuptools@52:70", type="build")
     depends_on("py-setuptools-scm@6.2:", when="@0.4:", type="build")
+    depends_on("py-setuptools@61:", when="^py-setuptools-scm@8:", type="build")
 
     with default_args(type=("build", "run")):
         # 0.9.1 deps
