@@ -13,6 +13,7 @@ class RRlang(RPackage):
 	system, and core 'Tidyverse' features like tidy evaluation."""
 
 	cran = "rlang"
+	version("1.2.0", sha256="8f808ad4f6c1ba37d81b6a4a2cdb4a7d4d30d5bee4ba3e9924352d85a3874357")
 	version("1.1.3", md5="cf4c3b1270d4d047d5c8104da270ba30")
 	version("1.1.0", sha256="f89859d91c9edc05fd7ccf21163fe53ad58da907ee273a93d5ab004a8649335b")
 	version("1.0.6", sha256="e6973d98a0ea301c0da1eeaa435e9e65d1c3f0b95ed68bdc2d6cb0c610166760")
