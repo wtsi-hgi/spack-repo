@@ -1,12 +1,15 @@
 #!/bin/bash
 set -euo pipefail
 
-cd ../spack-repo-1
+# declare repo_dir="${GITHUB_WORKSPACE:-~/spack-repo-1}";
+declare repo_dir="${GITHUB_WORKSPACE:-$HOME/spack-repo-1}";
+declare conf="--config repos:[$repo_dir]";
+cd "$repo_dir";
 main="main"
-pr="$(git branch --show-current)"
+pr="$(git log -1 --oneline | cut -d' ' -f1)"
 
 PACKAGES="$1";
-echo "Packages to check: $PACKAGES";
+echo "Packages to process: $PACKAGES";
 
 declare -a failed_installs=();
 
@@ -14,11 +17,11 @@ for pkg in $PACKAGES; do
     # Gather pkg info
     git checkout "$main" -q;
 
-    v1=$(spack info "$pkg" | sed -n '/^Safe versions:/,/^$/p' | sed '1d;$d');
+    v1=$(spack $conf info "$pkg" | sed -n '/^Safe versions:/,/^$/p' | sed '1d;$d');
 
     git checkout "$pr" -q;
 
-    v2=$(spack info "$pkg" | sed -n '/^Safe versions:/,/^$/p' | sed '1d;$d');
+    v2=$(spack $conf info "$pkg" | sed -n '/^Safe versions:/,/^$/p' | sed '1d;$d');
 
     # Build maps of pkg version -> link
     declare -A map1=();
@@ -51,7 +54,7 @@ for pkg in $PACKAGES; do
         f && /^\[/ {p=1}
         p {print}
         p && /\]$/ {exit}
-    ' <<< "$(spack info "$pkg@$version")")
+    ' <<< "$(spack $conf info "$pkg@$version")")
         
         git checkout "$main" -q
         main_deps=$(awk '
@@ -59,7 +62,7 @@ for pkg in $PACKAGES; do
         f && /^\[/ {p=1}
         p {print}
         p && /\]$/ {exit}
-    ' <<< "$(spack info "$pkg@$version")")
+    ' <<< "$(spack $conf info "$pkg@$version")")
 
         git checkout "$pr" -q;
 
@@ -75,13 +78,13 @@ for pkg in $PACKAGES; do
 
         if spack find "$spec" >/dev/null 2>&1; then
             echo "Uninstalling $spec";
-            spack uninstall "$spec" --yes-to-all;
+            spack $conf uninstall "$spec" --yes-to-all;
         else
             echo "$spec not installed, skipping uninstall";
         fi;
 
         echo "Installing $spec";
-        if ! spack install "$spec"; then
+        if ! spack $conf install "$spec"; then
             failed_installs+=($spec);
         fi;
     done;
