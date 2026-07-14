@@ -19,7 +19,7 @@ class Blat(Package):
 
     depends_on("libpng")
     depends_on("uuid", when="@37:")
-    depends_on("mariadb", when="@37.1:")  # force using mariadb
+    depends_on("mariadb", when="@37:")  # force using mariadb
 
     @when("@37")
     def patch(self):

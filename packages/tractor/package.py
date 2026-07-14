@@ -17,7 +17,6 @@ class Tractor(Package):
     license("MIT")
 
     version("1.4.0", sha256="7b60c5a0a893bf965761bbce5a7641f8197f81a4899725247f4d8bd6b05e60b0")
-    version("7")
 
     depends_on("python@3.7:", type="run")
 
