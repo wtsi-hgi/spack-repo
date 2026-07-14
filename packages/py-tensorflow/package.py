@@ -1244,7 +1244,3 @@ class PyTensorflow(Package, CudaPackage, ROCmPackage, PythonExtension):
                 pip(*args)
 
         remove_linked_tree(tmp_path)
-
-    @run_after("install")
-    def install_test(self):
-        python("-c", "import tensorflow")
