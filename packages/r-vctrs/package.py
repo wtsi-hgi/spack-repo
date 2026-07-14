@@ -15,6 +15,7 @@ class RVctrs(RPackage):
 	function interfaces."""
 
 	cran = "vctrs"
+	version("0.7.3", sha256="b45078413e06ac624dddb7221a3a43908b405c8abec09822cb86638d30b0435b")
 	version("0.6.5", md5="191f3037d9b6f3f8640661f61e2aeb93")
 	version("0.6.2", sha256="feecabe11f6c55e04377d36fa59842187f0a6fe52aaf867c08289a948781ee84")
 	version("0.5.0", sha256="7c372e13c39ddace9c9bb9f33238de6dd2cd0f37dcc7054ba6435d271e5df686")
@@ -30,3 +31,6 @@ class RVctrs(RPackage):
 	depends_on("r-glue", type=("build", "run"))
 	depends_on("r-lifecycle@1.0.3:", type=("build", "run"))
 	depends_on("r-rlang@1.1:", type=("build", "run"))
+
+	depends_on("r@4.0:", when="@0.7:", type=("build", "run"))
+	depends_on("r-rlang@1.1.7:", when="@0.7:", type=("build", "run"))
