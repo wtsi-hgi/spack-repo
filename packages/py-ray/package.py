@@ -60,6 +60,12 @@ class PyRay(PythonPackage):
             join_path("python", "setup.py"),
             string=True,
         )
+        filter_file(
+            '"https://openssl.org/source/old/1.1.1/openssl-1.1.1f.tar.gz"',
+            '"https://github.com/openssl/openssl/releases/download/OpenSSL_1_1_1f/openssl-1.1.1f.tar.gz"',
+            "bazel/ray_deps_setup.bzl",
+            string=True,
+        )
 
     def setup_build_environment(self, env):
         env.set("SKIP_THIRDPARTY_INSTALL", "1")
