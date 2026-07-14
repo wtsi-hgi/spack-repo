@@ -15,5 +15,4 @@ class RPolars(RPackage):
     depends_on("r@4.3:", type=("build", "run"))
     depends_on("r-rlang@1.2.0:", type=("build", "run"))
     depends_on("r-s7@0.2.1:", type=("build", "run"))
-    depends_on("rust", type=("build", "link", "run"))
-
+    depends_on("rust", type="build")

@@ -13,6 +13,7 @@ class RDplyr(RPackage):
 	memory and out of memory."""
 
 	cran = "dplyr"
+	version("1.2.1", sha256="18d66fe2f24cda8b619c177326d39dd015229ab99695fa67d3fa31e4569390e0")
 	version("1.1.4", md5="29bdf98592722336f0d07484baf2a959")
 	version("1.1.2", sha256="c220c38a3a44977c43eeae3d9aef90e8bb297150cad0993ea8d3cc13150096e3")
 	version("1.0.9", sha256="e2e1f7312618b4e32ada9a1da79cef32eaec12acd408c973a6b069c6be4fb46b")
@@ -43,3 +44,9 @@ class RDplyr(RPackage):
 	depends_on("r-tibble@3.2:", type=("build", "run"))
 	depends_on("r-tidyselect@1.2:", type=("build", "run"))
 	depends_on("r-vctrs@0.6.4:", type=("build", "run"))
+
+	depends_on("r@4.1:", when="@1.2:", type=("build", "run"))
+	depends_on("r-cli@3.6.2:", when="@1.2:", type=("build", "run"))
+	depends_on("r-lifecycle@1.0.5:", when="@1.2:", type=("build", "run"))
+	depends_on("r-rlang@1.1.7:", when="@1.2:", type=("build", "run"))
+	depends_on("r-vctrs@0.7.1:", when="@1.2:", type=("build", "run"))

@@ -14,7 +14,7 @@ class RTidypolars(RPackage):
 
     depends_on("r@4.3:", type=("build", "run"))
     depends_on("r-cli", type=("build", "run"))
-    depends_on("r-dplyr@1.1.4:", type=("build", "run"))
+    depends_on("r-dplyr@1.2:", type=("build", "run"))
     depends_on("r-glue", type=("build", "run"))
     depends_on("r-lifecycle", type=("build", "run"))
     depends_on("r-polars@1.13.0:", type=("build", "run"))
@@ -22,21 +22,3 @@ class RTidypolars(RPackage):
     depends_on("r-tidyr", type=("build", "run"))
     depends_on("r-tidyselect", type=("build", "run"))
     depends_on("r-vctrs", type=("build", "run"))
-
-    def patch(self):
-        filter_file("dplyr (> 1.1.4)", "dplyr (>= 1.1.4)", "DESCRIPTION", string=True)
-        filter_file("S3method(filter_out,polars_data_frame)\n", "", "NAMESPACE", string=True)
-        filter_file("S3method(filter_out,polars_lazy_frame)\n", "", "NAMESPACE", string=True)
-        filter_file("export(filter_out)\n", "", "NAMESPACE", string=True)
-        filter_file(
-            "filter_out.polars_lazy_frame <- filter_out.polars_data_frame",
-            "",
-            "R/filter.R",
-            string=True,
-        )
-        filter_file(
-            "filter_out.polars_data_frame <- function(.data, ..., .by = NULL) {",
-            "if (FALSE) filter_out.polars_data_frame <- function(.data, ..., .by = NULL) {",
-            "R/filter.R",
-            string=True,
-        )

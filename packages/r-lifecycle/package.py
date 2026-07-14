@@ -19,6 +19,7 @@ class RLifecycle(RPackage):
 	verbosity."""
 
 	cran = "lifecycle"
+	version("1.0.5", sha256="61841e3e6edba056a88355a3f1d6698ab8d5d9cb3c05f2af0ec5a44ab516f8ee")
 	version("1.0.4", md5="4490cb8f9777f1ff4bae184d51d24405")
 	version("1.0.3", sha256="6459fdc3211585c0cdf120427579c12149b02161efe273a64b825c05e9aa69c2")
 	version("1.0.1", sha256="1da76e1c00f1be96ca34e122ae611259430bf99d6a1b999fdef70c00c30f7ba0")
