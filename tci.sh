@@ -19,8 +19,8 @@ for pkg in $PACKAGES; do
     git checkout "$main" -q;
 
     # Skip dependency and version checks if package is new
-    echo "spack $conf find "$pkg"";
-    if ! spack $conf find "$pkg" >/dev/null 2>&1; then
+    echo "spack $conf info "$pkg"";
+    if ! spack $conf info "$pkg" >/dev/null 2>&1; then
         echo "Installing new package $pkg"
 
         git checkout "$pr" -q
