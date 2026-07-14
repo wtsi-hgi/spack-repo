@@ -31,7 +31,7 @@ class PyMedaka(PythonPackage):
     version("1.7.3", sha256="6caa50193b85d71a9ba00ac3192e13ec3193202bed6fbc216fc22781da9dc3e4")
 
     depends_on("python@3.6:3.9", type=("build", "run"))
-    depends_on("py-setuptools", type="build")
+    depends_on("py-setuptools@:81", type="build")
     depends_on("py-cffi@1.15.0", type=("build", "run"))
     depends_on("py-edlib", type=("build", "run"))
     depends_on("py-grpcio", type=("build", "run"))
