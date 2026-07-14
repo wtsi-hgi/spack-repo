@@ -85,7 +85,7 @@ for pkg in $PACKAGES; do
 
         echo "Installing $spec";
         if ! spack $conf install "$spec"; then
-            failed_installs+=($spec);
+            failed_installs+=("$spec");
         fi;
     done;
 done;
