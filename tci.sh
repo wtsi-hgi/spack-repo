@@ -4,6 +4,7 @@ set -euo pipefail
 # declare repo_dir="${GITHUB_WORKSPACE:-~/spack-repo-1}";
 declare repo_dir="${GITHUB_WORKSPACE:-$HOME/spack-repo-1}";
 declare conf="--config repos:[$repo_dir]";
+echo "==> conf: $conf";
 cd "$repo_dir";
 main="main"
 pr="$(git log -1 --oneline | cut -d' ' -f1)"
@@ -76,9 +77,9 @@ for pkg in $PACKAGES; do
     for version in "${toinstall[@]}"; do
         spec="$pkg@$version";
 
-        if spack find "$spec" >/dev/null 2>&1; then
+        if spack $conf find "$spec" >/dev/null 2>&1; then
             echo "Uninstalling $spec";
-            spack $conf uninstall "$spec" --yes-to-all;
+            spack $conf uninstall --force --yes-to-all "$spec";
         else
             echo "$spec not installed, skipping uninstall";
         fi;
