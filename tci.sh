@@ -18,10 +18,27 @@ for pkg in $PACKAGES; do
     # Gather pkg info
     git checkout "$main" -q;
 
+    # Skip dependency and version checks if package is new
+    echo "spack $conf find "$pkg"";
+    if ! spack $conf find "$pkg" >/dev/null 2>&1; then
+        echo "Installing new package $pkg"
+
+        git checkout "$pr" -q
+
+        echo "spack $conf install "$pkg"";
+        if ! spack $conf install "$pkg"; then
+            failed_installs+=("$pkg");
+        fi;
+
+        continue
+    fi
+
+    echo "spack $conf info "$pkg"";
     v1=$(spack $conf info "$pkg" | sed -n '/^Safe versions:/,/^$/p' | sed '1d;$d');
 
     git checkout "$pr" -q;
 
+    echo "spack $conf info "$pkg"";
     v2=$(spack $conf info "$pkg" | sed -n '/^Safe versions:/,/^$/p' | sed '1d;$d');
 
     # Build maps of pkg version -> link
@@ -50,6 +67,7 @@ for pkg in $PACKAGES; do
 
     # Identify any versions with changed dependencies
     for version in "${tocheck[@]}"; do
+        echo "spack $conf info "$pkg@$version"";
         pr_deps=$(awk '
         /^Run Dependencies:/ {f=1; next}
         f && /^\[/ {p=1}
@@ -58,6 +76,7 @@ for pkg in $PACKAGES; do
     ' <<< "$(spack $conf info "$pkg@$version")")
         
         git checkout "$main" -q
+        echo "spack $conf info "$pkg@$version"";
         main_deps=$(awk '
         /^================/ {f=1; next}
         f && /^\[/ {p=1}
@@ -77,6 +96,7 @@ for pkg in $PACKAGES; do
     for version in "${toinstall[@]}"; do
         spec="$pkg@$version";
 
+        echo "spack $conf find "$spec"";
         if spack $conf find "$spec" >/dev/null 2>&1; then
             echo "Uninstalling $spec";
             spack $conf uninstall --force --yes-to-all "$spec";
