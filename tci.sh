@@ -92,7 +92,7 @@ for pkg in $PACKAGES; do
         echo "==> Running cmd: spack $conf find "$spec"";
         if spack $conf find "$spec" >/dev/null 2>&1; then
             echo "==> Uninstalling $spec";
-            spack $conf uninstall --force --yes-to-all "$spec";
+            spack $conf uninstall --force --yes-to-all --all "$spec";
         else
             echo "==> $spec not installed, skipping uninstall";
         fi;
