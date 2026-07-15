@@ -10,44 +10,37 @@ main="main"
 pr="$(git log -1 --oneline | cut -d' ' -f1)"
 
 PACKAGES="$1";
-echo "Packages to process: $PACKAGES";
+echo "==> Packages to process: $PACKAGES";
 
 declare -a failed_installs=();
 
 for pkg in $PACKAGES; do
-    # Gather pkg info
+    echo "==> Processing package $pkg";
+
     git checkout "$main" -q;
-
-    # Skip dependency and version checks if package is new
-    echo "spack $conf info "$pkg"";
-    if ! spack $conf info "$pkg" >/dev/null 2>&1; then
-        echo "Installing new package $pkg"
-
-        git checkout "$pr" -q
-
-        echo "spack $conf install "$pkg"";
-        if ! spack $conf install "$pkg"; then
-            failed_installs+=("$pkg");
-        fi;
-
-        continue
-    fi
-
-    echo "spack $conf info "$pkg"";
-    v1=$(spack $conf info "$pkg" | sed -n '/^Safe versions:/,/^$/p' | sed '1d;$d');
-
-    git checkout "$pr" -q;
-
-    echo "spack $conf info "$pkg"";
-    v2=$(spack $conf info "$pkg" | sed -n '/^Safe versions:/,/^$/p' | sed '1d;$d');
 
     # Build maps of pkg version -> link
     declare -A map1=();
     declare -A map2=();
 
-    while IFS=' ' read -r key value; do 
-        map1["$key"]="$value";
-    done <<< "$v1";
+    # Skip main branch version collection if the pkg is new
+    echo "==> Running cmd: spack $conf info "$pkg"";
+    if spack $conf info "$pkg" >/dev/null 2>&1; then
+        echo "==> $pkg is on main, collecting main branch versions.";
+        echo "==> Running cmd: spack $conf info "$pkg"";
+        v1=$(spack $conf info "$pkg" | sed -n '/^Safe versions:/,/^$/p' | sed '1d;$d');
+
+        while IFS=' ' read -r key value; do 
+            map1["$key"]="$value";
+        done <<< "$v1";
+    else
+        echo "==> $pkg is new and not on main, skipping main branch version collection.";
+    fi
+
+    git checkout "$pr" -q;
+
+    echo "==> Running cmd: spack $conf info "$pkg"";
+    v2=$(spack $conf info "$pkg" | sed -n '/^Safe versions:/,/^$/p' | sed '1d;$d');
 
     while IFS=' ' read -r key value; do 
         map2["$key"]="$value";
@@ -67,7 +60,7 @@ for pkg in $PACKAGES; do
 
     # Identify any versions with changed dependencies
     for version in "${tocheck[@]}"; do
-        echo "spack $conf info "$pkg@$version"";
+        echo "==> Running cmd: spack $conf info "$pkg@$version"";
         pr_deps=$(awk '
         /^Run Dependencies:/ {f=1; next}
         f && /^\[/ {p=1}
@@ -76,7 +69,7 @@ for pkg in $PACKAGES; do
     ' <<< "$(spack $conf info "$pkg@$version")")
         
         git checkout "$main" -q
-        echo "spack $conf info "$pkg@$version"";
+        echo "==> Running cmd: spack $conf info "$pkg@$version"";
         main_deps=$(awk '
         /^================/ {f=1; next}
         f && /^\[/ {p=1}
@@ -87,7 +80,7 @@ for pkg in $PACKAGES; do
         git checkout "$pr" -q;
 
         if [[ "$pr_deps" != "$main_deps" ]]; then
-            echo "dependencies changed, should check install for $version"
+            echo "==> Identified change in dependencies, should install $version"
             toinstall+=("$version")
         fi
     done
@@ -96,15 +89,15 @@ for pkg in $PACKAGES; do
     for version in "${toinstall[@]}"; do
         spec="$pkg@$version";
 
-        echo "spack $conf find "$spec"";
+        echo "==> Running cmd: spack $conf find "$spec"";
         if spack $conf find "$spec" >/dev/null 2>&1; then
-            echo "Uninstalling $spec";
+            echo "==> Uninstalling $spec";
             spack $conf uninstall --force --yes-to-all "$spec";
         else
-            echo "$spec not installed, skipping uninstall";
+            echo "==> $spec not installed, skipping uninstall";
         fi;
 
-        echo "Installing $spec";
+        echo "==> Installing $spec";
         if ! spack $conf install "$spec"; then
             failed_installs+=("$spec");
         fi;
@@ -112,9 +105,9 @@ for pkg in $PACKAGES; do
 done;
 
 if [ ${#failed_installs[@]} -eq 0 ]; then
-    echo "No failures"
+    echo "==> No failures"
 else
-    echo "Failed installs:"
+    echo "==> Failed installs:"
     for pkg in "${!failed_installs[@]}"; do
         echo "${failed_installs[$pkg]}"
     done
