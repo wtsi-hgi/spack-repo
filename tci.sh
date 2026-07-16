@@ -6,8 +6,8 @@ declare repo_dir="${GITHUB_WORKSPACE:-$HOME/spack-repo-1}";
 declare conf="--config repos:[$repo_dir]";
 echo "==> conf: $conf";
 cd "$repo_dir";
-main="main"
-pr="$(git log -1 --oneline | cut -d' ' -f1)"
+main="main";
+pr="$(git log -1 --oneline | cut -d' ' -f1)";
 
 PACKAGES="$1";
 echo "==> Packages to process: $PACKAGES";
@@ -35,7 +35,7 @@ for pkg in $PACKAGES; do
         done <<< "$v1";
     else
         echo "==> $pkg is new and not on main, skipping main branch version collection.";
-    fi
+    fi;
 
     git checkout "$pr" -q;
 
@@ -66,24 +66,24 @@ for pkg in $PACKAGES; do
         f && /^\[/ {p=1}
         p {print}
         p && /\]$/ {exit}
-    ' <<< "$(spack $conf info "$pkg@$version")")
+    ' <<< "$(spack $conf info "$pkg@$version")");
         
-        git checkout "$main" -q
+        git checkout "$main" -q;
         echo "==> Running cmd: spack $conf info "$pkg@$version"";
         main_deps=$(awk '
         /^================/ {f=1; next}
         f && /^\[/ {p=1}
         p {print}
         p && /\]$/ {exit}
-    ' <<< "$(spack $conf info "$pkg@$version")")
+    ' <<< "$(spack $conf info "$pkg@$version")");
 
         git checkout "$pr" -q;
 
         if [[ "$pr_deps" != "$main_deps" ]]; then
-            echo "==> Identified change in dependencies, should install $version"
-            toinstall+=("$version")
-        fi
-    done
+            echo "==> Identified change in dependencies, should install $version";
+            toinstall+=("$version");
+        fi;
+    done;
 
     # Uninstall and reinstall required versions
     for version in "${toinstall[@]}"; do
@@ -105,11 +105,11 @@ for pkg in $PACKAGES; do
 done;
 
 if [ ${#failed_installs[@]} -eq 0 ]; then
-    echo "==> No failures"
+    echo "==> No failures";
 else
-    echo "==> Failed installs:"
+    echo "==> Failed installs:";
     for pkg in "${!failed_installs[@]}"; do
-        echo "${failed_installs[$pkg]}"
-    done
-    exit 1
-fi
+        echo "${failed_installs[$pkg]}";
+    done;
+    exit 1;
+fi;

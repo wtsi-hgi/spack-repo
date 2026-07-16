@@ -35,7 +35,6 @@ jobs:
           
           # Extract package names from packages/* paths
           PACKAGES=$(echo "$MODIFIED_FILES" | grep '^packages/' | cut -d'/' -f2 | sort -u | tr '\n' ' ')
-          
           echo "Modified packages: $PACKAGES"
           echo "packages=$PACKAGES" >> $GITHUB_OUTPUT
 
@@ -53,14 +52,13 @@ jobs:
       - name: Update repos.yaml
         run: |
           # Read current repos.yaml and add this repo at the top
-          sudo tee $HOME/.spack/repos.yaml > /dev/null <<EOF
+          sudo cat > $HOME/.spack/repos.yaml <<EOF
           repos:
           - ${{ github.workspace }}
           - $HOME/spack-repo
           EOF
           
           echo "Updated repos.yaml:"
-          cat $HOME/.spack/repos.yaml
       
       - name: Process packages
         run: |
@@ -83,4 +81,3 @@ jobs:
           fi 
           echo "repos.yaml restored to original state"
           echo "Final repos.yaml:"
-          cat $HOME/.spack/repos.yaml 
