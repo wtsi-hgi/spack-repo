@@ -15,6 +15,7 @@ class RQs2(RPackage):
 
     cran="qs2"
 
+    version("0.2.2", sha256="c59ff879e858aef0afb13de25127239624e65b20179c8631fa1f62edea25f48f")
     version("0.1.7", sha256="8a3f5229f68cbdfaec3db84afa992c7569dd327fdc6e07e5eff73c17502cfee8")
     version("0.1.6", sha256="ebc9b763d3c8d5e253e396138c62aad67d86ba15e36cd0e1f688a81a74ac3ade")
     version("0.1.5", sha256="ad0c1d27e6a021fe8c8f410169b140f953eb012b25e5b8cd11efe409536d031a")
