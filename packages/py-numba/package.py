@@ -69,7 +69,8 @@ class PyNumba(PythonPackage):
     depends_on("py-setuptools", type=("build", "run"))
     depends_on("py-pip@:22", type="build", when="^py-setuptools@:63")
     depends_on("py-pip@23:", type="build", when="^py-setuptools@64:")
-    depends_on("py-llvmlite@0.46", when="@0.63", type=("build", "run"))
+    depends_on("py-llvmlite@0.47", when="@0.65:", type=("build", "run"))
+    depends_on("py-llvmlite@0.46", when="@0.63:", type=("build", "run"))
     depends_on("py-llvmlite@0.45", when="@0.62", type=("build", "run"))
     depends_on("py-llvmlite@0.44", when="@0.61", type=("build", "run"))
     depends_on("py-llvmlite@0.43", when="@0.60", type=("build", "run"))
@@ -93,3 +94,9 @@ class PyNumba(PythonPackage):
     def setup_build_environment(self, env):
         if self.spec.satisfies("~tbb"):
             env.set("NUMBA_DISABLE_TBB", "yes")
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python = self.spec["python"].command
+            python("-c", "import numba")
