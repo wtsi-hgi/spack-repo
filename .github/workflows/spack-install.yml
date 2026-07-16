@@ -44,7 +44,7 @@ jobs:
           mkdir -p "$HOME/.spack"
 
           if [ -f "$HOME/.spack/repos.yaml" ]; then
-            sudo cp "$HOME/.spack/repos.yaml" "$HOME/.spack/repos.yaml.backup"
+            cp "$HOME/.spack/repos.yaml" "$HOME/.spack/repos.yaml.backup"
           else
             echo "No existing repos.yaml (creating fresh one)"
           fi
@@ -52,7 +52,7 @@ jobs:
       - name: Update repos.yaml
         run: |
           # Read current repos.yaml and add this repo at the top
-          sudo cat > $HOME/.spack/repos.yaml <<EOF
+          cat > $HOME/.spack/repos.yaml <<EOF
           repos:
           - ${{ github.workspace }}
           - $HOME/spack-repo
@@ -75,7 +75,7 @@ jobs:
         if: always()
         run: |
           if [ -f "$HOME/.spack/repos.yaml.backup"]; then
-            sudo mv $HOME/.spack/repos.yaml.backup $HOME/.spack/repos.yaml
+            mv $HOME/.spack/repos.yaml.backup $HOME/.spack/repos.yaml
           else
             echo "No existing repos.yaml backup"
           fi 
