@@ -13,7 +13,8 @@ class PyLda(PythonPackage):
 
     version("3.0.0", sha256="c9acbc1c55d2928f7e3e2336352b3382d78e43dbb0d12bf9ed97f87bce6d6708")
 
-    depends_on("py-poetry-core", type="build")
+    depends_on("python@3.10:", type=("build", "link", "run"))
+    depends_on("py-poetry-core@1.6:", type="build")
     depends_on("meson", type="build")
     depends_on("py-cython", type="build")
     depends_on("py-setuptools", type="build")
@@ -22,3 +23,9 @@ class PyLda(PythonPackage):
 
     def patch(self):
         filter_file("def build():", "def build(*a):", "build.py", string=True)
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python = self.spec["python"].command
+            python("-c", "import lda")
