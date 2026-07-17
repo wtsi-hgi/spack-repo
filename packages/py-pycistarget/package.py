@@ -35,3 +35,9 @@ class PyPycistarget(PythonPackage):
     depends_on("py-nbsphinx-link", type=("build", "run"))
     depends_on("py-numpydoc", type=("build", "run"))
     depends_on("py-typing-extensions", type=("build", "run"))
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python = self.spec["python"].command
+            python("-c", "import pycistarget")
