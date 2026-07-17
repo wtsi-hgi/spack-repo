@@ -18,6 +18,8 @@ class PyStatsmodels(PythonPackage):
 
     license("BSD-3-Clause")
 
+    version("0.14.6", sha256="4d17873d3e607d398b85126cd4ed7aad89e4e9d89fc744cdab1af3189a996c2a")
+    version("0.14.5", sha256="de260e58cccfd2ceddf835b55a357233d6ca853a1aa4f90f7553a52cc71c6ddf")
     version("0.14.0", sha256="6875c7d689e966d948f15eb816ab5616f4928706b180cf470fd5907ab6f647a4")
     version("0.13.5", sha256="593526acae1c0fda0ea6c48439f67c3943094c542fe769f8b90fe9e6c6cc4871")
     version("0.13.2", sha256="77dc292c9939c036a476f1770f9d08976b05437daa229928da73231147cde7d4")
@@ -28,10 +30,9 @@ class PyStatsmodels(PythonPackage):
     version("0.10.2", sha256="9cd2194c6642a8754e85f9a6e6912cdf996bebf6ff715d3cc67f65dadfd37cc9")
     version("0.10.1", sha256="320659a80f916c2edf9dfbe83512d9004bb562b72eedb7d9374562038697fa10")
 
-    # depends_on("c", type="build")  # generated
-    # depends_on("fortran", type="build")  # generated
+    depends_on("python@3.9:", when="@0.14.2:", type=("build", "link", "run"))
+    depends_on("python@3.8:", type=("build", "link", "run"))
 
-    depends_on("python@3.8:", when="@0.14:", type=("build", "link", "run"))
     depends_on("python@:3.11", when="@0.12:0.13.5", type=("build", "link", "run"))
     depends_on("python@2.7:3.11", when="@0.10.1:0.11", type=("build", "link", "run"))
     depends_on("py-setuptools@59.2:69", when="@0.13.3:", type="build")
@@ -44,6 +45,13 @@ class PyStatsmodels(PythonPackage):
     depends_on("py-cython@0.29.14:2", when="@0.12:", type="build")
     depends_on("py-cython@0.29:2", type="build")
     depends_on("py-setuptools-scm+toml@7.0", when="@0.13.3:", type="build")
+
+    depends_on("py-setuptools@69.0.2:", when="@0.14.1:", type="build")
+    depends_on("py-setuptools@69.0.2:", when="@0.14.1 ^python@3.12:", type="build")
+    depends_on("py-setuptools@63.4.3:", when="@0.14.1", type="build")
+    depends_on("py-cython@3.0.10:3", when="@0.14.2:", type="build")
+    depends_on("py-cython@0.29.33:3", when="@0.14.1", type="build")
+    depends_on("py-setuptools-scm+toml@8", when="@0.14.1:", type="build")
 
     # patsy@0.5.1 works around a Python change
     #    https://github.com/statsmodels/statsmodels/issues/5343 and
@@ -61,6 +69,11 @@ class PyStatsmodels(PythonPackage):
     depends_on("py-scipy@1.3:", when="@0.13:", type=("build", "run"))
     depends_on("py-scipy@1.2:", when="@0.12:", type=("build", "run"))
     depends_on("py-scipy@0.18:", when="@0.10.1:", type=("build", "run"))
+    depends_on("py-numpy@1.22.3:2", when="@0.14.3:", type=("build", "link", "run"))
+    depends_on("py-numpy@1.22.3:1", when="@0.14.1", type=("build", "link", "run"))
+    depends_on("py-scipy@1.8:", when="@0.14.2:", type=("build", "run"))
+    depends_on("py-scipy@1.4:", when="@0.13.5:0.14.1", type=("build", "run"))
+    depends_on("py-pandas@1.4:", when="@0.14:", type=("build", "run"))
     depends_on("py-pandas@1:", when="@0.14:", type=("build", "run"))
     depends_on("py-pandas@0.25:", when="@0.13:", type=("build", "run"))
     depends_on("py-pandas@0.23:", when="@0.12:", type=("build", "run"))
@@ -68,10 +81,16 @@ class PyStatsmodels(PythonPackage):
     depends_on("py-patsy@0.5.2:", when="@0.13:", type=("build", "run"))
     depends_on("py-patsy@0.5.1:", when="@0.12:", type=("build", "run"))
     depends_on("py-patsy@0.4:", when="@0.10.1:", type=("build", "run"))
+    depends_on("py-patsy@0.5.6:", when="@0.14.2:", type=("build", "run"))
+    depends_on("py-patsy@0.5.4:", when="@0.14.1", type=("build", "run"))
     depends_on("py-packaging@21.3:", when="@0.13.2:", type=("build", "run"))
 
     depends_on("py-pytest", type="test")
 
+    conflicts("^py-scipy@1.9.2")
+    conflicts("^py-pandas@2.1.0")
+
+    @when("@:0.14")
     def setup_build_environment(self, env):
         # ensure numpy.distutils pulls the stdlib distutils that still ships msvc bits
         env.set("SETUPTOOLS_USE_DISTUTILS", "stdlib")
@@ -88,5 +107,5 @@ class PyStatsmodels(PythonPackage):
     def build_test(self):
         dirs = glob.glob("build/lib*")  # There can be only one...
         with working_dir(dirs[0]):
-            pytest = which("pytest")
+            pytest = which("pytest", required=True)
             pytest("statsmodels")
