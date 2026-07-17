@@ -11,10 +11,7 @@ class PyLoomxpy(PythonPackage):
     homepage = "https://github.com/aertslab/LoomXpy"
     pypi = "loomxpy/loomxpy-0.4.2.tar.gz"
 
-    version("0.4.2", sha256="188411b77e04fa8458c0a7f02cfb3f15b58410a020f81f522957e922e79cdd82")
-
-    depends_on("py-poetry", type="build")
-    depends_on("py-poetry-core", type="build")
+    version("0.4.2", sha256="b23f031c3efb6115a2a231de5f554d0c15ae794d661c3daf39d44dd267cce851", expand=False, url="https://files.pythonhosted.org/packages/ef/1c/503108d76021b7f73ed6f445baecbd2bd07e48db8f0f5888bc65c2c7d71c/loomxpy-0.4.2-py3-none-any.whl")
 
     depends_on("py-loompy@3.0.7", type=("build", "run"))
     depends_on("py-networkx", type=("build", "run"))
@@ -23,3 +20,9 @@ class PyLoomxpy(PythonPackage):
     depends_on("py-pyscenic@0.12.0:", type=("build", "run"))
     depends_on("py-scikit-learn@0.22.2:", type=("build", "run"))
     depends_on("py-ctxcore@0.2.0:", type=("build", "run"))
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python = self.spec["python"].command
+            python("-c", "import loomxpy")
