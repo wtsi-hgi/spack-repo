@@ -36,8 +36,8 @@ class PyStatsmodels(PythonPackage):
 
     depends_on("python@:3.11", when="@0.12:0.13.5", type=("build", "link", "run"))
     depends_on("python@2.7:3.11", when="@0.10.1:0.11", type=("build", "link", "run"))
+    depends_on("py-setuptools", type="build")
     depends_on("py-setuptools@59.2:69", when="@0.13.3:", type="build")
-    depends_on("py-setuptools@0.6c5:69", type="build")
 
     # pyproject.toml
     depends_on("py-cython@0.29.26:2", when="@0.14.0", type="build")
@@ -45,7 +45,7 @@ class PyStatsmodels(PythonPackage):
     depends_on("py-cython@0.29.22:2", when="@0.13:", type="build")
     depends_on("py-cython@0.29.14:2", when="@0.12:", type="build")
     depends_on("py-cython@0.29:2", type="build")
-    depends_on("py-setuptools-scm+toml@7.0", when="@0.13.3:", type="build")
+    depends_on("py-setuptools-scm+toml@7.0", when="@0.13.3:0.14.0", type="build")
 
     depends_on("py-setuptools@69.0.2:", when="@0.14.1:", type="build")
     depends_on("py-setuptools@69.0.2:", when="@0.14.1 ^python@3.12:", type="build")
