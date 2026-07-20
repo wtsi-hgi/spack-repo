@@ -23,10 +23,12 @@ class PyCloudpickle(PythonPackage):
     version("1.1.1", sha256="7d43c4d0c7e9735ee8a352c96f84031dabd6676170c4e5e0585a469cc4769f22")
     version("0.5.2", sha256="b0e63dd89ed5285171a570186751bc9b84493675e99e12789e9a5dc5490ef554")
 
-    depends_on("python@3.5:", type=("build", "run"), when="@1.6.0:")
-    depends_on("python@3.6:", type=("build", "run"), when="@2.2.0:")
+    depends_on("python@3.3:3.7", type=("build", "run"), when="@0.5.2")
+    depends_on("python@3.4:3.8", type=("build", "run"), when="@1:1.3")
+    depends_on("python@3.5:3.9", type=("build", "run"), when="@1.4:1.6")
+    depends_on("python@3.6:3.10", type=("build", "run"), when="@2.0")
+    depends_on("python@3.6:3.11", type=("build", "run"), when="@2.1:2.2")
     depends_on("python@3.8:", type=("build", "run"), when="@3:")
-    depends_on("python@:3.13", type=("build", "run"), when="@:3.0")
     depends_on("py-setuptools", type="build", when="@:2")
     depends_on("py-flit-core", type="build", when="@3:")
 
