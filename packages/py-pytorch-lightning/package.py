@@ -58,7 +58,8 @@ class PyPytorchLightning(PythonPackage):
     depends_on("python@3.10:", when="@2.6.5:", type=("build", "run"))
     # https://github.com/Lightning-AI/pytorch-lightning/pull/20081
     depends_on("py-setuptools@:80", type="build")
-    depends_on("py-packaging@:21", when="@:1.8.3", type="build")
+    depends_on("py-wheel@:0.39", when="@:1.8.3", type="build")
+    
 
     # requirements/pytorch/base.txt
     depends_on("py-numpy@1.17.2:", when="@1.3:", type=("build", "run"))
