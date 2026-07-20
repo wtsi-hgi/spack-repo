@@ -50,3 +50,13 @@ class RGgplot2(RPackage):
 	depends_on("r-withr@2.5:", type=("build", "run"))
 	depends_on("r-s7@0.2.2:", type=("build", "run"), when="@4:")
 	depends_on("r-digest", type=("build", "run"), when="@:3.5")
+
+	def patch(self):
+		# R/backports.R compares getRversion() to bare numeric literals
+		# (e.g. `getRversion() < 3.3`) instead of quoted version strings.
+		# R >= 4.4 no longer coerces these to numeric_version, so lazy
+		# loading fails with "invalid non-character version specification".
+		# Fixed upstream in 3.4.4: https://github.com/tidyverse/ggplot2/issues/6152
+		with when("@3.1.1:3.4.3"):
+			filter_file(r"getRversion\(\) < 3\.3", 'getRversion() < "3.3"', "R/backports.R")
+			filter_file(r"getRversion\(\) < 3\.5", 'getRversion() < "3.5"', "R/backports.R")
