@@ -22,7 +22,7 @@ class PyPyogrio(PythonPackage):
     depends_on("python@3.8:", type=("build", "run"))
     depends_on("gdal@2.4:", type=("build", "link", "run"))
     depends_on("py-cython@0.29:", type="build")
-    depends_on("py-versioneer@0.28 +toml", type="build")
+    depends_on("py-versioneer@0.28: +toml", type="build")
     # this is an implicit dependency already listed in py-versioneer, not needed
     # depends_on("py-tomli", when="^python@:3.10", type="build")
 
