@@ -29,7 +29,6 @@ class PyPytorchLightning(PythonPackage):
     version("1.8.4", sha256="c2771f966fc1b909cdfd1d603a87b8c84a3d5ff7aacf35b2c0260f697ec0c8be")
     version("1.8.3", sha256="c12293da19810a08e4f81a40145760fb29514449ef5d294fa1ef741553cdf217")
     version("1.8.1", sha256="5b60e5eb84dd16ee8dc408286f0074ab475bed385b09a702d678ccbde91e4818")
-    version("1.8.0", sha256="deff9bc7978ecebc8f45e881adef65dc8d9f4554e88c3b064f80587f32ab158d")
     version("1.7.7", sha256="27c2dd01a18db2415168e3fa3775ccb5a1fa1e2961a50439ad9365507fe9d4ae")
     version("1.7.6", sha256="93266c83f8340c100e41b3777bbab26dd2c20b4df3deccce3b8a15652326b9c8")
     version("1.7.5", sha256="a5838ae990f0eef9a894fa863be3bc1f5594d2abba7848fb21317ba3e885d7cd")
@@ -95,7 +94,6 @@ class PyPytorchLightning(PythonPackage):
     depends_on("py-lightning-utilities@0.3:", when="@1.8.0:1.8.3", type=("build", "run"))
 
     # Historical dependencies
-    depends_on("py-lightning-lite@1.8.0", when="@1.8.0", type=("build", "run"))
     depends_on("py-future@0.17.1:", when="@:1.5", type=("build", "run"))
     depends_on("pil@:8.2,8.3.1:", when="@1.3", type=("build", "run"))
     depends_on("py-protobuf@:3.20.1", when="@1.6.4:1.6", type="build")
