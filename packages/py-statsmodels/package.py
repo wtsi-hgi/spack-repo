@@ -41,10 +41,10 @@ class PyStatsmodels(PythonPackage):
 
     # pyproject.toml
     depends_on("py-cython@0.29.26:2", when="@0.14.0", type="build")
-    depends_on("py-cython@0.29.32:2", when="@0.13.5:0.13", type="build")
-    depends_on("py-cython@0.29.22:2", when="@0.13:", type="build")
-    depends_on("py-cython@0.29.14:2", when="@0.12:", type="build")
-    depends_on("py-cython@0.29:2", type="build")
+    depends_on("py-cython@0.29.32:2", when="@0.13.5", type="build")
+    depends_on("py-cython@0.29.22:2", when="@0.13", type="build")
+    depends_on("py-cython@0.29.14:2", when="@0.12", type="build")
+    depends_on("py-cython@0.29:2", when="@0.10", type="build")
     depends_on("py-setuptools-scm+toml@7.0", when="@0.13.3:0.14.0", type="build")
 
     depends_on("py-setuptools@69.0.2:", when="@0.14.1:", type="build")
