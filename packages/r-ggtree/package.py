@@ -33,7 +33,7 @@ class RGgtree(RPackage):
     depends_on("r-ape", type=("build", "run"))
     depends_on("r-aplot", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
-    depends_on("r-ggplot2@3.3.6:", type=("build", "run"))
+    depends_on("r-ggplot2@3.3.6:3.5", type=("build", "run"))
     depends_on("r-magrittr", type=("build", "run"))
     depends_on("r-purrr", type=("build", "run"))
     depends_on("r-rlang", type=("build", "run"))
