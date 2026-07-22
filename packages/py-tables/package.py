@@ -14,7 +14,6 @@ class PyTables(PythonPackage):
     pypi = "tables/tables-3.6.1.tar.gz"
     git = "https://github.com/PyTables/PyTables.git"
 
-    version("master", branch="master")
     version("3.10.0", sha256="8dc251498e14193385e4f953921b9ed4b11bbc6ae855b14553faa38a3b963a57", url="https://github.com/PyTables/PyTables/archive/refs/tags/v3.10.0.tar.gz")
     version("3.9.0", sha256="8602e31ed3f4b852662d6530276106eb3b6a8057ab0cb9d471693ef82d2da1d7", url="https://github.com/PyTables/PyTables/archive/refs/tags/v3.9.0.tar.gz")
     version("3.8.0", sha256="652b56b3d355797af4337a4493acfa4c4de4a60e7c6663cc6ce44d8ee477e920", url="https://github.com/PyTables/PyTables/archive/refs/tags/v3.8.0.tar.gz")
