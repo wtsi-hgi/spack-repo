@@ -168,9 +168,23 @@ class PySpatialdata(PythonPackage):
         expand=False,
         url="https://files.pythonhosted.org/packages/f9/a1/3f65aff044381794b455b6069a3ef0008f989707d96df9d7677eb9b8ebed/spatialdata-0.2.5.post0-py3-none-any.whl",
     )
+    version(
+        "0.7.3",
+        sha256="15e0df647f149a8be70cef6b866dcf033c71890440583bca8bb1c20c37566e6c",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/5d/bd/76cd29c982ed8f06db839411f1f44c521bf36b8714074652368353856b44/spatialdata-0.7.3-py3-none-any.whl"
+    )
+    version(
+        "0.8.0",
+        sha256="75139b0df0e27c4573141a8dbe6b3301b47231571505926ad6a633c046ec1010",
+        expand=False,
+        url="https://files.pythonhosted.org/packages/cf/08/f5cac3e58d1bb092bfb6015104e6cce925bbe10a2cae44428c790d4e5d06/spatialdata-0.8.0-py3-none-any.whl"
+    )
 
     depends_on("py-setuptools", type=("build"))
     depends_on("python@3.9:", type=("build", "run"))
+    depends_on("python@3.11:", type=("build", "run"), when="@0.6:")
+    depends_on("python@3.12:", type=("build", "run"), when="@0.8:")
     depends_on("py-anndata", type=("build", "run"))
     depends_on("py-click", type=("build", "run"))
     depends_on("py-dask-image", type=("build", "run"))
@@ -178,6 +192,8 @@ class PySpatialdata(PythonPackage):
     depends_on("py-dask@2023.2:", when="^py-pandas@2:", type=("build", "run"))
     depends_on("py-dask@2024.5:", when="^py-pandas@2.2:", type=("build", "run"))
     depends_on("py-dask@2025.12:", when="^py-pandas@3:", type=("build", "run"))
+    depends_on("py-dask@:2024.12", when="@:0.1.2", type=("build", "run"))
+    depends_on("py-dask@:2025.4", when="@:0.2.6", type=("build", "run"))
     depends_on("py-fsspec", type=("build", "run"))
     depends_on("py-geopandas", type=("build", "run"))
     depends_on("py-multiscale-spatial-image", type=("build", "run"))
@@ -194,11 +210,13 @@ class PySpatialdata(PythonPackage):
     depends_on("py-setuptools", type=("build", "run"))
     depends_on("py-shapely@2.0.1:", type=("build", "run"))
     depends_on("py-spatial-image", type=("build", "run"))
+    depends_on("py-tqdm", when="@0.0.6:0.1.2", type=("build", "run"))
     depends_on("py-typing-extensions", type=("build", "run"))
     depends_on("py-xarray-datatree", type=("build", "run"))
     depends_on("py-xarray-schema", type=("build", "run"))
     depends_on("py-xarray-spatial", type=("build", "run"))
     depends_on("py-xarray", type=("build", "run"))
+    depends_on("py-xarray@2024.10.0:", when="@0.7:", type=("build", "run"))
     depends_on("py-zarr", type=("build", "run"))
 
     @run_after("install")
