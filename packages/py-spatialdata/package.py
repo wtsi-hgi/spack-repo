@@ -210,6 +210,7 @@ class PySpatialdata(PythonPackage):
     depends_on("py-setuptools", type=("build", "run"))
     depends_on("py-shapely@2.0.1:", type=("build", "run"))
     depends_on("py-spatial-image", type=("build", "run"))
+    depends_on("py-tqdm", when="@0.0.6:0.1.2", type=("build", "run"))
     depends_on("py-typing-extensions", type=("build", "run"))
     depends_on("py-xarray-datatree", type=("build", "run"))
     depends_on("py-xarray-schema", type=("build", "run"))
