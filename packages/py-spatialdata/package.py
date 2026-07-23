@@ -192,6 +192,7 @@ class PySpatialdata(PythonPackage):
     depends_on("py-dask@2023.2:", when="^py-pandas@2:", type=("build", "run"))
     depends_on("py-dask@2024.5:", when="^py-pandas@2.2:", type=("build", "run"))
     depends_on("py-dask@2025.12:", when="^py-pandas@3:", type=("build", "run"))
+    depends_on("py-dask@:2024.12", when="@:0.1.2", type=("build", "run"))
     depends_on("py-dask@:2025.4", when="@:0.2.6", type=("build", "run"))
     depends_on("py-fsspec", type=("build", "run"))
     depends_on("py-geopandas", type=("build", "run"))
