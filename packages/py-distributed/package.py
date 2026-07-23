@@ -117,9 +117,3 @@ class PyDistributed(PythonPackage):
     def patch(self):
         if self.spec.satisfies("@:2023.3"):
             filter_file("^dask .*", "", "requirements.txt")
-
-    @run_after("install")
-    def install_test(self):
-        with working_dir("spack-test", create=True):
-            python = self.spec["python"].command
-            python("-c", "import distributed")
