@@ -15,27 +15,22 @@ class RGgtree(RPackage):
     data."""
 
     bioc = "ggtree"
-    urls = [
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/ggtree_3.10.1.tar.gz",
-        "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/ggtree/ggtree_3.10.1.tar.gz",
-    ]
+    git = "https://git.bioconductor.org/packages/ggtree"
     
-    version("3.10.1", md5="14911b3009b957dcf17ae513e87825fa")
-    version("3.10.0", md5="7e1894ce01245d811286b0ce1fbe8266")
+    version("3.10.1", tag="RELEASE_3_18")
+    version("3.10.0", commit="00dcbae01c3445033b80a6ff37d3089eb559796f")
     version("3.8.0", commit="e7c989085d0848e4d5f82aa8000422c71458a9a8")
     version("3.6.2", commit="431ec37bc0f0159b08a7990ce1d9374e160b9f44")
     version("3.4.4", commit="8e48d3e2ea445b6c2213f0471462108a7a72b333")
     version("3.4.0", commit="23f08a3da1829d1bbb6827ed1c4cf878daa4b539")
     version("3.2.1", commit="d3747e636fe1a6a9e09b56a3a3899208ebd05547")
 
-    patch("rect_to_poly.patch", when="@3.6.2")
-
     depends_on("r@3.5:", type=("build", "run"))
     depends_on("r-ape", type=("build", "run"))
     depends_on("r-aplot", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-ggplot2@:3.3.6", type=("build", "run"), when="@:3.4.4")
-    depends_on("r-ggplot2@3.3.7:3", type=("build", "run"), when="@3.6.2:")
+    depends_on("r-ggplot2@3.3.7:3.4.4", type=("build", "run"), when="@3.6.2:3")
     depends_on("r-magrittr", type=("build", "run"))
     depends_on("r-purrr", type=("build", "run"))
     depends_on("r-rlang", type=("build", "run"))
