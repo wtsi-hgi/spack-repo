@@ -13,6 +13,8 @@ class RGgfun(RPackage):
 	layers, adding rounded rectangle as background for each of the legends)."""
 
 	cran = "ggfun"
+	version("0.2.1", sha256="9198f5cd18fc4b9fbd43472264768117336131dac70fa535ae83e45b0a83c118")
+	version("0.1.7", sha256="be92efb841751aba6cf83a83b80f3446a76b93ee269dcee8af37a7a1e19a85ea")
 	version("0.1.4", md5="a27e5e2c026eba828b588bb230db3ea3")
 	version("0.0.9", sha256="5c740e9d1e73b77658f41ed65e21492f4e71b12c7c9ff4b9e52ebf5f8f197612")
 	version("0.0.8", sha256="9471a12fc7af203a419767b845e6b6c1e63c080370cb8f2dac80187194122273")
@@ -22,6 +24,10 @@ class RGgfun(RPackage):
 	version("0.0.4", sha256="5926365f9a90baf47320baf48c40f515ef570f9c767484adea5f04219964d21e")
 
 	depends_on("r@4.1:", type=("build", "run"))
+	depends_on("r@4.2:", type=("build", "run"), when="@0.2.1:")
 	depends_on("r-cli", type=("build", "run"))
+	depends_on("r-dplyr", type=("build", "run"), when="@0.1.7:")
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-rlang", type=("build", "run"))
+	depends_on("r-scales", type=("build", "run"), when="@0.2.1:")
+	depends_on("r-yulab-utils@0.1.6:", type=("build", "run"), when="@0.1.7:")
