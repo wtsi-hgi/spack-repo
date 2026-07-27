@@ -17,6 +17,8 @@ class RGgtree(RPackage):
     bioc = "ggtree"
     git = "https://git.bioconductor.org/packages/ggtree"
     
+    version("4.2.0", tag="RELEASE_3_23")
+    version("3.16.3", tag="RELEASE_3_21")
     version("3.10.1", tag="RELEASE_3_18")
     version("3.10.0", commit="00dcbae01c3445033b80a6ff37d3089eb559796f")
     version("3.8.0", commit="e7c989085d0848e4d5f82aa8000422c71458a9a8")
@@ -30,14 +32,26 @@ class RGgtree(RPackage):
     depends_on("r-aplot", type=("build", "run"))
     depends_on("r-dplyr", type=("build", "run"))
     depends_on("r-ggplot2@:3.3.6", type=("build", "run"), when="@:3.4.4")
-    depends_on("r-ggplot2@3.3.7:3.4.4", type=("build", "run"), when="@3.6.2:3")
+    depends_on("r-ggplot2@3.3.7:3.4.4", type=("build", "run"), when="@3.6.2:3.10.1")
     depends_on("r-magrittr", type=("build", "run"))
     depends_on("r-purrr", type=("build", "run"))
     depends_on("r-rlang", type=("build", "run"))
-    depends_on("r-ggfun@0.0.9:", type=("build", "run"))
+    depends_on("r-ggfun@0.0.9:", type=("build", "run"), when="@:3.10.1")
+    depends_on("r-ggfun@0.1.7:", type=("build", "run"), when="@3.16.3:")
     depends_on("r-yulab-utils", type=("build", "run"))
     depends_on("r-tidyr", type=("build", "run"))
     depends_on("r-tidytree@0.4.5:", type=("build", "run"))
     depends_on("r-treeio@1.8:", type=("build", "run"))
     depends_on("r-scales", type=("build", "run"))
     depends_on("r-cli", type=("build", "run"))
+
+    with when("@4"):
+        with default_args( type=("build", "run")):
+            depends_on("r@4.2:")
+            depends_on("r-ggfun@0.1.7:")
+            depends_on("r-ggiraph@0.9.1:")
+            depends_on("r-ggplot2@4.0.0:")
+            depends_on("r-tidytree@0.4.5:")
+            depends_on("r-treeio@1.8:")
+            depends_on("r-yulab-utils@0.2.3:")
+
