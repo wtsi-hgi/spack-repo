@@ -7,6 +7,12 @@ from spack.package import *
 
 
 class RBiocversion(RPackage):
+
+	version(
+		"3.20.0",
+		sha256="9de14e40e3f085da92bc9f375ee6e1a81b8676b43882a45a3abf84faf94db6c7",
+		url="https://www.bioconductor.org/packages/3.20/bioc/src/contrib/BiocVersion_3.20.0.tar.gz",
+	)
 	version("3.18.1", md5="46dbe2f6ca9c058b24da1bd98f79631e")
 	version("3.17.1", commit="a2d0c4c489be1cafdb51bf8d205161429b09ac7f")
 	version("3.16.0", commit="c681e06fe30ea6815f958c1a3c74c090863680ba")
@@ -23,3 +29,4 @@ class RBiocversion(RPackage):
 
 
 	depends_on("r@4.3:", type=("build", "run"))
+	depends_on("r@4.4:", type=("build", "run"), when="@3.20.0:")
