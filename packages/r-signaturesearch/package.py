@@ -18,7 +18,7 @@ class RSignaturesearch(RPackage):
 
 	version("1.16.0", tag="RELEASE_3_18")
 
-	depends_on("r@4.3", type=("build", "run"))
+	depends_on("r@4.3:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-org-hs-eg-db", type=("build", "run"))
