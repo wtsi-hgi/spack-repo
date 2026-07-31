@@ -13,12 +13,13 @@ class RSignaturesearch(RPackage):
 	"""
 	
 	homepage = "https://github.com/yduan004/signatureSearch/"
-	bioc = "signatureSearch" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/signatureSearch_1.16.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/signatureSearch/signatureSearch_1.16.0.tar.gz"]
+	bioc = "signatureSearch"
+	git = "https://git.bioconductor.org/packages/signatureSearch"
 
-	version("1.16.0", md5="9585172c7764e755ee67aee1c5a1adba")
-
-	depends_on("r@4.2:", type=("build", "run"))
+	version("1.20.0", tag="RELEASE_3_20")
+	version("1.16.0", tag="RELEASE_3_18")
+	
+	depends_on("r@4.3", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
 	depends_on("r-summarizedexperiment", type=("build", "run"))
 	depends_on("r-org-hs-eg-db", type=("build", "run"))

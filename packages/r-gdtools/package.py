@@ -21,15 +21,18 @@ class RGdtools(RPackage):
 	homepage = "https://davidgohel.github.io/gdtools/"
 	cran = "gdtools" 
 
+	version("0.5.1", sha256="94c15014fcfa7a83de863b7d690a98a05a8cb929dcb056af8f304632dc4441e7")
 	version("0.3.7", md5="9df853df8a9b0255f01610d6133d5350")
 	version("0.3.6", md5="25d12129c0ac5997757b5526e80d4efc")
 
 	depends_on("r@4:", type=("build", "run"))
 	depends_on("r-rcpp", type=("build", "run"))
+	depends_on("r-rcpp@0.12.12:", type=("build", "run"), when="@0.5:")
 	depends_on("r-systemfonts@0.1.1:", type=("build", "run"))
+	depends_on("r-systemfonts@1.3.1:", type=("build", "run"), when="@0.5:")
 	depends_on("r-htmltools", type=("build", "run"))
-	depends_on("r-gfonts", type=("build", "run"))
-	depends_on("r-curl", type=("build", "run"))
+	depends_on("r-gfonts", type=("build", "run"), when="@:0.3")
+	depends_on("r-curl", type=("build", "run"), when="@:0.3")
 	depends_on("r-fontquiver@0.2:", type=("build", "run"))
 	depends_on("cairo", type=("build", "link", "run"))
 	depends_on("freetype", type=("build", "link", "run"))

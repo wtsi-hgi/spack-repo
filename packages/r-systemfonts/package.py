@@ -18,6 +18,7 @@ class RSystemfonts(RPackage):
 	access from R."""
 
 	cran = "systemfonts"
+	version("1.3.2", sha256="828a1780e540bd05107cd0a1ddfac6727de8aef1d6d82b43591dabaf753dd135")
 	version("1.0.6", md5="a64862faca6ec5e67a0381bc0eb300be")
 	version("1.0.5", md5="92edbeac47df03bf8015ac2d97c2a739")
 	version("1.0.4", sha256="ef766c75b942f147d382664a00d6a4930f1bfe0cce9d88943f571682a85a84c0")
@@ -26,5 +27,8 @@ class RSystemfonts(RPackage):
 
 	depends_on("r@3.2:", type=("build", "run"))
 	depends_on("r-cpp11@0.2.1:", type=("build", "run"))
+	depends_on("r-base64enc", type=("build", "run"), when="@1.3.1:")
+	depends_on("r-jsonlite", type=("build", "run"), when="@1.3.1:")
+	depends_on("r-lifecycle", type=("build", "run"), when="@1.3.1:")
 	depends_on("fontconfig", type=("build", "link", "run"))
 	depends_on("freetype@2:", type=("build", "link", "run"))
