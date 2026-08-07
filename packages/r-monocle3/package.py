@@ -21,6 +21,7 @@ class RMonocle3(RPackage):
 
     git = "https://github.com/cole-trapnell-lab/monocle3"
 
+    version("1.4.27", tag="v1.4.27")
     version("1.3.1", tag="v1.3.1")
 
     depends_on("r@4.0.0:", type=("build", "run"))
@@ -78,3 +79,8 @@ class RMonocle3(RPackage):
     depends_on("r-tibble", type=("build", "run"))
     depends_on("r-tidyr", type=("build", "run"))
     depends_on("r-viridis", type=("build", "run"))
+
+    with when("@1.4.27"):
+        depends_on("r-bpcells", type=("build", "run"))
+        depends_on("r-ggdist", type=("build", "run"))
+        depends_on("r-ggforce", type=("build", "run"))
