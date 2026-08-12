@@ -3,6 +3,8 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+import os
+
 from spack.package import *
 
 
@@ -12,10 +14,12 @@ class Cellranger(Package):
     analysis, and more."""
 
     homepage = "https://www.10xgenomics.com/support/software/cell-ranger/latest"
-    url = "file:///mnt/data/softpack-agent/distfiles/cellranger-10.1.0.tar.gz"
-    license("10XGenomics-SOFTWARE-EULA")
+    license_url = "support.10xgenomics.com/license"
+    git = "https://gitlab.internal.sanger.ac.uk/ov3/cellranger"
 
-    version("10.1.0", sha256="bce72f4739f2e8193758037ff52e20b85ca716ad44e729dc748d10b25b4ccb9a")
+    version("7.2.0", branch="v7.2.0")
+    version("8.0.1", branch="v8.0.1")
+    version("10.1.0", branch="v10.1.0")
 
     # cellranger is distributed as precompiled binaries that are not compatible with
     # processors without the avx instruction set ...
@@ -24,10 +28,13 @@ class Cellranger(Package):
     conflicts("target=:x86_64_v2")  # last generic architecture not to support avx
 
     def install(self, spec, prefix):
-        install_tree(".", prefix)
+        tar = which("tar")
+        tar("-xzf", f"cellranger-{self.version}.tar.gz")
+        install_tree(f"cellranger-{self.version}", prefix)
+
 
     @run_after("install")
     def install_test(self):
+        cellranger = Executable(join_path(self.prefix.bin, "cellranger"))
         with working_dir("spack-test", create=True):
-            cellranger = Executable(join_path(self.prefix.bin, "cellranger"))
-            cellranger("testrun", "--help")
+            cellranger("--help")
