@@ -17,7 +17,6 @@ class PyScipy(PythonPackage):
 
     license("BSD-3-Clause")
 
-    version("main", branch="main")
     version("1.17.1", sha256="95d8e012d8cb8816c226aef832200b1d45109ed4464303e997c5b13122b297c0")
     version("1.16.3", sha256="01e87659402762f43bd2fee13370553a17ada367d42e7487800bf2916535aecb")
     version("1.15.3", sha256="eae3cf522bc7df64b42cad3925c876e1b0b6c35c1337c93e12c0f366f55b0eaf")
@@ -80,6 +79,8 @@ class PyScipy(PythonPackage):
 
     # Build dependencies (do not include upper bound unless known issues)
     with default_args(type="build"):
+        depends_on("meson@1.5:", when="@1.16:")
+        depends_on("meson@1.3:", when="@1.15")
         depends_on("py-meson-python@0.15:", when="@1.12:")
         depends_on("py-meson-python@0.12.1:", when="@1.11:")
         depends_on("py-meson-python@0.11:", when="@1.10:")

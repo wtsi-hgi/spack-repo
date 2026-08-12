@@ -16,9 +16,11 @@ class RCicero(RPackage):
 	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/cicero_1.20.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/cicero/cicero_1.20.0.tar.gz"]
 
 	version("1.20.0", md5="642264199171ac5b31a4f296c855dbb7")
+	version("monocle3", commit="495ef0da13cc9ffe55516bfd34f48b671ad55aba", git="https://github.com/cole-trapnell-lab/cicero-release")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-monocle", type=("build", "run"))
+	depends_on("r-monocle3", type=("build", "run"), when="@monocle3")
 	depends_on("r-gviz@1.22.3:", type=("build", "run"))
 	depends_on("r-assertthat@0.2:", type=("build", "run"))
 	depends_on("r-biobase@2.37.2:", type=("build", "run"))
