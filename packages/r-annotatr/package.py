@@ -23,7 +23,7 @@ class RAnnotatr(RPackage):
 	depends_on("r-dplyr", type=("build", "run"))
 	depends_on("r-genomicfeatures", type=("build", "run"))
 	depends_on("r-genomicranges", type=("build", "run"))
-	depends_on("r-genomeinfodb@1.10.3:", type=("build", "run"))
+	depends_on("r-genomeinfodb@1.10.3:1.45", type=("build", "run"))
 	depends_on("r-ggplot2", type=("build", "run"))
 	depends_on("r-iranges", type=("build", "run"))
 	depends_on("r-readr", type=("build", "run"))
