@@ -34,6 +34,8 @@ class PyAnndata(PythonPackage):
     with when("@:0.9"):
         depends_on("py-flit-core", type="build")
 
-    with when("@0.10:"):
-        depends_on("python@3.11:", type=("build", "run"))
+    with when("@0.11:"):
+        depends_on("python@3.10:", type=("build", "run"))
 
+    with when("@0.10.0:0.10"):
+        depends_on("python@3.9:", type=("build", "run"))
