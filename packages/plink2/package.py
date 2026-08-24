@@ -18,6 +18,11 @@ class Plink2(MakefilePackage):
 
     maintainers("teaguesterling")
 
+
+    version(
+        "2.0.0-a.7.4",
+        sha256="370b8c6127deb5231b72a581f7869409db7fa314ef66e7b96553f621fdbe61a1"
+    )
     version(
         "2.0.0-a.6.32",
         sha256="9d529d6fd5d1cf2893e36920db0b1ff4e6bad96fb9fa60a2ceee7b1e94dd8aab",
