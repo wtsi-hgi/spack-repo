@@ -6,9 +6,9 @@ class RPgen2gds(RPackage):
 
     homepage = "https://github.com/zhengxwen/pgen2gds"
     bioc = "pgen2gds"
-    url = "https://bioconductor.statistik.tu-dortmund.de/packages/3.24/bioc/src/contrib/pgen2gds_0.99.3.tar.gz"
+    git = "https://git.bioconductor.org/packages/pgen2gds"
 
-    version("0.99.3", sha256="c9230a7c480f695d17dbd655146f62bb123f783bc796fa23b3456868752cf6d0")
+    version("0.99.3", commit="e52625a6d881236eee447f8dba5f4c95da6152b3")
 
     depends_on("r@4.0:", type=("build", "run"))
     depends_on("r-gdsfmt@1.24.0:", type=("build", "link", "run"))
