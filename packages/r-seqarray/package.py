@@ -14,11 +14,11 @@ class RSeqarray(RPackage):
 	
 	homepage = "https://github.com/zhengxwen/SeqArray"
 	bioc = "SeqArray" 
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/SeqArray_1.42.3.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/SeqArray/SeqArray_1.42.3.tar.gz"]
+	git = "https://git.bioconductor.org/packages/SeqArray"
 
-	version("1.53.2", sha256="831d98a45e0c4bc0987dcfdd2a4f49e6032512d575102208a88900b8ec7e356b", url="https://bioconductor.statistik.tu-dortmund.de/packages/3.24/bioc/src/contrib/SeqArray_1.53.2.tar.gz")
-	version("1.42.3", md5="6b53f2b957cca22de6e2a43359e68382")
-	version("1.42.2", md5="bc97547c09a0e4c30a7a2828b2493367")
+	version("1.53.2", commit="49fb7f23a913354441e32099708c55746286840e")
+	version("1.42.3", commit="ceb8c36c7098d179d43f8bae423cf8632756e438")
+	version("1.42.2", commit="2f9f929eb78f1df990b390a813de0c2907e12616")
 
 	depends_on("r@3.5:", type=("build", "run"))
 	depends_on("r-gdsfmt", type=("build", "run"))
