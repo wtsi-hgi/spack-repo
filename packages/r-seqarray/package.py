@@ -31,9 +31,9 @@ class RSeqarray(RPackage):
 	depends_on("r-seqinfo", when="@1.53.2:", type=("build", "run"))
 
 	def patch(self):
-		with when("@1.42.3:"):
+		if self.spec.satisfies("@1.42.3:"):
 			path = "src/vectorization.cpp"
-		with when("@1.42.2"):
+		if self.spec.satisfies("@1.42.2"):
 			path = "src/vectorization.c"
 		filter_file("const __m256i mask3 = _mm256_set1_epi8('\\n');", "", path, string=True)
 		filter_file("const __m256i mask4 = _mm256_set1_epi8('\\r');", "", path, string=True)
