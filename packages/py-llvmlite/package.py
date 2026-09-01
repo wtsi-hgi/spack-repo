@@ -13,6 +13,10 @@ class PyLlvmlite(PythonPackage):
     pypi = "llvmlite/llvmlite-0.23.0.tar.gz"
     git = "https://github.com/numba/llvmlite.git"
 
+    version("0.47.0", sha256="62031ce968ec74e95092184d4b0e857e444f8fdff0b8f9213707699570c33ccc")
+    version("0.46.0", sha256="227c9fd6d09dce2783c18b754b7cd9d9b3b3515210c46acc2d3c5badd9870ceb")
+    version("0.45.1", sha256="09430bb9d0bb58fc45a45a57c7eae912850bedc095cd0810a57de109c69e1c32")
+    version("0.44.0", sha256="07667d66a5d150abed9157ab6c0b9393c9356f229784a4385c02f99e94fc94d4")
     version("0.43.0", sha256="ae2b5b5c3ef67354824fb75517c8db5fbe93bc02cd9671f3c62271626bc041d5")
     version("0.42.0", sha256="f92b09243c0cc3f457da8b983f67bd8e1295d0f5b3746c7a1861d7a99403854a")
     version("0.41.1", sha256="f19f767a018e6ec89608e1f6b13348fa2fcde657151137cb64e56d48598a92db")
@@ -32,9 +36,13 @@ class PyLlvmlite(PythonPackage):
     version("0.26.0", sha256="13e84fe6ebb0667233074b429fd44955f309dead3161ec89d9169145dbad2ebf")
     version("0.25.0", sha256="fd64def9a51dd7dc61913a7a08eeba5b9785522740bec5a7c5995b2a90525025")
 
+    depends_on("cmake", type="build")
     depends_on("py-setuptools", type="build")
     # setuptools 70+ removed dry_run kwarg from spawn() breaking llvmlite's setup.py
     depends_on("py-setuptools@:69", when="@:0.43.0", type="build")
+    depends_on("py-setuptools@:80", when="@0.44:0.46", type="build")
+    depends_on("python@3.10:3.14", when="@0.46:", type=("build", "run"))
+    depends_on("python@3.10:3.13", when="@0.44:0.45", type=("build", "run"))
     depends_on("python@3.8:3.11", when="@0.40:0.41", type=("build", "run"))
     depends_on("python@:3.10", when="@0.38:0.39", type=("build", "run"))
     depends_on("python@:3.9", when="@0.36:0.37", type=("build", "run"))
@@ -44,7 +52,9 @@ class PyLlvmlite(PythonPackage):
     depends_on("py-pip@23:", type="build", when="^py-setuptools@64:")
 
     # https://github.com/numba/llvmlite#compatibility
-    depends_on("llvm@15", when="@0.43:")
+    depends_on("llvm@20", when="@0.45:0.47")
+    depends_on("llvm@15:16", when="@0.44")
+    depends_on("llvm@15", when="@0.43")
     depends_on("llvm@14", when="@0.41:0.42")
     depends_on("llvm@11:14", when="@0.40")
     depends_on("llvm@11", when="@0.37:0.39")
