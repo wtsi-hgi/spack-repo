@@ -35,6 +35,7 @@ class Llvm(CMakePackage, CudaPackage):
     family = "compiler"  # Used by lmod
 
     version("main", branch="main")
+    version("20.1.8", sha256="a6cbad9b2243b17e87795817cfff2107d113543a12486586f8a055a2bb044963")
     version("18.1.3", sha256="fc5a2fd176d73ceb17f4e522f8fe96d8dde23300b8c233476d3609f55d995a7a")
     version("17.0.4", sha256="46200b79f52a02fe26d0a43fd856ab6ceff49ab2a0b7c240ac4b700a6ada700c")
     version("17.0.3", sha256="1e3d9d04fb5fbd8d0080042ad72c7e2a5c68788b014b186647a604dbbdd625d2")
@@ -925,6 +926,10 @@ class Llvm(CMakePackage, CudaPackage):
 
         if self.compiler.name == "gcc":
             cmake_args.append(define("GCC_INSTALL_PREFIX", self.compiler.prefix))
+            if self.spec.satisfies("@20:"):
+                # GCC_INSTALL_PREFIX became a hard CMake error unless this is set; see
+                # https://github.com/llvm/llvm-project/pull/77537
+                cmake_args.append(define("USE_DEPRECATED_GCC_INSTALL_PREFIX", True))
 
         if self.spec.satisfies("~code_signing platform=darwin"):
             cmake_args.append(define("LLDB_USE_SYSTEM_DEBUGSERVER", True))
