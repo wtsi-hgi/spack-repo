@@ -31,6 +31,10 @@ class RSeqarray(RPackage):
 	depends_on("r-seqinfo", when="@1.53.2:", type=("build", "run"))
 
 	def patch(self):
-		filter_file("const __m256i mask3 = _mm256_set1_epi8('\\n');", "", "src/vectorization.cpp", string=True)
-		filter_file("const __m256i mask4 = _mm256_set1_epi8('\\r');", "", "src/vectorization.cpp", string=True)
-		filter_file("const __m128i mask2 = _mm_set1_epi8('\\r');", "const __m128i mask2 = _mm_set1_epi8('\\r');const __m256i mask3 = _mm256_set1_epi8('\\n');const __m256i mask4 = _mm256_set1_epi8('\\r');", "src/vectorization.cpp", string=True)
+		with when("@1.42.3:"):
+			path = "src/vectorization.cpp"
+		with when("@1.42.2"):
+			path = "src/vectorization.c"
+		filter_file("const __m256i mask3 = _mm256_set1_epi8('\\n');", "", path, string=True)
+		filter_file("const __m256i mask4 = _mm256_set1_epi8('\\r');", "", path, string=True)
+		filter_file("const __m128i mask2 = _mm_set1_epi8('\\r');", "const __m128i mask2 = _mm_set1_epi8('\\r');const __m256i mask3 = _mm256_set1_epi8('\\n');const __m256i mask4 = _mm256_set1_epi8('\\r');", path, string=True)
