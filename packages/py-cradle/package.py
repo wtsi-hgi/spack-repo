@@ -24,9 +24,9 @@ class PyCradle(PythonPackage):
     version("0.29.0", sha256="838b5bb19fd4a998057f9252d1ba105576dc7d224e550d631a945276581cfbf1")
     version("0.30.0", sha256="f1fba4a23779570e2fc58d9d93a6aacdf83349dac85a3c8d91d24e7de4069499")
 
+    depends_on("python@3.2:", type=("build", "run"))
     depends_on("py-setuptools", type="build")
     depends_on("py-numpy@1.14.3:", type=("build", "run"))
-    depends_on("py-argparse@1.1:", type=("build", "run"))
     depends_on("py-py2bit@0.3.0:", type=("build", "run"))
     depends_on("py-pybigwig@0.3.11:", type=("build", "run"))
     depends_on("py-statsmodels@0.8.0:", type=("build", "run"))

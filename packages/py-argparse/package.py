@@ -14,6 +14,9 @@ class PyArgparse(PythonPackage):
 
     license("PSF-2.0")
 
+    # As of python 3.2 argparse is included as a standard library 
+    conflicts("python@3.2:")
+
     version("1.4.0", sha256="62b089a55be1d8949cd2bc7e0df0bddb9e028faefc8c32038cc84862aefdd6e4")
 
     depends_on("py-setuptools", type="build")
