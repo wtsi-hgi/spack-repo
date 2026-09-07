@@ -15,8 +15,10 @@ class ROrganismdbi(RPackage):
 	fact that each of these packages implements a select methods."""
 
 	bioc = "OrganismDbi"
-	urls = ["https://www.bioconductor.org/packages/3.18/bioc/src/contrib/OrganismDbi_1.44.0.tar.gz", "https://www.bioconductor.org/packages/3.18/bioc/src/contrib/Archive/OrganismDbi/OrganismDbi_1.44.0.tar.gz"]
-	version("1.44.0", md5="3d6c3ba042e4e0b6ecf5fa27fc344a82")
+	git = "https://git.bioconductor.org/packages/OrganismDbi"
+	
+	version("1.52.0", tag="RELEASE_3_22")
+	version("1.44.0", tag="RELEASE_3_18")
 	version("1.42.0", commit="29fcd5c47f8c479edac630a8e2a05ec5facb1328")
 	version("1.40.0", commit="fac971dabef3b6d2473d2061bc1723e3de59c9d7")
 	version("1.38.1", commit="fa8da4dd42ab15e1d21fd9f8286440596d50b1ec")
@@ -41,3 +43,7 @@ class ROrganismdbi(RPackage):
 	depends_on("r-rbgl", type=("build", "run"))
 	depends_on("r-dbi", type=("build", "run"))
 	depends_on("r-s4vectors@0.9.25:", type=("build", "run"))
+	depends_on("r-genomicfeatures@:1.60", type=("build", "run"), when="@:1.44")
+	depends_on("r-genomicfeatures@1.61.4:", type=("build", "run"), when="@1.52:")
+	depends_on("r-genomicranges@1.61.1:", type=("build", "run"), when="@1.52:")
+	depends_on("r-seqinfo", type=("build", "run"), when="@1.52:")
