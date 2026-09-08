@@ -5,6 +5,7 @@
 
 from spack.package import *
 
+
 class PyPandasPlink(PythonPackage):
     """Pandas-plink is a Python package for reading PLINK binary file format andrealized relationship matrices (PLINK or GCTA)."""
 
@@ -13,6 +14,9 @@ class PyPandasPlink(PythonPackage):
 
     version("2.2.9", sha256="f5ecacc46c7b92d67968310d14000327333ec1720f35142b091e56da6ef80711")
 
+    depends_on("py-setuptools", type="build")
+    depends_on("py-wheel@0.34.2:", type="build")
+    depends_on("py-deprecated@1.2.6:", type=("build", "run"))
     depends_on("py-cffi@1.14.3:", type=("build", "run"))
     depends_on("py-dask@2.6.0:+array+dataframe", type=("build", "run"))
     depends_on("py-numpy@1.17.2:", type=("build", "run"))
