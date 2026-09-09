@@ -18,11 +18,10 @@ class RGgnet(RPackage):
 
     license("GPL-3.0-only")
 
-    version("20160129", commit="da9a7cf2fac24a37ef626e6143ee376eebbdf2d8")
-
-    depends_on("r", type=("build", "run"))
+    version("0.1.0", commit="da9a7cf2fac24a37ef626e6143ee376eebbdf2d8")    
 
     with default_args(type=("build", "run")):
+        depends_on("r")
         depends_on("r-ggplot2")
         depends_on("r-network")
         depends_on("r-scales")
