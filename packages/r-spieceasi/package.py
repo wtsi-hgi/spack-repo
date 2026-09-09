@@ -26,17 +26,22 @@ class RSpieceasi(RPackage):
     version("1.0.0", sha256="b2cf88fc60c67185edd6b4b578eaa1a6e0a96604466db83be1c88df6bd4903bc")
     version("0.1.4", sha256="75c6dbc37616938f1263a0eacfcf97febfc8e9e2abb7e11a496131a791297422")
 
-    depends_on("r@3.0:", type=("build", "run"))
-    depends_on("r@3.3:", when="@1.0:", type=("build", "run"))
-    depends_on("r@3.6:", when="@1.1:", type=("build", "run"))
 
-    depends_on("r-huge", type=("build", "run"))
-    depends_on("r-huge@1.3.2:", when="@1.0.7:", type=("build", "run"))
-    depends_on("r-mass", type=("build", "run"))
-    depends_on("r-matrix", type=("build", "run"))
-    depends_on("r-vgam", type=("build", "run"))
-    depends_on("r-pulsar", when="@1.0:", type=("build", "run"))
-    depends_on("r-pulsar@0.3.4:", when="@1.0.2:", type=("build", "run"))
-    depends_on("r-glmnet", when="@1.1:", type=("build", "run"))
-    depends_on("r-rcpp", when="@1.1:", type=("build", "run"))
-    depends_on("r-rcpparmadillo", when="@1.1:", type=("build", "run"))
+    with default_args(type=("build", "run")):
+        depends_on("r@3.0:")
+        depends_on("r-huge")
+        depends_on("r-huge@1.3.2:", when="@1.0.7:")
+        depends_on("r-mass")
+        depends_on("r-matrix")
+        depends_on("r-vgam")
+        depends_on("r-pulsar@0.3.4:", when="@1.0.2:")
+
+        with when("@1.0:"):
+            depends_on("r@3.3:")
+            depends_on("r-pulsar")
+
+        with when("@1.1:"):
+            depends_on("r@3.6:")
+            depends_on("r-glmnet")
+            depends_on("r-rcpp")
+            depends_on("r-rcpparmadillo")
