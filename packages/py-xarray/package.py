@@ -26,6 +26,7 @@ class PyXarray(PythonPackage):
     version("2026.4.0", sha256="c4ac9a01a945d90d5b1628e2af045099a9d4943536d4f2ee3ae963c3b222d15b")
     version("2026.2.0", sha256="978b6acb018770554f8fd964af4eb02f9bcc165d4085dbb7326190d92aa74bcf")
     version("2025.7.1", sha256="2884bf5672b540fcc6ff8c20a3196bda0d78fbfb4d67398d60526e97c2faceef")
+    version("2025.6.1", sha256="a84f3f07544634a130d7dc615ae44175419f4c77957a7255161ed99c69c7c8b0")
     version("2024.7.0", sha256="4cae512d121a8522d41e66d942fb06c526bc1fd32c2c181d5fe62fe65b671638")
     version("2023.7.0", sha256="dace2fdbf1b7ff185d9c1226a24bf83c2ae52f3253dbfe80e17d1162600d055c")
     version("2022.3.0", sha256="398344bf7d170477aaceff70210e11ebd69af6b156fe13978054d25c48729440")
@@ -61,6 +62,7 @@ class PyXarray(PythonPackage):
     depends_on("python@3.7:", when="@0.17:", type=("build", "run"))
     depends_on("python@3.8:", when="@0.21:", type=("build", "run"))
     depends_on("python@3.9:", when="@2023.7.0:", type=("build", "run"))
+    depends_on("python@3.10:", when="@2024.10:", type=("build", "run"))
 
     depends_on("py-numpy@1.7:", when="@0.9.1", type=("build", "run"))
     depends_on("py-numpy@1.12:", when="@0.11:0.13", type=("build", "run"))
@@ -69,8 +71,11 @@ class PyXarray(PythonPackage):
     depends_on("py-numpy@1.17:", when="@0.18:", type=("build", "run"))
     depends_on("py-numpy@1.18:", when="@0.20:", type=("build", "run"))
     depends_on("py-numpy@1.21:", when="@2023.7.0:", type=("build", "run"))
-    depends_on("py-numpy@1.26:", when="@2025.7:", type=("build", "run"))
-    depends_on("py-numpy@1.23:", when="@2024.7:", type=("build", "run"))
+    depends_on("py-numpy@1.23:", when="@2024.7.0:", type=("build", "run"))
+    depends_on("py-numpy@1.24:", when="@2024.10:", type=("build", "run"))
+    # NumPy 2 support was added in 2024.06.0; earlier releases use APIs such as
+    # np.unicode_ that were removed in NumPy 2.0
+    depends_on("py-numpy@:1", when="@:2024.05", type=("build", "run"))
 
     depends_on("py-pandas@0.15.0:", when="@0.9.1", type=("build", "run"))
     depends_on("py-pandas@0.19.2:", when="@0.11:0.13", type=("build", "run"))
