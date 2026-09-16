@@ -12,13 +12,13 @@ from spack.package import *
 class Shapeit5(MakefilePackage):
     """SHAPEIT5 estimates haplotypes in large datasets, with a special focus on rare variants."""
 
-    git = "https://github.com/odelaneau/shapeit5/"
+    git = "https://github.com/odelaneau/shapeit.git"
 
-    version("5.1.1", tag="v5.1.1", submodules=True)
+    version("5.1.1", commit="f9d726472df3f26120fe738a137fc41cbcc0bbf4")
     version("5.1.0", tag="v5.1.0")
     version("contig", commit="2c9e551c3dc3779fdfaf65943ef2e309f624bd52")
 
-    depends_on("boost+iostreams+program_options")
+    depends_on("boost@1.74:+iostreams+program_options+serialization")
     depends_on("htslib")
     depends_on("bzip2", type=("build"))
     depends_on("lzma")
@@ -31,14 +31,17 @@ class Shapeit5(MakefilePackage):
     variant("rarephasing", default=False, description="Re-enable Singelton phasing score.")
 
     patch("rare_phasing.patch", when="+rarephasing")
-    patch("math.patch", when="@5.1.1")
     patch("math.patch", when="@5.1.0")
 
     def edit(self, spec, prefix):
-        gitModules = FileFilter(".gitmodules")
-        gitModules.filter("	url = git@github.com:odelaneau/xcftools.git", "	url = https://github.com/odelaneau/xcftools.git")
-
-        which("git")("submodule", "update", "--init", "--recursive")
+        if os.path.exists(".gitmodules"):
+            filter_file(
+                "\turl = git@github.com:odelaneau/xcftools.git",
+                "\turl = https://github.com/odelaneau/xcftools.git",
+                ".gitmodules",
+                string=True,
+            )
+            which("git")("submodule", "update", "--init", "--recursive")
 
         makefile = FileFilter(*(glob.glob("*/makefile")))
         makefile.filter("CXXFLAG=.*", "CXXFLAG=-O3 -mavx2 -mfma -lm")
@@ -49,15 +52,29 @@ class Shapeit5(MakefilePackage):
         makefile.filter("system: BOOST_LIB_PO=.*", "system: BOOST_LIB_PO=" + self.spec["boost"].prefix.lib + "/libboost_program_options.a")
         makefile.filter("system: BOOST_LIB_SE=.*", "system: BOOST_LIB_SE=" + self.spec["boost"].prefix.lib + "/libboost_serialization.a")
 
-
     def build(self, spec, prefix):
-        make("all")
+        make(
+            "all",
+            "HTSLIB_INC=" + self.spec["htslib"].prefix.include,
+            "HTSLIB_LIB=" + self.spec["htslib"].prefix.lib + "/libhts.a",
+            "BOOST_INC=" + self.spec["boost"].prefix.include,
+            "BOOST_LIB_IO=" + self.spec["boost"].prefix.lib + "/libboost_iostreams.a",
+            "BOOST_LIB_PO=" + self.spec["boost"].prefix.lib + "/libboost_program_options.a",
+            "BOOST_LIB_SE=" + self.spec["boost"].prefix.lib + "/libboost_serialization.a",
+            "DYN_LIBS=-lz -lpthread -lbz2 -llzma -lcurl -lcrypto -lm -ldeflate "
+            "-lboost_iostreams -lboost_program_options -lboost_serialization -lhts",
+        )
 
     def install(self, spec, prefix):
         os.mkdir(prefix.usr)
         os.mkdir(prefix.usr.bin)
         for exe in glob.glob("*/bin/*"):
             install(exe, prefix.usr.bin)
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            Executable(join_path(self.prefix.usr.bin, "phase_common"))("--help")
 
     def setup_run_environment(self, env):
         env.append_path("PATH", join_path(self.prefix, "usr", "bin"))
