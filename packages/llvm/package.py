@@ -265,7 +265,7 @@ class Llvm(CMakePackage, CudaPackage):
     extends("python", when="+python")
 
     # Build dependency
-    depends_on("cmake@3.4.3:", type="build")
+    depends_on("cmake@3.4.3:3.30", type="build")
     depends_on("cmake@3.13.4:", type="build", when="@12:")
     depends_on("cmake@3.20:", type="build", when="@16:")
     with when("@:10"):
