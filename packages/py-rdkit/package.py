@@ -25,6 +25,7 @@ class PyRdkit(PythonPackage):
     depends_on("py-pybind11-stubgen", type=("build"))
     depends_on("py-pillow", type=("build", "run"))
     depends_on("cairo", type=("build", "link", "run"))
+    depends_on("freetype", type=("build", "link", "run"))
 
     def patch(self):
         filter_file("to_path = Path(\"/usr/local/lib\")", "to_path = Path(\""+self.prefix+"/lib\")", "setup.py", string=True)
