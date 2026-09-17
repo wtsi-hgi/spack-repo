@@ -14,7 +14,7 @@ class PyRdkit(PythonPackage):
 
     version("2026.03.3", tag="2026.03.3")
     version("2025.09.6", tag="2025.09.6")
-    version("2025.03.3", tag="2025.05.3")
+    version("2025.03.3", tag="2025.03.3")
 
     depends_on("py-setuptools@75:", type=("build"))
     depends_on("py-wheel", type=("build", "run"))
