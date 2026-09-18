@@ -23,6 +23,10 @@ class PyXarray(PythonPackage):
         "xarray.coding",
     ]
 
+    
+    version("2026.4.0", sha256="c4ac9a01a945d90d5b1628e2af045099a9d4943536d4f2ee3ae963c3b222d15b")
+    version("2026.2.0", sha256="978b6acb018770554f8fd964af4eb02f9bcc165d4085dbb7326190d92aa74bcf")
+    version("2025.7.1", sha256="2884bf5672b540fcc6ff8c20a3196bda0d78fbfb4d67398d60526e97c2faceef")
     version("2025.6.1", sha256="a84f3f07544634a130d7dc615ae44175419f4c77957a7255161ed99c69c7c8b0")
     version("2024.7.0", sha256="4cae512d121a8522d41e66d942fb06c526bc1fd32c2c181d5fe62fe65b671638")
     version("2023.7.0", sha256="dace2fdbf1b7ff185d9c1226a24bf83c2ae52f3253dbfe80e17d1162600d055c")
@@ -41,17 +45,18 @@ class PyXarray(PythonPackage):
 
     # pyproject.toml
     depends_on("py-setuptools", when="@:0.15", type="build")
-    depends_on("py-setuptools@38.4:", when="@0.16:", type=("build", "run"))
-    depends_on("py-setuptools@42:", when="@0.17:", type=("build", "run"))
-    # 2025.06.0 declares the license as a PEP 639 SPDX expression
-    depends_on("py-setuptools@77:", when="@2025.6:", type=("build", "run"))
+    depends_on("py-setuptools@38.4:", when="@0.16:", type="build")
+    depends_on("py-setuptools@42:", when="@0.17:", type="build")
+    depends_on("py-setuptools@77.0.3:", when="@2025.6:", type="build")
     depends_on("py-setuptools-scm", when="@0.15:", type="build")
     depends_on("py-setuptools-scm@7:", when="@2023.7.0:", type="build")
     depends_on("py-setuptools-scm@3.4:+toml", when="@0.17:2022.3.0", type="build")
+    depends_on("py-setuptools-scm@8:", when="@2025.8:", type="build")
     depends_on("py-setuptools-scm-git-archive", when="@0.17:2022.3.0", type="build")
 
     # setup.cfg
     depends_on("python@2.7,3.5:", when="@0.11:", type=("build", "run"))
+    depends_on("python@3.11:", when="@2025.7:", type=("build", "run"))
     depends_on("python@3.5:", when="@0.12", type=("build", "run"))
     depends_on("python@3.5.3:", when="@0.13", type=("build", "run"))
     depends_on("python@3.6:", when="@0.14:", type=("build", "run"))
@@ -72,6 +77,7 @@ class PyXarray(PythonPackage):
     # NumPy 2 support was added in 2024.06.0; earlier releases use APIs such as
     # np.unicode_ that were removed in NumPy 2.0
     depends_on("py-numpy@:1", when="@:2024.05", type=("build", "run"))
+    depends_on("py-numpy@1.26:", when="@2025.7:", type=("build", "run"))
 
     depends_on("py-pandas@0.15.0:", when="@0.9.1", type=("build", "run"))
     depends_on("py-pandas@0.19.2:", when="@0.11:0.13", type=("build", "run"))
@@ -80,26 +86,46 @@ class PyXarray(PythonPackage):
     depends_on("py-pandas@1:", when="@0.18:", type=("build", "run"))
     depends_on("py-pandas@1.1:", when="@0.20:", type=("build", "run"))
     depends_on("py-pandas@1.4:", when="@2023.7.0:", type=("build", "run"))
-    depends_on("py-pandas@2:", when="@2024.7.0:", type=("build", "run"))
-    depends_on("py-pandas@2.1:", when="@2024.10:", type=("build", "run"))
+
+    depends_on("py-pandas@2.0:2.1", when="@2024.7:2025.6", type=("build", "run"))
+    depends_on("py-pandas@1.4:2.1", when="@2023.7:2024.6", type=("build", "run"))
 
     depends_on("py-packaging@20:", when="@0.21:", type=("build", "run"))
     depends_on("py-packaging@21.3:", when="@2023.7.0:", type=("build", "run"))
-    depends_on("py-packaging@23.1:", when="@2024.7.0:", type=("build", "run"))
-    depends_on("py-packaging@23.2:", when="@2024.10:", type=("build", "run"))
+    depends_on("py-packaging@24.2:", when="@2026.4:", type=("build", "run"))
+    depends_on("py-packaging@24.1:", when="@2025.7:", type=("build", "run"))
+    depends_on("py-packaging@23.1:", when="@2024.7:", type=("build", "run"))
 
     depends_on("py-netcdf4", when="+io", type=("build", "run"))
+    depends_on("py-netcdf4@1.6:", when="@2025.7: +io")
     depends_on("py-h5netcdf", when="+io", type=("build", "run"))
+    depends_on("py-h5netcdf@1.5:+h5py", when="@2026.4: +io")
+    depends_on("py-h5netcdf@1.4:", when="@2026: +io")
     depends_on("py-scipy", when="+io", type=("build", "run"))
+    depends_on("py-scipy@1.15:", when="@2026.4: +io")
+    depends_on("py-scipy@1.13:", when="@2025.7: +io")
     depends_on("py-pydap", when="+io ^python@:3.9", type=("build", "run"))
     depends_on("py-zarr", when="+io", type=("build", "run"))
+    depends_on("py-zarr@3:", when="@2026.4: +io")
+    depends_on("py-zarr@2.18:", when="@2025.7: +io")
+    
     depends_on("py-fsspec", when="+io", type=("build", "run"))
     depends_on("py-cftime", when="+io", type=("build", "run"))
     depends_on("py-rasterio", when="@:2022.3.0 +io", type=("build", "run"))
     depends_on("py-cfgrib", when="@:2022.3.0 +io", type=("build", "run"))
     depends_on("py-pooch", when="+io", type=("build", "run"))
+
     depends_on(
-        "py-dask+array+dataframe+distributed+diagnostics+delayed",
-        when="+parallel",
-        type=("build", "run"),
+        # +delayed is :2021.3.0
+        "py-dask@2022: +array+dataframe+distributed+diagnostics",
+        when="@2022.6: +parallel",
     )
+    depends_on(
+        "py-dask@:2021 +array+dataframe+distributed+diagnostics+delayed", when="@:2022.5 +parallel"
+    )
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python = self.spec["python"].command
+            python("-c", "import xarray")
