@@ -3,6 +3,7 @@
 #
 # SPDX-License-Identifier: (Apache-2.0 OR MIT)
 
+import os
 import platform
 import subprocess
 from typing import Tuple
@@ -428,7 +429,9 @@ class PyNumpy(PythonPackage):
 
     @run_before("install")
     def fix_pyproject_metadata(self):
-        filter_file(r'^[ \t]*license[ \t]*=.*$', 'license = {text = "MIT"}', self.stage.source_path + "/pyproject.toml")
+        pyproject = join_path(self.stage.source_path, "pyproject.toml")
+        if os.path.exists(pyproject):
+            filter_file(r'^[ \t]*license[ \t]*=.*$', 'license = {text = "MIT"}', pyproject)
 
     @when("@1.26:")
     def setup_build_environment(self, env):

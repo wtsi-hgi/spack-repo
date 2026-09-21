@@ -68,6 +68,7 @@ class PyPandas(PythonPackage):
     version("0.25.3", sha256="52da74df8a9c9a103af0a72c9d5fdc8e0183a90884278db7f386b5692a2220a4")
     version("0.25.2", sha256="ca91a19d1f0a280874a24dca44aadce42da7f3a7edb7e9ab7c7baad8febee2be")
     version("0.24.2", sha256="4f919f409c433577a501e023943e582c57355d50a724c589e78bc1d551a535a2")
+    version("0.23.4", sha256="5b24ca47acf69222e82530e89111dd9d14f9b970ab2cd3a1c2c78f0c4fbba4f4")
 
     # depends_on("c", type="build")
 
@@ -82,7 +83,7 @@ class PyPandas(PythonPackage):
     depends_on("python@:3.10", when="@1.3.3:1.3", type=("build", "run"))
     depends_on("python@:3.9", when="@1.1.3:1.3.2", type=("build", "run"))
     depends_on("python@:3.8", when="@0.25.2:1.1.2", type=("build", "run"))
-    depends_on("python@:3.7", when="@0.24.2:0.25.1", type=("build", "run"))
+    depends_on("python@:3.7", when="@0.23.4:0.25.1", type=("build", "run"))
 
     depends_on("py-meson-python@0.13.1:", when="@2.1:", type="build")
     depends_on("meson@1.2.1:", when="@2.1.1:", type="build")
@@ -106,6 +107,7 @@ class PyPandas(PythonPackage):
     depends_on("py-numpy@1.13.3:", when="@1.0", type=("build", "run"))
     # 'NUMPY_IMPORT_ARRAY_RETVAL' was removed in numpy@1.19
     depends_on("py-numpy@1.13.3:1.18", when="@0.25", type=("build", "run"))
+    depends_on("py-numpy@1.9:1.18", when="@0.23.4", type=("build", "run"))
     # https://github.com/pandas-dev/pandas/issues/55519
     depends_on("py-numpy@:1", when="@:2.2.1", type=("build", "run"))
     depends_on("py-python-dateutil@2.8.2:", when="@2:", type=("build", "run"))
@@ -159,3 +161,10 @@ class PyPandas(PythonPackage):
     depends_on("py-setuptools@51:70", when="@1.3.2:1", type="build")
     depends_on("py-setuptools@38.6:70", when="@1.3.0:1.3.1", type="build")
     depends_on("py-setuptools@24.2:70", when="@:1.2", type="build")
+
+    @when("@:0.24")
+    @run_before("install")
+    def fix_legacy_pytz_requirement(self):
+        filter_file(
+            r"pytz >= 2011k", "pytz >= 2011.1", join_path(self.stage.source_path, "setup.py")
+        )
