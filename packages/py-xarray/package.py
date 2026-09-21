@@ -47,6 +47,7 @@ class PyXarray(PythonPackage):
     depends_on("py-setuptools@38.4:", when="@0.16:", type="build")
     depends_on("py-setuptools@42:", when="@0.17:", type="build")
     depends_on("py-setuptools@77.0.3:", when="@2025.6:", type="build")
+    depends_on("py-setuptools@38.4:70", when="@0.16:0.18", type=("build", "run"))
     depends_on("py-setuptools-scm", when="@0.15:", type="build")
     depends_on("py-setuptools-scm@7:", when="@2023.7.0:", type="build")
     depends_on("py-setuptools-scm@3.4:+toml", when="@0.17:2022.3.0", type="build")
@@ -57,6 +58,7 @@ class PyXarray(PythonPackage):
     depends_on("python@2.7,3.5:", when="@0.11:", type=("build", "run"))
     depends_on("python@3.11:", when="@2025.7:", type=("build", "run"))
     depends_on("python@3.5:", when="@0.12", type=("build", "run"))
+    depends_on("python@:3.7", when="@:0.12", type=("build", "run"))
     depends_on("python@3.5.3:", when="@0.13", type=("build", "run"))
     depends_on("python@3.6:", when="@0.14:", type=("build", "run"))
     depends_on("python@3.7:", when="@0.17:", type=("build", "run"))
@@ -73,13 +75,13 @@ class PyXarray(PythonPackage):
     depends_on("py-numpy@1.21:", when="@2023.7.0:", type=("build", "run"))
     depends_on("py-numpy@1.23:", when="@2024.7.0:", type=("build", "run"))
     depends_on("py-numpy@1.24:", when="@2024.10:", type=("build", "run"))
-    # NumPy 2 support was added in 2024.06.0; earlier releases use APIs such as
-    # np.unicode_ that were removed in NumPy 2.0
     depends_on("py-numpy@:1", when="@:2024.05", type=("build", "run"))
 
     depends_on("py-pandas@0.15.0:", when="@0.9.1", type=("build", "run"))
     depends_on("py-pandas@0.19.2:", when="@0.11:0.13", type=("build", "run"))
     depends_on("py-pandas@0.24:", when="@0.14.0", type=("build", "run"))
+    depends_on("py-pandas@:0.23", when="@:0.12", type=("build", "run"))
+    depends_on("py-pandas@:1", when="@:2022.3.0", type=("build", "run"))
     depends_on("py-pandas@0.25:", when="@0.15:", type=("build", "run"))
     depends_on("py-pandas@1:", when="@0.18:", type=("build", "run"))
     depends_on("py-pandas@1.1:", when="@0.20:", type=("build", "run"))
