@@ -14,6 +14,7 @@ class RSffdr(RPackage):
 
 	license("LGPL-2.0-or-later")
 
+	version("1.1.2", sha256="070be6c4fec83f7befd0d81f50b571e381c375e665e62a6ad68cd950edc97852")
 	version("1.1.0", sha256="3fcc5ac4f4caf44e9c5c8f297b6d378ec688fe5829a26f0d8ad612067a4662fe")
 	version("1.0.0", sha256="1ff2627728b14a37fba8e7350701c66ee99964705f2a623ca1be567866e9567c")
 
