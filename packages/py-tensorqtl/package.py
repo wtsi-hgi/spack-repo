@@ -19,17 +19,19 @@ class PyTensorqtl(PythonPackage):
 
     depends_on("py-setuptools", type="build")
     depends_on("py-setuptools@61:", when="@1.0.10:", type="build")
-    depends_on("py-numpy", type=("build", "run"))
-    depends_on("py-numpy@:1", when="@:1.0.8", type=("build", "run"))
-    depends_on("py-pandas", type=("build", "run"))
-    depends_on("py-pandas-plink", type=("build", "run"))
-    depends_on("py-deprecated@1.2.6:", type=("build", "run"))
-    depends_on("py-pgenlib", type=("build", "run"))
-    depends_on("py-pgenlib@0.90.1:", when="@1.0.10:", type=("build", "run"))
-    depends_on("py-pyarrow+parquet", type=("build", "run"))
-    depends_on("py-qtl", type=("build", "run"))
-    depends_on("py-scipy", type=("build", "run"))
-    depends_on("py-torch", type=("build", "run"))
+
+    with default_args(type=("build", "run")):
+        depends_on("py-numpy")
+        depends_on("py-numpy@:1", when="@:1.0.8")
+        depends_on("py-pandas")
+        depends_on("py-pandas-plink")
+        depends_on("py-deprecated@1.2.6:")
+        depends_on("py-pgenlib")
+        depends_on("py-pgenlib@0.90.1:", when="@1.0.10:")
+        depends_on("py-pyarrow+parquet")
+        depends_on("py-qtl")
+        depends_on("py-scipy")
+        depends_on("py-torch")
 
     @run_after("install")
     def install_test(self):
