@@ -16,12 +16,14 @@ class PyPandasPlink(PythonPackage):
 
     depends_on("py-setuptools", type="build")
     depends_on("py-wheel@0.34.2:", type="build")
-    depends_on("py-deprecated@1.2.6:", type=("build", "run"))
-    depends_on("py-cffi@1.14.3:", type=("build", "run"))
-    depends_on("py-dask@2.6.0:+array+dataframe", type=("build", "run"))
-    depends_on("py-numpy@1.17.2:", type=("build", "run"))
-    depends_on("py-pandas@1.1.3:", type=("build", "run"))
-    depends_on("py-pytest@5.2.2:", type=("build", "run"))
-    depends_on("py-tqdm@4.36.1:", type=("build", "run"))
-    depends_on("py-xarray@0.18.2:", type=("build", "run"))
-    depends_on("py-zstandard@0.13.0:", type=("build", "run"))
+
+    with default_args(type=("build", "run")):    
+        depends_on("py-deprecated@1.2.6:")
+        depends_on("py-cffi@1.14.3:")
+        depends_on("py-dask@2.6.0:+array+dataframe")
+        depends_on("py-numpy@1.17.2:")
+        depends_on("py-pandas@1.1.3:")
+        depends_on("py-pytest@5.2.2:")
+        depends_on("py-tqdm@4.36.1:")
+        depends_on("py-xarray@0.18.2:")
+        depends_on("py-zstandard@0.13.0:")
