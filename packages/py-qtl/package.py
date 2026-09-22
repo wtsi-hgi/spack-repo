@@ -16,11 +16,13 @@ class PyQtl(PythonPackage):
 
     depends_on("py-setuptools", type="build")
     depends_on("py-setuptools@61:", when="@0.1.10:", type="build")
-    depends_on("py-numpy", type=("build", "run"))
-    depends_on("py-numpy@:1", when="@:0.1.8", type=("build", "run"))
-    depends_on("py-pandas", type=("build", "run"))
-    depends_on("py-scipy", type=("build", "run"))
-    depends_on("py-matplotlib", type=("build", "run"))
-    depends_on("py-seaborn", type=("build", "run"))
-    depends_on("py-pybigwig", type=("build", "run"))
-    depends_on("py-bx-python", type=("build", "run"))
+
+    with default_args(type=("build", "run")):
+        depends_on("py-numpy")
+        depends_on("py-numpy@:1", when="@:0.1.8")
+        depends_on("py-pandas")
+        depends_on("py-scipy")
+        depends_on("py-matplotlib")
+        depends_on("py-seaborn")
+        depends_on("py-pybigwig")
+        depends_on("py-bx-python")
