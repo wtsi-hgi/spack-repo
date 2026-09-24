@@ -16,6 +16,7 @@ class Isoquant(Package):
 
     license("GPL-2.0-only")
 
+    version("4.0.0", sha256="c80fc266db628ceca3432699af3cd9b60074662930c0b331164b3f82d211c45e")
     version("3.12.2", sha256="4318f90e0608a5e87a6594a37dca870fb51ab7bdd13fa76e013b17537fd99627")
     version("3.7.0", sha256="4f2b8f1c7c37bebec6ce606103419f8aba44b065164700ac6006076dd3f20b4b")
     version("3.6.2", sha256="7d620cdf4055a55132d6c66b45b706172cd5aae71bc91ac48e409311e8cc1530")
@@ -33,6 +34,7 @@ class Isoquant(Package):
 
     depends_on("python@3.8:", type=("build", "run"))
     depends_on("py-setuptools@64:", type="build")
+    depends_on("py-setuptools@64:74", type="build", when="@4:")
 
     depends_on("samtools", type="run")
     depends_on("minimap2", type="run")
@@ -54,6 +56,14 @@ class Isoquant(Package):
         depends_on("py-editdistance@0.8.1:", type=("build", "run"))
         depends_on("py-numba@0.58:", type=("build", "run"))
 
+    with when("@4:"):
+        depends_on("py-numpy@1.24:", type="run")
+        depends_on("py-scipy@1.10:", type="run")
+        depends_on("py-mappy@2.24:", type="run")
+        depends_on("py-intervaltree@3.0:", type="run")
+        depends_on("py-xgboost@2.1.4:", type="run")
+        depends_on("py-scikit-learn@1.3.2:", type="run")
+
     def install(self, spec, prefix):
         mkdir(prefix.opt)
         mkdir(prefix.opt.isoquant)
@@ -72,4 +82,9 @@ class Isoquant(Package):
                 + '/opt/isoquant/isoquant.py "$@"'
             )
 
-        chmod(script, 755)
+        chmod(script, 0o755)
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            Executable(join_path(self.prefix.bin, "isoquant.py"))("--help")
