@@ -5,12 +5,14 @@
 
 from spack.package import *
 
+
 class Regenie(CMakePackage):
     """regenie is a C++ program for whole genome regression modelling of large genome-wide association studies."""
 
     homepage = "https://rgcgithub.github.io/regenie"
     url = "https://github.com/rgcgithub/regenie/archive/refs/tags/v3.3.tar.gz"
 
+    version("4.1.3", sha256="5a8ea6ce8a89693cbd272dd64290d361285e0aa858376d25c29284dc58a57b0d")
     version("3.3", sha256="ee5ccffa89c5ae37b4d89c367da0d0d47d808f1e157152d4d60bcbe1ab3e5f53")
     version("3.2.9", sha256="a268de7cd159fac5b94ac1da94d39a12bc922bf7b67f64a98172fc10511438a6")
     version("3.2.8", sha256="faeeec4b776743f3497b751bb7142e4c3a640fe69663a8ae56174859ed609822")
@@ -43,3 +45,8 @@ class Regenie(CMakePackage):
         env.set("OPENBLAS_ROOT", self.spec["openblas"].prefix.include)
         env.set("HAS_BOOST_IOSTREAM", "1")
         #env.set("LDFLAGS", "-lboost_system -lboost_filesystem -lmpi -lsqlite3 -lzstd")
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            Executable(join_path(self.prefix.bin, "regenie"))("--help")
