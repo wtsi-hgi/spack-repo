@@ -121,6 +121,7 @@ class PyPandas(PythonPackage):
         depends_on("py-numpy@1.13.3:", when="@1.0")
         # 'NUMPY_IMPORT_ARRAY_RETVAL' was removed in numpy@1.19
         depends_on("py-numpy@1.13.3:1.18", when="@0.25")
+        depends_on("py-numpy@1.12:1.18", when="@0.24")
         depends_on("py-numpy@1.9:1.18", when="@0.23.4")
 
         depends_on("py-python-dateutil@2.8.2:", when="@2:")
@@ -170,10 +171,7 @@ class PyPandas(PythonPackage):
             depends_on("py-xlsxwriter@1.4.3:", when="@1.5:")
             depends_on("py-xlsxwriter@1.2.2:", when="@1.4:")
 
-
-
-    @when("@:0.24")
-    @run_before("install")
+    @run_before("install", when="@:0.24")
     def fix_legacy_pytz_requirement(self):
         filter_file(
             r"pytz >= 2011k", "pytz >= 2011.1", join_path(self.stage.source_path, "setup.py")
