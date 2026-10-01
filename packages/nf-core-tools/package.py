@@ -14,6 +14,7 @@ class NfCoreTools(PythonPackage):
     pypi = "nf-core/nf_core-3.5.2.tar.gz"
     maintainers("marcodelapierre")
 
+    version("4.1.0", sha256="44c6915df1152b1124b481b8c0d14d995a4054d4b505965244892aeab2d0496d")
     version("3.5.2", sha256="2bbd2ed07750b151748fc22127d79246894b8b38b67ecd38c9a02efebb95e4c4")
     version("2.7.2", sha256="585be3908b9b93ee9263b99dd779818d48d51f6e7f44a42aa79e626617e7af48")
     version("2.7.1", sha256="90de62390314ef3141cee700667f017aa65c0346e40704a0f70d0662abcfb0db")

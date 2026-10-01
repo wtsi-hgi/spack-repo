@@ -32,6 +32,7 @@ class PyFrozenlist(PythonPackage):
     depends_on("py-setuptools@47:", when="@1.4.1:", type="build")
     depends_on("py-wheel@0.37.0:", when="@1.3.1:1.4.0", type="build")
     depends_on("py-cython", when="@1.4.1:", type="build")
+    depends_on("py-tomli", type="build", when="^python@:3.10")
 
     @run_after("install")
     def install_test(self):
