@@ -16,6 +16,7 @@ class Quasar(CMakePackage):
 
     license("GPL-3.0-only")
 
+    version("2.0", branch="quasar2.0")
     version("1.2.1", sha256="66d13082b65cb589dd0cba7d703aa86c16d6601a3a9ea764abf1649b51be7174")
     version("1.2.0", sha256="f0a046f0e318f0494d8b7e5cb66a692f2b776e9c08f5970174e6e310c18f4482")
     version("1.1.0", sha256="46fc4a8ba418667755740eda6913166652ba01d1ec4312c3018226e20f26865a")
