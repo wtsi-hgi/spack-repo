@@ -275,6 +275,7 @@ class Llvm(CMakePackage, CudaPackage):
             depends_on("cmake@:3.16", type="build", when="{0}=runtime".format(runtime))
         del runtime
     depends_on("python@:3.11", when="~python", type="build")
+    depends_on("python@3.8:", when="@20:~python", type="build")
     depends_on("pkgconfig", type="build")
 
     # Universal dependency
@@ -991,7 +992,9 @@ class Llvm(CMakePackage, CudaPackage):
                 ninja()
                 ninja("install")
         if "+python" in self.spec:
-            install_tree("llvm/bindings/python", python_platlib)
+            if spec.version < Version("17.0.0"):
+                # LLVM Python bindings were removed in version 17.
+                install_tree("llvm/bindings/python", python_platlib)
 
             if "+clang" in self.spec:
                 install_tree("clang/bindings/python", python_platlib)
