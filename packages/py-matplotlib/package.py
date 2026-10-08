@@ -279,13 +279,17 @@ class PyMatplotlib(PythonPackage):
                 flags.append("-Wno-error=register")
         return (flags, None, None)
 
+    @when("@:3.8")
     def setup_build_environment(self, env):
         include = []
         library = []
         for dep in self.spec.dependencies(deptype="link"):
             query = self.spec[dep.name]
             include.extend(query.headers.directories)
-            library.extend(query.libs.directories)
+            try:
+                library.extend(query.libs.directories)
+            except NoLibrariesError:
+                pass
 
         # Build uses a mix of Spack's compiler wrapper and the actual compiler,
         # so this is needed to get parts of the build working.
