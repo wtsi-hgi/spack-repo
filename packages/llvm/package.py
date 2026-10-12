@@ -991,10 +991,15 @@ class Llvm(CMakePackage, CudaPackage):
                 ninja()
                 ninja("install")
         if "+python" in self.spec:
-            install_tree("llvm/bindings/python", python_platlib)
+            # LLVM's own Python bindings were removed upstream in newer releases;
+            # only install them when present in the source tree.
+            llvm_bindings = join_path(self.stage.source_path, "llvm", "bindings", "python")
+            if os.path.isdir(llvm_bindings):
+                install_tree(llvm_bindings, python_platlib)
 
-            if "+clang" in self.spec:
-                install_tree("clang/bindings/python", python_platlib)
+            clang_bindings = join_path(self.stage.source_path, "clang", "bindings", "python")
+            if "+clang" in self.spec and os.path.isdir(clang_bindings):
+                install_tree(clang_bindings, python_platlib)
 
         with working_dir(self.build_directory):
             install_tree("bin", join_path(self.prefix, "libexec", "llvm"))
