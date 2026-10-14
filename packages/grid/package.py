@@ -15,7 +15,8 @@ class Grid(AutotoolsPackage):
 
     maintainers("giordano")
 
-    version("develop", branch="develop")
+    version("20260924", commit="865c338dd2594d1e0bd6b249a13bcbd5e0b77b06")
+    version("develop", branch="develop", deprecated=True)
 
     variant(
         "comms",
