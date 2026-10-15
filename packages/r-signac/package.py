@@ -20,11 +20,7 @@ class RSignac(RPackage):
 
 	cran = "Signac"
 	version("20260420", commit="5d66cf6c34322309d5b8aece3fa294f5531b8eee", git="https://github.com/stuart-lab/signac.git")
-	version(
-		"1.17.1",
-		sha256="743e6994886a74ab1812992072bb99f823655f28e9741ddb0868455ee683c599",
-		url="https://github.com/stuart-lab/signac/archive/refs/tags/1.17.1.tar.gz",
-	)
+	version("1.17.1", sha256="bc67a2e8be9773127f5e78d2faaa002e14309938cfd2cf1f5738fd88830bd011")
 	version("1.16.0", sha256="71750f98af3b9e40ddcf52a7b665d33e3cefd0d63837f07cc3c54af807e109bf")
 	version("1.15.0", sha256="672d8ba06f4ff06fd00009bf70db5a11817246b24fd002cbd55944fe1bd8ed9a")
 	version("1.14.0", sha256="e0aad9e2c27c148fdd376081c2de1e3db46b1835eac83ef41fe562e08363c59e")
