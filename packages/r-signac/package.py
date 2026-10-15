@@ -20,6 +20,11 @@ class RSignac(RPackage):
 
 	cran = "Signac"
 	version("20260420", commit="5d66cf6c34322309d5b8aece3fa294f5531b8eee", git="https://github.com/stuart-lab/signac.git")
+	version(
+		"1.17.1",
+		sha256="743e6994886a74ab1812992072bb99f823655f28e9741ddb0868455ee683c599",
+		url="https://github.com/stuart-lab/signac/archive/refs/tags/1.17.1.tar.gz",
+	)
 	version("1.16.0", sha256="71750f98af3b9e40ddcf52a7b665d33e3cefd0d63837f07cc3c54af807e109bf")
 	version("1.15.0", sha256="672d8ba06f4ff06fd00009bf70db5a11817246b24fd002cbd55944fe1bd8ed9a")
 	version("1.14.0", sha256="e0aad9e2c27c148fdd376081c2de1e3db46b1835eac83ef41fe562e08363c59e")
@@ -34,7 +39,7 @@ class RSignac(RPackage):
 	with default_args(type=("build", "run")):
 		with when("@:1.13.0"):
 			depends_on("r@4:")
-		with when("@1.14.0:1.16.0"):
+		with when("@1.14.0:1.17.1"):
 			depends_on("r@4.1:")
 
 		depends_on("r-genomeinfodb@1.29.3:")
@@ -46,7 +51,7 @@ class RSignac(RPackage):
 
 		with when("@:1.13.0"):
 			depends_on("r-seuratobject@4:")
-		with when("@1.14.0:1.16.0"):
+		with when("@1.14.0:1.17.1"):
 			depends_on("r-seuratobject@5.0.2:")
 
 		depends_on("r-data-table")
@@ -55,7 +60,8 @@ class RSignac(RPackage):
 		depends_on("r-future-apply")
 		depends_on("r-ggplot2")
 		depends_on("r-rlang")
-		depends_on("r-irlba")
+		with when("@:1.16.0"):
+			depends_on("r-irlba")
 		depends_on("r-pbapply")
 		depends_on("r-tidyr")
 		depends_on("r-patchwork")
@@ -68,6 +74,10 @@ class RSignac(RPackage):
 		depends_on("r-tidyselect")
 		depends_on("r-vctrs")
 		depends_on("r-lifecycle")
+
+		with when("@1.17.1"):
+			depends_on("r-sparsematrixstats")
+			depends_on("r-rspectra")
 
 		with when("@20260420"):
 			depends_on("r-seuratobject@5.0.2:")
