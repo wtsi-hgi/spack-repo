@@ -39,15 +39,10 @@ extern void dsytri_(char *, integer *, double *, integer *, integer *, double *,
             string=True,
         )
 
-        # Upstream only prints usage for an empty argument list, which exits
-        # with an error. Provide a conventional, testable help invocation.
+        # Make help(usage) command exit with 0
         filter_file(
-            "int main(int argc, char** argv){",
-            """int main(int argc, char** argv){
-    if (argc == 2 && strcmp(argv[1], "--help") == 0) {
-        usage();
-        return 0;
-    }""",
+            "if(argc==1){usage(); return -1;}",
+            "if(argc==1){usage(); return 0;}",
             "src/main.c",
             string=True,
         )
@@ -89,4 +84,4 @@ extern void dsytri_(char *, integer *, double *, integer *, integer *, double *,
     def install_test(self):
         with working_dir("spack-test", create=True):
             rasqual = Executable(join_path(self.prefix.bin, "rasqual"))
-            rasqual("--help")
+            rasqual()
