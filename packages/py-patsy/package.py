@@ -30,8 +30,9 @@ class PyPatsy(PythonPackage):
     depends_on("py-setuptools", type="build")
 
     depends_on("py-six", type=("build", "run"))
-    depends_on("py-numpy@1.4:", type=("build", "run"), when="@0.5.1:")
-    depends_on("py-numpy", type=("build", "run"))
+    depends_on("py-numpy@1.4:1", type=("build", "run"), when="@0.5.1:0.5.6")
+    depends_on("py-numpy@1.25:", type=("build", "run"), when="@1.0.0:")
+    depends_on("py-numpy@:1", type=("build", "run"), when="@:0.5.0")
 
     depends_on("py-scipy", type=("build", "run"), when="+splines")
 
