@@ -27,6 +27,8 @@ class PyPatsy(PythonPackage):
     )
     variant("splines", default=False, description="Offers spline related functions")
 
+    depends_on("python@:3.10", when="@:0.5.2")
+
     depends_on("py-setuptools", type="build")
 
     depends_on("py-six", type=("build", "run"))
