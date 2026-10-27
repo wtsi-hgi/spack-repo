@@ -67,7 +67,7 @@ class Htslib(AutotoolsPackage):
     depends_on("zlib-api")
     depends_on("bzip2", when="@1.4:")
     depends_on("xz", when="@1.4:")
-    depends_on("curl+librtmp+libssh+ldap", when="@1.3:+libcurl")
+    depends_on("curl+libssh+ldap", when="@1.3:+libcurl")
     depends_on("openssl", when="+s3")
     depends_on("libdeflate", when="@1.8:+libdeflate")
 
