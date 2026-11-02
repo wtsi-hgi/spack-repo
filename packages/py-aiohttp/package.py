@@ -77,7 +77,7 @@ class PyAiohttp(PythonPackage):
         version("3.7.4", sha256="5d84ecc73141d0a0d61ece0742bb7ff5751b0657dab8405f899d3ceb104cc7de")
 
     with default_args(type="build"):
-        depends_on("c")
+        # depends_on("c")
         depends_on("pkgconfig", when="@3.12:")
         depends_on("py-setuptools@77:", when="@3.14.4:")
         depends_on("py-setuptools@67:", when="@3.13.1:")
