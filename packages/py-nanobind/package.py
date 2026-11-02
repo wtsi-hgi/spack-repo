@@ -50,5 +50,6 @@ class PyNanobind(PythonPackage):
     version("2.6.1", sha256="678be25b6ffdb7e3776548c2c9f29072e7eb41219b72c51f8e14ac0fe5c8ae0b", expand=False, url="https://files.pythonhosted.org/packages/26/f9/0b11e9b99a35dbf91972845af6012c562f3f1845a33e5b4ea631568d2740/nanobind-2.6.1-py3-none-any.whl")
     version("2.7.0", sha256="73b12d0e751d140d6c1bf4b215e18818a8debfdb374f08dc3776ad208d808e74", expand=False, url="https://files.pythonhosted.org/packages/96/14/989883082b395146120d34ca7e484a2b24cb73b0e428576a3a4249bd4082/nanobind-2.7.0-py3-none-any.whl")
     version("2.8.0", sha256="80fd403cfe4c8553b237ba5fbb62971921e2c5d1e6eb4a2fd457c67f987ab56f", expand=False, url="https://files.pythonhosted.org/packages/fc/3f/d81fa4c0d1450c6f58f5b5708082617949c12c5e98c1fae0d94a9e3a9b8f/nanobind-2.8.0-py3-none-any.whl")
+    version("3.1.0", sha256="96984dbe8154ffb86e653b1b60aaeed6985c710c5e75ad0279eb87943c66292d", expand=False, url="https://files.pythonhosted.org/packages/36/c1/6fd56f7a02a478d54a1a3e6000eccd34b446b1c45cbf0d002fe5d2937126/nanobind-3.1.0-py3-none-any.whl")
 
     depends_on("py-setuptools", type=("build"))
