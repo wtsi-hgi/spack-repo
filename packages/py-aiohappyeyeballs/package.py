@@ -17,3 +17,8 @@ class PyAiohappyeyeballs(PythonPackage):
     depends_on("py-poetry-core@1:", type="build")
     depends_on("py-poetry-core@2:", type="build", when="@2.4.5:")
     depends_on("python@3.9:", when="@2.4.5:", type=("build", "run"))
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python("-c", "import aiohappyeyeballs")

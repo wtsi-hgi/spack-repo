@@ -27,3 +27,8 @@ class PyPropcache(PythonPackage):
     depends_on("python@3.9:", when="@0.2.1:", type=("build", "run"))
     depends_on("python@3.10:", when="@0.5:", type=("build", "run"))
     depends_on("python@:3.13", when="@:0.4", type=("build", "run"))
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python("-c", "import propcache")
