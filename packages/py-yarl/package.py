@@ -67,3 +67,8 @@ class PyYarl(PythonPackage):
 
         cython = self.spec["py-cython"].command
         cython("-3", "-o", pyxfile + ".c", pyxfile + ".pyx", "-Iyarl")
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python("-c", "import yarl")
