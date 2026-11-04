@@ -39,7 +39,8 @@ class PyDuckdb(PythonPackage):
     depends_on("cmake@3.29:", when="@1.5:", type="build")
     depends_on("ninja@1.10:", when="@1.5:", type="build")
     depends_on("py-nanobind@3:", when="@2:", type="build")
-    depends_on("py-numpy@1.19:", when="@2:", type=("build", "run"))
+    depends_on("py-numpy@2:", when="@2: ^python@3.12:", type=("build", "run"))
+    depends_on("py-numpy@1.19:", when="@2: ^python@:3.11", type=("build", "run"))
     depends_on("py-pybind11@2.6:", when="@:1", type="build")
 
 
