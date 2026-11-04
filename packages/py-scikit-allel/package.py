@@ -13,8 +13,9 @@ class PyScikitAllel(PythonPackage):
 
     version("1.3.7", sha256="cb6229c407451bf1ea4b7fa681188e142d24a3a168ca6e786b6b4a7e999507f4")
 
-    depends_on("py-cython", type=("build", "run"))
-    depends_on("py-setuptools-scm", type=("build", "run"))
+    depends_on("py-setuptools@45:68", type="build")
+    depends_on("py-cython", type="build")
+    depends_on("py-setuptools-scm", type="build")
     depends_on("py-numpy", type=("build", "run"))
     depends_on("py-dask+array", type=("build", "run"))
     depends_on("py-nose", type=("run"))
