@@ -5,6 +5,7 @@
 
 from spack.package import *
 
+
 class PyScikitAllel(PythonPackage):
     """A Python package for exploratory analysis of large scale genetic variation data."""
 
@@ -31,3 +32,18 @@ class PyScikitAllel(PythonPackage):
     depends_on("py-hmmlearn", type=("run"))
     depends_on("py-pytest", type=("run"))
     depends_on("py-ipython", type=("run"))
+
+    @when("@1.3.7")
+    def patch(self):
+        for line in (
+            '[project]',
+            'name = "scikit-allel"',
+            'requires-python = ">=3.6"',
+            'dynamic = ["version", "description"]',
+        ):
+            filter_file(line, "", "pyproject.toml", string=True)
+
+    @run_after("install")
+    def install_test(self):
+        with working_dir("spack-test", create=True):
+            python("-c", "import allel")
