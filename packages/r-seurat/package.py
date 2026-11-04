@@ -20,6 +20,7 @@ class RSeurat(RPackage):
 	license("MIT")
 
 	cran = "Seurat"
+	version("5.6.0", sha256="8366190e8fe26e79efc18be5391308ff00cde673d298bc7b39e7a84816718f39")
 	version("5.4.0", sha256="d200da7cb19a2fa4ead7ea4aa1bb703dbc59c594f01cb91c996ad862ad6f6417")
 	version("5.3.1", sha256="354acba93ccef2d89f0780d14e3122f4093cb0379e7229a834b2afa6b82db223")
 	version("5.3.0", sha256="12abaf6cea4aa30f73028387e74ecb405b17acbae414d43522e764f3179908a7")
@@ -82,6 +83,7 @@ class RSeurat(RPackage):
 	depends_on("r-rann", type=("build", "run"))
 	depends_on("r-rcolorbrewer", type=("build", "run"))
 	depends_on("r-rcpp@0.11:", type=("build", "run"))
+	depends_on("r-rcpp@1.0.7:", type=("build", "run"), when="@5.6:")
 	depends_on("r-rcppannoy@0.0.18:", type=("build", "run"))
 	depends_on("r-rcpphnsw", type=("build", "run"))
 	depends_on("r-reticulate", type=("build", "run"))
@@ -97,7 +99,9 @@ class RSeurat(RPackage):
 	depends_on("r-spatstat-geom", type=("build", "run"))
 	depends_on("r-tibble", type=("build", "run"))
 	depends_on("r-uwot@0.1.10:", type=("build", "run"))
+	depends_on("r-uwot@0.2.4:", type=("build", "run"), when="@5.6:")
 	depends_on("r-rcppeigen", type=("build", "run"))
 	depends_on("r-rcppprogress", type=("build", "run"))
+	depends_on("r-rcppthread", type=("build", "run"), when="@5.6:")
 	depends_on("r-spatstat-core", type=("build", "run"), when="@:4.1.1")
 	depends_on("r-leidenbase", type=("build", "run"), when="@5.3.0:")
