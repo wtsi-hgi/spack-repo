@@ -29,13 +29,22 @@ class PyDenovowest(PythonPackage):
     depends_on("py-pyyaml", type=("build", "run"))
     depends_on("py-pysam", type=("build", "run"))
     depends_on("py-joblib", type=("build", "run"))
+    depends_on("py-pyfaidx", type=("build", "run"))
     depends_on("py-jinja2", when="@0.2:", type=("build", "run"))
+
+    @run_before("install", when="@0.1.1")
+    def fix_utils_import(self):
+        # 0.1.1 does `import utils`, which doesn't exist as a top-level module (fixed in 0.1.2)
+        f = join_path("denovowest", "annotations", "annotate_custom.py")
+        filter_file(
+            r"^import utils$",
+            "from denovowest.utils.io_helpers import read_columns_from_file\n"
+            "from denovowest.utils.log import init_log",
+            f,
+        )
+        filter_file(r"\butils\.(read_columns_from_file|init_log)\(", r"\1(", f)
 
     @run_after("install")
     def install_test(self):
         with working_dir("spack-test", create=True):
-            self.run_test(
-                join_path(self.prefix.bin, "denovowest"),
-                ["--help"],
-                purpose="Ensure the DeNovoWEST CLI is available",
-            )
+            Executable(join_path(self.prefix.bin, "denovowest"))("--help")
