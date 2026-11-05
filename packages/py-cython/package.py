@@ -59,9 +59,6 @@ class PyCython(PythonPackage):
     version("0.28.6", sha256="68aa3c00ef1deccf4dd50f0201d47c268462978c12c42943bc33dc9dc816ac1b")
     version("0.28.3", sha256="1aae6d6e9858888144cea147eb5e677830f45faaff3d305d77378c3cba55f526")
     version("0.28.1", sha256="152ee5f345012ca3bb7cc71da2d3736ee20f52cd8476e4d49e5e25c5a4102b12")
-    version("0.25.2", sha256="f141d1f9c27a07b5a93f7dc5339472067e2d7140d1c5a9e20112a5665ca60306")
-    version("0.23.5", sha256="0ae5a5451a190e03ee36922c4189ca2c88d1df40a89b4f224bc842d388a0d1b6")
-    version("0.23.4", sha256="fec42fecee35d6cc02887f1eef4e4952c97402ed2800bfe41bbd9ed1a0730d8e")
 
     # depends_on("c", type="build")
     # depends_on("cxx", type="build")
@@ -75,6 +72,7 @@ class PyCython(PythonPackage):
         depends_on("python@:3.10", when="@:0.29.28")
         depends_on("python@:3.9", when="@:0.29.24")
         depends_on("python@:3.8", when="@:0.29.13")
+        depends_on("python@:3.7", when="@:0.29.10")  # old PyCode_New signature breaks on 3.8 final
 
     # https://github.com/cython/cython/issues/5751
     # https://github.com/cython/cython/commit/0000fb4c319ef8f7e8eabcc99677f99a8c503cc3
