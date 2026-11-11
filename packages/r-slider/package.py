@@ -18,6 +18,7 @@ class RSlider(RPackage):
 	homepage = "https://github.com/r-lib/slider"
 	cran = "slider" 
 
+	version("0.3.3", md5="9701f0b358755e89274d0462fad33894")
 	version("0.3.1", md5="b40d64c6dbb50a550bf8c66ceece8cc3")
 
 	depends_on("r@3.6:", type=("build", "run"))
