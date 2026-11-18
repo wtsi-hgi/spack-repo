@@ -9,8 +9,6 @@ from spack.package import *
 class Fclones(Package):
     """Efficient duplicate file finder and remover."""
 
-    maintainers("softpack-bot")
-
     homepage = "https://github.com/pkolaczk/fclones"
     url = "https://github.com/pkolaczk/fclones/archive/refs/tags/v0.35.0.tar.gz"
 
