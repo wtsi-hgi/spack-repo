@@ -31,6 +31,7 @@ class Mmseqs2(CMakePackage, CudaPackage):
     depends_on("zstd")
     depends_on("mpi", when="+mpi")
     depends_on("cuda", when="@16: +cuda")
+    depends_on("gcc", type=("build", "run", "link"))  # for libatomic
 
     conflicts("@:15 +cuda")
     conflicts("cuda_arch=none", when="+cuda", msg="CUDA architecture is required")
@@ -74,3 +75,7 @@ class Mmseqs2(CMakePackage, CudaPackage):
             args.append("-DCMAKE_CUDA_ARCHITECTURES={0}".format(";".join(cuda_arch)))
 
         return args
+
+    @run_after("install")
+    def install_test(self):
+        Executable(join_path(self.prefix.bin, "mmseqs"))()
