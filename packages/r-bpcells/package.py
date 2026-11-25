@@ -47,7 +47,7 @@ class RBpcells(RPackage):
     depends_on("openmpi", type=("build", "run", "link"))
 
     def patch(self):
-        if self.spec.satisfies("@0.3.1:"):
+        if os.path.isdir("r"):
             force_remove("DESCRIPTION")
             force_remove("configure")
             install_tree("r", ".")
